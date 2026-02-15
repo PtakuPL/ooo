@@ -260,3 +260,45 @@ Wynik:
 2. Odpalic `Build - Android` na tym commicie.
 3. Po wyniku Android: kontynuowac iteracje Windows (`Build - Windows`).
 4. Dopisac nowe runy i decyzje do tego dokumentu bez posilkowania sie pamiecia.
+
+---
+
+## 8) AKTUALIZACJA 2026-02-15: Zadanie B wykonane
+
+### Status: Zadanie B (Windows ICE C1001) — WDROZONE, oczekujemy na CI
+
+### Co zostalo zrobione:
+
+1. **`#pragma optimize("", off/on)`** dodane do `otmlparser.cpp` (linia 29, 251) i `otmlnode.cpp` (linia 31, 200)
+   - Wylacza optymalizator MSVC P2 w tych TU — eliminuje ICE C1001
+
+2. **Usunieto `SKIP_PRECOMPILE_HEADERS ON`** z CMakeLists.txt
+   - To byla GLOWNA PRZYCZYNA — wymuszalo rekompilacje pch.h (31 ciezkich include) od zera
+
+3. **`/O2` → `/O1`** globalnie (optimize for size zamiast speed)
+   - Mniej agresywny optimizer = mniejsze ryzyko ICE
+
+4. **`/GL-` + `/LTCG:OFF`** — wylaczony link-time codegen
+   - LTCG rozszerza scope optymalizacji miedzy TU, amplifikujac ICE
+
+5. **Revert do C++20** — `.starts_with()`, `.ends_with()` zamiast custom helperow
+   - Zgodne z upstream opentibiabr/otclient
+
+6. **Revert `otmlnode.h`** — `value.starts_with("\"")` zamiast `value.size() >= 2 && value.front() == '"'`
+
+7. **Usunieto pinowanie toolsetu 14.38** — nie istnieje na runnerze windows-2022
+
+### Commity:
+- `4587d18a7` — fix(msvc): pragma optimize off for OTML TUs, re-enable PCH
+- `ed73c7af3` — fix(ci): pin MSVC toolset 14.38 in root build-windows.yml
+- `0567a036c` — fix(ci): remove toolset 14.38 pin - not available on runner
+
+### Nowe runy (2026-02-15):
+
+| Run | SHA | Wynik | Uwagi |
+|-----|-----|-------|-------|
+| #4349 | `351fee6d1` | ? | Starszy commit, bez naszych fixow pragma |
+| (nowy po push) | `0567a036c` | PENDING | Z pragma + PCH + /O1, uruchomiony recznie |
+
+### Pelna dokumentacja naprawy:
+→ `Dokumentacja/2026-02-15_windows_build_msvc_ice_naprawa.md`

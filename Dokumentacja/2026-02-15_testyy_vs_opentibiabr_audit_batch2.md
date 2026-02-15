@@ -250,3 +250,11 @@ Wykonane w plikach różniących się od upstream:
 Pozostawione świadomie (nie dotyczą `std::*::contains`):
 - metody domenowe geometrii: `Rect::contains(...)` itd.
 - `nlohmann::json::contains(...)` w `framework/net/httplogin.cpp`
+
+## Batch 8 - dodatkowe zabezpieczenie template error-path (MSVC)
+1. `src/framework/otml/otmlnode.h`
+- w `OTMLNode::value<T>()` dodano gałąź `_MSC_VER`, która nie używa `stdext::demangle_type<T>()` w komunikacie wyjątku
+- gałąź non-MSVC pozostaje bez zmian
+
+Cel:
+- redukcja złożoności template error-path w TU związanych z OTML na MSVC.

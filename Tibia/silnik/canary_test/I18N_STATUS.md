@@ -9,23 +9,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-15 08:05:03
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-15 08:07:25
 
-> **Aktualizacja:** 2026-02-15 08:05:03 UTC  
+> **Aktualizacja:** 2026-02-15 08:07:25 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #7,205 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: pl | Plik: client.json | Heartbeat: 2026-02-15T08:04:59Z  
-> **Okno godzinowe:** okno=1.0h | cykli=1 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
+> **LIVE:** Cykl #7,206 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: es | Plik: cpp.json | Heartbeat: 2026-02-15T08:07:25Z  
+> **Okno godzinowe:** okno=1.0h | cykli=2 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
 > **Tłumaczeń netto:** 78,697
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-15 08:05:03 |
-| LIVE | 🟢 AKTYWNY | 5s temu | - | `activity.json / worker_state.json` | 2026-02-15T08:04:59Z |
-| MIGRATION | 🔒 NIEAKTYWNY | 18s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-15 08:05:03 |
-| TRANSLATION | 🟢 AKTYWNY | 8h temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-15T00:04:42.440311Z |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-15 08:07:25 |
+| LIVE | 🟢 AKTYWNY | 1s temu | - | `activity.json / worker_state.json` | 2026-02-15T08:07:25Z |
+| MIGRATION | 🔒 NIEAKTYWNY | 15s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-15 08:07:25 |
+| TRANSLATION | 🟢 AKTYWNY | 1s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-15T08:07:24.656068Z |
 | QUALITY | 🔒 NIEAKTYWNY | 8h temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-15T00:03:14.376339Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-15 08:05:03 |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-15 08:07:25 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,28 +34,28 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 5s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T08:04:59Z
+> Świeżość: 1s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T08:07:25Z
 
 | Metryka | Wartość |
 |---------|---------|
-| 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) |
+| 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) → zakończone |
 | 🌍 **Aktywne języki (10 min)** | ES, PL |
 | 📝 **Faza** | AUTO_TRANSLATE |
-| 📋 **Etap** | sygnał życia |
-| 📂 **Kategoria / Język** | pl |
-| 📄 **Plik** | client.json |
+| 📋 **Etap** | tłumaczenie zakończone |
+| 📂 **Kategoria / Język** | es |
+| 📄 **Plik** | cpp.json |
 | 📊 **Status** | 🟢 DZIAŁA |
-| 📈 **Postęp** | Batch: 16 keys/cykl |
+| 📈 **Postęp** | Batch: 80 keys/cykl |
 | 🔧 **Metoda** | Translation Memory (GT wyłączony) |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-02-15T08:04:59Z |
+| ❤️ **Heartbeat** | 2026-02-15T08:07:25Z |
 
 **Ostatnie operacje:**
+- → AUTO_TRANSLATE_DONE (ES) [ok]
 - → AUTO_TRANSLATE_DONE (PL) [warn]
 - → AUTO_TRANSLATE_DONE (ES) [warn]
 - → PARALLEL_TRANSLATE_DONE (PL) [ok]
 - → AUTO_TRANSLATE_DONE (ES) [warn]
-- → PARALLEL_TRANSLATE_DONE (ES) [ok]
 
 ---
 
@@ -65,13 +65,13 @@
 |---------|---------|
 | 📊 Przetłumaczono | **0** kluczy |
 | ❌ Odrzucone (guard) | 0 |
-| 🔁 Cykli | 1 |
-| 🌍 Języków | 0 |
-| 🏆 Najaktywniejszy | - (0 kluczy) |
-| 📄 Najczęstszy plik | - |
+| 🔁 Cykli | 2 |
+| 🌍 Języków | 1 |
+| 🏆 Najaktywniejszy | ES (0 kluczy) |
+| 📄 Najczęstszy plik | cpp.json |
 | ⚡ Przepustowość | ~0 kluczy/h |
 | 🛡️ Odrzucone (strażnik) | 0.0% |
-| ⚠️ Podejrzane | 2 |
+| ⚠️ Podejrzane | 24 |
 
 ---
 
@@ -79,7 +79,7 @@
 
 | Język | Przetłumaczono | Odrzucone | GF% | Pliki |
 |-------|---------------|-----------|-----|-------|
-| - | - | - | - | - |
+| ES | 0 | 0 | 0% | 1 |
 
 > Źródło: `translation_guard_report.jsonl` (okno 1.0h)
 
@@ -197,7 +197,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 18s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-15 08:05:03
+> Świeżość: 15s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-15 08:07:25
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -246,7 +246,7 @@
 ## 🌍 TŁUMACZENIA
 
 > **[TRANSLATION]** 🟢 AKTYWNY  
-> Świeżość: 8h temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-15T00:04:42.440311Z
+> Świeżość: 1s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-15T08:07:24.656068Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -282,32 +282,24 @@
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** ES - Hiszpański - Serwer
 - **Plik JSON:** spells.json
-- **Ostatnie klucze (10-20):** 20
+- **Ostatnie klucze (10-20):** 12
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- It shines as beautifully as a good friendship. This amulet was rewarded by Tibia → Błyszczy tak pięknie, jak dobra przyjaźń. Ten amulet został nagrodzony przez Tib (item.9802.desc)
-- friendship amulet → amulet przyjaźni (item.9802.name)
-- It shines as beautifully as a good friendship. This amulet was rewarded by Tibia → Błyszczy tak pięknie, jak dobra przyjaźń. Ten amulet został nagrodzony przez Tib (item.9803.desc)
-- friendship amulet → amulet przyjaźni (item.9803.name)
-- dragonbone tree → drzewo smoczej kości (item.9811.name)
-- death root → korzeń śmierci (item.9813.name)
-- jade spike plant → jadeitowa roślina kolczasta (item.9815.name)
-- jade plant → roślina jadeitowa (item.9816.name)
-- thornpeak grass → ciernista trawa (item.9817.name)
-- It smells like a mixture of wood and fish. Phew → Pachnie mieszanką drewna i ryb. Uff (item.9843.desc)
-- flask with beaver bait → kolba z przynętą na bobry (item.9843.name)
-- tainted pland → skażona roślina (item.9871.name)
-- witches cauldron plant → roślina kotła czarownic (item.9886.name)
-- pestilent fern → zaraza paproci (item.9889.name)
-- apocalypse mushroom → grzyb apokalipsy (item.9894.name)
-- mourning mushroom → żałobny grzyb (item.9896.name)
-- infected throne → zakażony tron (item.9899.name)
-- pestbringer → roznosiciel szkodników (item.9900.name)
-- throatslitter → podrzynacz gardła (item.9959.name)
-- dry solstice tree → suche drzewo przesilenia (item.9996.name)
+- {0} loses {1} mana due to your attack. → {0} pierde {1} maná debido a tu ataque. (cpp.combat.mana_attacker)
+- {0} loses {1} mana due to your critical attack. → {0} pierde {1} maná debido a tu ataque crítico. (cpp.combat.mana_attacker_crit)
+- {0} loses {1} mana due to an attack by {2}. → {0} pierde {1} maná debido a un ataque de {2}. (cpp.combat.mana_spectator_by)
+- {0} loses {1} mana due to a critical attack by {2}. → {0} pierde {1} maná debido a un ataque crítico de {2}. (cpp.combat.mana_spectator_by_crit)
+- {0} loses {1} mana due to {2} own attack. → {0} pierde {1} maná debido al propio ataque de {2}. (cpp.combat.mana_spectator_self)
+- You lose {0} mana due to an attack by {1}. → Pierdes {0} maná debido a un ataque de {1}. (cpp.combat.mana_target_by)
+- You lose {0} mana due to a critical attack by {1}. → Pierdes {0} maná debido a un ataque crítico de {1}. (cpp.combat.mana_target_by_crit)
+- You lose {0} mana due to your own attack. → Pierdes {0} maná debido a tu propio ataque. (cpp.combat.mana_target_self)
+- You lose {0} mana due to your own critical attack. → Pierdes {0} maná debido a tu propio ataque crítico. (cpp.combat.mana_target_self_crit)
+- neutral → neutral (cpp.combat.neutral)
+- Mana Shield → Escudo de Maná (cpp.inspect.mana_shield)
+- {0} physical + {1} → {0} físico + {1} (cpp.inspect.physical_plus)
 
 ### 🚫 Raporty strażnika jakości
-- Raporty strażnika jakości: **2594**  
+- Raporty strażnika jakości: **2595**  
 - Raporty blokad: **0**  
 - Widoczne raporty 'nie mogę przetłumaczyć': **2513**
 
@@ -316,8 +308,8 @@
 - **Kopie EN (łącznie):** **173,541**
 - **Braki kluczy (łącznie):** **2,155**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -345,14 +337,14 @@
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-15T07:05:04.330678Z → 2026-02-15T08:05:04.330678Z) |
-| Cykle | **1** (TŁUMACZENIE=1, PRE_MIGRATION=0) |
+| Okno | **1.0h** (2026-02-15T07:07:26.006738Z → 2026-02-15T08:07:26.006738Z) |
+| Cykle | **2** (TŁUMACZENIE=2, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **0.0%** |
-| Cykle bez postępu % | **0.0%** |
+| Cykle bez postępu % | **100.0%** |
 | Przepustowość (kluczy/h) | **0.0 kluczy/h** |
-| Podejrzane tłumaczenia | **2** |
-| Najgorsze cele (strażnik) | - |
+| Podejrzane tłumaczenia | **24** |
+| Najgorsze cele (strażnik) | es/cpp.json (gf=0) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
@@ -402,8 +394,8 @@
 
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
-| Worker | 🟢 DZIAŁA | Cykl #7,205 |
-| Heartbeat | 5s temu | 2026-02-15T08:04:59Z |
+| Worker | 🟢 DZIAŁA | Cykl #7,206 |
+| Heartbeat | 1s temu | 2026-02-15T08:07:25Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -413,14 +405,14 @@
 - **Łącznie kopii EN do naprawy:** 704
 - **TOP 5 języków:** ZH_TW (2,456), HY (905), KA (905), KO (905), ML (905)
 - **Aktualnie naprawia:** ES / -
-- **Ostatnia aktualizacja:** 2026-02-15T07:54:17.993688Z
+- **Ostatnia aktualizacja:** 2026-02-15T08:05:15.229852Z
 
 ---
 
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** pl
+> **Aktualna kategoria:** es
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -488,33 +480,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 5s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T08:04:59Z
+> Świeżość: 1s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T08:07:25Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl # 7,205 │
+│ 🔴 LIVE: Worker v2.0                          Cykl # 7,206 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 DZIAŁA                                 │
-│ Tryb:      🤖 AUTO_TRANSLATE (heartbeat_tick)        │
-│ Kategoria: 📁 PL                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (auto_done)             │
+│ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: client.json                                             │
-│ Postęp: batch: 16 keys/cykl                                   │
-│ Info: auto translate in progress                              │
+│ Plik: cpp.json                                                │
+│ Postęp: batch: 80 keys/cykl                                   │
+│ …ed=0 guard_fail=0 strict_missing_key=0 strict_skipped_done=0 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-15T08:04:59Z           │
+│ ❤️ Heartbeat: 2026-02-15T08:07:25Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-15 08:07:25 | AUTO_TRANSLATE:auto_done | es | ok | cpp.json
+- 2026-02-15 08:07:15 | AUTO_TRANSLATE:heartbeat_tick | es | ok | cpp.json
+- 2026-02-15 08:07:15 | AUTO_TRANSLATE:auto_start | es | ok | cpp.json
 - 2026-02-15 08:04:59 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
 - 2026-02-15 08:03:28 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
 - 2026-02-15 08:01:57 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
-- 2026-02-15 08:00:26 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
-- 2026-02-15 07:58:55 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
-- 2026-02-15 07:57:23 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
 
 ---
 
@@ -522,8 +514,8 @@
 
 | Język | Pokrycie | Brakujące | Kopie EN | Przetłumaczone(200) | Odrzucone | Wpisy |
 |-------|----------|-----------|---------|-----------------|------------|---------|
-| 🟡 PL | 86.6% | 0 | 2,351 | 2,407 | 6184 (72.0%) | 91 |
-| 🟡 ES | 82.3% | 0 | 2,896 | 3,372 | 1665 (33.1%) | 109 |
+| 🟡 PL | 86.6% | 0 | 2,351 | 2,407 | 6145 (71.9%) | 90 |
+| 🟡 ES | 82.3% | 0 | 2,896 | 3,372 | 1665 (33.1%) | 110 |
 
 | Wskaźnik | Wartość | Cel | Status |
 |-----|---------|--------|--------|
@@ -536,8 +528,9 @@
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-15 08:05:03
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-15 08:07:25
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+0, translated+0, skipped+0) — lang=es file=cpp.json
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+96, skipped+0) — parallel lang=es file=monsters.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+153, skipped+0) — lang=pl file=monsters.json strict_skipped_done=5762 guard_fail=257 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+14) — repair_identical lang=es file=npc.json target_identical=14 limit=108 tier=low_backlog+suspicious_guard domain_cap=260 gt=true suspicious_pct=73.26
@@ -547,7 +540,6 @@
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+4, skipped+0) — parallel lang=pl file=spells.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+98, skipped+0) — lang=es file=server.json strict_skipped_done=916 guard_fail=92 placeholder=8 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+13, skipped+0) — lang=es file=scripts.json strict_skipped_done=2157 guard_fail=66 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+96, skipped+0) — parallel lang=es file=monsters.json
 
 
 ## 📅 Dziś (2026-02-15)
@@ -593,7 +585,7 @@
 | 🧩 Reconcile korekta rejestru | **53,579** | zmiany EN poza workerem |
 | ➕ Kluczy poza rejestrem workera | **0** | ręczne/Codex/Claude/starsze |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#7,205** | continuous mode |
+| 🔄 Cykli wykonanych | **#7,206** | continuous mode |
 
 ---
 
@@ -803,7 +795,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 DZIAŁA | Cykl #7,205 |
+| Worker v1.1 | 🟢 DZIAŁA | Cykl #7,206 |
 | Guardian v2.0 | 🟢 AKTYWNY | Push co 2 min |
 
 ---
@@ -890,7 +882,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-15 08:05:03  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-15 08:07:25  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

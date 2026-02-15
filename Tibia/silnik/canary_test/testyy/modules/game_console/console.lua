@@ -1651,6 +1651,13 @@ function onTalk(name, level, mode, message, channelId, creaturePos)
         local staticText = StaticText.create()
         -- Remove curly braces from screen message
         local staticMessage = message
+
+        -- Transliterate non-Latin scripts if enabled
+        local translit = modules.client_transliteration
+        if translit and translit.Transliteration and translit.Transliteration.isActive() then
+            staticMessage = translit.Transliteration.process(staticMessage)
+        end
+
         if isNpcMode then
             local highlightData = getHighlightedText(staticMessage)
             if #highlightData > 0 then
@@ -1678,6 +1685,12 @@ function onTalk(name, level, mode, message, channelId, creaturePos)
 
     if speaktype.hideInConsole then
         return
+    end
+
+    -- Transliterate non-Latin scripts in console text if enabled
+    local translit = modules.client_transliteration
+    if translit and translit.Transliteration and translit.Transliteration.isActive() then
+        message = translit.Transliteration.process(message)
     end
 
     local composedMessage = applyMessagePrefixies(name, level, message)

@@ -36,6 +36,11 @@ return {
     showOthersStatusMessagesInConsole = false,
     showPrivateMessagesOnScreen       = true,
     showLootMessagesOnScreen          = true,
+    -- Transliteration options (convert non-Latin scripts to Latin in chat)
+    transliterateCyrillic             = false,
+    transliterateGreek                = false,
+    transliterateArabic               = false,
+    transliterateKatakana             = false,
     showOutfitsOnList                 = {
         value = true,
         action = function(value, options, controller, panels, extraWidgets)

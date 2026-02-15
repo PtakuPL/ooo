@@ -1,0 +1,9 @@
+Module
+  name: client_transliteration
+  description: Optional transliteration of non-Latin scripts (Cyrillic, Greek, Arabic, etc.) to Latin alphabet
+  author: PtakuPL
+  website: https://github.com/PtakuPL/ooo
+  sandboxed: true
+  scripts: [ transliteration ]
+  @onLoad: init()
+  @onUnload: terminate()

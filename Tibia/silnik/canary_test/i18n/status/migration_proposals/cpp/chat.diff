@@ -1,0 +1,173 @@
+# i18n-proposal: ./src/creatures/interactions/chat.cpp
+# Generated: 2026-02-15T19:30:43.054951Z
+# Category: cpp
+# Transforms: 28
+
+--- ./src/creatures/interactions/chat.cpp:114
+-				150, [playerId = player->getID()] { g_game().sendGuildMotd(playerId); }, "Game::sendGuildMotd"
++				150, [playerId = player->getID()] { g_game().sendGuildMotd(playerId); }, i18n::g_translator().get("cpp.chat.game_sendguildmotd", player->getLocale())
+# key: cpp.chat.game_sendguildmotd
+# en: Game::sendGuildMotd
+
+--- ./src/creatures/interactions/chat.cpp:216
+-		g_logger().error("[CanJoinChannelEvent::execute - Player {}, on channel {}] "
++		g_logger().error(i18n::g_translator().get("cpp.chat.canjoinchannelevent_execute", player->getLocale())
+# key: cpp.chat.canjoinchannelevent_execute
+# en: [CanJoinChannelEvent::execute - Player {}, on channel {}] 
+
+--- ./src/creatures/interactions/chat.cpp:217
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("cpp.chat.call_stack_overflow_too_many", player->getLocale()),
+# key: cpp.chat.call_stack_overflow_too_many
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/interactions/chat.cpp:229
+-	LuaScriptInterface::setMetatable(L, -1, "Player");
++	LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.chat.player", player->getLocale()));
+# key: cpp.chat.player
+# en: Player
+
+--- ./src/creatures/interactions/chat.cpp:242
+-		g_logger().error("[OnJoinChannelEvent::execute - Player {}, on channel {}] "
++		g_logger().error(i18n::g_translator().get("cpp.chat.onjoinchannelevent_execute", player->getLocale())
+# key: cpp.chat.onjoinchannelevent_execute
+# en: [OnJoinChannelEvent::execute - Player {}, on channel {}] 
+
+--- ./src/creatures/interactions/chat.cpp:243
+-		                 "Call stack overflow. Too many lua script calls being nested",
++		                 i18n::g_translator().get("cpp.chat.call_stack_overflow_too_many_2", player->getLocale()),
+# key: cpp.chat.call_stack_overflow_too_many_2
+# en: Call stack overflow. Too many lua script calls being nested
+
+--- ./src/creatures/interactions/chat.cpp:255
+-	LuaScriptInterface::setMetatable(L, -1, "Player");
++	LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.chat.player_2", player->getLocale()));
+# key: cpp.chat.player_2
+# en: Player
+
+--- ./src/creatures/interactions/chat.cpp:268
+-		g_logger().error("[OnLeaveChannelEvent::execute - Player {}, on channel {}] "
++		g_logger().error(i18n::g_translator().get("cpp.chat.onleavechannelevent_execute", player->getLocale())
+# key: cpp.chat.onleavechannelevent_execute
+# en: [OnLeaveChannelEvent::execute - Player {}, on channel {}] 
+
+--- ./src/creatures/interactions/chat.cpp:269
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("cpp.chat.call_stack_overflow_too_many_3", player->getLocale()),
+# key: cpp.chat.call_stack_overflow_too_many_3
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/interactions/chat.cpp:281
+-	LuaScriptInterface::setMetatable(L, -1, "Player");
++	LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.chat.player_3", player->getLocale()));
+# key: cpp.chat.player_3
+# en: Player
+
+--- ./src/creatures/interactions/chat.cpp:294
+-		g_logger().error("[OnSpeakChannelEvent::execute - Player {}, type {}] "
++		g_logger().error(i18n::g_translator().get("cpp.chat.onspeakchannelevent_execute", player->getLocale())
+# key: cpp.chat.onspeakchannelevent_execute
+# en: [OnSpeakChannelEvent::execute - Player {}, type {}] 
+
+--- ./src/creatures/interactions/chat.cpp:295
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("cpp.chat.call_stack_overflow_too_many_4", player->getLocale()),
+# key: cpp.chat.call_stack_overflow_too_many_4
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/interactions/chat.cpp:307
+-	LuaScriptInterface::setMetatable(L, -1, "Player");
++	LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.chat.player_4", player->getLocale()));
+# key: cpp.chat.player_4
+# en: Player
+
+--- ./src/creatures/interactions/chat.cpp:328
+-		LuaScriptInterface::reportError(nullptr, "Stack size changed!");
++		LuaScriptInterface::reportError(nullptr, i18n::g_translator().get("cpp.chat.stack_size_changed", player->getLocale()));
+# key: cpp.chat.stack_size_changed
+# en: Stack size changed!
+
+--- ./src/creatures/interactions/chat.cpp:335
+-	scriptInterface("Chat Interface"),
++	scriptInterface(i18n::g_translator().get("cpp.chat.chat_interface", player->getLocale())),
+# key: cpp.chat.chat_interface
+# en: Chat Interface
+
+--- ./src/creatures/interactions/chat.cpp:336
+-	dummyPrivate(std::make_shared<PrivateChatChannel>(CHANNEL_PRIVATE, "Private Chat Channel")) {
++	dummyPrivate(std::make_shared<PrivateChatChannel>(CHANNEL_PRIVATE, i18n::g_translator().get("cpp.chat.private_chat_channel", player->getLocale()))) {
+# key: cpp.chat.private_chat_channel
+# en: Private Chat Channel
+
+--- ./src/creatures/interactions/chat.cpp:368
+-					channel->onSpeakEvent = scriptInterface.getEvent("onSpeak");
++					channel->onSpeakEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.onspeak", player->getLocale()));
+# key: cpp.chat.onspeak
+# en: onSpeak
+
+--- ./src/creatures/interactions/chat.cpp:369
+-					channel->canJoinEvent = scriptInterface.getEvent("canJoin");
++					channel->canJoinEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.canjoin", player->getLocale()));
+# key: cpp.chat.canjoin
+# en: canJoin
+
+--- ./src/creatures/interactions/chat.cpp:370
+-					channel->onJoinEvent = scriptInterface.getEvent("onJoin");
++					channel->onJoinEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.onjoin", player->getLocale()));
+# key: cpp.chat.onjoin
+# en: onJoin
+
+--- ./src/creatures/interactions/chat.cpp:371
+-					channel->onLeaveEvent = scriptInterface.getEvent("onLeave");
++					channel->onLeaveEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.onleave", player->getLocale()));
+# key: cpp.chat.onleave
+# en: onLeave
+
+--- ./src/creatures/interactions/chat.cpp:373
+-					g_logger().warn("[Chat::load] - Can not load script: {}", scriptAttribute.as_string());
++					g_logger().warn(i18n::g_translator().get("cpp.chat.chat_load_can_not_load_script", player->getLocale()), scriptAttribute.as_string());
+# key: cpp.chat.chat_load_can_not_load_script
+# en: [Chat::load] - Can not load script: {}
+
+--- ./src/creatures/interactions/chat.cpp:393
+-				channel->onSpeakEvent = scriptInterface.getEvent("onSpeak");
++				channel->onSpeakEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.onspeak_2", player->getLocale()));
+# key: cpp.chat.onspeak_2
+# en: onSpeak
+
+--- ./src/creatures/interactions/chat.cpp:394
+-				channel->canJoinEvent = scriptInterface.getEvent("canJoin");
++				channel->canJoinEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.canjoin_2", player->getLocale()));
+# key: cpp.chat.canjoin_2
+# en: canJoin
+
+--- ./src/creatures/interactions/chat.cpp:395
+-				channel->onJoinEvent = scriptInterface.getEvent("onJoin");
++				channel->onJoinEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.onjoin_2", player->getLocale()));
+# key: cpp.chat.onjoin_2
+# en: onJoin
+
+--- ./src/creatures/interactions/chat.cpp:396
+-				channel->onLeaveEvent = scriptInterface.getEvent("onLeave");
++				channel->onLeaveEvent = scriptInterface.getEvent(i18n::g_translator().get("cpp.chat.onleave_2", player->getLocale()));
+# key: cpp.chat.onleave_2
+# en: onLeave
+
+--- ./src/creatures/interactions/chat.cpp:398
+-				g_logger().warn("[Chat::load] Can not load script: {}", scriptAttribute.as_string());
++				g_logger().warn(i18n::g_translator().get("cpp.chat.chat_load_can_not_load_script_2", player->getLocale()), scriptAttribute.as_string());
+# key: cpp.chat.chat_load_can_not_load_script_2
+# en: [Chat::load] Can not load script: {}
+
+--- ./src/creatures/interactions/chat.cpp:427
+-				auto [iter, inserted] = partyChannels.try_emplace(party, std::make_shared<ChatChannel>(channelId, "Party"));
++				auto [iter, inserted] = partyChannels.try_emplace(party, std::make_shared<ChatChannel>(channelId, i18n::g_translator().get("cpp.chat.party", player->getLocale())));
+# key: cpp.chat.party
+# en: Party
+
+--- ./src/creatures/interactions/chat.cpp:443
+-				auto [iter, inserted] = privateChannels.try_emplace(i, std::make_shared<PrivateChatChannel>(i, player->getName() + "'s Channel"));
++				auto [iter, inserted] = privateChannels.try_emplace(i, std::make_shared<PrivateChatChannel>(i, player->getName() + i18n::g_translator().get("cpp.chat.s_channel", player->getLocale())));
+# key: cpp.chat.s_channel
+# en: 's Channel
+

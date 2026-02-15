@@ -1,0 +1,11 @@
+# i18n-proposal: ./src/config/configmanager.hpp
+# Generated: 2026-02-15T19:30:42.762626Z
+# Category: cpp
+# Transforms: 1
+
+--- ./src/config/configmanager.hpp:59
+-	std::string configFileLua = { "config.lua" };
++	std::string configFileLua = { i18n::g_translator().get("cpp.configmanager.config_lua", player->getLocale()) };
+# key: cpp.configmanager.config_lua
+# en: config.lua
+

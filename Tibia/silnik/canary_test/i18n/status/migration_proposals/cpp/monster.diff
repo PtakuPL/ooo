@@ -1,0 +1,221 @@
+# i18n-proposal: ./src/creatures/monsters/monster.cpp
+# Generated: 2026-02-15T19:30:43.130203Z
+# Category: cpp
+# Transforms: 36
+
+--- ./src/creatures/monsters/monster.cpp:58
+-			g_logger().warn("[Monster::Monster] - "
++			g_logger().warn(i18n::g_translator().get("cpp.monster.monster_monster", player->getLocale())
+# key: cpp.monster.monster_monster
+# en: [Monster::Monster] - 
+
+--- ./src/creatures/monsters/monster.cpp:59
+-			                "Unknown event name: {}",
++			                i18n::g_translator().get("cpp.monster.unknown_event_name", player->getLocale()),
+# key: cpp.monster.unknown_event_name
+# en: Unknown event name: {}
+
+--- ./src/creatures/monsters/monster.cpp:161
+-		g_logger().debug("[{}] before mtype reflect element {}, percent {}", __FUNCTION__, fmt::underlying(reflectType), result);
++		g_logger().debug(i18n::g_translator().get("cpp.monster.before_mtype_reflect_element", player->getLocale()), __FUNCTION__, fmt::underlying(reflectType), result);
+# key: cpp.monster.before_mtype_reflect_element
+# en: [{}] before mtype reflect element {}, percent {}
+
+--- ./src/creatures/monsters/monster.cpp:169
+-		g_logger().debug("[{}] after mtype reflect element {}, percent {}", __FUNCTION__, fmt::underlying(reflectType), result);
++		g_logger().debug(i18n::g_translator().get("cpp.monster.after_mtype_reflect_element", player->getLocale()), __FUNCTION__, fmt::underlying(reflectType), result);
+# key: cpp.monster.after_mtype_reflect_element
+# en: [{}] after mtype reflect element {}, percent {}
+
+--- ./src/creatures/monsters/monster.cpp:179
+-		g_logger().debug("[{}] (final) after monster reflect element {}, percent {}", __FUNCTION__, fmt::underlying(reflectType), result);
++		g_logger().debug(i18n::g_translator().get("cpp.monster.final_after_monster_reflect", player->getLocale()), __FUNCTION__, fmt::underlying(reflectType), result);
+# key: cpp.monster.final_after_monster_reflect
+# en: [{}] (final) after monster reflect element {}, percent {}
+
+--- ./src/creatures/monsters/monster.cpp:186
+-	g_logger().debug("[{}] added reflect element {}, percent {}", __FUNCTION__, fmt::underlying(combatType), percent);
++	g_logger().debug(i18n::g_translator().get("cpp.monster.added_reflect_element_percent", player->getLocale()), __FUNCTION__, fmt::underlying(combatType), percent);
+# key: cpp.monster.added_reflect_element_percent
+# en: [{}] added reflect element {}, percent {}
+
+--- ./src/creatures/monsters/monster.cpp:193
+-		g_logger().trace("[{}] old defense {}", __FUNCTION__, mtypeDefense);
++		g_logger().trace(i18n::g_translator().get("cpp.monster.old_defense", player->getLocale()), __FUNCTION__, mtypeDefense);
+# key: cpp.monster.old_defense
+# en: [{}] old defense {}
+
+--- ./src/creatures/monsters/monster.cpp:197
+-		g_logger().trace("[{}] new defense {}", __FUNCTION__, mtypeDefense);
++		g_logger().trace(i18n::g_translator().get("cpp.monster.new_defense", player->getLocale()), __FUNCTION__, mtypeDefense);
+# key: cpp.monster.new_defense
+# en: [{}] new defense {}
+
+--- ./src/creatures/monsters/monster.cpp:203
+-	g_logger().trace("[{}] adding defense {}", __FUNCTION__, defense);
++	g_logger().trace(i18n::g_translator().get("cpp.monster.adding_defense", player->getLocale()), __FUNCTION__, defense);
+# key: cpp.monster.adding_defense
+# en: [{}] adding defense {}
+
+--- ./src/creatures/monsters/monster.cpp:205
+-	g_logger().trace("[{}] new defense {}", __FUNCTION__, m_defense);
++	g_logger().trace(i18n::g_translator().get("cpp.monster.new_defense_2", player->getLocale()), __FUNCTION__, m_defense);
+# key: cpp.monster.new_defense_2
+# en: [{}] new defense {}
+
+--- ./src/creatures/monsters/monster.cpp:303
+-			g_logger().error("[Monster::onCreatureAppear - Monster {} creature {}] "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_oncreatureappear", player->getLocale())
+# key: cpp.monster.monster_oncreatureappear
+# en: [Monster::onCreatureAppear - Monster {} creature {}] 
+
+--- ./src/creatures/monsters/monster.cpp:304
+-			                 "Call stack overflow. Too many lua script calls being nested.",
++			                 i18n::g_translator().get("cpp.monster.call_stack_overflow_too_many", player->getLocale()),
+# key: cpp.monster.call_stack_overflow_too_many
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/monsters/monster.cpp:316
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster", player->getLocale()));
+# key: cpp.monster.monster
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:343
+-			g_logger().error("[Monster::onCreatureDisappear - Monster {} creature {}] "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_oncreaturedisappear", player->getLocale())
+# key: cpp.monster.monster_oncreaturedisappear
+# en: [Monster::onCreatureDisappear - Monster {} creature {}] 
+
+--- ./src/creatures/monsters/monster.cpp:344
+-			                 "Call stack overflow. Too many lua script calls being nested.",
++			                 i18n::g_translator().get("cpp.monster.call_stack_overflow_too_many_2", player->getLocale()),
+# key: cpp.monster.call_stack_overflow_too_many_2
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/monsters/monster.cpp:356
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster_2", player->getLocale()));
+# key: cpp.monster.monster_2
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:386
+-			g_logger().error("[Monster::onCreatureMove - Monster {} creature {}] "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_oncreaturemove", player->getLocale())
+# key: cpp.monster.monster_oncreaturemove
+# en: [Monster::onCreatureMove - Monster {} creature {}] 
+
+--- ./src/creatures/monsters/monster.cpp:387
+-			                 "Call stack overflow. Too many lua script calls being nested.",
++			                 i18n::g_translator().get("cpp.monster.call_stack_overflow_too_many_3", player->getLocale()),
+# key: cpp.monster.call_stack_overflow_too_many_3
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/monsters/monster.cpp:399
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster_3", player->getLocale()));
+# key: cpp.monster.monster_3
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:468
+-			g_logger().error("Monster {} creature {}] Call stack overflow. Too many lua "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_creature_call_stack", player->getLocale())
+# key: cpp.monster.monster_creature_call_stack
+# en: Monster {} creature {}] Call stack overflow. Too many lua 
+
+--- ./src/creatures/monsters/monster.cpp:469
+-			                 "script calls being nested.",
++			                 i18n::g_translator().get("cpp.monster.script_calls_being_nested", player->getLocale()),
+# key: cpp.monster.script_calls_being_nested
+# en: script calls being nested.
+
+--- ./src/creatures/monsters/monster.cpp:481
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster_4", player->getLocale()));
+# key: cpp.monster.monster_4
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:498
+-			g_logger().error("Monster {} creature {}] Call stack overflow. Too many lua "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_creature_call_stack_2", player->getLocale())
+# key: cpp.monster.monster_creature_call_stack_2
+# en: Monster {} creature {}] Call stack overflow. Too many lua 
+
+--- ./src/creatures/monsters/monster.cpp:499
+-			                 "script calls being nested.",
++			                 i18n::g_translator().get("cpp.monster.script_calls_being_nested_2", player->getLocale()),
+# key: cpp.monster.script_calls_being_nested_2
+# en: script calls being nested.
+
+--- ./src/creatures/monsters/monster.cpp:511
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster_5", player->getLocale()));
+# key: cpp.monster.monster_5
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:514
+-		LuaScriptInterface::setMetatable(L, -1, "Player");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.player", player->getLocale()));
+# key: cpp.monster.player
+# en: Player
+
+--- ./src/creatures/monsters/monster.cpp:525
+-			g_logger().error("Monster {} creature {}] Call stack overflow. Too many lua "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_creature_call_stack_3", player->getLocale())
+# key: cpp.monster.monster_creature_call_stack_3
+# en: Monster {} creature {}] Call stack overflow. Too many lua 
+
+--- ./src/creatures/monsters/monster.cpp:526
+-			                 "script calls being nested.",
++			                 i18n::g_translator().get("cpp.monster.script_calls_being_nested_3", player->getLocale()),
+# key: cpp.monster.script_calls_being_nested_3
+# en: script calls being nested.
+
+--- ./src/creatures/monsters/monster.cpp:538
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster_6", player->getLocale()));
+# key: cpp.monster.monster_6
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:547
+-		g_logger().error("[{}]: adding creature is same of monster", __FUNCTION__);
++		g_logger().error(i18n::g_translator().get("cpp.monster.adding_creature_is_same_of", player->getLocale()), __FUNCTION__);
+# key: cpp.monster.adding_creature_is_same_of
+# en: [{}]: adding creature is same of monster
+
+--- ./src/creatures/monsters/monster.cpp:564
+-		g_logger().error("[{}]: adding creature is same of monster", __FUNCTION__);
++		g_logger().error(i18n::g_translator().get("cpp.monster.adding_creature_is_same_of_2", player->getLocale()), __FUNCTION__);
+# key: cpp.monster.adding_creature_is_same_of_2
+# en: [{}]: adding creature is same of monster
+
+--- ./src/creatures/monsters/monster.cpp:911
+-		if (player && player->wheel().getInstant("Ballistic Mastery")) {
++		if (player && player->wheel().getInstant(i18n::g_translator().get("cpp.monster.ballistic_mastery", player->getLocale()))) {
+# key: cpp.monster.ballistic_mastery
+# en: Ballistic Mastery
+
+--- ./src/creatures/monsters/monster.cpp:1048
+-			g_logger().error("Monster {} Call stack overflow. Too many lua script calls "
++			g_logger().error(i18n::g_translator().get("cpp.monster.monster_call_stack_overflow", player->getLocale())
+# key: cpp.monster.monster_call_stack_overflow
+# en: Monster {} Call stack overflow. Too many lua script calls 
+
+--- ./src/creatures/monsters/monster.cpp:1049
+-			                 "being nested.",
++			                 i18n::g_translator().get("cpp.monster.being_nested", player->getLocale()),
+# key: cpp.monster.being_nested
+# en: being nested.
+
+--- ./src/creatures/monsters/monster.cpp:1061
+-		LuaScriptInterface::setMetatable(L, -1, "Monster");
++		LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("cpp.monster.monster_7", player->getLocale()));
+# key: cpp.monster.monster_7
+# en: Monster
+
+--- ./src/creatures/monsters/monster.cpp:2626
+-	const std::string &Eventname = "ForgeSystemMonster";
++	const std::string &Eventname = i18n::g_translator().get("cpp.monster.forgesystemmonster", player->getLocale());
+# key: cpp.monster.forgesystemmonster
+# en: ForgeSystemMonster
+

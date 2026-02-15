@@ -1,0 +1,11 @@
+# i18n-proposal: ./src/creatures/players/components/player_attached_effects.cpp
+# Generated: 2026-02-15T19:30:43.188693Z
+# Category: cpp
+# Transforms: 1
+
+--- ./src/creatures/players/components/player_attached_effects.cpp:743
+-		return "Outfit - Default";
++		return i18n::g_translator().get("cpp.player_attached_effects.outfit_default", player->getLocale());
+# key: cpp.player_attached_effects.outfit_default
+# en: Outfit - Default
+

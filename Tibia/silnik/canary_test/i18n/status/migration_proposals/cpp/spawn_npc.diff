@@ -1,0 +1,35 @@
+# i18n-proposal: ./src/creatures/npcs/spawns/spawn_npc.cpp
+# Generated: 2026-02-15T19:30:43.180075Z
+# Category: cpp
+# Transforms: 5
+
+--- ./src/creatures/npcs/spawns/spawn_npc.cpp:57
+-			g_logger().warn("[SpawnsNpc::loadFromXml] - Empty spawn at position: {} with radius: {}", centerPos.toString(), radius);
++			g_logger().warn(i18n::g_translator().get("cpp.spawn_npc.spawnsnpc_loadfromxml_empty", player->getLocale()), centerPos.toString(), radius);
+# key: cpp.spawn_npc.spawnsnpc_loadfromxml_empty
+# en: [SpawnsNpc::loadFromXml] - Empty spawn at position: {} with radius: {}
+
+--- ./src/creatures/npcs/spawns/spawn_npc.cpp:91
+-						g_logger().warn("[SpawnsNpc::loadFromXml] - {} {} spawntime can not be less than {} seconds", nameAttribute.as_string(), pos.toString(), MINSPAWN_INTERVAL / 1000);
++						g_logger().warn(i18n::g_translator().get("cpp.spawn_npc.spawnsnpc_loadfromxml_spawnti", player->getLocale()), nameAttribute.as_string(), pos.toString(), MINSPAWN_INTERVAL / 1000);
+# key: cpp.spawn_npc.spawnsnpc_loadfromxml_spawnti
+# en: [SpawnsNpc::loadFromXml] - {} {} spawntime can not be less than {} seconds
+
+--- ./src/creatures/npcs/spawns/spawn_npc.cpp:93
+-						g_logger().warn("[SpawnsNpc::loadFromXml] - {} {} spawntime can not be more than {} seconds", nameAttribute.as_string(), pos.toString(), MAXSPAWN_INTERVAL / 1000);
++						g_logger().warn(i18n::g_translator().get("cpp.spawn_npc.spawnsnpc_loadfromxml_spawnti_2", player->getLocale()), nameAttribute.as_string(), pos.toString(), MAXSPAWN_INTERVAL / 1000);
+# key: cpp.spawn_npc.spawnsnpc_loadfromxml_spawnti_2
+# en: [SpawnsNpc::loadFromXml] - {} {} spawntime can not be more than {} seconds
+
+--- ./src/creatures/npcs/spawns/spawn_npc.cpp:160
+-			getInterval(), [this] { checkSpawnNpc(); }, "SpawnNpc::checkSpawnNpc"
++			getInterval(), [this] { checkSpawnNpc(); }, i18n::g_translator().get("cpp.spawn_npc.spawnnpc_checkspawnnpc", player->getLocale())
+# key: cpp.spawn_npc.spawnnpc_checkspawnnpc
+# en: SpawnNpc::checkSpawnNpc
+
+--- ./src/creatures/npcs/spawns/spawn_npc.cpp:284
+-		g_logger().error("Can not find {}", name);
++		g_logger().error(i18n::g_translator().get("cpp.spawn_npc.can_not_find", player->getLocale()), name);
+# key: cpp.spawn_npc.can_not_find
+# en: Can not find {}
+

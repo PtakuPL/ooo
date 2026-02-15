@@ -1,0 +1,125 @@
+# i18n-proposal: ./src/creatures/combat/spells.cpp
+# Generated: 2026-02-15T19:30:42.977021Z
+# Category: cpp
+# Transforms: 20
+
+--- ./src/creatures/combat/spells.cpp:96
+-			words += " \"" + param + "\"";
++			words += " \"i18n::g_translator().get("cpp.spells.param", player->getLocale())\"";
+# key: cpp.spells.param
+# en:  + param + 
+
+--- ./src/creatures/combat/spells.cpp:127
+-			g_logger().error("[Spells::registerInstantLuaEvent] - Missing register word for spell with name {}", instantName);
++			g_logger().error(i18n::g_translator().get("cpp.spells.spells", player->getLocale()), instantName);
+# key: cpp.spells.spells
+# en: [Spells::registerInstantLuaEvent] - Missing register word for spell with name {}
+
+--- ./src/creatures/combat/spells.cpp:134
+-			g_logger().warn("[Spells::registerInstantLuaEvent] - "
++			g_logger().warn(i18n::g_translator().get("cpp.spells.spells_registerinstantluaevent", player->getLocale())
+# key: cpp.spells.spells_registerinstantluaevent
+# en: [Spells::registerInstantLuaEvent] - 
+
+--- ./src/creatures/combat/spells.cpp:135
+-			                "Duplicate registered instant spell with words: {}, on spell with name: {}",
++			                i18n::g_translator().get("cpp.spells.duplicate_registered_instant", player->getLocale()),
+# key: cpp.spells.duplicate_registered_instant
+# en: Duplicate registered instant spell with words: {}, on spell with name: {}
+
+--- ./src/creatures/combat/spells.cpp:153
+-				"[{}] duplicate registered rune with id: {}, for script: {}",
++				i18n::g_translator().get("cpp.spells.duplicate_registered_rune", player->getLocale()),
+# key: cpp.spells.duplicate_registered_rune
+# en: [{}] duplicate registered rune with id: {}, for script: {}
+
+--- ./src/creatures/combat/spells.cpp:285
+-		g_logger().error("[MoveEvent::loadScriptId] Failed to load event. Script name: '{}', Module: '{}'", luaInterface.getLoadingScriptName(), luaInterface.getInterfaceName());
++		g_logger().error(i18n::g_translator().get("cpp.spells.moveevent_loadscriptid_failed", player->getLocale()), luaInterface.getLoadingScriptName(), luaInterface.getInterfaceName());
+# key: cpp.spells.moveevent_loadscriptid_failed
+# en: [MoveEvent::loadScriptId] Failed to load event. Script name: '{}', Module: '{}'
+
+--- ./src/creatures/combat/spells.cpp:407
+-		g_logger().error("[CombatSpell::executeCastSpell - Creature {}] "
++		g_logger().error(i18n::g_translator().get("cpp.spells.combatspell_executecastspell", player->getLocale())
+# key: cpp.spells.combatspell_executecastspell
+# en: [CombatSpell::executeCastSpell - Creature {}] 
+
+--- ./src/creatures/combat/spells.cpp:408
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("cpp.spells.call_stack_overflow_too_many", player->getLocale()),
+# key: cpp.spells.call_stack_overflow_too_many
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/spells.cpp:562
+-		g_logger().error("[Spell::playerInstantSpellCheck] - Invalid tile at position: {}, player: {}", toPos.toString(), player->getName());
++		g_logger().error(i18n::g_translator().get("cpp.spells.spell_playerinstantspellcheck", player->getLocale()), toPos.toString(), player->getName());
+# key: cpp.spells.spell_playerinstantspellcheck
+# en: [Spell::playerInstantSpellCheck] - Invalid tile at position: {}, player: {}
+
+--- ./src/creatures/combat/spells.cpp:605
+-		g_logger().error("[Spell::playerRuneSpellCheck] - Invalid tile at position: {}, player: {}", toPos.toString(), player->getName());
++		g_logger().error(i18n::g_translator().get("cpp.spells.spell_playerrunespellcheck", player->getLocale()), toPos.toString(), player->getName());
+# key: cpp.spells.spell_playerrunespellcheck
+# en: [Spell::playerRuneSpellCheck] - Invalid tile at position: {}, player: {}
+
+--- ./src/creatures/combat/spells.cpp:661
+-		g_logger().error("[{}] invalid grade value, error code: {}", __FUNCTION__, e.what());
++		g_logger().error(i18n::g_translator().get("cpp.spells.invalid_grade_value_error_code", player->getLocale()), __FUNCTION__, e.what());
+# key: cpp.spells.invalid_grade_value_error_code
+# en: [{}] invalid grade value, error code: {}
+
+--- ./src/creatures/combat/spells.cpp:679
+-		g_logger().error("[{}] invalid grade value, error code: {}", __FUNCTION__, e.what());
++		g_logger().error(i18n::g_translator().get("cpp.spells.invalid_grade_value_error_code_2", player->getLocale()), __FUNCTION__, e.what());
+# key: cpp.spells.invalid_grade_value_error_code_2
+# en: [{}] invalid grade value, error code: {}
+
+--- ./src/creatures/combat/spells.cpp:753
+-		g_logger().debug("[{}] spell name: {}, grade: {}, originalCooldown: {}, spellCooldown: {}, bonus: {}, augment {}", __FUNCTION__, name, spellGrade, cooldown, spellCooldown, player->wheel().getSpellBonus(name, WheelSpellBoost_t::COOLDOWN), augmentCooldownReduction);
++		g_logger().debug(i18n::g_translator().get("cpp.spells.spell_name_grade_original", player->getLocale()), __FUNCTION__, name, spellGrade, cooldown, spellCooldown, player->wheel().getSpellBonus(name, WheelSpellBoost_t::COOLDOWN), augmentCooldownReduction);
+# key: cpp.spells.spell_name_grade_original
+# en: [{}] spell name: {}, grade: {}, originalCooldown: {}, spellCooldown: {}, bonus: {}, augment {}
+
+--- ./src/creatures/combat/spells.cpp:933
+-		g_logger().error("Vocation overflow for spell: {}", getName());
++		g_logger().error(i18n::g_translator().get("cpp.spells.vocation_overflow_for_spell", player->getLocale()), getName());
+# key: cpp.spells.vocation_overflow_for_spell
+# en: Vocation overflow for spell: {}
+
+--- ./src/creatures/combat/spells.cpp:937
+-	g_logger().trace("Adding spell: {} to voc id: {}", getName(), vocationId);
++	g_logger().trace(i18n::g_translator().get("cpp.spells.adding_spell_to_voc_id", player->getLocale()), getName(), vocationId);
+# key: cpp.spells.adding_spell_to_voc_id
+# en: Adding spell: {} to voc id: {}
+
+--- ./src/creatures/combat/spells.cpp:1240
+-		g_logger().error("[InstantSpell::executeCastSpell - Creature {} words {}] "
++		g_logger().error(i18n::g_translator().get("cpp.spells.instantspell_executecastspell", player->getLocale())
+# key: cpp.spells.instantspell_executecastspell
+# en: [InstantSpell::executeCastSpell - Creature {} words {}] 
+
+--- ./src/creatures/combat/spells.cpp:1241
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("cpp.spells.call_stack_overflow_too_many_2", player->getLocale()),
+# key: cpp.spells.call_stack_overflow_too_many_2
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/spells.cpp:1335
+-		g_logger().error("[MoveEvent::loadScriptId] Failed to load event. Script name: '{}', Module: '{}'", luaInterface.getLoadingScriptName(), luaInterface.getInterfaceName());
++		g_logger().error(i18n::g_translator().get("cpp.spells.moveevent_loadscriptid_failed_2", player->getLocale()), luaInterface.getLoadingScriptName(), luaInterface.getInterfaceName());
+# key: cpp.spells.moveevent_loadscriptid_failed_2
+# en: [MoveEvent::loadScriptId] Failed to load event. Script name: '{}', Module: '{}'
+
+--- ./src/creatures/combat/spells.cpp:1468
+-		g_logger().error("[RuneSpell::executeCastSpell - Creature {} runeId {}] "
++		g_logger().error(i18n::g_translator().get("cpp.spells.runespell_executecastspell", player->getLocale())
+# key: cpp.spells.runespell_executecastspell
+# en: [RuneSpell::executeCastSpell - Creature {} runeId {}] 
+
+--- ./src/creatures/combat/spells.cpp:1469
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("cpp.spells.call_stack_overflow_too_many_3", player->getLocale()),
+# key: cpp.spells.call_stack_overflow_too_many_3
+# en: Call stack overflow. Too many lua script calls being nested.
+

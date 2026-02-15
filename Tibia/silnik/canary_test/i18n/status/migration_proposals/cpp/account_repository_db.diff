@@ -1,0 +1,65 @@
+# i18n-proposal: ./src/account/account_repository_db.cpp
+# Generated: 2026-02-15T19:30:42.615226Z
+# Category: cpp
+# Transforms: 10
+
+--- ./src/account/account_repository_db.cpp:39
+-		"FROM `accounts` "
++		i18n::g_translator().get("cpp.account_repository_db.from_accounts", player->getLocale())
+# key: cpp.account_repository_db.from_accounts
+# en: FROM `accounts` 
+
+--- ./src/account/account_repository_db.cpp:40
+-		"INNER JOIN `account_sessions` ON `account_sessions`.`account_id` = `accounts`.`id` "
++		i18n::g_translator().get("cpp.account_repository_db.inner_join_account_sessions", player->getLocale())
+# key: cpp.account_repository_db.inner_join_account_sessions
+# en: INNER JOIN `account_sessions` ON `account_sessions`.`account_id` = `accounts`.`id` 
+
+--- ./src/account/account_repository_db.cpp:41
+-		"WHERE `account_sessions`.`id` = {}",
++		i18n::g_translator().get("cpp.account_repository_db.where_account_sessions_id", player->getLocale()),
+# key: cpp.account_repository_db.where_account_sessions_id
+# en: WHERE `account_sessions`.`id` = {}
+
+--- ./src/account/account_repository_db.cpp:62
+-		g_logger().error("Failed to save account:[{}]", accInfo->id);
++		g_logger().error(i18n::g_translator().get("cpp.account_repository_db.failed_to_save_account", player->getLocale()), accInfo->id);
+# key: cpp.account_repository_db.failed_to_save_account
+# en: Failed to save account:[{}]
+
+--- ./src/account/account_repository_db.cpp:71
+-		g_logger().error("Failed to get character: [{}] from account: [{}]!", name, id);
++		g_logger().error(i18n::g_translator().get("cpp.account_repository_db.failed_to_get_character_from", player->getLocale()), name, id);
+# key: cpp.account_repository_db.failed_to_get_character_from
+# en: Failed to get character: [{}] from account: [{}]!
+
+--- ./src/account/account_repository_db.cpp:81
+-		g_logger().error("Failed to get account:[{}] password!", id);
++		g_logger().error(i18n::g_translator().get("cpp.account_repository_db.failed_to_get_account_password", player->getLocale()), id);
+# key: cpp.account_repository_db.failed_to_get_account_password
+# en: Failed to get account:[{}] password!
+
+--- ./src/account/account_repository_db.cpp:92
+-		g_logger().error("[{}] invalid coin type:[{}]", __FUNCTION__, coinType);
++		g_logger().error(i18n::g_translator().get("cpp.account_repository_db.invalid_coin_type", player->getLocale()), __FUNCTION__, coinType);
+# key: cpp.account_repository_db.invalid_coin_type
+# en: [{}] invalid coin type:[{}]
+
+--- ./src/account/account_repository_db.cpp:116
+-		g_logger().error("[{}]: invalid coin type:[{}]", __FUNCTION__, coinType);
++		g_logger().error(i18n::g_translator().get("cpp.account_repository_db.invalid_coin_type_2", player->getLocale()), __FUNCTION__, coinType);
+# key: cpp.account_repository_db.invalid_coin_type_2
+# en: [{}]: invalid coin type:[{}]
+
+--- ./src/account/account_repository_db.cpp:174
+-		g_logger().error("Failed to load account[{}] players!", acc->id);
++		g_logger().error(i18n::g_translator().get("cpp.account_repository_db.failed_to_load_account_players", player->getLocale()), acc->id);
+# key: cpp.account_repository_db.failed_to_load_account_players
+# en: Failed to load account[{}] players!
+
+--- ./src/account/account_repository_db.cpp:183
+-		acc->players.try_emplace({ result->getString("name"), result->getNumber<uint64_t>("deletion") });
++		acc->players.try_emplace({ result->getString("namei18n::g_translator().get("cpp.account_repository_db.result_getnumber_uint64_t", player->getLocale())deletion") });
+# key: cpp.account_repository_db.result_getnumber_uint64_t
+# en: ), result->getNumber<uint64_t>(
+

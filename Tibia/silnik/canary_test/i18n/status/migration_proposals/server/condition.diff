@@ -1,0 +1,233 @@
+# i18n-proposal: ./src/creatures/combat/condition.cpp
+# Generated: 2026-02-15T19:30:43.913849Z
+# Category: server
+# Transforms: 38
+
+--- ./src/creatures/combat/condition.cpp:348
+-		g_logger().debug("Condition {} is persistent", conditionType);
++		g_logger().debug(i18n::g_translator().get("misc.condition.condition_is_persistent", player->getLocale()), conditionType);
+# key: misc.condition.condition_is_persistent
+# en: Condition {} is persistent
+
+--- ./src/creatures/combat/condition.cpp:1164
+-		g_logger().error("Index {} is out of range in getAbsorbsValue: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in
+# en: Index {} is out of range in getAbsorbsValue: {}
+
+--- ./src/creatures/combat/condition.cpp:1173
+-		g_logger().error("Index {} is out of range in setAbsorb: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_2", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_2
+# en: Index {} is out of range in setAbsorb: {}
+
+--- ./src/creatures/combat/condition.cpp:1181
+-		g_logger().error("Index {} is out of range in getAbsorbPercentByIndex: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_3", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_3
+# en: Index {} is out of range in getAbsorbPercentByIndex: {}
+
+--- ./src/creatures/combat/condition.cpp:1190
+-		g_logger().error("Index {} is out of range in setAbsorbPercent: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_4", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_4
+# en: Index {} is out of range in setAbsorbPercent: {}
+
+--- ./src/creatures/combat/condition.cpp:1198
+-		g_logger().error("Index {} is out of range in getIncreaseByIndex: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_5", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_5
+# en: Index {} is out of range in getIncreaseByIndex: {}
+
+--- ./src/creatures/combat/condition.cpp:1207
+-		g_logger().error("Index {} is out of range in setIncrease: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_6", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_6
+# en: Index {} is out of range in setIncrease: {}
+
+--- ./src/creatures/combat/condition.cpp:1215
+-		g_logger().error("Index {} is out of range in getIncreasePercentById: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_7", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_7
+# en: Index {} is out of range in getIncreasePercentById: {}
+
+--- ./src/creatures/combat/condition.cpp:1224
+-		g_logger().error("Index {} is out of range in setIncreasePercent: {}", index, e.what());
++		g_logger().error(i18n::g_translator().get("misc.condition.index_is_out_of_range_in_8", player->getLocale()), index, e.what());
+# key: misc.condition.index_is_out_of_range_in_8
+# en: Index {} is out of range in setIncreasePercent: {}
+
+--- ./src/creatures/combat/condition.cpp:1328
+-					TextMessage message(MESSAGE_HEALED, tr.plural("cpp.combat.condition_healed", playerLoc, realHealthGain, {hpAmount}));
++					TextMessage message(MESSAGE_HEALED, tr.plural(i18n::g_translator().get("misc.condition.cpp_combat_condition_healed", player->getLocale()), playerLoc, realHealthGain, {hpAmount}));
+# key: misc.condition.cpp_combat_condition_healed
+# en: cpp.combat.condition_healed
+
+--- ./src/creatures/combat/condition.cpp:1350
+-								message.text = tr.plural("cpp.combat.condition_healed_spectator", spectatorLoc, realHealthGain, {player->getName(), hpAmount});
++								message.text = tr.plural(i18n::g_translator().get("misc.condition.cpp_combat_condition_healed_2", player->getLocale()), spectatorLoc, realHealthGain, {player->getName(), hpAmount});
+# key: misc.condition.cpp_combat_condition_healed_2
+# en: cpp.combat.condition_healed_spectator
+
+--- ./src/creatures/combat/condition.cpp:2023
+-		g_logger().error("[{}] creature is nullptr", __FUNCTION__);
++		g_logger().error(i18n::g_translator().get("misc.condition.creature_is_nullptr", player->getLocale()), __FUNCTION__);
+# key: misc.condition.creature_is_nullptr
+# en: [{}] creature is nullptr
+
+--- ./src/creatures/combat/condition.cpp:2051
+-		g_logger().debug("[ConditionsFeared::getFleeDirection] Monster is on top of player, flee randomly. {} {}", offx, offy);
++		g_logger().debug(i18n::g_translator().get("misc.condition.conditionsfeared", player->getLocale()), offx, offy);
+# key: misc.condition.conditionsfeared
+# en: [ConditionsFeared::getFleeDirection] Monster is on top of player, flee randomly. {} {}
+
+--- ./src/creatures/combat/condition.cpp:2058
+-		g_logger().debug("[ConditionsFeared::getFleeDirection] Monster is on the SW region, flee to N, NE or E. {} {}", offx, offy);
++		g_logger().debug(i18n::g_translator().get("misc.condition.conditionsfeared_2", player->getLocale()), offx, offy);
+# key: misc.condition.conditionsfeared_2
+# en: [ConditionsFeared::getFleeDirection] Monster is on the SW region, flee to N, NE or E. {} {}
+
+--- ./src/creatures/combat/condition.cpp:2072
+-		g_logger().debug("[ConditionsFeared::getFleeDirection] Monster is on the NW region, flee to E, SE or S. {} {}", offx, offy);
++		g_logger().debug(i18n::g_translator().get("misc.condition.conditionsfeared_3", player->getLocale()), offx, offy);
+# key: misc.condition.conditionsfeared_3
+# en: [ConditionsFeared::getFleeDirection] Monster is on the NW region, flee to E, SE or S. {} {}
+
+--- ./src/creatures/combat/condition.cpp:2086
+-		g_logger().debug("[ConditionsFeared::getFleeDirection] Monster is on the NE region, flee to S, SW or W. {} {}", offx, offy);
++		g_logger().debug(i18n::g_translator().get("misc.condition.conditionsfeared_4", player->getLocale()), offx, offy);
+# key: misc.condition.conditionsfeared_4
+# en: [ConditionsFeared::getFleeDirection] Monster is on the NE region, flee to S, SW or W. {} {}
+
+--- ./src/creatures/combat/condition.cpp:2100
+-		g_logger().debug("[ConditionsFeared::getFleeDirection] Monster is on the SE region, flee to W, NW or N. {} {}", offx, offy);
++		g_logger().debug(i18n::g_translator().get("misc.condition.conditionsfeared_5", player->getLocale()), offx, offy);
+# key: misc.condition.conditionsfeared_5
+# en: [ConditionsFeared::getFleeDirection] Monster is on the SE region, flee to W, NW or N. {} {}
+
+--- ./src/creatures/combat/condition.cpp:2111
+-	g_logger().debug("[ConditionsFeared::getFleeDirection] Something went wrong. {} {}", offx, offy);
++	g_logger().debug(i18n::g_translator().get("misc.condition.conditionsfeared_6", player->getLocale()), offx, offy);
+# key: misc.condition.conditionsfeared_6
+# en: [ConditionsFeared::getFleeDirection] Something went wrong. {} {}
+
+--- ./src/creatures/combat/condition.cpp:2123
+-			g_logger().debug("[{}] Checking on index {} with walkSize of {}", __FUNCTION__, fleeIndx, wsize);
++			g_logger().debug(i18n::g_translator().get("misc.condition.checking_on_index_with", player->getLocale()), __FUNCTION__, fleeIndx, wsize);
+# key: misc.condition.checking_on_index_with
+# en: [{}] Checking on index {} with walkSize of {}
+
+--- ./src/creatures/combat/condition.cpp:2130
+-				g_logger().debug("[{}] Can't walk to anywhere", __FUNCTION__);
++				g_logger().debug(i18n::g_translator().get("misc.condition.can_t_walk_to_anywhere", player->getLocale()), __FUNCTION__);
+# key: misc.condition.can_t_walk_to_anywhere
+# en: [{}] Can't walk to anywhere
+
+--- ./src/creatures/combat/condition.cpp:2139
+-					g_logger().debug("[{}] Trying to flee to NORTH to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_north_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_north_to
+# en: [{}] Trying to flee to NORTH to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2145
+-					g_logger().debug("[{}] Trying to flee to NORTHEAST to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_northeast_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_northeast_to
+# en: [{}] Trying to flee to NORTHEAST to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2150
+-					g_logger().debug("[{}] Trying to flee to EAST to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_east_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_east_to
+# en: [{}] Trying to flee to EAST to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2156
+-					g_logger().debug("[{}] Trying to flee to SOUTHEAST to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_southeast_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_southeast_to
+# en: [{}] Trying to flee to SOUTHEAST to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2161
+-					g_logger().debug("[{}] Trying to flee to SOUTH to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_south_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_south_to
+# en: [{}] Trying to flee to SOUTH to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2167
+-					g_logger().debug("[{}] Trying to flee to SOUTHWEST to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_southwest_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_southwest_to
+# en: [{}] Trying to flee to SOUTHWEST to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2172
+-					g_logger().debug("[{}] Trying to flee to WEST to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_west_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_west_to
+# en: [{}] Trying to flee to WEST to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2178
+-					g_logger().debug("[{}] Trying to flee to NORTHWEST to {} [{}]", __FUNCTION__, futurePos.toString(), wsize);
++					g_logger().debug(i18n::g_translator().get("misc.condition.trying_to_flee_to_northwest_to", player->getLocale()), __FUNCTION__, futurePos.toString(), wsize);
+# key: misc.condition.trying_to_flee_to_northwest_to
+# en: [{}] Trying to flee to NORTHWEST to {} [{}]
+
+--- ./src/creatures/combat/condition.cpp:2197
+-	g_logger().debug("[{}] Found Available path to {} with {} steps", __FUNCTION__, futurePos.toString(), found_size);
++	g_logger().debug(i18n::g_translator().get("misc.condition.found_available_path_to_with", player->getLocale()), __FUNCTION__, futurePos.toString(), found_size);
+# key: misc.condition.found_available_path_to_with
+# en: [{}] Found Available path to {} with {} steps
+
+--- ./src/creatures/combat/condition.cpp:2213
+-	g_logger().debug("[ConditionFeared::executeCondition] Condition started for {}", creature->getName());
++	g_logger().debug(i18n::g_translator().get("misc.condition.conditionfeared", player->getLocale()), creature->getName());
+# key: misc.condition.conditionfeared
+# en: [ConditionFeared::executeCondition] Condition started for {}
+
+--- ./src/creatures/combat/condition.cpp:2215
+-	g_logger().debug("[ConditionFeared::executeCondition] Flee from {}", fleeingFromPos.toString());
++	g_logger().debug(i18n::g_translator().get("misc.condition.conditionfeared_2", player->getLocale()), fleeingFromPos.toString());
+# key: misc.condition.conditionfeared_2
+# en: [ConditionFeared::executeCondition] Flee from {}
+
+--- ./src/creatures/combat/condition.cpp:2223
+-	g_logger().debug("[ConditionFeared::executeCondition] Executing condition, current position is {}", currentPos.toString());
++	g_logger().debug(i18n::g_translator().get("misc.condition.conditionfeared_3", player->getLocale()), currentPos.toString());
+# key: misc.condition.conditionfeared_3
+# en: [ConditionFeared::executeCondition] Executing condition, current position is {}
+
+--- ./src/creatures/combat/condition.cpp:2238
+-			g_logger().debug("[ConditionFeared::executeCondition] Walking Scheduled");
++			g_logger().debug(i18n::g_translator().get("misc.condition.conditionfeared_4", player->getLocale()));
+# key: misc.condition.conditionfeared_4
+# en: [ConditionFeared::executeCondition] Walking Scheduled
+
+--- ./src/creatures/combat/condition.cpp:2486
+-		g_logger().warn("[ConditionOutfit::startCondition] An unregistered creature looktype type with id '{}' was blocked to prevent client crash.", outfit.lookType);
++		g_logger().warn(i18n::g_translator().get("misc.condition.conditionoutfit", player->getLocale()), outfit.lookType);
+# key: misc.condition.conditionoutfit
+# en: [ConditionOutfit::startCondition] An unregistered creature looktype type with id '{}' was blocked to prevent client crash.
+
+--- ./src/creatures/combat/condition.cpp:2495
+-			g_logger().error("[ConditionOutfit::startCondition] Monster {} does not exist", monsterName);
++			g_logger().error(i18n::g_translator().get("misc.condition.conditionoutfit_2", player->getLocale()), monsterName);
+# key: misc.condition.conditionoutfit_2
+# en: [ConditionOutfit::startCondition] Monster {} does not exist
+
+--- ./src/creatures/combat/condition.cpp:2518
+-		g_logger().warn("[ConditionOutfit::addCondition] An unregistered creature looktype type with id '{}' was blocked to prevent client crash.", outfit.lookType);
++		g_logger().warn(i18n::g_translator().get("misc.condition.conditionoutfit_addcondition", player->getLocale()), outfit.lookType);
+# key: misc.condition.conditionoutfit_addcondition
+# en: [ConditionOutfit::addCondition] An unregistered creature looktype type with id '{}' was blocked to prevent client crash.
+
+--- ./src/creatures/combat/condition.cpp:2531
+-				g_logger().error("[ConditionOutfit::addCondition] - Monster {} does not exist", monsterName);
++				g_logger().error(i18n::g_translator().get("misc.condition.conditionoutfit_addcondition_2", player->getLocale()), monsterName);
+# key: misc.condition.conditionoutfit_addcondition_2
+# en: [ConditionOutfit::addCondition] - Monster {} does not exist
+
+--- ./src/creatures/combat/condition.cpp:2614
+-				g_logger().warn("[ConditionLight::setParam] Trying to set invalid light value: '{}', defaulting to 1.", value);
++				g_logger().warn(i18n::g_translator().get("misc.condition.conditionlight_setparam", player->getLocale()), value);
+# key: misc.condition.conditionlight_setparam
+# en: [ConditionLight::setParam] Trying to set invalid light value: '{}', defaulting to 1.
+

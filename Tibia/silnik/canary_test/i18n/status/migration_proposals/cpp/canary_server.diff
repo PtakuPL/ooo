@@ -1,0 +1,11 @@
+# i18n-proposal: ./src/canary_server.hpp
+# Generated: 2026-02-15T19:30:42.638935Z
+# Category: cpp
+# Transforms: 1
+
+--- ./src/canary_server.hpp:24
+-		message("Canary load couldn't be completed. " + msg) { }
++		message(i18n::g_translator().get("cpp.canary_server.canary_load_couldn_t_be", player->getLocale()) + msg) { }
+# key: cpp.canary_server.canary_load_couldn_t_be
+# en: Canary load couldn't be completed. 
+

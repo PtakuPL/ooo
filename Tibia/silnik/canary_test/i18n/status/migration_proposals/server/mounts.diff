@@ -1,0 +1,11 @@
+# i18n-proposal: ./src/creatures/appearance/mounts/mounts.cpp
+# Generated: 2026-02-15T19:30:43.809843Z
+# Category: server
+# Transforms: 1
+
+--- ./src/creatures/appearance/mounts/mounts.cpp:34
+-			g_logger().warn("{} - An unregistered creature mount with id '{}' was blocked to prevent client crash.", __FUNCTION__, lookType);
++			g_logger().warn(i18n::g_translator().get("misc.mounts.an_unregistered_creature", player->getLocale()), __FUNCTION__, lookType);
+# key: misc.mounts.an_unregistered_creature
+# en: {} - An unregistered creature mount with id '{}' was blocked to prevent client crash.
+

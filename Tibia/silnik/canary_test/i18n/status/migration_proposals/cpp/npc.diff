@@ -1,0 +1,65 @@
+# i18n-proposal: ./src/creatures/npcs/npc.cpp
+# Generated: 2026-02-15T19:30:43.171037Z
+# Category: cpp
+# Transforms: 10
+
+--- ./src/creatures/npcs/npc.cpp:53
+-			g_logger().warn("Unknown event name: {}", scriptName);
++			g_logger().warn(i18n::g_translator().get("cpp.npc.unknown_event_name", player->getLocale()), scriptName);
+# key: cpp.npc.unknown_event_name
+# en: Unknown event name: {}
+
+--- ./src/creatures/npcs/npc.cpp:361
+-		g_logger().error("[Npc::onPlayerBuyItem] - Player is nullptr");
++		g_logger().error(i18n::g_translator().get("cpp.npc.npc_onplayerbuyitem_player_is", player->getLocale()));
+# key: cpp.npc.npc_onplayerbuyitem_player_is
+# en: [Npc::onPlayerBuyItem] - Player is nullptr
+
+--- ./src/creatures/npcs/npc.cpp:405
+-		g_logger().error("[Npc::onPlayerBuyItem (getMoney)] - Player {} have a problem for buy item {} on shop for npc {}", player->getName(), itemId, getName());
++		g_logger().error(i18n::g_translator().get("cpp.npc.npc_onplayerbuyitem_getmoney", player->getLocale()), player->getName(), itemId, getName());
+# key: cpp.npc.npc_onplayerbuyitem_getmoney
+# en: [Npc::onPlayerBuyItem (getMoney)] - Player {} have a problem for buy item {} on shop for npc {}
+
+--- ./src/creatures/npcs/npc.cpp:406
+-		g_logger().debug("[Information] Player {} tried to buy item {} on shop for npc {}, at position {}", player->getName(), itemId, getName(), player->getPosition().toString());
++		g_logger().debug(i18n::g_translator().get("cpp.npc.information_player_tried_to", player->getLocale()), player->getName(), itemId, getName(), player->getPosition().toString());
+# key: cpp.npc.information_player_tried_to
+# en: [Information] Player {} tried to buy item {} on shop for npc {}, at position {}
+
+--- ./src/creatures/npcs/npc.cpp:410
+-		g_logger().error("[Npc::onPlayerBuyItem (getItemTypeCount)] - Player {} have a problem for buy item {} on shop for npc {}", player->getName(), itemId, getName());
++		g_logger().error(i18n::g_translator().get("cpp.npc.npc_onplayerbuyitem", player->getLocale()), player->getName(), itemId, getName());
+# key: cpp.npc.npc_onplayerbuyitem
+# en: [Npc::onPlayerBuyItem (getItemTypeCount)] - Player {} have a problem for buy item {} on shop for npc {}
+
+--- ./src/creatures/npcs/npc.cpp:411
+-		g_logger().debug("[Information] Player {} tried to buy item {} on shop for npc {}, at position {}", player->getName(), itemId, getName(), player->getPosition().toString());
++		g_logger().debug(i18n::g_translator().get("cpp.npc.information_player_tried_to_2", player->getLocale()), player->getName(), itemId, getName(), player->getPosition().toString());
+# key: cpp.npc.information_player_tried_to_2
+# en: [Information] Player {} tried to buy item {} on shop for npc {}, at position {}
+
+--- ./src/creatures/npcs/npc.cpp:473
+-			player->sendTextMessage(MESSAGE_TRANSACTION, tr.get("cpp.npc.loot_pouch_empty", loc));
++			player->sendTextMessage(MESSAGE_TRANSACTION, tr.get(i18n::g_translator().get("cpp.npc.cpp_npc_loot_pouch_empty", player->getLocale()), loc));
+# key: cpp.npc.cpp_npc_loot_pouch_empty
+# en: cpp.npc.loot_pouch_empty
+
+--- ./src/creatures/npcs/npc.cpp:482
+-		player->sendTextMessage(MESSAGE_TRANSACTION, tr.format("cpp.npc.loot_pouch_sold", loc, {std::to_string(totalPrice)}));
++		player->sendTextMessage(MESSAGE_TRANSACTION, tr.format(i18n::g_translator().get("cpp.npc.cpp_npc_loot_pouch_sold", player->getLocale()), loc, {std::to_string(totalPrice)}));
+# key: cpp.npc.cpp_npc_loot_pouch_sold
+# en: cpp.npc.loot_pouch_sold
+
+--- ./src/creatures/npcs/npc.cpp:534
+-			g_logger().error("[Npc::onPlayerSellItem] - Player {} have a problem for sell item {} on shop for npc {}", player->getName(), item->getID(), getName());
++			g_logger().error(i18n::g_translator().get("cpp.npc.npc_onplayersellitem_player", player->getLocale()), player->getName(), item->getID(), getName());
+# key: cpp.npc.npc_onplayersellitem_player
+# en: [Npc::onPlayerSellItem] - Player {} have a problem for sell item {} on shop for npc {}
+
+--- ./src/creatures/npcs/npc.cpp:550
+-	g_logger().debug("[Npc::onPlayerSellItem] - Removing items from player {} amount {} of items with id {} on shop for npc {}", player->getName(), toRemove, itemId, getName());
++	g_logger().debug(i18n::g_translator().get("cpp.npc.npc_onplayersellitem_removing", player->getLocale()), player->getName(), toRemove, itemId, getName());
+# key: cpp.npc.npc_onplayersellitem_removing
+# en: [Npc::onPlayerSellItem] - Removing items from player {} amount {} of items with id {} on shop for npc {}
+

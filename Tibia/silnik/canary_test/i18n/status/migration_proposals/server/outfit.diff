@@ -1,0 +1,41 @@
+# i18n-proposal: ./src/creatures/appearance/outfit/outfit.cpp
+# Generated: 2026-02-15T19:30:43.812349Z
+# Category: server
+# Transforms: 6
+
+--- ./src/creatures/appearance/outfit/outfit.cpp:48
+-			g_logger().warn("[Outfits::loadFromXml] - Missing outfit type");
++			g_logger().warn(i18n::g_translator().get("misc.outfit.outfits_loadfromxml_missing", player->getLocale()));
+# key: misc.outfit.outfits_loadfromxml_missing
+# en: [Outfits::loadFromXml] - Missing outfit type
+
+--- ./src/creatures/appearance/outfit/outfit.cpp:54
+-			g_logger().warn("[Outfits::loadFromXml] - Invalid outfit type {}", type);
++			g_logger().warn(i18n::g_translator().get("misc.outfit.outfits_loadfromxml_invalid", player->getLocale()), type);
+# key: misc.outfit.outfits_loadfromxml_invalid
+# en: [Outfits::loadFromXml] - Invalid outfit type {}
+
+--- ./src/creatures/appearance/outfit/outfit.cpp:60
+-			g_logger().warn("[Outfits::loadFromXml] - Missing looktype on outfit");
++			g_logger().warn(i18n::g_translator().get("misc.outfit.outfits_loadfromxml_missing_2", player->getLocale()));
+# key: misc.outfit.outfits_loadfromxml_missing_2
+# en: [Outfits::loadFromXml] - Missing looktype on outfit
+
+--- ./src/creatures/appearance/outfit/outfit.cpp:67
+-			g_logger().warn("[Outfits::loadFromXml] An unregistered creature looktype type with id '{}' was ignored to prevent client crash.", lookType);
++			g_logger().warn(i18n::g_translator().get("misc.outfit.outfits_loadfromxml_an", player->getLocale()), lookType);
+# key: misc.outfit.outfits_loadfromxml_an
+# en: [Outfits::loadFromXml] An unregistered creature looktype type with id '{}' was ignored to prevent client crash.
+
+--- ./src/creatures/appearance/outfit/outfit.cpp:87
+-		g_logger().error("[{}] - Player not found", __FUNCTION__);
++		g_logger().error(i18n::g_translator().get("misc.outfit.player_not_found", player->getLocale()), __FUNCTION__);
+# key: misc.outfit.player_not_found
+# en: [{}] - Player not found
+
+--- ./src/creatures/appearance/outfit/outfit.cpp:93
+-		g_logger().error("[{}] - Sex invalid or player: {}", __FUNCTION__, player->getName());
++		g_logger().error(i18n::g_translator().get("misc.outfit.sex_invalid_or_player", player->getLocale()), __FUNCTION__, player->getName());
+# key: misc.outfit.sex_invalid_or_player
+# en: [{}] - Sex invalid or player: {}
+

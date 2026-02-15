@@ -1,0 +1,29 @@
+# i18n-proposal: ./src/creatures/players/components/player_achievement.cpp
+# Generated: 2026-02-15T19:30:43.183848Z
+# Category: cpp
+# Transforms: 4
+
+--- ./src/creatures/players/components/player_achievement.cpp:33
+-		std::string localizedName = tr.get("achievement." + std::to_string(achievement.id) + ".name", loc);
++		std::string localizedName = tr.get(i18n::g_translator().get("cpp.player_achievement.achievement", player->getLocale()) + std::to_string(achievement.id) + ".name", loc);
+# key: cpp.player_achievement.achievement
+# en: achievement.
+
+--- ./src/creatures/players/components/player_achievement.cpp:108
+-	g_logger().debug("[{}] - Loading unlocked achievements: {}", __FUNCTION__, unlockedAchievements.size());
++	g_logger().debug(i18n::g_translator().get("cpp.player_achievement.loading_unlocked_achievements", player->getLocale()), __FUNCTION__, unlockedAchievements.size());
+# key: cpp.player_achievement.loading_unlocked_achievements
+# en: [{}] - Loading unlocked achievements: {}
+
+--- ./src/creatures/players/components/player_achievement.cpp:112
+-			g_logger().error("[{}] - Achievement {} not found.", __FUNCTION__, achievementName);
++			g_logger().error(i18n::g_translator().get("cpp.player_achievement.achievement_not_found", player->getLocale()), __FUNCTION__, achievementName);
+# key: cpp.player_achievement.achievement_not_found
+# en: [{}] - Achievement {} not found.
+
+--- ./src/creatures/players/components/player_achievement.cpp:116
+-		g_logger().debug("[{}] - Achievement {} found for player {}.", __FUNCTION__, achievementName, m_player.getName());
++		g_logger().debug(i18n::g_translator().get("cpp.player_achievement.achievement_found_for_player", player->getLocale()), __FUNCTION__, achievementName, m_player.getName());
+# key: cpp.player_achievement.achievement_found_for_player
+# en: [{}] - Achievement {} found for player {}.
+

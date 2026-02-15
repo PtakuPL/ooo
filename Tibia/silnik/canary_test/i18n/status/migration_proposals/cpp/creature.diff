@@ -1,0 +1,161 @@
+# i18n-proposal: ./src/creatures/creature.cpp
+# Generated: 2026-02-15T19:30:43.015890Z
+# Category: cpp
+# Transforms: 26
+
+--- ./src/creatures/creature.cpp:155
+-		} }, "Creature::checkCreatureAttack");
++		} }, i18n::g_translator().get("cpp.creature.creature_checkcreatureattack", player->getLocale()));
+# key: cpp.creature.creature_checkcreatureattack
+# en: Creature::checkCreatureAttack
+
+--- ./src/creatures/creature.cpp:251
+-			g_game().internalCreatureSay(static_self_cast<Creature>(), TALKTYPE_MONSTER_SAY, "Hicks!", false);
++			g_game().internalCreatureSay(static_self_cast<Creature>(), TALKTYPE_MONSTER_SAY, i18n::g_translator().get("cpp.creature.hicks", player->getLocale()), false);
+# key: cpp.creature.hicks
+# en: Hicks!
+
+--- ./src/creatures/creature.cpp:323
+-			"Game::checkCreatureWalk"
++			i18n::g_translator().get("cpp.creature.game_checkcreaturewalk", player->getLocale())
+# key: cpp.creature.game_checkcreaturewalk
+# en: Game::checkCreatureWalk
+
+--- ./src/creatures/creature.cpp:412
+-						g_logger().warn("[{}] cannot teleport summon, position has teleport. {}", __FUNCTION__, creatureMaster->getPosition().toString());
++						g_logger().warn(i18n::g_translator().get("cpp.creature.cannot_teleport_summon", player->getLocale()), __FUNCTION__, creatureMaster->getPosition().toString());
+# key: cpp.creature.cannot_teleport_summon
+# en: [{}] cannot teleport summon, position has teleport. {}
+
+--- ./src/creatures/creature.cpp:615
+-				{ "most_damage_creature", mostDamageCreature ? mostDamageCreature->getName() : "(none)" },
++				{ "most_damage_creature", mostDamageCreature ? mostDamageCreature->getName() : i18n::g_translator().get("cpp.creature.none", player->getLocale()) },
+# key: cpp.creature.none
+# en: (none)
+
+--- ./src/creatures/creature.cpp:616
+-				{ "last_hit_creature", lastHitCreature ? lastHitCreature->getName() : "(none)" },
++				{ "last_hit_creature", lastHitCreature ? lastHitCreature->getName() : i18n::g_translator().get("cpp.creature.none_2", player->getLocale()) },
+# key: cpp.creature.none_2
+# en: (none)
+
+--- ./src/creatures/creature.cpp:618
+-				{ "most_damage_creature_master", mostDamageCreatureMaster ? mostDamageCreatureMaster->getName() : "(none)" },
++				{ "most_damage_creature_master", mostDamageCreatureMaster ? mostDamageCreatureMaster->getName() : i18n::g_translator().get("cpp.creature.none_3", player->getLocale()) },
+# key: cpp.creature.none_3
+# en: (none)
+
+--- ./src/creatures/creature.cpp:625
+-		std::string killerName = mostDamageCreature ? mostDamageCreature->getName() : "(none)";
++		std::string killerName = mostDamageCreature ? mostDamageCreature->getName() : i18n::g_translator().get("cpp.creature.none_4", player->getLocale());
+# key: cpp.creature.none_4
+# en: (none)
+
+--- ./src/creatures/creature.cpp:714
+-					std::string lootMessage = tr.format("cpp.creature.loot_of", loc, {std::string(getNameDescription()), corpseContainer->getContentDescription(collorMessage)});
++					std::string lootMessage = tr.format(i18n::g_translator().get("cpp.creature.cpp_creature_loot_of", player->getLocale()), loc, {std::string(getNameDescription()), corpseContainer->getContentDescription(collorMessage)});
+# key: cpp.creature.cpp_creature_loot_of
+# en: cpp.creature.loot_of
+
+--- ./src/creatures/creature.cpp:735
+-					                        "Game::playerQuickLootCorpse");
++					                        i18n::g_translator().get("cpp.creature.game_playerquicklootcorpse", player->getLocale()));
+# key: cpp.creature.game_playerquicklootcorpse
+# en: Game::playerQuickLootCorpse
+
+--- ./src/creatures/creature.cpp:789
+-			} }, "Game::executeDeath");
++			} }, i18n::g_translator().get("cpp.creature.game_executedeath", player->getLocale()));
+# key: cpp.creature.game_executedeath
+# en: Game::executeDeath
+
+--- ./src/creatures/creature.cpp:830
+-		g_logger().trace("[mitigation] creature: {}, original damage: {}, mitigation damage: {}", getName(), originalDamage, damage);
++		g_logger().trace(i18n::g_translator().get("cpp.creature.mitigation_creature_original", player->getLocale()), getName(), originalDamage, damage);
+# key: cpp.creature.mitigation_creature_original
+# en: [mitigation] creature: {}, original damage: {}, mitigation damage: {}
+
+--- ./src/creatures/creature.cpp:967
+-		g_dispatcher().addEvent(std::move(onComplete), "goToFollowCreature_async");
++		g_dispatcher().addEvent(std::move(onComplete), i18n::g_translator().get("cpp.creature.gotofollowcreature_async", player->getLocale()));
+# key: cpp.creature.gotofollowcreature_async
+# en: goToFollowCreature_async
+
+--- ./src/creatures/creature.cpp:1224
+-		TextMessage message(MESSAGE_EXPERIENCE_OTHERS, fmt::format("{} gained {} experience point{}.", ucfirst(getNameDescription()), gainExp, (gainExp != 1 ? "s" : "")));
++		TextMessage message(MESSAGE_EXPERIENCE_OTHERS, fmt::format(i18n::g_translator().get("cpp.creature.gained_experience_point", player->getLocale()), ucfirst(getNameDescription()), gainExp, (gainExp != 1 ? "s" : "")));
+# key: cpp.creature.gained_experience_point
+# en: {} gained {} experience point{}.
+
+--- ./src/creatures/creature.cpp:1224
+-		TextMessage message(MESSAGE_EXPERIENCE_OTHERS, fmt::format("{} gained {} experience point{}.", ucfirst(getNameDescription()), gainExp, (gainExp != 1 ? "s" : "")));
++		TextMessage message(MESSAGE_EXPERIENCE_OTHERS, fmt::format(i18n::g_translator().get("cpp.creature.gained_experience_point_2", player->getLocale()), ucfirst(getNameDescription()), gainExp, (gainExp != 1 ? "s" : "")));
+# key: cpp.creature.gained_experience_point_2
+# en: {} gained {} experience point{}.
+
+--- ./src/creatures/creature.cpp:1339
+-					walkDelay, [creatureId = getID(), conditionType, conditionId] { g_game().forceRemoveCondition(creatureId, conditionType, conditionId); }, "Game::forceRemoveCondition"
++					walkDelay, [creatureId = getID(), conditionType, conditionId] { g_game().forceRemoveCondition(creatureId, conditionType, conditionId); }, i18n::g_translator().get("cpp.creature.game_forceremovecondition", player->getLocale())
+# key: cpp.creature.game_forceremovecondition
+# en: Game::forceRemoveCondition
+
+--- ./src/creatures/creature.cpp:1794
+-		g_logger().error("Index is out of range in getReflectPercent: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in
+# en: Index is out of range in getReflectPercent: {}
+
+--- ./src/creatures/creature.cpp:1803
+-		g_logger().error("Index is out of range in setReflectPercent: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_2", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_2
+# en: Index is out of range in setReflectPercent: {}
+
+--- ./src/creatures/creature.cpp:1811
+-		g_logger().error("Index is out of range in getReflectFlat: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_3", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_3
+# en: Index is out of range in getReflectFlat: {}
+
+--- ./src/creatures/creature.cpp:1820
+-		g_logger().error("Index is out of range in setReflectFlat: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_4", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_4
+# en: Index is out of range in setReflectFlat: {}
+
+--- ./src/creatures/creature.cpp:1828
+-		g_logger().error("Index is out of range in getAbsorbFlat: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_5", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_5
+# en: Index is out of range in getAbsorbFlat: {}
+
+--- ./src/creatures/creature.cpp:1837
+-		g_logger().error("Index is out of range in setAbsorbFlat: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_6", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_6
+# en: Index is out of range in setAbsorbFlat: {}
+
+--- ./src/creatures/creature.cpp:1845
+-		g_logger().error("Index is out of range in getAbsorbPercent: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_7", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_7
+# en: Index is out of range in getAbsorbPercent: {}
+
+--- ./src/creatures/creature.cpp:1854
+-		g_logger().error("Index is out of range in setAbsorbPercent: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_8", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_8
+# en: Index is out of range in setAbsorbPercent: {}
+
+--- ./src/creatures/creature.cpp:1862
+-		g_logger().error("Index is out of range in getIncreasePercent: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_9", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_9
+# en: Index is out of range in getIncreasePercent: {}
+
+--- ./src/creatures/creature.cpp:1871
+-		g_logger().error("Index is out of range in setIncreasePercent: {}", e.what());
++		g_logger().error(i18n::g_translator().get("cpp.creature.index_is_out_of_range_in_10", player->getLocale()), e.what());
+# key: cpp.creature.index_is_out_of_range_in_10
+# en: Index is out of range in setIncreasePercent: {}
+

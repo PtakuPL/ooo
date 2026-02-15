@@ -1,0 +1,23 @@
+# i18n-proposal: ./src/creatures/players/components/player_badge.cpp
+# Generated: 2026-02-15T19:30:44.156929Z
+# Category: server
+# Transforms: 3
+
+--- ./src/creatures/players/components/player_badge.cpp:88
+-	g_logger().debug("[{}] - Loading unlocked badges: {}", __FUNCTION__, unlockedBadges.size());
++	g_logger().debug(i18n::g_translator().get("misc.player_badge.loading_unlocked_badges", player->getLocale()), __FUNCTION__, unlockedBadges.size());
+# key: misc.player_badge.loading_unlocked_badges
+# en: [{}] - Loading unlocked badges: {}
+
+--- ./src/creatures/players/components/player_badge.cpp:92
+-			g_logger().error("[{}] - Badge {} not found.", __FUNCTION__, badgeName);
++			g_logger().error(i18n::g_translator().get("misc.player_badge.badge_not_found", player->getLocale()), __FUNCTION__, badgeName);
+# key: misc.player_badge.badge_not_found
+# en: [{}] - Badge {} not found.
+
+--- ./src/creatures/players/components/player_badge.cpp:96
+-		g_logger().debug("[{}] - Badge {} found for player {}.", __FUNCTION__, badge.m_name, m_player.getName());
++		g_logger().debug(i18n::g_translator().get("misc.player_badge.badge_found_for_player", player->getLocale()), __FUNCTION__, badge.m_name, m_player.getName());
+# key: misc.player_badge.badge_found_for_player
+# en: [{}] - Badge {} found for player {}.
+

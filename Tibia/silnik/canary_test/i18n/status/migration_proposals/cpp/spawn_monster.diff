@@ -1,0 +1,89 @@
+# i18n-proposal: ./src/creatures/monsters/spawns/spawn_monster.cpp
+# Generated: 2026-02-15T19:30:43.162449Z
+# Category: cpp
+# Transforms: 14
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:64
+-			g_logger().warn("[SpawnsMonster::loadFromXml] - Empty spawn at position: {} with radius: {}", centerPos.toString(), radius);
++			g_logger().warn(i18n::g_translator().get("cpp.spawn_monster.spawnsmonster_loadfromxml", player->getLocale()), centerPos.toString(), radius);
+# key: cpp.spawn_monster.spawnsmonster_loadfromxml
+# en: [SpawnsMonster::loadFromXml] - Empty spawn at position: {} with radius: {}
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:107
+-						g_logger().warn("Invalid spawntime value '{}' for monster '{}'. Setting to default respawn time: {}", spawnTimeAttr.value(), nameAttribute.value(), scheduleInterval);
++						g_logger().warn(i18n::g_translator().get("cpp.spawn_monster.invalid_spawntime_value_for", player->getLocale()), spawnTimeAttr.value(), nameAttribute.value(), scheduleInterval);
+# key: cpp.spawn_monster.invalid_spawntime_value_for
+# en: Invalid spawntime value '{}' for monster '{}'. Setting to default respawn time: {}
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:110
+-					g_logger().warn("Missing spawntime attribute for monster '{}'. Setting to default respawn time: {}", nameAttribute.value(), scheduleInterval);
++					g_logger().warn(i18n::g_translator().get("cpp.spawn_monster.missing_spawntime_attribute", player->getLocale()), nameAttribute.value(), scheduleInterval);
+# key: cpp.spawn_monster.missing_spawntime_attribute
+# en: Missing spawntime attribute for monster '{}'. Setting to default respawn time: {}
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:169
+-			getInterval(), [this] { checkSpawnMonster(); }, "SpawnMonster::checkSpawnMonster"
++			getInterval(), [this] { checkSpawnMonster(); }, i18n::g_translator().get("cpp.spawn_monster.spawnmonster_checkspawnmonster", player->getLocale())
+# key: cpp.spawn_monster.spawnmonster_checkspawnmonster
+# en: SpawnMonster::checkSpawnMonster
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:223
+-		g_logger().trace("[SpawnMonster] Spawning {} at {}", monsterType->name, sb.pos.toString());
++		g_logger().trace(i18n::g_translator().get("cpp.spawn_monster.spawnmonster_spawning_at", player->getLocale()), monsterType->name, sb.pos.toString());
+# key: cpp.spawn_monster.spawnmonster_spawning_at
+# en: [SpawnMonster] Spawning {} at {}
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:311
+-			getInterval(), [this] { checkSpawnMonster(); }, "SpawnMonster::checkSpawnMonster"
++			getInterval(), [this] { checkSpawnMonster(); }, i18n::g_translator().get("cpp.spawn_monster.spawnmonster_checkspawnmonster_2", player->getLocale())
+# key: cpp.spawn_monster.spawnmonster_checkspawnmonster_2
+# en: SpawnMonster::checkSpawnMonster
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:322
+-			NONBLOCKABLE_SPAWN_MONSTER_INTERVAL, [=, this, &sb] { scheduleSpawn(spawnMonsterId, sb, mType, interval - NONBLOCKABLE_SPAWN_MONSTER_INTERVAL, startup); }, "SpawnMonster::scheduleSpawn"
++			NONBLOCKABLE_SPAWN_MONSTER_INTERVAL, [=, this, &sb] { scheduleSpawn(spawnMonsterId, sb, mType, interval - NONBLOCKABLE_SPAWN_MONSTER_INTERVAL, startup); }, i18n::g_translator().get("cpp.spawn_monster.spawnmonster_schedulespawn", player->getLocale())
+# key: cpp.spawn_monster.spawnmonster_schedulespawn
+# en: SpawnMonster::scheduleSpawn
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:356
+-		g_logger().error("Can not find {}", name);
++		g_logger().error(i18n::g_translator().get("cpp.spawn_monster.can_not_find", player->getLocale()), name);
+# key: cpp.spawn_monster.can_not_find
+# en: Can not find {}
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:370
+-		g_logger().warn("[SpawnsMonster::addMonster] - {} {} spawntime cannot be less than {} seconds, set to {} by default.", name, pos.toString(), MONSTER_MINSPAWN_INTERVAL / 1000, MONSTER_MINSPAWN_INTERVAL / 1000);
++		g_logger().warn(i18n::g_translator().get("cpp.spawn_monster.spawnsmonster_addmonster_spaw", player->getLocale()), name, pos.toString(), MONSTER_MINSPAWN_INTERVAL / 1000, MONSTER_MINSPAWN_INTERVAL / 1000);
+# key: cpp.spawn_monster.spawnsmonster_addmonster_spaw
+# en: [SpawnsMonster::addMonster] - {} {} spawntime cannot be less than {} seconds, set to {} by default.
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:373
+-		g_logger().warn("[SpawnsMonster::addMonster] - {} {} spawntime can not be more than {} seconds, set to {} by default", name, pos.toString(), MONSTER_MAXSPAWN_INTERVAL / 1000, MONSTER_MAXSPAWN_INTERVAL / 1000);
++		g_logger().warn(i18n::g_translator().get("cpp.spawn_monster.spawnsmonster_addmonster_spaw_2", player->getLocale()), name, pos.toString(), MONSTER_MAXSPAWN_INTERVAL / 1000, MONSTER_MAXSPAWN_INTERVAL / 1000);
+# key: cpp.spawn_monster.spawnsmonster_addmonster_spaw_2
+# en: [SpawnsMonster::addMonster] - {} {} spawntime can not be more than {} seconds, set to {} by default
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:389
+-			g_logger().error("[SpawnMonster] Monster {} already exists in spawn block at {}", name, pos.toString());
++			g_logger().error(i18n::g_translator().get("cpp.spawn_monster.spawnmonster_monster_already", player->getLocale()), name, pos.toString());
+# key: cpp.spawn_monster.spawnmonster_monster_already
+# en: [SpawnMonster] Monster {} already exists in spawn block at {}
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:393
+-			g_logger().error("[SpawnMonster] Boss monster {} has been added to spawn block with other monsters. This is not allowed.", name);
++			g_logger().error(i18n::g_translator().get("cpp.spawn_monster.spawnmonster_boss_monster_has", player->getLocale()), name);
+# key: cpp.spawn_monster.spawnmonster_boss_monster_has
+# en: [SpawnMonster] Boss monster {} has been added to spawn block with other monsters. This is not allowed.
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:397
+-			g_logger().error("[SpawnMonster] Monster {} has been added to spawn block with a boss. This is not allowed.", name);
++			g_logger().error(i18n::g_translator().get("cpp.spawn_monster.spawnmonster_monster_has_been", player->getLocale()), name);
+# key: cpp.spawn_monster.spawnmonster_monster_has_been
+# en: [SpawnMonster] Monster {} has been added to spawn block with a boss. This is not allowed.
+
+--- ./src/creatures/monsters/spawns/spawn_monster.cpp:467
+-				g_logger().warn("[SpawnMonster] Boss monster {} has been added to spawn block with other monsters. This is not allowed.", mType->name);
++				g_logger().warn(i18n::g_translator().get("cpp.spawn_monster.spawnmonster_boss_monster_has_2", player->getLocale()), mType->name);
+# key: cpp.spawn_monster.spawnmonster_boss_monster_has_2
+# en: [SpawnMonster] Boss monster {} has been added to spawn block with other monsters. This is not allowed.
+

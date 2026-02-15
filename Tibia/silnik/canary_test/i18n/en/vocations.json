@@ -1,0 +1,19 @@
+{
+  "vocation.0.name": "None",
+  "vocation.1.description": "a sorcerer",
+  "vocation.1.name": "Sorcerer",
+  "vocation.2.description": "a druid",
+  "vocation.2.name": "Druid",
+  "vocation.3.description": "a paladin",
+  "vocation.3.name": "Paladin",
+  "vocation.4.description": "a knight",
+  "vocation.4.name": "Knight",
+  "vocation.5.description": "a master sorcerer",
+  "vocation.5.name": "Master Sorcerer",
+  "vocation.6.description": "an elder druid",
+  "vocation.6.name": "Elder Druid",
+  "vocation.7.description": "a royal paladin",
+  "vocation.7.name": "Royal Paladin",
+  "vocation.8.description": "an elite knight",
+  "vocation.8.name": "Elite Knight"
+}

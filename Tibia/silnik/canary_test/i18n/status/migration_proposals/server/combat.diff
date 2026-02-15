@@ -1,0 +1,215 @@
+# i18n-proposal: ./src/creatures/combat/combat.cpp
+# Generated: 2026-02-15T19:30:43.873057Z
+# Category: server
+# Transforms: 35
+
+--- ./src/creatures/combat/combat.cpp:41
+-	if (player->wheel().getInstant("Runic Mastery") && wheelSpell && damage.instantSpellName.empty() && normal_random(0, 100) <= 25) {
++	if (player->wheel().getInstant(i18n::g_translator().get("misc.combat.runic_mastery", player->getLocale())) && wheelSpell && damage.instantSpellName.empty() && normal_random(0, 100) <= 25) {
+# key: misc.combat.runic_mastery
+# en: Runic Mastery
+
+--- ./src/creatures/combat/combat.cpp:585
+-	g_logger().trace("ChainCallback created: {}, with targets: {}, distance: {}, backtracking: {}", params.chainCallback != nullptr, chainTargets, chainDistance, backtracking);
++	g_logger().trace(i18n::g_translator().get("misc.combat.chaincallback_created_with", player->getLocale()), params.chainCallback != nullptr, chainTargets, chainDistance, backtracking);
+# key: misc.combat.chaincallback_created_with
+# en: ChainCallback created: {}, with targets: {}, distance: {}, backtracking: {}
+
+--- ./src/creatures/combat/combat.cpp:616
+-		g_logger().error("[{}]: CombatDamage is nullptr", __FUNCTION__);
++		g_logger().error(i18n::g_translator().get("misc.combat.combatdamage_is_nullptr", player->getLocale()), __FUNCTION__);
+# key: misc.combat.combatdamage_is_nullptr
+# en: [{}]: CombatDamage is nullptr
+
+--- ./src/creatures/combat/combat.cpp:643
+-	g_logger().trace("[{}] (old) eventcallback: 'creatureOnCombat', damage primary: '{}', secondary: '{}'", __FUNCTION__, damage.primary.value, damage.secondary.value);
++	g_logger().trace(i18n::g_translator().get("misc.combat.old_eventcallback", player->getLocale()), __FUNCTION__, damage.primary.value, damage.secondary.value);
+# key: misc.combat.old_eventcallback
+# en: [{}] (old) eventcallback: 'creatureOnCombat', damage primary: '{}', secondary: '{}'
+
+--- ./src/creatures/combat/combat.cpp:645
+-	g_logger().trace("[{}] (new) eventcallback: 'creatureOnCombat', damage primary: '{}', secondary: '{}'", __FUNCTION__, damage.primary.value, damage.secondary.value);
++	g_logger().trace(i18n::g_translator().get("misc.combat.new_eventcallback", player->getLocale()), __FUNCTION__, damage.primary.value, damage.secondary.value);
+# key: misc.combat.new_eventcallback
+# en: [{}] (new) eventcallback: 'creatureOnCombat', damage primary: '{}', secondary: '{}'
+
+--- ./src/creatures/combat/combat.cpp:666
+-		damage.damageMultiplier += attackerPlayer->wheel().getMajorStatConditional("Divine Empowerment", WheelMajor_t::DAMAGE);
++		damage.damageMultiplier += attackerPlayer->wheel().getMajorStatConditional(i18n::g_translator().get("misc.combat.divine_empowerment", player->getLocale()), WheelMajor_t::DAMAGE);
+# key: misc.combat.divine_empowerment
+# en: Divine Empowerment
+
+--- ./src/creatures/combat/combat.cpp:667
+-		g_logger().trace("Wheel Divine Empowerment damage multiplier {}", damage.damageMultiplier);
++		g_logger().trace(i18n::g_translator().get("misc.combat.wheel_divine_empowerment", player->getLocale()), damage.damageMultiplier);
+# key: misc.combat.wheel_divine_empowerment
+# en: Wheel Divine Empowerment damage multiplier {}
+
+--- ./src/creatures/combat/combat.cpp:770
+-		g_logger().error("[{}]: CombatDamage is nullptr", __FUNCTION__);
++		g_logger().error(i18n::g_translator().get("misc.combat.combatdamage_is_nullptr_2", player->getLocale()), __FUNCTION__);
+# key: misc.combat.combatdamage_is_nullptr_2
+# en: [{}]: CombatDamage is nullptr
+
+--- ./src/creatures/combat/combat.cpp:799
+-		g_logger().debug("[{}] Player is member of a party, {} members can be feared", __FUNCTION__, affectedCount);
++		g_logger().debug(i18n::g_translator().get("misc.combat.player_is_member_of_a_party", player->getLocale()), __FUNCTION__, affectedCount);
+# key: misc.combat.player_is_member_of_a_party
+# en: [{}] Player is member of a party, {} members can be feared
+
+--- ./src/creatures/combat/combat.cpp:1077
+-	g_logger().trace("Weapon: {}, element type: {}", Item::items[weapon->getID()].name, weapon->params.combatType);
++	g_logger().trace(i18n::g_translator().get("misc.combat.weapon_element_type", player->getLocale()), Item::items[weapon->getID()].name, weapon->params.combatType);
+# key: misc.combat.weapon_element_type
+# en: Weapon: {}, element type: {}
+
+--- ./src/creatures/combat/combat.cpp:1137
+-	g_logger().debug("[{}] Chain targets: {}", __FUNCTION__, targets.size());
++	g_logger().debug(i18n::g_translator().get("misc.combat.chain_targets", player->getLocale()), __FUNCTION__, targets.size());
+# key: misc.combat.chain_targets
+# en: [{}] Chain targets: {}
+
+--- ./src/creatures/combat/combat.cpp:1160
+-				"Combat::doCombatChain"
++				i18n::g_translator().get("misc.combat.combat_docombatchain", player->getLocale())
+# key: misc.combat.combat_docombatchain
+# en: Combat::doCombatChain
+
+--- ./src/creatures/combat/combat.cpp:1555
+-		g_logger().debug("Combat::pickChainTargets: currentTarget: {}, spectators: {}", currentTarget->getName(), spectators.size());
++		g_logger().debug(i18n::g_translator().get("misc.combat.combat_pickchaintargets", player->getLocale()), currentTarget->getName(), spectators.size());
+# key: misc.combat.combat_pickchaintargets
+# en: Combat::pickChainTargets: currentTarget: {}, spectators: {}
+
+--- ./src/creatures/combat/combat.cpp:1576
+-			g_logger().trace("[{}] closestSpectator: {}", __FUNCTION__, closestSpectator->getName());
++			g_logger().trace(i18n::g_translator().get("misc.combat.closestspectator", player->getLocale()), __FUNCTION__, closestSpectator->getName());
+# key: misc.combat.closestspectator
+# en: [{}] closestSpectator: {}
+
+--- ./src/creatures/combat/combat.cpp:1595
+-			g_logger().debug("[{}] backtracking", __FUNCTION__);
++			g_logger().debug(i18n::g_translator().get("misc.combat.backtracking", player->getLocale()), __FUNCTION__);
+# key: misc.combat.backtracking
+# en: [{}] backtracking
+
+--- ./src/creatures/combat/combat.cpp:1603
+-	g_logger().debug("[{}] resultMap: {} in {} ms", __FUNCTION__, resultMap.size(), bm_pickChain.duration());
++	g_logger().debug(i18n::g_translator().get("misc.combat.resultmap_in_ms", player->getLocale()), __FUNCTION__, resultMap.size(), bm_pickChain.duration());
+# key: misc.combat.resultmap_in_ms
+# en: [{}] resultMap: {} in {} ms
+
+--- ./src/creatures/combat/combat.cpp:1626
+-	if (player && player->wheel().getInstant("Runic Mastery") && damage.instantSpellName.empty()) {
++	if (player && player->wheel().getInstant(i18n::g_translator().get("misc.combat.runic_mastery_2", player->getLocale())) && damage.instantSpellName.empty()) {
+# key: misc.combat.runic_mastery_2
+# en: Runic Mastery
+
+--- ./src/creatures/combat/combat.cpp:1642
+-		g_logger().error("[ValueCallback::getMinMaxValues - Player {} formula {}] "
++		g_logger().error(i18n::g_translator().get("misc.combat.valuecallback_getminmaxvalues", player->getLocale())
+# key: misc.combat.valuecallback_getminmaxvalues
+# en: [ValueCallback::getMinMaxValues - Player {} formula {}] 
+
+--- ./src/creatures/combat/combat.cpp:1643
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("misc.combat.call_stack_overflow_too_many", player->getLocale()),
+# key: misc.combat.call_stack_overflow_too_many
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/combat.cpp:1659
+-	LuaScriptInterface::setMetatable(L, -1, "Player");
++	LuaScriptInterface::setMetatable(L, -1, i18n::g_translator().get("misc.combat.player", player->getLocale()));
+# key: misc.combat.player
+# en: Player
+
+--- ./src/creatures/combat/combat.cpp:1693
+-			g_logger().warn("[ValueCallback::getMinMaxValues] - Unknown callback type");
++			g_logger().warn(i18n::g_translator().get("misc.combat.valuecallback_getminmaxvalues_2", player->getLocale()));
+# key: misc.combat.valuecallback_getminmaxvalues_2
+# en: [ValueCallback::getMinMaxValues] - Unknown callback type
+
+--- ./src/creatures/combat/combat.cpp:1724
+-		LuaScriptInterface::reportError(nullptr, "Stack size changed!");
++		LuaScriptInterface::reportError(nullptr, i18n::g_translator().get("misc.combat.stack_size_changed", player->getLocale()));
+# key: misc.combat.stack_size_changed
+# en: Stack size changed!
+
+--- ./src/creatures/combat/combat.cpp:1735
+-		g_logger().error("[TileCallback::onTileCombat - Creature {} type {} on tile x: {} y: {} z: {}] "
++		g_logger().error(i18n::g_translator().get("misc.combat.tilecallback_ontilecombat", player->getLocale())
+# key: misc.combat.tilecallback_ontilecombat
+# en: [TileCallback::onTileCombat - Creature {} type {} on tile x: {} y: {} z: {}] 
+
+--- ./src/creatures/combat/combat.cpp:1736
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("misc.combat.call_stack_overflow_too_many_2", player->getLocale()),
+# key: misc.combat.call_stack_overflow_too_many_2
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/combat.cpp:1766
+-		g_logger().error("[TargetCallback::onTargetCombat - Creature {}] "
++		g_logger().error(i18n::g_translator().get("misc.combat.targetcallback_ontargetcombat", player->getLocale())
+# key: misc.combat.targetcallback_ontargetcombat
+# en: [TargetCallback::onTargetCombat - Creature {}] 
+
+--- ./src/creatures/combat/combat.cpp:1767
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("misc.combat.call_stack_overflow_too_many_3", player->getLocale()),
+# key: misc.combat.call_stack_overflow_too_many_3
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/combat.cpp:1803
+-		LuaScriptInterface::reportError(nullptr, "Stack size changed!");
++		LuaScriptInterface::reportError(nullptr, i18n::g_translator().get("misc.combat.stack_size_changed_2", player->getLocale()));
+# key: misc.combat.stack_size_changed_2
+# en: Stack size changed!
+
+--- ./src/creatures/combat/combat.cpp:1834
+-		g_logger().error("[ChainCallback::onTargetCombat - Creature {}] "
++		g_logger().error(i18n::g_translator().get("misc.combat.chaincallback_ontargetcombat", player->getLocale())
+# key: misc.combat.chaincallback_ontargetcombat
+# en: [ChainCallback::onTargetCombat - Creature {}] 
+
+--- ./src/creatures/combat/combat.cpp:1835
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("misc.combat.call_stack_overflow_too_many_4", player->getLocale()),
+# key: misc.combat.call_stack_overflow_too_many_4
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/combat.cpp:1867
+-		LuaScriptInterface::reportError(nullptr, "Stack size changed!");
++		LuaScriptInterface::reportError(nullptr, i18n::g_translator().get("misc.combat.stack_size_changed_3", player->getLocale()));
+# key: misc.combat.stack_size_changed_3
+# en: Stack size changed!
+
+--- ./src/creatures/combat/combat.cpp:1876
+-		g_logger().error("[ChainPickerCallback::onTargetCombat - Creature {}] "
++		g_logger().error(i18n::g_translator().get("misc.combat.chainpickercallback", player->getLocale())
+# key: misc.combat.chainpickercallback
+# en: [ChainPickerCallback::onTargetCombat - Creature {}] 
+
+--- ./src/creatures/combat/combat.cpp:1877
+-		                 "Call stack overflow. Too many lua script calls being nested.",
++		                 i18n::g_translator().get("misc.combat.call_stack_overflow_too_many_5", player->getLocale()),
+# key: misc.combat.call_stack_overflow_too_many_5
+# en: Call stack overflow. Too many lua script calls being nested.
+
+--- ./src/creatures/combat/combat.cpp:1916
+-		LuaScriptInterface::reportError(nullptr, "Stack size changed!");
++		LuaScriptInterface::reportError(nullptr, i18n::g_translator().get("misc.combat.stack_size_changed_4", player->getLocale()));
+# key: misc.combat.stack_size_changed_4
+# en: Stack size changed!
+
+--- ./src/creatures/combat/combat.cpp:2500
+-		g_logger().error("[{}] Access exceeds the upper limit of memory block");
++		g_logger().error(i18n::g_translator().get("misc.combat.access_exceeds_the_upper", player->getLocale()));
+# key: misc.combat.access_exceeds_the_upper
+# en: [{}] Access exceeds the upper limit of memory block
+
+--- ./src/creatures/combat/combat.cpp:2501
+-		throw std::out_of_range("Access exceeds the upper limit of memory block");
++		throw std::out_of_range(i18n::g_translator().get("misc.combat.access_exceeds_the_upper_2", player->getLocale()));
+# key: misc.combat.access_exceeds_the_upper_2
+# en: Access exceeds the upper limit of memory block
+

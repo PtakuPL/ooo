@@ -4,7 +4,7 @@
 **Data**: 2026-02-15  
 **Cel**: Worker tryb MIGRATION — samoistna zamiana tekstów w kodzie na klucze i18n  
 **Priorytet**: Musi działać autonomicznie przez tydzień bez interwencji  
-**Ostatnia aktualizacja**: 2026-02-15 19:20 UTC
+**Ostatnia aktualizacja**: 2026-02-15 22:00 UTC
 
 ---
 
@@ -23,7 +23,7 @@
 | 7 | Integracja z workerem | ✅ **ZAIMPLEMENTOWANE** | Dispatcher + komendy MIGRATION/DRYRUN |
 | 8 | Trudne przypadki | ✅ Gotowe | Pluralizacja, gender, daty, multiline |
 | 9 | Walidacja i safety | ✅ Gotowe | luac/php -l/xml, rollback |
-| 10 | ACTION ITEMS (AI-1..AI-10) | 🔶 **6/10 DONE** | AI-1..AI-6 ✅, AI-7..AI-10 ⏳ |
+| 10 | ACTION ITEMS (AI-1..AI-10) | � **9/10 DONE** | AI-1..AI-9 ✅, AI-10 ⏳ |
 | 11 | Podsumowanie ryzyk | ✅ Gotowe | 8 ryzyk z mitygacjami |
 | 12 | Kompletna taksonomia źródeł | ✅ Gotowe | 19 podsekcji (12.0-12.19) |
 | 13 | Status plików migracji | ✅ Gotowe | 608 plików zmapowanych |
@@ -49,21 +49,21 @@
 | 4 | MIGRATION case w workerze | ✅ Done | 2026-02-15 | Gate `MIGRATION_ENABLED` + wywołanie engine |
 | 5 | Komendy MIGRATION/DRYRUN | ✅ Done | 2026-02-15 | `MIGRATION:{cat}:{batch}:{scope}`, `MIGRATION_DRYRUN:` |
 | 6 | Dry-run testy | ✅ Done | 2026-02-15 | errors=1,547 hits/3 files, cpp=9 hits/2 files |
-| 7 | Test `errors` (141 plików) | ⏳ Pending | - | Wymaga `MIGRATION_ENABLED=true` |
-| 8 | Test `libs` (35 plików) | ⏳ Pending | - | Wymaga `MIGRATION_ENABLED=true` |
-| 9 | Test `mounts/XML` (8 plików) | ⏳ Pending | - | Wymaga `MIGRATION_ENABLED=true` |
+| 7 | Full dry-run errors (pełne skanowanie) | ✅ Done | 2026-02-15 | 2,953 hitów / 200 plików |
+| 8 | Full dry-run libs (pełne skanowanie) | ✅ Done | 2026-02-15 | 1,953 hitów / 26 plików |
+| 9 | XML+Lua Extraction tools + worker EXTRACTION mode | ✅ Done | 2026-02-15 | 2 narzędzia + 2,394 nowych kluczy + worker integracja |
 | 10 | Faza 1 produkcja | ⏳ Pending | - | errors → libs → mounts → cpp proposals |
 
 ### Fazy migracji — postęp:
 
 | Faza | Opis | Kluczy | Status |
 |-----:|------|-------:|--------|
-| 0 | Uzupełnienie pustaków (mounts, outfits...) | ~100 | ⏳ Czeka |
-| 1 | XML Data Extraction (imbuements, charms...) | ~200 | ⏳ Czeka |
-| 2 | Quest System (quests.lua) | ~2,400 | ⏳ Czeka |
-| 3 | GameStore (kategorie, oferty) | ~1,000 | ⏳ Czeka |
+| 0 | Uzupełnienie pustaków (mounts, outfits...) | ~418 | ✅ Done (XML extraction) |
+| 1 | XML Data Extraction (imbuements, charms...) | ~418 | ✅ Done (7 źródeł XML) |
+| 2 | Quest System (quests.lua) | ~2,410 | ✅ Done (492 nowych kluczy) |
+| 3 | GameStore (kategorie, oferty) | ~1,484 | ✅ Done (store.json NEW) |
 | 4 | Misc Lua (map markers, modal buttons...) | ~50 | ⏳ Czeka |
-| 5 | C++ Proposals | 2-3 | ⏳ Czeka |
+| 5 | C++ Proposals | 663 | ✅ Done (proposals-only) |
 | 6 | OTClient Sync Pipeline | (infra) | ⏳ Czeka |
 | 7 | PHP Full Migration | TBD | ⏳ Czeka |
 
@@ -87,12 +87,25 @@
 | HitClassifier | `tools/i18n_migrate.py` | — | ✅ 22 reguł SKIP |
 | KeyGenerator | `tools/i18n_migrate.py` | — | ✅ 16 kategorii domen |
 | CodeTransformer | `tools/i18n_migrate.py` | — | ✅ 6 transformerów |
+| XML Extraction Tool | `tools/i18n_extract_xml_definitions.py` | ~280 | ✅ Nowy (7 źródeł) |
+| Lua Extraction Tool | `tools/i18n_extract_lua_definitions.py` | ~280 | ✅ Nowy (quests+store) |
 | Worker MIGRATION case | `i18n_worker_simple.sh` | ~21610 | ✅ Rozbudowane |
-| Worker commands regex | `i18n_worker_simple.sh` | ~20856 | ✅ +2 komendy |
+| Worker EXTRACTION case | `i18n_worker_simple.sh` | ~22255 | ✅ Nowy (XML+Lua) |
+| Worker commands regex | `i18n_worker_simple.sh` | ~20856 | ✅ +EXTRACT +MIGRATION |
+| EXTRACT commands | `i18n_worker_simple.sh` | ~21152 | ✅ EXTRACT:xml/quests/gamestore/all |
 | PRE_MIGRATION complete | `i18n_worker_simple.sh` | ~21670 | ✅ Nowy blok |
 | PRE_MIGRATION status | `i18n/status/pre_migration_complete.json` | — | ✅ Nowy |
 | Migration log | `i18n/status/migration_log.json` | — | ✅ Nowy |
 | Migration proposals | `i18n/status/migration_proposals/` | — | ✅ Nowy dir |
+| mounts.json | `i18n/en/mounts.json` | 235 keys | ✅ Wyekstrahowane |
+| outfits.json | `i18n/en/outfits.json` | 126 keys | ✅ Wyekstrahowane |
+| familiars.json | `i18n/en/familiars.json` | 8 keys | ✅ Wyekstrahowane |
+| vocations.json | `i18n/en/vocations.json` | 17 keys | ✅ Wyekstrahowane |
+| groups.json | `i18n/en/groups.json` | 6 keys | ✅ Wyekstrahowane |
+| imbuements.json | `i18n/en/imbuements.json` | 18 keys | ✅ Wyekstrahowane |
+| store.json | `i18n/en/store.json` | 1,484 keys | ✅ Nowy plik |
+| questlog.json | `i18n/en/questlog.json` | 2,410 keys | ✅ +492 nowych |
+| chatchannels.json | `i18n/en/chatchannels.json` | +8 keys | ✅ Uaktualnione |
 
 ### Blokady:
 
@@ -100,6 +113,7 @@
 |---------|---------|-----------|
 | `MIGRATION_ENABLED` | `false` | 🔒 Migracja kodu permanentnie zablokowana |
 | Komendy MIGRATION/DRYRUN | Zdefiniowane | Parser gotowy, ale engine zablokowany |
+| Komendy EXTRACT:* | Zdefiniowane | Worker może ekstrakcję XML/Lua na żądanie |
 | C++ proposals | Auto-forced | Nigdy auto-modify, zawsze `.diff` |
 
 ### Commity tej sesji:
@@ -108,6 +122,8 @@
 |------|------|
 | `3669bf158` | PRE_MIGRATION completion detection (sekcja 24) |
 | `d481a718e` | MIGRATION engine AI-1..AI-6 (tools/i18n_migrate.py + worker) |
+| `d60e96d2c` | Progress dashboard w planie |
+| *(pending)* | AI-7..AI-9: extraction tools + EXTRACTION mode + JSON data |
 
 ---
 

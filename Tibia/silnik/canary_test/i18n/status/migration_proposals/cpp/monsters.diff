@@ -1,0 +1,71 @@
+# i18n-proposal: ./src/creatures/monsters/monsters.cpp
+# Generated: 2026-02-15T19:30:43.149690Z
+# Category: cpp
+# Transforms: 11
+
+--- ./src/creatures/monsters/monsters.cpp:168
+-			g_logger().error("[Monsters::deserializeSpell] - "
++			g_logger().error(i18n::g_translator().get("cpp.monsters.monsters_deserializespell", player->getLocale())
+# key: cpp.monsters.monsters_deserializespell
+# en: [Monsters::deserializeSpell] - 
+
+--- ./src/creatures/monsters/monsters.cpp:169
+-			                 "Missing outfit monster or item in outfit spell for: {}",
++			                 i18n::g_translator().get("cpp.monsters.missing_outfit_monster_or", player->getLocale()),
+# key: cpp.monsters.missing_outfit_monster_or
+# en: Missing outfit monster or item in outfit spell for: {}
+
+--- ./src/creatures/monsters/monsters.cpp:195
+-	} else if (spellName == "soulwars fear" || spellName == "fear") {
++	} else if (spellName == i18n::g_translator().get("cpp.monsters.soulwars_fear", player->getLocale()) || spellName == "fear") {
+# key: cpp.monsters.soulwars_fear
+# en: soulwars fear
+
+--- ./src/creatures/monsters/monsters.cpp:212
+-			g_logger().error("[Monsters::deserializeSpell] - "
++			g_logger().error(i18n::g_translator().get("cpp.monsters.monsters_deserializespell_2", player->getLocale())
+# key: cpp.monsters.monsters_deserializespell_2
+# en: [Monsters::deserializeSpell] - 
+
+--- ./src/creatures/monsters/monsters.cpp:213
+-			                 "{} condition is not set for: {}",
++			                 i18n::g_translator().get("cpp.monsters.condition_is_not_set_for", player->getLocale()),
+# key: cpp.monsters.condition_is_not_set_for
+# en: {} condition is not set for: {}
+
+--- ./src/creatures/monsters/monsters.cpp:221
+-		g_logger().error("[Monsters::deserializeSpell] - "
++		g_logger().error(i18n::g_translator().get("cpp.monsters.monsters_deserializespell_3", player->getLocale())
+# key: cpp.monsters.monsters_deserializespell_3
+# en: [Monsters::deserializeSpell] - 
+
+--- ./src/creatures/monsters/monsters.cpp:222
+-		                 "{} unknown or missing parameter on spell with name: {}",
++		                 i18n::g_translator().get("cpp.monsters.unknown_or_missing_parameter", player->getLocale()),
+# key: cpp.monsters.unknown_or_missing_parameter
+# en: {} unknown or missing parameter on spell with name: {}
+
+--- ./src/creatures/monsters/monsters.cpp:278
+-		g_logger().warn("[MonsterType::loadCallback] - Event not found");
++		g_logger().warn(i18n::g_translator().get("cpp.monsters.monstertype_loadcallback", player->getLocale()));
+# key: cpp.monsters.monstertype_loadcallback
+# en: [MonsterType::loadCallback] - Event not found
+
+--- ./src/creatures/monsters/monsters.cpp:307
+-			g_logger().error("[MonsterType::loadCallback] - Unknown event type");
++			g_logger().error(i18n::g_translator().get("cpp.monsters.monstertype_loadcallback_2", player->getLocale()));
+# key: cpp.monsters.monstertype_loadcallback_2
+# en: [MonsterType::loadCallback] - Unknown event type
+
+--- ./src/creatures/monsters/monsters.cpp:355
+-		g_logger().error("[Monsters::getMonsterType] - Monster with name {} not exist", lowerCaseName);
++		g_logger().error(i18n::g_translator().get("cpp.monsters.monsters_getmonstertype", player->getLocale()), lowerCaseName);
+# key: cpp.monsters.monsters_getmonstertype
+# en: [Monsters::getMonsterType] - Monster with name {} not exist
+
+--- ./src/creatures/monsters/monsters.cpp:378
+-		g_logger().debug("[{}] the monster with name '{}' already exist", __FUNCTION__, name);
++		g_logger().debug(i18n::g_translator().get("cpp.monsters.the_monster_with_name_already", player->getLocale()), __FUNCTION__, name);
+# key: cpp.monsters.the_monster_with_name_already
+# en: [{}] the monster with name '{}' already exist
+

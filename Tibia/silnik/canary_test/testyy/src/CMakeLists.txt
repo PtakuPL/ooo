@@ -128,15 +128,27 @@ if (MSVC)
   # Clang-CL also sets MSVC=TRUE but doesn't need (and rejects) these flags.
   if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     # ── ICE C1001 prevention strategy ──────────────────────────────────────
-    # MSVC ICE triggers on complex template code when using /O2.
-    # Use /O1 (optimize for size) globally — safer than /O2, still optimised.
-    # Individual TUs that crash even under /O1 use #pragma optimize("",off)
-    # directly in their source files (otmlnode.cpp, otmlparser.cpp).
-    # PCH stays enabled for all files (SKIP_PRECOMPILE_HEADERS removed).
+    # MSVC P2 codegen (p2\main.cpp:258) crashes on template-heavy TUs.
+    # #pragma optimize("",off) does NOT help — the crash is in P2 codegen,
+    # not in the optimizer.  Strategy:
+    #   1. /O1 globally (less aggressive than /O2)
+    #   2. /d2SSAOptimizer- per-file (disables SSA optimizer in P2 backend)
+    #   3. /Ob0 per-file (disables inlining which triggers P2 template crash)
+    #   4. PCH stays enabled (reducing header re-parse reduces ICE surface)
     string(REPLACE "/O2" "/O1" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
     string(REPLACE "/O2" "/O1" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
     set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
+
+    # Per-file ICE suppression for the two TUs that consistently crash.
+    # NOTE: COMPILE_OPTIONS on set_source_files_properties does NOT work with
+    # Ninja generator. Use COMPILE_FLAGS (space-separated, older CMake property
+    # that works reliably with all generators) instead.
+    set_source_files_properties(
+      framework/otml/otmlnode.cpp
+      framework/otml/otmlparser.cpp
+      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+    )
 
     # Disable LTCG/GL — they amplify ICE surface across TUs
     set_target_properties(${PROJECT_NAME} PROPERTIES

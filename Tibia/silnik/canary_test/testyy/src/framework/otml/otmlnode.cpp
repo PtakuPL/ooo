@@ -80,13 +80,13 @@ OTMLNodePtr OTMLNode::at(const std::string_view childTag)
         }
     }
 
-    throw OTMLException(asOTMLNode(), fmt::format("child node with tag '{}' not found", childTag));
+    throw OTMLException(asOTMLNode(), std::string("child node with tag '") + std::string(childTag) + "' not found");
 }
 
 OTMLNodePtr OTMLNode::atIndex(const int childIndex)
 {
     if (childIndex >= size() || childIndex < 0)
-        throw OTMLException(asOTMLNode(), fmt::format("child node with index '{}' not found", childIndex));
+        throw OTMLException(asOTMLNode(), std::string("child node with index '") + std::to_string(childIndex) + "' not found");
     return m_children[childIndex];
 }
 

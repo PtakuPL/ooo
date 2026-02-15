@@ -156,7 +156,9 @@ if (MSVC)
     set_source_files_properties(
       framework/otml/otmlnode.cpp
       framework/otml/otmlparser.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy- /std:c++17" SKIP_PRECOMPILE_HEADERS ON
+      # Keep MSVC ICE workarounds, but do not downgrade the language standard:
+      # OTML headers include framework/global.h (PCH) which relies on C++20 features.
+      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy-" SKIP_PRECOMPILE_HEADERS ON
     )
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE

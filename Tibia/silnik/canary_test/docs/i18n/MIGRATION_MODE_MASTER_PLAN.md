@@ -2641,3 +2641,83 @@ worker_state.json                    → Trwały stan workera per-category
 | `i18n/status/tm/` | ~90 | |
 | `i18n/status/validation/` | ~100 | |
 | **RAZEM** | **~608** | |
+
+---
+
+## 24. ZADANIE: DETEKCJA ZAKOŃCZENIA PRE_MIGRATION
+
+### 24.1. Problem
+Worker w trybie PRE_MIGRATION skanuje kategorie cyklicznie, ale nie ma mechanizmu
+stwierdzającego "PRE_MIGRATION jest ZAKOŃCZONA — wszystkie kategorie przeskanowane,
+wyniki stabilne". Bez tego worker bezcelowo powtarza te same skany w kółko.
+
+### 24.2. Stan aktualny PRE_MIGRATION (2026-02-15)
+
+| Status | Kategorii | Szczegóły |
+|---|---|---|
+| ✅ DONE (needs_migration=0) | 12 | actions, chatchannels, creaturescripts, events, globalevents, movements, npclib, otclient_mods, quests, scripts, talkactions, world |
+| 🔍 NEEDS_MIGRATION (>0) | 20 | monsters(1703), php(2779), html(288), otclient_modules(169), errors(141), spells(191), libs(35), cpp(32), server(32), otclient_src(19), mounts(8), otclient_tools(8), items(9), modules(3), startup(3), dataroot(1), npc(1), otclient_data(1), raids(1), documentation(934) |
+| **TOTAL** | **32** | hits=124,798 files=6,358 |
+
+### 24.3. Definicja "PRE_MIGRATION zakończona"
+PRE_MIGRATION jest zakończona gdy:
+1. **Wszystkie 32 kategorii** zostały przeskanowane co najmniej 1 raz
+2. **Wyniki są stabilne** — dwa kolejne pełne skany dają te same wyniki
+3. **Pliki `pre_migration_todo/*.json`** są wygenerowane dla każdej kategorii
+
+> **UWAGA**: "zakończona" NIE oznacza "needs_migration=0 wszędzie".
+> To oznacza "skan jest kompletny, wiemy co pozostaje do zmigrowania".
+> Kategorie z needs_migration>0 to BACKLOG — lista pracy do MIGRATION mode.
+
+### 24.4. Implementacja w workerze
+
+**Nowy plik statusu**: `i18n/status/pre_migration_complete.json`
+```json
+{
+  "complete": true,
+  "completed_at_utc": "2026-02-15T...",
+  "total_categories": 32,
+  "categories_scanned": 32,
+  "categories_clean": 12,
+  "categories_with_hits": 20,
+  "total_hits": 124798,
+  "total_files_with_hits": 6358,
+  "scan_stable": true,
+  "last_scan_utc": "2026-02-15T...",
+  "backlog_summary": {
+    "monsters": 1703,
+    "php": 2779,
+    "...": "..."
+  }
+}
+```
+
+**Logika w workerze** (w sekcji PRE_MIGRATION po `scan_done`):
+1. Po każdym skanie: sprawdź `pre_migration_scan.json`
+2. Jeśli wszystkie kategorie mają `scanned_at` (nie null) → skan kompletny
+3. Porównaj z poprzednim wynikiem (`pre_migration_complete.json.prev`)
+4. Jeśli wyniki stabilne przez 2 cykle → oznacz jako `complete: true`
+5. Zapisz `pre_migration_complete.json`
+6. Log: `status_log_op $CYCLE "PRE_MIGRATION" "pre_migration_complete" "all" "-" "ok" "complete"`
+7. Worker NADAL skanuje (bo nowe pliki mogą się pojawić), ale:
+   - Skip 60 min zamiast 30 min (rzadsze skanowanie)
+   - Status: "PRE_MIGRATION complete — monitoring mode"
+
+### 24.5. Zmiany w I18N_STATUS.md
+Dodać sekcję:
+```
+### ✅ PRE_MIGRATION Status: ZAKOŃCZONA
+- Przeskanowano: 32/32 kategorii
+- Stabilne wyniki: TAK (od 2026-02-15T...)
+- Backlog (do MIGRATION mode): 20 kategorii, 124,798 hitów
+```
+
+### 24.6. Zmiany w `activity.json`
+Gdy complete=true, `activity.json` powinno zawierać:
+```json
+{
+  "phase": "PRE_MIGRATION",
+  "stage": "pre_migration_complete",
+  "message": "PRE_MIGRATION complete — monitoring mode"
+}
+```

@@ -2951,6 +2951,45 @@ if premig_per_cat:
 else:
     premig_cat_table = "> Brak danych — uruchom `PREMIG:all` aby wykonać skan."
 
+# ── PRE_MIGRATION completion status dla I18N_STATUS.md ──
+_premig_complete_info = ""
+try:
+    _pcomp_path = os.path.join("i18n", "status", "pre_migration_complete.json")
+    if os.path.exists(_pcomp_path):
+        with open(_pcomp_path) as _pcf:
+            _pcomp = json.load(_pcf)
+        _pc_complete = _pcomp.get("complete", False)
+        _pc_stable = _pcomp.get("scan_stable", False)
+        _pc_cats_total = _pcomp.get("total_categories", 0)
+        _pc_cats_scanned = _pcomp.get("categories_scanned", 0)
+        _pc_cats_clean = _pcomp.get("categories_clean", 0)
+        _pc_cats_hits = _pcomp.get("categories_with_hits", 0)
+        _pc_total_hits = _pcomp.get("total_hits", 0)
+        _pc_total_files = _pcomp.get("total_files_with_hits", 0)
+        _pc_completed_at = _pcomp.get("completed_at_utc", "?")
+        if _pc_complete and _pc_stable:
+            _pc_icon = "✅"
+            _pc_label = "ZAKOŃCZONA (stabilna)"
+        elif _pc_complete:
+            _pc_icon = "🔄"
+            _pc_label = "ZAKOŃCZONA (wyniki jeszcze niestabilne)"
+        else:
+            _pc_icon = "🔍"
+            _pc_label = f"W TOKU ({_pc_cats_scanned}/{_pc_cats_total} kategorii)"
+        _premig_complete_info = f"""
+### {_pc_icon} PRE_MIGRATION Status: {_pc_label}
+| Metryka | Wartość |
+|---------|---------|
+| Przeskanowano kategorii | **{_pc_cats_scanned}/{_pc_cats_total}** |
+| Czyste (needs_migration=0) | **{_pc_cats_clean}** |
+| Z hitami (backlog) | **{_pc_cats_hits}** ({_pc_total_hits:,} hitów, {_pc_total_files:,} plików) |
+| Wyniki stabilne | **{"TAK" if _pc_stable else "NIE"}** |
+| Zakończono | {_pc_completed_at} |
+"""
+except Exception:
+    pass
+premig_cat_table = premig_cat_table + _premig_complete_info
+
 # === DOCUMENTATION section table ===
 _doc_state = {}
 _doc_latest = {}
@@ -21668,6 +21707,110 @@ PREMIG_SKIP_PY
 
                     status_log_op "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "ok" "scan backlog files_scanned=$PREMIG_FILES_SCANNED files_with_hits=$PREMIG_FILES_WITH_HITS hits=$PREMIG_HITS"
                     status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "scan backlog hits=$PREMIG_HITS files_with_hits=$PREMIG_FILES_WITH_HITS" "$PREMIG_HITS" "$PREMIG_FILES_SCANNED" "hits" 0
+
+                    # ── PRE_MIGRATION COMPLETION DETECTION ──────────────────────
+                    # Sprawdź czy WSZYSTKIE kategorie zostały przeskanowane.
+                    # Jeśli tak → zapisz pre_migration_complete.json.
+                    # Worker nadal skanuje (monitoring), ale informuje o zakończeniu.
+                    python3 - "$STATUS_DIR" << 'PREMIG_COMPLETE_PY'
+import json, os, sys
+from datetime import datetime, timezone
+
+STATUS_DIR = sys.argv[1]
+SCAN_FILE = os.path.join(STATUS_DIR, "pre_migration_scan.json")
+COMPLETE_FILE = os.path.join(STATUS_DIR, "pre_migration_complete.json")
+COMPLETE_PREV = COMPLETE_FILE + ".prev"
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+# 1. Wczytaj pre_migration_scan.json
+try:
+    with open(SCAN_FILE, "r") as f:
+        scan = json.load(f)
+except Exception:
+    print("   ℹ️  pre_migration_scan.json nie istnieje — pomijam completion check")
+    sys.exit(0)
+
+if not scan:
+    sys.exit(0)
+
+# 2. Sprawdź czy wszystkie kategorie mają scanned_at
+total_cats = len(scan)
+scanned_cats = sum(1 for v in scan.values() if v.get("scanned_at"))
+cats_clean = sum(1 for v in scan.values() if v.get("needs_migration", 0) == 0)
+cats_with_hits = total_cats - cats_clean
+total_hits = sum(v.get("hits", 0) for v in scan.values())
+total_files_with_hits = sum(v.get("files_with_hits", 0) for v in scan.values())
+
+if scanned_cats < total_cats:
+    print(f"   ℹ️  PRE_MIGRATION: {scanned_cats}/{total_cats} kategorii przeskanowanych — niekompletne")
+    sys.exit(0)
+
+# 3. Porównaj z poprzednim wynikiem dla stabilności
+scan_stable = False
+try:
+    with open(COMPLETE_FILE, "r") as f:
+        prev = json.load(f)
+    prev_hits = prev.get("total_hits", -1)
+    prev_files = prev.get("total_files_with_hits", -1)
+    if prev_hits == total_hits and prev_files == total_files_with_hits:
+        scan_stable = True
+except Exception:
+    pass
+
+# 4. Buduj backlog_summary (kategorie z needs_migration > 0)
+backlog = {}
+for cat, v in sorted(scan.items()):
+    nm = v.get("needs_migration", 0)
+    if nm > 0:
+        backlog[cat] = nm
+
+# 5. Zapisz pre_migration_complete.json
+result = {
+    "complete": True,
+    "completed_at_utc": utc_now(),
+    "total_categories": total_cats,
+    "categories_scanned": scanned_cats,
+    "categories_clean": cats_clean,
+    "categories_with_hits": cats_with_hits,
+    "total_hits": total_hits,
+    "total_files_with_hits": total_files_with_hits,
+    "scan_stable": scan_stable,
+    "last_scan_utc": utc_now(),
+    "backlog_summary": backlog
+}
+
+# Zachowaj poprzednią wersję
+if os.path.exists(COMPLETE_FILE):
+    try:
+        import shutil
+        shutil.copy2(COMPLETE_FILE, COMPLETE_PREV)
+    except Exception:
+        pass
+
+tmp = COMPLETE_FILE + ".tmp"
+with open(tmp, "w") as f:
+    json.dump(result, f, indent=2, ensure_ascii=False)
+os.replace(tmp, COMPLETE_FILE)
+
+if scan_stable:
+    print(f"   ✅ PRE_MIGRATION COMPLETE: {total_cats}/{total_cats} kat., stabilne wyniki, backlog={cats_with_hits} kat. ({total_hits} hitów)")
+else:
+    print(f"   📊 PRE_MIGRATION: {total_cats}/{total_cats} kat. przeskanowanych, wyniki jeszcze niestabilne, backlog={cats_with_hits} kat.")
+PREMIG_COMPLETE_PY
+                    PREMIG_COMP_RC=$?
+
+                    # Jeśli pre_migration_complete.json istnieje — zaloguj completion event
+                    if [ -f "$STATUS_DIR/pre_migration_complete.json" ] && [ "$PREMIG_COMP_RC" -eq 0 ]; then
+                        PREMIG_IS_STABLE=$(python3 -c "import json; d=json.load(open('$STATUS_DIR/pre_migration_complete.json')); print('yes' if d.get('scan_stable') else 'no')" 2>/dev/null || echo "no")
+                        if [ "$PREMIG_IS_STABLE" = "yes" ]; then
+                            status_log_op "$CYCLE" "PRE_MIGRATION" "pre_migration_complete" "all" "-" "ok" "all categories scanned, results stable"
+                            status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "pre_migration_complete" "all" "-" "PRE_MIGRATION complete — monitoring mode" 0 0 "cats" 0
+                        fi
+                    fi
+                    # ── END PRE_MIGRATION COMPLETION DETECTION ──────────────────
+
                     ;;
 
                 COMPACT_KEYS)

@@ -24,7 +24,7 @@ from datetime import datetime
 I18N_DIR = Path("i18n")
 BATCH_DIR = Path("i18n/translation_batches")
 SOUND_TEXT_RE = re.compile(
-    r'^(?:grr+|hiss+|rawr+|roar+|growl+|snarl+|howl+|woof+|arf+|meow+|miau+|moo+|baa+|oink+|snort+|chirp+|tweet+|croak+|ribbit+)+$',
+    r'^(grr|hiss|rawr|roar|growl|snarl|howl|woof|arf|meow|miau|moo|baa|oink|snort|chirp|tweet|croak|ribbit)$',
     re.IGNORECASE,
 )
 
@@ -33,9 +33,10 @@ def is_non_translatable_sound(text: str) -> bool:
     """Heurystyka: odgłosy potworów/zwierząt pomijamy w normalnym tłumaczeniu."""
     normalized = re.sub(r"[^a-zA-Z]", "", str(text or "")).lower()
     if not normalized:
-        return True
+        return False
     if SOUND_TEXT_RE.fullmatch(normalized):
         return True
+    # 5+ znaków, <=3 unikalne litery i potrójne powtórzenia zwykle oznaczają odgłos (np. "grrrraaa")
     if len(normalized) >= 5 and len(set(normalized)) <= 3 and re.search(r'(.)\1{2,}', normalized):
         return True
     vowels = sum(1 for ch in normalized if ch in "aeiouy")
@@ -74,7 +75,8 @@ def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> l
         # Pomiń odgłosy potworów/zwierząt - nie są normalnie tłumaczone
         if is_non_translatable_sound(en_text):
             continue
-        # Pomiń bardzo krótkie teksty (prawdopodobnie kody/komendy)
+        # Dopuszczamy krótsze frazy (3-4 znaki), bo część z nich jest tłumaczalna ("yes", "run")
+        # i wcześniej nie trafiała do batcha.
         if len(en_text) < 3:
             continue
             
@@ -124,7 +126,7 @@ FORMAT ODPOWIEDZI (JSON):
     
     # Zbierz klucze brakujące w dowolnym języku docelowym (np. PL i ES)
     keys_map = {}
-    scan_limit = max(batch_size * max(1, len(targets)), batch_size)
+    scan_limit = batch_size * len(targets)
     for lang in targets:
         for item in get_untranslated_keys(category, lang, scan_limit):
             entry = keys_map.setdefault(item["key"], {"key": item["key"], "en": item["en"], "missing_in": []})

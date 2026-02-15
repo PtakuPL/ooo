@@ -9,6 +9,11 @@ import i18n_translate as tr
 
 
 class I18NTranslateTests(unittest.TestCase):
+    def test_sound_heuristic_edge_cases(self):
+        self.assertTrue(tr.is_non_translatable_sound("Grrrr"))
+        self.assertTrue(tr.is_non_translatable_sound("Zzzzzt"))
+        self.assertFalse(tr.is_non_translatable_sound("Quest"))
+
     def test_get_untranslated_keys_skips_sound_texts(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

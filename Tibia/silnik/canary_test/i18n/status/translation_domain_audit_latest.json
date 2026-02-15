@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-15T13:51:17.899291Z",
+  "timestamp": "2026-02-15T19:54:31.825229Z",
   "total_langs": 52,
-  "total_domains": 38,
+  "total_domains": 44,
   "entries": [
     {
       "lang": "ar",
@@ -39,11 +39,11 @@
     {
       "lang": "ar",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
-      "en_copy": 4,
-      "en_prefix": 12,
+      "en_copy": 0,
+      "en_prefix": 24,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -126,6 +126,17 @@
     },
     {
       "lang": "ar",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ar",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -137,6 +148,17 @@
     },
     {
       "lang": "ar",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ar",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -144,6 +166,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ar",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -204,12 +237,12 @@
     {
       "lang": "ar",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -302,6 +335,17 @@
     },
     {
       "lang": "ar",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ar",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -314,12 +358,12 @@
     {
       "lang": "ar",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -390,6 +434,17 @@
     },
     {
       "lang": "ar",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ar",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -408,6 +463,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ar",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -457,12 +523,12 @@
     {
       "lang": "az",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -544,6 +610,17 @@
     },
     {
       "lang": "az",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "az",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -555,6 +632,17 @@
     },
     {
       "lang": "az",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "az",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -562,6 +650,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "az",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -622,12 +721,12 @@
     {
       "lang": "az",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -720,6 +819,17 @@
     },
     {
       "lang": "az",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "az",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -732,12 +842,12 @@
     {
       "lang": "az",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -808,6 +918,17 @@
     },
     {
       "lang": "az",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "az",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -826,6 +947,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "az",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -875,12 +1007,12 @@
     {
       "lang": "bg",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -962,6 +1094,17 @@
     },
     {
       "lang": "bg",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bg",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -973,6 +1116,17 @@
     },
     {
       "lang": "bg",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bg",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -980,6 +1134,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bg",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -1040,12 +1205,12 @@
     {
       "lang": "bg",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -1138,6 +1303,17 @@
     },
     {
       "lang": "bg",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bg",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -1150,12 +1326,12 @@
     {
       "lang": "bg",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 44,
       "en_prefix": 1874,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -1226,6 +1402,17 @@
     },
     {
       "lang": "bg",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bg",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -1244,6 +1431,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bg",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -1293,12 +1491,12 @@
     {
       "lang": "bn",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -1380,6 +1578,17 @@
     },
     {
       "lang": "bn",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bn",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -1391,6 +1600,17 @@
     },
     {
       "lang": "bn",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bn",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -1398,6 +1618,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bn",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -1458,12 +1689,12 @@
     {
       "lang": "bn",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -1556,6 +1787,17 @@
     },
     {
       "lang": "bn",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bn",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -1568,12 +1810,12 @@
     {
       "lang": "bn",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -1644,6 +1886,17 @@
     },
     {
       "lang": "bn",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bn",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -1662,6 +1915,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bn",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -1711,12 +1975,12 @@
     {
       "lang": "bs",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -1798,6 +2062,17 @@
     },
     {
       "lang": "bs",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bs",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -1809,6 +2084,17 @@
     },
     {
       "lang": "bs",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bs",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -1816,6 +2102,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bs",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -1876,12 +2173,12 @@
     {
       "lang": "bs",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -1974,6 +2271,17 @@
     },
     {
       "lang": "bs",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bs",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -1986,12 +2294,12 @@
     {
       "lang": "bs",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -2062,6 +2370,17 @@
     },
     {
       "lang": "bs",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bs",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -2080,6 +2399,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "bs",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -2129,11 +2459,11 @@
     {
       "lang": "cs",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -2216,6 +2546,17 @@
     },
     {
       "lang": "cs",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "cs",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -2227,6 +2568,17 @@
     },
     {
       "lang": "cs",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "cs",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -2234,6 +2586,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "cs",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -2294,11 +2657,11 @@
     {
       "lang": "cs",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -2392,6 +2755,17 @@
     },
     {
       "lang": "cs",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "cs",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -2404,12 +2778,12 @@
     {
       "lang": "cs",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -2480,6 +2854,17 @@
     },
     {
       "lang": "cs",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "cs",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -2498,6 +2883,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "cs",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -2547,11 +2943,11 @@
     {
       "lang": "da",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -2634,6 +3030,17 @@
     },
     {
       "lang": "da",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "da",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -2645,6 +3052,17 @@
     },
     {
       "lang": "da",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "da",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -2652,6 +3070,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "da",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -2712,11 +3141,11 @@
     {
       "lang": "da",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -2810,6 +3239,17 @@
     },
     {
       "lang": "da",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "da",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -2822,12 +3262,12 @@
     {
       "lang": "da",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -2898,6 +3338,17 @@
     },
     {
       "lang": "da",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "da",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -2916,6 +3367,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "da",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -2965,11 +3427,11 @@
     {
       "lang": "de",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -3052,6 +3514,17 @@
     },
     {
       "lang": "de",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "de",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -3063,6 +3536,17 @@
     },
     {
       "lang": "de",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "de",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 39,
@@ -3070,6 +3554,17 @@
       "en_copy": 5,
       "en_prefix": 1451,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "de",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -3130,11 +3625,11 @@
     {
       "lang": "de",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -3228,6 +3723,17 @@
     },
     {
       "lang": "de",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "de",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -3240,12 +3746,12 @@
     {
       "lang": "de",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 44,
       "en_prefix": 1874,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -3316,6 +3822,17 @@
     },
     {
       "lang": "de",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "de",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -3334,6 +3851,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "de",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -3383,12 +3911,12 @@
     {
       "lang": "el",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -3470,6 +3998,17 @@
     },
     {
       "lang": "el",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "el",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -3481,6 +4020,17 @@
     },
     {
       "lang": "el",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "el",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -3488,6 +4038,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "el",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -3548,12 +4109,12 @@
     {
       "lang": "el",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -3646,6 +4207,17 @@
     },
     {
       "lang": "el",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "el",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -3658,12 +4230,12 @@
     {
       "lang": "el",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -3734,6 +4306,17 @@
     },
     {
       "lang": "el",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "el",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -3752,6 +4335,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "el",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -3801,11 +4395,11 @@
     {
       "lang": "es",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 14,
-      "genuine_pct": 87.5,
+      "genuine_pct": 58.33,
       "en_copy": 1,
-      "en_prefix": 1,
+      "en_prefix": 9,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -3888,6 +4482,17 @@
     },
     {
       "lang": "es",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "es",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 5,
@@ -3899,6 +4504,17 @@
     },
     {
       "lang": "es",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "es",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 782,
@@ -3906,6 +4522,17 @@
       "en_copy": 255,
       "en_prefix": 458,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "es",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -3966,11 +4593,11 @@
     {
       "lang": "es",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4064,6 +4691,17 @@
     },
     {
       "lang": "es",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "es",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 48,
@@ -4076,12 +4714,12 @@
     {
       "lang": "es",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 1294,
-      "genuine_pct": 67.47,
+      "genuine_pct": 53.69,
       "en_copy": 240,
       "en_prefix": 384,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -4152,6 +4790,17 @@
     },
     {
       "lang": "es",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "es",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 155,
@@ -4170,6 +4819,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "es",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -4219,12 +4879,12 @@
     {
       "lang": "et",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -4306,6 +4966,17 @@
     },
     {
       "lang": "et",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "et",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -4317,6 +4988,17 @@
     },
     {
       "lang": "et",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "et",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -4324,6 +5006,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "et",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -4384,12 +5077,12 @@
     {
       "lang": "et",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -4482,6 +5175,17 @@
     },
     {
       "lang": "et",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "et",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -4494,12 +5198,12 @@
     {
       "lang": "et",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -4570,6 +5274,17 @@
     },
     {
       "lang": "et",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "et",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -4588,6 +5303,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "et",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -4637,12 +5363,12 @@
     {
       "lang": "fa",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -4724,6 +5450,17 @@
     },
     {
       "lang": "fa",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fa",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -4735,6 +5472,17 @@
     },
     {
       "lang": "fa",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fa",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -4742,6 +5490,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fa",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -4802,12 +5561,12 @@
     {
       "lang": "fa",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -4900,6 +5659,17 @@
     },
     {
       "lang": "fa",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fa",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -4912,12 +5682,12 @@
     {
       "lang": "fa",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -4988,6 +5758,17 @@
     },
     {
       "lang": "fa",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fa",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -5006,6 +5787,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fa",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -5055,11 +5847,11 @@
     {
       "lang": "fi",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -5142,6 +5934,17 @@
     },
     {
       "lang": "fi",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fi",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -5153,6 +5956,17 @@
     },
     {
       "lang": "fi",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fi",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -5160,6 +5974,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fi",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -5220,11 +6045,11 @@
     {
       "lang": "fi",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -5318,6 +6143,17 @@
     },
     {
       "lang": "fi",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fi",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -5330,12 +6166,12 @@
     {
       "lang": "fi",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -5406,6 +6242,17 @@
     },
     {
       "lang": "fi",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fi",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -5424,6 +6271,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fi",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -5473,11 +6331,11 @@
     {
       "lang": "fr",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 13,
-      "genuine_pct": 81.25,
+      "genuine_pct": 54.17,
       "en_copy": 0,
-      "en_prefix": 3,
+      "en_prefix": 11,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -5560,6 +6418,17 @@
     },
     {
       "lang": "fr",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fr",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 5,
@@ -5567,6 +6436,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fr",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
       "placeholder_mismatch": 0
     },
     {
@@ -5579,6 +6459,17 @@
       "en_prefix": 856,
       "missing": 0,
       "placeholder_mismatch": 98
+    },
+    {
+      "lang": "fr",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
+      "placeholder_mismatch": 0
     },
     {
       "lang": "fr",
@@ -5638,11 +6529,11 @@
     {
       "lang": "fr",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -5736,6 +6627,17 @@
     },
     {
       "lang": "fr",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fr",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 24,
@@ -5748,12 +6650,12 @@
     {
       "lang": "fr",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 1,
-      "genuine_pct": 0.05,
+      "genuine_pct": 0.04,
       "en_copy": 44,
       "en_prefix": 1873,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -5824,6 +6726,17 @@
     },
     {
       "lang": "fr",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fr",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 98,
@@ -5842,6 +6755,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "fr",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -5891,12 +6815,12 @@
     {
       "lang": "he",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -5978,6 +6902,17 @@
     },
     {
       "lang": "he",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "he",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -5989,6 +6924,17 @@
     },
     {
       "lang": "he",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "he",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -5996,6 +6942,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "he",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -6056,12 +7013,12 @@
     {
       "lang": "he",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -6154,6 +7111,17 @@
     },
     {
       "lang": "he",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "he",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -6166,12 +7134,12 @@
     {
       "lang": "he",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -6242,6 +7210,17 @@
     },
     {
       "lang": "he",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "he",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -6260,6 +7239,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "he",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -6309,12 +7299,12 @@
     {
       "lang": "hi",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -6396,6 +7386,17 @@
     },
     {
       "lang": "hi",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hi",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -6407,6 +7408,17 @@
     },
     {
       "lang": "hi",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hi",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -6414,6 +7426,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hi",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -6474,12 +7497,12 @@
     {
       "lang": "hi",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -6572,6 +7595,17 @@
     },
     {
       "lang": "hi",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hi",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -6584,12 +7618,12 @@
     {
       "lang": "hi",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -6660,6 +7694,17 @@
     },
     {
       "lang": "hi",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hi",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -6678,6 +7723,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hi",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -6727,12 +7783,12 @@
     {
       "lang": "hr",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -6814,6 +7870,17 @@
     },
     {
       "lang": "hr",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hr",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -6825,6 +7892,17 @@
     },
     {
       "lang": "hr",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hr",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -6832,6 +7910,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hr",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -6892,12 +7981,12 @@
     {
       "lang": "hr",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -6990,6 +8079,17 @@
     },
     {
       "lang": "hr",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hr",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -7002,12 +8102,12 @@
     {
       "lang": "hr",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -7078,6 +8178,17 @@
     },
     {
       "lang": "hr",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hr",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -7096,6 +8207,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hr",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -7145,12 +8267,12 @@
     {
       "lang": "hu",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -7232,6 +8354,17 @@
     },
     {
       "lang": "hu",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hu",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -7243,6 +8376,17 @@
     },
     {
       "lang": "hu",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hu",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -7250,6 +8394,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hu",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -7310,12 +8465,12 @@
     {
       "lang": "hu",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -7408,6 +8563,17 @@
     },
     {
       "lang": "hu",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hu",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -7420,12 +8586,12 @@
     {
       "lang": "hu",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -7496,6 +8662,17 @@
     },
     {
       "lang": "hu",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hu",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -7514,6 +8691,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hu",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -7563,12 +8751,12 @@
     {
       "lang": "hy",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -7650,6 +8838,17 @@
     },
     {
       "lang": "hy",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hy",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -7661,6 +8860,17 @@
     },
     {
       "lang": "hy",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hy",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -7668,6 +8878,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hy",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -7728,12 +8949,12 @@
     {
       "lang": "hy",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -7826,6 +9047,17 @@
     },
     {
       "lang": "hy",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hy",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -7838,12 +9070,12 @@
     {
       "lang": "hy",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -7914,6 +9146,17 @@
     },
     {
       "lang": "hy",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hy",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -7932,6 +9175,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "hy",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -7981,12 +9235,12 @@
     {
       "lang": "id",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -8068,6 +9322,17 @@
     },
     {
       "lang": "id",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "id",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -8079,6 +9344,17 @@
     },
     {
       "lang": "id",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "id",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -8086,6 +9362,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "id",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -8146,12 +9433,12 @@
     {
       "lang": "id",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -8244,6 +9531,17 @@
     },
     {
       "lang": "id",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "id",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -8256,12 +9554,12 @@
     {
       "lang": "id",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -8332,6 +9630,17 @@
     },
     {
       "lang": "id",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "id",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -8350,6 +9659,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "id",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -8399,11 +9719,11 @@
     {
       "lang": "it",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -8486,6 +9806,17 @@
     },
     {
       "lang": "it",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "it",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -8497,6 +9828,17 @@
     },
     {
       "lang": "it",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "it",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -8504,6 +9846,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "it",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -8564,11 +9917,11 @@
     {
       "lang": "it",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -8662,6 +10015,17 @@
     },
     {
       "lang": "it",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "it",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -8674,12 +10038,12 @@
     {
       "lang": "it",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -8750,6 +10114,17 @@
     },
     {
       "lang": "it",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "it",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -8768,6 +10143,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "it",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -8817,12 +10203,12 @@
     {
       "lang": "ja",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -8904,6 +10290,17 @@
     },
     {
       "lang": "ja",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ja",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -8915,6 +10312,17 @@
     },
     {
       "lang": "ja",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ja",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -8922,6 +10330,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ja",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -8982,12 +10401,12 @@
     {
       "lang": "ja",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -9080,6 +10499,17 @@
     },
     {
       "lang": "ja",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ja",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -9092,12 +10522,12 @@
     {
       "lang": "ja",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -9168,6 +10598,17 @@
     },
     {
       "lang": "ja",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ja",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -9186,6 +10627,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ja",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -9235,12 +10687,12 @@
     {
       "lang": "ka",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -9322,6 +10774,17 @@
     },
     {
       "lang": "ka",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ka",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -9333,6 +10796,17 @@
     },
     {
       "lang": "ka",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ka",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -9340,6 +10814,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ka",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -9400,12 +10885,12 @@
     {
       "lang": "ka",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -9498,6 +10983,17 @@
     },
     {
       "lang": "ka",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ka",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -9510,12 +11006,12 @@
     {
       "lang": "ka",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -9586,6 +11082,17 @@
     },
     {
       "lang": "ka",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ka",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -9604,6 +11111,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ka",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -9653,12 +11171,12 @@
     {
       "lang": "kk",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -9740,6 +11258,17 @@
     },
     {
       "lang": "kk",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "kk",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -9751,6 +11280,17 @@
     },
     {
       "lang": "kk",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "kk",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -9758,6 +11298,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "kk",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -9818,12 +11369,12 @@
     {
       "lang": "kk",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -9916,6 +11467,17 @@
     },
     {
       "lang": "kk",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "kk",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -9928,12 +11490,12 @@
     {
       "lang": "kk",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -10004,6 +11566,17 @@
     },
     {
       "lang": "kk",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "kk",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -10022,6 +11595,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "kk",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -10071,12 +11655,12 @@
     {
       "lang": "ko",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -10158,6 +11742,17 @@
     },
     {
       "lang": "ko",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ko",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -10169,6 +11764,17 @@
     },
     {
       "lang": "ko",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ko",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -10176,6 +11782,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ko",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -10236,12 +11853,12 @@
     {
       "lang": "ko",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -10334,6 +11951,17 @@
     },
     {
       "lang": "ko",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ko",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -10346,12 +11974,12 @@
     {
       "lang": "ko",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -10422,6 +12050,17 @@
     },
     {
       "lang": "ko",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ko",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -10440,6 +12079,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ko",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -10489,12 +12139,12 @@
     {
       "lang": "lt",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -10576,6 +12226,17 @@
     },
     {
       "lang": "lt",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lt",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -10587,6 +12248,17 @@
     },
     {
       "lang": "lt",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lt",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -10594,6 +12266,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lt",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -10654,12 +12337,12 @@
     {
       "lang": "lt",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -10752,6 +12435,17 @@
     },
     {
       "lang": "lt",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lt",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -10764,12 +12458,12 @@
     {
       "lang": "lt",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -10840,6 +12534,17 @@
     },
     {
       "lang": "lt",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lt",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -10858,6 +12563,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lt",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -10907,12 +12623,12 @@
     {
       "lang": "lv",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -10994,6 +12710,17 @@
     },
     {
       "lang": "lv",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lv",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -11005,6 +12732,17 @@
     },
     {
       "lang": "lv",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lv",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -11012,6 +12750,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lv",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -11072,12 +12821,12 @@
     {
       "lang": "lv",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -11170,6 +12919,17 @@
     },
     {
       "lang": "lv",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lv",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -11182,12 +12942,12 @@
     {
       "lang": "lv",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -11258,6 +13018,17 @@
     },
     {
       "lang": "lv",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lv",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -11276,6 +13047,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "lv",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -11325,12 +13107,12 @@
     {
       "lang": "mk",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -11412,6 +13194,17 @@
     },
     {
       "lang": "mk",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "mk",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -11423,6 +13216,17 @@
     },
     {
       "lang": "mk",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "mk",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -11430,6 +13234,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "mk",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -11490,12 +13305,12 @@
     {
       "lang": "mk",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -11588,6 +13403,17 @@
     },
     {
       "lang": "mk",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "mk",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -11600,12 +13426,12 @@
     {
       "lang": "mk",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -11676,6 +13502,17 @@
     },
     {
       "lang": "mk",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "mk",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -11694,6 +13531,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "mk",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -11743,12 +13591,12 @@
     {
       "lang": "ml",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -11830,6 +13678,17 @@
     },
     {
       "lang": "ml",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ml",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -11841,6 +13700,17 @@
     },
     {
       "lang": "ml",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ml",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -11848,6 +13718,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ml",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -11908,12 +13789,12 @@
     {
       "lang": "ml",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -12006,6 +13887,17 @@
     },
     {
       "lang": "ml",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ml",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -12018,12 +13910,12 @@
     {
       "lang": "ml",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -12094,6 +13986,17 @@
     },
     {
       "lang": "ml",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ml",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -12112,6 +14015,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ml",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -12161,12 +14075,12 @@
     {
       "lang": "ms",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -12248,6 +14162,17 @@
     },
     {
       "lang": "ms",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ms",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -12259,6 +14184,17 @@
     },
     {
       "lang": "ms",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ms",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -12266,6 +14202,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ms",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -12326,12 +14273,12 @@
     {
       "lang": "ms",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -12424,6 +14371,17 @@
     },
     {
       "lang": "ms",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ms",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -12436,12 +14394,12 @@
     {
       "lang": "ms",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -12512,6 +14470,17 @@
     },
     {
       "lang": "ms",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ms",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -12530,6 +14499,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ms",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -12579,11 +14559,11 @@
     {
       "lang": "nl",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -12666,6 +14646,17 @@
     },
     {
       "lang": "nl",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "nl",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -12677,6 +14668,17 @@
     },
     {
       "lang": "nl",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "nl",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -12684,6 +14686,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "nl",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -12744,11 +14757,11 @@
     {
       "lang": "nl",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -12842,6 +14855,17 @@
     },
     {
       "lang": "nl",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "nl",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -12854,12 +14878,12 @@
     {
       "lang": "nl",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 44,
       "en_prefix": 1874,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -12930,6 +14954,17 @@
     },
     {
       "lang": "nl",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "nl",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -12948,6 +14983,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "nl",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -12997,11 +15043,11 @@
     {
       "lang": "no",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13084,6 +15130,17 @@
     },
     {
       "lang": "no",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "no",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -13095,6 +15152,17 @@
     },
     {
       "lang": "no",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "no",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -13102,6 +15170,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "no",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -13162,11 +15241,11 @@
     {
       "lang": "no",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13260,6 +15339,17 @@
     },
     {
       "lang": "no",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "no",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -13272,12 +15362,12 @@
     {
       "lang": "no",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -13348,6 +15438,17 @@
     },
     {
       "lang": "no",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "no",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -13366,6 +15467,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "no",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -13415,11 +15527,11 @@
     {
       "lang": "pl",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 16,
-      "genuine_pct": 100.0,
+      "genuine_pct": 66.67,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 8,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13502,6 +15614,17 @@
     },
     {
       "lang": "pl",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pl",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 5,
@@ -13513,6 +15636,17 @@
     },
     {
       "lang": "pl",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pl",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 759,
@@ -13520,6 +15654,17 @@
       "en_copy": 266,
       "en_prefix": 470,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pl",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -13580,11 +15725,11 @@
     {
       "lang": "pl",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13678,6 +15823,17 @@
     },
     {
       "lang": "pl",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pl",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 47,
@@ -13690,22 +15846,22 @@
     {
       "lang": "pl",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
       "lang": "pl",
       "domain": "quests.json",
       "total_keys": 610,
-      "genuine": 565,
-      "genuine_pct": 92.62,
-      "en_copy": 5,
-      "en_prefix": 40,
+      "genuine": 602,
+      "genuine_pct": 98.69,
+      "en_copy": 2,
+      "en_prefix": 6,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13766,6 +15922,17 @@
     },
     {
       "lang": "pl",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pl",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 156,
@@ -13784,6 +15951,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pl",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -13833,11 +16011,11 @@
     {
       "lang": "pt",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13920,6 +16098,17 @@
     },
     {
       "lang": "pt",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pt",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -13927,6 +16116,17 @@
       "en_copy": 0,
       "en_prefix": 5,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pt",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
       "placeholder_mismatch": 0
     },
     {
@@ -13939,6 +16139,17 @@
       "en_prefix": 1446,
       "missing": 0,
       "placeholder_mismatch": 38
+    },
+    {
+      "lang": "pt",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
+      "placeholder_mismatch": 0
     },
     {
       "lang": "pt",
@@ -13998,11 +16209,11 @@
     {
       "lang": "pt",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -14096,6 +16307,17 @@
     },
     {
       "lang": "pt",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pt",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 1,
@@ -14108,12 +16330,12 @@
     {
       "lang": "pt",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -14184,6 +16406,17 @@
     },
     {
       "lang": "pt",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pt",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -14202,6 +16435,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "pt",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -14251,11 +16495,11 @@
     {
       "lang": "ro",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -14338,6 +16582,17 @@
     },
     {
       "lang": "ro",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ro",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 2,
@@ -14349,6 +16604,17 @@
     },
     {
       "lang": "ro",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ro",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -14356,6 +16622,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ro",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -14416,11 +16693,11 @@
     {
       "lang": "ro",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -14514,6 +16791,17 @@
     },
     {
       "lang": "ro",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ro",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -14526,12 +16814,12 @@
     {
       "lang": "ro",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 44,
       "en_prefix": 1874,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -14602,6 +16890,17 @@
     },
     {
       "lang": "ro",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ro",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -14620,6 +16919,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ro",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -14669,11 +16979,11 @@
     {
       "lang": "ru",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 5,
-      "genuine_pct": 31.25,
+      "genuine_pct": 20.83,
       "en_copy": 0,
-      "en_prefix": 11,
+      "en_prefix": 19,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -14756,6 +17066,17 @@
     },
     {
       "lang": "ru",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ru",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 2,
@@ -14763,6 +17084,17 @@
       "en_copy": 0,
       "en_prefix": 3,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ru",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
       "placeholder_mismatch": 0
     },
     {
@@ -14775,6 +17107,17 @@
       "en_prefix": 758,
       "missing": 0,
       "placeholder_mismatch": 148
+    },
+    {
+      "lang": "ru",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
+      "placeholder_mismatch": 0
     },
     {
       "lang": "ru",
@@ -14834,11 +17177,11 @@
     {
       "lang": "ru",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -14932,6 +17275,17 @@
     },
     {
       "lang": "ru",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ru",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 16,
@@ -14944,12 +17298,12 @@
     {
       "lang": "ru",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 1,
-      "genuine_pct": 0.05,
+      "genuine_pct": 0.04,
       "en_copy": 44,
       "en_prefix": 1873,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -15020,6 +17374,17 @@
     },
     {
       "lang": "ru",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ru",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 32,
@@ -15038,6 +17403,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ru",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -15087,12 +17463,12 @@
     {
       "lang": "sk",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -15174,6 +17550,17 @@
     },
     {
       "lang": "sk",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sk",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -15185,6 +17572,17 @@
     },
     {
       "lang": "sk",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sk",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -15192,6 +17590,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sk",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -15252,12 +17661,12 @@
     {
       "lang": "sk",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -15350,6 +17759,17 @@
     },
     {
       "lang": "sk",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sk",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -15362,12 +17782,12 @@
     {
       "lang": "sk",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -15438,6 +17858,17 @@
     },
     {
       "lang": "sk",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sk",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -15456,6 +17887,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sk",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -15505,12 +17947,12 @@
     {
       "lang": "sl",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -15592,6 +18034,17 @@
     },
     {
       "lang": "sl",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sl",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -15603,6 +18056,17 @@
     },
     {
       "lang": "sl",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sl",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -15610,6 +18074,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sl",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -15670,12 +18145,12 @@
     {
       "lang": "sl",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -15768,6 +18243,17 @@
     },
     {
       "lang": "sl",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sl",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -15780,12 +18266,12 @@
     {
       "lang": "sl",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -15856,6 +18342,17 @@
     },
     {
       "lang": "sl",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sl",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -15874,6 +18371,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sl",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -15923,12 +18431,12 @@
     {
       "lang": "sq",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -16010,6 +18518,17 @@
     },
     {
       "lang": "sq",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sq",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -16021,6 +18540,17 @@
     },
     {
       "lang": "sq",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sq",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -16028,6 +18558,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sq",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -16088,12 +18629,12 @@
     {
       "lang": "sq",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -16186,6 +18727,17 @@
     },
     {
       "lang": "sq",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sq",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -16198,12 +18750,12 @@
     {
       "lang": "sq",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -16274,6 +18826,17 @@
     },
     {
       "lang": "sq",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sq",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -16292,6 +18855,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sq",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -16341,12 +18915,12 @@
     {
       "lang": "sr",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -16428,6 +19002,17 @@
     },
     {
       "lang": "sr",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sr",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -16439,6 +19024,17 @@
     },
     {
       "lang": "sr",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sr",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -16446,6 +19042,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sr",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -16506,12 +19113,12 @@
     {
       "lang": "sr",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -16604,6 +19211,17 @@
     },
     {
       "lang": "sr",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sr",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -16616,12 +19234,12 @@
     {
       "lang": "sr",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -16692,6 +19310,17 @@
     },
     {
       "lang": "sr",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sr",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -16710,6 +19339,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sr",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -16759,11 +19399,11 @@
     {
       "lang": "sv",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
-      "en_prefix": 12,
+      "en_prefix": 20,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -16846,6 +19486,17 @@
     },
     {
       "lang": "sv",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sv",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -16857,6 +19508,17 @@
     },
     {
       "lang": "sv",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sv",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -16864,6 +19526,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sv",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -16924,11 +19597,11 @@
     {
       "lang": "sv",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
-      "en_prefix": 0,
+      "en_prefix": 235,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -17022,6 +19695,17 @@
     },
     {
       "lang": "sv",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sv",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -17034,12 +19718,12 @@
     {
       "lang": "sv",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -17110,6 +19794,17 @@
     },
     {
       "lang": "sv",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sv",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -17128,6 +19823,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sv",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -17177,12 +19883,12 @@
     {
       "lang": "sw",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -17264,6 +19970,17 @@
     },
     {
       "lang": "sw",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sw",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -17275,6 +19992,17 @@
     },
     {
       "lang": "sw",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sw",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -17282,6 +20010,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sw",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -17342,12 +20081,12 @@
     {
       "lang": "sw",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -17440,6 +20179,17 @@
     },
     {
       "lang": "sw",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sw",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -17452,12 +20202,12 @@
     {
       "lang": "sw",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -17528,6 +20278,17 @@
     },
     {
       "lang": "sw",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sw",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -17546,6 +20307,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "sw",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -17595,12 +20367,12 @@
     {
       "lang": "ta",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -17682,6 +20454,17 @@
     },
     {
       "lang": "ta",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ta",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -17693,6 +20476,17 @@
     },
     {
       "lang": "ta",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ta",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -17700,6 +20494,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ta",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -17760,12 +20565,12 @@
     {
       "lang": "ta",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -17858,6 +20663,17 @@
     },
     {
       "lang": "ta",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ta",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -17870,12 +20686,12 @@
     {
       "lang": "ta",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -17946,6 +20762,17 @@
     },
     {
       "lang": "ta",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ta",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -17964,6 +20791,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "ta",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -18013,12 +20851,12 @@
     {
       "lang": "te",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -18100,6 +20938,17 @@
     },
     {
       "lang": "te",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "te",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -18111,6 +20960,17 @@
     },
     {
       "lang": "te",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "te",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -18118,6 +20978,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "te",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -18178,12 +21049,12 @@
     {
       "lang": "te",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -18276,6 +21147,17 @@
     },
     {
       "lang": "te",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "te",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -18288,12 +21170,12 @@
     {
       "lang": "te",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -18364,6 +21246,17 @@
     },
     {
       "lang": "te",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "te",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -18382,6 +21275,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "te",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -18431,12 +21335,12 @@
     {
       "lang": "th",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -18518,6 +21422,17 @@
     },
     {
       "lang": "th",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "th",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -18529,6 +21444,17 @@
     },
     {
       "lang": "th",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "th",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -18536,6 +21462,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "th",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -18596,12 +21533,12 @@
     {
       "lang": "th",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -18694,6 +21631,17 @@
     },
     {
       "lang": "th",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "th",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -18706,12 +21654,12 @@
     {
       "lang": "th",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -18782,6 +21730,17 @@
     },
     {
       "lang": "th",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "th",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -18800,6 +21759,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "th",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -18849,12 +21819,12 @@
     {
       "lang": "tl",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -18936,6 +21906,17 @@
     },
     {
       "lang": "tl",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tl",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -18947,6 +21928,17 @@
     },
     {
       "lang": "tl",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tl",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -18954,6 +21946,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tl",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -19014,12 +22017,12 @@
     {
       "lang": "tl",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -19112,6 +22115,17 @@
     },
     {
       "lang": "tl",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tl",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -19124,12 +22138,12 @@
     {
       "lang": "tl",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -19200,6 +22214,17 @@
     },
     {
       "lang": "tl",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tl",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -19218,6 +22243,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tl",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -19267,12 +22303,12 @@
     {
       "lang": "tr",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 4,
-      "genuine_pct": 25.0,
+      "genuine_pct": 16.67,
       "en_copy": 0,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -19354,6 +22390,17 @@
     },
     {
       "lang": "tr",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tr",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 5,
@@ -19365,6 +22412,17 @@
     },
     {
       "lang": "tr",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tr",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 28,
@@ -19372,6 +22430,17 @@
       "en_copy": 2,
       "en_prefix": 1465,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tr",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -19432,12 +22501,12 @@
     {
       "lang": "tr",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -19530,6 +22599,17 @@
     },
     {
       "lang": "tr",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tr",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 12,
@@ -19542,12 +22622,12 @@
     {
       "lang": "tr",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -19618,6 +22698,17 @@
     },
     {
       "lang": "tr",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tr",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 15,
@@ -19636,6 +22727,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "tr",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -19685,12 +22787,12 @@
     {
       "lang": "uk",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -19772,6 +22874,17 @@
     },
     {
       "lang": "uk",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uk",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -19783,6 +22896,17 @@
     },
     {
       "lang": "uk",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uk",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -19790,6 +22914,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uk",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -19850,12 +22985,12 @@
     {
       "lang": "uk",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -19948,6 +23083,17 @@
     },
     {
       "lang": "uk",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uk",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -19960,12 +23106,12 @@
     {
       "lang": "uk",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -20036,6 +23182,17 @@
     },
     {
       "lang": "uk",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uk",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -20054,6 +23211,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uk",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -20103,12 +23271,12 @@
     {
       "lang": "uz",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -20190,6 +23358,17 @@
     },
     {
       "lang": "uz",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uz",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -20201,6 +23380,17 @@
     },
     {
       "lang": "uz",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uz",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -20208,6 +23398,17 @@
       "en_copy": 0,
       "en_prefix": 1495,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uz",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -20268,12 +23469,12 @@
     {
       "lang": "uz",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -20366,6 +23567,17 @@
     },
     {
       "lang": "uz",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uz",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -20378,12 +23590,12 @@
     {
       "lang": "uz",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -20454,6 +23666,17 @@
     },
     {
       "lang": "uz",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uz",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -20472,6 +23695,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "uz",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -20521,12 +23755,12 @@
     {
       "lang": "vi",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -20608,6 +23842,17 @@
     },
     {
       "lang": "vi",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "vi",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -20619,6 +23864,17 @@
     },
     {
       "lang": "vi",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "vi",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -20626,6 +23882,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "vi",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -20686,12 +23953,12 @@
     {
       "lang": "vi",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -20784,6 +24051,17 @@
     },
     {
       "lang": "vi",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "vi",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -20796,12 +24074,12 @@
     {
       "lang": "vi",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -20872,6 +24150,17 @@
     },
     {
       "lang": "vi",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "vi",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -20890,6 +24179,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "vi",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -20939,12 +24239,12 @@
     {
       "lang": "zh",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 4,
       "en_prefix": 12,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -21026,6 +24326,17 @@
     },
     {
       "lang": "zh",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -21037,6 +24348,17 @@
     },
     {
       "lang": "zh",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -21044,6 +24366,17 @@
       "en_copy": 219,
       "en_prefix": 1276,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -21104,12 +24437,12 @@
     {
       "lang": "zh",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -21202,6 +24535,17 @@
     },
     {
       "lang": "zh",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -21214,12 +24558,12 @@
     {
       "lang": "zh",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 9,
       "en_prefix": 1909,
-      "missing": 0,
+      "missing": 492,
       "placeholder_mismatch": 0
     },
     {
@@ -21290,6 +24634,17 @@
     },
     {
       "lang": "zh",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -21308,6 +24663,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -21357,12 +24723,12 @@
     {
       "lang": "zh_TW",
       "domain": "chatchannels.json",
-      "total_keys": 16,
+      "total_keys": 24,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 8,
       "en_prefix": 8,
-      "missing": 0,
+      "missing": 8,
       "placeholder_mismatch": 0
     },
     {
@@ -21444,6 +24810,17 @@
     },
     {
       "lang": "zh_TW",
+      "domain": "familiars.json",
+      "total_keys": 8,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 8,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh_TW",
       "domain": "globalevents.json",
       "total_keys": 5,
       "genuine": 0,
@@ -21455,6 +24832,17 @@
     },
     {
       "lang": "zh_TW",
+      "domain": "groups.json",
+      "total_keys": 6,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 6,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh_TW",
       "domain": "html.json",
       "total_keys": 1495,
       "genuine": 0,
@@ -21462,6 +24850,17 @@
       "en_copy": 733,
       "en_prefix": 762,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh_TW",
+      "domain": "imbuements.json",
+      "total_keys": 18,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 18,
       "placeholder_mismatch": 0
     },
     {
@@ -21522,12 +24921,12 @@
     {
       "lang": "zh_TW",
       "domain": "mounts.json",
-      "total_keys": 0,
+      "total_keys": 235,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 0,
+      "missing": 235,
       "placeholder_mismatch": 0
     },
     {
@@ -21620,6 +25019,17 @@
     },
     {
       "lang": "zh_TW",
+      "domain": "outfits.json",
+      "total_keys": 126,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 126,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh_TW",
       "domain": "php.json",
       "total_keys": 59,
       "genuine": 0,
@@ -21632,12 +25042,12 @@
     {
       "lang": "zh_TW",
       "domain": "questlog.json",
-      "total_keys": 1918,
+      "total_keys": 2410,
       "genuine": 0,
       "genuine_pct": 0.0,
       "en_copy": 0,
       "en_prefix": 0,
-      "missing": 1918,
+      "missing": 2410,
       "placeholder_mismatch": 0
     },
     {
@@ -21708,6 +25118,17 @@
     },
     {
       "lang": "zh_TW",
+      "domain": "store.json",
+      "total_keys": 1484,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 1484,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh_TW",
       "domain": "talkactions.json",
       "total_keys": 199,
       "genuine": 0,
@@ -21726,6 +25147,17 @@
       "en_copy": 0,
       "en_prefix": 0,
       "missing": 0,
+      "placeholder_mismatch": 0
+    },
+    {
+      "lang": "zh_TW",
+      "domain": "vocations.json",
+      "total_keys": 17,
+      "genuine": 0,
+      "genuine_pct": 0.0,
+      "en_copy": 0,
+      "en_prefix": 0,
+      "missing": 17,
       "placeholder_mismatch": 0
     },
     {
@@ -21760,9 +25192,9 @@
       "total_placeholder_mismatch": 0
     },
     "chatchannels.json": {
-      "total_keys": 16,
+      "total_keys": 24,
       "langs": 52,
-      "avg_genuine_pct": 6.25,
+      "avg_genuine_pct": 4.17,
       "total_placeholder_mismatch": 0
     },
     "client.json": {
@@ -21807,10 +25239,22 @@
       "avg_genuine_pct": 7.56,
       "total_placeholder_mismatch": 0
     },
+    "familiars.json": {
+      "total_keys": 8,
+      "langs": 52,
+      "avg_genuine_pct": 0.0,
+      "total_placeholder_mismatch": 0
+    },
     "globalevents.json": {
       "total_keys": 5,
       "langs": 52,
       "avg_genuine_pct": 9.23,
+      "total_placeholder_mismatch": 0
+    },
+    "groups.json": {
+      "total_keys": 6,
+      "langs": 52,
+      "avg_genuine_pct": 0.0,
       "total_placeholder_mismatch": 0
     },
     "html.json": {
@@ -21818,6 +25262,12 @@
       "langs": 52,
       "avg_genuine_pct": 3.86,
       "total_placeholder_mismatch": 284
+    },
+    "imbuements.json": {
+      "total_keys": 18,
+      "langs": 52,
+      "avg_genuine_pct": 0.0,
+      "total_placeholder_mismatch": 0
     },
     "items.json": {
       "total_keys": 17057,
@@ -21850,7 +25300,7 @@
       "total_placeholder_mismatch": 0
     },
     "mounts.json": {
-      "total_keys": 0,
+      "total_keys": 235,
       "langs": 52,
       "avg_genuine_pct": 0.0,
       "total_placeholder_mismatch": 0
@@ -21903,6 +25353,12 @@
       "avg_genuine_pct": 0.0,
       "total_placeholder_mismatch": 0
     },
+    "outfits.json": {
+      "total_keys": 126,
+      "langs": 52,
+      "avg_genuine_pct": 0.0,
+      "total_placeholder_mismatch": 0
+    },
     "php.json": {
       "total_keys": 59,
       "langs": 52,
@@ -21910,15 +25366,15 @@
       "total_placeholder_mismatch": 0
     },
     "questlog.json": {
-      "total_keys": 1918,
+      "total_keys": 2410,
       "langs": 52,
-      "avg_genuine_pct": 1.3,
+      "avg_genuine_pct": 1.03,
       "total_placeholder_mismatch": 0
     },
     "quests.json": {
       "total_keys": 610,
       "langs": 52,
-      "avg_genuine_pct": 7.76,
+      "avg_genuine_pct": 7.87,
       "total_placeholder_mismatch": 0
     },
     "raids.json": {
@@ -21951,6 +25407,12 @@
       "avg_genuine_pct": 5.27,
       "total_placeholder_mismatch": 0
     },
+    "store.json": {
+      "total_keys": 1484,
+      "langs": 52,
+      "avg_genuine_pct": 0.0,
+      "total_placeholder_mismatch": 0
+    },
     "talkactions.json": {
       "total_keys": 199,
       "langs": 52,
@@ -21959,6 +25421,12 @@
     },
     "ui.json": {
       "total_keys": 0,
+      "langs": 52,
+      "avg_genuine_pct": 0.0,
+      "total_placeholder_mismatch": 0
+    },
+    "vocations.json": {
+      "total_keys": 17,
       "langs": 52,
       "avg_genuine_pct": 0.0,
       "total_placeholder_mismatch": 0

@@ -43,7 +43,7 @@ MANUAL_START_LIMIT_LOG_TS_FILE="$WORK_DIR/.guardian_manual_limit_last_log_ts"
 MANUAL_START_LIMIT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_LIMIT_LOG_INTERVAL_SEC:-60}"
 GUARDIAN_ENFORCE_TRANSLATION_CONTRACT="${GUARDIAN_ENFORCE_TRANSLATION_CONTRACT:-true}"
 GUARDIAN_REQUIRE_USE_GT="${GUARDIAN_REQUIRE_USE_GT:-true}"
-GUARDIAN_REQUIRE_NO_GIT="${GUARDIAN_REQUIRE_NO_GIT:-true}"
+GUARDIAN_REQUIRE_NO_GIT="${GUARDIAN_REQUIRE_NO_GIT:-false}"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -698,7 +698,10 @@ build_worker_args() {
             ;;
         translations_general)
             WORKER_ARGS+=(--translations-only)
-            # Bez --langs → worker przetwarza wszystkie języki wg tier rotation
+            # Jeśli podano langs w profilu → przekaż do workera (ograniczenie języków)
+            if [ -n "$RUN_LANGS" ]; then
+                WORKER_ARGS+=(--langs "$RUN_LANGS")
+            fi
             ;;
         translations_random)
             WORKER_ARGS+=(--translations-only)

@@ -1,26 +1,27 @@
 {
-  "timestamp": "2026-02-15T13:51:19.372802Z",
-  "cycle_counter": 1352,
-  "last_target_key": "pl:spells.json",
-  "last_pending_total": 2,
+  "timestamp": "2026-02-15T22:45:11.649252Z",
+  "cycle_counter": 1422,
+  "last_target_key": "ru:actions.json",
+  "last_pending_total": 33,
   "last_tier": 1,
-  "last_cat_priority": 4,
-  "candidates_count": 45,
-  "active_candidates_count": 23,
-  "skipped_backoff": 17,
-  "skipped_guard_fail": 5,
+  "last_cat_priority": 7,
+  "candidates_count": 205,
+  "active_candidates_count": 184,
+  "skipped_backoff": 19,
+  "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
-    "pl:quests.json": 1355,
-    "es:quests.json": 1359,
-    "es:npc.json": 1358,
-    "es:scripts.json": 1357,
-    "es:raids.json": 1358,
-    "pl:npc.json": 1361
+    "es:npc.json": 1433,
+    "es:books.json": 1431
   },
   "tier_config": {
     "tier1": [
       "es",
-      "pl"
+      "it",
+      "pl",
+      "ro",
+      "ru",
+      "sr",
+      "sv"
     ],
     "tier2": [
       "cs",
@@ -39,9 +40,9 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 11,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -126,11 +127,11 @@
     "ru:npc.json": 0,
     "nl:items.json": 0,
     "sv:items.json": 0,
-    "pl:quests.json": 2,
+    "pl:quests.json": 3,
     "es:spells.json": 0,
     "pl:raids.json": 3,
     "pl:spells.json": 0,
-    "es:quests.json": 1,
+    "es:quests.json": 3,
     "es:actions.json": 0,
     "pl:html.json": 0,
     "es:otclient_modules.json": 0,
@@ -145,7 +146,7 @@
     "pl:achievements.json": 3,
     "es:npclib.json": 3,
     "de:scripts.json": 0,
-    "es:client.json": 0,
+    "es:client.json": 1,
     "es:raids.json": 0,
     "es:html.json": 0,
     "es:books.json": 0,
@@ -282,14 +283,20 @@
     "pl:npclib.json": 0
   },
   "bootstrap_priority": {
-    "enabled": true,
+    "enabled": false,
     "sequence": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "sr",
+      "sv"
     ],
     "completed": [
       "es",
-      "pl"
+      "pl",
+      "ru"
     ],
     "skipped_no_pending": [],
     "forced_lang": ""
@@ -300,7 +307,7 @@
   "global_quality_mode": true,
   "multilang_wave": {
     "enabled": true,
-    "active": false,
+    "active": true,
     "langs": [
       "cs",
       "el",
@@ -316,24 +323,48 @@
     ],
     "floor_pct": 25.0,
     "weight": 2,
-    "gated_langs": {},
-    "wave_candidates_count": 0
+    "gated_langs": {
+      "it": {
+        "allowed_domain": "items.json",
+        "domain_coverages": {
+          "items.json": 1.37,
+          "npc.json": 1.98,
+          "quests.json": 32.95
+        }
+      },
+      "ro": {
+        "allowed_domain": "npc.json",
+        "domain_coverages": {
+          "items.json": 35.02,
+          "npc.json": 0.21,
+          "quests.json": 0.0
+        }
+      },
+      "ru": {
+        "allowed_domain": "npc.json",
+        "domain_coverages": {
+          "items.json": 59.91,
+          "npc.json": 3.08,
+          "quests.json": 99.34
+        }
+      }
+    },
+    "wave_candidates_count": 3
   },
   "priority_gate": {
     "enabled": true,
-    "active": true,
+    "active": false,
     "coverage_target": 100.0,
     "priority_langs": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "sr",
+      "sv"
     ],
-    "pending_langs": [
-      "es",
-      "pl"
-    ],
-    "lang_completion": {
-      "es": 84.14,
-      "pl": 87.44
-    }
+    "pending_langs": [],
+    "lang_completion": {}
   }
 }

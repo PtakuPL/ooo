@@ -312,8 +312,7 @@ locale = {
     ["Do you really want to delete the hotkey preset %s?"] = "Möchtest du die Hotkey-Vorlage %s wirklich löschen?",
     ["Current hotkey to change: %s"] = "Aktueller Hotkey zum Ändern: %s",
     ["Current hotkey to change: none"] = "Aktueller Hotkey zum Ändern: keiner",
-    ["Edit Primary Key for \\"] = "Primärtaste für \\ bearbeiten",
-    ["Edit Secondary Key for \\"] = "Sekundärtaste für \\ bearbeiten",
+    ["Edit Primary Key for \\"] = "Primärtaste für \\ bearbeiten",\n["Edit Secondary Key for \\"] = "Sekundärtaste für \\ bearbeiten",
     ["Edit group %s"] = "Gruppe %s bearbeiten",
     ["Remove group %s"] = "Gruppe %s entfernen",
     ["Hide groups"] = "Gruppen ausblenden",
@@ -361,9 +360,7 @@ locale = {
     ["Start Your Journey"] = "Beginne deine Reise",
     ["Create Your Account"] = "Erstelle dein Konto",
     ["Create Your Character"] = "Erstelle deinen Charakter",
-    ["I agree to the Tibia Service Agreement,
- Tibia Rules and Tibia Privacy Policy."] = "Ich stimme den Tibia Servicebedingungen,
- den Tibia-Regeln und der Tibia-Datenschutzrichtlinie zu.",
+    ["I agree to the Tibia Service Agreement,\nTibia Rules and Tibia Privacy Policy."] = "Ich stimme den Tibia Servicebedingungen,\nden Tibia-Regeln und der Tibia-Datenschutzrichtlinie zu.",
     ["Suggest Name"] = "Namen vorschlagen",
     ["male"] = "männlich",
     ["female"] = "weiblich",
@@ -402,21 +399,16 @@ locale = {
     ["Charm Expansion:"] = "Charm-Erweiterung:",
     ["Chat Mode Off"] = "Chatmodus aus",
     ["Chat Mode On"] = "Chatmodus an",
-    ["Check this box to see how mmuch time or how many charges the 
-items in your open containers have left"] = "Aktiviere dieses Feld, um zu sehen, wie viel Zeit oder wie viele Ladungen die Gegenstände in deinen offenen Containern noch haben",
-    ["Check this box to see how much time or how many charges are left 
-on your equipped items"] = "Aktiviere dieses Feld, um zu sehen, wie viel Zeit oder wie viele Ladungen auf deinen ausgerüsteten Gegenständen verbleiben",
-    ["Check this box to see how much time or how many charges are left
- on items that have not been used yet"] = "Aktiviere dieses Feld, um zu sehen, wie viel Zeit oder wie viele Ladungen auf noch nicht verwendeten Gegenständen verbleiben",
+    ["Check this box to see how mmuch time or how many charges the\nitems in your open containers have left"] = "Aktiviere dieses Feld, um zu sehen, wie viel Zeit oder wie viele Ladungen die Gegenstände in deinen offenen Containern noch haben",
+    ["Check this box to see how much time or how many charges are left\non your equipped items"] = "Aktiviere dieses Feld, um zu sehen, wie viel Zeit oder wie viele Ladungen auf deinen ausgerüsteten Gegenständen verbleiben",
+    ["Check this box to see how much time or how many charges are left\non items that have not been used yet"] = "Aktiviere dieses Feld, um zu sehen, wie viel Zeit oder wie viele Ladungen auf noch nicht verwendeten Gegenständen verbleiben",
     ["Choose skill to show in skill circle."] = "Wähle den Skill, der im Skill-Kreis angezeigt wird.",
     ["Clear"] = "Leeren",
     ["Clear Charm"] = "Charm löschen",
     ["Clear Imbuement"] = "Imbuement entfernen",
     ["Clear Skipped Loot List"] = "Liste übersprungener Beute leeren",
     ["Clear imbuement:"] = "Imbuement entfernen:",
-    ["Click \"Apply\" to assign the hotkey.
-Click \"Clear\" to remove the hotkey."] = "Klicke auf \"Übernehmen\", um den Hotkey zuzuweisen.
-Klicke auf \"Leeren\", um den Hotkey zu entfernen.",
+    ["Click \"Apply\" to assign the hotkey.\nClick \"Clear\" to remove the hotkey."] = "Klicke auf \"Übernehmen\", um den Hotkey zuzuweisen.\nKlicke auf \"Leeren\", um den Hotkey zu entfernen.",
     ["Click here to carry out the selected imbuement. This will consume the required astral sources and gold."] = "Klicke hier, um das ausgewählte Imbuement durchzuführen. Dadurch werden die benötigten astralen Ressourcen und Gold verbraucht.",
     ["Your needs have changed? Click here to clear the imbuement from your item for a fee."] = "Deine Bedürfnisse haben sich geändert? Klicke hier, um das Imbuement deines Gegenstands gegen eine Gebühr zu entfernen.",
     ["Client user features profile"] = "Client-Benutzerfunktionsprofil",
@@ -463,9 +455,7 @@ Klicke auf \"Leeren\", um den Hotkey zu entfernen.",
     ["Add Tracked Quest"] = "Verfolgte Quest hinzufügen",
     ["Add VIP group (User-Created groups left: %s"] = "VIP-Gruppe hinzufügen (verbleibende benutzerdefinierte Gruppen: %s",
     ["Add to Skipped Loot List"] = "Zur Liste übersprungener Beute hinzufügen",
-    ["All items you have left in the house will be automatically
-sent to your inbox."] = "Alle Gegenstände, die du im Haus lässt, werden automatisch
-an dein Postfach gesendet.",
+    ["All items you have left in the house will be automatically\nsent to your inbox."] = "Alle Gegenstände, die du im Haus lässt, werden automatisch\nan dein Postfach gesendet.",
     ["Amount to gift:"] = "Zu verschenkender Betrag:",
     ["Amount to gift: 0"] = "Zu verschenkender Betrag: 0",
     ["Mount"] = "Reittier",
@@ -934,22 +924,14 @@ an dein Postfach gesendet.",
     ["Updater"] = "Aktualisierung",
     ["Checking for updates"] = "Nach Updates suchen",
     ["Change updater URL"] = "Updater-URL ändern",
-    ["Downloading:
-%s"] = "Herunterladen:
-%s",
-    ["Downloading (%i retry):
-%s"] = "Herunterladen (Versuch %i):
-%s",
+    ["Downloading:\n%s"] = "Herunterladen:\n%s",
+    ["Downloading (%i retry):\n%s"] = "Herunterladen (Versuch %i):\n%s",
     ["Updater Error"] = "Updater-Fehler",
     ["Updating %i files"] = "%i Dateien werden aktualisiert",
     ["Updating client (may take few seconds)"] = "Client wird aktualisiert (kann einige Sekunden dauern)",
     ["Timeout"] = "Zeitüberschreitung",
-    ["Can't download file: %s.
-Error: %s"] = "Datei %s kann nicht heruntergeladen werden.
-Fehler: %s",
-    ["Invalid checksum of: %s.
-Should be %s, is: %s"] = "Ungültige Prüfsumme von %s.
-Sollte %s sein, ist aber %s",
+    ["Can't download file: %s.\nError: %s"] = "Datei %s kann nicht heruntergeladen werden.\nFehler: %s",
+    ["Invalid checksum of: %s.\nShould be %s, is: %s"] = "Ungültige Prüfsumme von %s.\nSollte %s sein, ist aber %s",
     ["Invalid data from updater api (not table)"] = "Ungültige Daten von der Updater-API (keine Tabelle)",
     ["Invalid data from updater api: %s"] = "Ungültige Daten von der Updater-API: %s",
     ["%s kbps"] = "%s kbps",
@@ -1230,8 +1212,7 @@ local add = {
   ["Do you really want to delete the hotkey preset %s?"] = "Möchtest du die Hotkey-Voreinstellung %s wirklich löschen?",
   ["Current hotkey to change: %s"] = "Aktueller Hotkey zum Ändern: %s",
   ["Current hotkey to change: none"] = "Aktueller Hotkey zum Ändern: keiner",
-  ["Edit Primary Key for \\"] = "Primärtaste für \\ bearbeiten",
-  ["Edit Secondary Key for \\"] = "Sekundärtaste für \\ bearbeiten",
+  ["Edit Primary Key for \\"] = "Primärtaste für \\ bearbeiten",\n["Edit Secondary Key for \\"] = "Sekundärtaste für \\ bearbeiten",
   ["Edit group %s"] = "Gruppe %s bearbeiten",
   ["Remove group %s"] = "Gruppe %s entfernen",
   ["Hide groups"] = "Gruppen ausblenden",

@@ -1,11 +1,11 @@
 {
   "lang": "ar",
   "script_group": "rtl",
-  "total_keys": 53586,
-  "translated": 5657,
-  "identical_to_en": 3881,
-  "placeholder_keys": 47929,
-  "coverage_pct": 10.6,
+  "total_keys": 54321,
+  "translated": 5653,
+  "identical_to_en": 3877,
+  "placeholder_keys": 48176,
+  "coverage_pct": 10.4,
   "issues_total": 75,
   "issues_by_type": {
     "script_rtl_insufficient": 72,
@@ -149,5 +149,5 @@
     "length_ratio": 14,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:49:59.646860Z"
+  "validated_at": "2026-02-15T22:45:51.790465Z"
 }

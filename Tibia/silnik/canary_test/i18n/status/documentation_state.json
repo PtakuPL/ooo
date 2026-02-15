@@ -1,5 +1,5 @@
 {
-  "cursor": 18,
+  "cursor": 28,
   "processed": [
     "data-otservbr-global/lib/core/constants.lua",
     "data-otservbr-global/lib/core/load.lua",
@@ -18,8 +18,18 @@
     "data-otservbr-global/lib/quests/grimvale.lua",
     "data-otservbr-global/lib/quests/killing_in_the_name_of.lua",
     "data-otservbr-global/lib/quests/quest.lua",
-    "data-otservbr-global/lib/quests/soul_war.lua"
+    "data-otservbr-global/lib/quests/soul_war.lua",
+    "data-otservbr-global/lib/quests/svargrond_arena.lua",
+    "data-otservbr-global/lib/quests/the_cursed_crystal.lua",
+    "data-otservbr-global/lib/quests/the_primal_ordeal.lua",
+    "data-otservbr-global/lib/quests/the_queen_of_the_banshees.lua",
+    "data-otservbr-global/lib/quests/their_masters_voice.lua",
+    "data-otservbr-global/lib/tables/load.lua",
+    "data-otservbr-global/lib/tables/teleport_item_destinations.lua",
+    "data-otservbr-global/lib/tables/town.lua",
+    "data-otservbr-global/monster/amphibics/azure_frog.lua",
+    "data-otservbr-global/monster/amphibics/bog_frog.lua"
   ],
   "errors": [],
-  "total": 7967
+  "total": 7976
 }

@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-02-15T13:50:58.043836Z",
+  "timestamp": "2026-02-15T19:50:08.264838Z",
   "window_hours": 24,
-  "pending_skip_count": 254,
-  "total_cycles_24h": 619,
-  "pending_skip_share_pct": 41.0,
+  "pending_skip_count": 253,
+  "total_cycles_24h": 651,
+  "pending_skip_share_pct": 38.9,
   "reasons": {
-    "backoff": 11,
-    "pre_migration_skip": 243
+    "pre_migration_skip": 253
   },
-  "total_needs_sum": 863264,
+  "total_needs_sum": 898419,
   "status": "warning"
 }

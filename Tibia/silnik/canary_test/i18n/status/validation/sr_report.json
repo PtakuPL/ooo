@@ -1,7 +1,7 @@
 {
   "lang": "sr",
   "script_group": "cyrillic",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 3614,
   "identical_to_en": 2779,
   "placeholder_keys": 49972,
@@ -33,5 +33,5 @@
     "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:55.775535Z"
+  "validated_at": "2026-02-15T22:46:45.339801Z"
 }

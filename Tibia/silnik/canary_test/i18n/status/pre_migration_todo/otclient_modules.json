@@ -1,10 +1,10 @@
 {
   "category": "otclient_modules",
-  "generated_at_utc": "2026-02-15T13:43:34.402826Z",
+  "generated_at_utc": "2026-02-15T19:41:35.085389Z",
   "scope": "all",
-  "total_files_scanned": 294,
-  "files_with_hits": 168,
-  "hits": 6587,
+  "total_files_scanned": 295,
+  "files_with_hits": 169,
+  "hits": 6721,
   "entries": [
     {
       "file": "testyy/modules/client/client.lua",
@@ -1506,378 +1506,385 @@
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 279,
+      "line": 288,
       "text": "client_bottommenu",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 286,
+      "line": 295,
       "text": "client_bottommenu",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 309,
+      "line": 318,
       "text": "client_bottommenu",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 319,
+      "line": 328,
       "text": "Change Character",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 363,
+      "line": 372,
       "text": "[Webscraping - %s] %s",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 372,
+      "line": 381,
       "text": "Bad Request. Game_entergame postCacheInfo1",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 378,
+      "line": 387,
       "text": "Invalid JSON response format",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 384,
+      "line": 393,
       "text": "Failed to parse JSON response",
-      "pattern": "otui.literal",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 408,
-      "text": "eventschedule",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 411,
-      "text": "Bad Request.Game_entergame postEventScheduler1",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
       "line": 417,
+      "text": "eventschedule",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 420,
+      "text": "Bad Request.Game_entergame postEventScheduler1",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 426,
       "text": "Invalid JSON response format",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 423,
+      "line": 432,
       "text": "Failed to parse JSON response",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 444,
+      "line": 453,
       "text": "Bad Request.Game_entergame postShowOff",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 450,
+      "line": 459,
       "text": "Invalid JSON response format",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 456,
+      "line": 465,
       "text": "Failed to parse JSON response",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 474,
+      "line": 483,
       "text": "boostedcreature",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 478,
+      "line": 487,
       "text": "Bad Request.Game_entergame postShowCreatureBoost1",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 484,
+      "line": 493,
       "text": "Invalid JSON response format",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 490,
+      "line": 499,
       "text": "Failed to parse JSON response",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 535,
+      "line": 544,
       "text": "accountNameTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 541,
+      "line": 550,
       "text": "rememberEmailBox",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 549,
+      "line": 558,
       "text": "accountPasswordTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 556,
+      "line": 565,
       "text": "httpLoginBox",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 569,
+      "line": 578,
       "text": "accountNameTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 575,
+      "line": 584,
       "text": "accountPasswordTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 580,
+      "line": 589,
       "text": "authenticatorTokenTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 598,
+      "line": 607,
       "text": "authenticatorTokenLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 602,
+      "line": 611,
       "text": "authenticatorTokenTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 636,
+      "line": 645,
       "text": "stayLoggedBox",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 731,
+      "line": 740,
       "text": ", k) .. tostring(v) ..",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 798,
-      "text": "accountNameTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 801,
-      "text": "accountPasswordTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 804,
-      "text": "authenticatorTokenTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
       "line": 807,
-      "text": "stayLoggedBox",
+      "text": "accountNameTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
       "line": 810,
-      "text": "serverHostTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 813,
-      "text": "serverPortTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 818,
-      "text": "httpLoginBox",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 832,
-      "text": "client-version",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 884,
-      "text": "serverHostTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 885,
-      "text": "serverPortTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 886,
-      "text": "accountNameTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 887,
       "text": "accountPasswordTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 888,
+      "line": 813,
       "text": "authenticatorTokenTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 915,
-      "text": "serverHostTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 922,
-      "text": "serverPortTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 929,
-      "text": "authenticatorTokenTextEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 935,
-      "text": "authenticatorTokenLabel",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 940,
+      "line": 816,
       "text": "stayLoggedBox",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 953,
-      "text": "serverLabel",
+      "line": 819,
+      "text": "serverHostTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 965,
-      "text": "clientLabel",
+      "line": 822,
+      "text": "serverPortTextEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 971,
+      "line": 827,
       "text": "httpLoginBox",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 977,
+      "line": 841,
+      "text": "client-version",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 849,
+      "text": "blockItemHotkeys",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 902,
+      "text": "serverHostTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 903,
+      "text": "serverPortTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 904,
+      "text": "accountNameTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 905,
+      "text": "accountPasswordTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 906,
+      "text": "authenticatorTokenTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 938,
+      "text": "serverHostTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 945,
+      "text": "serverPortTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 952,
+      "text": "authenticatorTokenTextEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 958,
+      "text": "authenticatorTokenLabel",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 963,
+      "text": "stayLoggedBox",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 976,
+      "text": "serverLabel",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 988,
+      "text": "clientLabel",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 994,
+      "text": "httpLoginBox",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_entergame/entergame.lua",
+      "line": 1000,
       "text": "serverListButton",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 984,
+      "line": 1007,
       "text": "rememberEmailBox",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_entergame/entergame.lua",
-      "line": 1009,
+      "line": 1032,
       "text": "serverInfoLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -1898,92 +1905,99 @@
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 29,
+      "line": 32,
       "text": "LocalesButton",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 30,
+      "line": 33,
       "text": "/images/flags/",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 140,
+      "line": 139,
       "text": "' .. k .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 140,
+      "line": 139,
       "text": "\"] = false,",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 142,
+      "line": 141,
       "text": "' .. k .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 142,
+      "line": 141,
       "text": "' .. trans .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 142,
+      "line": 141,
       "text": ".. trans ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 149,
+      "line": 148,
       "text": "Unable to install locale.",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 164,
+      "line": 163,
       "text": ".. #updatesNamesMissing ..",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 164,
+      "line": 163,
       "text": ".. locale.name ..",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 164,
+      "line": 163,
       "text": "\" .. locale.name .. \"",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 166,
+      "line": 165,
       "text": "' .. name .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 166,
+      "line": 165,
       "text": ".. name ..",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_locales/locales.lua",
+      "line": 200,
+      "text": "/locales/game_i18n_",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
@@ -1996,35 +2010,28 @@
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 202,
-      "text": "/locales/game_i18n_",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/client_locales/locales.lua",
-      "line": 215,
+      "line": 214,
       "text": ") and not file:find(",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 228,
+      "line": 227,
       "text": ".. name ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 322,
+      "line": 321,
       "text": "' .. text .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales.lua",
-      "line": 322,
+      "line": 321,
       "text": "Unable to translate: \"",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -2045,112 +2052,112 @@
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 26,
+      "line": 29,
       "text": "LocalesButton",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 27,
+      "line": 30,
       "text": "/images/flags/",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 76,
+      "line": 75,
       "text": "Using configured locale:",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 128,
+      "line": 127,
       "text": "' .. k .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 130,
+      "line": 129,
       "text": "' .. k .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 130,
+      "line": 129,
       "text": "' .. trans .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 130,
+      "line": 129,
       "text": ".. trans ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 137,
+      "line": 136,
       "text": "Unable to install locale.",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 153,
+      "line": 152,
       "text": ".. locale.name ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 153,
+      "line": 152,
       "text": "is missing",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 155,
+      "line": 154,
       "text": "' .. name .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 155,
+      "line": 154,
       "text": ".. name ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 187,
+      "line": 186,
       "text": "' .. text .. '",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 187,
+      "line": 186,
       "text": "Unable to translate: \"",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 231,
+      "line": 230,
       "text": "' .. text .. '\\",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_locales/locales1.lua",
-      "line": 231,
+      "line": 230,
       "text": "Unable to translate: \\\"",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -8226,210 +8233,210 @@
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 67,
+      "line": 72,
       "text": "/images/topbuttons/button_mute_up",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 69,
+      "line": 74,
       "text": "/images/topbuttons/button_mute_pressed",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 94,
+      "line": 99,
       "text": "ambientLight",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 112,
+      "line": 117,
       "text": "ambientLight",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 113,
+      "line": 118,
       "text": "Ambient light: %s%%",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 157,
+      "line": 162,
       "text": "walkTurnDelay",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 158,
+      "line": 163,
       "text": "Walk delay after turn: %sms",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 165,
+      "line": 170,
       "text": "walkTeleportDelay",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 166,
+      "line": 171,
       "text": "Walk delay after teleport: %sms",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 173,
+      "line": 178,
       "text": "walkStairsDelay",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 174,
+      "line": 179,
       "text": "Walk delay after floor change: %sms",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 181,
+      "line": 186,
       "text": "Hotkey delay: %sms",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 181,
+      "line": 186,
       "text": "hotkeyDelay",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 187,
+      "line": 192,
       "text": "/images/game/crosshair/",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 207,
+      "line": 212,
       "text": "antialiasingMode",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 213,
+      "line": 218,
       "text": "shadowFloorIntensity",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 214,
+      "line": 219,
       "text": "Shadow floor Intensity: %s%%",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 240,
+      "line": 245,
       "text": "floorViewMode",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 243,
+      "line": 248,
       "text": "floorFading",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 249,
+      "line": 254,
       "text": "Floor Fading: %s ms",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 249,
+      "line": 254,
       "text": "floorFading",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 260,
+      "line": 265,
       "text": "asyncTxtLoading",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 285,
+      "line": 290,
       "text": "HUD Scale: %sx",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 297,
+      "line": 302,
       "text": "creatureInformationScale",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 298,
+      "line": 303,
       "text": "Creature Information Scale: %sx",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 310,
+      "line": 315,
       "text": "Message Scale: %sx",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 310,
+      "line": 315,
       "text": "staticTextScale",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 323,
+      "line": 328,
       "text": "animatedTextScale",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 382,
+      "line": 387,
       "text": "distFromCenScrollbar",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_options/data_options.lua",
-      "line": 390,
+      "line": 395,
       "text": "opacityScrollbar",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -9255,35 +9262,42 @@
     },
     {
       "file": "testyy/modules/client_serverlist/serverlist.lua",
-      "line": 62,
+      "line": 63,
+      "text": ".. catLabel ..",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_serverlist/serverlist.lua",
+      "line": 75,
       "text": "Failed to load settings",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_serverlist/serverlist.lua",
-      "line": 64,
+      "line": 77,
       "text": "Server already exists",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_serverlist/serverlist.lua",
-      "line": 65,
+      "line": 78,
       "text": "or port ==",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_serverlist/serverlist.lua",
-      "line": 66,
+      "line": 79,
       "text": "Required fields are missing",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/client_serverlist/serverlist.lua",
-      "line": 70,
+      "line": 83,
       "text": "ServerWidget",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -9929,6 +9943,902 @@
       "file": "testyy/modules/client_topmenu/topmenu.lua",
       "line": 462,
       "text": "game_mainpanel",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 20,
+      "text": ", [0x0411] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 20,
+      "text": ", [0x0412] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 20,
+      "text": ", [0x0413] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 21,
+      "text": ", [0x0415] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 21,
+      "text": ", [0x0416] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 21,
+      "text": ", [0x0417] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 22,
+      "text": ", [0x0419] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 22,
+      "text": ", [0x041A] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 22,
+      "text": ", [0x041B] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 23,
+      "text": ", [0x041D] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 23,
+      "text": ", [0x041E] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 23,
+      "text": ", [0x041F] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 24,
+      "text": ", [0x0421] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 24,
+      "text": ", [0x0422] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 24,
+      "text": ", [0x0423] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 25,
+      "text": ", [0x0425] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 25,
+      "text": ", [0x0426] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 25,
+      "text": ", [0x0427] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 26,
+      "text": ", [0x0429] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 26,
+      "text": ", [0x042B] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 26,
+      "text": ",[0x042A] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 27,
+      "text": ", [0x042D] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 27,
+      "text": ", [0x042E] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 27,
+      "text": ", [0x042F] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 29,
+      "text": ", [0x0431] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 29,
+      "text": ", [0x0432] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 29,
+      "text": ", [0x0433] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 30,
+      "text": ", [0x0435] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 30,
+      "text": ", [0x0436] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 30,
+      "text": ", [0x0437] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 31,
+      "text": ", [0x0439] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 31,
+      "text": ", [0x043A] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 31,
+      "text": ", [0x043B] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 32,
+      "text": ", [0x043D] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 32,
+      "text": ", [0x043E] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 32,
+      "text": ", [0x043F] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 33,
+      "text": ", [0x0441] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 33,
+      "text": ", [0x0442] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 33,
+      "text": ", [0x0443] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 34,
+      "text": ", [0x0445] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 34,
+      "text": ", [0x0446] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 34,
+      "text": ", [0x0447] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 35,
+      "text": ", [0x0449] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 35,
+      "text": ", [0x044B] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 35,
+      "text": ",[0x044A] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 36,
+      "text": ", [0x044D] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 36,
+      "text": ", [0x044E] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 36,
+      "text": ", [0x044F] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 38,
+      "text": ", [0x0491] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 39,
+      "text": ", [0x0454] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 40,
+      "text": ", [0x0456] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 41,
+      "text": ", [0x0457] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 43,
+      "text": ", [0x0451] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 49,
+      "text": ", [0x0392] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 49,
+      "text": ", [0x0393] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 49,
+      "text": ", [0x0394] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 50,
+      "text": ", [0x0396] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 50,
+      "text": ", [0x0397] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 50,
+      "text": ", [0x0398] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 51,
+      "text": ", [0x039A] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 51,
+      "text": ", [0x039B] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 51,
+      "text": ", [0x039C] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 52,
+      "text": ", [0x039E] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 52,
+      "text": ", [0x039F] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 52,
+      "text": ", [0x03A0] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 53,
+      "text": ", [0x03A3] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 53,
+      "text": ", [0x03A4] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 53,
+      "text": ", [0x03A5] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 54,
+      "text": ", [0x03A7] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 54,
+      "text": ", [0x03A8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 54,
+      "text": ", [0x03A9] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 56,
+      "text": ", [0x03B2] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 56,
+      "text": ", [0x03B3] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 56,
+      "text": ", [0x03B4] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 57,
+      "text": ", [0x03B6] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 57,
+      "text": ", [0x03B7] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 57,
+      "text": ", [0x03B8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 58,
+      "text": ", [0x03BA] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 58,
+      "text": ", [0x03BB] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 58,
+      "text": ", [0x03BC] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 59,
+      "text": ", [0x03BE] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 59,
+      "text": ", [0x03BF] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 59,
+      "text": ", [0x03C0] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 60,
+      "text": ", [0x03C2] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 60,
+      "text": ", [0x03C3] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 60,
+      "text": ", [0x03C4] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 61,
+      "text": ", [0x03C6] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 61,
+      "text": ", [0x03C7] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 61,
+      "text": ", [0x03C8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 117,
+      "text": ", [0x30A4] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 117,
+      "text": ", [0x30A6] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 117,
+      "text": ", [0x30A8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 117,
+      "text": ", [0x30AA] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 118,
+      "text": ", [0x30AD] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 118,
+      "text": ", [0x30AF] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 118,
+      "text": ", [0x30B1] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 118,
+      "text": ", [0x30B3] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 119,
+      "text": ", [0x30B7] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 119,
+      "text": ", [0x30B9] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 119,
+      "text": ", [0x30BB] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 119,
+      "text": ", [0x30BD] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 120,
+      "text": ", [0x30C1] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 120,
+      "text": ", [0x30C4] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 120,
+      "text": ", [0x30C6] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 120,
+      "text": ", [0x30C8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 121,
+      "text": ", [0x30CB] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 121,
+      "text": ", [0x30CC] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 121,
+      "text": ", [0x30CD] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 121,
+      "text": ", [0x30CE] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 122,
+      "text": ", [0x30D2] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 122,
+      "text": ", [0x30D5] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 122,
+      "text": ", [0x30D8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 122,
+      "text": ", [0x30DB] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 123,
+      "text": ", [0x30DF] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 123,
+      "text": ", [0x30E0] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 123,
+      "text": ", [0x30E1] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 123,
+      "text": ", [0x30E2] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 124,
+      "text": ", [0x30E6] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 124,
+      "text": ", [0x30E8] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 125,
+      "text": ", [0x30EA] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 125,
+      "text": ", [0x30EB] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 125,
+      "text": ", [0x30EC] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 125,
+      "text": ", [0x30ED] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 126,
+      "text": ", [0x30F2] =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 137,
+      "text": ", optionKey =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 138,
+      "text": ", optionKey =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 139,
+      "text": ", optionKey =",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/client_transliteration/transliteration.lua",
+      "line": 140,
+      "text": ", optionKey =",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
@@ -14344,350 +15254,336 @@
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1663,
+      "line": 1670,
       "text": ".. dataBlock.words ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1692,
+      "line": 1705,
       "text": "showPrivateMessagesOnScreen",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1706,
+      "line": 1719,
       "text": "message in channel id",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1707,
+      "line": 1720,
       "text": "which is unknown, this is a server bug, relogin if you want to see messages in this channel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1785,
+      "line": 1798,
       "text": "channelList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1786,
+      "line": 1799,
       "text": "openPrivateChannelWith",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1791,
+      "line": 1804,
       "text": "You cannot create a private chat channel with yourself.",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1813,
+      "line": 1826,
       "text": "channelswindow",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1814,
+      "line": 1827,
       "text": "channelList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1831,
+      "line": 1844,
       "text": "ChannelListLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1845,
+      "line": 1858,
       "text": "IgnorePlayers",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1852,
+      "line": 1865,
       "text": "WhitelistedPlayers",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1859,
+      "line": 1872,
       "text": "UseIgnoreList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1860,
+      "line": 1873,
       "text": "UseWhiteList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1861,
+      "line": 1874,
       "text": "IgnorePrivateMessages",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1862,
+      "line": 1875,
       "text": "IgnoreYelling",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1879,
+      "line": 1892,
       "text": "UseIgnoreList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1880,
+      "line": 1893,
       "text": "UseWhiteList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1881,
+      "line": 1894,
       "text": "IgnorePrivateMessages",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1882,
+      "line": 1895,
       "text": "IgnoreYelling",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1883,
+      "line": 1896,
       "text": "IgnorePlayers",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1884,
+      "line": 1897,
       "text": "WhitelistedPlayers",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1950,
+      "line": 1963,
       "text": "communicationwindow",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1951,
+      "line": 1964,
       "text": "ignoreList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1957,
+      "line": 1970,
       "text": "checkboxUseIgnoreList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1959,
+      "line": 1972,
       "text": "checkboxUseWhiteList",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1962,
+      "line": 1975,
       "text": "buttonIgnoreRemove",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1976,
+      "line": 1989,
       "text": "buttonWhitelistRemove",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1991,
+      "line": 2004,
       "text": "ignoreNameEdit",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 1992,
+      "line": 2005,
       "text": "buttonIgnoreAdd",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2004,
+      "line": 2017,
       "text": "IgnoreListLabel",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2012,
-      "text": "whitelistNameEdit",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2013,
-      "text": "buttonWhitelistAdd",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2025,
+      "text": "whitelistNameEdit",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2026,
+      "text": "buttonWhitelistAdd",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2038,
       "text": "WhiteListLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2040,
+      "line": 2053,
       "text": "checkboxIgnorePrivateMessages",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2042,
+      "line": 2055,
       "text": "checkboxIgnoreYelling",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2044,
+      "line": 2057,
       "text": "checkboxAllowVIPs",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2047,
+      "line": 2060,
       "text": "buttonSave",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2067,
+      "line": 2080,
       "text": "buttonCancel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2074,
+      "line": 2087,
       "text": "IgnoreListLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2080,
+      "line": 2093,
       "text": "WhiteListLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2094,
+      "line": 2107,
       "text": "Open Rule Violation",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2096,
+      "line": 2109,
       "text": "Open Rule Violation",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2104,
+      "line": 2117,
       "text": "lastChannelsOpen",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2131,
+      "line": 2144,
       "text": "Unknown channel event type (%d).",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2160,
+      "line": 2173,
       "text": "extendedViewDraggable",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2161,
+      "line": 2174,
       "text": "extendedViewHide",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2162,
-      "text": "extendedViewHide",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2166,
-      "text": "extendedViewDraggable",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2167,
+      "line": 2175,
       "text": "extendedViewHide",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -14695,34 +15591,20 @@
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2179,
-      "text": "consolePanel",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2179,
-      "text": "consoleTabBar",
+      "text": "extendedViewDraggable",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2180,
-      "text": "consoleBuffer",
+      "text": "extendedViewHide",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2190,
-      "text": "consolePanel",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2191,
+      "line": 2192,
       "text": "consolePanel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -14730,13 +15612,13 @@
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2192,
-      "text": "consoleContentPanel",
-      "pattern": "otui.literal",
+      "text": "consoleTabBar",
+      "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2200,
+      "line": 2193,
       "text": "consoleBuffer",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -14751,6 +15633,13 @@
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2204,
+      "text": "consolePanel",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2205,
       "text": "consoleContentPanel",
       "pattern": "otui.literal",
       "category": "otclient_modules"
@@ -14758,48 +15647,27 @@
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2213,
-      "text": "consolePanel",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2213,
-      "text": "consoleTabBar",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2214,
       "text": "consoleBuffer",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2218,
-      "text": "cooldownWindow",
-      "pattern": "otui.literal",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2219,
-      "text": "showSpellGroupCooldowns",
-      "pattern": "otui.literal.single",
-      "category": "otclient_modules"
-    },
-    {
-      "file": "testyy/modules/game_console/console.lua",
-      "line": 2224,
+      "line": 2216,
       "text": "consolePanel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2225,
+      "line": 2217,
+      "text": "consoleContentPanel",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2226,
       "text": "consolePanel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -14807,146 +15675,188 @@
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2226,
-      "text": "consoleTextEdit",
+      "text": "consoleTabBar",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2227,
+      "text": "consoleBuffer",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2231,
+      "text": "cooldownWindow",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
       "line": 2232,
+      "text": "showSpellGroupCooldowns",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2237,
+      "text": "consolePanel",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2238,
+      "text": "consolePanel",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2239,
+      "text": "consoleTextEdit",
+      "pattern": "otui.literal",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_console/console.lua",
+      "line": 2245,
       "text": "consoleBuffer",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2233,
+      "line": 2246,
       "text": "/images/ui/3pixel_frame_borderimage",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2234,
+      "line": 2247,
       "text": "/images/ui/background_dark",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2244,
+      "line": 2257,
       "text": "extendedViewHide",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2260,
+      "line": 2273,
       "text": "GameAction",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2260,
+      "line": 2273,
       "text": "MainToggleButton",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2266,
+      "line": 2279,
       "text": "/images/game/mobile/chat",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2273,
+      "line": 2286,
       "text": "/images/game/npcicons/icon_chat",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2283,
+      "line": 2296,
       "text": "/images/game/npcicons/icon_chat",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2380,
+      "line": 2393,
       "text": "consoleBuffer",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2382,
+      "line": 2395,
       "text": "ConsoleLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2383,
+      "line": 2396,
       "text": "consoleLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2409,
+      "line": 2422,
       "text": "/images/game/console/readOnly",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2422,
+      "line": 2435,
       "text": "/images/ui/console_button",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2450,
+      "line": 2463,
       "text": "separator1",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2472,
+      "line": 2485,
       "text": "consoleBuffer",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2477,
+      "line": 2490,
       "text": ".. channelName ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2477,
+      "line": 2490,
       "text": ".. characterName ..",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2479,
+      "line": 2492,
       "text": "Channel saved at %a %b %d %H:%M:%S %Y",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_console/console.lua",
-      "line": 2492,
+      "line": 2505,
       "text": "consoleBuffer",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
@@ -26132,91 +27042,119 @@
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 406,
+      "line": 367,
+      "text": "blockItemHotkeys",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
+      "line": 407,
+      "text": "blockItemHotkeys",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
+      "line": 434,
       "text": "HotkeyAssignWindow",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 409,
+      "line": 437,
       "text": "comboPreview",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 423,
+      "line": 451,
       "text": "HotkeyListLabel",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 492,
+      "line": 520,
       "text": "hotkeyDelay",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 786,
+      "line": 560,
+      "text": "blockItemHotkeys",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
+      "line": 743,
+      "text": "blockItemHotkeys",
+      "pattern": "otui.literal.single",
+      "category": "otclient_modules"
+    },
+    {
+      "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
+      "line": 842,
       "text": "comboPreview",
       "pattern": "otui.literal.single",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 816,
+      "line": 872,
       "text": "/modules/([^/]+)/",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 817,
+      "line": 873,
       "text": "\\\\modules\\\\([^\\\\]+)\\\\",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 818,
+      "line": 874,
       "text": "([^/\\\\]+)%.lua$",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 829,
+      "line": 885,
       "text": ".. callerModule ..",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 864,
+      "line": 920,
       "text": "=== Hotkey Blocking Info ===",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 865,
+      "line": 921,
       "text": "Total blocks:",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 867,
+      "line": 923,
       "text": "Active sources:",
       "pattern": "otui.literal",
       "category": "otclient_modules"
     },
     {
       "file": "testyy/modules/game_hotkeys/hotkeys_manager.lua",
-      "line": 872,
+      "line": 928,
       "text": "No active blocks",
       "pattern": "otui.literal",
       "category": "otclient_modules"

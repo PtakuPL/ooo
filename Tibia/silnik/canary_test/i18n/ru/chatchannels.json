@@ -14,5 +14,13 @@
   "channel.msg_level20_premium": "[EN] You may not speak in this channel unless you have reached level 20 or your account has premium status.",
   "channel.msg_offer_cooldown": "Вы можете размещать только одно объявление раз в две минуты.",
   "channel.tutor.name": "Репетитор",
-  "channel.world_chat.name": "Мировой чат"
+  "channel.world_chat.name": "Мировой чат",
+  "chatchannel.11.name": "[EN] Guild Leaders",
+  "chatchannel.2.name": "[EN] Tutor",
+  "chatchannel.3.name": "[EN] World Chat",
+  "chatchannel.4.name": "[EN] English Chat",
+  "chatchannel.5.name": "[EN] Advertising",
+  "chatchannel.6.name": "[EN] Advertising-Rookgaard",
+  "chatchannel.7.name": "[EN] Help",
+  "chatchannel.8.name": "[EN] Gamemaster"
 }

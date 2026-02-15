@@ -1,23 +1,33 @@
 {
-  "generated_at_utc": "2026-02-14T22:44:59.496044Z",
-  "total_files_checked": 3,
-  "files_with_issues": 1,
-  "files_ok": 2,
-  "quality_pct": 66.7,
+  "generated_at_utc": "2026-02-15T17:09:42.056226Z",
+  "total_files_checked": 5,
+  "files_with_issues": 2,
+  "files_ok": 3,
+  "quality_pct": 60.0,
   "issues_by_rule": {
-    "no_symbols_detected": 1
+    "no_symbols_detected": 2
   },
   "top_issues": [
     {
-      "file": "data-otservbr-global/lib/quests/quest.lua",
+      "file": "data-otservbr-global/lib/tables/teleport_item_destinations.lua",
       "issues": [
         {
           "rule": "no_symbols_detected",
           "severity": "info",
-          "detail": "Code file (.lua) with 11 lines but no symbols detected"
+          "detail": "Code file (.lua) with 16 lines but no symbols detected"
+        }
+      ]
+    },
+    {
+      "file": "data-otservbr-global/lib/tables/town.lua",
+      "issues": [
+        {
+          "rule": "no_symbols_detected",
+          "severity": "info",
+          "detail": "Code file (.lua) with 29 lines but no symbols detected"
         }
       ]
     }
   ],
-  "unresolved_files": 1
+  "unresolved_files": 2
 }

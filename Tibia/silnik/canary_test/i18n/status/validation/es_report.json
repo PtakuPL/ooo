@@ -1,20 +1,21 @@
 {
   "lang": "es",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 45725,
-  "identical_to_en": 2621,
-  "placeholder_keys": 7861,
-  "coverage_pct": 85.3,
-  "issues_total": 43,
+  "total_keys": 54321,
+  "translated": 45751,
+  "identical_to_en": 2619,
+  "placeholder_keys": 8078,
+  "coverage_pct": 84.2,
+  "issues_total": 45,
   "issues_by_type": {
     "V4_artifact": 42,
+    "V2_length_ratio": 2,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 0,
     "HIGH": 42,
-    "MEDIUM": 1,
+    "MEDIUM": 3,
     "LOW": 0
   },
   "score": 99.9,
@@ -142,11 +143,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 509,
+    "issues_total": 511,
     "consistency": 68,
     "pl_reference": 400,
-    "length_ratio": 41,
-    "auto_fix_applied": 2
+    "length_ratio": 43,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:22.489125Z"
+  "validated_at": "2026-02-15T22:46:14.258588Z"
 }

@@ -256,3 +256,13 @@
 {"timestamp": "2026-02-15T11:07:43.132841Z", "cycle": 112, "total_needs": 5308, "reason": "pre_migration_skip"}
 {"timestamp": "2026-02-15T11:18:40.867293Z", "cycle": 2, "total_needs": 5308, "reason": "pre_migration_skip"}
 {"timestamp": "2026-02-15T11:18:53.446726Z", "cycle": 4, "total_needs": 5308, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T16:38:28.768710Z", "cycle": 43, "total_needs": 5308, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T17:11:25.843768Z", "cycle": 10, "total_needs": 5309, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:06:33.907249Z", "cycle": 38, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:33:57.115800Z", "cycle": 6, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:34:01.956154Z", "cycle": 7, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:38:38.421535Z", "cycle": 21, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:38:43.322835Z", "cycle": 22, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:38:47.620968Z", "cycle": 23, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:41:56.990935Z", "cycle": 32, "total_needs": 5314, "reason": "pre_migration_skip"}
+{"timestamp": "2026-02-15T19:42:01.955412Z", "cycle": 33, "total_needs": 5314, "reason": "pre_migration_skip"}

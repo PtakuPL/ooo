@@ -1,11 +1,11 @@
 {
   "lang": "sk",
   "script_group": "latin",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 3671,
   "identical_to_en": 2800,
   "placeholder_keys": 49915,
-  "coverage_pct": 6.9,
+  "coverage_pct": 6.8,
   "issues_total": 2,
   "issues_by_type": {
     "V4_artifact": 1,
@@ -40,5 +40,5 @@
     "length_ratio": 7,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:55.331436Z"
+  "validated_at": "2026-02-15T22:46:44.968452Z"
 }

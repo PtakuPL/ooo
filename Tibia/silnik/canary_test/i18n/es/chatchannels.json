@@ -14,5 +14,13 @@
   "channel.msg_level20_premium": "No puedes hablar en este canal a menos que hayas alcanzado el nivel 20 o que tu cuenta tenga estado premium.",
   "channel.msg_offer_cooldown": "Sólo puedes realizar una oferta en dos minutos.",
   "channel.tutor.name": "Tutor",
-  "channel.world_chat.name": "Chat mundial"
+  "channel.world_chat.name": "Chat mundial",
+  "chatchannel.11.name": "[EN] Guild Leaders",
+  "chatchannel.2.name": "[EN] Tutor",
+  "chatchannel.3.name": "[EN] World Chat",
+  "chatchannel.4.name": "[EN] English Chat",
+  "chatchannel.5.name": "[EN] Advertising",
+  "chatchannel.6.name": "[EN] Advertising-Rookgaard",
+  "chatchannel.7.name": "[EN] Help",
+  "chatchannel.8.name": "[EN] Gamemaster"
 }

@@ -213,99 +213,100 @@ otclient_modules,testyy/modules/client_entergame/entergame.lua,214,otui.literal.
 otclient_modules,testyy/modules/client_entergame/entergame.lua,221,otui.literal.single,clientComboBox
 otclient_modules,testyy/modules/client_entergame/entergame.lua,223,otui.literal.single,Warning: client_entergame: clientComboBox not found in entergame UI; using configured client-version without UI selector.
 otclient_modules,testyy/modules/client_entergame/entergame.lua,235,otui.literal.single,"Warning: %s recognized as an installed client, but not supported."
-otclient_modules,testyy/modules/client_entergame/entergame.lua,279,otui.literal,client_bottommenu
-otclient_modules,testyy/modules/client_entergame/entergame.lua,286,otui.literal,client_bottommenu
-otclient_modules,testyy/modules/client_entergame/entergame.lua,309,otui.literal,client_bottommenu
-otclient_modules,testyy/modules/client_entergame/entergame.lua,319,otui.literal,Change Character
-otclient_modules,testyy/modules/client_entergame/entergame.lua,363,otui.literal,[Webscraping - %s] %s
-otclient_modules,testyy/modules/client_entergame/entergame.lua,372,otui.literal,Bad Request. Game_entergame postCacheInfo1
-otclient_modules,testyy/modules/client_entergame/entergame.lua,378,otui.literal,Invalid JSON response format
-otclient_modules,testyy/modules/client_entergame/entergame.lua,384,otui.literal,Failed to parse JSON response
-otclient_modules,testyy/modules/client_entergame/entergame.lua,408,otui.literal.single,eventschedule
-otclient_modules,testyy/modules/client_entergame/entergame.lua,411,otui.literal,Bad Request.Game_entergame postEventScheduler1
-otclient_modules,testyy/modules/client_entergame/entergame.lua,417,otui.literal,Invalid JSON response format
-otclient_modules,testyy/modules/client_entergame/entergame.lua,423,otui.literal,Failed to parse JSON response
-otclient_modules,testyy/modules/client_entergame/entergame.lua,444,otui.literal,Bad Request.Game_entergame postShowOff
-otclient_modules,testyy/modules/client_entergame/entergame.lua,450,otui.literal,Invalid JSON response format
-otclient_modules,testyy/modules/client_entergame/entergame.lua,456,otui.literal,Failed to parse JSON response
-otclient_modules,testyy/modules/client_entergame/entergame.lua,474,otui.literal.single,boostedcreature
-otclient_modules,testyy/modules/client_entergame/entergame.lua,478,otui.literal,Bad Request.Game_entergame postShowCreatureBoost1
-otclient_modules,testyy/modules/client_entergame/entergame.lua,484,otui.literal,Invalid JSON response format
-otclient_modules,testyy/modules/client_entergame/entergame.lua,490,otui.literal,Failed to parse JSON response
-otclient_modules,testyy/modules/client_entergame/entergame.lua,535,otui.literal.single,accountNameTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,541,otui.literal.single,rememberEmailBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,549,otui.literal.single,accountPasswordTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,556,otui.literal.single,httpLoginBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,569,otui.literal.single,accountNameTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,575,otui.literal.single,accountPasswordTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,580,otui.literal.single,authenticatorTokenTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,598,otui.literal.single,authenticatorTokenLabel
-otclient_modules,testyy/modules/client_entergame/entergame.lua,602,otui.literal.single,authenticatorTokenTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,636,otui.literal.single,stayLoggedBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,731,otui.literal,", k) .. tostring(v) .."
-otclient_modules,testyy/modules/client_entergame/entergame.lua,798,otui.literal.single,accountNameTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,801,otui.literal.single,accountPasswordTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,804,otui.literal.single,authenticatorTokenTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,807,otui.literal.single,stayLoggedBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,810,otui.literal.single,serverHostTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,813,otui.literal.single,serverPortTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,818,otui.literal.single,httpLoginBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,832,otui.literal.single,client-version
-otclient_modules,testyy/modules/client_entergame/entergame.lua,884,otui.literal.single,serverHostTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,885,otui.literal.single,serverPortTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,886,otui.literal.single,accountNameTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,887,otui.literal.single,accountPasswordTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,888,otui.literal.single,authenticatorTokenTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,915,otui.literal.single,serverHostTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,922,otui.literal.single,serverPortTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,929,otui.literal.single,authenticatorTokenTextEdit
-otclient_modules,testyy/modules/client_entergame/entergame.lua,935,otui.literal.single,authenticatorTokenLabel
-otclient_modules,testyy/modules/client_entergame/entergame.lua,940,otui.literal.single,stayLoggedBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,953,otui.literal.single,serverLabel
-otclient_modules,testyy/modules/client_entergame/entergame.lua,965,otui.literal.single,clientLabel
-otclient_modules,testyy/modules/client_entergame/entergame.lua,971,otui.literal.single,httpLoginBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,977,otui.literal.single,serverListButton
-otclient_modules,testyy/modules/client_entergame/entergame.lua,984,otui.literal.single,rememberEmailBox
-otclient_modules,testyy/modules/client_entergame/entergame.lua,1009,otui.literal.single,serverInfoLabel
+otclient_modules,testyy/modules/client_entergame/entergame.lua,288,otui.literal,client_bottommenu
+otclient_modules,testyy/modules/client_entergame/entergame.lua,295,otui.literal,client_bottommenu
+otclient_modules,testyy/modules/client_entergame/entergame.lua,318,otui.literal,client_bottommenu
+otclient_modules,testyy/modules/client_entergame/entergame.lua,328,otui.literal,Change Character
+otclient_modules,testyy/modules/client_entergame/entergame.lua,372,otui.literal,[Webscraping - %s] %s
+otclient_modules,testyy/modules/client_entergame/entergame.lua,381,otui.literal,Bad Request. Game_entergame postCacheInfo1
+otclient_modules,testyy/modules/client_entergame/entergame.lua,387,otui.literal,Invalid JSON response format
+otclient_modules,testyy/modules/client_entergame/entergame.lua,393,otui.literal,Failed to parse JSON response
+otclient_modules,testyy/modules/client_entergame/entergame.lua,417,otui.literal.single,eventschedule
+otclient_modules,testyy/modules/client_entergame/entergame.lua,420,otui.literal,Bad Request.Game_entergame postEventScheduler1
+otclient_modules,testyy/modules/client_entergame/entergame.lua,426,otui.literal,Invalid JSON response format
+otclient_modules,testyy/modules/client_entergame/entergame.lua,432,otui.literal,Failed to parse JSON response
+otclient_modules,testyy/modules/client_entergame/entergame.lua,453,otui.literal,Bad Request.Game_entergame postShowOff
+otclient_modules,testyy/modules/client_entergame/entergame.lua,459,otui.literal,Invalid JSON response format
+otclient_modules,testyy/modules/client_entergame/entergame.lua,465,otui.literal,Failed to parse JSON response
+otclient_modules,testyy/modules/client_entergame/entergame.lua,483,otui.literal.single,boostedcreature
+otclient_modules,testyy/modules/client_entergame/entergame.lua,487,otui.literal,Bad Request.Game_entergame postShowCreatureBoost1
+otclient_modules,testyy/modules/client_entergame/entergame.lua,493,otui.literal,Invalid JSON response format
+otclient_modules,testyy/modules/client_entergame/entergame.lua,499,otui.literal,Failed to parse JSON response
+otclient_modules,testyy/modules/client_entergame/entergame.lua,544,otui.literal.single,accountNameTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,550,otui.literal.single,rememberEmailBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,558,otui.literal.single,accountPasswordTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,565,otui.literal.single,httpLoginBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,578,otui.literal.single,accountNameTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,584,otui.literal.single,accountPasswordTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,589,otui.literal.single,authenticatorTokenTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,607,otui.literal.single,authenticatorTokenLabel
+otclient_modules,testyy/modules/client_entergame/entergame.lua,611,otui.literal.single,authenticatorTokenTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,645,otui.literal.single,stayLoggedBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,740,otui.literal,", k) .. tostring(v) .."
+otclient_modules,testyy/modules/client_entergame/entergame.lua,807,otui.literal.single,accountNameTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,810,otui.literal.single,accountPasswordTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,813,otui.literal.single,authenticatorTokenTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,816,otui.literal.single,stayLoggedBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,819,otui.literal.single,serverHostTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,822,otui.literal.single,serverPortTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,827,otui.literal.single,httpLoginBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,841,otui.literal.single,client-version
+otclient_modules,testyy/modules/client_entergame/entergame.lua,849,otui.literal.single,blockItemHotkeys
+otclient_modules,testyy/modules/client_entergame/entergame.lua,902,otui.literal.single,serverHostTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,903,otui.literal.single,serverPortTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,904,otui.literal.single,accountNameTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,905,otui.literal.single,accountPasswordTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,906,otui.literal.single,authenticatorTokenTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,938,otui.literal.single,serverHostTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,945,otui.literal.single,serverPortTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,952,otui.literal.single,authenticatorTokenTextEdit
+otclient_modules,testyy/modules/client_entergame/entergame.lua,958,otui.literal.single,authenticatorTokenLabel
+otclient_modules,testyy/modules/client_entergame/entergame.lua,963,otui.literal.single,stayLoggedBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,976,otui.literal.single,serverLabel
+otclient_modules,testyy/modules/client_entergame/entergame.lua,988,otui.literal.single,clientLabel
+otclient_modules,testyy/modules/client_entergame/entergame.lua,994,otui.literal.single,httpLoginBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,1000,otui.literal.single,serverListButton
+otclient_modules,testyy/modules/client_entergame/entergame.lua,1007,otui.literal.single,rememberEmailBox
+otclient_modules,testyy/modules/client_entergame/entergame.lua,1032,otui.literal.single,serverInfoLabel
 otclient_modules,testyy/modules/client_locales/locales.lua,1,otui.literal.single,neededtranslations
 otclient_modules,testyy/modules/client_locales/locales.lua,22,otui.literal.single,localesPanel
-otclient_modules,testyy/modules/client_locales/locales.lua,29,otui.literal.single,LocalesButton
-otclient_modules,testyy/modules/client_locales/locales.lua,30,otui.literal.single,/images/flags/
-otclient_modules,testyy/modules/client_locales/locales.lua,140,otui.literal,' .. k .. '
-otclient_modules,testyy/modules/client_locales/locales.lua,140,otui.literal.single,"""] = false,"
-otclient_modules,testyy/modules/client_locales/locales.lua,142,otui.literal,' .. k .. '
-otclient_modules,testyy/modules/client_locales/locales.lua,142,otui.literal,' .. trans .. '
-otclient_modules,testyy/modules/client_locales/locales.lua,142,otui.literal.single,.. trans ..
-otclient_modules,testyy/modules/client_locales/locales.lua,149,otui.literal.single,Unable to install locale.
-otclient_modules,testyy/modules/client_locales/locales.lua,164,otui.literal,.. #updatesNamesMissing ..
-otclient_modules,testyy/modules/client_locales/locales.lua,164,otui.literal,.. locale.name ..
-otclient_modules,testyy/modules/client_locales/locales.lua,164,otui.literal.single,""" .. locale.name .. """
-otclient_modules,testyy/modules/client_locales/locales.lua,166,otui.literal,' .. name .. '
-otclient_modules,testyy/modules/client_locales/locales.lua,166,otui.literal.single,.. name ..
+otclient_modules,testyy/modules/client_locales/locales.lua,32,otui.literal.single,LocalesButton
+otclient_modules,testyy/modules/client_locales/locales.lua,33,otui.literal.single,/images/flags/
+otclient_modules,testyy/modules/client_locales/locales.lua,139,otui.literal,' .. k .. '
+otclient_modules,testyy/modules/client_locales/locales.lua,139,otui.literal.single,"""] = false,"
+otclient_modules,testyy/modules/client_locales/locales.lua,141,otui.literal,' .. k .. '
+otclient_modules,testyy/modules/client_locales/locales.lua,141,otui.literal,' .. trans .. '
+otclient_modules,testyy/modules/client_locales/locales.lua,141,otui.literal.single,.. trans ..
+otclient_modules,testyy/modules/client_locales/locales.lua,148,otui.literal.single,Unable to install locale.
+otclient_modules,testyy/modules/client_locales/locales.lua,163,otui.literal,.. #updatesNamesMissing ..
+otclient_modules,testyy/modules/client_locales/locales.lua,163,otui.literal,.. locale.name ..
+otclient_modules,testyy/modules/client_locales/locales.lua,163,otui.literal.single,""" .. locale.name .. """
+otclient_modules,testyy/modules/client_locales/locales.lua,165,otui.literal,' .. name .. '
+otclient_modules,testyy/modules/client_locales/locales.lua,165,otui.literal.single,.. name ..
+otclient_modules,testyy/modules/client_locales/locales.lua,200,otui.literal.single,/locales/game_i18n_
 otclient_modules,testyy/modules/client_locales/locales.lua,201,otui.literal.single,/locales/game_i18n_
-otclient_modules,testyy/modules/client_locales/locales.lua,202,otui.literal.single,/locales/game_i18n_
-otclient_modules,testyy/modules/client_locales/locales.lua,215,otui.literal,) and not file:find(
-otclient_modules,testyy/modules/client_locales/locales.lua,228,otui.literal.single,.. name ..
-otclient_modules,testyy/modules/client_locales/locales.lua,322,otui.literal,' .. text .. '
-otclient_modules,testyy/modules/client_locales/locales.lua,322,otui.literal.single,"Unable to translate: """
+otclient_modules,testyy/modules/client_locales/locales.lua,214,otui.literal,) and not file:find(
+otclient_modules,testyy/modules/client_locales/locales.lua,227,otui.literal.single,.. name ..
+otclient_modules,testyy/modules/client_locales/locales.lua,321,otui.literal,' .. text .. '
+otclient_modules,testyy/modules/client_locales/locales.lua,321,otui.literal.single,"Unable to translate: """
 otclient_modules,testyy/modules/client_locales/locales1.lua,1,otui.literal.single,neededtranslations
 otclient_modules,testyy/modules/client_locales/locales1.lua,19,otui.literal.single,localesPanel
-otclient_modules,testyy/modules/client_locales/locales1.lua,26,otui.literal.single,LocalesButton
-otclient_modules,testyy/modules/client_locales/locales1.lua,27,otui.literal.single,/images/flags/
-otclient_modules,testyy/modules/client_locales/locales1.lua,76,otui.literal.single,Using configured locale:
-otclient_modules,testyy/modules/client_locales/locales1.lua,128,otui.literal,' .. k .. '
-otclient_modules,testyy/modules/client_locales/locales1.lua,130,otui.literal,' .. k .. '
-otclient_modules,testyy/modules/client_locales/locales1.lua,130,otui.literal,' .. trans .. '
-otclient_modules,testyy/modules/client_locales/locales1.lua,130,otui.literal.single,.. trans ..
-otclient_modules,testyy/modules/client_locales/locales1.lua,137,otui.literal.single,Unable to install locale.
-otclient_modules,testyy/modules/client_locales/locales1.lua,153,otui.literal.single,.. locale.name ..
-otclient_modules,testyy/modules/client_locales/locales1.lua,153,otui.literal.single,is missing
-otclient_modules,testyy/modules/client_locales/locales1.lua,155,otui.literal,' .. name .. '
-otclient_modules,testyy/modules/client_locales/locales1.lua,155,otui.literal.single,.. name ..
-otclient_modules,testyy/modules/client_locales/locales1.lua,187,otui.literal,' .. text .. '
-otclient_modules,testyy/modules/client_locales/locales1.lua,187,otui.literal.single,"Unable to translate: """
-otclient_modules,testyy/modules/client_locales/locales1.lua,231,otui.literal,' .. text .. '\
-otclient_modules,testyy/modules/client_locales/locales1.lua,231,otui.literal.single,"Unable to translate: \"""
+otclient_modules,testyy/modules/client_locales/locales1.lua,29,otui.literal.single,LocalesButton
+otclient_modules,testyy/modules/client_locales/locales1.lua,30,otui.literal.single,/images/flags/
+otclient_modules,testyy/modules/client_locales/locales1.lua,75,otui.literal.single,Using configured locale:
+otclient_modules,testyy/modules/client_locales/locales1.lua,127,otui.literal,' .. k .. '
+otclient_modules,testyy/modules/client_locales/locales1.lua,129,otui.literal,' .. k .. '
+otclient_modules,testyy/modules/client_locales/locales1.lua,129,otui.literal,' .. trans .. '
+otclient_modules,testyy/modules/client_locales/locales1.lua,129,otui.literal.single,.. trans ..
+otclient_modules,testyy/modules/client_locales/locales1.lua,136,otui.literal.single,Unable to install locale.
+otclient_modules,testyy/modules/client_locales/locales1.lua,152,otui.literal.single,.. locale.name ..
+otclient_modules,testyy/modules/client_locales/locales1.lua,152,otui.literal.single,is missing
+otclient_modules,testyy/modules/client_locales/locales1.lua,154,otui.literal,' .. name .. '
+otclient_modules,testyy/modules/client_locales/locales1.lua,154,otui.literal.single,.. name ..
+otclient_modules,testyy/modules/client_locales/locales1.lua,186,otui.literal,' .. text .. '
+otclient_modules,testyy/modules/client_locales/locales1.lua,186,otui.literal.single,"Unable to translate: """
+otclient_modules,testyy/modules/client_locales/locales1.lua,230,otui.literal,' .. text .. '\
+otclient_modules,testyy/modules/client_locales/locales1.lua,230,otui.literal.single,"Unable to translate: \"""
 otclient_modules,testyy/modules/client_locales/neededtranslations.lua,5,otui.literal.single,1a) Offensive Name
 otclient_modules,testyy/modules/client_locales/neededtranslations.lua,5,otui.literal.single,1b) Invalid Name Format
 otclient_modules,testyy/modules/client_locales/neededtranslations.lua,5,otui.literal.single,1c) Unsuitable Name
@@ -1173,36 +1174,36 @@ otclient_modules,testyy/modules/client_locales/neededtranslations.lua,887,otui.l
 otclient_modules,testyy/modules/client_locales/neededtranslations.lua,888,otui.literal.single,", written by %s"
 otclient_modules,testyy/modules/client_locales/neededtranslations.lua,888,otui.literal.single,", written on %s."
 otclient_modules,testyy/modules/client_locales/neededtranslations.lua,889,otui.literal.single,You have %s percent to go
-otclient_modules,testyy/modules/client_options/data_options.lua,67,otui.literal.single,/images/topbuttons/button_mute_up
-otclient_modules,testyy/modules/client_options/data_options.lua,69,otui.literal.single,/images/topbuttons/button_mute_pressed
-otclient_modules,testyy/modules/client_options/data_options.lua,94,otui.literal.single,ambientLight
-otclient_modules,testyy/modules/client_options/data_options.lua,112,otui.literal.single,ambientLight
-otclient_modules,testyy/modules/client_options/data_options.lua,113,otui.literal.single,Ambient light: %s%%
-otclient_modules,testyy/modules/client_options/data_options.lua,157,otui.literal.single,walkTurnDelay
-otclient_modules,testyy/modules/client_options/data_options.lua,158,otui.literal.single,Walk delay after turn: %sms
-otclient_modules,testyy/modules/client_options/data_options.lua,165,otui.literal.single,walkTeleportDelay
-otclient_modules,testyy/modules/client_options/data_options.lua,166,otui.literal.single,Walk delay after teleport: %sms
-otclient_modules,testyy/modules/client_options/data_options.lua,173,otui.literal.single,walkStairsDelay
-otclient_modules,testyy/modules/client_options/data_options.lua,174,otui.literal.single,Walk delay after floor change: %sms
-otclient_modules,testyy/modules/client_options/data_options.lua,181,otui.literal.single,Hotkey delay: %sms
-otclient_modules,testyy/modules/client_options/data_options.lua,181,otui.literal.single,hotkeyDelay
-otclient_modules,testyy/modules/client_options/data_options.lua,187,otui.literal.single,/images/game/crosshair/
-otclient_modules,testyy/modules/client_options/data_options.lua,207,otui.literal.single,antialiasingMode
-otclient_modules,testyy/modules/client_options/data_options.lua,213,otui.literal.single,shadowFloorIntensity
-otclient_modules,testyy/modules/client_options/data_options.lua,214,otui.literal.single,Shadow floor Intensity: %s%%
-otclient_modules,testyy/modules/client_options/data_options.lua,240,otui.literal.single,floorViewMode
-otclient_modules,testyy/modules/client_options/data_options.lua,243,otui.literal.single,floorFading
-otclient_modules,testyy/modules/client_options/data_options.lua,249,otui.literal.single,Floor Fading: %s ms
-otclient_modules,testyy/modules/client_options/data_options.lua,249,otui.literal.single,floorFading
-otclient_modules,testyy/modules/client_options/data_options.lua,260,otui.literal.single,asyncTxtLoading
-otclient_modules,testyy/modules/client_options/data_options.lua,285,otui.literal.single,HUD Scale: %sx
-otclient_modules,testyy/modules/client_options/data_options.lua,297,otui.literal.single,creatureInformationScale
-otclient_modules,testyy/modules/client_options/data_options.lua,298,otui.literal.single,Creature Information Scale: %sx
-otclient_modules,testyy/modules/client_options/data_options.lua,310,otui.literal.single,Message Scale: %sx
-otclient_modules,testyy/modules/client_options/data_options.lua,310,otui.literal.single,staticTextScale
-otclient_modules,testyy/modules/client_options/data_options.lua,323,otui.literal.single,animatedTextScale
-otclient_modules,testyy/modules/client_options/data_options.lua,382,otui.literal.single,distFromCenScrollbar
-otclient_modules,testyy/modules/client_options/data_options.lua,390,otui.literal.single,opacityScrollbar
+otclient_modules,testyy/modules/client_options/data_options.lua,72,otui.literal.single,/images/topbuttons/button_mute_up
+otclient_modules,testyy/modules/client_options/data_options.lua,74,otui.literal.single,/images/topbuttons/button_mute_pressed
+otclient_modules,testyy/modules/client_options/data_options.lua,99,otui.literal.single,ambientLight
+otclient_modules,testyy/modules/client_options/data_options.lua,117,otui.literal.single,ambientLight
+otclient_modules,testyy/modules/client_options/data_options.lua,118,otui.literal.single,Ambient light: %s%%
+otclient_modules,testyy/modules/client_options/data_options.lua,162,otui.literal.single,walkTurnDelay
+otclient_modules,testyy/modules/client_options/data_options.lua,163,otui.literal.single,Walk delay after turn: %sms
+otclient_modules,testyy/modules/client_options/data_options.lua,170,otui.literal.single,walkTeleportDelay
+otclient_modules,testyy/modules/client_options/data_options.lua,171,otui.literal.single,Walk delay after teleport: %sms
+otclient_modules,testyy/modules/client_options/data_options.lua,178,otui.literal.single,walkStairsDelay
+otclient_modules,testyy/modules/client_options/data_options.lua,179,otui.literal.single,Walk delay after floor change: %sms
+otclient_modules,testyy/modules/client_options/data_options.lua,186,otui.literal.single,Hotkey delay: %sms
+otclient_modules,testyy/modules/client_options/data_options.lua,186,otui.literal.single,hotkeyDelay
+otclient_modules,testyy/modules/client_options/data_options.lua,192,otui.literal.single,/images/game/crosshair/
+otclient_modules,testyy/modules/client_options/data_options.lua,212,otui.literal.single,antialiasingMode
+otclient_modules,testyy/modules/client_options/data_options.lua,218,otui.literal.single,shadowFloorIntensity
+otclient_modules,testyy/modules/client_options/data_options.lua,219,otui.literal.single,Shadow floor Intensity: %s%%
+otclient_modules,testyy/modules/client_options/data_options.lua,245,otui.literal.single,floorViewMode
+otclient_modules,testyy/modules/client_options/data_options.lua,248,otui.literal.single,floorFading
+otclient_modules,testyy/modules/client_options/data_options.lua,254,otui.literal.single,Floor Fading: %s ms
+otclient_modules,testyy/modules/client_options/data_options.lua,254,otui.literal.single,floorFading
+otclient_modules,testyy/modules/client_options/data_options.lua,265,otui.literal.single,asyncTxtLoading
+otclient_modules,testyy/modules/client_options/data_options.lua,290,otui.literal.single,HUD Scale: %sx
+otclient_modules,testyy/modules/client_options/data_options.lua,302,otui.literal.single,creatureInformationScale
+otclient_modules,testyy/modules/client_options/data_options.lua,303,otui.literal.single,Creature Information Scale: %sx
+otclient_modules,testyy/modules/client_options/data_options.lua,315,otui.literal.single,Message Scale: %sx
+otclient_modules,testyy/modules/client_options/data_options.lua,315,otui.literal.single,staticTextScale
+otclient_modules,testyy/modules/client_options/data_options.lua,328,otui.literal.single,animatedTextScale
+otclient_modules,testyy/modules/client_options/data_options.lua,387,otui.literal.single,distFromCenScrollbar
+otclient_modules,testyy/modules/client_options/data_options.lua,395,otui.literal.single,opacityScrollbar
 otclient_modules,testyy/modules/client_options/keybins.lua,107,otui.literal.single,currentPreset
 otclient_modules,testyy/modules/client_options/keybins.lua,108,otui.literal.single,currentPreset
 otclient_modules,testyy/modules/client_options/keybins.lua,312,otui.literal.single,resetKeybinds
@@ -1320,11 +1321,12 @@ otclient_modules,testyy/modules/client_serverlist/serverlist.lua,11,otui.literal
 otclient_modules,testyy/modules/client_serverlist/serverlist.lua,12,otui.literal.single,serverList
 otclient_modules,testyy/modules/client_serverlist/serverlist.lua,14,otui.literal.single,ServerList
 otclient_modules,testyy/modules/client_serverlist/serverlist.lua,33,otui.literal.single,ServerList
-otclient_modules,testyy/modules/client_serverlist/serverlist.lua,62,otui.literal.single,Failed to load settings
-otclient_modules,testyy/modules/client_serverlist/serverlist.lua,64,otui.literal.single,Server already exists
-otclient_modules,testyy/modules/client_serverlist/serverlist.lua,65,otui.literal.single,or port ==
-otclient_modules,testyy/modules/client_serverlist/serverlist.lua,66,otui.literal.single,Required fields are missing
-otclient_modules,testyy/modules/client_serverlist/serverlist.lua,70,otui.literal.single,ServerWidget
+otclient_modules,testyy/modules/client_serverlist/serverlist.lua,63,otui.literal,.. catLabel ..
+otclient_modules,testyy/modules/client_serverlist/serverlist.lua,75,otui.literal.single,Failed to load settings
+otclient_modules,testyy/modules/client_serverlist/serverlist.lua,77,otui.literal.single,Server already exists
+otclient_modules,testyy/modules/client_serverlist/serverlist.lua,78,otui.literal.single,or port ==
+otclient_modules,testyy/modules/client_serverlist/serverlist.lua,79,otui.literal.single,Required fields are missing
+otclient_modules,testyy/modules/client_serverlist/serverlist.lua,83,otui.literal.single,ServerWidget
 otclient_modules,testyy/modules/client_serverlist/serverlist.otui,64,otui.literal.single,", function() self:getChildById("
 otclient_modules,testyy/modules/client_serverlist/serverlist.otui,65,otui.literal.single,", function() self:getChildById("
 otclient_modules,testyy/modules/client_styles/styles.lua,13,otui.literal.single,/cursors/cursors
@@ -1417,6 +1419,134 @@ otclient_modules,testyy/modules/client_topmenu/topmenu.lua,426,otui.literal,game
 otclient_modules,testyy/modules/client_topmenu/topmenu.lua,438,otui.literal,game_mainpanel
 otclient_modules,testyy/modules/client_topmenu/topmenu.lua,450,otui.literal,game_mainpanel
 otclient_modules,testyy/modules/client_topmenu/topmenu.lua,462,otui.literal,game_mainpanel
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,20,otui.literal,", [0x0411] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,20,otui.literal,", [0x0412] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,20,otui.literal,", [0x0413] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,21,otui.literal,", [0x0415] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,21,otui.literal,", [0x0416] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,21,otui.literal,", [0x0417] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,22,otui.literal,", [0x0419] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,22,otui.literal,", [0x041A] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,22,otui.literal,", [0x041B] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,23,otui.literal,", [0x041D] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,23,otui.literal,", [0x041E] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,23,otui.literal,", [0x041F] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,24,otui.literal,", [0x0421] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,24,otui.literal,", [0x0422] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,24,otui.literal,", [0x0423] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,25,otui.literal,", [0x0425] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,25,otui.literal,", [0x0426] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,25,otui.literal,", [0x0427] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,26,otui.literal,", [0x0429] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,26,otui.literal,", [0x042B] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,26,otui.literal,",[0x042A] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,27,otui.literal,", [0x042D] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,27,otui.literal,", [0x042E] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,27,otui.literal,", [0x042F] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,29,otui.literal,", [0x0431] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,29,otui.literal,", [0x0432] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,29,otui.literal,", [0x0433] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,30,otui.literal,", [0x0435] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,30,otui.literal,", [0x0436] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,30,otui.literal,", [0x0437] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,31,otui.literal,", [0x0439] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,31,otui.literal,", [0x043A] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,31,otui.literal,", [0x043B] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,32,otui.literal,", [0x043D] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,32,otui.literal,", [0x043E] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,32,otui.literal,", [0x043F] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,33,otui.literal,", [0x0441] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,33,otui.literal,", [0x0442] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,33,otui.literal,", [0x0443] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,34,otui.literal,", [0x0445] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,34,otui.literal,", [0x0446] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,34,otui.literal,", [0x0447] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,35,otui.literal,", [0x0449] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,35,otui.literal,", [0x044B] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,35,otui.literal,",[0x044A] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,36,otui.literal,", [0x044D] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,36,otui.literal,", [0x044E] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,36,otui.literal,", [0x044F] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,38,otui.literal,", [0x0491] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,39,otui.literal,", [0x0454] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,40,otui.literal,", [0x0456] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,41,otui.literal,", [0x0457] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,43,otui.literal,", [0x0451] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,49,otui.literal,", [0x0392] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,49,otui.literal,", [0x0393] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,49,otui.literal,", [0x0394] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,50,otui.literal,", [0x0396] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,50,otui.literal,", [0x0397] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,50,otui.literal,", [0x0398] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,51,otui.literal,", [0x039A] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,51,otui.literal,", [0x039B] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,51,otui.literal,", [0x039C] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,52,otui.literal,", [0x039E] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,52,otui.literal,", [0x039F] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,52,otui.literal,", [0x03A0] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,53,otui.literal,", [0x03A3] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,53,otui.literal,", [0x03A4] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,53,otui.literal,", [0x03A5] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,54,otui.literal,", [0x03A7] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,54,otui.literal,", [0x03A8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,54,otui.literal,", [0x03A9] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,56,otui.literal,", [0x03B2] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,56,otui.literal,", [0x03B3] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,56,otui.literal,", [0x03B4] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,57,otui.literal,", [0x03B6] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,57,otui.literal,", [0x03B7] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,57,otui.literal,", [0x03B8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,58,otui.literal,", [0x03BA] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,58,otui.literal,", [0x03BB] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,58,otui.literal,", [0x03BC] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,59,otui.literal,", [0x03BE] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,59,otui.literal,", [0x03BF] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,59,otui.literal,", [0x03C0] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,60,otui.literal,", [0x03C2] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,60,otui.literal,", [0x03C3] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,60,otui.literal,", [0x03C4] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,61,otui.literal,", [0x03C6] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,61,otui.literal,", [0x03C7] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,61,otui.literal,", [0x03C8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,117,otui.literal,", [0x30A4] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,117,otui.literal,", [0x30A6] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,117,otui.literal,", [0x30A8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,117,otui.literal,", [0x30AA] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,118,otui.literal,", [0x30AD] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,118,otui.literal,", [0x30AF] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,118,otui.literal,", [0x30B1] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,118,otui.literal,", [0x30B3] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,119,otui.literal,", [0x30B7] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,119,otui.literal,", [0x30B9] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,119,otui.literal,", [0x30BB] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,119,otui.literal,", [0x30BD] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,120,otui.literal,", [0x30C1] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,120,otui.literal,", [0x30C4] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,120,otui.literal,", [0x30C6] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,120,otui.literal,", [0x30C8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,121,otui.literal,", [0x30CB] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,121,otui.literal,", [0x30CC] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,121,otui.literal,", [0x30CD] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,121,otui.literal,", [0x30CE] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,122,otui.literal,", [0x30D2] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,122,otui.literal,", [0x30D5] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,122,otui.literal,", [0x30D8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,122,otui.literal,", [0x30DB] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,123,otui.literal,", [0x30DF] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,123,otui.literal,", [0x30E0] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,123,otui.literal,", [0x30E1] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,123,otui.literal,", [0x30E2] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,124,otui.literal,", [0x30E6] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,124,otui.literal,", [0x30E8] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,125,otui.literal,", [0x30EA] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,125,otui.literal,", [0x30EB] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,125,otui.literal,", [0x30EC] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,125,otui.literal,", [0x30ED] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,126,otui.literal,", [0x30F2] ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,137,otui.literal,", optionKey ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,138,otui.literal,", optionKey ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,139,otui.literal,", optionKey ="
+otclient_modules,testyy/modules/client_transliteration/transliteration.lua,140,otui.literal,", optionKey ="
 otclient_modules,testyy/modules/corelib/const.lua,208,otui.literal.single,PrintScreen
 otclient_modules,testyy/modules/corelib/const.lua,218,otui.literal.single,ScrollLock
 otclient_modules,testyy/modules/corelib/http.lua,13,otui.literal,HTTP.get is not supported
@@ -2047,93 +2177,93 @@ otclient_modules,testyy/modules/game_console/console.lua,1557,otui.literal.singl
 otclient_modules,testyy/modules/game_console/console.lua,1603,otui.literal.single,showLevelsInConsole
 otclient_modules,testyy/modules/game_console/console.lua,1604,otui.literal.single,.. level ..
 otclient_modules,testyy/modules/game_console/console.lua,1627,otui.literal.single,unhandled onTalk message mode
-otclient_modules,testyy/modules/game_console/console.lua,1663,otui.literal.single,.. dataBlock.words ..
-otclient_modules,testyy/modules/game_console/console.lua,1692,otui.literal.single,showPrivateMessagesOnScreen
-otclient_modules,testyy/modules/game_console/console.lua,1706,otui.literal.single,message in channel id
-otclient_modules,testyy/modules/game_console/console.lua,1707,otui.literal.single,"which is unknown, this is a server bug, relogin if you want to see messages in this channel"
-otclient_modules,testyy/modules/game_console/console.lua,1785,otui.literal.single,channelList
-otclient_modules,testyy/modules/game_console/console.lua,1786,otui.literal.single,openPrivateChannelWith
-otclient_modules,testyy/modules/game_console/console.lua,1791,otui.literal.single,You cannot create a private chat channel with yourself.
-otclient_modules,testyy/modules/game_console/console.lua,1813,otui.literal.single,channelswindow
-otclient_modules,testyy/modules/game_console/console.lua,1814,otui.literal.single,channelList
-otclient_modules,testyy/modules/game_console/console.lua,1831,otui.literal.single,ChannelListLabel
-otclient_modules,testyy/modules/game_console/console.lua,1845,otui.literal.single,IgnorePlayers
-otclient_modules,testyy/modules/game_console/console.lua,1852,otui.literal.single,WhitelistedPlayers
-otclient_modules,testyy/modules/game_console/console.lua,1859,otui.literal.single,UseIgnoreList
-otclient_modules,testyy/modules/game_console/console.lua,1860,otui.literal.single,UseWhiteList
-otclient_modules,testyy/modules/game_console/console.lua,1861,otui.literal.single,IgnorePrivateMessages
-otclient_modules,testyy/modules/game_console/console.lua,1862,otui.literal.single,IgnoreYelling
-otclient_modules,testyy/modules/game_console/console.lua,1879,otui.literal.single,UseIgnoreList
-otclient_modules,testyy/modules/game_console/console.lua,1880,otui.literal.single,UseWhiteList
-otclient_modules,testyy/modules/game_console/console.lua,1881,otui.literal.single,IgnorePrivateMessages
-otclient_modules,testyy/modules/game_console/console.lua,1882,otui.literal.single,IgnoreYelling
-otclient_modules,testyy/modules/game_console/console.lua,1883,otui.literal.single,IgnorePlayers
-otclient_modules,testyy/modules/game_console/console.lua,1884,otui.literal.single,WhitelistedPlayers
-otclient_modules,testyy/modules/game_console/console.lua,1950,otui.literal.single,communicationwindow
-otclient_modules,testyy/modules/game_console/console.lua,1951,otui.literal.single,ignoreList
-otclient_modules,testyy/modules/game_console/console.lua,1957,otui.literal.single,checkboxUseIgnoreList
-otclient_modules,testyy/modules/game_console/console.lua,1959,otui.literal.single,checkboxUseWhiteList
-otclient_modules,testyy/modules/game_console/console.lua,1962,otui.literal.single,buttonIgnoreRemove
-otclient_modules,testyy/modules/game_console/console.lua,1976,otui.literal.single,buttonWhitelistRemove
-otclient_modules,testyy/modules/game_console/console.lua,1991,otui.literal.single,ignoreNameEdit
-otclient_modules,testyy/modules/game_console/console.lua,1992,otui.literal.single,buttonIgnoreAdd
-otclient_modules,testyy/modules/game_console/console.lua,2004,otui.literal.single,IgnoreListLabel
-otclient_modules,testyy/modules/game_console/console.lua,2012,otui.literal.single,whitelistNameEdit
-otclient_modules,testyy/modules/game_console/console.lua,2013,otui.literal.single,buttonWhitelistAdd
-otclient_modules,testyy/modules/game_console/console.lua,2025,otui.literal.single,WhiteListLabel
-otclient_modules,testyy/modules/game_console/console.lua,2040,otui.literal.single,checkboxIgnorePrivateMessages
-otclient_modules,testyy/modules/game_console/console.lua,2042,otui.literal.single,checkboxIgnoreYelling
-otclient_modules,testyy/modules/game_console/console.lua,2044,otui.literal.single,checkboxAllowVIPs
-otclient_modules,testyy/modules/game_console/console.lua,2047,otui.literal.single,buttonSave
-otclient_modules,testyy/modules/game_console/console.lua,2067,otui.literal.single,buttonCancel
-otclient_modules,testyy/modules/game_console/console.lua,2074,otui.literal.single,IgnoreListLabel
-otclient_modules,testyy/modules/game_console/console.lua,2080,otui.literal.single,WhiteListLabel
-otclient_modules,testyy/modules/game_console/console.lua,2094,otui.literal,Open Rule Violation
-otclient_modules,testyy/modules/game_console/console.lua,2096,otui.literal,Open Rule Violation
-otclient_modules,testyy/modules/game_console/console.lua,2104,otui.literal.single,lastChannelsOpen
-otclient_modules,testyy/modules/game_console/console.lua,2131,otui.literal.single,Unknown channel event type (%d).
-otclient_modules,testyy/modules/game_console/console.lua,2160,otui.literal.single,extendedViewDraggable
-otclient_modules,testyy/modules/game_console/console.lua,2161,otui.literal.single,extendedViewHide
-otclient_modules,testyy/modules/game_console/console.lua,2162,otui.literal.single,extendedViewHide
-otclient_modules,testyy/modules/game_console/console.lua,2166,otui.literal.single,extendedViewDraggable
-otclient_modules,testyy/modules/game_console/console.lua,2167,otui.literal.single,extendedViewHide
-otclient_modules,testyy/modules/game_console/console.lua,2179,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2179,otui.literal.single,consoleTabBar
-otclient_modules,testyy/modules/game_console/console.lua,2180,otui.literal.single,consoleBuffer
-otclient_modules,testyy/modules/game_console/console.lua,2190,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2191,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2192,otui.literal,consoleContentPanel
-otclient_modules,testyy/modules/game_console/console.lua,2200,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,1670,otui.literal.single,.. dataBlock.words ..
+otclient_modules,testyy/modules/game_console/console.lua,1705,otui.literal.single,showPrivateMessagesOnScreen
+otclient_modules,testyy/modules/game_console/console.lua,1719,otui.literal.single,message in channel id
+otclient_modules,testyy/modules/game_console/console.lua,1720,otui.literal.single,"which is unknown, this is a server bug, relogin if you want to see messages in this channel"
+otclient_modules,testyy/modules/game_console/console.lua,1798,otui.literal.single,channelList
+otclient_modules,testyy/modules/game_console/console.lua,1799,otui.literal.single,openPrivateChannelWith
+otclient_modules,testyy/modules/game_console/console.lua,1804,otui.literal.single,You cannot create a private chat channel with yourself.
+otclient_modules,testyy/modules/game_console/console.lua,1826,otui.literal.single,channelswindow
+otclient_modules,testyy/modules/game_console/console.lua,1827,otui.literal.single,channelList
+otclient_modules,testyy/modules/game_console/console.lua,1844,otui.literal.single,ChannelListLabel
+otclient_modules,testyy/modules/game_console/console.lua,1858,otui.literal.single,IgnorePlayers
+otclient_modules,testyy/modules/game_console/console.lua,1865,otui.literal.single,WhitelistedPlayers
+otclient_modules,testyy/modules/game_console/console.lua,1872,otui.literal.single,UseIgnoreList
+otclient_modules,testyy/modules/game_console/console.lua,1873,otui.literal.single,UseWhiteList
+otclient_modules,testyy/modules/game_console/console.lua,1874,otui.literal.single,IgnorePrivateMessages
+otclient_modules,testyy/modules/game_console/console.lua,1875,otui.literal.single,IgnoreYelling
+otclient_modules,testyy/modules/game_console/console.lua,1892,otui.literal.single,UseIgnoreList
+otclient_modules,testyy/modules/game_console/console.lua,1893,otui.literal.single,UseWhiteList
+otclient_modules,testyy/modules/game_console/console.lua,1894,otui.literal.single,IgnorePrivateMessages
+otclient_modules,testyy/modules/game_console/console.lua,1895,otui.literal.single,IgnoreYelling
+otclient_modules,testyy/modules/game_console/console.lua,1896,otui.literal.single,IgnorePlayers
+otclient_modules,testyy/modules/game_console/console.lua,1897,otui.literal.single,WhitelistedPlayers
+otclient_modules,testyy/modules/game_console/console.lua,1963,otui.literal.single,communicationwindow
+otclient_modules,testyy/modules/game_console/console.lua,1964,otui.literal.single,ignoreList
+otclient_modules,testyy/modules/game_console/console.lua,1970,otui.literal.single,checkboxUseIgnoreList
+otclient_modules,testyy/modules/game_console/console.lua,1972,otui.literal.single,checkboxUseWhiteList
+otclient_modules,testyy/modules/game_console/console.lua,1975,otui.literal.single,buttonIgnoreRemove
+otclient_modules,testyy/modules/game_console/console.lua,1989,otui.literal.single,buttonWhitelistRemove
+otclient_modules,testyy/modules/game_console/console.lua,2004,otui.literal.single,ignoreNameEdit
+otclient_modules,testyy/modules/game_console/console.lua,2005,otui.literal.single,buttonIgnoreAdd
+otclient_modules,testyy/modules/game_console/console.lua,2017,otui.literal.single,IgnoreListLabel
+otclient_modules,testyy/modules/game_console/console.lua,2025,otui.literal.single,whitelistNameEdit
+otclient_modules,testyy/modules/game_console/console.lua,2026,otui.literal.single,buttonWhitelistAdd
+otclient_modules,testyy/modules/game_console/console.lua,2038,otui.literal.single,WhiteListLabel
+otclient_modules,testyy/modules/game_console/console.lua,2053,otui.literal.single,checkboxIgnorePrivateMessages
+otclient_modules,testyy/modules/game_console/console.lua,2055,otui.literal.single,checkboxIgnoreYelling
+otclient_modules,testyy/modules/game_console/console.lua,2057,otui.literal.single,checkboxAllowVIPs
+otclient_modules,testyy/modules/game_console/console.lua,2060,otui.literal.single,buttonSave
+otclient_modules,testyy/modules/game_console/console.lua,2080,otui.literal.single,buttonCancel
+otclient_modules,testyy/modules/game_console/console.lua,2087,otui.literal.single,IgnoreListLabel
+otclient_modules,testyy/modules/game_console/console.lua,2093,otui.literal.single,WhiteListLabel
+otclient_modules,testyy/modules/game_console/console.lua,2107,otui.literal,Open Rule Violation
+otclient_modules,testyy/modules/game_console/console.lua,2109,otui.literal,Open Rule Violation
+otclient_modules,testyy/modules/game_console/console.lua,2117,otui.literal.single,lastChannelsOpen
+otclient_modules,testyy/modules/game_console/console.lua,2144,otui.literal.single,Unknown channel event type (%d).
+otclient_modules,testyy/modules/game_console/console.lua,2173,otui.literal.single,extendedViewDraggable
+otclient_modules,testyy/modules/game_console/console.lua,2174,otui.literal.single,extendedViewHide
+otclient_modules,testyy/modules/game_console/console.lua,2175,otui.literal.single,extendedViewHide
+otclient_modules,testyy/modules/game_console/console.lua,2179,otui.literal.single,extendedViewDraggable
+otclient_modules,testyy/modules/game_console/console.lua,2180,otui.literal.single,extendedViewHide
+otclient_modules,testyy/modules/game_console/console.lua,2192,otui.literal.single,consolePanel
+otclient_modules,testyy/modules/game_console/console.lua,2192,otui.literal.single,consoleTabBar
+otclient_modules,testyy/modules/game_console/console.lua,2193,otui.literal.single,consoleBuffer
 otclient_modules,testyy/modules/game_console/console.lua,2203,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2204,otui.literal,consoleContentPanel
-otclient_modules,testyy/modules/game_console/console.lua,2213,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2213,otui.literal.single,consoleTabBar
-otclient_modules,testyy/modules/game_console/console.lua,2214,otui.literal.single,consoleBuffer
-otclient_modules,testyy/modules/game_console/console.lua,2218,otui.literal,cooldownWindow
-otclient_modules,testyy/modules/game_console/console.lua,2219,otui.literal.single,showSpellGroupCooldowns
-otclient_modules,testyy/modules/game_console/console.lua,2224,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2225,otui.literal.single,consolePanel
-otclient_modules,testyy/modules/game_console/console.lua,2226,otui.literal,consoleTextEdit
-otclient_modules,testyy/modules/game_console/console.lua,2232,otui.literal.single,consoleBuffer
-otclient_modules,testyy/modules/game_console/console.lua,2233,otui.literal,/images/ui/3pixel_frame_borderimage
-otclient_modules,testyy/modules/game_console/console.lua,2234,otui.literal,/images/ui/background_dark
-otclient_modules,testyy/modules/game_console/console.lua,2244,otui.literal.single,extendedViewHide
-otclient_modules,testyy/modules/game_console/console.lua,2260,otui.literal,GameAction
-otclient_modules,testyy/modules/game_console/console.lua,2260,otui.literal,MainToggleButton
-otclient_modules,testyy/modules/game_console/console.lua,2266,otui.literal,/images/game/mobile/chat
-otclient_modules,testyy/modules/game_console/console.lua,2273,otui.literal,/images/game/npcicons/icon_chat
-otclient_modules,testyy/modules/game_console/console.lua,2283,otui.literal,/images/game/npcicons/icon_chat
-otclient_modules,testyy/modules/game_console/console.lua,2380,otui.literal.single,consoleBuffer
-otclient_modules,testyy/modules/game_console/console.lua,2382,otui.literal.single,ConsoleLabel
-otclient_modules,testyy/modules/game_console/console.lua,2383,otui.literal.single,consoleLabel
-otclient_modules,testyy/modules/game_console/console.lua,2409,otui.literal,/images/game/console/readOnly
-otclient_modules,testyy/modules/game_console/console.lua,2422,otui.literal,/images/ui/console_button
-otclient_modules,testyy/modules/game_console/console.lua,2450,otui.literal,separator1
-otclient_modules,testyy/modules/game_console/console.lua,2472,otui.literal.single,consoleBuffer
-otclient_modules,testyy/modules/game_console/console.lua,2477,otui.literal.single,.. channelName ..
-otclient_modules,testyy/modules/game_console/console.lua,2477,otui.literal.single,.. characterName ..
-otclient_modules,testyy/modules/game_console/console.lua,2479,otui.literal.single,Channel saved at %a %b %d %H:%M:%S %Y
-otclient_modules,testyy/modules/game_console/console.lua,2492,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,2204,otui.literal.single,consolePanel
+otclient_modules,testyy/modules/game_console/console.lua,2205,otui.literal,consoleContentPanel
+otclient_modules,testyy/modules/game_console/console.lua,2213,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,2216,otui.literal.single,consolePanel
+otclient_modules,testyy/modules/game_console/console.lua,2217,otui.literal,consoleContentPanel
+otclient_modules,testyy/modules/game_console/console.lua,2226,otui.literal.single,consolePanel
+otclient_modules,testyy/modules/game_console/console.lua,2226,otui.literal.single,consoleTabBar
+otclient_modules,testyy/modules/game_console/console.lua,2227,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,2231,otui.literal,cooldownWindow
+otclient_modules,testyy/modules/game_console/console.lua,2232,otui.literal.single,showSpellGroupCooldowns
+otclient_modules,testyy/modules/game_console/console.lua,2237,otui.literal.single,consolePanel
+otclient_modules,testyy/modules/game_console/console.lua,2238,otui.literal.single,consolePanel
+otclient_modules,testyy/modules/game_console/console.lua,2239,otui.literal,consoleTextEdit
+otclient_modules,testyy/modules/game_console/console.lua,2245,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,2246,otui.literal,/images/ui/3pixel_frame_borderimage
+otclient_modules,testyy/modules/game_console/console.lua,2247,otui.literal,/images/ui/background_dark
+otclient_modules,testyy/modules/game_console/console.lua,2257,otui.literal.single,extendedViewHide
+otclient_modules,testyy/modules/game_console/console.lua,2273,otui.literal,GameAction
+otclient_modules,testyy/modules/game_console/console.lua,2273,otui.literal,MainToggleButton
+otclient_modules,testyy/modules/game_console/console.lua,2279,otui.literal,/images/game/mobile/chat
+otclient_modules,testyy/modules/game_console/console.lua,2286,otui.literal,/images/game/npcicons/icon_chat
+otclient_modules,testyy/modules/game_console/console.lua,2296,otui.literal,/images/game/npcicons/icon_chat
+otclient_modules,testyy/modules/game_console/console.lua,2393,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,2395,otui.literal.single,ConsoleLabel
+otclient_modules,testyy/modules/game_console/console.lua,2396,otui.literal.single,consoleLabel
+otclient_modules,testyy/modules/game_console/console.lua,2422,otui.literal,/images/game/console/readOnly
+otclient_modules,testyy/modules/game_console/console.lua,2435,otui.literal,/images/ui/console_button
+otclient_modules,testyy/modules/game_console/console.lua,2463,otui.literal,separator1
+otclient_modules,testyy/modules/game_console/console.lua,2485,otui.literal.single,consoleBuffer
+otclient_modules,testyy/modules/game_console/console.lua,2490,otui.literal.single,.. channelName ..
+otclient_modules,testyy/modules/game_console/console.lua,2490,otui.literal.single,.. characterName ..
+otclient_modules,testyy/modules/game_console/console.lua,2492,otui.literal.single,Channel saved at %a %b %d %H:%M:%S %Y
+otclient_modules,testyy/modules/game_console/console.lua,2505,otui.literal.single,consoleBuffer
 otclient_modules,testyy/modules/game_containers/containers.lua,56,otui.literal.single,showExpiryInContainers
 otclient_modules,testyy/modules/game_containers/containers.lua,68,otui.literal.single,miniwindowScrollBar
 otclient_modules,testyy/modules/game_containers/containers.lua,69,otui.literal.single,contentsPanel
@@ -3731,19 +3861,23 @@ otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,223,otui.litera
 otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,271,otui.literal,^https?://
 otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,272,otui.literal.single,game_hotkeys
 otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,304,otui.literal.single,game_hotkeys
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,406,otui.literal.single,HotkeyAssignWindow
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,409,otui.literal.single,comboPreview
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,423,otui.literal.single,HotkeyListLabel
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,492,otui.literal.single,hotkeyDelay
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,786,otui.literal.single,comboPreview
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,816,otui.literal,/modules/([^/]+)/
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,817,otui.literal,\\modules\\([^\\]+)\\
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,818,otui.literal,([^/\\]+)%.lua$
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,829,otui.literal,.. callerModule ..
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,864,otui.literal,=== Hotkey Blocking Info ===
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,865,otui.literal,Total blocks:
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,867,otui.literal,Active sources:
-otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,872,otui.literal,No active blocks
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,367,otui.literal.single,blockItemHotkeys
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,407,otui.literal.single,blockItemHotkeys
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,434,otui.literal.single,HotkeyAssignWindow
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,437,otui.literal.single,comboPreview
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,451,otui.literal.single,HotkeyListLabel
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,520,otui.literal.single,hotkeyDelay
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,560,otui.literal.single,blockItemHotkeys
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,743,otui.literal.single,blockItemHotkeys
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,842,otui.literal.single,comboPreview
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,872,otui.literal,/modules/([^/]+)/
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,873,otui.literal,\\modules\\([^\\]+)\\
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,874,otui.literal,([^/\\]+)%.lua$
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,885,otui.literal,.. callerModule ..
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,920,otui.literal,=== Hotkey Blocking Info ===
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,921,otui.literal,Total blocks:
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,923,otui.literal,Active sources:
+otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.lua,928,otui.literal,No active blocks
 otclient_modules,testyy/modules/game_hotkeys/hotkeys_manager.otui,238,otui.literal.single,comboPreview
 otclient_modules,testyy/modules/game_imbuementtracker/imbuementtracker.lua,11,otui.literal,showLessThan1h
 otclient_modules,testyy/modules/game_imbuementtracker/imbuementtracker.lua,12,otui.literal,showBetween1hAnd3h

@@ -1,15 +1,25 @@
 {
-  "generated_at_utc": "2026-02-14T22:44:59.496122Z",
-  "total_unresolved_files": 1,
+  "generated_at_utc": "2026-02-15T17:09:42.056348Z",
+  "total_unresolved_files": 2,
   "description": "Files the documentation generator could not properly analyze — need manual review or parser improvements",
   "entries": [
     {
-      "file": "data-otservbr-global/lib/quests/quest.lua",
+      "file": "data-otservbr-global/lib/tables/teleport_item_destinations.lua",
       "issues": [
         {
           "rule": "no_symbols_detected",
           "severity": "info",
-          "detail": "Code file (.lua) with 11 lines but no symbols detected"
+          "detail": "Code file (.lua) with 16 lines but no symbols detected"
+        }
+      ]
+    },
+    {
+      "file": "data-otservbr-global/lib/tables/town.lua",
+      "issues": [
+        {
+          "rule": "no_symbols_detected",
+          "severity": "info",
+          "detail": "Code file (.lua) with 29 lines but no symbols detected"
         }
       ]
     }

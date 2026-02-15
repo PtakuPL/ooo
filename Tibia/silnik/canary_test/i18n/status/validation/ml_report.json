@@ -1,11 +1,11 @@
 {
   "lang": "ml",
   "script_group": "exotic",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 5091,
   "identical_to_en": 3828,
   "placeholder_keys": 48495,
-  "coverage_pct": 9.5,
+  "coverage_pct": 9.4,
   "issues_total": 80,
   "issues_by_type": {
     "script_wrong_script": 79,
@@ -148,5 +148,5 @@
     "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:45.923306Z"
+  "validated_at": "2026-02-15T22:46:36.073292Z"
 }

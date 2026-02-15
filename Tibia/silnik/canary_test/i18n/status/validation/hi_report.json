@@ -1,11 +1,11 @@
 {
   "lang": "hi",
   "script_group": "exotic",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 5254,
   "identical_to_en": 3838,
   "placeholder_keys": 48332,
-  "coverage_pct": 9.8,
+  "coverage_pct": 9.7,
   "issues_total": 77,
   "issues_by_type": {
     "script_wrong_script": 76,
@@ -148,5 +148,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:43.817037Z"
+  "validated_at": "2026-02-15T22:46:32.484930Z"
 }

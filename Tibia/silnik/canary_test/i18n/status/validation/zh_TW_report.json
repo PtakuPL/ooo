@@ -1,11 +1,11 @@
 {
   "lang": "zh_TW",
   "script_group": "cjk",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 9789,
   "identical_to_en": 9185,
   "placeholder_keys": 41879,
-  "coverage_pct": 18.3,
+  "coverage_pct": 18.0,
   "issues_total": 14,
   "issues_by_type": {
     "V2_length_ratio": 11,
@@ -113,5 +113,5 @@
     "length_ratio": 22,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:57.748652Z"
+  "validated_at": "2026-02-15T22:46:47.325128Z"
 }

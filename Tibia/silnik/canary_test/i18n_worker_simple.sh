@@ -11496,11 +11496,13 @@ def _call_with_timeout(seconds, fn, *args, **kwargs):
         signal.signal(signal.SIGALRM, prev_handler)
 
 def _protect_placeholders(text):
-    """Zamień placeholdery, HTML tagi, escape sequences i nazwy własne na tokeny ochronne przed GT."""
+    """Zamień placeholdery, HTML tagi, escape sequences i nazwy własne na tokeny ochronne przed GT.
+    Używa formatu ⟨N⟩ (Unicode angle brackets + numer) — GT NIE transliteruje tego formatu
+    (w przeciwieństwie do __PH0__ który GT zamienia na __ПХ0__ dla cyrylicy)."""
     replacements = {}
     idx = [0]
     def _replace(m):
-        token = f"__PH{idx[0]}__"
+        token = f"⟨{idx[0]}⟩"
         replacements[token] = m.group(0)
         idx[0] += 1
         return token
@@ -12420,14 +12422,28 @@ def validate_candidate(en_text: str, candidate: str):
         if _vc_fc >= 2 and _vc_fc / len(_vc_words) > 0.25:
             return False, "word_salad"
         # Also block high EN content word overlap (keeps many EN words unchanged)
+        # Exclude Tibia proper nouns and onomatopoeia from overlap — they SHOULD stay in EN
         _vc_en_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', en_text))
         _vc_tr_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', candidate))
         if _vc_en_content:
             _vc_overlap = _vc_en_content & _vc_tr_content
-            _vc_overlap_ratio = len(_vc_overlap) / len(_vc_en_content)
-            _vc_overlap_by_words = len(_vc_overlap) / len(_vc_words)
-            if len(_vc_overlap) >= 2 and _vc_overlap_ratio > 0.3 and _vc_overlap_by_words > 0.2:
-                return False, "word_salad"
+            # Filter out Tibia proper nouns from overlap — keeping them in EN is correct behavior
+            if TIBIA_PROPER_NOUNS:
+                _vc_proper_lower = set(n.lower() for n in TIBIA_PROPER_NOUNS)
+                _vc_overlap = {w for w in _vc_overlap if w not in _vc_proper_lower}
+                # Also filter multi-word proper nouns (check if overlap word appears in any proper noun)
+                _vc_overlap = {w for w in _vc_overlap
+                    if not any(w in pn.lower().split() for pn in TIBIA_PROPER_NOUNS if len(pn) > 4)}
+            # Filter out common onomatopoeia and sound effects that stay in EN
+            _vc_onom = {'swoosh','oomph','cough','splash','crack','boom','bang','poof',
+                'whoosh','thud','clang','hiss','growl','roar','screech','sizzle',
+                'rumble','creak','snap','click','buzz','whir','gurgle','chomp'}
+            _vc_overlap -= _vc_onom
+            if _vc_overlap:
+                _vc_overlap_ratio = len(_vc_overlap) / len(_vc_en_content)
+                _vc_overlap_by_words = len(_vc_overlap) / len(_vc_words)
+                if len(_vc_overlap) >= 2 and _vc_overlap_ratio > 0.3 and _vc_overlap_by_words > 0.2:
+                    return False, "word_salad"
 
     # Hard gate: Wrong script — non-Latin language with all-Latin translation
     _vc_lang = target_lang.lower().replace("_", "-")
@@ -20853,7 +20869,7 @@ PYFORCEDMETRIC
             if [ -n "$REPO_ROOT" ]; then
                 REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/$GIT_TRACK_BRANCH:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
                 if [ -n "$REMOTE_CMDS" ]; then
-                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX|MIGRATION:|MIGRATION_DRYRUN:|EXTRACT:|EXTRACT)' | head -1)
+                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX|MIGRATION:|MIGRATION_DRYRUN:)' | head -1)
                     if [ -n "$CMD" ]; then
                         CMD_SOURCE="github"
                         echo "📨 Odebrano z GitHub (.github/worker_commands.txt): $CMD"
@@ -20868,7 +20884,7 @@ BEGIN { done=0 }
         print line
         next
     }
-    if (!done && line ~ /^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|MIGRATION:|MIGRATION_DRYRUN:|EXTRACT:|EXTRACT)/) {
+    if (!done && line ~ /^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|MIGRATION:|MIGRATION_DRYRUN:)/) {
         print "#" line "  # Wykonano " ts
         done=1
         next
@@ -20889,7 +20905,7 @@ BEGIN { done=0 }
                 for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
                     [ -n "$CMD" ] && break
                     if [ -f "$COMMANDS_TXT" ]; then
-                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX|MIGRATION:|MIGRATION_DRYRUN:|EXTRACT:|EXTRACT)' | head -1)
+                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX|MIGRATION:|MIGRATION_DRYRUN:)' | head -1)
                         if [ -n "$CMD" ]; then
                             echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
                             TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
@@ -21153,23 +21169,6 @@ BEGIN { done=0 }
                         echo "🧪 Wymuszam SELFTEST"
                         MODE_TYPE="SELFTEST"
                         MODE_CAT="-"
-                        MODE_COUNT="0"
-                        MODE_EXTRA="FORCED"
-                        ;;
-                    EXTRACT:*)
-                        # Format: EXTRACT:<target>  where target = xml|quests|gamestore|all
-                        EXT_TARGET=$(echo "$CMD" | cut -d: -f2)
-                        EXT_TARGET=${EXT_TARGET:-all}
-                        echo "📦 Wymuszam EXTRACTION: $EXT_TARGET"
-                        MODE_TYPE="EXTRACTION"
-                        MODE_CAT="$EXT_TARGET"
-                        MODE_COUNT="0"
-                        MODE_EXTRA="FORCED"
-                        ;;
-                    EXTRACT)
-                        echo "📦 Wymuszam EXTRACTION: all"
-                        MODE_TYPE="EXTRACTION"
-                        MODE_CAT="all"
                         MODE_COUNT="0"
                         MODE_EXTRA="FORCED"
                         ;;
@@ -22274,65 +22273,6 @@ DOC_STATS_PY
                     if ! self_check; then
                         status_log_error "$CYCLE" "SELFTEST" "self_check" "-" "-" "self_check failed" "check logs"
                     fi
-                    ;;
-                EXTRACTION)
-                    # === EXTRACTION: wyciąganie translatable strings z XML/Lua definicji → EN JSON ===
-                    EXT_TARGET="${MODE_CAT:-all}"
-                    echo "📦 TRYB: EXTRACTION (target=$EXT_TARGET)"
-                    status_update_activity "running" "$CYCLE" "EXTRACTION" "extract_start" "$EXT_TARGET" "-" "starting extraction" 0 0 "keys" 0
-
-                    EXT_TOTAL_NEW=0
-
-                    # --- XML Definitions (mounts, outfits, familiars, vocations, groups, chatchannels, imbuements) ---
-                    if [ "$EXT_TARGET" = "xml" ] || [ "$EXT_TARGET" = "all" ]; then
-                        EXT_XML_TOOL="tools/i18n_extract_xml_definitions.py"
-                        if [ -f "$EXT_XML_TOOL" ]; then
-                            echo "   📄 Extraction: XML definitions..."
-                            EXT_XML_OUT=$(python3 "$EXT_XML_TOOL" --project-root . --i18n-dir i18n 2>&1)
-                            EXT_XML_RC=$?
-                            echo "$EXT_XML_OUT" | grep -E '✅|❌|⏭️'
-                            EXT_XML_NEW=$(echo "$EXT_XML_OUT" | grep -oP 'new_keys=\K[0-9]+' | head -1 || echo 0)
-                            EXT_XML_NEW=${EXT_XML_NEW:-0}
-                            EXT_TOTAL_NEW=$((EXT_TOTAL_NEW + EXT_XML_NEW))
-                            if [ "$EXT_XML_RC" -eq 0 ]; then
-                                status_log_op "$CYCLE" "EXTRACTION" "ok" "xml" "-" "extract" "new_keys=$EXT_XML_NEW" "$EXT_XML_NEW" "0"
-                            else
-                                status_log_error "$CYCLE" "EXTRACTION" "extract_error" "xml" "-" "xml extraction failed" "rc=$EXT_XML_RC"
-                            fi
-                        else
-                            echo "   ⚠️ Brak narzędzia: $EXT_XML_TOOL"
-                        fi
-                    fi
-
-                    # --- Lua Definitions (quests, gamestore) ---
-                    if [ "$EXT_TARGET" = "quests" ] || [ "$EXT_TARGET" = "gamestore" ] || [ "$EXT_TARGET" = "all" ]; then
-                        EXT_LUA_TOOL="tools/i18n_extract_lua_definitions.py"
-                        if [ -f "$EXT_LUA_TOOL" ]; then
-                            EXT_LUA_ONLY=""
-                            if [ "$EXT_TARGET" = "quests" ]; then
-                                EXT_LUA_ONLY="--only quests"
-                            elif [ "$EXT_TARGET" = "gamestore" ]; then
-                                EXT_LUA_ONLY="--only gamestore"
-                            fi
-                            echo "   📄 Extraction: Lua definitions ($EXT_TARGET)..."
-                            EXT_LUA_OUT=$(python3 "$EXT_LUA_TOOL" --project-root . --i18n-dir i18n $EXT_LUA_ONLY 2>&1)
-                            EXT_LUA_RC=$?
-                            echo "$EXT_LUA_OUT" | grep -E '✅|❌|⏭️'
-                            EXT_LUA_NEW=$(echo "$EXT_LUA_OUT" | grep -oP 'total_new_keys=\K[0-9]+' | head -1 || echo 0)
-                            EXT_LUA_NEW=${EXT_LUA_NEW:-0}
-                            EXT_TOTAL_NEW=$((EXT_TOTAL_NEW + EXT_LUA_NEW))
-                            if [ "$EXT_LUA_RC" -eq 0 ]; then
-                                status_log_op "$CYCLE" "EXTRACTION" "ok" "lua_$EXT_TARGET" "-" "extract" "new_keys=$EXT_LUA_NEW" "$EXT_LUA_NEW" "0"
-                            else
-                                status_log_error "$CYCLE" "EXTRACTION" "extract_error" "lua_$EXT_TARGET" "-" "lua extraction failed" "rc=$EXT_LUA_RC"
-                            fi
-                        else
-                            echo "   ⚠️ Brak narzędzia: $EXT_LUA_TOOL"
-                        fi
-                    fi
-
-                    echo "   ✅ EXTRACTION zakończona: total_new_keys=$EXT_TOTAL_NEW"
-                    status_update_activity "running" "$CYCLE" "EXTRACTION" "extract_done" "$EXT_TARGET" "-" "done new_keys=$EXT_TOTAL_NEW" "$EXT_TOTAL_NEW" 0 "keys" 0
                     ;;
                 *)
                     echo "⚠️ Nieznany tryb: $MODE_TYPE"

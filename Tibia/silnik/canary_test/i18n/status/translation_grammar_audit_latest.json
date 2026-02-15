@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-02-15T13:30:47.542824Z",
+  "timestamp": "2026-02-15T19:07:22.303262Z",
   "schema_version": "1.0",
   "total_langs": 52,
   "total_domains": 38,
-  "total_genuine_checked": 178991,
-  "total_issues": 882,
+  "total_genuine_checked": 179275,
+  "total_issues": 885,
   "severity_totals": {
     "critical": 40,
-    "warning": 318,
+    "warning": 321,
     "info": 524
   },
   "issue_type_breakdown": {
     "punctuation_missing": 439,
-    "html_tag_mismatch": 133,
+    "html_tag_mismatch": 136,
     "number_drift": 98,
     "bracket_mismatch": 54,
     "double_spaces": 53,
@@ -84,13 +84,13 @@
     },
     {
       "lang": "lt",
-      "total_issues": 12,
+      "total_issues": 14,
       "domains_affected": 4,
       "critical": 2,
-      "warning": 6,
+      "warning": 8,
       "info": 4,
       "top_domains": {
-        "npc.json": 8,
+        "npc.json": 10,
         "scripts.json": 2,
         "achievements.json": 1,
         "quests.json": 1
@@ -445,6 +445,17 @@
       }
     },
     {
+      "lang": "el",
+      "total_issues": 12,
+      "domains_affected": 1,
+      "critical": 0,
+      "warning": 12,
+      "info": 0,
+      "top_domains": {
+        "npc.json": 12
+      }
+    },
+    {
       "lang": "zh_TW",
       "total_issues": 51,
       "domains_affected": 1,
@@ -453,17 +464,6 @@
       "info": 40,
       "top_domains": {
         "achievements.json": 51
-      }
-    },
-    {
-      "lang": "el",
-      "total_issues": 11,
-      "domains_affected": 1,
-      "critical": 0,
-      "warning": 11,
-      "info": 0,
-      "top_domains": {
-        "npc.json": 11
       }
     },
     {
@@ -658,7 +658,7 @@
   ],
   "domain_breakdown": {
     "achievements.json": 459,
-    "npc.json": 138,
+    "npc.json": 141,
     "books.json": 71,
     "scripts.json": 54,
     "items.json": 47,
@@ -2434,6 +2434,16 @@
       "lang": "el",
       "domain": "npc.json",
       "key": "npc.a_lost_basher.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_lost_basher.greet_msg_2",
       "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
       "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
     },
@@ -6384,6 +6394,26 @@
       "lang": "lt",
       "domain": "npc.json",
       "key": "npc.a_dragon_lord.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<pateikia jums išsamų pranešimą apie pabaisų veiklą>']",
+      "lang": "lt",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<pateikia jums išsamų pranešimą apie pabaisų veiklą>']",
+      "lang": "lt",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_2",
       "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
       "tr_sample": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>"
     },

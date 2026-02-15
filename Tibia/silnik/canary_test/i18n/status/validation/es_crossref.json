@@ -1,15 +1,15 @@
 {
   "lang": "es",
-  "coverage_pct": 85.3,
+  "coverage_pct": 84.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:50:22.480425Z",
-  "issues_total": 509,
+  "checked_at": "2026-02-15T22:46:14.249452Z",
+  "issues_total": 511,
   "issues_by_type": {
     "consistency_in_language": 68,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 41
+    "length_ratio_crosscheck": 43
   },
   "consistency_issues": [
     {
@@ -1451,15 +1451,6 @@
       "lang": "Bssssss"
     },
     {
-      "key": "monster.weeper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
-    },
-    {
       "key": "monster.worker_golem.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1503,15 +1494,6 @@
       "en": "Chrrr.",
       "pl": "Chrr.",
       "lang": "Chrrr."
-    },
-    {
-      "key": "monster.infected_weeper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
     },
     {
       "key": "monster.death_blob.voice_1",
@@ -4635,6 +4617,24 @@
       "en": "No",
       "pl": "Nie",
       "lang": "No"
+    },
+    {
+      "key": "otclient_modules.charms.tr_17",
+      "category": "otclient_modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No",
+      "pl": "Nie",
+      "lang": "No"
+    },
+    {
+      "key": "otclient_modules.charms.tr_5",
+      "category": "otclient_modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No",
+      "pl": "Nie",
+      "lang": "No"
     }
   ],
   "length_ratio_issues": [
@@ -4792,6 +4792,15 @@
       "pl_ratio": 1.2
     },
     {
+      "key": "monster.weeper.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 6.75,
+      "pl_ratio": 0.875
+    },
+    {
       "key": "monster.glooth_golem.voice_2",
       "category": "monsters",
       "type": "crossref_length_ratio_diff",
@@ -4799,6 +4808,15 @@
       "en_len": 7,
       "lang_ratio": 3.143,
       "pl_ratio": 0.571
+    },
+    {
+      "key": "monster.infected_weeper.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 6.75,
+      "pl_ratio": 0.875
     },
     {
       "key": "monster.abyssador.voice_1",
@@ -5010,8 +5028,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 2,
-    "skipped": 78,
+    "applied": 0,
+    "skipped": 80,
     "errors": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "completed_at_utc": "2026-02-15T19:09:43.465153Z",
+  "completed_at_utc": "2026-02-15T19:45:01.446262Z",
   "total_categories": 32,
   "categories_scanned": 32,
   "categories_clean": 12,
@@ -8,7 +8,7 @@
   "total_hits": 124798,
   "total_files_with_hits": 6358,
   "scan_stable": true,
-  "last_scan_utc": "2026-02-15T19:09:43.465387Z",
+  "last_scan_utc": "2026-02-15T19:45:01.446383Z",
   "backlog_summary": {
     "cpp": 32,
     "dataroot": 1,

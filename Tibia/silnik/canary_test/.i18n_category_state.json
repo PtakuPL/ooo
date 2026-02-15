@@ -1,26 +1,26 @@
 {
   "skip_until": {
-    "scripts": 1771164384.6379132,
-    "actions": 1771164391.104555,
-    "quests": 1771164402.6316445,
-    "spells": 1771164419.1804078,
-    "talkactions": 1771164431.8244913,
-    "creaturescripts": 1771164450.2651112,
-    "mounts": 1771164457.4097254,
-    "libs": 1771164465.819372,
-    "events": 1771164472.8055573,
-    "chatchannels": 1771164480.0283828,
-    "npclib": 1771164487.2760744,
-    "dataroot": 1771164498.9604504,
-    "php": 1771164757.481011,
-    "html": 1771164771.8226314,
-    "cpp": 1771164793.9789732,
-    "otclient_modules": 1771164815.9306188,
-    "otclient_data": 1771164877.8927455,
-    "otclient_src": 1771164894.917472,
-    "otclient_tools": 1771164911.1594322,
-    "server": 1771164927.1094127,
-    "errors": 1771164945.9541316,
+    "scripts": 1771185864.6742263,
+    "actions": 1771185882.69364,
+    "quests": 1771185899.6095357,
+    "spells": 1771185918.0380943,
+    "talkactions": 1771185941.0185037,
+    "creaturescripts": 1771185971.1486826,
+    "mounts": 1771185994.9830265,
+    "libs": 1771186011.5134776,
+    "events": 1771186129.954547,
+    "chatchannels": 1771186148.2109807,
+    "npclib": 1771186173.9745958,
+    "dataroot": 1771186194.3290396,
+    "php": 1771186225.5237708,
+    "html": 1771186248.7629068,
+    "cpp": 1771186271.115915,
+    "otclient_modules": 1771186296.7353044,
+    "otclient_data": 1771186387.4115212,
+    "otclient_src": 1771186417.8442757,
+    "otclient_tools": 1771186442.0363173,
+    "server": 1771186468.33993,
+    "errors": 1771186500.8749194,
     "npc": 1771153214.0079432,
     "monsters": 1771153232.7208207,
     "raids": 1771153256.555328,
@@ -39,7 +39,7 @@
     },
     "scripts": {
       "count": 0,
-      "timestamp": 1771162584.6379113
+      "timestamp": 1771184064.674224
     },
     "monsters": {
       "count": 18665,
@@ -47,11 +47,11 @@
     },
     "actions": {
       "count": 0,
-      "timestamp": 1771162591.1045535
+      "timestamp": 1771184082.6936374
     },
     "quests": {
       "count": 0,
-      "timestamp": 1771162602.6316426
+      "timestamp": 1771184099.609533
     },
     "raids": {
       "count": 1,
@@ -63,11 +63,11 @@
     },
     "spells": {
       "count": 191,
-      "timestamp": 1771162619.1804035
+      "timestamp": 1771184118.0380912
     },
     "talkactions": {
       "count": 0,
-      "timestamp": 1771162631.824489
+      "timestamp": 1771184141.0185
     },
     "movements": {
       "count": 0,
@@ -75,7 +75,7 @@
     },
     "creaturescripts": {
       "count": 0,
-      "timestamp": 1771162650.2651093
+      "timestamp": 1771184171.1486785
     },
     "globalevents": {
       "count": 0,
@@ -87,19 +87,19 @@
     },
     "mounts": {
       "count": 697,
-      "timestamp": 1771162657.4097238
+      "timestamp": 1771184194.9830236
     },
     "libs": {
       "count": 1691,
-      "timestamp": 1771162665.8193703
+      "timestamp": 1771184211.5134747
     },
     "events": {
       "count": 0,
-      "timestamp": 1771162672.8055546
+      "timestamp": 1771184329.954544
     },
     "chatchannels": {
       "count": 0,
-      "timestamp": 1771162680.0283806
+      "timestamp": 1771184348.210978
     },
     "modules": {
       "count": 965,
@@ -111,19 +111,19 @@
     },
     "npclib": {
       "count": 0,
-      "timestamp": 1771162687.276072
+      "timestamp": 1771184373.9745917
     },
     "dataroot": {
       "count": 1,
-      "timestamp": 1771162698.9604483
+      "timestamp": 1771184394.3290365
     },
     "cpp": {
       "count": 109,
-      "timestamp": 1771162993.978966
+      "timestamp": 1771184471.115911
     },
     "otclient_modules": {
-      "count": 6587,
-      "timestamp": 1771163015.9306157
+      "count": 6721,
+      "timestamp": 1771184496.735302
     },
     "otclient_mods": {
       "count": 0,
@@ -131,31 +131,31 @@
     },
     "otclient_data": {
       "count": 1,
-      "timestamp": 1771163077.8927426
+      "timestamp": 1771184587.4115171
     },
     "otclient_src": {
       "count": 60,
-      "timestamp": 1771163094.917469
+      "timestamp": 1771184617.8442729
     },
     "otclient_tools": {
       "count": 154,
-      "timestamp": 1771163111.1594296
+      "timestamp": 1771184642.036314
     },
     "server": {
       "count": 109,
-      "timestamp": 1771163127.1094098
+      "timestamp": 1771184668.3399255
     },
     "errors": {
       "count": 849,
-      "timestamp": 1771163145.9541295
+      "timestamp": 1771184700.8749144
     },
     "php": {
       "count": 53490,
-      "timestamp": 1771162957.4810078
+      "timestamp": 1771184425.5237668
     },
     "html": {
       "count": 11437,
-      "timestamp": 1771162971.8226273
+      "timestamp": 1771184448.762903
     }
   },
   "consecutive_zeros": {
@@ -196,25 +196,25 @@
     "monsters": 25379,
     "actions": 10,
     "quests": 18,
-    "spells": 7740,
-    "libs": 10192,
+    "spells": 8313,
+    "libs": 15265,
     "events": 7,
     "modules": 967,
     "npclib": 42,
-    "cpp": 688,
-    "php": 343172,
-    "html": 69198,
+    "cpp": 1015,
+    "php": 503642,
+    "html": 103509,
     "talkactions": 0,
     "creaturescripts": 0,
-    "mounts": 4190,
+    "mounts": 6281,
     "chatchannels": 0,
-    "dataroot": 7,
-    "otclient_modules": 39686,
-    "otclient_data": 7,
-    "otclient_src": 387,
-    "otclient_tools": 932,
-    "server": 686,
-    "errors": 5235,
+    "dataroot": 10,
+    "otclient_modules": 59849,
+    "otclient_data": 10,
+    "otclient_src": 567,
+    "otclient_tools": 1394,
+    "server": 1013,
+    "errors": 7782,
     "scripts": 0,
     "npc": 1,
     "raids": 1,
@@ -224,47 +224,63 @@
     "startup": 36,
     "otclient_mods": 0
   },
-  "migrations_done": true,
+  "migrations_done": false,
   "docs_done": false,
   "translation_sync": {
-    "current_lang": "zh_TW",
-    "current_category": "npclib.json",
+    "current_lang": "ar",
+    "current_category": "mounts.json",
     "languages_done": [],
     "stats": {
       "de": {
         "spells": 1426,
-        "total": 1426
+        "total": 1685,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "pl": {
         "spells": 1426,
-        "total": 3596,
-        "scripts": 2170
+        "total": 3855,
+        "scripts": 2170,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "es": {
         "spells": 1426,
-        "total": 1426
+        "total": 1685,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "pt": {
         "spells": 1426,
-        "total": 1426
+        "total": 1685,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "fr": {
         "spells": 1426,
-        "total": 1426
+        "total": 1685,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "it": {
         "spells": 1426,
-        "total": 1426
+        "total": 1685,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "nl": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "cs": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "sk": {
         "npc": 6946,
@@ -278,23 +294,31 @@
       },
       "sv": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "da": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "no": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "fi": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "et": {
         "npc": 6946,
@@ -313,8 +337,10 @@
       },
       "ro": {
         "npc": 6946,
-        "total": 8372,
-        "spells": 1426
+        "total": 8631,
+        "spells": 1426,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "bg": {
         "npc": 6946,
@@ -358,7 +384,9 @@
       },
       "ru": {
         "spells": 1426,
-        "total": 1426
+        "total": 1685,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "uk": {
         "npc": 6946,
@@ -397,9 +425,11 @@
       },
       "ar": {
         "npc": 6946,
-        "total": 8461,
+        "total": 8720,
         "spells": 1426,
-        "libs": 89
+        "libs": 89,
+        "chatchannels": 24,
+        "mounts": 235
       },
       "he": {
         "npc": 6946,
@@ -491,7 +521,7 @@
         "spells": 1426
       }
     },
-    "last_sync": 1771149624.5882678
+    "last_sync": 1771185281.8757741
   },
   "auto_translate_done": [
     "de:actions.json",

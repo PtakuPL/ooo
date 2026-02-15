@@ -1,10 +1,10 @@
 {
   "lang": "hy",
-  "coverage_pct": 9.1,
+  "coverage_pct": 9.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:50:44.307348Z",
+  "checked_at": "2026-02-15T22:46:32.902000Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -185,13 +185,13 @@
       "lang": "You read: "
     },
     {
-      "key": "channel.tutor.name",
+      "key": "channel.gamemaster.name",
       "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tutor",
-      "pl": "Korepetytor",
-      "lang": "Tutor"
+      "en": "Gamemaster",
+      "pl": "Mistrz Gry",
+      "lang": "Gamemaster"
     },
     {
       "key": "channel.help.name",
@@ -203,13 +203,13 @@
       "lang": "Help"
     },
     {
-      "key": "channel.gamemaster.name",
+      "key": "channel.tutor.name",
       "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
+      "en": "Tutor",
+      "pl": "Korepetytor",
+      "lang": "Tutor"
     },
     {
       "key": "channel.world_chat.name",

@@ -6,9 +6,9 @@
     "core_terms": 92,
     "spell_words": 169,
     "spell_names": 764,
-    "quest_names": 498,
+    "quest_names": 501,
     "raid_names": 86,
-    "total_unique": 833
+    "total_unique": 836
   },
   "terms": [
     "* Grave Danger - The Lich Knights",
@@ -396,6 +396,7 @@
     "Paw and Fur: Brimstone Bugs",
     "Paw and Fur: Bruise Payne",
     "Paw and Fur: Carniphilas",
+    "Paw and Fur: Crocodiles",
     "Paw and Fur: Crystal Spiders",
     "Paw and Fur: Deathbine",
     "Paw and Fur: Demodras",
@@ -445,6 +446,7 @@
     "Paw and Fur: The Many",
     "Paw and Fur: The Noxious Spawn",
     "Paw and Fur: The Old Widow",
+    "Paw and Fur: The Snapper",
     "Paw and Fur: Thornback Tortoises",
     "Paw and Fur: Thul",
     "Paw and Fur: Tiquandas Revenge",
@@ -576,6 +578,7 @@
     "The Magic Shield - Scale",
     "The Marid and the Efreet - Djinn Greeting",
     "The Marid and the Efreet - Marid Faction",
+    "The Marid: Green Djinns",
     "The Memory Stone",
     "The Mermaid Marina",
     "The New Frontier",

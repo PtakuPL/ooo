@@ -1,11 +1,11 @@
 {
   "lang": "bg",
   "script_group": "cyrillic",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 4220,
   "identical_to_en": 2860,
   "placeholder_keys": 49366,
-  "coverage_pct": 7.9,
+  "coverage_pct": 7.8,
   "issues_total": 31,
   "issues_by_type": {
     "script_cyrillic_latin_mix": 30,
@@ -148,5 +148,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:49:59.926853Z"
+  "validated_at": "2026-02-15T22:45:52.060009Z"
 }

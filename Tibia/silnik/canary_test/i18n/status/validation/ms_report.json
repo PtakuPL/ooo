@@ -1,11 +1,11 @@
 {
   "lang": "ms",
   "script_group": "latin",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 4883,
   "identical_to_en": 3862,
   "placeholder_keys": 48703,
-  "coverage_pct": 9.1,
+  "coverage_pct": 9.0,
   "issues_total": 4,
   "issues_by_type": {
     "V4_artifact": 2,
@@ -53,5 +53,5 @@
     "length_ratio": 4,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:46.066397Z"
+  "validated_at": "2026-02-15T22:46:36.194198Z"
 }

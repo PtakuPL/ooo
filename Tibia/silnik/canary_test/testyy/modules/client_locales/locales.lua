@@ -94,15 +94,20 @@ function init()
     setLocale(defaultLocaleName)
   end
 
-  -- show picker on first run (or always, if you prefer: change to always connect onRun)
+  -- Always connect the language picker so it can be opened from topmenu.
+  -- Also show it automatically on first run when no locale has been saved yet.
   if g_app.hasUpdater() then
-    connect(g_app, { onUpdateFinished = createWindow })
+    if savedLocale == 'false' then
+      connect(g_app, { onUpdateFinished = createWindow })
+    end
   else
-    -- show once on first run when no saved locale
     if savedLocale == 'false' then
       connect(g_app, { onRun = createWindow })
     end
   end
+
+  -- Register Ctrl+L keyboard shortcut to open language picker anytime
+  g_keyboard.bindKeyDown('Ctrl+L', openLanguagePicker)
 
   ProtocolGame.registerExtendedOpcode(ExtendedIds.Locale, onExtendedLocales)
   connect(g_game, { onGameStart = onGameStart })
@@ -119,10 +124,12 @@ function terminate()
   currentLocale = nil
 
   ProtocolGame.unregisterExtendedOpcode(ExtendedIds.Locale)
+  -- Unbind keyboard shortcut
+  g_keyboard.unbindKeyDown('Ctrl+L')
   if g_app.hasUpdater() then
-    disconnect(g_app, { onUpdateFinished = createWindow })
+    pcall(disconnect, g_app, { onUpdateFinished = createWindow })
   else
-    disconnect(g_app, { onRun = createWindow })
+    pcall(disconnect, g_app, { onRun = createWindow })
   end
   disconnect(g_game, { onGameStart = onGameStart })
 end
@@ -196,9 +203,39 @@ function loadGameI18nForLocale(locale)
 
   local prevGlobalLocale = rawget(_G, 'locale')
   _G.locale = locale
+
+  -- Count translations before loading to verify merge worked
+  local countBefore = 0
+  if locale.translation then
+    for _ in pairs(locale.translation) do countBefore = countBefore + 1 end
+  end
+
   -- Use absolute paths so dofile resolves correctly regardless of calling context.
-  pcall(dofile, '/locales/game_i18n_' .. locale.name)
-  pcall(dofile, '/locales/game_i18n_' .. locale.name .. '_compact')
+  -- Log errors instead of silently swallowing them via pcall.
+  local path1 = '/locales/game_i18n_' .. locale.name
+  local ok1, err1 = pcall(dofile, path1)
+  if not ok1 and err1 then
+    pwarning('[i18n] Failed to load ' .. path1 .. ': ' .. tostring(err1))
+  end
+
+  local path2 = '/locales/game_i18n_' .. locale.name .. '_compact'
+  local ok2, err2 = pcall(dofile, path2)
+  if not ok2 and err2 then
+    -- compact files are optional, only debug-log
+    pdebug('[i18n] No compact file for ' .. locale.name .. ' (ok)')
+  end
+
+  local countAfter = 0
+  if locale.translation then
+    for _ in pairs(locale.translation) do countAfter = countAfter + 1 end
+  end
+  local loaded = countAfter - countBefore
+  if loaded > 0 then
+    pdebug('[i18n] Loaded ' .. loaded .. ' game translations for ' .. locale.name)
+  elseif ok1 then
+    pwarning('[i18n] game_i18n_' .. locale.name .. ' loaded but 0 translations merged!')
+  end
+
   _G.locale = prevGlobalLocale
 end
 
@@ -253,17 +290,22 @@ end
 -- Helper to apply format patterns to a translated string.
 local function applyFormat(translation, ...)
   if translation:find("{}", 1, true) then
+    local args = {...}
     local idx = 0
     return (translation:gsub("%{%}", function()
       idx = idx + 1
-      local v = select(idx, ...)
+      local v = args[idx]
       if v == nil then
         return "{}"
       end
       return tostring(v)
     end))
   end
-  return string.format(translation, ...)
+  local ok, result = pcall(string.format, translation, ...)
+  if ok then
+    return result
+  end
+  return translation
 end
 
 -- global function used to translate texts

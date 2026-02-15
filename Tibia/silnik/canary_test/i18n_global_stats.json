@@ -1,8 +1,8 @@
 {
-  "total_cycles": 10,
+  "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-15T14:50:58.170314",
+  "category": "pl",
+  "last_update": "2026-02-15T23:46:47.821805",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -10,151 +10,30 @@
     "files_scanned_history_minus_live": 6428,
     "files_with_keys": 7,
     "files_without_keys": 8,
-    "keys_extracted": 53586,
-    "keys_extracted_live": 53586,
-    "keys_extracted_worker_registry": 53586,
+    "keys_extracted": 55980,
+    "keys_extracted_live": 55980,
+    "keys_extracted_worker_registry": 55980,
     "keys_extracted_worker_registry_raw": 7,
-    "registry_reconcile_adjustment": 53579,
+    "registry_reconcile_adjustment": 55973,
     "keys_extracted_outside_worker_registry": 0,
-    "keys_extracted_outside_worker_registry_raw": 53579,
+    "keys_extracted_outside_worker_registry_raw": 55973,
     "current_category": "errors",
     "batch_size": 110
   },
   "translation_sync": {
-    "language": "zh_TW",
-    "json_file": "npclib.json",
-    "keys_to_sync": 67
+    "language": "ar",
+    "json_file": "mounts.json",
+    "keys_to_sync": 235
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "server.json",
-    "keys_to_translate": 370,
-    "guard_fail": 150,
+    "language": "pl",
+    "json_file": "scripts.json",
+    "keys_to_translate": 55,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 219,
-    "recent_examples": [
-      {
-        "key": "src.creatures.players.player.L9794.2428",
-        "en": "Transcendence was triggered.",
-        "translated": "Se desencaden\u00f3 la trascendencia.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L5996.2395",
-        "en": "You can not add this player",
-        "translated": "No puedes agregar este jugador.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L6003.2396",
-        "en": "You can not add this player",
-        "translated": "No puedes agregar este jugador.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L6423.2397",
-        "en": "You may not yell as long as you are on level 1.",
-        "translated": "No puedes gritar mientras est\u00e9s en el nivel 1.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L6766.2400",
-        "en": "You dodged an attack.",
-        "translated": "Esquivaste un ataque.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L8622.2402",
-        "en": "You cannot leave party, contact the administrator.",
-        "translated": "No puedes abandonar la fiesta, contacta con el administrador.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9250.2403",
-        "en": "Only premium accounts may create offers for that object.",
-        "translated": "S\u00f3lo las cuentas premium pueden crear ofertas para ese objeto.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9339.2404",
-        "en": "There was an error processing your offer, please contact the administrator.",
-        "translated": "Hubo un error al procesar su oferta, comun\u00edquese con el administrador.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9502.2406",
-        "en": "You cannot accept your own offer.",
-        "translated": "No puedes aceptar tu propia oferta.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9539.2407",
-        "en": "There was an error processing your offer, please contact the administrator.",
-        "translated": "Hubo un error al procesar su oferta, comun\u00edquese con el administrador.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9570.2408",
-        "en": "You cannot accept your own offer.",
-        "translated": "No puedes aceptar tu propia oferta.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9618.2409",
-        "en": "There was an error processing your offer, please contact the administrator.",
-        "translated": "Hubo un error al procesar su oferta, comun\u00edquese con el administrador.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.game.game.L9697.2410",
-        "en": "Offline training aborted.",
-        "translated": "Se cancel\u00f3 el entrenamiento sin conexi\u00f3n.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.lua.functions.map.house.functions.L255.2417",
-        "en": "You cannot buy this house. Ownership is already scheduled to be transferred upon the next server restart.",
-        "translated": "No puedes comprar esta casa. La propiedad ya est\u00e1 programada para transferirse en el pr\u00f3ximo reinicio del servidor.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.lua.functions.map.house.functions.L256.2418",
-        "en": "You cannot sell this house. Ownership is already scheduled to be transferred upon the next server restart.",
-        "translated": "No puedes vender esta casa. La propiedad ya est\u00e1 programada para transferirse en el pr\u00f3ximo reinicio del servidor.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.server.network.protocol.protocolgame.L2871.2411",
-        "en": "You are invited to a new team.",
-        "translated": "Est\u00e1s invitado a un nuevo equipo.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.server.network.protocol.protocolgame.L2875.2412",
-        "en": "Your team finder request was accepted.",
-        "translated": "Su solicitud de b\u00fasqueda de equipo fue aceptada.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.server.network.protocol.protocolgame.L2879.2413",
-        "en": "Your team finder request was denied.",
-        "translated": "Su solicitud de b\u00fasqueda de equipo fue rechazada.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.server.network.protocol.protocolgame.L2921.2414",
-        "en": "There is a new request to join your team.",
-        "translated": "Hay una nueva solicitud para unirse a su equipo.",
-        "source": "google_translate"
-      },
-      {
-        "key": "src.server.network.protocol.protocolgame.L4707.2415",
-        "en": "There was a problem requesting your message, please contact the administrator",
-        "translated": "Hubo un problema al solicitar su mensaje, por favor contacte al administrador",
-        "source": "google_translate"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 0,
@@ -170,7 +49,7 @@
       "errors"
     ],
     "categories_scanned_count": 1,
-    "generated_at_utc": "2026-02-15T13:45:42.747752Z",
+    "generated_at_utc": "2026-02-15T19:44:55.238175Z",
     "latest_file": "i18n/status/pre_migration_todo/pre_migration_todo_latest.json"
   },
   "documentation": {
@@ -215,43 +94,49 @@
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 200,
-      "generated": "2026-02-15T13:36:30.928474Z"
+      "generated": "2026-02-15T19:34:42.383007Z"
     },
     "chatchannels": {
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 8,
-      "generated": "2026-02-15T13:37:59.866064Z"
+      "generated": "2026-02-15T19:39:08.021297Z"
     },
     "cpp": {
       "hits": 109,
       "files_with_hits": 32,
       "files_scanned": 437,
-      "generated": "2026-02-15T13:43:11.969849Z"
+      "generated": "2026-02-15T19:41:09.932028Z"
     },
     "creaturescripts": {
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 48,
-      "generated": "2026-02-15T13:37:29.684379Z"
+      "generated": "2026-02-15T19:36:10.925620Z"
     },
     "dataroot": {
       "hits": 1,
       "files_with_hits": 1,
       "files_scanned": 4,
-      "generated": "2026-02-15T13:38:18.822747Z"
+      "generated": "2026-02-15T19:39:54.110246Z"
+    },
+    "documentation": {
+      "hits": 12230,
+      "files_with_hits": 934,
+      "files_scanned": 942,
+      "generated": "2026-02-15T17:11:59.686693Z"
     },
     "errors": {
       "hits": 849,
       "files_with_hits": 141,
       "files_scanned": 2696,
-      "generated": "2026-02-15T13:45:42.747752Z"
+      "generated": "2026-02-15T19:44:55.238175Z"
     },
     "events": {
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 4,
-      "generated": "2026-02-15T13:37:52.509388Z"
+      "generated": "2026-02-15T19:38:49.759086Z"
     },
     "globalevents": {
       "hits": 0,
@@ -263,7 +148,7 @@
       "hits": 11437,
       "files_with_hits": 288,
       "files_scanned": 677,
-      "generated": "2026-02-15T13:42:49.777819Z"
+      "generated": "2026-02-15T19:40:46.792915Z"
     },
     "items": {
       "hits": 17390,
@@ -275,7 +160,7 @@
       "hits": 1691,
       "files_with_hits": 35,
       "files_scanned": 86,
-      "generated": "2026-02-15T13:37:45.350837Z"
+      "generated": "2026-02-15T19:36:51.012472Z"
     },
     "modules": {
       "hits": 965,
@@ -293,7 +178,7 @@
       "hits": 697,
       "files_with_hits": 8,
       "files_scanned": 9,
-      "generated": "2026-02-15T13:37:37.255054Z"
+      "generated": "2026-02-15T19:36:34.766069Z"
     },
     "movements": {
       "hits": 0,
@@ -311,13 +196,13 @@
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 7,
-      "generated": "2026-02-15T13:38:07.134384Z"
+      "generated": "2026-02-15T19:39:33.503624Z"
     },
     "otclient_data": {
       "hits": 1,
       "files_with_hits": 1,
-      "files_scanned": 183,
-      "generated": "2026-02-15T13:43:52.671061Z"
+      "files_scanned": 188,
+      "generated": "2026-02-15T19:42:06.373300Z"
     },
     "otclient_mods": {
       "hits": 0,
@@ -326,34 +211,34 @@
       "generated": "2026-02-15T10:33:44.506585Z"
     },
     "otclient_modules": {
-      "hits": 6587,
-      "files_with_hits": 168,
-      "files_scanned": 294,
-      "generated": "2026-02-15T13:43:34.402826Z"
+      "hits": 6721,
+      "files_with_hits": 169,
+      "files_scanned": 295,
+      "generated": "2026-02-15T19:41:35.085389Z"
     },
     "otclient_src": {
       "hits": 60,
       "files_with_hits": 19,
       "files_scanned": 366,
-      "generated": "2026-02-15T13:44:54.335564Z"
+      "generated": "2026-02-15T19:43:37.020164Z"
     },
     "otclient_tools": {
       "hits": 154,
       "files_with_hits": 8,
       "files_scanned": 8,
-      "generated": "2026-02-15T13:45:10.988782Z"
+      "generated": "2026-02-15T19:44:01.772409Z"
     },
     "php": {
       "hits": 53490,
       "files_with_hits": 2779,
       "files_scanned": 5587,
-      "generated": "2026-02-15T13:42:23.560811Z"
+      "generated": "2026-02-15T19:40:11.674874Z"
     },
     "quests": {
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 971,
-      "generated": "2026-02-15T13:36:42.150525Z"
+      "generated": "2026-02-15T19:34:58.921650Z"
     },
     "raids": {
       "hits": 1,
@@ -365,19 +250,19 @@
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 2259,
-      "generated": "2026-02-15T13:36:23.739755Z"
+      "generated": "2026-02-15T19:34:23.335706Z"
     },
     "server": {
       "hits": 109,
       "files_with_hits": 32,
       "files_scanned": 437,
-      "generated": "2026-02-15T13:45:26.089576Z"
+      "generated": "2026-02-15T19:44:26.909936Z"
     },
     "spells": {
       "hits": 191,
       "files_with_hits": 191,
       "files_scanned": 766,
-      "generated": "2026-02-15T13:36:58.719584Z"
+      "generated": "2026-02-15T19:35:17.290996Z"
     },
     "startup": {
       "hits": 36,
@@ -389,7 +274,7 @@
       "hits": 0,
       "files_with_hits": 0,
       "files_scanned": 88,
-      "generated": "2026-02-15T13:37:11.668254Z"
+      "generated": "2026-02-15T19:35:40.422626Z"
     },
     "world": {
       "hits": 0,
@@ -399,8 +284,8 @@
     }
   },
   "pre_migration_totals": {
-    "hits": 112434,
-    "files_with_hits": 5423,
-    "files_scanned": 18063
+    "hits": 124798,
+    "files_with_hits": 6358,
+    "files_scanned": 19011
   }
 }

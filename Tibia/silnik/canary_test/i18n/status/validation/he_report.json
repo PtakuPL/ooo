@@ -1,11 +1,11 @@
 {
   "lang": "he",
   "script_group": "rtl",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 5122,
   "identical_to_en": 3839,
   "placeholder_keys": 48464,
-  "coverage_pct": 9.6,
+  "coverage_pct": 9.4,
   "issues_total": 78,
   "issues_by_type": {
     "script_rtl_insufficient": 77,
@@ -148,5 +148,5 @@
     "length_ratio": 13,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:43.635896Z"
+  "validated_at": "2026-02-15T22:46:32.321709Z"
 }

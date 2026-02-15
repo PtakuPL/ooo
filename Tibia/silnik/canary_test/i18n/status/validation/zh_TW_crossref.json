@@ -1,10 +1,10 @@
 {
   "lang": "zh_TW",
-  "coverage_pct": 18.3,
+  "coverage_pct": 18.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:50:57.740753Z",
+  "checked_at": "2026-02-15T22:46:47.319382Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -761,6 +761,24 @@
       "lang": "You read: "
     },
     {
+      "key": "channel.advertising.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Advertising",
+      "pl": "Ogłoszenia",
+      "lang": "Advertising"
+    },
+    {
+      "key": "channel.advertising_rook.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Advertising-Rook",
+      "pl": "Ogłoszenia-Rookgaard",
+      "lang": "Advertising-Rook"
+    },
+    {
       "key": "channel.english_chat.name",
       "category": "chatchannels",
       "type": "pl_reference_missing_translation",
@@ -770,13 +788,13 @@
       "lang": "English Chat"
     },
     {
-      "key": "channel.tutor.name",
+      "key": "channel.gamemaster.name",
       "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tutor",
-      "pl": "Korepetytor",
-      "lang": "Tutor"
+      "en": "Gamemaster",
+      "pl": "Mistrz Gry",
+      "lang": "Gamemaster"
     },
     {
       "key": "channel.guild_leaders.name",
@@ -797,31 +815,13 @@
       "lang": "Help"
     },
     {
-      "key": "channel.advertising_rook.name",
+      "key": "channel.tutor.name",
       "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Advertising-Rook",
-      "pl": "Ogłoszenia-Rookgaard",
-      "lang": "Advertising-Rook"
-    },
-    {
-      "key": "channel.gamemaster.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
-    },
-    {
-      "key": "channel.advertising.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Advertising",
-      "pl": "Ogłoszenia",
-      "lang": "Advertising"
+      "en": "Tutor",
+      "pl": "Korepetytor",
+      "lang": "Tutor"
     },
     {
       "key": "channel.world_chat.name",

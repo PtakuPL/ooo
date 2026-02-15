@@ -2645,7 +2645,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:06:12.469493Z"
+    "updated_at": "2026-02-15T17:20:36.194961Z"
   },
   "module.gamestore.text3": {
     "src_hash": "bd4b6c6470d8ed138dc0f541b377d424",
@@ -2653,7 +2653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:06:12.470257Z"
+    "updated_at": "2026-02-15T17:20:36.195659Z"
   },
   "startup.functions.msg1": {
     "src_hash": "22790cbf726bd6e40931c59a5382464d",
@@ -6829,7 +6829,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:11:47.234250Z"
+    "updated_at": "2026-02-15T17:22:39.420081Z"
   },
   "talkaction.god.achievement.msg_remove_invalid": {
     "src_hash": "7879bd592d152bea01623b163613ff3c",
@@ -28189,7 +28189,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:16.600096Z"
+    "updated_at": "2026-02-15T19:24:59.684454Z"
   },
   "monster.norgle_glacierbeard.voice_5": {
     "src_hash": "08bb9ee5567b7f237d6c065fa2f763e8",
@@ -35901,7 +35901,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:09.888889Z"
+    "updated_at": "2026-02-15T17:06:08.987236Z"
   },
   "web.tpl.buttons.change_name.set_2": {
     "src_hash": "6eb347dc83f85f959dba1d8feaa6899b",
@@ -36053,7 +36053,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:09.889489Z"
+    "updated_at": "2026-02-15T17:06:08.988331Z"
   },
   "web.tpl.buttons.delete_character.set_3": {
     "src_hash": "02af72587b585e0bf81882623bd8e045",
@@ -36373,7 +36373,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:45:38.028680Z"
+    "updated_at": "2026-02-15T18:50:39.988354Z"
   },
   "book.otbm.welcome_to_nordic_tibia_ferries": {
     "src_hash": "a2077f4d212f10f9c2e2d19e4ca097a7",
@@ -45269,7 +45269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T21:53:12.991394Z"
+    "updated_at": "2026-02-15T16:33:25.363182Z"
   },
   "startup.startup.msg2": {
     "src_hash": "5409426cb802c71fa3d2ca6ac45b1016",
@@ -139477,7 +139477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:11:57.165154Z"
+    "updated_at": "2026-02-15T21:36:28.277768Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -143877,7 +143877,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:12:00.176183Z"
+    "updated_at": "2026-02-15T21:36:30.972477Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -149805,7 +149805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:32.856692Z"
+    "updated_at": "2026-02-15T17:06:34.408279Z"
   },
   "html.houses.view.html.text1": {
     "src_hash": "b2ffc8ca637f3e0dd94c238a10587a7e",
@@ -149941,7 +149941,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:32.857752Z"
+    "updated_at": "2026-02-15T17:06:34.409351Z"
   },
   "html.admin.changelog.html.text2": {
     "src_hash": "45fefcfed1e68096eb30bc74a40e5db9",
@@ -149957,7 +149957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:32.858969Z"
+    "updated_at": "2026-02-15T17:06:34.411362Z"
   },
   "html.admin.changelog.html.text4": {
     "src_hash": "336dad1a4bddcd7896bd87e5363823b7",
@@ -149965,7 +149965,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:35.750923Z"
+    "updated_at": "2026-02-15T17:06:37.824271Z"
   },
   "html.admin.changelog.html.text5": {
     "src_hash": "542d577daa8b1d854c0547a9fcf7c693",
@@ -150045,7 +150045,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T12:50:35.752600Z"
+    "updated_at": "2026-02-15T17:06:37.826035Z"
   },
   "html.forum.new_post.html.text3": {
     "src_hash": "a006b0a897e5103f738728bcda796b87",
@@ -156685,7 +156685,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:04.957926Z"
+    "updated_at": "2026-02-15T19:24:48.200396Z"
   },
   "monster.dworc_fleshhunter.voice_2": {
     "src_hash": "b4a06d7b380058bb8db2b239c0999e28",
@@ -156701,7 +156701,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:04.958778Z"
+    "updated_at": "2026-02-15T19:24:48.201436Z"
   },
   "monster.minotaur_mage.voice_2": {
     "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
@@ -156741,7 +156741,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:07.874739Z"
+    "updated_at": "2026-02-15T19:24:51.125557Z"
   },
   "monster.chakoya_windcaller.voice_4": {
     "src_hash": "0b662bb3b42f7a567cb02cba27ee8ba5",
@@ -156773,7 +156773,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:07.875477Z"
+    "updated_at": "2026-02-15T19:24:51.126687Z"
   },
   "monster.dworc_voodoomaster.name": {
     "src_hash": "88634eb04851ab6c4af4e68f446631a7",
@@ -156789,7 +156789,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:07.876486Z"
+    "updated_at": "2026-02-15T19:24:51.128380Z"
   },
   "monster.dworc_voodoomaster.voice_2": {
     "src_hash": "b4a06d7b380058bb8db2b239c0999e28",
@@ -156909,7 +156909,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:10.899555Z"
+    "updated_at": "2026-02-15T19:24:54.024170Z"
   },
   "monster.dworc_venomsniper.voice_2": {
     "src_hash": "b4a06d7b380058bb8db2b239c0999e28",
@@ -156981,7 +156981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:10.900276Z"
+    "updated_at": "2026-02-15T19:24:54.025320Z"
   },
   "monster.troll_champion.voice_1": {
     "src_hash": "36da4b0b2f807e420bf766771a6fa4c5",
@@ -157077,7 +157077,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:13.763653Z"
+    "updated_at": "2026-02-15T19:24:56.832865Z"
   },
   "monster.soul_broken_harbinger.desc": {
     "src_hash": "34916b9f4bce20c9ce0061ddc3fbd960",
@@ -157093,7 +157093,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:13.764201Z"
+    "updated_at": "2026-02-15T19:24:56.833483Z"
   },
   "monster.orc.voice_3": {
     "src_hash": "007a61711fcd5a9b1857114d34c63c22",
@@ -157493,7 +157493,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:19.559449Z"
+    "updated_at": "2026-02-15T19:25:02.891152Z"
   },
   "monster.roaring_water_elemental.name": {
     "src_hash": "2325dce51e39dceb562496c690b7c175",
@@ -157589,7 +157589,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:19.559956Z"
+    "updated_at": "2026-02-15T19:25:02.891805Z"
   },
   "monster.the_heat_of_summer.desc": {
     "src_hash": "595bfe3c54b0fddaff6e185a481618b0",
@@ -159341,7 +159341,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:28.880011Z"
+    "updated_at": "2026-02-15T19:25:12.927775Z"
   },
   "monster.mooh'tah_master.voice_1": {
     "src_hash": "3e434c5d00b59a7d89770bba4419aa19",
@@ -160181,7 +160181,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:32.111798Z"
+    "updated_at": "2026-02-15T19:25:15.990783Z"
   },
   "monster.grynch_clan_goblin.voice_21": {
     "src_hash": "8045276bbccc8da25a92ef4b2976997e",
@@ -160517,7 +160517,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:37.905409Z"
+    "updated_at": "2026-02-15T19:25:22.074742Z"
   },
   "monster.tomb_servant.voice_1": {
     "src_hash": "55e635b2530011c1f2077ffd6abf67ce",
@@ -160813,7 +160813,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:21:40.184218Z"
+    "updated_at": "2026-02-15T19:25:24.671305Z"
   },
   "monster.ocyakao.voice_6": {
     "src_hash": "b66740bb879537e7e71287206948b7ac",
@@ -171077,7 +171077,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:47:30.546956Z"
+    "updated_at": "2026-02-15T19:29:01.069569Z"
   },
   "data.otservbr.global.npc.rabaz.L198.626": {
     "src_hash": "09e341573bb6fd131f78ce98d2aa28b8",
@@ -171141,7 +171141,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:12:03.211454Z"
+    "updated_at": "2026-02-15T21:36:35.283072Z"
   },
   "spell.gaz'haragoth_summon.name": {
     "src_hash": "487a1ea5771dde17a071dd35c99bf596",
@@ -171149,7 +171149,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T13:12:03.212774Z"
+    "updated_at": "2026-02-15T21:36:35.283727Z"
   },
   "client.tasks.text1": {
     "src_hash": "1728c9ab0153ff21b281886f41288cae",
@@ -177446,5 +177446,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-15T13:49:57.923284Z"
+  },
+  "quest.soul_war.boss_progress_header": {
+    "src_hash": "44523c531274569607880af96df538ce",
+    "text": "Progreso hacia el acceso al jefe de Mirrored Nightmare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.834731Z"
+  },
+  "scripts.actions_devourer_access.msg_1": {
+    "src_hash": "9e1b9342419d4d7c23b729d25cca4d30",
+    "text": "¡Tu acceso a World Devourer fue liberado!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.835947Z"
+  },
+  "scripts.actions_devourer_access.msg_2": {
+    "src_hash": "5359d58b2e964269b9f14b0901f96f34",
+    "text": "¡Tu acceso a World Devourer ya está liberado!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.837135Z"
+  },
+  "scripts.actions_key1.msg_1": {
+    "src_hash": "237abb647a44fad3fc1a637c34fc9d0a",
+    "text": "<swoosh> <oomph> <tos, tos>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.839589Z"
+  },
+  "scripts.claw_of_the_noxious_spawn.msg_1": {
+    "src_hash": "659df918540db33b0957df7ac8ea6dd3",
+    "text": "¡Estás maldecido por The Noxious Spawn!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.843520Z"
+  },
+  "scripts.creaturescripts_lower_spike_kill.msg_2": {
+    "src_hash": "4b99059eb20d24e09acfec1ecbce9c57",
+    "text": "Tarea de Lower Spike completada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.844448Z"
+  },
+  "scripts.creaturescripts_middle_spike_kill.msg_2": {
+    "src_hash": "c6a9b2695f581a127426b61f062206bf",
+    "text": "Tarea de Middle Spike completada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.845353Z"
+  },
+  "scripts.creaturescripts_upper_spike_kill.msg_2": {
+    "src_hash": "717bdb51f02c111cb861b068c4ce3900",
+    "text": "Tarea de Upper Spike completada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:47.846253Z"
+  },
+  "scripts.dawnport.third_step.paladin": {
+    "src_hash": "75d6b57cf391e023c7ab86f18c4c5247",
+    "text": "Has recibido las armas de un paladín. Como paladín, puedes usar los siguientes hechizos: Magic Patch, Arrow Call.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:54.746638Z"
+  },
+  "scripts.dawnport.third_step.sorcerer": {
+    "src_hash": "13b41bae4c41c9e53579023443783311",
+    "text": "Has recibido las armas de un hechicero. Como hechicero, puedes utilizar los siguientes hechizos: Magic Patch, Buzz, Scorch.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:54.749090Z"
+  },
+  "scripts.exalted_core.msg_4": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "No se pudo generar un Soul Core.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:54.758914Z"
+  },
+  "scripts.movements_seal.msg_4": {
+    "src_hash": "eb9aca3f0c6a372bcdaf9a5dc2603dea",
+    "text": "El portal te lleva al desafío final.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:44:59.621443Z"
+  },
+  "scripts.omrafir_beam.say_1": {
+    "src_hash": "b1e8352034e99be439aaf13c373ddbcb",
+    "text": "OMRAFIR RESPIRA FUEGO INFERNAL",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:45:04.960017Z"
+  },
+  "scripts.soul_prism.msg_4": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "No se pudo generar un Soul Core.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:45:04.962579Z"
+  },
+  "scripts.thais_exhibition.say_63": {
+    "src_hash": "254eda8e961eafaf102f25f58c9c4fc3",
+    "text": "Ahora Tibia bffff... tiene sonido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:45:08.260266Z"
+  },
+  "scripts.thais_exhibition.say_80": {
+    "src_hash": "0f7fdf20938cfea5500a5deeb80eaba8",
+    "text": "Según tibia-wiki.net, los chiles jalapeños son tan picantes y famosos como el lugar de donde provienen: Ankrahmun.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:45:08.263710Z"
+  },
+  "scripts.world_board.msg_2": {
+    "src_hash": "0771c024716e94fd5c6d603a101f9776",
+    "text": "¿Te gustó? Ayude a apoyar lo que hacemos aquí con una donación visitando el enlace: https://docs.opentibiabr.com/home/donate/",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:45:08.268461Z"
+  },
+  "npc.albinius.stdmod_1": {
+    "src_hash": "a25481c27be96973de945d5290bd82fd",
+    "text": "Soy Albinio, un adorador del {Astral Shapers}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T22:45:49.684062Z"
   }
 }

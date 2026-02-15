@@ -1,10 +1,10 @@
 {
   "lang": "ar",
-  "coverage_pct": 10.6,
+  "coverage_pct": 10.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T13:49:59.641192Z",
+  "checked_at": "2026-02-15T22:45:51.783678Z",
   "issues_total": 414,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -84,42 +84,6 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
-    },
-    {
-      "key": "channel.tutor.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tutor",
-      "pl": "Korepetytor",
-      "lang": "Tutor"
-    },
-    {
-      "key": "channel.help.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Help",
-      "pl": "Pomoc",
-      "lang": "Help"
-    },
-    {
-      "key": "channel.gamemaster.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
-    },
-    {
-      "key": "channel.world_chat.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "World Chat",
-      "pl": "Czat światowy",
-      "lang": "World Chat"
     },
     {
       "key": "client.viplist.text4",
@@ -3612,6 +3576,42 @@
       "en": "Cancel",
       "pl": "Anuluj",
       "lang": "Cancel"
+    },
+    {
+      "key": "web.tpl.lastkills.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Last Kills",
+      "pl": "Ostatnie zabójstwa",
+      "lang": "Last Kills"
+    },
+    {
+      "key": "web.tpl.account.generate_recovery_key.span_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Password:",
+      "pl": "Hasło:",
+      "lang": "Password:"
+    },
+    {
+      "key": "web.tpl.commands.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Words",
+      "pl": "słowa",
+      "lang": "Words"
+    },
+    {
+      "key": "web.tpl.commands.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Options",
+      "pl": "Opcje",
+      "lang": "Options"
     }
   ],
   "length_ratio_issues": [

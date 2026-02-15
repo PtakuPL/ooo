@@ -1,11 +1,11 @@
 {
   "lang": "ja",
   "script_group": "cjk",
-  "total_keys": 53586,
+  "total_keys": 54321,
   "translated": 5138,
   "identical_to_en": 3836,
   "placeholder_keys": 48448,
-  "coverage_pct": 9.6,
+  "coverage_pct": 9.5,
   "issues_total": 8,
   "issues_by_type": {
     "V2_length_ratio": 7,
@@ -76,5 +76,5 @@
     "length_ratio": 19,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-15T13:50:44.757786Z"
+  "validated_at": "2026-02-15T22:46:35.036209Z"
 }

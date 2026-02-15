@@ -105,70 +105,70 @@
   },
   {
     "date": "2026-02-15",
-    "hours_covered": 14,
-    "threshold": 10,
+    "hours_covered": 18,
+    "threshold": 15,
     "is_final": false,
     "ts_first": "2026-02-15T00:10:25Z",
-    "ts_last": "2026-02-15T13:16:31Z",
-    "translated": 6363,
-    "guard_fail": 8073,
-    "suspicious_high": 4718,
-    "identical_to_en": 391,
+    "ts_last": "2026-02-15T19:07:22Z",
+    "translated": 8333,
+    "guard_fail": 10504,
+    "suspicious_high": 6437,
+    "identical_to_en": 622,
     "repair_start": 39656,
-    "repair_end": 39106,
-    "cycles": 368,
+    "repair_end": 39095,
+    "cycles": 557,
     "coverage_start": 10.67,
-    "coverage_end": 11.11,
-    "guard_fail_pct": 55.92,
-    "throughput_per_h": 454.5,
+    "coverage_end": 11.13,
+    "guard_fail_pct": 55.76,
+    "throughput_per_h": 462.9,
     "per_lang": {
       "pl": {
-        "t": 3410,
-        "gf": 2810,
-        "cov": 87.42
+        "t": 4549,
+        "gf": 3552,
+        "cov": 87.51
       },
       "es": {
-        "t": 2953,
-        "gf": 5263,
-        "cov": 83.73
+        "t": 3784,
+        "gf": 6952,
+        "cov": 84.14
       }
     },
     "per_cat": {
       "monsters.json": {
-        "t": 1839,
-        "gf": 1332
-      },
-      "html.json": {
-        "t": 1141,
-        "gf": 1072
+        "t": 2678,
+        "gf": 1889
       },
       "items.json": {
-        "t": 1093,
-        "gf": 378
+        "t": 1573,
+        "gf": 588
+      },
+      "html.json": {
+        "t": 1313,
+        "gf": 1188
       },
       "server.json": {
-        "t": 827,
-        "gf": 716
-      },
-      "scripts.json": {
-        "t": 391,
-        "gf": 532
+        "t": 830,
+        "gf": 1166
       },
       "questlog.json": {
-        "t": 327,
-        "gf": 483
+        "t": 567,
+        "gf": 840
+      },
+      "scripts.json": {
+        "t": 470,
+        "gf": 703
       },
       "npc.json": {
         "t": 324,
         "gf": 2535
       },
       "otclient_modules.json": {
-        "t": 227,
-        "gf": 83
+        "t": 293,
+        "gf": 99
       },
       "spells.json": {
-        "t": 95,
-        "gf": 142
+        "t": 131,
+        "gf": 194
       },
       "cpp.json": {
         "t": 48,
@@ -176,10 +176,11 @@
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 418,
-      "PRE_MIGRATION": 1051,
+      "AUTO_TRANSLATE": 615,
+      "PRE_MIGRATION": 1573,
       "TRANSLATION_SYNC": 40,
-      "IDLE": 21
+      "IDLE": 21,
+      "DOCUMENTATION": 20
     },
     "migration_completed": 15,
     "migration_total": 15

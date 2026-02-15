@@ -1,10 +1,10 @@
 {
-  "cycles": 57,
+  "cycles": 93,
   "date": "2026-02-15",
   "errors": {
-    "count": 210
+    "count": 332
   },
-  "generated_at_utc": "2026-02-15T13:51:19Z",
+  "generated_at_utc": "2026-02-15T22:46:48Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -22,7 +22,7 @@
         },
         "ES": {
           "skipped": 0,
-          "translated": 3007
+          "translated": 4370
         },
         "IT": {
           "skipped": 0,
@@ -34,7 +34,11 @@
         },
         "PL": {
           "skipped": 0,
-          "translated": 3119
+          "translated": 4485
+        },
+        "RU": {
+          "skipped": 0,
+          "translated": 33
         }
       }
     },
@@ -49,6 +53,51 @@
     },
     "translation_sync": {
       "langs": {
+        "AR": {
+          "keys_added": 247
+        },
+        "CS": {
+          "keys_added": 243
+        },
+        "DA": {
+          "keys_added": 243
+        },
+        "DE": {
+          "keys_added": 243
+        },
+        "ES": {
+          "keys_added": 243
+        },
+        "FI": {
+          "keys_added": 243
+        },
+        "FR": {
+          "keys_added": 243
+        },
+        "IT": {
+          "keys_added": 243
+        },
+        "NL": {
+          "keys_added": 243
+        },
+        "NO": {
+          "keys_added": 243
+        },
+        "PL": {
+          "keys_added": 243
+        },
+        "PT": {
+          "keys_added": 243
+        },
+        "RO": {
+          "keys_added": 243
+        },
+        "RU": {
+          "keys_added": 243
+        },
+        "SV": {
+          "keys_added": 243
+        },
         "ZH_TW": {
           "keys_added": 4506
         }

@@ -11,7 +11,7 @@
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 2259,
-    "scanned_at": "2026-02-15T13:36:23.739755Z"
+    "scanned_at": "2026-02-15T19:34:23.335706Z"
   },
   "monsters": {
     "needs_migration": 1703,
@@ -25,14 +25,14 @@
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 200,
-    "scanned_at": "2026-02-15T13:36:30.928474Z"
+    "scanned_at": "2026-02-15T19:34:42.383007Z"
   },
   "quests": {
     "needs_migration": 0,
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 971,
-    "scanned_at": "2026-02-15T13:36:42.150525Z"
+    "scanned_at": "2026-02-15T19:34:58.921650Z"
   },
   "raids": {
     "needs_migration": 1,
@@ -53,14 +53,14 @@
     "hits": 191,
     "files_with_hits": 191,
     "total_files_scanned": 766,
-    "scanned_at": "2026-02-15T13:36:58.719584Z"
+    "scanned_at": "2026-02-15T19:35:17.290996Z"
   },
   "talkactions": {
     "needs_migration": 0,
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 88,
-    "scanned_at": "2026-02-15T13:37:11.668254Z"
+    "scanned_at": "2026-02-15T19:35:40.422626Z"
   },
   "movements": {
     "needs_migration": 0,
@@ -74,7 +74,7 @@
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 48,
-    "scanned_at": "2026-02-15T13:37:29.684379Z"
+    "scanned_at": "2026-02-15T19:36:10.925620Z"
   },
   "globalevents": {
     "needs_migration": 0,
@@ -95,28 +95,28 @@
     "hits": 697,
     "files_with_hits": 8,
     "total_files_scanned": 9,
-    "scanned_at": "2026-02-15T13:37:37.255054Z"
+    "scanned_at": "2026-02-15T19:36:34.766069Z"
   },
   "libs": {
     "needs_migration": 35,
     "hits": 1691,
     "files_with_hits": 35,
     "total_files_scanned": 86,
-    "scanned_at": "2026-02-15T13:37:45.350837Z"
+    "scanned_at": "2026-02-15T19:36:51.012472Z"
   },
   "events": {
     "needs_migration": 0,
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 4,
-    "scanned_at": "2026-02-15T13:37:52.509388Z"
+    "scanned_at": "2026-02-15T19:38:49.759086Z"
   },
   "chatchannels": {
     "needs_migration": 0,
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 8,
-    "scanned_at": "2026-02-15T13:37:59.866064Z"
+    "scanned_at": "2026-02-15T19:39:08.021297Z"
   },
   "modules": {
     "needs_migration": 3,
@@ -137,77 +137,77 @@
     "hits": 0,
     "files_with_hits": 0,
     "total_files_scanned": 7,
-    "scanned_at": "2026-02-15T13:38:07.134384Z"
+    "scanned_at": "2026-02-15T19:39:33.503624Z"
   },
   "dataroot": {
     "needs_migration": 1,
     "hits": 1,
     "files_with_hits": 1,
     "total_files_scanned": 4,
-    "scanned_at": "2026-02-15T13:38:18.822747Z"
+    "scanned_at": "2026-02-15T19:39:54.110246Z"
   },
   "cpp": {
     "needs_migration": 32,
     "hits": 109,
     "files_with_hits": 32,
     "total_files_scanned": 437,
-    "scanned_at": "2026-02-15T13:43:11.969849Z"
+    "scanned_at": "2026-02-15T19:41:09.932028Z"
   },
   "server": {
     "needs_migration": 32,
     "hits": 109,
     "files_with_hits": 32,
     "total_files_scanned": 437,
-    "scanned_at": "2026-02-15T13:45:26.089576Z"
+    "scanned_at": "2026-02-15T19:44:26.909936Z"
   },
   "errors": {
     "needs_migration": 141,
     "hits": 849,
     "files_with_hits": 141,
     "total_files_scanned": 2696,
-    "scanned_at": "2026-02-15T13:45:42.747752Z"
+    "scanned_at": "2026-02-15T19:44:55.238175Z"
   },
   "otclient_modules": {
-    "needs_migration": 168,
-    "hits": 6587,
-    "files_with_hits": 168,
-    "total_files_scanned": 294,
-    "scanned_at": "2026-02-15T13:43:34.402826Z"
+    "needs_migration": 169,
+    "hits": 6721,
+    "files_with_hits": 169,
+    "total_files_scanned": 295,
+    "scanned_at": "2026-02-15T19:41:35.085389Z"
   },
   "otclient_data": {
     "needs_migration": 1,
     "hits": 1,
     "files_with_hits": 1,
-    "total_files_scanned": 183,
-    "scanned_at": "2026-02-15T13:43:52.671061Z"
+    "total_files_scanned": 188,
+    "scanned_at": "2026-02-15T19:42:06.373300Z"
   },
   "otclient_src": {
     "needs_migration": 19,
     "hits": 60,
     "files_with_hits": 19,
     "total_files_scanned": 366,
-    "scanned_at": "2026-02-15T13:44:54.335564Z"
+    "scanned_at": "2026-02-15T19:43:37.020164Z"
   },
   "otclient_tools": {
     "needs_migration": 8,
     "hits": 154,
     "files_with_hits": 8,
     "total_files_scanned": 8,
-    "scanned_at": "2026-02-15T13:45:10.988782Z"
+    "scanned_at": "2026-02-15T19:44:01.772409Z"
   },
   "php": {
     "needs_migration": 2779,
     "hits": 53490,
     "files_with_hits": 2779,
     "total_files_scanned": 5587,
-    "scanned_at": "2026-02-15T13:42:23.560811Z"
+    "scanned_at": "2026-02-15T19:40:11.674874Z"
   },
   "html": {
     "needs_migration": 288,
     "hits": 11437,
     "files_with_hits": 288,
     "total_files_scanned": 677,
-    "scanned_at": "2026-02-15T13:42:49.777819Z"
+    "scanned_at": "2026-02-15T19:40:46.792915Z"
   },
   "otclient_mods": {
     "needs_migration": 0,
@@ -215,5 +215,12 @@
     "files_with_hits": 0,
     "total_files_scanned": 0,
     "scanned_at": "2026-02-15T10:33:44.506585Z"
+  },
+  "documentation": {
+    "needs_migration": 934,
+    "hits": 12230,
+    "files_with_hits": 934,
+    "total_files_scanned": 942,
+    "scanned_at": "2026-02-15T17:11:59.686693Z"
   }
 }

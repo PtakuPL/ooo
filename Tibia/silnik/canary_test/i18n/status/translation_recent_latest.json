@@ -1,31 +1,79 @@
 {
-  "timestamp": "2026-02-15T13:51:25.698338Z",
-  "language": "pl",
-  "json_file": "spells.json",
-  "translated": 4,
+  "timestamp": "2026-02-15T22:45:50.030475Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 12,
   "entries": [
     {
-      "key": "spell.azerus_soulfire_1.name",
-      "en": "azerus soulfire 1",
-      "translated": "Azerus Soulfire 1",
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "en": "Chchch",
+      "translated": "Chchch",
       "source": "tm"
     },
     {
-      "key": "spell.mana_drain_chain.name",
-      "en": "mana drain chain",
-      "translated": "łańcuch wysysania many",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "spell.quara_constrictor_electrify.name",
-      "en": "quara constrictor electrify",
-      "translated": "quara constrictor elektryzuje",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "spell.lava_golem_soulfire2.name",
-      "en": "lava golem soulfire2",
-      "translated": "lawowy golem soulfire2",
+      "key": "npc.al_dee.stdmod_52",
+      "en": "Seymour is a teacher running the {academy}. He has many important {information} about Tibia.",
+      "translated": "Seymour es profesor y dirige el {academy}. Tiene muchos {information} importantes sobre Tibia.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.al_dee.stdmod_8",
+      "en": "As an adventurer, you should always have at least a {backpack}, a {rope}, a {shovel}, a {weapon}, an {armor} and a {shield}.",
+      "translated": "Como aventurero, siempre debes tener al menos un {backpack}, un {rope}, un {shovel}, un {weapon}, un {armor} y un {shield}.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.alexander.greet_msg_1",
+      "en": "Hi there |PLAYERNAME|, and welcome to the {magic} store.",
+      "translated": "Hola |PLAYERNAME| y bienvenido a la tienda {magic}.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.alia.stdmod_14",
+      "en": "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",
+      "translated": "Hay cinco bendiciones disponibles en cinco lugares sagrados: el escudo {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}. Además, puedes recibir el {twist of fate} aquí.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.alkestios.say_1",
+      "en": "Uhmn.. Maybe Ahmet in Ankrahmun can help we to fake this book.",
+      "translated": "Uhmn... Quizás Ahmet en Ankrahmun pueda ayudarnos a falsificar este libro.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.amanda.stdmod_16",
+      "en": "So receive my prayer: 'Wicked curses shall be broken'. Now, bring your stake to Kasmir in Darashia for the next line of the prayer. I will inform him what to do.",
+      "translated": "Así que recibe mi oración: 'Wicked curses shall be broken'. Ahora, lleva tu apuesta a Kasmir en Darashia para la siguiente línea de la oración. Le informaré qué hacer.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.amanda.stdmod_18",
+      "en": "You should visit Kasmir in Darashia now, my child.",
+      "translated": "Deberías visitar Kasmir en Darashia ahora, hija mía.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.amanda.stdmod_24",
+      "en": "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",
+      "translated": "Hay cinco bendiciones disponibles en cinco lugares sagrados: el escudo {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}. Además, puedes recibir el {twist of fate} aquí.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.albinius.stdmod_1",
+      "en": "I am Albinius, a worshipper of the {Astral Shapers}.",
+      "translated": "Soy Albinio, un adorador del {Astral Shapers}.",
       "source": "google_translate"
     }
   ]

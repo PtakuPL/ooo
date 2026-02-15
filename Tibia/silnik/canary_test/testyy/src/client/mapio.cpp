@@ -260,7 +260,7 @@ void Map::saveOtbm(const std::string& fileName)
         std::string spawnFile = getSpawnFile();
         std::string cpyf;
 
-        if ((sep_pos = fileName.rfind('.')) != std::string::npos && fileName.ends_with(".otbm"))
+        if ((sep_pos = fileName.rfind('.')) != std::string::npos && fileName.size() >= 5 && fileName.compare(fileName.size() - 5, 5, ".otbm") == 0)
             cpyf = fileName.substr(0, sep_pos);
 
         if (houseFile.empty())

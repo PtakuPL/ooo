@@ -110,3 +110,21 @@ Wykonano kolejną serię korekt w plikach różniących się od upstream, bez do
 ### Efekt Batch 3
 - W tej grupie plików usunięte wszystkie użycia `starts_with/ends_with`.
 - Zachowana dotychczasowa logika funkcjonalna (zmiany tylko składniowo-kompatybilnościowe).
+
+## Batch 4 - kolejne pliki różniące się od upstream
+Dokończono usuwanie `starts_with/ends_with` w pozostałych plikach różniących się od upstream, które jeszcze je zawierały:
+
+1. `src/framework/luaengine/luainterface.cpp`
+- `key.starts_with("on")` -> `size/compare`
+- `fileName.starts_with("/")` -> `empty/front`
+- `buffer.starts_with("function")` -> `size/compare`
+
+2. `src/client/creatures.cpp`
+- `tmp.ends_with("/")` -> `empty/back`
+
+3. `src/client/mapio.cpp`
+- `fileName.ends_with(".otbm")` -> `size/compare` suffix check
+
+### Status po Batch 4
+- W plikach różniących się od oryginału `opentibiabr/otclient` nie ma już użyć `starts_with/ends_with`.
+- Kolejny etap audytu: przegląd różnic pod `std::ranges` (tam gdzie różnimy się od upstream) i ocena, które miejsca warto podobnie odchudzić.

@@ -249,7 +249,7 @@ int LuaInterface::luaObjectSetEvent(LuaInterface* lua)
     const auto& key = lua->toString(-2);
     assert(obj);
 
-    if (key.starts_with("on")) {
+    if (key.size() >= 2 && key.compare(0, 2, "on") == 0) {
         obj->m_events[key] = true;
     }
 
@@ -336,7 +336,7 @@ void LuaInterface::loadScript(const std::string& fileName)
 {
     // resolve file full path
     std::string filePath{ fileName.data() };
-    if (!fileName.starts_with("/"))
+    if (fileName.empty() || fileName.front() != '/')
         filePath = getCurrentSourcePath() + "/" + filePath;
 
     filePath = g_resources.guessFilePath(filePath, "lua");
@@ -354,7 +354,7 @@ void LuaInterface::loadFunction(const std::string_view buffer, const std::string
     }
 
     std::string buf;
-    if (buffer.starts_with("function"))
+    if (buffer.size() >= 8 && buffer.compare(0, 8, "function") == 0)
         buf = fmt::format("__func = {}", buffer);
     else
         buf = fmt::format("__func = function(self)\n{}\nend", buffer);

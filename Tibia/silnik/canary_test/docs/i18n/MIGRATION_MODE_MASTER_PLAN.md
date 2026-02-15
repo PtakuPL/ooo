@@ -2117,3 +2117,527 @@ Sprawdzić czy generuje tekst z raw strings.
 7. OTClient → osobny pipeline (nie mieszać z serwerem)
 8. Webhooks → SKIP (nie player-visible)
 9. TESTUJ po każdej fazie: `./canary --dry-run` jeśli dostępne
+
+---
+
+## 22. MAPA PLIKÓW STATUSU I TRACKINGU (KOMPLETNA)
+
+### 22.0. Cel tej sekcji
+Każdy plik statusowy workera jest tu wymieniony z DOKŁADNĄ ścieżką, formatem danych,
+informacją kto go zapisuje/czyta (skrypt/funkcja), kiedy, i co zawiera.
+Dzięki temu można szukać pliku po nazwie i sprawdzić czy dane się zgadzają.
+
+> **Konwencja ścieżek**:
+> - Ścieżki ROOT = `./` (katalog roboczy repozytorium, `canary_test/`)
+> - Ścieżki STATUS = `i18n/status/` (podkatalog `$STATUS_DIR`)
+> - `{lang}` = kod języka ISO (pl, es, de, fr, …)
+> - `{category}` = nazwa kategorii zasobów (npc, monsters, quests, items, …)
+> - `{YYYY-MM-DD}` = data w formacie ISO
+
+---
+
+### 22.1. PLIKI KORZENIOWE (ROOT)
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| R1 | `i18n_global_stats.json` | JSON | `i18n_worker_simple.sh` (inline heredoc python w `end_of_cycle`) | `I18N_STATUS.md` generator (linia 1462), `build-worker-state` | Master stats: `total_cycles`, `mode`, `category`, `last_update`, `migration{}`, `translation_sync{}`, `auto_translate{}`, `idle{}`, `pre_migration{}`, `documentation{}`, `extraction{}`, `pre_migration_categories{}` (28 kat.), `pre_migration_totals{}` |
+| R2 | `i18n_file_status.json` | JSON | `i18n_worker_simple.sh` (func `update_file_status`, linia ~879) | STATUS generator (linia 1441, 1575) | Per-file stage tracking: `files.{path}.stages.{N_name}.status`, `.overall_status`, `.completed_at`, `.category` |
+| R3 | `i18n_processed_files.txt` | TXT | Worker (każda przetworzona ścieżka — append) | STATUS generator (linia 1441) | Flat list per-line: ścieżka pliku przetworzonego. ~400KB |
+| R4 | `i18n_progress_baseline.json` | JSON | Ręcznie / jednorazowo | Worker idle/comparison | Snapshot bazowy: `{total_keys, translated_keys, timestamp}` |
+| R5 | `i18n_status_pusher.sh` | BASH | — (skrypt) | Ręcznie / cron | `git add I18N_STATUS.md && git commit && git push` do master |
+| R6 | `I18N_STATUS.md` | Markdown | `i18n_worker_simple.sh` (inline Python, linia ~1190-2550) | Użytkownik, GitHub | Raport ludzko-czytelny: statystyki, postęp, KPI, jakość, per-język |
+
+---
+
+### 22.2. PLIKI LIVE / HEARTBEAT
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Aktualizacja | Opis |
+|---|---|---|---|---|---|---|
+| L1 | `i18n/status/activity.json` | JSON | `status_update_activity()` → `tools/i18n_status.py update-activity` | statusd, guardian, UI | **Co kilka sekund** (LIVE) | `{category, cycle, eta_seconds, file, generated_at_utc, message, phase, progress:{done,total,unit}, recent:[{action,category,cycle,file,phase,result,stage,t}×10], stage, status}` |
+| L2 | `i18n/status/worker_state.json` | JSON | `tools/i18n_status.py build-worker-state` (end_of_cycle) | statusd, STATUS generator | **Co cykl** | Per-category state: `{schema_version, built_at_utc, categories.{cat}.{status, backoff:{consecutive_zeros,skip_until_utc}, last:{delta:{files_migrated}, updated_at_utc}}}` |
+
+---
+
+### 22.3. LOGI (APPEND-ONLY JSONL)
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| J1 | `i18n/status/ops.jsonl` | JSONL | `status_log_op()` → `tools/i18n_status.py log-op` | `build-daily`, STATUS | Każda operacja: `{t, cycle, phase, stage, category, file, result, detail, keys_added, files_changed, mapped_new, translated, skipped}` |
+| J2 | `i18n/status/errors.jsonl` | JSONL | `status_log_error()` → `tools/i18n_status.py log-error` | `build-daily`, STATUS | Każdy błąd: `{t, cycle, phase, stage, category, file, error, action}` — ~586KB |
+| J3 | `i18n/status/worker_cycle_perf.jsonl` | JSONL | Worker (cycle profiling) | STATUS generator (linia 2283) | Per-cycle performance: `{timestamp, cycle, mode, category, events:{dispatch:N}}` |
+| J4 | `i18n/status/worker_cycle_perf_latest.json` | JSON | Worker | STATUS generator (linia 2203) | Najnowszy wpis z J3: `{timestamp, cycle, mode, category, events}` |
+| J5 | `i18n/status/suspicious_log.jsonl` | JSONL | Worker (guard) | STATUS generator (linia 2291) | Podejrzane tłumaczenia (flagged): `{t, lang, key, original, translated, reason}` |
+| J6 | `i18n/status/suspicious_rejected.jsonl` | JSONL | Worker (guard reject) | — | Odrzucone tłumaczenia |
+| J7 | `i18n/status/transition_log.jsonl` | JSONL | Worker (mode switch) | — | Przejścia między trybami: `{t, from_mode, to_mode, reason}` |
+| J8 | `i18n/status/lang_sequence.log` | TXT | Worker | — | Sekwencja języków w fazie AUTO_TRANSLATE |
+
+---
+
+### 22.4. PLIKI PRE-MIGRATION (Skan źródeł)
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| PM1 | `i18n/status/pre_migration_scan.json` | JSON | `tools/i18n_pre_migration_scan.py` | Worker, STATUS | Master wynik skanu: `{category}.{needs_migration, hits, files_with_hits, total_files_scanned, scanned_at}` — 28 kategorii |
+| PM2 | `i18n/status/pre_migration_todo/{category}.json` | JSON | `tools/i18n_pre_migration_scan.py` | Worker (migration mode) | Per-category todo: lista plików+trafień do zmigrowania |
+| PM3 | `i18n/status/pre_migration_todo/{category}.md` | Markdown | `tools/i18n_pre_migration_scan.py` | Użytkownik (do przeglądu) | Ludzko-czytelna wersja PM2 |
+| PM4 | `i18n/status/pre_migration_todo/{category}.csv` | CSV | `tools/i18n_pre_migration_scan.py` | Excel / narzędzia | CSV wersja PM2 |
+| PM5 | `i18n/status/pre_migration_todo/pre_migration_todo_latest.json` | JSON | `tools/i18n_pre_migration_scan.py` | Worker, STATUS | Podsumowanie: `{generated_at_utc, scope, categories_scanned, total_files_scanned, files_with_hits, hits, categories:{cat:{json_file, md_file, csv_file}}, entries_preview:[]}` |
+| PM6 | `i18n/status/pre_migration_todo/pre_migration_todo_history.jsonl` | JSONL | `tools/i18n_pre_migration_scan.py` | — (audit trail) | Historia skanów (append-only) |
+| PM7 | `i18n/status/pre_migration_todo/pre_migration_todo.csv` | CSV | `tools/i18n_pre_migration_scan.py` | Excel | Zbiorczy CSV ze wszystkich kategorii |
+
+> **Uwaga**: Katalog `pre_migration_todo/` zawiera **99 plików** (33 kategorii × 3 formaty) |
+
+---
+
+### 22.5. PLIKI TŁUMACZEŃ
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| T1 | `i18n/status/translation_global_overview.json` | JSON | Worker (phase report) | STATUS | **1773 linii**: `{global:{total_reference_keys, translated_keys, completion_pct}, migration:{files_total, total_keys_extracted}, scope_totals:{server_keys, client_keys}, per_file_drift:[{file, live, registry, drift, drift_pct}×37]}` |
+| T2 | `i18n/status/translation_guard_latest.json` | JSON | Worker (guard) | STATUS (linia 2189) | Najnowszy guard report: `{timestamp, total_checked, blocked, passed, block_rate}` |
+| T3 | `i18n/status/translation_guard_report.jsonl` | JSONL | Worker (guard) | STATUS (linia 2287) | Per-operacja: `{t, lang, key, result:"ok"/"blocked", reason}` |
+| T4 | `i18n/status/translation_recent_latest.json` | JSON | Worker | STATUS (linia 2177) | Najnowsze tłumaczenia: `{timestamp, entries:[{lang,key,value,t}]}` |
+| T5 | `i18n/status/translation_recent_report.jsonl` | JSONL | Worker | — | Fullna historia tłumaczeń |
+| T6 | `i18n/status/translation_grammar_audit_latest.json` | JSON | Worker (grammar audit) | STATUS | Wynik audytu gramatyki: `{timestamp, checked, issues}` |
+| T7 | `i18n/status/translation_grammar_audit_history.jsonl` | JSONL | Worker | — | Historia audytów |
+| T8 | `i18n/status/translation_domain_audit_latest.json` | JSON | Worker | — | Audyt domen tłumaczeń |
+| T9 | `i18n/status/translation_dispatch_state.json` | JSON | Worker | Worker | Stan dispatch tłumaczeń: `{last_lang, last_category, queue_position}` |
+| T10 | `i18n/status/translation_lang_stats_cache.json` | JSON | Worker | STATUS | Cache statystyk per-lang: `{lang:{translated, total, pct}}` |
+| T11 | `i18n/status/translation_strict_candidates_cache.json` | JSON | Worker | Worker | Cache strict candidates |
+| T12 | `i18n/status/deferred_translation_queue.jsonl` | JSONL | Worker | Worker | Kolejka odroczonych tłumaczeń — **7.8MB** |
+
+---
+
+### 22.6. PLIKI JAKOŚCI / QUALITY
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| Q1 | `i18n/status/quality_audit_latest.json` | JSON | Worker (quality audit) | STATUS (linia 2406) | `{timestamp, checked_entries, issues_found, slow_mode, issues_by_type:{}}` |
+| Q2 | `i18n/status/quality_audit_state.json` | JSON | Worker | Worker | Stan audytu: cursor, progress |
+| Q3 | `i18n/status/quality_dashboard.json` | JSON | Worker | STATUS (linia 2414) | Per-lang dashboard: `{lang:{checked, issues, quality_pct}}` |
+| Q4 | `i18n/status/quality_report.jsonl` | JSONL | Worker | — | Pełna historia audytów |
+| Q5 | `i18n/status/tier_quality_gate.json` | JSON | Worker | Worker | Brama jakości per-tier: `{tier, min_quality_pct, pass}` |
+| Q6 | `i18n/status/tier_quality_gate.jsonl` | JSONL | Worker | — | Historia bramki jakości |
+
+---
+
+### 22.7. PLIKI EKSTRAKCJI / EXTRACTION
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| E1 | `i18n/status/extraction_catalog_latest.json` | JSON | Worker (extraction) | STATUS | Katalog ekstrakcji — **704KB**: `{timestamp, total_candidates, high_confidence, review_queue, entries:[]}` |
+| E2 | `i18n/status/extraction_catalog_history.jsonl` | JSONL | Worker | — | Historia katalogów |
+| E3 | `i18n/status/extraction_crossref.json` | JSON | Worker | STATUS | Cross-reference ekstrakcji — **223KB** |
+| E4 | `i18n/status/extraction_manual_review_queue.json` | JSON | Worker | Użytkownik | Kolejka do ręcznego przeglądu — **138KB** |
+| E5 | `i18n/status/extraction_parser_health.json` | JSON | Worker | — | Zdrowie parsera ekstrakcji |
+
+---
+
+### 22.8. PLIKI DOKUMENTACJI
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| D1 | `i18n/status/documentation_state.json` | JSON | `tools/i18n_generate_project_docs.py` | Worker | Cursor + progress fazy DOCUMENTATION |
+| D2 | `i18n/status/documentation_latest.json` | JSON | `tools/i18n_generate_project_docs.py` | Worker, STATUS | Podsumowanie: `{timestamp, total_files, documented, remaining, quality_pct}` |
+| D3 | `i18n/status/documentation_quality_report.json` | JSON | `tools/i18n_generate_project_docs.py` | — | Raport jakości dokumentacji |
+| D4 | `i18n/status/documentation_unresolved_report.json` | JSON | `tools/i18n_generate_project_docs.py` | — | Nierozwiązane problemy dokumentacji |
+
+---
+
+### 22.9. PLIKI DAEMONÓW (statusd, guardian)
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| S1 | `i18n/status/statusd_state.json` | JSON | statusd daemon | guardian, STATUS | `{timestamp, status:"running", last_cycle:"ok"}` |
+| S2 | `i18n/status/statusd_report.json` | JSON | statusd daemon | Użytkownik, STATUS | Full report: `{worker:{pid, heartbeat_at, heartbeat_age_s, cycle, mode, pid_alive}, guardian:{state, throughput_per_h, guard_fail_rate_pct, issues:[]}, translation_kpi:{window_entries, total_translated, total_guard_fail, per_lang:{lang:{translated,guard_fail,pct}}}}` |
+| S3 | `i18n/status/statusd_daily_report.json` | JSON | statusd | — | Raport dzienny statusd |
+| S4 | `i18n/status/statusd_daily_report.md` | Markdown | statusd | — | Markdown wersja S3 |
+| S5 | `i18n/status/statusd_doctor.json` | JSON | statusd | — | Diagnostyka statusd: auto-healing |
+| S6 | `i18n/status/statusd.log` | TXT | statusd | — | Log demona statusd |
+| S7 | `i18n/status/statusd_thresholds_snapshot.json` | JSON | statusd | — | Snapshot progów alertów |
+| G1 | `i18n/status/guardian_daemon_state.json` | JSON | guardian daemon | statusd, STATUS | `{timestamp, state:"running", source, pid, reason, lock_age_sec}` |
+| G2 | `i18n/status/guardian_health.json` | JSON | guardian | statusd | Zdrowie guardiana: `{timestamp, state, issues}` |
+| G3 | `i18n/status/guardian_restart_metrics.json` | JSON | guardian | — | Metryki restartów workera |
+
+---
+
+### 22.10. KONTRAKTY TŁUMACZEŃ (done_contracts)
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| C1 | `i18n/status/done_contracts/{lang}_{category}.json` | JSON | Worker (AUTO_TRANSLATE) | Worker, STATUS | Zakończone tłumaczenia: `{lang, category, keys_translated, timestamp}` — ~190 plików |
+| C2 | `i18n/status/done_contract_history.jsonl` | JSONL | Worker | — | Historia kontraktów — **770KB** |
+
+---
+
+### 22.11. WALIDACJA (validation)
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| V1 | `i18n/status/validation/{lang}_crossref.json` | JSON | Worker (VALIDATION) | STATUS | Cross-reference per-lang: klucze vs EN |
+| V2 | `i18n/status/validation/{lang}_report.json` | JSON | Worker (VALIDATION) | STATUS | Raport walidacji per-lang |
+| V3 | `i18n/status/validation/{lang}_spotcheck.json` | JSON | Worker (VALIDATION) | — | Spotcheck próbki (losowa weryfikacja) |
+| V4 | `i18n/status/validation/summary.json` | JSON | Worker (VALIDATION) | STATUS | Zbiorczy summary walidacji |
+
+> **Aktualnie**: ~100 plików w validation/ (50+ języków × crossref + report)
+
+---
+
+### 22.12. SNAPSHOTY DZIENNE I HISTORYCZNE
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| H1 | `i18n/status/daily/{YYYY-MM-DD}.json` | JSON | `tools/i18n_status.py build-daily` | STATUS | Snapshot dzienny: `{date, ops_count, errors_count, categories:{}, translations:{}}` — 8 plików (2025-12-16 do 2026-02-15) |
+| H2 | `i18n/status/historia_daily.json` | JSON | Worker | — | Zbiorczy raport dzienny |
+| H3 | `i18n/status/historia_snapshots.jsonl` | JSONL | Worker | — | Snapshoty historyczne (append) |
+| H4 | `i18n/status/weekly_multilang_history.json` | JSON | Worker | — | Tygodniowa historia per-lang |
+| H5 | `i18n/status/weekly_multilang_report.json` | JSON | Worker | — | Raport tygodniowy |
+
+---
+
+### 22.13. BASELINE I RECONCILE
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| B1 | `i18n/status/baseline/baseline.json` | JSON | Worker | Worker | Bazowy snapshot do porównań |
+| B2 | `i18n/status/baseline/baseline_{date}_{pid}.json` | JSON | Worker | — | Historyczne baseline'y (10 plików) |
+| B3 | `i18n/status/registry_reconcile_latest.json` | JSON | Worker (reconcile) | STATUS (linia 1587-1615) | Wynik reconcile: `{timestamp, total_drift, per_file_drift:[]}` |
+| B4 | `i18n/status/registry_reconcile_state.json` | JSON | Worker | Worker | Stan reconcile |
+
+---
+
+### 22.14. NAPRAWA / REPAIR
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| RP1 | `i18n/status/repair_backlog_trend.jsonl` | JSONL | Worker (repair) | STATUS | Trend backlogu napraw |
+| RP2 | `i18n/status/repair_stagnation_alert.json` | JSON | Worker | — | Alert stagnacji naprawy |
+| RP3 | `i18n/status/identical_to_en_repair_queue.json` | JSON | Worker | Worker | Kolejka napraw identycznych do EN |
+| RP4 | `i18n/status/identical_to_en_repair_queue_report.jsonl` | JSONL | Worker | — | Historia napraw identical-to-EN |
+| RP5 | `i18n/status/identical_to_en_repair_tuning.jsonl` | JSONL | Worker | — | Tuning napraw |
+
+---
+
+### 22.15. FORCED COMMANDS I KOMENDY
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| FC1 | `i18n/status/forced_command_epoch_state.json` | JSON | Worker/guardian | Worker | Stan epoki: `{schema_version, updated_at_utc, current_epoch_id, current_epoch_sources:{script_mtime, script_size, worker_pid, worker_cycle}, epoch_changed, auto_baseline_on_epoch_change}` |
+| FC2 | `i18n/status/forced_command_metrics.jsonl` | JSONL | Worker | — | Historia wymuszeń komend |
+| FC3 | `i18n/status/forced_command_metrics_latest.json` | JSON | Worker | — | Najnowsze metryki wymuszenia |
+| FC4 | `i18n/status/forced_command_sla_probe_*.jsonl` | JSONL | Worker | — | SLA probe per day |
+
+---
+
+### 22.16. SŁOWNIKI I MATERIAŁY TŁUMACZENIOWE
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| DIC1 | `i18n/status/simple_translations.json` | JSON | `tools/i18n_dictionary_materialize.py` (via worker) | Worker (AUTO_TRANSLATE) | Proste tłumaczenia: `{en_phrase: {lang: translation}}` |
+| DIC2 | `i18n/status/simple_translations_base.json` | JSON | Ręcznie | Worker | Bazowe proste tłumaczenia |
+| DIC3 | `i18n/status/simple_translations_pl_candidates.json` | JSON | Worker | — | Kandydaci PL prostych tłumaczeń |
+| DIC4 | `i18n/status/word_translations.json` | JSON | `tools/i18n_dictionary_materialize.py` (via worker) | Worker | Tłumaczenia słów: `{en_word: {lang: word}}` |
+| DIC5 | `i18n/status/word_translations_base.json` | JSON | Ręcznie | Worker | Bazowe tłumaczenia słów |
+| DIC6 | `i18n/status/word_translations_pl_candidates.json` | JSON | Worker | — | Kandydaci PL słów |
+| DIC7 | `i18n/status/tibia_proper_nouns.json` | JSON | Worker (inline Python, linia 576) | Worker | Nazwy własne Tibii (nie tłumaczyć) |
+| DIC8 | `i18n/status/top_phrases_en.json` | JSON | Worker | Worker | Top frazy EN |
+| DIC9 | `i18n/status/top_words_en.json` | JSON | Worker | Worker | Top słowa EN |
+| DIC10 | `i18n/status/npclib.json` | JSON | Worker | STATUS (linia 1328) | Biblioteka NPC: zliczenie kluczy |
+| DIC11 | `i18n/status/dictionary_expansion_summary.json` | JSON | Worker | — | Podsumowanie ekspansji słownika |
+| DIC12 | `i18n/status/dictionary_materialize_summary.json` | JSON | Worker | — | Podsumowanie materializacji |
+
+---
+
+### 22.17. PLIKI POZOSTAŁE / MISC
+
+| # | Plik (dokładna ścieżka) | Format | Zapisuje | Czyta | Opis |
+|---|---|---|---|---|---|
+| M1 | `i18n/status/pending_skip_24h_latest.json` | JSON | Worker | STATUS (linia 2308) | Ostatnie pending_skip: `{count, timestamp}` |
+| M2 | `i18n/status/pending_skip_events.jsonl` | JSONL | Worker | — | Historia pending_skip eventów |
+| M3 | `i18n/status/priority_gate_watch_state.json` | JSON | Worker | Worker | Stan obserwatora bram priorytetów |
+| M4 | `i18n/status/project_file_inventory_cache.json` | JSON | Worker (inline Python, linia 1509) | STATUS | Cache inwentarza plików projektu |
+| M5 | `i18n/status/manual_review_queue.json` | JSON | Worker (inline Python, linia 735) | Użytkownik | Kolejka do ręcznego przeglądu |
+| M6 | `i18n/status/adaptive_batch_state.json` | JSON | Worker | Worker | Stan adaptacyjnego batchowania |
+| M7 | `i18n/status/grammar_audit_state.json` | JSON | Worker | Worker | Stan audytu gramatyki |
+| M8 | `i18n/status/status_sections_latest.json` | JSON | Worker (STATUS gen) | — | Surowe sekcje statusu |
+| M9 | `i18n/status/status_update_state.json` | JSON | Worker (STATUS gen) | — | Stan updatowania statusu |
+| M10 | `i18n/status/status_force_metrics_state.json` | JSON | Worker | — | Stan metryki wymuszenia |
+| M11 | `i18n/status/strict_hourly_window_latest.json` | JSON | Worker | STATUS | Najnowsze okno godzinowe strict |
+| M12 | `i18n/status/auto_translate_progress.tmp.w` | TMP | Worker | Worker | Tymczasowy plik postępu (w trakcie cyklu) |
+| M13 | `i18n/status/language_readiness.md` | Markdown | Worker | Użytkownik | Gotowość językowa (human readable) |
+| M14 | `i18n/status/i18n_global_stats.json` | JSON | Worker (kopia) | — | Kopia pliku R1 wewnątrz status/ |
+
+---
+
+### 22.18. PODKATALOGI STATUSU
+
+| Podkatalog | Ścieżka | Plików | Wzorzec nazw | Opis |
+|---|---|---|---|---|
+| **categories/** | `i18n/status/categories/` | 0 (aktualnie pusty) | `{category}.json` | Planowane: per-category status |
+| **daily/** | `i18n/status/daily/` | 8 | `{YYYY-MM-DD}.json` | Snapshoty dzienne (2025-12-16 → 2026-02-15) |
+| **done_contracts/** | `i18n/status/done_contracts/` | ~190 | `{lang}_{category}.json` | Zakończone tłumaczenia per-lang per-cat |
+| **validation/** | `i18n/status/validation/` | ~100 | `{lang}_crossref.json`, `{lang}_report.json`, `{lang}_spotcheck.json`, `summary.json` | Raporty walidacji per-lang |
+| **tm/** | `i18n/status/tm/` | ~90 | `{lang}.json`, `{lang}.json.bak` | Translation Memory per-lang |
+| **baseline/** | `i18n/status/baseline/` | 10 | `baseline.json`, `baseline_{date}_{pid}.json` | Snapshoty bazowe |
+| **pre_migration_todo/** | `i18n/status/pre_migration_todo/` | 99 | `{category}.json/.md/.csv`, `pre_migration_todo_latest.json`, `_history.jsonl`, `_todo.csv` | Wyniki skanów PRE_MIGRATION |
+
+---
+
+## 23. INTEGRACJA MIGRACJI Z SYSTEMEM STATUSU
+
+### 23.1. Przepływ danych Worker → Status
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        i18n_worker_simple.sh                                │
+│                                                                             │
+│  ┌──────────────┐     ┌──────────────────┐     ┌────────────────────────┐  │
+│  │ status_update │     │  status_log_op() │     │  status_log_error()   │  │
+│  │ _activity()   │     │                  │     │                       │  │
+│  └──────┬───────┘     └────────┬─────────┘     └──────────┬────────────┘  │
+│         │                      │                           │               │
+│         ▼                      ▼                           ▼               │
+│  tools/i18n_status.py   tools/i18n_status.py      tools/i18n_status.py   │
+│  update-activity         log-op                    log-error              │
+│         │                      │                           │               │
+│         ▼                      ▼                           ▼               │
+│  activity.json           ops.jsonl                  errors.jsonl          │
+│  (LIVE heartbeat)        (append-only)              (append-only)         │
+│                                                                             │
+│  end_of_cycle():                                                           │
+│  ├── build-daily  ──────────►  daily/{date}.json                           │
+│  ├── build-worker-state ────►  worker_state.json                           │
+│  ├── inline Python  ────────►  i18n_global_stats.json (ROOT)              │
+│  │                  ────────►  i18n_file_status.json (ROOT)               │
+│  │                  ────────►  I18N_STATUS.md (ROOT)                      │
+│  │                  ────────►  translation_global_overview.json           │
+│  │                  ────────►  worker_cycle_perf_latest.json              │
+│  └── i18n_status_pusher.sh ─►  git push I18N_STATUS.md                   │
+│                                                                             │
+│  PRE_MIGRATION:                                                            │
+│  └── i18n_pre_migration_scan.py ──► pre_migration_scan.json               │
+│                                  ──► pre_migration_todo/{cat}.json/md/csv │
+│                                  ──► pre_migration_todo_latest.json       │
+│                                                                             │
+│  AUTO_TRANSLATE:                                                           │
+│  ├── translation_guard  ────────►  translation_guard_latest.json          │
+│  │                      ────────►  translation_guard_report.jsonl         │
+│  ├── translation_recent ────────►  translation_recent_latest.json         │
+│  ├── done_contracts     ────────►  done_contracts/{lang}_{cat}.json       │
+│  │                      ────────►  done_contract_history.jsonl            │
+│  ├── grammar_audit      ────────►  translation_grammar_audit_latest.json  │
+│  ├── deferred_queue     ────────►  deferred_translation_queue.jsonl       │
+│  └── dictionary         ────────►  simple_translations.json               │
+│                         ────────►  word_translations.json                 │
+│                                                                             │
+│  VALIDATION:                                                               │
+│  └── validation engine  ────────►  validation/{lang}_crossref.json        │
+│                         ────────►  validation/{lang}_report.json          │
+│                                                                             │
+│  QUALITY:                                                                  │
+│  └── quality audit      ────────►  quality_audit_latest.json              │
+│                         ────────►  quality_dashboard.json                 │
+│                                                                             │
+│  DOCUMENTATION:                                                            │
+│  └── i18n_generate_project_docs.py ►  documentation_state.json            │
+│                                    ►  documentation_latest.json           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         DAEMON LAYER                                        │
+│                                                                             │
+│  statusd ─────► statusd_state.json, statusd_report.json                   │
+│                  statusd_daily_report.json, statusd_doctor.json            │
+│                                                                             │
+│  guardian ────► guardian_daemon_state.json, guardian_health.json            │
+│                  guardian_restart_metrics.json                              │
+│                                                                             │
+│  forced_cmd ──► forced_command_epoch_state.json                            │
+│                  forced_command_metrics.jsonl                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 23.2. Komendy Workera (worker_command.sh)
+
+| Komenda | Opis | Efekt na status |
+|---|---|---|
+| `force {category}` | Wymuś przetworzenie kategorii | `activity.json` → natychmiastowa zmiana |
+| `random` | Losowa kategoria | `activity.json` → zmiana |
+| `status` | Pokaż status | Brak zapisu |
+| `skip` | Pomiń bieżącą kategorię | `pending_skip_events.jsonl` |
+| `premig {category}` | Wymuś skan PRE_MIGRATION | `pre_migration_scan.json` + `pre_migration_todo/*` |
+| `documentation` | Tryb dokumentacji | `documentation_state.json` |
+| `docindex` | Indeksuj dokumentację | `documentation_latest.json` |
+
+### 23.3. Narzędzia (tools/) a pliki statusu
+
+| Narzędzie | Ścieżka | Zapisuje pliki |
+|---|---|---|
+| `i18n_status.py` | `tools/i18n_status.py` | `activity.json`, `ops.jsonl`, `errors.jsonl`, `daily/{date}.json`, `worker_state.json` |
+| `i18n_pre_migration_scan.py` | `tools/i18n_pre_migration_scan.py` | `pre_migration_scan.json`, `pre_migration_todo/{cat}.json/md/csv`, `pre_migration_todo_latest.json`, `pre_migration_todo_history.jsonl`, `pre_migration_todo.csv` |
+| `i18n_generate_project_docs.py` | `tools/i18n_generate_project_docs.py` | `documentation_state.json`, `documentation_latest.json` |
+| `i18n_dictionary_materialize.py` | `tools/i18n_dictionary_materialize.py` | `simple_translations.json`, `word_translations.json`, `dictionary_materialize_summary.json` |
+
+### 23.4. Tryby Workera (Phases) vs Pliki
+
+| Tryb (MODE) | Fazy/Stages | Pliki zapisywane w trybie |
+|---|---|---|
+| **PRE_MIGRATION** | `pre_migration_scan`, `pending_skip`, `pre_migration_done` | PM1-PM7, R1, L1, J1-J3 |
+| **TRANSLATION_SYNC** | `sync_start`, `sync_file_done`, `sync_done` | L1, J1, R1, R2, T1, T9 |
+| **AUTO_TRANSLATE** | `auto_start`, `parallel_start`, `auto_done` | L1, J1, T1-T12, C1-C2, DIC1-DIC12 |
+| **COMPACT_KEYS** | `keymap_sync`, `keymap_verify`, `export`, `done` | L1, J1, R1 |
+| **VALIDATION** | `validation_start`, `validation_done` | L1, J1, V1-V4, Q1-Q6 |
+| **IDLE** | `idle_cycle`, `sleeping` | L1, J1, R1 |
+| **DOCUMENTATION** | (via `i18n_generate_project_docs.py`) | D1-D4 |
+| **(lifecycle)** | `cycle_start`, `cycle_end`, `dispatch`, `signal`, `restart` | L1, L2, J1-J4, R1, R6, H1-H5 |
+
+### 23.5. WYMAGANIA DLA TRYBU MIGRATION
+
+Gdy MIGRATION zostanie włączony (`MIGRATION_ENABLED=true`), worker MUSI:
+
+1. **Przed migracją pliku**:
+   - `status_update_activity "running" $CYCLE "MIGRATION" "migration_start" $cat $file "migrating" 0 $total "files" $eta`
+   - Zapisać backup do `i18n_file_status.json` (etap `1_started`)
+
+2. **Po każdej modyfikacji pliku**:
+   - `status_log_op $CYCLE "MIGRATION" "file_migrated" $cat $file "ok" "keys=$N" $keys_added $files_changed`
+   - Zaktualizować `i18n_file_status.json` (etap odpowiedni do postępu)
+   - Zaktualizować `i18n_global_stats.json` → `migration.files_scanned++`, `migration.keys_extracted+=N`
+
+3. **Po błędzie**:
+   - `status_log_error $CYCLE "MIGRATION" "migration_fail" $cat $file "error_msg" "rollback"`
+
+4. **Po zakończeniu kategorii**:
+   - Wywołać `build-daily` i `build-worker-state`
+   - Zaktualizować `pre_migration_scan.json` (zmniejszyć `needs_migration`)
+   - Dodać wpis do `pre_migration_todo_history.jsonl`
+
+5. **Nowe pliki statusowe MIGRATION** (do stworzenia):
+   - `i18n/status/migration_progress.json` — postęp migracji: `{category, files_done, files_total, keys_migrated, keys_total, started_at, eta}`
+   - `i18n/status/migration_rollback_log.jsonl` — log rollbacków
+   - `i18n/status/migration_validation_report.json` — wynik walidacji po migracji
+
+### 23.6. SZYBKA TABELA WYSZUKIWANIA (File → Purpose)
+
+```
+activity.json                        → LIVE heartbeat workera (co kilka sek.)
+adaptive_batch_state.json            → Stan adaptacyjnego batchowania
+auto_translate_progress.tmp.w        → Tymczasowy plik postępu tłumaczeń
+baseline/baseline.json               → Bazowy snapshot porównawczy
+daily/{YYYY-MM-DD}.json              → Snapshot dzienny
+deferred_translation_queue.jsonl     → Kolejka odroczonych tłumaczeń (7.8MB)
+dictionary_expansion_summary.json    → Podsumowanie ekspansji słownika
+dictionary_materialize_summary.json  → Podsumowanie materializacji słownika
+documentation_latest.json            → Wynik ostatniego przebiegu dokumentacji
+documentation_quality_report.json    → Jakość dokumentacji
+documentation_state.json             → Cursor dokumentacji
+documentation_unresolved_report.json → Nierozwiązane problemy dokumentacji
+done_contract_history.jsonl          → Historia kontraktów tłumaczeń (770KB)
+done_contracts/{lang}_{cat}.json     → Zakończony kontrakt tłumaczenia
+errors.jsonl                         → Log błędów (586KB, append-only)
+extraction_catalog_latest.json       → Katalog ekstrakcji (704KB)
+extraction_catalog_history.jsonl     → Historia katalogów ekstrakcji
+extraction_crossref.json             → Cross-ref ekstrakcji (223KB)
+extraction_manual_review_queue.json  → Kolejka ręcznego przeglądu (138KB)
+extraction_parser_health.json        → Zdrowie parsera
+forced_command_epoch_state.json      → Stan epoki wymuszeń komend
+forced_command_metrics.jsonl         → Metryki wymuszonych komend
+forced_command_metrics_latest.json   → Najnowsze metryki wymuszenia
+grammar_audit_state.json             → Stan audytu gramatyki
+guardian_daemon_state.json           → Stan guardiana
+guardian_health.json                 → Zdrowie guardiana
+guardian_restart_metrics.json        → Metryki restartów
+historia_daily.json                  → Zbiorczy raport dzienny
+historia_snapshots.jsonl             → Historyczne snapshoty
+i18n_file_status.json (ROOT)         → Per-file stage tracking
+i18n_global_stats.json (ROOT)        → Master statystyki workera
+i18n_global_stats.json (status/)     → Kopia master stats w status/
+i18n_processed_files.txt (ROOT)      → Flat list przetworzonych plików
+i18n_progress_baseline.json (ROOT)   → Bazowy snapshot postępu
+I18N_STATUS.md (ROOT)                → Raport Markdown (pushowany do git)
+identical_to_en_repair_queue.json    → Kolejka napraw identycznych do EN
+identical_to_en_repair_queue_report.jsonl → Historia napraw
+identical_to_en_repair_tuning.jsonl  → Tuning napraw
+lang_sequence.log                    → Sekwencja języków
+language_readiness.md                → Gotowość językowa (human readable)
+manual_review_queue.json             → Kolejka ręcznego przeglądu
+npclib.json                          → Biblioteka NPC
+ops.jsonl                            → Log operacji (append-only)
+pending_skip_24h_latest.json         → Ostatnie pending_skip
+pending_skip_events.jsonl            → Historia pending_skip
+pre_migration_scan.json              → Master wynik skanu PRE_MIGRATION
+pre_migration_todo/{cat}.json        → Todo per-category (JSON)
+pre_migration_todo/{cat}.md          → Todo per-category (Markdown)
+pre_migration_todo/{cat}.csv         → Todo per-category (CSV)
+pre_migration_todo_latest.json       → Podsumowanie najnowszego skanu
+pre_migration_todo_history.jsonl     → Historia skanów
+priority_gate_watch_state.json       → Stan bramki priorytetów
+project_file_inventory_cache.json    → Cache inwentarza plików
+quality_audit_latest.json            → Wynik audytu jakości
+quality_audit_state.json             → Stan audytu jakości
+quality_dashboard.json               → Dashboard jakości per-lang
+quality_report.jsonl                 → Historia audytów jakości
+registry_reconcile_latest.json       → Wynik reconcile
+registry_reconcile_state.json        → Stan reconcile
+repair_backlog_trend.jsonl           → Trend backlogu napraw
+repair_stagnation_alert.json         → Alert stagnacji napraw
+simple_translations.json             → Proste tłumaczenia (słownik)
+simple_translations_base.json        → Bazowe proste tłumaczenia
+statusd_daily_report.json            → Raport dzienny statusd
+statusd_daily_report.md              → Markdown raport statusd
+statusd_doctor.json                  → Diagnostyka statusd
+statusd.log                          → Log demona statusd
+statusd_report.json                  → Pełny raport statusd
+statusd_state.json                   → Stan demona statusd
+statusd_thresholds_snapshot.json     → Snapshot progów alertów
+status_force_metrics_state.json      → Stan metryki wymuszenia
+status_sections_latest.json          → Surowe sekcje statusu
+status_update_state.json             → Stan updatowania statusu
+strict_hourly_window_latest.json     → Najnowsze okno godzinowe
+suspicious_log.jsonl                 → Podejrzane tłumaczenia
+suspicious_rejected.jsonl            → Odrzucone podejrzane
+tibia_proper_nouns.json              → Nazwy własne Tibii
+tier_quality_gate.json               → Brama jakości per-tier
+tier_quality_gate.jsonl              → Historia bramki
+tm/{lang}.json                       → Translation Memory per-lang
+top_phrases_en.json                  → Top frazy EN
+top_words_en.json                    → Top słowa EN
+transition_log.jsonl                 → Log przejść między trybami
+translation_dispatch_state.json      → Stan dispatch tłumaczeń
+translation_domain_audit_latest.json → Audyt domen
+translation_global_overview.json     → Globalny przegląd (1773 linii)
+translation_grammar_audit_history.jsonl → Historia audytu gramatyki
+translation_grammar_audit_latest.json → Najnowszy audyt gramatyki
+translation_guard_latest.json        → Najnowszy guard report
+translation_guard_report.jsonl       → Pełny guard report
+translation_lang_stats_cache.json    → Cache statystyk per-lang
+translation_recent_latest.json       → Najnowsze tłumaczenia
+translation_recent_report.jsonl      → Pełna historia tłumaczeń
+translation_strict_candidates_cache.json → Cache strict candidates
+validation/{lang}_crossref.json      → Cross-reference per-lang
+validation/{lang}_report.json        → Raport walidacji per-lang
+validation/{lang}_spotcheck.json     → Losowa weryfikacja
+validation/summary.json              → Zbiorczy summary
+weekly_multilang_history.json        → Historia tygodniowa per-lang
+weekly_multilang_report.json         → Raport tygodniowy
+word_translations.json               → Tłumaczenia słów (słownik)
+word_translations_base.json          → Bazowe tłumaczenia słów
+worker_cycle_perf.jsonl              → Historia wydajności cykli
+worker_cycle_perf_latest.json        → Najnowsza wydajność cyklu
+worker_state.json                    → Trwały stan workera per-category
+```
+
+### 23.7. TOTAL PLIKÓW STATUSU
+
+| Lokalizacja | Plików | Wielkość |
+|---|---|---|
+| ROOT (`./`) | 6 | ~424KB |
+| `i18n/status/` (flat) | ~105 | ~15MB+ |
+| `i18n/status/baseline/` | 10 | |
+| `i18n/status/categories/` | 0 (pusty) | |
+| `i18n/status/daily/` | 8 | |
+| `i18n/status/done_contracts/` | ~190 | |
+| `i18n/status/pre_migration_todo/` | 99 | |
+| `i18n/status/tm/` | ~90 | |
+| `i18n/status/validation/` | ~100 | |
+| **RAZEM** | **~608** | |

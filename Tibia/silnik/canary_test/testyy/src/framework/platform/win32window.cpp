@@ -567,7 +567,7 @@ Fw::Key WIN32Window::retranslateVirtualKey(const WPARAM wParam, const LPARAM lPa
     }
 
     Fw::Key key = Fw::KeyUnknown;
-    if (m_keyMap.contains(wParam))
+    if (m_keyMap.find(wParam) != m_keyMap.end())
         key = m_keyMap[wParam];
 
     // actually ignore alt/ctrl/shift keys, they is states are already stored in m_inputEvent.keyboardModifiers

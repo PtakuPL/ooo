@@ -367,7 +367,7 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
                     nextColorIndex = textLength;
                 }
 
-                if (!colorCoordsMap.contains(curColorRgba)) {
+                if (colorCoordsMap.find(curColorRgba) == colorCoordsMap.end()) {
                     colorCoordsMap.insert(std::make_pair(curColorRgba, std::make_shared<CoordsBuffer>()));
                 }
 

@@ -205,3 +205,48 @@ Wykonane zmiany (semantycznie równoważne):
   - `std::ranges::...`
   - `std::views::...`
   - `std::erase_if`
+
+## Batch 7 - zamiana `container.contains(...)` na `find != end`
+Wykonane w plikach różniących się od upstream:
+
+1. `src/client/map.cpp`
+- `nodes.contains(...)` -> `nodes.find(...) == nodes.end()`
+- `m_attachedObjectWidgetMap.contains(...)` -> `find(...) != end()`
+
+2. `src/client/mapio.cpp`
+- `m_waypoints.contains(...)` -> `find(...) == end()`
+
+3. `src/client/minimap.h`
+- `m_tileBlocks[pos.z].contains(...)` -> `find(...) != end()`
+
+4. `src/framework/graphics/bitmapfont.cpp`
+- `colorCoordsMap.contains(...)` -> `find(...) == end()`
+
+5. `src/framework/graphics/drawpool.h`
+- `m_parameters.contains(...)` -> `find(...) != end()`
+
+6. `src/framework/input/mouse.cpp`
+- `m_cursors.contains(...)` -> `find(...) != end()`
+
+7. `src/framework/platform/win32window.cpp`
+- `m_keyMap.contains(...)` -> `find(...) != end()`
+
+8. `src/framework/proxy/proxy_client.cpp`
+- `m_proxies.contains(...)` -> `find(...) == end()`
+
+9. `src/framework/sound/soundmanager.cpp`
+- `m_clientSoundFiles.contains(...)` -> `find(...) != end()`
+
+10. `src/framework/stdext/storage.h`
+- `m_data.contains(...)` -> `find(...) != end()`
+
+11. `src/framework/ui/uianchorlayout.cpp`
+- `m_anchorsGroups.contains(...)` -> `find(...) != end()`
+
+12. `src/framework/ui/uitextedit.cpp`
+- `colorCoordsMap.contains(...)` -> `find(...) == end()`
+
+### Pozostałe `contains(...)` po Batch 7
+Pozostawione świadomie (nie dotyczą `std::*::contains`):
+- metody domenowe geometrii: `Rect::contains(...)` itd.
+- `nlohmann::json::contains(...)` w `framework/net/httplogin.cpp`

@@ -395,7 +395,7 @@ void Session::selectProxies()
             m_proxies.erase(proxy);
             continue;
         }
-        if (!m_proxies.contains(proxy)) {
+        if (m_proxies.find(proxy) == m_proxies.end()) {
             if (!candidate_proxy || proxy->getPing() < candidate_proxy->getPing()) {
                 candidate_proxy = proxy;
             }

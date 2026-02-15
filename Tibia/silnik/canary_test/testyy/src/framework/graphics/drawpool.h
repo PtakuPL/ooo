@@ -331,7 +331,7 @@ private:
         return T();
     }
     bool containsParameter(const std::string_view name) {
-        return m_parameters.contains(name);
+        return m_parameters.find(name) != m_parameters.end();
     }
     void removeParameter(const std::string_view name) {
         const auto& it = m_parameters.find(name);

@@ -131,7 +131,7 @@ void UIAnchorLayout::removeAnchors(const UIWidgetPtr& anchoredWidget)
 
 bool UIAnchorLayout::hasAnchors(const UIWidgetPtr& anchoredWidget) const
 {
-    return m_anchorsGroups.contains(anchoredWidget);
+    return m_anchorsGroups.find(anchoredWidget) != m_anchorsGroups.end();
 }
 
 void UIAnchorLayout::centerIn(const UIWidgetPtr& anchoredWidget, const std::string_view hookedWidgetId)

@@ -915,7 +915,7 @@ std::tuple<std::vector<Otc::Direction>, Otc::PathFindResult> Map::findPath(const
                 const float cost = currentNode->cost + (speed * walkFactor) / 100.0f;
 
                 SNode* neighborNode;
-                if (!nodes.contains(neighborPos)) {
+                if (nodes.find(neighborPos) == nodes.end()) {
                     neighborNode = new SNode(neighborPos);
                     nodes[neighborPos] = neighborNode;
                 } else {
@@ -1178,7 +1178,7 @@ bool Map::isSightClear(const Position& fromPos, const Position& toPos)
 }
 
 bool Map::isWidgetAttached(const UIWidgetPtr& widget) const {
-    return m_attachedObjectWidgetMap.contains(widget);
+    return m_attachedObjectWidgetMap.find(widget) != m_attachedObjectWidgetMap.end();
 }
 
 void Map::addAttachedWidgetToObject(const UIWidgetPtr& widget, const AttachableObjectPtr& object) {

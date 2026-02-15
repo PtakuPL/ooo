@@ -105,7 +105,7 @@ public:
 
 private:
     Rect calcMapRect(const Rect& screenRect, const Position& mapCenter, float scale) const;
-    bool hasBlock(const Position& pos) { return m_tileBlocks[pos.z].contains(getBlockIndex(pos)); }
+    bool hasBlock(const Position& pos) { return m_tileBlocks[pos.z].find(getBlockIndex(pos)) != m_tileBlocks[pos.z].end(); }
     MinimapBlock& getBlock(const Position& pos)
     {
         SpinLock::Guard lock(m_lock);

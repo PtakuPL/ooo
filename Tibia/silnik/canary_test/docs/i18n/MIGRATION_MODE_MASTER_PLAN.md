@@ -4,6 +4,110 @@
 **Data**: 2026-02-15  
 **Cel**: Worker tryb MIGRATION — samoistna zamiana tekstów w kodzie na klucze i18n  
 **Priorytet**: Musi działać autonomicznie przez tydzień bez interwencji  
+**Ostatnia aktualizacja**: 2026-02-15 19:20 UTC
+
+---
+
+## 📊 POSTĘP REALIZACJI PLANU
+
+### Sekcje planu — status:
+
+| # | Sekcja | Status | Notatki |
+|--:|--------|--------|---------|
+| 1 | Statystyki PRE-MIGRACJI | ✅ Gotowe | 124,798 hitów, 6,358 plików, 32 kategorii |
+| 2 | Klasyfikacja wzorców (Typ A-G) | ✅ Gotowe | 7 typów zdefiniowanych |
+| 3 | Architektura trybu MIGRATION | ✅ Gotowe | Pipeline, reguły, konwencje kluczy |
+| 4 | Strategie migracji per język | ✅ Gotowe | Lua, C++, XML, PHP, HTML |
+| 5 | Priorytetyzacja faz (1-4) | ✅ Gotowe | 4 fazy zdefiniowane |
+| 6 | Narzędzie `tools/i18n_migrate.py` | ✅ **ZAIMPLEMENTOWANE** | 600 linii, 4 klasy, 16 kategorii |
+| 7 | Integracja z workerem | ✅ **ZAIMPLEMENTOWANE** | Dispatcher + komendy MIGRATION/DRYRUN |
+| 8 | Trudne przypadki | ✅ Gotowe | Pluralizacja, gender, daty, multiline |
+| 9 | Walidacja i safety | ✅ Gotowe | luac/php -l/xml, rollback |
+| 10 | ACTION ITEMS (AI-1..AI-10) | 🔶 **6/10 DONE** | AI-1..AI-6 ✅, AI-7..AI-10 ⏳ |
+| 11 | Podsumowanie ryzyk | ✅ Gotowe | 8 ryzyk z mitygacjami |
+| 12 | Kompletna taksonomia źródeł | ✅ Gotowe | 19 podsekcji (12.0-12.19) |
+| 13 | Status plików migracji | ✅ Gotowe | 608 plików zmapowanych |
+| 14 | Status migracji per plik | ✅ Gotowe | Tabele z hitami per plik |
+| 15 | Monsters XML migration | ✅ Gotowe | 1,703 hitów |
+| 16 | PHP/WWW migration | ✅ Gotowe | 2,779 hitów |
+| 17 | OTClient migration | ✅ Gotowe | 169+ hitów |
+| 18 | Priorytety końcowe | ✅ Gotowe | P0-P4 ranking |
+| 19 | Dodatkowe niezmigrowane wzorce | ✅ Gotowe | 11 deep-scan podsekcji |
+| 20 | Kompletna matryca migracji | ✅ Gotowe | DONE / TODO / SKIP |
+| 21 | Podsumowanie planu | ✅ Gotowe | Fazy 0-7, ~3,800 kluczy |
+| 22 | Mapa plików statusu | ✅ Gotowe | 18 podsekcji, pełna mapa |
+| 23 | Integracja migracji z systemem statusu | ✅ Gotowe | 7 podsekcji |
+| 24 | Detekcja zakończenia PRE_MIGRATION | ✅ **ZAIMPLEMENTOWANE** | 32/32 kat., `pre_migration_complete.json` |
+
+### ACTION ITEMS — postęp:
+
+| AI | Zadanie | Status | Data | Szczegóły |
+|---:|---------|--------|------|-----------|
+| 1 | `tools/i18n_migrate.py` — MigrationEngine + klasy | ✅ Done | 2026-02-15 | 600 linii, 4 klasy główne |
+| 2 | HitClassifier — reguły filtrowania | ✅ Done | 2026-02-15 | 22 SKIP patterns (SQL, CSS, debug, paths...) |
+| 3 | CodeTransformer per język | ✅ Done | 2026-02-15 | 6 transformerów: lua×2, cpp, php, twig, xml |
+| 4 | MIGRATION case w workerze | ✅ Done | 2026-02-15 | Gate `MIGRATION_ENABLED` + wywołanie engine |
+| 5 | Komendy MIGRATION/DRYRUN | ✅ Done | 2026-02-15 | `MIGRATION:{cat}:{batch}:{scope}`, `MIGRATION_DRYRUN:` |
+| 6 | Dry-run testy | ✅ Done | 2026-02-15 | errors=1,547 hits/3 files, cpp=9 hits/2 files |
+| 7 | Test `errors` (141 plików) | ⏳ Pending | - | Wymaga `MIGRATION_ENABLED=true` |
+| 8 | Test `libs` (35 plików) | ⏳ Pending | - | Wymaga `MIGRATION_ENABLED=true` |
+| 9 | Test `mounts/XML` (8 plików) | ⏳ Pending | - | Wymaga `MIGRATION_ENABLED=true` |
+| 10 | Faza 1 produkcja | ⏳ Pending | - | errors → libs → mounts → cpp proposals |
+
+### Fazy migracji — postęp:
+
+| Faza | Opis | Kluczy | Status |
+|-----:|------|-------:|--------|
+| 0 | Uzupełnienie pustaków (mounts, outfits...) | ~100 | ⏳ Czeka |
+| 1 | XML Data Extraction (imbuements, charms...) | ~200 | ⏳ Czeka |
+| 2 | Quest System (quests.lua) | ~2,400 | ⏳ Czeka |
+| 3 | GameStore (kategorie, oferty) | ~1,000 | ⏳ Czeka |
+| 4 | Misc Lua (map markers, modal buttons...) | ~50 | ⏳ Czeka |
+| 5 | C++ Proposals | 2-3 | ⏳ Czeka |
+| 6 | OTClient Sync Pipeline | (infra) | ⏳ Czeka |
+| 7 | PHP Full Migration | TBD | ⏳ Czeka |
+
+### PRE_MIGRATION — status:
+
+| Metryka | Wartość |
+|---------|---------|
+| Kategorii przeskanowanych | **32/32** ✅ |
+| Kategorii czystych (0 hitów) | 12 |
+| Kategorii z hitami | 20 |
+| Łącznie hitów | 124,798 |
+| Plików z hitami | 6,358 |
+| Stabilność skanów | ✅ stable |
+| Plik statusu | `i18n/status/pre_migration_complete.json` |
+
+### Infrastruktura — co zaimplementowano:
+
+| Komponent | Plik | Linie | Status |
+|-----------|------|------:|--------|
+| Migration Engine | `tools/i18n_migrate.py` | ~600 | ✅ Nowy |
+| HitClassifier | `tools/i18n_migrate.py` | — | ✅ 22 reguł SKIP |
+| KeyGenerator | `tools/i18n_migrate.py` | — | ✅ 16 kategorii domen |
+| CodeTransformer | `tools/i18n_migrate.py` | — | ✅ 6 transformerów |
+| Worker MIGRATION case | `i18n_worker_simple.sh` | ~21610 | ✅ Rozbudowane |
+| Worker commands regex | `i18n_worker_simple.sh` | ~20856 | ✅ +2 komendy |
+| PRE_MIGRATION complete | `i18n_worker_simple.sh` | ~21670 | ✅ Nowy blok |
+| PRE_MIGRATION status | `i18n/status/pre_migration_complete.json` | — | ✅ Nowy |
+| Migration log | `i18n/status/migration_log.json` | — | ✅ Nowy |
+| Migration proposals | `i18n/status/migration_proposals/` | — | ✅ Nowy dir |
+
+### Blokady:
+
+| Element | Wartość | Znaczenie |
+|---------|---------|-----------|
+| `MIGRATION_ENABLED` | `false` | 🔒 Migracja kodu permanentnie zablokowana |
+| Komendy MIGRATION/DRYRUN | Zdefiniowane | Parser gotowy, ale engine zablokowany |
+| C++ proposals | Auto-forced | Nigdy auto-modify, zawsze `.diff` |
+
+### Commity tej sesji:
+
+| Hash | Opis |
+|------|------|
+| `3669bf158` | PRE_MIGRATION completion detection (sekcja 24) |
+| `d481a718e` | MIGRATION engine AI-1..AI-6 (tools/i18n_migrate.py + worker) |
 
 ---
 

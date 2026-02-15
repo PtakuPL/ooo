@@ -856,3 +856,1264 @@ Worker trzyma kopie zapasowe przez 7 dni. Po tym: git history.
 | C++ zmiana wymaga rekompilacji | Pewne | 🔴 Wysoki | PROPOSALS ONLY mode |
 | Worker loop na błędnym pliku | Niskie | 🟡 Średni | Skip + blacklist po 3 failures |
 | Race condition (2 workers) | Niskie | 🟡 Średni | Lock file per plik |
+
+---
+
+## 12. KOMPLETNA TAKSONOMIA ŹRÓDEŁ TEKSTU (ROZSZERZENIE)
+
+### 12.0. Stan aktualny — inwentaryzacja kluczy i18n
+
+**AKTUALNIE ZMIGROWANE** (53,586 kluczy EN):
+
+| Kategoria JSON | Klucze | Status |
+|---|---:|---|
+| items.json | 17,057 | ✅ Wyodrębnione z XML |
+| npc.json | 13,769 | ✅ NPC dialogi zmigrowane |
+| monsters.json | 5,915 | ✅ Nazwy/opisy monstrów |
+| server.json | 2,574 | ✅ Lua system scripts |
+| scripts.json | 2,170 | ✅ Quest/action scripts |
+| otclient_modules.json | 1,987 | ✅ OTClient moduły |
+| questlog.json | 1,918 | ✅ Quest log nazwy/opisy |
+| spells.json | 1,534 | ✅ Zaklęcia |
+| html.json | 1,495 | ✅ HTML templates |
+| books.json | 1,403 | ✅ Książki/zwoje/listy |
+| achievements.json | 1,048 | ✅ Osiągnięcia |
+| cpp.json | 879 | ✅ C++ server messages |
+| quests.json | 610 | ✅ Quest system |
+| raids.json | 273 | ✅ Rajdy (announce msg) |
+| client.json | 242 | ✅ Klient Lua |
+| talkactions.json | 199 | ✅ Komendy/talkactions |
+| npclib.json | 147 | ✅ NPC library |
+| libs.json | 89 | ✅ Lua libraries |
+| otclient_data.json | 72 | ✅ OTClient data |
+| php.json | 59 | ✅ PHP WWW |
+| Inne (10 plików) | ~111 | ✅ Różne |
+| **RAZEM zmigrowane** | **53,586** | |
+
+**BRAKUJĄCE** (jeszcze NIE zmigrowane):
+
+| Źródło | Szacowana ilość | Kategoria JSON | Priorytet |
+|---|---:|---|---|
+| GameStore nazwy/opisy | ~760 | store.json | P2 |
+| Quest nazwy/opisy (quests.lua) | ~505 + ~1950 missions | questlog.json (rozszerzenie) | P1 |
+| House nazwy | ~993 | houses.json | P4 |
+| Bestiary klasy/locations | ~30 klas + locations | bestiary.json | P2 |
+| Bestiary charmy (nazwy+opisy) | ~26 | charms.json | P2 |
+| Imbuement nazwy/opisy/kategorie | ~18 kat + ~50+ imbuements | imbuements.json | P2 |
+| Map markers | ~38 | markers.json | P3 |
+| Condition messages (C++) | ~5-10 | cpp.json (rozszerzenie) | P1 |
+| OTClient src (C++ strings) | ? | otclient_src.json | P3 |
+| Mounts (nazwy puste!) | ~50+ | mounts.json | P2 |
+| Familiars (nazwy) | ~10+ | familiars.json | P2 |
+| Outfits/vocations (nazwy) | ~25 outfits + ~8 voc | outfits.json / vocations.json | P2 |
+| Groups (nazwy) | 4 | groups.json | P4 |
+| Chat channels (nazwy) | ~10 | chatchannels.json (być może uzupełnić) | P3 |
+| Attached effects | ~5+ | attachedeffects.json | P4 |
+| Event nazwy/opisy (events.xml) | ~5+ | events.json (rozszerzenie) | P3 |
+| C++ tile.cpp/item_parse.cpp resztki | 2-3 | cpp.json (rozszerzenie) | P1 |
+| Bank receipts (hireling) | 1 format | libs.json (rozszerzenie) | P3 |
+| Database defaults (VIP groups) | 3 | db.json | P4 |
+| Config.lua (serverMotd, serverName) | 2 | Nie migrować (per-server) | SKIP |
+
+---
+
+### 12.1. ŹRÓDŁO: Quest System (quests.lua) — 503 questów, 1950 misji
+
+**Plik**: `data-otservbr-global/lib/core/quests.lua` (6715 linii)
+
+**Struktura danych**:
+```lua
+Quests = {
+    [1] = {
+        name = "The Queen of the Banshees",           -- TŁUMACZYĆ
+        missions = {
+            [1] = {
+                name = "The Hidden Seal",              -- TŁUMACZYĆ
+                description = "You broke the first seal.", -- TŁUMACZYĆ
+            },
+            [2] = {
+                name = "The Plague Seal",
+                description = function(player)         -- DYNAMICZNY! (patrz niżej)
+                    ...
+                end,
+            },
+        },
+    },
+}
+```
+
+**UWAGA KRYTYCZNA**: Niektóre opisy misji to FUNKCJE Lua, nie stringi!
+```lua
+description = function(player)
+    local status = player:getStorageValue(Storage.Quest....)
+    if status == 1 then return "Find the hidden passage." end
+    if status == 2 then return "You found the passage." end
+end
+```
+
+**Strategia migracji**:
+```lua
+-- Proste nazwy/opisy → klucz i18n:
+name = "#i18n:questlog.banshee.name"
+description = "#i18n:questlog.banshee.seal_1.desc"
+
+-- Dynamiczne opisy (funkcje) → klucze wewnątrz funkcji:
+description = function(player)
+    local status = player:getStorageValue(...)
+    if status == 1 then return "#i18n:questlog.banshee.seal_2.status_1" end
+    if status == 2 then return "#i18n:questlog.banshee.seal_2.status_2" end
+end
+```
+
+**Mechanizm**: System quest log już obsługuje `#i18n:` prefix w `translateQuestlogKey()`.
+Wystarczy zmienić wartości w tablicy Quests.
+
+---
+
+### 12.2. ŹRÓDŁO: GameStore (gamestore.lua) — 760 ofert
+
+**Plik**: `data/modules/scripts/gamestore/gamestore.lua` (6801 linii)
+
+**Struktura**:
+```lua
+{
+    name = "Consumables",          -- Nazwa kategorii
+    offers = {
+        {
+            name = "Great Health Cask",   -- Nazwa oferty
+            description = "...",           -- Opis oferty (z HTML: &#8226;)
+            type = OFFER_TYPE_STACKABLE,
+        }
+    }
+}
+```
+
+**Typy ofert** (27 typów):
+OFFER_TYPE_ALLBLESSINGS, OFFER_TYPE_BLESSINGS, OFFER_TYPE_CHARGES,
+OFFER_TYPE_CHARMS, OFFER_TYPE_EXPBOOST, OFFER_TYPE_HIRELING,
+OFFER_TYPE_HIRELING_NAMECHANGE, OFFER_TYPE_HIRELING_OUTFIT,
+OFFER_TYPE_HIRELING_SEXCHANGE, OFFER_TYPE_HIRELING_SKILL,
+OFFER_TYPE_HOUSE, OFFER_TYPE_HUNTINGSLOT, OFFER_TYPE_INSTANT_REWARD_ACCESS,
+OFFER_TYPE_ITEM_BED, OFFER_TYPE_ITEM_UNIQUE, OFFER_TYPE_MOUNT,
+OFFER_TYPE_NAMECHANGE, OFFER_TYPE_NONE, OFFER_TYPE_OUTFIT,
+OFFER_TYPE_OUTFIT_ADDON, OFFER_TYPE_PREMIUM, OFFER_TYPE_PREYBONUS,
+OFFER_TYPE_PREYSLOT, OFFER_TYPE_PROMOTION, OFFER_TYPE_SEXCHANGE,
+OFFER_TYPE_STACKABLE, OFFER_TYPE_TEMPLE
+
+**Specjalna trudność**: Opisy blessingów zawierają HTML entities (`&#8226;`),
+dynamiczne interpolacje (`{character}`, `{limit|5}`, `{info}`, `{activated}`)
+i warunkową budowę tekstu (VIP bonusy):
+```lua
+if vipBonusExp > 0 then
+    premiumDescription = premiumDescription .. "&#8226; +" .. vipBonusExp .. "% experience rate\n"
+end
+```
+
+**Strategia**: 
+1. Statyczne nazwy kategorii/ofert → proste klucze
+2. Opisy z HTML → jeden klucz, zachować HTML entities
+3. Dynamiczne opisy VIP → klucz z placeholder per linia + concat
+
+```lua
+name = i18n::t("store.category.consumables")
+description = i18n::t("store.blessing.all_regular.desc") 
+-- VIP description (dynamiczne):
+premiumDescription = i18n::t("store.vip.desc_header")
+if vipBonusExp > 0 then
+    premiumDescription = premiumDescription .. "\n" .. 
+        i18n::t("store.vip.bonus_exp", {tostring(vipBonusExp)})
+end
+```
+
+---
+
+### 12.3. ŹRÓDŁO: Bestiary System — klasy, lokacje, charmy
+
+**Monster.Bestiary w plikach .lua** (1637 monstrów):
+```lua
+monster.Bestiary = {
+    class = "Aquatic",                    -- TŁUMACZYĆ (30 unikalnych klas)
+    race = BESTY_RACE_AQUATIC,            -- Enum, NIE tłumaczyć
+    Locations = "Ancient Ancestorial Grounds and Sunken Temple.", -- TŁUMACZYĆ
+}
+```
+
+**Bestiary klasy** (do wyodrębnienia):
+Aquatic, Amphibic, Bird, Construct, Demon, Dragon, Elemental,
+Extra Dimensional, Fey, Giant, Human, Humanoid, Lycanthrope,
+Magical, Mammal, Plant, Reptile, Slime, Undead, Vermin, ...
+
+**Bestiary charmy** (`data/scripts/systems/bestiary_charms.lua`, 26 charm):
+```lua
+{ name = "Wound", description = "Triggers on a creature with a certain chance and deals 5% ..." }
+{ name = "Enflame", description = "..." }
+{ name = "Dodge", description = "Dodges an attack with a certain chance without taking any damage at all." }
+```
+
+**Strategia**:
+```lua
+-- Klasy — klucz per klasa:
+class = i18n::t("bestiary.class.aquatic") -- lub użyć ID klasy
+
+-- Lokacje — klucz per monster:
+Locations = i18n::t("bestiary.locations.deathling_spellsinger")
+
+-- Charmy — klucz per charm:
+name = i18n::t("bestiary.charm.wound.name")
+description = i18n::t("bestiary.charm.wound.desc")
+```
+
+**C++ bestiary** — JUŻ ZMIGROWANY (iobestiary.cpp używa `tr.get/tr.format`)
+
+---
+
+### 12.4. ŹRÓDŁO: Imbuement System (imbuements.xml) — 18 kategorii, 50+ imbuements
+
+**Plik**: `data/XML/imbuements.xml`
+
+**Struktura**:
+```xml
+<base id="1" name="Basic" price="5000" ... />
+<base id="2" name="Intricate" price="30000" ... />
+<base id="3" name="Powerful" price="200000" ... />
+
+<category id="0" name="Elemental Damage" agressive="1" />
+<category id="11" name="Skillboost (Axe Fighting)" agressive="1" />
+
+<imbuement name="Scorch" base="1" subgroup=" (Fire)" category="0">
+    <attribute key="description" value="Converts 10% of the physical damage to fire damage." />
+</imbuement>
+```
+
+**Do tłumaczenia**:
+- 3 base names: "Basic", "Intricate", "Powerful"
+- 18 category names: "Elemental Damage", "Life Leech", "Mana Leech", etc.
+- ~50+ imbuement names: "Scorch", "Venom", "Frost", "Electrify", etc.
+- ~50+ imbuement descriptions
+
+**Strategia**: Parser C++ szuka tłumaczenia po `id`, podobnie jak items:
+```
+imbuement.base.1.name = "Basic"
+imbuement.category.0.name = "Elemental Damage"
+imbuement.scorch.1.name = "Scorch"
+imbuement.scorch.1.desc = "Converts 10% of the physical damage to fire damage."
+```
+
+**C++ imbuement messages** — JUŻ ZMIGROWANE (sendImbuementResult używa `tr.get`)
+
+---
+
+### 12.5. ŹRÓDŁO: Houses (otservbr-house.xml) — 993 domów
+
+**Plik**: `data-otservbr-global/world/otservbr-house.xml`
+
+```xml
+<house name="Castle of the Winds" houseid="2628" ... guildhall="true" />
+<house name="Ab'Dendriel Clanhall" houseid="2629" ... />
+<house name="Underwood 9" houseid="2630" ... />
+```
+
+**Priorytet**: P4 (niski) — nazwy domów są głównie lokacyjne/adresowe.
+Wiele to nazwy ulic z numerami ("Underwood 9", "Treetop 13").
+Guildhallom i zamkom warto nadać klucze.
+
+**Strategia**: Parser C++ szuka `house.{houseid}.name`, fallback na XML `name=`.
+Tylko guildhalle i zamki → tłumaczyć. Reszta → SKIP.
+
+---
+
+### 12.6. ŹRÓDŁO: XML Definitions (outfits, vocations, familiars, groups, channels)
+
+#### Outfits (`data/XML/outfits.xml`) — ~25 base outfitów
+```xml
+<outfit name="Citizen" looktype="128" enabled="1" unlocked="1" premium="0"/>
+<outfit name="Hunter" looktype="129" enabled="1" unlocked="1" premium="0"/>
+```
+Klucze: `outfit.{looktype}.name`
+
+#### Vocations (`data/XML/vocations.xml`) — 8 vocacji
+```xml
+<vocation id="1" clientid="3" name="Sorcerer" description="a sorcerer" .../>
+```
+Klucze: `vocation.{id}.name`, `vocation.{id}.description`
+
+**C++ vocation** — CZĘŚCIOWO zmigrowane (getVocationName w tools.cpp).
+Ale `getSkillNameById()` w game.cpp zwraca RAW DB column names (`skill_fist`,
+`skill_club`) — to NIE SĄ player-visible, to SQL kolumny. SKIP.
+
+#### Familiars (`data/XML/familiars.xml`) — ~10 familiarów
+```xml
+<familiar id="1" name="Thundergiant" lookType="1549" .../>
+```
+Klucze: `familiar.{id}.name`
+
+#### Groups (`data/XML/groups.xml`) — 4 grupy
+```xml
+<group id="1" name="player" flags="..." maxDepotItems="2000" maxVipEntries="200"/>
+<group id="2" name="tutor" ... />
+<group id="3" name="senior tutor" ... />
+<group id="4" name="gamemaster" ... />
+```
+Klucze: `group.{id}.name` — niski priorytet, rzadko widoczne graczom.
+
+#### Chat Channels (`data/chatchannels/chatchannels.xml`) — ~10 kanałów
+```xml
+<channel id="5" name="World Chat" script="worldchat.lua" public="1" />
+<channel id="7" name="Help" script="help.lua" public="1" />
+<channel id="12" name="Advertising" script="advertising.lua" public="1" />
+```
+Klucze: `chatchannel.{id}.name` — JUŻ mogą być w chatchannels.json (16 kluczy)
+
+#### Attached Effects (`data/XML/attachedeffects.xml`)
+```xml
+<effect id="1" name="Outfit - Rainbow" />
+```
+Klucze: `attachedeffect.{id}.name` — niski priorytet
+
+---
+
+### 12.7. ŹRÓDŁO: Spells (Lua definitions) — 173 zaklęcia
+
+**Pliki**: `data/scripts/spells/attack/*.lua`, `data/scripts/spells/support/*.lua`
+
+```lua
+spell:name("Annihilation")
+spell:words("exori gran ico")      -- NIE TŁUMACZYĆ (inkantacja)
+spell:group("attack")               -- OPCJONALNIE (kategoria)
+```
+
+**Status**: `spells.json` ma 1534 kluczy — prawdopodobnie JUŻ ZMIGROWANE.
+`spell:words()` to inkantacje — BEZWZGLĘDNIE NIE TŁUMACZYĆ.
+`spell:name()` — tłumaczyć (wyświetlane w spell list).
+`spell:group()` — opcjonalnie (attack, healing, support).
+
+---
+
+### 12.8. ŹRÓDŁO: OTClient tr() calls — 1462 wywołań w 315 plikach
+
+**Katalog**: `oryginall/otclient/modules/`
+
+**Dystrybucja po modułach** (top 10):
+| Moduł | tr() calls |
+|---:|---:|
+| game_bot | 203 |
+| client_options | 99 |
+| game_market | 79 |
+| game_console | 53 |
+| game_interface | 52 |
+| game_skills | 43 |
+| game_ruleviolation | 40 |
+| client_entergame | 40 |
+| game_spelllist | 33 |
+| game_hotkeys | 32 |
+
+**Mechanizm**: OTClient ma WŁASNĄ funkcję `tr()` (translate).
+Przyjmuje string i zwraca tłumaczenie z wewnętrznego systemu.
+
+```lua
+-- OTClient pattern:
+tr('You are poisoned')
+tr('Health: %s / %s')
+tr("If you shut down the program, your character might stay in the game.")
+```
+
+**Status**: `otclient_modules.json` ma 1987 kluczy — TE TEXTY mogą być
+już wyodrębnione. Trzeba sprawdzić czy tr() w OTClient podłącza się
+do naszego systemu i18n czy ma własny.
+
+**Strategia**: JEŚLI OTClient ma własny system tłumaczeń i NIE jest
+podłączony do naszego backend → SKIP (niech OTClient zarządza swoimi).
+JEŚLI podłączony → synchronizować klucze.
+
+---
+
+### 12.9. ŹRÓDŁO: Map Markers (addMapMark) — 38 markerów
+
+**Przykłady**:
+```lua
+player:addMapMark({ x = 32091, y = 32178, z = 7 }, MAPMARK_GREENNORTH, "North Exit")
+player:addMapMark(Position(32823, 31161, 8), 4, "Sewer Problem 1")
+```
+
+**Strategia**: Zamienić na klucze i18n:
+```lua
+player:addMapMark(pos, type, player:getTranslation("npc.lily.marker_north_exit"))
+```
+
+Lub dodać `player:addLocalizedMapMark(pos, type, "npc.lily.marker_north_exit")`.
+
+---
+
+### 12.10. ŹRÓDŁO: Loyalty Titles — tytuły lojalnościowe
+
+**Mechanizm**: JUŻ ZMIGROWANY.
+C++ używa `getLocalizedLoyaltyTitle()` i prefix `lib.player.loyalty_title_`.
+Klucze: `lib.player.loyalty_title_scout`, `lib.player.loyalty_title_veteran` etc.
+
+---
+
+### 12.11. ŹRÓDŁO: Bank Receipts (Hireling system)
+
+**Plik**: `data/npclib/npc_system/bank_system.lua`
+
+```lua
+receipt:setAttribute(ITEM_ATTRIBUTE_TEXT, 
+    receiptFormat:format(os.date("%d. %b %Y - %H:%M:%S"), 
+    info.type, info.amount, info.owner, info.recipient, info.message))
+```
+
+**Strategia**: `receiptFormat` powinien być kluczem i18n z placeholderami.
+```lua
+local receiptFormat = player:getTranslation("lib.bank.receipt_format")
+-- EN: "Date: {{}}\nType: {{}}\nAmount: {{}}\nFrom: {{}}\nTo: {{}}\nMessage: {{}}"
+```
+
+---
+
+### 12.12. ŹRÓDŁO: Death/Kill Messages (C++) — JUŻ ZMIGROWANE
+
+```cpp
+// player.cpp — już używa kluczy:
+lostExp << tr.format("cpp.player.death_exp_lost", loc, {std::to_string(expLoss)});
+sendTextMessage(MESSAGE_EVENT_ADVANCE, tr.get("cpp.player.death_pvp", loc));
+sendTextMessage(MESSAGE_EVENT_ADVANCE, tr.get("cpp.player.death_pve", loc));
+```
+
+**Status**: ✅ ZMIGROWANE
+
+---
+
+### 12.13. ŹRÓDŁO: Loot Messages (C++) — JUŻ ZMIGROWANE
+
+```cpp
+// creature.cpp — już używa:
+std::string lootMessage = tr.format("cpp.creature.loot_of", loc, 
+    {std::string(getNameDescription()), corpseContainer->getContentDescription(collorMessage)});
+```
+
+**Status**: ✅ ZMIGROWANE
+
+---
+
+### 12.14. ŹRÓDŁO: Item Descriptions/Inspect (C++) — JUŻ ZMIGROWANE
+
+```cpp
+// item.cpp — 245 tr.get/tr.format calls!
+descriptions.emplace_back(tr.get("cpp.inspect.description", locStr), specialDescription);
+descriptions.emplace_back(tr.get("cpp.inspect.capacity", locStr), ...);
+descriptions.emplace_back(tr.get("cpp.inspect.charges", locStr), ...);
+descriptions.emplace_back(tr.get("cpp.inspect.attack", locStr), ...);
+```
+
+**Status**: ✅ ZMIGROWANE (245 callów w item.cpp)
+
+---
+
+### 12.15. ŹRÓDŁO: ReturnValue Messages (C++) — JUŻ ZMIGROWANE
+
+```cpp
+// tools.cpp — 178 case statements w getReturnMessageI18nKey():
+case RETURNVALUE_NOERROR: return "cpp.returnvalue.no_error";
+case RETURNVALUE_NOTBOUGHTINSTORE: return "cpp.returnvalue.not_bought_in_store";
+case RETURNVALUE_TOOFARAWAY: return "cpp.returnvalue.too_far_away";
+// ...
+```
+
+**Status**: ✅ ZMIGROWANE (178 ReturnValue → i18n keys)
+
+---
+
+### 12.16. ŹRÓDŁO: Skill Names (C++) — JUŻ ZMIGROWANE
+
+```cpp
+// tools.cpp — getSkillName() z locale:
+case SKILL_FIST: return tr.get("cpp.skill.fist_fighting", locStr);
+case SKILL_CLUB: return tr.get("cpp.skill.club_fighting", locStr);
+case SKILL_SWORD: return tr.get("cpp.skill.sword_fighting", locStr);
+// ...
+```
+
+**Status**: ✅ ZMIGROWANE
+
+---
+
+### 12.17. ŹRÓDŁO: Pozostałe C++ resztki (2-3 hity)
+
+**tile.cpp** (linia 723) — RAW string:
+```cpp
+fmt::format("You can only have {} character{} from your account outside of a protection zone.",
+    maxOutsizePZ == 1 ? "one" : std::to_string(maxOutsizePZ), maxOutsizePZ > 1 ? "s" : "")
+```
+→ ZMIENIĆ na `tr.format("cpp.tile.max_outside_pz", loc, {...})`
+
+**item_parse.cpp** (linia 135) — RAW string:
+```cpp
+itemType.description = fmt::format("A bag with {} slots where you can hold your loots.", pouchLimit);
+```
+→ ZMIENIĆ na `tr.format("cpp.item_parse.loot_pouch_desc", loc, {std::to_string(pouchLimit)})`
+
+**Status**: ⏳ DO MIGRACJI (PROPOSALS ONLY)
+
+---
+
+### 12.18. ŹRÓDŁO: Book Texts — częściowo zmigrowane
+
+- **17 tekstów** już używa `#i18n:book.*` prefix
+- **Pozostałe** — `setAttribute(ITEM_ATTRIBUTE_TEXT, value.text)` przekazuje
+  tekst z tablicy, która MOŻE już zawierać `#i18n:` prefix
+- `translateBookText()` w C++ obsługuje `#i18n:` prefix automatycznie
+- `books.json` ma 1403 kluczy
+
+**Status**: ✅ PRAWIE GOTOWE — ale trzeba sprawdzić czy wszystkie
+referencje `setAttribute(ITEM_ATTRIBUTE_TEXT, ...)` używają `#i18n:`.
+
+---
+
+### 12.19. ŹRÓDŁO: Raid Announcements — JUŻ ZMIGROWANE
+
+```xml
+<announce delay="1000" type="event" message="raids.darashia.pirates.msg_1" />
+```
+
+Raids XML już używa kluczy i18n zamiast raw text.
+`raids.json` ma 273 kluczy.
+
+**Status**: ✅ ZMIGROWANE
+
+---
+
+### 12.20. ŹRÓDŁO: Database defaults
+
+```sql
+INSERT INTO `account_vipgroups` ... VALUES (NEW.`id`, 'Enemies', 0);
+INSERT INTO `account_vipgroups` ... VALUES (NEW.`id`, 'Friends', 0);
+INSERT INTO `account_vipgroups` ... VALUES (NEW.`id`, 'Trading Partner', 0);
+```
+
+**Strategia**: Nazwy VIP grup są klient-side wyświetlane.
+Mogą być tłumaczone w OTClient przy wyświetlaniu (lookup po angielskiej nazwie).
+NIE modyfikować SQL — to dane startowe.
+
+**Status**: SKIP (handle w kliencie)
+
+---
+
+### 12.21. ŹRÓDŁO: Config.lua
+
+```lua
+serverName = "Tibia 7.4 test"
+serverMotd = ""
+```
+
+**Status**: SKIP — to per-server konfiguracja, nie tłumaczyć.
+
+---
+
+## 13. KOMPLETNA LISTA MECHANIZMÓW DOSTARCZANIA I18N
+
+### 13.1. Mechanizmy w Lua (serwer → klient)
+
+| # | Metoda | Użycie | Opis |
+|---|---|---:|---|
+| 1 | `npcSay(key, ...)` | 7,072 | NPC mówi zlokalizowany tekst |
+| 2 | `sendLocalizedTextMessage(type, key, args)` | 1,348 | System message z kluczem |
+| 3 | `:sayLocalized(key, ...)` | 773 | Creature mówi zlokalizowany tekst |
+| 4 | `sendLocalizedMessage(type, key)` | 634 | System message (bez args) |
+| 5 | `npcSayMultiple(keys)` | 128 | NPC mówi wiele zdań |
+| 6 | `sendLocalizedCancelMessage(key)` | 92 | Cancel message z kluczem |
+| 7 | `getTranslation(key)` | 81 | Pobierz tłumaczenie jako string |
+| 8 | `i18nTranslate(key, locale)` | 17 | Niskopoziomowe tłumaczenie |
+| 9 | `sendHirelingSelectionModal(...)` | 3 | Modal hirelings |
+
+### 13.2. Mechanizmy w C++ (serwer → klient)
+
+| # | Metoda | Opis |
+|---|---|---|
+| 1 | `tr.get(key, locale)` | Tłumaczenie prostego klucza |
+| 2 | `tr.format(key, locale, args)` | Tłumaczenie z placeholderami |
+| 3 | `sendLocalizedTextMessage(type, key)` | Protocol: localized message |
+| 4 | `sendCreatureLocalizedSay(...)` | Protocol: creature speech z kluczem (opcode 0x99/0xC4) |
+| 5 | `sendLocalizedMessageDialog(key)` | Dialog box z kluczem |
+| 6 | `sendTextWindow(translateBookText)` | Automatyczne tłumaczenie #i18n: w książkach |
+| 7 | `getReturnMessageI18nKey(value)` | ReturnValue → klucz i18n |
+| 8 | `getSkillName(id, locale)` | Nazwa skilla z locale |
+| 9 | `getLocalizedLoyaltyTitle(title)` | Tytuł lojalnościowy |
+| 10 | `Item::getDescriptionLocalized(dist, locale)` | Opis itemu z locale |
+| 11 | `Item::getNameDescription(it, item, sub, art, locale)` | Nazwa itemu z locale |
+| 12 | `Achievement localized name` (player_achievement.cpp) | Tłumaczenie nazw osiągnięć |
+| 13 | `sendImbuementResult(tr.get(...))` | Wynik imbuementu |
+| 14 | `sendFYIBox(tr.get(...))` | FYI box z tłumaczeniem |
+
+### 13.3. Mechanizmy specjalne
+
+| # | Mechanizm | Opis |
+|---|---|---|
+| 1 | `#i18n:` prefix w tekście | Automatycznie rozwiązywany w C++ (`translateBookText`). Używany w książkach, questlog. |
+| 2 | Dynamiczny klucz `fmt::format("item.{}.name", id)` | Klucz budowany w runtime z ID. |
+| 3 | `i18n::g_keymap()` compact keys | Kompresja kluczy (opcjonalna, config). |
+| 4 | Locale per-player `player->getLocale()` | Każdy gracz ma swój język. |
+| 5 | OTClient `tr()` function | Osobny system i18n po stronie klienta. |
+| 6 | Fallback chain: locale → "en" → raw text | Jeśli brak tłumaczenia → EN → oryginalny tekst. |
+
+---
+
+## 14. PEŁNA MAPA PLIKÓW → KATEGORIE I18N
+
+```
+SERWER (C++ src/)
+├── game.cpp                → cpp.json (76 tr calls) ✅
+├── player.cpp              → cpp.json (67 tr calls) ✅
+├── item.cpp                → cpp.json (245 tr calls) ✅
+├── creature.cpp            → cpp.json (1 tr call) ✅
+├── iobestiary.cpp          → cpp.json ✅
+├── io_bosstiary.cpp        → cpp.json ✅
+├── tile.cpp                → ⏳ 1 raw string
+├── item_parse.cpp          → ⏳ 1 raw string
+├── spells.cpp              → server.json ✅
+├── chat.cpp                → server.json ✅
+├── npc.cpp                 → cpp.json ✅
+├── tools.cpp               → cpp.json (skill names, ReturnValue) ✅
+├── protocolgame.cpp        → cpp.json (sendCreatureLocalizedSay etc.) ✅
+└── protocollogin.cpp       → cpp.json ✅
+
+SERWER LUA (data/, data-otservbr-global/)
+├── scripts/npc/*.lua       → npc.json (13,769 keys) ✅ 
+├── scripts/quests/*.lua    → scripts.json + quests.json ✅
+├── scripts/actions/*.lua   → actions.json ✅
+├── scripts/talkactions/*.lua → talkactions.json ✅
+├── scripts/globalevents/*.lua → globalevents.json ✅
+├── scripts/creaturescripts/*.lua → creaturescripts.json ✅
+├── scripts/movements/*.lua → movements.json ✅
+├── lib/core/quests.lua     → questlog.json ⏳ (503 questy do rozszerzenia)
+├── lib/npc/i18n.lua        → (infrastruktura, nie tłumaczyć)
+├── libs/systems/hireling.lua → libs.json ✅
+├── libs/systems/exaltation_forge.lua → libs.json ✅
+├── libs/functions/boss_lever.lua → libs.json ✅
+├── modules/scripts/gamestore/gamestore.lua → ⏳ NOWA KATEGORIA: store.json
+├── scripts/lib/register_achievements.lua → achievements.json ✅
+├── scripts/systems/bestiary_charms.lua → ⏳ charms.json (26 charms)
+├── scripts/lib/shops.lua   → (item names → items.json) ✅
+├── monster/*.lua (1637)    → monsters.json ✅
+│   └── monster.Bestiary.class/Locations → ⏳ bestiary.json
+└── startup/others/functions.lua → ✅ (używa #i18n: prefix)
+
+DANE XML (data/XML/, data/, data-otservbr-global/)
+├── items.xml (16,693)      → items.json ✅
+├── mounts.xml              → mounts.json ⏳ (0 kluczy — wyodrębnić!)
+├── outfits.xml             → ⏳ outfits.json
+├── vocations.xml           → ⏳ vocations.json
+├── familiars.xml           → ⏳ familiars.json
+├── groups.xml              → ⏳ groups.json (P4)
+├── chatchannels.xml        → chatchannels.json (16 kluczy, sprawdzić)
+├── attachedeffects.xml     → ⏳ attachedeffects.json (P4)
+├── events.xml              → events.json (14 kluczy, rozszerzyć?)
+├── imbuements.xml          → ⏳ imbuements.json
+└── raids/*.xml             → raids.json ✅
+
+WORLD DATA
+├── otservbr-house.xml (993)→ ⏳ houses.json (P4)
+└── towns (in OTBM binary) → SKIP (binary format)
+
+OTCLIENT (oryginall/otclient/)
+├── modules/ (315 .lua files, 1462 tr() calls) → otclient_modules.json ✅
+├── src/ (C++ client)       → otclient_src.json ⏳
+└── data/                   → otclient_data.json ✅
+
+WWW (PHP/Twig)
+├── *.php (2779 plików, 53K hitów) → php.json ⏳ (po filtracji ~5-8K)
+└── *.twig templates        → html.json ✅ (1495 kluczy)
+
+DATABASE
+└── schema.sql defaults     → SKIP (handle w kliencie)
+```
+
+---
+
+## 15. ROZSZERZONA KOLEJNOŚĆ MIGRACJI (ZAKTUALIZOWANA)
+
+### Faza 0 — "Verification" (zanim zaczniemy)
+- [ ] Sprawdzić czy mounts.json jest PUSTY (0 kluczy!) — wyodrębnić z mounts.xml
+- [ ] Sprawdzić czy outfits/vocations/familiars mają klucze → jeśli nie, wyodrębnić
+- [ ] Sprawdzić 2-3 C++ resztki (tile.cpp, item_parse.cpp) → PROPOSALS
+- [ ] Sprawdzić kompletność books (17 #i18n vs ile jest książek w grze)
+
+### Faza 1 — "Quick Data Extraction" (1-2 dni)
+| Co | Ilość | Opis |
+|---|---:|---|
+| mounts.xml → mounts.json | ~50 | Wyodrębnij nazwy mountów po ID |
+| outfits.xml → outfits.json | ~25 | Wyodrębnij nazwy outfitów po looktype |
+| vocations.xml → vocations.json | ~16 | Nazwy + opisy vocacji |
+| familiars.xml → familiars.json | ~10 | Nazwy familiarów |
+| imbuements.xml → imbuements.json | ~80 | Nazwy + opisy + kategorie |
+| bestiary charms → charms.json | ~52 | 26 nazw + 26 opisów |
+| bestiary classes → bestiary.json | ~60 | ~30 klas + ~30 lokacji |
+
+### Faza 2 — "Quest Log Expansion" (3-5 dni)
+| Co | Ilość | Opis |
+|---|---:|---|
+| quests.lua names → questlog.json | ~505 | Nazwy questów |
+| quests.lua mission names | ~1950 | Nazwy misji |
+| quests.lua descriptions (static) | ~1000 | Proste opisy |
+| quests.lua descriptions (dynamic) | ~500 | Funkcje → klucze wewnątrz |
+
+### Faza 3 — "GameStore" (2-3 dni)
+| Co | Ilość | Opis |
+|---|---:|---|
+| store categories → store.json | ~50 | Nazwy kategorii |
+| store offer names → store.json | ~700 | Nazwy ofert |
+| store descriptions → store.json | ~200 | Opisy (uwaga: HTML!) |
+
+### Faza 4 — "Map & World Data" (1-2 dni)
+| Co | Ilość | Opis |
+|---|---:|---|
+| map markers → markers.json | ~38 | Opisy markerów |
+| house names (guildhalls) | ~50 | Tylko guildhalle i zamki |
+| groups.xml → groups.json | 4 | Nazwy grup |
+| attachedeffects → effects.json | ~5 | Nazwy efektów |
+
+### Faza 5 — "C++ Proposals" (1-2 dni)
+| Co | Ilość | Opis |
+|---|---:|---|
+| tile.cpp PZ message | 1 | PROPOSAL ONLY |
+| item_parse.cpp loot pouch | 1 | PROPOSAL ONLY |
+| Inne znalezione resztki | ? | PROPOSAL ONLY |
+
+### Faza 6 — "OTClient sync" (jeśli potrzeba)
+Sprawdzić czy OTClient tr() system podłącza się do naszego backend i18n.
+
+### Faza 7 — "WWW PHP full" (długoterminowe)
+Pełna migracja PHP po filtracji (5-8K hitów).
+
+---
+
+## 16. WZORCE ZASTOSOWANIA KLUCZY — KOMPLETNA LISTA
+
+### 16.1. Wzorzec NPC (Lua → Protocol → Klient)
+
+```
+[Lua Script] npcSay("npc.rook_guard.greeting", "|PLAYERNAME|", ...)
+    ↓
+[C++ NPC::luaNpcSay] → sendCreatureLocalizedSay(creature, type, key, fallback, args)
+    ↓
+[Protocol 0x99/0xC4] → opcode + key + args
+    ↓
+[OTClient] → lookup key in local i18n JSON → display translated text
+```
+
+### 16.2. Wzorzec System Message (Lua → Protocol → Klient)
+
+```
+[Lua Script] player:sendLocalizedTextMessage(MESSAGE_TYPE, "key", {arg1, arg2})
+    ↓
+[C++ Player::sendLocalizedTextMessage] → client->sendTextMessage(TextMessage(type, translatedText))
+    ↓
+[Protocol 0xB4] → opcode + type + translated text  
+    ↓
+[OTClient] → display text in console/game window
+```
+
+### 16.3. Wzorzec Item Name (XML → C++ Parser → Protocol)
+
+```
+[items.xml] name="magic plate armor"
+    ↓
+[C++ ItemType parser] → loads name into ItemType.name
+    ↓
+[C++ Item::getNameDescription()] → lookup "item.{id}.name" in i18n → fallback to ItemType.name
+    ↓
+[Protocol] → sends translated name to client
+```
+
+### 16.4. Wzorzec Book/Letter (#i18n: prefix)
+
+```
+[Lua Script] item:setAttribute(ITEM_ATTRIBUTE_TEXT, "#i18n:book.quest.note")
+    ↓
+[C++ sendTextWindow] → translateBookText(originalText)
+    ↓
+[translateBookText] → detects #i18n: prefix → lookup "book.quest.note" → returns translated text  
+    ↓
+[Protocol 0x96] → sends translated book content
+```
+
+### 16.5. Wzorzec Quest Log (#i18n: prefix)
+
+```
+[quests.lua] name = "#i18n:questlog.banshee.name"
+    ↓  
+[Lua quests.lua] → resolveQuestlogMarker(player, text)
+    ↓
+[resolveQuestlogMarker] → detects #i18n: → translateQuestlogKey() → i18nTranslate(key, locale)
+    ↓
+[Protocol] → sends translated quest name/description
+```
+
+### 16.6. Wzorzec Raid Announce (XML → C++)
+
+```
+[raids/*.xml] message="raids.darashia.pirates.msg_1"
+    ↓
+[C++ Raids::processAnnouncement] → lookup key in i18n → broadcast to all players
+```
+
+### 16.7. Wzorzec Achievement (C++)
+
+```
+[C++] player->sendLocalized... → tr.get("cpp.achievement.unlocked", loc) + achievement name
+    ↓
+[player_achievement.cpp] → std::string localizedName = tr.get(achievementKey, loc)
+    ↓
+[Protocol] → sends localized achievement notification
+```
+
+### 16.8. Wzorzec Condition/Status (C++)
+
+```
+[C++ condition.cpp] → auto &tr = i18n::g_translator()
+    ↓
+[tr.format] → "cpp.condition.regenerating" → translated status text
+```
+
+### 16.9. Wzorzec GameStore (Lua → Protocol)
+
+```
+[gamestore.lua] name = "Consumables", description = "..."
+    ↓
+[C++ ProtocolGame::sendShop] → currently sends raw text
+    ↓
+MIGRATION NEEDED: 
+    name = i18n::t("store.category.consumables")
+    → Lua resolves key → sends translated to protocol
+```
+
+### 16.10. Wzorzec XML Data (C++ Parser Lookup)
+
+```
+[mounts.xml] name="Widow Queen" id="1"
+    ↓
+[C++ Mount parser] → loads name into mount struct
+    ↓
+[Requested by client] → lookup "mount.1.name" in i18n → fallback to XML name
+    ↓
+[Protocol] → sends translated mount name
+```
+
+---
+
+## 17. EDGE CASES I PUŁAPKI
+
+### 17.1. Tekst z dynamicznym plural/gender
+
+```lua
+-- EN: "1 item" / "5 items"
+-- PL: "1 przedmiot" / "2 przedmioty" / "5 przedmiotów" (3 formy!)
+```
+
+**Rekomendacja na teraz**: Użyj `(s)` w EN i pozwól tłumaczowi zdecydować.
+W przyszłości: ICU MessageFormat dla pełnej pluralizacji.
+
+### 17.2. Tekst ze zmienną na początku
+
+```lua
+player:getName() .. " has joined the party."
+-- NIE rozbijać! Jeden klucz:
+-- EN: "{{}} has joined the party."
+```
+
+### 17.3. Tekst z HTML entities
+
+```lua
+"&#8226; +10% experience rate\n"
+-- Zachowaj HTML entities w kluczu:
+-- EN: "&#8226; +{{}}% experience rate"
+```
+
+### 17.4. Wieloliniowy tekst z \z (Lua continuation)
+
+```lua
+"long text \z
+ continued here"
+-- → jeden klucz, usunąć \z, połączyć w jedną linię
+```
+
+### 17.5. os.date format strings
+
+```lua
+os.date("%B %d, %Y.")
+-- %B, %d, %Y to parametry strftime — NIE TŁUMACZYĆ argumentów.
+-- ALE format (kolejność) → klucz i18n:
+-- EN: "%B %d, %Y" / PL: "%d %B %Y"
+```
+
+### 17.6. Tekst używany jako identyfikator
+
+```lua
+-- UWAGA! Niektóre "teksty" to identyfikatory wewnętrzne:
+player:setStorageValue(Storage.Quest.QuestName, 1)
+Game.createMonsterType("Demon")  -- nazwa monstera = identyfikator!
+```
+**Zasada**: `Game.createMonsterType("X")` — NIE TŁUMACZYĆ argument.
+Parser szuka tłumaczenia po nazwie runtime.
+
+### 17.7. Condition message z wartością liczbową
+
+```cpp
+// condition.cpp:
+auto &tr = i18n::g_translator();
+// Tekst z warunkami regeneracji — musi obsługiwać placeholder liczbowy
+```
+
+### 17.8. Texty w tablicach (items/shop lists)
+
+```lua
+{ itemName = "brown mushroom", clientId = 3725, buy = 10 }
+```
+`itemName` to lookup do items.json — NIE tłumaczyć bezpośrednio w tablicy.
+Parser items rozwiązuje tłumaczenie przy wyświetlaniu na kliencie.
+
+---
+
+## 18. WALIDACJA KOMPLETNOŚCI
+
+### Checklist: Czy pokryte WSZYSTKIE ścieżki tekstu gracz-visible?
+
+- [x] NPC dialogi (7072 npcSay) ✅
+- [x] System messages (1348 sendLocalizedTextMessage) ✅
+- [x] Creature speech (773 sayLocalized) ✅
+- [x] Cancel messages (92 sendLocalizedCancelMessage) ✅
+- [x] Item names (17057 items.json) ✅
+- [x] Item descriptions/inspect (245 tr calls in item.cpp) ✅
+- [x] Monster names (5915 monsters.json) ✅
+- [x] Spell names (1534 spells.json) ✅
+- [x] Achievement names+desc (1048 achievements.json) ✅
+- [x] Quest log names+desc (1918 questlog.json) ✅ (rozszerzyć o quests.lua)
+- [x] Book/scroll/letter text (1403 books.json) ✅
+- [x] Raid announcements (273 raids.json) ✅
+- [x] Skill names (getSkillName with locale) ✅
+- [x] ReturnValue messages (178 keys, getReturnMessageI18nKey) ✅
+- [x] Loyalty titles (getLocalizedLoyaltyTitle) ✅
+- [x] Death/exp messages ✅
+- [x] Loot messages ✅
+- [x] Bestiary charm messages (C++ iobestiary) ✅
+- [x] Imbuement result messages (C++ sendImbuementResult) ✅
+- [x] FYI boxes ✅
+- [x] Boss lever messages ✅
+- [x] Hireling messages ✅
+- [x] OTClient UI (1987 otclient_modules.json) ✅
+- [x] HTML/PHP www (1495+59 html/php json) ✅
+- [ ] Mount names → ⏳ mounts.json (0 kluczy!)
+- [ ] Outfit names → ⏳ do wyodrębnienia
+- [ ] Vocation names+desc → ⏳ do wyodrębnienia
+- [ ] Familiar names → ⏳ do wyodrębnienia
+- [ ] Imbuement names+desc (XML) → ⏳ do wyodrębnienia
+- [ ] Bestiary classes+locations → ⏳ do wyodrębnienia
+- [ ] Bestiary charm names+desc (Lua data) → ⏳ do wyodrębnienia
+- [ ] GameStore categories+offers → ⏳ ~760 elementów
+- [ ] Quest names/missions (quests.lua) → ⏳ ~2400 elementów
+- [ ] Map markers → ⏳ ~38 elementów
+- [ ] C++ resztki (tile.cpp, item_parse.cpp) → ⏳ 2-3 PROPOSALS
+- [ ] House names (guildhalls) → P4
+- [ ] Group names → P4
+- [ ] Chat channel names → sprawdzić kompletność
+- [ ] Attached effects → P4
+- [ ] Bank receipt format → P3
+- [ ] Event names/descriptions → sprawdzić kompletność
+- [ ] OTClient C++ src → P3
+
+**ŁĄCZNA SZACOWANA ILOŚĆ POZOSTAŁEJ PRACY**: ~3,500-4,000 nowych kluczy
+
+---
+
+## 19. DODATKOWE NIEZMIGROWANE WZORCE (DEEP SCAN)
+
+### 19.1. ModalWindow — buttons i choices z raw text
+
+**Pliki** (5 użyć ModalWindow):
+- `data/scripts/talkactions/player/reward.lua` — `addButton("Select")`, `addButton("Close")`
+- `data/scripts/talkactions/gm/teleport_to_player.lua` — `addButton("Select")`, `addButton("Close")`
+- `data/libs/systems/hireling.lua` — `addButton("Select")`, `addButton("Cancel")`
+- `data/libs/functions/player.lua` — `showInfoModal()`, `showConfirmationModal()`
+
+**Status**: `showInfoModal` i `showConfirmationModal` JUŻ UŻYWAJĄ `getTranslationOrFallback()`.
+Ale `reward.lua` i `teleport_to_player.lua` mają hardcoded `"Select"`/`"Close"`.
+`hireling.lua` ma hardcoded `"Select"`/`"Cancel"`.
+
+**Strategia**:
+```lua
+-- PRZED:
+window:addButton("Select")
+window:addButton("Close")
+-- PO:
+local locale = player:getLocale()
+window:addButton(i18nTranslate("lib.modal.button_select", locale))
+window:addButton(i18nTranslate("lib.modal.button_close", locale))
+```
+
+**Ilość**: ~6 raw button labels, 4 unikalne: "Select", "Close", "Cancel", "Ok"
+**Priorytet**: P2
+
+---
+
+### 19.2. Webhook Messages — wewnętrzne Discord/admin
+
+**Pliki** (18 wywołań):
+- `data/scripts/talkactions/gm/ban.lua`
+- `data/scripts/talkactions/gm/kick.lua`
+- `data/scripts/talkactions/gm/unban.lua`
+- `data/scripts/talkactions/gm/namelock.lua`
+- `data/scripts/talkactions/gm/push_town.lua`
+- `data/scripts/globalevents/global_server_save.lua`
+- `data-otservbr-global/scripts/globalevents/spawn/rashid.lua`
+- `data-otservbr-global/scripts/world_changes/fury_gates.lua`
+- `data-otservbr-global/scripts/world_changes/nightmare_isles.lua`
+
+**Strategia**: Webhook messages to wiadomości ADMINA (Discord), NIE SĄ player-visible.
+**Priorytet**: SKIP — nie tłumaczyć. Webhooks zawsze EN (admin channel).
+
+---
+
+### 19.3. setAttribute z raw text (3 hity)
+
+**Pliki**:
+1. `data/scripts/runes/magic_wall.lua:25` — `"Casted by: %s"` → description rune walls
+2. `data/scripts/runes/wild_growth.lua:25` — `"Casted by: %s"` → description wild growth
+3. `data-otservbr-global/scripts/actions/other/construction_kits.lua:128` — `"Unwrap it in your own house to create a <...>."`
+
+**Strategia**:
+```lua
+-- PRZED:
+item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, string.format("Casted by: %s", creature:getName()))
+-- PO:
+item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, 
+    string.format(player:getTranslation("scripts.rune.casted_by"), creature:getName()))
+```
+
+**Ilość**: 3 instancje
+**Priorytet**: P2
+
+---
+
+### 19.4. doCreatureSayWithRadius z raw text (1 hit)
+
+**Plik**: `data-otservbr-global/scripts/quests/raging_mage_tower/creaturescripts_energized_raging_mage_kill.lua`
+```lua
+doCreatureSayWithRadius(creature, "GNAAAAAHRRRG!! WHAT? WHAT DID YOU DO TO ME!! I... I feel the energies crawling away... from me... DIE!!!", TALKTYPE_MONSTER_SAY, 35, 71)
+```
+
+**Strategia**: Dodać wersję zlokalizowaną `doCreatureSayWithRadiusLocalized()` lub zamienić na `creature:sayLocalized()` z większym radiusem jeśli API na to pozwala.
+**Priorytet**: P3 (flavour text monstera)
+
+---
+
+### 19.5. creature:say z raw text (1 hit)
+
+**Plik**: `data/libs/functions/lever.lua:93`
+```lua
+creature:say('YUP!!', TALKTYPE_MONSTER_SAY)
+```
+
+**Strategia**: Debug/test code — można zamienić na klucz lub zostawić (nie jest to poważny tekst).
+**Priorytet**: P4
+
+---
+
+### 19.6. OTClient tr() System — analiza
+
+**Odkrycie**: OTClient `_G.tr()` (zdefiniowany w `corelib/util.lua`) MA WŁASNY system tłumaczeń: 
+```lua
+function _G.tr(text, ...)
+  if currentLocale then
+    local translation = currentLocale.translation[text]
+    if not translation then
+      translation = text  -- fallback to raw text
+    end
+    return string.format(translation, ...)
+  end
+  return text
+end
+```
+
+**Mechanizm**: OTClient ładuje pliki z `modules/client_locales/locales/` (np. `locale-pl.lua`, `locale-es.lua`) zawierające tablice translation.
+
+**Relacja z naszym systemem**: OTClient ma NIEZALEŻNY system i18n od serwera.
+Serwer tłumaczy per-player na serwerze, OTClient tłumaczy UI client-side.
+
+**Wnioski**:
+1. OTClient UI strings (`tr("Select")`, `tr("Cancel")`, `tr("Health: %s / %s")`) — tłumaczone LOKALNIE przez klienta
+2. Serwer → Klient messages (NPC dialogi, system messages) — tłumaczone NA SERWERZE i wysyłane jako przetłumaczony tekst lub klucz+args
+3. Te dwa systemy NIE kolidują — każdy odpowiada za swoje
+4. Nasza migracja dotyczy SERWERA. OTClient trzeba synchronizować OSOBNO.
+
+**Status**: `otclient_modules.json` (1987 kluczy) to nasz GENERATOR kluczy do plików locale OTClient.
+Trzeba dodać pipeline: `i18n/en/otclient_modules.json` → `modules/client_locales/locales/locale-{lang}.lua`
+
+---
+
+### 19.7. Game.broadcastMessage — analiza
+
+**Odkrycie**: `Game.broadcastMessage()` w `data/libs/functions/game.lua` wywołuje `player:sendTextMessage()` w pętli. JUŻ ZASTĄPIONE przez `Game.broadcastLocalizedMessageLua()` wszędzie gdzie potrzeba. Stara funkcja pozostaje jako compat.
+
+**Status**: ✅ ZMIGROWANE (Game.broadcastLocalizedMessageLua)
+
+---
+
+### 19.8. Spell ORIGIN_SPELL z nazwy (1 hit)
+
+**Plik**: `data/scripts/spells/healing/mass_healing.lua:14`
+```lua
+doTargetCombatHealth(creature, target, COMBAT_HEALING, min, max, CONST_ME_NONE, ORIGIN_SPELL, "Mass Healing")
+```
+
+**Analiza**: Ostatni argument to IDENTYFIKATOR zaklęcia w systemie combat, używany do trackingu source of damage/healing. NIE jest player-visible text.
+**Status**: SKIP (internal identifier, not displayed)
+
+---
+
+### 19.9. setDescription w talkactions (3 hity)
+
+**Pliki**:
+- `data/scripts/talkactions/god/icons_functions.lua` — opisy komend GM
+- `data/scripts/talkactions/god/inbox_command.lua` — opis komendy GM
+- `data/scripts/talkactions/player/commands.lua` — opis komendy !commands
+
+**Analiza**: To opisy widoczne w `!commands` list. Mogą być tłumaczone.
+```lua
+-- PRZED:
+commands:setDescription("[Usage]: !commands to see each command with its description")
+-- PO:
+commands:setDescription(i18nTranslate("talkactions.commands.description", "en"))
+```
+
+**Priorytet**: P3 (GM/admin commands głównie)
+
+---
+
+### 19.10. World Changes z raw string.format (2 hity)
+
+**Pliki**:
+- `data-otservbr-global/scripts/world_changes/fury_gates.lua:32` — `"Fury Gate will be active in %s today"` (webhook only!)
+- `data-otservbr-global/scripts/world_changes/nightmare_isles.lua:24` — `"Nightmare Isle will be active %s today"` (webhook only!)
+- `data-otservbr-global/scripts/globalevents/spawn/rashid.lua:28` — `"Rashid arrived at %s today."` (webhook)
+
+**Status**: SKIP — to webhooks (admin Discord), nie player-visible.
+
+---
+
+### 19.11. Server Info Talkaction
+
+**Plik**: `data/scripts/talkactions/player/server_info.lua`
+Sprawdzić czy generuje tekst z raw strings.
+
+**Priorytet**: P2 (jeśli zawiera player-visible raw text)
+
+---
+
+## 20. KOMPLETNA MATRYCA MIGRACJI — FINALNA
+
+### ✅ PEŁNI ZMIGROWANE (nie wymagają dalszej pracy):
+
+| System | Mechanizm | Kluczy |
+|---|---|---:|
+| NPC dialogi | npcSay(), :sayLocalized() | 13,769 |
+| C++ sendTextMessage | tr.get(), tr.format() | ~2,000 |
+| C++ sendCancelMessage | tr.get() | ~500 |
+| ReturnValue messages | getReturnMessageI18nKey() | 178 |
+| Skill names | getSkillName(locale) | ~15 |
+| Loyalty titles | getLocalizedLoyaltyTitle() | ~20 |
+| Bestiary C++ | tr.get/tr.format in iobestiary.cpp | ~50 |
+| Bosstiary C++ | tr.get/tr.format in io_bosstiary.cpp | ~30 |
+| Forge system | sendLocalizedTextMessage | ~50 |
+| Boss Lever | sendLocalizedTextMessage | ~20 |
+| Hireling system | sendLocalizedTextMessage | ~30 |
+| Raid announcements | i18n keys in XML | 273 |
+| Death messages | tr.format in player.cpp | ~10 |
+| Loot messages | tr.format in creature.cpp | ~5 |
+| Item inspect | tr.get/tr.format in item.cpp | ~245 |
+| Broadcast messages | broadcastLocalizedMessageLua | ~10 |
+| Server save | broadcastLocalizedMessageLua | ~5 |
+| Online record | broadcastLocalizedMessageLua | ~2 |
+| Book system | #i18n: prefix + translateBookText | 1,403 |
+| Achievement system | i18n lookup | 1,048 |
+| Quest log | #i18n: prefix | 1,918 |
+| Spell names | spells.json | 1,534 |
+| Monster names | monsters.json | 5,915 |
+| Item names | items.json | 17,057 |
+| OTClient modules | tr() wrapper | 1,987 |
+| HTML/PHP | html.json + php.json | 1,554 |
+| ModalWindow helper | getTranslationOrFallback | ~6 |
+
+### ⏳ DO MIGRACJI (work remaining):
+
+| System | Typ pracy | Szacowane klucze |
+|---|---|---:|
+| Quest system (quests.lua) | Wyodrębnij nazwy+opisy, dynamiczne desc | ~2,400 |
+| GameStore | Wyodrębnij kategorie+oferty+opisy | ~1,000 |
+| Mounts (XML) | Wyodrębnij nazwy po ID | ~50 |
+| Outfits (XML) | Wyodrębnij nazwy po looktype | ~25 |
+| Vocations (XML) | Wyodrębnij nazwy+opisy | ~16 |
+| Familiars (XML) | Wyodrębnij nazwy po ID | ~10 |
+| Imbuements (XML) | Wyodrębnij nazwy+opisy+kategorie | ~80 |
+| Bestiary charms (Lua) | Wyodrębnij nazwy+opisy | ~52 |
+| Bestiary classes (Lua) | Wyodrębnij klasy+lokacje | ~60 |
+| Houses (XML) | Wyodrębnij nazwy guildhalls | ~50 |
+| Map markers (Lua) | Zamień raw text | ~38 |
+| Chat channels (XML) | Sprawdź kompletność | ~10 |
+| Groups (XML) | Wyodrębnij nazwy | 4 |
+| ModalWindow buttons | Zamień "Select"/"Close"/"Cancel" | ~6 |
+| setAttribute raw | Zamień raw descriptions | 3 |
+| C++ tile.cpp | PROPOSAL: PZ message | 1 |
+| C++ item_parse.cpp | PROPOSAL: loot pouch desc | 1 |
+| Talkaction descriptions | Zamień raw setDescription | ~5 |
+| doCreatureSayRadius | Zamień raw text | 1 |
+| Bank receipt format | Zamień receiptFormat | 1 |
+| OTClient ↔ i18n sync | Pipeline JSON → locale-{lang}.lua | (infra) |
+
+### SKIP (nie tłumaczyć):
+
+| System | Powód |
+|---|---|
+| Config.lua (serverName, MOTD) | Per-server konfiguracja |
+| Webhook messages (18x) | Discord admin-only, nie player-visible |
+| Database VIP group defaults | Handle client-side |
+| spell:words() inkantacje | Formulas, nie natural language |
+| Monster type identifiers | Internal identifiers |
+| SQL column names (skill_fist) | Database schema |
+| Town names as constants | Internal identifiers (tłumaczenie opcjonalne P4) |
+| g_logger() / debug text | Developer-only logs |
+| creature:say('YUP!!') | Test/debug code |
+| ORIGIN_SPELL name | Internal combat tracker |
+
+---
+
+## 21. PODSUMOWANIE PLANU MIGRACJI
+
+### Statystyki finalne:
+- **Zmigrowane**: 53,586 kluczy EN w 37 plikach JSON
+- **Do zmigrowania**: ~3,800 nowych kluczy
+- **Do pominięcia (SKIP)**: ~30+ instancji (webhooks, config, debug)
+- **PROPOSALS C++ (wymagają rekompilacji)**: 2-3 zmiany
+
+### Priorytetyzacja Faz:
+
+| Faza | Opis | Szacowany czas | Kluczy |
+|---|---|---|---:|
+| 0 | Weryfikacja + uzupełnienie pustaków (mounts, outfits, vocations, familiars) | 1 dzień | ~100 |
+| 1 | XML Data Extraction (imbuements, charms, bestiary, channels) | 1-2 dni | ~200 |
+| 2 | Quest System (quests.lua — nazwy, misje, opisy) | 3-5 dni | ~2,400 |
+| 3 | GameStore (kategorie, oferty, opisy) | 2-3 dni | ~1,000 |
+| 4 | Misc Lua (map markers, setAttribute, modal buttons, talkactions) | 1 dzień | ~50 |
+| 5 | C++ Proposals (tile.cpp, item_parse.cpp) | 1 dzień | 2-3 |
+| 6 | OTClient Sync Pipeline | 1-2 dni | (infra) |
+| 7 | PHP Full Migration | TBD | TBD |
+| **TOTAL** | | **~10-15 dni** | **~3,800** |
+
+### Zasady pracy workera:
+1. ZAWSZE rób backup (`git stash` lub `cp`) przed modyfikacją
+2. PO każdej modyfikacji: waliduj JSON (`python3 -c "import json; json.load(open(f))"`)
+3. COMMIT natychmiast po udanej zmianie (~co 5-10 plików)
+4. NIGDY nie modyfikuj C++ bez PROPOSAL (oznaczony komentarzem `// i18n-proposal:`)
+5. Dynamiczne opisy questów (funkcje Lua) — modyfikuj WEWNĄTRZ funkcji, zamień zwracane stringi na klucze
+6. GameStore opisy z HTML — zachowaj `&#8226;` i inne entities
+7. OTClient → osobny pipeline (nie mieszać z serwerem)
+8. Webhooks → SKIP (nie player-visible)
+9. TESTUJ po każdej fazie: `./canary --dry-run` jeśli dostępne

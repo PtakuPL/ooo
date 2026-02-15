@@ -86,17 +86,18 @@ class StringExtractor:
         r'^\d+$',  # Numbers
         r'^[a-z]+\.[a-z]+$',  # File extensions
         r'^https?://',  # URLs
-        r'^\{',  # JSON/format strings
+        r'^\{[^}]+:[^}]+\}$',  # JSON object-like payloads
         r'^SELECT|INSERT|UPDATE|DELETE',  # SQL
         r'^[<>/]',  # XML/HTML tags
     ]
     
     # Placeholder patterns
     PLACEHOLDER_PATTERNS = [
-        r'\{(\d+)\}',  # {0}, {1}
-        r'\{(\w+)\}',  # {name}, {player}
+        r'\{\d+\}',  # {0}, {1}
+        r'\{\w+\}',  # {name}, {player}
         r'%[sdif]',  # %s, %d, %i, %f
         r'\|[A-Z]+\|',  # |PLAYERNAME|
+        r'\[[A-Za-z_][A-Za-z0-9_ ]*\]',  # [player name]
     ]
     
     # Category keywords for auto-detection
@@ -198,10 +199,9 @@ class StringExtractor:
         placeholders = []
         
         for pattern in self.PLACEHOLDER_PATTERNS:
-            matches = re.findall(pattern, text)
-            placeholders.extend(matches)
+            placeholders.extend(match.group(0) for match in re.finditer(pattern, text))
         
-        return placeholders
+        return list(dict.fromkeys(placeholders))
     
     def _find_context(self, lines: List[str], line_num: int) -> str:
         """Find function/method context"""

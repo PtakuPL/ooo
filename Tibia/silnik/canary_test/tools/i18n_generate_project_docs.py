@@ -576,6 +576,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate project documentation per file")
     parser.add_argument("--batch", type=int, default=20, help="Number of files to process per batch")
     parser.add_argument("--reset", action="store_true", help="Reset cursor and reprocess all files")
+    parser.add_argument("--index-only", action="store_true", help="Only rebuild INDEX.md and index.json without processing new files")
     parser.add_argument("--base-dir", default=".", help="Project base directory")
     args = parser.parse_args()
 
@@ -591,6 +592,37 @@ def main():
     # Build inventory
     inventory = build_file_inventory(base_dir)
     print(f"📖 DOCUMENTATION: inventory={len(inventory)} files")
+
+    # --index-only: rebuild index from existing docs without processing new files
+    if args.index_only:
+        all_entries = []
+        for doc_file in sorted(Path(files_dir).glob("*.md")):
+            rel_name = doc_file.stem.replace("__", "/")
+            all_entries.append({
+                "file": rel_name,
+                "kind": classify_file(rel_name),
+                "summary": "",
+                "symbols_count": 0,
+                "i18n_count": 0,
+                "lines": 0,
+            })
+        index_md = generate_index_md(all_entries)
+        with open(os.path.join(docs_dir, "INDEX.md"), "w", encoding="utf-8") as f:
+            f.write(index_md)
+        index_json = {
+            "generated_at_utc": utc_now_iso(),
+            "total_files": len(all_entries),
+            "entries": [{
+                "file": e["file"],
+                "doc": f"docs/i18n/project/files/{sanitize_path_for_filename(e['file'])}.md",
+                "kind": e["kind"],
+            } for e in all_entries],
+        }
+        with open(os.path.join(docs_dir, "index.json"), "w", encoding="utf-8") as f:
+            json.dump(index_json, f, indent=2, ensure_ascii=False)
+        print(f"✅ DOCUMENTATION: index rebuilt ({len(all_entries)} entries)")
+        print(f"   __DOCINDEX__ processed=0 total={len(inventory)} errors=0 cursor=0 index_entries={len(all_entries)}")
+        return
 
     # Load state
     state = load_state(state_path)

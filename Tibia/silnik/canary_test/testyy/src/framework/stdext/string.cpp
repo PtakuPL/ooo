@@ -44,7 +44,7 @@
 namespace stdext
 {
     [[nodiscard]] std::string resolve_path(std::string_view filePath, std::string_view sourcePath) {
-        if (!filePath.empty() && filePath.front() == '/')
+        if (filePath.starts_with("/"))
             return std::string(filePath);
 
         auto slashPos = sourcePath.find_last_of('/');

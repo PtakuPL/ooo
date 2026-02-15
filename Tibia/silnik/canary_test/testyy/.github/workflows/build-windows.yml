@@ -22,7 +22,7 @@ env:
 jobs:
   windows:
     name: Build (Windows x64)
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout repository
@@ -47,6 +47,8 @@ jobs:
         uses: ilammy/msvc-dev-cmd@v1
         with:
           arch: x64
+          # Pin toolset to avoid ICE regressions from newer MSVC updates
+          toolset: '14.38'
 
       - name: Install Ninja
         run: choco install ninja -y

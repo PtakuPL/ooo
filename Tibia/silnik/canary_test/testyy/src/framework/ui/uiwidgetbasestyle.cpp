@@ -34,14 +34,6 @@
 #include <framework/core/eventdispatcher.h>
 
 #include <atomic>
-#include <string_view>
-
-namespace {
-bool startsWith(const std::string_view text, const std::string_view prefix)
-{
-    return text.size() >= prefix.size() && text.compare(0, prefix.size(), prefix) == 0;
-}
-}
 
 void UIWidget::initBaseStyle()
 {
@@ -57,7 +49,7 @@ void UIWidget::parseBaseStyle(const OTMLNodePtr& styleNode)
     // parse lua variables and callbacks first
     for (const auto& node : styleNode->children()) {
         // lua functions
-        if (startsWith(node->tag(), "@")) {
+        if (node->tag().starts_with("@")) {
             // load once
             if (hasProp(PropFirstOnStyle)) {
                 std::string funcName = node->tag().substr(1);
@@ -66,7 +58,7 @@ void UIWidget::parseBaseStyle(const OTMLNodePtr& styleNode)
                 luaSetField(funcName);
             }
             // lua fields value
-        } else if (startsWith(node->tag(), "&")) {
+        } else if (node->tag().starts_with("&")) {
             std::string fieldName = node->tag().substr(1);
             std::string fieldOrigin = "@" + node->source() + ": [" + node->tag() + "]";
 
@@ -313,7 +305,7 @@ void UIWidget::parseBaseStyle(const OTMLNodePtr& styleNode)
                 m_layout->applyStyle(node);
         }
         // anchors
-        else if (startsWith(node->tag(), "anchors.")) {
+        else if (node->tag().starts_with("anchors.")) {
             const auto& parent = getParent();
             if (!parent) {
                 if (hasProp(PropFirstOnStyle))

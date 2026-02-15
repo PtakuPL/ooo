@@ -127,58 +127,23 @@ if (MSVC)
   # The following workarounds apply ONLY to Microsoft's cl.exe compiler.
   # Clang-CL also sets MSVC=TRUE but doesn't need (and rejects) these flags.
   if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-    # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
-    string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
-    string(REPLACE "/O1" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
-    string(REPLACE "/Ob2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
-    string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
-    string(REPLACE "/O1" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
-    string(REPLACE "/Ob2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
-    string(REPLACE "/O2" "" CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE}")
-    string(REPLACE "/O1" "" CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE}")
-    string(REPLACE "/Ob2" "" CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE}")
-    string(REPLACE "/O2" "" CMAKE_C_FLAGS_RELWITHDEBINFO "${CMAKE_C_FLAGS_RELWITHDEBINFO}")
-    string(REPLACE "/O1" "" CMAKE_C_FLAGS_RELWITHDEBINFO "${CMAKE_C_FLAGS_RELWITHDEBINFO}")
-    string(REPLACE "/Ob2" "" CMAKE_C_FLAGS_RELWITHDEBINFO "${CMAKE_C_FLAGS_RELWITHDEBINFO}")
+    # ── ICE C1001 prevention strategy ──────────────────────────────────────
+    # MSVC ICE triggers on complex template code when using /O2.
+    # Use /O1 (optimize for size) globally — safer than /O2, still optimised.
+    # Individual TUs that crash even under /O1 use #pragma optimize("",off)
+    # directly in their source files (otmlnode.cpp, otmlparser.cpp).
+    # PCH stays enabled for all files (SKIP_PRECOMPILE_HEADERS removed).
+    string(REPLACE "/O2" "/O1" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
+    string(REPLACE "/O2" "/O1" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
     set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
-    set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE}" CACHE STRING "" FORCE)
-    set(CMAKE_C_FLAGS_RELWITHDEBINFO "${CMAKE_C_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
-    target_compile_options(${PROJECT_NAME} PRIVATE
-      $<$<CONFIG:Release>:/Od /Ob0 /Oy->
-      $<$<CONFIG:RelWithDebInfo>:/Od /Ob0 /Oy->
-    )
-    set_source_files_properties(
-      framework/luaengine/luavaluecasts.cpp
-      framework/ui/uiwidgetbasestyle.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy-" SKIP_PRECOMPILE_HEADERS ON
-    )
-    set_source_files_properties(
-      framework/otml/otmlnode.cpp
-      framework/otml/otmlparser.cpp
-      # Keep MSVC ICE workarounds, but do not downgrade the language standard:
-      # OTML headers include framework/global.h (PCH) which relies on C++20 features.
-      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy-" SKIP_PRECOMPILE_HEADERS ON
-    )
+
+    # Disable LTCG/GL — they amplify ICE surface across TUs
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE
       INTERPROCEDURAL_OPTIMIZATION_RELEASE FALSE
       INTERPROCEDURAL_OPTIMIZATION_RELWITHDEBINFO FALSE
     )
-    foreach(_cflag_var
-        CMAKE_CXX_FLAGS CMAKE_CXX_FLAGS_RELEASE CMAKE_CXX_FLAGS_RELWITHDEBINFO CMAKE_CXX_FLAGS_MINSIZEREL
-        CMAKE_C_FLAGS CMAKE_C_FLAGS_RELEASE CMAKE_C_FLAGS_RELWITHDEBINFO CMAKE_C_FLAGS_MINSIZEREL)
-      string(REGEX REPLACE "(^|[ ;])/GL([ ;]|$)" "\\2" ${_cflag_var} "${${_cflag_var}}")
-      set(${_cflag_var} "${${_cflag_var}}" CACHE STRING "" FORCE)
-    endforeach()
-    foreach(_flag_var
-        CMAKE_EXE_LINKER_FLAGS CMAKE_EXE_LINKER_FLAGS_RELEASE CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO CMAKE_EXE_LINKER_FLAGS_MINSIZEREL
-        CMAKE_SHARED_LINKER_FLAGS CMAKE_SHARED_LINKER_FLAGS_RELEASE CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL
-        CMAKE_MODULE_LINKER_FLAGS CMAKE_MODULE_LINKER_FLAGS_RELEASE CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL
-        CMAKE_STATIC_LINKER_FLAGS CMAKE_STATIC_LINKER_FLAGS_RELEASE CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL)
-      string(REGEX REPLACE "(^|[ ;])/LTCG(:OFF)?([ ;]|$)" "\\3" ${_flag_var} "${${_flag_var}}")
-      set(${_flag_var} "${${_flag_var}}" CACHE STRING "" FORCE)
-    endforeach()
     target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
     target_compile_options(${PROJECT_NAME} PRIVATE /GL-)
   endif() # CMAKE_CXX_COMPILER_ID STREQUAL "MSVC"

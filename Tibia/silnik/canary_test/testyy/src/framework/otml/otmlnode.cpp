@@ -25,6 +25,12 @@
 #include "otmlemitter.h"
 #include <algorithm>
 
+// Workaround: MSVC cl.exe ICE (C1001) when optimizing this TU.
+// Disable optimization entirely for this file under MSVC.
+#ifdef _MSC_VER
+#pragma optimize("", off)
+#endif
+
 OTMLNodePtr OTMLNode::create(const std::string_view tag, const bool unique)
 {
     const auto& node = std::make_shared<OTMLNode>();
@@ -189,3 +195,7 @@ std::string OTMLNode::emit()
 {
     return OTMLEmitter::emitNode(asOTMLNode(), 0);
 }
+
+#ifdef _MSC_VER
+#pragma optimize("", on)
+#endif

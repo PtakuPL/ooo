@@ -23,12 +23,11 @@
 #include "otmldocument.h"
 #include "otmlparser.h"
 
-namespace {
-bool startsWith(const std::string_view text, const std::string_view prefix)
-{
-    return text.size() >= prefix.size() && text.compare(0, prefix.size(), prefix) == 0;
-}
-}
+// Workaround: MSVC cl.exe ICE (C1001) when optimizing this TU.
+// Disable optimization entirely for this file under MSVC.
+#ifdef _MSC_VER
+#pragma optimize("", off)
+#endif
 
 OTMLParser::OTMLParser(const OTMLDocumentPtr& doc, std::istream& in) :
     currentDepth(0), currentLine(0),
@@ -100,7 +99,7 @@ void OTMLParser::parseLine(std::string line)
         return;
 
     // skip comments
-    if (startsWith(line, "//") || startsWith(line, "#"))
+    if (line.starts_with("//") || line.starts_with("#"))
         return;
 
     // a depth above, change current parent to the previous added node
@@ -134,8 +133,8 @@ void OTMLParser::parseNode(const std::string_view data)
     while (!line.empty() && (line.back() == ' ' || line.back() == '\t' || line.back() == '\r'))
         line.pop_back();
 
-    const bool isUrlWithColon = (startsWith(line, "http://") || startsWith(line, "https://")) && line.back() == ':';
-    const bool isUrlKey = startsWith(line, "http://") || startsWith(line, "https://");
+    const bool isUrlWithColon = (line.starts_with("http://") || line.starts_with("https://")) && line.back() == ':';
+    const bool isUrlKey = line.starts_with("http://") || line.starts_with("https://");
 
     if (isUrlWithColon) {
         // URL ending in ':' → treat as a key without ':' and no value on the same line
@@ -232,7 +231,7 @@ void OTMLParser::parseNode(const std::string_view data)
     if (value == "~")
         node->setNull(true);
     else {
-        if (value.size() >= 2 && value.front() == '[' && value.back() == ']') {
+        if (value.starts_with("[") && value.ends_with("]")) {
             const auto& tmp = value.substr(1, value.length() - 2);
             const std::vector tokens = stdext::split(tmp, ",");
             for (std::string v : tokens) {
@@ -247,3 +246,7 @@ void OTMLParser::parseNode(const std::string_view data)
     parentMap[node] = currentParent;
     previousNode = node;
 }
+
+#ifdef _MSC_VER
+#pragma optimize("", on)
+#endif

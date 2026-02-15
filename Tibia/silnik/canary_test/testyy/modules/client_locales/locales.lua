@@ -83,6 +83,9 @@ end
 -- public functions
 function init()
   installedLocales = {}
+  -- Reset i18n load tracking so game_i18n files are reloaded for fresh locale objects
+  -- (this global persists across g_modules.reloadModules() calls)
+  _G.__gameI18nLoaded = {}
   installLocales('/locales')
 
   local savedLocale = g_settings.get('locale', 'false')
@@ -194,13 +197,25 @@ function loadGameI18nForLocale(locale)
 
   local prevGlobalLocale = rawget(_G, 'locale')
   _G.locale = locale
-  pcall(dofile, 'game_i18n_' .. locale.name)
-  pcall(dofile, 'game_i18n_' .. locale.name .. '_compact')
+  -- Use absolute paths so dofile resolves correctly regardless of calling context.
+  pcall(dofile, '/locales/game_i18n_' .. locale.name)
+  pcall(dofile, '/locales/game_i18n_' .. locale.name .. '_compact')
   _G.locale = prevGlobalLocale
 end
 
 function installLocales(directory)
-  dofiles(directory)
+  -- Only load base locale files (2-5 letter code .lua files).
+  -- Skip game_i18n_* files — those are loaded per-locale by loadGameI18nForLocale()
+  -- or by explicit dofile() calls in the base locale files themselves.
+  -- Loading them via dofiles() caused _G.locale pollution: compact files would
+  -- merge their translations into whichever locale was last set by a base file,
+  -- leading to e.g. Japanese translations overwriting English, etc.
+  local files = g_resources.listDirectoryFiles(directory)
+  for _, file in ipairs(files) do
+    if g_resources.isFileType(file, "lua") and not file:find("^game_i18n_") then
+      dofile(directory .. '/' .. file)
+    end
+  end
 end
 
 function setLocale(name)
@@ -236,27 +251,54 @@ function getCurrentLocale()
   return currentLocale
 end
 
+-- Helper to apply format patterns to a translated string.
+local function applyFormat(translation, ...)
+  if translation:find("{}", 1, true) then
+    local idx = 0
+    return (translation:gsub("%{%}", function()
+      idx = idx + 1
+      local v = select(idx, ...)
+      if v == nil then
+        return "{}"
+      end
+      return tostring(v)
+    end))
+  end
+  return string.format(translation, ...)
+end
+
 -- global function used to translate texts
 function _G.tr(text, ...)
   if currentLocale then
     if tostring(text) then
       local translation = currentLocale.translation[text]
       if translation then
-        -- Support both legacy printf-style (%d/%s) and newer brace-style ({}) formatting.
-        -- Prefer brace-style when present, to be compatible with server-side i18n keys.
-        if translation:find("{}", 1, true) then
-          local idx = 0
-          return (translation:gsub("%{%}", function()
-            idx = idx + 1
-            local v = select(idx, ...)
-            if v == nil then
-              return "{}"
-            end
-            return tostring(v)
-          end))
-        end
+        return applyFormat(translation, ...)
+      end
 
-        return string.format(translation, ...)
+      -- Fallback for semantic keys (e.g. "otclient_modules.entergame.tr_14"):
+      -- Look up the English value for the key, then search for THAT human-readable
+      -- string in the current locale's translation table.
+      -- Example flow for PL locale:
+      --   tr("otclient_modules.entergame.tr_14")
+      --   → PL doesn't have this key
+      --   → EN has: "otclient_modules.entergame.tr_14" = "Enter Game"
+      --   → PL has: "Enter Game" = "Wejdz do gry"
+      --   → returns "Wejdz do gry"
+      if currentLocale.name ~= defaultLocaleName and installedLocales then
+        local enLocale = installedLocales[defaultLocaleName]
+        if enLocale then
+          local enValue = enLocale.translation[text]
+          if enValue then
+            -- Try finding the English value in the current locale
+            local localTranslation = currentLocale.translation[enValue]
+            if localTranslation then
+              return applyFormat(localTranslation, ...)
+            end
+            -- English value not translated either — return English as fallback
+            return applyFormat(enValue, ...)
+          end
+        end
       end
 
       -- If there is no translation, we can still format numbers (kept for legacy usage).

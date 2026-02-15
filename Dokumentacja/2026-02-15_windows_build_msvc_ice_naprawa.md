@@ -26,13 +26,19 @@ w dwoch translation units (TU):
 Blad ICE oznacza **crash samego kompilatora** (cl.exe) — nie blad w naszym kodzie per se, 
 ale kompilator nie radzi sobie z okreslonymi kombinacjami template/optymalizacji.
 
-### Przyczyna glowna
-Kombinacja trzech czynnikow:
-1. **SKIP_PRECOMPILE_HEADERS ON** — wymuszalo rekompilacje calego lancucha `global.h` → `pch.h` 
-   (70 linii, 31 include'ow, w tym fmt, parallel_hashmap, pugixml) od zera w kazdym TU OTML
-2. **Poziom optymalizacji /O2** (domyslny Release) — agresywny optimizer P2 crashowal na glebokim 
-   template instantiation z `stdext::cast<T>` → `demangle_type<T>()`
-3. **LTCG/GL** — Link-Time Code Generation rozszezerala powierzchnie ICE miedzy TU
+### Przyczyna glowna (root cause)
+**MSVC Internal Compiler Error (ICE) C1001** w fazie P2 (codegen) kompilatora.
+
+**Root cause:** Template `value<T>()` w `otmlnode.h` wywolywal `stdext::demangle_type<T>()` 
+wewnatrz `fmt::format()` w funkcji zdefiniowanej w headerze. To powodowalo glebokie 
+instancjacje template'ow z `typeid` w kazdym TU includujacym `otmlnode.h`, crashujac P2.
+
+**Dowod:** Identyczny wzorzec byl juz wczesniej obejty workaround'em w `cast.h` (`safe_cast<R,T>()`).
+
+**Dodatkowe czynniki:** 
+- `SKIP_PRECOMPILE_HEADERS ON` — pogarszal sytuacje przez rekompilacje PCH od zera
+- `/O2` — agresywna optymalizacja zwiekszala powierzchnie ICE
+- LTCG/GL — rozszerzal problem miedzy TU
 
 ### Naprawa (commit `4587d18a7` + `0567a036c`)
 1. `#pragma optimize("", off/on)` w otmlparser.cpp i otmlnode.cpp — wyłacza optimizer w tych TU
@@ -44,8 +50,8 @@ Kombinacja trzech czynnikow:
 
 ### Status
 - Build `22034049974` (SHA `8aa3450a1`) — w trakcie (root cause fix: otmlnode.h)
+- Build `22034311885` (SHA `9b48524c9`) — w trakcie (dodatkowe workaround'y)
 - Build `22033027682` (SHA `0567a036c`) — FAIL (ICE nadal, #pragma optimize nie pomaga przy P2)
-- Dodatkowe workaround'y: commit `9b48524c9` (cast.h, thingtype.h, tile.h)
 
 ---
 
@@ -65,7 +71,7 @@ Kombinacja trzech czynnikow:
 | 2026-02-15 ~02:50 | (nowy) | `0567a036c` | **FAIL** | Pragma off + PCH + /O1 + bez toolset pin — ICE nadal w P2 |
 | 2026-02-15 ~04:00 | `22033027682` | `0567a036c` | **FAIL** | ICE C1001 w otmlnode.cpp(76), otmlparser.cpp(40) — #pragma optimize NIE pomaga przy P2 codegen crash |
 | 2026-02-15 ~04:30 | `22034049974` | `8aa3450a1` | **IN PROGRESS** | Root cause fix: ifdef out demangle_type<T>() w otmlnode.h |
-| 2026-02-15 ~05:00 | (nowy) | `9b48524c9` | **PUSHED** | Dodatkowe workaround'y: cast.h, thingtype.h, tile.h |
+| 2026-02-15 ~05:00 | `22034311885` | `9b48524c9` | **IN PROGRESS** | Dodatkowe workaround'y: cast.h, thingtype.h, tile.h |
 
 ### Co probowano i co nie zadzialalo
 

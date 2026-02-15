@@ -1,11 +1,18 @@
-# Plan: Dual Server System — Serwery "Imitacja 7.4" + Serwery aktualne
+# Dual Server System — Serwery "Imitacja 7.4" + Serwery aktualne
+
+> **Gałąź implementacji:** `serwer-7.4` (bazuje na `feature/i18n-multilanguage`)
+> **Status:** Etapy 1–4 ✅ ZAIMPLEMENTOWANE | Etapy 5–6 wchłonięte w 1–4
+> **Ostatnia aktualizacja:** 2026-02-15
+
+---
 
 ## Cel
 Rozbudowa istniejącego systemu `Servers_init` w OTClient o:
 - **Kategorie serwerów** — każdy serwer ma swoją kategorię (np. `"current"`, `"retro74"`)
 - **Wiele serwerów per kategoria** — np. 3 serwery aktualne + 2 serwery "imitacja 7.4"
 - **Jeden protokół (1420) dla wszystkich** — różnica w bazie danych i zasadach gry po stronie serwera
-- **Ograniczenia klienta per kategoria** — np. blokada hotkeys na runy dla kategorii `"retro74"`
+- **Ograniczenia klienta per kategoria** — blokada WSZYSTKICH item hotkeys dla `"retro74"`
+- **Twarda blokada w C++** — flaga `m_blockItemHotkeys` w skompilowanym kodzie (nie da się obejść edycją Lua)
 - **Istniejący przycisk "Server List"** wyświetla listę serwerów po kliknięciu
 
 ## Kluczowe założenia
@@ -14,6 +21,7 @@ Rozbudowa istniejącego systemu `Servers_init` w OTClient o:
 2. **Wiele serwerów** — np. `"Retro PvP"`, `"Retro Non-PvP"` (oba retro74) + `"Aldora"`, `"Bellona"`, `"Celesta"` (aktualne)
 3. **Klient stosuje ograniczenia** na podstawie kategorii wybranego serwera (ale serwer RÓWNIEŻ musi je egzekwować)
 4. **Istniejący UI** — przycisk `serverListButton` otwiera okno `ServerList` z listą
+5. **Wymaga rekompilacji instalki** — zmiany w C++ (`game.h`, `luafunctions.cpp`) wymagają przebudowy klienta
 
 ---
 
@@ -268,39 +276,36 @@ Gdy użytkownik jest w grze (po zalogowaniu):
 
 ---
 
-## Przyszłe rozszerzenia (poza obecnym zakresem)
+## Zmodyfikowane pliki (faktyczna implementacja)
 
-1. **Blokada auto-aim** — action `USEONTARGET` wymaga ręcznego kliknięcia
-2. **Inny skin/interface** dla retro — retro UI
-3. **Ograniczenie okien** — np. brak Battle List w retro
-4. **Filtrowanie listy serwerów** — ComboBox z kategorią nad listą serwerów: "Wszystkie" / "Aktualne" / "Retro 7.4"
-5. **Serwer wysyła kategorię** — zamiast klient→serwer, serwer informuje klienta o swoich ograniczeniach po połączeniu (ExtendedOpcode)
-
----
-
-## Pliki do modyfikacji (podsumowanie)
-
-| Plik | Zmiana |
-|------|--------|
-| `init.lua` | `Servers_init` + `displayName`/`category`, `ServerCategories`, helpery |
-| `serverlist.lua` | Wyświetlanie `displayName`, ustawianie `activeServerCategory` przy select |
-| `serverlist.otui` | Opcjonalnie: Label na kategorię w widgecie serwera |
-| `entergame.lua` | `doLogin()`/`setDefaultServer()` → ustawianie kategorii, wyświetlanie info |
-| `hotkeys_manager.lua` | Blokada `startChooseItem()`, `onChooseItemMouseRelease()`, `executeHotkeyItem()`, `updateHotkeyForm()` — ALL item hotkeys |
+| Plik | Zmiana | Typ |
+|------|--------|-----|
+| `testyy/init.lua` | `ServerCategories`, `_G.isRestricted()`, `_G.getActiveCategoryLabel()`, `_G.setServerCategoryFromHost()` | Lua |
+| `testyy/modules/client_serverlist/serverlist.lua` | `displayName` w liście, kategoria zamiast protokołu, ustawianie `activeServerCategory` | Lua |
+| `testyy/modules/client_entergame/entergame.lua` | `doLogin()` + `setDefaultServer()` + `init()` → kategoria + C++ flaga | Lua |
+| `testyy/modules/game_hotkeys/hotkeys_manager.lua` | 3-punktowa blokada item hotkeys + UI disable | Lua |
+| `testyy/src/client/game.h` | `bool m_blockItemHotkeys{false}` + getter/setter | **C++** |
+| `testyy/src/client/luafunctions.cpp` | Bindingi Lua: `setBlockItemHotkeys()`, `isBlockItemHotkeys()` | **C++** |
 
 ---
 
-## Szacowany czas implementacji
+## Status implementacji
 
-| Etap | Opis | Złożoność |
-|------|------|-----------|
-| 1 | Konfiguracja `Servers_init` + `ServerCategories` + helpery | Łatwe (~15 min) |
-| 2 | Rozbudowa ServerList — displayName + category | Średnie (~40 min) |
-| 3 | Ustawianie kategorii przy logowaniu i wyborze serwera | Łatwe (~20 min) |
-| 4 | Blokada WSZYSTKICH item hotkeys (3 punkty + UI) | Średnie (~30 min) |
-| 5 | Inicjalizacja kategorii przy starcie | Łatwe (~10 min) |
-| 6 | Info dla użytkownika (label, komunikat) | Łatwe (~15 min) |
-| **RAZEM** | | **~2-2.5h** |
+| Etap | Opis | Status |
+|------|------|--------|
+| 1 | Konfiguracja `ServerCategories` + helpery w `init.lua` | ✅ DONE |
+| 2 | Rozbudowa ServerList — displayName + category label | ✅ DONE |
+| 3 | Ustawianie kategorii przy logowaniu, wyborze serwera i starcie | ✅ DONE (wchłonął etap 5) |
+| 4 | Blokada WSZYSTKICH item hotkeys (3 punkty + UI + C++ flaga) | ✅ DONE (wchłonął etap 6) |
+| 5 | Inicjalizacja kategorii przy starcie | ✅ Wchłonięty w etap 3 |
+| 6 | Info dla użytkownika (label, komunikat) | ✅ Wchłonięty w etap 4 |
+
+### Co jeszcze trzeba zrobić
+
+- [ ] Odkomentować `Servers_init` z prawdziwymi adresami serwerów (gdy będą gotowe)
+- [ ] Always-online: klient działa TYLKO gdy serwer jest online (wymaga VPS/dedyk)
+- [ ] Serwer egzekwuje ograniczenia po swojej stronie (exhausty, lvl na runy, cooldowny)
+- [ ] Ewentualne ExtendedOpcode: serwer wysyła flagę kategorii do klienta po połączeniu
 
 ---
 
@@ -308,40 +313,42 @@ Gdy użytkownik jest w grze (po zalogowaniu):
 
 - **Protokół zawsze 1420** — imitacja 7.4 to ten sam silnik Canary z inną konfiguracją serwerową (baza, skrypty, exhausty, limity lvl na runy itp.)
 - **Wsteczna kompatybilność** — jeśli serwer nie ma `category`, domyślnie `"current"` (brak ograniczeń)
-- **Serwer MUSI egzekwować ograniczenia** — klient to tylko pierwsza linia obrony. Serwer Canary powinien RÓWNIEŻ blokować hotkey-use na runy w trybie retro74, bo klient można modyfikować
-- **Nie wymaga rekompilacji** — wszystkie zmiany to pliki Lua ładowane w runtime. Wystarczy podmienić pliki i zrestartować klienta
-- **Blokada ALL items, nie tylko run** — prostsze, pewniejsze, i zgodne z duchem retro 7.4 (tam nie było item hotkeys w ogóle)
-- **Jeden klient, wiele serwerów** — użytkownik klika przycisk "Server List", widzi wszystkie serwery pogrupowane wg kategorii, wybiera i loguje się
+- **Serwer MUSI egzekwować ograniczenia** — klient to tylko pierwsza linia obrony; serwer Canary powinien RÓWNIEŻ blokować hotkey-use na runy w trybie retro74
+- **WYMAGA rekompilacji** — zmiany w C++ (`game.h`, `luafunctions.cpp`) oznaczają że nowy build instalki jest konieczny. Zmiany Lua ładowane w runtime, ale C++ flaga jest skompilowana
+- **Blokada ALL items, nie tylko run** — prostsze, pewniejsze, zgodne z duchem retro 7.4 (tam nie było item hotkeys w ogóle)
+- **Jeden klient, wiele serwerów** — użytkownik klika "Server List", widzi serwery z etykietą kategorii, wybiera i loguje się
+- **Dwuwarstwowa blokada** — Lua sprawdza `_G.isRestricted()` + C++ sprawdza `g_game.isBlockItemHotkeys()` → nawet jeśli ktoś edytuje Lua, C++ flaga nadal blokuje
 
+---
 
+## DECYZJA: Always-online + pełne zabezpieczenie
 
+**Problem:** Pliki Lua to zwykły tekst — gracz może usunąć blokadę edytując hotkeys_manager.lua.
 
+**Rozwiązanie (3 warstwy):**
+1. **Lua** — `_G.isRestricted('blockItemHotkeys')` — blokada dla normalnych graczy ✅ DONE
+2. **C++** — `g_game.isBlockItemHotkeys()` — twarda flaga w skompilowanym kodzie, trudna do obejścia (reverse engineering) ✅ DONE
+3. **Always-online** — klient działa TYLKO gdy serwer jest online; serwer weryfikuje klienta ⏳ ODŁOŻONE (wymaga VPS/dedyk)
 
-Masz 100% racji — to ważna obserwacja. Pliki Lua to zwykły tekst, każdy gracz może otworzyć hotkeys_manager.lua i usunąć blokadę w 10 sekund.
+**Uzasadnienie odłożenia always-online:** Wymaga stabilnego serwera 24/7 (VPS lub dedyk). Bez tego klient nie uruchomi się offline. Wdrożenie gdy infrastruktura będzie gotowa.
 
-Opcje rozwiązania:
+---
 
-Podejście	Bezpieczeństwo	Wymaga rekompilacji?
-1. Tylko Lua — obecny plan	Żadne. Każdy edytuje plik i obejdzie	Nie
-2. C++ w kliencie — flaga w skompilowanym kodzie	Trudne do obejścia (reverse engineering)	Tak
-3. Serwer egzekwuje — serwer Canary blokuje po swojej stronie	Pełne — klient nie ma znaczenia	Nie (klient), ale wymaga zmian na serwerze
-Problem z opcją 3: Serwer nie jest w stanie odróżnić "gracz kliknął item ręcznie" od "gracz użył hotkeya" — oba wysyłają ten sam pakiet (UseItem, UseItemWith). Więc serwer nie może zablokować konkretnie hotkeys na itemy.
+## Praca na dwóch gałęziach
 
-Realistyczne podejścia:
+| Gałąź | Przeznaczenie |
+|-------|---------------|
+| `feature/i18n-multilanguage` | Główna gałąź — build Windows (CI), poprawki MSVC ICE, system lokalizacji |
+| `serwer-7.4` | Dual server system — zmiany Lua + C++ opisane w tym dokumencie |
 
-A) Hybryda: C++ w kliencie + serwer
+Zmiany w `serwer-7.4` bazują na `feature/i18n-multilanguage`. Gdy build Windows na i18n przejdzie CI, merge `serwer-7.4` ← `i18n` i przebudowa.
 
-Klient (C++): po połączeniu serwer wysyła flagę przez ExtendedOpcode → klient kompilowany blokuje item hotkeys
-Serwer: egzekwuje inne ograniczenia retro (exhausty, lvl na runy, cooldowny) — to SĄ rozróżnialne
-Wymaga: rekompilacji instalki + zmian na serwerze
-B) Akceptacja "soft" blokady (Lua)
+---
 
-Blokada w Lua działa dla uczciwych graczy / standardowej instalki
-Kto chce oszukać — i tak może użyć zmodyfikowanego klienta (OTClient jest open source, to dotyczy KAŻDEGO OTS-a)
-Serwer egzekwuje to co MOŻE egzekwować (exhausty, cooldowny, lvl requirements)
-De facto tak działają wszystkie OTS-y — klient to tylko UI
-Moja rekomendacja: Podejście B (Lua + serwer-side exhausty/rules) jest pragmatyczne. Jeśli ktoś modyfikuje klienta żeby mieć item hotkeys na retro serwerze — serwer i tak wymusza exhausty i inne ograniczenia 7.4. Hotkey na SD nie da przewagi jeśli serwer wymusza 2s exhaust na runy i SD dopiero od 45 lvl.
+## Przyszłe rozszerzenia (poza obecnym zakresem)
 
-Ale jeśli chcesz twardą blokadę not-bypassable w kliencie — to tak, wymaga rekompilacji (zmiany w C++).
-
-Co wybierasz?
+1. **Blokada auto-aim** — action `USEONTARGET` wymaga ręcznego kliknięcia
+2. **Inny skin/interface** dla retro — retro UI
+3. **Ograniczenie okien** — np. brak Battle List w retro
+4. **Filtrowanie listy serwerów** — ComboBox z kategorią nad listą serwerów
+5. **Serwer wysyła kategorię** — ExtendedOpcode po połączeniu informuje klienta o ograniczeniach

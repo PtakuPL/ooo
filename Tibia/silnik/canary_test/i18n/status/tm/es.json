@@ -15681,11 +15681,11 @@
   },
   "book.otbm.crudely_written_in_blood": {
     "src_hash": "b13f1b1494d3f2d9325469e1ae26c0b9",
-    "text": "<crudely written in blood>",
+    "text": "<crudamente escrito con sangre>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T03:32:07.256452Z"
+    "updated_at": "2026-02-16T20:24:14.143210Z"
   },
   "book.otbm.crunor_created_the_wolves_in": {
     "src_hash": "3cda23d2d41a6619fdb513223d8477b3",
@@ -139894,5 +139894,29 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:20:33.727793Z"
+  },
+  "npc.hoggle.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:28.795490Z"
+  },
+  "npc.hoggle.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:28.798492Z"
+  },
+  "npc.irea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:29.171927Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "file": "scripts.json",
-  "lang": "ru",
+  "lang": "ro",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -16,7 +16,7 @@
       "ok": true,
       "coverage_pct": 100.0,
       "total_keys": 2170,
-      "real_translations": 2169
+      "real_translations": 2170
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-16T20:24:47.667693Z"
+  "timestamp": "2026-02-16T20:25:03.537423Z"
 }

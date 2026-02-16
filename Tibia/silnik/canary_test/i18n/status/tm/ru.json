@@ -6214,5 +6214,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:19:48.386608Z"
+  },
+  "gamestore.modal.error": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Ошибка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:35.893755Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:35.927744Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:35.929511Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:35.940969Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:35.942289Z"
+  },
+  "scripts.dolls.12043_3": {
+    "src_hash": "3c7f745ec95f88d6bcb142426f7e8962",
+    "text": "Привет, %s!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.000772Z"
+  },
+  "scripts.find_person.dir_east": {
+    "src_hash": "320381dbf7cd2f31c04baa6b36e1c682",
+    "text": "Восток",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.015440Z"
+  },
+  "scripts.find_person.dir_north": {
+    "src_hash": "8d8d1437907bca79900ac5f0ea1f5c73",
+    "text": "Север",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.015907Z"
+  },
+  "scripts.find_person.dir_south": {
+    "src_hash": "50fd76e33fe5b9617c5ca99008af8904",
+    "text": "Юг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.016726Z"
+  },
+  "scripts.find_person.dir_west": {
+    "src_hash": "da4f0053a5c13882268852ae2da2e466",
+    "text": "Запад",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.017357Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.018853Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.019300Z"
+  },
+  "scripts.imbuement_shrine.msg_2": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Вы можете использовать алтарь только на подходящем предмете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.030310Z"
+  },
+  "scripts.malofur_explosion.say_3": {
+    "src_hash": "1ee05904751682de1be927c32b1849ac",
+    "text": "БУУУМ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.036818Z"
+  },
+  "scripts.quests.msg_3": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.093731Z"
+  },
+  "scripts.quests.msg_6": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.094991Z"
+  },
+  "scripts.register_actions.exhaust_message": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.097888Z"
+  },
+  "scripts.schrodingers_island_teleport_lvl_999.msg_2": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Поздравляем!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.109719Z"
+  },
+  "scripts.server_info.days": {
+    "src_hash": "44fdec47036f482b68b748f9d786801b",
+    "text": "дней",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.111762Z"
+  },
+  "scripts.spy.empty": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Пусто",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.121715Z"
+  },
+  "scripts.thais_exhibition.say_46": {
+    "src_hash": "3c7f745ec95f88d6bcb142426f7e8962",
+    "text": "Привет, %s!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.135222Z"
+  },
+  "scripts.thais_exhibition.say_50": {
+    "src_hash": "3c7f745ec95f88d6bcb142426f7e8962",
+    "text": "Привет, %s!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.137834Z"
+  },
+  "scripts.thais_exhibition.say_76": {
+    "src_hash": "3c7f745ec95f88d6bcb142426f7e8962",
+    "text": "Привет, %s!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:36.143281Z"
+  },
+  "gamestore.desc.expboost_1": {
+    "src_hash": "1f8ff19d92323e2ad0570448ae6e95f1",
+    "text": "Вы устали медленно прокачиваться? попробуй!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.008125Z"
+  },
+  "gamestore.desc.mount_1": {
+    "src_hash": "1ade786d188688927cdeada39e460f59",
+    "text": "Это фантастическое ездовое животное, которое помогает стать быстрее, попробуйте!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.008894Z"
+  },
+  "gamestore.desc.mount_2": {
+    "src_hash": "641bf2f7765ffdb9a21f971f2cfb249e",
+    "text": "Первый наездник на этом скакуне стал лидером своей страны! легенды говорят об этом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.009623Z"
+  },
+  "gamestore.desc.namechange_1": {
+    "src_hash": "7feebfb6dee744778b4c20d57ce28e79",
+    "text": "На тебя охотятся? Устали от этого? Получите новое имя, новую жизнь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.010415Z"
+  },
+  "gamestore.desc.namechange_2": {
+    "src_hash": "fc88f849550299a38bfb2c83548e40e6",
+    "text": "Новое имя, отвечающее вашим потребностям!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.011020Z"
+  },
+  "gamestore.desc.outfit_1": {
+    "src_hash": "7d1506afe3c00400d06330d74ad53137",
+    "text": "Этот наряд выглядит красиво. Его могут носить только люди высокого класса!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.011700Z"
+  },
+  "gamestore.desc.outfit_2": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Одежда, созданная специально для вас. Мы уверены, вам понравится.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.012393Z"
+  },
+  "gamestore.desc.outfit_3": {
+    "src_hash": "c6a2256abb5408a214c5c61689e2071d",
+    "text": "Легенда гласит, что его должны носить только умные люди, иначе сгоришь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.013094Z"
+  },
+  "gamestore.desc.preybonus_1": {
+    "src_hash": "ba965e035752e2099adfe30997c25d57",
+    "text": "Вы активировали добычу, но вам не нравится случайно выбранный бонус? Катайтесь за новым! Здесь вы можете приобрести пять бонусных рероллов Prey! \\nA Bonus Reroll позволяет получить бонус более высокого значения (максимум 50%). Бонус для вашей добычи будет выбран случайным образом из одного из следующих: увеличение урона, уменьшение урона, бонусный опыт, улучшенная добыча. 2-часовое время охоты начнется заново, как только вы получите новый бонус. Ваш монстр-жертва останется прежним.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.017817Z"
+  },
+  "gamestore.desc.preyslot_1": {
+    "src_hash": "e28416aff7d557334bec15fb821ac8a9",
+    "text": "Настал сезон охоты! Активируйте добычу, чтобы получить бонус при охоте на определенного монстра. Каждый персонаж может приобрести один слот постоянной добычи, который позволяет активировать дополнительную добычу. \\nЕсли вы активируете добычу, вы сможете выбрать одного монстра из девяти. Бонус для вашей добычи будет выбран случайным образом из одного из следующих: увеличение урона, уменьшение урона, бонусный опыт, улучшенная добыча. Размер бонуса может варьироваться от 5% до 50%. Ваша добыча будет активна в течение 2 часов охоты: продолжительность активной добычи будет уменьшаться только во время охоты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.023519Z"
+  },
+  "gamestore.desc.sexchange_1": {
+    "src_hash": "9b596440f4b4adb7b8d12b5eab6a3d17",
+    "text": "Вам надоел пол вашего персонажа? Получите для него новый секс прямо сейчас!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.024764Z"
+  },
+  "gamestore.desc.temple_1": {
+    "src_hash": "fbff8d8b619737c61a61eb89f4f78a34",
+    "text": "Нужен быстрый путь домой? Купите эту транспортную услугу, чтобы мгновенно телепортироваться в ваш домашний храм. \\n\\nОбратите внимание: вы не можете использовать эту услугу, если у вас есть боевой знак или блок защитной зоны. Кроме того, услуга не будет работать в зонах без выхода из системы или рядом с вашим домашним храмом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.027650Z"
+  },
+  "gamestore.disabled.active_xp_boost": {
+    "src_hash": "9f8d44629840b8c24221d34aeb6eeb3a",
+    "text": "У вас уже есть активный бонус опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.028301Z"
+  },
+  "gamestore.disabled.all_blessings": {
+    "src_hash": "0a240f9440015514195404b191ed6c4a",
+    "text": "У вас уже есть все Благословения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.028809Z"
+  },
+  "gamestore.disabled.already_3_slots": {
+    "src_hash": "a52cfe40b19318eb1a6cc026e95be42e",
+    "text": "У вас уже освобождено 3 слота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.029361Z"
+  },
+  "gamestore.disabled.already_addon": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "У вас уже есть этот аддон.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.029897Z"
+  },
+  "gamestore.disabled.already_charm_expansion": {
+    "src_hash": "ae5faf495a84cd087847248c6d684e08",
+    "text": "У вас уже есть расширение очарования.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.030519Z"
+  },
+  "gamestore.disabled.already_have_item": {
+    "src_hash": "8924be96e7d1a0554121764002ea4e22",
+    "text": "У вас уже есть %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:44.031280Z"
+  },
+  "gamestore.disabled.already_mount": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Это крепление у вас уже есть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:47.624118Z"
+  },
+  "gamestore.disabled.already_outfit": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "У вас уже есть этот наряд.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:47.624703Z"
+  },
+  "gamestore.disabled.hireling_outfit_unlocked": {
+    "src_hash": "b801ac2888be1b8234d07665e787127d",
+    "text": "Этот наряд наемника уже разблокирован.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:47.625252Z"
+  },
+  "gamestore.disabled.max_blessing": {
+    "src_hash": "5096a4f628327814a247bb8a7ceaed7d",
+    "text": "Вы достигли максимальной суммы для этого благословения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:47.625829Z"
   }
 }

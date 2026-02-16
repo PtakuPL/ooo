@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16T20:23:38.082053Z",
-  "cycle": 4,
-  "language": "sv",
-  "json_file": "questlog.json",
-  "translated": 39,
+  "timestamp": "2026-02-16T20:25:04.268916Z",
+  "cycle": 5,
+  "language": "ro",
+  "json_file": "scripts.json",
+  "translated": 50,
   "placeholders": 0,
-  "guard_fail": 11,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,

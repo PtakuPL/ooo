@@ -3966,5 +3966,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:20:09.647811Z"
+  },
+  "gamestore.modal.error": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.816723Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Ai găsit ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.833802Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.841084Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.844142Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.846105Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.859180Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.860735Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.881785Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.891096Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.891852Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.893328Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.894156Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Ai găsit ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.901067Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Ai găsit ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.901696Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.912165Z"
+  },
+  "scripts.construction_kits.msg_1": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Puneți mai întâi trusa de construcție pe podea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.917884Z"
+  },
+  "scripts.construction_kits.msg_2": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Poți construi acest lucru doar în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.918871Z"
+  },
+  "scripts.find_person.dir_east": {
+    "src_hash": "320381dbf7cd2f31c04baa6b36e1c682",
+    "text": "est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.942545Z"
+  },
+  "scripts.find_person.dir_north": {
+    "src_hash": "8d8d1437907bca79900ac5f0ea1f5c73",
+    "text": "nord",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.942974Z"
+  },
+  "scripts.find_person.dir_south": {
+    "src_hash": "50fd76e33fe5b9617c5ca99008af8904",
+    "text": "sud",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.943856Z"
+  },
+  "scripts.find_person.dir_west": {
+    "src_hash": "da4f0053a5c13882268852ae2da2e466",
+    "text": "vest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.944474Z"
+  },
+  "scripts.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Nu ești proprietarul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.945636Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.946629Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.946961Z"
+  },
+  "scripts.free_quest.msg_1": {
+    "src_hash": "9f78cd07a4952ce2aec875b30e947e8d",
+    "text": "Misiunea FreeQuest a jucătorului este completă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.949921Z"
+  },
+  "scripts.free_quest.msg_2": {
+    "src_hash": "c89e8e5830ed7bbdd0fff0e334e22dc9",
+    "text": "Misiunea FreeQuest a jucătorului este în curs..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.950559Z"
+  },
+  "scripts.golden.msg_1": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Ai nevoie de 5 jucători pentru a lupta cu acest boss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.953585Z"
+  },
+  "scripts.imbuement_shrine.msg_1": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Nu ai adunat suficiente cunoștințe de la vechii Modelatori. Vizitați templul Shaper din Montag pentru ajutor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.960402Z"
+  },
+  "scripts.imbuement_shrine.msg_2": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Puteți folosi altarul numai pentru un articol valid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.961206Z"
+  },
+  "scripts.key_door.msg_1": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.965267Z"
+  },
+  "scripts.keys.msg_1": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Ai intrat într-o celulă antică de închisoare a demonilor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.966325Z"
+  },
+  "scripts.kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Poți construi acest lucru doar în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.967836Z"
+  },
+  "scripts.mechanical_fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Nu ești proprietarul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:53.977696Z"
+  },
+  "scripts.quests.msg_3": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:54.021530Z"
+  },
+  "scripts.quests.msg_6": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:54.022275Z"
+  },
+  "scripts.register_actions.exhaust_message": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:54.023897Z"
+  },
+  "scripts.schrodingers_island_teleport_lvl_999.msg_2": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Felicitări!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:24:54.029866Z"
+  },
+  "gamestore.desc.expboost_1": {
+    "src_hash": "1f8ff19d92323e2ad0570448ae6e95f1",
+    "text": "Te-ai săturat să nivelezi încet? incearca!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.484721Z"
+  },
+  "gamestore.desc.mount_1": {
+    "src_hash": "1ade786d188688927cdeada39e460f59",
+    "text": "Aceasta este o montură fantastică care vă ajută să deveniți mai rapid, încercați-o!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.485395Z"
+  },
+  "gamestore.desc.mount_2": {
+    "src_hash": "641bf2f7765ffdb9a21f971f2cfb249e",
+    "text": "Primul călăreț al acestei monturi a devenit liderul țării sale! legendele spun că.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.486063Z"
+  },
+  "gamestore.desc.namechange_1": {
+    "src_hash": "7feebfb6dee744778b4c20d57ce28e79",
+    "text": "Ești vânat? Obosit de asta? Obțineți un nume nou, o viață nouă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.486787Z"
+  },
+  "gamestore.desc.namechange_2": {
+    "src_hash": "fc88f849550299a38bfb2c83548e40e6",
+    "text": "Un nou nume pentru nevoile tale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.487226Z"
+  },
+  "gamestore.desc.outfit_1": {
+    "src_hash": "7d1506afe3c00400d06330d74ad53137",
+    "text": "Arata frumos aceasta tinuta. Numai oamenii de înaltă clasă îl pot purta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.487844Z"
+  },
+  "gamestore.desc.outfit_2": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "O ținută care a fost creată pentru a vă potrivi. Suntem siguri că vă va plăcea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.488485Z"
+  },
+  "gamestore.desc.outfit_3": {
+    "src_hash": "c6a2256abb5408a214c5c61689e2071d",
+    "text": "Legenda spune că numai oamenii deștepți ar trebui să-l poarte, altfel vei arde!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.489444Z"
+  },
+  "gamestore.desc.preybonus_1": {
+    "src_hash": "ba965e035752e2099adfe30997c25d57",
+    "text": "Ai activat o pradă, dar nu-ți place bonusul selectat aleatoriu? Rulează pentru unul nou! Aici puteți cumpăra cinci Prey Bonus Rerolls! \\nO rerollare bonus vă permite să obțineți un bonus cu o valoare mai mare (max. 50%). Bonusul pentru prada ta va fi selectat aleatoriu din una dintre următoarele: sporirea daunelor, reducerea daunelor, XP bonus, prada îmbunătățită. Timpul de vânătoare de 2 ore va începe din nou odată ce ați primit un nou bonus. Monstrul tău pradă va rămâne același.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.491656Z"
+  },
+  "gamestore.desc.preyslot_1": {
+    "src_hash": "e28416aff7d557334bec15fb821ac8a9",
+    "text": "Este sezonul de vânătoare! Activați o pradă pentru a obține un bonus atunci când vânați un anumit monstru. Fiecare personaj poate achiziționa un Slot de pradă permanentă, care permite activarea unei prade suplimentare. \\nDacă activezi o pradă, poți selecta un monstru din nouă. Bonusul pentru prada ta va fi selectat aleatoriu din una dintre următoarele: sporirea daunelor, reducerea daunelor, XP bonus, prada îmbunătățită. Valoarea bonusului poate varia de la 5% la 50%. Prada ta va fi activă timp de 2 ore de vânătoare: durata unei prade active va fi redusă doar în timp ce vânezi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.494013Z"
+  },
+  "gamestore.desc.sexchange_1": {
+    "src_hash": "9b596440f4b4adb7b8d12b5eab6a3d17",
+    "text": "Te-ai plictisit de sexul personajului tău? Ia un sex nou pentru el acum!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.494735Z"
+  },
+  "gamestore.desc.temple_1": {
+    "src_hash": "fbff8d8b619737c61a61eb89f4f78a34",
+    "text": "Ai nevoie de un drum rapid spre casă? Cumpărați acest serviciu de transport pentru a fi teleportat instantaneu la templul de acasă. \\n\\nNotă, nu puteți folosi acest serviciu în timp ce aveți un semn de luptă sau un bloc de zonă de protecție. În plus, serviciul nu va funcționa în zonele fără deconectare sau în apropierea templului de acasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.496322Z"
+  },
+  "gamestore.disabled.active_xp_boost": {
+    "src_hash": "9f8d44629840b8c24221d34aeb6eeb3a",
+    "text": "Ai deja un boos XP activ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:03.496828Z"
   }
 }

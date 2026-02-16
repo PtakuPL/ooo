@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T20:23:36.832316Z",
-  "language": "sv",
-  "json_file": "questlog.json",
-  "translated": 39,
+  "timestamp": "2026-02-16T20:25:30.250726Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "questlog.quest_10.mission_10.state_2",
-      "en": "The entrance to their inner sanctum has been opened for you. Be prepared for a HARD battle! Better gather some friends to assist you.",
-      "translated": "Ingången till deras inre helgedom har öppnats för dig. Var beredd på en HÅR kamp! Bättre samla några vänner för att hjälpa dig.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_10.state_3",
-      "en": "Report back to whichever principal you have chosen to help and you will receive Yalaharian Outfits.",
-      "translated": "Rapportera tillbaka till vilken rektor du än valt att hjälpa så får du Yalaharian Outfits.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_10.state_4",
-      "en": "You got the access to the reward room. Choose carefully which reward you pick as you can only take one item.",
-      "translated": "Du har tillgång till belöningsrummet. Välj noga vilken belöning du väljer eftersom du bara kan ta ett föremål.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_10.state_5",
-      "en": "You have completed the Quest!",
-      "translated": "Du har slutfört uppdraget!",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_1",
-      "en": "You have to find all 7 guards and give a report to them. You should start by Foreign Quarter or by Trade Quarter and follow the order of the path..",
-      "translated": "Du måste hitta alla 7 vakterna och ge en rapport till dem. Du bör börja vid Foreign Quarter eller Trade Quarter och följa stigens ordning..",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_2",
-      "en": "You reported to 1 of 7 guards",
-      "translated": "Du rapporterade till 1 av 7 vakter",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_3",
-      "en": "You reported to 2 of 7 guards",
-      "translated": "Du rapporterade till 2 av 7 vakter",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_4",
-      "en": "You reported to 3 of 7 guards",
-      "translated": "Du rapporterade till 3 av 7 vakter",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_5",
-      "en": "You reported to 4 of 7 guards",
-      "translated": "Du rapporterade till 4 av 7 vakter",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_6",
-      "en": "You reported to 5 of 7 guards",
-      "translated": "Du rapporterade till 5 av 7 vakter",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_7",
-      "en": "You reported to 6 of 7 guards",
-      "translated": "Du rapporterade till 6 av 7 vakter",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_2.state_8",
-      "en": "You reported to 7 of 7 guards! Go back to Palimuth and ask for mission.",
-      "translated": "Du rapporterade till 7 av 7 vakter! Gå tillbaka till Palimuth och be om uppdrag.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_3.state_1",
-      "en": "Get the notes in Palimuths room and read them. Talk to Palimuth again when you've read the notes.",
-      "translated": "Få anteckningarna i Palimuths rum och läs dem. Prata med Palimuth igen när du har läst anteckningarna.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_3.state_2",
-      "en": "Talk to Azerus the Yalahari in the city centre to get your next mission.",
-      "translated": "Prata med Azerus Yalahari i stadens centrum för att få ditt nästa uppdrag.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_3.state_3",
-      "en": "Get the notes behind the Yalahari and read them. Talk to Azerus again and ask him for mission when you've read the notes.",
-      "translated": "Få anteckningarna bakom Yalahari och läs dem. Prata med Azerus igen och be honom om uppdrag när du har läst anteckningarna.",
-      "source": "google_translate"
+      "key": "npc.hoggle.farewell_msg_1",
+      "en": "Good bye.",
+      "translated": "Adiós.",
+      "source": "simple"
     },
     {
-      "key": "questlog.quest_10.mission_3.state_4",
-      "en": "Ask Palimuth for mission.",
-      "translated": "Be Palimuth om uppdrag.",
-      "source": "google_translate"
+      "key": "npc.hoggle.walkaway_msg_1",
+      "en": "Good bye.",
+      "translated": "Adiós.",
+      "source": "simple"
     },
     {
-      "key": "questlog.quest_10.mission_3.state_5",
-      "en": "First you will need to kill the three plague bearers and then get The Alchemists' Formulas. When this have been done head back to either Palimuth (good side) or Yalahari (Azerus) (bad side).",
-      "translated": "Först måste du döda de tre pestbärarna och sedan skaffa The Alchemists' Formulas. När detta har gjorts gå tillbaka till antingen Palimuth (bra sida) eller Yalahari (Azerus) (dålig sida).",
-      "source": "google_translate"
+      "key": "npc.hugo.bat_not_enough",
+      "en": "No, no. I need more bat wings! I said, 10!",
+      "translated": "No, no. ¡Necesito más alas de murciélago! ¡Dije 10!",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_3.state_6",
-      "en": "Ask Azerus the Yalahari for a mission.",
-      "translated": "Be Azerus Yalaharien om ett uppdrag.",
-      "source": "google_translate"
+      "key": "npc.irea.farewell_msg_1",
+      "en": "Good bye!",
+      "translated": "¡Adiós!",
+      "source": "simple"
     },
     {
-      "key": "questlog.quest_10.mission_4.state_1",
-      "en": "Ask Palimuth for mission.",
-      "translated": "Be Palimuth om uppdrag.",
-      "source": "google_translate"
+      "key": "npc.iskan.greet_msg_1",
+      "en": "You are not one of us. I don't want to talk to you.",
+      "translated": "No eres uno de nosotros. No quiero hablar contigo.",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_4.state_2",
-      "en": "For this mission you are asked to go to the Trade Quarter and negotiate or threaten Mr. West. Once again you will gain access to the mechanism although if you choose to help Palimuth you should go through the sewers.",
-      "translated": "För detta uppdrag ombeds du att gå till handelskvarteret och förhandla eller hota Mr. West. Återigen kommer du att få tillgång till mekanismen men om du väljer att hjälpa Palimuth bör du gå igenom avloppen.",
-      "source": "google_translate"
+      "key": "npc.iskan.stdmod_21",
+      "en": "Easy, boys! Don't mention that name again. Makes the boys nuts, ye know?",
+      "translated": "¡Tranquilo, muchachos! No vuelvas a mencionar ese nombre. Vuelve locos a los chicos, ¿sabes?",
+      "source": "tm"
     }
   ]
 }

@@ -3897,11 +3897,11 @@
   },
   "spell.poison_chain.name": {
     "src_hash": "f679194633ce29bb9119b5f139c4f81c",
-    "text": "poison chain",
+    "text": "łańcuch trucizny",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:56:15.342948Z"
+    "updated_at": "2026-02-16T23:38:32.771127Z"
   },
   "spell.lavafungus_ring.name": {
     "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
@@ -96542,5 +96542,373 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:31:06.966142Z"
+  },
+  "spell.sir_valorcrest_summon.name": {
+    "src_hash": "957e35ed048ddd87721f97047a0b325f",
+    "text": "Wezwanie pana Valorcresta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:41.492115Z"
+  },
+  "spell.lancer_beetle_skill_reducer.name": {
+    "src_hash": "42360850f1494b149a0f12e97ef0ef75",
+    "text": "Reduktor umiejętności lancera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:41.492602Z"
+  },
+  "spell.ironblight_freeze.name": {
+    "src_hash": "5aabd86f8100db71557b45a228d2a54a",
+    "text": "zamarznięcie zarazy żelaza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:41.492877Z"
+  },
+  "spell.srezz_lleecht.name": {
+    "src_hash": "c6735b9cf39cc4d574972e6d13e79577",
+    "text": "Lleech WaveT",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:46.527544Z"
+  },
+  "spell.lost_berserker_skill_reducer.name": {
+    "src_hash": "56487db3c865ce7f48a648e4297128d5",
+    "text": "utracony reduktor umiejętności berserkera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:46.527896Z"
+  },
+  "spell.abyssador_poison_wave.name": {
+    "src_hash": "ee4f1338ce79ebe520f864cc3bdce8e6",
+    "text": "fala trucizny Otchłani",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:46.528160Z"
+  },
+  "spell.haunter_electrify.name": {
+    "src_hash": "fb2552ad23c3c18710da7a27aac169ec",
+    "text": "nawiedzony elektryzuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:46.528391Z"
+  },
+  "spell.greater_jar_summon.name": {
+    "src_hash": "a46f9cd4a0193eac343be793e6004073",
+    "text": "większe wezwanie słoika",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:46.528644Z"
+  },
+  "spell.mutated_rat_paralyze.name": {
+    "src_hash": "eb31149e8372974ea0aa8aad1a461e83",
+    "text": "zmutowany paraliż szczura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:51.565836Z"
+  },
+  "spell.mutated_human_paralyze.name": {
+    "src_hash": "d3c88ba85b2115e4c98e34dccfd5899d",
+    "text": "zmutowany ludzki paraliż",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:51.566197Z"
+  },
+  "spell.quara_constrictor_electrify.name": {
+    "src_hash": "4086fc55ef1046f29d5b01e2199f798c",
+    "text": "quara constrictor elektryzuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:51.566701Z"
+  },
+  "spell.koshei_the_deathless_curse.name": {
+    "src_hash": "03a1c28d392da32d21f8695c80cfba99",
+    "text": "koshei, nieśmiertelna klątwa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:51.567009Z"
+  },
+  "spell.the_voice_of_ruin_paralyze.name": {
+    "src_hash": "e29336df79654ba1fe4de78c02fe3317",
+    "text": "głos ruiny paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:51.567284Z"
+  },
+  "spell.choking_fear_drown.name": {
+    "src_hash": "39160ee8d7bca7b101f3aeca4829f6a2",
+    "text": "dławiący strach utonął",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:56.819017Z"
+  },
+  "spell.woodling_paralyze.name": {
+    "src_hash": "97553a2f2fa52064daf5182d66aaddac",
+    "text": "paraliż leśny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:56.819270Z"
+  },
+  "spell.kraknaknork_poison_wave.name": {
+    "src_hash": "1fd267a3aead63a2997612b7b5401a35",
+    "text": "fala trucizny kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:56.819529Z"
+  },
+  "spell.kraknaknork_ice_wave.name": {
+    "src_hash": "32d29ecc9efa37a24ae26adb5bae9368",
+    "text": "fala lodowa kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:56.819772Z"
+  },
+  "spell.girtablilu_poison_wave.name": {
+    "src_hash": "a4e1224c426e4275b7f4952b67d5845c",
+    "text": "girtablilu trująca fala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:37:56.820040Z"
+  },
+  "spell.nightstalker_paralyze.name": {
+    "src_hash": "2c84fb8e3597186cf01caef6d50eaf14",
+    "text": "paraliż nocnego łowcy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:03.008941Z"
+  },
+  "spell.large_poison_ring.name": {
+    "src_hash": "133974dafcdccb55f7f557779cc2a53e",
+    "text": "duży pierścień trucizny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:03.009190Z"
+  },
+  "spell.makara_watersplash.name": {
+    "src_hash": "037bbf7c50bbcc1da65c48f2811c57ac",
+    "text": "plusk wody makara",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:03.009418Z"
+  },
+  "spell.orewalker_wave.name": {
+    "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
+    "text": "fala wędrowców",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:03.009629Z"
+  },
+  "spell.shulgrax_summon.name": {
+    "src_hash": "f5a03d22464772d6102203f0fe68bb2c",
+    "text": "wezwanie shulgraxu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:03.009838Z"
+  },
+  "spell.prince_drazzak_wave.name": {
+    "src_hash": "d57ae73626ec23c37e78b9c69ab23a58",
+    "text": "fala księcia drazaka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:08.651510Z"
+  },
+  "spell.destruction_summon.name": {
+    "src_hash": "01065f8da944639a1a4fb3cb16d22117",
+    "text": "wezwanie zniszczenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:08.651754Z"
+  },
+  "spell.urmahlullu_ring.name": {
+    "src_hash": "3c9688d7cc8cc7ed3d5885c74a95794e",
+    "text": "urmahlowanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:08.651956Z"
+  },
+  "spell.ushuriel_curse.name": {
+    "src_hash": "074cb677180b3b31a654751644a331cd",
+    "text": "klątwa Ushuriela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:08.652178Z"
+  },
+  "spell.gorerilla_large_ring.name": {
+    "src_hash": "e99623b0a89c854eac306e6f6d8bd787",
+    "text": "duży pierścień gorerilla",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:08.652438Z"
+  },
+  "spell.fire_overlord_soulfire.name": {
+    "src_hash": "14c49b0d83520ccc5818f8b871d249fe",
+    "text": "ognisty władca ognia duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:15.073931Z"
+  },
+  "spell.metal_gargoyle_curse.name": {
+    "src_hash": "0787f61ae7e0ee13dbba63aa7a817594",
+    "text": "klątwa metalowego gargulca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:15.074310Z"
+  },
+  "spell.lloyd_wave.name": {
+    "src_hash": "ad4c98b912a97a74be4871d555f23792",
+    "text": "fala Lloyda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:15.074513Z"
+  },
+  "spell.magma_crawler_soulfire_2.name": {
+    "src_hash": "022ce17b12c69f1881b4301e446b1d7f",
+    "text": "Soulfire magmowego pełzacza 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:15.075037Z"
+  },
+  "spell.zushuka_paralyze.name": {
+    "src_hash": "1ec800aaf80ad82153d7c9859735db29",
+    "text": "zushuka paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:15.075302Z"
+  },
+  "spell.humongous_fungus_paralyze.name": {
+    "src_hash": "39fed1c99b198b17cda07327d992fc3d",
+    "text": "ogromny grzyb paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:21.637999Z"
+  },
+  "spell.demon_paralyze.name": {
+    "src_hash": "2ced5b759655cd9ddc54fb26635b8e54",
+    "text": "paraliż demoniczny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:21.638389Z"
+  },
+  "spell.hirintror_freeze.name": {
+    "src_hash": "5e097d6269943f1e56b4c7abecc23198",
+    "text": "zamrożenie hirintrora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:21.638641Z"
+  },
+  "spell.foam_splash.name": {
+    "src_hash": "bc1f2119da4063a52687b9fba86321ef",
+    "text": "piana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:21.638845Z"
+  },
+  "spell.lord_of_the_elements_skill_reducer.name": {
+    "src_hash": "a20b38fea9fe86877e8442ae165cf9f3",
+    "text": "Władca Żywiołów, reduktor umiejętności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:21.639400Z"
+  },
+  "spell.barbarian_brutetamer_skill_reducer.name": {
+    "src_hash": "211044459eafd8b75ed888381306b783",
+    "text": "Reduktor umiejętności barbarzyńskiego brutalameru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:26.412917Z"
+  },
+  "spell.the_abomination_summon.name": {
+    "src_hash": "679818ed60c3bfa7fd70f1dce533fa81",
+    "text": "obrzydliwe wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:26.413246Z"
+  },
+  "spell.braindeath_paralyze.name": {
+    "src_hash": "3378421b02e9645f1d447f7a1a3dd419",
+    "text": "paraliż śmierci mózgowej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:26.413584Z"
+  },
+  "spell.source_of_corruption_wave.name": {
+    "src_hash": "cb4d34a5ee678fe586cc8fb3f5fc33f4",
+    "text": "Źródło fali korupcji",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:26.413859Z"
+  },
+  "spell.elder_mummy_paralyze.name": {
+    "src_hash": "ad76cd640c6cdc1ad2b82a7325815639",
+    "text": "starsza mumia paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:26.414174Z"
+  },
+  "spell.zavarash_paralyze.name": {
+    "src_hash": "575268d30e6f6f3e936c60ceb53bf726",
+    "text": "zavarash paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:32.771391Z"
+  },
+  "spell.hellfire_fighter_soulfire.name": {
+    "src_hash": "5c7f8c7b5308d6ad56a1cd97eccb1c5f",
+    "text": "Piekielny wojownik, ogień duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:32.771891Z"
+  },
+  "spell.gorerilla_small_ring.name": {
+    "src_hash": "cca50583b131400c336440d6eab26c70",
+    "text": "mały pierścionek z gorerillą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:38:32.772193Z"
   }
 }

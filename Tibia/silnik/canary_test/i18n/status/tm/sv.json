@@ -7430,5 +7430,261 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:47:49.919002Z"
+  },
+  "item.2061.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "staty",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.264615Z"
+  },
+  "item.21799.desc": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.313885Z"
+  },
+  "item.21970.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.333697Z"
+  },
+  "item.22506.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.349461Z"
+  },
+  "item.22508.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.350708Z"
+  },
+  "item.22626.name": {
+    "src_hash": "00574753828ebd4a8328210d1a29c015",
+    "text": "stor hög med ben",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.354542Z"
+  },
+  "item.23873.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.414206Z"
+  },
+  "item.23874.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.414659Z"
+  },
+  "item.23875.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.415070Z"
+  },
+  "item.23876.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.415448Z"
+  },
+  "item.24541.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.426131Z"
+  },
+  "item.24543.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.426739Z"
+  },
+  "item.24903.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.431414Z"
+  },
+  "item.2595.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "grävling päls",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.463636Z"
+  },
+  "item.28364.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.518745Z"
+  },
+  "item.28365.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.519404Z"
+  },
+  "item.28366.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.519786Z"
+  },
+  "item.28367.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.520190Z"
+  },
+  "item.28519.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.524982Z"
+  },
+  "item.29327.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.557268Z"
+  },
+  "item.29987.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.567204Z"
+  },
+  "item.30041.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.570600Z"
+  },
+  "item.30043.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.571012Z"
+  },
+  "item.30045.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.571430Z"
+  },
+  "item.30047.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.571994Z"
+  },
+  "item.30057.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.572785Z"
+  },
+  "item.3031.name": {
+    "src_hash": "f3438daa15ed0904727d1eb45902efd9",
+    "text": "guldmynt",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.590823Z"
+  },
+  "item.305.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "smuts",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.597030Z"
+  },
+  "item.31568.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.637307Z"
+  },
+  "item.31570.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.637929Z"
+  },
+  "item.31663.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.649000Z"
+  },
+  "item.31665.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:12.649871Z"
   }
 }

@@ -159998,5 +159998,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:47:24.579662Z"
+  },
+  "item.18386.name": {
+    "src_hash": "adafff23fe27d62fa9d5220cc0b3a8ea",
+    "text": "Ассассин",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.694421Z"
+  },
+  "item.194.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.706266Z"
+  },
+  "item.21878.name": {
+    "src_hash": "f1a81d782dea6a19bdca383bffe68452",
+    "text": "Паук",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.742193Z"
+  },
+  "item.2595.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "јазавчев крзно",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.794727Z"
+  },
+  "item.26173.name": {
+    "src_hash": "74186adf7f381c816fbb8dab121a6973",
+    "text": "Демон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.804775Z"
+  },
+  "item.26174.name": {
+    "src_hash": "74186adf7f381c816fbb8dab121a6973",
+    "text": "Демон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.805093Z"
+  },
+  "item.26175.name": {
+    "src_hash": "74186adf7f381c816fbb8dab121a6973",
+    "text": "Демон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.805381Z"
+  },
+  "item.26176.name": {
+    "src_hash": "74186adf7f381c816fbb8dab121a6973",
+    "text": "Демон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.805690Z"
+  },
+  "item.26179.name": {
+    "src_hash": "74186adf7f381c816fbb8dab121a6973",
+    "text": "Демон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.806262Z"
+  },
+  "item.26180.name": {
+    "src_hash": "74186adf7f381c816fbb8dab121a6973",
+    "text": "Демон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.806566Z"
+  },
+  "item.305.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:20.858811Z"
+  },
+  "item.7352.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.112525Z"
+  },
+  "item.7764.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.123343Z"
+  },
+  "item.903.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "јазавчев крзно",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.145283Z"
+  },
+  "item.9258.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.157049Z"
+  },
+  "item.9442.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.160747Z"
+  },
+  "item.9445.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.161060Z"
+  },
+  "item.950.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.162015Z"
+  },
+  "item.952.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "прљавштина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:21.162493Z"
+  },
+  "item.10307.name": {
+    "src_hash": "7afd5bed67b66a4a2d9b47e5b0721a15",
+    "text": "густо крзно",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:27.939369Z"
+  },
+  "item.10308.name": {
+    "src_hash": "ce041dac1cc84ec74f3fcad474b9d0a6",
+    "text": "мутираног меса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:27.940181Z"
+  },
+  "item.10309.name": {
+    "src_hash": "c752a633fac9d8b23b5fef3fdc67a11f",
+    "text": "прамен косе медузе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:27.941227Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Нешто драгоцено би могло бити запечаћено у њему",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:27.942772Z"
+  },
+  "item.10310.name": {
+    "src_hash": "e9284a43d184f9ab54404ee6367ba714",
+    "text": "сјајни камен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:27.943593Z"
+  },
+  "item.10311.name": {
+    "src_hash": "801d49ef5d0b22c3e85b179f5edf74fd",
+    "text": "саблетоотх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:34.362016Z"
+  },
+  "item.10312.name": {
+    "src_hash": "0864cee69182583b50302ead6c9ab9a2",
+    "text": "коса нога",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:34.362456Z"
+  },
+  "item.10313.name": {
+    "src_hash": "e0314d9b60aebbbbd8d8bbc182c4c3bc",
+    "text": "крилати реп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:34.362788Z"
+  },
+  "item.10314.name": {
+    "src_hash": "5352a9cf8423ca616d3079263ed97363",
+    "text": "цвет коприве",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:34.363123Z"
+  },
+  "item.10315.name": {
+    "src_hash": "06ef3decc6d627d2b121cc380b0a87c7",
+    "text": "сумпорни камен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:34.363473Z"
+  },
+  "item.10316.name": {
+    "src_hash": "4266580860c8ca55ed261210dd9cdd65",
+    "text": "несвета кост",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:40.593469Z"
+  },
+  "item.10317.name": {
+    "src_hash": "9be089ec9fcf39dd5f944a55e9959098",
+    "text": "вукодлака крзна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:40.593853Z"
+  },
+  "item.10318.name": {
+    "src_hash": "143eec50bc23ca5d787b2fa786bd2051",
+    "text": "крзно ратног вука",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:40.594232Z"
+  },
+  "item.10319.name": {
+    "src_hash": "27a18ca062a4121b180022c59e1c0d25",
+    "text": "вуне",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:40.594587Z"
+  },
+  "item.10320.name": {
+    "src_hash": "a4e41a29f24a163a9c6d6ccbdc280f20",
+    "text": "књига некромантичких ритуала",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:40.595039Z"
+  },
+  "item.10321.name": {
+    "src_hash": "36428b55670c8882c1db63f7c9e29ede",
+    "text": "мамутова кљова",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:49.353068Z"
+  },
+  "item.10322.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:49.353406Z"
+  },
+  "item.10323.name": {
+    "src_hash": "f8615c4e06ac78ad253b643eecb893a5",
+    "text": "чуварске чизме",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:49.353773Z"
+  },
+  "item.10324.name": {
+    "src_hash": "388cc25f567c8efa9eafbbb8d7a4e50d",
+    "text": "експедицијски ранац",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:49.354261Z"
+  },
+  "item.10325.name": {
+    "src_hash": "264693254b1a770a4a1e7865f127dc80",
+    "text": "торба за експедицију",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:49.354653Z"
+  },
+  "item.10326.name": {
+    "src_hash": "0b29a3403d3193814ebf74b236081849",
+    "text": "змајев ранац",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:57.551387Z"
+  },
+  "item.10327.name": {
+    "src_hash": "48eaac8ad0968067e11a82a3b5be2c77",
+    "text": "минотаур руксак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:57.551766Z"
+  },
+  "item.10328.name": {
+    "src_hash": "aeb243f8b7ef666cea312e9a74a0263d",
+    "text": "гомила зрелог пиринча",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:57.552157Z"
+  },
+  "item.10329.name": {
+    "src_hash": "22f46e83d061e0b5a2f3c98e18cbdf1f",
+    "text": "пиринчана кугла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:57.552476Z"
+  },
+  "item.10330.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мртви гнарлхоунд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:50:57.552825Z"
+  },
+  "item.10331.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мртви гнарлхоунд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:02.615080Z"
+  },
+  "item.10332.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мртви гнарлхоунд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:02.615459Z"
+  },
+  "item.10333.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мртви гнарлхоунд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:02.615814Z"
+  },
+  "item.10334.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "мртви орк марудер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:02.616188Z"
+  },
+  "item.10335.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "мртви орк марудер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:02.616557Z"
+  },
+  "item.10336.name": {
+    "src_hash": "00574753828ebd4a8328210d1a29c015",
+    "text": "велика гомила костију",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:51:05.511632Z"
   }
 }

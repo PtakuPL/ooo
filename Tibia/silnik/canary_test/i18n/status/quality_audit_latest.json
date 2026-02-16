@@ -1,16 +1,14 @@
 {
-  "timestamp": "2026-02-16T20:31:35.392784Z",
+  "timestamp": "2026-02-16T20:32:40.880165Z",
   "checked_entries": 100,
-  "issues_found": 5,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en_exempt": 9,
-    "artifact_token": 5,
-    "suspicious_log_critical": 92,
-    "suspicious_log_high": 91,
-    "suspicious_log_medium": 16,
-    "suspicious_log_low": 1,
-    "suspicious_rejected_critical": 20,
-    "suspicious_rejected_high": 2
+    "identical_to_en_exempt": 10,
+    "artifact_token": 8,
+    "suspicious_log_high": 195,
+    "suspicious_log_low": 5,
+    "suspicious_rejected_critical": 23,
+    "suspicious_rejected_high": 4
   },
   "issues": [
     {
@@ -47,6 +45,27 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "npc.mother_of_jack.voice_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+    },
+    {
+      "key": "npc.navigator.multi_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
+    },
+    {
+      "key": "npc.navigator.multi_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
+      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
     }
   ],
   "threshold": 10,

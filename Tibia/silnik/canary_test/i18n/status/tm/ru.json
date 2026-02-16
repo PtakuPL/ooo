@@ -7566,5 +7566,349 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:30:22.690824Z"
+  },
+  "monster.hide.name": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Скрыть",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.255821Z"
+  },
+  "monster.hide.desc": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Скрыть",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.256329Z"
+  },
+  "monster.lord_of_the_elements.name": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Повелитель стихий",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.289848Z"
+  },
+  "monster.lord_of_the_elements.desc": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Повелитель стихий",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.290409Z"
+  },
+  "monster.fiery_heart.name": {
+    "src_hash": "b5949a098cf12e73918ca169d1ea501f",
+    "text": "Огненное сердце",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.310802Z"
+  },
+  "monster.guilt.name": {
+    "src_hash": "f1529f88df2bd78ecc8ba0d52ac6fbc2",
+    "text": "Вина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.322896Z"
+  },
+  "monster.guilt.desc": {
+    "src_hash": "f1529f88df2bd78ecc8ba0d52ac6fbc2",
+    "text": "Вина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.323500Z"
+  },
+  "monster.mushroom.name": {
+    "src_hash": "b93c3d9029fa42815abf0551db0cec98",
+    "text": "Гриб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.335291Z"
+  },
+  "monster.icicle.name": {
+    "src_hash": "c53238c3009d1d023920d8fac2a8e159",
+    "text": "Сосулька",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.341826Z"
+  },
+  "monster.lost_time.name": {
+    "src_hash": "23df60774f666e7e4426291a6a0f590f",
+    "text": "Потерянное время",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.343595Z"
+  },
+  "monster.lost_time.desc": {
+    "src_hash": "60424674619e1854ad52c971286b8685",
+    "text": "потерянное время",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.344102Z"
+  },
+  "monster.bad_dream.name": {
+    "src_hash": "cc969b71214e8e8fb65fbfd5892dabcb",
+    "text": "Плохой сон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.372515Z"
+  },
+  "monster.the_unwelcome.name": {
+    "src_hash": "1681bf894750ce5399dffada6231a40a",
+    "text": "The UnДобро пожаловать",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.422376Z"
+  },
+  "monster.the_unwelcome.desc": {
+    "src_hash": "1681bf894750ce5399dffada6231a40a",
+    "text": "The UnДобро пожаловать",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.423707Z"
+  },
+  "monster.souleater.name": {
+    "src_hash": "937b0cba57310e07dd89c08a6254a08c",
+    "text": "Пожиратель душ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.489461Z"
+  },
+  "monster.frost_servant.voice_1": {
+    "src_hash": "b38bfbe06a8245d7a17e1c0aceeab195",
+    "text": "Хррр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.501684Z"
+  },
+  "monster.frost_servant.voice_2": {
+    "src_hash": "2921deeb6350da477d908acc416166b4",
+    "text": "Крррр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.502199Z"
+  },
+  "monster.orc_sambackpack.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Орк",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.511057Z"
+  },
+  "monster.orc_sambackpack.desc": {
+    "src_hash": "0e49b2c5b7824c1299c54d1d7786e69f",
+    "text": "орк",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.511515Z"
+  },
+  "monster.mushroom_sniffer.voice_2": {
+    "src_hash": "6beac3bab1b036233843a0aa676cec59",
+    "text": "Хрю",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.531645Z"
+  },
+  "monster.vampire_pig.voice_1": {
+    "src_hash": "6beac3bab1b036233843a0aa676cec59",
+    "text": "Хрю",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.543142Z"
+  },
+  "monster.pig.voice_2": {
+    "src_hash": "6beac3bab1b036233843a0aa676cec59",
+    "text": "Хрю",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.553421Z"
+  },
+  "monster.fish.name": {
+    "src_hash": "071642fa72ba780ee90ed36350d82745",
+    "text": "Рыба",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.577101Z"
+  },
+  "monster.pillar.name": {
+    "src_hash": "5823358bdedcd4c2a70ff563534130d9",
+    "text": "Колонна",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.625051Z"
+  },
+  "monster.hive_pore.name": {
+    "src_hash": "b30a9f9bc2bd1380fa501a10591a4a3c",
+    "text": "Пора улья",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.626713Z"
+  },
+  "monster.wasp.voice_1": {
+    "src_hash": "a4a90cf143e6eb7fa208ab8f7c5f7439",
+    "text": "Бсссссс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.684694Z"
+  },
+  "monster.ironblight.voice_2": {
+    "src_hash": "5640faaccbf8752d0fd73e9f44738c8b",
+    "text": "КЛОНК!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.697246Z"
+  },
+  "monster.silencer.name": {
+    "src_hash": "5e1ddb0ab1cb335819a4d6f4fac11161",
+    "text": "Заглушитель",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.721062Z"
+  },
+  "monster.williwasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "оса",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.749069Z"
+  },
+  "monster.green_frog.voice_3": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.792276Z"
+  },
+  "monster.salamander.voice_2": {
+    "src_hash": "5265cbb11545933ece781c0f0285cc28",
+    "text": "Чррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.792810Z"
+  },
+  "monster.infernal_frog.voice_4": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.793477Z"
+  },
+  "monster.orchid_frog.voice_3": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.794053Z"
+  },
+  "monster.azure_frog.voice_4": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.794850Z"
+  },
+  "monster.bog_frog.voice_4": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.795352Z"
+  },
+  "monster.crimson_frog.voice_3": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.795805Z"
+  },
+  "monster.toad.voice_4": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.796495Z"
+  },
+  "monster.coral_frog.voice_3": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.796966Z"
+  },
+  "monster.troll.voice_9": {
+    "src_hash": "a4cd7b7f209a2afbee93af62ae6c788f",
+    "text": "Хм, ошибки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.798411Z"
+  },
+  "monster.wasp.voice_2": {
+    "src_hash": "a4a90cf143e6eb7fa208ab8f7c5f7439",
+    "text": "Бсссссс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:14.805397Z"
+  },
+  "monster.crocodile.desc": {
+    "src_hash": "21eda17adf47b0ba08635701263e312f",
+    "text": "крокодил",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:17.108301Z"
+  },
+  "monster.sorcerer_familiar.desc": {
+    "src_hash": "174789236ff8a96a962bee531b60d0d8",
+    "text": "знакомый колдун",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:17.109448Z"
+  },
+  "monster.knight_familiar.desc": {
+    "src_hash": "34307faf6ad6e0a5cacc088524480e0e",
+    "text": "знакомый рыцарь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:17.110451Z"
   }
 }

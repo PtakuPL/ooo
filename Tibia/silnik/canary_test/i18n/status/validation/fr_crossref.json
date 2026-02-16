@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:38:11.843169Z",
+  "checked_at": "2026-02-16T20:57:25.474849Z",
   "issues_total": 464,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1284,123 +1284,6 @@
       "lang": "vortex"
     },
     {
-      "key": "item.2596.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "painting",
-      "pl": "obraz",
-      "lang": "painting"
-    },
-    {
-      "key": "item.25980.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "emblem",
-      "pl": "godło",
-      "lang": "emblem"
-    },
-    {
-      "key": "item.2601.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "painting",
-      "pl": "obraz",
-      "lang": "painting"
-    },
-    {
-      "key": "item.2606.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "banner",
-      "pl": "sztandar",
-      "lang": "banner"
-    },
-    {
-      "key": "item.26188.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "iron crown",
-      "pl": "żelazo korona",
-      "lang": "iron crown"
-    },
-    {
-      "key": "item.27446.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gold dust",
-      "pl": "Złoto dust",
-      "lang": "gold dust"
-    },
-    {
-      "key": "item.27841.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "banner",
-      "pl": "sztandar",
-      "lang": "banner"
-    },
-    {
-      "key": "item.27842.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "banner",
-      "pl": "sztandar",
-      "lang": "banner"
-    },
-    {
-      "key": "item.2807.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "piano kit",
-      "pl": "piaNie kit",
-      "lang": "piano kit"
-    },
-    {
-      "key": "item.2815.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "scroll",
-      "pl": "zwój",
-      "lang": "scroll"
-    },
-    {
-      "key": "item.28518.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "old letter",
-      "pl": "stary list",
-      "lang": "old letter"
-    },
-    {
-      "key": "item.2855.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "basket",
-      "pl": "kosz",
-      "lang": "basket"
-    },
-    {
-      "key": "item.2874.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "vial",
-      "pl": "fiolka",
-      "lang": "vial"
-    },
-    {
       "key": "item.2959.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1435,96 +1318,6 @@
       "en": "piano",
       "pl": "piaNie",
       "lang": "piano"
-    },
-    {
-      "key": "item.2992.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snowball",
-      "pl": "sNiewball",
-      "lang": "snowball"
-    },
-    {
-      "key": "item.30007.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "grave",
-      "pl": "grób",
-      "lang": "grave"
-    },
-    {
-      "key": "item.30059.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "giant ruby",
-      "pl": "olbrzym rubin",
-      "lang": "giant ruby"
-    },
-    {
-      "key": "item.3011.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "crown",
-      "pl": "korona",
-      "lang": "crown"
-    },
-    {
-      "key": "item.30215.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30218.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30273.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30277.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "icicle",
-      "pl": "Sopel",
-      "lang": "icicle"
-    },
-    {
-      "key": "item.30320.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lucky pig",
-      "pl": "szczęśliwy świnia",
-      "lang": "lucky pig"
-    },
-    {
-      "key": "item.3059.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "spellbook",
-      "pl": "Zaklęciebook",
-      "lang": "spellbook"
     },
     {
       "key": "item.3101.name",
@@ -4405,6 +4198,213 @@
       "en": "NOOOOO!",
       "pl": "NieOOOO!",
       "lang": "NOOOOO!"
+    },
+    {
+      "key": "monster.lady_tenebris.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blackout!",
+      "pl": "Zaciemnienie!",
+      "lang": "Blackout!"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_c_invu.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.dipthrah.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dipthrah",
+      "pl": "Dyftra",
+      "lang": "Dipthrah"
+    },
+    {
+      "key": "monster.dipthrah.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dipthrah",
+      "pl": "Dyftra",
+      "lang": "Dipthrah"
+    },
+    {
+      "key": "monster.omruc.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.thalas.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thalas",
+      "pl": "Talas",
+      "lang": "Thalas"
+    },
+    {
+      "key": "monster.thalas.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thalas",
+      "pl": "Talas",
+      "lang": "Thalas"
+    },
+    {
+      "key": "monster.bad_dream.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bad Dream",
+      "pl": "Zły sen",
+      "lang": "Bad Dream"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "DIE!",
+      "pl": "UMIERAĆ!",
+      "lang": "DIE!"
+    },
+    {
+      "key": "monster.horadron.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Horadron",
+      "pl": "Horadrona",
+      "lang": "Horadron"
+    },
+    {
+      "key": "monster.horadron.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Horadron",
+      "pl": "Horadrona",
+      "lang": "Horadron"
+    },
+    {
+      "key": "monster.minion_of_versperoth.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrunt",
+      "pl": "Wrrrr",
+      "lang": "Grrrrunt"
+    },
+    {
+      "key": "monster.gnomevil.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnomevil",
+      "pl": "GNiemevil",
+      "lang": "Gnomevil"
+    },
+    {
+      "key": "monster.gnomevil.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnomevil",
+      "pl": "GNiemevil",
+      "lang": "Gnomevil"
+    },
+    {
+      "key": "monster.abyssador.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Abyssador",
+      "pl": "Otchłań",
+      "lang": "Abyssador"
+    },
+    {
+      "key": "monster.abyssador.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Abyssador",
+      "pl": "Otchłań",
+      "lang": "Abyssador"
+    },
+    {
+      "key": "monster.humorless_fungus.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chatter",
+      "pl": "Gadać",
+      "lang": "Chatter"
+    },
+    {
+      "key": "monster.bone_jaw.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bone Jaw",
+      "pl": "Kościana Szczęka",
+      "lang": "Bone Jaw"
+    },
+    {
+      "key": "monster.rift_spawn.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rift Spawn",
+      "pl": "Spawn Riftu",
+      "lang": "Rift Spawn"
+    },
+    {
+      "key": "monster.librarian.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Librarian",
+      "pl": "Bibliotekarz",
+      "lang": "Librarian"
+    },
+    {
+      "key": "monster.mazzinor.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mazzinor",
+      "pl": "MazziNier",
+      "lang": "Mazzinor"
+    },
+    {
+      "key": "monster.mazzinor.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mazzinor",
+      "pl": "MazziNier",
+      "lang": "Mazzinor"
+    },
+    {
+      "key": "monster.jailer.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jailer",
+      "pl": "Strażnik więzienny",
+      "lang": "Jailer"
     }
   ],
   "length_ratio_issues": [

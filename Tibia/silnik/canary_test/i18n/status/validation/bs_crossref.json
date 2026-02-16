@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:37:11.485077Z",
+  "checked_at": "2026-02-16T20:56:33.372230Z",
   "issues_total": 400,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2741,6 +2741,15 @@
       "lang": "Die noob!"
     },
     {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "Śmierć!",
+      "lang": "Death!"
+    },
+    {
       "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2757,6 +2766,15 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "Krew!",
+      "lang": "BLOOD!"
     },
     {
       "key": "monster.tarnished_spirit.voice_1",
@@ -3594,24 +3612,6 @@
       "en": "Slurp!",
       "pl": "Siorbać!",
       "lang": "Slurp!"
-    },
-    {
-      "key": "monster.warlord_ruzad.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rahi Gosh!",
-      "pl": "Rahi Jejku, ojej!",
-      "lang": "Rahi Gosh!"
-    },
-    {
-      "key": "monster.raging_mage.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ENERGY!!",
-      "pl": "ENERGIA!!",
-      "lang": "ENERGY!!"
     }
   ],
   "length_ratio_issues": [],

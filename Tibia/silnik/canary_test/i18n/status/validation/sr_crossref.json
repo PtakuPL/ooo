@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 8.2,
+  "coverage_pct": 8.7,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:38:57.802926Z",
+  "checked_at": "2026-02-16T20:58:09.057108Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1652,15 +1652,6 @@
       "lang": "Oink oink"
     },
     {
-      "key": "monster.old_pig.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
-    },
-    {
       "key": "monster.old_wolf.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1695,15 +1686,6 @@
       "en": "Moooaaan",
       "pl": "Muuuuuu",
       "lang": "Moooaaan"
-    },
-    {
-      "key": "monster.eternal_guardian.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zzrrkrrch!",
-      "pl": "Zrrrkrrch!",
-      "lang": "Zzrrkrrch!"
     },
     {
       "key": "monster.war_golem.voice_10",
@@ -2381,6 +2363,15 @@
       "lang": "Die noob!"
     },
     {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "Śmierć!",
+      "lang": "Death!"
+    },
+    {
       "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2397,6 +2388,15 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "Krew!",
+      "lang": "BLOOD!"
     },
     {
       "key": "monster.tarnished_spirit.voice_1",
@@ -3488,24 +3488,6 @@
       "lang": "Oh..."
     },
     {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_ghostly_sage.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
-    },
-    {
       "key": "npc.a_restless_soul.greet_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3594,24 @@
       "en": "Then not.",
       "pl": "W takim razie nie.",
       "lang": "Then not."
+    },
+    {
+      "key": "npc.alkestios.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.altar.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
     }
   ],
   "length_ratio_issues": [

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:37:10.089501Z",
+  "checked_at": "2026-02-16T20:56:32.679762Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2417,6 +2417,15 @@
       "lang": "Die noob!"
     },
     {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "Śmierć!",
+      "lang": "Death!"
+    },
+    {
       "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2433,6 +2442,15 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "Krew!",
+      "lang": "BLOOD!"
     },
     {
       "key": "monster.tarnished_spirit.voice_1",
@@ -3594,24 +3612,6 @@
       "en": "Good bye.",
       "pl": "Żegnaj.",
       "lang": "Good bye."
-    },
-    {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uhhhh...",
-      "pl": "Uuuuhhh...",
-      "lang": "Uhhhh..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RISE. ...",
-      "pl": "POWSTAŃ....",
-      "lang": "RISE. ..."
     }
   ],
   "length_ratio_issues": [

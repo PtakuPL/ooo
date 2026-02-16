@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:38:59.901954Z",
+  "checked_at": "2026-02-16T20:58:10.550944Z",
   "issues_total": 415,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2471,6 +2471,15 @@
       "lang": "Huh!"
     },
     {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "Krew!",
+      "lang": "BLOOD!"
+    },
+    {
       "key": "monster.tarnished_spirit.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3603,15 +3612,6 @@
       "en": "Chhchh?",
       "pl": "Chhchh...",
       "lang": "Chhchh?"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
     }
   ],
   "length_ratio_issues": [

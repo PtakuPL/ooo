@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 6.9,
+  "coverage_pct": 7.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:38:58.016293Z",
+  "checked_at": "2026-02-16T20:58:09.242185Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2588,6 +2588,15 @@
       "lang": "Die noob!"
     },
     {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "Śmierć!",
+      "lang": "Death!"
+    },
+    {
       "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2604,6 +2613,15 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "Krew!",
+      "lang": "BLOOD!"
     },
     {
       "key": "monster.tarnished_spirit.voice_1",
@@ -3594,24 +3612,6 @@
       "en": "Broar!",
       "pl": "Bracie!",
       "lang": "Broar!"
-    },
-    {
-      "key": "monster.troll.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr",
-      "pl": "Wrr",
-      "lang": "Grrr"
-    },
-    {
-      "key": "monster.troll.voice_7",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
     }
   ],
   "length_ratio_issues": [

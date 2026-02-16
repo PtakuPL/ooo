@@ -160398,5 +160398,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:51:05.511632Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L138.261": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Чекај! Не одлази! Желим да вам кажем о својим надреалним бројевима.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.121973Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L139.262": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Збогом! Не заборавите на тајне математике.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.122764Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L140.263": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Ха? ста? могу да видим! Вау! Не-мино. Да ли су и вама {capture}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.124018Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L51.150": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ЗззЗззЗз...чррр...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.124645Z"
+  },
+  "data.otservbr.global.npc.hanna.L122.876": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.180103Z"
+  },
+  "data.otservbr.global.npc.hanna.L123.877": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.180748Z"
+  },
+  "data.otservbr.global.npc.harlow.L79.1285": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.181481Z"
+  },
+  "data.otservbr.global.npc.harlow.vengoth.L58.855": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.181896Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L65.882": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.182936Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L66.883": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.183521Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L65.809": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.183975Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L66.810": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.184383Z"
+  },
+  "data.otservbr.global.npc.hoggle.L60.1550": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.185237Z"
+  },
+  "data.otservbr.global.npc.hoggle.L61.1551": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.185781Z"
+  },
+  "data.otservbr.global.npc.jack.fate.goroma.L117.307": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.190055Z"
+  },
+  "data.otservbr.global.npc.karith.L352.601": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.192615Z"
+  },
+  "data.otservbr.global.npc.karith.L353.602": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.193071Z"
+  },
+  "data.otservbr.global.npc.lubo.L158.1434": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.199714Z"
+  },
+  "data.otservbr.global.npc.mazarius.L190.563": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.202295Z"
+  },
+  "data.otservbr.global.npc.morgan.L156.480": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.204180Z"
+  },
+  "data.otservbr.global.npc.naji.L77.1425": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.206384Z"
+  },
+  "data.otservbr.global.npc.naji.L78.1426": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.206815Z"
+  },
+  "data.otservbr.global.npc.ocelus.L108.833": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.209655Z"
+  },
+  "data.otservbr.global.npc.pemaret.L107.1463": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.211997Z"
+  },
+  "data.otservbr.global.npc.rabaz.L196.624": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.215211Z"
+  },
+  "data.otservbr.global.npc.rabaz.L197.625": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.215641Z"
+  },
+  "data.otservbr.global.npc.raymond.striker.L218.358": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.217063Z"
+  },
+  "data.otservbr.global.npc.romir.L155.1042": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.218885Z"
+  },
+  "data.otservbr.global.npc.romir.L156.1043": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.219437Z"
+  },
+  "data.otservbr.global.npc.sebastian.L117.1349": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.221246Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L69.1110": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.221894Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L68.259": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Збогом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.231064Z"
+  },
+  "data.otservbr.global.scripts.actions.dawnport.vocation.door.L36.2373": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.238525Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L106.2365": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.239278Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L119.2367": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.239714Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L155.2368": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.240058Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.241012Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.243885Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.zalamon.door.L12.2154": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.244599Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L18.2206": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.246621Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.chest.L9.2229": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.247329Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L434.2218": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Ова кристална геода се тресе од битке у близини.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.248007Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L469.2220": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Ова кристална геода се тресе од битке у близини.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.248962Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L504.2222": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Ова кристална геода се тресе од битке у близини.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.249698Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L12.2226": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Покренули сте пратњу, одведите свог затвореника до патуљасте испоставе!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.250527Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L24.2227": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Не налазите ништа занимљиво испод рушевина.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.251399Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L27.2215": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Још не можете користити овај портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:59:25.251942Z"
   }
 }

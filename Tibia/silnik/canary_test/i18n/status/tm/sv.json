@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T21:33:17.030269Z"
+    "updated_at": "2026-02-16T21:43:55.799618Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -12062,5 +12062,325 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:37:14.077583Z"
+  },
+  "data.otservbr.global.npc.alexander.L173.1569": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:51.886264Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L84.287": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:51.995103Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L85.288": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:51.995997Z"
+  },
+  "data.otservbr.global.npc.haroun.L144.807": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:52.028272Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L125.1120": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Åh... farväl, barn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:52.035950Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L139.841": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:52.102738Z"
+  },
+  "data.otservbr.global.npc.yaman.L169.636": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:52.185398Z"
+  },
+  "data.otservbr.global.npc.alexander.L174.1570": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:55.800671Z"
+  },
+  "data.otservbr.global.npc.alia.L148.1158": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:59.854224Z"
+  },
+  "data.otservbr.global.npc.alia.L149.1159": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:59.855693Z"
+  },
+  "data.otservbr.global.npc.alia.L150.1160": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:59.856261Z"
+  },
+  "data.otservbr.global.npc.alkestios.L130.1473": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Naturens välsignelse, resenär! Må du inte drabbas av någon olycksbådande kraft.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:59.856976Z"
+  },
+  "data.otservbr.global.npc.alkestios.L131.1474": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:59.857502Z"
+  },
+  "data.otservbr.global.npc.alkestios.L132.1475": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:02.948869Z"
+  },
+  "data.otservbr.global.npc.altar.L83.730": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Knäböj inför den alltförtärande kraften av blodigt förfall.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:02.949683Z"
+  },
+  "data.otservbr.global.npc.altar.L85.732": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:02.950654Z"
+  },
+  "data.otservbr.global.npc.alyxo.L210.798": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:02.951474Z"
+  },
+  "data.otservbr.global.npc.amanda.L200.1226": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:02.953158Z"
+  },
+  "data.otservbr.global.npc.amanda.L201.1227": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:06.611286Z"
+  },
+  "data.otservbr.global.npc.amanda.L202.1228": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:06.613501Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Hälsningar, vän.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:06.619537Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L87.344": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:06.620576Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Ja, vi hörs senare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:06.621495Z"
+  },
+  "data.otservbr.global.npc.amber.L427.529": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:12.768285Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Åh hej, trevligt att se dig |PLAYERNAME|. Är du här för att höra några berättelser om min {adventures} eller behöver du {help}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:12.769206Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Hej då. Du är välkommen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:12.769925Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Hej, jag är vaktmästare för denna {monument}. {sarcophagus} framför dig skapades för att hindra människor från att gå {down} dit. Men jag tvivlar på att detta steg är tillräckligt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:12.771142Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Nåväl, låt oss se om ditt uppdrag var framgångsrikt. Ta bara med mig alla nödvändiga {materials}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:17.083850Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Om du grävde upp alla tre kristallerna i tillräcklig mängd och fick giftkörteln, kan laddningen av din kompass börja! För allra första gången kommer den att laddas av den violetta kristallen. Är du redo att {unleash} kraften i kristallerna?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:17.085255Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Hälsningar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:17.085581Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L263.518": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:17.085992Z"
+  },
+  "data.otservbr.global.npc.aneus.L130.1323": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Hälsningar äventyraren |PLAYERNAME|. Vad leder dig till mig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:21.187690Z"
+  },
+  "data.otservbr.global.npc.aneus.L131.1324": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "Hejdå och ta hand om dig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:21.188204Z"
+  },
+  "data.otservbr.global.npc.angelina.L58.143": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Gudarna måste prisas att jag äntligen är frälst. Jag har inte många världsliga ägodelar, men snälla acceptera en liten belöning, gör du?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:21.189114Z"
+  },
+  "data.otservbr.global.npc.angelina.L60.144": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Tack för att du räddade mitt liv! Ska jag teleportera dig ut ur den mörka katedralen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:25.748388Z"
+  },
+  "data.otservbr.global.npc.angelina.L84.145": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Må gudarna välsigna dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:25.748902Z"
+  },
+  "data.otservbr.global.npc.angelina.L85.146": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Må gudarna välsigna dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:25.749402Z"
+  },
+  "data.otservbr.global.npc.angelo.L153.1447": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:25.749778Z"
+  },
+  "data.otservbr.global.npc.angelo.L58.1443": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid av Crunor? Han berättade att en ny grotta dök upp här? Det stämmer. Jag är chef för en {project} som försöker ta reda på mer om denna nya {area}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:25.751215Z"
+  },
+  "data.otservbr.global.npc.angelo.L60.1444": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Gå bara ur min väg! Du dödade denna vackra varelse. Jag har inget mer att säga. Crunors jävla druid!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:27.554028Z"
   }
 }

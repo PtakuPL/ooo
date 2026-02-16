@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:43:12.231168Z",
-  "language": "sr",
-  "json_file": "server.json",
-  "translated": 28,
+  "timestamp": "2026-02-16T21:45:28.285013Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "data.otservbr.global.npc.yaman.L169.636",
-      "en": "At your service, just browse through my wares.",
-      "translated": "На услузи, само прегледајте моју робу.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274",
-      "en": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. No sign of treason here.",
-      "translated": "Пажљиво прегледаш свитке. То су наређења од Rathleton за амбасадора. Овде нема знакова издаје.",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alexander.L174.1570",
-      "en": "Of course, just browse through my wares. Or do you want to look only at",
-      "translated": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alia.L149.1159",
-      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
-      "translated": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alkestios.L130.1473",
-      "en": "Nature's blessing, traveller! May you not be affected by any sinister force.",
-      "translated": "Благослов природе, путниче! Нека на вас не утиче никаква злокобна сила.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alkestios.L131.1474",
-      "en": "May your path always be even.",
-      "translated": "Нека твој пут увек буде раван.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alkestios.L132.1475",
-      "en": "May your path always be even.",
-      "translated": "Нека твој пут увек буде раван.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.altar.L83.730",
-      "en": "Kneel before the all-devouring power of blooded decay.",
-      "translated": "Клекни пред свепрождирућом снагом крвавог пропадања.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.altar.L84.731",
-      "en": "Bye.",
-      "translated": "Ћао.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alyxo.L210.798",
-      "en": "Well, bye then.",
-      "translated": "Па, ћао онда.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alyxo.L53.795",
-      "en": "How could I help you?",
-      "translated": "Како могу да ти помогнем?",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alyxo.L56.796",
-      "en": "How could I help you?",
-      "translated": "Како могу да ти помогнем?",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.alyxo.L59.797",
-      "en": "How could I help you?",
-      "translated": "Како могу да ти помогнем?",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.amanda.L201.1227",
-      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
-      "translated": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.ambassador.of.rathleton.L86.343",
-      "en": "Greetings, friend.",
-      "translated": "Поздрав пријатељу.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.ambassador.of.rathleton.L87.344",
-      "en": "Well, bye then.",
-      "translated": "Па, ћао онда.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.amber.L426.528",
-      "en": "Yeah, see you later.",
-      "translated": "Да, видимо се касније.",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.anderson.L101.134",
-      "en": "Good bye. You are welcome.",
-      "translated": "Збогом. Нема на чему.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.andrew.lyze.L107.517",
-      "en": "Greetings.",
-      "translated": "Поздрав.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.andrew.lyze.L263.518",
-      "en": "Well, bye then.",
-      "translated": "Па, ћао онда.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

@@ -142438,5 +142438,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:41:03.365039Z"
+  },
+  "data.otservbr.global.npc.pemaret.L105.1461": {
+    "src_hash": "2d5515795cf8857d41eaed43f1ae74e2",
+    "text": "Saludos, joven. ¿Buscas un pasaje o algún pez, |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.232138Z"
+  },
+  "data.otservbr.global.npc.penny.L69.1224": {
+    "src_hash": "fd278a9d48efa118f8e7d9585a25708b",
+    "text": "¡Adiós y que la Justicia os acompañe!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.235976Z"
+  },
+  "data.otservbr.global.npc.penny.L70.1225": {
+    "src_hash": "22c0909336bf40742220e5fb5e8235bf",
+    "text": "Espera... ¿me llevarás un diamante cuando vuelvas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.237787Z"
+  },
+  "data.otservbr.global.npc.peter.L118.23": {
+    "src_hash": "4ddd26c1219e232c7c58912ba4fa1092",
+    "text": "Hola. A menos que tenga asuntos oficiales aquí o quiera pasar la puerta, continúe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.242242Z"
+  },
+  "data.otservbr.global.npc.phillip.L79.940": {
+    "src_hash": "601eef31e462acfca9f72445d3cdacf6",
+    "text": "Hola, poderoso aventurero |PLAYERNAME|. ¿Puedo enseñarte algo que no sabes?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.245460Z"
+  },
+  "data.otservbr.global.npc.phillip.L80.941": {
+    "src_hash": "f02b4950683b1b9111a02fe786e592f3",
+    "text": "Ve y ten cuidado. ¡Recuerda lo que has aprendido!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.247401Z"
+  },
+  "data.otservbr.global.npc.pino.L87.1404": {
+    "src_hash": "ae65c5fcbefcac067caa83048920ebf2",
+    "text": "Saludos viajero |PLAYERNAME|. ¿Dónde quieres que te {fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.251924Z"
+  },
+  "data.otservbr.global.npc.pompan.L125.271": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.256305Z"
+  },
+  "data.otservbr.global.npc.pompan.L126.272": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tenga en cuenta que no encontrará mejores ofertas aquí. Simplemente navega por mis productos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.258248Z"
+  },
+  "data.otservbr.global.npc.puffels.L218.811": {
+    "src_hash": "a13ff91d8ddfb0680922cd814ebba1ef",
+    "text": "Sí, otro tonto {disturbing} de mí, que alegría.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.262470Z"
+  },
+  "data.otservbr.global.npc.pukosch.L87.1589": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "¡Bienvenido, |PLAYERNAME|! ¿Te sientes aventurero? ¿Quiere un {ticket} semanal para el sistema de vagones de mineral aquí? ¡Puedes usarlo aquí mismo para llegar al centro de Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.266924Z"
+  },
+  "data.otservbr.global.npc.pukosch.L88.1590": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Espero verte de nuevo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.268699Z"
+  },
+  "data.otservbr.global.npc.pydar.L96.217": {
+    "src_hash": "3778695abd72ca6d50cb10eea6c816f8",
+    "text": "¡Sea saludado |PLAYERNAME|! ¡Puedo oler el aroma de un fénix en ti!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.270843Z"
+  },
+  "data.otservbr.global.npc.pydar.L97.218": {
+    "src_hash": "ec1e56286beab7710e4a3446b5ab789a",
+    "text": "¡Que el fuego de tu corazón nunca se apague, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.272683Z"
+  },
+  "data.otservbr.global.npc.pydar.L98.219": {
+    "src_hash": "56043323b6d3ccbbcb1b917776895412",
+    "text": "Que el fuego de tu corazón nunca se apague.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.287703Z"
+  },
+  "data.otservbr.global.npc.rabaz.L195.623": {
+    "src_hash": "8337e6f4e5bb940c6eb437da998a3403",
+    "text": "¡Ah, un cliente! No dude en explorar mis productos, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.311096Z"
+  },
+  "data.otservbr.global.npc.rachel.L177.739": {
+    "src_hash": "bacf2cb62beee7c4863d2324c958a97b",
+    "text": "¡Bienvenido |PLAYERNAME|! ¿Cuál es tu necesidad?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.329845Z"
+  },
+  "data.otservbr.global.npc.rapanaio.boat.L71.128": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.374331Z"
+  },
+  "data.otservbr.global.npc.rapanaio.isle.of.evil.L71.1191": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.390878Z"
+  },
+  "data.otservbr.global.npc.rashid.L258.630": {
+    "src_hash": "dd6d3e1439b14785d2e8d63021ae836c",
+    "text": "¡Ah, un cliente! ¡Sea saludado, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.408738Z"
+  },
+  "data.otservbr.global.npc.rashid.L259.631": {
+    "src_hash": "b5d7b3da558b7544621617c86c1611d7",
+    "text": "Adiós, |PLAYERNAME|, que los vientos guíen tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:44:40.424369Z"
   }
 }

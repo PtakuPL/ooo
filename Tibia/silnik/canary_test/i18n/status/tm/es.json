@@ -39881,11 +39881,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Chchch. Chh! <no estás seguro, pero parece que la ardilla quiere cambiar tus valiosas bellotas por piedras inútiles que encontró y consideró no comestibles>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:23:03.443995Z"
+    "updated_at": "2026-02-16T22:55:50.041386Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -143286,5 +143286,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:51:13.512934Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Ch...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:55:35.549102Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "¿Chhchh?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:55:50.040470Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Adiós entonces.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:55:52.778200Z"
+  },
+  "npc.a_restless_soul.greet_msg_1": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Ehhh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:55:52.778481Z"
   }
 }

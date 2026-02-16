@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:14:00.249839Z",
+  "checked_at": "2026-02-16T21:31:27.806871Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1318,213 +1318,6 @@
       "en": "piano",
       "pl": "piaNie",
       "lang": "piano"
-    },
-    {
-      "key": "item.32695.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32696.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32706.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.3274.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
-    },
-    {
-      "key": "item.32770.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "diamond",
-      "pl": "diament",
-      "lang": "diamond"
-    },
-    {
-      "key": "item.32917.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gold deed",
-      "pl": "Złoto deed",
-      "lang": "gold deed"
-    },
-    {
-      "key": "item.33709.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pitfall",
-      "pl": "pułapka",
-      "lang": "pitfall"
-    },
-    {
-      "key": "item.33935.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "crown",
-      "pl": "korona",
-      "lang": "crown"
-    },
-    {
-      "key": "item.33938.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "roots",
-      "pl": "korzenie",
-      "lang": "roots"
-    },
-    {
-      "key": "item.34085.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "souleater",
-      "pl": "Pożeracz dusz",
-      "lang": "souleater"
-    },
-    {
-      "key": "item.3458.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "anvil",
-      "pl": "kowadło",
-      "lang": "anvil"
-    },
-    {
-      "key": "item.3461.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "saw",
-      "pl": "piła",
-      "lang": "saw"
-    },
-    {
-      "key": "item.3482.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "trap",
-      "pl": "pułapka",
-      "lang": "trap"
-    },
-    {
-      "key": "item.3503.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "parcel",
-      "pl": "paczka",
-      "lang": "parcel"
-    },
-    {
-      "key": "item.3551.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sandals",
-      "pl": "sandały",
-      "lang": "sandals"
-    },
-    {
-      "key": "item.3565.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cape",
-      "pl": "peleryna",
-      "lang": "cape"
-    },
-    {
-      "key": "item.3575.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "wood cape",
-      "pl": "drewno peleryna",
-      "lang": "wood cape"
-    },
-    {
-      "key": "item.3577.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "meat",
-      "pl": "mięso",
-      "lang": "meat"
-    },
-    {
-      "key": "item.3578.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fish",
-      "pl": "Ryba",
-      "lang": "fish"
-    },
-    {
-      "key": "item.3581.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "shrimp",
-      "pl": "krewetka",
-      "lang": "shrimp"
-    },
-    {
-      "key": "item.3595.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "carrot",
-      "pl": "marchew",
-      "lang": "carrot"
-    },
-    {
-      "key": "item.3600.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bread",
-      "pl": "chleb",
-      "lang": "bread"
-    },
-    {
-      "key": "item.3606.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "egg",
-      "pl": "Jajko",
-      "lang": "egg"
     },
     {
       "key": "item.3607.name",
@@ -4405,6 +4198,213 @@
       "en": "Earl Osam",
       "pl": "Earla Osama",
       "lang": "Earl Osam"
+    },
+    {
+      "key": "monster.earl_osam.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Earl Osam",
+      "pl": "Earla Osama",
+      "lang": "Earl Osam"
+    },
+    {
+      "key": "monster.duke_krule.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Duke Krule",
+      "pl": "Książę Krule",
+      "lang": "Duke Krule"
+    },
+    {
+      "key": "monster.duke_krule.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Duke Krule",
+      "pl": "Książę Krule",
+      "lang": "Duke Krule"
+    },
+    {
+      "key": "monster.king_zelos.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "King Zelos",
+      "pl": "Król Zelos",
+      "lang": "King Zelos"
+    },
+    {
+      "key": "monster.king_zelos.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "King Zelos",
+      "pl": "Król Zelos",
+      "lang": "King Zelos"
+    },
+    {
+      "key": "monster.doomhowl.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Doomhowl",
+      "pl": "Wycie Zagłady",
+      "lang": "Doomhowl"
+    },
+    {
+      "key": "monster.doomhowl.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Doomhowl",
+      "pl": "Wycie Zagłady",
+      "lang": "Doomhowl"
+    },
+    {
+      "key": "monster.fatality.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fatality",
+      "pl": "Śmiertelność",
+      "lang": "Fatality"
+    },
+    {
+      "key": "monster.fatality.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fatality",
+      "pl": "Śmiertelność",
+      "lang": "Fatality"
+    },
+    {
+      "key": "monster.tirecz.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tirecz",
+      "pl": "Tyrecz",
+      "lang": "Tirecz"
+    },
+    {
+      "key": "monster.tirecz.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tirecz",
+      "pl": "Tyrecz",
+      "lang": "Tirecz"
+    },
+    {
+      "key": "monster.coldheart.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Coldheart",
+      "pl": "Zimne Serce",
+      "lang": "Coldheart"
+    },
+    {
+      "key": "monster.coldheart.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Coldheart",
+      "pl": "Zimne Serce",
+      "lang": "Coldheart"
+    },
+    {
+      "key": "monster.haunter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haunter",
+      "pl": "Nawiedzony",
+      "lang": "Haunter"
+    },
+    {
+      "key": "monster.haunter.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haunter",
+      "pl": "Nawiedzony",
+      "lang": "Haunter"
+    },
+    {
+      "key": "monster.incineron.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Incineron",
+      "pl": "Spopielacz",
+      "lang": "Incineron"
+    },
+    {
+      "key": "monster.incineron.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Incineron",
+      "pl": "Spopielacz",
+      "lang": "Incineron"
+    },
+    {
+      "key": "monster.menace.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Menace",
+      "pl": "Groźba",
+      "lang": "Menace"
+    },
+    {
+      "key": "monster.menace.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Menace",
+      "pl": "Groźba",
+      "lang": "Menace"
+    },
+    {
+      "key": "monster.mean_maw.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mean Maw",
+      "pl": "Wredna Maw",
+      "lang": "Mean Maw"
+    },
+    {
+      "key": "monster.greedbeast.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greedbeast",
+      "pl": "Chciwość",
+      "lang": "Greedbeast"
+    },
+    {
+      "key": "monster.soul_cage.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Soul Cage",
+      "pl": "Klatka Duszy",
+      "lang": "Soul Cage"
+    },
+    {
+      "key": "monster.weak_soul.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Weak Soul",
+      "pl": "Słaby Dusza",
+      "lang": "Weak Soul"
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 23,
-    "skipped": 57,
+    "applied": 21,
+    "skipped": 59,
     "errors": 0
   }
 }

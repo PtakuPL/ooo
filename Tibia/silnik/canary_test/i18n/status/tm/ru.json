@@ -12214,5 +12214,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:27:15.736556Z"
+  },
+  "data.otservbr.global.npc.albinius.L268.1036": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Ох... прощай, дитя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:34.651680Z"
+  },
+  "data.otservbr.global.npc.alesar.L206.1591": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Окончательно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:34.652008Z"
+  },
+  "data.otservbr.global.npc.alesar.L207.1592": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Окончательно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:34.652313Z"
+  },
+  "data.otservbr.global.npc.alesar.L208.1593": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "К вашим услугам, просто просмотрите мои товары.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:38.214588Z"
+  },
+  "data.otservbr.global.npc.alexander.L174.1570": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:38.217024Z"
+  },
+  "data.otservbr.global.npc.alia.L148.1158": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:41.509388Z"
+  },
+  "data.otservbr.global.npc.alia.L149.1159": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:41.510216Z"
+  },
+  "data.otservbr.global.npc.alkestios.L130.1473": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Благословение природы, путник! Пусть на вас не воздействует никакая зловещая сила.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:41.511748Z"
+  },
+  "data.otservbr.global.npc.alkestios.L131.1474": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:41.512496Z"
+  },
+  "data.otservbr.global.npc.alkestios.L132.1475": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:45.018565Z"
+  },
+  "data.otservbr.global.npc.altar.L83.730": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Преклоните колени перед всепожирающей силой кровавого разложения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:45.019230Z"
+  },
+  "data.otservbr.global.npc.altar.L84.731": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:45.019520Z"
+  },
+  "data.otservbr.global.npc.alyxo.L210.798": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:45.020639Z"
+  },
+  "data.otservbr.global.npc.alyxo.L53.795": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:48.034365Z"
+  },
+  "data.otservbr.global.npc.alyxo.L56.796": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:48.035438Z"
+  },
+  "data.otservbr.global.npc.alyxo.L59.797": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:48.036210Z"
+  },
+  "data.otservbr.global.npc.amanda.L200.1226": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:48.037455Z"
+  },
+  "data.otservbr.global.npc.amanda.L201.1227": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:48.038251Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Приветствую тебя, друг.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:51.439807Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L87.344": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:51.440327Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Да, увидимся позже.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:51.440764Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "О, привет, приятно тебя видеть |PLAYERNAME|. Вы здесь, чтобы услышать истории о моем {adventures} или вам нужен {help}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:56.263638Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "До свидания. Пожалуйста.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:56.265245Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Здравствуйте, я начальник этого {monument}. {sarcophagus} перед вами был установлен для того, чтобы люди не могли попасть туда {down}. Но я сомневаюсь, что этот шаг достаточен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:56.267005Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Что ж, посмотрим, увенчалась ли ваша миссия успехом. Просто принеси мне все необходимое {materials}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:56.268430Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Если вы выкопали все три кристалла в достаточном количестве и получили ядовитую железу, зарядка вашего компаса может начаться! Впервые он будет заряжен фиолетовым кристаллом. Готовы ощутить силу кристаллов {unleash}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:58.797822Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Привет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:58.798236Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L263.518": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:58.798630Z"
   }
 }

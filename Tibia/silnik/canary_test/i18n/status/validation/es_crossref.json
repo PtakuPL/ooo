@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 74.1,
+  "coverage_pct": 74.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:13:37.892926Z",
-  "issues_total": 490,
+  "checked_at": "2026-02-16T21:30:59.881060Z",
+  "issues_total": 491,
   "issues_by_type": {
-    "consistency_in_language": 66,
+    "consistency_in_language": 67,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 24
   },
@@ -693,6 +693,20 @@
         "scripts:scripts.prince_drazzak_knight.say_2",
         "scripts:scripts.prince_drazzak_paladin.say_2",
         "scripts:scripts.prince_drazzak_sorcerer.say_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Grand Master Oberon",
+      "variants": [
+        "Grand maestro oberon",
+        "grand maestro oberon"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.grand_master_oberon.name",
+        "monsters:monster.grand_master_oberon.desc"
       ]
     },
     {
@@ -1594,15 +1608,6 @@
       "en": "Bssssss",
       "pl": "Bsssss",
       "lang": "Bssssss"
-    },
-    {
-      "key": "monster.black_knight.voice_8",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "NO MERCY!",
-      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
-      "lang": "NO MERCY!"
     },
     {
       "key": "monster.hydra.voice_3",
@@ -2946,15 +2951,6 @@
       "lang": "I see."
     },
     {
-      "key": "npc.thorwulf.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye.",
-      "pl": "Pa, cześć.",
-      "lang": "Bye."
-    },
-    {
       "key": "npc.timur.farewell_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2980,24 +2976,6 @@
       "en": "D'oh?",
       "pl": "Eee?",
       "lang": "D'oh?"
-    },
-    {
-      "key": "npc.torkada.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye.",
-      "pl": "Pa, cześć.",
-      "lang": "Bye."
-    },
-    {
-      "key": "npc.ukea.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Robić widzenia!",
-      "lang": "Good bye!"
     },
     {
       "key": "npc.uzon.keyword_1",
@@ -4600,6 +4578,42 @@
       "en": "Hm.",
       "pl": "Hm...",
       "lang": "Hm."
+    },
+    {
+      "key": "data.otservbr.global.npc.zumtah.L142.1449",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Muhahaha.",
+      "pl": "Muhahaha!",
+      "lang": "Muhahaha."
+    },
+    {
+      "key": "data.otservbr.global.scripts.actions.other.others.quest.system1.L63.2386",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The",
+      "pl": "To",
+      "lang": "The"
+    },
+    {
+      "key": "data.otservbr.global.scripts.actions.other.others.quest.system2.L368.2384",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The",
+      "pl": "To",
+      "lang": "The"
+    },
+    {
+      "key": "data.otservbr.global.scripts.actions.system.quest.reward.common.L175.2380",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The",
+      "pl": "To",
+      "lang": "The"
     }
   ],
   "length_ratio_issues": [
@@ -4822,8 +4836,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 9,
-    "skipped": 71,
+    "applied": 8,
+    "skipped": 72,
     "errors": 0
   }
 }

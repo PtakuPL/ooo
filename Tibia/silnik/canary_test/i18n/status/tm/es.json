@@ -142150,5 +142150,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:28:03.248592Z"
+  },
+  "monster.prince_drazzak.voice_3": {
+    "src_hash": "23f59b92cf05664159a37caf710cb192",
+    "text": "¡¡VEN AQUÍ!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:24.306485Z"
+  },
+  "monster.prince_drazzak.voice_4": {
+    "src_hash": "dfaa579f53bc94c724932f2a88f3dc3d",
+    "text": "¡¡APLASTADLES A TODOS!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:24.310333Z"
+  },
+  "monster.omrafir.voice_4": {
+    "src_hash": "35fbee7bd7790d362d667f90a8d536f1",
+    "text": "¡OMRAFIR INHALA PROFUNDAMENTE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:24.324031Z"
+  },
+  "monster.deathstrike.name": {
+    "src_hash": "389f5276deb98ba03f770fca80cb4029",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:24.339320Z"
+  },
+  "monster.deathstrike.desc": {
+    "src_hash": "389f5276deb98ba03f770fca80cb4029",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:24.341133Z"
+  },
+  "monster.grand_master_oberon.name": {
+    "src_hash": "02b7dcc052da172e7b6c989ffa6036f0",
+    "text": "Grand maestro oberon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:29:24.403014Z"
   }
 }

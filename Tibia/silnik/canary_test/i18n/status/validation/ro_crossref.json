@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 18.8,
+  "coverage_pct": 19.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:14:03.479461Z",
+  "checked_at": "2026-02-16T21:31:33.537847Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1715,15 +1715,6 @@
       "lang": "Olho por Olho!"
     },
     {
-      "key": "monster.old_wasp.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
-    },
-    {
       "key": "monster.old_pig.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1767,6 +1758,15 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
+    },
+    {
+      "key": "monster.old_bug.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bug",
+      "pl": "Błąd",
+      "lang": "Bug"
     },
     {
       "key": "monster.weeper.voice_1",
@@ -3137,13 +3137,13 @@
       "lang": "Delicious!"
     },
     {
-      "key": "monster.wasp.voice_1",
+      "key": "monster.bug.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
+      "en": "Bug",
+      "pl": "Błąd",
+      "lang": "Bug"
     },
     {
       "key": "monster.earth_elemental.voice_1",
@@ -3515,15 +3515,6 @@
       "lang": "Die!"
     },
     {
-      "key": "monster.wasp.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
-    },
-    {
       "key": "monster.black_knight.voice_8",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3603,15 @@
       "en": "Chh...",
       "pl": "Cii...",
       "lang": "Chh..."
+    },
+    {
+      "key": "npc.a_restless_soul.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Uhhhh...",
+      "pl": "Uuuuhhh...",
+      "lang": "Uhhhh..."
     }
   ],
   "length_ratio_issues": [

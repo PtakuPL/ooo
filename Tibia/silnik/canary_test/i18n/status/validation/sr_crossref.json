@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 9.2,
+  "coverage_pct": 9.7,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:14:43.650156Z",
+  "checked_at": "2026-02-16T21:32:05.811331Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1697,24 +1697,6 @@
       "lang": "*clank*"
     },
     {
-      "key": "monster.walker.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*slosh*",
-      "pl": "*breja*",
-      "lang": "*slosh*"
-    },
-    {
-      "key": "monster.sandstone_scorpion.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*rattle*",
-      "pl": "*I.*",
-      "lang": "*rattle*"
-    },
-    {
       "key": "monster.magma_crawler.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1758,105 +1740,6 @@
       "en": "Grrrrunt",
       "pl": "Wrrrr",
       "lang": "Grrrrunt"
-    },
-    {
-      "key": "monster.green_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.salamander.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chrrch!",
-      "pl": "Chrr!",
-      "lang": "Chrrch!"
-    },
-    {
-      "key": "monster.infernal_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.orchid_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.azure_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.bog_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.crimson_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.toad.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.coral_frog.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.devourer.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*gulp*",
-      "pl": "*I.*",
-      "lang": "*gulp*"
-    },
-    {
-      "key": "monster.mercury_blob.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crackle",
-      "pl": "Trzask",
-      "lang": "Crackle"
     },
     {
       "key": "monster.death_blob.voice_1",
@@ -3470,15 +3353,6 @@
       "lang": "<sniff>"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<munch>",
-      "pl": "<przeżuwać>",
-      "lang": "<munch>"
-    },
-    {
       "key": "npc.al_dee.walkaway_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3486,132 @@
       "en": "Sorry.",
       "pl": "Przepraszam.",
       "lang": "Sorry."
+    },
+    {
+      "key": "npc.alyxo.say_9",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "npc.andrew_lyze.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.andrew_lyze.greet_msg_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings.",
+      "pl": "Witaj.",
+      "lang": "Greetings."
+    },
+    {
+      "key": "npc.appaloosa.say_9",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.ariella.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi there.",
+      "pl": "Cześć.",
+      "lang": "Hi there."
+    },
+    {
+      "key": "npc.ariella.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.arkulius.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arkulius.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arnold.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.ashari.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye!",
+      "pl": "Pa!",
+      "lang": "Bye!"
+    },
+    {
+      "key": "npc.ashari.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye!",
+      "pl": "Pa!",
+      "lang": "Bye!"
+    },
+    {
+      "key": "npc.aurita.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.avar_tar.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.bambi_bonecrusher.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
     }
   ],
   "length_ratio_issues": [

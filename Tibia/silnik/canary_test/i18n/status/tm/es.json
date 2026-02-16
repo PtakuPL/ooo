@@ -39777,27 +39777,27 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:22:35.467465Z"
+    "updated_at": "2026-02-16T21:17:22.411047Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:22:35.468888Z"
+    "updated_at": "2026-02-16T21:17:22.412567Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:22:35.470115Z"
+    "updated_at": "2026-02-16T21:17:22.414101Z"
   },
   "npc.a_dragon_mother.greet_msg_1": {
     "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
@@ -39857,27 +39857,27 @@
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:23:03.440805Z"
+    "updated_at": "2026-02-16T21:17:22.421169Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:23:03.441781Z"
+    "updated_at": "2026-02-16T21:17:22.422788Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:23:03.442834Z"
+    "updated_at": "2026-02-16T21:17:22.424433Z"
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
@@ -43001,131 +43001,131 @@
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.843549Z"
+    "updated_at": "2026-02-16T21:17:22.440055Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.844805Z"
+    "updated_at": "2026-02-16T21:17:22.441635Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.846091Z"
+    "updated_at": "2026-02-16T21:17:22.443146Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.847374Z"
+    "updated_at": "2026-02-16T21:17:22.444657Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.848628Z"
+    "updated_at": "2026-02-16T21:17:22.446233Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.849868Z"
+    "updated_at": "2026-02-16T21:17:22.447741Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.852063Z"
+    "updated_at": "2026-02-16T21:17:22.449286Z"
   },
   "npc.a_lost_thrower.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.854158Z"
+    "updated_at": "2026-02-16T21:17:22.451117Z"
   },
   "npc.a_lost_thrower.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.855634Z"
+    "updated_at": "2026-02-16T21:17:22.452884Z"
   },
   "npc.a_nightmare_scion.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.858912Z"
+    "updated_at": "2026-02-16T21:17:22.457848Z"
   },
   "npc.a_nightmare_scion.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.860261Z"
+    "updated_at": "2026-02-16T21:17:22.460861Z"
   },
   "npc.a_nightmare_scion.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.861624Z"
+    "updated_at": "2026-02-16T21:17:22.464398Z"
   },
   "npc.a_vulcongra.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.922578Z"
+    "updated_at": "2026-02-16T21:17:22.563845Z"
   },
   "npc.a_vulcongra.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.923887Z"
+    "updated_at": "2026-02-16T21:17:22.565491Z"
   },
   "npc.a_vulcongra.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.925158Z"
+    "updated_at": "2026-02-16T21:17:22.566948Z"
   },
   "npc.a_wyrm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.939604Z"
+    "updated_at": "2026-02-16T21:17:22.591447Z"
   },
   "npc.a_wyrm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",

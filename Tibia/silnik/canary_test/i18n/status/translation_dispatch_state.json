@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T21:16:14.330008Z",
-  "cycle_counter": 699,
-  "last_target_key": "ro:monsters.json",
-  "last_pending_total": 5148,
+  "timestamp": "2026-02-16T21:17:08.814670Z",
+  "cycle_counter": 702,
+  "last_target_key": "sv:monsters.json",
+  "last_pending_total": 5209,
   "last_tier": 1,
   "last_cat_priority": 2,
   "candidates_count": 286,
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 48,
+  "cache_cycle": 49,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,

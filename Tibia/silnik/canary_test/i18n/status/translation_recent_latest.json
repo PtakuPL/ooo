@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:16:45.252884Z",
-  "language": "ro",
-  "json_file": "monsters.json",
-  "translated": 21,
+  "timestamp": "2026-02-16T21:17:23.110720Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "monster.dharalion.name",
-      "en": "Dharalion",
-      "translated": "Dharalion",
+      "key": "npc.a_drillworm.greet_msg_2",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_drillworm.greet_msg_3",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_basher.greet_msg_1",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_basher.greet_msg_2",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_basher.greet_msg_3",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_husher.greet_msg_1",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_husher.greet_msg_2",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_husher.greet_msg_3",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_thrower.greet_msg_1",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_thrower.greet_msg_2",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_lost_thrower.greet_msg_3",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_nightmare_scion.greet_msg_1",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_nightmare_scion.greet_msg_2",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_nightmare_scion.greet_msg_3",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.a_starving_dog.greet_1",
+      "en": "<sniff>",
+      "translated": "<sniff>",
       "source": "tm"
     },
     {
-      "key": "monster.dharalion.desc",
-      "en": "Dharalion",
-      "translated": "Dharalion",
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
       "source": "tm"
     },
     {
-      "key": "monster.apocalypse.name",
-      "en": "Apocalypse",
-      "translated": "Apocalypse",
-      "source": "tm"
+      "key": "npc.a_vulcongra.greet_msg_1",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
     },
     {
-      "key": "monster.apocalypse.desc",
-      "en": "Apocalypse",
-      "translated": "Apocalypse",
-      "source": "tm"
+      "key": "npc.a_vulcongra.greet_msg_2",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
     },
     {
-      "key": "monster.cyclops.name",
-      "en": "Cyclops",
-      "translated": "Cyclops",
-      "source": "tm"
+      "key": "npc.a_vulcongra.greet_msg_3",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
     },
     {
-      "key": "monster.old_wasp.voice_1",
-      "en": "Bssssss",
-      "translated": "Bsssss",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_pig.name",
-      "en": "Pig",
-      "translated": "Porc",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_pig.desc",
-      "en": "a pig",
-      "translated": "un porc",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_giant_spider.name",
-      "en": "Giant Spider",
-      "translated": "Păianjen uriaș",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_giant_spider.desc",
-      "en": "a giant spider",
-      "translated": "un păianjen uriaș",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_wolf.voice_1",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_bear.name",
-      "en": "Bear",
-      "translated": "Urs",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_bear.desc",
-      "en": "a bear",
-      "translated": "un urs",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_bug.name",
-      "en": "Bug",
-      "translated": "Bug",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.old_bug.desc",
-      "en": "a bug",
-      "translated": "un bug",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.weeper.name",
-      "en": "Weeper",
-      "translated": "Plângător",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.weeper.desc",
-      "en": "a weeper",
-      "translated": "un plângător",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.eternal_guardian.name",
-      "en": "Eternal Guardian",
-      "translated": "Gardianul Etern",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.eternal_guardian.desc",
-      "en": "an eternal guardian",
-      "translated": "un veșnic gardian",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.eternal_guardian.voice_2",
-      "en": "<crackle>",
-      "translated": "<trosnet>",
-      "source": "google_translate"
+      "key": "npc.a_wyrm.greet_msg_1",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
     }
   ]
 }

@@ -90398,5 +90398,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:51:24.217769Z"
+  },
+  "npc.captain_dreadnought.stdmod_21": {
+    "src_hash": "a4df7f114b82076efc150192db490d15",
+    "text": ".. miasto[defaultTown].nazwa.. \\z.. miasto[defaultTown].nazwa.. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.180212Z"
+  },
+  "npc.carlos.greet_msg_1": {
+    "src_hash": "05a5c1002ce95a1bde590459ed3aa2b9",
+    "text": "Bądź pozdrowiony, |PLAYERNAME|! Jako krawiec i kupiec muszę powiedzieć - musimy coś zrobić z twoim {outfit}, prawda?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.420542Z"
+  },
+  "npc.carlos.greet_msg_2": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Hej, myślałem, że uciekniesz, ale na szczęście wróciłeś. Pokażę ci, jak zmienić {outfit}, dobrze?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.423299Z"
+  },
+  "npc.carlos.greet_msg_5": {
+    "src_hash": "155c73893b154c9642e5b5791cd5e45b",
+    "text": "Witaj z powrotem, |PLAYERNAME|, mam nadzieję, że zmieniłeś zdanie i przyniesiesz mi trochę {meat}? Dam ci za to złoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.428507Z"
+  },
+  "npc.carlos.greet_msg_6": {
+    "src_hash": "1397a9dce740292a32730701d2929b92",
+    "text": "Witaj z powrotem, |PLAYERNAME|! Udane polowanie i masz przy sobie kawałek {meat} albo szynki?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.431464Z"
+  },
+  "npc.carlos.greet_msg_7": {
+    "src_hash": "00143dd08108a83dcbb73f1a2f6bba1b",
+    "text": "Witaj z powrotem, Isleth Eagonst! Nadal masz ten kawałek mięsa albo szynki? Jeśli tak, poproś o {trade}, a dam ci trochę złota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.436110Z"
+  },
+  "npc.carlos.greet_msg_8": {
+    "src_hash": "1161f926d6499a60267c416c448c3ac0",
+    "text": "Witaj z powrotem, |PLAYERNAME|! Gdzie podziałeś ten pyszny kawałek jedzenia? Sam go zjadłeś? No cóż, jeśli znajdziesz następny, wróć.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.439401Z"
+  },
+  "npc.carlos.walkaway_msg_1": {
+    "src_hash": "fa803dcd4286a1cfa0ba0dfa80ecf665",
+    "text": "Do widzenia, podróżniku, miłego pobytu na Rookgaard.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.481167Z"
+  },
+  "npc.cassino.greet_msg_1": {
+    "src_hash": "22a3a20b6d00b625440f634f05c577ef",
+    "text": "Witaj w kasynie! Gramy tutaj w: \\n [WYPŁATA 180%] {HIGH / LOW}: High dla 4, 5, 6 i Low dla 1, 2 oraz 3 - {ODD / EVEN }: Odd dla 1, 3, 5 i Even dla 2, 4 oraz 6 \\n [WYPŁATA 500%] {NUMBERS}: Wybierasz liczbę, a jeśli trafisz ... {$$$$$}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.485736Z"
+  },
+  "npc.cedrik.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.490370Z"
+  },
+  "npc.cedrik.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.492069Z"
+  },
+  "npc.cedrik.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.493313Z"
+  },
+  "npc.cedrik.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.517780Z"
+  },
+  "npc.cedrik.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.518866Z"
+  },
+  "npc.cedrik.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.521028Z"
+  },
+  "npc.cedrik.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.523434Z"
+  },
+  "npc.charles.greet_msg_1": {
+    "src_hash": "490e8db04e2c02a81dc2a9e424404ac0",
+    "text": "Ahoj. Dokąd mam cię dziś zabrać?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.573637Z"
+  },
+  "npc.chartan.greet_msg_1": {
+    "src_hash": "59ceb2b20041c81e2dc60b6bc0b262ba",
+    "text": "Wielki Znake wybacz mi, że rozmawiam z tym niegodnym blankskinem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.595500Z"
+  },
+  "npc.chemar.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.616029Z"
+  },
+  "npc.chemar.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.621666Z"
+  },
+  "npc.chrystal.greet_msg_1": {
+    "src_hash": "3dc2f1ab2a9c914700c5e138304ffa50",
+    "text": "Do usług, |PLAYERNAME|, witaj na poczcie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.742970Z"
+  },
+  "npc.cipfried.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.833688Z"
+  },
+  "npc.cledwyn.greet_msg_1": {
+    "src_hash": "90eb7ed81786f0f6628dc1a2bc906919",
+    "text": "Błogosławieństwa, Gracz! Jak mogę służyć? Czy chcesz wymienić kilka {token}, czy też {information} lub {talk}? Czy powinienem {enchant} dla Ciebie pewne przedmioty?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.835818Z"
+  },
+  "npc.coltrayne.greet_msg_1": {
+    "src_hash": "2cbdbf0d71d0d87da3948f8c56d80db1",
+    "text": "Hej. Potrzebujesz pancerza albo broni? To zapytaj o {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.849072Z"
+  },
+  "npc.commander_stone.greet_msg_1": {
+    "src_hash": "1dc25f4d6e9f4bc175fec0b9148c3b7c",
+    "text": "Witaj, rekrucie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.859985Z"
+  },
+  "npc.commander_stone.say_18": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.869278Z"
+  },
+  "npc.commander_stone.say_23": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.874016Z"
+  },
+  "npc.commander_stone.say_6": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.879509Z"
+  },
+  "npc.cornelia.greet_msg_1": {
+    "src_hash": "c4ec5f0f359d484be0af973237c62f24",
+    "text": "Witaj w najlepszym sklepie z {armor} w tej krainie, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.883413Z"
+  },
+  "npc.corym_butler.greet_msg_1": {
+    "src_hash": "2009453cd0e9214bb50e9c0ffdc419d4",
+    "text": "Musimy wydobywać cenne surowce, ale nie mamy dość jedzenia. Sytuacja jest tragiczna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.892540Z"
+  },
+  "npc.corym_butler.multi_1": {
+    "src_hash": "2009453cd0e9214bb50e9c0ffdc419d4",
+    "text": "Musimy wydobywać cenne surowce, ale nie mamy dość jedzenia. Sytuacja jest tragiczna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.894853Z"
+  },
+  "npc.corym_footman.greet_msg_1": {
+    "src_hash": "850a02c09cfd41688bfbb5f21dde9f31",
+    "text": "To, co jemy, jest naprawdę śmieszne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.896801Z"
+  },
+  "npc.corym_ratter.greet_msg_1": {
+    "src_hash": "e0afcf5b05f2bd681be3b452372d8aca",
+    "text": "Wydobywamy wszystko, co matka ziemia nam daje, cenne zasoby naturalne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.901189Z"
+  },
+  "npc.corym_servant.greet_msg_1": {
+    "src_hash": "3c85ff7e716c533650a5c59a22ea7985",
+    "text": "Każdy człowiek jest kowalem własnego losu. Czasy ucisku wreszcie się skończyły.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.906159Z"
+  },
+  "npc.corym_slave.greet_msg_1": {
+    "src_hash": "19ef9d5e9520e892b00ccf7857e9de4e",
+    "text": "Ucisk trwał zbyt długo. Z naszą nową bronią winni ludzie dostaną zasłużoną karę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.916683Z"
+  },
+  "npc.corym_slave.multi_1": {
+    "src_hash": "19ef9d5e9520e892b00ccf7857e9de4e",
+    "text": "Ucisk trwał zbyt długo. Z naszą nową bronią winni ludzie dostaną zasłużoną karę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.919086Z"
+  },
+  "npc.corym_worker_02.greet_msg_1": {
+    "src_hash": "4786eaea8d52650dd4ca1e34433b9831",
+    "text": "Potrzebujemy broni, by poprawić naszą sytuację.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:53:10.922631Z"
   }
 }

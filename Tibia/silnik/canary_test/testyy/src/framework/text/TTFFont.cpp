@@ -492,7 +492,6 @@ void TTFFont::drawText(const std::u32string& text32,
   for (const auto& batch : batches) {
     if (batch.coords && batch.coords->getVertexCount() > 0) {
       g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
-      g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
     }
   }
 }

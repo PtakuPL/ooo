@@ -143190,5 +143190,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:24:31.033852Z"
+  },
+  "scripts.doctor_marrow_explosion.say_1": {
+    "src_hash": "2136dd834edf7f4267352bbd971418c9",
+    "text": "¡Estás siendo el objetivo de la explosión del Doctor Marrow!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:28:55.847991Z"
+  },
+  "scripts.exalted_core.msg_1": {
+    "src_hash": "74a4fd646bb88a58662897bc7d1359d4",
+    "text": "Has recibido un núcleo de alma {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:29:00.968062Z"
+  },
+  "scripts.exercise_training_weapons.msg_14": {
+    "src_hash": "e888c67f58156c6cff657e6317bb6c90",
+    "text": "Ha comenzado a entrenar con un muñeco de ejercicios.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:29:03.918322Z"
   }
 }

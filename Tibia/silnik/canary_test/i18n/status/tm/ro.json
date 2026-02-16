@@ -14670,5 +14670,1077 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:21:24.691253Z"
+  },
+  "data.otservbr.global.npc.amanda.L202.1228": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.805935Z"
+  },
+  "data.otservbr.global.npc.asima.L179.1417": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.819967Z"
+  },
+  "data.otservbr.global.npc.aurita.L115.172": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.823246Z"
+  },
+  "data.otservbr.global.npc.aurita.L116.173": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.824517Z"
+  },
+  "data.otservbr.global.npc.azalea.L148.851": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.827118Z"
+  },
+  "data.otservbr.global.npc.azalea.L149.852": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.828766Z"
+  },
+  "data.otservbr.global.npc.azalea.L150.853": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.830063Z"
+  },
+  "data.otservbr.global.npc.battlemart.L67.1363": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.837573Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L74.429": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.848458Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L95.1261": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.849889Z"
+  },
+  "data.otservbr.global.npc.brewster.L185.1484": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.856938Z"
+  },
+  "data.otservbr.global.npc.brewster.L186.1485": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.857828Z"
+  },
+  "data.otservbr.global.npc.brewster.L187.1486": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.858817Z"
+  },
+  "data.otservbr.global.npc.cedrik.L148.1392": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.878609Z"
+  },
+  "data.otservbr.global.npc.cedrik.L149.1393": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.879413Z"
+  },
+  "data.otservbr.global.npc.cedrik.L150.1394": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.880273Z"
+  },
+  "data.otservbr.global.npc.chuckles.L148.1321": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.884544Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L89.116": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.892895Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L90.117": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.894173Z"
+  },
+  "data.otservbr.global.npc.elane.L243.586": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.904823Z"
+  },
+  "data.otservbr.global.npc.elane.L244.587": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.905302Z"
+  },
+  "data.otservbr.global.npc.fenech.L172.1391": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.917145Z"
+  },
+  "data.otservbr.global.npc.ferus.L148.699": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.920734Z"
+  },
+  "data.otservbr.global.npc.ferus.L149.700": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.923016Z"
+  },
+  "data.otservbr.global.npc.ferus.L150.701": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.924274Z"
+  },
+  "data.otservbr.global.npc.frans.L133.255": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.931175Z"
+  },
+  "data.otservbr.global.npc.frederik.L156.762": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.935937Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L84.287": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ne vedem, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.951037Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L85.288": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ne vedem, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.951638Z"
+  },
+  "data.otservbr.global.npc.ghorza.L140.1513": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.954820Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L153.923": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.958972Z"
+  },
+  "data.otservbr.global.npc.hamish.L203.765": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.984535Z"
+  },
+  "data.otservbr.global.npc.haroun.L144.807": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "La dispoziția dumneavoastră, doar răsfoiți prin marfa mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:46.989470Z"
+  },
+  "data.otservbr.global.npc.iptar.sin.L185.985": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.000552Z"
+  },
+  "data.otservbr.global.npc.iptar.sin.L186.986": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.002054Z"
+  },
+  "data.otservbr.global.npc.isimov.L169.1003": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.007823Z"
+  },
+  "data.otservbr.global.npc.isimov.L170.1004": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.009365Z"
+  },
+  "data.otservbr.global.npc.isimov.L171.1005": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.010161Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L125.1120": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... la revedere, copile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.011502Z"
+  },
+  "data.otservbr.global.npc.kasmir.L170.333": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.032014Z"
+  },
+  "data.otservbr.global.npc.kasmir.L171.334": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.032766Z"
+  },
+  "data.otservbr.global.npc.kasmir.L172.335": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.033638Z"
+  },
+  "data.otservbr.global.npc.khanna.L208.3": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.040101Z"
+  },
+  "data.otservbr.global.npc.kjesse.L148.352": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.041156Z"
+  },
+  "data.otservbr.global.npc.kjesse.L149.353": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.042286Z"
+  },
+  "data.otservbr.global.npc.kjesse.L150.354": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:47.043149Z"
+  },
+  "spell.sudden_death_rune.name": {
+    "src_hash": "b4a8395e3e80b065f8abcfb910717b4c",
+    "text": "Sudden Death Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.005783Z"
+  },
+  "spell.poison_wall_rune.name": {
+    "src_hash": "5d33a1ec9e15577a76556efb8dd65a9b",
+    "text": "Poison Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.007099Z"
+  },
+  "spell.wild_growth_rune.name": {
+    "src_hash": "3c7f67d04c69f51c7a8218980ead0fc8",
+    "text": "Wild Growth Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.010655Z"
+  },
+  "spell.energy_wall_rune.name": {
+    "src_hash": "5b73eb415a3056d5bdbc26a3886775da",
+    "text": "Energy Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.012412Z"
+  },
+  "spell.cure_poison_rune.name": {
+    "src_hash": "3ff5a4ce313d165c5fa17d6b309e26af",
+    "text": "Cure Poison Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.014264Z"
+  },
+  "spell.energy_bomb_rune.name": {
+    "src_hash": "45c17606088afc983836bf3e20d62b3d",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.016646Z"
+  },
+  "spell.poison_bomb_rune.name": {
+    "src_hash": "8e4ac735e2ce1415ddf32084da98effc",
+    "text": "Poison Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.018700Z"
+  },
+  "spell.fire_bomb_rune.name": {
+    "src_hash": "00379b6a9cbe075b5fcdf571ca044cf9",
+    "text": "Fire Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.020189Z"
+  },
+  "spell.fire_wall_rune.name": {
+    "src_hash": "43bf5ebe2cc612bd482d04210760521b",
+    "text": "Fire Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.022452Z"
+  },
+  "spell.fire_field_rune.name": {
+    "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
+    "text": "Fire Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.023707Z"
+  },
+  "spell.magic_wall_rune.name": {
+    "src_hash": "dc28fac219174ba4b7547e40bb77ffde",
+    "text": "Magic Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.024457Z"
+  },
+  "spell.stone_shower_rune.name": {
+    "src_hash": "44290ba68ac25c850aa27e5523fda1f6",
+    "text": "Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.026969Z"
+  },
+  "spell.energy_field_rune.name": {
+    "src_hash": "ec6d44248eb7c384389f8bf9e0ff75c4",
+    "text": "Energy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.028811Z"
+  },
+  "spell.poison_field_rune.name": {
+    "src_hash": "f25387a94f2c77f239a2d3dc190baf3c",
+    "text": "Poison Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:58.030424Z"
+  },
+  "spell.large_black_ring.name": {
+    "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
+    "text": "Inel mare negru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:00.294475Z"
+  },
+  "spell.dragonling_wave.name": {
+    "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
+    "text": "Valul Dragonlingului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:00.295245Z"
+  },
+  "spell.rupture_wave.name": {
+    "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
+    "text": "Val de ruptură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:00.296066Z"
+  },
+  "spell.hideous_fungus_summon.name": {
+    "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
+    "text": "Invocare ciupercă hidosă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:04.935673Z"
+  },
+  "spell.death_priest_shargon_curse.name": {
+    "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
+    "text": "Preotul Morții Shargon Blestemul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:04.936615Z"
+  },
+  "spell.defiler_paralyze_3.name": {
+    "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
+    "text": "Pângăritor Paralyze 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:04.937463Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_2.name": {
+    "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
+    "text": "Reductor de aptitudini pitic înrobit 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:08.850495Z"
+  },
+  "spell.magma_crawler_soulfire.name": {
+    "src_hash": "5af58207044b3d5e194180367a723039",
+    "text": "Magma Crawler Suflere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:08.850975Z"
+  },
+  "spell.devovorga_curse.name": {
+    "src_hash": "5fed81378f355f8d43c87e10c5259174",
+    "text": "Blestemul Devovorga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:08.851315Z"
+  },
+  "spell.white_shade_paralyze.name": {
+    "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
+    "text": "Umbra albă Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:08.851889Z"
+  },
+  "spell.plant_abomination_wave.name": {
+    "src_hash": "b4b265d796db5c445199764c97950e61",
+    "text": "Valul de urâciune a plantelor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:12.268985Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Inel mare de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:12.269487Z"
+  },
+  "spell.teleport_strike.name": {
+    "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
+    "text": "Lovitură de teleportare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:12.269852Z"
+  },
+  "spell.lersatio_summon.name": {
+    "src_hash": "9f6b742ed3af674623ba4cbc33432484",
+    "text": "Lersatio Invocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:12.271139Z"
+  },
+  "spell.elder_bonelord_paralyze.name": {
+    "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
+    "text": "elder bonelord paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:14.995096Z"
+  },
+  "spell.physical_barrage.name": {
+    "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
+    "text": "Baraj fizic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:14.995468Z"
+  },
+  "spell.explosion_wave.name": {
+    "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
+    "text": "Val de explozie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:14.995789Z"
+  },
+  "spell.incineron_soulfire.name": {
+    "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
+    "text": "Incineron Sulfre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:14.996126Z"
+  },
+  "spell.plaguesmith_wave.name": {
+    "src_hash": "d9649bfbbd30a852247fef5979d725d9",
+    "text": "Valul Ciumarilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:14.996452Z"
+  },
+  "spell.lizard_wave_2.name": {
+    "src_hash": "40359f42d6c401e32e7f4524cb402999",
+    "text": "Valul șopârlă 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:18.050700Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Valul Ripptor nociv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:18.051501Z"
+  },
+  "spell.root.name": {
+    "src_hash": "63a9f0ea7bb98050796b649e85481845",
+    "text": "rădăcină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:21.464248Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "val omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:21.465295Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Invocarea Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:35:23.229177Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.016474Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.016976Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.018120Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Ai găsit ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.023580Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Ai găsit ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.024624Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.032058Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.037571Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:18.083351Z"
+  },
+  "quests.2_ambassadors_treason.msg_1": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Nu găsiți nimic în casa Ambasadorului. Dacă de fapt este un trădător, a scăpat de orice probă care l-ar putea incrimina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:21.357246Z"
+  },
+  "quests.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:21.358306Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Examinați cu atenție sulurile. Acestea sunt comenzi de la Rathleton pentru ambasador. Nici un semn de trădare aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:21.360031Z"
+  },
+  "quests.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:21.360633Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Resturi de hârtie zac împrăștiate pe podea. Este nevoie de ceva timp pentru a le pune la loc. Dar este doar o poezie scrisă prost.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:21.361761Z"
+  },
+  "quests.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:24.285456Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Aici au fost arse documente recent. Doar o parte dintr-un sul se află încă în fața coșului de fum, dar este prea funingine pentru a fi citită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:24.286635Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Ai fost mutat în partea stângă a creierului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:24.287291Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Ai fost mutat în partea dreaptă a creierului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:24.287987Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Te simți tremurând și amețit, lumea se întunecă în jurul tău. Apoi vederea ți se limpezește din nou - și ești în altă parte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:24.289103Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Ai binecuvântat deja această statuie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:29.569513Z"
+  },
+  "quests.8_blessing_the_statues.msg_2": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Tu binecuvântezi statuia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:29.569923Z"
+  },
+  "quests.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Timpul tău s-a terminat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:29.570443Z"
+  },
+  "quests.actions.there_is_someone_in_the_room": {
+    "src_hash": "52dddc0701dbfce052c07b68d596db35",
+    "text": "E cineva în cameră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:29.570969Z"
+  },
+  "quests.actions.you_already_used_your_knife_on": {
+    "src_hash": "663cc82c187e025c63062760739dc4e5",
+    "text": "Ai folosit deja cuțitul pe cadavru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:29.571466Z"
+  },
+  "quests.actions.you_cant_use_this_when_youre": {
+    "src_hash": "dd3c1a5f60f082f6ac8b1a60d942ba2a",
+    "text": "Nu poți folosi asta când ești într-o ceartă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:35.590038Z"
+  },
+  "quests.actions_bait.say_1": {
+    "src_hash": "9cdc566e522df381db3d0dcad05af784",
+    "text": "Momeala este deja pusă. Urcă-te la belvedere și verifică telescopul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:35.590937Z"
+  },
+  "quests.actions_basin.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Îmi pare rău",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:35.591270Z"
+  },
+  "quests.actions_bonefiddle.msg_1": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Tu cânți la lăutări de os.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:35.591750Z"
+  },
+  "quests.actions_bonefiddle.msg_2": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Cântați Balada Păunului și se deschide portalul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:35.592314Z"
+  },
+  "quests.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*A fost odată un târg de fecioare, cu ochii negri și părul mătăsos. Departe de casa a murit. Fără mormânt, fără veghe, fără doliu.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:40.249646Z"
+  },
+  "quests.actions_bonefiddle.msg_4": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Lipiți părul de tastatura de abanos. Șuvițele ar trebui să fie adecvate pentru a servi drept șiruri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:40.250743Z"
+  },
+  "quests.actions_bonefiddle.msg_5": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Atașați lemnul de abanos de craniu. Acest lucru ar trebui să îndeplinească cerințele unei plăci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:40.251489Z"
+  },
+  "quests.actions_boss_timira_fight.say_1": {
+    "src_hash": "2d0952a71b064faaa2eb619011b63524",
+    "text": "Piesele strălucesc!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:40.251889Z"
+  },
+  "quests.actions_boss_timira_fight.say_2": {
+    "src_hash": "c4a01b00c90bdabd21cc5e30c2bc1f3e",
+    "text": "Apa a luat o formă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:40.252334Z"
+  },
+  "quests.actions_boxramp.msg_1": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Clonk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:45.718640Z"
+  },
+  "quests.actions_brain.msg_1": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Fără creier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:45.719008Z"
+  },
+  "quests.actions_cagekey.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:45.719264Z"
+  },
+  "quests.actions_chairteleport.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:45.719544Z"
+  },
+  "quests.actions_chairteleport.msg_2": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Teleportați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:45.719840Z"
+  },
+  "quests.actions_coral.msg_2": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Da.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:51.209428Z"
+  },
+  "quests.actions_coral.msg_3": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Eșuează.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:51.209806Z"
+  },
+  "quests.actions_corpse.say_1": {
+    "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
+    "text": "Ai dobandit ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:51.210179Z"
+  },
+  "quests.actions_coruja.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Îmi pare rău",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:51.210477Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:51.211045Z"
+  },
+  "quests.actions_doors.msg_2": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Nu puteți folosi încă această barcă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:55.621601Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:55.628534Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:55.629784Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:55.630589Z"
+  },
+  "quests.actions_doors.msg_6": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nu ai suficient nivel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:55.631423Z"
+  },
+  "quests.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Ai un sentiment de groază.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:57.838962Z"
+  },
+  "quests.actions_entrance.msg_1": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Poți folosi această intrare doar pe timp de noapte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:57.840547Z"
   }
 }

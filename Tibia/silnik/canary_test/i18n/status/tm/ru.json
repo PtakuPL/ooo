@@ -14510,5 +14510,677 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:20:54.375400Z"
+  },
+  "data.otservbr.global.npc.harog.L68.1499": {
+    "src_hash": "f9776f93ac975cd47b598e34d9242d18",
+    "text": "Привет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:37.962501Z"
+  },
+  "data.otservbr.global.npc.jacob.L132.763": {
+    "src_hash": "27e435b4c746a3efcf2e9e10c4abb36d",
+    "text": "<кивает> Привет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:37.981421Z"
+  },
+  "data.otservbr.global.npc.klaus.L85.424": {
+    "src_hash": "2e3719b37ce682a6f5e621aa9c414bbf",
+    "text": "Хо, приятель.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:37.996992Z"
+  },
+  "data.otservbr.global.npc.lailene.L58.312": {
+    "src_hash": "6dbff9fca0a1c5584ed77bc13d971861",
+    "text": "Здесь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.001265Z"
+  },
+  "data.otservbr.global.npc.lardoc.bashsmite.L260.1203": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.003784Z"
+  },
+  "data.otservbr.global.npc.lavirias.L57.36": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.006268Z"
+  },
+  "data.otservbr.global.npc.llathriel.L53.1322": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.011261Z"
+  },
+  "data.otservbr.global.npc.lorietta.L148.1077": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.014503Z"
+  },
+  "data.otservbr.global.npc.lorietta.L149.1078": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.016281Z"
+  },
+  "data.otservbr.global.npc.lugri.L204.9": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.019341Z"
+  },
+  "data.otservbr.global.npc.lugri.L205.10": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.021854Z"
+  },
+  "data.otservbr.global.npc.maealil.L170.1601": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.027934Z"
+  },
+  "data.otservbr.global.npc.maealil.L171.1602": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.029774Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L177.896": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.032274Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L178.897": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.033695Z"
+  },
+  "data.otservbr.global.npc.maris.L93.980": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.035652Z"
+  },
+  "data.otservbr.global.npc.maris.fenrock.L74.113": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.036986Z"
+  },
+  "data.otservbr.global.npc.maris.mistrock.L91.669": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.038316Z"
+  },
+  "data.otservbr.global.npc.maryza.L108.396": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.040278Z"
+  },
+  "data.otservbr.global.npc.mazarius.L191.564": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Ну что ж.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.041917Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L62.622": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Конечно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.042842Z"
+  },
+  "data.otservbr.global.npc.melian.L95.777": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.044063Z"
+  },
+  "data.otservbr.global.npc.melian.L96.778": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.044934Z"
+  },
+  "data.otservbr.global.npc.moe.L116.327": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.046853Z"
+  },
+  "data.otservbr.global.npc.muriel.L160.1306": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Прощание.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.048720Z"
+  },
+  "data.otservbr.global.npc.muriel.L161.1307": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Прощание.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:38.049275Z"
+  },
+  "spell.curse.name": {
+    "src_hash": "738ca3cb200c27b4996ed320eee15705",
+    "text": "Проклятие",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.578598Z"
+  },
+  "spell.food.name": {
+    "src_hash": "0a38e7286ebbb560354992b3ce62be67",
+    "text": "Еда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.597174Z"
+  },
+  "spell.sudden_death_rune.name": {
+    "src_hash": "b4a8395e3e80b065f8abcfb910717b4c",
+    "text": "Руна внезапной смерти",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.600013Z"
+  },
+  "spell.holy_missile_rune.name": {
+    "src_hash": "fd9e8018108599c211222b8d3c509d4c",
+    "text": "Руна священного снаряда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.602264Z"
+  },
+  "spell.energy_bomb_rune.name": {
+    "src_hash": "45c17606088afc983836bf3e20d62b3d",
+    "text": "Руна энергетической бомбы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.603725Z"
+  },
+  "spell.fire_bomb_rune.name": {
+    "src_hash": "00379b6a9cbe075b5fcdf571ca044cf9",
+    "text": "Руна огненной бомбы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.605483Z"
+  },
+  "spell.light_magic_missile_rune.name": {
+    "src_hash": "341199c9404914fea7b1003bc1d95c4a",
+    "text": "Руна лёгкого магического снаряда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.608558Z"
+  },
+  "spell.apprentice's_strike.name": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Удар ученика",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.615229Z"
+  },
+  "spell.nature's_embrace.name": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "Объятие природы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:21.615994Z"
+  },
+  "spell.annihilon_paralyze.name": {
+    "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
+    "text": "Аннигилонский паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:23.643547Z"
+  },
+  "spell.pirate_corsair_skill_reducer.name": {
+    "src_hash": "804f0f58e3748cbf75ba47ecf7ba8ebb",
+    "text": "Редуктор навыков пирата-корсара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:23.644075Z"
+  },
+  "spell.large_black_ring.name": {
+    "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
+    "text": "Большое черное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:23.644473Z"
+  },
+  "spell.dragonling_wave.name": {
+    "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
+    "text": "Драконья волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:23.644872Z"
+  },
+  "spell.rupture_wave.name": {
+    "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
+    "text": "Разрывная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:23.645220Z"
+  },
+  "spell.rotthingholy_ulus.name": {
+    "src_hash": "6f9565ba840690d6cf32df1835403486",
+    "text": "Роттингхоли Улус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:27.570487Z"
+  },
+  "spell.plagirath_heal.name": {
+    "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
+    "text": "Плагиратское исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:27.570928Z"
+  },
+  "spell.hideous_fungus_summon.name": {
+    "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
+    "text": "Призыв ужасного гриба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:27.571331Z"
+  },
+  "spell.death_priest_shargon_curse.name": {
+    "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
+    "text": "Проклятие Жреца Смерти Шаргона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:27.571781Z"
+  },
+  "spell.defiler_paralyze_3.name": {
+    "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
+    "text": "Осквернитель Паралич 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:27.572172Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_2.name": {
+    "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
+    "text": "Редуктор навыков порабощенных гномов 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:31.117202Z"
+  },
+  "spell.magma_crawler_soulfire.name": {
+    "src_hash": "5af58207044b3d5e194180367a723039",
+    "text": "Магмовый ползунок Огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:31.117901Z"
+  },
+  "spell.devovorga_curse.name": {
+    "src_hash": "5fed81378f355f8d43c87e10c5259174",
+    "text": "Проклятие Девоворги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:31.118550Z"
+  },
+  "spell.white_shade_paralyze.name": {
+    "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
+    "text": "Паралич белого оттенка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:31.119417Z"
+  },
+  "spell.plant_abomination_wave.name": {
+    "src_hash": "b4b265d796db5c445199764c97950e61",
+    "text": "Волна мерзости растений",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:34.403154Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Большое ледяное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:34.404484Z"
+  },
+  "spell.teleport_strike.name": {
+    "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
+    "text": "Телепортационный удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:34.405244Z"
+  },
+  "spell.lersatio_summon.name": {
+    "src_hash": "9f6b742ed3af674623ba4cbc33432484",
+    "text": "Призыв Лерсатио",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:34.408504Z"
+  },
+  "spell.elder_bonelord_paralyze.name": {
+    "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
+    "text": "Старший Повелитель костей паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:37.986454Z"
+  },
+  "spell.physical_barrage.name": {
+    "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
+    "text": "Физический залп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:37.987512Z"
+  },
+  "spell.explosion_wave.name": {
+    "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
+    "text": "Взрывная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:37.988317Z"
+  },
+  "spell.incineron_soulfire.name": {
+    "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
+    "text": "Инсинерон Огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:37.989314Z"
+  },
+  "spell.plaguesmith_wave.name": {
+    "src_hash": "d9649bfbbd30a852247fef5979d725d9",
+    "text": "Волна Чумного Кузнеца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:37.990463Z"
+  },
+  "spell.lich_paralyze.name": {
+    "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
+    "text": "Лич-паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:41.496872Z"
+  },
+  "spell.lizard_wave_2.name": {
+    "src_hash": "40359f42d6c401e32e7f4524cb402999",
+    "text": "Ящерица Волна 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:41.497686Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Ядовитая волна рипптора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:41.498560Z"
+  },
+  "spell.djinn_electrify.name": {
+    "src_hash": "2d7d1504b58dddc11ff934bb57fef215",
+    "text": "Джинн Электрифицирует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:41.499308Z"
+  },
+  "spell.gnomevil_skill_reducer_2.name": {
+    "src_hash": "c2542458a3272a3f5e413c77958fad0b",
+    "text": "Редуктор навыков Гномвила 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:45.449980Z"
+  },
+  "spell.alptramun_summon.name": {
+    "src_hash": "0343adfc07caa85bf0344dd565816cbf",
+    "text": "Призыв Альптрамуна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:45.450647Z"
+  },
+  "spell.root.name": {
+    "src_hash": "63a9f0ea7bb98050796b649e85481845",
+    "text": "корень",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:45.450959Z"
+  },
+  "spell.obujos_skill_reducer_1.name": {
+    "src_hash": "761e07a1d8338f36e05a468f8df8cdd6",
+    "text": "Редуктор навыков обухо 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:45.451455Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "волна омрафира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:45.451803Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Призыв Мохока",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:48.460386Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "нежить шут паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:48.461048Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "стрельба по мишени",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:48.461507Z"
+  },
+  "spell.big_boss_trolliver_summon.name": {
+    "src_hash": "b2c625654cc5c384790ae76b686883f9",
+    "text": "вызов большого босса-тролливера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:48.462015Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "афтершоковая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:48.462445Z"
+  },
+  "spell.raging_mage_skill_reducer_2.name": {
+    "src_hash": "1b4d065ee80f1dbdd553b7cc433f56a1",
+    "text": "Редуктор навыков бушующего мага 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:50.249621Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.201913Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Вам нужно подождать ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.216366Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Вы нашли ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.216800Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Вы нашли ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.217200Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.293828Z"
+  },
+  "quests.movements_elemental_portals.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Вы пока не можете использовать этот портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.449791Z"
+  },
+  "quests.svargrond_arena.completed_arena": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Поздравляем! Вы завершили арену %s, теперь вы должны получить свою награду.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.479034Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:10.487197Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:12.017092Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:12.017759Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:12.018601Z"
   }
 }

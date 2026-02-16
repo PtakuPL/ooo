@@ -5473,91 +5473,91 @@
   },
   "quests.actions_chests.msg_1": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.198958Z"
+    "updated_at": "2026-02-16T22:36:33.183067Z"
   },
   "quests.actions_doors.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.199930Z"
+    "updated_at": "2026-02-16T22:36:33.183668Z"
   },
   "quests.actions_doors.msg_3": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.200936Z"
+    "updated_at": "2026-02-16T22:36:33.184184Z"
   },
   "quests.actions_doors.msg_4": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.201854Z"
+    "updated_at": "2026-02-16T22:36:33.184765Z"
   },
   "quests.actions_doors.msg_5": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.202926Z"
+    "updated_at": "2026-02-16T22:36:33.185335Z"
   },
   "quests.actions_portal_minis_feaster.msg_1": {
     "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
-    "text": "All the players need to be level",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Tutti i giocatori devono essere alla pari ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.204536Z"
+    "updated_at": "2026-02-16T22:36:36.035302Z"
   },
   "quests.actions_portal_minis_feaster.msg_2": {
     "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
-    "text": "You have to wait",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Devi aspettare ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.205313Z"
+    "updated_at": "2026-02-16T22:36:36.035697Z"
   },
   "quests.actions_rewards.msg_1": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Hai trovato ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.205692Z"
+    "updated_at": "2026-02-16T22:36:29.962835Z"
   },
   "quests.actions_rewards.msg_2": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Hai trovato ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.205941Z"
+    "updated_at": "2026-02-16T22:36:29.962886Z"
   },
   "quests.bigfoot_burden.chest_empty": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.207177Z"
+    "updated_at": "2026-02-16T22:36:36.036297Z"
   },
   "quests.bigfoot_burden.mouthpiece_empty": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.208413Z"
+    "updated_at": "2026-02-16T22:36:38.828362Z"
   },
   "quests.movements_arena_enter.say_1": {
     "src_hash": "3bb3470755c465f042163233b672a4fb",
@@ -5857,11 +5857,11 @@
   },
   "quests.actions_corpse.say_1": {
     "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
-    "text": "Hai acquisito",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Hai acquisito ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T04:05:44.479158Z"
+    "updated_at": "2026-02-16T22:36:29.962541Z"
   },
   "quests.actions_coruja.msg_1": {
     "src_hash": "140208bb60fc3f70eabd068701030425",
@@ -5945,11 +5945,11 @@
   },
   "quests.actions_levers.say_1": {
     "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
-    "text": "Hai capovolto il",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Hai capovolto il ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T04:05:55.085026Z"
+    "updated_at": "2026-02-16T22:36:29.962723Z"
   },
   "quests.actions_mono_detector_strange_probing_device.msg_1": {
     "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
@@ -5969,11 +5969,11 @@
   },
   "quests.actions_mono_detector_strange_probing_device.msg_3": {
     "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
-    "text": "Il dispositivo legge: 'abnormal glooth structure detected, possible probing location'",
+    "text": "Sul dispositivo si legge: \"Rilevata struttura oscurante anomala, possibile posizione del sondaggio\"",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:05:55.086737Z"
+    "updated_at": "2026-02-16T22:36:36.034629Z"
   },
   "quests.actions_mono_detector_strange_probing_device.msg_4": {
     "src_hash": "7302b053c0f22e53182c9674c7530e39",
@@ -9745,11 +9745,11 @@
   },
   "quests.creaturescripts_overlord_kill.say_1": {
     "src_hash": "46a2135b118f06e9400ca190a247f5fc",
-    "text": "Hai ucciso",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Hai ucciso ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T11:45:29.392964Z"
+    "updated_at": "2026-02-16T22:36:29.963699Z"
   },
   "quests.creaturescripts_pale_worm_death.msg_1": {
     "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
@@ -21630,5 +21630,909 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:16:23.557014Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L74.1055": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <non ne sei sicuro, ma sembra che lo scoiattolo voglia scambiare le tue preziose ghiande con pietre inutili che ha trovato e considerate immangiabili>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.100327Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L60.1103": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, sento che un mortale cammina di nuovo per queste antiche sale. Perdonami, ti noto a malapena. Sono così perso nei miei pensieri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.105843Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L62.1178": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Ti capisco. Sento i tuoi pensieri. Tu sei... vivo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.115986Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L63.1179": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Solo...così solo. Così freddo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.117285Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L64.1180": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Solo...così solo. Così freddo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.120447Z"
+  },
+  "data.otservbr.global.npc.the.empress.L84.444": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.574291Z"
+  },
+  "data.otservbr.global.npc.the.librarian.L87.395": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.575279Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L68.259": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.576636Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L69.260": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Allora arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.576989Z"
+  },
+  "data.otservbr.global.npc.thorwulf.L225.909": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.577712Z"
+  },
+  "data.otservbr.global.npc.tigo.L96.858": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.578554Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L93.608": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.579411Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L94.609": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.580340Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L95.610": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.581409Z"
+  },
+  "data.otservbr.global.npc.torkada.L97.1009": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.589704Z"
+  },
+  "data.otservbr.global.npc.tyrias.L175.1274": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.594046Z"
+  },
+  "data.otservbr.global.npc.ukea.L57.1102": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Arrivederci!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.595786Z"
+  },
+  "data.otservbr.global.npc.undal.L168.1467": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.597678Z"
+  },
+  "data.otservbr.global.npc.undal.L169.1468": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.598530Z"
+  },
+  "data.otservbr.global.npc.vanys.L168.532": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.601222Z"
+  },
+  "data.otservbr.global.npc.vanys.L169.533": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.601621Z"
+  },
+  "data.otservbr.global.npc.vascalir.L938.1546": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.605748Z"
+  },
+  "data.otservbr.global.npc.vascalir.L939.1547": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.606219Z"
+  },
+  "data.otservbr.global.npc.virgil.L77.213": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.607513Z"
+  },
+  "data.otservbr.global.npc.virgil.L78.214": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.607947Z"
+  },
+  "data.otservbr.global.npc.walter.the.guard.L88.164": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.608930Z"
+  },
+  "data.otservbr.global.npc.wentworth.L388.331": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.609447Z"
+  },
+  "data.otservbr.global.npc.wentworth.L389.332": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.610242Z"
+  },
+  "data.otservbr.global.npc.xorlosh.L91.605": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ci vediamo, amico mio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.612118Z"
+  },
+  "data.otservbr.global.npc.xorlosh.L92.606": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ci vediamo, amico mio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.612752Z"
+  },
+  "data.otservbr.global.npc.yberius.L171.1366": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.614059Z"
+  },
+  "data.otservbr.global.npc.yonan.L137.684": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.614774Z"
+  },
+  "data.otservbr.global.npc.yonan.L140.685": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.615455Z"
+  },
+  "data.otservbr.global.npc.yonan.L143.686": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.615961Z"
+  },
+  "data.otservbr.global.npc.yonan.L216.687": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.616481Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L150.52": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.617930Z"
+  },
+  "data.otservbr.global.npc.ziyad.L102.874": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Allora arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:31:28.619762Z"
+  },
+  "spell.sudden_death_rune.name": {
+    "src_hash": "b4a8395e3e80b065f8abcfb910717b4c",
+    "text": "Sudden Death Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.198143Z"
+  },
+  "spell.poison_wall_rune.name": {
+    "src_hash": "5d33a1ec9e15577a76556efb8dd65a9b",
+    "text": "Poison Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.199291Z"
+  },
+  "spell.wild_growth_rune.name": {
+    "src_hash": "3c7f67d04c69f51c7a8218980ead0fc8",
+    "text": "Wild Growth Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.202298Z"
+  },
+  "spell.energy_wall_rune.name": {
+    "src_hash": "5b73eb415a3056d5bdbc26a3886775da",
+    "text": "Energy Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.203238Z"
+  },
+  "spell.cure_poison_rune.name": {
+    "src_hash": "3ff5a4ce313d165c5fa17d6b309e26af",
+    "text": "Cure Poison Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.204201Z"
+  },
+  "spell.energy_bomb_rune.name": {
+    "src_hash": "45c17606088afc983836bf3e20d62b3d",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.206441Z"
+  },
+  "spell.poison_bomb_rune.name": {
+    "src_hash": "8e4ac735e2ce1415ddf32084da98effc",
+    "text": "Poison Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.209015Z"
+  },
+  "spell.fire_bomb_rune.name": {
+    "src_hash": "00379b6a9cbe075b5fcdf571ca044cf9",
+    "text": "Fire Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.210915Z"
+  },
+  "spell.fire_wall_rune.name": {
+    "src_hash": "43bf5ebe2cc612bd482d04210760521b",
+    "text": "Fire Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.213035Z"
+  },
+  "spell.fire_field_rune.name": {
+    "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
+    "text": "Fire Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.215072Z"
+  },
+  "spell.magic_wall_rune.name": {
+    "src_hash": "dc28fac219174ba4b7547e40bb77ffde",
+    "text": "Magic Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.215837Z"
+  },
+  "spell.stone_shower_rune.name": {
+    "src_hash": "44290ba68ac25c850aa27e5523fda1f6",
+    "text": "Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.219326Z"
+  },
+  "spell.energy_field_rune.name": {
+    "src_hash": "ec6d44248eb7c384389f8bf9e0ff75c4",
+    "text": "Energy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.221258Z"
+  },
+  "spell.poison_field_rune.name": {
+    "src_hash": "f25387a94f2c77f239a2d3dc190baf3c",
+    "text": "Poison Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:51.223586Z"
+  },
+  "spell.annihilon_paralyze.name": {
+    "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
+    "text": "Annihilon paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:52.983488Z"
+  },
+  "spell.pirate_corsair_skill_reducer.name": {
+    "src_hash": "804f0f58e3748cbf75ba47ecf7ba8ebb",
+    "text": "Riduttore di abilità del corsaro pirata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:52.984002Z"
+  },
+  "spell.large_black_ring.name": {
+    "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
+    "text": "Grande anello nero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:52.984353Z"
+  },
+  "spell.dragonling_wave.name": {
+    "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
+    "text": "Onda del Drago",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:52.984658Z"
+  },
+  "spell.rupture_wave.name": {
+    "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
+    "text": "Onda di rottura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:52.984943Z"
+  },
+  "spell.plagirath_heal.name": {
+    "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
+    "text": "Guarigione da Plagirath",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:55.741084Z"
+  },
+  "spell.hideous_fungus_summon.name": {
+    "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
+    "text": "Evocazione di funghi orribili",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:55.741500Z"
+  },
+  "spell.death_priest_shargon_curse.name": {
+    "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
+    "text": "La Maledizione del Sacerdote della Morte Shargon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:55.741993Z"
+  },
+  "spell.defiler_paralyze_3.name": {
+    "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
+    "text": "Paralisi del Contaminatore 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:55.742474Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_2.name": {
+    "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
+    "text": "Riduttore di abilità del nano schiavo 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:59.054364Z"
+  },
+  "spell.magma_crawler_soulfire.name": {
+    "src_hash": "5af58207044b3d5e194180367a723039",
+    "text": "Fuoco dell'Anima del Strisciamagmatico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:59.054792Z"
+  },
+  "spell.devovorga_curse.name": {
+    "src_hash": "5fed81378f355f8d43c87e10c5259174",
+    "text": "Maledizione di Devovorga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:59.055161Z"
+  },
+  "spell.white_shade_paralyze.name": {
+    "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
+    "text": "Paralisi dell'ombra bianca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:33:59.055640Z"
+  },
+  "spell.plant_abomination_wave.name": {
+    "src_hash": "b4b265d796db5c445199764c97950e61",
+    "text": "Onda di abominio vegetale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:01.960246Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Grande anello di ghiaccio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:01.960938Z"
+  },
+  "spell.teleport_strike.name": {
+    "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
+    "text": "Attacco di teletrasporto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:01.961578Z"
+  },
+  "spell.lersatio_summon.name": {
+    "src_hash": "9f6b742ed3af674623ba4cbc33432484",
+    "text": "Evocazione di Lersatio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:01.962558Z"
+  },
+  "spell.elder_bonelord_paralyze.name": {
+    "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
+    "text": "l'anziano Signore delle Ossa paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:05.164094Z"
+  },
+  "spell.physical_barrage.name": {
+    "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
+    "text": "Sbarramento fisico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:05.164802Z"
+  },
+  "spell.explosion_wave.name": {
+    "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
+    "text": "Onda di esplosione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:05.165526Z"
+  },
+  "spell.incineron_soulfire.name": {
+    "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
+    "text": "Incineron Fuoco dell'Anima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:05.166245Z"
+  },
+  "spell.plaguesmith_wave.name": {
+    "src_hash": "d9649bfbbd30a852247fef5979d725d9",
+    "text": "Onda del Plaguesmith",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:05.167116Z"
+  },
+  "spell.lich_paralyze.name": {
+    "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
+    "text": "Paralisi del Lich",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:08.350890Z"
+  },
+  "spell.lizard_wave_2.name": {
+    "src_hash": "40359f42d6c401e32e7f4524cb402999",
+    "text": "Lucertola Onda 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:08.351230Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Onda Ripptor nociva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:08.351628Z"
+  },
+  "spell.djinn_electrify.name": {
+    "src_hash": "2d7d1504b58dddc11ff934bb57fef215",
+    "text": "I Jinn elettrizzano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:08.351989Z"
+  },
+  "spell.gnomevil_skill_reducer_2.name": {
+    "src_hash": "c2542458a3272a3f5e413c77958fad0b",
+    "text": "Riduttore di abilità di Gnomevil 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:11.361360Z"
+  },
+  "spell.alptramun_summon.name": {
+    "src_hash": "0343adfc07caa85bf0344dd565816cbf",
+    "text": "Evocazione di Alptramun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:11.361900Z"
+  },
+  "spell.root.name": {
+    "src_hash": "63a9f0ea7bb98050796b649e85481845",
+    "text": "radice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:11.362402Z"
+  },
+  "spell.obujos_skill_reducer_1.name": {
+    "src_hash": "761e07a1d8338f36e05a468f8df8cdd6",
+    "text": "riduttore di abilità obujos 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:11.362931Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "onda omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:11.363439Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Evocazione di Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:34:13.119955Z"
+  },
+  "quests.ferumbras_ascension.sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:30.170884Z"
+  },
+  "quests.demon_oak.master_crush": {
+    "src_hash": "f45c9ec1422dccdef3363c54309770b9",
+    "text": "COME E' POSSIBILE?!? IL MIO PADRE TI SCHIACCIARÀ!! AHRRGGG!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:38.829514Z"
+  },
+  "quests.demon_oak.sound_1": {
+    "src_hash": "64858b07745250c936399f2141b9ae80",
+    "text": "LE MIE RADICI SONO AFFILATE COME UNA FALCE! LO SENTI?!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:38.830482Z"
+  },
+  "quests.demon_oak.sound_2": {
+    "src_hash": "21b22bf438167c41b9754424d93ebe2e",
+    "text": "MALEDIZIONE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:38.831039Z"
+  },
+  "quests.demon_oak.sound_3": {
+    "src_hash": "ad954e578749aec118f170e9cc6cddb1",
+    "text": "RISORGERE, MINIONS, RISORGERE DAI MORTI!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:38.831886Z"
+  },
+  "quests.demon_oak.sound_4": {
+    "src_hash": "73a3aa812824cdc1b55c2f3eed86217c",
+    "text": "AHHHH! IL TUO SANGUE MI RENDE FORTE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:41.630349Z"
+  },
+  "quests.demon_oak.sound_5": {
+    "src_hash": "32c5ccaa47af898221a429cc74e76312",
+    "text": "PRENDI LE OSSA, HELLHOUND! PRENDILI!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:41.630852Z"
+  },
+  "quests.demon_oak.sound_6": {
+    "src_hash": "215518027445ceeb220fa31ef6203b35",
+    "text": "ARRIVATE DOVE POSSO RAGGIUNGERVI!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:41.631273Z"
+  },
+  "quests.demon_oak.sound_7": {
+    "src_hash": "f4bacd0a57b22b2bc63c2ba67bd432ac",
+    "text": "IL DOLORE ETERNO VI ASPETTA! BELLA RICOMPENSA, EH?!?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:41.631773Z"
+  },
+  "quests.demon_oak.sound_8": {
+    "src_hash": "00f928cfbade0ee4a515a461c14fbd4a",
+    "text": "PAGERETE PER OGNI COLPO CON DECENNI DI TORTURA!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:41.632244Z"
+  },
+  "quests.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Liberami e sarai ricompensato grandemente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:45.229288Z"
+  },
+  "quests.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Cos'è questo? Gambe del demone che giacciono qui? Qualcuno potrebbe averli persi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:45.229963Z"
+  },
+  "quests.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Sono in trappola, vieni qui e liberami velocemente!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:45.230595Z"
+  },
+  "quests.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Posso riportare in vita la tua amata, liberami!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:45.231111Z"
+  },
+  "quests.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Che bella armatura dorata e lucente. Vieni da me e potrai averlo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:49.688261Z"
+  },
+  "quests.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Trova un modo per entrare qui e liberami! Per favore, sbrigati!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:49.688852Z"
+  },
+  "quests.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Puoi avere il mio set demoniaco, se mi aiuti a uscire di qui!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:49.689514Z"
+  },
+  "quests.desert_dungeon.missing_sacrifice": {
+    "src_hash": "cf6fd7640294feedf4b956372a8c65f3",
+    "text": "{0} manca {1} sacrificio sull'altare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:49.690245Z"
+  },
+  "quests.desert_dungeon.need_all_vocations": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Hai bisogno di un giocatore per ogni vocazione per questa missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:49.690792Z"
+  },
+  "quests.desert_dungeon.need_each_vocation": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Hai bisogno di un giocatore per ogni vocazione per questa missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:55.764865Z"
+  },
+  "quests.dream_courts.barrel_word": {
+    "src_hash": "ab1981f1b79d1b8ff80c419c6ce3d434",
+    "text": "All'interno del coperchio di questo barile c'è scritta sopra una parola: 'O'kteth'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:55.766186Z"
+  },
+  "quests.dream_courts.bed_notes": {
+    "src_hash": "d23a6ac34261a80639136e4e3d78e47b",
+    "text": "Questa estremità del letto ha una pila di appunti nascosti sotto. C'è solo una parola su tutti: 'T'sough'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:55.767151Z"
+  },
+  "quests.dream_courts.book_kmuuh": {
+    "src_hash": "18d37c53b39eb7f66f14c307f08d2c0e",
+    "text": "I canti di questo libro spesso contengono la parola 'K'muuh'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:55.768001Z"
+  },
+  "quests.dream_courts.book_nogalu": {
+    "src_hash": "1714f5db5c755452491181ec675d63ac",
+    "text": "I canti di questo libro spesso contengono la parola 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:55.768808Z"
+  },
+  "quests.dream_courts.book_okteth": {
+    "src_hash": "3a67a1d27c430fa5ba1fd9edaffc15d7",
+    "text": "I canti di questo libro spesso contengono la parola 'O'kteth.'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:59.944501Z"
+  },
+  "quests.dream_courts.book_worthy": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Tutti i canti sono stati cantati nel giusto ordine, sei ritenuto degno. Sei trasportato via...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:59.945180Z"
+  },
+  "quests.dream_courts.got_blue_crystal": {
+    "src_hash": "be404605aece8334d7dec85049557214",
+    "text": "Hai un cristallo blu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:59.945578Z"
+  },
+  "quests.dream_courts.got_green_crystal": {
+    "src_hash": "95d63fd876e5455d0288a8fe8bbad93f",
+    "text": "Hai ottenuto un cristallo verde!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:59.945977Z"
+  },
+  "quests.dream_courts.got_purple_crystal": {
+    "src_hash": "15ef9900355aaed476317b32066987c5",
+    "text": "Hai ottenuto un cristallo viola!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:36:59.946652Z"
+  },
+  "quests.dream_courts.nexus_blocked": {
+    "src_hash": "c2d3b0717c0f57ebab89bc4984f3c53c",
+    "text": "Collega tutti e tre i gateway per ripristinare il circolo di energia che sostiene questo nesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:37:01.729692Z"
   }
 }

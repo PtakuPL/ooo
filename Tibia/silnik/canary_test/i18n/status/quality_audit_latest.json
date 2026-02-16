@@ -1,54 +1,15 @@
 {
-  "timestamp": "2026-02-15T22:46:47.756327Z",
+  "timestamp": "2026-02-16T00:15:18.944647Z",
   "checked_entries": 100,
-  "issues_found": 6,
+  "issues_found": 1,
   "issues_by_type": {
-    "artifact_token": 4,
-    "identical_to_en_exempt": 2,
-    "identical_to_en": 2,
-    "suspicious_log_high": 83,
-    "suspicious_log_low": 61,
-    "suspicious_log_medium": 42,
-    "suspicious_log_critical": 14,
-    "suspicious_rejected_critical": 179,
-    "suspicious_rejected_high": 21
+    "identical_to_en": 1,
+    "suspicious_log_high": 33,
+    "suspicious_log_low": 167,
+    "suspicious_rejected_critical": 172,
+    "suspicious_rejected_high": 28
   },
   "issues": [
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "scripts.thais_exhibition.say_36",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Mwahaha!",
-      "translated": "Mwahaha!"
-    },
-    {
-      "key": "scripts.prince_drazzak_summon.say_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "lang": "es",

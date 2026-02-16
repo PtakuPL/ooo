@@ -249,7 +249,10 @@ function installLocales(directory)
   local files = g_resources.listDirectoryFiles(directory)
   for _, file in ipairs(files) do
     if g_resources.isFileType(file, "lua") and not file:find("^game_i18n_") then
-      dofile(directory .. '/' .. file)
+      local ok, err = pcall(dofile, directory .. '/' .. file)
+      if not ok then
+        pwarning('[i18n] Failed to load locale file: ' .. file .. ': ' .. tostring(err))
+      end
     end
   end
 end

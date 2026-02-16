@@ -104,6 +104,10 @@ function UITabBar:getTab(text)
 end
 
 function UITabBar:selectTab(tab)
+    if not tab then
+        pwarning('[UITabBar] selectTab called with nil tab')
+        return
+    end
     if self.currentTab == tab then
         return
     end

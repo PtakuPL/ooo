@@ -1847,9 +1847,5 @@ local add = {
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v
 end
-
--- Load game i18n translations (NPC dialogs, monster voices, etc.)
-dofile('game_i18n_pl')
-
--- Load compact-key translations (server may send compact i18n IDs)
-dofile('game_i18n_pl_compact')
+-- game_i18n_pl and game_i18n_pl_compact are loaded automatically
+-- by loadGameI18nForLocale() inside installLocale() — no manual dofile needed

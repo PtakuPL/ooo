@@ -1,0 +1,30 @@
+{
+  "cycles": 1,
+  "date": "2026-02-16",
+  "errors": {
+    "count": 0
+  },
+  "generated_at_utc": "2026-02-16T00:15:19Z",
+  "work": {
+    "auto_translate": {
+      "langs": {
+        "IT": {
+          "skipped": 0,
+          "translated": 2992
+        }
+      }
+    },
+    "compact_keys": {
+      "exported_langs": [],
+      "mapped_new": 0
+    },
+    "migration": {
+      "categories_touched": [],
+      "files_changed": 0,
+      "keys_added": 0
+    },
+    "translation_sync": {
+      "langs": {}
+    }
+  }
+}

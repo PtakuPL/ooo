@@ -1,79 +1,127 @@
 {
-  "timestamp": "2026-02-15T22:45:50.030475Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 12,
+  "timestamp": "2026-02-16T00:15:15.743095Z",
+  "language": "it",
+  "json_file": "items.json",
+  "translated": 2992,
   "entries": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "en": "Chchch",
-      "translated": "Chchch",
-      "source": "tm"
+      "key": "item.19364.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "item.19365.name",
+      "en": "trapped lightning",
+      "translated": "fulmine intrappolato",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "item.19366.name",
+      "en": "icy culottes",
+      "translated": "culotte ghiacciate",
+      "source": "google_translate"
     },
     {
-      "key": "npc.al_dee.stdmod_52",
-      "en": "Seymour is a teacher running the {academy}. He has many important {information} about Tibia.",
-      "translated": "Seymour es profesor y dirige el {academy}. Tiene muchos {information} importantes sobre Tibia.",
-      "source": "tm"
+      "key": "item.19369.name",
+      "en": "eye of the storm",
+      "translated": "occhio del ciclone",
+      "source": "google_translate"
     },
     {
-      "key": "npc.al_dee.stdmod_8",
-      "en": "As an adventurer, you should always have at least a {backpack}, a {rope}, a {shovel}, a {weapon}, an {armor} and a {shield}.",
-      "translated": "Como aventurero, siempre debes tener al menos un {backpack}, un {rope}, un {shovel}, un {weapon}, un {armor} y un {shield}.",
-      "source": "tm"
+      "key": "item.19370.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "google_translate"
     },
     {
-      "key": "npc.alexander.greet_msg_1",
-      "en": "Hi there |PLAYERNAME|, and welcome to the {magic} store.",
-      "translated": "Hola |PLAYERNAME| y bienvenido a la tienda {magic}.",
-      "source": "tm"
+      "key": "item.19371.name",
+      "en": "glass of goo",
+      "translated": "bicchiere di sostanza appiccicosa",
+      "source": "google_translate"
     },
     {
-      "key": "npc.alia.stdmod_14",
-      "en": "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",
-      "translated": "Hay cinco bendiciones disponibles en cinco lugares sagrados: el escudo {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}. Además, puedes recibir el {twist of fate} aquí.",
-      "source": "tm"
+      "key": "item.19372.name",
+      "en": "goo shell",
+      "translated": "buona conchiglia",
+      "source": "google_translate"
     },
     {
-      "key": "npc.alkestios.say_1",
-      "en": "Uhmn.. Maybe Ahmet in Ankrahmun can help we to fake this book.",
-      "translated": "Uhmn... Quizás Ahmet en Ankrahmun pueda ayudarnos a falsificar este libro.",
-      "source": "tm"
+      "key": "item.19373.name",
+      "en": "haunted mirror piece",
+      "translated": "pezzo di specchio infestato",
+      "source": "google_translate"
     },
     {
-      "key": "npc.amanda.stdmod_16",
-      "en": "So receive my prayer: 'Wicked curses shall be broken'. Now, bring your stake to Kasmir in Darashia for the next line of the prayer. I will inform him what to do.",
-      "translated": "Así que recibe mi oración: 'Wicked curses shall be broken'. Ahora, lleva tu apuesta a Kasmir en Darashia para la siguiente línea de la oración. Le informaré qué hacer.",
-      "source": "tm"
+      "key": "item.19374.name",
+      "en": "vampire silk slippers",
+      "translated": "pantofole di seta da vampiro",
+      "source": "google_translate"
     },
     {
-      "key": "npc.amanda.stdmod_18",
-      "en": "You should visit Kasmir in Darashia now, my child.",
-      "translated": "Deberías visitar Kasmir en Darashia ahora, hija mía.",
-      "source": "tm"
+      "key": "item.19379.name",
+      "en": "chargeless monolith",
+      "translated": "monolite senza carica",
+      "source": "google_translate"
     },
     {
-      "key": "npc.amanda.stdmod_24",
-      "en": "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",
-      "translated": "Hay cinco bendiciones disponibles en cinco lugares sagrados: el escudo {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}. Además, puedes recibir el {twist of fate} aquí.",
-      "source": "tm"
+      "key": "item.19386.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "google_translate"
     },
     {
-      "key": "npc.albinius.stdmod_1",
-      "en": "I am Albinius, a worshipper of the {Astral Shapers}.",
-      "translated": "Soy Albinio, un adorador del {Astral Shapers}.",
+      "key": "item.19387.name",
+      "en": "large crystal teleporter",
+      "translated": "grande teletrasporto di cristallo",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19390.name",
+      "en": "strangely shaped block",
+      "translated": "blocco dalla forma strana",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19391.name",
+      "en": "furious frock",
+      "translated": "vestito furioso",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19392.desc",
+      "en": "This strange box holds a dark sphere. The sphere has been adjusted and its key mechanism aligned",
+      "translated": "Questa strana scatola contiene una sfera oscura. La sfera è stata regolata e il suo meccanismo chiave allineato",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19392.name",
+      "en": "aligned opticording sphere",
+      "translated": "sfera otticocordante allineata",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19393.desc",
+      "en": "The sun with its burning grasp devours the nothingness twice.",
+      "translated": "Il sole con la sua presa ardente divora due volte il nulla.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19393.name",
+      "en": "stone tablet",
+      "translated": "tavoletta di pietra",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19397.desc",
+      "en": "It is said to freeze time itself to capture your fondest memories. Awarded by TibiaEvents.com",
+      "translated": "Si dice che fermi il tempo stesso per catturare i tuoi ricordi più belli. Premiato da TibiaEvents.com",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.19399.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
       "source": "google_translate"
     }
   ]

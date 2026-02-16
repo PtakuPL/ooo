@@ -59046,5 +59046,1869 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T08:12:49.961746Z"
+  },
+  "monster.salamander.name": {
+    "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.373579Z"
+  },
+  "monster.toad.name": {
+    "src_hash": "c7ccfc161889ed90a90ff22c92369226",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.377393Z"
+  },
+  "monster.defiler.name": {
+    "src_hash": "06432eefe619b19aa24a54c7b96244d8",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.379674Z"
+  },
+  "monster.troll.name": {
+    "src_hash": "922a511f02d148e4c9390526d85ca519",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.381050Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.382397Z"
+  },
+  "monster.mummy.name": {
+    "src_hash": "4af8989a64edc6f13a0b59ec047d1db5",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.384171Z"
+  },
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.384969Z"
+  },
+  "monster.bat.name": {
+    "src_hash": "2d5b3d62e7bd3a1d79494bd85e69b5ba",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.386940Z"
+  },
+  "monster.amazon.name": {
+    "src_hash": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.387720Z"
+  },
+  "monster.monk.name": {
+    "src_hash": "844a2b0ce474227509eb629bc56c1359",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.388533Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.389778Z"
+  },
+  "monster.bandit.name": {
+    "src_hash": "7534759ceb94c0e91b13a22fe6e16980",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.390627Z"
+  },
+  "monster.valkyrie.name": {
+    "src_hash": "0af3f80a54716414f24a166e5c1b6c26",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.391516Z"
+  },
+  "monster.assassin.name": {
+    "src_hash": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.392549Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.394495Z"
+  },
+  "monster.hellhound.name": {
+    "src_hash": "7f67cc83cb82576db750ab2ba9cbfb17",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.395934Z"
+  },
+  "monster.destroyer.name": {
+    "src_hash": "f90034e6810bf57cdb3d99a298221fc9",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.396702Z"
+  },
+  "monster.hellspawn.name": {
+    "src_hash": "6f4596e4b6567420115ceb0704e9d14d",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.397507Z"
+  },
+  "monster.fury.name": {
+    "src_hash": "02752885df8d50fc2f489ad17fcab9e8",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.398720Z"
+  },
+  "monster.tortoise.name": {
+    "src_hash": "f32eeee0726588ed71cbdb58b921cb7c",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.399640Z"
+  },
+  "monster.crocodile.name": {
+    "src_hash": "08593f6462671249c427e87daf8bd686",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.401132Z"
+  },
+  "monster.snake.name": {
+    "src_hash": "dfa90f1b4eb3affbd3b46af34ed2477c",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.402039Z"
+  },
+  "monster.spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.406170Z"
+  },
+  "monster.wasp.name": {
+    "src_hash": "5a2121f3548dc88faf3db43db327f7c7",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.407530Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.408971Z"
+  },
+  "monster.guzzlemaw.name": {
+    "src_hash": "af39e6956034169ca52f6fff8f9fbc5b",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.409735Z"
+  },
+  "monster.black_knight.name": {
+    "src_hash": "3e25a5de4a645ae471e2adfa77878305",
+    "text": "Negru knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.410878Z"
+  },
+  "monster.shadowpelt.name": {
+    "src_hash": "3b450842412b3871b7e8e02b8849335c",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.411761Z"
+  },
+  "monster.custodian.name": {
+    "src_hash": "21acacdcea41de8d1484f359710e7984",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.412502Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.414153Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.414920Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.417032Z"
+  },
+  "monster.behemoth.name": {
+    "src_hash": "be20385e18333edb329d4574f364a1f0",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.418796Z"
+  },
+  "monster.hydra.name": {
+    "src_hash": "0a79d2e788f647cf8c8bee8cad4bf94e",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.419586Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.421339Z"
+  },
+  "monster.old_wasp.name": {
+    "src_hash": "5a2121f3548dc88faf3db43db327f7c7",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.424000Z"
+  },
+  "monster.old_pig.name": {
+    "src_hash": "32e9edc16056ea133af764ed59b74291",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.424998Z"
+  },
+  "monster.old_wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.426704Z"
+  },
+  "monster.old_bear.name": {
+    "src_hash": "372137ebb0d053fecd7a594ec5cb5971",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.427908Z"
+  },
+  "monster.old_spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.428972Z"
+  },
+  "monster.old_bug.name": {
+    "src_hash": "c83640c604dd5e0eacbf3de0a1181101",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.429751Z"
+  },
+  "monster.weeper.name": {
+    "src_hash": "89d5f03070cb61e208573636188f254e",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.430685Z"
+  },
+  "monster.stone_devourer.name": {
+    "src_hash": "ba753450181dcc2e64fa71aa732fbe47",
+    "text": "Piatră Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.432764Z"
+  },
+  "monster.metal_gargoyle.name": {
+    "src_hash": "66c2e4dd46456a945e554ed2d3fee6cd",
+    "text": "Gargoyle Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.440386Z"
+  },
+  "monster.orewalker.name": {
+    "src_hash": "12c4cb93db82d7abaeda85186b68f546",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.442565Z"
+  },
+  "monster.rustheap_golem.name": {
+    "src_hash": "0c4ce216077ff5bf777de9cedd7d6492",
+    "text": "Golem Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.447262Z"
+  },
+  "monster.walker.name": {
+    "src_hash": "d719083f59856e34a37e2137e2241d80",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.453194Z"
+  },
+  "monster.sandstone_scorpion.name": {
+    "src_hash": "975c94834939429259b49f09bb4f61a2",
+    "text": "Gresie Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.455087Z"
+  },
+  "monster.animated_snowman.name": {
+    "src_hash": "18f68ac12ddc5c6544334e3800b0a590",
+    "text": "Snowman Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.457460Z"
+  },
+  "monster.ice_golem.name": {
+    "src_hash": "5c70cbebb77d152030ca13eeab5d628c",
+    "text": "Dragon Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:11.458856Z"
+  },
+  "monster.salamander.desc": {
+    "src_hash": "f79786cf7753cb0656165f2cb5237d63",
+    "text": "o salamandra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.974038Z"
+  },
+  "monster.infernal_frog.name": {
+    "src_hash": "ac73dcaa6d477dee2e13e907726e1e89",
+    "text": "Broasca infernală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.974339Z"
+  },
+  "monster.infernal_frog.desc": {
+    "src_hash": "65c26bf28c30f488e6cbb62e337ba835",
+    "text": "o broasca infernala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.974596Z"
+  },
+  "monster.orchid_frog.name": {
+    "src_hash": "ab152f791a1d3a232d015f8bd893ff2b",
+    "text": "Broasca Orhideea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.974995Z"
+  },
+  "monster.orchid_frog.desc": {
+    "src_hash": "b4d22881650e417cdd0baffa0cd12910",
+    "text": "o broasca orhidee",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.975244Z"
+  },
+  "monster.azure_frog.name": {
+    "src_hash": "23313f7df02a26b437807139f8cf6d4f",
+    "text": "Broasca azură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.975463Z"
+  },
+  "monster.azure_frog.desc": {
+    "src_hash": "59c7ca9b9c073c8a79119373da76f121",
+    "text": "o broasca azurie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.975679Z"
+  },
+  "monster.deathspawn.name": {
+    "src_hash": "a5093d8d030e55f6d31522da7b0f1e1b",
+    "text": "Deathspawn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.975864Z"
+  },
+  "monster.deathspawn.desc": {
+    "src_hash": "3b37cb8ee83d1f764a407bb07147deea",
+    "text": "un generator de moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.976507Z"
+  },
+  "monster.bog_frog.name": {
+    "src_hash": "1f841ce43d9c5934a55a06814d04ec0e",
+    "text": "Broasca de mlaștină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.976808Z"
+  },
+  "monster.bog_frog.desc": {
+    "src_hash": "02ad7cd0462e724edd3d32c70c1eb405",
+    "text": "o broască de mlaștină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.977246Z"
+  },
+  "monster.crimson_frog.name": {
+    "src_hash": "edc908c3340929cbb2675b53727ea188",
+    "text": "Broasca Crimson",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.977465Z"
+  },
+  "monster.crimson_frog.desc": {
+    "src_hash": "a1b755cebdaccdd7eb15db6e325c79eb",
+    "text": "o broască purpurie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.977737Z"
+  },
+  "monster.toad.desc": {
+    "src_hash": "7b68fb78bf1d528baf8a3812a21beec6",
+    "text": "o broască râioasă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.977958Z"
+  },
+  "monster.coral_frog.name": {
+    "src_hash": "a69001bef54b57da0deed8c4d5699a02",
+    "text": "Broasca Coral",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.978184Z"
+  },
+  "monster.coral_frog.desc": {
+    "src_hash": "76fc47947c1b7b703d3d45874d9477ca",
+    "text": "o broasca de coral",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.979026Z"
+  },
+  "monster.filth_toad.name": {
+    "src_hash": "1abf448c003eff773e3609cee7ec2bae",
+    "text": "Broască râioasă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.979250Z"
+  },
+  "monster.filth_toad.desc": {
+    "src_hash": "7519555a25e45c1da4ef3f91cd4969a9",
+    "text": "o broască râioasă murdară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.979700Z"
+  },
+  "monster.slime.name": {
+    "src_hash": "a537a3d7d5ede5718f2b597568233925",
+    "text": "Slime",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.979879Z"
+  },
+  "monster.slime.desc": {
+    "src_hash": "e624599b6a9e4f1bbde107cb39944595",
+    "text": "un slime",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:50:42.980107Z"
+  },
+  "monster.defiler.desc": {
+    "src_hash": "a6afa6db875a5227cc954200b26df79c",
+    "text": "un pângăritor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.390781Z"
+  },
+  "monster.frost_troll.name": {
+    "src_hash": "c6ab0f735ce887708ab91bfe1d63bf8c",
+    "text": "Frost Troll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.391006Z"
+  },
+  "monster.frost_troll.desc": {
+    "src_hash": "db1f835d583a0a795b50f91297add7fd",
+    "text": "un troll de ger",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.391440Z"
+  },
+  "monster.troll.desc": {
+    "src_hash": "40ffb882a54ee403b27433962b5c1448",
+    "text": "un troll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.391668Z"
+  },
+  "monster.island_troll.name": {
+    "src_hash": "b1a2aa325c39c830d83db485ab126a26",
+    "text": "Trolul insulei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.391879Z"
+  },
+  "monster.island_troll.desc": {
+    "src_hash": "400a5e1ff35499497afc5127d0ac8cb5",
+    "text": "un troll de insula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.392290Z"
+  },
+  "monster.goblin.desc": {
+    "src_hash": "a7f3ac990652166f157dcf42a1ee0be5",
+    "text": "un spiriduș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.392502Z"
+  },
+  "monster.ghoul.name": {
+    "src_hash": "a8515fffc5e27c8c977bec3adc1d06e6",
+    "text": "Vampir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.392714Z"
+  },
+  "monster.ghoul.desc": {
+    "src_hash": "cf870f1b9483da668f96ed26cc50b576",
+    "text": "un ghoul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.392901Z"
+  },
+  "monster.skeleton.name": {
+    "src_hash": "6ab48f7ed56efc362f41853c5616bf75",
+    "text": "Schelet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.393076Z"
+  },
+  "monster.skeleton.desc": {
+    "src_hash": "3671d9838dcee79307f4c8b4ddb33743",
+    "text": "un schelet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.393266Z"
+  },
+  "monster.mummy.desc": {
+    "src_hash": "a2ffedde2f493213a2258da350bd2f23",
+    "text": "o mumie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.393440Z"
+  },
+  "monster.wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "un lup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.393646Z"
+  },
+  "monster.winter_wolf.name": {
+    "src_hash": "f75e559b1871eca0fb6acb16a4fbb99c",
+    "text": "Lupul de iarnă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.393871Z"
+  },
+  "monster.winter_wolf.desc": {
+    "src_hash": "f1500141149d2e865dc7088814fd17bc",
+    "text": "un lup de iarnă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.394308Z"
+  },
+  "monster.cave_rat.name": {
+    "src_hash": "4c2c32bad4494a18938eccaf6235937e",
+    "text": "Șobolanul Peșterii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.394555Z"
+  },
+  "monster.cave_rat.desc": {
+    "src_hash": "b4b535fbc0886e031208addd8e1c8984",
+    "text": "un șobolan din peșteră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.395208Z"
+  },
+  "monster.bat.desc": {
+    "src_hash": "3195b1e1ca5adc3efa2213047e4ffb7f",
+    "text": "un liliac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.395991Z"
+  },
+  "monster.amazon.desc": {
+    "src_hash": "9966c9483db020755b9b332ccda0e0c8",
+    "text": "o amazona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.396321Z"
+  },
+  "monster.monk.desc": {
+    "src_hash": "d56e8d3e6c358414f7afa788ed492be1",
+    "text": "un călugăr",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:10.396644Z"
+  },
+  "monster.hunter.desc": {
+    "src_hash": "246604b043bfc8edbea78331c080f2ca",
+    "text": "un vânător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.896256Z"
+  },
+  "monster.bandit.desc": {
+    "src_hash": "45dc92ef8b428687c725448a9692d5d4",
+    "text": "un bandit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.896468Z"
+  },
+  "monster.valkyrie.desc": {
+    "src_hash": "182de564b1fe25142e78b2a977a2b514",
+    "text": "o valchirie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.896667Z"
+  },
+  "monster.assassin.desc": {
+    "src_hash": "fdfb1e58c7b72c5ca5d0ceeb2779a82f",
+    "text": "un asasin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.896859Z"
+  },
+  "monster.training_machine.name": {
+    "src_hash": "239f8d0ccb4342a21943b1bcc65edf0f",
+    "text": "Mașină de antrenament",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.897165Z"
+  },
+  "monster.training_machine.desc": {
+    "src_hash": "1922aa2f9cedffc2998eba7853975355",
+    "text": "un aparat de antrenament",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.897636Z"
+  },
+  "monster.juggernaut.desc": {
+    "src_hash": "c92f93987179e5a10d26cae3f0029ad4",
+    "text": "un grozav",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.897889Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "Demon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.898129Z"
+  },
+  "monster.demon.desc": {
+    "src_hash": "4eecfcf58a9a1b1a531bff973762c1f1",
+    "text": "un demon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.898317Z"
+  },
+  "monster.hellhound.desc": {
+    "src_hash": "b92ee8bbd39544c02e135bd24c80f5ed",
+    "text": "un câine de iad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.898708Z"
+  },
+  "monster.destroyer.desc": {
+    "src_hash": "5248d6bb81a85e4c7366a96625430cec",
+    "text": "un distrugător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.898962Z"
+  },
+  "monster.hellspawn.desc": {
+    "src_hash": "6f19ff227fa7faacc99c006f496ce06e",
+    "text": "un iad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.899159Z"
+  },
+  "monster.fury.desc": {
+    "src_hash": "99f6dd119ffa9143fcbbcf598688f578",
+    "text": "o furie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.899334Z"
+  },
+  "monster.tortoise.desc": {
+    "src_hash": "c171d85643d7df811a40bb9ab617206c",
+    "text": "o broasca testoasa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.899528Z"
+  },
+  "monster.crocodile.desc": {
+    "src_hash": "21eda17adf47b0ba08635701263e312f",
+    "text": "un crocodil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.899720Z"
+  },
+  "monster.snake.desc": {
+    "src_hash": "c483f45a788dc910f18fe57cbaaff3b0",
+    "text": "un șarpe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.899939Z"
+  },
+  "monster.sorcerer_familiar.desc": {
+    "src_hash": "174789236ff8a96a962bee531b60d0d8",
+    "text": "un vrăjitor familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.901594Z"
+  },
+  "monster.knight_familiar.desc": {
+    "src_hash": "34307faf6ad6e0a5cacc088524480e0e",
+    "text": "un cavaler cunoscut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:40.902466Z"
+  },
+  "monster.paladin_familiar.desc": {
+    "src_hash": "ca5da472352530cf72c844b3acd4546b",
+    "text": "un paladin familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.323693Z"
+  },
+  "monster.druid_familiar.desc": {
+    "src_hash": "e61a30784795944503495de623229956",
+    "text": "un druid cunoscut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.324451Z"
+  },
+  "monster.poison_spider.name": {
+    "src_hash": "8c62307321ecf2d05a0da286f1c80943",
+    "text": "Păianjen otravitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.324701Z"
+  },
+  "monster.poison_spider.desc": {
+    "src_hash": "29e4d5a708aa1a39995da90540cfaac0",
+    "text": "un păianjen otrăvitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.324952Z"
+  },
+  "monster.spider.desc": {
+    "src_hash": "e290d18d76cb96332184d7f6628df7d9",
+    "text": "un păianjen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.325158Z"
+  },
+  "monster.wasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "o viespe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.325338Z"
+  },
+  "monster.sandcrawler.name": {
+    "src_hash": "89f2b95e559a3e5addf3bd18f7791f67",
+    "text": "Sandcrawler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.325563Z"
+  },
+  "monster.sandcrawler.desc": {
+    "src_hash": "3c2e7834b14594ada75997531f0ca317",
+    "text": "un sandcrawler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.325775Z"
+  },
+  "monster.frazzlemaw.desc": {
+    "src_hash": "c0f5e22af9df9b1a9765ff7501067c7e",
+    "text": "o fulgeră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.325986Z"
+  },
+  "monster.guzzlemaw.desc": {
+    "src_hash": "7930fe8b403868cb6f2a7a25bf31b5e5",
+    "text": "un guzzlemaw",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.326208Z"
+  },
+  "monster.black_knight.desc": {
+    "src_hash": "d512d4fa0126ceeafe289e1c079421aa",
+    "text": "un cavaler negru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.326457Z"
+  },
+  "monster.shadowpelt.desc": {
+    "src_hash": "b3a3558a4e26d92a75362e465e69633d",
+    "text": "o pelă de umbră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.326904Z"
+  },
+  "monster.custodian.desc": {
+    "src_hash": "3151892485bb3f274793fb76746584ff",
+    "text": "un custode",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.327108Z"
+  },
+  "monster.bullwark.name": {
+    "src_hash": "9511dd8da2f7ed118318552d2dc4e8e5",
+    "text": "Bulwark",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.327354Z"
+  },
+  "monster.bullwark.desc": {
+    "src_hash": "9511dd8da2f7ed118318552d2dc4e8e5",
+    "text": "Bulwark",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.327563Z"
+  },
+  "monster.apocalypse.name": {
+    "src_hash": "abf95deab7df5636aebeaea9177e1fa6",
+    "text": "Apocalypse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.327905Z"
+  },
+  "monster.apocalypse.desc": {
+    "src_hash": "abf95deab7df5636aebeaea9177e1fa6",
+    "text": "Apocalypse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.328253Z"
+  },
+  "monster.apprentice_sheng.name": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Ucenic Sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:51:58.328570Z"
+  },
+  "monster.apprentice_sheng.desc": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Ucenic Sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.104448Z"
+  },
+  "monster.bazir.name": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.104668Z"
+  },
+  "monster.bazir.desc": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.104834Z"
+  },
+  "monster.cyclops.desc": {
+    "src_hash": "c33d1f513f338e0abf82967d812c130b",
+    "text": "un ciclop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.105028Z"
+  },
+  "monster.cyclops_drone.name": {
+    "src_hash": "41883a13e98966ed4ea31f835189a419",
+    "text": "Cyclops Dronă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.105326Z"
+  },
+  "monster.cyclops_drone.desc": {
+    "src_hash": "a22ec2f18c4f33938d41d95aaf7bf1bc",
+    "text": "o dronă de ciclop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.105797Z"
+  },
+  "monster.cyclops_smith.name": {
+    "src_hash": "e461fc845371237a03c88aa64d6c2769",
+    "text": "Cyclops Smith",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.106128Z"
+  },
+  "monster.cyclops_smith.desc": {
+    "src_hash": "c310fe873b11d77071eb0dd89353296e",
+    "text": "un fierar ciclop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.106374Z"
+  },
+  "monster.behemoth.desc": {
+    "src_hash": "39eaab30424bd0f54e1c4cc07b6d07a6",
+    "text": "un gigantic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.106570Z"
+  },
+  "monster.hydra.desc": {
+    "src_hash": "2e27186b32145628f458e52602056d18",
+    "text": "o hidra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.106747Z"
+  },
+  "monster.dragon_lord.name": {
+    "src_hash": "aee5c1cece6bc8375b1264c16e1ee82c",
+    "text": "Domnul Dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.106938Z"
+  },
+  "monster.dragon_lord.desc": {
+    "src_hash": "ede58b3b8c6d66dea11ec41b6ddeb040",
+    "text": "un lord dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.107143Z"
+  },
+  "monster.ice_dragon.name": {
+    "src_hash": "fc32f0dc4eb39df0b549918c8b8bd83f",
+    "text": "Dragonul de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.107364Z"
+  },
+  "monster.ice_dragon.desc": {
+    "src_hash": "e58c12b946d0f020cb3fa5215639c4d5",
+    "text": "un dragon de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.107918Z"
+  },
+  "monster.wyrm.desc": {
+    "src_hash": "087f4605e808df9c4bd038bac3c682c8",
+    "text": "un vârloc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.108135Z"
+  },
+  "monster.dragon.name": {
+    "src_hash": "583f4be146b6127f9e4f3f036ce7df43",
+    "text": "Dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.108320Z"
+  },
+  "monster.dragon.desc": {
+    "src_hash": "7261d6adadc75700b2f0e81d60600d8b",
+    "text": "un dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.108514Z"
+  },
+  "monster.old_bonelord.name": {
+    "src_hash": "22f059b0c7b72b0e26b51e5696dd9c3d",
+    "text": "Privitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.108701Z"
+  },
+  "monster.old_bonelord.desc": {
+    "src_hash": "6a95b17e22bc901177cd7d1f74684ef1",
+    "text": "un privitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.108905Z"
+  },
+  "monster.old_bonelord.voice_1": {
+    "src_hash": "611d88fb0bac95d0375b5e376d5f7545",
+    "text": "Olho por Olho!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:17.109359Z"
+  },
+  "monster.old_wasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "o viespe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.884527Z"
+  },
+  "monster.old_pig.desc": {
+    "src_hash": "5243ef7cf1ed257c9c4c50562dad28df",
+    "text": "un porc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.884712Z"
+  },
+  "monster.old_pig.voice_2": {
+    "src_hash": "6beac3bab1b036233843a0aa676cec59",
+    "text": "Oink",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.884940Z"
+  },
+  "monster.old_giant_spider.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Păianjen uriaș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.885232Z"
+  },
+  "monster.old_giant_spider.desc": {
+    "src_hash": "b5fdfd59be8ae5a93cf595e754ab4fdf",
+    "text": "un păianjen uriaș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.885472Z"
+  },
+  "monster.old_wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "un lup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.885651Z"
+  },
+  "monster.old_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.885888Z"
+  },
+  "monster.old_bear.desc": {
+    "src_hash": "55c5872e02058083fce51af088b7ef0f",
+    "text": "un urs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.886114Z"
+  },
+  "monster.old_spider.desc": {
+    "src_hash": "e290d18d76cb96332184d7f6628df7d9",
+    "text": "un păianjen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.886321Z"
+  },
+  "monster.old_bug.desc": {
+    "src_hash": "6c71bda3cba6e57086f204c6f8c42808",
+    "text": "un bug",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.886493Z"
+  },
+  "monster.weeper.desc": {
+    "src_hash": "dd53478bebadce404651e0b5f5e5d33f",
+    "text": "un plângător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.886686Z"
+  },
+  "monster.eternal_guardian.name": {
+    "src_hash": "486e3b829c682c97c6b43609a4bb0d50",
+    "text": "Gardianul Etern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.886915Z"
+  },
+  "monster.eternal_guardian.desc": {
+    "src_hash": "1e3eb54fdcff1e48ad5dc573670d13fc",
+    "text": "un veșnic gardian",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.887215Z"
+  },
+  "monster.eternal_guardian.voice_1": {
+    "src_hash": "b2298625f79199beaa1860c3ba3746e5",
+    "text": "Zzrrkrrch!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.887457Z"
+  },
+  "monster.eternal_guardian.voice_2": {
+    "src_hash": "f101de72b162824355dbd39b2fc6b155",
+    "text": "<trosnet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.887639Z"
+  },
+  "monster.stone_devourer.desc": {
+    "src_hash": "67b20c1e3cfa27aa81174a6cf01ade37",
+    "text": "un devorator de pietre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.888089Z"
+  },
+  "monster.stone_devourer.voice_1": {
+    "src_hash": "ed6860fb140274392e60cd99480ab0cd",
+    "text": "Bubuit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:52:33.888276Z"
+  },
+  "monster.worker_golem.name": {
+    "src_hash": "e520ab6c2f92be0cdfb7afae310864e2",
+    "text": "Golem muncitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.989276Z"
+  },
+  "monster.worker_golem.desc": {
+    "src_hash": "42bb3cae5febb4ca65151a546b483a18",
+    "text": "un golem muncitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.989547Z"
+  },
+  "monster.worker_golem.voice_1": {
+    "src_hash": "78ad435826d0dc80d4b62e23f58622a9",
+    "text": "ALARMA INTRUS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.989816Z"
+  },
+  "monster.worker_golem.voice_2": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "klonk klonk klonk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.990451Z"
+  },
+  "monster.worker_golem.voice_3": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Rrrtttarrrttarrrtta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.990809Z"
+  },
+  "monster.worker_golem.voice_4": {
+    "src_hash": "0da72fa7c04d6470e238bfc95d61fb2c",
+    "text": "Astept comenzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.991063Z"
+  },
+  "monster.worker_golem.voice_5": {
+    "src_hash": "5a61c7bcdd5a6361509e65cf8e9229bc",
+    "text": "Obiectiv secret complet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.991343Z"
+  },
+  "monster.war_golem.name": {
+    "src_hash": "bdfb814b52d7db5ac1573006373326f4",
+    "text": "Golem de război",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.991570Z"
+  },
+  "monster.war_golem.desc": {
+    "src_hash": "4e7b598a9f0b3a9f6a8f527633c791ca",
+    "text": "un golem de război",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.992471Z"
+  },
+  "monster.war_golem.voice_1": {
+    "src_hash": "7331ae8f00a9bc86cc0df66880c4ab8c",
+    "text": "Azerus barada nikto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.992984Z"
+  },
+  "monster.war_golem.voice_2": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.993460Z"
+  },
+  "monster.war_golem.voice_3": {
+    "src_hash": "033283400e090cb122e21051ec796f3b",
+    "text": "Inamic implicat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.993770Z"
+  },
+  "monster.war_golem.voice_4": {
+    "src_hash": "64b7ee91982e3c4b16a2179e1c2a1223",
+    "text": "Nivelul de amenințare procesat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.994307Z"
+  },
+  "monster.war_golem.voice_5": {
+    "src_hash": "92b3a3f3023375396ba4fb7f4c076ddb",
+    "text": "Încărcare sisteme de arme!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.994834Z"
+  },
+  "monster.war_golem.voice_6": {
+    "src_hash": "26ac963c92fd5dab487d1d9d13f5dde3",
+    "text": "Reparație auto în curs.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.995859Z"
+  },
+  "monster.war_golem.voice_7": {
+    "src_hash": "2a055f992406f76b31328802ed691817",
+    "text": "Bătălia este alăturată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.996165Z"
+  },
+  "monster.war_golem.voice_8": {
+    "src_hash": "872ba75d1430bc85c84c9b20806ae42d",
+    "text": "Terminare initializata!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.996435Z"
+  },
+  "monster.war_golem.voice_9": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Rrrtttarrrttarrrtta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.996740Z"
+  },
+  "monster.war_golem.voice_10": {
+    "src_hash": "05f2426d5da6511afee2c155ceadaab2",
+    "text": "Eliminat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.996940Z"
+  },
+  "monster.glooth_golem.name": {
+    "src_hash": "688c15f6d7aafcc919429eb8d3f9672c",
+    "text": "Glooth Golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:03.997143Z"
+  },
+  "monster.glooth_golem.desc": {
+    "src_hash": "ee17396f047a9db787266ed06ca557df",
+    "text": "un golem glooth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.525859Z"
+  },
+  "monster.glooth_golem.voice_1": {
+    "src_hash": "9f3f9ac546f3c7b11c19a4917d2250b1",
+    "text": "*slosh*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.526190Z"
+  },
+  "monster.metal_gargoyle.desc": {
+    "src_hash": "cd5d1bf081104464a7223eb53ceda7fb",
+    "text": "o garguilă de metal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.527116Z"
+  },
+  "monster.metal_gargoyle.voice_1": {
+    "src_hash": "09619cf7736627348dbeaff638071c68",
+    "text": "clonc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.527297Z"
+  },
+  "monster.metal_gargoyle.voice_2": {
+    "src_hash": "54d16d18dfbb1d72ea5f66ece332446d",
+    "text": "*stop*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.527473Z"
+  },
+  "monster.orewalker.desc": {
+    "src_hash": "4714b41020fd99f98593879e436b7c92",
+    "text": "un umblator de minereu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.527903Z"
+  },
+  "monster.orewalker.voice_1": {
+    "src_hash": "c5adbd4a1dbde47fc99e8ec27c1d7a92",
+    "text": "CLONK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.528140Z"
+  },
+  "monster.diamond_servant.name": {
+    "src_hash": "4f9252b599feed0797fed5c8568b5c0c",
+    "text": "Servitor de diamant",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.528366Z"
+  },
+  "monster.diamond_servant.desc": {
+    "src_hash": "314c42b30ac4b48e187cc141e856d21f",
+    "text": "un servitor de diamante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.528826Z"
+  },
+  "monster.diamond_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Eroare. ÎNCĂRCARE 'PROGRAM',8,1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.529153Z"
+  },
+  "monster.diamond_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Rămâne. Ascultător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.529482Z"
+  },
+  "monster.shrieking_cry_stal.name": {
+    "src_hash": "0b91f0133e333e0de1ea41375c112e6f",
+    "text": "Strigăt-Stal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.529766Z"
+  },
+  "monster.shrieking_cry_stal.desc": {
+    "src_hash": "aa8a5f924e4c6cb53090b97cb8378576",
+    "text": "un strigăt de cristal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.530252Z"
+  },
+  "monster.shrieking_cry_stal.voice_2": {
+    "src_hash": "18947e38966d6f87716f8a9fe2dc7fcf",
+    "text": "SCRIT...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.531158Z"
+  },
+  "monster.enraged_crystal_golem.name": {
+    "src_hash": "2479311df3274473fae0540f6849c0d8",
+    "text": "Golem de cristal furios",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.532057Z"
+  },
+  "monster.enraged_crystal_golem.desc": {
+    "src_hash": "46a50ca64efb72196caf39c8ee1089ba",
+    "text": "un golem de cristal furios",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.532963Z"
+  },
+  "monster.biting_book.name": {
+    "src_hash": "0fcbf99ccc8b1d57f99de3778778a882",
+    "text": "Cartea Muscatoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.533749Z"
+  },
+  "monster.biting_book.desc": {
+    "src_hash": "d8b06e14278cb9901e9a24f26ae96249",
+    "text": "o carte muşcătoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:32.533999Z"
+  },
+  "monster.rustheap_golem.desc": {
+    "src_hash": "cf57c90287faa2b6fc60f1c2ac9c32e7",
+    "text": "un golem rugină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.958480Z"
+  },
+  "monster.rustheap_golem.voice_1": {
+    "src_hash": "d42a2522497119036fc0609fb2d52775",
+    "text": "*zăngănit*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.958703Z"
+  },
+  "monster.rustheap_golem.voice_2": {
+    "src_hash": "56bc09c1fedd0303a72b7d43979414db",
+    "text": "*krrk*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.958941Z"
+  },
+  "monster.rustheap_golem.voice_3": {
+    "src_hash": "250888bea4241d8acd389f2dd26597ab",
+    "text": "*frzzp*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.959180Z"
+  },
+  "monster.damaged_worker_golem.name": {
+    "src_hash": "5e23529f6ecf8f8d18b8b7f5ced4afa6",
+    "text": "Golem muncitor rănit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.959469Z"
+  },
+  "monster.damaged_worker_golem.desc": {
+    "src_hash": "80495f2e32ef3b5fff46e9c552bd4c8f",
+    "text": "un golem muncitor deteriorat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.960413Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.960945Z"
+  },
+  "monster.damaged_worker_golem.voice_2": {
+    "src_hash": "fcaddb15aea25f7a29490882384ad896",
+    "text": "Eșec! Eșec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.961244Z"
+  },
+  "monster.damaged_worker_golem.voice_3": {
+    "src_hash": "e99a687f0563d2bcabc65d6460a20cce",
+    "text": "Bună dimineața cetățean. Cum te pot servi?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.961814Z"
+  },
+  "monster.damaged_worker_golem.voice_4": {
+    "src_hash": "061ba258dc9781d1cabb115b93176768",
+    "text": "Ținta identificată: Șobolan! Rezilierea a început!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.962484Z"
+  },
+  "monster.damaged_worker_golem.voice_5": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Rrrtttarrrttarrrtta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.962781Z"
+  },
+  "monster.damaged_worker_golem.voice_6": {
+    "src_hash": "f91d867058d679822ad45966b3c625bd",
+    "text": "Pericolul va... chrrr! Pericol!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.963708Z"
+  },
+  "monster.damaged_worker_golem.voice_7": {
+    "src_hash": "ffc43f896244d5d80e275df78e7e23f4",
+    "text": "Autodiagnostica nu a reușit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.964197Z"
+  },
+  "monster.damaged_worker_golem.voice_8": {
+    "src_hash": "44a48567e44bfdba20220ef20ff69aa0",
+    "text": "Aw... chhhrrr ordine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.964460Z"
+  },
+  "monster.iron_servant.name": {
+    "src_hash": "36eaf8d163677172923ac04777ee6d6f",
+    "text": "Servitor de Fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.964673Z"
+  },
+  "monster.iron_servant.desc": {
+    "src_hash": "2ea3ede351b9c83618d4bdd338795607",
+    "text": "un servitor de fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.965081Z"
+  },
+  "monster.iron_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Eroare. ÎNCĂRCARE 'PROGRAM',8,1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.965459Z"
+  },
+  "monster.iron_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Rămâne. Ascultător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.965726Z"
+  },
+  "monster.golden_servant_replica.name": {
+    "src_hash": "957c4b199ad13617f92ebf557bf8fa10",
+    "text": "Replica Servitorului de Aur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.966622Z"
+  },
+  "monster.golden_servant_replica.desc": {
+    "src_hash": "d9541eddc1334370fd725415e38a9940",
+    "text": "o replică de aur a servitorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:53:51.967111Z"
+  },
+  "monster.iron_servant_replica.name": {
+    "src_hash": "abb663d1cff8e42f3ed0d01572c1893f",
+    "text": "Replica Servitorului de Fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.211418Z"
+  },
+  "monster.iron_servant_replica.desc": {
+    "src_hash": "f6923a48c55589c34c39e441e5edb8b5",
+    "text": "o replică a servitorului de fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.211957Z"
+  },
+  "monster.walker.desc": {
+    "src_hash": "fee7bc41b43bd12113bfab4408543287",
+    "text": "un plimbător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.212170Z"
+  },
+  "monster.walker.voice_2": {
+    "src_hash": "9f3f9ac546f3c7b11c19a4917d2250b1",
+    "text": "*slosh*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.213043Z"
+  },
+  "monster.sandstone_scorpion.desc": {
+    "src_hash": "6ddc4a52c89aa202ebcc1a157bf9954c",
+    "text": "un scorpion de gresie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.213923Z"
+  },
+  "monster.sandstone_scorpion.voice_1": {
+    "src_hash": "e9f3f1aea50dee4602b0c36e8e9c3caa",
+    "text": "*zoraie*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.214136Z"
+  },
+  "monster.sandstone_scorpion.voice_3": {
+    "src_hash": "960c88011610834a481d8ebe41989ea8",
+    "text": "*tak tak tak*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.215057Z"
+  },
+  "monster.magma_crawler.name": {
+    "src_hash": "2fcf8fab6d3a29374688ea5301eda00f",
+    "text": "Magma Crawler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.215310Z"
+  },
+  "monster.magma_crawler.desc": {
+    "src_hash": "9e6489033bca4aaacc41a0ea6a5e798c",
+    "text": "un crawler de magmă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.216302Z"
+  },
+  "monster.animated_snowman.desc": {
+    "src_hash": "98f6ff90b2ad9cfc4c835363fdcc09b9",
+    "text": "un om de zăpadă animat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.216775Z"
+  },
+  "monster.damaged_crystal_golem.name": {
+    "src_hash": "d64b1f8c93d5299e14f4d6fb227603d7",
+    "text": "Golem de cristal deteriorat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.217664Z"
+  },
+  "monster.damaged_crystal_golem.desc": {
+    "src_hash": "5de8a90e0b9bfa321a15ee62a44a2db5",
+    "text": "un golem de cristal deteriorat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T12:54:09.218583Z"
   }
 }

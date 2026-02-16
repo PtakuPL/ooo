@@ -1,128 +1,74 @@
 {
-  "timestamp": "2026-02-16T12:49:44.735946Z",
-  "language": "ru",
-  "json_file": "monsters.json",
-  "translated": 4237,
+  "timestamp": "2026-02-16T16:33:34.609879Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 11,
   "entries": [
     {
-      "key": "monster.apprentice_sheng.voice_7",
-      "en": "Kaplar!",
-      "translated": "Каплар!",
-      "source": "google_translate"
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "en": "Chchch",
+      "translated": "Chchch",
+      "source": "tm"
     },
     {
-      "key": "monster.apprentice_sheng.voice_8",
-      "en": "You already know too much.",
-      "translated": "Ты уже слишком много знаешь.",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "monster.bazir.voice_5",
-      "en": "COME HERE! FREE ITEMS FOR EVERYONE!",
-      "translated": "ИДИТЕ СЮДА! БЕСПЛАТНЫЕ ТОВАРЫ ДЛЯ ВСЕХ!",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "monster.bazir.voice_6",
-      "en": "BOW TO THE POWER OF THE RUTHLESS SEVEN!",
-      "translated": "ПОКЛОНИТЕСЬ СИЛЕ БЕЗЖЕСТКОЙ СЕМЕРКИ!",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "monster.bazir.voice_7",
-      "en": "Slay your friends and I will spare you!",
-      "translated": "Убей своих друзей, и я пощажу тебя!",
-      "source": "google_translate"
+      "key": "npc.bo_ques.multi_6",
+      "en": "I'm preparing the food for all djinns in Ashta'daramai. ...",
+      "translated": "Estoy preparando la comida para todos los djinns de Ashta'daramai. ...",
+      "source": "tm"
     },
     {
-      "key": "monster.bazir.voice_8",
-      "en": "DON'T BE AFRAID! I AM COMING IN PEACE!",
-      "translated": "НЕ БОЙТЕСЬ! Я ПРИДУ С МИРОМ!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_106",
+      "en": "npc.bozo.mission_26_t1 \\z\n\tnpc.bozo.mission_26_t2 \\z\n\tnpc.bozo.mission_26_t3_1 \\z\n\tnpc.bozo.mission_26_t3_2",
+      "translated": "npc.bozo.mission_26_t1\\z\n\tnpc.bozo.mission_26_t2\\z\n\tnpc.bozo.mission_26_t3_1\\z\n\tnpc.bozo.mission_26_t3_2",
+      "source": "tm"
     },
     {
-      "key": "monster.cyclops.voice_6",
-      "en": "Il lorstok human!",
-      "translated": "Иль лорсток человек!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_108",
+      "en": "npc.bozo.mission_28_t1_1 \\z\n\tnpc.bozo.mission_28_t1_2 \\z\n\tnpc.bozo.mission_28_t1_3 \\z\n\tnpc.bozo.mission_28_t1_4",
+      "translated": "npc.bozo.mission_28_t1_1\\z\n\tnpc.bozo.mission_28_t1_2\\z\n\tnpc.bozo.mission_28_t1_3\\z\n\tnpc.bozo.mission_28_t1_4",
+      "source": "tm"
     },
     {
-      "key": "monster.cyclops.voice_8",
-      "en": "Human, uh whil dyh!",
-      "translated": "Человек, ух, пока!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_113",
+      "en": "npc.bozo.mission_33_t1 \\z\n\tnpc.bozo.mission_33_t2 \\z\n\tnpc.bozo.mission_33_t3_1 \\z\n\tnpc.bozo.mission_33_t3_2 \\z\n\tnpc.bozo.mission_33_t3_3",
+      "translated": "npc.bozo.mission_33_t1\\z\n\tnpc.bozo.mission_33_t2\\z\n\tnpc.bozo.mission_33_t3_1\\z\n\tnpc.bozo.mission_33_t3_2\\z\n\tnpc.bozo.mission_33_t3_3",
+      "source": "tm"
     },
     {
-      "key": "monster.cyclops.voice_9",
-      "en": "Youh ah trak!",
-      "translated": "Эй, ах, трак!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_114",
+      "en": "npc.bozo.mission_34_t1 \\z\n\tnpc.bozo.mission_34_t2 \\z\n\tnpc.bozo.mission_34_t3_1 \\z\n\tnpc.bozo.mission_34_t3_2 \\z\n\tnpc.bozo.mission_34_t3_3",
+      "translated": "npc.bozo.mission_34_t1\\z\n\tnpc.bozo.mission_34_t2\\z\n\tnpc.bozo.mission_34_t3_1\\z\n\tnpc.bozo.mission_34_t3_2\\z\n\tnpc.bozo.mission_34_t3_3",
+      "source": "tm"
     },
     {
-      "key": "monster.cyclops.voice_10",
-      "en": "Let da mashing begin!",
-      "translated": "Да начнется затирание!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "monster.cyclops_drone.voice_5",
-      "en": "Fee! Fie! Foe! Fum!",
-      "translated": "Платеж! Фи! Враг! Фум!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.cyclops_drone.voice_6",
-      "en": "Luttl pest!",
-      "translated": "Чертов вредитель!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.cyclops_drone.voice_7",
-      "en": "Me makking you pulp!",
-      "translated": "Я делаю тебе мякоть!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.cyclops_drone.voice_8",
-      "en": "Humy tasy! Hum hum!",
-      "translated": "Хьюми тасы! Хм-хм!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.cyclops_smith.voice_5",
-      "en": "Whack da humy!",
-      "translated": "Ух ты, хуми!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.cyclops_smith.voice_6",
-      "en": "Ai humy phary ty kaynon",
-      "translated": "Ай, хуми фари, ты кейнон",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.behemoth.voice_4",
-      "en": "You're so little!",
-      "translated": "Ты такой маленький!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.behemoth.voice_5",
-      "en": "Human flesh -  delicious!",
-      "translated": "Человеческое мясо - вкусно!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.behemoth.voice_6",
-      "en": "Crush the intruders!",
-      "translated": "Раздавите злоумышленников!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.dragon_lord.voice_4",
-      "en": "YOU WILL BURN!",
-      "translated": "ТЫ СГОРЕЕШЬ!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_54",
+      "en": "Isn't he the author of the book 'Fun with Demons'?",
+      "translated": "¿No es el autor del libro 'Fun with Demons'?",
+      "source": "tm"
     }
   ]
 }

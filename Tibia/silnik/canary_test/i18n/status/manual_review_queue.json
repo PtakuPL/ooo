@@ -12,14 +12,82 @@
       "reason": "validation-test",
       "applied": true,
       "applied_at": 1770932745
+    },
+    {
+      "timestamp": "2026-02-16T07:08:05.950940Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "npc.json",
+      "key": "npc.jack_fate.stdmod_1",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Passages to Edron, Thais, Venore, Darashia, Ankrahmun, Yalahar and Port Hope.",
+      "attempted_translation": "Прелази на Edron, Thais, Venore, Darashia, Ankrahmun, Yalahar и Port Hope.",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Прелази на Edron, Thais, Venore, Darashia, Ankrahm' (EN: 'Passages to Edron, Thais, Venore, Darashia, Ankrah')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.828,
+          "message": "Język cyrylicowy ma 83% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T07:08:14.132982Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "npc.json",
+      "key": "npc.jack_fate.voice_1",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Passages to Edron, Thais, Venore, Darashia, Ankrahmun, Yalahar and Port Hope.",
+      "attempted_translation": "Прелази на Edron, Thais, Venore, Darashia, Ankrahmun, Yalahar и Port Hope.",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Прелази на Edron, Thais, Venore, Darashia, Ankrahm' (EN: 'Passages to Edron, Thais, Venore, Darashia, Ankrah')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.828,
+          "message": "Język cyrylicowy ma 83% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
-    "total": 0,
+    "total": 2,
     "reviewed": 0,
     "approved": 1,
     "rejected": 0,
     "applied": 1
   },
-  "updated_at": 1771195633
+  "updated_at": "2026-02-16T07:08:14.133186Z"
 }

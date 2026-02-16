@@ -61625,11 +61625,11 @@
   },
   "npc.amber.stdmod_31": {
     "src_hash": "a4388d1e02d2c69bd8b800068ee6a117",
-    "text": "Las herramientas más importantes que necesita son {rope}, {shovel} y tal vez {torch}.",
+    "text": "Las herramientas más importantes que necesita son un {rope}, un {shovel} y tal vez un {torch}.",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:54:16.515480Z"
+    "updated_at": "2026-02-16T09:09:36.092509Z"
   },
   "npc.amber.stdmod_32": {
     "src_hash": "9b7ee4544ff4002379572b04694abd34",
@@ -177590,5 +177590,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-15T22:45:49.684062Z"
+  },
+  "npc.angus.say_6": {
+    "src_hash": "f77d26e0e22aafd1aa4b1ec5862c8ebb",
+    "text": "Las misiones disponibles para tu rango son {butterfly hunt}, {plant collection} y {ice delivery}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T09:09:47.438353Z"
+  },
+  "npc.angus.say_7": {
+    "src_hash": "dc148f4328daa6643a2ddefe85239f95",
+    "text": "Las misiones disponibles para tu rango son {lizard urn}, {bonelord secrets} y {orc powder}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T09:09:47.440277Z"
+  },
+  "npc.angus.say_8": {
+    "src_hash": "b0c5f756df69fb0d72177edd219067f7",
+    "text": "Las misiones disponibles para tu rango son {elven poetry}, {memory stone} y {rune writings}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T09:09:47.443241Z"
   }
 }

@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 34.5,
+  "coverage_pct": 35.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T22:46:44.837853Z",
-  "issues_total": 118,
+  "checked_at": "2026-02-16T09:11:31.975741Z",
+  "issues_total": 133,
   "issues_by_type": {
-    "consistency_in_language": 57,
-    "pl_reference_missing_translation": 29,
+    "consistency_in_language": 71,
+    "pl_reference_missing_translation": 30,
     "length_ratio_crosscheck": 32
   },
   "consistency_issues": [
@@ -28,6 +28,24 @@
         "monsters:monster.nomad_blue.name",
         "monsters:monster.nomad_female.name",
         "raids:raid.nomad.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "variants": [
+        "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
+        "Зарезервированная SPRITE",
+        "зарезервированная SPRITE"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "items:item.1099.name",
+        "items:item.12032.name",
+        "items:item.12064.name",
+        "items:item.12074.name",
+        "items:item.12574.name"
       ]
     },
     {
@@ -361,6 +379,34 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "snowman",
+      "variants": [
+        "sНетwman",
+        "снеговик"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10208.name",
+        "items:item.30336.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "lucky clover amulet",
+      "variants": [
+        "lucky clover амулет",
+        "амулет из клевера на удачу"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10476.name",
+        "items:item.37059.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "pitfall",
       "variants": [
         "ловушка",
@@ -378,18 +424,185 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
+      "en": "bag of oriental spices",
       "variants": [
-        "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
-        "зарезервированная SPRITE"
+        "мешок oriental spices",
+        "пакетик восточных специй"
       ],
       "variants_count": 2,
       "examples": [
-        "items:item.1099.name",
-        "items:item.12032.name",
-        "items:item.12064.name",
-        "items:item.12074.name",
-        "items:item.12574.name"
+        "items:item.10817.name",
+        "items:item.10818.name",
+        "items:item.23682.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "skull pillar",
+      "variants": [
+        "череп pillar",
+        "череп столба"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10841.name",
+        "items:item.7058.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "marble floor",
+      "variants": [
+        "marble пол",
+        "мраморный пол"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10986.name",
+        "items:item.10989.name",
+        "items:item.10991.name",
+        "items:item.20888.name",
+        "items:item.23720.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "gate of expertise",
+      "variants": [
+        "ворота expertise",
+        "ворота экспертизы"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.11139.name",
+        "items:item.11140.name",
+        "items:item.11146.name",
+        "items:item.11147.name",
+        "items:item.11237.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "wall mirror",
+      "variants": [
+        "настенное зеркало",
+        "стена mirror"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.11250.name",
+        "items:item.2635.name",
+        "items:item.2638.name",
+        "items:item.28906.name",
+        "items:item.8667.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "timber wall",
+      "variants": [
+        "timber стена",
+        "деревянная стена"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.11335.name",
+        "items:item.11346.name",
+        "items:item.11363.name",
+        "items:item.11704.name",
+        "items:item.11706.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "helmet of the deep",
+      "variants": [
+        "шлем the deep",
+        "шлем глубин"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.11585.name",
+        "items:item.5460.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "small fir tree",
+      "variants": [
+        "маленькая ель",
+        "маленький fir tree"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12188.name",
+        "items:item.3682.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "tomb wall",
+      "variants": [
+        "tomb стена",
+        "стена гробницы"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12199.name",
+        "items:item.19144.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "greasy stone",
+      "variants": [
+        "greasy каменный",
+        "жирный камень"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12421.name",
+        "items:item.12727.name",
+        "items:item.22684.name",
+        "items:item.22690.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "scribbled notes",
+      "variants": [
+        "scribbled Нетtes",
+        "нацарапанные заметки"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12692.name",
+        "items:item.28515.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "magic gold converter",
+      "variants": [
+        "magic Золото converter",
+        "волшебный преобразователь золота"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12699.name",
+        "items:item.28525.name",
+        "items:item.28526.name"
       ]
     },
     {
@@ -926,6 +1139,15 @@
       "lang": "{0} VIP."
     },
     {
+      "key": "item.1156.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "trapdoor",
+      "pl": "klapa",
+      "lang": "trapdoor"
+    },
+    {
       "key": "npc.menesto.say_2",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -1451,8 +1673,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 29,
-    "applied": 0,
+    "attempted": 30,
+    "applied": 1,
     "skipped": 29,
     "errors": 0
   }

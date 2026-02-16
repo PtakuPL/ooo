@@ -1,15 +1,15 @@
 {
   "lang": "ro",
-  "coverage_pct": 17.4,
+  "coverage_pct": 29.5,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-15T22:46:37.205871Z",
-  "issues_total": 406,
+  "checked_at": "2026-02-16T09:11:24.471806Z",
+  "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 6
+    "length_ratio_crosscheck": 9
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -1778,13 +1778,103 @@
       "lang": "Evilina"
     },
     {
-      "key": "item.129.name",
+      "key": "item.17353.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "contract",
-      "pl": "umowa",
-      "lang": "contract"
+      "en": "cabinet",
+      "pl": "gabinet",
+      "lang": "cabinet"
+    },
+    {
+      "key": "item.17354.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cabinet",
+      "pl": "gabinet",
+      "lang": "cabinet"
+    },
+    {
+      "key": "item.18015.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cabinet",
+      "pl": "gabinet",
+      "lang": "cabinet"
+    },
+    {
+      "key": "item.18016.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cabinet",
+      "pl": "gabinet",
+      "lang": "cabinet"
+    },
+    {
+      "key": "item.19142.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "monument",
+      "pl": "pomnik",
+      "lang": "monument"
+    },
+    {
+      "key": "item.19154.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "mexcalibur",
+      "pl": "mekscalibur",
+      "lang": "mexcalibur"
+    },
+    {
+      "key": "item.19200.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lift",
+      "pl": "winda",
+      "lang": "lift"
+    },
+    {
+      "key": "item.19207.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lodestone",
+      "pl": "magnetyt",
+      "lang": "lodestone"
+    },
+    {
+      "key": "item.2028.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "monument",
+      "pl": "pomnik",
+      "lang": "monument"
+    },
+    {
+      "key": "item.20309.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "leaf golem santa",
+      "pl": "liść golema, święty mikołaj",
+      "lang": "leaf golem santa"
+    },
+    {
+      "key": "item.21177.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cowtana",
+      "pl": "krowa",
+      "lang": "cowtana"
     },
     {
       "key": "item.27511.desc",
@@ -3522,96 +3612,6 @@
       "en": "Hugah!",
       "pl": "Uff!",
       "lang": "Hugah!"
-    },
-    {
-      "key": "monster.rat.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meep!",
-      "pl": "Mip!",
-      "lang": "Meep!"
-    },
-    {
-      "key": "monster.sheep.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Maeh",
-      "pl": "Mae",
-      "lang": "Maeh"
-    },
-    {
-      "key": "monster.vampire_pig.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
-    },
-    {
-      "key": "monster.vampire_pig.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
-    },
-    {
-      "key": "monster.boar.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt",
-      "pl": "Chrząknięcie",
-      "lang": "Grunt"
-    },
-    {
-      "key": "monster.husky.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.dromedary.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snort",
-      "pl": "SNiert",
-      "lang": "Snort"
-    },
-    {
-      "key": "monster.dromedary.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "Chrząknięcie!",
-      "lang": "Grunt!"
-    },
-    {
-      "key": "monster.vulcongra.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fuchah!",
-      "pl": "Fuch!",
-      "lang": "Fuchah!"
-    },
-    {
-      "key": "monster.donkey.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "Chrząknięcie!",
-      "lang": "Grunt!"
     }
   ],
   "length_ratio_issues": [
@@ -3668,6 +3668,33 @@
       "en_len": 15,
       "lang_ratio": 1.2,
       "pl_ratio": 3.267
+    },
+    {
+      "key": "item.17819.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 2.714,
+      "pl_ratio": 0.714
+    },
+    {
+      "key": "npc.eroth.greet_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 23,
+      "lang_ratio": 0.739,
+      "pl_ratio": 2.826
+    },
+    {
+      "key": "npc.eroth.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 23,
+      "lang_ratio": 0.739,
+      "pl_ratio": 2.826
     }
   ],
   "auto_fix": {

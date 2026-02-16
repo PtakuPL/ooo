@@ -1,17 +1,18 @@
 {
-  "timestamp": "2026-02-15T23:34:54.414782Z",
-  "cycle_counter": 1425,
-  "last_target_key": "it:items.json",
-  "last_pending_total": 16811,
+  "timestamp": "2026-02-16T08:12:53.704919Z",
+  "cycle_counter": 1430,
+  "last_target_key": "it:npc.json",
+  "last_pending_total": 13262,
   "last_tier": 1,
-  "last_cat_priority": 0,
+  "last_cat_priority": 1,
   "candidates_count": 204,
-  "active_candidates_count": 183,
+  "active_candidates_count": 182,
   "skipped_backoff": 19,
-  "skipped_guard_fail": 2,
+  "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
     "es:npc.json": 1433,
-    "es:books.json": 1431
+    "es:books.json": 1431,
+    "es:client.json": 1440
   },
   "tier_config": {
     "tier1": [
@@ -42,7 +43,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 2,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -325,28 +326,28 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
+      "ro": {
+        "allowed_domain": "quests.json",
+        "domain_coverages": {
+          "items.json": 46.07,
+          "npc.json": 34.91,
+          "quests.json": 0.0
+        }
+      },
+      "it": {
+        "allowed_domain": "items.json",
+        "domain_coverages": {
+          "items.json": 18.72,
+          "npc.json": 1.98,
+          "quests.json": 32.95
+        }
+      },
       "ru": {
         "allowed_domain": "npc.json",
         "domain_coverages": {
           "items.json": 62.7,
           "npc.json": 3.08,
           "quests.json": 99.34
-        }
-      },
-      "it": {
-        "allowed_domain": "items.json",
-        "domain_coverages": {
-          "items.json": 1.37,
-          "npc.json": 1.98,
-          "quests.json": 32.95
-        }
-      },
-      "ro": {
-        "allowed_domain": "npc.json",
-        "domain_coverages": {
-          "items.json": 46.07,
-          "npc.json": 0.21,
-          "quests.json": 0.0
         }
       }
     },

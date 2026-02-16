@@ -95198,5 +95198,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:01:28.295861Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Grasz na kościanych skrzypcach.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.036010Z"
+  },
+  "scripts.actions_bookOnTable.msg_1": {
+    "src_hash": "4ab71ab4da67fa5c8ce728839c451726",
+    "text": "Ta książka opowiada o zaklęciu, które przyciąga jego użytkownika do najbardziej energetycznej istoty obok niego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.037518Z"
+  },
+  "scripts.actions_bookOnTable.msg_2": {
+    "src_hash": "da1ab3b85ba283abdcc703f5b418c6f9",
+    "text": "Składa się z czterech części wydrapanych z tej księgi. Trzeba je odczytywać wraz z inkantacjami.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.038695Z"
+  },
+  "scripts.actions_bookOnTable.msg_4": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Wszystkie pieśni zostały odśpiewane we właściwej kolejności, uznano cię za godnego. Zostajesz przeniesiony...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.040142Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_2": {
+    "src_hash": "cc773a38983c2fac2b945284898315f4",
+    "text": "Magiczne iskry wirują wokół butów i nagle jesteś gdzie indziej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.042234Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_3": {
+    "src_hash": "de4509a38663b7aeecbd91bb59d54147",
+    "text": "Jeśli chcesz założyć te buty, musisz znajdować się w strefie ochronnej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.043295Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_4": {
+    "src_hash": "cb29b428a74e937af084be549a76dfa2",
+    "text": "Po ostatnim użyciu butów jesteś wyczerpany, musisz odczekać godzinę, by użyć ich ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.044390Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.049335Z"
+  },
+  "scripts.actions_candles.msg_1": {
+    "src_hash": "e1406a759fdb378e87e4f58045e47bf0",
+    "text": "Czytając pergamin, rozpoznajesz trzy świece z ludzkiego łoju i chowasz je do kieszeni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.050480Z"
+  },
+  "scripts.actions_chalk.msg_1": {
+    "src_hash": "4833eccd338f830c492a702e61858110",
+    "text": "Wsypujesz trochę drobnej kredy do wiadra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.052215Z"
+  },
+  "scripts.actions_climbing_vine.msg_1": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Nie możesz wejść do strefy ochronnej po zaatakowaniu innego gracza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.056973Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_1": {
+    "src_hash": "2f31106b5eb658000748f2c30b5dbfef",
+    "text": "Użyj tego na ziemi, aby zastawić pułapkę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.057953Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_2": {
+    "src_hash": "5a03b5cd75188820f73bb98f72d4ad8d",
+    "text": "Możesz tego użyć w pokoju Feroxy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.058962Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_3": {
+    "src_hash": "aac52a110badf04741cf3afd1d3bf999",
+    "text": "Posrebrzana pułapka została ustawiona i nie można jej usunąć z obecnej pozycji.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.060133Z"
+  },
+  "scripts.actions_color_levers.msg_1": {
+    "src_hash": "ab2d9b844dd176ba8e117e14246f7334",
+    "text": "Wybierasz kolor rozkładu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.061074Z"
+  },
+  "scripts.actions_coral.msg_1": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "Nagle strażnik skacze na ciebie od tyłu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.063977Z"
+  },
+  "scripts.actions_corpse.msg_1": {
+    "src_hash": "c5a164cb607ac32cea2ea759c496812e",
+    "text": "Quandon został zamordowany! Powinieneś zgłosić to Sholleyowi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.064976Z"
+  },
+  "scripts.actions_corpse.msg_2": {
+    "src_hash": "77b8010b0414880bdbf6e4e8ee53ce5e",
+    "text": "To jest puste!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.065921Z"
+  },
+  "scripts.actions_coruja.msg_1": {
+    "src_hash": "df87386b73db3b71047038b982c44d00",
+    "text": "Odkrywasz sowę odpoczywającą na drzewie. To wyjątkowe, bo nigdy wcześniej nie widziałeś sowy w całym Kilmaresh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.067501Z"
+  },
+  "scripts.actions_counter_agent.msg_1": {
+    "src_hash": "c8c549f68a94f2d0de0eaeb94e664d99",
+    "text": "Burza piaskowa zniszczyła niemal wszystkie filary. Działanie odczynnika zadziałało inaczej niż oczekiwano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.068629Z"
+  },
+  "scripts.actions_counter_agent.msg_2": {
+    "src_hash": "380f8c945d50e19564aae60338ef5e9d",
+    "text": "Burza piaskowa nie tylko zniszczyła oazę, ale też odsłoniła kilka płyt i dźwignię.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.069749Z"
+  },
+  "scripts.actions_cracklers_lever.msg_1": {
+    "src_hash": "0f83410583de59a313f22441acd5febc",
+    "text": "Do tej misji potrzebujesz co najmniej 4 graczy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.070837Z"
+  },
+  "scripts.actions_crate.msg_1": {
+    "src_hash": "467aa744353e838cc4e516dc77dd702f",
+    "text": "Świetnie! Wziąłeś z tej skrzyni wspaniałą lupę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.072106Z"
+  },
+  "scripts.actions_crate.msg_2": {
+    "src_hash": "51cdbfcf0982098343b3f288729deb7a",
+    "text": "Wziąłeś już lupę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.073030Z"
+  },
+  "scripts.actions_crate.msg_3": {
+    "src_hash": "88f20ad8c4870defabe09cab6938014d",
+    "text": "Ta skrzynia należy do Angelo. Powinieneś z nim porozmawiać, zanim coś z niej wyjmiesz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.074129Z"
+  },
+  "scripts.actions_crystal.msg_1": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "Nagle strażnik skacze na ciebie od tyłu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.076142Z"
+  },
+  "scripts.actions_crystal.msg_3": {
+    "src_hash": "f621231a669f88989005df0122b9bc35",
+    "text": "Sporym wysiłkiem udaje ci się wybić ze skały w dużej mierze nienaruszony surowy klejnot.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.077727Z"
+  },
+  "scripts.actions_custodian_door.msg_1": {
+    "src_hash": "45b73f05201500fc8fe764433f99d201",
+    "text": "Moc Gaffira nie pozwoli ci przejść przez te drzwi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.079061Z"
+  },
+  "scripts.actions_deeper_banuta_shortcut.msg_1": {
+    "src_hash": "4d7b566523c4163688d941d1e47fb138",
+    "text": "Odkryłeś tajny tunel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.080235Z"
+  },
+  "scripts.actions_deeper_banuta_shortcut.msg_2": {
+    "src_hash": "64e242b84b7218e0be6150d252d702ba",
+    "text": "Już odkryłeś ten sekret.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.081267Z"
+  },
+  "scripts.actions_demon_oak.msg_1": {
+    "src_hash": "bd2e08e742d9871c8528df93eb3a7ade",
+    "text": "Najpierw musisz zabić wszystkie potwory.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.082228Z"
+  },
+  "scripts.actions_demon_oak.msg_2": {
+    "src_hash": "e369118cf13afd694431ce0e9505d2dd",
+    "text": "Powiedz Oldrakowi o swoim wielkim zwycięstwie nad demon oak.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.083233Z"
+  },
+  "scripts.actions_dipthrah_signs_doors.msg_2": {
+    "src_hash": "f74ffed3ec45d27808bf4b9daafbc2c8",
+    "text": "Ten etap masz już ukończony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.085817Z"
+  },
+  "scripts.actions_document.msg_1": {
+    "src_hash": "e3aa86a595bdf4e08545ee7ba7590906",
+    "text": "Drogi kustoszu, to niedawno otwarte muzeum to naprawdę świetne miejsce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.087020Z"
+  },
+  "scripts.actions_document.msg_2": {
+    "src_hash": "15e799af52db094b34330c9e03390635",
+    "text": "Ale zaraz! Co z pustą przestrzenią przed tobą? Co za szkoda!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.088029Z"
+  },
+  "scripts.actions_document.msg_3": {
+    "src_hash": "649518a7af31b7d8b75793e1143eafd4",
+    "text": "Wygląda na to, że ktoś usunął jeden z pięknych obrazów. Ale no dalej! Ty masz pieniądze, a my ich potrzebujemy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.089380Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.091953Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Ogarnia cię uczucie grozy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.093093Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_2": {
+    "src_hash": "5a575bde3954748011659b53b9682d15",
+    "text": "Przyjmujesz na siebie klątwę snu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.094144Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Jeszcze raz mieszasz kredę z kroplą krwi i odrobiną wody, odnawiając symbol na podłodze...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.095520Z"
+  },
+  "scripts.actions_entrances.msg_2": {
+    "src_hash": "10fd367d0a0791a7d1920b1af8d2d755",
+    "text": "Przed wejściem powinieneś oddać cześć Bloodshade'owi strzegącemu tej krainy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.097545Z"
+  },
+  "scripts.actions_entrances.msg_3": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Potrzebujesz co najmniej 250 poziomu, aby wejść.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.098447Z"
+  },
+  "scripts.actions_fertilizer.msg_1": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Zgłoś zadanie Gnomboldowi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.099569Z"
+  },
+  "scripts.actions_final_lever.msg_1": {
+    "src_hash": "2121ec6cdb04e75616068d53a2d940d6",
+    "text": "Potrzebujesz co najmniej 3 graczy, po jednym w każdej kolumnie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.100757Z"
+  },
+  "scripts.actions_flask.msg_1": {
+    "src_hash": "5f122d3da4629bffbde1b1c3d44754e9",
+    "text": "Gotowe! Wróć z raportem do Omrabasa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.107553Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_1": {
+    "src_hash": "88cda7654762a022fbb195ee138048fe",
+    "text": "Kolejność kwiatów w ogrodzie jest nieprawidłowa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.108585Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_3": {
+    "src_hash": "1acce27ff56e61e64182ecc91614cf06",
+    "text": "Portal formuje się, gdy dwie belki dziwnej konstrukcji dzielącej to pomieszczenie przesuwają się ku sobie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.110014Z"
+  },
+  "scripts.actions_fount.msg_1": {
+    "src_hash": "a078052af6499123bf065d74d77c7209",
+    "text": "Fiolka świeżej stawowej wody. Wygląda krystalicznie czysto i lekko się mieni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.111632Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, cóż za oszałamiający zapach!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:07.112967Z"
   }
 }

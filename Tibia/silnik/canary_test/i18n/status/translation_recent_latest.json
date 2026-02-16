@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:02:32.907674Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T23:03:07.467480Z",
+  "language": "pl",
+  "json_file": "scripts.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "scripts.actions_demon_oak.msg_1",
+      "en": "You need to kill all monsters first.",
+      "translated": "Najpierw musisz zabić wszystkie potwory.",
+      "source": "simple"
+    },
+    {
+      "key": "scripts.actions_demon_oak.msg_2",
+      "en": "Tell Oldrak about your great victory against the demon oak.",
+      "translated": "Powiedz Oldrakowi o swoim wielkim zwycięstwie nad demon oak.",
+      "source": "simple"
+    },
+    {
+      "key": "scripts.actions_demon_oak.say_1",
+      "en": "-krrrrak-",
+      "translated": "-krrrrak-",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "scripts.actions_dipthrah_signs_doors.msg_2",
+      "en": "You have already completed this step.",
+      "translated": "Ten etap masz już ukończony.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "scripts.actions_document.msg_1",
+      "en": "Dear curator, this recently opened museum is a really nice place to be.",
+      "translated": "Drogi kustoszu, to niedawno otwarte muzeum to naprawdę świetne miejsce.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "scripts.actions_document.msg_2",
+      "en": "But wait! What about the empty space in front of you? What a pity!",
+      "translated": "Ale zaraz! Co z pustą przestrzenią przed tobą? Co za szkoda!",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "scripts.actions_document.msg_3",
+      "en": "It seems that somebody has removed one of the beautiful pictures. But come on! You have the money and we need it.",
+      "translated": "Wygląda na to, że ktoś usunął jeden z pięknych obrazów. Ale no dalej! Ty masz pieniądze, a my ich potrzebujemy.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "scripts.actions_doors.msg_2",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "scripts.actions_dreamcatcher_curse.msg_1",
+      "en": "You have a feeling of dread.",
+      "translated": "Ogarnia cię uczucie grozy.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "scripts.actions_dreamcatcher_curse.msg_2",
+      "en": "You take the dreamcurse on yourself!",
+      "translated": "Przyjmujesz na siebie klątwę snu!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "scripts.actions_entrance.msg_1",
+      "en": "Once more you mix the chalk with a drop of your blood and a bit of water and renew the symbol on the floor...",
+      "translated": "Jeszcze raz mieszasz kredę z kroplą krwi i odrobiną wody, odnawiając symbol na podłodze...",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "scripts.actions_entrances.msg_2",
+      "en": "You should pay respect to the Bloodshade guarding this realm before entering.",
+      "translated": "Przed wejściem powinieneś oddać cześć Bloodshade'owi strzegącemu tej krainy.",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "scripts.actions_entrances.msg_3",
+      "en": "You need at least level 250 to enter.",
+      "translated": "Potrzebujesz co najmniej 250 poziomu, aby wejść.",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "scripts.actions_fertilizer.msg_1",
+      "en": "Report the task to Gnombold.",
+      "translated": "Zgłoś zadanie Gnomboldowi.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "scripts.actions_final_lever.msg_1",
+      "en": "You need at least 3 players, each in a column.",
+      "translated": "Potrzebujesz co najmniej 3 graczy, po jednym w każdej kolumnie.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "scripts.actions_flask.msg_1",
+      "en": "Done! Report back to Omrabas.",
+      "translated": "Gotowe! Wróć z raportem do Omrabasa.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "scripts.actions_flower_puzzle_lever.msg_1",
+      "en": "The order of the flowers in the garden are wrong.",
+      "translated": "Kolejność kwiatów w ogrodzie jest nieprawidłowa.",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "scripts.actions_flower_puzzle_lever.msg_3",
+      "en": "A portal forms as two beams of a strange construction dividing this room move towards each other.",
+      "translated": "Portal formuje się, gdy dwie belki dziwnej konstrukcji dzielącej to pomieszczenie przesuwają się ku sobie.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "scripts.actions_fount.msg_1",
+      "en": "A phial of fresh pond water. It looks crystal clear and sparkles a little.",
+      "translated": "Fiolka świeżej stawowej wody. Wygląda krystalicznie czysto i lekko się mieni.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "scripts.actions_fragrance.msg_1",
+      "en": "Hmmmm, what an infatuating fragrance!",
+      "translated": "Hmmmm, cóż za oszałamiający zapach!",
+      "source": "simple"
     }
   ]
 }

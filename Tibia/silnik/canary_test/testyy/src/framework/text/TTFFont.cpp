@@ -113,16 +113,6 @@ bool TTFFont::load(const std::string& mainTtf,
     return false;
   }
   m_pixelSize = pixelSize;
-  // Derive metrics (ascent/descent/line height) from FreeType; fall back to pixel size
-  if (m_face && m_face->size && m_face->size->metrics.height > 0) {
-    m_lineHeight = static_cast<int>(m_face->size->metrics.height >> 6);
-    m_ascent = static_cast<int>(m_face->size->metrics.ascender >> 6);
-    m_descent = static_cast<int>(-(m_face->size->metrics.descender >> 6));
-  } else {
-    m_lineHeight = pixelSize;
-    m_ascent = pixelSize;
-    m_descent = 0;
-  }
   g_logger.info(fmt::format("TTFFont: pixel size set to {}", pixelSize));
 
   // Create HarfBuzz face/font from FT_Face
@@ -203,6 +193,12 @@ bool TTFFont::load(const std::string& mainTtf,
   return true;
 }
 
+void TTFFont::clearCache() {
+  m_glyphs.clear();
+  m_atlases.clear();
+  // A fresh atlas will be created on the next cacheGlyph() call via ensureAtlas()
+}
+
 /**
  * @brief Create and append a new texture atlas for glyph rasterization.
  *
@@ -228,9 +224,8 @@ int TTFFont::ensureAtlas() {
     // Create blank RGBA image and corresponding GPU texture
     a.image = std::make_shared<Image>(Size(a.width, a.height), 4 /*bpp*/, nullptr);
     a.texture = std::make_shared<Texture>(a.image, /*buildMipmaps*/false, /*compress*/false);
-    // Pixel-crisp rendering: no bilinear filtering on glyph atlas
-    // This matches Tibia's pixel-art style and prevents blurry glyphs at small sizes
-    a.texture->setSmooth(false);
+    a.texture->setSmooth(true);
+    a.texture->create();
 
     m_atlases.push_back(a);
     return static_cast<int>(m_atlases.size() - 1);
@@ -260,74 +255,35 @@ int TTFFont::ensureAtlas() {
  * @return const AtlasGlyph* Pointer to the cached or newly rasterized AtlasGlyph on success, `nullptr` if no glyph could be rendered.
  */
 const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
-  // Cache key for main face.
-  // IMPORTANT: glyphIndex==0 is the .notdef glyph and can be returned for many different codepoints.
-  // If we cache/look up purely by glyphIndex, the first missing glyph would poison the cache and
-  // prevent fallback fonts from being tried for subsequent missing characters.
-  uint32_t mainCacheKey = glyphIndex;
-  if (glyphIndex == 0 && codepoint != 0) {
-    // Use a dedicated namespace for "missing in main face" entries keyed by codepoint.
-    // High bit marks this as a main-face-missing sentinel entry.
-    mainCacheKey = 0x80000000u | (static_cast<uint32_t>(codepoint) & 0x7FFFFFFFu);
-  }
-
-  // First check cache
-  auto it = m_glyphs.find(mainCacheKey);
+  // First check cache by glyph index (main font)
+  auto it = m_glyphs.find(glyphIndex);
   if (it != m_glyphs.end()) return &it->second;
 
   // Try to render from main font
-  // FT_LOAD_TARGET_LIGHT provides better hinting for small pixel sizes
-  // while maintaining antialiased output (less aggressive grid-fitting than FT_LOAD_DEFAULT)
-  if (FT_Load_Glyph(m_face, glyphIndex, FT_LOAD_TARGET_LIGHT) == 0 &&
-      FT_Render_Glyph(m_face->glyph, FT_RENDER_MODE_LIGHT) == 0) {
+  if (FT_Load_Glyph(m_face, glyphIndex, FT_LOAD_DEFAULT) == 0 &&
+      FT_Render_Glyph(m_face->glyph, FT_RENDER_MODE_NORMAL) == 0) {
     // Check if glyph was found (not the .notdef glyph with index 0, or has actual bitmap)
     FT_GlyphSlot g = m_face->glyph;
     if (glyphIndex != 0 || g->bitmap.width > 0) {
-      return rasterizeGlyph(m_face, glyphIndex, mainCacheKey);
+      return rasterizeGlyph(m_face, glyphIndex, glyphIndex);
     }
   }
 
   // Main font failed - try fallback fonts using codepoint
   if (codepoint != 0) {
-    static bool s_loggedFirstFallback = false;
     for (size_t fbIdx = 0; fbIdx < m_fallbackFaces.size(); ++fbIdx) {
       FT_Face fallbackFace = m_fallbackFaces[fbIdx];
       // Get glyph index for this codepoint in fallback font
       FT_UInt fbGlyphIndex = FT_Get_Char_Index(fallbackFace, codepoint);
       if (fbGlyphIndex == 0) continue; // .notdef glyph - font doesn't have this char
 
-      if (FT_Load_Glyph(fallbackFace, fbGlyphIndex, FT_LOAD_TARGET_LIGHT) == 0 &&
-          FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_LIGHT) == 0) {
-        // IMPORTANT: Use mainCacheKey so subsequent lookups for this codepoint hit cache!
-        // The mainCacheKey already encodes the codepoint when glyphIndex==0.
-        if (!s_loggedFirstFallback) {
-          g_logger.info(fmt::format("TTFFont: using fallback font #{} for codepoint U+{:04X}", fbIdx, static_cast<uint32_t>(codepoint)));
-          s_loggedFirstFallback = true;
-        }
-        return rasterizeGlyph(fallbackFace, fbGlyphIndex, mainCacheKey);
+      if (FT_Load_Glyph(fallbackFace, fbGlyphIndex, FT_LOAD_DEFAULT) == 0 &&
+          FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_NORMAL) == 0) {
+        // Use unique cache key: high bits for fallback index, low bits for glyph
+        const uint32_t cacheKey = static_cast<uint32_t>((fbIdx + 1) << 24) | (fbGlyphIndex & 0xFFFFFF);
+        return rasterizeGlyph(fallbackFace, fbGlyphIndex, cacheKey);
       }
     }
-    
-    // No fallback font found - this will render as .notdef (square)
-    static bool s_loggedMissingOnce = false;
-    if (!s_loggedMissingOnce) {
-      g_logger.warning(fmt::format("TTFFont: no fallback font has glyph for codepoint U+{:04X} ({} fallbacks checked)", 
-                                   static_cast<uint32_t>(codepoint), m_fallbackFaces.size()));
-      s_loggedMissingOnce = true;
-    }
-  }
-
-  // Cache a sentinel "missing" entry for this codepoint so we don't re-scan fallbacks every frame.
-  // (Advance comes from HarfBuzz; this entry is only used to decide whether to emit a quad.)
-  if (mainCacheKey != 0) {
-    AtlasGlyph ag{};
-    ag.texture = nullptr;
-    ag.x = ag.y = ag.w = ag.h = 0;
-    ag.bearingX = 0;
-    ag.bearingY = 0;
-    ag.advance = 0;
-    m_glyphs.emplace(mainCacheKey, ag);
-    return &m_glyphs.find(mainCacheKey)->second;
   }
 
   return nullptr;
@@ -405,13 +361,7 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
   // Copy to CPU atlas and upload only the updated sub-region to the GPU
   const Point destPoint(A->penX, A->penY);
   A->image->blit(destPoint, glyphImage);
-
-  // IMPORTANT: Do not call any GL functions here.
-  // This path can run outside the active GL context/thread (especially on Windows),
-  // so we only queue the upload to be executed later by DrawPool (GL thread).
-  if (A->texture) {
-    A->pendingUploads.push_back(Atlas::PendingUpload{ Rect(destPoint, Size(w, h)), glyphImage });
-  }
+  A->texture->uploadSubPixels(Rect(destPoint, Size(w, h)), glyphImage);
 
   // Register glyph metrics
   AtlasGlyph ag{};
@@ -446,72 +396,12 @@ void TTFFont::drawText(const std::u32string& text32,
              float x, float y,
              const ShapeParams& params,
              const Color& color) {
-  static bool s_loggedFirstCall = false;
-  static bool s_warnedMissingHbFont = false;
-  static bool s_warnedNoQuads = false;
-  static bool s_warnedNullOrEmptyTexture = false;
-
-  if (!m_hbFont) {
-    if (!s_warnedMissingHbFont) {
-      g_logger.warning("TTFFont::drawText: m_hbFont is null (font not ready); text will not render");
-      s_warnedMissingHbFont = true;
-    }
-    return;
-  }
-
-  if (text32.empty())
-    return;
+  if (!m_hbFont || text32.empty()) return;
 
   std::vector<GlyphQuad> quads;
   const Rect bounds = buildQuads(text32, params, quads);
-  if (quads.empty()) {
-    if (!s_warnedNoQuads) {
-      g_logger.warning("TTFFont::drawText: buildQuads produced 0 quads for {} codepoints (text will not render)", text32.size());
-      s_warnedNoQuads = true;
-    }
+  if (quads.empty())
     return;
-  }
-
-  // Flush pending atlas uploads on the GL thread via DrawPool actions.
-  // This avoids glGenTextures returning 0 when called without a current context (Windows regression).
-  for (auto& atlas : m_atlases) {
-    if (!atlas.texture || atlas.pendingUploads.empty())
-      continue;
-
-    auto texture = atlas.texture;
-    auto atlasImage = atlas.image;
-    auto uploads = std::move(atlas.pendingUploads);
-    atlas.pendingUploads.clear();
-
-    g_drawPool.addAction([texture, atlasImage, uploads = std::move(uploads)]() mutable {
-      if (!texture)
-        return;
-
-      const bool wasEmpty = texture->isEmpty();
-      if (wasEmpty && atlasImage) {
-        // Ensure Texture::create() has a backing image to upload.
-        texture->updateImage(atlasImage);
-        texture->create();
-        // Full atlas upload already contains all CPU blits up to this moment.
-        return;
-      }
-
-      // Ensure GL id exists before sub uploads.
-      if (texture->isEmpty() && atlasImage) {
-        texture->updateImage(atlasImage);
-        texture->create();
-      }
-
-      for (const auto& u : uploads) {
-        texture->uploadSubPixels(u.dest, u.image);
-      }
-    });
-  }
-
-  if (!s_loggedFirstCall) {
-    g_logger.info("TTFFont::drawText: first call OK (quads={}, x={}, y={})", quads.size(), x, y);
-    s_loggedFirstCall = true;
-  }
 
   struct Batch {
     TexturePtr texture;
@@ -542,12 +432,12 @@ void TTFFont::drawText(const std::u32string& text32,
 
   for (const auto& batch : batches) {
     if (batch.coords && batch.coords->getVertexCount() > 0) {
-      if (!batch.texture || batch.texture->isEmpty()) {
-        if (!s_warnedNullOrEmptyTexture) {
-          g_logger.warning("TTFFont::drawText: submitting vertices={} with INVALID texture (ptr={}, id={}) -> text will not render", 
-                           batch.coords->getVertexCount(), (batch.texture != nullptr), batch.texture ? batch.texture->getId() : 0);
-          s_warnedNullOrEmptyTexture = true;
-        }
+      if (!batch.texture || batch.texture->getId() == 0) {
+        g_logger.warning(fmt::format("TTFFont::drawText: skipping batch with {} vertices — texture invalid (ptr={}, id={})",
+          batch.coords->getVertexCount(),
+          batch.texture ? "true" : "false",
+          batch.texture ? batch.texture->getId() : 0));
+        continue;
       }
       g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
     }
@@ -609,7 +499,7 @@ Rect TTFFont::buildQuads(const std::u32string& text32,
   float minX = 0.f;
   float minY = 0.f;
   float maxX = 0.f;
-  float maxY = static_cast<float>(m_lineHeight);
+  float maxY = static_cast<float>(m_pixelSize);
 
   for (const auto& sg : shaped) {
     const AtlasGlyph* ag = cacheGlyph(sg.glyphIndex, sg.codepoint);

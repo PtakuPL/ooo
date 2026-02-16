@@ -12,8 +12,8 @@
 struct ShapedGlyph {
   unsigned int glyphIndex; // indeks glifu w FT/HB
   char32_t codepoint;      // oryginalny codepoint Unicode (dla fallback)
-  float x;                 // offset x (piksele) względem aktualnego pióra
-  float y;                 // offset y (piksele) względem aktualnego pióra (baseline = 0)
+  float x;                 // pozycja x (piksele)
+  float y;                 // pozycja y (piksele, baseline = 0)
   float advanceX;          // przesunięcie po glifie (x)
   float advanceY;          // zwykle 0 dla poziomego skryptu
 };
@@ -32,4 +32,7 @@ public:
   static std::vector<ShapedGlyph> shape(const std::u32string& text32,
                                         hb_font_t* hbFont,
                                         const ShapeParams& params);
+
+  // Clear the internal shape cache (call when locale changes)
+  static void clearCache();
 };

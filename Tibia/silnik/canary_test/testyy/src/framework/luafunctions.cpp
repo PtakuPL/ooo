@@ -437,7 +437,9 @@ void Application::registerLuaFunctions()
     // FontManager
     g_lua.registerSingletonClass("g_fonts");
     g_lua.bindSingletonFunction("g_fonts", "clearFonts", &FontManager::clearFonts, &g_fonts);
-    g_lua.bindSingletonFunction("g_fonts", "clearAllFontCaches", &FontManager::clearAllFontCaches, &g_fonts);
+    g_lua.bindSingletonFunction("g_fonts", "clearGlyphCaches", &FontManager::clearGlyphCaches, &g_fonts);
+    g_lua.bindSingletonFunction("g_fonts", "setLocaleTag", &FontManager::setLocaleTag, &g_fonts);
+    g_lua.bindSingletonFunction("g_fonts", "getLocaleTag", &FontManager::getLocaleTag, &g_fonts);
     g_lua.bindSingletonFunction("g_fonts", "importFont", &FontManager::importFont, &g_fonts);
     g_lua.bindSingletonFunction("g_fonts", "fontExists", &FontManager::fontExists, &g_fonts);
 

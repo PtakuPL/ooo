@@ -124,20 +124,6 @@ public:
   float measureTextWidth(const std::u32string& text32,
                          const ShapeParams& params);
 
-  // Font metrics (pixel units)
-  int lineHeight() const { return m_lineHeight; }
-  int ascent() const { return m_ascent; }
-  int descent() const { return m_descent; }
-
-  // Clear all cached glyphs and atlases (use after font config changes)
-  void clearCache() {
-    m_glyphs.clear();
-    m_atlases.clear();
-    if (ensureAtlas() < 0) {
-      g_logger.error("TTFFont::clearCache: failed to create initial atlas after clearing");
-    }
-  }
-
   hb_font_t* hbFont() const { return m_hbFont; }
   size_t atlasCount() const { return m_atlases.size(); }
   TexturePtr getAtlasTexture(size_t index) const;
@@ -145,9 +131,10 @@ public:
                   const ShapeParams& params,
                   std::vector<GlyphQuad>& outQuads);
 
-private:
-  struct Atlas;
+  // Clear glyph cache and atlases — forces re-rasterization on next draw
+  void clearCache();
 
+private:
   // When fonts are loaded from PhysFS archives (e.g. .otpkg), FreeType must use memory faces.
   // These buffers keep font data alive for the lifetime of FT_Face objects created via FT_New_Memory_Face.
   std::string m_mainFontData;
@@ -173,21 +160,12 @@ private:
   std::vector<hb_font_t*>  m_fallbackHbFonts;
 
   int m_pixelSize = 12;
-  int m_lineHeight = 12;
-  int m_ascent = 0;
-  int m_descent = 0;
 
   struct Atlas {
-    struct PendingUpload {
-      Rect dest;
-      ImagePtr image;
-    };
-
     TexturePtr texture;   // GPU texture
     ImagePtr   image;     // CPU-side backing store (RGBA)
     int width, height;
     int penX, penY, rowH; // simple row-based packer
-    std::vector<PendingUpload> pendingUploads;
   };
   std::vector<Atlas> m_atlases;
   std::unordered_map<uint32_t, AtlasGlyph> m_glyphs;

@@ -33,7 +33,13 @@ class FontManager
 public:
     void terminate();
     void clearFonts();
-    void clearAllFontCaches(); // Clear TTF glyph caches when locale changes
+
+    // Clear TTF glyph caches and text shaping cache (without unloading fonts)
+    void clearGlyphCaches();
+
+    // Set/get the default BCP-47 locale tag used for HarfBuzz text shaping
+    void setLocaleTag(const std::string& tag);
+    std::string getLocaleTag() const;
 
     bool importFont(const std::string& file);
 

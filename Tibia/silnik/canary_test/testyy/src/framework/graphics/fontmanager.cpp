@@ -25,6 +25,9 @@
 
 #include <framework/core/resourcemanager.h>
 #include <framework/otml/otml.h>
+#include <framework/text/TTFFont.h>
+#include <framework/text/TextShaper.h>
+#include <framework/text/LocaleShaping.h>
 
 #include <exception>
 
@@ -38,16 +41,21 @@ void FontManager::clearFonts() {
     m_defaultWidgetFont = nullptr;
 }
 
-void FontManager::clearAllFontCaches() {
-    // Clear TTF glyph caches when locale changes
+void FontManager::clearGlyphCaches() {
     for (const auto& font : m_fonts) {
-        if (font && font->isTTF()) {
-            const auto& ttf = font->getTTFFont();
-            if (ttf) {
-                ttf->clearCache();
-            }
+        if (font->isTTF() && font->getTTFFont()) {
+            font->getTTFFont()->clearCache();
         }
     }
+    TextShaper::clearCache();
+}
+
+void FontManager::setLocaleTag(const std::string& tag) {
+    otc::text::LocaleShaping::setDefaultLocaleTag(tag);
+}
+
+std::string FontManager::getLocaleTag() const {
+    return otc::text::LocaleShaping::getDefaultLocaleTag();
 }
 
 bool FontManager::importFont(const std::string& file)
@@ -73,7 +81,7 @@ bool FontManager::importFont(const std::string& file)
         // set as default if needed
         if (!m_defaultFont || fontNode->valueAt<bool>("default", false))
             m_defaultFont = font;
-        else if (!m_defaultWidgetFont || fontNode->valueAt<bool>("widget-default", false))
+        if (!m_defaultWidgetFont || fontNode->valueAt<bool>("widget-default", false))
             m_defaultWidgetFont = font;
 
         return true;

@@ -19742,5 +19742,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:49:45.823815Z"
+  },
+  "questlog.quest_10.mission_7.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Попросите Azerus о миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:51:52.978068Z"
+  },
+  "questlog.quest_10.mission_8.state_3": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Вернитесь к Azerus и сообщите ему о своей миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:51:52.979040Z"
+  },
+  "questlog.quest_10.mission_8.state_4": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Попросите Azerus о миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:51:52.979605Z"
+  },
+  "questlog.quest_10.mission_7.state_4": {
+    "src_hash": "5bcb134294e0fb2885b2a082a25ce966",
+    "text": "Вы убили Карабоссов. Попросите Azerus о миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:03.779842Z"
+  },
+  "questlog.quest_10.mission_8.state_2": {
+    "src_hash": "c70c7412146125f78bd718a987376cdd",
+    "text": "Плохая сторона: для этой миссии Ялахари просит вас пойти в Фабричный квартал и найти кристалл образца, который будет использоваться для поставки оружия, которое поможет взять город под контроль. Хорошая сторона: Палимут отправит вас туда, чтобы вы использовали кристалл для снабжения города продовольствием.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:03.781197Z"
+  },
+  "questlog.quest_10.mission_9.state_1": {
+    "src_hash": "ff8f647e53532248178a1f7691ff985d",
+    "text": "Теперь вам нужно решить: поддержать Палимута или цель Ялахари. Чтобы выбрать хорошую сторону Палимута, подойдите к нему и просто попросите его выполнить миссию. Аналогично, чтобы присоединиться к Ялахари (Azerus) (плохая сторона), подойдите к нему и скажите то же самое.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:07.715583Z"
+  },
+  "questlog.quest_10.mission_9.state_2": {
+    "src_hash": "3a25445c9f2ee6c336a39167818715dc",
+    "text": "ты уже решил!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:07.715909Z"
+  },
+  "questlog.quest_11.mission_1.description_dynamic": {
+    "src_hash": "e20ecd7ba813f4e84413de44a0bba2bd",
+    "text": "Вы присоединились к '__PH0__'. Попросите Гризли Адамса выполнить несколько охотничьих заданий. Вы уже набрали %d баллов. На данный момент у вас есть %d очков босса.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:07.716861Z"
+  },
+  "questlog.quest_11.mission_10.state_1": {
+    "src_hash": "3f2648a884235f0ba439126f3ebaef9e",
+    "text": "Вы успешно охотились на 150 карнифил. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:10.161031Z"
   }
 }

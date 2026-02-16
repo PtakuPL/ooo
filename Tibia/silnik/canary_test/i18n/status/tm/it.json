@@ -28150,5 +28150,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:49:21.956256Z"
+  },
+  "raid.bone_beast.name": {
+    "src_hash": "15b8ea869922dcd524b178ec843fc6ba",
+    "text": "Bone Beast",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:51:48.822035Z"
+  },
+  "raid.terramite.name": {
+    "src_hash": "6f60f48e7910fcc0ac596725ef4034f8",
+    "text": "Terramite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:51:48.822450Z"
   }
 }

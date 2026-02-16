@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16T23:51:12.865350Z",
-  "cycle": 56,
+  "timestamp": "2026-02-16T23:52:15.263769Z",
+  "cycle": 57,
   "language": "ro",
-  "json_file": "raids.json",
-  "translated": 49,
+  "json_file": "otclient_modules.json",
+  "translated": 50,
   "placeholders": 0,
-  "guard_fail": 1,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 65
+  "strict_skipped_done": 100
 }

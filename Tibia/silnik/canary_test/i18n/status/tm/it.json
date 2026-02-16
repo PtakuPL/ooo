@@ -26798,5 +26798,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:33:26.953754Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Fallire.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.124824Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L16.2253": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scusa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.125153Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.creaturescripts.pale.worm.death.L14.2046": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Congratulazioni, hai ricevuto il costume Poltergeist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.127253Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.first.L14.1928": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.129018Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.second.L14.1971": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.129692Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L14.1930": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.130405Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L77.2279": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Non ti è ancora consentito utilizzarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.134165Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L90.2280": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Tieni di fronte a te la vecchia corazza di Galthein. Non si adatta ed è troppo vecchio per resistere a qualsiasi attacco.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.134848Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L16.1867": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.136333Z"
+  },
+  "data.otservbr.global.scripts.quests.hero.of.rathleton.actions.reward.L13.2162": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.137274Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L10.2180": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.138217Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L19.2182": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.138741Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L28.2184": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.139107Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L10.2271": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Hai già indagato su questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.139911Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L24.2272": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Pezzi di carta sono sparsi sul pavimento. Ci vuole del tempo per rimetterli insieme. Ma è solo una poesia scritta male.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.140560Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L27.2273": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Hai già indagato su questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.141085Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Esamini attentamente le pergamene. Questi sono ordini da Rathleton per l'Ambasciatore. Nessun segno di tradimento qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.141675Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L44.2275": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Hai già indagato su questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.142115Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L58.2276": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Non trovi niente nella casa dell'Ambasciatore. Se è effettivamente un traditore si è sbarazzato di ogni prova che potesse incriminarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.142815Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L7.2270": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Di recente sono stati bruciati dei documenti qui. Solo la parte di una pergamena si trova ancora davanti al camino, ma è troppo fuligginosa per poterla leggere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.143518Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L29.2267": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Ti senti tremante e stordito, il mondo diventa buio intorno a te. Poi la tua vista si schiarisce di nuovo e sei da qualche altra parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.144270Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L49.2268": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Sei stato spostato nella parte destra del cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.144734Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L65.2269": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Sei stato spostato nella parte sinistra del cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.145142Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L34.2277": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Benedici la statua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.145467Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L38.2278": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Hai già benedetto questa statua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.145916Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L10.1682": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.146389Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L9.1679": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Scusa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.146812Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L9.1673": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.147287Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L8.1661": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Scusa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.147653Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.glasshoneyfun.L11.1669": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.147996Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L9.1659": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.148641Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peelerfun.L10.1657": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.148968Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.pickenchanted.L10.1665": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.149461Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L8.1655": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Scusa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.150069Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L9.1671": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.150463Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissorsfun.L280.1680": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.150892Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tortoise.L5.1674": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Tartaruga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:42.151324Z"
   }
 }

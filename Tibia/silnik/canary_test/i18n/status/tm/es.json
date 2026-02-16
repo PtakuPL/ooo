@@ -144518,5 +144518,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:39:17.458177Z"
+  },
+  "raid.barba_svar.name": {
+    "src_hash": "c7b6a31e7221a8f7beaa745a0d779579",
+    "text": "Barba Svar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:38.068528Z"
+  },
+  "raid.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:38.068931Z"
+  },
+  "raid.barbarian.name": {
+    "src_hash": "0a697cba19cd4c1974e2ee11a3c0b9c7",
+    "text": "Barbarian",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:38.069227Z"
+  },
+  "raid.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:40:38.069551Z"
   }
 }

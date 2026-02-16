@@ -1,8 +1,8 @@
 {
-  "total_cycles": 33,
+  "total_cycles": 34,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-17T00:18:37.015129",
+  "category": "pl",
+  "last_update": "2026-02-17T00:19:44.618900",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,135 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
-    "json_file": "otclient_modules.json",
-    "keys_to_translate": 1937,
-    "guard_fail": 0,
+    "language": "pl",
+    "json_file": "cpp.json",
+    "keys_to_translate": 379,
+    "guard_fail": 58,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 50,
+    "recent_examples": [
+      {
+        "key": "cpp.combat.dmg_target_self_crit_other",
+        "en": "You lose {0} hitpoints due to your own critical attack.",
+        "translated": "Tracisz {0} punkt\u00f3w \u017cycia w wyniku w\u0142asnego ataku krytycznego.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.dmg_target_self_one",
+        "en": "You lose {0} hitpoint due to your own attack.",
+        "translated": "Tracisz {0} punkt\u00f3w \u017cycia w wyniku w\u0142asnego ataku.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.dmg_target_self_other",
+        "en": "You lose {0} hitpoints due to your own attack.",
+        "translated": "Tracisz {0} punkt\u00f3w \u017cycia w wyniku w\u0142asnego ataku.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_attacker_one",
+        "en": "You heal {0} for {1} hitpoint.",
+        "translated": "Leczysz {0} za {1} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_attacker_other",
+        "en": "You heal {0} for {1} hitpoints.",
+        "translated": "Leczysz {0} za {1} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_spectator_other_one",
+        "en": "{0} healed {1} for {2} hitpoint.",
+        "translated": "{0} wyleczy\u0142 {1} za {2} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_spectator_other_other",
+        "en": "{0} healed {1} for {2} hitpoints.",
+        "translated": "{0} wyleczy\u0142 {1} za {2} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_spectator_self_one",
+        "en": "{0} healed {1} for {2} hitpoint.",
+        "translated": "{0} wyleczy\u0142 {1} za {2} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_spectator_self_other",
+        "en": "{0} healed {1} for {2} hitpoints.",
+        "translated": "{0} wyleczy\u0142 {1} za {2} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_target_by_one",
+        "en": "You were healed by {0} for {1} hitpoint.",
+        "translated": "Zosta\u0142e\u015b uzdrowiony przez {0} za {1} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_target_by_other",
+        "en": "You were healed by {0} for {1} hitpoints.",
+        "translated": "Zosta\u0142e\u015b uzdrowiony przez {0} za {1} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_target_self_one",
+        "en": "You heal yourself for {0} hitpoint.",
+        "translated": "Leczysz si\u0119 za {0} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.heal_target_self_other",
+        "en": "You heal yourself for {0} hitpoints.",
+        "translated": "Leczysz si\u0119 za {0} punkt\u00f3w \u017cycia.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_attacker",
+        "en": "{0} loses {1} mana due to your attack.",
+        "translated": "{0} traci {1} man\u0119 w wyniku twojego ataku.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_attacker_crit",
+        "en": "{0} loses {1} mana due to your critical attack.",
+        "translated": "{0} traci {1} man\u0119 z powodu twojego krytycznego ataku.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_spectator_by",
+        "en": "{0} loses {1} mana due to an attack by {2}.",
+        "translated": "{0} traci {1} man\u0119 w wyniku ataku {2}.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_spectator_by_crit",
+        "en": "{0} loses {1} mana due to a critical attack by {2}.",
+        "translated": "{0} traci {1} man\u0119 w wyniku krytycznego ataku {2}.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_spectator_self",
+        "en": "{0} loses {1} mana due to {2} own attack.",
+        "translated": "{0} traci {1} man\u0119 z powodu {2} w\u0142asnego ataku.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_target_by",
+        "en": "You lose {0} mana due to an attack by {1}.",
+        "translated": "Tracisz {0} many w wyniku ataku {1}.",
+        "source": "google_translate"
+      },
+      {
+        "key": "cpp.combat.mana_target_by_crit",
+        "en": "You lose {0} mana due to a critical attack by {1}.",
+        "translated": "Tracisz {0} many w wyniku krytycznego ataku {1}.",
+        "source": "google_translate"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

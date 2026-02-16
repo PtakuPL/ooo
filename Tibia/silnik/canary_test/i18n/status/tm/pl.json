@@ -2369,11 +2369,11 @@
   },
   "cpp.inspect.magic_shield_capacity": {
     "src_hash": "453b284354c516de31dff38fa5082a17",
-    "text": "I. I. udźperuka",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Magia tarcza udźperuka",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708995Z"
+    "updated_at": "2026-02-16T23:18:55.136065Z"
   },
   "cpp.inspect.weight": {
     "src_hash": "8c489d0946f66d17d73f26366a4bf620",
@@ -95958,5 +95958,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:11:54.570266Z"
+  },
+  "cpp.combat.heal_spectator_none_one": {
+    "src_hash": "563946f2da69fc4d5e67fe5fbbabd7a3",
+    "text": "{0} został wyleczony za {1} punktów życia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:55.077135Z"
+  },
+  "cpp.combat.heal_spectator_none_other": {
+    "src_hash": "a038c6c62c0d42fcd3a8fe3616466458",
+    "text": "{0} został wyleczony za {1} punktów życia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:55.078151Z"
+  },
+  "cpp.combat.heal_target_none_one": {
+    "src_hash": "0bf121421a3a381451a59e1c85aeda73",
+    "text": "Zostałeś wyleczony za {0} punktów życia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:55.081140Z"
+  },
+  "cpp.combat.heal_target_none_other": {
+    "src_hash": "9e6bedd1c5b4f37f6b98fa8d89b531b6",
+    "text": "Zostałeś wyleczony za {0} punktów życia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:55.082136Z"
+  },
+  "cpp.returnvalue.you_are_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Jesteś wyczerpany.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:55.241871Z"
+  },
+  "cpp.combat.dmg_attacker_crit_other": {
+    "src_hash": "0137109a00690450cd2fe61d7317fa4d",
+    "text": "{0} traci {1} punktów życia w wyniku twojego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:01.172224Z"
+  },
+  "cpp.combat.dmg_attacker_one": {
+    "src_hash": "125fcde49b9106480a491e5ab9c77ca3",
+    "text": "{0} traci {1} punktów życia w wyniku twojego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:01.172620Z"
+  },
+  "cpp.combat.dmg_attacker_other": {
+    "src_hash": "257ee854903d532839ed440219e295b2",
+    "text": "{0} traci {1} punktów życia w wyniku twojego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:01.172996Z"
+  },
+  "cpp.combat.dmg_spectator_by_crit_one": {
+    "src_hash": "b3218f77cfab4ef44076b07341384c7e",
+    "text": "{0} traci {1} punkt życia z powodu krytycznego ataku {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:01.173426Z"
+  },
+  "cpp.combat.dmg_spectator_by_crit_other": {
+    "src_hash": "8b8f2e78055b89231331ac78c245b33e",
+    "text": "{0} traci {1} punktów życia w wyniku krytycznego ataku {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:01.173832Z"
+  },
+  "cpp.combat.dmg_spectator_by_one": {
+    "src_hash": "cc4a261a1824688e28c4a0e63e920521",
+    "text": "{0} traci {1} punktów życia w wyniku ataku {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:08.765133Z"
+  },
+  "cpp.combat.dmg_spectator_by_other": {
+    "src_hash": "4cd2495a40159387c95e3c5cb6b001d8",
+    "text": "{0} traci {1} punktów życia w wyniku ataku {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:08.765525Z"
+  },
+  "cpp.combat.dmg_spectator_self_crit_one": {
+    "src_hash": "4f9b9e609be43a58635419ba9ad5c88f",
+    "text": "{0} traci {1} punkt życia z powodu {2} własnego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:08.765960Z"
+  },
+  "cpp.combat.dmg_spectator_self_crit_other": {
+    "src_hash": "a6ac19da92fc294b050248113e7000a2",
+    "text": "{0} traci {1} punktów życia z powodu {2} własnego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:08.766443Z"
+  },
+  "cpp.combat.dmg_spectator_self_one": {
+    "src_hash": "696a49099f4bb999dde2a306fc874efa",
+    "text": "{0} traci {1} punkt życia z powodu {2} własnego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:08.766825Z"
+  },
+  "cpp.combat.dmg_spectator_self_other": {
+    "src_hash": "5bf79b245308ae46198af5f16ea20c63",
+    "text": "{0} traci {1} punktów życia z powodu {2} własnego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:14.654459Z"
+  },
+  "cpp.combat.dmg_target_by_crit_one": {
+    "src_hash": "aee2bb7862a5b081f4411f522da26230",
+    "text": "Tracisz {0} punktów życia w wyniku krytycznego ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:14.654878Z"
+  },
+  "cpp.combat.dmg_target_by_crit_other": {
+    "src_hash": "df3e12671114472c884ac78a76c1fe73",
+    "text": "Tracisz {0} punktów życia w wyniku krytycznego ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:14.655336Z"
+  },
+  "cpp.combat.dmg_target_by_one": {
+    "src_hash": "8a8ea05c51255d66aa4282b55a052404",
+    "text": "Tracisz {0} punktów życia w wyniku ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:14.655721Z"
+  },
+  "cpp.combat.dmg_target_by_other": {
+    "src_hash": "96092220c06fa4f7abbbd5125b33e7c8",
+    "text": "Tracisz {0} punktów życia w wyniku ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:14.656101Z"
+  },
+  "cpp.combat.dmg_target_none_one": {
+    "src_hash": "5b3ca116ae84011c87de3dc5df222cd1",
+    "text": "Tracisz {0} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:21.302721Z"
+  },
+  "cpp.combat.dmg_target_none_other": {
+    "src_hash": "792e9b4a740105224c446ccbee509abe",
+    "text": "Tracisz {0} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:21.303307Z"
+  },
+  "cpp.combat.dmg_target_self_crit_one": {
+    "src_hash": "ac1bff043e8c26e0ac133ad601966b68",
+    "text": "Tracisz {0} punktów życia w wyniku własnego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:21.304084Z"
+  },
+  "cpp.combat.dmg_target_self_crit_other": {
+    "src_hash": "156225ceb575277435d89317f7eecdac",
+    "text": "Tracisz {0} punktów życia w wyniku własnego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:21.304863Z"
+  },
+  "cpp.combat.dmg_target_self_one": {
+    "src_hash": "5b3ada6a01d629373cc9c5448dcdf456",
+    "text": "Tracisz {0} punktów życia w wyniku własnego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:21.305639Z"
+  },
+  "cpp.combat.dmg_target_self_other": {
+    "src_hash": "991acc62419dbec00201325e84ea6944",
+    "text": "Tracisz {0} punktów życia w wyniku własnego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:27.440163Z"
+  },
+  "cpp.combat.heal_attacker_one": {
+    "src_hash": "ce72c445a9274f86800018e990daa4d2",
+    "text": "Leczysz {0} za {1} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:27.440507Z"
+  },
+  "cpp.combat.heal_attacker_other": {
+    "src_hash": "d999bdbf5fd93480e45bd06e96c47da0",
+    "text": "Leczysz {0} za {1} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:27.440829Z"
+  },
+  "cpp.combat.heal_spectator_other_one": {
+    "src_hash": "5909e8213f2d3f355077c8c2b4040ed1",
+    "text": "{0} wyleczył {1} za {2} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:27.441159Z"
+  },
+  "cpp.combat.heal_spectator_other_other": {
+    "src_hash": "601afa5d1f405ad24a983e4a438197e2",
+    "text": "{0} wyleczył {1} za {2} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:27.441487Z"
+  },
+  "cpp.combat.heal_spectator_self_one": {
+    "src_hash": "5909e8213f2d3f355077c8c2b4040ed1",
+    "text": "{0} wyleczył {1} za {2} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:30.929252Z"
+  },
+  "cpp.combat.heal_spectator_self_other": {
+    "src_hash": "601afa5d1f405ad24a983e4a438197e2",
+    "text": "{0} wyleczył {1} za {2} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:30.929611Z"
+  },
+  "cpp.combat.heal_target_by_one": {
+    "src_hash": "fd77c477bc340115f589c4f104abd576",
+    "text": "Zostałeś uzdrowiony przez {0} za {1} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:30.930024Z"
+  },
+  "cpp.combat.heal_target_by_other": {
+    "src_hash": "8beba0a3da18cd9afaa90199d011b96b",
+    "text": "Zostałeś uzdrowiony przez {0} za {1} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:30.930463Z"
+  },
+  "cpp.combat.heal_target_self_one": {
+    "src_hash": "60cc9d118ce54c7626b0303604940a79",
+    "text": "Leczysz się za {0} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:30.930830Z"
+  },
+  "cpp.combat.heal_target_self_other": {
+    "src_hash": "596fa864cbd1f12e043b154e79032965",
+    "text": "Leczysz się za {0} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:36.493591Z"
+  },
+  "cpp.combat.mana_attacker": {
+    "src_hash": "a8e810912070d5ddd8bcccd621134658",
+    "text": "{0} traci {1} manę w wyniku twojego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:36.493988Z"
+  },
+  "cpp.combat.mana_attacker_crit": {
+    "src_hash": "7adc2cc4191a8d8a771cdd458f04d9d2",
+    "text": "{0} traci {1} manę z powodu twojego krytycznego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:36.494439Z"
+  },
+  "cpp.combat.mana_spectator_by": {
+    "src_hash": "a0573fb276af6ce2d1a728e625cc8b1f",
+    "text": "{0} traci {1} manę w wyniku ataku {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:36.494798Z"
+  },
+  "cpp.combat.mana_spectator_by_crit": {
+    "src_hash": "d8896bf956ead12f307e55abc89afa6b",
+    "text": "{0} traci {1} manę w wyniku krytycznego ataku {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:36.495176Z"
+  },
+  "cpp.combat.mana_spectator_self": {
+    "src_hash": "0f66d3c30d3f84cc1d63ffb643ff825b",
+    "text": "{0} traci {1} manę z powodu {2} własnego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:40.610319Z"
+  },
+  "cpp.combat.mana_target_by": {
+    "src_hash": "fc7fcfc62b9171037311480be0e23d6a",
+    "text": "Tracisz {0} many w wyniku ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:40.610664Z"
+  },
+  "cpp.combat.mana_target_by_crit": {
+    "src_hash": "a03f0ea928d07120fde4c9879d6ea26b",
+    "text": "Tracisz {0} many w wyniku krytycznego ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:19:40.611040Z"
   }
 }

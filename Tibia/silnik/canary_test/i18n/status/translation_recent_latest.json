@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:18:35.167521Z",
-  "language": "sr",
-  "json_file": "monsters.json",
+  "timestamp": "2026-02-16T23:19:40.761568Z",
+  "language": "pl",
+  "json_file": "cpp.json",
   "translated": 50,
   "entries": [
     {
-      "key": "monster.orc_spearman.name",
-      "en": "Orc Spearman",
-      "translated": "Орц Спеарман",
-      "source": "tm"
+      "key": "cpp.combat.dmg_target_self_crit_other",
+      "en": "You lose {0} hitpoints due to your own critical attack.",
+      "translated": "Tracisz {0} punktów życia w wyniku własnego ataku krytycznego.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.orc_spearman.desc",
-      "en": "an orc spearman",
-      "translated": "орк копљаник",
-      "source": "tm"
+      "key": "cpp.combat.dmg_target_self_one",
+      "en": "You lose {0} hitpoint due to your own attack.",
+      "translated": "Tracisz {0} punktów życia w wyniku własnego ataku.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.orc_spearman.voice_1",
-      "en": "Ugaar!",
-      "translated": "Угаар!",
-      "source": "tm"
+      "key": "cpp.combat.dmg_target_self_other",
+      "en": "You lose {0} hitpoints due to your own attack.",
+      "translated": "Tracisz {0} punktów życia w wyniku własnego ataku.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.minotaur_cult_zealot.name",
-      "en": "Minotaur Cult Zealot",
-      "translated": "Минотаур Цулт Зеалот",
-      "source": "tm"
+      "key": "cpp.combat.heal_attacker_one",
+      "en": "You heal {0} for {1} hitpoint.",
+      "translated": "Leczysz {0} za {1} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.minotaur_cult_zealot.desc",
-      "en": "a minotaur cult zealot",
-      "translated": "ревнитељ култа минотаура",
-      "source": "tm"
+      "key": "cpp.combat.heal_attacker_other",
+      "en": "You heal {0} for {1} hitpoints.",
+      "translated": "Leczysz {0} za {1} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.dworc_voodoomaster.name",
-      "en": "Dworc Voodoomaster",
-      "translated": "Дворц Воодоомастер",
-      "source": "tm"
+      "key": "cpp.combat.heal_spectator_other_one",
+      "en": "{0} healed {1} for {2} hitpoint.",
+      "translated": "{0} wyleczył {1} za {2} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.dworc_voodoomaster.desc",
-      "en": "a dworc voodoomaster",
-      "translated": "а дворц воодоомастер",
-      "source": "tm"
+      "key": "cpp.combat.heal_spectator_other_other",
+      "en": "{0} healed {1} for {2} hitpoints.",
+      "translated": "{0} wyleczył {1} za {2} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.dworc_voodoomaster.voice_1",
-      "en": "Grow truk grrrrr.",
-      "translated": "Гров трук гррррр.",
-      "source": "tm"
+      "key": "cpp.combat.heal_spectator_self_one",
+      "en": "{0} healed {1} for {2} hitpoint.",
+      "translated": "{0} wyleczył {1} za {2} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.dworc_voodoomaster.voice_2",
-      "en": "Brak brrretz!",
-      "translated": "Брак бррретз!",
-      "source": "tm"
+      "key": "cpp.combat.heal_spectator_self_other",
+      "en": "{0} healed {1} for {2} hitpoints.",
+      "translated": "{0} wyleczył {1} za {2} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.dworc_voodoomaster.voice_3",
-      "en": "Prek tars, dekklep zurk.",
-      "translated": "Прек тарс, декклеп зурк.",
-      "source": "tm"
+      "key": "cpp.combat.heal_target_by_one",
+      "en": "You were healed by {0} for {1} hitpoint.",
+      "translated": "Zostałeś uzdrowiony przez {0} za {1} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.orc_rider.name",
-      "en": "Orc Rider",
-      "translated": "Орц Ридер",
-      "source": "tm"
+      "key": "cpp.combat.heal_target_by_other",
+      "en": "You were healed by {0} for {1} hitpoints.",
+      "translated": "Zostałeś uzdrowiony przez {0} za {1} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.orc_rider.desc",
-      "en": "an orc rider",
-      "translated": "јахач орка",
-      "source": "tm"
+      "key": "cpp.combat.heal_target_self_one",
+      "en": "You heal yourself for {0} hitpoint.",
+      "translated": "Leczysz się za {0} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.orc_rider.voice_1",
-      "en": "Orc arga Huummmak!",
-      "translated": "Орц арга Хуумммак!",
-      "source": "tm"
+      "key": "cpp.combat.heal_target_self_other",
+      "en": "You heal yourself for {0} hitpoints.",
+      "translated": "Leczysz się za {0} punktów życia.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.troll_legionnaire.name",
-      "en": "Troll Legionnaire",
-      "translated": "Тролл Легионнаире",
-      "source": "tm"
+      "key": "cpp.combat.mana_attacker",
+      "en": "{0} loses {1} mana due to your attack.",
+      "translated": "{0} traci {1} manę w wyniku twojego ataku.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.troll_legionnaire.desc",
-      "en": "a troll legionnaire",
-      "translated": "трол легионар",
-      "source": "tm"
+      "key": "cpp.combat.mana_attacker_crit",
+      "en": "{0} loses {1} mana due to your critical attack.",
+      "translated": "{0} traci {1} manę z powodu twojego krytycznego ataku.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.troll_legionnaire.voice_1",
-      "en": "Attack!",
-      "translated": "Напад!",
-      "source": "tm"
+      "key": "cpp.combat.mana_spectator_by",
+      "en": "{0} loses {1} mana due to an attack by {2}.",
+      "translated": "{0} traci {1} manę w wyniku ataku {2}.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.minotaur.name",
-      "en": "Minotaur",
-      "translated": "Минотаур",
-      "source": "tm"
+      "key": "cpp.combat.mana_spectator_by_crit",
+      "en": "{0} loses {1} mana due to a critical attack by {2}.",
+      "translated": "{0} traci {1} manę w wyniku krytycznego ataku {2}.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.minotaur.desc",
-      "en": "a minotaur",
-      "translated": "минотаур",
-      "source": "tm"
+      "key": "cpp.combat.mana_spectator_self",
+      "en": "{0} loses {1} mana due to {2} own attack.",
+      "translated": "{0} traci {1} manę z powodu {2} własnego ataku.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.minotaur.voice_1",
-      "en": "Kaplar!",
-      "translated": "Каплар!",
-      "source": "tm"
+      "key": "cpp.combat.mana_target_by",
+      "en": "You lose {0} mana due to an attack by {1}.",
+      "translated": "Tracisz {0} many w wyniku ataku {1}.",
+      "source": "google_translate"
     },
     {
-      "key": "monster.minotaur.voice_2",
-      "en": "Hurr",
-      "translated": "Хурр",
-      "source": "tm"
+      "key": "cpp.combat.mana_target_by_crit",
+      "en": "You lose {0} mana due to a critical attack by {1}.",
+      "translated": "Tracisz {0} many w wyniku krytycznego ataku {1}.",
+      "source": "google_translate"
     }
   ]
 }

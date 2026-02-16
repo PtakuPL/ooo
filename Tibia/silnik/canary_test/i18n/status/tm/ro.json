@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T21:46:15.497776Z"
+    "updated_at": "2026-02-16T22:02:10.247677Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -13710,5 +13710,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:59:59.915827Z"
+  },
+  "item.11449.desc": {
+    "src_hash": "8fdc146aa065bb63cd8fe5ea4e87704a",
+    "text": "Cineva a pus un pai de cocktail în el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:16.506303Z"
+  },
+  "item.11450.desc": {
+    "src_hash": "d6b653a50f25e62246a453c249eb38ba",
+    "text": "Conține o listă lungă de 'saved maidens' și adresele acestora. Cineva ar putea fi interesat de el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:16.507187Z"
+  },
+  "item.11458.desc": {
+    "src_hash": "5e7a9f20b3ca724e4814ad79f6b9a2f7",
+    "text": "Este prea mic pentru a fi purtat de oameni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:16.507737Z"
+  },
+  "item.11473.desc": {
+    "src_hash": "dae0b5d5321efbca600ef5014f1d45bf",
+    "text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:16.509205Z"
+  },
+  "item.11474.name": {
+    "src_hash": "f8b6915a1ecccbe051aae66ba98c1bf7",
+    "text": "miracol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:19.599735Z"
+  },
+  "item.11475.desc": {
+    "src_hash": "a2fc8dd8312a961ee4c663cacdce0a6a",
+    "text": "Un blestem întunecat te împiedică să-l porți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:19.600406Z"
+  },
+  "item.11476.desc": {
+    "src_hash": "9bfb6e7b27b91d348624756974a3ca8f",
+    "text": "Naiba. Acest lucru ar putea fi interesant doar pentru botanici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:19.601065Z"
+  },
+  "item.11477.desc": {
+    "src_hash": "2dbf3c057ddc64871abdbfdcb705b27e",
+    "text": "Mirosul puternic de sudoare orcică se lipește de ea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:19.601685Z"
+  },
+  "item.11492.desc": {
+    "src_hash": "2aa445e1e99ae6df21d679ca6764b3a0",
+    "text": "Deși numele o sugerează, această centură simplă și subțire nu este potrivită pentru a fi folosită ca frânghie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:19.602534Z"
+  },
+  "item.11515.desc": {
+    "src_hash": "1148fe01aeba73efd69d005368141233",
+    "text": "Formă și aromă distincte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:21.629379Z"
+  },
+  "item.11541.desc": {
+    "src_hash": "22ef1a85bc4349ea3650e6f55912a5c6",
+    "text": "Ți-a fost oferit de către djinn ma?tre și conține rețete noi pe care le-ai gătit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:21.630237Z"
   }
 }

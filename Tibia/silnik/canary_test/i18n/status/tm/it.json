@@ -20694,5 +20694,221 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:00:05.757953Z"
+  },
+  "item.33634.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.259546Z"
+  },
+  "item.33634.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.260460Z"
+  },
+  "item.33635.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.262240Z"
+  },
+  "item.33767.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.267717Z"
+  },
+  "item.33770.name": {
+    "src_hash": "4fbf0df9152d076908cc0754dbb50a06",
+    "text": "scala",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.269161Z"
+  },
+  "item.34075.desc": {
+    "src_hash": "ea88f165dcf535aa7523d89f51f3b777",
+    "text": "Scatena la Bestia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.311701Z"
+  },
+  "item.34166.name": {
+    "src_hash": "40a2c5fd3b18c5aa1b45d5c619277ac0",
+    "text": "botola",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.322058Z"
+  },
+  "item.34173.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.323501Z"
+  },
+  "item.34174.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.325008Z"
+  },
+  "item.34175.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.326055Z"
+  },
+  "item.34176.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.327058Z"
+  },
+  "item.34177.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.327918Z"
+  },
+  "item.34178.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.328787Z"
+  },
+  "item.34179.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.331408Z"
+  },
+  "item.34180.name": {
+    "src_hash": "3819f020ac8a4f48e90227ba3c62b3dc",
+    "text": "cadavere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.333610Z"
+  },
+  "item.34221.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.342904Z"
+  },
+  "item.34222.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.343349Z"
+  },
+  "item.34223.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.343779Z"
+  },
+  "item.34224.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.344350Z"
+  },
+  "item.34243.name": {
+    "src_hash": "4fbf0df9152d076908cc0754dbb50a06",
+    "text": "scala",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.348597Z"
+  },
+  "item.34255.name": {
+    "src_hash": "40a2c5fd3b18c5aa1b45d5c619277ac0",
+    "text": "botola",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.351599Z"
+  },
+  "item.34313.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.366825Z"
+  },
+  "item.34315.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.367929Z"
+  },
+  "item.34317.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.369003Z"
+  },
+  "item.34319.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.369806Z"
+  },
+  "item.35190.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.390788Z"
+  },
+  "item.35192.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:02:29.391713Z"
   }
 }

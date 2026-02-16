@@ -61342,5 +61342,5565 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T18:36:29.901362Z"
+  },
+  "spell.mercurial_menace_ring.name": {
+    "src_hash": "82a154dbb84686009a90982171611c11",
+    "text": "menace mort inel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.595613Z"
+  },
+  "spell.warden_ring.name": {
+    "src_hash": "c8b8febbffb5cf824912a3e7e986be86",
+    "text": "mort inel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.631627Z"
+  },
+  "spell.renegade_knight.name": {
+    "src_hash": "4577eafb75a4b865924c31cb99985aae",
+    "text": "knight mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.636487Z"
+  },
+  "spell.mantosaurus_ring.name": {
+    "src_hash": "bcc22c61835841ab70525f4cc14628d0",
+    "text": "mort inel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.646156Z"
+  },
+  "spell.lavafungus_ring.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "mort inel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.653303Z"
+  },
+  "spell.vile_grandmaster.name": {
+    "src_hash": "bac73ba15ba676e19e2332d4cee43bf3",
+    "text": "grandmaster mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.690338Z"
+  },
+  "spell.avalanche_rune.name": {
+    "src_hash": "dcd935be2b7c1db717e7982ea7c77439",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.727983Z"
+  },
+  "spell.stalagmite_rune.name": {
+    "src_hash": "52fa8546e780281f489552902d938467",
+    "text": "Stalagmite Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.729103Z"
+  },
+  "spell.fireball_rune.name": {
+    "src_hash": "a61a86a92bf13c2a03a91a5ac28008fb",
+    "text": "Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.730113Z"
+  },
+  "spell.icicle_rune.name": {
+    "src_hash": "e2eed91f85856d62a861462b3ee99b48",
+    "text": "Icicle Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.732507Z"
+  },
+  "spell.light_stone_shower_rune.name": {
+    "src_hash": "6484c5f4f5dde8dd10d9014a312bdba6",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.735122Z"
+  },
+  "spell.explosion_rune.name": {
+    "src_hash": "e34e67eb516f1083604364ef57de6c61",
+    "text": "Explosion Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.737155Z"
+  },
+  "spell.disintegrate_rune.name": {
+    "src_hash": "0d4e46f32dddecba7427f32c940bfbab",
+    "text": "Disintegrate Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.739055Z"
+  },
+  "spell.soulfire_rune.name": {
+    "src_hash": "257c83cad3d15e83a4e80b2b426468ea",
+    "text": "Soulfire Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.740163Z"
+  },
+  "spell.chameleon_rune.name": {
+    "src_hash": "b5882f4850f90f038931e732b3fb4ed7",
+    "text": "Chameleon Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.741500Z"
+  },
+  "spell.thunderstorm_rune.name": {
+    "src_hash": "768e1e368ba6c71cbd9af71542060c9f",
+    "text": "Thunderstorm Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.742674Z"
+  },
+  "spell.lightest_missile_rune.name": {
+    "src_hash": "9ee30aa4bee0d6b326c88839c6eb2709",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:08.744994Z"
+  },
+  "spell.annihilon_paralyze.name": {
+    "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
+    "text": "Annihilon Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.873950Z"
+  },
+  "spell.large_black_ring.name": {
+    "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
+    "text": "Inel mare negru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.876426Z"
+  },
+  "spell.dragonling_wave.name": {
+    "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
+    "text": "Valul Dragonlingului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.876664Z"
+  },
+  "spell.rupture_wave.name": {
+    "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
+    "text": "Val de ruptură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.876899Z"
+  },
+  "spell.rotthingholy_ulus.name": {
+    "src_hash": "6f9565ba840690d6cf32df1835403486",
+    "text": "Rotthingholy Ulus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.877209Z"
+  },
+  "spell.plagirath_heal.name": {
+    "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
+    "text": "Plagirath Heal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.877535Z"
+  },
+  "spell.hideous_fungus_summon.name": {
+    "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
+    "text": "Invocare ciupercă hidosă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.877876Z"
+  },
+  "spell.death_priest_shargon_curse.name": {
+    "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
+    "text": "Preotul Morții Shargon Blestemul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.878863Z"
+  },
+  "spell.defiler_paralyze_3.name": {
+    "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
+    "text": "Pângăritor Paralyze 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.879184Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_2.name": {
+    "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
+    "text": "Reductor de aptitudini pitic înrobit 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.879767Z"
+  },
+  "spell.magma_crawler_soulfire.name": {
+    "src_hash": "5af58207044b3d5e194180367a723039",
+    "text": "Magma Crawler Suflere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.880069Z"
+  },
+  "spell.devovorga_curse.name": {
+    "src_hash": "5fed81378f355f8d43c87e10c5259174",
+    "text": "Blestemul Devovorga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.880305Z"
+  },
+  "spell.cults_of_tibia_armor_buff.name": {
+    "src_hash": "b670299f4fea508033e349381261574b",
+    "text": "Cultele lui Tibia Armor Buff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.881599Z"
+  },
+  "spell.white_shade_paralyze.name": {
+    "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
+    "text": "Umbra albă Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.881908Z"
+  },
+  "spell.plant_abomination_wave.name": {
+    "src_hash": "b4b265d796db5c445199764c97950e61",
+    "text": "Valul de urâciune a plantelor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.882438Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Inel mare de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.882876Z"
+  },
+  "spell.teleport_strike.name": {
+    "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
+    "text": "Lovitură de teleportare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.883165Z"
+  },
+  "spell.quara_constrictor_freeze.name": {
+    "src_hash": "12b6e90f7c167ea881781f7f0d10220f",
+    "text": "Quara Constrictor Freeze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.883532Z"
+  },
+  "spell.lersatio_summon.name": {
+    "src_hash": "9f6b742ed3af674623ba4cbc33432484",
+    "text": "Lersatio Summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:41.883825Z"
+  },
+  "spell.elder_bonelord_paralyze.name": {
+    "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
+    "text": "elder bonelord paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.652721Z"
+  },
+  "spell.physical_barrage.name": {
+    "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
+    "text": "Baraj fizic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.652991Z"
+  },
+  "spell.explosion_wave.name": {
+    "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
+    "text": "Val de explozie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.653217Z"
+  },
+  "spell.incineron_soulfire.name": {
+    "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
+    "text": "Incineron Sulfre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.653532Z"
+  },
+  "spell.plaguesmith_wave.name": {
+    "src_hash": "d9649bfbbd30a852247fef5979d725d9",
+    "text": "Valul Ciumarilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.653789Z"
+  },
+  "spell.lich_paralyze.name": {
+    "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
+    "text": "Lich Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.654203Z"
+  },
+  "spell.lizard_wave_2.name": {
+    "src_hash": "40359f42d6c401e32e7f4524cb402999",
+    "text": "Valul șopârlă 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.654471Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Valul Ripptor nociv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.654755Z"
+  },
+  "spell.djinn_electrify.name": {
+    "src_hash": "2d7d1504b58dddc11ff934bb57fef215",
+    "text": "Djinn Electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.655078Z"
+  },
+  "spell.alptramun_summon.name": {
+    "src_hash": "0343adfc07caa85bf0344dd565816cbf",
+    "text": "Alptramun Summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.657538Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "val omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.659451Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Invocarea Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.659684Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "bufonul de strigoi paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.660170Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "tragerea la țintă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.660450Z"
+  },
+  "spell.big_boss_trolliver_summon.name": {
+    "src_hash": "b2c625654cc5c384790ae76b686883f9",
+    "text": "mare șef trolliver convocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.661341Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "val de replici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.661569Z"
+  },
+  "spell.raging_mage_skill_reducer_2.name": {
+    "src_hash": "1b4d065ee80f1dbdd553b7cc433f56a1",
+    "text": "Reductor de îndemânare a magului furios 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:14.662066Z"
+  },
+  "spell.dreadwing_curse.name": {
+    "src_hash": "6f04ff2059a60aa01e208e0cebc1bd2d",
+    "text": "dreadwing blestem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.459625Z"
+  },
+  "spell.betrayed_wraith_skill_reducer.name": {
+    "src_hash": "333a2e1af1ddefe52520f8f2978a203f",
+    "text": "reductor de pricepere wraith trădat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.460627Z"
+  },
+  "spell.gnomevil_soulfire.name": {
+    "src_hash": "f12a4dd8c3059b8abe022de1f312fb31",
+    "text": "foc de suflet gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.461566Z"
+  },
+  "spell.minotaur_amazon_paralyze.name": {
+    "src_hash": "c88f3b8928239a36ce90d56a34ff900d",
+    "text": "minotaur amazon paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.462415Z"
+  },
+  "spell.twins_skill_reducer.name": {
+    "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
+    "text": "reductor de îndemânare a gemenilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.463072Z"
+  },
+  "spell.zushuka_freeze.name": {
+    "src_hash": "0b3f7c6071b0c23cbf33729be65920ca",
+    "text": "zushuka congela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.463309Z"
+  },
+  "spell.blood_hand_paralyze.name": {
+    "src_hash": "d43d4107cf3c8ca13e2be5930ceb3c29",
+    "text": "mâna de sânge paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.463821Z"
+  },
+  "spell.ravennouslavalurkertarget.name": {
+    "src_hash": "497e978a910324bd53a6e584b83ff9a1",
+    "text": "ravennousLavaLurkerTarget",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.464070Z"
+  },
+  "spell.thorn_summon.name": {
+    "src_hash": "ec458d283e18e30ee3b8efe406f99559",
+    "text": "chemarea spinilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.464288Z"
+  },
+  "spell.big_energy_wave.name": {
+    "src_hash": "7d20925ed4e9434e30ad5f22892439a2",
+    "text": "val mare de energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.464729Z"
+  },
+  "spell.furyosa_deathball.name": {
+    "src_hash": "daf7bc73713b5f8d891c98d697d4bdf1",
+    "text": "Furyosa Minge de moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.465316Z"
+  },
+  "spell.summonchallenge.name": {
+    "src_hash": "7f863ba4a43ed7de3e35f58e2d2fb773",
+    "text": "invoca provocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.465657Z"
+  },
+  "spell.large_fire_ring.name": {
+    "src_hash": "5394e9c93b2017a67c7621e8a265436e",
+    "text": "foc mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.465866Z"
+  },
+  "spell.dipthrah_skill_reducer.name": {
+    "src_hash": "2f1fcdbc32e97fcd940c1ea28020aa45",
+    "text": "reductor de îndemânare a diptrei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.466465Z"
+  },
+  "spell.vulcongra_soulfire.name": {
+    "src_hash": "9b179ffa7a83901c618f09c111fb54d3",
+    "text": "vulcongra fire de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.467594Z"
+  },
+  "spell.malofur_explosion.name": {
+    "src_hash": "9b242cec8044a6a20f5add13d22fcd11",
+    "text": "Explozie Malofur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.467942Z"
+  },
+  "spell.lizard_magistratus_curse.name": {
+    "src_hash": "84b35dc62577dc99d6c038c476121a34",
+    "text": "șopârlă magistratus blestem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.468356Z"
+  },
+  "spell.heal_brain_head.name": {
+    "src_hash": "16798f54286e3470100eb9fa2eed3fe7",
+    "text": "vindeca capul creierului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.468681Z"
+  },
+  "spell.earth_barrage.name": {
+    "src_hash": "5d6ae1b9885ff1aeebc09563b3e1712e",
+    "text": "baraj de pământ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.468955Z"
+  },
+  "spell.glooth_battery_heal.name": {
+    "src_hash": "b616ae108a81f934e3a49de7ff7f8870",
+    "text": "baterie glooth vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:49:33.469242Z"
+  },
+  "spell.ghastly_dragon_wave.name": {
+    "src_hash": "736938e9e7c9c4ab8e28acfd7fa73cdc",
+    "text": "val de dragon înfiorător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.589099Z"
+  },
+  "spell.draken_elite_soulfire.name": {
+    "src_hash": "6ca1fde63ac1e032c99e0627f6e7fa4c",
+    "text": "draken elita sufletească",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.589410Z"
+  },
+  "spell.devourer_summon.name": {
+    "src_hash": "9755d669726bf618c72329d71dcc7a47",
+    "text": "chemarea devoratorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.589647Z"
+  },
+  "spell.tenebris_summon.name": {
+    "src_hash": "9d9f516aa5d5c62ef39377c97a6691f5",
+    "text": "Tenebris Summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.589998Z"
+  },
+  "spell.pythius_the_rotten_summon.name": {
+    "src_hash": "81accc32310a4b6f61930206e170c39b",
+    "text": "pythius cel putred sumon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.590713Z"
+  },
+  "spell.man_in_the_cave_summon.name": {
+    "src_hash": "d18be646d4a8cd3c9769c49067bdb531",
+    "text": "om în peșteră sumează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.591195Z"
+  },
+  "spell.morgaroth_skill_reducer_2.name": {
+    "src_hash": "863723246630037a2d7b72736b8178f9",
+    "text": "reductor de abilități morgaroth 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.591722Z"
+  },
+  "spell.firestarter_soulfire.name": {
+    "src_hash": "20683709310db09463fb32c59f557034",
+    "text": "foc de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.591983Z"
+  },
+  "spell.tyrn_skill_reducer.name": {
+    "src_hash": "32e7ea8698ec3e7bdf775f85c6aa7c6a",
+    "text": "tyrn reductor de pricepere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.592853Z"
+  },
+  "spell.cold_of_winter.name": {
+    "src_hash": "f65e5256fcceac4e54b3de77fe6a56a1",
+    "text": "frigul iernii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.593077Z"
+  },
+  "spell.dworc_paralyze.name": {
+    "src_hash": "f0d751cb81f00e18196c6ff12fdb5f55",
+    "text": "dworc paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.593291Z"
+  },
+  "spell.time_guardian_lost_time.name": {
+    "src_hash": "fc7bacb2db9f90b22285920577ea9e60",
+    "text": "gardianul timpului a pierdut timpul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.593775Z"
+  },
+  "spell.magma_crawler_wave.name": {
+    "src_hash": "3a110c92403b80d53debdca32741f054",
+    "text": "val magma crawler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.594294Z"
+  },
+  "spell.drillworm_paralyze.name": {
+    "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
+    "text": "drillworm paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.594592Z"
+  },
+  "spell.zavarash2_paralyze.name": {
+    "src_hash": "0acbc6a83d4c0d759d98242007f1904a",
+    "text": "zavarash2 paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.594897Z"
+  },
+  "spell.zamulosh_invisible.name": {
+    "src_hash": "1b441bf3a1bd547e0edfd5d8e552afae",
+    "text": "zamulosh invizibil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.595145Z"
+  },
+  "spell.ashfalor_summon.name": {
+    "src_hash": "fd5de32dcca8065ba359061be0d0dc7b",
+    "text": "Ashfalor Summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.595446Z"
+  },
+  "spell.breach_brood_reducer.name": {
+    "src_hash": "93a57b0b3783457c725f7493681f9f15",
+    "text": "reductor de puiet de breach",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.596324Z"
+  },
+  "spell.emberbeastarea.name": {
+    "src_hash": "fae22fdada9c14ba633d0c3532415ff9",
+    "text": "emberBeastArea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.596534Z"
+  },
+  "spell.soulcatcher_summon.name": {
+    "src_hash": "0662b568c576c6f23392f96f22a8fb7f",
+    "text": "invocarea prinsului de suflete",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:00.596999Z"
+  },
+  "spell.wilting_leaf_golem_paralyze.name": {
+    "src_hash": "3cf7df15b6ee67ce2b540279ce9ee46b",
+    "text": "golem de frunze ofilite paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.837218Z"
+  },
+  "spell.chizzoron_the_distorter_paralyze.name": {
+    "src_hash": "af49bf252534550907d97766fd468b44",
+    "text": "chizzoron deformatorul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.839708Z"
+  },
+  "spell.aggresive_lava_wave.name": {
+    "src_hash": "fc5f2e17f06f08c4f8c85e3f66efc4f5",
+    "text": "agresivelavawave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.840100Z"
+  },
+  "spell.zulazza_the_corruptor_skill_reducer.name": {
+    "src_hash": "546ae835b39cd2bf56630b8ebe779559",
+    "text": "zulazza reductorul de aptitudini corupător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.840716Z"
+  },
+  "spell.terofar_curse.name": {
+    "src_hash": "6389db55d88c913fc49a959a272edbeb",
+    "text": "Terofar Blestemul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.840949Z"
+  },
+  "spell.raging_mage_skill_reducer_1.name": {
+    "src_hash": "56401bb1ab93018848c0de7d252cca02",
+    "text": "Reductor de îndemânare a magului furios 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.841481Z"
+  },
+  "spell.boulder_ring.name": {
+    "src_hash": "aadc298ce9732b12ee763c722cf75f9c",
+    "text": "inel de bolovan",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.841706Z"
+  },
+  "spell.the_dark_dancer_summon.name": {
+    "src_hash": "c1d90021e67f6dfddbc092cb463c0704",
+    "text": "dansatorul întunecat chema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.841989Z"
+  },
+  "spell.the_pale_count_manadrain.name": {
+    "src_hash": "7f991595682c6f8c3de5284694b224d5",
+    "text": "The Pale Count Manadrain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.843174Z"
+  },
+  "spell.zushuka_heal.name": {
+    "src_hash": "d4eb5c8db3451ba2c986bb54cf9acd52",
+    "text": "zushuka vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.843436Z"
+  },
+  "spell.ice_barrage.name": {
+    "src_hash": "1d60f3b1dde1dc296ac9c47328e769c9",
+    "text": "baraj de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.843672Z"
+  },
+  "spell.the_blightfather_summon.name": {
+    "src_hash": "f257522b9446429fb94c7f149eb96d0b",
+    "text": "chemarea tatălui năprasnic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.843966Z"
+  },
+  "spell.extended_energy_chain.name": {
+    "src_hash": "9d70431ae04da017cdfc32ade0c9487f",
+    "text": "lanț energetic extins",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.844245Z"
+  },
+  "spell.time_guardiann.name": {
+    "src_hash": "82b056bca2cceacbc0a9c4231c285f6c",
+    "text": "gardianul timpului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.844499Z"
+  },
+  "spell.energy_barrage.name": {
+    "src_hash": "230a96efebea040b8627053d9bfd4bd8",
+    "text": "baraj energetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.844720Z"
+  },
+  "spell.brimstone_bug_wave.name": {
+    "src_hash": "c193de5508c5c027cae14d4e7987facb",
+    "text": "val de bug-uri de pucioasă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.845182Z"
+  },
+  "spell.prince_drazzak_summon.name": {
+    "src_hash": "8058f39ac3b0e816304e9185d34f0dd1",
+    "text": "Prințul Drazzak Invocă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.845495Z"
+  },
+  "spell.frozen_minion_wave.name": {
+    "src_hash": "c60224fd4f7a1e3b44ecae75d73d5095",
+    "text": "val minion înghețat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.845773Z"
+  },
+  "spell.terofar_skill_reducer_2.name": {
+    "src_hash": "2e4b4ad63a6d051ec670c89a32b9cb48",
+    "text": "reductor de îndemânare terofar 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:28.846705Z"
+  },
+  "spell.the_welter_heal2.name": {
+    "src_hash": "e0c4485048ce4ee7d45151b5defdb5b5",
+    "text": "welterul vindeca2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.508985Z"
+  },
+  "spell.the_welter_summon2.name": {
+    "src_hash": "b575b682ca12598061ae498f55604ff5",
+    "text": "invocarea welter2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.509302Z"
+  },
+  "spell.worm_priestess_paralyze.name": {
+    "src_hash": "15fa765c69e9aec356a6ccb56d8ae7ef",
+    "text": "preoteasa vierme paralizeaza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.509608Z"
+  },
+  "spell.coldheart_paralyze.name": {
+    "src_hash": "318a3ce82b944a7094fc41c729aa0311",
+    "text": "paralizie inima rece",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.509883Z"
+  },
+  "spell.doctor_marrow_explosion.name": {
+    "src_hash": "5c8fc7ad4b748509ef534520c8067b48",
+    "text": "Doctor Marrow Explosion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.510390Z"
+  },
+  "spell.hunger_summon.name": {
+    "src_hash": "c21e3faa61efc7c1b0ce8d02e47002bf",
+    "text": "chemarea foamei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.510639Z"
+  },
+  "spell.chizzoron_the_distorter_summon.name": {
+    "src_hash": "0f88d69c500c86b95a5f75a6cb96e291",
+    "text": "chizzoron chemarea deformatorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.513436Z"
+  },
+  "spell.hive_pore_summon.name": {
+    "src_hash": "32868349ad85025642cc1b7934868fa2",
+    "text": "invocarea porilor stupului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.513729Z"
+  },
+  "spell.arkhothep_summon.name": {
+    "src_hash": "95a6a0ff99c0f39dd5f2cc88a0a88898",
+    "text": "arkhotep sumon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.514252Z"
+  },
+  "spell.dread_intruder_wave.name": {
+    "src_hash": "128174aa54c06e2fcd2a1058fa315a40",
+    "text": "groaznic val de intrus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.514700Z"
+  },
+  "spell.glooth_bomb_walkthrough.name": {
+    "src_hash": "0294ca41460340fd1c4c9acc2e07df94",
+    "text": "pasiune glooth bomb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.515168Z"
+  },
+  "spell.deathstrike_paralyze.name": {
+    "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
+    "text": "deathstrike paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.515476Z"
+  },
+  "spell.anomaly_wave.name": {
+    "src_hash": "8255680566fd850dc8b934f81f7fdeb5",
+    "text": "val de anomalie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.515694Z"
+  },
+  "spell.werecrocodile_fire_ring.name": {
+    "src_hash": "f25043479e8b3749a6ba70f30422d299",
+    "text": "inel de foc de crocodil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.516140Z"
+  },
+  "spell.orshabaal_skill_reducer.name": {
+    "src_hash": "b9f12ca14fb77c18211037d3a0e27dbf",
+    "text": "reductor de aptitudini orshabaal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.516594Z"
+  },
+  "spell.sir_valorcrest_summon.name": {
+    "src_hash": "957e35ed048ddd87721f97047a0b325f",
+    "text": "domnule valorcrest sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.516854Z"
+  },
+  "spell.holy_barrage.name": {
+    "src_hash": "c371c369e448d986a545c45319be4a7d",
+    "text": "baraj sfânt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:50:58.517070Z"
+  },
+  "spell.prince_drazzak_druid.name": {
+    "src_hash": "a6b52c25bcc62f3809e1fb744557fb21",
+    "text": "Prințul Drazzak Druid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.484750Z"
+  },
+  "spell.ironblight_freeze.name": {
+    "src_hash": "5aabd86f8100db71557b45a228d2a54a",
+    "text": "ironblight îngheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.485052Z"
+  },
+  "spell.srezz_lleecht.name": {
+    "src_hash": "c6735b9cf39cc4d574972e6d13e79577",
+    "text": "leech valT",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.485297Z"
+  },
+  "spell.abyssador_poison_wave.name": {
+    "src_hash": "ee4f1338ce79ebe520f864cc3bdce8e6",
+    "text": "val de otravă abisador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.487531Z"
+  },
+  "spell.haunter_electrify.name": {
+    "src_hash": "fb2552ad23c3c18710da7a27aac169ec",
+    "text": "bântuitor electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.487835Z"
+  },
+  "spell.massive_energy_elemental_electrify.name": {
+    "src_hash": "01577348ac2989fd49d8486bbaa87616",
+    "text": "electrizare elementară de energie masivă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.488393Z"
+  },
+  "spell.greater_jar_summon.name": {
+    "src_hash": "a46f9cd4a0193eac343be793e6004073",
+    "text": "mai mare borcan convocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.488839Z"
+  },
+  "spell.tyrn_electrify.name": {
+    "src_hash": "dfbb775c781dd837e15bd94ba9041e4f",
+    "text": "tyrn electriza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.489058Z"
+  },
+  "spell.mutated_rat_paralyze.name": {
+    "src_hash": "eb31149e8372974ea0aa8aad1a461e83",
+    "text": "sobolan mutant paralizeaza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.489346Z"
+  },
+  "spell.mutated_human_paralyze.name": {
+    "src_hash": "d3c88ba85b2115e4c98e34dccfd5899d",
+    "text": "paralizie umană mutantă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.489638Z"
+  },
+  "spell.quara_constrictor_electrify.name": {
+    "src_hash": "4086fc55ef1046f29d5b01e2199f798c",
+    "text": "quara constrictor electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.490017Z"
+  },
+  "spell.koshei_the_deathless_curse.name": {
+    "src_hash": "03a1c28d392da32d21f8695c80cfba99",
+    "text": "koshei blestemul fără moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.490960Z"
+  },
+  "spell.the_voice_of_ruin_paralyze.name": {
+    "src_hash": "e29336df79654ba1fe4de78c02fe3317",
+    "text": "vocea ruinei paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.491296Z"
+  },
+  "spell.choking_fear_drown.name": {
+    "src_hash": "39160ee8d7bca7b101f3aeca4829f6a2",
+    "text": "frica sufocată se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.491760Z"
+  },
+  "spell.woodling_paralyze.name": {
+    "src_hash": "97553a2f2fa52064daf5182d66aaddac",
+    "text": "woodling paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.492021Z"
+  },
+  "spell.kraknaknork_poison_wave.name": {
+    "src_hash": "1fd267a3aead63a2997612b7b5401a35",
+    "text": "val de otravă kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.492956Z"
+  },
+  "spell.kraknaknork_ice_wave.name": {
+    "src_hash": "32d29ecc9efa37a24ae26adb5bae9368",
+    "text": "val de gheață kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.493846Z"
+  },
+  "spell.girtablilu_poison_wave.name": {
+    "src_hash": "a4e1224c426e4275b7f4952b67d5845c",
+    "text": "girtablilu poison wave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.494258Z"
+  },
+  "spell.nightstalker_paralyze.name": {
+    "src_hash": "2c84fb8e3597186cf01caef6d50eaf14",
+    "text": "nightstalker paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:27.494546Z"
+  },
+  "spell.ushuriel_electrify.name": {
+    "src_hash": "c5acaade7cf4f44c445dffd0c8216cb2",
+    "text": "ushuriel electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.786532Z"
+  },
+  "spell.large_poison_ring.name": {
+    "src_hash": "133974dafcdccb55f7f557779cc2a53e",
+    "text": "intoxicare mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.786784Z"
+  },
+  "spell.makara_watersplash.name": {
+    "src_hash": "037bbf7c50bbcc1da65c48f2811c57ac",
+    "text": "makarawatersplash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.787085Z"
+  },
+  "spell.annihilon_skill_reducer.name": {
+    "src_hash": "1e1e826d84adab2cbc69606f0b7b4edf",
+    "text": "anihilon skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.787669Z"
+  },
+  "spell.orewalker_wave.name": {
+    "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
+    "text": "val de orewalker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.787921Z"
+  },
+  "spell.shulgrax_summon.name": {
+    "src_hash": "f5a03d22464772d6102203f0fe68bb2c",
+    "text": "shulgrax sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.788144Z"
+  },
+  "spell.prince_drazzak_wave.name": {
+    "src_hash": "d57ae73626ec23c37e78b9c69ab23a58",
+    "text": "prințul drazzak val",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.788424Z"
+  },
+  "spell.destruction_summon.name": {
+    "src_hash": "01065f8da944639a1a4fb3cb16d22117",
+    "text": "chemarea la distrugere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.788756Z"
+  },
+  "spell.urmahlullu_ring.name": {
+    "src_hash": "3c9688d7cc8cc7ed3d5885c74a95794e",
+    "text": "urmahlulluring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.789053Z"
+  },
+  "spell.ironblight_skill_reducer.name": {
+    "src_hash": "5b5f7cfe26648afda2bef49a5709e3fc",
+    "text": "ironblight skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.789408Z"
+  },
+  "spell.ushuriel_curse.name": {
+    "src_hash": "074cb677180b3b31a654751644a331cd",
+    "text": "blestemul ushuriel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.789673Z"
+  },
+  "spell.gorerilla_large_ring.name": {
+    "src_hash": "e99623b0a89c854eac306e6f6d8bd787",
+    "text": "inel mare de gorilă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.790202Z"
+  },
+  "spell.dire_penguin_paralyze.name": {
+    "src_hash": "258aae9d7958e760ba23809d82618ff4",
+    "text": "pinguinul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.790542Z"
+  },
+  "spell.fire_overlord_soulfire.name": {
+    "src_hash": "14c49b0d83520ccc5818f8b871d249fe",
+    "text": "foc supremul sufletului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.790817Z"
+  },
+  "spell.metal_gargoyle_curse.name": {
+    "src_hash": "0787f61ae7e0ee13dbba63aa7a817594",
+    "text": "blestemul garguilor de metal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.791699Z"
+  },
+  "spell.frost_dragon_paralyze_3.name": {
+    "src_hash": "b1f2e2e10ccc00f6ecb46e9e8a4dcbed",
+    "text": "dragonul de îngheț paralizează 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.793477Z"
+  },
+  "spell.zushuka_paralyze.name": {
+    "src_hash": "1ec800aaf80ad82153d7c9859735db29",
+    "text": "zushuka paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.793754Z"
+  },
+  "spell.humongous_fungus_paralyze.name": {
+    "src_hash": "39fed1c99b198b17cda07327d992fc3d",
+    "text": "ciuperca uriașă paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.794054Z"
+  },
+  "spell.demon_paralyze.name": {
+    "src_hash": "2ced5b759655cd9ddc54fb26635b8e54",
+    "text": "demon paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:51:57.794375Z"
+  },
+  "spell.hirintror_freeze.name": {
+    "src_hash": "5e097d6269943f1e56b4c7abecc23198",
+    "text": "hintror freeze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.276612Z"
+  },
+  "spell.forest_fury_skill_reducer_2.name": {
+    "src_hash": "2644e2a7a0006ca1ce8573fb6b0255c1",
+    "text": "reducere de îndemânare a furiei în pădure 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.277221Z"
+  },
+  "spell.lord_of_the_elements_skill_reducer.name": {
+    "src_hash": "a20b38fea9fe86877e8442ae165cf9f3",
+    "text": "stăpânul elementelor reductor de îndemânare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.277824Z"
+  },
+  "spell.barbarian_brutetamer_skill_reducer.name": {
+    "src_hash": "211044459eafd8b75ed888381306b783",
+    "text": "reductor de aptitudini barbare brutetamer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.278808Z"
+  },
+  "spell.the_abomination_summon.name": {
+    "src_hash": "679818ed60c3bfa7fd70f1dce533fa81",
+    "text": "urâciunea chemare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.279085Z"
+  },
+  "spell.braindeath_paralyze.name": {
+    "src_hash": "3378421b02e9645f1d447f7a1a3dd419",
+    "text": "moartea creierului paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.279398Z"
+  },
+  "spell.source_of_corruption_wave.name": {
+    "src_hash": "cb4d34a5ee678fe586cc8fb3f5fc33f4",
+    "text": "Valul sursă a corupției",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.279890Z"
+  },
+  "spell.elder_mummy_paralyze.name": {
+    "src_hash": "ad76cd640c6cdc1ad2b82a7325815639",
+    "text": "mumia bătrână paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.280177Z"
+  },
+  "spell.poison_chain.name": {
+    "src_hash": "f679194633ce29bb9119b5f139c4f81c",
+    "text": "lanț otrăvitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.280432Z"
+  },
+  "spell.quara_raider_watercreature.name": {
+    "src_hash": "7d5d721ab0d2a86ba9bbc313fa8013cb",
+    "text": "Quaraseamonster",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.280652Z"
+  },
+  "spell.zavarash_paralyze.name": {
+    "src_hash": "575268d30e6f6f3e936c60ceb53bf726",
+    "text": "zavarash paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.280910Z"
+  },
+  "spell.gorerilla_small_ring.name": {
+    "src_hash": "cca50583b131400c336440d6eab26c70",
+    "text": "inel mic de gorilă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.282778Z"
+  },
+  "spell.single_ice_chain.name": {
+    "src_hash": "54dec50b624493db9a486c3452a906fb",
+    "text": "singleicechain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.283087Z"
+  },
+  "spell.tenebris_ultimate.name": {
+    "src_hash": "5912095b44eac860fb79a329332874d6",
+    "text": "Tenebris Ultimate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.283413Z"
+  },
+  "spell.ice_overlord_paralyze.name": {
+    "src_hash": "a867f6397c2c6fb5a651d6d928083f87",
+    "text": "stăpânul gheții paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.283715Z"
+  },
+  "spell.elder_wyrm_wave.name": {
+    "src_hash": "b862d08a8964e1e44588a5d002bf8c55",
+    "text": "undă de vârle bătrâne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.284143Z"
+  },
+  "spell.horadron_heal.name": {
+    "src_hash": "4a5495c75a76d981634e523e8bbdd2bd",
+    "text": "horadron heal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.284461Z"
+  },
+  "spell.quara_raider_icering.name": {
+    "src_hash": "dbd2a1042a3ac1c9f65301e8cecc1c12",
+    "text": "quaralargeicering",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.284753Z"
+  },
+  "spell.azerus_summon_4.name": {
+    "src_hash": "ac89901c5c98209cd80fe11c4712fb7f",
+    "text": "invocarea azerului 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:52:30.284983Z"
+  },
+  "spell.quara_plunderer_cross.name": {
+    "src_hash": "963e8ea8774a627a357f0f31eca5aab5",
+    "text": "caracrossmoarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.618964Z"
+  },
+  "spell.single_cloud_chain.name": {
+    "src_hash": "3d17e11dd54e914d7f50de83c2ac71ba",
+    "text": "singlecloudchain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.619302Z"
+  },
+  "spell.hirintror_skill_reducer.name": {
+    "src_hash": "2f173ffebe0983276155a26b1a2c16e4",
+    "text": "hintror skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.619810Z"
+  },
+  "spell.monstor_summon.name": {
+    "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
+    "text": "monstor sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.620052Z"
+  },
+  "spell.crystal_wolf_wave.name": {
+    "src_hash": "27c6efcfdd27636c1353c09872061a0b",
+    "text": "val de lup de cristal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.620533Z"
+  },
+  "spell.plaguesmith_paralyze.name": {
+    "src_hash": "06753eb4a768091b27159764ed117920",
+    "text": "plaguesmith paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.620815Z"
+  },
+  "spell.glooth_generator_summon.name": {
+    "src_hash": "a248dfd1c2ec953a5e05daa52edda24c",
+    "text": "Invocarea Glooth-Generator",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.621088Z"
+  },
+  "spell.death_blob_curse.name": {
+    "src_hash": "86e22b06c5f3a3cd708d46f305fca8f9",
+    "text": "blestemul blob de moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.621928Z"
+  },
+  "spell.terofar_skill_reducer_1.name": {
+    "src_hash": "e574c4bc74dcb7aa615c0616eb9e06c7",
+    "text": "reductor de calificare terofar 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.622815Z"
+  },
+  "spell.plant_attendant_wave.name": {
+    "src_hash": "b3d78c339149125a7b0f4114346eb4b4",
+    "text": "val de însoțitor de plante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.623294Z"
+  },
+  "spell.shargon_heal.name": {
+    "src_hash": "6ff3778db6c46be9033f103981ffd7ca",
+    "text": "Shargon Heal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.623588Z"
+  },
+  "spell.lord_of_the_elements_soulfire.name": {
+    "src_hash": "47b43d663522a204104be603595da3a0",
+    "text": "stăpânul elementelor focul de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.624099Z"
+  },
+  "spell.mindmasher_summon.name": {
+    "src_hash": "fb82b6fdc6ecd01be41a08a91d6ac405",
+    "text": "chemarea mintii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.624468Z"
+  },
+  "spell.dryad_paralyze.name": {
+    "src_hash": "bcf4bf79e672cbb2bdb95d4a8a3453ee",
+    "text": "driade paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.624719Z"
+  },
+  "spell.lost_soul_paralyze.name": {
+    "src_hash": "22f92d0d9a6a8ea0c6fdb0b0367d1f25",
+    "text": "sufletul pierdut paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.624998Z"
+  },
+  "spell.timira_fire_ring.name": {
+    "src_hash": "d4dbeec8cd4e3057b2f48deb42453454",
+    "text": "inel de foc timira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.625821Z"
+  },
+  "spell.crystal_spider_paralyze_2.name": {
+    "src_hash": "65e000bbbca9193153934fb7e303b54a",
+    "text": "paianjenul de cristal paralizează 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.626330Z"
+  },
+  "spell.dread_maiden_rcircle.name": {
+    "src_hash": "f044cf41609104031b589ac2cc324fe1",
+    "text": "dread rcircle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.626622Z"
+  },
+  "spell.sapling_explode.name": {
+    "src_hash": "779c488a650f1720cb0f049fd4f207e8",
+    "text": "puietul explodează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.626865Z"
+  },
+  "spell.infected_weeper_summon.name": {
+    "src_hash": "5d48b1ac09992272779572ce5228fb76",
+    "text": "invocarea plângătoarelor infectate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:02.627161Z"
+  },
+  "spell.blightwalker_paralyze.name": {
+    "src_hash": "e51124ecb3786182defbcb4d579924fd",
+    "text": "blightwalker paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.633931Z"
+  },
+  "spell.werelion_wave.name": {
+    "src_hash": "fa74fff07e5d25858589c66e8508ae96",
+    "text": "val de vârcolac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.634227Z"
+  },
+  "spell.bulltaur_alchemist_avalanche.name": {
+    "src_hash": "58e79740f767fe15ef55046db432f86a",
+    "text": "avalanșă bulltaur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.634609Z"
+  },
+  "spell.exploding_cask.name": {
+    "src_hash": "c539415fe7dcd5002185881c2716e9a8",
+    "text": "Exploding Cask",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.635008Z"
+  },
+  "spell.lavafungus_x_wave.name": {
+    "src_hash": "215ae80515e3fd249143f98a1647580d",
+    "text": "lavafungus x val",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.635284Z"
+  },
+  "spell.jewelry_chest_summon.name": {
+    "src_hash": "ee8d18c219d7ca76035d4fc382f41a65",
+    "text": "Invocare cufăr de bijuterii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.636010Z"
+  },
+  "spell.energy_overlord_paralyze.name": {
+    "src_hash": "0c29221e2116fdb6c370a09564b96bf7",
+    "text": "stăpânul energiei paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.636349Z"
+  },
+  "spell.ancient_scarab_paralyze.name": {
+    "src_hash": "a7ec3187b906ce76a472b670d87f59b9",
+    "text": "scarabeul antic paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.636697Z"
+  },
+  "spell.generator_wave.name": {
+    "src_hash": "ab2a716270aa45c393073a5b0cbc665c",
+    "text": "undă generatoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.636968Z"
+  },
+  "spell.arachnophobica_wavedice.name": {
+    "src_hash": "ceaf2de7274aa3e8be1650ebcd31c3a2",
+    "text": "arahnofobicawavedice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.637239Z"
+  },
+  "spell.ghazbaran_summon.name": {
+    "src_hash": "0010d2177ff532e38ed4cad053dd2e57",
+    "text": "ghazbaran sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.637488Z"
+  },
+  "spell.dirtbeard_summon.name": {
+    "src_hash": "a868a6e090eb520a4548f1b26b16737f",
+    "text": "dirtbeard sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.637770Z"
+  },
+  "spell.lava_golem_soulfire2.name": {
+    "src_hash": "156a629b7df27103fe1bf49727d1deca",
+    "text": "lava golem soulfre2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.638428Z"
+  },
+  "spell.shock_head_paralyze.name": {
+    "src_hash": "261c1b218a892245cd6eea042796e605",
+    "text": "șoc cap paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.638758Z"
+  },
+  "spell.charge_vortex.name": {
+    "src_hash": "c32b9de511ad6749434dbf5dd2e03ec9",
+    "text": "vârtej de încărcare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.639007Z"
+  },
+  "spell.hideous_fungus_poison.name": {
+    "src_hash": "950f0bc94925ce99b89b2c69baff430f",
+    "text": "otravă ciupercă hidosă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.639289Z"
+  },
+  "spell.hot_dog_soulfire.name": {
+    "src_hash": "911258c5426c381ff7939e479048a748",
+    "text": "foc de suflet hot dog",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.639760Z"
+  },
+  "spell.white_weretiger_ice_ring.name": {
+    "src_hash": "f1617c0fc40020f24df6b11d845af8ec",
+    "text": "inel de gheață vârcolac alb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.640246Z"
+  },
+  "spell.mindmasher_drown.name": {
+    "src_hash": "9cd844fd56fb65aec5e4c7ac2ee59e67",
+    "text": "mindmasher se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.640570Z"
+  },
+  "spell.haunted_treeling_paralyze.name": {
+    "src_hash": "cd26170d9e512f1e2e613cffe6da3c4c",
+    "text": "arborele bântuit paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:53:34.640899Z"
+  },
+  "spell.minotaur_wallbreaker_walkthrough.name": {
+    "src_hash": "b7373e9ac23d8d4199def5eefd066a54",
+    "text": "minotaur wallbreaker tutorial",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.761769Z"
+  },
+  "spell.horestis_paralyze.name": {
+    "src_hash": "a4f4b2be974b42e2ae09a4193f3a6e29",
+    "text": "horestis paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.762187Z"
+  },
+  "spell.arthei_summon.name": {
+    "src_hash": "76c73c95dcbaf0479622b03b92691a9f",
+    "text": "arthei sumon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.762445Z"
+  },
+  "spell.canopic_jar_heal.name": {
+    "src_hash": "08d00250b000ce37493e94540dde0896",
+    "text": "borcan canopic vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.762723Z"
+  },
+  "spell.azerus_summon_3.name": {
+    "src_hash": "f132e13c75d28cbadb820998fa56f5be",
+    "text": "invocarea azerului 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.762977Z"
+  },
+  "spell.seacrest_serpent_wave.name": {
+    "src_hash": "c26da9a762ecb2e0cdc44db2d25ea406",
+    "text": "seacrest sarpe val",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.763250Z"
+  },
+  "spell.hideous_fungus_paralyze.name": {
+    "src_hash": "6c4ee6bae8b697a5cd943383d2d2a851",
+    "text": "ciuperca hidosă paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.763579Z"
+  },
+  "spell.podzillaphys_chain.name": {
+    "src_hash": "d0066ec20e49c206946f5b44bedf0f0b",
+    "text": "podzillaphyschain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.765657Z"
+  },
+  "spell.frost_dragon_paralyze_1.name": {
+    "src_hash": "93d1f160fcc199b75d281782ae91df7a",
+    "text": "dragonul de îngheț paralizează 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.767412Z"
+  },
+  "spell.ghazbaran_skill_reducer_2.name": {
+    "src_hash": "edb6c3cd04556245eb946083c0d81691",
+    "text": "reductor de abilități ghazbaran 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.767904Z"
+  },
+  "spell.werewolf_skill_reducer.name": {
+    "src_hash": "03190248daffc0cb119d91617b8b0ce0",
+    "text": "reducător de îndemânare vârcolac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.768384Z"
+  },
+  "spell.verminor_summon.name": {
+    "src_hash": "e5609bfa4280db95f461c539f5c7b395",
+    "text": "chemarea unui verminor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.768619Z"
+  },
+  "spell.hell_hole_summon.name": {
+    "src_hash": "0d423b336d18a0eec44f0d28d15dcee7",
+    "text": "chemarea iadului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.768857Z"
+  },
+  "spell.fury_skill_reducer_1.name": {
+    "src_hash": "2ff08668178e60437b2a9914d85524cf",
+    "text": "reductor de îndemânare a furiei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.769348Z"
+  },
+  "spell.mitmah_vanguard_hugeblackring.name": {
+    "src_hash": "56880b3fbd8eb63890fb11cf037e43ce",
+    "text": "inel negru uriaș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.769592Z"
+  },
+  "spell.choking_fear_paralyze.name": {
+    "src_hash": "1ed18b5dd8a0a95f82c3c83e446ecf40",
+    "text": "frica de sufocare paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.770061Z"
+  },
+  "spell.gnomevil_drunk.name": {
+    "src_hash": "1cbe27586721c72d43d8289c2440b878",
+    "text": "gnomevil beat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.770349Z"
+  },
+  "spell.mahrdis_soulfire.name": {
+    "src_hash": "57a8f6368f7b20867c4fb5d6da7219f0",
+    "text": "foc de suflet mahrdis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:04.771225Z"
+  },
+  "spell.anomaly_break.name": {
+    "src_hash": "aa47d0a08e52fc6415bf7e86324537fb",
+    "text": "pauza de anomalie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.982262Z"
+  },
+  "spell.apprentice_sheng_summon.name": {
+    "src_hash": "c3b6b41da9d83e9bdedc815a926295c0",
+    "text": "ucenic sheng summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.982839Z"
+  },
+  "spell.rotthing_shaper.name": {
+    "src_hash": "34186e2e9e381f221e74a91e73b62f82",
+    "text": "putrezitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.983079Z"
+  },
+  "spell.werewolf_summon.name": {
+    "src_hash": "244197315c1b0a4257f4ba14ac9b5e26",
+    "text": "vârcolac chemare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.983322Z"
+  },
+  "spell.betrayed_wraith_paralyze.name": {
+    "src_hash": "64f99c356a8dc25fc514e7d761f62d3b",
+    "text": "wraith trădat paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.983627Z"
+  },
+  "spell.morgaroth_paralyze.name": {
+    "src_hash": "e9b3629ccd8c10b74737a685a57a243f",
+    "text": "morgaroth paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.983937Z"
+  },
+  "spell.deathstrike_manadrain.name": {
+    "src_hash": "01a2f69ea46ac9c62aa971a84b48a6ce",
+    "text": "deathstrike manadrain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.984310Z"
+  },
+  "spell.plagueroot_skill_reducer.name": {
+    "src_hash": "45369f9c11a15a1b5131e3d0bd52d9ab",
+    "text": "reductor de aptitudini plagueroot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.985302Z"
+  },
+  "spell.slime_puddle_paralyze.name": {
+    "src_hash": "2ecc0bb85637af2462ceebd3b030896a",
+    "text": "baltă de slime paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.986260Z"
+  },
+  "spell.morgaroth_skill_reducer_1.name": {
+    "src_hash": "3611981e0ab9f12ef69a7bfdad81a978",
+    "text": "reductor de aptitudini morgaroth 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.986768Z"
+  },
+  "spell.lord_azaram_wave.name": {
+    "src_hash": "3fb0877e9780427f3d9a00e7f1de9b1c",
+    "text": "lord azaram val",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.987206Z"
+  },
+  "spell.tanjis_skill_reducer.name": {
+    "src_hash": "50e236264035970b6b31ee6f43f4a2dc",
+    "text": "tanjis skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.987579Z"
+  },
+  "spell.dwarf_henchman_drown.name": {
+    "src_hash": "a48d4381e55d438bc5e5ca8f893f17c4",
+    "text": "scolo pitic se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.988091Z"
+  },
+  "spell.icicle_heal.name": {
+    "src_hash": "b15d568c4f6dcc60c39558970adda29a",
+    "text": "țurțuri vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.988321Z"
+  },
+  "spell.thunderstorm_ring.name": {
+    "src_hash": "868d659ece6a15bb01146cc6875c2d3a",
+    "text": "inel de furtună",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.988572Z"
+  },
+  "spell.large_pink_ring.name": {
+    "src_hash": "5215e7d3fa9f9d7a1cd07bfde93315bb",
+    "text": "inel roz mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.988857Z"
+  },
+  "spell.azerus_soulfire_1.name": {
+    "src_hash": "8c7e3e4f4cf2879abae2002e3f4f2462",
+    "text": "foc de suflet azer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.989292Z"
+  },
+  "spell.plagirath_bog.name": {
+    "src_hash": "945ee8043e035ff02156ccc0c96c7817",
+    "text": "mlaștină plagirată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.989532Z"
+  },
+  "spell.devourer_paralyze.name": {
+    "src_hash": "75997b5c73c2264686d92d09db7279ad",
+    "text": "devorator paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.989830Z"
+  },
+  "spell.glooth_fairy_paralyze.name": {
+    "src_hash": "dd0ceb38a3f8db897e9faaa40c6cf12a",
+    "text": "glooth fairy paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:32.990402Z"
+  },
+  "spell.souleater_wave.name": {
+    "src_hash": "533f49165bd5fb4a35fafe2cdd6877d8",
+    "text": "val de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.269609Z"
+  },
+  "spell.djinn_cancel_invisibility.name": {
+    "src_hash": "c6f443c270cd529fcffed0a8c36ab816",
+    "text": "djinn anulează invizibilitatea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.269946Z"
+  },
+  "spell.defiler_paralyze_2.name": {
+    "src_hash": "15e0934ef2bf1ceb9fc0bf532bc6d023",
+    "text": "pângăritorul paralizează 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.270305Z"
+  },
+  "spell.deathstrike_freeze.name": {
+    "src_hash": "178bb77fae9e687e2746b05123e5c5d8",
+    "text": "înghețul loviturii mortale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.272097Z"
+  },
+  "spell.timira_fire_explosion.name": {
+    "src_hash": "2afde35d26cffaca7ee5e9e698245b16",
+    "text": "explozie timira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.272346Z"
+  },
+  "spell.emerald_tortoise_large_ring.name": {
+    "src_hash": "432e01ab819a139df39a60b40933a827",
+    "text": "inel mare broasca testoasa de smarald",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.272851Z"
+  },
+  "spell.feversleep_skill_reducer.name": {
+    "src_hash": "7338bc56d9158f14ae17d56e77dda0b2",
+    "text": "reductor de îndemânare febră somn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.273347Z"
+  },
+  "spell.dreadbeast_summon.name": {
+    "src_hash": "cce70fc0d3b474e3f85b5937e3f973db",
+    "text": "dreadbeast sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.273585Z"
+  },
+  "spell.askarak_wave.name": {
+    "src_hash": "97c28802a39c99198c9a8745cf8f9c20",
+    "text": "val askarak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.273786Z"
+  },
+  "spell.kraknaknork_paralyze.name": {
+    "src_hash": "da4cd9850f906929b4cec3430784c035",
+    "text": "kraknaknork paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.274052Z"
+  },
+  "spell.prince_drazzak_paladin.name": {
+    "src_hash": "bc401da9608e731041a4ba1904f33b99",
+    "text": "Prințul Drazzak Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.274489Z"
+  },
+  "spell.ice_witch_paralyze.name": {
+    "src_hash": "7199a8a39446b42186fb4dbaca20840b",
+    "text": "vrăjitoarea de gheață paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.275101Z"
+  },
+  "spell.lizard_wave.name": {
+    "src_hash": "5b8ab110cece3c95591b0ab9ca43db55",
+    "text": "val de șopârlă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.276717Z"
+  },
+  "spell.soulwars_fear.name": {
+    "src_hash": "3e0dd2531384abc8f4af33926ccccf08",
+    "text": "sufletele se tem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.276943Z"
+  },
+  "spell.djinn_electrify_2.name": {
+    "src_hash": "9ba21f3cc17a2bf11e485e9591c01719",
+    "text": "djinn electrify 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.277262Z"
+  },
+  "spell.mephiles_summon.name": {
+    "src_hash": "493a928dfd634b85495b871638a8ac40",
+    "text": "mephiles invocă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.277527Z"
+  },
+  "spell.headpecker_explosion.name": {
+    "src_hash": "de3388442f5b122218281e39c3999e34",
+    "text": "explozie de ciocănitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.277812Z"
+  },
+  "spell.mazoran_fire.name": {
+    "src_hash": "a2e894fa7844589482518077ff519c74",
+    "text": "Focul Mazoran",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:54:52.278022Z"
+  },
+  "spell.abyssador_paralyze.name": {
+    "src_hash": "06cd68c0fc1c546e9dcdc49d6ef6162d",
+    "text": "abysador paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.769445Z"
+  },
+  "spell.fire_wave_delayed.name": {
+    "src_hash": "bddc68cd69d65d5579ef4c312c310f6b",
+    "text": "val de foc întârziat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.769904Z"
+  },
+  "spell.devourer_wave.name": {
+    "src_hash": "51004d935f7b17d4917760e75bf9aa39",
+    "text": "val devorator",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.771799Z"
+  },
+  "spell.draken_abomination_curse.name": {
+    "src_hash": "5ad42b9cd41078259bb52459e47e5e5c",
+    "text": "blestem urâciune draken",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.772090Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_1.name": {
+    "src_hash": "0e0b843358d258c61ebbd207325284e6",
+    "text": "reductor de îndemânare pitic înrobit 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.772598Z"
+  },
+  "spell.lord_of_the_elements_paralyze.name": {
+    "src_hash": "2ac99af442165874bd9e7acc66c8ca01",
+    "text": "stăpânul elementelor paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.772921Z"
+  },
+  "spell.large_purple_ring_smoke.name": {
+    "src_hash": "b36e86bd6d9bd21d4eeaef9f8107b54a",
+    "text": "mare violet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.773142Z"
+  },
+  "spell.the_dreadorian_drown.name": {
+    "src_hash": "cfec1a21dfbdeb6a27be3cb46600e0cd",
+    "text": "dreadorianul se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.775424Z"
+  },
+  "spell.spitter_paralyze.name": {
+    "src_hash": "81b6d0010c15fcc3b1cbb59613c45b4e",
+    "text": "scuipat paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.775690Z"
+  },
+  "spell.big_skill_reducer.name": {
+    "src_hash": "54d5d7fb1c8f4e843d1087e9affad704",
+    "text": "mare reductor de calificare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.776251Z"
+  },
+  "spell.lizard_dragon_priest_summon.name": {
+    "src_hash": "8b01714860ec4402119104f8a042bf86",
+    "text": "șopârlă dragon preot sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.776861Z"
+  },
+  "spell.hirintror_summon.name": {
+    "src_hash": "226749efb9749411777adb1c1c80e050",
+    "text": "hintror sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.777103Z"
+  },
+  "spell.weeper_paralyze.name": {
+    "src_hash": "7ce49794752e61c5d55effd3450643ac",
+    "text": "plângătorul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.777350Z"
+  },
+  "spell.dark_torturer_skill_reducer.name": {
+    "src_hash": "f6a8dde9975736c82c236072e2c49e6a",
+    "text": "reductor de aptitudini torționar întunecat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.777887Z"
+  },
+  "spell.sabretooth_wave.name": {
+    "src_hash": "11ba6b246e2c16234efc841c315fb67a",
+    "text": "val din dinti de sabie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.778372Z"
+  },
+  "spell.big_energy_purple_wave2.name": {
+    "src_hash": "e9ac8c2be5127b9fed7d055e1210969c",
+    "text": "mare energie violet val2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.778853Z"
+  },
+  "spell.quara_raider_watersplash.name": {
+    "src_hash": "b144e473c8c634ca2b98da1e34c49d26",
+    "text": "quarawatersplash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:23.779168Z"
+  },
+  "spell.bonebeast_paralyze.name": {
+    "src_hash": "6432a2882420f03ee4a993d56669b4d2",
+    "text": "bonebeast paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.301665Z"
+  },
+  "spell.gnomevil_electrify.name": {
+    "src_hash": "b3e7d844172524af79bcf464d61c50e1",
+    "text": "gnomevil electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.302021Z"
+  },
+  "spell.large_blackportal_ring.name": {
+    "src_hash": "7ef2e8aa9f91fd75b36ce006b7d6c92b",
+    "text": "mare moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.302356Z"
+  },
+  "spell.nighthunter_wave.name": {
+    "src_hash": "0b1ee9bdbc2a07f9ad1765e30b90fbd3",
+    "text": "val de vânători de noapte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.303041Z"
+  },
+  "spell.the_pale_count_wave.name": {
+    "src_hash": "1d572cc7873a72ef0bf9f5a17202b7d7",
+    "text": "valul palid de numărare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.303553Z"
+  },
+  "spell.zamulosh_tp.name": {
+    "src_hash": "c43e31bcaa8f70cca397a6932fa7ecbd",
+    "text": "zamulosh tp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.303875Z"
+  },
+  "spell.undead_jester_summon.name": {
+    "src_hash": "58ea2d14fbf48d44803f3afab51f7e15",
+    "text": "invocarea bufonului de strigoi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.304361Z"
+  },
+  "spell.hirintror_heal.name": {
+    "src_hash": "5f638b6a95145c0e9b3da170c7870d73",
+    "text": "hintror heal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.304596Z"
+  },
+  "spell.extended_fire_chain.name": {
+    "src_hash": "8caf355463f69ce4a12cd45f05b57d9c",
+    "text": "lanț de foc extins",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.305092Z"
+  },
+  "spell.unchained_fire_beam.name": {
+    "src_hash": "e932e0cf2517e157cbe4f6240a6fb750",
+    "text": "fascicul de foc dezlănţuit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.305598Z"
+  },
+  "spell.weeper_skill_reducer.name": {
+    "src_hash": "15d60c7a8d19c308f92d607bece7d508",
+    "text": "reductor de aptitudini de plâns",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.306142Z"
+  },
+  "spell.madareth_skill_reducer.name": {
+    "src_hash": "031038bd3627de0bcb7d71c152be64c9",
+    "text": "reductor de aptitudini madareth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.307114Z"
+  },
+  "spell.glooth_fairy_healing.name": {
+    "src_hash": "2c246feca5cd4064568fb859e13d6f50",
+    "text": "glooth fairy vindecare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.307666Z"
+  },
+  "spell.fury_paralyze.name": {
+    "src_hash": "cf3ad4e0c1a0ec0fcda7ea4a1c8d3fc8",
+    "text": "furia paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.307927Z"
+  },
+  "spell.brimstone_bug_paralyze.name": {
+    "src_hash": "f16b965d9366206844c0b2265a667aaa",
+    "text": "insectă de pucioasă paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.308414Z"
+  },
+  "spell.walker_skill_reducer.name": {
+    "src_hash": "31df4ee9ae9562ab50137641b8b89fd3",
+    "text": "reductor de îndemânare a mersului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.308883Z"
+  },
+  "spell.energy_elemental_electrify.name": {
+    "src_hash": "2a1ea6c450e7749c46e84b7be86048df",
+    "text": "electrizarea elementului energetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.309163Z"
+  },
+  "spell.pythius_the_rotten_curse.name": {
+    "src_hash": "9124a1aaad7c7bb40f19678489b66f63",
+    "text": "pythius blestemul putred",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.309433Z"
+  },
+  "spell.frazzlemaw_paralyze.name": {
+    "src_hash": "726e167b4b4c7c83bc91c0780a87362e",
+    "text": "frazzlemaw paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.309700Z"
+  },
+  "spell.jaul_paralyze.name": {
+    "src_hash": "7e7897bffaa28447e89f4fa8b4163866",
+    "text": "jaul paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:55:53.309910Z"
+  },
+  "spell.zulazza_the_corruptor_paralyze.name": {
+    "src_hash": "308dafdd1960d7ba76c959c9cb7460f3",
+    "text": "zulazza corupătorul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.944220Z"
+  },
+  "spell.defiler_paralyze_1.name": {
+    "src_hash": "8d0891ca8afcbf0de5cf31c777aad85e",
+    "text": "pângăritor paralizează 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.944990Z"
+  },
+  "spell.ice_crystal_bomb.name": {
+    "src_hash": "47cb0913ea63b98a2f9a0014654dddca",
+    "text": "Bombă de cristal de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.946434Z"
+  },
+  "spell.plagirath_summon.name": {
+    "src_hash": "127e27a724e3e408103d86bb257fb7a3",
+    "text": "plagirath invocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.946786Z"
+  },
+  "spell.morgaroth_summon.name": {
+    "src_hash": "dd4f9b69b8843e395f18607b798360e0",
+    "text": "morgaroth sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.947039Z"
+  },
+  "spell.medusa_paralyze.name": {
+    "src_hash": "8dbddaef45f20aa2c1b6996cd170dac0",
+    "text": "medusa paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.947326Z"
+  },
+  "spell.dharalion_skill_reducer.name": {
+    "src_hash": "5571b33619459ef69ee0dd69aeac5fcf",
+    "text": "dharalion skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.947719Z"
+  },
+  "spell.war_golem_skill_reducer.name": {
+    "src_hash": "72d9c4fa4f27d181d4b8abc66285317d",
+    "text": "reductor de abilități de golem de război",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.948738Z"
+  },
+  "spell.evil_sheep_lord_summon.name": {
+    "src_hash": "4724c20d690dfa69101e3d9aafe21838",
+    "text": "Domnul oilor rele chema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.949236Z"
+  },
+  "spell.death_chain.name": {
+    "src_hash": "89909507732e0ff901e6dcd695682642",
+    "text": "lanțul morții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.949476Z"
+  },
+  "spell.bulltaur_ewave.name": {
+    "src_hash": "10bd1e3bdc9053dd017f0ed22b45622d",
+    "text": "bulltaurewave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.949809Z"
+  },
+  "spell.demon_outcast_skill_reducer.name": {
+    "src_hash": "39b7b26b433685ece72dff67c23e949b",
+    "text": "reductor de abilități demon proscris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.950634Z"
+  },
+  "spell.quara_looter_small_icering.name": {
+    "src_hash": "c08f75aa4d53551e90e929c80eb29ced",
+    "text": "carasmallicering",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.950918Z"
+  },
+  "spell.pixie_skill_reducer.name": {
+    "src_hash": "71e60467b185cf3e8e617997876dd7bc",
+    "text": "reductor de îndemânare pixie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.951954Z"
+  },
+  "spell.emerald_tortoise_small_explosion.name": {
+    "src_hash": "4eacc1d6a9cbd60afe311b07d4f6f586",
+    "text": "broasca testoasa de smarald mica explozie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.952585Z"
+  },
+  "spell.gaz_functions.name": {
+    "src_hash": "5605eef2fe0b52b733a694d3e216630b",
+    "text": "Funcții Gaz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.952867Z"
+  },
+  "spell.rotthing_explo.name": {
+    "src_hash": "cbdd680ae2c93e99c7e7813b5c4933c9",
+    "text": "rotthligexplo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.953293Z"
+  },
+  "spell.extended_holy_chain.name": {
+    "src_hash": "74a88c76577a04e0125930e38bed9b34",
+    "text": "lanț sfânt prelungit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.953626Z"
+  },
+  "spell.feverish_citizen_drunk.name": {
+    "src_hash": "adad448ef8f3c1f4f320aaa2cb41962a",
+    "text": "cetăţean febril beat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.953952Z"
+  },
+  "spell.rootkraken_rootearth.name": {
+    "src_hash": "bc82eb51e01eb57bb7061a1b20e2919f",
+    "text": "rootkrakentwo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:22.954403Z"
+  },
+  "spell.lord_of_the_elements_summon.name": {
+    "src_hash": "8d47763892e8831dc63616aba012f475",
+    "text": "stăpânul elementelor chema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.085194Z"
+  },
+  "spell.naga_death.name": {
+    "src_hash": "7f4f673b1b957c8ed3a3bf87a87804dc",
+    "text": "nagadeathattack",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.085529Z"
+  },
+  "spell.essence_of_darkness_curse.name": {
+    "src_hash": "d2b03f8260b3dbd6d4d27b63dbae9435",
+    "text": "esența întunericului blestem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.085925Z"
+  },
+  "spell.destroy_magic_walls.name": {
+    "src_hash": "d7c21885afde215137b712be77f50ff3",
+    "text": "distruge zidurile magice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.086317Z"
+  },
+  "spell.ferumbras_soulfire.name": {
+    "src_hash": "072b0af64874c71dc92d45d4d054a9ba",
+    "text": "ferumbras fire de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.086803Z"
+  },
+  "spell.ghoulish_hyaena_wave.name": {
+    "src_hash": "df3f54c12d82fa4cebabb3283bca80cf",
+    "text": "val de hiena macabra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.087287Z"
+  },
+  "spell.rift_brood_electrify.name": {
+    "src_hash": "8a30162a5c76d0e9ac8716280a93b62b",
+    "text": "puiet de ruptură electriza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.087842Z"
+  },
+  "spell.large_holy_ring.name": {
+    "src_hash": "c8c06c22bed3ee6297e20f5b6e3e1c1c",
+    "text": "mare sfântă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.088082Z"
+  },
+  "spell.humongous_fungus_poison.name": {
+    "src_hash": "0afb8925058ee4caa3726571f89d82e0",
+    "text": "uriașă otravă fungică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.088374Z"
+  },
+  "spell.svoren_the_mad_paralyze.name": {
+    "src_hash": "b257fab7ad90f26a0832e4669a3f8979",
+    "text": "svoren nebunul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.088669Z"
+  },
+  "spell.mazoran_summon.name": {
+    "src_hash": "f5623c8ad0253babb715e7766eca8184",
+    "text": "mazoran sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.088917Z"
+  },
+  "spell.lloyd_wave2.name": {
+    "src_hash": "9319cdf302ce92d26abf3e5f15200fa6",
+    "text": "lloyd wave2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.089208Z"
+  },
+  "spell.death_barrage.name": {
+    "src_hash": "5c966071278517536372bf0aac55fb5d",
+    "text": "baraj de moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.089428Z"
+  },
+  "spell.ghastly_dragon_curse.name": {
+    "src_hash": "c0cd551b01231ad2c1062e531822065c",
+    "text": "blestemul înfiorător al dragonului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.089949Z"
+  },
+  "spell.chakoya_freeze.name": {
+    "src_hash": "6a3672fa2fed124fcab322c87acddafb",
+    "text": "îngheța chakoya",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.090439Z"
+  },
+  "spell.charged_energy_elemental_electrify.name": {
+    "src_hash": "52e617f12e586b2391acd4b35d7971cd",
+    "text": "energie încărcată electrificare elementară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.091072Z"
+  },
+  "spell.bulltaur_forge_priest_explosion.name": {
+    "src_hash": "229abd63d940641bc7cd221f22b38f8f",
+    "text": "explozie bulltaur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.091326Z"
+  },
+  "spell.the_welter_paralyze.name": {
+    "src_hash": "60750769a747d24a9604cc88eecd3ffa",
+    "text": "welterul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.091617Z"
+  },
+  "spell.emberbeasthur.name": {
+    "src_hash": "666dfabe7e2a9a5437bc86b436599089",
+    "text": "emberBeastHur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.091829Z"
+  },
+  "spell.lost_thrower_skill_reducer.name": {
+    "src_hash": "b2a23e9e543a45fe2efc386768f3aec9",
+    "text": "reducere de îndemânare a aruncătorului pierdut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:56:54.092346Z"
+  },
+  "spell.diabolic_imp_skill_reducer.name": {
+    "src_hash": "012705c8713981bfe32096c65307542f",
+    "text": "reductor de îndemânare diabolic imp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.052249Z"
+  },
+  "spell.hellgorak_skill_reducer.name": {
+    "src_hash": "6e3b641e2c90757a1e0246295e67ec27",
+    "text": "Hellgorak reductor de aptitudini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.053132Z"
+  },
+  "spell.shock_head_skill_reducer_1.name": {
+    "src_hash": "0a7f8f8996d58b43aa43c915ac4cacd6",
+    "text": "reductor de calificare a capului de șoc 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.053690Z"
+  },
+  "spell.bane_of_light_paralyze.name": {
+    "src_hash": "fb03073ef8235d1ed2617048d376206e",
+    "text": "ruina luminii paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.054007Z"
+  },
+  "spell.ghazbaran_skill_reducer_1.name": {
+    "src_hash": "fbdc5b81beb4fb8e597418d7e1b21ed1",
+    "text": "reductor de aptitudini ghazbaran 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.054690Z"
+  },
+  "spell.elder_wyrm_electrify.name": {
+    "src_hash": "e7e62046901105389cd4f3b3fdcf11db",
+    "text": "vârle bătrân se electrizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.055219Z"
+  },
+  "spell.gnorre_chyllson_paralyze.name": {
+    "src_hash": "4ea0806f6752bbfe8e3bc6caec634014",
+    "text": "gnorre chyllson paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.056047Z"
+  },
+  "spell.megasylvan_yselda_mleech.name": {
+    "src_hash": "3c0cdc82c29c8d1242c70620559ca797",
+    "text": "mana leechMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.057764Z"
+  },
+  "spell.shlorg_paralyze.name": {
+    "src_hash": "cd78e060f9533cd27a1289f4656625b9",
+    "text": "shlorg paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.058044Z"
+  },
+  "spell.quara_raider_shoot.name": {
+    "src_hash": "79e5fcd67b8270947c506f4085c8c023",
+    "text": "cararaidershoot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.058326Z"
+  },
+  "spell.pythius_the_rotten_paralyze.name": {
+    "src_hash": "cbe75c7d24a90e44a72390a8d4374841",
+    "text": "pythius cel putred paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.058991Z"
+  },
+  "spell.furyosa_heal.name": {
+    "src_hash": "bc9ff064a5e87377e9aec15b013e6bc4",
+    "text": "furyosa vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.059212Z"
+  },
+  "spell.undead_cavebear_curse.name": {
+    "src_hash": "51734a280f848e861846316bf136d8ac",
+    "text": "blestemul strigoilor de peșteră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.059684Z"
+  },
+  "spell.zugurosh_soulfire.name": {
+    "src_hash": "5d00482e715b3cbf5ae525f6194311eb",
+    "text": "zugurosh fire de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.062537Z"
+  },
+  "spell.undead_dragon_curse.name": {
+    "src_hash": "b92337fee45029436118eff3ab797275",
+    "text": "blestemul dragonului strigoi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.062803Z"
+  },
+  "spell.the_imperor_summon.name": {
+    "src_hash": "e95f65c7bfa433438fb65d93d67fed04",
+    "text": "chemarea imperorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.063079Z"
+  },
+  "spell.mana_drain_chain.name": {
+    "src_hash": "946d777bac68823d29f74ca5f9f8f710",
+    "text": "lanț de scurgere a mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.063957Z"
+  },
+  "spell.death_priest_shargon_dazzle.name": {
+    "src_hash": "650af20a824dd7ad6cbcde85a3c660d1",
+    "text": "moarte preot shargon orbire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:21.064821Z"
+  },
+  "spell.furyosa_manadrain.name": {
+    "src_hash": "79750b7b0dc8e4b410fbc73e2e9af690",
+    "text": "furyosa manadrain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.943751Z"
+  },
+  "spell.azerus_summon_2.name": {
+    "src_hash": "f833c24c73b1331c694bdbb1cd06d1a3",
+    "text": "invocarea azerului 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.944012Z"
+  },
+  "spell.rustheap_golem_electrify.name": {
+    "src_hash": "ca0392516b101ec892f2c6e60b0348d8",
+    "text": "Golem rustheap electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.944644Z"
+  },
+  "spell.demon_summon.name": {
+    "src_hash": "b44c360107cc4752e61580e7db80d06b",
+    "text": "invocarea demonilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.945095Z"
+  },
+  "spell.eruption_of_destruction_explosion.name": {
+    "src_hash": "5266efea431f223d25150520536ad52e",
+    "text": "erupție de distrugere explozie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.945683Z"
+  },
+  "spell.furyosa_skill_reducer.name": {
+    "src_hash": "a1cde2f82a3cf2be030756aaca93b06b",
+    "text": "reductor de aptitudini furyosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.946214Z"
+  },
+  "spell.the_dreadorian_soulfire.name": {
+    "src_hash": "a7800092edee9e3c1df094a493c909ab",
+    "text": "sufletul groaznic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.946491Z"
+  },
+  "spell.single_death_chain.name": {
+    "src_hash": "a02961d385f37635ed4701f197ebb7f8",
+    "text": "singledeathchain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.946811Z"
+  },
+  "spell.undertaker_square_explosion.name": {
+    "src_hash": "1fc35b28fbc60c7ce946a0c477205c1e",
+    "text": "explozie în pătrat de pompe funebre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.949592Z"
+  },
+  "spell.grand_mother_foulscale_summon.name": {
+    "src_hash": "7b708ee438ad0e9f09a5637635fc3fc8",
+    "text": "bunică-mamă faultscale invocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.949940Z"
+  },
+  "spell.zavarash_heal.name": {
+    "src_hash": "135e011beddf23c8f0af9c905bc267a8",
+    "text": "zavarash vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.950252Z"
+  },
+  "spell.fury_skill_reducer_2.name": {
+    "src_hash": "f86e8e4cb79667e4d020ac3a499458ce",
+    "text": "reductor de abilități de furie 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.950779Z"
+  },
+  "spell.iksyapunac_wave.name": {
+    "src_hash": "10f144518be9a4771fa595c4d4804886",
+    "text": "iksyapunacwave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.951144Z"
+  },
+  "spell.massive_fire_elemental_soulfire.name": {
+    "src_hash": "7c5c70852014a445d8dc7608611428a0",
+    "text": "foc masiv foc elementar de suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.951668Z"
+  },
+  "spell.furyosa_summon.name": {
+    "src_hash": "81eb198d71dfa0dc14dd3386e7acf025",
+    "text": "furyosa sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.951898Z"
+  },
+  "spell.hellspawn_soulfire.name": {
+    "src_hash": "d0fe4e79c3bc48d8d61c1e17d1080875",
+    "text": "focul de suflet al iadului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.952397Z"
+  },
+  "spell.energized_raging_mage_skill_reducer.name": {
+    "src_hash": "b4dfef074ef9875ac89095b68ad2b4e1",
+    "text": "reductor de îndemânare a magului furios energizat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.952968Z"
+  },
+  "spell.devourer_death_wave.name": {
+    "src_hash": "10e3e19bb69445be737c88eaccc8e0ca",
+    "text": "devorator val de moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:57:51.953481Z"
+  },
+  "spell.emerald_tortoise_small_ring.name": {
+    "src_hash": "8e19e5f1686cce2d10cfd623c66058d4",
+    "text": "inel mic de broasca testoasa de smarald",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.980318Z"
+  },
+  "spell.ocyakao_freeze.name": {
+    "src_hash": "11d90e2b972e1b3b7972f298543011fd",
+    "text": "ocyakao congela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.980553Z"
+  },
+  "spell.grandfather_tridian_paralyze.name": {
+    "src_hash": "7dd00114bfc72f42bd90f9a1a1b2d7c0",
+    "text": "bunicul tridian paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.980895Z"
+  },
+  "spell.furyosa_soulfire.name": {
+    "src_hash": "c80c0887a1304f177e47e46778324964",
+    "text": "foc de suflet furyosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.981375Z"
+  },
+  "spell.war_golem_electrify.name": {
+    "src_hash": "a4bae54f86b9911c7f21ee75b720f737",
+    "text": "Golem de război electrizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.982324Z"
+  },
+  "spell.mutated_bat_curse.name": {
+    "src_hash": "aa9746de5b3643b6abfb4a34d4100f3a",
+    "text": "blestem mutant de lilieci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.982773Z"
+  },
+  "spell.energy_pulse_explosion.name": {
+    "src_hash": "8830edf36a11d56157d7f9b7838e7ba4",
+    "text": "explozie de impuls de energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.983266Z"
+  },
+  "spell.the_ravager_heal.name": {
+    "src_hash": "4e00f2bc972185bad86797bf84766b1c",
+    "text": "răpitorul se vindecă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.983545Z"
+  },
+  "spell.silencer_skill_reducer.name": {
+    "src_hash": "c4e710b6a95ef41854782db271578e3b",
+    "text": "amortizor skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.983993Z"
+  },
+  "spell.big_lifedrain_wave.name": {
+    "src_hash": "ee7026a8942cab13c77f33fa56ad8423",
+    "text": "val mare de scurgere a vieții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.984522Z"
+  },
+  "spell.boogey_summon.name": {
+    "src_hash": "77a352c0e0eca2098afe5e249c1d9d17",
+    "text": "boogey sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.984739Z"
+  },
+  "spell.mitmahseer_wave.name": {
+    "src_hash": "b34f7156fc686898b05ccc15e49062b9",
+    "text": "mitmahseekwave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.985038Z"
+  },
+  "spell.diblis_the_fair_summon.name": {
+    "src_hash": "394187005194086cf1ef3e2cc4c2c68d",
+    "text": "diblis justa chemare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.985351Z"
+  },
+  "spell.outburst_explode.name": {
+    "src_hash": "f78e1f053282706b0d3a4f4b06c06eb1",
+    "text": "izbucnire exploda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.985593Z"
+  },
+  "spell.the_dreadorian_curse.name": {
+    "src_hash": "5dac6619e575ba048dac40b8637a5500",
+    "text": "blestemul dreadorian",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.985843Z"
+  },
+  "spell.dreadwing_skill_reducer.name": {
+    "src_hash": "77815ad37e94d459e5fb291efd7bce0c",
+    "text": "dreadwing skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.986538Z"
+  },
+  "spell.omrafir_summon.name": {
+    "src_hash": "7afac0493e7435ec27b00187d58e881b",
+    "text": "omrafir sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.986767Z"
+  },
+  "spell.ice_golem_skill_reducer.name": {
+    "src_hash": "04b9f0b1ffb1da8729314d8ad4e4018b",
+    "text": "reductor de abilități de golem de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.987749Z"
+  },
+  "spell.shadow_hound_curse.name": {
+    "src_hash": "31b4197793defcd6f20b46076448c8b9",
+    "text": "blestem de câine de umbră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:26.988220Z"
+  },
+  "spell.blightwalker_curse.name": {
+    "src_hash": "16230cc259bcc0350fd05c7a1fe78817",
+    "text": "blestemul blightwalker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.127513Z"
+  },
+  "spell.minotaur_cult_prophet_mass_healing.name": {
+    "src_hash": "babeff5e6a0d360926b2563bf57e2e7a",
+    "text": "Vindecarea în masă a Profetului Cultului Minotaurului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.128146Z"
+  },
+  "spell.megasylvan_yselda_ebeam.name": {
+    "src_hash": "a3edb8d881092e35f4e8f5bf7bafb840",
+    "text": "fascicul de pământMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.128398Z"
+  },
+  "spell.wyvern_drunk.name": {
+    "src_hash": "b353082a38791ff7b9ce13ff943de2ea",
+    "text": "wyvern beat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.128637Z"
+  },
+  "spell.fire_barrage.name": {
+    "src_hash": "69db1a11b76cc6c5a4ac884931134266",
+    "text": "baraj de incendiu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.128867Z"
+  },
+  "spell.spirit_of_earth_paralyze.name": {
+    "src_hash": "f636dd266db143e432b9320b86854c57",
+    "text": "spiritul pământului paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.129176Z"
+  },
+  "spell.ghastly_dragon_paralyze.name": {
+    "src_hash": "64bf15b7ae67eb23b65ee86d010daebd",
+    "text": "dragonul îngrozitor paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.129477Z"
+  },
+  "spell.mephiles_skill_reducer.name": {
+    "src_hash": "731c37b2d3f6d868b71ba5c0a17d63bb",
+    "text": "reductor de aptitudini mephiles",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.130361Z"
+  },
+  "spell.ice_overlord_freeze.name": {
+    "src_hash": "cb322d17c58cbdf4d8275e6419e897d0",
+    "text": "ice overlord congela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.130872Z"
+  },
+  "spell.killer_rabbit_summon.name": {
+    "src_hash": "5716b89aece60552d665c95e2404d223",
+    "text": "invocarea iepurelui ucigaș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.131188Z"
+  },
+  "spell.the_abomination_paralyze.name": {
+    "src_hash": "6168fc08b0bafd1b883477b085056ee7",
+    "text": "urâciunea paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.131478Z"
+  },
+  "spell.white_pale_summon.name": {
+    "src_hash": "b3865c6553aceae64138f87b00498f88",
+    "text": "alb pal sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.131722Z"
+  },
+  "spell.bullwark_paralyze.name": {
+    "src_hash": "886fddb7eb389db9e837effdd1ea0907",
+    "text": "paralyze bascul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.132022Z"
+  },
+  "spell.djinn_paralyze.name": {
+    "src_hash": "e43d13b61e88415667e35cc95a8a5974",
+    "text": "djinn paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.132357Z"
+  },
+  "spell.warlock_skill_reducer.name": {
+    "src_hash": "b5e93de064f2f0a49585f68ced707403",
+    "text": "reductor de îndemânare vrăjitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.132874Z"
+  },
+  "spell.lloyd_wave3.name": {
+    "src_hash": "76a0853acaf82a0429a4daf18f7bca8e",
+    "text": "lloyd wave3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.133183Z"
+  },
+  "spell.salamander_trainer_summon.name": {
+    "src_hash": "e217cb722c45f9eed71556f21b8c74b9",
+    "text": "invocarea antrenorului de salamandre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.133683Z"
+  },
+  "spell.big_explosion_wave.name": {
+    "src_hash": "7a8af6b1d80fb7404b3def0ad6108d3b",
+    "text": "val mare de explozie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.134151Z"
+  },
+  "spell.bog_raider_paralyze.name": {
+    "src_hash": "7d8094668dba191df145b8b34c8b446d",
+    "text": "bog raider paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.134663Z"
+  },
+  "spell.shock_head_skill_reducer_2.name": {
+    "src_hash": "993def282a953eb7d820a6d08f0f0b93",
+    "text": "reductor de îndemânare a capului de șoc 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:58:59.135208Z"
+  },
+  "spell.lava_golem_soulfire.name": {
+    "src_hash": "dbbca3f968c0709ab179937b5c7195d3",
+    "text": "lava golem soulfre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.917013Z"
+  },
+  "spell.arkhothep_paralyze.name": {
+    "src_hash": "8bf8511573beac56560e8b23efd11d6b",
+    "text": "arkhotep paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.917321Z"
+  },
+  "spell.stampor_skill_reducer.name": {
+    "src_hash": "a7681d2c09a8656834c548f6d9c3388b",
+    "text": "reductor de calificare stampor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.918327Z"
+  },
+  "spell.kraknaknork_explosion_wave.name": {
+    "src_hash": "2f4e174fe23f8e2af3f05a9793bb667d",
+    "text": "val de explozie kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.919244Z"
+  },
+  "spell.half_circle_wave_earth.name": {
+    "src_hash": "6119cff36d2cfc920810f09cc74ec0e0",
+    "text": "semicerc val pământ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.919539Z"
+  },
+  "spell.arkhothep_curse.name": {
+    "src_hash": "7263817558e5c6e6a3d5d54ecbb4ef6f",
+    "text": "blestemul arkhotep",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.919773Z"
+  },
+  "spell.phantasm_drown.name": {
+    "src_hash": "4993cc8f2ea12369574b1e6ebfc13e00",
+    "text": "fantasmă se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.920018Z"
+  },
+  "spell.the_welter_summon.name": {
+    "src_hash": "19d2e4a666b2d921345052f669328f73",
+    "text": "chemarea welter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.920257Z"
+  },
+  "spell.serpent_spawn_paralyze.name": {
+    "src_hash": "05c93437a320273eb2c3b266471a5129",
+    "text": "icrele de șarpe paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.920732Z"
+  },
+  "spell.azerus_soulfire_2.name": {
+    "src_hash": "2f7705f0369e3f06ad379309ec77a11c",
+    "text": "focul de suflet azer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.921169Z"
+  },
+  "spell.energy_chain.name": {
+    "src_hash": "2eaf27edf3ddff7855f78058de225a21",
+    "text": "lanț energetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.921401Z"
+  },
+  "spell.dreadbeast_skill_reducer.name": {
+    "src_hash": "c2b497df23d899cdcb697cbd388f766b",
+    "text": "dreadbeast skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.921772Z"
+  },
+  "spell.shaburak_wave.name": {
+    "src_hash": "55bad0eada5de59aaf0609bcf17da540",
+    "text": "val shaburak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.921988Z"
+  },
+  "spell.haunter_curse.name": {
+    "src_hash": "e2cbc836d1e873ecad634cc2fba8d61a",
+    "text": "blestemul bântuitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.922238Z"
+  },
+  "spell.thalas_summon.name": {
+    "src_hash": "8c0ce8b066fb35f3d9cada1ac5252ae6",
+    "text": "thalas sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.922443Z"
+  },
+  "spell.frozen_minion_beam.name": {
+    "src_hash": "983b3c478be73cc210268020b80b071f",
+    "text": "fascicul de minion înghețat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.923316Z"
+  },
+  "spell.ghazbaran_paralyze.name": {
+    "src_hash": "ffc95bbd6e4109503f0b2fd5543bcca9",
+    "text": "ghazbaran paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.923582Z"
+  },
+  "spell.swampling_paralyze.name": {
+    "src_hash": "187f9e763c826cd398c2aee156e0639b",
+    "text": "mlaștină paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.923932Z"
+  },
+  "spell.young_sea_serpent_drown.name": {
+    "src_hash": "764ca22bacaeb6b9edc98558d47ab657",
+    "text": "tânărul șarpe de mare se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.924916Z"
+  },
+  "spell.frozen_minion_heal.name": {
+    "src_hash": "1b84bc8d7cf8b49ea5b9806d9b45de96",
+    "text": "vindecă minion înghețat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:28.925214Z"
+  },
+  "spell.hot_dog_wave.name": {
+    "src_hash": "20fdb2964c3594ee00fd31ad0027290f",
+    "text": "val de hot dog",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.055819Z"
+  },
+  "spell.freed_soul_spell.name": {
+    "src_hash": "f818537c9872a84833e73ebf3ba00ef7",
+    "text": "Vraja sufletului eliberat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.056173Z"
+  },
+  "spell.koshei_the_deathless_paralyze.name": {
+    "src_hash": "41bf6b2cb644b110d5a823df13565ad9",
+    "text": "koshei cel nemuritor paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.057186Z"
+  },
+  "spell.sulphur_spouter_wave.name": {
+    "src_hash": "de2942d350583fcc4dcfebd4fbeac000",
+    "text": "val de stropire de sulf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.057706Z"
+  },
+  "spell.ice_golem_paralyze.name": {
+    "src_hash": "ba213b5fb7f8abbca7991c23a5138906",
+    "text": "Golem de gheață paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.058703Z"
+  },
+  "spell.souleater_drown.name": {
+    "src_hash": "3505eabbf54917f7aa768f6e41df6fd4",
+    "text": "souleater se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.058996Z"
+  },
+  "spell.big_energy_purple_wave.name": {
+    "src_hash": "2d1ce561e76e38b0cc27b28a4f79ba86",
+    "text": "val violet de mare energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.059501Z"
+  },
+  "spell.unchained_fire_explosion.name": {
+    "src_hash": "0a894173ed0a68c4c533a9cd8a14a5f3",
+    "text": "explozie de foc neînlănțuit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.059988Z"
+  },
+  "spell.essence_of_darkness_paralyze.name": {
+    "src_hash": "dcd22e299746b15b18bc703c84906f26",
+    "text": "miezul nopții spawn paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.060612Z"
+  },
+  "spell.katex_blood_deatht.name": {
+    "src_hash": "373dec445d7bfbd98fbe7b1a696cfe65",
+    "text": "moartea katexT",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.060827Z"
+  },
+  "spell.rotthing_ulus.name": {
+    "src_hash": "c1e9d5ca11c962f67ce67a078ba0f943",
+    "text": "rotthligulus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.061122Z"
+  },
+  "spell.white_pale_heal.name": {
+    "src_hash": "273b5dbc34c4176d20de6c1db6b54086",
+    "text": "alb palid vindeca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.061354Z"
+  },
+  "spell.large_red_ring.name": {
+    "src_hash": "21bf749d9f263cfac6ca2d184e6ccb93",
+    "text": "ringred mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.061560Z"
+  },
+  "spell.reality_reaver_wave.name": {
+    "src_hash": "5b4559a20cf7ae89836f7bd7ea7a6351",
+    "text": "val realitatea reaver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.061807Z"
+  },
+  "spell.draken_abomination_summon.name": {
+    "src_hash": "c6f60989e73891bc4a1b8f9956daa536",
+    "text": "draken abomination sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.062345Z"
+  },
+  "spell.verminor_paralyze.name": {
+    "src_hash": "11e7eef1308ebe398d14a1c0311da759",
+    "text": "paralizie parazita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.062607Z"
+  },
+  "spell.emperor_summon.name": {
+    "src_hash": "118a4676abb7a2a82fbc0feebe9c68fd",
+    "text": "chemarea împăratului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.062891Z"
+  },
+  "spell.thul_summon.name": {
+    "src_hash": "11886482d8b8cfb928aedb947a4080b1",
+    "text": "asa chema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.063100Z"
+  },
+  "spell.big_death_wave.name": {
+    "src_hash": "508871291f7e2e40381033b05c3a4683",
+    "text": "mare val de moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.063504Z"
+  },
+  "spell.twisted_shaper_ice.name": {
+    "src_hash": "979ad146458f7d69f8527cfac045ba42",
+    "text": "gheață de modelare răsucită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:59:58.063965Z"
+  },
+  "spell.abyssador_skill_reducer_2.name": {
+    "src_hash": "eb7e0f68fbda730b28aebfca823d07ee",
+    "text": "Reductor de abilități abyssador 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.877542Z"
+  },
+  "spell.quara_plunderer_smoke.name": {
+    "src_hash": "3c7b85a1a752e6ef5b82d29f012d8ba8",
+    "text": "quarasmokedeath",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.877872Z"
+  },
+  "spell.maxxen_teleport.name": {
+    "src_hash": "319d734d0cb6c869bcd60ae7fee2504f",
+    "text": "maxxenTeleport",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.878100Z"
+  },
+  "spell.arachnophobica_waveenergy.name": {
+    "src_hash": "5cb898cf38ae9c4febf1b79478e60a09",
+    "text": "energia undelor arahnofobica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.878375Z"
+  },
+  "spell.leaf_golem_paralyze.name": {
+    "src_hash": "dd18391e357ff09c8eb32f6a03069bc2",
+    "text": "golem de frunze paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.879304Z"
+  },
+  "spell.spectre_drown.name": {
+    "src_hash": "a63ae03e97a0027f377f0680fecfe4db",
+    "text": "spectrul se îneca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.879548Z"
+  },
+  "spell.cliff_strider_electrify.name": {
+    "src_hash": "d0624a56f1f574699e064226c81177d1",
+    "text": "cliff strider electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.879902Z"
+  },
+  "spell.vampire_viscount_paralyze.name": {
+    "src_hash": "402d746d993b4fb595a1b313df19a2b3",
+    "text": "vampir viconte paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.880206Z"
+  },
+  "spell.frost_dragon_paralyze_2.name": {
+    "src_hash": "ea6c82dcceeef2ee78c9413dab43fc48",
+    "text": "dragonul de îngheț paralizează 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.880696Z"
+  },
+  "spell.tentuglys_head_energyt.name": {
+    "src_hash": "eaa025ac5a586de80c8b1a7f2ab1bcf2",
+    "text": "unda de energie T",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.881092Z"
+  },
+  "spell.rot_elemental_paralyze.name": {
+    "src_hash": "c8194530e8035d77d5993fc4b4499474",
+    "text": "putregai paralizie elementară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.881385Z"
+  },
+  "spell.rage_summon.name": {
+    "src_hash": "971a9a5b26c1de7a1cce786643528745",
+    "text": "invocarea furiei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.881599Z"
+  },
+  "spell.deathbringer_drown.name": {
+    "src_hash": "ffd9134fc7ed372da0c0f665a0552315",
+    "text": "aducător de moarte se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.882055Z"
+  },
+  "spell.carniphila_paralyze.name": {
+    "src_hash": "14f8270d56504cba3d2a5d5a02b52230",
+    "text": "carniphila paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.882346Z"
+  },
+  "spell.diabolic_imp_fireball.name": {
+    "src_hash": "98b557a21c6ba2d686a9f73f7a058bb7",
+    "text": "minge de foc diabolic imp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.883358Z"
+  },
+  "spell.time_guardian.name": {
+    "src_hash": "f0c40ff8858a0e44d1db941a2460e2ea",
+    "text": "gardianul timpului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.883590Z"
+  },
+  "spell.fire_overlord_paralyze.name": {
+    "src_hash": "cdf3c5814189c40b4466ade6528b203f",
+    "text": "stăpânul focului paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.883887Z"
+  },
+  "spell.lancer_beetle_curse.name": {
+    "src_hash": "808d13080671b659a5bd68f8c2d84cca",
+    "text": "blestemul gândacului lancer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.884197Z"
+  },
+  "spell.horadron_paralyze.name": {
+    "src_hash": "710eb4f36bdf39ed6243c9e1ca7edff2",
+    "text": "horadron paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:26.884466Z"
+  },
+  "spell.azerus_summon_1.name": {
+    "src_hash": "b4c428e70799a6a103180bb570b50c3b",
+    "text": "invocarea azerului 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.319702Z"
+  },
+  "spell.bullwark_summon.name": {
+    "src_hash": "6a60ba11f26f7766b36387430556f72e",
+    "text": "chemare de bulwark",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.319950Z"
+  },
+  "spell.heat_of_summer.name": {
+    "src_hash": "6e9c68548adeb3df74d4777f798559ef",
+    "text": "căldura verii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.320244Z"
+  },
+  "spell.diseased_paralyze.name": {
+    "src_hash": "ffeb2dcbead41594c7373df6fc7d19b5",
+    "text": "paralizie bolnavă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.320552Z"
+  },
+  "spell.banshee_paralyze.name": {
+    "src_hash": "0256b43b998d9c4c6c4e8174308c879b",
+    "text": "banshee paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.320862Z"
+  },
+  "spell.mamma_longlegs_paralyze.name": {
+    "src_hash": "42b5f71c4d719645c7227ae0a4015711",
+    "text": "picioarele lungi ale mamei paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.321397Z"
+  },
+  "spell.lisa_summon.name": {
+    "src_hash": "17856ccfdfba8302f69bceafc6dda900",
+    "text": "lisa sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.321606Z"
+  },
+  "spell.rotthing_wave.name": {
+    "src_hash": "b6e22a14114dd74f3c300f5aedecd6e1",
+    "text": "val putrezitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.321844Z"
+  },
+  "spell.crystal_spider_paralyze_1.name": {
+    "src_hash": "ce4f8708f2c6d7661a5bd76a3ba19c36",
+    "text": "păianjenul de cristal paralizează 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.322430Z"
+  },
+  "spell.vampire_paralyze.name": {
+    "src_hash": "7f28d72305fc0934120fbfdc10082c46",
+    "text": "vampir paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.322700Z"
+  },
+  "spell.sea_serpent_drown.name": {
+    "src_hash": "bc2d40c7a4264b63587dd49a200370fe",
+    "text": "șarpele de mare se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.324917Z"
+  },
+  "spell.lisa_paralyze.name": {
+    "src_hash": "f72a8908dc945b21c39d1cffd09e62a5",
+    "text": "lisa paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.325165Z"
+  },
+  "spell.corym_vanguard_wave.name": {
+    "src_hash": "615c13e9a497de1077122127f16fb60b",
+    "text": "val de avangardă corym",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.326058Z"
+  },
+  "spell.thul_paralyze.name": {
+    "src_hash": "7853ed097b5f1c03bcd9a3d60683b4e4",
+    "text": "asa paralizeaza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.326357Z"
+  },
+  "spell.ice_chain.name": {
+    "src_hash": "da8fe05579f770755dbdd827035d87cb",
+    "text": "lanț de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.326586Z"
+  },
+  "spell.ferumbras_electrify.name": {
+    "src_hash": "222b90ea840524132a62d4130285e308",
+    "text": "ferumbras se electrizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.326889Z"
+  },
+  "spell.munster_summon.name": {
+    "src_hash": "1ca2af8dcec72539b29a9d6cbccaf7a2",
+    "text": "munster sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.327110Z"
+  },
+  "spell.energy_ring.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "inel energetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.327309Z"
+  },
+  "spell.doctor_perhaps_summon.name": {
+    "src_hash": "75dce245685b300f2901e40ac00dcf27",
+    "text": "doctorul poate chema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:00:56.327564Z"
+  },
+  "spell.magic_pillar_summon.name": {
+    "src_hash": "86762bf4fac2f39cbeb749437ead15a5",
+    "text": "invocarea pilonului magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.543691Z"
+  },
+  "spell.gnomevil_skill_reducer_1.name": {
+    "src_hash": "ed09bcdf54354cb376f8b4af52922252",
+    "text": "Reductor de aptitudini gnomevil 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.544644Z"
+  },
+  "spell.wiggler_paralyze.name": {
+    "src_hash": "7488e5db84d3fa3313c127d54a8540bb",
+    "text": "wiggler paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.544991Z"
+  },
+  "spell.mummy_paralyze.name": {
+    "src_hash": "f1df93873d6a6c81a9a68c2d45891f5c",
+    "text": "mumia paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.545240Z"
+  },
+  "spell.large_energy_ring.name": {
+    "src_hash": "a8d7476f4f18c589b53f54661754eace",
+    "text": "mare energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.545458Z"
+  },
+  "spell.terofar_heal.name": {
+    "src_hash": "c6d17ec8e08d0ad9aefeb7e434ef04e0",
+    "text": "terofar heal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.545756Z"
+  },
+  "spell.white_pale_paralyze.name": {
+    "src_hash": "2a378be7857521b74d988a2b55d53340",
+    "text": "alb palid paralizie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.546047Z"
+  },
+  "spell.morik_the_gladiator_summon.name": {
+    "src_hash": "63796c1345f551d1841d3be97bea92e3",
+    "text": "morik gladiatorul sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.546348Z"
+  },
+  "spell.dragonling_paralyze.name": {
+    "src_hash": "da334620b4a2119ddffaf7a70d2ba40c",
+    "text": "dragonling paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.546624Z"
+  },
+  "spell.sparks_chain.name": {
+    "src_hash": "d888dfdccd2a5a20049590041605770f",
+    "text": "lanț de scântei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.546892Z"
+  },
+  "spell.orewalker_skill_reducer_1.name": {
+    "src_hash": "12df6f43766d1adaa3bee5abdabd35cf",
+    "text": "Reductor de abilități de orewalker 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.547828Z"
+  },
+  "spell.razzagorn_summon.name": {
+    "src_hash": "43ea8fd78b585025111c74291c341145",
+    "text": "razzagorn sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.548076Z"
+  },
+  "spell.lisa_skill_reducer.name": {
+    "src_hash": "b2532eb4649028e42687a5f6b991d772",
+    "text": "lisa skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.548418Z"
+  },
+  "spell.webster_paralyze.name": {
+    "src_hash": "2395c4f2333987f08a730f04759698cc",
+    "text": "webster paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.548679Z"
+  },
+  "spell.azerus_electrify.name": {
+    "src_hash": "f4ff8d9aff1e9a3341bbcebeba44e454",
+    "text": "azer electriza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.548984Z"
+  },
+  "spell.stone_devourer_paralyze.name": {
+    "src_hash": "13375b5a1032ce83aeabe827567eb191",
+    "text": "devorator de pietre paralizeaza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.549442Z"
+  },
+  "spell.remorseless_wave.name": {
+    "src_hash": "c76d7aa2e279c6515cff3d141d5205bc",
+    "text": "Val fără remuşcări",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.549879Z"
+  },
+  "spell.flamecaller_zazrak_summon.name": {
+    "src_hash": "191f6b283771a2abe74efba21ebec773",
+    "text": "flamecheller zazrak summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.550513Z"
+  },
+  "spell.arachir_the_ancient_one_summon.name": {
+    "src_hash": "443fd1d88528c7a3d016e3e7db10308e",
+    "text": "arachir cel vechi sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.551385Z"
+  },
+  "spell.ravennouslavalurkerwave.name": {
+    "src_hash": "e3ad6934abb91743b2fee975a26edf61",
+    "text": "ravennousLavaLurkerWave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:26.551625Z"
+  },
+  "spell.bibby_bloodbath_paralyze.name": {
+    "src_hash": "b350f2ca312a7c485f85018371abab6e",
+    "text": "baia de sânge bibby paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.317602Z"
+  },
+  "spell.abyssador_skill_reducer_1.name": {
+    "src_hash": "9e9a4234c4bde5d881f3576f61b5c7c9",
+    "text": "Reductor de aptitudini abyssador 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.318547Z"
+  },
+  "spell.retching_horror_paralyze.name": {
+    "src_hash": "9c2d4697f37df08728a823b085081d67",
+    "text": "dorința de groază paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.319039Z"
+  },
+  "spell.forest_fury_skill_reducer_1.name": {
+    "src_hash": "e92a0180e5032450254ff444b5372f51",
+    "text": "reductor de îndemânare a furiei de pădure",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.319550Z"
+  },
+  "spell.glooth_anemone_summon.name": {
+    "src_hash": "46de46015ba570a06602b58803c2f34f",
+    "text": "glooth anemone summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.319920Z"
+  },
+  "spell.great_death_beam.name": {
+    "src_hash": "e94f79f22af9bff717a11d53abfcdba4",
+    "text": "Marea Raznă a Morții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.320371Z"
+  },
+  "spell.front_sweep.name": {
+    "src_hash": "bf98a10fbf82bc4457da2f4dbf8ba9e7",
+    "text": "Mătura frontală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.320598Z"
+  },
+  "spell.ultimate_flame_strike.name": {
+    "src_hash": "ac6edee3ef8bc2b6ae0c3452d0e77fdb",
+    "text": "Ultimate Flame Strike",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.321041Z"
+  },
+  "spell.divine_caldera.name": {
+    "src_hash": "2275e2fe6687d2c4c46ce48323e825e7",
+    "text": "Caldera divină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.321382Z"
+  },
+  "spell.brutal_strike.name": {
+    "src_hash": "8ac10ebcb758dc346c1a14558f1eb5bc",
+    "text": "Lovitură brutală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.321623Z"
+  },
+  "spell.strong_energy_strike.name": {
+    "src_hash": "f0399f2e52b71eb40cea2c5e5a7ea633",
+    "text": "Lovitură energetică puternică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.321908Z"
+  },
+  "spell.whirlwind_throw.name": {
+    "src_hash": "b4059a8b7bb59a3194a68ec2a13da3f2",
+    "text": "Aruncare cu vârtej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.322173Z"
+  },
+  "spell.physical_strike.name": {
+    "src_hash": "5c39d319c8cf1fa7657158909122ee39",
+    "text": "Lovitură fizică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.322455Z"
+  },
+  "spell.strong_flame_strike.name": {
+    "src_hash": "a04db5d63bac360d132bb8c7ae08f48b",
+    "text": "Lovitură puternică a flăcării",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.322931Z"
+  },
+  "spell.strong_ethereal_spear.name": {
+    "src_hash": "5e9ae8bc54f6401387b7984a0d2bdbca",
+    "text": "Lance eterică puternică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.323242Z"
+  },
+  "spell.ice_strike.name": {
+    "src_hash": "fc1004d8fd277440d39892c05dc602f4",
+    "text": "Lovitură de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.323482Z"
+  },
+  "spell.hells_core.name": {
+    "src_hash": "89cb9756c41d9a16f395b12d063e79eb",
+    "text": "Miezul Iadului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.323689Z"
+  },
+  "spell.great_fire_wave.name": {
+    "src_hash": "02ea0bdaee37bce462b8005718fe732d",
+    "text": "Marele val de foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.324093Z"
+  },
+  "spell.strong_ice_wave.name": {
+    "src_hash": "9e52fb214d329256f6802c40897a470a",
+    "text": "Val puternic de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.324566Z"
+  },
+  "spell.executioners_throw.name": {
+    "src_hash": "87bee2f42bd3eae06b694a27794d9d6c",
+    "text": "Aruncarea călăului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:01:55.324836Z"
+  },
+  "spell.ultimate_terra_strike.name": {
+    "src_hash": "7abbf49184e28b5301181030aceb885a",
+    "text": "Ultimate Terra Strike",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.293990Z"
+  },
+  "spell.energy_strike.name": {
+    "src_hash": "8eb3641c16e198ad0e999817d35afc2d",
+    "text": "Lovitură energetică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.294330Z"
+  },
+  "spell.ice_wave.name": {
+    "src_hash": "8d33572ff37b9fbaa9060e6c736e859a",
+    "text": "Val de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.294579Z"
+  },
+  "spell.fire_wave.name": {
+    "src_hash": "853c3fef1f117a759611461b0c25e92e",
+    "text": "Val de foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.294786Z"
+  },
+  "spell.divine_grenade.name": {
+    "src_hash": "aa00d3ce9e7ad795109f3c4f145619c7",
+    "text": "Grenadă divină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.295018Z"
+  },
+  "spell.energy_wave.name": {
+    "src_hash": "1e752ea8c3d90824faeede46c8a4a88d",
+    "text": "Val de energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.295224Z"
+  },
+  "spell.ultimate_ice_strike.name": {
+    "src_hash": "af7e2b735691f4903ef831068c421140",
+    "text": "Lovitură supremă de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.295765Z"
+  },
+  "spell.flame_strike.name": {
+    "src_hash": "971972ab0765f0ffe5783ffd6c3bf89a",
+    "text": "Lovitură de flacără",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.296008Z"
+  },
+  "spell.rage_of_the_skies.name": {
+    "src_hash": "bf11d4cf66baf6f505cfd4e3184ae53d",
+    "text": "Furia cerurilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.296249Z"
+  },
+  "spell.divine_missile.name": {
+    "src_hash": "7a3bd9401c74cd2521dcd6eb2ef7c2ea",
+    "text": "Rachetă divină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.296478Z"
+  },
+  "spell.strong_ice_strike.name": {
+    "src_hash": "90641b8a57353a6df6958f4d522f8ffb",
+    "text": "Lovitură puternică de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.296984Z"
+  },
+  "spell.strong_terra_strike.name": {
+    "src_hash": "fe0a02b91cce1b7c53edd5f8cf976fd5",
+    "text": "Lovitură puternică Terra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.297266Z"
+  },
+  "spell.fierce_berserk.name": {
+    "src_hash": "16363a948ea19f715f71c121c67074c3",
+    "text": "Fierce Berserk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.297599Z"
+  },
+  "spell.terra_strike.name": {
+    "src_hash": "2d60e528432e11a76543fa793dd47d62",
+    "text": "Terra Strike",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.297882Z"
+  },
+  "spell.ultimate_energy_strike.name": {
+    "src_hash": "e89584af6c6bc458280ae1495eb8d273",
+    "text": "Lovitură energetică supremă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.298204Z"
+  },
+  "spell.annihilation.name": {
+    "src_hash": "9ab2169c207d383e69d2d472666f3be1",
+    "text": "Anihilare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.298414Z"
+  },
+  "spell.practice_fire_wave.name": {
+    "src_hash": "872aade22d8673e1722eb9c8efd17087",
+    "text": "Practica Valul de foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.298924Z"
+  },
+  "spell.terra_burst.name": {
+    "src_hash": "49fb01f80e220452cfb1148bd4fb985f",
+    "text": "Terra Burst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.299213Z"
+  },
+  "spell.wrath_of_nature.name": {
+    "src_hash": "17de0221cd68ade9720767d14080a7cc",
+    "text": "Mânia Naturii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.299447Z"
+  },
+  "spell.great_energy_beam.name": {
+    "src_hash": "80ff78cbafed745b81687166a454a77f",
+    "text": "Un mare fascicul de energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:13.299923Z"
+  },
+  "spell.energy_beam.name": {
+    "src_hash": "65943a708a587424f5a5cf9004ee74dd",
+    "text": "Fascicul de energie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.013971Z"
+  },
+  "spell.eternal_winter.name": {
+    "src_hash": "8398314920f88487a138cdb96b4017cd",
+    "text": "Iarna eternă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.014434Z"
+  },
+  "spell.ethereal_spear.name": {
+    "src_hash": "f5ad65d1af8ea533ef57bf7f371ac6ed",
+    "text": "Sulița eterică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.014716Z"
+  },
+  "spell.inflict_wound.name": {
+    "src_hash": "b99e09a86d4c6cdcba4a96d9671f90fb",
+    "text": "Infectează Rană",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.014983Z"
+  },
+  "spell.groundshaker.name": {
+    "src_hash": "927006b9f20f4e977d745c8a18b2bc0a",
+    "text": "Groundshaker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.015384Z"
+  },
+  "spell.cure_bleeding.name": {
+    "src_hash": "6a42fa76231b8e67df4965fda7cfa26c",
+    "text": "Vindecă sângerarea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.017827Z"
+  },
+  "spell.intense_recovery.name": {
+    "src_hash": "ab9a7248f396de8d002b411f91158bfb",
+    "text": "Recuperare intensă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.018241Z"
+  },
+  "spell.magic_patch.name": {
+    "src_hash": "9d5defa361e504ab2620cc968b48840a",
+    "text": "Patch magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.018478Z"
+  },
+  "spell.wound_cleansing.name": {
+    "src_hash": "d843b99063e116b73924f15c3391fbc9",
+    "text": "Curățarea rănilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.018751Z"
+  },
+  "spell.practice_healing.name": {
+    "src_hash": "d5aca4fe6d00bf7c7291912f6535d3d6",
+    "text": "Practicați Vindecarea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.019036Z"
+  },
+  "spell.cure_poison.name": {
+    "src_hash": "e7790cdcaee22d036a5c7068d6697bf4",
+    "text": "Vindeca otrava",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.019265Z"
+  },
+  "spell.heal_monsters_9x9.name": {
+    "src_hash": "d1469ce8b15c75e139d407e40af9a00f",
+    "text": "Vindecă monstru 9x9",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.019563Z"
+  },
+  "spell.cure_electrification.name": {
+    "src_hash": "ebbde73bfd9cb30c0b1d6847cfea522a",
+    "text": "Vindecă electrificarea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.019850Z"
+  },
+  "spell.heal_friend.name": {
+    "src_hash": "e599c635ca201e1a2a77c1b026b630f3",
+    "text": "Vindecă prietenul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.020077Z"
+  },
+  "spell.heal_monsters.name": {
+    "src_hash": "f0ad0bba0c6450618d0ce3eed971e0af",
+    "text": "Vindecă monstru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.020297Z"
+  },
+  "spell.light_healing.name": {
+    "src_hash": "8f0e3b848ebfb342620e25f149ad3b48",
+    "text": "Vindecarea Luminii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.020513Z"
+  },
+  "spell.fair_wound_cleansing.name": {
+    "src_hash": "0b332175a2769cdf45daa4420d858803",
+    "text": "Curățarea corectă a rănilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.021040Z"
+  },
+  "spell.divine_healing.name": {
+    "src_hash": "fe97997adc4cf0aac915a77926c37e17",
+    "text": "Vindecare divină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.021281Z"
+  },
+  "spell.heal_malice.name": {
+    "src_hash": "09a57ab2e1e2a2c6b0206f9518cbc814",
+    "text": "Vindecă răutatea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:02:44.021504Z"
+  },
+  "spell.ultimate_healing.name": {
+    "src_hash": "755e0c33da7e0e29db52f58958271e14",
+    "text": "Vindecare supremă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.522722Z"
+  },
+  "spell.cure_burning.name": {
+    "src_hash": "fe635cb1efb6d122c38ebc2b077ddaa8",
+    "text": "Vindecă Arsura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.522963Z"
+  },
+  "spell.intense_healing.name": {
+    "src_hash": "06010b553150731597057e8219018e47",
+    "text": "Vindecare intensă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.523202Z"
+  },
+  "spell.restoration.name": {
+    "src_hash": "fa842aab8895c16045b781d27a16d2e2",
+    "text": "Restaurare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.523398Z"
+  },
+  "spell.bruise_bane.name": {
+    "src_hash": "caab5e3234392f9a0185f469b2401237",
+    "text": "Vânătaie Bane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.523610Z"
+  },
+  "spell.mass_healing.name": {
+    "src_hash": "73b3f5d5d3e12f8d620c9348945766e4",
+    "text": "Vindecare în masă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.523835Z"
+  },
+  "spell.intense_wound_cleansing.name": {
+    "src_hash": "a34fae66bb0ab3bd1dc2bc8f6b9aada2",
+    "text": "Curățarea intensă a rănilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.524339Z"
+  },
+  "spell.enchant_party.name": {
+    "src_hash": "87066a7e8ab695d1019e7237c8768473",
+    "text": "Incanta Party",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.524765Z"
+  },
+  "spell.train_party.name": {
+    "src_hash": "9170a282af1837b303da88de58e9e49e",
+    "text": "Tren Party",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.525060Z"
+  },
+  "spell.protect_party.name": {
+    "src_hash": "103c9f40b137230e45107c114cd1d380",
+    "text": "Protejează Party",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.525370Z"
+  },
+  "spell.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.525809Z"
+  },
+  "spell.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.526224Z"
+  },
+  "spell.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Paladin familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.526643Z"
+  },
+  "spell.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Druid familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.527077Z"
+  },
+  "spell.edit_door_list.name": {
+    "src_hash": "d42ce6738ed71ef2ef0c60f5cb01a5a7",
+    "text": "Lista ușilor casei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.527347Z"
+  },
+  "spell.edit_subowner_list.name": {
+    "src_hash": "b6178515ebdc3c3b911d8f9f0940cb67",
+    "text": "Lista subproprierilor casei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.527608Z"
+  },
+  "spell.edit_guest_list.name": {
+    "src_hash": "cc84c4e34386c69a012525ce736af3c7",
+    "text": "Lista oaspeților casei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.527875Z"
+  },
+  "spell.avatar_of_steel.name": {
+    "src_hash": "aafdf6a205ca5058a261492cf5da7908",
+    "text": "Avatar of Steel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.528198Z"
+  },
+  "spell.avatar_of_light.name": {
+    "src_hash": "14a4a56ed113b9c2c937a97049a9602c",
+    "text": "Avatarul Luminii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.528420Z"
+  },
+  "spell.avatar_of_storm.name": {
+    "src_hash": "d39c0501d8f206a31e2d8df88b5f9df7",
+    "text": "Avatarul Furtunii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:03.528638Z"
+  },
+  "spell.magic_shield.name": {
+    "src_hash": "78fd0cc49cb1eb9345aa054e5078df0f",
+    "text": "Scut magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.922398Z"
+  },
+  "spell.summon_creature.name": {
+    "src_hash": "7f499ac14926908e1b8120876e664669",
+    "text": "Invoca o creatură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.922672Z"
+  },
+  "spell.haste.name": {
+    "src_hash": "f4f7253661dc3bf12544fc82fdcf4efb",
+    "text": "Grabă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.922861Z"
+  },
+  "spell.strong_haste.name": {
+    "src_hash": "575ddaef720a68683ca7dc17957dfbec",
+    "text": "Grabă puternică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.923116Z"
+  },
+  "spell.great_light.name": {
+    "src_hash": "e89add8272eb3c2a27001cfed6c3827e",
+    "text": "Lumina Mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.923328Z"
+  },
+  "spell.cancel_invisibility.name": {
+    "src_hash": "8b9561a0bbff73c8c7799a873a60431c",
+    "text": "Anulează invizibilitatea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.923603Z"
+  },
+  "spell.invisible.name": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invizibilitate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.923811Z"
+  },
+  "spell.divine_empowerment.name": {
+    "src_hash": "5e6dcb65529f608af5dda2899c9fb709",
+    "text": "Împuternicirea divină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.924108Z"
+  },
+  "spell.avatar_of_nature.name": {
+    "src_hash": "f355976cc1733be4d4476b774c40fd9b",
+    "text": "Avatarul naturii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.924357Z"
+  },
+  "spell.light.name": {
+    "src_hash": "9914a0ce04a7b7b6a8e39bec55064b82",
+    "text": "Aprinde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.924536Z"
+  },
+  "spell.expose_weakness.name": {
+    "src_hash": "a1d788448ab86b4b64e7c80b8bdb66be",
+    "text": "Dezvăluie slăbiciunea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.924778Z"
+  },
+  "spell.sharpshooter.name": {
+    "src_hash": "efe3d2b02b49c973f309da5a27f75f30",
+    "text": "Trăgător de elită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.925034Z"
+  },
+  "spell.creature_illusion.name": {
+    "src_hash": "c773ad810396a7aa6f19cb8305da6d7c",
+    "text": "Iluzia Creaturii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.925281Z"
+  },
+  "spell.sap_strength.name": {
+    "src_hash": "b42ec6c317ee3f914f61ad2e97fa6110",
+    "text": "Puterea sapei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.925605Z"
+  },
+  "spell.ultimate_light.name": {
+    "src_hash": "ffc3a1f23b6f5055c629bad9f7f11226",
+    "text": "Lumina supremă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.926207Z"
+  },
+  "spell.chivalrous_challenge.name": {
+    "src_hash": "36fdf0e511f468246c713e11c0e543b2",
+    "text": "Provocare cavalerească",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.926598Z"
+  },
+  "spell.divine_dazzle.name": {
+    "src_hash": "87edc94827728bb3d565f923ab4e4f1b",
+    "text": "Orbire Divină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.926834Z"
+  },
+  "spell.cancel_magic_shield.name": {
+    "src_hash": "3580b45f3af3e7a5f12b2d4f9f4c8d6e",
+    "text": "Anulează Magic Shield",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.927144Z"
+  },
+  "spell.sudden_death_rune.name": {
+    "src_hash": "b4a8395e3e80b065f8abcfb910717b4c",
+    "text": "Runa morții subite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.927418Z"
+  },
+  "spell.poison_wall_rune.name": {
+    "src_hash": "5d33a1ec9e15577a76556efb8dd65a9b",
+    "text": "Runa Zidului Otrăvitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:03:30.927687Z"
+  },
+  "spell.conjure_poisoned_arrow.name": {
+    "src_hash": "38337d4c191c48c028c45fee10b96692",
+    "text": "Evocați săgeata otrăvită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.244794Z"
+  },
+  "spell.conjure_arrow.name": {
+    "src_hash": "ea6e1489f31f417d61ecc5f759282701",
+    "text": "Conjur Arrow",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.245348Z"
+  },
+  "spell.lightest_magic_missile_rune.name": {
+    "src_hash": "71ab4acc0a9ee936a55aa51761f50335",
+    "text": "Cea mai ușoară rachetă magică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.246393Z"
+  },
+  "spell.great_fireball_rune.name": {
+    "src_hash": "d56ee1113c040a3d8eb85f8de091985b",
+    "text": "Marea Rună Minge de Foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.246929Z"
+  },
+  "spell.conjure_piercing_bolt.name": {
+    "src_hash": "15187c0b56a3dda9e65c1e051c224523",
+    "text": "Conjure Piercing Bolt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.247407Z"
+  },
+  "spell.ultimate_healing_rune.name": {
+    "src_hash": "c1f287cc4f2a99f1b52db933f0ca1762",
+    "text": "Rună de vindecare supremă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.247929Z"
+  },
+  "spell.holy_missile_rune.name": {
+    "src_hash": "fd9e8018108599c211222b8d3c509d4c",
+    "text": "Runa Rachetei Sfinte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.248222Z"
+  },
+  "spell.wild_growth_rune.name": {
+    "src_hash": "3c7f67d04c69f51c7a8218980ead0fc8",
+    "text": "Runa de creștere sălbatică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.248696Z"
+  },
+  "spell.energy_wall_rune.name": {
+    "src_hash": "5b73eb415a3056d5bdbc26a3886775da",
+    "text": "Runa peretelui energetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.248989Z"
+  },
+  "spell.cure_poison_rune.name": {
+    "src_hash": "3ff5a4ce313d165c5fa17d6b309e26af",
+    "text": "Cure Poison Rune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.249298Z"
+  },
+  "spell.enchant_spear.name": {
+    "src_hash": "73264ce5ddb4109595176f857ffeacd2",
+    "text": "Încântă Spear",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.249534Z"
+  },
+  "spell.energy_bomb_rune.name": {
+    "src_hash": "45c17606088afc983836bf3e20d62b3d",
+    "text": "Rună Bombă Energetică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.249804Z"
+  },
+  "spell.animate_dead_rune.name": {
+    "src_hash": "accc3ea714009108a8530ed67049bb8c",
+    "text": "Animați Dead Rune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.250199Z"
+  },
+  "spell.convince_creature_rune.name": {
+    "src_hash": "fad3dee565fc34b781c47bf766de5a3a",
+    "text": "Conving Creature Rune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.250480Z"
+  },
+  "spell.poison_bomb_rune.name": {
+    "src_hash": "8e4ac735e2ce1415ddf32084da98effc",
+    "text": "Runa Bombă Otrăvitoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.250751Z"
+  },
+  "spell.fire_bomb_rune.name": {
+    "src_hash": "00379b6a9cbe075b5fcdf571ca044cf9",
+    "text": "Runa Bombei de foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.251221Z"
+  },
+  "spell.paralyze_rune.name": {
+    "src_hash": "2431c9ca6070fefc845af17ead117282",
+    "text": "Paralyze Rune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.251528Z"
+  },
+  "spell.fire_wall_rune.name": {
+    "src_hash": "43bf5ebe2cc612bd482d04210760521b",
+    "text": "Runa zidului de foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.252048Z"
+  },
+  "spell.intense_healing_rune.name": {
+    "src_hash": "5550d613fabceb4889fea906c66a2df3",
+    "text": "Rună de vindecare intensă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.252529Z"
+  },
+  "spell.fire_field_rune.name": {
+    "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
+    "text": "Runa câmpului de foc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:00.252989Z"
+  },
+  "spell.magic_wall_rune.name": {
+    "src_hash": "dc28fac219174ba4b7547e40bb77ffde",
+    "text": "Runa peretelui magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.144464Z"
+  },
+  "spell.heavy_magic_missile_rune.name": {
+    "src_hash": "e4caffb9a4072e3c3316cac57026d2bc",
+    "text": "Rună rachetă magică grea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.145184Z"
+  },
+  "spell.light_magic_missile_rune.name": {
+    "src_hash": "341199c9404914fea7b1003bc1d95c4a",
+    "text": "Rună rachetă magică ușoară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.145811Z"
+  },
+  "spell.conjure_explosive_arrow.name": {
+    "src_hash": "4a5e3cbb96927c2678012772093db85a",
+    "text": "Evocați săgeată explozivă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.146171Z"
+  },
+  "spell.conjure_sniper_arrow.name": {
+    "src_hash": "116763c52cbf1229d61694cd10bb52d7",
+    "text": "Evocați Sniper Arrow",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.146456Z"
+  },
+  "spell.conjure_bolt.name": {
+    "src_hash": "ae446a099002172be97bd31ad4cb449c",
+    "text": "Evocați Bolt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.146682Z"
+  },
+  "spell.stone_shower_rune.name": {
+    "src_hash": "44290ba68ac25c850aa27e5523fda1f6",
+    "text": "Rună de duș de piatră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.147173Z"
+  },
+  "spell.destroy_field_rune.name": {
+    "src_hash": "b6fe1c4fe04d9b34729bbbf491c41a40",
+    "text": "Distruge Runa câmpului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.147454Z"
+  },
+  "spell.conjure_royal_star.name": {
+    "src_hash": "20f3668ef6dbe42134f6685528deaeef",
+    "text": "Evocă Steaua Regală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.147730Z"
+  },
+  "spell.energy_field_rune.name": {
+    "src_hash": "ec6d44248eb7c384389f8bf9e0ff75c4",
+    "text": "Runa Câmpului Energetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.148028Z"
+  },
+  "spell.conjure_power_bolt.name": {
+    "src_hash": "c51f993a9e74468a4f93be45630416dc",
+    "text": "Evocați Power Bolt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.148470Z"
+  },
+  "spell.conjure_wand_of_darkness.name": {
+    "src_hash": "b2984a843982ff6676d622b6aa26eb8d",
+    "text": "Evoca Bagheta întunericului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.148785Z"
+  },
+  "spell.enchant_staff.name": {
+    "src_hash": "75636fb4e2beb84d06500f00446974d3",
+    "text": "Încântă personalul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.149067Z"
+  },
+  "spell.poison_field_rune.name": {
+    "src_hash": "f25387a94f2c77f239a2d3dc190baf3c",
+    "text": "Runa Câmpului Otrăvitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.149350Z"
+  },
+  "spell.nightmare_beast_curse.name": {
+    "src_hash": "2b3db0429d615dd8c1392e242c78a59c",
+    "text": "blestemul fiarei de coșmar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.149826Z"
+  },
+  "spell.gaz'haragoth_paralyze.name": {
+    "src_hash": "6925562d1dfa5c390aaccd0bdf753649",
+    "text": "gaz'haragoth paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.150333Z"
+  },
+  "spell.gaz'haragoth_iceball.name": {
+    "src_hash": "5b1e080e944747b0ce6a1ed71e549951",
+    "text": "minge de gheață gaz'haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.150962Z"
+  },
+  "spell.maxxenius_energy_elemental.name": {
+    "src_hash": "733cb18bdb01b1a10ac662bb64f68d83",
+    "text": "elemental energetic maxxenius",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.151405Z"
+  },
+  "spell.gaz'haragoth_death.name": {
+    "src_hash": "0698be1347eb83e23fabe156028b771f",
+    "text": "gaz'haragoth moartea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.151827Z"
+  },
+  "spell.ragiaz_transform.name": {
+    "src_hash": "9bd8cd2ce93ac5f0494c7b975525e173",
+    "text": "ragiaz transform",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:29.152192Z"
+  },
+  "spell.gaz'haragoth_summon.name": {
+    "src_hash": "487a1ea5771dde17a071dd35c99bf596",
+    "text": "gaz'haragoth sumon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.933294Z"
+  },
+  "spell.feroxa_summon.name": {
+    "src_hash": "92a56866cf42bf2c19bdf6d8ff9dabc4",
+    "text": "feroxa sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.933546Z"
+  },
+  "spell.omrafir_healing_2.name": {
+    "src_hash": "62dfbf550a950403df91ddfd306383f0",
+    "text": "vindecare omrafir 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.933807Z"
+  },
+  "spell.the_welter_heal.name": {
+    "src_hash": "bc188af9c0166cbf8ad2c0b354251f25",
+    "text": "welterul se vindecă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.934095Z"
+  },
+  "spell.plagueroot_teleport.name": {
+    "src_hash": "20d80123d87d198740ef768c770e9663",
+    "text": "teleportarea plagueroot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.934387Z"
+  },
+  "spell.prince_drazzak_tp.name": {
+    "src_hash": "46db55610f78c11b5ff625d68cd259cc",
+    "text": "prințul drazzak tp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.934664Z"
+  },
+  "spell.prince_drazzak_sorcerer.name": {
+    "src_hash": "42948bbcf8e4a4eaafb48b4ae6dd4c9a",
+    "text": "prințul drazzak vrăjitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.934961Z"
+  },
+  "spell.the_pale_count_summon.name": {
+    "src_hash": "ffa7ba2ef42acf616b97fb2f09d785e4",
+    "text": "palid contele chema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.935255Z"
+  },
+  "spell.mooh'tah_master_skill_reducer.name": {
+    "src_hash": "60b7ab2a2e03d7a1b9b2eadc2fe332cc",
+    "text": "mooh'tah maestru reductor de aptitudini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.936243Z"
+  },
+  "spell.spider_queen_wrap.name": {
+    "src_hash": "9af2f0223356d7ae35dbc569ff97ee00",
+    "text": "wrap regina păianjenului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.936598Z"
+  },
+  "spell.prince_drazzak_knight.name": {
+    "src_hash": "01c9db92cae526e7ea95701578e3657b",
+    "text": "prințul drazzak cavaler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.936887Z"
+  },
+  "spell.omrafir_beam.name": {
+    "src_hash": "45b333dc7cb331c54d80be32dc98d0ad",
+    "text": "fascicul omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.937109Z"
+  },
+  "spell.the_pale_count_bomb.name": {
+    "src_hash": "c581d6cfb4e3733ba3a437e565a12e6a",
+    "text": "bomba de număr palid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.937604Z"
+  },
+  "spell.apprentice's_strike.name": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Greva ucenicului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.937857Z"
+  },
+  "spell.nature's_embrace.name": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "Îmbrățișarea Naturii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.938166Z"
+  },
+  "spell.find_person.name": {
+    "src_hash": "95e8cc93b7e04f90863e3bd3be431421",
+    "text": "Găsiți Persoană",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.938403Z"
+  },
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "Nu poți arunca această vrajă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.938955Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "Mai întâi trebuie să înveți această vrajă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.939532Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Niciun membru de partid în raza de acțiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.940060Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "Nicio creatură în jur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:04:57.940555Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "Nu poți invoca mai multe creaturi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:05:03.921813Z"
+  },
+  "spell.msg_boss_present": {
+    "src_hash": "fedac26ec82644e299c9b297d4d11dfa",
+    "text": "Nu poți folosi această vrajă dacă există un șef.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:05:03.922579Z"
+  },
+  "spell.msg_no_ranged_monsters": {
+    "src_hash": "728afddc1a77526ad5ea881c638312eb",
+    "text": "Nu există monștri la distanță.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:05:03.923090Z"
+  },
+  "spell.msg_no_self_cast": {
+    "src_hash": "4f940074a28c2a7dbdb25c1987e4dfd2",
+    "text": "Nu poți arunca această vrajă pentru tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:05:03.923627Z"
   }
 }

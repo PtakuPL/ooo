@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-02-16T18:37:52.216781Z",
-  "cycle_counter": 1445,
-  "last_target_key": "es:server.json",
-  "last_pending_total": 152,
+  "timestamp": "2026-02-16T19:05:06.701289Z",
+  "cycle_counter": 1448,
+  "last_target_key": "it:spells.json",
+  "last_pending_total": 708,
   "last_tier": 1,
-  "last_cat_priority": 3,
+  "last_cat_priority": 4,
   "candidates_count": 204,
   "active_candidates_count": 182,
   "skipped_backoff": 19,
   "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
-    "es:npc.json": 1448,
+    "es:npc.json": 1463,
     "es:books.json": 1451,
     "es:client.json": 1450
   },
@@ -43,7 +43,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 6,
+  "cache_cycle": 7,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -287,7 +287,8 @@
     "sr:monsters.json": 0,
     "ro:server.json": 0,
     "sr:server.json": 0,
-    "sv:server.json": 0
+    "sv:server.json": 0,
+    "ro:spells.json": 0
   },
   "bootstrap_priority": {
     "enabled": false,
@@ -331,14 +332,6 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "it": {
-        "allowed_domain": "items.json",
-        "domain_coverages": {
-          "items.json": 18.72,
-          "npc.json": 67.89,
-          "quests.json": 32.95
-        }
-      },
       "ro": {
         "allowed_domain": "quests.json",
         "domain_coverages": {
@@ -353,6 +346,14 @@
           "items.json": 62.7,
           "npc.json": 3.08,
           "quests.json": 99.34
+        }
+      },
+      "it": {
+        "allowed_domain": "items.json",
+        "domain_coverages": {
+          "items.json": 18.72,
+          "npc.json": 67.89,
+          "quests.json": 32.95
         }
       }
     },

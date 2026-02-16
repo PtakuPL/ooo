@@ -1,26 +1,20 @@
 {
-  "timestamp": "2026-02-16T18:39:22.576061Z",
+  "timestamp": "2026-02-16T19:21:03.109327Z",
   "checked_entries": 100,
-  "issues_found": 4,
+  "issues_found": 2,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 10,
-    "suspicious_log_high": 179,
-    "suspicious_log_low": 21,
-    "suspicious_rejected_high": 192,
-    "suspicious_rejected_critical": 8
+    "identical_to_en_exempt": 6,
+    "identical_to_en": 2,
+    "suspicious_log_high": 146,
+    "suspicious_log_low": 52,
+    "suspicious_log_medium": 2,
+    "suspicious_rejected_high": 188,
+    "suspicious_rejected_critical": 12
   },
   "issues": [
     {
       "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Chhchh?",
-      "translated": "Chhchh?"
-    },
-    {
-      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
-      "lang": "it",
+      "lang": "sv",
       "type": "identical_to_en",
       "en": "Chhchh?",
       "translated": "Chhchh?"
@@ -31,13 +25,6 @@
       "type": "identical_to_en",
       "en": "Chchch",
       "translated": "Chchch"
-    },
-    {
-      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chhchh?",
-      "translated": "Chhchh?"
     }
   ],
   "threshold": 10,

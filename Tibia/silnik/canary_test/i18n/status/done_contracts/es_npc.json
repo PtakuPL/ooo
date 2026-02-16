@@ -4,7 +4,7 @@
   "conditions": {
     "no_critical_token_errors": {
       "ok": false,
-      "guard_placeholder": 8,
+      "guard_placeholder": 9,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -16,7 +16,7 @@
       "ok": true,
       "coverage_pct": 97.6,
       "total_keys": 13769,
-      "real_translations": 13433
+      "real_translations": 13438
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-16T18:37:14.397295Z"
+  "timestamp": "2026-02-16T19:21:01.979821Z"
 }

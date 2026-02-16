@@ -61446,5 +61446,5493 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T18:36:23.550987Z"
+  },
+  "spell.vile_grandmaster.name": {
+    "src_hash": "bac73ba15ba676e19e2332d4cee43bf3",
+    "text": "Мерзкий гроссмейстер",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.554905Z"
+  },
+  "spell.sudden_death_rune.name": {
+    "src_hash": "b4a8395e3e80b065f8abcfb910717b4c",
+    "text": "Руна внезапной смерти",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.606436Z"
+  },
+  "spell.holy_missile_rune.name": {
+    "src_hash": "fd9e8018108599c211222b8d3c509d4c",
+    "text": "Руна священного снаряда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.611584Z"
+  },
+  "spell.energy_bomb_rune.name": {
+    "src_hash": "45c17606088afc983836bf3e20d62b3d",
+    "text": "Руна энергетической бомбы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.615100Z"
+  },
+  "spell.fire_bomb_rune.name": {
+    "src_hash": "00379b6a9cbe075b5fcdf571ca044cf9",
+    "text": "Руна огненной бомбы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.617527Z"
+  },
+  "spell.light_magic_missile_rune.name": {
+    "src_hash": "341199c9404914fea7b1003bc1d95c4a",
+    "text": "Руна лёгкого магического снаряда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.622385Z"
+  },
+  "spell.apprentice's_strike.name": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Удар ученика",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.637186Z"
+  },
+  "spell.nature's_embrace.name": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "Объятие природы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:43.638285Z"
+  },
+  "spell.annihilon_paralyze.name": {
+    "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
+    "text": "Аннигилонский паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.686749Z"
+  },
+  "spell.pirate_corsair_skill_reducer.name": {
+    "src_hash": "804f0f58e3748cbf75ba47ecf7ba8ebb",
+    "text": "Редуктор навыков пирата-корсара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.687099Z"
+  },
+  "spell.large_black_ring.name": {
+    "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
+    "text": "Большое черное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.687383Z"
+  },
+  "spell.dragonling_wave.name": {
+    "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
+    "text": "Драконья волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.687676Z"
+  },
+  "spell.rupture_wave.name": {
+    "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
+    "text": "Разрывная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.687924Z"
+  },
+  "spell.rotthingholy_ulus.name": {
+    "src_hash": "6f9565ba840690d6cf32df1835403486",
+    "text": "Роттингхоли Улус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.688185Z"
+  },
+  "spell.plagirath_heal.name": {
+    "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
+    "text": "Плагиратское исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.688466Z"
+  },
+  "spell.hideous_fungus_summon.name": {
+    "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
+    "text": "Призыв ужасного гриба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.688768Z"
+  },
+  "spell.death_priest_shargon_curse.name": {
+    "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
+    "text": "Проклятие Жреца Смерти Шаргона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.689295Z"
+  },
+  "spell.defiler_paralyze_3.name": {
+    "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
+    "text": "Осквернитель Паралич 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.689617Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_2.name": {
+    "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
+    "text": "Редуктор навыков порабощенных гномов 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.690204Z"
+  },
+  "spell.magma_crawler_soulfire.name": {
+    "src_hash": "5af58207044b3d5e194180367a723039",
+    "text": "Магмовый ползунок Огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.690733Z"
+  },
+  "spell.devovorga_curse.name": {
+    "src_hash": "5fed81378f355f8d43c87e10c5259174",
+    "text": "Проклятие Девоворги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.691008Z"
+  },
+  "spell.cults_of_tibia_armor_buff.name": {
+    "src_hash": "b670299f4fea508033e349381261574b",
+    "text": "Культы Tibia Усиление брони",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.691753Z"
+  },
+  "spell.white_shade_paralyze.name": {
+    "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
+    "text": "Паралич белого оттенка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.692074Z"
+  },
+  "spell.plant_abomination_wave.name": {
+    "src_hash": "b4b265d796db5c445199764c97950e61",
+    "text": "Волна мерзости растений",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.692375Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Большое ледяное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.692687Z"
+  },
+  "spell.teleport_strike.name": {
+    "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
+    "text": "Телепортационный удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.692962Z"
+  },
+  "spell.lersatio_summon.name": {
+    "src_hash": "9f6b742ed3af674623ba4cbc33432484",
+    "text": "Призыв Лерсатио",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:57.693868Z"
+  },
+  "spell.elder_bonelord_paralyze.name": {
+    "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
+    "text": "Старший Повелитель костей паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.177407Z"
+  },
+  "spell.physical_barrage.name": {
+    "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
+    "text": "Физический залп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.177746Z"
+  },
+  "spell.explosion_wave.name": {
+    "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
+    "text": "Взрывная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.178012Z"
+  },
+  "spell.incineron_soulfire.name": {
+    "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
+    "text": "Инсинерон Огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.178378Z"
+  },
+  "spell.plaguesmith_wave.name": {
+    "src_hash": "d9649bfbbd30a852247fef5979d725d9",
+    "text": "Волна Чумного Кузнеца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.178704Z"
+  },
+  "spell.lich_paralyze.name": {
+    "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
+    "text": "Лич-паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.178953Z"
+  },
+  "spell.lizard_wave_2.name": {
+    "src_hash": "40359f42d6c401e32e7f4524cb402999",
+    "text": "Ящерица Волна 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.179210Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Ядовитая волна рипптора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.179536Z"
+  },
+  "spell.djinn_electrify.name": {
+    "src_hash": "2d7d1504b58dddc11ff934bb57fef215",
+    "text": "Джинн Электрифицирует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.179817Z"
+  },
+  "spell.gnomevil_skill_reducer_2.name": {
+    "src_hash": "c2542458a3272a3f5e413c77958fad0b",
+    "text": "Редуктор навыков Гномвила 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.183067Z"
+  },
+  "spell.alptramun_summon.name": {
+    "src_hash": "0343adfc07caa85bf0344dd565816cbf",
+    "text": "Призыв Альптрамуна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.183347Z"
+  },
+  "spell.obujos_skill_reducer_1.name": {
+    "src_hash": "761e07a1d8338f36e05a468f8df8cdd6",
+    "text": "Редуктор навыков обухо 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.183863Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "волна омрафира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.184119Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Призыв Мохока",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.184366Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "нежить шут паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.184695Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "стрельба по мишени",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.184957Z"
+  },
+  "spell.big_boss_trolliver_summon.name": {
+    "src_hash": "b2c625654cc5c384790ae76b686883f9",
+    "text": "вызов большого босса-тролливера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.185277Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "афтершоковая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.185581Z"
+  },
+  "spell.raging_mage_skill_reducer_2.name": {
+    "src_hash": "1b4d065ee80f1dbdd553b7cc433f56a1",
+    "text": "Редуктор навыков бушующего мага 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:11.186124Z"
+  },
+  "spell.dreadwing_curse.name": {
+    "src_hash": "6f04ff2059a60aa01e208e0cebc1bd2d",
+    "text": "проклятие страшного крыла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.624210Z"
+  },
+  "spell.betrayed_wraith_skill_reducer.name": {
+    "src_hash": "333a2e1af1ddefe52520f8f2978a203f",
+    "text": "Редуктор навыков преданного призрака",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.624788Z"
+  },
+  "spell.gnomevil_soulfire.name": {
+    "src_hash": "f12a4dd8c3059b8abe022de1f312fb31",
+    "text": "гном злой огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.625289Z"
+  },
+  "spell.minotaur_amazon_paralyze.name": {
+    "src_hash": "c88f3b8928239a36ce90d56a34ff900d",
+    "text": "минотавр паралич амазонки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.625597Z"
+  },
+  "spell.twins_skill_reducer.name": {
+    "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
+    "text": "редуктор навыков близнецов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.625889Z"
+  },
+  "spell.zushuka_freeze.name": {
+    "src_hash": "0b3f7c6071b0c23cbf33729be65920ca",
+    "text": "Зусука заморозить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.626242Z"
+  },
+  "spell.blood_hand_paralyze.name": {
+    "src_hash": "d43d4107cf3c8ca13e2be5930ceb3c29",
+    "text": "кровь, паралич руки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.626529Z"
+  },
+  "spell.thorn_summon.name": {
+    "src_hash": "ec458d283e18e30ee3b8efe406f99559",
+    "text": "вызов шипа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.627419Z"
+  },
+  "spell.big_energy_wave.name": {
+    "src_hash": "7d20925ed4e9434e30ad5f22892439a2",
+    "text": "большая энергетическая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.627707Z"
+  },
+  "spell.summonchallenge.name": {
+    "src_hash": "7f863ba4a43ed7de3e35f58e2d2fb773",
+    "text": "вызвать вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.628499Z"
+  },
+  "spell.large_fire_ring.name": {
+    "src_hash": "5394e9c93b2017a67c7621e8a265436e",
+    "text": "большая стрельба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.628752Z"
+  },
+  "spell.dipthrah_skill_reducer.name": {
+    "src_hash": "2f1fcdbc32e97fcd940c1ea28020aa45",
+    "text": "Редуктор навыков дифтры",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.629079Z"
+  },
+  "spell.vulcongra_soulfire.name": {
+    "src_hash": "9b179ffa7a83901c618f09c111fb54d3",
+    "text": "вулконгра огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.629363Z"
+  },
+  "spell.malofur_explosion.name": {
+    "src_hash": "9b242cec8044a6a20f5add13d22fcd11",
+    "text": "Малофурский взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.629629Z"
+  },
+  "spell.lizard_magistratus_curse.name": {
+    "src_hash": "84b35dc62577dc99d6c038c476121a34",
+    "text": "проклятие ящерицы магистратуса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.629934Z"
+  },
+  "spell.heal_brain_head.name": {
+    "src_hash": "16798f54286e3470100eb9fa2eed3fe7",
+    "text": "исцелить мозг голову",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.630264Z"
+  },
+  "spell.earth_barrage.name": {
+    "src_hash": "5d6ae1b9885ff1aeebc09563b3e1712e",
+    "text": "земляной завал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.630509Z"
+  },
+  "spell.glooth_battery_heal.name": {
+    "src_hash": "b616ae108a81f934e3a49de7ff7f8870",
+    "text": "лечение батареи Глута",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:24.630784Z"
+  },
+  "spell.ghastly_dragon_wave.name": {
+    "src_hash": "736938e9e7c9c4ab8e28acfd7fa73cdc",
+    "text": "ужасная драконья волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.755028Z"
+  },
+  "spell.draken_elite_soulfire.name": {
+    "src_hash": "6ca1fde63ac1e032c99e0627f6e7fa4c",
+    "text": "дрейкен элитный огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.755757Z"
+  },
+  "spell.devourer_summon.name": {
+    "src_hash": "9755d669726bf618c72329d71dcc7a47",
+    "text": "вызов пожирателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.756047Z"
+  },
+  "spell.tenebris_summon.name": {
+    "src_hash": "9d9f516aa5d5c62ef39377c97a6691f5",
+    "text": "Призыв Тенебриса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.756331Z"
+  },
+  "spell.pythius_the_rotten_summon.name": {
+    "src_hash": "81accc32310a4b6f61930206e170c39b",
+    "text": "Пифий, гнилой призыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.756651Z"
+  },
+  "spell.man_in_the_cave_summon.name": {
+    "src_hash": "d18be646d4a8cd3c9769c49067bdb531",
+    "text": "вызов человека в пещере",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.757167Z"
+  },
+  "spell.morgaroth_skill_reducer_2.name": {
+    "src_hash": "863723246630037a2d7b72736b8178f9",
+    "text": "Редуктор умений Моргарота 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.757694Z"
+  },
+  "spell.firestarter_soulfire.name": {
+    "src_hash": "20683709310db09463fb32c59f557034",
+    "text": "поджигатель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.757971Z"
+  },
+  "spell.tyrn_skill_reducer.name": {
+    "src_hash": "32e7ea8698ec3e7bdf775f85c6aa7c6a",
+    "text": "Редуктор навыков Тирн",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.758360Z"
+  },
+  "spell.cold_of_winter.name": {
+    "src_hash": "f65e5256fcceac4e54b3de77fe6a56a1",
+    "text": "холод зимы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.758629Z"
+  },
+  "spell.dworc_paralyze.name": {
+    "src_hash": "f0d751cb81f00e18196c6ff12fdb5f55",
+    "text": "паралич дворка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.758965Z"
+  },
+  "spell.time_guardian_lost_time.name": {
+    "src_hash": "fc7bacb2db9f90b22285920577ea9e60",
+    "text": "Хранитель времени потерял время",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.759454Z"
+  },
+  "spell.magma_crawler_wave.name": {
+    "src_hash": "3a110c92403b80d53debdca32741f054",
+    "text": "магматическая ползающая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.759746Z"
+  },
+  "spell.drillworm_paralyze.name": {
+    "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
+    "text": "паралич бурильного червя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.760023Z"
+  },
+  "spell.zavarash2_paralyze.name": {
+    "src_hash": "0acbc6a83d4c0d759d98242007f1904a",
+    "text": "завараш2 паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.760283Z"
+  },
+  "spell.zamulosh_invisible.name": {
+    "src_hash": "1b441bf3a1bd547e0edfd5d8e552afae",
+    "text": "замулош невидимый",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.760542Z"
+  },
+  "spell.ashfalor_summon.name": {
+    "src_hash": "fd5de32dcca8065ba359061be0d0dc7b",
+    "text": "Призыв Эшфалора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.760790Z"
+  },
+  "spell.breach_brood_reducer.name": {
+    "src_hash": "93a57b0b3783457c725f7493681f9f15",
+    "text": "редуктор расплода",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.761055Z"
+  },
+  "spell.emberbeastarea.name": {
+    "src_hash": "fae22fdada9c14ba633d0c3532415ff9",
+    "text": "УгольЗверьЗона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.761331Z"
+  },
+  "spell.soulcatcher_summon.name": {
+    "src_hash": "0662b568c576c6f23392f96f22a8fb7f",
+    "text": "вызов ловца душ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:39.761590Z"
+  },
+  "spell.wilting_leaf_golem_paralyze.name": {
+    "src_hash": "3cf7df15b6ee67ce2b540279ce9ee46b",
+    "text": "увядающий листовой голем паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.675883Z"
+  },
+  "spell.cliff_strider_skill_reducer.name": {
+    "src_hash": "8ab592f846dee790c668c25672632c89",
+    "text": "Редуктор навыков скального страйдера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.676438Z"
+  },
+  "spell.chizzoron_the_distorter_paralyze.name": {
+    "src_hash": "af49bf252534550907d97766fd468b44",
+    "text": "Чиззорон-Искажитель паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.676768Z"
+  },
+  "spell.aggresive_lava_wave.name": {
+    "src_hash": "fc5f2e17f06f08c4f8c85e3f66efc4f5",
+    "text": "агрессивная лавовая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.677043Z"
+  },
+  "spell.zulazza_the_corruptor_skill_reducer.name": {
+    "src_hash": "546ae835b39cd2bf56630b8ebe779559",
+    "text": "Редуктор навыков Зулаццы-Развратителя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.677426Z"
+  },
+  "spell.terofar_curse.name": {
+    "src_hash": "6389db55d88c913fc49a959a272edbeb",
+    "text": "Проклятие Терофара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.677683Z"
+  },
+  "spell.raging_mage_skill_reducer_1.name": {
+    "src_hash": "56401bb1ab93018848c0de7d252cca02",
+    "text": "Редуктор навыков бушующего мага 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.678266Z"
+  },
+  "spell.boulder_ring.name": {
+    "src_hash": "aadc298ce9732b12ee763c722cf75f9c",
+    "text": "кольцо с валуном",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.678528Z"
+  },
+  "spell.the_dark_dancer_summon.name": {
+    "src_hash": "c1d90021e67f6dfddbc092cb463c0704",
+    "text": "вызов темного танцора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.678817Z"
+  },
+  "spell.zushuka_heal.name": {
+    "src_hash": "d4eb5c8db3451ba2c986bb54cf9acd52",
+    "text": "Зусука исцеляет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.681637Z"
+  },
+  "spell.ice_barrage.name": {
+    "src_hash": "1d60f3b1dde1dc296ac9c47328e769c9",
+    "text": "ледяной заграждение",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.681893Z"
+  },
+  "spell.the_blightfather_summon.name": {
+    "src_hash": "f257522b9446429fb94c7f149eb96d0b",
+    "text": "вызов Отца Мора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.682255Z"
+  },
+  "spell.extended_energy_chain.name": {
+    "src_hash": "9d70431ae04da017cdfc32ade0c9487f",
+    "text": "расширенная энергетическая цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.682570Z"
+  },
+  "spell.time_guardiann.name": {
+    "src_hash": "82b056bca2cceacbc0a9c4231c285f6c",
+    "text": "хранитель времени",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.682828Z"
+  },
+  "spell.energy_barrage.name": {
+    "src_hash": "230a96efebea040b8627053d9bfd4bd8",
+    "text": "энергетический шквал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.683084Z"
+  },
+  "spell.brimstone_bug_wave.name": {
+    "src_hash": "c193de5508c5c027cae14d4e7987facb",
+    "text": "волна серных жуков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.683392Z"
+  },
+  "spell.prince_drazzak_summon.name": {
+    "src_hash": "8058f39ac3b0e816304e9185d34f0dd1",
+    "text": "Призыв принца Драззака",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.683679Z"
+  },
+  "spell.frozen_minion_wave.name": {
+    "src_hash": "c60224fd4f7a1e3b44ecae75d73d5095",
+    "text": "волна замороженных миньонов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.683966Z"
+  },
+  "spell.terofar_skill_reducer_2.name": {
+    "src_hash": "2e4b4ad63a6d051ec670c89a32b9cb48",
+    "text": "Терофар Редуктор навыков 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:40:53.684485Z"
+  },
+  "spell.the_welter_heal2.name": {
+    "src_hash": "e0c4485048ce4ee7d45151b5defdb5b5",
+    "text": "сумбур исцеляет2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.230821Z"
+  },
+  "spell.the_welter_summon2.name": {
+    "src_hash": "b575b682ca12598061ae498f55604ff5",
+    "text": "сумбурный вызов2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.231116Z"
+  },
+  "spell.worm_priestess_paralyze.name": {
+    "src_hash": "15fa765c69e9aec356a6ccb56d8ae7ef",
+    "text": "жрица червя паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.231406Z"
+  },
+  "spell.coldheart_paralyze.name": {
+    "src_hash": "318a3ce82b944a7094fc41c729aa0311",
+    "text": "бессердечный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.231679Z"
+  },
+  "spell.doctor_marrow_explosion.name": {
+    "src_hash": "5c8fc7ad4b748509ef534520c8067b48",
+    "text": "Доктор Марроу Взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.232001Z"
+  },
+  "spell.hunger_summon.name": {
+    "src_hash": "c21e3faa61efc7c1b0ce8d02e47002bf",
+    "text": "вызов голода",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.232247Z"
+  },
+  "spell.gnorre_chyllson_skill_reducer.name": {
+    "src_hash": "d59a28b482a50154317dc0ae4e9ea205",
+    "text": "Редуктор навыков Гнорра Чилсона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.232816Z"
+  },
+  "spell.chizzoron_the_distorter_summon.name": {
+    "src_hash": "0f88d69c500c86b95a5f75a6cb96e291",
+    "text": "вызов искателя чиззорона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.233142Z"
+  },
+  "spell.hive_pore_summon.name": {
+    "src_hash": "32868349ad85025642cc1b7934868fa2",
+    "text": "вызов поры улья",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.233406Z"
+  },
+  "spell.spawn_of_the_welter_heal.name": {
+    "src_hash": "b29b0635e3f3f822c55ad4425f028345",
+    "text": "порождение суматохи, исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.233734Z"
+  },
+  "spell.arkhothep_summon.name": {
+    "src_hash": "95a6a0ff99c0f39dd5f2cc88a0a88898",
+    "text": "вызов архотепа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.234004Z"
+  },
+  "spell.dread_intruder_wave.name": {
+    "src_hash": "128174aa54c06e2fcd2a1058fa315a40",
+    "text": "страшная волна злоумышленника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.234362Z"
+  },
+  "spell.glooth_bomb_walkthrough.name": {
+    "src_hash": "0294ca41460340fd1c4c9acc2e07df94",
+    "text": "прохождение глут-бомбы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.234652Z"
+  },
+  "spell.deathstrike_paralyze.name": {
+    "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
+    "text": "смертельный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.235013Z"
+  },
+  "spell.anomaly_wave.name": {
+    "src_hash": "8255680566fd850dc8b934f81f7fdeb5",
+    "text": "аномальная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.235264Z"
+  },
+  "spell.werecrocodile_fire_ring.name": {
+    "src_hash": "f25043479e8b3749a6ba70f30422d299",
+    "text": "Огненное кольцо оборотня-крокодила",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.235574Z"
+  },
+  "spell.orshabaal_skill_reducer.name": {
+    "src_hash": "b9f12ca14fb77c18211037d3a0e27dbf",
+    "text": "Редуктор навыков Оршабаала",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.235901Z"
+  },
+  "spell.sir_valorcrest_summon.name": {
+    "src_hash": "957e35ed048ddd87721f97047a0b325f",
+    "text": "призыв сэра доблести",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.236188Z"
+  },
+  "spell.holy_barrage.name": {
+    "src_hash": "c371c369e448d986a545c45319be4a7d",
+    "text": "священный обстрел",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.236435Z"
+  },
+  "spell.lancer_beetle_skill_reducer.name": {
+    "src_hash": "42360850f1494b149a0f12e97ef0ef75",
+    "text": "Редуктор навыков жука-лансера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:07.236771Z"
+  },
+  "spell.prince_drazzak_druid.name": {
+    "src_hash": "a6b52c25bcc62f3809e1fb744557fb21",
+    "text": "Принц Драззак Druid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.016504Z"
+  },
+  "spell.ironblight_freeze.name": {
+    "src_hash": "5aabd86f8100db71557b45a228d2a54a",
+    "text": "железная заморозка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.016808Z"
+  },
+  "spell.srezz_lleecht.name": {
+    "src_hash": "c6735b9cf39cc4d574972e6d13e79577",
+    "text": "пиявка волнаT",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.017197Z"
+  },
+  "spell.lost_berserker_skill_reducer.name": {
+    "src_hash": "56487db3c865ce7f48a648e4297128d5",
+    "text": "потерянный редуктор навыков берсерка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.017752Z"
+  },
+  "spell.abyssador_poison_wave.name": {
+    "src_hash": "ee4f1338ce79ebe520f864cc3bdce8e6",
+    "text": "Ядовитая волна Абиссадора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.018051Z"
+  },
+  "spell.haunter_electrify.name": {
+    "src_hash": "fb2552ad23c3c18710da7a27aac169ec",
+    "text": "призрак электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.018393Z"
+  },
+  "spell.massive_energy_elemental_electrify.name": {
+    "src_hash": "01577348ac2989fd49d8486bbaa87616",
+    "text": "массивная энергетическая стихия электрифицирует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.018936Z"
+  },
+  "spell.greater_jar_summon.name": {
+    "src_hash": "a46f9cd4a0193eac343be793e6004073",
+    "text": "призыв великого кувшина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.019223Z"
+  },
+  "spell.tyrn_electrify.name": {
+    "src_hash": "dfbb775c781dd837e15bd94ba9041e4f",
+    "text": "тырн электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.019485Z"
+  },
+  "spell.mutated_rat_paralyze.name": {
+    "src_hash": "eb31149e8372974ea0aa8aad1a461e83",
+    "text": "мутировавший крысиный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.019778Z"
+  },
+  "spell.mutated_human_paralyze.name": {
+    "src_hash": "d3c88ba85b2115e4c98e34dccfd5899d",
+    "text": "мутировавший человеческий паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.020136Z"
+  },
+  "spell.koshei_the_deathless_curse.name": {
+    "src_hash": "03a1c28d392da32d21f8695c80cfba99",
+    "text": "кошей проклятие бессмертия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.021195Z"
+  },
+  "spell.the_voice_of_ruin_paralyze.name": {
+    "src_hash": "e29336df79654ba1fe4de78c02fe3317",
+    "text": "голос разрушения парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.021543Z"
+  },
+  "spell.choking_fear_drown.name": {
+    "src_hash": "39160ee8d7bca7b101f3aeca4829f6a2",
+    "text": "задыхаюсь страх утонуть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.021831Z"
+  },
+  "spell.woodling_paralyze.name": {
+    "src_hash": "97553a2f2fa52064daf5182d66aaddac",
+    "text": "Паралич лесника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.022107Z"
+  },
+  "spell.kraknaknork_poison_wave.name": {
+    "src_hash": "1fd267a3aead63a2997612b7b5401a35",
+    "text": "Ядовитая волна кракнакнорка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.022442Z"
+  },
+  "spell.kraknaknork_ice_wave.name": {
+    "src_hash": "32d29ecc9efa37a24ae26adb5bae9368",
+    "text": "ледяная волна кракнакнорка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.022737Z"
+  },
+  "spell.girtablilu_poison_wave.name": {
+    "src_hash": "a4e1224c426e4275b7f4952b67d5845c",
+    "text": "ядовитая волна гиртаблилу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.023027Z"
+  },
+  "spell.nightstalker_paralyze.name": {
+    "src_hash": "2c84fb8e3597186cf01caef6d50eaf14",
+    "text": "ночной охотник паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:21.023337Z"
+  },
+  "spell.ushuriel_electrify.name": {
+    "src_hash": "c5acaade7cf4f44c445dffd0c8216cb2",
+    "text": "Ушуриэль электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.667648Z"
+  },
+  "spell.large_poison_ring.name": {
+    "src_hash": "133974dafcdccb55f7f557779cc2a53e",
+    "text": "большое ядовитое кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.667936Z"
+  },
+  "spell.makara_watersplash.name": {
+    "src_hash": "037bbf7c50bbcc1da65c48f2811c57ac",
+    "text": "МакараВсплеск воды",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.668198Z"
+  },
+  "spell.annihilon_skill_reducer.name": {
+    "src_hash": "1e1e826d84adab2cbc69606f0b7b4edf",
+    "text": "редуктор навыков Аннигилона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.668531Z"
+  },
+  "spell.orewalker_wave.name": {
+    "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
+    "text": "волна рудохода",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.668783Z"
+  },
+  "spell.shulgrax_summon.name": {
+    "src_hash": "f5a03d22464772d6102203f0fe68bb2c",
+    "text": "вызов шулгракса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.669031Z"
+  },
+  "spell.prince_drazzak_wave.name": {
+    "src_hash": "d57ae73626ec23c37e78b9c69ab23a58",
+    "text": "Принц Драззак волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.669300Z"
+  },
+  "spell.destruction_summon.name": {
+    "src_hash": "01065f8da944639a1a4fb3cb16d22117",
+    "text": "вызов разрушения",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.669600Z"
+  },
+  "spell.urmahlullu_ring.name": {
+    "src_hash": "3c9688d7cc8cc7ed3d5885c74a95794e",
+    "text": "заманчивый",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.669831Z"
+  },
+  "spell.ironblight_skill_reducer.name": {
+    "src_hash": "5b5f7cfe26648afda2bef49a5709e3fc",
+    "text": "Редуктор навыков Железного Порога",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.670436Z"
+  },
+  "spell.ushuriel_curse.name": {
+    "src_hash": "074cb677180b3b31a654751644a331cd",
+    "text": "проклятие Ушуриэля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.670701Z"
+  },
+  "spell.gorerilla_large_ring.name": {
+    "src_hash": "e99623b0a89c854eac306e6f6d8bd787",
+    "text": "большое кольцо горериллы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.670984Z"
+  },
+  "spell.dire_penguin_paralyze.name": {
+    "src_hash": "258aae9d7958e760ba23809d82618ff4",
+    "text": "ужасный паралич пингвина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.671269Z"
+  },
+  "spell.fire_overlord_soulfire.name": {
+    "src_hash": "14c49b0d83520ccc5818f8b871d249fe",
+    "text": "Повелитель огня, огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.671777Z"
+  },
+  "spell.metal_gargoyle_curse.name": {
+    "src_hash": "0787f61ae7e0ee13dbba63aa7a817594",
+    "text": "Проклятие металлической горгульи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.672082Z"
+  },
+  "spell.magma_crawler_soulfire_2.name": {
+    "src_hash": "022ce17b12c69f1881b4301e446b1d7f",
+    "text": "магма-гусеничный огонь души 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.672660Z"
+  },
+  "spell.frost_dragon_paralyze_3.name": {
+    "src_hash": "b1f2e2e10ccc00f6ecb46e9e8a4dcbed",
+    "text": "паралич морозного дракона 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.673144Z"
+  },
+  "spell.zushuka_paralyze.name": {
+    "src_hash": "1ec800aaf80ad82153d7c9859735db29",
+    "text": "Зусука паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.673428Z"
+  },
+  "spell.humongous_fungus_paralyze.name": {
+    "src_hash": "39fed1c99b198b17cda07327d992fc3d",
+    "text": "огромный гриб парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.673731Z"
+  },
+  "spell.demon_paralyze.name": {
+    "src_hash": "2ced5b759655cd9ddc54fb26635b8e54",
+    "text": "демон парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:35.673983Z"
+  },
+  "spell.hirintror_freeze.name": {
+    "src_hash": "5e097d6269943f1e56b4c7abecc23198",
+    "text": "Хиринтрор заморозить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.811231Z"
+  },
+  "spell.forest_fury_skill_reducer_2.name": {
+    "src_hash": "2644e2a7a0006ca1ce8573fb6b0255c1",
+    "text": "Редуктор навыков лесной ярости 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.811789Z"
+  },
+  "spell.lord_of_the_elements_skill_reducer.name": {
+    "src_hash": "a20b38fea9fe86877e8442ae165cf9f3",
+    "text": "Повелитель стихий, редуктор навыков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.812410Z"
+  },
+  "spell.barbarian_brutetamer_skill_reducer.name": {
+    "src_hash": "211044459eafd8b75ed888381306b783",
+    "text": "Редуктор навыков варвара-укротителя зверей",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.812948Z"
+  },
+  "spell.the_abomination_summon.name": {
+    "src_hash": "679818ed60c3bfa7fd70f1dce533fa81",
+    "text": "вызов мерзости",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.813221Z"
+  },
+  "spell.braindeath_paralyze.name": {
+    "src_hash": "3378421b02e9645f1d447f7a1a3dd419",
+    "text": "паралич смерти мозга",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.813530Z"
+  },
+  "spell.source_of_corruption_wave.name": {
+    "src_hash": "cb4d34a5ee678fe586cc8fb3f5fc33f4",
+    "text": "Источник волны коррупции",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.813826Z"
+  },
+  "spell.elder_mummy_paralyze.name": {
+    "src_hash": "ad76cd640c6cdc1ad2b82a7325815639",
+    "text": "старшая мумия паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.814174Z"
+  },
+  "spell.poison_chain.name": {
+    "src_hash": "f679194633ce29bb9119b5f139c4f81c",
+    "text": "ядовитая цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.814453Z"
+  },
+  "spell.quara_raider_watercreature.name": {
+    "src_hash": "7d5d721ab0d2a86ba9bbc313fa8013cb",
+    "text": "кварасемонстр",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.814693Z"
+  },
+  "spell.zavarash_paralyze.name": {
+    "src_hash": "575268d30e6f6f3e936c60ceb53bf726",
+    "text": "завараш паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.814941Z"
+  },
+  "spell.hellfire_fighter_soulfire.name": {
+    "src_hash": "5c7f8c7b5308d6ad56a1cd97eccb1c5f",
+    "text": "адский боец, огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.815446Z"
+  },
+  "spell.gorerilla_small_ring.name": {
+    "src_hash": "cca50583b131400c336440d6eab26c70",
+    "text": "маленькое кольцо горериллы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.815739Z"
+  },
+  "spell.single_ice_chain.name": {
+    "src_hash": "54dec50b624493db9a486c3452a906fb",
+    "text": "одиночная ледяная цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.815992Z"
+  },
+  "spell.ice_overlord_paralyze.name": {
+    "src_hash": "a867f6397c2c6fb5a651d6d928083f87",
+    "text": "Повелитель льда парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.816943Z"
+  },
+  "spell.elder_wyrm_wave.name": {
+    "src_hash": "b862d08a8964e1e44588a5d002bf8c55",
+    "text": "волна старшего змея",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.817209Z"
+  },
+  "spell.horadron_heal.name": {
+    "src_hash": "4a5495c75a76d981634e523e8bbdd2bd",
+    "text": "Хорадрон исцеляет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.817492Z"
+  },
+  "spell.quara_raider_icering.name": {
+    "src_hash": "dbd2a1042a3ac1c9f65301e8cecc1c12",
+    "text": "кварцевание",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.817732Z"
+  },
+  "spell.azerus_summon_4.name": {
+    "src_hash": "ac89901c5c98209cd80fe11c4712fb7f",
+    "text": "Азерус вызов 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:41:49.817982Z"
+  },
+  "spell.quara_plunderer_cross.name": {
+    "src_hash": "963e8ea8774a627a357f0f31eca5aab5",
+    "text": "кваракросссмерть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.573402Z"
+  },
+  "spell.single_cloud_chain.name": {
+    "src_hash": "3d17e11dd54e914d7f50de83c2ac71ba",
+    "text": "однооблачная цепочка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.573686Z"
+  },
+  "spell.hirintror_skill_reducer.name": {
+    "src_hash": "2f173ffebe0983276155a26b1a2c16e4",
+    "text": "редуктор навыков хиринтрора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.573989Z"
+  },
+  "spell.monstor_summon.name": {
+    "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
+    "text": "вызов монстра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.574320Z"
+  },
+  "spell.crystal_wolf_wave.name": {
+    "src_hash": "27c6efcfdd27636c1353c09872061a0b",
+    "text": "хрустальная волчья волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.574608Z"
+  },
+  "spell.plaguesmith_paralyze.name": {
+    "src_hash": "06753eb4a768091b27159764ed117920",
+    "text": "чумной паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.574871Z"
+  },
+  "spell.glooth_generator_summon.name": {
+    "src_hash": "a248dfd1c2ec953a5e05daa52edda24c",
+    "text": "Призыв Глутогенератора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.575160Z"
+  },
+  "spell.death_blob_curse.name": {
+    "src_hash": "86e22b06c5f3a3cd708d46f305fca8f9",
+    "text": "проклятие смертельной капли",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.575482Z"
+  },
+  "spell.terofar_skill_reducer_1.name": {
+    "src_hash": "e574c4bc74dcb7aa615c0616eb9e06c7",
+    "text": "редуктор навыков терофара 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.575993Z"
+  },
+  "spell.plant_attendant_wave.name": {
+    "src_hash": "b3d78c339149125a7b0f4114346eb4b4",
+    "text": "Волна обслуживающего завода",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.576321Z"
+  },
+  "spell.shargon_heal.name": {
+    "src_hash": "6ff3778db6c46be9033f103981ffd7ca",
+    "text": "Шаргон Хил",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.576563Z"
+  },
+  "spell.lord_of_the_elements_soulfire.name": {
+    "src_hash": "47b43d663522a204104be603595da3a0",
+    "text": "Повелитель стихий, огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.577059Z"
+  },
+  "spell.mindmasher_summon.name": {
+    "src_hash": "fb82b6fdc6ecd01be41a08a91d6ac405",
+    "text": "вызов сокрушителя разума",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.577373Z"
+  },
+  "spell.dryad_paralyze.name": {
+    "src_hash": "bcf4bf79e672cbb2bdb95d4a8a3453ee",
+    "text": "паралич дриады",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.577626Z"
+  },
+  "spell.lost_soul_paralyze.name": {
+    "src_hash": "22f92d0d9a6a8ea0c6fdb0b0367d1f25",
+    "text": "потерянная душа паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.578006Z"
+  },
+  "spell.mercurial_menace_ring.name": {
+    "src_hash": "82a154dbb84686009a90982171611c11",
+    "text": "кольцо ртутной угрозы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.578353Z"
+  },
+  "spell.timira_fire_ring.name": {
+    "src_hash": "d4dbeec8cd4e3057b2f48deb42453454",
+    "text": "Тимира огненное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.578631Z"
+  },
+  "spell.crystal_spider_paralyze_2.name": {
+    "src_hash": "65e000bbbca9193153934fb7e303b54a",
+    "text": "хрустальный паралич паука 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.579111Z"
+  },
+  "spell.dread_maiden_rcircle.name": {
+    "src_hash": "f044cf41609104031b589ac2cc324fe1",
+    "text": "ужасный круг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.579390Z"
+  },
+  "spell.sapling_explode.name": {
+    "src_hash": "779c488a650f1720cb0f049fd4f207e8",
+    "text": "саженец взорвется",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:05.579648Z"
+  },
+  "spell.infected_weeper_summon.name": {
+    "src_hash": "5d48b1ac09992272779572ce5228fb76",
+    "text": "вызов зараженного плачущего",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.523228Z"
+  },
+  "spell.blightwalker_paralyze.name": {
+    "src_hash": "e51124ecb3786182defbcb4d579924fd",
+    "text": "странник-чудоход паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.523563Z"
+  },
+  "spell.werelion_wave.name": {
+    "src_hash": "fa74fff07e5d25858589c66e8508ae96",
+    "text": "волна-оборотень",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.523821Z"
+  },
+  "spell.bulltaur_alchemist_avalanche.name": {
+    "src_hash": "58e79740f767fe15ef55046db432f86a",
+    "text": "бультаурская лавина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.524092Z"
+  },
+  "spell.exploding_cask.name": {
+    "src_hash": "c539415fe7dcd5002185881c2716e9a8",
+    "text": "Взрывающаяся бочка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.524349Z"
+  },
+  "spell.lavafungus_x_wave.name": {
+    "src_hash": "215ae80515e3fd249143f98a1647580d",
+    "text": "лавафунгус х волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.524649Z"
+  },
+  "spell.jewelry_chest_summon.name": {
+    "src_hash": "ee8d18c219d7ca76035d4fc382f41a65",
+    "text": "Призыв сундука с драгоценностями",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.525178Z"
+  },
+  "spell.energy_overlord_paralyze.name": {
+    "src_hash": "0c29221e2116fdb6c370a09564b96bf7",
+    "text": "энергетический повелитель паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.525496Z"
+  },
+  "spell.ancient_scarab_paralyze.name": {
+    "src_hash": "a7ec3187b906ce76a472b670d87f59b9",
+    "text": "паралич древнего скарабея",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.525827Z"
+  },
+  "spell.generator_wave.name": {
+    "src_hash": "ab2a716270aa45c393073a5b0cbc665c",
+    "text": "генератор волны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.526100Z"
+  },
+  "spell.arachnophobica_wavedice.name": {
+    "src_hash": "ceaf2de7274aa3e8be1650ebcd31c3a2",
+    "text": "арахнофобия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.526360Z"
+  },
+  "spell.ghazbaran_summon.name": {
+    "src_hash": "0010d2177ff532e38ed4cad053dd2e57",
+    "text": "Газбаран вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.526642Z"
+  },
+  "spell.dirtbeard_summon.name": {
+    "src_hash": "a868a6e090eb520a4548f1b26b16737f",
+    "text": "призыв грязнобородого",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.526914Z"
+  },
+  "spell.shock_head_paralyze.name": {
+    "src_hash": "261c1b218a892245cd6eea042796e605",
+    "text": "шоковый паралич головы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.527865Z"
+  },
+  "spell.charge_vortex.name": {
+    "src_hash": "c32b9de511ad6749434dbf5dd2e03ec9",
+    "text": "зарядовый вихрь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.528117Z"
+  },
+  "spell.hideous_fungus_poison.name": {
+    "src_hash": "950f0bc94925ce99b89b2c69baff430f",
+    "text": "ужасный грибной яд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.528396Z"
+  },
+  "spell.hot_dog_soulfire.name": {
+    "src_hash": "911258c5426c381ff7939e479048a748",
+    "text": "хот-дог огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.528692Z"
+  },
+  "spell.white_weretiger_ice_ring.name": {
+    "src_hash": "f1617c0fc40020f24df6b11d845af8ec",
+    "text": "ледяное кольцо белого вертигра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.529190Z"
+  },
+  "spell.mindmasher_drown.name": {
+    "src_hash": "9cd844fd56fb65aec5e4c7ac2ee59e67",
+    "text": "разрушитель разума утонуть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:20.529502Z"
+  },
+  "spell.haunted_treeling_paralyze.name": {
+    "src_hash": "cd26170d9e512f1e2e613cffe6da3c4c",
+    "text": "паралич деревьев с привидениями",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.324362Z"
+  },
+  "spell.minotaur_wallbreaker_walkthrough.name": {
+    "src_hash": "b7373e9ac23d8d4199def5eefd066a54",
+    "text": "Минотавр: прохождение стенобоя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.324734Z"
+  },
+  "spell.horestis_paralyze.name": {
+    "src_hash": "a4f4b2be974b42e2ae09a4193f3a6e29",
+    "text": "хорестис паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.325030Z"
+  },
+  "spell.arthei_summon.name": {
+    "src_hash": "76c73c95dcbaf0479622b03b92691a9f",
+    "text": "призыв Артея",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.325273Z"
+  },
+  "spell.canopic_jar_heal.name": {
+    "src_hash": "08d00250b000ce37493e94540dde0896",
+    "text": "канопа банка исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.325574Z"
+  },
+  "spell.azerus_summon_3.name": {
+    "src_hash": "f132e13c75d28cbadb820998fa56f5be",
+    "text": "Азерус призыв 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.325836Z"
+  },
+  "spell.seacrest_serpent_wave.name": {
+    "src_hash": "c26da9a762ecb2e0cdc44db2d25ea406",
+    "text": "волна змеи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.326148Z"
+  },
+  "spell.hideous_fungus_paralyze.name": {
+    "src_hash": "6c4ee6bae8b697a5cd943383d2d2a851",
+    "text": "ужасный гриб парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.326449Z"
+  },
+  "spell.lizard_gate_guardian_summon.name": {
+    "src_hash": "7a96249ec08befa9e27107b8c56de262",
+    "text": "Призыв стража ворот ящерицы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.326971Z"
+  },
+  "spell.podzillaphys_chain.name": {
+    "src_hash": "d0066ec20e49c206946f5b44bedf0f0b",
+    "text": "подзиллафизовая цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.327238Z"
+  },
+  "spell.azerus_skill_reducer_2.name": {
+    "src_hash": "aab7ce88a95b460ce06e14c025b13979",
+    "text": "Редуктор навыков Azerus 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.327977Z"
+  },
+  "spell.frost_dragon_paralyze_1.name": {
+    "src_hash": "93d1f160fcc199b75d281782ae91df7a",
+    "text": "Паралич морозного дракона 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.328485Z"
+  },
+  "spell.ghazbaran_skill_reducer_2.name": {
+    "src_hash": "edb6c3cd04556245eb946083c0d81691",
+    "text": "Редуктор навыков Газбарана 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.329005Z"
+  },
+  "spell.werewolf_skill_reducer.name": {
+    "src_hash": "03190248daffc0cb119d91617b8b0ce0",
+    "text": "Редуктор навыков оборотня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.329306Z"
+  },
+  "spell.verminor_summon.name": {
+    "src_hash": "e5609bfa4280db95f461c539f5c7b395",
+    "text": "вызов паразита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.329585Z"
+  },
+  "spell.hell_hole_summon.name": {
+    "src_hash": "0d423b336d18a0eec44f0d28d15dcee7",
+    "text": "вызов адской дыры",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.329854Z"
+  },
+  "spell.fury_skill_reducer_1.name": {
+    "src_hash": "2ff08668178e60437b2a9914d85524cf",
+    "text": "редуктор навыка ярости",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.330187Z"
+  },
+  "spell.mitmah_vanguard_hugeblackring.name": {
+    "src_hash": "56880b3fbd8eb63890fb11cf037e43ce",
+    "text": "огромное черное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.330450Z"
+  },
+  "spell.choking_fear_paralyze.name": {
+    "src_hash": "1ed18b5dd8a0a95f82c3c83e446ecf40",
+    "text": "удушающий страх парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.330777Z"
+  },
+  "spell.gnomevil_drunk.name": {
+    "src_hash": "1cbe27586721c72d43d8289c2440b878",
+    "text": "гном злобный пьяный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:34.331036Z"
+  },
+  "spell.mahrdis_soulfire.name": {
+    "src_hash": "57a8f6368f7b20867c4fb5d6da7219f0",
+    "text": "Махрдис огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.734842Z"
+  },
+  "spell.anomaly_break.name": {
+    "src_hash": "aa47d0a08e52fc6415bf7e86324537fb",
+    "text": "аномалия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.735090Z"
+  },
+  "spell.apprentice_sheng_summon.name": {
+    "src_hash": "c3b6b41da9d83e9bdedc815a926295c0",
+    "text": "Вызов ученика Шэна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.735405Z"
+  },
+  "spell.rotthing_shaper.name": {
+    "src_hash": "34186e2e9e381f221e74a91e73b62f82",
+    "text": "гнилостный формирователь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.735682Z"
+  },
+  "spell.werewolf_summon.name": {
+    "src_hash": "244197315c1b0a4257f4ba14ac9b5e26",
+    "text": "вызов оборотня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.735932Z"
+  },
+  "spell.betrayed_wraith_paralyze.name": {
+    "src_hash": "64f99c356a8dc25fc514e7d761f62d3b",
+    "text": "Преданный призрак парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.736235Z"
+  },
+  "spell.morgaroth_paralyze.name": {
+    "src_hash": "e9b3629ccd8c10b74737a685a57a243f",
+    "text": "моргарот паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.736529Z"
+  },
+  "spell.deathstrike_manadrain.name": {
+    "src_hash": "01a2f69ea46ac9c62aa971a84b48a6ce",
+    "text": "Смертельный удар манадрен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.736826Z"
+  },
+  "spell.plagueroot_skill_reducer.name": {
+    "src_hash": "45369f9c11a15a1b5131e3d0bd52d9ab",
+    "text": "Редуктор навыков чумного корня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.737380Z"
+  },
+  "spell.slime_puddle_paralyze.name": {
+    "src_hash": "2ecc0bb85637af2462ceebd3b030896a",
+    "text": "лужа слизи паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.737674Z"
+  },
+  "spell.morgaroth_skill_reducer_1.name": {
+    "src_hash": "3611981e0ab9f12ef69a7bfdad81a978",
+    "text": "Редуктор умений Моргарота 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.738186Z"
+  },
+  "spell.lord_azaram_wave.name": {
+    "src_hash": "3fb0877e9780427f3d9a00e7f1de9b1c",
+    "text": "Лорд Азарам волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.738490Z"
+  },
+  "spell.tanjis_skill_reducer.name": {
+    "src_hash": "50e236264035970b6b31ee6f43f4a2dc",
+    "text": "Редуктор навыков Танджи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.738785Z"
+  },
+  "spell.dwarf_henchman_drown.name": {
+    "src_hash": "a48d4381e55d438bc5e5ca8f893f17c4",
+    "text": "гном-приспешник утонул",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.739124Z"
+  },
+  "spell.icicle_heal.name": {
+    "src_hash": "b15d568c4f6dcc60c39558970adda29a",
+    "text": "сосулька исцеляет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.739397Z"
+  },
+  "spell.thunderstorm_ring.name": {
+    "src_hash": "868d659ece6a15bb01146cc6875c2d3a",
+    "text": "грозовое кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.739663Z"
+  },
+  "spell.large_pink_ring.name": {
+    "src_hash": "5215e7d3fa9f9d7a1cd07bfde93315bb",
+    "text": "большое розовое кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.739915Z"
+  },
+  "spell.azerus_soulfire_1.name": {
+    "src_hash": "8c7e3e4f4cf2879abae2002e3f4f2462",
+    "text": "Азерус огонь души 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.740386Z"
+  },
+  "spell.plagirath_bog.name": {
+    "src_hash": "945ee8043e035ff02156ccc0c96c7817",
+    "text": "плагиратское болото",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.740655Z"
+  },
+  "spell.devourer_paralyze.name": {
+    "src_hash": "75997b5c73c2264686d92d09db7279ad",
+    "text": "пожиратель парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:42:48.740933Z"
+  },
+  "spell.glooth_fairy_paralyze.name": {
+    "src_hash": "dd0ceb38a3f8db897e9faaa40c6cf12a",
+    "text": "паралич феи мрачности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.149622Z"
+  },
+  "spell.souleater_wave.name": {
+    "src_hash": "533f49165bd5fb4a35fafe2cdd6877d8",
+    "text": "волна пожирателя душ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.149906Z"
+  },
+  "spell.djinn_cancel_invisibility.name": {
+    "src_hash": "c6f443c270cd529fcffed0a8c36ab816",
+    "text": "джинн отменить невидимость",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.150327Z"
+  },
+  "spell.defiler_paralyze_2.name": {
+    "src_hash": "15e0934ef2bf1ceb9fc0bf532bc6d023",
+    "text": "осквернитель паралич 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.150691Z"
+  },
+  "spell.magma_crawler_skill_reducer.name": {
+    "src_hash": "3dc5ead3c7a81bf99d2e0ca99295a8ae",
+    "text": "Редуктор навыков магматического ползуна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.151322Z"
+  },
+  "spell.deathstrike_freeze.name": {
+    "src_hash": "178bb77fae9e687e2746b05123e5c5d8",
+    "text": "Смертельный удар заморозить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.151640Z"
+  },
+  "spell.timira_fire_explosion.name": {
+    "src_hash": "2afde35d26cffaca7ee5e9e698245b16",
+    "text": "тимира взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.151917Z"
+  },
+  "spell.emerald_tortoise_large_ring.name": {
+    "src_hash": "432e01ab819a139df39a60b40933a827",
+    "text": "большое кольцо с изумрудной черепахой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.152504Z"
+  },
+  "spell.feversleep_skill_reducer.name": {
+    "src_hash": "7338bc56d9158f14ae17d56e77dda0b2",
+    "text": "Редуктор навыков лихорадочного сна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.153045Z"
+  },
+  "spell.dreadbeast_summon.name": {
+    "src_hash": "cce70fc0d3b474e3f85b5937e3f973db",
+    "text": "вызов ужасного зверя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.153344Z"
+  },
+  "spell.askarak_wave.name": {
+    "src_hash": "97c28802a39c99198c9a8745cf8f9c20",
+    "text": "аскаракская волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.153617Z"
+  },
+  "spell.kraknaknork_paralyze.name": {
+    "src_hash": "da4cd9850f906929b4cec3430784c035",
+    "text": "кракнакнорк паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.153912Z"
+  },
+  "spell.ice_witch_paralyze.name": {
+    "src_hash": "7199a8a39446b42186fb4dbaca20840b",
+    "text": "Ледяная ведьма парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.155193Z"
+  },
+  "spell.rustheap_golem_wave.name": {
+    "src_hash": "10ca3524c9b62574c8309667a3ddc1bc",
+    "text": "волна ржавого голема",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.155503Z"
+  },
+  "spell.lizard_wave.name": {
+    "src_hash": "5b8ab110cece3c95591b0ab9ca43db55",
+    "text": "ящерица волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.155766Z"
+  },
+  "spell.soulwars_fear.name": {
+    "src_hash": "3e0dd2531384abc8f4af33926ccccf08",
+    "text": "соулварс страх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.156028Z"
+  },
+  "spell.djinn_electrify_2.name": {
+    "src_hash": "9ba21f3cc17a2bf11e485e9591c01719",
+    "text": "джинн электрифицировать 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.156414Z"
+  },
+  "spell.mephiles_summon.name": {
+    "src_hash": "493a928dfd634b85495b871638a8ac40",
+    "text": "Мефилес вызывает",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.156675Z"
+  },
+  "spell.headpecker_explosion.name": {
+    "src_hash": "de3388442f5b122218281e39c3999e34",
+    "text": "взрыв хедпекера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:01.156939Z"
+  },
+  "spell.mazoran_fire.name": {
+    "src_hash": "a2e894fa7844589482518077ff519c74",
+    "text": "Мазоранский огонь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.064777Z"
+  },
+  "spell.death_priest_shargon_summon.name": {
+    "src_hash": "0f6a33c3ca3803fd2181c8fb5a59c7e9",
+    "text": "Призыв жреца смерти Шаргона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.065334Z"
+  },
+  "spell.abyssador_paralyze.name": {
+    "src_hash": "06cd68c0fc1c546e9dcdc49d6ef6162d",
+    "text": "Абиссадор паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.065635Z"
+  },
+  "spell.fire_wave_delayed.name": {
+    "src_hash": "bddc68cd69d65d5579ef4c312c310f6b",
+    "text": "огненная волна задерживается",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.065933Z"
+  },
+  "spell.obujos_skill_reducer_2.name": {
+    "src_hash": "534f2169f0c85fa6070b74fdb7312ce7",
+    "text": "Редуктор навыков обухо 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.066551Z"
+  },
+  "spell.devourer_wave.name": {
+    "src_hash": "51004d935f7b17d4917760e75bf9aa39",
+    "text": "волна пожирателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.066817Z"
+  },
+  "spell.draken_abomination_curse.name": {
+    "src_hash": "5ad42b9cd41078259bb52459e47e5e5c",
+    "text": "проклятие мерзости дракона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.067119Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_1.name": {
+    "src_hash": "0e0b843358d258c61ebbd207325284e6",
+    "text": "Редуктор навыков порабощенного гнома 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.067667Z"
+  },
+  "spell.lord_of_the_elements_paralyze.name": {
+    "src_hash": "2ac99af442165874bd9e7acc66c8ca01",
+    "text": "повелитель стихий парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.067989Z"
+  },
+  "spell.large_purple_ring_smoke.name": {
+    "src_hash": "b36e86bd6d9bd21d4eeaef9f8107b54a",
+    "text": "большойфиолетовый",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.068240Z"
+  },
+  "spell.glooth_fairy_skill_reducer.name": {
+    "src_hash": "3abf98a0c4a18874c42447bba018b422",
+    "text": "Редуктор навыков мрачной феи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.068816Z"
+  },
+  "spell.the_dreadorian_drown.name": {
+    "src_hash": "cfec1a21dfbdeb6a27be3cb46600e0cd",
+    "text": "ужасный тонет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.069085Z"
+  },
+  "spell.spitter_paralyze.name": {
+    "src_hash": "81b6d0010c15fcc3b1cbb59613c45b4e",
+    "text": "плевок паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.069336Z"
+  },
+  "spell.big_skill_reducer.name": {
+    "src_hash": "54d5d7fb1c8f4e843d1087e9affad704",
+    "text": "большой редуктор навыков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.069642Z"
+  },
+  "spell.lizard_dragon_priest_summon.name": {
+    "src_hash": "8b01714860ec4402119104f8a042bf86",
+    "text": "вызов жреца дракона ящерицы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.070158Z"
+  },
+  "spell.hirintror_summon.name": {
+    "src_hash": "226749efb9749411777adb1c1c80e050",
+    "text": "вызов хиринтрора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.070424Z"
+  },
+  "spell.weeper_paralyze.name": {
+    "src_hash": "7ce49794752e61c5d55effd3450643ac",
+    "text": "плачущий паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.070713Z"
+  },
+  "spell.dark_torturer_skill_reducer.name": {
+    "src_hash": "f6a8dde9975736c82c236072e2c49e6a",
+    "text": "Редуктор навыков темного мучителя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.071216Z"
+  },
+  "spell.sabretooth_wave.name": {
+    "src_hash": "11ba6b246e2c16234efc841c315fb67a",
+    "text": "саблезубая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.071500Z"
+  },
+  "spell.big_energy_purple_wave2.name": {
+    "src_hash": "e9ac8c2be5127b9fed7d055e1210969c",
+    "text": "Большая энергия, фиолетовая волна2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:14.072003Z"
+  },
+  "spell.bonebeast_paralyze.name": {
+    "src_hash": "6432a2882420f03ee4a993d56669b4d2",
+    "text": "костяной зверь паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.094632Z"
+  },
+  "spell.gnomevil_electrify.name": {
+    "src_hash": "b3e7d844172524af79bcf464d61c50e1",
+    "text": "гномовил электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.094962Z"
+  },
+  "spell.large_blackportal_ring.name": {
+    "src_hash": "7ef2e8aa9f91fd75b36ce006b7d6c92b",
+    "text": "большоесмертельное кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.095236Z"
+  },
+  "spell.nighthunter_wave.name": {
+    "src_hash": "0b1ee9bdbc2a07f9ad1765e30b90fbd3",
+    "text": "волна ночного охотника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.095507Z"
+  },
+  "spell.the_pale_count_wave.name": {
+    "src_hash": "1d572cc7873a72ef0bf9f5a17202b7d7",
+    "text": "бледная волна счета",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.095783Z"
+  },
+  "spell.zamulosh_tp.name": {
+    "src_hash": "c43e31bcaa8f70cca397a6932fa7ecbd",
+    "text": "замулош тп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.096046Z"
+  },
+  "spell.undead_jester_summon.name": {
+    "src_hash": "58ea2d14fbf48d44803f3afab51f7e15",
+    "text": "вызов шута нежити",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.096322Z"
+  },
+  "spell.hirintror_heal.name": {
+    "src_hash": "5f638b6a95145c0e9b3da170c7870d73",
+    "text": "Хиринтрор исцеляет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.096577Z"
+  },
+  "spell.extended_fire_chain.name": {
+    "src_hash": "8caf355463f69ce4a12cd45f05b57d9c",
+    "text": "расширенная пожарная цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.096890Z"
+  },
+  "spell.unchained_fire_beam.name": {
+    "src_hash": "e932e0cf2517e157cbe4f6240a6fb750",
+    "text": "раскованный огненный луч",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.097179Z"
+  },
+  "spell.weeper_skill_reducer.name": {
+    "src_hash": "15d60c7a8d19c308f92d607bece7d508",
+    "text": "редуктор навыков плакальщика",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.097469Z"
+  },
+  "spell.madareth_skill_reducer.name": {
+    "src_hash": "031038bd3627de0bcb7d71c152be64c9",
+    "text": "Редуктор навыков Мадарета",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.097762Z"
+  },
+  "spell.glooth_fairy_healing.name": {
+    "src_hash": "2c246feca5cd4064568fb859e13d6f50",
+    "text": "исцеление мрачной феи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.098100Z"
+  },
+  "spell.fury_paralyze.name": {
+    "src_hash": "cf3ad4e0c1a0ec0fcda7ea4a1c8d3fc8",
+    "text": "ярость парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.098360Z"
+  },
+  "spell.brimstone_bug_paralyze.name": {
+    "src_hash": "f16b965d9366206844c0b2265a667aaa",
+    "text": "паралич серной ошибки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.098648Z"
+  },
+  "spell.walker_skill_reducer.name": {
+    "src_hash": "31df4ee9ae9562ab50137641b8b89fd3",
+    "text": "редуктор навыков ходока",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.098983Z"
+  },
+  "spell.energy_elemental_electrify.name": {
+    "src_hash": "2a1ea6c450e7749c46e84b7be86048df",
+    "text": "Энергетический элемент электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.099314Z"
+  },
+  "spell.pythius_the_rotten_curse.name": {
+    "src_hash": "9124a1aaad7c7bb40f19678489b66f63",
+    "text": "Пифий, гнилое проклятие",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.099608Z"
+  },
+  "spell.warden_ring.name": {
+    "src_hash": "c8b8febbffb5cf824912a3e7e986be86",
+    "text": "кольцо надзирателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:28.099882Z"
+  },
+  "spell.jaul_paralyze.name": {
+    "src_hash": "7e7897bffaa28447e89f4fa8b4163866",
+    "text": "паралич желудка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.419997Z"
+  },
+  "spell.zulazza_the_corruptor_paralyze.name": {
+    "src_hash": "308dafdd1960d7ba76c959c9cb7460f3",
+    "text": "Зулацца-развратитель парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.420363Z"
+  },
+  "spell.defiler_paralyze_1.name": {
+    "src_hash": "8d0891ca8afcbf0de5cf31c777aad85e",
+    "text": "осквернитель паралич 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.420655Z"
+  },
+  "spell.ice_crystal_bomb.name": {
+    "src_hash": "47cb0913ea63b98a2f9a0014654dddca",
+    "text": "Ледяная кристаллическая бомба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.420947Z"
+  },
+  "spell.plagirath_summon.name": {
+    "src_hash": "127e27a724e3e408103d86bb257fb7a3",
+    "text": "плагиат вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.421200Z"
+  },
+  "spell.morgaroth_summon.name": {
+    "src_hash": "dd4f9b69b8843e395f18607b798360e0",
+    "text": "вызов Моргарота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.421485Z"
+  },
+  "spell.medusa_paralyze.name": {
+    "src_hash": "8dbddaef45f20aa2c1b6996cd170dac0",
+    "text": "Медуза паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.421735Z"
+  },
+  "spell.dharalion_skill_reducer.name": {
+    "src_hash": "5571b33619459ef69ee0dd69aeac5fcf",
+    "text": "Редуктор навыков Дхаралиона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.422031Z"
+  },
+  "spell.war_golem_skill_reducer.name": {
+    "src_hash": "72d9c4fa4f27d181d4b8abc66285317d",
+    "text": "Редуктор навыков боевых големов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.422653Z"
+  },
+  "spell.renegade_knight.name": {
+    "src_hash": "4577eafb75a4b865924c31cb99985aae",
+    "text": "рыцарь-отступник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.422912Z"
+  },
+  "spell.evil_sheep_lord_summon.name": {
+    "src_hash": "4724c20d690dfa69101e3d9aafe21838",
+    "text": "Призыв злого повелителя овец",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.423443Z"
+  },
+  "spell.death_chain.name": {
+    "src_hash": "89909507732e0ff901e6dcd695682642",
+    "text": "цепь смерти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.423680Z"
+  },
+  "spell.demon_outcast_skill_reducer.name": {
+    "src_hash": "39b7b26b433685ece72dff67c23e949b",
+    "text": "Редуктор навыков демонов-изгоев",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.424219Z"
+  },
+  "spell.quara_looter_small_icering.name": {
+    "src_hash": "c08f75aa4d53551e90e929c80eb29ced",
+    "text": "кваразмаллицирование",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.424520Z"
+  },
+  "spell.pixie_skill_reducer.name": {
+    "src_hash": "71e60467b185cf3e8e617997876dd7bc",
+    "text": "редуктор навыков пикси",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.424802Z"
+  },
+  "spell.emerald_tortoise_small_explosion.name": {
+    "src_hash": "4eacc1d6a9cbd60afe311b07d4f6f586",
+    "text": "изумрудная черепаха небольшой взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.425342Z"
+  },
+  "spell.gaz_functions.name": {
+    "src_hash": "5605eef2fe0b52b733a694d3e216630b",
+    "text": "Газовые функции",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.425601Z"
+  },
+  "spell.rotthing_explo.name": {
+    "src_hash": "cbdd680ae2c93e99c7e7813b5c4933c9",
+    "text": "Роттлигекспло",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:42.425831Z"
+  },
+  "spell.extended_holy_chain.name": {
+    "src_hash": "74a88c76577a04e0125930e38bed9b34",
+    "text": "расширенная священная цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.431375Z"
+  },
+  "spell.feverish_citizen_drunk.name": {
+    "src_hash": "adad448ef8f3c1f4f320aaa2cb41962a",
+    "text": "лихорадочный гражданин, пьяный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.431727Z"
+  },
+  "spell.rootkraken_rootearth.name": {
+    "src_hash": "bc82eb51e01eb57bb7061a1b20e2919f",
+    "text": "коренькракендва",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.431978Z"
+  },
+  "spell.lord_of_the_elements_summon.name": {
+    "src_hash": "8d47763892e8831dc63616aba012f475",
+    "text": "Призыв повелителя стихий",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.432285Z"
+  },
+  "spell.naga_death.name": {
+    "src_hash": "7f4f673b1b957c8ed3a3bf87a87804dc",
+    "text": "нагадаатата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.432523Z"
+  },
+  "spell.essence_of_darkness_curse.name": {
+    "src_hash": "d2b03f8260b3dbd6d4d27b63dbae9435",
+    "text": "сущность проклятия тьмы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.432850Z"
+  },
+  "spell.destroy_magic_walls.name": {
+    "src_hash": "d7c21885afde215137b712be77f50ff3",
+    "text": "разрушить магические стены",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.433147Z"
+  },
+  "spell.ferumbras_soulfire.name": {
+    "src_hash": "072b0af64874c71dc92d45d4d054a9ba",
+    "text": "ферумбрас огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.433420Z"
+  },
+  "spell.ghoulish_hyaena_wave.name": {
+    "src_hash": "df3f54c12d82fa4cebabb3283bca80cf",
+    "text": "омерзительная волна гиены",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.433741Z"
+  },
+  "spell.rift_brood_electrify.name": {
+    "src_hash": "8a30162a5c76d0e9ac8716280a93b62b",
+    "text": "рифтовый выводок электрифицирует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.434051Z"
+  },
+  "spell.large_holy_ring.name": {
+    "src_hash": "c8c06c22bed3ee6297e20f5b6e3e1c1c",
+    "text": "большое святое кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.434370Z"
+  },
+  "spell.humongous_fungus_poison.name": {
+    "src_hash": "0afb8925058ee4caa3726571f89d82e0",
+    "text": "огромный грибной яд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.434656Z"
+  },
+  "spell.svoren_the_mad_paralyze.name": {
+    "src_hash": "b257fab7ad90f26a0832e4669a3f8979",
+    "text": "Сворен безумный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.434985Z"
+  },
+  "spell.mazoran_summon.name": {
+    "src_hash": "f5623c8ad0253babb715e7766eca8184",
+    "text": "Мазоранский призыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.435245Z"
+  },
+  "spell.lloyd_wave2.name": {
+    "src_hash": "9319cdf302ce92d26abf3e5f15200fa6",
+    "text": "Ллойд волна2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.435484Z"
+  },
+  "spell.death_barrage.name": {
+    "src_hash": "5c966071278517536372bf0aac55fb5d",
+    "text": "смертельный обстрел",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.435765Z"
+  },
+  "spell.ghastly_dragon_curse.name": {
+    "src_hash": "c0cd551b01231ad2c1062e531822065c",
+    "text": "ужасное проклятие дракона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.436101Z"
+  },
+  "spell.chakoya_freeze.name": {
+    "src_hash": "6a3672fa2fed124fcab322c87acddafb",
+    "text": "чакоя заморозить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.436363Z"
+  },
+  "spell.charged_energy_elemental_electrify.name": {
+    "src_hash": "52e617f12e586b2391acd4b35d7971cd",
+    "text": "Заряженная энергия элементаля электризует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.436957Z"
+  },
+  "spell.bulltaur_forge_priest_explosion.name": {
+    "src_hash": "229abd63d940641bc7cd221f22b38f8f",
+    "text": "бультаур взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:43:56.437224Z"
+  },
+  "spell.the_welter_paralyze.name": {
+    "src_hash": "60750769a747d24a9604cc88eecd3ffa",
+    "text": "сумеречный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.011149Z"
+  },
+  "spell.emberbeasthur.name": {
+    "src_hash": "666dfabe7e2a9a5437bc86b436599089",
+    "text": "УгольЗверьГур",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.011404Z"
+  },
+  "spell.lost_thrower_skill_reducer.name": {
+    "src_hash": "b2a23e9e543a45fe2efc386768f3aec9",
+    "text": "потерянный редуктор навыка метателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.011954Z"
+  },
+  "spell.diabolic_imp_skill_reducer.name": {
+    "src_hash": "012705c8713981bfe32096c65307542f",
+    "text": "Редуктор навыков дьявольского беса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.012451Z"
+  },
+  "spell.mantosaurus_ring.name": {
+    "src_hash": "bcc22c61835841ab70525f4cc14628d0",
+    "text": "кольцо мантозавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.012716Z"
+  },
+  "spell.hellgorak_skill_reducer.name": {
+    "src_hash": "6e3b641e2c90757a1e0246295e67ec27",
+    "text": "редуктор навыков хеллгорака",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.013014Z"
+  },
+  "spell.shock_head_skill_reducer_1.name": {
+    "src_hash": "0a7f8f8996d58b43aa43c915ac4cacd6",
+    "text": "Редуктор навыков ударной головы 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.013509Z"
+  },
+  "spell.bane_of_light_paralyze.name": {
+    "src_hash": "fb03073ef8235d1ed2617048d376206e",
+    "text": "проклятие светового паралича",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.013810Z"
+  },
+  "spell.ghazbaran_skill_reducer_1.name": {
+    "src_hash": "fbdc5b81beb4fb8e597418d7e1b21ed1",
+    "text": "Редуктор навыка Газбарана 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.014315Z"
+  },
+  "spell.elder_wyrm_electrify.name": {
+    "src_hash": "e7e62046901105389cd4f3b3fdcf11db",
+    "text": "старший змей электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.014616Z"
+  },
+  "spell.gnorre_chyllson_paralyze.name": {
+    "src_hash": "4ea0806f6752bbfe8e3bc6caec634014",
+    "text": "Гнорре Чилсон паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.014902Z"
+  },
+  "spell.azerus_skill_reducer_3.name": {
+    "src_hash": "b38b1973057027ce0ac17b6655bf5684",
+    "text": "Редуктор навыков Azerus 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.015594Z"
+  },
+  "spell.megasylvan_yselda_mleech.name": {
+    "src_hash": "3c0cdc82c29c8d1242c70620559ca797",
+    "text": "пиявка маныMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.016012Z"
+  },
+  "spell.shlorg_paralyze.name": {
+    "src_hash": "cd78e060f9533cd27a1289f4656625b9",
+    "text": "Шлорг паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.016283Z"
+  },
+  "spell.quara_raider_shoot.name": {
+    "src_hash": "79e5fcd67b8270947c506f4085c8c023",
+    "text": "карарейдерстрельба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.016634Z"
+  },
+  "spell.pythius_the_rotten_paralyze.name": {
+    "src_hash": "cbe75c7d24a90e44a72390a8d4374841",
+    "text": "Пифий гнилой паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.016941Z"
+  },
+  "spell.furyosa_heal.name": {
+    "src_hash": "bc9ff064a5e87377e9aec15b013e6bc4",
+    "text": "Фурьоса исцеляется",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.017190Z"
+  },
+  "spell.undead_cavebear_curse.name": {
+    "src_hash": "51734a280f848e861846316bf136d8ac",
+    "text": "проклятие пещерного медведя нежити",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.017723Z"
+  },
+  "spell.deepling_spellsinger_skill_reducer.name": {
+    "src_hash": "4a8099f47747862e8792165ce20aac45",
+    "text": "Редуктор навыков Deepling заклинателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.018826Z"
+  },
+  "spell.zugurosh_soulfire.name": {
+    "src_hash": "5d00482e715b3cbf5ae525f6194311eb",
+    "text": "Зугурош огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:12.019116Z"
+  },
+  "spell.undead_dragon_curse.name": {
+    "src_hash": "b92337fee45029436118eff3ab797275",
+    "text": "проклятие дракона нежити",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.621029Z"
+  },
+  "spell.the_imperor_summon.name": {
+    "src_hash": "e95f65c7bfa433438fb65d93d67fed04",
+    "text": "вызов императора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.621321Z"
+  },
+  "spell.mana_drain_chain.name": {
+    "src_hash": "946d777bac68823d29f74ca5f9f8f710",
+    "text": "цепочка высасывания маны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.621847Z"
+  },
+  "spell.death_priest_shargon_dazzle.name": {
+    "src_hash": "650af20a824dd7ad6cbcde85a3c660d1",
+    "text": "Жрец смерти Шаргон Дэзлл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.622467Z"
+  },
+  "spell.madareth_pillar_skill_reducer.name": {
+    "src_hash": "a84f3c764fa23fad54dc8381dab7a1d9",
+    "text": "Редуктор навыков Мадаретского столба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.622993Z"
+  },
+  "spell.furyosa_manadrain.name": {
+    "src_hash": "79750b7b0dc8e4b410fbc73e2e9af690",
+    "text": "Фурьоса Манадрен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.623264Z"
+  },
+  "spell.azerus_summon_2.name": {
+    "src_hash": "f833c24c73b1331c694bdbb1cd06d1a3",
+    "text": "Азерус призыв 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.623525Z"
+  },
+  "spell.rustheap_golem_electrify.name": {
+    "src_hash": "ca0392516b101ec892f2c6e60b0348d8",
+    "text": "ржавый голем электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.623834Z"
+  },
+  "spell.demon_summon.name": {
+    "src_hash": "b44c360107cc4752e61580e7db80d06b",
+    "text": "вызов демона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.624070Z"
+  },
+  "spell.lavafungus_ring.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "кольцо лавафунга",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.624325Z"
+  },
+  "spell.eruption_of_destruction_explosion.name": {
+    "src_hash": "5266efea431f223d25150520536ad52e",
+    "text": "извержение разрушительного взрыва",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.624657Z"
+  },
+  "spell.furyosa_skill_reducer.name": {
+    "src_hash": "a1cde2f82a3cf2be030756aaca93b06b",
+    "text": "Редуктор навыков Фурьосы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.624947Z"
+  },
+  "spell.the_dreadorian_soulfire.name": {
+    "src_hash": "a7800092edee9e3c1df094a493c909ab",
+    "text": "ужасающий огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.625233Z"
+  },
+  "spell.single_death_chain.name": {
+    "src_hash": "a02961d385f37635ed4701f197ebb7f8",
+    "text": "одиночная цепь смерти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.625561Z"
+  },
+  "spell.zugurosh_pillar_skill_reducer.name": {
+    "src_hash": "7a27843768e9f0e76d42051750d82a72",
+    "text": "Редуктор навыков столба зугуроша",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.626344Z"
+  },
+  "spell.undertaker_square_explosion.name": {
+    "src_hash": "1fc35b28fbc60c7ce946a0c477205c1e",
+    "text": "взрыв на площади гробовщика",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.626853Z"
+  },
+  "spell.grand_mother_foulscale_summon.name": {
+    "src_hash": "7b708ee438ad0e9f09a5637635fc3fc8",
+    "text": "нечистый вызов бабушки-матери",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.627207Z"
+  },
+  "spell.zavarash_heal.name": {
+    "src_hash": "135e011beddf23c8f0af9c905bc267a8",
+    "text": "завараш исцели",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.627461Z"
+  },
+  "spell.fury_skill_reducer_2.name": {
+    "src_hash": "f86e8e4cb79667e4d020ac3a499458ce",
+    "text": "Редуктор навыков ярости 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.627931Z"
+  },
+  "spell.iksyapunac_wave.name": {
+    "src_hash": "10f144518be9a4771fa595c4d4804886",
+    "text": "иксьяпунацвейв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:25.628213Z"
+  },
+  "spell.massive_fire_elemental_soulfire.name": {
+    "src_hash": "7c5c70852014a445d8dc7608611428a0",
+    "text": "Массивный огонь, элементальный огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.659440Z"
+  },
+  "spell.furyosa_summon.name": {
+    "src_hash": "81eb198d71dfa0dc14dd3386e7acf025",
+    "text": "вызов Фурьосы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.659710Z"
+  },
+  "spell.hellspawn_soulfire.name": {
+    "src_hash": "d0fe4e79c3bc48d8d61c1e17d1080875",
+    "text": "адское порождение",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.659982Z"
+  },
+  "spell.energized_raging_mage_skill_reducer.name": {
+    "src_hash": "b4dfef074ef9875ac89095b68ad2b4e1",
+    "text": "Редуктор умений энергичного бушующего мага",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.660523Z"
+  },
+  "spell.devourer_death_wave.name": {
+    "src_hash": "10e3e19bb69445be737c88eaccc8e0ca",
+    "text": "волна смерти пожирателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.660813Z"
+  },
+  "spell.azerus_skill_reducer_1.name": {
+    "src_hash": "031d9477c0d8ff8150202356447acf7f",
+    "text": "Редуктор навыков Azerus 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.661507Z"
+  },
+  "spell.emerald_tortoise_small_ring.name": {
+    "src_hash": "8e19e5f1686cce2d10cfd623c66058d4",
+    "text": "маленькое кольцо с изумрудной черепахой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.662055Z"
+  },
+  "spell.ocyakao_freeze.name": {
+    "src_hash": "11d90e2b972e1b3b7972f298543011fd",
+    "text": "окякао заморозить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.662343Z"
+  },
+  "spell.grandfather_tridian_paralyze.name": {
+    "src_hash": "7dd00114bfc72f42bd90f9a1a1b2d7c0",
+    "text": "паралич дедушки Тридиана",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.662654Z"
+  },
+  "spell.furyosa_soulfire.name": {
+    "src_hash": "c80c0887a1304f177e47e46778324964",
+    "text": "огонь души фурьосы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.662993Z"
+  },
+  "spell.war_golem_electrify.name": {
+    "src_hash": "a4bae54f86b9911c7f21ee75b720f737",
+    "text": "боевой голем электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.663296Z"
+  },
+  "spell.mutated_bat_curse.name": {
+    "src_hash": "aa9746de5b3643b6abfb4a34d4100f3a",
+    "text": "мутировавшее проклятие летучей мыши",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.663780Z"
+  },
+  "spell.energy_pulse_explosion.name": {
+    "src_hash": "8830edf36a11d56157d7f9b7838e7ba4",
+    "text": "энергетический импульсный взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.664089Z"
+  },
+  "spell.the_ravager_heal.name": {
+    "src_hash": "4e00f2bc972185bad86797bf84766b1c",
+    "text": "опустошитель исцеляет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.664358Z"
+  },
+  "spell.silencer_skill_reducer.name": {
+    "src_hash": "c4e710b6a95ef41854782db271578e3b",
+    "text": "редуктор навыка глушителя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.664649Z"
+  },
+  "spell.big_lifedrain_wave.name": {
+    "src_hash": "ee7026a8942cab13c77f33fa56ad8423",
+    "text": "большая волна высасывания жизни",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.665124Z"
+  },
+  "spell.boogey_summon.name": {
+    "src_hash": "77a352c0e0eca2098afe5e249c1d9d17",
+    "text": "вызов буги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.665426Z"
+  },
+  "spell.mitmahseer_wave.name": {
+    "src_hash": "b34f7156fc686898b05ccc15e49062b9",
+    "text": "Митмахсиквейв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.665663Z"
+  },
+  "spell.diblis_the_fair_summon.name": {
+    "src_hash": "394187005194086cf1ef3e2cc4c2c68d",
+    "text": "Диблис, справедливый призыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.665963Z"
+  },
+  "spell.outburst_explode.name": {
+    "src_hash": "f78e1f053282706b0d3a4f4b06c06eb1",
+    "text": "вспышка взорваться",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:39.666246Z"
+  },
+  "spell.the_dreadorian_curse.name": {
+    "src_hash": "5dac6619e575ba048dac40b8637a5500",
+    "text": "ужасающее проклятие",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.220868Z"
+  },
+  "spell.dreadwing_skill_reducer.name": {
+    "src_hash": "77815ad37e94d459e5fb291efd7bce0c",
+    "text": "Редуктор умений Дредкрыла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.221189Z"
+  },
+  "spell.omrafir_summon.name": {
+    "src_hash": "7afac0493e7435ec27b00187d58e881b",
+    "text": "вызов омрафира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.221443Z"
+  },
+  "spell.ice_golem_skill_reducer.name": {
+    "src_hash": "04b9f0b1ffb1da8729314d8ad4e4018b",
+    "text": "Редуктор навыков ледяного голема",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.222045Z"
+  },
+  "spell.shadow_hound_curse.name": {
+    "src_hash": "31b4197793defcd6f20b46076448c8b9",
+    "text": "проклятие теневой собаки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.222364Z"
+  },
+  "spell.blightwalker_curse.name": {
+    "src_hash": "16230cc259bcc0350fd05c7a1fe78817",
+    "text": "проклятие странника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.222664Z"
+  },
+  "spell.minotaur_cult_prophet_mass_healing.name": {
+    "src_hash": "babeff5e6a0d360926b2563bf57e2e7a",
+    "text": "Пророк Культа Минотавра Массовое исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.223204Z"
+  },
+  "spell.megasylvan_yselda_ebeam.name": {
+    "src_hash": "a3edb8d881092e35f4e8f5bf7bafb840",
+    "text": "земляная балкаMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.223699Z"
+  },
+  "spell.wyvern_drunk.name": {
+    "src_hash": "b353082a38791ff7b9ce13ff943de2ea",
+    "text": "виверна пьяна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.223965Z"
+  },
+  "spell.fire_barrage.name": {
+    "src_hash": "69db1a11b76cc6c5a4ac884931134266",
+    "text": "огненный заградительный огонь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.224237Z"
+  },
+  "spell.spirit_of_earth_paralyze.name": {
+    "src_hash": "f636dd266db143e432b9320b86854c57",
+    "text": "дух земли парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.224529Z"
+  },
+  "spell.ghastly_dragon_paralyze.name": {
+    "src_hash": "64bf15b7ae67eb23b65ee86d010daebd",
+    "text": "ужасный паралич дракона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.224854Z"
+  },
+  "spell.mephiles_skill_reducer.name": {
+    "src_hash": "731c37b2d3f6d868b71ba5c0a17d63bb",
+    "text": "Редуктор навыков Мефилеса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.225149Z"
+  },
+  "spell.ice_overlord_freeze.name": {
+    "src_hash": "cb322d17c58cbdf4d8275e6419e897d0",
+    "text": "Повелитель льда заморозить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.225436Z"
+  },
+  "spell.killer_rabbit_summon.name": {
+    "src_hash": "5716b89aece60552d665c95e2404d223",
+    "text": "вызов кролика-убийцы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.225800Z"
+  },
+  "spell.the_abomination_paralyze.name": {
+    "src_hash": "6168fc08b0bafd1b883477b085056ee7",
+    "text": "мерзость парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.226119Z"
+  },
+  "spell.white_pale_summon.name": {
+    "src_hash": "b3865c6553aceae64138f87b00498f88",
+    "text": "белый бледный призыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.226395Z"
+  },
+  "spell.bullwark_paralyze.name": {
+    "src_hash": "886fddb7eb389db9e837effdd1ea0907",
+    "text": "паралич бастиона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.226681Z"
+  },
+  "spell.djinn_paralyze.name": {
+    "src_hash": "e43d13b61e88415667e35cc95a8a5974",
+    "text": "джинн парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.226936Z"
+  },
+  "spell.warlock_skill_reducer.name": {
+    "src_hash": "b5e93de064f2f0a49585f68ced707403",
+    "text": "редуктор навыков чернокнижника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:44:54.227230Z"
+  },
+  "spell.lloyd_wave3.name": {
+    "src_hash": "76a0853acaf82a0429a4daf18f7bca8e",
+    "text": "Ллойд Вейв3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.028273Z"
+  },
+  "spell.salamander_trainer_summon.name": {
+    "src_hash": "e217cb722c45f9eed71556f21b8c74b9",
+    "text": "вызов тренера саламандры",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.028604Z"
+  },
+  "spell.big_explosion_wave.name": {
+    "src_hash": "7a8af6b1d80fb7404b3def0ad6108d3b",
+    "text": "большая взрывная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.028890Z"
+  },
+  "spell.bog_raider_paralyze.name": {
+    "src_hash": "7d8094668dba191df145b8b34c8b446d",
+    "text": "болотный рейдер паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.029179Z"
+  },
+  "spell.shock_head_skill_reducer_2.name": {
+    "src_hash": "993def282a953eb7d820a6d08f0f0b93",
+    "text": "Редуктор навыков ударной головы 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.029768Z"
+  },
+  "spell.lava_golem_soulfire.name": {
+    "src_hash": "dbbca3f968c0709ab179937b5c7195d3",
+    "text": "лавовый голем, огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.030335Z"
+  },
+  "spell.arkhothep_paralyze.name": {
+    "src_hash": "8bf8511573beac56560e8b23efd11d6b",
+    "text": "архотеп паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.030607Z"
+  },
+  "spell.stampor_skill_reducer.name": {
+    "src_hash": "a7681d2c09a8656834c548f6d9c3388b",
+    "text": "редуктор навыков штампора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.030902Z"
+  },
+  "spell.kraknaknork_explosion_wave.name": {
+    "src_hash": "2f4e174fe23f8e2af3f05a9793bb667d",
+    "text": "взрывная волна кракнакнорка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.031234Z"
+  },
+  "spell.half_circle_wave_earth.name": {
+    "src_hash": "6119cff36d2cfc920810f09cc74ec0e0",
+    "text": "полукруг волна земля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.031537Z"
+  },
+  "spell.arkhothep_curse.name": {
+    "src_hash": "7263817558e5c6e6a3d5d54ecbb4ef6f",
+    "text": "проклятие архотепа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.031801Z"
+  },
+  "spell.phantasm_drown.name": {
+    "src_hash": "4993cc8f2ea12369574b1e6ebfc13e00",
+    "text": "фантазм утонуть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.032047Z"
+  },
+  "spell.the_welter_summon.name": {
+    "src_hash": "19d2e4a666b2d921345052f669328f73",
+    "text": "сумбурный вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.032334Z"
+  },
+  "spell.serpent_spawn_paralyze.name": {
+    "src_hash": "05c93437a320273eb2c3b266471a5129",
+    "text": "змеиное отродье паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.032629Z"
+  },
+  "spell.azerus_soulfire_2.name": {
+    "src_hash": "2f7705f0369e3f06ad379309ec77a11c",
+    "text": "Азерус огонь души 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.033101Z"
+  },
+  "spell.energy_chain.name": {
+    "src_hash": "2eaf27edf3ddff7855f78058de225a21",
+    "text": "энергетическая цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.033393Z"
+  },
+  "spell.dreadbeast_skill_reducer.name": {
+    "src_hash": "c2b497df23d899cdcb697cbd388f766b",
+    "text": "Редуктор навыков ужасного зверя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.033892Z"
+  },
+  "spell.shaburak_wave.name": {
+    "src_hash": "55bad0eada5de59aaf0609bcf17da540",
+    "text": "шабурак волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.034161Z"
+  },
+  "spell.haunter_curse.name": {
+    "src_hash": "e2cbc836d1e873ecad634cc2fba8d61a",
+    "text": "призрачное проклятие",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.034512Z"
+  },
+  "spell.thalas_summon.name": {
+    "src_hash": "8c0ce8b066fb35f3d9cada1ac5252ae6",
+    "text": "вызов таласа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:08.034757Z"
+  },
+  "spell.frozen_minion_beam.name": {
+    "src_hash": "983b3c478be73cc210268020b80b071f",
+    "text": "замороженный луч миньонов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.915077Z"
+  },
+  "spell.ghazbaran_paralyze.name": {
+    "src_hash": "ffc95bbd6e4109503f0b2fd5543bcca9",
+    "text": "Газбаран паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.915357Z"
+  },
+  "spell.swampling_paralyze.name": {
+    "src_hash": "187f9e763c826cd398c2aee156e0639b",
+    "text": "затопляющий паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.915623Z"
+  },
+  "spell.young_sea_serpent_drown.name": {
+    "src_hash": "764ca22bacaeb6b9edc98558d47ab657",
+    "text": "молодой морской змей утонул",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.916128Z"
+  },
+  "spell.frozen_minion_heal.name": {
+    "src_hash": "1b84bc8d7cf8b49ea5b9806d9b45de96",
+    "text": "замороженный миньон исцеляется",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.916421Z"
+  },
+  "spell.hot_dog_wave.name": {
+    "src_hash": "20fdb2964c3594ee00fd31ad0027290f",
+    "text": "волна хот-догов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.916694Z"
+  },
+  "spell.freed_soul_spell.name": {
+    "src_hash": "f818537c9872a84833e73ebf3ba00ef7",
+    "text": "Заклинание освобожденной души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.916978Z"
+  },
+  "spell.koshei_the_deathless_paralyze.name": {
+    "src_hash": "41bf6b2cb644b110d5a823df13565ad9",
+    "text": "Кошей Бессмертный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.917283Z"
+  },
+  "spell.sulphur_spouter_wave.name": {
+    "src_hash": "de2942d350583fcc4dcfebd4fbeac000",
+    "text": "волна из серного фонтана",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.917811Z"
+  },
+  "spell.ice_golem_paralyze.name": {
+    "src_hash": "ba213b5fb7f8abbca7991c23a5138906",
+    "text": "ледяной голем парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.918245Z"
+  },
+  "spell.souleater_drown.name": {
+    "src_hash": "3505eabbf54917f7aa768f6e41df6fd4",
+    "text": "Пожиратель душ тонет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.918520Z"
+  },
+  "spell.big_energy_purple_wave.name": {
+    "src_hash": "2d1ce561e76e38b0cc27b28a4f79ba86",
+    "text": "Большая энергетическая фиолетовая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.919057Z"
+  },
+  "spell.unchained_fire_explosion.name": {
+    "src_hash": "0a894173ed0a68c4c533a9cd8a14a5f3",
+    "text": "несвязанный огненный взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.919367Z"
+  },
+  "spell.essence_of_darkness_paralyze.name": {
+    "src_hash": "dcd22e299746b15b18bc703c84906f26",
+    "text": "полночный спавн, паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.919661Z"
+  },
+  "spell.katex_blood_deatht.name": {
+    "src_hash": "373dec445d7bfbd98fbe7b1a696cfe65",
+    "text": "катекс смертьТ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.919899Z"
+  },
+  "spell.rotthing_ulus.name": {
+    "src_hash": "c1e9d5ca11c962f67ce67a078ba0f943",
+    "text": "роттлигулус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.920167Z"
+  },
+  "spell.white_pale_heal.name": {
+    "src_hash": "273b5dbc34c4176d20de6c1db6b54086",
+    "text": "белое бледное исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.920438Z"
+  },
+  "spell.large_red_ring.name": {
+    "src_hash": "21bf749d9f263cfac6ca2d184e6ccb93",
+    "text": "кольцо большего размера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.920686Z"
+  },
+  "spell.reality_reaver_wave.name": {
+    "src_hash": "5b4559a20cf7ae89836f7bd7ea7a6351",
+    "text": "волна похитителя реальности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.921003Z"
+  },
+  "spell.draken_abomination_summon.name": {
+    "src_hash": "c6f60989e73891bc4a1b8f9956daa536",
+    "text": "призыв дракена-мерзости",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:21.921306Z"
+  },
+  "spell.verminor_paralyze.name": {
+    "src_hash": "11e7eef1308ebe398d14a1c0311da759",
+    "text": "паралич паразита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.528226Z"
+  },
+  "spell.emperor_summon.name": {
+    "src_hash": "118a4676abb7a2a82fbc0feebe9c68fd",
+    "text": "вызов императора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.528501Z"
+  },
+  "spell.thul_summon.name": {
+    "src_hash": "11886482d8b8cfb928aedb947a4080b1",
+    "text": "этот вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.528732Z"
+  },
+  "spell.big_death_wave.name": {
+    "src_hash": "508871291f7e2e40381033b05c3a4683",
+    "text": "большая волна смерти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.529029Z"
+  },
+  "spell.twisted_shaper_ice.name": {
+    "src_hash": "979ad146458f7d69f8527cfac045ba42",
+    "text": "искривленный формирователь льда",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.529332Z"
+  },
+  "spell.gnorre_chyllson_drown.name": {
+    "src_hash": "a7bc2401a77f38909748316229a03782",
+    "text": "Гнорре Чилсон утонул",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.529612Z"
+  },
+  "spell.abyssador_skill_reducer_2.name": {
+    "src_hash": "eb7e0f68fbda730b28aebfca823d07ee",
+    "text": "Редуктор навыков Абиссадора 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.530256Z"
+  },
+  "spell.quara_plunderer_smoke.name": {
+    "src_hash": "3c7b85a1a752e6ef5b82d29f012d8ba8",
+    "text": "кварасдымсмерть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.530515Z"
+  },
+  "spell.arachnophobica_waveenergy.name": {
+    "src_hash": "5cb898cf38ae9c4febf1b79478e60a09",
+    "text": "арахнофобияволныэнергия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.531407Z"
+  },
+  "spell.leaf_golem_paralyze.name": {
+    "src_hash": "dd18391e357ff09c8eb32f6a03069bc2",
+    "text": "листовой голем паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.531698Z"
+  },
+  "spell.spectre_drown.name": {
+    "src_hash": "a63ae03e97a0027f377f0680fecfe4db",
+    "text": "призрак тонет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.531974Z"
+  },
+  "spell.cliff_strider_electrify.name": {
+    "src_hash": "d0624a56f1f574699e064226c81177d1",
+    "text": "скальный страйдер электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.532295Z"
+  },
+  "spell.vampire_viscount_paralyze.name": {
+    "src_hash": "402d746d993b4fb595a1b313df19a2b3",
+    "text": "вампир виконт паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.532590Z"
+  },
+  "spell.frost_dragon_paralyze_2.name": {
+    "src_hash": "ea6c82dcceeef2ee78c9413dab43fc48",
+    "text": "паралич морозного дракона 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.533111Z"
+  },
+  "spell.tentuglys_head_energyt.name": {
+    "src_hash": "eaa025ac5a586de80c8b1a7f2ab1bcf2",
+    "text": "энергетическая волнаT",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.533522Z"
+  },
+  "spell.rot_elemental_paralyze.name": {
+    "src_hash": "c8194530e8035d77d5993fc4b4499474",
+    "text": "гниение, элементарный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.533933Z"
+  },
+  "spell.rage_summon.name": {
+    "src_hash": "971a9a5b26c1de7a1cce786643528745",
+    "text": "вызов ярости",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.534198Z"
+  },
+  "spell.deathbringer_drown.name": {
+    "src_hash": "ffd9134fc7ed372da0c0f665a0552315",
+    "text": "Несущий смерть тонет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.534474Z"
+  },
+  "spell.carniphila_paralyze.name": {
+    "src_hash": "14f8270d56504cba3d2a5d5a02b52230",
+    "text": "карнифила паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:36.534738Z"
+  },
+  "spell.diabolic_imp_fireball.name": {
+    "src_hash": "98b557a21c6ba2d686a9f73f7a058bb7",
+    "text": "дьявольский чертенок, огненный шар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.769767Z"
+  },
+  "spell.time_guardian.name": {
+    "src_hash": "f0c40ff8858a0e44d1db941a2460e2ea",
+    "text": "хранитель времени",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.770045Z"
+  },
+  "spell.fire_overlord_paralyze.name": {
+    "src_hash": "cdf3c5814189c40b4466ade6528b203f",
+    "text": "Повелитель огня парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.770415Z"
+  },
+  "spell.lancer_beetle_curse.name": {
+    "src_hash": "808d13080671b659a5bd68f8c2d84cca",
+    "text": "проклятие жука-лансера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.770698Z"
+  },
+  "spell.horadron_paralyze.name": {
+    "src_hash": "710eb4f36bdf39ed6243c9e1ca7edff2",
+    "text": "хорадрон паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.770957Z"
+  },
+  "spell.azerus_summon_1.name": {
+    "src_hash": "b4c428e70799a6a103180bb570b50c3b",
+    "text": "вызов азеруса 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.771210Z"
+  },
+  "spell.bullwark_summon.name": {
+    "src_hash": "6a60ba11f26f7766b36387430556f72e",
+    "text": "вызов быка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.771449Z"
+  },
+  "spell.heat_of_summer.name": {
+    "src_hash": "6e9c68548adeb3df74d4777f798559ef",
+    "text": "летняя жара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.771688Z"
+  },
+  "spell.diseased_paralyze.name": {
+    "src_hash": "ffeb2dcbead41594c7373df6fc7d19b5",
+    "text": "больной паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.771939Z"
+  },
+  "spell.banshee_paralyze.name": {
+    "src_hash": "0256b43b998d9c4c6c4e8174308c879b",
+    "text": "банши паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.772186Z"
+  },
+  "spell.mamma_longlegs_paralyze.name": {
+    "src_hash": "42b5f71c4d719645c7227ae0a4015711",
+    "text": "длинноногую маму парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.772552Z"
+  },
+  "spell.lisa_summon.name": {
+    "src_hash": "17856ccfdfba8302f69bceafc6dda900",
+    "text": "вызов Лизы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.772790Z"
+  },
+  "spell.rotthing_wave.name": {
+    "src_hash": "b6e22a14114dd74f3c300f5aedecd6e1",
+    "text": "Гнилая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.773019Z"
+  },
+  "spell.crystal_spider_paralyze_1.name": {
+    "src_hash": "ce4f8708f2c6d7661a5bd76a3ba19c36",
+    "text": "хрустальный паралич паука 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.773510Z"
+  },
+  "spell.vampire_paralyze.name": {
+    "src_hash": "7f28d72305fc0934120fbfdc10082c46",
+    "text": "вампирский паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.773807Z"
+  },
+  "spell.lethal_lissy_skill_reducer.name": {
+    "src_hash": "c1580f65fce8a6e852e3e0c489229397",
+    "text": "Смертельный редуктор навыков Лисси",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.774331Z"
+  },
+  "spell.sea_serpent_drown.name": {
+    "src_hash": "bc2d40c7a4264b63587dd49a200370fe",
+    "text": "морской змей тонет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.774635Z"
+  },
+  "spell.lisa_paralyze.name": {
+    "src_hash": "f72a8908dc945b21c39d1cffd09e62a5",
+    "text": "Лиза парализована",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.774890Z"
+  },
+  "spell.corym_vanguard_wave.name": {
+    "src_hash": "615c13e9a497de1077122127f16fb60b",
+    "text": "Корым авангардная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.775168Z"
+  },
+  "spell.thul_paralyze.name": {
+    "src_hash": "7853ed097b5f1c03bcd9a3d60683b4e4",
+    "text": "этот паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:45:51.775466Z"
+  },
+  "spell.ferumbras_electrify.name": {
+    "src_hash": "222b90ea840524132a62d4130285e308",
+    "text": "ферумбры электризуют",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.717781Z"
+  },
+  "spell.munster_summon.name": {
+    "src_hash": "1ca2af8dcec72539b29a9d6cbccaf7a2",
+    "text": "Мюнстерский вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.718288Z"
+  },
+  "spell.energy_ring.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "энергетическое кольцо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.718587Z"
+  },
+  "spell.doctor_perhaps_summon.name": {
+    "src_hash": "75dce245685b300f2901e40ac00dcf27",
+    "text": "доктор, возможно, вызовет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.718915Z"
+  },
+  "spell.magic_pillar_summon.name": {
+    "src_hash": "86762bf4fac2f39cbeb749437ead15a5",
+    "text": "вызов магического столба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.719229Z"
+  },
+  "spell.wiggler_paralyze.name": {
+    "src_hash": "7488e5db84d3fa3313c127d54a8540bb",
+    "text": "Вигглер паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.720867Z"
+  },
+  "spell.mummy_paralyze.name": {
+    "src_hash": "f1df93873d6a6c81a9a68c2d45891f5c",
+    "text": "мумия паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.721159Z"
+  },
+  "spell.large_energy_ring.name": {
+    "src_hash": "a8d7476f4f18c589b53f54661754eace",
+    "text": "большая энергия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.721420Z"
+  },
+  "spell.terofar_heal.name": {
+    "src_hash": "c6d17ec8e08d0ad9aefeb7e434ef04e0",
+    "text": "терофар исцеляет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.721669Z"
+  },
+  "spell.white_pale_paralyze.name": {
+    "src_hash": "2a378be7857521b74d988a2b55d53340",
+    "text": "белый бледный паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.721949Z"
+  },
+  "spell.morik_the_gladiator_summon.name": {
+    "src_hash": "63796c1345f551d1841d3be97bea92e3",
+    "text": "Морик, вызов гладиатора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.722272Z"
+  },
+  "spell.dragonling_paralyze.name": {
+    "src_hash": "da334620b4a2119ddffaf7a70d2ba40c",
+    "text": "паралич дракончика",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.722549Z"
+  },
+  "spell.sparks_chain.name": {
+    "src_hash": "d888dfdccd2a5a20049590041605770f",
+    "text": "цепь искр",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.722782Z"
+  },
+  "spell.orewalker_skill_reducer_1.name": {
+    "src_hash": "12df6f43766d1adaa3bee5abdabd35cf",
+    "text": "Редуктор навыков рудохода 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.723288Z"
+  },
+  "spell.razzagorn_summon.name": {
+    "src_hash": "43ea8fd78b585025111c74291c341145",
+    "text": "вызов раззагорна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.723562Z"
+  },
+  "spell.lisa_skill_reducer.name": {
+    "src_hash": "b2532eb4649028e42687a5f6b991d772",
+    "text": "Редуктор навыков Лизы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.723848Z"
+  },
+  "spell.webster_paralyze.name": {
+    "src_hash": "2395c4f2333987f08a730f04759698cc",
+    "text": "Вебстер паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.724110Z"
+  },
+  "spell.azerus_electrify.name": {
+    "src_hash": "f4ff8d9aff1e9a3341bbcebeba44e454",
+    "text": "Азерс электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.724391Z"
+  },
+  "spell.stone_devourer_paralyze.name": {
+    "src_hash": "13375b5a1032ce83aeabe827567eb191",
+    "text": "пожиратель камней парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:07.724699Z"
+  },
+  "spell.remorseless_wave.name": {
+    "src_hash": "c76d7aa2e279c6515cff3d141d5205bc",
+    "text": "Безжалостная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.204941Z"
+  },
+  "spell.flamecaller_zazrak_summon.name": {
+    "src_hash": "191f6b283771a2abe74efba21ebec773",
+    "text": "призыв призывателя пламени Зазрака",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.205566Z"
+  },
+  "spell.arachir_the_ancient_one_summon.name": {
+    "src_hash": "443fd1d88528c7a3d016e3e7db10308e",
+    "text": "Призыв Арахира Древнего",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.205901Z"
+  },
+  "spell.ravennouslavalurkerwave.name": {
+    "src_hash": "e3ad6934abb91743b2fee975a26edf61",
+    "text": "хищныйЛаваСкрытеньВолна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.206276Z"
+  },
+  "spell.bibby_bloodbath_paralyze.name": {
+    "src_hash": "b350f2ca312a7c485f85018371abab6e",
+    "text": "Бибби, кровавая баня, паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.206786Z"
+  },
+  "spell.abyssador_skill_reducer_1.name": {
+    "src_hash": "9e9a4234c4bde5d881f3576f61b5c7c9",
+    "text": "Редуктор навыков Абиссадора 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.207313Z"
+  },
+  "spell.retching_horror_paralyze.name": {
+    "src_hash": "9c2d4697f37df08728a823b085081d67",
+    "text": "рвота ужас паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.207612Z"
+  },
+  "spell.forest_fury_skill_reducer_1.name": {
+    "src_hash": "e92a0180e5032450254ff444b5372f51",
+    "text": "Редуктор навыков лесной ярости",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.208133Z"
+  },
+  "spell.glooth_anemone_summon.name": {
+    "src_hash": "46de46015ba570a06602b58803c2f34f",
+    "text": "Призыв мрачной анемоны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.208431Z"
+  },
+  "spell.great_death_beam.name": {
+    "src_hash": "e94f79f22af9bff717a11d53abfcdba4",
+    "text": "Великий луч смерти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.208760Z"
+  },
+  "spell.front_sweep.name": {
+    "src_hash": "bf98a10fbf82bc4457da2f4dbf8ba9e7",
+    "text": "Передняя развертка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.209012Z"
+  },
+  "spell.ultimate_flame_strike.name": {
+    "src_hash": "ac6edee3ef8bc2b6ae0c3452d0e77fdb",
+    "text": "Абсолютный огненный удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.209333Z"
+  },
+  "spell.divine_caldera.name": {
+    "src_hash": "2275e2fe6687d2c4c46ce48323e825e7",
+    "text": "Божественная Кальдера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.209656Z"
+  },
+  "spell.brutal_strike.name": {
+    "src_hash": "8ac10ebcb758dc346c1a14558f1eb5bc",
+    "text": "Жестокий удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.210060Z"
+  },
+  "spell.strong_energy_strike.name": {
+    "src_hash": "f0399f2e52b71eb40cea2c5e5a7ea633",
+    "text": "Сильный энергетический удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.210436Z"
+  },
+  "spell.whirlwind_throw.name": {
+    "src_hash": "b4059a8b7bb59a3194a68ec2a13da3f2",
+    "text": "Вихревой бросок",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.210695Z"
+  },
+  "spell.physical_strike.name": {
+    "src_hash": "5c39d319c8cf1fa7657158909122ee39",
+    "text": "Физический удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.210944Z"
+  },
+  "spell.strong_flame_strike.name": {
+    "src_hash": "a04db5d63bac360d132bb8c7ae08f48b",
+    "text": "Сильный огненный удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.211224Z"
+  },
+  "spell.strong_ethereal_spear.name": {
+    "src_hash": "5e9ae8bc54f6401387b7984a0d2bdbca",
+    "text": "Сильное эфирное копье",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.211506Z"
+  },
+  "spell.hells_core.name": {
+    "src_hash": "89cb9756c41d9a16f395b12d063e79eb",
+    "text": "Адское Ядро",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:22.211741Z"
+  },
+  "spell.great_fire_wave.name": {
+    "src_hash": "02ea0bdaee37bce462b8005718fe732d",
+    "text": "Великая огненная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.961125Z"
+  },
+  "spell.strong_ice_wave.name": {
+    "src_hash": "9e52fb214d329256f6802c40897a470a",
+    "text": "Сильная ледяная волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.961456Z"
+  },
+  "spell.executioners_throw.name": {
+    "src_hash": "87bee2f42bd3eae06b694a27794d9d6c",
+    "text": "Бросок Палача",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.961728Z"
+  },
+  "spell.ultimate_terra_strike.name": {
+    "src_hash": "7abbf49184e28b5301181030aceb885a",
+    "text": "Абсолютный Терра Удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.962401Z"
+  },
+  "spell.energy_strike.name": {
+    "src_hash": "8eb3641c16e198ad0e999817d35afc2d",
+    "text": "Энергетический удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.962672Z"
+  },
+  "spell.divine_grenade.name": {
+    "src_hash": "aa00d3ce9e7ad795109f3c4f145619c7",
+    "text": "Божественная граната",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.962938Z"
+  },
+  "spell.energy_wave.name": {
+    "src_hash": "1e752ea8c3d90824faeede46c8a4a88d",
+    "text": "Энергетическая волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.963225Z"
+  },
+  "spell.ultimate_ice_strike.name": {
+    "src_hash": "af7e2b735691f4903ef831068c421140",
+    "text": "Абсолютный ледяной удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.963518Z"
+  },
+  "spell.flame_strike.name": {
+    "src_hash": "971972ab0765f0ffe5783ffd6c3bf89a",
+    "text": "Огненный удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.963758Z"
+  },
+  "spell.rage_of_the_skies.name": {
+    "src_hash": "bf11d4cf66baf6f505cfd4e3184ae53d",
+    "text": "Ярость небес",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.964015Z"
+  },
+  "spell.divine_missile.name": {
+    "src_hash": "7a3bd9401c74cd2521dcd6eb2ef7c2ea",
+    "text": "Божественная ракета",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.964346Z"
+  },
+  "spell.strong_ice_strike.name": {
+    "src_hash": "90641b8a57353a6df6958f4d522f8ffb",
+    "text": "Сильный ледяной удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.964627Z"
+  },
+  "spell.strong_terra_strike.name": {
+    "src_hash": "fe0a02b91cce1b7c53edd5f8cf976fd5",
+    "text": "Сильный терра-удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.964912Z"
+  },
+  "spell.fierce_berserk.name": {
+    "src_hash": "16363a948ea19f715f71c121c67074c3",
+    "text": "Свирепый берсерк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.965221Z"
+  },
+  "spell.terra_strike.name": {
+    "src_hash": "2d60e528432e11a76543fa793dd47d62",
+    "text": "Терра Страйк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.965482Z"
+  },
+  "spell.ultimate_energy_strike.name": {
+    "src_hash": "e89584af6c6bc458280ae1495eb8d273",
+    "text": "Абсолютный энергетический удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.965813Z"
+  },
+  "spell.annihilation.name": {
+    "src_hash": "9ab2169c207d383e69d2d472666f3be1",
+    "text": "Уничтожение",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.966061Z"
+  },
+  "spell.practice_fire_wave.name": {
+    "src_hash": "872aade22d8673e1722eb9c8efd17087",
+    "text": "Практика «Огненная волна»",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.966475Z"
+  },
+  "spell.terra_burst.name": {
+    "src_hash": "49fb01f80e220452cfb1148bd4fb985f",
+    "text": "Терра Бёрст",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:36.966737Z"
+  },
+  "spell.wrath_of_nature.name": {
+    "src_hash": "17de0221cd68ade9720767d14080a7cc",
+    "text": "Гнев природы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.661262Z"
+  },
+  "spell.great_energy_beam.name": {
+    "src_hash": "80ff78cbafed745b81687166a454a77f",
+    "text": "Великий энергетический луч",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.661626Z"
+  },
+  "spell.energy_beam.name": {
+    "src_hash": "65943a708a587424f5a5cf9004ee74dd",
+    "text": "Энергетический луч",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.661887Z"
+  },
+  "spell.eternal_winter.name": {
+    "src_hash": "8398314920f88487a138cdb96b4017cd",
+    "text": "Вечная зима",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.662250Z"
+  },
+  "spell.ethereal_spear.name": {
+    "src_hash": "f5ad65d1af8ea533ef57bf7f371ac6ed",
+    "text": "Эфирное копье",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.662530Z"
+  },
+  "spell.inflict_wound.name": {
+    "src_hash": "b99e09a86d4c6cdcba4a96d9671f90fb",
+    "text": "Нанести рану",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.662784Z"
+  },
+  "spell.groundshaker.name": {
+    "src_hash": "927006b9f20f4e977d745c8a18b2bc0a",
+    "text": "Сотрясатель земли",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.663029Z"
+  },
+  "spell.death_strike.name": {
+    "src_hash": "df8175c3f8fbee32125dd785e8a71a1f",
+    "text": "Смертельный удар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.663271Z"
+  },
+  "spell.cure_bleeding.name": {
+    "src_hash": "6a42fa76231b8e67df4965fda7cfa26c",
+    "text": "Вылечить кровотечение",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.663526Z"
+  },
+  "spell.intense_recovery.name": {
+    "src_hash": "ab9a7248f396de8d002b411f91158bfb",
+    "text": "Интенсивное восстановление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.663900Z"
+  },
+  "spell.magic_patch.name": {
+    "src_hash": "9d5defa361e504ab2620cc968b48840a",
+    "text": "Волшебный патч",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.664147Z"
+  },
+  "spell.wound_cleansing.name": {
+    "src_hash": "d843b99063e116b73924f15c3391fbc9",
+    "text": "Очищение ран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.664395Z"
+  },
+  "spell.practice_healing.name": {
+    "src_hash": "d5aca4fe6d00bf7c7291912f6535d3d6",
+    "text": "Практика исцеления",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.664657Z"
+  },
+  "spell.cure_poison.name": {
+    "src_hash": "e7790cdcaee22d036a5c7068d6697bf4",
+    "text": "Вылечить яд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.664885Z"
+  },
+  "spell.heal_monsters_9x9.name": {
+    "src_hash": "d1469ce8b15c75e139d407e40af9a00f",
+    "text": "Исцелить монстра 9x9",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.665371Z"
+  },
+  "spell.cure_electrification.name": {
+    "src_hash": "ebbde73bfd9cb30c0b1d6847cfea522a",
+    "text": "Вылечить электрификацию",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.665683Z"
+  },
+  "spell.heal_friend.name": {
+    "src_hash": "e599c635ca201e1a2a77c1b026b630f3",
+    "text": "Исцели друга",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.665924Z"
+  },
+  "spell.heal_monsters.name": {
+    "src_hash": "f0ad0bba0c6450618d0ce3eed971e0af",
+    "text": "Исцелить монстра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.666195Z"
+  },
+  "spell.light_healing.name": {
+    "src_hash": "8f0e3b848ebfb342620e25f149ad3b48",
+    "text": "Световое исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.666449Z"
+  },
+  "spell.fair_wound_cleansing.name": {
+    "src_hash": "0b332175a2769cdf45daa4420d858803",
+    "text": "Ярмарка очищения ран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:46:49.666727Z"
+  },
+  "spell.divine_healing.name": {
+    "src_hash": "fe97997adc4cf0aac915a77926c37e17",
+    "text": "Божественное исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.182375Z"
+  },
+  "spell.heal_malice.name": {
+    "src_hash": "09a57ab2e1e2a2c6b0206f9518cbc814",
+    "text": "Исцелить злобу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.182902Z"
+  },
+  "spell.ultimate_healing.name": {
+    "src_hash": "755e0c33da7e0e29db52f58958271e14",
+    "text": "Окончательное исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.183455Z"
+  },
+  "spell.cure_burning.name": {
+    "src_hash": "fe635cb1efb6d122c38ebc2b077ddaa8",
+    "text": "Лечение ожогов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.184021Z"
+  },
+  "spell.intense_healing.name": {
+    "src_hash": "06010b553150731597057e8219018e47",
+    "text": "Интенсивное исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.184560Z"
+  },
+  "spell.restoration.name": {
+    "src_hash": "fa842aab8895c16045b781d27a16d2e2",
+    "text": "Реставрация",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.185064Z"
+  },
+  "spell.bruise_bane.name": {
+    "src_hash": "caab5e3234392f9a0185f469b2401237",
+    "text": "Синяк Бэйн",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.185525Z"
+  },
+  "spell.mass_healing.name": {
+    "src_hash": "73b3f5d5d3e12f8d620c9348945766e4",
+    "text": "Массовое исцеление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.186069Z"
+  },
+  "spell.intense_wound_cleansing.name": {
+    "src_hash": "a34fae66bb0ab3bd1dc2bc8f6b9aada2",
+    "text": "Интенсивное очищение ран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.194932Z"
+  },
+  "spell.edit_door_list.name": {
+    "src_hash": "d42ce6738ed71ef2ef0c60f5cb01a5a7",
+    "text": "Список дверей дома",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.201575Z"
+  },
+  "spell.edit_subowner_list.name": {
+    "src_hash": "b6178515ebdc3c3b911d8f9f0940cb67",
+    "text": "Список собственников дома",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.202188Z"
+  },
+  "spell.edit_guest_list.name": {
+    "src_hash": "cc84c4e34386c69a012525ce736af3c7",
+    "text": "Список гостей дома",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.202766Z"
+  },
+  "spell.avatar_of_steel.name": {
+    "src_hash": "aafdf6a205ca5058a261492cf5da7908",
+    "text": "Аватар стали",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:03.203251Z"
+  },
+  "spell.avatar_of_light.name": {
+    "src_hash": "14a4a56ed113b9c2c937a97049a9602c",
+    "text": "Аватар Света",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.302830Z"
+  },
+  "spell.avatar_of_storm.name": {
+    "src_hash": "d39c0501d8f206a31e2d8df88b5f9df7",
+    "text": "Аватар Шторма",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.303178Z"
+  },
+  "spell.magic_shield.name": {
+    "src_hash": "78fd0cc49cb1eb9345aa054e5078df0f",
+    "text": "Магический Щит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.303454Z"
+  },
+  "spell.summon_creature.name": {
+    "src_hash": "7f499ac14926908e1b8120876e664669",
+    "text": "Призвать существо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.303768Z"
+  },
+  "spell.strong_haste.name": {
+    "src_hash": "575ddaef720a68683ca7dc17957dfbec",
+    "text": "Сильная скорость",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.304037Z"
+  },
+  "spell.great_light.name": {
+    "src_hash": "e89add8272eb3c2a27001cfed6c3827e",
+    "text": "Великий Свет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.304340Z"
+  },
+  "spell.cancel_invisibility.name": {
+    "src_hash": "8b9561a0bbff73c8c7799a873a60431c",
+    "text": "Отменить невидимость",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.304665Z"
+  },
+  "spell.invisible.name": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Невидимость",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.304950Z"
+  },
+  "spell.divine_empowerment.name": {
+    "src_hash": "5e6dcb65529f608af5dda2899c9fb709",
+    "text": "Божественное могущество",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.305237Z"
+  },
+  "spell.avatar_of_nature.name": {
+    "src_hash": "f355976cc1733be4d4476b774c40fd9b",
+    "text": "Аватар природы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.305495Z"
+  },
+  "spell.expose_weakness.name": {
+    "src_hash": "a1d788448ab86b4b64e7c80b8bdb66be",
+    "text": "Выявить слабость",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.305751Z"
+  },
+  "spell.sharpshooter.name": {
+    "src_hash": "efe3d2b02b49c973f309da5a27f75f30",
+    "text": "Снайпер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.306000Z"
+  },
+  "spell.creature_illusion.name": {
+    "src_hash": "c773ad810396a7aa6f19cb8305da6d7c",
+    "text": "Существо Иллюзия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.306304Z"
+  },
+  "spell.sap_strength.name": {
+    "src_hash": "b42ec6c317ee3f914f61ad2e97fa6110",
+    "text": "Высасывание силы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.306551Z"
+  },
+  "spell.ultimate_light.name": {
+    "src_hash": "ffc3a1f23b6f5055c629bad9f7f11226",
+    "text": "Абсолютный свет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.306797Z"
+  },
+  "spell.chivalrous_challenge.name": {
+    "src_hash": "36fdf0e511f468246c713e11c0e543b2",
+    "text": "Рыцарский вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.307094Z"
+  },
+  "spell.divine_dazzle.name": {
+    "src_hash": "87edc94827728bb3d565f923ab4e4f1b",
+    "text": "Божественное ослепление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.307361Z"
+  },
+  "spell.cancel_magic_shield.name": {
+    "src_hash": "3580b45f3af3e7a5f12b2d4f9f4c8d6e",
+    "text": "Отменить магический щит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.307643Z"
+  },
+  "spell.poison_wall_rune.name": {
+    "src_hash": "5d33a1ec9e15577a76556efb8dd65a9b",
+    "text": "Руна Ядовитой Стены",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.307971Z"
+  },
+  "spell.conjure_poisoned_arrow.name": {
+    "src_hash": "38337d4c191c48c028c45fee10b96692",
+    "text": "Вызов отравленной стрелы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:17.308310Z"
+  },
+  "spell.conjure_arrow.name": {
+    "src_hash": "ea6e1489f31f417d61ecc5f759282701",
+    "text": "Вызов стрелы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.195932Z"
+  },
+  "spell.lightest_magic_missile_rune.name": {
+    "src_hash": "71ab4acc0a9ee936a55aa51761f50335",
+    "text": "Легчайшая магическая ракета",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.196249Z"
+  },
+  "spell.great_fireball_rune.name": {
+    "src_hash": "d56ee1113c040a3d8eb85f8de091985b",
+    "text": "Великая руна огненного шара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.196785Z"
+  },
+  "spell.avalanche_rune.name": {
+    "src_hash": "dcd935be2b7c1db717e7982ea7c77439",
+    "text": "Лавинная руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.197042Z"
+  },
+  "spell.conjure_piercing_bolt.name": {
+    "src_hash": "15187c0b56a3dda9e65c1e051c224523",
+    "text": "Вызов пронзающей стрелы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.197333Z"
+  },
+  "spell.stalagmite_rune.name": {
+    "src_hash": "52fa8546e780281f489552902d938467",
+    "text": "Сталагмитовая руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.197623Z"
+  },
+  "spell.ultimate_healing_rune.name": {
+    "src_hash": "c1f287cc4f2a99f1b52db933f0ca1762",
+    "text": "Абсолютная исцеляющая руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.197921Z"
+  },
+  "spell.fireball_rune.name": {
+    "src_hash": "a61a86a92bf13c2a03a91a5ac28008fb",
+    "text": "Руна огненного шара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.198240Z"
+  },
+  "spell.wild_growth_rune.name": {
+    "src_hash": "3c7f67d04c69f51c7a8218980ead0fc8",
+    "text": "Руна буйного роста",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.198546Z"
+  },
+  "spell.energy_wall_rune.name": {
+    "src_hash": "5b73eb415a3056d5bdbc26a3886775da",
+    "text": "Руна энергетической стены",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.198831Z"
+  },
+  "spell.cure_poison_rune.name": {
+    "src_hash": "3ff5a4ce313d165c5fa17d6b309e26af",
+    "text": "Руна лечения яда",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.199095Z"
+  },
+  "spell.icicle_rune.name": {
+    "src_hash": "e2eed91f85856d62a861462b3ee99b48",
+    "text": "Сосульная руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.199330Z"
+  },
+  "spell.enchant_spear.name": {
+    "src_hash": "73264ce5ddb4109595176f857ffeacd2",
+    "text": "Чары для копья",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.199602Z"
+  },
+  "spell.light_stone_shower_rune.name": {
+    "src_hash": "6484c5f4f5dde8dd10d9014a312bdba6",
+    "text": "Легкая каменная руна душа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.200091Z"
+  },
+  "spell.animate_dead_rune.name": {
+    "src_hash": "accc3ea714009108a8530ed67049bb8c",
+    "text": "Оживить мертвую руну",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.200368Z"
+  },
+  "spell.convince_creature_rune.name": {
+    "src_hash": "fad3dee565fc34b781c47bf766de5a3a",
+    "text": "Убедить существо руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.200689Z"
+  },
+  "spell.poison_bomb_rune.name": {
+    "src_hash": "8e4ac735e2ce1415ddf32084da98effc",
+    "text": "Руна ядовитой бомбы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.200965Z"
+  },
+  "spell.paralyze_rune.name": {
+    "src_hash": "2431c9ca6070fefc845af17ead117282",
+    "text": "Параличная руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.201209Z"
+  },
+  "spell.explosion_rune.name": {
+    "src_hash": "e34e67eb516f1083604364ef57de6c61",
+    "text": "Взрывная руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.201469Z"
+  },
+  "spell.fire_wall_rune.name": {
+    "src_hash": "43bf5ebe2cc612bd482d04210760521b",
+    "text": "Руна Огненной Стены",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:31.201798Z"
+  },
+  "spell.intense_healing_rune.name": {
+    "src_hash": "5550d613fabceb4889fea906c66a2df3",
+    "text": "Руна интенсивного исцеления",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.338403Z"
+  },
+  "spell.fire_field_rune.name": {
+    "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
+    "text": "Руна огненного поля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.338699Z"
+  },
+  "spell.magic_wall_rune.name": {
+    "src_hash": "dc28fac219174ba4b7547e40bb77ffde",
+    "text": "Магическая настенная руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.339013Z"
+  },
+  "spell.disintegrate_rune.name": {
+    "src_hash": "0d4e46f32dddecba7427f32c940bfbab",
+    "text": "Дезинтегрирующая руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.339291Z"
+  },
+  "spell.heavy_magic_missile_rune.name": {
+    "src_hash": "e4caffb9a4072e3c3316cac57026d2bc",
+    "text": "Тяжелая магическая стрелковая руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.339874Z"
+  },
+  "spell.soulfire_rune.name": {
+    "src_hash": "257c83cad3d15e83a4e80b2b426468ea",
+    "text": "Руна огня души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.340134Z"
+  },
+  "spell.conjure_explosive_arrow.name": {
+    "src_hash": "4a5e3cbb96927c2678012772093db85a",
+    "text": "Вызов взрывной стрелы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.340425Z"
+  },
+  "spell.chameleon_rune.name": {
+    "src_hash": "b5882f4850f90f038931e732b3fb4ed7",
+    "text": "Руна Хамелеон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.340890Z"
+  },
+  "spell.conjure_sniper_arrow.name": {
+    "src_hash": "116763c52cbf1229d61694cd10bb52d7",
+    "text": "Вызов снайперской стрелы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.341214Z"
+  },
+  "spell.thunderstorm_rune.name": {
+    "src_hash": "768e1e368ba6c71cbd9af71542060c9f",
+    "text": "Грозовая руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.341472Z"
+  },
+  "spell.conjure_bolt.name": {
+    "src_hash": "ae446a099002172be97bd31ad4cb449c",
+    "text": "Вызов болта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.341706Z"
+  },
+  "spell.stone_shower_rune.name": {
+    "src_hash": "44290ba68ac25c850aa27e5523fda1f6",
+    "text": "Каменная руна душа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.342000Z"
+  },
+  "spell.destroy_field_rune.name": {
+    "src_hash": "b6fe1c4fe04d9b34729bbbf491c41a40",
+    "text": "Уничтожить полевые руны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.342427Z"
+  },
+  "spell.conjure_royal_star.name": {
+    "src_hash": "20f3668ef6dbe42134f6685528deaeef",
+    "text": "Вызвать королевскую звезду",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.342720Z"
+  },
+  "spell.energy_field_rune.name": {
+    "src_hash": "ec6d44248eb7c384389f8bf9e0ff75c4",
+    "text": "Руна энергетического поля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.343026Z"
+  },
+  "spell.lightest_missile_rune.name": {
+    "src_hash": "9ee30aa4bee0d6b326c88839c6eb2709",
+    "text": "Легчайшая стрелковая руна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.343373Z"
+  },
+  "spell.conjure_wand_of_darkness.name": {
+    "src_hash": "b2984a843982ff6676d622b6aa26eb8d",
+    "text": "Вызов Жезла Тьмы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.344321Z"
+  },
+  "spell.enchant_staff.name": {
+    "src_hash": "75636fb4e2beb84d06500f00446974d3",
+    "text": "Зачаровать посох",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.344577Z"
+  },
+  "spell.poison_field_rune.name": {
+    "src_hash": "f25387a94f2c77f239a2d3dc190baf3c",
+    "text": "Руна ядовитого поля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:47:46.344846Z"
+  },
+  "spell.nightmare_beast_curse.name": {
+    "src_hash": "2b3db0429d615dd8c1392e242c78a59c",
+    "text": "проклятие кошмарного зверя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.234404Z"
+  },
+  "spell.gaz'haragoth_paralyze.name": {
+    "src_hash": "6925562d1dfa5c390aaccd0bdf753649",
+    "text": "Газ'харагот парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.234723Z"
+  },
+  "spell.gaz'haragoth_iceball.name": {
+    "src_hash": "5b1e080e944747b0ce6a1ed71e549951",
+    "text": "Ледяной шар Газ'Харагота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.235051Z"
+  },
+  "spell.maxxenius_energy_elemental.name": {
+    "src_hash": "733cb18bdb01b1a10ac662bb64f68d83",
+    "text": "Макссениус энергетический элементаль",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.235390Z"
+  },
+  "spell.gaz'haragoth_death.name": {
+    "src_hash": "0698be1347eb83e23fabe156028b771f",
+    "text": "смерть газ'харагота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.235668Z"
+  },
+  "spell.ragiaz_transform.name": {
+    "src_hash": "9bd8cd2ce93ac5f0494c7b975525e173",
+    "text": "трансформация рагиаза",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.235969Z"
+  },
+  "spell.gaz'haragoth_summon.name": {
+    "src_hash": "487a1ea5771dde17a071dd35c99bf596",
+    "text": "вызов газ'харагота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.236249Z"
+  },
+  "spell.feroxa_summon.name": {
+    "src_hash": "92a56866cf42bf2c19bdf6d8ff9dabc4",
+    "text": "вызов Фероксы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.236494Z"
+  },
+  "spell.omrafir_healing_2.name": {
+    "src_hash": "62dfbf550a950403df91ddfd306383f0",
+    "text": "Омрафир исцеление 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.236768Z"
+  },
+  "spell.the_welter_heal.name": {
+    "src_hash": "bc188af9c0166cbf8ad2c0b354251f25",
+    "text": "сумбур исцеляется",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.237061Z"
+  },
+  "spell.plagueroot_teleport.name": {
+    "src_hash": "20d80123d87d198740ef768c770e9663",
+    "text": "телепорт чумного корня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.237340Z"
+  },
+  "spell.prince_drazzak_tp.name": {
+    "src_hash": "46db55610f78c11b5ff625d68cd259cc",
+    "text": "принц Драззак тп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.237605Z"
+  },
+  "spell.prince_drazzak_sorcerer.name": {
+    "src_hash": "42948bbcf8e4a4eaafb48b4ae6dd4c9a",
+    "text": "принц колдун Драззак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.237927Z"
+  },
+  "spell.the_pale_count_summon.name": {
+    "src_hash": "ffa7ba2ef42acf616b97fb2f09d785e4",
+    "text": "вызов бледного графа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.238242Z"
+  },
+  "spell.mooh'tah_master_skill_reducer.name": {
+    "src_hash": "60b7ab2a2e03d7a1b9b2eadc2fe332cc",
+    "text": "Редуктор навыков мастера mooh'tah",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.239477Z"
+  },
+  "spell.spider_queen_wrap.name": {
+    "src_hash": "9af2f0223356d7ae35dbc569ff97ee00",
+    "text": "обертывание королевы пауков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.239798Z"
+  },
+  "spell.prince_drazzak_knight.name": {
+    "src_hash": "01c9db92cae526e7ea95701578e3657b",
+    "text": "принц рыцарь Драззак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.240143Z"
+  },
+  "spell.omrafir_beam.name": {
+    "src_hash": "45b333dc7cb331c54d80be32dc98d0ad",
+    "text": "Омрафир луч",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.240385Z"
+  },
+  "spell.the_pale_count_bomb.name": {
+    "src_hash": "c581d6cfb4e3733ba3a437e565a12e6a",
+    "text": "Бледная бомба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.240649Z"
+  },
+  "spell.find_person.name": {
+    "src_hash": "95e8cc93b7e04f90863e3bd3be431421",
+    "text": "Найти человека",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:02.240916Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "Никаких существ вокруг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:48:04.311331Z"
   }
 }

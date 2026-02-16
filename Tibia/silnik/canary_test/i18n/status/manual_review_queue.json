@@ -216,14 +216,82 @@
         }
       ],
       "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T18:40:11.181331Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "spells.json",
+      "key": "spell.spawn_of_the_welter_heal2.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Spawn Of The Welter Heal2",
+      "attempted_translation": "Порождение The Welter Heal2",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Порождение The Welter Heal2' (EN: 'Spawn Of The Welter Heal2')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.565,
+          "message": "Język cyrylicowy ma 57% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T18:40:53.679994Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "spells.json",
+      "key": "spell.the_pale_count_manadrain.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "The Pale Count Manadrain",
+      "attempted_translation": "The Pale Count Манадрен",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'The Pale Count Манадрен' (EN: 'The Pale Count Manadrain')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.6,
+          "message": "Język cyrylicowy ma 60% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
-    "total": 6,
+    "total": 8,
     "reviewed": 0,
     "approved": 1,
     "rejected": 0,
     "applied": 1
   },
-  "updated_at": 1771267054
+  "updated_at": "2026-02-16T18:40:53.680237Z"
 }

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-16T23:54:29.957177Z",
+  "timestamp": "2026-02-16T23:55:08.475874Z",
   "checked_entries": 100,
-  "issues_found": 27,
+  "issues_found": 22,
   "issues_by_type": {
-    "identical_to_en": 20,
+    "identical_to_en": 15,
     "identical_to_en_exempt": 11,
     "artifact_token": 7,
     "suspicious_log_critical": 69,
@@ -14,41 +14,6 @@
     "suspicious_rejected_high": 41
   },
   "issues": [
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
     {
       "key": "monster.orshabaal.desc",
       "lang": "sv",

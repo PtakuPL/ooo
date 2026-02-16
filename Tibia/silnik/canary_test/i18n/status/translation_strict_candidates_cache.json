@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-16T23:54:29.451284Z",
-  "built_cycle": 59,
+  "timestamp": "2026-02-16T23:55:03.722618Z",
+  "built_cycle": 60,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -242,9 +242,9 @@
     {
       "lang": "es",
       "json_file": "achievements.json",
-      "pending_total": 12,
-      "todo": 12,
-      "simple_todo": 9,
+      "pending_total": 8,
+      "todo": 8,
+      "simple_todo": 6,
       "missing_in_lang": 0
     },
     {

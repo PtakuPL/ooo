@@ -144558,5 +144558,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:46:44.360269Z"
+  },
+  "achievement.9.name": {
+    "src_hash": "189d4baff9dd822bda8f3c39e883c348",
+    "text": "Señor protector",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:54.158901Z"
+  },
+  "achievement.50.name": {
+    "src_hash": "707e66ee97ec84531029a7a52a96326a",
+    "text": "¡Arrasando!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:54.161068Z"
+  },
+  "achievement.57.name": {
+    "src_hash": "1f7f1b477642e497c88d0d00f1fb98a5",
+    "text": "Aniquilador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:54.161458Z"
+  },
+  "achievement.65.name": {
+    "src_hash": "9b997d21495dbcdcb3a00095e4b6e1f5",
+    "text": "Estrella de rock",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:54.161904Z"
+  },
+  "achievement.85.name": {
+    "src_hash": "07eda7b7fdc1b08c5b810584725d6803",
+    "text": "Steampunk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:58.721441Z"
+  },
+  "achievement.237.description": {
+    "src_hash": "1d531c44017581a2636cbf8107debd99",
+    "text": "Has vencido al Engendro Nocivo y su corazón serpentino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:55:01.183695Z"
+  },
+  "achievement.277.name": {
+    "src_hash": "1a00e8cb7d17ef5b5ff504038ded033f",
+    "text": "¡Sí, Ariki!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:55:01.183930Z"
   }
 }

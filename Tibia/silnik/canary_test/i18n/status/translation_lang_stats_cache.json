@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-16T23:54:34.142817Z",
+  "timestamp": "2026-02-16T23:55:12.111506Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7290,8 +7290,8 @@
         [
           "achievements.json",
           1,
-          1771272699900408895,
-          126218
+          1771286101182913899,
+          126209
         ],
         [
           "actions.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 39730,
-        "english_copy_keys": 2635,
+        "translated_keys": 39734,
+        "english_copy_keys": 2632,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 74.14,
+        "completion_pct": 74.15,
         "server_keys": 49731,
-        "server_translated": 37216,
-        "server_pct": 74.83,
+        "server_translated": 37220,
+        "server_pct": 74.84,
         "client_keys": 3855,
         "client_translated": 2514,
         "client_pct": 65.21
@@ -7537,13 +7537,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1771272699900408895,
-            126218
+            1771286101182913899,
+            126209
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 1036,
-            "english_copy_keys": 6,
+            "translated_keys": 1040,
+            "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0
           }

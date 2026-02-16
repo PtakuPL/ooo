@@ -1,7 +1,50 @@
 {
-  "timestamp": "2026-02-16T23:54:26.982232Z",
+  "timestamp": "2026-02-16T23:55:01.426992Z",
   "language": "es",
-  "json_file": "client.json",
-  "translated": 0,
-  "entries": []
+  "json_file": "achievements.json",
+  "translated": 7,
+  "entries": [
+    {
+      "key": "achievement.9.name",
+      "en": "Lord Protector",
+      "translated": "Señor protector",
+      "source": "google_translate"
+    },
+    {
+      "key": "achievement.50.name",
+      "en": "Razing!",
+      "translated": "¡Arrasando!",
+      "source": "google_translate"
+    },
+    {
+      "key": "achievement.57.name",
+      "en": "Annihilator",
+      "translated": "Aniquilador",
+      "source": "google_translate"
+    },
+    {
+      "key": "achievement.65.name",
+      "en": "Rockstar",
+      "translated": "Estrella de rock",
+      "source": "google_translate"
+    },
+    {
+      "key": "achievement.85.name",
+      "en": "Steampunked",
+      "translated": "Steampunk",
+      "source": "google_translate"
+    },
+    {
+      "key": "achievement.237.description",
+      "en": "You've vanquished the Noxious Spawn and his serpentine heart.",
+      "translated": "Has vencido al Engendro Nocivo y su corazón serpentino.",
+      "source": "google_translate"
+    },
+    {
+      "key": "achievement.277.name",
+      "en": "Si, Ariki!",
+      "translated": "¡Sí, Ariki!",
+      "source": "google_translate"
+    }
+  ]
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:48:34.464015Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T23:50:17.712242Z",
+  "language": "ro",
+  "json_file": "scripts.json",
+  "translated": 48,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "gamestore.validation.hireling_name_invalid_chars",
+      "en": "The hireling name has invalid characters",
+      "translated": "Numele angajatului are caractere nevalide",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "gamestore.validation.hireling_name_length",
+      "en": "The length of the hireling name must be between 3 and 18 characters.",
+      "translated": "Lungimea numelui angajatului trebuie să fie între 3 și 18 caractere.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "gamestore.validation.hireling_name_multiple_spaces",
+      "en": "The hireling name have more than 1 whitespace.",
+      "translated": "Numele angajatului are mai mult de 1 spațiu alb.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "gamestore.validation.hireling_name_whitespace_begin",
+      "en": "The hireling name can't have whitespace at begin.",
+      "translated": "Numele angajatului nu poate avea spații albe la început.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "gamestore.validation.invalid_character",
+      "en": "You can't use this character '%s' in your new name.",
+      "translated": "Nu poți folosi acest caracter '%s' în noul tău nume.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "gamestore.validation.monster_name",
+      "en": "Your new name '%s' can't be a monster's name.",
+      "translated": "Noul tău nume '%s' nu poate fi numele unui monstru.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "gamestore.validation.new_name_consecutive_spaces",
+      "en": "Your new name can't have consecutive spaces.",
+      "translated": "Noul tău nume nu poate avea spații consecutive.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "gamestore.validation.new_name_forbidden_word",
+      "en": "You can't use the word '%s' in your new name.",
+      "translated": "Nu poți folosi cuvântul '%s' în noul tău nume.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "gamestore.validation.new_name_forbidden_word_space",
+      "en": "You can't use the word '%s' even with spaces in your new name.",
+      "translated": "Nu poți folosi cuvântul '%s' chiar și cu spații în noul tău nume.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "gamestore.validation.new_name_length",
+      "en": "The length of your new name must be between 3 and 29 characters.",
+      "translated": "Lungimea noului tău nume trebuie să fie între 3 și 29 de caractere.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "gamestore.validation.new_name_too_many_spaces",
+      "en": "Your new name can't have more than 2 spaces.",
+      "translated": "Noul tău nume nu poate avea mai mult de 2 spații.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "gamestore.validation.new_name_whitespace_begin",
+      "en": "Your new name can't have whitespace at the beginning.",
+      "translated": "Noul tău nume nu poate avea spații albe la început.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.validation.npc_name",
+      "en": "Your new name '%s' can't be an NPC's name.",
+      "translated": "Noul tău nume '%s' nu poate fi numele unui NPC.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "lib.hireling.as_you_wish",
+      "en": "As you wish!",
+      "translated": "Cum doriți!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "lib.hireling.lamp_description",
+      "en": "This mysterious lamp summons your very own personal hireling.\nThis item cannot be traded.\nThis magic lamp is the home of %s.",
+      "translated": "Această lampă misterioasă cheamă propriul tău angajat personal.\nAcest articol nu poate fi tranzacționat.\nAceastă lampă magică este casa lui %s.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "misc.blessing.msg_1",
+      "en": "You have received Adventurer's Blessing, which applies up to level {0}!",
+      "translated": "Ați primit Binecuvântarea aventurierului, care se aplică până la nivelul {0}!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "misc.boss_lever.already_fighting",
+      "en": "There's already someone fighting with {0}.",
+      "translated": "Există deja cineva care se luptă cu {0}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "misc.boss_lever.cooldown_wait",
+      "en": "You have to wait {0} to face {1} again!",
+      "translated": "Trebuie să așteptați {0} pentru a face față din nou {1}!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "misc.boss_lever.disabled",
+      "en": "The boss is temporarily disabled.",
+      "translated": "Șeful este temporar dezactivat.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "misc.boss_lever.level_requirement",
+      "en": "All players need to be level {0} or higher.",
+      "translated": "Toți jucătorii trebuie să fie de nivelul {0} sau mai mare.",
+      "source": "google_translate"
     }
   ]
 }

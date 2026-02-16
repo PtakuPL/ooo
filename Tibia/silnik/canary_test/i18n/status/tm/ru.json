@@ -19446,5 +19446,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:44:24.707729Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Веселиться!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:26.570418Z"
+  },
+  "scripts.init.msg_1": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Вы совершаете множество покупок одновременно за несколько минут.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:26.596481Z"
+  },
+  "scripts.offline_training.hours_plural": {
+    "src_hash": "99e8d9aecac65d9833e10a2d3bbee4f7",
+    "text": "%s часов",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:26.635063Z"
+  },
+  "scripts.offline_training.minutes_plural": {
+    "src_hash": "35efa7bd680d413a27b1820a362af37f",
+    "text": "%s минут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:26.636068Z"
+  },
+  "scripts.reload.msg_2": {
+    "src_hash": "c271d2fad3f3e6b7c52384ead3321add",
+    "text": "Требуется параметр команды.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:26.649198Z"
+  },
+  "gamestore.error.unavailable_2": {
+    "src_hash": "47e58b411a771c18dadf0e46ba8330a2",
+    "text": "Это предложение недоступно [2]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:27.972925Z"
+  },
+  "gamestore.hireling.bought_success": {
+    "src_hash": "167f8c7ecac767eab043cd22caca44a1",
+    "text": "Вы успешно купили %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:27.973500Z"
+  },
+  "gamestore.hireling.rename_select": {
+    "src_hash": "be43e1e02f42e5d32cba4637a4e73afd",
+    "text": "Закройте окно магазина, чтобы выбрать, какого наемника следует переименовать в %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:27.974199Z"
+  },
+  "gamestore.hireling.sex_change_select": {
+    "src_hash": "a659354121de1de5cc32c75e516c78d5",
+    "text": "Закройте витрину магазина, чтобы выбрать, какому наемнику следует сменить пол.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:27.974683Z"
+  },
+  "gamestore.modal.choose_hireling": {
+    "src_hash": "298f0046b72aec842afd513f50faf24d",
+    "text": "Выберите наемника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:27.974944Z"
+  },
+  "gamestore.modal.hireling_in_lamp": {
+    "src_hash": "9bf751565757beff33b74539473d4353",
+    "text": "Ваш наемник должен быть внутри своей лампы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:30.572262Z"
+  },
+  "gamestore.modal.purchase_error": {
+    "src_hash": "e8a15c7f0527799c520627c3d8fe2eb3",
+    "text": "Ошибка транзакции покупки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:30.572574Z"
+  },
+  "gamestore.modal.select_hireling": {
+    "src_hash": "bd8cd4c38455ded382af6b16e2b31bcd",
+    "text": "Вам необходимо выбрать наемника.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:30.572899Z"
+  },
+  "gamestore.modal.select_hireling_below": {
+    "src_hash": "5f2c58c97175cae2342283b6b08b8595",
+    "text": "Выберите наемника ниже",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:30.573177Z"
+  },
+  "gamestore.modal.transaction_error": {
+    "src_hash": "844fce8bba96036e1fbe7369b659febf",
+    "text": "Ошибка транзакции",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:30.573427Z"
+  },
+  "gamestore.purchase.success": {
+    "src_hash": "b9b6a36d71170249fbe3d0316f10d756",
+    "text": "Вы приобрели %s за %d монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:34.516988Z"
+  },
+  "gamestore.rename.success": {
+    "src_hash": "047b6a9a3e007f9bbd7946781589955a",
+    "text": "Ваш персонаж успешно переименован.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:34.517367Z"
+  },
+  "gamestore.transfer.history_received": {
+    "src_hash": "44933d7a7aea6783deb111358e16b322",
+    "text": "%s перевел вам эту сумму.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:34.517831Z"
+  },
+  "gamestore.transfer.history_sent": {
+    "src_hash": "fec9b9367f37680387cdf7abcdf20ed1",
+    "text": "Вы перевели эту сумму на %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:34.518420Z"
+  },
+  "gamestore.transfer.no_coins": {
+    "src_hash": "5a251f3f749d4119540315418aa7a167",
+    "text": "У вас нет такого количества монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:34.518788Z"
+  },
+  "gamestore.transfer.player_not_found": {
+    "src_hash": "467e32b5382d7802fbb5cb6af1f42b6a",
+    "text": "Мы не смогли найти этого игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:38.160401Z"
+  },
+  "gamestore.transfer.same_account": {
+    "src_hash": "266a5e2c7ee9f7c6a74fce6092d9d414",
+    "text": "Вы не можете передать монету персонажу в том же аккаунте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:38.160831Z"
+  },
+  "gamestore.transfer.self_transfer": {
+    "src_hash": "d222476c126e3e9f8b6a21219c9278a3",
+    "text": "Вы не можете перевести монеты себе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:38.161177Z"
+  },
+  "gamestore.transfer.success": {
+    "src_hash": "bff758e27d120e6ff834483b60cad7ff",
+    "text": "Вы успешно перевели монеты %s на %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:38.161753Z"
+  },
+  "gamestore.validation.hireling_forbidden_word": {
+    "src_hash": "56484d171f7d2176ce27913a195a628d",
+    "text": "Вы не можете использовать слово «%s» в имени наемника.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:38.162506Z"
+  },
+  "gamestore.validation.hireling_forbidden_word_space": {
+    "src_hash": "319be05a24b43597b38c515c7d4df4dc",
+    "text": "Вы не можете использовать слово «%s» с пробелами в имени вашего наемника.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:40.759144Z"
+  },
+  "gamestore.validation.hireling_name_invalid_chars": {
+    "src_hash": "e7a42d3d9e5ab1c9547c7c7cacc286b8",
+    "text": "Имя наемника содержит недопустимые символы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:40.759617Z"
+  },
+  "gamestore.validation.hireling_name_length": {
+    "src_hash": "79746ed70cd8fb18fa29d8e0298cc1aa",
+    "text": "Длина имени наемника должна составлять от 3 до 18 символов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:40.760058Z"
+  },
+  "gamestore.validation.hireling_name_multiple_spaces": {
+    "src_hash": "4be111e495c05aa519417eea58c69573",
+    "text": "Имя наемника содержит более 1 пробела.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:40.760426Z"
+  },
+  "gamestore.validation.hireling_name_whitespace_begin": {
+    "src_hash": "0de3a3bdd27a8a3fd71737ef3de88682",
+    "text": "Имя наемника не может начинаться с пробелов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:40.760797Z"
+  },
+  "gamestore.validation.invalid_character": {
+    "src_hash": "ac5f7e05a73a0e6bdc8216a2808b9399",
+    "text": "Вы не можете использовать этот символ '%s' в своем новом имени.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:43.916476Z"
+  },
+  "gamestore.validation.monster_name": {
+    "src_hash": "6e5bb73b61b55f834fb315080579c444",
+    "text": "Ваше новое имя '%s' не может быть именем монстра.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:43.917067Z"
+  },
+  "gamestore.validation.new_name_consecutive_spaces": {
+    "src_hash": "459b4aefa9503eaaf8066793b1d287b9",
+    "text": "Ваше новое имя не может содержать последовательные пробелы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:43.917483Z"
+  },
+  "gamestore.validation.new_name_forbidden_word": {
+    "src_hash": "9d246154b86500185098547780fd897a",
+    "text": "Вы не можете использовать слово '%s' в своем новом имени.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:43.918031Z"
+  },
+  "gamestore.validation.new_name_forbidden_word_space": {
+    "src_hash": "25e15d39c443ae9187441ea88d3018d7",
+    "text": "Вы не можете использовать слово '%s' даже с пробелами в вашем новом имени.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:43.918710Z"
+  },
+  "gamestore.validation.new_name_length": {
+    "src_hash": "574fc985d7ec3f4ee193de878f942aa1",
+    "text": "Длина вашего нового имени должна составлять от 3 до 29 символов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:45.823404Z"
+  },
+  "gamestore.validation.new_name_too_many_spaces": {
+    "src_hash": "ace374b52debaa4259473c32006af06e",
+    "text": "Ваше новое имя не может содержать более двух пробелов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:45.823815Z"
   }
 }

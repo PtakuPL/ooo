@@ -8921,11 +8921,11 @@
   },
   "lib.hireling.as_you_wish": {
     "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
-    "text": "As you wish!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Come si desidera!",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.816032Z"
+    "updated_at": "2026-02-16T23:48:55.742330Z"
   },
   "scripts.2_ambassadors_treason.msg_1": {
     "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
@@ -27774,5 +27774,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:43:49.810312Z"
+  },
+  "scripts.actions_gems.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Quando arriverà il momento, '%s' sarà accettato in questo santuario.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:53.951175Z"
+  },
+  "scripts.gems.msg_1": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Metti il ​​rubino sulla piccola presa. Una fiamma rossa inizia a bruciare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:54.020817Z"
+  },
+  "scripts.gems.msg_2": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Metti lo zaffiro sulla piccola presa. Una fiamma blu inizia a bruciare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:54.021292Z"
+  },
+  "scripts.gems.msg_3": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Metti l'ametista sulla piccola presa. Una fiamma viola comincia a bruciare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:54.021759Z"
+  },
+  "scripts.init.msg_1": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Stai effettuando molti acquisti contemporaneamente in pochi istanti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:54.029739Z"
+  },
+  "gamestore.validation.npc_name": {
+    "src_hash": "1fff118eda21e5d2637b84c89a365b22",
+    "text": "Il tuo nuovo nome '%s' non può essere il nome di un NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:55.742025Z"
+  },
+  "lib.hireling.lamp_description": {
+    "src_hash": "03f97b09c6a32323149a292b0cc50e2c",
+    "text": "Questa lampada misteriosa evoca il tuo mercenario personale.\nQuesto oggetto non può essere scambiato.\nQuesta lampada magica è la casa di %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:55.742899Z"
+  },
+  "misc.blessing.msg_1": {
+    "src_hash": "94009aa41ca8d9dfaef25bb30302d920",
+    "text": "Hai ricevuto la Benedizione dell'avventuriero, che si applica fino al livello {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:55.743287Z"
+  },
+  "misc.boss_lever.already_fighting": {
+    "src_hash": "1824f405577c3caf944fe01ff4be000b",
+    "text": "C'è già qualcuno che litiga con {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:59.392704Z"
+  },
+  "misc.boss_lever.cooldown_wait": {
+    "src_hash": "5b8ed181be4531bcd0ad6920e83fb175",
+    "text": "Devi aspettare {0} per affrontare di nuovo {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:59.393049Z"
+  },
+  "misc.boss_lever.disabled": {
+    "src_hash": "97432f94fe8441e85387c8b7e5ba0b70",
+    "text": "Il capo è temporaneamente disabilitato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:59.393368Z"
+  },
+  "misc.boss_lever.level_requirement": {
+    "src_hash": "7c75033f5acf3f46f7e84c7cfad768c8",
+    "text": "Tutti i giocatori devono essere di livello {0} o superiore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:59.393708Z"
+  },
+  "misc.boss_lever.min_players": {
+    "src_hash": "e7c5e1fb5e2ccf2907795decf72cd99c",
+    "text": "Hai bisogno di {0} giocatori qualificati per questa sfida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:48:59.394049Z"
+  },
+  "misc.boss_lever.team_cooldown": {
+    "src_hash": "3a459cab4115f21ac50536cbfdb9f2e1",
+    "text": "Un membro della tua squadra deve aspettare {0} per affrontare di nuovo {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:01.986846Z"
+  },
+  "misc.concoctions.msg_1": {
+    "src_hash": "f6c02b17f997ee1c6a3da39cdd55365f",
+    "text": "La tua miscela {0} è svanita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:01.987176Z"
+  },
+  "misc.concoctions.msg_2": {
+    "src_hash": "caeffb2f8aa2a5e77f7a456d189452f6",
+    "text": "Devi attendere {0} prima di utilizzare nuovamente {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:01.987507Z"
+  },
+  "misc.concoctions.msg_3": {
+    "src_hash": "47b1a1f76ecd19dc472b3097d740c4c2",
+    "text": "Hai attivato {0}. Durerà per {1}{2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:01.987851Z"
+  },
+  "misc.lever.msg_1": {
+    "src_hash": "6d34b16866c8dd1cc9090f48a08440ae",
+    "text": "Tu o un membro del tuo team dovete attendere {0} ore per affrontare di nuovo {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:01.988306Z"
+  },
+  "player.condition.bleeding": {
+    "src_hash": "4c896a1f3ca86d297325c9b83f74e39f",
+    "text": "Stai sanguinando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:05.669393Z"
+  },
+  "player.condition.cursed": {
+    "src_hash": "5b749b38fc20c0684e7f64ec53381f89",
+    "text": "Sei maledetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:05.669623Z"
+  },
+  "player.condition.dazzled": {
+    "src_hash": "298d37430ad80a99f57a239f17012b90",
+    "text": "Sei abbagliato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:05.669838Z"
+  },
+  "player.condition.drowning": {
+    "src_hash": "747cb7d8e212ebf4ad62a4cee5a287f2",
+    "text": "Stai annegando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:05.670054Z"
+  },
+  "player.condition.drunk": {
+    "src_hash": "c79d76550811fb4ac7dd7385401419ef",
+    "text": "Sei ubriaco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:05.670331Z"
+  },
+  "player.condition.feared": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:09.032023Z"
+  },
+  "player.condition.freezing": {
+    "src_hash": "f0cb181dfbe7a3bd4a9f54b0497f3e3c",
+    "text": "Stai congelando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:09.032278Z"
+  },
+  "player.condition.hexed": {
+    "src_hash": "3480c99488b1bf33f0408214bf2c1e8a",
+    "text": "Sei maledetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:09.032488Z"
+  },
+  "player.condition.paralyzed": {
+    "src_hash": "e1f558a4167215429a429ef85dff0d7f",
+    "text": "Sei paralizzato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:09.032714Z"
+  },
+  "player.condition.poisoned": {
+    "src_hash": "32455c487fa1f9969461d0c69e8e6614",
+    "text": "Sei avvelenato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:09.032929Z"
+  },
+  "player.condition.rooted": {
+    "src_hash": "10d29de242ffa03823bac1d1810f84ba",
+    "text": "Sei radicato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:12.111140Z"
+  },
+  "player.dawnport.level20": {
+    "src_hash": "817a542e022de0570a8f52918c4e2676",
+    "text": "Hai raggiunto il limite di livello. Scegli la tua vocazione e parti Dawnport.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:12.111693Z"
+  },
+  "player.dawnport.level8": {
+    "src_hash": "c411c142c4ca4827759546995efb25bd",
+    "text": "Congratulazioni! Ora puoi scegliere la tua vocazione e lasciare Dawnport. Parla con Oressa nel tempio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:12.112210Z"
+  },
+  "player.dawnport.magic_limit": {
+    "src_hash": "5d7946b7d6585ad7c4f878e591451c3a",
+    "text": "Non puoi allenare ulteriormente il tuo livello di magia. Viaggia sulla terraferma per migliorarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:12.112718Z"
+  },
+  "player.dawnport.skill_limit": {
+    "src_hash": "e2bfef6afa2016e438005ae18a578139",
+    "text": "Non puoi allenare ulteriormente questa abilità. Viaggia sulla terraferma per migliorarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:12.113165Z"
+  },
+  "player.login.house_items_inbox": {
+    "src_hash": "911941894e1440201d2682c8bf0aa038",
+    "text": "I tuoi oggetti della casa sono stati inviati alla tua casella di posta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:15.726729Z"
+  },
+  "player.login.house_lost": {
+    "src_hash": "fb66346673f1373dc5cd2c07d1cc869f",
+    "text": "Hai perso la tua casa perché non sei più un account premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:15.727159Z"
+  },
+  "player.login.premium_expired": {
+    "src_hash": "307ffe921ee4200a1bfced1578cf55c4",
+    "text": "Il tuo tempo premium è scaduto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:15.727467Z"
+  },
+  "player.prey.bonus_expired": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Il tuo bonus preda è scaduto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:15.727762Z"
+  },
+  "player.prey.bonus_time_reset": {
+    "src_hash": "bfb7b011e96d143970c5f3112b77d3af",
+    "text": "Il tempo bonus della tua preda è stato ripristinato con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:15.728159Z"
+  },
+  "player.prey.bonus_type_reset": {
+    "src_hash": "4c1ef1799674b1eea2d8d339b05c0cef",
+    "text": "Il tipo e l'orario del tuo bonus preda sono stati reimpostati con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:19.344034Z"
+  },
+  "player.prey.cards_missing_auto": {
+    "src_hash": "52f2fe5f175d5c3f1fbe13048f5e133a",
+    "text": "Non hai abbastanza carte preda per abilitare il rilancio automatico alla scadenza del tuo slot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:19.344457Z"
+  },
+  "player.prey.cards_missing_lock": {
+    "src_hash": "56f31f72e8df45fdfa34bd0a82e4b0ad",
+    "text": "Non hai abbastanza carte preda per bloccare il mostro e il bonus prima che lo slot scada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:19.344869Z"
+  },
+  "player.prey.dialog.action_error": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "Si è verificato un errore durante l'elaborazione della tua azione. Per favore prova a riaprire la finestra della preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:19.345357Z"
+  },
+  "player.prey.dialog.already_active": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "Hai già un mostro attivo in questo slot preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:19.345713Z"
+  },
+  "player.prey.dialog.cards_bonus_reroll": {
+    "src_hash": "ab27ddfd47408686344af959cfce82e3",
+    "text": "Non hai abbastanza carte preda per rilanciare il tipo di bonus di questo slot preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:21.955063Z"
+  },
+  "player.prey.dialog.cards_list": {
+    "src_hash": "74c459ac155c0dd25f49c4e5c8c0d798",
+    "text": "Non hai abbastanza carte preda per scegliere un mostro dalla lista.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:21.955464Z"
+  },
+  "player.prey.dialog.creature_invalid": {
+    "src_hash": "6b41c622ace4cb2e453cc5ee4d40114d",
+    "text": "Questa creatura non può essere selezionata come preda. Per favore scegline un altro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:21.955893Z"
+  },
+  "player.prey.dialog.creature_selected": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Questa creatura è già selezionata in un altro slot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:21.956256Z"
   }
 }

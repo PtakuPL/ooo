@@ -21526,5 +21526,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:45:35.352072Z"
+  },
+  "gamestore.error.outfit_purchase_error": {
+    "src_hash": "e2484dcf2efeaae1f0c24898c712a2b2",
+    "text": "A apărut o problemă cu achiziționarea ținutei tale. Achiziția dvs. a fost anulată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:50.784213Z"
+  },
+  "gamestore.error.outfit_wrong_sex": {
+    "src_hash": "88c6b3a049f6cfdee4cbea7e422092c1",
+    "text": "Această ținută pare să nu se potrivească sexului tău, ne pare rău pentru asta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:50.784665Z"
+  },
+  "gamestore.error.prey_wildcard_limit": {
+    "src_hash": "45e3fc24adc260e7f76ff966c1ede47e",
+    "text": "Nu puteți deține mai mult de %s metacaractere pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:50.785039Z"
+  },
+  "gamestore.error.reward_token_limit": {
+    "src_hash": "199aeadc072e569beb8f391ac3c56000",
+    "text": "Nu puteți deține mai mult de %s jetoane recompensă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:54.383236Z"
+  },
+  "gamestore.error.temple_in_fight": {
+    "src_hash": "09f2fcd51068683a5c8e41b9d849de09",
+    "text": "Nu poți folosi teleportarea templului în luptă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:54.383610Z"
+  },
+  "gamestore.error.too_many_purchases": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Faceți multe achiziții simultan în câteva momente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:54.383997Z"
+  },
+  "gamestore.error.unavailable_1": {
+    "src_hash": "e559faa50bf4ca3667b7c90b8bcfce9a",
+    "text": "Această ofertă nu este disponibilă [1]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:54.384319Z"
+  },
+  "gamestore.error.unavailable_2": {
+    "src_hash": "47e58b411a771c18dadf0e46ba8330a2",
+    "text": "Această ofertă nu este disponibilă [2]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:54.384634Z"
+  },
+  "gamestore.hireling.bought_success": {
+    "src_hash": "167f8c7ecac767eab043cd22caca44a1",
+    "text": "Ați cumpărat cu succes %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:57.890719Z"
+  },
+  "gamestore.hireling.rename_select": {
+    "src_hash": "be43e1e02f42e5d32cba4637a4e73afd",
+    "text": "Închideți fereastra magazinului pentru a selecta ce angajat trebuie redenumit în %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:57.891259Z"
+  },
+  "gamestore.hireling.sex_change_select": {
+    "src_hash": "a659354121de1de5cc32c75e516c78d5",
+    "text": "Închideți fereastra magazinului pentru a selecta ce angajat trebuie să-și schimbe sexul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:57.891717Z"
+  },
+  "gamestore.modal.choose_hireling": {
+    "src_hash": "298f0046b72aec842afd513f50faf24d",
+    "text": "Alegeți un Angajat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:57.891969Z"
+  },
+  "gamestore.modal.hireling_in_lamp": {
+    "src_hash": "9bf751565757beff33b74539473d4353",
+    "text": "Angajatul tău trebuie să fie în lampa lui/ei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:49:57.892319Z"
+  },
+  "gamestore.modal.purchase_error": {
+    "src_hash": "e8a15c7f0527799c520627c3d8fe2eb3",
+    "text": "Eroare tranzacție de cumpărare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:00.499801Z"
+  },
+  "gamestore.modal.select_hireling": {
+    "src_hash": "bd8cd4c38455ded382af6b16e2b31bcd",
+    "text": "Trebuie să selectați un angajat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:00.500131Z"
+  },
+  "gamestore.modal.select_hireling_below": {
+    "src_hash": "5f2c58c97175cae2342283b6b08b8595",
+    "text": "Selectați un angajat de mai jos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:00.500425Z"
+  },
+  "gamestore.modal.transaction_error": {
+    "src_hash": "844fce8bba96036e1fbe7369b659febf",
+    "text": "Eroare de tranzacție",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:00.500669Z"
+  },
+  "gamestore.purchase.success": {
+    "src_hash": "b9b6a36d71170249fbe3d0316f10d756",
+    "text": "Ați cumpărat %s pentru %d monede.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:00.501033Z"
+  },
+  "gamestore.rename.success": {
+    "src_hash": "047b6a9a3e007f9bbd7946781589955a",
+    "text": "Personajul tău a fost redenumit cu succes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:03.035282Z"
+  },
+  "gamestore.transfer.history_received": {
+    "src_hash": "44933d7a7aea6783deb111358e16b322",
+    "text": "%s v-a transferat această sumă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:03.035615Z"
+  },
+  "gamestore.transfer.history_sent": {
+    "src_hash": "fec9b9367f37680387cdf7abcdf20ed1",
+    "text": "Ați transferat această sumă la %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:03.035938Z"
+  },
+  "gamestore.transfer.no_coins": {
+    "src_hash": "5a251f3f749d4119540315418aa7a167",
+    "text": "Nu aveți această cantitate de monede.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:03.036266Z"
+  },
+  "gamestore.transfer.player_not_found": {
+    "src_hash": "467e32b5382d7802fbb5cb6af1f42b6a",
+    "text": "Nu am putut găsi acel jucător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:03.036609Z"
+  },
+  "gamestore.transfer.same_account": {
+    "src_hash": "266a5e2c7ee9f7c6a74fce6092d9d414",
+    "text": "Nu puteți transfera monede către un personaj din același cont.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:05.829715Z"
+  },
+  "gamestore.transfer.self_transfer": {
+    "src_hash": "d222476c126e3e9f8b6a21219c9278a3",
+    "text": "Nu poți transfera monede către tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:05.830064Z"
+  },
+  "gamestore.transfer.success": {
+    "src_hash": "bff758e27d120e6ff834483b60cad7ff",
+    "text": "Ați transferat %s monede pe %s cu succes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:05.830552Z"
+  },
+  "gamestore.validation.hireling_forbidden_word": {
+    "src_hash": "56484d171f7d2176ce27913a195a628d",
+    "text": "Nu puteți folosi cuvântul „%s” în numele angajatului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:05.830937Z"
+  },
+  "gamestore.validation.hireling_forbidden_word_space": {
+    "src_hash": "319be05a24b43597b38c515c7d4df4dc",
+    "text": "Nu puteți folosi cuvântul „%s” cu spații albe în numele angajatului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:05.831349Z"
+  },
+  "gamestore.validation.hireling_name_invalid_chars": {
+    "src_hash": "e7a42d3d9e5ab1c9547c7c7cacc286b8",
+    "text": "Numele angajatului are caractere nevalide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:08.556558Z"
+  },
+  "gamestore.validation.hireling_name_length": {
+    "src_hash": "79746ed70cd8fb18fa29d8e0298cc1aa",
+    "text": "Lungimea numelui angajatului trebuie să fie între 3 și 18 caractere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:08.557001Z"
+  },
+  "gamestore.validation.hireling_name_multiple_spaces": {
+    "src_hash": "4be111e495c05aa519417eea58c69573",
+    "text": "Numele angajatului are mai mult de 1 spațiu alb.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:08.557364Z"
+  },
+  "gamestore.validation.hireling_name_whitespace_begin": {
+    "src_hash": "0de3a3bdd27a8a3fd71737ef3de88682",
+    "text": "Numele angajatului nu poate avea spații albe la început.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:08.557807Z"
+  },
+  "gamestore.validation.invalid_character": {
+    "src_hash": "ac5f7e05a73a0e6bdc8216a2808b9399",
+    "text": "Nu poți folosi acest caracter '%s' în noul tău nume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:08.558256Z"
+  },
+  "gamestore.validation.monster_name": {
+    "src_hash": "6e5bb73b61b55f834fb315080579c444",
+    "text": "Noul tău nume '%s' nu poate fi numele unui monstru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:11.150901Z"
+  },
+  "gamestore.validation.new_name_consecutive_spaces": {
+    "src_hash": "459b4aefa9503eaaf8066793b1d287b9",
+    "text": "Noul tău nume nu poate avea spații consecutive.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:11.151278Z"
+  },
+  "gamestore.validation.new_name_forbidden_word": {
+    "src_hash": "9d246154b86500185098547780fd897a",
+    "text": "Nu poți folosi cuvântul '%s' în noul tău nume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:11.151684Z"
+  },
+  "gamestore.validation.new_name_forbidden_word_space": {
+    "src_hash": "25e15d39c443ae9187441ea88d3018d7",
+    "text": "Nu poți folosi cuvântul '%s' chiar și cu spații în noul tău nume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:11.152139Z"
+  },
+  "gamestore.validation.new_name_length": {
+    "src_hash": "574fc985d7ec3f4ee193de878f942aa1",
+    "text": "Lungimea noului tău nume trebuie să fie între 3 și 29 de caractere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:11.152592Z"
+  },
+  "gamestore.validation.new_name_too_many_spaces": {
+    "src_hash": "ace374b52debaa4259473c32006af06e",
+    "text": "Noul tău nume nu poate avea mai mult de 2 spații.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:13.728992Z"
+  },
+  "gamestore.validation.new_name_whitespace_begin": {
+    "src_hash": "a9ae395a7efd77b13324221a89412d66",
+    "text": "Noul tău nume nu poate avea spații albe la început.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:13.729417Z"
+  },
+  "gamestore.validation.npc_name": {
+    "src_hash": "1fff118eda21e5d2637b84c89a365b22",
+    "text": "Noul tău nume '%s' nu poate fi numele unui NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:13.729940Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Cum doriți!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:13.730222Z"
+  },
+  "lib.hireling.lamp_description": {
+    "src_hash": "03f97b09c6a32323149a292b0cc50e2c",
+    "text": "Această lampă misterioasă cheamă propriul tău angajat personal.\nAcest articol nu poate fi tranzacționat.\nAceastă lampă magică este casa lui %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:13.730849Z"
+  },
+  "misc.blessing.msg_1": {
+    "src_hash": "94009aa41ca8d9dfaef25bb30302d920",
+    "text": "Ați primit Binecuvântarea aventurierului, care se aplică până la nivelul {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:17.669376Z"
+  },
+  "misc.boss_lever.already_fighting": {
+    "src_hash": "1824f405577c3caf944fe01ff4be000b",
+    "text": "Există deja cineva care se luptă cu {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:17.669749Z"
+  },
+  "misc.boss_lever.cooldown_wait": {
+    "src_hash": "5b8ed181be4531bcd0ad6920e83fb175",
+    "text": "Trebuie să așteptați {0} pentru a face față din nou {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:17.670189Z"
+  },
+  "misc.boss_lever.disabled": {
+    "src_hash": "97432f94fe8441e85387c8b7e5ba0b70",
+    "text": "Șeful este temporar dezactivat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:17.670516Z"
+  },
+  "misc.boss_lever.level_requirement": {
+    "src_hash": "7c75033f5acf3f46f7e84c7cfad768c8",
+    "text": "Toți jucătorii trebuie să fie de nivelul {0} sau mai mare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:50:17.670896Z"
   }
 }

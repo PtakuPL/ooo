@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:15:24.727645Z",
+  "checked_at": "2026-02-16T20:37:12.753278Z",
   "issues_total": 405,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2066,6 +2066,15 @@
       "lang": "Ommm!"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2109,6 +2118,15 @@
       "en": "FIRE!",
       "pl": "OGIEŃ!",
       "lang": "FIRE!"
+    },
+    {
+      "key": "monster.firestarter.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BURN!",
+      "pl": "PŁOŃ!",
+      "lang": "BURN!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2156,6 +2174,15 @@
       "lang": "Grrrrrrr"
     },
     {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
+    },
+    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2190,6 +2217,15 @@
       "en": "Orc",
       "pl": "Ork",
       "lang": "Orc"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2406,6 +2442,15 @@
       "en": "Delicious!",
       "pl": "Wyborny!",
       "lang": "Delicious!"
+    },
+    {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
     },
     {
       "key": "monster.primitive.voice_6",
@@ -3567,51 +3612,6 @@
       "en": "Oh...",
       "pl": "O...",
       "lang": "Oh..."
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chhchh?",
-      "pl": "Chhchh...",
-      "lang": "Chhchh?"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uhhhh...",
-      "pl": "Uuuuhhh...",
-      "lang": "Uhhhh..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_2",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SLEEP. ...",
-      "pl": "SEN....",
-      "lang": "SLEEP. ..."
     }
   ],
   "length_ratio_issues": [

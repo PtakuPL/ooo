@@ -140574,5 +140574,261 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:34:19.243115Z"
+  },
+  "data.otservbr.global.npc.iskan.L55.1279": {
+    "src_hash": "8c2be15f64087050fb51f57fae545b95",
+    "text": "No eres uno de nosotros. No quiero hablar contigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.285210Z"
+  },
+  "data.otservbr.global.npc.jakahr.L53.433": {
+    "src_hash": "7d211c0df3ce83c165b4b0eb373feeff",
+    "text": "Hola, peregrino de luto. ¿Cómo puedo ayudarte |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.336647Z"
+  },
+  "data.otservbr.global.npc.jakahr.L54.434": {
+    "src_hash": "109b98326fce7e48a110e639774441f3",
+    "text": "Fue un honor servirle, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.348357Z"
+  },
+  "data.otservbr.global.npc.jakahr.L55.435": {
+    "src_hash": "6439f0565c4ec9567c817eb82519891f",
+    "text": "Fue un honor servirle.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.350569Z"
+  },
+  "data.otservbr.global.npc.jakahr.L56.436": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aquí. No olvides que también debes comprar una etiqueta si quieres enviar un paquete. Escriba siempre el nombre del {receiver} en la primera línea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.355201Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L64.648": {
+    "src_hash": "cd3304fb7a7199bf44faaf72bcbf139e",
+    "text": "Gerimor tiene razón. Como experto en minotauros, llevo años investigando estas criaturas. Pensé que ya sabía mucho pero los monstruos en esta cueva son {different}. Es un gran {mystery}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.359437Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L67.649": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "¿Cómo va tu {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.363044Z"
+  },
+  "data.otservbr.global.npc.jean.pierre.L116.691": {
+    "src_hash": "03496ec1e1892bafe0f165da12354986",
+    "text": "Saludos, |PLAYERNAME|. ¿Qué estás haciendo aquí afuera?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.366893Z"
+  },
+  "data.otservbr.global.npc.jerom.L134.948": {
+    "src_hash": "0dd06bc90e410c8c32c7d8878bdce14a",
+    "text": "Hola. Lo siento, pero hoy no estoy en el mejor {mood}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.373833Z"
+  },
+  "data.otservbr.global.npc.jezzara.L59.1141": {
+    "src_hash": "811aca8149aacb1493c2c99c72293f4d",
+    "text": "Sea llorado peregrino en carne. Hablando de carne, ¿tal vez te gustaría un poco de {food}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.378605Z"
+  },
+  "data.otservbr.global.npc.jezzara.L60.1142": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.380333Z"
+  },
+  "data.otservbr.global.npc.jezzara.L61.1143": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.382686Z"
+  },
+  "data.otservbr.global.npc.jezzara.L62.1144": {
+    "src_hash": "13c3d970ee6f7254a72d4b3c79841c8e",
+    "text": "Claro, echa un vistazo a mis ofertas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.386022Z"
+  },
+  "data.otservbr.global.npc.julius.L255.639": {
+    "src_hash": "ffe8aa6deb533fac27719e137420847d",
+    "text": "Adiós, |PLAYERNAME|. Nunca confíes en nadie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.388944Z"
+  },
+  "data.otservbr.global.npc.julius.L256.640": {
+    "src_hash": "b87d90cdb5feb0d6f087b3fa0c43367f",
+    "text": "Te recompensaré por cada par de dientes de vampiro que me traigas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.390849Z"
+  },
+  "data.otservbr.global.npc.julius.L58.637": {
+    "src_hash": "7681c95c5304928cb451460a53142e2d",
+    "text": "Sea saludado, aventurero |PLAYERNAME|. Supongo que has leído el {note} sobre la amenaza {vampire} en esta ciudad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.394003Z"
+  },
+  "data.otservbr.global.npc.julius.L60.638": {
+    "src_hash": "1f13d1d9698ab7c453748ae3daa2dbeb",
+    "text": "Sea saludado, aventurero |PLAYERNAME|. ¡Disculpe si aparezco {distracted}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.398394Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L68.1372": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.402561Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L70.1374": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> ¡Sin paciencia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.411936Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L68.898": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.416620Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L70.900": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> ¡Sin paciencia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.420075Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L68.1410": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.422152Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L70.1412": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> ¡Sin paciencia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.424869Z"
+  },
+  "data.otservbr.global.npc.kais.L104.736": {
+    "src_hash": "3b86f64fb67b5c1834d89da8e17d3262",
+    "text": "Hmm... seguramente necesitas {help}, ¿me dejarás? ¡Soy {Kais} el Atado y puedo echarte una mano en {healing} tu cuerpo y alma o incluso otorgarte una bendición {enhanced}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.428798Z"
+  },
+  "data.otservbr.global.npc.kallimae.L58.294": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.438393Z"
+  },
+  "data.otservbr.global.npc.kallimae.L61.295": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.441555Z"
+  },
+  "data.otservbr.global.npc.kallimae.L64.296": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.443835Z"
+  },
+  "data.otservbr.global.npc.karith.L64.599": {
+    "src_hash": "5b7b0861f756c38e7680922d5c9546bd",
+    "text": "¡Hola! Dime qué tienes en mente. El tiempo es dinero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.446062Z"
+  },
+  "data.otservbr.global.npc.karith.L67.600": {
+    "src_hash": "5b7b0861f756c38e7680922d5c9546bd",
+    "text": "¡Hola! Dime qué tienes en mente. El tiempo es dinero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.449801Z"
+  },
+  "data.otservbr.global.npc.karl.L96.1575": {
+    "src_hash": "612c4b8e3ab4ee16596f3c54e6b74fbc",
+    "text": "Por favor regresa, pero no se lo digas a los demás.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.453295Z"
+  },
+  "data.otservbr.global.npc.karl.L97.1576": {
+    "src_hash": "612c4b8e3ab4ee16596f3c54e6b74fbc",
+    "text": "Por favor regresa, pero no se lo digas a los demás.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.455896Z"
+  },
+  "data.otservbr.global.npc.karl.L98.1577": {
+    "src_hash": "bf9e79d102569a312ea94c4c585bb77a",
+    "text": "¡Pshhhht! No tan ruidoso... pero bienvenido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:37:03.459303Z"
   }
 }

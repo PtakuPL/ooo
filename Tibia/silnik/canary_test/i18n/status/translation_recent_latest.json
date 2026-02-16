@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T20:35:26.867594Z",
+  "timestamp": "2026-02-16T20:37:04.568042Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "json_file": "server.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.jezzara.L62.1144",
+      "en": "Sure, take a look at my offers.",
+      "translated": "Claro, echa un vistazo a mis ofertas.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.julius.L255.639",
+      "en": "Good bye, |PLAYERNAME|. Never trust anyone.",
+      "translated": "Adiós, |PLAYERNAME|. Nunca confíes en nadie.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.julius.L256.640",
+      "en": "I'll reward you for every pair of vampire teeth you bring me.",
+      "translated": "Te recompensaré por cada par de dientes de vampiro que me traigas.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.julius.L58.637",
+      "en": "Be greeted, adventurer |PLAYERNAME|. I assume you have read the {note} about the {vampire} threat in this city.",
+      "translated": "Sea saludado, aventurero |PLAYERNAME|. Supongo que has leído el {note} sobre la amenaza {vampire} en esta ciudad.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.julius.L60.638",
+      "en": "Be greeted, adventurer |PLAYERNAME|. Please excuse me if I appear {distracted}!",
+      "translated": "Sea saludado, aventurero |PLAYERNAME|. ¡Disculpe si aparezco {distracted}!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.junkar.mines.L68.1372",
+      "en": "Welcome, |PLAYERNAME|! You are lucky that the service is running right now. Save your coal for the days to come though!",
+      "translated": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.junkar.mines.L70.1374",
+      "en": "<Sigh> No patience!",
+      "translated": "<Sigh> ¡Sin paciencia!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.junkar.robsons.L68.898",
+      "en": "Welcome, |PLAYERNAME|! You are lucky that the service is running right now. Save your coal for the days to come though!",
+      "translated": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.junkar.robsons.L70.900",
+      "en": "<Sigh> No patience!",
+      "translated": "<Sigh> ¡Sin paciencia!",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.junkar.thais.L68.1410",
+      "en": "Welcome, |PLAYERNAME|! You are lucky that the service is running right now. Save your coal for the days to come though!",
+      "translated": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.junkar.thais.L70.1412",
+      "en": "<Sigh> No patience!",
+      "translated": "<Sigh> ¡Sin paciencia!",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.kais.L104.736",
+      "en": "Hmm... surely you are in need of {help} - will you let me? I am {Kais} the Bound and I can lend you a hand in {healing} your body and soul or even grant an {enhanced} blessing!",
+      "translated": "Hmm... seguramente necesitas {help}, ¿me dejarás? ¡Soy {Kais} el Atado y puedo echarte una mano en {healing} tu cuerpo y alma o incluso otorgarte una bendición {enhanced}!",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.kallimae.L58.294",
+      "en": "How could I help you?",
+      "translated": "¿Cómo podría ayudarte?",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.kallimae.L61.295",
+      "en": "How could I help you?",
+      "translated": "¿Cómo podría ayudarte?",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.kallimae.L64.296",
+      "en": "How could I help you?",
+      "translated": "¿Cómo podría ayudarte?",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.karith.L64.599",
+      "en": "Hello! Tell me what's on your mind. Time is money.",
+      "translated": "¡Hola! Dime qué tienes en mente. El tiempo es dinero.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.karith.L67.600",
+      "en": "Hello! Tell me what's on your mind. Time is money.",
+      "translated": "¡Hola! Dime qué tienes en mente. El tiempo es dinero.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.karl.L96.1575",
+      "en": "Please come back, but don't tell others.",
+      "translated": "Por favor regresa, pero no se lo digas a los demás.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.karl.L97.1576",
+      "en": "Please come back, but don't tell others.",
+      "translated": "Por favor regresa, pero no se lo digas a los demás.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.karl.L98.1577",
+      "en": "Pshhhht! Not that loud ... but welcome.",
+      "translated": "¡Pshhhht! No tan ruidoso... pero bienvenido.",
+      "source": "simple"
     }
   ]
 }

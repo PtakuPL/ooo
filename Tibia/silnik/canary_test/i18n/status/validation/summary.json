@@ -1,17 +1,17 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-16T20:17:43.399101Z",
+  "validated_at": "2026-02-16T20:39:01.383626Z",
   "by_score": {
     "ru": {
-      "score": 43.9,
-      "coverage_pct": 33.8,
-      "issues": 6640,
+      "score": 44.5,
+      "coverage_pct": 34.1,
+      "issues": 6631,
       "critical": 148,
-      "high": 6484,
-      "crossref_issues": 466,
+      "high": 6475,
+      "crossref_issues": 469,
       "crossref_autofix_applied": 77,
-      "translated": 18137,
+      "translated": 18293,
       "script_group": "cyrillic"
     },
     "bn": {
@@ -152,8 +152,8 @@
       "issues": 111,
       "critical": 99,
       "high": 4,
-      "crossref_issues": 463,
-      "crossref_autofix_applied": 27,
+      "crossref_issues": 464,
+      "crossref_autofix_applied": 23,
       "translated": 18344,
       "script_group": "latin"
     },
@@ -258,13 +258,13 @@
     },
     "es": {
       "score": 99.9,
-      "coverage_pct": 73.6,
+      "coverage_pct": 73.9,
       "issues": 40,
       "critical": 0,
       "high": 37,
-      "crossref_issues": 496,
-      "crossref_autofix_applied": 17,
-      "translated": 39454,
+      "crossref_issues": 493,
+      "crossref_autofix_applied": 10,
+      "translated": 39580,
       "script_group": "latin"
     },
     "et": {
@@ -335,13 +335,13 @@
     },
     "it": {
       "score": 99.9,
-      "coverage_pct": 8.4,
+      "coverage_pct": 8.8,
       "issues": 3,
       "critical": 1,
       "high": 2,
       "crossref_issues": 405,
       "crossref_autofix_applied": 0,
-      "translated": 4521,
+      "translated": 4739,
       "script_group": "latin"
     },
     "kk": {
@@ -412,13 +412,13 @@
     },
     "pl": {
       "score": 99.9,
-      "coverage_pct": 42.3,
+      "coverage_pct": 42.7,
       "issues": 40,
       "critical": 1,
       "high": 4,
       "crossref_issues": 0,
       "crossref_autofix_applied": 0,
-      "translated": 22684,
+      "translated": 22880,
       "script_group": "latin"
     },
     "sk": {
@@ -454,15 +454,26 @@
       "translated": 3818,
       "script_group": "latin"
     },
+    "sr": {
+      "score": 99.9,
+      "coverage_pct": 8.2,
+      "issues": 2,
+      "critical": 0,
+      "high": 2,
+      "crossref_issues": 411,
+      "crossref_autofix_applied": 0,
+      "translated": 4386,
+      "script_group": "cyrillic"
+    },
     "sv": {
       "score": 99.9,
-      "coverage_pct": 6.4,
+      "coverage_pct": 6.9,
       "issues": 1,
       "critical": 1,
       "high": 0,
       "crossref_issues": 407,
       "crossref_autofix_applied": 0,
-      "translated": 3436,
+      "translated": 3679,
       "script_group": "latin"
     },
     "sw": {
@@ -544,25 +555,14 @@
     },
     "ro": {
       "score": 100.0,
-      "coverage_pct": 17.5,
+      "coverage_pct": 18.0,
       "issues": 1,
       "critical": 1,
       "high": 0,
       "crossref_issues": 406,
       "crossref_autofix_applied": 0,
-      "translated": 9370,
+      "translated": 9625,
       "script_group": "latin"
-    },
-    "sr": {
-      "score": 100.0,
-      "coverage_pct": 6.5,
-      "issues": 1,
-      "critical": 0,
-      "high": 1,
-      "crossref_issues": 411,
-      "crossref_autofix_applied": 0,
-      "translated": 3490,
-      "script_group": "cyrillic"
     },
     "tr": {
       "score": 100.0,
@@ -587,7 +587,7 @@
       "script_group": "cjk"
     }
   },
-  "avg_score": 98.2,
+  "avg_score": 98.3,
   "by_group": {
     "rtl": [
       "ar",
@@ -653,6 +653,6 @@
       "zh_TW"
     ]
   },
-  "crossref_total_issues": 21038,
-  "crossref_autofix_total_applied": 121
+  "crossref_total_issues": 21039,
+  "crossref_autofix_total_applied": 110
 }

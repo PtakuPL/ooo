@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:16:44.335828Z",
+  "checked_at": "2026-02-16T20:38:17.257090Z",
   "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1931,6 +1931,15 @@
       "lang": "Ommm!"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1974,6 +1983,15 @@
       "en": "FIRE!",
       "pl": "OGIEŃ!",
       "lang": "FIRE!"
+    },
+    {
+      "key": "monster.firestarter.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BURN!",
+      "pl": "PŁOŃ!",
+      "lang": "BURN!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2021,6 +2039,15 @@
       "lang": "Grrrrrrr"
     },
     {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
+    },
+    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2055,6 +2082,15 @@
       "en": "Orc",
       "pl": "Ork",
       "lang": "Orc"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2262,6 +2298,15 @@
       "en": "Delicious!",
       "pl": "Wyborny!",
       "lang": "Delicious!"
+    },
+    {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
     },
     {
       "key": "monster.primitive.voice_6",
@@ -3567,51 +3612,6 @@
       "en": "Take this!",
       "pl": "Weź to!",
       "lang": "Take this!"
-    },
-    {
-      "key": "npc.andrew_lyze.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
-    },
-    {
-      "key": "npc.andrew_lyze.greet_msg_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Greetings.",
-      "pl": "Witaj.",
-      "lang": "Greetings."
-    },
-    {
-      "key": "npc.appaloosa.say_9",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
-    },
-    {
-      "key": "npc.ariella.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi there.",
-      "pl": "Cześć.",
-      "lang": "Hi there."
-    },
-    {
-      "key": "npc.ariella.say_15",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I see.",
-      "pl": "Rozumiem.",
-      "lang": "I see."
     }
   ],
   "length_ratio_issues": [

@@ -85025,11 +85025,11 @@
   },
   "data.otservbr.global.npc.gerimor.L439.369": {
     "src_hash": "5c29836c5a2d999d43af77b014fffdaf",
-    "text": "Zyskałeś mystery box.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Zdobyłeś tajemnicze pudełko.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T12:14:34.464381Z"
+    "updated_at": "2026-02-16T20:36:38.940366Z"
   },
   "data.otservbr.global.npc.gnomus.L336.1017": {
     "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
@@ -89086,5 +89086,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:34:08.856323Z"
+  },
+  "data.otservbr.global.npc.appaloosa.L109.1145": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Witaj, |PLAYERNAME|. Domyślam się, że jesteś tu w sprawie {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.253760Z"
+  },
+  "data.otservbr.global.npc.battlemart.L64.1360": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "Dobrze cię widzieć. Zawsze jestem do twojej dyspozycji w {shop options}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.286593Z"
+  },
+  "data.otservbr.global.npc.bozo.L608.916": {
+    "src_hash": "d4fea72808864f72f60dd0127ba12ae7",
+    "text": "Hej, jak tam wisi, |PLAYERNAME|! Co cię tu {here} sprowadza?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.310698Z"
+  },
+  "data.otservbr.global.npc.captain.max.L85.659": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Ahoj, |PLAYERNAME|. Na jeden misja dla the badacz, eksplorator społeczeństwo, co?, nie??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.358741Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L68.1312": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Ahoj, |PLAYERNAME|. Na jeden misja dla the badacz, eksplorator społeczeństwo, co?, nie??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.361111Z"
+  },
+  "data.otservbr.global.npc.henricus.L379.1616": {
+    "src_hash": "ab4890150228de4a1ab57272bb6a4b12",
+    "text": "Pozdrowienia, {believer} |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.638640Z"
+  },
+  "data.otservbr.global.npc.palomino.L110.87": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Witaj, |PLAYERNAME|. Domyślam się, że jesteś tu w sprawie {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:04.871646Z"
+  },
+  "data.otservbr.global.scripts.quests.a.pirates.tail.creaturescripts.ratmiral.death.L13.1979": {
+    "src_hash": "1ed8049e3dc0aeeda50e88c029721d99",
+    "text": "Gratulacje ty otrzymaNie the Rascoohan Strój.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.222570Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.creaturescripts.pale.worm.death.L14.2046": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Gratulacje ty otrzymaNie the Poltergeist Strój.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.307339Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.exalted.core.L71.2000": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "Nieudane do wytwarzać, generować jeden Dusza Core.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.457852Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soul.prism.L80.1993": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "Nieudane do wytwarzać, generować jeden Dusza Core.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.461719Z"
+  },
+  "data.otservbr.global.scripts.quests.the.primal.ordeal.creaturescripts.magma.bubble.death.L17.2173": {
+    "src_hash": "cd0075c418243aa1e4b35fc2b9d9ae29",
+    "text": "Gratulacje ty otrzymaNie the Fire-Bojownik, wojownik, uczestnik walki Strój.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.591481Z"
+  },
+  "src.server.network.protocol.protocolgame.L2875.2412": {
+    "src_hash": "709ccf5a0fa6d2a24cf49aa5b5a65d0e",
+    "text": "Twoja prośba team findera została zaakceptowana.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.808383Z"
+  },
+  "src.server.network.protocol.protocolgame.L2879.2413": {
+    "src_hash": "7a7bf0ee49aea8bde8250cbcc039901a",
+    "text": "Twoja prośba team findera została odrzucona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:05.809913Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L227.68": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Hum, hum! Witamy, mały |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:22.614047Z"
+  },
+  "data.otservbr.global.npc.buddel.L134.211": {
+    "src_hash": "d154b3846fac97a5b216341a5a01fe8c",
+    "text": "Hej, duże chłopaki. Ty? {Here}? *HICK*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:22.615312Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L60.1352": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Znalazłeś miejsce |PLAYERNAME|!! Chwyć hełm głębin i udaj się tam na eksplorację {caves}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:22.616755Z"
+  },
+  "data.otservbr.global.npc.caramellia.L100.981": {
+    "src_hash": "f961c17f457adadb0a12008386d08b17",
+    "text": "Witaj, |PLAYERNAME|. Proszę, zostaw mnie w spokoju w moim {mourning}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:22.617612Z"
+  },
+  "data.otservbr.global.npc.cledwyn.L212.1118": {
+    "src_hash": "90eb7ed81786f0f6628dc1a2bc906919",
+    "text": "Błogosławieństwa, Gracz! Jak mogę służyć? Czy chcesz wymienić kilka {token}, czy też {information} lub {talk}? Czy powinienem {enchant} dla Ciebie pewne przedmioty?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:38.937474Z"
+  },
+  "data.otservbr.global.npc.dane.L62.1214": {
+    "src_hash": "042f38056b2f1831092b50637a9db186",
+    "text": "Witamy w piwnicy z falami, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:38.938194Z"
+  },
+  "data.otservbr.global.npc.gnomaticus.L86.449": {
+    "src_hash": "f313a27e873e04c1c2537e0c6df2ee03",
+    "text": "Cześć! Czy jesteś tu, aby {shooting} przetestować lub {report} swój sukces?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:38.941304Z"
+  },
+  "data.otservbr.global.npc.grizzly.adams.L146.91": {
+    "src_hash": "b941c402448104c20b733c879acba187",
+    "text": "Witamy w '__PH0__' |PLAYERNAME|. Możesz zrobić dla nas {tasks}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:36:42.648372Z"
   }
 }

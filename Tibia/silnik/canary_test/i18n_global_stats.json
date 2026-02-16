@@ -1,8 +1,8 @@
 {
-  "total_cycles": 15,
+  "total_cycles": 16,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-16T21:35:35.255611",
+  "category": "sv",
+  "last_update": "2026-02-16T21:39:02.465273",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,7 +26,7 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
+    "language": "sv",
     "json_file": "server.json",
     "keys_to_translate": 2532,
     "guard_fail": 0,

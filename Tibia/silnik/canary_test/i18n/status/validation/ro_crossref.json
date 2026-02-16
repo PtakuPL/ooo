@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 17.5,
+  "coverage_pct": 18.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:16:44.842324Z",
+  "checked_at": "2026-02-16T20:38:17.564290Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2057,6 +2057,15 @@
       "lang": "Ommm!"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2093,13 +2102,13 @@
       "lang": "Groar"
     },
     {
-      "key": "monster.firestarter.voice_1",
+      "key": "monster.firestarter.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "FIRE!",
-      "pl": "OGIEŃ!",
-      "lang": "FIRE!"
+      "en": "BURN!",
+      "pl": "PŁOŃ!",
+      "lang": "BURN!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2147,6 +2156,15 @@
       "lang": "Grrrrrrr"
     },
     {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
+    },
+    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2172,6 +2190,24 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
+    },
+    {
+      "key": "monster.orc.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc",
+      "pl": "Ork",
+      "lang": "Orc"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2381,6 +2417,15 @@
       "lang": "Delicious!"
     },
     {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
+    },
+    {
       "key": "monster.primitive.voice_6",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2487,6 +2532,15 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
+    },
+    {
+      "key": "monster.orc_sambackpack.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc",
+      "pl": "Ork",
+      "lang": "Orc"
     },
     {
       "key": "monster.the_welter.voice_1",
@@ -3020,15 +3074,6 @@
       "lang": "Snort!"
     },
     {
-      "key": "monster.liodile.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meat!",
-      "pl": "Mięso!",
-      "lang": "Meat!"
-    },
-    {
       "key": "monster.boar_man.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3533,15 +3578,6 @@
       "lang": "Chh..."
     },
     {
-      "key": "npc.a_ghostly_sage.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
-    },
-    {
       "key": "npc.a_restless_soul.greet_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3576,42 +3612,6 @@
       "en": "RISE. ...",
       "pl": "POWSTAŃ....",
       "lang": "RISE. ..."
-    },
-    {
-      "key": "npc.a_starving_dog.greet_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<sniff>",
-      "pl": "<węszy>",
-      "lang": "<sniff>"
-    },
-    {
-      "key": "npc.a_starving_dog.say_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<munch>",
-      "pl": "<przeżuwać>",
-      "lang": "<munch>"
-    },
-    {
-      "key": "npc.al_dee.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, cześć, pa, cześć.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "npc.aldo.say_5",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ok then.",
-      "pl": "Ok wtedy.",
-      "lang": "Ok then."
     }
   ],
   "length_ratio_issues": [

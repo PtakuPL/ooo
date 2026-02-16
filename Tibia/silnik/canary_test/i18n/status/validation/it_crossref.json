@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 8.4,
+  "coverage_pct": 8.8,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:16:40.038927Z",
+  "checked_at": "2026-02-16T20:38:13.655374Z",
   "issues_total": 405,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1949,6 +1949,15 @@
       "lang": "Ommm!"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1983,15 +1992,6 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
-    },
-    {
-      "key": "monster.firestarter.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FIRE!",
-      "pl": "OGIEŃ!",
-      "lang": "FIRE!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2039,6 +2039,15 @@
       "lang": "Grrrrrrr"
     },
     {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
+    },
+    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2073,6 +2082,15 @@
       "en": "Orc",
       "pl": "Ork",
       "lang": "Orc"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2280,6 +2298,15 @@
       "en": "Delicious!",
       "pl": "Wyborny!",
       "lang": "Delicious!"
+    },
+    {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
     },
     {
       "key": "monster.primitive.voice_6",
@@ -3551,15 +3578,6 @@
       "lang": "Finally."
     },
     {
-      "key": "npc.altar.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye.",
-      "pl": "Pa, cześć.",
-      "lang": "Bye."
-    },
-    {
       "key": "npc.andrew_lyze.greet_msg_4",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3594,24 +3612,6 @@
       "en": "<mumbles>",
       "pl": "<mamrota>",
       "lang": "<mumbles>"
-    },
-    {
-      "key": "npc.arkulius.voice_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<mumbles>",
-      "pl": "<mamrota>",
-      "lang": "<mumbles>"
-    },
-    {
-      "key": "npc.ashari.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye!",
-      "pl": "Pa!",
-      "lang": "Bye!"
     }
   ],
   "length_ratio_issues": [

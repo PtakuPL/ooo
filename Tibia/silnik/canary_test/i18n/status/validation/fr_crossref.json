@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:16:38.296710Z",
-  "issues_total": 463,
+  "checked_at": "2026-02-16T20:38:11.843169Z",
+  "issues_total": 464,
   "issues_by_type": {
-    "consistency_in_language": 50,
+    "consistency_in_language": 51,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 13
   },
@@ -360,6 +360,23 @@
         "items:item.305.name",
         "items:item.7352.name",
         "items:item.7764.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "variants": [
+        "fosse piège",
+        "piège"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.1067.name",
+        "items:item.1080.name",
+        "items:item.21971.name",
+        "items:item.21972.name",
+        "items:item.294.name"
       ]
     },
     {
@@ -1213,24 +1230,6 @@
       "lang": "statue"
     },
     {
-      "key": "item.20311.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow globe",
-      "pl": "sNiew globe",
-      "lang": "snow globe"
-    },
-    {
-      "key": "item.20312.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow globe",
-      "pl": "sNiew globe",
-      "lang": "snow globe"
-    },
-    {
       "key": "item.2059.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1258,78 +1257,6 @@
       "lang": "statue"
     },
     {
-      "key": "item.21052.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "switch",
-      "pl": "przełącznik",
-      "lang": "switch"
-    },
-    {
-      "key": "item.21059.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "switch",
-      "pl": "przełącznik",
-      "lang": "switch"
-    },
-    {
-      "key": "item.21174.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mino lance",
-      "pl": "miNie lance",
-      "lang": "mino lance"
-    },
-    {
-      "key": "item.21438.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fountain",
-      "pl": "fontanna",
-      "lang": "fountain"
-    },
-    {
-      "key": "item.21965.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.21971.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pitfall",
-      "pl": "pułapka",
-      "lang": "pitfall"
-    },
-    {
-      "key": "item.21972.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pitfall",
-      "pl": "pułapka",
-      "lang": "pitfall"
-    },
-    {
-      "key": "item.22721.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gold token",
-      "pl": "Złoto token",
-      "lang": "gold token"
-    },
-    {
       "key": "item.22761.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1348,24 +1275,6 @@
       "lang": "vortex"
     },
     {
-      "key": "item.23364.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "rift hole",
-      "pl": "szczelina dziura",
-      "lang": "rift hole"
-    },
-    {
-      "key": "item.2339.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "table",
-      "pl": "stół",
-      "lang": "table"
-    },
-    {
       "key": "item.23574.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1373,141 +1282,6 @@
       "en": "vortex",
       "pl": "wir",
       "lang": "vortex"
-    },
-    {
-      "key": "item.23677.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "music box",
-      "pl": "muzyka pudełko",
-      "lang": "music box"
-    },
-    {
-      "key": "item.23721.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gold pouch",
-      "pl": "Złoto pouch",
-      "lang": "gold pouch"
-    },
-    {
-      "key": "item.23729.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lost time",
-      "pl": "stracony czas",
-      "lang": "lost time"
-    },
-    {
-      "key": "item.23731.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "old note",
-      "pl": "old Niete",
-      "lang": "old note"
-    },
-    {
-      "key": "item.24388.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "rhino hide",
-      "pl": "rhiNie hide",
-      "lang": "rhino hide"
-    },
-    {
-      "key": "item.24389.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "rhino horn",
-      "pl": "rhiNie horn",
-      "lang": "rhino horn"
-    },
-    {
-      "key": "item.24952.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dark stone",
-      "pl": "ciemny kamień",
-      "lang": "dark stone"
-    },
-    {
-      "key": "item.24978.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "coal eyes",
-      "pl": "coal eTak",
-      "lang": "coal eyes"
-    },
-    {
-      "key": "item.25077.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "egg",
-      "pl": "Jajko",
-      "lang": "egg"
-    },
-    {
-      "key": "item.25087.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "egg",
-      "pl": "Jajko",
-      "lang": "egg"
-    },
-    {
-      "key": "item.25509.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fountain",
-      "pl": "fontanna",
-      "lang": "fountain"
-    },
-    {
-      "key": "item.25774.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "guilt",
-      "pl": "Wina",
-      "lang": "guilt"
-    },
-    {
-      "key": "item.25903.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "health keg",
-      "pl": "Zdrowie keg",
-      "lang": "health keg"
-    },
-    {
-      "key": "item.25908.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mana keg",
-      "pl": "Mana keg",
-      "lang": "mana keg"
-    },
-    {
-      "key": "item.2595.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "badger fur",
-      "pl": "borsucze futro",
-      "lang": "badger fur"
     },
     {
       "key": "item.2596.name",
@@ -3211,6 +2985,15 @@
       "lang": "Pirat Mate"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.elf_scout.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3265,6 +3048,15 @@
       "lang": "FIRE!"
     },
     {
+      "key": "monster.firestarter.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BURN!",
+      "pl": "PŁOŃ!",
+      "lang": "BURN!"
+    },
+    {
       "key": "monster.swamp_troll.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3317,6 +3109,15 @@
       "en": "Grrrrrrr",
       "pl": "Wrrrrrr",
       "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
     },
     {
       "key": "monster.minotaur.name",
@@ -3434,6 +3235,15 @@
       "en": "a dwarf",
       "pl": "karzeł",
       "lang": "a dwarf"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.wine_cask.name",
@@ -4388,6 +4198,213 @@
       "en": "zamulosh",
       "pl": "zamulosz",
       "lang": "zamulosh"
+    },
+    {
+      "key": "monster.plagirath.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Plagirath",
+      "pl": "Plagirat",
+      "lang": "Plagirath"
+    },
+    {
+      "key": "monster.plagirath.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Plagirath",
+      "pl": "Plagirat",
+      "lang": "Plagirath"
+    },
+    {
+      "key": "monster.lovely_polar_bear.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.darklight_matter.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*twiggle*",
+      "pl": "*porusza się*",
+      "lang": "*twiggle*"
+    },
+    {
+      "key": "monster.mushroom.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mushroom",
+      "pl": "Grzyb",
+      "lang": "Mushroom"
+    },
+    {
+      "key": "monster.mushroom.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a Mushroom",
+      "pl": "Grzyb",
+      "lang": "a Mushroom"
+    },
+    {
+      "key": "monster.converter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Converter",
+      "pl": "Przetwornik",
+      "lang": "Converter"
+    },
+    {
+      "key": "monster.kalyassa.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Kalyassa",
+      "pl": "Kaliassa",
+      "lang": "Kalyassa"
+    },
+    {
+      "key": "monster.kalyassa.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "kalyassa",
+      "pl": "kaliassa",
+      "lang": "kalyassa"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_a_invu.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.icicle.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Icicle",
+      "pl": "Sopel",
+      "lang": "Icicle"
+    },
+    {
+      "key": "monster.icicle.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "an icicle",
+      "pl": "sopel lodu",
+      "lang": "an icicle"
+    },
+    {
+      "key": "monster.lost_time.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lost Time",
+      "pl": "Stracony czas",
+      "lang": "Lost Time"
+    },
+    {
+      "key": "monster.lost_time.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lost time",
+      "pl": "stracony czas",
+      "lang": "lost time"
+    },
+    {
+      "key": "monster.dragon_egg.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dragon Egg",
+      "pl": "Smocze jajo",
+      "lang": "Dragon Egg"
+    },
+    {
+      "key": "monster.frozen_man.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Frozen Man",
+      "pl": "Zamrożony Człowiek",
+      "lang": "Frozen Man"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_b.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_c.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_d_invu.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_a.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_b_invu.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.cosmic_energy_prism_d.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
+    },
+    {
+      "key": "monster.the_enraged_thorn_knight.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "NOOOOO!",
+      "pl": "NieOOOO!",
+      "lang": "NOOOOO!"
     }
   ],
   "length_ratio_issues": [
@@ -4511,8 +4528,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 27,
-    "skipped": 53,
+    "applied": 23,
+    "skipped": 57,
     "errors": 0
   }
 }

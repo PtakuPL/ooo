@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 6.4,
+  "coverage_pct": 6.9,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:17:41.466891Z",
+  "checked_at": "2026-02-16T20:38:58.016293Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1589,6 +1589,15 @@
       "lang": "manafluid"
     },
     {
+      "key": "item.10201.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dragon scale boots",
+      "pl": "smok łuska buty",
+      "lang": "dragon scale boots"
+    },
+    {
       "key": "item.10203.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1605,6 +1614,69 @@
       "en": "snowman",
       "pl": "sNiewman",
       "lang": "snowman"
+    },
+    {
+      "key": "item.10210.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lizard weapon rack",
+      "pl": "stojak na broń jaszczurczą",
+      "lang": "lizard weapon rack"
+    },
+    {
+      "key": "item.10211.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lizard weapon rack",
+      "pl": "stojak na broń jaszczurczą",
+      "lang": "lizard weapon rack"
+    },
+    {
+      "key": "item.10216.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dragon statue kit",
+      "pl": "zestaw posągu smoka",
+      "lang": "dragon statue kit"
+    },
+    {
+      "key": "item.10221.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead killer caiman",
+      "pl": "martwy kajman zabójczy",
+      "lang": "dead killer caiman"
+    },
+    {
+      "key": "item.10222.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead killer caiman",
+      "pl": "martwy kajman zabójczy",
+      "lang": "dead killer caiman"
+    },
+    {
+      "key": "item.10223.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead killer caiman",
+      "pl": "martwy kajman zabójczy",
+      "lang": "dead killer caiman"
+    },
+    {
+      "key": "item.10224.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead killer caiman",
+      "pl": "martwy kajman zabójczy",
+      "lang": "dead killer caiman"
     },
     {
       "key": "item.30215.name",
@@ -2111,6 +2183,15 @@
       "lang": "Ommm!"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2154,6 +2235,15 @@
       "en": "FIRE!",
       "pl": "OGIEŃ!",
       "lang": "FIRE!"
+    },
+    {
+      "key": "monster.firestarter.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BURN!",
+      "pl": "PŁOŃ!",
+      "lang": "BURN!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2201,6 +2291,15 @@
       "lang": "Grrrrrrr"
     },
     {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
+    },
+    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2235,6 +2334,15 @@
       "en": "Orc",
       "pl": "Ork",
       "lang": "Orc"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2451,6 +2559,15 @@
       "en": "Delicious!",
       "pl": "Wyborny!",
       "lang": "Delicious!"
+    },
+    {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
     },
     {
       "key": "monster.primitive.voice_6",
@@ -3495,123 +3612,6 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
-    },
-    {
-      "key": "monster.troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, bugs",
-      "pl": "Hmmm, błędy",
-      "lang": "Hmmm, bugs"
-    },
-    {
-      "key": "monster.island_troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.wolf.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.cave_rat.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meep!",
-      "pl": "Mip!",
-      "lang": "Meep!"
-    },
-    {
-      "key": "monster.assassin.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Die!",
-      "pl": "UMIERAĆ!",
-      "lang": "Die!"
-    },
-    {
-      "key": "monster.wasp.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
-    },
-    {
-      "key": "monster.black_knight.voice_8",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "NO MERCY!",
-      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
-      "lang": "NO MERCY!"
-    },
-    {
-      "key": "monster.hydra.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FCHHHHH",
-      "pl": "Fchhhh",
-      "lang": "FCHHHHH"
-    },
-    {
-      "key": "monster.wyrm.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GRRR",
-      "pl": "Wrr",
-      "lang": "GRRR"
-    },
-    {
-      "key": "monster.dragon.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FCHHHHH",
-      "pl": "Fchhhh",
-      "lang": "FCHHHHH"
-    },
-    {
-      "key": "npc.a_dragon_mother.greet_msg_2",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh...",
-      "pl": "O...",
-      "lang": "Oh..."
     }
   ],
   "length_ratio_issues": [

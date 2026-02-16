@@ -5846,5 +5846,405 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:30:57.931590Z"
+  },
+  "data.otservbr.global.npc.a.bearded.woman.L144.674": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "FÅ MIG HÄRFÖR! NU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.058397Z"
+  },
+  "data.otservbr.global.npc.a.beautiful.girl.L53.318": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Så du har kommit, |PLAYERNAME|. Jag hoppades att du inte skulle...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.059150Z"
+  },
+  "data.otservbr.global.npc.a.beggar.L82.1060": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Hej! Vad är det, vad gör du {want}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.059790Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L126.462": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.060754Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L127.463": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.061257Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L64.461": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.061797Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L57.884": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.062190Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L79.885": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.062764Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L80.886": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.063327Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L100.1108": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.063827Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L57.1106": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.064360Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L99.1107": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.064893Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L108.265": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.065427Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L109.266": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.065920Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L64.264": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.066366Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L61.1104": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.068255Z"
+  },
+  "data.otservbr.global.npc.altar.L84.731": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.072959Z"
+  },
+  "data.otservbr.global.npc.alyxo.L53.795": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.073507Z"
+  },
+  "data.otservbr.global.npc.alyxo.L56.796": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.074228Z"
+  },
+  "data.otservbr.global.npc.alyxo.L59.797": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.074671Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L264.519": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.076121Z"
+  },
+  "data.otservbr.global.npc.atur.L77.728": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.079413Z"
+  },
+  "data.otservbr.global.npc.atur.L78.729": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.079864Z"
+  },
+  "data.otservbr.global.npc.baxter.L61.1237": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LÄNGE LEVE KUNGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.082683Z"
+  },
+  "data.otservbr.global.npc.baxter.L62.1238": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LÄNGE LEVE KUNGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.083271Z"
+  },
+  "data.otservbr.global.npc.billy.L145.1385": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.084413Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L73.428": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.085341Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L94.1260": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.086037Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L135.320": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.088580Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L65.994": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.091755Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L66.995": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.092114Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L190.192": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.094439Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L191.193": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.095217Z"
+  },
+  "data.otservbr.global.npc.captain.max.L86.660": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.096678Z"
+  },
+  "data.otservbr.global.npc.captain.max.L87.661": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.097106Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L69.1313": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.097680Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L70.1314": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.098117Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L107.1471": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.098828Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L98.708": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.099780Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L62.1026": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.100340Z"
+  },
+  "data.otservbr.global.npc.cassino.L251.350": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.102182Z"
+  },
+  "data.otservbr.global.npc.cassino.L252.351": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.102576Z"
+  },
+  "data.otservbr.global.npc.charles.L143.1491": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.103867Z"
+  },
+  "data.otservbr.global.npc.charles.L144.1492": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.104249Z"
+  },
+  "data.otservbr.global.npc.charlotta.L86.902": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.104849Z"
+  },
+  "data.otservbr.global.npc.chondur.L320.195": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.106381Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L186.167": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.109707Z"
+  },
+  "data.otservbr.global.npc.duncan.L185.163": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.112066Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L77.1494": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.112840Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L78.1495": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:35:56.113301Z"
   }
 }

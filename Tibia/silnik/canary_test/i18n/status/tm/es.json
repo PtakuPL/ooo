@@ -142198,5 +142198,197 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:29:24.403014Z"
+  },
+  "data.otservbr.global.npc.norma.L188.1082": {
+    "src_hash": "f5de40889c1308575b28481de36b712b",
+    "text": "¡Tómate todo el tiempo que necesites para decidir lo que quieres!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.481021Z"
+  },
+  "data.otservbr.global.npc.norma.L189.1083": {
+    "src_hash": "0cac4d1cea43c916fc4bd57e530b7d65",
+    "text": "¡Bienvenidos, bienvenidos! ¡Toma asiento! Si te gusta una bebida o algo de comer, ¡pídeme un {trade}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.483093Z"
+  },
+  "data.otservbr.global.npc.nurik.L105.126": {
+    "src_hash": "9bd986cd014ae0ad0aa389009c173731",
+    "text": "Es... ¡Eres TÚ! ¡¡Por fin!! Entonces, ¿cuál es esa propuesta especial que te gustaría hacer, amigo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.485160Z"
+  },
+  "data.otservbr.global.npc.nydala.L58.953": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Échale un vistazo. La mayoría de los muebles vienen en prácticos kits. Utilízalos en tu casa para montar los muebles. ¿Quieres ver sólo un determinado {type} de muebles?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.488576Z"
+  },
+  "data.otservbr.global.npc.obi.L130.248": {
+    "src_hash": "523cd6ce4a52d1af40b6b044272aa4f7",
+    "text": "Adiós, espero que haya quedado satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.490758Z"
+  },
+  "data.otservbr.global.npc.obi.L132.250": {
+    "src_hash": "2a98817a7b2a2bcf82dae5dee7e8832d",
+    "text": "¡Hola, hola, |PLAYERNAME|! ¡Por favor, entra, mira y compra! Si te gusta ver mis ofertas ¡pídeme un {trade}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.493237Z"
+  },
+  "data.otservbr.global.npc.oblivion.L102.1283": {
+    "src_hash": "17013780dcf437535c625c0047b89e1a",
+    "text": "Una sombra te precedió. ¿Quieres?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.495236Z"
+  },
+  "data.otservbr.global.npc.oldrak.L197.1032": {
+    "src_hash": "2be92241cfbf74f6d79f192f239034d5",
+    "text": "¡Bienvenido |PLAYERNAME|! Pocas veces puedo darle la bienvenida a {visitors} estos días.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.500625Z"
+  },
+  "data.otservbr.global.npc.oldrak.L198.1033": {
+    "src_hash": "506c058452ba9552dda4a39f8521ceae",
+    "text": "Tenga cuidado, es peligroso ahí fuera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.502317Z"
+  },
+  "data.otservbr.global.npc.olrik.L87.581": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hola. ¿Cómo puedo ayudarte |PLAYERNAME|? Pídeme un {trade} si quieres comprar algo. También puedo explicar el sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.504888Z"
+  },
+  "data.otservbr.global.npc.olrik.L88.582": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.506490Z"
+  },
+  "data.otservbr.global.npc.olrik.L89.583": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aquí. No olvides que también debes comprar una etiqueta si quieres enviar un paquete. Escriba siempre el nombre del {receiver} en la primera línea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.508789Z"
+  },
+  "data.otservbr.global.npc.omrabas.L546.362": {
+    "src_hash": "21765fb675cba1b220281b1231e9416d",
+    "text": "¡Por fin un visitante! Bienvenidos a mi... humilde morada. ¿{Scroll} o {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.510816Z"
+  },
+  "data.otservbr.global.npc.one.eyed.joe.L81.565": {
+    "src_hash": "1f1d51aa20620a0287a6a171d60e552e",
+    "text": "¡Bien hecho! Pero debes saber esto: el cristal maldito parece regenerarse con el tiempo. Podría ser necesario volver y repetir lo que hayas hecho allí abajo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.512896Z"
+  },
+  "data.otservbr.global.npc.one.eyed.joe.L83.566": {
+    "src_hash": "953e2aa9237e6c8ffb939d2ee7cc7205",
+    "text": "Hola. Lo siento, casi no te noté. Estoy un poco nervioso. El espeluznante {sounds} ahí abajo, ¿sabes?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.514863Z"
+  },
+  "data.otservbr.global.npc.ongulf.L254.584": {
+    "src_hash": "a0dd10394fb79dd06d40186e6a2923f6",
+    "text": "Hola, |PLAYERNAME|. Has llegado en un buen momento para nuestro {project}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.518370Z"
+  },
+  "data.otservbr.global.npc.ortheus.L110.1416": {
+    "src_hash": "04170562cc89cde1fc309db374e5b832",
+    "text": "¿Cuál es tu negocio aquí con {magicians}, |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.521086Z"
+  },
+  "data.otservbr.global.npc.oswald.L122.1196": {
+    "src_hash": "7f70f54799d564494fb5f4badc65ed4b",
+    "text": "Hola |PLAYERNAME|. ¿Qué es?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.522758Z"
+  },
+  "data.otservbr.global.npc.oswald.L124.1198": {
+    "src_hash": "1c93c857f61db28d9ea06910e5341fed",
+    "text": "Adiós y no vuelvas demasiado pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.525002Z"
+  },
+  "data.otservbr.global.npc.padreia.L135.554": {
+    "src_hash": "a11c897f22aded6c60d6186f43cd1616",
+    "text": "Bienvenido a nuestro humilde gremio, vagabundo. ¿Puedo serte de alguna ayuda?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.527011Z"
+  },
+  "data.otservbr.global.npc.partos.L85.1428": {
+    "src_hash": "c0f12378bf19857e65a0143b252dfd87",
+    "text": "Bienvenido a mi pequeño reino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.531195Z"
+  },
+  "data.otservbr.global.npc.partos.L86.1429": {
+    "src_hash": "dd16c9711dd81d5fbce2d2e2960d2881",
+    "text": "Adiós, visítame de nuevo. Estaré aquí, prometido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.532902Z"
+  },
+  "data.otservbr.global.npc.partos.L87.1430": {
+    "src_hash": "dd16c9711dd81d5fbce2d2e2960d2881",
+    "text": "Adiós, visítame de nuevo. Estaré aquí, prometido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.534674Z"
+  },
+  "data.otservbr.global.npc.paulie.L66.1571": {
+    "src_hash": "09bbf6e092576a5fdc8b3ccb2c4ac890",
+    "text": "¡Bienvenido |PLAYERNAME|! Oferta especial para recién llegados, ¡solo hoy! Deposite algo de dinero, ¡o {deposit ALL} de su dinero! - ¡Y consigue 50 de oro gratis!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:59.540021Z"
   }
 }

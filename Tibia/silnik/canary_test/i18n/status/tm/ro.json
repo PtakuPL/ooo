@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T21:23:14.608516Z"
+    "updated_at": "2026-02-16T21:34:25.394768Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -11846,5 +11846,101 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:30:05.067504Z"
+  },
+  "item.10477.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "Un pahar forjat de dragonul Khax care reprezintă toată cunoștințele și înțelepciunea TibiaVenezuela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:29.376898Z"
+  },
+  "item.107.desc": {
+    "src_hash": "f3181b5d350c388079a2884540cb8a12",
+    "text": "Conține mirosul unui slime proaspăt ucis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:29.377443Z"
+  },
+  "item.10798.desc": {
+    "src_hash": "545f69311c2761ed2f9012a9a019e024",
+    "text": "A fost premiat de Tibiopedia.pl",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:32.849960Z"
+  },
+  "item.10799.desc": {
+    "src_hash": "545f69311c2761ed2f9012a9a019e024",
+    "text": "A fost premiat de Tibiopedia.pl",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:32.850642Z"
+  },
+  "item.10800.desc": {
+    "src_hash": "4452ba3b4d3fe3e8d4e9d2664bae1dfb",
+    "text": "Nu există o modalitate mai bună de a scăpa de datele super secrete. Acordat de TibiaSpy.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:32.851600Z"
+  },
+  "item.10801.desc": {
+    "src_hash": "4452ba3b4d3fe3e8d4e9d2664bae1dfb",
+    "text": "Nu există o modalitate mai bună de a scăpa de datele super secrete. Acordat de TibiaSpy.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:32.852514Z"
+  },
+  "item.10817.desc": {
+    "src_hash": "2f2d4b01c968aa63d42089b564b3d14d",
+    "text": "Acele condimente au fost adunate în toată lumea Tibiană",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:35.709077Z"
+  },
+  "item.10818.desc": {
+    "src_hash": "2f2d4b01c968aa63d42089b564b3d14d",
+    "text": "Acele condimente au fost adunate în toată lumea Tibiană",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:35.709766Z"
+  },
+  "item.110.desc": {
+    "src_hash": "21bf4007e93de4aaf5a95404b4602185",
+    "text": "Bozo ți-a dat-o să aduni anumite ingrediente secrete.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:35.710453Z"
+  },
+  "item.11328.desc": {
+    "src_hash": "a15684d18ef485ef77dd0b8b218583a5",
+    "text": "Această ladă a fost marcată cu simboluri de șopârlă. Este suficient de mare pentru ca o persoană adultă să se potrivească",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:35.711785Z"
+  },
+  "item.11329.desc": {
+    "src_hash": "aa867384ed1d44f7e7533cd9ebaf92c5",
+    "text": "Acest lut a fost săpat din templul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:37.752444Z"
+  },
+  "item.11331.desc": {
+    "src_hash": "89f4f1c1c993c508cbe01c1163c5d0c4",
+    "text": "Acest vas a fost realizat din lemn sacru și în prezent este netratat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:34:37.753120Z"
   }
 }

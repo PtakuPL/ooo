@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T22:42:02.851583Z",
-  "cycle_counter": 850,
-  "last_target_key": "pl:books.json",
-  "last_pending_total": 1224,
+  "timestamp": "2026-02-16T22:43:44.769642Z",
+  "cycle_counter": 852,
+  "last_target_key": "es:books.json",
+  "last_pending_total": 100,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 197,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 11,
+  "cache_cycle": 12,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,

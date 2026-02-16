@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T22:42:17.004994Z",
+  "timestamp": "2026-02-16T22:43:58.483723Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,7 +67,7 @@
   ],
   "entries_total": 708,
   "entries_by_lang": {
-    "es": 296,
+    "es": 294,
     "pl": 169,
     "cs": 641,
     "de": 659,
@@ -165,14 +165,14 @@
     },
     {
       "lang": "es",
-      "json_file": "otclient_modules.json",
+      "json_file": "scripts.json",
       "identical_to_en": 17,
       "domain_priority": 9
     },
     {
       "lang": "es",
-      "json_file": "scripts.json",
-      "identical_to_en": 17,
+      "json_file": "otclient_modules.json",
+      "identical_to_en": 15,
       "domain_priority": 9
     },
     {

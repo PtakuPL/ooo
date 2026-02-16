@@ -22617,11 +22617,11 @@
   },
   "otclient_modules.character_otui.tr_85": {
     "src_hash": "0a38e7286ebbb560354992b3ce62be67",
-    "text": "Food",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Alimento",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T05:42:22.924329Z"
+    "updated_at": "2026-02-16T22:43:20.058886Z"
   },
   "otclient_modules.character_otui.tr_86": {
     "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
@@ -22793,19 +22793,19 @@
   },
   "otclient_modules.charms.tr_64": {
     "src_hash": "738ca3cb200c27b4996ed320eee15705",
-    "text": "Curse",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Maldición",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T05:42:22.962159Z"
+    "updated_at": "2026-02-16T22:43:20.061004Z"
   },
   "otclient_modules.charms1410_otui.tr_4": {
     "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
-    "text": "MiNor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "El encanto menor hace eco\nSe obtiene desbloqueando o mejorando un amuleto importante y promocionando a tu personaje.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T05:42:22.968770Z"
+    "updated_at": "2026-02-16T22:43:20.068899Z"
   },
   "otclient_modules.charms1410_otui.tr_9": {
     "src_hash": "a7c19032df9d43b8c62a563d6c72e6c3",
@@ -23529,11 +23529,11 @@
   },
   "otclient_modules.game_cyclopedia_otui.tr_3": {
     "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
-    "text": "MiNor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "El encanto menor hace eco\nSe obtiene desbloqueando o mejorando un amuleto importante y promocionando a tu personaje.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T05:56:03.020514Z"
+    "updated_at": "2026-02-16T22:43:23.876257Z"
   },
   "otclient_modules.game_cyclopedia_otui.tr_6": {
     "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
@@ -24585,11 +24585,11 @@
   },
   "otclient_modules.imbuing_otui.tr_7": {
     "src_hash": "fd9c5ad613abbde3df710701444e0f75",
-    "text": "Click here to carry out the selected imbuement. This will consume the required astral sources and Oro.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Haga clic aquí para realizar la imbución seleccionada. Esto consumirá las fuentes astrales y el oro necesarios.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T06:13:39.430914Z"
+    "updated_at": "2026-02-16T22:43:35.264800Z"
   },
   "otclient_modules.inventory_otui.tr_1": {
     "src_hash": "11a755d598c0c417f9a36758c3da7481",
@@ -24689,11 +24689,11 @@
   },
   "otclient_modules.items.tr_27": {
     "src_hash": "0a38e7286ebbb560354992b3ce62be67",
-    "text": "Food",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Alimento",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T06:17:32.025019Z"
+    "updated_at": "2026-02-16T22:43:35.265306Z"
   },
   "otclient_modules.items.tr_3": {
     "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
@@ -24897,11 +24897,11 @@
   },
   "otclient_modules.npctrade_otui.tr_15": {
     "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
-    "text": "List of items that you're able to Vender",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Lista de artículos que puedes vender",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T06:17:32.096281Z"
+    "updated_at": "2026-02-16T22:43:38.149643Z"
   },
   "otclient_modules.npctrade_otui.tr_17": {
     "src_hash": "090951e6353119d15cea658bfd978777",
@@ -143238,5 +143238,13 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:41:57.428561Z"
+  },
+  "otclient_modules.style_otui.tr_4": {
+    "src_hash": "673722e49f6904cea7636bb8e1a03eae",
+    "text": "Monedas de oro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:43:14.885667Z"
   }
 }

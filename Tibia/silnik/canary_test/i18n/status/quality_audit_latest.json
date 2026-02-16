@@ -1,17 +1,130 @@
 {
-  "timestamp": "2026-02-16T23:50:19.935413Z",
+  "timestamp": "2026-02-16T23:51:28.552124Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 23,
   "issues_by_type": {
-    "identical_to_en_exempt": 11,
+    "identical_to_en": 16,
+    "identical_to_en_exempt": 15,
     "artifact_token": 7,
-    "suspicious_log_high": 117,
-    "suspicious_log_critical": 77,
-    "suspicious_log_low": 6,
+    "suspicious_log_high": 104,
+    "suspicious_log_low": 49,
+    "suspicious_log_critical": 47,
     "suspicious_rejected_critical": 159,
     "suspicious_rejected_high": 41
   },
   "issues": [
+    {
+      "key": "raid.lizards.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Lizards",
+      "translated": "Lizards"
+    },
+    {
+      "key": "raid.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.sheng.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Sheng",
+      "translated": "Sheng"
+    },
+    {
+      "key": "raid.munster.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "raid.teleskor.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "raid.furyosa.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "raid.chayenne.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "raid.omrafir.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.yeti.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "raid.gargoyle.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "raid.nomad.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "raid.cobra.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.terramite.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -63,5 +176,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

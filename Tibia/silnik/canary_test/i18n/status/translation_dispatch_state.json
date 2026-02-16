@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-16T23:49:48.295366Z",
-  "cycle_counter": 979,
-  "last_target_key": "ro:scripts.json",
-  "last_pending_total": 2003,
+  "timestamp": "2026-02-16T23:51:10.306882Z",
+  "cycle_counter": 982,
+  "last_target_key": "ro:raids.json",
+  "last_pending_total": 141,
   "last_tier": 2,
-  "last_cat_priority": 6,
+  "last_cat_priority": 8,
   "candidates_count": 196,
   "active_candidates_count": 188,
   "skipped_backoff": 8,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 55,
+  "cache_cycle": 56,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -291,8 +291,8 @@
     "sv:server.json": 0,
     "ro:spells.json": 0,
     "ro:quests.json": 0,
-    "it:actions.json": 1,
-    "ru:raids.json": 1,
+    "it:actions.json": 2,
+    "ru:raids.json": 2,
     "ro:actions.json": 0,
     "ro:raids.json": 0,
     "it:raids.json": 0,
@@ -359,9 +359,9 @@
     "lang_completion": {
       "pl": 44.13,
       "es": 74.14,
-      "ru": 35.79,
-      "ro": 20.01,
-      "it": 11.04,
+      "ru": 35.85,
+      "ro": 20.1,
+      "it": 11.13,
       "sr": 9.95,
       "sv": 7.92
     }

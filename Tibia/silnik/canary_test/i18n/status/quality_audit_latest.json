@@ -1,206 +1,16 @@
 {
-  "timestamp": "2026-02-16T20:46:46.126323Z",
+  "timestamp": "2026-02-16T20:47:28.323237Z",
   "checked_entries": 100,
-  "issues_found": 34,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 26,
-    "identical_to_en_exempt": 13,
-    "artifact_token": 8,
-    "suspicious_log_high": 130,
-    "suspicious_log_critical": 70,
+    "identical_to_en_exempt": 11,
+    "artifact_token": 7,
+    "suspicious_log_critical": 97,
+    "suspicious_log_high": 103,
     "suspicious_rejected_critical": 33,
     "suspicious_rejected_high": 13
   },
   "issues": [
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.feroxa2.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "monster.dracola.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DOOMED!",
-      "translated": "¡ESTÁIS TODOS CONDENADOS!"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -252,5 +62,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

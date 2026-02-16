@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16T23:28:01.644613Z",
-  "cycle": 38,
-  "language": "ru",
-  "json_file": "talkactions.json",
-  "translated": 45,
+  "timestamp": "2026-02-16T23:30:01.074170Z",
+  "cycle": 39,
+  "language": "sr",
+  "json_file": "spells.json",
+  "translated": 50,
   "placeholders": 0,
-  "guard_fail": 5,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 16
+  "strict_skipped_done": 0
 }

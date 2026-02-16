@@ -19734,5 +19734,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:26:40.977030Z"
+  },
+  "achievement.1.name": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Castlemania",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:25.072301Z"
+  },
+  "achievement.1.description": {
+    "src_hash": "740e9f42975916867c58c567a8a0fbb1",
+    "text": "Ai un ochi pentru locurile suspecte și îți place să citești jurnalele altor oameni, în special cele cu povești cu vampiri în ele. De asemenea, ești un colecționar și un explorator dedicat de jetoane. Respect!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:25.073093Z"
+  },
+  "achievement.4.description": {
+    "src_hash": "0675c378fd6137029a5f61bd1eb3b5c4",
+    "text": "Ai fost întotdeauna un rebel - recunoaște-o! Aprovizionarea prizonierilor, îngrijirea proscrișilor, furtul de la bogați și dăruirea săracilor - nu așteptați, asta era o altă poveste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:25.073782Z"
+  },
+  "achievement.5.description": {
+    "src_hash": "1188d91fa4e9bbced579775219f60653",
+    "text": "Şuncile simple şi pâinea te fac doar să râzi. Ești stăpânul extraordinarului, topitor de brânză, friteuză de aripi de liliac și agitator de shake-uri. Delicios!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:25.074527Z"
+  },
+  "achievement.6.description": {
+    "src_hash": "3e14310d947d545e4a21da6397788c33",
+    "text": "Ai găsit o sută de perle frumoase în scoici mari. Până acum acel colier ar trebui să fie terminat - și sperăm că nu ți-ai strâns degetele prea des în timpul procesului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:25.075224Z"
+  },
+  "achievement.7.description": {
+    "src_hash": "27603598d2983f39ab0090ebb0fd954d",
+    "text": "Dacă cineva a pierdut un lucru întâmplător într-un loc întâmplător, probabil că ești o persoană bună să întrebi și să mergi să-l găsești, chiar dacă nu știi ce și unde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:32.901556Z"
+  },
+  "achievement.8.description": {
+    "src_hash": "d7f9ca4429a65e439ad6d956d27ee0a1",
+    "text": "Nu îți pasă de regulile pe care alții le stabilesc și modelează lumea după bunul tău plac. După ce a lăsat în urmă convenții și morale fără sens, prețuiești doar puterea pe care o deții. Ești stăpânul destinului tău și luptă pentru a curăța lumea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:32.911789Z"
+  },
+  "achievement.9.description": {
+    "src_hash": "b46e03cea86a74a72a3b2c9430efcfb8",
+    "text": "Te-ai dovedit - nu numai în visele tale - și ai o minte puternică și spirituală. Lupta ta curajoasă împotriva demonilor și a ciumei strigoilor ți-a acordat cel mai înalt și mai respectat rang dintre Cavalerii de Coșmar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:32.915702Z"
+  },
+  "achievement.10.description": {
+    "src_hash": "c5f4538a8ee340724486d2cfb36400aa",
+    "text": "Urmăriți calea viselor și a responsabilității fără putere centrată pe sine. Eliberat de lăcomie și egoism, îi ajuți pe alții fără a te aștepta la o recompensă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:32.917036Z"
+  },
+  "achievement.11.description": {
+    "src_hash": "b70bed37bcfecf42d7772965eed5f178",
+    "text": "Te-ai alăturat fraților de os strigoi - făcând moartea dușmanul tău și, de asemenea, arma ta. A devora ceea ce este slab și a lăsa spațiu pentru ceea ce este puternic este scopul tău principal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:40.264901Z"
+  },
+  "achievement.12.description": {
+    "src_hash": "25c4e54b14bf563713193caf9577b2a6",
+    "text": "Ai călătorit prin lume pentru o rugăciune aproape fără sens - dar cel puțin nu trebuie să faci asta din nou și poți obține un nou țăruș binecuvântat într-o clipă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:40.265588Z"
+  },
+  "achievement.13.description": {
+    "src_hash": "cb44699ab33f889bb9bc0b39654471d2",
+    "text": "Ești un comerciant talentat, care este capabil să se ocupe de mărfuri cu grijă, găsește oferte bune și dezgroapă rareori din când în când. Niciodată nu întârziați să finalizați o comandă, sunteți un comerciant de încredere - cel puțin în ochii lui Rashid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:40.266659Z"
+  },
+  "achievement.14.description": {
+    "src_hash": "e56cc87a57478633b370f6c399a17586",
+    "text": "Ai găsit și ai luat o înghițitură din Fântâna Vieții. Am crezut că nu ți-a oferit viața veșnică, te simți schimbat și cumva împăcat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:40.267288Z"
+  },
+  "achievement.15.description": {
+    "src_hash": "04eba6738e582460f351b4da0541bf2b",
+    "text": "Ai călătorit pe tărâmul suprarealist al sferelor elementare, l-ai chemat și ucis pe Stăpânul Elementelor, totul pentru a recupera materia neutră. Și oricât de curajos ai fost, nu ai fi putut face asta fără echipa ta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:40.268104Z"
+  },
+  "achievement.16.description": {
+    "src_hash": "f7c0845acc0957699b11544a8f9b39dc",
+    "text": "Ați reinterpretat Taming of the Shrew pe o plajă și ați dovedit că puteți face față destul de bine fetelor capricioase. Cu sau fără cozi de pește.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:46.633895Z"
+  },
+  "achievement.17.description": {
+    "src_hash": "2837f13089c53fdc13a5e5f24da7dec6",
+    "text": "Când faci ceva, faci bine. Ai o opinie și o susții - și nimeni nu te va putea convinge de contrariul. Pe o notă laterală, ești puțin pe partea brutală și orientată spre război, dar asta nu este un lucru rău, nu-i așa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:46.634842Z"
+  },
+  "achievement.18.description": {
+    "src_hash": "391c3a169ccf83f20a1a0ef334ee550f",
+    "text": "Ești menținerea păcii și ascultă ce au de spus oamenii mici. Te-ai hotărât și știi pe cine să ajuți și din ce motive - și o faci în mod constant. Războiul tău se duce mai degrabă cu rațiune decât cu arme.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:46.635679Z"
+  },
+  "achievement.19.description": {
+    "src_hash": "be793613eb297e7440c0b053c23aac59",
+    "text": "Sari de orice ocazie pentru o provocare de vânătoare care ți se oferă și îndeplinești acele sarcini cu o precizie mortală. Ești un vânător la inimă și un membru valoros al Societății Paw & Fur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:46.636461Z"
+  },
+  "achievement.20.name": {
+    "src_hash": "f4f7985b69acaebc7c2973b30f734182",
+    "text": "Vânător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:46.636656Z"
+  },
+  "achievement.20.description": {
+    "src_hash": "f582cb3a61b3736efb6f7309257b49da",
+    "text": "Sunteți familiarizat cu sarcinile de vânătoare și ați îndeplinit deja câteva. Urmează o carieră strălucitoare ca vânător pentru societatea Paw & Fur!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:54.857748Z"
+  },
+  "achievement.21.description": {
+    "src_hash": "6a89f9d165b3afd26104a748cb1f9d89",
+    "text": "Pentru tine, un sărut este mai mult decât o simplă atingere a buzelor. Săruți fecioare și deadbeats deopotrivă cu o afecțiune de neegalat și te-ai confruntat cu moartea și renașterea prin sărutul reginei banshee. Norocosi sunt cei care pot impartasi cu tine un moment atat de intim!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:54.858824Z"
+  },
+  "achievement.22.description": {
+    "src_hash": "3da7b3ab8d934c0a182f9dd3c59ac7e9",
+    "text": "Te-ai dovedit ca un membru demn al 'family' și ai îndeplinit cu succes numeroase misiuni de spionaj pentru 'uncle' al tău pentru a sprijini comercianții Venoreeni și obiectivele lor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:54.859803Z"
+  },
+  "achievement.23.description": {
+    "src_hash": "615e0d5b3eab0e23b899ac4f2e80479f",
+    "text": "Puterea fetelor! Indiferent dacă ești femeie sau nu, ai dovedit loialitate absolută și dorința de a-ți pune viața în joc pentru brigada de fete din Carlin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:54.860528Z"
+  },
+  "achievement.24.description": {
+    "src_hash": "c4c6049e01f2e11201af76f4d22b100f",
+    "text": "Conspirațiile și secretele deschise sunt pâinea ta zilnică. Ai arătat loialitate față de coroana thailandeză prin curajul tău atunci când te confrunți cu inamicii și termini misiuni de spionaj. Ești un excelent agent de teren al TBI.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:02.059949Z"
+  },
+  "achievement.25.description": {
+    "src_hash": "229cac5c53e6ffac9741c2338d2601eb",
+    "text": "Împachetează-ți echipamentul de spionaj și pregătește-te pentru niște misiuni periculoase în serviciul unei agenții secrete. Ai arătat că vrei - dar poți să o faci cu adevărat? Timpul va spune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:02.060765Z"
+  },
+  "achievement.26.description": {
+    "src_hash": "511d1056a4ef03124d0f9754539c1e67",
+    "text": "Ești un aspirant mago-mecanic. Știința și magia funcționează bine împreună în ochii tăi - și chiar dacă probabil ai livrat nenumărate taxe greșite în timp ce lucrați pentru Telas, s-ar putea să aveți suficiente cunoștințe pentru a vă construi propriul golem acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:02.061673Z"
+  },
+  "achievement.27.description": {
+    "src_hash": "9ccfcd08e1aef594cfe17cd28e9b82d2",
+    "text": "Poezii, versuri, cântece și rime pe care le-ați recitat de multe ori. Ai trecut de ușa criptică, povestitor al tradițiilor antice. Chiar și spiridușii pe care i-ai lăsat impresionați, așa că se pare că ești cu adevărat binecuvântat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:02.062517Z"
+  },
+  "achievement.28.description": {
+    "src_hash": "f8d5cf3d3147edad7bbf26efbbd59186",
+    "text": "Poți să te descurci cu orice instrument muzical care ți se oferă - și chiar să reușești să produci un sunet plăcut cu el. Sunteți un invitat binevenit și un animator în majoritatea tavernelor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:02.063219Z"
+  },
+  "achievement.29.description": {
+    "src_hash": "b4f2c90efb0ccb79dce18ad1c8f02572",
+    "text": "Știi că Banuta îi place dosul mâinii și ești bun la distrugerea sicrie și urne. Nici vederea unor urme gigantice nu te împiedică să explorezi zone necunoscute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:09.608842Z"
+  },
+  "achievement.30.description": {
+    "src_hash": "a0917e973f1c35f0233ce5cfd68f30b4",
+    "text": "Harta ta este prietena ta — mereu în buzunarul din spate și acoperită cu nenumărate semne de locații interesante și utile. S-ar putea spune că s-ar putea să fii pierdut fără ea - dar, din fericire, nu ai cum să ți-o iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:09.609918Z"
+  },
+  "achievement.32.description": {
+    "src_hash": "20b988aac29e27c26eec9c8256ddabd2",
+    "text": "Chiar dacă Efreet te-a întâmpinat doar fără tragere de inimă și te-a privit ca „doar un om” de ceva timp, ai reușit să-l impresionezi pe Malor și i-ai câștigat respectul și opțiunile de schimb cu djinii verzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:09.611693Z"
+  },
+  "achievement.33.description": {
+    "src_hash": "1c6fff7a4c743f2a409ea69ba581e37a",
+    "text": "Visele - sunt realitatea ta? Viziuni ciudate, ticăitul ceasurilor, mersul la culcare și trezirea în altă parte - asta a fost o excursie, dar ești aproape sigur că ți-a plăcut de fapt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:16.806802Z"
+  },
+  "achievement.34.description": {
+    "src_hash": "248af42ee7f522116370517a97a396d2",
+    "text": "Ai fost în locuri în care majoritatea oamenilor nici măcar nu știu numele. Colectarea probelor botanice, zoologice și ectoplasmatice este treaba ta zilnică și ești mereu pregătit să descoperi noi orizonturi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:16.807557Z"
+  },
+  "achievement.36.description": {
+    "src_hash": "655a8075a2d43bb9dee1f5b1e640d2be",
+    "text": "Wow - ce a fost asta? Nu știi cum ai ajuns aici, dar cumva ai făcut-o. Cum să ajungi de la Beregar la Kazordoon într-o clipă - asta e ceva pe care acelor pitici le-ar plăcea să știe, dar nu ești sigur cum să-l reproduci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:16.808493Z"
+  },
+  "achievement.37.description": {
+    "src_hash": "53439cb1241fbedd492a1c97544e0243",
+    "text": "Călduț, blănos și drăgălaș – deși același urs pe care tocmai l-ai îmbrățișat probabil te-ar frânge în bucăți dacă ar fi fost conștient, ți-a amintit de acel ursuleț bătrân care dormea ​​întotdeauna în patul tău când erai încă mic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:16.809737Z"
+  },
+  "achievement.38.name": {
+    "src_hash": "89b6492afd0a1d3c3ad2500e66397daf",
+    "text": "Şoptitor de fantome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:24.171667Z"
+  },
+  "achievement.38.description": {
+    "src_hash": "0dd5fcbb010b21e6048ac08453c2f649",
+    "text": "Nu îi vânezi, vorbești cu ei. Știi că fantomele ar putea păstra secrete care au fost pierdute de mult printre cei vii și ești priceput să le convingi să ți le dezvăluie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:24.172399Z"
+  },
+  "achievement.39.description": {
+    "src_hash": "a8b23e5d4644b8e5d4e2a30f6b7340ae",
+    "text": "Ai un punct slab pentru animalele mici și slabe și faci tot ce-ți stă în putere pentru a le proteja - chiar dacă probabil mănânci dragoni la micul dejun.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:24.173088Z"
+  },
+  "achievement.40.description": {
+    "src_hash": "a11e085ea30cd241684c85edebb64cd6",
+    "text": "Ai îmbrățișat urși, ai împins mamuți și ți-ai dovedit abilitățile de a bea. Și chiar dacă ai o ușoară mahmureală, o coastă parțial fracturată și niște păr gras pe limbă, ești destul de mândru să te numești barbar de onoare de acum înainte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:24.173961Z"
+  },
+  "achievement.41.description": {
+    "src_hash": "c1b0412b48a32220db629bdc91bb0461",
+    "text": "Tu ești cel care pune întrebările pe aici și știi cum să obții răspunsurile pe care vrei să le auzi. În plus, ești un exorcist celebru și omoară câțiva vampiri și demoni ici și colo. Tu și miza ta sunteți o echipă perfectă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:24.174925Z"
+  },
+  "achievement.43.description": {
+    "src_hash": "3addbb5c1108d22c9a004fbc144267c9",
+    "text": "Nu ești sigur ce este, dar te simți atras de regalitate. Genunchii tăi sunt întotdeauna puțin zdrobiți de când te târăști în fața tronurilor și îți place să stai în castele. Poate ar trebui să te gândești să aplici ca gardian?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:31.918794Z"
+  },
+  "achievement.44.description": {
+    "src_hash": "638776e8a8b27f6f979d517032838461",
+    "text": "Sunteți un alergător rapid și sunteți bun la livrarea de mărfuri care se vor deteriora la timp, chiar dacă nu puteți folosi niciun mijloc de transport sau dacă mâinile vă devin rece sau mirositoare în acest proces.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:31.919624Z"
+  },
+  "achievement.45.name": {
+    "src_hash": "b03003fb8539b2d1b82e434bacc170fb",
+    "text": "Prostul perfect",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:31.919861Z"
+  },
+  "achievement.45.description": {
+    "src_hash": "6e6cca722d251f4842d26dd59a3dc8fb",
+    "text": "Îți place să faci glume altora și să-i păcăliști să pară puțin prosti. Limbi care dau din nou spun că momentul realizării în ochii victimelor tale este recompensa cu care te hrănești, dar probabil doar glumiți și vă distrați cu ele... nu-i așa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:31.920763Z"
+  },
+  "achievement.46.name": {
+    "src_hash": "fe483c23e2ddd96a5090627085a83778",
+    "text": "Matematician",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:29:31.921002Z"
   }
 }

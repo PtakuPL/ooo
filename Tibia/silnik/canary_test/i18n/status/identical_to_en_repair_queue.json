@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T23:25:26.469650Z",
+  "timestamp": "2026-02-16T23:30:07.477534Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 706,
+  "entries_total": 708,
   "entries_by_lang": {
     "es": 296,
     "pl": 223,
@@ -73,11 +73,11 @@
     "de": 659,
     "fr": 589,
     "hu": 663,
-    "it": 504,
+    "it": 508,
     "nl": 691,
     "pt": 620,
-    "ro": 531,
-    "ru": 192,
+    "ro": 535,
+    "ru": 186,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -657,6 +657,12 @@
     },
     {
       "lang": "it",
+      "json_file": "client.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
       "json_file": "questlog.json",
       "identical_to_en": 3,
       "domain_priority": 9
@@ -897,6 +903,12 @@
     },
     {
       "lang": "ro",
+      "json_file": "client.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ro",
       "json_file": "html.json",
       "identical_to_en": 2,
       "domain_priority": 9
@@ -928,7 +940,7 @@
     {
       "lang": "ru",
       "json_file": "talkactions.json",
-      "identical_to_en": 13,
+      "identical_to_en": 7,
       "domain_priority": 2
     },
     {
@@ -1307,18 +1319,6 @@
       "lang": "bg",
       "json_file": "cpp.json",
       "identical_to_en": 158,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "scripts.json",
-      "identical_to_en": 153,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "questlog.json",
-      "identical_to_en": 29,
       "domain_priority": 9
     }
   ],

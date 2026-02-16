@@ -1,86 +1,17 @@
 {
-  "timestamp": "2026-02-16T23:22:00.267489Z",
+  "timestamp": "2026-02-16T23:25:35.453665Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 18,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_high": 200,
-    "suspicious_rejected_critical": 165,
-    "suspicious_rejected_high": 35
+    "suspicious_log_high": 137,
+    "suspicious_log_low": 16,
+    "suspicious_log_critical": 47,
+    "suspicious_rejected_critical": 164,
+    "suspicious_rejected_high": 36
   },
   "issues": [
-    {
-      "key": "client.spells.text3",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "exura max vita",
-      "translated": "exura max vita"
-    },
-    {
-      "key": "client.map.text2",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "MarkListItem",
-      "translated": "MarkListItem"
-    },
-    {
-      "key": "client.imbuementtracker.text1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "ImbuementTracker",
-      "translated": "ImbuementTracker"
-    },
-    {
-      "key": "client.http.text1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Mozilla/5.0",
-      "translated": "Mozilla/5.0"
-    },
-    {
-      "key": "client.createaccount.text1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "fx handleHttpResponse",
-      "translated": "fx handleHttpResponse"
-    },
-    {
-      "key": "client.createaccount.text3",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "fx handleHttpResponse",
-      "translated": "fx handleHttpResponse"
-    },
-    {
-      "key": "client.createaccount.text5",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "fx handleHttpResponse",
-      "translated": "fx handleHttpResponse"
-    },
-    {
-      "key": "client.utils.text1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Castlemania",
-      "translated": "Castlemania"
-    },
-    {
-      "key": "client.http.text1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Mozilla/5.0",
-      "translated": "Mozilla/5.0"
-    },
-    {
-      "key": "client.uipopupmenu.text1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "PopupScrollMenuShortcutLabel",
-      "translated": "PopupScrollMenuShortcutLabel"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -132,5 +63,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

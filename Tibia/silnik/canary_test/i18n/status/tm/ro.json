@@ -18998,5 +18998,349 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:18:26.748194Z"
+  },
+  "book.parchment_room.demon_seal": {
+    "src_hash": "65e033502c7653c66392844201e3d5f6",
+    "text": "Îngropat pentru totdeauna ca să nu se întoarcă niciodată. Nu îndepărtați acest sigiliu sau se pot întâmpla lucruri rele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:18.839842Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "Am facut! Am ajuns la grădinile de cristal! Ce frumusețe și splendoare am văzut acolo jos. Mai mult: am descoperit un mic lac subteran - dar Harry era acolo înaintea mea. Și a făcut ceva ciudat: a sunat un clopoțel mic, transparent și imediat a apărut un vârtej mare în apă. Presupun că aceasta este calea misterioasă mai adâncă în peșterile pe care le-am căutat atât de mult timp. Dar Harry, lașul, nu a îndrăznit să se scufunde în apă. În schimb, a părăsit cavernele și s-a întors la suprafață. Trebuie să am acest clopoțel!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:25.103379Z"
+  },
+  "book.dawnport.adventurers_guild_letter": {
+    "src_hash": "2b955455df5e1d1d0539717d3f21490c",
+    "text": "Aventurier curajos,\n\nGuild al Aventurierilor vă urează bun venit ca un nou erou al pământului.\n\nLuați această piatră de aventurier și folosiți-o în orice templu din oraș pentru a călători instantaneu la sala breslei noastre. Dacă ar trebui să pierzi vreodată piatra de aventurier, o poți înlocui vorbind cu un preot din templu.\nSper că ne vei vizita în curând.\n\nCu stima,\nRotem, șeful Guild al Aventurierilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:25.104955Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "PAGINA 2\nLord Koshei cel Curios\n-_-_-_-_-_-_-_-_-_-_-_-\nData nașterii: necunoscută\nVarsta: necunoscuta\nOrașul natal: necunoscut\nData morții: necunoscută\nNu se cunosc multe lucruri despre acest om. A apărut de nicăieri și a locuit aici aproape zece ani. Chiar dacă era comunicativ, nu a povestit niciodată nimic despre profesia lui sau despre ceea ce făcea pentru a trăi. Mai întâi a locuit în Darashia 2, apartamentul 11 ​​timp de aproximativ doi ani. În acea perioadă, el se plimba, călătorește pe ținuturile Darama și vizitează adesea Baia Viselor și piramida minotaurului din nord.\nApoi s-a descoperit că a construit un turn la sud de munți. Nu se explică cum a reușit să facă asta pentru că nimeni nu a fost văzut să-l ajute. Oricum, rămășițele turnului său sunt încă acolo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:25.107300Z"
+  },
+  "book.otbm.1_be_respectful_and_considerate": {
+    "src_hash": "a57d4f9c381d85d1d59ee58709244771",
+    "text": "1. Fii respectuos și precaut față de camarazii tăi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:25.107774Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Pune o grămadă de trestie de zahăr în aparat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:25.108165Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. Melasa va fi extrasa automat si distilata in rom",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:32.219414Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Păstrează-ți echipamentul de antrenament în formă bună.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:38.605317Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. Când procesul de distilare se termină, romul va începe să iasă din mașină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:38.605826Z"
+  },
+  "book.otbm.8_books_and_scrolls_must": {
+    "src_hash": "8d0d902de3d94969d44bfb69da9b4b2d",
+    "text": "8. Cărțile și sulurile trebuie returnate exact în locul din care au fost luate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:38.606448Z"
+  },
+  "book.otbm.a_city_only_for_serving": {
+    "src_hash": "ac1636229dbf36e9d335628c0577b42a",
+    "text": "Un oraș doar pentru un singur scop: investigarea magiei din lumea noastră Tibia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:46.380809Z"
+  },
+  "book.otbm.a_goblet_forged_by_the": {
+    "src_hash": "8b6673d0d466516b9a27d6990a52bff6",
+    "text": "Un pahar forjat de dragonul Khax care reprezintă toată cunoștințele și înțelepciunea TibiaVenezuela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:46.381562Z"
+  },
+  "book.otbm.a_low_nearly_always_fourleaved": {
+    "src_hash": "1e9a3bb8579f1329314bfa4cdf473e1f",
+    "text": "O plantă joasă, aproape întotdeauna cu patru frunze, cu flori galbene, care crește în climat cald. A fost principala sursă de hrană pentru caprele continentului. Cu toate acestea, mai târziu s-a descoperit că are un efect otrăvitor pe termen lung complet necunoscut anterior asupra animalelor și toate caprele au murit în două luni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:46.382704Z"
+  },
+  "book.otbm.a_map_of_several_known": {
+    "src_hash": "39f7c4fba141d7e1fb3b442da6b0da9e",
+    "text": "O hartă a mai multor locații cunoscute și complet exotice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:46.383109Z"
+  },
+  "book.otbm.a_number_of_marid_was": {
+    "src_hash": "b83daa8d7274930553d5baee01b558d1",
+    "text": "Câțiva Marid au fost prinși și sacrificați la fața locului, dar spre dezamăgirea lui Malor, majoritatea trupelor lui Gabel au reușit să evadeze spre sud, în ceea ce părea a fi o retragere strategică bine planificată. Și cu cât mai mare a fost surpriza lui să constate că Marid au fugit în orașul Ankrahmun unde au apărut erau așteptați! Atunci și-a dat seama că Gabel bănuise tot timpul un șiretlic și că pregătise o contrastrategie. Malor a ordonat imediat trupelor sale să abandoneze urmărirea, dar era prea târziu. Strigoii au mărșăluit împotriva lui Ankrahmun cu toată determinarea unei mașini de ucidere fără minte, iar Efreet, orbit de furie, nu a rămas în urmă, doar pentru a fi întâmpinat de baraje neîncetate de săgeți și pietre de catapultare. A urmat o bătălie cataclismică.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:46.385351Z"
+  },
+  "book.otbm.a_plant_with_large_dark": {
+    "src_hash": "0d7fad55a7eefdcb74ce4e52dce55bef",
+    "text": "O plantă cu flori mari, de culoare roșu închis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:53.153975Z"
+  },
+  "book.otbm.a_rarely_found_starshaped_orangecolored": {
+    "src_hash": "e0368988bab5d2ed6a4c3630b6564d2c",
+    "text": "O floare rar întâlnită în formă de stea, de culoare portocalie, de o frumusețe uimitoare. Văzut în mod obișnuit ca un simbol al iubirii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:53.154652Z"
+  },
+  "book.otbm.a_spreadsheet_densely_covered_with": {
+    "src_hash": "eee808aef3ccd8af8d6f24c30f980598",
+    "text": "(O foaie de calcul acoperită dens cu simboluri ciudate, numere și semne care nu au niciun sens pentru tine)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:53.155257Z"
+  },
+  "book.otbm.a_true_knight_always_trusts": {
+    "src_hash": "c49af81275b68f428dd804fdba7930d3",
+    "text": "Un Knight adevărat are întotdeauna încredere în sabia lui, chiar dacă este simplu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:53.155789Z"
+  },
+  "book.otbm.about_your_destiny_you_can": {
+    "src_hash": "56e7c948d6555abc7652109e0c1f0020",
+    "text": "despre destinul tău. Puteți călători apoi pe Insula Destinului și puteți alege o vocație.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:22:53.156282Z"
+  },
+  "book.otbm.according_to_our_knowledge_only": {
+    "src_hash": "6b2eab3622e80e1581eaf6bfdad70499",
+    "text": "După cunoștințele noastre, doar elfii delicati din orașele lor adânci în păduri și piticii din cetățile lor adânci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:00.966381Z"
+  },
+  "book.otbm.after_a_painful_and_long": {
+    "src_hash": "64842cd3139ca0574392647ba8e386de",
+    "text": "După o vânătoare dureroasă și lungă, magii noștri l-au ținut pe Hugo ocupat cu niște dragoni invocați care l-au distras suficient de mult pentru a pregăti capcana. Când Hugo a urmat 'track' pe care i-am pus-o, druidii noștri l-au prins cu bariere de plante și apoi au mutat pământul în jurul lui. Acum fiara este prinsă în capcană. Fie ca Fardos, Uman și Banor să dea că îl putem menține sătul și calm folosind trucul pe care druizii le-au dat seama. Aspiranții noștri vor avea greu să treacă testul care a fost creat în jurul acestei fiare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:00.968110Z"
+  },
+  "book.otbm.after_a_week_had_passed": {
+    "src_hash": "98184dfa62bd0f7b10ea2a6bbf71f6bd",
+    "text": "După ce a trecut o săptămână, matematicianul s-a întors. Sfatul lui a fost următorul: Faraonul ar trebui să ordone să aibă loc o sărbătoare uriașă, iar toate piramidele să fie împodobite cu flori și steaguri. Faraonul care se încredea în înțelepciunea consilierului său a ordonat poporului său să se pregătească pentru sărbătoare. În timp ce oamenii făceau ceea ce le poruncise faraonul lor, Athem a început să construiască o mașină uriașă din lemn deasupra piramidei regale. Nimeni nu l-a băgat prea mult în seamă din cauza pregătirilor care aveau loc. În a patra zi, când era programată să înceapă sărbătoarea, faraonul a trimis o invitație vizirului său și l-a rugat să se alăture festivității lor. După cum prevăzuse Athem, vizirul a refuzat pentru că bănuia că există o capcană. În schimb, s-a așezat în observatorul din vârful turnului său și a privit orașul pentru că dorea să afle ce făcea faraonul. Prea târziu a înțeles că construcția de pe vârful piramidei era de fapt o catapultă enormă. Deodată, un bolovan uriaș a fost aruncat în direcția lui. Lovitura fusese calculată perfect și și-a lovit amprenta cu o precizie uimitoare. Vârful turnului întunecat sa spulberat, iar vizirul rău a fost zdrobit sub tone de bazalt. Moartea lui a făcut ca magia neagră să dispară, iar turnul s-a scufundat în ocean pentru totdeauna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:00.972331Z"
+  },
+  "book.otbm.after_all_those_perils_and": {
+    "src_hash": "ef33715f939b368d27054b61cd7844b8",
+    "text": "După toate acele primejdii și puzzle-uri, am localizat în sfârșit tronul întunericului. voi conduce...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:00.972854Z"
+  },
+  "book.otbm.after_reading_the_whole_book": {
+    "src_hash": "682475be3676ff8d723d477e922408b4",
+    "text": "*După ce ai citit toată cartea (care îţi ia aproape o oră) suferi de dureri de cap. Îți amintești un singur lucru și trebuie să râzi când amintirea revine. Este al 647-lea. mod de a folosi un fascicul de energie: un vrăjitor venerabil care prăjește carnea cu vraja sa mortală.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:00.973813Z"
+  },
+  "book.otbm.after_the_disastrous_battle_of": {
+    "src_hash": "f82674368ccb00008614822d8ccad7d4",
+    "text": "După bătălia dezastruoasă a lui Ankrahmun Drefia, nigromanții au știut că sfârșitul era aproape. Marid nu le-ar ierta niciodată trădarea lor și aceasta ar fi o bătălie pe care nigromanții nu ar putea-o câștiga - la urma urmei, mulți dintre ei pieriseră deja în bătălia de la Ankrahmun, iar aliații lor Efreet nu puteau oferi nicio asistență. Așa că nigromanții s-au pregătit pentru inevitabil cu cinismul sfidător al celor care au fost familiarizați cu moartea toată viața, săvârșind ritualuri malefice și comfandu-se în orgii morbide.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:09.377182Z"
+  },
+  "book.otbm.after_the_female_reign_of": {
+    "src_hash": "1e06fe804daa716ae7a348fb78d3ef4d",
+    "text": "După ce domnia feminină a lui Carlin a fost stabilită și orașul independent a încercat să-și extindă influența, coloniștii au fost trimiși acolo pentru a revendica zona din apropiere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:09.378051Z"
+  },
+  "book.otbm.after_thorough_examination_the_rathal": {
+    "src_hash": "ec443059e1d20f48556aa84f34dd14a6",
+    "text": "După o examinare amănunțită, Piramida Rathal I a fost declarată oficial ca fiind liberă de fenomene oculte. Succesul ritualului de purificare desfășurat de preoții responsabili a depășit așteptările tuturor, iar prezența diabolică destul de obstinată, care era în mod clar opera unei persoane identificate oficial ca fiind vrăjitoarea Ushu de către autorități, a fost spulberată. Suspecta a fost urmărită până la munți, unde s-a ascuns cu succes de agenții departamentului de vânătoare de vrăjitoare. În prezent, se spune că produce poțiuni de dragoste de calitate scăzută într-o ascunzătoare necunoscută undeva în junglele vestice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:09.379988Z"
+  },
+  "book.otbm.after_we_reached_the_site": {
+    "src_hash": "f7305c420111178eb6df216031a53b77",
+    "text": "... După ce am ajuns la locul am întins tabăra. A doua zi am început săpăturile. A fost o muncă grea. Nisipul era perfid și încăpăţânat, iar pentru fiecare găleată pe care o luam încă două păreau să-i ia locul. Uneori, am dat peste ceva valoros din pură întâmplare, dar, de obicei, a fost nevoie de ore întregi pentru a găsi un loc profitabil, deoarece nu ți-ai putea da seama dacă un sit era promițător fără să fi efectuat mai întâi săpături ample. Și totuși lucrul real ne-a scăpat. Rămășițele orașelor legendare din vechime păreau pierdute în deșert. Dar am continuat, lucrând zi și noapte, săpat în același loc iar și iar. Progresul a fost dureros de lent, dar în cele din urmă a lovit ceva. Ceea ce am găsit s-a dovedit a fi o recompensă adecvată pentru greutățile noastre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:09.382419Z"
+  },
+  "book.otbm.aim_of_existence_and_in": {
+    "src_hash": "4e53fa3e3007cfd0706c2a0642138856",
+    "text": "scopul existenței! Și în așa fel coloana de cristal a timpului a crescut în sus și a fost de atunci centrul nemișcat al",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:09.382995Z"
+  },
+  "book.otbm.all_seem_to_work_well": {
+    "src_hash": "30144924d85add65bcb5f764142fe8bb",
+    "text": "Toate par să funcționeze bine. Dar după câțiva ani au apărut noi probleme.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:18.013952Z"
+  },
+  "book.otbm.all_the_strength_that_he": {
+    "src_hash": "24bc58d4d213ceb9ed8592657903ef52",
+    "text": "toată puterea pe care o putea strânge în inima Tibiasulei, a cărei existență nu voia să o mai îndure. Și ca și",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:18.014785Z"
+  },
+  "book.otbm.all_their_magic_which_was": {
+    "src_hash": "90187bd9f9aadfd83d95d16ddd58673a",
+    "text": "Toată magia lor, care probabil a fost dată bătrânilor în exces, nu le-a putut face învingători, iar ei și lor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:18.015428Z"
+  },
+  "book.otbm.all_this_however_could_not": {
+    "src_hash": "2e3104c50a2434c69197b067a61655f0",
+    "text": "Toate acestea însă nu au putut întoarce norocul războiului împotriva hoardelor întunecate. Oriunde a apărut Banor personal să conducă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:18.015998Z"
+  },
+  "book.otbm.already_the_daemons_hammered_on": {
+    "src_hash": "2188a97b9e89b25db266784cf2f14eb8",
+    "text": "Deja demonii au bătut cu ciocanul pe pereții închisorii lor care se sparg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:25.819853Z"
+  },
+  "book.otbm.also_react_to_but_those": {
+    "src_hash": "925af6aa1ba8c1ef0819031134cb0bbe",
+    "text": "reacționează și la, dar acestea nu sunt evidențiate. În acest caz, trebuie să tastați un cuvânt pentru a vedea dacă un NPC va reacționa la el, ca și el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:25.820496Z"
+  },
+  "book.otbm.although_most_problems_have_to": {
+    "src_hash": "cbc00771db1a49b407234851dece71ac",
+    "text": "Deși majoritatea problemelor trebuie rezolvate prin intelect, demonii pe care i-au chemat mă sperie de moarte. Poate că a trebuit să adăugăm așa ceva pentru a ne asigura că nimeni nu trece testele doar prin faptul că ni se spune cum funcționează. Totuși, adăugarea unor monștri puternici mi se pare o nebunie. De parcă Hugo nu era deja destul de periculos!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:25.821651Z"
+  },
+  "book.otbm.ancient_mummies_are_fiends_of": {
+    "src_hash": "ac73cf8cbe898169781b5a4b84389044",
+    "text": "Mumiile antice sunt niște diavolți ai unor puteri îngrozitoare. Doar cei mai curajoși războinici îndrăznesc să-i provoace, iar cei mai mulți dintre acești proști se înscriu prea curând în rândurile legiunilor de strigoi ale mumiilor. În viață, fiecare dintre aceste orori străvechi a fost un campion în sine, dar acum că au intrat în starea îngrozitoare a morții au devenit cu adevărat formidabile, pentru că nu există nicio modalitate de a le ucide definitiv. Indiferent cât de tare sunt loviti, puterile străvechi legate de corpurile lor mumificate îi vor face întotdeauna să se ridice din nou în toată gloria lor înfiorătoare pentru a se răzbuna pe cei vii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:25.823591Z"
+  },
+  "book.otbm.and_as_all_gnomes_he": {
+    "src_hash": "36a961b39cbc32c21c416b40049b6175",
+    "text": "Și, ca toți gnomii, era un laș perfid și lacom (și asta e destul de perfid, lacom și laș). Într-o zi, în mijlocul unei păduri adânci, micul gnom a întâlnit o fetiță care purta o șapcă roșie drăguță. Când gnomul lacom a văzut că duce o pungă plină cu cea mai bună pâine și un balon de vin, el s-a prefăcut că este înfometat și a implorat fetița să-i dea mâncare și apă într-un fel enervant așa cum pot fi doar gnomii (și asta e destul de enervant). Dar fata a fost avertizată de gnomi perfid de către un vânător viteaz pe care l-a întâlnit înainte și a fugit repede de micul gnom lacom. Gnomul s-a înfuriat, dar i-a fost frică să o fure, pentru că ar fi putut fi mai puternică decât el. Așa că a rătăcit în pădure blestemând așa cum numai gnomii pot blestema (și asta e destul de urât). Din întâmplare, aproape că s-a împiedicat de un bard adormit. Înțelegând rapid natura magică a flautului care se afla lângă bardul adormit, l-a furat la fel de repede pe cât poate face doar un gnom (și asta este destul de rapid). Folosind flautul magic, a ademenit o haită de lupi la casa bunicilor fetițelor și a lăsat fiarele să-i alunge pe ambele în pustiu și a râs rău, așa cum numai gnomii pot râde (și asta e destul de rău). Râzând, gnomul a înghițit vinul și a înghițit pâinea cât de repede pot doar gnomii (și asta e destul de repede). Așa că a trăit în pădure și a molestat veverițele din fericire pentru totdeauna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:25.828135Z"
+  },
+  "book.otbm.and_finally_he_spoke_to": {
+    "src_hash": "657c6f99ae65d0f56905941521d1bf74",
+    "text": "Și, în cele din urmă, i-a vorbit lui Gabel: \"Vai! Într-adevăr neamul tău a suferit! Dar există speranță, stăpâne, chiar și pentru neamul tău, care a fost părăsit de către creatorul ei nesăbuit!\" Și a continuat să-l învețe căile abjurării și ale iluminării. Și Gabel a ascultat și a învățat, iar când a văzut înțelepciunea din cuvintele lui Daraman, a hotărât să renunțe la vechile căi. Și în curând mulți alții din rasa lui au îmbrățișat cuvintele sfinte și au devenit prozeliți ai crezului lui Daraman.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:32.396966Z"
+  },
+  "book.otbm.and_immediately_the_dead_ones": {
+    "src_hash": "89bd2ef544988cde61f6a33682d7f7cd",
+    "text": "Și îndată cei morți au început să învieze la chemarea lui și toți erau făpturile Lui. La fel ca orcii înainte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:32.397538Z"
+  },
+  "book.otbm.and_maically_erected_a_hedge": {
+    "src_hash": "76eb3711a8d41a790ed85381310f9ff3",
+    "text": "și au ridicat maiic un gard viu pe care l-au împuternicit cu magie. Regina nu a fost fericită, dar nu a intervenit să-i oprească. De atunci, zona este cunoscută sub numele de Ghostlands (și alte câteva porecle care sugerează același lucru).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:32.398437Z"
+  },
+  "book.otbm.and_omruc_the_dreaded_hunter": {
+    "src_hash": "b7efd530ce3d1cea987c459e1100515e",
+    "text": "Și Omruc, temutul vânător și asasin. Niciuna dintre victimele lui nu a văzut-o vreodată venind și nici una dintre ele nu a scăpat vreodată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:32.399015Z"
   }
 }

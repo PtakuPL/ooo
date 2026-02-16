@@ -17646,5 +17646,397 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T23:21:58.920571Z"
+  },
+  "achievement.20.name": {
+    "src_hash": "f4f7985b69acaebc7c2973b30f734182",
+    "text": "Охотник",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:45.871524Z"
+  },
+  "achievement.22.name": {
+    "src_hash": "3f5bcdc44ba2ec5cfa72f8ea81c243e2",
+    "text": "Лучший агент AVIN",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:45.874357Z"
+  },
+  "achievement.23.name": {
+    "src_hash": "a99bbd82c237bb3b57b40f01dc2466ee",
+    "text": "Лучший агент CGB",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:45.876022Z"
+  },
+  "achievement.51.description": {
+    "src_hash": "35c4a95060c74d1098f635f0e9a9ca37",
+    "text": "Грабить, приглашать себя на VIP-вечеринки, подделывать контракты и выдавать себя за кого-то другого — вы мастер на все руки, когда дело касается незаконной деятельности. Вы не берете пленных, за исключением случайных золотых рыбок.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:45.906608Z"
+  },
+  "achievement.60.name": {
+    "src_hash": "135fc91ed0448a1501f38df3b9672505",
+    "text": "Разрешить файлы cookie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:45.914220Z"
+  },
+  "achievement.162.description": {
+    "src_hash": "a21b164ed6d8cf00ef41119f0a9e2e5b",
+    "text": "Вы могли бы стать автором великого произведения «Как вызвать абсолютного зверя из адских глубин, том I». Или, если ваш разум и сердце чисты, вы предпочитаете призывать существ на помощь другим. Или, может быть, просто маленькая кошечка, чтобы было с кем обниматься.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:46.016615Z"
+  },
+  "achievement.226.description": {
+    "src_hash": "9e2bf94d6e7a5fbe83d40681a72030be",
+    "text": "Вы разорвали древнего скарабея Fleshcrawler на части и позаботились о том, чтобы он не проник вам под кожу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:46.073158Z"
+  },
+  "achievement.292.description": {
+    "src_hash": "a1b8446113a19903c12ca11180f18612",
+    "text": "Ты дал zzze draken возможность оценить свой потрясающий ход.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:46.129469Z"
+  },
+  "achievement.301.description": {
+    "src_hash": "f654781df26b7bc613a39d2d6af70b5a",
+    "text": "Гномы сочувствуют вам. Один или два из них действительно могут потрудиться запомнить ваше имя. Вам разрешен доступ к их альфа-версии базы gnomebase. Вы готовы смело ступить своими большими ногами в места, где раньше мало кто бывал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:46.138571Z"
+  },
+  "achievement.315.description": {
+    "src_hash": "e0b30542a2418d0bef570c5d340fca8a",
+    "text": "Снова и снова Deathstrike падает из-за вашего мастерства. Возможно, с этого момента пришло время людям называть YOU Deathstrike.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:46.153313Z"
+  },
+  "achievement.319.name": {
+    "src_hash": "cce7097d2364905b63379a0c2c266560",
+    "text": "Гу Гу Гу Танцор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:46.156917Z"
+  },
+  "achievement.1.name": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Каслмания",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:49.181246Z"
+  },
+  "achievement.9.name": {
+    "src_hash": "189d4baff9dd822bda8f3c39e883c348",
+    "text": "Лорд-протектор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:49.181505Z"
+  },
+  "achievement.31.name": {
+    "src_hash": "fc7169fcfe554297348131c5d885735c",
+    "text": "Марид Элли",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:49.182284Z"
+  },
+  "achievement.32.name": {
+    "src_hash": "61ac595863ca09842f09930e5c3828ad",
+    "text": "Ифрит-союзник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:49.182520Z"
+  },
+  "achievement.37.name": {
+    "src_hash": "7c4fd821b693753b5075f58d226ec894",
+    "text": "Медвежонок",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:54.215762Z"
+  },
+  "achievement.38.name": {
+    "src_hash": "89b6492afd0a1d3c3ad2500e66397daf",
+    "text": "Говорящая с призраками",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:54.216039Z"
+  },
+  "achievement.45.name": {
+    "src_hash": "b03003fb8539b2d1b82e434bacc170fb",
+    "text": "Идеальный дурак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:54.216278Z"
+  },
+  "achievement.46.name": {
+    "src_hash": "fe483c23e2ddd96a5090627085a83778",
+    "text": "Математик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:54.216494Z"
+  },
+  "achievement.47.name": {
+    "src_hash": "93d576f08824f587e6e677006d8c1fe1",
+    "text": "Архипочтальон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:54.216744Z"
+  },
+  "achievement.48.name": {
+    "src_hash": "47f25e9e58f8a293d28b68f7c5913561",
+    "text": "Сваха",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:57.049288Z"
+  },
+  "achievement.50.name": {
+    "src_hash": "707e66ee97ec84531029a7a52a96326a",
+    "text": "Снос!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:57.049499Z"
+  },
+  "achievement.53.name": {
+    "src_hash": "42a07db3b617cae8c9df0f38d2553f43",
+    "text": "Скрепер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:57.049692Z"
+  },
+  "achievement.54.name": {
+    "src_hash": "10db3c8d5f48d25e0769372cb464a14d",
+    "text": "Гринхорн",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:57.049885Z"
+  },
+  "achievement.56.name": {
+    "src_hash": "1029736e995a0add53f08dbcd9c77e3d",
+    "text": "Гербицид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:57.050126Z"
+  },
+  "achievement.57.name": {
+    "src_hash": "1f7f1b477642e497c88d0d00f1fb98a5",
+    "text": "Аннигилятор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:00.862475Z"
+  },
+  "achievement.63.name": {
+    "src_hash": "60f06d1f2b26cc7421a8292951756c9d",
+    "text": "Путник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:00.862841Z"
+  },
+  "achievement.64.name": {
+    "src_hash": "1defd3125fe26671fbd0939ff7c86fb8",
+    "text": "Вейврайдер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:00.863052Z"
+  },
+  "achievement.65.name": {
+    "src_hash": "9b997d21495dbcdcb3a00095e4b6e1f5",
+    "text": "Рокстар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:00.863243Z"
+  },
+  "achievement.69.name": {
+    "src_hash": "903d1100b8d77db8a0e87c9a5f8a9e98",
+    "text": "Маскарад",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:00.863443Z"
+  },
+  "achievement.71.name": {
+    "src_hash": "2dd719d0587fcbf36410e4d984dc107f",
+    "text": "Огнеход",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:05.128918Z"
+  },
+  "achievement.79.name": {
+    "src_hash": "f9e0ff35d3b6f44f1883db497bb8ffa4",
+    "text": "Мраморный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:05.129207Z"
+  },
+  "achievement.85.name": {
+    "src_hash": "07eda7b7fdc1b08c5b810584725d6803",
+    "text": "Стимпанк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:05.129425Z"
+  },
+  "achievement.88.name": {
+    "src_hash": "2259f5b5f355a0b335edec255d1305f6",
+    "text": "Перебежчик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:05.129626Z"
+  },
+  "achievement.93.name": {
+    "src_hash": "1b39f2208c291c598f84649b2827a5c7",
+    "text": "Джемджем",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:05.129812Z"
+  },
+  "achievement.104.name": {
+    "src_hash": "656813c2d018d584fe3c0ec2deef6964",
+    "text": "Немезида Девоворги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:08.853328Z"
+  },
+  "achievement.110.name": {
+    "src_hash": "cbfa8981b409c5046e3ab4b571d01318",
+    "text": "Голубой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:08.853568Z"
+  },
+  "achievement.119.name": {
+    "src_hash": "494eb599eba47573e7da6f67cdc62e3e",
+    "text": "Проклятый!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:08.853776Z"
+  },
+  "achievement.121.name": {
+    "src_hash": "2177d1cc91140b5e6536eb79c15cb11c",
+    "text": "Американские горки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:08.854022Z"
+  },
+  "achievement.122.name": {
+    "src_hash": "bbd51443a3bd4a035c717892892bd439",
+    "text": "Трансмутатор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:08.854332Z"
+  },
+  "achievement.125.name": {
+    "src_hash": "efe3d2b02b49c973f309da5a27f75f30",
+    "text": "Снайпер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:13.019082Z"
+  },
+  "achievement.132.name": {
+    "src_hash": "ce485436f64ea41db9bb33119dbc761b",
+    "text": "Домашнее пивоварение",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:13.019350Z"
+  },
+  "achievement.139.name": {
+    "src_hash": "71b7f7e890d186e88892825e84adbee0",
+    "text": "Мутировавшие подарки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:13.019613Z"
+  },
+  "achievement.142.name": {
+    "src_hash": "34994f41097fed93e309c74cb42cc2f3",
+    "text": "Богоубийца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:13.019821Z"
+  },
+  "achievement.152.name": {
+    "src_hash": "026e04b1091097b779fb875bdd8b0799",
+    "text": "Погибель демонов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:13.020039Z"
+  },
+  "achievement.160.name": {
+    "src_hash": "e4e28e54eecbb0efe7d77914e2949b5e",
+    "text": "Головорез",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:17.907289Z"
+  },
+  "achievement.162.name": {
+    "src_hash": "961ee3e3448e7b9cd0e24c4213c24092",
+    "text": "Ритуалист",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:17.907528Z"
+  },
+  "achievement.164.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Дикий воин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:17.907761Z"
+  },
+  "achievement.165.name": {
+    "src_hash": "379e2d469d453c31d92ec4a4c7a19290",
+    "text": "Пиаззекипер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:17.907981Z"
   }
 }

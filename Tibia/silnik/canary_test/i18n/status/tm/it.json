@@ -25550,5 +25550,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:21:55.086727Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "L'ho fatto! Ho raggiunto i giardini di cristallo! Che bellezza e splendore ho visto laggiù. Ancora di più: ho scoperto un piccolo lago sotterraneo, ma Harry era lì prima di me. E fece qualcosa di strano: suonò una piccola campana dall'aspetto trasparente e subito apparve nell'acqua un grande vortice. Suppongo che questa sia la via misteriosa che conduce più in profondità nelle caverne che abbiamo cercato per così tanto tempo. Ma Harry, il codardo, non ha osato tuffarsi in acqua. Invece lasciò le caverne e tornò in superficie. Devo avere questo campanello!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:43.187807Z"
+  },
+  "book.dawnport.adventurers_guild_letter": {
+    "src_hash": "2b955455df5e1d1d0539717d3f21490c",
+    "text": "Avventuriero coraggioso,\n\ngli Guild degli avventurieri ti danno il benvenuto come nuovo eroe della terra.\n\nPrendi questa pietra dell'avventuriero e usala in qualsiasi tempio cittadino per raggiungere immediatamente la nostra sede della gilda. Se mai dovessi perdere la tua pietra dell'avventuriero, potrai sostituirla parlando con un prete nel tempio.\nSpero che verrai a trovarci presto.\n\nCordiali saluti,\nRotem, Capo degli Avventurieri Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:43.189089Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "PAGINA 2\nLord Koshei il Curioso\n-_-_-_-_-_-_-_-_-_-_-_-\nData di nascita: sconosciuta\nEtà: sconosciuta\nCittà natale: sconosciuta\nData di morte: sconosciuta\nNon si sanno molte cose di quest'uomo. È apparso dal nulla e ha vissuto qui per quasi dieci anni. Anche se era comunicativo, non ha mai detto nulla della sua professione o di cosa facesse per vivere. Inizialmente ha vissuto per circa due anni nell'appartamento Darashia 2, appartamento 11. Durante quel periodo vagava, viaggiava per le terre di Darama e spesso visitava il Bagno dei Sogni e la piramide del minotauro nel Nord.\nPoi si scoprì che aveva costruito una torre a sud delle montagne. Non si spiega come sia riuscito a farlo perché nessuno è stato visto per aiutarlo. Ad ogni modo, i resti della sua torre sono ancora lì. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:43.191355Z"
+  },
+  "book.new_frontier.hidden_note": {
+    "src_hash": "9ceb31d90dfc2bd835acf14d81f53a52",
+    "text": "Andate alla porta segreta a nord",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:43.191679Z"
+  },
+  "book.otbm.1000_alchemical_uses_of_urine": {
+    "src_hash": "9c23d812ac32f7e41a0537b19e4c8678",
+    "text": "1000 usi alchemici dell'urina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:43.191989Z"
+  },
+  "book.otbm.1001_recipes_against_sweaty_hands": {
+    "src_hash": "8275b9995fc68e7998155dae59d10bb0",
+    "text": "1001 ricette contro le mani sudate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:48.892696Z"
+  },
+  "book.otbm.1001_ways_to_use_energy": {
+    "src_hash": "5bd2f82c9a64857c3866a03b4062b621",
+    "text": "1001 modi per utilizzare i raggi energetici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:48.893008Z"
+  },
+  "book.otbm.100_gold_coins_equal_1": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 monete d'oro equivalgono a 1 moneta di platino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:48.893334Z"
+  },
+  "book.otbm.100_gold_coins_equal_1_39c18279": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 monete d'oro equivalgono a 1 moneta di platino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:48.893643Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 monete di platino equivalgono a 1 moneta di cristallo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:55.000715Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1_648a8349": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 monete di platino equivalgono a 1 moneta di cristallo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:55.001080Z"
+  },
+  "book.otbm.1_be_respectful_and_considerate": {
+    "src_hash": "a57d4f9c381d85d1d59ee58709244771",
+    "text": "1. Sii rispettoso e premuroso verso i tuoi compagni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:55.001426Z"
+  },
+  "book.otbm.1_discover_secret_of_necromants": {
+    "src_hash": "b262931a57ba6ca52d750f20308ade82",
+    "text": "1. Scopri il segreto del nettare dei negromanti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:55.001735Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Metti un mazzetto di canna da zucchero nella macchina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:23:55.002065Z"
+  },
+  "book.otbm.1st_floor_magic_emporium": {
+    "src_hash": "3bc17306f6a2a84ed45125c1b8697891",
+    "text": "1° piano: Emporio Magico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:01.985274Z"
+  },
+  "book.otbm.1st_floor_the_archers_grounds": {
+    "src_hash": "766fedafb986dcfc1155671e1bb154fb",
+    "text": "1° piano: Terreni dell'Arciere - Armi a distanza e incantesimi Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:01.985914Z"
+  },
+  "book.otbm.20_tricks_to_get_peoples": {
+    "src_hash": "30aa0d5bee0e41253afba1e1fedcd836",
+    "text": "20 trucchi per ottenere i soldi delle persone",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:01.986301Z"
+  },
+  "book.otbm.2_dont_be_late_for": {
+    "src_hash": "ad76df038f1054198aa4a295d40dc2b4",
+    "text": "2. Non arrivare in ritardo alle lezioni e ai corsi di formazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:08.683270Z"
+  },
+  "book.otbm.2_floor_the_room_of": {
+    "src_hash": "2b9486c0596c58b4f7addc9ea8b7a6d1",
+    "text": "2. Piano - La Stanza dell'Oracolo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:08.683583Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. La melassa verrà automaticamente estratta e distillata in rum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:08.683974Z"
+  },
+  "book.otbm.2nd_floor_barnabas_dee_astronomer": {
+    "src_hash": "d71fa402f290bf9994eda7fc73808be3",
+    "text": "2° piano: Barnabas Dee, astronomo e Sorcerer insegnante di incantesimi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:08.684530Z"
+  },
+  "book.otbm.2nd_floor_exquisite_jewellery": {
+    "src_hash": "46a7e585dbab0fe25bc731f569a5a7b3",
+    "text": "2° piano: gioielli squisiti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:08.684845Z"
+  },
+  "book.otbm.3789_gold_weapons_and_repairs": {
+    "src_hash": "09d42ec9bd3a03229363e3dd475e0f61",
+    "text": "3789 armi d'oro e riparazioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:15.385025Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Mantieni la tua attrezzatura da allenamento in buone condizioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:15.385498Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. Al termine del processo di distillazione, il rum inizierà a fuoriuscire dalla macchina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:15.385957Z"
+  },
+  "book.otbm.4000_gold_books_and_paper": {
+    "src_hash": "12aa92830e0d674b22e3b80f5e520546",
+    "text": "4000 libri e carta d'oro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:22.289640Z"
+  },
+  "book.otbm.4_exterminiate_the_ghouls_in": {
+    "src_hash": "b2ab977dc2790947663a26a210f9efbb",
+    "text": "4. Stermina i demoni nel giardino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:22.289963Z"
+  },
+  "book.otbm.4_no_running_in_the": {
+    "src_hash": "19a98caa510a0b8ad6eb41e9f99f9695",
+    "text": "4. Non correre nel corridoio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:22.290326Z"
+  },
+  "book.otbm.4_quickly_use_any_bottle": {
+    "src_hash": "5c1d55c8995e791da43817d448226c29",
+    "text": "4. Usa rapidamente qualsiasi bottiglia o tazza per raccogliere il rum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:22.290675Z"
+  },
+  "book.otbm.5000_gold_runes_and_fluids": {
+    "src_hash": "0672360e8e6dcc8e6dc116b3ab6e3b58",
+    "text": "5000 rune e fluidi d'oro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:22.290943Z"
+  },
+  "book.otbm.5_no_eating_and_drinking": {
+    "src_hash": "84d1f2d9ae1c7c4891ff643961d03882",
+    "text": "5. Non mangiare né bere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:28.552533Z"
+  },
+  "book.otbm.5_no_sigildrawing_on_the": {
+    "src_hash": "e829268d40ae27166494352f4d8d9e70",
+    "text": "5. Nessun disegno di sigillo sul pavimento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:28.552865Z"
+  },
+  "book.otbm.6_no_food_in_the": {
+    "src_hash": "00c6d0c7da6345e134203eaa56d8e033",
+    "text": "6. Niente cibo in biblioteca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:28.553141Z"
+  },
+  "book.otbm.6_return_borrowed_equipment_to": {
+    "src_hash": "e5c921bc1ac72b5edfbc9914930b8b48",
+    "text": "6. Riportare l'attrezzatura presa in prestito nel magazzino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:28.553475Z"
+  },
+  "book.otbm.7_no_scribbling_in_libraryowned": {
+    "src_hash": "f52764d2c16bdaa528ceeabad7968199",
+    "text": "7. Nessuno scarabocchio nei documenti di proprietà della biblioteca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:28.553877Z"
+  },
+  "book.otbm.8_books_and_scrolls_must": {
+    "src_hash": "8d0d902de3d94969d44bfb69da9b4b2d",
+    "text": "8. Libri e pergamene devono essere restituiti nel luogo esatto da cui sono stati prelevati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:35.414907Z"
+  },
+  "book.otbm.900_mad_doc_vs_harpoon": {
+    "src_hash": "0850d195726d0ee609c08f3109170d8d",
+    "text": "9:00 Dottor Pazzo. contro l'arpione Angus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:35.415227Z"
+  },
+  "book.otbm.9_no_library_document_to": {
+    "src_hash": "1c6c8d65024c711ee5524305c145989b",
+    "text": "9. È vietato portare documenti della biblioteca fuori dall'area della biblioteca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:35.415635Z"
+  },
+  "book.otbm.a_city_only_for_serving": {
+    "src_hash": "ac1636229dbf36e9d335628c0577b42a",
+    "text": "Una città al servizio di un solo obiettivo: l'investigazione della magia nel nostro mondo Tibia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:35.416239Z"
+  },
+  "book.otbm.a_crudely_scribbled_note": {
+    "src_hash": "e4e599255fc76eab5baab6aa9e8c4aa0",
+    "text": "(Una nota scarabocchiata grossolanamente)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:42.233155Z"
+  },
+  "book.otbm.a_goblet_forged_by_the": {
+    "src_hash": "8b6673d0d466516b9a27d6990a52bff6",
+    "text": "Un calice forgiato dal drago Khax che rappresenta tutta la conoscenza e la saggezza di TibiaVenezuela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:42.233759Z"
+  },
+  "book.otbm.a_low_nearly_always_fourleaved": {
+    "src_hash": "1e9a3bb8579f1329314bfa4cdf473e1f",
+    "text": "Pianta bassa, quasi sempre a quattro foglie, con fiori gialli, che cresce nei climi caldi. Un tempo era la principale fonte di cibo per le capre del continente. Tuttavia, in seguito si scoprì che aveva un effetto velenoso a lungo termine sugli animali precedentemente totalmente sconosciuto e tutte le capre morirono entro due mesi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:42.234887Z"
+  },
+  "book.otbm.a_map_of_several_known": {
+    "src_hash": "39f7c4fba141d7e1fb3b442da6b0da9e",
+    "text": "Una mappa di diversi luoghi conosciuti e completamente esotici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:42.235256Z"
+  },
+  "book.otbm.a_number_of_marid_was": {
+    "src_hash": "b83daa8d7274930553d5baee01b558d1",
+    "text": "Un certo numero di Marid furono catturati e massacrati sul posto, ma con grande disappunto di Malor la maggior parte delle truppe di Gabel riuscì a fuggire verso sud in quella che sembrava essere una ritirata strategica ben pianificata. E quanto maggiore fu la sua sorpresa nello scoprire che i Marid fuggirono nella città di Ankrahmun dove erano attesi! Fu allora che si rese conto che Gabel aveva sempre sospettato uno stratagemma e che aveva preparato una controstrategia. Malor ordinò immediatamente alle sue truppe di abbandonare l'inseguimento, ma era troppo tardi. I non morti marciarono contro Ankrahmun con tutta la determinazione di una macchina per uccidere senza cervello, e l'Efreet, accecato dalla rabbia, non rimase indietro, solo per essere accolto da incessanti raffiche di frecce e catapulte di pietre. Ne seguì una battaglia catastrofica.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:24:42.237318Z"
   }
 }

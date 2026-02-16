@@ -12598,5 +12598,405 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:50:18.728022Z"
+  },
+  "npc.alia.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.020673Z"
+  },
+  "npc.alia.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.023346Z"
+  },
+  "npc.alia.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.029672Z"
+  },
+  "npc.alkestios.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.030381Z"
+  },
+  "npc.alkestios.greet_msg_1": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Naturens välsignelse, resenär! Må du inte drabbas av någon olycksbådande kraft.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.031236Z"
+  },
+  "npc.alkestios.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.034612Z"
+  },
+  "npc.altar.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.035169Z"
+  },
+  "npc.altar.greet_msg_1": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Knäböj inför den alltförtärande kraften av blodigt förfall.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.035846Z"
+  },
+  "npc.alyxo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.048663Z"
+  },
+  "npc.amanda.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.049493Z"
+  },
+  "npc.amanda.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.050541Z"
+  },
+  "npc.amanda.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.054962Z"
+  },
+  "npc.ambassador_of_rathleton.greet_msg_1": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Hälsningar, vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.056217Z"
+  },
+  "npc.ambassador_of_rathleton.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.057885Z"
+  },
+  "npc.amber.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.058762Z"
+  },
+  "npc.amber.greet_msg_1": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Åh hej, trevligt att se dig |PLAYERNAME|. Är du här för att höra några berättelser om min {adventures} eller behöver du {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.060461Z"
+  },
+  "npc.amber.walkaway_msg_1": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Ja, vi hörs senare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.068437Z"
+  },
+  "npc.anderson.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Hej då. Du är välkommen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.069658Z"
+  },
+  "npc.andrew_lyze.greet_msg_1": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Hej, jag är vaktmästare för denna {monument}. {sarcophagus} framför dig skapades för att hindra människor från att gå {down} dit. Men jag tvivlar på att detta steg är tillräckligt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.072121Z"
+  },
+  "npc.andrew_lyze.greet_msg_2": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Nåväl, låt oss se om ditt uppdrag var framgångsrikt. Ta bara med mig alla nödvändiga {materials}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.073289Z"
+  },
+  "npc.andrew_lyze.greet_msg_3": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Om du grävde upp alla tre kristallerna i tillräcklig mängd och fick giftkörteln, kan laddningen av din kompass börja! För allra första gången kommer den att laddas av den violetta kristallen. Är du redo att {unleash} kraften i kristallerna?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.075332Z"
+  },
+  "npc.andrew_lyze.greet_msg_4": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Hälsningar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.076376Z"
+  },
+  "npc.andrew_lyze.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.081410Z"
+  },
+  "npc.aneus.farewell_msg_1": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "Hejdå och ta hand om dig!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.085392Z"
+  },
+  "npc.aneus.greet_msg_1": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Hälsningar äventyraren |PLAYERNAME|. Vad leder dig till mig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.086861Z"
+  },
+  "npc.angelina.farewell_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Må gudarna välsigna dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.092388Z"
+  },
+  "npc.angelina.greet_msg_1": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Gudarna måste prisas att jag äntligen är frälst. Jag har inte många världsliga ägodelar, men snälla acceptera en liten belöning, gör du?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.094472Z"
+  },
+  "npc.angelina.greet_msg_2": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Tack för att du räddade mitt liv! Ska jag teleportera dig ut ur den mörka katedralen?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.095988Z"
+  },
+  "npc.angelina.walkaway_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Må gudarna välsigna dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.097315Z"
+  },
+  "npc.angelo.greet_msg_1": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid av Crunor? Han berättade att en ny grotta dök upp här? Det stämmer. Jag är chef för en {project} som försöker ta reda på mer om denna nya {area}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.100016Z"
+  },
+  "npc.angelo.greet_msg_2": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Gå bara ur min väg! Du dödade denna vackra varelse. Jag har inget mer att säga. Crunors jävla druid!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.101758Z"
+  },
+  "npc.angelo.say_6": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Gå bara ur min väg! Du dödade denna vackra varelse. Jag har inget mer att säga. Crunors jävla druid!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.104751Z"
+  },
+  "npc.angelo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.105669Z"
+  },
+  "npc.aurita.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.131937Z"
+  },
+  "npc.aurita.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.134960Z"
+  },
+  "npc.avar_tar.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.135906Z"
+  },
+  "npc.avar_tar.walkaway_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.139002Z"
+  },
+  "npc.azalea.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.142575Z"
+  },
+  "npc.azalea.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.143932Z"
+  },
+  "npc.azalea.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.151808Z"
+  },
+  "npc.beatrice.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.169255Z"
+  },
+  "npc.beatrice.walkaway_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.171012Z"
+  },
+  "npc.bloodshade_rotten.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.182852Z"
+  },
+  "npc.bloodshade_sacrifice.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.184114Z"
+  },
+  "npc.brewster.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.203639Z"
+  },
+  "npc.brewster.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.204611Z"
+  },
+  "npc.brewster.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.210571Z"
+  },
+  "npc.cedrik.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.314818Z"
+  },
+  "npc.cedrik.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.316524Z"
+  },
+  "npc.cedrik.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:19.321922Z"
   }
 }

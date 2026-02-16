@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:51:27.378707Z",
-  "language": "es",
+  "timestamp": "2026-02-16T21:52:19.845982Z",
+  "language": "sv",
   "json_file": "npc.json",
-  "translated": 24,
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "npc.angelo.greet_msg_2",
+      "en": "Just get out of my way! You killed this beautiful creature. I have nothing more to say. Damn druid of Crunor!",
+      "translated": "Gå bara ur min väg! Du dödade denna vackra varelse. Jag har inget mer att säga. Crunors jävla druid!",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "npc.angelo.say_6",
+      "en": "Just get out of my way! You killed this beautiful creature. I have nothing more to say. Damn druid of Crunor!",
+      "translated": "Gå bara ur min väg! Du dödade denna vackra varelse. Jag har inget mer att säga. Crunors jävla druid!",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "npc.angelo.walkaway_msg_1",
+      "en": "Well, bye then.",
+      "translated": "Nåväl, hejdå då.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "npc.aurita.farewell_msg_1",
+      "en": "May your path always be even.",
+      "translated": "Må din väg alltid vara jämn.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "npc.aurita.walkaway_msg_1",
+      "en": "May your path always be even.",
+      "translated": "Må din väg alltid vara jämn.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "npc.avar_tar.farewell_msg_1",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "Vi ses senare, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "npc.avar_tar.walkaway_msg_1",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "Vi ses senare, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "npc.azalea.farewell_msg_1",
+      "en": "May the gods bless you, |PLAYERNAME|!",
+      "translated": "Må gudarna välsigna dig, |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "npc.azalea.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "npc.azalea.walkaway_msg_1",
+      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
+      "translated": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "npc.beatrice.farewell_msg_1",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "Vi ses senare, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "npc.beatrice.walkaway_msg_1",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "Vi ses senare, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.bloodshade_rotten.farewell_msg_1",
+      "en": "Bye, |PLAYERNAME|.",
+      "translated": "Hejdå, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.bloodshade_sacrifice.farewell_msg_1",
+      "en": "Bye, |PLAYERNAME|.",
+      "translated": "Hejdå, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.brewster.farewell_msg_1",
+      "en": "May the gods bless you, |PLAYERNAME|!",
+      "translated": "Må gudarna välsigna dig, |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "npc.brewster.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "npc.brewster.walkaway_msg_1",
+      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
+      "translated": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "npc.cedrik.farewell_msg_1",
+      "en": "May the gods bless you, |PLAYERNAME|!",
+      "translated": "Må gudarna välsigna dig, |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.cedrik.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.cedrik.walkaway_msg_1",
+      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
+      "translated": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+      "source": "simple"
     }
   ]
 }

@@ -88606,5 +88606,397 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:29:36.580587Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "W sprawiedliwym świecie byłabym kapitanem wielkiego statku... \\z Ci piraci tam na zewnątrz byliby teraz moimi podwładnymi, a my przemierzalibyśmy morza i stalibyśmy się postrachem nadmorskich miast! ... \\z Gdyby tylko nasz plan się powiódł!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:05.367863Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kapitan Kid sprzedał swój statek, żeby kupić bezsensowne rzeczy, na przykład te absurdalnie drogie zamki do drzwi celi... \\z Mówił, że czółna przez jakiś czas wystarczą... \\z Odniosłam wrażenie, że wcale nie było mu tak przykro rozstać się ze statkiem, bo podobno strasznie cierpiał na chorobę morską.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:05.373294Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Byłabym o wiele lepszą kapitan niż Kid. Grałam na scenie kilka ról kapitanów i byłam świetna! ... \\z Gdy Kid łaknął uznania swoich ludzi, ja rządziłabym strachem i żelazną pięścią!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:05.376962Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Im głupsi są ludzie, tym łatwiej ich oszukać... \\z A im biedniejsi, tym mniej mają środków, by się zemścić. Har har! ... \\z Dlatego pilnuję, żeby zrujnować tych, których oszukuję. Wtedy mają inne zmartwienia niż zemsta na mnie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:05.389056Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Co? Jak? Widzę! Wow! Nie-minotaur. Czy oni też cię {capture}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:05.635447Z"
+  },
+  "npc.alia.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.049273Z"
+  },
+  "npc.alia.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.051523Z"
+  },
+  "npc.alia.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.052383Z"
+  },
+  "npc.alia.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.070844Z"
+  },
+  "npc.alia.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.072541Z"
+  },
+  "npc.alia.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.074325Z"
+  },
+  "npc.alia.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.076659Z"
+  },
+  "npc.alkestios.stdmod_7": {
+    "src_hash": "2979fa2a504a6f9b30948990058fab5f",
+    "text": "Niektórzy nazywają nas duchami natury albo peri, ale my wolimy określenie fae. Większość z nas prowadzi raczej odosobnione i spokojne życie w naszej tajemnej krainie. Opuszczamy ją tylko po to, by chronić nasz dom... \\z Zwykle skrywamy naszą prawdziwą naturę, ale zdaje się, że dawno temu pewien elficki mędrzec odwiedził naszą krainę i opisał swoje doświadczenia na papierze. W bibliotece Ab'Dendriel może znajdować się książka o fae.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.110620Z"
+  },
+  "npc.amanda.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.144545Z"
+  },
+  "npc.amanda.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.147778Z"
+  },
+  "npc.amanda.stdmod_11": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.153137Z"
+  },
+  "npc.amanda.stdmod_35": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.182045Z"
+  },
+  "npc.amanda.stdmod_5": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.183905Z"
+  },
+  "npc.amanda.stdmod_7": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.185464Z"
+  },
+  "npc.amanda.stdmod_9": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.186994Z"
+  },
+  "npc.andrew_lyze.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.363143Z"
+  },
+  "npc.angelo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.515338Z"
+  },
+  "npc.archery.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Wracaj od czasu do czasu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.636940Z"
+  },
+  "npc.archery.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Wracaj od czasu do czasu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.639376Z"
+  },
+  "npc.archery_rook.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Wracaj od czasu do czasu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.640179Z"
+  },
+  "npc.archery_rook.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Wracaj od czasu do czasu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.642635Z"
+  },
+  "npc.azalea.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.801174Z"
+  },
+  "npc.azalea.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.802794Z"
+  },
+  "npc.azalea.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.803819Z"
+  },
+  "npc.azalea.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.820681Z"
+  },
+  "npc.azalea.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.821518Z"
+  },
+  "npc.azalea.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.822923Z"
+  },
+  "npc.azalea.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.824805Z"
+  },
+  "npc.bambi_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.843843Z"
+  },
+  "npc.bambi_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.844583Z"
+  },
+  "npc.bambi_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.845615Z"
+  },
+  "npc.benjamin.farewell_msg_1": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "To była przyjemność ci pomóc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.895557Z"
+  },
+  "npc.billy.stdmod_12": {
+    "src_hash": "5b3edcf522c874340c892f2fd8f7060b",
+    "text": "Dziekuje, wszystko w porzadku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.921409Z"
+  },
+  "npc.billy.stdmod_36": {
+    "src_hash": "a17453fea5b9bb0129d1a0e36f5dfb96",
+    "text": "Po prostu poproś mnie o {trade}, żeby zobaczyć moje oferty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.938932Z"
+  },
+  "npc.bloodshade_rotten.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Śmiertelniku! Jeśli jesteś na {quest}, by służyć bogu krwi, mojemu panu - bądź pozdrowiony!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.969884Z"
+  },
+  "npc.bloodshade_sacrifice.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Śmiertelniku! Jeśli jesteś na {quest}, by służyć bogu krwi, mojemu panu - bądź pozdrowiony!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.978757Z"
+  },
+  "npc.bloodshade_sacrifice.say_1": {
+    "src_hash": "95b20291f7eaa52a1751aa57227581e6",
+    "text": "Masz już dostęp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.983861Z"
+  },
+  "npc.blossom_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.987470Z"
+  },
+  "npc.blossom_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.988377Z"
+  },
+  "npc.blossom_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.989536Z"
+  },
+  "npc.bo_ques.farewell_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Do widzenia. Jestem pewien, że wrócisz po więcej. Wszyscy tak robią.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:06.991472Z"
+  },
+  "npc.bo_ques.walkaway_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Do widzenia. Jestem pewien, że wrócisz po więcej. Wszyscy tak robią.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:07.007562Z"
+  },
+  "npc.bolfona.greet_msg_1": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Czy mówisz do mnie? Cóż, rozmawiaj dalej, ale nie oczekuj odpowiedzi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:07.010885Z"
+  },
+  "npc.boveas.greet_msg_1": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Cześć! Mam nadzieję, że nie zamierzasz mnie zabić!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:07.022885Z"
   }
 }

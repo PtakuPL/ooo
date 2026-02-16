@@ -140078,5 +140078,13 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:29:59.991015Z"
+  },
+  "npc.karith.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:31:31.246227Z"
   }
 }

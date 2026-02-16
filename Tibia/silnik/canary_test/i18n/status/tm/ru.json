@@ -13334,5 +13334,189 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:50:34.047601Z"
+  },
+  "monster.goblin_leader.voice_1": {
+    "src_hash": "a94c45564c67fc4c99ccfd072bde6ced",
+    "text": "Давай, давай, Гобо атакуй!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:09.070673Z"
+  },
+  "monster.goblin_leader.voice_2": {
+    "src_hash": "c7c9eae5c37571c15ad1db05e6023567",
+    "text": "Я самый зеленый и самый подлый!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:09.071206Z"
+  },
+  "monster.goblin_leader.voice_3": {
+    "src_hash": "d51f4eab267848627fb85a6240859977",
+    "text": "У меня есть сила сокрушить тебя!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:09.071768Z"
+  },
+  "monster.goblin_leader.voice_4": {
+    "src_hash": "4aa98e8257a2b9d144a620c8ed1fffbb",
+    "text": "Убийца гоблинов! Поймай его!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:09.072253Z"
+  },
+  "monster.minotaur_amazon.name": {
+    "src_hash": "be37e72b953c0db5259fbcf77c31c418",
+    "text": "Минотавр Амазонка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:12.207062Z"
+  },
+  "monster.minotaur_amazon.desc": {
+    "src_hash": "55da6d9f62f81077729eee088cbdb13b",
+    "text": "минотавр амазонка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:12.207563Z"
+  },
+  "monster.minotaur_amazon.voice_1": {
+    "src_hash": "8dd68c7c45807e01d330de471c761385",
+    "text": "Я защищу стадо!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:12.207977Z"
+  },
+  "monster.minotaur_amazon.voice_2": {
+    "src_hash": "e43a2ba5ac30bb6949bf465bcff590b4",
+    "text": "Никогда не сдавайтесь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:12.208446Z"
+  },
+  "monster.minotaur_amazon.voice_3": {
+    "src_hash": "ee0b982f264d272c888697a7a71ce230",
+    "text": "Ты не причинишь нам вреда!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:12.208888Z"
+  },
+  "monster.frost_troll.voice_1": {
+    "src_hash": "081b99983f3751c20ea157a31fde8ae9",
+    "text": "Бррр",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:12.209218Z"
+  },
+  "monster.broken_shaper.name": {
+    "src_hash": "a8736d5cf42bd45f0eaa2d64e136cb69",
+    "text": "Сломанный Создатель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:16.106736Z"
+  },
+  "monster.broken_shaper.desc": {
+    "src_hash": "9b426a1c255ee8b1ea00a9faac273f0d",
+    "text": "сломанный формирователь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:16.107241Z"
+  },
+  "monster.broken_shaper.voice_1": {
+    "src_hash": "e5950dce92f632e1b7f280b2b8f13fb5",
+    "text": "<ворчание>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:16.107549Z"
+  },
+  "monster.broken_shaper.voice_2": {
+    "src_hash": "c84f621daf77bb6dc0ad4fe10e21a18b",
+    "text": "Раар!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:16.107824Z"
+  },
+  "monster.dwarf_guard.name": {
+    "src_hash": "049bb70aab9b63d9fc20af1626937cc3",
+    "text": "Гном-страж",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:16.108133Z"
+  },
+  "monster.dwarf_guard.desc": {
+    "src_hash": "a18fa747aa0b7f9cf46e32dca28d4dd1",
+    "text": "гном-охранник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:16.108678Z"
+  },
+  "monster.minotaur_totem.name": {
+    "src_hash": "2375a9940dfd1b9180658e927b1fd898",
+    "text": "Тотем Минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:20.650526Z"
+  },
+  "monster.minotaur_totem.desc": {
+    "src_hash": "8f55a055caee6015422ed955ced25d45",
+    "text": "тотем минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:20.651067Z"
+  },
+  "monster.pirat_scoundrel.name": {
+    "src_hash": "80d89dab0b9d85b309ec76843fc5cd14",
+    "text": "Пират-негодяй",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:20.651438Z"
+  },
+  "monster.pirat_scoundrel.desc": {
+    "src_hash": "064b68891a8999fb516c57c7327b6e95",
+    "text": "пират-негодяй",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:20.651785Z"
+  },
+  "monster.lost_basher.name": {
+    "src_hash": "dbe4cc2cbc428da55264a6af52a1b637",
+    "text": "Потерянный Башер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:20.652211Z"
+  },
+  "monster.lost_basher.desc": {
+    "src_hash": "fa9c74c46dc6926503c65cf0c9e3d92d",
+    "text": "потерянный убийца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:23.301794Z"
+  },
+  "monster.dworc_fleshhunter.name": {
+    "src_hash": "ec9279214c56177a0e79825c4d5c9cdc",
+    "text": "Дворк Охотник за плотью",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:54:23.302511Z"
   }
 }

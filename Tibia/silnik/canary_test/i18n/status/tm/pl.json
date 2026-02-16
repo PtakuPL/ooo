@@ -92910,5 +92910,269 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:37:26.327742Z"
+  },
+  "npc.guard_saros.say_30": {
+    "src_hash": "3f4db55f5ee0b4b7103eb4f8da8ec9a8",
+    "text": "Wierzę, że miłość jest silniejsza niż magia. Zgadzasz się?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.064103Z"
+  },
+  "npc.guard_saros.say_31": {
+    "src_hash": "d4ec7416311cd9d388f063fc28775285",
+    "text": "Och, przepraszam, muszę się spieszyć, pa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.067770Z"
+  },
+  "npc.guard_saros.say_32": {
+    "src_hash": "f7a73bc7c8ab56bc5a5e0561d31db47e",
+    "text": "Chciałabym częściej chodzić na plażę, ale chyba jest tam zbyt niebezpiecznie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.071138Z"
+  },
+  "npc.guard_saros.say_33": {
+    "src_hash": "3ff43f1c61d1454ba47279e08f9a6660",
+    "text": "Uwielbiam ten zamek! Jest taki piękny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.074219Z"
+  },
+  "npc.guard_saros.say_34": {
+    "src_hash": "90d740dbc4575e8efea50a4fbaa93475",
+    "text": "Potężni czarnoksiężnicy trochę mnie przerażają.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.078310Z"
+  },
+  "npc.guard_saros.say_35": {
+    "src_hash": "90c18cf2bf2d70b52d9fb6a696d96357",
+    "text": "Osobiście uważam, że to nieodpowiednie, aby kobieta zostawała wojowniczką. Co o tym myślisz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.081672Z"
+  },
+  "npc.guard_saros.say_36": {
+    "src_hash": "e9353a24726ceaf82d85af522a58ec2c",
+    "text": "Druidzi rzadko odwiedzają miasta. Co wiesz o druidach?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.085031Z"
+  },
+  "npc.guard_saros.say_37": {
+    "src_hash": "03fd1f83543ea4d262c0a195342f7cdf",
+    "text": "Lubię odważnych wojowników takich jak on.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.087853Z"
+  },
+  "npc.guard_saros.say_38": {
+    "src_hash": "3e74bcc1d4c04e1c7fc8c7d48e608993",
+    "text": "Och, on jest taaaki uroczy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.090520Z"
+  },
+  "npc.guard_saros.say_39": {
+    "src_hash": "db3e42dfdb03d826b057628554aa81ab",
+    "text": "Lubię psy, przynajmniej te małe. Też lubisz psy?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.093721Z"
+  },
+  "npc.guard_saros.say_4": {
+    "src_hash": "a460db9bfdc187f55d9e080c794a0aae",
+    "text": "Znajdź chwilę, żeby ze mną porozmawiać!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.096590Z"
+  },
+  "npc.guard_saros.say_40": {
+    "src_hash": "97cb80c657eac5f32ecd495b547a5952",
+    "text": "Och, jestem tylko dziewczyną i nic nie wiem o magicznych mieczach i takich rzeczach.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.100236Z"
+  },
+  "npc.guard_saros.say_41": {
+    "src_hash": "fdad28196dd0ec460be845f64c7ea38a",
+    "text": "Ja... nie znam nikogo o takim imieniu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.107519Z"
+  },
+  "npc.guard_saros.say_42": {
+    "src_hash": "226652bcd32f29296420b0750be12a64",
+    "text": "Yenny? Nie znam żadnej Yenny i nigdy nie używałam takiego imienia! Pomyliłeś mnie z kimś innym.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.112437Z"
+  },
+  "npc.guard_saros.say_5": {
+    "src_hash": "7bd09329cdd980a5a94aee69e5cf6850",
+    "text": "Cóż... spotykałam się z nim przez krótki czas... ale to nic poważnego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.117101Z"
+  },
+  "npc.guard_saros.say_7": {
+    "src_hash": "20591c18f17e79dc94d001dd8637bef4",
+    "text": "Dziękuję bardzo. Jak miło z twojej strony, że się o mnie troszczysz. U mnie wszystko w porządku, dziękuję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.125885Z"
+  },
+  "npc.guard_saros.walkaway_msg_1": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Mam nadzieję, że wkrótce cię zobaczę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.132675Z"
+  },
+  "npc.guide_alexena.greet_msg_1": {
+    "src_hash": "c005a222b255ab879f7deb5c9b8f6b08",
+    "text": "Witaj w Carlin, |PLAYERNAME|. Czy chcesz informacje i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.137656Z"
+  },
+  "npc.guide_behil.farewell_msg_1": {
+    "src_hash": "aa8c7078c47b73af589177fb5cd23b08",
+    "text": "Błogosławieństwo Daramana, miłego pobytu w Darashii, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.159536Z"
+  },
+  "npc.guide_behil.greet_msg_1": {
+    "src_hash": "6b33208bc4929e52745c709840a25507",
+    "text": "Błogosławieństwo Daramana, Black Sabbatth, witaj w Darashii! Chcesz trochę informacji i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.169688Z"
+  },
+  "npc.guide_davina.greet_msg_1": {
+    "src_hash": "33356a8dad2f87f779709b47ea94f9a3",
+    "text": "Witaj, |PLAYERNAME|, i witaj w Liberty Bay! Czy chcesz informacje i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.202942Z"
+  },
+  "npc.guide_edna.greet_msg_1": {
+    "src_hash": "fa4a7a5f26347998d0fba87ddf1e12fe",
+    "text": "Miau, witaj w Yalahar, |PLAYERNAME|! Choć może tak nie wyglądam, mogę dać ci {information} i przewodnik po {map}. Potrzebujesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.221390Z"
+  },
+  "npc.guide_elena.greet_msg_1": {
+    "src_hash": "7b0af3720125ebc0299a9690e721235a",
+    "text": "Witaj w Venore, |PLAYERNAME|. Czy chcesz informacje i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.244058Z"
+  },
+  "npc.guide_kunibert.greet_msg_1": {
+    "src_hash": "8d5b35490be06573b0d84578330702c1",
+    "text": "Witaj w Rathleton, |PLAYERNAME|! Szukasz transportu na główną wyspę Oramond, czy chcesz informacji i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.303758Z"
+  },
+  "npc.guide_luke.greet_msg_1": {
+    "src_hash": "3b3c55987c8a03288b16269c3dff2d65",
+    "text": "Witaj, |PLAYERNAME|, i witaj w Thais! Czy chcesz {information} i przewodnik po {map}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.327575Z"
+  },
+  "npc.guide_rahlkora.greet_msg_1": {
+    "src_hash": "52692c98bd63afaf89abaf3f0a156585",
+    "text": "Witaj w Ankrahmun, |PLAYERNAME|. To miasto na początku może być trochę mylące. Chcesz informacje i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.360825Z"
+  },
+  "npc.guide_thelandil.greet_msg_1": {
+    "src_hash": "11b80660f39241a5434022eabd0920c4",
+    "text": "Witaj, |PLAYERNAME|, i witaj w Ab'Dendriel! Czy chcesz informacje i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.390029Z"
+  },
+  "npc.guide_tiko.greet_msg_1": {
+    "src_hash": "a0b7663b86e7e4547b427353adbbb525",
+    "text": "Witaj i witaj w Port Hope! Chcesz trochę informacji i przewodnik po mapie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.408361Z"
+  },
+  "npc.gurbasch.farewell_msg_1": {
+    "src_hash": "b6febd60d615e293d143caedc364bcfe",
+    "text": "Witaj, |PLAYERNAME|! Piękny parowiec, prawda? Mogę nawet zaoferować ci {passage}, jeśli chcesz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.428029Z"
+  },
+  "npc.gurbasch.stdmod_3": {
+    "src_hash": "a85fea5aebe72b0522bf14339f8b632a",
+    "text": "Cóż, możesz być właśnie bohaterem, którego tam potrzebują. Prawdę mówiąc, część naszych najbardziej niezawodnych kopalń rudy zaczęła się wyczerpywać... \\z Dlatego rozwinęliśmy nowe technologie parowców, by móc dalej badać i kartografować wielkie podziemne rzeki. Nasi bracia założyli bazę na kontynencie bardzo, bardzo daleko stąd... \\z Nazywamy ją bazą bardzo, bardzo daleko. Ale ponieważ mamy nadzieję, że pewnego dnia stanie się kwitnącą kopalnią, większość z nas zaczęła nazywać ją {Farmine}. Krasnoludy na miejscu naprawdę potrzebują teraz pomocy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.435936Z"
+  },
+  "npc.gurbasch.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Do następnego razu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.441755Z"
+  },
+  "npc.hairycles.greet_msg_2": {
+    "src_hash": "2809de79894765e53e9373dcb1e1ac78",
+    "text": "Witaj, przyjacielu małpiego ludu. Jeśli chcesz {trade}, po prostu zapytaj o moje oferty. Jeśli jesteś ranny, poproś o leczenie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.452578Z"
+  },
+  "npc.halvar.greet_msg_1": {
+    "src_hash": "20d6872c9886f8fd14353bd4f5615c0a",
+    "text": "Witaj, zawodniku! Chcesz {fight} na arenie, czy mam najpierw wyjaśnić {rules}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:52:59.608827Z"
   }
 }

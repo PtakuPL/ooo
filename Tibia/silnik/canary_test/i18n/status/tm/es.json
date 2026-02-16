@@ -141046,5 +141046,253 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:46:13.986663Z"
+  },
+  "data.otservbr.global.npc.kawill.L88.276": {
+    "src_hash": "375da4c35e8737bfec27241f35bb623c",
+    "text": "¡Bienvenido |PLAYERNAME|! ¡Que la tierra os proteja!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.195482Z"
+  },
+  "data.otservbr.global.npc.kawill.L89.277": {
+    "src_hash": "8473fa332d7c87ddbb8eca4e3970bde6",
+    "text": "¡Tierra bajo tus pies, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.197118Z"
+  },
+  "data.otservbr.global.npc.kawill.L90.278": {
+    "src_hash": "0e7c9ac6d5d333fc3f7d39ef117dc3ee",
+    "text": "Tierra bajo tus pies, peregrino. ¿Qué te trae por aquí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.198773Z"
+  },
+  "data.otservbr.global.npc.kendra.L83.1057": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.203211Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L84.1068": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.206144Z"
+  },
+  "data.otservbr.global.npc.klaus.L86.425": {
+    "src_hash": "49a8ec2cd2ac4e80af62824803c36fcf",
+    "text": "Siempre que tengas la garganta seca, ya sabes dónde encontrar mi taberna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.213997Z"
+  },
+  "data.otservbr.global.npc.lailene.L55.309": {
+    "src_hash": "a21aa717d510ec030be90be63a987599",
+    "text": "¿Qué quieres en mi tienda de batas mágicas? Dudo que tenga algo que sea de su interés.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.220902Z"
+  },
+  "data.otservbr.global.npc.lardoc.bashsmite.L259.1202": {
+    "src_hash": "b211bcadeb014b868626eda4e6f51196",
+    "text": "Como obviamente usted no es uno de mis parientes que me hace una visita muy retrasada, deberíamos conseguir {work} de inmediato. Veremos si puedes demostrar tu {worth} ante nuestra alianza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.227243Z"
+  },
+  "data.otservbr.global.npc.lazaran.L176.388": {
+    "src_hash": "96372361df95655d9e060b93114a4d35",
+    "text": "Yo saludo. No eres enemigo de la tribu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.229988Z"
+  },
+  "data.otservbr.global.npc.lea.L62.1369": {
+    "src_hash": "18a02a3cb18889047bcaf57aa5d58265",
+    "text": "Cuídate en tus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.232056Z"
+  },
+  "data.otservbr.global.npc.lector.L56.1219": {
+    "src_hash": "e7e8376c8ebc0e34eb5dce943e3eb35e",
+    "text": "Por favor ven y compra de nuevo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.234411Z"
+  },
+  "data.otservbr.global.npc.lector.L57.1220": {
+    "src_hash": "9d91a8c725ee133251c60e4a29425753",
+    "text": "Por supuesto, mira bien mi carne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.235991Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L152.410": {
+    "src_hash": "2b98a21dd3ecc8b73f39abd3b404c6ba",
+    "text": "Claro, echa un vistazo, cariño.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.238319Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L153.411": {
+    "src_hash": "3fce01a91a23475db857bb6058700e97",
+    "text": "¡Qué bueno verte, |PLAYERNAME|! Pídeme un {trade} si quieres ver mis ofertas exclusivas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.240462Z"
+  },
+  "data.otservbr.global.npc.liane.L95.484": {
+    "src_hash": "32df9254b9776388eb1c634b940522f1",
+    "text": "Hola. ¿Cómo puedo ayudarte |PLAYERNAME|? Pídeme un intercambio si quieres comprar algo. También puedo explicar el sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.242595Z"
+  },
+  "data.otservbr.global.npc.liane.L96.485": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.244249Z"
+  },
+  "data.otservbr.global.npc.liane.L97.486": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.245866Z"
+  },
+  "data.otservbr.global.npc.liane.L98.487": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aquí. No olvides que también debes comprar una etiqueta si quieres enviar un paquete. Escriba siempre el nombre del {receiver} en la primera línea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.248067Z"
+  },
+  "data.otservbr.global.npc.lily.L285.123": {
+    "src_hash": "797120acf39e816b4666bc8649e89356",
+    "text": "Por supuesto, simplemente navega por mis ofertas. Si compras una poción, no olvides que hay un {deposit} de 5 de oro en el frasco vacío.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.251836Z"
+  },
+  "data.otservbr.global.npc.lily.L69.118": {
+    "src_hash": "c85bd82113d310a30767258fcba1ef2a",
+    "text": "¡Oye, |PLAYERNAME|! Vascalir debe haberte enviado para que me ayudes con un poco de {mission}, ¿verdad?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.255044Z"
+  },
+  "data.otservbr.global.npc.lily.L72.119": {
+    "src_hash": "9f97d334b171026b4ef7757112fb8bdb",
+    "text": "Hola, |PLAYERNAME|! ¿Volviste tan pronto? ¿Le has entregado las hierbas a Hyacinth?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.256989Z"
+  },
+  "data.otservbr.global.npc.lily.L74.120": {
+    "src_hash": "c81ecf943aa00abd9e5f2a3b2639f5cc",
+    "text": "¡Bienvenido, |PLAYERNAME|! Te ves un poco estresado hoy. Si quieres ver mis ofertas de pociones, sólo pídeme un {trade}. En caso de que estés buscando el mercado y las mazmorras, ¡simplemente sigue el camino hacia el este!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.259447Z"
+  },
+  "data.otservbr.global.npc.lisander.L77.251": {
+    "src_hash": "7c9a44fbee81a7f2ea36e355b65372b7",
+    "text": "Preferiría que me dejaran en {peace}. Sea breve.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.260975Z"
+  },
+  "data.otservbr.global.npc.lorbas.L93.1556": {
+    "src_hash": "ad7a902e164149be3a4a215f7f0cfea2",
+    "text": "Un saludo, querido viajero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.264567Z"
+  },
+  "data.otservbr.global.npc.lothar.L129.304": {
+    "src_hash": "959262dbf2c11b1b0a94e84d13606e40",
+    "text": "Bienvenido a mi humilde cabaña, |PLAYERNAME|. ¿Qué te trae {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.269901Z"
+  },
+  "data.otservbr.global.npc.loui.L105.1165": {
+    "src_hash": "2cdc3811af0d4d8665946cb6669780f3",
+    "text": "¡MANTÉNGASE ALEJADO DE ESE AGUJERO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.272026Z"
+  },
+  "data.otservbr.global.npc.loui.L106.1166": {
+    "src_hash": "ae6d100c5b4674e4f49badaaa2c62903",
+    "text": "¡Que los dioses te protejan! ¡Y mantente alejado de ese agujero!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.273730Z"
+  },
+  "data.otservbr.global.npc.lubo.L156.1432": {
+    "src_hash": "a50751bb10a3b51d4395f76efe466880",
+    "text": "¡Bienvenido a mi tienda de aventureros, |PLAYERNAME|! ¿Qué necesitas? Pídeme un {trade} para ver mis productos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.276455Z"
+  },
+  "data.otservbr.global.npc.lukosch.L87.215": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "¡Bienvenido, |PLAYERNAME|! ¿Te sientes aventurero? ¿Quiere un {ticket} semanal para el sistema de vagones de mineral aquí? ¡Puedes usarlo aquí mismo para llegar al centro de Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.280899Z"
+  },
+  "data.otservbr.global.npc.lukosch.L88.216": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Espero verte de nuevo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.282443Z"
+  },
+  "data.otservbr.global.npc.luna.L61.1332": {
+    "src_hash": "17fe9a8867d6771bd75b2ddc7d49f7d7",
+    "text": "Saludos, viajero. Tal vez quieras echarle un vistazo a mi {offers}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:55.284137Z"
   }
 }

@@ -89958,5 +89958,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:46:03.425500Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L58.651": {
+    "src_hash": "496ad5f3e14146562fd4fa124ab41003",
+    "text": "Pozdrawiam, podróżniku |PLAYERNAME|. To ty musisz być tym, którego przysłała Lily. Czy masz dla mnie worek {herbs}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:32.265193Z"
+  },
+  "data.otservbr.global.npc.liane.L95.484": {
+    "src_hash": "32df9254b9776388eb1c634b940522f1",
+    "text": "Cześć. Jak mogę Ci pomóc |PLAYERNAME|? Jeśli chcesz coś kupić, zapytaj mnie o wymianę. Mogę również wyjaśnić system {mail}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:38.966363Z"
+  },
+  "data.otservbr.global.npc.marlene.L100.422": {
+    "src_hash": "7ba8d31490e72e1f7d41e03d8cbf8e52",
+    "text": "Ach, witaj |PLAYERNAME|! Powiedz, czy słyszałeś już najnowsze wiadomości o {seamonster}, {Aneus} lub {rumours} w tym obszarze?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:45.881085Z"
+  },
+  "data.otservbr.global.npc.mordecai.L157.588": {
+    "src_hash": "41bcc6bd6ff8f880bff86df964724f87",
+    "text": "Witamy w magicznym sklepie, dziecko. Zapytaj mnie o wymianę, jeśli potrzebujesz {runes}, {wands} lub ksiąg zaklęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:45.882459Z"
+  },
+  "data.otservbr.global.npc.myra.L319.1418": {
+    "src_hash": "4c435efd925ac7ae7769db4166aac9d3",
+    "text": "Pozdrawiam, |PLAYERNAME|. Jeśli szukasz czarownika {spells}, nie wahaj się zapytać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:48:45.883265Z"
   }
 }

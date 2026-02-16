@@ -1,6 +1,6 @@
 {
-  "file": "npc.json",
-  "lang": "es",
+  "file": "questlog.json",
+  "lang": "ru",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -14,9 +14,9 @@
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 97.1,
-      "total_keys": 13769,
-      "real_translations": 13375
+      "coverage_pct": 100.0,
+      "total_keys": 1918,
+      "real_translations": 1918
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-16T20:15:21.610050Z"
+  "timestamp": "2026-02-16T20:14:05.118013Z"
 }

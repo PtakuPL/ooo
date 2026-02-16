@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T13:47:31.598366Z",
+  "checked_at": "2026-02-16T20:16:38.296710Z",
   "issues_total": 463,
   "issues_by_type": {
     "consistency_in_language": 50,
@@ -1193,312 +1193,6 @@
       "en": "lampions",
       "pl": "lampiony",
       "lang": "lampions"
-    },
-    {
-      "key": "item.14084.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "larvae",
-      "pl": "larwy",
-      "lang": "larvae"
-    },
-    {
-      "key": "item.14142.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "foxtail",
-      "pl": "ber",
-      "lang": "foxtail"
-    },
-    {
-      "key": "item.14156.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dog collar",
-      "pl": "obroża dla psa",
-      "lang": "dog collar"
-    },
-    {
-      "key": "item.14171.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "hive pore",
-      "pl": "pory ula",
-      "lang": "hive pore"
-    },
-    {
-      "key": "item.14172.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gooey mass",
-      "pl": "lepka masa",
-      "lang": "gooey mass"
-    },
-    {
-      "key": "item.14225.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dung ball",
-      "pl": "kula gnoju",
-      "lang": "dung ball"
-    },
-    {
-      "key": "item.14240.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fish swarm",
-      "pl": "rój ryb",
-      "lang": "fish swarm"
-    },
-    {
-      "key": "item.14670.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "CM token",
-      "pl": "Token CM",
-      "lang": "CM token"
-    },
-    {
-      "key": "item.14741.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "easel kit",
-      "pl": "zestaw sztalugowy",
-      "lang": "easel kit"
-    },
-    {
-      "key": "item.14753.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dung ball",
-      "pl": "kula gnoju",
-      "lang": "dung ball"
-    },
-    {
-      "key": "item.15100.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mushrooms",
-      "pl": "grzyby",
-      "lang": "mushrooms"
-    },
-    {
-      "key": "item.15634.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "carrot",
-      "pl": "marchew",
-      "lang": "carrot"
-    },
-    {
-      "key": "item.15635.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "carrots",
-      "pl": "marchewki",
-      "lang": "carrots"
-    },
-    {
-      "key": "item.15826.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "whetstone",
-      "pl": "osełka",
-      "lang": "whetstone"
-    },
-    {
-      "key": "item.15827.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "horn",
-      "pl": "róg",
-      "lang": "horn"
-    },
-    {
-      "key": "item.15828.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "little pig",
-      "pl": "małym świnia",
-      "lang": "little pig"
-    },
-    {
-      "key": "item.15832.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bell",
-      "pl": "dzwonek",
-      "lang": "bell"
-    },
-    {
-      "key": "item.15833.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "little pig",
-      "pl": "małym świnia",
-      "lang": "little pig"
-    },
-    {
-      "key": "item.16087.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "purse",
-      "pl": "torebka",
-      "lang": "purse"
-    },
-    {
-      "key": "item.16102.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mucus plug",
-      "pl": "czop śluzowy",
-      "lang": "mucus plug"
-    },
-    {
-      "key": "item.16104.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gill gugel",
-      "pl": "skrzelowy gugel",
-      "lang": "gill gugel"
-    },
-    {
-      "key": "item.16105.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gill coat",
-      "pl": "płaszcz skrzelowy",
-      "lang": "gill coat"
-    },
-    {
-      "key": "item.16244.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "music box",
-      "pl": "muzyka pudełko",
-      "lang": "music box"
-    },
-    {
-      "key": "item.17821.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "rat cheese",
-      "pl": "szczur ser",
-      "lang": "rat cheese"
-    },
-    {
-      "key": "item.17858.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "leech",
-      "pl": "pijawka",
-      "lang": "leech"
-    },
-    {
-      "key": "item.17950.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "swamp",
-      "pl": "bagno",
-      "lang": "swamp"
-    },
-    {
-      "key": "item.18134.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "slain hero",
-      "pl": "zabity bohater",
-      "lang": "slain hero"
-    },
-    {
-      "key": "item.18135.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "slain hero",
-      "pl": "zabity bohater",
-      "lang": "slain hero"
-    },
-    {
-      "key": "item.18136.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "slain hero",
-      "pl": "zabity bohater",
-      "lang": "slain hero"
-    },
-    {
-      "key": "item.18137.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "slain hero",
-      "pl": "zabity bohater",
-      "lang": "slain hero"
-    },
-    {
-      "key": "item.18814.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "branches",
-      "pl": "gałęzie",
-      "lang": "branches"
-    },
-    {
-      "key": "item.18880.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sandstone",
-      "pl": "piaskowiec",
-      "lang": "sandstone"
-    },
-    {
-      "key": "item.19359.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "horn",
-      "pl": "róg",
-      "lang": "horn"
-    },
-    {
-      "key": "item.20052.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bad dream",
-      "pl": "Zły sen",
-      "lang": "bad dream"
     },
     {
       "key": "item.2025.name",
@@ -4388,6 +4082,312 @@
       "en": "Anomaly",
       "pl": "ANiemaly",
       "lang": "Anomaly"
+    },
+    {
+      "key": "monster.anomaly.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "anomaly",
+      "pl": "aNiemaly",
+      "lang": "anomaly"
+    },
+    {
+      "key": "monster.disruption.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Disruption",
+      "pl": "Zakłócenie",
+      "lang": "Disruption"
+    },
+    {
+      "key": "monster.the_rage.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Rage",
+      "pl": "Wściekłość",
+      "lang": "The Rage"
+    },
+    {
+      "key": "monster.the_rage.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Rage",
+      "pl": "Wściekłość",
+      "lang": "The Rage"
+    },
+    {
+      "key": "monster.outburst.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Outburst",
+      "pl": "Wybuch",
+      "lang": "Outburst"
+    },
+    {
+      "key": "monster.outburst.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Outburst",
+      "pl": "Wybuch",
+      "lang": "Outburst"
+    },
+    {
+      "key": "monster.foreshock.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Foreshock",
+      "pl": "Przedwstrząs",
+      "lang": "Foreshock"
+    },
+    {
+      "key": "monster.foreshock.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Foreshock",
+      "pl": "Przedwstrząs",
+      "lang": "Foreshock"
+    },
+    {
+      "key": "monster.overcharge.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Overcharge",
+      "pl": "Przeciążenie",
+      "lang": "Overcharge"
+    },
+    {
+      "key": "monster.greed.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greed",
+      "pl": "Chciwość",
+      "lang": "Greed"
+    },
+    {
+      "key": "monster.greed.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greed",
+      "pl": "Chciwość",
+      "lang": "Greed"
+    },
+    {
+      "key": "monster.aftershock.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Aftershock",
+      "pl": "Wstrząs wtórny",
+      "lang": "Aftershock"
+    },
+    {
+      "key": "monster.aftershock.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Aftershock",
+      "pl": "Wstrząs wtórny",
+      "lang": "Aftershock"
+    },
+    {
+      "key": "monster.eradicator2.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Eradicator",
+      "pl": "Eliminator",
+      "lang": "Eradicator"
+    },
+    {
+      "key": "monster.mephiles.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mephiles",
+      "pl": "Mefile",
+      "lang": "Mephiles"
+    },
+    {
+      "key": "monster.mephiles.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mephiles",
+      "pl": "Mefile",
+      "lang": "Mephiles"
+    },
+    {
+      "key": "monster.dirtbeard.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dirtbeard",
+      "pl": "Brudnobrody",
+      "lang": "Dirtbeard"
+    },
+    {
+      "key": "monster.dirtbeard.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dirtbeard",
+      "pl": "Brudnobrody",
+      "lang": "Dirtbeard"
+    },
+    {
+      "key": "monster.monstor.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Monstor",
+      "pl": "Potwór",
+      "lang": "Monstor"
+    },
+    {
+      "key": "monster.monstor.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Monstor",
+      "pl": "Potwór",
+      "lang": "Monstor"
+    },
+    {
+      "key": "monster.lost_gnome.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lost Gnome",
+      "pl": "Lost GNieme",
+      "lang": "Lost Gnome"
+    },
+    {
+      "key": "monster.earworm.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Earworm",
+      "pl": "Robak uszny",
+      "lang": "Earworm"
+    },
+    {
+      "key": "monster.earworm.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "an earworm",
+      "pl": "robak uszny",
+      "lang": "an earworm"
+    },
+    {
+      "key": "monster.despair.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Despair",
+      "pl": "Rozpacz",
+      "lang": "Despair"
+    },
+    {
+      "key": "monster.despair.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a despair",
+      "pl": "rozpacz",
+      "lang": "a despair"
+    },
+    {
+      "key": "monster.guilt.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guilt",
+      "pl": "Wina",
+      "lang": "Guilt"
+    },
+    {
+      "key": "monster.guilt.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guilt",
+      "pl": "Wina",
+      "lang": "Guilt"
+    },
+    {
+      "key": "monster.razzagorn.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razzagorn",
+      "pl": "Razzagorna",
+      "lang": "Razzagorn"
+    },
+    {
+      "key": "monster.razzagorn.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razzagorn",
+      "pl": "Razzagorna",
+      "lang": "Razzagorn"
+    },
+    {
+      "key": "monster.zamulosh.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zamulosh",
+      "pl": "Zamulosz",
+      "lang": "Zamulosh"
+    },
+    {
+      "key": "monster.zamulosh.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zamulosh",
+      "pl": "Zamułosz",
+      "lang": "Zamulosh"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "INSECTS!",
+      "pl": "OWAD!",
+      "lang": "INSECTS!"
+    },
+    {
+      "key": "monster.zamulosh3.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zamulosh",
+      "pl": "Zamułosz",
+      "lang": "Zamulosh"
+    },
+    {
+      "key": "monster.zamulosh2.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "zamulosh",
+      "pl": "zamulosz",
+      "lang": "zamulosh"
     }
   ],
   "length_ratio_issues": [
@@ -4511,8 +4511,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 34,
-    "skipped": 46,
+    "applied": 27,
+    "skipped": 53,
     "errors": 0
   }
 }

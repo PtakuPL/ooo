@@ -39,7 +39,7 @@ public:
 
     // Set/get the default BCP-47 locale tag used for HarfBuzz text shaping
     void setLocaleTag(const std::string& tag);
-    std::string getLocaleTag() const;
+    std::string getLocaleTag();
 
     bool importFont(const std::string& file);
 

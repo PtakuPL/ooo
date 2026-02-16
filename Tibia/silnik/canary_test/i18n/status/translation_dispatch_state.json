@@ -1,19 +1,24 @@
 {
-  "timestamp": "2026-02-14T13:52:45.116377Z",
-  "cycle_counter": 555,
-  "last_target_key": "es:questlog.json",
-  "last_pending_total": 1644,
+  "timestamp": "2026-02-16T20:14:12.181224Z",
+  "cycle_counter": 558,
+  "last_target_key": "it:otclient_modules.json",
+  "last_pending_total": 1987,
   "last_tier": 1,
   "last_cat_priority": 9,
-  "candidates_count": 46,
-  "active_candidates_count": 40,
+  "candidates_count": 288,
+  "active_candidates_count": 282,
   "skipped_backoff": 6,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
   "tier_config": {
     "tier1": [
       "es",
-      "pl"
+      "it",
+      "pl",
+      "ro",
+      "ru",
+      "sr",
+      "sv"
     ],
     "tier2": [
       "cs",
@@ -269,13 +274,20 @@
     "kk:monsters.json": 0,
     "ko:monsters.json": 0,
     "pl:server.json": 0,
-    "pl:libs.json": 0
+    "pl:libs.json": 0,
+    "ru:questlog.json": 0,
+    "ro:otclient_modules.json": 0
   },
   "bootstrap_priority": {
-    "enabled": true,
+    "enabled": false,
     "sequence": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "sr",
+      "sv"
     ],
     "completed": [
       "es",
@@ -290,21 +302,18 @@
   "global_quality_mode": true,
   "priority_gate": {
     "enabled": true,
-    "active": true,
+    "active": false,
     "coverage_target": 100.0,
     "priority_langs": [
+      "pl",
       "es",
-      "pl"
+      "ru",
+      "ro",
+      "it",
+      "sr",
+      "sv"
     ],
-    "pending_langs": [
-      "es",
-      "pl"
-    ],
-    "lang_completion": {
-      "es": 73.14,
-      "pl": 42.02
-    }
-  },
-  "last_phase": "MIGRATION",
-  "last_phase_ts": "2026-02-14T14:55:48"
+    "pending_langs": [],
+    "lang_completion": {}
+  }
 }

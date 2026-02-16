@@ -3198,5 +3198,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:27:53.122810Z"
+  },
+  "otclient_modules.addgroup_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.703200Z"
+  },
+  "otclient_modules.addgroup_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.703447Z"
+  },
+  "otclient_modules.addserver.tr_1": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.704029Z"
+  },
+  "otclient_modules.addserver_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.704230Z"
+  },
+  "otclient_modules.addvip_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.704800Z"
+  },
+  "otclient_modules.addvip_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.704982Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.705366Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.705593Z"
+  },
+  "otclient_modules.assign_object_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.705826Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.706592Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_6": {
+    "src_hash": "b068931cc450442b63f5b3d276ea4297",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.707050Z"
+  },
+  "otclient_modules.assign_text_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.707393Z"
+  },
+  "otclient_modules.bestiary_otui.tr_2": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.709667Z"
+  },
+  "otclient_modules.bestiary_otui.tr_3": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.709897Z"
+  },
+  "otclient_modules.bestiary_otui.tr_4": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.710198Z"
+  },
+  "otclient_modules.bestiary_otui.tr_5": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.710413Z"
+  },
+  "otclient_modules.bestiary_otui.tr_6": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.710735Z"
+  },
+  "otclient_modules.bestiary_otui.tr_9": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.711056Z"
+  },
+  "otclient_modules.blessing.tr_10": {
+    "src_hash": "be5d5d37542d75f93a87094459f76678",
+    "text": "and",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.711441Z"
+  },
+  "otclient_modules.browse_otui.tr_8": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.715290Z"
+  },
+  "otclient_modules.bugreport_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.715518Z"
+  },
+  "otclient_modules.calendar_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.715978Z"
+  },
+  "otclient_modules.changename_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.716800Z"
+  },
+  "otclient_modules.changename_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.717025Z"
+  },
+  "otclient_modules.changename_otui.tr_6": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.717457Z"
+  },
+  "otclient_modules.changename_otui.tr_7": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.717668Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.717890Z"
+  },
+  "otclient_modules.character.tr_56": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.720777Z"
+  },
+  "otclient_modules.character.tr_57": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.720956Z"
+  },
+  "otclient_modules.character_otui.tr_30": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.724436Z"
+  },
+  "otclient_modules.character_otui.tr_46": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.725601Z"
+  },
+  "otclient_modules.character_otui.tr_71": {
+    "src_hash": "ed4dd6cc118ab2500715cbd23b054573",
+    "text": "Axe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.727227Z"
+  },
+  "otclient_modules.character_otui.tr_72": {
+    "src_hash": "6c198603789a4928477eccd5d550b6b2",
+    "text": "Sabie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.727608Z"
+  },
+  "otclient_modules.character_otui.tr_93": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.728998Z"
+  },
+  "otclient_modules.characterlist.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.730026Z"
+  },
+  "otclient_modules.characterlist.tr_5": {
+    "src_hash": "d15305d7a4e34e02489c74a5ef542f36",
+    "text": "OFF",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.730514Z"
+  },
+  "otclient_modules.characterlist.tr_6": {
+    "src_hash": "521c36a31c2762741cf0f8890cbe05e3",
+    "text": "ON",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.730736Z"
+  },
+  "otclient_modules.characterlist_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.731182Z"
+  },
+  "otclient_modules.characterlist_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.731420Z"
+  },
+  "otclient_modules.characterlist_otui.tr_7": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.731875Z"
+  },
+  "otclient_modules.charms.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.732248Z"
+  },
+  "otclient_modules.charms.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.732424Z"
+  },
+  "otclient_modules.charms.tr_13": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.732790Z"
+  },
+  "otclient_modules.charms.tr_14": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.732965Z"
+  },
+  "otclient_modules.charms.tr_17": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.733217Z"
+  },
+  "otclient_modules.charms.tr_18": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.733529Z"
+  },
+  "otclient_modules.charms.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.733785Z"
+  },
+  "otclient_modules.charms.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.736491Z"
+  },
+  "otclient_modules.charms.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.737704Z"
+  },
+  "otclient_modules.charms.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:09.739059Z"
   }
 }

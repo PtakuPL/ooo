@@ -54,7 +54,7 @@ void FontManager::setLocaleTag(const std::string& tag) {
     otc::text::LocaleShaping::setDefaultLocaleTag(tag);
 }
 
-std::string FontManager::getLocaleTag() const {
+std::string FontManager::getLocaleTag() {
     return otc::text::LocaleShaping::getDefaultLocaleTag();
 }
 

@@ -2,8 +2,8 @@
   "categories": {
     "actions": {
       "backoff": {
-        "consecutive_zeros": 11,
-        "skip_until_utc": "2026-02-14T15:33:29Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -11,12 +11,12 @@
         },
         "updated_at_utc": "2026-02-14T13:33:29Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "chatchannels": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:40:30Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -24,12 +24,12 @@
         },
         "updated_at_utc": "2026-02-14T13:40:30Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "cpp": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:43:14Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -37,12 +37,12 @@
         },
         "updated_at_utc": "2026-02-14T13:43:14Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "creaturescripts": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:39:21Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -50,12 +50,12 @@
         },
         "updated_at_utc": "2026-02-14T13:39:21Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "dataroot": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:42:58Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -63,12 +63,12 @@
         },
         "updated_at_utc": "2026-02-14T13:42:58Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "errors": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:45:57Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -76,12 +76,12 @@
         },
         "updated_at_utc": "2026-02-14T13:45:57Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "events": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:40:20Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -89,7 +89,7 @@
         },
         "updated_at_utc": "2026-02-14T13:40:20Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "globalevents": {
       "backoff": {
@@ -119,8 +119,8 @@
     },
     "libs": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:40:03Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -128,7 +128,7 @@
         },
         "updated_at_utc": "2026-02-14T13:40:03Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "modules": {
       "backoff": {
@@ -158,8 +158,8 @@
     },
     "mounts": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:39:28Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -167,7 +167,7 @@
         },
         "updated_at_utc": "2026-02-14T13:39:28Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "movements": {
       "backoff": {
@@ -197,8 +197,8 @@
     },
     "npclib": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:40:46Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -206,12 +206,12 @@
         },
         "updated_at_utc": "2026-02-14T13:40:46Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "otclient_data": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:45:21Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -219,7 +219,7 @@
         },
         "updated_at_utc": "2026-02-14T13:45:21Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "otclient_mods": {
       "backoff": {
@@ -236,8 +236,8 @@
     },
     "otclient_modules": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:43:27Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -245,12 +245,12 @@
         },
         "updated_at_utc": "2026-02-14T13:43:27Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "otclient_src": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:45:30Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -258,12 +258,12 @@
         },
         "updated_at_utc": "2026-02-14T13:45:30Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "otclient_tools": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:45:39Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -271,12 +271,12 @@
         },
         "updated_at_utc": "2026-02-14T13:45:39Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "quests": {
       "backoff": {
-        "consecutive_zeros": 11,
-        "skip_until_utc": "2026-02-14T15:34:00Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -284,7 +284,7 @@
         },
         "updated_at_utc": "2026-02-14T13:34:00Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "raids": {
       "backoff": {
@@ -301,8 +301,8 @@
     },
     "scripts": {
       "backoff": {
-        "consecutive_zeros": 11,
-        "skip_until_utc": "2026-02-14T15:15:55Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -310,12 +310,12 @@
         },
         "updated_at_utc": "2026-02-14T13:15:55Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "server": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:45:48Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -323,12 +323,12 @@
         },
         "updated_at_utc": "2026-02-14T13:45:48Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "spells": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:38:52Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -336,7 +336,7 @@
         },
         "updated_at_utc": "2026-02-14T13:38:52Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "startup": {
       "backoff": {
@@ -353,8 +353,8 @@
     },
     "talkactions": {
       "backoff": {
-        "consecutive_zeros": 10,
-        "skip_until_utc": "2026-02-14T15:39:08Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -362,7 +362,7 @@
         },
         "updated_at_utc": "2026-02-14T13:39:08Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "world": {
       "backoff": {
@@ -378,10 +378,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-14T13:55:12Z",
+  "generated_at_utc": "2026-02-16T20:17:44Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 1576,
+    "errors_total": 1578,
     "files_processed_total": 6443,
     "languages_total": 54
   },
@@ -389,52 +389,21 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "npc.json",
-        "keys_to_translate": 5,
-        "language": "cs",
-        "recent_examples": [
-          {
-            "en": "Hail Pumin. Yes, hail.",
-            "key": "npc.a_dead_bureaucrat2.voice_2",
-            "source": "simple",
-            "translated": "Nazdar Pumin. Ano, kroupy."
-          },
-          {
-            "en": "Hail Pumin. Yes, hail.",
-            "key": "npc.a_dead_bureaucrat3.voice_2",
-            "source": "simple",
-            "translated": "Nazdar Pumin. Ano, kroupy."
-          },
-          {
-            "en": "Hail Pumin. Yes, hail.",
-            "key": "npc.a_dead_bureaucrat4.voice_2",
-            "source": "simple",
-            "translated": "Nazdar Pumin. Ano, kroupy."
-          },
-          {
-            "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-            "key": "npc.a_dragon_lord.greet_msg_1",
-            "source": "simple",
-            "translated": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>"
-          },
-          {
-            "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-            "key": "npc.a_dragon_lord.greet_msg_2",
-            "source": "simple",
-            "translated": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>"
-          }
-        ],
-        "recent_translated": 5,
+        "json_file": "questlog.json",
+        "keys_to_translate": 1902,
+        "language": "ru",
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "cs",
+      "category": "ru",
       "idle": {
         "last_scan": "2025-12-16T05:59:39.875505",
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-14T14:49:19.161886",
+      "last_update": "2026-02-16T21:17:44.129638",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -471,24 +440,24 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "pending_skip",
-      "detail": "all categories skipped",
+      "category": "ru",
+      "detail": "cycle end",
       "eta_seconds": 0,
       "file": "-",
-      "phase": "MIGRATION",
+      "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
         "total": 0,
-        "unit": "files"
+        "unit": "units"
       },
-      "stage": "pending_skip"
+      "stage": "cycle_end"
     },
-    "cycle": 4,
-    "heartbeat_at_utc": "2026-02-14T13:54:43Z",
+    "cycle": 1,
+    "heartbeat_at_utc": "2026-02-16T20:17:44Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2269112,
+    "pid": 1173309,
     "status": "running",
     "version": "unknown"
   }

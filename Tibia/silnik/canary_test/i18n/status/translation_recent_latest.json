@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-14T13:52:42.842467Z",
+  "timestamp": "2026-02-16T20:15:21.600086Z",
   "language": "es",
-  "json_file": "raids.json",
-  "translated": 23,
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "raid.barba_bittermor.name",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor",
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
       "source": "tm"
     },
     {
-      "key": "raid.ice_golems.name",
-      "en": "Ice Golems",
-      "translated": "Hielo Exitosamente",
-      "source": "simple"
-    },
-    {
-      "key": "raid.badger.name",
-      "en": "Badger",
-      "translated": "Tejón",
-      "source": "simple"
-    },
-    {
-      "key": "raid.the_welter.name",
-      "en": "The Welter",
-      "translated": "Welter",
-      "source": "simple"
-    },
-    {
-      "key": "raid.midnight_panther_3.name",
-      "en": "Midnight Panther 3",
-      "translated": "Midnight Panther 3",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "raid.midnight_panther_1.name",
-      "en": "Midnight Panther 1",
-      "translated": "Midnight Panther 1",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "raid.terrorbirds.name",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "raid.midnight_panther_2.name",
-      "en": "Midnight Panther 2",
-      "translated": "Midnight Panther 2",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "raid.cyclops.name",
-      "en": "Cyclops",
-      "translated": "Cíclope",
-      "source": "simple"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "en": "Wild Horses",
-      "translated": "Wild Horses",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "raid.yeti.name",
-      "en": "Yeti",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "en": "Gargoyle",
-      "translated": "Gárgola",
-      "source": "simple"
-    },
-    {
-      "key": "raid.nomad.name",
-      "en": "Nomad",
-      "translated": "Female de nómada",
-      "source": "simple"
-    },
-    {
-      "key": "raid.cobra.name",
-      "en": "Cobra",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.terramite.name",
-      "en": "Terramite",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.scarab.name",
-      "en": "Scarab",
-      "translated": "Escarabajo",
-      "source": "simple"
-    },
-    {
-      "key": "raid.diblis_the_fair.name",
-      "en": "Diblis The Fair",
-      "translated": "Diblis fair",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "raid.fernfang.name",
-      "en": "Fernfang",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "raid.hunter.name",
-      "en": "Hunter",
-      "translated": "Cazador",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.harlow.farewell_msg_1",
+      "en": "Good bye.",
+      "translated": "Adiós.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.harlow.walkaway_msg_1",
+      "en": "Good bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.harlow_vengoth.farewell_msg_1",
+      "en": "Good bye.",
+      "translated": "Adiós.",
       "source": "simple"
     }
   ]

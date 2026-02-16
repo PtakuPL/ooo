@@ -139806,5 +139806,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T13:52:42.186999Z"
+  },
+  "npc.a_majestic_warwolf.farewell_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:15:17.620778Z"
+  },
+  "npc.a_majestic_warwolf.walkaway_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:15:17.624278Z"
+  },
+  "npc.a_sleeping_dragon.greet_msg_1": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:15:17.636013Z"
+  },
+  "npc.harlow.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:15:21.028067Z"
+  },
+  "npc.harlow.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:15:21.034688Z"
+  },
+  "npc.harlow_vengoth.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:15:21.035680Z"
   }
 }

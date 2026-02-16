@@ -11150,5 +11150,405 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:26:55.435852Z"
+  },
+  "otclient_modules.addgroup_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.151517Z"
+  },
+  "otclient_modules.addgroup_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.151742Z"
+  },
+  "otclient_modules.addserver.tr_1": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.152314Z"
+  },
+  "otclient_modules.addserver_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.152519Z"
+  },
+  "otclient_modules.addvip_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.153077Z"
+  },
+  "otclient_modules.addvip_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.153287Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.153680Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.153876Z"
+  },
+  "otclient_modules.assign_object_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.154152Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.154941Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_6": {
+    "src_hash": "b068931cc450442b63f5b3d276ea4297",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.155463Z"
+  },
+  "otclient_modules.assign_text_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.155823Z"
+  },
+  "otclient_modules.bestiary_otui.tr_2": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.158158Z"
+  },
+  "otclient_modules.bestiary_otui.tr_3": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.158417Z"
+  },
+  "otclient_modules.bestiary_otui.tr_4": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.158642Z"
+  },
+  "otclient_modules.bestiary_otui.tr_5": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.158864Z"
+  },
+  "otclient_modules.bestiary_otui.tr_6": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.159229Z"
+  },
+  "otclient_modules.bestiary_otui.tr_9": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.159585Z"
+  },
+  "otclient_modules.blessing.tr_10": {
+    "src_hash": "be5d5d37542d75f93a87094459f76678",
+    "text": "and",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.159993Z"
+  },
+  "otclient_modules.browse_otui.tr_8": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.164364Z"
+  },
+  "otclient_modules.bugreport_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.164604Z"
+  },
+  "otclient_modules.calendar_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.165128Z"
+  },
+  "otclient_modules.changename_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.166183Z"
+  },
+  "otclient_modules.changename_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.166395Z"
+  },
+  "otclient_modules.changename_otui.tr_6": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.166854Z"
+  },
+  "otclient_modules.changename_otui.tr_7": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.167074Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.167313Z"
+  },
+  "otclient_modules.character.tr_56": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.170841Z"
+  },
+  "otclient_modules.character.tr_57": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.171093Z"
+  },
+  "otclient_modules.character_otui.tr_30": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.175927Z"
+  },
+  "otclient_modules.character_otui.tr_46": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.177373Z"
+  },
+  "otclient_modules.character_otui.tr_71": {
+    "src_hash": "ed4dd6cc118ab2500715cbd23b054573",
+    "text": "Axe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.179198Z"
+  },
+  "otclient_modules.character_otui.tr_93": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.180804Z"
+  },
+  "otclient_modules.characterlist.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.181873Z"
+  },
+  "otclient_modules.characterlist.tr_5": {
+    "src_hash": "d15305d7a4e34e02489c74a5ef542f36",
+    "text": "OFF",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.182356Z"
+  },
+  "otclient_modules.characterlist.tr_6": {
+    "src_hash": "521c36a31c2762741cf0f8890cbe05e3",
+    "text": "ON",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.182671Z"
+  },
+  "otclient_modules.characterlist_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.183133Z"
+  },
+  "otclient_modules.characterlist_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.183371Z"
+  },
+  "otclient_modules.characterlist_otui.tr_7": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.183873Z"
+  },
+  "otclient_modules.charms.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.184258Z"
+  },
+  "otclient_modules.charms.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.184463Z"
+  },
+  "otclient_modules.charms.tr_13": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.184855Z"
+  },
+  "otclient_modules.charms.tr_14": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.185032Z"
+  },
+  "otclient_modules.charms.tr_17": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.185302Z"
+  },
+  "otclient_modules.charms.tr_18": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.185592Z"
+  },
+  "otclient_modules.charms.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.185832Z"
+  },
+  "otclient_modules.charms.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.188272Z"
+  },
+  "otclient_modules.charms.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.189214Z"
+  },
+  "otclient_modules.charms.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.190534Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:14:13.192161Z"
   }
 }

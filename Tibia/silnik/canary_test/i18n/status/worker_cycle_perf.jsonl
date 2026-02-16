@@ -6045,3 +6045,6 @@
 {"timestamp": "2026-02-14T13:54:42.501340Z", "cycle": 4, "mode": "MIGRATION", "category": "pending_skip", "phase": "dispatch", "duration_ms": 1369, "detail": "count=1634"}
 {"timestamp": "2026-02-14T13:55:15.730259Z", "cycle": 5, "mode": "MIGRATION", "category": "pending_skip", "phase": "dispatch", "duration_ms": 2204, "detail": "count=1634"}
 {"timestamp": "2026-02-14T13:55:48.836532Z", "cycle": 6, "mode": "MIGRATION", "category": "pending_skip", "phase": "dispatch", "duration_ms": 1511, "detail": "count=1634"}
+{"timestamp": "2026-02-16T20:13:42.442315Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "dispatch", "duration_ms": 2456, "detail": "count=questlog.json"}
+{"timestamp": "2026-02-16T20:17:43.539510Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "mode_run", "duration_ms": 240952, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-16T20:17:50.102487Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "status_update", "duration_ms": 5778, "detail": "throttle_every=1"}

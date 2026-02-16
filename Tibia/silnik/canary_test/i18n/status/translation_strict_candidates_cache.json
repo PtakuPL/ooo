@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-16T23:30:44.856898Z",
-  "built_cycle": 40,
+  "timestamp": "2026-02-16T23:31:09.665892Z",
+  "built_cycle": 41,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -138,9 +138,9 @@
     {
       "lang": "pl",
       "json_file": "npc.json",
-      "pending_total": 7599,
-      "todo": 7599,
-      "simple_todo": 584,
+      "pending_total": 7569,
+      "todo": 7569,
+      "simple_todo": 578,
       "missing_in_lang": 0
     },
     {

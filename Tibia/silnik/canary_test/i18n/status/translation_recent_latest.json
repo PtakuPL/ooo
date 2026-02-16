@@ -1,7 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:30:42.778941Z",
-  "language": "es",
-  "json_file": "chatchannels.json",
-  "translated": 0,
-  "entries": []
+  "timestamp": "2026-02-16T23:31:07.358655Z",
+  "language": "pl",
+  "json_file": "npc.json",
+  "translated": 50,
+  "entries": [
+    {
+      "key": "npc.iskan.greet_msg_1",
+      "en": "You are not one of us. I don't want to talk to you.",
+      "translated": "Nie jesteś jednym z nas. Nie chcę z tobą rozmawiać.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iskan.greet_msg_2",
+      "en": "I was told you have been killing huskies here in Svargrond! Never do that again, okay? They are precious animals for us. Give me 500 gold and I will forget that incident without telling it to Jarl Sven. Okay?",
+      "translated": "Powiedziano mi, że zabijałeś husky tutaj, w Svargrond! Nigdy więcej tego nie rób, dobrze? To dla nas cenne zwierzęta. Daj mi 500 sztuk złota, a zapomnę o tym incydencie i nic nie powiem Jarlowi Svenowi. Zgoda?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iskan.greet_msg_3",
+      "en": "HAIL to the Warlord of the arena! |PLAYERNAME|, Hero of Svargrond! What can I {do for you}?",
+      "translated": "CHWAŁA Wodzowi Areny! |PLAYERNAME|, Bohaterze Svargrond! Co mogę dla ciebie {do for you}?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iskan.greet_msg_4",
+      "en": "Greetings. What can I {do for you}?",
+      "translated": "Pozdrowienia. Co mogę dla ciebie {do for you}?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.ivalisse.walkaway_msg_1",
+      "en": "Oh... farewell, child.",
+      "translated": "Och... żegnaj, dziecko.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iwan.greet_msg_1",
+      "en": "Feel welcome to my gem store, |PLAYERNAME|.",
+      "translated": "Czuj się jak u siebie w moim sklepie z klejnotami, |PLAYERNAME|.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iwan.sendtrade_msg_1",
+      "en": "Here, take a look.",
+      "translated": "Proszę, spójrz.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iwar.greet_msg_1",
+      "en": "Hiho Storm Killer! Welcome to Kazordoon furniture store.",
+      "translated": "Hej ho, Pogromco Burz! Witaj w sklepie meblowym Kazordoon.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iyad.farewell_msg_1",
+      "en": "D...Daraman's blessings... oh, how I m...miss my warm Darashia...",
+      "translated": "B...błogosławieństwo Daramana... och, jak tęsknię za c...ciepłą Darashią...",
+      "source": "simple"
+    },
+    {
+      "key": "npc.iyad.greet_msg_1",
+      "en": "Finally! A c...c...customer! Wh... where do you want to f...f...{fly}?",
+      "translated": "Wreszcie! K...k...klient! G...gdzie chcesz, żebym cię z...z...{fly}?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jack.greet_msg_3",
+      "en": "Yes? What can I do for you? I hope this won't take long, though.",
+      "translated": "Tak? Co mogę dla ciebie zrobić? Mam nadzieję, że to nie potrwa długo.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jack_drone.greet_msg_1",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today? I can travel you back to {thais}.",
+      "translated": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mam cię dziś {sail}? Mogę zabrać cię z powrotem do {thais}.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jack_fate.greet_msg_1",
+      "en": "Welcome on board, Sir |PLAYERNAME|.",
+      "translated": "Witamy na pokładzie, Sir |PLAYERNAME|.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jack_springer.greet_msg_2",
+      "en": "Hello, stranger! You look suspicious to me. I don't think we have anything to discuss.",
+      "translated": "Witaj, nieznajomy! Wyglądasz mi podejrzanie. Nie sądzę, żebyśmy mieli o czym rozmawiać.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jack_springer.stdmod_24",
+      "en": "It has a rather complex meaning and as far as we can tell it translates to 'army of those who are many, dedicated to the ultimate time of mayhem and despair'. ... \\z\n\tOther, more handy names are army of the last battlefield, army of the last days, legion of mayhem, dread legion or simply the {legion}.",
+      "translated": "Ma dość złożone znaczenie i, o ile możemy stwierdzić, przekłada się na 'army of those who are many, dedicated to the ultimate time of mayhem and despair'. ... \\ z\n\tInne, bardziej przydatne nazwy to armia ostatniego pola bitwy, armia dni ostatnich, legion chaosu, legion grozy lub po prostu {legion}.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jacob.farewell_msg_1",
+      "en": "<nods> See ya.",
+      "translated": "<kiwa głową> Na razie.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jakahr.farewell_msg_1",
+      "en": "It was an honour to serve you, |PLAYERNAME|.",
+      "translated": "To był zaszczyt ci służyć, |PLAYERNAME|.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jakahr.walkaway_msg_1",
+      "en": "It was an honour to serve you.",
+      "translated": "To był zaszczyt ci służyć.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jamesfrancis.greet_msg_1",
+      "en": "Gerimor is right. As an expert for minotaurs I am researching these creatures for years. I thought I already knew a lot but the monsters in this cave are {different}. It's a big {mystery}.",
+      "translated": "Gerimor ma rację. Jako ekspert od minotaurów badam te stworzenia od lat. Myślałem, że wiem już wiele, ale potwory w tej jaskini są {different}. To wielka {mystery}.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.jamesfrancis.greet_msg_2",
+      "en": "How is your {mission} going?",
+      "translated": "Jak idzie twoja {mission}?",
+      "source": "simple"
+    }
+  ]
 }

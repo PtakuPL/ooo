@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16T23:30:43.229275Z",
-  "cycle": 40,
-  "language": "es",
-  "json_file": "chatchannels.json",
-  "translated": 0,
+  "timestamp": "2026-02-16T23:31:07.751550Z",
+  "cycle": 41,
+  "language": "pl",
+  "json_file": "npc.json",
+  "translated": 50,
   "placeholders": 0,
-  "guard_fail": 2,
+  "guard_fail": 297,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 16
+  "strict_skipped_done": 4092
 }

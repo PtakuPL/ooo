@@ -96302,5 +96302,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:19:40.611040Z"
+  },
+  "npc.iptar_sin.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.789960Z"
+  },
+  "npc.iptar_sin.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.800360Z"
+  },
+  "npc.ishebad.greet_msg_1": {
+    "src_hash": "f565f4fee9939868e1a59c6891683b49",
+    "text": "Niech żałoba ci towarzyszy, pielgrzymie w ciele. Szukasz promocji?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.827570Z"
+  },
+  "npc.isimov.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.834438Z"
+  },
+  "npc.isimov.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.835497Z"
+  },
+  "npc.isimov.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.836040Z"
+  },
+  "npc.isimov.stdmod_17": {
+    "src_hash": "75fb83802fd262cbfaeba21f5424f199",
+    "text": "Błogosławiony kołek? To dziwna prośba. Może Quentin wie więcej, w końcu jest jednym z najstarszych mnichów.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.839919Z"
+  },
+  "npc.isimov.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.846529Z"
+  },
+  "npc.isimov.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.851549Z"
+  },
+  "npc.isimov.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.852449Z"
+  },
+  "npc.isimov.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.853740Z"
+  },
+  "npc.iskan.greet_msg_1": {
+    "src_hash": "8c2be15f64087050fb51f57fae545b95",
+    "text": "Nie jesteś jednym z nas. Nie chcę z tobą rozmawiać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.855672Z"
+  },
+  "npc.iskan.greet_msg_2": {
+    "src_hash": "983337edfc377e32a812a0a308132a5f",
+    "text": "Powiedziano mi, że zabijałeś husky tutaj, w Svargrond! Nigdy więcej tego nie rób, dobrze? To dla nas cenne zwierzęta. Daj mi 500 sztuk złota, a zapomnę o tym incydencie i nic nie powiem Jarlowi Svenowi. Zgoda?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.857217Z"
+  },
+  "npc.iskan.greet_msg_3": {
+    "src_hash": "3ac39dbfcbd7770977fff7c140ac7c6a",
+    "text": "CHWAŁA Wodzowi Areny! |PLAYERNAME|, Bohaterze Svargrond! Co mogę dla ciebie {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.858499Z"
+  },
+  "npc.iskan.greet_msg_4": {
+    "src_hash": "1f70c3044c3ea23a982b1dd0d61fc964",
+    "text": "Pozdrowienia. Co mogę dla ciebie {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.859577Z"
+  },
+  "npc.ivalisse.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Och... żegnaj, dziecko.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.887726Z"
+  },
+  "npc.iwan.greet_msg_1": {
+    "src_hash": "9ad6d2c4dbecd894e37fc099d0032119",
+    "text": "Czuj się jak u siebie w moim sklepie z klejnotami, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.889072Z"
+  },
+  "npc.iwan.sendtrade_msg_1": {
+    "src_hash": "a111fe36589436cf7fadd2cbb749f9eb",
+    "text": "Proszę, spójrz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.889901Z"
+  },
+  "npc.iwar.greet_msg_1": {
+    "src_hash": "5907e7d8a8271a0514abcb5c939244b7",
+    "text": "Hej ho, Pogromco Burz! Witaj w sklepie meblowym Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.891671Z"
+  },
+  "npc.iyad.farewell_msg_1": {
+    "src_hash": "8e0f4300a9c29375ccb4d379315755a4",
+    "text": "B...błogosławieństwo Daramana... och, jak tęsknię za c...ciepłą Darashią...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.894031Z"
+  },
+  "npc.iyad.greet_msg_1": {
+    "src_hash": "df894e47fdb48b4f587d24a4d645c85c",
+    "text": "Wreszcie! K...k...klient! G...gdzie chcesz, żebym cię z...z...{fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.895189Z"
+  },
+  "npc.jack.greet_msg_3": {
+    "src_hash": "88343b5b53d91f0b3358fbbee649c61f",
+    "text": "Tak? Co mogę dla ciebie zrobić? Mam nadzieję, że to nie potrwa długo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.909367Z"
+  },
+  "npc.jack_drone.greet_msg_1": {
+    "src_hash": "3b806053434c79038dd24fb8c3bf2065",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mam cię dziś {sail}? Mogę zabrać cię z powrotem do {thais}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.921158Z"
+  },
+  "npc.jack_fate.greet_msg_1": {
+    "src_hash": "8a3a57974c1e5d4b3e4a66585fd49c38",
+    "text": "Witamy na pokładzie, Sir |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.924443Z"
+  },
+  "npc.jack_springer.greet_msg_2": {
+    "src_hash": "049e45e3a662118a9531760c987d28d1",
+    "text": "Witaj, nieznajomy! Wyglądasz mi podejrzanie. Nie sądzę, żebyśmy mieli o czym rozmawiać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.936088Z"
+  },
+  "npc.jacob.farewell_msg_1": {
+    "src_hash": "aa79b18aa374acffc031699d553bd932",
+    "text": "<kiwa głową> Na razie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.954593Z"
+  },
+  "npc.jakahr.farewell_msg_1": {
+    "src_hash": "109b98326fce7e48a110e639774441f3",
+    "text": "To był zaszczyt ci służyć, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.962437Z"
+  },
+  "npc.jakahr.walkaway_msg_1": {
+    "src_hash": "6439f0565c4ec9567c817eb82519891f",
+    "text": "To był zaszczyt ci służyć.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.964273Z"
+  },
+  "npc.jamesfrancis.greet_msg_1": {
+    "src_hash": "cd3304fb7a7199bf44faaf72bcbf139e",
+    "text": "Gerimor ma rację. Jako ekspert od minotaurów badam te stworzenia od lat. Myślałem, że wiem już wiele, ale potwory w tej jaskini są {different}. To wielka {mystery}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.965602Z"
+  },
+  "npc.jamesfrancis.greet_msg_2": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Jak idzie twoja {mission}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:31:06.966142Z"
   }
 }

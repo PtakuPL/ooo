@@ -92382,5 +92382,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:22:40.648307Z"
+  },
+  "npc.flickering_soul.greet_msg_1": {
+    "src_hash": "91a6358bcce8dd45644aa9ba82562ef9",
+    "text": "Bądź pozdrowiona, żywa duszo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.300704Z"
+  },
+  "npc.flora.farewell_msg_1": {
+    "src_hash": "d602ed24ed1dafc7a7f11a3fe0ccf18c",
+    "text": "Wróć wkrótce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.321351Z"
+  },
+  "npc.flora.say_3": {
+    "src_hash": "b183fc3434451dda9eebab79da02156b",
+    "text": "Dobrze...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.324489Z"
+  },
+  "npc.florentine.greet_msg_1": {
+    "src_hash": "184ef8a0a9052ac443338e263263ea49",
+    "text": "Witaj, |PLAYERNAME|. Co mogę dla ciebie zrobić?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.325900Z"
+  },
+  "npc.frans.greet_msg_1": {
+    "src_hash": "0544ac07624071c0d88d821ab0a1f9f7",
+    "text": "Bąąąądź poooozdrowiony, Simula! Czegooo potrzebujesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.333130Z"
+  },
+  "npc.frederik.greet_msg_1": {
+    "src_hash": "de9745115201ef028dffb3bf12fdd602",
+    "text": "Cześć i witaj w moim małym sklepie magicznym.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.336963Z"
+  },
+  "npc.freezhild.farewell_msg_1": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Mam nadzieję, że czeka cię chłodny dzień, przyjacielu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.338822Z"
+  },
+  "npc.freezhild.greet_msg_1": {
+    "src_hash": "f0c3959750f0568d0e1a58f680a3726a",
+    "text": "Witaj w moim fajnym domu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.339743Z"
+  },
+  "npc.freezhild.walkaway_msg_1": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Mam nadzieję, że czeka cię chłodny dzień, przyjacielu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.342012Z"
+  },
+  "npc.frodo.greet_msg_1": {
+    "src_hash": "9de521411dc9efd33e894a0f848a5e01",
+    "text": "Witaj w chatce Froda. Słyszałeś o {news}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.343331Z"
+  },
+  "npc.galuna.greet_msg_1": {
+    "src_hash": "17e44e52564b6c011e931eddf5c008cd",
+    "text": "Och, wejdź proszę, |PLAYERNAME|. Czego potrzebujesz? Broni dystansowej? Mam jej mnóstwo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.383830Z"
+  },
+  "npc.gamel.farewell_msg_1": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Cześć. Powiedz innym o... moim małym sklepiku tutaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.385579Z"
+  },
+  "npc.gamel.greet_msg_1": {
+    "src_hash": "85a7df9a3b20746ffa8c96a1c8edebd4",
+    "text": "Psst! Ciszej. Chcesz coś {buy}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.386701Z"
+  },
+  "npc.gamel.walkaway_msg_1": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Cześć. Powiedz innym o... moim małym sklepiku tutaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.390706Z"
+  },
+  "npc.gamon.farewell_msg_1": {
+    "src_hash": "4e73f4b084d53ec679e0a62d8efaaa16",
+    "text": "Wrócisz. Wszyscy wracają.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.392115Z"
+  },
+  "npc.gamon.greet_msg_1": {
+    "src_hash": "3380dac1fb5dd4320d19d854113a9f5a",
+    "text": "Miło cię poznać, Mister |PLAYERNAME|! Szukasz mebli? Dobrze trafiłeś!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.393371Z"
+  },
+  "npc.gamon.sendtrade_msg_1": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Spójrz. Większość mebli jest w poręcznych zestawach. Użyj ich w domu, aby złożyć meble. Chcesz zobaczyć tylko określony rodzaj mebli?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.394842Z"
+  },
+  "npc.gareth.greet_msg_1": {
+    "src_hash": "d4a74b09413ac14b6808e25e31c96fa4",
+    "text": "Witaj we wspaniałym i dopiero co otwartym Museum of Tibian Arts! Wstęp wolny dla wszystkich, ale patroni sztuki są mile widziani i wyróżniani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.417830Z"
+  },
+  "npc.gareth.greet_msg_3": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Jak idzie twoja {mission}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.419218Z"
+  },
+  "npc.gate_guardian.greet_msg_1": {
+    "src_hash": "716f2c74dc95c2c80ed625ec37878d7e",
+    "text": "Chhhhzzz. Brzydcy ludzie! Lepiej miej dobry powód, żeby tu być!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.433659Z"
+  },
+  "npc.gelagos.farewell_msg_1": {
+    "src_hash": "be2f7f5e179e50adc279f491ac58a681",
+    "text": "Obyś zginął i to stracił.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.436605Z"
+  },
+  "npc.gelidrazahs_thirst.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Do zobaczenia, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.440005Z"
+  },
+  "npc.gelidrazahs_thirst.greet_msg_1": {
+    "src_hash": "4ff16a7f17b7c7f22cf480bcd0060d48",
+    "text": "Przyszedłeś odpowiedzieć na pytania Gelidrazah?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.441548Z"
+  },
+  "npc.gelidrazahs_thirst.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Do zobaczenia, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.446418Z"
+  },
+  "npc.gerimor.greet_msg_1": {
+    "src_hash": "3c780c4126efe612c9dab5df4895ab7e",
+    "text": "Pozdrowienia, |PLAYERNAME|! Witam cię w tym świętym {place}. Jeśli interesują cię {missions}, po prostu zapytaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.452458Z"
+  },
+  "npc.gewen.greet_msg_1": {
+    "src_hash": "14b3e81ec8e2ff2c2783c71d1f831c03",
+    "text": "Witaj, podróżniku |PLAYERNAME|. Dokąd mam cię {fly}? A może potrzebujesz tygodniowego biletu na publiczny transport wozami w Kazordoon?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.494413Z"
+  },
+  "npc.ghorza.greet_msg_1": {
+    "src_hash": "0aa148b4c69185fdc45f079e06ff358c",
+    "text": "Witaj, wychudzony człowieku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.500348Z"
+  },
+  "npc.gnomaticus.greet_msg_1": {
+    "src_hash": "f313a27e873e04c1c2537e0c6df2ee03",
+    "text": "Cześć! Czy jesteś tu, aby {shooting} przetestować lub {report} swój sukces?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.560951Z"
+  },
+  "npc.gnomeral.greet_msg_1": {
+    "src_hash": "41cc0b97a4666275845c1a1d3430ba16",
+    "text": "Witaj, rekrucie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.591018Z"
+  },
+  "npc.gnomeral.say_11": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.598779Z"
+  },
+  "npc.gnomeral.say_16": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.601854Z"
+  },
+  "npc.gnomeral.say_21": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.604858Z"
+  },
+  "npc.gnomeral.say_5": {
+    "src_hash": "095cbe31db4564dbd4de48b8e0abfa4a",
+    "text": "Nie jesteś over and done with jeszcze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:26:03.608156Z"
   }
 }

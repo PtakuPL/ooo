@@ -142854,5 +142854,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:12:21.911503Z"
+  },
+  "data.otservbr.global.npc.romir.L154.1041": {
+    "src_hash": "1c44869b12decc57ba28e52c1bfb8423",
+    "text": "Saludos, viajero. Soy un comerciante mágico y entrenador de hechizos de hechicero. ¿Cómo puedo ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.843031Z"
+  },
+  "data.otservbr.global.npc.roswitha.L69.445": {
+    "src_hash": "1da53848ea59287f61cad05389a6dc01",
+    "text": "Hola, muchacho. Siéntate, toma una copa, ¿por qué no?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.849191Z"
+  },
+  "data.otservbr.global.npc.rottin.wood.L210.1031": {
+    "src_hash": "8036bbce0f710e54c9a73d0a4ca30fc6",
+    "text": "¡El saludo de Hunter! Supongo que quieres algo de mí ya que viniste hasta aquí por tu cuenta. Este es un lugar peligroso, dudo que todos mis hombres acepten extraños como yo. Aunque no pareces tener ningún problema con eso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.854263Z"
+  },
+  "data.otservbr.global.npc.rowenna.L59.475": {
+    "src_hash": "06e7e0e734a6941cb8dd6ef7f83f96e6",
+    "text": "¡Bienvenido a la mejor tienda de armas del país, |PLAYERNAME|! Dime si buscas un buen {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.858579Z"
+  },
+  "data.otservbr.global.npc.rowenna.L60.476": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Adiós. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.862327Z"
+  },
+  "data.otservbr.global.npc.rowenna.L61.477": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Adiós. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.864567Z"
+  },
+  "data.otservbr.global.npc.rudolph.L53.206": {
+    "src_hash": "f486c5e757b5c2b5d1f9b583745973e4",
+    "text": "Ah, un cliente. Hola |PLAYERNAME|. Si quieres ver mi maravillosa ropa hecha a medida, pídeme un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.867447Z"
+  },
+  "data.otservbr.global.npc.saideh.L53.693": {
+    "src_hash": "1af4d187bb7412f9bc48c84d996d4cf1",
+    "text": "Hola, mi nombre es Saideh. Una vez esta fue la entrada a la cripta de nuestros héroes. Una de las tumbas pertenece a nuestro querido héroe Dayyan. Hoy en día no es buena idea visitar este lugar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.872196Z"
+  },
+  "data.otservbr.global.npc.sam.L153.910": {
+    "src_hash": "e08339bc7e7f978152786837f670061e",
+    "text": "¡Bienvenido a mi tienda, aventurero |PLAYERNAME|! Yo {trade} con armas y armaduras.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.875333Z"
+  },
+  "data.otservbr.global.npc.sam.L154.911": {
+    "src_hash": "34e41ae88517470783bb147be142a687",
+    "text": "Adiós y vuelve otra vez, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.877453Z"
+  },
+  "data.otservbr.global.npc.sam.L155.912": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Adiós y vuelve otra vez.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.879283Z"
+  },
+  "data.otservbr.global.npc.sandomo.L176.5": {
+    "src_hash": "e29fdb55eb04b7fe8d18d812d481b668",
+    "text": "Mmm. Saludos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.881842Z"
+  },
+  "data.otservbr.global.npc.sandomo.L177.6": {
+    "src_hash": "ab1e4a2bdc56f67fe1427aedebb8429e",
+    "text": "Alabado sea los dioses, me despido de vosotros.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.884165Z"
+  },
+  "data.otservbr.global.npc.sandra.L143.1396": {
+    "src_hash": "28303017283c4570ab44b346b5acad09",
+    "text": "Adiós, |PLAYERNAME|, vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.886875Z"
+  },
+  "data.otservbr.global.npc.sandra.L144.1397": {
+    "src_hash": "28303017283c4570ab44b346b5acad09",
+    "text": "Adiós, |PLAYERNAME|, vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.888723Z"
+  },
+  "data.otservbr.global.npc.sandra.L145.1398": {
+    "src_hash": "f7debf1ec097943365748af6313ee4c9",
+    "text": "Por supuesto, simplemente navega por mis productos. Por cierto, si quieres unirte a nuestro sistema de bonificación por depósito de matraces y viales, tienes que contarme sobre eso {deposit}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.892033Z"
+  },
+  "data.otservbr.global.npc.sane.mage.L89.1503": {
+    "src_hash": "2fb3ec7c1227a092ce335829da77716c",
+    "text": "...eh... ¿hola? Sí...? Bueno, si... si tienes alguna pregunta... ni siquiera estoy aquí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.894521Z"
+  },
+  "data.otservbr.global.npc.santiago.L101.959": {
+    "src_hash": "43394973219b47c2fbda827c8695008e",
+    "text": "¡Bienvenido de nuevo! ¿Dónde estábamos...? Ah, claro, ¡te pregunté si viste tu 'level up'! ¿Lo hiciste, {right}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.897991Z"
+  },
+  "data.otservbr.global.npc.santiago.L251.967": {
+    "src_hash": "870f9d299db17eed508b1cb2aad62895",
+    "text": "Adiós viajero y disfrute de su estadía en Rookgaard.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.907507Z"
+  },
+  "data.otservbr.global.npc.santiago.L70.954": {
+    "src_hash": "4e542a5b6e0edb17644fe079328fc802",
+    "text": "Hola |PLAYERNAME|, ¡encantado de verte en Rookgaard! Te vi pasar y me pregunté si podrías ayudarme. ¿Podrías? ¡Por favor, diga {yes}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.913246Z"
+  },
+  "data.otservbr.global.npc.santiago.L73.955": {
+    "src_hash": "108915dcf6b068759c6b9022677fcfaf",
+    "text": "¡Oh, |PLAYERNAME|, eres tú otra vez! Probablemente sea de mala educación molestar a un aventurero ocupado como tú, pero realmente necesito ayuda. ¡Por favor, diga {yes}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:15:52.918497Z"
   }
 }

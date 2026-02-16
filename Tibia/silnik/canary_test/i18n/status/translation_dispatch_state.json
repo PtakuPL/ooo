@@ -1,27 +1,21 @@
 {
-  "timestamp": "2026-02-16T22:13:57.982166Z",
-  "cycle_counter": 816,
-  "last_target_key": "sv:server.json",
-  "last_pending_total": 2152,
-  "last_tier": 1,
-  "last_cat_priority": 3,
-  "candidates_count": 286,
-  "active_candidates_count": 278,
+  "timestamp": "2026-02-16T22:16:19.873752Z",
+  "cycle_counter": 820,
+  "last_target_key": "it:items.json",
+  "last_pending_total": 16371,
+  "last_tier": 2,
+  "last_cat_priority": 1,
+  "candidates_count": 197,
+  "active_candidates_count": 190,
   "skipped_backoff": 6,
-  "skipped_guard_fail": 2,
+  "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "pl:items.json": 818,
     "pl:npc.json": 826
   },
   "tier_config": {
     "tier1": [
       "es",
-      "it",
-      "pl",
-      "ro",
-      "ru",
-      "sr",
-      "sv"
+      "pl"
     ],
     "tier2": [
       "cs",
@@ -42,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 87,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -299,7 +293,7 @@
     "sv:server.json": 0
   },
   "bootstrap_priority": {
-    "enabled": false,
+    "enabled": true,
     "sequence": [
       "pl",
       "es",
@@ -311,18 +305,21 @@
     ],
     "completed": [
       "es",
-      "pl"
+      "pl",
+      "ru",
+      "ro",
+      "it"
     ],
     "skipped_no_pending": [],
-    "forced_lang": ""
+    "forced_lang": "it"
   },
-  "bootstrap_forced": false,
-  "bootstrap_forced_lang": "",
+  "bootstrap_forced": true,
+  "bootstrap_forced_lang": "it",
   "balance_forced": false,
   "global_quality_mode": true,
   "priority_gate": {
     "enabled": true,
-    "active": false,
+    "active": true,
     "coverage_target": 100.0,
     "priority_langs": [
       "pl",
@@ -333,7 +330,23 @@
       "sr",
       "sv"
     ],
-    "pending_langs": [],
-    "lang_completion": {}
+    "pending_langs": [
+      "pl",
+      "es",
+      "ru",
+      "ro",
+      "it",
+      "sr",
+      "sv"
+    ],
+    "lang_completion": {
+      "pl": 43.25,
+      "es": 73.75,
+      "ru": 34.51,
+      "ro": 18.48,
+      "it": 9.53,
+      "sr": 9.54,
+      "sv": 7.4
+    }
   }
 }

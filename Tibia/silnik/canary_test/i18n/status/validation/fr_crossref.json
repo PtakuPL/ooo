@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:57:07.904318Z",
+  "checked_at": "2026-02-16T22:18:06.710913Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1336,195 +1336,6 @@
       "en": "piano",
       "pl": "piaNie",
       "lang": "piano"
-    },
-    {
-      "key": "item.6596.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6597.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6598.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6599.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6600.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6601.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6602.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6603.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6604.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6605.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6606.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6607.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6608.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6775.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fur pillar",
-      "pl": "futro filar",
-      "lang": "fur pillar"
-    },
-    {
-      "key": "item.6838.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.7107.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.7290.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "shard",
-      "pl": "odłamek",
-      "lang": "shard"
-    },
-    {
-      "key": "item.7458.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fur cap",
-      "pl": "futro czapka",
-      "lang": "fur cap"
-    },
-    {
-      "key": "item.7526.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mountain",
-      "pl": "góra",
-      "lang": "mountain"
-    },
-    {
-      "key": "item.7570.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bone claw",
-      "pl": "kość pazur",
-      "lang": "bone claw"
-    },
-    {
-      "key": "item.7572.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bone claw",
-      "pl": "kość pazur",
-      "lang": "bone claw"
     },
     {
       "key": "item.7740.name",
@@ -4405,6 +4216,195 @@
       "en": "a ghost",
       "pl": "duch",
       "lang": "a ghost"
+    },
+    {
+      "key": "monster.ghost.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huh!",
+      "pl": "He, co!",
+      "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Vampire",
+      "pl": "Wampir",
+      "lang": "Vampire"
+    },
+    {
+      "key": "monster.vampire.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a vampire",
+      "pl": "wampir",
+      "lang": "a vampire"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "Krew!",
+      "lang": "BLOOD!"
+    },
+    {
+      "key": "monster.zombie.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zombie",
+      "pl": "Zombi",
+      "lang": "Zombie"
+    },
+    {
+      "key": "monster.zombie.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a zombie",
+      "pl": "zombie",
+      "lang": "a zombie"
+    },
+    {
+      "key": "monster.tarnished_spirit.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huh!",
+      "pl": "He, co!",
+      "lang": "Huh!"
+    },
+    {
+      "key": "monster.cursed_ape.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed Ape",
+      "pl": "Przeklęta małpa",
+      "lang": "Cursed Ape"
+    },
+    {
+      "key": "monster.banshee.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a banshee",
+      "pl": "banshee",
+      "lang": "a banshee"
+    },
+    {
+      "key": "monster.gravedigger.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "scrabble",
+      "pl": "bazgrać",
+      "lang": "scrabble"
+    },
+    {
+      "key": "monster.lost_soul.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lost Soul",
+      "pl": "Zagubiona dusza",
+      "lang": "Lost Soul"
+    },
+    {
+      "key": "monster.souleater.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Souleater",
+      "pl": "Pożeracz dusz",
+      "lang": "Souleater"
+    },
+    {
+      "key": "monster.rot_elemental.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*splib*",
+      "pl": "*dzielenie*",
+      "lang": "*splib*"
+    },
+    {
+      "key": "monster.yakchal.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yakchal",
+      "pl": "Jakchał",
+      "lang": "Yakchal"
+    },
+    {
+      "key": "monster.yakchal.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yakchal",
+      "pl": "Jakchał",
+      "lang": "Yakchal"
+    },
+    {
+      "key": "monster.egg_the_welter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Egg",
+      "pl": "Jajko",
+      "lang": "Egg"
+    },
+    {
+      "key": "monster.egg_the_welter.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Egg",
+      "pl": "Jajko",
+      "lang": "Egg"
+    },
+    {
+      "key": "monster.grorlam.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grorlam",
+      "pl": "Grolam",
+      "lang": "Grorlam"
+    },
+    {
+      "key": "monster.grorlam.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grorlam",
+      "pl": "Grolam",
+      "lang": "Grorlam"
+    },
+    {
+      "key": "monster.tyrn.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.frost_servant.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chrrr.",
+      "pl": "Chrr.",
+      "lang": "Chrrr."
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 21,
-    "skipped": 59,
+    "applied": 16,
+    "skipped": 64,
     "errors": 0
   }
 }

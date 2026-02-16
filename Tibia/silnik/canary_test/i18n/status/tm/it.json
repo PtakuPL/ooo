@@ -6817,195 +6817,195 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.632234Z"
+    "updated_at": "2026-02-16T22:16:00.720883Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.632972Z"
+    "updated_at": "2026-02-16T22:16:00.723252Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.633677Z"
+    "updated_at": "2026-02-16T22:16:00.725244Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.634660Z"
+    "updated_at": "2026-02-16T22:16:00.742808Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.635334Z"
+    "updated_at": "2026-02-16T22:16:00.744993Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.636026Z"
+    "updated_at": "2026-02-16T22:16:00.746950Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.637368Z"
+    "updated_at": "2026-02-16T22:16:00.760587Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.638055Z"
+    "updated_at": "2026-02-16T22:16:00.761785Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.638773Z"
+    "updated_at": "2026-02-16T22:16:00.762802Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.639705Z"
+    "updated_at": "2026-02-16T22:16:00.763804Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.640584Z"
+    "updated_at": "2026-02-16T22:16:00.765105Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.641452Z"
+    "updated_at": "2026-02-16T22:16:00.766166Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.642160Z"
+    "updated_at": "2026-02-16T22:16:00.767363Z"
   },
   "npc.a_lost_thrower.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.642888Z"
+    "updated_at": "2026-02-16T22:16:00.768378Z"
   },
   "npc.a_lost_thrower.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.643581Z"
+    "updated_at": "2026-02-16T22:16:00.769362Z"
   },
   "npc.a_nightmare_scion.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.644481Z"
+    "updated_at": "2026-02-16T22:16:00.771310Z"
   },
   "npc.a_nightmare_scion.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.645159Z"
+    "updated_at": "2026-02-16T22:16:00.772296Z"
   },
   "npc.a_nightmare_scion.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.645862Z"
+    "updated_at": "2026-02-16T22:16:00.773273Z"
   },
   "npc.a_vulcongra.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.649528Z"
+    "updated_at": "2026-02-16T22:16:00.796216Z"
   },
   "npc.a_vulcongra.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.650234Z"
+    "updated_at": "2026-02-16T22:16:00.798671Z"
   },
   "npc.a_vulcongra.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.651223Z"
+    "updated_at": "2026-02-16T22:16:00.800176Z"
   },
   "npc.a_wyrm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.653395Z"
+    "updated_at": "2026-02-16T22:16:00.809476Z"
   },
   "npc.a_wyrm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.654114Z"
+    "updated_at": "2026-02-16T22:16:00.810489Z"
   },
   "npc.a_wyrm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.654866Z"
+    "updated_at": "2026-02-16T22:16:00.811677Z"
   },
   "npc.alyxo.say_12": {
     "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
@@ -7289,11 +7289,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Chchch. Chh! <non ne sei sicuro, ma sembra che lo scoiattolo voglia scambiare le tue preziose ghiande con pietre inutili che ha trovato e considerate immangiabili>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:42.666037Z"
+    "updated_at": "2026-02-16T22:16:05.876528Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -21302,5 +21302,333 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:13:41.979641Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:00.706984Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:00.717856Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "OH...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:05.872890Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:05.873599Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:08.721799Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, sento che un mortale cammina di nuovo per queste antiche sale. Perdonami, ti noto a malapena. Sono così perso nei miei pensieri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:08.723046Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Ora sarai portato fuori di qui. Sei sicuro di voler affrontare quel teletrasporto?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:08.723753Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Allora resta qui, in queste sale spettrali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:08.724308Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "Posso offrirti un {teleport}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:13.255374Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Non preoccuparti di me.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:13.255802Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Addio allora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:13.256119Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Solo...così solo. Così freddo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:13.256554Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Ti capisco. Sento i tuoi pensieri. Tu sei... vivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:13.257070Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Una volta ero un membro dell'ordine dei cavalieri dell'incubo. Ora non sono altro che un'ombra che cammina per questi freddi corridoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:15.100137Z"
+  },
+  "item.35203.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.411649Z"
+  },
+  "item.35205.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.412408Z"
+  },
+  "item.35852.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.434889Z"
+  },
+  "item.35854.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.436583Z"
+  },
+  "item.35856.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.437953Z"
+  },
+  "item.35858.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.439614Z"
+  },
+  "item.35864.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.442055Z"
+  },
+  "item.35866.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.443676Z"
+  },
+  "item.35868.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.445116Z"
+  },
+  "item.35870.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.446499Z"
+  },
+  "item.35876.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.450334Z"
+  },
+  "item.35878.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.452884Z"
+  },
+  "item.35880.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.454303Z"
+  },
+  "item.35882.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.455467Z"
+  },
+  "item.35929.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.459587Z"
+  },
+  "item.35931.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.462153Z"
+  },
+  "item.35933.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.463469Z"
+  },
+  "item.35935.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.465386Z"
+  },
+  "item.36980.name": {
+    "src_hash": "14952ea782ad87d7e30059fa3cc516f1",
+    "text": "baule",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.525864Z"
+  },
+  "item.37024.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.539491Z"
+  },
+  "item.37026.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.540897Z"
+  },
+  "item.37028.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.542540Z"
+  },
+  "item.37030.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.543839Z"
+  },
+  "item.37194.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.553711Z"
+  },
+  "item.37196.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.555013Z"
+  },
+  "item.37198.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.555973Z"
+  },
+  "item.37200.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:16:23.557014Z"
   }
 }

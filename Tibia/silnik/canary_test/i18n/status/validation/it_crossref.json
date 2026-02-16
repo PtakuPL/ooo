@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 10.3,
+  "coverage_pct": 10.7,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:57:10.440490Z",
+  "checked_at": "2026-02-16T22:18:08.270523Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -3479,15 +3479,6 @@
       "lang": "Grrr."
     },
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh...",
-      "pl": "O...",
-      "lang": "Oh..."
-    },
-    {
       "key": "npc.a_fluffy_squirrel.farewell_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3603,15 @@
       "en": "Hi there.",
       "pl": "Cześć.",
       "lang": "Hi there."
+    },
+    {
+      "key": "npc.ariella.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
     }
   ],
   "length_ratio_issues": [

@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 19.3,
+  "coverage_pct": 19.6,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:57:15.437336Z",
+  "checked_at": "2026-02-16T22:18:11.636633Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1823,24 +1823,6 @@
       "lang": "*clank*"
     },
     {
-      "key": "monster.metal_gargoyle.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "clonk",
-      "pl": "klonk",
-      "lang": "clonk"
-    },
-    {
-      "key": "monster.metal_gargoyle.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*stomp*",
-      "pl": "*stąpać ciężko*",
-      "lang": "*stomp*"
-    },
-    {
       "key": "monster.orewalker.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3594,24 @@
       "en": "Oh...",
       "pl": "O...",
       "lang": "Oh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chh...",
+      "pl": "Cii...",
+      "lang": "Chh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chhchh?",
+      "pl": "Chhchh...",
+      "lang": "Chhchh?"
     }
   ],
   "length_ratio_issues": [

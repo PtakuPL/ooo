@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T20:43:00.788902Z",
-  "language": "pl",
+  "timestamp": "2026-02-16T20:45:06.926678Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 50,
+  "translated": 24,
   "entries": [
     {
-      "key": "npc.bunny_bonecrusher.greet_msg_1",
-      "en": "Address me properly |PLAYERNAME|!",
-      "translated": "Zwracaj się do mnie odpowiednio, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "npc.bunny_bonecrusher.walkaway_msg_1",
-      "en": "LONG LIVE THE QUEEN!",
-      "translated": "NIECH ŻYJE KRÓLOWA!",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.busty_bonecrusher.farewell_msg_1",
-      "en": "LONG LIVE THE QUEEN!",
-      "translated": "NIECH ŻYJE KRÓLOWA!",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.busty_bonecrusher.greet_msg_1",
-      "en": "LONG LIVE THE QUEEN!",
-      "translated": "NIECH ŻYJE KRÓLOWA!",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "npc.busty_bonecrusher.walkaway_msg_1",
-      "en": "LONG LIVE THE QUEEN!",
-      "translated": "NIECH ŻYJE KRÓLOWA!",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "npc.canary.farewell_msg_1",
-      "en": "Yeah, good bye and don't come again!",
-      "translated": "Ta, do widzenia i nie wracaj!",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "npc.canary.greet_msg_1",
-      "en": "Hello |PLAYERNAME|, you need more info about {canary}?",
-      "translated": "Witaj |PLAYERNAME|, potrzebujesz więcej informacji o {canary}?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_chelop.farewell_msg_1",
-      "en": "On behalf of the inquisition, I bid you farewell.",
-      "translated": "W imieniu inkwizycji żegnam cię.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_chelop.greet_msg_1",
-      "en": "Welcome on board, recruit |PLAYERNAME|. Where can I {sail} you today?",
-      "translated": "Witamy na pokładzie, rekrucie |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_dreadnought.farewell_msg_1",
-      "en": "You sure you want to spend time on this piece of rock? I can show you the world! Huh.",
-      "translated": "Na pewno chcesz marnować czas na tej skale? Mogę pokazać ci świat! Hę?",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_gulliver.greet_msg_1",
-      "en": "Welcome on board, Sir |PLAYERNAME|. Where can I {sail} you today?",
-      "translated": "Witamy na pokładzie, Sir |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_haba.greet_msg_2",
-      "en": "Harrr, landlubber wha'd ya want?",
-      "translated": "Arrr, szczurze lądowy, czego chcesz?",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.greet_msg_2",
-      "en": "You found the spot |PLAYERNAME|!! Grab yourself a helmet of the deep and go explore the {caves} down there.",
-      "translated": "Znalazłeś miejsce |PLAYERNAME|!! Chwyć hełm głębin i udaj się tam na eksplorację {caves}.",
-      "source": "simple"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.sendtrade_msg_1",
-      "en": "Here ya go! Use it on the crane when you see the monster. Then refill it every time you use the telescope.",
-      "translated": "Proszę bardzo! Użyj tego na dźwigu, gdy zobaczysz potwora. Potem uzupełniaj to za każdym razem, gdy użyjesz teleskopu.",
-      "source": "simple"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.walkaway_msg_1",
-      "en": "See ya, landlubber!",
-      "translated": "Na razie, szczurze lądowy!",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_harava.greet_msg_1",
-      "en": "Welcome on board, traveller. Where can I {sail} you today?",
-      "translated": "Witamy na pokładzie, podróżniku. Dokąd mam cię dziś {sail}?",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_jack_rat.greet_msg_1",
-      "en": "Hail, pirat! Come on board to go home! Welcome on board of the ship Flying Bat. Should I set {sail}s?",
-      "translated": "Witaj, piracie! Wskakuj na pokład, wracamy do domu! Witamy na statku Flying Bat. Mam stawiać {sail}s?",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_sinbeard.greet_msg_1",
-      "en": "Welcome on board, Sir |PLAYERNAME|. Where can I {sail} you today?",
-      "translated": "Witamy na pokładzie, Sir |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.caramellia.greet_msg_1",
-      "en": "Hello, |PLAYERNAME|. Please leave me alone in my {mourning}.",
-      "translated": "Witaj, |PLAYERNAME|. Proszę, zostaw mnie w spokoju w moim {mourning}.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.carina.greet_msg_1",
-      "en": "Welcome, |PLAYERNAME|. I am looking forward to trade with you.",
-      "translated": "Witaj, |PLAYERNAME|. Chętnie z tobą pohandluję.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_14",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

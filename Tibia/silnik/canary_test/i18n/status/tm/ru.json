@@ -8734,5 +8734,269 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:41:47.752688Z"
+  },
+  "monster.eradicator2.name": {
+    "src_hash": "f0c051b57055b052a3b7da1608f3039e",
+    "text": "Искоренитель",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:44.728166Z"
+  },
+  "monster.zamulosh3.name": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Замулош",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:44.755721Z"
+  },
+  "monster.zamulosh2.name": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Замулош",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:44.756591Z"
+  },
+  "monster.vampire.voice_1": {
+    "src_hash": "37565f1867857e07abb2b0118bc26f8a",
+    "text": "Кровь!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:44.914801Z"
+  },
+  "monster.stone_rhino.voice_1": {
+    "src_hash": "f9fad38ce549fa6ef442ada9c42a1a7d",
+    "text": "НЮХ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:44.978219Z"
+  },
+  "monster.paladin_familiar.desc": {
+    "src_hash": "ca5da472352530cf72c844b3acd4546b",
+    "text": "знакомый паладин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:47.980089Z"
+  },
+  "monster.druid_familiar.desc": {
+    "src_hash": "e61a30784795944503495de623229956",
+    "text": "знакомый друид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:47.981057Z"
+  },
+  "monster.poison_spider.name": {
+    "src_hash": "8c62307321ecf2d05a0da286f1c80943",
+    "text": "Ядовитый паук",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:47.981431Z"
+  },
+  "monster.poison_spider.desc": {
+    "src_hash": "29e4d5a708aa1a39995da90540cfaac0",
+    "text": "ядовитый паук",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:47.981791Z"
+  },
+  "monster.sandcrawler.name": {
+    "src_hash": "89f2b95e559a3e5addf3bd18f7791f67",
+    "text": "Песчаный краулер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:47.982211Z"
+  },
+  "monster.sandcrawler.desc": {
+    "src_hash": "3c2e7834b14594ada75997531f0ca317",
+    "text": "песчаный краулер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.442383Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Фраззлемаб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.442774Z"
+  },
+  "monster.frazzlemaw.desc": {
+    "src_hash": "c0f5e22af9df9b1a9765ff7501067c7e",
+    "text": "измотанная пасть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.443146Z"
+  },
+  "monster.guzzlemaw.name": {
+    "src_hash": "af39e6956034169ca52f6fff8f9fbc5b",
+    "text": "Обжора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.443452Z"
+  },
+  "monster.guzzlemaw.desc": {
+    "src_hash": "7930fe8b403868cb6f2a7a25bf31b5e5",
+    "text": "обжора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.443757Z"
+  },
+  "monster.black_knight.desc": {
+    "src_hash": "d512d4fa0126ceeafe289e1c079421aa",
+    "text": "черный рыцарь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.444854Z"
+  },
+  "monster.shadowpelt.desc": {
+    "src_hash": "b3a3558a4e26d92a75362e465e69633d",
+    "text": "теневая шкура",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.445208Z"
+  },
+  "monster.custodian.desc": {
+    "src_hash": "3151892485bb3f274793fb76746584ff",
+    "text": "хранитель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:53.445526Z"
+  },
+  "monster.bullwark.name": {
+    "src_hash": "9511dd8da2f7ed118318552d2dc4e8e5",
+    "text": "Буллварк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:58.004877Z"
+  },
+  "monster.bullwark.desc": {
+    "src_hash": "9511dd8da2f7ed118318552d2dc4e8e5",
+    "text": "Буллварк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:58.005179Z"
+  },
+  "monster.bazir.name": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Базир",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:58.007079Z"
+  },
+  "monster.bazir.desc": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Базир",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:02.445731Z"
+  },
+  "monster.cyclops_drone.desc": {
+    "src_hash": "a22ec2f18c4f33938d41d95aaf7bf1bc",
+    "text": "дрон-циклоп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:02.447108Z"
+  },
+  "monster.cyclops_smith.desc": {
+    "src_hash": "c310fe873b11d77071eb0dd89353296e",
+    "text": "кузнец-циклоп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:02.447926Z"
+  },
+  "monster.hydra.name": {
+    "src_hash": "0a79d2e788f647cf8c8bee8cad4bf94e",
+    "text": "Гидра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:02.448202Z"
+  },
+  "monster.dragon_lord.name": {
+    "src_hash": "aee5c1cece6bc8375b1264c16e1ee82c",
+    "text": "Лорд Дракон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:02.448522Z"
+  },
+  "monster.dragon_lord.desc": {
+    "src_hash": "ede58b3b8c6d66dea11ec41b6ddeb040",
+    "text": "повелитель драконов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:02.448869Z"
+  },
+  "monster.ice_dragon.desc": {
+    "src_hash": "e58c12b946d0f020cb3fa5215639c4d5",
+    "text": "ледяной дракон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:06.152564Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Вирм",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:06.152848Z"
+  },
+  "monster.old_bonelord.voice_1": {
+    "src_hash": "611d88fb0bac95d0375b5e376d5f7545",
+    "text": "Ольхо пор Ольхо!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:06.153208Z"
+  },
+  "monster.old_bonelord.voice_2": {
+    "src_hash": "85f4505809d2b430e687c099ac4c0817",
+    "text": "Это все для голоса!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:06.153631Z"
+  },
+  "monster.old_bonelord.voice_4": {
+    "src_hash": "d00ceafd1f97838bc3fc3c6e60877889",
+    "text": "Голосуйте тем о олхар!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:06.154251Z"
+  },
+  "monster.old_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:44:06.154652Z"
   }
 }

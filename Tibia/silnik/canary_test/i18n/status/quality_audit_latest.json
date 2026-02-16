@@ -1,18 +1,45 @@
 {
-  "timestamp": "2026-02-16T20:43:02.830231Z",
+  "timestamp": "2026-02-16T20:45:08.963697Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en_exempt": 11,
-    "artifact_token": 7,
-    "suspicious_log_critical": 95,
-    "suspicious_log_high": 83,
+    "artifact_token": 11,
+    "identical_to_en_exempt": 12,
+    "suspicious_log_high": 152,
     "suspicious_log_low": 1,
-    "suspicious_log_medium": 21,
-    "suspicious_rejected_critical": 23,
-    "suspicious_rejected_high": 4
+    "suspicious_log_critical": 47,
+    "suspicious_rejected_critical": 33,
+    "suspicious_rejected_high": 13
   },
   "issues": [
+    {
+      "key": "npc.omrabas.multi_35",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
+      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
+    },
+    {
+      "key": "npc.omrabas.multi_82",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
+      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
+    },
+    {
+      "key": "npc.omrabas.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
+    },
+    {
+      "key": "npc.pythius_the_rotten.stdmod_12",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -64,5 +91,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

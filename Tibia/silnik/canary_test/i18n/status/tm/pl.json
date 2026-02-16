@@ -96910,5 +96910,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:38:32.772193Z"
+  },
+  "scripts.actions_frozen_horror.msg_1": {
+    "src_hash": "09cd280cb68b9a10ec8828dd50e89162",
+    "text": "Musisz chwilę poczekać, ktoś niedawno wyzwał Frozen Horror.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.017712Z"
+  },
+  "scripts.actions_girl_picture.msg_1": {
+    "src_hash": "7a27db3320b55e3379409c2dde388248",
+    "text": "Wygląda na to, że w szufladzie pojawia się stary srebrny klucz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.021086Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_1": {
+    "src_hash": "c286835a0afa8e3a39e0c4533364f97e",
+    "text": "Delikatnie wyciskasz kwiaty miodowej palmy, a złoty miód kapie do dzbana.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.022171Z"
+  },
+  "scripts.actions_gnome_chart.msg_1": {
+    "src_hash": "912f8fc846951c223a1f55bf41b6e216",
+    "text": "Sporządziłeś mapę położenia i wymiarów dziwnej struktury: starożytnej bramy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.024253Z"
+  },
+  "scripts.actions_gnome_chart.msg_2": {
+    "src_hash": "768bc326b118e9437537bef4279e71f8",
+    "text": "Sporządziłeś mapę położenia i wymiarów dziwnej struktury: małej ruiny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.025280Z"
+  },
+  "scripts.actions_gnome_chart.msg_3": {
+    "src_hash": "0710be37e70c376c6738022133b8b6f1",
+    "text": "Sporządziłeś mapę położenia i wymiarów dziwnej struktury przypominającej kamienną twarz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.026369Z"
+  },
+  "scripts.actions_gnome_chart.msg_4": {
+    "src_hash": "884c0dcf03a8f5d8d2c34c6186c063f9",
+    "text": "Sporządziłeś mapę położenia i wymiarów dziwnej struktury: posterunku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.027426Z"
+  },
+  "scripts.actions_gnome_chart.msg_5": {
+    "src_hash": "9074c5b87cded213a6b2c0658b28d913",
+    "text": "Sporządziłeś mapę położenia i wymiarów dziwnej struktury: bastionu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.028561Z"
+  },
+  "scripts.actions_gnome_chart.msg_6": {
+    "src_hash": "2239381d7c7daedafec02ecae7283a90",
+    "text": "Sporządziłeś mapę położenia i wymiarów dziwnej struktury: zniszczonej wieży.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.029593Z"
+  },
+  "scripts.actions_gnome_items.msg_2": {
+    "src_hash": "861ab2588f39c57f58d9f463bdc28f4e",
+    "text": "Nie możesz użyć tego przedmiotu ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.030871Z"
+  },
+  "scripts.actions_gnomish_pesticide.msg_1": {
+    "src_hash": "12df7c33b31ae10bbbcffc40c3459b3c",
+    "text": "Tylko na wpół rozłożone zwłoki diremawów można zneutralizować tymi pestycydami.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.034606Z"
+  },
+  "scripts.actions_goldenIdol.msg_1": {
+    "src_hash": "d8f1a1cdd7c4b9b8fec918889daa347c",
+    "text": "Umieściłeś wszystkie idole na ołtarzach i odblokowałeś świątynię!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.035616Z"
+  },
+  "scripts.actions_goldenIdol.msg_2": {
+    "src_hash": "55c38f7eb32df2ebb650f72cea066491",
+    "text": "Jest tu już idol. Spróbuj innego ołtarza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.036742Z"
+  },
+  "scripts.actions_gravel.msg_1": {
+    "src_hash": "4773513d10da04eea4d6263d73273d1d",
+    "text": "Zbierasz trochę drobnego żwiru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.038865Z"
+  },
+  "scripts.actions_hallowed.msg_1": {
+    "src_hash": "9efa4d20bdabe3dd7d5c46c2e12b660b",
+    "text": "Płomienie ryczą i łapczywie pożerają kość. Mroczny Władca jest zadowolony z twojego daru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.045835Z"
+  },
+  "scripts.actions_holy_water.msg_1": {
+    "src_hash": "a8071fd5fd191d609f186ded5ec1fea2",
+    "text": "Skrapiasz talizman z poroża święconą wodą. Delikatnie połyskuje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.046881Z"
+  },
+  "scripts.actions_iksupan_entrance.msg_1": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Potrzebujesz co najmniej 150 poziomu, aby wejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.048283Z"
+  },
+  "scripts.actions_inscriptions.msg_1": {
+    "src_hash": "5650a1ba0060a83b12bc68f84825a89f",
+    "text": "Słowa zdają się oddychać, dziwnie. Jedno słowo zostaje w twojej głowie: bronze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.049346Z"
+  },
+  "scripts.actions_inscriptions.msg_2": {
+    "src_hash": "d0d188433a2cb4792bb0534e52f90092",
+    "text": "Słowa lekko świecą. W twojej głowie utrwala się imię: Takesha Antishu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.050471Z"
+  },
+  "scripts.actions_inscriptions.msg_3": {
+    "src_hash": "65b1bcbdbbca5ed48d6d3c7ac0a06c9c",
+    "text": "Słowa zdają się trzepotać. Jedno słowo zostaje w twojej głowie: floating.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.051505Z"
+  },
+  "scripts.actions_key2.msg_1": {
+    "src_hash": "c01ef6b8ed5e20d7721df122e9083659",
+    "text": "Niewidzialna dłoń wciąga cię do środka.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.052869Z"
+  },
+  "scripts.actions_key2.msg_2": {
+    "src_hash": "5fb38602d50efd74221fdf1e74fbee29",
+    "text": "Wynoś się z mojego pokoju!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.053755Z"
+  },
+  "scripts.actions_keyCheck.msg_1": {
+    "src_hash": "b824070060a96b3767a04442a2bbbd24",
+    "text": "Gdy tylko przekręcasz drugi klucz, mechanizm cofa rygle i pochłania klucze, otwierając małe przejście dalej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.054930Z"
+  },
+  "scripts.actions_keyCheck.msg_2": {
+    "src_hash": "599d1059eed101de91e1275fef7304f1",
+    "text": "Musisz użyć mechanizmu samego filaru, aby przekręcić oba klucze jednocześnie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.055972Z"
+  },
+  "scripts.actions_lair_entrance.msg_1": {
+    "src_hash": "74de3ece38288807bd3e747ebe19fc4b",
+    "text": "Nie jesteś jeszcze godzien wejścia do leża Pierwszego Smoka.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.057975Z"
+  },
+  "scripts.actions_last_object.msg_1": {
+    "src_hash": "ddd6237398c160652e46293ac818e5b9",
+    "text": "Dziwny symbol na tylnej ścianie gwałtownie świeci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.059222Z"
+  },
+  "scripts.actions_last_object.msg_2": {
+    "src_hash": "e383abcb644bc07342757f906ebda41b",
+    "text": "Obiekt kultu leży spokojnie. Niebezpieczny obszar wokół niego niemal całkowicie zanikł.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.060299Z"
+  },
+  "scripts.actions_last_object.msg_3": {
+    "src_hash": "67e4e841e7632d46dcfdc852092449f5",
+    "text": "Gdy wyciągasz rękę, by dotknąć obiektu kultu, ze czaszki wybucha fala energii. Udało ci się odpędzić jej moc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.061557Z"
+  },
+  "scripts.actions_lever.msg_1": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "Musisz odczekać kilka minut, aby użyć tego ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.063204Z"
+  },
+  "scripts.actions_lever.msg_2": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "Nie masz magicznego klucza Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.064201Z"
+  },
+  "scripts.actions_lost_time.msg_1": {
+    "src_hash": "e765991be3e63a9ff069546c348d7240",
+    "text": "Pożeracz czasu łapczywie pochłania czas i znika.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.074401Z"
+  },
+  "scripts.actions_magicalPaint.msg_2": {
+    "src_hash": "43ea929b13e66da7b49c83f9670973a2",
+    "text": "To nie jest już zwykły obraz. Używając magicznej farby, przemieniłeś go w portal i możesz przez niego łatwo przejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.081000Z"
+  },
+  "scripts.actions_mechanism.msg_1": {
+    "src_hash": "50fefff6df347aefc566142681046383",
+    "text": "Mechanizm bramy się nie rusza. Prawdopodobnie musisz znaleźć obejście, dopóki nie ustalisz, jak obsługiwać bramę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.084814Z"
+  },
+  "scripts.actions_misguided.msg_1": {
+    "src_hash": "213142cf1bfe9d48b7002860d1b169c7",
+    "text": "Paraliżujesz napastnika, a amulet ujawnia prawdziwą twarz stworzenia stojącego za opętaniem tej zagubionej istoty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.086203Z"
+  },
+  "scripts.actions_mission11_payback_time_lever.msg_1": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Arena jest już zajęta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.091486Z"
+  },
+  "scripts.actions_mission12_just_rewards.msg_1": {
+    "src_hash": "b71f332f490d4cf0436dc65fa13cbe22",
+    "text": "Znalazłeś w szafie trochę ubrań.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.092444Z"
+  },
+  "scripts.actions_mission3_chest.msg_1": {
+    "src_hash": "42dd3838d3aa4aa1f0ad19c9a81066ed",
+    "text": "Znalazłeś fiolkę trucizny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.093926Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonda została dostrojona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.098398Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... urządzenie pokazuje: 0,0,zero,0,zero, co można z grubsza przetłumaczyć jako: NIC TU CIEKAWEGO.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.100097Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Pomyślnie zebrałeś dane.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.101271Z"
+  },
+  "scripts.actions_mysterious_scroll.msg_1": {
+    "src_hash": "b565aaea5180b6481625cf2a7b07f8e4",
+    "text": "Nieważne ile razy próbujesz, nie potrafisz niczego rozszyfrować.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.102723Z"
+  },
+  "scripts.actions_mysterious_scroll.msg_2": {
+    "src_hash": "f74783ab2e1d7e06aaf358d52243d5d7",
+    "text": "Udaje ci się coś rozszyfrować! Otrzymujesz rift runnera, który będzie ci towarzyszył w podróży.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.104030Z"
+  },
+  "scripts.actions_nests.msg_1": {
+    "src_hash": "fef363bec76627c1d876f7e952b30be4",
+    "text": "Zniszczyłeś gniazdo potworów.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.105027Z"
+  },
+  "scripts.actions_nests.msg_2": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Zgłoś zadanie Gnomboldowi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.105797Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_1": {
+    "src_hash": "7bbc4c59760d2bcf1842a53690ee5564",
+    "text": "Najpierw musisz znaleźć marchewkę pod jednym z trzech kapeluszy, aby uzyskać dostęp!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.107191Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_2": {
+    "src_hash": "e510f9518fd800448511537270d4eee8",
+    "text": "Znalazłeś marchewkę! Drzwi są otwarte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.108315Z"
+  },
+  "scripts.actions_oldLock.msg_1": {
+    "src_hash": "7a6d23bac82ce5906f6cb32c76cc2d8d",
+    "text": "Wkładasz stary zamek do drzwi. Pasuje idealnie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.110064Z"
+  },
+  "scripts.actions_old_desk.msg_1": {
+    "src_hash": "033f908b6837e564b466f4b91e421871",
+    "text": "Masz już stary srebrny klucz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.111074Z"
+  },
+  "scripts.actions_old_desk.msg_2": {
+    "src_hash": "508293e3d7ed6c045d9df2924b04b947",
+    "text": "W szufladzie znajdujesz stary srebrny klucz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:39:54.112205Z"
   }
 }

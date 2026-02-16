@@ -1,128 +1,104 @@
 {
-  "timestamp": "2026-02-16T23:39:17.720215Z",
+  "timestamp": "2026-02-16T23:40:09.449803Z",
   "language": "es",
-  "json_file": "spells.json",
-  "translated": 44,
+  "json_file": "npc.json",
+  "translated": 16,
   "entries": [
     {
-      "key": "spell.spawn_of_the_welter_heal.name",
-      "en": "spawn of the welter heal",
-      "translated": "engendro de la curación welter",
-      "source": "google_translate"
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
+      "source": "tm"
     },
     {
-      "key": "spell.arkhothep_summon.name",
-      "en": "arkhothep summon",
-      "translated": "convocar arkhotep",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.greet_1",
+      "en": "<sniff>",
+      "translated": "<sniff>",
+      "source": "tm"
     },
     {
-      "key": "spell.dread_intruder_wave.name",
-      "en": "dread intruder wave",
-      "translated": "temible ola intrusa",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
+      "source": "tm"
     },
     {
-      "key": "spell.glooth_bomb_walkthrough.name",
-      "en": "glooth bomb walkthrough",
-      "translated": "tutorial de bomba gloriosa",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "spell.deathstrike_paralyze.name",
-      "en": "deathstrike paralyze",
-      "translated": "golpe mortal paralizar",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "spell.anomaly_wave.name",
-      "en": "anomaly wave",
-      "translated": "onda de anomalía",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "spell.werecrocodile_fire_ring.name",
-      "en": "werecrocodile fire ring",
-      "translated": "anillo de fuego hombre cocodrilo",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "spell.orshabaal_skill_reducer.name",
-      "en": "orshabaal skill reducer",
-      "translated": "reductor de habilidades orshabaal",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "spell.sir_valorcrest_summon.name",
-      "en": "sir valorcrest summon",
-      "translated": "invocación de señor valorcrest",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "spell.holy_barrage.name",
-      "en": "holy barrage",
-      "translated": "bombardeo santo",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "spell.lancer_beetle_skill_reducer.name",
-      "en": "lancer beetle skill reducer",
-      "translated": "Reductor de habilidades del escarabajo lancero",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "spell.prince_drazzak_druid.name",
-      "en": "Prince Drazzak Druid",
-      "translated": "Príncipe Drazzak Druid",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "spell.ironblight_freeze.name",
-      "en": "ironblight freeze",
-      "translated": "congelación de la plaga del hierro",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "spell.srezz_lleecht.name",
-      "en": "lleech waveT",
-      "translated": "onda de sanguijuela",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "spell.lost_berserker_skill_reducer.name",
-      "en": "lost berserker skill reducer",
-      "translated": "reductor de habilidades berserker perdido",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "spell.abyssador_poison_wave.name",
-      "en": "abyssador poison wave",
-      "translated": "onda venenosa abisador",
-      "source": "google_translate"
-    },
-    {
-      "key": "spell.haunter_electrify.name",
-      "en": "haunter electrify",
-      "translated": "perseguidor electrificar",
-      "source": "google_translate"
-    },
-    {
-      "key": "spell.massive_energy_elemental_electrify.name",
-      "en": "massive energy elemental electrify",
-      "translated": "elemental de energía masiva electrificar",
-      "source": "google_translate"
-    },
-    {
-      "key": "spell.greater_jar_summon.name",
-      "en": "greater jar summon",
-      "translated": "invocación de jarra mayor",
-      "source": "google_translate"
-    },
-    {
-      "key": "spell.tyrn_electrify.name",
-      "en": "tyrn electrify",
-      "translated": "tyrn electrificar",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     }
   ]
 }

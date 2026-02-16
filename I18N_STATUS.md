@@ -4,28 +4,28 @@
 
 ## 📝 PODSUMOWANIE
 
-> Worker tłumaczy **53** języków. Klucze EN: **53,586**. Pokrycie globalne: **10.23%**. Tempo: **2346.7 kluczy/h**. Tłumaczeń netto: **83,178**.
+> Worker tłumaczy **53** języków. Klucze EN: **53,586**. Pokrycie globalne: **10.23%**. Tempo: **2338.3 kluczy/h**. Tłumaczeń netto: **83,178**.
 
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-16 23:50:23
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-16 23:50:40
 
-> **Aktualizacja:** 2026-02-16 23:50:23 UTC  
+> **Aktualizacja:** 2026-02-16 23:50:40 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #55 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: it | Plik: - | Heartbeat: 2026-02-16T23:50:20Z  
-> **Okno godzinowe:** okno=1.0h | cykli=161 | pominięte=0.0% | odrzucone=33.9% | przepustowość=2346.7/h  
+> **LIVE:** Cykl #56 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: it | Plik: actions.json | Heartbeat: 2026-02-16T23:50:40Z  
+> **Okno godzinowe:** okno=1.0h | cykli=163 | pominięte=0.0% | odrzucone=34.0% | przepustowość=2338.3/h  
 > **Tłumaczeń netto:** 83,178
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-16 23:50:23 |
-| LIVE | 🟢 AKTYWNY | 5s temu | - | `activity.json / worker_state.json` | 2026-02-16T23:50:20Z |
-| MIGRATION | 🔒 NIEAKTYWNY | 52s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-16 23:50:23 |
-| TRANSLATION | 🟢 AKTYWNY | 6s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-16T23:50:18.911704Z |
-| QUALITY | 🔒 NIEAKTYWNY | 5s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-16T23:50:19.935413Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-16 23:50:23 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-16 23:50:40 |
+| LIVE | 🟢 AKTYWNY | 1s temu | - | `activity.json / worker_state.json` | 2026-02-16T23:50:40Z |
+| MIGRATION | 🔒 NIEAKTYWNY | 7s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-16 23:50:40 |
+| TRANSLATION | 🟢 AKTYWNY | 1s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-16T23:50:39.966271Z |
+| QUALITY | 🔒 NIEAKTYWNY | 22s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-16T23:50:19.935413Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-16 23:50:40 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,28 +34,28 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 5s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T23:50:20Z
+> Świeżość: 1s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T23:50:40Z
 
 | Metryka | Wartość |
 |---------|---------|
-| 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) → cycle_end |
-| 🌍 **Aktywne języki (10 min)** | ES, IT, PL, RO, RU |
+| 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) → zakończone |
+| 🌍 **Aktywne języki (10 min)** | IT, RO, RU |
 | 📝 **Faza** | AUTO_TRANSLATE |
-| 📋 **Etap** | cycle_end |
+| 📋 **Etap** | tłumaczenie zakończone |
 | 📂 **Kategoria / Język** | it |
-| 📄 **Plik** | - |
+| 📄 **Plik** | actions.json |
 | 📊 **Status** | 🟢 DZIAŁA |
-| 📈 **Postęp** | - |
-| 🔧 **Metoda** | Google Translate + TM fallback |
+| 📈 **Postęp** | ░░░░░░░░░░░░░░░░░░░░ 0/50 keys (0.0%) |
+| 🔧 **Metoda** | Translation Memory (GT wyłączony) |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-02-16T23:50:20Z |
+| ❤️ **Heartbeat** | 2026-02-16T23:50:40Z |
 
 **Ostatnie operacje:**
+- → AUTO_TRANSLATE_DONE (IT) [warn]
 - → PARALLEL_TRANSLATE_DONE (RO) [ok]
 - → PARALLEL_TRANSLATE_DONE (RU) [ok]
 - → AUTO_TRANSLATE_DONE (IT) [warn]
 - → REPAIR_IDENTICAL_DONE (ES) [ok]
-- → PARALLEL_TRANSLATE_DONE (PL) [ok]
 
 ---
 
@@ -63,14 +63,14 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 📊 Przetłumaczono | **4,382** kluczy |
-| ❌ Odrzucone (guard) | 2248 |
-| 🔁 Cykli | 161 |
+| 📊 Przetłumaczono | **4,341** kluczy |
+| ❌ Odrzucone (guard) | 2240 |
+| 🔁 Cykli | 163 |
 | 🌍 Języków | 7 |
 | 🏆 Najaktywniejszy | IT (861 kluczy) |
-| 📄 Najczęstszy plik | npc.json |
-| ⚡ Przepustowość | ~2347 kluczy/h |
-| 🛡️ Guard fail rate | 33.9% |
+| 📄 Najczęstszy plik | server.json |
+| ⚡ Przepustowość | ~2338 kluczy/h |
+| 🛡️ Guard fail rate | 34.0% |
 | ⚠️ Podejrzane | 14178 |
 
 ---
@@ -79,11 +79,11 @@
 
 | Język | Przetłumaczono | Odrzucone | GF% | Pliki |
 |-------|---------------|-----------|-----|-------|
-| IT | 861 | 40 | 4.4% | 12 |
+| IT | 861 | 41 | 4.5% | 12 |
 | RU | 816 | 140 | 14.6% | 12 |
 | RO | 802 | 148 | 15.6% | 12 |
 | PL | 739 | 1652 | 69.1% | 12 |
-| ES | 640 | 192 | 23.1% | 12 |
+| ES | 599 | 183 | 23.4% | 12 |
 | SV | 274 | 26 | 8.7% | 4 |
 | SR | 250 | 50 | 16.7% | 4 |
 
@@ -152,7 +152,7 @@
 | MS | █░░░░░░░░░░░░░░░░░░░ | 7.1% | 3,805/53,586 | ~20h |
 | TE | █░░░░░░░░░░░░░░░░░░░ | 6.9% | 3,714/53,586 | ~20h |
 
-> Tempo obliczone na bazie ostatniej godziny: ~2347 kluczy/h.
+> Tempo obliczone na bazie ostatniej godziny: ~2338 kluczy/h.
 
 ---
 
@@ -207,7 +207,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 52s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-16 23:50:23
+> Świeżość: 7s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-16 23:50:40
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -256,7 +256,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 AKTYWNY  
-> Świeżość: 6s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-16T23:50:18.911704Z
+> Świeżość: 1s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-16T23:50:39.966271Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -292,44 +292,23 @@
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** IT - Włoski - Serwer
 - **Plik JSON:** scripts.json
-- **Ostatnie klucze (10-20):** 20
+- **Ostatnie klucze (10-20):** 0
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- The hireling name has invalid characters → Numele angajatului are caractere nevalide (gamestore.validation.hireling_name_invalid_chars)
-- The length of the hireling name must be between 3 and 18 characters. → Lungimea numelui angajatului trebuie să fie între 3 și 18 caractere. (gamestore.validation.hireling_name_length)
-- The hireling name have more than 1 whitespace. → Numele angajatului are mai mult de 1 spațiu alb. (gamestore.validation.hireling_name_multiple_spaces)
-- The hireling name can't have whitespace at begin. → Numele angajatului nu poate avea spații albe la început. (gamestore.validation.hireling_name_whitespace_begin)
-- You can't use this character '%s' in your new name. → Nu poți folosi acest caracter '%s' în noul tău nume. (gamestore.validation.invalid_character)
-- Your new name '%s' can't be a monster's name. → Noul tău nume '%s' nu poate fi numele unui monstru. (gamestore.validation.monster_name)
-- Your new name can't have consecutive spaces. → Noul tău nume nu poate avea spații consecutive. (gamestore.validation.new_name_consecutive_spaces)
-- You can't use the word '%s' in your new name. → Nu poți folosi cuvântul '%s' în noul tău nume. (gamestore.validation.new_name_forbidden_word)
-- You can't use the word '%s' even with spaces in your new name. → Nu poți folosi cuvântul '%s' chiar și cu spații în noul tău nume. (gamestore.validation.new_name_forbidden_word_space)
-- The length of your new name must be between 3 and 29 characters. → Lungimea noului tău nume trebuie să fie între 3 și 29 de caractere. (gamestore.validation.new_name_length)
-- Your new name can't have more than 2 spaces. → Noul tău nume nu poate avea mai mult de 2 spații. (gamestore.validation.new_name_too_many_spaces)
-- Your new name can't have whitespace at the beginning. → Noul tău nume nu poate avea spații albe la început. (gamestore.validation.new_name_whitespace_begin)
-- Your new name '%s' can't be an NPC's name. → Noul tău nume '%s' nu poate fi numele unui NPC. (gamestore.validation.npc_name)
-- As you wish! → Cum doriți! (lib.hireling.as_you_wish)
-- This mysterious lamp summons your very own personal hireling.
-This item cannot b → Această lampă misterioasă cheamă propriul tău angajat personal.
-Acest articol nu (lib.hireling.lamp_description)
-- You have received Adventurer's Blessing, which applies up to level {0}! → Ați primit Binecuvântarea aventurierului, care se aplică până la nivelul {0}! (misc.blessing.msg_1)
-- There's already someone fighting with {0}. → Există deja cineva care se luptă cu {0}. (misc.boss_lever.already_fighting)
-- You have to wait {0} to face {1} again! → Trebuie să așteptați {0} pentru a face față din nou {1}! (misc.boss_lever.cooldown_wait)
-- The boss is temporarily disabled. → Șeful este temporar dezactivat. (misc.boss_lever.disabled)
-- All players need to be level {0} or higher. → Toți jucătorii trebuie să fie de nivelul {0} sau mai mare. (misc.boss_lever.level_requirement)
+- Brak nowych tłumaczeń w ostatnim cyklu
 
 ### 🚫 Raporty strażnika jakości
-- Raporty strażnika jakości: **2491**  
+- Raporty strażnika jakości: **2492**  
 - Raporty blokad: **0**  
-- Widoczne raporty 'nie mogę przetłumaczyć': **2428**
+- Widoczne raporty 'nie mogę przetłumaczyć': **2429**
 
 ### 🌐 Globalne info wszystkich języków
 - **Pokrycie globalne:** **10.23%** (285,013/2,786,472)
 - **Kopie EN (łącznie):** **166,435**
 - **Braki kluczy (łącznie):** **2,155**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **49**, miss **3**, hit-rate **94.2%**
-- **Cache STATUSPY (per-file):** hit **1973**, miss **3**, hit-rate **99.8%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -357,12 +336,12 @@ Acest articol nu (lib.hireling.lamp_description)
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-16T22:50:24.183325Z → 2026-02-16T23:50:24.183325Z) |
-| Cykle | **161** (TŁUMACZENIE=161, PRE_MIGRATION=0) |
+| Okno | **1.0h** (2026-02-16T22:50:40.938061Z → 2026-02-16T23:50:40.938061Z) |
+| Cykle | **163** (TŁUMACZENIE=163, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
-| Odrzucone (strażnik jakości) % | **33.9%** |
-| Cykle bez postępu % | **3.7%** |
-| Przepustowość (kluczy/h) | **2346.7 kluczy/h** |
+| Odrzucone (strażnik jakości) % | **34.0%** |
+| Cykle bez postępu % | **4.7%** |
+| Przepustowość (kluczy/h) | **2338.3 kluczy/h** |
 | Podejrzane tłumaczenia | **14178** |
 | Najgorsze cele (strażnik) | pl/items.json (gf=1025), pl/npc.json (gf=297), pl/server.json (gf=86), pl/scripts.json (gf=77), ro/monsters.json (gf=76) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
@@ -371,7 +350,7 @@ Acest articol nu (lib.hireling.lamp_description)
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 5s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-16T23:50:19.935413Z
+> Świeżość: 22s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-16T23:50:19.935413Z
 
 - **Ostatni audyt:** OK | 7 issue(s) / 100 entries | 2026-02-16T23:50:19.935413Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=159, suspicious_log_high=117, suspicious_log_critical=77, suspicious_rejected_high=41, identical_to_en_exempt=11
@@ -381,7 +360,7 @@ Acest articol nu (lib.hireling.lamp_description)
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#55** | od uruchomienia |
+| 🔄 Cykl aktualny | **#56** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych (LIVE) | **53,586** | realny stan EN |
 | 🤖 Kluczy z rejestru workera (efektywne) | **53,586** | raw + reconcile |
 | 🧾 Kluczy z rejestru workera (raw) | **7** | historia runów workera |
@@ -414,8 +393,8 @@ Acest articol nu (lib.hireling.lamp_description)
 
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
-| Worker | 🟢 DZIAŁA | Cykl #55 |
-| Heartbeat | 5s temu | 2026-02-16T23:50:20Z |
+| Worker | 🟢 DZIAŁA | Cykl #56 |
+| Heartbeat | 1s temu | 2026-02-16T23:50:40Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -448,7 +427,7 @@ Acest articol nu (lib.hireling.lamp_description)
 
 > **Aktualna faza:** AUTO_TRANSLATE  
 > **Aktualna kategoria:** it
-> **Tryb:** 🔒 TRANSLATIONS_ONLY STRICT (bez dodawania nowych kluczy)
+
 
 ### 🔄 Faza 1: 🎮 Canary Server
 
@@ -515,33 +494,33 @@ Acest articol nu (lib.hireling.lamp_description)
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 5s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T23:50:20Z
+> Świeżość: 1s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T23:50:40Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    55 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    56 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 DZIAŁA                                 │
-│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end) | STRICT    │
+│ Tryb:      🤖 AUTO_TRANSLATE (auto_done)             │
 │ Kategoria: 📁 IT                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle end                                               │
+│ Plik: actions.json                                            │
+│ Postęp: 0/50 keys                                             │
+│ …d=0 guard_fail=1 strict_missing_key=0 strict_skipped_done=35 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-16T23:50:20Z           │
+│ ❤️ Heartbeat: 2026-02-16T23:50:40Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-16 23:50:40 | AUTO_TRANSLATE:auto_done | it | ok | actions.json
+- 2026-02-16 23:50:37 | AUTO_TRANSLATE:heartbeat_tick | it | ok | actions.json
+- 2026-02-16 23:50:37 | AUTO_TRANSLATE:auto_start | it | ok | actions.json
 - 2026-02-16 23:49:48 | AUTO_TRANSLATE:heartbeat_tick | ro | ok | scripts.json
 - 2026-02-16 23:49:48 | AUTO_TRANSLATE:parallel_start | ro | ok | scripts.json
 - 2026-02-16 23:49:25 | AUTO_TRANSLATE:heartbeat_tick | ru | ok | scripts.json
-- 2026-02-16 23:49:25 | AUTO_TRANSLATE:parallel_start | ru | ok | scripts.json
-- 2026-02-16 23:49:23 | AUTO_TRANSLATE:auto_done | it | ok | scripts.json
-- 2026-02-16 23:48:53 | AUTO_TRANSLATE:heartbeat_tick | it | ok | scripts.json
 
 ---
 
@@ -555,7 +534,7 @@ Acest articol nu (lib.hireling.lamp_description)
 | Wskaźnik | Wartość | Cel | Status |
 |-----|---------|--------|--------|
 | Tłumaczeń netto | **83,178** | — | 📊 |
-| Adaptacyjna paczka | batch=5, gf_rate=17.58%, reason=stable_fail_rate=17.6% | odrzucenia <5% → zwiększ | 📊 |
+| Adaptacyjna paczka | batch=5, gf_rate=14.18%, reason=stable_fail_rate=14.2% | odrzucenia <5% → zwiększ | 📊 |
 | Przepustowość (okno) | 2,333 kluczy / 60 wpisów | >50/h | 📊 |
 
 ---
@@ -563,18 +542,18 @@ Acest articol nu (lib.hireling.lamp_description)
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-16 23:50:23
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-16 23:50:40
 
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ro] → ok (translated+48, skipped+0) — parallel lang=ro file=scripts.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ru] → ok (translated+50, skipped+0) — parallel lang=ru file=scripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → warn (files+1, translated+49, skipped+0) — lang=it file=scripts.json strict_skipped_done=208 guard_fail=1 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+24) — repair_identical lang=es file=npc.json target_identical=24 limit=108 tier=low_backlog+suspicious_guard domain_cap=260 gt=true suspicious_pct=283.81
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [it] → ok (translated+50, skipped+0) — parallel lang=it file=items.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ro] → ok (translated+38, skipped+0) — parallel lang=ro file=items.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ru] → warn (files+1, translated+50, skipped+0) — lang=ru file=items.json strict_skipped_done=495 guard_fail=3 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+9, skipped+0) — parallel lang=pl file=startup.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+80, skipped+0) — lang=es file=books.json strict_skipped_done=1320
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=html.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → warn (files+0, translated+0, skipped+0) — lang=it file=actions.json strict_skipped_done=35 guard_fail=1 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ru] → ok (translated+44, skipped+0) — parallel lang=ru file=npc.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [sv] → ok (translated+50, skipped+0) — parallel lang=sv file=items.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sr] → warn (files+1, translated+50, skipped+0) — lang=sr file=items.json strict_skipped_done=416
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+5, skipped+0) — parallel lang=pl file=talkactions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+5, skipped+0) — lang=es file=php.json strict_skipped_done=54
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=books.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+6, skipped+0) — lang=pl file=cpp.json strict_skipped_done=123
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [spells] → ok (keys+0) — no new data
 
 
 ## 📅 Dziś (2026-02-16)
@@ -620,7 +599,7 @@ Acest articol nu (lib.hireling.lamp_description)
 | 🧩 Reconcile korekta rejestru | **53,579** | zmiany EN poza workerem |
 | ➕ Kluczy poza rejestrem workera | **0** | ręczne/Codex/Claude/starsze |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#55** | continuous mode |
+| 🔄 Cykli wykonanych | **#56** | continuous mode |
 
 ---
 
@@ -830,7 +809,7 @@ Acest articol nu (lib.hireling.lamp_description)
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #55 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #56 |
 | Guardian v2.0 | 🟢 AKTYWNY | Push co 2 min |
 
 ---
@@ -917,7 +896,7 @@ Acest articol nu (lib.hireling.lamp_description)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-16 23:50:23  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-16 23:50:40  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

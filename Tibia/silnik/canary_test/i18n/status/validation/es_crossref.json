@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 74.5,
+  "coverage_pct": 74.6,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T22:54:04.506632Z",
-  "issues_total": 490,
+  "checked_at": "2026-02-16T23:15:16.681953Z",
+  "issues_total": 491,
   "issues_by_type": {
-    "consistency_in_language": 66,
+    "consistency_in_language": 67,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 24
   },
@@ -176,7 +176,8 @@
       "variants_count": 2,
       "examples": [
         "achievements:achievement.170.name",
-        "monsters:monster.warlock.name"
+        "monsters:monster.warlock.name",
+        "raids:raid.warlock.name"
       ]
     },
     {
@@ -865,6 +866,20 @@
       "examples": [
         "monsters:monster.gargoyle.name",
         "raids:raid.gargoyle.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Mad Mage",
+      "variants": [
+        "Mago loco",
+        "mago loco"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.mad_mage.name",
+        "raids:raid.mad_mage.name"
       ]
     },
     {
@@ -1714,33 +1729,6 @@
       "lang": "Oh..."
     },
     {
-      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chhchh?",
-      "pl": "Chhchh...",
-      "lang": "Chhchh?"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
       "key": "npc.a_ghostly_sage.stdmod_4",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -1766,15 +1754,6 @@
       "en": "YOOOOUHHOOOUU!",
       "pl": "JUUUUHUUUU!",
       "lang": "YOOOOUHHOOOUU!"
-    },
-    {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uhhhh...",
-      "pl": "Uuuuhhh...",
-      "lang": "Uhhhh..."
     },
     {
       "key": "npc.a_sleeping_dragon.greet_msg_1",
@@ -4601,6 +4580,42 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.boxramp.L6.2249",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clonk.",
+      "pl": "Klonk.",
+      "lang": "Clonk."
+    },
+    {
+      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L12.2256",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yeah.",
+      "pl": "Tak.",
+      "lang": "Yeah."
+    },
+    {
+      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fail.",
+      "pl": "Niepowodzenie.",
+      "lang": "Fail."
     }
   ],
   "length_ratio_issues": [

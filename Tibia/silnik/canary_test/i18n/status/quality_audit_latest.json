@@ -1,25 +1,17 @@
 {
-  "timestamp": "2026-02-16T23:13:52.588436Z",
+  "timestamp": "2026-02-16T23:14:56.623654Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en_exempt": 27,
-    "identical_to_en": 1,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_high": 110,
+    "suspicious_log_high": 109,
     "suspicious_log_critical": 81,
-    "suspicious_log_low": 9,
+    "suspicious_log_low": 10,
     "suspicious_rejected_critical": 165,
     "suspicious_rejected_high": 35
   },
   "issues": [
-    {
-      "key": "html.forum.new_thread.html.text5",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": ":cool: , :eek: , :o , :p",
-      "translated": ":cool: , :eek: , :o , :p"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T22:55:05.333547Z",
+  "checked_at": "2026-02-16T23:16:14.135696Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -613,7 +613,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " wrote on ",
-      "pl": "wrote na",
+      "pl": "wrote na ",
       "lang": " wrote on "
     },
     {
@@ -622,7 +622,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {

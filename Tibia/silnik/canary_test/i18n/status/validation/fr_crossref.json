@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T22:54:31.043494Z",
+  "checked_at": "2026-02-16T23:15:40.267458Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1401,15 +1401,6 @@
       "lang": "Troll"
     },
     {
-      "key": "monster.hunter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
-    },
-    {
       "key": "monster.bandit.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1480,51 +1471,6 @@
       "en": "Oink",
       "pl": "Chrum",
       "lang": "Oink"
-    },
-    {
-      "key": "monster.old_wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.old_bear.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
-    },
-    {
-      "key": "monster.old_bear.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.weeper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
-    },
-    {
-      "key": "monster.eternal_guardian.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zzrrkrrch!",
-      "pl": "Zrrrkrrch!",
-      "lang": "Zzrrkrrch!"
     },
     {
       "key": "monster.war_golem.voice_10",
@@ -4405,6 +4351,60 @@
       "en": "Noble Lion",
       "pl": "Nieble Lion",
       "lang": "Noble Lion"
+    },
+    {
+      "key": "monster.deer.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Deer",
+      "pl": "Jeleń",
+      "lang": "Deer"
+    },
+    {
+      "key": "monster.war_wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.wild_horse.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
+    },
+    {
+      "key": "monster.grey_horse.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
+    },
+    {
+      "key": "monster.mushroom_sniffer.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
+    },
+    {
+      "key": "monster.mushroom_sniffer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 6,
-    "skipped": 74,
+    "applied": 4,
+    "skipped": 76,
     "errors": 0
   }
 }

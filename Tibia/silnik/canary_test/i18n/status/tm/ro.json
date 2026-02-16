@@ -17814,5 +17814,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:08:29.896939Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Încă o dată amesteci creta cu o picătură de sânge și puțină apă și reînnoiești simbolul de pe podea...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.797705Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, ce parfum infatuant!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.799862Z"
+  },
+  "scripts.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.805163Z"
+  },
+  "scripts.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.805683Z"
+  },
+  "scripts.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.806300Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonda a fost reglată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.810456Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... dispozitivul scrie: 0,0,zero,0,zero care se poate traduce aproximativ prin: NIMIC DE INTERES AICI",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.811146Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Ați adunat cu succes datele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.811562Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Toți jucătorii trebuie să fie la nivel ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.814469Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Trebuie să aștepți ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.814920Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Toți jucătorii trebuie să fie la nivel ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.815326Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Trebuie să aștepți ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.815668Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Trebuie să aștepți ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.815985Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Toți jucătorii trebuie să fie la nivel ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.816385Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Trebuie să aștepți ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.816912Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Nu aveți voie să utilizați acest lucru încă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.821386Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Țineți în față vechea curăță a lui Galthein. Nu se potrivește și mult prea vechi pentru a rezista oricărui atac.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.822128Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Telescopul oferă o vedere perfectă asupra oceanului nesfârșit - fără pământ la vedere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.824188Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Recoltați cu succes niște rădăcini suculente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.825344Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Încercarea ta de recoltare a distrus mai multe rădăcini suculente decât ai putea salva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.825923Z"
+  },
+  "scripts.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Recoltați cu succes niște rădăcini suculente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.826385Z"
+  },
+  "scripts.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Încercarea ta de recoltare a distrus mai multe rădăcini suculente decât ai putea salva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.826924Z"
+  },
+  "scripts.actions_to_take_roots.msg_5": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Această rădăcină a fost deja recoltată, nimic de câștigat aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.827423Z"
+  },
+  "scripts.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.829609Z"
+  },
+  "scripts.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.830158Z"
+  },
+  "scripts.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.830749Z"
+  },
+  "scripts.actions_wooden_trash.msg_1": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Ai început o escortă, du-ți prizonierul la avanpostul pitic!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.831722Z"
+  },
+  "scripts.actions_wooden_trash.msg_2": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Nu găsiți nimic interesant sub dărâmături.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.832152Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.say_1": {
+    "src_hash": "98112328c358c3f5235e66814405aade",
+    "text": "*clic*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.832863Z"
+  },
+  "scripts.golden.msg_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.860307Z"
+  },
+  "scripts.keys.msg_2": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Ai cincisprezece minute să-l ucizi și să jefuiești acest șef, altfel vei pierde această șansă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.867135Z"
+  },
+  "scripts.movement_kroazur_room.say_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:10.880504Z"
+  },
+  "gamestore.error.all_task_slots": {
+    "src_hash": "fb1c5f4f65f3e2e83df0222a76f58629",
+    "text": "Ați deblocat deja toate sloturile de vânătoare de sarcini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:14.394643Z"
+  },
+  "gamestore.error.already_own_mount": {
+    "src_hash": "8dc46a1484f54e2257f464fe4f39730f",
+    "text": "Dețineți deja această montură.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:14.394968Z"
+  },
+  "gamestore.error.already_own_outfit": {
+    "src_hash": "9401d88df0143dc879a724750ed58ff6",
+    "text": "Dețineți deja această ținută.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:14.395271Z"
+  },
+  "gamestore.error.client10_hireling": {
+    "src_hash": "594704e70bf187eb9dc45cba1dd58c2b",
+    "text": "Nu puteți cumpăra angajați pe clientul 10, vă rugăm să vă reconectați pe clientul 12 și încercați din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:14.395761Z"
+  },
+  "gamestore.error.client10_hireling_name": {
+    "src_hash": "3e6a730fb48e4be399f9c645c8bfdcca",
+    "text": "Nu puteți cumpăra un angajat pentru schimbarea numelui de pe clientul 10, vă rugăm să vă reconectați la clientul 12 și să încercați din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:18.207564Z"
+  },
+  "gamestore.error.client10_hireling_outfit": {
+    "src_hash": "e0e94adbbd7adad8a458bcfd66fe631d",
+    "text": "Nu puteți cumpăra echipament de angajare pe clientul 10, vă rugăm să vă reconectați pe clientul 12 și încercați din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:18.208124Z"
+  },
+  "gamestore.error.client10_hireling_sex": {
+    "src_hash": "c12b831cd5d37da1d6c9fa1059691b85",
+    "text": "Nu puteți cumpăra angajați pentru a schimba sexul pe clientul 10, vă rugăm să vă reconectați la clientul 12 și să încercați din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:18.208672Z"
+  },
+  "gamestore.error.client10_hireling_skill": {
+    "src_hash": "f3813c3f0e4d537dd76fb64514d68035",
+    "text": "Nu puteți cumpăra abilități de angajare pe clientul 10, vă rugăm să vă reconectați la clientul 12 și încercați din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:18.209214Z"
+  },
+  "gamestore.error.hireling_lamp_error": {
+    "src_hash": "48cb7da3cb55f6eaece0eb5eb3b3faef",
+    "text": "Eroare la livrarea lampii angajatului, încercați din nou mai târziu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:18.209618Z"
+  },
+  "gamestore.error.hireling_limit": {
+    "src_hash": "65a8c0711d0b885796625ec6297018b2",
+    "text": "Nu puteți avea mai mult de %s angajați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:21.823351Z"
+  },
+  "gamestore.error.item_add_error": {
+    "src_hash": "25d596f61fc1772ffcc44f7f722d220d",
+    "text": "Eroare la adăugarea articolului în căsuța de e-mail din magazin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:21.823734Z"
+  },
+  "gamestore.error.name_already_used": {
+    "src_hash": "8e64ff89eeff993ff2f6e5e707b9de07",
+    "text": "Acest nume este deja folosit, vă rugăm să încercați din nou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:21.824144Z"
+  },
+  "gamestore.error.namechange_pz_only": {
+    "src_hash": "e4d354a2c809681b2ef79a82eb3f40e5",
+    "text": "Puteți schimba numele numai în Zona de protecție.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:21.824509Z"
+  },
+  "gamestore.error.need_outfit_first": {
+    "src_hash": "4d303637cb76de0e641caa90cf46f3ca",
+    "text": "Trebuie să dețineți ținuta înainte de a-i putea cumpăra suplimentul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:21.824901Z"
+  },
+  "gamestore.error.no_history": {
+    "src_hash": "1c70c78723f09e479c29dd24411bca0c",
+    "text": "Nu aveți încă nicio intrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:24.049223Z"
+  },
+  "gamestore.error.no_results": {
+    "src_hash": "413b19de687dc07f746f993c7953a2af",
+    "text": "Nu s-au găsit rezultate pentru „%s”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:24.049555Z"
+  },
+  "gamestore.error.not_enough_coins": {
+    "src_hash": "00f152726c3059d5ededb3a6d9181f98",
+    "text": "Nu ai suficiente monede. Achiziția dvs. a fost anulată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:14:24.049948Z"
   }
 }

@@ -1033,11 +1033,11 @@
   },
   "web.tpl.spells.th_17": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
-    "text": "I. poziom",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Poziom Magii",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705720Z"
+    "updated_at": "2026-02-16T20:18:32.541487Z"
   },
   "web.tpl.monsters.th_4": {
     "src_hash": "4038d5a85906029f46137a4164c51073",

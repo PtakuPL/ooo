@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:41:53.264079Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T23:43:49.856819Z",
+  "language": "it",
+  "json_file": "quests.json",
+  "translated": 48,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.kilmaresh.cutting_snake_maw",
+      "en": "You are cutting some snake maw.",
+      "translated": "Stai tagliando le fauci di un serpente.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "quests.kilmaresh.cutting_veldt",
+      "en": "You are cutting some veldt flowers.",
+      "translated": "Stai tagliando dei fiori del veldt.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "quests.kilmaresh.empty_gryphon_nest",
+      "en": "The gryphon nest is empty.",
+      "translated": "Il nido del grifone è vuoto.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "quests.kilmaresh.empty_palm",
+      "en": "This palm is empty.",
+      "translated": "Questo palmo è vuoto.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "quests.kilmaresh.empty_sarcophagus",
+      "en": "The sarcophagus is empty.",
+      "translated": "Il sarcofago è vuoto.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "quests.kilmaresh.found_gryphon_mask",
+      "en": "You have found a gryphon mask.",
+      "translated": "Hai trovato una maschera di grifone.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "quests.kilmaresh.found_mirror_mask",
+      "en": "You have found a mirror mask.",
+      "translated": "Hai trovato una maschera a specchio.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "quests.kilmaresh.found_silver_mask",
+      "en": "You have found a silver mask.",
+      "translated": "Hai trovato una maschera d'argento.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "quests.kilmaresh.gathering_spiderweb",
+      "en": "You are gathering some spiderweb cloud shreds. But you become entangled.",
+      "translated": "Stai raccogliendo alcuni brandelli di nuvole di ragnatela. Ma rimani intrappolato.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "quests.kilmaresh.memory_word_1",
+      "en": "The Ambassador tells another dignitary: Rathleton must never be surpassed! I will procure that the Empire falters!",
+      "translated": "L'Ambasciatore dice ad un altro dignitario: Rathleton non deve mai essere superato! Farò in modo che l'Impero vacilli!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "quests.kilmaresh.memory_word_2",
+      "en": "Through a dimensional gate you can see the Ambassador of Rathleton wearing a cloak with a black sphinx on it.",
+      "translated": "Attraverso un portale dimensionale puoi vedere l'Ambasciatore di Rathleton che indossa un mantello con sopra una sfinge nera.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "quests.kilmaresh.memory_word_3",
+      "en": "Through a dimensional gate you can see how the Ambassador of Rathleton is talking to Fafnar cultists in a quite familiar way. The proof is absolutely substantive. The Ambassador is a betrayer!",
+      "translated": "Attraverso un portale dimensionale puoi vedere come l'Ambasciatore di Rathleton sta parlando con i cultisti di Fafnar in un modo abbastanza familiare. La prova è assolutamente sostanziale. L'Ambasciatore è un traditore!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.lions_rock.amethyst_flame",
+      "en": "You place the amethyst on the small socket. A violet flame begins to burn.",
+      "translated": "Metti l'ametista sulla piccola presa. Una fiamma viola comincia a bruciare.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.lions_rock.ruby_flame",
+      "en": "You place the ruby on the small socket. A red flame begins to burn.",
+      "translated": "Metti il ​​rubino sulla piccola presa. Una fiamma rossa inizia a bruciare.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.lions_rock.sapphire_flame",
+      "en": "You place the sapphire on the small socket. A blue flame begins to burn.",
+      "translated": "Metti lo zaffiro sulla piccola presa. Una fiamma blu inizia a bruciare.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "quests.lions_rock.shrine_time",
+      "en": "When the time comes, '%s' will be accepted at this shrine.",
+      "translated": "Quando arriverà il momento, '%s' sarà accettato in questo santuario.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.lions_rock.sign_hyaena_1",
+      "en": "With the aid of the old scroll you translate the inscriptions on the golden statue: And the mighty lion defeated the greedy hyaena.",
+      "translated": "Con l'aiuto dell'antico rotolo traduci le iscrizioni sulla statua d'oro: E il possente leone sconfisse l'avida iena.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.lions_rock.sign_hyaena_2",
+      "en": "As a sign of victory he tooks its blood, red as voracity and lust, and created a precious treasure.",
+      "translated": "In segno di vittoria ne prese il sangue, rosso come la voracità e la lussuria, e creò un tesoro prezioso.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.lions_rock.sign_lizard_1",
+      "en": "With the aid of the old scroll you translate the inscriptions on the floor: And the mighty lion defeated the lazy lizard.",
+      "translated": "Con l'aiuto del vecchio rotolo traduci le iscrizioni sul pavimento: E il potente leone sconfisse la pigra lucertola.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.lions_rock.sign_lizard_2",
+      "en": "As a sign of victory he tooks its egg, blue as sloth and conceit, and out of a foul creature created a precious treasure.",
+      "translated": "In segno di vittoria prese il suo uovo, azzurro come l'accidia e la presunzione, e da una creatura immonda creò un tesoro prezioso.",
+      "source": "google_translate"
     }
   ]
 }

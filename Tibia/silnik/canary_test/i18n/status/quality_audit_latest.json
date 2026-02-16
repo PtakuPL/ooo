@@ -1,192 +1,18 @@
 {
-  "timestamp": "2026-02-16T21:17:23.971076Z",
+  "timestamp": "2026-02-16T21:18:11.349889Z",
   "checked_entries": 100,
-  "issues_found": 43,
+  "issues_found": 30,
   "issues_by_type": {
-    "identical_to_en": 43,
-    "identical_to_en_exempt": 2,
-    "suspicious_log_high": 47,
-    "suspicious_log_low": 123,
-    "suspicious_log_critical": 30,
+    "identical_to_en": 28,
+    "identical_to_en_exempt": 4,
+    "artifact_token": 2,
+    "suspicious_log_critical": 45,
+    "suspicious_log_high": 150,
+    "suspicious_log_low": 5,
     "suspicious_rejected_critical": 99,
-    "suspicious_rejected_high": 60
+    "suspicious_rejected_high": 62
   },
   "issues": [
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
-    {
-      "key": "monster.old_wolf.voice_1",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!"
-    },
-    {
-      "key": "monster.old_bug.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Bug",
-      "translated": "Bug"
-    },
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
     {
       "key": "monster.sir_valorcrest.desc",
       "lang": "sv",
@@ -312,6 +138,90 @@
       "type": "identical_to_en",
       "en": "Fernfang",
       "translated": "Fernfang"
+    },
+    {
+      "key": "monster.feroxa2.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa4.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa4.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa3.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa3.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa5.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa5.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.undead_cavebear.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
+    },
+    {
+      "key": "monster.ocyakao.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Ocyakao",
+      "translated": "Ocyakao"
+    },
+    {
+      "key": "monster.ocyakao.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Ocyakao",
+      "translated": "Ocyakao"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I WILL MAKE ALL OF YOU SUFFER!",
+      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
     }
   ],
   "threshold": 10,

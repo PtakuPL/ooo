@@ -11430,5 +11430,349 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:16:00.929067Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L62.1105": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Тогда прощайте.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.763159Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L62.1178": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Я чувствую тебя. Я слышу твои мысли. Ты... жив.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.763793Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L63.1179": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Один... так одинокий. Так холодно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.764195Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L64.1180": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Один... так одинокий. Так холодно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.764581Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L83.37": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Интересный. Человек, говорящий на языке волков.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.769511Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L84.38": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "ЙААААААААААА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.769834Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L85.39": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "ЙААААААААААА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.770137Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L139.262": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "До свидания! Не забывайте о тайнах математической магии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.772170Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L140.263": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Хм? Что? Я вижу! Ух ты! Не мино. Они и {capture} тебя тоже?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.773028Z"
+  },
+  "data.otservbr.global.npc.rata.mari.L104.829": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "Мип!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.853858Z"
+  },
+  "data.otservbr.global.npc.rata.mari.L105.830": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "Мип!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.854234Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.actions.telescope.L6.2318": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Телескоп обеспечивает прекрасный вид на бескрайний океан — земли не видно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.935430Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L16.2302": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Вы прикрепляете волосы к накладке грифа из черного дерева. Пряди должны быть подходящими для использования в качестве веревок.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.936520Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L27.2303": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Жила-была красавица-девица с темными глазами и шелковистыми волосами. Вдали от дома она умерла. Ни могилы, ни поминок, ни траура.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.937260Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L37.2305": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Вы играете на костяной скрипке.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.937836Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L9.2301": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Вы прикрепляете черное дерево к черепу. Это должно соответствовать требованиям, предъявляемым к грифу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.938496Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Вам не хватает уровня.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.938940Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.fragrance.L4.2306": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Хмммм, какой манящий аромат!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.939362Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L111.2308": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Вы пока не можете использовать этот портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.939921Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L65.2300": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Вы пока не можете использовать эту лодку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.940454Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L17.2297": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Вы еще раз смешиваете мел с каплей своей крови и небольшим количеством воды и обновляете символ на полу...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.941255Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L21.2298": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Пользоваться этим входом можно только ночью.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.941719Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.chests.L22.2294": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.942033Z"
+  },
+  "server.game.msg_21": {
+    "src_hash": "557c8cc08c97134aa5959bb081ae55a2",
+    "text": "Вы уже в группе.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.946462Z"
+  },
+  "src.game.game.L8569.2401": {
+    "src_hash": "557c8cc08c97134aa5959bb081ae55a2",
+    "text": "Вы уже в группе.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:55.954183Z"
+  },
+  "data.otservbr.global.lib.functions.players.L64.1624": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Вы получили очко славы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:58.417773Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L138.261": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Ждать! Не уходи! Хочу рассказать вам о своих сюрреалистических цифрах.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:58.419061Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L53.44": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Уххх...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:58.419723Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L56.45": {
+    "src_hash": "1b94f0ee22bb6bee9ffaf3dbadde4810",
+    "text": "Аааа! Наконец-то кто-то может послушать мой {story}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:58.421928Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L51.150": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "Зззззззз...чррр...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:58.424184Z"
+  },
+  "data.otservbr.global.npc.a.strange.chalice.L117.1623": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Привет? Что ты имеешь в виду 'hi' - разве ты не видишь, что я... мне нужно понизить голос. Вам не приходило в голову, что этот 'chalice' не хочет, чтобы его беспокоили?! Оставь меня в покое!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:02.081915Z"
+  },
+  "data.otservbr.global.npc.a.swan.L95.88": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Приветствую тебя, смертное существо.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:02.082374Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L227.68": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Хм-хм! Добро пожаловать, малыш |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:02.082966Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L228.69": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Прощай, малышка.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:02.083269Z"
+  },
+  "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Приветствую тебя, человек. Это время бедствия, мы больше, чем когда-либо, нуждаемся в стражах, которые защитят нас и наш мир.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:06.650876Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Что это? Объект с оптическими проблемами под названием |PLAYERNAME|. Как увлекательно!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:06.651592Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Подожди там. Я съем тебя после того, как запишу то, что узнал.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:06.652053Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Подожди там. Я съем тебя после того, как запишу то, что узнал.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:06.652491Z"
+  },
+  "data.otservbr.global.npc.ahmet.L182.407": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Оплакивайся, паломник во плоти. Продаю товары общего назначения. Просто попросите у меня {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:06.653171Z"
+  },
+  "data.otservbr.global.npc.ajax.L58.355": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Ты вернулся. Знаешь, ты прав. Брат прав. Кулак не всегда хорош. Скажи ему это!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:10.461146Z"
+  },
+  "data.otservbr.global.npc.ajax.L61.356": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Что ты делаешь на моем месте?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:10.461499Z"
+  },
+  "data.otservbr.global.npc.al.dee.L168.598": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Посмотрите в торговое окно слева от вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:10.462438Z"
+  },
+  "data.otservbr.global.npc.albinius.L267.1035": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Приветствую тебя, паломник. Добро пожаловать в залы надежды. Мы являемся хранителями этого {temple} и приветствуем всех, кто готов внести свой вклад.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:10.463274Z"
   }
 }

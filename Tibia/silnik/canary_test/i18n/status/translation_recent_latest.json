@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:17:23.110720Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T21:18:10.495832Z",
+  "language": "ru",
+  "json_file": "server.json",
+  "translated": 48,
   "entries": [
     {
-      "key": "npc.a_drillworm.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "key": "server.game.msg_21",
+      "en": "You are already in a party.",
+      "translated": "Вы уже в группе.",
       "source": "simple"
     },
     {
-      "key": "npc.a_drillworm.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "key": "src.game.game.L8569.2401",
+      "en": "You are already in a party.",
+      "translated": "Вы уже в группе.",
       "source": "simple"
     },
     {
-      "key": "npc.a_lost_basher.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.lib.functions.players.L64.1624",
+      "en": "You have received a fame point.",
+      "translated": "Вы получили очко славы.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_basher.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.prisoner.L138.261",
+      "en": "Wait! Don't leave! I want to tell you about my surreal numbers.",
+      "translated": "Ждать! Не уходи! Хочу рассказать вам о своих сюрреалистических цифрах.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_basher.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.restless.soul.L53.44",
+      "en": "Uhhhh...",
+      "translated": "Уххх...",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_husher.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.restless.soul.L56.45",
+      "en": "Ahhhh! At last someone that can listen to my {story}!",
+      "translated": "Аааа! Наконец-то кто-то может послушать мой {story}!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_husher.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.sleeping.dragon.L51.150",
+      "en": "ZzzzZzzZz...chrrr...",
+      "translated": "Зззззззз...чррр...",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_husher.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.strange.chalice.L117.1623",
+      "en": "Hi? What do you mean 'hi' - can't you see I am a... I have to lower my voice. Did it occur to you, that this 'chalice' does not want to be disturbed?! Leave me alone!",
+      "translated": "Привет? Что ты имеешь в виду 'hi' - разве ты не видишь, что я... мне нужно понизить голос. Вам не приходило в голову, что этот 'chalice' не хочет, чтобы его беспокоили?! Оставь меня в покое!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_thrower.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.swan.L95.88",
+      "en": "I salute you, mortal being.",
+      "translated": "Приветствую тебя, смертное существо.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_thrower.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.sweaty.cyclops.L227.68",
+      "en": "Hum Humm! Welcume lil' |PLAYERNAME|.",
+      "translated": "Хм-хм! Добро пожаловать, малыш |PLAYERNAME|.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_lost_thrower.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.sweaty.cyclops.L228.69",
+      "en": "Good bye lil' one.",
+      "translated": "Прощай, малышка.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_nightmare_scion.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.weakened.forest.fury.L122.711",
+      "en": "I greet you, human. This is a time of distress, more than ever are we in need of guardians to protect us and our world.",
+      "translated": "Приветствую тебя, человек. Это время бедствия, мы больше, чем когда-либо, нуждаемся в стражах, которые защитят нас и наш мир.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_nightmare_scion.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421",
+      "en": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "translated": "Что это? Объект с оптическими проблемами под названием |PLAYERNAME|. Как увлекательно!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_nightmare_scion.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422",
+      "en": "Wait right there. I will eat you after writing down what I found out.",
+      "translated": "Подожди там. Я съем тебя после того, как запишу то, что узнал.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423",
+      "en": "Wait right there. I will eat you after writing down what I found out.",
+      "translated": "Подожди там. Я съем тебя после того, как запишу то, что узнал.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.ahmet.L182.407",
+      "en": "Be mourned pilgrim in flesh. I'm selling general goods. Just ask me for a {trade}.",
+      "translated": "Оплакивайся, паломник во плоти. Продаю товары общего назначения. Просто попросите у меня {trade}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_vulcongra.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.ajax.L58.355",
+      "en": "You back. You know, you right. Brother is right. Fist not always good. Tell him that!",
+      "translated": "Ты вернулся. Знаешь, ты прав. Брат прав. Кулак не всегда хорош. Скажи ему это!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_vulcongra.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.ajax.L61.356",
+      "en": "Whatcha do in my place?",
+      "translated": "Что ты делаешь на моем месте?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_vulcongra.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.al.dee.L168.598",
+      "en": "Take a look in the trade window to your left.",
+      "translated": "Посмотрите в торговое окно слева от вас.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_wyrm.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
-      "source": "simple"
+      "key": "data.otservbr.global.npc.albinius.L267.1035",
+      "en": "Greetings, pilgrim. Welcome to the halls of hope. We are the keepers of this {temple} and welcome everyone willing to contribute.",
+      "translated": "Приветствую тебя, паломник. Добро пожаловать в залы надежды. Мы являемся хранителями этого {temple} и приветствуем всех, кто готов внести свой вклад.",
+      "source": "google_translate"
     }
   ]
 }

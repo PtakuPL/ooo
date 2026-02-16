@@ -142062,5 +142062,61 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:15:53.277992Z"
+  },
+  "monster.melting_frozen_horror.name": {
+    "src_hash": "a5e0b7ec3efd3c4b3cc3959be66979f6",
+    "text": "Melting congelado horror",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.134131Z"
+  },
+  "monster.the_freezing_time_guardian.name": {
+    "src_hash": "c6850ae1d1d5f791b423956e3625dd87",
+    "text": "Freezing time guardián",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.136668Z"
+  },
+  "monster.the_freezing_time_guardian.desc": {
+    "src_hash": "c6850ae1d1d5f791b423956e3625dd87",
+    "text": "Freezing time guardián",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.138266Z"
+  },
+  "monster.lloyd.name": {
+    "src_hash": "5cb8d6b6c6d88582c1dd77bf6b6f6163",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.144069Z"
+  },
+  "monster.lloyd.desc": {
+    "src_hash": "5cb8d6b6c6d88582c1dd77bf6b6f6163",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.145050Z"
+  },
+  "monster.gaz'haragoth.name": {
+    "src_hash": "62ad3edd6f61c6fad46755eb7cdc163a",
+    "text": "Haragoth'Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.193938Z"
+  },
+  "monster.gaz'haragoth.desc": {
+    "src_hash": "62ad3edd6f61c6fad46755eb7cdc163a",
+    "text": "Haragoth'Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:17:50.194988Z"
   }
 }

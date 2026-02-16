@@ -143318,5 +143318,173 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:55:52.778481Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L74.1055": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <no estás seguro, pero parece que la ardilla quiere cambiar tus valiosas bellotas por piedras inútiles que encontró y consideró no comestibles>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:32.489766Z"
+  },
+  "data.otservbr.global.npc.santiago.L80.956": {
+    "src_hash": "e48d26dc86da3f386957a0ff15e948c1",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! Ahh, encontraste mi cofre. Déjame echarte un vistazo. ¿Te pusiste ese abrigo, {yes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.589946Z"
+  },
+  "data.otservbr.global.npc.santiago.L83.957": {
+    "src_hash": "26a59fa720c3556000424984dc4c436a",
+    "text": "¡Oye, quiero darte un arma gratis! ¡No deberías negarte a eso, de hecho deberías decir '{yes}'!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.591850Z"
+  },
+  "data.otservbr.global.npc.santiago.L90.958": {
+    "src_hash": "62b533ad76e574d9d617dd8c0c907fed",
+    "text": "¡Buen trabajo! ¡Por eso te otorgaré 100 puntos de experiencia! Ah, ¿qué fue eso? Creo que avanzaste un nivel, {right}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.593758Z"
+  },
+  "data.otservbr.global.npc.sarina.L86.73": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, por favor entra, |PLAYERNAME|. ¿Qué puedo hacer por ti? Si necesitas equipo de aventura, pídeme un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.596844Z"
+  },
+  "data.otservbr.global.npc.sarina.L89.76": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Por supuesto, simplemente navega por mis productos. {Footballs} debe comprarse por separado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.600710Z"
+  },
+  "data.otservbr.global.npc.scrutinon.L101.1548": {
+    "src_hash": "a1f52b74eb5d52862370f76f97e81554",
+    "text": "|PLAYERNAME|. He estado observando tu destino durante bastante tiempo. Ya era hora de que vinieras aquí. ¿Buscas entrar a la isla dividida de Quirefang o viajar de regreso desde donde viniste?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.603305Z"
+  },
+  "data.otservbr.global.npc.sebastian.L116.1348": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Saludos, atrevido aventurero. Si necesitas un {passage}, házmelo saber.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.605235Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L68.1109": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Saludos, atrevido aventurero. Si necesitas un {passage}, házmelo saber.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.607964Z"
+  },
+  "data.otservbr.global.npc.serafin.L78.1045": {
+    "src_hash": "a6811c61ebc0424df7e96c6a5836446c",
+    "text": "¡Bienvenidos a mi tienda de frutas y verduras, |PLAYERNAME|! Pídeme un {trade} si quieres ver mis productos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.610948Z"
+  },
+  "data.otservbr.global.npc.servant.sentry.L94.222": {
+    "src_hash": "802b77465879102253735c6a970d6b64",
+    "text": "El. Limo. Tiene. Entró. Nuestro. Maestro. Tiene. ¡Izquierda! Nosotros. Debe. Ayuda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.612674Z"
+  },
+  "data.otservbr.global.npc.shiantis.L86.703": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, por favor entra, |PLAYERNAME|. ¿Qué puedo hacer por ti? Si necesitas equipo de aventura, pídeme un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.620142Z"
+  },
+  "data.otservbr.global.npc.shimun.L58.695": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.627674Z"
+  },
+  "data.otservbr.global.npc.shimun.L61.696": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.631075Z"
+  },
+  "data.otservbr.global.npc.shimun.L64.697": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.636374Z"
+  },
+  "data.otservbr.global.npc.sigurd.L145.1169": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Adiós. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.662821Z"
+  },
+  "data.otservbr.global.npc.sigurd.L146.1170": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Adiós. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.674797Z"
+  },
+  "data.otservbr.global.npc.stutch.L85.1271": {
+    "src_hash": "2303a1d196e96f4f401a39fa25e92876",
+    "text": "¡VIVA EL REY! ¡Puedes irte ahora!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.757671Z"
+  },
+  "data.otservbr.global.npc.taegen.L204.753": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.804477Z"
+  },
+  "data.otservbr.global.npc.taegen.L205.754": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.807956Z"
+  },
+  "data.otservbr.global.npc.talila.L63.1455": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:33.826497Z"
   }
 }

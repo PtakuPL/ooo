@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T22:53:17.396346Z",
+  "timestamp": "2026-02-16T22:57:26.118707Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 707,
+  "entries_total": 706,
   "entries_by_lang": {
     "es": 294,
     "pl": 169,
@@ -77,7 +77,7 @@
     "nl": 691,
     "pt": 620,
     "ro": 543,
-    "ru": 276,
+    "ru": 267,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -916,7 +916,7 @@
     {
       "lang": "ru",
       "json_file": "npc.json",
-      "identical_to_en": 6,
+      "identical_to_en": 3,
       "domain_priority": 0
     },
     {
@@ -934,7 +934,7 @@
     {
       "lang": "ru",
       "json_file": "quests.json",
-      "identical_to_en": 9,
+      "identical_to_en": 4,
       "domain_priority": 3
     },
     {
@@ -970,12 +970,6 @@
     {
       "lang": "ru",
       "json_file": "client.json",
-      "identical_to_en": 1,
-      "domain_priority": 9
-    },
-    {
-      "lang": "ru",
-      "json_file": "npclib.json",
       "identical_to_en": 1,
       "domain_priority": 9
     },
@@ -1319,6 +1313,12 @@
       "lang": "bg",
       "json_file": "scripts.json",
       "identical_to_en": 153,
+      "domain_priority": 9
+    },
+    {
+      "lang": "bg",
+      "json_file": "questlog.json",
+      "identical_to_en": 29,
       "domain_priority": 9
     }
   ],

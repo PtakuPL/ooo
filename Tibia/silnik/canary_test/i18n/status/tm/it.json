@@ -22878,5 +22878,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:46:16.449322Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Solo...così solo. Così freddo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:39.857213Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Solo...così solo. Così freddo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:39.857824Z"
+  },
+  "npc.walter_jaeger.say_14": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Hai già questo vestito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:41.337292Z"
+  },
+  "npc.walter_jaeger.say_24": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Hai già questa montatura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:41.339768Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Il nord ha un puzzle da completare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:42.983066Z"
+  },
+  "npc.a_majestic_warwolf.farewell_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOOHHOOOU!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:42.983362Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Interessante. Un essere umano che sa parlare la lingua dei lupi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:48.805626Z"
+  },
+  "npc.a_majestic_warwolf.say_1": {
+    "src_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
+    "text": "GRRRRRRRRRRRRR",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:48.805966Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "Posso vedere nei tuoi occhi che sei una persona onesta e amichevole, |PLAYERNAME|. Sei stato abbastanza paziente da imparare la nostra lingua e ti concederò un regalo speciale. Lo accetterai?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:48.807092Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "D'ora in poi sarai conosciuta come |PLAYERNAME|, la ragazza lupo. Sarai veloce e intelligente come Morgrar, il grande lupo bianco. Egli guiderà il tuo cammino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:48.808057Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "D'ora in poi sarai conosciuto come |PLAYERNAME|, il guerriero orso. Sarai forte e orgoglioso come Angros, il grande orso oscuro. Egli guiderà il tuo cammino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:48.809016Z"
+  },
+  "npc.a_majestic_warwolf.walkaway_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOOHHOOOU!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:52.376679Z"
+  },
+  "npc.a_prisoner.farewell_msg_1": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Arrivederci! Non dimenticare i segreti della matematica.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:52.377202Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Eh? Che cosa? Posso vedere! Oh! Un non-mino. Hanno {capture} anche te?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:52.377863Z"
+  },
+  "npc.a_prisoner.say_1": {
+    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "text": "Bellissimo enigma, vero? Se puoi dirmi la risposta corretta, \\z ti darò qualcosa. Eheheh!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:52.378696Z"
+  },
+  "npc.a_prisoner.say_10": {
+    "src_hash": "47bc194e64dd30781fd50c51644e8b18",
+    "text": "Bellissimo enigma, vero? Se puoi dirmi la risposta corretta, ti darò qualcosa. Eheheh!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:52.379367Z"
+  },
+  "npc.a_prisoner.say_11": {
+    "src_hash": "86b05ee12a2b0288b0178cd30e0137d1",
+    "text": "I miei numeri surreali si basano su fatti sorprendenti. Sei interessato a conoscere i segreti della matematica?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:55.075236Z"
+  },
+  "npc.a_prisoner.say_12": {
+    "src_hash": "e9c7840af52dabe70fe6cdd2a222b32b",
+    "text": "Penso che tu non sia in contatto con te stesso, torna se ti sei sintonizzato sui tuoi sentimenti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:55.075885Z"
+  },
+  "npc.a_prisoner.say_2": {
+    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "text": "I miei numeri surreali si basano su fatti sorprendenti. \\z Sei interessato a conoscere i segreti della matematica?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:55.076549Z"
+  },
+  "npc.a_prisoner.say_3": {
+    "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
+    "text": "Prima prendi altre mele!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:55.076950Z"
+  },
+  "npc.a_prisoner.say_4": {
+    "src_hash": "4e2887c83421bff167ddfa1aa50e300f",
+    "text": "Davvero, davvero?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:55.077258Z"
+  },
+  "npc.a_prisoner.say_5": {
+    "src_hash": "b0af262d4f710adfe2bb566735b3a655",
+    "text": "Davvero, davvero, davvero, davvero?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:58.064832Z"
+  },
+  "npc.a_prisoner.say_6": {
+    "src_hash": "52b2c5109081a476251c1a3b2f5bd850",
+    "text": "Allora prendilo e sii felice - o muori, eheh.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:58.065537Z"
+  },
+  "npc.a_prisoner.say_7": {
+    "src_hash": "3ea1288522b9438035597ffc35114271",
+    "text": "Allora vai via!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:58.065869Z"
+  },
+  "npc.a_prisoner.say_8": {
+    "src_hash": "71d8c06c321e1233443f60f93a0ecad7",
+    "text": "Conosci già i segreti della matematica! Ora vai e usali per imparare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:58.066510Z"
+  },
+  "npc.a_prisoner.say_9": {
+    "src_hash": "6a4d34e26971ff7d28374419885b5b34",
+    "text": "Ma prima dimmi il tuo colore preferito, per favore!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:56:58.066992Z"
+  },
+  "npc.a_prisoner.walkaway_msg_1": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Aspettare! Non andartene! Voglio raccontarvi dei miei numeri surreali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:02.668240Z"
+  },
+  "npc.a_restless_soul.greet_msg_1": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Uhhhh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:02.668598Z"
+  },
+  "npc.a_restless_soul.multi_1": {
+    "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
+    "text": "Sono stato catturato e torturato a morte dai cultisti qui. Adorano un essere che chiamano Ghazbaran ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:02.669569Z"
+  },
+  "npc.a_restless_soul.multi_2": {
+    "src_hash": "7dc0f9270cd35b18938f8271d065463e",
+    "text": "In suo nome hanno rivendicato le miniere e iniziato a sciogliere il ghiaccio per liberare un esercito di vili demoni che sono rimasti congelati qui da secoli...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:02.670399Z"
+  },
+  "npc.a_restless_soul.multi_3": {
+    "src_hash": "315b9533341ab66433fdb84a63ece0c6",
+    "text": "Il loro piano è creare un nuovo esercito di demoni affinché il loro padrone conquisti il ​​mondo. Hjaern e gli altri sciamani devono saperlo! Sbrigati prima che sia troppo tardi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:02.671399Z"
+  },
+  "npc.a_sleeping_dragon.greet_msg_1": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:05.419590Z"
+  },
+  "npc.a_sleeping_dragon.multi_10": {
+    "src_hash": "453ecafa7dcd6d7d87059b98f4e05841",
+    "text": "Con gli occhi coperti ed evitando la vista diretta dei raggi, metti lo specchio sul supporto. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:05.420417Z"
+  },
+  "npc.a_sleeping_dragon.multi_11": {
+    "src_hash": "5a956e6ac76f84dcdc80c4d58d117682",
+    "text": "Istintivamente corri verso un bluff color smeraldo più grande vicino al rilancio per trovare copertura. Pochi secondi dopo aver rivendicato il robusto rifugio, un profondo ronzio oscuro inizia a turbinare nell'aria. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:05.421485Z"
+  },
+  "npc.a_sleeping_dragon.multi_12": {
+    "src_hash": "f3784cdd21646d6b4c0ddd0b9a891a06",
+    "text": "I secondi passano mentre il ronzio diventa più forte. Il rumore è esasperante e soffoca tutti gli altri suoni intorno a te. Mentre ti copri le orecchie per il dolore, il ronzio esplode in un ringhio assordante. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:05.422569Z"
+  },
+  "npc.a_sleeping_dragon.multi_13": {
+    "src_hash": "a253f114923de282cccfb718ce2651da",
+    "text": "Alzi la testa sopra il bordo dello smeraldo per intravedere cosa sta succedendo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:07.153928Z"
   }
 }

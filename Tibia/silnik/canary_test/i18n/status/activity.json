@@ -1,9 +1,9 @@
 {
   "category": "es",
-  "cycle": 17,
+  "cycle": 18,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-16T22:56:08Z",
+  "generated_at_utc": "2026-02-16T22:57:36Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 17,
-      "file": "monsters.json",
+      "category": "es",
+      "cycle": 18,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T22:55:58Z"
+      "t": "2026-02-16T22:57:26Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 17,
-      "file": "monsters.json",
+      "category": "ru",
+      "cycle": 18,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-16T22:57:11Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 18,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-16T22:55:58Z"
+      "t": "2026-02-16T22:57:11Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 18,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-16T22:56:38Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 18,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-16T22:56:38Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 17,
-      "file": "npc.json",
+      "cycle": 18,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-16T22:55:54Z"
+      "t": "2026-02-16T22:56:36Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 17,
-      "file": "npc.json",
+      "cycle": 18,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T22:55:30Z"
+      "t": "2026-02-16T22:56:28Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 17,
-      "file": "npc.json",
+      "cycle": 18,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-16T22:55:30Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 16,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-16T22:53:17Z"
+      "t": "2026-02-16T22:56:28Z"
     },
     {
       "action": "update",
       "category": "pl",
-      "cycle": 16,
-      "file": "items.json",
+      "cycle": 17,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T22:52:00Z"
+      "t": "2026-02-16T22:55:58Z"
     },
     {
       "action": "update",
       "category": "pl",
-      "cycle": 16,
-      "file": "items.json",
+      "cycle": 17,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-16T22:52:00Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 16,
-      "file": "server.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-16T22:51:20Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 16,
-      "file": "server.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-16T22:51:19Z"
+      "t": "2026-02-16T22:55:58Z"
     }
   ],
   "stage": "cycle_end",

@@ -11302,5 +11302,149 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:25:10.883506Z"
+  },
+  "monster.giant_spider_wyda.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Păianjen uriaș",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.680028Z"
+  },
+  "monster.giant_spider_wyda.desc": {
+    "src_hash": "b5fdfd59be8ae5a93cf595e754ab4fdf",
+    "text": "un păianjen uriaș",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.681013Z"
+  },
+  "monster.wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.701961Z"
+  },
+  "monster.starving_wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.704513Z"
+  },
+  "monster.winter_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.707277Z"
+  },
+  "monster.war_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.713836Z"
+  },
+  "monster.pig.name": {
+    "src_hash": "32e9edc16056ea133af764ed59b74291",
+    "text": "Porc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.741297Z"
+  },
+  "monster.pig.desc": {
+    "src_hash": "5243ef7cf1ed257c9c4c50562dad28df",
+    "text": "un porc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.742293Z"
+  },
+  "monster.bear.name": {
+    "src_hash": "372137ebb0d053fecd7a594ec5cb5971",
+    "text": "Urs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.746153Z"
+  },
+  "monster.bear.desc": {
+    "src_hash": "55c5872e02058083fce51af088b7ef0f",
+    "text": "un urs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.746984Z"
+  },
+  "monster.bug.name": {
+    "src_hash": "c83640c604dd5e0eacbf3de0a1181101",
+    "text": "Bug",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.878803Z"
+  },
+  "monster.bug.desc": {
+    "src_hash": "6c71bda3cba6e57086f204c6f8c42808",
+    "text": "un bug",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.879219Z"
+  },
+  "monster.wasp.voice_1": {
+    "src_hash": "a4a90cf143e6eb7fa208ab8f7c5f7439",
+    "text": "Bsssss",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.892406Z"
+  },
+  "monster.giant_spider.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Păianjen uriaș",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.897369Z"
+  },
+  "monster.giant_spider.desc": {
+    "src_hash": "b5fdfd59be8ae5a93cf595e754ab4fdf",
+    "text": "un păianjen uriaș",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.898221Z"
+  },
+  "monster.wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.995691Z"
+  },
+  "monster.winter_wolf.voice_2": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:22.996210Z"
+  },
+  "monster.wasp.voice_2": {
+    "src_hash": "a4a90cf143e6eb7fa208ab8f7c5f7439",
+    "text": "Bsssss",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:23.001758Z"
   }
 }

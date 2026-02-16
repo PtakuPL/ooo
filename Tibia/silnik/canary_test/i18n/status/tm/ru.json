@@ -12022,5 +12022,197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:24:49.134035Z"
+  },
+  "monster.makara.voice_1": {
+    "src_hash": "49d148d0146c3c6d66e80425fa47efef",
+    "text": "ковылять ковылять",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:02.941215Z"
+  },
+  "monster.makara.voice_2": {
+    "src_hash": "a44c1185e369be424f9e21f987c95bc0",
+    "text": "Нихахаха!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:02.941538Z"
+  },
+  "monster.midnight_spawn.desc": {
+    "src_hash": "8a27e77e09bbd8c2cfc6c7da90fab2e7",
+    "text": "полуночное появление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:02.941907Z"
+  },
+  "monster.acid_blob.desc": {
+    "src_hash": "221df8845b90ac9cc3e963cf6fa01745",
+    "text": "кислотная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:02.942345Z"
+  },
+  "monster.acid_blob.voice_1": {
+    "src_hash": "bbc4f52672d41d591d71a69836b351ba",
+    "text": "Кзшшшш",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:02.942630Z"
+  },
+  "monster.squidgy_slime.name": {
+    "src_hash": "468cf48f15feb11778d40e47721a728e",
+    "text": "Кальмаровая слизь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:06.978527Z"
+  },
+  "monster.squidgy_slime.desc": {
+    "src_hash": "8951a64e360574379d3f6bf9433d7194",
+    "text": "кальмарная слизь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:06.978968Z"
+  },
+  "monster.squidgy_slime.voice_1": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:06.979270Z"
+  },
+  "monster.devourer.voice_2": {
+    "src_hash": "e8060ae2f8a24229b79c10be4f715e6e",
+    "text": "*Бруааррр!*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:06.979610Z"
+  },
+  "monster.devourer.voice_3": {
+    "src_hash": "5c249eec8364f292440fa355da0228c5",
+    "text": "*омнноммм ням*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:06.979974Z"
+  },
+  "monster.slime.voice_1": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:10.277762Z"
+  },
+  "monster.mercury_blob.name": {
+    "src_hash": "769131c3ba71670df0a78cc67f2890af",
+    "text": "Меркурийная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:10.278305Z"
+  },
+  "monster.mercury_blob.desc": {
+    "src_hash": "7f8625e432cfd35dc33c3e6a78e82c9a",
+    "text": "капля ртути",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:10.278669Z"
+  },
+  "monster.glooth_blob.name": {
+    "src_hash": "9ca6e3afb23f8cd508543fcfb2a5f14e",
+    "text": "Мрачная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:10.279032Z"
+  },
+  "monster.glooth_blob.desc": {
+    "src_hash": "0b32fd5879020acc6ec297db1f3db1de",
+    "text": "мрачная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:10.279368Z"
+  },
+  "monster.death_blob.desc": {
+    "src_hash": "3044d122d6f211dc3869c6f6b465ffaf",
+    "text": "смертельная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:13.152930Z"
+  },
+  "monster.son_of_verminor.name": {
+    "src_hash": "a4b3604c5a94ecf44596273fccf95d45",
+    "text": "Сын Верминора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:13.153333Z"
+  },
+  "monster.son_of_verminor.desc": {
+    "src_hash": "780fe635adc3673196447f10e12c529d",
+    "text": "сын паразита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:13.153693Z"
+  },
+  "monster.son_of_verminor.voice_1": {
+    "src_hash": "72b73b13119e82e5a9e4880dbe6f45aa",
+    "text": "Блабб.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:13.153972Z"
+  },
+  "monster.chocolate_blob.name": {
+    "src_hash": "eb45f86157a6e826fef66fd6c5a37f65",
+    "text": "Шоколадная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:13.154453Z"
+  },
+  "monster.chocolate_blob.desc": {
+    "src_hash": "0760720210ac7e074b6e5cfc86b2bed3",
+    "text": "шоколадная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:15.735595Z"
+  },
+  "monster.ink_blob.desc": {
+    "src_hash": "200172fd1887f8edfeb7ae98457e1f28",
+    "text": "чернильная капля",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:15.735949Z"
+  },
+  "monster.defiler.voice_1": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:15.736213Z"
+  },
+  "monster.defiler.voice_2": {
+    "src_hash": "d6f5b28da8070b5ba23b924822cfd2d1",
+    "text": "Блаб Блаб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:27:15.736556Z"
   }
 }

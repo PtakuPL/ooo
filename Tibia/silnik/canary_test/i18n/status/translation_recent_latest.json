@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:23:48.508752Z",
-  "language": "es",
+  "timestamp": "2026-02-16T21:24:49.213871Z",
+  "language": "ru",
   "json_file": "npc.json",
-  "translated": 24,
+  "translated": 44,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "npc.ajax.greet_msg_2",
+      "en": "Whatcha do in my place?",
+      "translated": "Что ты делаешь на моем месте?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.al_dee.sendtrade_msg_1",
+      "en": "Take a look in the trade window to your left.",
+      "translated": "Посмотрите в торговое окно слева от вас.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.albinius.greet_msg_1",
+      "en": "Greetings, pilgrim. Welcome to the halls of hope. We are the keepers of this {temple} and welcome everyone willing to contribute.",
+      "translated": "Приветствую тебя, паломник. Добро пожаловать в залы надежды. Мы являемся хранителями этого {temple} и приветствуем всех, кто готов внести свой вклад.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.plunderpurse.say_18",
+      "en": "The customer is king! Come back anytime you want to if you wish to {withdraw} your money.",
+      "translated": "Клиент всегда прав! Возвращайтесь в любое время, если захотите {withdraw} свои деньги.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "npc.rata_mari.farewell_msg_1",
+      "en": "Meep!",
+      "translated": "Мип!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.rata_mari.walkaway_msg_1",
+      "en": "Meep!",
+      "translated": "Мип!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.wentworth.say_19",
+      "en": "The customer is king! Come back anytime you want to if you wish to {withdraw} your money.",
+      "translated": "Клиент всегда прав! Возвращайтесь в любое время, если захотите {withdraw} свои деньги.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_1",
+      "en": "Great riddle, isn't it? If you can tell me the correct answer, \\z I will give you something. Hehehe!",
+      "translated": "Отличная загадка, не так ли? Если вы скажете мне правильный ответ, \\z я вам кое-что дам. Хе-хе-хе!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_10",
+      "en": "Great riddle, isn't it? If you can tell me the correct answer, I will give you something. Hehehe!",
+      "translated": "Отличная загадка, не так ли? Если вы скажете мне правильный ответ, я вам кое-что дам. Хе-хе-хе!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_11",
+      "en": "My surreal numbers are based on astonishing facts. Are you interested in learning the secret of mathemagics?",
+      "translated": "Мои сюрреалистические цифры основаны на удивительных фактах. Вы заинтересованы в раскрытии тайны математической магии?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_12",
+      "en": " I think you are not in touch with yourself, come back if you have tuned in on your own feelings.",
+      "translated": "Я думаю, вы не в контакте с самим собой, вернитесь, если настроились на собственные чувства.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_2",
+      "en": "My surreal numbers are based on astonishing facts. \\z Are you interested in learning the secret of mathemagics?",
+      "translated": "Мои сюрреалистические цифры основаны на удивительных фактах. \\z Хотите узнать тайну математической магии?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_3",
+      "en": "Get some more apples first!",
+      "translated": "Сначала принеси еще яблок!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_4",
+      "en": "Really, really?",
+      "translated": "Правда, правда?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_5",
+      "en": "Really, really, really, really?",
+      "translated": "Правда, правда, правда, правда?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_6",
+      "en": "Then take it and get happy - or die, hehe.",
+      "translated": "Тогда бери и радуйся — или умрешь, хе-хе.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_7",
+      "en": "Then go away!",
+      "translated": "Тогда уходи!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_8",
+      "en": "You already know the secrets of mathemagics! Now go and use them to learn.",
+      "translated": "Вы уже знаете тайны математической магии! Теперь идите и используйте их, чтобы учиться.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.a_prisoner.say_9",
+      "en": "But first tell me your favourite colour please!",
+      "translated": "Но сначала скажи мне, пожалуйста, твой любимый цвет!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.a_restless_soul.multi_1",
+      "en": "I was captured and tortured to death by the cultists here. They worship a being that they call Ghazbaran ...",
+      "translated": "Меня схватили и замучили до смерти культисты. Они поклоняются существу, которое называют Ghazbaran...",
+      "source": "google_translate"
     }
   ]
 }

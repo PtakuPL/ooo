@@ -11774,5 +11774,253 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:18:10.463274Z"
+  },
+  "npc.a_prisoner.walkaway_msg_1": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Ждать! Не уходи! Хочу рассказать вам о своих сюрреалистических цифрах.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.702529Z"
+  },
+  "npc.a_restless_soul.greet_msg_1": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Уххх...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.702911Z"
+  },
+  "npc.a_sleeping_dragon.greet_msg_1": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "Зззззззз...чррр...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.703515Z"
+  },
+  "npc.a_strange_chalice.greet_msg_1": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Привет? Что ты имеешь в виду 'hi' - разве ты не видишь, что я... мне нужно понизить голос. Вам не приходило в голову, что этот 'chalice' не хочет, чтобы его беспокоили?! Оставь меня в покое!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.709486Z"
+  },
+  "npc.a_swan.greet_msg_1": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Приветствую тебя, смертное существо.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.711845Z"
+  },
+  "npc.a_sweaty_cyclops.farewell_msg_1": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Прощай, малышка.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.713922Z"
+  },
+  "npc.a_sweaty_cyclops.greet_msg_1": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Хм-хм! Добро пожаловать, малыш |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.715585Z"
+  },
+  "npc.a_weakened_forest_fury.greet_msg_1": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Приветствую тебя, человек. Это время бедствия, мы больше, чем когда-либо, нуждаемся в стражах, которые защитят нас и наш мир.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.721817Z"
+  },
+  "npc.a_wrinkled_bonelord.farewell_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Подожди там. Я съем тебя после того, как запишу то, что узнал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.723627Z"
+  },
+  "npc.a_wrinkled_bonelord.greet_msg_1": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Что это? Объект с оптическими проблемами под названием |PLAYERNAME|. Как увлекательно!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.724572Z"
+  },
+  "npc.a_wrinkled_bonelord.walkaway_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Подожди там. Я съем тебя после того, как запишу то, что узнал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.726149Z"
+  },
+  "npc.ahmet.greet_msg_1": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Оплакивайся, паломник во плоти. Продаю товары общего назначения. Просто попросите у меня {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.728603Z"
+  },
+  "npc.ajax.greet_msg_1": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Ты вернулся. Знаешь, ты прав. Брат прав. Кулак не всегда хорош. Скажи ему это!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.730054Z"
+  },
+  "npc.ajax.greet_msg_2": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Что ты делаешь на моем месте?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.730603Z"
+  },
+  "npc.al_dee.sendtrade_msg_1": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Посмотрите в торговое окно слева от вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.732439Z"
+  },
+  "npc.albinius.greet_msg_1": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Приветствую тебя, паломник. Добро пожаловать в залы надежды. Мы являемся хранителями этого {temple} и приветствуем всех, кто готов внести свой вклад.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:37.736608Z"
+  },
+  "npc.rata_mari.farewell_msg_1": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "Мип!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:38.470388Z"
+  },
+  "npc.rata_mari.walkaway_msg_1": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "Мип!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:38.471509Z"
+  },
+  "npc.a_prisoner.say_1": {
+    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "text": "Отличная загадка, не так ли? Если вы скажете мне правильный ответ, \\z я вам кое-что дам. Хе-хе-хе!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:43.539169Z"
+  },
+  "npc.a_prisoner.say_10": {
+    "src_hash": "47bc194e64dd30781fd50c51644e8b18",
+    "text": "Отличная загадка, не так ли? Если вы скажете мне правильный ответ, я вам кое-что дам. Хе-хе-хе!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:43.540451Z"
+  },
+  "npc.a_prisoner.say_11": {
+    "src_hash": "86b05ee12a2b0288b0178cd30e0137d1",
+    "text": "Мои сюрреалистические цифры основаны на удивительных фактах. Вы заинтересованы в раскрытии тайны математической магии?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:43.541716Z"
+  },
+  "npc.a_prisoner.say_12": {
+    "src_hash": "e9c7840af52dabe70fe6cdd2a222b32b",
+    "text": "Я думаю, вы не в контакте с самим собой, вернитесь, если настроились на собственные чувства.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:43.542935Z"
+  },
+  "npc.a_prisoner.say_2": {
+    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "text": "Мои сюрреалистические цифры основаны на удивительных фактах. \\z Хотите узнать тайну математической магии?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:46.484388Z"
+  },
+  "npc.a_prisoner.say_3": {
+    "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
+    "text": "Сначала принеси еще яблок!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:46.484766Z"
+  },
+  "npc.a_prisoner.say_4": {
+    "src_hash": "4e2887c83421bff167ddfa1aa50e300f",
+    "text": "Правда, правда?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:46.485020Z"
+  },
+  "npc.a_prisoner.say_5": {
+    "src_hash": "b0af262d4f710adfe2bb566735b3a655",
+    "text": "Правда, правда, правда, правда?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:46.485336Z"
+  },
+  "npc.a_prisoner.say_6": {
+    "src_hash": "52b2c5109081a476251c1a3b2f5bd850",
+    "text": "Тогда бери и радуйся — или умрешь, хе-хе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:46.485705Z"
+  },
+  "npc.a_prisoner.say_7": {
+    "src_hash": "3ea1288522b9438035597ffc35114271",
+    "text": "Тогда уходи!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:49.132242Z"
+  },
+  "npc.a_prisoner.say_8": {
+    "src_hash": "71d8c06c321e1233443f60f93a0ecad7",
+    "text": "Вы уже знаете тайны математической магии! Теперь идите и используйте их, чтобы учиться.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:49.132812Z"
+  },
+  "npc.a_prisoner.say_9": {
+    "src_hash": "6a4d34e26971ff7d28374419885b5b34",
+    "text": "Но сначала скажи мне, пожалуйста, твой любимый цвет!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:49.133221Z"
+  },
+  "npc.a_restless_soul.multi_1": {
+    "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
+    "text": "Меня схватили и замучили до смерти культисты. Они поклоняются существу, которое называют Ghazbaran...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:49.134035Z"
   }
 }

@@ -162702,5 +162702,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:22:08.815118Z"
+  },
+  "item.1080.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "замка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.843207Z"
+  },
+  "item.12572.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "Пехар који је исковао змај Кхак који представља сво знање и мудрост ТибијеВенецуеле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.864982Z"
+  },
+  "item.12572.name": {
+    "src_hash": "4f318e0a54f6ab67b88c1bb1bc772073",
+    "text": "змајев пехар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.865306Z"
+  },
+  "item.14238.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "блато",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.875400Z"
+  },
+  "item.16865.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.886428Z"
+  },
+  "item.20126.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "лампа",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.915800Z"
+  },
+  "item.20130.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "лампа",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.916209Z"
+  },
+  "item.2121.name": {
+    "src_hash": "7f7eeecbd1e8f8c87f8cc7d1d94393d9",
+    "text": "отровно поље",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.926679Z"
+  },
+  "item.21501.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "прљави под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.936400Z"
+  },
+  "item.21935.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.943503Z"
+  },
+  "item.21967.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.944585Z"
+  },
+  "item.21971.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "замка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.944994Z"
+  },
+  "item.21972.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "замка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.945220Z"
+  },
+  "item.22874.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.958591Z"
+  },
+  "item.22880.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.958982Z"
+  },
+  "item.24839.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:06.975462Z"
+  },
+  "item.2914.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "лампа",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.015405Z"
+  },
+  "item.293.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.016532Z"
+  },
+  "item.294.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "замка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.017732Z"
+  },
+  "item.304.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.028531Z"
+  },
+  "item.31265.name": {
+    "src_hash": "4f318e0a54f6ab67b88c1bb1bc772073",
+    "text": "змајев пехар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.035131Z"
+  },
+  "item.31326.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.036824Z"
+  },
+  "item.33709.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "замка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.068235Z"
+  },
+  "item.37059.name": {
+    "src_hash": "40b25f4a6a4f4fa20e43c63414523461",
+    "text": "амајлија од детелине среће",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.099020Z"
+  },
+  "item.386.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "прљави под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.110851Z"
+  },
+  "item.4.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "блато",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.121874Z"
+  },
+  "item.407.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.125030Z"
+  },
+  "item.618.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.186012Z"
+  },
+  "item.7756.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "прљави под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.205349Z"
+  },
+  "item.7761.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.205833Z"
+  },
+  "item.7762.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "прљави под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.206306Z"
+  },
+  "item.937.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:07.229426Z"
+  },
+  "item.1068.name": {
+    "src_hash": "f80a3a26775f8f87ce279ce2d0d9e29f",
+    "text": "мрављи траг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:12.256358Z"
+  },
+  "item.1069.name": {
+    "src_hash": "5410d1752d6d66d5aef6dcd437b8056a",
+    "text": "буг трал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:12.256599Z"
+  },
+  "item.107.desc": {
+    "src_hash": "f3181b5d350c388079a2884540cb8a12",
+    "text": "Садржи мирис свеже убијене слузи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:12.257006Z"
+  },
+  "item.107.name": {
+    "src_hash": "3df14ae40dd63cd17895eeb293ed167f",
+    "text": "посебна боца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:12.257249Z"
+  },
+  "item.10727.name": {
+    "src_hash": "8789a6a22faa24660fcdc4f2baf665db",
+    "text": "дреадцоил",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:12.257455Z"
+  },
+  "item.10744.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:19.334994Z"
+  },
+  "item.10746.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:19.335604Z"
+  },
+  "item.10748.name": {
+    "src_hash": "43127a3400ad3ecca77c9e3847b0af50",
+    "text": "инсектоидне поре",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:19.335928Z"
+  },
+  "item.10770.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:19.336266Z"
+  },
+  "item.1079.name": {
+    "src_hash": "47f8eff42b2ef6369ebddecc8eece3fa",
+    "text": "мравињак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:19.336605Z"
+  },
+  "item.10797.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:23.805612Z"
+  },
+  "item.10798.desc": {
+    "src_hash": "545f69311c2761ed2f9012a9a019e024",
+    "text": "Наградила га је Тибиопедиа.пл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:23.805960Z"
+  },
+  "item.10798.name": {
+    "src_hash": "399dc4d6bd722ec8b0fe3fe2838a81fe",
+    "text": "ферумбрас долл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:23.806299Z"
+  },
+  "item.10799.desc": {
+    "src_hash": "545f69311c2761ed2f9012a9a019e024",
+    "text": "Наградила га је Тибиопедиа.пл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:23.806630Z"
+  },
+  "item.10799.name": {
+    "src_hash": "399dc4d6bd722ec8b0fe3fe2838a81fe",
+    "text": "ферумбрас долл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:23.806867Z"
+  },
+  "item.10800.desc": {
+    "src_hash": "4452ba3b4d3fe3e8d4e9d2664bae1dfb",
+    "text": "Не постоји бољи начин да се ослободите строго поверљивих података. Додељује ТибиаСпи.цом",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:27.640692Z"
+  },
+  "item.10800.name": {
+    "src_hash": "571e329fd654ab0d6ac87c0f307a14b3",
+    "text": "оркова чељуст сецкалица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:27.641117Z"
+  },
+  "item.10801.desc": {
+    "src_hash": "4452ba3b4d3fe3e8d4e9d2664bae1dfb",
+    "text": "Не постоји бољи начин да се ослободите строго поверљивих података. Додељује ТибиаСпи.цом",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:24:27.642176Z"
   }
 }

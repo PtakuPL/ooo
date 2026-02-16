@@ -9998,5 +9998,397 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:15:04.551018Z"
+  },
+  "data.otservbr.global.npc.yonan.L140.685": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.606312Z"
+  },
+  "data.otservbr.global.npc.yonan.L143.686": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.606640Z"
+  },
+  "data.otservbr.global.npc.znozel.L72.201": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.608130Z"
+  },
+  "data.otservbr.global.npc.znozel.L73.202": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.608526Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L106.2365": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.609766Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L119.2367": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.610051Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L155.2368": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.610323Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.611170Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.615221Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L18.2206": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.617626Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.chest.L9.2229": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.618302Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Förlåt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.620354Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L16.2253": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Förlåt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.620737Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L16.1867": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.626268Z"
+  },
+  "data.otservbr.global.scripts.quests.hero.of.rathleton.actions.reward.L13.2162": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.626986Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L10.2180": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.627709Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L19.2182": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.628181Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L28.2184": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.628487Z"
+  },
+  "data.otservbr.global.scripts.quests.marapur.actions.boss.timira.fight.L376.2174": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.632196Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.containerRewards.L140.1843": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.637285Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L71.1760": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.640061Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.rewards.L27.1771": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.643406Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.chests.L22.2294": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:08.647979Z"
+  },
+  "data.otservbr.global.lib.functions.players.L64.1624": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Du har fått en berömmelsespoäng.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:10.285077Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L57.1606": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:10.285520Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L66.1607": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:10.285971Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L73.1608": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:10.286475Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L56.823": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:10.286935Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L65.824": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:13.155646Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L72.825": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:13.156125Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L58.203": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "Hälsningar människor! Se dig själv som lycklig, jag är i behov av {help}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:13.156567Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L65.205": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "Du har gjort mig en tjänst och den kunskap du söker kommer att vara din. Jag smälte isen åt dig, du kan passera nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:13.157251Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L56.1124": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:13.157678Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L65.1125": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:15.806903Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L72.1126": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:15.807386Z"
+  },
+  "data.otservbr.global.npc.a.fading.memory.L53.1295": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Åh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:15.807590Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L72.1053": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:15.809369Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L73.1054": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:19.545493Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L74.1055": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <du är inte säker, men det verkar som om ekorren vill byta ut dina värdefulla ekollon mot värdelösa stenar som den hittade och ansåg vara oätliga>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:19.546965Z"
+  },
+  "data.otservbr.global.npc.a.frog.L57.1456": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*suck* Ännu en dum äventyrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:19.547640Z"
+  },
+  "data.otservbr.global.npc.a.frog.L58.1457": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ja, hej då och kom inte igen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:19.548312Z"
+  },
+  "data.otservbr.global.npc.a.frog.L59.1458": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Hah! Den idioten gick äntligen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:19.548921Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L60.1103": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, jag känner att en dödlig går dessa uråldriga salar igen. Ursäkta mig, jag märker dig knappt. Jag är så vilsen i mina tankar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:23.273890Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L62.1105": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Farväl då.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:23.274191Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L62.1178": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Jag känner dig. Jag hör dina tankar. Du är ... vid liv.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:23.274590Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L63.1179": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Ensam ... så ensam. Så kallt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:23.274892Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L64.1180": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Ensam ... så ensam. Så kallt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:23.275243Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L56.230": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:25.233702Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L65.231": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:19:25.234206Z"
   }
 }

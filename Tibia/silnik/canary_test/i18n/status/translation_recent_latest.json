@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-16T21:18:52.262798Z",
+  "timestamp": "2026-02-16T21:20:07.367156Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "json_file": "server.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "data.otservbr.global.npc.a.wyrm.L72.1562",
+      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "translated": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.alesar.L206.1591",
+      "en": "Finally.",
+      "translated": "Finally.",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "data.otservbr.global.npc.alesar.L207.1592",
+      "en": "Finally.",
+      "translated": "Finally.",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "data.otservbr.global.npc.altar.L84.731",
+      "en": "Bye.",
+      "translated": "Bye.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "data.otservbr.global.npc.andrew.lyze.L107.517",
+      "en": "Greetings.",
+      "translated": "Greetings.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "data.otservbr.global.npc.billy.L145.1385",
+      "en": "Bye.",
+      "translated": "Bye.",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "data.otservbr.global.npc.billy.L146.1386",
+      "en": "Sure.",
+      "translated": "Sure.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "data.otservbr.global.npc.blind.orc.L102.1517",
+      "en": "Futchi.",
+      "translated": "Futchi.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "data.otservbr.global.npc.bloodshade.rotten.L73.428",
+      "en": "Bye.",
+      "translated": "Bye.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "data.otservbr.global.npc.bloodshade.sacrifice.L94.1260",
+      "en": "Bye.",
+      "translated": "Bye.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "data.otservbr.global.npc.captain.haba.L190.192",
+      "en": "Bye.",
+      "translated": "Bye.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "data.otservbr.global.npc.captain.haba.L191.193",
+      "en": "Bye.",
+      "translated": "Bye.",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "data.otservbr.global.npc.denominator.L59.153",
+      "en": "Greetings.",
+      "translated": "Greetings.",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "data.otservbr.global.npc.duria.L59.1131",
+      "en": "Goodbye.",
+      "translated": "Goodbye.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "data.otservbr.global.npc.gelagos.L61.302",
+      "en": "Hehehe.",
+      "translated": "Hehehe.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "data.otservbr.global.npc.lailene.L58.312",
+      "en": "Here.",
+      "translated": "Here.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "data.otservbr.global.npc.mehkesh.L62.622",
+      "en": "Sure.",
+      "translated": "Sure.",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "data.otservbr.global.npc.muriel.L160.1306",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "data.otservbr.global.npc.muriel.L161.1307",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "data.otservbr.global.npc.myra.L321.1420",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     }
   ]

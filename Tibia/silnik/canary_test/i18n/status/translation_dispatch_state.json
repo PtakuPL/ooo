@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-02-16T23:11:56.894539Z",
-  "cycle_counter": 903,
-  "last_target_key": "es:otclient_modules.json",
-  "last_pending_total": 223,
-  "last_tier": 1,
-  "last_cat_priority": 9,
+  "timestamp": "2026-02-16T23:13:17.147030Z",
+  "cycle_counter": 906,
+  "last_target_key": "ru:scripts.json",
+  "last_pending_total": 1980,
+  "last_tier": 2,
+  "last_cat_priority": 6,
   "candidates_count": 196,
   "active_candidates_count": 188,
   "skipped_backoff": 7,
   "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "pl:npc.json": 906
+    "pl:npc.json": 916
   },
   "tier_config": {
     "tier1": [
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 29,
+  "cache_cycle": 30,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -347,7 +347,7 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 43.75,
+      "pl": 43.84,
       "es": 73.99,
       "ru": 35.11,
       "ro": 19.23,

@@ -24398,5 +24398,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:06:53.684562Z"
+  },
+  "scripts.movements_teleport_main.say_2": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:46.805130Z"
+  },
+  "gamestore.error.item_add_error": {
+    "src_hash": "25d596f61fc1772ffcc44f7f722d220d",
+    "text": "Errore durante l'aggiunta dell'articolo alla posta in arrivo del negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:48.664283Z"
+  },
+  "gamestore.error.name_already_used": {
+    "src_hash": "8e64ff89eeff993ff2f6e5e707b9de07",
+    "text": "Questo nome è già utilizzato, riprova!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:48.664645Z"
+  },
+  "gamestore.error.need_outfit_first": {
+    "src_hash": "4d303637cb76de0e641caa90cf46f3ca",
+    "text": "Devi possedere l'abito prima di poter acquistare il suo componente aggiuntivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:48.665131Z"
+  },
+  "gamestore.error.no_history": {
+    "src_hash": "1c70c78723f09e479c29dd24411bca0c",
+    "text": "Non hai ancora nessuna voce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:48.665421Z"
+  },
+  "gamestore.error.no_results": {
+    "src_hash": "413b19de687dc07f746f993c7953a2af",
+    "text": "Nessun risultato trovato per \"%s\".",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:51.255170Z"
+  },
+  "gamestore.error.not_enough_coins": {
+    "src_hash": "00f152726c3059d5ededb3a6d9181f98",
+    "text": "Non hai abbastanza monete. Il tuo acquisto è stato annullato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:51.255577Z"
+  },
+  "gamestore.error.outfit_purchase_error": {
+    "src_hash": "e2484dcf2efeaae1f0c24898c712a2b2",
+    "text": "Si è verificato un problema con l'acquisto del tuo outfit. Il tuo acquisto è stato annullato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:51.256035Z"
+  },
+  "gamestore.error.outfit_wrong_sex": {
+    "src_hash": "88c6b3a049f6cfdee4cbea7e422092c1",
+    "text": "Questo outfit sembra non adatto al tuo sesso, ci dispiace!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:51.256395Z"
+  },
+  "gamestore.error.prey_wildcard_limit": {
+    "src_hash": "45e3fc24adc260e7f76ff966c1ede47e",
+    "text": "Non puoi possedere più di %s caratteri jolly preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:51.256748Z"
+  },
+  "gamestore.error.purchase_cancelled": {
+    "src_hash": "47e0f6edcb93ba7d0b54b2b95de4e92c",
+    "text": "Qualcosa è andato storto. Il tuo acquisto è stato annullato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:53.843121Z"
+  },
+  "gamestore.error.reward_token_limit": {
+    "src_hash": "199aeadc072e569beb8f391ac3c56000",
+    "text": "Non puoi possedere più di %s gettoni premio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:53.843483Z"
+  },
+  "gamestore.error.temple_in_fight": {
+    "src_hash": "09f2fcd51068683a5c8e41b9d849de09",
+    "text": "Non puoi usare il teletrasporto del tempio in combattimento!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:53.843809Z"
+  },
+  "gamestore.error.too_many_purchases": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Stai effettuando molti acquisti contemporaneamente in pochi istanti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:53.844159Z"
+  },
+  "gamestore.error.unavailable_1": {
+    "src_hash": "e559faa50bf4ca3667b7c90b8bcfce9a",
+    "text": "Questa offerta non è disponibile [1]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:53.844461Z"
+  },
+  "gamestore.error.unavailable_2": {
+    "src_hash": "47e58b411a771c18dadf0e46ba8330a2",
+    "text": "Questa offerta non è disponibile [2]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:57.244633Z"
+  },
+  "gamestore.hireling.bought_success": {
+    "src_hash": "167f8c7ecac767eab043cd22caca44a1",
+    "text": "Hai acquistato con successo %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:57.244933Z"
+  },
+  "gamestore.hireling.rename_select": {
+    "src_hash": "be43e1e02f42e5d32cba4637a4e73afd",
+    "text": "Chiudi la finestra del negozio per selezionare quale mercenario rinominare in %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:57.245308Z"
+  },
+  "gamestore.hireling.sex_change_select": {
+    "src_hash": "a659354121de1de5cc32c75e516c78d5",
+    "text": "Chiudi la vetrina del negozio per selezionare il mercenario a cui cambiare sesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:57.245688Z"
+  },
+  "gamestore.modal.choose_hireling": {
+    "src_hash": "298f0046b72aec842afd513f50faf24d",
+    "text": "Scegli un mercenario",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:57.245916Z"
+  },
+  "gamestore.modal.hireling_in_lamp": {
+    "src_hash": "9bf751565757beff33b74539473d4353",
+    "text": "Il tuo mercenario deve essere dentro la sua lampada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:59.860787Z"
+  },
+  "gamestore.modal.purchase_error": {
+    "src_hash": "e8a15c7f0527799c520627c3d8fe2eb3",
+    "text": "Errore nella transazione di acquisto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:59.861085Z"
+  },
+  "gamestore.modal.select_hireling": {
+    "src_hash": "bd8cd4c38455ded382af6b16e2b31bcd",
+    "text": "Devi selezionare un mercenario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:59.861368Z"
+  },
+  "gamestore.modal.select_hireling_below": {
+    "src_hash": "5f2c58c97175cae2342283b6b08b8595",
+    "text": "Seleziona un mercenario qui sotto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:59.861630Z"
+  },
+  "gamestore.modal.transaction_error": {
+    "src_hash": "844fce8bba96036e1fbe7369b659febf",
+    "text": "Errore di transazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:12:59.861850Z"
+  },
+  "gamestore.purchase.success": {
+    "src_hash": "b9b6a36d71170249fbe3d0316f10d756",
+    "text": "Hai acquistato %s per %d monete.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:02.430895Z"
+  },
+  "gamestore.rename.success": {
+    "src_hash": "047b6a9a3e007f9bbd7946781589955a",
+    "text": "Il tuo personaggio è stato rinominato con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:02.431288Z"
+  },
+  "gamestore.transfer.history_received": {
+    "src_hash": "44933d7a7aea6783deb111358e16b322",
+    "text": "%s ti ha trasferito questo importo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:02.431589Z"
+  },
+  "gamestore.transfer.history_sent": {
+    "src_hash": "fec9b9367f37680387cdf7abcdf20ed1",
+    "text": "Hai trasferito questo importo su %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:02.431914Z"
+  },
+  "gamestore.transfer.no_coins": {
+    "src_hash": "5a251f3f749d4119540315418aa7a167",
+    "text": "Non hai questa quantità di monete.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:02.432233Z"
+  },
+  "gamestore.transfer.player_not_found": {
+    "src_hash": "467e32b5382d7802fbb5cb6af1f42b6a",
+    "text": "Non siamo riusciti a trovare quel giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:05.010360Z"
+  },
+  "gamestore.transfer.same_account": {
+    "src_hash": "266a5e2c7ee9f7c6a74fce6092d9d414",
+    "text": "Non puoi trasferire monete a un personaggio nello stesso account.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:05.010732Z"
+  },
+  "gamestore.transfer.self_transfer": {
+    "src_hash": "d222476c126e3e9f8b6a21219c9278a3",
+    "text": "Non puoi trasferire monete a te stesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:05.011071Z"
+  },
+  "gamestore.transfer.success": {
+    "src_hash": "bff758e27d120e6ff834483b60cad7ff",
+    "text": "Hai trasferito monete %s a %s con successo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:05.011396Z"
+  },
+  "gamestore.validation.hireling_forbidden_word": {
+    "src_hash": "56484d171f7d2176ce27913a195a628d",
+    "text": "Non puoi utilizzare la parola \"%s\" nel nome del tuo mercenario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:05.011735Z"
+  },
+  "gamestore.validation.hireling_forbidden_word_space": {
+    "src_hash": "319be05a24b43597b38c515c7d4df4dc",
+    "text": "Non puoi utilizzare la parola \"%s\" con spazi bianchi nel nome del tuo mercenario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:08.936606Z"
+  },
+  "gamestore.validation.hireling_name_invalid_chars": {
+    "src_hash": "e7a42d3d9e5ab1c9547c7c7cacc286b8",
+    "text": "Il nome del mercenario contiene caratteri non validi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:08.937013Z"
+  },
+  "gamestore.validation.hireling_name_length": {
+    "src_hash": "79746ed70cd8fb18fa29d8e0298cc1aa",
+    "text": "La lunghezza del nome del mercenario deve essere compresa tra 3 e 18 caratteri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:08.937402Z"
+  },
+  "gamestore.validation.hireling_name_multiple_spaces": {
+    "src_hash": "4be111e495c05aa519417eea58c69573",
+    "text": "Il nome del mercenario ha più di 1 spazio bianco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:08.937757Z"
+  },
+  "gamestore.validation.hireling_name_whitespace_begin": {
+    "src_hash": "0de3a3bdd27a8a3fd71737ef3de88682",
+    "text": "Il nome del mercenario non può avere spazi bianchi all'inizio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:08.938189Z"
+  },
+  "gamestore.validation.invalid_character": {
+    "src_hash": "ac5f7e05a73a0e6bdc8216a2808b9399",
+    "text": "Non puoi utilizzare questo carattere '%s' nel tuo nuovo nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:12.466776Z"
+  },
+  "gamestore.validation.monster_name": {
+    "src_hash": "6e5bb73b61b55f834fb315080579c444",
+    "text": "Il tuo nuovo nome '%s' non può essere il nome di un mostro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:12.467215Z"
+  },
+  "gamestore.validation.new_name_consecutive_spaces": {
+    "src_hash": "459b4aefa9503eaaf8066793b1d287b9",
+    "text": "Il tuo nuovo nome non può contenere spazi consecutivi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:12.467638Z"
+  },
+  "gamestore.validation.new_name_forbidden_word": {
+    "src_hash": "9d246154b86500185098547780fd897a",
+    "text": "Non puoi utilizzare la parola '%s' nel tuo nuovo nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:12.467985Z"
+  },
+  "gamestore.validation.new_name_forbidden_word_space": {
+    "src_hash": "25e15d39c443ae9187441ea88d3018d7",
+    "text": "Non puoi utilizzare la parola '%s' nemmeno con spazi nel tuo nuovo nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:12.468363Z"
+  },
+  "gamestore.validation.new_name_length": {
+    "src_hash": "574fc985d7ec3f4ee193de878f942aa1",
+    "text": "La lunghezza del tuo nuovo nome deve essere compresa tra 3 e 29 caratteri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:15.095993Z"
+  },
+  "gamestore.validation.new_name_too_many_spaces": {
+    "src_hash": "ace374b52debaa4259473c32006af06e",
+    "text": "Il tuo nuovo nome non può avere più di 2 spazi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:15.096367Z"
+  },
+  "gamestore.validation.new_name_whitespace_begin": {
+    "src_hash": "a9ae395a7efd77b13324221a89412d66",
+    "text": "Il tuo nuovo nome non può contenere spazi bianchi all'inizio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:15.096773Z"
   }
 }

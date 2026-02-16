@@ -16710,5 +16710,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:07:51.536909Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.614519Z"
+  },
+  "scripts.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.628768Z"
+  },
+  "scripts.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.629292Z"
+  },
+  "scripts.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.629840Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.633132Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Все игроки должны быть на одном уровне ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.637404Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Все игроки должны быть на одном уровне ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.638239Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Все игроки должны быть на одном уровне ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.639222Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.641645Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.641997Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.642353Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.642783Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.660019Z"
+  },
+  "scripts.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Вы проиграли схватку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.663647Z"
+  },
+  "scripts.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Поздравляем, вы получили костюм «Полтергейст».",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:18.665466Z"
+  },
+  "gamestore.disabled.skill_unlocked": {
+    "src_hash": "8ab612c52a54010a72189135c41ac4f5",
+    "text": "Этот навык уже разблокирован.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:20.078352Z"
+  },
+  "gamestore.error.all_prey_slots": {
+    "src_hash": "bf0969596200df8437238e701266dc47",
+    "text": "Вы уже разблокировали все слоты для добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:20.078823Z"
+  },
+  "gamestore.error.all_task_slots": {
+    "src_hash": "fb1c5f4f65f3e2e83df0222a76f58629",
+    "text": "Вы уже разблокировали все слоты для поиска заданий.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:20.079223Z"
+  },
+  "gamestore.error.already_own_outfit": {
+    "src_hash": "9401d88df0143dc879a724750ed58ff6",
+    "text": "У вас уже есть этот наряд.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:20.079543Z"
+  },
+  "gamestore.error.client10_hireling": {
+    "src_hash": "594704e70bf187eb9dc45cba1dd58c2b",
+    "text": "Вы не можете покупать наемников на клиенте 10, пожалуйста, перезайдите на клиент 12 и повторите попытку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:20.080070Z"
+  },
+  "gamestore.error.client10_hireling_name": {
+    "src_hash": "3e6a730fb48e4be399f9c645c8bfdcca",
+    "text": "Вы не можете купить смену имени наемника на клиенте 10, пожалуйста, перезайдите на клиенте 12 и повторите попытку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:22.691879Z"
+  },
+  "gamestore.error.client10_hireling_outfit": {
+    "src_hash": "e0e94adbbd7adad8a458bcfd66fe631d",
+    "text": "Вы не можете купить одежду наемника на клиенте 10, пожалуйста, перезайдите на клиенте 12 и повторите попытку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:22.692474Z"
+  },
+  "gamestore.error.client10_hireling_sex": {
+    "src_hash": "c12b831cd5d37da1d6c9fa1059691b85",
+    "text": "Вы не можете купить смену пола наемника на клиенте 10, пожалуйста, перезайдите на клиенте 12 и повторите попытку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:22.693049Z"
+  },
+  "gamestore.error.client10_hireling_skill": {
+    "src_hash": "f3813c3f0e4d537dd76fb64514d68035",
+    "text": "Вы не можете купить навык найма на клиенте 10, пожалуйста, перезайдите на клиенте 12 и повторите попытку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:22.693638Z"
+  },
+  "gamestore.error.hireling_lamp_error": {
+    "src_hash": "48cb7da3cb55f6eaece0eb5eb3b3faef",
+    "text": "Ошибка при доставке наемной лампы. Повторите попытку позже.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:22.694131Z"
+  },
+  "gamestore.error.hireling_limit": {
+    "src_hash": "65a8c0711d0b885796625ec6297018b2",
+    "text": "У вас не может быть более %s наемников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:26.078194Z"
+  },
+  "gamestore.error.item_add_error": {
+    "src_hash": "25d596f61fc1772ffcc44f7f722d220d",
+    "text": "Ошибка добавления элемента в папку «Входящие».",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:26.078653Z"
+  },
+  "gamestore.error.name_already_used": {
+    "src_hash": "8e64ff89eeff993ff2f6e5e707b9de07",
+    "text": "Это имя уже используется, попробуйте еще раз!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:26.079111Z"
+  },
+  "gamestore.error.namechange_pz_only": {
+    "src_hash": "e4d354a2c809681b2ef79a82eb3f40e5",
+    "text": "Изменить имя можно только в Защитной зоне.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:26.079660Z"
+  },
+  "gamestore.error.need_outfit_first": {
+    "src_hash": "4d303637cb76de0e641caa90cf46f3ca",
+    "text": "Прежде чем купить дополнение, вы должны владеть этим нарядом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:26.080095Z"
+  },
+  "gamestore.error.no_history": {
+    "src_hash": "1c70c78723f09e479c29dd24411bca0c",
+    "text": "У вас пока нет записей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:28.682995Z"
+  },
+  "gamestore.error.no_results": {
+    "src_hash": "413b19de687dc07f746f993c7953a2af",
+    "text": "По запросу \"%s\" результатов не найдено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:28.683557Z"
+  },
+  "gamestore.error.not_enough_coins": {
+    "src_hash": "00f152726c3059d5ededb3a6d9181f98",
+    "text": "У вас недостаточно монет. Ваша покупка была отменена.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:28.683997Z"
+  },
+  "gamestore.error.outfit_purchase_error": {
+    "src_hash": "e2484dcf2efeaae1f0c24898c712a2b2",
+    "text": "Возникла проблема с покупкой одежды. Ваша покупка была отменена.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:28.684450Z"
+  },
+  "gamestore.error.outfit_wrong_sex": {
+    "src_hash": "88c6b3a049f6cfdee4cbea7e422092c1",
+    "text": "Кажется, этот наряд не подходит вашему полу, нам очень жаль!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:28.684877Z"
+  },
+  "gamestore.error.prey_wildcard_limit": {
+    "src_hash": "45e3fc24adc260e7f76ff966c1ede47e",
+    "text": "Вы не можете владеть более чем %s подстановочными знаками добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:31.302864Z"
+  },
+  "gamestore.error.purchase_cancelled": {
+    "src_hash": "47e0f6edcb93ba7d0b54b2b95de4e92c",
+    "text": "Что-то пошло не так. Ваша покупка была отменена.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:31.303292Z"
+  },
+  "gamestore.error.reward_token_limit": {
+    "src_hash": "199aeadc072e569beb8f391ac3c56000",
+    "text": "Вы не можете иметь более %s жетонов вознаграждения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:31.303829Z"
+  },
+  "gamestore.error.temple_in_fight": {
+    "src_hash": "09f2fcd51068683a5c8e41b9d849de09",
+    "text": "В бою нельзя использовать храмовый телепорт!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:31.304223Z"
+  },
+  "gamestore.error.too_many_purchases": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Вы совершаете множество покупок одновременно за несколько минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:31.304645Z"
+  },
+  "gamestore.error.unavailable_1": {
+    "src_hash": "e559faa50bf4ca3667b7c90b8bcfce9a",
+    "text": "Это предложение недоступно [1]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:13:33.228408Z"
   }
 }

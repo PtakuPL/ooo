@@ -6838,5 +6838,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:27:55.292939Z"
+  },
+  "item.10360.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мёртвый ящер дракон priest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.200756Z"
+  },
+  "item.10361.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мёртвый ящер дракон priest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.202398Z"
+  },
+  "item.10362.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мёртвый ящер дракон priest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.204565Z"
+  },
+  "item.10363.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мёртвый ящер дракон priest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.206796Z"
+  },
+  "item.1099.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.320245Z"
+  },
+  "item.11364.name": {
+    "src_hash": "54421de2a3747a6ca58e6851b841e0a7",
+    "text": "фляга plant ядовитый",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.388374Z"
+  },
+  "item.11485.name": {
+    "src_hash": "29d9578db597a88707ed1496e8b1d606",
+    "text": "ядовитый паук shell",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.425759Z"
+  },
+  "item.11695.name": {
+    "src_hash": "00e4afdc5609ceae258e378361bc4d11",
+    "text": "чёрный jade кобра",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.564162Z"
+  },
+  "item.12032.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.596118Z"
+  },
+  "item.12064.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.604833Z"
+  },
+  "item.12074.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.608725Z"
+  },
+  "item.12236.name": {
+    "src_hash": "d4ad6644f5978b201262fdd3b646be41",
+    "text": "неизвестный hole",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.643745Z"
+  },
+  "item.12524.name": {
+    "src_hash": "815e9078dd72ffea9f11c4134057b5e4",
+    "text": "мёртвый белый deer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.741722Z"
+  },
+  "item.12527.name": {
+    "src_hash": "815e9078dd72ffea9f11c4134057b5e4",
+    "text": "мёртвый белый deer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.746058Z"
+  },
+  "item.12528.name": {
+    "src_hash": "815e9078dd72ffea9f11c4134057b5e4",
+    "text": "мёртвый белый deer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.747377Z"
+  },
+  "item.12529.name": {
+    "src_hash": "815e9078dd72ffea9f11c4134057b5e4",
+    "text": "мёртвый белый deer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.748615Z"
+  },
+  "item.12574.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.777477Z"
+  },
+  "item.12657.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.798544Z"
+  },
+  "item.12723.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.840758Z"
+  },
+  "item.12726.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.844640Z"
+  },
+  "item.12729.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.847423Z"
+  },
+  "item.12738.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.852725Z"
+  },
+  "item.12784.name": {
+    "src_hash": "e921432abfd7621e682dc5860f139052",
+    "text": "фляга wasp ядовитый",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.857420Z"
+  },
+  "item.12793.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.864397Z"
+  },
+  "item.12795.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.866449Z"
+  },
+  "item.12797.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.868342Z"
+  },
+  "item.12798.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.870068Z"
+  },
+  "item.12817.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.876143Z"
+  },
+  "item.13268.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.926329Z"
+  },
+  "item.13272.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.927553Z"
+  },
+  "item.13397.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:42.931396Z"
+  },
+  "item.13968.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.044076Z"
+  },
+  "item.13975.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.051093Z"
+  },
+  "item.13977.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.052689Z"
+  },
+  "item.14024.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.083299Z"
+  },
+  "item.14029.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.086796Z"
+  },
+  "item.14030.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.087944Z"
+  },
+  "item.14031.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.088952Z"
+  },
+  "item.14032.name": {
+    "src_hash": "26829a59cbdbc8bf7ae58fed91a49765",
+    "text": "увядшее растение",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.090273Z"
+  },
+  "item.14033.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.091381Z"
+  },
+  "item.14034.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.092387Z"
+  },
+  "item.14035.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.093622Z"
+  },
+  "item.14036.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.094669Z"
+  },
+  "item.14037.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.095851Z"
+  },
+  "item.14038.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "цветочный горшок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.096879Z"
+  },
+  "item.14039.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.098139Z"
+  },
+  "item.14237.name": {
+    "src_hash": "f93e2e26555842816e2a915394c50401",
+    "text": "soft зелёный стул",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.144002Z"
+  },
+  "item.14254.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Зарезервированная SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.152556Z"
+  },
+  "item.14670.name": {
+    "src_hash": "e40a11578769485d190e51230f5967de",
+    "text": "Токен CM",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:43.157612Z"
   }
 }

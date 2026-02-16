@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-16T20:28:19.961806Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T20:28:58.561897Z",
+  "language": "it",
+  "json_file": "items.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
-    },
-    {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
-    },
-    {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
-    },
-    {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
-    },
-    {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.iyad.stdmod_20",
-      "en": "I d...don't care about any n...news unless it's the announcement of a h....heatwave.",
-      "translated": "No... no me importan ninguna n...noticia a menos que sea el anuncio de una h...ola de calor.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.iyad.walkaway_msg_1",
-      "en": "Good bye!",
-      "translated": "¡Adiós!",
+      "key": "item.11338.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
       "source": "simple"
     },
     {
-      "key": "npc.jack_drone.walkaway_msg_1",
-      "en": "Good bye then.",
-      "translated": "Bueno, adiós entonces.",
+      "key": "item.11340.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
       "source": "simple"
     },
     {
-      "key": "npc.jack_fate.walkaway_msg_1",
-      "en": "Good bye then.",
-      "translated": "Bueno, adiós entonces.",
+      "key": "item.11345.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
       "source": "simple"
     },
     {
-      "key": "npc.jack_fate_goroma.farewell_msg_1",
-      "en": "Good bye.",
-      "translated": "Adiós.",
+      "key": "item.11348.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
       "source": "simple"
     },
     {
-      "key": "npc.jack_fate_goroma.walkaway_msg_1",
-      "en": "Good bye then.",
-      "translated": "Bueno, adiós entonces.",
+      "key": "item.11366.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
+      "source": "simple"
+    },
+    {
+      "key": "item.1156.name",
+      "en": "trapdoor",
+      "translated": "botola",
+      "source": "simple"
+    },
+    {
+      "key": "item.11591.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
+      "source": "simple"
+    },
+    {
+      "key": "item.11705.name",
+      "en": "closed door",
+      "translated": "porta chiusa",
+      "source": "simple"
+    },
+    {
+      "key": "item.11708.name",
+      "en": "open door",
+      "translated": "porta aperta",
+      "source": "simple"
+    },
+    {
+      "key": "item.11714.name",
+      "en": "closed door",
+      "translated": "porta chiusa",
+      "source": "simple"
+    },
+    {
+      "key": "item.11716.name",
+      "en": "open door",
+      "translated": "porta aperta",
+      "source": "simple"
+    },
+    {
+      "key": "item.11841.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
+      "source": "simple"
+    },
+    {
+      "key": "item.12007.name",
+      "en": "stone",
+      "translated": "pietra",
+      "source": "simple"
+    },
+    {
+      "key": "item.12033.name",
+      "en": "closed door",
+      "translated": "porta chiusa",
+      "source": "simple"
+    },
+    {
+      "key": "item.12034.name",
+      "en": "open door",
+      "translated": "porta aperta",
+      "source": "simple"
+    },
+    {
+      "key": "item.12035.name",
+      "en": "closed door",
+      "translated": "porta chiusa",
+      "source": "simple"
+    },
+    {
+      "key": "item.12036.name",
+      "en": "open door",
+      "translated": "porta aperta",
+      "source": "simple"
+    },
+    {
+      "key": "item.12078.name",
+      "en": "unknown item",
+      "translated": "oggetto sconosciuto",
+      "source": "simple"
+    },
+    {
+      "key": "item.12203.name",
+      "en": "hole",
+      "translated": "buco",
+      "source": "simple"
+    },
+    {
+      "key": "item.12249.name",
+      "en": "closed door",
+      "translated": "porta chiusa",
       "source": "simple"
     }
   ]

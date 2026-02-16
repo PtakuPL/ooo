@@ -1,24 +1,16 @@
 {
-  "timestamp": "2026-02-16T20:28:21.702183Z",
+  "timestamp": "2026-02-16T20:29:00.269546Z",
   "checked_entries": 100,
-  "issues_found": 6,
+  "issues_found": 5,
   "issues_by_type": {
-    "identical_to_en_exempt": 12,
-    "artifact_token": 6,
-    "suspicious_log_critical": 116,
-    "suspicious_log_low": 8,
-    "suspicious_log_high": 76,
+    "identical_to_en_exempt": 8,
+    "artifact_token": 5,
+    "suspicious_log_high": 196,
+    "suspicious_log_critical": 4,
     "suspicious_rejected_critical": 20,
     "suspicious_rejected_high": 2
   },
   "issues": [
-    {
-      "key": "scripts.prince_drazzak_summon.say_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

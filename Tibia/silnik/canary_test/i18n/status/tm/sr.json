@@ -159262,5 +159262,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:26:08.220238Z"
+  },
+  "item.198.desc": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:18.012337Z"
+  },
+  "item.21799.desc": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:18.045763Z"
+  },
+  "item.5745.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:18.392949Z"
+  },
+  "item.5746.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:18.393840Z"
+  },
+  "item.5748.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:18.394659Z"
+  },
+  "item.5749.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:18.395486Z"
   }
 }

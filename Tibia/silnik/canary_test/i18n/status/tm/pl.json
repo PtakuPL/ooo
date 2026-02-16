@@ -88206,5 +88206,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:26:52.409183Z"
+  },
+  "item.11136.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.113728Z"
+  },
+  "item.11143.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.116468Z"
+  },
+  "item.11233.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.121332Z"
+  },
+  "item.11241.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.123913Z"
+  },
+  "item.11604.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.201266Z"
+  },
+  "item.11606.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.203881Z"
+  },
+  "item.11608.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.206249Z"
+  },
+  "item.11610.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.208798Z"
+  },
+  "item.11612.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.211433Z"
+  },
+  "item.11614.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.214061Z"
+  },
+  "item.11616.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.217025Z"
+  },
+  "item.11618.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.219609Z"
+  },
+  "item.11620.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.223282Z"
+  },
+  "item.11622.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.226833Z"
+  },
+  "item.11624.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.229325Z"
+  },
+  "item.11626.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.231963Z"
+  },
+  "item.11628.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.234476Z"
+  },
+  "item.11630.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.237715Z"
+  },
+  "item.11632.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.240454Z"
+  },
+  "item.11634.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.243026Z"
+  },
+  "item.11636.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.245524Z"
+  },
+  "item.11638.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.247993Z"
+  },
+  "item.11640.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.250550Z"
+  },
+  "item.11642.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.253061Z"
+  },
+  "item.11644.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.255743Z"
+  },
+  "item.11646.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.258678Z"
+  },
+  "item.11648.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.261146Z"
+  },
+  "item.11650.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "złoty emblemat runiczny",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.264719Z"
+  },
+  "item.13135.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.581881Z"
+  },
+  "item.13142.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:33.583442Z"
+  },
+  "item.1628.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.061467Z"
+  },
+  "item.1631.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.062791Z"
+  },
+  "item.1650.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.076014Z"
+  },
+  "item.1653.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.079510Z"
+  },
+  "item.1668.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.096216Z"
+  },
+  "item.1671.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.102851Z"
+  },
+  "item.1682.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.107316Z"
+  },
+  "item.1691.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.116799Z"
+  },
+  "item.17560.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.182765Z"
+  },
+  "item.17569.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.186113Z"
+  },
+  "item.17700.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.207487Z"
+  },
+  "item.17709.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.210987Z"
+  },
+  "item.17993.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.260100Z"
+  },
+  "item.18002.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:34.266863Z"
+  },
+  "item.20443.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:35.363099Z"
+  },
+  "item.20452.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:35.367256Z"
+  },
+  "item.237.name": {
+    "src_hash": "91a152a9e275a0dfb550470841250314",
+    "text": "silny mana mikstura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:36.150258Z"
+  },
+  "item.23873.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:36.200843Z"
+  },
+  "item.23875.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:36.201985Z"
+  },
+  "item.25983.desc": {
+    "src_hash": "1d58aac9c5691ffe37d706901e0e6ca3",
+    "text": "Ta replika wygląda na naładowaną",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:36.580587Z"
   }
 }

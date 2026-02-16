@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T20:28:58.561897Z",
-  "language": "it",
-  "json_file": "items.json",
-  "translated": 50,
+  "timestamp": "2026-02-16T20:30:00.755663Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "item.11338.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
+    },
+    {
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
+    },
+    {
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jean_pierre.multi_13",
+      "en": "I understand your scepticism, but believe me, all will be well! As you can see, they change colour from dark to light red, and that's when they also start turning soft. <stirs with one hand while he slices carrots and peppers with the other hand> ...",
+      "translated": "Entiendo tu escepticismo, pero créeme, ¡todo irá bien! Como puedes ver, cambian de color de rojo oscuro a rojo claro, y es entonces cuando también empiezan a ponerse suaves. <stirs with one hand while he slices carrots and peppers with the other hand>...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jean_pierre.multi_22",
+      "en": "... dum di dum ... <waits> ...",
+      "translated": "... dum di dum ... <waits> ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jean_pierre.multi_3",
+      "en": "Now we just have to let it simmer and stir using a blessed wooden stake <stirs so vigorously that you can barely see his arms anymore> for thirty minutes. ...",
+      "translated": "Ahora sólo nos queda dejar hervir a fuego lento y remover con una estaca de madera bendita <stirs so vigorously that you can barely see his arms anymore> durante treinta minutos. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jerom.farewell_msg_1",
+      "en": "Bye.",
+      "translated": "Chao.",
       "source": "simple"
     },
     {
-      "key": "item.11340.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
+      "key": "npc.jerom.walkaway_msg_1",
+      "en": "Bye.",
+      "translated": "Chao.",
       "source": "simple"
     },
     {
-      "key": "item.11345.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
-      "source": "simple"
-    },
-    {
-      "key": "item.11348.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
-      "source": "simple"
-    },
-    {
-      "key": "item.11366.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
-      "source": "simple"
-    },
-    {
-      "key": "item.1156.name",
-      "en": "trapdoor",
-      "translated": "botola",
-      "source": "simple"
-    },
-    {
-      "key": "item.11591.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
-      "source": "simple"
-    },
-    {
-      "key": "item.11705.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
-    },
-    {
-      "key": "item.11708.name",
-      "en": "open door",
-      "translated": "porta aperta",
-      "source": "simple"
-    },
-    {
-      "key": "item.11714.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
-    },
-    {
-      "key": "item.11716.name",
-      "en": "open door",
-      "translated": "porta aperta",
-      "source": "simple"
-    },
-    {
-      "key": "item.11841.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
-      "source": "simple"
-    },
-    {
-      "key": "item.12007.name",
-      "en": "stone",
-      "translated": "pietra",
-      "source": "simple"
-    },
-    {
-      "key": "item.12033.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
-    },
-    {
-      "key": "item.12034.name",
-      "en": "open door",
-      "translated": "porta aperta",
-      "source": "simple"
-    },
-    {
-      "key": "item.12035.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
-    },
-    {
-      "key": "item.12036.name",
-      "en": "open door",
-      "translated": "porta aperta",
-      "source": "simple"
-    },
-    {
-      "key": "item.12078.name",
-      "en": "unknown item",
-      "translated": "oggetto sconosciuto",
-      "source": "simple"
-    },
-    {
-      "key": "item.12203.name",
-      "en": "hole",
-      "translated": "buco",
-      "source": "simple"
-    },
-    {
-      "key": "item.12249.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     }
   ]
 }

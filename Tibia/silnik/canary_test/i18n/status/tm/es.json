@@ -140062,5 +140062,21 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:28:19.140542Z"
+  },
+  "npc.jerom.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:59.963894Z"
+  },
+  "npc.jerom.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:29:59.991015Z"
   }
 }

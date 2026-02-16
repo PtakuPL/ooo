@@ -1,8 +1,8 @@
 {
-  "total_cycles": 8,
+  "total_cycles": 9,
   "mode": "AUTO_TRANSLATE",
-  "category": "ru",
-  "last_update": "2026-02-16T21:29:00.479499",
+  "category": "sr",
+  "last_update": "2026-02-16T21:30:02.030257",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ru",
+    "language": "sr",
     "json_file": "items.json",
-    "keys_to_translate": 6776,
-    "guard_fail": 0,
+    "keys_to_translate": 16937,
+    "guard_fail": 84,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

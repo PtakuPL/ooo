@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-16T21:56:11.926392Z",
-  "cycle": 76,
-  "language": "sr",
+  "timestamp": "2026-02-16T21:58:35.398700Z",
+  "cycle": 77,
+  "language": "es",
   "json_file": "monsters.json",
   "translated": 50,
   "placeholders": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 344
+  "strict_skipped_done": 1692
 }

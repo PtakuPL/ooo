@@ -13598,5 +13598,357 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:04:30.877874Z"
+  },
+  "npc.cipfried.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.390619Z"
+  },
+  "npc.dalbrect.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Hej då. Du är välkommen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.409951Z"
+  },
+  "npc.dallheim.farewell_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.414956Z"
+  },
+  "npc.dallheim.stdmod_8": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.422189Z"
+  },
+  "npc.dancing_fairy.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.424323Z"
+  },
+  "npc.dancing_fairy.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.427311Z"
+  },
+  "npc.denominator.greet_msg_2": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Hälsningar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.442210Z"
+  },
+  "npc.denominator.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.445465Z"
+  },
+  "npc.elane.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.473553Z"
+  },
+  "npc.elane.walkaway_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.480672Z"
+  },
+  "npc.eshaya.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.529344Z"
+  },
+  "npc.falonzo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.540674Z"
+  },
+  "npc.faloriel.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.541844Z"
+  },
+  "npc.farhilorn_of_the_winter_court.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.543685Z"
+  },
+  "npc.ferus.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.547840Z"
+  },
+  "npc.ferus.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.548801Z"
+  },
+  "npc.ferus.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.552176Z"
+  },
+  "npc.gail.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.571943Z"
+  },
+  "npc.gareth.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.582369Z"
+  },
+  "npc.gnomus.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.635206Z"
+  },
+  "npc.iptar_sin.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.806661Z"
+  },
+  "npc.iptar_sin.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.810886Z"
+  },
+  "npc.isimov.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.817955Z"
+  },
+  "npc.isimov.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.819037Z"
+  },
+  "npc.isimov.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.823269Z"
+  },
+  "npc.iwar.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.829846Z"
+  },
+  "npc.jamesfrancis.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.845040Z"
+  },
+  "npc.kasmir.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.893675Z"
+  },
+  "npc.kasmir.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.894834Z"
+  },
+  "npc.kasmir.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.899508Z"
+  },
+  "npc.kjesse.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.916329Z"
+  },
+  "npc.kjesse.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.917173Z"
+  },
+  "npc.kjesse.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.922259Z"
+  },
+  "npc.klom_stonecutter.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.928453Z"
+  },
+  "npc.lardoc_bashsmite.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.936187Z"
+  },
+  "npc.lorietta.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.956663Z"
+  },
+  "npc.lorietta.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.957785Z"
+  },
+  "npc.lorietta.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.962989Z"
+  },
+  "npc.maealil.farewell_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.991429Z"
+  },
+  "npc.maealil.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.992014Z"
+  },
+  "npc.maealil.greet_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.992810Z"
+  },
+  "npc.maealil.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.993650Z"
+  },
+  "npc.maealil.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:01.998710Z"
+  },
+  "npc.maelyrra.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:02.000024Z"
   }
 }

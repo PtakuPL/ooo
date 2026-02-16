@@ -1,6 +1,6 @@
 {
-  "batch_size": 7,
-  "gt_batch_size": 7,
+  "batch_size": 8,
+  "gt_batch_size": 8,
   "guard_fail_rate": 3.58,
   "total_translated": 485,
   "total_guard_fail": 18,

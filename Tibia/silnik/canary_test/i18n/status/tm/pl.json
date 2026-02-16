@@ -93174,5 +93174,261 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:52:59.608827Z"
+  },
+  "npc.hamish.farewell_msg_1": {
+    "src_hash": "2fe2e947d2eceeaa0f687b46131ed917",
+    "text": "Używaj run rozważnie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.641243Z"
+  },
+  "npc.hamish.sendtrade_msg_1": {
+    "src_hash": "0906a8c64321591aa58fc77fd2ad5878",
+    "text": "Wybieraj! A może chcesz zobaczyć tylko {potions}, {wands} albo {runes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.648963Z"
+  },
+  "npc.hamish.walkaway_msg_1": {
+    "src_hash": "2fe2e947d2eceeaa0f687b46131ed917",
+    "text": "Używaj run rozważnie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.676624Z"
+  },
+  "npc.hanna.greet_msg_1": {
+    "src_hash": "56afffb157e0e4ad58f9731e846f8f36",
+    "text": "Och, wejdź proszę, |PLAYERNAME|. Czego potrzebujesz? Rzuć okiem na moje wspaniałe {offers} z klejnotami i biżuterią.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.681364Z"
+  },
+  "npc.hanna.say_9": {
+    "src_hash": "4cd943413ef066dd09bca4dc137de23f",
+    "text": "Swietna robota! To musialo kosztowac duzo pracy. Dobrze, kladziesz to tak... potem klej tak... tutaj!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.697042Z"
+  },
+  "npc.hardek.farewell_msg_1": {
+    "src_hash": "511be326f0223306e232ba60e626481f",
+    "text": "Do widzenia. Odwiedź mnie, gdy tylko zechcesz coś sprzedać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.703550Z"
+  },
+  "npc.hardek.greet_msg_1": {
+    "src_hash": "b70b0bfb818df36aacf3825c1a6182b3",
+    "text": "Witaj |PLAYERNAME|! Potrzebujesz moich usług?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.706552Z"
+  },
+  "npc.hardek.walkaway_msg_1": {
+    "src_hash": "511be326f0223306e232ba60e626481f",
+    "text": "Do widzenia. Odwiedź mnie, gdy tylko zechcesz coś sprzedać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.710957Z"
+  },
+  "npc.harlow_vengoth.greet_msg_1": {
+    "src_hash": "b22835b57f3ec6827c3ae0137a5c028b",
+    "text": "Chcesz wrócić do {Yalahar} za 50 sztuk złota? Po prostu zapytaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.721024Z"
+  },
+  "npc.harog.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.723786Z"
+  },
+  "npc.haroun.farewell_msg_1": {
+    "src_hash": "31e8eeb709dbdbe39f67da7006e7a38a",
+    "text": "Żegnaj! Niech spokojne światło Oświeconego towarzyszy ci w podróży.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.727847Z"
+  },
+  "npc.haroun.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Do usług, przejrzyj moje towary.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.745459Z"
+  },
+  "npc.haroun.walkaway_msg_1": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Żegnaj, człowieku.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.747441Z"
+  },
+  "npc.harsky.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.751189Z"
+  },
+  "npc.hawkhurst.greet_msg_1": {
+    "src_hash": "91cafd9ed503a906d4a9dbde9373f615",
+    "text": "Ahoj, kamracie! Szukasz {passage}, co.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.753468Z"
+  },
+  "npc.hawkhurst_ingol.greet_msg_1": {
+    "src_hash": "91cafd9ed503a906d4a9dbde9373f615",
+    "text": "Ahoj, kamracie! Szukasz {passage}, co.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.759194Z"
+  },
+  "npc.hireling.farewell_msg_1": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Żegnaj, |PLAYERNAME|, będę tu, jeśli znów będziesz mnie potrzebować.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.947761Z"
+  },
+  "npc.hjaern.greet_msg_1": {
+    "src_hash": "00835d63e500cbea55ad90f8a88d8c16",
+    "text": "Witaj, |PLAYERNAME|. Świat {spiritual} patrzy na ciebie i twoje czyny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:18.998935Z"
+  },
+  "npc.hoggle.greet_msg_1": {
+    "src_hash": "1602b615a53c201714b0acb1d1375a04",
+    "text": "Witaj w moim skromnym domu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.056104Z"
+  },
+  "npc.humgolf.greet_msg_1": {
+    "src_hash": "ad046245c4b8bd285492a780cd32ef58",
+    "text": "|PLAYERNAME|, dzień dobry... albo noc dobry... cokolwiek.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.140486Z"
+  },
+  "npc.humphrey.greet_msg_1": {
+    "src_hash": "5153e3e805fb28dab0342bf66f3dd2b7",
+    "text": "Witaj, szlachetny |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.169153Z"
+  },
+  "npc.huntsman.farewell_msg_1": {
+    "src_hash": "72c6f681201030fa20c4be66b4fd1131",
+    "text": "Wciąż cię widzę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.221074Z"
+  },
+  "npc.hyacinth.greet_msg_1": {
+    "src_hash": "496ad5f3e14146562fd4fa124ab41003",
+    "text": "Pozdrawiam, podróżniku |PLAYERNAME|. To ty musisz być tym, którego przysłała Lily. Czy masz dla mnie worek {herbs}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.264478Z"
+  },
+  "npc.hyacinth.greet_msg_3": {
+    "src_hash": "190ad7101e079d912f649ef487140629",
+    "text": "Pozdrowienia, podróżniku |PLAYERNAME|. Skoro odnalazłeś drogę do mojej chaty, jak mogę ci {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.277483Z"
+  },
+  "npc.imalas.sendtrade_msg_1": {
+    "src_hash": "7f11902c4408305e1726523ca95b1f39",
+    "text": "Jasne, dobrze się rozejrzyj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.404581Z"
+  },
+  "npc.imbuement_assistant.farewell_msg_1": {
+    "src_hash": "028ff767db8f071f3c945cbba81c8bb1",
+    "text": "Do zobaczenia później, |PLAYERNAME|, wróć wkrótce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.410821Z"
+  },
+  "npc.imbuement_assistant.walkaway_msg_1": {
+    "src_hash": "028ff767db8f071f3c945cbba81c8bb1",
+    "text": "Do zobaczenia później, |PLAYERNAME|, wróć wkrótce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.425191Z"
+  },
+  "npc.iptar-sin.stdmod_2": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.793393Z"
+  },
+  "npc.iptar_sin.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.795624Z"
+  },
+  "npc.iptar_sin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.798690Z"
+  },
+  "npc.iptar_sin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.802163Z"
+  },
+  "npc.iptar_sin.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:08:19.804465Z"
   }
 }

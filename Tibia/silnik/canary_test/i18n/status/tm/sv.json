@@ -9430,5 +9430,221 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:09:13.684103Z"
+  },
+  "item.4108.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.089834Z"
+  },
+  "item.4150.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.092218Z"
+  },
+  "item.4151.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.092476Z"
+  },
+  "item.4152.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.092720Z"
+  },
+  "item.42624.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.105931Z"
+  },
+  "item.42625.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.106220Z"
+  },
+  "item.42626.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.106461Z"
+  },
+  "item.42627.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.106695Z"
+  },
+  "item.4268.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.107344Z"
+  },
+  "item.4269.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.107623Z"
+  },
+  "item.4270.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "död varg",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.107993Z"
+  },
+  "item.42744.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.109060Z"
+  },
+  "item.4286.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "död drake",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.111176Z"
+  },
+  "item.4287.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "död drake",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.111415Z"
+  },
+  "item.4288.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "död drake",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.111667Z"
+  },
+  "item.4289.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "död drake",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.112054Z"
+  },
+  "item.43952.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.123589Z"
+  },
+  "item.43953.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.123973Z"
+  },
+  "item.44913.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.128209Z"
+  },
+  "item.44914.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.128461Z"
+  },
+  "item.44915.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.128697Z"
+  },
+  "item.44916.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.129046Z"
+  },
+  "item.48495.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.180980Z"
+  },
+  "item.48496.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.181246Z"
+  },
+  "item.48499.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.181556Z"
+  },
+  "item.48500.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.181991Z"
+  },
+  "item.48520.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:00.183081Z"
   }
 }

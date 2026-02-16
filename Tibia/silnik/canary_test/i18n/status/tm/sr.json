@@ -161542,5 +161542,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:08:58.520645Z"
+  },
+  "item.10386.name": {
+    "src_hash": "97316cd24185e3cc363bf98c334b4988",
+    "text": "Заоан ципеле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:02.344457Z"
+  },
+  "item.10387.name": {
+    "src_hash": "411591a55c3dee7a454ad2f2113d03dd",
+    "text": "Заоан легс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:02.345602Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "дракината",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:02.346328Z"
+  },
+  "item.10389.name": {
+    "src_hash": "a29bac723ca2d59ed78a2d715e17e92f",
+    "text": "саи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:02.346864Z"
+  },
+  "item.10390.name": {
+    "src_hash": "4b0ec4077ef1975b9fbb4a9e27217e26",
+    "text": "Заоан мач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:02.347736Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "драцхаку",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:07.859728Z"
+  },
+  "item.10392.name": {
+    "src_hash": "72736292655d59d37b2a8280704ebe84",
+    "text": "твин хоокс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:07.860270Z"
+  },
+  "item.10393.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "мртва плачљива удовица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:07.860888Z"
+  },
+  "item.10394.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "мртва плачљива удовица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:07.861455Z"
+  },
+  "item.10395.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "мртва плачљива удовица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:07.862051Z"
+  },
+  "item.10396.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "мртва плачљива удовица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:11.976522Z"
+  },
+  "item.10397.name": {
+    "src_hash": "fc303c85cdb1ddc7c475eca3a9cca889",
+    "text": "ткачки врх штапића",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:11.976843Z"
+  },
+  "item.10398.name": {
+    "src_hash": "2f4f05f4348d41e7ac2442e1e427d908",
+    "text": "дракен трофеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:11.977115Z"
+  },
+  "item.10399.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "мртви дракен чаролија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:11.977395Z"
+  },
+  "item.104.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:11.977581Z"
+  },
+  "item.10400.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "мртви дракен чаролија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:15.614780Z"
+  },
+  "item.10401.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "мртви дракен чаролија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:15.615089Z"
+  },
+  "item.10402.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "мртви дракен чаролија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:15.615365Z"
+  },
+  "item.10403.name": {
+    "src_hash": "069de0f56ab51747f5b348ac57227b3a",
+    "text": "рој мртвих инсеката",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:15.615624Z"
+  },
+  "item.10404.name": {
+    "src_hash": "c5f29af5afa5636ffdff53d9ce3b3025",
+    "text": "кости рамена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:15.615895Z"
+  },
+  "item.10405.name": {
+    "src_hash": "f05755063c0050b297a00ecab83f0853",
+    "text": "Вармастер'с ручни штитници",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:23.410889Z"
+  },
+  "item.10406.name": {
+    "src_hash": "0739dcaab1d75cf7d17d46c0bb618068",
+    "text": "Заоан хелебарда",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:23.411358Z"
+  },
+  "item.10407.name": {
+    "src_hash": "80ec2c03679c49d83f14b2a5ab6774d1",
+    "text": "чупави реп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:23.411605Z"
+  },
+  "item.10408.name": {
+    "src_hash": "3c57a801a9878a44911c510daf3c657b",
+    "text": "шиљаста гвоздена лопта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:23.411870Z"
+  },
+  "item.10409.name": {
+    "src_hash": "9b2f51f51291db08077f0e4e3138daf6",
+    "text": "искварена застава",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:23.412113Z"
+  },
+  "item.10410.name": {
+    "src_hash": "8b6105d39641aec65eb210146c2a9dff",
+    "text": "проклети шиљци рамена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:30.306018Z"
+  },
+  "item.10411.name": {
+    "src_hash": "f70fb225acc1a2f1b3f13fd8b23e5224",
+    "text": "удовице мандибуле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:30.306365Z"
+  },
+  "item.10412.name": {
+    "src_hash": "65fcef45c06f46acf04beb44be6183d1",
+    "text": "вапајућа удовичка огрлица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:30.306652Z"
+  },
+  "item.10413.name": {
+    "src_hash": "68421639c2314148b312f297c3d32219",
+    "text": "заогун застава",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:30.306879Z"
+  },
+  "item.10414.name": {
+    "src_hash": "02fdab6560da7f08fbaeecf568e75999",
+    "text": "заогун нараменице",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:30.307133Z"
+  },
+  "item.10415.name": {
+    "src_hash": "66996fdb9c7d5427e9341d69c8f9bc8f",
+    "text": "висока гардијска застава",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:37.653164Z"
+  },
+  "item.10416.name": {
+    "src_hash": "96fd8e4cf88cda574e9cfd192388083e",
+    "text": "високе заштитне нараменице",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:37.653551Z"
+  },
+  "item.10417.name": {
+    "src_hash": "89b865660121329f1ee0db2a5d1976ec",
+    "text": "легионарске заставе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:37.653841Z"
+  },
+  "item.10418.name": {
+    "src_hash": "d593d0a19615dc4c24fbc119a550baf8",
+    "text": "сломљена хелебарда",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:37.654141Z"
+  },
+  "item.10419.name": {
+    "src_hash": "74f78586d6fd0d0de41866624ad9ced6",
+    "text": "трофеј гуштера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:37.654388Z"
+  },
+  "item.10420.name": {
+    "src_hash": "fa14c1bb1c9e6ad59579cdc98f186817",
+    "text": "окамењени врисак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:43.709569Z"
+  },
+  "item.10421.name": {
+    "src_hash": "892f066dfda2adad8d911f1f7f8e43f3",
+    "text": "одвратан трофеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:43.709832Z"
+  },
+  "item.10422.desc": {
+    "src_hash": "dbe9ce2f4f7b229108980d68bb5891e2",
+    "text": "Можете га искористити и покушати да формирате статуу од тога",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:43.710317Z"
+  },
+  "item.10422.name": {
+    "src_hash": "2228e267716237285cc48ac484eb8226",
+    "text": "грумен глине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:43.710546Z"
+  },
+  "item.10423.name": {
+    "src_hash": "77518421f3f47ddf591cc4bb148eb6d6",
+    "text": "статуа од грубе глине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:43.710814Z"
+  },
+  "item.10424.name": {
+    "src_hash": "cec123d837717bdd25177e3ed889c150",
+    "text": "статуа од глине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:51.229704Z"
+  },
+  "item.10425.name": {
+    "src_hash": "1641878a2ac639fad305524bc7cc7ad4",
+    "text": "лепа статуа од глине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:51.230005Z"
+  },
+  "item.10426.desc": {
+    "src_hash": "8ac93627e4eff83f99a1e67b72aaaca6",
+    "text": "Чини се да је савршено покушати и створити нешто од тога оштрим ножем од опсидијана",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:51.230586Z"
+  },
+  "item.10426.name": {
+    "src_hash": "2148736474d255251078a24acc20d47a",
+    "text": "комад мермерне стене",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:51.230863Z"
+  },
+  "item.10427.name": {
+    "src_hash": "18f79a0dc92b0fba95f78e3e8c79ab7d",
+    "text": "груба мермерна статуа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:51.231159Z"
+  },
+  "item.10428.name": {
+    "src_hash": "6b6254d414daf48feae7bb9a91577fd2",
+    "text": "мермерна статуа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:55.913932Z"
+  },
+  "item.10429.name": {
+    "src_hash": "164397552df798eb4589e1f2462d9118",
+    "text": "прелепа мермерна статуа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:55.914328Z"
+  },
+  "item.10430.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мртви терамит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:55.914577Z"
+  },
+  "item.10431.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мртви терамит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:55.914805Z"
+  },
+  "item.10432.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мртви терамит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:11:55.915027Z"
   }
 }

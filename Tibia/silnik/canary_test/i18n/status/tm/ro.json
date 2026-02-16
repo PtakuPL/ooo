@@ -8446,5 +8446,221 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:59:13.464537Z"
+  },
+  "item.21878.name": {
+    "src_hash": "f1a81d782dea6a19bdca383bffe68452",
+    "text": "Păianjen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:35.884733Z"
+  },
+  "item.695.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.593921Z"
+  },
+  "item.696.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.594297Z"
+  },
+  "item.697.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.594714Z"
+  },
+  "item.7033.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.596392Z"
+  },
+  "item.7042.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.599907Z"
+  },
+  "item.706.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.606684Z"
+  },
+  "item.707.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.606984Z"
+  },
+  "item.708.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.607299Z"
+  },
+  "item.709.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.607599Z"
+  },
+  "item.710.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.615554Z"
+  },
+  "item.711.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.616300Z"
+  },
+  "item.712.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.616811Z"
+  },
+  "item.713.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.617420Z"
+  },
+  "item.714.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.618364Z"
+  },
+  "item.715.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.619622Z"
+  },
+  "item.716.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.620507Z"
+  },
+  "item.717.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.620885Z"
+  },
+  "item.718.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.622038Z"
+  },
+  "item.719.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.623187Z"
+  },
+  "item.720.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.623533Z"
+  },
+  "item.721.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.624087Z"
+  },
+  "item.722.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.624430Z"
+  },
+  "item.723.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.625068Z"
+  },
+  "item.724.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.625868Z"
+  },
+  "item.725.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.630275Z"
+  },
+  "item.726.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:38.634454Z"
   }
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:01:06.411249Z",
+  "timestamp": "2026-02-16T21:02:08.260454Z",
   "language": "es",
-  "json_file": "server.json",
-  "translated": 50,
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "data.otservbr.global.npc.markwin.L59.904",
-      "en": "Intruder! Guards, take him down!",
-      "translated": "¡Intruso! ¡Guardias, derribenlo!",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.markwin.L72.905",
-      "en": "Well ... you defeated my guards! Now everything is over! I guess I will have to answer your questions now.",
-      "translated": "Bueno... ¡derrotaste a mis guardias! ¡Ahora todo ha terminado! Supongo que tendré que responder a tus preguntas ahora.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.marlene.L101.423",
-      "en": "Good bye and come again for another small talk! *waves*",
-      "translated": "¡Adiós y vuelve para otra pequeña charla! *ondas*",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.marvin.L92.130",
-      "en": "Ah, you come just in time for the special voting about the most recent {funding} project. I guess you want to participate in it.",
-      "translated": "Ah, llegas justo a tiempo para la votación especial sobre el proyecto {funding} más reciente. Supongo que quieres participar en ello.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.mazarius.L189.562",
-      "en": "Greetings, dear visitor. Please tell me what {brings} you here, to my humble adobe.",
-      "translated": "Saludos, querido visitante. Por favor dime qué {brings} estás aquí, a mi humilde adobe.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.mehkesh.L59.619",
-      "en": "Be mourned, |PLAYERNAME|, pilgrim in flesh. If you are looking for potions, seek no further.",
-      "translated": "Sé de luto, |PLAYERNAME|, peregrino en carne. Si buscas pociones, no busques más.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.mehkesh.L60.620",
-      "en": "May enlightenment be your path, |PLAYERNAME|.",
-      "translated": "Que la iluminación sea tu camino, |PLAYERNAME|.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.mehkesh.L61.621",
-      "en": "May enlightenment be your path, |PLAYERNAME|.",
-      "translated": "Que la iluminación sea tu camino, |PLAYERNAME|.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.mehkesh.L62.622",
-      "en": "Sure.",
-      "translated": "Sure.",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.melchior.L86.1116",
-      "en": "Farewell, stranger. May Uman the Wise guide your steps in this treacherous land.",
-      "translated": "Adiós, extraño. Que Uman el Sabio guíe tus pasos en esta tierra traicionera.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.melchior.L87.1117",
-      "en": "Farewell, stranger. May Uman the Wise guide your steps in this treacherous land.",
-      "translated": "Adiós, extraño. Que Uman el Sabio guíe tus pasos en esta tierra traicionera.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.melfar.L135.692",
-      "en": "Just great, another disturbance. Just what I need.",
-      "translated": "Simplemente genial, otra perturbación. Justo lo que necesito.",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.melian.L94.776",
-      "en": "Greetings, traveller |PLAYERNAME|. Where do you want me to {fly} you?",
-      "translated": "Saludos viajero |PLAYERNAME|. ¿Dónde quieres que te {fly}?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.memech.L59.1193",
-      "en": "Be mourned, |PLAYERNAME|, pilgrim in flesh. Have a look at my fine {weapons} and {armors}.",
-      "translated": "Sé de luto, |PLAYERNAME|, peregrino en carne. Echa un vistazo a mis finos {weapons} y {armors}.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.memech.L60.1194",
-      "en": "May enlightenment be your path, |PLAYERNAME|.",
-      "translated": "Que la iluminación sea tu camino, |PLAYERNAME|.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.memech.L61.1195",
-      "en": "May enlightenment be your path.",
-      "translated": "Que la iluminación sea tu camino.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.milos.L59.298",
-      "en": "Oh hello. I hardly noticed you. I'm afraid I am a bit distracted at the moment.",
-      "translated": "Ah hola. Casi no te noté. Me temo que en este momento estoy un poco distraído.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.mirabell.L123.158",
-      "en": "Of course, take a look at my tasty offers.",
-      "translated": "Por supuesto, echa un vistazo a mis sabrosas ofertas.",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.miraia.L187.1359",
-      "en": "Daraman's blessings. Come back soon.",
-      "translated": "Las bendiciones de Daraman. Vuelve pronto.",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.moe.L115.326",
-      "en": "Greetings, traveller. It seems, you're a {guest} here, just like me.",
-      "translated": "Saludos, viajero. Parece que aquí eres un {guest}, como yo.",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.say_14",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

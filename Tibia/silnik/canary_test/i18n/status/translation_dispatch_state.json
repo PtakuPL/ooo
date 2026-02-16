@@ -1,15 +1,17 @@
 {
-  "timestamp": "2026-02-16T21:22:16.938366Z",
-  "cycle_counter": 717,
-  "last_target_key": "pl:items.json",
-  "last_pending_total": 11553,
+  "timestamp": "2026-02-16T21:23:31.075946Z",
+  "cycle_counter": 720,
+  "last_target_key": "it:items.json",
+  "last_pending_total": 16533,
   "last_tier": 1,
   "last_cat_priority": 0,
   "candidates_count": 286,
-  "active_candidates_count": 280,
+  "active_candidates_count": 279,
   "skipped_backoff": 6,
-  "skipped_guard_fail": 0,
-  "guard_fail_blacklist": {},
+  "skipped_guard_fail": 1,
+  "guard_fail_blacklist": {
+    "pl:items.json": 728
+  },
   "tier_config": {
     "tier1": [
       "es",
@@ -39,7 +41,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 54,
+  "cache_cycle": 55,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,

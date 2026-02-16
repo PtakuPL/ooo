@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T21:20:47.354747Z"
+    "updated_at": "2026-02-16T21:23:14.608516Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -10838,5 +10838,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:20:47.355328Z"
+  },
+  "item.9041.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Această creasta pare importantă. Nu ar trebui să-l pierzi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:09.406524Z"
+  },
+  "item.10218.desc": {
+    "src_hash": "4277fbe6c944de4097a47b4cc39005bc",
+    "text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:14.609084Z"
+  },
+  "item.10247.desc": {
+    "src_hash": "79a4b5069fcbc4556ba7782cd0240de7",
+    "text": "Această ladă conține un set de arme",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:14.609432Z"
+  },
+  "item.10281.desc": {
+    "src_hash": "9c4b74be7487196c0154c7fa2fd4c87e",
+    "text": "Arată destul de otrăvitor, deci nu este o alegere bună pentru o masă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:18.665276Z"
+  },
+  "item.10288.desc": {
+    "src_hash": "353e14b2a3f813f1fb537fbaeec1166f",
+    "text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:18.665734Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Ceva prețios ar putea fi sigilat în el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:18.666142Z"
+  },
+  "item.10341.desc": {
+    "src_hash": "e408525d9e7f310b0d2eac9e0d8251f0",
+    "text": "Scânteia Phoenix este conținută în el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:23.034622Z"
+  },
+  "item.10342.desc": {
+    "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
+    "text": "Îmbrățișarea lui Tibia este conținută în ea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:23.035080Z"
+  },
+  "item.10343.desc": {
+    "src_hash": "2b1e8854868003f233139b0d72613a37",
+    "text": "Acoperirea spirituală este conținută în ea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:23.035446Z"
+  },
+  "item.10344.desc": {
+    "src_hash": "a3edec8c157a4898748edb27135adb5a",
+    "text": "Focul Sorilor este cuprins în el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:23.035803Z"
+  },
+  "item.10345.desc": {
+    "src_hash": "796d1564ac7ae48945d726ab90782b3e",
+    "text": "În ea este cuprinsă înțelepciunea singurătății",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:26.404451Z"
+  },
+  "item.10422.desc": {
+    "src_hash": "dbe9ce2f4f7b229108980d68bb5891e2",
+    "text": "Ai putea să-l folosești și să încerci să formezi o statuie din ea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:26.406203Z"
+  },
+  "item.10426.desc": {
+    "src_hash": "8ac93627e4eff83f99a1e67b72aaaca6",
+    "text": "Pare perfect să încerci să creezi ceva din el cu un cuțit obsidian ascuțit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:26.406672Z"
+  },
+  "item.10476.desc": {
+    "src_hash": "93cbc952cf02920106dd8b2154f775e2",
+    "text": "Se zvonește că îți va aduce noroc! Norocul sponsorizat de TibiaLottery",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:23:28.153642Z"
   }
 }

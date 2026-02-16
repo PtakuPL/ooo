@@ -143246,5 +143246,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:43:14.885667Z"
+  },
+  "monster.madareth.voice_2": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "¡Siente mi ira!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:51:13.499209Z"
+  },
+  "monster.obujos.name": {
+    "src_hash": "086ff89bac87d47f970e6904abf16758",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:51:13.507318Z"
+  },
+  "monster.obujos.desc": {
+    "src_hash": "086ff89bac87d47f970e6904abf16758",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:51:13.508743Z"
+  },
+  "monster.tanjis.name": {
+    "src_hash": "84ecf941b71fe0ab245e3ceb02959073",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:51:13.511532Z"
+  },
+  "monster.tanjis.desc": {
+    "src_hash": "84ecf941b71fe0ab245e3ceb02959073",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:51:13.512934Z"
   }
 }

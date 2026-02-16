@@ -1,66 +1,17 @@
 {
-  "timestamp": "2026-02-16T22:50:28.995785Z",
+  "timestamp": "2026-02-16T22:53:38.250318Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 21,
   "issues_by_type": {
+    "artifact_token": 21,
     "identical_to_en_exempt": 21,
-    "artifact_token": 17,
-    "suspicious_log_high": 123,
-    "suspicious_log_critical": 69,
-    "suspicious_log_low": 8,
-    "suspicious_rejected_high": 36,
-    "suspicious_rejected_critical": 164
+    "suspicious_log_high": 150,
+    "suspicious_log_critical": 49,
+    "suspicious_log_low": 1,
+    "suspicious_rejected_high": 32,
+    "suspicious_rejected_critical": 168
   },
   "issues": [
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
     {
       "key": "npc.lardoc_bashsmite.multi_9",
       "lang": "es",
@@ -130,6 +81,83 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I WILL MAKE ALL OF YOU SUFFER!",
+      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_8",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     }
   ],
   "threshold": 10,

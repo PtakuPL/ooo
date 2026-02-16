@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 74.4,
+  "coverage_pct": 74.5,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T22:17:38.093736Z",
+  "checked_at": "2026-02-16T22:54:04.506632Z",
   "issues_total": 490,
   "issues_by_type": {
     "consistency_in_language": 66,
@@ -1084,6 +1084,15 @@
       "lang": "_sbutton_deletecharacter"
     },
     {
+      "key": "html.serverinfo.html.text4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{{ config.lua.worldType|upper }} ",
+      "pl": "{{ config.lua.worldType|upper }} ",
+      "lang": "{{ config.lua.worldType|upper }} "
+    },
+    {
       "key": "item.14141.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1379,24 +1388,6 @@
       "en": "Madareth",
       "pl": "Madaretha",
       "lang": "Madareth"
-    },
-    {
-      "key": "monster.tanjis.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tanjis",
-      "pl": "Tanji",
-      "lang": "Tanjis"
-    },
-    {
-      "key": "monster.tanjis.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tanjis",
-      "pl": "Tanji",
-      "lang": "Tanjis"
     },
     {
       "key": "monster.tirecz.name",
@@ -3127,15 +3118,6 @@
       "lang": "Regular"
     },
     {
-      "key": "otclient_modules.character_otui.tr_85",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Food",
-      "pl": "Żywność",
-      "lang": "Food"
-    },
-    {
       "key": "otclient_modules.characterlist.tr_2",
       "category": "otclient_modules",
       "type": "pl_reference_missing_translation",
@@ -3188,6 +3170,15 @@
       "en": "No",
       "pl": "Nie",
       "lang": "No"
+    },
+    {
+      "key": "otclient_modules.cyclopedia_widgets_otui.tr_13",
+      "category": "otclient_modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Total: ",
+      "pl": "Całkowity:",
+      "lang": "Total: "
     },
     {
       "key": "otclient_modules.game_shop.tr_15",
@@ -3323,15 +3314,6 @@
       "en": "No",
       "pl": "Nie",
       "lang": "No"
-    },
-    {
-      "key": "otclient_modules.items.tr_27",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Food",
-      "pl": "Żywność",
-      "lang": "Food"
     },
     {
       "key": "otclient_modules.serverlist.tr_1",
@@ -4601,6 +4583,24 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "data.otservbr.global.scripts.actions.system.quest.reward.common.L188.2383",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The",
+      "pl": "To",
+      "lang": "The"
+    },
+    {
+      "key": "data.otservbr.global.scripts.quests.dawnport.actions.vocation.reward.L74.2048",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The",
+      "pl": "To",
+      "lang": "The"
     }
   ],
   "length_ratio_issues": [
@@ -4823,8 +4823,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 8,
-    "skipped": 72,
+    "applied": 9,
+    "skipped": 71,
     "errors": 0
   }
 }

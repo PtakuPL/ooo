@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 10.7,
+  "coverage_pct": 11.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T22:18:08.270523Z",
+  "checked_at": "2026-02-16T22:54:32.563643Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,15 +21,6 @@
       "en": "Berserker",
       "pl": "To go berserk",
       "lang": "Berserker"
-    },
-    {
-      "key": "actions.random_items.say_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Znalazłeś ",
-      "lang": "You found "
     },
     {
       "key": "ui.house.rent_period_monthly",
@@ -3612,6 +3603,15 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
+    },
+    {
+      "key": "npc.arkulius.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
     }
   ],
   "length_ratio_issues": [

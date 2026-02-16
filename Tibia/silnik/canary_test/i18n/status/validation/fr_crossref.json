@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T22:18:06.710913Z",
+  "checked_at": "2026-02-16T22:54:31.043494Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1338,33 +1338,6 @@
       "lang": "piano"
     },
     {
-      "key": "item.7740.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.7843.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "anvil",
-      "pl": "kowadło",
-      "lang": "anvil"
-    },
-    {
-      "key": "item.7885.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fish",
-      "pl": "Ryba",
-      "lang": "fish"
-    },
-    {
       "key": "item.7933.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1372,33 +1345,6 @@
       "en": "invitation",
       "pl": "zaproszenie",
       "lang": "invitation"
-    },
-    {
-      "key": "item.799.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.800.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.8064.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ethno coat",
-      "pl": "ethNie coat",
-      "lang": "ethno coat"
     },
     {
       "key": "item.8390.name",
@@ -1417,96 +1363,6 @@
       "en": "piano",
       "pl": "piaNie",
       "lang": "piano"
-    },
-    {
-      "key": "item.8716.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "swamp",
-      "pl": "bagno",
-      "lang": "swamp"
-    },
-    {
-      "key": "item.8737.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "CM token",
-      "pl": "Token CM",
-      "lang": "CM token"
-    },
-    {
-      "key": "item.9058.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gold ingot",
-      "pl": "Złoto ingot",
-      "lang": "gold ingot"
-    },
-    {
-      "key": "item.9169.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "old crate",
-      "pl": "stary skrzynia",
-      "lang": "old crate"
-    },
-    {
-      "key": "item.9215.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gold medal",
-      "pl": "Złoto medal",
-      "lang": "gold medal"
-    },
-    {
-      "key": "item.9653.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "witch hat",
-      "pl": "wiedźma kapelusz",
-      "lang": "witch hat"
-    },
-    {
-      "key": "item.9694.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snake skin",
-      "pl": "wąż skóra",
-      "lang": "snake skin"
-    },
-    {
-      "key": "lib.player.modal_button_close",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Close",
-      "pl": "Zamknij",
-      "lang": "Close"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
     },
     {
       "key": "module.init.text4",
@@ -4405,6 +4261,150 @@
       "en": "Chrrr.",
       "pl": "Chrr.",
       "lang": "Chrrr."
+    },
+    {
+      "key": "monster.frost_servant.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crrrrk.",
+      "pl": "Crrr.",
+      "lang": "Crrrrk."
+    },
+    {
+      "key": "monster.hirintror.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snirr!",
+      "pl": "prychnięcie!",
+      "lang": "snirr!"
+    },
+    {
+      "key": "monster.draptor.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.orc_sambackpack.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "an orc",
+      "pl": "ork",
+      "lang": "an orc"
+    },
+    {
+      "key": "monster.the_welter.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.furyosa.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.fernfang.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.evil_sheep.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.desperate_white_deer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*bell*",
+      "pl": "*dzwonek, dzwon*",
+      "lang": "*bell*"
+    },
+    {
+      "key": "monster.desperate_white_deer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*sniff*",
+      "pl": "*I.*",
+      "lang": "*sniff*"
+    },
+    {
+      "key": "monster.desperate_white_deer.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*wheeze*",
+      "pl": "*I.*",
+      "lang": "*wheeze*"
+    },
+    {
+      "key": "monster.wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.starving_wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnoorrr",
+      "pl": "GNieorrr",
+      "lang": "Gnoorrr"
+    },
+    {
+      "key": "monster.horse.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
+    },
+    {
+      "key": "monster.cave_rat.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.noble_lion.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Noble Lion",
+      "pl": "Nieble Lion",
+      "lang": "Noble Lion"
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 16,
-    "skipped": 64,
+    "applied": 6,
+    "skipped": 74,
     "errors": 0
   }
 }

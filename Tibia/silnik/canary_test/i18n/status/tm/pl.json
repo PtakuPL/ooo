@@ -94494,5 +94494,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:49:25.421521Z"
+  },
+  "item.12572.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "Czara wykuta przez smoka Khaxa, która reprezentuje całą wiedzę i mądrość Tibii-Wenezueli",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:03.797424Z"
+  },
+  "item.11492.desc": {
+    "src_hash": "2aa445e1e99ae6df21d679ca6764b3a0",
+    "text": "Choć nazwa na to wskazuje, ten prosty i cienki pas nie nadaje się do stosowania jako lina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:15.109456Z"
+  },
+  "item.11515.desc": {
+    "src_hash": "1148fe01aeba73efd69d005368141233",
+    "text": "Charakterystyczny kształt i smak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:20.829963Z"
+  },
+  "item.11541.desc": {
+    "src_hash": "22ef1a85bc4349ea3650e6f55912a5c6",
+    "text": "Został ci podarowany przez matre-dżina i zawiera nowe przepisy, które ugotowałeś",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:20.832637Z"
+  },
+  "item.11543.desc": {
+    "src_hash": "754120dc5aff478e74582317146aee1a",
+    "text": "Podobno ostatnia wola kogoś. Cokolwiek mogło być na nim napisane, już dawno zniknęło.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:20.845537Z"
+  },
+  "item.11544.desc": {
+    "src_hash": "9b97e51580254e42e5f7bf6be4b2f286",
+    "text": "Podobno ostatnia wola kogoś. Cokolwiek mogło być na nim napisane, dawno zniknęło",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:20.858630Z"
+  },
+  "item.11551.desc": {
+    "src_hash": "534e51a9c6b22b3e16a1212a3f3961dd",
+    "text": "Jest w stanie przechowywać wspomnienia i myśli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:27.515285Z"
+  },
+  "item.11552.desc": {
+    "src_hash": "3ce49eff7f272f394b24a787054137cf",
+    "text": "Jest w stanie przechowywać wspomnienia i myśli",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:27.515856Z"
+  },
+  "item.11584.desc": {
+    "src_hash": "426fbf7b62552eb2a213f7df0209cdb2",
+    "text": "Wygląda, jakby był zapieczętowany mleczną dobrocią",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:27.516470Z"
+  },
+  "item.11586.desc": {
+    "src_hash": "bd411239caecc58938b05b9a439cb4ce",
+    "text": "Nomadowie twierdzą, że ten posiłek napełnia cię energią kilka razy, zanim garnek się opróżni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:27.517802Z"
+  },
+  "item.11587.desc": {
+    "src_hash": "f539323da6ba32246e972e54c6b33137",
+    "text": "Nigdy nie masz pewności, co zrobią demoniczne kulki z cukierków, ale z pewnością smakują słodko i ekscytująco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:27.518867Z"
+  },
+  "item.11588.desc": {
+    "src_hash": "800d3525d4c7f9e6935c6754392d2c44",
+    "text": "Mówi się, że ma niesamowite efekty, jeśli wypijesz go, nosząc pewne magiczne pierścienie. Dlatego nie będzie działać na każdym ich rodzaju",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:33.011564Z"
+  },
+  "item.116.desc": {
+    "src_hash": "d39b035f5735b0e6910169571f7eebfc",
+    "text": "Zawiera codzienne zaopatrzenie sklepu Xodet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:33.012066Z"
+  },
+  "item.11603.desc": {
+    "src_hash": "964010137d180c408e8d0cf4efe3bf94",
+    "text": "To ozdobna, ostateczna runa lecząca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:33.012546Z"
+  },
+  "item.11604.desc": {
+    "src_hash": "964010137d180c408e8d0cf4efe3bf94",
+    "text": "To ozdobna, ostateczna runa lecząca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:33.013081Z"
+  },
+  "item.11605.desc": {
+    "src_hash": "b04025ee41c84df346408e1b41be6fbf",
+    "text": "To zdobiona runa ciężkiego magicznego pocisku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:33.013588Z"
+  },
+  "item.11606.desc": {
+    "src_hash": "b04025ee41c84df346408e1b41be6fbf",
+    "text": "To zdobiona runa ciężkiego magicznego pocisku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:37.117647Z"
+  },
+  "item.11609.desc": {
+    "src_hash": "30889c919fa2b2f4a56b9edfd9460e33",
+    "text": "To zdobiona runa nagłej śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:37.118247Z"
+  },
+  "item.11610.desc": {
+    "src_hash": "30889c919fa2b2f4a56b9edfd9460e33",
+    "text": "To zdobiona runa nagłej śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:37.118807Z"
+  },
+  "item.11611.desc": {
+    "src_hash": "8d0504df5491ef3c971915357622291d",
+    "text": "To zdobiona magiczna runa ścienna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:37.119278Z"
+  },
+  "item.11612.desc": {
+    "src_hash": "8d0504df5491ef3c971915357622291d",
+    "text": "To zdobiona magiczna runa ścienna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:37.119739Z"
+  },
+  "item.11613.desc": {
+    "src_hash": "ae9bf208d9f309053b238ada89a724e2",
+    "text": "To zdobiona ożywiona martwa runa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:43.007456Z"
+  },
+  "item.11614.desc": {
+    "src_hash": "ae9bf208d9f309053b238ada89a724e2",
+    "text": "To zdobiona ożywiona martwa runa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:43.007938Z"
+  },
+  "item.11615.desc": {
+    "src_hash": "5209781c30655c8dd9013d825b4fd3fb",
+    "text": "To zdobiona wielka kula ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:43.008371Z"
+  },
+  "item.11616.desc": {
+    "src_hash": "5209781c30655c8dd9013d825b4fd3fb",
+    "text": "To zdobiona wielka kula ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:43.008791Z"
+  },
+  "item.11617.desc": {
+    "src_hash": "9851ceff64f152137cb46bca5761a046",
+    "text": "To zdobiona runa kuli ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:43.009235Z"
+  },
+  "item.11618.desc": {
+    "src_hash": "9851ceff64f152137cb46bca5761a046",
+    "text": "To zdobiona runa kuli ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:47.012018Z"
+  },
+  "item.11627.desc": {
+    "src_hash": "a2db5ac857c213b3e478a99490efc5c2",
+    "text": "To zdobiona runa bomby energetycznej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:47.012460Z"
+  },
+  "item.11628.desc": {
+    "src_hash": "a2db5ac857c213b3e478a99490efc5c2",
+    "text": "To zdobiona runa bomby energetycznej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:47.012916Z"
+  },
+  "item.11629.desc": {
+    "src_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
+    "text": "To zdobiona runa paraliżu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:47.013359Z"
+  },
+  "item.11630.desc": {
+    "src_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
+    "text": "To zdobiona runa paraliżu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:47.013780Z"
+  },
+  "item.11631.desc": {
+    "src_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
+    "text": "To zdobiona runa rozpadu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:52.191042Z"
+  },
+  "item.11632.desc": {
+    "src_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
+    "text": "To zdobiona runa rozpadu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:52.193398Z"
+  },
+  "item.11637.desc": {
+    "src_hash": "fa018864c44f3a4090a714a0aa44919c",
+    "text": "To zdobiona runa ognia duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:52.195418Z"
+  },
+  "item.11638.desc": {
+    "src_hash": "fa018864c44f3a4090a714a0aa44919c",
+    "text": "To zdobiona runa ognia duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:52.196288Z"
+  },
+  "item.11639.desc": {
+    "src_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
+    "text": "To zdobiona runa pola zniszczenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:52.197170Z"
+  },
+  "item.11640.desc": {
+    "src_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
+    "text": "To zdobiona runa pola zniszczenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:56.482612Z"
+  },
+  "item.11641.desc": {
+    "src_hash": "ca58523787bd84ca3374d38d14271188",
+    "text": "To zdobiona runa dzikiego wzrostu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:56.483112Z"
+  },
+  "item.11642.desc": {
+    "src_hash": "ca58523787bd84ca3374d38d14271188",
+    "text": "To zdobiona runa dzikiego wzrostu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:56.483547Z"
+  },
+  "item.11643.desc": {
+    "src_hash": "46edde70aac13361c42642da1bb6f745",
+    "text": "To zdobiona runa bomby zapalającej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:56.484040Z"
+  },
+  "item.11644.desc": {
+    "src_hash": "46edde70aac13361c42642da1bb6f745",
+    "text": "To zdobiona runa bomby zapalającej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:52:56.484500Z"
+  },
+  "item.11645.desc": {
+    "src_hash": "0a8e9652f7dd95e9ae4c589b3726e0ba",
+    "text": "To zdobiona runa z trującą bombą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:53:01.170356Z"
+  },
+  "item.11646.desc": {
+    "src_hash": "0a8e9652f7dd95e9ae4c589b3726e0ba",
+    "text": "To zdobiona runa z trującą bombą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:53:01.170885Z"
+  },
+  "item.11647.desc": {
+    "src_hash": "afdf2f07d4f14040fff552146ae6390d",
+    "text": "To zdobiona runa lekkiego magicznego pocisku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:53:01.171367Z"
   }
 }

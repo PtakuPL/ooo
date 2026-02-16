@@ -18598,5 +18598,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:16:57.610935Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.719230Z"
+  },
+  "otclient_modules.console.tr_32": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.721419Z"
+  },
+  "otclient_modules.console.tr_6": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.722204Z"
+  },
+  "otclient_modules.const.tr_1": {
+    "src_hash": "52f3e90e1282312c8302e476d7c64ed0",
+    "text": "Nord-Vest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.723623Z"
+  },
+  "otclient_modules.const.tr_2": {
+    "src_hash": "e06870e1f12090f5b207f1a490cf40ad",
+    "text": "Sud-Vest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.723884Z"
+  },
+  "otclient_modules.const.tr_3": {
+    "src_hash": "b7e1f1c306e3b50e15998797692d2bb2",
+    "text": "Sud-Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.724117Z"
+  },
+  "otclient_modules.const.tr_4": {
+    "src_hash": "3d7033662f9854085c5da74321ff2779",
+    "text": "Nord-Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.724348Z"
+  },
+  "otclient_modules.const.tr_5": {
+    "src_hash": "bf495fc048d8d44b7f32536df5cf3930",
+    "text": "Vest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.724667Z"
+  },
+  "otclient_modules.const.tr_6": {
+    "src_hash": "263d7b2cf53802c9ed127b718c0bf9fd",
+    "text": "Sud",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.724875Z"
+  },
+  "otclient_modules.const.tr_7": {
+    "src_hash": "a99dc62d017d04cf67266593f9c3761e",
+    "text": "Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.725052Z"
+  },
+  "otclient_modules.const.tr_8": {
+    "src_hash": "601560b94fbb188919dd1d36c8ab70a4",
+    "text": "Nord",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.725232Z"
+  },
+  "otclient_modules.cooldown_otui.tr_9": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Atac",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.725944Z"
+  },
+  "otclient_modules.countwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.726154Z"
+  },
+  "otclient_modules.countwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.726458Z"
+  },
+  "otclient_modules.createaccount_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.727403Z"
+  },
+  "otclient_modules.currentoffers_otui.tr_14": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.729187Z"
+  },
+  "otclient_modules.currentoffers_otui.tr_7": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.729661Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_12": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.730264Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_15": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.730559Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_20": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.731038Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_28": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.731720Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_8": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.732671Z"
+  },
+  "otclient_modules.deathwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.733324Z"
+  },
+  "otclient_modules.deathwindow_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.733522Z"
+  },
+  "otclient_modules.edit_hotkey_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.733962Z"
+  },
+  "otclient_modules.editvip_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.734505Z"
+  },
+  "otclient_modules.editvip_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.734832Z"
+  },
+  "otclient_modules.editvip_otui.tr_7": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.735308Z"
+  },
+  "otclient_modules.editvip_otui.tr_8": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.735525Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_7": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.738847Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.740054Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_6": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.741253Z"
+  },
+  "otclient_modules.game_shop.tr_15": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.743008Z"
+  },
+  "otclient_modules.game_shop.tr_16": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.743201Z"
+  },
+  "otclient_modules.game_shop.tr_17": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.743496Z"
+  },
+  "otclient_modules.game_shop.tr_18": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.743677Z"
+  },
+  "otclient_modules.game_shop.tr_3": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.744120Z"
+  },
+  "otclient_modules.game_shop.tr_4": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.744291Z"
+  },
+  "otclient_modules.game_shop.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.744456Z"
+  },
+  "otclient_modules.game_shop.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.744618Z"
+  },
+  "otclient_modules.game_shop_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.745309Z"
+  },
+  "otclient_modules.game_shop_otui.tr_9": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.745769Z"
+  },
+  "otclient_modules.game_stash_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.745948Z"
+  },
+  "otclient_modules.game_stash_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.746284Z"
+  },
+  "otclient_modules.game_stash_otui.tr_4": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.746554Z"
+  },
+  "otclient_modules.game_store.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.746931Z"
+  },
+  "otclient_modules.game_store.tr_11": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.747168Z"
+  },
+  "otclient_modules.game_store.tr_13": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.747434Z"
+  },
+  "otclient_modules.game_store.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.747838Z"
+  },
+  "otclient_modules.game_store.tr_5": {
+    "src_hash": "444bcb3a3fcf8389296c49467f27e1d6",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:18:26.748194Z"
   }
 }

@@ -1,103 +1,127 @@
 {
-  "timestamp": "2026-02-16T23:18:05.540037Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 16,
+  "timestamp": "2026-02-16T23:18:35.167521Z",
+  "language": "sr",
+  "json_file": "monsters.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "monster.orc_spearman.name",
+      "en": "Orc Spearman",
+      "translated": "Орц Спеарман",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
+      "key": "monster.orc_spearman.desc",
+      "en": "an orc spearman",
+      "translated": "орк копљаник",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
+      "key": "monster.orc_spearman.voice_1",
+      "en": "Ugaar!",
+      "translated": "Угаар!",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.minotaur_cult_zealot.name",
+      "en": "Minotaur Cult Zealot",
+      "translated": "Минотаур Цулт Зеалот",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.minotaur_cult_zealot.desc",
+      "en": "a minotaur cult zealot",
+      "translated": "ревнитељ култа минотаура",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "monster.dworc_voodoomaster.name",
+      "en": "Dworc Voodoomaster",
+      "translated": "Дворц Воодоомастер",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "monster.dworc_voodoomaster.desc",
+      "en": "a dworc voodoomaster",
+      "translated": "а дворц воодоомастер",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "monster.dworc_voodoomaster.voice_1",
+      "en": "Grow truk grrrrr.",
+      "translated": "Гров трук гррррр.",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "monster.dworc_voodoomaster.voice_2",
+      "en": "Brak brrretz!",
+      "translated": "Брак бррретз!",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "monster.dworc_voodoomaster.voice_3",
+      "en": "Prek tars, dekklep zurk.",
+      "translated": "Прек тарс, декклеп зурк.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "monster.orc_rider.name",
+      "en": "Orc Rider",
+      "translated": "Орц Ридер",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "monster.orc_rider.desc",
+      "en": "an orc rider",
+      "translated": "јахач орка",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "monster.orc_rider.voice_1",
+      "en": "Orc arga Huummmak!",
+      "translated": "Орц арга Хуумммак!",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "monster.troll_legionnaire.name",
+      "en": "Troll Legionnaire",
+      "translated": "Тролл Легионнаире",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "monster.troll_legionnaire.desc",
+      "en": "a troll legionnaire",
+      "translated": "трол легионар",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "monster.troll_legionnaire.voice_1",
+      "en": "Attack!",
+      "translated": "Напад!",
+      "source": "tm"
+    },
+    {
+      "key": "monster.minotaur.name",
+      "en": "Minotaur",
+      "translated": "Минотаур",
+      "source": "tm"
+    },
+    {
+      "key": "monster.minotaur.desc",
+      "en": "a minotaur",
+      "translated": "минотаур",
+      "source": "tm"
+    },
+    {
+      "key": "monster.minotaur.voice_1",
+      "en": "Kaplar!",
+      "translated": "Каплар!",
+      "source": "tm"
+    },
+    {
+      "key": "monster.minotaur.voice_2",
+      "en": "Hurr",
+      "translated": "Хурр",
       "source": "tm"
     }
   ]

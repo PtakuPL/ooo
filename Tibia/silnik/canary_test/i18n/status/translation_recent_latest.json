@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:37:27.066719Z",
-  "language": "pl",
+  "timestamp": "2026-02-16T21:39:46.509721Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 50,
+  "translated": 24,
   "entries": [
     {
-      "key": "npc.guard_saros.say_11",
-      "en": "I am a little sad, that you seem to have forgotten me, handsome. I am Aruda.",
-      "translated": "Trochę mi smutno, że chyba mnie zapomniałeś, przystojniaku. Jestem Aruda.",
-      "source": "simple"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_13",
-      "en": "Oh, I like it, how you say my name.",
-      "translated": "Och, podoba mi się, jak wymawiasz moje imię.",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_14",
-      "en": "Please don't be so rude to look for the time if you are talking to me.",
-      "translated": "Proszę, nie bądź taki niegrzeczny i nie zerkaj na zegar, kiedy ze mną rozmawiasz.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_15",
-      "en": "I am deeply sorry, I can't help you.",
-      "translated": "Bardzo mi przykro, nie mogę ci pomóc.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_16",
-      "en": "UH! What a terrifying topic. Please let us speak about something more pleasant, I am a weak and small woman after all.",
-      "translated": "Uch! Co za przerażający temat. Porozmawiajmy o czymś przyjemniejszym. W końcu jestem słabą i drobną kobietą.",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_17",
-      "en": "What gives you the impression, I am the kind of women, you find in sewers?",
-      "translated": "Co sprawia, że myślisz, że jestem kobietą, którą znajdziesz w kanałach?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_18",
-      "en": "You should ask about that in one of the temples.",
-      "translated": "Powinieneś zapytać o to w którejś ze świątyń.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_19",
-      "en": "The king, that lives in this fascinating castle? I think he does look kind of cute in his luxurious robes, doesn't he?",
-      "translated": "Król, który mieszka w tym fascynującym zamku? Myślę, że w swoich luksusowych szatach wygląda całkiem uroczo, nie sądzisz?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_2",
-      "en": "Oh, sorry, I was distracted, what did you say?",
-      "translated": "Och, przepraszam, rozproszyłam się. Co powiedziałeś?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_20",
-      "en": "He is soooo strong! What muscles! What a body! Did you ask him for a date?",
-      "translated": "On jest taaaki silny! Jakie mięśnie! Jaka sylwetka! Poprosiłeś go o randkę?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_21",
-      "en": "He is soooo strong! What muscles! What a body! On the other hand, compared to you he looks quite puny.",
-      "translated": "On jest taaaki silny! Jakie mięśnie! Jaka sylwetka! Z drugiej strony, przy tobie wygląda całkiem mizernie.",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_22",
-      "en": "He is a little simple minded but always nice and well dressed.",
-      "translated": "Jest trochę prostoduszny, ale zawsze miły i dobrze ubrany.",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_23",
-      "en": "He should really sell some stylish gowns or something like that. We Tibians never get some clothing of the latest fashion. It's a shame.",
-      "translated": "Powinien sprzedawać jakieś stylowe suknie czy coś takiego. My, Tibijczycy, nigdy nie dostajemy ubrań zgodnych z najnowszą modą. Szkoda.",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_24",
-      "en": "I don't understand this lonely monks. I love company too much to become one. Hehehe!",
-      "translated": "Nie rozumiem tych samotnych mnichów. Za bardzo lubię towarzystwo, by sama zostać jednym z nich. Hehehe!",
-      "source": "simple"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_25",
-      "en": "Oh, isn't he funny? I could listen to him the whole day.",
-      "translated": "Och, czy on nie jest zabawny? Mogłabym go słuchać cały dzień.",
-      "source": "simple"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_26",
-      "en": "As far as I know, he is working in the castle.",
-      "translated": "O ile wiem, pracuje w zamku.",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_27",
-      "en": "I am a little shy and so don't hear many rumors.",
-      "translated": "Jestem trochę nieśmiała, więc nie słyszę wielu plotek.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_28",
-      "en": "Oh, you little devil, stop talking like that! <blush>",
-      "translated": "Och, ty mały diabełku, przestań tak mówić! <blush>",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_29",
-      "en": "I know only little about weapons. Can you tell me something about them, please?",
-      "translated": "Wiem niewiele o broni. Czy możesz opowiedzieć mi coś o niej, proszę?",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.guard_saros.say_3",
-      "en": "Oh, I just remember I have some work to do, sorry. Bye!",
-      "translated": "Och, właśnie sobie przypomniałam, że mam trochę pracy. Przepraszam. Pa!",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

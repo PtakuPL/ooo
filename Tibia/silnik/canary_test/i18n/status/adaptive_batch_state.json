@@ -1,11 +1,11 @@
 {
   "batch_size": 5,
   "gt_batch_size": 5,
-  "guard_fail_rate": 5.66,
-  "total_translated": 483,
-  "total_guard_fail": 29,
-  "total_attempts": 512,
+  "guard_fail_rate": 34.41,
+  "total_translated": 486,
+  "total_guard_fail": 255,
+  "total_attempts": 741,
   "window": 10,
   "entries_used": 10,
-  "reason": "stable_fail_rate=5.7%"
+  "reason": "decrease_high_fail_rate=34.4%"
 }

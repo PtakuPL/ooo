@@ -12686,5 +12686,197 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:36:00.358361Z"
+  },
+  "monster.spirit_of_water.voice_1": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.647210Z"
+  },
+  "monster.the_plasmother.voice_1": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.659817Z"
+  },
+  "monster.the_plasmother.voice_2": {
+    "src_hash": "d6f5b28da8070b5ba23b924822cfd2d1",
+    "text": "Блаб Блаб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.660511Z"
+  },
+  "monster.red_butterfly.name": {
+    "src_hash": "29ecfc45c7bd93061222062f86d4161d",
+    "text": "Бабочка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.802512Z"
+  },
+  "monster.blue_butterfly.name": {
+    "src_hash": "29ecfc45c7bd93061222062f86d4161d",
+    "text": "Бабочка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.803464Z"
+  },
+  "monster.pink_butterfly.name": {
+    "src_hash": "29ecfc45c7bd93061222062f86d4161d",
+    "text": "Бабочка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.804482Z"
+  },
+  "monster.purple_butterfly.name": {
+    "src_hash": "29ecfc45c7bd93061222062f86d4161d",
+    "text": "Бабочка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.804968Z"
+  },
+  "monster.yellow_butterfly.name": {
+    "src_hash": "29ecfc45c7bd93061222062f86d4161d",
+    "text": "Бабочка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:22.805655Z"
+  },
+  "monster.slime.voice_2": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:23.416889Z"
+  },
+  "monster.defiler.voice_3": {
+    "src_hash": "6274a646e1ca96d853c3106ea7e7dfa7",
+    "text": "Блабб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:23.417407Z"
+  },
+  "monster.defiler.voice_4": {
+    "src_hash": "d6f5b28da8070b5ba23b924822cfd2d1",
+    "text": "Блаб Блаб",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:23.417859Z"
+  },
+  "monster.shaper_matriarch.name": {
+    "src_hash": "34f0932cbc7ee2b9fd9fa74af7bed34a",
+    "text": "Создатель-матриарх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:37.022401Z"
+  },
+  "monster.shaper_matriarch.desc": {
+    "src_hash": "d7917e07846a8935390b71978375ebff",
+    "text": "матриарх-формирователь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:37.023880Z"
+  },
+  "monster.shaper_matriarch.voice_1": {
+    "src_hash": "bcdd53fbe7ac81a842a75e3ed4445edf",
+    "text": "Тар Марра Зик Тазз!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:37.025086Z"
+  },
+  "monster.lost_thrower.name": {
+    "src_hash": "fb304335c2624d8801333b68d9096b86",
+    "text": "Потерянный метатель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:37.026379Z"
+  },
+  "monster.lost_thrower.desc": {
+    "src_hash": "af89bc1426b3a635fdced1d0cc2c0bb3",
+    "text": "потерянный метатель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:37.027374Z"
+  },
+  "monster.minotaur_bruiser.name": {
+    "src_hash": "b61c791d7ed0e327d33ba5ce20bb7f4a",
+    "text": "Минотавр Громила",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:39.865370Z"
+  },
+  "monster.minotaur_bruiser.desc": {
+    "src_hash": "0d1f326db3467763972fa1fe6cb2fad0",
+    "text": "Минотавр-громила",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:39.865777Z"
+  },
+  "monster.minotaur_guard.name": {
+    "src_hash": "2af164b2a2fe0bda0daba8562a64f863",
+    "text": "Минотавр-страж",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:39.866242Z"
+  },
+  "monster.minotaur_guard.desc": {
+    "src_hash": "20aec1cd1af8cd17c4cb7d5490d47e42",
+    "text": "минотавр-охранник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:39.866617Z"
+  },
+  "monster.minotaur_guard.voice_1": {
+    "src_hash": "cfb7d1fd9c9c65bf1ec96be95047a2a7",
+    "text": "Киррл Каррл!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:39.866951Z"
+  },
+  "monster.minotaur_guard.voice_2": {
+    "src_hash": "5196758a98a505aa3f8d2d5e5e22e657",
+    "text": "Каплар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:42.176445Z"
+  },
+  "monster.goblin_leader.name": {
+    "src_hash": "e0edaf18f948c97435bf3a785c829731",
+    "text": "Лидер гоблинов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:42.176970Z"
+  },
+  "monster.goblin_leader.desc": {
+    "src_hash": "bb871000e29e1848126d7eb9c9c9275c",
+    "text": "лидер гоблинов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:42.177382Z"
   }
 }

@@ -12294,5 +12294,117 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:36:07.780739Z"
+  },
+  "monster.stone_devourer.name": {
+    "src_hash": "ba753450181dcc2e64fa71aa732fbe47",
+    "text": "Devorator de pietre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:09.126008Z"
+  },
+  "monster.stone_devourer.desc": {
+    "src_hash": "67b20c1e3cfa27aa81174a6cf01ade37",
+    "text": "un devorator de pietre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:11.920904Z"
+  },
+  "monster.stone_devourer.voice_1": {
+    "src_hash": "ed6860fb140274392e60cd99480ab0cd",
+    "text": "Bubuit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:11.921210Z"
+  },
+  "monster.worker_golem.name": {
+    "src_hash": "e520ab6c2f92be0cdfb7afae310864e2",
+    "text": "Golem muncitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:11.921562Z"
+  },
+  "monster.worker_golem.desc": {
+    "src_hash": "42bb3cae5febb4ca65151a546b483a18",
+    "text": "un golem muncitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:11.921878Z"
+  },
+  "monster.worker_golem.voice_1": {
+    "src_hash": "78ad435826d0dc80d4b62e23f58622a9",
+    "text": "ALARMA INTRUS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:11.922221Z"
+  },
+  "monster.worker_golem.voice_2": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "klonk klonk klonk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:14.848694Z"
+  },
+  "monster.worker_golem.voice_4": {
+    "src_hash": "0da72fa7c04d6470e238bfc95d61fb2c",
+    "text": "Astept comenzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:14.849743Z"
+  },
+  "monster.worker_golem.voice_5": {
+    "src_hash": "5a61c7bcdd5a6361509e65cf8e9229bc",
+    "text": "Obiectiv secret complet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:14.850279Z"
+  },
+  "monster.war_golem.name": {
+    "src_hash": "bdfb814b52d7db5ac1573006373326f4",
+    "text": "Golem de război",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:14.850602Z"
+  },
+  "monster.war_golem.desc": {
+    "src_hash": "4e7b598a9f0b3a9f6a8f527633c791ca",
+    "text": "un golem de război",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:18.142228Z"
+  },
+  "monster.war_golem.voice_1": {
+    "src_hash": "7331ae8f00a9bc86cc0df66880c4ab8c",
+    "text": "Azerus barada nikto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:18.143058Z"
+  },
+  "monster.war_golem.voice_2": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:18.143730Z"
+  },
+  "monster.war_golem.voice_3": {
+    "src_hash": "033283400e090cb122e21051ec796f3b",
+    "text": "Inamic implicat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:39:18.144070Z"
   }
 }

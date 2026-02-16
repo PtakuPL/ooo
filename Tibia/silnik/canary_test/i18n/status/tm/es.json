@@ -142390,5 +142390,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:33:59.540021Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Oh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:38:13.985767Z"
   }
 }

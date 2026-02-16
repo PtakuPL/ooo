@@ -162302,5 +162302,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:18:34.267790Z"
+  },
+  "item.10433.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мртви терамит",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.728351Z"
+  },
+  "item.11925.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.740490Z"
+  },
+  "item.11942.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.740709Z"
+  },
+  "item.12516.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.747498Z"
+  },
+  "item.19099.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.787050Z"
+  },
+  "item.231.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.835387Z"
+  },
+  "item.24437.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.846459Z"
+  },
+  "item.28654.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:24.886254Z"
+  },
+  "item.5730.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:25.049671Z"
+  },
+  "item.614.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:25.062439Z"
+  },
+  "item.7738.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:25.079861Z"
+  },
+  "item.8770.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:25.094217Z"
+  },
+  "item.9174.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "песак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:25.105570Z"
+  },
+  "item.10438.name": {
+    "src_hash": "16d1b0990d1ea1f0119381f3a4828356",
+    "text": "хаљину чаролије",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:29.376509Z"
+  },
+  "item.10439.name": {
+    "src_hash": "d0077c229b114793d62729c673aac609",
+    "text": "Заоан огртач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:29.376987Z"
+  },
+  "item.10440.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "мртви пешчар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:29.377298Z"
+  },
+  "item.10441.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "мртви пешчар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:29.377550Z"
+  },
+  "item.10442.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "мртви пешчар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:29.377789Z"
+  },
+  "item.10443.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "мртви пешчар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:34.620826Z"
+  },
+  "item.10444.name": {
+    "src_hash": "81198ad0f1cd58f53df6b4dfe6997971",
+    "text": "врх штапића змајевог свештеника",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:34.621220Z"
+  },
+  "item.10445.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "убијеног страшног змаја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:34.621536Z"
+  },
+  "item.10446.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "убијеног страшног змаја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:34.621816Z"
+  },
+  "item.10447.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "убијеног страшног змаја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:34.622110Z"
+  },
+  "item.10448.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "убијеног страшног змаја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:41.403703Z"
+  },
+  "item.10449.name": {
+    "src_hash": "22144a797e243675e4cc54876b6c57c2",
+    "text": "страшна змајева глава",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:41.403990Z"
+  },
+  "item.10450.name": {
+    "src_hash": "7249331cf791c331edf1f26d29b2d8c3",
+    "text": "неумрло срце",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:41.404217Z"
+  },
+  "item.10451.name": {
+    "src_hash": "2ddee7bbac20d21e171770ff12d78c71",
+    "text": "шешир од жада",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:41.404501Z"
+  },
+  "item.10452.name": {
+    "src_hash": "3489389a8b235b82417495b5502cc1f8",
+    "text": "шкољка од терамита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:41.404790Z"
+  },
+  "item.10453.name": {
+    "src_hash": "bfd2d0e703686e5b847b792f3965af5f",
+    "text": "јаја од терамита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:49.243093Z"
+  },
+  "item.10454.name": {
+    "src_hash": "c080e1743a7cb74bcb29daa20e48a5e3",
+    "text": "терамитне ноге",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:49.243375Z"
+  },
+  "item.10455.name": {
+    "src_hash": "05ee341836be8d907939591b79d9d7d3",
+    "text": "шкољка бубе ланцер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:49.243666Z"
+  },
+  "item.10456.name": {
+    "src_hash": "dbfb2b19f62a7a58162f63d78fb9b1fd",
+    "text": "шкољка пескарења",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:49.243936Z"
+  },
+  "item.10457.name": {
+    "src_hash": "426da76118cd7c279f4367519cca1254",
+    "text": "огрлица од буба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:49.244193Z"
+  },
+  "item.10458.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "мртва буба ланцер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:53.753052Z"
+  },
+  "item.10459.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "мртва буба ланцер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:53.753326Z"
+  },
+  "item.10460.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "мртва буба ланцер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:53.753584Z"
+  },
+  "item.10461.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "мртва буба ланцер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:53.753836Z"
+  },
+  "item.10476.desc": {
+    "src_hash": "93cbc952cf02920106dd8b2154f775e2",
+    "text": "Прича се да ће вам донети срећу! Срећа спонзорисана од ТибиаЛоттери",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:21:53.754594Z"
+  },
+  "item.10476.name": {
+    "src_hash": "40b25f4a6a4f4fa20e43c63414523461",
+    "text": "амајлија од детелине среће",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:00.567951Z"
+  },
+  "item.10477.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "Пехар који је исковао змај Кхак који представља сво знање и мудрост ТибијеВенецуеле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:00.568609Z"
+  },
+  "item.10477.name": {
+    "src_hash": "4f318e0a54f6ab67b88c1bb1bc772073",
+    "text": "змајев пехар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:00.568871Z"
+  },
+  "item.10480.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "прљави под",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:00.569089Z"
+  },
+  "item.10494.name": {
+    "src_hash": "de9ed21792aa6abad10d5e451ff7dbe6",
+    "text": "мутна вода",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:00.569302Z"
+  },
+  "item.105.name": {
+    "src_hash": "7f7eeecbd1e8f8c87f8cc7d1d94393d9",
+    "text": "отровно поље",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:05.704770Z"
+  },
+  "item.10507.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "лампа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:05.705028Z"
+  },
+  "item.10592.name": {
+    "src_hash": "1f3c9ba53e23b28a905054f9d45d98dc",
+    "text": "сумпор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:05.705240Z"
+  },
+  "item.106.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "трава",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:05.705436Z"
+  },
+  "item.10605.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "блато",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:05.705626Z"
+  },
+  "item.1066.name": {
+    "src_hash": "f6ebf0b92fc41a2a572d58163b3ec3f8",
+    "text": "мрља од блата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:08.814476Z"
+  },
+  "item.1067.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "замка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:22:08.815118Z"
   }
 }

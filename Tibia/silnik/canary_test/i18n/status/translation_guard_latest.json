@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T21:20:08.701323Z",
-  "cycle": 52,
-  "language": "es",
-  "json_file": "server.json",
+  "timestamp": "2026-02-16T21:20:52.874306Z",
+  "cycle": 53,
+  "language": "it",
+  "json_file": "items.json",
   "translated": 50,
   "placeholders": 0,
   "guard_fail": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 627
+  "strict_skipped_done": 385
 }

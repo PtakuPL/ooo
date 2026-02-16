@@ -396,6 +396,46 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
 }
 
 /**
+ * @brief Flush deferred atlas uploads on the GL thread.
+ *
+ * Iterates over all atlases and schedules GPU texture creation/upload via DrawPool actions.
+ * Must be called during the render pass (GL context active) — both from drawText() and
+ * from CachedText::drawTTF() to ensure atlas textures are available.
+ */
+void TTFFont::flushPendingUploads() {
+  for (auto& atlas : m_atlases) {
+    if (!atlas.texture || atlas.pendingUploads.empty())
+      continue;
+
+    auto texture = atlas.texture;
+    auto atlasImage = atlas.image;
+    auto uploads = std::move(atlas.pendingUploads);
+    atlas.pendingUploads.clear();
+
+    g_drawPool.addAction([texture, atlasImage, uploads = std::move(uploads)]() mutable {
+      if (!texture)
+        return;
+
+      const bool wasEmpty = texture->isEmpty();
+      if (wasEmpty && atlasImage) {
+        texture->updateImage(atlasImage);
+        texture->create();
+        return;
+      }
+
+      if (texture->isEmpty() && atlasImage) {
+        texture->updateImage(atlasImage);
+        texture->create();
+      }
+
+      for (const auto& u : uploads) {
+        texture->uploadSubPixels(u.dest, u.image);
+      }
+    });
+  }
+}
+
+/**
  * @brief Renders shaped Unicode text to the screen using cached glyph atlases.
  *
  * Shapes the provided UTF-32 text into glyph quads, groups quads into batches by atlas
@@ -413,6 +453,9 @@ void TTFFont::drawText(const std::u32string& text32,
              const ShapeParams& params,
              const Color& color) {
   if (!m_hbFont || text32.empty()) return;
+
+  // Flush any deferred atlas uploads before drawing
+  flushPendingUploads();
 
   std::vector<GlyphQuad> quads;
   const Rect bounds = buildQuads(text32, params, quads);
@@ -448,13 +491,7 @@ void TTFFont::drawText(const std::u32string& text32,
 
   for (const auto& batch : batches) {
     if (batch.coords && batch.coords->getVertexCount() > 0) {
-      if (!batch.texture || batch.texture->getId() == 0) {
-        g_logger.warning(fmt::format("TTFFont::drawText: skipping batch with {} vertices — texture invalid (ptr={}, id={})",
-          batch.coords->getVertexCount(),
-          batch.texture ? "true" : "false",
-          batch.texture ? batch.texture->getId() : 0));
-        continue;
-      }
+      g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
       g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
     }
   }
@@ -515,7 +552,7 @@ Rect TTFFont::buildQuads(const std::u32string& text32,
   float minX = 0.f;
   float minY = 0.f;
   float maxX = 0.f;
-  float maxY = static_cast<float>(m_pixelSize);
+  float maxY = static_cast<float>(m_lineHeight);
 
   for (const auto& sg : shaped) {
     const AtlasGlyph* ag = cacheGlyph(sg.glyphIndex, sg.codepoint);
@@ -552,7 +589,7 @@ Rect TTFFont::buildQuads(const std::u32string& text32,
     minX = 0.f;
     minY = 0.f;
     maxX = penX;
-    maxY = static_cast<float>(m_pixelSize);
+    maxY = static_cast<float>(m_lineHeight);
   } else {
     maxX = std::max<float>(maxX, penX);
   }

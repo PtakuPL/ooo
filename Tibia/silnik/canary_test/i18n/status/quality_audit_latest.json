@@ -1,115 +1,16 @@
 {
-  "timestamp": "2026-02-16T21:32:09.687031Z",
+  "timestamp": "2026-02-16T21:33:32.717597Z",
   "checked_entries": 100,
-  "issues_found": 21,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 13,
-    "artifact_token": 11,
-    "suspicious_log_high": 143,
-    "suspicious_log_critical": 57,
-    "suspicious_rejected_high": 84,
-    "suspicious_rejected_critical": 116
+    "identical_to_en_exempt": 11,
+    "artifact_token": 7,
+    "suspicious_log_high": 110,
+    "suspicious_log_critical": 90,
+    "suspicious_rejected_high": 83,
+    "suspicious_rejected_critical": 117
   },
   "issues": [
-    {
-      "key": "monster.feroxa2.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "monster.ocyakao.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.ocyakao.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.dracola.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DOOMED!",
-      "translated": "¡ESTÁIS TODOS CONDENADOS!"
-    },
-    {
-      "key": "monster.ferumbras_mortal_shell.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I WILL MAKE ALL OF YOU SUFFER!",
-      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_8",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
-      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -161,5 +62,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

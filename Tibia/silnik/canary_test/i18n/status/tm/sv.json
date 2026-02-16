@@ -11150,5 +11150,365 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:25:55.810372Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L72.232": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.961944Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L56.1263": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.963299Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L65.1264": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.964458Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L72.1265": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.965665Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L56.541": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.966854Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L65.542": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.968324Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L72.543": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.969459Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L56.996": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.971196Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L65.997": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.972696Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L72.998": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.975501Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L56.934": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.978649Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L65.935": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.980362Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L72.936": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.981796Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L56.1560": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.984036Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L65.1561": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.985482Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L72.1562": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:04.986899Z"
+  },
+  "data.otservbr.global.npc.canary.L124.458": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ja, hej då och kom inte igen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:05.012219Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L83.37": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Intressant. En människa som kan vargarnas språk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:07.026881Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L84.38": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:07.027229Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L85.39": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:07.027541Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L138.261": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Vänta! Lämna inte! Jag vill berätta om mina surrealistiska siffror.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:07.028173Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L139.262": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Hejdå! Glöm inte matematikens hemligheter.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:12.590032Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L140.263": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Va? Vad? Jag kan se! Wow! En icke-mino. Har de {capture} dig också?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:12.590720Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L53.44": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Ähhhh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:12.591000Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L51.150": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:12.591502Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L53.151": {
+    "src_hash": "2fc7a525e31eda3303400c01ce672cf3",
+    "text": "Hälsningar, {wayfarer}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:17.027446Z"
+  },
+  "data.otservbr.global.npc.a.strange.chalice.L117.1623": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Hej? Vad menar du 'hi' - kan du inte se att jag är en... Jag måste sänka rösten. Har det fallit dig in att denna 'chalice' inte vill bli störd?! Låt mig vara!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:17.028529Z"
+  },
+  "data.otservbr.global.npc.a.swan.L95.88": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Jag hälsar dig, dödlig varelse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:17.029025Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L227.68": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Hum Hmm! Välkommen lil' |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:17.029494Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L228.69": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Farväl lil' one.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:17.030269Z"
+  },
+  "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Jag hälsar dig, människa. Det här är en tid av nöd, mer än någonsin är vi i behov av vårdnadshavare för att skydda oss och vår värld.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:21.312749Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Vad är det här? En optiskt utmanad enhet som heter |PLAYERNAME|. Vad fascinerande!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:21.313650Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Vänta där. Jag äter dig efter att ha skrivit ner vad jag fick reda på.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:21.314475Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Vänta där. Jag äter dig efter att ha skrivit ner vad jag fick reda på.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:21.315215Z"
+  },
+  "data.otservbr.global.npc.ahmet.L182.407": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Sörjas pilgrim i kött. Jag säljer allmänna varor. Fråga mig bara om en {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:21.316008Z"
+  },
+  "data.otservbr.global.npc.ajax.L58.355": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Du tillbaka. Du vet, du har rätt. Bror har rätt. Fist inte alltid bra. Säg det till honom!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:25.484826Z"
+  },
+  "data.otservbr.global.npc.ajax.L61.356": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Vad gör du i mitt ställe?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:25.485779Z"
+  },
+  "data.otservbr.global.npc.al.dee.L167.597": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Hejdå, hejdå |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:25.486770Z"
+  },
+  "data.otservbr.global.npc.al.dee.L168.598": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Ta en titt i handelsfönstret till vänster.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:25.487334Z"
+  },
+  "data.otservbr.global.npc.albinius.L267.1035": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Hälsningar, pilgrim. Välkommen till hoppets salar. Vi är innehavare av denna {temple} och välkomnar alla som är villiga att bidra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:25.488369Z"
+  },
+  "data.otservbr.global.npc.albinius.L268.1036": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Åh... farväl, barn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:28.459187Z"
+  },
+  "data.otservbr.global.npc.alesar.L206.1591": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Slutligen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:28.459579Z"
+  },
+  "data.otservbr.global.npc.alesar.L207.1592": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Slutligen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:28.459858Z"
+  },
+  "data.otservbr.global.npc.alesar.L208.1593": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:28.460375Z"
+  },
+  "data.otservbr.global.npc.alexander.L172.1568": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:33:30.345029Z"
   }
 }

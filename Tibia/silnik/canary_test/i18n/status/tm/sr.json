@@ -163102,5 +163102,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:24:27.642176Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L228.69": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Збогом мали.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:37.998673Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L30.2316": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Без икаквих тачака оријентације никада нећете наћи пут назад. Покушајте да пронађете начин да побољшате своју навигацију.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.192415Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.library.area.movements.mazzinor.L13.2290": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Остаци вас привремено депорализују.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.193198Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L16.2302": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Закачиш косу за прст од ебановине. Праменови треба да буду одговарајући да служе као жице.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.194014Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L27.2303": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Била једном девојачка вашара, тамних очију и свилене косе. Умрла је далеко од куће. Нема гроба, нема бдења, нема жалости.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.195083Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L31.2304": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Пустите Паунову баладу и портал се отвара.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.195696Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L9.2301": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Причврстите дрво од ебановине на лобању. Ово би требало да испуни захтеве прста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.196683Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Немате довољан ниво.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.197226Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L19.2311": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.197849Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.fragrance.L4.2306": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Хмммм, какав заносни мирис!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.198399Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L111.2308": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Још не можете користити овај портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.199134Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L142.2309": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Открили сте стари писаћи сто који садржи древну мапу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.199818Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L92.2307": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Предуго сте трајали, битка је завршена.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.200373Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L47.2299": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.200976Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L65.2300": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Још не можете користити овај чамац.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.202578Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L17.2297": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Још једном помешаш креду са капљицом крви и мало воде и обновиш симбол на поду...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.204807Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L21.2298": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Овај улаз можете користити само током ноћи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.205971Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.chests.L22.2294": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.206824Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.doors.L22.2296": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.208041Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.sacrifice.foods.L224.2295": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Завршили сте ритуал нуђења хране!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.209357Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.teleportTo.L127.2292": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Морате чекати. Неко сада изазива Фуриоус Сцорпион-а.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.210574Z"
+  },
+  "data.otservbr.global.scripts.quests.the.travelling.trader.actions.outlaw.camp.door.L9.2064": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.212413Z"
+  },
+  "game.trade.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.216768Z"
+  },
+  "server.game.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:38.218576Z"
+  },
+  "data.otservbr.global.npc.a.fading.memory.L53.1295": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Ох...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:44.840487Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L53.44": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Ухххх...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:44.840808Z"
+  },
+  "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Поздрављам те човече. Ово је време невоље, више него икада потребни су нам чувари који ће заштитити нас и наш свет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:49.132368Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Сачекај тамо. Појешћу те након што запишем шта сам сазнао.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:49.133152Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Сачекај тамо. Појешћу те након што запишем шта сам сазнао.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:49.133814Z"
+  },
+  "data.otservbr.global.npc.ajax.L58.355": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Вратио си се. Знаш, у праву си. Брат је у праву. Песница није увек добра. Реци му то!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:55.524760Z"
+  },
+  "data.otservbr.global.npc.ajax.L61.356": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Шта да радиш на мом месту?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:55.525319Z"
+  },
+  "data.otservbr.global.npc.al.dee.L168.598": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Погледајте у трговински прозор са ваше леве стране.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:55.525966Z"
+  },
+  "data.otservbr.global.npc.albinius.L268.1036": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Ох... збогом дете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:58.512982Z"
+  },
+  "data.otservbr.global.npc.alesar.L206.1591": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Коначно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:58.513340Z"
+  },
+  "data.otservbr.global.npc.alesar.L207.1592": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Коначно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:58.513664Z"
+  },
+  "data.otservbr.global.npc.alesar.L208.1593": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "На услузи, само прегледајте моју робу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:58.514879Z"
   }
 }

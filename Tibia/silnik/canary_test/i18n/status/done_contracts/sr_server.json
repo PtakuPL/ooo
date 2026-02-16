@@ -3,9 +3,9 @@
   "lang": "sr",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
-      "guard_pipe": 0
+      "ok": false,
+      "guard_placeholder": 5,
+      "guard_pipe": 3
     },
     "guard_command_below_threshold": {
       "ok": true,
@@ -23,6 +23,6 @@
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-16T21:18:34.787716Z"
+  "is_done": false,
+  "timestamp": "2026-02-16T21:32:58.972063Z"
 }

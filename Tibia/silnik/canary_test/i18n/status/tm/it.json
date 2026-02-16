@@ -18638,5 +18638,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:25:17.026541Z"
+  },
+  "data.otservbr.global.npc.lavirias.L57.36": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Arrivederci!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.548301Z"
+  },
+  "data.otservbr.global.npc.lea.L61.1368": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Saluti, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.548822Z"
+  },
+  "data.otservbr.global.npc.llathriel.L53.1322": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Arrivederci!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.551051Z"
+  },
+  "data.otservbr.global.npc.lokur.L111.617": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.551511Z"
+  },
+  "data.otservbr.global.npc.lokur.L112.618": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.552074Z"
+  },
+  "data.otservbr.global.npc.lorietta.L150.1079": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.552791Z"
+  },
+  "data.otservbr.global.npc.lubo.L157.1433": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.553906Z"
+  },
+  "data.otservbr.global.npc.lubo.L158.1434": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.554647Z"
+  },
+  "data.otservbr.global.npc.lugri.L204.9": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.555097Z"
+  },
+  "data.otservbr.global.npc.lugri.L205.10": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.556443Z"
+  },
+  "data.otservbr.global.npc.maealil.L172.1603": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.558588Z"
+  },
+  "data.otservbr.global.npc.maris.L93.980": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.559952Z"
+  },
+  "data.otservbr.global.npc.maris.fenrock.L74.113": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.560601Z"
+  },
+  "data.otservbr.global.npc.maris.mistrock.L91.669": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.561263Z"
+  },
+  "data.otservbr.global.npc.maryza.L108.396": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Arrivederci!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.562269Z"
+  },
+  "data.otservbr.global.npc.mazarius.L190.563": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.562733Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L62.622": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Certo.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.563623Z"
+  },
+  "data.otservbr.global.npc.melian.L95.777": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Arrivederci!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.564439Z"
+  },
+  "data.otservbr.global.npc.melian.L96.778": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Arrivederci!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.565021Z"
+  },
+  "data.otservbr.global.npc.miles.the.guard.L84.197": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.565747Z"
+  },
+  "data.otservbr.global.npc.miles.the.guard.L85.198": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.566447Z"
+  },
+  "data.otservbr.global.npc.miles.the.guard.L86.199": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.566908Z"
+  },
+  "data.otservbr.global.npc.moe.L116.327": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.568113Z"
+  },
+  "data.otservbr.global.npc.morgan.L156.480": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.569002Z"
+  },
+  "data.otservbr.global.npc.muriel.L160.1306": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.569841Z"
+  },
+  "data.otservbr.global.npc.muriel.L161.1307": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.570367Z"
+  },
+  "data.otservbr.global.npc.murim.L81.186": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.571078Z"
+  },
+  "data.otservbr.global.npc.murim.L82.187": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.571502Z"
+  },
+  "data.otservbr.global.npc.muzir.L77.226": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.572002Z"
+  },
+  "data.otservbr.global.npc.muzir.L78.227": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.572372Z"
+  },
+  "data.otservbr.global.npc.myra.L321.1420": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.573086Z"
+  },
+  "data.otservbr.global.npc.myzzi.L101.66": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.573525Z"
+  },
+  "data.otservbr.global.npc.myzzi.L102.67": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.574194Z"
+  },
+  "data.otservbr.global.npc.naji.L77.1425": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.575109Z"
+  },
+  "data.otservbr.global.npc.naji.L78.1426": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.575470Z"
+  },
+  "data.otservbr.global.npc.narsai.L118.892": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.575839Z"
+  },
+  "data.otservbr.global.npc.narsai.L58.889": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:32:31.576512Z"
   }
 }

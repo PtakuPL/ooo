@@ -27094,5 +27094,325 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T23:40:42.151324Z"
+  },
+  "spell.chizzoron_the_distorter_paralyze.name": {
+    "src_hash": "af49bf252534550907d97766fd468b44",
+    "text": "chizzoron paralizza il distorsore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:14.919428Z"
+  },
+  "spell.aggresive_lava_wave.name": {
+    "src_hash": "fc5f2e17f06f08c4f8c85e3f66efc4f5",
+    "text": "ondata di lava aggressiva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:14.919686Z"
+  },
+  "spell.zulazza_the_corruptor_skill_reducer.name": {
+    "src_hash": "546ae835b39cd2bf56630b8ebe779559",
+    "text": "zulazza il riduttore di abilità corruttore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:14.920007Z"
+  },
+  "spell.terofar_curse.name": {
+    "src_hash": "6389db55d88c913fc49a959a272edbeb",
+    "text": "Maledizione di Terofar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:14.920222Z"
+  },
+  "spell.raging_mage_skill_reducer_1.name": {
+    "src_hash": "56401bb1ab93018848c0de7d252cca02",
+    "text": "riduttore di abilità del mago furioso 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:18.512968Z"
+  },
+  "spell.boulder_ring.name": {
+    "src_hash": "aadc298ce9732b12ee763c722cf75f9c",
+    "text": "anello del masso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:18.513193Z"
+  },
+  "spell.the_dark_dancer_summon.name": {
+    "src_hash": "c1d90021e67f6dfddbc092cb463c0704",
+    "text": "l'evocazione del Danzatore Oscuro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:18.513459Z"
+  },
+  "spell.zushuka_heal.name": {
+    "src_hash": "d4eb5c8db3451ba2c986bb54cf9acd52",
+    "text": "zushuka guarisce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:18.513742Z"
+  },
+  "spell.ice_barrage.name": {
+    "src_hash": "1d60f3b1dde1dc296ac9c47328e769c9",
+    "text": "sbarramento di ghiaccio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:21.732583Z"
+  },
+  "spell.the_blightfather_summon.name": {
+    "src_hash": "f257522b9446429fb94c7f149eb96d0b",
+    "text": "l'evocazione del padre corrotto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:21.732874Z"
+  },
+  "spell.extended_energy_chain.name": {
+    "src_hash": "9d70431ae04da017cdfc32ade0c9487f",
+    "text": "catena energetica estesa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:21.733111Z"
+  },
+  "spell.time_guardiann.name": {
+    "src_hash": "82b056bca2cceacbc0a9c4231c285f6c",
+    "text": "guardiano del tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:21.733318Z"
+  },
+  "spell.energy_barrage.name": {
+    "src_hash": "230a96efebea040b8627053d9bfd4bd8",
+    "text": "sbarramento energetico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:21.733520Z"
+  },
+  "spell.brimstone_bug_wave.name": {
+    "src_hash": "c193de5508c5c027cae14d4e7987facb",
+    "text": "onda di insetti di zolfo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:24.558793Z"
+  },
+  "spell.prince_drazzak_summon.name": {
+    "src_hash": "8058f39ac3b0e816304e9185d34f0dd1",
+    "text": "Evocazione del Principe Drazzak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:24.559153Z"
+  },
+  "spell.frozen_minion_wave.name": {
+    "src_hash": "c60224fd4f7a1e3b44ecae75d73d5095",
+    "text": "onda di servitori congelati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:24.559405Z"
+  },
+  "spell.terofar_skill_reducer_2.name": {
+    "src_hash": "2e4b4ad63a6d051ec670c89a32b9cb48",
+    "text": "riduttore di abilità terofar 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:24.559688Z"
+  },
+  "spell.the_welter_heal2.name": {
+    "src_hash": "e0c4485048ce4ee7d45151b5defdb5b5",
+    "text": "il welter guarisce2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:24.559912Z"
+  },
+  "spell.blast_ring.name": {
+    "src_hash": "b546bbdf986ac2d964dccedfe2ef804c",
+    "text": "anello esplosivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:27.368011Z"
+  },
+  "spell.the_welter_summon2.name": {
+    "src_hash": "b575b682ca12598061ae498f55604ff5",
+    "text": "l'evocazione del welter2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:27.368272Z"
+  },
+  "spell.worm_priestess_paralyze.name": {
+    "src_hash": "15fa765c69e9aec356a6ccb56d8ae7ef",
+    "text": "la sacerdotessa del verme paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:27.368542Z"
+  },
+  "spell.coldheart_paralyze.name": {
+    "src_hash": "318a3ce82b944a7094fc41c729aa0311",
+    "text": "il cuore freddo paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:27.368782Z"
+  },
+  "spell.doctor_marrow_explosion.name": {
+    "src_hash": "5c8fc7ad4b748509ef534520c8067b48",
+    "text": "Dottor Marrow Explosion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:27.369023Z"
+  },
+  "spell.hunger_summon.name": {
+    "src_hash": "c21e3faa61efc7c1b0ce8d02e47002bf",
+    "text": "convocazione della fame",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:29.952097Z"
+  },
+  "spell.hive_pore_summon.name": {
+    "src_hash": "32868349ad85025642cc1b7934868fa2",
+    "text": "evocazione del poro dell'alveare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:29.952537Z"
+  },
+  "spell.spawn_of_the_welter_heal.name": {
+    "src_hash": "b29b0635e3f3f822c55ad4425f028345",
+    "text": "la progenie del welter guarisce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:29.952807Z"
+  },
+  "spell.arkhothep_summon.name": {
+    "src_hash": "95a6a0ff99c0f39dd5f2cc88a0a88898",
+    "text": "convocazione di archhotep",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:32.664755Z"
+  },
+  "spell.dread_intruder_wave.name": {
+    "src_hash": "128174aa54c06e2fcd2a1058fa315a40",
+    "text": "terribile ondata di intrusi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:32.665029Z"
+  },
+  "spell.glooth_bomb_walkthrough.name": {
+    "src_hash": "0294ca41460340fd1c4c9acc2e07df94",
+    "text": "procedura dettagliata della bomba cupa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:32.665291Z"
+  },
+  "spell.deathstrike_paralyze.name": {
+    "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
+    "text": "il colpo mortale paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:32.665534Z"
+  },
+  "spell.anomaly_wave.name": {
+    "src_hash": "8255680566fd850dc8b934f81f7fdeb5",
+    "text": "onda anomala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:32.665725Z"
+  },
+  "spell.werecrocodile_fire_ring.name": {
+    "src_hash": "f25043479e8b3749a6ba70f30422d299",
+    "text": "anello di fuoco del coccodrillo mannaro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:35.260217Z"
+  },
+  "spell.orshabaal_skill_reducer.name": {
+    "src_hash": "b9f12ca14fb77c18211037d3a0e27dbf",
+    "text": "riduttore di abilità orshabaal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:35.260515Z"
+  },
+  "spell.sir_valorcrest_summon.name": {
+    "src_hash": "957e35ed048ddd87721f97047a0b325f",
+    "text": "convocazione di Sir Valorcrest",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:35.260775Z"
+  },
+  "spell.holy_barrage.name": {
+    "src_hash": "c371c369e448d986a545c45319be4a7d",
+    "text": "santo sbarramento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:35.260977Z"
+  },
+  "spell.lancer_beetle_skill_reducer.name": {
+    "src_hash": "42360850f1494b149a0f12e97ef0ef75",
+    "text": "Riduttore di abilità dello scarabeo lanciere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:35.261275Z"
+  },
+  "spell.prince_drazzak_druid.name": {
+    "src_hash": "a6b52c25bcc62f3809e1fb744557fb21",
+    "text": "Principe Drazzak Druid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:39.133556Z"
+  },
+  "spell.ironblight_freeze.name": {
+    "src_hash": "5aabd86f8100db71557b45a228d2a54a",
+    "text": "congelamento del ferro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:39.133815Z"
+  },
+  "spell.lost_berserker_skill_reducer.name": {
+    "src_hash": "56487db3c865ce7f48a648e4297128d5",
+    "text": "riduttore di abilità del berserker perso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:39.134642Z"
+  },
+  "spell.abyssador_poison_wave.name": {
+    "src_hash": "ee4f1338ce79ebe520f864cc3bdce8e6",
+    "text": "onda velenosa dell'abissador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:39.134925Z"
   }
 }

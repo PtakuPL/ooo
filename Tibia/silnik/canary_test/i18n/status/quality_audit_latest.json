@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-16T23:40:44.180559Z",
+  "timestamp": "2026-02-16T23:41:54.631045Z",
   "checked_entries": 100,
-  "issues_found": 36,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en_exempt": 19,
-    "artifact_token": 5,
-    "identical_to_en": 31,
-    "suspicious_log_critical": 64,
-    "suspicious_log_high": 64,
-    "suspicious_log_low": 72,
+    "identical_to_en_exempt": 11,
+    "artifact_token": 7,
+    "suspicious_log_critical": 78,
+    "suspicious_log_low": 4,
+    "suspicious_log_high": 118,
     "suspicious_rejected_critical": 162,
     "suspicious_rejected_high": 38
   },
@@ -49,223 +48,20 @@
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
     },
     {
-      "key": "raid.furyosa.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
-    },
-    {
-      "key": "raid.scarab.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Scarab",
-      "translated": "Scarab"
-    },
-    {
-      "key": "raid.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "raid.morgaroth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "raid.ferumbras.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "raid.quaras.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Quaras",
-      "translated": "Quaras"
-    },
-    {
-      "key": "raid.diblis_the_fair.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
-    },
-    {
-      "key": "raid.dharalion.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "raid.elves.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Elves",
-      "translated": "Elves"
-    },
-    {
-      "key": "raid.example.name",
+      "key": "npc.lardoc_bashsmite.multi_3",
       "lang": "es",
-      "type": "identical_to_en",
-      "en": "Example",
-      "translated": "Example"
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     },
     {
-      "key": "raid.raids.name",
+      "key": "npc.lardoc_bashsmite.multi_9",
       "lang": "es",
-      "type": "identical_to_en",
-      "en": "Raids",
-      "translated": "Raids"
-    },
-    {
-      "key": "raid.undead_darashia.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Undead Darashia",
-      "translated": "Undead Darashia"
-    },
-    {
-      "key": "raid.priestesses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Priestesses",
-      "translated": "Priestesses"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.terrorbirds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.gnarlhounds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "raid.barba_svar.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Svar",
-      "translated": "Barba Svar"
-    },
-    {
-      "key": "raid.ghazbaran.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "raid.barbarian.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barbarian",
-      "translated": "Barbarian"
-    },
-    {
-      "key": "raid.hirintror.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

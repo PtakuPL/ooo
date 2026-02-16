@@ -18678,5 +18678,205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:34:56.208515Z"
+  },
+  "data.otservbr.global.npc.prezil.L143.719": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.076447Z"
+  },
+  "data.otservbr.global.npc.prezil.L144.720": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.077039Z"
+  },
+  "data.otservbr.global.npc.quentin.L180.176": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.078981Z"
+  },
+  "data.otservbr.global.npc.rachel.L180.742": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.080427Z"
+  },
+  "data.otservbr.global.npc.richard.L201.341": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.083300Z"
+  },
+  "data.otservbr.global.npc.romir.L157.1044": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.085563Z"
+  },
+  "data.otservbr.global.npc.saideh.L86.694": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.086469Z"
+  },
+  "data.otservbr.global.npc.shimun.L118.698": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.090486Z"
+  },
+  "data.otservbr.global.npc.shimun.L58.695": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.090843Z"
+  },
+  "data.otservbr.global.npc.shimun.L61.696": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.091219Z"
+  },
+  "data.otservbr.global.npc.shimun.L64.697": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.091700Z"
+  },
+  "data.otservbr.global.npc.shiriel.L145.1149": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.092314Z"
+  },
+  "data.otservbr.global.npc.shirtalis.of.the.summer.court.L84.57": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.093290Z"
+  },
+  "data.otservbr.global.npc.sigurd.L147.1171": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.094655Z"
+  },
+  "data.otservbr.global.npc.sundara.L170.1087": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.096242Z"
+  },
+  "data.otservbr.global.npc.tandros.L160.196": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.097686Z"
+  },
+  "data.otservbr.global.npc.tefrit.L119.537": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.099068Z"
+  },
+  "data.otservbr.global.npc.tefrit.L58.534": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.099424Z"
+  },
+  "data.otservbr.global.npc.tefrit.L61.535": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.099893Z"
+  },
+  "data.otservbr.global.npc.tefrit.L64.536": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.100262Z"
+  },
+  "data.otservbr.global.npc.the.empress.L84.444": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.102503Z"
+  },
+  "data.otservbr.global.npc.the.librarian.L87.395": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.102989Z"
+  },
+  "data.otservbr.global.npc.tigo.L96.858": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.104604Z"
+  },
+  "data.otservbr.global.npc.topsy.L181.925": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.106720Z"
+  },
+  "data.otservbr.global.npc.tyrias.L173.1272": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:03.108351Z"
   }
 }

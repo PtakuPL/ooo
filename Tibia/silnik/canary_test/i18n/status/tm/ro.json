@@ -20542,5 +20542,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:35:44.893495Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L434.2218": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.020730Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L469.2220": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.021382Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L504.2222": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.021893Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L12.2226": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Ai început o escortă, du-ți prizonierul la avanpostul pitic!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.022425Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L24.2227": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Nu găsiți nimic interesant sub dărâmături.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.022981Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.first.L14.1928": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.027907Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.second.L14.1971": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.028437Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L14.1930": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.029085Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L77.2279": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Nu aveți voie să utilizați acest lucru încă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.032223Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L90.2280": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Țineți în față vechea curăță a lui Galthein. Nu se potrivește și mult prea vechi pentru a rezista oricărui atac.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.032846Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L27.2273": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.037857Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Examinați cu atenție sulurile. Acestea sunt comenzi de la Rathleton pentru ambasador. Nici un semn de trădare aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.038612Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L44.2275": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.038993Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L58.2276": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Nu găsiți nimic în casa Ambasadorului. Dacă de fapt este un trădător, a scăpat de orice probă care l-ar putea incrimina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.039657Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L7.2270": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Aici au fost arse documente recent. Doar o parte dintr-un sul se află încă în fața coșului de fum, dar este prea funingine pentru a fi citită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.040350Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L29.2267": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Te simți tremurând și amețit, lumea se întunecă în jurul tău. Apoi vederea ți se limpezește din nou - și ești în altă parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.041118Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L49.2268": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Ai fost mutat în partea dreaptă a creierului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.041559Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L65.2269": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Ai fost mutat în partea stângă a creierului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.041967Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L34.2277": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Tu binecuvântezi statuia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.042318Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L38.2278": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Ai binecuvântat deja această statuie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.042707Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L9.1679": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Îmi pare rău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.043232Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L9.1673": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.043711Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L8.1661": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Îmi pare rău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.044044Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L9.1659": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.044645Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L8.1655": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Îmi pare rău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.045387Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L9.1671": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.045697Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tortoise.L5.1674": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Broască-țestoasă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.046220Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumulo.L8.1663": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.046581Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumuloerro.L8.1653": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.047005Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L11.1801": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.047823Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L8.1800": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Teleportați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.048128Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.notescoordinates.L9.1797": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.048452Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L54.2286": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonda a fost reglată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.049455Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L64.2287": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Dispozitivul scrie: „S-a detectat o structură glooth anormală, posibilă locație de sondare”",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.049998Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L66.2288": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... dispozitivul scrie: 0,0,zero,0,zero care se poate traduce aproximativ prin: NIMIC DE INTERES AICI",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.050696Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L98.2289": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Ați adunat cu succes datele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.051107Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L13.2281": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Recoltați cu succes niște rădăcini suculente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.051521Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L26.2282": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Încercarea ta de recoltare a distrus mai multe rădăcini suculente decât ai putea salva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.052169Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L33.2283": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Recoltați cu succes niște rădăcini suculente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.052602Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L46.2284": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Încercarea ta de recoltare a distrus mai multe rădăcini suculente decât ai putea salva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.053128Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L52.2285": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Această rădăcină a fost deja recoltată, nimic de câștigat aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.053597Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.calassa.comb.door.L8.1926": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.054043Z"
+  },
+  "data.otservbr.global.scripts.quests.the.annihilator.door.L5.2235": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.058302Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L54.1849": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Ai un sentiment de groază.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.060485Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L108.1859": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.061437Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L141.1862": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:41:07.062059Z"
   }
 }

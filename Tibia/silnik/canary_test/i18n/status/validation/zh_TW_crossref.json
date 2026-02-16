@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:16:14.135696Z",
+  "checked_at": "2026-02-16T23:37:14.334172Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -923,6 +923,15 @@
       "lang": "Clear All Texts"
     },
     {
+      "key": "client.statsbar.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Level",
+      "pl": "Poziom Magii",
+      "lang": "Magic Level"
+    },
+    {
       "key": "client.statsbar.text2",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -1056,6 +1065,24 @@
       "en": "North West",
       "pl": "Nierth West",
       "lang": "North West"
+    },
+    {
+      "key": "client.spells.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Apprentice's Strike",
+      "pl": "Strajk praktykantów",
+      "lang": "Apprentice's Strike"
+    },
+    {
+      "key": "client.spells.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Nature's Embrace",
+      "pl": "Uściski natury",
+      "lang": "Nature's Embrace"
     },
     {
       "key": "client.spells.text5",
@@ -2566,7 +2593,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -2813,6 +2840,15 @@
       "lang": "Magic Level"
     },
     {
+      "key": "cpp.inspect.magic_shield_capacity",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Shield Capacity",
+      "pl": "Magia tarcza udźperuka",
+      "lang": "Magic Shield Capacity"
+    },
+    {
       "key": "cpp.inspect.mana_shield",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2998,7 +3034,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -3164,15 +3200,6 @@
       "lang": "invisibility"
     },
     {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "I.:{0}",
-      "lang": "Key:{0}"
-    },
-    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3241,7 +3268,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " of ",
-      "pl": "z",
+      "pl": "z ",
       "lang": " of "
     },
     {
@@ -3259,7 +3286,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " on ",
-      "pl": "na",
+      "pl": "na ",
       "lang": " on "
     },
     {
@@ -3295,7 +3322,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium",
+      "pl": "premium ",
       "lang": "premium "
     },
     {
@@ -3304,7 +3331,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "protection ",
-      "pl": "ochrona, osłona",
+      "pl": "ochrona, osłona ",
       "lang": "protection "
     },
     {
@@ -3315,15 +3342,6 @@
       "en": "protection all {0}%",
       "pl": "ochrona, osłona wszystkie {0}%",
       "lang": "protection all {0}%"
-    },
-    {
-      "key": "cpp.look.range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "I.:",
-      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_many",
@@ -3439,7 +3457,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {
@@ -3466,7 +3484,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You recognize {0}. ",
-      "pl": "Ty recognize {0}.",
+      "pl": "Ty recognize {0}. ",
       "lang": "You recognize {0}. "
     },
     {
@@ -3484,7 +3502,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": "and "
     },
     {
@@ -3493,7 +3511,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -3594,24 +3612,6 @@
       "en": "You are VIP.",
       "pl": "Jesteś BARDZO WAŻNA OSOBA.",
       "lang": "You are VIP."
-    },
-    {
-      "key": "cpp.player.moved_objects",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " Moved {0} object{1}.",
-      "pl": "Moved {0} obiekt{1}.",
-      "lang": " Moved {0} object{1}."
-    },
-    {
-      "key": "cpp.player.moved_objects_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " Moved {0} object.",
-      "pl": "Moved {0} obiekt.",
-      "lang": " Moved {0} object."
     }
   ],
   "length_ratio_issues": [

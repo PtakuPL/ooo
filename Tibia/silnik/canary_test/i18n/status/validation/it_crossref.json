@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 11.5,
+  "coverage_pct": 11.8,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:15:41.196037Z",
+  "checked_at": "2026-02-16T23:36:51.118140Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -95,6 +95,42 @@
       "lang": "World Chat"
     },
     {
+      "key": "client.entergame.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "config.otml",
+      "pl": "konfiguracja.otml",
+      "lang": "config.otml"
+    },
+    {
+      "key": "client.player.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Elite Knight",
+      "pl": "Elitarny Rycerz",
+      "lang": "Elite Knight"
+    },
+    {
+      "key": "client.player.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Royal Paladin",
+      "pl": "Królewski Paladyn",
+      "lang": "Royal Paladin"
+    },
+    {
+      "key": "client.player.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Master Sorcerer",
+      "pl": "Arcyczarnoksiężnik",
+      "lang": "Master Sorcerer"
+    },
+    {
       "key": "client.game_store.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -102,33 +138,6 @@
       "en": "HomePanel",
       "pl": "Panel główny",
       "lang": "HomePanel"
-    },
-    {
-      "key": "cpp.augment.damage",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "Główny",
-      "lang": "Major"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_minor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minor",
-      "pl": "Mini",
-      "lang": "Minor"
     },
     {
       "key": "cpp.combat.agony",
@@ -156,15 +165,6 @@
       "en": "drown",
       "pl": "topić się, tonąć",
       "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.earth",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "earth",
-      "pl": "ziemia",
-      "lang": "earth"
     },
     {
       "key": "cpp.combat.energy",
@@ -311,15 +311,6 @@
       "lang": " (Hazard)"
     },
     {
-      "key": "cpp.game.offline_training_button_cancel",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cancel",
-      "pl": "Anuluj",
-      "lang": "Cancel"
-    },
-    {
       "key": "cpp.game.offline_training_button_ok",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -343,7 +334,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -354,15 +345,6 @@
       "en": "Armor",
       "pl": "Zbroja",
       "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.attack",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Attack",
-      "pl": "Atak",
-      "lang": "Attack"
     },
     {
       "key": "cpp.inspect.augments",
@@ -649,7 +631,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -770,15 +752,6 @@
       "lang": "{0} hour"
     },
     {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "I.:{0}",
-      "lang": "Key:{0}"
-    },
-    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -802,7 +775,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " of ",
-      "pl": "z",
+      "pl": "z ",
       "lang": " of "
     },
     {
@@ -820,7 +793,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " on ",
-      "pl": "na",
+      "pl": "na ",
       "lang": " on "
     },
     {
@@ -847,7 +820,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium",
+      "pl": "premium ",
       "lang": "premium "
     },
     {
@@ -856,17 +829,8 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "protection ",
-      "pl": "ochrona, osłona",
+      "pl": "ochrona, osłona ",
       "lang": "protection "
-    },
-    {
-      "key": "cpp.look.range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "I.:",
-      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -937,7 +901,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {
@@ -964,7 +928,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": "and "
     },
     {
@@ -973,7 +937,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -1029,15 +993,6 @@
       "en": "{0} VIP.",
       "pl": "{0} BARDZO WAŻNA OSOBA.",
       "lang": "{0} VIP."
-    },
-    {
-      "key": "cpp.protocol.level_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "Poziom",
-      "lang": "Level"
     },
     {
       "key": "cpp.protocol.married_to_label",
@@ -1110,15 +1065,6 @@
       "en": "No error.",
       "pl": "Nie błąd.",
       "lang": "No error."
-    },
-    {
-      "key": "cpp.skill.level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "level",
-      "pl": "poziom",
-      "lang": "level"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -3612,6 +3558,60 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
+    },
+    {
+      "key": "npc.arkulius.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arkulius.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.avar_tar.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.barnabas_dee.say_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahhhhhhhh! ",
+      "pl": "Aaaaaaachhhhhh! ",
+      "lang": "Ahhhhhhhh! "
+    },
+    {
+      "key": "npc.billy.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HOW RUDE!",
+      "pl": "JAK NIEGRZECZNY, OPRYSKLIWY!",
+      "lang": "HOW RUDE!"
+    },
+    {
+      "key": "npc.blind_orc.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Futchi.",
+      "pl": "Futchi!",
+      "lang": "Futchi."
     }
   ],
   "length_ratio_issues": [

@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 74.6,
+  "coverage_pct": 74.7,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:15:16.681953Z",
+  "checked_at": "2026-02-16T23:36:28.896765Z",
   "issues_total": 491,
   "issues_by_type": {
     "consistency_in_language": 67,
@@ -1027,6 +1027,24 @@
       "lang": "Tutor"
     },
     {
+      "key": "client.map.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MarkListItem",
+      "pl": "MarkListPrzedmiot",
+      "lang": "MarkListItem"
+    },
+    {
+      "key": "client.imbuementtracker.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ImbuementTracker",
+      "pl": "Śledzenie nasycenia",
+      "lang": "ImbuementTracker"
+    },
+    {
       "key": "cpp.combat.neutral",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1041,7 +1059,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -3331,6 +3349,24 @@
       "lang": "No"
     },
     {
+      "key": "php.players.text2",
+      "category": "php",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "col-12 col-sm-12 col-lg-10",
+      "pl": "kol-12 kol-sm-12 kol-lg-10",
+      "lang": "col-12 col-sm-12 col-lg-10"
+    },
+    {
+      "key": "php.accounts.text1",
+      "category": "php",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "col-12 col-sm-12 col-lg-10",
+      "pl": "kol-12 kol-sm-12 kol-lg-10",
+      "lang": "col-12 col-sm-12 col-lg-10"
+    },
+    {
       "key": "quests.dreamers_challenge.clock_word_3",
       "category": "quests",
       "type": "pl_reference_missing_translation",
@@ -4580,42 +4616,6 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.boxramp.L6.2249",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clonk.",
-      "pl": "Klonk.",
-      "lang": "Clonk."
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L12.2256",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yeah.",
-      "pl": "Tak.",
-      "lang": "Yeah."
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sorry.",
-      "pl": "Przepraszam.",
-      "lang": "Sorry."
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fail.",
-      "pl": "Niepowodzenie.",
-      "lang": "Fail."
     }
   ],
   "length_ratio_issues": [
@@ -4838,8 +4838,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 9,
-    "skipped": 71,
+    "applied": 8,
+    "skipped": 72,
     "errors": 0
   }
 }

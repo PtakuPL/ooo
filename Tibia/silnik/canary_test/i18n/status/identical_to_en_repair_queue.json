@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T23:33:39.946180Z",
+  "timestamp": "2026-02-16T23:36:00.522144Z",
   "priority_langs": [
     "es",
     "pl",
@@ -76,7 +76,7 @@
     "it": 508,
     "nl": 691,
     "pt": 620,
-    "ro": 535,
+    "ro": 534,
     "ru": 186,
     "sk": 663,
     "tr": 542,
@@ -868,7 +868,7 @@
     {
       "lang": "ro",
       "json_file": "monsters.json",
-      "identical_to_en": 64,
+      "identical_to_en": 63,
       "domain_priority": 8
     },
     {

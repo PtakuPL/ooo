@@ -15854,5 +15854,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:29:55.095679Z"
+  },
+  "npc.amarie.farewell_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.125010Z"
+  },
+  "npc.armenius.greet_msg_1": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ah, en äventyrare. Var hälsad och sätt dig. Hur kan jag {serve} dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.161099Z"
+  },
+  "npc.armenius.walkaway_msg_1": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Åh, nerven. Gå till råttorna som uppfostrade dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.161753Z"
+  },
+  "npc.aruda.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Hejdå, |PLAYERNAME|. Jag hoppas verkligen att vi pratas snart igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.162715Z"
+  },
+  "npc.aruda.greet_msg_1": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "Åh, hej |PLAYERNAME|, ditt hår ser bra ut! Vem gjorde det åt dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.163335Z"
+  },
+  "npc.aruda.greet_msg_2": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "Åh, hej, snygging! Det är ett nöje att träffa dig, |PLAYERNAME|. Jag har gärna tid att {chat} lite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.163919Z"
+  },
+  "npc.aruda.walkaway_msg_1": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Jag hoppas att vi ses snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.166123Z"
+  },
+  "npc.ashari.farewell_msg_1": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.166407Z"
+  },
+  "npc.ashari.greet_msg_1": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Hej främling! Dessa grottor måste verka konstiga för dig. Jag undrar vad som för dig hit... du kanske är intresserad av något arbete? Det finns flera uppgifter jag skulle kunna behöva hjälp med.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.167220Z"
+  },
+  "npc.ashari.walkaway_msg_1": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.167494Z"
+  },
+  "npc.atur.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.168902Z"
+  },
+  "npc.aurita.greet_msg_1": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Hälsningar, resenär!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.169875Z"
+  },
+  "npc.avar_tar.greet_msg_1": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Hälsningar, resenär |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.171886Z"
+  },
+  "npc.awarness_of_the_emperor.greet_msg_1": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Jag är inte här för att slåss mot dig, idiot. Gilla det eller inte, vi måste arbeta tillsammans för att stoppa katastrofen du och den prästen har initierat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.174027Z"
+  },
+  "npc.awarness_of_the_emperor.greet_msg_2": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Hälsningar, dödlig. Var medveten om att du försöker mitt tålamod medan vi pratar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.174615Z"
+  },
+  "npc.baa_leal.farewell_msg_1": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Stå ner, soldat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.178507Z"
+  },
+  "npc.bambi_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.179905Z"
+  },
+  "npc.bambi_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.180232Z"
+  },
+  "npc.bambi_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.181241Z"
+  },
+  "npc.barazbaz.greet_msg_1": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "Åh, hej då!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.181533Z"
+  },
+  "npc.barbara.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "LÄNGE LEVE Drottningen! Du kan gå nu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.182784Z"
+  },
+  "npc.barbara.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.183819Z"
+  },
+  "npc.barnabas_dee.farewell_msg_1": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Ta hand om dig, barn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.184330Z"
+  },
+  "npc.barnabas_dee.greet_msg_1": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Välkommen till min ödmjuka boning. Om du kommer för en ny trollkarl {spells} har du kommit till rätt plats.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.184931Z"
+  },
+  "npc.barnabas_dee.walkaway_msg_1": {
+    "src_hash": "f837336cbcf07dd58a95501bc15ea16f",
+    "text": "'The impetuosity of youth', som min vän Mordokai skulle säga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.186224Z"
+  },
+  "npc.bashira.farewell_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.186781Z"
+  },
+  "npc.bashira.farewell_msg_1": {
+    "src_hash": "aa9516b030cac7a45cce88509881a4ea",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.187089Z"
+  },
+  "npc.bashira.greet_msg_1": {
+    "src_hash": "1ab992ebc47c02f476153edbb5649f2a",
+    "text": "Välkommen, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.187415Z"
+  },
+  "npc.bashira.sendtrade_msg_1": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Naturligtvis är det bara att bläddra igenom mina erbjudanden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.187990Z"
+  },
+  "npc.bashira.walkaway_msg_1": {
+    "src_hash": "91f025a68ba7730090f9f4a3461e5e62",
+    "text": "Må Gud visa dig vägen, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.188406Z"
+  },
+  "npc.battlemart.farewell_msg_1": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Farväl, |PLAYERNAME|, jag finns här om du behöver mig igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.188849Z"
+  },
+  "npc.battlemart.greet_msg_1": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "Det är bra att se dig. Jag är alltid vid din {shop options}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.189346Z"
+  },
+  "npc.battlemart.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.189813Z"
+  },
+  "npc.bertha.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.193324Z"
+  },
+  "npc.bertha.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.194274Z"
+  },
+  "npc.blossom_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.200463Z"
+  },
+  "npc.blossom_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.200799Z"
+  },
+  "npc.blossom_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.201665Z"
+  },
+  "npc.boveas.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.204591Z"
+  },
+  "npc.boveas.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.205278Z"
+  },
+  "npc.briasol.farewell_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.216570Z"
+  },
+  "npc.bunny_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.225965Z"
+  },
+  "npc.bunny_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.227368Z"
+  },
+  "npc.busty_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.227693Z"
+  },
+  "npc.busty_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.228116Z"
+  },
+  "npc.busty_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.228930Z"
+  },
+  "npc.corym_butler.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.283094Z"
+  },
+  "npc.corym_footman.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.283601Z"
+  },
+  "npc.corym_ratter.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.284106Z"
+  },
+  "npc.corym_servant.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:48.284696Z"
   }
 }

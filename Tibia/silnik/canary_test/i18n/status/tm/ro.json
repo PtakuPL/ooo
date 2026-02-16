@@ -20510,5 +20510,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:34:23.963333Z"
+  },
+  "monster.rustheap_golem.voice_1": {
+    "src_hash": "d42a2522497119036fc0609fb2d52775",
+    "text": "*zăngănit*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:42.058606Z"
+  },
+  "monster.damaged_worker_golem.name": {
+    "src_hash": "5e23529f6ecf8f8d18b8b7f5ced4afa6",
+    "text": "Golem muncitor deteriorat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:44.892981Z"
+  },
+  "monster.damaged_worker_golem.desc": {
+    "src_hash": "80495f2e32ef3b5fff46e9c552bd4c8f",
+    "text": "un golem muncitor deteriorat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:44.893261Z"
+  },
+  "monster.damaged_worker_golem.voice_2": {
+    "src_hash": "fcaddb15aea25f7a29490882384ad896",
+    "text": "Eșec! Eșec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:35:44.893495Z"
   }
 }

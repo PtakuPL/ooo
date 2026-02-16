@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:15:17.031719Z",
+  "checked_at": "2026-02-16T23:36:29.254171Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -460,7 +460,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -766,7 +766,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -887,15 +887,6 @@
       "lang": "{0} hour"
     },
     {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "I.:{0}",
-      "lang": "Key:{0}"
-    },
-    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -919,7 +910,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " of ",
-      "pl": "z",
+      "pl": "z ",
       "lang": " of "
     },
     {
@@ -937,7 +928,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " on ",
-      "pl": "na",
+      "pl": "na ",
       "lang": " on "
     },
     {
@@ -964,7 +955,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium",
+      "pl": "premium ",
       "lang": "premium "
     },
     {
@@ -973,17 +964,8 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "protection ",
-      "pl": "ochrona, osłona",
+      "pl": "ochrona, osłona ",
       "lang": "protection "
-    },
-    {
-      "key": "cpp.look.range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "I.:",
-      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1054,7 +1036,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {
@@ -1081,7 +1063,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": "and "
     },
     {
@@ -1090,7 +1072,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -3612,6 +3594,24 @@
       "en": "Grrr.",
       "pl": "Grrr...",
       "lang": "Grrr."
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr.",
+      "pl": "Grrr...",
+      "lang": "Grrr."
+    },
+    {
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh...",
+      "pl": "O...",
+      "lang": "Oh..."
     }
   ],
   "length_ratio_issues": [

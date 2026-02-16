@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 10.7,
+  "coverage_pct": 10.9,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:16:12.660264Z",
+  "checked_at": "2026-02-16T23:37:12.799129Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -415,7 +415,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -721,7 +721,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -842,15 +842,6 @@
       "lang": "{0} hour"
     },
     {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "I.:{0}",
-      "lang": "Key:{0}"
-    },
-    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -874,7 +865,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " of ",
-      "pl": "z",
+      "pl": "z ",
       "lang": " of "
     },
     {
@@ -892,7 +883,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " on ",
-      "pl": "na",
+      "pl": "na ",
       "lang": " on "
     },
     {
@@ -919,7 +910,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium",
+      "pl": "premium ",
       "lang": "premium "
     },
     {
@@ -928,17 +919,8 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "protection ",
-      "pl": "ochrona, osłona",
+      "pl": "ochrona, osłona ",
       "lang": "protection "
-    },
-    {
-      "key": "cpp.look.range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "I.:",
-      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1009,7 +991,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {
@@ -1036,7 +1018,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": "and "
     },
     {
@@ -1045,7 +1027,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -1823,15 +1805,6 @@
       "lang": "Grrrrrr"
     },
     {
-      "key": "monster.orc_spearman.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ugaar!",
-      "pl": "Ugar!",
-      "lang": "Ugaar!"
-    },
-    {
       "key": "monster.orc_rider.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1839,24 +1812,6 @@
       "en": "Grrrrrrr",
       "pl": "Wrrrrrr",
       "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.troll_legionnaire.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Attack!",
-      "pl": "Atak!",
-      "lang": "Attack!"
-    },
-    {
-      "key": "monster.minotaur.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hurr",
-      "pl": "Hurra",
-      "lang": "Hurr"
     },
     {
       "key": "monster.troll_champion.voice_2",
@@ -3612,6 +3567,51 @@
       "en": "Take this!",
       "pl": "Weź to!",
       "lang": "Take this!"
+    },
+    {
+      "key": "npc.brodrosch.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.brodrosch.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.brodrosch.stdmod_12",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.bron.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take care!",
+      "pl": "Trzymaj się!",
+      "lang": "Take care!"
+    },
+    {
+      "key": "npc.budrik.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
     }
   ],
   "length_ratio_issues": [

@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:15:40.267458Z",
+  "checked_at": "2026-02-16T23:36:50.195536Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -902,7 +902,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "protection ",
-      "pl": "ochrona, osłona",
+      "pl": "ochrona, osłona ",
       "lang": "protection "
     },
     {
@@ -920,7 +920,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -1473,33 +1473,6 @@
       "lang": "Oink"
     },
     {
-      "key": "monster.war_golem.voice_10",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eliminated",
-      "pl": "Wyłączony",
-      "lang": "Eliminated"
-    },
-    {
-      "key": "monster.glooth_golem.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*clank*",
-      "pl": "*I.*",
-      "lang": "*clank*"
-    },
-    {
-      "key": "monster.orewalker.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "CLONK!",
-      "pl": "KLONK!",
-      "lang": "CLONK!"
-    },
-    {
       "key": "monster.rustheap_golem.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1507,15 +1480,6 @@
       "en": "*frzzp*",
       "pl": "*frzz*",
       "lang": "*frzzp*"
-    },
-    {
-      "key": "monster.magma_crawler.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crrroak!",
-      "pl": "Crrrroak!",
-      "lang": "Crrroak!"
     },
     {
       "key": "monster.ice_golem.voice_1",
@@ -4405,6 +4369,42 @@
       "en": "Oink oink",
       "pl": "Chrum chrum",
       "lang": "Oink oink"
+    },
+    {
+      "key": "monster.enraged_white_deer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*wheeze*",
+      "pl": "*I.*",
+      "lang": "*wheeze*"
+    },
+    {
+      "key": "monster.enraged_white_deer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*sniff*",
+      "pl": "*I.*",
+      "lang": "*sniff*"
+    },
+    {
+      "key": "monster.enraged_white_deer.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*bell*",
+      "pl": "*dzwonek, dzwon*",
+      "lang": "*bell*"
+    },
+    {
+      "key": "monster.brown_horse.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 4,
-    "skipped": 76,
+    "applied": 3,
+    "skipped": 77,
     "errors": 0
   }
 }

@@ -13646,5 +13646,405 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:39:43.882685Z"
+  },
+  "npc.bolfona.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ci vediamo, amico mio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.233975Z"
+  },
+  "npc.bolfona.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ci vediamo, amico mio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.235281Z"
+  },
+  "npc.boveas.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.236262Z"
+  },
+  "npc.boveas.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.236798Z"
+  },
+  "npc.brewster.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.255519Z"
+  },
+  "npc.brewster.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.256476Z"
+  },
+  "npc.brewster.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Sei ferito, figlio mio. Guarirò le tue ferite.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.258237Z"
+  },
+  "npc.brewster.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.260781Z"
+  },
+  "npc.briasol.farewell_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.262214Z"
+  },
+  "npc.briasol.say_1": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Eccolo.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.263998Z"
+  },
+  "npc.brodrosch.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.266054Z"
+  },
+  "npc.bunny_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LUNGA VITA ALLA REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.284514Z"
+  },
+  "npc.bunny_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LUNGA VITA ALLA REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.288013Z"
+  },
+  "npc.busty_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LUNGA VITA ALLA REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.288477Z"
+  },
+  "npc.busty_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LUNGA VITA ALLA REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.289174Z"
+  },
+  "npc.busty_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LUNGA VITA ALLA REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.289705Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Sì, arrivederci e non tornare più!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.302431Z"
+  },
+  "npc.captain_haba.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.319331Z"
+  },
+  "npc.captain_haba.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.324317Z"
+  },
+  "npc.captain_waverider.say_6": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.341958Z"
+  },
+  "npc.captain_waverider.say_8": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.342787Z"
+  },
+  "npc.cedrik.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.352522Z"
+  },
+  "npc.cedrik.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.353591Z"
+  },
+  "npc.cedrik.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Sei ferito, figlio mio. Guarirò le tue ferite.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.354548Z"
+  },
+  "npc.cedrik.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.357453Z"
+  },
+  "npc.charles.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.365837Z"
+  },
+  "npc.charles.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.368864Z"
+  },
+  "npc.charles.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.370809Z"
+  },
+  "npc.cipfried.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.404829Z"
+  },
+  "npc.cornelia.farewell_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Arrivederci. Torna presto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.414654Z"
+  },
+  "npc.corym_butler.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.416331Z"
+  },
+  "npc.corym_footman.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.417199Z"
+  },
+  "npc.corym_ratter.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.418097Z"
+  },
+  "npc.corym_servant.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.419135Z"
+  },
+  "npc.corym_slave.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.421144Z"
+  },
+  "npc.corym_worker_01.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.422017Z"
+  },
+  "npc.corym_worker_02.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.422653Z"
+  },
+  "npc.corym_worker_03.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.423537Z"
+  },
+  "npc.corym_worker_04.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.424313Z"
+  },
+  "npc.corym_worker_05.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.424939Z"
+  },
+  "npc.costello.farewell_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Arrivederci. Torna presto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.425692Z"
+  },
+  "npc.dallheim.stdmod_14": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Bene.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.435915Z"
+  },
+  "npc.daniel_steelsoul.stdmod_2": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.447360Z"
+  },
+  "npc.denominator.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.457597Z"
+  },
+  "npc.dermot.say_4": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Eccolo.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.458556Z"
+  },
+  "npc.dermot.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.459123Z"
+  },
+  "npc.dukosch.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.476031Z"
+  },
+  "npc.ebenizer.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.481683Z"
+  },
+  "npc.ebenizer.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.482475Z"
+  },
+  "npc.edala.stdmod_4": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Sei ferito, figlio mio. Guarirò le tue ferite.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:00.485845Z"
   }
 }

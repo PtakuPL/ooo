@@ -6102,5 +6102,405 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:39:37.948594Z"
+  },
+  "npc.bashira.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.621102Z"
+  },
+  "npc.baxter.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.622604Z"
+  },
+  "npc.baxter.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.623840Z"
+  },
+  "npc.beatrice.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.625069Z"
+  },
+  "npc.bertha.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.628519Z"
+  },
+  "npc.bertha.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.629223Z"
+  },
+  "npc.bertha.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.630143Z"
+  },
+  "npc.billy.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.630744Z"
+  },
+  "npc.billy.sendtrade_msg_1": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Sigur.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.631246Z"
+  },
+  "npc.bloodshade_rotten.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.645748Z"
+  },
+  "npc.bloodshade_sacrifice.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.648360Z"
+  },
+  "npc.blossom_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.648843Z"
+  },
+  "npc.blossom_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.649296Z"
+  },
+  "npc.blossom_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.650497Z"
+  },
+  "npc.boveas.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.653810Z"
+  },
+  "npc.boveas.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.654310Z"
+  },
+  "npc.brewster.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.669962Z"
+  },
+  "npc.brewster.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.674624Z"
+  },
+  "npc.briasol.farewell_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.676268Z"
+  },
+  "npc.briasol.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.677237Z"
+  },
+  "npc.brodrosch.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.679906Z"
+  },
+  "npc.brodrosch.stdmod_12": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Atunci nu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.681623Z"
+  },
+  "npc.bunny_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.696072Z"
+  },
+  "npc.bunny_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.698299Z"
+  },
+  "npc.busty_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.698804Z"
+  },
+  "npc.busty_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.699682Z"
+  },
+  "npc.busty_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "TRĂIASCĂ REGINA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.701447Z"
+  },
+  "npc.captain_bluebear.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.714628Z"
+  },
+  "npc.captain_breezelda.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.715876Z"
+  },
+  "npc.captain_chelop.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.717112Z"
+  },
+  "npc.captain_cookie.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.717732Z"
+  },
+  "npc.captain_cookie.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.718724Z"
+  },
+  "npc.captain_fearless.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.723130Z"
+  },
+  "npc.captain_greyhound.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.726531Z"
+  },
+  "npc.captain_haba.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.729250Z"
+  },
+  "npc.captain_haba.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.734762Z"
+  },
+  "npc.captain_harava.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.740240Z"
+  },
+  "npc.captain_max.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.741918Z"
+  },
+  "npc.captain_max.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.743630Z"
+  },
+  "npc.captain_max_calassa.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.744081Z"
+  },
+  "npc.captain_max_calassa.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.745471Z"
+  },
+  "npc.captain_pelagia.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.748350Z"
+  },
+  "npc.captain_seagull.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.753822Z"
+  },
+  "npc.captain_sinbeard.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.759473Z"
+  },
+  "npc.captain_waverider.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.760017Z"
+  },
+  "npc.captain_waverider.say_6": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.761248Z"
+  },
+  "npc.captain_waverider.say_8": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.762249Z"
+  },
+  "npc.captain_waverider_island.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.762863Z"
+  },
+  "npc.cassino.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.774717Z"
+  },
+  "npc.cassino.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:54.776386Z"
   }
 }

@@ -8390,5 +8390,349 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:39:27.425395Z"
+  },
+  "npc.harlow_vengoth.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.349739Z"
+  },
+  "npc.haroun.say_8": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Вот, пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.359344Z"
+  },
+  "npc.hawkhurst.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.362937Z"
+  },
+  "npc.hawkhurst.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.364845Z"
+  },
+  "npc.hawkhurst_ingol.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.365580Z"
+  },
+  "npc.hawkhurst_ingol.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.367807Z"
+  },
+  "npc.hoggle.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.406693Z"
+  },
+  "npc.hoggle.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.408061Z"
+  },
+  "npc.jack_fate_goroma.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.460218Z"
+  },
+  "npc.karith.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.495388Z"
+  },
+  "npc.karith.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.500347Z"
+  },
+  "npc.king_tibianus.say_7": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Пожалуйста, убедитесь, что в вашем ящике магазина есть свободные слоты.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.516607Z"
+  },
+  "npc.lubo.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.564060Z"
+  },
+  "npc.mazarius.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.599778Z"
+  },
+  "npc.morgan.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.618057Z"
+  },
+  "npc.naji.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.644281Z"
+  },
+  "npc.naji.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.645035Z"
+  },
+  "npc.ocelus.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.673737Z"
+  },
+  "npc.paulie.say_18": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Сколько платиновых монет вы хотите получить?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.721146Z"
+  },
+  "npc.paulie.say_19": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Извините, у вас недостаточно золотых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.721876Z"
+  },
+  "npc.paulie.say_20": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Вот, пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.722615Z"
+  },
+  "npc.paulie.say_21": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Извините, у вас недостаточно золотых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.723268Z"
+  },
+  "npc.paulie.say_22": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ну что ж, могу ли я ещё чем‑нибудь помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.723939Z"
+  },
+  "npc.paulie.say_25": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Сколько кристальных монет вы хотите получить?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.724879Z"
+  },
+  "npc.paulie.say_26": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ну что ж, могу ли я ещё чем‑нибудь помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.725541Z"
+  },
+  "npc.paulie.say_27": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Извините, у вас недостаточно платиновых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.726271Z"
+  },
+  "npc.paulie.say_28": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Вот, пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.726797Z"
+  },
+  "npc.paulie.say_29": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Извините, у вас недостаточно платиновых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.727488Z"
+  },
+  "npc.paulie.say_30": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ну что ж, могу ли я ещё чем‑нибудь помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.728319Z"
+  },
+  "npc.paulie.say_31": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Извините, у вас недостаточно платиновых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.728994Z"
+  },
+  "npc.paulie.say_32": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Вот, пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.729485Z"
+  },
+  "npc.paulie.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Извините, у вас недостаточно платиновых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.730227Z"
+  },
+  "npc.paulie.say_34": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ну что ж, могу ли я ещё чем‑нибудь помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.731057Z"
+  },
+  "npc.paulie.say_35": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Сколько кристальных монет вы хотите обменять на платиновые?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.731826Z"
+  },
+  "npc.paulie.say_36": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Извините, у вас недостаточно кристальных монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.732525Z"
+  },
+  "npc.paulie.say_37": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Вот, пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.732971Z"
+  },
+  "npc.paulie.say_38": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Извините, у вас недостаточно кристальных монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.733633Z"
+  },
+  "npc.paulie.say_39": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ну что ж, могу ли я ещё чем‑нибудь помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.734562Z"
+  },
+  "npc.pemaret.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.736713Z"
+  },
+  "npc.plunderpurse.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "На вашем счёте недостаточно золота.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.748672Z"
+  },
+  "npc.plunderpurse.say_18": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Клиент всегда прав! Возвращайтесь в любое время, если захотите {withdraw} свои деньги.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.750931Z"
+  },
+  "npc.plunderpurse.say_19": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Сколько платиновых монет вы хотите получить?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.751986Z"
+  },
+  "npc.plunderpurse.say_20": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Извините, у вас недостаточно золотых монет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:41:47.752688Z"
   }
 }

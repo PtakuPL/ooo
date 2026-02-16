@@ -19230,5 +19230,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:42:45.052597Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_5": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Ваше тело реагирует на это странное зеленое вещество, когда вы протягиваете руку, чтобы прикоснуться к нему. Вы чувствуете потребность в большем количестве этой энергии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:09.173700Z"
+  },
+  "quests.cults_of_tibia.ice.msg_3": {
+    "src_hash": "c81033584f8b0cdea8fe723c500753e0",
+    "text": "Ледяной холод охватывает тебя. Ты уже едва можешь двигаться.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:11.651004Z"
+  },
+  "quests.cults_of_tibia.ice.msg_4": {
+    "src_hash": "1901b7c161bc327e87255edc111121ae",
+    "text": "Теперь вы омылись и готовы очиститься в камерах очищения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:11.651456Z"
+  },
+  "quests.cults_of_tibia.ice.msg_5": {
+    "src_hash": "49b58823d77dc676db1e310ea8a2e848",
+    "text": "Теперь вы готовы доказать свою ценность. Мужайтесь и переступите порог льда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:11.652016Z"
+  },
+  "quests.cults_of_tibia.ice.msg_6": {
+    "src_hash": "495f7351822be4b78e786373c75d6d1c",
+    "text": "Ты так долго. Вы больше не очищены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:11.652392Z"
+  },
+  "quests.cults_of_tibia.it_looks_like_there_is_someone": {
+    "src_hash": "50f020159d60c2b2c9c68d92cbf36694",
+    "text": "Похоже, внутри кто-то есть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:14.355120Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_1": {
+    "src_hash": "ead78a22f859066ec9d57d10bbc3b56e",
+    "text": "Когда вы входите в серные ямы, вы чувствуете вокруг себя сухие, обжигающие пары серы. Окажитесь достойными, переживите кислоту.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:14.355760Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_2": {
+    "src_hash": "c9530d94b77a7a4e28c21db1f6d3c743",
+    "text": "Сера обжигает кожу. Вы почти чувствуете, как ваше тело тает в кислоте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:14.356232Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_3": {
+    "src_hash": "897eaafe69909eb75d56fe9d0ba70879",
+    "text": "Жжение кислотой теперь невыносимо, кожа словно решето. Сил в тебе почти не осталось – действуй быстро!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:14.356876Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_4": {
+    "src_hash": "60932ae2444f0118668b2d4d9046ea50",
+    "text": "Примите клеймо тщеславия. Сера больше не обжигает кожу. Вы прошли испытание.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:14.357370Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_5": {
+    "src_hash": "9c251b490b88890ee578904464bb077d",
+    "text": "Теперь вы готовы доказать свою ценность. Мужайтесь и переступите порог серы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:17.009815Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_6": {
+    "src_hash": "8daa12db57a5cd099b253e961edefea1",
+    "text": "Кислота, покрывающая вас, остыла и по большей части отпала. Ваше тело больше не нагревается.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:17.010459Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_1": {
+    "src_hash": "03670e2850561062fe9fd557c597f0c3",
+    "text": "Когда вы входите в смоляные ямы, вы чувствуете, как вокруг вас резко нарастает жар. Переживите жару достаточно долго, чтобы оказаться достойным.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:17.011111Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_2": {
+    "src_hash": "afe9c062fcad0dfaed371f41f325a3f1",
+    "text": "Ваше тело нагревается, воздух вокруг вас мерцает.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:17.011556Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_3": {
+    "src_hash": "f575456ac57a1329c31dae3a89abe1a5",
+    "text": "Жара теперь невыносима, кровь в теле кажется лавой. Сил в тебе почти не осталось – действуй быстро!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:17.012121Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_4": {
+    "src_hash": "c5f3b89f92a7442b2e42b32aa0f24087",
+    "text": "Примите клеймо неудачи. Смола больше не кажется такой горячей. Вы прошли смоляное испытание.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:20.006013Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_6": {
+    "src_hash": "69828c9b2866aff3163734b5536f688b",
+    "text": "Деготь, покрывающий вас, остыл и большей частью отпал. Ваше тело больше не нагревается.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:20.006675Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_1": {
+    "src_hash": "fc959524c181fe732cea25456db9be19",
+    "text": "Вы поглощаете энергетические остатки этой разлагающейся души. Его сила очень хрупка и мимолетна.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:20.007195Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_2": {
+    "src_hash": "2277263cd6474fa0e105ef2c24fad53d",
+    "text": "Вы поглощаете энергетические остатки этой белеющей души. Его сила очень хрупка и мимолетна.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:20.007702Z"
+  },
+  "quests.cults_of_tibia.the_room_is_full": {
+    "src_hash": "c392e2d4b7bc00e3f6d77bb62792a3c6",
+    "text": "Комната полна.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:20.007958Z"
+  },
+  "quests.cults_of_tibia.you_cant_go_there_yet": {
+    "src_hash": "06f23b40933b62937c5e4dc5c1daf878",
+    "text": "Тебе пока нельзя туда идти.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:22.733258Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_10_players_to": {
+    "src_hash": "da4ca441dd1e0e846918a451309695ec",
+    "text": "Чтобы начать это испытание, вам нужно ровно 10 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:22.733690Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_5_players_to": {
+    "src_hash": "9e4c98b791d52e8b1ac8575cea48760f",
+    "text": "Чтобы начать это испытание, вам нужно ровно 5 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:22.734158Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_10": {
+    "src_hash": "8ed2dcd3c613b3e563ef0235304ed160",
+    "text": "Вам нужно подождать 10 часов, чтобы снова встретиться с этим боссом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:22.734600Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_20": {
+    "src_hash": "ad5616742f0d60619c1619a192a9831c",
+    "text": "Вам нужно подождать 20 часов, чтобы снова встретиться с этим боссом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:22.735033Z"
+  },
+  "quests.custom.couldnt_find_any_position_for_you": {
+    "src_hash": "eac8994d451c78b32788efd039fe9e3d",
+    "text": "Не удалось найти для вас вакансию.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:24.707313Z"
+  },
+  "quests.dark_trails.you_need_4_players_to_fight": {
+    "src_hash": "f8616bd446505a250fe2dd4e0f2bb8e8",
+    "text": "Чтобы сразиться с Опустошителем, вам нужно 4 игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:24.707729Z"
   }
 }

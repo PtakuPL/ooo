@@ -16254,5 +16254,389 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T23:35:48.284696Z"
+  },
+  "data.otservbr.global.npc.bertha.L89.1553": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.292154Z"
+  },
+  "data.otservbr.global.npc.bertha.L90.1554": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.292500Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L76.842": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.294499Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L77.843": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.294916Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L78.844": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.295217Z"
+  },
+  "data.otservbr.global.npc.boveas.L45.25": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.295810Z"
+  },
+  "data.otservbr.global.npc.boveas.L46.26": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.296221Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L112.103": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.299493Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L113.104": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.299795Z"
+  },
+  "data.otservbr.global.npc.busty.bonecrusher.L82.1290": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.300106Z"
+  },
+  "data.otservbr.global.npc.busty.bonecrusher.L83.1291": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.300399Z"
+  },
+  "data.otservbr.global.npc.busty.bonecrusher.L84.1292": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.300807Z"
+  },
+  "data.otservbr.global.npc.corym.butler.L87.1151": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.311494Z"
+  },
+  "data.otservbr.global.npc.corym.footman.L87.229": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.311871Z"
+  },
+  "data.otservbr.global.npc.corym.ratter.L92.1030": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.312309Z"
+  },
+  "data.otservbr.global.npc.corym.servant.L127.549": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.312602Z"
+  },
+  "data.otservbr.global.npc.corym.slave.L87.666": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.313070Z"
+  },
+  "data.otservbr.global.npc.corym.worker.01.L80.1137": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.313400Z"
+  },
+  "data.otservbr.global.npc.corym.worker.02.L87.1559": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.313708Z"
+  },
+  "data.otservbr.global.npc.corym.worker.03.L79.2": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.314172Z"
+  },
+  "data.otservbr.global.npc.corym.worker.04.L79.508": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.314496Z"
+  },
+  "data.otservbr.global.npc.corym.worker.05.L80.1452": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.314973Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L76.1493": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.319214Z"
+  },
+  "data.otservbr.global.npc.eighty.L71.779": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.320769Z"
+  },
+  "data.otservbr.global.npc.elgar.L81.567": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.322974Z"
+  },
+  "data.otservbr.global.npc.emma.L294.239": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "LÄNGE LEVE Drottningen! Du kan gå nu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.324431Z"
+  },
+  "data.otservbr.global.npc.eva.L76.990": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.325985Z"
+  },
+  "data.otservbr.global.npc.fenbala.L84.520": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.328243Z"
+  },
+  "data.otservbr.global.npc.fenbala.L85.521": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "LÄNGE LEVE Drottningen! Du kan gå nu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.328621Z"
+  },
+  "data.otservbr.global.npc.ferks.L76.440": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.329663Z"
+  },
+  "data.otservbr.global.npc.finarfin.L71.1173": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.331896Z"
+  },
+  "data.otservbr.global.npc.gnomillion.L76.446": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.341995Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L256.315": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Jag hoppas att vi ses snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.345986Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L257.316": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Hejdå, |PLAYERNAME|. Jag hoppas verkligen att vi pratas snart igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.346476Z"
+  },
+  "data.otservbr.global.npc.hireling.L793.1382": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Farväl, |PLAYERNAME|, jag finns här om du behöver mig igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.354499Z"
+  },
+  "data.otservbr.global.npc.hireling.L794.1383": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.354770Z"
+  },
+  "data.otservbr.global.npc.jefrey.L76.522": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.362300Z"
+  },
+  "data.otservbr.global.npc.jessica.L76.1594": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.363686Z"
+  },
+  "data.otservbr.global.npc.kaya.L76.384": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.368617Z"
+  },
+  "data.otservbr.global.npc.kepar.L76.1256": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.369887Z"
+  },
+  "data.otservbr.global.npc.lokur.L110.616": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.376289Z"
+  },
+  "data.otservbr.global.npc.lubo.L157.1433": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.378733Z"
+  },
+  "data.otservbr.global.npc.murim.L80.185": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.387069Z"
+  },
+  "data.otservbr.global.npc.muzir.L76.225": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.388073Z"
+  },
+  "data.otservbr.global.npc.nelly.L167.416": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.392077Z"
+  },
+  "data.otservbr.global.npc.norma.L187.1081": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.395909Z"
+  },
+  "data.otservbr.global.npc.palimuth.L321.34": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.398377Z"
+  },
+  "data.otservbr.global.npc.paulie.L68.1572": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:38.400035Z"
   }
 }

@@ -21150,5 +21150,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:43:16.013968Z"
+  },
+  "quests.bigfoot_burden.device_unknown": {
+    "src_hash": "4e98f8923a32f5e88ac8299aa52fe8af",
+    "text": "Nu aveți idee despre cum să utilizați acest dispozitiv. Xelvar din Kazordoon s-ar putea să vă spună mai multe despre asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:34.898580Z"
+  },
+  "quests.bigfoot_burden.enough_renown": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "În sfârșit aveți suficientă renume printre gnomi, cereți lui Gnomission o misiune pentru a vă primi cristalul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:34.899213Z"
+  },
+  "quests.bigfoot_burden.gasp": {
+    "src_hash": "4758f628434ece29bf84223f42a476a1",
+    "text": "<gaf>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:34.899397Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg1": {
+    "src_hash": "480e35ad14db7f1efdf3f9e00ed78a58",
+    "text": "Gnomedix: Deci să înceapă examinarea! Acum nu te mișca. Nu-ți fie frică. Gnomul doctor bun nu vă va răni - sperăm!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:34.899952Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg2": {
+    "src_hash": "e2ab9a67cf5112ed29716b20320600c2",
+    "text": "Gnomedix: Acum! Acum! Nu vă panicați! Totul s-a terminat în curând!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:34.900352Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg3": {
+    "src_hash": "503b77337aa47368fbf6324836cb7837",
+    "text": "Gnomedix: Lasă-mă să încerc o daltă mai mare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:42.504851Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg4": {
+    "src_hash": "d6a9f750fe55398ca30eefbf148c3c9f",
+    "text": "Gnomedix: Suntem aproape de... sfânt gnom! Ce-i asta???",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:42.505244Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg6": {
+    "src_hash": "abfd48c5fc8121209d0666adcf6c99fa",
+    "text": "Gnomedix: Stai linistit acum! Asta ar putea gâdila puțin..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:42.505786Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg7": {
+    "src_hash": "2fccc4bbff73ea03fdd55ecf188ceb8c",
+    "text": "Gnomedix: Ia asta, răul... orice ai fi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:42.506207Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg8": {
+    "src_hash": "cd6d2693244661936990d9aa89bd4492",
+    "text": "Gnomedix: Am înțeles! Da! Ce a fost asta? Uhm, ei bine... ai trecut examenul urechii. Discutați cu Gnomaticus pentru următorul test.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:49.688883Z"
+  },
+  "quests.bigfoot_burden.golden_fruits_found": {
+    "src_hash": "d74cfab59a5109eb785c4a0529c86d06",
+    "text": "Ai găsit câteva fructe aurii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:49.689219Z"
+  },
+  "quests.bigfoot_burden.golem_returned": {
+    "src_hash": "9b62f0a69b86d144ca3e1576a14a58c0",
+    "text": "Golemul a fost returnat la atelierul gnomic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:49.689552Z"
+  },
+  "quests.bigfoot_burden.golems_enough": {
+    "src_hash": "09f9e9d1e34832d2001a9dad6ec10799",
+    "text": "Ai returnat destui golems pentru moment. Dă-le gnomilor ceva timp pentru reparații. Raportați acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:49.690052Z"
+  },
+  "quests.bigfoot_burden.grayed_success": {
+    "src_hash": "008ee9986ebce5c395cc4c1b16eb61ed",
+    "text": "Ai fost radiografiat cu succes. Acum, lăsați-l pe doctorul Gnomedix să vă inspecteze urechile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:49.690659Z"
+  },
+  "quests.bigfoot_burden.loot_warning": {
+    "src_hash": "0ae78e5ea93c887a30cc25c8b7f38626",
+    "text": "Ai un minut pentru a jefui șeful și a părăsi camera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:57.397460Z"
+  },
+  "quests.bigfoot_burden.matchmaker_complete": {
+    "src_hash": "b984ec9660da868ecc69c9a2c01639ec",
+    "text": "Felicitări! Cristalele par să se fi îndrăgostit și misiunea ta s-a încheiat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:57.397925Z"
+  },
+  "quests.bigfoot_burden.melody_complete": {
+    "src_hash": "2a218e761bb906e1d5e72c8e4ffaad90",
+    "text": "Asta a fost nota corectă! Acum știi melodia sufletului tău!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:57.398449Z"
+  },
+  "quests.bigfoot_burden.mind_refreshed": {
+    "src_hash": "d8af034712525ba4e9c7c6f91fc42164",
+    "text": "Mintea ta se simte revigorată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:57.398757Z"
+  },
+  "quests.bigfoot_burden.mushroom_wait": {
+    "src_hash": "bc4e0249920d6057542c82785457005a",
+    "text": "Trebuie să așteptați pentru a extrage sporii din această ciupercă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:44:57.399221Z"
+  },
+  "quests.bigfoot_burden.need_mission_crystal": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Ai nevoie de un cristal de misiune sau de o lucrare făcută cu Gnomission pentru a intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:05.209444Z"
+  },
+  "quests.bigfoot_burden.need_teleport_crystal": {
+    "src_hash": "26c4744888f98b7829aa86e24ea0aab3",
+    "text": "Aveți nevoie de un cristal de teleportare pentru a utiliza acest dispozitiv.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:05.209889Z"
+  },
+  "quests.bigfoot_burden.no_endurance_test": {
+    "src_hash": "d24aac0def4b8f7ae074a9da3619a273",
+    "text": "Din fericire, nu trebuie să iei rezistența în acest moment.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:05.210360Z"
+  },
+  "quests.bigfoot_burden.not_permitted": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Nu aveți voie să intrați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:05.210680Z"
+  },
+  "quests.bigfoot_burden.pig_eating": {
+    "src_hash": "82aeede3e6b7b325ed4ea821f13b0756",
+    "text": "Porcușorul mănâncă bucuros trufele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:05.211084Z"
+  },
+  "quests.bigfoot_burden.pig_stuffed": {
+    "src_hash": "90b1df4f5cbf78315c5e1c7d65fdcd02",
+    "text": "Porcușorul este umplut și mai bine îl întoarceți acasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:12.147497Z"
+  },
+  "quests.bigfoot_burden.rank_too_low": {
+    "src_hash": "582ca49ea8f77df099515acb0c43ff6b",
+    "text": "Rangul tău printre Gnomi este prea scăzut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:12.147873Z"
+  },
+  "quests.bigfoot_burden.room_wait": {
+    "src_hash": "1ccc70eac63b4b35bbbe04c64197ce03",
+    "text": "Vă rog, așteptați până când camera este eliberată. Acest lucru se întâmplă la 30 de minute după ce ultima echipă a intrat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:12.148455Z"
+  },
+  "quests.bigfoot_burden.shooting_complete": {
+    "src_hash": "199f93db257e69b9ac55cee85d09d2f4",
+    "text": "Ați atins suficiente ținte. Raportați înapoi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:12.148811Z"
+  },
+  "quests.bigfoot_burden.shooting_hit": {
+    "src_hash": "1ec47fa3f005f5e253a4276eb0a85264",
+    "text": "Lovit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:12.149014Z"
+  },
+  "quests.bigfoot_burden.shooting_wrong_target": {
+    "src_hash": "f1e02a4ba46f414753f21ad13d243d0c",
+    "text": "Ai lovit ținta greșită și trebuie să o iei de la capăt!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:19.788809Z"
+  },
+  "quests.bigfoot_burden.spark_gathered": {
+    "src_hash": "e2a9304e949d85c0ccd4fae3821c82fb",
+    "text": "Ai adunat o scânteie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:19.789105Z"
+  },
+  "quests.bigfoot_burden.spores_correct": {
+    "src_hash": "ba701d044d1c89b3a2220e990dfada15",
+    "text": "Ai adunat sporii corecti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:19.789402Z"
+  },
+  "quests.bigfoot_burden.spores_wrong": {
+    "src_hash": "3fe3a2d03e98d90dc8e4a0efacad3bb6",
+    "text": "Ai adunat sporii greșiți. Ți-ai distrus colecția.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:19.789819Z"
+  },
+  "quests.bigfoot_burden.stone_no_luck": {
+    "src_hash": "5755825d293ed93332adc4d7ffe268b4",
+    "text": "Nu ai avut noroc de data asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:19.790205Z"
+  },
+  "quests.bigfoot_burden.stone_success": {
+    "src_hash": "e21551f482607850807335b406abc608",
+    "text": "Abilitatea ta ți-a permis să apuci o piatră de ascuțit înainte ca piatra să se scufunde în lavă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:25.516674Z"
+  },
+  "quests.bigfoot_burden.teleported_out": {
+    "src_hash": "46c15d2ef0b6c08e61ff947b33b4fa6d",
+    "text": "Ai fost teleportat afară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:25.516994Z"
+  },
+  "quests.bigfoot_burden.wait_cooldown": {
+    "src_hash": "81cd907c01596f21e11a5fda9b70707f",
+    "text": "Așteptați 30 de minute pentru a începe din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:25.517332Z"
+  },
+  "quests.bigfoot_burden.warzone_cleared": {
+    "src_hash": "c7ad2edb9f91714ac566e858cc656831",
+    "text": "Ați eliberat deja această zonă de război în ultimele 20 de ore. Trebuie să așteptați încă {0} ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:25.517839Z"
+  },
+  "quests.bigfoot_burden.warzone_crystal_required": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Ai nevoie de un cristal de misiune sau de o lucrare făcută cu Gnomission pentru a intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:25.518361Z"
+  },
+  "quests.bigfoot_burden.warzone_entry_denied": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Nu aveți voie să intrați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:30.558009Z"
+  },
+  "quests.bigfoot_burden.warzone_mission_required": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "În sfârșit aveți suficientă renume printre gnomi, cereți lui Gnomission o misiune pentru a vă primi cristalul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:30.558570Z"
+  },
+  "quests.bigfoot_burden.wrong_crystal": {
+    "src_hash": "d9d9c8a0a86d368cf9c2a03ddac0526a",
+    "text": "Acesta nu este cristalul pe care îl cauți!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:30.558943Z"
+  },
+  "quests.children_revolution.spy_say_1": {
+    "src_hash": "80d42548a963923a14b1070fe6f4358b",
+    "text": "O cantitate impresionantă de pește este depozitată aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:30.559309Z"
+  },
+  "quests.children_revolution.spy_say_2": {
+    "src_hash": "9800f80914a0d764ef4c84491bd82ce6",
+    "text": "O gamă aparent nesfârșită de arme se întinde înaintea ta în întuneric.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:30.559733Z"
+  },
+  "quests.children_revolution.spy_say_3": {
+    "src_hash": "9b282e921bff701f86b3dff1f078ab25",
+    "text": "Aceste barăci par să fie acasă pentru o mulțime de soldați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:35.351238Z"
+  },
+  "quests.common.all_players_level": {
+    "src_hash": "a77e38d9c627d9ef2ab6207042d02378",
+    "text": "Toți jucătorii trebuie să fie de nivelul {0} sau mai mare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:35.351647Z"
+  },
+  "quests.common.arena_complete": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Felicitări! Ai terminat %s arena, ar trebui să iei recompensa acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:45:35.352072Z"
   }
 }

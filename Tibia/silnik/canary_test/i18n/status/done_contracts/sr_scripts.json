@@ -1,6 +1,6 @@
 {
   "file": "scripts.json",
-  "lang": "it",
+  "lang": "sr",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-16T20:26:01.579560Z"
+  "timestamp": "2026-02-16T20:26:09.028839Z"
 }

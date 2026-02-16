@@ -1,25 +1,17 @@
 {
-  "timestamp": "2026-02-16T20:25:31.793819Z",
+  "timestamp": "2026-02-16T20:26:28.529533Z",
   "checked_entries": 100,
-  "issues_found": 6,
+  "issues_found": 5,
   "issues_by_type": {
-    "identical_to_en": 1,
     "identical_to_en_exempt": 8,
     "artifact_token": 5,
-    "suspicious_log_high": 92,
     "suspicious_log_critical": 77,
-    "suspicious_log_low": 31,
+    "suspicious_log_low": 35,
+    "suspicious_log_high": 88,
     "suspicious_rejected_critical": 15,
     "suspicious_rejected_high": 2
   },
   "issues": [
-    {
-      "key": "book.otbm.x_33356_y_32222_z",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "{x = 33356, y = 32222, z = 15}",
-      "translated": "{x = 33356, y = 32222, z = 15}"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

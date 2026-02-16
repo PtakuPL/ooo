@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-16T20:24:52.066451Z",
-  "cycle_counter": 570,
-  "last_target_key": "ro:scripts.json",
+  "timestamp": "2026-02-16T20:26:13.461600Z",
+  "cycle_counter": 573,
+  "last_target_key": "sv:scripts.json",
   "last_pending_total": 2150,
   "last_tier": 1,
   "last_cat_priority": 6,
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 5,
+  "cache_cycle": 6,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -284,7 +284,9 @@
     "ro:html.json": 0,
     "it:questlog.json": 0,
     "sr:questlog.json": 0,
-    "sv:questlog.json": 0
+    "sv:questlog.json": 0,
+    "ro:scripts.json": 0,
+    "sr:scripts.json": 0
   },
   "bootstrap_priority": {
     "enabled": false,

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T20:25:30.250726Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T20:26:26.250053Z",
+  "language": "sv",
+  "json_file": "scripts.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "gamestore.desc.outfit_2",
+      "en": "An outfit that was created to suit you. We are sure you'll like it.",
+      "translated": "En outfit som skapades för att passa dig. Vi är säkra på att du kommer att gilla det.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "gamestore.desc.outfit_3",
+      "en": "Legend says only smart people should wear it, otherwise you will burn!",
+      "translated": "Legenden säger att bara smarta människor ska bära den, annars kommer du att bränna dig!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "gamestore.desc.preybonus_1",
+      "en": "You activated a prey but do not like the randomly selected bonus? Roll for a new one! Here you can purchase five Prey Bonus Rerolls! \\nA Bonus Reroll allows you to get a bonus with a higher value (max. 50%). The bonus for your prey will be selected randomly from one of the following: damage boost, damage reduction, bonus XP, improved loot. The 2 hours hunting time will start anew once you have rolled for a new bonus. Your prey monster will stay the same.",
+      "translated": "Du aktiverade ett byte men gillar inte den slumpmässigt valda bonusen? Rulla för en ny! Här kan du köpa fem Prey Bonus Rerolls! \\nA Bonus Reroll låter dig få en bonus med ett högre värde (max. 50%). Bonusen för ditt byte kommer att väljas slumpmässigt från något av följande: skadeförstärkning, skademinskning, bonus XP, förbättrat byte. Den 2 timmar långa jakttiden kommer att börja om när du har rullat för en ny bonus. Ditt bytesmonster kommer att förbli detsamma.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "gamestore.desc.preyslot_1",
+      "en": "It's hunting season! Activate a prey to gain a bonus when hunting a certain monster. Every character can purchase one Permanent Prey Slot, which enables the activation of an additional prey. \\nIf you activate a prey, you can select one monster out of nine. The bonus for your prey will be selected randomly from one of the following: damage boost, damage reduction, bonus XP, improved loot. The bonus value may range from 5% to 50%. Your prey will be active for 2 hours hunting time: the duration of an active prey will only be reduced while you are hunting.",
+      "translated": "Det är jaktsäsong! Aktivera ett byte för att få en bonus när du jagar ett visst monster. Varje karaktär kan köpa en Permanent Prey Slot, vilket möjliggör aktivering av ytterligare ett byte. \\nOm du aktiverar ett byte kan du välja ett monster av nio. Bonusen för ditt byte kommer att väljas slumpmässigt från något av följande: skadeförstärkning, skademinskning, bonus XP, förbättrat byte. Bonusvärdet kan variera från 5% till 50%. Ditt byte kommer att vara aktivt under 2 timmars jakttid: varaktigheten för ett aktivt byte kommer bara att minskas medan du jagar.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "gamestore.desc.sexchange_1",
+      "en": "Bored of your character's sex? Get a new sex for him now!!",
+      "translated": "Är du trött på din karaktärs kön? Skaffa ett nytt sex till honom nu!!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "gamestore.desc.temple_1",
+      "en": "Need a quick way home? Buy this transportation service to get instantly teleported to your home temple. \\n\\nNote, you cannot use this service while having a battle sign or a protection zone block. Further, the service will not work in no-logout zones or close to your home temple.",
+      "translated": "Behöver du en snabb väg hem? Köp den här transporttjänsten för att omedelbart bli teleporterad till ditt hemtempel. \\n\\nObs, du kan inte använda den här tjänsten när du har ett stridstecken eller ett skyddszonblock. Dessutom kommer tjänsten inte att fungera i zoner utan utloggning eller nära ditt hemtempel.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "gamestore.disabled.active_xp_boost",
+      "en": "You already have an active XP boost.",
+      "translated": "Du har redan en aktiv XP-boost.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "gamestore.disabled.all_blessings",
+      "en": "You already have all Blessings.",
+      "translated": "Du har redan alla välsignelser.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "gamestore.disabled.already_3_slots",
+      "en": "You already have 3 slots released.",
+      "translated": "Du har redan 3 släppta platser.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "gamestore.disabled.already_addon",
+      "en": "You already have this addon.",
+      "translated": "Du har redan detta tillägg.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "gamestore.disabled.already_charm_expansion",
+      "en": "You already have charm expansion.",
+      "translated": "Du har redan charmexpansion.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.already_have_item",
+      "en": "You already have a %s.",
+      "translated": "Du har redan en %s.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.already_mount",
+      "en": "You already have this mount.",
+      "translated": "Du har redan det här fästet.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.already_outfit",
+      "en": "You already have this outfit.",
+      "translated": "Du har redan den här outfiten.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.hoggle.farewell_msg_1",
-      "en": "Good bye.",
-      "translated": "Adiós.",
-      "source": "simple"
+      "key": "gamestore.disabled.fake_offer",
+      "en": "The offer is fake.",
+      "translated": "Erbjudandet är falskt.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.hoggle.walkaway_msg_1",
-      "en": "Good bye.",
-      "translated": "Adiós.",
-      "source": "simple"
+      "key": "gamestore.disabled.hireling_outfit_unlocked",
+      "en": "This hireling outfit is already unlocked.",
+      "translated": "Den här hyresdräkten är redan upplåst.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.hugo.bat_not_enough",
-      "en": "No, no. I need more bat wings! I said, 10!",
-      "translated": "No, no. ¡Necesito más alas de murciélago! ¡Dije 10!",
-      "source": "tm"
+      "key": "gamestore.disabled.max_blessing",
+      "en": "You reached the maximum amount for this blessing.",
+      "translated": "Du nådde maxbeloppet för denna välsignelse.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.irea.farewell_msg_1",
-      "en": "Good bye!",
-      "translated": "¡Adiós!",
-      "source": "simple"
+      "key": "gamestore.disabled.max_hirelings",
+      "en": "You already have bought the maximum number of allowed hirelings.",
+      "translated": "Du har redan köpt det maximala antalet tillåtna hyresgäster.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.iskan.greet_msg_1",
-      "en": "You are not one of us. I don't want to talk to you.",
-      "translated": "No eres uno de nosotros. No quiero hablar contigo.",
-      "source": "tm"
+      "key": "gamestore.disabled.max_prey_wildcards",
+      "en": "You already have maximum of prey wildcards.",
+      "translated": "Du har redan maximalt med byte-jokertecken.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.iskan.stdmod_21",
-      "en": "Easy, boys! Don't mention that name again. Makes the boys nuts, ye know?",
-      "translated": "¡Tranquilo, muchachos! No vuelvas a mencionar ese nombre. Vuelve locos a los chicos, ¿sabes?",
-      "source": "tm"
+      "key": "gamestore.disabled.max_reward_tokens",
+      "en": "You already have maximum of reward tokens.",
+      "translated": "Du har redan maximalt med belöningstoken.",
+      "source": "google_translate"
     }
   ]
 }

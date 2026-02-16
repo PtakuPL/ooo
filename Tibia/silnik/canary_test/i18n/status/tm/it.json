@@ -11854,5 +11854,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:21:37.936218Z"
+  },
+  "gamestore.modal.error": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.341961Z"
+  },
+  "scripts.actions_MedusaOil.msg_5": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.377395Z"
+  },
+  "scripts.actions_augerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.380130Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.404108Z"
+  },
+  "scripts.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.412826Z"
+  },
+  "scripts.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.413640Z"
+  },
+  "scripts.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.414460Z"
+  },
+  "scripts.actions_peelerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.428949Z"
+  },
+  "scripts.actions_pickenchanted.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.430648Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.441209Z"
+  },
+  "scripts.actions_scissorsfun.msg_1": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.447330Z"
+  },
+  "scripts.construction_kits.msg_1": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Metti prima il kit di costruzione sul pavimento.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.474432Z"
+  },
+  "scripts.construction_kits.msg_2": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Puoi costruirlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.475054Z"
+  },
+  "scripts.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Hai perso la scaramuccia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.476334Z"
+  },
+  "scripts.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Congratulazioni, hai ricevuto il costume Poltergeist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.479399Z"
+  },
+  "scripts.find_person.dir_east": {
+    "src_hash": "320381dbf7cd2f31c04baa6b36e1c682",
+    "text": "est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.500842Z"
+  },
+  "scripts.find_person.dir_north": {
+    "src_hash": "8d8d1437907bca79900ac5f0ea1f5c73",
+    "text": "nord",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.501244Z"
+  },
+  "scripts.find_person.dir_south": {
+    "src_hash": "50fd76e33fe5b9617c5ca99008af8904",
+    "text": "sud",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.502056Z"
+  },
+  "scripts.find_person.dir_west": {
+    "src_hash": "da4f0053a5c13882268852ae2da2e466",
+    "text": "ovest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.502774Z"
+  },
+  "scripts.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Non sei il proprietario.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.503992Z"
+  },
+  "scripts.golden.msg_1": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Hai bisogno di 5 giocatori per combattere questo boss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.515346Z"
+  },
+  "scripts.golden.msg_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Qualcuno sta combattendo contro il capo! Devi aspettare un po'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.516126Z"
+  },
+  "scripts.imbuement_shrine.msg_1": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Non hai raccolto abbastanza conoscenza dagli antichi Plasmatori. Visita il tempio dei Plasmatori a Montag per chiedere aiuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.522726Z"
+  },
+  "scripts.imbuement_shrine.msg_2": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Puoi utilizzare il santuario solo su un oggetto valido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.523472Z"
+  },
+  "scripts.keys.msg_1": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Sei entrato in un'antica cella di prigione demoniaca!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.527977Z"
+  },
+  "scripts.keys.msg_2": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Hai quindici minuti per uccidere e saccheggiare questo boss, altrimenti perderai questa possibilità.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.528796Z"
+  },
+  "scripts.kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Puoi costruirlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.529594Z"
+  },
+  "scripts.mechanical_fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Non sei il proprietario.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.537251Z"
+  },
+  "scripts.movement_kroazur_room.say_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Qualcuno sta combattendo contro il capo! Devi aspettare un po'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.554448Z"
+  },
+  "scripts.quests.msg_3": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.601945Z"
+  },
+  "scripts.quests.msg_6": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.602919Z"
+  },
+  "scripts.register_actions.exhaust_message": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:25:54.605227Z"
+  },
+  "gamestore.desc.expboost_1": {
+    "src_hash": "1f8ff19d92323e2ad0570448ae6e95f1",
+    "text": "Sei stanco di livellare lentamente? provalo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.516764Z"
+  },
+  "gamestore.desc.mount_1": {
+    "src_hash": "1ade786d188688927cdeada39e460f59",
+    "text": "Questa è una montatura fantastica che aiuta a diventare più veloci, provala!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.517451Z"
+  },
+  "gamestore.desc.mount_2": {
+    "src_hash": "641bf2f7765ffdb9a21f971f2cfb249e",
+    "text": "Il primo cavaliere su questa cavalcatura divenne il leader del suo paese! lo dicono le leggende.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.518059Z"
+  },
+  "gamestore.desc.namechange_1": {
+    "src_hash": "7feebfb6dee744778b4c20d57ce28e79",
+    "text": "Sei cacciato? Stanco di questo? Ottieni un nuovo nome, una nuova vita!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.518682Z"
+  },
+  "gamestore.desc.namechange_2": {
+    "src_hash": "fc88f849550299a38bfb2c83548e40e6",
+    "text": "Un nuovo nome per soddisfare le tue esigenze!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.519126Z"
+  },
+  "gamestore.desc.outfit_1": {
+    "src_hash": "7d1506afe3c00400d06330d74ad53137",
+    "text": "Questo vestito sembra carino. Solo le persone di alta classe possono indossarlo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.519664Z"
+  },
+  "gamestore.desc.outfit_2": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Un outfit creato su misura per te. Siamo sicuri che ti piacerà.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.520240Z"
+  },
+  "gamestore.desc.outfit_3": {
+    "src_hash": "c6a2256abb5408a214c5c61689e2071d",
+    "text": "La leggenda dice che solo le persone intelligenti dovrebbero indossarlo, altrimenti brucerai!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.520785Z"
+  },
+  "gamestore.desc.preybonus_1": {
+    "src_hash": "ba965e035752e2099adfe30997c25d57",
+    "text": "Hai attivato una preda ma non ti piace il bonus selezionato casualmente? Lanciati per uno nuovo! Qui puoi acquistare cinque Reroll Prey Bonus! \\nUn Bonus Reroll ti consente di ottenere un bonus di valore più alto (max. 50%). Il bonus per la tua preda verrà selezionato casualmente da uno dei seguenti: aumento del danno, riduzione del danno, XP bonus, bottino migliorato. Il tempo di caccia di 2 ore ricomincerà una volta che avrai tirato per un nuovo bonus. Il tuo mostro preda rimarrà lo stesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.523269Z"
+  },
+  "gamestore.desc.preyslot_1": {
+    "src_hash": "e28416aff7d557334bec15fb821ac8a9",
+    "text": "È la stagione della caccia! Attiva una preda per ottenere un bonus quando cacci un determinato mostro. Ogni personaggio può acquistare uno slot preda permanente, che consente l'attivazione di una preda aggiuntiva. \\nSe attivi una preda, puoi selezionare un mostro tra nove. Il bonus per la tua preda verrà selezionato casualmente da uno dei seguenti: aumento del danno, riduzione del danno, XP bonus, bottino migliorato. Il valore del bonus può variare dal 5% al ​​50%. La tua preda sarà attiva per 2 ore di tempo di caccia: la durata di una preda attiva sarà ridotta solo durante la caccia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.526139Z"
+  },
+  "gamestore.desc.sexchange_1": {
+    "src_hash": "9b596440f4b4adb7b8d12b5eab6a3d17",
+    "text": "Annoiato dal sesso del tuo personaggio? Ottieni un nuovo sesso per lui adesso!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.526762Z"
+  },
+  "gamestore.desc.temple_1": {
+    "src_hash": "fbff8d8b619737c61a61eb89f4f78a34",
+    "text": "Hai bisogno di un ritorno veloce a casa? Acquista questo servizio di trasporto per essere immediatamente teletrasportato al tuo tempio di origine. \\n\\nNota, non puoi utilizzare questo servizio mentre hai un segno di battaglia o un blocco della zona di protezione. Inoltre, il servizio non funzionerà nelle zone senza disconnessione o vicino al tuo tempio di casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.528461Z"
+  },
+  "gamestore.disabled.active_xp_boost": {
+    "src_hash": "9f8d44629840b8c24221d34aeb6eeb3a",
+    "text": "Hai già un potenziamento XP attivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.528944Z"
+  },
+  "gamestore.disabled.all_blessings": {
+    "src_hash": "0a240f9440015514195404b191ed6c4a",
+    "text": "Hai già tutte le benedizioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.529431Z"
+  },
+  "gamestore.disabled.already_3_slots": {
+    "src_hash": "a52cfe40b19318eb1a6cc026e95be42e",
+    "text": "Hai già 3 slot liberati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.529869Z"
+  },
+  "gamestore.disabled.already_addon": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Hai già questo componente aggiuntivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.530476Z"
+  },
+  "gamestore.disabled.already_charm_expansion": {
+    "src_hash": "ae5faf495a84cd087847248c6d684e08",
+    "text": "Hai già l'espansione del fascino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:01.530923Z"
   }
 }

@@ -4718,5 +4718,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:23:36.788407Z"
+  },
+  "gamestore.modal.error": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Fel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.699655Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Du hittade ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.711212Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.717553Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.719777Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.721202Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.728237Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.728983Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.738329Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.743786Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.744332Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.745469Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.746068Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Du hittade ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.751313Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Du hittade ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.752041Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.762938Z"
+  },
+  "scripts.find_person.dir_east": {
+    "src_hash": "320381dbf7cd2f31c04baa6b36e1c682",
+    "text": "öster",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.783972Z"
+  },
+  "scripts.find_person.dir_north": {
+    "src_hash": "8d8d1437907bca79900ac5f0ea1f5c73",
+    "text": "norr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.784379Z"
+  },
+  "scripts.find_person.dir_south": {
+    "src_hash": "50fd76e33fe5b9617c5ca99008af8904",
+    "text": "söder",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.785150Z"
+  },
+  "scripts.find_person.dir_west": {
+    "src_hash": "da4f0053a5c13882268852ae2da2e466",
+    "text": "väster",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.785722Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.787198Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.787553Z"
+  },
+  "scripts.quests.msg_3": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.843378Z"
+  },
+  "scripts.quests.msg_6": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.844167Z"
+  },
+  "scripts.register_actions.exhaust_message": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:14.845668Z"
+  },
+  "gamestore.desc.expboost_1": {
+    "src_hash": "1f8ff19d92323e2ad0570448ae6e95f1",
+    "text": "Är du trött på att utjämna långsamt? prova det!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.419721Z"
+  },
+  "gamestore.desc.mount_1": {
+    "src_hash": "1ade786d188688927cdeada39e460f59",
+    "text": "Detta är ett fantastiskt fäste som hjälper till att bli snabbare, prova det!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.420475Z"
+  },
+  "gamestore.desc.mount_2": {
+    "src_hash": "641bf2f7765ffdb9a21f971f2cfb249e",
+    "text": "Den första ryttaren på detta berg blev ledare för sitt land! legender säger det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.421155Z"
+  },
+  "gamestore.desc.namechange_1": {
+    "src_hash": "7feebfb6dee744778b4c20d57ce28e79",
+    "text": "Är du jagad? Trött på det? Skaffa ett nytt namn, ett nytt liv!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.421930Z"
+  },
+  "gamestore.desc.namechange_2": {
+    "src_hash": "fc88f849550299a38bfb2c83548e40e6",
+    "text": "Ett nytt namn som passar dina behov!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.422553Z"
+  },
+  "gamestore.desc.outfit_1": {
+    "src_hash": "7d1506afe3c00400d06330d74ad53137",
+    "text": "Den här outfiten ser fin ut. Endast högklassiga människor kan bära den!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.423169Z"
+  },
+  "gamestore.desc.outfit_2": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "En outfit som skapades för att passa dig. Vi är säkra på att du kommer att gilla det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.424196Z"
+  },
+  "gamestore.desc.outfit_3": {
+    "src_hash": "c6a2256abb5408a214c5c61689e2071d",
+    "text": "Legenden säger att bara smarta människor ska bära den, annars kommer du att bränna dig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.425001Z"
+  },
+  "gamestore.desc.preybonus_1": {
+    "src_hash": "ba965e035752e2099adfe30997c25d57",
+    "text": "Du aktiverade ett byte men gillar inte den slumpmässigt valda bonusen? Rulla för en ny! Här kan du köpa fem Prey Bonus Rerolls! \\nA Bonus Reroll låter dig få en bonus med ett högre värde (max. 50%). Bonusen för ditt byte kommer att väljas slumpmässigt från något av följande: skadeförstärkning, skademinskning, bonus XP, förbättrat byte. Den 2 timmar långa jakttiden kommer att börja om när du har rullat för en ny bonus. Ditt bytesmonster kommer att förbli detsamma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.428151Z"
+  },
+  "gamestore.desc.preyslot_1": {
+    "src_hash": "e28416aff7d557334bec15fb821ac8a9",
+    "text": "Det är jaktsäsong! Aktivera ett byte för att få en bonus när du jagar ett visst monster. Varje karaktär kan köpa en Permanent Prey Slot, vilket möjliggör aktivering av ytterligare ett byte. \\nOm du aktiverar ett byte kan du välja ett monster av nio. Bonusen för ditt byte kommer att väljas slumpmässigt från något av följande: skadeförstärkning, skademinskning, bonus XP, förbättrat byte. Bonusvärdet kan variera från 5% till 50%. Ditt byte kommer att vara aktivt under 2 timmars jakttid: varaktigheten för ett aktivt byte kommer bara att minskas medan du jagar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.431377Z"
+  },
+  "gamestore.desc.sexchange_1": {
+    "src_hash": "9b596440f4b4adb7b8d12b5eab6a3d17",
+    "text": "Är du trött på din karaktärs kön? Skaffa ett nytt sex till honom nu!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.432158Z"
+  },
+  "gamestore.desc.temple_1": {
+    "src_hash": "fbff8d8b619737c61a61eb89f4f78a34",
+    "text": "Behöver du en snabb väg hem? Köp den här transporttjänsten för att omedelbart bli teleporterad till ditt hemtempel. \\n\\nObs, du kan inte använda den här tjänsten när du har ett stridstecken eller ett skyddszonblock. Dessutom kommer tjänsten inte att fungera i zoner utan utloggning eller nära ditt hemtempel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.433853Z"
+  },
+  "gamestore.disabled.active_xp_boost": {
+    "src_hash": "9f8d44629840b8c24221d34aeb6eeb3a",
+    "text": "Du har redan en aktiv XP-boost.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.434673Z"
+  },
+  "gamestore.disabled.all_blessings": {
+    "src_hash": "0a240f9440015514195404b191ed6c4a",
+    "text": "Du har redan alla välsignelser.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.435196Z"
+  },
+  "gamestore.disabled.already_3_slots": {
+    "src_hash": "a52cfe40b19318eb1a6cc026e95be42e",
+    "text": "Du har redan 3 släppta platser.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.435680Z"
+  },
+  "gamestore.disabled.already_addon": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Du har redan detta tillägg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.436128Z"
+  },
+  "gamestore.disabled.already_charm_expansion": {
+    "src_hash": "ae5faf495a84cd087847248c6d684e08",
+    "text": "Du har redan charmexpansion.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.436565Z"
+  },
+  "gamestore.disabled.already_have_item": {
+    "src_hash": "8924be96e7d1a0554121764002ea4e22",
+    "text": "Du har redan en %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:22.437203Z"
+  },
+  "gamestore.disabled.already_mount": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Du har redan det här fästet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.216596Z"
+  },
+  "gamestore.disabled.already_outfit": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Du har redan den här outfiten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.217086Z"
+  },
+  "gamestore.disabled.fake_offer": {
+    "src_hash": "8ed29edf04745efdd8e8a5419406515b",
+    "text": "Erbjudandet är falskt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.217459Z"
+  },
+  "gamestore.disabled.hireling_outfit_unlocked": {
+    "src_hash": "b801ac2888be1b8234d07665e787127d",
+    "text": "Den här hyresdräkten är redan upplåst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.217938Z"
+  },
+  "gamestore.disabled.max_blessing": {
+    "src_hash": "5096a4f628327814a247bb8a7ceaed7d",
+    "text": "Du nådde maxbeloppet för denna välsignelse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.218511Z"
+  },
+  "gamestore.disabled.max_hirelings": {
+    "src_hash": "07894d5477945cbabac01dbaf4d5c49f",
+    "text": "Du har redan köpt det maximala antalet tillåtna hyresgäster.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.219074Z"
+  },
+  "gamestore.disabled.max_prey_wildcards": {
+    "src_hash": "19b4910bc35b9b4357a1dbcd309465c2",
+    "text": "Du har redan maximalt med byte-jokertecken.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.219550Z"
+  },
+  "gamestore.disabled.max_reward_tokens": {
+    "src_hash": "844f047f2d6060c9de0920fcbfb47730",
+    "text": "Du har redan maximalt med belöningstoken.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:26.220054Z"
   }
 }

@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-16T22:46:30.236626Z",
+  "timestamp": "2026-02-16T23:16:37.791045Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
   "status": "warming_up",
   "alert": false,
-  "message": "Stagnation window not ready (window_too_short), span=2.53h samples=52",
+  "message": "Stagnation window not ready (window_too_short), span=3.02h samples=61",
   "reason": "window_too_short",
   "top_key": "es:npc.json",
   "top_count": 24,
   "old_total": 40051,
-  "new_total": 38819,
-  "decrease_pct": 3.08,
+  "new_total": 38771,
+  "decrease_pct": 3.2,
   "old_ts": "2026-02-14T13:52:38.976125Z",
-  "new_ts": "2026-02-16T22:43:58.483723Z",
-  "hours_elapsed": 2.529,
-  "sample_count": 52,
+  "new_ts": "2026-02-16T23:13:40.083151Z",
+  "hours_elapsed": 3.024,
+  "sample_count": 61,
   "per_lang_trend": {
     "ar": {
       "old": 920,
@@ -73,9 +73,9 @@
     },
     "es": {
       "old": 222,
-      "new": 294,
-      "delta": -72,
-      "decrease_pct": -32.43
+      "new": 296,
+      "delta": -74,
+      "decrease_pct": -33.33
     },
     "et": {
       "old": 671,
@@ -139,9 +139,9 @@
     },
     "it": {
       "old": 638,
-      "new": 515,
-      "delta": 123,
-      "decrease_pct": 19.28
+      "new": 511,
+      "delta": 127,
+      "decrease_pct": 19.91
     },
     "ja": {
       "old": 920,
@@ -223,15 +223,15 @@
     },
     "ro": {
       "old": 699,
-      "new": 543,
-      "delta": 156,
-      "decrease_pct": 22.32
+      "new": 532,
+      "delta": 167,
+      "decrease_pct": 23.89
     },
     "ru": {
       "old": 493,
-      "new": 286,
-      "delta": 207,
-      "decrease_pct": 41.99
+      "new": 254,
+      "delta": 239,
+      "decrease_pct": 48.48
     },
     "sk": {
       "old": 671,
@@ -253,15 +253,15 @@
     },
     "sr": {
       "old": 671,
-      "new": 495,
-      "delta": 176,
-      "decrease_pct": 26.23
+      "new": 494,
+      "delta": 177,
+      "decrease_pct": 26.38
     },
     "sv": {
       "old": 671,
-      "new": 547,
-      "delta": 124,
-      "decrease_pct": 18.48
+      "new": 545,
+      "delta": 126,
+      "decrease_pct": 18.78
     },
     "sw": {
       "old": 921,

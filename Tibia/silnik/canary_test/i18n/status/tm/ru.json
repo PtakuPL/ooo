@@ -17038,5 +17038,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:13:33.228408Z"
+  },
+  "questlog.quest_10.mission_5.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Спросите Палимута о миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.781613Z"
+  },
+  "questlog.quest_10.mission_6.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Спросите Палимута о миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.782504Z"
+  },
+  "questlog.quest_10.mission_7.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Спросите Палимута о миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.783152Z"
+  },
+  "questlog.quest_10.mission_8.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Спросите Палимута о миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.783809Z"
+  },
+  "questlog.quest_31.mission_1.state_4": {
+    "src_hash": "0ef4d7f94a08900604a4beeee409741f",
+    "text": "Вы завершили квест!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.831720Z"
+  },
+  "questlog.quest_31.mission_12.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Вы завершили квест!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.833051Z"
+  },
+  "questlog.quest_31.mission_4.state_6": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Вы завершили квест!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.835064Z"
+  },
+  "questlog.quest_31.mission_5.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Вы завершили квест!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:29.835711Z"
+  },
+  "questlog.quest_10.mission_4.state_2": {
+    "src_hash": "73dca76c968e0da6c4e9b731c7c600d9",
+    "text": "Для этой миссии вас попросят пойти в Торговый квартал и вести переговоры или угрожать мистеру Уэсту. Вы снова получите доступ к механизму, но если вы решите помочь Палимуту, вам придется пройти через канализацию.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:36.772877Z"
+  },
+  "questlog.quest_10.mission_4.state_3": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Вы решили помочь Палимуту, сообщите ему о своей миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:40.143313Z"
+  },
+  "questlog.quest_10.mission_4.state_4": {
+    "src_hash": "9fe5da3c0f71c8a09af85510534c8ba9",
+    "text": "Вы решили помочь Azerus, сообщите ему о своей миссии. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:40.143965Z"
+  },
+  "questlog.quest_10.mission_4.state_5": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Вернитесь к Azerus и сообщите ему о своей миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:40.144441Z"
+  },
+  "questlog.quest_10.mission_4.state_6": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Попросите Azerus о миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:40.144882Z"
+  },
+  "questlog.quest_10.mission_5.state_2": {
+    "src_hash": "2b3b293eb63c29ebf8c014c7b6971b72",
+    "text": "В этой миссии вас попросят найти друида по имени Тамерин в квартале Арены. Теперь у вас есть разрешение на использование механизма ворот.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:45.400708Z"
+  },
+  "questlog.quest_10.mission_5.state_3": {
+    "src_hash": "62b9d2d37746c892dd4df931a0a33898",
+    "text": "Первый — принести Тамерину флакон с лекарством для животных, его можно купить у Сифлинда на Нибелоре (к северо-востоку от Svargrond).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:45.401420Z"
+  },
+  "questlog.quest_10.mission_5.state_4": {
+    "src_hash": "739c0509ff0989bf4f80c0f630a78c52",
+    "text": "теперь вам предстоит убить Морика Гладиатора и в качестве доказательства принести его шлем Тамерину.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:45.401957Z"
+  },
+  "questlog.quest_10.mission_5.state_5": {
+    "src_hash": "393997f8fae41e4e5ae2b8e9a55ebb73",
+    "text": "Сообщите Тамерину, он выслушает ваш запрос, и теперь вы сможете сделать свой выбор: крупный рогатый скот для Палимута (хорошая сторона), боевые звери для Ялахари (Azerus) (плохая сторона). Затем сообщите тому, кому вы решили свою миссию.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:45.402906Z"
+  },
+  "questlog.quest_10.mission_5.state_6": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Вы решили помочь Палимуту, сообщите ему о своей миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:45.403334Z"
+  },
+  "questlog.quest_10.mission_5.state_7": {
+    "src_hash": "4958a0cafba75b54582d823362abf797",
+    "text": "Вы решили помочь Azerus, сообщите ему о своей миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:49.373839Z"
+  },
+  "questlog.quest_10.mission_5.state_8": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Попросите Azerus о миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:49.374291Z"
+  },
+  "questlog.quest_10.mission_6.state_2": {
+    "src_hash": "091357b2dd39db47864e2b36201e4ed6",
+    "text": "Ялахари (Azerus) приказывает вам отправиться в Кладбищенский квартал и найти странную резьбу. Он дает вам Призрачное заклинание и просит зарядить его измученными душами призраков, чтобы использовать их в качестве источника энергии. Палимуту нужно заклинание заряженного призрака, чтобы освободить эти души. Теперь вы можете использовать механизм Кладбищенского квартала. Идите к большому зданию в Кладбищенском квартале и используйте заклинание призрака на странной резьбе в задней части комнаты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:49.375853Z"
+  },
+  "questlog.quest_10.mission_6.state_3": {
+    "src_hash": "23cf4798636fbc19425b77e1f719de58",
+    "text": "Хорошая сторона: отправляйтесь к Палимуту, расспросите его о своей миссии и передайте амулет. Плохая сторона: спросите о вашей миссии в Ялахари (Azerus) и верните ее.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:49.376557Z"
+  },
+  "questlog.quest_10.mission_6.state_4": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Вернитесь к Azerus и сообщите ему о своей миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:53.466801Z"
+  },
+  "questlog.quest_10.mission_6.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Попросите Azerus о миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:53.467195Z"
+  },
+  "questlog.quest_10.mission_7.state_2": {
+    "src_hash": "fe0e78cb6a40e222fca587bcc5dbc1b1",
+    "text": "Плохая сторона: Ялахари (Azerus) отправит вас на новую миссию: отправиться в Затонувший квартал и убить Лидеров Квара, Инки, Брызги и Острозуба. Хорошая сторона: вместо того, чтобы сражаться с лидерами Квара, Палимут отправит вас найти причину агрессивного поведения Quaras. Найдите Маритиму и поговорите с ней о Кваре, и она объяснит, в чем их проблема.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:53.468410Z"
+  },
+  "questlog.quest_10.mission_7.state_3": {
+    "src_hash": "1e4fdc659915eb097d93e598dad3f11f",
+    "text": "Возвращайтесь к Палимуту и ​​сообщите ему о своей миссии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:53.468872Z"
   }
 }

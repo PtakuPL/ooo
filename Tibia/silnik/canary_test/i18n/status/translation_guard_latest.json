@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16T23:14:56.088695Z",
-  "cycle": 31,
+  "timestamp": "2026-02-16T23:17:53.908274Z",
+  "cycle": 32,
   "language": "ru",
-  "json_file": "raids.json",
-  "translated": 0,
+  "json_file": "questlog.json",
+  "translated": 33,
   "placeholders": 0,
-  "guard_fail": 50,
+  "guard_fail": 17,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 127
+  "strict_skipped_done": 61
 }

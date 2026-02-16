@@ -24782,5 +24782,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:13:15.096773Z"
+  },
+  "raid.pirates.name": {
+    "src_hash": "281a66b1f4a1ded6214bdbd1a35f8e1f",
+    "text": "Pirates",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:02.176957Z"
+  },
+  "raid.lions.name": {
+    "src_hash": "c1820fe7ba2586a76c19e56cd5e8d84b",
+    "text": "Lions",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:02.177628Z"
+  },
+  "raid.minotaurs.name": {
+    "src_hash": "6fce9dc510d2ecb3f7bea0d5a50b0df2",
+    "text": "Minotaurs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:02.178019Z"
+  },
+  "raid.necropharus.name": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Necropharus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:02.178432Z"
+  },
+  "raid.example.name": {
+    "src_hash": "0a52730597fb4ffa01fc117d9e71e3a9",
+    "text": "Example",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:04.779157Z"
+  },
+  "raid.raids.name": {
+    "src_hash": "650d0052540bb7fa10d8ec5e7c7d8542",
+    "text": "Raids",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:04.779511Z"
+  },
+  "raid.undead_darashia.name": {
+    "src_hash": "514c7d86ea50becf3dec530e0e131ce0",
+    "text": "Undead Darashia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:04.779867Z"
+  },
+  "raid.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:04.780207Z"
+  },
+  "raid.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:04.780635Z"
+  },
+  "raid.priestesses.name": {
+    "src_hash": "99f5ad99e1be0fc1363f2a850146527c",
+    "text": "Priestesses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:07.368441Z"
+  },
+  "raid.barba_svar.name": {
+    "src_hash": "c7b6a31e7221a8f7beaa745a0d779579",
+    "text": "Barba Svar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:07.368835Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Barba Bittermor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:07.369260Z"
+  },
+  "raid.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:07.369578Z"
+  },
+  "raid.ice_golems.name": {
+    "src_hash": "724107539796c10b6ed076eeb39ffb6f",
+    "text": "Ice Golems",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:07.369898Z"
+  },
+  "raid.barbarian.name": {
+    "src_hash": "0a697cba19cd4c1974e2ee11a3c0b9c7",
+    "text": "Barbarian",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:09.970985Z"
+  },
+  "raid.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:09.971350Z"
+  },
+  "raid.ocyakao.name": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:09.971670Z"
+  },
+  "raid.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Zushuka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:09.971983Z"
+  },
+  "raid.warwolf.name": {
+    "src_hash": "a852632fa1f53203a9feee08f0d95119",
+    "text": "Warwolf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:09.972298Z"
+  },
+  "raid.dragons.name": {
+    "src_hash": "c880d3c8945e8fc312e989bd90a2cbf0",
+    "text": "Dragons",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:12.541916Z"
+  },
+  "raid.wasp_bear.name": {
+    "src_hash": "f5318a3971a453461b30996bcfcff0aa",
+    "text": "Wasp Bear",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:12.542383Z"
+  },
+  "raid.badger.name": {
+    "src_hash": "5841d0014fc42f0fcf9a019d349d50fd",
+    "text": "Badger",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:12.542857Z"
+  },
+  "raid.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:12.543225Z"
+  },
+  "raid.midnight_panther_3.name": {
+    "src_hash": "da72c589dd7fc87a49ed0ad968ab908c",
+    "text": "Midnight Panther 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:12.543618Z"
+  },
+  "raid.midnight_panther_1.name": {
+    "src_hash": "4dec404364fe3c69ff2b5b22e166ad04",
+    "text": "Midnight Panther 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:15.111948Z"
+  },
+  "raid.kongras.name": {
+    "src_hash": "976ec410cd5bb5d6d2596ee246716b91",
+    "text": "Kongras",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:15.112306Z"
+  },
+  "raid.terrorbirds.name": {
+    "src_hash": "ad62c49e881d6596744c943bc6c38cac",
+    "text": "Terrorbirds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:15.112686Z"
+  },
+  "raid.midnight_panther_2.name": {
+    "src_hash": "6e3040074dacf7fed85d0910a2cb9154",
+    "text": "Midnight Panther 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:15.113058Z"
+  },
+  "raid.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Serpent Spawn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:15.113438Z"
+  },
+  "raid.lizards.name": {
+    "src_hash": "90351a49f09c3cc62e3ff99c3d2e834d",
+    "text": "Lizards",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:17.749603Z"
+  },
+  "raid.rats.name": {
+    "src_hash": "9a68a64b35cbc7d56661485f0c4349df",
+    "text": "Ratti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:17.750194Z"
+  },
+  "raid.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:17.750549Z"
+  },
+  "raid.orcs.name": {
+    "src_hash": "b94646381d8b39f166f84024e5fc54fc",
+    "text": "Orchi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:17.750809Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Wild Horses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:17.751154Z"
+  },
+  "raid.sheng.name": {
+    "src_hash": "cdadd32b1ffa1e7b55859da2f4b3e628",
+    "text": "Sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:20.357549Z"
+  },
+  "raid.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:20.357980Z"
+  },
+  "raid.rottie1.name": {
+    "src_hash": "2434c72f6d31d3e067482645bae5c9df",
+    "text": "Rottie1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:20.358418Z"
+  },
+  "raid.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:20.358768Z"
+  },
+  "raid.rottie2.name": {
+    "src_hash": "33583cf2a19f1577097d56ad05d0a5d2",
+    "text": "Rottie2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:20.359079Z"
+  },
+  "raid.crustacea_gigantica_4.name": {
+    "src_hash": "e705031143466f92173a6cdc650abe2b",
+    "text": "Crustacea Gigantica 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:22.966462Z"
+  },
+  "raid.crustacea_gigantica_5.name": {
+    "src_hash": "20ac80461ca5823703b1a1c4c5dc1853",
+    "text": "Crustacea Gigantica 5",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:22.967023Z"
+  },
+  "raid.furyosa.name": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "Furyosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:22.967360Z"
+  },
+  "raid.chayenne.name": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:22.967711Z"
+  },
+  "raid.omrafir.name": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:22.968022Z"
+  },
+  "raid.gaz_haragoth.name": {
+    "src_hash": "b3dd522c06865f52bf4321b5d07cbd06",
+    "text": "Gaz Haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:25.607215Z"
+  },
+  "raid.yeti.name": {
+    "src_hash": "9cb073d5208162d71991a6077288e01e",
+    "text": "Yeti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:25.607627Z"
+  },
+  "raid.gargoyle.name": {
+    "src_hash": "fa149962cca7ce4eae40089644c4616b",
+    "text": "Gargoyle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:25.607978Z"
+  },
+  "raid.nomad.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Nomad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:25.608271Z"
+  },
+  "raid.cobra.name": {
+    "src_hash": "d13eca1c700558f57d0310ef14277cc2",
+    "text": "Cobra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:17:25.608602Z"
   }
 }

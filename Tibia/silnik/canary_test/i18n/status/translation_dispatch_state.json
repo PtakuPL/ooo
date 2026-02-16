@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-16T20:26:13.461600Z",
-  "cycle_counter": 573,
-  "last_target_key": "sv:scripts.json",
-  "last_pending_total": 2150,
+  "timestamp": "2026-02-16T20:27:38.552815Z",
+  "cycle_counter": 576,
+  "last_target_key": "ru:actions.json",
+  "last_pending_total": 33,
   "last_tier": 1,
-  "last_cat_priority": 6,
+  "last_cat_priority": 7,
   "candidates_count": 288,
   "active_candidates_count": 282,
   "skipped_backoff": 6,
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 6,
+  "cache_cycle": 7,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -286,7 +286,8 @@
     "sr:questlog.json": 0,
     "sv:questlog.json": 0,
     "ro:scripts.json": 0,
-    "sr:scripts.json": 0
+    "sr:scripts.json": 0,
+    "sv:scripts.json": 0
   },
   "bootstrap_priority": {
     "enabled": false,

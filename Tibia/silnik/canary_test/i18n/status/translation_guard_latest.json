@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-16T20:26:27.495748Z",
-  "cycle": 6,
-  "language": "sv",
-  "json_file": "scripts.json",
-  "translated": 50,
+  "timestamp": "2026-02-16T20:27:55.879576Z",
+  "cycle": 7,
+  "language": "ru",
+  "json_file": "actions.json",
+  "translated": 33,
   "placeholders": 0,
   "guard_fail": 0,
   "guard": {
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 20
+  "strict_skipped_done": 2
 }

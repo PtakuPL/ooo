@@ -87806,5 +87806,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T13:27:02.035061Z"
+  },
+  "gamestore.desc.outfit_2": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Strój stworzony specjalnie dla ciebie. Jesteśmy pewni, że ci się spodoba.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.141984Z"
+  },
+  "player.condition.feared": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ogarnia cię strach.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.205260Z"
+  },
+  "player.prey.bonus_expired": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Twoja premia prey wygasła.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.213215Z"
+  },
+  "player.prey.dialog.action_error": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "Wystąpił błąd podczas przetwarzania akcji. Spróbuj ponownie otworzyć okno prey.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.218325Z"
+  },
+  "player.prey.dialog.already_active": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "Masz już aktywnego potwora w tym slocie prey.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.219972Z"
+  },
+  "player.prey.dialog.creature_selected": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Ta istota jest już wybrana w innym slocie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.225475Z"
+  },
+  "player.prey.dialog.no_active_monster": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "W tym slocie prey nie masz aktywnego potwora.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.228029Z"
+  },
+  "player.task.dialog.action_error": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "Wystąpił błąd podczas przetwarzania akcji. Spróbuj ponownie otworzyć okno task.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.234678Z"
+  },
+  "player.task.dialog.already_active": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "Masz już aktywnego potwora w tym slocie task hunting.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.237154Z"
+  },
+  "player.task.dialog.empty_slot": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Nie możesz odebrać nagrody task przy pustym slocie task hunting.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.239940Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Dokumenty spalono tu niedawno. Przed kominkiem leży jeszcze fragment jednego zwoju, ale jest zbyt osmolony, by go odczytać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.255639Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Na podłodze leżą porozrzucane skrawki papieru. Złożenie ich zajmuje chwilę. To jednak tylko kiepsko napisany wiersz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.258614Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Dokładnie oglądasz zwoje. To rozkazy z Rathleton dla Ambasadora. Nie ma tu śladu zdrady.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.262319Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Czujesz drżenie i zawroty głowy, świat wokół ciebie ciemnieje. Potem wzrok znów się wyostrza - i jesteś gdzie indziej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.266594Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Zostałeś przeniesiony na prawą stronę mózgu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.268417Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Zostałeś przeniesiony na lewą stronę mózgu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.269895Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Już pobłogosławiłeś ten posąg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.272365Z"
+  },
+  "scripts.action-reward_soul_war.msg_2": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Aby odebrać nagrodę, musisz pokonać Goshnar's Megalomania.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.277983Z"
+  },
+  "scripts.action_arena.msg_1": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Już ukończyłeś tę walkę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.282441Z"
+  },
+  "scripts.action_arena.msg_2": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Arena jest już zajęta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.284023Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Twój czas dobiegł końca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.294336Z"
+  },
+  "scripts.action_outfit.msg_2": {
+    "src_hash": "01df51775e4238428c8c068d2cc0b692",
+    "text": "Już odebrałeś outfit, zapytaj Chraka o misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.306484Z"
+  },
+  "scripts.action_poacher_book.msg_1": {
+    "src_hash": "6ad778942f77ae1b95d6234ff0605923",
+    "text": "Kładziesz książkę na stole, miejmy nadzieję, że kłusownicy wkrótce ją znajdą.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.308200Z"
+  },
+  "scripts.action_whelp_fur.msg_1": {
+    "src_hash": "36137d8d9dbe7d2b655496d83858ae68",
+    "text": "Umieszczasz futro szczenięcia w kamiennych ustach i tym samym je uspokajasz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.313054Z"
+  },
+  "scripts.actions_MedusaOil.msg_1": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Odpetryfikowujesz krzyk banshee przy złym krysztale, a twoje uszy są chronione woskiem. W ten sposób złowieszczy artefakt zostaje zniszczony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.316070Z"
+  },
+  "scripts.actions_MedusaOil.msg_2": {
+    "src_hash": "2fffed7e55b475fea1241561e1dee3bf",
+    "text": "Używasz stopionego wosku, aby zatkać uszy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.317941Z"
+  },
+  "scripts.actions_MedusaOil.msg_3": {
+    "src_hash": "81f34cd4feabd1b573f7f0287b5b7e09",
+    "text": "Zmieszałeś pierwsze składniki, aby stworzyć specjalną maść. Ale to jeszcze nie koniec.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.321776Z"
+  },
+  "scripts.actions_MedusaOil.msg_4": {
+    "src_hash": "de7e7625f949cdce38c79cc3d2a971de",
+    "text": "Zmieszałeś właściwe składniki, aby stworzyć specjalną maść. Tą maścią możesz odpetryfikować skamieniały obiekt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.326273Z"
+  },
+  "scripts.actions_Misc.msg_1": {
+    "src_hash": "ef7bc2864cae3121bb7c48e6572383bf",
+    "text": "Gdy używasz małego dzwonka, rozbrzmiewa słodki, nieziemski dźwięk. W tej samej chwili wody jeziora zaczynają wirować.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.332064Z"
+  },
+  "scripts.actions_Misc.msg_2": {
+    "src_hash": "04b60dd3858c883f70e9bda7222d43e4",
+    "text": "W tym obszarze już istnieje wir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.335247Z"
+  },
+  "scripts.actions_Misc.msg_7": {
+    "src_hash": "251bcb9238b80e3c253577b72c0388ca",
+    "text": "Pobierasz trochę krwi z pustego kryształu. Oby rzeczywiście była to krew meduzy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.341691Z"
+  },
+  "scripts.actions_Ointment.msg_1": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Odpetryfikowujesz krzyk banshee przy złym krysztale, a twoje uszy są chronione woskiem. W ten sposób złowieszczy artefakt zostaje zniszczony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.344193Z"
+  },
+  "scripts.actions_acidFishingRod.msg_1": {
+    "src_hash": "b7edddd4772bae9ec1170cd75ad8532c",
+    "text": "Nie odważasz się dotknąć tych szczątków. W te kości wielokrotnie wyryto jedno słowo: 'K'muuh'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.346370Z"
+  },
+  "scripts.actions_analyser.msg_1": {
+    "src_hash": "a2da86b455a557094c1df725073335cd",
+    "text": "Dobra robota! Woda została przeanalizowana.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.350721Z"
+  },
+  "scripts.actions_ancient_feud_entrances.msg_1": {
+    "src_hash": "52d221e336eda58b39fab73ac5f9bdc3",
+    "text": "Nie jesteś godzien podróży Lwim Rykiem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.352614Z"
+  },
+  "scripts.actions_ashes.msg_1": {
+    "src_hash": "21e550e5f4f89244b713ae54210395c9",
+    "text": "Popioły wirują własnym życiem, mieszając się z iskrami ołtarza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.355613Z"
+  },
+  "scripts.actions_augerfun.msg_1": {
+    "src_hash": "329ac6c30c0a8615e6c52a1e7d8fa9a7",
+    "text": "Zbierasz trochę mleka kaktusowego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.357177Z"
+  },
+  "scripts.actions_bait.msg_2": {
+    "src_hash": "a0304a59736a9e5c7d77ebb88d3fd7b3",
+    "text": "Ups! Straciłeś to.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.365330Z"
+  },
+  "scripts.actions_bait.msg_3": {
+    "src_hash": "73c8c82252387a98c60ce07b12cea6e3",
+    "text": "Widzisz wodę aż po horyzont. Ani śladu morskiego węża.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.369908Z"
+  },
+  "scripts.actions_bait.msg_4": {
+    "src_hash": "9bf585829f1e4bc7f4375831e888feec",
+    "text": "Ucieka! Powinieneś powiedzieć kapitanowi, żeby przyspieszył!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.373597Z"
+  },
+  "scripts.actions_bait.msg_5": {
+    "src_hash": "b2b42110da55a7d88e116708a87b0316",
+    "text": "Pod powierzchnią widać wiele cieni. To musi być właściwe miejsce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.377158Z"
+  },
+  "scripts.actions_basin.msg_1": {
+    "src_hash": "9118efc5a37e978aea348be87f8b77e4",
+    "text": "Znajdujesz złoty symbol na dnie misy wypełnionej krwią.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.380602Z"
+  },
+  "scripts.actions_bird_cage.msg_1": {
+    "src_hash": "7f2ce76d0f0ebe25d4d5096035d7d5e5",
+    "text": "Jaskiniowa papuga może i jest twarda, ale jakoś nie mogła się oprzeć tej konkretnej klatce. A może to jednak przez ciebie...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.387294Z"
+  },
+  "scripts.actions_bird_cage.msg_2": {
+    "src_hash": "9ed535ea500b3fe754627bc9aad2a44c",
+    "text": "Otwierasz klatkę i wypuszczasz jaskiniową papugę na wolność!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.390703Z"
+  },
+  "scripts.actions_bone.msg_1": {
+    "src_hash": "f63b4574be546a581f1d1191a64be28b",
+    "text": "Pośród sterty różnych kości znajdujesz duży, pusty element przypominający rurę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.394272Z"
+  },
+  "scripts.actions_bone.msg_2": {
+    "src_hash": "80a2909ce1f004d65194f1db48dca775",
+    "text": "Przeszukujesz stertę, ale nie znajdujesz żadnych użytecznych części.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.397736Z"
+  },
+  "scripts.actions_bone_flute_wall.msg_1": {
+    "src_hash": "2c3314f94f2660ce75b9258cee700a76",
+    "text": "Znalazłeś kościany flet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.403541Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Mocujesz hebanowe drewno do czaszki. To powinno spełniać wymagania gryfu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.405256Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Przymocowujesz włosy do hebanowego gryfu. Pasma powinny nadawać się jako struny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.407364Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Była raz piękna panna, o ciemnych oczach i jedwabnych włosach. Umarła daleko od domu. Bez grobu, bez czuwania, bez żałoby.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:26:52.409183Z"
   }
 }

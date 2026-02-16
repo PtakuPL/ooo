@@ -6574,5 +6574,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:24:47.625829Z"
+  },
+  "actions.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:41.687058Z"
+  },
+  "actions.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:41.687641Z"
+  },
+  "actions.quests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:41.689347Z"
+  },
+  "actions.quests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:41.689975Z"
+  },
+  "actions.arena_10x10.say_1": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Пожалуйста, подождите, пока бойцы выйдут с арены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.959901Z"
+  },
+  "actions.arena_10x10.say_2": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Для выхода на арену вам нужно 10 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.961023Z"
+  },
+  "actions.arena_10x10.say_3": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Для выхода на арену вам нужно 10 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.962538Z"
+  },
+  "actions.arena_10x10.say_4": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Для выхода на арену вам нужно 10 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.965075Z"
+  },
+  "actions.arena_10x10.say_5": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Для выхода на арену вам нужно 10 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.967371Z"
+  },
+  "actions.arena_10x10.say_6": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Пожалуйста, подождите, пока бойцы выйдут с арены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.968780Z"
+  },
+  "actions.arena_2x2.say_1": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Пожалуйста, подождите, пока бойцы выйдут с арены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.970238Z"
+  },
+  "actions.arena_2x2.say_2": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Для входа на арену вам нужны 2 игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.971706Z"
+  },
+  "actions.arena_2x2.say_3": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Для входа на арену вам нужны 2 игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.973067Z"
+  },
+  "actions.arena_2x2.say_4": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Для входа на арену вам нужны 2 игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.974586Z"
+  },
+  "actions.arena_2x2.say_5": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Для входа на арену вам нужны 2 игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.975486Z"
+  },
+  "actions.arena_2x2.say_6": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Пожалуйста, подождите, пока бойцы выйдут с арены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.976614Z"
+  },
+  "actions.construction_kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Вы можете построить это только внутри дома.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.977882Z"
+  },
+  "actions.construction_kits.msg_2": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Сначала положите конструктор на пол.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.978885Z"
+  },
+  "actions.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Вы не владелец.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.979668Z"
+  },
+  "actions.golden.msg_1": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Кто-то сражается против босса! Вам нужно подождать некоторое время.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.980950Z"
+  },
+  "actions.golden.msg_2": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Чтобы сразиться с этим боссом, вам понадобится 5 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.981809Z"
+  },
+  "actions.imbuement_shrine.msg_2": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Вы не получили достаточно знаний от древних Создателей. Посетите храм Шейперов в Монтэге за помощью.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:49.982821Z"
+  },
+  "actions.keys.msg_1": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "У вас есть пятнадцать минут, чтобы убить и ограбить этого босса, иначе вы потеряете этот шанс.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.286662Z"
+  },
+  "actions.keys.msg_2": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Вы вошли в древнюю тюремную камеру демонов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.287270Z"
+  },
+  "actions.random_items.say_2": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Вы не нашли ничего полезного.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.287732Z"
+  },
+  "actions.random_items.say_3": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Вы не нашли ничего полезного.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.288215Z"
+  },
+  "actions.premium_scroll.msg_max_days": {
+    "src_hash": "1010e4707b50a67b7c38e725a698d597",
+    "text": "Вы не можете купить премиум-аккаунт более чем на {max} дней.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.289313Z"
+  },
+  "actions.hireling_foods.msg_too_full": {
+    "src_hash": "883d6385bdd0fda404b168b90f087063",
+    "text": "Вы все еще слишком сыты, чтобы какое-то время есть изысканные блюда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.290003Z"
+  },
+  "actions.outfit_items.msg_need_outfit": {
+    "src_hash": "6f55a0eedffa63b4bc43323bbb07b0e8",
+    "text": "Для этой части вам понадобится одежда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.290689Z"
+  },
+  "actions.outfit_items.msg_already_own": {
+    "src_hash": "ff03bf90647055eb6169fe3518a86e11",
+    "text": "Эта часть наряда у вас уже есть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.291231Z"
+  },
+  "actions.key_door.msg_wrong_key": {
+    "src_hash": "0f9c62489a770c7c23c3b706d5fccb35",
+    "text": "Ключ не соответствует.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.291650Z"
+  },
+  "actions.gamestore.msg_no_rookgaard": {
+    "src_hash": "b4299c21f178fe5003979baf89fc88c5",
+    "text": "В магазине нет предложений для гражданина rookgaard.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.292540Z"
+  },
+  "actions.gamestore.msg_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Вы измотаны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:55.292939Z"
   }
 }

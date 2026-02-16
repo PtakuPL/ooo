@@ -41097,11 +41097,11 @@
   },
   "scripts.actions_palanca.msg_1": {
     "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
-    "text": "<sizzle> <fizz>",
+    "text": "<sizzle> <efervescencia>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:27:25.789874Z"
+    "updated_at": "2026-02-16T20:27:21.302497Z"
   },
   "scripts.actions_pickenchanted.msg_1": {
     "src_hash": "fb9d34da72cc5f6f1c95cf1b19ea2f48",
@@ -41113,11 +41113,11 @@
   },
   "scripts.actions_pyramids1.msg_1": {
     "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
-    "text": "<sizzle> <fizz>",
+    "text": "<sizzle> <efervescencia>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:27:25.791131Z"
+    "updated_at": "2026-02-16T20:27:21.303626Z"
   },
   "scripts.actions_pyramids2.msg_1": {
     "src_hash": "76052c7bfb195c26264ca6133a637a47",
@@ -139918,5 +139918,149 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:25:29.171927Z"
+  },
+  "scripts.auto_loot.msg_2": {
+    "src_hash": "a5e8b81952865a784dfa4b1130397515",
+    "text": "Modo de autoloot establecido a TODO.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:06.273949Z"
+  },
+  "scripts.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "¡Puedes tener mi set demoníaco, si me ayudas a salir de aquí!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:06.454583Z"
+  },
+  "scripts.dolls.6511_1": {
+    "src_hash": "e267002bc50d6c66c0e2fcf14625ee5b",
+    "text": "Jo jo jo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:06.586810Z"
+  },
+  "scripts.prince_drazzak_summon.say_1": {
+    "src_hash": "dfaa579f53bc94c724932f2a88f3dc3d",
+    "text": "¡¡APLASTADLES A TODOS!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:07.403765Z"
+  },
+  "gamestore.disabled.no_outfit_for_addon": {
+    "src_hash": "eac725194fbbbd872c8c5fc5e0130e34",
+    "text": "No tienes el conjunto, no puedes comprar el complemento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:21.295816Z"
+  },
+  "scripts.action_all_hymn_piano_teleport.msg_1": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "No te has aprendido todos los versos del himno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:21.299941Z"
+  },
+  "scripts.action_horn.say_5": {
+    "src_hash": "6b35ad266884e6774eeed5bc937d9189",
+    "text": "No tienes ganas de abrazar a un oso inconsciente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:21.300558Z"
+  },
+  "scripts.actions_climbing_vine.msg_1": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "No puedes entrar en una zona de protección después de atacar a otro jugador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:21.301352Z"
+  },
+  "scripts.actions_plant.msg_4": {
+    "src_hash": "dbae0926d3ed10c91f6f663ba886cd12",
+    "text": "Parece que no haces crecer suficientes árboles o no liberas a los loros.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:21.303170Z"
+  },
+  "scripts.dawnport.second_step.druid": {
+    "src_hash": "7e2b9047ad8e0ff84f8e6d05044ecb74",
+    "text": "Como esta es tu primera vez como druida, recibiste algunos elementos adicionales. Como druida, puedes usar estos hechizos: Ataque de barro, Relájate, Parche mágico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:33.478776Z"
+  },
+  "scripts.dawnport.second_step.paladin": {
+    "src_hash": "f80217282a079b6c262a0c2dccd9a192",
+    "text": "Como es tu primera vez como paladín, recibiste algunos elementos adicionales. Como paladín, puedes usar los siguientes hechizos: Magic Patch, Arrow Call.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:33.479897Z"
+  },
+  "scripts.dawnport.second_step.sorcerer": {
+    "src_hash": "44a4c1015836aea1cf7e61ca9fa1c41b",
+    "text": "Como es tu primera vez como hechicero, recibiste algunos elementos adicionales. Como hechicero, puedes utilizar los siguientes hechizos: Magic Patch, Buzz, Scorch.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:33.481286Z"
+  },
+  "scripts.dawnport.third_step.druid": {
+    "src_hash": "af87703200f863924322ca8280bb1dd5",
+    "text": "Has recibido las armas de un druida. Como druida, puedes usar estos hechizos: Ataque de barro, Relájate, Parche mágico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:27:33.482345Z"
+  },
+  "npc.iyad.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:19.070787Z"
+  },
+  "npc.jack_drone.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:19.109706Z"
+  },
+  "npc.jack_fate.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:19.124663Z"
+  },
+  "npc.jack_fate_goroma.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:19.126148Z"
+  },
+  "npc.jack_fate_goroma.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:28:19.140542Z"
   }
 }

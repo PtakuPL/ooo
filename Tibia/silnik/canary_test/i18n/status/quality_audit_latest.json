@@ -1,50 +1,71 @@
 {
-  "timestamp": "2026-02-16T16:33:36.083743Z",
+  "timestamp": "2026-02-16T18:23:55.614293Z",
   "checked_entries": 100,
-  "issues_found": 5,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en": 5,
-    "identical_to_en_exempt": 1,
-    "suspicious_log_low": 138,
-    "suspicious_log_high": 62,
-    "suspicious_rejected_critical": 93,
-    "suspicious_rejected_high": 107
+    "identical_to_en": 8,
+    "identical_to_en_exempt": 3,
+    "suspicious_log_low": 22,
+    "suspicious_log_high": 178,
+    "suspicious_rejected_high": 30,
+    "suspicious_rejected_critical": 170
   },
   "issues": [
-    {
-      "key": "monster.walker.voice_2",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "*slosh*",
-      "translated": "*slosh*"
-    },
-    {
-      "key": "monster.sandstone_scorpion.voice_3",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "*tak tak tak*",
-      "translated": "*tak tak tak*"
-    },
-    {
-      "key": "monster.magma_crawler.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Magma Crawler",
-      "translated": "Magma Crawler"
-    },
-    {
-      "key": "monster.apprentice_sheng.voice_7",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Kaplar!",
-      "translated": "Kaplar!"
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "lang": "es",
       "type": "identical_to_en",
       "en": "Chchch",
       "translated": "Chchch"
+    },
+    {
+      "key": "monster.apprentice_sheng.voice_7",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Kaplar!",
+      "translated": "Kaplar!"
+    },
+    {
+      "key": "monster.cyclops.voice_9",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Youh ah trak!",
+      "translated": "Youh ah trak!"
+    },
+    {
+      "key": "monster.cyclops_smith.voice_5",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Whack da humy!",
+      "translated": "Whack da humy!"
+    },
+    {
+      "key": "monster.mooh'tah_master.voice_2",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Kaplar!",
+      "translated": "Kaplar!"
+    },
+    {
+      "key": "monster.minishabaal.voice_10",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Muahaha!",
+      "translated": "Muahaha!"
+    },
+    {
+      "key": "monster.the_plasmother.voice_1",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Blubb",
+      "translated": "Blubb"
+    },
+    {
+      "key": "monster.the_plasmother.voice_3",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Blubberdiblubb",
+      "translated": "Blubberdiblubb"
     }
   ],
   "threshold": 10,

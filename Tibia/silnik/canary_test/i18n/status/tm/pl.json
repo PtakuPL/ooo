@@ -50053,7 +50053,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:30.860366Z"
+    "updated_at": "2026-02-16T18:23:15.735955Z"
   },
   "monster.deep_terror.name": {
     "src_hash": "714a8b0aa9ff486ce295c2c6e0de5dab",
@@ -50165,7 +50165,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:30.861067Z"
+    "updated_at": "2026-02-16T18:23:15.736408Z"
   },
   "monster.feeble_glooth_horror.name": {
     "src_hash": "097a672c58cee3eb83dbfb8f13e4b6f9",
@@ -80525,7 +80525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:33.775424Z"
+    "updated_at": "2026-02-16T18:23:15.736912Z"
   },
   "monster.fallen_mooh'tah_master_ghar.name": {
     "src_hash": "f944eb4c677a8191d733c513b49743ec",
@@ -194533,7 +194533,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:19.272377Z"
+    "updated_at": "2026-02-16T18:23:03.569750Z"
   },
   "monster.minotaur_mage.voice_2": {
     "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
@@ -194613,7 +194613,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:22.247118Z"
+    "updated_at": "2026-02-16T18:23:03.574476Z"
   },
   "monster.minotaur.voice_1": {
     "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
@@ -194653,7 +194653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:25.103850Z"
+    "updated_at": "2026-02-16T18:23:03.578576Z"
   },
   "monster.troll_champion.voice_4": {
     "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
@@ -194677,7 +194677,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:28.009586Z"
+    "updated_at": "2026-02-16T18:23:15.731818Z"
   },
   "monster.orc.voice_1": {
     "src_hash": "3f40d9293ed4d1efdd9091e86d4733e1",
@@ -194685,7 +194685,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:28.010247Z"
+    "updated_at": "2026-02-16T18:23:15.732240Z"
   },
   "monster.young_troll.voice_1": {
     "src_hash": "36c158b082540048301c1c6a24867850",
@@ -194797,7 +194797,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:39.777426Z"
+    "updated_at": "2026-02-16T18:23:25.336947Z"
   },
   "monster.elder_bloodjaw.voice_2": {
     "src_hash": "e917a32d9d8d655fcd79f99ccdcc6c57",
@@ -194861,7 +194861,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:23:46.213619Z"
+    "updated_at": "2026-02-16T18:23:25.343654Z"
   },
   "monster.mooh'tah_master.voice_2": {
     "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
@@ -196942,5 +196942,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T06:46:25.109364Z"
+  },
+  "monster.minishabaal.voice_6": {
+    "src_hash": "52bd3d2ae72e628876743e6ca8770159",
+    "text": "Pftt, Ferumbras taki nowicjusz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:23:25.345658Z"
   }
 }

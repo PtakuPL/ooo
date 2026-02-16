@@ -43129,19 +43129,19 @@
   },
   "npc.a_wyrm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.940865Z"
+    "updated_at": "2026-02-16T21:18:47.431794Z"
   },
   "npc.a_wyrm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:04.942116Z"
+    "updated_at": "2026-02-16T21:18:47.433678Z"
   },
   "npc.canary.farewell_msg_1": {
     "src_hash": "588e73837fba9553ffca81df889548ec",

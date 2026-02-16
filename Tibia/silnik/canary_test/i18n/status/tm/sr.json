@@ -161942,5 +161942,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:11:55.915027Z"
+  },
+  "data.otservbr.global.npc.a.strange.chalice.L117.1623": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Здраво? Како то мислиш 'hi' - зар не видиш да сам ја... Морам да стишам глас. Да ли вам је пало на памет да овај 'chalice' не жели да га узнемиравате?! Остави ме на миру!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.151891Z"
+  },
+  "data.otservbr.global.npc.a.swan.L95.88": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Поздрављам те, смртно биће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.152290Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tortoise.L5.1674": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Корњача.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.241965Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumulo.L8.1663": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.242371Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumuloerro.L8.1653": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.242878Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L11.1801": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.243613Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L8.1800": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Телепорт.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.243910Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.notescoordinates.L9.1797": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.244215Z"
+  },
+  "data.otservbr.global.scripts.quests.marapur.actions.boss.timira.fight.L376.2174": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.244786Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L54.2286": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Сонда је подешена.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.245319Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L64.2287": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "На уређају пише: „Детектована абнормална структура сјаја, могућа локација за сондирање“",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.245872Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L66.2288": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Хм... уређај гласи: 0,0,нула,0,нула што би отприлике могло да се преведе на: ОВДЕ НИШТА ОД ИНТЕРЕСА",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.246540Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L98.2289": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Успешно сте прикупили податке.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.246903Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L13.2281": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Успешно берете сочно корење.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.247252Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L26.2282": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ваш покушај бербе уништио је више сочних корена него што сте могли да спасете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.247903Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L33.2283": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Успешно берете сочно корење.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.248277Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L46.2284": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ваш покушај бербе уништио је више сочних корена него што сте могли да спасете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.248765Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L52.2285": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Овај корен је већ убран, нема шта да се добије.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.249182Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.calassa.comb.door.L8.1926": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.249594Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L217.2072": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Тренутно немате мрљу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.250714Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L232.2073": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Играч је ван мреже",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.251126Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L283.2076": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Играч је ван мреже",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.251446Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soulpit.fight.L30.1996": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Неко се туче у души!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.252222Z"
+  },
+  "data.otservbr.global.scripts.quests.the.annihilator.door.L5.2235": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.253319Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L65.1784": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.253995Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L90.1788": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Гомила костију је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.254526Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L98.1790": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Гомила костију је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.254879Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L22.1858": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Сви напеви су отпевани у правом редоследу, сматрате се достојним. Превезени сте...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.255704Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.containerRewards.L140.1843": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.255982Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L54.1849": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Имате осећај страха.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.256432Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L108.1859": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.257196Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L141.1862": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.257880Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L71.1760": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.258935Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L13.2005": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Без мозга",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.259629Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.rewards.L27.1771": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.260834Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.ungreez.door.L20.1772": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.261260Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.action.drume.L32.1646": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Ваше време је прошло.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.261951Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.creatureevent.commander.kills.L19.1645": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Изгубио си окршај.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.262380Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.moveevent.drume.entrance.L5.1644": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Учествовали сте у окршају у последњих 10 сати.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.262827Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.bursting.at.the.seams.museum.actions.doors.L18.2291": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.264582Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.actions.telescope.L6.2318": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Телескоп пружа савршен поглед на бескрајни океан - нема копна на видику",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.265152Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L13.2312": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Видите разбацане делове разбијеног брода. Чудом је бродски телескоп преживео олупину, чини се да је још увек нетакнут.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.265942Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L16.2313": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Још увек има лабавих дасака и хватаљки. Не можете овако користити сплав, сигурно ће потонути.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.266563Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L21.2314": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Користиш маказе да развучеш лабаве даске. Сплав би сада требало да буде способан за пловидбу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.267130Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L27.2315": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Видите разбацане делове разбијеног брода. Чудом је бродски телескоп преживео олупину и изгледа да је још увек нетакнут.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:18:34.267790Z"
   }
 }

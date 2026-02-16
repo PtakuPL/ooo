@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-16T21:59:08.993674Z",
+  "timestamp": "2026-02-16T22:00:16.431410Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 280600,
-    "english_copy_keys": 166851,
+    "translated_keys": 280712,
+    "english_copy_keys": 166821,
     "missing_keys": 2155,
     "missing_files": 0,
     "completion_pct": 10.07
@@ -49,56 +49,56 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 2316,
-    "guard_reports_blocked": 2254,
+    "guard_reports_total": 2319,
+    "guard_reports_blocked": 2257,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2254
+    "cannot_translate_reports_visible": 2257
   },
   "cache": {
     "lang_stats_hits": 49,
     "lang_stats_misses": 3,
     "lang_stats_hit_pct": 94.2,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1972,
-    "lang_file_misses": 4,
+    "lang_file_hits": 1973,
+    "lang_file_misses": 3,
     "lang_file_hit_pct": 99.8,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-16T21:59:00.520476Z",
-    "cycle": 77,
+    "timestamp": "2026-02-16T22:00:07.754234Z",
+    "cycle": 78,
     "mode": "AUTO_TRANSLATE",
-    "category": "sv",
+    "category": "ru",
     "events": {
-      "dispatch": 723,
-      "mode_run": 49378
+      "dispatch": 4295,
+      "mode_run": 43695
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-16T20:59:07.683456Z",
-    "window_end_utc": "2026-02-16T21:59:07.683456Z",
+    "window_start_utc": "2026-02-16T21:00:15.134601Z",
+    "window_end_utc": "2026-02-16T22:00:15.134601Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 178,
+    "total_cycles": 177,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 178
+      "AUTO_TRANSLATE": 177
     },
-    "auto_translate_cycles": 178,
+    "auto_translate_cycles": 177,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 6211,
-    "guard_fail": 4079,
-    "guard_fail_rate_pct": 39.6,
+    "translated": 6160,
+    "guard_fail": 4080,
+    "guard_fail_rate_pct": 39.8,
     "no_progress_entries": 2,
     "no_progress_rate_pct": 1.5,
-    "throughput_keys_per_h": 3510.0,
-    "suspicious_total": 33823,
+    "throughput_keys_per_h": 3471.6,
+    "suspicious_total": 33743,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -144,7 +144,7 @@
       },
       {
         "target": "sr/server.json",
-        "translated": 220,
+        "translated": 170,
         "guard_fail": 30,
         "guard_command": 0
       }
@@ -152,230 +152,20 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-16T21:59:00.410444Z",
+      "timestamp": "2026-02-16T22:00:07.665214Z",
       "checked_entries": 100,
-      "issues_found": 41,
+      "issues_found": 11,
       "issues_by_type": {
-        "identical_to_en": 32,
-        "identical_to_en_exempt": 12,
+        "identical_to_en": 2,
         "artifact_token": 9,
-        "suspicious_log_high": 151,
-        "suspicious_log_critical": 46,
+        "identical_to_en_exempt": 10,
+        "suspicious_log_high": 131,
         "suspicious_log_low": 3,
+        "suspicious_log_critical": 66,
         "suspicious_rejected_critical": 143,
         "suspicious_rejected_high": 57
       },
       "issues": [
-        {
-          "key": "monster.morgaroth.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Morgaroth",
-          "translated": "Morgaroth"
-        },
-        {
-          "key": "monster.ferumbras.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Ferumbras",
-          "translated": "Ferumbras"
-        },
-        {
-          "key": "monster.ferumbras.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Ferumbras",
-          "translated": "Ferumbras"
-        },
-        {
-          "key": "monster.furyosa.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Furyosa",
-          "translated": "Furyosa"
-        },
-        {
-          "key": "monster.sir_valorcrest.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Sir Valorcrest",
-          "translated": "Sir Valorcrest"
-        },
-        {
-          "key": "monster.draptor.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Draptor",
-          "translated": "Draptor"
-        },
-        {
-          "key": "monster.chayenne.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Chayenne",
-          "translated": "Chayenne"
-        },
-        {
-          "key": "monster.chayenne.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Chayenne",
-          "translated": "Chayenne"
-        },
-        {
-          "key": "monster.orshabaal.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Orshabaal",
-          "translated": "Orshabaal"
-        },
-        {
-          "key": "monster.orshabaal.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Orshabaal",
-          "translated": "Orshabaal"
-        },
-        {
-          "key": "monster.white_pale.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "White Pale",
-          "translated": "White Pale"
-        },
-        {
-          "key": "monster.white_pale.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "White Pale",
-          "translated": "White Pale"
-        },
-        {
-          "key": "monster.the_welter.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "The Welter",
-          "translated": "The Welter"
-        },
-        {
-          "key": "monster.the_welter.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "The Welter",
-          "translated": "The Welter"
-        },
-        {
-          "key": "monster.morgaroth.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Morgaroth",
-          "translated": "Morgaroth"
-        },
-        {
-          "key": "monster.morgaroth.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Morgaroth",
-          "translated": "Morgaroth"
-        },
-        {
-          "key": "monster.ferumbras.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Ferumbras",
-          "translated": "Ferumbras"
-        },
-        {
-          "key": "monster.ferumbras.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Ferumbras",
-          "translated": "Ferumbras"
-        },
-        {
-          "key": "monster.furyosa.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Furyosa",
-          "translated": "Furyosa"
-        },
-        {
-          "key": "monster.furyosa.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Furyosa",
-          "translated": "Furyosa"
-        },
-        {
-          "key": "monster.fernfang.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Fernfang",
-          "translated": "Fernfang"
-        },
-        {
-          "key": "monster.fernfang.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Fernfang",
-          "translated": "Fernfang"
-        },
-        {
-          "key": "monster.feroxa2.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa4.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa4.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa3.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa3.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa5.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa5.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.undead_cavebear.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Undead Cavebear",
-          "translated": "Undead Cavebear"
-        },
         {
           "key": "monster.ocyakao.name",
           "lang": "pl",
@@ -476,9 +266,9 @@
         "total_rejected": 884,
         "total_gt_guard_fail": 2295,
         "cycles": 791,
-        "quality_score": 74.7,
-        "last_audit": "2026-02-16T21:59:00.410444Z",
-        "issues_count": 115300
+        "quality_score": 83.2,
+        "last_audit": "2026-02-16T22:00:07.665214Z",
+        "issues_count": 115302
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -498,9 +288,9 @@
         "total_rejected": 634,
         "total_gt_guard_fail": 10983,
         "cycles": 905,
-        "quality_score": 60.5,
-        "last_audit": "2026-02-16T21:59:00.410444Z",
-        "issues_count": 154902
+        "quality_score": 60.3,
+        "last_audit": "2026-02-16T22:00:07.665214Z",
+        "issues_count": 155028
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -525,26 +315,26 @@
         "issues_count": 2470
       },
       "it": {
-        "last_cycle": "2026-02-16T21:56:03.128318Z",
+        "last_cycle": "2026-02-16T22:00:06.147919Z",
         "last_translated": 50,
-        "total_suspicious": 1000,
+        "total_suspicious": 1043,
         "total_rejected": 0,
         "total_gt_guard_fail": 16,
-        "cycles": 60,
-        "quality_score": 73.2,
-        "last_audit": "2026-02-16T21:59:00.410444Z",
-        "issues_count": 4524
+        "cycles": 61,
+        "quality_score": 68.2,
+        "last_audit": "2026-02-16T22:00:07.665214Z",
+        "issues_count": 4567
       },
       "ru": {
-        "last_cycle": "2026-02-16T21:54:23.371424Z",
-        "last_translated": 29,
-        "total_suspicious": 7815,
+        "last_cycle": "2026-02-16T21:59:28.512527Z",
+        "last_translated": 50,
+        "total_suspicious": 7835,
         "total_rejected": 116,
         "total_gt_guard_fail": 195,
-        "cycles": 58,
-        "quality_score": 60.1,
-        "last_audit": "2026-02-16T21:59:00.410444Z",
-        "issues_count": 10158
+        "cycles": 59,
+        "quality_score": 60.5,
+        "last_audit": "2026-02-16T22:00:07.665214Z",
+        "issues_count": 10255
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -564,9 +354,9 @@
         "total_rejected": 6,
         "total_gt_guard_fail": 26,
         "cycles": 44,
-        "quality_score": 75.5,
-        "last_audit": "2026-02-16T21:59:00.410444Z",
-        "issues_count": 2210
+        "quality_score": 80.5,
+        "last_audit": "2026-02-16T22:00:07.665214Z",
+        "issues_count": 2216
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -1009,15 +799,15 @@
         "issues_count": 958
       },
       "ro": {
-        "last_cycle": "2026-02-16T21:55:55.685676Z",
-        "last_translated": 16,
-        "total_suspicious": 10993,
-        "total_rejected": 202,
-        "total_gt_guard_fail": 231,
-        "cycles": 40,
-        "quality_score": 59.9,
-        "last_audit": "2026-02-16T21:59:00.410444Z",
-        "issues_count": 7301
+        "last_cycle": "2026-02-16T21:59:59.973010Z",
+        "last_translated": 49,
+        "total_suspicious": 10994,
+        "total_rejected": 203,
+        "total_gt_guard_fail": 232,
+        "cycles": 41,
+        "quality_score": 60.4,
+        "last_audit": "2026-02-16T22:00:07.665214Z",
+        "issues_count": 7438
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1031,7 +821,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 41 issue(s) / 100 entries | 2026-02-16T21:59:00.410444Z"
+    "summary": "SLOW_MODE | 11 issue(s) / 100 entries | 2026-02-16T22:00:07.665214Z"
   },
   "languages": [
     {
@@ -1073,14 +863,14 @@
       "language_name": "Rosyjski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 18409,
-      "english_copy_keys": 3095,
+      "translated_keys": 18438,
+      "english_copy_keys": 3074,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 34.35,
+      "completion_pct": 34.41,
       "server_keys": 49731,
-      "server_translated": 15684,
-      "server_pct": 31.54,
+      "server_translated": 15713,
+      "server_pct": 31.6,
       "client_keys": 3855,
       "client_translated": 2725,
       "client_pct": 70.69
@@ -1107,14 +897,14 @@
       "language_name": "Rumuński",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 9753,
+      "translated_keys": 9799,
       "english_copy_keys": 2484,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 18.2,
+      "completion_pct": 18.29,
       "server_keys": 49731,
-      "server_translated": 9659,
-      "server_pct": 19.42,
+      "server_translated": 9705,
+      "server_pct": 19.51,
       "client_keys": 3855,
       "client_translated": 94,
       "client_pct": 2.44
@@ -1141,14 +931,14 @@
       "language_name": "Włoski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 4969,
-      "english_copy_keys": 2436,
+      "translated_keys": 5006,
+      "english_copy_keys": 2427,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 9.27,
+      "completion_pct": 9.34,
       "server_keys": 49731,
-      "server_translated": 4919,
-      "server_pct": 9.89,
+      "server_translated": 4956,
+      "server_pct": 9.97,
       "client_keys": 3855,
       "client_translated": 50,
       "client_pct": 1.3

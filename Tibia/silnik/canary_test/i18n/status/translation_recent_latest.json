@@ -1,104 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:58:58.770427Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 16,
+  "timestamp": "2026-02-16T22:00:06.149816Z",
+  "language": "it",
+  "json_file": "server.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.shimun.L61.696",
+      "en": "How could I help you?",
+      "translated": "Come posso aiutarti?",
+      "source": "simple"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.shimun.L64.697",
+      "en": "How could I help you?",
+      "translated": "Come posso aiutarti?",
+      "source": "simple"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.shiriel.L142.1146",
+      "en": "Greetings, |PLAYERNAME|.",
+      "translated": "Saluti, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.shirith.L88.16",
+      "en": "Good bye!",
+      "translated": "Arrivederci!",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.shirith.L89.17",
+      "en": "Good bye!",
+      "translated": "Arrivederci!",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.shirtalis.of.the.summer.court.L84.57",
+      "en": "Well, bye then.",
+      "translated": "Bene, allora ciao.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.siestaar.L77.571",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.siestaar.L78.572",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.sigurd.L145.1169",
+      "en": "Good bye. Come back soon.",
+      "translated": "Arrivederci. Torna presto.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.sigurd.L146.1170",
+      "en": "Good bye. Come back soon.",
+      "translated": "Arrivederci. Torna presto.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.simon.the.beggar.L316.1139",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.simon.the.beggar.L317.1140",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.sissek.L72.1050",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.sissek.L73.1051",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.stutch.L84.1270",
+      "en": "LONG LIVE THE KING!",
+      "translated": "LUNGA VITA AL RE!",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.suzy.L77.1113",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.suzy.L78.1114",
+      "en": "Have a nice day.",
+      "translated": "Buona giornata.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.tanyt.L102.1189",
+      "en": "Good bye then.",
+      "translated": "Allora arrivederci.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.tarun.L117.1564",
+      "en": "Farewell.",
+      "translated": "Addio.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.tarun.L121.1566",
+      "en": "Farewell.",
+      "translated": "Addio.",
+      "source": "simple"
     }
   ]
 }

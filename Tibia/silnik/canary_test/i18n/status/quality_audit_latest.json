@@ -1,18 +1,25 @@
 {
-  "timestamp": "2026-02-16T23:04:54.068925Z",
+  "timestamp": "2026-02-16T23:07:09.555848Z",
   "checked_entries": 100,
   "issues_found": 8,
   "issues_by_type": {
+    "identical_to_en": 1,
     "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "identical_to_en": 1,
-    "suspicious_log_critical": 83,
-    "suspicious_log_high": 116,
-    "suspicious_log_low": 1,
-    "suspicious_rejected_high": 33,
-    "suspicious_rejected_critical": 167
+    "suspicious_log_critical": 71,
+    "suspicious_log_high": 127,
+    "suspicious_log_low": 2,
+    "suspicious_rejected_critical": 165,
+    "suspicious_rejected_high": 35
   },
   "issues": [
+    {
+      "key": "spell.emberbeastarea.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "emberBeastArea",
+      "translated": "emberBeastArea"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -61,13 +68,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "spell.emberbeastarea.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "emberBeastArea",
-      "translated": "emberBeastArea"
     }
   ],
   "threshold": 10,

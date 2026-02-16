@@ -1,8 +1,8 @@
 {
-  "total_cycles": 21,
+  "total_cycles": 22,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-16T21:45:09.064632",
+  "category": "it",
+  "last_update": "2026-02-16T21:45:43.410501",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,135 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "npc.json",
-    "keys_to_translate": 3510,
-    "guard_fail": 11,
+    "language": "it",
+    "json_file": "monsters.json",
+    "keys_to_translate": 4981,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 24,
-    "recent_examples": [
-      {
-        "key": "npc.barnabas_dee.say_5",
-        "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-        "translated": "No no no, necesito 15 dosis de polen reci\u00e9n cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servir\u00e1.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.bozo.stdmod_116",
-        "en": "npc.bozo.mission_36_t1",
-        "translated": "npc.bozo.mission_36_t1",
-        "source": "tm"
-      },
-      {
-        "key": "npc.bozo.stdmod_92",
-        "en": "npc.bozo.mission_12_t1",
-        "translated": "npc.bozo.mission_12_t1",
-        "source": "tm"
-      },
-      {
-        "key": "npc.budrik.say_9",
-        "en": "Zzz...",
-        "translated": "Zzz...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.captain_haba_open_sea.larboard_1",
-        "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA A BALAR !!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.captain_haba_open_sea.say_3",
-        "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-        "translated": "\u00bf\u00a1\u00bfESO ES TODO?!? \u00a1\u00a1\u00a1ACELERAR, APRETAR LA VELA MAYOR!!!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.captain_haba_open_sea.starboard_1",
-        "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA A ESTRIBOR!!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.captain_haba_open_sea.straight_3",
-        "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-        "translated": "\u00a1\u00a1MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! \u00a1\u00a1TODO DERECHO!!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.captain_haba_open_sea.straight_5",
-        "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.cruleo.voice_1",
-        "en": "<gulp gulp>",
-        "translated": "<gulp gulp>",
-        "source": "tm"
-      },
-      {
-        "key": "npc.elliott.greet_msg_1",
-        "en": "<nods>",
-        "translated": "<nods>",
-        "source": "tm"
-      },
-      {
-        "key": "npc.gnomus.say_11",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.gnomus.say_13",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.gnomus.say_15",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.jeronimo.say_3",
-        "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-        "translated": "\u00a1Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.lardoc_bashsmite.multi_3",
-        "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-        "translated": "Llevamos nuestros explosivos hasta all\u00ed... y me refiero a TODOS nuestros explosivos. \u00bfPeligroso? De hecho, colocamos a alguien all\u00ed para vigilar este dep\u00f3sito. ...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.lardoc_bashsmite.multi_9",
-        "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-        "translated": "Llevamos nuestros explosivos hasta all\u00ed... y me refiero a TODOS nuestros explosivos. \u00bfPeligroso? De hecho, colocamos a alguien all\u00ed para vigilar este dep\u00f3sito. ...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.lardoc_bashsmite.say_10",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.lardoc_bashsmite.say_12",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.lardoc_bashsmite.say_14",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

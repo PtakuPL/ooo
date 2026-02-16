@@ -6485,3 +6485,7 @@
 {"timestamp": "2026-02-16T23:02:52.411503Z", "cycle": 23, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1908, "detail": "count=quests.json"}
 {"timestamp": "2026-02-16T23:03:10.990740Z", "cycle": 23, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 18461, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-16T23:03:16.419811Z", "cycle": 23, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 5205, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-16T23:03:23.596518Z", "cycle": 23, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "cycle_total", "duration_ms": 33257, "detail": "delay=4"}
+{"timestamp": "2026-02-16T23:03:28.263052Z", "cycle": 24, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 436, "detail": "count=raids.json"}
+{"timestamp": "2026-02-16T23:03:57.471108Z", "cycle": 24, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "mode_run", "duration_ms": 29089, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-16T23:04:02.064500Z", "cycle": 24, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "status_update", "duration_ms": 4380, "detail": "throttle_every=1"}

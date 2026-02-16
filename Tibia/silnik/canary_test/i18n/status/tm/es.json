@@ -143838,5 +143838,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:02:15.164238Z"
+  },
+  "raid.feroxa.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:36.384039Z"
+  },
+  "raid.warlock.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Brujo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:36.386101Z"
+  },
+  "raid.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mago loco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:36.387283Z"
+  },
+  "raid.draptor.name": {
+    "src_hash": "0298e34bc88fa8299cacd8f457233da3",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:36.389018Z"
+  },
+  "raid.pirates.name": {
+    "src_hash": "281a66b1f4a1ded6214bdbd1a35f8e1f",
+    "text": "Pirates",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:37.763973Z"
+  },
+  "raid.lions.name": {
+    "src_hash": "c1820fe7ba2586a76c19e56cd5e8d84b",
+    "text": "Lions",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:37.764297Z"
+  },
+  "raid.minotaurs.name": {
+    "src_hash": "6fce9dc510d2ecb3f7bea0d5a50b0df2",
+    "text": "Minotaurs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:37.764595Z"
+  },
+  "raid.example.name": {
+    "src_hash": "0a52730597fb4ffa01fc117d9e71e3a9",
+    "text": "Example",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:37.764922Z"
+  },
+  "raid.raids.name": {
+    "src_hash": "650d0052540bb7fa10d8ec5e7c7d8542",
+    "text": "Raids",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:37.765195Z"
   }
 }

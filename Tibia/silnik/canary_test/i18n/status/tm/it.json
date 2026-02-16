@@ -23382,5 +23382,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:58:01.443670Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L83.37": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Interessante. Un essere umano che sa parlare la lingua dei lupi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.344379Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L84.38": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOOHHOOOU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.344665Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L85.39": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOOHHOOOU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.344933Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L138.261": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Aspettare! Non andartene! Voglio raccontarvi dei miei numeri surreali.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.346764Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L139.262": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Arrivederci! Non dimenticare i segreti della matematica.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.347195Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L140.263": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Eh? Che cosa? Posso vedere! Oh! Un non-mino. Hanno {capture} anche te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.347844Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L51.150": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.348466Z"
+  },
+  "data.otservbr.global.npc.znozel.L72.201": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.526315Z"
+  },
+  "data.otservbr.global.npc.znozel.L73.202": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.526721Z"
+  },
+  "data.otservbr.global.npc.zora.L83.1329": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.527134Z"
+  },
+  "data.otservbr.global.npc.zora.L84.1330": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.527538Z"
+  },
+  "data.otservbr.global.scripts.actions.dawnport.vocation.door.L36.2373": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.528423Z"
+  },
+  "data.otservbr.global.scripts.actions.object.imbuement.shrine.L9.2355": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Puoi utilizzare il santuario solo su un oggetto valido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.528934Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L123.2359": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Metti prima il kit di costruzione sul pavimento.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.529493Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L125.2360": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Puoi costruirlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.529915Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fishing.L41.2361": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Non sei il proprietario.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.530273Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L106.2365": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.530663Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L119.2367": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.530948Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L155.2368": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.531164Z"
+  },
+  "data.otservbr.global.scripts.actions.other.kits.L26.2363": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Puoi costruirlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.531793Z"
+  },
+  "data.otservbr.global.scripts.actions.other.mechanical.fishing.L19.2358": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Non sei il proprietario.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.532134Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.532914Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L29.2388": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Hai bisogno di 5 giocatori per combattere questo boss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.533568Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L37.2389": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Qualcuno sta combattendo contro il capo! Devi aspettare un po'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.534024Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L68.2391": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Sei entrato in un'antica cella di prigione demoniaca!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.534502Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L69.2392": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Hai quindici minuti per uccidere e saccheggiare questo boss, altrimenti perderai questa possibilità.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.535047Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.539453Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.zalamon.door.L12.2154": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.539932Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L18.2206": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.543097Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.chest.L9.2229": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.543838Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L434.2218": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.544340Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L469.2220": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.544944Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L504.2222": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.545446Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L12.2226": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Hai avviato una scorta, porta il tuo prigioniero all'avamposto dei nani!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.545964Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L24.2227": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Non trovi nulla di interessante sotto le macerie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.546520Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L12.2256": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Sì.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.548677Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scusa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:03:41.549049Z"
   }
 }

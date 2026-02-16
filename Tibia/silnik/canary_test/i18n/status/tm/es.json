@@ -142398,5 +142398,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:38:13.985767Z"
+  },
+  "monster.grand_master_oberon.desc": {
+    "src_hash": "02b7dcc052da172e7b6c989ffa6036f0",
+    "text": "Grand maestro oberon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:41:03.336213Z"
+  },
+  "monster.grand_commander_soeren.name": {
+    "src_hash": "5e4a8be2eaecd81e52bf8f4e06260892",
+    "text": "Grand comandante soeren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:41:03.347544Z"
+  },
+  "monster.grand_commander_soeren.desc": {
+    "src_hash": "5e4a8be2eaecd81e52bf8f4e06260892",
+    "text": "Grand comandante soeren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:41:03.352588Z"
+  },
+  "monster.preceptor_lazare.name": {
+    "src_hash": "ca5f618b177330ed81ac07cfdf239a50",
+    "text": "Lazare Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:41:03.363650Z"
+  },
+  "monster.preceptor_lazare.desc": {
+    "src_hash": "ca5f618b177330ed81ac07cfdf239a50",
+    "text": "Lazare Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:41:03.365039Z"
   }
 }

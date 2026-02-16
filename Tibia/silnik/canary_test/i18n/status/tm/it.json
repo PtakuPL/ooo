@@ -26302,5 +26302,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:27:28.570516Z"
+  },
+  "npc.a_sleeping_dragon.multi_14": {
+    "src_hash": "70f67a45c979e8dc3e56fc964a026220",
+    "text": "La mano sembra essere diventata un pugno. In lontananza ora puoi vedere lo schema sfocato di una creatura troppo grande perché i tuoi occhi possano avere una visione più nitida della sua testa. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:34.585979Z"
+  },
+  "npc.a_sleeping_dragon.multi_15": {
+    "src_hash": "6a5a491a85f56f55adbd26786c63a7ce",
+    "text": "Unendo i raggi, lo specchio dirige la luce bianca pura direttamente verso la parte in cui si assume il volto della creatura. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:37.169584Z"
+  },
+  "npc.a_sleeping_dragon.multi_16": {
+    "src_hash": "cc21d713d013605296b8dcd0b284011a",
+    "text": "Il ringhio si trasforma in un urlo, tutto intorno a te sembra comprimersi. Mentre ti stringi forte contro la scogliera, tutto cade nel silenzio e in una frazione di secondo, l'essere oscuro si dissolve in esplosioni di oscurità. Ti svegli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:37.170568Z"
+  },
+  "npc.a_sleeping_dragon.multi_17": {
+    "src_hash": "7573058a6400d2fbf46d662914656cf4",
+    "text": "Ti lanci e lanci il modello lontano nell'acqua. Poiché non succede nulla, volti le spalle all'oceano. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:37.171129Z"
+  },
+  "npc.a_sleeping_dragon.multi_18": {
+    "src_hash": "0d804d95a3a157aec49c516db3b9aff8",
+    "text": "Nel momento stesso in cui scendi dalla duna per tornare a sud, i raggi di luce irrompono sopra la tua testa in un'onda d'urto che ti fa cadere dal resto della collina. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:37.171711Z"
+  },
+  "npc.a_sleeping_dragon.multi_19": {
+    "src_hash": "791b4b36f3b71d7c38493b3e30b76237",
+    "text": "Mentre i tuoi occhi si adattano all'improvvisa riduzione della luminosità, vedi le gigantesche ali del cancello prima di spostarti di lato. Puoi anche distinguere qualcosa che brilla per terra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:37.172408Z"
+  },
+  "npc.a_sleeping_dragon.multi_20": {
+    "src_hash": "2f2109a72068de305a9443412ff32999",
+    "text": "Raccogli lo specchio da terra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:40.920142Z"
+  },
+  "npc.a_sleeping_dragon.multi_21": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "I sogni dei draghi sono d'oro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:40.920450Z"
+  },
+  "npc.a_sleeping_dragon.multi_22": {
+    "src_hash": "34250643c73b08b49a6fab210c7bc0c4",
+    "text": "Un'ampia oscurità ti circonda come se un pesante sipario si chiudesse davanti ai tuoi occhi. Dopo quelli che sembrano minuti trascorsi a fluttuare nel vuoto, hai la sensazione che davanti a te si apra un buco nell'oscurità. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:40.921236Z"
+  },
+  "npc.a_sleeping_dragon.multi_23": {
+    "src_hash": "92a1fcad690cb48948dcf8d8defc5129",
+    "text": "Il buco diventa più grande, non puoi chiudere gli occhi. Un nero inimmaginabile. Ti trascina dentro un nulla più profondo e oscuro di qualsiasi cosa tu possa immaginare. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:40.921888Z"
+  },
+  "npc.a_sleeping_dragon.multi_24": {
+    "src_hash": "f2cf7d86540c1405ea910ab146d852e6",
+    "text": "Ti senti come se non potessi più respirare. Nel momento stesso in cui liberi la tua coscienza, senti che tutta la pesantezza intorno a te si è sollevata. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:40.922571Z"
+  },
+  "npc.a_sleeping_dragon.multi_25": {
+    "src_hash": "fb3eb01906a6037673dafee918fc8213",
+    "text": "Ti tuffi in un oceano di luce smeraldo. Ti senti come se fossi nato di nuovo, il colore intorno a te è quasi travolgente. Innumerevoli oggetti di tutte le forme e dimensioni ti sfrecciano accanto. Gareggiando l'uno contro l'altro, milioni di persone si scontrano in lontananza. ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:43.537211Z"
+  },
+  "npc.a_sleeping_dragon.multi_26": {
+    "src_hash": "78364ddf49f6d5722ee53c7a25348d26",
+    "text": "Il volume dello spettacolo gigantesco intorno a te fa esplodere il tuo udito, eppure assorbi tutti i suoni intorno a te. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:43.537698Z"
+  },
+  "npc.a_sleeping_dragon.multi_27": {
+    "src_hash": "c42d69935dea4179e66969ccdb3aed5e",
+    "text": "Mentre diversi grandi ostacoli si spostano direttamente di fronte a te, un intenso centro luminoso balza alla tua vista. Anche se non riesci a percepire quanto sei veloce, il tuo ritmo sembra troppo lento. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:43.538372Z"
+  },
+  "npc.a_sleeping_dragon.multi_28": {
+    "src_hash": "a70857cffa61d3635e2308ed40fdc91d",
+    "text": "Decelerando sempre, alla fine ti avvicini a un punto centrale in questo caos di toni di verde. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:43.538871Z"
+  },
+  "npc.a_sleeping_dragon.multi_29": {
+    "src_hash": "405803fd9a90b647e0df17a586553f6b",
+    "text": "Man mano che ti avvicini, sfumature giallastre di arancione ti abbracciano, emergono forme più morbide e quasi dimentichi il caos precedente. Nel caldo comfort vedi cosa si nasconde nel cuore di tutto. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:43.539596Z"
+  },
+  "npc.a_sleeping_dragon.multi_30": {
+    "src_hash": "561aa27c3ac58b8b86feed5ae68f3dfb",
+    "text": "Un maestoso drago nel sonno è circondato da quello che sembra il calore e l'energia di mille soli. La tranquillità della sua vista ti fa sorridere dolcemente. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:47.134985Z"
+  },
+  "npc.a_sleeping_dragon.multi_31": {
+    "src_hash": "71d47ef87b2021f0289ea4b660a86a9b",
+    "text": "Provi una miscela perfetta di gioia, compassione e pace improvvisa. Impressioni luminose e xante di topazio, arancio e bianco ti danno il benvenuto alla tappa finale del tuo viaggio. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:47.135612Z"
+  },
+  "npc.a_sleeping_dragon.multi_32": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "I sogni dei draghi sono d'oro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:47.135913Z"
+  },
+  "npc.a_sleeping_dragon.multi_33": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Ti ritrovi nel sogno del drago. Puoi {look} girare o {go} in una direzione specifica. Puoi anche {take} o {use} un oggetto. Inserisci {help} per visualizzare queste informazioni in qualsiasi momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:47.136601Z"
+  },
+  "npc.a_sleeping_dragon.multi_5": {
+    "src_hash": "5413fbb342cce5e40e131c197c65f83a",
+    "text": "Il trasferimento ha avuto successo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:47.136904Z"
+  },
+  "npc.a_sleeping_dragon.multi_6": {
+    "src_hash": "9dca37c81c8fb23fca9d424d916549b3",
+    "text": "Ora sei pronto per entrare nel regno del malfattore. Sono grato per il tuo aiuto, viandante. Se vuoi chiedere il mio consiglio, usa questo incantesimo che ti cedo. Perché il mio spirito ti guiderà ovunque tu sia. Che tu possa godere di un futuro protetto, prevarrai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:49.836533Z"
+  },
+  "npc.a_sleeping_dragon.multi_7": {
+    "src_hash": "671a859983328cf16cab59fc47d7480b",
+    "text": "Aaaah... finalmente libero. Hmm. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:49.836852Z"
+  },
+  "npc.a_sleeping_dragon.multi_8": {
+    "src_hash": "ae1846f5fcb59591a3521d7f4d7960ef",
+    "text": "Presumo che tu debba attraversare il cancello per raggiungere il malfattore. Posso aiutarti se ti fidi di me, viandante. Condividerò con te una parte della mia mente che dovrebbe consentirti di varcare il cancello. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:49.837612Z"
+  },
+  "npc.a_sleeping_dragon.multi_9": {
+    "src_hash": "80f688fec5f39b9ff2f0df02e7b214e9",
+    "text": "Questa procedura potrebbe essere estenuante. Sei pronto a ricevere la mia chiave?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:49.838033Z"
+  },
+  "npc.a_sleeping_dragon.say_1": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Ti ritrovi nel sogno del drago. Puoi {look} girare o {go} in una direzione specifica. Puoi anche {take} o {use} un oggetto. Inserisci {help} per visualizzare queste informazioni in qualsiasi momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:49.838899Z"
+  },
+  "npc.a_sleeping_dragon.say_10": {
+    "src_hash": "3dfc299ef9bb06feb416cd56e55b57f8",
+    "text": "Ritornerai attraverso il cancello semitrasparente a ovest. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:52.414418Z"
+  },
+  "npc.a_sleeping_dragon.say_11": {
+    "src_hash": "3cf73e85054a92f8968d144c3db334e5",
+    "text": "Ritorni a nord verso l'altopiano. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:52.414895Z"
+  },
+  "npc.a_sleeping_dragon.say_12": {
+    "src_hash": "ba787ce232620c16a0c665d7de2c954f",
+    "text": "Viaggia verso est attraverso diverse grandi scogliere e bordi color smeraldo. Tutti i tipi di gemme sono sparse lungo il tuo cammino. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:52.415389Z"
+  },
+  "npc.a_sleeping_dragon.say_13": {
+    "src_hash": "3988a48325cf8b6da4fc1f68b204db4f",
+    "text": "Prendi un rubino piuttosto grande da una pila davanti a te. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:52.415751Z"
+  },
+  "npc.a_sleeping_dragon.say_14": {
+    "src_hash": "01035bcddef5e83e2f82ef180af0066a",
+    "text": "Ti dirigi a nord superando innumerevoli pietre nel mare cremisi di pietre sotto i tuoi piedi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:52.416230Z"
+  },
+  "npc.a_sleeping_dragon.say_15": {
+    "src_hash": "389827eea938b1ec81fa8c1253752583",
+    "text": "Evitando la luce intensa, metti con attenzione l'accessorio sopra la strana presa. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:54.906350Z"
+  },
+  "npc.a_sleeping_dragon.say_16": {
+    "src_hash": "71c018dceebc102602a24f5dc7a3b779",
+    "text": "La tua strada verso nord è aperta. Superi le gigantesche ali del cancello alla tua sinistra e alla tua destra mentre avanzi. Dopo circa un'ora di viaggio si sente un leggero fruscio in lontananza. Ti dirigi ulteriormente in quella direzione. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:54.907406Z"
+  },
+  "npc.a_sleeping_dragon.say_17": {
+    "src_hash": "c3aac5f8ce3c6a1bfe094eb637ef4b7e",
+    "text": "Percorri tutta la strada lungo la duna e attraverso il cancello a sud. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:54.907886Z"
+  },
+  "npc.a_sleeping_dragon.say_18": {
+    "src_hash": "f35087ef016a6d78d3d7bb34b7fac6fa",
+    "text": "Ritorni nel mare cremisi dei rubini a sud. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:54.908232Z"
   }
 }

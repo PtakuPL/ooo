@@ -144054,5 +144054,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:21:07.724342Z"
+  },
+  "data.otservbr.global.npc.tanyt.L101.1188": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.937216Z"
+  },
+  "data.otservbr.global.npc.tefrit.L58.534": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.941088Z"
+  },
+  "data.otservbr.global.npc.tefrit.L61.535": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.942175Z"
+  },
+  "data.otservbr.global.npc.tefrit.L64.536": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.943135Z"
+  },
+  "data.otservbr.global.npc.tibra.L137.512": {
+    "src_hash": "41a97395a5729feeab77ee7495736313",
+    "text": "¡Bienvenido en nombre de los dioses, peregrino |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.960810Z"
+  },
+  "data.otservbr.global.npc.trisha.L234.109": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.973209Z"
+  },
+  "data.otservbr.global.npc.turvy.L61.375": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Por supuesto, simplemente navega por mis ofertas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.975857Z"
+  },
+  "data.otservbr.global.npc.valentina.L84.545": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Por favor regresa de vez en cuando.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.987277Z"
+  },
+  "data.otservbr.global.npc.valentina.L85.546": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Por favor regresa de vez en cuando.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.988277Z"
+  },
+  "data.otservbr.global.npc.valindara.L68.1599": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:27.990225Z"
+  },
+  "data.otservbr.global.npc.xodet.L176.346": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Adiós y vuelve otra vez.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:28.013780Z"
+  },
+  "data.otservbr.global.npc.xodet.L177.347": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Adiós y vuelve otra vez.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:28.014805Z"
+  },
+  "data.otservbr.global.npc.yberius.L169.1364": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "¡Bienvenido, joven |PLAYERNAME|! Si estás gravemente herido o envenenado, puedo {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:28.018664Z"
+  },
+  "data.otservbr.global.npc.yberius.L170.1365": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Recuerda: si estás gravemente herido o envenenado, puedo curarte gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:28.019991Z"
+  },
+  "data.otservbr.global.npc.yberius.L171.1366": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "¡Que los dioses te bendigan, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:28.021072Z"
+  },
+  "data.otservbr.global.npc.yoem.L61.188": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "¡Hola |PLAYERNAME|! ¿Necesitas algún equipamiento para tu casa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:32:28.022190Z"
   }
 }

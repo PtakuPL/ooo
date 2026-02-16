@@ -15742,5 +15742,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:37:57.840547Z"
+  },
+  "quest.spike_task.fame_point_received": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Ai primit un punct de faimă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.050279Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Aici au fost arse documente recent. Doar o parte dintr-un sul se află încă în fața coșului de fum, dar este prea funingine pentru a fi citită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.053422Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.054648Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Resturi de hârtie zac împrăștiate pe podea. Este nevoie de ceva timp pentru a le pune la loc. Dar este doar o poezie scrisă prost.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.056771Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.058604Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Examinați cu atenție sulurile. Acestea sunt comenzi de la Rathleton pentru ambasador. Nici un semn de trădare aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.060935Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.061953Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Nu găsiți nimic în casa Ambasadorului. Dacă de fapt este un trădător, a scăpat de orice probă care l-ar putea incrimina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.063021Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Te simți tremurând și amețit, lumea se întunecă în jurul tău. Apoi vederea ți se limpezește din nou - și ești în altă parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.064022Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Ai fost mutat în partea dreaptă a creierului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.064945Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Ai fost mutat în partea stângă a creierului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.065562Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Tu binecuvântezi statuia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.066110Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Ai binecuvântat deja această statuie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.066693Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Timpul tău s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.071047Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Atașați lemnul de abanos de craniu. Acest lucru ar trebui să îndeplinească cerințele unei plăci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.081540Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Lipiți părul de tastatura de abanos. Șuvițele ar trebui să fie adecvate pentru a servi drept șiruri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.082962Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*A fost odată un târg de fecioare, cu ochii negri și părul mătăsos. Departe de casa a murit. Fără mormânt, fără veghe, fără doliu.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.084019Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Cântați Balada Păunului și se deschide portalul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.084784Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Tu cânți la lăutări de os.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.085431Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.088802Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nu ai suficient nivel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.097962Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.099167Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Ai un sentiment de groază.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.100264Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Poți folosi această intrare doar pe timp de noapte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.101432Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.121776Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.127105Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.128174Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.141546Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.147149Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.159979Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.185936Z"
+  },
+  "scripts.quest_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:20.284961Z"
+  },
+  "gamestore.disabled.all_blessings": {
+    "src_hash": "0a240f9440015514195404b191ed6c4a",
+    "text": "Ai deja toate binecuvântările.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:22.322741Z"
+  },
+  "gamestore.disabled.already_3_slots": {
+    "src_hash": "a52cfe40b19318eb1a6cc026e95be42e",
+    "text": "Aveți deja 3 sloturi eliberate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:22.323697Z"
+  },
+  "gamestore.disabled.already_addon": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Aveți deja acest supliment.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:22.324528Z"
+  },
+  "gamestore.disabled.already_charm_expansion": {
+    "src_hash": "ae5faf495a84cd087847248c6d684e08",
+    "text": "Ai deja expansiune farmec.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:22.324968Z"
+  },
+  "gamestore.disabled.already_have_item": {
+    "src_hash": "8924be96e7d1a0554121764002ea4e22",
+    "text": "Aveți deja un %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:22.325372Z"
+  },
+  "gamestore.disabled.already_mount": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Ai deja această montură.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:22.325792Z"
+  },
+  "gamestore.disabled.already_outfit": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Ai deja această ținută.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:25.535017Z"
+  },
+  "gamestore.disabled.fake_offer": {
+    "src_hash": "8ed29edf04745efdd8e8a5419406515b",
+    "text": "Oferta este falsă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:25.535955Z"
+  },
+  "gamestore.disabled.hireling_outfit_unlocked": {
+    "src_hash": "b801ac2888be1b8234d07665e787127d",
+    "text": "Această ținută de angajat este deja deblocată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:25.537040Z"
+  },
+  "gamestore.disabled.max_blessing": {
+    "src_hash": "5096a4f628327814a247bb8a7ceaed7d",
+    "text": "Ai atins suma maximă pentru această binecuvântare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:25.538362Z"
+  },
+  "gamestore.disabled.max_hirelings": {
+    "src_hash": "07894d5477945cbabac01dbaf4d5c49f",
+    "text": "Ați cumpărat deja numărul maxim de angajați permisi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:25.539551Z"
+  },
+  "gamestore.disabled.max_reward_tokens": {
+    "src_hash": "844f047f2d6060c9de0920fcbfb47730",
+    "text": "Aveți deja maximum de jetoane recompensă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:28.576570Z"
+  },
+  "gamestore.disabled.need_hireling": {
+    "src_hash": "190f6988a286f65dddcae898b3fdda80",
+    "text": "Trebuie să ai un angajat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:28.577074Z"
+  },
+  "gamestore.disabled.no_outfit_for_addon": {
+    "src_hash": "eac725194fbbbd872c8c5fc5e0130e34",
+    "text": "Nu ai ținuta, nu poți cumpăra suplimentul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:28.577730Z"
+  },
+  "gamestore.disabled.no_xp_boost_today": {
+    "src_hash": "2a92d796e7c8473fc626141413e28c73",
+    "text": "Nu puteți cumpăra XP Boost pentru astăzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:28.578408Z"
+  },
+  "gamestore.disabled.skill_unlocked": {
+    "src_hash": "8ab612c52a54010a72189135c41ac4f5",
+    "text": "Această abilitate este deja deblocată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:28.578993Z"
+  },
+  "gamestore.error.all_prey_slots": {
+    "src_hash": "bf0969596200df8437238e701266dc47",
+    "text": "Ai deblocat deja toate sloturile pentru pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:28.579608Z"
   }
 }

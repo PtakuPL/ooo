@@ -15182,5 +15182,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:37:12.018601Z"
+  },
+  "quest.spike_task.fame_point_received": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Вы получили очко славы.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.587322Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "ЧЧХХХХ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.601773Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Вы нашли ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.605241Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.616981Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.626694Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.649279Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.653936Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.655070Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Вы нашли ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.669487Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Вы нашли ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.669921Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.671063Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.680961Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.691133Z"
+  },
+  "scripts.construction_kits.msg_1": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Сначала положите конструктор на пол.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.694027Z"
+  },
+  "scripts.construction_kits.msg_2": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Вы можете построить это только внутри дома.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.694711Z"
+  },
+  "scripts.creaturescripts_energy_prism.say_1": {
+    "src_hash": "40eeefad3ef6c3a31f3e1bc946fdfa16",
+    "text": "*Зап!*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.696679Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.715599Z"
+  },
+  "scripts.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Вы не владелец.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.725910Z"
+  },
+  "scripts.golden.msg_1": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Чтобы сразиться с этим боссом, вам понадобится 5 игроков.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.733124Z"
+  },
+  "scripts.golden.msg_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Кто-то сражается против босса! Вам нужно подождать некоторое время.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.733893Z"
+  },
+  "scripts.imbuement_shrine.msg_1": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Вы не получили достаточно знаний от древних Создателей. Посетите храм Шейперов в Монтэге за помощью.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.742066Z"
+  },
+  "scripts.keys.msg_1": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Вы вошли в древнюю тюремную камеру демонов!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.746264Z"
+  },
+  "scripts.keys.msg_2": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "У вас есть пятнадцать минут, чтобы убить и ограбить этого босса, иначе вы потеряете этот шанс.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.747294Z"
+  },
+  "scripts.kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Вы можете построить это только внутри дома.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.748446Z"
+  },
+  "scripts.malofur_explosion.say_4": {
+    "src_hash": "f8f4cf4ccd62891b2cf6fd00d84689ee",
+    "text": "БУМ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.753515Z"
+  },
+  "scripts.mechanical_fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Вы не владелец.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.756027Z"
+  },
+  "scripts.movement_kroazur_room.say_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Кто-то сражается против босса! Вам нужно подождать некоторое время.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.770487Z"
+  },
+  "scripts.movements_exit.say_1": {
+    "src_hash": "e3cad585110341bb3b2380313a9f3874",
+    "text": "Хлебай!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.782912Z"
+  },
+  "scripts.music_box.sound_enraged_white_deer": {
+    "src_hash": "3c4e7e02d0cd27b75e0a41557802e5ea",
+    "text": "*колокольчик*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.809697Z"
+  },
+  "scripts.music_box.sound_midnight_panther": {
+    "src_hash": "0b813abc491f06e00ac5006b13eba71e",
+    "text": "Муррррррр",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.811025Z"
+  },
+  "scripts.music_box.sound_wild_horse": {
+    "src_hash": "722f7d0f70687346d74a852830e1c5f0",
+    "text": "*фыркнул*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.811958Z"
+  },
+  "scripts.prince_drazzak_druid.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "УМРИ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.822506Z"
+  },
+  "scripts.prince_drazzak_knight.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "УМРИ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.824482Z"
+  },
+  "scripts.prince_drazzak_paladin.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "УМРИ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.825583Z"
+  },
+  "scripts.prince_drazzak_sorcerer.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "УМРИ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.826709Z"
+  },
+  "scripts.quest_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:11.829174Z"
+  },
+  "gamestore.disabled.max_hirelings": {
+    "src_hash": "07894d5477945cbabac01dbaf4d5c49f",
+    "text": "Вы уже купили максимальное количество разрешенных наемников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:13.543244Z"
+  },
+  "gamestore.disabled.max_prey_wildcards": {
+    "src_hash": "19b4910bc35b9b4357a1dbcd309465c2",
+    "text": "У вас уже есть максимальное количество подстановочных знаков добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:13.543883Z"
+  },
+  "gamestore.disabled.max_reward_tokens": {
+    "src_hash": "844f047f2d6060c9de0920fcbfb47730",
+    "text": "У вас уже есть максимальное количество жетонов вознаграждения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:13.544470Z"
+  },
+  "gamestore.disabled.need_hireling": {
+    "src_hash": "190f6988a286f65dddcae898b3fdda80",
+    "text": "Вам нужен наемник.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:13.544894Z"
+  },
+  "gamestore.disabled.no_outfit_for_addon": {
+    "src_hash": "eac725194fbbbd872c8c5fc5e0130e34",
+    "text": "У вас нет экипировки, вы не можете купить аддон.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:13.545457Z"
   }
 }

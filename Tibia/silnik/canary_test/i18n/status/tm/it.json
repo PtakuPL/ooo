@@ -9097,11 +9097,11 @@
   },
   "scripts.actions_calassa_comb_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.845790Z"
+    "updated_at": "2026-02-16T22:44:47.444811Z"
   },
   "scripts.actions_chests.msg_1": {
     "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
@@ -9137,11 +9137,11 @@
   },
   "scripts.actions_doors.msg_2": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.852687Z"
+    "updated_at": "2026-02-16T22:44:47.456424Z"
   },
   "scripts.actions_dreamcatcher_curse.msg_1": {
     "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
@@ -9225,83 +9225,83 @@
   },
   "scripts.actions_outlaw_camp_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.871858Z"
+    "updated_at": "2026-02-16T22:44:47.492395Z"
   },
   "scripts.actions_portal_minis_ancient_feud.msg_1": {
     "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
-    "text": "All the players need to be level",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Tutti i giocatori devono essere alla pari ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.873796Z"
+    "updated_at": "2026-02-16T22:44:47.496236Z"
   },
   "scripts.actions_portal_minis_ancient_feud.msg_2": {
     "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
-    "text": "You have to wait",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Devi aspettare ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.874654Z"
+    "updated_at": "2026-02-16T22:44:47.497237Z"
   },
   "scripts.actions_portal_minis_feaster.msg_1": {
     "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
-    "text": "All the players need to be level",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Tutti i giocatori devono essere alla pari ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.875517Z"
+    "updated_at": "2026-02-16T22:44:47.498044Z"
   },
   "scripts.actions_portal_minis_feaster.msg_2": {
     "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
-    "text": "You have to wait",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Devi aspettare ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.876220Z"
+    "updated_at": "2026-02-16T22:44:47.498839Z"
   },
   "scripts.actions_portal_minis_grimvale.msg_1": {
     "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
-    "text": "You have to wait",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Devi aspettare ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.877065Z"
+    "updated_at": "2026-02-16T22:44:47.499488Z"
   },
   "scripts.actions_portal_minis_kilmaresh.msg_1": {
     "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
-    "text": "All the players need to be level",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Tutti i giocatori devono essere alla pari ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.877965Z"
+    "updated_at": "2026-02-16T22:44:47.500389Z"
   },
   "scripts.actions_portal_minis_kilmaresh.msg_2": {
     "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
-    "text": "You have to wait",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Devi aspettare ",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.878783Z"
+    "updated_at": "2026-02-16T22:44:47.502041Z"
   },
   "scripts.actions_questDoors.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.880242Z"
+    "updated_at": "2026-02-16T22:44:47.503458Z"
   },
   "scripts.actions_questDoors.msg_4": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.881669Z"
+    "updated_at": "2026-02-16T22:44:47.504702Z"
   },
   "scripts.actions_resonance_chamber.say_1": {
     "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
@@ -9417,11 +9417,11 @@
   },
   "scripts.actions_ungreez_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.902191Z"
+    "updated_at": "2026-02-16T22:44:47.526679Z"
   },
   "scripts.actions_using_crystals.msg_1": {
     "src_hash": "4ece41ce875a4c261bd613cdc1472980",
@@ -9473,11 +9473,11 @@
   },
   "scripts.actions_zalamon_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.910421Z"
+    "updated_at": "2026-02-16T22:44:47.534645Z"
   },
   "scripts.chest.msg_1": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
@@ -9489,11 +9489,11 @@
   },
   "scripts.closing_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.916572Z"
+    "updated_at": "2026-02-16T22:44:47.544245Z"
   },
   "scripts.dolls.12904_4": {
     "src_hash": "136833af11abf3e1e761704915043ea3",
@@ -9505,11 +9505,11 @@
   },
   "scripts.door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
-    "text": "The door seems to be sealed against unwanted intruders.",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.936415Z"
+    "updated_at": "2026-02-16T22:44:47.576856Z"
   },
   "scripts.fluids.msg_1": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
@@ -22534,5 +22534,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:37:01.729692Z"
+  },
+  "scripts.actions_bookOnTable.msg_4": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Tutti i canti sono stati cantati nel giusto ordine, sei ritenuto degno. Sei trasportato via...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.441053Z"
+  },
+  "scripts.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Liberami e sarai ricompensato grandemente!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.560549Z"
+  },
+  "scripts.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Cos'è questo? Gambe del demone che giacciono qui? Qualcuno potrebbe averli persi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.561957Z"
+  },
+  "scripts.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Sono in trappola, vieni qui e liberami velocemente!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.562865Z"
+  },
+  "scripts.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Posso riportare in vita la tua amata, liberami!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.563519Z"
+  },
+  "scripts.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Che bella armatura dorata e lucente. Vieni da me e potrai averlo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.564179Z"
+  },
+  "scripts.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Trova un modo per entrare qui e liberami! Per favore, sbrigati!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.564844Z"
+  },
+  "scripts.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Puoi avere il mio set demoniaco, se mi aiuti a uscire di qui!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.565724Z"
+  },
+  "scripts.quest_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:47.678400Z"
+  },
+  "gamestore.disabled.already_have_item": {
+    "src_hash": "8924be96e7d1a0554121764002ea4e22",
+    "text": "Hai già un %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:49.839124Z"
+  },
+  "gamestore.disabled.already_mount": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Hai già questa montatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:49.839575Z"
+  },
+  "gamestore.disabled.already_outfit": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Hai già questo vestito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:49.839994Z"
+  },
+  "gamestore.disabled.fake_offer": {
+    "src_hash": "8ed29edf04745efdd8e8a5419406515b",
+    "text": "L'offerta è falsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:49.840345Z"
+  },
+  "gamestore.disabled.hireling_outfit_unlocked": {
+    "src_hash": "b801ac2888be1b8234d07665e787127d",
+    "text": "Questo vestito da mercenario è già sbloccato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:49.840824Z"
+  },
+  "gamestore.disabled.max_blessing": {
+    "src_hash": "5096a4f628327814a247bb8a7ceaed7d",
+    "text": "Hai raggiunto l'importo massimo per questa benedizione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:49.841380Z"
+  },
+  "gamestore.disabled.max_hirelings": {
+    "src_hash": "07894d5477945cbabac01dbaf4d5c49f",
+    "text": "Hai già acquistato il numero massimo di mercenari consentiti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:54.420329Z"
+  },
+  "gamestore.disabled.max_prey_wildcards": {
+    "src_hash": "19b4910bc35b9b4357a1dbcd309465c2",
+    "text": "Hai già il massimo dei caratteri jolly preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:54.420853Z"
+  },
+  "gamestore.disabled.max_reward_tokens": {
+    "src_hash": "844f047f2d6060c9de0920fcbfb47730",
+    "text": "Hai già il massimo dei gettoni ricompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:54.421351Z"
+  },
+  "gamestore.disabled.need_hireling": {
+    "src_hash": "190f6988a286f65dddcae898b3fdda80",
+    "text": "Devi avere un mercenario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:54.421933Z"
+  },
+  "gamestore.disabled.no_outfit_for_addon": {
+    "src_hash": "eac725194fbbbd872c8c5fc5e0130e34",
+    "text": "Non hai l'outfit, non puoi comprare l'add-on.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:54.422530Z"
+  },
+  "gamestore.disabled.no_xp_boost_today": {
+    "src_hash": "2a92d796e7c8473fc626141413e28c73",
+    "text": "Non puoi acquistare XP Boost per oggi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:44:54.423030Z"
+  },
+  "gamestore.disabled.skill_unlocked": {
+    "src_hash": "8ab612c52a54010a72189135c41ac4f5",
+    "text": "Questa abilità è già sbloccata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:01.298563Z"
+  },
+  "gamestore.error.all_prey_slots": {
+    "src_hash": "bf0969596200df8437238e701266dc47",
+    "text": "Hai già sbloccato tutti gli slot preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:01.299071Z"
+  },
+  "gamestore.error.all_task_slots": {
+    "src_hash": "fb1c5f4f65f3e2e83df0222a76f58629",
+    "text": "Hai già sbloccato tutti gli slot di caccia alle attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:01.299609Z"
+  },
+  "gamestore.error.already_own_mount": {
+    "src_hash": "8dc46a1484f54e2257f464fe4f39730f",
+    "text": "Possiedi già questa cavalcatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:01.300043Z"
+  },
+  "gamestore.error.already_own_outfit": {
+    "src_hash": "9401d88df0143dc879a724750ed58ff6",
+    "text": "Possiedi già questo vestito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:01.300575Z"
+  },
+  "gamestore.error.client10_hireling": {
+    "src_hash": "594704e70bf187eb9dc45cba1dd58c2b",
+    "text": "Non puoi acquistare mercenari sul client 10, effettua nuovamente l'accesso sul client 12 e riprova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:01.301279Z"
+  },
+  "gamestore.error.client10_hireling_name": {
+    "src_hash": "3e6a730fb48e4be399f9c645c8bfdcca",
+    "text": "Non è possibile acquistare il cambio nome del mercenario sul client 10, effettuare nuovamente l'accesso sul client 12 e riprovare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:04.443982Z"
+  },
+  "gamestore.error.client10_hireling_outfit": {
+    "src_hash": "e0e94adbbd7adad8a458bcfd66fe631d",
+    "text": "Non puoi acquistare abiti da mercenario sul client 10, effettua nuovamente l'accesso sul client 12 e riprova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:04.444623Z"
+  },
+  "gamestore.error.client10_hireling_sex": {
+    "src_hash": "c12b831cd5d37da1d6c9fa1059691b85",
+    "text": "Non puoi acquistare il cambio di sesso del mercenario sul client 10, effettua nuovamente l'accesso sul client 12 e riprova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:04.445259Z"
+  },
+  "gamestore.error.client10_hireling_skill": {
+    "src_hash": "f3813c3f0e4d537dd76fb64514d68035",
+    "text": "Non puoi acquistare l'abilità di mercenario sul client 10, effettua nuovamente l'accesso sul client 12 e riprova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:04.445958Z"
+  },
+  "gamestore.error.hireling_lamp_error": {
+    "src_hash": "48cb7da3cb55f6eaece0eb5eb3b3faef",
+    "text": "Errore nella consegna della tua lampada a noleggio, riprova più tardi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:04.446600Z"
+  },
+  "gamestore.error.hireling_limit": {
+    "src_hash": "65a8c0711d0b885796625ec6297018b2",
+    "text": "Non puoi avere più di %s mercenari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:45:04.447139Z"
   }
 }

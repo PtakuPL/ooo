@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T22:44:12.969791Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T22:45:29.078559Z",
+  "language": "ro",
+  "json_file": "scripts.json",
+  "translated": 49,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "scripts.closing_door.msg_1",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "scripts.door.msg_1",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "scripts.quest_door.msg_1",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "gamestore.disabled.all_blessings",
+      "en": "You already have all Blessings.",
+      "translated": "Ai deja toate binecuvântările.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "gamestore.disabled.already_3_slots",
+      "en": "You already have 3 slots released.",
+      "translated": "Aveți deja 3 sloturi eliberate.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "gamestore.disabled.already_addon",
+      "en": "You already have this addon.",
+      "translated": "Aveți deja acest supliment.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "gamestore.disabled.already_charm_expansion",
+      "en": "You already have charm expansion.",
+      "translated": "Ai deja expansiune farmec.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "gamestore.disabled.already_have_item",
+      "en": "You already have a %s.",
+      "translated": "Aveți deja un %s.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "gamestore.disabled.already_mount",
+      "en": "You already have this mount.",
+      "translated": "Ai deja această montură.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "gamestore.disabled.already_outfit",
+      "en": "You already have this outfit.",
+      "translated": "Ai deja această ținută.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "gamestore.disabled.fake_offer",
+      "en": "The offer is fake.",
+      "translated": "Oferta este falsă.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "gamestore.disabled.hireling_outfit_unlocked",
+      "en": "This hireling outfit is already unlocked.",
+      "translated": "Această ținută de angajat este deja deblocată.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.max_blessing",
+      "en": "You reached the maximum amount for this blessing.",
+      "translated": "Ai atins suma maximă pentru această binecuvântare.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.max_hirelings",
+      "en": "You already have bought the maximum number of allowed hirelings.",
+      "translated": "Ați cumpărat deja numărul maxim de angajați permisi.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.max_reward_tokens",
+      "en": "You already have maximum of reward tokens.",
+      "translated": "Aveți deja maximum de jetoane recompensă.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "gamestore.disabled.need_hireling",
+      "en": "You need to have a hireling.",
+      "translated": "Trebuie să ai un angajat.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "gamestore.disabled.no_outfit_for_addon",
+      "en": "You don't have the outfit, you can't buy the addon.",
+      "translated": "Nu ai ținuta, nu poți cumpăra suplimentul.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "gamestore.disabled.no_xp_boost_today",
+      "en": "You can't buy XP Boost for today.",
+      "translated": "Nu puteți cumpăra XP Boost pentru astăzi.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.disabled.skill_unlocked",
+      "en": "This skill is already unlocked.",
+      "translated": "Această abilitate este deja deblocată.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "gamestore.error.all_prey_slots",
+      "en": "You already have unlocked all prey slots.",
+      "translated": "Ai deblocat deja toate sloturile pentru pradă.",
+      "source": "google_translate"
     }
   ]
 }

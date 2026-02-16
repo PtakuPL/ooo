@@ -138353,75 +138353,75 @@
   },
   "spell.annihilon_paralyze.name": {
     "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
-    "text": "Annihilon Paralyze",
+    "text": "Aniquilón paralizado",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.891170Z"
+    "updated_at": "2026-02-16T22:23:54.172095Z"
   },
   "spell.pirate_corsair_skill_reducer.name": {
     "src_hash": "804f0f58e3748cbf75ba47ecf7ba8ebb",
-    "text": "Pirate Corsair Skill Reducer",
+    "text": "Reductor de habilidades del corsario pirata",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.891577Z"
+    "updated_at": "2026-02-16T22:23:54.173030Z"
   },
   "spell.large_black_ring.name": {
     "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
-    "text": "Large Black Ring",
+    "text": "Anillo negro grande",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.892008Z"
+    "updated_at": "2026-02-16T22:23:54.173772Z"
   },
   "spell.dragonling_wave.name": {
     "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
-    "text": "Dragonling Wave",
+    "text": "Ola de dragón",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.892503Z"
+    "updated_at": "2026-02-16T22:23:54.174616Z"
   },
   "spell.rupture_wave.name": {
     "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
-    "text": "Rupture Wave",
+    "text": "Onda de ruptura",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.892841Z"
+    "updated_at": "2026-02-16T22:23:54.175230Z"
   },
   "spell.rotthingholy_ulus.name": {
     "src_hash": "6f9565ba840690d6cf32df1835403486",
-    "text": "Rotthingholy Ulus",
+    "text": "Ulus Santísimo",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.632034Z"
+    "updated_at": "2026-02-16T22:23:58.175506Z"
   },
   "spell.plagirath_heal.name": {
     "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
-    "text": "Plagirath Heal",
+    "text": "Sanación de Plagirath",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.632696Z"
+    "updated_at": "2026-02-16T22:23:58.175860Z"
   },
   "spell.hideous_fungus_summon.name": {
     "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
-    "text": "Hideous Fungus Summon",
+    "text": "Invocación de hongo horrible",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.633058Z"
+    "updated_at": "2026-02-16T22:23:58.176344Z"
   },
   "spell.death_priest_shargon_curse.name": {
     "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
-    "text": "Death Priest Shargon Curse",
+    "text": "Maldición del Sacerdote de la Muerte Shargon",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.633462Z"
+    "updated_at": "2026-02-16T22:23:58.176896Z"
   },
   "spell.defiler_paralyze_3.name": {
     "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
@@ -138433,67 +138433,67 @@
   },
   "spell.enslaved_dwarf_skill_reducer_2.name": {
     "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
-    "text": "Enslaved Dwarf Skill Reducer 2",
+    "text": "Reductor de habilidades enano esclavizado 2",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.415337Z"
+    "updated_at": "2026-02-16T22:23:58.177373Z"
   },
   "spell.magma_crawler_soulfire.name": {
     "src_hash": "5af58207044b3d5e194180367a723039",
-    "text": "Magma Crawler Soulfire",
+    "text": "Fuego de alma reptador de magma",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.416354Z"
+    "updated_at": "2026-02-16T22:24:02.913332Z"
   },
   "spell.devovorga_curse.name": {
     "src_hash": "5fed81378f355f8d43c87e10c5259174",
-    "text": "Devovorga Curse",
+    "text": "Maldición Devovorga",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.417199Z"
+    "updated_at": "2026-02-16T22:24:02.914322Z"
   },
   "spell.cults_of_tibia_armor_buff.name": {
     "src_hash": "b670299f4fea508033e349381261574b",
-    "text": "Cults Of Tibia Armor Buff",
+    "text": "Cultos de Tibia Mejora de armadura",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.418507Z"
+    "updated_at": "2026-02-16T22:24:02.915720Z"
   },
   "spell.white_shade_paralyze.name": {
     "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
-    "text": "White Shade Paralyze",
+    "text": "Sombra blanca paralizar",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.419688Z"
+    "updated_at": "2026-02-16T22:24:02.916537Z"
   },
   "spell.plant_abomination_wave.name": {
     "src_hash": "b4b265d796db5c445199764c97950e61",
-    "text": "Plant Abomination Wave",
+    "text": "Ola de abominación vegetal",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.197220Z"
+    "updated_at": "2026-02-16T22:24:02.917370Z"
   },
   "spell.large_ice_ring.name": {
     "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
-    "text": "Large Ice Ring",
+    "text": "Anillo de hielo grande",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.197675Z"
+    "updated_at": "2026-02-16T22:24:08.723679Z"
   },
   "spell.teleport_strike.name": {
     "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
-    "text": "Teleport Strike",
+    "text": "Golpe de teletransporte",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.198103Z"
+    "updated_at": "2026-02-16T22:24:08.724035Z"
   },
   "spell.quara_constrictor_freeze.name": {
     "src_hash": "12b6e90f7c167ea881781f7f0d10220f",
@@ -138505,59 +138505,59 @@
   },
   "spell.lersatio_summon.name": {
     "src_hash": "9f6b742ed3af674623ba4cbc33432484",
-    "text": "Lersatio Summon",
+    "text": "Invocación de Lersatio",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.199001Z"
+    "updated_at": "2026-02-16T22:24:08.724582Z"
   },
   "spell.elder_bonelord_paralyze.name": {
     "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
-    "text": "elder bonelord paralyze",
+    "text": "El anciano señor de los huesos paraliza",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.939772Z"
+    "updated_at": "2026-02-16T22:24:08.725020Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
-    "text": "Physical Barrage",
+    "text": "Aluvión físico",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.940387Z"
+    "updated_at": "2026-02-16T22:24:13.561104Z"
   },
   "spell.explosion_wave.name": {
     "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
-    "text": "Explosion Wave",
+    "text": "Ola de explosión",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.940769Z"
+    "updated_at": "2026-02-16T22:24:13.561483Z"
   },
   "spell.incineron_soulfire.name": {
     "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
-    "text": "Incineron Soulfire",
+    "text": "Fuego de alma incineron",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.941190Z"
+    "updated_at": "2026-02-16T22:24:13.561849Z"
   },
   "spell.plaguesmith_wave.name": {
     "src_hash": "d9649bfbbd30a852247fef5979d725d9",
-    "text": "Plaguesmith Wave",
+    "text": "Ola de Plaguesmith",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.941567Z"
+    "updated_at": "2026-02-16T22:24:13.562301Z"
   },
   "spell.lich_paralyze.name": {
     "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
-    "text": "Lich Paralyze",
+    "text": "Paralizar al Lich",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:25.928797Z"
+    "updated_at": "2026-02-16T22:24:13.562609Z"
   },
   "spell.lizard_wave_2.name": {
     "src_hash": "40359f42d6c401e32e7f4524cb402999",
@@ -143022,5 +143022,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:15:52.918497Z"
+  },
+  "spell.mud_attack.name": {
+    "src_hash": "f6f1198ace1aebb65327bf8c03fed32b",
+    "text": "Barro Ataque",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:23:50.281461Z"
+  },
+  "spell.blank_rune.name": {
+    "src_hash": "5b08c139df49fad08b5b67dd53f5ca45",
+    "text": "Runa en blanco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:23:50.429609Z"
+  },
+  "spell.generator.name": {
+    "src_hash": "dac9630aec642a428cd73f4be0a03569",
+    "text": "Generador",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:23:50.454999Z"
+  },
+  "spell.find_fiend.name": {
+    "src_hash": "39a1af8722e356c0b578c515abf5967c",
+    "text": "Encuentra Sombrío",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:23:50.462344Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Ola nociva del Ripptor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:17.987195Z"
+  },
+  "spell.djinn_electrify.name": {
+    "src_hash": "2d7d1504b58dddc11ff934bb57fef215",
+    "text": "Djinn electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:17.987687Z"
+  },
+  "spell.gnomevil_skill_reducer_2.name": {
+    "src_hash": "c2542458a3272a3f5e413c77958fad0b",
+    "text": "Reductor de habilidades de Gnomevil 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:17.988249Z"
+  },
+  "spell.alptramun_summon.name": {
+    "src_hash": "0343adfc07caa85bf0344dd565816cbf",
+    "text": "Invocación de Alptramun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:17.988597Z"
+  },
+  "spell.root.name": {
+    "src_hash": "63a9f0ea7bb98050796b649e85481845",
+    "text": "raíz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:24.000221Z"
+  },
+  "spell.obujos_skill_reducer_1.name": {
+    "src_hash": "761e07a1d8338f36e05a468f8df8cdd6",
+    "text": "obujos reductor de habilidad 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:24.000732Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "ola omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:24.001058Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Invocación de Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:24.001391Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "bufón no-muerto paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:24.001827Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "tiro al blanco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:27.947086Z"
+  },
+  "spell.big_boss_trolliver_summon.name": {
+    "src_hash": "b2c625654cc5c384790ae76b686883f9",
+    "text": "invocación del gran jefe trolliver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:27.947569Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "onda de réplica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:27.947885Z"
+  },
+  "spell.raging_mage_skill_reducer_2.name": {
+    "src_hash": "1b4d065ee80f1dbdd553b7cc433f56a1",
+    "text": "reductor de habilidades de mago furioso 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:27.948294Z"
+  },
+  "spell.dreadwing_curse.name": {
+    "src_hash": "6f04ff2059a60aa01e208e0cebc1bd2d",
+    "text": "maldición aterradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:27.948614Z"
+  },
+  "spell.betrayed_wraith_skill_reducer.name": {
+    "src_hash": "333a2e1af1ddefe52520f8f2978a203f",
+    "text": "Reductor de habilidades de espectro traicionado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:31.032943Z"
+  },
+  "spell.gnomevil_soulfire.name": {
+    "src_hash": "f12a4dd8c3059b8abe022de1f312fb31",
+    "text": "fuego del alma gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:31.033413Z"
+  },
+  "spell.minotaur_amazon_paralyze.name": {
+    "src_hash": "c88f3b8928239a36ce90d56a34ff900d",
+    "text": "minotauro amazona paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:24:31.033852Z"
   }
 }

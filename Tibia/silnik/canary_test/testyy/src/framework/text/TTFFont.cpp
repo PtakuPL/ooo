@@ -113,6 +113,16 @@ bool TTFFont::load(const std::string& mainTtf,
     return false;
   }
   m_pixelSize = pixelSize;
+  // Derive metrics (ascent/descent/line height) from FreeType; fall back to pixel size
+  if (m_face && m_face->size && m_face->size->metrics.height > 0) {
+    m_lineHeight = static_cast<int>(m_face->size->metrics.height >> 6);
+    m_ascent = static_cast<int>(m_face->size->metrics.ascender >> 6);
+    m_descent = static_cast<int>(-(m_face->size->metrics.descender >> 6));
+  } else {
+    m_lineHeight = pixelSize;
+    m_ascent = pixelSize;
+    m_descent = 0;
+  }
   g_logger.info(fmt::format("TTFFont: pixel size set to {}", pixelSize));
 
   // Create HarfBuzz face/font from FT_Face
@@ -358,10 +368,16 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
     return nullptr;
   }
 
-  // Copy to CPU atlas and upload only the updated sub-region to the GPU
+  // Copy to CPU atlas and queue GPU upload for the GL thread
   const Point destPoint(A->penX, A->penY);
   A->image->blit(destPoint, glyphImage);
-  A->texture->uploadSubPixels(Rect(destPoint, Size(w, h)), glyphImage);
+
+  // IMPORTANT: Do not call any GL functions here.
+  // This path can run outside the active GL context/thread (especially on Windows),
+  // so we only queue the upload to be executed later by DrawPool (GL thread).
+  if (A->texture) {
+    A->pendingUploads.push_back(Atlas::PendingUpload{ Rect(destPoint, Size(w, h)), glyphImage });
+  }
 
   // Register glyph metrics
   AtlasGlyph ag{};

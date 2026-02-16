@@ -1,9 +1,9 @@
 {
-  "category": "ru",
-  "cycle": 7,
+  "category": "sr",
+  "cycle": 8,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-16T19:21:03Z",
+  "generated_at_utc": "2026-02-16T19:59:05Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "es",
-      "cycle": 7,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:20:34Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "pl",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:20:18Z"
+      "t": "2026-02-16T19:58:55Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "pl",
+      "cycle": 8,
+      "file": "spells.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-16T19:58:54Z"
+    },
+    {
+      "action": "update",
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:18:47Z"
+      "t": "2026-02-16T19:58:22Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:17:17Z"
+      "t": "2026-02-16T19:56:51Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:15:47Z"
+      "t": "2026-02-16T19:55:21Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:14:16Z"
+      "t": "2026-02-16T19:53:43Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:12:46Z"
+      "t": "2026-02-16T19:52:12Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:11:15Z"
+      "t": "2026-02-16T19:50:42Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:09:38Z"
+      "t": "2026-02-16T19:49:12Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
+      "category": "sv",
+      "cycle": 8,
       "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T19:08:07Z"
+      "t": "2026-02-16T19:47:41Z"
     }
   ],
   "stage": "cycle_end",

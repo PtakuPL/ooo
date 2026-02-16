@@ -284,14 +284,48 @@
         }
       ],
       "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T19:24:04.219591Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "spells.json",
+      "key": "spell.the_pale_count_manadrain.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "The Pale Count Manadrain",
+      "attempted_translation": "The Pale Count Манадраин",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'The Pale Count Манадраин' (EN: 'The Pale Count Manadrain')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.571,
+          "message": "Język cyrylicowy ma 57% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
-    "total": 8,
+    "total": 9,
     "reviewed": 0,
     "approved": 1,
     "rejected": 0,
     "applied": 1
   },
-  "updated_at": "2026-02-16T18:40:53.680237Z"
+  "updated_at": "2026-02-16T19:24:04.219881Z"
 }

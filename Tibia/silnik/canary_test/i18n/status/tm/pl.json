@@ -89933,7 +89933,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:28:53.037885Z"
+    "updated_at": "2026-02-16T19:59:02.664991Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -93461,7 +93461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:28:53.038652Z"
+    "updated_at": "2026-02-16T19:59:02.665465Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -196950,5 +196950,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T18:23:25.345658Z"
+  },
+  "spell.spawn_of_the_welter_heal2.name": {
+    "src_hash": "ff0014097463582a82b1da1180176b26",
+    "text": "Pojawienie się The Welter uzdrowienia2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:02.664477Z"
   }
 }

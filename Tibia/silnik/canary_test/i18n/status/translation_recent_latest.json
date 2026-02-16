@@ -1,74 +1,38 @@
 {
-  "timestamp": "2026-02-16T19:21:01.971440Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 11,
+  "timestamp": "2026-02-16T19:59:02.971673Z",
+  "language": "pl",
+  "json_file": "spells.json",
+  "translated": 5,
   "entries": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "en": "Chchch",
-      "translated": "Chchch",
+      "key": "spell.azerus_soulfire_1.name",
+      "en": "azerus soulfire 1",
+      "translated": "Azerus Soulfire 1",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "spell.mana_drain_chain.name",
+      "en": "mana drain chain",
+      "translated": "łańcuch wysysania many",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "spell.spawn_of_the_welter_heal2.name",
+      "en": "Spawn Of The Welter Heal2",
+      "translated": "Pojawienie się The Welter uzdrowienia2",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "spell.quara_constrictor_electrify.name",
+      "en": "quara constrictor electrify",
+      "translated": "quara constrictor elektryzuje",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
-    },
-    {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
-    },
-    {
-      "key": "npc.brewster.stdmod_15",
-      "en": "You should visit Tyrias in Liberty Bay now.",
-      "translated": "Deberías visitar Tyrias en Liberty Bay ahora.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.brewster.stdmod_21",
-      "en": "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",
-      "translated": "Hay cinco bendiciones disponibles en cinco lugares sagrados: el escudo {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}. Además, puedes recibir el {twist of fate} aquí.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.brodrosch.stdmod_10",
-      "en": "Would you like to travel to Gnomprona for |TRAVELCOST|?",
-      "translated": "¿Te gustaría viajar a Gnomprona por |TRAVELCOST|?",
-      "source": "tm"
-    },
-    {
-      "key": "npc.brodrosch.stdmod_4",
-      "en": "Do you seek a ride to Farmine for |TRAVELCOST|?",
-      "translated": "¿Buscas transporte a Farmine para |TRAVELCOST|?",
-      "source": "tm"
-    },
-    {
-      "key": "npc.brodrosch.stdmod_7",
-      "en": "Do you seek a ride to Cormaya for |TRAVELCOST|?",
-      "translated": "¿Buscas transporte a Cormaya para |TRAVELCOST|?",
-      "source": "tm"
+      "key": "spell.lava_golem_soulfire2.name",
+      "en": "lava golem soulfire2",
+      "translated": "lawowy golem soulfire2",
+      "source": "google_translate"
     }
   ]
 }

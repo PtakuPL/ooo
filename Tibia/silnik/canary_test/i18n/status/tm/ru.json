@@ -12438,5 +12438,253 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:29:58.798630Z"
+  },
+  "npc.albinius.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Ох... прощай, дитя.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.255002Z"
+  },
+  "npc.alesar.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "К вашим услугам, просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.259437Z"
+  },
+  "npc.alesar.walkaway_msg_1": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Окончательно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.260003Z"
+  },
+  "npc.alia.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.263936Z"
+  },
+  "npc.alia.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.266731Z"
+  },
+  "npc.alkestios.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.267340Z"
+  },
+  "npc.alkestios.greet_msg_1": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Благословение природы, путник! Пусть на вас не воздействует никакая зловещая сила.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.268218Z"
+  },
+  "npc.alkestios.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.271810Z"
+  },
+  "npc.altar.greet_msg_1": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Преклоните колени перед всепожирающей силой кровавого разложения.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.272699Z"
+  },
+  "npc.altar.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.273980Z"
+  },
+  "npc.alyxo.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.274975Z"
+  },
+  "npc.alyxo.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.275788Z"
+  },
+  "npc.alyxo.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.276358Z"
+  },
+  "npc.alyxo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.281240Z"
+  },
+  "npc.amanda.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.282710Z"
+  },
+  "npc.amanda.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.286564Z"
+  },
+  "npc.ambassador_of_rathleton.greet_msg_1": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Приветствую тебя, друг.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.287399Z"
+  },
+  "npc.ambassador_of_rathleton.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.288654Z"
+  },
+  "npc.amber.greet_msg_1": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "О, привет, приятно тебя видеть |PLAYERNAME|. Вы здесь, чтобы услышать истории о моем {adventures} или вам нужен {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.291203Z"
+  },
+  "npc.amber.walkaway_msg_1": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Да, увидимся позже.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.299845Z"
+  },
+  "npc.anderson.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "До свидания. Пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.300989Z"
+  },
+  "npc.andrew_lyze.greet_msg_1": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Здравствуйте, я начальник этого {monument}. {sarcophagus} перед вами был установлен для того, чтобы люди не могли попасть туда {down}. Но я сомневаюсь, что этот шаг достаточен.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.303528Z"
+  },
+  "npc.andrew_lyze.greet_msg_2": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Что ж, посмотрим, увенчалась ли ваша миссия успехом. Просто принеси мне все необходимое {materials}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.304711Z"
+  },
+  "npc.andrew_lyze.greet_msg_3": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Если вы выкопали все три кристалла в достаточном количестве и получили ядовитую железу, зарядка вашего компаса может начаться! Впервые он будет заряжен фиолетовым кристаллом. Готовы ощутить силу кристаллов {unleash}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.306515Z"
+  },
+  "npc.andrew_lyze.greet_msg_4": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Привет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.307109Z"
+  },
+  "npc.andrew_lyze.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.309442Z"
+  },
+  "npc.angelo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.315480Z"
+  },
+  "npc.aurita.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.346806Z"
+  },
+  "npc.aurita.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Пусть твой путь всегда будет ровным.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.350036Z"
+  },
+  "npc.azalea.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.355626Z"
+  },
+  "npc.azalea.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:36:00.358361Z"
   }
 }

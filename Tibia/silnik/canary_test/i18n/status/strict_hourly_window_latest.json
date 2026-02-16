@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-16T22:09:10.024150Z",
-  "window_end_utc": "2026-02-16T23:09:10.024150Z",
+  "window_start_utc": "2026-02-16T22:10:28.306005Z",
+  "window_end_utc": "2026-02-16T23:10:28.306005Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3506,
-  "guard_fail": 2775,
-  "guard_fail_rate_pct": 44.2,
+  "translated": 3595,
+  "guard_fail": 2815,
+  "guard_fail_rate_pct": 43.9,
   "no_progress_entries": 1,
   "no_progress_rate_pct": 1.2,
-  "throughput_keys_per_h": 1987.5,
-  "suspicious_total": 13906,
+  "throughput_keys_per_h": 2039.7,
+  "suspicious_total": 13757,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -49,9 +49,15 @@
       "guard_command": 0
     },
     {
+      "target": "es/questlog.json",
+      "translated": 85,
+      "guard_fail": 59,
+      "guard_command": 0
+    },
+    {
       "target": "ru/monsters.json",
-      "translated": 83,
-      "guard_fail": 67,
+      "translated": 54,
+      "guard_fail": 46,
       "guard_command": 0
     },
     {
@@ -64,12 +70,6 @@
       "target": "es/scripts.json",
       "translated": 20,
       "guard_fail": 45,
-      "guard_command": 0
-    },
-    {
-      "target": "pl/quests.json",
-      "translated": 48,
-      "guard_fail": 39,
       "guard_command": 0
     }
   ]

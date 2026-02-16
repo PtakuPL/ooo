@@ -143910,5 +143910,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:03:37.765195Z"
+  },
+  "questlog.quest_10.mission_10.state_1": {
+    "src_hash": "1c32cc3091d0dcf983a5e914e76e7e6e",
+    "text": "Palimuth te dijo que un círculo de Yalahari está planeando algún tipo de ritual. Planean crear un portal para algunos demonios poderosos y liberarlos en la ciudad para 'purge' de una vez por todas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:10:03.332341Z"
   }
 }

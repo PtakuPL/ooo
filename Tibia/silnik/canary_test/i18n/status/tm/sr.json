@@ -165766,5 +165766,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:40:22.047250Z"
+  },
+  "data.otservbr.global.npc.anerui.L72.1488": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Асха Тхрази.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:39.953280Z"
+  },
+  "data.otservbr.global.npc.anerui.L73.1489": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Асха Тхрази.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:39.953537Z"
+  },
+  "data.otservbr.global.npc.aneus.L131.1324": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "Збогом и чувај се!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:39.953898Z"
+  },
+  "data.otservbr.global.npc.angelina.L58.143": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Богови морају бити хваљени што сам коначно спашен. Ја немам много овоземаљског имања, али молим вас прихватите малу награду, зар не?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:39.954620Z"
+  },
+  "data.otservbr.global.npc.angelina.L60.144": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Хвала што сте ми спасили живот! Да те телепортујем из Мрачне катедрале?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:43.870137Z"
+  },
+  "data.otservbr.global.npc.angelina.L84.145": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Нека вас богови благослове.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:43.870475Z"
+  },
+  "data.otservbr.global.npc.angelina.L85.146": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Нека вас богови благослове.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:43.870776Z"
+  },
+  "data.otservbr.global.npc.angelo.L60.1444": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Само ми се склони с пута! Убио си ово прелепо створење. Немам шта више да кажем. Проклети друид од Црунора!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:43.871414Z"
+  },
+  "data.otservbr.global.npc.angelo.L64.1446": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "__ПХ0__ од Црунора? Рекао ти је да се овде појавила нова пећина? Тако је. Ја сам шеф пројекта који покушава да сазна више о овој новој области.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:48.011444Z"
+  },
+  "data.otservbr.global.npc.angus.L633.1450": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Поздрав, шта могу учинити за вас?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:48.011822Z"
+  },
+  "data.otservbr.global.npc.archery.L64.538": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Добродошли у Арцхери'с схоп!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:48.012191Z"
+  },
+  "data.otservbr.global.npc.archery.L65.539": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:50.625509Z"
+  },
+  "data.otservbr.global.npc.archery.L66.540": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:50.625865Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L63.70": {
+    "src_hash": "30bc6203a67610eed6580d3e9fb8c0e0",
+    "text": "Добродошли у Арцхери'с Роок радњу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:50.626296Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L64.71": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:50.626646Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L65.72": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:50.626983Z"
+  },
+  "data.otservbr.global.npc.ariella.L161.242": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Здраво.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:52.561552Z"
+  },
+  "data.otservbr.global.npc.arito.L117.1343": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Посетите нас поново.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:52.561850Z"
   }
 }

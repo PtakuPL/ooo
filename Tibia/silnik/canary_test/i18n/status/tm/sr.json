@@ -165502,5 +165502,269 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:13:51.808563Z"
+  },
+  "data.otservbr.global.npc.ahmet.L182.407": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Буди оплакиван ходочасник у телу. Продајем општу робу. Само ме замоли за {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:21.798491Z"
+  },
+  "data.otservbr.global.npc.shimun.L118.698": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.009916Z"
+  },
+  "data.otservbr.global.npc.shimun.L58.695": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.010561Z"
+  },
+  "data.otservbr.global.npc.shimun.L61.696": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.011148Z"
+  },
+  "data.otservbr.global.npc.shimun.L64.697": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.011870Z"
+  },
+  "data.otservbr.global.npc.shiriel.L145.1149": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.012703Z"
+  },
+  "data.otservbr.global.npc.shirtalis.of.the.summer.court.L84.57": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.013647Z"
+  },
+  "data.otservbr.global.npc.sigurd.L147.1171": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.015010Z"
+  },
+  "data.otservbr.global.npc.sundara.L170.1087": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.016554Z"
+  },
+  "data.otservbr.global.npc.tandros.L160.196": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.018097Z"
+  },
+  "data.otservbr.global.npc.tefrit.L119.537": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.019257Z"
+  },
+  "data.otservbr.global.npc.tefrit.L58.534": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.019803Z"
+  },
+  "data.otservbr.global.npc.tefrit.L61.535": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.020785Z"
+  },
+  "data.otservbr.global.npc.tefrit.L64.536": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.021861Z"
+  },
+  "data.otservbr.global.npc.the.empress.L78.443": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Поздрав.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.024882Z"
+  },
+  "data.otservbr.global.npc.the.empress.L84.444": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.025736Z"
+  },
+  "data.otservbr.global.npc.the.librarian.L87.395": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.027005Z"
+  },
+  "data.otservbr.global.npc.thorwulf.L225.909": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ћао.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.029200Z"
+  },
+  "data.otservbr.global.npc.tigo.L96.858": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.030315Z"
+  },
+  "data.otservbr.global.npc.topsy.L181.925": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.032039Z"
+  },
+  "data.otservbr.global.npc.torkada.L97.1009": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ћао.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.032745Z"
+  },
+  "data.otservbr.global.npc.tyrias.L174.1273": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.035523Z"
+  },
+  "data.otservbr.global.npc.undal.L168.1467": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.037362Z"
+  },
+  "data.otservbr.global.npc.undal.L169.1468": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.037805Z"
+  },
+  "data.otservbr.global.npc.vanys.L168.532": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.039213Z"
+  },
+  "data.otservbr.global.npc.vanys.L169.533": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.039663Z"
+  },
+  "data.otservbr.global.npc.xodet.L175.345": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.042306Z"
+  },
+  "data.otservbr.global.npc.yberius.L170.1365": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.044099Z"
+  },
+  "data.otservbr.global.npc.yonan.L137.684": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.044621Z"
+  },
+  "data.otservbr.global.npc.yonan.L140.685": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.045246Z"
+  },
+  "data.otservbr.global.npc.yonan.L143.686": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.045684Z"
+  },
+  "data.otservbr.global.npc.yonan.L216.687": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.046060Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L149.51": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:22.047250Z"
   }
 }

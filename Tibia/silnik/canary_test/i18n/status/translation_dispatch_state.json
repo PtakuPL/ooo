@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-02-16T22:37:16.238923Z",
-  "cycle_counter": 844,
-  "last_target_key": "ro:quests.json",
-  "last_pending_total": 607,
-  "last_tier": 2,
-  "last_cat_priority": 5,
+  "timestamp": "2026-02-16T22:40:35.587918Z",
+  "cycle_counter": 847,
+  "last_target_key": "es:questlog.json",
+  "last_pending_total": 1644,
+  "last_tier": 1,
+  "last_cat_priority": 9,
   "candidates_count": 197,
   "active_candidates_count": 190,
   "skipped_backoff": 6,
   "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "pl:npc.json": 846
+    "pl:npc.json": 856
   },
   "tier_config": {
     "tier1": [
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 9,
+  "cache_cycle": 10,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -291,7 +291,8 @@
     "ro:server.json": 0,
     "sr:server.json": 0,
     "sv:server.json": 0,
-    "ro:spells.json": 0
+    "ro:spells.json": 0,
+    "ro:quests.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -345,9 +346,9 @@
     "lang_completion": {
       "pl": 43.41,
       "es": 73.83,
-      "ru": 34.68,
-      "ro": 18.66,
-      "it": 9.8,
+      "ru": 34.75,
+      "ro": 18.75,
+      "it": 9.88,
       "sr": 9.58,
       "sv": 7.47
     }

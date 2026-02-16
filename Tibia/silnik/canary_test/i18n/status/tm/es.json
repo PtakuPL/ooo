@@ -143214,5 +143214,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:29:03.918322Z"
+  },
+  "questlog.quest_31.mission_1.state_4": {
+    "src_hash": "0ef4d7f94a08900604a4beeee409741f",
+    "text": "Has completado la Quest!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:46.124303Z"
+  },
+  "questlog.quest_10.mission_1.state_1": {
+    "src_hash": "7f6f2bdcc9d70c426a6e07eb1cd71a97",
+    "text": "Palimuth te pidió ayuda con algunos problemas de alcantarillado. Necesitarás una palanca, hay 4 lugares donde debes ir marcados con una X en tu mapa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:40:53.452277Z"
   }
 }

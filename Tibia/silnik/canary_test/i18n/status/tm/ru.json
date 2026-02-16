@@ -8998,5 +8998,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:44:06.154652Z"
+  },
+  "data.otservbr.global.npc.guide.luke.L104.467": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.305133Z"
+  },
+  "data.otservbr.global.npc.guide.rahlkora.L105.1326": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.306038Z"
+  },
+  "data.otservbr.global.npc.guide.thelandil.L100.628": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.306616Z"
+  },
+  "data.otservbr.global.npc.guide.tiko.L104.801": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.307470Z"
+  },
+  "data.otservbr.global.npc.hanna.L122.876": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.309437Z"
+  },
+  "data.otservbr.global.npc.hanna.L123.877": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.310240Z"
+  },
+  "data.otservbr.global.npc.harlow.L79.1285": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.311218Z"
+  },
+  "data.otservbr.global.npc.harlow.vengoth.L58.855": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.311833Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L65.882": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.313205Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L66.883": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.313913Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L65.809": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.314502Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L66.810": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.315019Z"
+  },
+  "data.otservbr.global.npc.hoggle.L60.1550": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.316333Z"
+  },
+  "data.otservbr.global.npc.hoggle.L61.1551": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.317030Z"
+  },
+  "data.otservbr.global.npc.jack.fate.goroma.L117.307": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.322011Z"
+  },
+  "data.otservbr.global.npc.karith.L352.601": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.326288Z"
+  },
+  "data.otservbr.global.npc.karith.L353.602": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.326870Z"
+  },
+  "data.otservbr.global.npc.lubo.L158.1434": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.334011Z"
+  },
+  "data.otservbr.global.npc.mazarius.L190.563": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.337887Z"
+  },
+  "data.otservbr.global.npc.morgan.L156.480": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.340966Z"
+  },
+  "data.otservbr.global.npc.naji.L77.1425": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.343525Z"
+  },
+  "data.otservbr.global.npc.naji.L78.1426": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.344000Z"
+  },
+  "data.otservbr.global.npc.ocelus.L108.833": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.347691Z"
+  },
+  "data.otservbr.global.npc.pemaret.L107.1463": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.350886Z"
+  },
+  "data.otservbr.global.npc.rabaz.L196.624": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.355710Z"
+  },
+  "data.otservbr.global.npc.rabaz.L197.625": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.356775Z"
+  },
+  "data.otservbr.global.npc.raymond.striker.L218.358": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.359743Z"
+  },
+  "data.otservbr.global.npc.romir.L155.1042": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.362504Z"
+  },
+  "data.otservbr.global.npc.romir.L156.1043": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.363209Z"
+  },
+  "data.otservbr.global.npc.sebastian.L117.1349": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.366883Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L69.1110": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.367550Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L68.259": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.380538Z"
+  },
+  "data.otservbr.global.npc.walter.jaeger.L294.1181": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Пожалуйста, убедитесь, что в вашем ящике магазина есть свободные слоты.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.389729Z"
+  },
+  "data.otservbr.global.scripts.actions.object.imbuement.shrine.L9.2355": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Вы можете использовать алтарь только на подходящем предмете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.396453Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L123.2359": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Сначала положите конструктор на пол.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.397335Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L125.2360": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Вы можете построить это только внутри дома.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.398355Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fishing.L41.2361": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Вы не владелец.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.399070Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L106.2365": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.400321Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L119.2367": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.401088Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L155.2368": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.401771Z"
+  },
+  "data.otservbr.global.scripts.actions.other.kits.L26.2363": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Вы можете построить это только внутри дома.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.403421Z"
+  },
+  "data.otservbr.global.scripts.actions.other.mechanical.fishing.L19.2358": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Вы не владелец.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.403932Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L29.2388": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Чтобы сразиться с этим боссом, вам понадобится 5 игроков.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.405615Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L37.2389": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Кто-то сражается против босса! Вам нужно подождать некоторое время.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.406411Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L68.2391": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Вы вошли в древнюю тюремную камеру демонов!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.407096Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L69.2392": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "У вас есть пятнадцать минут, чтобы убить и ограбить этого босса, иначе вы потеряете этот шанс.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:20.407987Z"
   }
 }

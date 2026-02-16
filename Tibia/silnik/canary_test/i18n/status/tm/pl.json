@@ -89942,5 +89942,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:43:00.172118Z"
+  },
+  "monster.grim_reaper.voice_1": {
+    "src_hash": "593f24c9febaf98b2590e4be5d3a91ed",
+    "text": "Śmierć!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:03.352990Z"
+  },
+  "monster.vampire.voice_1": {
+    "src_hash": "37565f1867857e07abb2b0118bc26f8a",
+    "text": "Krew!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:03.425500Z"
   }
 }

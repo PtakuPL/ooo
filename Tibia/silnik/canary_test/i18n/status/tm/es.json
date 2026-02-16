@@ -140918,5 +140918,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:43:34.663362Z"
+  },
+  "monster.schiach.name": {
+    "src_hash": "6be5962b96fb7ba9bf225254e7d3382c",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.847669Z"
+  },
+  "monster.percht.name": {
+    "src_hash": "af3f18a4248f79e532b15532ec7da8ab",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.853730Z"
+  },
+  "monster.lucifuga_aranea.name": {
+    "src_hash": "e8d9873523325a612dab9291ec50c1f4",
+    "text": "Aranea Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.879207Z"
+  },
+  "monster.maxxenius.name": {
+    "src_hash": "f5b4b7b4e11274b4de639e62e86dad93",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.887589Z"
+  },
+  "monster.maxxenius.desc": {
+    "src_hash": "f5b4b7b4e11274b4de639e62e86dad93",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.889051Z"
+  },
+  "monster.malofur_mangrinder.name": {
+    "src_hash": "b89e7416e323b11d8e00d950726488ee",
+    "text": "Mangrinder Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.891367Z"
+  },
+  "monster.malofur_mangrinder.desc": {
+    "src_hash": "b89e7416e323b11d8e00d950726488ee",
+    "text": "Mangrinder Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.892726Z"
+  },
+  "monster.alptramun.name": {
+    "src_hash": "fa5e6674f15617726271f1d5570554bd",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.896347Z"
+  },
+  "monster.alptramun.desc": {
+    "src_hash": "fa5e6674f15617726271f1d5570554bd",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.897761Z"
+  },
+  "monster.izcandar_the_banished.name": {
+    "src_hash": "a49c6c6cacf94c65644ddd6f3cc4a37c",
+    "text": "Izcandar banished",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.901091Z"
+  },
+  "monster.izcandar_the_banished.desc": {
+    "src_hash": "a49c6c6cacf94c65644ddd6f3cc4a37c",
+    "text": "Izcandar banished",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.903235Z"
+  },
+  "monster.lava_lurker_attendant.name": {
+    "src_hash": "fcb294287f145f783234aad89ad82b66",
+    "text": "Lava acechador attendant",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.953443Z"
+  },
+  "monster.urmahlullu_the_weakened.name": {
+    "src_hash": "2e93a7cbb0f7cf99840221781bf5357e",
+    "text": "Urmahlullu weakened",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.974743Z"
+  },
+  "monster.urmahlullu_the_weakened.desc": {
+    "src_hash": "2e93a7cbb0f7cf99840221781bf5357e",
+    "text": "Urmahlullu weakened",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.976997Z"
+  },
+  "monster.urmahlullu_the_tamed.name": {
+    "src_hash": "98b90dfefe77592932ca521a5fe08278",
+    "text": "Urmahlullu tamed",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.984559Z"
+  },
+  "monster.urmahlullu_the_tamed.desc": {
+    "src_hash": "98b90dfefe77592932ca521a5fe08278",
+    "text": "Urmahlullu tamed",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:46:13.986663Z"
   }
 }

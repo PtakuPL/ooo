@@ -1,270 +1,18 @@
 {
-  "timestamp": "2026-02-16T22:11:50.962402Z",
+  "timestamp": "2026-02-16T22:13:16.407973Z",
   "checked_entries": 100,
-  "issues_found": 53,
+  "issues_found": 21,
   "issues_by_type": {
-    "identical_to_en": 46,
+    "identical_to_en": 10,
     "identical_to_en_exempt": 13,
-    "artifact_token": 7,
-    "suspicious_log_critical": 101,
-    "suspicious_log_low": 13,
-    "suspicious_log_high": 86,
+    "artifact_token": 11,
+    "suspicious_log_low": 4,
+    "suspicious_log_critical": 29,
+    "suspicious_log_high": 167,
     "suspicious_rejected_critical": 148,
     "suspicious_rejected_high": 52
   },
   "issues": [
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
     {
       "key": "monster.feroxa2.desc",
       "lang": "pl",
@@ -383,6 +131,34 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I WILL MAKE ALL OF YOU SUFFER!",
+      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_8",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
     }
   ],
   "threshold": 10,

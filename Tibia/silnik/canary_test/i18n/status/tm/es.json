@@ -142814,5 +142814,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:00:48.204341Z"
+  },
+  "monster.feroxa4.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:21.897167Z"
+  },
+  "monster.feroxa3.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:21.899701Z"
+  },
+  "monster.feroxa5.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:21.901604Z"
+  },
+  "monster.utua_stone_sting.name": {
+    "src_hash": "61a701bf0001a08cc44881d29d75fefe",
+    "text": "Utua piedra sting",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:21.909533Z"
+  },
+  "monster.utua_stone_sting.desc": {
+    "src_hash": "61a701bf0001a08cc44881d29d75fefe",
+    "text": "Utua piedra sting",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:21.911503Z"
   }
 }

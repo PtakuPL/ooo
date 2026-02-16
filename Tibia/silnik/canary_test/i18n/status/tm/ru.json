@@ -14102,5 +14102,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:10:04.947586Z"
+  },
+  "data.otservbr.global.npc.gewen.L121.1497": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.395180Z"
+  },
+  "data.otservbr.global.npc.gewen.L122.1498": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.395703Z"
+  },
+  "data.otservbr.global.npc.ghorza.L140.1513": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.396772Z"
+  },
+  "data.otservbr.global.npc.ghost.of.a.priest.L195.999": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.397447Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L153.923": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.399371Z"
+  },
+  "data.otservbr.global.npc.gnomus.L336.1017": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.401842Z"
+  },
+  "data.otservbr.global.npc.hamish.L203.765": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.412166Z"
+  },
+  "data.otservbr.global.npc.haroun.L144.807": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "К вашим услугам, просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.416093Z"
+  },
+  "data.otservbr.global.npc.iptar.sin.L185.985": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.422272Z"
+  },
+  "data.otservbr.global.npc.irea.L53.184": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.422856Z"
+  },
+  "data.otservbr.global.npc.isimov.L169.1003": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.424834Z"
+  },
+  "data.otservbr.global.npc.isimov.L170.1004": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.425671Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L125.1120": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Ох... прощай, дитя.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.426815Z"
+  },
+  "data.otservbr.global.npc.iwar.L85.275": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.427952Z"
+  },
+  "data.otservbr.global.npc.iyad.L109.748": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.428675Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L116.650": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.431303Z"
+  },
+  "data.otservbr.global.npc.jerom.L132.946": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.432296Z"
+  },
+  "data.otservbr.global.npc.jerom.L133.947": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.432745Z"
+  },
+  "data.otservbr.global.npc.kallimae.L144.297": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.435099Z"
+  },
+  "data.otservbr.global.npc.kallimae.L58.294": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.435623Z"
+  },
+  "data.otservbr.global.npc.kallimae.L61.295": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.436184Z"
+  },
+  "data.otservbr.global.npc.kallimae.L64.296": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.436884Z"
+  },
+  "data.otservbr.global.npc.kasmir.L170.333": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.439242Z"
+  },
+  "data.otservbr.global.npc.kasmir.L171.334": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.440060Z"
+  },
+  "data.otservbr.global.npc.khanna.L208.3": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.442183Z"
+  },
+  "data.otservbr.global.npc.king.tibianus.L453.339": {
+    "src_hash": "6fc6fd5473a14ef5faf70b62c9e91b34",
+    "text": "КАК ГРУБО!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.442689Z"
+  },
+  "data.otservbr.global.npc.kjesse.L148.352": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.443884Z"
+  },
+  "data.otservbr.global.npc.kjesse.L149.353": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.444721Z"
+  },
+  "data.otservbr.global.npc.klom.stonecutter.L264.325": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:29.446176Z"
   }
 }

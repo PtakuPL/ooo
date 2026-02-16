@@ -14190,5 +14190,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:10:37.972688Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L56.934": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Ține-l jos! <vă oferă un raport elaborat despre activitatea monstrului>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.542557Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L65.935": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Ține-l jos! <vă oferă un raport elaborat despre activitatea monstrului>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.544256Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L72.936": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Ține-l jos! <vă oferă un raport elaborat despre activitatea monstrului>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.545154Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L56.1560": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Ține-l jos! <vă oferă un raport elaborat despre activitatea monstrului>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.546588Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L65.1561": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Ține-l jos! <vă oferă un raport elaborat despre activitatea monstrului>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.547384Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L72.1562": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Ține-l jos! <vă oferă un raport elaborat despre activitatea monstrului>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.548160Z"
+  },
+  "data.otservbr.global.npc.canary.L124.458": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Da, la revedere și nu mai veni!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:35.575657Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L138.261": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Așteaptă! nu pleca! Vreau să vă spun despre numerele mele suprareale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:38.827281Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L139.262": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "La revedere! Nu uita de secretele matematicii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:38.827793Z"
+  },
+  "data.otservbr.global.npc.a.prisoner.L140.263": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Huh? Ce? Pot vedea! Wow! Un non-mino. Te-au {capture} și pe tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:38.828439Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L53.44": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Uhhhh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:38.828768Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L51.150": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:43.154216Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L53.151": {
+    "src_hash": "2fc7a525e31eda3303400c01ce672cf3",
+    "text": "Salutări, {wayfarer}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:43.154627Z"
+  },
+  "data.otservbr.global.npc.a.strange.chalice.L117.1623": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Hi? Ce vrei să spui 'hi' - nu vezi că sunt un... Trebuie să cobor vocea. Ți-a trecut prin cap, că acest 'chalice' nu vrea să fie deranjat?! Lasă-mă în pace!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:43.155907Z"
+  },
+  "data.otservbr.global.npc.a.swan.L95.88": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Te salut, ființă muritoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:43.156386Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L228.69": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "La revedere, micuțul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:48.937348Z"
+  },
+  "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Te salut, om. Acesta este un moment de suferință, mai mult decât oricând avem nevoie de gardieni care să ne protejeze pe noi și lumea noastră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:48.938344Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Ce este asta? O entitate contestată optic numită |PLAYERNAME|. Ce fascinant!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:48.939300Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Așteaptă chiar acolo. Te voi mânca după ce scriu ce am aflat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:48.939995Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Așteaptă chiar acolo. Te voi mânca după ce scriu ce am aflat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:54.362518Z"
+  },
+  "data.otservbr.global.npc.ahmet.L182.407": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Fii plâns pelerin în trup. Vand bunuri generale. Doar cere-mi un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:54.363196Z"
+  },
+  "data.otservbr.global.npc.ajax.L58.355": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Te întorci. Știi, ai dreptate. Fratele are dreptate. Pumnul nu întotdeauna bun. Spune-i asta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:54.364022Z"
+  },
+  "data.otservbr.global.npc.ajax.L61.356": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Ce faci in locul meu?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:54.364463Z"
+  },
+  "data.otservbr.global.npc.al.dee.L167.597": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Pa, pa |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:54.364828Z"
+  },
+  "data.otservbr.global.npc.al.dee.L168.598": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Aruncă o privire în fereastra de tranzacționare din stânga ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:58.458557Z"
+  },
+  "data.otservbr.global.npc.albinius.L267.1035": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Salutări, pelerin. Bun venit în sălile speranței. Suntem deținătorii acestui {temple} și salutăm toți cei care doresc să contribuie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:58.459436Z"
+  },
+  "data.otservbr.global.npc.albinius.L268.1036": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... la revedere, copile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:58.459876Z"
+  },
+  "data.otservbr.global.npc.alesar.L206.1591": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "In sfarsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:58.460259Z"
+  },
+  "data.otservbr.global.npc.alesar.L207.1592": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "In sfarsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:12:58.460528Z"
+  },
+  "data.otservbr.global.npc.alesar.L208.1593": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "La dispoziția dumneavoastră, doar răsfoiți prin marfa mea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:02.303178Z"
+  },
+  "data.otservbr.global.npc.alexander.L172.1568": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ne vedem, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:02.303852Z"
+  },
+  "data.otservbr.global.npc.alexander.L173.1569": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ne vedem, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:02.304212Z"
+  },
+  "data.otservbr.global.npc.alexander.L174.1570": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:02.304877Z"
+  },
+  "data.otservbr.global.npc.alia.L148.1158": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:07.599749Z"
+  },
+  "data.otservbr.global.npc.alia.L149.1159": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:07.600597Z"
+  },
+  "data.otservbr.global.npc.alia.L150.1160": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:07.601183Z"
+  },
+  "data.otservbr.global.npc.alkestios.L130.1473": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Binecuvântarea naturii, călător! Să nu fii afectat de nicio forță sinistră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:07.602164Z"
+  },
+  "data.otservbr.global.npc.alkestios.L131.1474": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:07.602746Z"
+  },
+  "data.otservbr.global.npc.alkestios.L132.1475": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:12.432112Z"
+  },
+  "data.otservbr.global.npc.altar.L83.730": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Îngenunchează în fața puterii atot-devoratoare a decăderii sângeroase.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:12.433405Z"
+  },
+  "data.otservbr.global.npc.altar.L85.732": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:12.434589Z"
+  },
+  "data.otservbr.global.npc.amanda.L200.1226": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:12.436185Z"
+  },
+  "data.otservbr.global.npc.amanda.L201.1227": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:13:12.437540Z"
   }
 }

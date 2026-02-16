@@ -1105,11 +1105,11 @@
   },
   "client.statsbar.text1": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
-    "text": "I. poziom",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Poziom Magii",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708335Z"
+    "updated_at": "2026-02-16T23:20:19.103161Z"
   },
   "scripts.find_fiend.level_unknown": {
     "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
@@ -6289,11 +6289,11 @@
   },
   "client.spells.text1": {
     "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
-    "text": "Apprentice's Strike",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Strajk praktykantów",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:43:24.886858Z"
+    "updated_at": "2026-02-16T23:20:20.530447Z"
   },
   "client.spells.text2": {
     "src_hash": "fa7b503fd5e42aa8ed809fd9e22c833f",
@@ -6505,11 +6505,11 @@
   },
   "client.spells.text4": {
     "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
-    "text": "Nature's Embrace",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Uściski natury",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:48:51.284685Z"
+    "updated_at": "2026-02-16T23:20:20.530713Z"
   },
   "php.menus.text5": {
     "src_hash": "3c295729a9712de89566a726e015e430",

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T23:18:00.245529Z",
+  "timestamp": "2026-02-16T23:20:30.079942Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,8 +67,8 @@
   ],
   "entries_total": 706,
   "entries_by_lang": {
-    "es": 288,
-    "pl": 169,
+    "es": 296,
+    "pl": 223,
     "cs": 641,
     "de": 659,
     "fr": 589,
@@ -124,7 +124,7 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 16,
+      "identical_to_en": 24,
       "domain_priority": 0
     },
     {
@@ -219,6 +219,12 @@
     },
     {
       "lang": "pl",
+      "json_file": "cpp.json",
+      "identical_to_en": 64,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pl",
       "json_file": "html.json",
       "identical_to_en": 58,
       "domain_priority": 9
@@ -237,12 +243,6 @@
     },
     {
       "lang": "pl",
-      "json_file": "cpp.json",
-      "identical_to_en": 14,
-      "domain_priority": 9
-    },
-    {
-      "lang": "pl",
       "json_file": "startup.json",
       "identical_to_en": 7,
       "domain_priority": 9
@@ -250,7 +250,7 @@
     {
       "lang": "pl",
       "json_file": "client.json",
-      "identical_to_en": 2,
+      "identical_to_en": 6,
       "domain_priority": 9
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 16,
+    "identical_to_en": 24,
     "domain_priority": 0
   }
 }

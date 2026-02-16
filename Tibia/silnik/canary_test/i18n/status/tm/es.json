@@ -143918,5 +143918,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:10:03.332341Z"
+  },
+  "client.npctrade.text2": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista de artículos que puedes vender",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:03.798601Z"
+  },
+  "client.utils.text4": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Lalalala... ya te sabes de memoria el himno del culto que se canta en Liberty Bay. No es tan difícil, considerando que se compone principalmente de dos notas y letras repetitivas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:03.804362Z"
+  },
+  "client.charms1410.text1": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "El encanto menor hace eco\nSe obtiene desbloqueando o mejorando un amuleto importante y promocionando a tu personaje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:03.807023Z"
+  },
+  "client.neededtranslations.text4": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista de artículos que puedes vender",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:03.831379Z"
+  },
+  "client.imbuing.text4": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Haga clic aquí para realizar la imbución seleccionada. Esto consumirá las fuentes astrales y el oro necesarios.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:03.835515Z"
+  },
+  "client.npctrade.text1": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista de artículos que puedes comprar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:06.594350Z"
+  },
+  "client.game_shop.text3": {
+    "src_hash": "70e9fac741af644fd3e5360831053f82",
+    "text": "Restaura los puntos de vida de tu personaje.\n\n- sólo se puede utilizar comprando personaje\n- será enviado a tu mochila\n- No lo pueden comprar personajes con bloqueo de zona de protección o signo de batalla.\n- no puede",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:06.595161Z"
+  },
+  "client.game_shop.text4": {
+    "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+    "text": "Recarga el maná de tu personaje.\n\n- sólo se puede utilizar comprando personaje\n- será enviado a tu mochila\n- No lo pueden comprar personajes con bloqueo de zona de protección o signo de batalla.\n- no puede ser pur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:06.596061Z"
+  },
+  "client.http.text2": {
+    "src_hash": "01fa7f139e0a66fd80ea634c1aab2b56",
+    "text": "HTTP.get no es compatible",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:06.596354Z"
+  },
+  "client.neededtranslations.text3": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista de artículos que puedes comprar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:09.814248Z"
+  },
+  "client.game_questlog.text1": {
+    "src_hash": "910d89aefb3a5449196b4604a900bd5f",
+    "text": "Eliminar misiones completadas // Realizar un seguimiento automático de las nuevas misiones // Desaparecer automáticamente el seguimiento de las misiones completadas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:14.065775Z"
+  },
+  "client.game_rewardwall.text3": {
+    "src_hash": "508256e0c0905378d1ac497e92e29878",
+    "text": "¡Recordar! ¡Siempre puedes cobrar tu recompensa diaria de forma gratuita visitando un santuario de recompensas!\n\nActualmente posees el triple de acceso a recompensas instantáneas. ¿Realmente quieres usar uno para reclamar tu recompensa diaria ahora?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:14.066661Z"
+  },
+  "client.game_highscore.text4": {
+    "src_hash": "2a44f87fa0c74e0b58a5748460f0249d",
+    "text": "Retro Duro Pvp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:14.066931Z"
+  },
+  "client.keybins.text4": {
+    "src_hash": "5969789bc00f068ce14d9bd7a558996d",
+    "text": "Modo de chat desconocido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:20:14.067185Z"
   }
 }

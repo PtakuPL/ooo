@@ -1,109 +1,18 @@
 {
-  "timestamp": "2026-02-16T23:19:44.482853Z",
+  "timestamp": "2026-02-16T23:20:39.488258Z",
   "checked_entries": 100,
-  "issues_found": 23,
+  "issues_found": 28,
   "issues_by_type": {
-    "identical_to_en_exempt": 10,
-    "artifact_token": 5,
-    "identical_to_en": 18,
-    "suspicious_log_low": 60,
-    "suspicious_log_high": 104,
-    "suspicious_log_critical": 36,
+    "identical_to_en": 21,
+    "identical_to_en_exempt": 12,
+    "artifact_token": 7,
+    "suspicious_log_low": 55,
+    "suspicious_log_critical": 59,
+    "suspicious_log_high": 86,
     "suspicious_rejected_critical": 165,
     "suspicious_rejected_high": 35
   },
   "issues": [
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
     {
       "key": "monster.the_welter.name",
       "lang": "sv",
@@ -173,6 +82,132 @@
       "type": "identical_to_en",
       "en": "Fernfang",
       "translated": "Fernfang"
+    },
+    {
+      "key": "client.spells.text2",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exeta amp res",
+      "translated": "exeta amp res"
+    },
+    {
+      "key": "client.spells.text3",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exura max vita",
+      "translated": "exura max vita"
+    },
+    {
+      "key": "client.map.text2",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "MarkListItem",
+      "translated": "MarkListItem"
+    },
+    {
+      "key": "client.imbuementtracker.text1",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "ImbuementTracker",
+      "translated": "ImbuementTracker"
+    },
+    {
+      "key": "client.http.text1",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Mozilla/5.0",
+      "translated": "Mozilla/5.0"
+    },
+    {
+      "key": "client.createaccount.text1",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "fx handleHttpResponse",
+      "translated": "fx handleHttpResponse"
+    },
+    {
+      "key": "client.createaccount.text3",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "fx handleHttpResponse",
+      "translated": "fx handleHttpResponse"
+    },
+    {
+      "key": "client.createaccount.text5",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "fx handleHttpResponse",
+      "translated": "fx handleHttpResponse"
+    },
+    {
+      "key": "client.utils.text1",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Castlemania",
+      "translated": "Castlemania"
+    },
+    {
+      "key": "client.http.text1",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Mozilla/5.0",
+      "translated": "Mozilla/5.0"
+    },
+    {
+      "key": "client.uipopupmenu.text1",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "PopupScrollMenuShortcutLabel",
+      "translated": "PopupScrollMenuShortcutLabel"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     }
   ],
   "threshold": 10,

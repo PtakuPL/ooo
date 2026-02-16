@@ -25902,5 +25902,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:24:42.237318Z"
+  },
+  "client.const.text1": {
+    "src_hash": "3d7033662f9854085c5da74321ff2779",
+    "text": "Nord-Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.449532Z"
+  },
+  "client.const.text2": {
+    "src_hash": "b7e1f1c306e3b50e15998797692d2bb2",
+    "text": "Sud-Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.449850Z"
+  },
+  "client.const.text3": {
+    "src_hash": "e06870e1f12090f5b207f1a490cf40ad",
+    "text": "Sud-Ovest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.450296Z"
+  },
+  "client.const.text4": {
+    "src_hash": "52f3e90e1282312c8302e476d7c64ed0",
+    "text": "Nord-Ovest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.450557Z"
+  },
+  "client.utils.text2": {
+    "src_hash": "740e9f42975916867c58c567a8a0fbb1",
+    "text": "Hai occhio per i luoghi sospetti e ami leggere i diari degli altri, specialmente quelli che contengono storie di vampiri. Sei anche un collezionista ed esploratore di token dedicato. Rispetto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.452814Z"
+  },
+  "client.utils.text3": {
+    "src_hash": "064862da0c7cfc2466089ac2e72074a0",
+    "text": "Corista",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.453119Z"
+  },
+  "client.utils.text4": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Lalalala... ora conosci a memoria l'inno del culto cantato a Liberty Bay. Non così difficile, considerando che è composta principalmente da due note e testi ripetitivi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.454219Z"
+  },
+  "client.utils.text5": {
+    "src_hash": "6aeca36524a11b8f633da47c9b4f8c5b",
+    "text": "Il lattaio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:44.454821Z"
+  },
+  "client.debug_info.text1": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Attiva/disattiva le statistiche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:47.980531Z"
+  },
+  "client.debug_info.text2": {
+    "src_hash": "65b74928a95e1d4ed2de01cf44bf5dd2",
+    "text": "Ctrl+Alt+D",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:47.980743Z"
+  },
+  "client.debug_info.text3": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Attiva/disattiva le statistiche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:47.980954Z"
+  },
+  "client.debug_info.text4": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Attiva/disattiva le statistiche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:47.981227Z"
+  },
+  "client.game_screenshot.text1": {
+    "src_hash": "e29be78e8cf65f9f1a934917f9e0903e",
+    "text": "Risultato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:47.981418Z"
+  },
+  "client.game_screenshot.text2": {
+    "src_hash": "9cc1fcaf3259aafaaed78f65790fc29d",
+    "text": "Bestiary Ingresso sbloccato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:52.854068Z"
+  },
+  "client.game_screenshot.text3": {
+    "src_hash": "4a15fc6255ce7860487bbc7553282d15",
+    "text": "Bestiary Inserimento completato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:52.854522Z"
+  },
+  "client.viplist.text1": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Mostra/nascondi l'elenco VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:52.854795Z"
+  },
+  "client.viplist.text2": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Mostra/nascondi l'elenco VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:52.855040Z"
+  },
+  "client.viplist.text3": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Mostra/nascondi l'elenco VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:52.855281Z"
+  },
+  "client.viplist.text4": {
+    "src_hash": "17f72b9ead53e600ba772b32c8d36a63",
+    "text": "aggiungi gruppo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:58.605578Z"
+  },
+  "client.entergame.text1": {
+    "src_hash": "ec2e1cfffe1308e5f4e3736feb6e0f60",
+    "text": "config.otml",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:58.606698Z"
+  },
+  "client.createaccount.text1": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "fx handleHttpResponse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:58.606972Z"
+  },
+  "client.createaccount.text2": {
+    "src_hash": "beead5d6ed66883b128a8585e8959c78",
+    "text": "ERRORE: JSON non trovato nella risposta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:58.607320Z"
+  },
+  "client.createaccount.text3": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "fx handleHttpResponse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:58.607565Z"
+  },
+  "client.createaccount.text4": {
+    "src_hash": "28da1f8c092c0ad093b4cd1df2ae3257",
+    "text": "ottieni lo stato di creazione dell'account",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:04.481251Z"
+  },
+  "client.createaccount.text5": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "fx handleHttpResponse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:04.481499Z"
+  },
+  "client.entergame.text2": {
+    "src_hash": "0eb5bc411ff706fb9c4803b663d8b114",
+    "text": "Ricorda e-mail:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:04.481708Z"
+  },
+  "client.entergame.text3": {
+    "src_hash": "e8ac4263140e9f899ed2bbd5b0e9c8c5",
+    "text": "Entra nel gioco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:04.481901Z"
+  },
+  "client.entergame.text4": {
+    "src_hash": "1724a870b9ccec07a224452f1fe70688",
+    "text": "Nome acc.:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:04.482147Z"
+  },
+  "client.entergame.text5": {
+    "src_hash": "5062c7c0f4d606f6cedbc6f96f97571e",
+    "text": "Ricorda la password:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:08.395948Z"
+  },
+  "client.game_healthcircle.text1": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfaccia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:08.396158Z"
+  },
+  "client.game_healthcircle.text2": {
+    "src_hash": "ed5d2a54107d75ce67a08136ea6d4b43",
+    "text": "Cerchio HP/MP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:08.396361Z"
+  },
+  "client.game_healthcircle.text3": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfaccia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:08.396537Z"
+  },
+  "client.game_healthcircle.text4": {
+    "src_hash": "ed5d2a54107d75ce67a08136ea6d4b43",
+    "text": "Cerchio HP/MP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:08.396730Z"
+  },
+  "client.things.text1": {
+    "src_hash": "7f212a417349153a23f5033a68f1efe7",
+    "text": "Impossibile caricare le risorse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:14.608362Z"
+  },
+  "client.things.text2": {
+    "src_hash": "723fc39cccb92fe2a8337f8fae02628e",
+    "text": "Impossibile caricare i dati statici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:14.608674Z"
+  },
+  "client.gameinterface.text1": {
+    "src_hash": "92faccee806a0d3337faece79db403ea",
+    "text": "Interrompi tutte le azioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:14.608923Z"
+  },
+  "client.gameinterface.text2": {
+    "src_hash": "92faccee806a0d3337faece79db403ea",
+    "text": "Interrompi tutte le azioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:14.609162Z"
+  },
+  "client.gameinterface.text3": {
+    "src_hash": "f4397460b6ae87e06d665239fb9ca13a",
+    "text": "Cancella tutti i testi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:14.609420Z"
+  },
+  "client.statsbar.text1": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Livello magico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:21.226458Z"
+  },
+  "client.statsbar.text2": {
+    "src_hash": "3535f1e07ee1a37cad48ad6cc23e7db5",
+    "text": "Abilità di combattimento con l'ascia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:21.227038Z"
+  },
+  "client.statsbar.text3": {
+    "src_hash": "6f84b63a6480e8f117fc876ed9bdfcd1",
+    "text": "Abilità di combattimento con il club",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:21.227620Z"
+  },
+  "client.statsbar.text4": {
+    "src_hash": "c943a8395cc808680641259bfbdc4921",
+    "text": "Abilità di combattimento a distanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:21.228193Z"
+  },
+  "client.statsbar.text5": {
+    "src_hash": "00bddc03f89260bb2a36dbb1adcb807a",
+    "text": "Abilità di combattimento a pugni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:21.228730Z"
+  },
+  "client.outfit.text1": {
+    "src_hash": "562bb1ed6e80264fc03652e88b1f9a54",
+    "text": "Vestito: predefinito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:26.623833Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Pulsante di selezione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:26.624071Z"
+  },
+  "client.outfit.text3": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Pulsante di selezione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:26.624281Z"
+  },
+  "client.player.text1": {
+    "src_hash": "5f772cb1090f3e6d451d52926b1ae6c7",
+    "text": "Nessuna vocazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:26.624506Z"
+  },
+  "client.player.text2": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Elite Knight",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:26.624939Z"
+  },
+  "client.player.text3": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Royal Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:28.570033Z"
+  },
+  "client.player.text4": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Master Sorcerer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:28.570516Z"
   }
 }

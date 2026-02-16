@@ -18038,5 +18038,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:25:17.907981Z"
+  },
+  "talkaction.common.msg_command_param_usage": {
+    "src_hash": "8a70b215e7b42d0a434259e0b3584f62",
+    "text": "Требуется параметр команды. Использование: {usage}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.686738Z"
+  },
+  "talkaction.common.msg_insufficient_usage": {
+    "src_hash": "e8edd16e11be79a9caa1fca8a7c0d55b",
+    "text": "Недостаточно параметров. Использование: {usage}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.688141Z"
+  },
+  "talkaction.gm.push_creature.msg_cannot_teleport": {
+    "src_hash": "e29a417853f3ad37b9bfe27af8dfa600",
+    "text": "Вы не можете телепортировать {name}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.691762Z"
+  },
+  "talkaction.gm.spy.msg_empty": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Пусто",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.692296Z"
+  },
+  "talkaction.gm.spy.slot_armor": {
+    "src_hash": "c77a8030f463c2c14aebd6452fc9f0a8",
+    "text": "Броня",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.692912Z"
+  },
+  "talkaction.gm.spy.slot_arrow": {
+    "src_hash": "0f4e1aaabd074689b7d3ead824d1ee8e",
+    "text": "Стрела",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.693253Z"
+  },
+  "talkaction.gm.spy.slot_backpack": {
+    "src_hash": "10df2101dd922fefc0e66be49b7723c2",
+    "text": "Рюкзак",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.693666Z"
+  },
+  "talkaction.gm.spy.slot_boots": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Ботинки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.693956Z"
+  },
+  "talkaction.gm.spy.slot_legs": {
+    "src_hash": "48423a9049b3065103ef1026a5fa08e5",
+    "text": "Ноги",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.694438Z"
+  },
+  "talkaction.god.achievement.msg_add_invalid": {
+    "src_hash": "e656f3a6672df3bbc9f7359b726afcb9",
+    "text": "Неверное достижение. Используйте корректный ID или название.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.696077Z"
+  },
+  "talkaction.god.charms.msg_runes_other": {
+    "src_hash": "edc41e153cdaf84100f311a948076259",
+    "text": "Все руны чарма добавлены персонажу '{name}'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.699799Z"
+  },
+  "talkaction.god.charms.msg_set_all_other": {
+    "src_hash": "f5324c13554359f3a54cd724bbf3a0b8",
+    "text": "Количество убийств в бестиарии установлено на '{amount}' для всех монстров у игрока '{name}'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.701327Z"
+  },
+  "talkaction.god.create_item.msg_invalid_tier": {
+    "src_hash": "eaa92e21e83151cc88545bdb09170f52",
+    "text": "Неверное количество уровней (tier).",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.702844Z"
+  },
+  "talkaction.god.icons.msg_invalid_direction": {
+    "src_hash": "98054b68c33348c40db8dda79d035ec6",
+    "text": "Неверное направление. Используйте 'up' или 'down'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.705684Z"
+  },
+  "talkaction.god.money.msg_failed": {
+    "src_hash": "1f2bb6c63393006d6a30fb9ff034a788",
+    "text": "Не удалось добавить деньги игроку {name}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.707513Z"
+  },
+  "talkaction.god.mount.msg_invalid_id": {
+    "src_hash": "e9e847d7ec98d20a698998d015c166cd",
+    "text": "Неверный ID ездового животного.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.708637Z"
+  },
+  "talkaction.god.raids.msg_list": {
+    "src_hash": "738e6abc069ced4bb8b76bf34e9da45a",
+    "text": "Зарегистрированные рейды: {list}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:32.709724Z"
+  },
+  "talkaction.common.msg_command_param_required": {
+    "src_hash": "c271d2fad3f3e6b7c52384ead3321add",
+    "text": "Требуется параметр команды.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:35.834017Z"
+  },
+  "talkaction.common.msg_creature_not_found": {
+    "src_hash": "9ed7bb1fb53aca902744154ac6d31e8b",
+    "text": "Существо не найдено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:35.834398Z"
+  },
+  "talkaction.common.msg_creature_not_found_verbose": {
+    "src_hash": "9d0640938a7f699932dc2fc196a3e258",
+    "text": "Существо с таким именем найти не удалось.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:35.834782Z"
+  },
+  "talkaction.common.msg_insufficient_parameters": {
+    "src_hash": "1a689cded4cf742d35d3aaf507494fc9",
+    "text": "Недостаточно параметров.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:35.835071Z"
+  },
+  "talkaction.common.msg_invalid_command_param": {
+    "src_hash": "0e56640670b7fd219c3e00fc0f935da6",
+    "text": "Неверный параметр команды.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:35.835355Z"
+  },
+  "talkaction.common.msg_invalid_command_params": {
+    "src_hash": "bd22f474c3167a252fe0769c5a74c10f",
+    "text": "Неверные параметры команды.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:39.685809Z"
+  },
+  "talkaction.common.msg_no_active_players": {
+    "src_hash": "d16e874397a7f98edfb79b5419a2d042",
+    "text": "Активных игроков нет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:39.686238Z"
+  },
+  "talkaction.common.msg_not_enough_room": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Недостаточно места.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:39.686532Z"
+  },
+  "talkaction.common.msg_not_inside_house": {
+    "src_hash": "2c9ebf3d9b3a7a541c1a55b5f67c7d6c",
+    "text": "Вы не внутри дома.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:39.686836Z"
+  },
+  "talkaction.common.msg_on_off_required": {
+    "src_hash": "1d45c083d76bb6672fad3e6b18bfd84d",
+    "text": "Вам необходимо указать параметр включения/выключения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:39.687198Z"
+  },
+  "talkaction.common.msg_player_is_not_online": {
+    "src_hash": "acc25844978bee621973b6c96150cf9e",
+    "text": "Игрок {name} не в сети.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:45.138884Z"
+  },
+  "talkaction.common.msg_player_name_not_online": {
+    "src_hash": "85ed93bd465176bbb71f9464058393da",
+    "text": "Игрока с таким именем нет в сети.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:45.139320Z"
+  },
+  "talkaction.common.msg_player_name_param_required": {
+    "src_hash": "65dac6a24134fd48ddd07a8144ea59dd",
+    "text": "Требуется параметр имени игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:45.139655Z"
+  },
+  "talkaction.common.msg_player_name_param_required_dot": {
+    "src_hash": "d78ab04ffa54dfdfc994b16c16331b37",
+    "text": "Требуется параметр имени игрока",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:45.139971Z"
+  },
+  "talkaction.common.msg_player_not_found": {
+    "src_hash": "dbb40407fa3e4ed2510a8212f000b723",
+    "text": "Игрок не найден.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:45.140230Z"
+  },
+  "talkaction.gm.ban.msg_already_banned": {
+    "src_hash": "35c0ca6fc7a63814dbc5c733c599e396",
+    "text": "Игрок уже забанен на больший или равный срок.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:49.684661Z"
+  },
+  "talkaction.gm.ban.msg_invalid_days": {
+    "src_hash": "05bcceecc57cf999464423483b4cf5f8",
+    "text": "Недопустимое количество дней.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:49.685181Z"
+  },
+  "talkaction.gm.ban.msg_invalid_format": {
+    "src_hash": "38bc5f13c94f8bf67e70c033ef50d15f",
+    "text": "Неверный формат команды. Используйте: /ban имя игрока, дни [, причина].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:53.561225Z"
+  },
+  "talkaction.gm.ban.msg_max_days": {
+    "src_hash": "75a57c63f3ca7804088b82fcd0c0c82b",
+    "text": "Срок бана не может превышать 350000 дней.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:53.561617Z"
+  },
+  "talkaction.gm.ban.msg_usage": {
+    "src_hash": "1d6429c4eff7b2ca0e947e45918e7bfd",
+    "text": "Требуется параметр команды. Используйте: /ban имя игрока, дни [, причина].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:53.562288Z"
+  },
+  "talkaction.gm.clean.msg_cleaned": {
+    "src_hash": "7816966a9e1f2081b5facaa1c0c1d91e",
+    "text": "Удалены {count} объектов с карты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:53.562800Z"
+  },
+  "talkaction.gm.gold_highscore.msg_header": {
+    "src_hash": "eecc4a56504e50df4c0b214ec7f124a4",
+    "text": "Текущий золотой рекорд для этого сервера:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:57.927345Z"
+  },
+  "talkaction.gm.looktype.msg_must_be_number": {
+    "src_hash": "c948add5cc2da7f45838140ff72fbcde",
+    "text": "Тип образа должен быть числовым значением.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:57.927715Z"
+  },
+  "talkaction.gm.looktype.msg_not_exist": {
+    "src_hash": "8c2b16e09571422874c62a7c89ae6249",
+    "text": "Типа образа с таким идентификатором не существует.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:57.928090Z"
+  },
+  "talkaction.gm.namelock.msg_namelocked": {
+    "src_hash": "ebbf705c999b442f1b81bf7d511e51a6",
+    "text": "Имя {name} заблокировано",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:27:57.928588Z"
+  },
+  "talkaction.gm.namelock.msg_reason_required": {
+    "src_hash": "31de4f133fc30e0832ae872b9040451a",
+    "text": "Вы должны указать причину.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:00.816326Z"
+  },
+  "talkaction.gm.set_light.msg_specify_color": {
+    "src_hash": "ac7b37c47620c08de8f15dcfff905893",
+    "text": "Вам необходимо указать цвет света.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:00.816687Z"
+  },
+  "talkaction.gm.set_light.msg_usage": {
+    "src_hash": "5bcda2a723bf4f4e3ba8051f5e70ea59",
+    "text": "Используйте так: /setlight color (0-{max}), (1-32). Первый параметр — это цвет, второй — интенсивность.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:28:00.817504Z"
   }
 }

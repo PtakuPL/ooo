@@ -19342,5 +19342,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:23:32.399015Z"
+  },
+  "client.const.text1": {
+    "src_hash": "3d7033662f9854085c5da74321ff2779",
+    "text": "Nord-Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.037915Z"
+  },
+  "client.const.text2": {
+    "src_hash": "b7e1f1c306e3b50e15998797692d2bb2",
+    "text": "Sud-Est",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.038267Z"
+  },
+  "client.const.text3": {
+    "src_hash": "e06870e1f12090f5b207f1a490cf40ad",
+    "text": "Sud-Vest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.038638Z"
+  },
+  "client.const.text4": {
+    "src_hash": "52f3e90e1282312c8302e476d7c64ed0",
+    "text": "Nord-Vest",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.038880Z"
+  },
+  "client.utils.text3": {
+    "src_hash": "064862da0c7cfc2466089ac2e72074a0",
+    "text": "Corist",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.040322Z"
+  },
+  "client.utils.text4": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Lalalala... acum știi pe de rost imnul cultului cântat în Liberty Bay. Nu chiar atât de greu, având în vedere că constă în principal din două note și versuri repetitive.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.041736Z"
+  },
+  "client.utils.text5": {
+    "src_hash": "6aeca36524a11b8f633da47c9b4f8c5b",
+    "text": "Lăptarul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:54.042040Z"
+  },
+  "client.debug_info.text1": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Comutați Statistici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:57.374709Z"
+  },
+  "client.debug_info.text2": {
+    "src_hash": "65b74928a95e1d4ed2de01cf44bf5dd2",
+    "text": "Ctrl+Alt+D",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:57.374926Z"
+  },
+  "client.debug_info.text3": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Comutați Statistici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:57.375143Z"
+  },
+  "client.debug_info.text4": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Comutați Statistici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:57.375350Z"
+  },
+  "client.game_screenshot.text1": {
+    "src_hash": "e29be78e8cf65f9f1a934917f9e0903e",
+    "text": "Realizare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:25:57.375530Z"
+  },
+  "client.game_screenshot.text2": {
+    "src_hash": "9cc1fcaf3259aafaaed78f65790fc29d",
+    "text": "Bestiary Intrare deblocată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:02.503402Z"
+  },
+  "client.game_screenshot.text3": {
+    "src_hash": "4a15fc6255ce7860487bbc7553282d15",
+    "text": "Bestiary Intrare finalizată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:02.503788Z"
+  },
+  "client.viplist.text1": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Afișează/ascunde lista VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:02.504125Z"
+  },
+  "client.viplist.text2": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Afișează/ascunde lista VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:02.504394Z"
+  },
+  "client.viplist.text3": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Afișează/ascunde lista VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:02.504650Z"
+  },
+  "client.viplist.text4": {
+    "src_hash": "17f72b9ead53e600ba772b32c8d36a63",
+    "text": "adăugați grup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:09.180309Z"
+  },
+  "client.entergame.text1": {
+    "src_hash": "ec2e1cfffe1308e5f4e3736feb6e0f60",
+    "text": "config.otml",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:09.181044Z"
+  },
+  "client.createaccount.text1": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "fx handleHttpResponse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:09.181312Z"
+  },
+  "client.createaccount.text2": {
+    "src_hash": "beead5d6ed66883b128a8585e8959c78",
+    "text": "EROARE: JSON nu a fost găsit în răspuns",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:09.181672Z"
+  },
+  "client.createaccount.text3": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "fx handleHttpResponse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:09.181902Z"
+  },
+  "client.createaccount.text5": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "fx handleHttpResponse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:15.964497Z"
+  },
+  "client.entergame.text2": {
+    "src_hash": "0eb5bc411ff706fb9c4803b663d8b114",
+    "text": "Amintiți-vă e-mailul:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:15.964752Z"
+  },
+  "client.entergame.text3": {
+    "src_hash": "e8ac4263140e9f899ed2bbd5b0e9c8c5",
+    "text": "Intră în joc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:15.964960Z"
+  },
+  "client.entergame.text4": {
+    "src_hash": "1724a870b9ccec07a224452f1fe70688",
+    "text": "Nume Acc:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:15.965145Z"
+  },
+  "client.entergame.text5": {
+    "src_hash": "5062c7c0f4d606f6cedbc6f96f97571e",
+    "text": "Amintiți-vă parola:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:20.847729Z"
+  },
+  "client.game_healthcircle.text1": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:20.847938Z"
+  },
+  "client.game_healthcircle.text2": {
+    "src_hash": "ed5d2a54107d75ce67a08136ea6d4b43",
+    "text": "Cercul HP/MP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:20.848137Z"
+  },
+  "client.game_healthcircle.text3": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:20.848318Z"
+  },
+  "client.game_healthcircle.text4": {
+    "src_hash": "ed5d2a54107d75ce67a08136ea6d4b43",
+    "text": "Cercul HP/MP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:20.848536Z"
+  },
+  "client.things.text1": {
+    "src_hash": "7f212a417349153a23f5033a68f1efe7",
+    "text": "Nu s-au putut încărca activele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:26.705245Z"
+  },
+  "client.things.text2": {
+    "src_hash": "723fc39cccb92fe2a8337f8fae02628e",
+    "text": "Nu s-au putut încărca datele statice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:26.705564Z"
+  },
+  "client.gameinterface.text1": {
+    "src_hash": "92faccee806a0d3337faece79db403ea",
+    "text": "Opriți toate acțiunile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:26.705814Z"
+  },
+  "client.gameinterface.text2": {
+    "src_hash": "92faccee806a0d3337faece79db403ea",
+    "text": "Opriți toate acțiunile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:26.706053Z"
+  },
+  "client.gameinterface.text3": {
+    "src_hash": "f4397460b6ae87e06d665239fb9ca13a",
+    "text": "Ștergeți toate textele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:26.706348Z"
+  },
+  "client.statsbar.text1": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Nivel magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:33.360547Z"
+  },
+  "client.statsbar.text2": {
+    "src_hash": "3535f1e07ee1a37cad48ad6cc23e7db5",
+    "text": "Abilități de luptă cu topor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:33.360854Z"
+  },
+  "client.statsbar.text3": {
+    "src_hash": "6f84b63a6480e8f117fc876ed9bdfcd1",
+    "text": "Abilitatea de luptă în club",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:33.361134Z"
+  },
+  "client.statsbar.text4": {
+    "src_hash": "c943a8395cc808680641259bfbdc4921",
+    "text": "Abilitatea de luptă la distanță",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:33.361418Z"
+  },
+  "client.statsbar.text5": {
+    "src_hash": "00bddc03f89260bb2a36dbb1adcb807a",
+    "text": "Abilitatea de luptă cu pumnul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:33.361690Z"
+  },
+  "client.outfit.text1": {
+    "src_hash": "562bb1ed6e80264fc03652e88b1f9a54",
+    "text": "Tinuta - Implicit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:38.020787Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Butonul de selecție",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:38.021089Z"
+  },
+  "client.outfit.text3": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Butonul de selecție",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:38.021332Z"
+  },
+  "client.player.text1": {
+    "src_hash": "5f772cb1090f3e6d451d52926b1ae6c7",
+    "text": "Fără vocație",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:38.021547Z"
+  },
+  "client.player.text2": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Elite Knight",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:38.022011Z"
+  },
+  "client.player.text3": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Royal Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:40.976430Z"
+  },
+  "client.player.text4": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Master Sorcerer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:40.976800Z"
+  },
+  "client.items.text1": {
+    "src_hash": "24b56abbb3dc550fa117a31f5129a3f8",
+    "text": "128 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:26:40.977030Z"
   }
 }

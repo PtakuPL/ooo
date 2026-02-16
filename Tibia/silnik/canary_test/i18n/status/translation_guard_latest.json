@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16T23:25:19.068714Z",
-  "cycle": 37,
+  "timestamp": "2026-02-16T23:28:01.644613Z",
+  "cycle": 38,
   "language": "ru",
-  "json_file": "achievements.json",
-  "translated": 49,
+  "json_file": "talkactions.json",
+  "translated": 45,
   "placeholders": 0,
-  "guard_fail": 1,
+  "guard_fail": 5,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 871
+  "strict_skipped_done": 16
 }

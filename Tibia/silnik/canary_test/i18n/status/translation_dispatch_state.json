@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T23:24:44.441476Z",
-  "cycle_counter": 926,
-  "last_target_key": "ru:achievements.json",
-  "last_pending_total": 122,
+  "timestamp": "2026-02-16T23:27:31.007590Z",
+  "cycle_counter": 929,
+  "last_target_key": "ru:talkactions.json",
+  "last_pending_total": 177,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 196,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 37,
+  "cache_cycle": 38,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -299,7 +299,10 @@
     "it:cpp.json": 0,
     "ru:otclient_modules.json": 0,
     "ro:books.json": 0,
-    "it:books.json": 0
+    "it:books.json": 0,
+    "ru:achievements.json": 0,
+    "ro:client.json": 0,
+    "it:client.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -353,9 +356,9 @@
     "lang_completion": {
       "pl": 43.82,
       "es": 74.03,
-      "ru": 35.35,
+      "ru": 35.39,
       "ro": 19.52,
-      "it": 10.53,
+      "it": 10.62,
       "sr": 9.79,
       "sv": 7.68
     }

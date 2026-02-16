@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-02-16T23:25:35.453665Z",
+  "timestamp": "2026-02-16T23:28:02.196569Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 13,
   "issues_by_type": {
-    "identical_to_en_exempt": 11,
+    "identical_to_en_exempt": 12,
     "artifact_token": 7,
-    "suspicious_log_high": 137,
-    "suspicious_log_low": 16,
+    "identical_to_en": 6,
+    "suspicious_log_high": 125,
+    "suspicious_log_low": 28,
     "suspicious_log_critical": 47,
-    "suspicious_rejected_critical": 164,
-    "suspicious_rejected_high": 36
+    "suspicious_rejected_critical": 162,
+    "suspicious_rejected_high": 38
   },
   "issues": [
     {
@@ -60,8 +61,50 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "client.player.text2",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Elite Knight",
+      "translated": "Elite Knight"
+    },
+    {
+      "key": "client.player.text3",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Royal Paladin",
+      "translated": "Royal Paladin"
+    },
+    {
+      "key": "client.player.text4",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Master Sorcerer",
+      "translated": "Master Sorcerer"
+    },
+    {
+      "key": "client.player.text2",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Elite Knight",
+      "translated": "Elite Knight"
+    },
+    {
+      "key": "client.player.text3",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Royal Paladin",
+      "translated": "Royal Paladin"
+    },
+    {
+      "key": "client.player.text4",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Master Sorcerer",
+      "translated": "Master Sorcerer"
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

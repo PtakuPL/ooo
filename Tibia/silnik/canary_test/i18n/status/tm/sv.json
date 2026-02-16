@@ -14950,5 +14950,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:40:12.121094Z"
+  },
+  "npc.angelo.greet_msg_3": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Hur går det med din {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.955555Z"
+  },
+  "npc.angelo.greet_msg_4": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Druid av Crunor? Han berättade att en ny grotta dök upp här? Det stämmer. Jag är chef för ett projekt som försöker ta reda på mer om detta nya område.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.956515Z"
+  },
+  "npc.angus.greet_msg_1": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Hälsningar, vad kan jag göra för dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.958465Z"
+  },
+  "npc.appaloosa.greet_msg_1": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Hälsningar, |PLAYERNAME| Jag ​​antar att du är här för {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.963548Z"
+  },
+  "npc.archery.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.965158Z"
+  },
+  "npc.archery.greet_msg_1": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Välkommen till Archerys butik!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.965631Z"
+  },
+  "npc.archery.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.966039Z"
+  },
+  "npc.archery_rook.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.966462Z"
+  },
+  "npc.archery_rook.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.967032Z"
+  },
+  "npc.ariella.greet_msg_1": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Hej där.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.967329Z"
+  },
+  "npc.arito.farewell_msg_1": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Besök oss igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.968833Z"
+  },
+  "npc.arito.greet_msg_1": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Tack gode gud att du är tillbaka!! Hittade du....err...vad vi pratade om??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.969434Z"
+  },
+  "npc.arito.sendtrade_msg_1": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Visst, bläddra igenom mina erbjudanden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.970273Z"
+  },
+  "npc.arito.walkaway_msg_1": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Besök oss igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.970594Z"
+  },
+  "npc.arkulius.farewell_msg_1": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "Äntligen! Bra saker kommer till den som väntar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.971259Z"
+  },
+  "npc.arkulius.walkaway_msg_1": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "Hej då och snälla håll dig borta, okej?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:02.973819Z"
+  },
+  "npc.dane.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.083405Z"
+  },
+  "npc.frodo.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.144681Z"
+  },
+  "npc.frodo.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.147015Z"
+  },
+  "npc.gareth.greet_msg_3": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Hur går det med din {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.154136Z"
+  },
+  "npc.jamesfrancis.greet_msg_2": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Hur går det med din {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.277826Z"
+  },
+  "npc.palomino.greet_msg_1": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Hälsningar, |PLAYERNAME| Jag ​​antar att du är här för {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.446208Z"
+  },
+  "npc.tarun.farewell_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Farväl.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.555616Z"
+  },
+  "npc.tarun.walkaway_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Farväl.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.556811Z"
+  },
+  "npc.tefrit.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.557248Z"
+  },
+  "npc.tefrit.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.557554Z"
+  },
+  "npc.tefrit.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.557854Z"
+  },
+  "npc.tefrit.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Förlåt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.558355Z"
+  },
+  "npc.tefrit.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Förlåt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.558675Z"
+  },
+  "npc.tefrit.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.558955Z"
+  },
+  "npc.telas.greet_msg_1": {
+    "src_hash": "952d2c56d0485958336747bcdd98590d",
+    "text": "Hej!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.559521Z"
+  },
+  "npc.tesha.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.563235Z"
+  },
+  "npc.tesha.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.563586Z"
+  },
+  "npc.the_empress.greet_msg_1": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Hälsningar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.567806Z"
+  },
+  "npc.the_empress.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.568429Z"
+  },
+  "npc.the_librarian.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.570570Z"
+  },
+  "npc.thorgrin.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.575277Z"
+  },
+  "npc.thorwulf.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.576160Z"
+  },
+  "npc.tigo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.578975Z"
+  },
+  "npc.tim_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LÄNGE LEVE KUNGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.579286Z"
+  },
+  "npc.tim_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LÄNGE LEVE KUNGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.579566Z"
+  },
+  "npc.tim_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LÄNGE LEVE KUNGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:00:03.580238Z"
   }
 }

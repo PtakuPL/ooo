@@ -16726,5 +16726,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:58:29.530005Z"
+  },
+  "monster.enraged_crystal_golem.name": {
+    "src_hash": "2479311df3274473fae0540f6849c0d8",
+    "text": "Golem de cristal furios",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:56.339448Z"
+  },
+  "monster.enraged_crystal_golem.desc": {
+    "src_hash": "46a50ca64efb72196caf39c8ee1089ba",
+    "text": "un golem de cristal furios",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:56.339723Z"
+  },
+  "monster.biting_book.name": {
+    "src_hash": "0fcbf99ccc8b1d57f99de3778778a882",
+    "text": "Cartea Muscatoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:56.340407Z"
+  },
+  "monster.biting_book.desc": {
+    "src_hash": "d8b06e14278cb9901e9a24f26ae96249",
+    "text": "o carte muşcătoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:59.481913Z"
+  },
+  "monster.rustheap_golem.name": {
+    "src_hash": "0c4ce216077ff5bf777de9cedd7d6492",
+    "text": "Golemul Rustheap",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:59.482206Z"
+  },
+  "monster.rustheap_golem.desc": {
+    "src_hash": "cf57c90287faa2b6fc60f1c2ac9c32e7",
+    "text": "un golem rugină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:59.482456Z"
   }
 }

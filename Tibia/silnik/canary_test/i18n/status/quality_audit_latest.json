@@ -1,95 +1,18 @@
 {
-  "timestamp": "2026-02-16T22:59:16.875054Z",
+  "timestamp": "2026-02-16T23:00:09.402283Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 20,
   "issues_by_type": {
-    "identical_to_en": 18,
-    "identical_to_en_exempt": 11,
+    "identical_to_en": 13,
+    "identical_to_en_exempt": 12,
     "artifact_token": 7,
-    "suspicious_log_high": 152,
-    "suspicious_log_low": 1,
-    "suspicious_log_critical": 47,
-    "suspicious_rejected_critical": 153,
-    "suspicious_rejected_high": 47
+    "suspicious_log_critical": 116,
+    "suspicious_log_high": 77,
+    "suspicious_log_low": 7,
+    "suspicious_rejected_high": 36,
+    "suspicious_rejected_critical": 164
   },
   "issues": [
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
     {
       "key": "monster.the_welter.name",
       "lang": "it",
@@ -187,6 +110,48 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "monster.hunter.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Hunter",
+      "translated": "Hunter"
+    },
+    {
+      "key": "monster.dharalion.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.dharalion.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.apocalypse.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.apocalypse.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
     }
   ],
   "threshold": 10,

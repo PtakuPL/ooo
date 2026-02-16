@@ -12406,5 +12406,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:39:18.144070Z"
+  },
+  "data.otservbr.global.npc.the.beggar.king.L104.329": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.606060Z"
+  },
+  "data.otservbr.global.npc.the.empress.L84.444": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.607576Z"
+  },
+  "data.otservbr.global.npc.the.librarian.L87.395": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.608282Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L68.259": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.609586Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L69.260": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.609980Z"
+  },
+  "data.otservbr.global.npc.thorwulf.L225.909": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.610713Z"
+  },
+  "data.otservbr.global.npc.tigo.L96.858": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.611523Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L93.608": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.612046Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L94.609": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.612466Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L95.610": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.612964Z"
+  },
+  "data.otservbr.global.npc.torkada.L97.1009": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.615270Z"
+  },
+  "data.otservbr.global.npc.ukea.L57.1102": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.616965Z"
+  },
+  "data.otservbr.global.npc.undal.L168.1467": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.617773Z"
+  },
+  "data.otservbr.global.npc.undal.L169.1468": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.618179Z"
+  },
+  "data.otservbr.global.npc.vanys.L168.532": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.620148Z"
+  },
+  "data.otservbr.global.npc.vanys.L169.533": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.620568Z"
+  },
+  "data.otservbr.global.npc.vascalir.L938.1546": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Adio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.623164Z"
+  },
+  "data.otservbr.global.npc.vascalir.L939.1547": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Adio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.623577Z"
+  },
+  "data.otservbr.global.npc.virgil.L77.213": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.624465Z"
+  },
+  "data.otservbr.global.npc.virgil.L78.214": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.624946Z"
+  },
+  "data.otservbr.global.npc.walter.the.guard.L88.164": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.625801Z"
+  },
+  "data.otservbr.global.npc.wentworth.L388.331": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.626356Z"
+  },
+  "data.otservbr.global.npc.wentworth.L389.332": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.627014Z"
+  },
+  "data.otservbr.global.npc.yonan.L137.684": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.629658Z"
+  },
+  "data.otservbr.global.npc.yonan.L140.685": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.630294Z"
+  },
+  "data.otservbr.global.npc.yonan.L143.686": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.630805Z"
+  },
+  "data.otservbr.global.npc.yonan.L216.687": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.631181Z"
+  },
+  "data.otservbr.global.npc.ziyad.L102.874": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.633378Z"
+  },
+  "data.otservbr.global.npc.znozel.L72.201": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.634024Z"
+  },
+  "data.otservbr.global.npc.znozel.L73.202": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.634709Z"
+  },
+  "data.otservbr.global.npc.zora.L83.1329": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.635348Z"
+  },
+  "data.otservbr.global.npc.zora.L84.1330": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.636034Z"
+  },
+  "data.otservbr.global.scripts.actions.object.imbuement.shrine.L9.2355": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Puteți folosi altarul numai pentru un articol valid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.637710Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L123.2359": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Puneți mai întâi trusa de construcție pe podea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.638851Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L125.2360": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Poți construi acest lucru doar în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.639634Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fishing.L41.2361": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Nu ești proprietarul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.640215Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L106.2365": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.640905Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L119.2367": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.641337Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fluids.L155.2368": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.641725Z"
+  },
+  "data.otservbr.global.scripts.actions.other.kits.L26.2363": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Poți construi acest lucru doar în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.642900Z"
+  },
+  "data.otservbr.global.scripts.actions.other.mechanical.fishing.L19.2358": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Nu ești proprietarul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.643425Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.644845Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L29.2388": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Ai nevoie de 5 jucători pentru a lupta cu acest boss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.645923Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L68.2391": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Ai intrat într-o celulă antică de închisoare a demonilor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.646863Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.schrodingers.island.teleport.lvl.999.L16.2328": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Felicitări!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.651622Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Cufărul este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.653539Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L18.2206": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.659186Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.chest.L9.2229": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.660623Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.666904Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L16.2253": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:18.668313Z"
   }
 }

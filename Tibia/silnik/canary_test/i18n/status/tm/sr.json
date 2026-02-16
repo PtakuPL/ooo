@@ -163806,5 +163806,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:37:04.069900Z"
+  },
+  "data.otservbr.global.npc.haroun.L144.807": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "На услузи, само прегледајте моју робу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:33.561365Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L125.1120": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Ох... збогом дете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:33.573901Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L139.841": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "На услузи, само прегледајте моју робу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:33.594942Z"
+  },
+  "data.otservbr.global.npc.yaman.L169.636": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "На услузи, само прегледајте моју робу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:33.627722Z"
+  },
+  "data.otservbr.global.npc.alexander.L174.1570": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Наравно, само прегледајте моју робу. Или желите да гледате само у",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:48.268056Z"
+  },
+  "data.otservbr.global.npc.alia.L149.1159": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:48.268863Z"
+  },
+  "data.otservbr.global.npc.alkestios.L130.1473": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Благослов природе, путниче! Нека на вас не утиче никаква злокобна сила.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:48.269641Z"
+  },
+  "data.otservbr.global.npc.alkestios.L131.1474": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Нека твој пут увек буде раван.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:52.553232Z"
+  },
+  "data.otservbr.global.npc.alkestios.L132.1475": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Нека твој пут увек буде раван.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:52.553785Z"
+  },
+  "data.otservbr.global.npc.altar.L83.730": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Клекни пред свепрождирућом снагом крвавог пропадања.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:52.554561Z"
+  },
+  "data.otservbr.global.npc.altar.L84.731": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ћао.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:52.554854Z"
+  },
+  "data.otservbr.global.npc.alyxo.L210.798": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:55.433784Z"
+  },
+  "data.otservbr.global.npc.alyxo.L53.795": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:55.434536Z"
+  },
+  "data.otservbr.global.npc.alyxo.L56.796": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:55.435419Z"
+  },
+  "data.otservbr.global.npc.alyxo.L59.797": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Како могу да ти помогнем?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:55.435976Z"
+  },
+  "data.otservbr.global.npc.amanda.L201.1227": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Запамтите: ако сте тешко рањени или отровани, могу вас излечити бесплатно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:59.736643Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Поздрав пријатељу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:59.737173Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L87.344": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:59.737814Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Да, видимо се касније.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:42:59.738503Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Збогом. Нема на чему.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:06.825817Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Поздрав.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:11.459004Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L263.518": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Па, ћао онда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:43:11.459466Z"
   }
 }

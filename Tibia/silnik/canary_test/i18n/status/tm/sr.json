@@ -161174,5 +161174,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:03:11.843699Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L37.2216": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Још не можете користити овај портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.497500Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L47.2217": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Још не можете користити овај портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.497899Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L23.2224": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Твојој пратњи је крај.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.498368Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L47.2225": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Твојој пратњи је крај.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.498677Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.lost.exiles.L23.2213": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Твојој пратњи је крај.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.499033Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.boxramp.L6.2249": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Цлонк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.499793Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L12.2256": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Да.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.500035Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Извините.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.500412Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Фаил.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.500690Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L16.2253": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Извините.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.500959Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.creaturescripts.pale.worm.death.L14.2046": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Честитамо, добили сте одећу Полтергајста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.501877Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.first.L14.1928": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Нешто је шкљоцнуло у исто време, грмљави звук вас скоро заглушује.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.502854Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.second.L14.1971": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Нешто је шкљоцнуло у исто време, грмљави звук вас скоро заглушује.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.503499Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L14.1930": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Нешто је шкљоцнуло у исто време, грмљави звук вас скоро заглушује.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.504113Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L77.2279": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Још увек вам није дозвољено да ово користите.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.505703Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L90.2280": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Пред собом држите стари Галтхеинов сандук. Не пристаје и превише је стар да би издржао било какав напад.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.506374Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.cobra.mini.bosses.L19.1826": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Пролазите кроз ватру без икакве штете. Сад или никад...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.506858Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.quaidDen.L10.1828": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Са снагом мрачног Чувара који се још увек држи, магла вас спречава да уђете у Квејдову јазбину.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.507606Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L16.1867": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.508300Z"
+  },
+  "data.otservbr.global.scripts.quests.hero.of.rathleton.actions.reward.L13.2162": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.508886Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L10.2180": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.509467Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L19.2182": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.509896Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L28.2184": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.510210Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L10.2271": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Већ сте истражили ово.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.510761Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L24.2272": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Остаци папира леже разбацани по поду. Потребно је неко време да их поново спојите. Али то је само лоше написана песма.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.511393Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L27.2273": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Већ сте истражили ово.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.511892Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Пажљиво прегледаш свитке. То су наређења од Rathleton за амбасадора. Овде нема знакова издаје.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.512650Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L44.2275": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Већ сте истражили ово.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.513025Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L58.2276": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Ништа не налазите у амбасадоровој кући. Ако је он у ствари издајник, ослободио се сваког доказа који би га могао инкриминисати.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.513702Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L7.2270": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Овде су недавно спаљени документи. Само део једног свитка још увек лежи испред оџака, али је превише чађ да би се читао.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.514391Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L29.2267": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Осећате се дрхтави и вртоглави, свет постаје мрак око вас. Онда ти се вид поново разбистри - и ти си негде другде.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.515151Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L49.2268": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Премештени сте на десну страну мозга",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.515578Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L65.2269": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Премештени сте на леву страну мозга",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.515952Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L34.2277": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Ти благослови статуу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.516280Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L38.2278": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Већ сте благословили ову статуу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.516666Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L10.1682": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.517091Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L9.1679": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Извините",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.517371Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L9.1673": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.517788Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L8.1661": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Извините",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.518049Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.glasshoneyfun.L11.1669": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.518374Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L9.1659": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.518814Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peelerfun.L10.1657": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.519103Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.pickenchanted.L10.1665": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.519558Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L8.1655": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Извините",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.519988Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L9.1671": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Празан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.520282Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissorsfun.L280.1680": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:58.520645Z"
   }
 }

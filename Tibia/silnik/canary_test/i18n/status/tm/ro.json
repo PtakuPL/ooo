@@ -9174,5 +9174,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:07:05.402874Z"
+  },
+  "data.otservbr.global.npc.guide.tiko.L104.801": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.187967Z"
+  },
+  "data.otservbr.global.npc.hanna.L122.876": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.189168Z"
+  },
+  "data.otservbr.global.npc.hanna.L123.877": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.189560Z"
+  },
+  "data.otservbr.global.npc.harlow.L79.1285": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.190126Z"
+  },
+  "data.otservbr.global.npc.harlow.L80.1286": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.190387Z"
+  },
+  "data.otservbr.global.npc.harlow.vengoth.L58.855": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.190763Z"
+  },
+  "data.otservbr.global.npc.harlow.vengoth.L59.856": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.191062Z"
+  },
+  "data.otservbr.global.npc.harsky.L84.887": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.191842Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L65.882": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.192202Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L66.883": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.192584Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L65.809": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.192891Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L66.810": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.193135Z"
+  },
+  "data.otservbr.global.npc.hoggle.L60.1550": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.193933Z"
+  },
+  "data.otservbr.global.npc.hoggle.L61.1551": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.194327Z"
+  },
+  "data.otservbr.global.npc.irea.L53.184": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.195839Z"
+  },
+  "data.otservbr.global.npc.iwar.L85.275": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.197790Z"
+  },
+  "data.otservbr.global.npc.iyad.L109.748": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.198366Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L63.506": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.199521Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L111.735": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.199981Z"
+  },
+  "data.otservbr.global.npc.jack.fate.goroma.L117.307": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.200653Z"
+  },
+  "data.otservbr.global.npc.jack.fate.goroma.L118.308": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.200908Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L116.650": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.201902Z"
+  },
+  "data.otservbr.global.npc.jefrey.L77.523": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.202488Z"
+  },
+  "data.otservbr.global.npc.jefrey.L78.524": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.202760Z"
+  },
+  "data.otservbr.global.npc.jerom.L132.946": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.203114Z"
+  },
+  "data.otservbr.global.npc.jerom.L133.947": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.203333Z"
+  },
+  "data.otservbr.global.npc.jessica.L77.1595": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.203700Z"
+  },
+  "data.otservbr.global.npc.jessica.L78.1596": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.204445Z"
+  },
+  "data.otservbr.global.npc.kallimae.L144.297": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.206480Z"
+  },
+  "data.otservbr.global.npc.kallimae.L58.294": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.206798Z"
+  },
+  "data.otservbr.global.npc.kallimae.L61.295": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.207089Z"
+  },
+  "data.otservbr.global.npc.kallimae.L64.296": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.207713Z"
+  },
+  "data.otservbr.global.npc.karith.L352.601": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.207990Z"
+  },
+  "data.otservbr.global.npc.karith.L353.602": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.208234Z"
+  },
+  "data.otservbr.global.npc.kaya.L77.385": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.209287Z"
+  },
+  "data.otservbr.global.npc.kaya.L78.386": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.209584Z"
+  },
+  "data.otservbr.global.npc.kendra.L84.1058": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.209904Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L85.1069": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.210398Z"
+  },
+  "data.otservbr.global.npc.kepar.L77.1257": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.210761Z"
+  },
+  "data.otservbr.global.npc.kepar.L78.1258": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.211165Z"
+  },
+  "data.otservbr.global.npc.klom.stonecutter.L264.325": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.212467Z"
+  },
+  "data.otservbr.global.npc.kulag.the.guard.L80.1208": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.212798Z"
+  },
+  "data.otservbr.global.npc.kulag.the.guard.L81.1209": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.213110Z"
+  },
+  "data.otservbr.global.npc.kulag.the.guard.L82.1210": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.213526Z"
+  },
+  "data.otservbr.global.npc.lardoc.bashsmite.L260.1203": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.214440Z"
+  },
+  "data.otservbr.global.npc.lavirias.L57.36": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.214827Z"
+  },
+  "data.otservbr.global.npc.lea.L61.1368": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.215256Z"
+  },
+  "data.otservbr.global.npc.llathriel.L53.1322": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.216553Z"
+  },
+  "data.otservbr.global.npc.lokur.L111.617": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.216862Z"
+  },
+  "data.otservbr.global.npc.lokur.L112.618": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:50.217264Z"
   }
 }

@@ -144550,5 +144550,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:40:38.069551Z"
+  },
+  "questlog.quest_10.mission_10.state_2": {
+    "src_hash": "e7da10bf26b2899190b4fd22ca60b0a9",
+    "text": "La entrada a su santuario interior ha sido abierta para vosotros. ¡Prepárate para una batalla DURA! Será mejor que reúnas a algunos amigos para que te ayuden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:44.360269Z"
   }
 }

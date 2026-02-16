@@ -165910,5 +165910,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:09:52.561850Z"
+  },
+  "data.otservbr.global.npc.arito.L118.1344": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Посетите нас поново.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.757588Z"
+  },
+  "data.otservbr.global.npc.brasith.L60.1212": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Асха Тхрази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.763259Z"
+  },
+  "data.otservbr.global.npc.brasith.L61.1213": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Асха Тхрази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.763512Z"
+  },
+  "data.otservbr.global.npc.dane.L63.1215": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.775261Z"
+  },
+  "data.otservbr.global.npc.eroth.L103.511": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Асха Тхрази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.778692Z"
+  },
+  "data.otservbr.global.npc.frodo.L108.971": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.784381Z"
+  },
+  "data.otservbr.global.npc.frodo.L109.972": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.784746Z"
+  },
+  "data.otservbr.global.npc.valentina.L84.545": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.846040Z"
+  },
+  "data.otservbr.global.npc.valentina.L85.546": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Вратите се с времена на време.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:12.846421Z"
+  },
+  "data.otservbr.global.npc.arito.L119.1345": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Наравно, прегледајте моје понуде.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:24.967162Z"
+  },
+  "data.otservbr.global.npc.arito.L55.1341": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Хвала Богу да си се вратио!! Јесте ли нашли....ерр...о чему смо причали??",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:28.282341Z"
+  },
+  "data.otservbr.global.npc.arito.L57.1342": {
+    "src_hash": "8b955aca575ac184956bbe28dfa7c01c",
+    "text": "Буди ожалошћен, ходочасник у телу. Буди оплаки у мојој кафани.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:28.282787Z"
+  },
+  "data.otservbr.global.npc.arkulius.L183.893": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "Збогом и молим те клони се, ок?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:28.283138Z"
+  },
+  "data.otservbr.global.npc.arkulius.L184.894": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "Најзад! Добре ствари долазе онима који чекају.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:28.283517Z"
+  },
+  "data.otservbr.global.npc.armenius.L74.643": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Ох, нерв. Иди код пацова који су те одгојили.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:28.283903Z"
+  },
+  "data.otservbr.global.npc.aruda.L256.1338": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Надам се да се видимо ускоро.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:46:31.976393Z"
   }
 }

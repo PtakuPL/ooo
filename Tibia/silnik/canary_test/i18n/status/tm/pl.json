@@ -91718,5 +91718,277 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:12:10.162730Z"
+  },
+  "npc.emperor_kruzak.say_12": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.713278Z"
+  },
+  "npc.emperor_kruzak.say_15": {
+    "src_hash": "7346bd095953094daa8fe43a55c46780",
+    "text": "Czyli chcesz przekazac darowizne 500.000.000 sztuk zlota, ktora w zamian uprawni cie do noszenia unikalnej zbroi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.715252Z"
+  },
+  "npc.emperor_kruzak.say_16": {
+    "src_hash": "198357327b9821aea565dbe508d1d3c2",
+    "text": "Czyli chcesz przekazac darowizne 250.000.000 sztuk zlota, ktora w zamian uprawni cie do noszenia unikalnego helmu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.716681Z"
+  },
+  "npc.emperor_kruzak.say_17": {
+    "src_hash": "52d6e7e3f5eb1ef4e02292b7ce660565",
+    "text": "Czyli chcesz przekazac darowizne 250.000.000 sztuk zlota, ktora w zamian uprawni cie do noszenia unikalnych butow?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.717952Z"
+  },
+  "npc.emperor_kruzak.say_5": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.719866Z"
+  },
+  "npc.emperor_kruzak.say_8": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.721162Z"
+  },
+  "npc.emperor_kruzak.walkaway_msg_1": {
+    "src_hash": "986986ec5082bb37c9b0a14bd1acf9dc",
+    "text": "Żegnaj, |PLAYERNAME|, moje dziecko!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.723120Z"
+  },
+  "npc.erayo.greet_msg_1": {
+    "src_hash": "6e3e6967ef071f66260733538ee2808f",
+    "text": "Co do... To znaczy, oczywiście, że cię wyczułem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.728874Z"
+  },
+  "npc.eremo.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.737705Z"
+  },
+  "npc.eremo.greet_msg_1": {
+    "src_hash": "3025033ce084ef8f6a0d689751bb8ca1",
+    "text": "Witaj w moim małym ogrodzie, poszukiwaczu przygód |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.738764Z"
+  },
+  "npc.eremo.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.748994Z"
+  },
+  "npc.eruaran.greet_msg_2": {
+    "src_hash": "df513f5c220cc8dcd6f923a6a42f3f54",
+    "text": "Witaj |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.757399Z"
+  },
+  "npc.esrik.greet_msg_1": {
+    "src_hash": "ff95be6fc5bad950efcdd88276866ceb",
+    "text": "Witaj, |PLAYERNAME|, witaj w mojej małej kuźni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.777560Z"
+  },
+  "npc.ezebeth.greet_msg_1": {
+    "src_hash": "c670a71dc9166a3109f2ba824b9b5fc1",
+    "text": "Witaj! Zgaduję, że jesteś tu po {mission}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.788546Z"
+  },
+  "npc.fa_hradin.farewell_msg_1": {
+    "src_hash": "54125fbcb905788a203c25152ce56f1b",
+    "text": "Żegnaj, człowieku. Zawsze będę cię pamiętać. O ile oczywiście nie zapomnę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.793605Z"
+  },
+  "npc.fa_hradin.walkaway_msg_1": {
+    "src_hash": "54125fbcb905788a203c25152ce56f1b",
+    "text": "Żegnaj, człowieku. Zawsze będę cię pamiętać. O ile oczywiście nie zapomnę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.804089Z"
+  },
+  "npc.faloriel.greet_msg_1": {
+    "src_hash": "ff27ed07c1861e5d20958b05901228dd",
+    "text": "Pozdrowienia, drogi gościu, witaj w moim sklepie {potion}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.812190Z"
+  },
+  "npc.farhilorn_of_the_winter_court.greet_msg_1": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Witaj, wojowniku. Zgaduję, że jesteś tu, by {fight} za naszą szlachetną {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.816541Z"
+  },
+  "npc.feizuhl.greet_msg_1": {
+    "src_hash": "fd3d0ca55545e2ddeaee117f819e7179",
+    "text": "Bądź opłakany, pielgrzymie w ciele, witaj w sklepie meblowym.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.819803Z"
+  },
+  "npc.feizuhl.sendtrade_msg_1": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Spójrz. Większość mebli jest w poręcznych zestawach. Użyj ich w domu, aby złożyć meble. Chcesz zobaczyć tylko określony rodzaj mebli?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.821148Z"
+  },
+  "npc.fenbala.stdmod_1": {
+    "src_hash": "aa24cd173480198e6d20a3303d4decb1",
+    "text": "PILNUJ MANIER, PLEBEJUSZU! Zwracając się do królowej, witaj ją jej tytułem!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.823851Z"
+  },
+  "npc.fenbala.stdmod_2": {
+    "src_hash": "aa24cd173480198e6d20a3303d4decb1",
+    "text": "PILNUJ MANIER, PLEBEJUSZU! Zwracając się do królowej, witaj ją jej tytułem!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.824954Z"
+  },
+  "npc.fenbala.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.825486Z"
+  },
+  "npc.fenech.greet_msg_1": {
+    "src_hash": "3db673da51407607f7374e85fb546aed",
+    "text": "Bądź opłakany, pielgrzymie w ciele, witaj w sklepie magicznym.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.826984Z"
+  },
+  "npc.ferus.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.832443Z"
+  },
+  "npc.ferus.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.833510Z"
+  },
+  "npc.ferus.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.834045Z"
+  },
+  "npc.ferus.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.846857Z"
+  },
+  "npc.ferus.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.848431Z"
+  },
+  "npc.ferus.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.850198Z"
+  },
+  "npc.ferus.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.851723Z"
+  },
+  "npc.fiona.farewell_msg_1": {
+    "src_hash": "d22d25583f0b1de590010f2d40b39f92",
+    "text": "Do widzenia i wróć wkrótce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.855832Z"
+  },
+  "npc.fiona.sendtrade_msg_1": {
+    "src_hash": "002e4dfefafb258208d6c4b110f2099e",
+    "text": "Jasne, spójrz. Oprócz tego kupuję też niektóre przedmioty po słynnych demon lordach i bossach. Zapytaj, jeśli znalazłeś coś ciekawego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.858226Z"
+  },
+  "npc.fiona.walkaway_msg_1": {
+    "src_hash": "d22d25583f0b1de590010f2d40b39f92",
+    "text": "Do widzenia i wróć wkrótce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:11.860358Z"
   }
 }

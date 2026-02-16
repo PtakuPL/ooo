@@ -16774,5 +16774,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:59:59.482456Z"
+  },
+  "data.otservbr.global.npc.lorietta.L148.1077": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.800005Z"
+  },
+  "data.otservbr.global.npc.lorietta.L149.1078": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.800533Z"
+  },
+  "data.otservbr.global.npc.lorietta.L150.1079": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.800953Z"
+  },
+  "data.otservbr.global.npc.maealil.L170.1601": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.803434Z"
+  },
+  "data.otservbr.global.npc.maealil.L171.1602": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.803946Z"
+  },
+  "data.otservbr.global.npc.maealil.L172.1603": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.804368Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L177.896": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.804969Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L178.897": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.805370Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L139.841": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "La dispoziția dumneavoastră, doar răsfoiți prin marfa mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.814011Z"
+  },
+  "data.otservbr.global.npc.nelly.L169.418": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.816400Z"
+  },
+  "data.otservbr.global.npc.ninev.L185.290": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.817366Z"
+  },
+  "data.otservbr.global.npc.ninev.L186.291": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.817788Z"
+  },
+  "data.otservbr.global.npc.nipuna.L170.1588": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.818493Z"
+  },
+  "data.otservbr.global.npc.prezil.L143.719": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.826891Z"
+  },
+  "data.otservbr.global.npc.prezil.L144.720": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.827399Z"
+  },
+  "data.otservbr.global.npc.prezil.L145.721": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.827834Z"
+  },
+  "data.otservbr.global.npc.quentin.L180.176": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.829162Z"
+  },
+  "data.otservbr.global.npc.quentin.L181.177": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.829600Z"
+  },
+  "data.otservbr.global.npc.rachel.L180.742": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.831308Z"
+  },
+  "data.otservbr.global.npc.richard.L201.341": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.834599Z"
+  },
+  "data.otservbr.global.npc.romir.L157.1044": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.837068Z"
+  },
+  "data.otservbr.global.npc.shiriel.L145.1149": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.847938Z"
+  },
+  "data.otservbr.global.npc.sigurd.L147.1171": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.851463Z"
+  },
+  "data.otservbr.global.npc.sundara.L170.1087": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.855481Z"
+  },
+  "data.otservbr.global.npc.tandros.L160.196": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.858409Z"
+  },
+  "data.otservbr.global.npc.topsy.L181.925": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.871719Z"
+  },
+  "data.otservbr.global.npc.torkada.L98.1010": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.872761Z"
+  },
+  "data.otservbr.global.npc.tyrias.L173.1272": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.874351Z"
+  },
+  "data.otservbr.global.npc.tyrias.L174.1273": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.875128Z"
+  },
+  "data.otservbr.global.npc.tyrias.L175.1274": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.875769Z"
+  },
+  "data.otservbr.global.npc.xodet.L175.345": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.886725Z"
+  },
+  "data.otservbr.global.npc.yaman.L169.636": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "La dispoziția dumneavoastră, doar răsfoiți prin marfa mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.888091Z"
+  },
+  "data.otservbr.global.npc.yberius.L169.1364": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.889031Z"
+  },
+  "data.otservbr.global.npc.yberius.L170.1365": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.889671Z"
+  },
+  "data.otservbr.global.npc.yberius.L171.1366": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.890111Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L148.50": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.892120Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L149.51": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.892628Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L150.52": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.893162Z"
+  },
+  "data.otservbr.global.scripts.actions.dawnport.vocation.door.L36.2373": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.896304Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L37.2389": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.901275Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L69.2392": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Ai cincisprezece minute să-l ucizi și să jefuiești acest șef, altfel vei pierde această șansă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.902286Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.zalamon.door.L12.2154": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.906768Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L12.2256": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Da.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.912158Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Eșuează.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.912770Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L10.2271": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Ai investigat deja asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.922220Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L24.2272": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Resturi de hârtie zac împrăștiate pe podea. Este nevoie de ceva timp pentru a le pune la loc. Dar este doar o poezie scrisă prost.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:21.922903Z"
   }
 }

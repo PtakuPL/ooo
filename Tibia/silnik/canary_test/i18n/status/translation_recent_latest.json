@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:03:56.502210Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T23:04:52.830000Z",
+  "language": "it",
+  "json_file": "spells.json",
+  "translated": 45,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.draken_elite_soulfire.name",
+      "en": "draken elite soulfire",
+      "translated": "fuoco dell'anima d'élite dei draken",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "spell.devourer_summon.name",
+      "en": "devourer summon",
+      "translated": "evocazione del divoratore",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "spell.tenebris_summon.name",
+      "en": "Tenebris Summon",
+      "translated": "Evocazione di Tenebris",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "spell.pythius_the_rotten_summon.name",
+      "en": "pythius the rotten summon",
+      "translated": "pythius l'evocazione marcia",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "spell.man_in_the_cave_summon.name",
+      "en": "man in the cave summon",
+      "translated": "evocazione dell'uomo nella caverna",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "spell.morgaroth_skill_reducer_2.name",
+      "en": "morgaroth skill reducer 2",
+      "translated": "riduttore di abilità morgaroth 2",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "spell.firestarter_soulfire.name",
+      "en": "firestarter soulfire",
+      "translated": "fuoco dell'anima pizzicatore",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "spell.tyrn_skill_reducer.name",
+      "en": "tyrn skill reducer",
+      "translated": "riduttore di abilità di Tyrn",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "spell.cold_of_winter.name",
+      "en": "cold of winter",
+      "translated": "freddo dell'inverno",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "spell.dworc_paralyze.name",
+      "en": "dworc paralyze",
+      "translated": "dworc paralizza",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "spell.time_guardian_lost_time.name",
+      "en": "time guardian lost time",
+      "translated": "il guardiano del tempo ha perso tempo",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "spell.magma_crawler_wave.name",
+      "en": "magma crawler wave",
+      "translated": "onda cingolata del magma",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.drillworm_paralyze.name",
+      "en": "drillworm paralyze",
+      "translated": "paralizzano i vermi",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.zavarash2_paralyze.name",
+      "en": "zavarash2 paralyze",
+      "translated": "zavarash2 paralizza",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.zamulosh_invisible.name",
+      "en": "zamulosh invisible",
+      "translated": "zamulosh invisibile",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "spell.ashfalor_summon.name",
+      "en": "Ashfalor Summon",
+      "translated": "Evocazione di Ashfalor",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.breach_brood_reducer.name",
+      "en": "breach brood reducer",
+      "translated": "riduttore della covata",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.emberbeastarea.name",
+      "en": "emberBeastArea",
+      "translated": "emberBeastArea",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.soulcatcher_summon.name",
+      "en": "soulcatcher summon",
+      "translated": "evocazione di acchiappa-anime",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.wilting_leaf_golem_paralyze.name",
+      "en": "wilting leaf golem paralyze",
+      "translated": "Il golem di foglie appassite paralizza",
+      "source": "google_translate"
     }
   ]
 }

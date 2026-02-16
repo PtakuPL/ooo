@@ -23678,5 +23678,365 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:03:41.549049Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "il giullare non morto paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:27.139828Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "bersaglio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:29.724375Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "onda di scossa di assestamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:29.724716Z"
+  },
+  "spell.raging_mage_skill_reducer_2.name": {
+    "src_hash": "1b4d065ee80f1dbdd553b7cc433f56a1",
+    "text": "riduttore di abilità del mago furioso 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:29.725028Z"
+  },
+  "spell.dreadwing_curse.name": {
+    "src_hash": "6f04ff2059a60aa01e208e0cebc1bd2d",
+    "text": "maledizione del dreadwing",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:29.725253Z"
+  },
+  "spell.betrayed_wraith_skill_reducer.name": {
+    "src_hash": "333a2e1af1ddefe52520f8f2978a203f",
+    "text": "riduttore di abilità dello spettro tradito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:32.429469Z"
+  },
+  "spell.gnomevil_soulfire.name": {
+    "src_hash": "f12a4dd8c3059b8abe022de1f312fb31",
+    "text": "gnomo malvagio fuoco dell'anima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:32.429734Z"
+  },
+  "spell.minotaur_amazon_paralyze.name": {
+    "src_hash": "c88f3b8928239a36ce90d56a34ff900d",
+    "text": "il minotauro amazzone paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:32.429993Z"
+  },
+  "spell.twins_skill_reducer.name": {
+    "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
+    "text": "riduttore di abilità gemelli",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:32.430339Z"
+  },
+  "spell.zushuka_freeze.name": {
+    "src_hash": "0b3f7c6071b0c23cbf33729be65920ca",
+    "text": "congelamento di zushuka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:32.430561Z"
+  },
+  "spell.blood_hand_paralyze.name": {
+    "src_hash": "d43d4107cf3c8ca13e2be5930ceb3c29",
+    "text": "la mano insanguinata paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:35.323780Z"
+  },
+  "spell.ravennouslavalurkertarget.name": {
+    "src_hash": "497e978a910324bd53a6e584b83ff9a1",
+    "text": "famelicoLavaLurkerTarget",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:35.324028Z"
+  },
+  "spell.thorn_summon.name": {
+    "src_hash": "ec458d283e18e30ee3b8efe406f99559",
+    "text": "evocazione di spine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:35.324292Z"
+  },
+  "spell.big_energy_wave.name": {
+    "src_hash": "7d20925ed4e9434e30ad5f22892439a2",
+    "text": "grande onda di energia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:35.324536Z"
+  },
+  "spell.furyosa_deathball.name": {
+    "src_hash": "daf7bc73713b5f8d891c98d697d4bdf1",
+    "text": "Furyosa Palla mortale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:35.324947Z"
+  },
+  "spell.summonchallenge.name": {
+    "src_hash": "7f863ba4a43ed7de3e35f58e2d2fb773",
+    "text": "sfida di convocazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:37.937715Z"
+  },
+  "spell.large_fire_ring.name": {
+    "src_hash": "5394e9c93b2017a67c7621e8a265436e",
+    "text": "grandefirering",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:37.937923Z"
+  },
+  "spell.dipthrah_skill_reducer.name": {
+    "src_hash": "2f1fcdbc32e97fcd940c1ea28020aa45",
+    "text": "riduttore di abilità di dipthrah",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:37.938298Z"
+  },
+  "spell.vulcongra_soulfire.name": {
+    "src_hash": "9b179ffa7a83901c618f09c111fb54d3",
+    "text": "fuoco dell'anima vulcongra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:37.938583Z"
+  },
+  "spell.malofur_explosion.name": {
+    "src_hash": "9b242cec8044a6a20f5add13d22fcd11",
+    "text": "Esplosione di Malofur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:37.938810Z"
+  },
+  "spell.lizard_magistratus_curse.name": {
+    "src_hash": "84b35dc62577dc99d6c038c476121a34",
+    "text": "maledizione del magistrato lucertola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:40.535403Z"
+  },
+  "spell.heal_brain_head.name": {
+    "src_hash": "16798f54286e3470100eb9fa2eed3fe7",
+    "text": "guarire la testa del cervello",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:40.535657Z"
+  },
+  "spell.earth_barrage.name": {
+    "src_hash": "5d6ae1b9885ff1aeebc09563b3e1712e",
+    "text": "sbarramento terrestre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:40.535859Z"
+  },
+  "spell.glooth_battery_heal.name": {
+    "src_hash": "b616ae108a81f934e3a49de7ff7f8870",
+    "text": "la batteria Gloth guarisce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:40.536103Z"
+  },
+  "spell.ghastly_dragon_wave.name": {
+    "src_hash": "736938e9e7c9c4ab8e28acfd7fa73cdc",
+    "text": "orribile onda del drago",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:40.536343Z"
+  },
+  "spell.draken_elite_soulfire.name": {
+    "src_hash": "6ca1fde63ac1e032c99e0627f6e7fa4c",
+    "text": "fuoco dell'anima d'élite dei draken",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:43.123309Z"
+  },
+  "spell.devourer_summon.name": {
+    "src_hash": "9755d669726bf618c72329d71dcc7a47",
+    "text": "evocazione del divoratore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:43.123605Z"
+  },
+  "spell.tenebris_summon.name": {
+    "src_hash": "9d9f516aa5d5c62ef39377c97a6691f5",
+    "text": "Evocazione di Tenebris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:43.123822Z"
+  },
+  "spell.pythius_the_rotten_summon.name": {
+    "src_hash": "81accc32310a4b6f61930206e170c39b",
+    "text": "pythius l'evocazione marcia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:43.124073Z"
+  },
+  "spell.man_in_the_cave_summon.name": {
+    "src_hash": "d18be646d4a8cd3c9769c49067bdb531",
+    "text": "evocazione dell'uomo nella caverna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:43.124333Z"
+  },
+  "spell.morgaroth_skill_reducer_2.name": {
+    "src_hash": "863723246630037a2d7b72736b8178f9",
+    "text": "riduttore di abilità morgaroth 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:45.693144Z"
+  },
+  "spell.firestarter_soulfire.name": {
+    "src_hash": "20683709310db09463fb32c59f557034",
+    "text": "fuoco dell'anima pizzicatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:45.693400Z"
+  },
+  "spell.tyrn_skill_reducer.name": {
+    "src_hash": "32e7ea8698ec3e7bdf775f85c6aa7c6a",
+    "text": "riduttore di abilità di Tyrn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:45.693663Z"
+  },
+  "spell.cold_of_winter.name": {
+    "src_hash": "f65e5256fcceac4e54b3de77fe6a56a1",
+    "text": "freddo dell'inverno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:45.693869Z"
+  },
+  "spell.dworc_paralyze.name": {
+    "src_hash": "f0d751cb81f00e18196c6ff12fdb5f55",
+    "text": "dworc paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:45.694062Z"
+  },
+  "spell.time_guardian_lost_time.name": {
+    "src_hash": "fc7bacb2db9f90b22285920577ea9e60",
+    "text": "il guardiano del tempo ha perso tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:50.212999Z"
+  },
+  "spell.magma_crawler_wave.name": {
+    "src_hash": "3a110c92403b80d53debdca32741f054",
+    "text": "onda cingolata del magma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:50.213259Z"
+  },
+  "spell.drillworm_paralyze.name": {
+    "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
+    "text": "paralizzano i vermi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:50.213482Z"
+  },
+  "spell.zavarash2_paralyze.name": {
+    "src_hash": "0acbc6a83d4c0d759d98242007f1904a",
+    "text": "zavarash2 paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:50.213697Z"
+  },
+  "spell.zamulosh_invisible.name": {
+    "src_hash": "1b441bf3a1bd547e0edfd5d8e552afae",
+    "text": "zamulosh invisibile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:50.213908Z"
+  },
+  "spell.ashfalor_summon.name": {
+    "src_hash": "fd5de32dcca8065ba359061be0d0dc7b",
+    "text": "Evocazione di Ashfalor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:52.785298Z"
+  },
+  "spell.breach_brood_reducer.name": {
+    "src_hash": "93a57b0b3783457c725f7493681f9f15",
+    "text": "riduttore della covata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:52.785555Z"
+  },
+  "spell.emberbeastarea.name": {
+    "src_hash": "fae22fdada9c14ba633d0c3532415ff9",
+    "text": "emberBeastArea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:52.785762Z"
+  },
+  "spell.soulcatcher_summon.name": {
+    "src_hash": "0662b568c576c6f23392f96f22a8fb7f",
+    "text": "evocazione di acchiappa-anime",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:52.785991Z"
+  },
+  "spell.wilting_leaf_golem_paralyze.name": {
+    "src_hash": "3cf7df15b6ee67ce2b540279ce9ee46b",
+    "text": "Il golem di foglie appassite paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:52.786336Z"
   }
 }

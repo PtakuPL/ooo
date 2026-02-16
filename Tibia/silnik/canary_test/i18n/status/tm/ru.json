@@ -15870,5 +15870,197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:59:01.632659Z"
+  },
+  "data.otservbr.global.npc.myra.L321.1420": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Прощание.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.640022Z"
+  },
+  "data.otservbr.global.npc.myzzi.L101.66": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.640441Z"
+  },
+  "data.otservbr.global.npc.myzzi.L102.67": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.640885Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L138.840": {
+    "src_hash": "34f508c02e7490e7376759a59c1a75b9",
+    "text": "Тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.641252Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L139.841": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "К вашим услугам, просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.641734Z"
+  },
+  "data.otservbr.global.npc.narsai.L118.892": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.642716Z"
+  },
+  "data.otservbr.global.npc.narsai.L58.889": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.643090Z"
+  },
+  "data.otservbr.global.npc.narsai.L61.890": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.643471Z"
+  },
+  "data.otservbr.global.npc.narsai.L64.891": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.643947Z"
+  },
+  "data.otservbr.global.npc.nelly.L169.418": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.644601Z"
+  },
+  "data.otservbr.global.npc.nielson.L101.561": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "До свидания. Пожалуйста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.645125Z"
+  },
+  "data.otservbr.global.npc.ninev.L185.290": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.645950Z"
+  },
+  "data.otservbr.global.npc.nipuna.L170.1588": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.646810Z"
+  },
+  "data.otservbr.global.npc.noozer.L89.43": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.647672Z"
+  },
+  "data.otservbr.global.npc.ocelus.L109.834": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Ну что ж.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.648991Z"
+  },
+  "data.otservbr.global.npc.oswald.L123.1197": {
+    "src_hash": "f4cd8a88fc54d984f094f4873ec79f42",
+    "text": "Окончательно!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.650036Z"
+  },
+  "data.otservbr.global.npc.padreia.L136.555": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Прощание.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.650548Z"
+  },
+  "data.otservbr.global.npc.padreia.L137.556": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Прощание.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.650883Z"
+  },
+  "data.otservbr.global.npc.palimuth.L320.33": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Привет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.651192Z"
+  },
+  "data.otservbr.global.npc.petros.L86.1231": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.652778Z"
+  },
+  "data.otservbr.global.npc.pig.L48.717": {
+    "src_hash": "2111b3c9a01716843a50d4328e5da50e",
+    "text": "Хрю.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.653299Z"
+  },
+  "data.otservbr.global.npc.pig.L49.718": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.653583Z"
+  },
+  "data.otservbr.global.npc.pino.L89.1405": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.653965Z"
+  },
+  "data.otservbr.global.npc.pino.L90.1406": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "До свидания!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:04:17.654343Z"
   }
 }

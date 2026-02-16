@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-16T21:39:46.509721Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T21:40:25.535898Z",
+  "language": "sv",
+  "json_file": "monsters.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.sir_valorcrest.desc",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "monster.draptor.name",
+      "en": "Draptor",
+      "translated": "Draptor",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "monster.chayenne.name",
+      "en": "Chayenne",
+      "translated": "Chayenne",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "monster.chayenne.desc",
+      "en": "Chayenne",
+      "translated": "Chayenne",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "monster.zulazza_the_corruptor.name",
+      "en": "Zulazza the Corruptor",
+      "translated": "Zulazza The Corruptor",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "monster.zulazza_the_corruptor.desc",
+      "en": "Zulazza the Corruptor",
+      "translated": "Zulazza The Corruptor",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "monster.orshabaal.name",
+      "en": "Orshabaal",
+      "translated": "Orshabaal",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "monster.orshabaal.desc",
+      "en": "Orshabaal",
+      "translated": "Orshabaal",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "monster.white_pale.name",
+      "en": "White Pale",
+      "translated": "White Pale",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "monster.white_pale.desc",
+      "en": "White Pale",
+      "translated": "White Pale",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "monster.the_welter.name",
+      "en": "The Welter",
+      "translated": "The Welter",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "monster.the_welter.desc",
+      "en": "The Welter",
+      "translated": "The Welter",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "monster.morgaroth.name",
+      "en": "Morgaroth",
+      "translated": "Morgaroth",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "monster.morgaroth.desc",
+      "en": "Morgaroth",
+      "translated": "Morgaroth",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "monster.ferumbras.name",
+      "en": "Ferumbras",
+      "translated": "Ferumbras",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "monster.ferumbras.desc",
+      "en": "Ferumbras",
+      "translated": "Ferumbras",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "monster.furyosa.name",
+      "en": "Furyosa",
+      "translated": "Furyosa",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "monster.furyosa.desc",
+      "en": "Furyosa",
+      "translated": "Furyosa",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "monster.fernfang.name",
+      "en": "Fernfang",
+      "translated": "Fernfang",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "monster.fernfang.desc",
+      "en": "Fernfang",
+      "translated": "Fernfang",
       "source": "tm"
     }
   ]

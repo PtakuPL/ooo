@@ -90694,5 +90694,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:53:10.922631Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L137.839": {
+    "src_hash": "6208e49a68b520f5b6eb6ddeefd9e28a",
+    "text": "Do widzenia, Neutrala |PLAYERNAME|. Któregoś dnia ponownie odwiedź starego Boba!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:00:55.346194Z"
   }
 }

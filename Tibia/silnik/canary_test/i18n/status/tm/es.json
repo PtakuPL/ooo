@@ -141430,5 +141430,245 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:58:45.416020Z"
+  },
+  "data.otservbr.global.npc.lynda.L307.1507": {
+    "src_hash": "41a97395a5729feeab77ee7495736313",
+    "text": "¡Bienvenido en nombre de los dioses, peregrino |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.604641Z"
+  },
+  "data.otservbr.global.npc.lynda.L308.1508": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.606205Z"
+  },
+  "data.otservbr.global.npc.lynda.L309.1509": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.607953Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L176.895": {
+    "src_hash": "c70e4d8c31291a7d72dde8f84d33f733",
+    "text": "¡Las bendiciones de la naturaleza! Bienvenidos a la tierra de los sueños.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.611479Z"
+  },
+  "data.otservbr.global.npc.maeryn.L178.1255": {
+    "src_hash": "dca678c81c221d0b4c21e91f9b478943",
+    "text": "Saludos, visitante. Me pregunto qué puede llevarte a este {dangerous} lugar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.614270Z"
+  },
+  "data.otservbr.global.npc.malor.L193.131": {
+    "src_hash": "1b0806bb328b6b43658826b221d451fa",
+    "text": "Adiós, humano. Cuando haya ocupado el lugar que me corresponde, recordaré a quienes me sirvieron bien. Incluso si son sólo humanos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.616229Z"
+  },
+  "data.otservbr.global.npc.malunga.L58.1370": {
+    "src_hash": "dbfea65667c74ee69fd021dfe4454c77",
+    "text": "Saludos. Tengo poco tiempo para {spare}, por lo que la conversación será breve. Enseño al hechicero {spells} y compro algunos {ingredients} mágicos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.619083Z"
+  },
+  "data.otservbr.global.npc.marina.L128.1472": {
+    "src_hash": "2ae27253663b438cae541caa6ff17b8d",
+    "text": "Hola |PLAYERNAME|. Un visitante, ¡qué lindo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.620742Z"
+  },
+  "data.otservbr.global.npc.maris.L91.978": {
+    "src_hash": "7f884ad7135562fc9dfd9b3551c3855f",
+    "text": "Espero que tengas una buena razón para acercarte a mi {ship}, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.622490Z"
+  },
+  "data.otservbr.global.npc.maris.fenrock.L72.111": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Oh, todavía estás vivo. Hola, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.625476Z"
+  },
+  "data.otservbr.global.npc.maris.mistrock.L89.667": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Oh, todavía estás vivo. Hola, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.627918Z"
+  },
+  "data.otservbr.global.npc.markwin.L59.904": {
+    "src_hash": "bf2421b7f13057a4d06b921861e9b066",
+    "text": "¡Intruso! ¡Guardias, derribenlo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.630615Z"
+  },
+  "data.otservbr.global.npc.markwin.L72.905": {
+    "src_hash": "5c97494d5f921771f27b9e512cd75d54",
+    "text": "Bueno... ¡derrotaste a mis guardias! ¡Ahora todo ha terminado! Supongo que tendré que responder a tus preguntas ahora.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.633049Z"
+  },
+  "data.otservbr.global.npc.marlene.L101.423": {
+    "src_hash": "a2b4481e8d9b0cdfe72918bb2a79f120",
+    "text": "¡Adiós y vuelve para otra pequeña charla! *ondas*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.636175Z"
+  },
+  "data.otservbr.global.npc.marvin.L92.130": {
+    "src_hash": "d34ba366d4cab92352173ff6cb7f085a",
+    "text": "Ah, llegas justo a tiempo para la votación especial sobre el proyecto {funding} más reciente. Supongo que quieres participar en ello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.638130Z"
+  },
+  "data.otservbr.global.npc.mazarius.L189.562": {
+    "src_hash": "8fa02972b5987e56c5691893a73d91e2",
+    "text": "Saludos, querido visitante. Por favor dime qué {brings} estás aquí, a mi humilde adobe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.640218Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L59.619": {
+    "src_hash": "653a40db026dd0eea8fd4db0d5fba508",
+    "text": "Sé de luto, |PLAYERNAME|, peregrino en carne. Si buscas pociones, no busques más.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.643087Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L60.620": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.644746Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L61.621": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.646347Z"
+  },
+  "data.otservbr.global.npc.melchior.L86.1116": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Adiós, extraño. Que Uman el Sabio guíe tus pasos en esta tierra traicionera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.648735Z"
+  },
+  "data.otservbr.global.npc.melchior.L87.1117": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Adiós, extraño. Que Uman el Sabio guíe tus pasos en esta tierra traicionera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.650519Z"
+  },
+  "data.otservbr.global.npc.melfar.L135.692": {
+    "src_hash": "49f8d351b6b7daffa365eac4d0e9f2f1",
+    "text": "Simplemente genial, otra perturbación. Justo lo que necesito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.652098Z"
+  },
+  "data.otservbr.global.npc.melian.L94.776": {
+    "src_hash": "ae65c5fcbefcac067caa83048920ebf2",
+    "text": "Saludos viajero |PLAYERNAME|. ¿Dónde quieres que te {fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.653690Z"
+  },
+  "data.otservbr.global.npc.memech.L59.1193": {
+    "src_hash": "65d996f074a8494c83d5bfd9a8f8a9bf",
+    "text": "Sé de luto, |PLAYERNAME|, peregrino en carne. Echa un vistazo a mis finos {weapons} y {armors}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.656424Z"
+  },
+  "data.otservbr.global.npc.memech.L60.1194": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.657938Z"
+  },
+  "data.otservbr.global.npc.memech.L61.1195": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.659424Z"
+  },
+  "data.otservbr.global.npc.milos.L59.298": {
+    "src_hash": "313a0c76d8cc04115f7e8b6b17a08f55",
+    "text": "Ah hola. Casi no te noté. Me temo que en este momento estoy un poco distraído.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.663075Z"
+  },
+  "data.otservbr.global.npc.mirabell.L123.158": {
+    "src_hash": "c9ad0693ff3d091e447e8b61e14edfdd",
+    "text": "Por supuesto, echa un vistazo a mis sabrosas ofertas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.666593Z"
+  },
+  "data.otservbr.global.npc.miraia.L187.1359": {
+    "src_hash": "a36a156c93c52f19433932691de5899e",
+    "text": "Las bendiciones de Daraman. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.668780Z"
+  },
+  "data.otservbr.global.npc.moe.L115.326": {
+    "src_hash": "0b1e35729e4385f6252e25c1e9b9dedf",
+    "text": "Saludos, viajero. Parece que aquí eres un {guest}, como yo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:01:05.670489Z"
   }
 }

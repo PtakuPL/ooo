@@ -2,17 +2,18 @@
   "lang": "ro",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 11182,
-  "identical_to_en": 2492,
-  "placeholder_keys": 42404,
-  "coverage_pct": 20.9,
-  "issues_total": 1,
+  "translated": 11426,
+  "identical_to_en": 2481,
+  "placeholder_keys": 42160,
+  "coverage_pct": 21.3,
+  "issues_total": 2,
   "issues_by_type": {
+    "V4_artifact": 1,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 0,
     "LOW": 0
   },
@@ -23,6 +24,12 @@
       "category": "scripts",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
+      "category": "quests",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -33,5 +40,5 @@
     "length_ratio": 6,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-16T23:36:53.060104Z"
+  "validated_at": "2026-02-16T23:58:10.888064Z"
 }

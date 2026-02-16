@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:36:09.749305Z",
+  "checked_at": "2026-02-16T23:57:27.851312Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -293,6 +293,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -327,6 +345,15 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_cancel",
@@ -3585,33 +3612,6 @@
       "en": "<sniff>",
       "pl": "<węszy>",
       "lang": "<sniff>"
-    },
-    {
-      "key": "npc.a_starving_dog.say_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<munch>",
-      "pl": "<przeżuwać>",
-      "lang": "<munch>"
-    },
-    {
-      "key": "npc.al_dee.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, cześć, pa, cześć.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "npc.aldo.say_5",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ok then.",
-      "pl": "Ok wtedy.",
-      "lang": "Ok then."
     }
   ],
   "length_ratio_issues": [

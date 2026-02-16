@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 10.9,
+  "coverage_pct": 11.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:37:12.799129Z",
+  "checked_at": "2026-02-16T23:58:34.963284Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -347,6 +347,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -381,6 +399,15 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_cancel",
@@ -3585,33 +3612,6 @@
       "en": "No then.",
       "pl": "Nie wtedy.",
       "lang": "No then."
-    },
-    {
-      "key": "npc.brodrosch.stdmod_12",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
-    },
-    {
-      "key": "npc.bron.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Take care!",
-      "pl": "Trzymaj się!",
-      "lang": "Take care!"
-    },
-    {
-      "key": "npc.budrik.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, cześć, pa, cześć.",
-      "lang": "Bye, bye."
     }
   ],
   "length_ratio_issues": [

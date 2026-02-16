@@ -22326,5 +22326,309 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:52:13.769467Z"
+  },
+  "questlog.quest_49.mission_1.name": {
+    "src_hash": "cd85b4358b1fbedfa52306065b9a232b",
+    "text": "Înalt și uscat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:16.581239Z"
+  },
+  "questlog.common.mission_completed_format": {
+    "src_hash": "5c60f96b6affcb675f69133dc8c002fd",
+    "text": "%s (finalizat)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:20.041344Z"
+  },
+  "questlog.quest_1.mission_1.description": {
+    "src_hash": "84506f123942e87bbdb223433b1d0aa2",
+    "text": "Ai spart primul sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:20.041859Z"
+  },
+  "questlog.quest_1.mission_1.name": {
+    "src_hash": "90155bb7a9269a145cdb34f33bc6ec4b",
+    "text": "The Hidden Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:20.042346Z"
+  },
+  "questlog.quest_1.mission_2.description": {
+    "src_hash": "aa451c0927ac398a0c9607e68cabae40",
+    "text": "Ai spart al doilea sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:20.042645Z"
+  },
+  "questlog.quest_1.mission_2.name": {
+    "src_hash": "5d62cb4a590965bb7e705d2c1b6477b2",
+    "text": "The Plague Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:20.043003Z"
+  },
+  "questlog.quest_1.mission_3.description": {
+    "src_hash": "1b87b7e9e62dc33b3fced8800f935200",
+    "text": "Ai spart al treilea sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:25.167692Z"
+  },
+  "questlog.quest_1.mission_4.description": {
+    "src_hash": "0664bf4422c184b63c1256f5b92c9fed",
+    "text": "Ai spart al patrulea sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:25.168053Z"
+  },
+  "questlog.quest_1.mission_5.description": {
+    "src_hash": "6fd3cbde44ef19588ccba52fc0e89d3e",
+    "text": "Ai spart al cincilea sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:25.168392Z"
+  },
+  "questlog.quest_1.mission_6.description": {
+    "src_hash": "a6f58f97f0d653eded324c90dddb6e30",
+    "text": "Ai spart al șaselea sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:29.420774Z"
+  },
+  "questlog.quest_1.mission_7.description": {
+    "src_hash": "5df93ab653c84807b0cd359f4d7334cd",
+    "text": "Regina Banshee te-a sărutat. Asta a însemnat moartea ta și o parte din sufletul tău îi aparține mereu ei acum. Ai spart ultimul sigiliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:29.421809Z"
+  },
+  "questlog.quest_1.mission_8.description": {
+    "src_hash": "9c32ee478633abbd64b5e57921dcd7cd",
+    "text": "Ai înfruntat toate pericolele Căutării Banshee și ai scăpat cu viață din temniță. Camera de la capăt este sigilată pentru tine de acum înainte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:34.200423Z"
+  },
+  "questlog.quest_1.mission_8.name": {
+    "src_hash": "51ae86f3a85c461e5e822d56e933ae93",
+    "text": "The Final Battle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:34.200908Z"
+  },
+  "questlog.quest_10.mission_1.state_1": {
+    "src_hash": "7f6f2bdcc9d70c426a6e07eb1cd71a97",
+    "text": "Palimuth ți-a cerut să ajuți cu unele defecțiuni ale canalizării. Veți avea nevoie de un Crowbar, există 4 locuri în care trebuie să mergeți marcate cu un X pe hartă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:34.201749Z"
+  },
+  "questlog.quest_10.mission_1.state_2": {
+    "src_hash": "e6e64f9275238b6ecc99b59f64a11a91",
+    "text": "Ai curățat 1 conductă din 4 din gunoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:39.912093Z"
+  },
+  "questlog.quest_10.mission_1.state_3": {
+    "src_hash": "2776538e7a93252ae04bfd7069ef3c03",
+    "text": "Ai curățat 2 conducte din 4 de la gunoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:39.912456Z"
+  },
+  "questlog.quest_10.mission_1.state_4": {
+    "src_hash": "60858fcece906d6ec05690e42c17b571",
+    "text": "Ai curățat 3 conducte din 4 de la gunoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:39.912801Z"
+  },
+  "questlog.quest_10.mission_1.state_5": {
+    "src_hash": "c41b0c7d66177065ad1e3c2d575e5e29",
+    "text": "Ai curățat 4 conducte din 4 de la gunoi. Întoarce-te la Palimuth și raportează-ți misiunea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:39.913272Z"
+  },
+  "questlog.quest_10.mission_1.state_6": {
+    "src_hash": "ff42da2d6a89bd6a1df1efdc1d4c7152",
+    "text": "Ai curățat toate țevile de la gunoi! Du-te înapoi la Palimuth și cere misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:39.913717Z"
+  },
+  "questlog.quest_10.mission_10.state_1": {
+    "src_hash": "1c32cc3091d0dcf983a5e914e76e7e6e",
+    "text": "Palimuth ți-a spus că un cerc de Yalahari plănuiește un fel de ritual. Ei plănuiesc să creeze un portal pentru niște demoni puternici și să-i dezlănțuie în oraș pentru a-l 'purge' o dată pentru totdeauna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:46.411560Z"
+  },
+  "questlog.quest_10.mission_10.state_2": {
+    "src_hash": "e7da10bf26b2899190b4fd22ca60b0a9",
+    "text": "Intrarea în sanctul lor interior a fost deschisă pentru tine. Fii pregătit pentru o luptă GRĂ! Mai bine adună niște prieteni care să te ajute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:46.412198Z"
+  },
+  "questlog.quest_10.mission_10.state_3": {
+    "src_hash": "9e21da6fcc29ffa6c9847a3cf880135f",
+    "text": "Raportați la directorul pe care l-ați ales să vă ajutați și veți primi ținute Yalaharian.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:46.412751Z"
+  },
+  "questlog.quest_10.mission_10.state_4": {
+    "src_hash": "50a2c9d2146acd319c824479bfe72f1e",
+    "text": "Ai acces la camera de recompense. Alegeți cu grijă ce recompensă alegeți, deoarece puteți lua doar un articol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:46.413326Z"
+  },
+  "questlog.quest_10.mission_10.state_5": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ai finalizat misiunea!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:52.230881Z"
+  },
+  "questlog.quest_10.mission_2.state_1": {
+    "src_hash": "5bc3655eef8888e19dd9be2b708ff629",
+    "text": "Trebuie să-i găsești pe toți cei 7 paznici și să le dai un raport. Ar trebui să începeți cu Foreign Quarter sau după Trade Quarter și să urmați ordinea căii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:52.231651Z"
+  },
+  "questlog.quest_10.mission_2.state_2": {
+    "src_hash": "38cb6d3e90758a5bfd5f69736361467c",
+    "text": "Ai raportat la unul din cei 7 gardieni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:52.231951Z"
+  },
+  "questlog.quest_10.mission_2.state_3": {
+    "src_hash": "2018efd17565ec9e1c23a13eb3bd3e88",
+    "text": "Ai raportat la 2 din 7 gardieni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:52.232233Z"
+  },
+  "questlog.quest_10.mission_2.state_4": {
+    "src_hash": "454eb54b63e54a46ebf8cc00c95a37e6",
+    "text": "Ai raportat la 3 din 7 gardieni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:59.767045Z"
+  },
+  "questlog.quest_10.mission_2.state_5": {
+    "src_hash": "a09cca3b675899dcd04da16bad8271b1",
+    "text": "Ai raportat la 4 din 7 gardieni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:59.767383Z"
+  },
+  "questlog.quest_10.mission_2.state_6": {
+    "src_hash": "6a4ebae6d5875e626c9fb8590c195a5f",
+    "text": "Ai raportat la 5 din 7 gardieni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:59.767690Z"
+  },
+  "questlog.quest_10.mission_2.state_7": {
+    "src_hash": "09a446a399d845cd713fd928e1fca7eb",
+    "text": "Ai raportat la 6 din 7 gardieni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:59.767981Z"
+  },
+  "questlog.quest_10.mission_2.state_8": {
+    "src_hash": "57274bdf136c3b2ee8b35d70518a5cf9",
+    "text": "Ai raportat la 7 din 7 gardieni! Du-te înapoi la Palimuth și cere misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:56:59.768438Z"
+  },
+  "questlog.quest_10.mission_3.state_1": {
+    "src_hash": "1f7a97487f6700ecc85e5495a14ff655",
+    "text": "Ia notițele în camera Palimuths și citește-le. Vorbește din nou cu Palimuth când ai citit notele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:57:06.989999Z"
+  },
+  "questlog.quest_10.mission_3.state_2": {
+    "src_hash": "4eca682ed9c39d3560a345eed921f9ab",
+    "text": "Vorbește cu Azerus Yalahari din centrul orașului pentru a obține următoarea ta misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:57:06.990739Z"
+  },
+  "questlog.quest_10.mission_3.state_3": {
+    "src_hash": "61082b1b6594f55cb26a778dae44c37c",
+    "text": "Obțineți notițele din spatele Yalahari și citiți-le. Vorbește din nou cu Azerus și cere-i misiune când ai citit notele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:57:06.991456Z"
+  },
+  "questlog.quest_10.mission_3.state_4": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Cere-i lui Palimuth misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:57:06.991756Z"
+  },
+  "questlog.quest_10.mission_3.state_5": {
+    "src_hash": "8daaf77f13a72bbe0a6a03de55f12006",
+    "text": "Mai întâi va trebui să-i ucizi pe cei trei purtători de ciumă și apoi să obții Formulele Alchimisților. După ce ați făcut acest lucru, întoarceți-vă fie la Palimuth (partea bună) fie la Yalahari (Azerus) (partea rea).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:57:10.499240Z"
+  },
+  "questlog.quest_10.mission_4.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Cere-i lui Palimuth misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:57:10.499737Z"
   }
 }

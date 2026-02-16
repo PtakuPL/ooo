@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 11.8,
+  "coverage_pct": 12.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:36:51.118140Z",
+  "checked_at": "2026-02-16T23:58:08.955509Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -275,6 +275,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -309,6 +327,15 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_ok",
@@ -3585,33 +3612,6 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
-    },
-    {
-      "key": "npc.barnabas_dee.say_8",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ahhhhhhhh! ",
-      "pl": "Aaaaaaachhhhhh! ",
-      "lang": "Ahhhhhhhh! "
-    },
-    {
-      "key": "npc.billy.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "HOW RUDE!",
-      "pl": "JAK NIEGRZECZNY, OPRYSKLIWY!",
-      "lang": "HOW RUDE!"
-    },
-    {
-      "key": "npc.blind_orc.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Futchi.",
-      "pl": "Futchi!",
-      "lang": "Futchi."
     }
   ],
   "length_ratio_issues": [

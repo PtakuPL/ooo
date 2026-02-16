@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 35.9,
+  "coverage_pct": 36.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:37:12.250944Z",
-  "issues_total": 204,
+  "checked_at": "2026-02-16T23:58:34.422295Z",
+  "issues_total": 141,
   "issues_by_type": {
     "consistency_in_language": 55,
-    "pl_reference_missing_translation": 128,
+    "pl_reference_missing_translation": 65,
     "length_ratio_crosscheck": 21
   },
   "consistency_issues": [
@@ -911,141 +911,6 @@
       "lang": "! ..."
     },
     {
-      "key": "scripts.rafzane_elevator.sound_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Srrrt!",
-      "pl": "Srrrr!",
-      "lang": "Srrrt!"
-    },
-    {
-      "key": "scripts.rafzane_elevator.sound_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zrrrt!",
-      "pl": "Zrrrr!",
-      "lang": "Zrrrt!"
-    },
-    {
-      "key": "scripts.register_actions.say_16",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*crush*",
-      "pl": "*zmiażdżyć*",
-      "lang": "*crush*"
-    },
-    {
-      "key": "scripts.roasted_dragon_wings.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chomp.",
-      "pl": "Chop.",
-      "lang": "Chomp."
-    },
-    {
-      "key": "scripts.server_info.never",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "never",
-      "pl": "nigdy",
-      "lang": "never"
-    },
-    {
-      "key": "scripts.strawberry_cupcake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
-    },
-    {
-      "key": "scripts.sweet_mangonaise_elixir.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slurp.",
-      "pl": "Siorbać.",
-      "lang": "Slurp."
-    },
-    {
-      "key": "scripts.thais_exhibition.say_11",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hauopa!",
-      "pl": "Haupa!",
-      "lang": "Hauopa!"
-    },
-    {
-      "key": "scripts.thais_exhibition.say_79",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yummy...",
-      "pl": "Pyszny...",
-      "lang": "Yummy..."
-    },
-    {
-      "key": "scripts.tropical_fried_terrorbird.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chomp.",
-      "pl": "Chop.",
-      "lang": "Chomp."
-    },
-    {
-      "key": "scripts.veggie_casserole.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yum.",
-      "pl": "Mniam.",
-      "lang": "Yum."
-    },
-    {
-      "key": "scripts.voting_oramond.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slrrp!",
-      "pl": "Srrrr!",
-      "lang": "Slrrp!"
-    },
-    {
-      "key": "data.otservbr.global.npc.a.dragon.mother.L62.204",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "data.otservbr.global.npc.a.fading.memory.L53.1295",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh...",
-      "pl": "Och...",
-      "lang": "Oh..."
-    },
-    {
-      "key": "data.otservbr.global.npc.al.dee.L166.596",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
       "key": "data.otservbr.global.npc.arkarra.L54.501",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1073,24 +938,6 @@
       "lang": "..."
     },
     {
-      "key": "data.otservbr.global.npc.budrik.L152.723",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.budrik.L153.724",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
       "key": "data.otservbr.global.npc.captain.jack.rat.L59.983",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1098,429 +945,6 @@
       "en": "...",
       "pl": "(...)",
       "lang": "..."
-    },
-    {
-      "key": "data.otservbr.global.npc.dallheim.L216.722",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hm.",
-      "pl": "Hm...",
-      "lang": "Hm."
-    },
-    {
-      "key": "data.otservbr.global.npc.gerimor.L398.367",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You gained",
-      "pl": "Zyskałeś",
-      "lang": "You gained"
-    },
-    {
-      "key": "data.otservbr.global.npc.gnomargery.L275.234",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi!",
-      "pl": "Cześć!",
-      "lang": "Hi!"
-    },
-    {
-      "key": "data.otservbr.global.npc.gnombold.L274.782",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi!",
-      "pl": "Cześć!",
-      "lang": "Hi!"
-    },
-    {
-      "key": "data.otservbr.global.npc.gnomilly.L278.1600",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi!",
-      "pl": "Cześć!",
-      "lang": "Hi!"
-    },
-    {
-      "key": "data.otservbr.global.npc.gnomus.L262.1013",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.gnomus.L275.1014",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.gnomus.L288.1015",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.iwan.L60.1267",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.iwan.L61.1268",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.jondrin.L76.1431",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi!",
-      "pl": "Cześć!",
-      "lang": "Hi!"
-    },
-    {
-      "key": "data.otservbr.global.npc.klom.stonecutter.L185.322",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.klom.stonecutter.L198.323",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.klom.stonecutter.L211.324",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.lardoc.bashsmite.L191.1199",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.lardoc.bashsmite.L204.1200",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.lardoc.bashsmite.L217.1201",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You earned",
-      "pl": "Zdobyłeś",
-      "lang": "You earned"
-    },
-    {
-      "key": "data.otservbr.global.npc.lee.delle.L150.408",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.petros.L87.1232",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye",
-      "pl": "Pa",
-      "lang": "Bye"
-    },
-    {
-      "key": "data.otservbr.global.npc.pompan.L124.270",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hello.",
-      "pl": "Witaj.",
-      "lang": "Hello."
-    },
-    {
-      "key": "data.otservbr.global.npc.puffels.L219.812",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Whatever.",
-      "pl": "Wszystko jedno.",
-      "lang": "Whatever."
-    },
-    {
-      "key": "data.otservbr.global.npc.puffels.L220.813",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Whatever.",
-      "pl": "Wszystko jedno.",
-      "lang": "Whatever."
-    },
-    {
-      "key": "data.otservbr.global.npc.quandons.ghost.L65.550",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi!",
-      "pl": "Cześć!",
-      "lang": "Hi!"
-    },
-    {
-      "key": "data.otservbr.global.npc.raymond.striker.L219.359",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh well.",
-      "pl": "No cóż.",
-      "lang": "Oh well."
-    },
-    {
-      "key": "data.otservbr.global.npc.richard.L202.342",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Have fun!",
-      "pl": "Baw się dobrze!",
-      "lang": "Have fun!"
-    },
-    {
-      "key": "data.otservbr.global.npc.sebastian.L118.1350",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh well.",
-      "pl": "No cóż.",
-      "lang": "Oh well."
-    },
-    {
-      "key": "data.otservbr.global.npc.sebastian.nargor.L70.1111",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh well.",
-      "pl": "No cóż.",
-      "lang": "Oh well."
-    },
-    {
-      "key": "data.otservbr.global.npc.shanar.L64.783",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Do widzenia!",
-      "lang": "Good bye!"
-    },
-    {
-      "key": "data.otservbr.global.npc.shirith.L88.16",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Do widzenia!",
-      "lang": "Good bye!"
-    },
-    {
-      "key": "data.otservbr.global.npc.shirith.L89.17",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Do widzenia!",
-      "lang": "Good bye!"
-    },
-    {
-      "key": "data.otservbr.global.npc.sholley.L83.547",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hi!",
-      "pl": "Cześć!",
-      "lang": "Hi!"
-    },
-    {
-      "key": "data.otservbr.global.npc.tarun.L116.1563",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Greetings!",
-      "pl": "Pozdrowienia!",
-      "lang": "Greetings!"
-    },
-    {
-      "key": "data.otservbr.global.npc.tarun.L117.1564",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Farewell.",
-      "pl": "Żegnaj.",
-      "lang": "Farewell."
-    },
-    {
-      "key": "data.otservbr.global.npc.tarun.L121.1566",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Farewell.",
-      "pl": "Żegnaj.",
-      "lang": "Farewell."
-    },
-    {
-      "key": "data.otservbr.global.npc.telas.L103.1028",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hello!",
-      "pl": "Witaj!",
-      "lang": "Hello!"
-    },
-    {
-      "key": "data.otservbr.global.npc.the.beggar.king.L104.329",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Do widzenia!",
-      "lang": "Good bye!"
-    },
-    {
-      "key": "data.otservbr.global.npc.the.empress.L78.443",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Greetings.",
-      "pl": "Pozdrowienia.",
-      "lang": "Greetings."
-    },
-    {
-      "key": "data.otservbr.global.npc.thorwulf.L225.909",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye.",
-      "pl": "Cześć.",
-      "lang": "Bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.timur.L61.1071",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.timur.L62.1072",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, pa.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.tom.L264.1441",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "D'oh?",
-      "pl": "Eee?",
-      "lang": "D'oh?"
-    },
-    {
-      "key": "data.otservbr.global.npc.torkada.L97.1009",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye.",
-      "pl": "Cześć.",
-      "lang": "Bye."
-    },
-    {
-      "key": "data.otservbr.global.npc.ukea.L57.1102",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Do widzenia!",
-      "lang": "Good bye!"
-    },
-    {
-      "key": "data.otservbr.global.npc.vascalir.L938.1546",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Farewell.",
-      "pl": "Żegnaj.",
-      "lang": "Farewell."
-    },
-    {
-      "key": "data.otservbr.global.npc.vascalir.L939.1547",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Farewell.",
-      "pl": "Żegnaj.",
-      "lang": "Farewell."
-    },
-    {
-      "key": "data.otservbr.global.npc.zerbrus.L210.7",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hm.",
-      "pl": "Hm...",
-      "lang": "Hm."
-    },
-    {
-      "key": "data.otservbr.global.npc.zumtah.L142.1449",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Muhahaha.",
-      "pl": "Muhahaha!",
-      "lang": "Muhahaha."
     },
     {
       "key": "data.otservbr.global.scripts.actions.other.others.quest.system1.L63.2386",
@@ -1766,13 +1190,22 @@
       "lang": "No loot."
     },
     {
-      "key": "spell.blast_ring.name",
+      "key": "spell.lloyd_wave.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "blast ring",
-      "pl": "pierścień wybuchowy",
-      "lang": "blast ring"
+      "en": "lloyd wave",
+      "pl": "fala Lloyda",
+      "lang": "lloyd wave"
+    },
+    {
+      "key": "spell.foam_splash.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "foamsplash",
+      "pl": "piana",
+      "lang": "foamsplash"
     },
     {
       "key": "spell.ice_chain.name",
@@ -2210,9 +1643,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 80,
-    "applied": 64,
-    "skipped": 16,
+    "attempted": 65,
+    "applied": 36,
+    "skipped": 29,
     "errors": 0
   }
 }

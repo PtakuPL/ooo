@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:36:09.899848Z",
+  "checked_at": "2026-02-16T23:57:27.997416Z",
   "issues_total": 405,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -410,6 +410,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -444,6 +462,15 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_cancel",
@@ -3585,33 +3612,6 @@
       "en": "FCHHHHH",
       "pl": "Fchhhh",
       "lang": "FCHHHHH"
-    },
-    {
-      "key": "npc.a_dragon_mother.greet_msg_2",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh...",
-      "pl": "O...",
-      "lang": "Oh..."
     }
   ],
   "length_ratio_issues": [

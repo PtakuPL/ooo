@@ -1,109 +1,46 @@
 {
-  "timestamp": "2026-02-16T23:55:08.475874Z",
+  "timestamp": "2026-02-16T23:57:26.647265Z",
   "checked_entries": 100,
-  "issues_found": 22,
+  "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en": 15,
+    "identical_to_en": 4,
     "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_critical": 69,
-    "suspicious_log_low": 36,
-    "suspicious_log_high": 88,
+    "suspicious_log_critical": 85,
+    "suspicious_log_high": 94,
+    "suspicious_log_low": 14,
     "suspicious_log_medium": 7,
-    "suspicious_rejected_critical": 159,
-    "suspicious_rejected_high": 41
+    "suspicious_rejected_critical": 157,
+    "suspicious_rejected_high": 43
   },
   "issues": [
     {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
+      "en": "Druid",
+      "translated": "Druid"
     },
     {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
+      "key": "otclient_modules.game_shop.tr_3",
+      "lang": "it",
       "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
+      "en": "No",
+      "translated": "No"
     },
     {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
+      "key": "otclient_modules.game_shop.tr_5",
+      "lang": "it",
       "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
+      "en": "No",
+      "translated": "No"
     },
     {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
+      "key": "otclient_modules.game_stash_otui.tr_1",
+      "lang": "it",
       "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
+      "en": "Ok",
+      "translated": "Ok"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -153,20 +90,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "otclient_modules.player.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_12",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
     }
   ],
   "threshold": 10,

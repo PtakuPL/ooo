@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:36:50.870582Z",
+  "checked_at": "2026-02-16T23:58:08.716563Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -653,6 +653,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -687,6 +705,15 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_cancel",
@@ -3585,33 +3612,6 @@
       "en": "Table3",
       "pl": "Stół3",
       "lang": "Table3"
-    },
-    {
-      "key": "web.tpl.account.management.set_10",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Characters",
-      "pl": "Pismo",
-      "lang": "Characters"
-    },
-    {
-      "key": "web.tpl.buttons.base.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sbutton",
-      "pl": "przycisk",
-      "lang": "sbutton"
-    },
-    {
-      "key": "item.100.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "void",
-      "pl": "próżnia",
-      "lang": "void"
     }
   ],
   "length_ratio_issues": [

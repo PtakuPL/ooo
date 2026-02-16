@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:36:50.195536Z",
+  "checked_at": "2026-02-16T23:58:08.046348Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1491,24 +1491,6 @@
       "lang": "Chrrr."
     },
     {
-      "key": "monster.ice_golem.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crrrrk.",
-      "pl": "Crrr.",
-      "lang": "Crrrrk."
-    },
-    {
-      "key": "monster.infected_weeper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
-    },
-    {
       "key": "monster.lava_golem.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1516,15 +1498,6 @@
       "en": "Grrrrunt",
       "pl": "Wrrrr",
       "lang": "Grrrrunt"
-    },
-    {
-      "key": "monster.green_frog.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Green Frog",
-      "pl": "Zielona Żaba",
-      "lang": "Green Frog"
     },
     {
       "key": "monster.green_frog.voice_1",
@@ -4405,6 +4378,33 @@
       "en": "*snort*",
       "pl": "*sNiert*",
       "lang": "*snort*"
+    },
+    {
+      "key": "monster.ghost_wolf.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ghost Wolf",
+      "pl": "Duch Wilk",
+      "lang": "Ghost Wolf"
+    },
+    {
+      "key": "monster.water_buffalo.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnoorr!",
+      "pl": "GNieorr!",
+      "lang": "Gnoorr!"
+    },
+    {
+      "key": "monster.water_buffalo.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<snort>",
+      "pl": "<sniert>",
+      "lang": "<snort>"
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 3,
-    "skipped": 77,
+    "applied": 0,
+    "skipped": 80,
     "errors": 0
   }
 }

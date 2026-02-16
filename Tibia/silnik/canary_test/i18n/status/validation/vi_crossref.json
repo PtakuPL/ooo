@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:37:14.081511Z",
+  "checked_at": "2026-02-16T23:58:36.222737Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -707,6 +707,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -741,6 +759,15 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_cancel",
@@ -3585,33 +3612,6 @@
       "en": "Account",
       "pl": "Twojego",
       "lang": "Account"
-    },
-    {
-      "key": "web.tpl.balance.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Player",
-      "pl": "Gracz",
-      "lang": "Player"
-    },
-    {
-      "key": "web.tpl.balance.th_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Balance",
-      "pl": "Balansować",
-      "lang": "Balance"
-    },
-    {
-      "key": "web.tpl.lastlogin.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Player",
-      "pl": "Gracz",
-      "lang": "Player"
     }
   ],
   "length_ratio_issues": [

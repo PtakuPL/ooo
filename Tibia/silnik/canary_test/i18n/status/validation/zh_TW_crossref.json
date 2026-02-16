@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:37:14.334172Z",
+  "checked_at": "2026-02-16T23:58:36.449028Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2390,6 +2390,15 @@
       "lang": "unknown"
     },
     {
+      "key": "cpp.creature.loot_of",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Loot of {0}: {1}",
+      "pl": "Łup {0}: {1}",
+      "lang": "Loot of {0}: {1}"
+    },
+    {
       "key": "cpp.forge.consumed",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2424,6 +2433,24 @@
       "en": "{0} cores",
       "pl": "{0} rdzeni",
       "lang": "{0} cores"
+    },
+    {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
     },
     {
       "key": "cpp.forge.successful",
@@ -2525,6 +2552,15 @@
       "lang": "Experience Points"
     },
     {
+      "key": "cpp.game.highscore_category_fist",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fist Fighting",
+      "pl": "Walka na pięści",
+      "lang": "Fist Fighting"
+    },
+    {
       "key": "cpp.game.highscore_category_magic_level",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2532,6 +2568,15 @@
       "en": "Magic Level",
       "pl": "Poziom Magii",
       "lang": "Magic Level"
+    },
+    {
+      "key": "cpp.game.highscore_category_sword",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sword Fighting",
+      "pl": "Walka na miecze",
+      "lang": "Sword Fighting"
     },
     {
       "key": "cpp.game.market_coin_transaction_purchased",
@@ -2550,6 +2595,15 @@
       "en": "Sold on Market",
       "pl": "Sprzedano na Rynku",
       "lang": "Sold on Market"
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
     },
     {
       "key": "cpp.game.offline_training_button_cancel",
@@ -3558,60 +3612,6 @@
       "en": "Level {0}",
       "pl": "poziom {0}",
       "lang": "Level {0}"
-    },
-    {
-      "key": "cpp.player.look.party_prefix_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your party has",
-      "pl": "Twój drużyna ma",
-      "lang": "Your party has"
-    },
-    {
-      "key": "cpp.player.look.self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "yourself",
-      "pl": "siebie",
-      "lang": "yourself"
-    },
-    {
-      "key": "cpp.player.look.verb_vip",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} VIP.",
-      "pl": "{0} BARDZO WAŻNA OSOBA.",
-      "lang": "{0} VIP."
-    },
-    {
-      "key": "cpp.player.look.you_are",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are {0}.",
-      "pl": "Jesteś {0}.",
-      "lang": "You are {0}."
-    },
-    {
-      "key": "cpp.player.look.you_are_loyalty",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are {0} {1}.",
-      "pl": "Jesteś {0} {1}.",
-      "lang": "You are {0} {1}."
-    },
-    {
-      "key": "cpp.player.look.you_are_vip",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are VIP.",
-      "pl": "Jesteś BARDZO WAŻNA OSOBA.",
-      "lang": "You are VIP."
     }
   ],
   "length_ratio_issues": [

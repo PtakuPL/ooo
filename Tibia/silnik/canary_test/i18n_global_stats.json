@@ -1,8 +1,8 @@
 {
-  "total_cycles": 60,
+  "total_cycles": 61,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-17T00:55:08.613261",
+  "category": "it",
+  "last_update": "2026-02-17T00:58:36.652397",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,57 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "achievements.json",
-    "keys_to_translate": 12,
-    "guard_fail": 5,
+    "language": "it",
+    "json_file": "otclient_modules.json",
+    "keys_to_translate": 1937,
+    "guard_fail": 12,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 7,
-    "recent_examples": [
-      {
-        "key": "achievement.9.name",
-        "en": "Lord Protector",
-        "translated": "Se\u00f1or protector",
-        "source": "google_translate"
-      },
-      {
-        "key": "achievement.50.name",
-        "en": "Razing!",
-        "translated": "\u00a1Arrasando!",
-        "source": "google_translate"
-      },
-      {
-        "key": "achievement.57.name",
-        "en": "Annihilator",
-        "translated": "Aniquilador",
-        "source": "google_translate"
-      },
-      {
-        "key": "achievement.65.name",
-        "en": "Rockstar",
-        "translated": "Estrella de rock",
-        "source": "google_translate"
-      },
-      {
-        "key": "achievement.85.name",
-        "en": "Steampunked",
-        "translated": "Steampunk",
-        "source": "google_translate"
-      },
-      {
-        "key": "achievement.237.description",
-        "en": "You've vanquished the Noxious Spawn and his serpentine heart.",
-        "translated": "Has vencido al Engendro Nocivo y su coraz\u00f3n serpentino.",
-        "source": "google_translate"
-      },
-      {
-        "key": "achievement.277.name",
-        "en": "Si, Ariki!",
-        "translated": "\u00a1S\u00ed, Ariki!",
-        "source": "google_translate"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

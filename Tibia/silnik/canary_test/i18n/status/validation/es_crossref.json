@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 74.7,
+  "coverage_pct": 74.8,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:36:28.896765Z",
+  "checked_at": "2026-02-16T23:57:47.966681Z",
   "issues_total": 491,
   "issues_by_type": {
     "consistency_in_language": 67,
@@ -3174,7 +3174,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Total: ",
-      "pl": "Całkowity:",
+      "pl": "Całkowity: ",
       "lang": "Total: "
     },
     {

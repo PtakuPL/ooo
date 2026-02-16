@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T23:53:44.920563Z",
+  "timestamp": "2026-02-16T23:57:17.628784Z",
   "priority_langs": [
     "es",
     "pl",
@@ -76,7 +76,7 @@
     "it": 499,
     "nl": 691,
     "pt": 620,
-    "ro": 520,
+    "ro": 523,
     "ru": 139,
     "sk": 663,
     "tr": 542,
@@ -886,7 +886,7 @@
     {
       "lang": "ro",
       "json_file": "questlog.json",
-      "identical_to_en": 29,
+      "identical_to_en": 32,
       "domain_priority": 9
     },
     {

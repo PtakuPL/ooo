@@ -1,129 +1,143 @@
 {
-  "timestamp": "2026-02-16T23:52:15.811355Z",
+  "timestamp": "2026-02-16T23:53:52.907780Z",
   "checked_entries": 100,
-  "issues_found": 39,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en": 32,
-    "identical_to_en_exempt": 19,
+    "identical_to_en": 18,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_critical": 40,
-    "suspicious_log_high": 110,
-    "suspicious_log_low": 50,
+    "suspicious_log_high": 88,
+    "suspicious_log_low": 52,
+    "suspicious_log_critical": 60,
     "suspicious_rejected_critical": 159,
     "suspicious_rejected_high": 41
   },
   "issues": [
     {
-      "key": "raid.lizards.name",
-      "lang": "ro",
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Lizards",
-      "translated": "Lizards"
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
     },
     {
-      "key": "raid.cyclops.name",
-      "lang": "ro",
+      "key": "monster.draptor.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
+      "en": "Draptor",
+      "translated": "Draptor"
     },
     {
-      "key": "raid.wild_horses.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.sheng.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
-    },
-    {
-      "key": "raid.munster.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "ro",
+      "key": "monster.chayenne.name",
+      "lang": "sv",
       "type": "identical_to_en",
       "en": "Chayenne",
       "translated": "Chayenne"
     },
     {
-      "key": "raid.omrafir.name",
-      "lang": "ro",
+      "key": "monster.chayenne.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
+      "en": "Chayenne",
+      "translated": "Chayenne"
     },
     {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "ro",
+      "key": "monster.orshabaal.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
     },
     {
-      "key": "raid.yeti.name",
-      "lang": "ro",
+      "key": "monster.orshabaal.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
     },
     {
-      "key": "raid.gargoyle.name",
-      "lang": "ro",
+      "key": "monster.white_pale.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
+      "en": "White Pale",
+      "translated": "White Pale"
     },
     {
-      "key": "raid.nomad.name",
-      "lang": "ro",
+      "key": "monster.white_pale.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
+      "en": "White Pale",
+      "translated": "White Pale"
     },
     {
-      "key": "raid.cobra.name",
-      "lang": "ro",
+      "key": "monster.the_welter.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
+      "en": "The Welter",
+      "translated": "The Welter"
     },
     {
-      "key": "raid.bone_beast.name",
-      "lang": "ro",
+      "key": "monster.the_welter.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
+      "en": "The Welter",
+      "translated": "The Welter"
     },
     {
-      "key": "raid.terramite.name",
-      "lang": "ro",
+      "key": "monster.morgaroth.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.furyosa.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.furyosa.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.fernfang.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.fernfang.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -173,118 +187,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "raid.lizards.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Lizards",
-      "translated": "Lizards"
-    },
-    {
-      "key": "raid.cyclops.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.sheng.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
-    },
-    {
-      "key": "raid.munster.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "raid.nomad.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
     }
   ],
   "threshold": 10,

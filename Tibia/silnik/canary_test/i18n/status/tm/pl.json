@@ -2305,11 +2305,11 @@
   },
   "cpp.game.highscore_category_fist": {
     "src_hash": "e524eaf6892bb930079671668177894d",
-    "text": "pięść I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka na pięści",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708951Z"
+    "updated_at": "2026-02-16T23:53:18.414866Z"
   },
   "cpp.game.highscore_category_magic_level": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
@@ -2321,11 +2321,11 @@
   },
   "cpp.game.highscore_category_sword": {
     "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
-    "text": "miecz I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka na miecze",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708972Z"
+    "updated_at": "2026-02-16T23:53:18.415076Z"
   },
   "cpp.game.offline_training_button_cancel": {
     "src_hash": "ea4788705e6873b424c65e91c2846b19",
@@ -97654,5 +97654,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:48:16.459364Z"
+  },
+  "cpp.cancel.cannot_stow_containers": {
+    "src_hash": "23ec243ea08a453aad40ff7b90c9deff",
+    "text": "Nie można sztauować kontenerów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:47.778952Z"
+  },
+  "cpp.cancel.wrap_on_floor": {
+    "src_hash": "b396d0f41be608bf66a3ab0523276f65",
+    "text": "Można owijać/rozpakowywać wyłącznie na podłodze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:47.779319Z"
+  },
+  "cpp.combat.mana_target_none": {
+    "src_hash": "20ef4502ade216cf1cafe56c021ecfce",
+    "text": "Tracisz {0} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:47.779572Z"
+  },
+  "cpp.combat.mana_target_self": {
+    "src_hash": "58b26d0a93ef4cb5267cf5bbc7213d82",
+    "text": "Tracisz {0} many w wyniku własnego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:47.779927Z"
+  },
+  "cpp.combat.mana_target_self_crit": {
+    "src_hash": "74dfafacc1bd8149fce3cc7fb59ead69",
+    "text": "Tracisz {0} many z powodu własnego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:47.780309Z"
+  },
+  "cpp.combat.restore_attacker": {
+    "src_hash": "83f116588f2a7307316ecad99385c796",
+    "text": "Przywróciłeś {0} za {1} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:53.876472Z"
+  },
+  "cpp.combat.restore_spectator_none": {
+    "src_hash": "09a0ab81e660b71f4f4cc9b9d7812d0a",
+    "text": "{0} został przywrócony za {1} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:53.876816Z"
+  },
+  "cpp.combat.restore_spectator_other": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} przywrócił {1} za {2} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:53.877133Z"
+  },
+  "cpp.combat.restore_spectator_self": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} przywrócił {1} za {2} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:53.877445Z"
+  },
+  "cpp.combat.restore_target_by": {
+    "src_hash": "bef65601919ccbf594ae459461288ccf",
+    "text": "Zostałeś przywrócony przez {0} za {1} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:53.877790Z"
+  },
+  "cpp.combat.restore_target_none": {
+    "src_hash": "ec620aeb2ffd23840995fe5ca7cb5ad5",
+    "text": "Zostałeś przywrócony za {0} many.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:59.041006Z"
+  },
+  "cpp.creature.loot_of": {
+    "src_hash": "4a30228767b414cb6f86833679a177e0",
+    "text": "Łup {0}: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:59.041267Z"
+  },
+  "cpp.forge.dust_one": {
+    "src_hash": "2d959a6724345ac9ff914ed532ebdc82",
+    "text": "{0} kurz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:59.041459Z"
+  },
+  "cpp.forge.dust_other": {
+    "src_hash": "2d959a6724345ac9ff914ed532ebdc82",
+    "text": "{0} kurz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:59.041633Z"
+  },
+  "cpp.forge.dust_to_slivers": {
+    "src_hash": "37b26b376eb1842f2fc33000e117de6a",
+    "text": "Przekształcono pył {0} w kawałki {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:52:59.042002Z"
+  },
+  "cpp.forge.increase_dust_limit": {
+    "src_hash": "f8c3afbe06a4bb640af404f139849ccc",
+    "text": "Zużyto {0} pyłu, aby zwiększyć limit pyłu do {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:04.138475Z"
+  },
+  "cpp.forge.slivers_to_cores": {
+    "src_hash": "6c0edfce562f088b10405b6b95542d85",
+    "text": "Przekonwertowano fragmenty {0} na {1} egzaltowany rdzeń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:04.138899Z"
+  },
+  "cpp.game.and_some_items": {
+    "src_hash": "37ad1655a715e5355860d0b53e9c49a2",
+    "text": "i niektóre z upuszczonych przedmiotów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:04.139219Z"
+  },
+  "cpp.game.but_no_gold": {
+    "src_hash": "bd70925b2625c01d55b78ebbc00c66c4",
+    "text": "ale żadnego z upuszczonego złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:11.192908Z"
+  },
+  "cpp.game.but_no_items": {
+    "src_hash": "cde3edb57eb1c534f0cf05ee7a1730cd",
+    "text": "ale żaden z upuszczonych przedmiotów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:11.193241Z"
+  },
+  "cpp.game.but_only_some_gold": {
+    "src_hash": "fa1f6ce8d1c506e96c7a133e17ceac50",
+    "text": ", ale zrabowałeś tylko {0} z upuszczonego złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:11.193605Z"
+  },
+  "cpp.game.but_only_some_items": {
+    "src_hash": "bebb93bdfe25baea31948c1facbc00a6",
+    "text": ", ale zrabowałeś tylko część przedmiotów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:11.193944Z"
+  },
+  "cpp.game.collect_limit_reached": {
+    "src_hash": "9b45ec74031d2ed46a41b839e352ac25",
+    "text": "Jednorazowo możesz zebrać tylko {0} przedmiotów. Pobrano {1} z {2} obiektów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:11.194490Z"
+  },
+  "cpp.game.could_not_loot": {
+    "src_hash": "026eed9cd7a61cbf60191322a6ad49e2",
+    "text": "Nie można było kraść ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:18.413875Z"
+  },
+  "cpp.game.hazard_dodged_by": {
+    "src_hash": "762723a7fd28b539e62921a74b7d4952",
+    "text": "{0} uniknął ataku {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:18.414319Z"
+  },
+  "cpp.game.hazard_dodged_your": {
+    "src_hash": "d05b3496968f00b075e2ed2ff4515c17",
+    "text": "{0} uniknął twojego ataku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:18.414644Z"
+  },
+  "cpp.game.imbuement_error_reopen": {
+    "src_hash": "d154af29450bb6ac121cdec71487bcae",
+    "text": "Wystąpił błąd. Otwórz ponownie okno nasycania. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:25.486282Z"
+  },
+  "cpp.game.loot_container_for_full": {
+    "src_hash": "11d8ef7097a900be683d7b433e03a433",
+    "text": "Uwaga! Pojemnik na {0} jest pełny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:25.486655Z"
+  },
+  "cpp.game.looted_all_dropped_items": {
+    "src_hash": "cbf741bd4d2dc5d828909cbbb17b7063",
+    "text": "Zrabowałeś wszystkie upuszczone przedmioty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:25.486982Z"
+  },
+  "cpp.game.looted_all_items": {
+    "src_hash": "83b5adef63c2db227f938ade6c9e040f",
+    "text": "Zrabowałeś wszystkie przedmioty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:25.487249Z"
+  },
+  "cpp.game.looted_complete_gold": {
+    "src_hash": "5e244972db6ec46d67af9ab020224dd1",
+    "text": "Zrabowałeś całe {0} złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:25.487552Z"
+  },
+  "cpp.game.looted_gold": {
+    "src_hash": "e0fe3ba9c88783b94e3c70c8956874e1",
+    "text": "Zrabowałeś {0} złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:32.073918Z"
+  },
+  "cpp.game.looted_no_gold": {
+    "src_hash": "a2fd6784aa3f15d7771eb8d6277dbf2f",
+    "text": "Nie zrabowałeś żadnego z upuszczonego złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:32.074381Z"
+  },
+  "cpp.game.looted_no_items": {
+    "src_hash": "32bd0616644fc4c41a7ff4a0a5fd555a",
+    "text": "Nie zrabowałeś żadnego z upuszczonych przedmiotów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:32.074730Z"
+  },
+  "cpp.game.looted_one_item": {
+    "src_hash": "bd52c95156499d90dafefefb379fe35f",
+    "text": "Zrabowałeś 1 przedmiot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:32.074981Z"
+  },
+  "cpp.game.looted_some_items": {
+    "src_hash": "2989924dc60bced7b41b890a5f38b547",
+    "text": "Zrabowałeś część upuszczonych przedmiotów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:32.075305Z"
+  },
+  "cpp.game.market_item_not_correct": {
+    "src_hash": "0a18be2b77678da8a04d862ec4f32e05",
+    "text": "Przedmiot, który próbowałeś sprzedać, jest nieprawidłowy. Sprawdź element ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:37.357350Z"
+  },
+  "cpp.game.no_loot": {
+    "src_hash": "ce0c51050a0318afb13b8a8ff9d02d8a",
+    "text": "Żadnych łupów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:37.357569Z"
+  },
+  "cpp.game.objects_picked_up": {
+    "src_hash": "b30883c9272b9a85df8ccb4815aceecc",
+    "text": "Pobrano {0} z {1} obiektów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:37.357885Z"
+  },
+  "cpp.game.offline_training_choice_magic": {
+    "src_hash": "a50f50c0c6ef192a9e4bac1002fe097a",
+    "text": "Poziom magii i ekranowanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:37.358214Z"
+  },
+  "cpp.game.offline_training_choice_sword": {
+    "src_hash": "fa2acc7b985499b826ccf49a21ebdf1c",
+    "text": "Walka na miecze i tarcza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:53:37.358491Z"
   }
 }

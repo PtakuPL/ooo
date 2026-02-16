@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-16T23:32:57.895695Z",
-  "cycle_counter": 943,
-  "last_target_key": "ru:npc.json",
-  "last_pending_total": 13075,
+  "timestamp": "2026-02-16T23:33:29.516462Z",
+  "cycle_counter": 946,
+  "last_target_key": "ru:items.json",
+  "last_pending_total": 6773,
   "last_tier": 2,
-  "last_cat_priority": 0,
+  "last_cat_priority": 1,
   "candidates_count": 196,
   "active_candidates_count": 187,
   "skipped_backoff": 8,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 43,
+  "cache_cycle": 44,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -360,10 +360,10 @@
     ],
     "lang_completion": {
       "pl": 43.88,
-      "es": 74.03,
-      "ru": 35.45,
+      "es": 74.06,
+      "ru": 35.48,
       "ro": 19.68,
-      "it": 10.69,
+      "it": 10.76,
       "sr": 9.89,
       "sv": 7.74
     }

@@ -26582,5 +26582,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:32:54.908232Z"
+  },
+  "item.4003.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.941767Z"
+  },
+  "item.4004.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.942063Z"
+  },
+  "item.4007.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.942415Z"
+  },
+  "item.4008.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.942800Z"
+  },
+  "item.4009.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.943053Z"
+  },
+  "item.4025.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.944275Z"
+  },
+  "item.4026.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.944537Z"
+  },
+  "item.40262.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.944890Z"
+  },
+  "item.40263.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.945113Z"
+  },
+  "item.4027.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.945371Z"
+  },
+  "item.40279.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.945592Z"
+  },
+  "item.40281.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.945823Z"
+  },
+  "item.4029.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.946221Z"
+  },
+  "item.40296.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.946450Z"
+  },
+  "item.40298.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.946668Z"
+  },
+  "item.4030.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.946976Z"
+  },
+  "item.40302.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.947318Z"
+  },
+  "item.4031.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.947574Z"
+  },
+  "item.4032.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.947864Z"
+  },
+  "item.4037.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "oggetto sconosciuto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.948407Z"
+  },
+  "item.40428.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.948992Z"
+  },
+  "item.40430.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.949372Z"
+  },
+  "item.40432.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.949595Z"
+  },
+  "item.40434.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.949829Z"
+  },
+  "item.405.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "cassa di armi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.950689Z"
+  },
+  "item.4062.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.953490Z"
+  },
+  "item.4063.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:33:26.953754Z"
   }
 }

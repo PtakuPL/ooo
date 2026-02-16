@@ -139477,7 +139477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T21:36:28.277768Z"
+    "updated_at": "2026-02-16T19:59:37.803111Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -143877,7 +143877,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T21:36:30.972477Z"
+    "updated_at": "2026-02-16T19:59:37.807030Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -171141,7 +171141,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T21:36:35.283072Z"
+    "updated_at": "2026-02-16T19:59:37.810032Z"
   },
   "spell.gaz'haragoth_summon.name": {
     "src_hash": "487a1ea5771dde17a071dd35c99bf596",
@@ -171149,7 +171149,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T21:36:35.283727Z"
+    "updated_at": "2026-02-16T19:59:37.811809Z"
   },
   "client.tasks.text1": {
     "src_hash": "1728c9ab0153ff21b281886f41288cae",
@@ -177902,5 +177902,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T18:39:14.834036Z"
+  },
+  "spell.spawn_of_the_welter_heal2.name": {
+    "src_hash": "ff0014097463582a82b1da1180176b26",
+    "text": "Engendro de The Welter Heal2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:37.799744Z"
+  },
+  "spell.zulazza_the_corruptor_skill_reducer.name": {
+    "src_hash": "546ae835b39cd2bf56630b8ebe779559",
+    "text": "zulazza el corruptor reductor de habilidades",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:37.800502Z"
+  },
+  "spell.the_pale_count_manadrain.name": {
+    "src_hash": "7f991595682c6f8c3de5284694b224d5",
+    "text": "The Pale Count Drenaje de maná",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:37.801364Z"
+  },
+  "spell.zulazza_the_corruptor_paralyze.name": {
+    "src_hash": "308dafdd1960d7ba76c959c9cb7460f3",
+    "text": "zulazza el corruptor paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:37.806564Z"
   }
 }

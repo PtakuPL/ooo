@@ -3945,11 +3945,11 @@
   },
   "quests.bigfoot_burden.chest_empty": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.207177Z"
+    "updated_at": "2026-02-16T20:00:15.760528Z"
   },
   "quests.movements_arena_enter.say_1": {
     "src_hash": "3bb3470755c465f042163233b672a4fb",
@@ -4217,11 +4217,11 @@
   },
   "quests.actions_corpse.say_1": {
     "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
-    "text": "Hai acquisito",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Hai acquisito ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T04:05:44.479158Z"
+    "updated_at": "2026-02-16T19:59:50.117694Z"
   },
   "quests.actions_coruja.msg_1": {
     "src_hash": "140208bb60fc3f70eabd068701030425",
@@ -4305,11 +4305,11 @@
   },
   "quests.actions_levers.say_1": {
     "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
-    "text": "Hai capovolto il",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Hai capovolto il ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T04:05:55.085026Z"
+    "updated_at": "2026-02-16T19:59:50.117931Z"
   },
   "quests.actions_mono_detector_strange_probing_device.msg_1": {
     "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
@@ -4329,11 +4329,11 @@
   },
   "quests.actions_mono_detector_strange_probing_device.msg_3": {
     "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
-    "text": "Il dispositivo legge: 'abnormal glooth structure detected, possible probing location'",
+    "text": "Sul dispositivo si legge: \"Rilevata struttura oscurante anomala, possibile posizione del sondaggio\"",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:05:55.086737Z"
+    "updated_at": "2026-02-16T20:00:15.759279Z"
   },
   "quests.actions_mono_detector_strange_probing_device.msg_4": {
     "src_hash": "7302b053c0f22e53182c9674c7530e39",
@@ -7817,11 +7817,11 @@
   },
   "quests.creaturescripts_overlord_kill.say_1": {
     "src_hash": "46a2135b118f06e9400ca190a247f5fc",
-    "text": "Hai ucciso",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Hai ucciso ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
     "verified": false,
-    "updated_at": "2026-02-14T11:45:29.392964Z"
+    "updated_at": "2026-02-16T19:59:50.118540Z"
   },
   "quests.creaturescripts_pale_worm_death.msg_1": {
     "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
@@ -152750,5 +152750,3197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T19:20:19.379401Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Hai trovato ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.118011Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Hai trovato ",
+    "source": "forced_quest_fragment",
+    "confidence": 0.995,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.118044Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.139137Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.193173Z"
+  },
+  "quests.mission12_into_fortress.say_1": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.267827Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Combattimento!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.268558Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.286442Z"
+  },
+  "quests.threatened_dreams.you_are_not_on_that_mission": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T19:59:50.288089Z"
+  },
+  "quests.actions_boxramp.msg_1": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Clonk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.756238Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.756850Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.757430Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.757980Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.758635Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Tutti i giocatori devono essere alla pari ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.759791Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Devi aspettare ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.760043Z"
+  },
+  "quests.bigfoot_burden.gasp": {
+    "src_hash": "4758f628434ece29bf84223f42a476a1",
+    "text": "<sussulto>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.760724Z"
+  },
+  "quests.demon_oak.master_crush": {
+    "src_hash": "f45c9ec1422dccdef3363c54309770b9",
+    "text": "COME E' POSSIBILE?!? IL MIO PADRE TI SCHIACCIARÀ!! AHRRGGG!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.763044Z"
+  },
+  "quests.demon_oak.sound_1": {
+    "src_hash": "64858b07745250c936399f2141b9ae80",
+    "text": "LE MIE RADICI SONO AFFILATE COME UNA FALCE! LO SENTI?!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.763591Z"
+  },
+  "quests.demon_oak.sound_2": {
+    "src_hash": "21b22bf438167c41b9754424d93ebe2e",
+    "text": "MALEDIZIONE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.763829Z"
+  },
+  "quests.demon_oak.sound_3": {
+    "src_hash": "ad954e578749aec118f170e9cc6cddb1",
+    "text": "RISORGERE, MINIONS, RISORGERE DAI MORTI!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.764731Z"
+  },
+  "quests.demon_oak.sound_4": {
+    "src_hash": "73a3aa812824cdc1b55c2f3eed86217c",
+    "text": "AHHHH! IL TUO SANGUE MI RENDE FORTE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.765665Z"
+  },
+  "quests.demon_oak.sound_5": {
+    "src_hash": "32c5ccaa47af898221a429cc74e76312",
+    "text": "PRENDI LE OSSA, HELLHOUND! PRENDILI!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.766635Z"
+  },
+  "quests.demon_oak.sound_6": {
+    "src_hash": "215518027445ceeb220fa31ef6203b35",
+    "text": "ARRIVATE DOVE POSSO RAGGIUNGERVI!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.767113Z"
+  },
+  "quests.demon_oak.sound_7": {
+    "src_hash": "f4bacd0a57b22b2bc63c2ba67bd432ac",
+    "text": "IL DOLORE ETERNO VI ASPETTA! BELLA RICOMPENSA, EH?!?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.767620Z"
+  },
+  "quests.demon_oak.sound_8": {
+    "src_hash": "00f928cfbade0ee4a515a461c14fbd4a",
+    "text": "PAGERETE PER OGNI COLPO CON DECENNI DI TORTURA!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:15.768166Z"
+  },
+  "quests.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Liberami e sarai ricompensato grandemente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.427085Z"
+  },
+  "quests.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Cos'è questo? Gambe del demone che giacciono qui? Qualcuno potrebbe averli persi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.427755Z"
+  },
+  "quests.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Sono in trappola, vieni qui e liberami velocemente!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.428283Z"
+  },
+  "quests.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Posso riportare in vita la tua amata, liberami!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.428914Z"
+  },
+  "quests.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Che bella armatura dorata e lucente. Vieni da me e potrai averlo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.429573Z"
+  },
+  "quests.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Trova un modo per entrare qui e liberami! Per favore, sbrigati!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.430152Z"
+  },
+  "quests.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Puoi avere il mio set demoniaco, se mi aiuti a uscire di qui!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.430957Z"
+  },
+  "quests.desert_dungeon.missing_sacrifice": {
+    "src_hash": "cf6fd7640294feedf4b956372a8c65f3",
+    "text": "Manca {0} {1} sacrificio sull'altare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.431512Z"
+  },
+  "quests.desert_dungeon.need_all_vocations": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Hai bisogno di un giocatore per ogni vocazione per questa missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.432097Z"
+  },
+  "quests.desert_dungeon.need_each_vocation": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Hai bisogno di un giocatore per ogni vocazione per questa missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.432648Z"
+  },
+  "quests.dream_courts.barrel_word": {
+    "src_hash": "ab1981f1b79d1b8ff80c419c6ce3d434",
+    "text": "All'interno del coperchio di questo barile c'è scritta una parola: 'O'kteth'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.433731Z"
+  },
+  "quests.dream_courts.bed_notes": {
+    "src_hash": "d23a6ac34261a80639136e4e3d78e47b",
+    "text": "Questa estremità del letto ha una pila di appunti nascosti sotto. C'è solo una parola su tutti: 'T'sough'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.434966Z"
+  },
+  "quests.dream_courts.book_kmuuh": {
+    "src_hash": "18d37c53b39eb7f66f14c307f08d2c0e",
+    "text": "I canti di questo libro spesso contengono la parola 'K'muuh'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.435970Z"
+  },
+  "quests.dream_courts.book_nogalu": {
+    "src_hash": "1714f5db5c755452491181ec675d63ac",
+    "text": "I canti di questo libro spesso contengono la parola 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.436998Z"
+  },
+  "quests.dream_courts.book_okteth": {
+    "src_hash": "3a67a1d27c430fa5ba1fd9edaffc15d7",
+    "text": "I canti in questo libro spesso contengono la parola 'O'kteth.'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.438002Z"
+  },
+  "quests.dream_courts.book_worthy": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Tutti i canti sono stati cantati nel giusto ordine, sei ritenuto degno. Sei trasportato via...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.438666Z"
+  },
+  "quests.dream_courts.got_blue_crystal": {
+    "src_hash": "be404605aece8334d7dec85049557214",
+    "text": "Hai un cristallo blu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.439156Z"
+  },
+  "quests.dream_courts.got_green_crystal": {
+    "src_hash": "95d63fd876e5455d0288a8fe8bbad93f",
+    "text": "Hai ottenuto un cristallo verde!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.439615Z"
+  },
+  "quests.dream_courts.got_purple_crystal": {
+    "src_hash": "15ef9900355aaed476317b32066987c5",
+    "text": "Hai ottenuto un cristallo viola!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:34.440108Z"
+  },
+  "quests.dream_courts.nexus_blocked": {
+    "src_hash": "c2d3b0717c0f57ebab89bc4984f3c53c",
+    "text": "Collega tutti e tre i gateway per ripristinare il circolo di energia che sostiene questo nesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.295344Z"
+  },
+  "quests.dream_courts.rubble_path": {
+    "src_hash": "887ce17f9b9499fbe9a3430282790e46",
+    "text": "Attraversi le macerie con facilità, ma una parte maggiore cade dietro di te, bloccando essenzialmente il tuo cammino ancora una volta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.296161Z"
+  },
+  "quests.dream_courts.sarcophagus_say_1": {
+    "src_hash": "861b66b6dbd2ef3cb4d76cc8b1455006",
+    "text": "Hai un ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.296377Z"
+  },
+  "quests.dream_courts.skull_minotaur": {
+    "src_hash": "0f19967c78d4c4bf877ae903c07b710f",
+    "text": "Metti il ​​teschio del minotauro nella bara all'interno dello scheletro del minotauro. Una delle serrature della porta scatta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.297184Z"
+  },
+  "quests.dream_courts.skull_orc": {
+    "src_hash": "bbc9ebaea7038e7842785e65ec127259",
+    "text": "Metti il ​​teschio dell'orco nella bara all'interno dello scheletro dell'orco. Una delle serrature della porta scatta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.297960Z"
+  },
+  "quests.dream_courts.statue_word": {
+    "src_hash": "e69449650a233f36e687a06c05ff3580",
+    "text": "Questa statua ha una parola scritta sulla mano: 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.299020Z"
+  },
+  "quests.dream_courts.summer_ward": {
+    "src_hash": "3c3de5f54674528ed8325cebed7655d8",
+    "text": "Carichi la pietra dell'interdizione estiva e il cristallo solare inciso brilla di una luce dorata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.299653Z"
+  },
+  "quests.dream_courts.winter_ward": {
+    "src_hash": "6d2a5aa45e9e8b2ef75fcee7816d0955",
+    "text": "Carichi la pietra dell'interdizione invernale e il cristallo di ghiaccio inciso brilla di una luce blu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.300317Z"
+  },
+  "quests.dreamers_challenge.clock_word_1": {
+    "src_hash": "c223d5e93e61322ac1aceefd8ef3ff0b",
+    "text": "STAI SOGNANDO!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.300562Z"
+  },
+  "quests.dreamers_challenge.clock_word_2": {
+    "src_hash": "6d62b16ea1c4e60517f9383de308543d",
+    "text": "SVEGLIATI!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.300753Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_obtained_this_addon": {
+    "src_hash": "de6fa97474d57de84714ed5405bda75d",
+    "text": "Hai già ottenuto questo componente aggiuntivo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.301352Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_used_this_lever": {
+    "src_hash": "1be82c3c9ff13fda4cdb4bc6e5e5cd4c",
+    "text": "Hai già utilizzato questa leva!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.301892Z"
+  },
+  "quests.dreamers_challenge_quest.you_need_to_offer_a_small": {
+    "src_hash": "31fec8dd082b43587b7f8586b6e78b93",
+    "text": "Devi offrire un piccolo diamante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.302415Z"
+  },
+  "quests.dreamers_challenge_quest.you_still_dont_have_permission": {
+    "src_hash": "94c3a4f539049247659ee395664bc4e6",
+    "text": "Non hai ancora il permesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.302934Z"
+  },
+  "quests.fathers_burden.acquired": {
+    "src_hash": "fd3b0b305643be834fe2cba68666263c",
+    "text": "Hai acquisito {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.303196Z"
+  },
+  "quests.fathers_burden.corpse_say_1": {
+    "src_hash": "2afb5076cad1b4a7685de513c392b177",
+    "text": "Scala di Glitterscale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.303452Z"
+  },
+  "quests.fathers_burden.corpse_say_2": {
+    "src_hash": "60836c2f7f62f4b73a8624d6d91f6176",
+    "text": "Il tendine di Heoni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.304290Z"
+  },
+  "quests.ferumbras_ascension.sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Siamo spiacenti, non è possibile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.304766Z"
+  },
+  "quests.ferumbras_ascension.you_cannot_use_this_lever_again": {
+    "src_hash": "e9cc8cc8a90ff0e0d86a9099d4d547e1",
+    "text": "Non è possibile utilizzare nuovamente questa leva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.305327Z"
+  },
+  "quests.ferumbras_ascension.you_have_found_a_bag_but": {
+    "src_hash": "4b9980d4ca695198be91b754c6456724",
+    "text": "Hai trovato una borsa, ma non hai spazio per prenderla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:00:52.306053Z"
+  },
+  "quests.first_dragon.circle_trees": {
+    "src_hash": "21fde76d216da6a6580a184dc6654f83",
+    "text": "Entri nel cerchio di alberi e fiori. Visitando questo luogo sacro sarai intriso del potere della natura e delle piante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.526811Z"
+  },
+  "quests.first_dragon.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Hai trovato {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.527280Z"
+  },
+  "quests.first_dragon.oasis": {
+    "src_hash": "fdc609328c42192493089239ebaeef98",
+    "text": "Entri nella bellissima oasi. Visitando questo luogo sacro sarai infuso dal potere dell'acqua che porta la vita nel deserto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.527979Z"
+  },
+  "quests.first_dragon.suntower": {
+    "src_hash": "8ddfbb42d82b5fb668796bec61969f55",
+    "text": "Sei entrato nella torre solare di Ab'dendriel. Visitando questo luogo sacro sarai infuso dal potere del sole vivificante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.529074Z"
+  },
+  "quests.forgotten_knowledge.diamond_entities": {
+    "src_hash": "03a761850a7fd9fcd58c8fa2724f8dc0",
+    "text": "5 entità diamante stanno consumando troppa energia grezza perché la camera cosmica possa risvegliarsi, verrà messa di nuovo a riposo tra 10 minuti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.529878Z"
+  },
+  "quests.forgotten_knowledge.golden_entities": {
+    "src_hash": "283b3f9291af327714771b625dd51c2b",
+    "text": "5 entità dorate stanno consumando troppa energia grezza perché la camera cosmica possa risvegliarsi, verrà messa di nuovo a riposo tra 10 minuti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.530772Z"
+  },
+  "quests.forgotten_knowledge.lantern_glow": {
+    "src_hash": "139f7a4e3b342775d96589e84d10d51b",
+    "text": "Quando inizi a lucidare la lanterna, questa inizia a brillare di una luce ultraterrena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.531382Z"
+  },
+  "quests.forgotten_knowledge.lantern_has_key": {
+    "src_hash": "6feb464965de17dfa29795637465ef84",
+    "text": "Alla luce della lanterna d'argento fantasma scopri una porta altrimenti invisibile. Poiché hai la chiave adatta, puoi passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.532135Z"
+  },
+  "quests.forgotten_knowledge.lantern_no_key": {
+    "src_hash": "3ff192e8c3b476ec20fcd8afd0a221b5",
+    "text": "Alla luce della lanterna d'argento fantasma scopri una porta altrimenti invisibile. Ma ti manca la chiave per aprirlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.532808Z"
+  },
+  "quests.forgotten_knowledge.tree_destruction": {
+    "src_hash": "205b8fa5e3fee791d97de1989d846b4b",
+    "text": "La distruzione dell'albero scatena gli {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.533361Z"
+  },
+  "quests.globalevents_grimvale_feroxa.broadcast_1": {
+    "src_hash": "bdc7c1a2cc03b08531c0d717935d084e",
+    "text": "Grimvale annega nelle creature mannare quando la luna piena raggiunge il suo apice e il male antico ritorna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.534130Z"
+  },
+  "quests.grave_danger.defiled": {
+    "src_hash": "20009c822cba900133cfc82c5ba6d30a",
+    "text": "Questa tomba è già profanata e il cavaliere lich se n'è andato! Non c'è niente che puoi fare qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.534999Z"
+  },
+  "quests.grave_danger.sanctified": {
+    "src_hash": "6ecef847b37c47541664c96ed4ca5806",
+    "text": "Questa tomba ora è stata santificata ed è al sicuro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.535636Z"
+  },
+  "quests.grave_danger.wait_challenge": {
+    "src_hash": "8f220e1370f7c9572644115a7ec58676",
+    "text": "Devi aspettare %s prima di provare a sfidare nuovamente %s!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.536195Z"
+  },
+  "quests.gravedigger.blood_msg_1": {
+    "src_hash": "1dbdb527d858d195b09b6758127751a0",
+    "text": "Il sangue nella fiala è di un rosso rubino intenso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.536782Z"
+  },
+  "quests.gravedigger.blood_msg_2": {
+    "src_hash": "1a63106ebda448891f13f09e95b1749c",
+    "text": "Il sangue nella fiala è di un colore strano, come se fosse contaminato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.537386Z"
+  },
+  "quests.gravedigger.monks_msg_1": {
+    "src_hash": "ec359d287bea175c97b8d64cd6b01622",
+    "text": "Le ombre si alzano e inghiottiscono la candela. La statua tremola in una luce ultraterrena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.538022Z"
+  },
+  "quests.gravedigger.monks_msg_2": {
+    "src_hash": "7513b7643dba66657586111a073e8765",
+    "text": "Le ombre della statua ingoiano avidamente la candela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.538609Z"
+  },
+  "quests.gravedigger.monks_msg_3": {
+    "src_hash": "c45750588bd577c7f5626b86b6a4108a",
+    "text": "Un'ombra emerge e ti strappa la candela dalle mani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.539150Z"
+  },
+  "quests.inquisition.teleport_say_1": {
+    "src_hash": "8ef32cb681fd34e8b4c5898bea7c5641",
+    "text": "Entrando nel reparto di Ushuriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:21.540070Z"
+  },
+  "quests.inquisition.teleport_say_10": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Entrando nelle Sale del Sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.778813Z"
+  },
+  "quests.inquisition.teleport_say_11": {
+    "src_hash": "f714a602d2801dd4b089bcee8d5070aa",
+    "text": "Entrando in Fonderia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.779094Z"
+  },
+  "quests.inquisition.teleport_say_12": {
+    "src_hash": "77f23e15c82945321e29dfb451c9a6d6",
+    "text": "Entrando nel reparto di Madareth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.779959Z"
+  },
+  "quests.inquisition.teleport_say_13": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Entrando nei tini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.780286Z"
+  },
+  "quests.inquisition.teleport_say_14": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.780760Z"
+  },
+  "quests.inquisition.teleport_say_15": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Entrando nei tini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.781016Z"
+  },
+  "quests.inquisition.teleport_say_16": {
+    "src_hash": "8a9b8ad11f7f6477078c9057fa71a4f8",
+    "text": "Entrare nel campo di battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.781469Z"
+  },
+  "quests.inquisition.teleport_say_17": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Entrando nei tini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.781720Z"
+  },
+  "quests.inquisition.teleport_say_18": {
+    "src_hash": "9d6e489a953c92b65b2e4155ef092be7",
+    "text": "Entrando nella Forgia dei Demoni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.782218Z"
+  },
+  "quests.inquisition.teleport_say_19": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Entrare nell'Arcano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.782490Z"
+  },
+  "quests.inquisition.teleport_say_2": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Entrando nelle Grotte di Cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.782950Z"
+  },
+  "quests.inquisition.teleport_say_20": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.783408Z"
+  },
+  "quests.inquisition.teleport_say_21": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Entrare nell'Arcano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.783665Z"
+  },
+  "quests.inquisition.teleport_say_22": {
+    "src_hash": "5302c8173c3cb6ad78d4a445444621f2",
+    "text": "Entrare nei Pozzi dell'Anima.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.784109Z"
+  },
+  "quests.inquisition.teleport_say_23": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Entrare nell'Arcano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.784362Z"
+  },
+  "quests.inquisition.teleport_say_24": {
+    "src_hash": "87a584d47d99ef1099a1b7763d63167b",
+    "text": "Entrando nel reparto di Annihilon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.785228Z"
+  },
+  "quests.inquisition.teleport_say_25": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Entrando nell'alveare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.785518Z"
+  },
+  "quests.inquisition.teleport_say_26": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.786043Z"
+  },
+  "quests.inquisition.teleport_say_27": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Entrando nell'alveare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.786319Z"
+  },
+  "quests.inquisition.teleport_say_28": {
+    "src_hash": "8c3f7a9b0837c942cb96323e9e7f0ff6",
+    "text": "Entrando nel reparto di Hellgorak.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:36.787221Z"
+  },
+  "quests.inquisition.teleport_say_29": {
+    "src_hash": "4ae399bcc62da3ce8337ed5ae17105c5",
+    "text": "Entrando nel Nexus Ombra. Abbandonare ogni speranza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.412117Z"
+  },
+  "quests.inquisition.teleport_say_3": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.412622Z"
+  },
+  "quests.inquisition.teleport_say_30": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.413090Z"
+  },
+  "quests.inquisition.teleport_say_31": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Entrando nelle Sale del Sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.413554Z"
+  },
+  "quests.inquisition.teleport_say_4": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Entrando nelle Grotte di Cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.414020Z"
+  },
+  "quests.inquisition.teleport_say_5": {
+    "src_hash": "b3d040710e4f4bdad657ac023d4b24b5",
+    "text": "Entrando nelle Grotte Sommerse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.414543Z"
+  },
+  "quests.inquisition.teleport_say_6": {
+    "src_hash": "26c96174a35ff15138aa0a0fa46cd0c5",
+    "text": "Entrare nel labirinto degli specchi della follia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.415043Z"
+  },
+  "quests.inquisition.teleport_say_7": {
+    "src_hash": "284178d2bd2cd7be84bf88293e481b84",
+    "text": "Entrando nel reparto di Zugurosh.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.415924Z"
+  },
+  "quests.inquisition.teleport_say_8": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Entrando nelle Sale del Sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.416416Z"
+  },
+  "quests.inquisition.teleport_say_9": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Fuga di nuovo al ritiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.416913Z"
+  },
+  "quests.kilmaresh.cutting_desert_rose": {
+    "src_hash": "2e1c81ae7224b8bdc118376e4385e9a7",
+    "text": "Stai tagliando dei fiori di rosa del deserto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.417454Z"
+  },
+  "quests.kilmaresh.cutting_snake_maw": {
+    "src_hash": "0e2be5b2e26406b215516ef7212090cc",
+    "text": "Stai tagliando le fauci di un serpente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.417967Z"
+  },
+  "quests.kilmaresh.cutting_veldt": {
+    "src_hash": "4cc80603c2753d4c6213f354440388c0",
+    "text": "Stai tagliando dei fiori del veldt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.419038Z"
+  },
+  "quests.kilmaresh.empty_gryphon_nest": {
+    "src_hash": "70d61105abbfa029a50cc78ce83656ff",
+    "text": "Il nido del grifone è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.419565Z"
+  },
+  "quests.kilmaresh.empty_palm": {
+    "src_hash": "029b211ddc519f2f94d035dc82d0dab4",
+    "text": "Questo palmo è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.420035Z"
+  },
+  "quests.kilmaresh.empty_sarcophagus": {
+    "src_hash": "4b17b5c3996f0321c7c486bece458b6c",
+    "text": "Il sarcofago è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.420524Z"
+  },
+  "quests.kilmaresh.found_gryphon_mask": {
+    "src_hash": "435d494d0d817160038bd508df2e1001",
+    "text": "Hai trovato una maschera di grifone.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.420998Z"
+  },
+  "quests.kilmaresh.found_mirror_mask": {
+    "src_hash": "4c9e19f7722a51fca3a7e07d7b332278",
+    "text": "Hai trovato una maschera a specchio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.421470Z"
+  },
+  "quests.kilmaresh.found_silver_mask": {
+    "src_hash": "cb7c8d53e21f98f868611b54b478f33d",
+    "text": "Hai trovato una maschera d'argento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.421937Z"
+  },
+  "quests.kilmaresh.gathering_spiderweb": {
+    "src_hash": "b3007e6d0e8ab1c46f520fbfcef53c6e",
+    "text": "Stai raccogliendo alcuni brandelli di nuvole di ragnatela. Ma rimani intrappolato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:01:51.422529Z"
+  },
+  "quests.kilmaresh.memory_word_1": {
+    "src_hash": "a9f3adb041832dcb22a0255e1c9d02ac",
+    "text": "L'Ambasciatore dice ad un altro dignitario: Rathleton non deve mai essere superato! Farò in modo che l'Impero vacilli!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.655409Z"
+  },
+  "quests.kilmaresh.memory_word_2": {
+    "src_hash": "66d6e2423b2a2c1b3261fe7329f31950",
+    "text": "Attraverso un portale dimensionale puoi vedere l'Ambasciatore di Rathleton che indossa un mantello con sopra una sfinge nera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.656267Z"
+  },
+  "quests.kilmaresh.memory_word_3": {
+    "src_hash": "833be6e9e01708a39902aebfb55591bb",
+    "text": "Attraverso un portale dimensionale puoi vedere come l'Ambasciatore di Rathleton parla con i cultisti di Fafnar in un modo abbastanza familiare. La prova è assolutamente sostanziale. L'Ambasciatore è un traditore!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.657782Z"
+  },
+  "quests.lions_rock.amethyst_flame": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Metti l'ametista sulla piccola presa. Una fiamma viola comincia a bruciare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.658433Z"
+  },
+  "quests.lions_rock.ruby_flame": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Metti il ​​rubino sulla piccola presa. Una fiamma rossa inizia a bruciare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.659070Z"
+  },
+  "quests.lions_rock.sapphire_flame": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Metti lo zaffiro sulla piccola presa. Una fiamma blu inizia a bruciare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.659729Z"
+  },
+  "quests.lions_rock.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Quando arriverà il momento, '%s' sarà accettato in questo santuario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.660364Z"
+  },
+  "quests.lions_rock.sign_hyaena_1": {
+    "src_hash": "43506f692e5eaa2d03b471d5db205e9f",
+    "text": "Con l'aiuto dell'antico rotolo traduci le iscrizioni sulla statua d'oro: E il possente leone sconfisse l'avida iena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.661101Z"
+  },
+  "quests.lions_rock.sign_hyaena_2": {
+    "src_hash": "8390080f6d5fbd320a95afbd47f1c011",
+    "text": "In segno di vittoria ne prese il sangue, rosso come la voracità e la lussuria, e creò un tesoro prezioso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.661838Z"
+  },
+  "quests.lions_rock.sign_lizard_1": {
+    "src_hash": "607e1aa56577c65566e8d1a407b24f60",
+    "text": "Con l'aiuto del vecchio rotolo traduci le iscrizioni sul pavimento: E il potente leone sconfisse la pigra lucertola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.662638Z"
+  },
+  "quests.lions_rock.sign_lizard_2": {
+    "src_hash": "026f745497af303958bed63db3a88230",
+    "text": "In segno di vittoria prese il suo uovo, azzurro come l'accidia e la presunzione, e da una creatura immonda creò un tesoro prezioso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.663414Z"
+  },
+  "quests.lions_rock.sign_scorpion_1": {
+    "src_hash": "5525122a591ad5ece97e50232e932137",
+    "text": "Con l'aiuto dell'antico rotolo traduci le iscrizioni sull'altare d'oro: E il potente leone sconfisse l'infido scorpione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.664106Z"
+  },
+  "quests.lions_rock.sign_scorpion_2": {
+    "src_hash": "43c5ad801d0867efcacf0874cd5f755c",
+    "text": "In segno di vittoria ne prese il veleno, il viola come inganno e tradimento, e creò un tesoro prezioso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.664805Z"
+  },
+  "quests.lions_rock.sign_snake_1": {
+    "src_hash": "a38676d3c1f2b95ea81fd6a0c07d9842",
+    "text": "Con l'aiuto dell'antico rotolo traduci le iscrizioni sul pavimento: E il potente leone sconfisse il serpente geloso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.665477Z"
+  },
+  "quests.lions_rock.sign_snake_2": {
+    "src_hash": "0ddb19907d494051a2036cc940045ca1",
+    "text": "In segno di vittoria gli strappò l'occhio, giallo come l'invidia e la malevolenza, e da una creatura immonda creò un tesoro prezioso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.666399Z"
+  },
+  "quests.lions_rock.topaz_flame": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Metti il ​​topazio sulla piccola presa. Una fiamma gialla inizia a bruciare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.667150Z"
+  },
+  "quests.mission07_attack.say_1": {
+    "src_hash": "a145d394a5681b91228bf5174c437ca3",
+    "text": "<tosse>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.667361Z"
+  },
+  "quests.mission09_rock_troll.say_1": {
+    "src_hash": "5bf39cb0fedb3760737d4a684763bde6",
+    "text": "<crepa>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.667548Z"
+  },
+  "quests.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Hai preso parte alla scaramuccia nelle ultime 10 ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:09.668170Z"
+  },
+  "quests.movements_arena_pit.say_2": {
+    "src_hash": "9224728568a2f95e3e8af3a1e4dcf35c",
+    "text": "Rispetto e onore a te, campione!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.245381Z"
+  },
+  "quests.movements_arena_pit.say_3": {
+    "src_hash": "82a08c8672f5afbd168b2c3b7859d310",
+    "text": "Congratulazioni, coraggioso guerriero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.245743Z"
+  },
+  "quests.movements_arena_pit.say_4": {
+    "src_hash": "8f0c30ed83be4ee852a61ebd6ba6f196",
+    "text": "Bentornato, piccolo eroe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.246034Z"
+  },
+  "quests.movements_arena_pit.say_5": {
+    "src_hash": "4526ef4a7942d54702a69a547f22b6a0",
+    "text": "Vigliacco!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.246308Z"
+  },
+  "quests.movements_boat_puzzle.msg_1": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Senza punti di orientamento non troverai mai la strada del ritorno. Prova a trovare un modo per migliorare la tua navigazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.247034Z"
+  },
+  "quests.movements_boat_puzzle.msg_2": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.247859Z"
+  },
+  "quests.movements_boat_puzzle.msg_3": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Usi la gomena per legare le assi sciolte. La zattera dovrebbe essere idonea alla navigazione adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.248477Z"
+  },
+  "quests.movements_boat_puzzle.msg_4": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Ci sono ancora alcune assi e gomene sciolte. Non puoi usare la zattera in questo modo, affonderà sicuramente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.249267Z"
+  },
+  "quests.movements_boat_puzzle.msg_5": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.250158Z"
+  },
+  "quests.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Superi il fuoco senza subire alcun danno. È ora o mai più...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.250793Z"
+  },
+  "quests.movements_elemental_portals.msg_1": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Hai scoperto una vecchia scrivania che contiene un'antica mappa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.251363Z"
+  },
+  "quests.movements_elemental_portals.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.251884Z"
+  },
+  "quests.movements_elemental_portals.msg_3": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ci hai messo troppo tempo, la battaglia è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.252424Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.252913Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.253368Z"
+  },
+  "quests.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.253847Z"
+  },
+  "quests.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "I resti ti deporalizzano temporaneamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.254369Z"
+  },
+  "quests.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Con il potere del Custode oscuro ancora in agguato, la nebbia ti impedisce di entrare nella tana di Quaid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.255452Z"
+  },
+  "quests.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Hai completato il rituale dell'offerta del cibo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.255995Z"
+  },
+  "quests.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Devi aspettare. Qualcuno è impegnativo ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:02:37.256514Z"
+  },
+  "quests.movements_stepin.say_1": {
+    "src_hash": "0bb267d5a1e1d99f98082a5d44c35061",
+    "text": "La tartaruga ha fame... Devi darle da mangiare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.739052Z"
+  },
+  "quests.movements_teleportto.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesso concesso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.740648Z"
+  },
+  "quests.movements_teleportto.say_2": {
+    "src_hash": "7b956ca96a7b5ef2bfcce78c9ebc6720",
+    "text": "Devi prima padroneggiare la sfida!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.741158Z"
+  },
+  "quests.movements_teleportto.say_3": {
+    "src_hash": "0c24db16ceecc9286020828260abcbdf",
+    "text": "Devi superare quest'ultima sfida entro 5 minuti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.741740Z"
+  },
+  "quests.oramond.blue_pollen_say_1": {
+    "src_hash": "68e37a8d8264d7fc6abc83fa0842f16c",
+    "text": "Achoo! Versa il polline nella borsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.742712Z"
+  },
+  "quests.oramond.blue_pollen_say_2": {
+    "src_hash": "374336a189f0fda11013b303fba14572",
+    "text": "Hai raccolto il polline puzzolente in un sacchetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.743238Z"
+  },
+  "quests.oramond.sewer_fix_1": {
+    "src_hash": "9b7103417729ac866612fcd3f341116d",
+    "text": "<clong!> <clong!> Ecco questo pezzo riparato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.746194Z"
+  },
+  "quests.others.exterminator_say_1": {
+    "src_hash": "659cdc5427e03f38845aceba5250242f",
+    "text": "Questa missione fa schifo... e ora fai schifo anche tu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.748138Z"
+  },
+  "quests.others.exterminator_say_2": {
+    "src_hash": "a9e3b1f425ade1574acbeffc6504f6ed",
+    "text": "Raccogli con cura l'inchiostro di quara",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.748809Z"
+  },
+  "quests.others.exterminator_say_3": {
+    "src_hash": "eecc893560cfc96ca6f1fdfad19a8f3c",
+    "text": "Raccogli attentamente il sangue dello stalker.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.749779Z"
+  },
+  "quests.others.holy_water_damaged": {
+    "src_hash": "b86e21aff07806515d22d2c792f4feab",
+    "text": "%s ha danneggiato il nesso ombra! Non puoi danneggiarlo mentre brucia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.750534Z"
+  },
+  "quests.others.holy_water_destroyed": {
+    "src_hash": "8aa0e3d028a181eecbdd33685f79754d",
+    "text": "%s ha distrutto il nesso ombra! In 10 secondi tornerà al suo stato originale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.751268Z"
+  },
+  "quests.pits_of_inferno.flipped_lever": {
+    "src_hash": "63c60e89cdd7672905b6c37020f83841",
+    "text": "Hai girato la leva {0}. Sbrigati e trova il prossimo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.751903Z"
+  },
+  "quests.pits_of_inferno.throne_say_1": {
+    "src_hash": "6bed9ad765a41aea118ed6b6d41a2e9a",
+    "text": "Hai toccato il trono di Infernatil e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.752927Z"
+  },
+  "quests.pits_of_inferno.throne_say_2": {
+    "src_hash": "4626bc832fa6a49df4ef7bd01ae0933b",
+    "text": "Hai toccato il trono di Tafariel e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.753951Z"
+  },
+  "quests.pits_of_inferno.throne_say_3": {
+    "src_hash": "e4fc7313dc3a16917ce00d9d3d81037a",
+    "text": "Hai toccato il trono di Verminor e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.754970Z"
+  },
+  "quests.pits_of_inferno.throne_say_4": {
+    "src_hash": "df9c98fd901a5a7ce92caf391e334ec3",
+    "text": "Hai toccato il trono di Apocalypse e hai assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:05.755694Z"
+  },
+  "quests.pits_of_inferno.throne_say_5": {
+    "src_hash": "a6c231f5c8d0d440f9a25dd728b1276f",
+    "text": "Hai toccato il trono di Bazir e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.062546Z"
+  },
+  "quests.pits_of_inferno.throne_say_6": {
+    "src_hash": "f7524dcee093d05f1543b4a037a86627",
+    "text": "Hai toccato il trono di Ashfalor e hai assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.063624Z"
+  },
+  "quests.pits_of_inferno.throne_say_7": {
+    "src_hash": "2cddd74c3cb03b1c671c1907b470af88",
+    "text": "Hai toccato il trono di Pumin e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.064652Z"
+  },
+  "quests.quest_system2.say_1": {
+    "src_hash": "45736d9194d6da01cb301f6b7eaecca0",
+    "text": "Sullo scaffale è stata nascosta una serie di documenti. Potrebbero interessare Zalamon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.065778Z"
+  },
+  "quests.quest_system2.say_2": {
+    "src_hash": "53e7fc6825a02b3708b232a180d94e0a",
+    "text": "Tira fuori un teschio dal mucchio di ossa. Dev'essere quello il teschio di cui ha parlato Lazaran.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.066920Z"
+  },
+  "quests.quest_system2.say_3": {
+    "src_hash": "032cb9ca7fa8271b3e143fcbac1c8386",
+    "text": "Per guadagnare tempo sostituisci il pesce con un pezzo di carota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.067572Z"
+  },
+  "quests.rookie_guard.m02.academy_roof": {
+    "src_hash": "e6225831626357195789837b09eb0691",
+    "text": "Queste scale conducono al tetto dell'Accademia. Lassù dovresti trovare DUE catapulte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.068243Z"
+  },
+  "quests.rookie_guard.m02.house_vascalir": {
+    "src_hash": "9b47262b38451fe2badc4c4152967c3b",
+    "text": "Questa è la casa menzionata da Vascalir. Dovresti trovare un mucchio di pietre in cantina. Usalo per ottenere una pietra!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.069427Z"
+  },
+  "quests.rookie_guard.m02.norma_bar": {
+    "src_hash": "4eeb33a027267a41e6527d48c5c9890f",
+    "text": "Questo è il bar di Norma. Se vai sul tetto, dovresti trovare una delle catapulte che deve essere riempita di pietre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.070611Z"
+  },
+  "quests.rookie_guard.m02.obi_shop": {
+    "src_hash": "07b1f1d0fd6479294bd8233d8b7f88d0",
+    "text": "Questo è il negozio di Obi. Sul tetto dovresti trovare una delle catapulte menzionate da Vascalir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.071697Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_east": {
+    "src_hash": "da439753da5cece35ac0001cff88d754",
+    "text": "Questa non è la strada per Hyacinth. Segui il sentiero verso est per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.072792Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_north": {
+    "src_hash": "860c4533bc9747a178e2aaa8d1030cf3",
+    "text": "Questa non è la strada per Hyacinth. Seguire il sentiero fino all'uscita nord del villaggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.073934Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_stay": {
+    "src_hash": "78f62d4d069dd9e52c49c0976e3243bb",
+    "text": "Questa non è la strada per Hyacinth. Rimani sul sentiero un po' più a nord per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.075099Z"
+  },
+  "quests.rookie_guard.m04.not_lily": {
+    "src_hash": "b75de9056a3f78512d4451edf4b933bc",
+    "text": "Non è questo il modo di parlare di Lily. Segui la strada che porta a sud-ovest per trovare il suo negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.076207Z"
+  },
+  "quests.rookie_guard.m05.follow_north": {
+    "src_hash": "a5bf51f908af9ade3bfffc340ca8e014",
+    "text": "Seguite il piccolo sentiero verso nord per raggiungere la tana del ragno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.076771Z"
+  },
+  "quests.rookie_guard.m05.not_tarantula_sw": {
+    "src_hash": "b1fdf58d0b8057244bab5a710d42a616",
+    "text": "Questa non è la strada per la tana della tarantola. Salite la piccola rampa a sud-ovest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.077510Z"
+  },
+  "quests.rookie_guard.m05.remember_web": {
+    "src_hash": "39a2d466181dc92312224cea243c06c7",
+    "text": "Ricorda che devi acquistare un campione web per Vascalir. Non dovresti lasciare questa grotta senza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.078700Z"
+  },
+  "quests.rookie_guard.m05.walk_west": {
+    "src_hash": "cd2910c5de542301bf729e89347f87e5",
+    "text": "Da qui cammina verso ovest per raggiungere il buco che conduce alla tana della tarantola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.079333Z"
+  },
+  "quests.rookie_guard.m06.dead_wolf": {
+    "src_hash": "cd8a0378d33f62cc3ee5742430d9196a",
+    "text": "C'è un lupo di guerra morto! Usa il coltello e poi usalo sul suo corpo per prendere della pelle, ma velocemente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.080063Z"
+  },
+  "quests.rookie_guard.m06.exit_time": {
+    "src_hash": "17007160bd3124ad631c587fa066a70e",
+    "text": "Hai raggiunto l'uscita in tempo! Uff... torniamo a Tom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:03:35.080632Z"
+  },
+  "quests.rookie_guard.m06.follow_ne": {
+    "src_hash": "d660a6b81f70a077aa8cc985ceb95661",
+    "text": "Seguite il sentiero nord-orientale nella foresta. Attenzione ai lupi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.908450Z"
+  },
+  "quests.rookie_guard.m06.not_wolf_stay": {
+    "src_hash": "989a7ab9eb5e0a97e828d346f52de900",
+    "text": "Questa non è la strada per la foresta dei lupi. Rimani sul sentiero meridionale che porta a nord-est!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.909211Z"
+  },
+  "quests.rookie_guard.m06.plans_changed": {
+    "src_hash": "a6dabc80da026b6c74b055d2631f0bd2",
+    "text": "Sembra che i piani siano cambiati. Adesso tocca a te trovare un lupo di guerra morto e usare il coltello per scuoiare su di esso per ottenere un po' di pelle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.909986Z"
+  },
+  "quests.rookie_guard.m06.poacher_dead": {
+    "src_hash": "ad864d48132584f629f65e54cc4dc9dc",
+    "text": "Beh... quello sembra essere il bracconiere. Morto. Controlla il suo corpo: forse ha ancora qualcosa che puoi usare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.910731Z"
+  },
+  "quests.rookie_guard.m06.wolf_den_hole": {
+    "src_hash": "8ff82dfeee21b161eacc6351bd96bb4f",
+    "text": "Questo buco conduce nella tana dei lupi. Entra solo se hai salute e cibo completi: questo potrebbe essere pericoloso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.911715Z"
+  },
+  "quests.rookie_guard.m07.chest_flames": {
+    "src_hash": "b7c6b9d06f88f8be6cd061c750b49f8d",
+    "text": "Questo deve essere lo scrigno con il libro, ma è coperto di fiamme!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.912622Z"
+  },
+  "quests.rookie_guard.m07.rune_table": {
+    "src_hash": "6002e2799edcb38d0d9a8a27e3adb6bc",
+    "text": "Fai clic con il pulsante destro del mouse sulla runa grigia sul tavolo, quindi fai clic con il pulsante sinistro del mouse sul fuoco! Non puoi prendere la runa, ma funziona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.913390Z"
+  },
+  "quests.rookie_guard.m07.stairs_vault": {
+    "src_hash": "1c62d45cabc3f18ede97039fa7995f24",
+    "text": "Scendete le scale per raggiungere il caveau. C'è odore di fuoco laggiù. Assicurati di essere sano!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.914166Z"
+  },
+  "quests.rookie_guard.m07.vault_fire": {
+    "src_hash": "ca5a077ce0747edac556d29d78a7241a",
+    "text": "Il caveau è in fiamme! Non c'è quasi aria qui dentro. Non hai molto tempo per trovare il libro. Fretta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.914902Z"
+  },
+  "quests.rookie_guard.m09.not_troll_caves": {
+    "src_hash": "53ae08babd37bc33bccc6047edabfdbb",
+    "text": "Questa non è la strada per le caverne dei troll. Scendete le scale e camminate verso nord per trovarli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.915713Z"
+  },
+  "quests.rookie_guard.m09.troll_tunnel": {
+    "src_hash": "6aa6afffb59b2e2f20b38e3d07846679",
+    "text": "Hai raggiunto il tunnel dei troll appena scavato. Prendi ciò che trovi in ​​questo baule e usalo per abbattere tutte le travi di supporto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.917061Z"
+  },
+  "quests.rookie_guard.m09.tunnel_collapsed": {
+    "src_hash": "c93f44b7a93c422a03c1a7b607c9f512",
+    "text": "Senti un crollo sotto di te. Il tunnel è crollato. Vascalir sarà lieta di saperlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.918784Z"
+  },
+  "quests.rookie_guard.m10.crypt_explore": {
+    "src_hash": "428682d8033f91ba852ac8e9c68c9bd6",
+    "text": "Questa è la cripta di cui parlava Vascalir. Esploralo e perquisisci le bare: una di queste deve contenere un bell'osso carnoso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.920050Z"
+  },
+  "quests.rookie_guard.m10.deeper_crypt": {
+    "src_hash": "86e1952c650fefd39f45d3647768aa98",
+    "text": "Questa porta sembra condurre più in profondità nella cripta. Scendi le scale e cerca una bara speciale. Attenzione ai morti che camminano!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.920908Z"
+  },
+  "quests.rookie_guard.m10.fleshy_bone": {
+    "src_hash": "0f7d3784d552ac18699272146e625d18",
+    "text": "Ora che hai un osso carnoso, è il momento di scoprire cosa voleva da esso Vascalir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.922013Z"
+  },
+  "quests.rookie_guard.m10.not_crypt": {
+    "src_hash": "35806744f6d142cb8f7a6a66427f65d9",
+    "text": "Questa non è la strada per la cripta. Andate a sud-ovest per raggiungere il cimitero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.922684Z"
+  },
+  "quests.rookie_guard.m10.sarcophagus": {
+    "src_hash": "2b6990f31c3b6910b0745f3d72b72720",
+    "text": "Questo sarcofago sembra speciale. Si dice che i sarcofagi conservino la carne più a lungo delle normali bare: forse sei fortunato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.923438Z"
+  },
+  "quests.rookie_guard.m11.wasp_tower": {
+    "src_hash": "e55b94869184f9b0d4ea4fcd017c20ba",
+    "text": "Hai trovato la torre delle vespe. Uccidi una vespa e usa la fiaschetta che hai ricevuto da Vascalir sul suo cadavere per recuperare parte del suo veleno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.924599Z"
+  },
+  "quests.rookie_guard.m11.wasps_nest": {
+    "src_hash": "d39e080a30dc5e5fa81ee9ec692e0118",
+    "text": "Attraversate il ponte a ovest e andate a sud per raggiungere il nido delle vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.925191Z"
+  },
+  "quests.rookie_guard.m12.approaching": {
+    "src_hash": "ceb1407d6af7b56efe088971f0bab81b",
+    "text": "Attenzione... ti stai avvicinando alla stanza di Kraknaknork. Una volta entrato, avrai solo 5 minuti per ucciderlo prima che ti butti fuori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:03.926319Z"
+  },
+  "quests.rookie_guard.m12.chest_items": {
+    "src_hash": "ad45b9bd37d7566a86cf5513f140bd29",
+    "text": "Questo baule dovrebbe contenere tutto il necessario per infiltrarsi nella fortezza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.843182Z"
+  },
+  "quests.rookie_guard.m12.distraction_bone_1": {
+    "src_hash": "982a4987dd4f5f2f1dab1b667a90610a",
+    "text": "Non puoi sperare di oltrepassare questa guardia. Forse qualche distrazione aiuterebbe? Potresti provare a usare l'osso carnoso su di lui...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.843913Z"
+  },
+  "quests.rookie_guard.m12.energy_barrier": {
+    "src_hash": "59b91fb81cfc924a472db48066e96b1a",
+    "text": "Kraknaknork mantiene forti barriere energetiche. C'è solo un modo per disabilitarli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.845061Z"
+  },
+  "quests.rookie_guard.m12.guard_pass": {
+    "src_hash": "ba93d5ee5a7d338995fd8d4402f8278c",
+    "text": "Questa guardia sicuramente non ti lascerà passare. Muoviti furtivamente nella fortezza per trovare un modo per travestirti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.845802Z"
+  },
+  "quests.rookie_guard.m12.interior": {
+    "src_hash": "0c8af191ec0630b1c630530a474e5e0b",
+    "text": "Sei riuscito a raggiungere l'interno della fortezza degli orchi. Preparati allo scontro e cerca il calderone della zuppa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.846542Z"
+  },
+  "quests.rookie_guard.m12.items_infiltrate": {
+    "src_hash": "7d1f6fbf68d2a7a08c4093307f1ad8fb",
+    "text": "Questi oggetti dovrebbero essere ciò di cui hai bisogno per infiltrarti nella fortezza. Torna vicino al nido delle vespe e da lì cammina verso sud.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.847377Z"
+  },
+  "quests.rookie_guard.m12.kitchen": {
+    "src_hash": "6b1b898af80c38869a62267a419b1466",
+    "text": "A quanto pare sei in cucina. Se trovi un grosso calderone, usaci sopra la fiaschetta di veleno per vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.848105Z"
+  },
+  "quests.rookie_guard.m12.lever_barrier": {
+    "src_hash": "517a365908f493329e1f686aa921d23b",
+    "text": "La barriera energetica a sud è temporaneamente scomparsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.848688Z"
+  },
+  "quests.rookie_guard.m12.no_poison_yet": {
+    "src_hash": "4e1417b973e1a5704aa0563eb141e17f",
+    "text": "Non hai ancora usato il veleno sulla zuppa di Kraknaknork. Non provare a combatterlo prima, altrimenti ti ucciderà sicuramente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.850097Z"
+  },
+  "quests.rookie_guard.m12.orc_break": {
+    "src_hash": "4dc27b230216ab6553d9993600fefdbf",
+    "text": "Questo orco ti ha voltato le spalle e ovviamente si sta prendendo una pausa. Usa il mattarello su di lui per metterlo KO!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.850815Z"
+  },
+  "quests.rookie_guard.m12.sneaked_in": {
+    "src_hash": "9c7ac86a98efc8c0c4fce6b33e774143",
+    "text": "Ti sei intrufolato nella fortezza degli orchi. Attento adesso, non uscire più.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.851454Z"
+  },
+  "quests.rookie_guard.m12.trap_ready": {
+    "src_hash": "3a644ca296978982bc5bf37f75bb03b0",
+    "text": "Hai pronto la trappola per tarantole? Potrebbe essere necessario usarlo presto...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.852026Z"
+  },
+  "quests.rookie_guard.missions.bank_academy": {
+    "src_hash": "970c5993868a32eadf2faf5c2e83756d",
+    "text": "La banca è sotto l'accademia. Andate a nord e scendete le scale e poi a destra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.852675Z"
+  },
+  "quests.rookie_guard.missions.bank_paulie": {
+    "src_hash": "6b624ca2502c466e5008873f90c2ae19",
+    "text": "Vai a destra per trovare la banca e parla con Paulie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.853615Z"
+  },
+  "quests.rookie_guard.missions.entering_orcland": {
+    "src_hash": "888b5c565f98525bfd7f484fd4d224ea",
+    "text": "Stai entrando nell'Orcland.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.853896Z"
+  },
+  "quests.rookie_guard.missions.graveyard_east": {
+    "src_hash": "d924be505bf333ab308b1b53d717888f",
+    "text": "Seguite la strada verso est e andate a sud per raggiungere il cimitero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.854511Z"
+  },
+  "quests.rookie_guard.missions.hallway_library": {
+    "src_hash": "3fbc2a3f449877544b3501c3dc089ba6",
+    "text": "Attraversa la porta nord e segui i corridoi per trovare il caveau della biblioteca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.855151Z"
+  },
+  "quests.rookie_guard.missions.hyacinth_east": {
+    "src_hash": "fe8257d7dace20157b7b7b0e21d01a59",
+    "text": "Segui il sentiero verso est per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.856226Z"
+  },
+  "quests.rookie_guard.missions.library_vault": {
+    "src_hash": "8844ad0528ff2e760b413c4065011ee2",
+    "text": "Il caveau della biblioteca è sotto l'accademia. Vai a nord e scendi diverse scale finché non trovi una porta di missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.857019Z"
+  },
+  "quests.rookie_guard.missions.no_bag_yet": {
+    "src_hash": "127895e14ee90d1419f6d99e5d597887",
+    "text": "Non hai ancora la borsa con gli oggetti. Apri la porta nel seminterrato dell'accademia a sinistra di Paulie per prenderli!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:31.858181Z"
+  },
+  "quests.rookie_guard.missions.not_crypt_south": {
+    "src_hash": "a9007bd061d7c2e1ec6784d4454d5061",
+    "text": "Questa non è la strada per la cripta. Andate a sud per raggiungere il cimitero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.448223Z"
+  },
+  "quests.rookie_guard.missions.not_hyacinth_south": {
+    "src_hash": "62f6c9aca08d7d63d85194cd0d78fc51",
+    "text": "Questa non è la strada per Hyacinth. Rimani sul sentiero un po' più a sud per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.449458Z"
+  },
+  "quests.rookie_guard.missions.not_tarantula_nw": {
+    "src_hash": "66aa34dbdc1a9e2425eb33eba5550813",
+    "text": "Questa non è la strada per la tana della tarantola. Andate a nord-ovest e salite la piccola rampa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.450194Z"
+  },
+  "quests.rookie_guard.missions.not_troll_north": {
+    "src_hash": "9719068dca76f1d7df2164471b7c3c53",
+    "text": "Questa non è la strada per le caverne dei troll. Seguite il sentiero verso nord oltre la collina per raggiungerli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.451087Z"
+  },
+  "quests.rookie_guard.missions.not_wasps_north": {
+    "src_hash": "59294ed775b60dfcddea634a22e66d26",
+    "text": "Questa non è la strada per la tana delle vespe. Scegli il percorso a nord per raggiungerlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.451806Z"
+  },
+  "quests.rookie_guard.missions.orc_fortress_path": {
+    "src_hash": "cd0bb23122055e63b4c1e79ad8fa8d9b",
+    "text": "Seguite il sentiero a nord, attraversate il ponte a sud e camminate verso ovest per raggiungere la fortezza degli orchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.452518Z"
+  },
+  "quests.rookie_guard.missions.orc_west": {
+    "src_hash": "e9b535dc25a0771d44f5aa712d554844",
+    "text": "Seguite il sentiero verso ovest per raggiungere la fortezza degli orchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.453226Z"
+  },
+  "quests.rookie_guard.missions.road_main": {
+    "src_hash": "80538ccded69460ca147a0f2eb530c73",
+    "text": "Questa strada è l'accesso principale del villaggio. Potresti voler finire prima i tuoi affari qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.454460Z"
+  },
+  "quests.rookie_guard.missions.tarantula_stairs": {
+    "src_hash": "4599c6cf7b47e4cbfd70383bc69a16e6",
+    "text": "Cammina verso nord e scendi le scale per raggiungere la tana della tarantola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.456415Z"
+  },
+  "quests.rookie_guard.missions.troll_caves": {
+    "src_hash": "29e46fcdd186a137a97b31af10a887bb",
+    "text": "Seguite il sentiero a nord oltre la collina per raggiungere le caverne dei troll.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.458510Z"
+  },
+  "quests.rookie_guard.missions.wasps_bridge": {
+    "src_hash": "c0897396d3529224b0c0d55db4afeb59",
+    "text": "Per raggiungere i nidi delle vespe seguite il sentiero a nord e attraversate il ponte a ovest come se voleste raggiungere i ragni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.459365Z"
+  },
+  "quests.rookie_guard.missions.wasps_bridge_south": {
+    "src_hash": "2899810eaf301f106514be78d054dc06",
+    "text": "Prendi le scale a sud lungo il ponte per andare alla tana delle vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.460082Z"
+  },
+  "quests.rookie_guard.missions.wasps_west": {
+    "src_hash": "6b25fc340d9852d753befbf5aade6526",
+    "text": "Seguite il sentiero verso ovest per trovare la tana delle vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.460775Z"
+  },
+  "quests.rookie_guard.missions.wolf_forest": {
+    "src_hash": "3763dba33d86e92921673c71d37b2a02",
+    "text": "Seguite il sentiero verso est e, quando si divide, dirigetevi a nord-est per trovare la foresta dei lupi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.461778Z"
+  },
+  "quests.roshamuul.faced_boss_hours": {
+    "src_hash": "a09179e5adef5d910ce70d31a9760cc1",
+    "text": "Hai affrontato questo boss nelle ultime {0} ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.463244Z"
+  },
+  "quests.roshamuul_quest.use_on_silencer_plateau_is_located": {
+    "src_hash": "91ae36b3e633dc84bb2f68f0b3d77f95",
+    "text": "L'uso sull'Altopiano del silenziatore si trova nella parte sud-orientale di Roshamuul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.464433Z"
+  },
+  "quests.roshamuul_quest.you_need_kill_all_monsters": {
+    "src_hash": "1a2624203802bd89977616b5327e7b9b",
+    "text": "Devi uccidere tutti i mostri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.465180Z"
+  },
+  "quests.roshamuul_quest.you_need_to_wait": {
+    "src_hash": "8d82fecf82c3358c0ac68fda476f6f0f",
+    "text": "Devi aspettare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.465456Z"
+  },
+  "quests.secret_library.ancient_passage": {
+    "src_hash": "87433a234f95e5361adff04f2b8a02f4",
+    "text": "Ti infili attraverso un antico piccolo passaggio. Ci sono piccoli simboli scolpiti in profondità nel corallo che non puoi leggere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.466366Z"
+  },
+  "quests.secret_library.book_plans": {
+    "src_hash": "84338c3c7a7350e62a5dd2f513966484",
+    "text": "Le descrizioni contenute in questo libro sembrano piani che descrivono in dettaglio il lancio di un assalto su larga scala.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:04:50.467071Z"
+  },
+  "quests.secret_library.elemental_portals_default": {
+    "src_hash": "78502af725a66768ad94e8a571fda13f",
+    "text": "Hai dieci minuti per uccidere e saccheggiare questo mostro, altrimenti perderai questa possibilità e verrai espulso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.464619Z"
+  },
+  "quests.secret_library.exhausted_battle": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Sei ancora esausto dopo la tua ultima battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.465210Z"
+  },
+  "quests.secret_library.falcon_boat_1": {
+    "src_hash": "caef9c0335f1ad3ec1f3c1bc4b3d6245",
+    "text": "Una piccola isola emerge dalla nebbia mentre remi verso una minuscola luce all'interno di un'oscura e imponente cappella.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.465885Z"
+  },
+  "quests.secret_library.falcon_boat_2": {
+    "src_hash": "e867293f1f020fd282b32ebfd7a490cf",
+    "text": "Il tuo cuore si illumina mentre ritorni dall'isola cupa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.466512Z"
+  },
+  "quests.secret_library.found_item_lower": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Hai trovato un {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.466976Z"
+  },
+  "quests.secret_library.high_and_dry_default": {
+    "src_hash": "78502af725a66768ad94e8a571fda13f",
+    "text": "Hai dieci minuti per uccidere e saccheggiare questo mostro, altrimenti perderai questa possibilità e verrai espulso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.467768Z"
+  },
+  "quests.secret_library.njey_appreciate": {
+    "src_hash": "776f0b64ea3b6ba0dc9b6f08c5c08ebd",
+    "text": "Il Njey apprezzerà il tuo aiuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.468789Z"
+  },
+  "quests.secret_library.njey_help_needed": {
+    "src_hash": "d226f31215d8d0bafb0d257517a8eb51",
+    "text": "Senza l'aiuto di altri Njey probabilmente non farai la differenza in questa battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.469858Z"
+  },
+  "quests.secret_library.not_ready": {
+    "src_hash": "4f5815a090b141b7b6df60246fb354c3",
+    "text": "Non sei ancora pronto per passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.470426Z"
+  },
+  "quests.secret_library.not_ready_v2": {
+    "src_hash": "4f5815a090b141b7b6df60246fb354c3",
+    "text": "Non sei ancora pronto per passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.470912Z"
+  },
+  "quests.secret_library.recently_fixed": {
+    "src_hash": "1d61511f4ff8d55855044dae45ef38a9",
+    "text": "Recentemente hai riparato quell'idolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.471432Z"
+  },
+  "quests.secret_library.wait_20h": {
+    "src_hash": "c1c85732657dc37f7d215690dfb70629",
+    "text": "Devi aspettare 20 ore per affrontare di nuovo questo boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.472425Z"
+  },
+  "quests.shattered_isles.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Hai trovato {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.472872Z"
+  },
+  "quests.shattered_isles.nargor_map_1": {
+    "src_hash": "5ca34f7dcd424ad974e941673b05c8b6",
+    "text": "Hai letto con successo il piano A.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.473394Z"
+  },
+  "quests.shattered_isles.nargor_map_2": {
+    "src_hash": "a41caa68a6a96260bc953cfaed7b94df",
+    "text": "Hai letto con successo il piano B.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.473886Z"
+  },
+  "quests.shattered_isles.nargor_map_3": {
+    "src_hash": "81adbab03f0fa3b1db8343172f6614ef",
+    "text": "Hai letto con successo il piano C.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.474430Z"
+  },
+  "quests.soul_war.activate_all_shrines": {
+    "src_hash": "5a24207bc65fee6e4020effcdbe4730d",
+    "text": "Devi ancora attivare tutti i santuari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.474942Z"
+  },
+  "quests.soul_war.added_taint": {
+    "src_hash": "0ab268634aab5f8cd2772c06888f9cb8",
+    "text": "Aggiunto livello di contaminazione: {0}, nome: {1} al giocatore: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.475565Z"
+  },
+  "quests.soul_war.all_shrines_activated": {
+    "src_hash": "1d78850cec36c293c1c5ca4270017565",
+    "text": "Hai attivato tutti i santuari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.476093Z"
+  },
+  "quests.soul_war.already_has_access": {
+    "src_hash": "ce37d4686ba291522fb92da66d52c69f",
+    "text": "Hai già ottenuto l'accesso per combattere con la Crudeltà di Goshnar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:17.477148Z"
+  },
+  "quests.soul_war.bag_obtained": {
+    "src_hash": "17cd9115f8f0176226404b8f330c88e5",
+    "text": "Hai ottenuto la borsa dell'anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.284031Z"
+  },
+  "quests.soul_war.boss_room_access": {
+    "src_hash": "18142adc7962225aad0958a9ef16b78e",
+    "text": "Ora puoi accedere alla stanza del boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.284965Z"
+  },
+  "quests.soul_war.cleansed_cooldown": {
+    "src_hash": "03c886bb82d39577a96a9f7935d65faa",
+    "text": "Devi attendere altri {0} secondi prima di utilizzare nuovamente il pulitore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.285553Z"
+  },
+  "quests.soul_war.cooldown_wait": {
+    "src_hash": "64ff2090c5bc2503480642f6bafe96a6",
+    "text": "Devi attendere {0} secondo/i per utilizzare nuovamente questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.286144Z"
+  },
+  "quests.soul_war.cruelty_defeat": {
+    "src_hash": "7b608f7f8a817501edd6cdbcf55cfc24",
+    "text": "Hai sconfitto la crudeltà di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.287132Z"
+  },
+  "quests.soul_war.current_taint": {
+    "src_hash": "2a48966088a62a2423b05e8f569e36cc",
+    "text": "Il tuo attuale livello di contaminazione è: {0} nome: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.287764Z"
+  },
+  "quests.soul_war.dread_killing": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Il tormento del terrore ti sta uccidendo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.288266Z"
+  },
+  "quests.soul_war.dread_lethal": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Il tormento del terrore è ora letale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.288815Z"
+  },
+  "quests.soul_war.dread_start": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Il terrore inizia a tormentarti! Non lasciare che il livello di terrore raggiunga il valore critico!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.289455Z"
+  },
+  "quests.soul_war.dread_tear_apart": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Il tormento del Dread comincia a farti a pezzi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.290462Z"
+  },
+  "quests.soul_war.dread_unbearable": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Il tormento del terrore diventa insopportabile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.291036Z"
+  },
+  "quests.soul_war.energy_collected": {
+    "src_hash": "b8bcf2126f92e38b5f614a6a3e5c4ca5",
+    "text": "Energia raccolta: {0}/{1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.291327Z"
+  },
+  "quests.soul_war.energy_complete": {
+    "src_hash": "30f280d5e33132b6d52579429dd479f5",
+    "text": "Hai raccolto abbastanza energia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.291839Z"
+  },
+  "quests.soul_war.energy_needed": {
+    "src_hash": "e08db01f22b91ec4f011e924f3838baf",
+    "text": "Hai bisogno di {0} energia in più per procedere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.292384Z"
+  },
+  "quests.soul_war.floor_access_first": {
+    "src_hash": "6405b891cc05a54afffbd45264ac0231",
+    "text": "Hai ottenuto l'accesso al primo piano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.292922Z"
+  },
+  "quests.soul_war.floor_access_second": {
+    "src_hash": "fb8ef309afd510db8bfb32044bc6033e",
+    "text": "Hai ottenuto l'accesso al secondo piano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.293452Z"
+  },
+  "quests.soul_war.floor_access_third": {
+    "src_hash": "16a7701add0525d575c423179eac5ccf",
+    "text": "Hai ottenuto l'accesso al terzo piano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.293964Z"
+  },
+  "quests.soul_war.floor_first_continue": {
+    "src_hash": "663c4245151399c9d94e481bcab59b6e",
+    "text": "Hai ottenuto l'accesso al primo piano. Continua a raccogliere energie pulsanti per ottenere ulteriore accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.294658Z"
+  },
+  "quests.soul_war.floor_second_continue": {
+    "src_hash": "320ea4789c114f2b8b618dffe5f1c4d7",
+    "text": "Hai ottenuto l'accesso al secondo piano. Continua a raccogliere energie pulsanti per ottenere ulteriore accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.295309Z"
+  },
+  "quests.soul_war.floor_third_fight": {
+    "src_hash": "fa58abb3de41f9407604d7e4e368ebf0",
+    "text": "Hai ottenuto l'accesso al terzo piano. Ora puoi combattere con la Crudeltà di Goshnar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:05:46.296464Z"
+  },
+  "quests.soul_war.greedy_maw_cooldown": {
+    "src_hash": "cc8bb4aca05080b59216fa941741e895",
+    "text": "Devi attendere altri {0} secondi prima di usare nuovamente le fauci golose.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.727515Z"
+  },
+  "quests.soul_war.hatred_defeat": {
+    "src_hash": "6cd6252de7d5f1a44b498d7bf15b3fc2",
+    "text": "Hai sconfitto l'odio di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.728468Z"
+  },
+  "quests.soul_war.lose_taint": {
+    "src_hash": "019b9cf17d705eb17144d44dce22a7ee",
+    "text": "Perdi il livello di contaminazione: {0}, nome: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.729001Z"
+  },
+  "quests.soul_war.malice_defeat": {
+    "src_hash": "de75d1edcd3e1b6ca5e343f2f8559fc4",
+    "text": "Hai sconfitto la Malizia di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.729935Z"
+  },
+  "quests.soul_war.megalomania_report": {
+    "src_hash": "21d3b903cdc05059a3d2e2164905ac96",
+    "text": "Hai sconfitto la megalomania di Goshnar. Segnala il 'task' a Flickering Soul e guadagna il tuo outfit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.733632Z"
+  },
+  "quests.soul_war.msg_1": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Il terrore inizia a tormentarti! Non lasciare che il livello di terrore raggiunga il valore critico!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.734344Z"
+  },
+  "quests.soul_war.msg_2": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Il tormento del terrore diventa insopportabile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.734866Z"
+  },
+  "quests.soul_war.msg_3": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Il tormento del Dread comincia a farti a pezzi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.735832Z"
+  },
+  "quests.soul_war.msg_4": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Il tormento del terrore ti sta uccidendo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.736370Z"
+  },
+  "quests.soul_war.msg_5": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Il tormento del terrore è ora letale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.736895Z"
+  },
+  "quests.soul_war.new_taint": {
+    "src_hash": "5bde8704eadc1a578aa1e54f0819452b",
+    "text": "Il tuo nuovo livello di contaminazione è: {0}, nome: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.737484Z"
+  },
+  "quests.soul_war.no_floor_access": {
+    "src_hash": "910ac2aec9931e32538bfbcd38b2166a",
+    "text": "Non hai ancora accesso a questo piano. Hai raccolto {0}/{1} e hai bisogno di {2} energie pulsanti in più per accedervi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.738356Z"
+  },
+  "quests.soul_war.ooze_calm": {
+    "src_hash": "ceeb19a643ad14b9ad316c2652f3d7fc",
+    "text": "La melma calma il tuo terrore...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.738844Z"
+  },
+  "quests.soul_war.ooze_calm_vulnerable": {
+    "src_hash": "fef7b5c00d069a3bb57d2e967d78170d",
+    "text": "La melma calma la tua paura ma ti rende vulnerabile agli attacchi spettrali!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.739454Z"
+  },
+  "quests.soul_war.phantom_killed": {
+    "src_hash": "cd8b4e1653d419970f40f66f8f69b938",
+    "text": "Hai ucciso {0} su {1} Hazardous Phantom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.740718Z"
+  },
+  "quests.soul_war.removed_taint": {
+    "src_hash": "b4ca643c2238b3c9d950a65336414876",
+    "text": "Livello di contaminazione rimosso: {0}, nome: {1} dal giocatore: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.741294Z"
+  },
+  "quests.soul_war.shrine_activated": {
+    "src_hash": "80ad0ca6ba900ac6c7a130c10cdcc9c6",
+    "text": "Hai attivato il santuario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.741784Z"
+  },
+  "quests.soul_war.shrine_already_activated": {
+    "src_hash": "5ee4b7efe20ca638e4496c2c3171670f",
+    "text": "Hai già attivato questo santuario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.742341Z"
+  },
+  "quests.soul_war.soul_fire_failed": {
+    "src_hash": "82c033463325eb1a31e3a014992d7f68",
+    "text": "Non sei riuscito a spegnere il fuoco dell'anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:04.742863Z"
+  },
+  "quests.soul_war.soul_fire_recover": {
+    "src_hash": "7961274a457c46f8d02245fab211a19b",
+    "text": "Il fuoco dell'anima è stato spento in tempo! La tua anima ora dovrà riprendersi prima che tu possa farlo di nuovo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.472993Z"
+  },
+  "quests.soul_war.soul_fire_stomped": {
+    "src_hash": "ea119539fd0cd316d470dee6a95a02c8",
+    "text": "Il fuoco dell'anima è stato spento in tempo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.473578Z"
+  },
+  "quests.soul_war.soul_no_recover": {
+    "src_hash": "dcd0760f59af41f83460972c60d4a247",
+    "text": "La sua anima non avrà più bisogno di riprendersi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.474192Z"
+  },
+  "quests.soul_war.soul_recover_wait": {
+    "src_hash": "1ca5738bb18e90b272fe726c696fa966",
+    "text": "La sua anima non avrà più bisogno di riprendersi! Devi attendere {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.474936Z"
+  },
+  "quests.soul_war.soul_recovered": {
+    "src_hash": "76d487eb375c4fe04a18ce767e7d1eb9",
+    "text": "La tua anima si è ripresa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.475516Z"
+  },
+  "quests.soul_war.spite_defeat": {
+    "src_hash": "832031a3804792a398e5231cf2ddfcc8",
+    "text": "Hai sconfitto il Dispetto di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.476483Z"
+  },
+  "quests.soul_war.taint_gained": {
+    "src_hash": "138a4a527628e1ac82b2463b602bcbd2",
+    "text": "Hai guadagnato {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.476768Z"
+  },
+  "quests.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Le contaminazioni del tuo Goshnar sono state ripristinate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.477756Z"
+  },
+  "quests.soul_war.taints_reset_timeout": {
+    "src_hash": "bb82c84747742951025a074765dee261",
+    "text": "Le contaminazioni del tuo Goshnar sono state ripristinate. Non hai completato la missione in 14 giorni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.478909Z"
+  },
+  "quests.soul_war.tears_soaked": {
+    "src_hash": "ca20469362a10d0401ff43e8fd04b383",
+    "text": "Sei inzuppato dalle lacrime dell'anima piangente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.479470Z"
+  },
+  "quests.soul_war.use_item_defense": {
+    "src_hash": "1dbe9dd97225cdfdd3e8fc690051c5d3",
+    "text": "Usa di nuovo l'oggetto entro {0} secondi, altrimenti la difesa del mostro aumenterà di 2 ogni {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.480222Z"
+  },
+  "quests.soul_war.use_item_defense_increase": {
+    "src_hash": "d57b15fc4d41fe9e823aded0cf82a15a",
+    "text": "Usa di nuovo l'oggetto entro {0} secondi, altrimenti la difesa del mostro aumenterà ogni {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.480928Z"
+  },
+  "quests.soul_war_mechanics.msg_1": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.481826Z"
+  },
+  "quests.soul_war_mechanics.msg_2": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.482743Z"
+  },
+  "quests.soul_war_mechanics.msg_3": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Al momento non hai alcuna contaminazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.483260Z"
+  },
+  "quests.soul_war_mechanics.msg_4": {
+    "src_hash": "6655db13bee1450cbda069988ba9ac6f",
+    "text": "Perdi il livello di contaminazione: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.483723Z"
+  },
+  "quests.soul_war_mechanics.msg_5": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Livello di contaminazione rimosso: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.484197Z"
+  },
+  "quests.soul_war_mechanics.say_1": {
+    "src_hash": "5380d0158610754e1763c3e68d1e2070",
+    "text": "Il rimorso calma il tuo terrore!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.484679Z"
+  },
+  "quests.soul_war_mechanics.say_2": {
+    "src_hash": "e1b472d7a2758aa1c3111f799a2f062b",
+    "text": "Il fuoco dell'odio alimenta e potenzia l'odio di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.485664Z"
+  },
+  "quests.soul_war_mechanics.say_3": {
+    "src_hash": "bb4184db52e52ff43ebb239d5964bc4e",
+    "text": "La fiamma dell'odio è spenta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:22.486200Z"
+  },
+  "quests.soul_war_mechanics.say_4": {
+    "src_hash": "c3c250d8d11cdad39d0e1b311332f9b0",
+    "text": "Salute ripristinata dai poteri mistici di Zarganash!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.962349Z"
+  },
+  "quests.soulpit.level_required": {
+    "src_hash": "9d8e0f4dfc616d37e512adc7f55ac405",
+    "text": "Tutti i giocatori devono essere di livello %s o superiore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.964095Z"
+  },
+  "quests.soulpit_fight.msg_1": {
+    "src_hash": "86f4a03cfb29387b28e675634e8e174a",
+    "text": "Hai sconfitto il nucleo dell'anima {} e sbloccato la sua maestria nell'Animus!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.965491Z"
+  },
+  "quests.soulpit_fight.msg_2": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Qualcuno sta combattendo nella fossa dell'anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.966017Z"
+  },
+  "quests.spike_tasks.ancient_ghost": {
+    "src_hash": "3df6500c57263547e96c82f202dc4f58",
+    "text": "Il tuo rozzo scavo ha fatto arrabbiare qualche antico fantasma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.966592Z"
+  },
+  "quests.spike_tasks.nothing_special": {
+    "src_hash": "41b371a27a243f199466d566439c66a4",
+    "text": "Non hai trovato niente di speciale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.967072Z"
+  },
+  "quests.spike_tasks.spirit_anger": {
+    "src_hash": "3894f5c51c56e5a112890c1028270538",
+    "text": "Hai portato alla luce la rabbia di uno spirito!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.967575Z"
+  },
+  "quests.spike_tasks.undead_creature": {
+    "src_hash": "32d84ab629e31e9022bc382c0ebc06b4",
+    "text": "Hai portato alla luce una creatura non così mortale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.968120Z"
+  },
+  "quests.spike_tasks.you_have_already_fertilised_this_mushroom": {
+    "src_hash": "febf554e1d48c0fd20b669486924b4fc",
+    "text": "Hai già fecondato questo fungo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.968636Z"
+  },
+  "quests.svargrond_arena.congratulations": {
+    "src_hash": "325f023e57fc0eb8ef8fa1403bd00743",
+    "text": "Congratulazioni! Hai completato l'arena {0}, dovresti ritirare la tua ricompensa adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.969286Z"
+  },
+  "quests.svargrond_arena.msg_1": {
+    "src_hash": "b63606673cc9b59a3033ef70c3d03e14",
+    "text": "Il tuo tempo è scaduto! La lotta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.969821Z"
+  },
+  "quests.svargrond_arena.occupant_fighting": {
+    "src_hash": "6bda4a888dabaac85a446d9d094ea93c",
+    "text": "{0} è attualmente nella prossima arena. Per favore aspetta fino a quando {1}ha finito di combattere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.970708Z"
+  },
+  "quests.svargrond_arena.time_out": {
+    "src_hash": "b63606673cc9b59a3033ef70c3d03e14",
+    "text": "Il tuo tempo è scaduto! La lotta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.971628Z"
+  },
+  "quests.the_cursed_crystal.you_are_not_in_the_correct": {
+    "src_hash": "4f7ac98c193784159584fb71c029764c",
+    "text": "Non sei nella zona corretta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.972314Z"
+  },
+  "quests.the_dream_courts_quest.you_must_wait_a_while_to": {
+    "src_hash": "9057311894859673cdc77e54601722af",
+    "text": "È necessario attendere un po' per utilizzare nuovamente questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.972904Z"
+  },
+  "quests.the_order_of_lion.drume_time": {
+    "src_hash": "5a27ffaa20c67f7f5690e0a2d9f300c6",
+    "text": "Hai {0} minuti per sconfiggere Drume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.973826Z"
+  },
+  "quests.the_order_of_lion.someone_of_your_team_has_already": {
+    "src_hash": "0d783adafb3fa9fd48ed37e17311588b",
+    "text": "Qualcuno della tua squadra ha già combattuto nella scaramuccia nelle ultime 10 ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.974540Z"
+  },
+  "quests.the_order_of_lion.there_was_an_error_contact_an": {
+    "src_hash": "9304db86594128c379f8d0f32e33564e",
+    "text": "Si è verificato un errore, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.975350Z"
+  },
+  "quests.the_order_of_lion.theres_someone_already_in_the_skirmish": {
+    "src_hash": "859265a56444cce63c4967f001a87f46",
+    "text": "C'è già qualcuno nella scaramuccia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.976345Z"
+  },
+  "quests.the_order_of_lion.you_need_at_least_level_250": {
+    "src_hash": "da091b80a62e22562ef00087c34e4515",
+    "text": "È necessario almeno il livello 250.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:06:49.977367Z"
+  },
+  "quests.the_secret_library_quest.must_wait_boss": {
+    "src_hash": "3c626082e765cd2b43e027d21dd9856d",
+    "text": "Devi aspettare. Qualcuno sta sfidando {0} adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.852483Z"
+  },
+  "quests.the_secret_library_quest.you_are_still_exhausted_from_your": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Sei ancora esausto dopo la tua ultima battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.853136Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_permission": {
+    "src_hash": "76ba088f968a4cac979a6a6db5a80736",
+    "text": "Non hai il permesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.853679Z"
+  },
+  "quests.threatened_dreams.fairy_free": {
+    "src_hash": "3f3cc4da9dc5c6866014839a3f0878b2",
+    "text": "I miei fratelli corrotti mi hanno rinchiuso nell'oscurità per troppo tempo. Ora sono finalmente libero! Grazie, essere mortale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.854517Z"
+  },
+  "quests.threatened_dreams.feathers_1": {
+    "src_hash": "3e18a910895fcd7fbdcc1b3e5a72df67",
+    "text": "Hai trovato altre piume sull'erba vicino al grano. Ora dovresti averne abbastanza per un intero mantello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.855194Z"
+  },
+  "quests.threatened_dreams.feathers_2": {
+    "src_hash": "2f2afa189d0a8f3fa44d91a791bc0f17",
+    "text": "Hai trovato delle bellissime piume di cigno nella pattumiera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.855777Z"
+  },
+  "quests.threatened_dreams.feathers_3": {
+    "src_hash": "75d732f3a656b37248c37a1640dc4ba7",
+    "text": "Hai trovato delle bellissime piume di cigno impigliate nelle punture del cactus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.856828Z"
+  },
+  "quests.threatened_dreams.feathers_4": {
+    "src_hash": "27805e5e4e45e1145dd59df87ccd1b4a",
+    "text": "Hai trovato delle bellissime piume di cigno sotto il teschio del drago.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.857474Z"
+  },
+  "quests.threatened_dreams.feathers_5": {
+    "src_hash": "fe983d9b291ff50d581c3f1625ad74da",
+    "text": "Hai trovato altre piume sotto l'albero morto. Ora dovresti averne abbastanza per un intero mantello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.858257Z"
+  },
+  "quests.threatened_dreams.found_herb": {
+    "src_hash": "d8f7cefe403c291457b6c9f5478b1938",
+    "text": "Hai trovato un %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.858797Z"
+  },
+  "quests.threatened_dreams.herb_no_room": {
+    "src_hash": "a62350f598ace1a41f466060eea6c3b9",
+    "text": "{0} Ma non hai spazio per prenderlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.859355Z"
+  },
+  "quests.threatened_dreams.herb_too_heavy": {
+    "src_hash": "42e49baf8bf1d9439178d056634b5269",
+    "text": "{0}. Con un peso di {1} oz, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.860035Z"
+  },
+  "quests.threatened_dreams.moon_mirror.fail_1": {
+    "src_hash": "a6e09f6ba5c8d78223d25c0856907627",
+    "text": "La luna non splende. Aspetta la notte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.860629Z"
+  },
+  "quests.threatened_dreams.moon_mirror.fail_2": {
+    "src_hash": "5b9d774c835d7185d5d0966a30c0d850",
+    "text": "La luna deve splendere. Aspetta la notte. Aspetta la notte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.861237Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_1": {
+    "src_hash": "0298db9f9a2da83a03a7cd3bb42c9429",
+    "text": "Lo specchio adesso risplende della luce della luna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.861830Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_2a": {
+    "src_hash": "e727da551288af7db5559f0467cecb98",
+    "text": "Non appena tocchi la scultura della luna con lo specchio, la scultura viene infusa dalla luce della luna. La barriera si rafforza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.862611Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_2b": {
+    "src_hash": "049443277e87ec214b0d2c3d3b1d2053",
+    "text": "Non appena tocchi la scultura della luna con lo specchio, la scultura viene infusa dalla luce della luna. Questa è stata l'ultima scultura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.863440Z"
+  },
+  "quests.threatened_dreams.starlight_vial.fail_1": {
+    "src_hash": "4fd5cf40df6275d5dc8f4c8d90c51dd9",
+    "text": "Stai strofinando il vetro opaco della fiala ma non succede nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.864013Z"
+  },
+  "quests.threatened_dreams.starlight_vial.fail_2": {
+    "src_hash": "1ee1fdd792bc836abea5fe0883268d33",
+    "text": "Le stelle devono brillare per rafforzare la barriera. Aspetta la notte. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.864673Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_1": {
+    "src_hash": "63b3e325040bff2c29a959306abcd187",
+    "text": "La fiala ora brilla di luce stellare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:16.865190Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_2a": {
+    "src_hash": "6752cc651b9a7da119b297527e28d9f2",
+    "text": "Non appena verserai la fiala sull'albero dell'uccello dei sogni, la pianta sarà infusa dalla luce delle stelle. La barriera si rafforza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.793216Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_2b": {
+    "src_hash": "20f28482cd56c65b75ba9fd8656fb2c3",
+    "text": "Non appena verserai la fiala sull'albero dell'uccello dei sogni, la pianta sarà infusa dalla luce delle stelle. Questo era l'ultimo albero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.794030Z"
+  },
+  "quests.threatened_dreams.sun_catcher.fail_1": {
+    "src_hash": "d0704ba6b967861b5699518a35e2d763",
+    "text": "Stai strofinando la gemma al centro dell'acchiappasole ma non succede nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.794838Z"
+  },
+  "quests.threatened_dreams.sun_catcher.fail_2": {
+    "src_hash": "e7126cb18a31fbcefa201e5ed29783fe",
+    "text": "Il sole deve splendere per rafforzare la barriera. Aspetta il giorno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.795490Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_1": {
+    "src_hash": "1149a7aac3fe4499fc7eebdb923d21a0",
+    "text": "L'acchiappasole ora risplende di luce solare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.796043Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_2a": {
+    "src_hash": "9b3f746d62ce9115a05a1fbb7e9bff16",
+    "text": "Non appena si posiziona l'acchiappasole sulla pietra, il motivo del mosaico viene infuso di luce solare. La barriera si rafforza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.796760Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_2b": {
+    "src_hash": "e1f165104af223261e0ec666fb19c82c",
+    "text": "Non appena si posiziona l'acchiappasole sulla pietra, il motivo del mosaico viene infuso di luce solare. Questo è stato l'ultimo mosaico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.797556Z"
+  },
+  "quests.tinder_box_quest_chyllfroest.the_pile_of_bones_is_empty": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Il mucchio di ossa è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.798045Z"
+  },
+  "quests.tinder_box_quest_chyllfroest.this_can_only_be_used_between": {
+    "src_hash": "ffec7f337bbd825827d501c1300a0c6f",
+    "text": "Può essere utilizzato solo dal 1° aprile al 1° maggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.798733Z"
+  },
+  "quests.unnatural_selection.mission2_say_1": {
+    "src_hash": "e9b8bea9f03c5b1e76977ca48b92795f",
+    "text": "Tieni il teschio in alto. Puoi però resistere alla tentazione di guardarlo attraverso un telescopio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.799439Z"
+  },
+  "quests.unnatural_selection.mission2_say_10": {
+    "src_hash": "89aca892eb1ca9d1f47b76e4e263b07e",
+    "text": "Questo è sicuramente uno dei posti più alti in assoluto Tibia. Se non è semplicemente perfetto non sai cosa sia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.800710Z"
+  },
+  "quests.unnatural_selection.mission2_say_11": {
+    "src_hash": "d0ce366100dbb3961cbb587b3326b919",
+    "text": "Che bella vista. Degno di una regina davvero! È ora di tornare da Lazaran e mostrargli quello che sai fare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.802249Z"
+  },
+  "quests.unnatural_selection.mission2_say_2": {
+    "src_hash": "57ca22ee86d1dc6c74f3243b57dba67e",
+    "text": "Sollevi il teschio e gli lasci dare una sbirciatina sulla bellissima città degli elfi attraverso le fitte foglie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.803270Z"
+  },
+  "quests.unnatural_selection.mission2_say_3": {
+    "src_hash": "9d63dfb5c97a8549bb7c51f0c2f97da3",
+    "text": "Thanita ti lancia uno sguardo davvero strano mentre sollevi il teschio, ma vabbè.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.804485Z"
+  },
+  "quests.unnatural_selection.mission2_say_4": {
+    "src_hash": "303c2d9fcc01f12b4baf660308b542f6",
+    "text": "È stato davvero facile. E adesso sei abituato a ricevere sguardi strani, quindi qualunque cosa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.805225Z"
+  },
+  "quests.unnatural_selection.mission2_say_5": {
+    "src_hash": "98b40519daece9c8af99a3f2ba6afdbd",
+    "text": "Wow, fa caldo qui. Per fortuna il teschio non può più scottarsi, ma tu sì, quindi è meglio scendere di nuovo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.805966Z"
+  },
+  "quests.unnatural_selection.mission2_say_6": {
+    "src_hash": "384529ff7c001357bb1fc9ab4d5d77d6",
+    "text": "Considerando che i posti più alti da queste parti non sono così facili da raggiungere, pensi che la vista da qui sia abbastanza buona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.806822Z"
+  },
+  "quests.unnatural_selection.mission2_say_7": {
+    "src_hash": "0990d5f7f686454fe5d58ec81dc77db8",
+    "text": "Sì, è un punto piuttosto alto. Se Lazaran vedesse mai ciò che vede il teschio, sarebbe piuttosto soddisfatto di quella bella visione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.808019Z"
+  },
+  "quests.unnatural_selection.mission2_say_8": {
+    "src_hash": "0d2d5f5fdf8f1b781163f7c3097d2551",
+    "text": "Beh, ci sono punti più alti da queste parti, ma nessuno di questi è facilmente raggiungibile come questo. Deve solo bastare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.808828Z"
+  },
+  "quests.unnatural_selection.mission2_say_9": {
+    "src_hash": "67cf8ccb8c769f6eb9c63051209457a0",
+    "text": "Carino! Bianco nel bianco a perdita d'occhio. È ora di andarsene prima che le tue dita si trasformino in ghiaccioli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:07:47.809907Z"
   }
 }

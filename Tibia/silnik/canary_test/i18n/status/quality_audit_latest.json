@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-02-16T19:59:05.335970Z",
+  "timestamp": "2026-02-16T20:08:34.971659Z",
   "checked_entries": 100,
-  "issues_found": 3,
+  "issues_found": 4,
   "issues_by_type": {
-    "identical_to_en": 3,
-    "identical_to_en_exempt": 2,
-    "suspicious_log_high": 128,
-    "suspicious_log_low": 66,
-    "suspicious_log_medium": 6,
-    "suspicious_rejected_high": 182,
-    "suspicious_rejected_critical": 18
+    "identical_to_en": 4,
+    "identical_to_en_exempt": 5,
+    "suspicious_log_high": 113,
+    "suspicious_log_low": 77,
+    "suspicious_log_medium": 8,
+    "suspicious_log_critical": 2,
+    "suspicious_rejected_high": 179,
+    "suspicious_rejected_critical": 21
   },
   "issues": [
     {
@@ -32,6 +33,13 @@
       "type": "identical_to_en",
       "en": "spider queen wrap",
       "translated": "spider queen wrap"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Chchch",
+      "translated": "Chchch"
     }
   ],
   "threshold": 10,

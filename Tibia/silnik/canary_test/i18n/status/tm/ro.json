@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T22:19:48.025531Z"
+    "updated_at": "2026-02-16T23:34:13.969951Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -20430,5 +20430,85 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:33:21.216202Z"
+  },
+  "item.11588.name": {
+    "src_hash": "94c787c150718839f5d9c52eed5269b6",
+    "text": "elixir dulce de mangoneză",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:19.235546Z"
+  },
+  "item.116.desc": {
+    "src_hash": "d39b035f5735b0e6910169571f7eebfc",
+    "text": "Conține provizia zilnică pentru magazinul lui Xodet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:19.235925Z"
+  },
+  "item.11603.desc": {
+    "src_hash": "964010137d180c408e8d0cf4efe3bf94",
+    "text": "Este o rună de vindecare supremă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:19.236274Z"
+  },
+  "item.11604.desc": {
+    "src_hash": "964010137d180c408e8d0cf4efe3bf94",
+    "text": "Este o rună de vindecare supremă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:21.944630Z"
+  },
+  "item.11605.desc": {
+    "src_hash": "b04025ee41c84df346408e1b41be6fbf",
+    "text": "Este o rună de rachetă magică grea împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:21.944999Z"
+  },
+  "item.11606.desc": {
+    "src_hash": "b04025ee41c84df346408e1b41be6fbf",
+    "text": "Este o rună de rachetă magică grea împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:21.945349Z"
+  },
+  "item.11607.desc": {
+    "src_hash": "8d6e34d53b9a83d42b00e5370e68c363",
+    "text": "Este o rună de explozie împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:21.945664Z"
+  },
+  "item.11608.desc": {
+    "src_hash": "8d6e34d53b9a83d42b00e5370e68c363",
+    "text": "Este o rună de explozie împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:21.945970Z"
+  },
+  "item.11609.desc": {
+    "src_hash": "30889c919fa2b2f4a56b9edfd9460e33",
+    "text": "Este o rună împodobită a morții subite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:23.962988Z"
+  },
+  "item.11610.desc": {
+    "src_hash": "30889c919fa2b2f4a56b9edfd9460e33",
+    "text": "Este o rună împodobită a morții subite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:23.963333Z"
   }
 }

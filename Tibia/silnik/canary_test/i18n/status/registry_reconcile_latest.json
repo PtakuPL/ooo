@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T23:33:03.329985Z",
+  "timestamp": "2026-02-16T23:35:06.927295Z",
   "status": "ok",
   "action": "skipped_threshold",
   "reason": "no_sync_needed",
@@ -23,10 +23,5 @@
   "last_applied_at": "2026-02-16T22:15:36.830717Z",
   "cooldown_bypassed": false,
   "should_reconcile": false,
-  "target_adjustment": 53579,
-  "per_file_reconcile": {
-    "added": 38,
-    "changed": 0,
-    "total": 38
-  }
+  "target_adjustment": 53579
 }

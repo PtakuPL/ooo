@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:33:47.190130Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-16T23:34:56.252698Z",
+  "language": "ru",
+  "json_file": "monsters.json",
+  "translated": 26,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.training_machine.voice_15",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "monster.execowtioner.voice_5",
+      "en": "There is excellence in execution!",
+      "translated": "Там совершенство исполнения!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "monster.execowtioner.voice_6",
+      "en": "Your sentence is death!",
+      "translated": "Ваш приговор – смерть!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "monster.troll.voice_2",
+      "en": "Hmmm, dogs",
+      "translated": "Хм, собаки",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "monster.troll.voice_5",
+      "en": "Gruntz!",
+      "translated": "Гранц!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "monster.island_troll.voice_1",
+      "en": "Hmmm, turtles",
+      "translated": "Хм, черепахи",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "monster.island_troll.voice_2",
+      "en": "Hmmm, dogs",
+      "translated": "Хм, собаки",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "monster.island_troll.voice_3",
+      "en": "Hmmm, worms",
+      "translated": "Хм, черви",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "monster.island_troll.voice_5",
+      "en": "Gruntz!",
+      "translated": "Гранц!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "monster.dwarf_henchman.name",
+      "en": "Dwarf Henchman",
+      "translated": "Гном-приспешник",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "monster.dwarf_henchman.desc",
+      "en": "a dwarf henchman",
+      "translated": "приспешник-гном",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "monster.dwarf_henchman.voice_1",
+      "en": "This place is for our eyes only!",
+      "translated": "Это место только для наших глаз!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.dwarf_henchman.voice_2",
+      "en": "We will live and let you die!",
+      "translated": "Мы будем жить и позволим тебе умереть!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.dwarf_henchman.voice_3",
+      "en": "I will die another day!",
+      "translated": "Я умру в другой день!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.dwarf_henchman.voice_4",
+      "en": "We have license to kill!",
+      "translated": "У нас есть лицензия на убийство!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "monster.firestarter.name",
+      "en": "Firestarter",
+      "translated": "Поджигатель",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "monster.firestarter.desc",
+      "en": "a firestarter",
+      "translated": "поджигатель",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "monster.firestarter.voice_3",
+      "en": "DEATH to the FALSE GOD!!",
+      "translated": "СМЕРТЬ ЛОЖНОМУ БОГУ!!!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.firestarter.voice_4",
+      "en": "You shall burn in the thornfires!!",
+      "translated": "Ты будешь гореть в терновом огне!!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.firestarter.voice_5",
+      "en": "DOWN with the followers of the bog!!",
+      "translated": "ДОЛОЙ последователей болота!!",
+      "source": "google_translate"
     }
   ]
 }

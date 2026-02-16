@@ -18518,5 +18518,165 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T23:33:00.081425Z"
+  },
+  "monster.wild_warrior.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Дикий воин",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:33.360782Z"
+  },
+  "monster.execowtioner.voice_5": {
+    "src_hash": "cee1748aea0392e4c2691ff085abca5f",
+    "text": "Там совершенство исполнения!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:45.302844Z"
+  },
+  "monster.execowtioner.voice_6": {
+    "src_hash": "91a93488de4d5054875408b5a5f15975",
+    "text": "Ваш приговор – смерть!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:47.870949Z"
+  },
+  "monster.troll.voice_2": {
+    "src_hash": "36c158b082540048301c1c6a24867850",
+    "text": "Хм, собаки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:47.871187Z"
+  },
+  "monster.troll.voice_5": {
+    "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
+    "text": "Гранц!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:47.871383Z"
+  },
+  "monster.island_troll.voice_1": {
+    "src_hash": "4572b61356b4505d3eb15f9ad3ffd1d4",
+    "text": "Хм, черепахи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:47.871610Z"
+  },
+  "monster.island_troll.voice_2": {
+    "src_hash": "36c158b082540048301c1c6a24867850",
+    "text": "Хм, собаки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:47.871820Z"
+  },
+  "monster.island_troll.voice_3": {
+    "src_hash": "68fe28788bed5ac74d7ec82d3551c149",
+    "text": "Хм, черви",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:50.452106Z"
+  },
+  "monster.island_troll.voice_5": {
+    "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
+    "text": "Гранц!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:50.452321Z"
+  },
+  "monster.dwarf_henchman.name": {
+    "src_hash": "7b2e40ffe490c9940eae9d1da95b47e7",
+    "text": "Гном-приспешник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:50.452556Z"
+  },
+  "monster.dwarf_henchman.desc": {
+    "src_hash": "bce051cbab1dea7f1d3bc115bc76ed51",
+    "text": "приспешник-гном",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:50.452790Z"
+  },
+  "monster.dwarf_henchman.voice_1": {
+    "src_hash": "9bc17d7e756fffd331d23e169737c67c",
+    "text": "Это место только для наших глаз!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:50.453127Z"
+  },
+  "monster.dwarf_henchman.voice_2": {
+    "src_hash": "84f3f123a015ff167cdd3e882d458491",
+    "text": "Мы будем жить и позволим тебе умереть!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:54.066910Z"
+  },
+  "monster.dwarf_henchman.voice_3": {
+    "src_hash": "f611ae8d076d0b49bfe9deb1ddb5cc9f",
+    "text": "Я умру в другой день!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:54.067223Z"
+  },
+  "monster.dwarf_henchman.voice_4": {
+    "src_hash": "c9aa7fc9430d653163455731c7956ac9",
+    "text": "У нас есть лицензия на убийство!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:54.067538Z"
+  },
+  "monster.firestarter.name": {
+    "src_hash": "60ad6ea1de79e8c5f7178698f413dcc4",
+    "text": "Поджигатель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:54.067790Z"
+  },
+  "monster.firestarter.desc": {
+    "src_hash": "b7c88453478855844b399e90f8991072",
+    "text": "поджигатель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:54.068012Z"
+  },
+  "monster.firestarter.voice_3": {
+    "src_hash": "121769f37480fec8c666a8b4cb324b77",
+    "text": "СМЕРТЬ ЛОЖНОМУ БОГУ!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:56.207810Z"
+  },
+  "monster.firestarter.voice_4": {
+    "src_hash": "209c8c2d9b1a88a6e88646af2569fbab",
+    "text": "Ты будешь гореть в терновом огне!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:56.208193Z"
+  },
+  "monster.firestarter.voice_5": {
+    "src_hash": "d2cbc0efd5942e4a26034e684e5649df",
+    "text": "ДОЛОЙ последователей болота!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:34:56.208515Z"
   }
 }

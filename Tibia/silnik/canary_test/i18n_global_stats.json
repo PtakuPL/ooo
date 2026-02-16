@@ -1,8 +1,8 @@
 {
-  "total_cycles": 41,
+  "total_cycles": 42,
   "mode": "AUTO_TRANSLATE",
-  "category": "pl",
-  "last_update": "2026-02-17T00:31:10.299830",
+  "category": "es",
+  "last_update": "2026-02-17T00:32:04.913496",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,133 +26,133 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "pl",
+    "language": "es",
     "json_file": "npc.json",
-    "keys_to_translate": 7599,
-    "guard_fail": 297,
+    "keys_to_translate": 3459,
+    "guard_fail": 36,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 50,
+    "recent_translated": 24,
     "recent_examples": [
       {
-        "key": "npc.iskan.greet_msg_1",
-        "en": "You are not one of us. I don't want to talk to you.",
-        "translated": "Nie jeste\u015b jednym z nas. Nie chc\u0119 z tob\u0105 rozmawia\u0107.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iskan.greet_msg_2",
-        "en": "I was told you have been killing huskies here in Svargrond! Never do that again, okay? They are precious animals for us. Give me 500 gold and I will forget that incident without telling it to Jarl Sven. Okay?",
-        "translated": "Powiedziano mi, \u017ce zabija\u0142e\u015b husky tutaj, w Svargrond! Nigdy wi\u0119cej tego nie r\u00f3b, dobrze? To dla nas cenne zwierz\u0119ta. Daj mi 500 sztuk z\u0142ota, a zapomn\u0119 o tym incydencie i nic nie powiem Jarlowi Svenowi. Zgoda?",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iskan.greet_msg_3",
-        "en": "HAIL to the Warlord of the arena! |PLAYERNAME|, Hero of Svargrond! What can I {do for you}?",
-        "translated": "CHWA\u0141A Wodzowi Areny! |PLAYERNAME|, Bohaterze Svargrond! Co mog\u0119 dla ciebie {do for you}?",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iskan.greet_msg_4",
-        "en": "Greetings. What can I {do for you}?",
-        "translated": "Pozdrowienia. Co mog\u0119 dla ciebie {do for you}?",
-        "source": "simple"
-      },
-      {
-        "key": "npc.ivalisse.walkaway_msg_1",
-        "en": "Oh... farewell, child.",
-        "translated": "Och... \u017cegnaj, dziecko.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iwan.greet_msg_1",
-        "en": "Feel welcome to my gem store, |PLAYERNAME|.",
-        "translated": "Czuj si\u0119 jak u siebie w moim sklepie z klejnotami, |PLAYERNAME|.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iwan.sendtrade_msg_1",
-        "en": "Here, take a look.",
-        "translated": "Prosz\u0119, sp\u00f3jrz.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iwar.greet_msg_1",
-        "en": "Hiho Storm Killer! Welcome to Kazordoon furniture store.",
-        "translated": "Hej ho, Pogromco Burz! Witaj w sklepie meblowym Kazordoon.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iyad.farewell_msg_1",
-        "en": "D...Daraman's blessings... oh, how I m...miss my warm Darashia...",
-        "translated": "B...b\u0142ogos\u0142awie\u0144stwo Daramana... och, jak t\u0119skni\u0119 za c...ciep\u0142\u0105 Darashi\u0105...",
-        "source": "simple"
-      },
-      {
-        "key": "npc.iyad.greet_msg_1",
-        "en": "Finally! A c...c...customer! Wh... where do you want to f...f...{fly}?",
-        "translated": "Wreszcie! K...k...klient! G...gdzie chcesz, \u017cebym ci\u0119 z...z...{fly}?",
-        "source": "simple"
-      },
-      {
-        "key": "npc.jack.greet_msg_3",
-        "en": "Yes? What can I do for you? I hope this won't take long, though.",
-        "translated": "Tak? Co mog\u0119 dla ciebie zrobi\u0107? Mam nadziej\u0119, \u017ce to nie potrwa d\u0142ugo.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.jack_drone.greet_msg_1",
-        "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today? I can travel you back to {thais}.",
-        "translated": "Witaj na pok\u0142adzie, |PLAYERNAME|. Dok\u0105d mam ci\u0119 dzi\u015b {sail}? Mog\u0119 zabra\u0107 ci\u0119 z powrotem do {thais}.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.jack_fate.greet_msg_1",
-        "en": "Welcome on board, Sir |PLAYERNAME|.",
-        "translated": "Witamy na pok\u0142adzie, Sir |PLAYERNAME|.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.jack_springer.greet_msg_2",
-        "en": "Hello, stranger! You look suspicious to me. I don't think we have anything to discuss.",
-        "translated": "Witaj, nieznajomy! Wygl\u0105dasz mi podejrzanie. Nie s\u0105dz\u0119, \u017ceby\u015bmy mieli o czym rozmawia\u0107.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.jack_springer.stdmod_24",
-        "en": "It has a rather complex meaning and as far as we can tell it translates to 'army of those who are many, dedicated to the ultimate time of mayhem and despair'. ... \\z\n\tOther, more handy names are army of the last battlefield, army of the last days, legion of mayhem, dread legion or simply the {legion}.",
-        "translated": "Ma do\u015b\u0107 z\u0142o\u017cone znaczenie i, o ile mo\u017cemy stwierdzi\u0107, przek\u0142ada si\u0119 na 'army of those who are many, dedicated to the ultimate time of mayhem and despair'. ... \\ z\n\tInne, bardziej przydatne nazwy to armia ostatniego pola bitwy, armia dni ostatnich, legion chaosu, legion grozy lub po prostu {legion}.",
+        "key": "npc.arkulius.voice_3",
+        "en": "<mumbles>",
+        "translated": "<mumbles>",
         "source": "tm"
       },
       {
-        "key": "npc.jacob.farewell_msg_1",
-        "en": "<nods> See ya.",
-        "translated": "<kiwa g\u0142ow\u0105> Na razie.",
-        "source": "simple"
+        "key": "npc.barnabas_dee.say_5",
+        "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+        "translated": "No no no, necesito 15 dosis de polen reci\u00e9n cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servir\u00e1.",
+        "source": "tm"
       },
       {
-        "key": "npc.jakahr.farewell_msg_1",
-        "en": "It was an honour to serve you, |PLAYERNAME|.",
-        "translated": "To by\u0142 zaszczyt ci s\u0142u\u017cy\u0107, |PLAYERNAME|.",
-        "source": "simple"
+        "key": "npc.bozo.stdmod_116",
+        "en": "npc.bozo.mission_36_t1",
+        "translated": "npc.bozo.mission_36_t1",
+        "source": "tm"
       },
       {
-        "key": "npc.jakahr.walkaway_msg_1",
-        "en": "It was an honour to serve you.",
-        "translated": "To by\u0142 zaszczyt ci s\u0142u\u017cy\u0107.",
-        "source": "simple"
+        "key": "npc.bozo.stdmod_92",
+        "en": "npc.bozo.mission_12_t1",
+        "translated": "npc.bozo.mission_12_t1",
+        "source": "tm"
       },
       {
-        "key": "npc.jamesfrancis.greet_msg_1",
-        "en": "Gerimor is right. As an expert for minotaurs I am researching these creatures for years. I thought I already knew a lot but the monsters in this cave are {different}. It's a big {mystery}.",
-        "translated": "Gerimor ma racj\u0119. Jako ekspert od minotaur\u00f3w badam te stworzenia od lat. My\u015bla\u0142em, \u017ce wiem ju\u017c wiele, ale potwory w tej jaskini s\u0105 {different}. To wielka {mystery}.",
-        "source": "simple"
+        "key": "npc.budrik.say_9",
+        "en": "Zzz...",
+        "translated": "Zzz...",
+        "source": "tm"
       },
       {
-        "key": "npc.jamesfrancis.greet_msg_2",
-        "en": "How is your {mission} going?",
-        "translated": "Jak idzie twoja {mission}?",
-        "source": "simple"
+        "key": "npc.captain_haba_open_sea.larboard_1",
+        "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA A BALAR !!",
+        "source": "tm"
+      },
+      {
+        "key": "npc.captain_haba_open_sea.say_3",
+        "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+        "translated": "\u00bf\u00a1\u00bfESO ES TODO?!? \u00a1\u00a1\u00a1ACELERAR, APRETAR LA VELA MAYOR!!!",
+        "source": "tm"
+      },
+      {
+        "key": "npc.captain_haba_open_sea.starboard_1",
+        "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA A ESTRIBOR!!",
+        "source": "tm"
+      },
+      {
+        "key": "npc.captain_haba_open_sea.straight_3",
+        "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+        "translated": "\u00a1\u00a1MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! \u00a1\u00a1TODO DERECHO!!",
+        "source": "tm"
+      },
+      {
+        "key": "npc.captain_haba_open_sea.straight_5",
+        "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+        "source": "tm"
+      },
+      {
+        "key": "npc.cruleo.voice_1",
+        "en": "<gulp gulp>",
+        "translated": "<gulp gulp>",
+        "source": "tm"
+      },
+      {
+        "key": "npc.elliott.greet_msg_1",
+        "en": "<nods>",
+        "translated": "<nods>",
+        "source": "tm"
+      },
+      {
+        "key": "npc.gnomus.say_11",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
+      },
+      {
+        "key": "npc.gnomus.say_13",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
+      },
+      {
+        "key": "npc.gnomus.say_15",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
+      },
+      {
+        "key": "npc.jeronimo.say_3",
+        "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+        "translated": "\u00a1Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+        "source": "tm"
+      },
+      {
+        "key": "npc.lardoc_bashsmite.multi_3",
+        "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+        "translated": "Llevamos nuestros explosivos hasta all\u00ed... y me refiero a TODOS nuestros explosivos. \u00bfPeligroso? De hecho, colocamos a alguien all\u00ed para vigilar este dep\u00f3sito. ...",
+        "source": "tm"
+      },
+      {
+        "key": "npc.lardoc_bashsmite.multi_9",
+        "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+        "translated": "Llevamos nuestros explosivos hasta all\u00ed... y me refiero a TODOS nuestros explosivos. \u00bfPeligroso? De hecho, colocamos a alguien all\u00ed para vigilar este dep\u00f3sito. ...",
+        "source": "tm"
+      },
+      {
+        "key": "npc.lardoc_bashsmite.say_10",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
+      },
+      {
+        "key": "npc.lardoc_bashsmite.say_12",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       }
     ]
   },

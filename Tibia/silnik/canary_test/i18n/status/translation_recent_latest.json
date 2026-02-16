@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T22:02:30.034112Z",
-  "language": "it",
-  "json_file": "items.json",
-  "translated": 50,
+  "timestamp": "2026-02-16T22:05:26.885969Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "item.34173.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "item.34174.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "item.34175.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "item.34176.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "item.34177.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "item.34178.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "item.34179.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "item.34180.name",
-      "en": "dead corpse",
-      "translated": "cadavere",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "item.34221.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "item.34222.name",
-      "en": "open door",
-      "translated": "porta aperta",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "item.34223.name",
-      "en": "closed door",
-      "translated": "porta chiusa",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "item.34224.name",
-      "en": "open door",
-      "translated": "porta aperta",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "item.34243.name",
-      "en": "ladder",
-      "translated": "scala",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.34255.name",
-      "en": "trapdoor",
-      "translated": "botola",
-      "source": "simple"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.34313.desc",
-      "en": "Somebody is sleeping there",
-      "translated": "Qualcuno sta dormendo lì",
-      "source": "simple"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.34315.desc",
-      "en": "Somebody is sleeping there",
-      "translated": "Qualcuno sta dormendo lì",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "item.34317.desc",
-      "en": "Somebody is sleeping there",
-      "translated": "Qualcuno sta dormendo lì",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "item.34319.desc",
-      "en": "Somebody is sleeping there",
-      "translated": "Qualcuno sta dormendo lì",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "item.35190.desc",
-      "en": "Somebody is sleeping there",
-      "translated": "Qualcuno sta dormendo lì",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.35192.desc",
-      "en": "Somebody is sleeping there",
-      "translated": "Qualcuno sta dormendo lì",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

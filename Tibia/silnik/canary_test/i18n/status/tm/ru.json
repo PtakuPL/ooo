@@ -13750,5 +13750,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:59:28.005226Z"
+  },
+  "npc.ferus.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.611266Z"
+  },
+  "npc.gail.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.635360Z"
+  },
+  "npc.gail.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.635928Z"
+  },
+  "npc.gail.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.636788Z"
+  },
+  "npc.gail.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.637342Z"
+  },
+  "npc.gareth.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.658570Z"
+  },
+  "npc.gnombold.say_36": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Хорошо, тогда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.737495Z"
+  },
+  "npc.gnomilly.say_22": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Хорошо, тогда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.762051Z"
+  },
+  "npc.gnomilly.say_27": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Хорошо, тогда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.767094Z"
+  },
+  "npc.gnomilly.say_31": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Хорошо, тогда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.769333Z"
+  },
+  "npc.gnomilly.say_36": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Хорошо, тогда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.770584Z"
+  },
+  "npc.gnomus.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.789006Z"
+  },
+  "npc.gurbasch.stdmod_12": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Тогда нет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.839015Z"
+  },
+  "npc.gurbasch.stdmod_5": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Подожди!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.839910Z"
+  },
+  "npc.gurbasch.stdmod_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Тогда нет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.840735Z"
+  },
+  "npc.hairycles.say_66": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "Я понимаю.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.850595Z"
+  },
+  "npc.harlow.stdmod_2": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Ну что ж.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.864769Z"
+  },
+  "npc.harlow.stdmod_5": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Ну что ж.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.866497Z"
+  },
+  "npc.harlow.stdmod_8": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Ну что ж.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.867696Z"
+  },
+  "npc.harlow_vengoth.stdmod_2": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Ну что ж.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.870201Z"
+  },
+  "npc.haroun.say_10": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Хорошо, тогда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:42.872648Z"
   }
 }

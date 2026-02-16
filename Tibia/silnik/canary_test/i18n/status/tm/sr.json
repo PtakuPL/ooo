@@ -164742,5 +164742,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:00:30.172782Z"
+  },
+  "item.8518.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.550523Z"
+  },
+  "item.876.name": {
+    "src_hash": "f80a3a26775f8f87ce279ce2d0d9e29f",
+    "text": "мрављи траг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.555446Z"
+  },
+  "item.9117.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.568533Z"
+  },
+  "item.9518.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.594359Z"
+  },
+  "item.9695.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.607657Z"
+  },
+  "item.9893.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.616010Z"
+  },
+  "item.9895.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:31.617220Z"
+  },
+  "item.10802.name": {
+    "src_hash": "7cdd1533a4023f2b1b1208d48202a9fd",
+    "text": "мркли размак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:38.079303Z"
+  },
+  "item.10817.desc": {
+    "src_hash": "2f2d4b01c968aa63d42089b564b3d14d",
+    "text": "Ти зачини су сакупљени широм тибијанског света",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:38.080246Z"
+  },
+  "item.10817.name": {
+    "src_hash": "3fd9f5840a282e6b75f3db51534b68c5",
+    "text": "врећа оријенталних зачина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:38.080764Z"
+  },
+  "item.10818.desc": {
+    "src_hash": "2f2d4b01c968aa63d42089b564b3d14d",
+    "text": "Ти зачини су сакупљени широм тибијанског света",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:38.081517Z"
+  },
+  "item.10818.name": {
+    "src_hash": "3fd9f5840a282e6b75f3db51534b68c5",
+    "text": "врећа оријенталних зачина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:38.082016Z"
+  },
+  "item.10840.name": {
+    "src_hash": "82384884385fb0f5c725b7a4d31fe152",
+    "text": "димензионални портал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:38.083027Z"
+  },
+  "item.10841.name": {
+    "src_hash": "264dd3cf39f82396d0c013c52d1df86d",
+    "text": "стуб лобање",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:47.808438Z"
+  },
+  "item.10842.name": {
+    "src_hash": "82384884385fb0f5c725b7a4d31fe152",
+    "text": "димензионални портал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:47.808992Z"
+  },
+  "item.10847.name": {
+    "src_hash": "2f1c8942d5c82772e2160c9e6bb4820c",
+    "text": "црни кристали",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:47.809486Z"
+  },
+  "item.10856.name": {
+    "src_hash": "5d9dea2b07e51a404b3897cb7c1acb0c",
+    "text": "стубна лоза",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:47.809974Z"
+  },
+  "item.10857.name": {
+    "src_hash": "7f63b495b80b624d7dae270d2f5d5ecd",
+    "text": "раст стуба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:47.810435Z"
+  },
+  "item.10861.name": {
+    "src_hash": "f86546261cb3f2a9978e2749a592bbc9",
+    "text": "реп мандарине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:47.810817Z"
+  },
+  "item.10864.name": {
+    "src_hash": "b2b2e2a7ada5b01949e07145f5482206",
+    "text": "леецхблоом",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:55.145845Z"
+  },
+  "item.10865.name": {
+    "src_hash": "b8d7b2a4513a1837d24ce1d59b537cf3",
+    "text": "длакава љубичица",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:55.146429Z"
+  },
+  "item.10876.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "лобања",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:55.146832Z"
+  },
+  "item.10954.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "стуб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:55.147159Z"
+  },
+  "item.10977.name": {
+    "src_hash": "22f04c0bcc2c982078c621cd49589e08",
+    "text": "постоље од сафира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:55.147707Z"
+  },
+  "item.10980.name": {
+    "src_hash": "bf204141936562267c90f972fb7ecce2",
+    "text": "крварење",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:03:55.148108Z"
+  },
+  "item.10985.name": {
+    "src_hash": "dd301a3b4f30f137c4e6461bc0050c54",
+    "text": "покварени зид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:00.908469Z"
+  },
+  "item.10986.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "мермерни под",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:00.909193Z"
+  },
+  "item.10989.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "мермерни под",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:00.909817Z"
+  },
+  "item.1099.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:00.910706Z"
+  },
+  "item.10990.name": {
+    "src_hash": "dd301a3b4f30f137c4e6461bc0050c54",
+    "text": "покварени зид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:00.911820Z"
+  },
+  "item.10991.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "мермерни под",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:00.912489Z"
+  },
+  "item.10992.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "прозор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:07.118609Z"
+  },
+  "item.11.name": {
+    "src_hash": "e9fe5db6f8e6e8efd4557e827b528a52",
+    "text": "лифефлуид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:07.119642Z"
+  },
+  "item.110.desc": {
+    "src_hash": "21bf4007e93de4aaf5a95404b4602185",
+    "text": "Божо ти га је дао да сакупиш одређене тајне састојке.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:07.121092Z"
+  },
+  "item.11038.name": {
+    "src_hash": "88c45dafcfdeed8189b1e4802902e3f6",
+    "text": "орнамент од жада",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:07.121541Z"
+  },
+  "item.11047.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "стуб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:07.121825Z"
+  },
+  "item.11048.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "бакља",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:07.122254Z"
+  },
+  "item.11050.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "бакља",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:11.561082Z"
+  },
+  "item.11053.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "стуб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:11.561366Z"
+  },
+  "item.11056.name": {
+    "src_hash": "aab9e1de16f38176f86d7a92ba337a8d",
+    "text": "сто",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:11.561616Z"
+  },
+  "item.11057.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "стуб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:11.561924Z"
+  },
+  "item.11068.name": {
+    "src_hash": "e91aba42192b11d6305d402d12a91393",
+    "text": "дрва",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:11.562276Z"
+  },
+  "item.11090.name": {
+    "src_hash": "ff803cbd151bf2b3d9679b01a12afdb8",
+    "text": "украсна секира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:11.562631Z"
+  },
+  "item.11095.name": {
+    "src_hash": "ff803cbd151bf2b3d9679b01a12afdb8",
+    "text": "украсна секира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:19.149871Z"
+  },
+  "item.111.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "мртви човек",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:19.154555Z"
+  },
+  "item.11100.name": {
+    "src_hash": "b42459fad72c2fdc74786d3cd79dc876",
+    "text": "гвоздени случај",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:19.154938Z"
+  },
+  "item.11136.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:19.155280Z"
+  },
+  "item.11136.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:19.155676Z"
+  },
+  "item.11137.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:19.155998Z"
+  },
+  "item.11138.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:04:21.235388Z"
   }
 }

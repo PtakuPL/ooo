@@ -88998,5 +88998,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:31:07.022885Z"
+  },
+  "monster.enslaved_dwarf.voice_2": {
+    "src_hash": "0b07da94fb7c81ede59aa8706c76c5b8",
+    "text": "Krew!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.524459Z"
+  },
+  "monster.firestarter.voice_2": {
+    "src_hash": "416c5c54bd5caac949407af0505dd433",
+    "text": "PŁOŃ!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.543468Z"
+  },
+  "monster.troll_legionnaire.voice_1": {
+    "src_hash": "aa7ff3bde4dfce4c2ae8eca861db6fce",
+    "text": "Atak!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.575627Z"
+  },
+  "monster.lost_berserker.voice_2": {
+    "src_hash": "2f061fa67818fa4d628803439fc59289",
+    "text": "Śmierć! Śmierć! Śmierć!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.632564Z"
+  },
+  "monster.elf_arcanist.voice_4": {
+    "src_hash": "6ed28c4a01b2c0a91a9d0f731b898699",
+    "text": "Tha'shi Cenath!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.656420Z"
+  },
+  "monster.animated_rhino.voice_2": {
+    "src_hash": "f9fad38ce549fa6ef442ada9c42a1a7d",
+    "text": "WĘSZY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.684755Z"
+  },
+  "monster.deathbringer.voice_3": {
+    "src_hash": "f950dc4a1fd941ec27a883156c75c631",
+    "text": "ŚMIERĆ, ZNISZCZENIE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.851605Z"
+  },
+  "monster.the_plasmother.voice_2": {
+    "src_hash": "d6f5b28da8070b5ba23b924822cfd2d1",
+    "text": "Blubb Blubb",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:07.958826Z"
+  },
+  "monster.humorless_fungus.voice_1": {
+    "src_hash": "7ca2399084055ad89da1f6ae2834a0bf",
+    "text": "Przeżuwać przeżuwać przeżuwać!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:08.436196Z"
+  },
+  "monster.courage_leech.voice_1": {
+    "src_hash": "e5cfb03b964c897094e6bc5ed618b98c",
+    "text": "Syk.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:08.697352Z"
+  },
+  "monster.minishabaal.voice_5": {
+    "src_hash": "61629063f539d6dd945dc701537275bc",
+    "text": "On On On",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:08.856323Z"
   }
 }

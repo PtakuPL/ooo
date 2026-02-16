@@ -1,144 +1,18 @@
 {
-  "timestamp": "2026-02-16T20:33:44.636352Z",
+  "timestamp": "2026-02-16T20:34:28.811071Z",
   "checked_entries": 100,
-  "issues_found": 43,
+  "issues_found": 41,
   "issues_by_type": {
-    "identical_to_en": 36,
-    "identical_to_en_exempt": 11,
-    "artifact_token": 7,
-    "suspicious_log_low": 75,
-    "suspicious_log_critical": 55,
-    "suspicious_log_high": 70,
+    "identical_to_en": 31,
+    "identical_to_en_exempt": 13,
+    "artifact_token": 10,
+    "suspicious_log_critical": 77,
+    "suspicious_log_low": 17,
+    "suspicious_log_high": 106,
     "suspicious_rejected_critical": 23,
     "suspicious_rejected_high": 4
   },
   "issues": [
-    {
-      "key": "monster.the_pale_count.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.the_pale_count.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.ghazbaran.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.ghazbaran.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
     {
       "key": "monster.hirintror.desc",
       "lang": "sv",
@@ -313,6 +187,118 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "monster.azerus.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Azerus",
+      "translated": "Azerus"
+    },
+    {
+      "key": "monster.omrafir.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "monster.omrafir.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "monster.feroxa.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa2.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa2.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa4.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa4.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa3.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa3.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa5.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa5.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.the_pit_lord.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I'LL GET YOU ALL!",
+      "translated": "¡LOS CONSEGUIRÉ A TODOS!"
+    },
+    {
+      "key": "monster.deathbringer.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ALL WILL DIE!",
+      "translated": "¡TODOS MORIRÉIS!"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
     }
   ],
   "threshold": 10,

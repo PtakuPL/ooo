@@ -7910,5 +7910,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:32:17.110451Z"
+  },
+  "data.otservbr.global.npc.a.beautiful.girl.L53.318": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Итак, вы пришли, |PLAYERNAME|. Я надеялся, что ты не...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.938737Z"
+  },
+  "data.otservbr.global.npc.a.beggar.L82.1060": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Привет! Что это, что ты {want}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.939879Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L126.462": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.942207Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L127.463": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.943456Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L79.885": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.946776Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L80.886": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.948520Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L100.1108": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.949971Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L99.1107": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.953979Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L108.265": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.954798Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L109.266": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.955870Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L58.203": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "Приветствую люди! Считайте, что вам повезло, мне нужен {help}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.958035Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L65.205": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "Вы оказали мне услугу, и знания, которые вы ищете, станут вашими. Я растопил для тебя лед, теперь ты можешь проходить.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.959470Z"
+  },
+  "data.otservbr.global.npc.a.frog.L57.1456": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*вздох* Еще один тупой искатель приключений.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.962498Z"
+  },
+  "data.otservbr.global.npc.a.frog.L58.1457": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Да, до свидания и больше не приходи!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.963793Z"
+  },
+  "data.otservbr.global.npc.a.frog.L59.1458": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Ха! Этот идиот наконец ушел.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.964892Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L60.1103": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ах, я чувствую, что смертный снова ходит по этим древним залам. Простите, я вас почти не замечаю. Я так потерян в своих мыслях.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.966761Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L61.1104": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.967938Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L264.519": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:25.984274Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L135.320": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.005324Z"
+  },
+  "data.otservbr.global.npc.canary.L124.458": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Да, до свидания и больше не приходи!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.008826Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L65.994": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.010562Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L66.995": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.011165Z"
+  },
+  "data.otservbr.global.npc.captain.max.L86.660": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.014599Z"
+  },
+  "data.otservbr.global.npc.captain.max.L87.661": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.015497Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L69.1313": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.016546Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L70.1314": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.017148Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L107.1471": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.018378Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L98.708": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.020464Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L62.1026": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.021628Z"
+  },
+  "data.otservbr.global.npc.cassino.L251.350": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.024555Z"
+  },
+  "data.otservbr.global.npc.cassino.L252.351": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.025596Z"
+  },
+  "data.otservbr.global.npc.charlotta.L86.902": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.028929Z"
+  },
+  "data.otservbr.global.npc.chondur.L320.195": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.033505Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L186.167": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.042030Z"
+  },
+  "data.otservbr.global.npc.duncan.L185.163": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.049389Z"
+  },
+  "data.otservbr.global.npc.eleonore.L146.244": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.057724Z"
+  },
+  "data.otservbr.global.npc.galuna.L60.1205": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.075506Z"
+  },
+  "data.otservbr.global.npc.galuna.L61.1206": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.076737Z"
+  },
+  "data.otservbr.global.npc.gamon.L77.378": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.078439Z"
+  },
+  "data.otservbr.global.npc.gorn.L110.59": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.085889Z"
+  },
+  "data.otservbr.global.npc.gorn.L111.60": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.086645Z"
+  },
+  "data.otservbr.global.npc.graubart.L64.178": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "До свидания и не забывайте меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.087430Z"
+  },
+  "data.otservbr.global.npc.guide.alexena.L105.1376": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.090830Z"
+  },
+  "data.otservbr.global.npc.guide.behil.L103.613": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.096246Z"
+  },
+  "data.otservbr.global.npc.guide.davina.L104.1065": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.098982Z"
+  },
+  "data.otservbr.global.npc.guide.edna.L101.148": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.102016Z"
+  },
+  "data.otservbr.global.npc.guide.elena.L108.12": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.104810Z"
+  },
+  "data.otservbr.global.npc.guide.jonathan.L103.402": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.106183Z"
+  },
+  "data.otservbr.global.npc.guide.kunibert.L102.836": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "До свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:26.108914Z"
   }
 }

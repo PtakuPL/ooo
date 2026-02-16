@@ -140230,5 +140230,349 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:32:06.895902Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.633153Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.645089Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.660318Z"
+  },
+  "monster.war_golem.voice_2": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.682046Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.700214Z"
+  },
+  "monster.makara.name": {
+    "src_hash": "3c71ac3f76f14f19af29c607e4884b32",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.732516Z"
+  },
+  "monster.furious_orc_berserker.name": {
+    "src_hash": "772b66c763a11e082dc1489706711fc3",
+    "text": "Furious orco berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.861897Z"
+  },
+  "monster.soul_broken_harbinger.name": {
+    "src_hash": "d98b725dc666ed1e7b5d4ba04d5c915a",
+    "text": "Soul-broken presagio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.902496Z"
+  },
+  "monster.the_unarmored_voidborn.name": {
+    "src_hash": "07cb930827503b3e5b74dd25f068f7c5",
+    "text": "Unarmored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.948731Z"
+  },
+  "monster.the_unarmored_voidborn.desc": {
+    "src_hash": "07cb930827503b3e5b74dd25f068f7c5",
+    "text": "Unarmored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.951582Z"
+  },
+  "monster.eliz_the_unyielding_stop.name": {
+    "src_hash": "8574cb962fbf6e38b727df06e2976751",
+    "text": "Eliz unyielding stop",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.953869Z"
+  },
+  "monster.eliz_the_unyielding_stop.desc": {
+    "src_hash": "8574cb962fbf6e38b727df06e2976751",
+    "text": "Eliz unyielding stop",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.956035Z"
+  },
+  "monster.the_remorseless_corruptor.name": {
+    "src_hash": "3016a3b81bf64b22e5230e29ac00f8d0",
+    "text": "Remorseless corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.959445Z"
+  },
+  "monster.the_remorseless_corruptor.desc": {
+    "src_hash": "3016a3b81bf64b22e5230e29ac00f8d0",
+    "text": "Remorseless corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.962457Z"
+  },
+  "monster.the_armored_voidborn.name": {
+    "src_hash": "49e6d0915cce60def3f6164f1372dcce",
+    "text": "Armored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.978285Z"
+  },
+  "monster.the_armored_voidborn.desc": {
+    "src_hash": "49e6d0915cce60def3f6164f1372dcce",
+    "text": "Armored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.980496Z"
+  },
+  "monster.mezlon_the_defiler.name": {
+    "src_hash": "9d9b4227c6e97b944f700f930a785140",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.984870Z"
+  },
+  "monster.mezlon_the_defiler.desc": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.987284Z"
+  },
+  "monster.the_false_god.name": {
+    "src_hash": "d95ccc936c003306a1cd48f2332145de",
+    "text": "False god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.989852Z"
+  },
+  "monster.the_false_god.desc": {
+    "src_hash": "d95ccc936c003306a1cd48f2332145de",
+    "text": "False god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.992052Z"
+  },
+  "monster.mezlon_the_defiler_stop.name": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.995804Z"
+  },
+  "monster.mezlon_the_defiler_stop.desc": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:18.997941Z"
+  },
+  "monster.eliz_the_unyielding.name": {
+    "src_hash": "0a805a410bfc4dbce53e58ce3ef4b719",
+    "text": "Eliz unyielding",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.004605Z"
+  },
+  "monster.eliz_the_unyielding.desc": {
+    "src_hash": "0a805a410bfc4dbce53e58ce3ef4b719",
+    "text": "Eliz unyielding",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.006783Z"
+  },
+  "monster.paiz_the_pauperizer.name": {
+    "src_hash": "b5c4bcce70b016b9c05a18b604af224e",
+    "text": "Paiz pauperizer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.086187Z"
+  },
+  "monster.paiz_the_pauperizer.desc": {
+    "src_hash": "b5c4bcce70b016b9c05a18b604af224e",
+    "text": "Paiz pauperizer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.088394Z"
+  },
+  "monster.the_pit_lord.voice_2": {
+    "src_hash": "18bbb2a999bba52e72ad7adb03fca18e",
+    "text": "¡LOS CONSEGUIRÉ A TODOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.101005Z"
+  },
+  "monster.deathbringer.voice_2": {
+    "src_hash": "087eaaebc953e803fa0e7ce961902c20",
+    "text": "¡TODOS MORIRÉIS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.118472Z"
+  },
+  "monster.darakan_the_executioner.name": {
+    "src_hash": "dc8c85dd910e3089ad0defe64aac65a3",
+    "text": "Darakan executioner",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.121500Z"
+  },
+  "monster.darakan_the_executioner.desc": {
+    "src_hash": "dc8c85dd910e3089ad0defe64aac65a3",
+    "text": "Darakan executioner",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.123980Z"
+  },
+  "monster.orcus_the_cruel.name": {
+    "src_hash": "0e4d87e1268a4a411fb29ed1437ef3dc",
+    "text": "Orcus cruel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.134767Z"
+  },
+  "monster.orcus_the_cruel.desc": {
+    "src_hash": "0e4d87e1268a4a411fb29ed1437ef3dc",
+    "text": "Orcus cruel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.137289Z"
+  },
+  "monster.colerian_the_barbarian.name": {
+    "src_hash": "c80e973f0edce6768ab62ce2e43cd55c",
+    "text": "Colerian barbarian",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.142855Z"
+  },
+  "monster.colerian_the_barbarian.desc": {
+    "src_hash": "c80e973f0edce6768ab62ce2e43cd55c",
+    "text": "Colerian barbarian",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.145243Z"
+  },
+  "monster.the_hairy_one.name": {
+    "src_hash": "3219fc93ffca2b50e118402a406a6ca3",
+    "text": "Hairy one",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.153504Z"
+  },
+  "monster.the_hairy_one.desc": {
+    "src_hash": "3219fc93ffca2b50e118402a406a6ca3",
+    "text": "Hairy one",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.157091Z"
+  },
+  "monster.kreebosh_the_exile.name": {
+    "src_hash": "722f26c29d1acf90796125f35b8f7677",
+    "text": "Kreebosh exile",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.171212Z"
+  },
+  "monster.kreebosh_the_exile.desc": {
+    "src_hash": "722f26c29d1acf90796125f35b8f7677",
+    "text": "Kreebosh exile",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.173283Z"
+  },
+  "monster.snake_god_essence.name": {
+    "src_hash": "88f582e90e7bbd6cc82f9e47a445e537",
+    "text": "Essence de serpiente god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.188338Z"
+  },
+  "monster.snake_god_essence.desc": {
+    "src_hash": "88f582e90e7bbd6cc82f9e47a445e537",
+    "text": "Essence de serpiente god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.190467Z"
+  },
+  "monster.dracola.voice_2": {
+    "src_hash": "34ca3c0b42bbe1738a309c000505b2a7",
+    "text": "¡ESTÁIS TODOS CONDENADOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.206001Z"
+  },
+  "monster.azerus.name": {
+    "src_hash": "b4e4bfc24fbda1ea27b6d8c5a2f0ed0e",
+    "text": "Azerus2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.231500Z"
+  },
+  "monster.yalahari.name": {
+    "src_hash": "ab2d85f835d1d03374567616a8558491",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:34:19.243115Z"
   }
 }

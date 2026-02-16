@@ -12998,5 +12998,389 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:52:19.321922Z"
+  },
+  "data.otservbr.global.npc.asima.L179.1417": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.445226Z"
+  },
+  "data.otservbr.global.npc.aurita.L115.172": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.447052Z"
+  },
+  "data.otservbr.global.npc.aurita.L116.173": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.447588Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L138.860": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.448717Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L139.861": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.449683Z"
+  },
+  "data.otservbr.global.npc.azalea.L148.851": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.451173Z"
+  },
+  "data.otservbr.global.npc.azalea.L149.852": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.451954Z"
+  },
+  "data.otservbr.global.npc.azalea.L150.853": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.452628Z"
+  },
+  "data.otservbr.global.npc.battlemart.L67.1363": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.455663Z"
+  },
+  "data.otservbr.global.npc.beatrice.L87.769": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.458646Z"
+  },
+  "data.otservbr.global.npc.beatrice.L88.770": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Vi ses senare, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.459392Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L74.429": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.462041Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L95.1261": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.462846Z"
+  },
+  "data.otservbr.global.npc.brewster.L185.1484": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.465004Z"
+  },
+  "data.otservbr.global.npc.brewster.L186.1485": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.465799Z"
+  },
+  "data.otservbr.global.npc.brewster.L187.1486": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.466737Z"
+  },
+  "data.otservbr.global.npc.cedrik.L148.1392": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.480841Z"
+  },
+  "data.otservbr.global.npc.cedrik.L149.1393": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.481654Z"
+  },
+  "data.otservbr.global.npc.cedrik.L150.1394": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.482657Z"
+  },
+  "data.otservbr.global.npc.chuckles.L148.1321": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.486578Z"
+  },
+  "data.otservbr.global.npc.cipfried.L176.714": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.487009Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L185.166": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Hej då. Du är välkommen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.490886Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L89.116": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.492203Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L90.117": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Må din väg alltid vara jämn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.493179Z"
+  },
+  "data.otservbr.global.npc.dedoras.L310.221": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.495805Z"
+  },
+  "data.otservbr.global.npc.denominator.L265.154": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.496439Z"
+  },
+  "data.otservbr.global.npc.denominator.L59.153": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Hälsningar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.497209Z"
+  },
+  "data.otservbr.global.npc.elane.L243.586": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.505296Z"
+  },
+  "data.otservbr.global.npc.elane.L244.587": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.505824Z"
+  },
+  "data.otservbr.global.npc.eshaya.L134.673": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.511765Z"
+  },
+  "data.otservbr.global.npc.falonzo.L127.1063": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.514628Z"
+  },
+  "data.otservbr.global.npc.faloriel.L91.1318": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.515077Z"
+  },
+  "data.otservbr.global.npc.farhilorn.of.the.winter.court.L84.1007": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.516092Z"
+  },
+  "data.otservbr.global.npc.fenech.L172.1391": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.517593Z"
+  },
+  "data.otservbr.global.npc.ferus.L148.699": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.520031Z"
+  },
+  "data.otservbr.global.npc.ferus.L149.700": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.521097Z"
+  },
+  "data.otservbr.global.npc.ferus.L150.701": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.522059Z"
+  },
+  "data.otservbr.global.npc.frans.L133.255": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.525383Z"
+  },
+  "data.otservbr.global.npc.frederik.L156.762": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.528177Z"
+  },
+  "data.otservbr.global.npc.gail.L88.1479": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.533487Z"
+  },
+  "data.otservbr.global.npc.gareth.L170.1403": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.535654Z"
+  },
+  "data.otservbr.global.npc.ghorza.L140.1513": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.539726Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L153.923": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.542580Z"
+  },
+  "data.otservbr.global.npc.gnomus.L336.1017": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nåväl, hejdå då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.546324Z"
+  },
+  "data.otservbr.global.npc.hamish.L203.765": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Eller vill du bara titta på",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.562552Z"
+  },
+  "data.otservbr.global.npc.iptar.sin.L185.985": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Kom ihåg: Om du är svårt sårad eller förgiftad kan jag bota dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.572434Z"
+  },
+  "data.otservbr.global.npc.iptar.sin.L186.986": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.573084Z"
+  },
+  "data.otservbr.global.npc.isimov.L169.1003": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:37.575073Z"
   }
 }

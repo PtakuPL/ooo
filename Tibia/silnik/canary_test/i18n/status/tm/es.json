@@ -142646,5 +142646,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:58:32.840942Z"
+  },
+  "data.otservbr.global.npc.rashid.L261.633": {
+    "src_hash": "f5de40889c1308575b28481de36b712b",
+    "text": "¡Tómate todo el tiempo que necesites para decidir lo que quieres!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.142965Z"
+  },
+  "data.otservbr.global.npc.rashid.custom.L261.772": {
+    "src_hash": "dd6d3e1439b14785d2e8d63021ae836c",
+    "text": "¡Ah, un cliente! ¡Sea saludado, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.146911Z"
+  },
+  "data.otservbr.global.npc.rashid.custom.L262.773": {
+    "src_hash": "b5d7b3da558b7544621617c86c1611d7",
+    "text": "Adiós, |PLAYERNAME|, que los vientos guíen tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.150381Z"
+  },
+  "data.otservbr.global.npc.rashid.custom.L264.775": {
+    "src_hash": "f5de40889c1308575b28481de36b712b",
+    "text": "¡Tómate todo el tiempo que necesites para decidir lo que quieres!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.155451Z"
+  },
+  "data.otservbr.global.npc.rata.mari.L103.828": {
+    "src_hash": "42688ac614a5e89423cb1d67c882044d",
+    "text": "¿Mip? Quiero decir, ¡hola! Lo siento, |PLAYERNAME|... Ser {rat} me ha gustado mucho.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.159978Z"
+  },
+  "data.otservbr.global.npc.rata.mari.L104.829": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "¡Miep!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.163516Z"
+  },
+  "data.otservbr.global.npc.rata.mari.L105.830": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "¡Miep!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.166741Z"
+  },
+  "data.otservbr.global.npc.raymond.striker.L217.357": {
+    "src_hash": "fbe3c5eba4eaad3288ebf8e49e5f575c",
+    "text": "Sea saludado. ¿Hay algo que pueda {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.168469Z"
+  },
+  "data.otservbr.global.npc.razan.L168.1176": {
+    "src_hash": "188d7275719f706c91b86db85d8f7469",
+    "text": "Saludos |PLAYERNAME|. ¿Qué te lleva a mí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.171478Z"
+  },
+  "data.otservbr.global.npc.red.lilly.L138.363": {
+    "src_hash": "1f8a30ca0e809002cdd913f195d4d41c",
+    "text": "Hola cariño. Si necesitas equipo general o cosas así, dímelo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.173874Z"
+  },
+  "data.otservbr.global.npc.red.lilly.L140.365": {
+    "src_hash": "773e32e4141d8bfcee1e686f4ec2c8bd",
+    "text": "Por supuesto, simplemente navega por mis productos. Recuerda que si compras viales de aceite, hay un depósito de 5 de oro por el vacío.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.176489Z"
+  },
+  "data.otservbr.global.npc.richard.L200.340": {
+    "src_hash": "88654057e120b74698ee5b390118024b",
+    "text": "Hola, amigo. ¿Estás aquí por un {trade}? Acaban de recargar mis existencias.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.180081Z"
+  },
+  "data.otservbr.global.npc.riddler.L170.645": {
+    "src_hash": "806634769a083e47b18172f4f5aa465c",
+    "text": "|PLAYERNAME| ¡JEJEJE! ¡Otro tonto visita el {tower}! ¡Excelente!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.182780Z"
+  },
+  "data.otservbr.global.npc.riddler.L171.646": {
+    "src_hash": "69bb4e08c66f76e542c66f4a8dd80710",
+    "text": "¡JEJEJE! Sabía que no tienes estómago.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.184429Z"
+  },
+  "data.otservbr.global.npc.robson.L101.1613": {
+    "src_hash": "f15ca28635c84f3a71a98405285f0efe",
+    "text": "Hrmpf, diría bienvenido si tuviera ganas de mentir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.186580Z"
+  },
+  "data.otservbr.global.npc.rock.in.a.hard.place.L301.138": {
+    "src_hash": "3a2b14cf086d149e9e0dc2ab45cc9abe",
+    "text": "¡Todos en esta isla se han vuelto locos! Excepto tú y yo, al parecer. Hagamos {trade} como lo haría la gente normal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.189966Z"
+  },
+  "data.otservbr.global.npc.rock.in.a.hard.place.L302.139": {
+    "src_hash": "75b0bc0fd1f30783cb9ee5bc1e075d9e",
+    "text": "Prometo volver alguna vez, ¿quieres?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.191887Z"
+  },
+  "data.otservbr.global.npc.rock.in.a.hard.place.L303.140": {
+    "src_hash": "fc37d6cc8c1e3c8a75b846b7ac9789e3",
+    "text": "¡Ey! ¡No me dejes solo con todos estos locos!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.194070Z"
+  },
+  "data.otservbr.global.npc.rock.with.a.soft.spot.L144.552": {
+    "src_hash": "3a5f60f61842d9158e75ad7493c15786",
+    "text": "Sólo lo mejor para ti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.197438Z"
+  },
+  "data.otservbr.global.npc.romella.L123.641": {
+    "src_hash": "6bff94aca433e666d674818c008d7ec7",
+    "text": "¡Te doy la bienvenida, |PLAYERNAME|! ¡Supongo que estás buscando un negocio de armas finas!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.202438Z"
+  },
+  "data.otservbr.global.npc.romella.L124.642": {
+    "src_hash": "0d19e6031c51c4ebdc29986d3b10654f",
+    "text": "Adiós y trae más oro la próxima vez <chuckles>. Quiero decir, sería bueno verte de nuevo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:00:48.204341Z"
   }
 }

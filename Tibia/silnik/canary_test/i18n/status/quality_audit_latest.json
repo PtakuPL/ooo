@@ -1,60 +1,17 @@
 {
-  "timestamp": "2026-02-16T22:00:07.665214Z",
+  "timestamp": "2026-02-16T22:01:21.403642Z",
   "checked_entries": 100,
-  "issues_found": 11,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 2,
-    "artifact_token": 9,
-    "identical_to_en_exempt": 10,
-    "suspicious_log_high": 131,
-    "suspicious_log_low": 3,
-    "suspicious_log_critical": 66,
+    "identical_to_en_exempt": 11,
+    "artifact_token": 7,
+    "suspicious_log_critical": 121,
+    "suspicious_log_high": 78,
+    "suspicious_log_low": 1,
     "suspicious_rejected_critical": 143,
     "suspicious_rejected_high": 57
   },
   "issues": [
-    {
-      "key": "monster.ocyakao.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.ocyakao.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.dracola.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DOOMED!",
-      "translated": "¡ESTÁIS TODOS CONDENADOS!"
-    },
-    {
-      "key": "monster.ferumbras_mortal_shell.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I WILL MAKE ALL OF YOU SUFFER!",
-      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_8",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
-      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -89,8 +46,22 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

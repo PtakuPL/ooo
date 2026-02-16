@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-16T22:47:32.526878Z",
+  "timestamp": "2026-02-16T22:50:43.704337Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
   "warnings_count": 13,
   "ok_count": 11,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=34714 rate=224.788% window=6.0h top_lang=ro:13677 per_lang=[ro:13677(700.666%/critical),ru:8963(424.988%/critical),es:6225(222.639%/critical),pl:3145(206.094%/critical),it:1204(51.475%/warning)] per_domain=[items.json:21515(749.13%/critical),npc.json:6733(150.964%/critical),monsters.json:5018(174.843%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=34973 rate=225.196% window=6.0h top_lang=ro:13677 per_lang=[ro:13677(700.666%/critical),ru:8963(424.988%/critical),es:6335(223.299%/critical),pl:3294(209.542%/critical),it:1204(51.475%/warning)] per_domain=[items.json:21664(742.426%/critical),npc.json:6843(152.033%/critical),monsters.json:5018(174.843%/critical)]"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: pl:npc.json ma 866 guard_fail w blackliście",
@@ -24,15 +24,15 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 62h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (70s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (58s)",
-    "guard_report_fresh (30s)",
-    "dispatch_fresh (36s)",
+    "heartbeat_fresh (7s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (113s)",
+    "guard_report_fresh (19s)",
+    "dispatch_fresh (16s)",
     "worker_pid_alive (1330775)",
     "worker_process_topology_ok (main=1330775 matching=1 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=clean)",
-    "queue_freshness_ok (17s, WARN>900s CRIT>1800s)",
+    "queue_freshness_ok (209s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=31.7 cycle_delta=40 best_quality_drop=3.397%)",
+    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=34.9 cycle_delta=43 best_quality_drop=3.397%)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
     "repair_tuning_active (samples_2h=39)"
   ],
@@ -69,8 +69,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 31.689,
-    "cycle_delta": 40,
+    "active_minutes": 34.865,
+    "cycle_delta": 43,
     "best_quality_drop_pct": 3.397,
     "thresholds": {
       "max_active_minutes": 1440.0,

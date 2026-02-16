@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-16T23:00:08.115096Z",
-  "language": "sr",
+  "timestamp": "2026-02-16T23:02:32.907674Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 50,
+  "translated": 24,
   "entries": [
     {
-      "key": "npc.ahmet.say_5",
-      "en": "You don't have enough money.",
-      "translated": "Немате довољно новца.",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "npc.ahmet.say_6",
-      "en": "GREAT! If you ever need a job as my personal security guard, let me know. Here is the reward I promised you.",
-      "translated": "ОДЛИЧНО! Ако вам икада затреба посао као мој лични чувар, јавите ми. Ево награде коју сам ти обећао.",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "npc.ahmet.say_7",
-      "en": "Come back when you find my stuff.",
-      "translated": "Врати се кад нађеш моје ствари.",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "npc.ahmet.say_8",
-      "en": "You need 5000 gps and book with ancient legends.",
-      "translated": "Треба вам 5000 гпс и књига са древним легендама.",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "npc.ahmet.say_9",
-      "en": "You are not in this mission.",
-      "translated": "Ви нисте у овој мисији.",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.greet_msg_1",
-      "en": "You back. You know, you right. Brother is right. Fist not always good. Tell him that!",
-      "translated": "Вратио си се. Знаш, у праву си. Брат је у праву. Песница није увек добра. Реци му то!",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.greet_msg_2",
-      "en": "Whatcha do in my place?",
-      "translated": "Шта да радиш на мом месту?",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.multi_1",
-      "en": "Good! Me make shiny weapon. If you help me, I make one for you too. Like axe I wear. I need stuff. Listen. ...",
-      "translated": "Добро! Ја правим сјајно оружје. Ако ми помогнеш, направићу једну и за тебе. Као секиру коју носим. Требају ми ствари. Слушај. ...",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.multi_2",
-      "en": "Me need 100 iron ore. Then need crude iron. Then after that 50 behemoth fangs. And 50 lizard leather. You understand?",
-      "translated": "Треба ми 100 гвоздене руде. Онда је потребно сирово гвожђе. Онда после тога 50 очњака бехемота. И 50 гуштерова кожа. Разумете?",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.multi_3",
-      "en": "Help me yes or no?",
-      "translated": "Помозите ми да или не?",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_1",
-      "en": "YOURS? WHAT IS YOURS! NOTHING IS YOURS! IS MINE! GO AWAY, YES?!",
-      "translated": "ТВОЈ? ШТА ЈЕ ВАШЕ! НИШТА НИЈЕ ТВОЈЕ! ИС МИНЕ! ИДИ, ДА?!",
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_10",
-      "en": "You bring crude iron?",
-      "translated": "Доносиш сирово гвожђе?",
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_11",
-      "en": "You bring 50 behemoth fangs?",
-      "translated": "Доносиш 50 очњака бехемота?",
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_12",
-      "en": "You bring 50 lizard leather?",
-      "translated": "Доносиш 50 гуштера коже?",
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_13",
-      "en": "Axe is done! For you. Take. Wear like me.",
-      "translated": "Секира је готова! За тебе. Узми. Носите као ја.",
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_14",
-      "en": "Axe is not done yet!",
-      "translated": "Секира још није готова!",
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_15",
-      "en": "Oh. Easy. Okay. Please is good. Now don't say anything. Head aches. ",
-      "translated": "Ох. Лако. У реду. Молим те је добро. Не говори ништа. Главобоље. ",
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_16",
-      "en": "Good. You get 100 iron ore first. Come back.",
-      "translated": "Добро. Прво добијете 100 гвоздене руде. Врати се.",
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_17",
-      "en": "Good! Now bring crude iron.",
-      "translated": "Добро! Сада донеси сирово гвожђе.",
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.ajax.say_18",
-      "en": "Good! Now bring 50 behemoth fangs.",
-      "translated": "Добро! Сада донеси 50 очњака бехемота.",
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     }
   ]

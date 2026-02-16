@@ -25174,5 +25174,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:17:25.608602Z"
+  },
+  "cpp.cancel.construct_inside_house": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Puoi costruirlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.741943Z"
+  },
+  "cpp.cancel.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.742839Z"
+  },
+  "cpp.combat.earth": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "terra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.745714Z"
+  },
+  "cpp.game.offline_training_button_cancel": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.752969Z"
+  },
+  "cpp.inspect.attack": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Attacco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.755495Z"
+  },
+  "cpp.inspect.description": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.757856Z"
+  },
+  "cpp.protocol.level_label": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.774336Z"
+  },
+  "cpp.returnvalue.no_party_members_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Nessun membro del gruppo nel raggio d'azione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.778786Z"
+  },
+  "cpp.returnvalue.not_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Non hai abbastanza livello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.779812Z"
+  },
+  "cpp.returnvalue.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.780537Z"
+  },
+  "cpp.returnvalue.you_are_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Sei esausto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.782200Z"
+  },
+  "cpp.returnvalue.you_are_not_the_owner": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Non sei il proprietario.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.782550Z"
+  },
+  "cpp.skill.level": {
+    "src_hash": "c9e9a848920877e76685b2e4e76de38d",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.784269Z"
+  },
+  "cpp.title.name_37": {
+    "src_hash": "3a6270ea8ec1341b2cb7d0c8f671e107",
+    "text": "Morte dal basso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.792635Z"
+  },
+  "cpp.title.name_51": {
+    "src_hash": "766fa2e9a4d5ca2587ef6f40f7fb4e59",
+    "text": "Incantatore di serpenti",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:11.794481Z"
+  },
+  "cpp.augment.augments_label": {
+    "src_hash": "3bf857eb851edbb5d0122a2f56c2c08e",
+    "text": "\nPotenziamenti: ({0}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:16.540508Z"
+  },
+  "cpp.augment.damage": {
+    "src_hash": "da14a7168b547f35ea0c6fa9f50de63e",
+    "text": "danno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:16.540706Z"
+  },
+  "cpp.augment.format_base": {
+    "src_hash": "dc54bea4632ace9fb160b037fea86598",
+    "text": "{0} -> {1:+}% {2} {3}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:16.541565Z"
+  },
+  "cpp.augment.format_cooldown": {
+    "src_hash": "544be79d302efbc5f8613ef088309d6b",
+    "text": "{0} -> {1}{2}s {3}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:16.541817Z"
+  },
+  "cpp.augment.format_no_value": {
+    "src_hash": "0a80f1fc5203b9a4cfb998c9545b319c",
+    "text": "{0} -> {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:16.542009Z"
+  },
+  "cpp.augment.format_with_value": {
+    "src_hash": "3ea290c4a5fc79c644ebdacc9841f3a3",
+    "text": "{0} -> {1:+}% {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:22.538889Z"
+  },
+  "cpp.augment.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "guarigione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:22.539136Z"
+  },
+  "cpp.badge.name_1": {
+    "src_hash": "866513cf9da1225b68f7ddba852357b4",
+    "text": "Eroe Fledegel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:22.539370Z"
+  },
+  "cpp.badge.name_10": {
+    "src_hash": "3bcf13a179ce88693b131c2a06cee98f",
+    "text": "Giocatore globale (grado 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:22.539642Z"
+  },
+  "cpp.badge.name_11": {
+    "src_hash": "f3f20eb4a38b586035729259f702f3b2",
+    "text": "Giocatore globale (grado 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:22.539906Z"
+  },
+  "cpp.badge.name_15": {
+    "src_hash": "aa2045442a847a3fdb351b934395101e",
+    "text": "Matricola del Torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:28.768155Z"
+  },
+  "cpp.badge.name_16": {
+    "src_hash": "9474f91d37ea76ea708fd516780c6c0d",
+    "text": "Regolare del Torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:28.768425Z"
+  },
+  "cpp.badge.name_17": {
+    "src_hash": "41a32725f7431746def01d442c02a10b",
+    "text": "Eroe del torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:36.776210Z"
+  },
+  "cpp.badge.name_18": {
+    "src_hash": "fd942790a41b15497eba2518ac3af2fc",
+    "text": "Concorrente del torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:36.776461Z"
+  },
+  "cpp.badge.name_19": {
+    "src_hash": "dcb854249c04978e315145798e79815f",
+    "text": "Sfidante del torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:36.776694Z"
+  },
+  "cpp.badge.name_2": {
+    "src_hash": "c8c23d1ecc1bc4ba44108dbbfc8f4727",
+    "text": "Eroe veterano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:36.776887Z"
+  },
+  "cpp.badge.name_20": {
+    "src_hash": "d4675c48c7763eb2ec58da3658f0c697",
+    "text": "Maestro del torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:36.777101Z"
+  },
+  "cpp.badge.name_21": {
+    "src_hash": "5d7a24925d90015a268de468703d7d2e",
+    "text": "Campione del torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:44.139854Z"
+  },
+  "cpp.badge.name_3": {
+    "src_hash": "6776c826266920e800560c621811745c",
+    "text": "Eroe senior",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:44.140092Z"
+  },
+  "cpp.badge.name_4": {
+    "src_hash": "962f30ca16e6d44ae77192b43da0297a",
+    "text": "Antico eroe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:44.140287Z"
+  },
+  "cpp.badge.name_5": {
+    "src_hash": "3ad4a39c067765b570cbe1bf8bd24d00",
+    "text": "Eroe esaltato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:44.140474Z"
+  },
+  "cpp.badge.name_6": {
+    "src_hash": "36dd65f81f731b09330b25557dead495",
+    "text": "Tibia Lealista (grado 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:44.140969Z"
+  },
+  "cpp.badge.name_7": {
+    "src_hash": "bb5f7090a7a1fa38a66dd425d225b79e",
+    "text": "Tibia Lealista (grado 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:50.666059Z"
+  },
+  "cpp.badge.name_8": {
+    "src_hash": "a128a1dbc2cafd8e1c443c674aaacb8d",
+    "text": "Tibia Lealista (grado 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:50.666594Z"
+  },
+  "cpp.badge.name_9": {
+    "src_hash": "574951c030bb79855ca9d28cbd1f0292",
+    "text": "Giocatore globale (grado 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:50.666878Z"
+  },
+  "cpp.bed.nobody_sleeping": {
+    "src_hash": "c5bc51c4e1c3a4526609fc4bdd5589d6",
+    "text": "Nessuno dorme lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:50.667219Z"
+  },
+  "cpp.bed.sleeping": {
+    "src_hash": "e25169810744a47f596a64a5e415fdcc",
+    "text": "{0} sta dormendo lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:50.667500Z"
+  },
+  "cpp.bestiary.already_set_charm": {
+    "src_hash": "91bb37a3a8ee779633c104fdfbc8f9db",
+    "text": "Hai già impostato questo mostro su un altro {0} Amuleto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:55.085194Z"
+  },
+  "cpp.bestiary.charm_category_major": {
+    "src_hash": "3b329734e45b57e60f3df64c2cf412a9",
+    "text": "Maggiore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:55.085389Z"
+  },
+  "cpp.bestiary.charm_category_minor": {
+    "src_hash": "6fed0c378a4b4e8c1e7dc5c16dabb388",
+    "text": "Minore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:55.085587Z"
+  },
+  "cpp.bestiary.charm_max_level": {
+    "src_hash": "e08dde16fbfb0e0e40d64cc911254381",
+    "text": "Fascino al massimo livello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:55.085854Z"
+  },
+  "cpp.bestiary.creature_set_free": {
+    "src_hash": "1b9e7783d24bd32fa31f59b6ca3bfd0e",
+    "text": "La creatura è stata impostata! Sei un giocatore gratuito, quindi puoi beneficiare di un massimo di 2 rune! I giocatori Premium beneficiano di 6 e l'espansione del fascino ti consente di impostare le creature su tutte le rune contemporaneamente!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:55.086727Z"
   }
 }

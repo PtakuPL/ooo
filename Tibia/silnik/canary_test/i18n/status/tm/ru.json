@@ -17246,5 +17246,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:17:53.468872Z"
+  },
+  "otclient_modules.addgroup_otui.tr_4": {
+    "src_hash": "8e077ba9cc65969999798b34dfff99d5",
+    "text": "Добавить группу VIP (осталось пользовательских групп: %s)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.654001Z"
+  },
+  "otclient_modules.addvip_otui.tr_4": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Добавить в список VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.657319Z"
+  },
+  "otclient_modules.audio_otui.tr_1": {
+    "src_hash": "f07007e4d0d8b8db5e7ccca897fe9626",
+    "text": "Музыка громкость: %d",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.664289Z"
+  },
+  "otclient_modules.bestiary.tr_1": {
+    "src_hash": "7b2a7964e4f1d45c01e338885b83e942",
+    "text": "Удалить из Loot Список",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.669850Z"
+  },
+  "otclient_modules.bestiary.tr_2": {
+    "src_hash": "d59c6a86691ab35ccacadc368589342b",
+    "text": "Добавить до Loot Список",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.671683Z"
+  },
+  "otclient_modules.bestiary.tr_5": {
+    "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
+    "text": "Мастерство Animus для этого существа разблокировано.\nОно даёт %s%% бонусного опыта, плюс дополнительно 0.1%% за каждые 10 разблокированных мастерств Animus, максимум до 4%%.\nСейчас вы получаете %s%% бонусного опыта благодаря тому, что разблокировали %s мастерств Animus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.675117Z"
+  },
+  "otclient_modules.bestiary.tr_8": {
+    "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
+    "text": "Мастерство Animus для этого существа разблокировано.\nОно даёт %s%% бонусного опыта, плюс дополнительно 0.1%% за каждые 10 разблокированных мастерств Animus, максимум до 4%%.\nСейчас вы получаете %s%% бонусного опыта благодаря тому, что разблокировали %s мастерств Animus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.677997Z"
+  },
+  "otclient_modules.blessing.tr_12": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Ваш персонаж имеет промоушен, а аккаунт — премиум-статус.\nВ результате потеря XP уменьшена на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.684063Z"
+  },
+  "otclient_modules.blessing.tr_13": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Ваш персонаж имеет промоушен, а аккаунт — премиум-статус.\nВ результате потеря XP уменьшена на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.685468Z"
+  },
+  "otclient_modules.blessing.tr_7": {
+    "src_hash": "e8704a3a83bb64c5d87d0d743521e0b1",
+    "text": "меньше XP и очков навыков при следующей смерти в PvE.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.688871Z"
+  },
+  "otclient_modules.blessing.tr_9": {
+    "src_hash": "2372bb23070375ce2fbaf05acd5bcfa3",
+    "text": "меньше XP и очков навыков\nпри следующей смерти в PvP.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.690297Z"
+  },
+  "otclient_modules.boss_slots.tr_6": {
+    "src_hash": "0e2787224e96232b203eedfc541fe91e",
+    "text": "Разблокируется при 1500 очках боссов",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.693957Z"
+  },
+  "otclient_modules.bosstiary.tr_2": {
+    "src_hash": "0e78e5d0095735812e30246de45279e2",
+    "text": "Достигнув уровня Экспертизы, вы сможете выставить босса на Пьедестал Доблести.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.698137Z"
+  },
+  "otclient_modules.changename_otui.tr_4": {
+    "src_hash": "b315e1866d0715060e38cf1922640769",
+    "text": "Enter Новый Персонаж Имя",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.711548Z"
+  },
+  "otclient_modules.changename_otui.tr_8": {
+    "src_hash": "b315e1866d0715060e38cf1922640769",
+    "text": "Enter Новый Персонаж Имя",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.712951Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_3": {
+    "src_hash": "9bc87291763452b34e94052a2237531f",
+    "text": "Открыть a private сообщение канал",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.714459Z"
+  },
+  "otclient_modules.character.tr_77": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Осталось %s процентов",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.754816Z"
+  },
+  "otclient_modules.character.tr_78": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Осталось %s процентов",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.755904Z"
+  },
+  "otclient_modules.character.tr_79": {
+    "src_hash": "686d4ebf33f5dd41a66565edbdcc74fe",
+    "text": "У вас %s процентов",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.757014Z"
+  },
+  "otclient_modules.character.tr_81": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "У вас осталось %s часов и %s минут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.758782Z"
+  },
+  "otclient_modules.character.tr_83": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "У вас осталось %s часов и %s минут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.759961Z"
+  },
+  "otclient_modules.character.tr_84": {
+    "src_hash": "37f438e61c309c1f880c3bc228758207",
+    "text": "Вы не получите на 50%% больше опыта, потому что у вас нет премиума; сейчас вы получаете только 1x очков опыта",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.761527Z"
+  },
+  "otclient_modules.character.tr_85": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "У вас осталось %s часов и %s минут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.762685Z"
+  },
+  "otclient_modules.character.tr_87": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "У вас осталось %s часов и %s минут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.764113Z"
+  },
+  "otclient_modules.character.tr_89": {
+    "src_hash": "94da3d3061c3ff2ce498fa095e9bc741",
+    "text": "%s: %.0f минут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.765190Z"
+  },
+  "otclient_modules.character_otui.tr_11": {
+    "src_hash": "5e2f01b9ceaa11fd9371fb382d0b0952",
+    "text": "Постоянные слоты Prey:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.771136Z"
+  },
+  "otclient_modules.character_otui.tr_17": {
+    "src_hash": "1d795859db3b19d35218da20e59768de",
+    "text": "Бонусы XP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.772773Z"
+  },
+  "otclient_modules.character_otui.tr_22": {
+    "src_hash": "a3d303c4568830066e943204dbaed76e",
+    "text": "показать as список",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.775462Z"
+  },
+  "otclient_modules.character_otui.tr_91": {
+    "src_hash": "785b1077eb6c35c50e9d85ab2c48ed9f",
+    "text": "Коэффициент получения XP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.796894Z"
+  },
+  "otclient_modules.characterlist.tr_8": {
+    "src_hash": "0dcf96f59e8cc55b672ad64620c9aa2b",
+    "text": "Gratis Премиум Аккаунт",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.803897Z"
+  },
+  "otclient_modules.charms.tr_41": {
+    "src_hash": "40b5b945a40f4112b804a19d5fe75070",
+    "text": "Срабатывает на существе и наносит 5%% от его начальных HP как святой урон.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.816158Z"
+  },
+  "otclient_modules.client.tr_1": {
+    "src_hash": "a6fd85c927f1d79c138ea071232dea25",
+    "text": "Видеокарта не обнаружена — всё будет отрисовываться на CPU,\nпоэтому производительность будет очень низкой.\nОбновите драйвер видеокарты для лучшей производительности.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.832143Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_11": {
+    "src_hash": "2a168138fea7a469955b25472611fd6e",
+    "text": "Global игнорировать настройки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.834526Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_3": {
+    "src_hash": "bae9b1253b51e0fdc2e5b03098ac36ee",
+    "text": "Разрешить VIPs до сообщение you",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.837548Z"
+  },
+  "otclient_modules.console.tr_12": {
+    "src_hash": "20d95d6d38b9e423dd306045e5574261",
+    "text": "%s завершил(а) запрос",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.843858Z"
+  },
+  "otclient_modules.console.tr_27": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Добавить в список VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.850266Z"
+  },
+  "otclient_modules.console.tr_38": {
+    "src_hash": "4b1a4016ecd5fbee575eb6a45ca4348c",
+    "text": "Отключить чат режим, разрешить до ходить используя WASD",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.857844Z"
+  },
+  "otclient_modules.createaccount_otui.tr_13": {
+    "src_hash": "c427d457c29f111c9cdf139b4cab5605",
+    "text": "Pvp Введите:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.882042Z"
+  },
+  "otclient_modules.createaccount_otui.tr_17": {
+    "src_hash": "21b2027391af9dbabc4ab80ea288abd8",
+    "text": "Хотя бы одна заглавная буква (A-Z)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.884309Z"
+  },
+  "otclient_modules.createaccount_otui.tr_18": {
+    "src_hash": "05839bcdf9c1ccce36fd11b8ba014de3",
+    "text": "Хотя бы одна строчная буква (a-z)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.885362Z"
+  },
+  "otclient_modules.createaccount_otui.tr_22": {
+    "src_hash": "e6af0899ab561377f704c550f2a77fc1",
+    "text": "Этот сайт защищён reCAPTCHA; применяются Политика конфиденциальности и Условия использования Google.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.889034Z"
+  },
+  "otclient_modules.createaccount_otui.tr_30": {
+    "src_hash": "f1225612870607b8aa5903b836452c11",
+    "text": "Персонаж Sex:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.892439Z"
+  },
+  "otclient_modules.createaccount_otui.tr_33": {
+    "src_hash": "9f0dc4f598c7b2637121b949f7405f47",
+    "text": "Создать Your Персонаж",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.894465Z"
+  },
+  "otclient_modules.createaccount_otui.tr_34": {
+    "src_hash": "b26bd37607a4d19017ad1944a386649b",
+    "text": "Я принимаю Соглашение об обслуживании Tibia,\n Правила Tibia и Политику конфиденциальности Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.895773Z"
+  },
+  "otclient_modules.createaccount_otui.tr_9": {
+    "src_hash": "48b526d0b591335f8259bcdd2c34c6c4",
+    "text": "PvP Введите:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.901926Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_27": {
+    "src_hash": "c68e733ccc4e02fc0e08afa2c17f1013",
+    "text": "Откроется, если вы достигнете\nуровня Prowess для любого босса",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.913182Z"
+  },
+  "otclient_modules.data_options.tr_1": {
+    "src_hash": "4c3a53e5fb1f0eb6829e3ad6038519c7",
+    "text": "Прозрачность: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.917862Z"
+  },
+  "otclient_modules.data_options.tr_2": {
+    "src_hash": "3ed2fb1834262ce91935fc9425bfc745",
+    "text": "Дистанция: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.918759Z"
+  },
+  "otclient_modules.data_options.tr_3": {
+    "src_hash": "ed8503071beae28902d4e021bec4c1f6",
+    "text": "Прозрачность снарядов: %s%%",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.919660Z"
+  },
+  "otclient_modules.data_options.tr_4": {
+    "src_hash": "ffb4a3263911d3639ef1e62278008029",
+    "text": "Прозрачность эффектов: %s%%",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:58.920571Z"
   }
 }

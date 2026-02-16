@@ -1,95 +1,16 @@
 {
-  "timestamp": "2026-02-16T23:20:39.488258Z",
+  "timestamp": "2026-02-16T23:22:00.267489Z",
   "checked_entries": 100,
-  "issues_found": 28,
+  "issues_found": 17,
   "issues_by_type": {
-    "identical_to_en": 21,
-    "identical_to_en_exempt": 12,
+    "identical_to_en": 10,
+    "identical_to_en_exempt": 18,
     "artifact_token": 7,
-    "suspicious_log_low": 55,
-    "suspicious_log_critical": 59,
-    "suspicious_log_high": 86,
+    "suspicious_log_high": 200,
     "suspicious_rejected_critical": 165,
     "suspicious_rejected_high": 35
   },
   "issues": [
-    {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "client.spells.text2",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "exeta amp res",
-      "translated": "exeta amp res"
-    },
     {
       "key": "client.spells.text3",
       "lang": "es",

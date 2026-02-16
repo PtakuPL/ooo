@@ -3309,7 +3309,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:45:43.568119Z"
+    "updated_at": "2026-02-16T23:21:04.227574Z"
   },
   "quests.actions_wooden_trash.msg_1": {
     "src_hash": "464917965b3891096e423e2362e7f69c",
@@ -9445,7 +9445,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T02:39:41.871748Z"
+    "updated_at": "2026-02-16T23:21:07.723977Z"
   },
   "php.template.text1": {
     "src_hash": "c0fda951c2d5c4c92bb0fc32f64de7f4",
@@ -144030,5 +144030,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:20:14.067185Z"
+  },
+  "php.settings.text1": {
+    "src_hash": "353d8ff78b17c34b31c8ad01d525a804",
+    "text": "El complemento $plugin no existe o no tiene la configuración definida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:04.226672Z"
+  },
+  "php.settings.text2": {
+    "src_hash": "4cf7384b414a9d7d4624d7e776f98aee",
+    "text": "No se puede cargar el archivo de configuración para el complemento $plugin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:04.227089Z"
+  },
+  "php.upload_image.text1": {
+    "src_hash": "32e960d3879a6fb709a3d6de9507911b",
+    "text": "No existe una política P3P.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:21:07.724342Z"
   }
 }

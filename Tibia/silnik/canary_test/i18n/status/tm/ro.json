@@ -377,11 +377,11 @@
   },
   "npc.ferks.walkaway_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-13T23:17:15.289362Z"
+    "updated_at": "2026-02-16T21:04:23.645537Z"
   },
   "npc.gabel.say_6": {
     "src_hash": "8ebe07d7adacdd880130a981ebf53704",
@@ -8662,5 +8662,373 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:01:38.634454Z"
+  },
+  "npc.ferus.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.646580Z"
+  },
+  "npc.ferus.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.648901Z"
+  },
+  "npc.finarfin.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.649773Z"
+  },
+  "npc.finarfin.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.650528Z"
+  },
+  "npc.frans.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.657475Z"
+  },
+  "npc.frans.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.658192Z"
+  },
+  "npc.frosty.say_4": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.663304Z"
+  },
+  "npc.gail.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.667519Z"
+  },
+  "npc.gail.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.668217Z"
+  },
+  "npc.gail.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.668865Z"
+  },
+  "npc.gail.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.669375Z"
+  },
+  "npc.galuna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.669760Z"
+  },
+  "npc.galuna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.670517Z"
+  },
+  "npc.gamon.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.672268Z"
+  },
+  "npc.gareth.say_2": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.676774Z"
+  },
+  "npc.gareth.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.677600Z"
+  },
+  "npc.gewen.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.685793Z"
+  },
+  "npc.gewen.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.687364Z"
+  },
+  "npc.gewen.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.689374Z"
+  },
+  "npc.ghost_of_a_priest.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.690857Z"
+  },
+  "npc.gnomillion.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.720703Z"
+  },
+  "npc.gnomillion.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.721415Z"
+  },
+  "npc.gnomus.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.737809Z"
+  },
+  "npc.gorn.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.738580Z"
+  },
+  "npc.gorn.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.739400Z"
+  },
+  "npc.gorn.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.741585Z"
+  },
+  "npc.graubart.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "La revedere si nu ma uita!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.742227Z"
+  },
+  "npc.grof_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.761429Z"
+  },
+  "npc.grof_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.761853Z"
+  },
+  "npc.grof_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.762656Z"
+  },
+  "npc.guide_alexena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.769092Z"
+  },
+  "npc.guide_behil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.771499Z"
+  },
+  "npc.guide_davina.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.774168Z"
+  },
+  "npc.guide_edna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.776358Z"
+  },
+  "npc.guide_elena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.778948Z"
+  },
+  "npc.guide_kunibert.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.783056Z"
+  },
+  "npc.guide_luke.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.785516Z"
+  },
+  "npc.guide_rahlkora.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.788108Z"
+  },
+  "npc.guide_thelandil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.790316Z"
+  },
+  "npc.guide_tiko.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.792982Z"
+  },
+  "npc.gurbasch.stdmod_12": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Atunci nu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.794220Z"
+  },
+  "npc.gurbasch.stdmod_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Atunci nu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.795381Z"
+  },
+  "npc.hanna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.811203Z"
+  },
+  "npc.hanna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.813277Z"
+  },
+  "npc.harlow.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.814681Z"
+  },
+  "npc.harlow.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:04:23.816478Z"
   }
 }

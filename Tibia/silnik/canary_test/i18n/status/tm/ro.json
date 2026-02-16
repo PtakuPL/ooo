@@ -7814,5 +7814,237 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:52:21.185955Z"
+  },
+  "monster.old_wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Lup",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:48.837518Z"
+  },
+  "monster.old_wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "un lup",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:48.838003Z"
+  },
+  "monster.paladin_familiar.desc": {
+    "src_hash": "ca5da472352530cf72c844b3acd4546b",
+    "text": "un paladin familiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:57.632898Z"
+  },
+  "monster.druid_familiar.desc": {
+    "src_hash": "e61a30784795944503495de623229956",
+    "text": "un druid cunoscut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:57.633812Z"
+  },
+  "monster.poison_spider.name": {
+    "src_hash": "8c62307321ecf2d05a0da286f1c80943",
+    "text": "Păianjen otravitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:00.970370Z"
+  },
+  "monster.poison_spider.desc": {
+    "src_hash": "29e4d5a708aa1a39995da90540cfaac0",
+    "text": "un păianjen otrăvitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:00.970781Z"
+  },
+  "monster.spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Păianjen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:00.971041Z"
+  },
+  "monster.spider.desc": {
+    "src_hash": "e290d18d76cb96332184d7f6628df7d9",
+    "text": "un păianjen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:00.971313Z"
+  },
+  "monster.wasp.name": {
+    "src_hash": "5a2121f3548dc88faf3db43db327f7c7",
+    "text": "Viespe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:00.971587Z"
+  },
+  "monster.wasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "o viespe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:05.436049Z"
+  },
+  "monster.sandcrawler.desc": {
+    "src_hash": "3c2e7834b14594ada75997531f0ca317",
+    "text": "un sandcrawler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:05.437257Z"
+  },
+  "monster.frazzlemaw.desc": {
+    "src_hash": "c0f5e22af9df9b1a9765ff7501067c7e",
+    "text": "o gheaţă năucită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:05.438228Z"
+  },
+  "monster.guzzlemaw.desc": {
+    "src_hash": "7930fe8b403868cb6f2a7a25bf31b5e5",
+    "text": "un guzzlemaw",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:09.762511Z"
+  },
+  "monster.black_knight.desc": {
+    "src_hash": "d512d4fa0126ceeafe289e1c079421aa",
+    "text": "un cavaler negru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:09.762838Z"
+  },
+  "monster.shadowpelt.desc": {
+    "src_hash": "b3a3558a4e26d92a75362e465e69633d",
+    "text": "o pelă de umbră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:09.763707Z"
+  },
+  "monster.custodian.name": {
+    "src_hash": "21acacdcea41de8d1484f359710e7984",
+    "text": "Custode",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:13.166244Z"
+  },
+  "monster.custodian.desc": {
+    "src_hash": "3151892485bb3f274793fb76746584ff",
+    "text": "un custode",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:13.166651Z"
+  },
+  "monster.bullwark.name": {
+    "src_hash": "9511dd8da2f7ed118318552d2dc4e8e5",
+    "text": "Bulwark",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:13.167223Z"
+  },
+  "monster.bullwark.desc": {
+    "src_hash": "9511dd8da2f7ed118318552d2dc4e8e5",
+    "text": "Bulwark",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:13.167883Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:13.169498Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:17.661734Z"
+  },
+  "monster.apocalypse.name": {
+    "src_hash": "abf95deab7df5636aebeaea9177e1fa6",
+    "text": "Apocalypse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:17.662388Z"
+  },
+  "monster.apocalypse.desc": {
+    "src_hash": "abf95deab7df5636aebeaea9177e1fa6",
+    "text": "Apocalypse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:17.662885Z"
+  },
+  "monster.apprentice_sheng.name": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Ucenicul Sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:17.663459Z"
+  },
+  "monster.apprentice_sheng.desc": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Ucenicul Sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:17.664047Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:22.788367Z"
+  },
+  "monster.cyclops.desc": {
+    "src_hash": "c33d1f513f338e0abf82967d812c130b",
+    "text": "un ciclop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:22.788802Z"
+  },
+  "monster.cyclops_drone.name": {
+    "src_hash": "41883a13e98966ed4ea31f835189a419",
+    "text": "Cyclops Dronă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:22.789787Z"
+  },
+  "monster.cyclops_drone.desc": {
+    "src_hash": "a22ec2f18c4f33938d41d95aaf7bf1bc",
+    "text": "o dronă de ciclop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:55:26.287726Z"
   }
 }

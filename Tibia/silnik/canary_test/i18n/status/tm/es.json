@@ -141294,5 +141294,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:48:55.284137Z"
+  },
+  "npc.raymond_striker.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.197696Z"
+  },
+  "npc.romir.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.376684Z"
+  },
+  "npc.romir.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.379594Z"
+  },
+  "npc.sebastian.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.565491Z"
+  },
+  "npc.sebastian_nargor.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.571715Z"
+  },
+  "npc.seymour.stdmod_7": {
+    "src_hash": "d9b6dfa3f0c959d6f8601e4fc1cf4837",
+    "text": "¡Brillante! ¡Necesitamos buenos aventureros como tú! Si estás listo para aprender, pídeme una lección. Siempre puedes pedir palabras de diferentes colores, como ésta, para continuar la lección.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.678579Z"
+  },
+  "npc.seymour.stdmod_84": {
+    "src_hash": "3c4ab51b4829ad7853f2928a2c8dabb6",
+    "text": "Bueno, podría darte un valioso {lessons} o algo de {hints} general sobre el juego, o un pequeño {quest} si estás interesado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.689571Z"
+  },
+  "npc.seymour.stdmod_9": {
+    "src_hash": "8906dabad09202739fba87ff4e9a7e82",
+    "text": "¡Adiós, |PLAYERNAME|! Y recuerda: ¡No correr de un lado a otro en la academia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:12.694645Z"
   }
 }

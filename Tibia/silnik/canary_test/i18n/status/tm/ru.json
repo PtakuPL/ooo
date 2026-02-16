@@ -9710,5 +9710,245 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:52:14.723027Z"
+  },
+  "monster.wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:19.616293Z"
+  },
+  "monster.starving_wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:19.617406Z"
+  },
+  "monster.winter_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:19.618962Z"
+  },
+  "monster.war_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:19.625097Z"
+  },
+  "monster.wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:19.882447Z"
+  },
+  "monster.winter_wolf.voice_2": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Йууууууу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:19.882921Z"
+  },
+  "monster.eternal_guardian.voice_2": {
+    "src_hash": "f101de72b162824355dbd39b2fc6b155",
+    "text": "<треск>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:30.355159Z"
+  },
+  "monster.stone_devourer.name": {
+    "src_hash": "ba753450181dcc2e64fa71aa732fbe47",
+    "text": "Каменный Пожиратель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:30.355585Z"
+  },
+  "monster.stone_devourer.voice_1": {
+    "src_hash": "ed6860fb140274392e60cd99480ab0cd",
+    "text": "Рамбл!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:30.355879Z"
+  },
+  "monster.worker_golem.voice_1": {
+    "src_hash": "78ad435826d0dc80d4b62e23f58622a9",
+    "text": "ОХРАННАЯ СИГНАЛИЗАЦИЯ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:30.356241Z"
+  },
+  "monster.worker_golem.voice_2": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "клонк клонк клонк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:30.356936Z"
+  },
+  "monster.worker_golem.voice_3": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Рррттарррттаррртта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:33.408738Z"
+  },
+  "monster.worker_golem.voice_4": {
+    "src_hash": "0da72fa7c04d6470e238bfc95d61fb2c",
+    "text": "Жду заказов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:33.409210Z"
+  },
+  "monster.worker_golem.voice_5": {
+    "src_hash": "5a61c7bcdd5a6361509e65cf8e9229bc",
+    "text": "Секретная цель выполнена.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:33.409640Z"
+  },
+  "monster.war_golem.voice_2": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Клонк-клонк-клонк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:33.410869Z"
+  },
+  "monster.war_golem.voice_3": {
+    "src_hash": "033283400e090cb122e21051ec796f3b",
+    "text": "Привлечение врага!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:36.258060Z"
+  },
+  "monster.war_golem.voice_4": {
+    "src_hash": "64b7ee91982e3c4b16a2179e1c2a1223",
+    "text": "Уровень угрозы обработан.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:36.258536Z"
+  },
+  "monster.war_golem.voice_5": {
+    "src_hash": "92b3a3f3023375396ba4fb7f4c076ddb",
+    "text": "Зарядка систем вооружения!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:36.258955Z"
+  },
+  "monster.war_golem.voice_6": {
+    "src_hash": "26ac963c92fd5dab487d1d9d13f5dde3",
+    "text": "Идет ремонт авто.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:36.259351Z"
+  },
+  "monster.war_golem.voice_7": {
+    "src_hash": "2a055f992406f76b31328802ed691817",
+    "text": "Битва началась!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:36.259721Z"
+  },
+  "monster.war_golem.voice_8": {
+    "src_hash": "872ba75d1430bc85c84c9b20806ae42d",
+    "text": "Завершение инициализировано!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:39.520336Z"
+  },
+  "monster.war_golem.voice_9": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Рррттарррттаррртта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:39.520715Z"
+  },
+  "monster.diamond_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Оставаться. Покорный.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:39.522429Z"
+  },
+  "monster.shrieking_cry_stal.voice_1": {
+    "src_hash": "b3f5828c9a0e081d07951686a622e9b4",
+    "text": "Ля-ля-ля..АААААА!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:42.355967Z"
+  },
+  "monster.shrieking_cry_stal.voice_2": {
+    "src_hash": "18947e38966d6f87716f8a9fe2dc7fcf",
+    "text": "ВИЗГ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:42.356298Z"
+  },
+  "monster.enraged_crystal_golem.voice_1": {
+    "src_hash": "2e0b6a2f7fd47d8b5be9d720fc533346",
+    "text": "Крррр! Чшшр!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:42.356637Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Клонк-клонк-клонк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:42.357027Z"
+  },
+  "monster.damaged_worker_golem.voice_2": {
+    "src_hash": "fcaddb15aea25f7a29490882384ad896",
+    "text": "Отказ! Отказ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:42.357381Z"
+  },
+  "monster.damaged_worker_golem.voice_5": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Рррттарррттаррртта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:44.378611Z"
+  },
+  "monster.damaged_worker_golem.voice_6": {
+    "src_hash": "f91d867058d679822ad45966b3c625bd",
+    "text": "Опасность будет... хррр! Опасность!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:54:44.379160Z"
   }
 }

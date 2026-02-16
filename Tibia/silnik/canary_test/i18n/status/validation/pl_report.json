@@ -2,20 +2,20 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 23296,
+  "translated": 23362,
   "identical_to_en": 1854,
-  "placeholder_keys": 30290,
-  "coverage_pct": 43.5,
-  "issues_total": 40,
+  "placeholder_keys": 30224,
+  "coverage_pct": 43.6,
+  "issues_total": 41,
   "issues_by_type": {
-    "V6_newline_mismatch": 35,
+    "V6_newline_mismatch": 36,
     "V4_artifact": 4,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
     "HIGH": 4,
-    "MEDIUM": 35,
+    "MEDIUM": 36,
     "LOW": 0
   },
   "score": 99.9,
@@ -129,13 +129,13 @@
       "severity": "MEDIUM"
     },
     {
-      "key": "npc.iptar-sin.stdmod_2",
+      "key": "npc.gurbasch.stdmod_3",
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "npc.isimov.stdmod_32",
+      "key": "npc.iptar-sin.stdmod_2",
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-16T21:31:32.978158Z"
+  "validated_at": "2026-02-16T21:57:14.696928Z"
 }

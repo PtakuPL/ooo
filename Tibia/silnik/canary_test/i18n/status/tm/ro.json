@@ -13238,5 +13238,85 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:50:45.867007Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:26.991235Z"
+  },
+  "monster.training_machine.voice_6": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:27.432164Z"
+  },
+  "monster.training_machine.voice_15": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:27.579898Z"
+  },
+  "monster.war_golem.voice_4": {
+    "src_hash": "64b7ee91982e3c4b16a2179e1c2a1223",
+    "text": "Nivelul de amenințare procesat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:49.623180Z"
+  },
+  "monster.war_golem.voice_5": {
+    "src_hash": "92b3a3f3023375396ba4fb7f4c076ddb",
+    "text": "Încărcare sisteme de arme!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:49.623637Z"
+  },
+  "monster.war_golem.voice_6": {
+    "src_hash": "26ac963c92fd5dab487d1d9d13f5dde3",
+    "text": "Reparație auto în curs.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:49.624062Z"
+  },
+  "monster.war_golem.voice_7": {
+    "src_hash": "2a055f992406f76b31328802ed691817",
+    "text": "Bătălia este alăturată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:49.624447Z"
+  },
+  "monster.war_golem.voice_8": {
+    "src_hash": "872ba75d1430bc85c84c9b20806ae42d",
+    "text": "Terminare initializata!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:49.624799Z"
+  },
+  "monster.war_golem.voice_10": {
+    "src_hash": "05f2426d5da6511afee2c155ceadaab2",
+    "text": "Eliminat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:52.879102Z"
+  },
+  "monster.glooth_golem.desc": {
+    "src_hash": "ee17396f047a9db787266ed06ca557df",
+    "text": "un golem glooth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:55:52.881557Z"
   }
 }

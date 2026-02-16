@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 9.7,
+  "coverage_pct": 10.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:32:05.811331Z",
+  "checked_at": "2026-02-16T21:57:46.477784Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1742,33 +1742,6 @@
       "lang": "Grrrrunt"
     },
     {
-      "key": "monster.death_blob.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shlorz",
-      "pl": "Szlorz",
-      "lang": "Shlorz"
-    },
-    {
-      "key": "monster.chocolate_blob.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Splotch*",
-      "pl": "*Plama*",
-      "lang": "*Splotch*"
-    },
-    {
-      "key": "monster.chocolate_blob.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Smudge",
-      "pl": "Plama",
-      "lang": "Smudge"
-    },
-    {
       "key": "monster.frost_troll.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1794,15 +1767,6 @@
       "en": "Ommm!",
       "pl": "Omm!",
       "lang": "Ommm!"
-    },
-    {
-      "key": "monster.enslaved_dwarf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Blood!",
-      "pl": "Krew!",
-      "lang": "Blood!"
     },
     {
       "key": "monster.troll.voice_1",
@@ -3299,24 +3263,6 @@
       "lang": "Grrr."
     },
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh...",
-      "pl": "O...",
-      "lang": "Oh..."
-    },
-    {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uhhhh...",
-      "pl": "Uuuuhhh...",
-      "lang": "Uhhhh..."
-    },
-    {
       "key": "npc.a_sleeping_dragon.multi_2",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3558,60 @@
       "en": "Take this!",
       "pl": "Weź to!",
       "lang": "Take this!"
+    },
+    {
+      "key": "npc.barbara.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Masz to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.barnabas_dee.say_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahhhhhhhh! ",
+      "pl": "Aaaaaaachhhhhh! ",
+      "lang": "Ahhhhhhhh! "
+    },
+    {
+      "key": "npc.billy.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.billy.sendtrade_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sure.",
+      "pl": "Jasne.",
+      "lang": "Sure."
+    },
+    {
+      "key": "npc.billy.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HOW RUDE!",
+      "pl": "JAK NIEGRZECZNY, OPRYSKLIWY!",
+      "lang": "HOW RUDE!"
+    },
+    {
+      "key": "npc.blind_orc.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Futchi.",
+      "pl": "Futchi!",
+      "lang": "Futchi."
     }
   ],
   "length_ratio_issues": [

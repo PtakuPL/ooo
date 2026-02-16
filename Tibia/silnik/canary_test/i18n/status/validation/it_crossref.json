@@ -1,15 +1,15 @@
 {
   "lang": "it",
-  "coverage_pct": 9.9,
+  "coverage_pct": 10.3,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:31:29.654214Z",
-  "issues_total": 405,
+  "checked_at": "2026-02-16T21:57:10.440490Z",
+  "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 5
+    "length_ratio_crosscheck": 6
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -3659,6 +3659,15 @@
       "en_len": 9,
       "lang_ratio": 1.111,
       "pl_ratio": 3.556
+    },
+    {
+      "key": "npc.telas.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 0.833,
+      "pl_ratio": 3.167
     }
   ],
   "auto_fix": {

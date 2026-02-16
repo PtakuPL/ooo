@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 74.2,
+  "coverage_pct": 74.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:30:59.881060Z",
-  "issues_total": 491,
+  "checked_at": "2026-02-16T21:56:39.887027Z",
+  "issues_total": 490,
   "issues_by_type": {
-    "consistency_in_language": 67,
+    "consistency_in_language": 66,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 24
   },
@@ -693,20 +693,6 @@
         "scripts:scripts.prince_drazzak_knight.say_2",
         "scripts:scripts.prince_drazzak_paladin.say_2",
         "scripts:scripts.prince_drazzak_sorcerer.say_2"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Grand Master Oberon",
-      "variants": [
-        "Grand maestro oberon",
-        "grand maestro oberon"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.grand_master_oberon.name",
-        "monsters:monster.grand_master_oberon.desc"
       ]
     },
     {

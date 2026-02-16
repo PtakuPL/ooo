@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T21:31:27.806871Z",
+  "checked_at": "2026-02-16T21:57:07.904318Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -1320,87 +1320,6 @@
       "lang": "piano"
     },
     {
-      "key": "item.3607.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cheese",
-      "pl": "ser",
-      "lang": "cheese"
-    },
-    {
-      "key": "item.3681.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bush",
-      "pl": "krzak",
-      "lang": "bush"
-    },
-    {
-      "key": "item.38845.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fence",
-      "pl": "płot",
-      "lang": "fence"
-    },
-    {
-      "key": "item.39003.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "tentugly",
-      "pl": "Delikatnie",
-      "lang": "tentugly"
-    },
-    {
-      "key": "item.39551.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "seaweed",
-      "pl": "wodorost",
-      "lang": "seaweed"
-    },
-    {
-      "key": "item.39559.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "tree coral",
-      "pl": "koral drzewny",
-      "lang": "tree coral"
-    },
-    {
-      "key": "item.39563.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lava hole",
-      "pl": "lawa dziura",
-      "lang": "lava hole"
-    },
-    {
-      "key": "item.39565.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lava hole",
-      "pl": "lawa dziura",
-      "lang": "lava hole"
-    },
-    {
-      "key": "item.39705.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "reward box",
-      "pl": "nagroda pudełko",
-      "lang": "reward box"
-    },
-    {
       "key": "item.4060.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1410,51 +1329,6 @@
       "lang": "statue"
     },
     {
-      "key": "item.4313.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "corpse",
-      "pl": "zwłoki",
-      "lang": "corpse"
-    },
-    {
-      "key": "item.4314.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "corpse",
-      "pl": "zwłoki",
-      "lang": "corpse"
-    },
-    {
-      "key": "item.4837.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "icicle",
-      "pl": "Sopel",
-      "lang": "icicle"
-    },
-    {
-      "key": "item.5901.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "wood",
-      "pl": "drewno",
-      "lang": "wood"
-    },
-    {
-      "key": "item.5951.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fish tail",
-      "pl": "ryba ogon",
-      "lang": "fish tail"
-    },
-    {
       "key": "item.6123.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1462,69 +1336,6 @@
       "en": "piano",
       "pl": "piaNie",
       "lang": "piano"
-    },
-    {
-      "key": "item.6277.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cake",
-      "pl": "ciasto",
-      "lang": "cake"
-    },
-    {
-      "key": "item.6278.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cake",
-      "pl": "ciasto",
-      "lang": "cake"
-    },
-    {
-      "key": "item.6279.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "party cake",
-      "pl": "drużyna ciasto",
-      "lang": "party cake"
-    },
-    {
-      "key": "item.6352.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "swamp",
-      "pl": "bagno",
-      "lang": "swamp"
-    },
-    {
-      "key": "item.6578.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "party hat",
-      "pl": "drużyna kapelusz",
-      "lang": "party hat"
-    },
-    {
-      "key": "item.6594.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
-    },
-    {
-      "key": "item.6595.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snow",
-      "pl": "sNiew",
-      "lang": "snow"
     },
     {
       "key": "item.6596.name",
@@ -4405,6 +4216,195 @@
       "en": "Weak Soul",
       "pl": "Słaby Dusza",
       "lang": "Weak Soul"
+    },
+    {
+      "key": "monster.many_faces.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Many Faces",
+      "pl": "Wiele twarzy",
+      "lang": "Many Faces"
+    },
+    {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
+    },
+    {
+      "key": "monster.poor_soul.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Poor Soul",
+      "pl": "Biedna Dusza",
+      "lang": "Poor Soul"
+    },
+    {
+      "key": "monster.fluffy.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fluffy",
+      "pl": "Puchaty",
+      "lang": "Fluffy"
+    },
+    {
+      "key": "monster.fluffy.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fluffy",
+      "pl": "Puchaty",
+      "lang": "Fluffy"
+    },
+    {
+      "key": "monster.bones.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bones",
+      "pl": "Kości",
+      "lang": "Bones"
+    },
+    {
+      "key": "monster.bones.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bones",
+      "pl": "Kości",
+      "lang": "Bones"
+    },
+    {
+      "key": "monster.primitive.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Primitive",
+      "pl": "Prymitywny",
+      "lang": "Primitive"
+    },
+    {
+      "key": "monster.primitive.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guido who?",
+      "pl": "Guido kto?",
+      "lang": "Guido who?"
+    },
+    {
+      "key": "monster.primitive.voice_7",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die noob!",
+      "pl": "Die Nieob!",
+      "lang": "Die noob!"
+    },
+    {
+      "key": "monster.hacker.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hacker",
+      "pl": "Haker",
+      "lang": "Hacker"
+    },
+    {
+      "key": "monster.hacker.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a hacker",
+      "pl": "haker",
+      "lang": "a hacker"
+    },
+    {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "Śmierć!",
+      "lang": "Death!"
+    },
+    {
+      "key": "monster.lich.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lich",
+      "pl": "Licz",
+      "lang": "Lich"
+    },
+    {
+      "key": "monster.lich.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a lich",
+      "pl": "licz",
+      "lang": "a lich"
+    },
+    {
+      "key": "monster.undead_gladiator.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bring it!",
+      "pl": "Bring to!",
+      "lang": "Bring it!"
+    },
+    {
+      "key": "monster.bonebeast.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bonebeast",
+      "pl": "Kościana Bestia",
+      "lang": "Bonebeast"
+    },
+    {
+      "key": "monster.spectre.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Spectre",
+      "pl": "Widmo",
+      "lang": "Spectre"
+    },
+    {
+      "key": "monster.spectre.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a spectre",
+      "pl": "widmo",
+      "lang": "a spectre"
+    },
+    {
+      "key": "monster.ghost.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ghost",
+      "pl": "Duch",
+      "lang": "Ghost"
+    },
+    {
+      "key": "monster.ghost.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a ghost",
+      "pl": "duch",
+      "lang": "a ghost"
     }
   ],
   "length_ratio_issues": [

@@ -91054,5 +91054,277 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:03:31.865547Z"
+  },
+  "npc.corym_worker_02.multi_1": {
+    "src_hash": "4786eaea8d52650dd4ca1e34433b9831",
+    "text": "Potrzebujemy broni, by poprawić naszą sytuację.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.161236Z"
+  },
+  "npc.corym_worker_04.greet_msg_1": {
+    "src_hash": "f5e3120d0b7f2781e61a2e28e0e5cd9a",
+    "text": "Każdy człowiek jest kowalem własnego losu. Chcę znów ujrzeć światło dnia! Po prostu poczuć świeże powietrze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.165015Z"
+  },
+  "npc.corym_worker_04.greet_msg_2": {
+    "src_hash": "f5e3120d0b7f2781e61a2e28e0e5cd9a",
+    "text": "Każdy człowiek jest kowalem własnego losu. Chcę znów ujrzeć światło dnia! Po prostu poczuć świeże powietrze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.166798Z"
+  },
+  "npc.costello.greet_msg_1": {
+    "src_hash": "315117a09e2e5f339c9bb41cbdb72c84",
+    "text": "Witaj, |PLAYERNAME|! Powiedz śmiało, co cię tu sprowadza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.170630Z"
+  },
+  "npc.curos.greet_msg_1": {
+    "src_hash": "54771d09c948feb1769bd51c9a05d4ac",
+    "text": "Bądź pozdrowiony, bladoskóry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.185756Z"
+  },
+  "npc.dalbrect.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Do widzenia. Zapraszamy ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.202176Z"
+  },
+  "npc.dalbrect.greet_msg_1": {
+    "src_hash": "b2393ea7df0080fc59d56c719e0bbb62",
+    "text": "Bądź pozdrowiony, podróżniku |PLAYERNAME|. Witaj w mojej {hut}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.203659Z"
+  },
+  "npc.dancing_fairy.multi_2": {
+    "src_hash": "48eba4176f3059b7968230dd4b0c9c50",
+    "text": "Ale jest wróżka, która kiedyś mi o nim opowiedziała. Być może podzieli się swoją wiedzą. Możesz ją znaleźć w małej wiosce wróżek na południowym zachodzie Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.280990Z"
+  },
+  "npc.dane.greet_msg_1": {
+    "src_hash": "042f38056b2f1831092b50637a9db186",
+    "text": "Witamy w piwnicy z falami, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.285987Z"
+  },
+  "npc.daniel_steelsoul.farewell_msg_1": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "CHWAŁA BANOROWI!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.291006Z"
+  },
+  "npc.daniel_steelsoul.stdmod_2": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.311277Z"
+  },
+  "npc.daniel_steelsoul.walkaway_msg_1": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "CHWAŁA BANOROWI!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.312740Z"
+  },
+  "npc.dario.greet_1": {
+    "src_hash": "21b517b3ab7a281b76460d3e51fefb7e",
+    "text": "Ashari, |PLAYERNAME|. Jeśli walczysz na dystans, może zechcesz obejrzeć moje towary i zaklęcia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.315441Z"
+  },
+  "npc.dario.greet_msg_1": {
+    "src_hash": "21b517b3ab7a281b76460d3e51fefb7e",
+    "text": "Ashari, |PLAYERNAME|. Jeśli walczysz na dystans, może zechcesz obejrzeć moje towary i zaklęcia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.317174Z"
+  },
+  "npc.denominator.greet_msg_1": {
+    "src_hash": "328200f8a9c7c2a9c9d051689bd862d8",
+    "text": "Wprowadź odpowiedzi na następujące {questions}:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.356305Z"
+  },
+  "npc.dermot.farewell_msg_1": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Do zobaczenia ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.367674Z"
+  },
+  "npc.dermot.walkaway_msg_1": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Do zobaczenia ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.375574Z"
+  },
+  "npc.dixi.stdmod_28": {
+    "src_hash": "ce6b61c8f2e16d8a4b54ad73138ee5ca",
+    "text": "Po prostu poproś mnie o {trade}, żeby zobaczyć, co od ciebie kupuję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.390315Z"
+  },
+  "npc.dixi.walkaway_msg_1": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Eee, tak, dobrego dnia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.409919Z"
+  },
+  "npc.doctor_gnomedix.greet_msg_1": {
+    "src_hash": "62e334145868f2a562254cca26636c92",
+    "text": "Stań spokojnie na platformie badawczej, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.411443Z"
+  },
+  "npc.doubleday.greet_msg_1": {
+    "src_hash": "ad0d8c54f5ad8eace6e30a7a02db62da",
+    "text": "Witaj, hmm po prostu... chwilę zaczekaj, zaraz będę. Kończę tylko ten {experiment}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.456885Z"
+  },
+  "npc.duncan.greet_msg_1": {
+    "src_hash": "dd0c5a6ebb54ab7a4eb1e1fd85a5799f",
+    "text": "Cześć, podejdź bliżej. Spójrz na moje towary.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.482008Z"
+  },
+  "npc.duria.greet_msg_1": {
+    "src_hash": "86ccce933c59e083001a3775642a2635",
+    "text": "Hiho, bracie-rycerzu |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.498662Z"
+  },
+  "npc.duria.walkaway_msg_1": {
+    "src_hash": "11d751d2df754e2029e4f6214d040890",
+    "text": "Uważaj tam, jawoll.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.501597Z"
+  },
+  "npc.eclesius.greet_msg_1": {
+    "src_hash": "c098e886ff29c2d14acb4d167fdb587f",
+    "text": "Kim jesteś? Czego chcesz? Wyglądasz na zbyt doświadczonego, by zostać moim asystentem. Proszę, odejdź.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.505724Z"
+  },
+  "npc.eddy.greet_msg_1": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Witaj |PLAYERNAME|! Potrzebujesz wyposażenia do domu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.527216Z"
+  },
+  "npc.edgar_ellen.farewell_msg_1": {
+    "src_hash": "128c1b29a7690881dd1a8ecbfaedd038",
+    "text": "Do widzenia i żegnaj, mój przyjacielu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.530717Z"
+  },
+  "npc.edowir.farewell_msg_1": {
+    "src_hash": "65fc24ac414996a095430cbce165952a",
+    "text": "Wróć, kiedy tylko będziesz potrzebować mądrości.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.554580Z"
+  },
+  "npc.edowir.greet_msg_1": {
+    "src_hash": "0740f98b9fc488bf49d92f1690772f42",
+    "text": "Och, cześć |PLAYERNAME|! Jak miło, że odwiedzasz takiego starego człowieka jak ja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.556279Z"
+  },
+  "npc.edowir.walkaway_msg_1": {
+    "src_hash": "65fc24ac414996a095430cbce165952a",
+    "text": "Wróć, kiedy tylko będziesz potrzebować mądrości.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.559447Z"
+  },
+  "npc.elathriel.say_2": {
+    "src_hash": "4b452bff4087a52f9bdca4d82a2a7b7e",
+    "text": "Wróć, gdy będziesz mieć dość pieniędzy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.600889Z"
+  },
+  "npc.eleonore.greet_msg_1": {
+    "src_hash": "65f937d87cd51fc2a63e02196208a9e5",
+    "text": "Bądź pozdrowiony. Co cię {here} sprowadza?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.620230Z"
+  },
+  "npc.emael.farewell_msg_1": {
+    "src_hash": "9dd6f7746b4df0255bd73d567d9aece4",
+    "text": "Życzę ci udanego polowania. Do widzenia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.693624Z"
+  },
+  "npc.emael.walkaway_msg_1": {
+    "src_hash": "5c48d766485716d20a6b9ac0b5136c7f",
+    "text": "Udanych łowów!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:05:32.702204Z"
   }
 }

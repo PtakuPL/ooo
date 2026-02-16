@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:04:54.415233Z",
-  "language": "es",
+  "timestamp": "2026-02-16T21:05:33.312070Z",
+  "language": "pl",
   "json_file": "npc.json",
-  "translated": 24,
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "npc.denominator.greet_msg_1",
+      "en": "Enter answers for the following {questions}:",
+      "translated": "Wprowadź odpowiedzi na następujące {questions}:",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "npc.dermot.farewell_msg_1",
+      "en": "See you again.",
+      "translated": "Do zobaczenia ponownie.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "npc.dermot.walkaway_msg_1",
+      "en": "See you again.",
+      "translated": "Do zobaczenia ponownie.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "npc.dixi.stdmod_28",
+      "en": "Just ask me for a {trade} to see what I buy from you.",
+      "translated": "Po prostu poproś mnie o {trade}, żeby zobaczyć, co od ciebie kupuję.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "npc.dixi.walkaway_msg_1",
+      "en": "Um yeah, good day.",
+      "translated": "Eee, tak, dobrego dnia.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "npc.doctor_gnomedix.greet_msg_1",
+      "en": "Stand still on the examination platform |PLAYERNAME|.",
+      "translated": "Stań spokojnie na platformie badawczej, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "npc.doubleday.greet_msg_1",
+      "en": "Hello there, hmm just... just wait right there, I'll be with you in a second. Just getting this {experiment} done...",
+      "translated": "Witaj, hmm po prostu... chwilę zaczekaj, zaraz będę. Kończę tylko ten {experiment}...",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "npc.duncan.greet_msg_1",
+      "en": "Hi, come closer. Have a look at my wares.",
+      "translated": "Cześć, podejdź bliżej. Spójrz na moje towary.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "npc.duria.greet_msg_1",
+      "en": "Hiho, fellow knight |PLAYERNAME|!",
+      "translated": "Hiho, bracie-rycerzu |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "npc.duria.walkaway_msg_1",
+      "en": "Be carefull out there, jawoll.",
+      "translated": "Uważaj tam, jawoll.",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "npc.eclesius.greet_msg_1",
+      "en": "Who are you? What do you want? You seem too experienced to become my assistant. Please leave.",
+      "translated": "Kim jesteś? Czego chcesz? Wyglądasz na zbyt doświadczonego, by zostać moim asystentem. Proszę, odejdź.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.eddy.greet_msg_1",
+      "en": "Hello |PLAYERNAME|! Do you need some equipment for your house?",
+      "translated": "Witaj |PLAYERNAME|! Potrzebujesz wyposażenia do domu?",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.edgar_ellen.farewell_msg_1",
+      "en": "Goodbye and farewell, my friend.",
+      "translated": "Do widzenia i żegnaj, mój przyjacielu.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.edowir.farewell_msg_1",
+      "en": "Come back whenever you're in need of wisdom.",
+      "translated": "Wróć, kiedy tylko będziesz potrzebować mądrości.",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "npc.edowir.greet_msg_1",
+      "en": "Oh, hello |PLAYERNAME|! How nice of you to visit an old man like me.",
+      "translated": "Och, cześć |PLAYERNAME|! Jak miło, że odwiedzasz takiego starego człowieka jak ja.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "npc.edowir.walkaway_msg_1",
+      "en": "Come back whenever you're in need of wisdom.",
+      "translated": "Wróć, kiedy tylko będziesz potrzebować mądrości.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "npc.elathriel.say_2",
+      "en": "Come back when you have enough money.",
+      "translated": "Wróć, gdy będziesz mieć dość pieniędzy.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.eleonore.greet_msg_1",
+      "en": "Be greeted. What brings you {here}?",
+      "translated": "Bądź pozdrowiony. Co cię {here} sprowadza?",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.emael.farewell_msg_1",
+      "en": "I wish you a good hunt. Goodbye!",
+      "translated": "Życzę ci udanego polowania. Do widzenia!",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.emael.walkaway_msg_1",
+      "en": "Good hunting!",
+      "translated": "Udanych łowów!",
+      "source": "simple"
     }
   ]
 }

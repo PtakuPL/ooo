@@ -14334,5 +14334,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:12:29.446176Z"
+  },
+  "monster.dworc_voodoomaster.voice_1": {
+    "src_hash": "3f40d9293ed4d1efdd9091e86d4733e1",
+    "text": "Вырасти трук гррррр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.003539Z"
+  },
+  "monster.dworc_voodoomaster.voice_2": {
+    "src_hash": "b4a06d7b380058bb8db2b239c0999e28",
+    "text": "Тормозите бррретц!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.004996Z"
+  },
+  "monster.dworc_voodoomaster.voice_3": {
+    "src_hash": "66802e919c17a75253daf8d4556a6918",
+    "text": "Прек тарс, декклеп зурк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.005669Z"
+  },
+  "monster.dworc_venomsniper.voice_1": {
+    "src_hash": "3f40d9293ed4d1efdd9091e86d4733e1",
+    "text": "Вырасти трук гррррр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.026324Z"
+  },
+  "monster.dworc_venomsniper.voice_2": {
+    "src_hash": "b4a06d7b380058bb8db2b239c0999e28",
+    "text": "Тормозите бррретц!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.026780Z"
+  },
+  "monster.dworc_venomsniper.voice_3": {
+    "src_hash": "66802e919c17a75253daf8d4556a6918",
+    "text": "Прек тарс, декклеп зурк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.027344Z"
+  },
+  "monster.orc.voice_1": {
+    "src_hash": "3f40d9293ed4d1efdd9091e86d4733e1",
+    "text": "Вырасти трук гррррр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.057676Z"
+  },
+  "monster.orc.voice_2": {
+    "src_hash": "66802e919c17a75253daf8d4556a6918",
+    "text": "Прек тарс, декклеп зурк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.058364Z"
+  },
+  "monster.orc_sambackpack.voice_2": {
+    "src_hash": "3f40d9293ed4d1efdd9091e86d4733e1",
+    "text": "Вырасти трук гррррр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.531357Z"
+  },
+  "monster.orc_sambackpack.voice_3": {
+    "src_hash": "66802e919c17a75253daf8d4556a6918",
+    "text": "Прек тарс, декклеп зурк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.531963Z"
+  },
+  "monster.general_murius.voice_2": {
+    "src_hash": "2277c7ad605c6a0566f6518314a3bedf",
+    "text": "Почувствуйте силу Мух'Та!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:35.846902Z"
+  },
+  "monster.minotaur_mage.voice_1": {
+    "src_hash": "d022d374926a7e2c1b71d37312847922",
+    "text": "Узнай тайну смерти!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:48.721478Z"
+  },
+  "monster.minotaur_mage.voice_2": {
+    "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
+    "text": "Каплар!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:48.721893Z"
+  },
+  "monster.pirat_bombardier.name": {
+    "src_hash": "b5dd6b5fc12809349fde92d0fea70da1",
+    "text": "Пират-бомбардир",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:48.722336Z"
+  },
+  "monster.pirat_bombardier.desc": {
+    "src_hash": "05fc3cb00586dd06d9b301fb3f9ec66e",
+    "text": "пират-бомбардировщик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:48.722735Z"
+  },
+  "monster.enslaved_dwarf.name": {
+    "src_hash": "5bfca99956cd35650ed523bfcca9cd89",
+    "text": "Порабощенный гном",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:51.843343Z"
+  },
+  "monster.enslaved_dwarf.desc": {
+    "src_hash": "fa7d3d2f8f71b66feca51d0d8454ce7a",
+    "text": "порабощенный гном",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:51.844320Z"
+  },
+  "monster.enslaved_dwarf.voice_1": {
+    "src_hash": "3fde9ec252c020d3853740e40e442278",
+    "text": "Лаять!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:51.845042Z"
+  },
+  "monster.corym_skirmisher.name": {
+    "src_hash": "960bdaa717156b77a33f699241db867c",
+    "text": "Корим-Стрелок",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:51.845822Z"
+  },
+  "monster.corym_skirmisher.desc": {
+    "src_hash": "7000c4d399221ddc90a3653ace1d196f",
+    "text": "коримский застрельщик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:51.846891Z"
+  },
+  "monster.corym_skirmisher.voice_1": {
+    "src_hash": "d1ee069977bbabe7c7f4d7bddcf8c47a",
+    "text": "Писк! Писк!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:54.374324Z"
+  },
+  "monster.minotaur_poacher.name": {
+    "src_hash": "8c0d7bfaff875ed9d5829cef9e853fa1",
+    "text": "Минотавр-браконьер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:20:54.375400Z"
   }
 }

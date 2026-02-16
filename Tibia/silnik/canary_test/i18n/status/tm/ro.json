@@ -14614,5 +14614,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:19:58.845738Z"
+  },
+  "monster.iron_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Eroare. ÎNCĂRCARE 'PROGRAM',8,1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:01.640371Z"
+  },
+  "monster.iron_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Rămâne. Ascultător.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:01.641056Z"
+  },
+  "monster.golden_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Eroare. ÎNCĂRCARE 'PROGRAM',8,1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:01.647408Z"
+  },
+  "monster.golden_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Rămâne. Ascultător.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:01.648024Z"
+  },
+  "monster.shrieking_cry_stal.name": {
+    "src_hash": "0b91f0133e333e0de1ea41375c112e6f",
+    "text": "Strigăt-Stal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:24.689409Z"
+  },
+  "monster.shrieking_cry_stal.desc": {
+    "src_hash": "aa8a5f924e4c6cb53090b97cb8378576",
+    "text": "un strigăt de cristal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:24.689912Z"
+  },
+  "monster.shrieking_cry_stal.voice_2": {
+    "src_hash": "18947e38966d6f87716f8a9fe2dc7fcf",
+    "text": "SCRIT...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:21:24.691253Z"
   }
 }

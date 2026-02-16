@@ -16134,5 +16134,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:45:28.579608Z"
+  },
+  "actions.golden.msg_1": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:47:01.114035Z"
+  },
+  "actions.keys.msg_1": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Ai cincisprezece minute să-l ucizi și să jefuiești acest șef, altfel vei pierde această șansă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:47:01.114882Z"
+  },
+  "actions.hireling_foods.msg_too_full": {
+    "src_hash": "883d6385bdd0fda404b168b90f087063",
+    "text": "Ești încă prea plin pentru a mânca orice fel de mâncare gourmet pentru o vreme.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:47:01.115536Z"
   }
 }

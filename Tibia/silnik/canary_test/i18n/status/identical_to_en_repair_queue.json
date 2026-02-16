@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T22:43:58.483723Z",
+  "timestamp": "2026-02-16T22:47:15.161903Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 708,
+  "entries_total": 707,
   "entries_by_lang": {
     "es": 294,
     "pl": 169,
@@ -73,11 +73,11 @@
     "de": 659,
     "fr": 589,
     "hu": 663,
-    "it": 515,
+    "it": 514,
     "nl": 691,
     "pt": 620,
     "ro": 543,
-    "ru": 286,
+    "ru": 276,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -621,12 +621,6 @@
     },
     {
       "lang": "it",
-      "json_file": "actions.json",
-      "identical_to_en": 1,
-      "domain_priority": 4
-    },
-    {
-      "lang": "it",
       "json_file": "modules.json",
       "identical_to_en": 4,
       "domain_priority": 5
@@ -952,7 +946,7 @@
     {
       "lang": "ru",
       "json_file": "scripts.json",
-      "identical_to_en": 132,
+      "identical_to_en": 122,
       "domain_priority": 9
     },
     {
@@ -1319,6 +1313,12 @@
       "lang": "bg",
       "json_file": "cpp.json",
       "identical_to_en": 158,
+      "domain_priority": 9
+    },
+    {
+      "lang": "bg",
+      "json_file": "scripts.json",
+      "identical_to_en": 153,
       "domain_priority": 9
     }
   ],

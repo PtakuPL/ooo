@@ -15510,5 +15510,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:45:13.545457Z"
+  },
+  "raid.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Охотник",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:25.986427Z"
+  },
+  "raid.rats.name": {
+    "src_hash": "9a68a64b35cbc7d56661485f0c4349df",
+    "text": "Крысы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:43.543416Z"
+  },
+  "raid.orcs.name": {
+    "src_hash": "b94646381d8b39f166f84024e5fc54fc",
+    "text": "Орки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:43.543957Z"
+  },
+  "raid.yeti.name": {
+    "src_hash": "9cb073d5208162d71991a6077288e01e",
+    "text": "Йети",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:50.611006Z"
   }
 }

@@ -22798,5 +22798,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:45:04.447139Z"
+  },
+  "actions.quests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:04.981117Z"
+  },
+  "actions.random_items.say_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Hai trovato ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:04.981594Z"
+  },
+  "actions.random_items.say_2": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Non hai trovato nulla di utile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:11.395939Z"
+  },
+  "actions.random_items.say_3": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Non hai trovato nulla di utile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:11.396416Z"
+  },
+  "actions.premium_scroll.msg_max_days": {
+    "src_hash": "1010e4707b50a67b7c38e725a698d597",
+    "text": "Non puoi acquistare più di {max} giorni di account premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:11.397044Z"
+  },
+  "actions.hireling_foods.msg_too_full": {
+    "src_hash": "883d6385bdd0fda404b168b90f087063",
+    "text": "Sei ancora troppo pieno per mangiare qualche piatto gourmet per un po'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:11.397595Z"
+  },
+  "actions.outfit_items.msg_need_outfit": {
+    "src_hash": "6f55a0eedffa63b4bc43323bbb07b0e8",
+    "text": "Hai bisogno dell'abito per questa parte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:11.398034Z"
+  },
+  "actions.outfit_items.msg_already_own": {
+    "src_hash": "ff03bf90647055eb6169fe3518a86e11",
+    "text": "Possiedi già questa parte dell'outfit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:11.398589Z"
+  },
+  "actions.key_door.msg_wrong_key": {
+    "src_hash": "0f9c62489a770c7c23c3b706d5fccb35",
+    "text": "La chiave non corrisponde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:16.448411Z"
+  },
+  "actions.gamestore.msg_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Sei esausto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:46:16.449322Z"
   }
 }

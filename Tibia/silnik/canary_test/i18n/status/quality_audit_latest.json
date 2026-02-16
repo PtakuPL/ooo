@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-16T22:45:31.492488Z",
+  "timestamp": "2026-02-16T22:47:33.452376Z",
   "checked_entries": 100,
-  "issues_found": 11,
+  "issues_found": 8,
   "issues_by_type": {
     "artifact_token": 8,
-    "identical_to_en_exempt": 15,
-    "identical_to_en": 3,
-    "suspicious_log_critical": 98,
-    "suspicious_log_high": 96,
-    "suspicious_log_low": 6,
+    "identical_to_en_exempt": 13,
+    "suspicious_log_critical": 102,
+    "suspicious_log_high": 93,
+    "suspicious_log_low": 5,
     "suspicious_rejected_high": 39,
     "suspicious_rejected_critical": 161
   },
@@ -19,27 +18,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "otclient_modules.character_otui.tr_27",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Depot",
-      "translated": "Depot"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -92,5 +70,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

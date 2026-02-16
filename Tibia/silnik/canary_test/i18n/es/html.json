@@ -97,7 +97,7 @@
   "html.admin.news.form.html.text4": "[EN] {% if action == 'edit' %}Modified by{% else %}Author{% endif %}",
   "html.admin.news.form.html.text5": "{{ player.getName() }}",
   "html.admin.news.table.html.text1": "{{ news.date|date(setting('core.news_date_format')) }}",
-  "html.admin.news.table.html.text2": "[EN] {{ news.player_name }}",
+  "html.admin.news.table.html.text2": "{{ news.player_name }}",
   "html.admin.notepad.html.text1": "[EN] This is your personal notepad. Be sure to save it each time you modify something.",
   "html.admin.open_source.html.text1": "Software de código abierto",
   "html.admin.open_source.html.text2": "[EN] HTML/Javascript/CSS:",

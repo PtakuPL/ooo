@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:57:25.474849Z",
-  "issues_total": 464,
+  "checked_at": "2026-02-16T21:14:00.249839Z",
+  "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 13
+    "length_ratio_crosscheck": 14
   },
   "consistency_issues": [
     {
@@ -1318,213 +1318,6 @@
       "en": "piano",
       "pl": "piaNie",
       "lang": "piano"
-    },
-    {
-      "key": "item.3101.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "spellbook",
-      "pl": "Zaklęciebook",
-      "lang": "spellbook"
-    },
-    {
-      "key": "item.31139.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sandstone",
-      "pl": "piaskowiec",
-      "lang": "sandstone"
-    },
-    {
-      "key": "item.31381.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "nothing",
-      "pl": "Niething",
-      "lang": "nothing"
-    },
-    {
-      "key": "item.31578.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bear skin",
-      "pl": "niedźwiedź skóra",
-      "lang": "bear skin"
-    },
-    {
-      "key": "item.31593.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "noble cape",
-      "pl": "Nieble cape",
-      "lang": "noble cape"
-    },
-    {
-      "key": "item.31924.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "trap",
-      "pl": "pułapka",
-      "lang": "trap"
-    },
-    {
-      "key": "item.31927.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "trap",
-      "pl": "pułapka",
-      "lang": "trap"
-    },
-    {
-      "key": "item.3224.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "right horn",
-      "pl": "prawo róg",
-      "lang": "right horn"
-    },
-    {
-      "key": "item.3225.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "left horn",
-      "pl": "lewo róg",
-      "lang": "left horn"
-    },
-    {
-      "key": "item.32417.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32568.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32569.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32570.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32571.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32577.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32588.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "loom",
-      "pl": "krosno",
-      "lang": "loom"
-    },
-    {
-      "key": "item.32590.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32592.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32631.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ghost claw",
-      "pl": "duch pazur",
-      "lang": "ghost claw"
-    },
-    {
-      "key": "item.32637.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32638.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32639.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
-    },
-    {
-      "key": "item.32694.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknow",
-      "pl": "unkNiew",
-      "lang": "unknow"
     },
     {
       "key": "item.32695.name",
@@ -4405,6 +4198,213 @@
       "en": "Jailer",
       "pl": "Strażnik więzienny",
       "lang": "Jailer"
+    },
+    {
+      "key": "monster.jailer.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jailer",
+      "pl": "Strażnik więzienny",
+      "lang": "Jailer"
+    },
+    {
+      "key": "monster.bloodback.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bloodback",
+      "pl": "Krew",
+      "lang": "Bloodback"
+    },
+    {
+      "key": "monster.bloodback.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bloodback",
+      "pl": "Krew",
+      "lang": "Bloodback"
+    },
+    {
+      "key": "monster.darkfang.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Darkfang",
+      "pl": "Mroczny Kieł",
+      "lang": "Darkfang"
+    },
+    {
+      "key": "monster.darkfang.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Darkfang",
+      "pl": "Mroczny Kieł",
+      "lang": "Darkfang"
+    },
+    {
+      "key": "monster.sharpclaw.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpclaw",
+      "pl": "Ostry Pazur",
+      "lang": "Sharpclaw"
+    },
+    {
+      "key": "monster.sharpclaw.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpclaw",
+      "pl": "Ostry Pazur",
+      "lang": "Sharpclaw"
+    },
+    {
+      "key": "monster.hellgorak.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Delicious!",
+      "pl": "Wyborny!",
+      "lang": "Delicious!"
+    },
+    {
+      "key": "monster.dreadbeast.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dreadbeast",
+      "pl": "Straszna Bestia",
+      "lang": "Dreadbeast"
+    },
+    {
+      "key": "monster.zugurosh.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zugurosh",
+      "pl": "Zugurosz",
+      "lang": "Zugurosh"
+    },
+    {
+      "key": "monster.zugurosh.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zugurosh",
+      "pl": "Zugurosz",
+      "lang": "Zugurosh"
+    },
+    {
+      "key": "monster.the_count.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Count",
+      "pl": "Hrabia",
+      "lang": "The Count"
+    },
+    {
+      "key": "monster.the_count.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Count",
+      "pl": "Hrabia",
+      "lang": "The Count"
+    },
+    {
+      "key": "monster.madareth.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Madareth",
+      "pl": "Madaretha",
+      "lang": "Madareth"
+    },
+    {
+      "key": "monster.madareth.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Madareth",
+      "pl": "Madaretha",
+      "lang": "Madareth"
+    },
+    {
+      "key": "monster.tanjis.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis",
+      "pl": "Tanji",
+      "lang": "Tanjis"
+    },
+    {
+      "key": "monster.tanjis.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis",
+      "pl": "Tanji",
+      "lang": "Tanjis"
+    },
+    {
+      "key": "monster.dark_druid.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dark Druid",
+      "pl": "Ciemny Druid",
+      "lang": "Dark Druid"
+    },
+    {
+      "key": "monster.fetter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fetter",
+      "pl": "Kajdany",
+      "lang": "Fetter"
+    },
+    {
+      "key": "monster.fetter.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a fetter",
+      "pl": "pęta",
+      "lang": "a fetter"
+    },
+    {
+      "key": "monster.sir_baeloc.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sir Baeloc",
+      "pl": "Panie Baeloc",
+      "lang": "Sir Baeloc"
+    },
+    {
+      "key": "monster.sir_baeloc.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sir Baeloc",
+      "pl": "Panie Baeloc",
+      "lang": "Sir Baeloc"
+    },
+    {
+      "key": "monster.earl_osam.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Earl Osam",
+      "pl": "Earla Osama",
+      "lang": "Earl Osam"
     }
   ],
   "length_ratio_issues": [
@@ -4506,6 +4506,15 @@
       "en_len": 7,
       "lang_ratio": 2.857,
       "pl_ratio": 0.857
+    },
+    {
+      "key": "item.32588.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 3.75,
+      "pl_ratio": 1.5
     },
     {
       "key": "otclient_modules.gameinterface.tr_35",

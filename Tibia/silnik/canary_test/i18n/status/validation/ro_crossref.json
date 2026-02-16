@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 18.4,
+  "coverage_pct": 18.8,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:57:30.413977Z",
+  "checked_at": "2026-02-16T21:14:03.479461Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1704,6 +1704,15 @@
       "en": "Hunter",
       "pl": "Myśliwy",
       "lang": "Hunter"
+    },
+    {
+      "key": "monster.old_bonelord.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Olho por Olho!",
+      "pl": "Olho na Olho!",
+      "lang": "Olho por Olho!"
     },
     {
       "key": "monster.old_wasp.voice_1",
@@ -3603,15 +3612,6 @@
       "en": "Chh...",
       "pl": "Cii...",
       "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uhhhh...",
-      "pl": "Uuuuhhh...",
-      "lang": "Uhhhh..."
     }
   ],
   "length_ratio_issues": [

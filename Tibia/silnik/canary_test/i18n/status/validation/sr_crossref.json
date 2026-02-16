@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 8.7,
+  "coverage_pct": 9.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:58:09.057108Z",
+  "checked_at": "2026-02-16T21:14:43.650156Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1688,24 +1688,6 @@
       "lang": "Moooaaan"
     },
     {
-      "key": "monster.war_golem.voice_10",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eliminated",
-      "pl": "Wyłączony",
-      "lang": "Eliminated"
-    },
-    {
-      "key": "monster.glooth_golem.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*slosh*",
-      "pl": "*breja*",
-      "lang": "*slosh*"
-    },
-    {
       "key": "monster.glooth_golem.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1713,51 +1695,6 @@
       "en": "*clank*",
       "pl": "*I.*",
       "lang": "*clank*"
-    },
-    {
-      "key": "monster.metal_gargoyle.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "clonk",
-      "pl": "klonk",
-      "lang": "clonk"
-    },
-    {
-      "key": "monster.metal_gargoyle.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*stomp*",
-      "pl": "*stąpać ciężko*",
-      "lang": "*stomp*"
-    },
-    {
-      "key": "monster.orewalker.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "CLONK!",
-      "pl": "KLONK!",
-      "lang": "CLONK!"
-    },
-    {
-      "key": "monster.rustheap_golem.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*clatter*",
-      "pl": "*I.*",
-      "lang": "*clatter*"
-    },
-    {
-      "key": "monster.rustheap_golem.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*frzzp*",
-      "pl": "*frzz*",
-      "lang": "*frzzp*"
     },
     {
       "key": "monster.walker.voice_2",
@@ -3612,6 +3549,69 @@
       "en": "Bye.",
       "pl": "Pa, cześć.",
       "lang": "Bye."
+    },
+    {
+      "key": "npc.alwin.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.alyxo.say_12",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "npc.alyxo.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "npc.alyxo.say_18",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "npc.alyxo.say_21",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "npc.alyxo.say_24",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
+    },
+    {
+      "key": "npc.alyxo.say_6",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "pl": "Przepraszam.",
+      "lang": "Sorry."
     }
   ],
   "length_ratio_issues": [

@@ -3489,147 +3489,147 @@
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.033168Z"
+    "updated_at": "2026-02-16T21:12:47.226233Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.033959Z"
+    "updated_at": "2026-02-16T21:12:47.227082Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.034764Z"
+    "updated_at": "2026-02-16T21:12:47.227788Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.035562Z"
+    "updated_at": "2026-02-16T21:12:47.228487Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.036304Z"
+    "updated_at": "2026-02-16T21:12:47.229203Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.037077Z"
+    "updated_at": "2026-02-16T21:12:47.229907Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.037852Z"
+    "updated_at": "2026-02-16T21:12:47.230731Z"
   },
   "npc.a_lost_thrower.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.038667Z"
+    "updated_at": "2026-02-16T21:12:47.231457Z"
   },
   "npc.a_lost_thrower.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.039418Z"
+    "updated_at": "2026-02-16T21:12:47.232230Z"
   },
   "npc.a_nightmare_scion.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.040557Z"
+    "updated_at": "2026-02-16T21:12:47.233368Z"
   },
   "npc.a_nightmare_scion.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.041305Z"
+    "updated_at": "2026-02-16T21:12:47.234230Z"
   },
   "npc.a_nightmare_scion.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.042086Z"
+    "updated_at": "2026-02-16T21:12:47.235010Z"
   },
   "npc.a_vulcongra.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.050193Z"
+    "updated_at": "2026-02-16T21:12:47.246643Z"
   },
   "npc.a_vulcongra.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.051080Z"
+    "updated_at": "2026-02-16T21:12:47.247486Z"
   },
   "npc.a_vulcongra.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.051899Z"
+    "updated_at": "2026-02-16T21:12:47.248188Z"
   },
   "npc.a_wyrm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.054773Z"
+    "updated_at": "2026-02-16T21:12:47.251420Z"
   },
   "npc.a_wyrm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.055549Z"
+    "updated_at": "2026-02-16T21:12:47.252107Z"
   },
   "npc.a_wyrm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссс! Держи это в покое! <gives you an elaborate report on monster activity>",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T04:40:53.056299Z"
+    "updated_at": "2026-02-16T21:12:47.252923Z"
   },
   "npc.alyxo.say_12": {
     "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
@@ -11102,5 +11102,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:08:17.089732Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Не обращайте на меня внимания.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:52.966062Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Тогда прощайте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:52.966377Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Один... так одинокий. Так холодно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:52.966740Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Я чувствую тебя. Я слышу твои мысли. Ты... жив.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:52.967140Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Когда-то я был членом ордена рыцарей кошмара. Теперь я всего лишь тень, бродящая по этим холодным коридорам.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:55.667065Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Северу предстоит решить головоломку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:55.667433Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Один... так одинокий. Так холодно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:55.667784Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Один... так одинокий. Так холодно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:55.668126Z"
+  },
+  "npc.a_majestic_warwolf.farewell_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "ЙААААААААААА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:55.668356Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Интересный. Человек, говорящий на языке волков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:59.480657Z"
+  },
+  "npc.a_majestic_warwolf.say_1": {
+    "src_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
+    "text": "ГРРРРРРРРРРРР",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:59.480909Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "По твоим глазам я вижу, что ты честный и дружелюбный человек, |PLAYERNAME|. Вы проявили достаточно терпения, чтобы выучить наш язык, и я подарю вам особый подарок. Вы примете это?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:59.481948Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "Отныне ты будешь известна как |PLAYERNAME|, девушка-волк. Ты будешь быстрым и умным, как Морграр, великий белый волк. Он укажет ваш путь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:59.483050Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "Отныне ты будешь известен как |PLAYERNAME|, воин-медведь. Ты будешь сильным и гордым, как Ангрос, великий темный медведь. Он укажет ваш путь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:12:59.483929Z"
+  },
+  "npc.a_majestic_warwolf.walkaway_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "ЙААААААААААА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:13:02.537018Z"
+  },
+  "npc.a_prisoner.farewell_msg_1": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "До свидания! Не забывайте о тайнах математической магии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:13:02.537455Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Хм? Что? Я вижу! Ух ты! Не мино. Они и {capture} тебя тоже?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:13:02.538143Z"
   }
 }

@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 73.9,
+  "coverage_pct": 74.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T20:56:59.999971Z",
-  "issues_total": 491,
+  "checked_at": "2026-02-16T21:13:37.892926Z",
+  "issues_total": 490,
   "issues_by_type": {
-    "consistency_in_language": 67,
+    "consistency_in_language": 66,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 24
   },
@@ -601,7 +601,10 @@
       ],
       "variants_count": 2,
       "examples": [
+        "monsters:monster.zamulosh.name",
+        "monsters:monster.zamulosh.desc",
         "monsters:monster.zamulosh3.name",
+        "monsters:monster.zamulosh3.desc",
         "monsters:monster.zamulosh2.name"
       ]
     },
@@ -875,20 +878,6 @@
       "examples": [
         "monsters:monster.diblis_the_fair.desc",
         "raids:raid.diblis_the_fair.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Ahhhhhhhh! ",
-      "variants": [
-        "Ahhhhhhh!",
-        "Ahhhhhhh! "
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.barnabas_dee.say_8",
-        "npc:npc.terrence.say_2"
       ]
     },
     {
@@ -1337,51 +1326,6 @@
       "lang": "Mephiles"
     },
     {
-      "key": "monster.zamulosh.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zamulosh",
-      "pl": "Zamulosz",
-      "lang": "Zamulosh"
-    },
-    {
-      "key": "monster.zamulosh.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zamulosh",
-      "pl": "Zamułosz",
-      "lang": "Zamulosh"
-    },
-    {
-      "key": "monster.zamulosh3.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zamulosh",
-      "pl": "Zamułosz",
-      "lang": "Zamulosh"
-    },
-    {
-      "key": "monster.zamulosh2.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "zamulosh",
-      "pl": "zamulosz",
-      "lang": "zamulosh"
-    },
-    {
-      "key": "monster.kalyassa.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "kalyassa",
-      "pl": "kaliassa",
-      "lang": "kalyassa"
-    },
-    {
       "key": "monster.thalas.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1470,24 +1414,6 @@
       "en": "Tirecz",
       "pl": "Tyrecz",
       "lang": "Tirecz"
-    },
-    {
-      "key": "monster.grim_reaper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death!",
-      "pl": "Śmierć!",
-      "lang": "Death!"
-    },
-    {
-      "key": "monster.vampire.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BLOOD!",
-      "pl": "Krew!",
-      "lang": "BLOOD!"
     },
     {
       "key": "monster.yakchal.name",
@@ -1659,78 +1585,6 @@
       "en": "FCHHHHH",
       "pl": "Fchhhh",
       "lang": "FCHHHHH"
-    },
-    {
-      "key": "monster.frost_troll.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Broar!",
-      "pl": "Bracie!",
-      "lang": "Broar!"
-    },
-    {
-      "key": "monster.troll.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr",
-      "pl": "Wrr",
-      "lang": "Grrr"
-    },
-    {
-      "key": "monster.troll.voice_7",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, bugs",
-      "pl": "Hmmm, błędy",
-      "lang": "Hmmm, bugs"
-    },
-    {
-      "key": "monster.island_troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.wolf.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.cave_rat.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meep!",
-      "pl": "Mip!",
-      "lang": "Meep!"
-    },
-    {
-      "key": "monster.assassin.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Die!",
-      "pl": "UMIERAĆ!",
-      "lang": "Die!"
     },
     {
       "key": "monster.wasp.voice_2",
@@ -2966,15 +2820,6 @@
       "lang": "Oh well."
     },
     {
-      "key": "npc.shanar.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Robić widzenia!",
-      "lang": "Good bye!"
-    },
-    {
       "key": "npc.shirith.farewell_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2982,24 +2827,6 @@
       "en": "Good bye!.",
       "pl": "Robić widzenia!.",
       "lang": "Good bye!."
-    },
-    {
-      "key": "npc.shirith.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Robić widzenia!",
-      "lang": "Good bye!"
-    },
-    {
-      "key": "npc.shirith.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Robić widzenia!",
-      "lang": "Good bye!"
     },
     {
       "key": "npc.shoddy_beggar.say_20",
@@ -3092,15 +2919,6 @@
       "lang": "Farewell."
     },
     {
-      "key": "npc.the_beggar_king.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Robić widzenia!",
-      "lang": "Good bye!"
-    },
-    {
       "key": "npc.the_blind_prophet.say_14",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3126,15 +2944,6 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
-    },
-    {
-      "key": "npc.thorgrin.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
     },
     {
       "key": "npc.thorwulf.walkaway_msg_1",
@@ -4611,6 +4420,186 @@
       "en": "Bye",
       "pl": "Pa",
       "lang": "Bye"
+    },
+    {
+      "key": "data.otservbr.global.npc.pig.L48.717",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink.",
+      "pl": "Chrum.",
+      "lang": "Oink."
+    },
+    {
+      "key": "data.otservbr.global.npc.puffels.L219.812",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Whatever.",
+      "pl": "Wszystko jedno.",
+      "lang": "Whatever."
+    },
+    {
+      "key": "data.otservbr.global.npc.puffels.L220.813",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Whatever.",
+      "pl": "Wszystko jedno.",
+      "lang": "Whatever."
+    },
+    {
+      "key": "data.otservbr.global.npc.quandons.ghost.L65.550",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "data.otservbr.global.npc.rata.mari.L104.829",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "data.otservbr.global.npc.rata.mari.L105.830",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "data.otservbr.global.npc.raymond.striker.L219.359",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "No cóż.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "data.otservbr.global.npc.sebastian.L118.1350",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "No cóż.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "data.otservbr.global.npc.sebastian.nargor.L70.1111",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "No cóż.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "data.otservbr.global.npc.sholley.L83.547",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "data.otservbr.global.npc.tarun.L116.1563",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings!",
+      "pl": "Pozdrowienia!",
+      "lang": "Greetings!"
+    },
+    {
+      "key": "data.otservbr.global.npc.tarun.L117.1564",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Farewell.",
+      "pl": "Żegnaj.",
+      "lang": "Farewell."
+    },
+    {
+      "key": "data.otservbr.global.npc.tarun.L121.1566",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Farewell.",
+      "pl": "Żegnaj.",
+      "lang": "Farewell."
+    },
+    {
+      "key": "data.otservbr.global.npc.the.empress.L78.443",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings.",
+      "pl": "Pozdrowienia.",
+      "lang": "Greetings."
+    },
+    {
+      "key": "data.otservbr.global.npc.timur.L61.1071",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, pa.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "data.otservbr.global.npc.timur.L62.1072",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, pa.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "data.otservbr.global.npc.tom.L264.1441",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "D'oh?",
+      "pl": "Eee?",
+      "lang": "D'oh?"
+    },
+    {
+      "key": "data.otservbr.global.npc.vascalir.L938.1546",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Farewell.",
+      "pl": "Żegnaj.",
+      "lang": "Farewell."
+    },
+    {
+      "key": "data.otservbr.global.npc.vascalir.L939.1547",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Farewell.",
+      "pl": "Żegnaj.",
+      "lang": "Farewell."
+    },
+    {
+      "key": "data.otservbr.global.npc.zerbrus.L210.7",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hm.",
+      "pl": "Hm...",
+      "lang": "Hm."
     }
   ],
   "length_ratio_issues": [
@@ -4833,8 +4822,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 10,
-    "skipped": 70,
+    "applied": 9,
+    "skipped": 71,
     "errors": 0
   }
 }

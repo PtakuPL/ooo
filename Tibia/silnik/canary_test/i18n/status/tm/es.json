@@ -171077,7 +171077,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-15T19:29:01.069569Z"
+    "updated_at": "2026-02-16T18:39:00.627665Z"
   },
   "data.otservbr.global.npc.rabaz.L198.626": {
     "src_hash": "09e341573bb6fd131f78ce98d2aa28b8",
@@ -177614,5 +177614,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T09:09:47.443241Z"
+  },
+  "data.otservbr.global.npc.palomino.L110.87": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Saludos, |PLAYERNAME| Supongo que estás aquí por el {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:56.761498Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.seal.L116.1950": {
+    "src_hash": "eb9aca3f0c6a372bcdaf9a5dc2603dea",
+    "text": "El portal te lleva al desafío final.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:57.272117Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.devourer.access.L5.1875": {
+    "src_hash": "9e1b9342419d4d7c23b729d25cca4d30",
+    "text": "¡Tu acceso a World Devourer fue liberado!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:57.308336Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.devourer.access.L8.1876": {
+    "src_hash": "5359d58b2e964269b9f14b0901f96f34",
+    "text": "¡Tu acceso a World Devourer ya está liberado!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:57.310541Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.exalted.core.L71.2000": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "No se pudo generar un Soul Core.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:57.393790Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soul.prism.L80.1993": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "No se pudo generar un Soul Core.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:57.398523Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.key1.L8.2026": {
+    "src_hash": "237abb647a44fad3fc1a637c34fc9d0a",
+    "text": "<swoosh> <oomph> <tos, tos>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:57.477999Z"
+  },
+  "data.otservbr.global.npc.chemar.L87.743": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:16.177993Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L88.256": {
+    "src_hash": "68c642b393c99bc29573fa466a3c50de",
+    "text": "Felicitaciones, recibió la montura Noxious Ripptor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:32.278627Z"
+  },
+  "data.otservbr.global.npc.guide.elena.L109.13": {
+    "src_hash": "acaf30714a5847ed13a7bc13641c7ed8",
+    "text": "Adiós y disfruta de tu estancia en Venore, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:32.285207Z"
+  },
+  "data.otservbr.global.npc.guide.jonathan.L104.403": {
+    "src_hash": "e94bd687bbecbe2746861da4afb5aeba",
+    "text": "Adiós y disfruta de tu estancia en Edron, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:32.286521Z"
+  },
+  "data.otservbr.global.npc.guide.kunibert.L103.837": {
+    "src_hash": "8f3179698f97aed9208928423921a53c",
+    "text": "Adiós y disfruta de tu estancia en Rathleton, |PLAYERNAME|",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:32.287652Z"
+  },
+  "data.otservbr.global.npc.guide.luke.L105.468": {
+    "src_hash": "76bf9c06d3a0736cfdae0ab7ea24f6b3",
+    "text": "Adiós y disfruta de tu estancia en Thais, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:45.841987Z"
+  },
+  "data.otservbr.global.npc.guide.rahlkora.L106.1327": {
+    "src_hash": "43b12e2487e9447a962e9a3e6b5f646f",
+    "text": "Adiós y disfruta de tu estancia en Ankrahmun, |PLAYERNAME|",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:45.843413Z"
+  },
+  "data.otservbr.global.npc.guide.tiko.L105.802": {
+    "src_hash": "cfb1e8741aa3bbf9e6440b8c3c182207",
+    "text": "Adiós y disfruta de tu estancia en Port Hope, |PLAYERNAME|",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:45.846316Z"
+  },
+  "data.otservbr.global.npc.halvar.L119.799": {
+    "src_hash": "20d6872c9886f8fd14353bd4f5615c0a",
+    "text": "¡Hola competidor! ¿Quieres {fight} en la arena o te explico el {rules} primero?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:45.849250Z"
+  },
+  "data.otservbr.global.npc.harlow.L78.1284": {
+    "src_hash": "5ef208d9d498ccc826d4160ef293029d",
+    "text": "¿Qué quieres, |PLAYERNAME|? Soy un hombre {busy}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:45.850622Z"
+  },
+  "data.otservbr.global.npc.iptar.sin.L184.984": {
+    "src_hash": "2a7aa823543280fb958d84010a3837b0",
+    "text": "¡Bienvenido joven |PLAYERNAME|! Si estás gravemente herido o envenenado, ¿puedo {heal} gratis o quieres el {adventurer stone}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:38:45.857602Z"
+  },
+  "data.otservbr.global.npc.lurik.L153.1502": {
+    "src_hash": "336c81cd92d9298aa8056a91719153b1",
+    "text": "¡Bienvenido a la sede {explorer society} de Svargrond, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.615158Z"
+  },
+  "data.otservbr.global.npc.mirabell.L120.155": {
+    "src_hash": "f36d5756ae8e54663335c03eaa8b7319",
+    "text": "Bienvenido al Cuerno de la Abundancia, |PLAYERNAME|. ¡Siéntate, toma un {drink} o un {food}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.619722Z"
+  },
+  "data.otservbr.global.npc.miraia.L186.1358": {
+    "src_hash": "02bef2979d64fc9ed012830eb611f03d",
+    "text": "Bendiciones de Daraman, |PLAYERNAME|. Bienvenido al Oasis Iluminado. ¡Siéntate, toma un {drink} o un {food}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.622070Z"
+  },
+  "data.otservbr.global.npc.ninev.L184.289": {
+    "src_hash": "2a7aa823543280fb958d84010a3837b0",
+    "text": "¡Bienvenido joven |PLAYERNAME|! Si estás gravemente herido o envenenado, ¿puedo {heal} gratis o quieres el {adventurer stone}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.627179Z"
+  },
+  "data.otservbr.global.npc.nydala.L57.952": {
+    "src_hash": "87a9ba3c0a316f967112af2aee8132b0",
+    "text": "Bienvenido a Carlin Mueblería, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.631338Z"
+  },
+  "data.otservbr.global.npc.quentin.L179.175": {
+    "src_hash": "2a7aa823543280fb958d84010a3837b0",
+    "text": "¡Bienvenido joven |PLAYERNAME|! Si estás gravemente herido o envenenado, ¿puedo {heal} gratis o quieres el {adventurer stone}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.634846Z"
+  },
+  "data.otservbr.global.npc.rapanaio.boat.L70.127": {
+    "src_hash": "f7d4061eb3bdfbee4008f67d0f7633d0",
+    "text": "Bienvenido a bordo, |PLAYERNAME|. Puedo viajar contigo a {evil isle}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.636381Z"
+  },
+  "data.otservbr.global.npc.rapanaio.isle.of.evil.L70.1190": {
+    "src_hash": "9cab5a180a172e3d504af33823b5f37f",
+    "text": "Bienvenido a bordo, |PLAYERNAME|. Puedo viajar contigo a {kazordoon}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.637416Z"
+  },
+  "data.otservbr.global.npc.sandra.L142.1395": {
+    "src_hash": "e2cbefebb7df7ded756fc5f75b0f26f5",
+    "text": "Hola |PLAYERNAME|, bienvenido al fluido y poción {shop} de Edron.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.639355Z"
+  },
+  "data.otservbr.global.npc.shirtalis.of.the.summer.court.L83.56": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Hola luchador. Supongo que estás aquí para {fight} por nuestro noble {cause}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:00.641119Z"
+  },
+  "data.otservbr.global.npc.tamerin.L58.283": {
+    "src_hash": "c2322ef8d63ff8e793869c52f500001b",
+    "text": "¿Tienes el {animal cure}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.815104Z"
+  },
+  "data.otservbr.global.npc.tarak.inner.L88.682": {
+    "src_hash": "3b9fbca9b1306ef1c2f6c778d9b301f5",
+    "text": "¿Puedo interesarte en un viaje al {monument tower}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.816519Z"
+  },
+  "data.otservbr.global.npc.tarak.sunken.L75.868": {
+    "src_hash": "50b0a037651c37565d5c00aacd560f3c",
+    "text": "¿Quieres volver a Yalahar? Pídeme un {passage} gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.817843Z"
+  },
+  "data.otservbr.global.npc.the.crone.L54.397": {
+    "src_hash": "72d6e608bede0803bad7038dcf6cd873",
+    "text": "Sea saludado, |PLAYERNAME|... mortal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.821883Z"
+  },
+  "data.otservbr.global.npc.tom.L66.1435": {
+    "src_hash": "07ebc202652b8d20b0db9dfcc282fd07",
+    "text": "Hola, |PLAYERNAME|. ¿Vascalir te envió a mí por un {mission}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.825289Z"
+  },
+  "data.otservbr.global.npc.uzon.L115.987": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.826361Z"
+  },
+  "data.otservbr.global.npc.uzon.back.L80.47": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.827324Z"
+  },
+  "data.otservbr.global.npc.zizzle.L114.1235": {
+    "src_hash": "09f27c9b71c96dc1e2e3b4380d6908a7",
+    "text": "¡Ah, nuestro humano {alliez} finalmente ha llegado! Ya temía que Zat ze Emperor'z Forzez te hubiera atrapado. Tu rezilienze y prowezz son impresionantes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:39:14.834036Z"
   }
 }

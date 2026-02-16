@@ -1,74 +1,128 @@
 {
-  "timestamp": "2026-02-16T18:37:14.387492Z",
+  "timestamp": "2026-02-16T18:39:20.885363Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 11,
+  "json_file": "server.json",
+  "translated": 47,
   "entries": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "en": "Chchch",
-      "translated": "Chchch",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.iptar.sin.L184.984",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free or you want the {adventurer stone}?",
+      "translated": "¡Bienvenido joven |PLAYERNAME|! Si estás gravemente herido o envenenado, ¿puedo {heal} gratis o quieres el {adventurer stone}?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.lurik.L153.1502",
+      "en": "Welcome to the {explorer society} headquarter of Svargrond, |PLAYERNAME|!",
+      "translated": "¡Bienvenido a la sede {explorer society} de Svargrond, |PLAYERNAME|!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.mirabell.L120.155",
+      "en": "Welcome to the Horn of Plenty, |PLAYERNAME|. Sit down, have a {drink} or some {food}!",
+      "translated": "Bienvenido al Cuerno de la Abundancia, |PLAYERNAME|. ¡Siéntate, toma un {drink} o un {food}!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.miraia.L186.1358",
+      "en": "Daraman's blessings, |PLAYERNAME|. Welcome to the Enlightened Oasis. Sit down, have a {drink} or some {food}!",
+      "translated": "Bendiciones de Daraman, |PLAYERNAME|. Bienvenido al Oasis Iluminado. ¡Siéntate, toma un {drink} o un {food}!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.ninev.L184.289",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free or you want the {adventurer stone}?",
+      "translated": "¡Bienvenido joven |PLAYERNAME|! Si estás gravemente herido o envenenado, ¿puedo {heal} gratis o quieres el {adventurer stone}?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_82",
-      "en": "npc.bozo.mission_2_t1_1 \\z\n\tnpc.bozo.mission_2_t1_2 \\z\n\tnpc.bozo.mission_2_t1_3 \\z\n\tnpc.bozo.mission_2_t1_4",
-      "translated": "npc.bozo.mission_2_t1_1\\z\n\tnpc.bozo.mission_2_t1_2\\z\n\tnpc.bozo.mission_2_t1_3\\z\n\tnpc.bozo.mission_2_t1_4",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.noodles.L105.679",
+      "en": "<sniff> Woof! <sniff>",
+      "translated": "<sniff> ¡Guau! <sniff>",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_84",
-      "en": "npc.bozo.mission_4_t1_1 \\z\n\tnpc.bozo.mission_4_t1_2 \\z\n\tnpc.bozo.mission_4_t1_3 \\z\n\tnpc.bozo.mission_4_t1_4",
-      "translated": "npc.bozo.mission_4_t1_1\\z\n\tnpc.bozo.mission_4_t1_2\\z\n\tnpc.bozo.mission_4_t1_3\\z\n\tnpc.bozo.mission_4_t1_4",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.nydala.L57.952",
+      "en": "Welcome to Carlin Furniture Store, |PLAYERNAME|.",
+      "translated": "Bienvenido a Carlin Mueblería, |PLAYERNAME|.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_85",
-      "en": "npc.bozo.mission_5_t1 \\z\n\tnpc.bozo.mission_5_t2 \\z\n\tnpc.bozo.mission_5_t3_1 \\z\n\tnpc.bozo.mission_5_t3_2 \\z\n\tnpc.bozo.mission_5_t3_3",
-      "translated": "npc.bozo.mission_5_t1\\z\n\tnpc.bozo.mission_5_t2\\z\n\tnpc.bozo.mission_5_t3_1\\z\n\tnpc.bozo.mission_5_t3_2\\z\n\tnpc.bozo.mission_5_t3_3",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.quentin.L179.175",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free or you want the {adventurer stone}?",
+      "translated": "¡Bienvenido joven |PLAYERNAME|! Si estás gravemente herido o envenenado, ¿puedo {heal} gratis o quieres el {adventurer stone}?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_87",
-      "en": "npc.bozo.mission_7_t1 \\z\n\tnpc.bozo.mission_7_t2 \\z\n\tnpc.bozo.mission_7_t3_1 \\z\n\tnpc.bozo.mission_7_t3_2 \\z\n\tnpc.bozo.mission_7_t3_3",
-      "translated": "npc.bozo.mission_7_t1\\z\n\tnpc.bozo.mission_7_t2\\z\n\tnpc.bozo.mission_7_t3_1\\z\n\tnpc.bozo.mission_7_t3_2\\z\n\tnpc.bozo.mission_7_t3_3",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.rapanaio.boat.L70.127",
+      "en": "Welcome on board, |PLAYERNAME|. I can travel you to {evil isle}.",
+      "translated": "Bienvenido a bordo, |PLAYERNAME|. Puedo viajar contigo a {evil isle}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_90",
-      "en": "npc.bozo.mission_10_t1 \\z\n\tnpc.bozo.mission_10_t2 \\z\n\tnpc.bozo.mission_10_t3_1 \\z\n\tnpc.bozo.mission_10_t3_2 \\z\n\tnpc.bozo.mission_10_t3_3 \\z\n\tnpc.bozo.mission_10_t3_4 \\z\n\tnpc.bozo.mission_10_t3_5",
-      "translated": "npc.bozo.mission_10_t1\\z\n\tnpc.bozo.mission_10_t2\\z\n\tnpc.bozo.mission_10_t3_1\\z\n\tnpc.bozo.mission_10_t3_2\\z\n\tnpc.bozo.mission_10_t3_3\\z\n\tnpc.bozo.mission_10_t3_4\\z\n\tnpc.bozo.mission_10_t3_5",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.rapanaio.isle.of.evil.L70.1190",
+      "en": "Welcome on board, |PLAYERNAME|. I can travel you to {kazordoon}.",
+      "translated": "Bienvenido a bordo, |PLAYERNAME|. Puedo viajar contigo a {kazordoon}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_91",
-      "en": "npc.bozo.mission_11_t1 \\z\n\tnpc.bozo.mission_11_t2 \\z\n\tnpc.bozo.mission_11_t3_1 \\z\n\tnpc.bozo.mission_11_t3_2",
-      "translated": "npc.bozo.mission_11_t1\\z\n\tnpc.bozo.mission_11_t2\\z\n\tnpc.bozo.mission_11_t3_1\\z\n\tnpc.bozo.mission_11_t3_2",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.sandra.L142.1395",
+      "en": "Hello |PLAYERNAME|, welcome to the fluid and potion {shop} of Edron.",
+      "translated": "Hola |PLAYERNAME|, bienvenido al fluido y poción {shop} de Edron.",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.shirtalis.of.the.summer.court.L83.56",
+      "en": "Hello fighter. I guess you are here to {fight} for our noble {cause}.",
+      "translated": "Hola luchador. Supongo que estás aquí para {fight} por nuestro noble {cause}.",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.tamerin.L58.283",
+      "en": "Have you the {animal cure}?",
+      "translated": "¿Tienes el {animal cure}?",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.tarak.inner.L88.682",
+      "en": "Can I interest you in a trip to the {monument tower}?",
+      "translated": "¿Puedo interesarte en un viaje al {monument tower}?",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.tarak.sunken.L75.868",
+      "en": "Want to go back to Yalahar? Just ask me for a free {passage}.",
+      "translated": "¿Quieres volver a Yalahar? Pídeme un {passage} gratis.",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.the.crone.L54.397",
+      "en": "Be greeted, |PLAYERNAME|... mortal.",
+      "translated": "Sea saludado, |PLAYERNAME|... mortal.",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.tom.L66.1435",
+      "en": "Hey there, |PLAYERNAME|. Did Vascalir send you to me for a {mission}?",
+      "translated": "Hola, |PLAYERNAME|. ¿Vascalir te envió a mí por un {mission}?",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.uzon.L115.987",
+      "en": "Daraman's blessings, traveller |PLAYERNAME|.",
+      "translated": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.uzon.back.L80.47",
+      "en": "Daraman's blessings, traveller |PLAYERNAME|.",
+      "translated": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+      "source": "google_translate"
+    },
+    {
+      "key": "data.otservbr.global.npc.zizzle.L114.1235",
+      "en": "Ah our human {alliez} have finally arrived! I've already feared zat ze emperor'z forzez had caught you. Your rezilienze and prowezz are imprezzive.",
+      "translated": "¡Ah, nuestro humano {alliez} finalmente ha llegado! Ya temía que Zat ze Emperor'z Forzez te hubiera atrapado. Tu rezilienze y prowezz son impresionantes.",
+      "source": "google_translate"
     }
   ]
 }

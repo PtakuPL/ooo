@@ -86278,5 +86278,437 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T18:22:49.289142Z"
+  },
+  "data.otservbr.global.npc.a.bearded.woman.L144.674": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "FÅ MIG HÄRFÖR! NU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.629782Z"
+  },
+  "data.otservbr.global.npc.a.beautiful.girl.L53.318": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Så du har kommit, |PLAYERNAME|. Jag hoppades att du inte skulle...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.630931Z"
+  },
+  "data.otservbr.global.npc.a.beggar.L82.1060": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Hej! Vad är det, vad gör du {want}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.631993Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L57.1606": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.633319Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L66.1607": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.634503Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L73.1608": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.635611Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L126.462": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.636199Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L127.463": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.636714Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L64.461": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.637196Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L57.884": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.637452Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L79.885": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.638008Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L80.886": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.638579Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L100.1108": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.639117Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L57.1106": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.639526Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L99.1107": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.640091Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L108.265": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.640603Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L109.266": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hejdå och glöm mig inte!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.641138Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L64.264": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Hej",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.641407Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L56.823": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.642673Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L65.824": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.644060Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L72.825": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.645188Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L58.203": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "Hälsningar människor! Se dig själv som lycklig, jag är i behov av {help}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.646353Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L65.205": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "Du har gjort mig en tjänst och den kunskap du söker kommer att vara din. Jag smälte isen åt dig, du kan passera nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.647697Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L56.1124": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.648776Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L65.1125": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.649887Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L72.1126": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.651322Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L74.1055": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <du är inte säker, men det verkar som om ekorren vill byta ut dina värdefulla ekollon mot värdelösa stenar som den hittade och ansåg vara oätliga>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.654054Z"
+  },
+  "data.otservbr.global.npc.a.frog.L57.1456": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*suck* Ännu en dum äventyrare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.654863Z"
+  },
+  "data.otservbr.global.npc.a.frog.L58.1457": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ja, hej då och kom inte igen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.655598Z"
+  },
+  "data.otservbr.global.npc.a.frog.L59.1458": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Hah! Den idioten gick äntligen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.656152Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L60.1103": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, jag känner att en dödlig går dessa uråldriga salar igen. Ursäkta mig, jag märker dig knappt. Jag är så vilsen i mina tankar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.656993Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L61.1104": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.657299Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L62.1105": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Farväl då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.657558Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L62.1178": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Jag känner dig. Jag hör dina tankar. Du är ... vid liv.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.658335Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L63.1179": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Ensam ... så ensam. Så kallt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.658861Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.woman.L64.1180": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Ensam ... så ensam. Så kallt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.659374Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L56.230": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.660430Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L65.231": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.661556Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L72.232": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.662816Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L56.1263": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.663882Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L65.1264": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.665311Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L72.1265": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.666568Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L56.541": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.667713Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L65.542": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.669025Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L72.543": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.670159Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L83.37": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Intressant. En människa som kan vargarnas språk.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.670840Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L84.38": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.671202Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L85.39": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.671529Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L56.996": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.672798Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L65.997": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Håll det nere! <ger dig en utförlig rapport om monsteraktivitet>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:46.673921Z"
+  },
+  "data.otservbr.global.lib.functions.players.L64.1624": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Du har fått en berömmelsespoäng.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:49.216615Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:49.217492Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L72.1053": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:49.217778Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L73.1054": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T18:37:49.217998Z"
   }
 }

@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-16T23:29:59.503300Z",
-  "cycle_counter": 932,
-  "last_target_key": "sr:spells.json",
-  "last_pending_total": 839,
-  "last_tier": 3,
-  "last_cat_priority": 4,
+  "timestamp": "2026-02-16T23:30:44.865332Z",
+  "cycle_counter": 935,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 11415,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 196,
-  "active_candidates_count": 189,
-  "skipped_backoff": 7,
+  "active_candidates_count": 188,
+  "skipped_backoff": 8,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
   "tier_config": {
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 39,
+  "cache_cycle": 40,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -142,7 +142,7 @@
     "es:raids.json": 0,
     "es:html.json": 0,
     "es:books.json": 0,
-    "pl:example_merchant.json": 2,
+    "pl:example_merchant.json": 0,
     "es:startup.json": 0,
     "es:creaturescripts.json": 0,
     "pl:scripts.json": 0,
@@ -158,7 +158,7 @@
     "de:otclient_modules.json": 0,
     "de:actions.json": 0,
     "de:raids.json": 0,
-    "es:chatchannels.json": 2,
+    "es:chatchannels.json": 3,
     "es:example_merchant.json": 0,
     "es:otclient_data.json": 3,
     "pl:questlog.json": 3,
@@ -360,10 +360,10 @@
       "pl": 43.82,
       "es": 74.03,
       "ru": 35.45,
-      "ro": 19.6,
+      "ro": 19.68,
       "it": 10.69,
-      "sr": 9.79,
-      "sv": 7.68
+      "sr": 9.89,
+      "sv": 7.74
     }
   }
 }

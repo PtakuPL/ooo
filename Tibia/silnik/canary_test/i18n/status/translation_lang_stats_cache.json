@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-16T23:30:19.222401Z",
+  "timestamp": "2026-02-16T23:30:51.231242Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
@@ -7308,7 +7308,7 @@
         [
           "chatchannels.json",
           1,
-          1771272699908408886,
+          1771284642773166751,
           1132
         ],
         [
@@ -7579,7 +7579,7 @@
         "chatchannels.json": {
           "sig": [
             1,
-            1771272699908408886,
+            1771284642773166751,
             1132
           ],
           "row": {
@@ -25359,8 +25359,8 @@
         [
           "example_merchant.json",
           1,
-          1771272700136408620,
-          1164
+          1771284636241140462,
+          1159
         ],
         [
           "globalevents.json",
@@ -25531,7 +25531,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 23482,
-        "english_copy_keys": 1924,
+        "english_copy_keys": 1925,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 43.82,
@@ -25686,13 +25686,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1771272700136408620,
-            1164
+            1771284636241140462,
+            1159
           ],
           "row": {
             "total_reference_keys": 14,
             "translated_keys": 13,
-            "english_copy_keys": 0,
+            "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
           }

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-16T23:30:15.454630Z",
+  "timestamp": "2026-02-16T23:30:45.787722Z",
   "checked_entries": 100,
-  "issues_found": 9,
+  "issues_found": 10,
   "issues_by_type": {
-    "identical_to_en": 2,
+    "identical_to_en": 3,
     "identical_to_en_exempt": 13,
     "artifact_token": 7,
     "suspicious_log_critical": 78,
@@ -75,6 +75,13 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "_file",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "data-otservbr-global/npc/example_merchant_i18n.lua",
+      "translated": "data-otservbr-global/npc/example_merchant_i18n.lua"
     }
   ],
   "threshold": 10,

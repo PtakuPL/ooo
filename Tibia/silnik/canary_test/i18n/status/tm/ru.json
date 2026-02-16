@@ -2601,11 +2601,11 @@
   },
   "quests.actions_mono_detector_strange_probing_device.msg_3": {
     "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
-    "text": "На устройстве написано: 'abnormal glooth structure detected, possible probing location'",
+    "text": "Устройство читает: «Обнаружена аномальная структура мути, возможное место зондирования».",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:07:29.658169Z"
+    "updated_at": "2026-02-16T23:07:30.714903Z"
   },
   "quests.actions_mono_detector_strange_probing_device.msg_4": {
     "src_hash": "7302b053c0f22e53182c9674c7530e39",
@@ -16422,5 +16422,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:05:43.355197Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:29.283940Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "Драться!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:29.342644Z"
+  },
+  "quests.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:30.713431Z"
+  },
+  "quests.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:30.713912Z"
+  },
+  "quests.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:30.714415Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Все игроки должны быть на одном уровне ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:34.326454Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:34.326727Z"
+  },
+  "quests.bigfoot_burden.gasp": {
+    "src_hash": "4758f628434ece29bf84223f42a476a1",
+    "text": "<вздох>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:34.326924Z"
+  },
+  "quests.common.found_item_too_heavy_v2": {
+    "src_hash": "fe8ca53a473098bcdae6c1adeb0acc4f",
+    "text": "Вы нашли {0}. При весе {1} унции он слишком тяжел.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:34.327386Z"
+  },
+  "quests.common.found_items": {
+    "src_hash": "2134ca05a222d4860007f29569f29cfe",
+    "text": "Вы нашли %s %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:34.327877Z"
+  },
+  "quests.common.found_no_capacity": {
+    "src_hash": "24b519e4e867809893d24dfdf82229bd",
+    "text": "Вы нашли %s весом %.2 унции. У вас нет способностей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:38.126381Z"
+  },
+  "quests.common.found_no_room": {
+    "src_hash": "e88eed3e01659b864bbf69d3ee802c80",
+    "text": "Вы нашли %s, но у вас нет места, чтобы его забрать.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:38.126996Z"
+  },
+  "quests.common.found_no_room_to_take": {
+    "src_hash": "4b4c7eece38d5240b1814d622cc65f95",
+    "text": "Вы нашли {0}. Но у вас нет места, чтобы взять его.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:38.127455Z"
+  },
+  "quests.common.found_result": {
+    "src_hash": "182396eb89f1096446cd4066f4b1fe25",
+    "text": "Вы нашли %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:38.127879Z"
+  },
+  "quests.common.found_too_heavy": {
+    "src_hash": "33a50637639b5118c56745e302f4741a",
+    "text": "Вы нашли %s весом %s унции, он слишком тяжел для вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:38.128463Z"
+  },
+  "quests.common.found_too_heavy_to_carry": {
+    "src_hash": "88ffac1afc20b6cfd9dbe9d03d38aa4a",
+    "text": "Вы нашли {0}. При весе {1} унции он слишком тяжел для вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:41.024468Z"
+  },
+  "quests.common.item_empty": {
+    "src_hash": "2227c58ef8ae16a698c15b50277e3360",
+    "text": "%s пуст.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:41.024924Z"
+  },
+  "quests.common.item_is_empty": {
+    "src_hash": "9fedea49c5747b4d85c1c89ff2bd3d8e",
+    "text": "{0} пуст.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:41.025197Z"
+  },
+  "quests.common.need_players": {
+    "src_hash": "a83c7d7bada7ca4b8c0d01def82e87cf",
+    "text": "В квест-комнате вам нужно как минимум {0} игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:41.025606Z"
+  },
+  "quests.common.reward_no_room": {
+    "src_hash": "a187b5bf7af68f51dab839f0b430ea7a",
+    "text": "%s Но у тебя нет места, чтобы его взять.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:41.026155Z"
+  },
+  "quests.common.reward_too_heavy": {
+    "src_hash": "e1039b8f7f51c7d75ef433a41dec5258",
+    "text": "%s. При весе %s унции он слишком тяжел для вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:43.720645Z"
+  },
+  "quests.common.someone_fighting": {
+    "src_hash": "97a5cce165ebe2850a044efff30ddabd",
+    "text": "Кто-то борется с {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:43.720998Z"
+  },
+  "quests.common.wait_to_fight": {
+    "src_hash": "fba6cdd69d31f9eb85874cf4da951b41",
+    "text": "Вам придется подождать {0} часов, чтобы снова встретиться с {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:43.721418Z"
+  },
+  "quests.common.you_slayed": {
+    "src_hash": "4b51cc3dfdcae6db0a131e3c66775ead",
+    "text": "Вы убили {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:43.721701Z"
+  },
+  "quests.common.you_slayed_times": {
+    "src_hash": "d6a7a4e2b62cd945bab46197c0eed601",
+    "text": "Вы убили {0} {1} раз!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:43.722028Z"
+  },
+  "quests.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Вы проиграли схватку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:46.345340Z"
+  },
+  "quests.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Поздравляем, вы получили костюм «Полтергейст».",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:46.345736Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_1": {
+    "src_hash": "affae003bc5ca5f7834349418f4a1188",
+    "text": "С сильным взрывом портал измерений в Зао рухнул и \\z\n\t\tвместе с этим разорвалась связь с другим измерением.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:46.346483Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_2": {
+    "src_hash": "c148cc49192a344bf6c7c9fa6d2e6108",
+    "text": "Останки Бешеного Мага разбросаны по полу его Башни. \\ г\n\tПортал измерений сотрясается.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:46.347021Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_1": {
+    "src_hash": "3b89542279a4e97944f1e27205cc280d",
+    "text": "С сильным взрывом портал измерений в Зао рухнул, а вместе с ним рухнула и связь с другим измерением.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:46.347582Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_2": {
+    "src_hash": "a633c94a1a9bf1be37c45d8e3ee73dd6",
+    "text": "Останки Бешеного Мага разбросаны по полу его Башни. Портал измерений сотрясается.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:49.822825Z"
+  },
+  "quests.cults_of_tibia.boss_room_timeout_kick": {
+    "src_hash": "cfcbc7849dbf6f79684e0a6f2e4b5c50",
+    "text": "Вас кикнули за превышение лимита времени в комнате с боссом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:49.823268Z"
+  },
+  "quests.cults_of_tibia.cult_energy_1": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Ваше тело реагирует на это странное зеленое вещество, когда вы протягиваете руку, чтобы прикоснуться к нему. Вы чувствуете потребность в большем количестве этой энергии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:49.823937Z"
+  },
+  "quests.cults_of_tibia.cult_energy_2": {
+    "src_hash": "2b8cd714f9fa1a2821f9aefc76b8fcd8",
+    "text": "Вы собрали впечатляющее количество силы, просто прикоснувшись к странным зеленым символам Barkless. Но как...?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:49.824594Z"
+  },
+  "quests.cults_of_tibia.ice.msg_1": {
+    "src_hash": "830fbdb1e0e86a27c31c0007c6fd07d7",
+    "text": "Входя в ледяную пещеру, вы чувствуете неестественный мороз. Ледяной воздух щиплет лицо. Выживи и докажи, что ты достоин этого.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:49.825216Z"
+  },
+  "quests.cults_of_tibia.ice.msg_2": {
+    "src_hash": "a921d92c836ae9260754bac90ddfa103",
+    "text": "Температура вашего тела падает. Вы можете видеть, как ваше дыхание леденит на холоде.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:51.536909Z"
   }
 }

@@ -17422,5 +17422,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:06:18.353674Z"
+  },
+  "quests.actions_notescoordinates.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.208232Z"
+  },
+  "quests.actions_peeler.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.208531Z"
+  },
+  "quests.actions_sangra.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Îmi pare rău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.209076Z"
+  },
+  "quests.actions_scissors.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.209559Z"
+  },
+  "quests.actions_tumulo.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.210570Z"
+  },
+  "quests.actions_tumuloerro.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.210851Z"
+  },
+  "quests.adventures_of_galthen.empty": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.211671Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nu ai suficient nivel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:55.239907Z"
+  },
+  "quests.actions_entrance.msg_2": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Încă o dată amesteci creta cu o picătură de sânge și puțină apă și reînnoiești simbolul de pe podea...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:58.245977Z"
+  },
+  "quests.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, ce parfum infatuant!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:58.246367Z"
+  },
+  "quests.actions_last_fight.say_1": {
+    "src_hash": "d3f224c083f6f61bc1d5608b1d2738fb",
+    "text": "Trebuie să așteptați ceva timp înainte ca acest glob să se încarce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:58.246775Z"
+  },
+  "quests.actions_last_fight.say_2": {
+    "src_hash": "216c0b5cc7d485662716a63d434347b5",
+    "text": "Nu! Îmi pierd energia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:58.247060Z"
+  },
+  "quests.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:07:58.247480Z"
+  },
+  "quests.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:01.920702Z"
+  },
+  "quests.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Ceva a declanșat în același timp, un sunet puternic aproape că te asurdă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:01.921251Z"
+  },
+  "quests.actions_levers.say_1": {
+    "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
+    "text": "Ai răsturnat ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:01.921497Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Ați adunat cu succes datele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:01.921825Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_2": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... dispozitivul scrie: 0,0,zero,0,zero care se poate traduce aproximativ prin: NIMIC DE INTERES AICI",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:01.922567Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Dispozitivul scrie: „S-a detectat o structură glooth anormală, posibilă locație de sondare”",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:04.749188Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonda a fost reglată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:04.749536Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Toți jucătorii trebuie să fie la nivel ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:04.749874Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Trebuie să aștepți ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:04.750199Z"
+  },
+  "quests.actions_scarlett.msg_1": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Țineți în față vechea curăță a lui Galthein. Nu se potrivește și mult prea vechi pentru a rezista oricărui atac.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:04.750826Z"
+  },
+  "quests.actions_scarlett.msg_2": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Nu aveți voie să utilizați acest lucru încă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:07.594749Z"
+  },
+  "quests.actions_servants_mechanism.say_1": {
+    "src_hash": "f5cd2b34be49cf1b2c392d8c1715ee13",
+    "text": "*clic*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:07.594949Z"
+  },
+  "quests.actions_servants_mechanism.say_2": {
+    "src_hash": "715460f6fbd13bd6d1757d939fb9b258",
+    "text": "se pare că mecanismul este încă activ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:07.595284Z"
+  },
+  "quests.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Telescopul oferă o vedere perfectă asupra oceanului nesfârșit - fără pământ la vedere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:07.595871Z"
+  },
+  "quests.actions_to_take_roots.msg_1": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Această rădăcină a fost deja recoltată, nimic de câștigat aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:07.596281Z"
+  },
+  "quests.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Încercarea ta de recoltare a distrus mai multe rădăcini suculente decât ai putea salva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:10.199790Z"
+  },
+  "quests.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Recoltați cu succes niște rădăcini suculente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:10.200155Z"
+  },
+  "quests.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Încercarea ta de recoltare a distrus mai multe rădăcini suculente decât ai putea salva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:10.200614Z"
+  },
+  "quests.actions_to_take_roots.msg_5": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Recoltați cu succes niște rădăcini suculente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:10.200962Z"
+  },
+  "quests.actions_tortoise.msg_1": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Broască-țestoasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:10.201168Z"
+  },
+  "quests.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:13.799400Z"
+  },
+  "quests.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:13.799832Z"
+  },
+  "quests.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Această geodă de cristal tremură de la o bătălie din apropiere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:13.800224Z"
+  },
+  "quests.actions_using_crystals.say_1": {
+    "src_hash": "f508d9962727da8d65a970bd812689e3",
+    "text": "Contele absoarbe puterea fiarei și devine mai puternic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:13.800607Z"
+  },
+  "quests.actions_using_crystals.say_2": {
+    "src_hash": "1ee05904751682de1be927c32b1849ac",
+    "text": "BOOOOM!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:13.801110Z"
+  },
+  "quests.actions_wooden_trash.msg_1": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Nu găsiți nimic interesant sub dărâmături.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:20.031441Z"
+  },
+  "quests.actions_wooden_trash.msg_2": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Ai început o escortă, du-ți prizonierul la avanpostul pitic!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:20.031857Z"
+  },
+  "quests.adventures_of_galthen.found_satchel": {
+    "src_hash": "056ad4a699bbd35e150c2bfdb74c0716",
+    "text": "Ai găsit un ghiozdan de galthens.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:20.032181Z"
+  },
+  "quests.adventures_of_galthen.you_have_already_obtained_this_outfit": {
+    "src_hash": "2a375adc8dad69731ea3478119cb6da5",
+    "text": "Ai obținut deja această ținută!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:20.032508Z"
+  },
+  "quests.bigfoot_burden.body_not_ready": {
+    "src_hash": "650762968728d439e3ac2a042c3eabea",
+    "text": "Acest organism nu este încă pregătit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:20.032820Z"
+  },
+  "quests.bigfoot_burden.boss_challenge": {
+    "src_hash": "7e6ede303d5139cd8026a3b23a8469a1",
+    "text": "Ai o jumătate de oră pentru a-l învinge eroic pe {0}. În caz contrar, vei fi teleportat și va trebui să o iei de la capăt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:26.902441Z"
+  },
+  "quests.bigfoot_burden.chest_guarded": {
+    "src_hash": "660c525e8617590d046aaef15a99886a",
+    "text": "{0} își apără bunurile și nu te va lăsa să deschizi acest cufăr.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:26.902884Z"
+  },
+  "quests.bigfoot_burden.chest_requirements": {
+    "src_hash": "072bb87e3c4717189d1d3a4f4fe1d283",
+    "text": "Vă rugăm să vă asigurați că aveți cel puțin 5 sloturi de inventar gratuite și că puteți transporta încă 100 oz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:26.903409Z"
+  },
+  "quests.bigfoot_burden.crystal_not_damaged": {
+    "src_hash": "fe3ff614cedaa49219f13e67f00cab9d",
+    "text": "Acesta nu este un cristal deteriorat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:26.903697Z"
+  },
+  "quests.bigfoot_burden.crystal_repaired": {
+    "src_hash": "60d5612333b384516cb59343aa68a514",
+    "text": "Ai reparat un cristal deteriorat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:26.903993Z"
+  },
+  "quests.bigfoot_burden.crystals_charging": {
+    "src_hash": "e8e09ff0c5db42c8b3a95b1100d0c2b4",
+    "text": "Cristalele se încarcă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:29.896939Z"
   }
 }

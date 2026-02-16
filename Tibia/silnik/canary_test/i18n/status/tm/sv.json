@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T22:39:57.288932Z"
+    "updated_at": "2026-02-16T23:08:35.369884Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -15286,5 +15286,317 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:00:03.580238Z"
+  },
+  "data.otservbr.global.npc.dane.L63.1215": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.859910Z"
+  },
+  "data.otservbr.global.npc.frodo.L108.971": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.874555Z"
+  },
+  "data.otservbr.global.npc.frodo.L109.972": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.874920Z"
+  },
+  "data.otservbr.global.npc.gareth.L63.1401": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Hur går det med din {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.877898Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L67.649": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Hur går det med din {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.899833Z"
+  },
+  "data.otservbr.global.npc.palomino.L110.87": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Hälsningar, |PLAYERNAME| Jag ​​antar att du är här för {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.932037Z"
+  },
+  "data.otservbr.global.npc.valentina.L84.545": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.966585Z"
+  },
+  "data.otservbr.global.npc.valentina.L85.546": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom gärna tillbaka då och då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:33.966948Z"
+  },
+  "data.otservbr.global.npc.armenius.L74.643": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Åh, nerven. Gå till råttorna som uppfostrade dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:37.970512Z"
+  },
+  "data.otservbr.global.npc.armenius.L86.644": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ah, en äventyrare. Var hälsad och sätt dig. Hur kan jag {serve} dig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:43.877976Z"
+  },
+  "data.otservbr.global.npc.aruda.L256.1338": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Jag hoppas att vi ses snart.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:43.878349Z"
+  },
+  "data.otservbr.global.npc.aruda.L257.1339": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Hejdå, |PLAYERNAME|. Jag hoppas verkligen att vi pratas snart igen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:43.878754Z"
+  },
+  "data.otservbr.global.npc.aruda.L64.1336": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "Åh, hej |PLAYERNAME|, ditt hår ser bra ut! Vem gjorde det åt dig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:43.879163Z"
+  },
+  "data.otservbr.global.npc.aruda.L67.1337": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "Åh, hej, snygging! Det är ett nöje att träffa dig, |PLAYERNAME|. Jag har gärna tid att {chat} lite.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:43.879676Z"
+  },
+  "data.otservbr.global.npc.ashari.L52.1581": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Hej främling! Dessa grottor måste verka konstiga för dig. Jag undrar vad som för dig hit... du kanske är intresserad av något arbete? Det finns flera uppgifter jag skulle kunna behöva hjälp med.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:47.837603Z"
+  },
+  "data.otservbr.global.npc.ashari.L53.1582": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Hejdå!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:47.837798Z"
+  },
+  "data.otservbr.global.npc.ashari.L54.1583": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Hejdå!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:47.837965Z"
+  },
+  "data.otservbr.global.npc.atur.L76.727": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:47.838456Z"
+  },
+  "data.otservbr.global.npc.aurita.L114.171": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Hälsningar, resenär!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:47.838726Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L137.859": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Hälsningar, resenär |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:51.436239Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L50.141": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Jag är inte här för att slåss mot dig, idiot. Gilla det eller inte, vi måste arbeta tillsammans för att stoppa katastrofen du och den prästen har initierat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:51.436884Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L52.142": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Hälsningar, dödlig. Var medveten om att du försöker mitt tålamod medan vi pratar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:51.437332Z"
+  },
+  "data.otservbr.global.npc.baa.leal.L158.273": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Stå ner, soldat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:51.437585Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L76.573": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:51.437835Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L77.574": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:54.004746Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L78.575": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:54.005013Z"
+  },
+  "data.otservbr.global.npc.barazbaz.L93.18": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "Åh, hej då!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:54.005256Z"
+  },
+  "data.otservbr.global.npc.barbara.L84.1299": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:54.005504Z"
+  },
+  "data.otservbr.global.npc.barbara.L85.1300": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "LÄNGE LEVE Drottningen! Du kan gå nu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:54.005828Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L130.1046": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Välkommen till min ödmjuka boning. Om du kommer för en ny trollkarl {spells} har du kommit till rätt plats.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:59.291890Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L131.1047": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Ta hand om dig, barn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:59.292157Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L132.1048": {
+    "src_hash": "f837336cbcf07dd58a95501bc15ea16f",
+    "text": "'The impetuosity of youth', som min vän Mordokai skulle säga.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:59.292544Z"
+  },
+  "data.otservbr.global.npc.bashira.L63.1584": {
+    "src_hash": "1ab992ebc47c02f476153edbb5649f2a",
+    "text": "Välkommen, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:59.292797Z"
+  },
+  "data.otservbr.global.npc.bashira.L64.1585": {
+    "src_hash": "aa9516b030cac7a45cce88509881a4ea",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:08:59.293047Z"
+  },
+  "data.otservbr.global.npc.bashira.L65.1586": {
+    "src_hash": "91f025a68ba7730090f9f4a3461e5e62",
+    "text": "Må Gud visa dig vägen, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:04.521111Z"
+  },
+  "data.otservbr.global.npc.bashira.L66.1587": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Naturligtvis är det bara att bläddra igenom mina erbjudanden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:04.521487Z"
+  },
+  "data.otservbr.global.npc.battlemart.L64.1360": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "Det är bra att se dig. Jag är alltid vid din {shop options}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:04.521883Z"
+  },
+  "data.otservbr.global.npc.battlemart.L65.1361": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Farväl, |PLAYERNAME|, jag finns här om du behöver mig igen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:04.522337Z"
+  },
+  "data.otservbr.global.npc.battlemart.L66.1362": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:09:04.522570Z"
   }
 }

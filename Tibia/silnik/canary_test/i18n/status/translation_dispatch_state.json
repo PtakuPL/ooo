@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-16T22:16:19.873752Z",
-  "cycle_counter": 820,
-  "last_target_key": "it:items.json",
-  "last_pending_total": 16371,
+  "timestamp": "2026-02-16T22:20:02.901223Z",
+  "cycle_counter": 823,
+  "last_target_key": "it:monsters.json",
+  "last_pending_total": 4981,
   "last_tier": 2,
-  "last_cat_priority": 1,
+  "last_cat_priority": 2,
   "candidates_count": 197,
   "active_candidates_count": 190,
   "skipped_backoff": 6,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 1,
+  "cache_cycle": 2,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -308,13 +308,15 @@
       "pl",
       "ru",
       "ro",
-      "it"
+      "it",
+      "sr",
+      "sv"
     ],
     "skipped_no_pending": [],
-    "forced_lang": "it"
+    "forced_lang": ""
   },
-  "bootstrap_forced": true,
-  "bootstrap_forced_lang": "it",
+  "bootstrap_forced": false,
+  "bootstrap_forced_lang": "",
   "balance_forced": false,
   "global_quality_mode": true,
   "priority_gate": {
@@ -341,10 +343,10 @@
     ],
     "lang_completion": {
       "pl": 43.25,
-      "es": 73.75,
+      "es": 73.8,
       "ru": 34.51,
       "ro": 18.48,
-      "it": 9.53,
+      "it": 9.65,
       "sr": 9.54,
       "sv": 7.4
     }

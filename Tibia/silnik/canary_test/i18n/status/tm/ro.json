@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T22:02:10.247677Z"
+    "updated_at": "2026-02-16T22:19:48.025531Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -14534,5 +14534,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:13:12.437540Z"
+  },
+  "item.11543.desc": {
+    "src_hash": "754120dc5aff478e74582317146aee1a",
+    "text": "Se presupune că ultima voință a cuiva. Orice ar fi fost scris pe el a dispărut de mult.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:53.752201Z"
+  },
+  "item.11544.desc": {
+    "src_hash": "9b97e51580254e42e5f7bf6be4b2f286",
+    "text": "Se presupune că ultima voință a cuiva. Orice ar fi fost scris pe el a dispărut de mult",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:53.761473Z"
+  },
+  "item.11551.desc": {
+    "src_hash": "534e51a9c6b22b3e16a1212a3f3961dd",
+    "text": "Este capabil să stocheze amintiri și gânduri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:53.762859Z"
+  },
+  "item.11552.desc": {
+    "src_hash": "3ce49eff7f272f394b24a787054137cf",
+    "text": "Este capabil să stocheze amintiri și gânduri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:56.630328Z"
+  },
+  "item.11553.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puteți vedea cealaltă parte prin ea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:56.630865Z"
+  },
+  "item.11584.desc": {
+    "src_hash": "426fbf7b62552eb2a213f7df0209cdb2",
+    "text": "Pare ca a fost sigilat cu bunătate lăptoasă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:56.631396Z"
+  },
+  "item.11585.desc": {
+    "src_hash": "a532c896c1e7082fcec87ff1946ae285",
+    "text": "Permite explorarea subacvatică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:56.631825Z"
+  },
+  "item.11586.desc": {
+    "src_hash": "bd411239caecc58938b05b9a439cb4ce",
+    "text": "Nomazii afirmă că această masă te umple de energie de mai multe ori înainte ca oala să fie goală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:56.632852Z"
+  },
+  "item.11587.desc": {
+    "src_hash": "f539323da6ba32246e972e54c6b33137",
+    "text": "Nu ești niciodată sigur ce vor face biluțele demonice de bomboane, dar cu siguranță au un gust dulce și incitant",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:58.843621Z"
+  },
+  "item.11588.desc": {
+    "src_hash": "800d3525d4c7f9e6935c6754392d2c44",
+    "text": "Se spune că are efecte incredibile dacă o bei în timp ce porți anumite inele magice. Deci nu va funcționa pe toate tipurile de ele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:19:58.845738Z"
   }
 }

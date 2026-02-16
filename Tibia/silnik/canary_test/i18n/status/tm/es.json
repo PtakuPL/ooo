@@ -141806,5 +141806,221 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:08:11.998041Z"
+  },
+  "data.otservbr.global.npc.mordecai.L157.588": {
+    "src_hash": "41bcc6bd6ff8f880bff86df964724f87",
+    "text": "Bienvenido al emporio mágico, niña. Pídeme un intercambio si necesitas {runes}, {wands} o libros de hechizos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.610793Z"
+  },
+  "data.otservbr.global.npc.mordecai.L159.590": {
+    "src_hash": "231b98b1b896385cb640a9064d1a6282",
+    "text": "Ah, la impetuosidad de la juventud.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.612236Z"
+  },
+  "data.otservbr.global.npc.mother.of.jack.L100.94": {
+    "src_hash": "193e46468b279a667e5e68a2b96bbdc4",
+    "text": "Exijo una explicación por qué entraste a nuestra casa sin ninguna invitación.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.614488Z"
+  },
+  "data.otservbr.global.npc.muhad.L108.928": {
+    "src_hash": "dbaf5256055463832bf47c118d265593",
+    "text": "Sea saludado, extranjero bajo el sol de Darama. ¿Qué te trae {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.615673Z"
+  },
+  "data.otservbr.global.npc.muhad.L109.929": {
+    "src_hash": "a19ac558c11da87d37a9b0d87d273dba",
+    "text": "Que Daraman te acompañe en tus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.616786Z"
+  },
+  "data.otservbr.global.npc.muhad.L110.930": {
+    "src_hash": "a19ac558c11da87d37a9b0d87d273dba",
+    "text": "Que Daraman te acompañe en tus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.617998Z"
+  },
+  "data.otservbr.global.npc.muriel.L159.1305": {
+    "src_hash": "8fab312632ded5d25d11afcd8c22dbd5",
+    "text": "¡Saludos, |PLAYERNAME|! Buscando sabiduría y poder, ¿eh?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.619125Z"
+  },
+  "data.otservbr.global.npc.myra.L319.1418": {
+    "src_hash": "4c435efd925ac7ae7769db4166aac9d3",
+    "text": "Saludos, |PLAYERNAME|. Si buscas al hechicero {spells} no dudes en preguntar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.623451Z"
+  },
+  "data.otservbr.global.npc.myzzi.L100.65": {
+    "src_hash": "f9128628542131a1c457295f5d0434df",
+    "text": "Hola aventurero. Son {good} para verte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.625193Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L137.839": {
+    "src_hash": "6208e49a68b520f5b6eb6ddeefd9e28a",
+    "text": "Adiós, Neutrala |PLAYERNAME|. ¡Visita al viejo Bob de nuevo algún día!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.627287Z"
+  },
+  "data.otservbr.global.npc.naji.L76.1424": {
+    "src_hash": "9a8b5f31874c06521653b46ff9062147",
+    "text": "Bienvenido al banco Tibiano, |PLAYERNAME| ¿Qué puedo hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.629475Z"
+  },
+  "data.otservbr.global.npc.narsai.L58.889": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.631391Z"
+  },
+  "data.otservbr.global.npc.narsai.L61.890": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.632364Z"
+  },
+  "data.otservbr.global.npc.narsai.L64.891": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.633470Z"
+  },
+  "data.otservbr.global.npc.nelly.L166.415": {
+    "src_hash": "d08a1d7035ea004c66c027b2e8fcf5bb",
+    "text": "Hola |PLAYERNAME|, ¿Qué puedo hacer por ti? Trabajo para la oficina de correos, pero también comercio con importantes {potions}, {runes} y otros equipos mágicos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.634952Z"
+  },
+  "data.otservbr.global.npc.nelly.L168.417": {
+    "src_hash": "231b98b1b896385cb640a9064d1a6282",
+    "text": "Ah, la impetuosidad de la juventud.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.636377Z"
+  },
+  "data.otservbr.global.npc.nielson.L101.561": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Adiós. De nada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.638227Z"
+  },
+  "data.otservbr.global.npc.nilsor.L227.1011": {
+    "src_hash": "d79527a1e75d691b1539406f88bd69c0",
+    "text": "Saludos viajero |PLAYERNAME|. ¿Hay algo que pueda {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.639413Z"
+  },
+  "data.otservbr.global.npc.nina.L61.878": {
+    "src_hash": "76986f7777164e08c3af4cde9bbc3784",
+    "text": "Cuidado, si avanzas más tendrás que luchar contra un gran grupo de Elegidos. Este lugar se llama Fire Dragon Dojo. Vaya con cuidado ya que estos son campos de entrenamiento de lagartos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.640848Z"
+  },
+  "data.otservbr.global.npc.ninos.L84.1480": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hola. ¿Cómo puedo ayudarte |PLAYERNAME|? Pídeme un {trade} si quieres comprar algo. También puedo explicar el sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.644242Z"
+  },
+  "data.otservbr.global.npc.ninos.L85.1481": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.645414Z"
+  },
+  "data.otservbr.global.npc.nokmir.L100.97": {
+    "src_hash": "7511a3053985d1285f219889716a7b01",
+    "text": "Eres...un poco alto! Hola.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.646809Z"
+  },
+  "data.otservbr.global.npc.nomad.L108.168": {
+    "src_hash": "02a071b07a24df1ab5d650896f1ef654",
+    "text": "Ah, otro discípulo del extremo... ¿sobrevivir al aire libre helado? ¡Déjame {help}! Si necesita primeros auxilios aquí, puedo brindarle {healing} o otorgarle una bendición {enhanced}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.649203Z"
+  },
+  "data.otservbr.global.npc.nomad.L109.169": {
+    "src_hash": "8c89051be17409506fca67d38fa19a60",
+    "text": "¡Mantén el labio superior rígido!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.650247Z"
+  },
+  "data.otservbr.global.npc.nomad.L110.170": {
+    "src_hash": "8c89051be17409506fca67d38fa19a60",
+    "text": "¡Mantén el labio superior rígido!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.651266Z"
+  },
+  "data.otservbr.global.npc.noozer.L88.42": {
+    "src_hash": "e18fc17f3852a8ff97b6e408e669e5eb",
+    "text": "¿Mmm? ¡Oh! Oh, sí, un... ¡visitante! ¿Intruso? Benefactor...? ¿Qué-qué eres? Si quieres pasar por esta cueva, es posible que tenga que decepcionarte. O tal vez no. Eso depende. Entonces, ¿estás de paso?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.654155Z"
+  },
+  "data.otservbr.global.npc.norma.L186.1080": {
+    "src_hash": "0c62b96014efa382625199bf8b298ad8",
+    "text": "Oye, ¿a dónde vas? ¡Acabamos de empezar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:09:55.657118Z"
   }
 }

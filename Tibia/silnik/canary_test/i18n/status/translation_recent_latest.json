@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T21:08:59.011651Z",
-  "language": "sr",
-  "json_file": "server.json",
-  "translated": 50,
+  "timestamp": "2026-02-16T21:10:13.003589Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274",
-      "en": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. No sign of treason here.",
-      "translated": "Пажљиво прегледаш свитке. То су наређења од Rathleton за амбасадора. Овде нема знакова издаје.",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L44.2275",
-      "en": "You already investigated this.",
-      "translated": "Већ сте истражили ово.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L58.2276",
-      "en": "You find nothing in the Ambassador's house. If he's in fact a traitor he got rid of any evidence that could incriminate him.",
-      "translated": "Ништа не налазите у амбасадоровој кући. Ако је он у ствари издајник, ослободио се сваког доказа који би га могао инкриминисати.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L7.2270",
-      "en": "Documents were burnt here recently. Only the part of one scroll still lies in front of the chimney but it's too sooted to read.",
-      "translated": "Овде су недавно спаљени документи. Само део једног свитка још увек лежи испред оџака, али је превише чађ да би се читао.",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L29.2267",
-      "en": "You feel shaky and dizzy, the world turns dark around you. Then your sight clears again - and you are somewhere else.",
-      "translated": "Осећате се дрхтави и вртоглави, свет постаје мрак око вас. Онда ти се вид поново разбистри - и ти си негде другде.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L49.2268",
-      "en": "You were moved to the right brain side",
-      "translated": "Премештени сте на десну страну мозга",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L65.2269",
-      "en": "You were moved to the left brain side",
-      "translated": "Премештени сте на леву страну мозга",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L34.2277",
-      "en": "You bless the statue.",
-      "translated": "Ти благослови статуу.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L38.2278",
-      "en": "You already blessed this statue.",
-      "translated": "Већ сте благословили ову статуу.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L10.1682",
-      "en": "Sorry, not possible.",
-      "translated": "Извини, није могуће.",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L9.1679",
-      "en": "Sorry",
-      "translated": "Извините",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L9.1673",
-      "en": "Empty.",
-      "translated": "Празан.",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L8.1661",
-      "en": "Sorry",
-      "translated": "Извините",
-      "source": "simple"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.glasshoneyfun.L11.1669",
-      "en": "Sorry, not possible.",
-      "translated": "Извини, није могуће.",
-      "source": "simple"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L9.1659",
-      "en": "Empty.",
-      "translated": "Празан.",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peelerfun.L10.1657",
-      "en": "Sorry, not possible.",
-      "translated": "Извини, није могуће.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.pickenchanted.L10.1665",
-      "en": "Sorry, not possible.",
-      "translated": "Извини, није могуће.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L8.1655",
-      "en": "Sorry",
-      "translated": "Извините",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L9.1671",
-      "en": "Empty.",
-      "translated": "Празан.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissorsfun.L280.1680",
-      "en": "Sorry, not possible.",
-      "translated": "Извини, није могуће.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_14",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

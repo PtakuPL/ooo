@@ -1,33 +1,51 @@
 {
-  "window_start_utc": "2026-02-16T19:20:43.308595Z",
-  "window_end_utc": "2026-02-16T20:20:43.308595Z",
+  "window_start_utc": "2026-02-16T19:23:48.020095Z",
+  "window_end_utc": "2026-02-16T20:23:48.020095Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 10,
+  "total_cycles": 14,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 10
+    "AUTO_TRANSLATE": 14
   },
-  "auto_translate_cycles": 10,
+  "auto_translate_cycles": 14,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 430,
-  "guard_fail": 27,
-  "guard_fail_rate_pct": 5.9,
+  "translated": 546,
+  "guard_fail": 61,
+  "guard_fail_rate_pct": 10.0,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 2213.2,
-  "suspicious_total": 286,
+  "throughput_keys_per_h": 1984.6,
+  "suspicious_total": 316,
   "top_guard_fail_targets": [
     {
       "target": "ru/questlog.json",
       "translated": 36,
       "guard_fail": 14,
+      "guard_command": 0
+    },
+    {
+      "target": "it/questlog.json",
+      "translated": 38,
+      "guard_fail": 12,
+      "guard_command": 0
+    },
+    {
+      "target": "sr/questlog.json",
+      "translated": 39,
+      "guard_fail": 11,
+      "guard_command": 0
+    },
+    {
+      "target": "sv/questlog.json",
+      "translated": 39,
+      "guard_fail": 11,
       "guard_command": 0
     },
     {
@@ -50,24 +68,6 @@
     },
     {
       "target": "ro/otclient_modules.json",
-      "translated": 50,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "it/otclient_modules.json",
-      "translated": 50,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "sr/otclient_modules.json",
-      "translated": 50,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "sv/otclient_modules.json",
       "translated": 50,
       "guard_fail": 0,
       "guard_command": 0

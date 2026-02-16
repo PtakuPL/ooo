@@ -11550,5 +11550,309 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:14:13.192161Z"
+  },
+  "questlog.quest_49.mission_1.name": {
+    "src_hash": "cd85b4358b1fbedfa52306065b9a232b",
+    "text": "Alto e secco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:57.264498Z"
+  },
+  "questlog.common.mission_completed_format": {
+    "src_hash": "5c60f96b6affcb675f69133dc8c002fd",
+    "text": "%s (completato)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.519039Z"
+  },
+  "questlog.quest_1.mission_1.description": {
+    "src_hash": "84506f123942e87bbdb223433b1d0aa2",
+    "text": "Hai rotto il primo sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.519762Z"
+  },
+  "questlog.quest_1.mission_1.name": {
+    "src_hash": "90155bb7a9269a145cdb34f33bc6ec4b",
+    "text": "The Hidden Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.520471Z"
+  },
+  "questlog.quest_1.mission_2.description": {
+    "src_hash": "aa451c0927ac398a0c9607e68cabae40",
+    "text": "Hai rotto il secondo sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.520912Z"
+  },
+  "questlog.quest_1.mission_2.name": {
+    "src_hash": "5d62cb4a590965bb7e705d2c1b6477b2",
+    "text": "The Plague Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.521476Z"
+  },
+  "questlog.quest_1.mission_3.description": {
+    "src_hash": "1b87b7e9e62dc33b3fced8800f935200",
+    "text": "Hai rotto il terzo sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.521892Z"
+  },
+  "questlog.quest_1.mission_4.description": {
+    "src_hash": "0664bf4422c184b63c1256f5b92c9fed",
+    "text": "Hai rotto il quarto sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.522472Z"
+  },
+  "questlog.quest_1.mission_5.description": {
+    "src_hash": "6fd3cbde44ef19588ccba52fc0e89d3e",
+    "text": "Hai rotto il quinto sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.522955Z"
+  },
+  "questlog.quest_1.mission_6.description": {
+    "src_hash": "a6f58f97f0d653eded324c90dddb6e30",
+    "text": "Hai rotto il sesto sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.523739Z"
+  },
+  "questlog.quest_1.mission_7.description": {
+    "src_hash": "5df93ab653c84807b0cd359f4d7334cd",
+    "text": "La Regina Banshee ti ha baciato. Ciò significava la tua morte, e una parte della tua anima appartiene sempre a lei adesso. Hai rotto l'ultimo sigillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.525688Z"
+  },
+  "questlog.quest_1.mission_8.description": {
+    "src_hash": "9c32ee478633abbd64b5e57921dcd7cd",
+    "text": "Hai affrontato tutti i pericoli della Banshee Quest e sei fuggito vivo dal dungeon. La stanza finale sarà sigillata per te da ora in poi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.527253Z"
+  },
+  "questlog.quest_1.mission_8.name": {
+    "src_hash": "51ae86f3a85c461e5e822d56e933ae93",
+    "text": "The Final Battle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:08.528018Z"
+  },
+  "questlog.quest_10.mission_1.state_1": {
+    "src_hash": "7f6f2bdcc9d70c426a6e07eb1cd71a97",
+    "text": "Palimuth ti ha chiesto aiuto per alcuni malfunzionamenti delle fogne. Avrai bisogno di un piede di porco, ci sono 4 posti in cui devi andare contrassegnati con una X sulla tua mappa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.461093Z"
+  },
+  "questlog.quest_10.mission_1.state_2": {
+    "src_hash": "e6e64f9275238b6ecc99b59f64a11a91",
+    "text": "Hai pulito 1 pipa su 4 dalla spazzatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.461602Z"
+  },
+  "questlog.quest_10.mission_1.state_3": {
+    "src_hash": "2776538e7a93252ae04bfd7069ef3c03",
+    "text": "Hai pulito 2 tubi su 4 dalla spazzatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.462308Z"
+  },
+  "questlog.quest_10.mission_1.state_4": {
+    "src_hash": "60858fcece906d6ec05690e42c17b571",
+    "text": "Hai pulito 3 tubi su 4 dalla spazzatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.462808Z"
+  },
+  "questlog.quest_10.mission_1.state_5": {
+    "src_hash": "c41b0c7d66177065ad1e3c2d575e5e29",
+    "text": "Hai pulito 4 tubi su 4 dalla spazzatura. Torna a Palimuth e riferisci la tua missione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.463750Z"
+  },
+  "questlog.quest_10.mission_1.state_6": {
+    "src_hash": "ff42da2d6a89bd6a1df1efdc1d4c7152",
+    "text": "Hai pulito tutti i tubi dalla spazzatura! Torna a Palimuth e chiedi la missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.464372Z"
+  },
+  "questlog.quest_10.mission_10.state_1": {
+    "src_hash": "1c32cc3091d0dcf983a5e914e76e7e6e",
+    "text": "Palimuth vi ha detto che un circolo di Yalahari sta pianificando una sorta di rituale. Hanno in programma di creare un portale per alcuni potenti demoni e di liberarli in città per 'purge' una volta per tutte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.465743Z"
+  },
+  "questlog.quest_10.mission_10.state_2": {
+    "src_hash": "e7da10bf26b2899190b4fd22ca60b0a9",
+    "text": "L'ingresso al loro santuario interiore è stato aperto per te. Preparati per una battaglia DIFFICILE! Meglio riunire alcuni amici per aiutarti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.466765Z"
+  },
+  "questlog.quest_10.mission_10.state_3": {
+    "src_hash": "9e21da6fcc29ffa6c9847a3cf880135f",
+    "text": "Fai rapporto al preside che hai scelto di aiutare e riceverai abiti Yalaharian.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.467802Z"
+  },
+  "questlog.quest_10.mission_10.state_4": {
+    "src_hash": "50a2c9d2146acd319c824479bfe72f1e",
+    "text": "Hai avuto accesso alla stanza delle ricompense. Scegli attentamente quale ricompensa scegliere poiché puoi prendere solo un oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.468691Z"
+  },
+  "questlog.quest_10.mission_10.state_5": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Hai completato la missione!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.469155Z"
+  },
+  "questlog.quest_10.mission_2.state_1": {
+    "src_hash": "5bc3655eef8888e19dd9be2b708ff629",
+    "text": "Devi trovare tutte e 7 le guardie e fare loro un rapporto. Dovresti iniziare dal quartiere straniero o dal quartiere commerciale e seguire l'ordine del percorso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.470243Z"
+  },
+  "questlog.quest_10.mission_2.state_2": {
+    "src_hash": "38cb6d3e90758a5bfd5f69736361467c",
+    "text": "Hai fatto rapporto a 1 guardia su 7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.470734Z"
+  },
+  "questlog.quest_10.mission_2.state_3": {
+    "src_hash": "2018efd17565ec9e1c23a13eb3bd3e88",
+    "text": "Hai fatto rapporto a 2 guardie su 7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.471192Z"
+  },
+  "questlog.quest_10.mission_2.state_4": {
+    "src_hash": "454eb54b63e54a46ebf8cc00c95a37e6",
+    "text": "Hai fatto rapporto a 3 guardie su 7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:23.471638Z"
+  },
+  "questlog.quest_10.mission_2.state_5": {
+    "src_hash": "a09cca3b675899dcd04da16bad8271b1",
+    "text": "Hai fatto rapporto a 4 guardie su 7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.929540Z"
+  },
+  "questlog.quest_10.mission_2.state_6": {
+    "src_hash": "6a4ebae6d5875e626c9fb8590c195a5f",
+    "text": "Hai fatto rapporto a 5 guardie su 7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.929986Z"
+  },
+  "questlog.quest_10.mission_2.state_7": {
+    "src_hash": "09a446a399d845cd713fd928e1fca7eb",
+    "text": "Hai fatto rapporto a 6 guardie su 7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.930536Z"
+  },
+  "questlog.quest_10.mission_2.state_8": {
+    "src_hash": "57274bdf136c3b2ee8b35d70518a5cf9",
+    "text": "Hai fatto rapporto a 7 guardie su 7! Torna a Palimuth e chiedi la missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.931111Z"
+  },
+  "questlog.quest_10.mission_3.state_1": {
+    "src_hash": "1f7a97487f6700ecc85e5495a14ff655",
+    "text": "Prendi gli appunti nella stanza di Palimuth e leggili. Parla di nuovo con Palimuth dopo aver letto le note.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.931907Z"
+  },
+  "questlog.quest_10.mission_3.state_2": {
+    "src_hash": "4eca682ed9c39d3560a345eed921f9ab",
+    "text": "Parla con Azerus lo Yalahari nel centro della città per ottenere la tua prossima missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.932747Z"
+  },
+  "questlog.quest_10.mission_3.state_3": {
+    "src_hash": "61082b1b6594f55cb26a778dae44c37c",
+    "text": "Prendi gli appunti dietro lo Yalahari e leggili. Parla di nuovo con Azerus e chiedigli una missione dopo aver letto le note.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.933672Z"
+  },
+  "questlog.quest_10.mission_3.state_4": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Chiedi a Palimuth per la missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.934201Z"
+  },
+  "questlog.quest_10.mission_3.state_5": {
+    "src_hash": "8daaf77f13a72bbe0a6a03de55f12006",
+    "text": "Per prima cosa dovrai uccidere i tre portatori di peste e poi ottenere le Formule degli Alchimisti. Fatto ciò, torna a Palimuth (lato buono) o Yalahari (Azerus) (lato cattivo).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.935549Z"
+  },
+  "questlog.quest_10.mission_4.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Chiedi a Palimuth per la missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:37.936218Z"
   }
 }

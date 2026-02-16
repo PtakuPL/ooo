@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T20:19:53.076572Z",
-  "cycle_counter": 564,
-  "last_target_key": "ro:html.json",
-  "last_pending_total": 1495,
+  "timestamp": "2026-02-16T20:22:51.639781Z",
+  "cycle_counter": 567,
+  "last_target_key": "sv:questlog.json",
+  "last_pending_total": 1909,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 288,
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 4,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -280,7 +280,10 @@
     "it:otclient_modules.json": 0,
     "sr:otclient_modules.json": 0,
     "sv:otclient_modules.json": 0,
-    "ru:books.json": 0
+    "ru:books.json": 0,
+    "ro:html.json": 0,
+    "it:questlog.json": 0,
+    "sr:questlog.json": 0
   },
   "bootstrap_priority": {
     "enabled": false,

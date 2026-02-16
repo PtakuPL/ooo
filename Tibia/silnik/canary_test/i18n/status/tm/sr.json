@@ -1470,5 +1470,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:18:17.070701Z"
+  },
+  "questlog.common.mission_completed_format": {
+    "src_hash": "5c60f96b6affcb675f69133dc8c002fd",
+    "text": "__ПХ0__ (завршено)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.736747Z"
+  },
+  "questlog.quest_1.mission_1.description": {
+    "src_hash": "84506f123942e87bbdb223433b1d0aa2",
+    "text": "Сломио си први печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.737538Z"
+  },
+  "questlog.quest_1.mission_1.name": {
+    "src_hash": "90155bb7a9269a145cdb34f33bc6ec4b",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.738222Z"
+  },
+  "questlog.quest_1.mission_2.description": {
+    "src_hash": "aa451c0927ac398a0c9607e68cabae40",
+    "text": "Сломио си други печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.738765Z"
+  },
+  "questlog.quest_1.mission_2.name": {
+    "src_hash": "5d62cb4a590965bb7e705d2c1b6477b2",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.739334Z"
+  },
+  "questlog.quest_1.mission_3.description": {
+    "src_hash": "1b87b7e9e62dc33b3fced8800f935200",
+    "text": "Сломио си трећи печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.739839Z"
+  },
+  "questlog.quest_1.mission_4.description": {
+    "src_hash": "0664bf4422c184b63c1256f5b92c9fed",
+    "text": "Сломио си четврти печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.740488Z"
+  },
+  "questlog.quest_1.mission_5.description": {
+    "src_hash": "6fd3cbde44ef19588ccba52fc0e89d3e",
+    "text": "Сломио си пети печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.741006Z"
+  },
+  "questlog.quest_1.mission_6.description": {
+    "src_hash": "a6f58f97f0d653eded324c90dddb6e30",
+    "text": "Сломио си шести печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.741574Z"
+  },
+  "questlog.quest_1.mission_7.description": {
+    "src_hash": "5df93ab653c84807b0cd359f4d7334cd",
+    "text": "Бансхее краљица те је пољубила. То је значило твоју смрт, а део твоје душе сада јој увек припада. Сломио си последњи печат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.742770Z"
+  },
+  "questlog.quest_1.mission_8.description": {
+    "src_hash": "9c32ee478633abbd64b5e57921dcd7cd",
+    "text": "Пребродили сте све опасности Бансхее Куест-а и живи сте побегли из тамнице. Крајња соба је запечаћена за вас од сада.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.743792Z"
+  },
+  "questlog.quest_1.mission_8.name": {
+    "src_hash": "51ae86f3a85c461e5e822d56e933ae93",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:21:57.744385Z"
+  },
+  "questlog.quest_10.mission_1.state_1": {
+    "src_hash": "7f6f2bdcc9d70c426a6e07eb1cd71a97",
+    "text": "Палимут вас је замолио да помогнете око неких кварова на канализацији. Требаће вам пајка, постоје 4 места на која треба да идете означена са Кс на вашој мапи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.291804Z"
+  },
+  "questlog.quest_10.mission_1.state_2": {
+    "src_hash": "e6e64f9275238b6ecc99b59f64a11a91",
+    "text": "Очистили сте 1 цев од 4 од смећа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.292420Z"
+  },
+  "questlog.quest_10.mission_1.state_3": {
+    "src_hash": "2776538e7a93252ae04bfd7069ef3c03",
+    "text": "Очистили сте 2 цеви од 4 од смећа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.292971Z"
+  },
+  "questlog.quest_10.mission_1.state_4": {
+    "src_hash": "60858fcece906d6ec05690e42c17b571",
+    "text": "Очистили сте 3 цеви од 4 од смећа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.293562Z"
+  },
+  "questlog.quest_10.mission_1.state_5": {
+    "src_hash": "c41b0c7d66177065ad1e3c2d575e5e29",
+    "text": "Очистили сте 4 цеви од 4 од смећа. Врати се у Палимут и пријави своју мисију",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.294414Z"
+  },
+  "questlog.quest_10.mission_1.state_6": {
+    "src_hash": "ff42da2d6a89bd6a1df1efdc1d4c7152",
+    "text": "Очистио си све цеви од смећа! Вратите се у Палимут и затражите мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.295406Z"
+  },
+  "questlog.quest_10.mission_10.state_1": {
+    "src_hash": "1c32cc3091d0dcf983a5e914e76e7e6e",
+    "text": "Палимут вам је рекао да круг Иалахарија планира неку врсту ритуала. Планирају да направе портал за неке моћне демоне и да их пусте у град да га __ПХ0__ једном заувек.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.296787Z"
+  },
+  "questlog.quest_10.mission_10.state_2": {
+    "src_hash": "e7da10bf26b2899190b4fd22ca60b0a9",
+    "text": "Отворен вам је улаз у њихово унутрашње светилиште. Будите спремни за ТЕШКУ битку! Боље је да окупите пријатеље да вам помогну.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.297790Z"
+  },
+  "questlog.quest_10.mission_10.state_3": {
+    "src_hash": "9e21da6fcc29ffa6c9847a3cf880135f",
+    "text": "Пријавите се директору који сте изабрали да вам помогне и добићете Иалахаријанску одећу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.298788Z"
+  },
+  "questlog.quest_10.mission_10.state_4": {
+    "src_hash": "50a2c9d2146acd319c824479bfe72f1e",
+    "text": "Имаш приступ соби за награде. Пажљиво бирајте коју награду бирате јер можете узети само један предмет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.299667Z"
+  },
+  "questlog.quest_10.mission_10.state_5": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Завршили сте потрагу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.300114Z"
+  },
+  "questlog.quest_10.mission_2.state_1": {
+    "src_hash": "5bc3655eef8888e19dd9be2b708ff629",
+    "text": "Морате пронаћи свих 7 чувара и дати им извештај. Требало би да почнете од Фореигн Куартер или од Траде Куартер и пратите редослед путање.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.301244Z"
+  },
+  "questlog.quest_10.mission_2.state_2": {
+    "src_hash": "38cb6d3e90758a5bfd5f69736361467c",
+    "text": "Пријавили сте се једном од 7 стражара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.301757Z"
+  },
+  "questlog.quest_10.mission_2.state_3": {
+    "src_hash": "2018efd17565ec9e1c23a13eb3bd3e88",
+    "text": "Пријавили сте 2 од 7 стражара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.302302Z"
+  },
+  "questlog.quest_10.mission_2.state_4": {
+    "src_hash": "454eb54b63e54a46ebf8cc00c95a37e6",
+    "text": "Пријавили сте 3 од 7 стражара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:29.302779Z"
+  },
+  "questlog.quest_10.mission_2.state_5": {
+    "src_hash": "a09cca3b675899dcd04da16bad8271b1",
+    "text": "Пријавили сте 4 од 7 стражара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.888590Z"
+  },
+  "questlog.quest_10.mission_2.state_6": {
+    "src_hash": "6a4ebae6d5875e626c9fb8590c195a5f",
+    "text": "Пријавили сте 5 од 7 стражара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.889219Z"
+  },
+  "questlog.quest_10.mission_2.state_7": {
+    "src_hash": "09a446a399d845cd713fd928e1fca7eb",
+    "text": "Пријавили сте 6 од 7 стражара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.889728Z"
+  },
+  "questlog.quest_10.mission_2.state_8": {
+    "src_hash": "57274bdf136c3b2ee8b35d70518a5cf9",
+    "text": "Пријавили сте 7 од 7 чувара! Вратите се у Палимут и затражите мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.890558Z"
+  },
+  "questlog.quest_10.mission_3.state_1": {
+    "src_hash": "1f7a97487f6700ecc85e5495a14ff655",
+    "text": "Узми белешке у соби Палимута и прочитај их. Разговарајте са Палимутом поново када прочитате белешке.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.891516Z"
+  },
+  "questlog.quest_10.mission_3.state_2": {
+    "src_hash": "4eca682ed9c39d3560a345eed921f9ab",
+    "text": "Разговарајте са __ПХ0__ Иалахаријем у центру града да добијете своју следећу мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.892468Z"
+  },
+  "questlog.quest_10.mission_3.state_3": {
+    "src_hash": "61082b1b6594f55cb26a778dae44c37c",
+    "text": "Узми белешке иза Иалахарија и прочитај их. Поново разговарајте са __ПХ0__ и питајте га за мисију када прочитате белешке.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.893541Z"
+  },
+  "questlog.quest_10.mission_3.state_4": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Питајте Палимута за мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.894237Z"
+  },
+  "questlog.quest_10.mission_3.state_5": {
+    "src_hash": "8daaf77f13a72bbe0a6a03de55f12006",
+    "text": "Прво ћете морати да убијете три носиоца куге, а затим да добијете формуле Алхемичара. Када је ово урађено, вратите се на Палимут (добра страна) или Иалахари (__ПХ0__) (лоша страна).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.895688Z"
+  },
+  "questlog.quest_10.mission_3.state_6": {
+    "src_hash": "1efaf103fe76fd9c3f3c6ce2eacf18a0",
+    "text": "Замолите __ПХ0__ Иалахари за мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.896547Z"
+  },
+  "questlog.quest_10.mission_4.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Питајте Палимута за мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.897187Z"
+  },
+  "questlog.quest_10.mission_4.state_2": {
+    "src_hash": "73dca76c968e0da6c4e9b731c7c600d9",
+    "text": "За ову мисију од вас се тражи да одете у Траде Куартер и преговарате или претите господину Весту. Још једном ћете добити приступ механизму, иако ако одлучите да помогнете Палимуту, требало би да прођете кроз канализацију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:22:45.898569Z"
   }
 }

@@ -4406,5 +4406,317 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:18:23.445926Z"
+  },
+  "questlog.common.mission_completed_format": {
+    "src_hash": "5c60f96b6affcb675f69133dc8c002fd",
+    "text": "%s (slutförd)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.921402Z"
+  },
+  "questlog.quest_1.mission_1.description": {
+    "src_hash": "84506f123942e87bbdb223433b1d0aa2",
+    "text": "Du bröt det första förseglingen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.923110Z"
+  },
+  "questlog.quest_1.mission_1.name": {
+    "src_hash": "90155bb7a9269a145cdb34f33bc6ec4b",
+    "text": "The Hidden Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.924797Z"
+  },
+  "questlog.quest_1.mission_2.description": {
+    "src_hash": "aa451c0927ac398a0c9607e68cabae40",
+    "text": "Du bröt det andra förseglingen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.925562Z"
+  },
+  "questlog.quest_1.mission_2.name": {
+    "src_hash": "5d62cb4a590965bb7e705d2c1b6477b2",
+    "text": "The Plague Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.926613Z"
+  },
+  "questlog.quest_1.mission_3.description": {
+    "src_hash": "1b87b7e9e62dc33b3fced8800f935200",
+    "text": "Du bröt det tredje förseglingen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.927382Z"
+  },
+  "questlog.quest_1.mission_4.description": {
+    "src_hash": "0664bf4422c184b63c1256f5b92c9fed",
+    "text": "Du bröt det fjärde förseglingen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.928122Z"
+  },
+  "questlog.quest_1.mission_5.description": {
+    "src_hash": "6fd3cbde44ef19588ccba52fc0e89d3e",
+    "text": "Du bröt det femte förseglingen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.928817Z"
+  },
+  "questlog.quest_1.mission_6.description": {
+    "src_hash": "a6f58f97f0d653eded324c90dddb6e30",
+    "text": "Du bröt det sjätte sigillet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.929471Z"
+  },
+  "questlog.quest_1.mission_7.description": {
+    "src_hash": "5df93ab653c84807b0cd359f4d7334cd",
+    "text": "Banshee Queen kysste dig. Detta betydde din död, och en del av din själ tillhör alltid henne nu. Du bröt det sista förseglingen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.932357Z"
+  },
+  "questlog.quest_1.mission_8.description": {
+    "src_hash": "9c32ee478633abbd64b5e57921dcd7cd",
+    "text": "Du har trotsat alla faror med Banshee Quest och flydde från fängelsehålan levande. Slutrummet är förseglat för dig från och med nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.934959Z"
+  },
+  "questlog.quest_1.mission_8.name": {
+    "src_hash": "51ae86f3a85c461e5e822d56e933ae93",
+    "text": "The Final Battle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:04.936092Z"
+  },
+  "questlog.quest_10.mission_1.state_1": {
+    "src_hash": "7f6f2bdcc9d70c426a6e07eb1cd71a97",
+    "text": "Palimuth bad dig hjälpa till med några avloppsfel. Du behöver en kofot, det finns 4 platser där du måste gå markerade med ett X på din karta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.877468Z"
+  },
+  "questlog.quest_10.mission_1.state_2": {
+    "src_hash": "e6e64f9275238b6ecc99b59f64a11a91",
+    "text": "Du rensade 1 rör av 4 från soporna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.878041Z"
+  },
+  "questlog.quest_10.mission_1.state_3": {
+    "src_hash": "2776538e7a93252ae04bfd7069ef3c03",
+    "text": "Du rengjorde 2 rör av 4 från soporna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.879127Z"
+  },
+  "questlog.quest_10.mission_1.state_4": {
+    "src_hash": "60858fcece906d6ec05690e42c17b571",
+    "text": "Du rensade 3 rör av 4 från soporna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.880126Z"
+  },
+  "questlog.quest_10.mission_1.state_5": {
+    "src_hash": "c41b0c7d66177065ad1e3c2d575e5e29",
+    "text": "Du rensade 4 rör av 4 från soporna. Gå tillbaka till Palimuth och rapportera ditt uppdrag",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.881844Z"
+  },
+  "questlog.quest_10.mission_1.state_6": {
+    "src_hash": "ff42da2d6a89bd6a1df1efdc1d4c7152",
+    "text": "Du rensade alla rör från soporna! Gå tillbaka till Palimuth och be om uppdrag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.883404Z"
+  },
+  "questlog.quest_10.mission_10.state_1": {
+    "src_hash": "1c32cc3091d0dcf983a5e914e76e7e6e",
+    "text": "Palimuth berättade att en krets av Yalahari planerar någon form av ritual. De planerar att skapa en portal för några mäktiga demoner och släppa lös dem i staden för att 'purge' den en gång för alla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.886905Z"
+  },
+  "questlog.quest_10.mission_10.state_2": {
+    "src_hash": "e7da10bf26b2899190b4fd22ca60b0a9",
+    "text": "Ingången till deras inre helgedom har öppnats för dig. Var beredd på en HÅR kamp! Bättre samla några vänner för att hjälpa dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.888353Z"
+  },
+  "questlog.quest_10.mission_10.state_3": {
+    "src_hash": "9e21da6fcc29ffa6c9847a3cf880135f",
+    "text": "Rapportera tillbaka till vilken rektor du än valt att hjälpa så får du Yalaharian Outfits.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.890055Z"
+  },
+  "questlog.quest_10.mission_10.state_4": {
+    "src_hash": "50a2c9d2146acd319c824479bfe72f1e",
+    "text": "Du har tillgång till belöningsrummet. Välj noga vilken belöning du väljer eftersom du bara kan ta ett föremål.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.891803Z"
+  },
+  "questlog.quest_10.mission_10.state_5": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Du har slutfört uppdraget!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.892842Z"
+  },
+  "questlog.quest_10.mission_2.state_1": {
+    "src_hash": "5bc3655eef8888e19dd9be2b708ff629",
+    "text": "Du måste hitta alla 7 vakterna och ge en rapport till dem. Du bör börja vid Foreign Quarter eller Trade Quarter och följa stigens ordning..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.895026Z"
+  },
+  "questlog.quest_10.mission_2.state_2": {
+    "src_hash": "38cb6d3e90758a5bfd5f69736361467c",
+    "text": "Du rapporterade till 1 av 7 vakter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.895689Z"
+  },
+  "questlog.quest_10.mission_2.state_3": {
+    "src_hash": "2018efd17565ec9e1c23a13eb3bd3e88",
+    "text": "Du rapporterade till 2 av 7 vakter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.896589Z"
+  },
+  "questlog.quest_10.mission_2.state_4": {
+    "src_hash": "454eb54b63e54a46ebf8cc00c95a37e6",
+    "text": "Du rapporterade till 3 av 7 vakter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:21.897358Z"
+  },
+  "questlog.quest_10.mission_2.state_5": {
+    "src_hash": "a09cca3b675899dcd04da16bad8271b1",
+    "text": "Du rapporterade till 4 av 7 vakter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.776985Z"
+  },
+  "questlog.quest_10.mission_2.state_6": {
+    "src_hash": "6a4ebae6d5875e626c9fb8590c195a5f",
+    "text": "Du rapporterade till 5 av 7 vakter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.777773Z"
+  },
+  "questlog.quest_10.mission_2.state_7": {
+    "src_hash": "09a446a399d845cd713fd928e1fca7eb",
+    "text": "Du rapporterade till 6 av 7 vakter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.778572Z"
+  },
+  "questlog.quest_10.mission_2.state_8": {
+    "src_hash": "57274bdf136c3b2ee8b35d70518a5cf9",
+    "text": "Du rapporterade till 7 av 7 vakter! Gå tillbaka till Palimuth och be om uppdrag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.779718Z"
+  },
+  "questlog.quest_10.mission_3.state_1": {
+    "src_hash": "1f7a97487f6700ecc85e5495a14ff655",
+    "text": "Få anteckningarna i Palimuths rum och läs dem. Prata med Palimuth igen när du har läst anteckningarna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.781213Z"
+  },
+  "questlog.quest_10.mission_3.state_2": {
+    "src_hash": "4eca682ed9c39d3560a345eed921f9ab",
+    "text": "Prata med Azerus Yalahari i stadens centrum för att få ditt nästa uppdrag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.782436Z"
+  },
+  "questlog.quest_10.mission_3.state_3": {
+    "src_hash": "61082b1b6594f55cb26a778dae44c37c",
+    "text": "Få anteckningarna bakom Yalahari och läs dem. Prata med Azerus igen och be honom om uppdrag när du har läst anteckningarna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.783766Z"
+  },
+  "questlog.quest_10.mission_3.state_4": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Be Palimuth om uppdrag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.784319Z"
+  },
+  "questlog.quest_10.mission_3.state_5": {
+    "src_hash": "8daaf77f13a72bbe0a6a03de55f12006",
+    "text": "Först måste du döda de tre pestbärarna och sedan skaffa The Alchemists' Formulas. När detta har gjorts gå tillbaka till antingen Palimuth (bra sida) eller Yalahari (Azerus) (dålig sida).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.785615Z"
+  },
+  "questlog.quest_10.mission_3.state_6": {
+    "src_hash": "1efaf103fe76fd9c3f3c6ce2eacf18a0",
+    "text": "Be Azerus Yalaharien om ett uppdrag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.786495Z"
+  },
+  "questlog.quest_10.mission_4.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Be Palimuth om uppdrag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.787049Z"
+  },
+  "questlog.quest_10.mission_4.state_2": {
+    "src_hash": "73dca76c968e0da6c4e9b731c7c600d9",
+    "text": "För detta uppdrag ombeds du att gå till handelskvarteret och förhandla eller hota Mr. West. Återigen kommer du att få tillgång till mekanismen men om du väljer att hjälpa Palimuth bör du gå igenom avloppen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:23:36.788407Z"
   }
 }

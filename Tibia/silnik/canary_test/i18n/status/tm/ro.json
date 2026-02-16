@@ -3598,5 +3598,373 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:14:09.739059Z"
+  },
+  "web.tpl.guilds.list.b_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.851324Z"
+  },
+  "web.tpl.highscores.b_4": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.853179Z"
+  },
+  "web.tpl.experience_stages.b_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.858965Z"
+  },
+  "web.tpl.guilds.manager.b_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.861784Z"
+  },
+  "web.tpl.serverinfo.h3_6": {
+    "src_hash": "764307143abb7141964bd8d06009dfc0",
+    "text": "Negru skull",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.864938Z"
+  },
+  "web.tpl.spells.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.866549Z"
+  },
+  "web.tpl.spells.th_4": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.867213Z"
+  },
+  "web.tpl.spells.th_7": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.868225Z"
+  },
+  "web.tpl.spells.th_9": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.868997Z"
+  },
+  "web.tpl.spells.th_12": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Obiect",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.869991Z"
+  },
+  "web.tpl.spells.th_15": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.870522Z"
+  },
+  "web.tpl.spells.th_16": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.870867Z"
+  },
+  "web.tpl.spells.th_18": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Obiect",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.871424Z"
+  },
+  "web.tpl.monsters.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.871842Z"
+  },
+  "web.tpl.monsters.th_3": {
+    "src_hash": "605669cab962bf944d99ce89cf9e58d9",
+    "text": "Sănătate",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.872415Z"
+  },
+  "web.tpl.account.management.th_12": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.874660Z"
+  },
+  "web.tpl.account.management.th_13": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.874972Z"
+  },
+  "web.tpl.changelog.b_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.876412Z"
+  },
+  "web.tpl.admin.news.table.th_3": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Jucător",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.879312Z"
+  },
+  "web.tpl.team.b_3": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.881522Z"
+  },
+  "web.tpl.team.b_10": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.883061Z"
+  },
+  "web.tpl.admin.changelog.th_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.885211Z"
+  },
+  "web.tpl.guilds.view.td_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.887630Z"
+  },
+  "web.tpl.guilds.view.b_5": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.888372Z"
+  },
+  "web.tpl.houses.b_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.895173Z"
+  },
+  "web.tpl.admin.plugins.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.896126Z"
+  },
+  "web.tpl.admin.pages.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.897828Z"
+  },
+  "web.tpl.experience_table.b_2": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.899517Z"
+  },
+  "web.tpl.account.characters.create.span_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.900969Z"
+  },
+  "web.tpl.buttons.cancel.set_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.901834Z"
+  },
+  "web.tpl.commands.b_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.903184Z"
+  },
+  "web.tpl.balance.th_2": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Jucător",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.903962Z"
+  },
+  "web.tpl.lastlogin.th_2": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Jucător",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:54.904480Z"
+  },
+  "web.tpl.forum.add_board.td_1": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Nume:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.640027Z"
+  },
+  "web.tpl.forum.add_board.td_2": {
+    "src_hash": "d0042a700e9bdf79689d63ee6846dc0e",
+    "text": "Descriere:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.640333Z"
+  },
+  "web.tpl.forum.add_board.td_3": {
+    "src_hash": "91b87910e0ec30a301a00465837a6bc6",
+    "text": "Acces:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.640630Z"
+  },
+  "web.tpl.guilds.list.set_1": {
+    "src_hash": "c026541afa61e406ad6b875d46387705",
+    "text": "Găsit Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.642845Z"
+  },
+  "web.tpl.guilds.list.set_2": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.643292Z"
+  },
+  "web.tpl.guilds.list.set_3": {
+    "src_hash": "c026541afa61e406ad6b875d46387705",
+    "text": "Găsit Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.643789Z"
+  },
+  "web.tpl.guilds.list.set_4": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.644206Z"
+  },
+  "web.tpl.guilds.list.b_4": {
+    "src_hash": "4743b7dd287301b1d81f813c79e46a44",
+    "text": "Creați Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.645252Z"
+  },
+  "web.tpl.guilds.list.b_5": {
+    "src_hash": "15be5768d3c4652ccbdbf688ff580765",
+    "text": "Înainte de a putea crea o breaslă, trebuie să vă autentificați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.646168Z"
+  },
+  "web.tpl.guilds.create.success.set_1": {
+    "src_hash": "b39eef6ed76f852540f8b106c19c4026",
+    "text": "A creat breasla",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.646525Z"
+  },
+  "web.tpl.guilds.create.success.set_2": {
+    "src_hash": "1f68faadf12faba4c4debef5fff0697f",
+    "text": "si motd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.646797Z"
+  },
+  "web.tpl.guilds.create.success.b_1": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Felicitări!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.647201Z"
+  },
+  "web.tpl.admin.tools.account.label_1": {
+    "src_hash": "dbabdb6263c2c47d45467b4e502d2ebf",
+    "text": "Puncte Premium",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:20:09.647811Z"
   }
 }

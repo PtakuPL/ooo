@@ -5830,5 +5830,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:14:05.023028Z"
+  },
+  "book.parchment_room.demon_seal": {
+    "src_hash": "65e033502c7653c66392844201e3d5f6",
+    "text": "Похоронен навеки, он больше никогда не вернётся. Не снимайте эту печать, иначе могут случиться плохие вещи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:10.022587Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "Я сделал это! Я добрался до хрустальных садов! Какую красоту и великолепие я увидел там внизу. Более того: я обнаружил небольшое подземное озеро, но Гарри был там раньше меня. И он сделал что-то странное: он позвонил в маленький, прозрачный на вид колокольчик, и тут же в воде появился большой водоворот. Полагаю, это и есть таинственный путь вглубь пещер, которые мы так долго искали. Но Гарри, трус, не осмелился нырнуть в воду. Вместо этого он покинул пещеры и направился обратно на поверхность. Мне нужен этот колокольчик!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.684439Z"
+  },
+  "book.dawnport.adventurers_guild_letter": {
+    "src_hash": "2b955455df5e1d1d0539717d3f21490c",
+    "text": "Отважный искатель приключений,\n\nGuild авантюристов приветствует вас как нового героя страны.\n\nВозьмите этот камень искателя приключений и используйте его в любом городском храме, чтобы мгновенно попасть в зал нашей гильдии. Если вы когда-нибудь потеряете камень искателя приключений, вы можете заменить его, поговорив со священником в храме.\nЯ надеюсь, что вы скоро посетите нас.\n\nС уважением,\nРотем, глава авантюристов Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.686895Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "СТРАНИЦА 2\nЛорд Кошей Любопытный\n-_-_-_-_-_-_-_-_-_-_-_-\nДата рождения: неизвестна\nВозраст: неизвестен\nРодной город: неизвестен\nДата смерти: неизвестна\nОб этом человеке известно не так много вещей. Он появился из ниоткуда и прожил здесь почти десять лет. Несмотря на то, что он был общительным, он никогда ничего не рассказывал о своей профессии и о том, чем зарабатывал на жизнь. Сначала он около двух лет жил в Darashia 2, квартира 11. В это время он странствовал по землям Дарамы и часто посещал Купальню Снов и пирамиду Минотавра на Севере.\nПотом выяснилось, что он построил башню к югу от гор. Непонятно, как ему это удалось, поскольку никто не видел, чтобы ему помогли. Во всяком случае, остатки его башни все еще там. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.690705Z"
+  },
+  "book.new_frontier.hidden_note": {
+    "src_hash": "9ceb31d90dfc2bd835acf14d81f53a52",
+    "text": "Идите к секретной двери на севере.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.691417Z"
+  },
+  "book.otbm.1000_alchemical_uses_of_urine": {
+    "src_hash": "9c23d812ac32f7e41a0537b19e4c8678",
+    "text": "1000 алхимических способов использования мочи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.691938Z"
+  },
+  "book.otbm.1001_recipes_against_sweaty_hands": {
+    "src_hash": "8275b9995fc68e7998155dae59d10bb0",
+    "text": "1001 рецепт против потных рук",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.692629Z"
+  },
+  "book.otbm.1001_ways_to_use_energy": {
+    "src_hash": "5bd2f82c9a64857c3866a03b4062b621",
+    "text": "1001 способ использования энергетических лучей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.693186Z"
+  },
+  "book.otbm.100_gold_coins_equal_1": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 золотых монет равны 1 платиновой монете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.693710Z"
+  },
+  "book.otbm.100_gold_coins_equal_1_39c18279": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 золотых монет равны 1 платиновой монете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.694372Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 платиновых монет равны 1 хрустальной монете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.694915Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1_648a8349": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 платиновых монет равны 1 хрустальной монете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.695494Z"
+  },
+  "book.otbm.1_be_respectful_and_considerate": {
+    "src_hash": "a57d4f9c381d85d1d59ee58709244771",
+    "text": "1. Будьте уважительны и внимательны к своим товарищам.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.696152Z"
+  },
+  "book.otbm.1_discover_secret_of_necromants": {
+    "src_hash": "b262931a57ba6ca52d750f20308ade82",
+    "text": "1. Раскройте тайну нектара некромантов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.696662Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Положите в машину пучок сахарного тростника.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.697246Z"
+  },
+  "book.otbm.1st_floor_bel_etage_grand": {
+    "src_hash": "f29cc66b29afa145b3a9858568976985",
+    "text": "1 этаж (бельэтаж): кафе Гранд Опера.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.697757Z"
+  },
+  "book.otbm.1st_floor_interior_design_take": {
+    "src_hash": "9fb4f14b9389b9a4981c5b9bd7cbb8a0",
+    "text": "1 этаж: Дизайн интерьера (лифт)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.698372Z"
+  },
+  "book.otbm.1st_floor_magic_emporium": {
+    "src_hash": "3bc17306f6a2a84ed45125c1b8697891",
+    "text": "1 этаж: Магический магазин.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:24.698896Z"
+  },
+  "book.otbm.1st_floor_the_archers_grounds": {
+    "src_hash": "766fedafb986dcfc1155671e1bb154fb",
+    "text": "1-й этаж: Территория лучников — дистанционное оружие и заклинания Paladin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.613744Z"
+  },
+  "book.otbm.20_tricks_to_get_peoples": {
+    "src_hash": "30aa0d5bee0e41253afba1e1fedcd836",
+    "text": "20 уловок, чтобы получить деньги людей",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.614426Z"
+  },
+  "book.otbm.2_dont_be_late_for": {
+    "src_hash": "ad76df038f1054198aa4a295d40dc2b4",
+    "text": "2. Не опаздывайте на уроки и тренировки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.615026Z"
+  },
+  "book.otbm.2_floor_the_room_of": {
+    "src_hash": "2b9486c0596c58b4f7addc9ea8b7a6d1",
+    "text": "2. Этаж – Комната Оракула.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.615587Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. Патока будет автоматически экстрагироваться и перегоняться в ром.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.616360Z"
+  },
+  "book.otbm.2nd_floor_barnabas_dee_astronomer": {
+    "src_hash": "d71fa402f290bf9994eda7fc73808be3",
+    "text": "2-й этаж: Барнабас Ди, астроном и учитель заклинаний Sorcerer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.617224Z"
+  },
+  "book.otbm.2nd_floor_exquisite_jewellery": {
+    "src_hash": "46a7e585dbab0fe25bc731f569a5a7b3",
+    "text": "2 этаж: Изысканные украшения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.617751Z"
+  },
+  "book.otbm.2nd_floor_madame_faylas_music": {
+    "src_hash": "6fb6296d9b6d9246f8e9f5d9e5a10ff7",
+    "text": "2 этаж: Музыкальная палата мадам Файла.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.618376Z"
+  },
+  "book.otbm.3789_gold_weapons_and_repairs": {
+    "src_hash": "09d42ec9bd3a03229363e3dd475e0f61",
+    "text": "3789 золота оружие и ремонт",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.618863Z"
+  },
+  "book.otbm.3_discover_secret_entrance_to": {
+    "src_hash": "4e11b68dea1a42f22925d7964699f36e",
+    "text": "3. Откройте секретный вход в Ямы Кошмаров.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.619410Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Поддерживайте свое тренировочное снаряжение в хорошем состоянии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.620059Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. Когда процесс дистилляции завершится, из машины начнет выливаться ром.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.620752Z"
+  },
+  "book.otbm.4000_gold_books_and_paper": {
+    "src_hash": "12aa92830e0d674b22e3b80f5e520546",
+    "text": "4000 золотых книг и бумаги.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.621205Z"
+  },
+  "book.otbm.4_exterminiate_the_ghouls_in": {
+    "src_hash": "b2ab977dc2790947663a26a210f9efbb",
+    "text": "4. Истребить гулей в саду.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.621686Z"
+  },
+  "book.otbm.4_no_running_in_the": {
+    "src_hash": "19a98caa510a0b8ad6eb41e9f99f9695",
+    "text": "4. Никакой беготни по коридору.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.622345Z"
+  },
+  "book.otbm.4_quickly_use_any_bottle": {
+    "src_hash": "5c1d55c8995e791da43817d448226c29",
+    "text": "4. Быстро соберите ром в любую бутылку или чашку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.622967Z"
+  },
+  "book.otbm.5000_gold_runes_and_fluids": {
+    "src_hash": "0672360e8e6dcc8e6dc116b3ab6e3b58",
+    "text": "5000 золотых рун и жидкостей",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.623422Z"
+  },
+  "book.otbm.5_no_eating_and_drinking": {
+    "src_hash": "84d1f2d9ae1c7c4891ff643961d03882",
+    "text": "5. Никакой еды и питья.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:36.623857Z"
+  },
+  "book.otbm.5_no_sigildrawing_on_the": {
+    "src_hash": "e829268d40ae27166494352f4d8d9e70",
+    "text": "5. Никаких рисунков на полу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.374690Z"
+  },
+  "book.otbm.6_no_food_in_the": {
+    "src_hash": "00c6d0c7da6345e134203eaa56d8e033",
+    "text": "6. В библиотеке нет еды.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.375165Z"
+  },
+  "book.otbm.6_return_borrowed_equipment_to": {
+    "src_hash": "e5c921bc1ac72b5edfbc9914930b8b48",
+    "text": "6. Вернуть взятое напрокат оборудование в камеру хранения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.375755Z"
+  },
+  "book.otbm.7_no_scribbling_in_libraryowned": {
+    "src_hash": "f52764d2c16bdaa528ceeabad7968199",
+    "text": "7. Никаких записей в документах, принадлежащих библиотеке.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.376316Z"
+  },
+  "book.otbm.8_books_and_scrolls_must": {
+    "src_hash": "8d0d902de3d94969d44bfb69da9b4b2d",
+    "text": "8. Книги и свитки необходимо вернуть туда, откуда они были взяты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.379096Z"
+  },
+  "book.otbm.900_mad_doc_vs_harpoon": {
+    "src_hash": "0850d195726d0ee609c08f3109170d8d",
+    "text": "9.00 Безумный док. против Гарпуна Ангуса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.380413Z"
+  },
+  "book.otbm.9_no_library_document_to": {
+    "src_hash": "1c6c8d65024c711ee5524305c145989b",
+    "text": "9. Никакие библиотечные документы нельзя выносить за пределы территории библиотеки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.381198Z"
+  },
+  "book.otbm.a_city_only_for_serving": {
+    "src_hash": "ac1636229dbf36e9d335628c0577b42a",
+    "text": "Город, служащий только одной цели: исследованию магии в нашем мире Tibia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.382522Z"
+  },
+  "book.otbm.a_crudely_scribbled_note": {
+    "src_hash": "e4e599255fc76eab5baab6aa9e8c4aa0",
+    "text": "(грубо написанная заметка)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.383027Z"
+  },
+  "book.otbm.a_goblet_forged_by_the": {
+    "src_hash": "8b6673d0d466516b9a27d6990a52bff6",
+    "text": "Кубок, выкованный драконом Хаксом, олицетворяющий все знания и мудрость ТибииВенесуэлы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.383972Z"
+  },
+  "book.otbm.a_low_nearly_always_fourleaved": {
+    "src_hash": "1e9a3bb8579f1329314bfa4cdf473e1f",
+    "text": "Невысокое, почти всегда четырехлистное растение с желтыми цветками, произрастающее в теплом климате. Раньше это был основной источник пищи для коз континента. Однако позже было обнаружено, что он оказывает на животных ранее совершенно неизвестное ядовитое долговременное воздействие, и все козы умерли в течение двух месяцев.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.385770Z"
+  },
+  "book.otbm.a_map_of_several_known": {
+    "src_hash": "39f7c4fba141d7e1fb3b442da6b0da9e",
+    "text": "Карта нескольких известных, а также совершенно экзотических локаций.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T20:19:48.386608Z"
   }
 }

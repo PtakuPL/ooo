@@ -10166,5 +10166,125 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:13:07.093922Z"
+  },
+  "monster.old_wasp.voice_1": {
+    "src_hash": "a4a90cf143e6eb7fa208ab8f7c5f7439",
+    "text": "Bsssss",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:33.955383Z"
+  },
+  "monster.old_pig.name": {
+    "src_hash": "32e9edc16056ea133af764ed59b74291",
+    "text": "Porc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:33.955559Z"
+  },
+  "monster.old_pig.desc": {
+    "src_hash": "5243ef7cf1ed257c9c4c50562dad28df",
+    "text": "un porc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:33.955728Z"
+  },
+  "monster.old_giant_spider.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Păianjen uriaș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:37.985175Z"
+  },
+  "monster.old_giant_spider.desc": {
+    "src_hash": "b5fdfd59be8ae5a93cf595e754ab4fdf",
+    "text": "un păianjen uriaș",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:37.985484Z"
+  },
+  "monster.old_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:37.985794Z"
+  },
+  "monster.old_bear.name": {
+    "src_hash": "372137ebb0d053fecd7a594ec5cb5971",
+    "text": "Urs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:37.985960Z"
+  },
+  "monster.old_bear.desc": {
+    "src_hash": "55c5872e02058083fce51af088b7ef0f",
+    "text": "un urs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:37.986214Z"
+  },
+  "monster.old_bug.name": {
+    "src_hash": "c83640c604dd5e0eacbf3de0a1181101",
+    "text": "Bug",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:41.518215Z"
+  },
+  "monster.old_bug.desc": {
+    "src_hash": "6c71bda3cba6e57086f204c6f8c42808",
+    "text": "un bug",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:41.518413Z"
+  },
+  "monster.weeper.name": {
+    "src_hash": "89d5f03070cb61e208573636188f254e",
+    "text": "Plângător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:41.518598Z"
+  },
+  "monster.weeper.desc": {
+    "src_hash": "dd53478bebadce404651e0b5f5e5d33f",
+    "text": "un plângător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:41.518792Z"
+  },
+  "monster.eternal_guardian.name": {
+    "src_hash": "486e3b829c682c97c6b43609a4bb0d50",
+    "text": "Gardianul Etern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:45.219812Z"
+  },
+  "monster.eternal_guardian.desc": {
+    "src_hash": "1e3eb54fdcff1e48ad5dc573670d13fc",
+    "text": "un veșnic gardian",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:45.220083Z"
+  },
+  "monster.eternal_guardian.voice_2": {
+    "src_hash": "f101de72b162824355dbd39b2fc6b155",
+    "text": "<trosnet>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:45.220733Z"
   }
 }

@@ -11238,5 +11238,197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:13:02.538143Z"
+  },
+  "monster.orchid_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.401173Z"
+  },
+  "monster.azure_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.401693Z"
+  },
+  "monster.bog_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.402386Z"
+  },
+  "monster.crimson_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.403561Z"
+  },
+  "monster.toad.voice_1": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.403876Z"
+  },
+  "monster.coral_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.404701Z"
+  },
+  "monster.frost_servant.voice_3": {
+    "src_hash": "bc295d5ae9a0872cbbf39e14a2c16f4b",
+    "text": "Гнарр.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.699604Z"
+  },
+  "monster.white_deer.voice_1": {
+    "src_hash": "3c4e7e02d0cd27b75e0a41557802e5ea",
+    "text": "*колокольчик*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.740259Z"
+  },
+  "monster.white_deer.voice_3": {
+    "src_hash": "6893eb66509f48a58d9082583b588094",
+    "text": "*нюхает*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.740731Z"
+  },
+  "monster.white_deer.voice_4": {
+    "src_hash": "1b80b0855d4ba7591602eb8c8b99ea83",
+    "text": "*хрипит*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.741087Z"
+  },
+  "monster.demon_summoner.desc": {
+    "src_hash": "775f172869d40d605be241a5070b0afa",
+    "text": "Кости",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.791049Z"
+  },
+  "monster.duskbringer.voice_1": {
+    "src_hash": "593f24c9febaf98b2590e4be5d3a91ed",
+    "text": "Смерть!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.800908Z"
+  },
+  "monster.rhindeer.voice_3": {
+    "src_hash": "089ad162ace4f4ad44fbed9a1e00b07d",
+    "text": "Фыркайте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.813037Z"
+  },
+  "monster.munster.voice_1": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "Мип!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.886327Z"
+  },
+  "monster.green_frog.voice_4": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.921579Z"
+  },
+  "monster.infernal_frog.voice_5": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.922408Z"
+  },
+  "monster.infernal_frog.voice_6": {
+    "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+    "text": "Никаких тебе поцелуев!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.922736Z"
+  },
+  "monster.orchid_frog.voice_4": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.923465Z"
+  },
+  "monster.azure_frog.voice_3": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.923892Z"
+  },
+  "monster.bog_frog.voice_3": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.924421Z"
+  },
+  "monster.crimson_frog.voice_4": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.925197Z"
+  },
+  "monster.toad.voice_3": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.925513Z"
+  },
+  "monster.coral_frog.voice_4": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.926241Z"
+  },
+  "monster.cave_rat.voice_4": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "Мип!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:16:00.929067Z"
   }
 }

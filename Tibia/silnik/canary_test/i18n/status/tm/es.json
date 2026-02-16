@@ -39537,27 +39537,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:22:35.440243Z"
+    "updated_at": "2026-02-16T21:15:55.346536Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:22:35.441571Z"
+    "updated_at": "2026-02-16T21:15:55.347778Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "¡Pssst! ¡Mantenlo bajo! <gives you an elaborate report on monster activity>",
+    "text": "¡Pssst! ¡Mantenlo bajo! <te da un informe elaborado sobre la actividad de los monstruos>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:22:35.442577Z"
+    "updated_at": "2026-02-16T21:15:55.348635Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -142022,5 +142022,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:09:55.657118Z"
+  },
+  "npc.thorgrin.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:52.491137Z"
+  },
+  "npc.thorwulf.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:52.500332Z"
+  },
+  "npc.torkada.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:52.605194Z"
+  },
+  "npc.ukea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:52.655905Z"
+  },
+  "npc.ziyad.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:15:53.277992Z"
   }
 }

@@ -141670,5 +141670,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:01:05.670489Z"
+  },
+  "npc.seymour.voice_1": {
+    "src_hash": "def2d3948cc0b6d4b82fd564d3127e1d",
+    "text": "Recién llegados: ¡visítenme! ¡Responderé tus preguntas!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.723826Z"
+  },
+  "npc.seymour.voice_2": {
+    "src_hash": "6961b19694f25d7a5c605157698e7193",
+    "text": "¡Entrénate en la academia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.725423Z"
+  },
+  "npc.seymour.voice_3": {
+    "src_hash": "0f4486b1993797b05e78dd499c74c5d0",
+    "text": "¿Te sientes perdido? ¡Pídeme ayuda!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.727170Z"
+  },
+  "npc.seymour.voice_4": {
+    "src_hash": "8265020d8ab41dc268153237ded89725",
+    "text": "¡Obtén algunos conocimientos en la academia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.728924Z"
+  },
+  "npc.shanar.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.731810Z"
+  },
+  "npc.shirith.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.777739Z"
+  },
+  "npc.shirith.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:05.781798Z"
+  },
+  "npc.tanyt.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:06.143908Z"
+  },
+  "npc.the_beggar_king.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:06.225137Z"
+  },
+  "npc.thorgrin.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:06.353409Z"
   }
 }

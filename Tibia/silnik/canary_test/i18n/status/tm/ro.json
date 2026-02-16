@@ -9030,5 +9030,149 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:04:23.816478Z"
+  },
+  "monster.old_wasp.name": {
+    "src_hash": "5a2121f3548dc88faf3db43db327f7c7",
+    "text": "Viespe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:39.381091Z"
+  },
+  "monster.old_wasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "o viespe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:39.381675Z"
+  },
+  "monster.old_spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Păianjen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:39.385668Z"
+  },
+  "monster.old_spider.desc": {
+    "src_hash": "e290d18d76cb96332184d7f6628df7d9",
+    "text": "un păianjen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:39.386496Z"
+  },
+  "monster.williwasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "o viespe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:39.833324Z"
+  },
+  "monster.cyclops_smith.desc": {
+    "src_hash": "c310fe873b11d77071eb0dd89353296e",
+    "text": "un fierar ciclop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:53.937429Z"
+  },
+  "monster.behemoth.desc": {
+    "src_hash": "39eaab30424bd0f54e1c4cc07b6d07a6",
+    "text": "un gigantic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:53.938174Z"
+  },
+  "monster.hydra.name": {
+    "src_hash": "0a79d2e788f647cf8c8bee8cad4bf94e",
+    "text": "Hidra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:53.938346Z"
+  },
+  "monster.hydra.desc": {
+    "src_hash": "2e27186b32145628f458e52602056d18",
+    "text": "o hidra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:53.938514Z"
+  },
+  "monster.dragon_lord.name": {
+    "src_hash": "aee5c1cece6bc8375b1264c16e1ee82c",
+    "text": "Domnul Dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:57.708285Z"
+  },
+  "monster.dragon_lord.desc": {
+    "src_hash": "ede58b3b8c6d66dea11ec41b6ddeb040",
+    "text": "un lord dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:57.708515Z"
+  },
+  "monster.ice_dragon.name": {
+    "src_hash": "fc32f0dc4eb39df0b549918c8b8bd83f",
+    "text": "Dragonul de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:57.708739Z"
+  },
+  "monster.ice_dragon.desc": {
+    "src_hash": "e58c12b946d0f020cb3fa5215639c4d5",
+    "text": "un dragon de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:57.708979Z"
+  },
+  "monster.wyrm.desc": {
+    "src_hash": "087f4605e808df9c4bd038bac3c682c8",
+    "text": "un vârloc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:07:02.455649Z"
+  },
+  "monster.dragon.desc": {
+    "src_hash": "7261d6adadc75700b2f0e81d60600d8b",
+    "text": "un dragon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:07:02.456394Z"
+  },
+  "monster.old_bonelord.name": {
+    "src_hash": "22f059b0c7b72b0e26b51e5696dd9c3d",
+    "text": "Privitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:07:02.456575Z"
+  },
+  "monster.old_bonelord.desc": {
+    "src_hash": "6a95b17e22bc901177cd7d1f74684ef1",
+    "text": "un privitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:07:02.456765Z"
+  },
+  "monster.old_bonelord.voice_1": {
+    "src_hash": "611d88fb0bac95d0375b5e376d5f7545",
+    "text": "Olho por Olho!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:07:05.402874Z"
   }
 }

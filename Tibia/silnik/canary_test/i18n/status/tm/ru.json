@@ -10526,5 +10526,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:04:17.521349Z"
+  },
+  "monster.iron_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Оставаться. Покорный.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.338532Z"
+  },
+  "monster.golden_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Оставаться. Покорный.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.359036Z"
+  },
+  "monster.furyosa.voice_3": {
+    "src_hash": "477cbb1101311cf585d5ea5603c4176f",
+    "text": "Умри!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.796058Z"
+  },
+  "monster.squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Ччч",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.807729Z"
+  },
+  "monster.enraged_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Ччч",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.809547Z"
+  },
+  "monster.thieving_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Ччч",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.810044Z"
+  },
+  "monster.assassin.voice_2": {
+    "src_hash": "477cbb1101311cf585d5ea5603c4176f",
+    "text": "Умри!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.903911Z"
+  },
+  "monster.training_machine.voice_4": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Рррттарррттаррртта",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.912641Z"
+  },
+  "monster.training_machine.voice_6": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "клонк клонк клонк",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.913350Z"
+  },
+  "monster.truffle_cook.voice_3": {
+    "src_hash": "6b658f9a02f6bbf9fe81514702b35598",
+    "text": "Вкусный!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:13.955096Z"
+  },
+  "monster.assassin.voice_4": {
+    "src_hash": "477cbb1101311cf585d5ea5603c4176f",
+    "text": "Умри!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:14.088965Z"
+  },
+  "monster.training_machine.voice_13": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Рррттарррттаррртта",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:14.089988Z"
+  },
+  "monster.training_machine.voice_15": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "клонк клонк клонк",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:14.090837Z"
+  },
+  "monster.damaged_worker_golem.voice_7": {
+    "src_hash": "ffc43f896244d5d80e275df78e7e23f4",
+    "text": "Самодиагностика не удалась.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:25.045599Z"
+  },
+  "monster.damaged_worker_golem.voice_8": {
+    "src_hash": "44a48567e44bfdba20220ef20ff69aa0",
+    "text": "Ой... чшррр приказы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:25.046007Z"
+  },
+  "monster.golden_servant_replica.name": {
+    "src_hash": "957c4b199ad13617f92ebf557bf8fa10",
+    "text": "Реплика Золотого Слуги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:27.830633Z"
+  },
+  "monster.golden_servant_replica.desc": {
+    "src_hash": "d9541eddc1334370fd725415e38a9940",
+    "text": "копия золотого слуги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:27.831052Z"
+  },
+  "monster.sandstone_scorpion.voice_3": {
+    "src_hash": "960c88011610834a481d8ebe41989ea8",
+    "text": "*так так так*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:27.831693Z"
+  },
+  "monster.animated_snowman.name": {
+    "src_hash": "18f68ac12ddc5c6544334e3800b0a590",
+    "text": "Анимированный Снеговик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:27.832103Z"
+  },
+  "monster.animated_snowman.desc": {
+    "src_hash": "98f6ff90b2ad9cfc4c835363fdcc09b9",
+    "text": "анимированный снеговик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:30.595187Z"
+  },
+  "monster.ice_golem.voice_3": {
+    "src_hash": "bc295d5ae9a0872cbbf39e14a2c16f4b",
+    "text": "Гнарр.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:30.595548Z"
+  },
+  "monster.golden_servant.name": {
+    "src_hash": "9e837df4ac3350049a0ce44def84b265",
+    "text": "Золотой Слуга",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:30.595914Z"
+  },
+  "monster.golden_servant.desc": {
+    "src_hash": "902b471cc823171d49de4da19d7f5599",
+    "text": "золотой слуга",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:30.596396Z"
+  },
+  "monster.goggle_cake.voice_3": {
+    "src_hash": "717328999a83f1ce3cf4f048f05dc088",
+    "text": "Голод!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:33.667664Z"
+  },
+  "monster.green_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:33.668095Z"
+  },
+  "monster.infernal_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Риббит! Риббит!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:33.668449Z"
+  },
+  "monster.infernal_frog.voice_3": {
+    "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+    "text": "Никаких тебе поцелуев!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:06:33.668884Z"
   }
 }

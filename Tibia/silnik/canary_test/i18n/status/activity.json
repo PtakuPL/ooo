@@ -1,9 +1,9 @@
 {
-  "category": "sr",
-  "cycle": 38,
+  "category": "es",
+  "cycle": 39,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-16T21:05:35Z",
+  "generated_at_utc": "2026-02-16T21:07:24Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 38,
+      "category": "es",
+      "cycle": 39,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T21:05:27Z"
+      "t": "2026-02-16T21:07:14Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 38,
-      "file": "npc.json",
+      "category": "ro",
+      "cycle": 39,
+      "file": "monsters.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-16T21:06:38Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 39,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-16T21:05:27Z"
+      "t": "2026-02-16T21:06:38Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 38,
-      "file": "npc.json",
+      "category": "ru",
+      "cycle": 39,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T21:05:21Z"
+      "t": "2026-02-16T21:06:11Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 38,
-      "file": "npc.json",
+      "category": "ru",
+      "cycle": 39,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-16T21:05:21Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 38,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-16T21:05:18Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 38,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-16T21:05:15Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 38,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-16T21:05:15Z"
+      "t": "2026-02-16T21:06:11Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 37,
+      "cycle": 39,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-16T21:06:08Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 39,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T21:04:43Z"
+      "t": "2026-02-16T21:05:52Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 37,
+      "category": "es",
+      "cycle": 39,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-16T21:05:52Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 38,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T21:04:28Z"
+      "t": "2026-02-16T21:05:27Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 37,
+      "category": "pl",
+      "cycle": 38,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-16T21:04:28Z"
+      "t": "2026-02-16T21:05:27Z"
     }
   ],
   "stage": "cycle_end",

@@ -665,11 +665,11 @@
   },
   "otclient_modules.character.tr_17": {
     "src_hash": "453b284354c516de31dff38fa5082a17",
-    "text": "I. I. udźperuka",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Magia tarcza udźperuka",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705479Z"
+    "updated_at": "2026-02-16T23:54:13.139616Z"
   },
   "otclient_modules.character.tr_38": {
     "src_hash": "7fcbebe44a3ba2d162be939560e75688",
@@ -681,11 +681,11 @@
   },
   "otclient_modules.character.tr_4": {
     "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
-    "text": "I. odbicie",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Odbicie obrażeń",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705487Z"
+    "updated_at": "2026-02-16T23:54:18.598753Z"
   },
   "otclient_modules.character.tr_46": {
     "src_hash": "9428316ee33b703d37464160e7b7dfff",
@@ -793,11 +793,11 @@
   },
   "otclient_modules.charms.tr_57": {
     "src_hash": "a62a1589932af73bb8e34027c44d27d3",
-    "text": "Dodges an Atak with a chance, avoiding all damage.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Z szansą unika ataku, unikając wszelkich obrażeń.",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705566Z"
+    "updated_at": "2026-02-16T23:54:13.205359Z"
   },
   "otclient_modules.charms1410_otui.tr_4": {
     "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
@@ -905,51 +905,51 @@
   },
   "otclient_modules.game_healthcircle.tr_12": {
     "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
-    "text": "I. I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka na odległość",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705642Z"
+    "updated_at": "2026-02-16T23:54:13.287012Z"
   },
   "otclient_modules.game_healthcircle.tr_13": {
     "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
-    "text": "I. I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka na siekiery",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705646Z"
+    "updated_at": "2026-02-16T23:54:13.287921Z"
   },
   "otclient_modules.game_healthcircle.tr_14": {
     "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
-    "text": "miecz I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka na miecze",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705649Z"
+    "updated_at": "2026-02-16T23:54:13.288827Z"
   },
   "otclient_modules.game_healthcircle.tr_15": {
     "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
-    "text": "I. I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka Klubowa",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705656Z"
+    "updated_at": "2026-02-16T23:54:13.289755Z"
   },
   "otclient_modules.game_healthcircle.tr_16": {
     "src_hash": "e524eaf6892bb930079671668177894d",
-    "text": "pięść I.",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Walka na pięści",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705660Z"
+    "updated_at": "2026-02-16T23:54:13.290784Z"
   },
   "otclient_modules.game_healthcircle.tr_17": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
-    "text": "I. poziom",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Poziom Magii",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705666Z"
+    "updated_at": "2026-02-16T23:54:13.291090Z"
   },
   "otclient_modules.game_highscore_otui.tr_1": {
     "src_hash": "d3d2e617335f08df83599665eef8a418",
@@ -13249,11 +13249,11 @@
   },
   "otclient_modules.imbuing_otui.tr_7": {
     "src_hash": "fd9c5ad613abbde3df710701444e0f75",
-    "text": "Click here to carry out the selected imbuement. This will consume the required astral sources and Złoto.",
+    "text": "Kliknij tutaj aby przeprowadzić wybrane nasycenie. To pochłonie wymagane źródła astralne i złoto.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T02:37:24.047941Z"
+    "updated_at": "2026-02-16T23:54:13.419125Z"
   },
   "otclient_modules.inventory_otui.tr_1": {
     "src_hash": "11a755d598c0c417f9a36758c3da7481",
@@ -14441,19 +14441,19 @@
   },
   "otclient_modules.npctrade_otui.tr_15": {
     "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
-    "text": "List of Przedmiots that you're able to Sprzedaj",
+    "text": "Lista przedmiotów, które możesz sprzedać",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T02:43:17.564280Z"
+    "updated_at": "2026-02-16T23:54:13.477696Z"
   },
   "otclient_modules.npctrade_otui.tr_17": {
     "src_hash": "090951e6353119d15cea658bfd978777",
-    "text": "List of Przedmiots that you're able to Kup",
+    "text": "Lista przedmiotów, które możesz kupić",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T02:43:17.565084Z"
+    "updated_at": "2026-02-16T23:54:13.478963Z"
   },
   "otclient_modules.npctrade_otui.tr_8": {
     "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
@@ -17393,11 +17393,11 @@
   },
   "otclient_modules.skills_otui.tr_44": {
     "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
-    "text": "miecz I.",
+    "text": "Walka na miecze",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T03:01:53.524134Z"
+    "updated_at": "2026-02-16T23:54:13.555623Z"
   },
   "otclient_modules.skills_otui.tr_45": {
     "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
@@ -17409,19 +17409,19 @@
   },
   "otclient_modules.skills_otui.tr_46": {
     "src_hash": "e524eaf6892bb930079671668177894d",
-    "text": "pięść I.",
+    "text": "Walka na pięści",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T03:01:53.525569Z"
+    "updated_at": "2026-02-16T23:54:13.556707Z"
   },
   "otclient_modules.skills_otui.tr_47": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
-    "text": "I. poziom",
+    "text": "Poziom Magii",
     "source": "simple_dict",
     "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-13T03:01:53.525900Z"
+    "updated_at": "2026-02-16T23:54:13.556973Z"
   },
   "otclient_modules.skills_otui.tr_48": {
     "src_hash": "8e5199d65fcd7759c32aa3ae00d61254",
@@ -18313,11 +18313,11 @@
   },
   "otclient_modules.statsbar.tr_11": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
-    "text": "I. poziom",
+    "text": "Poziom Magii",
     "source": "simple_dict",
     "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-13T03:07:57.067632Z"
+    "updated_at": "2026-02-16T23:54:13.568846Z"
   },
   "otclient_modules.statsbar.tr_12": {
     "src_hash": "a0db49ba470c1c9ae2128c3470339153",
@@ -97982,5 +97982,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:53:37.358491Z"
+  },
+  "otclient_modules.character_otui.tr_86": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Szybkość",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:13.179853Z"
+  },
+  "otclient_modules.const.tr_5": {
+    "src_hash": "bf495fc048d8d44b7f32536df5cf3930",
+    "text": "Zachód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:13.237109Z"
+  },
+  "otclient_modules.const.tr_6": {
+    "src_hash": "263d7b2cf53802c9ed127b718c0bf9fd",
+    "text": "Południe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:13.237921Z"
+  },
+  "otclient_modules.const.tr_7": {
+    "src_hash": "a99dc62d017d04cf67266593f9c3761e",
+    "text": "Wschód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:13.238726Z"
+  },
+  "otclient_modules.skills_otui.tr_13": {
+    "src_hash": "6097f89e3092d4ccd249c9d479785c1f",
+    "text": "Śmierć",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:13.546835Z"
+  },
+  "otclient_modules.skills_otui.tr_51": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Szybkość",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:54:13.558750Z"
   }
 }

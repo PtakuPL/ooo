@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T23:52:40.786107Z",
-  "cycle_counter": 988,
-  "last_target_key": "pl:cpp.json",
-  "last_pending_total": 386,
+  "timestamp": "2026-02-16T23:54:29.459931Z",
+  "cycle_counter": 991,
+  "last_target_key": "pl:client.json",
+  "last_pending_total": 16,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 196,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 58,
+  "cache_cycle": 59,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -138,7 +138,7 @@
     "pl:achievements.json": 3,
     "es:npclib.json": 3,
     "de:scripts.json": 0,
-    "es:client.json": 0,
+    "es:client.json": 1,
     "es:raids.json": 0,
     "es:html.json": 0,
     "es:books.json": 0,
@@ -357,12 +357,12 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 44.13,
+      "pl": 44.21,
       "es": 74.14,
       "ru": 35.87,
       "ro": 20.2,
       "it": 11.13,
-      "sr": 9.95,
+      "sr": 10.04,
       "sv": 7.92
     }
   }

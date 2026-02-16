@@ -1,16 +1,270 @@
 {
-  "timestamp": "2026-02-16T20:32:40.880165Z",
+  "timestamp": "2026-02-16T20:33:44.636352Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 43,
   "issues_by_type": {
-    "identical_to_en_exempt": 10,
-    "artifact_token": 8,
-    "suspicious_log_high": 195,
-    "suspicious_log_low": 5,
+    "identical_to_en": 36,
+    "identical_to_en_exempt": 11,
+    "artifact_token": 7,
+    "suspicious_log_low": 75,
+    "suspicious_log_critical": 55,
+    "suspicious_log_high": 70,
     "suspicious_rejected_critical": 23,
     "suspicious_rejected_high": 4
   },
   "issues": [
+    {
+      "key": "monster.the_pale_count.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
+    },
+    {
+      "key": "monster.the_pale_count.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
+    },
+    {
+      "key": "monster.ghazbaran.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
+    },
+    {
+      "key": "monster.ghazbaran.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
+    },
+    {
+      "key": "monster.hirintror.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.hirintror.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.hirintror.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.furyosa.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.furyosa.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -47,27 +301,20 @@
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
     },
     {
-      "key": "npc.mother_of_jack.voice_1",
+      "key": "npc.lardoc_bashsmite.multi_3",
       "lang": "es",
       "type": "artifact_token",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     },
     {
-      "key": "npc.navigator.multi_1",
+      "key": "npc.lardoc_bashsmite.multi_9",
       "lang": "es",
       "type": "artifact_token",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
-    },
-    {
-      "key": "npc.navigator.multi_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

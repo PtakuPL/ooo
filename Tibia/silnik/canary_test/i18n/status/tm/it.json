@@ -313,19 +313,19 @@
   },
   "monster.lord_of_the_elements.name": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
+    "text": "Signore degli Elementi",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T21:57:55.169225Z"
+    "updated_at": "2026-02-16T20:32:58.564097Z"
   },
   "monster.lord_of_the_elements.desc": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
+    "text": "Signore degli Elementi",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T21:57:55.169836Z"
+    "updated_at": "2026-02-16T20:32:58.564753Z"
   },
   "monster.generator.name": {
     "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
@@ -13038,5 +13038,21 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:30:33.832715Z"
+  },
+  "monster.firestarter.voice_1": {
+    "src_hash": "768bf59c2fc9b6d051299536a1d19e54",
+    "text": "FUOCO!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:58.376026Z"
+  },
+  "monster.firestarter.voice_2": {
+    "src_hash": "416c5c54bd5caac949407af0505dd433",
+    "text": "BRUCIA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:32:58.376636Z"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T22:38:17.334070Z",
+  "timestamp": "2026-02-16T22:42:17.004994Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,8 +67,8 @@
   ],
   "entries_total": 708,
   "entries_by_lang": {
-    "es": 251,
-    "pl": 161,
+    "es": 296,
+    "pl": 169,
     "cs": 641,
     "de": 659,
     "fr": 589,
@@ -107,8 +107,8 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 498,
-    "sv": 549,
+    "sr": 495,
+    "sv": 547,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -153,14 +153,14 @@
     },
     {
       "lang": "es",
-      "json_file": "html.json",
-      "identical_to_en": 45,
+      "json_file": "questlog.json",
+      "identical_to_en": 67,
       "domain_priority": 9
     },
     {
       "lang": "es",
-      "json_file": "questlog.json",
-      "identical_to_en": 26,
+      "json_file": "html.json",
+      "identical_to_en": 49,
       "domain_priority": 9
     },
     {
@@ -220,7 +220,7 @@
     {
       "lang": "pl",
       "json_file": "html.json",
-      "identical_to_en": 50,
+      "identical_to_en": 58,
       "domain_priority": 9
     },
     {

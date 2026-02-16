@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T22:40:54.679078Z",
+  "timestamp": "2026-02-16T22:42:31.772964Z",
   "language": "es",
-  "json_file": "questlog.json",
-  "translated": 43,
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "questlog.quest_11.mission_45.name",
-      "en": "Paw and Fur: Drakens",
-      "translated": "Paw and Fur: Drakens",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_46.name",
-      "en": "Paw and Fur: Destroyers",
-      "translated": "Paw and Fur: Destroyers",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_48.name",
-      "en": "Paw and Fur: Demons",
-      "translated": "Paw and Fur: Demons",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_50.name",
-      "en": "Paw and Fur: Hide",
-      "translated": "Paw and Fur: Hide",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_51.name",
-      "en": "Paw and Fur: Deathbine",
-      "translated": "Paw and Fur: Deathbine",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_52.name",
-      "en": "Paw and Fur: The Bloodtusk",
-      "translated": "Paw and Fur: The Bloodtusk",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_53.name",
-      "en": "Paw and Fur: Shardhead",
-      "translated": "Paw and Fur: Shardhead",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_54.name",
-      "en": "Paw and Fur: Esmerelda",
-      "translated": "Paw and Fur: Esmerelda",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_55.name",
-      "en": "Paw and Fur: Fleshcrawler",
-      "translated": "Paw and Fur: Fleshcrawler",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_56.name",
-      "en": "Paw and Fur: Ribstride",
-      "translated": "Paw and Fur: Ribstride",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_57.name",
-      "en": "Paw and Fur: Bloodweb",
-      "translated": "Paw and Fur: Bloodweb",
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_58.name",
-      "en": "Paw and Fur: Thul",
-      "translated": "Paw and Fur: Thul",
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_59.name",
-      "en": "Paw and Fur: The Old Widow",
-      "translated": "Paw and Fur: The Old Widow",
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_60.name",
-      "en": "Paw and Fur: Hemming",
-      "translated": "Paw and Fur: Hemming",
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_61.name",
-      "en": "Paw and Fur: Tormentor",
-      "translated": "Paw and Fur: Tormentor",
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_62.name",
-      "en": "Paw and Fur: Flameborn",
-      "translated": "Paw and Fur: Flameborn",
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_63.name",
-      "en": "Paw and Fur: Fazzrah",
-      "translated": "Paw and Fur: Fazzrah",
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_64.name",
-      "en": "Paw and Fur: Tromphonyte",
-      "translated": "Paw and Fur: Tromphonyte",
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_31.mission_1.state_4",
-      "en": "You have completed the quest!",
-      "translated": "Has completado la Quest!",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_1.state_1",
-      "en": "Palimuth asked you to help with some sewer malfunctions. You will need a Crowbar, there are 4 places where you need to go marked with an X on your map.",
-      "translated": "Palimuth te pidió ayuda con algunos problemas de alcantarillado. Necesitarás una palanca, hay 4 lugares donde debes ir marcados con una X en tu mapa.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

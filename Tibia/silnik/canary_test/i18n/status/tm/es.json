@@ -143230,5 +143230,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:40:53.452277Z"
+  },
+  "html.forum.new_thread.html.text4": {
+    "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+    "text": ";) , :) , :D , :( , :rolleSí:",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:41:57.428561Z"
   }
 }

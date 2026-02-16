@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-16T23:10:24.445884Z",
+  "timestamp": "2026-02-16T23:11:57.373054Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 27,
   "issues_by_type": {
-    "identical_to_en": 19,
-    "identical_to_en_exempt": 31,
+    "identical_to_en": 20,
+    "identical_to_en_exempt": 49,
     "artifact_token": 7,
-    "suspicious_log_high": 94,
-    "suspicious_log_low": 45,
-    "suspicious_log_critical": 61,
+    "suspicious_log_high": 82,
+    "suspicious_log_low": 52,
+    "suspicious_log_critical": 66,
     "suspicious_rejected_critical": 165,
     "suspicious_rejected_high": 35
   },
@@ -194,6 +194,13 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "html.forum.new_thread.html.text5",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": ":cool: , :eek: , :o , :p",
+      "translated": ":cool: , :eek: , :o , :p"
     }
   ],
   "threshold": 10,

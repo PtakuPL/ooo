@@ -32313,11 +32313,11 @@
   },
   "item.3148.name": {
     "src_hash": "108014137d9b1b568bc5809b2ae08993",
-    "text": "Niszczyć I. Rune",
+    "text": "Niszczyć Ognia Runa",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T04:59:15.473134Z"
+    "updated_at": "2026-02-16T21:03:30.771864Z"
   },
   "item.31487.name": {
     "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
@@ -32457,11 +32457,11 @@
   },
   "item.3164.name": {
     "src_hash": "f60e5a60c1b758e59152ab854051f6f2",
-    "text": "Energia I. Rune",
+    "text": "Energia Ognia Runa",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T04:59:15.505052Z"
+    "updated_at": "2026-02-16T21:03:30.907770Z"
   },
   "item.3166.name": {
     "src_hash": "9afbdfa527777fc5d260fcd1dd0f4094",
@@ -32585,11 +32585,11 @@
   },
   "item.3180.name": {
     "src_hash": "130859064dcec73dfefffb635fd5b0c6",
-    "text": "I. Ściana, mur Rune",
+    "text": "Magia Ściana Runa",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T04:59:15.528027Z"
+    "updated_at": "2026-02-16T21:03:30.963482Z"
   },
   "item.3182.name": {
     "src_hash": "79269881630466ca0eca7525a026c059",
@@ -32601,11 +32601,11 @@
   },
   "item.3188.name": {
     "src_hash": "bf99d79327d646790c45047cc04d8182",
-    "text": "Fire I. Rune",
+    "text": "Ogień Ognia Runa",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T04:59:15.529406Z"
+    "updated_at": "2026-02-16T21:03:30.966177Z"
   },
   "item.3189.name": {
     "src_hash": "9fa403a008c2a7bb5138a129f950d02b",
@@ -32857,11 +32857,11 @@
   },
   "item.3190.name": {
     "src_hash": "5eb3ba2aca23558a99f38c4ac773a913",
-    "text": "Fire Ściana, mur Rune",
+    "text": "ogień ściana runa",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T05:04:35.934511Z"
+    "updated_at": "2026-02-16T21:03:30.967991Z"
   },
   "item.31907.name": {
     "src_hash": "9243a5e117a93e3600f000abb89463b3",
@@ -90702,5 +90702,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:00:55.346194Z"
+  },
+  "item.30213.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.283829Z"
+  },
+  "item.30255.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.316829Z"
+  },
+  "item.30256.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.319358Z"
+  },
+  "item.30257.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.321489Z"
+  },
+  "item.30258.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.323842Z"
+  },
+  "item.30259.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.327246Z"
+  },
+  "item.30260.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.329487Z"
+  },
+  "item.30261.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.330923Z"
+  },
+  "item.30262.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.332322Z"
+  },
+  "item.30263.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.334055Z"
+  },
+  "item.30264.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.338681Z"
+  },
+  "item.30265.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.341305Z"
+  },
+  "item.30266.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.342769Z"
+  },
+  "item.30267.desc": {
+    "src_hash": "ff019795d4c2c122a860559a14100c1d",
+    "text": "Można to rozmontować odpowiednim narzędziem",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.345704Z"
+  },
+  "item.31500.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.784470Z"
+  },
+  "item.31502.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.786105Z"
+  },
+  "item.31503.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.787441Z"
+  },
+  "item.31504.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.788721Z"
+  },
+  "item.31505.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.790216Z"
+  },
+  "item.31506.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.791437Z"
+  },
+  "item.31507.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.793517Z"
+  },
+  "item.31508.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.795242Z"
+  },
+  "item.31509.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.796494Z"
+  },
+  "item.31510.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.797976Z"
+  },
+  "item.31511.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.799751Z"
+  },
+  "item.31512.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.801989Z"
+  },
+  "item.31513.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.804215Z"
+  },
+  "item.31514.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.806464Z"
+  },
+  "item.31515.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.808853Z"
+  },
+  "item.31516.name": {
+    "src_hash": "135c787075ebbbb62c124782eec8b70d",
+    "text": "złota gablotka strojów",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:30.810960Z"
+  },
+  "item.32801.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.307271Z"
+  },
+  "item.32804.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.308740Z"
+  },
+  "item.33632.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.426170Z"
+  },
+  "item.33634.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.427230Z"
+  },
+  "item.34313.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.714294Z"
+  },
+  "item.34315.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.715621Z"
+  },
+  "item.34317.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.716891Z"
+  },
+  "item.34319.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.718241Z"
+  },
+  "item.35190.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.782556Z"
+  },
+  "item.35192.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.783840Z"
+  },
+  "item.35203.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.785357Z"
+  },
+  "item.35205.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.786673Z"
+  },
+  "item.35852.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.864151Z"
+  },
+  "item.35854.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Ktoś tam śpi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:31.865547Z"
   }
 }

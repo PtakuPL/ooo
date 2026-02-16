@@ -160774,5 +160774,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:59:25.251942Z"
+  },
+  "item.10337.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "мртви орк марудер",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.488500Z"
+  },
+  "item.2025.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.592253Z"
+  },
+  "item.2026.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.593054Z"
+  },
+  "item.2059.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.597120Z"
+  },
+  "item.2060.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.597470Z"
+  },
+  "item.2061.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.597773Z"
+  },
+  "item.22626.name": {
+    "src_hash": "00574753828ebd4a8328210d1a29c015",
+    "text": "велика гомила костију",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.632030Z"
+  },
+  "item.4060.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:28.912642Z"
+  },
+  "item.7174.name": {
+    "src_hash": "893b56e3cfe153fb770a120b83bac20c",
+    "text": "Медвед",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:29.017488Z"
+  },
+  "item.7175.name": {
+    "src_hash": "893b56e3cfe153fb770a120b83bac20c",
+    "text": "Медвед",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:29.018157Z"
+  },
+  "item.8390.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:29.046387Z"
+  },
+  "item.10338.name": {
+    "src_hash": "5eb2ca52dc59da581fca5b25e579ac8b",
+    "text": "санта тедди",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:36.413090Z"
+  },
+  "item.10339.name": {
+    "src_hash": "566623d8747d4935f19d3c8362cd3a58",
+    "text": "снешка лутка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:36.413455Z"
+  },
+  "item.10340.name": {
+    "src_hash": "64917692a7bedf176cceae410ee11da9",
+    "text": "тешка лопта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:36.413776Z"
+  },
+  "item.10341.desc": {
+    "src_hash": "e408525d9e7f310b0d2eac9e0d8251f0",
+    "text": "У њему је садржана Искра Феникса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:36.414400Z"
+  },
+  "item.10341.name": {
+    "src_hash": "fd84dd09008911525e1746d9bec49f1c",
+    "text": "феникс шарм",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:36.414753Z"
+  },
+  "item.10342.desc": {
+    "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
+    "text": "У њему се налази Загрљај __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:42.236637Z"
+  },
+  "item.10342.name": {
+    "src_hash": "04a9ca5419cb100469a57513e556202c",
+    "text": "јединство шарм",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:42.237017Z"
+  },
+  "item.10343.desc": {
+    "src_hash": "2b1e8854868003f233139b0d72613a37",
+    "text": "У њему је садржан Духовни Штит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:42.237524Z"
+  },
+  "item.10343.name": {
+    "src_hash": "171b741cf342af4a9f9d241e4286ccf6",
+    "text": "духовни шарм",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:42.237923Z"
+  },
+  "item.10344.desc": {
+    "src_hash": "a3edec8c157a4898748edb27135adb5a",
+    "text": "Ватра Сунца је садржана у њој",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:42.238509Z"
+  },
+  "item.10344.name": {
+    "src_hash": "60eb3ca3c3f46a5099b3491c38ef0c1c",
+    "text": "близанац сунца чар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:49.891782Z"
+  },
+  "item.10345.desc": {
+    "src_hash": "796d1564ac7ae48945d726ab90782b3e",
+    "text": "У њему је садржана Мудрост Самоће",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:49.892324Z"
+  },
+  "item.10345.name": {
+    "src_hash": "742808b0c9bfa77bd5afb7854bd9941a",
+    "text": "чар самоће",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:49.892661Z"
+  },
+  "item.10346.name": {
+    "src_hash": "eaea1d7900d2ab6609b09851d135b4fc",
+    "text": "санта ранац",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:49.893045Z"
+  },
+  "item.10347.name": {
+    "src_hash": "924bf7dd060accc008c33cd6cbe3ea15",
+    "text": "змајева таписерија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:49.893451Z"
+  },
+  "item.10352.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "мртви гуштер високи стражар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:54.807769Z"
+  },
+  "item.10353.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "мртви гуштер високи стражар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:54.808259Z"
+  },
+  "item.10354.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "мртви гуштер високи стражар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:54.808713Z"
+  },
+  "item.10355.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "мртви гуштер високи стражар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:54.809150Z"
+  },
+  "item.10356.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мртви гуштер легионар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:54.809555Z"
+  },
+  "item.10357.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мртви гуштер легионар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:57.912302Z"
+  },
+  "item.10358.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мртви гуштер легионар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:57.912752Z"
+  },
+  "item.10359.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мртви гуштер легионар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:57.913159Z"
+  },
+  "item.10360.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мртви гуштер змај свештеник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:57.913606Z"
+  },
+  "item.10361.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мртви гуштер змај свештеник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:02:57.914046Z"
+  },
+  "item.10362.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мртви гуштер змај свештеник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:01.975113Z"
+  },
+  "item.10363.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "мртви гуштер змај свештеник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:01.975623Z"
+  },
+  "item.10364.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мртви гуштер заогун",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:01.976139Z"
+  },
+  "item.10365.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мртви гуштер заогун",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:01.976587Z"
+  },
+  "item.10366.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мртви гуштер заогун",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:01.976988Z"
+  },
+  "item.10367.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мртви гуштер заогун",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:05.618601Z"
+  },
+  "item.10368.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "мртви гуштер изабран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:05.619032Z"
+  },
+  "item.10369.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "мртви гуштер изабран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:05.619438Z"
+  },
+  "item.10370.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "мртви гуштер изабран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:05.619853Z"
+  },
+  "item.10371.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "мртви гуштер изабран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:05.620331Z"
+  },
+  "item.10382.name": {
+    "src_hash": "1c580e01169b6923893d0655edc491ed",
+    "text": "мртви вечни чувар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:11.840438Z"
+  },
+  "item.10383.name": {
+    "src_hash": "1c580e01169b6923893d0655edc491ed",
+    "text": "мртви вечни чувар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:11.841243Z"
+  },
+  "item.10384.name": {
+    "src_hash": "816a83cc3d5fc8ccdedf8425b1ea8bff",
+    "text": "Заоан оклоп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:11.842541Z"
+  },
+  "item.10385.name": {
+    "src_hash": "8d6eab3e3370e0ac3a313988aec4e8dc",
+    "text": "Заоан шлем",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:03:11.843699Z"
   }
 }

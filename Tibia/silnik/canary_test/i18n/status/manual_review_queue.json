@@ -80,14 +80,150 @@
         }
       ],
       "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T09:24:28.100877Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "npc.json",
+      "key": "npc.captain_bluebear.stdmod_1",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Passages to Carlin, Ab'Dendriel, Edron, Venore, Port Hope, Liberty Bay, Yalahar, Roshamuul, Krailos, Oramond and Svargrond.",
+      "attempted_translation": "Прелази до Carlin, Ab'Dendriel, Edron, Venore, Port Hope, Liberty Bay, Yalahar, Roshamuul, Krailos, Oramond и .",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Прелази до Carlin, Ab'Dendriel, Edron, Venore, Por' (EN: 'Passages to Carlin, Ab'Dendriel, Edron, Venore, Po')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.882,
+          "message": "Język cyrylicowy ma 88% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T09:24:38.737395Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "npc.json",
+      "key": "npc.captain_bluebear.voice_1",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Passages to Carlin, Ab'Dendriel, Edron, Venore, Port Hope, Liberty Bay, Yalahar, Roshamuul, Krailos, Oramond and Svargrond.",
+      "attempted_translation": "Прелази до Carlin, Ab'Dendriel, Edron, Venore, Port Hope, Liberty Bay, Yalahar, Roshamuul, Krailos, Oramond и .",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Прелази до Carlin, Ab'Dendriel, Edron, Venore, Por' (EN: 'Passages to Carlin, Ab'Dendriel, Edron, Venore, Po')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.882,
+          "message": "Język cyrylicowy ma 88% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T09:27:41.641230Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "npc.json",
+      "key": "npc.charles.stdmod_1",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Passages to Thais, Darashia, Edron, Venore, Ankrahmun, Liberty Bay and Yalahar.",
+      "attempted_translation": "Прелази на Thais, Darashia, Edron, Venore, Ankrahmun, Liberty Bay и Yalahar.",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Прелази на Thais, Darashia, Edron, Venore, Ankrahm' (EN: 'Passages to Thais, Darashia, Edron, Venore, Ankrah')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.833,
+          "message": "Język cyrylicowy ma 83% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-16T09:27:48.059147Z",
+      "status": "pending",
+      "lang": "sr",
+      "json_file": "npc.json",
+      "key": "npc.charles.voice_1",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Passages to Thais, Darashia, Edron, Venore, Ankrahmun, Liberty Bay and Yalahar.",
+      "attempted_translation": "Прелази на Thais, Darashia, Edron, Venore, Ankrahmun, Liberty Bay и Yalahar.",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Прелази на Thais, Darashia, Edron, Venore, Ankrahm' (EN: 'Passages to Thais, Darashia, Edron, Venore, Ankrah')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.833,
+          "message": "Język cyrylicowy ma 83% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
-    "total": 2,
+    "total": 6,
     "reviewed": 0,
     "approved": 1,
     "rejected": 0,
     "applied": 1
   },
-  "updated_at": "2026-02-16T07:08:14.133186Z"
+  "updated_at": "2026-02-16T09:50:58.395681Z"
 }

@@ -1,97 +1,127 @@
 {
-  "timestamp": "2026-02-16T09:09:56.076226Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 15,
+  "timestamp": "2026-02-16T12:49:44.735946Z",
+  "language": "ru",
+  "json_file": "monsters.json",
+  "translated": 4237,
   "entries": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "en": "Chchch",
-      "translated": "Chchch",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
-    },
-    {
-      "key": "npc.amber.stdmod_16",
-      "en": "Oh, I fought {orcs}, {cyclopses}, {minotaurs}, even {dragons}, and many other creatures.",
-      "translated": "Oh, luché contra {orcs}, {cyclopses}, {minotaurs}, incluso {dragons} y muchas otras criaturas.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.amber.stdmod_7",
-      "en": "I'm an {explorer} who seeks {adventures}.",
-      "translated": "Soy un {explorer} que busca {adventures}.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.angus.say_16",
-      "en": "Did you get the requested pickaxe from Uzgod in Kazordoon?",
-      "translated": "¿Recibiste el pico solicitado por Uzgod en Kazordoon?",
-      "source": "tm"
-    },
-    {
-      "key": "npc.appaloosa.greet_msg_1",
-      "en": "Salutations, |PLAYERNAME| I guess you are here for the {horses}.",
-      "translated": "Saludos, |PLAYERNAME| Supongo que estás aquí por el {horses}.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.azalea.stdmod_14",
-      "en": "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",
-      "translated": "Hay cinco bendiciones disponibles en cinco lugares sagrados: el escudo {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}. Además, puedes recibir el {twist of fate} aquí.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.billy.stdmod_20",
-      "en": "As an adventurer, you should always have at least a {backpack}, a {rope}, a {shovel}, a {weapon}, an {armor} and a {shield}.",
-      "translated": "Como aventurero, siempre debes tener al menos un {backpack}, un {rope}, un {shovel}, un {weapon}, un {armor} y un {shield}.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.bo_ques.multi_1",
-      "en": "The book! You have it! Let me see! <browses the book> ...",
-      "translated": "¡Biblia! ¡Lo tienes! ¡Déjeme ver! <browses the book>...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.amber.stdmod_31",
-      "en": "The most important tools you need are a {rope}, a {shovel} and maybe a {torch}.",
-      "translated": "Las herramientas más importantes que necesita son un {rope}, un {shovel} y tal vez un {torch}.",
+      "key": "monster.apprentice_sheng.voice_7",
+      "en": "Kaplar!",
+      "translated": "Каплар!",
       "source": "google_translate"
     },
     {
-      "key": "npc.angus.say_6",
-      "en": "The missions available for your rank are the {butterfly hunt}, {plant collection} and {ice delivery}.",
-      "translated": "Las misiones disponibles para tu rango son {butterfly hunt}, {plant collection} y {ice delivery}.",
+      "key": "monster.apprentice_sheng.voice_8",
+      "en": "You already know too much.",
+      "translated": "Ты уже слишком много знаешь.",
       "source": "google_translate"
     },
     {
-      "key": "npc.angus.say_7",
-      "en": "The missions available for your rank are {lizard urn}, {bonelord secrets} and {orc powder}.",
-      "translated": "Las misiones disponibles para tu rango son {lizard urn}, {bonelord secrets} y {orc powder}.",
+      "key": "monster.bazir.voice_5",
+      "en": "COME HERE! FREE ITEMS FOR EVERYONE!",
+      "translated": "ИДИТЕ СЮДА! БЕСПЛАТНЫЕ ТОВАРЫ ДЛЯ ВСЕХ!",
       "source": "google_translate"
     },
     {
-      "key": "npc.angus.say_8",
-      "en": "The missions available for your rank are {elven poetry}, {memory stone} and {rune writings}.",
-      "translated": "Las misiones disponibles para tu rango son {elven poetry}, {memory stone} y {rune writings}.",
+      "key": "monster.bazir.voice_6",
+      "en": "BOW TO THE POWER OF THE RUTHLESS SEVEN!",
+      "translated": "ПОКЛОНИТЕСЬ СИЛЕ БЕЗЖЕСТКОЙ СЕМЕРКИ!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.bazir.voice_7",
+      "en": "Slay your friends and I will spare you!",
+      "translated": "Убей своих друзей, и я пощажу тебя!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.bazir.voice_8",
+      "en": "DON'T BE AFRAID! I AM COMING IN PEACE!",
+      "translated": "НЕ БОЙТЕСЬ! Я ПРИДУ С МИРОМ!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops.voice_6",
+      "en": "Il lorstok human!",
+      "translated": "Иль лорсток человек!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops.voice_8",
+      "en": "Human, uh whil dyh!",
+      "translated": "Человек, ух, пока!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops.voice_9",
+      "en": "Youh ah trak!",
+      "translated": "Эй, ах, трак!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops.voice_10",
+      "en": "Let da mashing begin!",
+      "translated": "Да начнется затирание!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops_drone.voice_5",
+      "en": "Fee! Fie! Foe! Fum!",
+      "translated": "Платеж! Фи! Враг! Фум!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops_drone.voice_6",
+      "en": "Luttl pest!",
+      "translated": "Чертов вредитель!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops_drone.voice_7",
+      "en": "Me makking you pulp!",
+      "translated": "Я делаю тебе мякоть!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops_drone.voice_8",
+      "en": "Humy tasy! Hum hum!",
+      "translated": "Хьюми тасы! Хм-хм!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops_smith.voice_5",
+      "en": "Whack da humy!",
+      "translated": "Ух ты, хуми!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.cyclops_smith.voice_6",
+      "en": "Ai humy phary ty kaynon",
+      "translated": "Ай, хуми фари, ты кейнон",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.behemoth.voice_4",
+      "en": "You're so little!",
+      "translated": "Ты такой маленький!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.behemoth.voice_5",
+      "en": "Human flesh -  delicious!",
+      "translated": "Человеческое мясо - вкусно!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.behemoth.voice_6",
+      "en": "Crush the intruders!",
+      "translated": "Раздавите злоумышленников!",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.dragon_lord.voice_4",
+      "en": "YOU WILL BURN!",
+      "translated": "ТЫ СГОРЕЕШЬ!",
       "source": "google_translate"
     }
   ]

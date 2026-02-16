@@ -3,8 +3,8 @@
   "lang": "sv",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
+      "ok": false,
+      "guard_placeholder": 94,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -16,13 +16,13 @@
       "ok": true,
       "coverage_pct": 100.0,
       "total_keys": 13769,
-      "real_translations": 13769
+      "real_translations": 13768
     },
     "quality_entry_present": {
       "ok": true,
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-14T01:11:28.310944Z"
+  "is_done": false,
+  "timestamp": "2026-02-16T12:02:10.441530Z"
 }

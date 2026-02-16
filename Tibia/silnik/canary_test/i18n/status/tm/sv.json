@@ -529,19 +529,19 @@
   },
   "npc.ferks.farewell_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-13T22:52:38.211833Z"
+    "updated_at": "2026-02-16T20:42:50.130307Z"
   },
   "npc.ferks.walkaway_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-13T22:52:38.212219Z"
+    "updated_at": "2026-02-16T20:42:50.131274Z"
   },
   "npc.gabel.say_6": {
     "src_hash": "8ebe07d7adacdd880130a981ebf53704",
@@ -6646,5 +6646,389 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:41:15.238615Z"
+  },
+  "npc.captain_max_calassa.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.974789Z"
+  },
+  "npc.captain_seagull.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.978270Z"
+  },
+  "npc.captain_waverider.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.981674Z"
+  },
+  "npc.captain_waverider.say_6": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.982632Z"
+  },
+  "npc.captain_waverider.say_8": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.983332Z"
+  },
+  "npc.captain_waverider_island.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.983890Z"
+  },
+  "npc.cassino.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.989101Z"
+  },
+  "npc.cassino.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.989829Z"
+  },
+  "npc.cedrik.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.990649Z"
+  },
+  "npc.cedrik.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.992690Z"
+  },
+  "npc.charles.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.997890Z"
+  },
+  "npc.charles.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:49.999524Z"
+  },
+  "npc.charles.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.001506Z"
+  },
+  "npc.charlotta.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.002191Z"
+  },
+  "npc.chondur.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.013508Z"
+  },
+  "npc.daniel_steelsoul.stdmod_2": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LÄNGE LEVE KUNGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.048566Z"
+  },
+  "npc.dermot.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.056557Z"
+  },
+  "npc.dukosch.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.067120Z"
+  },
+  "npc.duncan.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.068207Z"
+  },
+  "npc.ebenizer.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.071705Z"
+  },
+  "npc.ebenizer.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.072389Z"
+  },
+  "npc.eighty.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.077232Z"
+  },
+  "npc.eighty.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.077963Z"
+  },
+  "npc.eleonore.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.088092Z"
+  },
+  "npc.elgar.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.092057Z"
+  },
+  "npc.elgar.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.092684Z"
+  },
+  "npc.elvith.say_18": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.095371Z"
+  },
+  "npc.emael.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.101067Z"
+  },
+  "npc.esrik.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.118685Z"
+  },
+  "npc.eva.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.119609Z"
+  },
+  "npc.eva.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.120310Z"
+  },
+  "npc.ferus.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.132381Z"
+  },
+  "npc.ferus.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.134645Z"
+  },
+  "npc.finarfin.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.135591Z"
+  },
+  "npc.finarfin.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.136400Z"
+  },
+  "npc.frans.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.142955Z"
+  },
+  "npc.frans.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.143735Z"
+  },
+  "npc.frosty.say_4": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Varsågod.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.149566Z"
+  },
+  "npc.gail.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.153458Z"
+  },
+  "npc.gail.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.153928Z"
+  },
+  "npc.gail.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hur kan jag hjälpa dig?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.154601Z"
+  },
+  "npc.galuna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.155150Z"
+  },
+  "npc.galuna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.155817Z"
+  },
+  "npc.gamon.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.157413Z"
+  },
+  "npc.gareth.say_2": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.161833Z"
+  },
+  "npc.gewen.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.168526Z"
+  },
+  "npc.ghost_of_a_priest.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.170665Z"
+  },
+  "npc.gnomillion.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:50.217920Z"
   }
 }

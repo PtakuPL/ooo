@@ -89662,5 +89662,285 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:41:26.575083Z"
+  },
+  "npc.a_sweaty_cyclops.greet_msg_1": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Hum, hum! Witamy, mały |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:58.555040Z"
+  },
+  "npc.brewster.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.689459Z"
+  },
+  "npc.brewster.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.691845Z"
+  },
+  "npc.brewster.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.693493Z"
+  },
+  "npc.brewster.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.709064Z"
+  },
+  "npc.brewster.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.717027Z"
+  },
+  "npc.brewster.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.718505Z"
+  },
+  "npc.brewster.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.720438Z"
+  },
+  "npc.brodrosch.greet_msg_1": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Witaj, |PLAYERNAME|! Niech ziemia cię chroni na skalistych terenach. Jeśli potrzebujesz {passage}, mogę pomóc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.727943Z"
+  },
+  "npc.brodrosch.stdmod_3": {
+    "src_hash": "a85fea5aebe72b0522bf14339f8b632a",
+    "text": "Cóż, możesz być właśnie bohaterem, którego tam potrzebują. Prawdę mówiąc, część naszych najbardziej niezawodnych kopalń rudy zaczęła się wyczerpywać... \\z Dlatego rozwinęliśmy nowe technologie parowców, by móc dalej badać i kartografować wielkie podziemne rzeki. Nasi bracia założyli bazę na kontynencie bardzo, bardzo daleko stąd... \\z Nazywamy ją bazą bardzo, bardzo daleko. Ale ponieważ mamy nadzieję, że pewnego dnia stanie się kwitnącą kopalnią, większość z nas zaczęła nazywać ją {Farmine}. Krasnoludy na miejscu naprawdę potrzebują teraz pomocy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.739099Z"
+  },
+  "npc.broken_servant_sentry.greet_msg_1": {
+    "src_hash": "7f282da5e4d3782819b34cc989e6b9ac",
+    "text": "Mistrz je-je-jest mar-twy. Pro-pro*chrrrrchk*sze. Bądźcie. W. Żałobie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.744701Z"
+  },
+  "npc.bron.greet_msg_1": {
+    "src_hash": "3c96311a2df7cd5491976b4303ecfa9c",
+    "text": "O nie! To naprawdę ja? Jakie to żenujące, nie mam pojęcia, co we mnie wstąpiło. Czy to był duch walki, który mi dałeś?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.757063Z"
+  },
+  "npc.bruno.sendtrade_msg_1": {
+    "src_hash": "f5611466111acf02c50fd70a513700e0",
+    "text": "Kupuj rybę ile chcesz. Świeża i zdrowa, obiecuję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.783671Z"
+  },
+  "npc.buddel.greet_msg_1": {
+    "src_hash": "d154b3846fac97a5b216341a5a01fe8c",
+    "text": "Hej, duże chłopaki. Ty? {Here}? *HICK*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.789053Z"
+  },
+  "npc.bunny_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.831026Z"
+  },
+  "npc.bunny_bonecrusher.greet_msg_1": {
+    "src_hash": "8d63ee3cbee0282495d8d7d17e027454",
+    "text": "Zwracaj się do mnie odpowiednio, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.832464Z"
+  },
+  "npc.bunny_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.843912Z"
+  },
+  "npc.busty_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.844629Z"
+  },
+  "npc.busty_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.845577Z"
+  },
+  "npc.busty_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "NIECH ŻYJE KRÓLOWA!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.847033Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ta, do widzenia i nie wracaj!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.921798Z"
+  },
+  "npc.canary.greet_msg_1": {
+    "src_hash": "79a03d06c67633920b88970b497a8ac2",
+    "text": "Witaj |PLAYERNAME|, potrzebujesz więcej informacji o {canary}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.923331Z"
+  },
+  "npc.captain_chelop.farewell_msg_1": {
+    "src_hash": "e15da006fade26d444cff6cb29e47778",
+    "text": "W imieniu inkwizycji żegnam cię.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.951789Z"
+  },
+  "npc.captain_chelop.greet_msg_1": {
+    "src_hash": "202a2eb8a446b071db66173ee9c3d801",
+    "text": "Witamy na pokładzie, rekrucie |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.953650Z"
+  },
+  "npc.captain_dreadnought.farewell_msg_1": {
+    "src_hash": "e3c27cbeadf072acaf19bbad2aaea847",
+    "text": "Na pewno chcesz marnować czas na tej skale? Mogę pokazać ci świat! Hę?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:42:59.964022Z"
+  },
+  "npc.captain_gulliver.greet_msg_1": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Witamy na pokładzie, Sir |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.009296Z"
+  },
+  "npc.captain_haba.greet_msg_2": {
+    "src_hash": "55c25d3f0e5b57d85680d257424e0bca",
+    "text": "Arrr, szczurze lądowy, czego chcesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.030510Z"
+  },
+  "npc.captain_haba_open_sea.greet_msg_2": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Znalazłeś miejsce |PLAYERNAME|!! Chwyć hełm głębin i udaj się tam na eksplorację {caves}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.059235Z"
+  },
+  "npc.captain_haba_open_sea.sendtrade_msg_1": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Proszę bardzo! Użyj tego na dźwigu, gdy zobaczysz potwora. Potem uzupełniaj to za każdym razem, gdy użyjesz teleskopu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.070034Z"
+  },
+  "npc.captain_haba_open_sea.walkaway_msg_1": {
+    "src_hash": "4389112dadbf0109f2cda25d30028e4a",
+    "text": "Na razie, szczurze lądowy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.079678Z"
+  },
+  "npc.captain_harava.greet_msg_1": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Witamy na pokładzie, podróżniku. Dokąd mam cię dziś {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.081972Z"
+  },
+  "npc.captain_jack_rat.greet_msg_1": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Witaj, piracie! Wskakuj na pokład, wracamy do domu! Witamy na statku Flying Bat. Mam stawiać {sail}s?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.091025Z"
+  },
+  "npc.captain_sinbeard.greet_msg_1": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Witamy na pokładzie, Sir |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.135930Z"
+  },
+  "npc.caramellia.greet_msg_1": {
+    "src_hash": "f961c17f457adadb0a12008386d08b17",
+    "text": "Witaj, |PLAYERNAME|. Proszę, zostaw mnie w spokoju w moim {mourning}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.160755Z"
+  },
+  "npc.carina.greet_msg_1": {
+    "src_hash": "adf3a8471f9e459d5b11b1054ae73655",
+    "text": "Witaj, |PLAYERNAME|. Chętnie z tobą pohandluję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:43:00.172118Z"
   }
 }

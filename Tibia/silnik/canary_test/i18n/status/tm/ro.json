@@ -7214,5 +7214,221 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T20:47:07.413050Z"
+  },
+  "item.18386.name": {
+    "src_hash": "adafff23fe27d62fa9d5220cc0b3a8ea",
+    "text": "Asasin",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:52.844117Z"
+  },
+  "item.31487.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Băţ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:54.138523Z"
+  },
+  "item.33040.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Băţ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:54.363179Z"
+  },
+  "item.33041.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Băţ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:54.363562Z"
+  },
+  "item.33042.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Băţ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:54.363952Z"
+  },
+  "item.33946.name": {
+    "src_hash": "045f5aa6491333134f167e3d75072ea5",
+    "text": "Șobolanul Peșterii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:54.505939Z"
+  },
+  "item.5277.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.791244Z"
+  },
+  "item.5280.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.792448Z"
+  },
+  "item.5732.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.840903Z"
+  },
+  "item.5735.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.842322Z"
+  },
+  "item.6191.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.924045Z"
+  },
+  "item.6194.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.925492Z"
+  },
+  "item.6248.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.931002Z"
+  },
+  "item.6251.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.932510Z"
+  },
+  "item.6792.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.985421Z"
+  },
+  "item.6795.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.985745Z"
+  },
+  "item.6796.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.986054Z"
+  },
+  "item.6797.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.986696Z"
+  },
+  "item.6798.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.987040Z"
+  },
+  "item.6799.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.987399Z"
+  },
+  "item.6800.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.988194Z"
+  },
+  "item.6801.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.988646Z"
+  },
+  "item.6802.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.988957Z"
+  },
+  "item.6803.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "intrare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.989280Z"
+  },
+  "item.6891.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.994788Z"
+  },
+  "item.6900.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Este încuiat.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:55.998801Z"
+  },
+  "item.694.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "pat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:56.005282Z"
   }
 }

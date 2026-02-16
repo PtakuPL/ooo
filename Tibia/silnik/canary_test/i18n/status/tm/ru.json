@@ -9366,5 +9366,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:46:20.407987Z"
+  },
+  "item.15989.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "мёртвый lava голем",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:49:45.845672Z"
   }
 }

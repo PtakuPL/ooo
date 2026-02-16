@@ -1,58 +1,16 @@
 {
-  "timestamp": "2026-02-16T18:23:55.614293Z",
+  "timestamp": "2026-02-16T18:37:15.797705Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 5,
   "issues_by_type": {
-    "identical_to_en": 8,
-    "identical_to_en_exempt": 3,
-    "suspicious_log_low": 22,
-    "suspicious_log_high": 178,
-    "suspicious_rejected_high": 30,
-    "suspicious_rejected_critical": 170
+    "identical_to_en": 5,
+    "identical_to_en_exempt": 6,
+    "suspicious_log_high": 194,
+    "suspicious_log_low": 6,
+    "suspicious_rejected_high": 198,
+    "suspicious_rejected_critical": 2
   },
   "issues": [
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Chchch",
-      "translated": "Chchch"
-    },
-    {
-      "key": "monster.apprentice_sheng.voice_7",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Kaplar!",
-      "translated": "Kaplar!"
-    },
-    {
-      "key": "monster.cyclops.voice_9",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Youh ah trak!",
-      "translated": "Youh ah trak!"
-    },
-    {
-      "key": "monster.cyclops_smith.voice_5",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Whack da humy!",
-      "translated": "Whack da humy!"
-    },
-    {
-      "key": "monster.mooh'tah_master.voice_2",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Kaplar!",
-      "translated": "Kaplar!"
-    },
-    {
-      "key": "monster.minishabaal.voice_10",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Muahaha!",
-      "translated": "Muahaha!"
-    },
     {
       "key": "monster.the_plasmother.voice_1",
       "lang": "es",
@@ -66,6 +24,27 @@
       "type": "identical_to_en",
       "en": "Blubberdiblubb",
       "translated": "Blubberdiblubb"
+    },
+    {
+      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Chhchh?",
+      "translated": "Chhchh?"
+    },
+    {
+      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chhchh?",
+      "translated": "Chhchh?"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Chchch",
+      "translated": "Chchch"
     }
   ],
   "threshold": 10,

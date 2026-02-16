@@ -1,9 +1,9 @@
 {
-  "category": "sv",
-  "cycle": 4,
+  "category": "ru",
+  "cycle": 5,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-16T18:23:56Z",
+  "generated_at_utc": "2026-02-16T18:37:16Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -15,102 +15,102 @@
     {
       "action": "update",
       "category": "es",
-      "cycle": 4,
-      "file": "monsters.json",
+      "cycle": 5,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:23:30Z"
+      "t": "2026-02-16T18:36:48Z"
     },
     {
       "action": "update",
-      "category": "es",
-      "cycle": 4,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-16T18:23:30Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "it",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:22:52Z"
+      "t": "2026-02-16T18:36:33Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "it",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-16T18:22:52Z"
+      "t": "2026-02-16T18:36:33Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "ro",
+      "cycle": 5,
+      "file": "server.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-16T18:36:26Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 5,
+      "file": "server.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-16T18:36:26Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-16T18:22:51Z"
+      "t": "2026-02-16T18:36:24Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "ru",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:22:17Z"
+      "t": "2026-02-16T18:34:55Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "ru",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:20:39Z"
+      "t": "2026-02-16T18:33:25Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "ru",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:19:08Z"
+      "t": "2026-02-16T18:31:47Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "ru",
+      "cycle": 5,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:17:38Z"
-    },
-    {
-      "action": "update",
-      "category": "sv",
-      "cycle": 4,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-16T18:16:08Z"
+      "t": "2026-02-16T18:30:17Z"
     }
   ],
   "stage": "cycle_end",

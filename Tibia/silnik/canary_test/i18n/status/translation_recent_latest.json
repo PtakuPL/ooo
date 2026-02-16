@@ -1,128 +1,74 @@
 {
-  "timestamp": "2026-02-16T18:23:54.233802Z",
+  "timestamp": "2026-02-16T18:37:14.387492Z",
   "language": "es",
-  "json_file": "monsters.json",
-  "translated": 62,
+  "json_file": "npc.json",
+  "translated": 11,
   "entries": [
     {
-      "key": "monster.the_plasmother.voice_1",
-      "en": "Blubb",
-      "translated": "Blubb",
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "en": "Chchch",
+      "translated": "Chchch",
       "source": "tm"
     },
     {
-      "key": "monster.the_plasmother.voice_3",
-      "en": "Blubberdiblubb",
-      "translated": "Blubberdiblubb",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.izcandar_the_banished.name",
-      "en": "Izcandar the Banished",
-      "translated": "Izcandar banished",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.izcandar_the_banished.desc",
-      "en": "Izcandar the Banished",
-      "translated": "Izcandar banished",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "monster.urmahlullu_the_weakened.name",
-      "en": "Urmahlullu the Weakened",
-      "translated": "Urmahlullu weakened",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "monster.urmahlullu_the_weakened.desc",
-      "en": "Urmahlullu the Weakened",
-      "translated": "Urmahlullu weakened",
+      "key": "npc.bozo.stdmod_82",
+      "en": "npc.bozo.mission_2_t1_1 \\z\n\tnpc.bozo.mission_2_t1_2 \\z\n\tnpc.bozo.mission_2_t1_3 \\z\n\tnpc.bozo.mission_2_t1_4",
+      "translated": "npc.bozo.mission_2_t1_1\\z\n\tnpc.bozo.mission_2_t1_2\\z\n\tnpc.bozo.mission_2_t1_3\\z\n\tnpc.bozo.mission_2_t1_4",
       "source": "tm"
     },
     {
-      "key": "monster.urmahlullu_the_tamed.name",
-      "en": "Urmahlullu the Tamed",
-      "translated": "Urmahlullu tamed",
+      "key": "npc.bozo.stdmod_84",
+      "en": "npc.bozo.mission_4_t1_1 \\z\n\tnpc.bozo.mission_4_t1_2 \\z\n\tnpc.bozo.mission_4_t1_3 \\z\n\tnpc.bozo.mission_4_t1_4",
+      "translated": "npc.bozo.mission_4_t1_1\\z\n\tnpc.bozo.mission_4_t1_2\\z\n\tnpc.bozo.mission_4_t1_3\\z\n\tnpc.bozo.mission_4_t1_4",
       "source": "tm"
     },
     {
-      "key": "monster.urmahlullu_the_tamed.desc",
-      "en": "Urmahlullu the Tamed",
-      "translated": "Urmahlullu tamed",
+      "key": "npc.bozo.stdmod_85",
+      "en": "npc.bozo.mission_5_t1 \\z\n\tnpc.bozo.mission_5_t2 \\z\n\tnpc.bozo.mission_5_t3_1 \\z\n\tnpc.bozo.mission_5_t3_2 \\z\n\tnpc.bozo.mission_5_t3_3",
+      "translated": "npc.bozo.mission_5_t1\\z\n\tnpc.bozo.mission_5_t2\\z\n\tnpc.bozo.mission_5_t3_1\\z\n\tnpc.bozo.mission_5_t3_2\\z\n\tnpc.bozo.mission_5_t3_3",
       "source": "tm"
     },
     {
-      "key": "monster.dworc_fleshhunter.voice_1",
-      "en": "Grow truk grrrrr.",
-      "translated": "Crecer truk grrrrr.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_87",
+      "en": "npc.bozo.mission_7_t1 \\z\n\tnpc.bozo.mission_7_t2 \\z\n\tnpc.bozo.mission_7_t3_1 \\z\n\tnpc.bozo.mission_7_t3_2 \\z\n\tnpc.bozo.mission_7_t3_3",
+      "translated": "npc.bozo.mission_7_t1\\z\n\tnpc.bozo.mission_7_t2\\z\n\tnpc.bozo.mission_7_t3_1\\z\n\tnpc.bozo.mission_7_t3_2\\z\n\tnpc.bozo.mission_7_t3_3",
+      "source": "tm"
     },
     {
-      "key": "monster.mooh'tah_warrior.desc",
-      "en": "a mooh'tah warrior",
-      "translated": "un guerrero mooh'tah",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_90",
+      "en": "npc.bozo.mission_10_t1 \\z\n\tnpc.bozo.mission_10_t2 \\z\n\tnpc.bozo.mission_10_t3_1 \\z\n\tnpc.bozo.mission_10_t3_2 \\z\n\tnpc.bozo.mission_10_t3_3 \\z\n\tnpc.bozo.mission_10_t3_4 \\z\n\tnpc.bozo.mission_10_t3_5",
+      "translated": "npc.bozo.mission_10_t1\\z\n\tnpc.bozo.mission_10_t2\\z\n\tnpc.bozo.mission_10_t3_1\\z\n\tnpc.bozo.mission_10_t3_2\\z\n\tnpc.bozo.mission_10_t3_3\\z\n\tnpc.bozo.mission_10_t3_4\\z\n\tnpc.bozo.mission_10_t3_5",
+      "source": "tm"
     },
     {
-      "key": "monster.chakoya_windcaller.voice_2",
-      "en": "Jagura taluka taqua!",
-      "translated": "¡Jagura taluka taqua!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.chakoya_toolshaper.voice_3",
-      "en": "Suvituka siq chuqua!",
-      "translated": "¡Suvituka siq chuqua!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.dworc_voodoomaster.voice_1",
-      "en": "Grow truk grrrrr.",
-      "translated": "Crecer truk grrrrr.",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.dworc_venomsniper.voice_1",
-      "en": "Grow truk grrrrr.",
-      "translated": "Crecer truk grrrrr.",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.orc_warlord.voice_4",
-      "en": "Futchi maruk buta!",
-      "translated": "¡Futchi maruk buta!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.orc_warrior.voice_3",
-      "en": "Grow truk grrrr.",
-      "translated": "Crecer truk grrrr.",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.orc.voice_1",
-      "en": "Grow truk grrrrr.",
-      "translated": "Crecer truk grrrrr.",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.paiz_the_pauperizer.voice_1",
-      "en": "You will die zhouzandz deazhz!",
-      "translated": "¡Morirás zhouzandz deazhz!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.percht.voice_2",
-      "en": "Shzzzp shzzzp shzzp!",
-      "translated": "¡Shzzp, shzzp, shzzp!",
-      "source": "google_translate"
-    },
-    {
-      "key": "monster.lucifuga_aranea.desc",
-      "en": "a lucifuga aranea",
-      "translated": "una lucifuga aranea",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_91",
+      "en": "npc.bozo.mission_11_t1 \\z\n\tnpc.bozo.mission_11_t2 \\z\n\tnpc.bozo.mission_11_t3_1 \\z\n\tnpc.bozo.mission_11_t3_2",
+      "translated": "npc.bozo.mission_11_t1\\z\n\tnpc.bozo.mission_11_t2\\z\n\tnpc.bozo.mission_11_t3_1\\z\n\tnpc.bozo.mission_11_t3_2",
+      "source": "tm"
     }
   ]
 }

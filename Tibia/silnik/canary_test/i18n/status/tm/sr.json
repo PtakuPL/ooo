@@ -163790,5 +163790,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T21:35:30.661560Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Ох...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:03.994888Z"
+  },
+  "npc.a_restless_soul.greet_msg_1": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Ухххх...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:04.069900Z"
   }
 }

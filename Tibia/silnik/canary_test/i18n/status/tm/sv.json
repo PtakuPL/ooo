@@ -11726,5 +11726,341 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:35:37.555290Z"
+  },
+  "npc.a_majestic_warwolf.farewell_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.838940Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Intressant. En människa som kan vargarnas språk.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.839630Z"
+  },
+  "npc.a_majestic_warwolf.walkaway_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.840462Z"
+  },
+  "npc.a_prisoner.farewell_msg_1": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Hejdå! Glöm inte matematikens hemligheter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.843163Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Va? Vad? Jag kan se! Wow! En icke-mino. Har de {capture} dig också?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.843914Z"
+  },
+  "npc.a_prisoner.walkaway_msg_1": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Vänta! Lämna inte! Jag vill berätta om mina surrealistiska siffror.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.845543Z"
+  },
+  "npc.a_restless_soul.greet_msg_1": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Ähhhh...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.845973Z"
+  },
+  "npc.a_sleeping_dragon.greet_msg_1": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.846744Z"
+  },
+  "npc.a_strange_chalice.greet_msg_1": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Hej? Vad menar du 'hi' - kan du inte se att jag är en... Jag måste sänka rösten. Har det fallit dig in att denna 'chalice' inte vill bli störd?! Låt mig vara!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.852716Z"
+  },
+  "npc.a_swan.greet_msg_1": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Jag hälsar dig, dödlig varelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.857245Z"
+  },
+  "npc.a_sweaty_cyclops.greet_msg_1": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Hum Hmm! Välkommen lil' |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.860777Z"
+  },
+  "npc.a_weakened_forest_fury.greet_msg_1": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Jag hälsar dig, människa. Det här är en tid av nöd, mer än någonsin är vi i behov av vårdnadshavare för att skydda oss och vår värld.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.877243Z"
+  },
+  "npc.a_wrinkled_bonelord.farewell_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Vänta där. Jag äter dig efter att ha skrivit ner vad jag fick reda på.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.886902Z"
+  },
+  "npc.a_wrinkled_bonelord.greet_msg_1": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Vad är det här? En optiskt utmanad enhet som heter |PLAYERNAME|. Vad fascinerande!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.888016Z"
+  },
+  "npc.a_wrinkled_bonelord.walkaway_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Vänta där. Jag äter dig efter att ha skrivit ner vad jag fick reda på.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.890412Z"
+  },
+  "npc.ahmet.greet_msg_1": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Sörjas pilgrim i kött. Jag säljer allmänna varor. Fråga mig bara om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.893356Z"
+  },
+  "npc.ajax.greet_msg_1": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Du tillbaka. Du vet, du har rätt. Bror har rätt. Fist inte alltid bra. Säg det till honom!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.895831Z"
+  },
+  "npc.ajax.greet_msg_2": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Vad gör du i mitt ställe?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.896582Z"
+  },
+  "npc.al_dee.farewell_msg_1": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Hejdå, hejdå |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.898472Z"
+  },
+  "npc.al_dee.sendtrade_msg_1": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Ta en titt i handelsfönstret till vänster.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.899387Z"
+  },
+  "npc.albinius.greet_msg_1": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Hälsningar, pilgrim. Välkommen till hoppets salar. Vi är innehavare av denna {temple} och välkomnar alla som är villiga att bidra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.903888Z"
+  },
+  "npc.albinius.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Åh... farväl, barn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.907588Z"
+  },
+  "npc.alesar.farewell_msg_1": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Slutligen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.908804Z"
+  },
+  "npc.alesar.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.912008Z"
+  },
+  "npc.alesar.walkaway_msg_1": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Slutligen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.912495Z"
+  },
+  "npc.alexander.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.915221Z"
+  },
+  "npc.alexander.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:12.916135Z"
+  },
+  "npc.gelidrazahs_thirst.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:13.358444Z"
+  },
+  "npc.gelidrazahs_thirst.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Vi ses, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:13.360401Z"
+  },
+  "npc.haroun.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:13.548751Z"
+  },
+  "npc.ivalisse.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Åh... farväl, barn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:13.626195Z"
+  },
+  "npc.nah_bob.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Till din tjänst, bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:13.899426Z"
+  },
+  "npc.rahkem.stdmod_11": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.035167Z"
+  },
+  "npc.rahkem.stdmod_7": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.037448Z"
+  },
+  "npc.raymond_striker.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.056448Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.071668Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.073390Z"
+  },
+  "npc.rokyn.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.074263Z"
+  },
+  "npc.rokyn.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en bra dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.075018Z"
+  },
+  "npc.romir.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.076163Z"
+  },
+  "npc.romir.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adjö.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.076812Z"
+  },
+  "npc.rose.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:14.077583Z"
   }
 }

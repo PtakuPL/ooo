@@ -92646,5 +92646,269 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:26:03.608156Z"
+  },
+  "npc.gnomewart.greet_msg_1": {
+    "src_hash": "520ec9389f4c5870f288a59e6684e798",
+    "text": "Och! Cześć! Domyślam się, że jesteś tu na test {endurance}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:25.842704Z"
+  },
+  "npc.gnominus.greet_msg_1": {
+    "src_hash": "1696d17e5337bf2b4779c8c335dc7123",
+    "text": "Cześć! Witaj w mojej małej {tavern}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:25.886397Z"
+  },
+  "npc.gnomission.greet_msg_1": {
+    "src_hash": "406af1b405914ad476cd4b1fc2491153",
+    "text": "Witaj |PLAYERNAME|. Pewnie nie możesz się doczekać wejścia do {warzones}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:25.902213Z"
+  },
+  "npc.gnommander.greet_msg_1": {
+    "src_hash": "0d5102525432f77b580ffc1d90cf9e67",
+    "text": "Cześć! Witamy na Spike.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:25.925362Z"
+  },
+  "npc.gorn.greet_msg_1": {
+    "src_hash": "2c0de480c3b051be4c0d710cb7e77aef",
+    "text": "Och, wejdź proszę, |PLAYERNAME|. Czego potrzebujesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:25.990483Z"
+  },
+  "npc.gregor.greet_msg_1": {
+    "src_hash": "c38b0cd1026d39fd6896d6be648916d6",
+    "text": "Pozdrowienia, |PLAYERNAME|. Czego chcesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.021651Z"
+  },
+  "npc.grizzly_adams.greet_msg_2": {
+    "src_hash": "b941c402448104c20b733c879acba187",
+    "text": "Witamy w '__PH0__' |PLAYERNAME|. Możesz zrobić dla nas {tasks}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.165434Z"
+  },
+  "npc.grof_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.273389Z"
+  },
+  "npc.grof_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.274590Z"
+  },
+  "npc.grof_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.277927Z"
+  },
+  "npc.grombur.greet_msg_1": {
+    "src_hash": "ecf362b99c062644fd9d950aba6fcbd0",
+    "text": "STÓJ TAM!..... Och, tylko człowiek. Co tam, wielkoludzie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.280154Z"
+  },
+  "npc.guard_saros.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Do widzenia, |PLAYERNAME|. Naprawdę mam nadzieję, że wkrótce znów porozmawiamy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.286971Z"
+  },
+  "npc.guard_saros.say_1": {
+    "src_hash": "3f7b43fe0bbcd31c7fb205da8ca06ae5",
+    "text": "Nigdy bym tego nie zgadła.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.289342Z"
+  },
+  "npc.guard_saros.say_11": {
+    "src_hash": "cd6d075b3304e4854a56e1b70bfa754d",
+    "text": "Trochę mi smutno, że chyba mnie zapomniałeś, przystojniaku. Jestem Aruda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.291972Z"
+  },
+  "npc.guard_saros.say_13": {
+    "src_hash": "72d58e2444b346e31b612c0ff3b2e843",
+    "text": "Och, podoba mi się, jak wymawiasz moje imię.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.294299Z"
+  },
+  "npc.guard_saros.say_14": {
+    "src_hash": "7e26548a0157f21bbfd51bced93d7b0a",
+    "text": "Proszę, nie bądź taki niegrzeczny i nie zerkaj na zegar, kiedy ze mną rozmawiasz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.296086Z"
+  },
+  "npc.guard_saros.say_15": {
+    "src_hash": "ce2a8e0f042e15c5224e7e5bb8635a5e",
+    "text": "Bardzo mi przykro, nie mogę ci pomóc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.297608Z"
+  },
+  "npc.guard_saros.say_16": {
+    "src_hash": "baf6c40c356c8e199ef3842e6bda876d",
+    "text": "Uch! Co za przerażający temat. Porozmawiajmy o czymś przyjemniejszym. W końcu jestem słabą i drobną kobietą.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.300052Z"
+  },
+  "npc.guard_saros.say_17": {
+    "src_hash": "6357c5b21bcf84e0126ea326b1bbc0e5",
+    "text": "Co sprawia, że myślisz, że jestem kobietą, którą znajdziesz w kanałach?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.301727Z"
+  },
+  "npc.guard_saros.say_18": {
+    "src_hash": "f2b6fcf1a923d172848d15e25788785e",
+    "text": "Powinieneś zapytać o to w którejś ze świątyń.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.303321Z"
+  },
+  "npc.guard_saros.say_19": {
+    "src_hash": "6dfbd61897f76d3d2f8119a2d8fbaf0d",
+    "text": "Król, który mieszka w tym fascynującym zamku? Myślę, że w swoich luksusowych szatach wygląda całkiem uroczo, nie sądzisz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.305078Z"
+  },
+  "npc.guard_saros.say_2": {
+    "src_hash": "e8855bf651d54224d8ca90cf4d839a8d",
+    "text": "Och, przepraszam, rozproszyłam się. Co powiedziałeś?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.306740Z"
+  },
+  "npc.guard_saros.say_20": {
+    "src_hash": "3ec203035c71529ed15fad89b76c7338",
+    "text": "On jest taaaki silny! Jakie mięśnie! Jaka sylwetka! Poprosiłeś go o randkę?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.308660Z"
+  },
+  "npc.guard_saros.say_21": {
+    "src_hash": "13bb3eda933a72b838d0cec3e3c0e4bd",
+    "text": "On jest taaaki silny! Jakie mięśnie! Jaka sylwetka! Z drugiej strony, przy tobie wygląda całkiem mizernie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.310407Z"
+  },
+  "npc.guard_saros.say_22": {
+    "src_hash": "e4fd09de95b21f0902d6ab37de4202c7",
+    "text": "Jest trochę prostoduszny, ale zawsze miły i dobrze ubrany.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.311965Z"
+  },
+  "npc.guard_saros.say_23": {
+    "src_hash": "2eae52b450c7ce2aec2db363823a61b1",
+    "text": "Powinien sprzedawać jakieś stylowe suknie czy coś takiego. My, Tibijczycy, nigdy nie dostajemy ubrań zgodnych z najnowszą modą. Szkoda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.314214Z"
+  },
+  "npc.guard_saros.say_24": {
+    "src_hash": "b8ceff3fa76a6666808155186e7d2c33",
+    "text": "Nie rozumiem tych samotnych mnichów. Za bardzo lubię towarzystwo, by sama zostać jednym z nich. Hehehe!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.315977Z"
+  },
+  "npc.guard_saros.say_25": {
+    "src_hash": "79d7ab6f80a56151a807c17f36544c6e",
+    "text": "Och, czy on nie jest zabawny? Mogłabym go słuchać cały dzień.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.317854Z"
+  },
+  "npc.guard_saros.say_26": {
+    "src_hash": "b14fc6aca791f3658ef93ca0ff5bb0ae",
+    "text": "O ile wiem, pracuje w zamku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.319453Z"
+  },
+  "npc.guard_saros.say_27": {
+    "src_hash": "690f00056b640c00e2818360384b810b",
+    "text": "Jestem trochę nieśmiała, więc nie słyszę wielu plotek.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.321207Z"
+  },
+  "npc.guard_saros.say_28": {
+    "src_hash": "32ac49ccd295b9fb1a0396ddaf2d667c",
+    "text": "Och, ty mały diabełku, przestań tak mówić! <blush>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.323142Z"
+  },
+  "npc.guard_saros.say_29": {
+    "src_hash": "5d842dccbc89f1351e2132f062ad0c5c",
+    "text": "Wiem niewiele o broni. Czy możesz opowiedzieć mi coś o niej, proszę?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.325275Z"
+  },
+  "npc.guard_saros.say_3": {
+    "src_hash": "5ce35c8cf4d3c2ca0b4a37eec1ff8ece",
+    "text": "Och, właśnie sobie przypomniałam, że mam trochę pracy. Przepraszam. Pa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:37:26.327742Z"
   }
 }

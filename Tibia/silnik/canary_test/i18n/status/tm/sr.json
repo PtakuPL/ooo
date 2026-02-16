@@ -163982,5 +163982,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:43:11.459466Z"
+  },
+  "item.23124.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.041374Z"
+  },
+  "item.23129.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.041783Z"
+  },
+  "item.23134.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.042520Z"
+  },
+  "item.23139.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.042942Z"
+  },
+  "item.24256.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.065785Z"
+  },
+  "item.24497.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.070732Z"
+  },
+  "item.25141.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.085562Z"
+  },
+  "item.25200.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.086968Z"
+  },
+  "item.25625.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.092414Z"
+  },
+  "item.25627.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.093097Z"
+  },
+  "item.25690.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.094205Z"
+  },
+  "item.25726.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.098502Z"
+  },
+  "item.25749.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.101876Z"
+  },
+  "item.27233.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.126938Z"
+  },
+  "item.27236.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.127323Z"
+  },
+  "item.27239.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.128155Z"
+  },
+  "item.27242.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.128570Z"
+  },
+  "item.27306.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.130496Z"
+  },
+  "item.27478.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.133729Z"
+  },
+  "item.27652.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.142432Z"
+  },
+  "item.27701.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.144663Z"
+  },
+  "item.28657.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.161464Z"
+  },
+  "item.28854.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.175036Z"
+  },
+  "item.28907.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.176648Z"
+  },
+  "item.28952.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.179048Z"
+  },
+  "item.28976.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.179644Z"
+  },
+  "item.29250.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.184341Z"
+  },
+  "item.29296.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.187445Z"
+  },
+  "item.29297.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.188387Z"
+  },
+  "item.29303.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.190216Z"
+  },
+  "item.30001.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.198704Z"
+  },
+  "item.30018.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.200729Z"
+  },
+  "item.30086.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.204925Z"
+  },
+  "item.30104.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.206035Z"
+  },
+  "item.30338.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.224370Z"
+  },
+  "item.30972.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.235631Z"
+  },
+  "item.31118.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.237003Z"
+  },
+  "item.31170.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.238734Z"
+  },
+  "item.31444.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.256128Z"
+  },
+  "item.31484.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.259601Z"
+  },
+  "item.31490.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.261507Z"
+  },
+  "item.31673.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.270428Z"
+  },
+  "item.31721.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.272537Z"
+  },
+  "item.31722.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.273041Z"
+  },
+  "item.31732.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.273776Z"
+  },
+  "item.31736.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.274289Z"
+  },
+  "item.4037.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "непозната ствар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.469917Z"
+  },
+  "item.5647.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.654334Z"
+  },
+  "item.5684.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.656013Z"
+  },
+  "item.5686.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "камени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:47.657026Z"
   }
 }

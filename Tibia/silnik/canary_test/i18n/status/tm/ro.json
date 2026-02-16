@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T21:34:25.394768Z"
+    "updated_at": "2026-02-16T21:46:15.497776Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -12806,5 +12806,101 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:42:18.668313Z"
+  },
+  "item.12572.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "Un pahar forjat de dragonul Khax care reprezintă toată cunoștințele și înțelepciunea TibiaVenezuela",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:03.549963Z"
+  },
+  "item.11333.desc": {
+    "src_hash": "780367cb103682624b01e2dd370f1f9d",
+    "text": "Apa din acest vas a fost purificată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:22.705688Z"
+  },
+  "item.11334.desc": {
+    "src_hash": "16ba2621362b2d453e79afbf3b3bf674",
+    "text": "Purificat prin focuri sacre, acest cărbune are puterea de a curăța o cantitate semnificativă de apă impură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:22.706756Z"
+  },
+  "item.11339.desc": {
+    "src_hash": "eec6d5a5291c1aa2fc5939505c9260c4",
+    "text": "Această bucată a fost tăiată din lemn sacru în complexul templului și arată ideală pentru sculptură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:22.707562Z"
+  },
+  "item.11341.desc": {
+    "src_hash": "719cdb3fd7a35cc7e24b9aa373f20a96",
+    "text": "Acest lut a fost săpat din pământ sacru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:22.708208Z"
+  },
+  "item.11344.desc": {
+    "src_hash": "959a4146c46d54cf5cf44ba91e6a653d",
+    "text": "Acest lut a fost amestecat cu pământ sacru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:22.708845Z"
+  },
+  "item.11347.desc": {
+    "src_hash": "557ca322c4358b15b6f9f6082860c6db",
+    "text": "Acest vas a fost acoperit cu argilă sacră și poate fi folosit pentru a purifica cantități mici de apă coruptă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:26.867728Z"
+  },
+  "item.11364.desc": {
+    "src_hash": "5ae9f693ac227ebabbd1f69e11d11fb0",
+    "text": "Această otravă de plante este menită să distrugă creșterile din apropierea bârlogului Păstrătorului, adânc sub grădini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:26.869338Z"
+  },
+  "item.11372.desc": {
+    "src_hash": "833bae5f6b897a1eedcaff068dd005f2",
+    "text": "Această poțiune te va ajuta să intri în visele oricărei forme de viață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:26.870738Z"
+  },
+  "item.114.desc": {
+    "src_hash": "cf2e0e10053dbc820992c3d97a9fbbb1",
+    "text": "Împăratul pitic doarme acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:26.871722Z"
+  },
+  "item.11426.desc": {
+    "src_hash": "a4801644b954c4cf4fefc6b6c5a9d824",
+    "text": "Pe foaie este mâzgălit un singur cuvânt: SOLOSARASATIQUARIUM",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:26.872925Z"
+  },
+  "item.11447.desc": {
+    "src_hash": "8bb86703e2cddbfd4e63b28a2cf0a5cb",
+    "text": "Pare a fi perfect pentru a modela o armă din ea. Cu siguranță cineva ar putea fi interesat de asta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T21:46:28.695950Z"
   }
 }

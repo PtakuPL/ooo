@@ -10742,5 +10742,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T21:06:33.668884Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L57.1606": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.901040Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L66.1607": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.901601Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L73.1608": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.902193Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L56.823": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.906743Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L65.824": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.907343Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L72.825": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.907934Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L56.1124": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.910563Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L65.1125": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.911097Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L72.1126": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.911641Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Чшч?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.912778Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L72.1053": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Чх...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.913094Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L73.1054": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Чх...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.913400Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L74.1055": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Ччч. Чх! <вы не уверены, но, похоже, белка хочет обменять ваши ценные желуди на бесполезные камни, которые она нашла и посчитала несъедобными>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.914157Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L56.230": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.916828Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L65.231": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.917377Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L72.232": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.918023Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L56.1263": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.918624Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L65.1264": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.919153Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L72.1265": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.919834Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L56.541": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.920396Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L65.542": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.921060Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L72.543": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.921623Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L56.996": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.922451Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L65.997": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.923058Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L72.998": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.923617Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L56.934": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.924774Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L65.935": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.925454Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L72.936": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.925987Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L56.1560": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.926880Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L65.1561": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.927436Z"
+  },
+  "data.otservbr.global.npc.a.wyrm.L72.1562": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссс! Держи это в покое! <предоставляет подробный отчет об активности монстров>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:16.927962Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L8.1800": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Телепорт.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.072582Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.notescoordinates.L9.1797": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.072940Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L54.2286": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Зонд отрегулирован.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.073680Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L66.2288": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Хм... на устройстве написано: 0,0,ноль,0,ноль, что примерно можно перевести как: ЗДЕСЬ НИЧЕГО ИНТЕРЕСНОГО.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.074392Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L98.2289": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Вы успешно собрали данные.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.074794Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L13.2281": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Вы успешно собрали несколько сочных корней.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.075272Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L26.2282": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ваша попытка сбора урожая уничтожила больше сочных корней, чем вы смогли спасти.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.075932Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L33.2283": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Вы успешно собрали несколько сочных корней.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.076409Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L46.2284": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ваша попытка сбора урожая уничтожила больше сочных корней, чем вы смогли спасти.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.076981Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L52.2285": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Этот корень уже собран, и здесь нет никакой выгоды.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.077483Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.containerRewards.L140.1843": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.082961Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L54.1849": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "У вас возникает чувство страха.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.083596Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L13.2005": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Нет мозгов",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.086438Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.action.drume.L32.1646": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Ваше время истекло.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:17.089732Z"
   }
 }

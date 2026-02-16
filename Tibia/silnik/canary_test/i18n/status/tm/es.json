@@ -141750,5 +141750,61 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T21:06:06.353409Z"
+  },
+  "monster.zorvorax.desc": {
+    "src_hash": "2b7b5417e3b2f92a9059fe240282876d",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.967045Z"
+  },
+  "monster.kalyassa.desc": {
+    "src_hash": "8eb76610bc95eb3ae228605ad80bc631",
+    "text": "Kaliassa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.968296Z"
+  },
+  "monster.tazhadur.name": {
+    "src_hash": "1a0072e1de28b151253476ef3153af89",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.969839Z"
+  },
+  "monster.tazhadur.desc": {
+    "src_hash": "1a0072e1de28b151253476ef3153af89",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.970858Z"
+  },
+  "monster.the_last_lore_keeper.name": {
+    "src_hash": "f622b8cee9f195789d69db6e7306ec53",
+    "text": "Last lore guardián",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.994936Z"
+  },
+  "monster.dragonking_zyrtarch.name": {
+    "src_hash": "f8693071c6e156fb65915e8b3267e39e",
+    "text": "Zyrtarch Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.997122Z"
+  },
+  "monster.dragonking_zyrtarch.desc": {
+    "src_hash": "f8693071c6e156fb65915e8b3267e39e",
+    "text": "Zyrtarch Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T21:08:11.998041Z"
   }
 }

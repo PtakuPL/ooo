@@ -15710,5 +15710,165 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:57:13.895895Z"
+  },
+  "monster.minotaur.voice_1": {
+    "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
+    "text": "Каплар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.112246Z"
+  },
+  "monster.minotaur_archer.voice_2": {
+    "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
+    "text": "Каплар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.117327Z"
+  },
+  "monster.mooh'tah_master.voice_2": {
+    "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
+    "text": "Каплар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.303761Z"
+  },
+  "monster.yeti.name": {
+    "src_hash": "9cb073d5208162d71991a6077288e01e",
+    "text": "Йети",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.384213Z"
+  },
+  "monster.gladiator.voice_3": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Драться!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.412792Z"
+  },
+  "monster.apprentice_sheng.voice_2": {
+    "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
+    "text": "Каплар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.526414Z"
+  },
+  "monster.apprentice_sheng.voice_7": {
+    "src_hash": "0c9faa9e9f4f4d6f7c85069f2e7ebc68",
+    "text": "Каплар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:41.566431Z"
+  },
+  "monster.minotaur_poacher.desc": {
+    "src_hash": "ae4106527ccea544821e119ce4bc40bb",
+    "text": "минотавр-браконьер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:53.912364Z"
+  },
+  "monster.elf_scout.desc": {
+    "src_hash": "4cb04e6b47c70bea931c7fc2e9ff75cc",
+    "text": "эльф-разведчик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:53.912606Z"
+  },
+  "monster.elf_scout.voice_2": {
+    "src_hash": "2a77d6d0c915e88beb98c30048d36a81",
+    "text": "Эвикор, направь мою стрелу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:57.034347Z"
+  },
+  "monster.elf_scout.voice_3": {
+    "src_hash": "1901f69ea2bd8f1634dda417cde0874d",
+    "text": "Ваше существование закончится здесь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:57.034781Z"
+  },
+  "monster.elf_scout.voice_4": {
+    "src_hash": "f6c35c8b3c07de46a739704060efac44",
+    "text": "Почувствуй жало моих стрел!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:57.035105Z"
+  },
+  "monster.elf_scout.voice_5": {
+    "src_hash": "b7a66d40b264087bcefc3ebe37938acd",
+    "text": "Твоя кровь утолит жажду земли!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:57.035445Z"
+  },
+  "monster.pirat_cutthroat.name": {
+    "src_hash": "147346d0577508b593678c41c11dbcea",
+    "text": "Пират-головорез",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:57.035686Z"
+  },
+  "monster.pirat_cutthroat.desc": {
+    "src_hash": "b8de087361ec5da7ea0b8ca441b499e7",
+    "text": "пират-головорез",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:59.678491Z"
+  },
+  "monster.execowtioner.name": {
+    "src_hash": "f39ca344f61df528cc11779fbcbefc8c",
+    "text": "Экзековционер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:59.678732Z"
+  },
+  "monster.execowtioner.voice_1": {
+    "src_hash": "8be3774de8528e143102c6cea0a74565",
+    "text": "Я тот, кто приводит милое в исполнение!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:59.679154Z"
+  },
+  "monster.execowtioner.voice_2": {
+    "src_hash": "37e18bbb720f62964daab1c8fa8e9ac7",
+    "text": "Я здесь, чтобы наказать!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:59.679446Z"
+  },
+  "monster.execowtioner.voice_3": {
+    "src_hash": "c0ff9246fa4faf873fab6cd2b1b78a42",
+    "text": "Правосудие быстрое и неизбежное!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:01.632337Z"
+  },
+  "monster.execowtioner.voice_4": {
+    "src_hash": "f1ae3e7b72144111b1e25be59e3a269b",
+    "text": "Я восстановлю справедливость!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:59:01.632659Z"
   }
 }

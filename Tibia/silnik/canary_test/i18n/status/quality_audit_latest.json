@@ -1,15 +1,144 @@
 {
-  "timestamp": "2026-02-16T22:58:08.131769Z",
+  "timestamp": "2026-02-16T22:59:16.875054Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 25,
   "issues_by_type": {
+    "identical_to_en": 18,
     "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_high": 200,
-    "suspicious_rejected_critical": 169,
-    "suspicious_rejected_high": 31
+    "suspicious_log_high": 152,
+    "suspicious_log_low": 1,
+    "suspicious_log_critical": 47,
+    "suspicious_rejected_critical": 153,
+    "suspicious_rejected_high": 47
   },
   "issues": [
+    {
+      "key": "monster.hirintror.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.hirintror.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.furyosa.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -61,5 +190,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

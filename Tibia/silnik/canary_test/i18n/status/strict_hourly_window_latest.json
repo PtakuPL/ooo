@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-16T21:58:12.004414Z",
-  "window_end_utc": "2026-02-16T22:58:12.004414Z",
+  "window_start_utc": "2026-02-16T21:59:21.113301Z",
+  "window_end_utc": "2026-02-16T22:59:21.113301Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 118,
+  "total_cycles": 119,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 118
+    "AUTO_TRANSLATE": 119
   },
-  "auto_translate_cycles": 118,
+  "auto_translate_cycles": 119,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3614,
-  "guard_fail": 2966,
-  "guard_fail_rate_pct": 45.1,
+  "translated": 3584,
+  "guard_fail": 2960,
+  "guard_fail_rate_pct": 45.2,
   "no_progress_entries": 1,
   "no_progress_rate_pct": 1.2,
-  "throughput_keys_per_h": 2076.7,
-  "suspicious_total": 15682,
+  "throughput_keys_per_h": 2072.4,
+  "suspicious_total": 17987,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -37,21 +37,27 @@
       "guard_command": 0
     },
     {
-      "target": "pl/monsters.json",
-      "translated": 150,
-      "guard_fail": 108,
-      "guard_command": 0
-    },
-    {
       "target": "pl/server.json",
       "translated": 0,
       "guard_fail": 86,
       "guard_command": 0
     },
     {
+      "target": "pl/monsters.json",
+      "translated": 100,
+      "guard_fail": 72,
+      "guard_command": 0
+    },
+    {
       "target": "ro/monsters.json",
       "translated": 29,
       "guard_fail": 71,
+      "guard_command": 0
+    },
+    {
+      "target": "ru/monsters.json",
+      "translated": 83,
+      "guard_fail": 67,
       "guard_command": 0
     },
     {
@@ -64,12 +70,6 @@
       "target": "es/scripts.json",
       "translated": 20,
       "guard_fail": 45,
-      "guard_command": 0
-    },
-    {
-      "target": "ru/monsters.json",
-      "translated": 57,
-      "guard_fail": 43,
       "guard_command": 0
     }
   ]

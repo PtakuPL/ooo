@@ -16158,5 +16158,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:47:01.115536Z"
+  },
+  "npc.a_prisoner.farewell_msg_1": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "La revedere! Nu uita de secretele matematicii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.435528Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Huh? Ce? Pot vedea! Wow! Un non-mino. Te-au {capture} și pe tine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.436057Z"
+  },
+  "npc.a_prisoner.walkaway_msg_1": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Așteaptă! nu pleca! Vreau să vă spun despre numerele mele suprareale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.437237Z"
+  },
+  "npc.a_sleeping_dragon.greet_msg_1": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.437874Z"
+  },
+  "npc.a_strange_chalice.greet_msg_1": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Hi? Ce vrei să spui 'hi' - nu vezi că sunt un... Trebuie să cobor vocea. Ți-a trecut prin cap, că acest 'chalice' nu vrea să fie deranjat?! Lasă-mă în pace!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.442346Z"
+  },
+  "npc.a_swan.greet_msg_1": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Te salut, ființă muritoare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.444252Z"
+  },
+  "npc.a_sweaty_cyclops.farewell_msg_1": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "La revedere, micuțul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.445120Z"
+  },
+  "npc.a_weakened_forest_fury.greet_msg_1": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Te salut, om. Acesta este un moment de suferință, mai mult decât oricând avem nevoie de gardieni care să ne protejeze pe noi și lumea noastră.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.449696Z"
+  },
+  "npc.a_wrinkled_bonelord.farewell_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Așteaptă chiar acolo. Te voi mânca după ce scriu ce am aflat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.452451Z"
+  },
+  "npc.a_wrinkled_bonelord.greet_msg_1": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Ce este asta? O entitate contestată optic numită |PLAYERNAME|. Ce fascinant!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.453092Z"
+  },
+  "npc.a_wrinkled_bonelord.walkaway_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Așteaptă chiar acolo. Te voi mânca după ce scriu ce am aflat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.454687Z"
+  },
+  "npc.ahmet.greet_msg_1": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Fii plâns pelerin în trup. Vand bunuri generale. Doar cere-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.456662Z"
+  },
+  "npc.ajax.greet_msg_1": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Te întorci. Știi, ai dreptate. Fratele are dreptate. Pumnul nu întotdeauna bun. Spune-i asta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.458368Z"
+  },
+  "npc.ajax.greet_msg_2": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Ce faci in locul meu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.458832Z"
+  },
+  "npc.al_dee.farewell_msg_1": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Pa, pa |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.460289Z"
+  },
+  "npc.al_dee.sendtrade_msg_1": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Aruncă o privire în fereastra de tranzacționare din stânga ta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.460929Z"
+  },
+  "npc.albinius.greet_msg_1": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Salutări, pelerin. Bun venit în sălile speranței. Suntem deținătorii acestui {temple} și salutăm toți cei care doresc să contribuie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.464783Z"
+  },
+  "npc.albinius.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... la revedere, copile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.467656Z"
+  },
+  "npc.alesar.farewell_msg_1": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "In sfarsit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.468438Z"
+  },
+  "npc.alesar.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "La dispoziția dumneavoastră, doar răsfoiți prin marfa mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.470763Z"
+  },
+  "npc.alesar.walkaway_msg_1": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "In sfarsit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.471088Z"
+  },
+  "npc.alexander.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ne vedem, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.472940Z"
+  },
+  "npc.alexander.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ne vedem, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.473583Z"
+  },
+  "npc.alia.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.474055Z"
+  },
+  "npc.alia.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.474973Z"
+  },
+  "npc.alia.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.477177Z"
+  },
+  "npc.alkestios.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.477584Z"
+  },
+  "npc.alkestios.greet_msg_1": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Binecuvântarea naturii, călător! Să nu fii afectat de nicio forță sinistră.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.478209Z"
+  },
+  "npc.alkestios.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.480331Z"
+  },
+  "npc.altar.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.480649Z"
+  },
+  "npc.altar.greet_msg_1": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Îngenunchează în fața puterii atot-devoratoare a decăderii sângeroase.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.481117Z"
+  },
+  "npc.amanda.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.485914Z"
+  },
+  "npc.amanda.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.486507Z"
+  },
+  "npc.amanda.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.488988Z"
+  },
+  "npc.aurita.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.519050Z"
+  },
+  "npc.aurita.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.520573Z"
+  },
+  "npc.azalea.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.523279Z"
+  },
+  "npc.azalea.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.523845Z"
+  },
+  "npc.azalea.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.526017Z"
+  },
+  "npc.bloodshade_rotten.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.541218Z"
+  },
+  "npc.bloodshade_sacrifice.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.541943Z"
+  },
+  "npc.brewster.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.554569Z"
+  },
+  "npc.brewster.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.555138Z"
+  },
+  "npc.brewster.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.557749Z"
+  },
+  "npc.cedrik.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.607825Z"
+  },
+  "npc.cedrik.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.608415Z"
+  },
+  "npc.cedrik.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.610661Z"
+  },
+  "npc.dallheim.farewell_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.648873Z"
+  },
+  "npc.dallheim.stdmod_8": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.652030Z"
+  },
+  "npc.dancing_fairy.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Fie ca drumul tău să fie întotdeauna uniform.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:57:56.652913Z"
   }
 }

@@ -23166,5 +23166,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T22:57:07.153928Z"
+  },
+  "item.3733.name": {
+    "src_hash": "0a840ef45467fb3932dbf2c2896c5cbf",
+    "text": "pietra",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.383701Z"
+  },
+  "item.37786.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.400562Z"
+  },
+  "item.37787.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.401102Z"
+  },
+  "item.37788.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.401485Z"
+  },
+  "item.37789.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.401919Z"
+  },
+  "item.37791.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.402498Z"
+  },
+  "item.37981.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.404779Z"
+  },
+  "item.37982.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.405084Z"
+  },
+  "item.37982.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.405352Z"
+  },
+  "item.37983.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.405596Z"
+  },
+  "item.37984.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.406050Z"
+  },
+  "item.37984.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.406355Z"
+  },
+  "item.385.name": {
+    "src_hash": "de97e75e5b4604526a2afaed5f5439d7",
+    "text": "buco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.407338Z"
+  },
+  "item.38851.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.411958Z"
+  },
+  "item.394.name": {
+    "src_hash": "de97e75e5b4604526a2afaed5f5439d7",
+    "text": "buco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.425149Z"
+  },
+  "item.39430.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.427253Z"
+  },
+  "item.39432.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.427835Z"
+  },
+  "item.39434.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.428279Z"
+  },
+  "item.39436.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.428860Z"
+  },
+  "item.3988.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.441309Z"
+  },
+  "item.39919.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.441823Z"
+  },
+  "item.39921.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.442103Z"
+  },
+  "item.39923.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.442448Z"
+  },
+  "item.39925.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.442671Z"
+  },
+  "item.3994.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.443062Z"
+  },
+  "item.3995.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.443315Z"
+  },
+  "item.3996.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:58:01.443670Z"
   }
 }

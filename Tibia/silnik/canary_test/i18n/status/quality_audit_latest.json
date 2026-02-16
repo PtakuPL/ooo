@@ -1,88 +1,15 @@
 {
-  "timestamp": "2026-02-16T22:57:36.302549Z",
+  "timestamp": "2026-02-16T22:58:08.131769Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 15,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_critical": 63,
-    "suspicious_log_low": 1,
-    "suspicious_log_high": 136,
+    "suspicious_log_high": 200,
     "suspicious_rejected_critical": 169,
     "suspicious_rejected_high": 31
   },
   "issues": [
-    {
-      "key": "monster.feroxa2.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "monster.ocyakao.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.ocyakao.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -134,5 +61,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

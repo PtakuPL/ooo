@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-16T22:05:26.885969Z",
-  "language": "es",
+  "timestamp": "2026-02-16T22:07:30.574994Z",
+  "language": "sr",
   "json_file": "npc.json",
-  "translated": 24,
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "npc.a_weakened_forest_fury.stdmod_4",
+      "en": "Take care, guardian.",
+      "translated": "Чувај се, чувару.",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "npc.a_weakened_forest_fury.stdmod_5",
+      "en": "Cruel beings. Large and monstrous, with a single eye, staring at their prey. ",
+      "translated": "Окрутна бића. Велики и монструозни, са једним оком, буље у свој плен. ",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "npc.a_wrinkled_bonelord.farewell_msg_1",
+      "en": "Wait right there. I will eat you after writing down what I found out.",
+      "translated": "Сачекај тамо. Појешћу те након што запишем шта сам сазнао.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "npc.a_wrinkled_bonelord.greet_msg_1",
+      "en": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "translated": "Шта је ово? Ентитет са оптичким изазовом који се зове |PLAYERNAME|. Како фасцинантно!",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "npc.a_wrinkled_bonelord.stdmod_1",
+      "en": "485611800364197.",
+      "translated": "485611800364197.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "npc.a_wrinkled_bonelord.stdmod_10",
+      "en": "These fools and their superstitious life cult don't understand anything of importance.",
+      "translated": "Ове будале и њихов сујеверни животни култ не разумеју ништа важно.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "npc.a_wrinkled_bonelord.stdmod_11",
+      "en": "Only inferior species need weapons.",
+      "translated": "Само инфериорним врстама је потребно оружје.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "npc.a_wrinkled_bonelord.stdmod_12",
+      "en": "I heard that elves moved in upstairs.",
+      "translated": "Чуо сам да су се вилењаци уселили горе.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "npc.a_wrinkled_bonelord.stdmod_13",
+      "en": "Numbers are essential. They are the secret behind the scenes. If you are a master of mathematics you are a master over life and death.",
+      "translated": "Бројеви су неопходни. Они су тајна иза сцене. Ако сте магистар математике, ви сте господар живота и смрти.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "npc.a_wrinkled_bonelord.stdmod_14",
+      "en": "Our books are written in 469, of course you can't understand them.",
+      "translated": "Наше књиге су написане у 469, наравно да их не можете разумети.",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "npc.a_wrinkled_bonelord.stdmod_15",
+      "en": "Go and wash your eyes for using this obscene number!",
+      "translated": "Иди и опери очи због употребе овог опсценог броја!",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "npc.a_wrinkled_bonelord.stdmod_16",
+      "en": "The language of my kind. Superior to any other language and only to be spoken by entities with enough eyes to blink it.",
+      "translated": "Језик моје врсте. Врхунски је у односу на било који други језик и да га говоре само ентитети са довољно очију да трепну.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.a_wrinkled_bonelord.stdmod_17",
+      "en": "Noisy pests.",
+      "translated": "Бучне штеточине.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.a_wrinkled_bonelord.stdmod_18",
+      "en": "Their mages are so close to the truth. Closer then they know and closer then it's good for them.",
+      "translated": "Њихови магови су тако близу истини. Ближе него што знају и ближе онда је добро за њих.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.a_wrinkled_bonelord.stdmod_19",
+      "en": "Good tools to work with ... After their death, that is.",
+      "translated": "Добар алат за рад ... После њихове смрти, тј.",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "npc.a_wrinkled_bonelord.stdmod_2",
+      "en": "78572611857643646724.",
+      "translated": "78572611857643646724.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "npc.a_wrinkled_bonelord.stdmod_3",
+      "en": "Yes, yes, I will kill you soon enough, now let me continue my investigation on you.",
+      "translated": "Да, да, ускоро ћу те убити, а сад ми дозволи да наставим истрагу о теби.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "npc.a_wrinkled_bonelord.stdmod_4",
+      "en": "They will mourn the day they abandoned us.",
+      "translated": "Они ће оплакивати дан када су нас напустили.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.a_wrinkled_bonelord.stdmod_5",
+      "en": "I am the great librarian.",
+      "translated": "Ја сам велики библиотекар.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.a_wrinkled_bonelord.stdmod_6",
+      "en": "It's a fine library, isn't it?",
+      "translated": "То је добра библиотека, зар не?",
       "source": "tm"
     }
   ]

@@ -5321,27 +5321,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:58.697164Z"
+    "updated_at": "2026-02-16T22:07:20.420083Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:58.697867Z"
+    "updated_at": "2026-02-16T22:07:20.420815Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:58.698584Z"
+    "updated_at": "2026-02-16T22:07:20.421448Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -20910,5 +20910,317 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T22:02:29.391713Z"
+  },
+  "npc.vanys.farewell_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.665584Z"
+  },
+  "npc.vanys.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.669508Z"
+  },
+  "npc.vascalir.farewell_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.670274Z"
+  },
+  "npc.vascalir.walkaway_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Addio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.686786Z"
+  },
+  "npc.virgil.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.692141Z"
+  },
+  "npc.virgil.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.692817Z"
+  },
+  "npc.walter_jaeger.say_17": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Hai già questo componente aggiuntivo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.695148Z"
+  },
+  "npc.walter_jaeger.say_21": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Hai già questo componente aggiuntivo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.696366Z"
+  },
+  "npc.walter_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LUNGA VITA AL RE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.698598Z"
+  },
+  "npc.wentworth.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.699615Z"
+  },
+  "npc.wentworth.say_22": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.701594Z"
+  },
+  "npc.wentworth.say_30": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.702945Z"
+  },
+  "npc.wentworth.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.704320Z"
+  },
+  "npc.wentworth.say_39": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.705774Z"
+  },
+  "npc.wentworth.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.710029Z"
+  },
+  "npc.xorlosh.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ci vediamo, amico mio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.730953Z"
+  },
+  "npc.xorlosh.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ci vediamo, amico mio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.733904Z"
+  },
+  "npc.yaman.say_9": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.754396Z"
+  },
+  "npc.yberius.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.758944Z"
+  },
+  "npc.yberius.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.759981Z"
+  },
+  "npc.yberius.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Sei ferito, figlio mio. Guarirò le tue ferite.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.761825Z"
+  },
+  "npc.yberius.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.767175Z"
+  },
+  "npc.yonan.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.774250Z"
+  },
+  "npc.yonan.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.775366Z"
+  },
+  "npc.yonan.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Come posso aiutarti?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.776787Z"
+  },
+  "npc.yonan.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bene, allora ciao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.779153Z"
+  },
+  "npc.zedrulon_the_fallen.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Che gli dei ti benedicano, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.808720Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.811662Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Sei ferito, figlio mio. Guarirò le tue ferite.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.813413Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nessun problema.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.818500Z"
+  },
+  "npc.zerbrus.stdmod_14": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Bene.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.822216Z"
+  },
+  "npc.znozel.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.856789Z"
+  },
+  "npc.znozel.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Buona giornata.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.859047Z"
+  },
+  "npc.zora.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.861413Z"
+  },
+  "npc.zora.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Eccolo.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.862231Z"
+  },
+  "npc.zora.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.862736Z"
+  },
+  "npc.zora.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:17.863574Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:20.421914Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:07:20.422364Z"
   }
 }

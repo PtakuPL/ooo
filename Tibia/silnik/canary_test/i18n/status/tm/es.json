@@ -141358,5 +141358,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T20:54:12.694645Z"
+  },
+  "monster.urmahlullu_the_immaculate.name": {
+    "src_hash": "0c069949a0398db2120389fb240f3495",
+    "text": "Urmahlullu immaculate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.301685Z"
+  },
+  "monster.urmahlullu_the_immaculate.desc": {
+    "src_hash": "0c069949a0398db2120389fb240f3495",
+    "text": "Urmahlullu immaculate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.303954Z"
+  },
+  "monster.zamulosh.name": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.325975Z"
+  },
+  "monster.zamulosh.desc": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.327518Z"
+  },
+  "monster.zamulosh3.desc": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.353068Z"
+  },
+  "monster.zamulosh2.desc": {
+    "src_hash": "57e10ef40ee701cb3a668ecc4c10f78c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.355344Z"
+  },
+  "monster.darklight_matter.name": {
+    "src_hash": "741eec4c13495cb3082bf50895b3ec06",
+    "text": "Materia de luz oscura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.380142Z"
+  },
+  "monster.rotten_man_maggot.name": {
+    "src_hash": "18c69d3cf6277b36847452ea189be5f3",
+    "text": "Man-maggot podrido",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.385838Z"
+  },
+  "monster.zorvorax.name": {
+    "src_hash": "80c04b42271d9f49b38453faaac73c56",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:45.416020Z"
   }
 }

@@ -9950,5 +9950,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T20:54:44.379160Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.schrodingers.island.teleport.lvl.999.L16.2328": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Поздравляем!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.155795Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L18.2206": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.160259Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.chest.L9.2229": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Пусто.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.161569Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L434.2218": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Эта хрустальная жеода дрожит от битвы неподалеку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.162468Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L469.2220": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Эта хрустальная жеода дрожит от битвы неподалеку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.163394Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L504.2222": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Эта хрустальная жеода дрожит от битвы неподалеку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.164142Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L12.2226": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Вы организовали конвой, доставьте пленника на заставу гномов!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.164899Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L24.2227": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Под обломками вы не найдете ничего интересного.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.166039Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L27.2215": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Вы пока не можете использовать этот портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.166822Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L37.2216": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Вы пока не можете использовать этот портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.167446Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L47.2217": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Вы пока не можете использовать этот портал.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.168096Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.boxramp.L6.2249": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Клонк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.170499Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L12.2256": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Ага.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.170941Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L16.2257": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Извини.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.171585Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Неудача.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.172381Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L16.2253": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Извини.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.172913Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.movements.challenger.L61.2129": {
+    "src_hash": "8e74537087921e5af7609333bfdd885b",
+    "text": "Вам нужно подождать, чтобы снова бросить вызов этому врагу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.181358Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.movements.servant.teleport.L13.2151": {
+    "src_hash": "8e74537087921e5af7609333bfdd885b",
+    "text": "Вам нужно подождать, чтобы снова бросить вызов этому врагу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.182419Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L77.2279": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Вам пока не разрешено это использовать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.183475Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L90.2280": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Вы держите перед собой старый нагрудник Галтейна. Он не подходит и слишком стар, чтобы выдержать любое нападение.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.184507Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.charges.lever.L259.1879": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Кто-то находится поблизости.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.186305Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.cracklers.lever.L194.1878": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Кто-то находится поблизости.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.187015Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.final.lever.L478.1881": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Кто-то находится поблизости.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.188264Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.sparks.lever.L188.1874": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Кто-то находится поблизости.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.188991Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L10.2271": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Вы уже это исследовали.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.191992Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L24.2272": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Обрывки бумаги разбросаны по полу. Требуется некоторое время, чтобы собрать их обратно. Но это всего лишь плохо написанное стихотворение.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.193203Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L27.2273": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Вы уже это исследовали.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.194612Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Вы внимательно изучаете свитки. Это приказ от Rathleton послу. Никаких признаков измены здесь нет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.196651Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L44.2275": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Вы уже это исследовали.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.197891Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L58.2276": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "В доме посла вы ничего не найдете. Если он на самом деле предатель, он избавился от любых улик, которые могли бы его обвинить.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.199092Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L7.2270": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Недавно здесь сожгли документы. Только часть одного свитка все еще лежит перед дымоходом, но он слишком закопчен, чтобы его можно было читать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.200223Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L29.2267": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Вы чувствуете дрожь и головокружение, мир вокруг вас темнеет. Затем ваше зрение снова проясняется – и вы находитесь где-то в другом месте.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.201697Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L49.2268": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Вас переместили в правое полушарие мозга",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.202706Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L65.2269": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Вас переместили в левое полушарие мозга",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.203386Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L34.2277": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Вы благословляете статую.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.203932Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L38.2278": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Вы уже благословили эту статую.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.204595Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L9.1679": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Извини",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.205524Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L9.1673": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.206398Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L8.1661": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Извини",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.207091Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L9.1659": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.208591Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L8.1655": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Извини",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.211083Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L9.1671": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.211871Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tortoise.L5.1674": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Черепаха.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.212896Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumulo.L8.1663": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.213689Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumuloerro.L8.1653": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.214584Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L11.1801": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Пустой.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T20:58:53.216007Z"
   }
 }

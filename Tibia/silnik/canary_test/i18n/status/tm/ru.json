@@ -13918,5 +13918,189 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:04:42.872648Z"
+  },
+  "monster.gladiator.voice_4": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Возьми это!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:42.872444Z"
+  },
+  "monster.renegade_knight.voice_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Возьми это!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:42.921461Z"
+  },
+  "monster.frost_troll.voice_3": {
+    "src_hash": "081b99983f3751c20ea157a31fde8ae9",
+    "text": "Бррр",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:43.256170Z"
+  },
+  "monster.dworc_fleshhunter.desc": {
+    "src_hash": "3ce66b5fbf40288d4e871ded14cb8b88",
+    "text": "дворкский охотник за плотью",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:54.896126Z"
+  },
+  "monster.dworc_fleshhunter.voice_1": {
+    "src_hash": "3f40d9293ed4d1efdd9091e86d4733e1",
+    "text": "Вырасти трук гррррр.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:54.896535Z"
+  },
+  "monster.dworc_fleshhunter.voice_2": {
+    "src_hash": "b4a06d7b380058bb8db2b239c0999e28",
+    "text": "Тормозите бррретц!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:54.896887Z"
+  },
+  "monster.dworc_fleshhunter.voice_3": {
+    "src_hash": "66802e919c17a75253daf8d4556a6918",
+    "text": "Прек тарс, декклеп зурк.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:57.925954Z"
+  },
+  "monster.crazed_winter_rearguard.name": {
+    "src_hash": "9e4cbed1d02b23f08351349feab3863c",
+    "text": "Безумный зимний арьергард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:57.926447Z"
+  },
+  "monster.crazed_winter_rearguard.desc": {
+    "src_hash": "21845fbf6e7bb19b17ad23742f85363f",
+    "text": "сумасшедший зимний арьергард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:57.926872Z"
+  },
+  "monster.mooh'tah_warrior.name": {
+    "src_hash": "bc196f858aa589bc4ee8132f9541fc57",
+    "text": "Мух'Та Воин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:57.927224Z"
+  },
+  "monster.mooh'tah_warrior.desc": {
+    "src_hash": "f6f3d992fb7d576cdb249a3c8b436844",
+    "text": "воин-мухта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:57.927560Z"
+  },
+  "monster.mooh'tah_warrior.voice_1": {
+    "src_hash": "2277c7ad605c6a0566f6518314a3bedf",
+    "text": "Почувствуйте силу Мух'Та!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:09:57.927988Z"
+  },
+  "monster.pirat_artillerist.name": {
+    "src_hash": "15324395e4c0fd4598c851ecf874f9cc",
+    "text": "Пират-артиллерист",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:01.301571Z"
+  },
+  "monster.pirat_artillerist.desc": {
+    "src_hash": "0e1fb9f4cad63426395266e9125a089c",
+    "text": "пират-артиллерист",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:01.302004Z"
+  },
+  "monster.lost_exile.desc": {
+    "src_hash": "8bda4781f2eaacfe7e05244286eae051",
+    "text": "потерянный изгнанник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:01.302473Z"
+  },
+  "monster.cheese_thief.name": {
+    "src_hash": "47b1260020f826a9431300389915842e",
+    "text": "Сырный вор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:01.302799Z"
+  },
+  "monster.cheese_thief.desc": {
+    "src_hash": "82ea3827b3ba3478974309bfc4dca545",
+    "text": "вор сыра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:01.303204Z"
+  },
+  "monster.corym_vanguard.name": {
+    "src_hash": "3c6c552a2b689a7abfd0c76db7288e80",
+    "text": "Корим Авангард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:01.303542Z"
+  },
+  "monster.corym_vanguard.desc": {
+    "src_hash": "cc5bf025cb6872dab16eb0d107863ec6",
+    "text": "коримский авангард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:04.945962Z"
+  },
+  "monster.corym_vanguard.voice_1": {
+    "src_hash": "c96cf327880a771ac751b0012d59ee4c",
+    "text": "Дай мне! Дай мне!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:04.946488Z"
+  },
+  "monster.pirat_mate.desc": {
+    "src_hash": "b349d4ba35b3ee54beb182b92354bdad",
+    "text": "приятель-пират",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:04.946864Z"
+  },
+  "monster.minotaur_mage.name": {
+    "src_hash": "59a8367246ce86abf56d7952814e638e",
+    "text": "Минотавр Маг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:04.947245Z"
+  },
+  "monster.minotaur_mage.desc": {
+    "src_hash": "ba76ac24dfb3df665258f580af755cec",
+    "text": "минотавр-маг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:04.947586Z"
   }
 }

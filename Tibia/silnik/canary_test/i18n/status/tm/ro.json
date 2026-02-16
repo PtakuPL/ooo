@@ -14118,5 +14118,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T22:07:06.215809Z"
+  },
+  "monster.metal_gargoyle.desc": {
+    "src_hash": "cd5d1bf081104464a7223eb53ceda7fb",
+    "text": "o garguilă de metal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:30.430901Z"
+  },
+  "monster.metal_gargoyle.voice_1": {
+    "src_hash": "09619cf7736627348dbeaff638071c68",
+    "text": "clonc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:30.431158Z"
+  },
+  "monster.metal_gargoyle.voice_2": {
+    "src_hash": "54d16d18dfbb1d72ea5f66ece332446d",
+    "text": "*stop*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:35.395636Z"
+  },
+  "monster.orewalker.desc": {
+    "src_hash": "4714b41020fd99f98593879e436b7c92",
+    "text": "un umblator de minereu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:35.396778Z"
+  },
+  "monster.orewalker.voice_1": {
+    "src_hash": "c5adbd4a1dbde47fc99e8ec27c1d7a92",
+    "text": "CLONK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:35.397156Z"
+  },
+  "monster.diamond_servant.name": {
+    "src_hash": "4f9252b599feed0797fed5c8568b5c0c",
+    "text": "Servitor de diamant",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:35.397475Z"
+  },
+  "monster.diamond_servant.desc": {
+    "src_hash": "314c42b30ac4b48e187cc141e856d21f",
+    "text": "un servitor de diamante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:35.397830Z"
+  },
+  "monster.diamond_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Eroare. ÎNCĂRCARE 'PROGRAM',8,1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:37.972322Z"
+  },
+  "monster.diamond_servant.voice_2": {
+    "src_hash": "1151a29d73c087e68c794c5eb503a1ea",
+    "text": "Rămâne. Ascultător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T22:10:37.972688Z"
   }
 }

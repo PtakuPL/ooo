@@ -4,28 +4,28 @@
 
 ## 📝 PODSUMOWANIE
 
-> Worker tłumaczy **53** języków. Klucze EN: **53,586**. Pokrycie globalne: **10.09%**. Tempo: **3149.0 kluczy/h**. Tłumaczeń netto: **77,822**.
+> Worker tłumaczy **53** języków. Klucze EN: **53,586**. Pokrycie globalne: **10.09%**. Tempo: **3146.0 kluczy/h**. Tłumaczeń netto: **77,880**.
 
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-16 22:09:46
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-16 22:10:52
 
-> **Aktualizacja:** 2026-02-16 22:09:46 UTC  
+> **Aktualizacja:** 2026-02-16 22:10:52 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #84 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: ru | Plik: monsters.json | Heartbeat: 2026-02-16T22:09:39Z  
-> **Okno godzinowe:** okno=1.0h | cykli=164 | pominięte=0.0% | odrzucone=40.5% | przepustowość=3149.0/h  
-> **Tłumaczeń netto:** 77,822
+> **LIVE:** Cykl #84 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: ru | Plik: - | Heartbeat: 2026-02-16T22:10:45Z  
+> **Okno godzinowe:** okno=1.0h | cykli=158 | pominięte=0.0% | odrzucone=40.8% | przepustowość=3146.0/h  
+> **Tłumaczeń netto:** 77,880
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-16 22:09:46 |
-| LIVE | 🟢 AKTYWNY | 8s temu | - | `activity.json / worker_state.json` | 2026-02-16T22:09:39Z |
-| MIGRATION | 🔒 NIEAKTYWNY | 1h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-16 22:09:46 |
-| TRANSLATION | 🟢 AKTYWNY | 57s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-16T22:08:50.439472Z |
-| QUALITY | 🔒 NIEAKTYWNY | 29s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-16T22:09:17.843424Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-16 22:09:46 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-16 22:10:52 |
+| LIVE | 🟢 AKTYWNY | 8s temu | - | `activity.json / worker_state.json` | 2026-02-16T22:10:45Z |
+| MIGRATION | 🔒 NIEAKTYWNY | 1h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-16 22:10:52 |
+| TRANSLATION | 🟢 AKTYWNY | 9s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-16T22:10:44.666692Z |
+| QUALITY | 🔒 NIEAKTYWNY | 8s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-16T22:10:45.503006Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-16 22:10:52 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,28 +34,28 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T22:09:39Z
+> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T22:10:45Z
 
 | Metryka | Wartość |
 |---------|---------|
-| 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) |
-| 🌍 **Aktywne języki (10 min)** | ES, PL, RU, SV |
+| 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) → cycle_end |
+| 🌍 **Aktywne języki (10 min)** | ES, IT, RO, RU |
 | 📝 **Faza** | AUTO_TRANSLATE |
-| 📋 **Etap** | sygnał życia |
+| 📋 **Etap** | cycle_end |
 | 📂 **Kategoria / Język** | ru |
-| 📄 **Plik** | monsters.json |
+| 📄 **Plik** | - |
 | 📊 **Status** | 🟢 DZIAŁA |
-| 📈 **Postęp** | ░░░░░░░░░░░░░░░░░░░░ 0/50 keys (0.0%) |
-| 🔧 **Metoda** | Translation Memory (GT wyłączony) |
+| 📈 **Postęp** | - |
+| 🔧 **Metoda** | Google Translate + TM fallback |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-02-16T22:09:39Z |
+| ❤️ **Heartbeat** | 2026-02-16T22:10:45Z |
 
 **Ostatnie operacje:**
+- → PARALLEL_TRANSLATE_DONE (IT) [ok]
+- → PARALLEL_TRANSLATE_DONE (RO) [ok]
+- → AUTO_TRANSLATE_DONE (RU) [warn]
 - → REPAIR_IDENTICAL_DONE (ES) [ok]
 - → PARALLEL_TRANSLATE_DONE (ES) [ok]
-- → PARALLEL_TRANSLATE_DONE (PL) [ok]
-- → AUTO_TRANSLATE_DONE (SV) [warn]
-- → PARALLEL_TRANSLATE_DONE (SR) [ok]
 
 ---
 
@@ -63,15 +63,15 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 📊 Przetłumaczono | **5,636** kluczy |
-| ❌ Odrzucone (guard) | 3840 |
-| 🔁 Cykli | 164 |
+| 📊 Przetłumaczono | **5,530** kluczy |
+| ❌ Odrzucone (guard) | 3807 |
+| 🔁 Cykli | 158 |
 | 🌍 Języków | 7 |
 | 🏆 Najaktywniejszy | IT (950 kluczy) |
 | 📄 Najczęstszy plik | npc.json |
-| ⚡ Przepustowość | ~3149 kluczy/h |
-| 🛡️ Guard fail rate | 40.5% |
-| ⚠️ Podejrzane | 33065 |
+| ⚡ Przepustowość | ~3146 kluczy/h |
+| 🛡️ Guard fail rate | 40.8% |
+| ⚠️ Podejrzane | 29145 |
 
 ---
 
@@ -82,10 +82,10 @@
 | IT | 950 | 0 | 0.0% | 4 |
 | SV | 939 | 11 | 1.2% | 4 |
 | SR | 920 | 30 | 3.2% | 4 |
-| RU | 845 | 123 | 12.7% | 4 |
-| RO | 768 | 182 | 19.2% | 4 |
-| ES | 664 | 45 | 6.3% | 3 |
-| PL | 550 | 3449 | 86.2% | 4 |
+| RU | 824 | 141 | 14.6% | 4 |
+| RO | 733 | 217 | 22.8% | 4 |
+| ES | 614 | 45 | 6.8% | 3 |
+| PL | 550 | 3363 | 85.9% | 4 |
 
 > Źródło: `translation_guard_report.jsonl` (okno 1.0h)
 
@@ -97,9 +97,9 @@
 |-------|---------------|-----------|----------|----------|
 | ES | 39,520 | 53,586 | 73.75% | 2,607 |
 | PL | 23,174 | 53,586 | 43.25% | 1,854 |
-| RU | 18,445 | 53,586 | 34.42% | 3,060 |
+| RU | 18,463 | 53,586 | 34.45% | 3,057 |
 | FR | 17,709 | 53,586 | 33.05% | 4,057 |
-| RO | 9,852 | 53,586 | 18.39% | 2,483 |
+| RO | 9,860 | 53,586 | 18.4% | 2,481 |
 | ZH_TW | 7,776 | 53,586 | 14.51% | 9,749 |
 | IT | 5,072 | 53,586 | 9.47% | 2,424 |
 | SR | 5,030 | 53,586 | 9.39% | 2,495 |
@@ -122,15 +122,15 @@
 
 ## 📈 Postęp i ETA (cel: 95%)
 
-> **ETA globalne:** ~31 dni (2,365,986 kluczy do celu 95%)
+> **ETA globalne:** ~31 dni (2,365,960 kluczy do celu 95%)
 
 | Język | Pasek | Pokrycie | Przetłumaczono | ETA do 95% |
 |-------|-------|----------|---------------|------------|
 | ES | ██████████████░░░░░░ | 73.8% | 39,520/53,586 | ~4h |
 | PL | ████████░░░░░░░░░░░░ | 43.2% | 23,174/53,586 | ~9h |
-| RU | ██████░░░░░░░░░░░░░░ | 34.4% | 18,445/53,586 | ~10h |
+| RU | ██████░░░░░░░░░░░░░░ | 34.5% | 18,463/53,586 | ~10h |
 | FR | ██████░░░░░░░░░░░░░░ | 33.0% | 17,709/53,586 | ~11h |
-| RO | ███░░░░░░░░░░░░░░░░░ | 18.4% | 9,852/53,586 | ~13h |
+| RO | ███░░░░░░░░░░░░░░░░░ | 18.4% | 9,860/53,586 | ~13h |
 | ZH_TW | ██░░░░░░░░░░░░░░░░░░ | 14.5% | 7,776/53,586 | ~14h |
 | IT | █░░░░░░░░░░░░░░░░░░░ | 9.5% | 5,072/53,586 | ~15h |
 | SR | █░░░░░░░░░░░░░░░░░░░ | 9.4% | 5,030/53,586 | ~15h |
@@ -152,7 +152,7 @@
 | MS | █░░░░░░░░░░░░░░░░░░░ | 7.1% | 3,805/53,586 | ~15h |
 | TE | █░░░░░░░░░░░░░░░░░░░ | 6.9% | 3,714/53,586 | ~15h |
 
-> Tempo obliczone na bazie ostatniej godziny: ~3149 kluczy/h.
+> Tempo obliczone na bazie ostatniej godziny: ~3146 kluczy/h.
 
 ---
 
@@ -207,7 +207,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 1h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-16 22:09:46
+> Świeżość: 1h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-16 22:10:52
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -256,7 +256,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 AKTYWNY  
-> Świeżość: 57s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-16T22:08:50.439472Z
+> Świeżość: 9s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-16T22:10:44.666692Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -270,9 +270,9 @@
 |-------|----------------|-------------------------------|---------|--------------|
 | ES (Hiszpański) | 39,520/53,586 | 73.75% | 2,607 | 0 |
 | PL (Polski) | 23,174/53,586 | 43.25% | 1,854 | 0 |
-| RU (Rosyjski) | 18,445/53,586 | 34.42% | 3,060 | 0 |
+| RU (Rosyjski) | 18,463/53,586 | 34.45% | 3,057 | 0 |
 | FR (Francuski) | 17,709/53,586 | 33.05% | 4,057 | 0 |
-| RO (Rumuński) | 9,852/53,586 | 18.39% | 2,483 | 0 |
+| RO (Rumuński) | 9,860/53,586 | 18.40% | 2,481 | 0 |
 | ZH_TW (ZH_TW) | 7,776/53,586 | 14.51% | 9,749 | 2,155 |
 | IT (Włoski) | 5,072/53,586 | 9.47% | 2,424 | 0 |
 | SR (SR) | 5,030/53,586 | 9.39% | 2,495 | 0 |
@@ -290,44 +290,44 @@
 | ML (ML) | 4,012/53,586 | 7.49% | 3,704 | 0 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** SV - Szwedzki - Serwer
-- **Plik JSON:** npc.json
+- **Folder:** RU - Rosyjski - Serwer
+- **Plik JSON:** monsters.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- <mumbles> → <mumbles> (npc.arkulius.voice_3)
-- No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15  → No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 1 (npc.barnabas_dee.say_5)
-- npc.bozo.mission_36_t1 → npc.bozo.mission_36_t1 (npc.bozo.stdmod_116)
-- npc.bozo.mission_12_t1 → npc.bozo.mission_12_t1 (npc.bozo.stdmod_92)
-- Zzz... → Zzz... (npc.budrik.say_9)
-- SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!! → ¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !! (npc.captain_haba_open_sea.larboard_1)
-- IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!! → ¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!! (npc.captain_haba_open_sea.say_3)
-- SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!! → ¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!! (npc.captain_haba_open_sea.starboard_1)
-- LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!! → ¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!! (npc.captain_haba_open_sea.straight_3)
-- SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!! → ¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!! (npc.captain_haba_open_sea.straight_5)
-- <gulp gulp> → <gulp gulp> (npc.cruleo.voice_1)
-- <nods> → <nods> (npc.elliott.greet_msg_1)
-- Done. → Done. (npc.gnomus.say_11)
-- Done. → Done. (npc.gnomus.say_13)
-- Done. → Done. (npc.gnomus.say_15)
-- You bought {{}} {}x for {} {Bar of Gold(s)}! → ¡Compraste {{}} {}x por {} {Bar of Gold(s)}! (npc.jeronimo.say_3)
-- We hauled our explosives down there - and I mean ALL our explosives. Dangerous?  → Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosi (npc.lardoc_bashsmite.multi_3)
-- We hauled our explosives down there - and I mean ALL our explosives. Dangerous?  → Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosi (npc.lardoc_bashsmite.multi_9)
-- Done. → Done. (npc.lardoc_bashsmite.say_10)
-- Done. → Done. (npc.lardoc_bashsmite.say_12)
+- Hirintror → Hirintror (monster.hirintror.name)
+- Hirintror → Hirintror (monster.hirintror.desc)
+- Sir Valorcrest → Sir Valorcrest (monster.sir_valorcrest.name)
+- Sir Valorcrest → Sir Valorcrest (monster.sir_valorcrest.desc)
+- Draptor → Draptor (monster.draptor.name)
+- Chayenne → Chayenne (monster.chayenne.name)
+- Chayenne → Chayenne (monster.chayenne.desc)
+- Zulazza the Corruptor → Zulazza The Corruptor (monster.zulazza_the_corruptor.name)
+- Zulazza the Corruptor → Zulazza The Corruptor (monster.zulazza_the_corruptor.desc)
+- Orshabaal → Orshabaal (monster.orshabaal.name)
+- Orshabaal → Orshabaal (monster.orshabaal.desc)
+- White Pale → White Pale (monster.white_pale.name)
+- White Pale → White Pale (monster.white_pale.desc)
+- The Welter → The Welter (monster.the_welter.name)
+- The Welter → The Welter (monster.the_welter.desc)
+- Morgaroth → Morgaroth (monster.morgaroth.name)
+- Morgaroth → Morgaroth (monster.morgaroth.desc)
+- Ferumbras → Ferumbras (monster.ferumbras.name)
+- Ferumbras → Ferumbras (monster.ferumbras.desc)
+- Furyosa → Furyosa (monster.furyosa.name)
 
 ### 🚫 Raporty strażnika jakości
-- Raporty strażnika jakości: **2334**  
+- Raporty strażnika jakości: **2337**  
 - Raporty blokad: **0**  
-- Widoczne raporty 'nie mogę przetłumaczyć': **2272**
+- Widoczne raporty 'nie mogę przetłumaczyć': **2275**
 
 ### 🌐 Globalne info wszystkich języków
-- **Pokrycie globalne:** **10.09%** (281,126/2,786,472)
-- **Kopie EN (łącznie):** **166,789**
+- **Pokrycie globalne:** **10.09%** (281,152/2,786,472)
+- **Kopie EN (łącznie):** **166,784**
 - **Braki kluczy (łącznie):** **2,155**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **49**, miss **3**, hit-rate **94.2%**
+- **Cache STATUSPY (per-file):** hit **1973**, miss **3**, hit-rate **99.8%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -341,9 +341,9 @@
 |-------|--------|----------|----------|------------|
 | ES | 37,044/49,731 | 74.5% | 2,476/3,855 | 64.2% |
 | PL | 20,527/49,731 | 41.3% | 2,647/3,855 | 68.7% |
-| RU | 15,720/49,731 | 31.6% | 2,725/3,855 | 70.7% |
+| RU | 15,738/49,731 | 31.6% | 2,725/3,855 | 70.7% |
 | FR | 15,162/49,731 | 30.5% | 2,547/3,855 | 66.1% |
-| RO | 9,758/49,731 | 19.6% | 94/3,855 | 2.4% |
+| RO | 9,766/49,731 | 19.6% | 94/3,855 | 2.4% |
 | ZH_TW | 7,763/49,731 | 15.6% | 13/3,855 | 0.3% |
 | IT | 5,022/49,731 | 10.1% | 50/3,855 | 1.3% |
 | SR | 4,980/49,731 | 10.0% | 50/3,855 | 1.3% |
@@ -355,25 +355,25 @@
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-16T21:09:46.569047Z → 2026-02-16T22:09:46.569047Z) |
-| Cykle | **164** (TŁUMACZENIE=164, PRE_MIGRATION=0) |
+| Okno | **1.0h** (2026-02-16T21:10:52.559523Z → 2026-02-16T22:10:52.559523Z) |
+| Cykle | **158** (TŁUMACZENIE=158, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
-| Odrzucone (strażnik jakości) % | **40.5%** |
-| Cykle bez postępu % | **1.6%** |
-| Przepustowość (kluczy/h) | **3149.0 kluczy/h** |
-| Podejrzane tłumaczenia | **33065** |
-| Najgorsze cele (strażnik) | pl/items.json (gf=1971), pl/npc.json (gf=1162), pl/server.json (gf=172), pl/monsters.json (gf=144), ro/monsters.json (gf=119) |
+| Odrzucone (strażnik jakości) % | **40.8%** |
+| Cykle bez postępu % | **0.8%** |
+| Przepustowość (kluczy/h) | **3146.0 kluczy/h** |
+| Podejrzane tłumaczenia | **29145** |
+| Najgorsze cele (strażnik) | pl/items.json (gf=1971), pl/npc.json (gf=1162), ro/monsters.json (gf=154), pl/monsters.json (gf=144), ru/monsters.json (gf=102) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 29s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-16T22:09:17.843424Z
+> Świeżość: 8s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-16T22:10:45.503006Z
 
-- **Ostatni audyt:** SLOW_MODE | 17 issue(s) / 100 entries | 2026-02-16T22:09:17.843424Z
-- **Top 5 typów problemów:** suspicious_rejected_critical=143, suspicious_log_critical=101, suspicious_log_high=99, suspicious_rejected_high=57, identical_to_en_exempt=26
-- **Języki o najsłabszej jakości:** ru(60.1, issues=10725), ro(60.3, issues=8481), es(61.4, issues=155687), it(62.3, issues=4698), tl(64.2, issues=466)
+- **Ostatni audyt:** SLOW_MODE | 41 issue(s) / 100 entries | 2026-02-16T22:10:45.503006Z
+- **Top 5 typów problemów:** suspicious_rejected_critical=148, suspicious_log_high=125, suspicious_log_low=53, suspicious_rejected_high=52, identical_to_en=24
+- **Języki o najsłabszej jakości:** ru(59.9, issues=10897), ro(60.0, issues=8636), it(61.7, issues=4790), es(63.2, issues=155704), tl(64.2, issues=466)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -392,13 +392,13 @@
 ⚠️ **TR**: jakość 78%, 1834 problemów
 ⚠️ **PL**: jakość 83%, 115302 problemów
 ⚠️ **AZ**: jakość 70%, 1417 problemów
-⚠️ **ES**: jakość 61%, 155687 problemów
+⚠️ **ES**: jakość 63%, 155704 problemów
 ⚠️ **PT**: jakość 74%, 1991 problemów
 ⚠️ **FR**: jakość 65%, 2470 problemów
-⚠️ **IT**: jakość 62%, 4698 problemów
-⚠️ **RU**: jakość 60%, 10725 problemów
+⚠️ **IT**: jakość 62%, 4790 problemów
+⚠️ **RU**: jakość 60%, 10897 problemów
 ⚠️ **NL**: jakość 74%, 649 problemów
-⚠️ **SV**: jakość 81%, 2300 problemów
+⚠️ **SV**: jakość 85%, 2305 problemów
 
 ---
 
@@ -413,7 +413,7 @@
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
 | Worker | 🟢 DZIAŁA | Cykl #84 |
-| Heartbeat | 8s temu | 2026-02-16T22:09:39Z |
+| Heartbeat | 8s temu | 2026-02-16T22:10:45Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -446,7 +446,7 @@
 
 > **Aktualna faza:** AUTO_TRANSLATE  
 > **Aktualna kategoria:** ru
-
+> **Tryb:** 🔒 TRANSLATIONS_ONLY STRICT (bez dodawania nowych kluczy)
 
 ### 🔄 Faza 1: 🎮 Canary Server
 
@@ -513,33 +513,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T22:09:39Z
+> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-16T22:10:45Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #    84 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 DZIAŁA                                 │
-│ Tryb:      🤖 AUTO_TRANSLATE (heartbeat_tick)        │
+│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end) | STRICT    │
 │ Kategoria: 📁 RU                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: monsters.json                                           │
-│ Postęp: 0/50 keys                                             │
-│ Info: auto translate in progress                              │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-16T22:09:39Z           │
+│ ❤️ Heartbeat: 2026-02-16T22:10:45Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-16 22:10:42 | AUTO_TRANSLATE:heartbeat_tick | it | ok | monsters.json
+- 2026-02-16 22:10:41 | AUTO_TRANSLATE:parallel_start | it | ok | monsters.json
+- 2026-02-16 22:10:09 | AUTO_TRANSLATE:heartbeat_tick | ro | ok | monsters.json
+- 2026-02-16 22:10:09 | AUTO_TRANSLATE:parallel_start | ro | ok | monsters.json
+- 2026-02-16 22:10:06 | AUTO_TRANSLATE:auto_done | ru | ok | monsters.json
 - 2026-02-16 22:09:39 | AUTO_TRANSLATE:heartbeat_tick | ru | ok | monsters.json
-- 2026-02-16 22:09:38 | AUTO_TRANSLATE:auto_start | ru | ok | monsters.json
-- 2026-02-16 22:09:03 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
-- 2026-02-16 22:08:28 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
-- 2026-02-16 22:08:28 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
-- 2026-02-16 22:08:08 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | npc.json
 
 ---
 
@@ -552,7 +552,7 @@
 
 | Wskaźnik | Wartość | Cel | Status |
 |-----|---------|--------|--------|
-| Tłumaczeń netto | **77,822** | — | 📊 |
+| Tłumaczeń netto | **77,880** | — | 📊 |
 | Adaptacyjna paczka | batch=6, gf_rate=36.4%, reason=decrease_high_fail_rate=36.4% | odrzucenia <5% → zwiększ | 📊 |
 | Przepustowość (okno) | 2,070 kluczy / 46 wpisów | >50/h | 📊 |
 
@@ -561,8 +561,11 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-16 22:09:46
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-16 22:10:52
 
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [it] → ok (translated+50, skipped+0) — parallel lang=it file=monsters.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ro] → ok (translated+15, skipped+0) — parallel lang=ro file=monsters.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ru] → warn (files+1, translated+29, skipped+0) — lang=ru file=monsters.json strict_skipped_done=927 guard_fail=21 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+80, skipped+0) — parallel lang=es file=questlog.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+18, skipped+0) — lang=pl file=cpp.json strict_skip missing_file=0 missing_key=2 skipped_done=859 strict_skipped_done=859 guard_fail=9 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+7, skipped+0) — parallel lang=es file=books.json
@@ -570,26 +573,23 @@
 - 🔧 MIGRATION: zakończono kategorię [otclient_src] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [otclient_src] → ok (keys+0) — no new data
 - 🔧 MIGRATION: mini-batch [otclient_src] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
 
 
 ## 📅 Dziś (2026-02-16)
 
 | Metryka | Wartość |
 |---------|---------|
-| ✅ Przetłumaczono | **12,594** kluczy |
+| ✅ Przetłumaczono | **12,688** kluczy |
 | ⏭️ Pominięte | 0 |
-| 🔁 Cykli | 83 |
-| ❌ Błędów | 111 |
+| 🔁 Cykli | 84 |
+| ❌ Błędów | 113 |
 | 🌍 Aktywnych języków | 7 |
-| 🏆 TOP 5 | **ES** (2,284), **IT** (1,888), **SV** (1,878), **SR** (1,859), **RU** (1,752) |
+| 🏆 TOP 5 | **ES** (2,284), **IT** (1,938), **SV** (1,878), **SR** (1,859), **RU** (1,781) |
 | 📊 Porównanie | brak danych z wczoraj |
 
 ## 📆 Ten tydzień (7 dni)
 
-> Suma tygodnia: **92,500** kluczy
+> Suma tygodnia: **92,594** kluczy
 
 | Dzień | Wykres | Przetłumaczono | Cykli |
 |-------|--------|---------------|-------|
@@ -599,7 +599,7 @@
 | 2026-02-13 | ██████████████████████████████████████████████████ | 46,073 | 471 |
 | 2026-02-14 | ██████████████████████████████████████████████████ | 32,484 | 49 |
 | 2026-02-15 | ░ | 0 | 0 |
-| 2026-02-16 | ██████████████████████████████████████████████████ | 12,594 | 83 |
+| 2026-02-16 | ██████████████████████████████████████████████████ | 12,688 | 84 |
 
 ---
 
@@ -915,7 +915,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-16 22:09:46  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-16 22:10:52  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

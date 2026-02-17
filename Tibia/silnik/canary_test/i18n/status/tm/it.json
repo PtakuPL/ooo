@@ -36166,5 +36166,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:42:43.272674Z"
+  },
+  "quests.secret_library.found_item_lower": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Hai trovato un {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:09.055498Z"
+  },
+  "quests.soul_war.taint_gained": {
+    "src_hash": "138a4a527628e1ac82b2463b602bcbd2",
+    "text": "Hai ottenuto {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:09.060064Z"
+  },
+  "quests.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Le contaminazioni del tuo Goshnar sono state ripristinate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:09.060483Z"
+  },
+  "quests.soul_war.taints_reset_timeout": {
+    "src_hash": "bb82c84747742951025a074765dee261",
+    "text": "Le contaminazioni del tuo Goshnar sono state ripristinate. Non hai completato la missione in 14 giorni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:09.061107Z"
+  },
+  "quests.threatened_dreams.you_are_not_on_that_mission": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:09.066819Z"
+  },
+  "quests.rookie_guard.m10.not_crypt": {
+    "src_hash": "35806744f6d142cb8f7a6a66427f65d9",
+    "text": "Questa non è la strada per la cripta. Andate a sud-ovest per raggiungere il cimitero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:12.967364Z"
+  },
+  "quests.rookie_guard.m10.sarcophagus": {
+    "src_hash": "2b6990f31c3b6910b0745f3d72b72720",
+    "text": "Questo sarcofago sembra speciale. Si dice che i sarcofagi conservino la carne più a lungo delle normali bare: forse sei fortunato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:12.967918Z"
+  },
+  "quests.rookie_guard.m11.wasp_tower": {
+    "src_hash": "e55b94869184f9b0d4ea4fcd017c20ba",
+    "text": "Hai trovato la torre delle vespe. Uccidi una vespa e usa la fiaschetta che hai ricevuto da Vascalir sul suo cadavere per recuperare parte del suo veleno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:12.968430Z"
+  },
+  "quests.rookie_guard.m11.wasps_nest": {
+    "src_hash": "d39e080a30dc5e5fa81ee9ec692e0118",
+    "text": "Attraversate il ponte a ovest e andate a sud per raggiungere il nido delle vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:15.566643Z"
+  },
+  "quests.rookie_guard.m12.approaching": {
+    "src_hash": "ceb1407d6af7b56efe088971f0bab81b",
+    "text": "Attenzione... ti stai avvicinando alla stanza di Kraknaknork. Una volta entrato, avrai solo 5 minuti per ucciderlo prima che ti butti fuori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:15.567158Z"
+  },
+  "quests.rookie_guard.m12.chest_items": {
+    "src_hash": "ad45b9bd37d7566a86cf5513f140bd29",
+    "text": "Questo baule dovrebbe contenere tutto il necessario per infiltrarsi nella fortezza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:15.567540Z"
+  },
+  "quests.rookie_guard.m12.distraction_bone_1": {
+    "src_hash": "982a4987dd4f5f2f1dab1b667a90610a",
+    "text": "Non puoi sperare di oltrepassare questa guardia. Forse qualche distrazione aiuterebbe? Potresti provare a usare l'osso carnoso su di lui...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:15.568025Z"
+  },
+  "quests.rookie_guard.m12.energy_barrier": {
+    "src_hash": "59b91fb81cfc924a472db48066e96b1a",
+    "text": "Kraknaknork mantiene forti barriere energetiche. C'è solo un modo per disabilitarli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:15.568464Z"
+  },
+  "quests.rookie_guard.m12.guard_pass": {
+    "src_hash": "ba93d5ee5a7d338995fd8d4402f8278c",
+    "text": "Questa guardia sicuramente non ti lascerà passare. Muoviti furtivamente nella fortezza per trovare un modo per travestirti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:18.167974Z"
+  },
+  "quests.rookie_guard.m12.interior": {
+    "src_hash": "0c8af191ec0630b1c630530a474e5e0b",
+    "text": "Sei riuscito a raggiungere l'interno della fortezza degli orchi. Preparati allo scontro e cerca il calderone della zuppa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:18.168486Z"
+  },
+  "quests.rookie_guard.m12.items_infiltrate": {
+    "src_hash": "7d1f6fbf68d2a7a08c4093307f1ad8fb",
+    "text": "Questi oggetti dovrebbero essere ciò di cui hai bisogno per infiltrarti nella fortezza. Torna vicino al nido delle vespe e da lì cammina verso sud.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:18.169060Z"
+  },
+  "quests.rookie_guard.m12.kitchen": {
+    "src_hash": "6b1b898af80c38869a62267a419b1466",
+    "text": "A quanto pare sei in cucina. Se trovi un grosso calderone, usaci sopra la fiaschetta di veleno per vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:18.169527Z"
+  },
+  "quests.rookie_guard.m12.lever_barrier": {
+    "src_hash": "517a365908f493329e1f686aa921d23b",
+    "text": "La barriera energetica a sud è temporaneamente scomparsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:18.169898Z"
+  },
+  "quests.rookie_guard.m12.no_poison_yet": {
+    "src_hash": "4e1417b973e1a5704aa0563eb141e17f",
+    "text": "Non hai ancora usato il veleno sulla zuppa di Kraknaknork. Non provare a combatterlo prima, altrimenti ti ucciderà sicuramente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:20.781560Z"
+  },
+  "quests.rookie_guard.m12.orc_break": {
+    "src_hash": "4dc27b230216ab6553d9993600fefdbf",
+    "text": "Questo orco ti ha voltato le spalle e ovviamente si sta prendendo una pausa. Usa il mattarello su di lui per metterlo KO!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:20.782049Z"
+  },
+  "quests.rookie_guard.m12.sneaked_in": {
+    "src_hash": "9c7ac86a98efc8c0c4fce6b33e774143",
+    "text": "Ti sei intrufolato nella fortezza degli orchi. Attento adesso, non uscire più.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:20.782624Z"
+  },
+  "quests.rookie_guard.m12.trap_ready": {
+    "src_hash": "3a644ca296978982bc5bf37f75bb03b0",
+    "text": "Hai pronto la trappola per tarantole? Potrebbe essere necessario usarlo presto...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:20.783007Z"
+  },
+  "quests.rookie_guard.missions.bank_academy": {
+    "src_hash": "970c5993868a32eadf2faf5c2e83756d",
+    "text": "La banca è sotto l'accademia. Andate a nord e scendete le scale e poi a destra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:20.783457Z"
+  },
+  "quests.rookie_guard.missions.bank_paulie": {
+    "src_hash": "6b624ca2502c466e5008873f90c2ae19",
+    "text": "Vai a destra per trovare la banca e parla con Paulie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:23.411726Z"
+  },
+  "quests.rookie_guard.missions.entering_orcland": {
+    "src_hash": "888b5c565f98525bfd7f484fd4d224ea",
+    "text": "Stai entrando nell'Orcland.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:23.412302Z"
+  },
+  "quests.rookie_guard.missions.graveyard_east": {
+    "src_hash": "d924be505bf333ab308b1b53d717888f",
+    "text": "Seguite la strada verso est e andate a sud per raggiungere il cimitero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:23.413099Z"
+  },
+  "quests.rookie_guard.missions.hallway_library": {
+    "src_hash": "3fbc2a3f449877544b3501c3dc089ba6",
+    "text": "Attraversa la porta nord e segui i corridoi per trovare il caveau della biblioteca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:23.413925Z"
+  },
+  "quests.rookie_guard.missions.hyacinth_east": {
+    "src_hash": "fe8257d7dace20157b7b7b0e21d01a59",
+    "text": "Segui il sentiero verso est per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:23.414735Z"
+  },
+  "quests.rookie_guard.missions.library_vault": {
+    "src_hash": "8844ad0528ff2e760b413c4065011ee2",
+    "text": "Il caveau della biblioteca è sotto l'accademia. Vai a nord e scendi diverse scale finché non trovi una porta di missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:26.319895Z"
+  },
+  "quests.rookie_guard.missions.no_bag_yet": {
+    "src_hash": "127895e14ee90d1419f6d99e5d597887",
+    "text": "Non hai ancora la borsa con gli oggetti. Apri la porta nel seminterrato dell'accademia a sinistra di Paulie per prenderli!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:26.320425Z"
+  },
+  "quests.rookie_guard.missions.not_crypt_south": {
+    "src_hash": "a9007bd061d7c2e1ec6784d4454d5061",
+    "text": "Questa non è la strada per la cripta. Andate a sud per raggiungere il cimitero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:26.320865Z"
+  },
+  "quests.rookie_guard.missions.not_hyacinth_south": {
+    "src_hash": "62f6c9aca08d7d63d85194cd0d78fc51",
+    "text": "Questa non è la strada per Hyacinth. Rimani sul sentiero un po' più a sud per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:26.321400Z"
+  },
+  "quests.rookie_guard.missions.not_tarantula_nw": {
+    "src_hash": "66aa34dbdc1a9e2425eb33eba5550813",
+    "text": "Questa non è la strada per la tana della tarantola. Andate a nord-ovest e salite la piccola rampa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:26.321882Z"
+  },
+  "quests.rookie_guard.missions.not_troll_north": {
+    "src_hash": "9719068dca76f1d7df2164471b7c3c53",
+    "text": "Questa non è la strada per le caverne dei troll. Seguite il sentiero verso nord oltre la collina per raggiungerli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:29.960848Z"
+  },
+  "quests.rookie_guard.missions.not_wasps_north": {
+    "src_hash": "59294ed775b60dfcddea634a22e66d26",
+    "text": "Questa non è la strada per la tana delle vespe. Scegli il percorso a nord per raggiungerlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:29.961315Z"
+  },
+  "quests.rookie_guard.missions.orc_fortress_path": {
+    "src_hash": "cd0bb23122055e63b4c1e79ad8fa8d9b",
+    "text": "Seguite il sentiero a nord, attraversate il ponte a sud e camminate verso ovest per raggiungere la fortezza degli orchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:29.961770Z"
+  },
+  "quests.rookie_guard.missions.orc_west": {
+    "src_hash": "e9b535dc25a0771d44f5aa712d554844",
+    "text": "Seguite il sentiero verso ovest per raggiungere la fortezza degli orchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:29.962188Z"
+  },
+  "quests.rookie_guard.missions.road_main": {
+    "src_hash": "80538ccded69460ca147a0f2eb530c73",
+    "text": "Questa strada è l'accesso principale del villaggio. Potresti voler finire prima i tuoi affari qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:29.962699Z"
+  },
+  "quests.rookie_guard.missions.tarantula_stairs": {
+    "src_hash": "4599c6cf7b47e4cbfd70383bc69a16e6",
+    "text": "Cammina verso nord e scendi le scale per raggiungere la tana della tarantola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:33.197888Z"
+  },
+  "quests.rookie_guard.missions.troll_caves": {
+    "src_hash": "29e46fcdd186a137a97b31af10a887bb",
+    "text": "Seguite il sentiero a nord oltre la collina per raggiungere le caverne dei troll.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:33.198348Z"
   }
 }

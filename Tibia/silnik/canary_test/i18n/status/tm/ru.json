@@ -24766,5 +24766,157 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:43:18.245902Z"
+  },
+  "quests.fathers_burden.corpse_say_2": {
+    "src_hash": "60836c2f7f62f4b73a8624d6d91f6176",
+    "text": "Сухожилия Хеони",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:39.585616Z"
+  },
+  "quests.ferumbras_ascension.sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:39.585926Z"
+  },
+  "quests.ferumbras_ascension.you_cannot_use_this_lever_again": {
+    "src_hash": "e9cc8cc8a90ff0e0d86a9099d4d547e1",
+    "text": "Вы не сможете использовать этот рычаг снова.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:39.586502Z"
+  },
+  "quests.ferumbras_ascension.you_have_found_a_bag_but": {
+    "src_hash": "4b9980d4ca695198be91b754c6456724",
+    "text": "Вы нашли сумку, но вам некуда ее взять.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:39.586988Z"
+  },
+  "quests.first_dragon.circle_trees": {
+    "src_hash": "21fde76d216da6a6580a184dc6654f83",
+    "text": "Вы входите в круг деревьев и цветов. Посещая это священное место, вы проникаетесь силой природы и растений.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:42.196359Z"
+  },
+  "quests.first_dragon.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Вы нашли {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:42.196676Z"
+  },
+  "quests.first_dragon.oasis": {
+    "src_hash": "fdc609328c42192493089239ebaeef98",
+    "text": "Вы входите в прекрасный оазис. Посещая это священное место, вы проникаетесь силой воды, приносящей жизнь в пустыню.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:42.197271Z"
+  },
+  "quests.first_dragon.suntower": {
+    "src_hash": "8ddfbb42d82b5fb668796bec61969f55",
+    "text": "Вы вошли в солнечную башню Аб'дендриэля. Посетив это священное место, вы наполнитесь силой животворящего солнца.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:42.197847Z"
+  },
+  "quests.forgotten_knowledge.diamond_entities": {
+    "src_hash": "03a761850a7fd9fcd58c8fa2724f8dc0",
+    "text": "5 алмазных сущностей потребляют слишком много чистой энергии для пробуждения космической камеры, она снова успокоится через 10 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:42.198504Z"
+  },
+  "quests.forgotten_knowledge.golden_entities": {
+    "src_hash": "283b3f9291af327714771b625dd51c2b",
+    "text": "5 золотых сущностей потребляют слишком много чистой энергии, чтобы космическая камера пробудилась, и через 10 минут она снова успокоится.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:46.032864Z"
+  },
+  "quests.forgotten_knowledge.lantern_glow": {
+    "src_hash": "139f7a4e3b342775d96589e84d10d51b",
+    "text": "Когда вы начнете полировать фонарь, он начнет светиться потусторонним светом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:46.033352Z"
+  },
+  "quests.forgotten_knowledge.lantern_has_key": {
+    "src_hash": "6feb464965de17dfa29795637465ef84",
+    "text": "В свете призрачного серебряного фонаря вы обнаруживаете невидимую иначе дверь. Если у вас есть подходящий ключ, вы можете пройти.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:46.033964Z"
+  },
+  "quests.forgotten_knowledge.lantern_no_key": {
+    "src_hash": "3ff192e8c3b476ec20fcd8afd0a221b5",
+    "text": "В свете призрачного серебряного фонаря вы обнаруживаете невидимую иначе дверь. Но у вас нет ключа, чтобы открыть его.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:46.034677Z"
+  },
+  "quests.forgotten_knowledge.tree_destruction": {
+    "src_hash": "205b8fa5e3fee791d97de1989d846b4b",
+    "text": "Уничтожение дерева высвобождает {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:46.035060Z"
+  },
+  "quests.globalevents_grimvale_feroxa.broadcast_1": {
+    "src_hash": "bdc7c1a2cc03b08531c0d717935d084e",
+    "text": "Grimvale тонет в существах-оборотнях, когда полная луна достигает апогея и возвращается древнее зло.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:48.899187Z"
+  },
+  "quests.grave_danger.defiled": {
+    "src_hash": "20009c822cba900133cfc82c5ba6d30a",
+    "text": "Эта могила уже осквернена, а рыцарь-лич ушел! Здесь вы ничего не сможете сделать.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:48.899731Z"
+  },
+  "quests.grave_danger.sanctified": {
+    "src_hash": "6ecef847b37c47541664c96ed4ca5806",
+    "text": "Эта могила теперь освящена и безопасна!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:48.900108Z"
+  },
+  "quests.grave_danger.wait_challenge": {
+    "src_hash": "8f220e1370f7c9572644115a7ec58676",
+    "text": "Вам нужно подождать %s, прежде чем снова пытаться бросить вызов %s!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:48.900739Z"
+  },
+  "quests.gravedigger.blood_msg_1": {
+    "src_hash": "1dbdb527d858d195b09b6758127751a0",
+    "text": "Кровь во флаконе темно-рубинового цвета.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:44:48.901141Z"
   }
 }

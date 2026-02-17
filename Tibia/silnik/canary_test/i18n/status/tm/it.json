@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:42:17.228924Z"
+    "updated_at": "2026-02-17T02:04:40.078031Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -37518,5 +37518,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:03:28.212427Z"
+  },
+  "spell.lizard_gate_guardian_summon.name": {
+    "src_hash": "7a96249ec08befa9e27107b8c56de262",
+    "text": "evocazione del guardiano del cancello della lucertola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:42.651953Z"
+  },
+  "spell.azerus_skill_reducer_2.name": {
+    "src_hash": "aab7ce88a95b460ce06e14c025b13979",
+    "text": "riduttore di abilità azerus 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:45.696696Z"
+  },
+  "spell.frost_dragon_paralyze_1.name": {
+    "src_hash": "93d1f160fcc199b75d281782ae91df7a",
+    "text": "paralisi del drago del gelo 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:45.696971Z"
+  },
+  "spell.ghazbaran_skill_reducer_2.name": {
+    "src_hash": "edb6c3cd04556245eb946083c0d81691",
+    "text": "riduttore di abilità di Ghazbaran 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:45.697262Z"
+  },
+  "spell.werewolf_skill_reducer.name": {
+    "src_hash": "03190248daffc0cb119d91617b8b0ce0",
+    "text": "riduttore di abilità del lupo mannaro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:45.697545Z"
+  },
+  "spell.verminor_summon.name": {
+    "src_hash": "e5609bfa4280db95f461c539f5c7b395",
+    "text": "evocazione di parassiti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:48.311116Z"
+  },
+  "spell.hell_hole_summon.name": {
+    "src_hash": "0d423b336d18a0eec44f0d28d15dcee7",
+    "text": "convocazione nel buco infernale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:48.311390Z"
+  },
+  "spell.fury_skill_reducer_1.name": {
+    "src_hash": "2ff08668178e60437b2a9914d85524cf",
+    "text": "riduttore di abilità furia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:48.311651Z"
+  },
+  "spell.mitmah_vanguard_hugeblackring.name": {
+    "src_hash": "56880b3fbd8eb63890fb11cf037e43ce",
+    "text": "enormeanello nero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:48.311853Z"
+  },
+  "spell.choking_fear_paralyze.name": {
+    "src_hash": "1ed18b5dd8a0a95f82c3c83e446ecf40",
+    "text": "la paura soffocante paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:48.312107Z"
+  },
+  "spell.gnomevil_drunk.name": {
+    "src_hash": "1cbe27586721c72d43d8289c2440b878",
+    "text": "gnomo malvagio ubriaco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:51.936282Z"
+  },
+  "spell.mahrdis_soulfire.name": {
+    "src_hash": "57a8f6368f7b20867c4fb5d6da7219f0",
+    "text": "fuoco dell'anima di mahrdis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:51.936548Z"
+  },
+  "spell.anomaly_break.name": {
+    "src_hash": "aa47d0a08e52fc6415bf7e86324537fb",
+    "text": "rottura anomala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:51.936748Z"
+  },
+  "spell.apprentice_sheng_summon.name": {
+    "src_hash": "c3b6b41da9d83e9bdedc815a926295c0",
+    "text": "convocazione dell'apprendista sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:51.936998Z"
+  },
+  "spell.fear.name": {
+    "src_hash": "eb88d7636980738cd0522ea69e212905",
+    "text": "Paura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:51.937189Z"
+  },
+  "spell.werewolf_summon.name": {
+    "src_hash": "244197315c1b0a4257f4ba14ac9b5e26",
+    "text": "evocazione del lupo mannaro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:55.523369Z"
+  },
+  "spell.betrayed_wraith_paralyze.name": {
+    "src_hash": "64f99c356a8dc25fc514e7d761f62d3b",
+    "text": "lo spettro tradito paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:55.523639Z"
+  },
+  "spell.morgaroth_paralyze.name": {
+    "src_hash": "e9b3629ccd8c10b74737a685a57a243f",
+    "text": "i morgaroth paralizzano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:55.523869Z"
+  },
+  "spell.deathstrike_manadrain.name": {
+    "src_hash": "01a2f69ea46ac9c62aa971a84b48a6ce",
+    "text": "manadrain di Deathstrike",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:55.524099Z"
+  },
+  "spell.plagueroot_skill_reducer.name": {
+    "src_hash": "45369f9c11a15a1b5131e3d0bd52d9ab",
+    "text": "riduttore di abilità peste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:59.396669Z"
+  },
+  "spell.slime_puddle_paralyze.name": {
+    "src_hash": "2ecc0bb85637af2462ceebd3b030896a",
+    "text": "la pozzanghera di melma paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:59.396951Z"
+  },
+  "spell.morgaroth_skill_reducer_1.name": {
+    "src_hash": "3611981e0ab9f12ef69a7bfdad81a978",
+    "text": "riduttore di abilità morgaroth 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:59.397238Z"
+  },
+  "spell.lord_azaram_wave.name": {
+    "src_hash": "3fb0877e9780427f3d9a00e7f1de9b1c",
+    "text": "Signore Azaram onda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:59.397467Z"
+  },
+  "spell.tanjis_skill_reducer.name": {
+    "src_hash": "50e236264035970b6b31ee6f43f4a2dc",
+    "text": "riduttore di abilità tanji",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:59.397729Z"
+  },
+  "spell.dwarf_henchman_drown.name": {
+    "src_hash": "a48d4381e55d438bc5e5ca8f893f17c4",
+    "text": "lo scagnozzo nano annega",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:05:02.012065Z"
+  },
+  "spell.icicle_heal.name": {
+    "src_hash": "b15d568c4f6dcc60c39558970adda29a",
+    "text": "il ghiacciolo guarisce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:05:02.012283Z"
+  },
+  "spell.thunderstorm_ring.name": {
+    "src_hash": "868d659ece6a15bb01146cc6875c2d3a",
+    "text": "anello del temporale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:05:02.012507Z"
+  },
+  "spell.azerus_soulfire_1.name": {
+    "src_hash": "8c7e3e4f4cf2879abae2002e3f4f2462",
+    "text": "azerus fuoco dell'anima 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:05:02.013253Z"
   }
 }

@@ -25286,5 +25286,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:58:15.880244Z"
+  },
+  "data.otservbr.global.npc.anerui.L73.1489": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Аша Трази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:49.987023Z"
+  },
+  "data.otservbr.global.npc.brasith.L60.1212": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Аша Трази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:49.998058Z"
+  },
+  "data.otservbr.global.npc.brasith.L61.1213": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Аша Трази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:49.998432Z"
+  },
+  "data.otservbr.global.npc.eroth.L103.511": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Аша Трази.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.024401Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L10.1682": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.187258Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.glasshoneyfun.L11.1669": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.188391Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peelerfun.L10.1657": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.189185Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.pickenchanted.L10.1665": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.189681Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissorsfun.L280.1680": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.190687Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L65.1784": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.202588Z"
+  },
+  "game.trade.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.227047Z"
+  },
+  "server.game.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.228262Z"
+  },
+  "server.ioprey.msg_10": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "При обработке вашего действия произошла ошибка. Пожалуйста, попробуйте снова открыть окно добычи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.230366Z"
+  },
+  "server.ioprey.msg_11": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Это существо уже выбрано в другом слоте.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.230811Z"
+  },
+  "server.ioprey.msg_13": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "У вас нет активных монстров в этом слоте добычи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.231354Z"
+  },
+  "server.ioprey.msg_9": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "У вас уже есть активный монстр в этом слоте добычи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:50.233245Z"
   }
 }

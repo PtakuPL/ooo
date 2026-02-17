@@ -30814,5 +30814,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:59:03.087514Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L256.315": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Sper să ne vedem curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:54.999149Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L20.1780": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Nepetrificați țipătul unui banshee lângă cristalul rău, cu urechile protejate de ceară. Astfel, artefactul nenorocit este distrus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.161793Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Ointment.L14.1777": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Nepetrificați țipătul unui banshee lângă cristalul rău, cu urechile protejate de ceară. Astfel, artefactul nenorocit este distrus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.163391Z"
+  },
+  "data.otservbr.global.scripts.quests.the.djinn.war.quest.action.water.fountain.L10.1917": {
+    "src_hash": "0e2d063e230967a1983dd33849d7b89c",
+    "text": "Ai gasit o lacrima de daraman.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.163960Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.hidden.note.L9.2170": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Ai găsit o bucată de hârtie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.172830Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.outfit.L11.2166": {
+    "src_hash": "6f787d1387c90834af3d9b663a8159d1",
+    "text": "Ți-ai câștigat noua ținută și poți părăsi camera de recompense acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.173333Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.outfit.L13.2167": {
+    "src_hash": "01df51775e4238428c8c068d2cc0b692",
+    "text": "Ai luat deja ținuta, întreabă despre misiune pentru Chrak.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.173938Z"
+  },
+  "data.otservbr.global.scripts.quests.threatened.dreams.action.poacher.book.L9.2266": {
+    "src_hash": "6ad778942f77ae1b95d6234ff0605923",
+    "text": "Puneți cartea pe masă, sperăm că braconierii o vor descoperi curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.186398Z"
+  },
+  "data.otservbr.global.scripts.quests.threatened.dreams.action.poacher.notes.L7.2263": {
+    "src_hash": "4bc657452622d096ce45741102787b03",
+    "text": "Ați găsit însemnări ale unui braconnier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.186918Z"
+  },
+  "data.otservbr.global.scripts.quests.threatened.dreams.action.whelp.fur.L13.2264": {
+    "src_hash": "36137d8d9dbe7d2b655496d83858ae68",
+    "text": "Puneți blana de pui în gura pietrei și astfel o puneți să se odihnească.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:55.187441Z"
+  },
+  "data.otservbr.global.npc.aruda.L257.1339": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "La revedere, |PLAYERNAME|. Chiar sper să vorbim din nou în curând.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:00.389885Z"
+  },
+  "data.otservbr.global.npc.aruda.L64.1336": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "Oh, bună |PLAYERNAME|, părul tău arată grozav! Cine a făcut-o pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:06.428871Z"
+  },
+  "data.otservbr.global.npc.aruda.L67.1337": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "Oh, salut, frumos! Este o plăcere să te cunosc, |PLAYERNAME|. Cu plăcere am timp să {chat} puțin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:06.429463Z"
+  },
+  "data.otservbr.global.npc.ashari.L52.1581": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Bună, străine! Aceste peșteri trebuie să ți se pară ciudate. Mă întreb ce te aduce aici... poate te interesează ceva de lucru? Există mai multe sarcini cu care aș putea avea nevoie de ajutor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:06.430301Z"
+  },
+  "data.otservbr.global.npc.atur.L76.727": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:06.430692Z"
+  },
+  "data.otservbr.global.npc.aurita.L114.171": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Salutări, călător!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:06.430953Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L137.859": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Salutări, călător |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:10.344124Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L50.141": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Nu sunt aici să mă lupt cu tine, prostule. Ne place sau nu, va trebui să lucrăm împreună pentru a opri catastrofa pe care dumneavoastră și acel preot ați inițiat-o.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:10.344797Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L52.142": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Salutări, muritor. Fii conștient că îmi încerci răbdarea în timp ce vorbim.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:10.345243Z"
+  },
+  "data.otservbr.global.npc.baa.leal.L158.273": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Dă-te jos, soldat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:10.345502Z"
+  },
+  "data.otservbr.global.npc.barazbaz.L93.18": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "Oh, bună ziua!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:10.345734Z"
+  },
+  "data.otservbr.global.npc.barbara.L85.1300": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "TRAIAȚI REGINA! Poți pleca acum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:16.845286Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L130.1046": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Bine ați venit în umilul meu sălaș. Dacă vii pentru noul vrăjitor {spells}, ai ajuns în locul potrivit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:16.845824Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L131.1047": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Ai grijă, copile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:16.846069Z"
+  },
+  "data.otservbr.global.npc.bashira.L63.1584": {
+    "src_hash": "1ab992ebc47c02f476153edbb5649f2a",
+    "text": "Bun venit, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:16.846494Z"
+  },
+  "data.otservbr.global.npc.bashira.L65.1586": {
+    "src_hash": "91f025a68ba7730090f9f4a3461e5e62",
+    "text": "Dumnezeu să vă arate calea, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:23.095834Z"
+  },
+  "data.otservbr.global.npc.bashira.L66.1587": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Desigur, doar răsfoiți ofertele mele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:23.096200Z"
+  },
+  "data.otservbr.global.npc.battlemart.L64.1360": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "E bine să te văd. Sunt mereu la {shop options} dvs.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:23.096600Z"
+  },
+  "data.otservbr.global.npc.battlemart.L65.1361": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "La revedere, |PLAYERNAME|, voi fi aici dacă mai ai nevoie de mine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:23.097009Z"
+  },
+  "data.otservbr.global.npc.battlemart.L66.1362": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:23.097244Z"
+  },
+  "data.otservbr.global.npc.baxter.L60.1236": {
+    "src_hash": "5a79b0f1ba416a18a992917d1837d174",
+    "text": "TRAIAȚI REGELE TIBIANUS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:26.698917Z"
+  },
+  "data.otservbr.global.npc.baxter.L63.1239": {
+    "src_hash": "cf5734463548fd7f4caefa09650648e3",
+    "text": "Aduci șobolani proaspăt uciși pentru o recompensă de 1 aur fiecare? Apropo, cumpăr și dinți de orc și alte chestii pe care le-ai smuls din trupul lor sângeros... Adică... ei bine, știi ce vreau să spun.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:26.699703Z"
+  },
+  "data.otservbr.global.npc.beatrice.L89.771": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:26.700058Z"
+  },
+  "data.otservbr.global.npc.benjamin.L84.240": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Buna ziua. Cum te pot ajuta |PLAYERNAME|? Cere-mi un {trade} dacă vrei să cumperi ceva. Pot explica și sistemul {mail}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:26.700665Z"
+  },
+  "data.otservbr.global.npc.benjamin.L85.241": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "A fost o plăcere să vă ajut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:26.700990Z"
+  },
+  "data.otservbr.global.npc.bertha.L88.1552": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:04:29.686059Z"
   }
 }

@@ -149134,5 +149134,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:51:16.999441Z"
+  },
+  "npc.todd.farewell_msg_1": {
+    "src_hash": "b2c2d3ce0af71543511195eb5b33e24d",
+    "text": "Sí, adiós |PLAYERNAME|, déjame en paz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.872005Z"
+  },
+  "npc.todd.walkaway_msg_1": {
+    "src_hash": "c03f1a8d51516c7b9d23a2d129c93820",
+    "text": "Silencio al fin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.879454Z"
+  },
+  "npc.tom.farewell_msg_1": {
+    "src_hash": "4315fd8fe0252a656945d410019f281c",
+    "text": "Buena caza, niña.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.880492Z"
+  },
+  "npc.tom.farewell_msg_2": {
+    "src_hash": "dab4818ac93c2a89719f652257525800",
+    "text": "Buena caza, hijo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.881471Z"
+  },
+  "npc.tom.greet_msg_2": {
+    "src_hash": "30df3df255344b011f63e994dff389f3",
+    "text": "Ahora, ahora... no podemos trabajar con eso. ¡Vuelve a esa guarida de lobos y cumple tu misión! A menos que haya algo más en lo que pueda ayudarte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.883422Z"
+  },
+  "npc.tom.greet_msg_3": {
+    "src_hash": "34018bb930c07c6a344eac52e82e929e",
+    "text": "Hola, |PLAYERNAME|. Te ves... exhausto. ¿Corriste mucho? Y lo que es más importante, ¿pudiste encontrar cuero de lobo de guerra?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.885104Z"
+  },
+  "npc.tom.sendtrade_msg_1": {
+    "src_hash": "b451d976461581d143464f04d8749424",
+    "text": "Claro, revisa lo que compro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.888633Z"
+  },
+  "npc.tom.walkaway_msg_1": {
+    "src_hash": "2d6d359cd3be1bb2b9ebc64b0ff08ef1",
+    "text": "¿Oh?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.905961Z"
+  },
+  "npc.tomruk_the_ruddy.greet_msg_1": {
+    "src_hash": "574307857c43c87f890a25dbf1b206a5",
+    "text": "Hola hola! ¡Siempre es bueno ver sangre fresca! ¿Qué te trae por aquí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.907385Z"
+  },
+  "npc.tonar.greet_msg_1": {
+    "src_hash": "653b5151b36bca4354da64175c01f9a6",
+    "text": "Bienvenido, Señor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.918669Z"
+  },
+  "npc.tonar_oskayaat.greet_msg_1": {
+    "src_hash": "5de521c18dd8026d95bb892d6e0d30be",
+    "text": "Bienvenido atrás, Señor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.921165Z"
+  },
+  "npc.topsy.farewell_msg_1": {
+    "src_hash": "1ca49a695b468735ed0ea8df5a19b2b8",
+    "text": "Adiós, |PLAYERNAME|. ¡Ven de nuevo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.924520Z"
+  },
+  "npc.topsy.walkaway_msg_1": {
+    "src_hash": "1ca49a695b468735ed0ea8df5a19b2b8",
+    "text": "Adiós, |PLAYERNAME|. ¡Ven de nuevo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.927827Z"
+  },
+  "npc.torkada.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.928819Z"
+  },
+  "npc.torkada.greet_msg_1": {
+    "src_hash": "5330dffb92ebe125b20d1e15ab17bef9",
+    "text": "¡Saludos! Sin embargo, este no es el {time} para charlar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.930149Z"
+  },
+  "npc.trisha.farewell_msg_1": {
+    "src_hash": "ae83f12fab71eb2c1c91998afd31402f",
+    "text": "No te hagas daño con esa arma, pequeña.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.939801Z"
+  },
+  "npc.trisha.greet_msg_1": {
+    "src_hash": "11b06155bb04cf0a8ef43effb4803655",
+    "text": "¡Bienvenido de nuevo, caballero |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.940868Z"
+  },
+  "npc.turvy.farewell_msg_1": {
+    "src_hash": "cb5d1c228605967286fd4090853386a4",
+    "text": "Adiós, |PLAYERNAME|. ¡Vuelve otra vez!.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.952044Z"
+  },
+  "npc.turvy.greet_msg_1": {
+    "src_hash": "53bf19e35e8bacdc98d42ae52eac2e3f",
+    "text": "Hola querido |PLAYERNAME|. ¿Puedo ser de alguna ayuda? Sólo dime si te gustaría {trade} armas o armaduras.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.953511Z"
+  },
+  "npc.turvy.walkaway_msg_1": {
+    "src_hash": "cb5d1c228605967286fd4090853386a4",
+    "text": "Adiós, |PLAYERNAME|. ¡Vuelve otra vez!.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.956376Z"
+  },
+  "npc.ubaid.farewell_msg_1": {
+    "src_hash": "edcc7018fb03073e2e688eb4852c84ca",
+    "text": "¡Adiós humano!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.973532Z"
+  },
+  "npc.ubaid.walkaway_msg_1": {
+    "src_hash": "edcc7018fb03073e2e688eb4852c84ca",
+    "text": "¡Adiós humano!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.985031Z"
+  },
+  "npc.ukea.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.986062Z"
+  },
+  "npc.ulala.greet_msg_1": {
+    "src_hash": "03a850c39cedab6184b059694f122b6c",
+    "text": "Los espíritus te dan la bienvenida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.987553Z"
+  },
+  "npc.umar.farewell_msg_1": {
+    "src_hash": "38e5d1721ceb5d4f1741f17a4c665ac6",
+    "text": "<salutes>Aaaa -¡atención!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:38.996380Z"
+  },
+  "npc.umar.walkaway_msg_1": {
+    "src_hash": "38e5d1721ceb5d4f1741f17a4c665ac6",
+    "text": "<salutes>Aaaa -¡atención!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:59:39.006239Z"
   }
 }

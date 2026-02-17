@@ -33654,5 +33654,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:56:46.806633Z"
+  },
+  "cpp.inspect.invisibility": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Невидимость",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:23.920874Z"
+  },
+  "cpp.look.invisibility": {
+    "src_hash": "b31ffe10fc51b2597fc9a74f4da7ce66",
+    "text": "Невидимость",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:23.938026Z"
+  },
+  "cpp.house.door_size": {
+    "src_hash": "ccea0ec0938e05110e60ca4bd37e3ae4",
+    "text": "Это {0} квадратных метров.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:26.248115Z"
+  },
+  "cpp.house.door_unowned": {
+    "src_hash": "b5b6a1dbe747394480a72ca2bbea0e1a",
+    "text": "Он принадлежит дому '{0}'. Этот дом никому не принадлежит.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:31.184209Z"
+  },
+  "cpp.house.ownership_transfer_on_restart": {
+    "src_hash": "cc79fea55af06648fd3245fba49684c8",
+    "text": "Право собственности будет передано после перезапуска сервера.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:31.184956Z"
+  },
+  "cpp.house.sold_success": {
+    "src_hash": "84af06c5ff98ee71ff815822331261d1",
+    "text": "Вы успешно продали свой дом.{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:31.185493Z"
+  },
+  "cpp.inspect.attack_plus": {
+    "src_hash": "239982a51b26f0e33b2398e550803028",
+    "text": "атака +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:31.185824Z"
+  },
+  "cpp.inspect.body_position": {
+    "src_hash": "cd9a417af3ad9e295cdee793faae5996",
+    "text": "Положение тела",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:31.186320Z"
+  },
+  "cpp.inspect.body_shield_hand": {
+    "src_hash": "fe2e5f258b71f852b14b9d9e2976ba98",
+    "text": "рука щита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:35.319833Z"
+  },
+  "cpp.inspect.chance_to_hit": {
+    "src_hash": "44faae0a2a3329d707fc466fed56480a",
+    "text": "шанс попасть +{0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:35.320326Z"
+  },
+  "cpp.inspect.classification": {
+    "src_hash": "5c9335b28e6277ddbe0137f04e5e58a7",
+    "text": "Классификация",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:35.320893Z"
+  },
+  "cpp.inspect.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "более быстрая регенерация",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:35.321398Z"
+  },
+  "cpp.inspect.faster_regeneration_effect": {
+    "src_hash": "2f0ea69af6352f387480984e271315e3",
+    "text": "Ускоренная регенерация",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:35.321791Z"
+  },
+  "cpp.inspect.field_protection": {
+    "src_hash": "e9c2511c581a1eb0271bdfdfd34b458c",
+    "text": "Полевая защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:40.058506Z"
+  },
+  "cpp.inspect.imbuement_info": {
+    "src_hash": "b40edc2fc643c664893ea6b8d3252650",
+    "text": "{0} {1} ({2}), длится {3}:{4}h во время боя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:40.723409Z"
+  },
+  "cpp.inspect.imbuement_slot": {
+    "src_hash": "d8b8cbd7f322236d18b06b2bc867a167",
+    "text": "Слот наделения {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:40.724164Z"
+  },
+  "cpp.inspect.imbuement_slots": {
+    "src_hash": "59ae95b4f824cea331194109ed77bbda",
+    "text": "Слоты наделения",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:40.724541Z"
+  },
+  "cpp.inspect.magic_level_label": {
+    "src_hash": "52611a88685d2f588f58aa123f0f259c",
+    "text": "{0} Магический уровень",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:40.724976Z"
+  },
+  "cpp.inspect.magic_level_value": {
+    "src_hash": "063ec72e26da337fb0a22f8ab3f241bc",
+    "text": "магический уровень {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:45.125577Z"
+  },
+  "cpp.inspect.mana_shield": {
+    "src_hash": "f249800c7cf9b009f48674253a64721d",
+    "text": "Щит маны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:45.125980Z"
+  },
+  "cpp.inspect.n_seconds": {
+    "src_hash": "894a208290274479c9e9408927b7c073",
+    "text": "{0} секунд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:45.126426Z"
+  },
+  "cpp.inspect.physical_plus": {
+    "src_hash": "9f0c54c466d97e93b32794c483030c7b",
+    "text": "{0} физический + {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:45.127217Z"
+  },
+  "cpp.inspect.professions": {
+    "src_hash": "338bfdd3c45f08cea4ba92c01054f45e",
+    "text": "Профессии",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:45.127572Z"
+  },
+  "cpp.inspect.required_magic_level": {
+    "src_hash": "6821616c8a63532178ae7438bea1c633",
+    "text": "Требуемый магический уровень",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:48.699125Z"
+  },
+  "cpp.inspect.rune_spell_name": {
+    "src_hash": "8751237628ef1f455997715e35819b4e",
+    "text": "Название рунного заклинания",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:48.699541Z"
+  },
+  "cpp.inspect.skill_boost": {
+    "src_hash": "53e0815f3b52e9ef05b9499fe2e73c05",
+    "text": "Повышение навыков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:58:48.699880Z"
   }
 }

@@ -55734,5 +55734,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:56:19.913589Z"
+  },
+  "questlog.quest_21.mission_3.name": {
+    "src_hash": "6120e120be5c90e1ba9483f89b67cf4b",
+    "text": "Pizio il Marcio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:58.084272Z"
+  },
+  "questlog.quest_28.mission_15.state_57": {
+    "src_hash": "297961cfcc588d3cff4c1fab08d8e558",
+    "text": "Viaggia a Okolnir e cerca di trovare una prova dell'esistenza dei signori dei draghi nei tempi antichi. Penso che il vecchio Buddel potrebbe portarti lì.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:58.133327Z"
+  },
+  "questlog.quest_28.mission_17.state_1": {
+    "src_hash": "b5eaf991a53a83dcad04574ca21f9632",
+    "text": "Il Capitano Max ti porterà a Calassa ogni volta che sarai pronto. Per favore prova a recuperare il giornale di bordo mancante che deve trovarsi in uno dei relitti affondati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:58.135244Z"
+  },
+  "questlog.quest_37.name": {
+    "src_hash": "3e9ff2fb268bac02d2f150cae0aab8c5",
+    "text": "Il primo drago",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:58.165392Z"
   }
 }

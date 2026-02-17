@@ -49614,5 +49614,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:47:38.292925Z"
+  },
+  "questlog.quest_28.mission_17.state_1": {
+    "src_hash": "b5eaf991a53a83dcad04574ca21f9632",
+    "text": "Căpitanul Max te va aduce la Calassa ori de câte ori ești gata. Vă rugăm să încercați să recuperați jurnalul de bord lipsă care trebuie să fie într-una dintre epavele scufundate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:24.691248Z"
+  },
+  "questlog.quest_11.mission_30.state_2": {
+    "src_hash": "c9f6a46c65fc1c150092aacac3d3f8fb",
+    "text": "Ai vânat cu succes 500 de păianjeni giganți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:43.882778Z"
+  },
+  "questlog.quest_11.mission_31.name": {
+    "src_hash": "1326e41f6163742ebdb7800f75cf2aa9",
+    "text": "Paw and Fur: Werewolves",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:57:45.632797Z"
   }
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:56:49.223714Z",
-  "language": "ru",
-  "json_file": "books.json",
-  "translated": 41,
+  "timestamp": "2026-02-17T06:59:39.557087Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 51,
   "entries": [
     {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "en": "Battletactics for Mages [III]",
-      "translated": "Тактика боя для магов [III]",
-      "source": "tm"
+      "key": "npc.tom.sendtrade_msg_1",
+      "en": "Sure, check what I buy.",
+      "translated": "Claro, revisa lo que compro.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "en": "Battletactics for Mages [IV]",
-      "translated": "Тактика боя для магов [IV]",
-      "source": "tm"
+      "key": "npc.tom.walkaway_msg_1",
+      "en": "D'oh?",
+      "translated": "¿Oh?",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.brog_however_laughed_over_the",
-      "en": "Brog however laughed over the dragon, which he had created, because he roamed over Tibia and was a terror to the few",
-      "translated": "Однако Брог смеялся над драконом, которого он создал, потому что он бродил по Tibia и был ужасом для немногих.",
-      "source": "tm"
+      "key": "npc.tomruk_the_ruddy.greet_msg_1",
+      "en": "Hello hello! Always good to see fresh blood! What brings you here?",
+      "translated": "Hola hola! ¡Siempre es bueno ver sangre fresca! ¿Qué te trae por aquí?",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.buildings_disappeared_gradually_from_the",
-      "en": "buildings disappeared gradually from the face of Tibia.",
-      "translated": "здания постепенно исчезли с лица Tibia.",
-      "source": "tm"
+      "key": "npc.tonar.greet_msg_1",
+      "en": "Welcome, Sir.",
+      "translated": "Bienvenido, Señor.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.but_when_the_orks_threatened",
-      "en": "But when the Orks threatened to cover Tibia almost completely, the dragon came! They had decided that only they",
-      "translated": "Но когда орки пригрозили почти полностью захватить Tibia, пришел дракон! Они решили, что только они",
-      "source": "tm"
+      "key": "npc.tonar_oskayaat.greet_msg_1",
+      "en": "Welcome back, Sir.",
+      "translated": "Bienvenido atrás, Señor.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.by_the_way_the_summoning",
-      "en": "By the way: The summoning of lesser creatures, the so-called 'reds', progressed comparatively well. Of course, these creatures are mere borderdwellers and may consequently not be considered true demons. However, it may prove that the development of summoning spells for 'reds' will prove a rewarding spin-off of demon summoning research.",
-      "translated": "Кстати: призыв меньших существ, так называемых 'reds', продвигался сравнительно хорошо. Конечно, эти существа всего лишь обитатели границ и, следовательно, не могут считаться настоящими демонами. Однако может оказаться, что разработка заклинаний призыва для 'reds' станет полезным побочным продуктом исследований по призыву демонов.",
-      "source": "tm"
+      "key": "npc.topsy.farewell_msg_1",
+      "en": "Good bye, |PLAYERNAME|. Do come again!",
+      "translated": "Adiós, |PLAYERNAME|. ¡Ven de nuevo!",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.centuries_ago_our_ancients_build",
-      "en": "Centuries ago, our ancients build this maze to protect our city Demona from bandits and warriors.",
-      "translated": "Много веков назад наши предки построили этот лабиринт, чтобы защитить наш город Demona от бандитов и воинов.",
-      "source": "tm"
+      "key": "npc.topsy.walkaway_msg_1",
+      "en": "Good bye, |PLAYERNAME|. Do come again!",
+      "translated": "Adiós, |PLAYERNAME|. ¡Ven de nuevo!",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.choose_one_reward_wisely",
-      "en": "Choose one reward, wisely!",
-      "translated": "Выбирайте одну награду с умом!",
-      "source": "google_translate"
+      "key": "npc.torkada.farewell_msg_1",
+      "en": "Bye, |PLAYERNAME|.",
+      "translated": "Adiós, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.circle_of_the_creators_and",
-      "en": "circle of the creators and help them with the task of the creation. Tibiasula agreed, because she also was fascinated by the idea",
-      "translated": "круг творцов и помочь им в творчестве. Тибиасула согласилась, потому что она тоже была очарована этой идеей.",
-      "source": "google_translate"
+      "key": "npc.torkada.greet_msg_1",
+      "en": "Greetings! This isn't the {time} to chitchat though.",
+      "translated": "¡Saludos! Sin embargo, este no es el {time} para charlar.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.circular_canon_of_eternal_darkness",
-      "en": "Circular canon of Eternal Darkness",
-      "translated": "Круговой канон Вечной Тьмы",
-      "source": "google_translate"
+      "key": "npc.trisha.farewell_msg_1",
+      "en": "Don't hurt yourself with that weapon, little one.",
+      "translated": "No te hagas daño con esa arma, pequeña.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.circular_canon_of_eternal_darkness_ff1dff20",
-      "en": "Circular canon of Eternal Darkness",
-      "translated": "Круговой канон Вечной Тьмы",
-      "source": "google_translate"
+      "key": "npc.trisha.greet_msg_1",
+      "en": "Welcome back, knight |PLAYERNAME|!",
+      "translated": "¡Bienvenido de nuevo, caballero |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.citizen_depot_downstairs",
-      "en": "Citizen Depot downstairs.",
-      "translated": "Гражданин Depot внизу.",
-      "source": "google_translate"
+      "key": "npc.turvy.farewell_msg_1",
+      "en": "Good bye, |PLAYERNAME|. Do come again!.",
+      "translated": "Adiós, |PLAYERNAME|. ¡Vuelve otra vez!.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.city_cellar_beware_of_the",
-      "en": "City Cellar - Beware of the spiders",
-      "translated": "Городской подвал – Остерегайтесь пауков",
-      "source": "google_translate"
+      "key": "npc.turvy.greet_msg_1",
+      "en": "Hello, dear |PLAYERNAME|. Can I be of any assistance? Just tell me if you'd like to {trade} weapons or armor.",
+      "translated": "Hola querido |PLAYERNAME|. ¿Puedo ser de alguna ayuda? Sólo dime si te gustaría {trade} armas o armaduras.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.clear_as_seldom_before_our",
-      "en": "clear as seldom before: our order will be wiped",
-      "translated": "ясно, как редко: наш заказ будет удален",
-      "source": "google_translate"
+      "key": "npc.turvy.walkaway_msg_1",
+      "en": "Good bye, |PLAYERNAME|. Do come again!.",
+      "translated": "Adiós, |PLAYERNAME|. ¡Vuelve otra vez!.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.clear_up_subjects_remains_and",
-      "en": "Clear up subjects' remains and blood. Borrowed equipment must be returned clean and functional.",
-      "translated": "Очистите останки и кровь субъектов. Взятое напрокат оборудование должно быть возвращено чистым и работоспособным.",
-      "source": "google_translate"
+      "key": "npc.ubaid.farewell_msg_1",
+      "en": "Farewell human!",
+      "translated": "¡Adiós humano!",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.closed_for_archeological_survey",
-      "en": "(closed for archeological survey)",
-      "translated": "(закрыт на археологические исследования)",
-      "source": "google_translate"
+      "key": "npc.ubaid.walkaway_msg_1",
+      "en": "Farewell human!",
+      "translated": "¡Adiós humano!",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.codex_of_ultimate_boredom",
-      "en": "Codex of ultimate boredom.",
-      "translated": "Кодекс предельной скуки.",
-      "source": "google_translate"
+      "key": "npc.ukea.farewell_1",
+      "en": "Goodbye, |PLAYERNAME|.",
+      "translated": "Adiós, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.congratulations_you_have_passed_the",
-      "en": "Congratulations, you have passed the Dream Challenge. Now enjoy the fruits of your success and relax before continue the way to meet the master.",
-      "translated": "Поздравляем, вы прошли Dream Challenge. Теперь наслаждайтесь плодами своего успеха и расслабьтесь, прежде чем продолжить путь к встрече с мастером.",
-      "source": "google_translate"
+      "key": "npc.ulala.greet_msg_1",
+      "en": "Spirits welcome you.",
+      "translated": "Los espíritus te dan la bienvenida.",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.contact_berenice_in_the_local",
-      "en": "Contact Berenice in the local Explorer Society outpost!",
-      "translated": "Свяжитесь с Беренис в местном аванпосте Общества исследователей!",
-      "source": "google_translate"
+      "key": "npc.umar.farewell_msg_1",
+      "en": "<salutes>Aaaa -tention!",
+      "translated": "<salutes>Aaaa -¡atención!",
+      "source": "simple"
     },
     {
-      "key": "book.otbm.contact_henricus_in_the_inquisiton",
-      "en": "Contact Henricus in the Inquisiton quarters beneath the Thaian jail!",
-      "translated": "Свяжитесь с Henricus в помещении Инквизиции под тайской тюрьмой!",
-      "source": "google_translate"
+      "key": "npc.umar.walkaway_msg_1",
+      "en": "<salutes>Aaaa -tention!",
+      "translated": "<salutes>Aaaa -¡atención!",
+      "source": "simple"
     }
   ]
 }

@@ -32982,5 +32982,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:19:17.781633Z"
+  },
+  "monster.bulltaur_forgepriest.voice_1": {
+    "src_hash": "3fae15388562f718c067d6de85013086",
+    "text": "Какой шанс опробовать мою последнюю работу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:20.170183Z"
+  },
+  "monster.bulltaur_forgepriest.voice_2": {
+    "src_hash": "36bae2052895506d03da65920efafee3",
+    "text": "Да пребудет со мной кузница!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:20.170515Z"
+  },
+  "monster.bulltaur_forgepriest.voice_3": {
+    "src_hash": "705392db61ff41c60b3fb7ee5cc22e1f",
+    "text": "Огонь кузницы очистит тебя!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:20.170842Z"
+  },
+  "monster.furious_troll.name": {
+    "src_hash": "e0adbd45adf17bd684b5de2e67358e95",
+    "text": "Разъяренный тролль",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:20.171113Z"
+  },
+  "monster.furious_troll.desc": {
+    "src_hash": "8cc7ccf6a9feec82e953d76adb0c6147",
+    "text": "разъяренный тролль",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:24.841665Z"
+  },
+  "monster.furious_troll.voice_1": {
+    "src_hash": "54c3c52b51848424a422e666ebf985f3",
+    "text": "Нарезай! Нарезай!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:24.841945Z"
+  },
+  "monster.furious_troll.voice_2": {
+    "src_hash": "729a6650fe5f508fd6079bb275723371",
+    "text": "УМИРАТЬ!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:24.842181Z"
+  },
+  "monster.minotaur_invader.name": {
+    "src_hash": "74f63b140b54bf40aa92a94ed9ff3e93",
+    "text": "Минотавр-захватчик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:24.842441Z"
+  },
+  "monster.minotaur_invader.desc": {
+    "src_hash": "2fcc1540851bb69c5971b7da1b941172",
+    "text": "минотавр-захватчик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:24.842696Z"
+  },
+  "monster.minotaur_invader.voice_1": {
+    "src_hash": "974864e964782963a5b230d8f0015295",
+    "text": "За победу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:27.998525Z"
+  },
+  "monster.minotaur_invader.voice_2": {
+    "src_hash": "2738a7552dd1aad5f48feeb79fe59cdc",
+    "text": "Мы сокрушим врага!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:27.998904Z"
+  },
+  "monster.glooth_powered_minotaur.name": {
+    "src_hash": "dc2d82364c11d204f9cba07a3dbfa67c",
+    "text": "Минотавр, работающий на энергии Глута",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:27.999537Z"
+  },
+  "monster.glooth_powered_minotaur.desc": {
+    "src_hash": "33be1baea16ae2f39d4851e34eb97f22",
+    "text": "минотавр, питаемый тьмой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:27.999855Z"
+  },
+  "monster.glooth_powered_minotaur.voice_1": {
+    "src_hash": "819d05ed7f1614834262b93390d06b39",
+    "text": "ПУООООО!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:28.000064Z"
+  },
+  "monster.minotaur_hunter.desc": {
+    "src_hash": "de511ca2769aa2b40e5946150f299c1f",
+    "text": "охотник на минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:30.868505Z"
+  },
+  "monster.minotaur_hunter.voice_1": {
+    "src_hash": "3270534841366a6b886e4e5c92b5c85c",
+    "text": "Вы отмечены смертью!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:30.868804Z"
+  },
+  "monster.minotaur_hunter.voice_2": {
+    "src_hash": "cca3cdc5bf23e7c332cbd5aef0268679",
+    "text": "На этот раз жертвой станете вы!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:25:30.869129Z"
   }
 }

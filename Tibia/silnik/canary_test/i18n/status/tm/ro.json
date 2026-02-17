@@ -44726,5 +44726,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:25:46.172091Z"
+  },
+  "questlog.quest_11.mission_27.state_1": {
+    "src_hash": "1a0328aba9e22c7d203fc6f8d0011786",
+    "text": "Ai vânat cu succes 300 de păianjeni de cristal. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:29:53.766390Z"
+  },
+  "questlog.quest_11.mission_27.state_2": {
+    "src_hash": "00090503ee86a79def3866229915fc91",
+    "text": "Ai vânat cu succes 300 de păianjeni de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:29:53.766778Z"
+  },
+  "questlog.quest_11.mission_28.state_1": {
+    "src_hash": "8b7c5f6c8bdc5ec12a44d9f0bd8d99bb",
+    "text": "Ai vânat cu succes 300 de tigri mutanți. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:29:53.768344Z"
+  },
+  "questlog.quest_11.mission_28.state_2": {
+    "src_hash": "ba266ce2113c9ced04db2770cbca6882",
+    "text": "Ai vânat cu succes 300 de tigri mutanți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:29:53.768700Z"
+  },
+  "questlog.quest_11.mission_29.state_1": {
+    "src_hash": "d1684168348ba478274afb69e9c4ceba",
+    "text": "Ați vânat cu succes 600 de cară subacvatică. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:29:57.000738Z"
   }
 }

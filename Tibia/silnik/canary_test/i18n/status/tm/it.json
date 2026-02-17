@@ -50806,5 +50806,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:28:44.719625Z"
+  },
+  "questlog.quest_11.mission_27.state_2": {
+    "src_hash": "00090503ee86a79def3866229915fc91",
+    "text": "Hai cacciato con successo 300 ragni di cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:30:17.131383Z"
+  },
+  "questlog.quest_11.mission_28.state_1": {
+    "src_hash": "8b7c5f6c8bdc5ec12a44d9f0bd8d99bb",
+    "text": "Hai cacciato con successo 300 tigri mutanti. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:30:23.053509Z"
+  },
+  "questlog.quest_11.mission_28.state_2": {
+    "src_hash": "ba266ce2113c9ced04db2770cbca6882",
+    "text": "Hai cacciato con successo 300 tigri mutanti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:30:23.053842Z"
+  },
+  "questlog.quest_11.mission_29.state_1": {
+    "src_hash": "d1684168348ba478274afb69e9c4ceba",
+    "text": "Hai cacciato con successo 600 quara sottomarini. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:30:23.054480Z"
+  },
+  "questlog.quest_11.mission_29.state_2": {
+    "src_hash": "e437fa2803dad3215d5fa3322986077c",
+    "text": "Hai cacciato con successo 600 quara sottomarini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:30:25.883033Z"
+  },
+  "questlog.quest_11.mission_3.description": {
+    "src_hash": "b74577e5cf39753b737f0db99f85e5cb",
+    "text": "Sei stato promosso al grado di 'Ranger' nella '__PH0__'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:30:25.883574Z"
   }
 }

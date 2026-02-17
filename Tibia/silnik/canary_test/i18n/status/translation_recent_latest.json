@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:47:38.520760Z",
-  "language": "ro",
-  "json_file": "otclient_modules.json",
-  "translated": 37,
+  "timestamp": "2026-02-17T06:49:43.557258Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 51,
   "entries": [
     {
-      "key": "otclient_modules.skills_otui.tr_52",
-      "en": "Capacity",
-      "translated": "Capacitate",
+      "key": "npc.tarun.farewell_msg_1",
+      "en": "Farewell.",
+      "translated": "Despedida.",
       "source": "simple"
     },
     {
-      "key": "otclient_modules.channelswindow_otui.tr_2",
-      "en": "Open",
-      "translated": "Deschide",
-      "source": "google_translate"
+      "key": "npc.tarun.greet_msg_1",
+      "en": "Greetings!",
+      "translated": "Saludos!",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.channelswindow_otui.tr_3",
-      "en": "Open a private message channel",
-      "translated": "Deschide un canal de mesaje private",
-      "source": "google_translate"
+      "key": "npc.tarun.sendtrade_msg_1",
+      "en": "Of course, just have a look.",
+      "translated": "Por supuesto, sólo eche un vistazo.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.channelswindow_otui.tr_4",
-      "en": "Channels",
-      "translated": "Canale",
-      "source": "google_translate"
+      "key": "npc.tarun.walkaway_msg_1",
+      "en": "Farewell.",
+      "translated": "Despedida.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_1",
-      "en": "Blessings",
-      "translated": "Binecuvântări",
-      "source": "google_translate"
+      "key": "npc.tefrit.say_2",
+      "en": "Here is the list with the missing ingredients to complete the ritual.",
+      "translated": "Aquí tienes la lista con los ingredientes que faltan para completar el ritual.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_10",
-      "en": "From Amplification",
-      "translated": "De la Amplificare",
-      "source": "google_translate"
+      "key": "npc.tehlim.farewell_msg_1",
+      "en": "See you my friend.",
+      "translated": "Nos vemos amigo.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_11",
-      "en": "From Equipment",
-      "translated": "De la Echipamente",
-      "source": "google_translate"
+      "key": "npc.tehlim.greet_msg_1",
+      "en": "Hello. I'm so glad someone has found me. Did you meet THEM?!",
+      "translated": "Hola. Me alegro mucho que alguien me haya encontrado. ¡¿Los conociste?!",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_12",
-      "en": "Momentum",
-      "translated": "Impuls",
-      "source": "google_translate"
+      "key": "npc.tehlim.walkaway_msg_1",
+      "en": "See you my friend.",
+      "translated": "Nos vemos amigo.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_13",
-      "en": "Resistances",
-      "translated": "Rezistențe",
-      "source": "google_translate"
+      "key": "npc.telas_golem.farewell_msg_1",
+      "en": "Good .. bye.",
+      "translated": "Adiós.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_14",
-      "en": "Reflect Physical",
-      "translated": "Reflectă fizică",
-      "source": "google_translate"
+      "key": "npc.telas_golem.greet_msg_1",
+      "en": "Where .. am I?",
+      "translated": "¿Dónde... estoy?",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_15",
-      "en": "Percent",
-      "translated": "La sută",
-      "source": "google_translate"
+      "key": "npc.telas_golem.walkaway_msg_1",
+      "en": "Good .. bye.",
+      "translated": "Adiós.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_16",
-      "en": "Flat",
-      "translated": "Plat",
-      "source": "google_translate"
+      "key": "npc.tereban.greet_msg_1",
+      "en": "Greetings, friend. Good you are showing up.",
+      "translated": "Saludos amigo. Qué bueno que estás apareciendo.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_17",
-      "en": "Magic Shield Capacity",
-      "translated": "Capacitatea Scutului Magic",
-      "source": "google_translate"
+      "key": "npc.terrence.greet_msg_1",
+      "en": "Hey there, you are surely interested in helping the Rathleton city guard, right? Right - especially now since the dreaded minotaurs gain more ground every day.",
+      "translated": "Hola, seguramente estás interesado en ayudar a la guardia de la ciudad Rathleton, ¿verdad? Claro, sobre todo ahora que los temidos minotauros ganan cada día más terreno.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_18",
-      "en": "From Wheel",
-      "translated": "De la roată",
-      "source": "google_translate"
+      "key": "npc.tesha.farewell_msg_1",
+      "en": "Have a nice day.",
+      "translated": "Que tenga un lindo día.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_19",
-      "en": "From Amplification",
-      "translated": "De la Amplificare",
-      "source": "google_translate"
+      "key": "npc.tesha.walkaway_msg_1",
+      "en": "Have a nice day.",
+      "translated": "Que tenga un lindo día.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_2",
-      "en": "From Bonus",
-      "translated": "De la Bonus",
-      "source": "google_translate"
+      "key": "npc.thanita.farewell_msg_1",
+      "en": "Take good care of yourself traveller. Would be a shame to lose such a courageous wanderer to those green monsters.",
+      "translated": "Cuídate mucho viajero. Sería una pena perder a un vagabundo tan valiente ante esos monstruos verdes.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_20",
-      "en": "From Base",
-      "translated": "De la bază",
-      "source": "google_translate"
+      "key": "npc.thanita.greet_msg_1",
+      "en": "How could you sneak up on me like this? I thought you were one of THEM! Well, since you are not, what brings you to this wilderness?",
+      "translated": "¿Cómo pudiste acercarte sigilosamente así? ¡Pensé que eras uno de ELLOS! Bueno, ya que no lo eres, ¿qué te trae a este desierto?",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_21",
-      "en": "Dodge",
-      "translated": "Se eschiva",
-      "source": "google_translate"
+      "key": "npc.thanita.walkaway_msg_1",
+      "en": "Take good care of yourself traveller. Would be a shame to lose such a courageous wanderer to those green monsters.",
+      "translated": "Cuídate mucho viajero. Sería una pena perder a un vagabundo tan valiente ante esos monstruos verdes.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_22",
-      "en": "From Wheel",
-      "translated": "De la roată",
-      "source": "google_translate"
+      "key": "npc.the_beggar_king.greet_msg_1",
+      "en": "Hi! You look like someone on a {mission}.",
+      "translated": "¡Hola! Pareces alguien en un {mission}.",
+      "source": "simple"
     },
     {
-      "key": "otclient_modules.character.tr_23",
-      "en": "From Equipment",
-      "translated": "De la Echipamente",
-      "source": "google_translate"
+      "key": "npc.the_blind_prophet.greet_msg_1",
+      "en": "Be greeted, friend of the apes.",
+      "translated": "Sea saludado, amigo de los simios.",
+      "source": "simple"
     }
   ]
 }

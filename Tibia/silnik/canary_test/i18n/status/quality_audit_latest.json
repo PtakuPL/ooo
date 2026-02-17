@@ -1,128 +1,163 @@
 {
-  "timestamp": "2026-02-17T06:47:41.349905Z",
+  "timestamp": "2026-02-17T06:49:53.048740Z",
   "checked_entries": 100,
-  "issues_found": 16,
+  "issues_found": 21,
   "issues_by_type": {
-    "identical_to_en": 16,
-    "identical_to_en_exempt": 4,
-    "suspicious_log_high": 136,
-    "suspicious_log_critical": 13,
-    "suspicious_log_low": 51,
-    "suspicious_rejected_high": 20,
-    "suspicious_rejected_critical": 180
+    "identical_to_en": 21,
+    "identical_to_en_exempt": 3,
+    "suspicious_log_high": 149,
+    "suspicious_log_low": 20,
+    "suspicious_log_critical": 31,
+    "suspicious_rejected_critical": 187,
+    "suspicious_rejected_high": 13
   },
   "issues": [
     {
-      "key": "raid.lizards.name",
-      "lang": "it",
+      "key": "monster.feroxa4.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Lizards",
-      "translated": "Lizards"
+      "en": "Feroxa",
+      "translated": "Feroxa"
     },
     {
-      "key": "raid.cyclops.name",
-      "lang": "it",
+      "key": "monster.feroxa3.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
+      "en": "Feroxa",
+      "translated": "Feroxa"
     },
     {
-      "key": "raid.wild_horses.name",
-      "lang": "it",
+      "key": "monster.feroxa3.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
+      "en": "Feroxa",
+      "translated": "Feroxa"
     },
     {
-      "key": "raid.sheng.name",
-      "lang": "it",
+      "key": "monster.feroxa5.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
+      "en": "Feroxa",
+      "translated": "Feroxa"
     },
     {
-      "key": "raid.munster.name",
-      "lang": "it",
+      "key": "monster.feroxa5.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
+      "en": "Feroxa",
+      "translated": "Feroxa"
     },
     {
-      "key": "raid.teleskor.name",
-      "lang": "it",
+      "key": "monster.undead_cavebear.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
     },
     {
-      "key": "raid.furyosa.name",
-      "lang": "it",
+      "key": "monster.ocyakao.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
+      "en": "Ocyakao",
+      "translated": "Ocyakao"
     },
     {
-      "key": "raid.chayenne.name",
-      "lang": "it",
+      "key": "monster.ocyakao.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
+      "en": "Ocyakao",
+      "translated": "Ocyakao"
     },
     {
-      "key": "raid.omrafir.name",
-      "lang": "it",
+      "key": "monster.necropharus.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
+      "en": "Necropharus",
+      "translated": "Necropharus"
     },
     {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "it",
+      "key": "monster.necropharus.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
+      "en": "Necropharus",
+      "translated": "Necropharus"
     },
     {
-      "key": "raid.yeti.name",
-      "lang": "it",
+      "key": "monster.the_pale_count.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
     },
     {
-      "key": "raid.gargoyle.name",
-      "lang": "it",
+      "key": "monster.the_pale_count.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
     },
     {
-      "key": "raid.nomad.name",
-      "lang": "it",
+      "key": "monster.ghazbaran.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
     },
     {
-      "key": "raid.cobra.name",
-      "lang": "it",
+      "key": "monster.ghazbaran.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
     },
     {
-      "key": "raid.bone_beast.name",
-      "lang": "it",
+      "key": "monster.hirintror.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
+      "en": "Hirintror",
+      "translated": "Hirintror"
     },
     {
-      "key": "raid.terramite.name",
-      "lang": "it",
+      "key": "monster.hirintror.desc",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.player.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
     }
   ],
   "threshold": 10,

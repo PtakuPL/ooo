@@ -25566,5 +25566,165 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:39:29.446684Z"
+  },
+  "monster.orewalker.voice_1": {
+    "src_hash": "c5adbd4a1dbde47fc99e8ec27c1d7a92",
+    "text": "Klonk!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:17.984246Z"
+  },
+  "monster.dorokoll_the_mystic_stop.name": {
+    "src_hash": "d552e621225eb7841a643aeea23008d1",
+    "text": "Mystiker Dorokoll",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.200018Z"
+  },
+  "monster.dorokoll_the_mystic_stop.desc": {
+    "src_hash": "d552e621225eb7841a643aeea23008d1",
+    "text": "Mystiker Dorokoll",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.200419Z"
+  },
+  "monster.mezlon_the_defiler.desc": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Defileraren Mezlon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.203059Z"
+  },
+  "monster.eshtaba_the_conjurer_stop.name": {
+    "src_hash": "5e379c9a447f2adb8b7c3f7a09c06a2a",
+    "text": "Eshtaba trollkarlen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.204608Z"
+  },
+  "monster.eshtaba_the_conjurer_stop.desc": {
+    "src_hash": "5e379c9a447f2adb8b7c3f7a09c06a2a",
+    "text": "Eshtaba trollkarlen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.205021Z"
+  },
+  "monster.mezlon_the_defiler_stop.name": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Defileraren Mezlon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.205678Z"
+  },
+  "monster.mezlon_the_defiler_stop.desc": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Defileraren Mezlon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.206156Z"
+  },
+  "monster.feeble_glooth_horror.name": {
+    "src_hash": "097a672c58cee3eb83dbfb8f13e4b6f9",
+    "text": "Svag glooth skräck",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.263415Z"
+  },
+  "monster.glooth_horror.name": {
+    "src_hash": "5e573603bd1c658c2cad36184e85b5e1",
+    "text": "Glooth skräck",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.264740Z"
+  },
+  "monster.the_duke_of_the_depths.desc": {
+    "src_hash": "2d2feb3d20fc942965a878efa2d758af",
+    "text": "Djupets hertig",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.466492Z"
+  },
+  "monster.lovely_yielothax.voice_1": {
+    "src_hash": "bda662559164a8a7f8a888756cc276c7",
+    "text": "IEEH!! Iiih iih ih iiih!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.520010Z"
+  },
+  "monster.the_shielded_thorn_knight.name": {
+    "src_hash": "772d90bd8a3f689870a842f1519b18f9",
+    "text": "Den skyddade törnen Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.571819Z"
+  },
+  "monster.the_enraged_thorn_knight.name": {
+    "src_hash": "0e39d755d5c7e5bffb9b2fc5018a69d2",
+    "text": "Den rasande törnen Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.575406Z"
+  },
+  "monster.solid_frozen_horror.name": {
+    "src_hash": "8ef36e9949e13054feaa24e85907c1af",
+    "text": "Fast frusen skräck",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:18.580593Z"
+  },
+  "monster.humorless_fungus.voice_1": {
+    "src_hash": "7ca2399084055ad89da1f6ae2834a0bf",
+    "text": "Mumsa mumsa mumsa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:19.167767Z"
+  },
+  "monster.dazed_leaf_golem.name": {
+    "src_hash": "417363ddbadaac5e5c40b7527fba78ab",
+    "text": "Omtumlad bladgolem",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:19.205930Z"
+  },
+  "monster.tainted_soul_splinter.name": {
+    "src_hash": "ad4a806182cf53935b06322d3ca03867",
+    "text": "Fläckad själsplitter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:19.261819Z"
+  },
+  "monster.rottie_the_rotworm.name": {
+    "src_hash": "d4164f75bcef0bbf8c12a48ea153104e",
+    "text": "Rottie Rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:19.542614Z"
+  },
+  "monster.rottie_the_rotworm.desc": {
+    "src_hash": "d4164f75bcef0bbf8c12a48ea153104e",
+    "text": "Rottie Rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:48:19.544639Z"
   }
 }

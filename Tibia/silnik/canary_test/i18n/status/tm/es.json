@@ -148718,5 +148718,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:46:00.476546Z"
+  },
+  "npc.talila.sendtrade_msg_1": {
+    "src_hash": "9e6fce8d8b528fc5dcd6fce227d2d241",
+    "text": "Sí, tengo algunas pociones y runas si estás interesado. ¿O quieres comprar solo pociones o solo runas? Oh, si quieres vender o comprar gemas, también puedes preguntarme.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.592324Z"
+  },
+  "npc.tamerin.greet_msg_2": {
+    "src_hash": "174db35c664a411595e941db1802d082",
+    "text": "¿Has matado a {morik}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.599733Z"
+  },
+  "npc.tamerin.greet_msg_3": {
+    "src_hash": "bb80bd3c45b16d448ceda463ee3b51a2",
+    "text": "Hola, ¿qué te trae por aquí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.601362Z"
+  },
+  "npc.tamoril.date_restriction": {
+    "src_hash": "0c1312ceeb53c95c418fdaa5a271d78e",
+    "text": "Sólo podrás hablar del Primer Dragón entre el 14 de enero y el 12 de febrero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.609044Z"
+  },
+  "npc.tamoril.greet_msg_1": {
+    "src_hash": "00c120d03e2ec362d8263601b391d539",
+    "text": "Otro mortal molesto que cree que su oro supera su valor nutricional.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.611324Z"
+  },
+  "npc.tanyt.greet_msg_1": {
+    "src_hash": "5b7bae4e2b720bbffb3dd63b5f3b1f4e",
+    "text": "Ah, el viento trae otro visitante. Bienvenido, querido invitado. ¿Estás buscando un {passage} con mi alfombra?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.624930Z"
+  },
+  "npc.tarun.farewell_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Despedida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.637205Z"
+  },
+  "npc.tarun.greet_msg_1": {
+    "src_hash": "80b28dda155a27c42cabd42381dc7670",
+    "text": "Saludos!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.638895Z"
+  },
+  "npc.tarun.sendtrade_msg_1": {
+    "src_hash": "3c987019991a261001a6496ac159d70a",
+    "text": "Por supuesto, sólo eche un vistazo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.645054Z"
+  },
+  "npc.tarun.walkaway_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Despedida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.646808Z"
+  },
+  "npc.tefrit.say_2": {
+    "src_hash": "9c6c1ff5a385fc7e51e4c1b7458c1fc7",
+    "text": "Aquí tienes la lista con los ingredientes que faltan para completar el ritual.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.650647Z"
+  },
+  "npc.tehlim.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Nos vemos amigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.655726Z"
+  },
+  "npc.tehlim.greet_msg_1": {
+    "src_hash": "31881f7440f9bb097f53a809d5da95a1",
+    "text": "Hola. Me alegro mucho que alguien me haya encontrado. ¡¿Los conociste?!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.657649Z"
+  },
+  "npc.tehlim.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Nos vemos amigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.660221Z"
+  },
+  "npc.telas_golem.farewell_msg_1": {
+    "src_hash": "dc641d12f2a5fcd01f9e4c34f9089638",
+    "text": "Adiós.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.666474Z"
+  },
+  "npc.telas_golem.greet_msg_1": {
+    "src_hash": "899fd9893954ba091b5bbb2f64152492",
+    "text": "¿Dónde... estoy?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.668294Z"
+  },
+  "npc.telas_golem.walkaway_msg_1": {
+    "src_hash": "dc641d12f2a5fcd01f9e4c34f9089638",
+    "text": "Adiós.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.670894Z"
+  },
+  "npc.tereban.greet_msg_1": {
+    "src_hash": "030944fd7135996d11db76a353f5c9be",
+    "text": "Saludos amigo. Qué bueno que estás apareciendo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.680065Z"
+  },
+  "npc.terrence.greet_msg_1": {
+    "src_hash": "0ea75eec2b557479ac9e5b1028328c33",
+    "text": "Hola, seguramente estás interesado en ayudar a la guardia de la ciudad Rathleton, ¿verdad? Claro, sobre todo ahora que los temidos minotauros ganan cada día más terreno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.718412Z"
+  },
+  "npc.tesha.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.721599Z"
+  },
+  "npc.tesha.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.724495Z"
+  },
+  "npc.thanita.farewell_msg_1": {
+    "src_hash": "967bac80dff1af3ea57aea3e5d0a3d41",
+    "text": "Cuídate mucho viajero. Sería una pena perder a un vagabundo tan valiente ante esos monstruos verdes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.731481Z"
+  },
+  "npc.thanita.greet_msg_1": {
+    "src_hash": "67552072f22e3c510f07847daa9ba960",
+    "text": "¿Cómo pudiste acercarte sigilosamente así? ¡Pensé que eras uno de ELLOS! Bueno, ya que no lo eres, ¿qué te trae a este desierto?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.733633Z"
+  },
+  "npc.thanita.walkaway_msg_1": {
+    "src_hash": "967bac80dff1af3ea57aea3e5d0a3d41",
+    "text": "Cuídate mucho viajero. Sería una pena perder a un vagabundo tan valiente ante esos monstruos verdes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.738659Z"
+  },
+  "npc.the_beggar_king.greet_msg_1": {
+    "src_hash": "34706ee06e29c5991cf6a5eded839df0",
+    "text": "¡Hola! Pareces alguien en un {mission}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.740874Z"
+  },
+  "npc.the_blind_prophet.greet_msg_1": {
+    "src_hash": "a2d21aa4c72e9a9faf1918e6ae4d8bc7",
+    "text": "Sea saludado, amigo de los simios.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:49:42.748580Z"
   }
 }

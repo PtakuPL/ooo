@@ -69734,5 +69734,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:34:18.645021Z"
+  },
+  "creaturescripts.free_quest.msg_1": {
+    "src_hash": "c89e8e5830ed7bbdd0fff0e334e22dc9",
+    "text": "Giocatore FreeQuest in corso..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:56.968073Z"
+  },
+  "creaturescripts.free_quest.msg_2": {
+    "src_hash": "9f78cd07a4952ce2aec875b30e947e8d",
+    "text": "Il giocatore FreeQuest è completo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:56.968561Z"
+  },
+  "creaturescripts.boss_defeated": {
+    "src_hash": "5800ef916c711735130b2de1f701dc04",
+    "text": "Il {name} è stato sconfitto. Hai {seconds} secondi per lasciare la stanza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:56.969173Z"
+  },
+  "creaturescripts.empty_parcels_removed": {
+    "src_hash": "a063b69958e3dab361b556d34f36f2d7",
+    "text": "{count} i pacchi vuoti sono stati rimossi dalla casella di posta del tuo negozio!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:56.969597Z"
   }
 }

@@ -37390,5 +37390,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:55:12.387780Z"
+  },
+  "npclib.modules.travel_no_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:19.569244Z"
+  },
+  "npclib.handler.sendtrade_choose_wisely_with_categories": {
+    "src_hash": "db6f69373f813af4286d9a8d46450595",
+    "text": "Выбирайте с умом! Или, может быть, вы хотите просмотреть только {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:23.007998Z"
+  },
+  "npclib.handler.sendtrade_have_a_look_with_categories": {
+    "src_hash": "b226702484e7cb369b95958ac3c3f1d2",
+    "text": "Посмотрите. Но, возможно, вы просто хотите увидеть мой {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:23.008438Z"
+  },
+  "npclib.handler.sendtrade_lootmonger_with_categories": {
+    "src_hash": "1e7c9d5891b1d9f14624d9e5f01475f9",
+    "text": "Ах, клиент! Добро пожаловать, {0}! Я покупаю всякую добычу, посмотрите на {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:23.008963Z"
+  },
+  "npclib.handler.sendtrade_with_categories": {
+    "src_hash": "ed7fe928684aa8acb54c2f49ec9a5aba",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите просмотреть только {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:23.009438Z"
+  },
+  "npclib.modules.already_promoted": {
+    "src_hash": "223e933bc53b5190244858c88216f4a3",
+    "text": "Вас уже повысили!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:23.009807Z"
+  },
+  "npclib.modules.bless_already_have": {
+    "src_hash": "299238c1ad2213c614a5b40865f27a1d",
+    "text": "Вы уже обладаете этим благословением.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:27.176894Z"
+  },
+  "npclib.modules.bless_need_geomancer": {
+    "src_hash": "c1964a0fc61830e95915a5f9d177805d",
+    "text": "Сначала вам нужно благословение великого геоманта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:27.177345Z"
+  },
+  "npclib.modules.bless_no_money": {
+    "src_hash": "1bea18537dd48f110c12f6a69623bdf6",
+    "text": "Ой. У вас недостаточно денег.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:27.177684Z"
+  },
+  "npclib.modules.bless_success": {
+    "src_hash": "59e88928ed3b2f80e0ec474b073bb8ec",
+    "text": "Вы были благословлены одним из семи богов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:27.178155Z"
+  },
+  "npclib.modules.confirm_need_premium": {
+    "src_hash": "ece1faef6daa65dbe6e4c6908f51f7f4",
+    "text": "Я могу разрешить путешествовать туда только премиум-игрокам.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:27.178576Z"
+  },
+  "npclib.modules.confirm_no_money": {
+    "src_hash": "3c4ac29a8444d4809c80c54448057274",
+    "text": "Вам не хватает денег!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:31.234841Z"
+  },
+  "npclib.modules.confirm_pz_locked": {
+    "src_hash": "438ebe015499210487a70448a74bcd34",
+    "text": "Убирайся оттуда с этой кровью.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:31.235228Z"
+  },
+  "npclib.modules.confirm_success": {
+    "src_hash": "1a8e839c01cb9fbdb8a4df46ddd31cbf",
+    "text": "Было приятно иметь с вами дело.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:31.235582Z"
+  },
+  "npclib.modules.promote_need_premium": {
+    "src_hash": "64367629f46038ced3fcb66bc86c307f",
+    "text": "Чтобы получить повышение, вам нужен премиум-аккаунт.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:31.235974Z"
+  },
+  "npclib.modules.promote_no_money": {
+    "src_hash": "3c4ac29a8444d4809c80c54448057274",
+    "text": "Вам не хватает денег!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:31.236321Z"
+  },
+  "npclib.modules.promote_success": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Поздравляем! Теперь вы получили повышение.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:35.522610Z"
+  },
+  "npclib.modules.say_1": {
+    "src_hash": "a0128d8433eac608a3cf63d83caf1d2e",
+    "text": "Хотите поехать в '{}' за '{}' золотых монет?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:35.523040Z"
+  },
+  "npclib.modules.say_2": {
+    "src_hash": "35d00319ec2163ce87c66f9ec45741f9",
+    "text": "У тебя нет ни других благословений, ни амулета потери, \\z\n                           поэтому сейчас не имеет смысла даровать вам эту защиту. \\ г\n                           Помните, что оно может защитить вас только от потери таковых!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:35.524198Z"
+  },
+  "npclib.modules.say_3": {
+    "src_hash": "589fcb0419808e208129bf390496faa7",
+    "text": "Чтобы купить '{}', вам понадобится премиум-аккаунт.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:35.524636Z"
+  },
+  "npclib.modules.say_4": {
+    "src_hash": "5e77293aa3d93f8035d5bf4ce1919284",
+    "text": "Вы выучили '{}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:35.524933Z"
+  },
+  "npclib.modules.say_5": {
+    "src_hash": "8b9a1ee72c7994ccfca297659d05b4c4",
+    "text": "У вас недостаточно денег, это заклинание стоит {} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:37.836547Z"
+  },
+  "npclib.modules.say_6": {
+    "src_hash": "0ea6405ab8134a43236323b8bff735ce",
+    "text": "Извините, но я смогу повысить вас только после того, как вы достигнете уровня {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:47:37.837076Z"
   }
 }

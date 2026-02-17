@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T11:26:54.187784Z",
+  "timestamp": "2026-02-17T11:48:10.157436Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 698,
+  "entries_total": 699,
   "entries_by_lang": {
     "es": 277,
     "pl": 139,
@@ -73,7 +73,7 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 462,
+    "it": 463,
     "nl": 691,
     "pt": 620,
     "ro": 430,
@@ -107,8 +107,8 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 95,
-    "sv": 555,
+    "sr": 62,
+    "sv": 543,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -624,6 +624,12 @@
       "json_file": "quests.json",
       "identical_to_en": 4,
       "domain_priority": 3
+    },
+    {
+      "lang": "it",
+      "json_file": "modules.json",
+      "identical_to_en": 1,
+      "domain_priority": 5
     },
     {
       "lang": "it",
@@ -1313,12 +1319,6 @@
       "lang": "bg",
       "json_file": "books.json",
       "identical_to_en": 7,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "chatchannels.json",
-      "identical_to_en": 4,
       "domain_priority": 9
     }
   ],

@@ -1,9 +1,9 @@
 {
-  "category": "ro",
-  "cycle": 448,
+  "category": "es",
+  "cycle": 449,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-17T10:37:01Z",
+  "generated_at_utc": "2026-02-17T10:38:13Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,46 @@
     "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 449,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T10:37:46Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 449,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-17T10:37:36Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 449,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T10:37:26Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 449,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-17T10:37:25Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -71,46 +111,6 @@
       "result": "ok",
       "stage": "auto_done",
       "t": "2026-02-17T10:36:14Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 448,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T10:36:07Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 448,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-17T10:36:07Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 447,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T10:35:41Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 447,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T10:35:41Z"
     }
   ],
   "stage": "cycle_end",

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 92,
+  "total_cycles": 93,
   "mode": "AUTO_TRANSLATE",
-  "category": "pl",
-  "last_update": "2026-02-17T01:48:03.566631",
+  "category": "es",
+  "last_update": "2026-02-17T01:48:58.668117",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,133 +26,133 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "pl",
-    "json_file": "items.json",
-    "keys_to_translate": 11378,
-    "guard_fail": 1034,
+    "language": "es",
+    "json_file": "npc.json",
+    "keys_to_translate": 3445,
+    "guard_fail": 36,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 36,
+    "recent_translated": 24,
     "recent_examples": [
       {
-        "key": "item.12672.desc",
-        "en": "Use this knife on a dead war wolf to retrieve some leather. Don't lose it and don't leave the cave",
-        "translated": "U\u017cyj tego no\u017ca na martwym wilku bojowym, aby odzyska\u0107 troch\u0119 sk\u00f3ry. Nie zgub go i nie opuszczaj jaskini",
-        "source": "google_translate"
+        "key": "npc.a_sweaty_cyclops.voice_1",
+        "en": "Hum hum, huhum",
+        "translated": "Hum hum, hum hum",
+        "source": "tm"
       },
       {
-        "key": "item.12674.desc",
-        "en": "Dogs would probably find this treat really yummy",
-        "translated": "Psy prawdopodobnie uzna\u0142yby ten przysmak za naprawd\u0119 pyszny",
-        "source": "google_translate"
+        "key": "npc.arkulius.stdmod_3",
+        "en": "<mumbles>",
+        "translated": "<mumbles>",
+        "source": "tm"
       },
       {
-        "key": "item.12699.name",
-        "en": "magic gold converter",
-        "translated": "magiczny konwerter z\u0142ota",
-        "source": "google_translate"
+        "key": "npc.arkulius.voice_3",
+        "en": "<mumbles>",
+        "translated": "<mumbles>",
+        "source": "tm"
       },
       {
-        "key": "item.12721.desc",
-        "en": "The water of the bog seems slippery and tries to escape even your clothes.",
-        "translated": "Woda torfowiska wydaje si\u0119 \u015bliska i pr\u00f3buje uciec nawet z ubrania.",
-        "source": "google_translate"
+        "key": "npc.barnabas_dee.say_5",
+        "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+        "translated": "No no no, necesito 15 dosis de polen reci\u00e9n cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servir\u00e1.",
+        "source": "tm"
       },
       {
-        "key": "item.12722.desc",
-        "en": "It seems the water wants to go back to the bog it came from. Soon it will all be trickled away",
-        "translated": "Wygl\u0105da na to, \u017ce woda chce wr\u00f3ci\u0107 do bagna, z kt\u00f3rego wysz\u0142a. Nied\u0142ugo wszystko si\u0119 rozp\u0142ynie",
-        "source": "google_translate"
+        "key": "npc.bozo.stdmod_116",
+        "en": "npc.bozo.mission_36_t1",
+        "translated": "npc.bozo.mission_36_t1",
+        "source": "tm"
       },
       {
-        "key": "item.12730.desc",
-        "en": "Did it just twitch...? No, must have been an optical illusion",
-        "translated": "Czy po prostu drgn\u0119\u0142o...? Nie, to musia\u0142o by\u0107 z\u0142udzenie optyczne",
-        "source": "google_translate"
+        "key": "npc.bozo.stdmod_92",
+        "en": "npc.bozo.mission_12_t1",
+        "translated": "npc.bozo.mission_12_t1",
+        "source": "tm"
       },
       {
-        "key": "item.12732.desc",
-        "en": "It feels cold and smooth",
-        "translated": "Jest zimny i g\u0142adki",
-        "source": "google_translate"
+        "key": "npc.budrik.say_9",
+        "en": "Zzz...",
+        "translated": "Zzz...",
+        "source": "tm"
       },
       {
-        "key": "item.12733.desc",
-        "en": "This bow seems to be alive but keeps perfectly still",
-        "translated": "Ten \u0142uk wydaje si\u0119 \u017cywy, ale pozostaje idealnie nieruchomy",
-        "source": "google_translate"
+        "key": "npc.captain_haba_open_sea.larboard_1",
+        "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA A BALAR !!",
+        "source": "tm"
       },
       {
-        "key": "item.12737.desc",
-        "en": "It seems all its former magical power has left this broken carcass of a ring",
-        "translated": "Wygl\u0105da na to, \u017ce ca\u0142a jego dawna magiczna moc opu\u015bci\u0142a ten zniszczony szkielet pier\u015bcienia",
-        "source": "google_translate"
+        "key": "npc.captain_haba_open_sea.say_3",
+        "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+        "translated": "\u00bf\u00a1\u00bfESO ES TODO?!? \u00a1\u00a1\u00a1ACELERAR, APRETAR LA VELA MAYOR!!!",
+        "source": "tm"
       },
       {
-        "key": "item.12740.desc",
-        "en": "This is a quest item and cannot be used for anything else",
-        "translated": "Jest to przedmiot questowy i nie mo\u017cna go u\u017cywa\u0107 do niczego innego",
-        "source": "google_translate"
+        "key": "npc.captain_haba_open_sea.starboard_1",
+        "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA A ESTRIBOR!!",
+        "source": "tm"
       },
       {
-        "key": "item.12741.desc",
-        "en": "It feels cold and smooth",
-        "translated": "Jest zimny i g\u0142adki",
-        "source": "google_translate"
+        "key": "npc.captain_haba_open_sea.straight_3",
+        "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+        "translated": "\u00a1\u00a1MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! \u00a1\u00a1TODO DERECHO!!",
+        "source": "tm"
       },
       {
-        "key": "item.12742.desc",
-        "en": "Fine wax for various different uses",
-        "translated": "Drobny wosk do r\u00f3\u017cnych zastosowa\u0144",
-        "source": "google_translate"
+        "key": "npc.captain_haba_open_sea.straight_5",
+        "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+        "translated": "\u00a1LEVAN LAS VELAS A TODO LADO! \u00a1\u00a1SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+        "source": "tm"
       },
       {
-        "key": "item.12784.desc",
-        "en": "It's very toxic. Do not ever drink green liquids",
-        "translated": "To bardzo toksyczne. Nigdy nie pij zielonych p\u0142yn\u00f3w",
-        "source": "google_translate"
+        "key": "npc.cruleo.voice_1",
+        "en": "<gulp gulp>",
+        "translated": "<gulp gulp>",
+        "source": "tm"
       },
       {
-        "key": "item.12785.desc",
-        "en": "Vascalir gave it to you to collect wasp poison",
-        "translated": "Vascalir da\u0142 ci to, \u017ceby\u015b zebra\u0142 trucizn\u0119 na osy",
-        "source": "google_translate"
+        "key": "npc.elliott.greet_msg_1",
+        "en": "<nods>",
+        "translated": "<nods>",
+        "source": "tm"
       },
       {
-        "key": "item.12786.desc",
-        "en": "It seems to be a part of an outfit. If you own the outfit you might refine it by using the item",
-        "translated": "Wygl\u0105da na cz\u0119\u015b\u0107 stroju. Je\u015bli posiadasz ten str\u00f3j, mo\u017cesz go udoskonali\u0107, u\u017cywaj\u0105c przedmiotu",
-        "source": "google_translate"
+        "key": "npc.gnomus.say_11",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       },
       {
-        "key": "item.12787.desc",
-        "en": "It seems to be a part of an outfit. If you own the outfit you might refine it by using the item",
-        "translated": "Wygl\u0105da na cz\u0119\u015b\u0107 stroju. Je\u015bli posiadasz ten str\u00f3j, mo\u017cesz go udoskonali\u0107, u\u017cywaj\u0105c przedmiotu",
-        "source": "google_translate"
+        "key": "npc.gnomus.say_13",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       },
       {
-        "key": "item.12788.desc",
-        "en": "A good item to paralyse fast and rowdy orcs",
-        "translated": "Dobry przedmiot do parali\u017cowania szybkich i ha\u0142a\u015bliwych ork\u00f3w",
-        "source": "google_translate"
+        "key": "npc.gnomus.say_15",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       },
       {
-        "key": "item.12789.desc",
-        "en": "A good item to knock out unsuspicious orcs",
-        "translated": "Dobry przedmiot do og\u0142uszania niczego niepodejrzewaj\u0105cych ork\u00f3w",
-        "source": "google_translate"
+        "key": "npc.jeronimo.say_3",
+        "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+        "translated": "\u00a1Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+        "source": "tm"
       },
       {
-        "key": "item.12790.desc",
-        "en": "He doesn't seem to notice your presence.",
-        "translated": "Wygl\u0105da na to, \u017ce nie zauwa\u017ca twojej obecno\u015bci.",
-        "source": "google_translate"
+        "key": "npc.lardoc_bashsmite.multi_3",
+        "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+        "translated": "Llevamos nuestros explosivos hasta all\u00ed... y me refiero a TODOS nuestros explosivos. \u00bfPeligroso? De hecho, colocamos a alguien all\u00ed para vigilar este dep\u00f3sito. ...",
+        "source": "tm"
       },
       {
-        "key": "item.12792.desc",
-        "en": "No - you can't fool this one with an orc outfit. He needs to be distracted.",
-        "translated": "Nie \u2013 tego nie da si\u0119 oszuka\u0107 strojem orka. Trzeba odwr\u00f3ci\u0107 jego uwag\u0119.",
-        "source": "google_translate"
+        "key": "npc.lardoc_bashsmite.multi_9",
+        "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+        "translated": "Llevamos nuestros explosivos hasta all\u00ed... y me refiero a TODOS nuestros explosivos. \u00bfPeligroso? De hecho, colocamos a alguien all\u00ed para vigilar este dep\u00f3sito. ...",
+        "source": "tm"
       }
     ]
   },

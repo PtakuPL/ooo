@@ -1,16 +1,158 @@
 {
-  "timestamp": "2026-02-17T00:48:03.434165Z",
+  "timestamp": "2026-02-17T00:48:58.525790Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 27,
   "issues_by_type": {
-    "identical_to_en_exempt": 10,
-    "artifact_token": 7,
-    "suspicious_log_high": 198,
-    "suspicious_log_critical": 2,
-    "suspicious_rejected_high": 26,
-    "suspicious_rejected_critical": 174
+    "artifact_token": 17,
+    "identical_to_en_exempt": 22,
+    "identical_to_en": 10,
+    "suspicious_log_critical": 97,
+    "suspicious_log_low": 13,
+    "suspicious_log_high": 90,
+    "suspicious_rejected_critical": 175,
+    "suspicious_rejected_high": 25
   },
   "issues": [
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.mother_of_jack.voice_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+    },
+    {
+      "key": "npc.navigator.multi_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
+    },
+    {
+      "key": "npc.navigator.multi_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
+      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
+    },
+    {
+      "key": "npc.omrabas.multi_35",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
+      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
+    },
+    {
+      "key": "npc.omrabas.multi_82",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
+      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
+    },
+    {
+      "key": "npc.omrabas.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
+    },
+    {
+      "key": "npc.pythius_the_rotten.stdmod_12",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
+    },
+    {
+      "key": "npc.raymond_striker.multi_21",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
+    },
+    {
+      "key": "npc.sane_mage.multi_5",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
+      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.feroxa2.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa4.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa4.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa3.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa3.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa5.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.feroxa5.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feroxa",
+      "translated": "Feroxa"
+    },
+    {
+      "key": "monster.undead_cavebear.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
+    },
+    {
+      "key": "monster.ocyakao.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Ocyakao",
+      "translated": "Ocyakao"
+    },
+    {
+      "key": "monster.ocyakao.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Ocyakao",
+      "translated": "Ocyakao"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -62,5 +204,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

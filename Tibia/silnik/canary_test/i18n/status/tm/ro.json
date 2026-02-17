@@ -53054,5 +53054,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:09:23.170812Z"
+  },
+  "cpp.look.perfect_shot": {
+    "src_hash": "47dd9ff799a8f115f3bebaa106d03d69",
+    "text": "Lovitură perfectă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:13:48.247474Z"
+  },
+  "cpp.look.second_many": {
+    "src_hash": "894a208290274479c9e9408927b7c073",
+    "text": "{0} secunde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:13:48.248863Z"
+  },
+  "cpp.look.specialized_magic_level": {
+    "src_hash": "6bf7f45c56d8249fdab942beac2e6baa",
+    "text": "{0} Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:13:48.249354Z"
+  },
+  "cpp.player.imbuement_error": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "A apărut o eroare, vă rugăm să redeschideți fereastra de imbumentare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:13:48.255040Z"
+  },
+  "cpp.look.expire_in": {
+    "src_hash": "4dcb6c6e017da0db500b976f9f258f2b",
+    "text": "care va expira in ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:13:56.876989Z"
+  },
+  "cpp.look.for_level": {
+    "src_hash": "465a04d6fd09323bc5cb3dcaef7fc784",
+    "text": "pentru nivelul {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:13:56.877259Z"
+  },
+  "cpp.look.imbuements": {
+    "src_hash": "74abe4dbe8ab5c5fb72cbc5119eeb1fe",
+    "text": "Imbuențări: (",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:02.245547Z"
+  },
+  "cpp.look.it_can_only_be_used_by": {
+    "src_hash": "faccfada0e1f5d0a061297d475bcbfb1",
+    "text": "Poate fi folosit doar de ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:02.245859Z"
+  },
+  "cpp.look.it_is_empty": {
+    "src_hash": "27e4beb67a5856dec214d43144518ac7",
+    "text": ". Este gol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:02.246063Z"
+  },
+  "cpp.look.it_weighs": {
+    "src_hash": "ef65945163fedeeb7284484a6ddcefd9",
+    "text": "Cântărește {0} oz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:02.246389Z"
+  },
+  "cpp.look.magic_level_n": {
+    "src_hash": "ed8770a4e07871477d3ea12e7bf8416f",
+    "text": "nivel magic {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:02.246616Z"
+  },
+  "cpp.look.magic_level_or_higher": {
+    "src_hash": "dfd18250329dc889f0779b8060acf801",
+    "text": "nivel magic {0} sau mai mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:09.233919Z"
+  },
+  "cpp.look.magic_shield_capacity_fmt": {
+    "src_hash": "46e3e154ed9355b74e1d5fb9e5d60cc4",
+    "text": "{0} și {1}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:09.234290Z"
+  },
+  "cpp.look.mana_shield": {
+    "src_hash": "475e549fe594c71ffa9ca2e3b939c548",
+    "text": "scut de mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:09.234519Z"
+  },
+  "cpp.look.minute_many": {
+    "src_hash": "ee1bd7cfae2f05af809b419cad697dd2",
+    "text": "{0} minute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:09.234735Z"
+  },
+  "cpp.look.not_enough_capacity_these": {
+    "src_hash": "bb1ea8ee44d678240165c6407c1772ef",
+    "text": "Nu aveți suficientă capacitate pentru a transporta aceste obiecte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:09.235157Z"
+  },
+  "cpp.look.not_enough_capacity_this": {
+    "src_hash": "7caeac07bf2119e94f56ed693519201b",
+    "text": "Nu aveți suficientă capacitate pentru a transporta acest obiect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:16.155513Z"
+  },
+  "cpp.look.not_enough_room_these": {
+    "src_hash": "0c810ee97543748ad005e79660622d5e",
+    "text": "Nu aveți suficient spațiu pentru a transporta aceste obiecte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:16.155917Z"
+  },
+  "cpp.look.not_enough_room_this": {
+    "src_hash": "52e2d95118d537b01ed2ce5723152d1b",
+    "text": "Nu aveți suficient spațiu pentru a transporta acest obiect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:16.156291Z"
+  },
+  "cpp.look.nothing_written": {
+    "src_hash": "9e448afdf325b70003bf08c90a437317",
+    "text": "Nu este scris nimic pe el",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:16.156619Z"
+  },
+  "cpp.look.of_level_or_higher": {
+    "src_hash": "98267cb1b96db70c97dab0b65b0f459f",
+    "text": "de nivel {0} sau mai mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:16.156896Z"
+  },
+  "cpp.look.protection_all_fields_fmt": {
+    "src_hash": "489d46c3df42de53fccdc397f0aa0a45",
+    "text": "protejează toate câmpurile {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:22.819180Z"
+  },
+  "cpp.look.protection_all_fmt": {
+    "src_hash": "0e15c2a577e92eb256003d5481fce76d",
+    "text": "protecție toată {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:22.819451Z"
+  },
+  "cpp.look.they_can_only_be_used_by": {
+    "src_hash": "ef1f4a104e43e5787018622afb3395ad",
+    "text": "Ele pot fi folosite doar de ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:22.819866Z"
+  },
+  "cpp.look.they_weigh": {
+    "src_hash": "4dc64177f883e3c77010856949e1ad84",
+    "text": "Cântăresc {0} oz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:22.820134Z"
+  },
+  "cpp.look.tier_amplification": {
+    "src_hash": "60805d7362b278ba4010b8d323ab0523",
+    "text": "{0}% Amplificare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:30.082337Z"
+  },
+  "cpp.look.tier_onslaught": {
+    "src_hash": "951f5608468693af3efa28fca3e9e035",
+    "text": "{0}% Asalt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:30.083059Z"
+  },
+  "cpp.look.tier_transcendence": {
+    "src_hash": "2618f5f0bd67f7aa8eee0e6524b81cee",
+    "text": "{0}% Transcendență",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:30.083845Z"
+  },
+  "cpp.look.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Ești prea departe ca să-l citești",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:32.678880Z"
   }
 }

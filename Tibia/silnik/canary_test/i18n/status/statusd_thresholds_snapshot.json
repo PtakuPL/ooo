@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T07:04:29.248889Z",
+  "timestamp": "2026-02-17T07:11:58.373403Z",
   "source_of_truth": "statusd_thresholds_file",
   "config_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/statusd_thresholds.json",
   "env_overrides_enabled": false,

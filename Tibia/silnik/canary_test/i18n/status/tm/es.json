@@ -7173,7 +7173,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:10:08.858585Z"
+    "updated_at": "2026-02-17T07:08:25.384564Z"
   },
   "talkaction.god.achievement.msg_remove_invalid": {
     "src_hash": "7879bd592d152bea01623b163613ff3c",
@@ -149550,5 +149550,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:03:38.989736Z"
+  },
+  "npc.vascalir.greet_msg_15": {
+    "src_hash": "35568b8c2d5d507d335e708257286f72",
+    "text": "|PLAYERNAME|, ¡bienvenido de nuevo! Fue un gran trabajo el que hiciste allí. Déjame darte algo por tus esfuerzos: te lo mereces. Toma, ¿quieres un casco?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.495757Z"
+  },
+  "npc.vascalir.greet_msg_16": {
+    "src_hash": "4a525e4be64c3592708fbf503a0ecb47",
+    "text": "Saludos, |PLAYERNAME|. ¿Tienes suficiente espacio ahora para el casco de latón?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.497855Z"
+  },
+  "npc.vascalir.greet_msg_17": {
+    "src_hash": "2151fe89e864a7abeb20921a060c83cd",
+    "text": "Saludos, |PLAYERNAME|. ¿Estás listo para tu próxima misión?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.500961Z"
+  },
+  "npc.vascalir.greet_msg_18": {
+    "src_hash": "c625ba291e0275224db1fa4e193372bd",
+    "text": "Saludos, |PLAYERNAME|. Veo que aún no has explorado toda la cripta. ¿Necesitas explicaciones otra vez?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.503249Z"
+  },
+  "npc.vascalir.greet_msg_19": {
+    "src_hash": "baf37ac73012a439d00cab0a26591c37",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Encontraste un bonito hueso carnoso en la cripta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.505799Z"
+  },
+  "npc.vascalir.greet_msg_2": {
+    "src_hash": "f3e3e73917a87b6327fc8925e4f197bf",
+    "text": "Saludos, |PLAYERNAME|. Tu tarea aún no ha terminado. ¿Recuerdas todo lo que debes hacer?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.507839Z"
+  },
+  "npc.vascalir.greet_msg_20": {
+    "src_hash": "f3895cb23896f494aa4e80cefaf5d99b",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Tienes suficiente espacio para esa espada ahora?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.510534Z"
+  },
+  "npc.vascalir.greet_msg_21": {
+    "src_hash": "6e9e092a2431b1415caf8b646c356e03",
+    "text": "¡Saludos, |PLAYERNAME|! Estoy de muy buen humor, debo decir. Casi podemos infiltrarnos en el escondite de Kraknaknork. Tengo un último pequeño favor que pedir y entonces mi plan estará completo. ¿Estás listo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.513100Z"
+  },
+  "npc.vascalir.greet_msg_22": {
+    "src_hash": "60a81ebced61724c09a21450fca1fd20",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! Pero... ¿volverás tan pronto? Encuentra la guarida de las avispas en la región noroeste de Rookgaard y usa el frasco que te di en su cadáver. ¿O perdiste el matraz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.516068Z"
+  },
+  "npc.vascalir.greet_msg_23": {
+    "src_hash": "e16aee9bd4db51e7471d19a9c17f13b8",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Pudiste traer algo de veneno para avispas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.518397Z"
+  },
+  "npc.vascalir.greet_msg_3": {
+    "src_hash": "ed87e69be427140170593aa7f8b545cd",
+    "text": "Saludos, |PLAYERNAME|. Escuché un fuerte estruendo desde el techo. Espero que las piedras no te hayan caído sobre los dedos de los pies. ¿Has cargado al menos dos catapultas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.523027Z"
+  },
+  "npc.vascalir.greet_msg_4": {
+    "src_hash": "623c03eb8999d11f4947269fa2807288",
+    "text": "Saludos, |PLAYERNAME|. En realidad tengo más equipo que podría darte, pero primero quiero ver cómo peleas. Has peleado antes, ¿no?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.526384Z"
+  },
+  "npc.vascalir.greet_msg_5": {
+    "src_hash": "b2e2537ad95bd44b0227465d3e52e36f",
+    "text": "Bienvenido de nuevo, |PLAYERNAME|. ¿Terminaste con las 5 ratas que te pedí que mataras?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.528540Z"
+  },
+  "npc.vascalir.greet_msg_6": {
+    "src_hash": "327f6ab7170c11b2330689f611b298fe",
+    "text": "Bienvenido de nuevo, |PLAYERNAME|. Me alegra ver que regresaste de una pieza. Espero que no estés demasiado agotado, porque podría usar tu {help} nuevamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.531377Z"
+  },
+  "npc.vascalir.greet_msg_7": {
+    "src_hash": "e26c9ffcfeea6fa78c2e70e3a1be0575",
+    "text": "¡Hola |PLAYERNAME|! ¿Has decidido colarte en la guarida de la tarántula y recuperar una muestra de su red? ¿Estás dispuesto a ello?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.533640Z"
+  },
+  "npc.vascalir.greet_msg_8": {
+    "src_hash": "4a56aa95c3edc7b49e2f2292edfd040e",
+    "text": "¿Necesitas nuevamente las instrucciones para la guarida de la tarántula?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.537863Z"
+  },
+  "npc.vascalir.greet_msg_9": {
+    "src_hash": "9d12ed6effdd78f6d2793235b3929f7d",
+    "text": "¡Ah, bien hecho! Déjame tomarte esa muestra de telaraña. Cuidado, cuidado... es resistente, pero frágil. ¡Gracias! Debería poder hacer una gran trampa paralizante con ésta. Toma, también tengo algo resistente para ti. ¿Lo quieres?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.543847Z"
+  },
+  "npc.vascalir.walkaway_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Despedida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.590131Z"
+  },
+  "npc.vescu.farewell_msg_1": {
+    "src_hash": "c341bb7d7fd2e784bb479be5528d79ee",
+    "text": "Es hora de otra b-cerveza. <palejones>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.592505Z"
+  },
+  "npc.vescu.greet_msg_1": {
+    "src_hash": "02e2c0811c024be343279e4e27736ea4",
+    "text": "Oye, pareces alguien que disfruta de un buen {booze}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.594330Z"
+  },
+  "npc.vescu.say_1": {
+    "src_hash": "263e4c45897c9d848f91651ea28ef14d",
+    "text": "Oh, dos trolls. Hola, pequeños dos. <palejones>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.601013Z"
+  },
+  "npc.vescu.walkaway_msg_1": {
+    "src_hash": "263e4c45897c9d848f91651ea28ef14d",
+    "text": "Oh, dos trolls. Hola, pequeños dos. <palejones>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.631513Z"
+  },
+  "npc.virgil.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.633437Z"
+  },
+  "npc.virgil.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.636811Z"
+  },
+  "npc.walter_jaeger.farewell_msg_1": {
+    "src_hash": "7c1e119f07c5fab37a87deb7524675c0",
+    "text": "¡Sigue cazando!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.640149Z"
+  },
+  "npc.walter_jaeger.greet_msg_1": {
+    "src_hash": "bf11d678832224b8eb41723565ec1456",
+    "text": "¡Buena caza! ¡Puedo ofrecerte unos encantadores {rewards} para terminar las tareas de caza de presas! Además, puedo decirte cuántos puntos de tareas de caza (HTP) tienes realmente {have} y ya tienes {spent}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:10:09.643052Z"
   }
 }

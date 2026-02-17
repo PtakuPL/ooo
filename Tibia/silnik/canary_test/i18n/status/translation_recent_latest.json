@@ -1,20 +1,128 @@
 {
-  "timestamp": "2026-02-17T07:04:27.650194Z",
+  "timestamp": "2026-02-17T07:10:13.784534Z",
   "language": "es",
-  "json_file": "modules.json",
-  "translated": 2,
+  "json_file": "npc.json",
+  "translated": 51,
   "entries": [
     {
-      "key": "module.gamestore.text1",
-      "en": "/modules/scripts/gamestore/init.lua",
-      "translated": "/modules/scripts/gamestore/init.lua",
-      "source": "tm"
+      "key": "npc.vascalir.greet_msg_20",
+      "en": "Welcome back, |PLAYERNAME|! Do you have enough space for that sword now?",
+      "translated": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Tienes suficiente espacio para esa espada ahora?",
+      "source": "simple"
     },
     {
-      "key": "module.gamestore.text2",
-      "en": "home/banner_armouredarcher.png",
-      "translated": "inicio/banner_armouredarcher.png",
-      "source": "google_translate"
+      "key": "npc.vascalir.greet_msg_21",
+      "en": "Greetings, |PLAYERNAME|! I'm in a really good mood, I must say. We're almost able to infiltrate Kraknaknork's hideout. I have one last little favour to ask and then my plan is complete. Are you ready?",
+      "translated": "¡Saludos, |PLAYERNAME|! Estoy de muy buen humor, debo decir. Casi podemos infiltrarnos en el escondite de Kraknaknork. Tengo un último pequeño favor que pedir y entonces mi plan estará completo. ¿Estás listo?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_22",
+      "en": "Welcome back, |PLAYERNAME|! But - back so soon? Please find the wasps' lair in the north-western region of Rookgaard and use the flask I gave you on its dead body. Or did you lose the flask?",
+      "translated": "¡Bienvenido de nuevo, |PLAYERNAME|! Pero... ¿volverás tan pronto? Encuentra la guarida de las avispas en la región noroeste de Rookgaard y usa el frasco que te di en su cadáver. ¿O perdiste el matraz?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_23",
+      "en": "Welcome back, |PLAYERNAME|! Were you able to bring back some wasp poison?",
+      "translated": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Pudiste traer algo de veneno para avispas?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_3",
+      "en": "Greetings, |PLAYERNAME|. I've heard a loud rumbling from the roof - I hope the stones didn't fall on your toes. Have you loaded at least two catapults?",
+      "translated": "Saludos, |PLAYERNAME|. Escuché un fuerte estruendo desde el techo. Espero que las piedras no te hayan caído sobre los dedos de los pies. ¿Has cargado al menos dos catapultas?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_4",
+      "en": "Greetings, |PLAYERNAME|. Actually I have some more equipment I could give to you, but first I want to see how you fight. You have fought before, haven't you?",
+      "translated": "Saludos, |PLAYERNAME|. En realidad tengo más equipo que podría darte, pero primero quiero ver cómo peleas. Has peleado antes, ¿no?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_5",
+      "en": "Welcome back, |PLAYERNAME|. Are you done with the 5 rats I asked you to kill?",
+      "translated": "Bienvenido de nuevo, |PLAYERNAME|. ¿Terminaste con las 5 ratas que te pedí que mataras?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_6",
+      "en": "Welcome back, |PLAYERNAME|. Glad to see you made it back in one piece. I hope you're not too exhausted, because I could use your {help} again.",
+      "translated": "Bienvenido de nuevo, |PLAYERNAME|. Me alegra ver que regresaste de una pieza. Espero que no estés demasiado agotado, porque podría usar tu {help} nuevamente.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_7",
+      "en": "Oh, hello |PLAYERNAME|! Have you made up your mind about sneaking into the tarantula's lair and retrieving a sample of her web? Are you up for it?",
+      "translated": "¡Hola |PLAYERNAME|! ¿Has decidido colarte en la guarida de la tarántula y recuperar una muestra de su red? ¿Estás dispuesto a ello?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_8",
+      "en": "Do you need the instruction for the tarantula's lair again?",
+      "translated": "¿Necesitas nuevamente las instrucciones para la guarida de la tarántula?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.greet_msg_9",
+      "en": "Oh, well done! Let me take that spider web sample from you - careful, careful... it's sturdy, yet fragile. Thank you! I should be able to make a great paralyse trap with this one. Here, I have something sturdy for you as well - want it?",
+      "translated": "¡Ah, bien hecho! Déjame tomarte esa muestra de telaraña. Cuidado, cuidado... es resistente, pero frágil. ¡Gracias! Debería poder hacer una gran trampa paralizante con ésta. Toma, también tengo algo resistente para ti. ¿Lo quieres?",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vascalir.walkaway_msg_1",
+      "en": "Farewell.",
+      "translated": "Despedida.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vescu.farewell_msg_1",
+      "en": "T-time for another b-beer. <hicks>",
+      "translated": "Es hora de otra b-cerveza. <palejones>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vescu.greet_msg_1",
+      "en": "Hey t-there, you look like someone who enjoys a good {booze}.",
+      "translated": "Oye, pareces alguien que disfruta de un buen {booze}.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vescu.say_1",
+      "en": "Oh, two t-trolls. Hellooo, wittle twolls. <hicks>",
+      "translated": "Oh, dos trolls. Hola, pequeños dos. <palejones>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.vescu.walkaway_msg_1",
+      "en": "Oh, two t-trolls. Hellooo, wittle twolls. <hicks>",
+      "translated": "Oh, dos trolls. Hola, pequeños dos. <palejones>",
+      "source": "simple"
+    },
+    {
+      "key": "npc.virgil.farewell_msg_1",
+      "en": "Have a nice day.",
+      "translated": "Que tenga un lindo día.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.virgil.walkaway_msg_1",
+      "en": "Have a nice day.",
+      "translated": "Que tenga un lindo día.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.walter_jaeger.farewell_msg_1",
+      "en": "Keep on hunting!",
+      "translated": "¡Sigue cazando!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.walter_jaeger.greet_msg_1",
+      "en": "Good hunting! I can offer you some lovely {rewards} for finishing prey hunting tasks! Furthermore I can tell you how many hunting task points (HTP) you actually {have} and you have already {spent}.",
+      "translated": "¡Buena caza! ¡Puedo ofrecerte unos encantadores {rewards} para terminar las tareas de caza de presas! Además, puedo decirte cuántos puntos de tareas de caza (HTP) tienes realmente {have} y ya tienes {spent}.",
+      "source": "simple"
     }
   ]
 }

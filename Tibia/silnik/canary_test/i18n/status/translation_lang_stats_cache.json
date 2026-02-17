@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T07:04:37.181343Z",
+  "timestamp": "2026-02-17T07:11:56.813076Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,8 +7410,8 @@
         [
           "npc.json",
           1,
-          1771311819299212898,
-          1847414
+          1771312210195186867,
+          1847434
         ],
         [
           "npclib.json",
@@ -7500,7 +7500,7 @@
         [
           "talkactions.json",
           1,
-          1771308626907749448,
+          1771312125542320828,
           18188
         ],
         [
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45089,
-        "english_copy_keys": 2059,
+        "translated_keys": 45114,
+        "english_copy_keys": 2058,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.14,
+        "completion_pct": 84.19,
         "server_keys": 49731,
-        "server_translated": 42023,
-        "server_pct": 84.5,
+        "server_translated": 42048,
+        "server_pct": 84.55,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7817,13 +7817,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771311819299212898,
-            1847414
+            1771312210195186867,
+            1847434
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 11329,
-            "english_copy_keys": 121,
+            "translated_keys": 11354,
+            "english_copy_keys": 120,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -8027,7 +8027,7 @@
         "talkactions.json": {
           "sig": [
             1,
-            1771308626907749448,
+            1771312125542320828,
             18188
           ],
           "row": {
@@ -25395,7 +25395,7 @@
         [
           "modules.json",
           1,
-          1771308633091765279,
+          1771312140610474527,
           1097
         ],
         [
@@ -25770,7 +25770,7 @@
         "modules.json": {
           "sig": [
             1,
-            1771308633091765279,
+            1771312140610474527,
             1097
           ],
           "row": {

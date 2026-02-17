@@ -139,22 +139,23 @@ if (MSVC)
       $<$<CONFIG:Release>:/O1>
       $<$<CONFIG:RelWithDebInfo>:/O1>
     )
-    # Files that trigger ICE C1001 with MSVC 14.44+.
-    # /Od  = disable optimization entirely
-    # /d2SSAOptimizer- = disable SSA optimizer (main ICE trigger)
-    # /Y-  = force-disable precompiled headers (SKIP_PRECOMPILE_HEADERS alone
-    #         doesn't remove /Yu from the Ninja build rule on some CMake versions)
-    # -DOTML_NO_FMT = exclude fmt headers from PCH for OTML TUs (ICE trigger)
+    # Per-file ICE suppression for the two OTML TUs that consistently crash.
+    # NOTE: COMPILE_OPTIONS on set_source_files_properties does NOT work with
+    # Ninja generator. Use COMPILE_FLAGS (space-separated, older CMake property
+    # that works reliably with all generators) instead.
+    #
+    # CRITICAL: SKIP_PRECOMPILE_HEADERS must be ON for these files!
+    # Without it, MSVC warns C4653 (optimization inconsistent with PCH)
+    # and IGNORES our /Od flag, so the ICE still occurs.
+    # The files still get all headers via their own #include chain:
+    #   declarations.h -> global.h -> pch.h
     set_source_files_properties(
-      framework/otml/otmlparser.cpp
       framework/otml/otmlnode.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer- /Y- -DOTML_NO_FMT" SKIP_PRECOMPILE_HEADERS ON
-    )
-    set_source_files_properties(
-      framework/luaengine/luavaluecasts.cpp
-      framework/luafunctions.cpp
-      framework/ui/uiwidgetbasestyle.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer- /Y-" SKIP_PRECOMPILE_HEADERS ON
+      framework/otml/otmlparser.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        SKIP_PRECOMPILE_HEADERS ON
+        COMPILE_DEFINITIONS "OTML_NO_FMT"
     )
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE

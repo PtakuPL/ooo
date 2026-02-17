@@ -28534,5 +28534,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:24:22.055060Z"
+  },
+  "achievement.79.description": {
+    "src_hash": "6c161f64beb08de8d23d70a7da689c2b",
+    "text": "Ești un sculptor de marmură aspirant, cu abilități promițătoare - dovedite de mica statuie perfectă Tibiasula pe care ai modelat-o. Într-o zi vei fi cu adevărat faimos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:41.410632Z"
+  },
+  "achievement.80.description": {
+    "src_hash": "4e10bfec752f724a7e4f4dee2e43c532",
+    "text": "Doamne, este o paaaaaaaaaaaarty! Ești mereu în căutare de distracție, prieteni și băutură și îți place să fii în centrul atenției. Există nenumărate motive pentru a sărbători! Woohoo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:41.411360Z"
+  },
+  "achievement.81.description": {
+    "src_hash": "f183b5b235d80d9fac47fcfa4ea15dc0",
+    "text": "Îți place momentul chiar înainte ca racheta ta să decoleze și să explodeze în culori frumoase - nu numai în ajunul Anului Nou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:41.411933Z"
+  },
+  "achievement.82.description": {
+    "src_hash": "5a1bd6ecb0cd9a0221c8fbb7844a7bf1",
+    "text": "Există... este... pur și simplu... nu... mai bună... cale decât să călătorești pe spatele unei țestoase. Cel puțin vă puteți bucura de împrejurimile frumoase din Laguna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:41.412619Z"
+  },
+  "achievement.83.description": {
+    "src_hash": "04e6fb11566e9d796484f34c436901ec",
+    "text": "Dacă vezi un articol ruginit, nu poți rezista la lustruirea lui. În inventarul tău există întotdeauna un mic balon de rugină – cine știe, s-ar putea să existe o armură de aur sub toată murdăria aceea!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:48.884874Z"
+  },
+  "achievement.84.description": {
+    "src_hash": "1f5c4d4431f0b888f5e6382071c7f8e6",
+    "text": "Probabil că nu ai avut rău de mare în viața ta - îți place să-ți petreci timpul liber pe ocean și să parcurgi destul de multe mile cu nave. Nu ești bucuros că nu a trebuit să înoți toate astea?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:48.885824Z"
+  },
+  "achievement.85.name": {
+    "src_hash": "07eda7b7fdc1b08c5b810584725d6803",
+    "text": "Steampunk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:48.886026Z"
+  },
+  "achievement.85.description": {
+    "src_hash": "2ba5650c5b55ff9de3698f08c9a7f154",
+    "text": "Călătoria cu bărcile cu aburi pitici prin râurile subterane este modalitatea ta preferată de a traversa ținuturile. Fără pescăruși deranjați și bere bună la bord!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:48.886740Z"
+  },
+  "achievement.86.description": {
+    "src_hash": "58ea46d16e4ab831cbdc0bf595537ef6",
+    "text": "Nu ești pur și simplu perfect, minunat, frumos superb? Nu poți trece pe lângă o oglindă fără să-ți admiri aspectul. Sau poate faci o verificare rapidă dacă ți-a rămas ceva înțepenit în dinți, poate?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:48.887477Z"
+  },
+  "achievement.87.description": {
+    "src_hash": "fd27f3238edfaab2c359eb0999c93b81",
+    "text": "Ghicitorii și horoscoapele te ghidează prin viața ta. Și probabil că nu ai îndrăzni să mergi la o vânătoare de vânătoare majoră fără ca craniul tău voodoo de încredere să-ți dea aprobarea pentru ziua respectivă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:55.716005Z"
+  },
+  "achievement.88.name": {
+    "src_hash": "2259f5b5f355a0b335edec255d1305f6",
+    "text": "Trădător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:55.716216Z"
+  },
+  "achievement.88.description": {
+    "src_hash": "3ad11bbe7290fd4fa223afbf27acc215",
+    "text": "Ai servit Yalahar - dar nu păreai atât de sigur pe cine să crezi pe drum. Atât Azerus, cât și Palimuth au avut motive întemeiate pentru acțiunile lor și, astfel, ți-ai urmat instinctul în cele din urmă, chiar dacă i-ai ajutat pe oricare dintre ei. Fie ca Yalahar să prospere!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:55.717215Z"
+  },
+  "achievement.89.description": {
+    "src_hash": "aac296722fcc8501aba222b089e8afd0",
+    "text": "Micile tale statui ale lui Tibiasula au devenit destul de faimoase în jurul Tibia și sunt puțini oameni cu abilități similare când vine vorba de modelarea marmurei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:26:55.717898Z"
+  },
+  "achievement.91.description": {
+    "src_hash": "c59aab4f474e8fa5f35a63a3f47806e8",
+    "text": "Luați un cub de gheață și un cuțit obsidian și foarte probabil veți modela ceva foarte frumos din el. În cea mai mare parte, niște mamuți drăguți, care sunt un succes cu toate fetele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:04.065842Z"
+  },
+  "achievement.92.description": {
+    "src_hash": "67694674448cdce7bd3bd4c9011d5984",
+    "text": "Iubești peștele - dar de preferat pe cei prinși în nordul rece. Chiar dacă sunt greu de găsit, nu te sături niciodată să faci găuri în foile de gheață și să-ți agăți undița de pescuit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:04.066671Z"
+  },
+  "achievement.93.description": {
+    "src_hash": "76e08ee021516f666388d261f53b387b",
+    "text": "Când vine vorba de înțelegerea interrasială, ești un expert. Ai stăpânit limba Chakoya și ai făcut pe cineva foarte fericit cu generozitatea ta. Achuq!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:04.067759Z"
+  },
+  "achievement.94.description": {
+    "src_hash": "c3cf8295a1044ee6eec53783589e85fa",
+    "text": "Lumea ta este norocoasă să te aibă! Nu ezitați să sari și să ajuți atunci când eroi curajoși sunt chemați să salveze lumea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:04.068346Z"
+  },
+  "achievement.95.description": {
+    "src_hash": "3d0348d42ee473cc29c0367bbc8f07b8",
+    "text": "Ești în prima linie atunci când vine vorba de a-ți salva lumea sau de a participa la evenimente sociale. Indiferent dacă o faci observat sau neobservat de oameni, lumea ta se poate baza pe tine pentru a-ți face cu respect partea ta pentru a-l face un loc mai bun pentru toată lumea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:12.344262Z"
+  },
+  "achievement.96.description": {
+    "src_hash": "67f78dfea687809de24c4ec0003b4389",
+    "text": "Nu te consideri prea bun pentru a face treaba murdară în timp ce altcineva ar putea câștiga lauri pentru uciderea lui Devovorga. Nu ar putea face asta fără tine!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:12.344922Z"
+  },
+  "achievement.97.description": {
+    "src_hash": "cadc529b95d6fa6baf90dc52360f370d",
+    "text": "Ai intrat în bârlogul lui Devovorga și te-ai alăturat echipajului care încearcă să o doboare - dacă ai sau nu încununat de succes, nu contează, dar nu te pot învinovăți că nu ai încercat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:12.345631Z"
+  },
+  "achievement.98.description": {
+    "src_hash": "331106ddce0fc8bc5e6045ba72e4d995",
+    "text": "Sufletele sunt ca fluturii. Sufletul negru al unei arme vii care tânjește să lovească stă spulberat sub picioarele tale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:12.346761Z"
+  },
+  "achievement.99.description": {
+    "src_hash": "ff54949d3d65bfb7306ee4f4857bbeef",
+    "text": "Power stă în voința celei care o poruncește. Te-ai luptat cu toată forța - și ai fost mai puternic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:20.517809Z"
+  },
+  "achievement.100.description": {
+    "src_hash": "5ffda734263d18f9c1b306c8e7934006",
+    "text": "Puține lucruri egalează furia sălbatică a unei creaturi prinse și sfâșiate. Ai fost un adversar demn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:20.518447Z"
+  },
+  "achievement.101.description": {
+    "src_hash": "5ac3f5784815ec6ffb4461d39a19a0da",
+    "text": "Ura oarbă a luat formă fizică, răzvrătindu-se violent împotriva nedreptății în care s-a născut. Nu ai fost în stare să faci dreptate – dar măcar pace temporară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:20.519189Z"
+  },
+  "achievement.102.description": {
+    "src_hash": "dc4a0b12dfc02ea960d9cbdd74db1770",
+    "text": "Cunoașterea interzisă a eonilor nu a fost niciodată menită să invadeze această lume. I-ai tăiat vocea înainte de a putea fi auzită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:20.519772Z"
+  },
+  "achievement.103.description": {
+    "src_hash": "70d0258ee7c18d945b4146ceea63421e",
+    "text": "Ai ajutat la doborarea tentaculelor periculoase ale lui Devovorga și a coconului ei uriaș - fără a opri transformarea ei, dar în cele din urmă a finalizat un pas crucial către moartea ei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:20.520466Z"
+  },
+  "achievement.104.name": {
+    "src_hash": "656813c2d018d584fe3c0ec2deef6964",
+    "text": "Nemesisul lui Devovorga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:28.095554Z"
+  },
+  "achievement.104.description": {
+    "src_hash": "4c0e8c76519a7b7e7f70ea5ecd4a4ae2",
+    "text": "Un erou special printre multe. Anul acesta - ai fost tu. Devovorga s-a retras într-un tărâm mai întunecat pentru că nu a putut rezista puterii tale - și a tovarășilor tăi. Timpul va spune dacă alegerea pe care ai făcut-o a fost bună - dar deocamdată ți-a salvat lumea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:28.096543Z"
+  },
+  "achievement.105.description": {
+    "src_hash": "2af7db5bbe74a88ea3b4e7ad7d10cfbd",
+    "text": "Obosit... atât de obosit... să te ghemuiești într-un pat cald și confortabil pare a fi lucrul perfect de făcut chiar acum. Vise plăcute!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:28.097137Z"
+  },
+  "achievement.106.description": {
+    "src_hash": "2e6d1c6710fc23cd0196843bb3816bdf",
+    "text": "Dormit - o faci cu stil. Te relaxezi în hamac, ascultând sunetul păsărilor și al greierilor în timp ce te îndepărtezi încet în tărâmul viselor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:28.097785Z"
+  },
+  "achievement.107.description": {
+    "src_hash": "0bb59e16d387b4c391647ece742ad1fe",
+    "text": "Nu ai nevoie de multe pentru a dormi confortabil. O grămadă de paie și un acoperiș deasupra capului - acesta din urmă fiind complet opțional - este suficient pentru a vă relaxa. Nici măcar nu te deranjează șobolanii care îți ronțăie degetele de la picioare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:28.098736Z"
+  },
+  "achievement.108.description": {
+    "src_hash": "40a2e95d39ae575e25ab68728e93c00a",
+    "text": "Ei bine, conținutul acelui cadou nu a fost exact ceea ce te așteptai. Cu asemenea prieteni, cine are nevoie de dușmani?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:35.453046Z"
+  },
+  "achievement.109.description": {
+    "src_hash": "d733fc74a8b927196f364efcf3eee570",
+    "text": "Atât pentru micul tău prieten cu pene! Poate că să stai în fața cuștii, să-i strângi gâtul și să strigi 'Sing! Sing! Sing!' a fost puțin prea mult pentru asta?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:35.453755Z"
+  },
+  "achievement.110.description": {
+    "src_hash": "3a06079f52afde29d2e766fab34db28c",
+    "text": "Trăiești viața de vânători și culegători. Ei bine, mai ales cea a unui culegător, și mai ales a unuia care adună multe afine. Ți-ai verificat culoarea limbii în ultima vreme?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:27:35.455003Z"
   }
 }

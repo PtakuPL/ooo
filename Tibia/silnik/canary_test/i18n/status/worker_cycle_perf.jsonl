@@ -6869,3 +6869,7 @@
 {"timestamp": "2026-02-17T01:23:18.897466Z", "cycle": 119, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 448, "detail": "count=books.json"}
 {"timestamp": "2026-02-17T01:26:08.161101Z", "cycle": 119, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 169139, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T01:26:13.224108Z", "cycle": 119, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 4858, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T01:26:21.691702Z", "cycle": 119, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "cycle_total", "duration_ms": 205216, "detail": "delay=4"}
+{"timestamp": "2026-02-17T01:26:28.087476Z", "cycle": 120, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 2027, "detail": "count=achievements.json"}
+{"timestamp": "2026-02-17T01:28:14.133897Z", "cycle": 120, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 105910, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T01:28:19.723218Z", "cycle": 120, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 4847, "detail": "throttle_every=1"}

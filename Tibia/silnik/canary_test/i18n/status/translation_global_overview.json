@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T01:26:12.986559Z",
+  "timestamp": "2026-02-17T01:28:19.499460Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 288597,
+    "translated_keys": 288696,
     "english_copy_keys": 166325,
     "missing_keys": 2155,
     "missing_files": 0,
@@ -49,10 +49,10 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 2656,
-    "guard_reports_blocked": 2590,
+    "guard_reports_total": 2659,
+    "guard_reports_blocked": 2593,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2590
+    "cannot_translate_reports_visible": 2593
   },
   "cache": {
     "lang_stats_hits": 49,
@@ -65,40 +65,40 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T01:26:08.161101Z",
-    "cycle": 119,
+    "timestamp": "2026-02-17T01:28:14.133897Z",
+    "cycle": 120,
     "mode": "AUTO_TRANSLATE",
     "category": "ro",
     "events": {
-      "dispatch": 448,
-      "mode_run": 169139
+      "dispatch": 2027,
+      "mode_run": 105910
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T00:26:11.959205Z",
-    "window_end_utc": "2026-02-17T01:26:11.959205Z",
+    "window_start_utc": "2026-02-17T00:28:18.517175Z",
+    "window_end_utc": "2026-02-17T01:28:18.517175Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 171,
+    "total_cycles": 165,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 171
+      "AUTO_TRANSLATE": 165
     },
-    "auto_translate_cycles": 171,
+    "auto_translate_cycles": 165,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 4295,
-    "guard_fail": 2119,
-    "guard_fail_rate_pct": 33.0,
+    "translated": 4059,
+    "guard_fail": 2110,
+    "guard_fail_rate_pct": 34.2,
     "no_progress_entries": 2,
-    "no_progress_rate_pct": 1.8,
-    "throughput_keys_per_h": 2410.7,
-    "suspicious_total": 15057,
+    "no_progress_rate_pct": 1.9,
+    "throughput_keys_per_h": 2287.5,
+    "suspicious_total": 14172,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -125,12 +125,6 @@
         "guard_command": 0
       },
       {
-        "target": "pl/monsters.json",
-        "translated": 100,
-        "guard_fail": 72,
-        "guard_command": 0
-      },
-      {
         "target": "es/questlog.json",
         "translated": 84,
         "guard_fail": 60,
@@ -147,21 +141,29 @@
         "translated": 51,
         "guard_fail": 49,
         "guard_command": 0
+      },
+      {
+        "target": "es/talkactions.json",
+        "translated": 1,
+        "guard_fail": 42,
+        "guard_command": 1
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T01:26:08.101941Z",
+      "timestamp": "2026-02-17T01:28:14.589848Z",
       "checked_entries": 100,
-      "issues_found": 7,
+      "issues_found": 8,
       "issues_by_type": {
-        "identical_to_en_exempt": 15,
+        "identical_to_en_exempt": 17,
         "artifact_token": 7,
-        "suspicious_log_high": 153,
+        "identical_to_en": 1,
+        "suspicious_log_high": 149,
         "suspicious_log_critical": 47,
-        "suspicious_rejected_critical": 169,
-        "suspicious_rejected_high": 31
+        "suspicious_log_low": 4,
+        "suspicious_rejected_critical": 173,
+        "suspicious_rejected_high": 27
       },
       "issues": [
         {
@@ -212,6 +214,13 @@
           "type": "artifact_token",
           "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
           "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+        },
+        {
+          "key": "spell.emberbeastarea.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "emberBeastArea",
+          "translated": "emberBeastArea"
         }
       ],
       "threshold": 10,
@@ -236,9 +245,9 @@
         "total_rejected": 921,
         "total_gt_guard_fail": 2532,
         "cycles": 844,
-        "quality_score": 66.0,
-        "last_audit": "2026-02-17T01:26:08.101941Z",
-        "issues_count": 119809
+        "quality_score": 69.8,
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 119837
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -259,8 +268,8 @@
         "total_gt_guard_fail": 11490,
         "cycles": 1024,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T01:26:08.101941Z",
-        "issues_count": 175308
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 175580
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -291,9 +300,9 @@
         "total_rejected": 36,
         "total_gt_guard_fail": 185,
         "cycles": 121,
-        "quality_score": 60.3,
-        "last_audit": "2026-02-17T01:26:08.101941Z",
-        "issues_count": 7757
+        "quality_score": 66.5,
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 7787
       },
       "ru": {
         "last_cycle": "2026-02-17T01:25:52.323830Z",
@@ -302,9 +311,9 @@
         "total_rejected": 240,
         "total_gt_guard_fail": 603,
         "cycles": 116,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T01:26:08.101941Z",
-        "issues_count": 21111
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 21311
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -318,15 +327,15 @@
         "issues_count": 649
       },
       "sv": {
-        "last_cycle": "2026-02-17T01:19:13.912765Z",
-        "last_translated": 49,
-        "total_suspicious": 1678,
-        "total_rejected": 66,
-        "total_gt_guard_fail": 133,
-        "cycles": 71,
-        "quality_score": 73.1,
-        "last_audit": "2026-02-17T01:26:08.101941Z",
-        "issues_count": 6145
+        "last_cycle": "2026-02-17T01:28:04.935467Z",
+        "last_translated": 20,
+        "total_suspicious": 1699,
+        "total_rejected": 85,
+        "total_gt_guard_fail": 163,
+        "cycles": 72,
+        "quality_score": 64.6,
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 6215
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -637,15 +646,15 @@
         "issues_count": 111
       },
       "sr": {
-        "last_cycle": "2026-02-17T01:19:18.236497Z",
+        "last_cycle": "2026-02-17T01:28:08.357212Z",
         "last_translated": 50,
-        "total_suspicious": 682,
+        "total_suspicious": 684,
         "total_rejected": 1,
         "total_gt_guard_fail": 170,
-        "cycles": 68,
-        "quality_score": 75.9,
-        "last_audit": "2026-02-17T01:13:35.715243Z",
-        "issues_count": 2177
+        "cycles": 69,
+        "quality_score": 87.6,
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 2183
       },
       "sw": {
         "last_cycle": "2026-02-14T07:01:40.295561Z",
@@ -769,15 +778,15 @@
         "issues_count": 958
       },
       "ro": {
-        "last_cycle": "2026-02-17T01:24:22.108599Z",
-        "last_translated": 33,
-        "total_suspicious": 19267,
-        "total_rejected": 576,
-        "total_gt_guard_fail": 785,
-        "cycles": 98,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T01:26:08.101941Z",
-        "issues_count": 25348
+        "last_cycle": "2026-02-17T01:27:35.505683Z",
+        "last_translated": 35,
+        "total_suspicious": 19281,
+        "total_rejected": 590,
+        "total_gt_guard_fail": 800,
+        "cycles": 99,
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T01:28:14.589848Z",
+        "issues_count": 25558
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -791,7 +800,7 @@
         "issues_count": 80
       }
     },
-    "summary": "OK | 7 issue(s) / 100 entries | 2026-02-17T01:26:08.101941Z"
+    "summary": "OK | 8 issue(s) / 100 entries | 2026-02-17T01:28:14.589848Z"
   },
   "languages": [
     {
@@ -867,14 +876,14 @@
       "language_name": "Rumuński",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 11562,
-      "english_copy_keys": 2445,
+      "translated_keys": 11595,
+      "english_copy_keys": 2444,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 21.58,
+      "completion_pct": 21.64,
       "server_keys": 49731,
-      "server_translated": 11245,
-      "server_pct": 22.61,
+      "server_translated": 11278,
+      "server_pct": 22.68,
       "client_keys": 3855,
       "client_translated": 317,
       "client_pct": 8.22
@@ -918,14 +927,14 @@
       "language_name": "SR",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 5781,
+      "translated_keys": 5830,
       "english_copy_keys": 2468,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 10.79,
+      "completion_pct": 10.88,
       "server_keys": 49731,
-      "server_translated": 5681,
-      "server_pct": 11.42,
+      "server_translated": 5730,
+      "server_pct": 11.52,
       "client_keys": 3855,
       "client_translated": 100,
       "client_pct": 2.59
@@ -935,14 +944,14 @@
       "language_name": "Szwedzki",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 4650,
-      "english_copy_keys": 2528,
+      "translated_keys": 4667,
+      "english_copy_keys": 2529,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 8.68,
+      "completion_pct": 8.71,
       "server_keys": 49731,
-      "server_translated": 4508,
-      "server_pct": 9.06,
+      "server_translated": 4525,
+      "server_pct": 9.1,
       "client_keys": 3855,
       "client_translated": 142,
       "client_pct": 3.68

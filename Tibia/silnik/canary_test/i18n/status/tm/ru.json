@@ -33326,5 +33326,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:35:19.928912Z"
+  },
+  "quests.pits_of_inferno.throne_say_2": {
+    "src_hash": "4626bc832fa6a49df4ef7bd01ae0933b",
+    "text": "Вы прикоснулись к трону Тафариэля и впитали в себя часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:15.367787Z"
+  },
+  "quests.pits_of_inferno.throne_say_3": {
+    "src_hash": "e4fc7313dc3a16917ce00d9d3d81037a",
+    "text": "Вы прикоснулись к трону Верминора и поглотили часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:15.368487Z"
+  },
+  "quests.pits_of_inferno.throne_say_4": {
+    "src_hash": "df9c98fd901a5a7ce92caf391e334ec3",
+    "text": "Вы прикоснулись к трону Apocalypse и впитали в себя часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:20.600416Z"
+  },
+  "quests.pits_of_inferno.throne_say_5": {
+    "src_hash": "a6c231f5c8d0d440f9a25dd728b1276f",
+    "text": "Вы прикоснулись к трону Базира и впитали в себя часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:20.601969Z"
+  },
+  "quests.pits_of_inferno.throne_say_6": {
+    "src_hash": "f7524dcee093d05f1543b4a037a86627",
+    "text": "Вы прикоснулись к трону Ашфалора и впитали в себя часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:20.603185Z"
+  },
+  "quests.pits_of_inferno.throne_say_7": {
+    "src_hash": "2cddd74c3cb03b1c671c1907b470af88",
+    "text": "Вы прикоснулись к трону Пумина и впитали в себя часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:20.604430Z"
+  },
+  "quests.quest_system2.say_1": {
+    "src_hash": "45736d9194d6da01cb301f6b7eaecca0",
+    "text": "На полке спрятана пачка документов. Это может представлять интерес для Заламона.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:20.605712Z"
+  },
+  "quests.quest_system2.say_2": {
+    "src_hash": "53e7fc6825a02b3708b232a180d94e0a",
+    "text": "Вы выкапываете череп из груды костей. Должно быть, это тот самый череп, о котором говорил Лазаран.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:22.712544Z"
+  },
+  "quests.quest_system2.say_3": {
+    "src_hash": "032cb9ca7fa8271b3e143fcbac1c8386",
+    "text": "Чтобы выиграть время, замените рыбу кусочком моркови.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:37:22.713163Z"
   }
 }

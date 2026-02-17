@@ -1,14 +1,15 @@
 {
-  "timestamp": "2026-02-17T07:44:42.875269Z",
+  "timestamp": "2026-02-17T07:45:47.364008Z",
   "checked_entries": 100,
-  "issues_found": 41,
+  "issues_found": 42,
   "issues_by_type": {
-    "identical_to_en_exempt": 3,
-    "identical_to_en": 25,
+    "identical_to_en": 26,
+    "identical_to_en_exempt": 7,
     "artifact_token": 16,
-    "suspicious_log_high": 138,
+    "suspicious_log_high": 123,
+    "suspicious_log_low": 13,
     "suspicious_log_critical": 38,
-    "suspicious_log_low": 24,
+    "suspicious_log_medium": 26,
     "suspicious_rejected_critical": 176,
     "suspicious_rejected_high": 24
   },
@@ -299,6 +300,13 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "scripts.actions_brain.msg_1",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "<brzzl> <frzzp> <fsssh>",
+      "translated": "<brzzl> <frzzp> <fsssh>"
     }
   ],
   "threshold": 10,

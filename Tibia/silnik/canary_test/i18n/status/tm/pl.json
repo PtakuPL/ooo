@@ -115086,5 +115086,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:43:29.323435Z"
+  },
+  "scripts.hot_cuisine.recipe_1": {
+    "src_hash": "6a3ec1a95af7e1b2b04cbaee16fae27c",
+    "text": "Gulasz Rotworm\n- 2 kawałki mięsa\n- 2 fiolki piwa\n- 20 ziemniaków\n- 1 cebula\n- 1 czosnek\n- 5 uncji mąki\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.498235Z"
+  },
+  "scripts.hot_cuisine.recipe_11": {
+    "src_hash": "4ff57c32e167b0faa8fb101ffd795378",
+    "text": "Zapiekanka z krewetkami kokosowymi\n- 5 fiolek mleka\n- 5 brązowych grzybów\n- 5 czerwonych grzybów\n- 10 kulek ryżowych\n- 10 krewetek\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.501069Z"
+  },
+  "scripts.hot_cuisine.recipe_12": {
+    "src_hash": "118353e621fb0e19cba04719a81e9213",
+    "text": "Garnek blackjacka\n- 5 muszli piaskowca\n- 2 fiolki wody\n- 20 marchewek\n- 10 ziemniaków\n- 3 papryczki jalapeno\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.503354Z"
+  },
+  "scripts.hot_cuisine.recipe_13": {
+    "src_hash": "2bdad6ce578af92b2cb486f8f80e36d1",
+    "text": "Demoniczna Cukierkowa Kula\n- 3 cukierki\n- 3 laski cukierków\n- 2 tabliczki czekolady\n- 15 pierników\n- 1 skoncentrowana demoniczna krew\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.505515Z"
+  },
+  "scripts.hot_cuisine.recipe_14": {
+    "src_hash": "1140e64e8d5eb30c4e71354da9b46c65",
+    "text": "Słodki eliksir z mangonu\n- 100 jaj\n- 50 mango\n- 10 plastrów miodu\n- 1 butelka mleka owadowego\n- 1 błogosławiony drewniany kołek\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.507788Z"
+  },
+  "scripts.hot_cuisine.recipe_3": {
+    "src_hash": "74e2a32b597b36444570454fb18778e4",
+    "text": "Pieczone Skrzydła Smoka\n- 1 Świeży martwy nietoperz\n- 3 papryczki Jalapeño\n- 5 brązowych chlebów\n- 2 jajka\n- 1 Ziele w proszku\n- 5 czerwonych grzybów\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.511582Z"
+  },
+  "scripts.hot_cuisine.recipe_4": {
+    "src_hash": "f83a3b4a44c750f9a4a513b7c685d58a",
+    "text": "Tropikalny smażony Terrorbird\n- 1 Świeży martwy kurczak\n- 2 cytryny\n- 2 pomarańcze\n- 2 mango\n- 2 fiolki mleka kokosowego\n- 1 Zioło kamienne\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.513696Z"
+  },
+  "scripts.hot_cuisine.recipe_5": {
+    "src_hash": "0f7c441318b2c86884cf0540285528d9",
+    "text": "Shake bananowo-czekoladowy\n- 1 tabliczka czekolady\n- 1 ciasto kremowe\n- 2 banany\n- 2 fiolki mleka\n- 1 ziele procy\n- 1 gwiazdkowe zioło\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.515857Z"
+  },
+  "scripts.hot_cuisine.recipe_6": {
+    "src_hash": "44dc10737eeae7219603a1dbd305e3ea",
+    "text": "Zapiekanka warzywna\n- 2 marchewki\n- 2 pomidory\n- 2 kolby kukurydzy\n- 2 ogórki\n- 1 cebula\n- 1 czosnek\n- 1 ser\n- 20 białych grzybów\n- 5 brązowych grzybów\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.518120Z"
+  },
+  "scripts.hot_cuisine.recipe_7": {
+    "src_hash": "4e2c6a5205407f9516839ff1b53d95c6",
+    "text": "Nadziewane papryczki Jalapeño\n- 10 papryczek Jalapeño\n- 2 sery\n- 1 Troll zielony\n- 1 Ziele Cienia\n- 1 fiolka miodu pitnego\n- 2 jajka\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.520291Z"
+  },
+  "scripts.hot_cuisine.recipe_8": {
+    "src_hash": "80d25ed352dd5cdca6ceb276f161b024",
+    "text": "Błogosławiony stek\n- 1 kawałek szynki\n- 5 śliwek\n- 1 cebula\n- 2 buraki\n- 1 dynia\n– 2 papryczki Jalapeño\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.522504Z"
+  },
+  "scripts.hot_cuisine.recipe_9": {
+    "src_hash": "e3610f408cc4708c76feec580e7e7a82",
+    "text": "Północny Fishburger\n- 1 szczupak północny\n- 1 pstrąg tęczowy\n- 1 zielony okoń\n- 5 krewetek\n- 2 rolki\n- 1 paproć\n",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:24.524535Z"
+  },
+  "scripts.actions_brain.msg_1": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<brzzl> <frzzp> <fsssh>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:28.544517Z"
+  },
+  "scripts.actions_present.say_1": {
+    "src_hash": "c77dff2394ea6d558f56a3251d0a8350",
+    "text": "Otwierasz prezent.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:45:35.061726Z"
   }
 }

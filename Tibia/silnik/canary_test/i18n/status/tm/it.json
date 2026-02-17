@@ -1729,11 +1729,11 @@
   },
   "data.otservbr.global.npc.amber.L427.529": {
     "src_hash": "887efd8fd27234772fbb778a5f22828a",
-    "text": "See you later, |PLAYERNAME|.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ci vediamo più tardi, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.070948Z"
+    "updated_at": "2026-02-17T06:32:44.191999Z"
   },
   "data.otservbr.global.npc.andrew.lyze.L107.517": {
     "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
@@ -1745,19 +1745,19 @@
   },
   "data.otservbr.global.npc.andrew.lyze.L263.518": {
     "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
-    "text": "Well, bye then.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Bene, allora ciao.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.072012Z"
+    "updated_at": "2026-02-17T06:32:54.870294Z"
   },
   "data.otservbr.global.npc.andrew.lyze.L264.519": {
     "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
-    "text": "Good bye.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Arrivederci.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.072341Z"
+    "updated_at": "2026-02-17T06:32:54.870538Z"
   },
   "data.otservbr.global.npc.anerui.L71.1487": {
     "src_hash": "aa4114434bc744c1e617f6dab17ec06c",
@@ -54694,5 +54694,221 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T06:23:56.441221Z"
+  },
+  "data.otservbr.global.npc.aurita.L115.172": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.023486Z"
+  },
+  "data.otservbr.global.npc.aurita.L116.173": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.023888Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L89.116": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.072166Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L90.117": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.072690Z"
+  },
+  "data.otservbr.global.npc.elane.L243.586": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.077615Z"
+  },
+  "data.otservbr.global.npc.elane.L244.587": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.077933Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L177.896": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.150535Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L178.897": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.150953Z"
+  },
+  "data.otservbr.global.npc.torkada.L98.1010": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.212103Z"
+  },
+  "data.otservbr.global.scripts.quests.chayenne.realm.actions.lever.L11.1689": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "Non hai la chiave magica di Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.246952Z"
+  },
+  "data.otservbr.global.scripts.quests.chayenne.realm.actions.lever.L6.1688": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "È necessario attendere qualche minuto per riutilizzarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.247464Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L24.1932": {
+    "src_hash": "bf8eb5cea5fb9a7b45fbb13219aa888a",
+    "text": "Un suono rimbombante quasi ti assorda. Da qualche parte nel profondo senti un sussurro: 'Grass...'",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.287562Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L27.1933": {
+    "src_hash": "78a561116ea546f45d52fd26a3470348",
+    "text": "Un suono rimbombante quasi ti assorda. Da qualche parte nel profondo senti un sussurro: 'Ice...'",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.288622Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.lost.time.L9.2127": {
+    "src_hash": "e765991be3e63a9ff069546c348d7240",
+    "text": "Il perditempo consuma avidamente il tempo e svanisce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.292802Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.lyre.L5.1666": {
+    "src_hash": "5f4ad7bede9a628e2470894a6895cab4",
+    "text": "Hai trovato Lira.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.313930Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.lyre.L9.1667": {
+    "src_hash": "7c5623cfc2f732af0abd9b62f218f05a",
+    "text": "La borsa non può essere aperta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:40.314393Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Oh ciao, piacere di vederti |PLAYERNAME|. Sei qui per ascoltare alcune storie del mio {adventures} o hai bisogno di {help}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:44.192539Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Arrivederci. Prego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:50.976228Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Ciao, sono il direttore di questo {monument}. Il {sarcophagus} di fronte a te è stato creato per impedire alle persone di andarci {down}. Ma dubito che questo passaggio sia sufficiente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:50.976953Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Bene, vediamo se la tua missione ha avuto successo. Portami tutto il necessario {materials}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:50.977403Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Se hai raccolto tutti e tre i cristalli in quantità sufficiente e hai ottenuto la ghiandola del veleno, la ricarica della tua bussola può iniziare! Per la prima volta verrà caricato dal cristallo viola. Pronti a {unleash} il potere dei cristalli?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:32:50.978345Z"
+  },
+  "data.otservbr.global.npc.aneus.L130.1323": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Saluti avventuriero |PLAYERNAME|. Cosa ti porta da me?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:21.871082Z"
+  },
+  "data.otservbr.global.npc.aneus.L131.1324": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "Arrivederci e abbi cura di te!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:21.871453Z"
+  },
+  "data.otservbr.global.npc.angelina.L58.143": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Bisogna lodare gli dei perché finalmente sono stato salvato. Non ho molti beni terreni, ma per favore accetta una piccola ricompensa, vero?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:21.872204Z"
+  },
+  "data.otservbr.global.npc.angelina.L60.144": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Grazie per avermi salvato la vita! Dovrei teletrasportarti fuori dalla Cattedrale Oscura?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:21.872865Z"
+  },
+  "data.otservbr.global.npc.angelina.L84.145": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Che gli dei ti benedicano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:21.873203Z"
+  },
+  "data.otservbr.global.npc.angelina.L85.146": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Che gli dei ti benedicano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:23.602659Z"
   }
 }

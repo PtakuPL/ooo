@@ -33118,5 +33118,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:25:30.869129Z"
+  },
+  "data.otservbr.global.npc.cobra.L53.1172": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Встаньте на путь распада!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.277007Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.hidden.note.L9.2170": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Вы нашли лист бумаги.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.571187Z"
+  },
+  "game.loot.pickup.gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Вы украли {0} золота.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.599804Z"
+  },
+  "game.loot.pickup.item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Вы украли 1 предмет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.600459Z"
+  },
+  "game.loot.pickup_failed.gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Вы не могли добыть {0} золота.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.601749Z"
+  },
+  "game.loot.summary.gold_only": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Вы украли {0} золота.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.603175Z"
+  },
+  "game.loot.summary.single_item_only": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Вы украли 1 предмет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.604084Z"
+  },
+  "game.stash.withdraw_limit": {
+    "src_hash": "9a01da13149e0a5035736e78737126ce",
+    "text": "Вы можете за раз извлечь из тайника не более {0} предметов.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.605325Z"
+  },
+  "game.trade.move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} говорит вам подойти ближе.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.606072Z"
+  },
+  "game.trade.request": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} хочет торговать с вами.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:33:30.606844Z"
   }
 }

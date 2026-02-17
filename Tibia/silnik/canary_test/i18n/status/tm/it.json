@@ -62702,5 +62702,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:10:08.008209Z"
+  },
+  "client.tasks.text3": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Seleziona il mostro dall'elenco dei mostri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:41.773755Z"
+  },
+  "client.blessing.text1": {
+    "src_hash": "71e37136fcdaf8d5610c4999e1d3bc30",
+    "text": "Registro delle benedizioni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:41.781431Z"
+  },
+  "client.blessing.text3": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Il tuo personaggio è promosso e il tuo account ha Premium\nstato. Di conseguenza, la perdita di XP viene ridotta di",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:41.782354Z"
+  },
+  "client.blessing.text4": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Il tuo personaggio è promosso e il tuo account ha Premium\nstato. Di conseguenza, la perdita di XP viene ridotta di",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:41.783016Z"
+  },
+  "client.tasks.text4": {
+    "src_hash": "0d3a4946f6dad8ce0a07abe8837ba269",
+    "text": "Vuoi davvero interrompere questa attività?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:45.831532Z"
+  },
+  "client.http.text1": {
+    "src_hash": "0e3c1d553071f45ae73c51aa46fc11d8",
+    "text": "Mozilla/5.0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:45.831788Z"
+  },
+  "client.http.text2": {
+    "src_hash": "01fa7f139e0a66fd80ea634c1aab2b56",
+    "text": "HTTP.get non è supportato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:45.832138Z"
+  },
+  "client.string.text1": {
+    "src_hash": "c52e8733f45fb0e1a011ab5842cfc43b",
+    "text": ".. parola ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:51.423040Z"
+  },
+  "client.uimessagebox.text1": {
+    "src_hash": "bf4552dbc37b3b310d3ec89c6f613154",
+    "text": "0 0 108 20",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:51.423279Z"
+  },
+  "client.uipopupmenu.text1": {
+    "src_hash": "b25b16f6372b758f017c5ec5346c4dec",
+    "text": "Etichetta di scelta rapida del menu di scorrimento popup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:51.423574Z"
+  },
+  "client.uiwidget.text1": {
+    "src_hash": "6727197a142f594e050449a9c03a11bb",
+    "text": ".. contenuto ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:55.391873Z"
+  },
+  "client.uiwidget.text2": {
+    "src_hash": "5b638c2b9c736a2ef975b857f04592e5",
+    "text": "..colore..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:55.392124Z"
+  },
+  "client.tooltip.text1": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:55.392405Z"
+  },
+  "client.tooltip.text2": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:55.392626Z"
+  },
+  "client.tooltip.text3": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:11:55.392843Z"
+  },
+  "client.tooltip.text4": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:00.486603Z"
+  },
+  "client.keybind.text1": {
+    "src_hash": "13108f971825f65d3e53ac5d566fc7dd",
+    "text": "controlli-preset",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:00.486872Z"
+  },
+  "client.keybind.text2": {
+    "src_hash": "822ed8c2e829a6224711cb41d0351417",
+    "text": "controlli-preset-corrente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:00.487112Z"
+  },
+  "client.keybind.text3": {
+    "src_hash": "836876bd974b725daf1f41a0a676f945",
+    "text": ".. parametro.dati.hotkey ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:00.487365Z"
+  },
+  "client.keybind.text4": {
+    "src_hash": "13108f971825f65d3e53ac5d566fc7dd",
+    "text": "controlli-preset",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:00.487576Z"
+  },
+  "client.locales.text4": {
+    "src_hash": "3aedd71da51f4a9db6b7b671c4fba5be",
+    "text": "' manca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:05.665455Z"
+  },
+  "client.neededtranslations.text1": {
+    "src_hash": "8ade35fdb6abe34f78026c4de4e3d51a",
+    "text": "Non allungare/ridurre la finestra di gioco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:05.665774Z"
+  },
+  "client.neededtranslations.text2": {
+    "src_hash": "85430ecf57924d2a1afc8e002853f8ab",
+    "text": "Se chiudi il programma, il tuo personaggio potrebbe rimanere nel gioco.\nFai clic su 'Logout' per assicurarti che il tuo personaggio lasci il gioco correttamente.\nClicca su 'Exit' se vuoi uscire dal programma senza ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:05.666586Z"
+  },
+  "client.neededtranslations.text5": {
+    "src_hash": "1a77494fd9c7f350499ffc88406025bf",
+    "text": "Assicurati che il tuo cliente utilizzi\nla versione corretta del client di gioco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:05.666964Z"
+  },
+  "client.skills.text1": {
+    "src_hash": "41490037dee04a1c564d525637aeea5a",
+    "text": "Mostra/nascondi le finestre delle abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:05.667295Z"
+  },
+  "client.skills.text2": {
+    "src_hash": "41490037dee04a1c564d525637aeea5a",
+    "text": "Mostra/nascondi le finestre delle abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:10.180117Z"
+  },
+  "client.skills.text3": {
+    "src_hash": "41490037dee04a1c564d525637aeea5a",
+    "text": "Mostra/nascondi le finestre delle abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:10.180451Z"
+  },
+  "client.topmenu.text1": {
+    "src_hash": "725e8a97e679d9c98277eb047d355111",
+    "text": "Attiva/disattiva il menu principale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:10.180692Z"
+  },
+  "client.topmenu.text2": {
+    "src_hash": "66b5520051049d3712fb6477725bec14",
+    "text": "Ctrl+Maiusc+T",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:10.180885Z"
+  },
+  "client.topmenu.text3": {
+    "src_hash": "725e8a97e679d9c98277eb047d355111",
+    "text": "Attiva/disattiva il menu principale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:10.181116Z"
+  },
+  "client.topmenu.text4": {
+    "src_hash": "725e8a97e679d9c98277eb047d355111",
+    "text": "Attiva/disattiva il menu principale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:15.164877Z"
+  },
+  "client.imbuing.text1": {
+    "src_hash": "60d65769e17d580b4cc077b24ba2b1dd",
+    "text": "Informazioni sull'articolo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:15.165128Z"
+  },
+  "client.imbuing.text2": {
+    "src_hash": "18adfb026ad4b2df79b6c2ec81a59f14",
+    "text": "Seleziona slot:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:15.165327Z"
+  },
+  "client.imbuing.text3": {
+    "src_hash": "bb2a2334aa0d8fbb37d661b97fc6c766",
+    "text": "Slot vuoto Imbevuto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:15.165548Z"
+  },
+  "client.imbuing.text4": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Clicca qui per effettuare l'imbevimento selezionato. Ciò consumerà le fonti astrali e l'oro richieste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:15.166135Z"
+  },
+  "client.imbuing.text5": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Imbevuto chiaro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:23.001093Z"
+  },
+  "client.textmessage.text1": {
+    "src_hash": "5b427eb87df49635a553759eba2359ab",
+    "text": "Registro del server",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:23.001309Z"
+  },
+  "client.elementnode.text1": {
+    "src_hash": "03f21ad7227062061a33a7766faae58d",
+    "text": "gettoni separati da spazi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:23.001570Z"
+  },
+  "client.elementnode.text2": {
+    "src_hash": "7421bf1678cb478f6cb1f3e27a79beb0",
+    "text": ", precedendo l'opzionale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:23.001817Z"
+  },
+  "client.elementnode.text3": {
+    "src_hash": "0fc40b454fa8d846c246e663e1b9bc24",
+    "text": ".. -- e = l'opzionale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:23.002341Z"
+  },
+  "client.elementnode.text4": {
+    "src_hash": "2c29ac4da559804e11ae6d975aa6ddd5",
+    "text": "-- v = qualsiasi cosa che segue il",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:30.215465Z"
+  },
+  "client.elementnode.text5": {
+    "src_hash": "e21b770f75235f465600dff79ab61fb4",
+    "text": ", o altro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:30.215677Z"
+  },
+  "client.htmlparser.text1": {
+    "src_hash": "95827181e8ae8791a144b16360d021c4",
+    "text": "ElementoNodo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:30.215867Z"
+  },
+  "client.htmlparser.text3": {
+    "src_hash": "7523ea87fe889e320f2e1f75b488e47d",
+    "text": "Impossibile trovare almeno due bytecode non utilizzati in questo codice HTML. Ne abbiamo bisogno per sfuggire ai segnaposto contenuti tra parentesi all'interno dei tag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:30.216875Z"
   }
 }

@@ -36094,5 +36094,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:55:13.160406Z"
+  },
+  "lib.player.msg_found_no_room": {
+    "src_hash": "c9499e120b66fd0fae028c209ce3d8d0",
+    "text": "Вы нашли {itemName}, но у вас нет места, чтобы его взять.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:43.169943Z"
+  },
+  "lib.player.msg_found_too_heavy": {
+    "src_hash": "e4d00b7f259b906fef99fce9909c1ebe",
+    "text": "Вы нашли {itemName}. При весе {weight} унции он слишком тяжел для вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:43.170686Z"
+  },
+  "lib.player.msg_monster_not_found": {
+    "src_hash": "dd4b132c13641042c97da481798fb2fc",
+    "text": "Монстр не найден.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:43.171012Z"
+  },
+  "lib.player.msg_need_premium": {
+    "src_hash": "d10e0f3404950e7ed3fccf7a8dbd72a3",
+    "text": "Вам нужен премиум-аккаунт.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:43.171314Z"
+  },
+  "lib.player.msg_paid_inventory": {
+    "src_hash": "213135402a56d93835c1ed7a79149928",
+    "text": "Заплачено {amount} золота из инвентаря.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:45.924655Z"
+  },
+  "lib.player.msg_paid_mixed": {
+    "src_hash": "9ab0b3d6f4d401f0ba121e9e09305972",
+    "text": "Выплачено {inventoryAmount} из инвентаря и {bankAmount} золота с банковского счета. Баланс вашего счета теперь составляет {balance} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:12:45.925450Z"
   }
 }

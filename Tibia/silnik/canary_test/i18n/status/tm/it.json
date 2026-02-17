@@ -32094,5 +32094,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:49:55.164812Z"
+  },
+  "item.42394.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.646252Z"
+  },
+  "item.42395.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.646547Z"
+  },
+  "item.42396.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.646908Z"
+  },
+  "item.42397.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.647160Z"
+  },
+  "item.4240.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.647567Z"
+  },
+  "item.4241.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.647865Z"
+  },
+  "item.4242.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.648122Z"
+  },
+  "item.4246.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.648392Z"
+  },
+  "item.4247.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.648641Z"
+  },
+  "item.4248.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.649058Z"
+  },
+  "item.4250.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.649385Z"
+  },
+  "item.4255.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.650143Z"
+  },
+  "item.4256.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.650389Z"
+  },
+  "item.4257.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.650631Z"
+  },
+  "item.4258.name": {
+    "src_hash": "b4da7303f4488af872a51bb05a5e22d3",
+    "text": "ratto morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.651022Z"
+  },
+  "item.42618.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.651374Z"
+  },
+  "item.42619.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.651739Z"
+  },
+  "item.42620.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.652008Z"
+  },
+  "item.42621.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.652242Z"
+  },
+  "item.42622.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.652453Z"
+  },
+  "item.42623.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.652812Z"
+  },
+  "item.42624.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.653064Z"
+  },
+  "item.42625.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.653324Z"
+  },
+  "item.42626.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.653563Z"
+  },
+  "item.42627.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.653837Z"
+  },
+  "item.42628.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.654224Z"
+  },
+  "item.42629.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:28.654484Z"
   }
 }

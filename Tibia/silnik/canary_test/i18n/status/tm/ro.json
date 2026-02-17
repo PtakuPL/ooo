@@ -25366,5 +25366,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:45:39.996039Z"
+  },
+  "npc.ambassador_of_rathleton.greet_msg_1": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Salutări, prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.959884Z"
+  },
+  "npc.amber.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.961105Z"
+  },
+  "npc.amber.greet_msg_1": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Bună, mă bucur să te văd |PLAYERNAME|. Ești aici pentru a auzi câteva povești despre {adventures} al meu sau ai nevoie de {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.961797Z"
+  },
+  "npc.amber.walkaway_msg_1": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Da, ne vedem mai târziu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.966436Z"
+  },
+  "npc.anderson.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "La revedere. Cu plăcere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.967241Z"
+  },
+  "npc.andrew_lyze.greet_msg_1": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Bună, sunt directorul acestui {monument}. {sarcophagus} din fața ta a fost creat pentru a împiedica oamenii să meargă acolo {down}. Dar mă îndoiesc că acest pas este suficient.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.968698Z"
+  },
+  "npc.andrew_lyze.greet_msg_2": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Ei bine, să vedem dacă misiunea ta a avut succes. Doar adu-mi tot ce ai nevoie {materials}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.969282Z"
+  },
+  "npc.andrew_lyze.greet_msg_3": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Dacă ați dezgropat toate cele trei cristale în cantitate suficientă și ați obținut glanda otrăvitoare, încărcarea busolei dvs. poate începe! Pentru prima dată va fi încărcat de cristalul violet. Ești gata să {unleash} puterea cristalelor?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.970377Z"
+  },
+  "npc.andrew_lyze.greet_msg_4": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.970882Z"
+  },
+  "npc.aneus.farewell_msg_1": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "La revedere si ai grija de tine!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.974494Z"
+  },
+  "npc.aneus.greet_msg_1": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Salutări aventurier |PLAYERNAME|. Ce te duce la mine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.974966Z"
+  },
+  "npc.angelina.farewell_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Fie ca zeii să te binecuvânteze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.977377Z"
+  },
+  "npc.angelina.greet_msg_1": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Zeii trebuie lăudați că sunt în sfârșit mântuit. Nu am multe posesiuni lumești, dar vă rog să acceptați o mică recompensă, nu-i așa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.978155Z"
+  },
+  "npc.angelina.greet_msg_2": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Mulțumesc că mi-ai salvat viața! Ar trebui să te teleportez din Catedrala Întunecată?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.978728Z"
+  },
+  "npc.angelina.walkaway_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Fie ca zeii să te binecuvânteze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.979347Z"
+  },
+  "npc.angelo.greet_msg_1": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid din Crunor? Ți-a spus că aici a apărut o peșteră nouă? Asta e corect. Sunt șeful unui {project} care încearcă să afle mai multe despre acest nou {area}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.980294Z"
+  },
+  "npc.angelo.greet_msg_2": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Doar dă-te din calea mea! Ai ucis această creatură frumoasă. Nu mai am nimic de spus. Al naibii de druid al lui Crunor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.980965Z"
+  },
+  "npc.angelo.greet_msg_3": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Cum merge {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.981310Z"
+  },
+  "npc.angelo.greet_msg_4": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Druid din Crunor? Ți-a spus că aici a apărut o peșteră nouă? Asta e corect. Sunt șeful unui proiect care încearcă să afle mai multe despre această nouă zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.982446Z"
+  },
+  "npc.angelo.say_6": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Doar dă-te din calea mea! Ai ucis această creatură frumoasă. Nu mai am nimic de spus. Al naibii de druid al lui Crunor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:21.983693Z"
+  },
+  "npc.avar_tar.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.004317Z"
+  },
+  "npc.avar_tar.walkaway_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.006301Z"
+  },
+  "npc.beatrice.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.019564Z"
+  },
+  "npc.beatrice.walkaway_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.020671Z"
+  },
+  "npc.dalbrect.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "La revedere. Cu plăcere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.139652Z"
+  },
+  "npc.denominator.greet_msg_2": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.154856Z"
+  },
+  "npc.gareth.greet_msg_3": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Cum merge {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.238745Z"
+  },
+  "npc.jamesfrancis.greet_msg_2": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Cum merge {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.389814Z"
+  },
+  "npc.nielson.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "La revedere. Cu plăcere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.537977Z"
+  },
+  "npc.palimuth.greet_msg_1": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:22.725666Z"
+  },
+  "npc.the_empress.greet_msg_1": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.019969Z"
+  },
+  "npc.the_librarian.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.023473Z"
+  },
+  "npc.thorgrin.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.031866Z"
+  },
+  "npc.thorgrin.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.032469Z"
+  },
+  "npc.thorwulf.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.033166Z"
+  },
+  "npc.tigo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.036280Z"
+  },
+  "npc.tim_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.036590Z"
+  },
+  "npc.tim_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.036877Z"
+  },
+  "npc.tim_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.037608Z"
+  },
+  "npc.torkada.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.045927Z"
+  },
+  "npc.torkada.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.046851Z"
+  },
+  "npc.tyrias.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:50:23.050007Z"
   }
 }

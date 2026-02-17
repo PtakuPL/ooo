@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:42:52.450632Z"
+    "updated_at": "2026-02-17T00:37:17.076103Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:42:55.057921Z"
+    "updated_at": "2026-02-17T00:37:19.674349Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:42:57.629858Z"
+    "updated_at": "2026-02-17T00:37:22.275451Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24414,5 +24414,197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:35:26.816577Z"
+  },
+  "spell.hunger_summon.name": {
+    "src_hash": "c21e3faa61efc7c1b0ce8d02e47002bf",
+    "text": "chemarea foamei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:24.992468Z"
+  },
+  "spell.chizzoron_the_distorter_summon.name": {
+    "src_hash": "0f88d69c500c86b95a5f75a6cb96e291",
+    "text": "chizzoron chemarea deformatorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:24.992828Z"
+  },
+  "spell.hive_pore_summon.name": {
+    "src_hash": "32868349ad85025642cc1b7934868fa2",
+    "text": "invocarea porilor stupului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:24.993059Z"
+  },
+  "spell.arkhothep_summon.name": {
+    "src_hash": "95a6a0ff99c0f39dd5f2cc88a0a88898",
+    "text": "arkhotep sumon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:27.585136Z"
+  },
+  "spell.dread_intruder_wave.name": {
+    "src_hash": "128174aa54c06e2fcd2a1058fa315a40",
+    "text": "groaznic val de intrus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:27.585400Z"
+  },
+  "spell.glooth_bomb_walkthrough.name": {
+    "src_hash": "0294ca41460340fd1c4c9acc2e07df94",
+    "text": "pasiune glooth bomb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:27.585857Z"
+  },
+  "spell.deathstrike_paralyze.name": {
+    "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
+    "text": "deathstrike paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:27.586213Z"
+  },
+  "spell.anomaly_wave.name": {
+    "src_hash": "8255680566fd850dc8b934f81f7fdeb5",
+    "text": "val de anomalie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:31.443463Z"
+  },
+  "spell.werecrocodile_fire_ring.name": {
+    "src_hash": "f25043479e8b3749a6ba70f30422d299",
+    "text": "inel de foc de crocodil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:31.443747Z"
+  },
+  "spell.orshabaal_skill_reducer.name": {
+    "src_hash": "b9f12ca14fb77c18211037d3a0e27dbf",
+    "text": "reductor de aptitudini orshabaal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:31.444013Z"
+  },
+  "spell.sir_valorcrest_summon.name": {
+    "src_hash": "957e35ed048ddd87721f97047a0b325f",
+    "text": "domnule valorcrest sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:31.444258Z"
+  },
+  "spell.holy_barrage.name": {
+    "src_hash": "c371c369e448d986a545c45319be4a7d",
+    "text": "baraj sfânt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:31.444462Z"
+  },
+  "spell.prince_drazzak_druid.name": {
+    "src_hash": "a6b52c25bcc62f3809e1fb744557fb21",
+    "text": "Prințul Drazzak Druid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:35.403843Z"
+  },
+  "spell.ironblight_freeze.name": {
+    "src_hash": "5aabd86f8100db71557b45a228d2a54a",
+    "text": "ironblight îngheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:35.404112Z"
+  },
+  "spell.srezz_lleecht.name": {
+    "src_hash": "c6735b9cf39cc4d574972e6d13e79577",
+    "text": "leech valT",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:35.404314Z"
+  },
+  "spell.abyssador_poison_wave.name": {
+    "src_hash": "ee4f1338ce79ebe520f864cc3bdce8e6",
+    "text": "val de otravă abisador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:38.024435Z"
+  },
+  "spell.haunter_electrify.name": {
+    "src_hash": "fb2552ad23c3c18710da7a27aac169ec",
+    "text": "bântuitor electrify",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:38.024689Z"
+  },
+  "spell.massive_energy_elemental_electrify.name": {
+    "src_hash": "01577348ac2989fd49d8486bbaa87616",
+    "text": "electrizare elementară de energie masivă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:38.025010Z"
+  },
+  "spell.greater_jar_summon.name": {
+    "src_hash": "a46f9cd4a0193eac343be793e6004073",
+    "text": "mai mare borcan convocare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:38.025259Z"
+  },
+  "spell.tyrn_electrify.name": {
+    "src_hash": "dfbb775c781dd837e15bd94ba9041e4f",
+    "text": "tyrn electriza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:38.025458Z"
+  },
+  "spell.mutated_rat_paralyze.name": {
+    "src_hash": "eb31149e8372974ea0aa8aad1a461e83",
+    "text": "sobolan mutant paralizeaza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:40.640629Z"
+  },
+  "spell.mutated_human_paralyze.name": {
+    "src_hash": "d3c88ba85b2115e4c98e34dccfd5899d",
+    "text": "paralizie umană mutantă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:40.640917Z"
+  },
+  "spell.koshei_the_deathless_curse.name": {
+    "src_hash": "03a1c28d392da32d21f8695c80cfba99",
+    "text": "koshei blestemul fără moarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:40.641831Z"
+  },
+  "spell.the_voice_of_ruin_paralyze.name": {
+    "src_hash": "e29336df79654ba1fe4de78c02fe3317",
+    "text": "vocea ruinei paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:40.642192Z"
   }
 }

@@ -5569,19 +5569,19 @@
   },
   "quests.movements_arena_pit.say_1": {
     "src_hash": "477fb3950c49773dfcb06d6a48db93db",
-    "text": "Fight!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Combattimento!",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.217680Z"
+    "updated_at": "2026-02-17T00:37:53.312459Z"
   },
   "quests.movements_stepin.msg_1": {
     "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
-    "text": "You must wait. Someone is challenging",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Devi aspettare. Qualcuno è impegnativo ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.218873Z"
+    "updated_at": "2026-02-17T00:38:03.755452Z"
   },
   "quests.threatened_dreams.it_is_empty": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
@@ -31158,5 +31158,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:36:00.452996Z"
+  },
+  "quests.lions_rock.sign_scorpion_1": {
+    "src_hash": "5525122a591ad5ece97e50232e932137",
+    "text": "Con l'aiuto dell'antico rotolo traduci le iscrizioni sull'altare d'oro: E il potente leone sconfisse l'infido scorpione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:45.778721Z"
+  },
+  "quests.lions_rock.sign_scorpion_2": {
+    "src_hash": "43c5ad801d0867efcacf0874cd5f755c",
+    "text": "In segno di vittoria ne prese il veleno, il viola come inganno e tradimento, e creò un tesoro prezioso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:45.779244Z"
+  },
+  "quests.lions_rock.sign_snake_1": {
+    "src_hash": "a38676d3c1f2b95ea81fd6a0c07d9842",
+    "text": "Con l'aiuto dell'antico rotolo traduci le iscrizioni sul pavimento: E il potente leone sconfisse il serpente geloso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:45.779715Z"
+  },
+  "quests.lions_rock.sign_snake_2": {
+    "src_hash": "0ddb19907d494051a2036cc940045ca1",
+    "text": "In segno di vittoria gli strappò l'occhio, giallo come l'invidia e la malevolenza, e da una creatura immonda creò un tesoro prezioso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:50.738620Z"
+  },
+  "quests.lions_rock.topaz_flame": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Metti il ​​topazio sulla piccola presa. Una fiamma gialla inizia a bruciare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:50.739084Z"
+  },
+  "quests.mission07_attack.say_1": {
+    "src_hash": "a145d394a5681b91228bf5174c437ca3",
+    "text": "<tosse>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:50.739273Z"
+  },
+  "quests.mission09_rock_troll.say_1": {
+    "src_hash": "5bf39cb0fedb3760737d4a684763bde6",
+    "text": "<crepa>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:50.739450Z"
+  },
+  "quests.mission12_into_fortress.say_1": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:50.739622Z"
+  },
+  "quests.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Hai preso parte alla scaramuccia nelle ultime 10 ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:53.312141Z"
+  },
+  "quests.movements_arena_pit.say_2": {
+    "src_hash": "9224728568a2f95e3e8af3a1e4dcf35c",
+    "text": "Rispetto e onore a te, campione!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:53.312758Z"
+  },
+  "quests.movements_arena_pit.say_3": {
+    "src_hash": "82a08c8672f5afbd168b2c3b7859d310",
+    "text": "Congratulazioni, coraggioso guerriero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:53.313029Z"
+  },
+  "quests.movements_arena_pit.say_4": {
+    "src_hash": "8f0c30ed83be4ee852a61ebd6ba6f196",
+    "text": "Bentornato, piccolo eroe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:55.895087Z"
+  },
+  "quests.movements_arena_pit.say_5": {
+    "src_hash": "4526ef4a7942d54702a69a547f22b6a0",
+    "text": "Vigliacco!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:55.895286Z"
+  },
+  "quests.movements_boat_puzzle.msg_1": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Senza punti di orientamento non troverai mai la strada del ritorno. Prova a trovare un modo per migliorare la tua navigazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:55.895752Z"
+  },
+  "quests.movements_boat_puzzle.msg_2": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:55.896318Z"
+  },
+  "quests.movements_boat_puzzle.msg_3": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Usi la gomena per legare le assi sciolte. La zattera dovrebbe essere idonea alla navigazione adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:55.896724Z"
+  },
+  "quests.movements_boat_puzzle.msg_4": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Ci sono ancora alcune assi e gomene sciolte. Non puoi usare la zattera in questo modo, affonderà sicuramente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:58.492185Z"
+  },
+  "quests.movements_boat_puzzle.msg_5": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:58.492768Z"
+  },
+  "quests.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Superi il fuoco senza subire alcun danno. È ora o mai più...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:58.493162Z"
+  },
+  "quests.movements_elemental_portals.msg_1": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Hai scoperto una vecchia scrivania che contiene un'antica mappa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:58.493524Z"
+  },
+  "quests.movements_elemental_portals.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:37:58.493848Z"
+  },
+  "quests.movements_elemental_portals.msg_3": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ci hai messo troppo tempo, la battaglia è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:01.101456Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:01.101773Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:01.102050Z"
+  },
+  "quests.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:01.102464Z"
+  },
+  "quests.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "I resti ti deporalizzano temporaneamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:01.102956Z"
+  },
+  "quests.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Con il potere del Custode oscuro ancora in agguato, la nebbia ti impedisce di entrare nella tana di Quaid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:03.754755Z"
+  },
+  "quests.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Hai completato il rituale dell'offerta del cibo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:03.755111Z"
+  },
+  "quests.movements_stepin.say_1": {
+    "src_hash": "0bb267d5a1e1d99f98082a5d44c35061",
+    "text": "La tartaruga ha fame... Devi darle da mangiare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:03.755783Z"
+  },
+  "quests.movements_teleportto.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesso concesso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:07.422819Z"
+  },
+  "quests.movements_teleportto.say_2": {
+    "src_hash": "7b956ca96a7b5ef2bfcce78c9ebc6720",
+    "text": "Devi prima padroneggiare la sfida!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:07.423228Z"
+  },
+  "quests.movements_teleportto.say_3": {
+    "src_hash": "0c24db16ceecc9286020828260abcbdf",
+    "text": "Devi superare quest'ultima sfida entro 5 minuti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:07.423593Z"
+  },
+  "quests.oramond.blue_pollen_say_1": {
+    "src_hash": "68e37a8d8264d7fc6abc83fa0842f16c",
+    "text": "Achoo! Versa il polline nella borsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:07.423908Z"
+  },
+  "quests.oramond.blue_pollen_say_2": {
+    "src_hash": "374336a189f0fda11013b303fba14572",
+    "text": "Hai raccolto il polline puzzolente in un sacchetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:07.424228Z"
+  },
+  "quests.oramond.sewer_fix_1": {
+    "src_hash": "9b7103417729ac866612fcd3f341116d",
+    "text": "<clong!> <clong!> Ecco questo pezzo riparato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:12.165501Z"
+  },
+  "quests.others.exterminator_say_1": {
+    "src_hash": "659cdc5427e03f38845aceba5250242f",
+    "text": "Questa missione fa schifo... e ora fai schifo anche tu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:12.165962Z"
+  },
+  "quests.others.exterminator_say_2": {
+    "src_hash": "a9e3b1f425ade1574acbeffc6504f6ed",
+    "text": "Raccogli con cura l'inchiostro di quara",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:12.166340Z"
+  },
+  "quests.others.exterminator_say_3": {
+    "src_hash": "eecc893560cfc96ca6f1fdfad19a8f3c",
+    "text": "Raccogli attentamente il sangue dello stalker.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:14.854900Z"
+  },
+  "quests.others.holy_water_damaged": {
+    "src_hash": "b86e21aff07806515d22d2c792f4feab",
+    "text": "%s ha danneggiato il nesso d'ombra! Non puoi danneggiarlo mentre brucia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:14.855326Z"
   }
 }

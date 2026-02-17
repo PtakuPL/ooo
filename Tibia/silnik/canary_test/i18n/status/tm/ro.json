@@ -58686,5 +58686,269 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:43:10.612549Z"
+  },
+  "scripts.moviments_elevator.msg_1": {
+    "src_hash": "952d68749fac40bd7c7a893a69b373be",
+    "text": "Încă nu știi cum să folosești asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:06.970001Z"
+  },
+  "scripts.actions_portal_brain_head.msg_2": {
+    "src_hash": "13ef1da0fb817387dfc054b51a126f7c",
+    "text": "{} este în prezent contestată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:13.861009Z"
+  },
+  "scripts.actions_portal_brain_head.msg_3": {
+    "src_hash": "28aad9cf193e67328406c60ccad09b5b",
+    "text": "Sunt prea mulți jucători în această întâlnire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:13.861407Z"
+  },
+  "scripts.actions_portal_brain_head.msg_4": {
+    "src_hash": "2af49d812dd3d72f7d6194b836191bae",
+    "text": "Trebuie să așteptați {} pentru a face față din nou {}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:13.861779Z"
+  },
+  "scripts.actions_portal_brain_head.msg_5": {
+    "src_hash": "5674377423e26b1b5ef73eff634fe257",
+    "text": "Ai intrat în bârlogul Capului creierului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:16.437147Z"
+  },
+  "scripts.actions_portal_pale_worm.msg_1": {
+    "src_hash": "9217ef3a39cde40b3e823c4939b1ec4c",
+    "text": "Mai trebuie să învingi:{}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:16.437502Z"
+  },
+  "scripts.actions_present.say_1": {
+    "src_hash": "c77dff2394ea6d558f56a3251d0a8350",
+    "text": "Deschizi cadoul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:16.437775Z"
+  },
+  "scripts.actions_purified_soul.say_1": {
+    "src_hash": "31235854dc9201a26d747f52a22ec226",
+    "text": "Devoratorul de păcate a fost alungat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:16.438171Z"
+  },
+  "scripts.actions_pyramids2.msg_1": {
+    "src_hash": "76052c7bfb195c26264ca6133a637a47",
+    "text": "<screeeech> <squeak> <squeaaaaal>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:19.145894Z"
+  },
+  "scripts.actions_pyramids2.msg_2": {
+    "src_hash": "e2542a1f02f6de505054977a75841add",
+    "text": "Misiune deja finalizată aici!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:19.146951Z"
+  },
+  "scripts.actions_questDoors.msg_2": {
+    "src_hash": "d4968acad5491a047d752050ab450ef9",
+    "text": "Pe măsură ce Unguentul Medusei își face efectul, ușa este nepietrificată. Îl poți folosi acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:19.147877Z"
+  },
+  "scripts.actions_questDoors.msg_3": {
+    "src_hash": "7b63561c09cf1dac7914f0e9ecab30b9",
+    "text": "Încuietoarea acestei uși lipsește. Poate găsiți undeva un lacăt potrivit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:19.148666Z"
+  },
+  "scripts.actions_questfirst.msg_1": {
+    "src_hash": "9f9e02fa22f76e390f72963c1c599e10",
+    "text": "Ai găsit o recompensă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:19.149188Z"
+  },
+  "scripts.actions_random_items.found_in_bag": {
+    "src_hash": "2eb671bead742f6498e457f29fb57359",
+    "text": "Ai găsit %s %s în geantă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:21.820296Z"
+  },
+  "scripts.actions_rascacoon_shortcut.msg_1": {
+    "src_hash": "ded2b9f120cca0d28d8c1118c78bbbcf",
+    "text": "Ai nevoie de cel puțin nivelul 200 pentru a intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:21.820709Z"
+  },
+  "scripts.actions_resonance.say_1": {
+    "src_hash": "a4b8ab725cbd731b71d7da9a0e358a80",
+    "text": "Ai înregistrat muzica de gheață.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:21.821044Z"
+  },
+  "scripts.actions_resonance_chamber.say_2": {
+    "src_hash": "9a1b9b7732614e98f627750cd84f698d",
+    "text": "PRRRR...*trosnet*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:21.821857Z"
+  },
+  "scripts.actions_reward.msg_1": {
+    "src_hash": "903a55a0f21ba56d45fd211e296bedce",
+    "text": "Ați găsit {} cântărind {} oz. Nu ai capacitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:25.712353Z"
+  },
+  "scripts.actions_reward.msg_2": {
+    "src_hash": "af25ee5b09695cf2151c647c8f101d29",
+    "text": "Ai primit deja recompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:25.712651Z"
+  },
+  "scripts.actions_reward.msg_3": {
+    "src_hash": "9c14fa84bb1c37eee8acbefb8a8ed01b",
+    "text": "Ai găsit o mască yalahari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:25.712988Z"
+  },
+  "scripts.actions_reward.msg_5": {
+    "src_hash": "192cb6d64e0684a75306f923e5fa0600",
+    "text": "Ai găsit o piesă de picior yalahari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:25.713320Z"
+  },
+  "scripts.actions_ring.say_1": {
+    "src_hash": "443959e233fe4d1ca521d908143e2f99",
+    "text": "Ai pus dovezile false!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:25.713609Z"
+  },
+  "scripts.actions_rosebushUse.msg_1": {
+    "src_hash": "5a0430ef61db2d1898cff09183d2f681",
+    "text": "Plantați tufa de trandafiri în pământ proaspăt. Portalul verde strălucește mai puternic. Poate o vei trece acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:28.356063Z"
+  },
+  "scripts.actions_ruins_instruments.msg_1": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Ai jucat greșit, acum trebuie să începi din nou cu primul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:28.356497Z"
+  },
+  "scripts.actions_ruins_instruments.msg_2": {
+    "src_hash": "bfc5a2b8e73ee0b52d9a03d612b45930",
+    "text": "Le-ai jucat în ordinea corectă și ai avut acces prin ușă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:28.356930Z"
+  },
+  "scripts.actions_ruins_instruments.msg_3": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Ai jucat greșit, acum trebuie să începi din nou cu primul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:28.357345Z"
+  },
+  "scripts.actions_rust_bugs.say_1": {
+    "src_hash": "acf89a3576edce872affe29754e6f481",
+    "text": "Grăgănele sunt la lucru!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:28.357646Z"
+  },
+  "scripts.actions_sacrifice.msg_1": {
+    "src_hash": "7c5be31cfb38ccfc36fd11080734961b",
+    "text": "Puneți {} în puțul uscat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:30.961836Z"
+  },
+  "scripts.actions_sacrifice.msg_2": {
+    "src_hash": "8bf5443d627c50bb0f553b965975e833",
+    "text": "Găsiți păstrătorul lacrimilor sanguine și oferă fluidele sale vieți stăpânului sanguin al acestui tărâm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:30.962436Z"
+  },
+  "scripts.actions_sacrifice.msg_3": {
+    "src_hash": "99e8b14525a94f991e0fc49346b3efae",
+    "text": "Întărește-ți sacrificiul pentru o lacrimă de sânge pentru stăpânul sanguin al acestui tărâm pentru a pecetlui acest comerț.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:30.962974Z"
+  },
+  "scripts.actions_sacrifice.msg_4": {
+    "src_hash": "1411681fb4a9149426cbda58a4895f5b",
+    "text": "Sacrificiul tău a fost acceptat de stăpânul sangvin al acestui tărâm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:30.963399Z"
+  },
+  "scripts.actions_sacrifice.msg_5": {
+    "src_hash": "9437e8d85edc3490d14156aad4fc9cfe",
+    "text": "Sacrificiile voastre au fost acceptate de stăpânul sangvin al acestui tărâm. Ieși și îngrozi rădăcina ta cu apele vieții.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:30.963958Z"
+  },
+  "scripts.actions_sacrifice.say_1": {
+    "src_hash": "d735f93633f1764487543baf75e40c90",
+    "text": "Ai pus deja bine floarea mormântului pe sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:54:33.713916Z"
   }
 }

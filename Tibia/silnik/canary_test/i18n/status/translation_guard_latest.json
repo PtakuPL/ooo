@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T09:53:05.452705Z",
-  "cycle": 422,
-  "language": "ru",
+  "timestamp": "2026-02-17T09:54:34.770275Z",
+  "cycle": 423,
+  "language": "ro",
   "json_file": "scripts.json",
-  "translated": 50,
+  "translated": 36,
   "placeholders": 0,
-  "guard_fail": 0,
+  "guard_fail": 14,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 401
+  "strict_skipped_done": 760
 }

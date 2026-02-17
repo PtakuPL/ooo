@@ -1201,11 +1201,11 @@
   },
   "scripts.movements_StepIn_CursedCrystal.msg_2": {
     "src_hash": "216ccfdc9898d8c33e39fe0a790d4dde",
-    "text": "Tekst jest częściowo skruszony: 'Take ... vial of emb... fl... and mix ... a medusa's bl.... Then .. the dust of ... crystal, so ... will get the Medusa's Ointm... powerful ... able to unpetrify ...",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Tekst jest częściowo pokruszony: 'Take ... vial of emb... fl... and mix ... a medusa's bl.... Następnie.. pył... kryształu, więc... otrzyma Maść Meduzy... potężną... zdolną do nieskamienienia...",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708381Z"
+    "updated_at": "2026-02-17T02:02:18.454689Z"
   },
   "item.101.name": {
     "src_hash": "852488ddd9570bc877783bf4397563e0",
@@ -103798,5 +103798,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:00:53.294157Z"
+  },
+  "scripts.mission12_into_fortress.msg_14": {
+    "src_hash": "b40d66bce036159675560b2025338ab3",
+    "text": "Wycofałeś się z walki. Możesz spróbować ponownie w dowolnym momencie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.390858Z"
+  },
+  "scripts.mission12_into_fortress.msg_15": {
+    "src_hash": "9c9a1ca51e1b5f70d83639f61a4753f9",
+    "text": "Nie możesz jeszcze użyć tego teleportera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.391831Z"
+  },
+  "scripts.mission12_into_fortress.msg_18": {
+    "src_hash": "b651cf6d6b6e74e16b6daefb9fb9a5e2",
+    "text": "Dzięki ostatniemu źródłu energii Kraknaknorka uciekasz z fortecy. Czas wracać do Vascalira.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.393541Z"
+  },
+  "scripts.mission12_into_fortress.msg_2": {
+    "src_hash": "d06fa8f4fba39360a1b8f18472de6d49",
+    "text": "Ogłuszasz niczego niepodejrzewającego orka. Użyj go, by przebrać się za orka!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.394920Z"
+  },
+  "scripts.mission12_into_fortress.msg_3": {
+    "src_hash": "d961b03deb4631d5dfecd5bb8d50b8a1",
+    "text": "Nie masz powodu robić czegoś tak podstępnego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.396273Z"
+  },
+  "scripts.mission12_into_fortress.msg_4": {
+    "src_hash": "10cf40c7d2b0607ad41fcb0a0be28ac8",
+    "text": "Wyglądasz prawie jak ork. Nie nabiorą się wszyscy orkowie, ale głupi strażnik przed fortecą powinien dać się oszukać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.397463Z"
+  },
+  "scripts.mission12_into_fortress.msg_5": {
+    "src_hash": "fb654c53ca56d4d49b0ece26a139f3bf",
+    "text": "To powinno wystarczyć jako odwrócenie uwagi, żebyś zakradł się do fortecy! Pośpiesz się!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.398565Z"
+  },
+  "scripts.mission12_into_fortress.msg_6": {
+    "src_hash": "1686e73c118db7b58fa65ec7f2d04349",
+    "text": "Zatrułeś zupę Kraknaknorka. To powinno go bardzo osłabić. Czas znaleźć jego komnatę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.399663Z"
+  },
+  "scripts.mission12_into_fortress.msg_7": {
+    "src_hash": "5f26a3c62621bf09ad25e335f46ff844",
+    "text": "Berserker nie może cię teraz złapać - ale tylko przez 20 sekund. Musisz odciągnąć go od teleportera!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.400931Z"
+  },
+  "scripts.moveevent-soul_war_entrances.msg_1": {
+    "src_hash": "757c8780a387bc3ce9a0c7898d0f809c",
+    "text": "Potrzebujesz poziomu 250, aby wejść tutaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.440024Z"
+  },
+  "scripts.moveevent-soul_war_entrances.msg_2": {
+    "src_hash": "95271ff03bc3074f59aae2a5dd89cf3f",
+    "text": "Twoja dusza nie rezonuje jeszcze z częstotliwością wymaganą do wejścia tutaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.441099Z"
+  },
+  "scripts.moveevent-soul_war_entrances.msg_3": {
+    "src_hash": "177683ffb905caa9663b5ee17cc30bc4",
+    "text": "Nie masz prawa tu wejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.442048Z"
+  },
+  "scripts.moveevent-teleport_entrance_reward.msg_1": {
+    "src_hash": "5b5a5cf7e1a662d58dba296cfcbca7a0",
+    "text": "Tylko wojownicy, którzy pokonali Goshnar's Megalomania, mają dostęp do tego obszaru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.443880Z"
+  },
+  "scripts.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Brałeś udział w potyczce w ciągu ostatnich 10 godzin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.444893Z"
+  },
+  "scripts.movement_kroazur_room.say_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Ktoś już walczy z tym bossem! Musisz chwilę poczekać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.447536Z"
+  },
+  "scripts.movement_poacher_notes.msg_1": {
+    "src_hash": "4c383c392b5c8c964e612b3777404913",
+    "text": "W tym namiocie odkrywasz śpiącego wilka i ogryziony szkielet. Czy to może być ten, którego szukasz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.450031Z"
+  },
+  "scripts.movements_StepIn_CursedCrystal.msg_1": {
+    "src_hash": "8e36f507625e62856b59066972f3b7b8",
+    "text": "To małe pomieszczenie mogło kiedyś być jakimś sanktuarium. Odkrywasz stary napis między dwiema zdobionymi kamiennymi ścianami.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.453014Z"
+  },
+  "scripts.movements_acessTeleports.msg_2": {
+    "src_hash": "861cc0f01c741df8a543b8e6bdcd82ca",
+    "text": "Nie możesz jeszcze użyć tego teleportu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.456060Z"
+  },
+  "scripts.movements_arena_enter.msg_1": {
+    "src_hash": "cb48532ccfc3c092cdca79ed562d9291",
+    "text": "Nie możesz wejść bez zgody Halvara.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.457383Z"
+  },
+  "scripts.movements_blood_entrance.msg_1": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Potrzebujesz co najmniej 250 poziomu, aby wejść.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.458877Z"
+  },
+  "scripts.movements_blood_entrance.msg_2": {
+    "src_hash": "db9136b775635fa7c636b37997e2c0a3",
+    "text": "Twoje ofiary dla sanguine mastera tej krainy były niewystarczające. Nie możesz przejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.460005Z"
+  },
+  "scripts.movements_boat_puzzle.msg_1": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Widzisz porozrzucane części rozbitego statku. Cudem okrętowy teleskop przetrwał wrak i wygląda na nienaruszony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.461634Z"
+  },
+  "scripts.movements_boat_puzzle.msg_4": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Widzisz porozrzucane części rozbitego statku. Cudem okrętowy teleskop przetrwał wrak i wygląda na nienaruszony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.463922Z"
+  },
+  "scripts.movements_boat_puzzle.msg_5": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Bez punktów orientacyjnych nigdy nie znajdziesz drogi powrotnej. Spróbuj znaleźć sposób na poprawę nawigacji.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.465095Z"
+  },
+  "scripts.movements_boss_teleport.msg_1": {
+    "src_hash": "ba0b5d90bd4327457a020168a699f6ed",
+    "text": "Idź do innego teleportu albo weź misję od Zizzle.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.466791Z"
+  },
+  "scripts.movements_calassa.msg_1": {
+    "src_hash": "f41e128b86a1daac659056fcd937c6b6",
+    "text": "Wkraczasz do krainy Calassa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.467657Z"
+  },
+  "scripts.movements_challenger.msg_1": {
+    "src_hash": "113248990c3f0a7bb404b8396ad06404",
+    "text": "Nie masz uprawnień, aby użyć tego teleportu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.468957Z"
+  },
+  "scripts.movements_check_oasis.msg_1": {
+    "src_hash": "b926bc58edb99304bcfeb775f69723de",
+    "text": "Znalazłeś urokliwą oazę z zieloną roślinnością i soczystymi owocami. Tego się nie spodziewałeś.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.470490Z"
+  },
+  "scripts.movements_dormitory_teleport.msg_1": {
+    "src_hash": "b0c575b3bc8d9e6cfd52e93b76aded01",
+    "text": "Powinieneś się pospieszyć, postaraj się nie zostawać tu dłużej niż kilka minut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.476826Z"
+  },
+  "scripts.movements_elemental_portals.msg_1": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Zajęło ci to zbyt długo, walka się zakończyła.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.478188Z"
+  },
+  "scripts.movements_elemental_portals.msg_3": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Odkryłeś stare biurko, które zawiera starożytną mapę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.479658Z"
+  },
+  "scripts.movements_energy_fence.msg_1": {
+    "src_hash": "ac4ce451e97f5f5ca9b2988f963b65e4",
+    "text": "Jako naczynie wiążące moc zwiędłych dusz przechodzisz przez magiczną barierę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.481685Z"
+  },
+  "scripts.movements_energy_fence.msg_2": {
+    "src_hash": "a2542379d4a2a531f8331c4477d6d437",
+    "text": "Połączone moce gnijących dusz krążących po tych korytarzach mogą pomóc przełamać tę barierę, potrzebują jedynie naczynia, które je zwiąże.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.483003Z"
+  },
+  "scripts.movements_energy_fence.msg_3": {
+    "src_hash": "ac4ce451e97f5f5ca9b2988f963b65e4",
+    "text": "Jako naczynie wiążące moc zwiędłych dusz przechodzisz przez magiczną barierę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.484083Z"
+  },
+  "scripts.movements_energy_fence.msg_4": {
+    "src_hash": "a2542379d4a2a531f8331c4477d6d437",
+    "text": "Połączone moce gnijących dusz krążących po tych korytarzach mogą pomóc przełamać tę barierę, potrzebują jedynie naczynia, które je zwiąże.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.485283Z"
+  },
+  "scripts.movements_energy_fence.msg_5": {
+    "src_hash": "d29f48181caf41d19ccd37214bc8e268",
+    "text": "Gdy przekraczasz próg wewnętrznego sanktuarium kultu Misguided, czujesz wokół siebie upiorną obecność.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.486517Z"
+  },
+  "scripts.movements_enter_realm.msg_1": {
+    "src_hash": "301dc366a591a5b91aeb25943417a15b",
+    "text": "Wkraczasz do krainy snów.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:02:18.487425Z"
   }
 }

@@ -33830,5 +33830,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:40:34.579510Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_13": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Adăuga",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:17.430158Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_6": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Adăuga",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:17.430759Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_17": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Adăuga",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:17.466572Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_2": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Adăuga",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:17.467044Z"
+  },
+  "otclient_modules.keybinds_otui.tr_16": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Adăuga",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:17.490903Z"
+  },
+  "otclient_modules.viplist.tr_1": {
+    "src_hash": "16053feba495862dfb4e07b3decda8d8",
+    "text": "Vă rugăm să introduceți un nume de grup:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:17.530499Z"
+  },
+  "otclient_modules.addvip_otui.tr_3": {
+    "src_hash": "793a51c32e599ae346383fda49c85b07",
+    "text": "Vă rugăm să introduceți un nume de caracter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:20.284861Z"
+  },
+  "otclient_modules.addvip_otui.tr_4": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Adaugă la lista VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:20.285129Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_3": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:20.285349Z"
+  },
+  "otclient_modules.assign_object_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Aplicați",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:26.127916Z"
+  },
+  "otclient_modules.assign_object_otui.tr_3": {
+    "src_hash": "6a344362d7ec25b9667aeaefe33b5a7a",
+    "text": "Selectați Obiect",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:26.128174Z"
+  },
+  "otclient_modules.assign_object_otui.tr_4": {
+    "src_hash": "ad8783089f828b927473fb61d51940ec",
+    "text": "Utilizare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:26.128352Z"
+  },
+  "otclient_modules.assign_object_otui.tr_5": {
+    "src_hash": "e3b8137cf68c3daafe6e043cc1282056",
+    "text": "Echipare/dezechipare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:26.128559Z"
+  },
+  "otclient_modules.assign_object_otui.tr_6": {
+    "src_hash": "4430dea85031cedf7b37db5f51fc7ce4",
+    "text": "Utilizați cu cruce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:26.128809Z"
+  },
+  "otclient_modules.assign_object_otui.tr_7": {
+    "src_hash": "d2bf683c031ce553916e0a4462bf6558",
+    "text": "Utilizați la țintă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:31.745731Z"
+  },
+  "otclient_modules.assign_object_otui.tr_8": {
+    "src_hash": "b139c4284c5c3111b857052dac419d42",
+    "text": "Folosește-te pe tine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:31.746016Z"
+  },
+  "otclient_modules.assign_object_otui.tr_9": {
+    "src_hash": "d32ac3705894c0cf199c6f5abdffd55c",
+    "text": "Atribuiți obiect",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:31.746307Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Aplicați",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:31.746486Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_3": {
+    "src_hash": "83f499a540b1323009c200d6f8cc9396",
+    "text": "Parametru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:31.746661Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_4": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:36.594807Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_5": {
+    "src_hash": "89759e1284e2479b991d2669de104942",
+    "text": "cuvinte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:36.594992Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_7": {
+    "src_hash": "191bab0c005fc9abb11f6d1a2ee2cfc9",
+    "text": "Atribuiți vraja",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:36.595210Z"
+  },
+  "otclient_modules.assign_text_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Aplicați",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:36.595383Z"
+  },
+  "otclient_modules.assign_text_otui.tr_3": {
+    "src_hash": "05da0bdce5c7b0f0edc2afe63de23eea",
+    "text": "Trimite automat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:36.595600Z"
+  },
+  "otclient_modules.assign_text_otui.tr_5": {
+    "src_hash": "fda3c89154cc3ad1f7d1cc82a3181c33",
+    "text": "Atribuiți text",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:43.497968Z"
+  },
+  "otclient_modules.audio_otui.tr_1": {
+    "src_hash": "f07007e4d0d8b8db5e7ccca897fe9626",
+    "text": "Volumul muzicii: %d",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:43.498235Z"
+  },
+  "otclient_modules.audio_otui.tr_2": {
+    "src_hash": "befac032edbcaa813ce7f23e54d7e3d6",
+    "text": "Activați sunetul muzicii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:43.498498Z"
+  },
+  "otclient_modules.audio_otui.tr_3": {
+    "src_hash": "2588d7c18bc9b846efa166b19f9e665c",
+    "text": "Activează audio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:43.498710Z"
+  },
+  "otclient_modules.battle.tr_1": {
+    "src_hash": "747d99f92ee9c080ba26108ac5d26488",
+    "text": "Luptă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:50.048193Z"
+  },
+  "otclient_modules.battle_otui.tr_1": {
+    "src_hash": "ec241c52f140345db6b52424fac51374",
+    "text": "Ascunde membrii partidului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:50.048458Z"
+  },
+  "otclient_modules.battle_otui.tr_2": {
+    "src_hash": "ef75f3fa8fd99486eb25a73bc144deab",
+    "text": "Ascundeți jucătorii care nu sunt craniu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:50.048762Z"
+  },
+  "otclient_modules.battle_otui.tr_3": {
+    "src_hash": "a6f38ccc7dcd51d63a7e2211551791c3",
+    "text": "Ascunde monștri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:50.048981Z"
+  },
+  "otclient_modules.battle_otui.tr_4": {
+    "src_hash": "ee8405395b7ab2150baf8e20c5254add",
+    "text": "Ascunde Npcs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:50.049168Z"
+  },
+  "otclient_modules.battle_otui.tr_5": {
+    "src_hash": "aac7c4927609515861e87ee10ce36327",
+    "text": "Ascunde jucătorii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:55.807787Z"
+  },
+  "otclient_modules.battle_otui.tr_6": {
+    "src_hash": "747d99f92ee9c080ba26108ac5d26488",
+    "text": "Luptă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:55.807985Z"
+  },
+  "otclient_modules.bestiary.tr_1": {
+    "src_hash": "7b2a7964e4f1d45c01e338885b83e942",
+    "text": "Eliminați din lista de pradă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:55.808316Z"
+  },
+  "otclient_modules.bestiary.tr_10": {
+    "src_hash": "a2cc588f2ab07ad61b05400f593eeb0a",
+    "text": "Rar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:55.808492Z"
+  },
+  "otclient_modules.bestiary.tr_11": {
+    "src_hash": "2cc4a4c5e260935157569494ed733bf1",
+    "text": "Semi-Rar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:42:55.808729Z"
+  },
+  "otclient_modules.bestiary.tr_12": {
+    "src_hash": "a4fd1ff3ab1075fe7f3fb30ec3829a00",
+    "text": "Mai puțin frecvente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:01.668107Z"
+  },
+  "otclient_modules.bestiary.tr_13": {
+    "src_hash": "d13bc5b68b2bd9e18f29777db17cc563",
+    "text": "Comun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:01.668301Z"
+  },
+  "otclient_modules.bestiary.tr_2": {
+    "src_hash": "d59c6a86691ab35ccacadc368589342b",
+    "text": "Adăugați la Lista de pradă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:01.668581Z"
+  },
+  "otclient_modules.bestiary.tr_3": {
+    "src_hash": "9c73770b7f4e462b6fc5b27903543845",
+    "text": "Opriți urmărirea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:01.668801Z"
+  },
+  "otclient_modules.bestiary.tr_4": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Necunoscut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:01.668974Z"
+  },
+  "otclient_modules.bestiary.tr_5": {
+    "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
+    "text": "Maestria Animus pentru aceasta creatura este deblocata.\nOferă %s%% puncte de experiență bonus, plus 0,1%% suplimentare pentru fiecare 10 Animus Masteries deblocate, până la maximum 4%%.\nÎn prezent, beneficiezi de %s%% puncte de experiență bonus datorită faptului că ai deblocat %s Animus Masteries.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:05.230435Z"
+  },
+  "otclient_modules.bestiary.tr_6": {
+    "src_hash": "7f95bb99ffb26d41800ecf390143ef8b",
+    "text": "Cunoscut:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:05.230649Z"
+  },
+  "otclient_modules.bestiary.tr_8": {
+    "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
+    "text": "Maestria Animus pentru aceasta creatura este deblocata.\nOferă %s%% puncte de experiență bonus, plus 0,1%% suplimentare pentru fiecare 10 Animus Masteries deblocate, până la maximum 4%%.\nÎn prezent, beneficiezi de %s%% puncte de experiență bonus datorită faptului că ai deblocat %s Animus Masteries.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:05.232071Z"
   }
 }

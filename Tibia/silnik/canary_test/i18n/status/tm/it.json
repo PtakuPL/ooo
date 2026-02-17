@@ -66142,5 +66142,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:10:20.864404Z"
+  },
+  "cpp.title.name_41": {
+    "src_hash": "e0623786548dad8a5760dcf4d06c18c1",
+    "text": "Sterminatore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:48.094884Z"
+  },
+  "cpp.player.blessed_with": {
+    "src_hash": "b131bc73a3a0d4b540e5511c822f25db",
+    "text": "Sei stato benedetto con {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:55.707861Z"
+  },
+  "cpp.player.blessing_name_1": {
+    "src_hash": "c377afb2e46bf0b6968e71cb449ac3ea",
+    "text": "Torsione del destino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:55.708116Z"
+  },
+  "cpp.player.blessing_name_2": {
+    "src_hash": "687b5a49f73970153a885a1088a400ac",
+    "text": "La saggezza della solitudine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:55.708386Z"
+  },
+  "cpp.player.blessing_name_3": {
+    "src_hash": "0ef92f9d3153748682152d49961b0915",
+    "text": "La Scintilla della Fenice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:55.708651Z"
+  },
+  "cpp.player.blessing_name_4": {
+    "src_hash": "f2b09c5da6f73788ea6412bd2eb45b61",
+    "text": "Il fuoco dei soli",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:02.063768Z"
+  },
+  "cpp.player.blessing_name_5": {
+    "src_hash": "e88c97a290c383c53bfe7ed34ad6e92b",
+    "text": "La protezione spirituale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:02.064108Z"
+  },
+  "cpp.player.blessing_name_6": {
+    "src_hash": "22013741b2d5206839f1a6d45345f138",
+    "text": "L'abbraccio di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:02.064564Z"
+  },
+  "cpp.player.blessing_name_7": {
+    "src_hash": "32030f154a28323a3ad79b8a2c55bad5",
+    "text": "Focolare della Montagna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:02.064850Z"
+  },
+  "cpp.player.blessing_name_8": {
+    "src_hash": "bf484f6aeb0b8da9bb35360f6d1383a4",
+    "text": "Sangue della montagna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:02.065128Z"
+  },
+  "cpp.player.corpse_killed_by": {
+    "src_hash": "bf770744ba1f0a60f4b1a92463e810d2",
+    "text": "{0} {1} ucciso da {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:09.180737Z"
+  },
+  "cpp.player.corpse_no_attackers": {
+    "src_hash": "8f2a859c12a509eff15986695d574638",
+    "text": "Nessun aggressore è stato identificato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:09.181069Z"
+  },
+  "cpp.player.corpse_recognize": {
+    "src_hash": "85f70d80482f0f0f2594ea40c60c24b1",
+    "text": "Riconosci {0}. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:09.181315Z"
+  },
+  "cpp.player.death_exp_lost": {
+    "src_hash": "f140855333c8b1f1553d64c1c4f4b871",
+    "text": "Hai perso {0} esperienza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:09.181588Z"
+  },
+  "cpp.player.death_pve": {
+    "src_hash": "66b1f6059d10ac8d40fdfec2c3a27ad6",
+    "text": "Sei morto durante il PvE.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:09.181881Z"
+  },
+  "cpp.player.death_pvp": {
+    "src_hash": "f8e470893e61b3ad6d20963e0b5d90b7",
+    "text": "Sei morto durante il PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:16.058318Z"
+  },
+  "cpp.player.exp_gained": {
+    "src_hash": "859112e38cc40dc10f1f8710a5af67b1",
+    "text": "Hai guadagnato {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:16.058791Z"
+  },
+  "cpp.player.exp_gained_other": {
+    "src_hash": "4910068bf48458d6fdb89df50d9aed92",
+    "text": "{0} guadagnato {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:16.059035Z"
+  },
+  "cpp.player.exp_lost": {
+    "src_hash": "0ed4ff2d54c26acc0a0ad36a989fbf86",
+    "text": "Hai perso {0} punto esperienza{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:16.059377Z"
+  },
+  "cpp.player.exp_lost_other": {
+    "src_hash": "938543d6b235bfd802c79b200450fa8e",
+    "text": "{0} perso {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:23.534685Z"
+  },
+  "cpp.player.exp_lost_points_one": {
+    "src_hash": "ee39a7872dfb5c6040d8c5d3cb431fce",
+    "text": "Hai perso {0} punto esperienza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:23.535056Z"
+  },
+  "cpp.player.exp_lost_points_other": {
+    "src_hash": "0a06b67a9f360b7bfc1e050578e0c9d5",
+    "text": "Hai perso {0} punti esperienza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:23.535356Z"
+  },
+  "cpp.player.exp_points_one": {
+    "src_hash": "c6baa07615cd066bebcf9cfbbabde5e9",
+    "text": "{0} punto esperienza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:23.535606Z"
+  },
+  "cpp.player.exp_points_other": {
+    "src_hash": "7b08c741db507bf3e9eca22a1d778625",
+    "text": "{0} punti esperienza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:23.535852Z"
+  },
+  "cpp.player.exp_vip_bonus": {
+    "src_hash": "d5662f6b56235db9d4eb11c94a7c6181",
+    "text": "(Bonus VIP {0}%)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:29.446666Z"
+  },
+  "cpp.player.hunting_task_complete": {
+    "src_hash": "cda199ef19659c6d6764c589ae9503b8",
+    "text": "Hai completato con successo il tuo compito di caccia. Il tuo premio è pronto per essere richiesto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:29.447136Z"
+  },
+  "cpp.player.idle_kick_warning": {
+    "src_hash": "3751cc9595187066c36d9feeafcbeb09",
+    "text": "Non c'è stata alcuna variazione nel tuo comportamento per {0} minuti. Verrai disconnesso entro un minuto se non ci saranno cambiamenti nelle tue azioni fino ad allora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:29.447818Z"
+  },
+  "cpp.player.imbuement_already_applied": {
+    "src_hash": "eef0c800c9541f3b88995b9c4527befd",
+    "text": "Questo incentivo è già applicato a questo articolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:29.448176Z"
+  },
+  "cpp.player.imbuement_duplicate_slot": {
+    "src_hash": "21c1e8c36804a20238455f56a0a3d80d",
+    "text": "Non è possibile applicare lo stesso infuso in più slot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:29.448568Z"
+  },
+  "cpp.player.imbuement_failed": {
+    "src_hash": "8833ed8a8ef86b9758311d2914c0fe0c",
+    "text": "Oh no!\n\nL'infusione è fallita. Hai perso le fonti astrali e l'oro di cui avevi bisogno per l'infusione.\n\nLa prossima volta usa un incantesimo di protezione per aumentare le tue possibilità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:35.379070Z"
+  },
+  "cpp.player.imbuement_missing_items": {
+    "src_hash": "1dd47e9055588351cc44a8fd859c7832",
+    "text": "Non hai tutti gli elementi necessari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:35.379767Z"
+  },
+  "cpp.player.level_advance": {
+    "src_hash": "2610891587cf1d912b5bae19b8596c73",
+    "text": "Sei avanzato dal livello {0} al livello {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:35.380410Z"
+  },
+  "cpp.player.level_downgrade": {
+    "src_hash": "c9837993708507dcaa718fd2b55dddc1",
+    "text": "Sei stato declassato dal livello {0} al livello {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:35.381095Z"
+  },
+  "cpp.player.look.guild_members_many": {
+    "src_hash": "7068df894224ca100b2f5426bcff57fe",
+    "text": ", che ha {0} membri, {1} dei quali online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:35.381759Z"
+  },
+  "cpp.player.look.guild_members_one": {
+    "src_hash": "6fb3b5b5a7ae5eed4e31d3c8c7b72042",
+    "text": ", che ha 1 membro, {0} dei quali online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:42.142006Z"
+  },
+  "cpp.player.look.guild_nick": {
+    "src_hash": "0ea8ca7fd31a162240cf23b399d401c2",
+    "text": "({0})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:42.142310Z"
+  },
+  "cpp.player.look.guild_rank_of": {
+    "src_hash": "4cd519ffdfb64bce745febea34e4a47d",
+    "text": "{0} del {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:42.142530Z"
+  },
+  "cpp.player.look.has_no_vocation": {
+    "src_hash": "56c057cd9344f199bf6f7ed3ca2225c6",
+    "text": "non ha vocazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:42.142754Z"
+  },
+  "cpp.player.look.party_invite_many": {
+    "src_hash": "de5f90c600433e2cc6d4d6a245bbe462",
+    "text": "{0} inviti in sospeso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:12:42.143043Z"
   }
 }

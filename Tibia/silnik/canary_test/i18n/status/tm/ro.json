@@ -59622,5 +59622,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:11:19.830237Z"
+  },
+  "achievement.165.description": {
+    "src_hash": "48689152536399b3baea7b5a84c4543f",
+    "text": "Ești un războinic umil care nu are nevoie de bogăție sau echipament specializat pentru călătorii și lupte. Te simți ca acasă în ținuturile din nordul Zao și ți-ai făcut partea în lupta împotriva corupției.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:20.462129Z"
+  },
+  "achievement.166.description": {
+    "src_hash": "c3ca44c44f19f8d12290f2a7e60a1f35",
+    "text": "Faptele tale pentru Yalahar sunt de obicei caracterizate de o perspectivă profundă și acțiuni gânditoare. Datorită ție, Yalahar ar putea avea șansa de a crește în pace și cu oameni fericiți care trăiesc în ea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:20.464272Z"
+  },
+  "achievement.167.description": {
+    "src_hash": "43477f5ccc0025b6a994a5f9c1a21025",
+    "text": "Aperi Yalahar cu forță brută și ești gata să-l conduci într-o luptă glorioasă, dacă este necesar. Datorită ție, Yalahar va fi suficient de puternic pentru a rezista oricărui inamic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:20.466605Z"
+  },
+  "achievement.168.description": {
+    "src_hash": "05a2cd809d2ef3a16cd3db9db892d516",
+    "text": "Viața poate fi atât de ușoară cu prăjitura potrivită la momentul potrivit - și ați stăpânit să coaceți multe, așa că ar trebui să fiți pregătit pentru aproape tot ce decide viața să vă arunce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:20.469043Z"
+  },
+  "achievement.169.name": {
+    "src_hash": "4d9a8d9067a945eda6cf153c069dce8f",
+    "text": "Absolvenți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:20.469839Z"
+  },
+  "achievement.169.description": {
+    "src_hash": "a7caeb030bc7bb84188412a49b1cadf6",
+    "text": "Ești considerat un absolvent de prim rang al Academiei de Magie din Edron datorită descoperirilor tale de pionierat și studiilor de succes în domeniul magiei experimentale și dezvoltării vrăjilor. V-ați gândit vreodată să predați vraja Armaghedonului?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:26.790396Z"
+  },
+  "achievement.170.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Warlock",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:26.790794Z"
+  },
+  "achievement.170.description": {
+    "src_hash": "c2d1470c311741055685ca69684f00e2",
+    "text": "Sunteți priceput în modurile mai întunecate ale magiei și sunteți de obicei găsit stând într-un cerc de lumânări și cranii mormăind cuvinte de nespus. Nu duce lucrurile prea departe sau ar putea veni demonii să te ia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:26.791659Z"
+  },
+  "achievement.171.description": {
+    "src_hash": "e705a1a84550885f2b5e92de63635e17",
+    "text": "Într-adevăr, ai un punct slab pentru iepuri. Poate că iepurii pe care i-ați salvat astăzi vor fi iepurii care vă vor salva mâine. Când ți-e foarte foame.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:26.792337Z"
+  },
+  "achievement.172.description": {
+    "src_hash": "ab354fe78c80315cacd81eeeb3e7e82e",
+    "text": "Oamenii de știință adevărați își cunosc echipamentul. Testarea noilor invenții este munca zilnică esențială pentru orice cercetător muncitor. Nu ți-ai arătat nicio teamă și ai luat toate echipamentele noi de la Spectulus și Sinclair pentru o învârtire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:26.793188Z"
+  },
+  "achievement.173.description": {
+    "src_hash": "f4f337400dc74d7bed45e12a3ccf7e32",
+    "text": "Ai intrat în pădure, l-ai întâlnit pe Rottin Wood și pe bărbații căsătoriți și i-ai ajutat în tabăra lor. Oh, și nu-ți face griji pentru acești comercianți. Nu vor îndrăzni să menționeze sumele ciudat de mari de aur pe care le posedau de fapt și care lipsesc acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:33.701553Z"
+  },
+  "achievement.174.description": {
+    "src_hash": "6966405330906d8370ce04102842182c",
+    "text": "Le-ai trecut testul și i-ai ajutat pe Spirithunters să testeze echipamentele, să cerceteze supranaturalele și să prindă fantome - pe tine te vor suna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:33.702297Z"
+  },
+  "achievement.175.name": {
+    "src_hash": "49283af40fc2b878184481dc93f9cff4",
+    "text": "Degustare extremă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:33.702556Z"
+  },
+  "achievement.175.description": {
+    "src_hash": "c79e01e2e77ec720196f1f45d78acaa0",
+    "text": "Aproape toate plantele pe care le-ați testat pentru Chartan în Zao erau necomestibile - le-ați gustat pe toate, dar încă ești în picioare! Totuși, ar trebui să luați puțin aer proaspăt acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:33.703467Z"
+  },
+  "achievement.176.description": {
+    "src_hash": "5d3cfe4743bff09c510657bb7e61d24e",
+    "text": "Ai pășit curajos pe insula tortului. Există vreun loc mai frumos și mai gustos în care să fii în întreaga lume?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:33.704059Z"
+  },
+  "achievement.177.description": {
+    "src_hash": "51058a2daa7ded3c289959f5f6bf83c8",
+    "text": "Ai înveselit un copil demon și l-ai înapoiat mamei sale. O numărare rapidă a degetelor vă va dezvălui dacă ați trecut nevătămat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:40.570339Z"
+  },
+  "achievement.178.description": {
+    "src_hash": "ef4fdfbe697af567538b4c3c56732826",
+    "text": "Ai înveselit o grămadă de bebeluși demoni și i-ai înapoiat mamei lor. Nu deranja urmele de arsuri, nu deranja tulpinile de păr gri, nu deranja nopțile în care te trezești țipând. A meritat... probabil... cumva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:40.571206Z"
+  },
+  "achievement.179.description": {
+    "src_hash": "c650929a0b1de461f38d5def00242fa5",
+    "text": "Ai navigat pe mările de jos cu Căpitanul Fantomă. În ciuda pericolelor, tu și colegii tăi de echipaj ați înfruntat provocarea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:40.571782Z"
+  },
+  "achievement.180.description": {
+    "src_hash": "4541a32298fca1a7c616603f4dc21f75",
+    "text": "Ai navigat în mările de jos cu Căpitanul Fantomă de mai multe ori. Pericolele de jos ți-au devenit familiare, iar călătorii neexperimentați apelează la tine pentru sfat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:40.572502Z"
+  },
+  "achievement.181.description": {
+    "src_hash": "e91bea84dc299700e60b680951fdff29",
+    "text": "Fără să te temi de moarte sau de fantome, ai călătorit cu căpitanul fantomă de mai multe ori și ești un călător experimentat al lumii de jos. Morții și cei vii șoptesc despre isprăvile tale cu apreciere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:46.702706Z"
+  },
+  "achievement.182.description": {
+    "src_hash": "a8e797e3ae120fc2661e561368dae98c",
+    "text": "Ești un stăpân al mării de jos și ai călătorit cu căpitanul fantomă de atâtea ori încât îi cunoști nava și pericolele mării de jos pe dinafară. Râzi în fața morții și te poți întoarce ca un pirat fantomă în viața de apoi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:46.703635Z"
+  },
+  "achievement.183.description": {
+    "src_hash": "7ab745448850c4e23a426826b87edbb5",
+    "text": "Ai ajutat să țină focul vrăjitoarelor aprins. Ai grijă doar la degete, e fierbinte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:46.704137Z"
+  },
+  "achievement.184.description": {
+    "src_hash": "ffb4b9ee3d8b50cc3e42da3b005020bd",
+    "text": "Ai sacrificat ingrediente pentru a crea preparatul protector al vrăjitoarelor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:13:46.704567Z"
   }
 }

@@ -1,15 +1,14 @@
 {
-  "timestamp": "2026-02-17T08:36:29.945579Z",
+  "timestamp": "2026-02-17T08:37:11.374771Z",
   "checked_entries": 100,
-  "issues_found": 54,
+  "issues_found": 44,
   "issues_by_type": {
-    "identical_to_en_exempt": 11,
-    "artifact_token": 32,
-    "identical_to_en": 22,
-    "suspicious_log_high": 125,
-    "suspicious_log_low": 11,
-    "suspicious_log_critical": 38,
-    "suspicious_log_medium": 26,
+    "identical_to_en_exempt": 17,
+    "artifact_token": 16,
+    "identical_to_en": 28,
+    "suspicious_log_high": 79,
+    "suspicious_log_critical": 53,
+    "suspicious_log_low": 68,
     "suspicious_rejected_critical": 171,
     "suspicious_rejected_high": 29
   },
@@ -127,270 +126,200 @@
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
-      "key": "spell.divine_empowerment.words",
+      "key": "raid.teleskor.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utevo grav san",
-      "translated": "utevo grav san"
+      "en": "Teleskor",
+      "translated": "Teleskor"
     },
     {
-      "key": "spell.avatar_of_nature.words",
+      "key": "raid.furyosa.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "uteta res dru",
-      "translated": "uteta res dru"
+      "en": "Furyosa",
+      "translated": "Furyosa"
     },
     {
-      "key": "spell.blood_rage.words",
+      "key": "raid.chayenne.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utito tempo",
-      "translated": "utito tempo"
+      "en": "Chayenne",
+      "translated": "Chayenne"
     },
     {
-      "key": "spell.sharpshooter.words",
+      "key": "raid.omrafir.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utito tempo san",
-      "translated": "utito tempo san"
+      "en": "Omrafir",
+      "translated": "Omrafir"
     },
     {
-      "key": "spell.creature_illusion.words",
+      "key": "raid.gaz_haragoth.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utevo res ina",
-      "translated": "utevo res ina"
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
     },
     {
-      "key": "spell.ultimate_light.words",
+      "key": "raid.yeti.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utevo vis lux",
-      "translated": "utevo vis lux"
+      "en": "Yeti",
+      "translated": "Yeti"
     },
     {
-      "key": "spell.divine_dazzle.words",
+      "key": "raid.gargoyle.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "exana amp res",
-      "translated": "exana amp res"
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
     },
     {
-      "key": "spell.swift_foot.words",
+      "key": "raid.cobra.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utamo tempo san",
-      "translated": "utamo tempo san"
+      "en": "Cobra",
+      "translated": "Cobra"
     },
     {
-      "key": "spell.conjure_poisoned_arrow.words",
+      "key": "raid.terramite.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "exevo con pox",
-      "translated": "exevo con pox"
+      "en": "Terramite",
+      "translated": "Terramite"
     },
     {
-      "key": "spell.conjure_arrow.words",
+      "key": "raid.scarab.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "exevo con",
-      "translated": "exevo con"
+      "en": "Scarab",
+      "translated": "Scarab"
     },
     {
-      "key": "spell.lightest_magic_missile_rune.words",
+      "key": "raid.undead_cavebear.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "adori dis min vis",
-      "translated": "adori dis min vis"
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
     },
     {
-      "key": "spell.ice_wave.words",
+      "key": "raid.morgaroth.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "raid.ferumbras.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "raid.example.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo frigo hur",
-      "translated": "exevo frigo hur"
+      "en": "Example",
+      "translated": "Example"
     },
     {
-      "key": "spell.fire_wave.words",
+      "key": "raid.raids.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo flam hur",
-      "translated": "exevo flam hur"
+      "en": "Raids",
+      "translated": "Raids"
     },
     {
-      "key": "spell.energy_wave.words",
+      "key": "raid.undead_darashia.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo vis hur",
-      "translated": "exevo vis hur"
+      "en": "Undead Darashia",
+      "translated": "Undead Darashia"
     },
     {
-      "key": "spell.ultimate_ice_strike.words",
+      "key": "raid.priestesses.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori max frigo",
-      "translated": "exori max frigo"
+      "en": "Priestesses",
+      "translated": "Priestesses"
     },
     {
-      "key": "spell.buzz.words",
+      "key": "raid.barba_svar.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori infir vis",
-      "translated": "exori infir vis"
+      "en": "Barba Svar",
+      "translated": "Barba Svar"
     },
     {
-      "key": "spell.strong_ice_strike.words",
+      "key": "raid.barba_bittermor.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori gran frigo",
-      "translated": "exori gran frigo"
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor"
     },
     {
-      "key": "spell.strong_terra_strike.words",
+      "key": "raid.ghazbaran.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori gran tera",
-      "translated": "exori gran tera"
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
     },
     {
-      "key": "spell.lightning.words",
+      "key": "raid.barbarian.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori amp vis",
-      "translated": "exori amp vis"
+      "en": "Barbarian",
+      "translated": "Barbarian"
     },
     {
-      "key": "spell.ultimate_energy_strike.words",
+      "key": "raid.hirintror.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori max vis",
-      "translated": "exori max vis"
+      "en": "Hirintror",
+      "translated": "Hirintror"
     },
     {
-      "key": "spell.annihilation.words",
+      "key": "raid.terrorbirds.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori gran ico",
-      "translated": "exori gran ico"
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
     },
     {
-      "key": "spell.terra_burst.words",
+      "key": "raid.wild_horses.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo ulus tera",
-      "translated": "exevo ulus tera"
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
+      "key": "raid.orc_backpack.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
+      "key": "raid.sir_valorcrest.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
+      "key": "raid.gnarlhounds.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
+      "key": "raid.zevelon_duskbringer.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.mother_of_jack.voice_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
-    },
-    {
-      "key": "npc.navigator.multi_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
-    },
-    {
-      "key": "npc.navigator.multi_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
-    },
-    {
-      "key": "npc.omrabas.multi_35",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
-    },
-    {
-      "key": "npc.omrabas.multi_82",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
-    },
-    {
-      "key": "npc.omrabas.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-    },
-    {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-    },
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     }
   ],
   "threshold": 10,

@@ -60942,5 +60942,301 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:27:37.632025Z"
+  },
+  "data.otservbr.global.npc.bertha.L91.1555": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturalmente, basta sfogliare la mia merce. {Footballs} devono essere acquistati separatamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.062881Z"
+  },
+  "data.otservbr.global.npc.billy.L147.1387": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Ciao |PLAYERNAME|. Sono un contadino e cucino, forse ti può interessare un {trade} con del cibo? Puoi anche chiedermi informazioni generali {hints} sul gioco.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.064576Z"
+  },
+  "data.otservbr.global.npc.black.bert.L196.40": {
+    "src_hash": "56cb7c9fe5ae41c0e637708d1c5c41fa",
+    "text": "Ciao, |PLAYERNAME|! Sembra che tu non veda l'ora di {trade}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.065166Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L72.427": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Mortale! Se sei su {quest} per servire il dio del sangue, mio ​​​​padrone, fatti salutare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.066609Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Mortale! Se sei su {quest} per servire il dio del sangue, mio ​​​​padrone, fatti salutare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.068192Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L168.1459": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Arrivederci. Sono sicuro che tornerai per saperne di più. Lo fanno tutti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.070514Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L169.1460": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Arrivederci. Sono sicuro che tornerai per saperne di più. Lo fanno tutti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.071053Z"
+  },
+  "data.otservbr.global.npc.bolfona.L94.690": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Stai parlando con me? Bene, continua a chiacchierare ma non aspettarti una risposta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.072404Z"
+  },
+  "data.otservbr.global.npc.boveas.L44.24": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "CIAO! Spero che non mi ucciderai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.072882Z"
+  },
+  "data.otservbr.global.npc.bozo.L608.916": {
+    "src_hash": "d4fea72808864f72f60dd0127ba12ae7",
+    "text": "Ciao a tutti, come va, |PLAYERNAME|! Cosa ti porta {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.074642Z"
+  },
+  "data.otservbr.global.npc.bozo.L610.917": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Ciao, ciao, ciao, signorina |PLAYERNAME|! Cosa ti porta {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.075111Z"
+  },
+  "data.otservbr.global.npc.bozo.L922.918": {
+    "src_hash": "e0c720dccd466a9047c7f84dffbf8cfc",
+    "text": "Ricorda: uno scherzo al giorno tiene lontani i demoni!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.075646Z"
+  },
+  "data.otservbr.global.npc.bozo.L923.919": {
+    "src_hash": "901eba179c016bc753815f362425c4cc",
+    "text": "EHI! Anche gli sciocchi hanno dei sentimenti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.076067Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L134.319": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Benvenuto, |PLAYERNAME|! Possa la terra proteggerti sui terreni rocciosi. Se hai bisogno di un {passage}, posso aiutarti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.079578Z"
+  },
+  "data.otservbr.global.npc.broken.servant.sentry.L125.702": {
+    "src_hash": "7f282da5e4d3782819b34cc989e6b9ac",
+    "text": "Il Maestro è-è-è-è-morto. Per favore*chrrrrchk*se. Essere. In. Lutto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.081071Z"
+  },
+  "data.otservbr.global.npc.bron.L188.28": {
+    "src_hash": "bc13951dddf4f12c470dbcddf105f4db",
+    "text": "Benvenuto nella mia umile capanna, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.081646Z"
+  },
+  "data.otservbr.global.npc.bron.L58.27": {
+    "src_hash": "3c96311a2df7cd5491976b4303ecfa9c",
+    "text": "Oh no! Ero davvero io? È così imbarazzante che non ho idea di cosa mi sia preso. Era questo lo spirito combattivo che mi hai dato?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.083483Z"
+  },
+  "data.otservbr.global.npc.bruno.L62.438": {
+    "src_hash": "130d80e1c83d95931a68442d397fcbbc",
+    "text": "Arrivederci e vieni di nuovo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.084106Z"
+  },
+  "data.otservbr.global.npc.bruno.L63.439": {
+    "src_hash": "f5611466111acf02c50fd70a513700e0",
+    "text": "Compra tutto il pesce che vuoi. È fresco e sano, promesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.084635Z"
+  },
+  "data.otservbr.global.npc.cael.L392.236": {
+    "src_hash": "65cd3155e7fbe93ae575ff3c4a1f8abb",
+    "text": "Saluti, |PLAYERNAME|! Devi essere venuto qui parecchio. Sono sempre interessato a imparare cose nuove su Zao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.087352Z"
+  },
+  "data.otservbr.global.npc.cael.L393.237": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tieni presente che non troverai offerte migliori qui. Basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.087868Z"
+  },
+  "data.otservbr.global.npc.canary.L126.459": {
+    "src_hash": "a10a26d9586cb14bfaa580c34d3db0a0",
+    "text": "Non hai istruzione?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.088509Z"
+  },
+  "data.otservbr.global.npc.canary.L88.457": {
+    "src_hash": "79a03d06c67633920b88970b497a8ac2",
+    "text": "Ciao |PLAYERNAME|, hai bisogno di maggiori informazioni su {canary}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.089121Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L119.100": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.089633Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L74.337": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.090501Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L75.1609": {
+    "src_hash": "202a2eb8a446b071db66173ee9c3d801",
+    "text": "Benvenuto a bordo, recluta |PLAYERNAME|. Dove posso {sail} oggi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.091171Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L76.1610": {
+    "src_hash": "e15da006fade26d444cff6cb29e47778",
+    "text": "A nome dell'Inquisizione, ti saluto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.091603Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L64.993": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Saluti, audace avventuriero. Se hai bisogno di un {passage}, fammi sapere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.092422Z"
+  },
+  "data.otservbr.global.npc.captain.dreadnought.L465.1019": {
+    "src_hash": "e3c27cbeadf072acaf19bbad2aaea847",
+    "text": "Sei sicuro di voler trascorrere del tempo su questo pezzo di roccia? Posso mostrarti il ​​mondo! Eh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.093398Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L112.1156": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.094058Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L103.1515": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.094787Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L93.846": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.095614Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L70.191": {
+    "src_hash": "55c25d3f0e5b57d85680d257424e0bca",
+    "text": "Harrr, padrone di casa, cosa vuoi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.096568Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L162.1353": {
+    "src_hash": "4389112dadbf0109f2cda25d30028e4a",
+    "text": "Ci vediamo, marinaio!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.096899Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L176.1354": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Ecco qua! Usalo sulla gru quando vedi il mostro. Quindi riempilo nuovamente ogni volta che usi il telescopio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.097500Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L60.1352": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Hai trovato il posto |PLAYERNAME|!! Prendi l'elmo degli abissi ed esplora il {caves} laggiù.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.098361Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L87.949": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Benvenuto a bordo, viaggiatore. Dove posso {sail} oggi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:09.098875Z"
   }
 }

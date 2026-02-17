@@ -1,8 +1,8 @@
 {
-  "total_cycles": 219,
+  "total_cycles": 220,
   "mode": "AUTO_TRANSLATE",
-  "category": "sr",
-  "last_update": "2026-02-17T04:57:40.469974",
+  "category": "pl",
+  "last_update": "2026-02-17T04:59:27.318676",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sr",
-    "json_file": "npc.json",
-    "keys_to_translate": 12979,
-    "guard_fail": 17,
+    "language": "pl",
+    "json_file": "quests.json",
+    "keys_to_translate": 318,
+    "guard_fail": 15,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

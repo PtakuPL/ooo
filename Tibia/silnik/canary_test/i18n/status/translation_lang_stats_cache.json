@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T03:57:44.022067Z",
+  "timestamp": "2026-02-17T03:59:31.304988Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 50,
   "cache_misses": 2,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7464,7 +7464,7 @@
         [
           "quests.json",
           1,
-          1771298057912266986,
+          1771300763155304031,
           66654
         ],
         [
@@ -7943,7 +7943,7 @@
         "quests.json": {
           "sig": [
             1,
-            1771298057912266986,
+            1771300763155304031,
             66654
           ],
           "row": {
@@ -25473,8 +25473,8 @@
         [
           "quests.json",
           1,
-          1771295285257048360,
-          65793
+          1771300750439266773,
+          65592
         ],
         [
           "raids.json",
@@ -25530,14 +25530,14 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24965,
+        "translated_keys": 25008,
         "english_copy_keys": 1902,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 46.59,
+        "completion_pct": 46.67,
         "server_keys": 49731,
-        "server_translated": 22284,
-        "server_pct": 44.81,
+        "server_translated": 22327,
+        "server_pct": 44.9,
         "client_keys": 3855,
         "client_translated": 2681,
         "client_pct": 69.55
@@ -25952,12 +25952,12 @@
         "quests.json": {
           "sig": [
             1,
-            1771295285257048360,
-            65793
+            1771300750439266773,
+            65592
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 292,
+            "translated_keys": 335,
             "english_copy_keys": 8,
             "missing_keys": 0,
             "missing_files": 0

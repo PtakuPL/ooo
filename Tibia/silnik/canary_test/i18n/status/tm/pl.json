@@ -108158,5 +108158,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:56:31.359566Z"
+  },
+  "quests.forgotten_knowledge.lantern_glow": {
+    "src_hash": "139f7a4e3b342775d96589e84d10d51b",
+    "text": "Gdy zaczniesz polerować latarnię, zacznie ona świecić nieziemskim światłem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:06.608274Z"
+  },
+  "quests.forgotten_knowledge.lantern_has_key": {
+    "src_hash": "6feb464965de17dfa29795637465ef84",
+    "text": "W świetle widmowosrebrnej latarni odkrywasz niewidzialne drzwi. Jeśli masz pasujący klucz, możesz przejść.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:06.608816Z"
+  },
+  "quests.forgotten_knowledge.lantern_no_key": {
+    "src_hash": "3ff192e8c3b476ec20fcd8afd0a221b5",
+    "text": "W świetle widmowosrebrnej latarni odkrywasz niewidzialne drzwi. Ale brakuje ci klucza, żeby je otworzyć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:15.478828Z"
+  },
+  "quests.forgotten_knowledge.tree_destruction": {
+    "src_hash": "205b8fa5e3fee791d97de1989d846b4b",
+    "text": "Zniszczenie drzewa uwalnia {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:15.479169Z"
+  },
+  "quests.globalevents_grimvale_feroxa.broadcast_1": {
+    "src_hash": "bdc7c1a2cc03b08531c0d717935d084e",
+    "text": "Grimvale tonie w stworzeniach-wilkołakach, gdy księżyc w pełni osiąga swój szczyt, a starożytne zło powraca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:15.479865Z"
+  },
+  "quests.grave_danger.defiled": {
+    "src_hash": "20009c822cba900133cfc82c5ba6d30a",
+    "text": "Ten grób jest już zbezczeszczony, a rycerz lisz odszedł! Nic tu nie możesz zrobić.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:15.480369Z"
+  },
+  "quests.grave_danger.sanctified": {
+    "src_hash": "6ecef847b37c47541664c96ed4ca5806",
+    "text": "Ten grób został już poświęcony i jest bezpieczny!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:15.480740Z"
+  },
+  "quests.grave_danger.wait_challenge": {
+    "src_hash": "8f220e1370f7c9572644115a7ec58676",
+    "text": "Musisz poczekać %s, zanim ponownie spróbujesz rzucić wyzwanie %s!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:22.703971Z"
+  },
+  "quests.gravedigger.blood_msg_1": {
+    "src_hash": "1dbdb527d858d195b09b6758127751a0",
+    "text": "Krew w fiolce ma głęboką rubinową barwę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:22.704345Z"
+  },
+  "quests.gravedigger.blood_msg_2": {
+    "src_hash": "1a63106ebda448891f13f09e95b1749c",
+    "text": "Krew w fiolce ma dziwny kolor, jakby była skażona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:22.704735Z"
+  },
+  "quests.gravedigger.monks_msg_1": {
+    "src_hash": "ec359d287bea175c97b8d64cd6b01622",
+    "text": "Cienie powstają i pochłaniają świecę. Posąg migocze w nieziemskim świetle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:22.705177Z"
+  },
+  "quests.gravedigger.monks_msg_2": {
+    "src_hash": "7513b7643dba66657586111a073e8765",
+    "text": "Cienie posągu łapczywie połykają świecę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:22.705535Z"
+  },
+  "quests.gravedigger.monks_msg_3": {
+    "src_hash": "c45750588bd577c7f5626b86b6a4108a",
+    "text": "Pojawia się cień i wyrywa świecę z twoich rąk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:30.908267Z"
+  },
+  "quests.inquisition.teleport_say_1": {
+    "src_hash": "8ef32cb681fd34e8b4c5898bea7c5641",
+    "text": "Wejście do oddziału Ushuriela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:30.908583Z"
+  },
+  "quests.inquisition.teleport_say_11": {
+    "src_hash": "f714a602d2801dd4b089bcee8d5070aa",
+    "text": "Wejście do odlewni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:30.908844Z"
+  },
+  "quests.inquisition.teleport_say_12": {
+    "src_hash": "77f23e15c82945321e29dfb451c9a6d6",
+    "text": "Wejście na oddział Madaretha.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:30.909136Z"
+  },
+  "quests.inquisition.teleport_say_16": {
+    "src_hash": "8a9b8ad11f7f6477078c9057fa71a4f8",
+    "text": "Wejście na pole bitwy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:30.909414Z"
+  },
+  "quests.inquisition.teleport_say_18": {
+    "src_hash": "9d6e489a953c92b65b2e4155ef092be7",
+    "text": "Wejście do Kuźni Demonów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:39.321981Z"
+  },
+  "quests.inquisition.teleport_say_2": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Wejście do Kryształowych Jaskiń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:39.322399Z"
+  },
+  "quests.inquisition.teleport_say_22": {
+    "src_hash": "5302c8173c3cb6ad78d4a445444621f2",
+    "text": "Wejście do Studni Dusz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:39.322696Z"
+  },
+  "quests.inquisition.teleport_say_24": {
+    "src_hash": "87a584d47d99ef1099a1b7763d63167b",
+    "text": "Wejście do oddziału Annihilon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:39.323007Z"
+  },
+  "quests.inquisition.teleport_say_25": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Wejście do ula.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:39.323257Z"
+  },
+  "quests.inquisition.teleport_say_27": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Wejście do ula.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:44.348820Z"
+  },
+  "quests.inquisition.teleport_say_28": {
+    "src_hash": "8c3f7a9b0837c942cb96323e9e7f0ff6",
+    "text": "Wejście do oddziału Hellgoraka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:44.349148Z"
+  },
+  "quests.inquisition.teleport_say_29": {
+    "src_hash": "4ae399bcc62da3ce8337ed5ae17105c5",
+    "text": "Wejście do Nexusa Cieni. Porzuć wszelką nadzieję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:44.349508Z"
+  },
+  "quests.inquisition.teleport_say_4": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Wejście do Kryształowych Jaskiń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:44.349807Z"
+  },
+  "quests.inquisition.teleport_say_5": {
+    "src_hash": "b3d040710e4f4bdad657ac023d4b24b5",
+    "text": "Wejście do zatopionych jaskiń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:44.350166Z"
+  },
+  "quests.inquisition.teleport_say_6": {
+    "src_hash": "26c96174a35ff15138aa0a0fa46cd0c5",
+    "text": "Wejście do lustrzanego labiryntu szaleństwa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:52.074731Z"
+  },
+  "quests.inquisition.teleport_say_7": {
+    "src_hash": "284178d2bd2cd7be84bf88293e481b84",
+    "text": "Wejście do oddziału Zugurosha.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:52.075049Z"
+  },
+  "quests.kilmaresh.cutting_desert_rose": {
+    "src_hash": "2e1c81ae7224b8bdc118376e4385e9a7",
+    "text": "Ścinasz kwiaty pustynnej róży.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:52.075384Z"
+  },
+  "quests.kilmaresh.cutting_snake_maw": {
+    "src_hash": "0e2be5b2e26406b215516ef7212090cc",
+    "text": "Przecinasz paszczę węża.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:52.075673Z"
+  },
+  "quests.kilmaresh.cutting_veldt": {
+    "src_hash": "4cc80603c2753d4c6213f354440388c0",
+    "text": "Ścinasz kwiaty Veldt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:58:52.075960Z"
+  },
+  "quests.kilmaresh.empty_gryphon_nest": {
+    "src_hash": "70d61105abbfa029a50cc78ce83656ff",
+    "text": "Gniazdo gryfów jest puste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:00.244780Z"
+  },
+  "quests.kilmaresh.empty_palm": {
+    "src_hash": "029b211ddc519f2f94d035dc82d0dab4",
+    "text": "Ta dłoń jest pusta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:00.245082Z"
+  },
+  "quests.kilmaresh.found_gryphon_mask": {
+    "src_hash": "435d494d0d817160038bd508df2e1001",
+    "text": "Znalazłeś maskę gryfa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:00.245373Z"
+  },
+  "quests.kilmaresh.found_mirror_mask": {
+    "src_hash": "4c9e19f7722a51fca3a7e07d7b332278",
+    "text": "Znalazłeś maskę lustrzaną.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:00.245665Z"
+  },
+  "quests.kilmaresh.found_silver_mask": {
+    "src_hash": "cb7c8d53e21f98f868611b54b478f33d",
+    "text": "Znalazłeś srebrną maskę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:00.245982Z"
+  },
+  "quests.kilmaresh.gathering_spiderweb": {
+    "src_hash": "b3007e6d0e8ab1c46f520fbfcef53c6e",
+    "text": "Zbierasz strzępy chmur pajęczych. Ale ty się wplątujesz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:08.206894Z"
+  },
+  "quests.kilmaresh.memory_word_1": {
+    "src_hash": "a9f3adb041832dcb22a0255e1c9d02ac",
+    "text": "Ambasador mówi innemu dygnitarzowi: Rathleton nigdy nie może zostać przekroczony! Sprawię, że Imperium upadnie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:08.207623Z"
+  },
+  "quests.kilmaresh.memory_word_2": {
+    "src_hash": "66d6e2423b2a2c1b3261fe7329f31950",
+    "text": "Przez bramę wymiarową możesz zobaczyć Ambasadora Rathleton ubranego w płaszcz z czarnym sfinksem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:08.208237Z"
+  },
+  "quests.kilmaresh.memory_word_3": {
+    "src_hash": "833be6e9e01708a39902aebfb55591bb",
+    "text": "Przez bramę wymiarową możesz zobaczyć, jak Ambasador Rathleton rozmawia z kultystami Fafnar w całkiem znajomy sposób. Dowód jest całkowicie merytoryczny. Ambasador jest zdrajcą!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:08.209032Z"
+  },
+  "quests.lions_rock.amethyst_flame": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Umieszczasz ametyst na małym oczku. Zaczyna palić się fioletowy płomień.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:08.209483Z"
+  },
+  "quests.lions_rock.ruby_flame": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Umieszczasz rubin na małym oczku. Zaczyna palić się czerwony płomień.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:59:10.441577Z"
   }
 }

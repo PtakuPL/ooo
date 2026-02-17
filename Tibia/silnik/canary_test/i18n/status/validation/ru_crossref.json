@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 38.4,
+  "coverage_pct": 38.5,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T04:56:15.275251Z",
-  "issues_total": 107,
+  "checked_at": "2026-02-17T05:15:45.849237Z",
+  "issues_total": 108,
   "issues_by_type": {
     "consistency_in_language": 52,
-    "pl_reference_missing_translation": 31,
+    "pl_reference_missing_translation": 32,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -854,24 +854,6 @@
       "lang": "{0} VIP."
     },
     {
-      "key": "item.16165.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pet pig",
-      "pl": "świnia domowa",
-      "lang": "pet pig"
-    },
-    {
-      "key": "item.16166.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pet pig",
-      "pl": "świnia domowa",
-      "lang": "pet pig"
-    },
-    {
       "key": "npc.menesto.say_2",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -1104,6 +1086,33 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "spell.terra_wave.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Terra Wave",
+      "pl": "Fala Terra",
+      "lang": "Terra Wave"
+    },
+    {
+      "key": "spell.ice_strike.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ice Strike",
+      "pl": "Lodowe uderzenie",
+      "lang": "Ice Strike"
+    },
+    {
+      "key": "spell.ice_burst.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ice Burst",
+      "pl": "Wybuch lodu",
+      "lang": "Ice Burst"
     }
   ],
   "length_ratio_issues": [
@@ -1325,8 +1334,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 31,
-    "applied": 2,
+    "attempted": 32,
+    "applied": 3,
     "skipped": 29,
     "errors": 0
   }

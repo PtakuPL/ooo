@@ -43462,5 +43462,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:05:08.866193Z"
+  },
+  "data.otservbr.global.npc.bolfona.L92.689": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.050646Z"
+  },
+  "data.otservbr.global.npc.frafnar.L90.105": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.091791Z"
+  },
+  "data.otservbr.global.npc.frafnar.L91.106": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.092109Z"
+  },
+  "data.otservbr.global.npc.grombur.L91.1127": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.106298Z"
+  },
+  "data.otservbr.global.npc.grombur.L92.1128": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.106595Z"
+  },
+  "data.otservbr.global.npc.king.tibianus.L453.339": {
+    "src_hash": "6fc6fd5473a14ef5faf70b62c9e91b34",
+    "text": "CAT DE GROBOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.134820Z"
+  },
+  "data.otservbr.global.npc.nokmir.L98.95": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.163338Z"
+  },
+  "data.otservbr.global.npc.nokmir.L99.96": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.163672Z"
+  },
+  "data.otservbr.global.npc.rehon.L67.62": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.181414Z"
+  },
+  "data.otservbr.global.npc.rehon.L68.63": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.181760Z"
+  },
+  "data.otservbr.global.npc.tehlim.L76.419": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.205438Z"
+  },
+  "data.otservbr.global.npc.tehlim.L77.420": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.205736Z"
+  },
+  "data.otservbr.global.npc.xorlosh.L91.605": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.224877Z"
+  },
+  "data.otservbr.global.npc.xorlosh.L92.606": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.225176Z"
+  },
+  "data.otservbr.global.scripts.quests.adventures.of.galthen.actions.yselda.entrances.L13.1753": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Ai nevoie de cel puțin nivelul 250 pentru a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.243822Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.chart.L21.2197": {
+    "src_hash": "912f8fc846951c223a1f55bf41b6e216",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, o poartă străveche.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.251373Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.chart.L29.2198": {
+    "src_hash": "768bc326b118e9437537bef4279e71f8",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, a unei mici ruine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.251911Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.chart.L37.2199": {
+    "src_hash": "0710be37e70c376c6738022133b8b6f1",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, care seamănă cu o față de piatră.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.252466Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.chart.L45.2200": {
+    "src_hash": "884c0dcf03a8f5d8d2c34c6186c063f9",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, un avanpost.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.252965Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.chart.L53.2201": {
+    "src_hash": "9074c5b87cded213a6b2c0658b28d913",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, un bastion.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.253460Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.chart.L61.2202": {
+    "src_hash": "2239381d7c7daedafec02ecae7283a90",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, un turn spart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.254156Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.actions.entrances.L23.2042": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Ai nevoie de cel puțin nivelul 250 pentru a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.265193Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.flower.puzzle.lever.L34.1944": {
+    "src_hash": "88cda7654762a022fbb195ee138048fe",
+    "text": "Ordinea florilor din grădină este greșită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.269884Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.flower.puzzle.lever.L39.1945": {
+    "src_hash": "d985281164095a47a746695286cccc17",
+    "text": "Portalul încă activat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.270248Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.flower.puzzle.lever.L45.1946": {
+    "src_hash": "1acce27ff56e61e64182ecc91614cf06",
+    "text": "Un portal se formează în timp ce două grinzi dintr-o construcție ciudată care despart această cameră se deplasează una spre alta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.271001Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.fount.L7.2126": {
+    "src_hash": "a078052af6499123bf065d74d77c7209",
+    "text": "O fiolă cu apă proaspătă de iaz. Arată limpede și strălucește puțin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.275580Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.frozen.horror.L25.2131": {
+    "src_hash": "09cd280cb68b9a10ec8828dd50e89162",
+    "text": "Trebuie să așteptați puțin, recent cineva provoacă Frozen Horror.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.276211Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.girl.picture.L7.2130": {
+    "src_hash": "7a27db3320b55e3379409c2dde388248",
+    "text": "Se pare că o cheie de argint veche apare în dâră.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.276715Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.final.lever.L406.1880": {
+    "src_hash": "2121ec6cdb04e75616068d53a2d940d6",
+    "text": "Ai nevoie de cel puțin 3 jucători, fiecare într-o coloană.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.283648Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.glasshoneyfun.L6.1668": {
+    "src_hash": "c286835a0afa8e3a39e0c4533364f97e",
+    "text": "Strângeți ușor câteva dintre florile de palmier cu miere și mierea aurie se varsă în ulcior.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.296680Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.actions.glooth.fairy.lever.L62.1882": {
+    "src_hash": "7520c29b5800fd0242924d7bc7a51100",
+    "text": "Trebuie să așteptați 15 minute pentru a utiliza din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.301919Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.entrances.L30.2053": {
+    "src_hash": "10fd367d0a0791a7d1920b1af8d2d755",
+    "text": "Ar trebui să-i arăți respect pentru Bloodshade care păzește acest tărâm înainte de a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.309274Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.entrances.L65.2054": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Ai nevoie de cel puțin nivelul 250 pentru a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.309780Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.movements.blood.entrance.L21.2062": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Ai nevoie de cel puțin nivelul 250 pentru a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.310696Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.fertilizer.L30.1904": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Raportați sarcina lui Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.313262Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.nests.L18.1906": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Raportați sarcina lui Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.313944Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.creaturescripts.middle.spike.kill.L18.1908": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Raportați sarcina lui Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.314773Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.flask.L10.2002": {
+    "src_hash": "5f122d3da4629bffbde1b1c3d44754e9",
+    "text": "Făcut! Raportați înapoi la Omrabas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:13:47.332571Z"
   }
 }

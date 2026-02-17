@@ -30958,5 +30958,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:12:59.974203Z"
+  },
+  "spell.mana_drain_chain.name": {
+    "src_hash": "946d777bac68823d29f74ca5f9f8f710",
+    "text": "цепочка высасывания маны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:40.950599Z"
+  },
+  "spell.death_priest_shargon_dazzle.name": {
+    "src_hash": "650af20a824dd7ad6cbcde85a3c660d1",
+    "text": "Жрец смерти Шаргон Дэзлл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:40.950927Z"
+  },
+  "spell.madareth_pillar_skill_reducer.name": {
+    "src_hash": "a84f3c764fa23fad54dc8381dab7a1d9",
+    "text": "Редуктор навыков Мадаретского столба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:40.951250Z"
+  },
+  "spell.furyosa_manadrain.name": {
+    "src_hash": "79750b7b0dc8e4b410fbc73e2e9af690",
+    "text": "Фурьоса Манадрен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:45.242969Z"
+  },
+  "spell.azerus_summon_2.name": {
+    "src_hash": "f833c24c73b1331c694bdbb1cd06d1a3",
+    "text": "Азерус призыв 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:45.243246Z"
+  },
+  "spell.rustheap_golem_electrify.name": {
+    "src_hash": "ca0392516b101ec892f2c6e60b0348d8",
+    "text": "ржавый голем электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:45.243541Z"
+  },
+  "spell.demon_summon.name": {
+    "src_hash": "b44c360107cc4752e61580e7db80d06b",
+    "text": "вызов демона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:45.243764Z"
+  },
+  "spell.lavafungus_ring.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "кольцо лавафунга",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:45.244001Z"
+  },
+  "spell.eruption_of_destruction_explosion.name": {
+    "src_hash": "5266efea431f223d25150520536ad52e",
+    "text": "извержение разрушительного взрыва",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:48.779131Z"
+  },
+  "spell.furyosa_skill_reducer.name": {
+    "src_hash": "a1cde2f82a3cf2be030756aaca93b06b",
+    "text": "Редуктор навыков Фурьосы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:48.779430Z"
+  },
+  "spell.the_dreadorian_soulfire.name": {
+    "src_hash": "a7800092edee9e3c1df094a493c909ab",
+    "text": "ужасающий огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:48.779704Z"
+  },
+  "spell.single_death_chain.name": {
+    "src_hash": "a02961d385f37635ed4701f197ebb7f8",
+    "text": "одиночная цепь смерти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:48.780016Z"
+  },
+  "spell.zugurosh_pillar_skill_reducer.name": {
+    "src_hash": "7a27843768e9f0e76d42051750d82a72",
+    "text": "Редуктор навыков столба зугуроша",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:48.780342Z"
+  },
+  "spell.undertaker_square_explosion.name": {
+    "src_hash": "1fc35b28fbc60c7ce946a0c477205c1e",
+    "text": "взрыв на площади гробовщика",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:52.235574Z"
+  },
+  "spell.grand_mother_foulscale_summon.name": {
+    "src_hash": "7b708ee438ad0e9f09a5637635fc3fc8",
+    "text": "нечистый вызов бабушки-матери",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:52.235896Z"
+  },
+  "spell.zavarash_heal.name": {
+    "src_hash": "135e011beddf23c8f0af9c905bc267a8",
+    "text": "завараш исцели",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:52.236133Z"
+  },
+  "spell.fury_skill_reducer_2.name": {
+    "src_hash": "f86e8e4cb79667e4d020ac3a499458ce",
+    "text": "Редуктор навыков ярости 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:14:52.236456Z"
   }
 }

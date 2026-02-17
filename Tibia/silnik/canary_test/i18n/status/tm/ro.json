@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:34:13.969951Z"
+    "updated_at": "2026-02-17T00:29:05.260626Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -24006,5 +24006,85 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T00:28:12.807296Z"
+  },
+  "item.11611.desc": {
+    "src_hash": "8d0504df5491ef3c971915357622291d",
+    "text": "Este o rună magică de perete împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:10.510950Z"
+  },
+  "item.11612.desc": {
+    "src_hash": "8d0504df5491ef3c971915357622291d",
+    "text": "Este o rună magică de perete împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:10.511471Z"
+  },
+  "item.11613.desc": {
+    "src_hash": "ae9bf208d9f309053b238ada89a724e2",
+    "text": "Este o rună moartă animată împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:10.511840Z"
+  },
+  "item.11614.desc": {
+    "src_hash": "ae9bf208d9f309053b238ada89a724e2",
+    "text": "Este o rună moartă animată împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:13.205556Z"
+  },
+  "item.11615.desc": {
+    "src_hash": "5209781c30655c8dd9013d825b4fd3fb",
+    "text": "Este o rună grozavă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:13.205890Z"
+  },
+  "item.11616.desc": {
+    "src_hash": "5209781c30655c8dd9013d825b4fd3fb",
+    "text": "Este o rună grozavă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:13.206270Z"
+  },
+  "item.11617.desc": {
+    "src_hash": "9851ceff64f152137cb46bca5761a046",
+    "text": "Este o rună de foc împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:13.206652Z"
+  },
+  "item.11618.desc": {
+    "src_hash": "9851ceff64f152137cb46bca5761a046",
+    "text": "Este o rună de foc împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:13.206964Z"
+  },
+  "item.11619.desc": {
+    "src_hash": "9c0013c945e9960010ced1d559368aac",
+    "text": "Este o rună împodobită de furtună",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:15.156342Z"
+  },
+  "item.11620.desc": {
+    "src_hash": "9c0013c945e9960010ced1d559368aac",
+    "text": "Este o rună împodobită de furtună",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:15.156718Z"
   }
 }

@@ -20990,5 +20990,165 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:27:50.931240Z"
+  },
+  "monster.troll_champion.voice_4": {
+    "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
+    "text": "Гранц!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.078932Z"
+  },
+  "monster.young_troll.voice_1": {
+    "src_hash": "36c158b082540048301c1c6a24867850",
+    "text": "Хм, собаки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.088015Z"
+  },
+  "monster.young_troll.voice_2": {
+    "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
+    "text": "Гранц!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.088342Z"
+  },
+  "monster.generator.name": {
+    "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
+    "text": "Генератор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.150176Z"
+  },
+  "monster.gravedigger.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Могильщик",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.303194Z"
+  },
+  "monster.fire_devil.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Огненный дьявол",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.565478Z"
+  },
+  "monster.troll.voice_8": {
+    "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
+    "text": "Гранц!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.878285Z"
+  },
+  "monster.troll.voice_10": {
+    "src_hash": "36c158b082540048301c1c6a24867850",
+    "text": "Хм, собаки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.878852Z"
+  },
+  "monster.island_troll.voice_6": {
+    "src_hash": "4572b61356b4505d3eb15f9ad3ffd1d4",
+    "text": "Хм, черепахи",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.879259Z"
+  },
+  "monster.island_troll.voice_7": {
+    "src_hash": "36c158b082540048301c1c6a24867850",
+    "text": "Хм, собаки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.879584Z"
+  },
+  "monster.island_troll.voice_8": {
+    "src_hash": "68fe28788bed5ac74d7ec82d3551c149",
+    "text": "Хм, черви",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.879874Z"
+  },
+  "monster.island_troll.voice_10": {
+    "src_hash": "0c2f1ce9cbfda0aef7aec3b4c69a4965",
+    "text": "Гранц!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:24.880324Z"
+  },
+  "monster.firestarter.voice_6": {
+    "src_hash": "8e74c48e49fd0b8b786bfb1de6a8b644",
+    "text": "Эй, что это за запах горелого... не так ли... ТЫ?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:36.783216Z"
+  },
+  "monster.firestarter.voice_7": {
+    "src_hash": "7ea8d9d4d938d22dc9d405664d39455d",
+    "text": "Подожгите все!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:39.364985Z"
+  },
+  "monster.crazed_winter_vanguard.name": {
+    "src_hash": "aa219fa4f0cd385cb79727168d073e61",
+    "text": "Безумный зимний авангард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:39.365284Z"
+  },
+  "monster.crazed_winter_vanguard.desc": {
+    "src_hash": "b1c3090a0be5650d9b198191b34f5265",
+    "text": "сумасшедший зимний авангард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:39.365575Z"
+  },
+  "monster.crazed_winter_vanguard.voice_1": {
+    "src_hash": "4663eccca7f3da2ef4995c3583f67c50",
+    "text": "Никто никогда не сбежит из этого места, мувахаха!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:39.366185Z"
+  },
+  "monster.crazed_winter_vanguard.voice_2": {
+    "src_hash": "20cfc0acd8715249e0eee1d2fc66156f",
+    "text": "Эти голоса… они никогда не умолкают!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:39.366594Z"
+  },
+  "monster.crazed_winter_vanguard.voice_3": {
+    "src_hash": "7292f755c5f316a95ef9118eea4266b4",
+    "text": "Я тут схожу с ума... Ва ва вааа!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:41.784356Z"
+  },
+  "monster.insane_siren.name": {
+    "src_hash": "4b5238407027d8ba4dc767eace31eca3",
+    "text": "Безумная сирена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:29:41.784614Z"
   }
 }

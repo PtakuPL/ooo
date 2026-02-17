@@ -8169,3 +8169,7 @@
 {"timestamp": "2026-02-17T10:30:30.107374Z", "cycle": 444, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 3431, "detail": "count=scripts.json"}
 {"timestamp": "2026-02-17T10:31:50.943878Z", "cycle": 444, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "mode_run", "duration_ms": 80708, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T10:31:57.334595Z", "cycle": 444, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "status_update", "duration_ms": 6157, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T10:32:08.167421Z", "cycle": 444, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "cycle_total", "duration_ms": 101724, "detail": "delay=4"}
+{"timestamp": "2026-02-17T10:32:14.292300Z", "cycle": 445, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1868, "detail": "count=raids.json"}
+{"timestamp": "2026-02-17T10:32:31.244976Z", "cycle": 445, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 16823, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T10:32:39.356495Z", "cycle": 445, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 6939, "detail": "throttle_every=1"}

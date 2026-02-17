@@ -67694,5 +67694,301 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:25:17.936832Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L304.472": {
+    "src_hash": "0bd7be7fa74c735eed6ca6f3f8f93c97",
+    "text": "Saluti, straniero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.803393Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L305.473": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Stai attento là fuori!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.803822Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L306.474": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Stai attento là fuori!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.804403Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L159.1408": {
+    "src_hash": "471a4c1349cb41447a84403c431bbbff",
+    "text": "Grarkharok sii {chief}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.804901Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L160.1409": {
+    "src_hash": "471a4c1349cb41447a84403c431bbbff",
+    "text": "Grarkharok sii {chief}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.805237Z"
+  },
+  "data.otservbr.global.npc.chondur.L319.194": {
+    "src_hash": "13f7dcbb07deb6cf9372fc7090611d20",
+    "text": "Fatti salutare, bambina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.805556Z"
+  },
+  "data.otservbr.global.npc.chrak.L93.1133": {
+    "src_hash": "32a347eb9be8bae0f4fb14b360240687",
+    "text": "Saluti, concorrente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.806316Z"
+  },
+  "data.otservbr.global.npc.chrystal.L77.787": {
+    "src_hash": "3dc2f1ab2a9c914700c5e138304ffa50",
+    "text": "Al vostro servizio |PLAYERNAME| e benvenuti all'ufficio postale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.806798Z"
+  },
+  "data.otservbr.global.npc.chrystal.L78.788": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Chi è il prossimo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.807124Z"
+  },
+  "data.otservbr.global.npc.chrystal.L79.789": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Chi è il prossimo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.807454Z"
+  },
+  "data.otservbr.global.npc.chrystal.L80.790": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Qui. Non dimenticare che se vuoi spedire un pacco devi acquistare anche un'etichetta. Scrivi sempre il nome dello {receiver} nella prima riga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.808209Z"
+  },
+  "data.otservbr.global.npc.cipfried.L177.715": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Addio, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.809129Z"
+  },
+  "data.otservbr.global.npc.cipfried.L64.712": {
+    "src_hash": "f81c498321c6c52d2dda37539f64854f",
+    "text": "Ciao, |PLAYERNAME|! Stai davvero male. Lascia che guarisca le tue ferite. Dopotutto è il mio lavoro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.809737Z"
+  },
+  "data.otservbr.global.npc.cledwyn.L212.1118": {
+    "src_hash": "90eb7ed81786f0f6628dc1a2bc906919",
+    "text": "Benedizioni, Giocatore! Come posso essere utile? Desideri scambiare alcuni {token} o vorresti alcuni {information} o {talk}? Dovrei {enchant} determinati articoli per te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.810674Z"
+  },
+  "data.otservbr.global.npc.coltrayne.L118.1241": {
+    "src_hash": "2cbdbf0d71d0d87da3948f8c56d80db1",
+    "text": "Ehilà. Hai bisogno di un'armatura o di un'arma? Allora chiedimi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.811288Z"
+  },
+  "data.otservbr.global.npc.coltrayne.L119.1242": {
+    "src_hash": "c4043b19b49cb3397c54dc5d082cf00e",
+    "text": "Sì, ciao..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.811598Z"
+  },
+  "data.otservbr.global.npc.commander.stone.L232.80": {
+    "src_hash": "1dc25f4d6e9f4bc175fec0b9148c3b7c",
+    "text": "Ciao recluta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.812113Z"
+  },
+  "data.otservbr.global.npc.cornell.L74.82": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.812982Z"
+  },
+  "data.otservbr.global.npc.corym.butler.L62.1150": {
+    "src_hash": "2009453cd0e9214bb50e9c0ffdc419d4",
+    "text": "Dobbiamo estrarre risorse preziose, ma non abbiamo abbastanza da mangiare. La situazione è terribile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.814818Z"
+  },
+  "data.otservbr.global.npc.corym.footman.L62.228": {
+    "src_hash": "850a02c09cfd41688bfbb5f21dde9f31",
+    "text": "Ciò che mangiamo è davvero ridicolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.815557Z"
+  },
+  "data.otservbr.global.npc.corym.ratter.L63.1029": {
+    "src_hash": "e0afcf5b05f2bd681be3b452372d8aca",
+    "text": "Scaviamo tutto ciò che la madre terra ci offre, preziose risorse naturali.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.816485Z"
+  },
+  "data.otservbr.global.npc.corym.servant.L76.548": {
+    "src_hash": "3c85ff7e716c533650a5c59a22ea7985",
+    "text": "Ogni uomo è l'artefice della propria fortuna. I tempi della repressione sono finalmente finiti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.817521Z"
+  },
+  "data.otservbr.global.npc.corym.slave.L62.665": {
+    "src_hash": "19ef9d5e9520e892b00ccf7857e9de4e",
+    "text": "La repressione è durata troppo a lungo. Con le nostre nuove armi i rispettivi popoli riceveranno la giusta punizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.818198Z"
+  },
+  "data.otservbr.global.npc.corym.worker.01.L65.1136": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Il mio eroe! Un mio amico ti ha mandato per liberarmi? Un vero amico!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.819090Z"
+  },
+  "data.otservbr.global.npc.corym.worker.02.L62.1558": {
+    "src_hash": "4786eaea8d52650dd4ca1e34433b9831",
+    "text": "Abbiamo bisogno di armi per superare la nostra situazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.819761Z"
+  },
+  "data.otservbr.global.npc.corym.worker.03.L65.1": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Il mio eroe! Un mio amico ti ha mandato per liberarmi? Un vero amico!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.820637Z"
+  },
+  "data.otservbr.global.npc.corym.worker.04.L64.507": {
+    "src_hash": "f5e3120d0b7f2781e61a2e28e0e5cd9a",
+    "text": "Ogni uomo è l'artefice della propria fortuna. Voglio rivedere la luce del giorno! Basta annusare l'aria fresca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.821619Z"
+  },
+  "data.otservbr.global.npc.corym.worker.05.L65.1451": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Il mio eroe! Un mio amico ti ha mandato per liberarmi? Un vero amico!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.822481Z"
+  },
+  "data.otservbr.global.npc.costello.L113.1315": {
+    "src_hash": "315117a09e2e5f339c9bb41cbdb72c84",
+    "text": "Benvenuto, |PLAYERNAME|! Sentiti libero di dirmi cosa ti ha portato qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.823330Z"
+  },
+  "data.otservbr.global.npc.curos.L118.838": {
+    "src_hash": "54771d09c948feb1769bd51c9a05d4ac",
+    "text": "Fatti salutare come una pelle vuota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.823924Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L184.165": {
+    "src_hash": "b2393ea7df0080fc59d56c719e0bbb62",
+    "text": "Fatti salutare, viaggiatore |PLAYERNAME|. Benvenuti nel mio {hut}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.824458Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L185.166": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Arrivederci. Prego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.824944Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L88.115": {
+    "src_hash": "85ba7d2d193835a18d572bbd15c04936",
+    "text": "La benedizione della natura!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.825533Z"
+  },
+  "data.otservbr.global.npc.dane.L62.1214": {
+    "src_hash": "042f38056b2f1831092b50637a9db186",
+    "text": "Benvenuti nella cantina delle onde, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.827010Z"
+  },
+  "data.otservbr.global.npc.dane.L63.1215": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.827818Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L251.866": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "ELOGIO A BANOR!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.828345Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L252.867": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "ELOGIO A BANOR!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:32:23.828954Z"
   }
 }

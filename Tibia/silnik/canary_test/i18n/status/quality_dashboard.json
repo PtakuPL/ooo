@@ -18,8 +18,8 @@
     "total_gt_guard_fail": 3392,
     "cycles": 945,
     "quality_score": 60.1,
-    "last_audit": "2026-02-17T07:50:09.001186Z",
-    "issues_count": 131620
+    "last_audit": "2026-02-17T07:50:49.738345Z",
+    "issues_count": 131665
   },
   "az": {
     "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -40,8 +40,8 @@
     "total_gt_guard_fail": 12912,
     "cycles": 1233,
     "quality_score": 60.1,
-    "last_audit": "2026-02-17T07:50:09.001186Z",
-    "issues_count": 218688
+    "last_audit": "2026-02-17T07:50:49.738345Z",
+    "issues_count": 218862
   },
   "pt": {
     "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -72,20 +72,20 @@
     "total_rejected": 302,
     "total_gt_guard_fail": 1068,
     "cycles": 232,
-    "quality_score": 61.7,
-    "last_audit": "2026-02-17T07:50:09.001186Z",
-    "issues_count": 16038
+    "quality_score": 61.0,
+    "last_audit": "2026-02-17T07:50:49.738345Z",
+    "issues_count": 16083
   },
   "ru": {
-    "last_cycle": "2026-02-17T07:48:56.427892Z",
-    "last_translated": 12,
-    "total_suspicious": 26089,
+    "last_cycle": "2026-02-17T07:50:35.338544Z",
+    "last_translated": 3,
+    "total_suspicious": 26092,
     "total_rejected": 613,
     "total_gt_guard_fail": 1569,
-    "cycles": 226,
-    "quality_score": 60.1,
-    "last_audit": "2026-02-17T07:50:09.001186Z",
-    "issues_count": 40049
+    "cycles": 227,
+    "quality_score": 60.2,
+    "last_audit": "2026-02-17T07:50:49.738345Z",
+    "issues_count": 40085
   },
   "nl": {
     "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -99,15 +99,15 @@
     "issues_count": 649
   },
   "sv": {
-    "last_cycle": "2026-02-17T07:42:28.249216Z",
+    "last_cycle": "2026-02-17T07:50:48.173773Z",
     "last_translated": 50,
-    "total_suspicious": 2926,
+    "total_suspicious": 2927,
     "total_rejected": 188,
     "total_gt_guard_fail": 475,
-    "cycles": 108,
-    "quality_score": 74.9,
-    "last_audit": "2026-02-17T07:42:37.125571Z",
-    "issues_count": 12343
+    "cycles": 109,
+    "quality_score": 82.7,
+    "last_audit": "2026-02-17T07:50:49.738345Z",
+    "issues_count": 12346
   },
   "da": {
     "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -550,15 +550,15 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-17T07:49:26.683644Z",
-    "last_translated": 10,
-    "total_suspicious": 33026,
+    "last_cycle": "2026-02-17T07:50:43.564145Z",
+    "last_translated": 4,
+    "total_suspicious": 33027,
     "total_rejected": 1546,
-    "total_gt_guard_fail": 2475,
-    "cycles": 214,
+    "total_gt_guard_fail": 2482,
+    "cycles": 215,
     "quality_score": 60.1,
-    "last_audit": "2026-02-17T07:50:09.001186Z",
-    "issues_count": 51779
+    "last_audit": "2026-02-17T07:50:49.738345Z",
+    "issues_count": 51898
   },
   "sl": {
     "last_cycle": "2026-02-14T05:30:27.321573Z",

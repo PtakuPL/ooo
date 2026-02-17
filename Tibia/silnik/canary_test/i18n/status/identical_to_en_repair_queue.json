@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T09:38:16.986568Z",
+  "timestamp": "2026-02-17T09:41:38.697410Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,7 +67,7 @@
   ],
   "entries_total": 699,
   "entries_by_lang": {
-    "es": 262,
+    "es": 277,
     "pl": 139,
     "cs": 641,
     "de": 659,
@@ -166,7 +166,7 @@
     {
       "lang": "es",
       "json_file": "scripts.json",
-      "identical_to_en": 17,
+      "identical_to_en": 32,
       "domain_priority": 9
     },
     {

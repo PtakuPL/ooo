@@ -1,8 +1,8 @@
 {
-  "total_cycles": 414,
+  "total_cycles": 415,
   "mode": "AUTO_TRANSLATE",
   "category": "pl",
-  "last_update": "2026-02-17T10:40:14.829780",
+  "last_update": "2026-02-17T10:42:06.207304",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "pl",
-    "json_file": "spells.json",
-    "keys_to_translate": 52,
-    "guard_fail": 39,
+    "json_file": "scripts.json",
+    "keys_to_translate": 54,
+    "guard_fail": 70,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

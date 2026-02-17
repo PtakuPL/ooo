@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T09:40:18.892317Z",
+  "timestamp": "2026-02-17T09:42:10.154180Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771321121640915905,
+          1771321323193519711,
           1847374
         ],
         [
@@ -7476,8 +7476,8 @@
         [
           "scripts.json",
           1,
-          1771310527410022803,
-          201034
+          1771321289389418604,
+          200996
         ],
         [
           "server.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45161,
-        "english_copy_keys": 2131,
+        "translated_keys": 45145,
+        "english_copy_keys": 2148,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.28,
+        "completion_pct": 84.25,
         "server_keys": 49731,
-        "server_translated": 42095,
-        "server_pct": 84.65,
+        "server_translated": 42079,
+        "server_pct": 84.61,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771321121640915905,
+            1771321323193519711,
             1847374
           ],
           "row": {
@@ -7971,13 +7971,13 @@
         "scripts.json": {
           "sig": [
             1,
-            1771310527410022803,
-            201034
+            1771321289389418604,
+            200996
           ],
           "row": {
             "total_reference_keys": 2170,
-            "translated_keys": 2095,
-            "english_copy_keys": 31,
+            "translated_keys": 2079,
+            "english_copy_keys": 48,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25485,7 +25485,7 @@
         [
           "scripts.json",
           1,
-          1771317353237164345,
+          1771321256373316666,
           200488
         ],
         [
@@ -25980,7 +25980,7 @@
         "scripts.json": {
           "sig": [
             1,
-            1771317353237164345,
+            1771321256373316666,
             200488
           ],
           "row": {

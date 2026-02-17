@@ -1,0 +1,10 @@
+# NPC: pythius_the_rotten
+
+**Plik:** `data-otservbr-global/npc/pythius_the_rotten.lua`
+**Data migracji:** 2025-12-17 01:05
+**Liczba tekstów:** 0
+
+## Klucze i18n
+
+| Klucz | Tekst EN |
+|-------|----------|

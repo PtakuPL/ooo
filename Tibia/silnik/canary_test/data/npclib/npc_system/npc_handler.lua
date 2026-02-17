@@ -124,8 +124,12 @@ NpcHandler = {
 		-- These provide automatic per-player locale translation for NPCs
 		-- that don't override messages. Individual NPCs can still call
 		-- setLocalizedMessage() or setMessage() to override.
-		obj.localizedMessages[MESSAGE_GREET] = { key = "npclib.handler.greet" }
-		obj.localizedMessages[MESSAGE_FAREWELL] = { key = "npclib.handler.farewell" }
+		local playerNameArgs = function(player)
+			if not player then return nil end
+			return { player:getName() }
+		end
+		obj.localizedMessages[MESSAGE_GREET] = { key = "npclib.handler.greet", args = playerNameArgs }
+		obj.localizedMessages[MESSAGE_FAREWELL] = { key = "npclib.handler.farewell", args = playerNameArgs }
 		obj.localizedMessages[MESSAGE_BUY] = { key = "npclib.handler.buy" }
 		obj.localizedMessages[MESSAGE_MISSINGMONEY] = { key = "npclib.handler.missing_money" }
 		obj.localizedMessages[MESSAGE_NEEDMONEY] = { key = "npclib.handler.need_money" }
@@ -138,7 +142,7 @@ NpcHandler = {
 		obj.localizedMessages[MESSAGE_SENDTRADE] = { key = "npclib.handler.sendtrade" }
 		obj.localizedMessages[MESSAGE_NOSHOP] = { key = "npclib.handler.noshop" }
 		obj.localizedMessages[MESSAGE_ONCLOSESHOP] = { key = "npclib.handler.oncloseshop" }
-		obj.localizedMessages[MESSAGE_ALREADYFOCUSED] = { key = "npclib.handler.already_focused" }
+		obj.localizedMessages[MESSAGE_ALREADYFOCUSED] = { key = "npclib.handler.already_focused", args = playerNameArgs }
 
 		setmetatable(obj.messages, self.messages)
 		self.messages.__index = self.messages
@@ -180,7 +184,7 @@ NpcHandler = {
 		return self.localizedMessages[id]
 	end
 
-	function NpcHandler:tryLocalizedMessage(id, player)
+	function NpcHandler:tryLocalizedMessage(id, player, npc)
 		local entry = self:getLocalizedMessage(id)
 		if not entry or not player or not entry.key or entry.key == "" then
 			return false
@@ -191,7 +195,19 @@ NpcHandler = {
 			args = args(player)
 		end
 
-		player:sendLocalizedTextMessage(entry.messageClass or MESSAGE_NPC_FROM, entry.key, normalizeLocalizedArgs(args))
+		-- Resolve translation server-side and strip language tags
+		local translatedMessage = stripI18nLanguageTags(player:getTranslation(entry.key, normalizeLocalizedArgs(args)))
+		if not translatedMessage or translatedMessage == "" then
+			translatedMessage = entry.key
+		end
+
+		-- Use npc:say for proper NPC dialog window, or fall back to self:say if npc available
+		if npc then
+			self:say(translatedMessage, npc, player)
+		else
+			-- Fallback: find npc from player interaction if npc not passed
+			player:sendTextMessage(entry.messageClass or MESSAGE_EVENT_ADVANCE, translatedMessage)
+		end
 		return true
 	end
 
@@ -466,7 +482,7 @@ NpcHandler = {
 				local playerName = player:getName() or -1
 				local parseInfo = { [TAG_PLAYERNAME] = playerName }
 				self:resetNpc(player)
-				if not self:tryLocalizedMessage(MESSAGE_FAREWELL, player) then
+				if not self:tryLocalizedMessage(MESSAGE_FAREWELL, player, npc) then
 					msg = self:parseMessage(msg, parseInfo)
 					if msg ~= "" then
 						self:say(msg, npc, player)
@@ -489,7 +505,7 @@ NpcHandler = {
 				local msg = self:getMessage(MESSAGE_GREET)
 				local playerName = player:getName() or -1
 				local parseInfo = { [TAG_PLAYERNAME] = playerName }
-				if not self:tryLocalizedMessage(MESSAGE_GREET, player) then
+				if not self:tryLocalizedMessage(MESSAGE_GREET, player, npc) then
 					msg = self:parseMessage(msg, parseInfo)
 					if msg ~= "" then
 						self:say(msg, npc, player)
@@ -572,7 +588,7 @@ NpcHandler = {
 				-- If is npc shop, send shop window and parse default message (if not have callback on the npc)
 				if npc:isMerchant() then
 					npc:openShopWindow(player)
-					if not self:tryLocalizedMessage(MESSAGE_SENDTRADE, player) and msg ~= "" then
+					if not self:tryLocalizedMessage(MESSAGE_SENDTRADE, player, npc) and msg ~= "" then
 						self:say(msg, npc, player)
 					end
 				end
@@ -650,12 +666,12 @@ NpcHandler = {
 				local localizedHandled = false
 				if player then
 					if playerSex == PLAYERSEX_FEMALE then
-						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY_FEMALE, player)
+						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY_FEMALE, player, npc)
 					else
-						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY_MALE, player)
+						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY_MALE, player, npc)
 					end
 					if not localizedHandled then
-						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY, player)
+						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY, player, npc)
 					end
 				end
 
@@ -770,31 +786,21 @@ NpcHandler = {
 	end
 
 	-- I18N: Say localized message using key from i18n system
+	-- Resolves translation server-side, then uses npc:say() for proper NPC dialog window
 	-- Usage: npcHandler:sayLocalized("npc.name.key", npc, player, args)
 	function NpcHandler:sayLocalized(key, npc, player, args, delay, textType)
 		if not player or not key then
 			return
 		end
-		
-		local playerId = player:getId()
-		
-		-- Cancel previous delayed say if exists
-		if self:getEventDelayedSay(playerId) then
-			self:cancelNPCTalk(self:getEventDelayedSay(playerId))
+
+		-- Resolve translation server-side using player's locale (strip language tags)
+		local translatedMessage = stripI18nLanguageTags(player:getTranslation(key, args))
+		if not translatedMessage or translatedMessage == "" then
+			translatedMessage = key -- fallback to key if translation missing
 		end
-		
-		stopEvent(self.eventSay[playerId])
-		
-		-- Send localized message to player
-		local msgType = textType or MESSAGE_NPC_FROM
-		
-		-- Schedule the localized message event
-		self.eventSay[playerId] = addEvent(function(npcId, targetId, msgKey, msgArgs, msgTypeVal)
-			local targetPlayer = Player(targetId)
-			local npcEntity = Npc(npcId)
-			if targetPlayer and npcEntity then
-				targetPlayer:sendLocalizedTextMessage(msgTypeVal, msgKey, msgArgs)
-			end
-		end, self.talkDelayTimeForOutgoingMessages * 1000, npc:getId(), player:getId(), key, args, msgType)
+
+		-- Use the normal say() mechanism which routes through SayEvent -> npc:say(TALKTYPE_PRIVATE_NP)
+		-- This properly opens the NPC dialog window
+		self:say(translatedMessage, npc, player, delay, textType)
 	end
 end

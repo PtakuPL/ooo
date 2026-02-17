@@ -1119,6 +1119,7 @@ function addTabText(text, speaktype, tab, creatureName)
             label:setText(text)
 
             -- Calculate the positions of the highlighted text and fill with string.char(127) [Width: 1]
+            -- UTF-8 aware: skip continuation bytes and use average width for multi-byte chars
             local drawText = label:getDrawText()
             local tmpText = ''
             for i = 1, #highlightData / 3 do
@@ -1133,22 +1134,47 @@ function addTabText(text, speaktype, tab, creatureName)
                     label.highlightInfo[i] = dataBlock.words
                 end
 
-                for letter = lastBlockEnd, dataBlock._start - 1 do
-                    local tmpChar = string.byte(drawText:sub(letter, letter))
-                    local fillChar = (tmpChar == 10 or tmpChar == 32) and string.char(tmpChar) or string.char(127)
-
-                    tmpText = tmpText .. string.rep(fillChar, letterWidth[tmpChar])
+                local letter = lastBlockEnd
+                while letter <= dataBlock._start - 1 do
+                    local tmpChar = string.byte(drawText:sub(letter, letter)) or 0
+                    if tmpChar >= 0x80 and tmpChar < 0xC0 then
+                        -- UTF-8 continuation byte: skip (already accounted for by lead byte)
+                        letter = letter + 1
+                    elseif tmpChar >= 0xC0 then
+                        -- UTF-8 lead byte: use average character width (7px for verdana-11px)
+                        local seqLen = 2
+                        if tmpChar >= 0xF0 then seqLen = 4
+                        elseif tmpChar >= 0xE0 then seqLen = 3 end
+                        tmpText = tmpText .. string.rep(string.char(127), 7)
+                        letter = letter + seqLen
+                    else
+                        -- ASCII byte: use letterWidth table
+                        local fillChar = (tmpChar == 10 or tmpChar == 32) and string.char(tmpChar) or string.char(127)
+                        tmpText = tmpText .. string.rep(fillChar, letterWidth[tmpChar] or 7)
+                        letter = letter + 1
+                    end
                 end
                 tmpText = tmpText .. dataBlock.words
             end
 
             -- Fill the highlight label to the same size as default label
             local finalBlockEnd = (highlightData[(#highlightData / 3 - 1) * 3 + 2] or 1)
-            for letter = finalBlockEnd, drawText:len() do
-                local tmpChar = string.byte(drawText:sub(letter, letter))
-                local fillChar = (tmpChar == 10 or tmpChar == 32) and string.char(tmpChar) or string.char(127)
-
-                tmpText = tmpText .. string.rep(fillChar, letterWidth[tmpChar])
+            local letter = finalBlockEnd
+            while letter <= drawText:len() do
+                local tmpChar = string.byte(drawText:sub(letter, letter)) or 0
+                if tmpChar >= 0x80 and tmpChar < 0xC0 then
+                    letter = letter + 1
+                elseif tmpChar >= 0xC0 then
+                    local seqLen = 2
+                    if tmpChar >= 0xF0 then seqLen = 4
+                    elseif tmpChar >= 0xE0 then seqLen = 3 end
+                    tmpText = tmpText .. string.rep(string.char(127), 7)
+                    letter = letter + seqLen
+                else
+                    local fillChar = (tmpChar == 10 or tmpChar == 32) and string.char(tmpChar) or string.char(127)
+                    tmpText = tmpText .. string.rep(fillChar, letterWidth[tmpChar] or 7)
+                    letter = letter + 1
+                end
             end
 
             labelHighlight:setText(tmpText)
@@ -1163,7 +1189,7 @@ function addTabText(text, speaktype, tab, creatureName)
         if mouseButton == MouseLeftButton then
             local position = label:getTextPos(mousePos)
             if position and label.highlightInfo[position] then
-                sendMessage(label.highlightInfo[position], npcTab)
+                sendMessage(label.highlightInfo[position], tab)
             end
         elseif mouseButton == MouseRightButton then
             processMessageMenu(mousePos, mouseButton, creatureName, text, self, tab)

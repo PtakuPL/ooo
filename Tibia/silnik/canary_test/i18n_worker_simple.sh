@@ -14803,6 +14803,29 @@ for key, en_text in iter_items:
             if not current_value.startswith("[") and not force_en_copy_retranslate:
                 continue  # Już przetłumaczone
     
+    # ── Semantic Override Check (priorytet nad TM/GT/simple) ────────────
+    _override_val = TRANSLATION_OVERRIDES.get(target_lang, {}).get(key)
+    if _override_val:
+        _override_val_fixed, _ = _auto_fix_translation(en_text, _override_val, target_lang)
+        ok_ov, _ = validate_candidate(en_text, _override_val_fixed)
+        if ok_ov:
+            lang_data[key] = _override_val_fixed
+            translated += 1
+            h = src_hash(en_text)
+            tm_upsert(key, h, _override_val_fixed, "override", 1.0, verified=True)
+            _append_jsonl(guard_report_path, {
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "language": target_lang,
+                "json_file": json_file,
+                "key": key,
+                "source": "override",
+                "en": str(en_text),
+                "translated": _override_val_fixed,
+            })
+            if translate_limit > 0 and translated >= translate_limit:
+                break
+            continue
+
     # TM lookup: użyj zapamiętanego tłumaczenia jeśli hash źródła pasuje
     h = src_hash(en_text)
     saved = tm_data.get(key)

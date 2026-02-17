@@ -61582,5 +61582,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:45:45.750650Z"
+  },
+  "otclient_modules.charms.tr_64": {
+    "src_hash": "738ca3cb200c27b4996ed320eee15705",
+    "text": "Maledizione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.802725Z"
+  },
+  "otclient_modules.createaccount_otui.tr_13": {
+    "src_hash": "c427d457c29f111c9cdf139b4cab5605",
+    "text": "Tipo PvP:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.815217Z"
+  },
+  "otclient_modules.createaccount_otui.tr_9": {
+    "src_hash": "48b526d0b591335f8259bcdd2c34c6c4",
+    "text": "Tipo PvP:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.817847Z"
+  },
+  "otclient_modules.house.tr_21": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stato:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.864537Z"
+  },
+  "otclient_modules.house.tr_24": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stato:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.864871Z"
+  },
+  "otclient_modules.house.tr_28": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stato:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.865390Z"
+  },
+  "otclient_modules.outfit.tr_5": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.905969Z"
+  },
+  "otclient_modules.outfit.tr_6": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.906421Z"
+  },
+  "otclient_modules.outfit.tr_8": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.906699Z"
+  },
+  "otclient_modules.outfit.tr_9": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.906927Z"
+  },
+  "otclient_modules.player.tr_3": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Maestro Stregone",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.909403Z"
+  },
+  "otclient_modules.player.tr_4": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Paladino reale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.910425Z"
+  },
+  "otclient_modules.player.tr_5": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Cavaliere d'élite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.911011Z"
+  },
+  "otclient_modules.player.tr_7": {
+    "src_hash": "39babca9e3d0ceda5051773a25fe2a4f",
+    "text": "Stregone",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.911469Z"
+  },
+  "otclient_modules.player.tr_8": {
+    "src_hash": "f4c17b587a99337e4f5a8e37cdb2a858",
+    "text": "Paladino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.911847Z"
+  },
+  "otclient_modules.player.tr_9": {
+    "src_hash": "8c23b2b86573edf2a5ea482c2ccc1497",
+    "text": "Cavaliere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.912284Z"
+  },
+  "otclient_modules.quickloot_otui.tr_2": {
+    "src_hash": "8d5e7e72f12067991186cdf3cb7d5d9d",
+    "text": "Premio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.917060Z"
+  },
+  "otclient_modules.serverlist_otui.tr_2": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selezionare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.922372Z"
+  },
+  "otclient_modules.skills_otui.tr_24": {
+    "src_hash": "9428316ee33b703d37464160e7b7dfff",
+    "text": "Sanguisuga di mana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.926702Z"
+  },
+  "otclient_modules.skills_otui.tr_25": {
+    "src_hash": "a64e30d3c5a027e9821ebe7f8c8f819f",
+    "text": "Sanguisuga della vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.927251Z"
+  },
+  "otclient_modules.skills_otui.tr_4": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Riflessione del danno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.928522Z"
+  },
+  "otclient_modules.skills_otui.tr_51": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Velocità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.930751Z"
+  },
+  "otclient_modules.skills_otui.tr_52": {
+    "src_hash": "3b8f7696879f77dfc8c74aa8df8db24b",
+    "text": "Capacità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.931125Z"
+  },
+  "otclient_modules.spelllist_otui.tr_10": {
+    "src_hash": "8c23b2b86573edf2a5ea482c2ccc1497",
+    "text": "Cavaliere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.932826Z"
+  },
+  "otclient_modules.spelllist_otui.tr_11": {
+    "src_hash": "f4c17b587a99337e4f5a8e37cdb2a858",
+    "text": "Paladino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.933257Z"
+  },
+  "otclient_modules.spelllist_otui.tr_13": {
+    "src_hash": "39babca9e3d0ceda5051773a25fe2a4f",
+    "text": "Stregone",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.933680Z"
+  },
+  "otclient_modules.spelllist_otui.tr_17": {
+    "src_hash": "8d5e7e72f12067991186cdf3cb7d5d9d",
+    "text": "Premio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.934528Z"
+  },
+  "otclient_modules.spelllist_otui.tr_23": {
+    "src_hash": "03937134cedab9078be39a77ee3a48a0",
+    "text": "Gruppo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.935577Z"
+  },
+  "otclient_modules.spelllist_otui.tr_4": {
+    "src_hash": "8d5e7e72f12067991186cdf3cb7d5d9d",
+    "text": "Premio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.937409Z"
+  },
+  "otclient_modules.spelllist_otui.tr_9": {
+    "src_hash": "03937134cedab9078be39a77ee3a48a0",
+    "text": "Gruppo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.938322Z"
+  },
+  "otclient_modules.tasks.tr_13": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Seleziona il mostro dall'elenco dei mostri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.941764Z"
+  },
+  "otclient_modules.tasks.tr_14": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Seleziona il mostro dall'elenco dei mostri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.942302Z"
+  },
+  "otclient_modules.tasks.tr_15": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Seleziona il mostro dall'elenco dei mostri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.942742Z"
+  },
+  "otclient_modules.topmenu.tr_1": {
+    "src_hash": "28f039fec7fd63e2ccf915c52a9284bb",
+    "text": "Giocatori in linea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.946521Z"
+  },
+  "otclient_modules.topmenu_otui.tr_1": {
+    "src_hash": "28f039fec7fd63e2ccf915c52a9284bb",
+    "text": "Giocatori in linea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.947428Z"
+  },
+  "otclient_modules.updater.tr_1": {
+    "src_hash": "62a88f6e2ba35dd7ebd826a930527245",
+    "text": "Errore dell'aggiornamento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.949943Z"
+  },
+  "otclient_modules.viplist.tr_25": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.953273Z"
+  },
+  "otclient_modules.viplist.tr_9": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:29.954436Z"
+  },
+  "otclient_modules.blessing.tr_12": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Il tuo personaggio è promosso e il tuo account ha Premium\nstato. Di conseguenza, la perdita di XP viene ridotta di",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:34.014968Z"
+  },
+  "otclient_modules.blessing.tr_13": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Il tuo personaggio è promosso e il tuo account ha Premium\nstato. Di conseguenza, la perdita di XP viene ridotta di",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:34.016160Z"
+  },
+  "otclient_modules.blessing.tr_14": {
+    "src_hash": "16d2b386b2034b9488996466aaae0b57",
+    "text": "Storia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:34.016604Z"
+  },
+  "otclient_modules.blessing.tr_16": {
+    "src_hash": "71e37136fcdaf8d5610c4999e1d3bc30",
+    "text": "Registro delle benedizioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:34.023570Z"
+  },
+  "otclient_modules.blessing.tr_3": {
+    "src_hash": "fe6b36ad4f4e9a6ef3e93cda2e905c53",
+    "text": "possibilità di perdere oggetti alla tua prossima morte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:34.024360Z"
+  },
+  "otclient_modules.blessing.tr_4": {
+    "src_hash": "e28d139f3bb8eadce624afb7e58baa07",
+    "text": "- C'è un",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:39.157018Z"
+  },
+  "otclient_modules.blessing.tr_5": {
+    "src_hash": "f5fbdad416aa013e753e2645a2bb5fd3",
+    "text": "possibilità che perderai il contenitore equipaggiato alla tua prossima morte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:39.157452Z"
+  },
+  "otclient_modules.blessing.tr_6": {
+    "src_hash": "e28d139f3bb8eadce624afb7e58baa07",
+    "text": "- C'è un",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:39.157656Z"
+  },
+  "otclient_modules.blessing.tr_7": {
+    "src_hash": "e8704a3a83bb64c5d87d0d743521e0b1",
+    "text": "meno XP e punti abilità alla tua prossima morte in PvE.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:39.158022Z"
+  },
+  "otclient_modules.blessing.tr_8": {
+    "src_hash": "bf444eba9f83785ba7442808a567f063",
+    "text": "- Perderai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:39.158257Z"
+  },
+  "otclient_modules.blessing.tr_9": {
+    "src_hash": "2372bb23070375ce2fbaf05acd5bcfa3",
+    "text": "meno XP e punti abilità\nalla tua prossima morte in PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:42.922465Z"
+  },
+  "otclient_modules.boss_slots.tr_1": {
+    "src_hash": "88b9b7cdb71800c85830257bebf71505",
+    "text": "(completamente sbloccato)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:50:42.922712Z"
   }
 }

@@ -32270,5 +32270,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:16:57.505403Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Acum unde am pus formularul acela?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.474984Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Bucură-te Pumin. Da, grindină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.475369Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Acum unde am pus formularul acela?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.476787Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Bucură-te Pumin. Da, grindină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.477151Z"
+  },
+  "npc.aruda.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "La revedere, |PLAYERNAME|. Chiar sper să vorbim din nou în curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.583099Z"
+  },
+  "npc.aruda.greet_msg_1": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "Oh, bună |PLAYERNAME|, părul tău arată grozav! Cine a făcut-o pentru tine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.583726Z"
+  },
+  "npc.aruda.greet_msg_2": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "Oh, salut, frumos! Este o plăcere să te cunosc, |PLAYERNAME|. Cu plăcere am timp să {chat} puțin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.584324Z"
+  },
+  "npc.ashari.greet_msg_1": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Bună, străine! Aceste peșteri trebuie să ți se pară ciudate. Mă întreb ce te aduce aici... poate te interesează ceva de lucru? Există mai multe sarcini cu care aș putea avea nevoie de ajutor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.587788Z"
+  },
+  "npc.atur.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.589374Z"
+  },
+  "npc.aurita.greet_msg_1": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Salutări, călător!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.590404Z"
+  },
+  "npc.avar_tar.greet_msg_1": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Salutări, călător |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.592521Z"
+  },
+  "npc.awarness_of_the_emperor.greet_msg_1": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Nu sunt aici să mă lupt cu tine, prostule. Ne place sau nu, va trebui să lucrăm împreună pentru a opri catastrofa pe care dumneavoastră și acel preot ați inițiat-o.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.594865Z"
+  },
+  "npc.awarness_of_the_emperor.greet_msg_2": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Salutări, muritor. Fii conștient că îmi încerci răbdarea în timp ce vorbim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.595410Z"
+  },
+  "npc.baa_leal.farewell_msg_1": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Dă-te jos, soldat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.599640Z"
+  },
+  "npc.barazbaz.greet_msg_1": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "Oh, bună ziua!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.602375Z"
+  },
+  "npc.barbara.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "TRAIAȚI REGINA! Poți pleca acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.603494Z"
+  },
+  "npc.barnabas_dee.farewell_msg_1": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Ai grijă, copile",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.604838Z"
+  },
+  "npc.barnabas_dee.greet_msg_1": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Bine ați venit în umilul meu sălaș. Dacă vii pentru noul vrăjitor {spells}, ai ajuns în locul potrivit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.605478Z"
+  },
+  "npc.bashira.greet_msg_1": {
+    "src_hash": "1ab992ebc47c02f476153edbb5649f2a",
+    "text": "Bun venit, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.607562Z"
+  },
+  "npc.bashira.sendtrade_msg_1": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Desigur, doar răsfoiți ofertele mele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.608093Z"
+  },
+  "npc.bashira.walkaway_msg_1": {
+    "src_hash": "91f025a68ba7730090f9f4a3461e5e62",
+    "text": "Dumnezeu să vă arate calea, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.608536Z"
+  },
+  "npc.battlemart.farewell_msg_1": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "La revedere, |PLAYERNAME|, voi fi aici dacă mai ai nevoie de mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.609012Z"
+  },
+  "npc.battlemart.greet_msg_1": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "E bine să te văd. Sunt mereu la {shop options} dvs.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.609488Z"
+  },
+  "npc.battlemart.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.609989Z"
+  },
+  "npc.baxter.greet_msg_1": {
+    "src_hash": "5a79b0f1ba416a18a992917d1837d174",
+    "text": "TRAIAȚI REGELE TIBIANUS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.610720Z"
+  },
+  "npc.baxter.sendtrade_msg_1": {
+    "src_hash": "cf5734463548fd7f4caefa09650648e3",
+    "text": "Aduci șobolani proaspăt uciși pentru o recompensă de 1 aur fiecare? Apropo, cumpăr și dinți de orc și alte chestii pe care le-ai smuls din trupul lor sângeros... Adică... ei bine, știi ce vreau să spun.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.611759Z"
+  },
+  "npc.beatrice.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.613308Z"
+  },
+  "npc.benjamin.farewell_msg_1": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "A fost o plăcere să vă ajut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.614318Z"
+  },
+  "npc.benjamin.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Buna ziua. Cum te pot ajuta |PLAYERNAME|? Cere-mi un {trade} dacă vrei să cumperi ceva. Pot explica și sistemul {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.615133Z"
+  },
+  "npc.bertha.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.617161Z"
+  },
+  "npc.ebenizer.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.753110Z"
+  },
+  "npc.eighty.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.758099Z"
+  },
+  "npc.elgar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.767056Z"
+  },
+  "npc.emma.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "TRAIAȚI REGINA! Poți pleca acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.772019Z"
+  },
+  "npc.eva.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.785356Z"
+  },
+  "npc.fenbala.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "TRAIAȚI REGINA! Poți pleca acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.792760Z"
+  },
+  "npc.ferks.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.794834Z"
+  },
+  "npc.finarfin.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.799098Z"
+  },
+  "npc.florentine.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.803137Z"
+  },
+  "npc.gnomillion.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.841545Z"
+  },
+  "npc.guard_saros.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "La revedere, |PLAYERNAME|. Chiar sper să vorbim din nou în curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.868954Z"
+  },
+  "npc.hireling.farewell_msg_1": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "La revedere, |PLAYERNAME|, voi fi aici dacă mai ai nevoie de mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.912144Z"
+  },
+  "npc.hireling.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.914988Z"
+  },
+  "npc.jefrey.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.969558Z"
+  },
+  "npc.jessica.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.972969Z"
+  },
+  "npc.kaya.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.996397Z"
+  },
+  "npc.kepar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:32.999443Z"
   }
 }

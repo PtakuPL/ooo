@@ -38382,5 +38382,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:14:41.164905Z"
+  },
+  "npc.a_wrinkled_bonelord.farewell_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Aspetta proprio lì. Ti mangerò dopo aver scritto quello che ho scoperto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.416874Z"
+  },
+  "npc.a_wrinkled_bonelord.greet_msg_1": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Cos'è questo? Un'entità con problemi di vista chiamata |PLAYERNAME|. Che fascino!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.417537Z"
+  },
+  "npc.a_wrinkled_bonelord.walkaway_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Aspetta proprio lì. Ti mangerò dopo aver scritto quello che ho scoperto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.419459Z"
+  },
+  "npc.ahmet.greet_msg_1": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Sii compianto pellegrino in carne ed ossa. Vendo beni generali. Chiedimi solo un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.421359Z"
+  },
+  "npc.ajax.greet_msg_1": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Sei tornato. Lo sai, hai ragione. Il fratello ha ragione. Il pugno non è sempre buono. Diglielo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.423365Z"
+  },
+  "npc.ajax.greet_msg_2": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Cosa fai al mio posto?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.423849Z"
+  },
+  "npc.al_dee.farewell_msg_1": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Ciao, ciao |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.425656Z"
+  },
+  "npc.al_dee.sendtrade_msg_1": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Dai un'occhiata alla finestra degli scambi alla tua sinistra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.426401Z"
+  },
+  "npc.albinius.greet_msg_1": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Saluti, pellegrino. Benvenuti nelle sale della speranza. Siamo i custodi di questo {temple} e diamo il benvenuto a chiunque voglia contribuire.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.431290Z"
+  },
+  "npc.albinius.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... addio, bambina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.434821Z"
+  },
+  "npc.alesar.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.437646Z"
+  },
+  "npc.alexander.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.439641Z"
+  },
+  "npc.alexander.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.440382Z"
+  },
+  "npc.alia.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.441342Z"
+  },
+  "npc.amanda.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.450930Z"
+  },
+  "npc.azalea.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.496332Z"
+  },
+  "npc.brewster.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.536611Z"
+  },
+  "npc.cedrik.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.594533Z"
+  },
+  "npc.ferus.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.727110Z"
+  },
+  "npc.gelidrazahs_thirst.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.752591Z"
+  },
+  "npc.gelidrazahs_thirst.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.753552Z"
+  },
+  "npc.haroun.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.859215Z"
+  },
+  "npc.isimov.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.906652Z"
+  },
+  "npc.ivalisse.walkaway_msg_1": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... addio, bambina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.915158Z"
+  },
+  "npc.kasmir.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.966873Z"
+  },
+  "npc.kjesse.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:21.986719Z"
+  },
+  "npc.lorietta.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.017211Z"
+  },
+  "npc.maealil.greet_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.040460Z"
+  },
+  "npc.maealil.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.041038Z"
+  },
+  "npc.nah_bob.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.102398Z"
+  },
+  "npc.prezil.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.199651Z"
+  },
+  "npc.tyrias.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.396048Z"
+  },
+  "npc.yaman.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.456427Z"
+  },
+  "npc.yberius.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.459236Z"
+  },
+  "npc.zedrulon_the_fallen.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:21:22.475645Z"
   }
 }

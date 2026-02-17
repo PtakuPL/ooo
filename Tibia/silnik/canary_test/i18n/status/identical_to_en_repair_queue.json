@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T00:40:29.448674Z",
+  "timestamp": "2026-02-17T00:44:20.780184Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,7 +73,7 @@
     "de": 659,
     "fr": 589,
     "hu": 663,
-    "it": 485,
+    "it": 483,
     "nl": 691,
     "pt": 620,
     "ro": 509,
@@ -107,7 +107,7 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 494,
+    "sr": 492,
     "sv": 536,
     "sw": 905,
     "ta": 905,
@@ -652,7 +652,7 @@
     {
       "lang": "it",
       "json_file": "scripts.json",
-      "identical_to_en": 146,
+      "identical_to_en": 144,
       "domain_priority": 9
     },
     {

@@ -31470,5 +31470,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:38:14.855326Z"
+  },
+  "scripts.actions_totems.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesso concesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.579036Z"
+  },
+  "scripts.gems.msg_4": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Metti il ​​topazio sulla piccola presa. Una fiamma gialla inizia a bruciare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.622539Z"
+  },
+  "scripts.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Hai preso parte alla scaramuccia nelle ultime 10 ore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.648430Z"
+  },
+  "scripts.movement_third_floor_ghoul.say_1": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.649925Z"
+  },
+  "scripts.movement_third_floor_ghoul.say_2": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.650281Z"
+  },
+  "scripts.movements_boat_puzzle.msg_1": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.651723Z"
+  },
+  "scripts.movements_boat_puzzle.msg_2": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Ci sono ancora alcune assi e gomene sciolte. Non puoi usare la zattera in questo modo, affonderà sicuramente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.652358Z"
+  },
+  "scripts.movements_boat_puzzle.msg_3": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Usi la gomena per legare le assi sciolte. La zattera dovrebbe essere idonea alla navigazione adesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.652984Z"
+  },
+  "scripts.movements_boat_puzzle.msg_4": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.653694Z"
+  },
+  "scripts.movements_boat_puzzle.msg_5": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Senza punti di orientamento non troverai mai la strada del ritorno. Prova a trovare un modo per migliorare la tua navigazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.654279Z"
+  },
+  "scripts.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Superi il fuoco senza subire alcun danno. È ora o mai più...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.655468Z"
+  },
+  "scripts.movements_color_puzzle.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesso concesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.655882Z"
+  },
+  "scripts.movements_elemental_portals.msg_1": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ci hai messo troppo tempo, la battaglia è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.657110Z"
+  },
+  "scripts.movements_elemental_portals.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.657541Z"
+  },
+  "scripts.movements_elemental_portals.msg_3": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Hai scoperto una vecchia scrivania che contiene un'antica mappa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.658123Z"
+  },
+  "scripts.movements_energy_entrance.msg_1": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.658551Z"
+  },
+  "scripts.movements_energy_entrance.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.658952Z"
+  },
+  "scripts.movements_energy_entrance.msg_3": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.659367Z"
+  },
+  "scripts.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.661814Z"
+  },
+  "scripts.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.662196Z"
+  },
+  "scripts.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.664728Z"
+  },
+  "scripts.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "I resti ti deporalizzano temporaneamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.665153Z"
+  },
+  "scripts.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Con il potere del Custode oscuro ancora in agguato, la nebbia ti impedisce di entrare nella tana di Quaid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.666815Z"
+  },
+  "scripts.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Hai completato il rituale dell'offerta del cibo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.667634Z"
+  },
+  "scripts.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Devi aspettare. Qualcuno è impegnativo ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.668880Z"
+  },
+  "scripts.schrodingers_island_teleport_lvl_999.msg_2": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Congratulazioni!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:43:58.687326Z"
+  },
+  "player.prey.dialog.money_reroll": {
+    "src_hash": "4a0c6a127b06f522ac139325de73de25",
+    "text": "Non hai abbastanza soldi per rilanciare lo slot preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:00.007695Z"
+  },
+  "player.prey.dialog.no_active_monster": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "Non hai nessun mostro attivo in questo slot preda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:00.008054Z"
+  },
+  "player.prey.dialog.unlock_store": {
+    "src_hash": "0e0663dfef25a898928e3b386cfda7cd",
+    "text": "Per sbloccare questo slot preda devi prima acquistarlo nel negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:00.008416Z"
+  },
+  "player.rookgaard.ready": {
+    "src_hash": "6d20bc2142a906d6f307b16d89c864a5",
+    "text": "Congratulazioni! Sei pronto a lasciare quest'isola e scegliere una vocazione. Visita l'Oracolo sopra l'accademia in Rookgaard prima di raggiungere il livello 10.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:00.009118Z"
+  },
+  "player.stash.dialog.capacity_none": {
+    "src_hash": "8a2af9d9b8713d47f34f5d153c8fbd5a",
+    "text": "Capacità insufficiente. Non è stato possibile recuperare alcun elemento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:02.587087Z"
+  },
+  "player.stash.dialog.capacity_partial": {
+    "src_hash": "63e2e58c3115b94aa157bc6e68373c29",
+    "text": "Capacità insufficiente. Non è stato possibile recuperare tutti gli elementi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:02.587498Z"
+  },
+  "player.stash.dialog.space_none": {
+    "src_hash": "916831e0f3526818bd2a785e5cd7847c",
+    "text": "Spazio insufficiente. Non è stato possibile recuperare alcun elemento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:02.587885Z"
+  },
+  "player.stash.dialog.space_partial": {
+    "src_hash": "7f3316bc649e57e6cecd37bbecd57a60",
+    "text": "Spazio insufficiente. Non è stato possibile recuperare tutti gli elementi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:02.588272Z"
+  },
+  "player.stash.retrieved": {
+    "src_hash": "b509c8ee23315762bc6dc269eaec4a56",
+    "text": "Estratto {0}x {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:02.588522Z"
+  },
+  "player.status.cleanse": {
+    "src_hash": "a739f076aeffed46adfa40c6071870ac",
+    "text": "Non sei più {0}. (incantesimo purificatore)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:06.509005Z"
+  },
+  "player.task.dialog.action_error": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "Si è verificato un errore durante l'elaborazione della tua azione. Prova a riaprire la finestra delle attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:06.509505Z"
+  },
+  "player.task.dialog.already_active": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "Hai già un mostro attivo in questo slot di caccia all'attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:06.509901Z"
+  },
+  "player.task.dialog.cards_reward_reroll": {
+    "src_hash": "eb2d9eadbbdac5fec6d5325028387846",
+    "text": "Non hai abbastanza carte preda per rilanciare la rarità della ricompensa del tuo incarico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:06.510411Z"
+  },
+  "player.task.dialog.cards_selection": {
+    "src_hash": "001d3eac2d44cadded9ef664c14fd73a",
+    "text": "Non hai abbastanza carte preda per scegliere una creatura dall'elenco per questo slot di caccia al compito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:06.510916Z"
+  },
+  "player.task.dialog.empty_slot": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Non puoi richiedere la ricompensa del tuo compito con uno slot di ricerca compito vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:09.091933Z"
+  },
+  "player.task.dialog.money_cancel": {
+    "src_hash": "a15fe3c87827bbc30365724e8902e44c",
+    "text": "Non hai abbastanza soldi per annullare la ricerca delle attività attuali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:09.092371Z"
+  },
+  "player.task.dialog.money_reroll": {
+    "src_hash": "5b517b5ad2c8df4d56c10c931129df80",
+    "text": "Non hai abbastanza soldi per rilanciare lo slot di ricerca delle attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:09.092780Z"
+  },
+  "player.task.dialog.reward_error": {
+    "src_hash": "069c6929f41f06c26f787cc96c1d4219",
+    "text": "Si è verificato un errore durante l'elaborazione del premio per la ricerca delle attività. Per favore prova a riaprire la finestra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:12.950347Z"
+  },
+  "player.task.dialog.unlock_store": {
+    "src_hash": "3d020c89b8873a1ae84afb0024281f73",
+    "text": "Per sbloccare questo slot di caccia alle attività devi prima acquistarlo nel negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:12.950833Z"
   }
 }

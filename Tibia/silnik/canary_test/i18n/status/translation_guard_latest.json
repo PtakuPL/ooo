@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T10:13:47.884372Z",
-  "cycle": 434,
+  "timestamp": "2026-02-17T10:16:14.491048Z",
+  "cycle": 435,
   "language": "ro",
-  "json_file": "achievements.json",
-  "translated": 24,
+  "json_file": "client.json",
+  "translated": 14,
   "placeholders": 0,
-  "guard_fail": 26,
+  "guard_fail": 12,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 656
+  "strict_skipped_done": 228
 }

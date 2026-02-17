@@ -66454,5 +66454,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:12:42.143043Z"
+  },
+  "talkaction.common.msg_command_param_usage": {
+    "src_hash": "8a70b215e7b42d0a434259e0b3584f62",
+    "text": "Parametro di comando obbligatorio. Utilizzo: {usage}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.452706Z"
+  },
+  "talkaction.common.msg_insufficient_usage": {
+    "src_hash": "e8edd16e11be79a9caa1fca8a7c0d55b",
+    "text": "Parametri insufficienti. Utilizzo: {usage}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.453559Z"
+  },
+  "talkaction.gm.spy.msg_empty": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.456148Z"
+  },
+  "talkaction.gm.spy.slot_armor": {
+    "src_hash": "c77a8030f463c2c14aebd6452fc9f0a8",
+    "text": "Armatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.456864Z"
+  },
+  "talkaction.gm.spy.slot_helmet": {
+    "src_hash": "5633f0c2ef79566f47e39491600497ff",
+    "text": "Elmo",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.457501Z"
+  },
+  "talkaction.gm.spy.slot_left_hand": {
+    "src_hash": "918ea51c669253cd37b34596c035b44c",
+    "text": "Mano sinistra",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.457807Z"
+  },
+  "talkaction.gm.spy.slot_legs": {
+    "src_hash": "48423a9049b3065103ef1026a5fa08e5",
+    "text": "Gambe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.458114Z"
+  },
+  "talkaction.gm.spy.slot_right_hand": {
+    "src_hash": "c236d3c59a55e01b8a89a671e948ff57",
+    "text": "Mano destra",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.458517Z"
+  },
+  "talkaction.player.buy_house.msg_not_enough_money": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:48.467722Z"
+  },
+  "talkaction.common.msg_command_param_required": {
+    "src_hash": "c271d2fad3f3e6b7c52384ead3321add",
+    "text": "Parametro di comando obbligatorio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:52.017529Z"
+  },
+  "talkaction.common.msg_creature_not_found": {
+    "src_hash": "9ed7bb1fb53aca902744154ac6d31e8b",
+    "text": "Creatura non trovata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:52.017801Z"
+  },
+  "talkaction.common.msg_creature_not_found_verbose": {
+    "src_hash": "9d0640938a7f699932dc2fc196a3e258",
+    "text": "Non è stato possibile trovare una creatura con quel nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:52.018227Z"
+  },
+  "talkaction.common.msg_insufficient_parameters": {
+    "src_hash": "1a689cded4cf742d35d3aaf507494fc9",
+    "text": "Parametri insufficienti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:52.018492Z"
+  },
+  "talkaction.common.msg_invalid_command_param": {
+    "src_hash": "0e56640670b7fd219c3e00fc0f935da6",
+    "text": "Parametro comando non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:52.018756Z"
+  },
+  "talkaction.common.msg_invalid_command_params": {
+    "src_hash": "bd22f474c3167a252fe0769c5a74c10f",
+    "text": "Parametri del comando non validi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:58.889968Z"
+  },
+  "talkaction.common.msg_no_active_players": {
+    "src_hash": "d16e874397a7f98edfb79b5419a2d042",
+    "text": "Non ci sono giocatori attivi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:58.890375Z"
+  },
+  "talkaction.common.msg_not_enough_room": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Non c'è abbastanza spazio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:58.890668Z"
+  },
+  "talkaction.common.msg_not_inside_house": {
+    "src_hash": "2c9ebf3d9b3a7a541c1a55b5f67c7d6c",
+    "text": "Non sei dentro una casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:58.890976Z"
+  },
+  "talkaction.common.msg_on_off_required": {
+    "src_hash": "1d45c083d76bb6672fad3e6b18bfd84d",
+    "text": "È necessario specificare il parametro on/off.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:14:58.891304Z"
+  },
+  "talkaction.common.msg_only_forgeable": {
+    "src_hash": "45c2e8ce5c36005dd16b1c918781c90a",
+    "text": "Solo i mostri ammessi possono essere diabolici o influenzati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:05.788190Z"
+  },
+  "talkaction.common.msg_player_name_not_online": {
+    "src_hash": "85ed93bd465176bbb71f9464058393da",
+    "text": "Un giocatore con quel nome non è online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:05.789123Z"
+  },
+  "talkaction.common.msg_player_name_param_required": {
+    "src_hash": "65dac6a24134fd48ddd07a8144ea59dd",
+    "text": "Parametro nome giocatore obbligatorio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:05.789681Z"
+  },
+  "talkaction.common.msg_player_name_param_required_dot": {
+    "src_hash": "d78ab04ffa54dfdfc994b16c16331b37",
+    "text": "Parametro nome giocatore obbligatorio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:05.790313Z"
+  },
+  "talkaction.common.msg_player_not_found": {
+    "src_hash": "dbb40407fa3e4ed2510a8212f000b723",
+    "text": "Giocatore non trovato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:12.835310Z"
+  },
+  "talkaction.gm.afk.msg_already_afk": {
+    "src_hash": "f44ab47ae8b822f571bf4586031f9605",
+    "text": "Sei già AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:12.835617Z"
+  },
+  "talkaction.gm.ban.msg_already_banned": {
+    "src_hash": "35c0ca6fc7a63814dbc5c733c599e396",
+    "text": "Il giocatore è già bannato per una durata maggiore o uguale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:12.836168Z"
+  },
+  "talkaction.gm.ban.msg_extended": {
+    "src_hash": "1bdb5cd89a2e6ca892d128dc419a2857",
+    "text": "Il ban di {name} è stato esteso a {days} giorni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:12.836766Z"
+  },
+  "talkaction.gm.ban.msg_invalid_days": {
+    "src_hash": "05bcceecc57cf999464423483b4cf5f8",
+    "text": "Numero di giorni non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:18.639783Z"
+  },
+  "talkaction.gm.ban.msg_invalid_format": {
+    "src_hash": "38bc5f13c94f8bf67e70c033ef50d15f",
+    "text": "Formato del comando non valido. Usa: /ban nomegiocatore, giorni [, motivo].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:18.640235Z"
+  },
+  "talkaction.gm.ban.msg_max_days": {
+    "src_hash": "75a57c63f3ca7804088b82fcd0c0c82b",
+    "text": "La durata del ban non può superare i 350.000 giorni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:18.640608Z"
+  },
+  "talkaction.gm.ban.msg_usage": {
+    "src_hash": "1d6429c4eff7b2ca0e947e45918e7bfd",
+    "text": "Parametro di comando obbligatorio. Usa: /ban nomegiocatore, giorni [, motivo].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:18.640991Z"
+  },
+  "talkaction.gm.clean.msg_cleaned": {
+    "src_hash": "7816966a9e1f2081b5facaa1c0c1d91e",
+    "text": "Pulito/i {count} elemento/i dalla mappa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:18.641348Z"
+  },
+  "talkaction.gm.gold_highscore.msg_header": {
+    "src_hash": "eecc4a56504e50df4c0b214ec7f124a4",
+    "text": "Punteggio attuale dell'oro per questo server:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:25.692984Z"
+  },
+  "talkaction.gm.gold_highscore.msg_no_highscore": {
+    "src_hash": "97ad2a151f4c3a630583403019f0160e",
+    "text": "Nessun punteggio da mostrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:25.693325Z"
+  },
+  "talkaction.gm.kick.msg_cannot_kick": {
+    "src_hash": "93433b746cb04d1c7fd881020f886352",
+    "text": "Non puoi calciare questo giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:25.693634Z"
+  },
+  "talkaction.gm.looktype.msg_must_be_number": {
+    "src_hash": "c948add5cc2da7f45838140ff72fbcde",
+    "text": "Looktype deve essere un valore numerico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:25.693947Z"
+  },
+  "talkaction.gm.looktype.msg_not_exist": {
+    "src_hash": "8c2b16e09571422874c62a7c89ae6249",
+    "text": "Un tipo di aspetto con questo ID non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:32.590215Z"
+  },
+  "talkaction.gm.namelock.msg_namelocked": {
+    "src_hash": "ebbf705c999b442f1b81bf7d511e51a6",
+    "text": "{name} è stato bloccato con il nome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:32.590541Z"
+  },
+  "talkaction.gm.namelock.msg_not_found": {
+    "src_hash": "31ed446247239cb79872175457ae40ee",
+    "text": "{name} non è stato trovato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:32.590852Z"
+  },
+  "talkaction.gm.namelock.msg_reason_required": {
+    "src_hash": "31de4f133fc30e0832ae872b9040451a",
+    "text": "È necessario specificare un motivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:32.591153Z"
+  },
+  "talkaction.gm.push_creature.msg_cannot_teleport": {
+    "src_hash": "e29a417853f3ad37b9bfe27af8dfa600",
+    "text": "Non puoi teletrasportarti {name}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:32.591435Z"
+  },
+  "talkaction.gm.set_light.msg_specify_color": {
+    "src_hash": "ac7b37c47620c08de8f15dcfff905893",
+    "text": "È necessario specificare il colore della luce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:39.412555Z"
+  },
+  "talkaction.gm.set_light.msg_usage": {
+    "src_hash": "5bcda2a723bf4f4e3ba8051f5e70ea59",
+    "text": "Utilizzare in questo modo: /setlight color (0-{max}), (1-32). Il primo parametro è il colore e il secondo è l'intensità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:39.413111Z"
+  },
+  "talkaction.gm.skip_tiles.msg_cannot_teleport": {
+    "src_hash": "8ed1dc1ccafe9e206a8dd11e16f6a49b",
+    "text": "Non puoi teletrasportarti lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:39.413400Z"
+  },
+  "talkaction.gm.spy.msg_offline": {
+    "src_hash": "cb0a5b9a465d744f7b71b15696393515",
+    "text": "Questo giocatore è offline o non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:39.413733Z"
+  },
+  "talkaction.gm.spy.msg_equipment_of": {
+    "src_hash": "e9bda010c672529150bcae3e51004b67",
+    "text": "Attrezzatura di {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:39.413967Z"
+  },
+  "talkaction.gm.spy.msg_specify_name": {
+    "src_hash": "95c7b984f7921ff2f8b24d92e5e0060f",
+    "text": "Scrivi il nome del personaggio da spiare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:42.398373Z"
   }
 }

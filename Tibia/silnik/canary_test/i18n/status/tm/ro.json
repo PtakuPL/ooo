@@ -59806,5 +59806,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:13:46.704567Z"
+  },
+  "client.keybinds.text2": {
+    "src_hash": "ef5f632a19ebffc1a66684faa729528b",
+    "text": "Modul chat dezactivat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:15:54.930450Z"
+  },
+  "client.keybinds.text3": {
+    "src_hash": "5b5ad81b074b5c50c4572d2945eeb06b",
+    "text": "Cheie primară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:05.113379Z"
+  },
+  "client.keybinds.text4": {
+    "src_hash": "12b85f0c6014754a8a24ca2317db6453",
+    "text": "Cheie secundară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:05.113633Z"
+  },
+  "client.key_edit.text1": {
+    "src_hash": "86bf8c83da4f5af265f1b9bd9ca54afb",
+    "text": "Această acțiune trebuie să fie legată de o singură cheie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:05.114045Z"
+  },
+  "client.key_edit.text2": {
+    "src_hash": "408821667f19315b91358f483ff8ca0c",
+    "text": "Această tastă rapidă este deja utilizată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:09.765488Z"
+  },
+  "client.console.text1": {
+    "src_hash": "d69a5199c2561c8cc6effc17d85d8265",
+    "text": "Canal de chat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:09.765712Z"
+  },
+  "client.console.text2": {
+    "src_hash": "9b05a4052f2dde9a744953ef20b469db",
+    "text": "Următorul canal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:09.765955Z"
+  },
+  "client.console.text3": {
+    "src_hash": "d69a5199c2561c8cc6effc17d85d8265",
+    "text": "Canal de chat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:09.766226Z"
+  },
+  "client.console.text4": {
+    "src_hash": "9b05a4052f2dde9a744953ef20b469db",
+    "text": "Următorul canal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:09.766442Z"
+  },
+  "client.console.text5": {
+    "src_hash": "d69a5199c2561c8cc6effc17d85d8265",
+    "text": "Canal de chat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:14.068477Z"
+  },
+  "client.game_store.text2": {
+    "src_hash": "98cb12b5c5e159c21e71266f823c0c9e",
+    "text": "Eroare HTTP:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:14.068693Z"
+  },
+  "client.blessing.text2": {
+    "src_hash": "8125ed414e6337ef17bbb808e59df9c4",
+    "text": ".. intrare.magazin ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:14.068926Z"
   }
 }

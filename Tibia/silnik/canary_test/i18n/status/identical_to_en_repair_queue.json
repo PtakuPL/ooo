@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T04:49:19.024703Z",
+  "timestamp": "2026-02-17T04:52:34.356381Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 709,
+  "entries_total": 708,
   "entries_by_lang": {
     "es": 300,
     "pl": 197,
@@ -77,7 +77,7 @@
     "nl": 691,
     "pt": 620,
     "ro": 467,
-    "ru": 112,
+    "ru": 110,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -108,7 +108,7 @@
     "sl": 663,
     "sq": 663,
     "sr": 492,
-    "sv": 512,
+    "sv": 499,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -945,12 +945,6 @@
     },
     {
       "lang": "ru",
-      "json_file": "quests.json",
-      "identical_to_en": 2,
-      "domain_priority": 3
-    },
-    {
-      "lang": "ru",
       "json_file": "monsters.json",
       "identical_to_en": 24,
       "domain_priority": 8
@@ -1319,6 +1313,12 @@
       "lang": "bg",
       "json_file": "cpp.json",
       "identical_to_en": 158,
+      "domain_priority": 9
+    },
+    {
+      "lang": "bg",
+      "json_file": "scripts.json",
+      "identical_to_en": 153,
       "domain_priority": 9
     }
   ],

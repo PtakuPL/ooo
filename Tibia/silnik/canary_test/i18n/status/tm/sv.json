@@ -23782,5 +23782,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:41:51.162750Z"
+  },
+  "data.otservbr.global.scripts.actions.dawnport.vocation.door.L36.2373": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.880808Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.zalamon.door.L12.2154": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.886945Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L9.2255": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Misslyckas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.892077Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L10.2271": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.900238Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L24.2272": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Pappersrester ligger utspridda på golvet. Det tar lite tid att sätta ihop dem igen. Men det är bara en dåligt skriven dikt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.900889Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L27.2273": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.901366Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Du granskar rullarna noggrant. Det är beställningar från Rathleton till ambassadören. Inga tecken på förräderi här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.902112Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L44.2275": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.902528Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L58.2276": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Du hittar ingenting i ambassadörens hus. Om han i själva verket är en förrädare har han blivit av med alla bevis som kan anklaga honom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.903166Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L7.2270": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Dokument brändes här nyligen. Bara delen av en bokrulle ligger fortfarande framför skorstenen men den är för sotad för att kunna läsas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.903797Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L29.2267": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Du känner dig skakig och yr, världen blir mörk omkring dig. Då klarnar sikten igen – och du är någon annanstans.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.904543Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L49.2268": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Du flyttades till höger hjärnsida",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.904945Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.6.mind.travel.L65.2269": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Du flyttades till vänster hjärna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.905313Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L34.2277": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Du välsignar statyn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.905631Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.8.blessing.the.statues.L38.2278": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Du välsignade redan den här statyn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.906007Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L9.1679": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Ledsen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.906532Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L9.1673": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.906966Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L8.1661": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Ledsen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.907256Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L9.1659": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.907776Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L8.1655": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Ledsen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.908424Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L9.1671": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.908720Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumulo.L8.1663": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.909276Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumuloerro.L8.1653": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.909684Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L11.1801": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.910457Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L8.1800": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Teleportera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.910748Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.notescoordinates.L9.1797": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.911062Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.calassa.comb.door.L8.1926": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.912345Z"
+  },
+  "data.otservbr.global.scripts.quests.the.annihilator.door.L5.2235": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.916002Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L54.1849": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Du har en känsla av rädsla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.917956Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L108.1859": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.918864Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L141.1862": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.919348Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L13.2005": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Inga hjärnor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.921447Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.ungreez.door.L20.1772": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.923866Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.action.drume.L32.1646": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Din tid är förbi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.924692Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.bursting.at.the.seams.museum.actions.doors.L18.2291": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.927802Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L16.2302": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Du fäster håret på greppbrädan i ebenholts. Strängarna ska vara lämpliga för att fungera som strängar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.928752Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L27.2303": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Det var en gång en jungfrumässa, med mörka ögon och sidenhår. Långt borta från hemmet dog hon. Ingen grav, ingen vaken, ingen sorg.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.929459Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L31.2304": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Du spelar påfågelballaden och portalen öppnas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.929875Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L37.2305": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Du spelar benfiol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.930371Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L9.2301": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Du fäster ebenholtset på skallen. Detta bör uppfylla kraven för en greppbräda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.930879Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Du har inte tillräckligt med nivå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.931253Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L19.2311": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.931664Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L47.2299": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.932303Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L65.2300": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Du kan inte använda den här båten ännu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.932677Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L21.2298": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Du kan endast använda denna entré under natten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.933242Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.doors.L22.2296": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.933943Z"
+  },
+  "data.otservbr.global.scripts.quests.the.travelling.trader.actions.outlaw.camp.door.L9.2064": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:52:01.934875Z"
   }
 }

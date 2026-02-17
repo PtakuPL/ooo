@@ -1,31 +1,17 @@
 {
-  "timestamp": "2026-02-17T04:50:38.587357Z",
+  "timestamp": "2026-02-17T04:52:43.614433Z",
   "checked_entries": 100,
-  "issues_found": 9,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en_exempt": 14,
-    "identical_to_en": 2,
+    "identical_to_en_exempt": 13,
     "artifact_token": 7,
-    "suspicious_log_critical": 44,
-    "suspicious_log_high": 156,
+    "suspicious_log_high": 152,
+    "suspicious_log_low": 1,
+    "suspicious_log_critical": 47,
     "suspicious_rejected_high": 41,
     "suspicious_rejected_critical": 159
   },
   "issues": [
-    {
-      "key": "spell.quara_looter_small_icering.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_small_ice_ring",
-      "translated": "###quara_small_ice_ring"
-    },
-    {
-      "key": "spell.rotthing_explo.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###rotth_explo",
-      "translated": "###rotth_explo"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

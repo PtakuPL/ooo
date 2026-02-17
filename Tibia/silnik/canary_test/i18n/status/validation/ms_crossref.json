@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:04.520662Z",
+  "checked_at": "2026-02-17T02:32:33.152006Z",
   "issues_total": 404,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1373,6 +1373,15 @@
       "lang": "{0} hour"
     },
     {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
+    },
+    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1418,6 +1427,15 @@
       "lang": " on "
     },
     {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
+    },
+    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1441,7 +1459,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium ",
+      "pl": "premia ",
       "lang": "premium "
     },
     {
@@ -1452,6 +1470,15 @@
       "en": "protection ",
       "pl": "ochrona, osłona ",
       "lang": "protection "
+    },
+    {
+      "key": "cpp.look.range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Range:",
+      "pl": "Zakres:",
+      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1524,6 +1551,15 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
+    },
+    {
+      "key": "cpp.look.you_see",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You see ",
+      "pl": "Widzisz ",
+      "lang": "You see "
     },
     {
       "key": "cpp.player.corpse_and",
@@ -3576,42 +3612,6 @@
       "en": "Title",
       "pl": "Tytuł",
       "lang": "Title"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit Post",
-      "pl": "Edytuj post",
-      "lang": "Edit Post"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Character:",
-      "pl": "Charakter:",
-      "lang": "Character:"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Topic:",
-      "pl": "Temat:",
-      "lang": "Topic:"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Message:",
-      "pl": "Wiadomość:",
-      "lang": "Message:"
     }
   ],
   "length_ratio_issues": [

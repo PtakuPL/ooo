@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 75.2,
+  "coverage_pct": 75.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:11:43.283948Z",
+  "checked_at": "2026-02-17T02:32:10.960940Z",
   "issues_total": 493,
   "issues_by_type": {
     "consistency_in_language": 68,
@@ -700,15 +700,15 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "The Dread Maiden",
+      "en": "Vok the Freakish",
       "variants": [
-        "Dread maiden",
-        "dread maiden"
+        "Vok freakish",
+        "vok freakish"
       ],
       "variants_count": 2,
       "examples": [
-        "monsters:monster.the_dread_maiden.name",
-        "monsters:monster.the_dread_maiden.desc"
+        "monsters:monster.vok_the_freakish.name",
+        "monsters:monster.vok_the_freakish.desc"
       ]
     },
     {

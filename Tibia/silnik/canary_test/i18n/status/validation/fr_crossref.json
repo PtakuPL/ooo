@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:02.349403Z",
+  "checked_at": "2026-02-17T02:32:31.073741Z",
   "issues_total": 465,
   "issues_by_type": {
     "consistency_in_language": 51,
@@ -895,6 +895,15 @@
       "en": "{0} minute",
       "pl": "{0} minuta",
       "lang": "{0} minute"
+    },
+    {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
     },
     {
       "key": "cpp.look.protection",
@@ -4396,15 +4405,6 @@
       "en": "Gnoorr!",
       "pl": "GNieorr!",
       "lang": "Gnoorr!"
-    },
-    {
-      "key": "monster.water_buffalo.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<snort>",
-      "pl": "<sniert>",
-      "lang": "<snort>"
     }
   ],
   "length_ratio_issues": [
@@ -4537,8 +4537,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 1,
+    "skipped": 79,
     "errors": 0
   }
 }

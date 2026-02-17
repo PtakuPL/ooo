@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:04:40.078031Z"
+    "updated_at": "2026-02-17T02:30:47.515657Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -39174,5 +39174,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T02:29:40.429729Z"
+  },
+  "spell.plagirath_bog.name": {
+    "src_hash": "945ee8043e035ff02156ccc0c96c7817",
+    "text": "palude plagirath",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:52.687381Z"
+  },
+  "spell.devourer_paralyze.name": {
+    "src_hash": "75997b5c73c2264686d92d09db7279ad",
+    "text": "il divoratore paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:52.687611Z"
+  },
+  "spell.glooth_fairy_paralyze.name": {
+    "src_hash": "dd0ceb38a3f8db897e9faaa40c6cf12a",
+    "text": "la fata della tristezza paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:52.687874Z"
+  },
+  "spell.souleater_wave.name": {
+    "src_hash": "533f49165bd5fb4a35fafe2cdd6877d8",
+    "text": "onda mangiatore di anime",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:55.961594Z"
+  },
+  "spell.djinn_cancel_invisibility.name": {
+    "src_hash": "c6f443c270cd529fcffed0a8c36ab816",
+    "text": "I djinn cancellano l'invisibilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:55.961925Z"
+  },
+  "spell.defiler_paralyze_2.name": {
+    "src_hash": "15e0934ef2bf1ceb9fc0bf532bc6d023",
+    "text": "il profanatore paralizza 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:55.962250Z"
+  },
+  "spell.deathstrike_freeze.name": {
+    "src_hash": "178bb77fae9e687e2746b05123e5c5d8",
+    "text": "congelamento dello sciopero mortale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:55.962611Z"
+  },
+  "spell.timira_fire_explosion.name": {
+    "src_hash": "2afde35d26cffaca7ee5e9e698245b16",
+    "text": "esplosione di timira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:58.559060Z"
+  },
+  "spell.emerald_tortoise_large_ring.name": {
+    "src_hash": "432e01ab819a139df39a60b40933a827",
+    "text": "anello grande con tartaruga con smeraldo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:58.559367Z"
+  },
+  "spell.feversleep_skill_reducer.name": {
+    "src_hash": "7338bc56d9158f14ae17d56e77dda0b2",
+    "text": "riduttore di abilità del sonno febbrile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:58.559664Z"
+  },
+  "spell.dreadbeast_summon.name": {
+    "src_hash": "cce70fc0d3b474e3f85b5937e3f973db",
+    "text": "evocazione di bestie terribili",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:58.559911Z"
+  },
+  "spell.askarak_wave.name": {
+    "src_hash": "97c28802a39c99198c9a8745cf8f9c20",
+    "text": "onda askarak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:58.560104Z"
+  },
+  "spell.kraknaknork_paralyze.name": {
+    "src_hash": "da4cd9850f906929b4cec3430784c035",
+    "text": "kraknaknork paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:03.527708Z"
+  },
+  "spell.prince_drazzak_paladin.name": {
+    "src_hash": "bc401da9608e731041a4ba1904f33b99",
+    "text": "Principe Drazzak Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:03.528134Z"
+  },
+  "spell.ice_witch_paralyze.name": {
+    "src_hash": "7199a8a39446b42186fb4dbaca20840b",
+    "text": "la strega del ghiaccio paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:03.528794Z"
+  },
+  "spell.rustheap_golem_wave.name": {
+    "src_hash": "10ca3524c9b62574c8309667a3ddc1bc",
+    "text": "onda di golem di Ruggine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:03.529049Z"
+  },
+  "spell.lizard_wave.name": {
+    "src_hash": "5b8ab110cece3c95591b0ab9ca43db55",
+    "text": "onda di lucertola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:07.085577Z"
+  },
+  "spell.soulwars_fear.name": {
+    "src_hash": "3e0dd2531384abc8f4af33926ccccf08",
+    "text": "paura delle guerre dell'anima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:07.085828Z"
+  },
+  "spell.djinn_electrify_2.name": {
+    "src_hash": "9ba21f3cc17a2bf11e485e9591c01719",
+    "text": "djinn elettrizza 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:07.086056Z"
+  },
+  "spell.mephiles_summon.name": {
+    "src_hash": "493a928dfd634b85495b871638a8ac40",
+    "text": "evocazione di Mephiles",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:07.086351Z"
+  },
+  "spell.headpecker_explosion.name": {
+    "src_hash": "de3388442f5b122218281e39c3999e34",
+    "text": "esplosione del colpo di testa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:07.086692Z"
+  },
+  "spell.mazoran_fire.name": {
+    "src_hash": "a2e894fa7844589482518077ff519c74",
+    "text": "Fuoco di Mazoran",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:10.960965Z"
+  },
+  "spell.death_priest_shargon_summon.name": {
+    "src_hash": "0f6a33c3ca3803fd2181c8fb5a59c7e9",
+    "text": "convocazione del sacerdote della morte shargon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:10.961277Z"
+  },
+  "spell.abyssador_paralyze.name": {
+    "src_hash": "06cd68c0fc1c546e9dcdc49d6ef6162d",
+    "text": "l'abissador paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:10.961504Z"
+  },
+  "spell.fire_wave_delayed.name": {
+    "src_hash": "bddc68cd69d65d5579ef4c312c310f6b",
+    "text": "l'ondata di fuoco è stata ritardata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:10.961780Z"
+  },
+  "spell.obujos_skill_reducer_2.name": {
+    "src_hash": "534f2169f0c85fa6070b74fdb7312ce7",
+    "text": "riduttore di abilità obujos 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:31:10.962055Z"
   }
 }

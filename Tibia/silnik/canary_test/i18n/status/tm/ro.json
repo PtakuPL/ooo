@@ -32694,5 +32694,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:23:59.160501Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L76.1493": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.975545Z"
+  },
+  "data.otservbr.global.npc.eighty.L71.779": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.977234Z"
+  },
+  "data.otservbr.global.npc.elgar.L81.567": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.979654Z"
+  },
+  "data.otservbr.global.npc.emma.L294.239": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "TRAIAȚI REGINA! Poți pleca acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.981280Z"
+  },
+  "data.otservbr.global.npc.eva.L76.990": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.983131Z"
+  },
+  "data.otservbr.global.npc.fenbala.L85.521": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "TRAIAȚI REGINA! Poți pleca acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.986157Z"
+  },
+  "data.otservbr.global.npc.ferks.L76.440": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.987248Z"
+  },
+  "data.otservbr.global.npc.finarfin.L71.1173": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.989651Z"
+  },
+  "data.otservbr.global.npc.florentine.L60.580": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:36.990979Z"
+  },
+  "data.otservbr.global.npc.gnomillion.L76.446": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.000966Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L257.316": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "La revedere, |PLAYERNAME|. Chiar sper să vorbim din nou în curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.005710Z"
+  },
+  "data.otservbr.global.npc.hireling.L793.1382": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "La revedere, |PLAYERNAME|, voi fi aici dacă mai ai nevoie de mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.015017Z"
+  },
+  "data.otservbr.global.npc.hireling.L794.1383": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.015319Z"
+  },
+  "data.otservbr.global.npc.jefrey.L76.522": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.024114Z"
+  },
+  "data.otservbr.global.npc.jessica.L76.1594": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.025450Z"
+  },
+  "data.otservbr.global.npc.kaya.L76.384": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.030710Z"
+  },
+  "data.otservbr.global.npc.kepar.L76.1256": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.032436Z"
+  },
+  "data.otservbr.global.npc.lokur.L110.616": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.039634Z"
+  },
+  "data.otservbr.global.npc.luna.L64.1335": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.043441Z"
+  },
+  "data.otservbr.global.npc.murim.L80.185": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.051980Z"
+  },
+  "data.otservbr.global.npc.muzir.L76.225": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.052985Z"
+  },
+  "data.otservbr.global.npc.ninos.L84.1480": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Buna ziua. Cum te pot ajuta |PLAYERNAME|? Cere-mi un {trade} dacă vrei să cumperi ceva. Pot explica și sistemul {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.059273Z"
+  },
+  "data.otservbr.global.npc.norma.L187.1081": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.061093Z"
+  },
+  "data.otservbr.global.npc.obi.L131.249": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.061815Z"
+  },
+  "data.otservbr.global.npc.olrik.L87.581": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Buna ziua. Cum te pot ajuta |PLAYERNAME|? Cere-mi un {trade} dacă vrei să cumperi ceva. Pot explica și sistemul {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.063220Z"
+  },
+  "data.otservbr.global.npc.paulie.L68.1572": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.065979Z"
+  },
+  "data.otservbr.global.npc.raffael.L76.662": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.074348Z"
+  },
+  "data.otservbr.global.npc.rashid.L260.632": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.075948Z"
+  },
+  "data.otservbr.global.npc.rashid.custom.L263.774": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.076463Z"
+  },
+  "data.otservbr.global.npc.rokyn.L75.973": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.079230Z"
+  },
+  "data.otservbr.global.npc.rowenna.L62.478": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.081428Z"
+  },
+  "data.otservbr.global.npc.rudolph.L56.209": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.082029Z"
+  },
+  "data.otservbr.global.npc.sarina.L86.73": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.084324Z"
+  },
+  "data.otservbr.global.npc.shiantis.L86.703": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.087553Z"
+  },
+  "data.otservbr.global.npc.shiantis.L89.706": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.088565Z"
+  },
+  "data.otservbr.global.npc.siestaar.L76.570": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.091754Z"
+  },
+  "data.otservbr.global.npc.sissek.L71.1049": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.094220Z"
+  },
+  "data.otservbr.global.npc.suzy.L76.1112": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.096555Z"
+  },
+  "data.otservbr.global.npc.tesha.L76.913": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.101329Z"
+  },
+  "data.otservbr.global.npc.turvy.L61.375": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Desigur, doar răsfoiți ofertele mele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.108679Z"
+  },
+  "data.otservbr.global.npc.virgil.L76.212": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.115561Z"
+  },
+  "data.otservbr.global.npc.wentworth.L387.330": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.116933Z"
+  },
+  "data.otservbr.global.npc.znozel.L71.200": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.125017Z"
+  },
+  "data.otservbr.global.npc.zora.L82.1328": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.126392Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.analyser.L20.2105": {
+    "src_hash": "a2da86b455a557094c1df725073335cd",
+    "text": "Bine făcut! Apa este analizată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.140171Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.bird.cage.L16.2125": {
+    "src_hash": "9ed535ea500b3fe754627bc9aad2a44c",
+    "text": "Deschideți cușca și lăsați papagalul din peșteră să se plimbe liber!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:30:37.154165Z"
   }
 }

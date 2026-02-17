@@ -1,136 +1,17 @@
 {
-  "timestamp": "2026-02-17T02:30:14.304741Z",
+  "timestamp": "2026-02-17T02:31:51.550469Z",
   "checked_entries": 100,
-  "issues_found": 24,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en_exempt": 23,
-    "artifact_token": 9,
-    "identical_to_en": 15,
-    "suspicious_log_critical": 67,
-    "suspicious_log_high": 133,
-    "suspicious_rejected_critical": 163,
-    "suspicious_rejected_high": 37
+    "identical_to_en_exempt": 10,
+    "artifact_token": 7,
+    "suspicious_log_critical": 56,
+    "suspicious_log_high": 143,
+    "suspicious_log_low": 1,
+    "suspicious_rejected_critical": 159,
+    "suspicious_rejected_high": 41
   },
   "issues": [
-    {
-      "key": "scripts.auto_loot.msg_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Autoloot mode set to ALL.",
-      "translated": "Modo de autoloot establecido a TODO."
-    },
-    {
-      "key": "scripts.prince_drazzak_summon.say_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
-    {
-      "key": "raid.example.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Example",
-      "translated": "Example"
-    },
-    {
-      "key": "raid.raids.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Raids",
-      "translated": "Raids"
-    },
-    {
-      "key": "raid.undead_darashia.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Undead Darashia",
-      "translated": "Undead Darashia"
-    },
-    {
-      "key": "raid.priestesses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Priestesses",
-      "translated": "Priestesses"
-    },
-    {
-      "key": "raid.barba_svar.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Svar",
-      "translated": "Barba Svar"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.ghazbaran.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "raid.barbarian.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barbarian",
-      "translated": "Barbarian"
-    },
-    {
-      "key": "raid.hirintror.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "raid.terrorbirds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.gnarlhounds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -182,5 +63,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:14.294188Z",
+  "checked_at": "2026-02-17T02:32:43.231082Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1004,6 +1004,15 @@
       "lang": "{0} hour"
     },
     {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
+    },
+    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1049,6 +1058,15 @@
       "lang": " on "
     },
     {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
+    },
+    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1072,7 +1090,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium ",
+      "pl": "premia ",
       "lang": "premium "
     },
     {
@@ -1083,6 +1101,15 @@
       "en": "protection ",
       "pl": "ochrona, osłona ",
       "lang": "protection "
+    },
+    {
+      "key": "cpp.look.range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Range:",
+      "pl": "Zakres:",
+      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1155,6 +1182,15 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
+    },
+    {
+      "key": "cpp.look.you_see",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You see ",
+      "pl": "Widzisz ",
+      "lang": "You see "
     },
     {
       "key": "cpp.player.corpse_and",
@@ -3576,42 +3612,6 @@
       "en": "Grrr",
       "pl": "Wrr",
       "lang": "Grrr"
-    },
-    {
-      "key": "monster.troll.voice_7",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, bugs",
-      "pl": "Hmmm, błędy",
-      "lang": "Hmmm, bugs"
-    },
-    {
-      "key": "monster.island_troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.wolf.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
     }
   ],
   "length_ratio_issues": [

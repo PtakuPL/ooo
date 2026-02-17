@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 11.9,
+  "coverage_pct": 12.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:14.607296Z",
+  "checked_at": "2026-02-17T02:32:43.537273Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -932,6 +932,15 @@
       "lang": "{0} hour"
     },
     {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
+    },
+    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -977,6 +986,15 @@
       "lang": " on "
     },
     {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
+    },
+    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1000,7 +1018,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium ",
+      "pl": "premia ",
       "lang": "premium "
     },
     {
@@ -1011,6 +1029,15 @@
       "en": "protection ",
       "pl": "ochrona, osłona ",
       "lang": "protection "
+    },
+    {
+      "key": "cpp.look.range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Range:",
+      "pl": "Zakres:",
+      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1083,6 +1110,15 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
+    },
+    {
+      "key": "cpp.look.you_see",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You see ",
+      "pl": "Widzisz ",
+      "lang": "You see "
     },
     {
       "key": "cpp.player.corpse_and",
@@ -3576,42 +3612,6 @@
       "en": "Take this!",
       "pl": "Weź to!",
       "lang": "Take this!"
-    },
-    {
-      "key": "npc.barbara.say_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Take this!",
-      "pl": "Masz to!",
-      "lang": "Take this!"
-    },
-    {
-      "key": "npc.barnabas_dee.say_8",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ahhhhhhhh! ",
-      "pl": "Aaaaaaachhhhhh! ",
-      "lang": "Ahhhhhhhh! "
-    },
-    {
-      "key": "npc.billy.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye.",
-      "pl": "Pa, cześć.",
-      "lang": "Bye."
-    },
-    {
-      "key": "npc.billy.sendtrade_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sure.",
-      "pl": "Jasne.",
-      "lang": "Sure."
     }
   ],
   "length_ratio_issues": [

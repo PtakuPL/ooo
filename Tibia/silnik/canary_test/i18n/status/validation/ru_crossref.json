@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 37.4,
+  "coverage_pct": 37.5,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:14.044622Z",
-  "issues_total": 105,
+  "checked_at": "2026-02-17T02:32:42.994649Z",
+  "issues_total": 107,
   "issues_by_type": {
     "consistency_in_language": 50,
-    "pl_reference_missing_translation": 31,
+    "pl_reference_missing_translation": 33,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -805,6 +805,24 @@
       "lang": "clientid="
     },
     {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
+    },
+    {
+      "key": "cpp.look.you_see",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You see ",
+      "pl": "Widzisz ",
+      "lang": "You see "
+    },
+    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1057,22 +1075,22 @@
       "lang": "The"
     },
     {
-      "key": "spell.burning_gladiator_firex.name",
+      "key": "spell.wave_t.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "firex",
-      "pl": "ogień",
-      "lang": "firex"
+      "en": "wave t",
+      "pl": "fala t",
+      "lang": "wave t"
     },
     {
-      "key": "spell.burning_gladiator_firering.name",
+      "key": "spell.wyrm_wave.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "firering",
-      "pl": "strzelanie",
-      "lang": "firering"
+      "en": "wyrm wave",
+      "pl": "fala jaszczura",
+      "lang": "wyrm wave"
     }
   ],
   "length_ratio_issues": [
@@ -1294,8 +1312,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 31,
-    "applied": 2,
+    "attempted": 33,
+    "applied": 4,
     "skipped": 29,
     "errors": 0
   }

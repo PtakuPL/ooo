@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 23.3,
+  "coverage_pct": 23.6,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:05.289540Z",
+  "checked_at": "2026-02-17T02:32:33.900889Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -869,6 +869,15 @@
       "lang": "{0} hour"
     },
     {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
+    },
+    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -914,6 +923,15 @@
       "lang": " on "
     },
     {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
+    },
+    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -937,7 +955,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium ",
+      "pl": "premia ",
       "lang": "premium "
     },
     {
@@ -948,6 +966,15 @@
       "en": "protection ",
       "pl": "ochrona, osłona ",
       "lang": "protection "
+    },
+    {
+      "key": "cpp.look.range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Range:",
+      "pl": "Zakres:",
+      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1020,6 +1047,15 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
+    },
+    {
+      "key": "cpp.look.you_see",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You see ",
+      "pl": "Widzisz ",
+      "lang": "You see "
     },
     {
       "key": "cpp.player.corpse_and",
@@ -3576,42 +3612,6 @@
       "en": "Uhhhh...",
       "pl": "Uuuuhhh...",
       "lang": "Uhhhh..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ZzzzZzzZz...chrrr...",
-      "pl": "Zzzz... chrrr...",
-      "lang": "ZzzzZzzZz...chrrr..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_2",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SLEEP. ...",
-      "pl": "SEN....",
-      "lang": "SLEEP. ..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GAIN. ...",
-      "pl": "NABIERZ SIŁ....",
-      "lang": "GAIN. ..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RISE. ...",
-      "pl": "POWSTAŃ....",
-      "lang": "RISE. ..."
     }
   ],
   "length_ratio_issues": [

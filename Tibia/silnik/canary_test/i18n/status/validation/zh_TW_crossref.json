@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:12:16.104299Z",
+  "checked_at": "2026-02-17T02:32:45.006484Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -3443,6 +3443,15 @@
       "lang": "Empty Slot"
     },
     {
+      "key": "cpp.look.faster_regeneration",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "faster regeneration",
+      "pl": "szybsza regeneracja",
+      "lang": "faster regeneration"
+    },
+    {
       "key": "cpp.look.field",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3459,6 +3468,15 @@
       "en": " for level {0}",
       "pl": "dla poziom {0}",
       "lang": " for level {0}"
+    },
+    {
+      "key": "cpp.look.hard_drinking",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "hard drinking",
+      "pl": "Ostre picie",
+      "lang": "hard drinking"
     },
     {
       "key": "cpp.look.hit_pct",
@@ -3506,6 +3524,24 @@
       "lang": "invisibility"
     },
     {
+      "key": "cpp.look.it_weighs",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It weighs {0} oz.",
+      "pl": "Waży {0} uncji.",
+      "lang": "It weighs {0} oz."
+    },
+    {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
+    },
+    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3522,6 +3558,15 @@
       "en": "magic level",
       "pl": "Poziom Magii",
       "lang": "magic level"
+    },
+    {
+      "key": "cpp.look.magic_level_n",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " magic level {0}",
+      "pl": "poziom magiczny {0}",
+      "lang": " magic level {0}"
     },
     {
       "key": "cpp.look.magic_shield_capacity",
@@ -3567,51 +3612,6 @@
       "en": "{0} minute",
       "pl": "{0} minuta",
       "lang": "{0} minute"
-    },
-    {
-      "key": "cpp.look.of",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of ",
-      "pl": "z ",
-      "lang": " of "
-    },
-    {
-      "key": "cpp.look.of_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of",
-      "pl": "z",
-      "lang": " of"
-    },
-    {
-      "key": "cpp.look.on_date",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " on ",
-      "pl": "na ",
-      "lang": " on "
-    },
-    {
-      "key": "cpp.look.perfect_shot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "perfect shot",
-      "pl": "doskonały strzał",
-      "lang": "perfect shot"
-    },
-    {
-      "key": "cpp.look.physical_plus",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " physical + ",
-      "pl": " fizyczny + ",
-      "lang": " physical + "
     }
   ],
   "length_ratio_issues": [

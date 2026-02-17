@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T07:41:33.898299Z",
+  "timestamp": "2026-02-17T07:42:43.503716Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 378786,
-    "english_copy_keys": 162711,
+    "translated_keys": 378723,
+    "english_copy_keys": 162822,
     "missing_keys": 2155,
     "missing_files": 0,
     "completion_pct": 13.59
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 3244,
-    "guard_reports_blocked": 3174,
+    "guard_reports_total": 3247,
+    "guard_reports_blocked": 3177,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3174
+    "cannot_translate_reports_visible": 3177
   },
   "cache": {
-    "lang_stats_hits": 51,
-    "lang_stats_misses": 1,
-    "lang_stats_hit_pct": 98.1,
+    "lang_stats_hits": 49,
+    "lang_stats_misses": 3,
+    "lang_stats_hit_pct": 94.2,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1975,
-    "lang_file_misses": 1,
-    "lang_file_hit_pct": 99.9,
+    "lang_file_hits": 1973,
+    "lang_file_misses": 3,
+    "lang_file_hit_pct": 99.8,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T07:41:25.265867Z",
-    "cycle": 346,
+    "timestamp": "2026-02-17T07:42:37.206030Z",
+    "cycle": 347,
     "mode": "AUTO_TRANSLATE",
     "category": "ro",
     "events": {
-      "dispatch": 792,
-      "mode_run": 276722
+      "dispatch": 1757,
+      "mode_run": 44754
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T06:41:31.064286Z",
-    "window_end_utc": "2026-02-17T07:41:31.064286Z",
+    "window_start_utc": "2026-02-17T06:42:41.483786Z",
+    "window_end_utc": "2026-02-17T07:42:41.483786Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -92,13 +92,13 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 1784,
-    "guard_fail": 1702,
-    "guard_fail_rate_pct": 48.8,
+    "translated": 1810,
+    "guard_fail": 1809,
+    "guard_fail_rate_pct": 50.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 1070.8,
-    "suspicious_total": 5847,
+    "throughput_keys_per_h": 1042.3,
+    "suspicious_total": 5908,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -110,6 +110,12 @@
         "target": "it/npc.json",
         "translated": 50,
         "guard_fail": 182,
+        "guard_command": 0
+      },
+      {
+        "target": "sv/npc.json",
+        "translated": 50,
+        "guard_fail": 111,
         "guard_command": 0
       },
       {
@@ -141,136 +147,25 @@
         "translated": 16,
         "guard_fail": 34,
         "guard_command": 0
-      },
-      {
-        "target": "it/questlog.json",
-        "translated": 18,
-        "guard_fail": 32,
-        "guard_command": 0
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T07:38:02.513523Z",
+      "timestamp": "2026-02-17T07:42:37.125571Z",
       "checked_entries": 100,
-      "issues_found": 34,
+      "issues_found": 26,
       "issues_by_type": {
-        "identical_to_en": 18,
-        "identical_to_en_exempt": 2,
+        "identical_to_en": 10,
+        "identical_to_en_exempt": 5,
         "artifact_token": 16,
-        "suspicious_log_high": 170,
-        "suspicious_log_low": 4,
-        "suspicious_log_critical": 26,
-        "suspicious_rejected_critical": 168,
-        "suspicious_rejected_high": 32
+        "suspicious_log_high": 165,
+        "suspicious_log_critical": 28,
+        "suspicious_log_low": 7,
+        "suspicious_rejected_critical": 175,
+        "suspicious_rejected_high": 25
       },
       "issues": [
-        {
-          "key": "monster.the_pale_count.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "The Pale Count",
-          "translated": "The Pale Count"
-        },
-        {
-          "key": "monster.ghazbaran.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Ghazbaran",
-          "translated": "Ghazbaran"
-        },
-        {
-          "key": "monster.ghazbaran.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Ghazbaran",
-          "translated": "Ghazbaran"
-        },
-        {
-          "key": "monster.hirintror.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Hirintror",
-          "translated": "Hirintror"
-        },
-        {
-          "key": "monster.hirintror.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Hirintror",
-          "translated": "Hirintror"
-        },
-        {
-          "key": "monster.sir_valorcrest.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Sir Valorcrest",
-          "translated": "Sir Valorcrest"
-        },
-        {
-          "key": "monster.sir_valorcrest.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Sir Valorcrest",
-          "translated": "Sir Valorcrest"
-        },
-        {
-          "key": "monster.draptor.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Draptor",
-          "translated": "Draptor"
-        },
-        {
-          "key": "monster.chayenne.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Chayenne",
-          "translated": "Chayenne"
-        },
-        {
-          "key": "monster.chayenne.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Chayenne",
-          "translated": "Chayenne"
-        },
-        {
-          "key": "monster.orshabaal.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Orshabaal",
-          "translated": "Orshabaal"
-        },
-        {
-          "key": "monster.orshabaal.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Orshabaal",
-          "translated": "Orshabaal"
-        },
-        {
-          "key": "monster.white_pale.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "White Pale",
-          "translated": "White Pale"
-        },
-        {
-          "key": "monster.white_pale.desc",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "White Pale",
-          "translated": "White Pale"
-        },
-        {
-          "key": "monster.the_welter.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "The Welter",
-          "translated": "The Welter"
-        },
         {
           "key": "monster.the_welter.desc",
           "lang": "it",
@@ -403,6 +298,55 @@
           "type": "artifact_token",
           "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+        },
+        {
+          "key": "monster.hunter.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Hunter",
+          "translated": "Hunter"
+        },
+        {
+          "key": "monster.dharalion.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Dharalion",
+          "translated": "Dharalion"
+        },
+        {
+          "key": "monster.dharalion.desc",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Dharalion",
+          "translated": "Dharalion"
+        },
+        {
+          "key": "monster.apocalypse.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Apocalypse",
+          "translated": "Apocalypse"
+        },
+        {
+          "key": "monster.apocalypse.desc",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Apocalypse",
+          "translated": "Apocalypse"
+        },
+        {
+          "key": "monster.cyclops.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Cyclops",
+          "translated": "Cyclops"
+        },
+        {
+          "key": "monster.sandstone_scorpion.voice_3",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "*tak tak tak*",
+          "translated": "*tak tak tak*"
         }
       ],
       "threshold": 10,
@@ -428,8 +372,8 @@
         "total_gt_guard_fail": 3343,
         "cycles": 942,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T07:38:02.513523Z",
-        "issues_count": 131028
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 131070
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -450,8 +394,8 @@
         "total_gt_guard_fail": 12797,
         "cycles": 1227,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T07:38:02.513523Z",
-        "issues_count": 217355
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 217485
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -482,9 +426,9 @@
         "total_rejected": 270,
         "total_gt_guard_fail": 1022,
         "cycles": 229,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T07:38:02.513523Z",
-        "issues_count": 15849
+        "quality_score": 63.3,
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 15865
       },
       "ru": {
         "last_cycle": "2026-02-17T07:37:14.683452Z",
@@ -493,9 +437,9 @@
         "total_rejected": 604,
         "total_gt_guard_fail": 1531,
         "cycles": 224,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T07:38:02.513523Z",
-        "issues_count": 39763
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 39788
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -509,15 +453,15 @@
         "issues_count": 649
       },
       "sv": {
-        "last_cycle": "2026-02-17T07:21:44.715781Z",
-        "last_translated": 49,
-        "total_suspicious": 2914,
+        "last_cycle": "2026-02-17T07:42:28.249216Z",
+        "last_translated": 50,
+        "total_suspicious": 2926,
         "total_rejected": 188,
         "total_gt_guard_fail": 475,
-        "cycles": 107,
-        "quality_score": 84.7,
-        "last_audit": "2026-02-17T07:38:02.513523Z",
-        "issues_count": 12318
+        "cycles": 108,
+        "quality_score": 74.9,
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 12343
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -828,15 +772,15 @@
         "issues_count": 111
       },
       "sr": {
-        "last_cycle": "2026-02-17T07:22:13.171105Z",
+        "last_cycle": "2026-02-17T07:42:35.553438Z",
         "last_translated": 50,
-        "total_suspicious": 1272,
+        "total_suspicious": 1322,
         "total_rejected": 1,
         "total_gt_guard_fail": 489,
-        "cycles": 104,
-        "quality_score": 62.1,
-        "last_audit": "2026-02-17T07:22:46.533366Z",
-        "issues_count": 3936
+        "cycles": 105,
+        "quality_score": 61.5,
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 4036
       },
       "sw": {
         "last_cycle": "2026-02-14T07:01:40.295561Z",
@@ -960,15 +904,15 @@
         "issues_count": 958
       },
       "ro": {
-        "last_cycle": "2026-02-17T07:36:55.193724Z",
-        "last_translated": 50,
-        "total_suspicious": 32936,
-        "total_rejected": 1490,
-        "total_gt_guard_fail": 2402,
-        "cycles": 211,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T07:38:02.513523Z",
-        "issues_count": 51264
+        "last_cycle": "2026-02-17T07:42:19.480251Z",
+        "last_translated": 17,
+        "total_suspicious": 32967,
+        "total_rejected": 1520,
+        "total_gt_guard_fail": 2435,
+        "cycles": 212,
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T07:42:37.125571Z",
+        "issues_count": 51352
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -982,7 +926,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 34 issue(s) / 100 entries | 2026-02-17T07:38:02.513523Z"
+    "summary": "SLOW_MODE | 26 issue(s) / 100 entries | 2026-02-17T07:42:37.125571Z"
   },
   "languages": [
     {
@@ -1058,13 +1002,13 @@
       "language_name": "SR",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 23651,
-      "english_copy_keys": 1646,
+      "translated_keys": 23650,
+      "english_copy_keys": 1647,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 44.14,
+      "completion_pct": 44.13,
       "server_keys": 49731,
-      "server_translated": 23550,
+      "server_translated": 23549,
       "server_pct": 47.35,
       "client_keys": 3855,
       "client_translated": 101,
@@ -1075,14 +1019,14 @@
       "language_name": "Rumuński",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 20728,
-      "english_copy_keys": 2305,
+      "translated_keys": 20733,
+      "english_copy_keys": 2304,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 38.68,
+      "completion_pct": 38.69,
       "server_keys": 49731,
-      "server_translated": 19830,
-      "server_pct": 39.87,
+      "server_translated": 19835,
+      "server_pct": 39.88,
       "client_keys": 3855,
       "client_translated": 898,
       "client_pct": 23.29
@@ -1109,14 +1053,14 @@
       "language_name": "Szwedzki",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 14364,
-      "english_copy_keys": 2230,
+      "translated_keys": 14297,
+      "english_copy_keys": 2341,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 26.81,
+      "completion_pct": 26.68,
       "server_keys": 49731,
-      "server_translated": 14222,
-      "server_pct": 28.6,
+      "server_translated": 14155,
+      "server_pct": 28.46,
       "client_keys": 3855,
       "client_translated": 142,
       "client_pct": 3.68

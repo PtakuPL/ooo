@@ -26438,5 +26438,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:21:44.669154Z"
+  },
+  "npc.barnabas_dee.say_5": {
+    "src_hash": "bf1d1422cb1dc2e2ae30d7e8bc951cb5",
+    "text": "Nej nej nej, jag behöver 15 doser nyskördad pollen! Snälla, skörda de 15 doserna själv, för att vara helt säker på att du har förstklassig kvalitet. Jag är rädd att inget mindre kommer att göra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:25.339550Z"
+  },
+  "npc.captain_dreadnought.stdmod_21": {
+    "src_hash": "a4df7f114b82076efc150192db490d15",
+    "text": ".. städer[defaultTown].namn .. \\z\n\t .. städer[defaultTown].namn .. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:25.715904Z"
+  },
+  "npc.captain_haba_open_sea.starboard_4": {
+    "src_hash": "f90c654270bae4b99dff0646a94f0a4e",
+    "text": "GÅ GÅ GÅ, SJÖORM PÅ STYRBORDSSIDA!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:25.774497Z"
+  },
+  "npc.captain_haba_open_sea.straight_4": {
+    "src_hash": "aa8953a718d603cbdb2b662370c37b92",
+    "text": "GÅ GÅ GÅ, HAVORM RAKT FRAM!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:25.780478Z"
+  },
+  "npc.emperor_kruzak.multi_1": {
+    "src_hash": "52ab9c4bdd0063e05461de7641aa6b4d",
+    "text": "Excellent! Låt mig nu förklara. Om du donerar 1 000 000 000 guldpjäser har du rätt att bära en unik outfit. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:26.671087Z"
+  },
+  "npc.guide_elena.say_1": {
+    "src_hash": "c0280a2ffd053f790d316fe4a6996e1a",
+    "text": "Vill du att jag markerar platser som - till exempel - depån, banken och butikerna på din karta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.770000Z"
+  },
+  "npc.guide_elena.say_3": {
+    "src_hash": "a1838edea25bdb8aa7b33f4d38f13559",
+    "text": "Nåväl, inget fel med att utforska staden på egen hand. Säg till om du behöver något!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.771894Z"
+  },
+  "npc.guide_elena.stdmod_3": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.772502Z"
+  },
+  "npc.guide_elena.stdmod_5": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.773251Z"
+  },
+  "npc.guide_elena.voice_3": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.774465Z"
+  },
+  "npc.guide_elena.voice_5": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.774973Z"
+  },
+  "npc.guide_jonathan.greet_msg_1": {
+    "src_hash": "9d032364c75fab30f613b37682f96b0a",
+    "text": "För närvarande kan jag berätta allt om staden, dess tempel, banken, butiker, speltränare och depån, samt om världsstatusen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.776069Z"
+  },
+  "npc.guide_jonathan.say_1": {
+    "src_hash": "c0280a2ffd053f790d316fe4a6996e1a",
+    "text": "Vill du att jag markerar platser som - till exempel - depån, banken och butikerna på din karta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.776793Z"
+  },
+  "npc.guide_jonathan.say_3": {
+    "src_hash": "a1838edea25bdb8aa7b33f4d38f13559",
+    "text": "Nåväl, inget fel med att utforska staden på egen hand. Säg till om du behöver något!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.778821Z"
+  },
+  "npc.guide_jonathan.stdmod_1": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.779594Z"
+  },
+  "npc.guide_jonathan.stdmod_4": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.780499Z"
+  },
+  "npc.guide_jonathan.stdmod_5": {
+    "src_hash": "9d032364c75fab30f613b37682f96b0a",
+    "text": "För närvarande kan jag berätta allt om staden, dess tempel, banken, butiker, speltränare och depån, samt om världsstatusen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.782742Z"
+  },
+  "npc.guide_jonathan.voice_1": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.783345Z"
+  },
+  "npc.guide_jonathan.voice_4": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.784166Z"
+  },
+  "npc.guide_kunibert.say_1": {
+    "src_hash": "c0280a2ffd053f790d316fe4a6996e1a",
+    "text": "Vill du att jag markerar platser som - till exempel - depån, banken och butikerna på din karta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.785133Z"
+  },
+  "npc.guide_kunibert.say_3": {
+    "src_hash": "a1838edea25bdb8aa7b33f4d38f13559",
+    "text": "Nåväl, inget fel med att utforska staden på egen hand. Säg till om du behöver något!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.786491Z"
+  },
+  "npc.guide_kunibert.stdmod_1": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.786938Z"
+  },
+  "npc.guide_kunibert.stdmod_3": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.787710Z"
+  },
+  "npc.guide_kunibert.stdmod_4": {
+    "src_hash": "9d032364c75fab30f613b37682f96b0a",
+    "text": "För närvarande kan jag berätta allt om staden, dess tempel, banken, butiker, speltränare och depån, samt om världsstatusen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.788376Z"
+  },
+  "npc.guide_kunibert.stdmod_5": {
+    "src_hash": "fbbcb70483b42cfc10d5f330cf1231c7",
+    "text": "Templet finns i ett av stadsdelarna. Leta efter trappor upp från nedre staden, du hittar templet i nordväst om övre staden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.789077Z"
+  },
+  "npc.guide_kunibert.voice_1": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.789872Z"
+  },
+  "npc.guide_kunibert.voice_3": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.790411Z"
+  },
+  "npc.guide_luke.say_1": {
+    "src_hash": "c0280a2ffd053f790d316fe4a6996e1a",
+    "text": "Vill du att jag markerar platser som - till exempel - depån, banken och butikerna på din karta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.791508Z"
+  },
+  "npc.guide_luke.say_3": {
+    "src_hash": "a1838edea25bdb8aa7b33f4d38f13559",
+    "text": "Nåväl, inget fel med att utforska staden på egen hand. Säg till om du behöver något!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.792971Z"
+  },
+  "npc.guide_luke.stdmod_1": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.793816Z"
+  },
+  "npc.guide_luke.stdmod_4": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.794446Z"
+  },
+  "npc.guide_luke.voice_1": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.795599Z"
+  },
+  "npc.guide_luke.voice_4": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.796472Z"
+  },
+  "npc.guide_rahlkora.say_1": {
+    "src_hash": "c0280a2ffd053f790d316fe4a6996e1a",
+    "text": "Vill du att jag markerar platser som - till exempel - depån, banken och butikerna på din karta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.797626Z"
+  },
+  "npc.guide_rahlkora.say_3": {
+    "src_hash": "a1838edea25bdb8aa7b33f4d38f13559",
+    "text": "Nåväl, inget fel med att utforska staden på egen hand. Säg till om du behöver något!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.799114Z"
+  },
+  "npc.guide_rahlkora.stdmod_2": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.799614Z"
+  },
+  "npc.guide_rahlkora.stdmod_5": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.800542Z"
+  },
+  "npc.guide_rahlkora.voice_2": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.801895Z"
+  },
+  "npc.guide_rahlkora.voice_5": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.803142Z"
+  },
+  "npc.guide_thelandil.say_1": {
+    "src_hash": "c0280a2ffd053f790d316fe4a6996e1a",
+    "text": "Vill du att jag markerar platser som - till exempel - depån, banken och butikerna på din karta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.804573Z"
+  },
+  "npc.guide_thelandil.say_3": {
+    "src_hash": "a1838edea25bdb8aa7b33f4d38f13559",
+    "text": "Nåväl, inget fel med att utforska staden på egen hand. Säg till om du behöver något!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.806599Z"
+  },
+  "npc.guide_thelandil.stdmod_2": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.807128Z"
+  },
+  "npc.guide_thelandil.stdmod_3": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.807694Z"
+  },
+  "npc.guide_thelandil.stdmod_5": {
+    "src_hash": "9d032364c75fab30f613b37682f96b0a",
+    "text": "För närvarande kan jag berätta allt om staden, dess tempel, banken, butiker, speltränare och depån, samt om världsstatusen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.809604Z"
+  },
+  "npc.guide_thelandil.voice_2": {
+    "src_hash": "babe9eed07ede7a5b6c1615bbbc7e829",
+    "text": "Prata med mig om du behöver vägbeskrivning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.810719Z"
+  },
+  "npc.guide_thelandil.voice_3": {
+    "src_hash": "6ece1e6cb055b178f682ba97449eab6f",
+    "text": "Gratis eskort till depån för nykomlingar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:27.811799Z"
   }
 }

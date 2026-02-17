@@ -51590,5 +51590,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:36:54.694149Z"
+  },
+  "monster.bad_dream.name": {
+    "src_hash": "cc969b71214e8e8fb65fbfd5892dabcb",
+    "text": "Vis urât",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:41:54.449896Z"
+  },
+  "monster.gladiator.voice_4": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Ia asta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:41:54.557181Z"
+  },
+  "monster.renegade_knight.name": {
+    "src_hash": "9857523dc0efbd187fff110e64e8affb",
+    "text": "Knight mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:41:54.568347Z"
+  },
+  "monster.renegade_knight.voice_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Ia asta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:41:54.568914Z"
+  },
+  "monster.vile_grandmaster.name": {
+    "src_hash": "53e7346641af7337f8f8351c979ea372",
+    "text": "Grandmaster mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:41:54.577116Z"
+  },
+  "monster.silencer.name": {
+    "src_hash": "5e1ddb0ab1cb335819a4d6f4fac11161",
+    "text": "Amortizor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:41:54.634746Z"
+  },
+  "monster.sandstone_scorpion.voice_3": {
+    "src_hash": "960c88011610834a481d8ebe41989ea8",
+    "text": "*tak tak tak*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:15.355966Z"
+  },
+  "monster.ice_golem.desc": {
+    "src_hash": "a946ff12b091a737b9ff9b25f5df6719",
+    "text": "un golem de gheață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:15.357193Z"
+  },
+  "monster.ice_golem.voice_1": {
+    "src_hash": "b38bfbe06a8245d7a17e1c0aceeab195",
+    "text": "Chrrr.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:19.336603Z"
+  },
+  "monster.ice_golem.voice_2": {
+    "src_hash": "2921deeb6350da477d908acc416166b4",
+    "text": "Crrrrk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:42:19.336945Z"
   }
 }

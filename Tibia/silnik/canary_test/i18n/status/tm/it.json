@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:00:27.353854Z"
+    "updated_at": "2026-02-17T10:04:09.251427Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -65806,5 +65806,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:02:12.759490Z"
+  },
+  "web.tpl.guilds.leave_guild.b_1": {
+    "src_hash": "dbcddf59715ed61bd15228b410c5b3eb",
+    "text": "Lascia Guild",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:04.958286Z"
+  },
+  "html.invitecharacter.html.text5": {
+    "src_hash": "b9a890e0f9d799d32dcd879c9c3ef65a",
+    "text": "Nessun personaggio invitato trovato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:05.009084Z"
+  },
+  "web.tpl.account.welcome_mail.h3_1": {
+    "src_hash": "2e459a51ca4e81bcb29400a766ddd2f5",
+    "text": "Caro giocatore,",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:15.825194Z"
+  },
+  "web.tpl.account.characters.change_comment.span_1": {
+    "src_hash": "240f3031f25601fa128bd4e15f0a37de",
+    "text": "Commento:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:22.081896Z"
+  },
+  "web.tpl.admin.notepad.label_1": {
+    "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+    "text": "Questo è il tuo blocco note personale. Assicurati di salvarlo ogni volta che modifichi qualcosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:22.082640Z"
+  },
+  "web.tpl.admin.tools.teleport.label_2": {
+    "src_hash": "fc88379b3f248c764f9a94f3af47e53e",
+    "text": "Posizione X",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:22.082890Z"
+  },
+  "web.tpl.admin.tools.teleport.label_3": {
+    "src_hash": "49b3d57c9699059f01fdd9cd2f513ec7",
+    "text": "Posizione Y",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:22.083125Z"
+  },
+  "web.tpl.admin.tools.teleport.label_4": {
+    "src_hash": "1aeaed74793bd62048781eca9fe67125",
+    "text": "Posizione Z",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:26.083777Z"
+  },
+  "web.tpl.error_box.b_1": {
+    "src_hash": "c087b60f6c8f26752431e51e0431d217",
+    "text": "Si sono verificati i seguenti errori:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:26.084142Z"
+  },
+  "web.tpl.faq.form.td_1": {
+    "src_hash": "41e94aa2ea70937dbbcc787d8d5f1a2a",
+    "text": "Domanda:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:26.084328Z"
+  },
+  "web.tpl.faq.form.td_2": {
+    "src_hash": "6672d96fca9cd3db8ab59d443d3f9de0",
+    "text": "Risposta:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:26.084499Z"
+  },
+  "web.tpl.characters.b_1": {
+    "src_hash": "ee7aba1d32fa0915b96177dc291ca6c8",
+    "text": "Informazioni sui personaggi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:26.084738Z"
+  },
+  "web.tpl.characters.td_2": {
+    "src_hash": "1a2f1cd461adb17673896dc9c1f6b295",
+    "text": "Sesso:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:28.739713Z"
+  },
+  "web.tpl.characters.td_3": {
+    "src_hash": "77abf99ed7735b723b436c966cc42750",
+    "text": "Stato civile:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:28.739940Z"
+  },
+  "web.tpl.characters.td_4": {
+    "src_hash": "71aef40a2b17fc1bbf88053aacea724c",
+    "text": "Professione:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:28.740203Z"
+  },
+  "web.tpl.characters.td_5": {
+    "src_hash": "07ad815187b53dc2ceaf5ad6e0a12bb1",
+    "text": "Livello:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:28.740405Z"
+  },
+  "web.tpl.characters.td_6": {
+    "src_hash": "e3cef3cf7f3b4d518a92aba74b52d4b6",
+    "text": "Esperienza:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:04:28.740587Z"
   }
 }

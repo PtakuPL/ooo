@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:59:54.862157Z"
+    "updated_at": "2026-02-17T10:03:41.851531Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -59206,5 +59206,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:01:49.836491Z"
+  },
+  "web.tpl.gallery.form.td_1": {
+    "src_hash": "240f3031f25601fa128bd4e15f0a37de",
+    "text": "Comentariu:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:37.542251Z"
+  },
+  "html.invitecharacter.html.text5": {
+    "src_hash": "b9a890e0f9d799d32dcd879c9c3ef65a",
+    "text": "Nu s-au găsit caractere invitate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:37.581217Z"
+  },
+  "web.tpl.admin.notepad.label_1": {
+    "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+    "text": "Acesta este blocnotesul dvs. personal. Asigurați-vă că îl salvați de fiecare dată când modificați ceva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:50.928173Z"
+  },
+  "web.tpl.admin.tools.teleport.label_2": {
+    "src_hash": "fc88379b3f248c764f9a94f3af47e53e",
+    "text": "Poziția X",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:56.997955Z"
+  },
+  "web.tpl.admin.tools.teleport.label_3": {
+    "src_hash": "49b3d57c9699059f01fdd9cd2f513ec7",
+    "text": "Poziția Y",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:56.998273Z"
+  },
+  "web.tpl.admin.tools.teleport.label_4": {
+    "src_hash": "1aeaed74793bd62048781eca9fe67125",
+    "text": "Poziția Z",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:56.998477Z"
+  },
+  "web.tpl.error_box.b_1": {
+    "src_hash": "c087b60f6c8f26752431e51e0431d217",
+    "text": "Au apărut următoarele erori:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:56.998799Z"
+  },
+  "web.tpl.faq.form.td_1": {
+    "src_hash": "41e94aa2ea70937dbbcc787d8d5f1a2a",
+    "text": "Întrebare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:56.998990Z"
+  },
+  "web.tpl.faq.form.td_2": {
+    "src_hash": "6672d96fca9cd3db8ab59d443d3f9de0",
+    "text": "Răspuns:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:59.806165Z"
+  },
+  "web.tpl.characters.b_1": {
+    "src_hash": "ee7aba1d32fa0915b96177dc291ca6c8",
+    "text": "Informații despre caracter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:59.806454Z"
+  },
+  "web.tpl.characters.td_3": {
+    "src_hash": "77abf99ed7735b723b436c966cc42750",
+    "text": "Starea civilă:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:59.807162Z"
+  },
+  "web.tpl.characters.td_4": {
+    "src_hash": "71aef40a2b17fc1bbf88053aacea724c",
+    "text": "Profesie:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:03:59.807354Z"
   }
 }

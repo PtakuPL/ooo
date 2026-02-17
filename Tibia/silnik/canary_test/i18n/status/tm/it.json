@@ -33518,5 +33518,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:06:19.044915Z"
+  },
+  "otclient_modules.charms1410_otui.tr_9": {
+    "src_hash": "a7c19032df9d43b8c62a563d6c72e6c3",
+    "text": "Componente aggiuntivo 1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.162455Z"
+  },
+  "otclient_modules.console_otui.tr_14": {
+    "src_hash": "9dfab5baaa91e22c69ad63136b286eae",
+    "text": "Ignora i giocatori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.167300Z"
+  },
+  "otclient_modules.console_otui.tr_15": {
+    "src_hash": "481ddf27422767090d74e0aba96896bc",
+    "text": "Apri nuovo canale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.167723Z"
+  },
+  "otclient_modules.console_otui.tr_16": {
+    "src_hash": "633af479e304ecf8b57b1aa718dedd05",
+    "text": "Chiudi questo canale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.168177Z"
+  },
+  "otclient_modules.game_stash_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.192090Z"
+  },
+  "otclient_modules.game_stash_otui.tr_4": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.192374Z"
+  },
+  "otclient_modules.game_store.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.192771Z"
+  },
+  "otclient_modules.game_store.tr_11": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.193028Z"
+  },
+  "otclient_modules.game_store.tr_13": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.193318Z"
+  },
+  "otclient_modules.game_store.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.193748Z"
+  },
+  "otclient_modules.game_store.tr_5": {
+    "src_hash": "444bcb3a3fcf8389296c49467f27e1d6",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.194157Z"
+  },
+  "otclient_modules.game_store_otui.tr_12": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.194770Z"
+  },
+  "otclient_modules.gameinterface.tr_23": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Attacco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.196376Z"
+  },
+  "otclient_modules.gameinterface.tr_28": {
+    "src_hash": "eace16d66cdd93ad876c620db7456077",
+    "text": "Montare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.196890Z"
+  },
+  "otclient_modules.gameinterface.tr_43": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.198117Z"
+  },
+  "otclient_modules.gameinterface.tr_44": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.198303Z"
+  },
+  "otclient_modules.gameinterface.tr_45": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Esci",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.198555Z"
+  },
+  "otclient_modules.gameinterface.tr_47": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Esci",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.198951Z"
+  },
+  "otclient_modules.gameinterface.tr_48": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.199142Z"
+  },
+  "otclient_modules.gameinterface.tr_53": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Esci",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.199719Z"
+  },
+  "otclient_modules.gift_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.201402Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.201871Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_7": {
+    "src_hash": "a0199cf7be7b241ffef10af0aef3efab",
+    "text": "Tasti di scelta rapida",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.204375Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.204801Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_20": {
+    "src_hash": "a0199cf7be7b241ffef10af0aef3efab",
+    "text": "Tasti di scelta rapida",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.205785Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_6": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.206260Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_7": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.206438Z"
+  },
+  "otclient_modules.house.tr_31": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.208452Z"
+  },
+  "otclient_modules.house.tr_32": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.208667Z"
+  },
+  "otclient_modules.house.tr_39": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.209233Z"
+  },
+  "otclient_modules.house.tr_40": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.209591Z"
+  },
+  "otclient_modules.house.tr_43": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.209891Z"
+  },
+  "otclient_modules.house.tr_44": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.210254Z"
+  },
+  "otclient_modules.house.tr_49": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.210721Z"
+  },
+  "otclient_modules.house.tr_50": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.210954Z"
+  },
+  "otclient_modules.house.tr_55": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.211413Z"
+  },
+  "otclient_modules.house.tr_56": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.211607Z"
+  },
+  "otclient_modules.house.tr_61": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.212105Z"
+  },
+  "otclient_modules.house.tr_62": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.212389Z"
+  },
+  "otclient_modules.house.tr_67": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.212842Z"
+  },
+  "otclient_modules.house.tr_70": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.213147Z"
+  },
+  "otclient_modules.house.tr_73": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.213521Z"
+  },
+  "otclient_modules.house.tr_76": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.213894Z"
+  },
+  "otclient_modules.house.tr_79": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.214193Z"
+  },
+  "otclient_modules.house.tr_82": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.214614Z"
+  },
+  "otclient_modules.house.tr_85": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.214992Z"
+  },
+  "otclient_modules.house.tr_88": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.215257Z"
+  },
+  "otclient_modules.house_otui.tr_10": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Nome:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.216301Z"
+  },
+  "otclient_modules.house_otui.tr_13": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.216699Z"
+  },
+  "otclient_modules.house_otui.tr_24": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Nome:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:45.217624Z"
   }
 }

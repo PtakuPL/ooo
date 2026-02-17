@@ -1,151 +1,18 @@
 {
-  "timestamp": "2026-02-17T01:12:08.577499Z",
+  "timestamp": "2026-02-17T01:13:35.715243Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 20,
   "issues_by_type": {
-    "identical_to_en": 19,
-    "identical_to_en_exempt": 10,
+    "identical_to_en_exempt": 15,
     "artifact_token": 7,
-    "suspicious_log_low": 53,
-    "suspicious_log_critical": 57,
-    "suspicious_log_high": 90,
-    "suspicious_rejected_critical": 175,
-    "suspicious_rejected_high": 25
+    "identical_to_en": 13,
+    "suspicious_log_high": 119,
+    "suspicious_log_low": 26,
+    "suspicious_log_critical": 55,
+    "suspicious_rejected_critical": 172,
+    "suspicious_rejected_high": 28
   },
   "issues": [
-    {
-      "key": "otclient_modules.skills_otui.tr_15",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Ice",
-      "translated": "Ice"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -194,6 +61,97 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "cpp.augment.format_cooldown",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "{0} -> {1}{2}s {3}",
+      "translated": "{0} -> {1}{2}s {3}"
+    },
+    {
+      "key": "otclient_modules.house.tr_43",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "No",
+      "translated": "No"
+    },
+    {
+      "key": "otclient_modules.house.tr_49",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "No",
+      "translated": "No"
+    },
+    {
+      "key": "otclient_modules.house.tr_55",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "No",
+      "translated": "No"
+    },
+    {
+      "key": "otclient_modules.house.tr_61",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "No",
+      "translated": "No"
+    },
+    {
+      "key": "otclient_modules.house.tr_67",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_70",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_73",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_76",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_79",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_82",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_85",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.house.tr_88",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
     }
   ],
   "threshold": 10,

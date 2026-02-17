@@ -145550,5 +145550,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:03:13.901509Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "No puedes entrar en una zona de protección después de atacar a otro jugador.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:30.956806Z"
+  },
+  "cpp.inspect.physical_plus": {
+    "src_hash": "9f0c54c466d97e93b32794c483030c7b",
+    "text": "{0} físico + {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:35.464724Z"
+  },
+  "cpp.player.exp_animus_bonus": {
+    "src_hash": "33509188c709f7fb3af22f0e6f094fb5",
+    "text": "(bonificación de maestría del animus {0}%)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:35.465067Z"
+  },
+  "cpp.protocol.active_prey_desc": {
+    "src_hash": "8d45051899aa9b191a41ac17d746c91e",
+    "text": "{0} ({1} +{2}%, restante {3})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:35.465538Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone": {
+    "src_hash": "d2aecf8ad0d3683be703f96024d3d815",
+    "text": "No puedes ingresar a una zona pvp después de atacar a otro jugador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:39.068242Z"
+  },
+  "cpp.title.desc_46": {
+    "src_hash": "1dfaa12a030aa2f9d0bb8e921fd68b00",
+    "text": "Desbloqueaste todas las entradas extradimensionales Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:39.068902Z"
+  },
+  "cpp.zone.str1": {
+    "src_hash": "51e4134431f514103591fbfec46d0fd1",
+    "text": "Área (de: {}, a: {})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:39.069207Z"
+  },
+  "cpp.account.str1": {
+    "src_hash": "fe7bd5cdc41b08e789243801f0ee8cb8",
+    "text": "QUITAR Monedas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:12:41.507568Z"
   }
 }

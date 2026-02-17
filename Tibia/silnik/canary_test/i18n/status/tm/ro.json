@@ -61086,5 +61086,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:44:32.483388Z"
+  },
+  "otclient_modules.character_otui.tr_55": {
+    "src_hash": "fc25cde969a2a9c8d9fec8eeb0b5e50f",
+    "text": "Daune suplimentare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.767810Z"
+  },
+  "otclient_modules.character_otui.tr_56": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Şansă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.768080Z"
+  },
+  "otclient_modules.key_edit_otui.tr_4": {
+    "src_hash": "408821667f19315b91358f483ff8ca0c",
+    "text": "Această tastă rapidă este deja utilizată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.874282Z"
+  },
+  "otclient_modules.key_edit_otui.tr_5": {
+    "src_hash": "86bf8c83da4f5af265f1b9bd9ca54afb",
+    "text": "Această acțiune trebuie să fie legată de o singură cheie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.875067Z"
+  },
+  "otclient_modules.keybinds_otui.tr_3": {
+    "src_hash": "12b85f0c6014754a8a24ca2317db6453",
+    "text": "Cheie secundară",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.876847Z"
+  },
+  "otclient_modules.keybinds_otui.tr_4": {
+    "src_hash": "5b5ad81b074b5c50c4572d2945eeb06b",
+    "text": "Cheie primară",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.877372Z"
+  },
+  "otclient_modules.prey.tr_14": {
+    "src_hash": "b24ce0cd392a5b0b8dedc66c25213594",
+    "text": "Gratuit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.898298Z"
+  },
+  "otclient_modules.prey.tr_17": {
+    "src_hash": "b24ce0cd392a5b0b8dedc66c25213594",
+    "text": "Gratuit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.898633Z"
+  },
+  "otclient_modules.skills_otui.tr_20": {
+    "src_hash": "c58de8415b504a6ffa5d0b14967f91bb",
+    "text": "Atac violent",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.910829Z"
+  },
+  "otclient_modules.skills_otui.tr_21": {
+    "src_hash": "fc25cde969a2a9c8d9fec8eeb0b5e50f",
+    "text": "Daune suplimentare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.911098Z"
+  },
+  "otclient_modules.skills_otui.tr_22": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Şansă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.911351Z"
+  },
+  "otclient_modules.skills_otui.tr_28": {
+    "src_hash": "3d92095304f260f4a17317dfb05209fe",
+    "text": "Valoarea atacului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.912234Z"
+  },
+  "otclient_modules.skills_otui.tr_6": {
+    "src_hash": "05b12fcc019db2164e02024fe9578620",
+    "text": "Atenuare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.917544Z"
+  },
+  "otclient_modules.skills_otui.tr_7": {
+    "src_hash": "ffad71d6db9adb50cc21052c8226cb69",
+    "text": "Valoarea armurii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.917814Z"
+  },
+  "otclient_modules.skills_otui.tr_8": {
+    "src_hash": "976de6de5004ed522085a5e4be455707",
+    "text": "Valoarea de apărare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:02.918327Z"
+  },
+  "otclient_modules.character.tr_70": {
+    "src_hash": "a06ca25c29fd9c1cfddbd74fcc66b979",
+    "text": "Rezultatele bătăliei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:20.761346Z"
+  },
+  "otclient_modules.character.tr_71": {
+    "src_hash": "12854b206c0152dbef6c7a33d55a812f",
+    "text": "Diverse Statistici",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:20.761822Z"
+  },
+  "otclient_modules.character.tr_72": {
+    "src_hash": "c93abed797195cfc0df0bd0e6cdf2fd4",
+    "text": "Statistici de apărare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:20.762387Z"
+  },
+  "otclient_modules.character.tr_73": {
+    "src_hash": "2d0c23ba8b32b1118eb61df85552ae8b",
+    "text": "Statistici de infracțiune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:20.762864Z"
+  },
+  "otclient_modules.character.tr_74": {
+    "src_hash": "401610fb5e01cdaf3a0c67f32b858c38",
+    "text": "Statistici de luptă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:20.763288Z"
+  },
+  "otclient_modules.character.tr_75": {
+    "src_hash": "baee7907ee5949952b3e0f34ad532b7d",
+    "text": "Statistici de caractere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:26.899168Z"
+  },
+  "otclient_modules.character.tr_76": {
+    "src_hash": "c92ad71f199aa86db4dc69a0ebcdf34f",
+    "text": "Statistici generale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:26.899394Z"
+  },
+  "otclient_modules.character.tr_77": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Mai aveți %s la sută de plecat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:26.899736Z"
+  },
+  "otclient_modules.character.tr_78": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Mai aveți %s la sută de plecat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:26.900053Z"
+  },
+  "otclient_modules.character.tr_79": {
+    "src_hash": "686d4ebf33f5dd41a66565edbdcc74fe",
+    "text": "Ai %s la sută",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:26.900307Z"
+  },
+  "otclient_modules.character.tr_8": {
+    "src_hash": "62eaa5650c462dd0fba71d9d2d159f0f",
+    "text": "Transcendența",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:31.824703Z"
+  },
+  "otclient_modules.character.tr_80": {
+    "src_hash": "7d2c99ec2c6bfa57eaa477689d4c0f86",
+    "text": "Este posibil să nu primești experiență și pradă de la monștri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:31.825167Z"
+  },
+  "otclient_modules.character.tr_81": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:31.825520Z"
+  },
+  "otclient_modules.character.tr_82": {
+    "src_hash": "c9fabc9f075a2ea68f92b5bedbc93aac",
+    "text": "Câștigă doar 50%% de experiență și nu poți câștiga prada de la monștri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:31.825960Z"
+  },
+  "otclient_modules.character.tr_83": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:46:31.826366Z"
   }
 }

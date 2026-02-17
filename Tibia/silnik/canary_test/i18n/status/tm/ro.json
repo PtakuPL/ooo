@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:22:27.715882Z"
+    "updated_at": "2026-02-17T03:09:17.473178Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -35974,5 +35974,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:08:40.024594Z"
+  },
+  "item.14769.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:11.439341Z"
+  },
+  "item.16107.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:11.499876Z"
+  },
+  "item.21400.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:11.912323Z"
+  },
+  "item.3059.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.467969Z"
+  },
+  "item.31127.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.483670Z"
+  },
+  "item.31448.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.527370Z"
+  },
+  "item.31929.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.600747Z"
+  },
+  "item.31957.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.603452Z"
+  },
+  "item.32411.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.620620Z"
+  },
+  "item.32767.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.653648Z"
+  },
+  "item.32794.name": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.655929Z"
+  },
+  "item.3447.name": {
+    "src_hash": "9022a153e6190f10d9b57aa4232b8aea",
+    "text": "Săgeată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:12.821579Z"
+  },
+  "item.8072.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:13.639202Z"
+  },
+  "item.8073.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:13.639903Z"
+  },
+  "item.8074.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:13.640606Z"
+  },
+  "item.8075.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:13.641216Z"
+  },
+  "item.8076.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:13.641934Z"
+  },
+  "item.8090.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:13.647712Z"
   }
 }

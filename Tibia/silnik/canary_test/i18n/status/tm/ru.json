@@ -27646,5 +27646,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T03:07:54.020345Z"
+  },
+  "monster.elite_pirat.desc": {
+    "src_hash": "ced2406872ef36030fceb1ec00a14f55",
+    "text": "элитный пират",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:41.483287Z"
+  },
+  "monster.elf_overseer.name": {
+    "src_hash": "ff659343b965d07afb3f2f2ff5e8fd65",
+    "text": "Эльф-надзиратель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:41.483537Z"
+  },
+  "monster.elf_overseer.desc": {
+    "src_hash": "46b9ba097e81fc885f7d9cbd545a7970",
+    "text": "эльф-надзиратель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:41.483781Z"
+  },
+  "monster.elf_overseer.voice_1": {
+    "src_hash": "3edaae98abac22349454786e15e9bbea",
+    "text": "Я принесу тебе баланс!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:41.484089Z"
+  },
+  "monster.elf_overseer.voice_2": {
+    "src_hash": "1f640a19ae2f286df265a2003b519b7a",
+    "text": "Вихиль Эалуэль!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:44.065791Z"
+  },
+  "monster.elf_overseer.voice_3": {
+    "src_hash": "80ca50969c0aa9a23e8ce1e258576343",
+    "text": "Для дочери звезд!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:44.066136Z"
+  },
+  "monster.elf_overseer.voice_4": {
+    "src_hash": "6ed28c4a01b2c0a91a9d0f731b898699",
+    "text": "Та'ши Синат!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:44.066384Z"
+  },
+  "monster.elf_overseer.voice_5": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "Почувствуй мой гнев!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:44.066639Z"
+  },
+  "monster.goblin.voice_1": {
+    "src_hash": "4d0973b303c4f6fc92dd72ff92f3ca96",
+    "text": "Зигзаг! Гобо атакует!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:44.066910Z"
+  },
+  "monster.goblin.voice_2": {
+    "src_hash": "7da44fb6ccd55593aa9eb7746e717b60",
+    "text": "Я зеленый, я значит!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:46.602253Z"
+  },
+  "monster.goblin.voice_3": {
+    "src_hash": "4228bdec0cbdd2b7db97385b68f9fef7",
+    "text": "Багга! Багга!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:46.602509Z"
+  },
+  "monster.goblin.voice_4": {
+    "src_hash": "67a01fb31a7cc02e20fba75955223ea6",
+    "text": "Помощь! Убийца гоблинов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:46.602781Z"
+  },
+  "monster.goblin.voice_5": {
+    "src_hash": "28761009402dffed840536d0295558bf",
+    "text": "У меня он!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:46.603010Z"
+  },
+  "monster.bulltaur_alchemist.name": {
+    "src_hash": "b86f2c554a2f41b7e19c261bc845851e",
+    "text": "Буллтаур Алхимик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:46.603259Z"
+  },
+  "monster.bulltaur_alchemist.desc": {
+    "src_hash": "ab22f3be8c419067fef4e9ccb69a4d98",
+    "text": "Буллтаур-алхимик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:49.209777Z"
+  },
+  "monster.bulltaur_alchemist.voice_1": {
+    "src_hash": "2bb8cf3a25b98a5158c4e73635551f02",
+    "text": "Ваше несчастье решено!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:49.210152Z"
+  },
+  "monster.bulltaur_alchemist.voice_2": {
+    "src_hash": "9671feaa0d18db8478a421697f687962",
+    "text": "Скоро я соберу тебя на ингредиенты!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:49.210523Z"
+  },
+  "monster.bulltaur_alchemist.voice_3": {
+    "src_hash": "db6e8268bed32dbc70070d9d2b1f5aa7",
+    "text": "У меня есть только решение этой проблемы!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:09:49.210891Z"
   }
 }

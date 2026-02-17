@@ -31534,5 +31534,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:08:54.259526Z"
+  },
+  "scripts.actions_Ointment.msg_1": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Nepetrificați țipătul unui banshee lângă cristalul rău, cu urechile protejate de ceară. Astfel, artefactul nenorocit este distrus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:31.577214Z"
+  },
+  "scripts.movements_teleport_main.say_2": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:31.689040Z"
+  },
+  "scripts.actions_MedusaOil.msg_2": {
+    "src_hash": "2fffed7e55b475fea1241561e1dee3bf",
+    "text": "Folosești ceara topită pentru a-ți astupa urechile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:37.148348Z"
+  },
+  "scripts.actions_MedusaOil.msg_3": {
+    "src_hash": "81f34cd4feabd1b573f7f0287b5b7e09",
+    "text": "Ai amestecat primele ingrediente pentru a crea un unguent special. Dar încă nu este complet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:37.148861Z"
+  },
+  "scripts.actions_MedusaOil.msg_4": {
+    "src_hash": "de7e7625f949cdce38c79cc3d2a971de",
+    "text": "Ai amestecat ingredientele potrivite pentru a crea un unguent special. Cu acest unguent, puteți nepetrifica un obiect pietrificat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:37.149449Z"
+  },
+  "scripts.actions_Misc.msg_1": {
+    "src_hash": "ef7bc2864cae3121bb7c48e6572383bf",
+    "text": "Pe măsură ce folosești clopoțelul mic, un sunet nepământesc răsună dulce. În același moment, apele lacului încep să se învârtească.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:37.150027Z"
+  },
+  "scripts.actions_Misc.msg_2": {
+    "src_hash": "04b60dd3858c883f70e9bda7222d43e4",
+    "text": "Un vârtej există deja în această zonă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:37.150480Z"
+  },
+  "scripts.actions_Misc.msg_3": {
+    "src_hash": "9f25db585c3bc299d4755213e900b2e5",
+    "text": "Ai găsit o foaie de hârtie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:40.377759Z"
+  },
+  "scripts.actions_Misc.msg_4": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Teancul de oase este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:40.378057Z"
+  },
+  "scripts.actions_Misc.msg_5": {
+    "src_hash": "17f363d5b28d6710eee10f1f445e69ef",
+    "text": "Ai găsit un mic clopot de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:40.378459Z"
+  },
+  "scripts.actions_Misc.msg_6": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Teancul de oase este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:40.378738Z"
+  },
+  "scripts.actions_Misc.msg_7": {
+    "src_hash": "251bcb9238b80e3c253577b72c0388ca",
+    "text": "Scoți niște sânge din cristalul gol. Să sperăm că este de fapt sângele unei meduse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:40.379205Z"
+  },
+  "scripts.actions_acidFishingRod.msg_1": {
+    "src_hash": "b7edddd4772bae9ec1170cd75ad8532c",
+    "text": "Nu îndrăznești să atingi acolo rămășițe. Un cuvânt a fost sculptat în aceste oase iar și iar: 'K'muuh'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:42.962227Z"
+  },
+  "scripts.actions_amazon_disguise_kit.say_1": {
+    "src_hash": "9bd23f50ea88b5a877980d0d79b198b6",
+    "text": "Te deghizi ca o amazona frumoasa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:42.962569Z"
+  },
+  "scripts.actions_amforas.say_1": {
+    "src_hash": "88ea24a13ebba465ba24e1ba958a3bb6",
+    "text": "Ai deja inima ta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:42.962843Z"
+  },
+  "scripts.actions_amforas.say_2": {
+    "src_hash": "16fe9312206fbed5d7cf5919d2bf1b21",
+    "text": "Continuați să încercați!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:42.963089Z"
+  },
+  "scripts.actions_amforas.say_3": {
+    "src_hash": "40a07bfe88b5502f6d2edfb4bf7b5e82",
+    "text": "Ai o inimă uimitoare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:42.963378Z"
+  },
+  "scripts.actions_analyser.msg_1": {
+    "src_hash": "a2da86b455a557094c1df725073335cd",
+    "text": "Bine făcut! Apa este analizată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:45.585185Z"
+  },
+  "scripts.actions_ancient_feud_entrances.msg_1": {
+    "src_hash": "52d221e336eda58b39fab73ac5f9bdc3",
+    "text": "Nu ești demn să călătorești după vuietul leului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:45.585631Z"
+  },
+  "scripts.actions_anthill.say_1": {
+    "src_hash": "ff3a265e2ed78f4cc1477953f31b9f8c",
+    "text": "Ai eliberat furnici pe deal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:45.585996Z"
+  },
+  "scripts.actions_anthill.say_2": {
+    "src_hash": "da0e44599e9499c33f6c336db4e60bce",
+    "text": "Umplei ulciorul cu furnici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:45.586367Z"
+  },
+  "scripts.actions_ashes.msg_1": {
+    "src_hash": "21e550e5f4f89244b713ae54210395c9",
+    "text": "Cenușa se învârte cu o viață proprie, amestecându-se cu scânteile altarului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:45.586877Z"
+  },
+  "scripts.actions_augerfun.msg_1": {
+    "src_hash": "329ac6c30c0a8615e6c52a1e7d8fa9a7",
+    "text": "Adunați niște lapte de catus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:50.503538Z"
+  },
+  "scripts.actions_baeloc_nictros.say_1": {
+    "src_hash": "77115bdf1aacec24fea8321121ecef8a",
+    "text": "Acum luptam impreuna, frate!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:50.503845Z"
+  },
+  "scripts.actions_baeloc_nictros.say_2": {
+    "src_hash": "2ca54bf985301e93ef3c1c13b3642af8",
+    "text": "Frate! Am nevoie de ajutorul tău!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:50.504169Z"
+  },
+  "scripts.actions_baeloc_nictros.say_3": {
+    "src_hash": "18c465b0d912872ad6966279410ab081",
+    "text": "Randul meu! Lasă-mă să-ți arăt abilitățile mele!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:50.504516Z"
+  },
+  "scripts.actions_baeloc_nictros.say_4": {
+    "src_hash": "08b0bacc66c2fa0c9392ebf9059cb977",
+    "text": "Mă voi întoarce acum. Să vedem cum te descurci pe fratele meu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:50.504912Z"
+  },
+  "scripts.actions_baeloc_nictros.say_5": {
+    "src_hash": "1b3797c5643c65df92c2377944c8cbfa",
+    "text": "Oh, omule! Întotdeauna ai distracția!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:54.315595Z"
+  },
+  "scripts.actions_baeloc_nictros.say_6": {
+    "src_hash": "7cc5e83ba24355f5a08d8daf4e52cd48",
+    "text": "Într-adevăr! A trecut ceva timp! Ca cel mai mare cer dreptul la prima bătălie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:54.316075Z"
+  },
+  "scripts.actions_baeloc_nictros.say_7": {
+    "src_hash": "dac44f98b441ac23a954aeea2751d1fd",
+    "text": "Ah uite fratele meu! Challengers! După tot acest timp, în sfârșit, o șansă de a ne demonstra abilitățile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:54.316582Z"
+  },
+  "scripts.actions_bait.msg_1": {
+    "src_hash": "c109ee72a6a6e0a1273e4e0449858339",
+    "text": "Vedeți {} sub suprafață{}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:54.316905Z"
+  },
+  "scripts.actions_bait.msg_2": {
+    "src_hash": "a0304a59736a9e5c7d77ebb88d3fd7b3",
+    "text": "Hopa! L-ai pierdut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:54.317145Z"
+  },
+  "scripts.actions_bait.msg_3": {
+    "src_hash": "73c8c82252387a98c60ce07b12cea6e3",
+    "text": "Vedeți apă cât de departe poate ajunge cu ochii. Niciun șarpe de mare la vedere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:58.030432Z"
+  },
+  "scripts.actions_bait.msg_4": {
+    "src_hash": "9bf585829f1e4bc7f4375831e888feec",
+    "text": "Se scapă! Ar trebui să-i spui căpitanului să câștige viteză!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:58.030917Z"
+  },
+  "scripts.actions_bait.msg_5": {
+    "src_hash": "b2b42110da55a7d88e116708a87b0316",
+    "text": "Există mai multe umbre sub suprafață. Aceasta trebuie să fie locația potrivită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:58.031366Z"
+  },
+  "scripts.actions_basin.msg_1": {
+    "src_hash": "9118efc5a37e978aea348be87f8b77e4",
+    "text": "Găsești un simbol auriu în fundul bazinului plin de sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:58.031762Z"
+  },
+  "scripts.actions_bazir_mirror.say_1": {
+    "src_hash": "44fb60910bc7ec32a99ba7541c946377",
+    "text": "Frumusețea trebuie răsplătită! Muahahaha!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:58.032189Z"
+  },
+  "scripts.actions_beer.say_1": {
+    "src_hash": "1fdd58cb88c7a872d667ea9d6dfaecb7",
+    "text": "Înghiţitură!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:01.350925Z"
+  },
+  "scripts.actions_bird_cage.msg_1": {
+    "src_hash": "7f2ce76d0f0ebe25d4d5096035d7d5e5",
+    "text": "Papagalul din peșteră poate fi dur, dar cumva nu a putut rezista acestei cușcă specială. Sau poate ai fost tu...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:01.351503Z"
+  },
+  "scripts.actions_bird_cage.msg_2": {
+    "src_hash": "9ed535ea500b3fe754627bc9aad2a44c",
+    "text": "Deschideți cușca și lăsați papagalul din peșteră să se plimbe liber!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:01.351913Z"
+  },
+  "scripts.actions_bone.msg_1": {
+    "src_hash": "f63b4574be546a581f1d1191a64be28b",
+    "text": "Printre grămada de diverse oase găsiți o parte mare, goală, asemănătoare unei țevi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:01.352376Z"
+  },
+  "scripts.actions_bone.msg_2": {
+    "src_hash": "80a2909ce1f004d65194f1db48dca775",
+    "text": "Răscoliți grămada, dar nu reușiți să găsiți piese utile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:01.352762Z"
+  },
+  "scripts.actions_bone_flute.say_1": {
+    "src_hash": "3707e9f3c644698baff56a79ea20bedc",
+    "text": "Acesta încă nu vrea să dezvăluie dacă este animalul tău spiritual.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:03.284638Z"
+  },
+  "scripts.actions_bone_flute.say_2": {
+    "src_hash": "0a763b1c9acc129852d0e761f3db135a",
+    "text": "Acesta și-a clătinat din cap. Asta înseamnă probabil că nu este animalul tău spiritual.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:03.285140Z"
   }
 }

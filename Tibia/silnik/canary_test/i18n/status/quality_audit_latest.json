@@ -1,32 +1,18 @@
 {
-  "timestamp": "2026-02-17T02:14:54.950907Z",
+  "timestamp": "2026-02-17T02:16:09.006001Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 21,
   "issues_by_type": {
-    "identical_to_en": 2,
-    "identical_to_en_exempt": 45,
+    "identical_to_en_exempt": 12,
     "artifact_token": 5,
-    "suspicious_log_high": 89,
-    "suspicious_log_low": 52,
-    "suspicious_log_critical": 59,
+    "identical_to_en": 16,
+    "suspicious_log_critical": 20,
+    "suspicious_log_high": 131,
+    "suspicious_log_low": 49,
     "suspicious_rejected_critical": 173,
     "suspicious_rejected_high": 27
   },
   "issues": [
-    {
-      "key": "questlog.quest_11.mission_63.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Fazzrah",
-      "translated": "Paw and Fur: Fazzrah"
-    },
-    {
-      "key": "questlog.quest_11.mission_64.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Tromphonyte",
-      "translated": "Paw and Fur: Tromphonyte"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -61,8 +47,120 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "raid.lizards.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Lizards",
+      "translated": "Lizards"
+    },
+    {
+      "key": "raid.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.sheng.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Sheng",
+      "translated": "Sheng"
+    },
+    {
+      "key": "raid.munster.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "raid.teleskor.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "raid.furyosa.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "raid.chayenne.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "raid.omrafir.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.yeti.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "raid.gargoyle.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "raid.nomad.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "raid.cobra.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.terramite.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

@@ -25846,5 +25846,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:07:52.900862Z"
+  },
+  "scripts.movements_teleport_main.say_2": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:17.774961Z"
+  },
+  "player.stash.dialog.capacity_partial": {
+    "src_hash": "63e2e58c3115b94aa157bc6e68373c29",
+    "text": "Недостаточно мощности. Не удалось получить все элементы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:19.099716Z"
+  },
+  "player.stash.dialog.space_none": {
+    "src_hash": "916831e0f3526818bd2a785e5cd7847c",
+    "text": "Недостаточно места. Вы не смогли получить ни одного предмета.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:19.100151Z"
+  },
+  "player.stash.dialog.space_partial": {
+    "src_hash": "7f3316bc649e57e6cecd37bbecd57a60",
+    "text": "Недостаточно места. Не удалось получить все элементы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:19.100547Z"
+  },
+  "player.stash.retrieved": {
+    "src_hash": "b509c8ee23315762bc6dc269eaec4a56",
+    "text": "Получено {0}x {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:19.101062Z"
+  },
+  "player.status.cleanse": {
+    "src_hash": "a739f076aeffed46adfa40c6071870ac",
+    "text": "Вы больше не {0}. (очищающее заклинание)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:19.101453Z"
+  },
+  "player.task.dialog.action_error": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "При обработке вашего действия произошла ошибка. Попробуйте снова открыть окно задач.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:23.512980Z"
+  },
+  "player.task.dialog.already_active": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "У вас уже есть активный монстр в этом слоте для охоты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:23.513438Z"
+  },
+  "player.task.dialog.cards_reward_reroll": {
+    "src_hash": "eb2d9eadbbdac5fec6d5325028387846",
+    "text": "У вас недостаточно карт добычи, чтобы изменить редкость награды за задание.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:23.513904Z"
+  },
+  "player.task.dialog.cards_selection": {
+    "src_hash": "001d3eac2d44cadded9ef664c14fd73a",
+    "text": "У вас недостаточно карт добычи, чтобы выбрать существо из списка для этого слота охоты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:23.514481Z"
+  },
+  "player.task.dialog.empty_slot": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Вы не можете получить награду за задание, имея пустой слот для поиска заданий.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:23.514944Z"
+  },
+  "player.task.dialog.money_cancel": {
+    "src_hash": "a15fe3c87827bbc30365724e8902e44c",
+    "text": "У вас недостаточно денег, чтобы отменить текущий поиск задач.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:26.130384Z"
+  },
+  "player.task.dialog.money_reroll": {
+    "src_hash": "5b517b5ad2c8df4d56c10c931129df80",
+    "text": "У вас недостаточно денег, чтобы перезапустить слот поиска заданий.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:26.131333Z"
+  },
+  "player.task.dialog.reward_bonus_100": {
+    "src_hash": "7af418ebe3a79c75affce73d20b599c0",
+    "text": "Поздравляем! Вы заработали {0} очков охотничьих заданий, включая 100% бонус.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:26.132340Z"
+  },
+  "player.task.dialog.reward_bonus_50": {
+    "src_hash": "8950d01dc0d85d8256d7311b2da6fcd8",
+    "text": "Поздравляем! Вы заработали {0} очков охотничьих заданий, включая бонус 50%.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:26.133316Z"
+  },
+  "player.task.dialog.reward_bonus_none": {
+    "src_hash": "ffed1d4d3510028fc725b3ac5475317e",
+    "text": "Поздравляем! Вы заработали {0} очков охотничьих заданий.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:26.134209Z"
+  },
+  "player.task.dialog.reward_error": {
+    "src_hash": "069c6929f41f06c26f787cc96c1d4219",
+    "text": "Произошла ошибка при обработке награды за охоту за заданиями. Пожалуйста, попробуйте снова открыть окно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:28.095801Z"
+  },
+  "player.task.dialog.unlock_store": {
+    "src_hash": "3d020c89b8873a1ae84afb0024281f73",
+    "text": "Чтобы разблокировать этот слот для поиска заданий, вы должны сначала купить его в магазине.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:15:28.096294Z"
   }
 }

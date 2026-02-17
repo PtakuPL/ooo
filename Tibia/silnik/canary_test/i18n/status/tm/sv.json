@@ -28286,5 +28286,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:03:29.422959Z"
+  },
+  "npc.ikassis.say_2": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Du är inte på det uppdraget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.302833Z"
+  },
+  "npc.imbul.stdmod_2": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Kanske en annan gång.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.304611Z"
+  },
+  "npc.inkaef.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Så du ber mig om en {{}} för att börja ditt äventyr?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.312455Z"
+  },
+  "npc.inkaef.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Vad? Jag har redan gett dig en {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.312908Z"
+  },
+  "npc.inkaef.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Okej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.313217Z"
+  },
+  "npc.iptar-sin.stdmod_2": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.315632Z"
+  },
+  "npc.iptar_sin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.316465Z"
+  },
+  "npc.iptar_sin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.317112Z"
+  },
+  "npc.iptar_sin.stdmod_11": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.317538Z"
+  },
+  "npc.iptar_sin.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.317909Z"
+  },
+  "npc.iptar_sin.stdmod_14": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.318588Z"
+  },
+  "npc.iptar_sin.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.319074Z"
+  },
+  "npc.iptar_sin.stdmod_16": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.319461Z"
+  },
+  "npc.iptar_sin.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.320108Z"
+  },
+  "npc.iptar_sin.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.320927Z"
+  },
+  "npc.iptar_sin.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.321979Z"
+  },
+  "npc.iptar_sin.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.322739Z"
+  },
+  "npc.iptar_sin.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.323299Z"
+  },
+  "npc.iptar_sin.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.323932Z"
+  },
+  "npc.iptar_sin.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.324655Z"
+  },
+  "npc.iptar_sin.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.325341Z"
+  },
+  "npc.iptar_sin.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.326032Z"
+  },
+  "npc.iptar_sin.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.326578Z"
+  },
+  "npc.iptar_sin.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.327201Z"
+  },
+  "npc.iptar_sin.stdmod_3": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, jag fick besked om vad jag skulle göra. Är du beredd att ta emot min bönelinje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.327766Z"
+  },
+  "npc.iptar_sin.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.328336Z"
+  },
+  "npc.iptar_sin.stdmod_7": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Du har redan fått min bönrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.328927Z"
+  },
+  "npc.iptar_sin.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.329377Z"
+  },
+  "npc.iptar_sin.stdmod_9": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.329831Z"
+  },
+  "npc.irea.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.330741Z"
+  },
+  "npc.irea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.331066Z"
+  },
+  "npc.irea.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.331419Z"
+  },
+  "npc.irmana.say_16": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.332899Z"
+  },
+  "npc.irmana.say_23": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.333592Z"
+  },
+  "npc.irmana.say_30": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.334413Z"
+  },
+  "npc.irmana.say_31": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Du är inte på det uppdraget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.334773Z"
+  },
+  "npc.irmana.say_8": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.335827Z"
+  },
+  "npc.ishebad.farewell_msg_1": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "Hejdå, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.336365Z"
+  },
+  "npc.ishebad.walkaway_msg_1": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "Hejdå, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.336970Z"
+  },
+  "npc.ishina.farewell_msg_1": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Daramans välsignelser och hejdå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.337374Z"
+  },
+  "npc.ishina.greet_msg_1": {
+    "src_hash": "c0bddf3746d07eca97d3a84bb9d04884",
+    "text": "Var hälsad, |PLAYERNAME|. Vilken av mina fina pärlor gör du {need}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:07.337846Z"
   }
 }

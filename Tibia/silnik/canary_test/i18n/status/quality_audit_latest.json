@@ -1,108 +1,18 @@
 {
-  "timestamp": "2026-02-17T09:25:08.928836Z",
+  "timestamp": "2026-02-17T09:26:15.791056Z",
   "checked_entries": 100,
-  "issues_found": 34,
+  "issues_found": 26,
   "issues_by_type": {
-    "identical_to_en": 18,
-    "identical_to_en_exempt": 2,
+    "identical_to_en": 10,
+    "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "suspicious_log_high": 174,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 165,
-    "suspicious_rejected_high": 35
+    "suspicious_log_high": 151,
+    "suspicious_log_critical": 35,
+    "suspicious_log_low": 14,
+    "suspicious_rejected_critical": 169,
+    "suspicious_rejected_high": 31
   },
   "issues": [
-    {
-      "key": "monster.ghazbaran.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
     {
       "key": "monster.the_welter.desc",
       "lang": "it",
@@ -249,6 +159,41 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.dharalion.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.dharalion.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.apocalypse.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.apocalypse.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
     }
   ],
   "threshold": 10,

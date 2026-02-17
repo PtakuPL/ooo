@@ -57694,5 +57694,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:24:12.504960Z"
+  },
+  "monster.wild_warrior.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Războinic sălbatic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:25:35.979680Z"
+  },
+  "monster.infected_weeper.name": {
+    "src_hash": "e78abf93807f663dcceb999ec49d78e0",
+    "text": "Plângător infectat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:25:54.555427Z"
+  },
+  "monster.infected_weeper.desc": {
+    "src_hash": "c00b582e66f22d85b603c17a7b99a6f6",
+    "text": "un plângător infectat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:00.630426Z"
+  },
+  "monster.goggle_cake.name": {
+    "src_hash": "16d3d3c84b237ee0c2690096af7c309d",
+    "text": "Tort cu ochelari",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:00.631133Z"
+  },
+  "monster.goggle_cake.desc": {
+    "src_hash": "b5f06dc3fbe69f4c3088774574651554",
+    "text": "un tort de ochelari",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:00.631445Z"
+  },
+  "monster.goggle_cake.voice_1": {
+    "src_hash": "4d1f05dfce6f079a295d9d3c09f746f4",
+    "text": "Dă-mi dulciurile tale! Sunt ai mei de devorat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:26:00.631830Z"
   }
 }

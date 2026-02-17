@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 49.2,
+  "coverage_pct": 49.7,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:58:19.685060Z",
+  "checked_at": "2026-02-17T09:27:18.661975Z",
   "issues_total": 427,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -146,6 +146,15 @@
       "en": "Berserker",
       "pl": "To go berserk",
       "lang": "Berserker"
+    },
+    {
+      "key": "achievement.246.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Whistle-Blower",
+      "pl": "I.-Blower",
+      "lang": "Whistle-Blower"
     },
     {
       "key": "client.entergame.text1",
@@ -290,6 +299,24 @@
       "en": "event.player.msg_move_fast",
       "pl": "Nie możesz tak szybko przenosić tego przedmiotu.",
       "lang": "event.player.msg_move_fast"
+    },
+    {
+      "key": "web.tpl.guilds.view.set_6",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_invitecharacter",
+      "pl": "_sbutton_inviteznak",
+      "lang": "_sbutton_invitecharacter"
+    },
+    {
+      "key": "web.tpl.guilds.view.set_10",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_leaveguild",
+      "pl": "_sbutton_opuśćgildię",
+      "lang": "_sbutton_leaveguild"
     },
     {
       "key": "item.10.name",
@@ -839,15 +866,6 @@
       "en": "Gnoorr!",
       "pl": "GNieorr!",
       "lang": "Gnoorr!"
-    },
-    {
-      "key": "monster.water_buffalo.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<snort>",
-      "pl": "<sniert>",
-      "lang": "<snort>"
     },
     {
       "key": "monster.hyaena.voice_1",
@@ -3719,24 +3737,6 @@
       "en": "Mmmm.",
       "pl": "Mmm.",
       "lang": "Mmmm."
-    },
-    {
-      "key": "scripts.malofur_explosion.say_4",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BOOOM!",
-      "pl": "BUM!",
-      "lang": "BOOOM!"
-    },
-    {
-      "key": "scripts.malofur_explosion.say_5",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BOOM!",
-      "pl": "WYSIĘGNIK!",
-      "lang": "BOOM!"
     }
   ],
   "length_ratio_issues": [
@@ -3914,8 +3914,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 1,
-    "skipped": 79,
+    "applied": 0,
+    "skipped": 80,
     "errors": 0
   }
 }

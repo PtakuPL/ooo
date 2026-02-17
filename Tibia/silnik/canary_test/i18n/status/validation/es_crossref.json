@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:57:36.208697Z",
+  "checked_at": "2026-02-17T09:26:38.248718Z",
   "issues_total": 515,
   "issues_by_type": {
     "consistency_in_language": 70,
@@ -1774,15 +1774,6 @@
       "en": "Chchch",
       "pl": "Chch",
       "lang": "Chchch"
-    },
-    {
-      "key": "monster.husky.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Husky",
-      "pl": "Ochrypły",
-      "lang": "Husky"
     },
     {
       "key": "monster.dromedary.name",
@@ -4663,6 +4654,15 @@
       "en": "ON",
       "pl": "NA",
       "lang": "ON"
+    },
+    {
+      "key": "scripts.actions_pyramids2.msg_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<screeeech> <squeak> <squeaaaaal>",
+      "pl": "<skrzyp> <pisk> <przeciągły pisk>",
+      "lang": "<screeeech> <squeak> <squeaaaaal>"
     }
   ],
   "length_ratio_issues": [

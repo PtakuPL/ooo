@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:27:51.289898Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T06:29:52.924233Z",
+  "language": "pl",
+  "json_file": "quests.json",
+  "translated": 44,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "quests.soul_war.floor_third_fight",
+      "en": "You've gained access to the third floor. You can now fight with the Goshnar's Cruelty.",
+      "translated": "Uzyskałeś dostęp do trzeciego piętra. Możesz teraz walczyć z Okrucieństwem Goshnara.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.soul_war.greedy_maw_cooldown",
+      "en": "You need to wait {0} more seconds before using the greedy maw again.",
+      "translated": "Musisz poczekać {0} więcej sekund, zanim ponownie użyjesz chciwej paszczy.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.soul_war.hatred_defeat",
+      "en": "You have defeated Goshnar's Hatred!",
+      "translated": "Pokonałeś Nienawiść Goshnara!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "quests.soul_war.lose_taint",
+      "en": "You lose taint level: {0}, name: {1}",
+      "translated": "Tracisz poziom skażenia: {0}, imię: {1}",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "quests.soul_war.malice_defeat",
+      "en": "You have defeated Goshnar's Malice!",
+      "translated": "Pokonałeś Złośliwość Goshnara!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "quests.soul_war.megalomania_defeat",
+      "en": "You have defeated Goshnar's Megalomania!",
+      "translated": "Pokonałeś megalomanię Goshnara!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "quests.soul_war.msg_1",
+      "en": "The dread starts to torment you! Don't let dread level reach critical value!",
+      "translated": "Strach zaczyna cię dręczyć! Nie pozwól, aby poziom strachu osiągnął wartość krytyczną!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "quests.soul_war.msg_2",
+      "en": "The dread's torment becomes unbearable!",
+      "translated": "Męka strachu staje się nie do zniesienia!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "quests.soul_war.msg_3",
+      "en": "The Dread's torment begins to tear you apart!",
+      "translated": "Męka Strachu zaczyna cię rozdzierać!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "quests.soul_war.msg_4",
+      "en": "The dread's torment is killing you!",
+      "translated": "Męka strachu cię zabija!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "quests.soul_war.msg_5",
+      "en": "The dread's torment is now lethal!",
+      "translated": "Męka strachu jest teraz zabójcza!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "quests.soul_war.new_taint",
+      "en": "You new taint level is: {0}, name: {1}",
+      "translated": "Twój nowy poziom skażenia to: {0}, imię: {1}",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "quests.soul_war.no_floor_access",
+      "en": "You don't have access to this floor yet. You have collected {0}/{1}, and need {2} more pulsating energies to gain access.",
+      "translated": "Nie masz jeszcze dostępu do tego piętra. Zebrałeś {0}/{1} i potrzebujesz {2} więcej pulsujących energii, aby uzyskać dostęp.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "quests.soul_war.ooze_calm",
+      "en": "The ooze calms your dread...",
+      "translated": "Śluz uspokaja twój strach...",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.soul_war.ooze_calm_vulnerable",
+      "en": "The ooze calms your dread but leaves you vulnerable to phantasmal attacks!",
+      "translated": "Szlam uspokaja twój strach, ale pozostawia cię podatnym na fantazmatyczne ataki!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.soul_war.removed_taint",
+      "en": "Removed taint level: {0}, name: {1} from player: {2}",
+      "translated": "Usunięto poziom skażenia: {0}, imię: {1} od gracza: {2}",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.soul_war.shrine_already_activated",
+      "en": "You have already activated this shrine.",
+      "translated": "Aktywowałeś już tę świątynię.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "quests.soul_war.soul_fire_failed",
+      "en": "You failed to stomp out the soul fire!",
+      "translated": "Nie udało ci się zdusić ognia duszy!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.soul_war.soul_fire_recover",
+      "en": "The soul fire was stomped out in time! Your soul will now have to recover before you can do this again.",
+      "translated": "Ogień duszy został w porę zgaszony! Twoja dusza będzie teraz musiała zregenerować się, zanim będziesz mogła zrobić to ponownie.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.soul_war.soul_fire_stomped",
+      "en": "The soul fire was stomped out in time!",
+      "translated": "Ogień duszy został w porę zgaszony!",
+      "source": "google_translate"
     }
   ]
 }

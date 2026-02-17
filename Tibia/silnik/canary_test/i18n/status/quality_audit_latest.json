@@ -1,60 +1,18 @@
 {
-  "timestamp": "2026-02-17T06:27:52.402023Z",
+  "timestamp": "2026-02-17T06:29:56.427540Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 11,
+    "identical_to_en": 4,
+    "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "suspicious_log_high": 136,
-    "suspicious_log_critical": 60,
+    "suspicious_log_high": 135,
+    "suspicious_log_critical": 61,
     "suspicious_log_low": 4,
-    "suspicious_rejected_critical": 163,
-    "suspicious_rejected_high": 37
+    "suspicious_rejected_critical": 164,
+    "suspicious_rejected_high": 36
   },
   "issues": [
-    {
-      "key": "monster.hunter.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Hunter",
-      "translated": "Hunter"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
     {
       "key": "spell.terra_burst.words",
       "lang": "pl",

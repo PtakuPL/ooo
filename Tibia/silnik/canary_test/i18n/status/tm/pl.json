@@ -114222,5 +114222,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:27:36.762307Z"
+  },
+  "quests.the_secret_library_quest.you_are_still_exhausted_from_your": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Nadal jesteś wyczerpany ostatnią bitwą.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:05.943856Z"
+  },
+  "quests.soul_war.activate_all_shrines": {
+    "src_hash": "5a24207bc65fee6e4020effcdbe4730d",
+    "text": "Musisz jeszcze aktywować wszystkie kapliczki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:12.914190Z"
+  },
+  "quests.soul_war.added_taint": {
+    "src_hash": "0ab268634aab5f8cd2772c06888f9cb8",
+    "text": "Dodano poziom skażenia: {0}, imię: {1} do gracza: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:12.914608Z"
+  },
+  "quests.soul_war.already_has_access": {
+    "src_hash": "ce37d4686ba291522fb92da66d52c69f",
+    "text": "Uzyskałeś już dostęp do walki z Okrucieństwem Goshnara.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:12.915041Z"
+  },
+  "quests.soul_war.boss_room_access": {
+    "src_hash": "18142adc7962225aad0958a9ef16b78e",
+    "text": "Możesz już dostać się do pokoju szefa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:12.915380Z"
+  },
+  "quests.soul_war.cleansed_cooldown": {
+    "src_hash": "03c886bb82d39577a96a9f7935d65faa",
+    "text": "Musisz poczekać {0} więcej sekund przed ponownym użyciem oczyszczonego produktu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:12.915817Z"
+  },
+  "quests.soul_war.cooldown_wait": {
+    "src_hash": "64ff2090c5bc2503480642f6bafe96a6",
+    "text": "Aby ponownie użyć tego przedmiotu, musisz poczekać {0} sekund.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:20.278813Z"
+  },
+  "quests.soul_war.cruelty_defeat": {
+    "src_hash": "7b608f7f8a817501edd6cdbcf55cfc24",
+    "text": "Pokonałeś Okrucieństwo Goshnara!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:20.279296Z"
+  },
+  "quests.soul_war.current_taint": {
+    "src_hash": "2a48966088a62a2423b05e8f569e36cc",
+    "text": "Twój obecny poziom skażenia to: {0} imię: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:20.279673Z"
+  },
+  "quests.soul_war.dread_killing": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Męka strachu cię zabija!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:20.279986Z"
+  },
+  "quests.soul_war.dread_lethal": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Męka strachu jest teraz zabójcza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:20.280342Z"
+  },
+  "quests.soul_war.dread_start": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Strach zaczyna cię dręczyć! Nie pozwól, aby poziom strachu osiągnął wartość krytyczną!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:27.071721Z"
+  },
+  "quests.soul_war.dread_tear_apart": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Męka Strachu zaczyna cię rozdzierać!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:27.072088Z"
+  },
+  "quests.soul_war.dread_unbearable": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Męka strachu staje się nie do zniesienia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:27.072434Z"
+  },
+  "quests.soul_war.energy_needed": {
+    "src_hash": "e08db01f22b91ec4f011e924f3838baf",
+    "text": "Potrzebujesz {0} więcej energii, aby kontynuować.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:27.072790Z"
+  },
+  "quests.soul_war.floor_access_first": {
+    "src_hash": "6405b891cc05a54afffbd45264ac0231",
+    "text": "Uzyskałeś dostęp na pierwsze piętro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:27.073128Z"
+  },
+  "quests.soul_war.floor_access_second": {
+    "src_hash": "fb8ef309afd510db8bfb32044bc6033e",
+    "text": "Uzyskałeś dostęp do drugiego piętra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:32.789668Z"
+  },
+  "quests.soul_war.floor_access_third": {
+    "src_hash": "16a7701add0525d575c423179eac5ccf",
+    "text": "Uzyskałeś dostęp do trzeciego piętra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:32.790138Z"
+  },
+  "quests.soul_war.floor_first_continue": {
+    "src_hash": "663c4245151399c9d94e481bcab59b6e",
+    "text": "Uzyskałeś dostęp na pierwsze piętro. Kontynuuj zbieranie Pulsujących Energii, aby uzyskać dalszy dostęp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:32.790674Z"
+  },
+  "quests.soul_war.floor_second_continue": {
+    "src_hash": "320ea4789c114f2b8b618dffe5f1c4d7",
+    "text": "Uzyskałeś dostęp do drugiego piętra. Kontynuuj zbieranie Pulsujących Energii, aby uzyskać dalszy dostęp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:32.791180Z"
+  },
+  "quests.soul_war.floor_third_fight": {
+    "src_hash": "fa58abb3de41f9407604d7e4e368ebf0",
+    "text": "Uzyskałeś dostęp do trzeciego piętra. Możesz teraz walczyć z Okrucieństwem Goshnara.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:32.791643Z"
+  },
+  "quests.soul_war.greedy_maw_cooldown": {
+    "src_hash": "cc8bb4aca05080b59216fa941741e895",
+    "text": "Musisz poczekać {0} więcej sekund, zanim ponownie użyjesz chciwej paszczy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:39.435624Z"
+  },
+  "quests.soul_war.hatred_defeat": {
+    "src_hash": "6cd6252de7d5f1a44b498d7bf15b3fc2",
+    "text": "Pokonałeś Nienawiść Goshnara!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:39.435944Z"
+  },
+  "quests.soul_war.lose_taint": {
+    "src_hash": "019b9cf17d705eb17144d44dce22a7ee",
+    "text": "Tracisz poziom skażenia: {0}, imię: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:39.436317Z"
+  },
+  "quests.soul_war.malice_defeat": {
+    "src_hash": "de75d1edcd3e1b6ca5e343f2f8559fc4",
+    "text": "Pokonałeś Złośliwość Goshnara!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:39.436624Z"
+  },
+  "quests.soul_war.megalomania_defeat": {
+    "src_hash": "0de22219409ddfb2002e0f47ada916fd",
+    "text": "Pokonałeś megalomanię Goshnara!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:39.436928Z"
+  },
+  "quests.soul_war.msg_1": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Strach zaczyna cię dręczyć! Nie pozwól, aby poziom strachu osiągnął wartość krytyczną!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:42.299343Z"
+  },
+  "quests.soul_war.msg_2": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Męka strachu staje się nie do zniesienia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:42.299701Z"
+  },
+  "quests.soul_war.msg_3": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Męka Strachu zaczyna cię rozdzierać!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:42.300046Z"
+  },
+  "quests.soul_war.msg_4": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Męka strachu cię zabija!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:42.300353Z"
+  },
+  "quests.soul_war.msg_5": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Męka strachu jest teraz zabójcza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:42.300670Z"
+  },
+  "quests.soul_war.new_taint": {
+    "src_hash": "5bde8704eadc1a578aa1e54f0819452b",
+    "text": "Twój nowy poziom skażenia to: {0}, imię: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:48.219835Z"
+  },
+  "quests.soul_war.no_floor_access": {
+    "src_hash": "910ac2aec9931e32538bfbcd38b2166a",
+    "text": "Nie masz jeszcze dostępu do tego piętra. Zebrałeś {0}/{1} i potrzebujesz {2} więcej pulsujących energii, aby uzyskać dostęp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:48.220490Z"
+  },
+  "quests.soul_war.ooze_calm": {
+    "src_hash": "ceeb19a643ad14b9ad316c2652f3d7fc",
+    "text": "Śluz uspokaja twój strach...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:48.220811Z"
+  },
+  "quests.soul_war.ooze_calm_vulnerable": {
+    "src_hash": "fef7b5c00d069a3bb57d2e967d78170d",
+    "text": "Szlam uspokaja twój strach, ale pozostawia cię podatnym na fantazmatyczne ataki!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:48.221244Z"
+  },
+  "quests.soul_war.removed_taint": {
+    "src_hash": "b4ca643c2238b3c9d950a65336414876",
+    "text": "Usunięto poziom skażenia: {0}, imię: {1} od gracza: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:52.745642Z"
+  },
+  "quests.soul_war.shrine_already_activated": {
+    "src_hash": "5ee4b7efe20ca638e4496c2c3171670f",
+    "text": "Aktywowałeś już tę świątynię.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:52.745987Z"
+  },
+  "quests.soul_war.soul_fire_failed": {
+    "src_hash": "82c033463325eb1a31e3a014992d7f68",
+    "text": "Nie udało ci się zdusić ognia duszy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:52.746422Z"
+  },
+  "quests.soul_war.soul_fire_recover": {
+    "src_hash": "7961274a457c46f8d02245fab211a19b",
+    "text": "Ogień duszy został w porę zgaszony! Twoja dusza będzie teraz musiała zregenerować się, zanim będziesz mogła zrobić to ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:52.746975Z"
+  },
+  "quests.soul_war.soul_fire_stomped": {
+    "src_hash": "ea119539fd0cd316d470dee6a95a02c8",
+    "text": "Ogień duszy został w porę zgaszony!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:52.747343Z"
   }
 }

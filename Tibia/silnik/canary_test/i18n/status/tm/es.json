@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:44:40.565954Z"
+    "updated_at": "2026-02-17T06:28:21.496152Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:44:45.782981Z"
+    "updated_at": "2026-02-17T06:28:26.777739Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -148278,5 +148278,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:55:32.825322Z"
+  },
+  "spell.half_circle_wave_earth.name": {
+    "src_hash": "6119cff36d2cfc920810f09cc74ec0e0",
+    "text": "medio círculo onda tierra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:31.778875Z"
+  },
+  "spell.arkhothep_curse.name": {
+    "src_hash": "7263817558e5c6e6a3d5d54ecbb4ef6f",
+    "text": "maldición arkhothep",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:31.779121Z"
+  },
+  "spell.phantasm_drown.name": {
+    "src_hash": "4993cc8f2ea12369574b1e6ebfc13e00",
+    "text": "fantasma se ahoga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:31.779340Z"
+  },
+  "spell.the_welter_summon.name": {
+    "src_hash": "19d2e4a666b2d921345052f669328f73",
+    "text": "la convocatoria welter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:37.272815Z"
+  },
+  "spell.serpent_spawn_paralyze.name": {
+    "src_hash": "05c93437a320273eb2c3b266471a5129",
+    "text": "serpiente engendro paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:37.273080Z"
+  },
+  "spell.azerus_soulfire_2.name": {
+    "src_hash": "2f7705f0369e3f06ad379309ec77a11c",
+    "text": "fuego del alma azerus 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:37.273358Z"
+  },
+  "spell.energy_chain.name": {
+    "src_hash": "2eaf27edf3ddff7855f78058de225a21",
+    "text": "cadena energética",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:37.273577Z"
+  },
+  "spell.dreadbeast_skill_reducer.name": {
+    "src_hash": "c2b497df23d899cdcb697cbd388f766b",
+    "text": "reductor de habilidades de bestia aterradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:37.273846Z"
+  },
+  "spell.shaburak_wave.name": {
+    "src_hash": "55bad0eada5de59aaf0609bcf17da540",
+    "text": "ola shaburak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:42.705033Z"
+  },
+  "spell.haunter_curse.name": {
+    "src_hash": "e2cbc836d1e873ecad634cc2fba8d61a",
+    "text": "maldición del perseguidor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:42.705278Z"
+  },
+  "spell.thalas_summon.name": {
+    "src_hash": "8c0ce8b066fb35f3d9cada1ac5252ae6",
+    "text": "convocar a thalas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:42.705547Z"
+  },
+  "spell.frozen_minion_beam.name": {
+    "src_hash": "983b3c478be73cc210268020b80b071f",
+    "text": "rayo de minion congelado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:42.705833Z"
+  },
+  "spell.ghazbaran_paralyze.name": {
+    "src_hash": "ffc95bbd6e4109503f0b2fd5543bcca9",
+    "text": "ghazbaran paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:42.706062Z"
+  },
+  "spell.swampling_paralyze.name": {
+    "src_hash": "187f9e763c826cd398c2aee156e0639b",
+    "text": "paralizar el pantano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:48.577471Z"
+  },
+  "spell.young_sea_serpent_drown.name": {
+    "src_hash": "764ca22bacaeb6b9edc98558d47ab657",
+    "text": "joven serpiente marina se ahoga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:48.577762Z"
+  },
+  "spell.frozen_minion_heal.name": {
+    "src_hash": "1b84bc8d7cf8b49ea5b9806d9b45de96",
+    "text": "curación de minion congelado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:48.578033Z"
+  },
+  "spell.hot_dog_wave.name": {
+    "src_hash": "20fdb2964c3594ee00fd31ad0027290f",
+    "text": "ola de hot dog",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:48.578318Z"
+  },
+  "spell.freed_soul_spell.name": {
+    "src_hash": "f818537c9872a84833e73ebf3ba00ef7",
+    "text": "Hechizo de alma liberada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:48.578565Z"
+  },
+  "spell.koshei_the_deathless_paralyze.name": {
+    "src_hash": "41bf6b2cb644b110d5a823df13565ad9",
+    "text": "Koshei el inmortal paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:55.832062Z"
+  },
+  "spell.sulphur_spouter_wave.name": {
+    "src_hash": "de2942d350583fcc4dcfebd4fbeac000",
+    "text": "onda de chorro de azufre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:55.832335Z"
+  },
+  "spell.ice_golem_paralyze.name": {
+    "src_hash": "ba213b5fb7f8abbca7991c23a5138906",
+    "text": "golem de hielo paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:55.832581Z"
+  },
+  "spell.souleater_drown.name": {
+    "src_hash": "3505eabbf54917f7aa768f6e41df6fd4",
+    "text": "devorador de almas se ahoga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:55.832809Z"
+  },
+  "spell.big_energy_purple_wave.name": {
+    "src_hash": "2d1ce561e76e38b0cc27b28a4f79ba86",
+    "text": "gran ola de energía púrpura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:28:55.833079Z"
+  },
+  "spell.unchained_fire_explosion.name": {
+    "src_hash": "0a894173ed0a68c4c533a9cd8a14a5f3",
+    "text": "explosión de fuego desencadenada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:00.292968Z"
+  },
+  "spell.essence_of_darkness_paralyze.name": {
+    "src_hash": "dcd22e299746b15b18bc703c84906f26",
+    "text": "paralizar el engendro de medianoche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:00.293255Z"
+  },
+  "spell.katex_blood_deatht.name": {
+    "src_hash": "373dec445d7bfbd98fbe7b1a696cfe65",
+    "text": "muerte katex",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:29:00.293492Z"
   }
 }

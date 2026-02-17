@@ -2,9 +2,9 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 46970,
-  "identical_to_en": 1794,
-  "placeholder_keys": 6616,
+  "translated": 47002,
+  "identical_to_en": 1808,
+  "placeholder_keys": 6584,
   "coverage_pct": 87.7,
   "issues_total": 56,
   "issues_by_type": {
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-17T09:27:20.938050Z"
+  "validated_at": "2026-02-17T09:50:06.084004Z"
 }

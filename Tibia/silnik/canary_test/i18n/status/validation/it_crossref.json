@@ -1,15 +1,15 @@
 {
   "lang": "it",
-  "coverage_pct": 49.7,
+  "coverage_pct": 49.9,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T09:27:18.661975Z",
-  "issues_total": 427,
+  "checked_at": "2026-02-17T09:50:03.989737Z",
+  "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 8,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 19
+    "length_ratio_crosscheck": 20
   },
   "consistency_issues": [
     {
@@ -2317,15 +2317,6 @@
       "lang": "Meep!"
     },
     {
-      "key": "npc.raymond_striker.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh well.",
-      "pl": "O well.",
-      "lang": "Oh well."
-    },
-    {
       "key": "npc.richard.farewell_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3737,6 +3728,15 @@
       "en": "Mmmm.",
       "pl": "Mmm.",
       "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.malofur_explosion.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOOM!",
+      "pl": "BUM!",
+      "lang": "BOOOM!"
     }
   ],
   "length_ratio_issues": [
@@ -3910,6 +3910,15 @@
       "en_len": 15,
       "lang_ratio": 1.267,
       "pl_ratio": 3.067
+    },
+    {
+      "key": "spell.ignite.name",
+      "category": "spells",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.167,
+      "pl_ratio": 3.333
     }
   ],
   "auto_fix": {

@@ -43430,5 +43430,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:26:41.121250Z"
+  },
+  "otclient_modules.bestiary.tr_4": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.227655Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_29": {
+    "src_hash": "ce898d62ed9ca7653a01fe0c781e97e9",
+    "text": "Fisico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.269035Z"
+  },
+  "otclient_modules.prey_otui.tr_7": {
+    "src_hash": "673722e49f6904cea7636bb8e1a03eae",
+    "text": "Monete d'oro",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.339801Z"
+  },
+  "otclient_modules.quickloot.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.340333Z"
+  },
+  "otclient_modules.quickloot.tr_4": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.340722Z"
+  },
+  "otclient_modules.quickloot_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.341018Z"
+  },
+  "otclient_modules.quickloot_otui.tr_10": {
+    "src_hash": "6794e7b16f55b952b04e118ec3a7cc78",
+    "text": "Bottino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.341381Z"
+  },
+  "otclient_modules.ruleviolation.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.343104Z"
+  },
+  "otclient_modules.ruleviolation.tr_4": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.344316Z"
+  },
+  "otclient_modules.ruleviolation.tr_6": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.344686Z"
+  },
+  "otclient_modules.ruleviolation.tr_8": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.344956Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.345290Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.345483Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_8": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.346030Z"
+  },
+  "otclient_modules.serverlist.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.346310Z"
+  },
+  "otclient_modules.serverlist.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.346613Z"
+  },
+  "otclient_modules.serverlist_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.346849Z"
+  },
+  "otclient_modules.skills_otui.tr_10": {
+    "src_hash": "cd966549048ce8f5c9218fe084d59a69",
+    "text": "Drenaggio della vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.349340Z"
+  },
+  "otclient_modules.skills_otui.tr_11": {
+    "src_hash": "3c08a3a09d818558106a57fdc87133f0",
+    "text": "Annegare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.349693Z"
+  },
+  "otclient_modules.skills_otui.tr_12": {
+    "src_hash": "80dd330a5c08653498c49a219a124543",
+    "text": "Guarigione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.349956Z"
+  },
+  "otclient_modules.skills_otui.tr_13": {
+    "src_hash": "6097f89e3092d4ccd249c9d479785c1f",
+    "text": "Morte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.350222Z"
+  },
+  "otclient_modules.skills_otui.tr_14": {
+    "src_hash": "4a52699cfc95fa722ba4d48bd5c9598c",
+    "text": "Santo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.350469Z"
+  },
+  "otclient_modules.skills_otui.tr_15": {
+    "src_hash": "583d6a9fe10d672474e2cdca476113b7",
+    "text": "Ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.350722Z"
+  },
+  "otclient_modules.skills_otui.tr_16": {
+    "src_hash": "5cc28f31113ec7cd7e546b836ccae2b9",
+    "text": "Energia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.351089Z"
+  },
+  "otclient_modules.skills_otui.tr_17": {
+    "src_hash": "5cdd21c97f86686cc505e02fd32a7523",
+    "text": "Terra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.351336Z"
+  },
+  "otclient_modules.skills_otui.tr_18": {
+    "src_hash": "bd2b7e5f85a6ea65065c4ebc6d7c95bb",
+    "text": "Fuoco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.351574Z"
+  },
+  "otclient_modules.skills_otui.tr_19": {
+    "src_hash": "ce898d62ed9ca7653a01fe0c781e97e9",
+    "text": "Fisico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.351840Z"
+  },
+  "otclient_modules.skills_otui.tr_47": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.353893Z"
+  },
+  "otclient_modules.skills_otui.tr_58": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.354909Z"
+  },
+  "otclient_modules.skills_otui.tr_9": {
+    "src_hash": "f5ee8bcf58da4f2184844a4b0c5b727c",
+    "text": "manadrain",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.355486Z"
+  },
+  "otclient_modules.spelllist_otui.tr_1": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.355711Z"
+  },
+  "otclient_modules.spelllist_otui.tr_16": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.356412Z"
+  },
+  "otclient_modules.spelllist_otui.tr_2": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.356758Z"
+  },
+  "otclient_modules.spelllist_otui.tr_20": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.357344Z"
+  },
+  "otclient_modules.spelllist_otui.tr_29": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.358015Z"
+  },
+  "otclient_modules.spelllist_otui.tr_30": {
+    "src_hash": "f3f43e30c8c7d78c6ac0173515e57a00",
+    "text": "Filtri",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.358466Z"
+  },
+  "otclient_modules.spelllist_otui.tr_31": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.358681Z"
+  },
+  "otclient_modules.spelllist_otui.tr_32": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.358897Z"
+  },
+  "otclient_modules.spelllist_otui.tr_6": {
+    "src_hash": "80dd330a5c08653498c49a219a124543",
+    "text": "Guarigione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.359391Z"
+  },
+  "otclient_modules.spelllist_otui.tr_7": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Attacco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.359628Z"
+  },
+  "otclient_modules.statsbar.tr_10": {
+    "src_hash": "3535f1e07ee1a37cad48ad6cc23e7db5",
+    "text": "Abilità di combattimento con l'ascia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.360271Z"
+  },
+  "otclient_modules.statsbar.tr_11": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.360554Z"
+  },
+  "otclient_modules.statsbar.tr_12": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.360773Z"
+  },
+  "otclient_modules.statsbar.tr_7": {
+    "src_hash": "00bddc03f89260bb2a36dbb1adcb807a",
+    "text": "Abilità di combattimento a pugni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.361589Z"
+  },
+  "otclient_modules.statsbar.tr_8": {
+    "src_hash": "c943a8395cc808680641259bfbdc4921",
+    "text": "Abilità di combattimento a distanza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.361961Z"
+  },
+  "otclient_modules.statsbar.tr_9": {
+    "src_hash": "6f84b63a6480e8f117fc876ed9bdfcd1",
+    "text": "Abilità di combattimento con il club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.362350Z"
+  },
+  "otclient_modules.style_otui.tr_4": {
+    "src_hash": "673722e49f6904cea7636bb8e1a03eae",
+    "text": "Monete d'oro",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.362866Z"
+  },
+  "otclient_modules.tasks.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.363109Z"
+  },
+  "otclient_modules.tasks.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.364106Z"
+  },
+  "otclient_modules.tasks_otui.tr_4": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:32:48.364576Z"
   }
 }

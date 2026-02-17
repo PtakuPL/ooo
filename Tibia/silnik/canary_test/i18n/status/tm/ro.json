@@ -37590,5 +37590,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:28:56.879854Z"
+  },
+  "questlog.quest_11.mission_17.state_2": {
+    "src_hash": "8b000cb250f57cdac0b7218a86a6d277",
+    "text": "Ai vânat cu succes 300 de gargui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:35.654658Z"
+  },
+  "questlog.quest_11.mission_18.name": {
+    "src_hash": "1719e0816b6733121508bf3b80dffabe",
+    "text": "Paw and Fur: Ice Golems",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:35.655176Z"
+  },
+  "questlog.quest_11.mission_18.state_1": {
+    "src_hash": "492ec77864fb3c17e867eba5493c65b7",
+    "text": "Ați vânat cu succes 300 de golem de gheață. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:35.655701Z"
+  },
+  "questlog.quest_11.mission_18.state_2": {
+    "src_hash": "c075b03cca5088739b1106b916d803ef",
+    "text": "Ai vânat cu succes 300 de golem de gheață.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:42.265444Z"
+  },
+  "questlog.quest_11.mission_19.state_1": {
+    "src_hash": "7e5840e3a4160a5099577e4c6eb40fff",
+    "text": "Ai vânat cu succes 400 de cercetași Quara. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:42.266056Z"
+  },
+  "questlog.quest_11.mission_19.state_2": {
+    "src_hash": "a1721900165c17ec2018086a9746faab",
+    "text": "Ați vânat cu succes 400 de cercetăși Quara.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:42.266660Z"
+  },
+  "questlog.quest_11.mission_2.description": {
+    "src_hash": "8f111ac389e2ff25274a6224115e5886",
+    "text": "Ai fost promovat la rangul de 'Huntsman' în '__PH0__'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:42.267219Z"
+  },
+  "questlog.quest_11.mission_20.state_1": {
+    "src_hash": "4bf36bfbd458dc85f6ba9ad9f48c175a",
+    "text": "Ai vânat cu succes 400 de șobolani mutanți. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:46.021846Z"
+  },
+  "questlog.quest_11.mission_20.state_2": {
+    "src_hash": "f37a6470b122a8a17f63503b66b3cdea",
+    "text": "Ai vânat cu succes 400 de șobolani mutați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:46.022281Z"
+  },
+  "questlog.quest_11.mission_21.state_1": {
+    "src_hash": "01756531cf4e4bbc12777273b6d74f4d",
+    "text": "Ai vânat cu succes 250 de scarabei antici. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:52.794911Z"
+  },
+  "questlog.quest_11.mission_21.state_2": {
+    "src_hash": "1b11feadd36e2a6a24c1067eff867975",
+    "text": "Ați vânat cu succes 250 de scarabei antici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:52.795283Z"
+  },
+  "questlog.quest_11.mission_22.name": {
+    "src_hash": "8e4feab862f5c2da877204b68930b587",
+    "text": "Paw and Fur: Wyverns",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:52.795770Z"
+  },
+  "questlog.quest_11.mission_22.state_1": {
+    "src_hash": "9c325589daf8b7613829032a3deb93f5",
+    "text": "Ai vânat cu succes 300 de wyverne. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:52.796294Z"
+  },
+  "questlog.quest_11.mission_22.state_2": {
+    "src_hash": "030ae634eea0b345ce6d9b77dc2d0728",
+    "text": "Ai vânat cu succes 300 de wyverne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:33:52.796619Z"
   }
 }

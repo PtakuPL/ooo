@@ -110486,5 +110486,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:55:08.899009Z"
+  },
+  "cpp.returnvalue.you_may_not_attack_this_creature": {
+    "src_hash": "ba2572d24cbef516bed15f245cc5aa39",
+    "text": "Nie możesz atakować tego stworzenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:16.281296Z"
+  },
+  "cpp.returnvalue.you_may_not_attack_this_player": {
+    "src_hash": "478650ba57485ce16fa0aad78223cb5f",
+    "text": "Nie możesz atakować tego gracza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:22.545586Z"
+  },
+  "cpp.returnvalue.you_may_not_logout_during_a_fight": {
+    "src_hash": "ccfc3b3d860528a391707fcff49a64fe",
+    "text": "Nie możesz się wylogować w trakcie lub bezpośrednio po walce!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:22.545993Z"
+  },
+  "cpp.returnvalue.you_need_a_magic_item_to_cast_spell": {
+    "src_hash": "30b72a4913d05ea4606346bf7611e70b",
+    "text": "Aby rzucić to zaklęcie, potrzebujesz magicznego przedmiotu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:22.546433Z"
+  },
+  "cpp.returnvalue.you_need_a_weapon_to_use_this_spell": {
+    "src_hash": "1320a384410ddad3ddf300eedae3913a",
+    "text": "Aby użyć tego zaklęcia, musisz wyposażyć się w broń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:22.546803Z"
+  },
+  "cpp.returnvalue.you_need_to_learn_this_spell": {
+    "src_hash": "ddd4885cab1add5fa49500acc561a165",
+    "text": "Najpierw musisz nauczyć się tego zaklęcia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:22.547133Z"
+  },
+  "cpp.returnvalue.you_need_to_split_your_spears": {
+    "src_hash": "fde85bbd329d34fd89749a6c4f852573",
+    "text": "Najpierw musisz rozdzielić włócznie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:30.373205Z"
+  },
+  "cpp.returnvalue.your_vocation_cannot_use_this_spell": {
+    "src_hash": "f64645b369a9eac675c6864b38298949",
+    "text": "Twoje powołanie nie może używać tego zaklęcia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:30.373564Z"
+  },
+  "cpp.skill.critical_extra_damage": {
+    "src_hash": "900584226ffc49a096d33fb6b44eb517",
+    "text": "dodatkowe obrażenia krytyczne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:30.373830Z"
+  },
+  "cpp.skill.critical_hit_chance": {
+    "src_hash": "54bedfaa47b43f8b60821d286863a061",
+    "text": "szansa na trafienie krytyczne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:30.374138Z"
+  },
+  "cpp.tile.cant_see": {
+    "src_hash": "6cd7ca4cd7012b486ff1a12c9764c847",
+    "text": "Nie wiesz dlaczego, ale nic nie widzisz!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:30.374477Z"
+  },
+  "cpp.title.desc_21": {
+    "src_hash": "54038b2b86818d645f712addc6bbc455",
+    "text": "Najwyższy poziom w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:38.973168Z"
+  },
+  "cpp.title.desc_22": {
+    "src_hash": "36437bc97e19d73e8813ec6a1099fba6",
+    "text": "Najwyższy wynik zgromadzonych punktów bossa w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:38.973575Z"
+  },
+  "cpp.title.desc_23": {
+    "src_hash": "d0d6fcb3fad81c4f4bbf45c86e886bf1",
+    "text": "Najwyższy wynik za zabicie Goshnara i jego aspektów w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:38.973992Z"
+  },
+  "cpp.title.desc_24": {
+    "src_hash": "35230c411768c20fb3b7103746b55755",
+    "text": "Najwyższy poziom łowienia w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:38.974426Z"
+  },
+  "cpp.title.desc_25": {
+    "src_hash": "f416aec5d0e8c2379e7679d30ed5426d",
+    "text": "Najwyższy poziom magii w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:38.974769Z"
+  },
+  "cpp.title.desc_26": {
+    "src_hash": "a1b7e287f6dc822a2843de88e562c2f2",
+    "text": "Najwyższy poziom dystansu w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:46.771039Z"
+  },
+  "cpp.title.desc_27": {
+    "src_hash": "3710283b7fbe630969864aa011a2c960",
+    "text": "Najwyższy poziom topora w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:46.771396Z"
+  },
+  "cpp.title.desc_28": {
+    "src_hash": "c1ddec7f528615b0d0ea21d68c025736",
+    "text": "Najwyższy poziom klubowy w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:46.771734Z"
+  },
+  "cpp.title.desc_29": {
+    "src_hash": "1a9c264335645660a5a8c416b5f9fc93",
+    "text": "Najwyższy poziom pięści w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:46.772069Z"
+  },
+  "cpp.title.desc_30": {
+    "src_hash": "f24c628527b3db8af91bc42a1de228fd",
+    "text": "Najwyższy poziom ochrony w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:46.772409Z"
+  },
+  "cpp.title.desc_31": {
+    "src_hash": "5b114579c3ac23fb38466124eff7319e",
+    "text": "Najwyższy poziom miecza w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:54.159786Z"
+  },
+  "cpp.title.desc_32": {
+    "src_hash": "a382e6ef342d9fa5a18122ff2f7622c4",
+    "text": "Najwyższy wynik zgromadzonych punktów uroku w świecie postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:54.160298Z"
+  },
+  "cpp.title.desc_33": {
+    "src_hash": "277e1e435496bb042f53a0173467e4df",
+    "text": "Ukończono najnowszą rotację Tibiadrome w pierwszej piątce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:54.161141Z"
+  },
+  "cpp.title.desc_36": {
+    "src_hash": "fa3a41f234ba51573981b1873ebba7f7",
+    "text": "Odblokowano wszystkie wpisy amfibii Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:00:54.161743Z"
+  },
+  "cpp.title.desc_37": {
+    "src_hash": "328998a03751d8c5d422282871d77387",
+    "text": "Odblokowano wszystkie wpisy Birda Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:01.283334Z"
+  },
+  "cpp.title.desc_38": {
+    "src_hash": "454be888c75869e99952415e8ab8c50a",
+    "text": "Odblokowano wszystkie wpisy Demona Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:01.283815Z"
+  },
+  "cpp.title.desc_4": {
+    "src_hash": "f1f584dde2b71e4670c983a1faebe874",
+    "text": "Odblokowano 10 lub więcej wierzchowców.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:01.284198Z"
+  },
+  "cpp.title.desc_44": {
+    "src_hash": "8a4a5d5e1095c24e770dce9b7eb21baf",
+    "text": "Odblokowano wszystkie wpisy dotyczące konstrukcji Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:01.284775Z"
+  },
+  "cpp.title.desc_47": {
+    "src_hash": "95c6640e092f700a8dc21f887c42a86a",
+    "text": "Odblokowano wszystkie wpisy dotyczące ludzi Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:09.191177Z"
+  },
+  "cpp.title.desc_5": {
+    "src_hash": "901cc5806d6c07061bea9d19d4162d6a",
+    "text": "Odblokowano 20 lub więcej wierzchowców.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:09.191520Z"
+  },
+  "cpp.title.desc_55": {
+    "src_hash": "253522b33f7582360b9783964977013f",
+    "text": "Odblokowano wszystkich bossów Nemezis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:15.755107Z"
+  },
+  "cpp.title.desc_56": {
+    "src_hash": "3f1db2c8116c61379d634014ec091b06",
+    "text": "Odblokowano 10 lub więcej bossów Archfoe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:15.755460Z"
+  },
+  "cpp.title.desc_57": {
+    "src_hash": "3a74e582000e69056e07de988586416d",
+    "text": "Odblokowano 10 lub więcej bossów Nemezis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:15.755792Z"
+  },
+  "cpp.title.desc_58": {
+    "src_hash": "239c8d63a0d00423d90e513852eb71fb",
+    "text": "Odblokowano wszystkich bossów Archfoe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:01:15.756091Z"
   }
 }

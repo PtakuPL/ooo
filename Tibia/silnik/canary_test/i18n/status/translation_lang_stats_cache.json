@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T02:19:53.163908Z",
+  "timestamp": "2026-02-17T02:20:38.945736Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 50,
   "cache_misses": 2,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771294788403762945,
+          1771294831744287182,
           1848281
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771294788403762945,
+            1771294831744287182,
             1848281
           ],
           "row": {
@@ -25419,8 +25419,8 @@
         [
           "npc.json",
           1,
-          1771293257695782203,
-          1828003
+          1771294815296297368,
+          1828047
         ],
         [
           "npclib.json",
@@ -25530,14 +25530,14 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24545,
+        "translated_keys": 24571,
         "english_copy_keys": 1913,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 45.8,
+        "completion_pct": 45.85,
         "server_keys": 49731,
-        "server_translated": 21864,
-        "server_pct": 43.96,
+        "server_translated": 21890,
+        "server_pct": 44.02,
         "client_keys": 3855,
         "client_translated": 2681,
         "client_pct": 69.55
@@ -25826,12 +25826,12 @@
         "npc.json": {
           "sig": [
             1,
-            1771293257695782203,
-            1828003
+            1771294815296297368,
+            1828047
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 6280,
+            "translated_keys": 6306,
             "english_copy_keys": 57,
             "missing_keys": 0,
             "missing_files": 0

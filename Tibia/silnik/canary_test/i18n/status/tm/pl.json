@@ -104686,5 +104686,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:18:36.205794Z"
+  },
+  "npc.maealil.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.892546Z"
+  },
+  "npc.maealil.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.901611Z"
+  },
+  "npc.maealil.stdmod_34": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.906725Z"
+  },
+  "npc.maealil.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.907721Z"
+  },
+  "npc.maealil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.908947Z"
+  },
+  "npc.maelyrra.greet_msg_1": {
+    "src_hash": "c70e4d8c31291a7d72dde8f84d33f733",
+    "text": "Błogosławieństwo natury! Witaj w krainie snów.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.911107Z"
+  },
+  "npc.maeryn.greet_msg_1": {
+    "src_hash": "dca678c81c221d0b4c21e91f9b478943",
+    "text": "Pozdrowienia, przybyszu. Ciekawe, co sprowadza cię do tego {dangerous} miejsca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.924801Z"
+  },
+  "npc.malunga.greet_msg_1": {
+    "src_hash": "dbfea65667c74ee69fd021dfe4454c77",
+    "text": "Pozdrowienia. Mam mało czasu do {spare}, więc rozmowa będzie krótka. Uczę czarodziei {spells} i kupuję trochę magicznych {ingredients}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.950329Z"
+  },
+  "npc.maris.greet_msg_1": {
+    "src_hash": "7f884ad7135562fc9dfd9b3551c3855f",
+    "text": "Mam nadzieję, że masz dobry powód, by zbliżać się do mojego {ship}, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.957956Z"
+  },
+  "npc.maris_fenrock.greet_msg_1": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Och, wciąż żyjesz. Witaj, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.961919Z"
+  },
+  "npc.maris_mistrock.greet_msg_1": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Och, wciąż żyjesz. Witaj, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.965398Z"
+  },
+  "npc.markwin.greet_msg_1": {
+    "src_hash": "bf2421b7f13057a4d06b921861e9b066",
+    "text": "Intruz! Straże, brać go!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.969891Z"
+  },
+  "npc.marlene.farewell_msg_1": {
+    "src_hash": "a2b4481e8d9b0cdfe72918bb2a79f120",
+    "text": "Do widzenia i wpadaj znów na krótką pogawędkę! *macha*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.973725Z"
+  },
+  "npc.marlene.greet_msg_1": {
+    "src_hash": "7ba8d31490e72e1f7d41e03d8cbf8e52",
+    "text": "Ach, witaj |PLAYERNAME|! Powiedz, czy słyszałeś już najnowsze wiadomości o {seamonster}, {Aneus} lub {rumours} w tym obszarze?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.975057Z"
+  },
+  "npc.marvin.greet_msg_1": {
+    "src_hash": "d34ba366d4cab92352173ff6cb7f085a",
+    "text": "Ach, przychodzisz akurat na specjalne głosowanie dotyczące najnowszego projektu {funding}. Domyślam się, że chcesz wziąć w nim udział.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.984508Z"
+  },
+  "npc.mazarius.greet_msg_1": {
+    "src_hash": "8fa02972b5987e56c5691893a73d91e2",
+    "text": "Pozdrowienia, drogi gościu. Powiedz proszę, co cię tu {brings}, do mojego skromnego domu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:14.990170Z"
+  },
+  "npc.mehkesh.greet_msg_1": {
+    "src_hash": "653a40db026dd0eea8fd4db0d5fba508",
+    "text": "Niech żałoba ci towarzyszy, |PLAYERNAME|, pielgrzymie w ciele. Jeśli szukasz mikstur, nie musisz szukać dalej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.011739Z"
+  },
+  "npc.melchior.farewell_msg_1": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Żegnaj, nieznajomy. Niech mądry Uman prowadzi twoje kroki po tej zdradliwej krainie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.013767Z"
+  },
+  "npc.melchior.walkaway_msg_1": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Żegnaj, nieznajomy. Niech mądry Uman prowadzi twoje kroki po tej zdradliwej krainie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.016907Z"
+  },
+  "npc.melfar.greet_msg_1": {
+    "src_hash": "49f8d351b6b7daffa365eac4d0e9f2f1",
+    "text": "Po prostu świetnie, kolejne zakłócenie. Tego właśnie mi trzeba.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.018026Z"
+  },
+  "npc.melfar.multi_3": {
+    "src_hash": "49f8d351b6b7daffa365eac4d0e9f2f1",
+    "text": "Po prostu świetnie, kolejne zakłócenie. Tego właśnie mi trzeba.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.019729Z"
+  },
+  "npc.melian.greet_msg_1": {
+    "src_hash": "ae65c5fcbefcac067caa83048920ebf2",
+    "text": "Pozdrowienia, podróżniku |PLAYERNAME|. Dokąd chcesz, żebym cię {fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.024954Z"
+  },
+  "npc.memech.greet_msg_1": {
+    "src_hash": "65d996f074a8494c83d5bfd9a8f8a9bf",
+    "text": "Niech żałoba ci towarzyszy, |PLAYERNAME|, pielgrzymie w ciele. Rzuć okiem na moją wspaniałą {weapons} i {armors}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.034827Z"
+  },
+  "npc.miles_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.037756Z"
+  },
+  "npc.miles_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.038298Z"
+  },
+  "npc.miles_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.040357Z"
+  },
+  "npc.mirabell.farewell_msg_1": {
+    "src_hash": "979467585be4753e1002fa2b30483c85",
+    "text": "Wróć wkrótce, podróżniku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:15.042153Z"
   }
 }

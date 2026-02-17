@@ -34150,5 +34150,173 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:20:42.641662Z"
+  },
+  "npc.a_swan.say_2": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Вы не участвуете в этой миссии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.724252Z"
+  },
+  "npc.archery.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Пожалуйста, возвращайтесь время от времени.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.917163Z"
+  },
+  "npc.archery.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Пожалуйста, возвращайтесь время от времени.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.925290Z"
+  },
+  "npc.archery_rook.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Пожалуйста, возвращайтесь время от времени.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.926662Z"
+  },
+  "npc.archery_rook.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Пожалуйста, возвращайтесь время от времени.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.928827Z"
+  },
+  "npc.arito.farewell_msg_1": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Посетите нас снова.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.935212Z"
+  },
+  "npc.arito.greet_msg_1": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Слава богу, ты вернулся!! Вы нашли....эээ...о чём мы говорили??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.937007Z"
+  },
+  "npc.arito.sendtrade_msg_1": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Конечно, просмотрите мои предложения.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.938897Z"
+  },
+  "npc.arito.walkaway_msg_1": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Посетите нас снова.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.939440Z"
+  },
+  "npc.arkulius.farewell_msg_1": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "Наконец! Хорошие вещи приходят к тем, кто ждет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.940709Z"
+  },
+  "npc.arkulius.walkaway_msg_1": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "До свидания и, пожалуйста, держитесь подальше, хорошо?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.945671Z"
+  },
+  "npc.armenius.greet_msg_1": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ах, авантюрист. Поприветствуйте и присядьте. Как я могу {serve} тебя?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.947120Z"
+  },
+  "npc.armenius.walkaway_msg_1": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Ох, нервы. Идите к крысам, которые вас вырастили.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.948488Z"
+  },
+  "npc.aruda.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "До свидания, |PLAYERNAME|. Я очень надеюсь, что мы скоро снова поговорим.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.950100Z"
+  },
+  "npc.aruda.greet_msg_1": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "О, привет |PLAYERNAME|, твои волосы выглядят великолепно! Кто сделал это для тебя?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.951609Z"
+  },
+  "npc.aruda.greet_msg_2": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "О, привет, красавчик! Приятно познакомиться, |PLAYERNAME|. С радостью, у меня есть время {chat} немного.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.953730Z"
+  },
+  "npc.aruda.walkaway_msg_1": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Я надеюсь увидеть вас в ближайшее время.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.958350Z"
+  },
+  "npc.ashari.greet_msg_1": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Привет, незнакомец! Эти пещеры, должно быть, кажутся вам странными. Интересно, что привело вас сюда... может, вас интересует какая-нибудь работа? Есть несколько задач, с которыми мне может понадобиться помощь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.960025Z"
+  },
+  "npc.atur.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Хорошего дня.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.962226Z"
+  },
+  "npc.atur.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Да? Что я могу для тебя сделать, |PLAYERNAME|? Банковский бизнес, возможно?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.963453Z"
+  },
+  "npc.atur.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Хорошего дня.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:26.964009Z"
   }
 }

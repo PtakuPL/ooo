@@ -150230,5 +150230,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:25:02.433492Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L8.2004": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<brzzl> <frzzp> <fsssh>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:29:17.166746Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.pyramids2.L18.2027": {
+    "src_hash": "76052c7bfb195c26264ca6133a637a47",
+    "text": "<screeeech> <squeak> <squeaaaaal>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:29:17.177049Z"
   }
 }

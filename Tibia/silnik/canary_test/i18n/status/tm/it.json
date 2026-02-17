@@ -5001,11 +5001,11 @@
   },
   "npc.palomino.say_5": {
     "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
-    "text": "Have a nice trip!",
+    "text": "Buon viaggio!",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:27.152206Z"
+    "updated_at": "2026-02-17T07:32:07.572914Z"
   },
   "npc.palomino.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -56870,5 +56870,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:22:20.499251Z"
+  },
+  "npc.barnabas_dee.say_5": {
+    "src_hash": "bf1d1422cb1dc2e2ae30d7e8bc951cb5",
+    "text": "No no no, mi servono 15 dosi di polline appena raccolto! Per favore, raccogli tu stesso quelle 15 dosi, per essere assolutamente sicuro di avere una qualità di prim'ordine. Temo che niente di meno basterà.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:31:58.471660Z"
+  },
+  "npc.captain_dreadnought.stdmod_21": {
+    "src_hash": "a4df7f114b82076efc150192db490d15",
+    "text": ".. città[defaultCittà].nome .. \\z\n\t .. città[defaultCittà].nome .. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:31:58.983259Z"
+  },
+  "npc.captain_haba_open_sea.starboard_4": {
+    "src_hash": "f90c654270bae4b99dff0646a94f0a4e",
+    "text": "VAI VAI VAI, SERPENTE MARINO A DRITTA!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:31:59.065863Z"
+  },
+  "npc.captain_haba_open_sea.straight_4": {
+    "src_hash": "aa8953a718d603cbdb2b662370c37b92",
+    "text": "VAI VAI VAI, SERPENTE MARINO DRITTO DAVANTI!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:31:59.072802Z"
+  },
+  "npc.elyen_ravenlock.voice_2": {
+    "src_hash": "9553d10f17158ece7c9c4b2e8cb4a40b",
+    "text": "<canti> Re Ha, Omrah, Tan Ra...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:00.314708Z"
+  },
+  "npc.palimuth.greet_msg_1": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Saluti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.553518Z"
+  },
+  "npc.palomino.greet_msg_1": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Saluti, |PLAYERNAME| Immagino che tu sia qui per il {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.569854Z"
+  },
+  "npc.palomino.say_2": {
+    "src_hash": "074e62f45ae1a69ab94b899355f02edd",
+    "text": "Vuoi noleggiare un cavallo per un giorno al prezzo di 500 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.571187Z"
+  },
+  "npc.palomino.say_3": {
+    "src_hash": "f0784f215225463661ae1ba31070c042",
+    "text": "Per prima cosa sbarazzati di quelle macchie di sangue!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.571937Z"
+  },
+  "npc.palomino.say_6": {
+    "src_hash": "d43f165f7c95c0ba67cbd5a3adee00d4",
+    "text": "Hai già un cavallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.573502Z"
+  },
+  "npc.palomino.say_7": {
+    "src_hash": "2084cc8bc49ade730b05b460faf76e7c",
+    "text": "Non hai abbastanza soldi per affittare un cavallo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.574518Z"
+  },
+  "npc.palomino.say_8": {
+    "src_hash": "72d1121f9156271e019454ccefd39ccb",
+    "text": "Te ne darò uno dei nostri esperti. Occuparsi! Cerca i rami bassi e pendenti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.575553Z"
+  },
+  "npc.paulie.greet_msg_2": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.579897Z"
+  },
+  "npc.paulie.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Non dimenticare di depositare i tuoi soldi qui nella Banca Globale prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.610532Z"
+  },
+  "npc.pemaret.say_4": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Allora no.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.613952Z"
+  },
+  "npc.pemaret.stdmod_1": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cerchi un passaggio a {0} per {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.615604Z"
+  },
+  "npc.pemaret.stdmod_2": {
+    "src_hash": "d9af9f4b1c692be2246179837c0669d5",
+    "text": "Forse più tardi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.616583Z"
+  },
+  "npc.percybald.say_23": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Prendi questa armatura come segno di grande gratitudine. Ricordiamo per sempre questo giorno, amico mio!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.627223Z"
+  },
+  "npc.percybald.say_25": {
+    "src_hash": "a6830d67383b8b64617c754ce128e690",
+    "text": "Hai già quel componente aggiuntivo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.629337Z"
+  },
+  "npc.percybald.say_28": {
+    "src_hash": "188624753f3715de9d5f3b451e230e5e",
+    "text": "Hai già quel vestito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.631313Z"
+  },
+  "npc.percybald.say_32": {
+    "src_hash": "188624753f3715de9d5f3b451e230e5e",
+    "text": "Hai già quel vestito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.633336Z"
+  },
+  "npc.perod.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vuoi comprare un pallone da calcio per 111 oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.637419Z"
+  },
+  "npc.petros.stdmod_1": {
+    "src_hash": "5ea0ed4d1fcd3844c445b6cfd58d85d9",
+    "text": "Mi dispiace ma non navigo lì.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.643735Z"
+  },
+  "npc.petros.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cerchi un passaggio a {0} per {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.644572Z"
+  },
+  "npc.petros.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.645191Z"
+  },
+  "npc.petros.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.645819Z"
+  },
+  "npc.petros.stdmod_7": {
+    "src_hash": "19f556be938588db97e786b0841b8152",
+    "text": "Ecco dove siamo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.646611Z"
+  },
+  "npc.pino.greet_msg_1": {
+    "src_hash": "ae65c5fcbefcac067caa83048920ebf2",
+    "text": "Saluti, viaggiatore |PLAYERNAME|. Dove vuoi che vada {fly} tu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.651121Z"
+  },
+  "npc.pino.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Aspettare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.651594Z"
+  },
+  "npc.pino.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.652448Z"
+  },
+  "npc.pino.stdmod_3": {
+    "src_hash": "7e7182a67795f240a79194b4d6fb5c54",
+    "text": "Cerchi un passaggio fino a {0} per {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.653108Z"
+  },
+  "npc.pino.stdmod_4": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Aspettare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.653743Z"
+  },
+  "npc.pino.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.654561Z"
+  },
+  "npc.pompan.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "È stato un piacere aiutarti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.675461Z"
+  },
+  "npc.pompan.greet_msg_1": {
+    "src_hash": "f9776f93ac975cd47b598e34d9242d18",
+    "text": "Ciao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.675932Z"
+  },
+  "npc.pompan.sendtrade_msg_1": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tieni presente che non troverai offerte migliori qui. Basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.676630Z"
+  },
+  "npc.prezil.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.678629Z"
+  },
+  "npc.prezil.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.679280Z"
+  },
+  "npc.prezil.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.681863Z"
+  },
+  "npc.prezil.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ogni volta che ricevi una ferita letale, la tua forza vitale viene danneggiata e c'è la possibilità che tu perda parte del tuo equipaggiamento. Con ognuno dei cinque {blessings} che hai, questo danno e la possibilità di perdita saranno ridotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.683947Z"
+  },
+  "npc.prezil.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vedo che hai ricevuto la protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.685398Z"
+  },
+  "npc.prezil.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Sento che i druidi a nord di Carlin ti hanno fornito l'Abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.686493Z"
+  },
+  "npc.prezil.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Vedo che hai ricevuto la benedizione dei due soli nella torre del sole vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.687729Z"
+  },
+  "npc.prezil.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Sento che la scintilla della fenice ti è già stata donata dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.688977Z"
+  },
+  "npc.prezil.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Sento che hai già parlato con l'eremita Eremo sull'isola di Cormaya e hai ricevuto questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:32:07.690211Z"
   }
 }

@@ -109998,5 +109998,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:45:23.393845Z"
+  },
+  "scripts.actions_gems.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Kiedy nadejdzie czas, '%s' zostanie przyjęty w tym sanktuarium.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:48.930702Z"
+  },
+  "scripts.gems.msg_1": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Umieszczasz rubin na małym oczku. Zaczyna palić się czerwony płomień.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.179234Z"
+  },
+  "scripts.gems.msg_2": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Umieszczasz szafir na małym oczku. Zaczyna palić się niebieski płomień.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.180333Z"
+  },
+  "scripts.gems.msg_3": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Umieszczasz ametyst na małym oczku. Zaczyna palić się fioletowy płomień.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.181392Z"
+  },
+  "scripts.gems.msg_4": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Umieszczasz topaz na małym gnieździe. Zaczyna palić się żółty płomień.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.182690Z"
+  },
+  "scripts.soul_prism.msg_2": {
+    "src_hash": "2e149a13c42fb213cb46a20cc147b969",
+    "text": "Nieprawidłowy typ potwora. Skontaktuj się z administratorem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.468220Z"
+  },
+  "scripts.soul_war_mechanics.msg_2": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Obecnie nie masz skazy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.472180Z"
+  },
+  "scripts.soul_war_mechanics.msg_5": {
+    "src_hash": "0c9eb6355f3eb6cf69ce8acc19c30634",
+    "text": "Dodanie poziom poziom: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.473646Z"
+  },
+  "scripts.soul_war_mechanics.msg_8": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Usuniędo poziom poziom: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.475186Z"
+  },
+  "scripts.soulpit_fight.msg_1": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Ktoś walczy w Soulpit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.476136Z"
+  },
+  "scripts.spells.monster.maxxenius_energy_elemental_1": {
+    "src_hash": "42f9a55c6786effb89e726f9f9453c6a",
+    "text": "Czujesz narastający potężny ładunek elektryczny!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.478662Z"
+  },
+  "scripts.spells.monster.nightmare_beast_curse_1": {
+    "src_hash": "892435d766abce593cc36cf509a396c6",
+    "text": "Bestia rzuciła na ciebie straszną klątwę!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.479718Z"
+  },
+  "scripts.spells.monster.spider_queen_wrap_1": {
+    "src_hash": "cc51b98216940c90e587944dee0f6e27",
+    "text": "Królowa pająków złapała cię w sieć i sparaliżowała!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.480715Z"
+  },
+  "scripts.spider_queen_wrap.msg_1": {
+    "src_hash": "cc51b98216940c90e587944dee0f6e27",
+    "text": "Królowa pająków złapała cię w sieć i sparaliżowała!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.481982Z"
+  },
+  "scripts.strawberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.484290Z"
+  },
+  "scripts.sweet_mangonaise_elixir.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.486012Z"
+  },
+  "scripts.thais_exhibition.say_86": {
+    "src_hash": "eb3823fe6c907ac172a2b23d5728c2c7",
+    "text": "Powiedz \"Szczur ser!\"",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.520615Z"
+  },
+  "scripts.tropical_fried_terrorbird.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.524384Z"
+  },
+  "scripts.veggie_casserole.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.532548Z"
+  },
+  "scripts.wz789_entrance.msg_1": {
+    "src_hash": "f7d169b57fb1ac2ac943594a2f111672",
+    "text": "Potrzebujesz poziomu 250, aby wejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:49.543048Z"
+  },
+  "gamestore.desc.expboost_1": {
+    "src_hash": "1f8ff19d92323e2ad0570448ae6e95f1",
+    "text": "Czy jesteś zmęczony powolnym zdobywaniem poziomów? spróbuj!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:54.061185Z"
+  },
+  "gamestore.desc.mount_1": {
+    "src_hash": "1ade786d188688927cdeada39e460f59",
+    "text": "To fantastyczny wierzchowiec, który pomaga stać się szybszym, wypróbuj go!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:54.061621Z"
+  },
+  "gamestore.desc.mount_2": {
+    "src_hash": "641bf2f7765ffdb9a21f971f2cfb249e",
+    "text": "Pierwszy jeździec tego wierzchowca został przywódcą swojego kraju! legendy tak mówią.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:54.062129Z"
+  },
+  "gamestore.desc.namechange_1": {
+    "src_hash": "7feebfb6dee744778b4c20d57ce28e79",
+    "text": "Czy jesteś ścigany? Masz dość tego? Zdobądź nowe imię, nowe życie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:54.062555Z"
+  },
+  "gamestore.desc.outfit_1": {
+    "src_hash": "7d1506afe3c00400d06330d74ad53137",
+    "text": "Ten strój wygląda ładnie. Mogą go nosić tylko ludzie z klasą!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:45:54.063027Z"
+  },
+  "gamestore.desc.outfit_3": {
+    "src_hash": "c6a2256abb5408a214c5c61689e2071d",
+    "text": "Legenda głosi, że powinni go nosić tylko mądrzy ludzie, w przeciwnym razie spalisz się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:02.110064Z"
+  },
+  "gamestore.desc.preybonus_1": {
+    "src_hash": "ba965e035752e2099adfe30997c25d57",
+    "text": "Aktywowałeś ofiarę, ale nie podoba Ci się losowo wybrany bonus? Rzuć się na nowy! Tutaj możesz kupić pięć Prey Bonus Rerolls! \\nA Bonus Reroll pozwala uzyskać bonus o wyższej wartości (maks. 50%). Bonus dla twojej ofiary zostanie wybrany losowo spośród następujących: zwiększenie obrażeń, redukcja obrażeń, dodatkowe PD, ulepszone łupy. 2-godzinny czas polowania rozpocznie się od nowa, gdy wylosujesz nowy bonus. Twój potwór-ofiara pozostanie taki sam.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:02.111724Z"
+  },
+  "gamestore.desc.preyslot_1": {
+    "src_hash": "e28416aff7d557334bec15fb821ac8a9",
+    "text": "To sezon polowań! Aktywuj ofiarę, aby zyskać premię podczas polowania na określonego potwora. Każda postać może kupić jedno stałe miejsce na zdobycz, które umożliwia aktywację dodatkowej ofiary. \\nJeśli aktywujesz ofiarę, możesz wybrać jednego potwora z dziewięciu. Bonus dla twojej ofiary zostanie wybrany losowo spośród następujących: zwiększenie obrażeń, redukcja obrażeń, dodatkowe PD, ulepszone łupy. Wartość bonusu może wynosić od 5% do 50%. Twoja ofiara będzie aktywna przez 2 godziny polowania: czas trwania aktywnej ofiary zostanie skrócony tylko podczas polowania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:02.113420Z"
+  },
+  "gamestore.desc.temple_1": {
+    "src_hash": "fbff8d8b619737c61a61eb89f4f78a34",
+    "text": "Potrzebujesz szybkiej drogi do domu? Kup tę usługę transportu, aby natychmiast zostać teleportowanym do swojej domowej świątyni. \\n\\nUwaga, nie możesz korzystać z tej usługi, jeśli masz znak bojowy lub blokadę strefy ochronnej. Co więcej, usługa nie będzie działać w strefach, w których nie można się wylogować ani w pobliżu Twojej domowej świątyni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:02.114524Z"
+  },
+  "gamestore.disabled.active_xp_boost": {
+    "src_hash": "9f8d44629840b8c24221d34aeb6eeb3a",
+    "text": "Masz już aktywną premię XP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:02.114861Z"
+  },
+  "gamestore.disabled.already_3_slots": {
+    "src_hash": "a52cfe40b19318eb1a6cc026e95be42e",
+    "text": "Masz już zwolnione 3 miejsca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:09.324844Z"
+  },
+  "gamestore.disabled.already_charm_expansion": {
+    "src_hash": "ae5faf495a84cd087847248c6d684e08",
+    "text": "Masz już rozszerzenie uroku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:09.325192Z"
+  },
+  "gamestore.disabled.already_mount": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Masz już ten uchwyt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:09.325497Z"
+  },
+  "gamestore.disabled.already_outfit": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Masz już ten strój.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:09.325829Z"
+  },
+  "gamestore.disabled.fake_offer": {
+    "src_hash": "8ed29edf04745efdd8e8a5419406515b",
+    "text": "Oferta jest fałszywa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:46:09.326159Z"
   }
 }

@@ -128,6 +128,9 @@ if (MSVC)
   # Clang-CL also sets MSVC=TRUE but doesn't need (and rejects) these flags.
   if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
+    # MSVC 14.44+ triggers ICE in the SSA optimizer (p2/main.cpp) and in PCH
+    # interaction on certain translation units. Lower global opt to /O1 and
+    # disable optimization completely for the most affected files.
     string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
     string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
@@ -136,11 +139,18 @@ if (MSVC)
       $<$<CONFIG:Release>:/O1>
       $<$<CONFIG:RelWithDebInfo>:/O1>
     )
+    # Files that trigger ICE C1001 with MSVC 14.44+.
+    # /Od  = disable optimization entirely
+    # /d2SSAOptimizer- = disable SSA optimizer (main ICE trigger)
+    # /Y-  = force-disable precompiled headers (SKIP_PRECOMPILE_HEADERS alone
+    #         doesn't remove /Yu from the Ninja build rule on some CMake versions)
     set_source_files_properties(
       framework/luaengine/luavaluecasts.cpp
       framework/otml/otmlparser.cpp
+      framework/otml/otmlnode.cpp
+      framework/luafunctions.cpp
       framework/ui/uiwidgetbasestyle.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer-" SKIP_PRECOMPILE_HEADERS ON
+      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer- /Y-" SKIP_PRECOMPILE_HEADERS ON
     )
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE

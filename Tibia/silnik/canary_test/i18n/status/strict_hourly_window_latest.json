@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T02:33:58.651754Z",
-  "window_end_utc": "2026-02-17T03:33:58.651754Z",
+  "window_start_utc": "2026-02-17T02:36:18.371231Z",
+  "window_end_utc": "2026-02-17T03:36:18.371231Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3532,
-  "guard_fail": 2237,
-  "guard_fail_rate_pct": 38.8,
+  "translated": 3489,
+  "guard_fail": 2230,
+  "guard_fail_rate_pct": 39.0,
   "no_progress_entries": 1,
   "no_progress_rate_pct": 1.0,
-  "throughput_keys_per_h": 1934.3,
-  "suspicious_total": 10157,
+  "throughput_keys_per_h": 1906.3,
+  "suspicious_total": 10167,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -49,12 +49,6 @@
       "guard_command": 0
     },
     {
-      "target": "sv/server.json",
-      "translated": 45,
-      "guard_fail": 55,
-      "guard_command": 0
-    },
-    {
       "target": "ru/questlog.json",
       "translated": 52,
       "guard_fail": 48,
@@ -70,6 +64,12 @@
       "target": "es/books.json",
       "translated": 2,
       "guard_fail": 48,
+      "guard_command": 0
+    },
+    {
+      "target": "it/questlog.json",
+      "translated": 53,
+      "guard_fail": 47,
       "guard_command": 0
     }
   ]

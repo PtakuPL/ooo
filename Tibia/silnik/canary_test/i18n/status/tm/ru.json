@@ -28414,5 +28414,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:33:18.592640Z"
+  },
+  "cpp.cancel.not_allowed_construct": {
+    "src_hash": "321d6b9b0ef4d981cc03781bfe997882",
+    "text": "Вам не разрешено строить это здесь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:57.393819Z"
+  },
+  "cpp.cancel.player_not_exist": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Игрока с таким именем не существует.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:57.394264Z"
+  },
+  "cpp.cancel.stash_wait": {
+    "src_hash": "8e97cd473570086184609edf89e64947",
+    "text": "Вы не можете использовать тайник прямо сейчас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:57.394629Z"
+  },
+  "cpp.chat.private_excluded_confirm": {
+    "src_hash": "5c0f0434c8f65e345f3716dc9024e282",
+    "text": "{0} исключен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:57.394905Z"
+  },
+  "cpp.chat.private_invite_received": {
+    "src_hash": "1283d1f0bed25a89fdba76bc3a0eaccb",
+    "text": "{0} приглашает вас в приватный чат {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:57.395282Z"
+  },
+  "cpp.chat.private_invited_confirm": {
+    "src_hash": "fb5e9f487445de188a6c5071bd097fed",
+    "text": "{0} приглашен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:02.237335Z"
+  },
+  "cpp.combat.amplified_onslaught": {
+    "src_hash": "7e22a0325a0db3ab0af94fefc1575bcf",
+    "text": "(Усиленный натиск)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:02.237628Z"
+  },
+  "cpp.combat.charm_savage_blow": {
+    "src_hash": "20827ecb1eb699c4e44204dc4e91221f",
+    "text": "(дикое заклинание удара)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:02.237907Z"
+  },
+  "cpp.combat.condition_healed_one": {
+    "src_hash": "0bf121421a3a381451a59e1c85aeda73",
+    "text": "Вы были исцелены на {0} хитпойнт.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:02.238360Z"
+  },
+  "cpp.combat.condition_healed_other": {
+    "src_hash": "9e6bedd1c5b4f37f6b98fa8d89b531b6",
+    "text": "Вы были исцелены на {0} очков здоровья.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:02.238728Z"
+  },
+  "cpp.combat.condition_healed_spectator_one": {
+    "src_hash": "563946f2da69fc4d5e67fe5fbbabd7a3",
+    "text": "{0} был исцелен на {1} хитпоинта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:07.580166Z"
+  },
+  "cpp.combat.condition_healed_spectator_other": {
+    "src_hash": "a038c6c62c0d42fcd3a8fe3616466458",
+    "text": "{0} был исцелен на {1} очков жизни.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:07.580599Z"
+  },
+  "cpp.combat.dmg_attacker_crit_one": {
+    "src_hash": "65cc48920b09ac5e937e44b2ccb79160",
+    "text": "{0} теряет {1} очков жизни из-за вашей критической атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:07.581015Z"
+  },
+  "cpp.combat.dmg_attacker_crit_other": {
+    "src_hash": "0137109a00690450cd2fe61d7317fa4d",
+    "text": "{0} теряет {1} очков жизни из-за вашей критической атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:07.581477Z"
+  },
+  "cpp.combat.dmg_attacker_one": {
+    "src_hash": "125fcde49b9106480a491e5ab9c77ca3",
+    "text": "{0} теряет {1} очков жизни из-за вашей атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:07.581907Z"
+  },
+  "cpp.combat.dmg_attacker_other": {
+    "src_hash": "257ee854903d532839ed440219e295b2",
+    "text": "{0} теряет {1} очков жизни из-за вашей атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:12.832556Z"
+  },
+  "cpp.combat.dmg_spectator_by_crit_one": {
+    "src_hash": "b3218f77cfab4ef44076b07341384c7e",
+    "text": "{0} теряет {1} хитпойнт из-за критической атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:12.832991Z"
+  },
+  "cpp.combat.dmg_spectator_by_crit_other": {
+    "src_hash": "8b8f2e78055b89231331ac78c245b33e",
+    "text": "{0} теряет {1} очков жизни из-за критической атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:12.833414Z"
+  },
+  "cpp.combat.dmg_spectator_by_one": {
+    "src_hash": "cc4a261a1824688e28c4a0e63e920521",
+    "text": "{0} теряет хитпойнт {1} из-за атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:12.833798Z"
+  },
+  "cpp.combat.dmg_spectator_by_other": {
+    "src_hash": "4cd2495a40159387c95e3c5cb6b001d8",
+    "text": "{0} теряет {1} очков жизни из-за атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:12.834310Z"
+  },
+  "cpp.combat.dmg_target_by_crit_one": {
+    "src_hash": "aee2bb7862a5b081f4411f522da26230",
+    "text": "Вы теряете {0} хитпойнт из-за критической атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:17.708857Z"
+  },
+  "cpp.combat.dmg_target_by_crit_other": {
+    "src_hash": "df3e12671114472c884ac78a76c1fe73",
+    "text": "Вы теряете {0} очков жизни из-за критической атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:17.709403Z"
+  },
+  "cpp.combat.dmg_target_by_one": {
+    "src_hash": "8a8ea05c51255d66aa4282b55a052404",
+    "text": "Вы теряете {0} хитпойнт из-за атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:17.709804Z"
+  },
+  "cpp.combat.dmg_target_by_other": {
+    "src_hash": "96092220c06fa4f7abbbd5125b33e7c8",
+    "text": "Вы теряете {0} очков жизни из-за атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:17.710223Z"
+  },
+  "cpp.combat.dmg_target_self_crit_other": {
+    "src_hash": "156225ceb575277435d89317f7eecdac",
+    "text": "Вы теряете {0} очков жизни из-за собственной критической атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:17.710653Z"
+  },
+  "cpp.combat.dmg_target_self_one": {
+    "src_hash": "5b3ada6a01d629373cc9c5448dcdf456",
+    "text": "Вы теряете {0} очков жизни из-за вашей собственной атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:21.929745Z"
+  },
+  "cpp.combat.dmg_target_self_other": {
+    "src_hash": "991acc62419dbec00201325e84ea6944",
+    "text": "Вы теряете {0} очков жизни из-за вашей собственной атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:21.930228Z"
+  },
+  "cpp.combat.heal_spectator_none_one": {
+    "src_hash": "563946f2da69fc4d5e67fe5fbbabd7a3",
+    "text": "{0} был исцелен на {1} хитпоинта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:21.930584Z"
+  },
+  "cpp.combat.heal_spectator_none_other": {
+    "src_hash": "a038c6c62c0d42fcd3a8fe3616466458",
+    "text": "{0} был исцелен на {1} очков жизни.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:21.930934Z"
+  },
+  "cpp.combat.heal_spectator_other_other": {
+    "src_hash": "601afa5d1f405ad24a983e4a438197e2",
+    "text": "{0} исцелил {1} на {2} очков жизни.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:21.931279Z"
   }
 }

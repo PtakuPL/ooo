@@ -43830,5 +43830,117 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T03:32:48.364576Z"
+  },
+  "questlog.quest_11.mission_18.name": {
+    "src_hash": "1719e0816b6733121508bf3b80dffabe",
+    "text": "Paw and Fur: Ice Golems",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:27.547297Z"
+  },
+  "questlog.quest_11.mission_18.state_1": {
+    "src_hash": "492ec77864fb3c17e867eba5493c65b7",
+    "text": "Hai cacciato con successo 300 golem di ghiaccio. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:27.548276Z"
+  },
+  "questlog.quest_11.mission_18.state_2": {
+    "src_hash": "c075b03cca5088739b1106b916d803ef",
+    "text": "Hai cacciato con successo 300 golem di ghiaccio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:27.548868Z"
+  },
+  "questlog.quest_11.mission_19.state_1": {
+    "src_hash": "7e5840e3a4160a5099577e4c6eb40fff",
+    "text": "Hai cacciato con successo 400 esploratori quara. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:34.683614Z"
+  },
+  "questlog.quest_11.mission_19.state_2": {
+    "src_hash": "a1721900165c17ec2018086a9746faab",
+    "text": "Hai cacciato con successo 400 esploratori quara.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:34.683944Z"
+  },
+  "questlog.quest_11.mission_2.description": {
+    "src_hash": "8f111ac389e2ff25274a6224115e5886",
+    "text": "Sei stato promosso al grado di 'Huntsman' nella '__PH0__'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:34.684586Z"
+  },
+  "questlog.quest_11.mission_20.state_1": {
+    "src_hash": "4bf36bfbd458dc85f6ba9ad9f48c175a",
+    "text": "Hai cacciato con successo 400 ratti mutanti. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:41.967929Z"
+  },
+  "questlog.quest_11.mission_20.state_2": {
+    "src_hash": "f37a6470b122a8a17f63503b66b3cdea",
+    "text": "Hai cacciato con successo 400 ratti mutanti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:41.968257Z"
+  },
+  "questlog.quest_11.mission_21.state_1": {
+    "src_hash": "01756531cf4e4bbc12777273b6d74f4d",
+    "text": "Hai cacciato con successo 250 scarabei antichi. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:41.968817Z"
+  },
+  "questlog.quest_11.mission_21.state_2": {
+    "src_hash": "1b11feadd36e2a6a24c1067eff867975",
+    "text": "Hai cacciato con successo 250 scarabei antichi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:41.969132Z"
+  },
+  "questlog.quest_11.mission_22.name": {
+    "src_hash": "8e4feab862f5c2da877204b68930b587",
+    "text": "Paw and Fur: Wyverns",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:46.962985Z"
+  },
+  "questlog.quest_11.mission_22.state_1": {
+    "src_hash": "9c325589daf8b7613829032a3deb93f5",
+    "text": "Hai cacciato con successo 300 viverne. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:46.963612Z"
+  },
+  "questlog.quest_11.mission_22.state_2": {
+    "src_hash": "030ae634eea0b345ce6d9b77dc2d0728",
+    "text": "Hai cacciato con successo 300 viverne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:46.963916Z"
+  },
+  "questlog.quest_11.mission_23.state_1": {
+    "src_hash": "b5a2d7d43d98cdf34ac73dd142d107c5",
+    "text": "Hai cacciato con successo 300 scarabei lancieri. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:34:46.964468Z"
   }
 }

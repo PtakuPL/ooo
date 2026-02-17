@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:50:16.757518Z"
+    "updated_at": "2026-02-17T03:35:29.639622Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -37702,5 +37702,253 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:33:52.796619Z"
+  },
+  "web.tpl.admin.logs.th_2": {
+    "src_hash": "ffbb3331182cbfda3ccea5bb0c3eea46",
+    "text": "Ultima actualizare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.590372Z"
+  },
+  "web.tpl.account.management.set_1": {
+    "src_hash": "089a4481d6029b62758f16d31cd34264",
+    "text": "Înregistrați contul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.595414Z"
+  },
+  "web.tpl.buttons.back.set_1": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Spate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.599604Z"
+  },
+  "web.tpl.news.back_button.set_1": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Spate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.609432Z"
+  },
+  "html.guilds.manager.html.text1": {
+    "src_hash": "c832c0ef0315430a558b56bb96923880",
+    "text": "Bun venit la managerul breslei!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.618805Z"
+  },
+  "html.guilds.manager.html.text2": {
+    "src_hash": "91ebc9b22070b200da533e4992a22157",
+    "text": "Transmite conducerea breslei unui alt membru al breslei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.619233Z"
+  },
+  "html.guilds.manager.html.text3": {
+    "src_hash": "b468aac652190c45b44ce61f0329252d",
+    "text": "Șterge breasla, da cu piciorul pe toți membrii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.619647Z"
+  },
+  "html.guilds.manager.html.text4": {
+    "src_hash": "ffe3673e547e72aca5ed299de4451406",
+    "text": "Schimbați descrierea breslei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.620025Z"
+  },
+  "html.guilds.manager.html.text5": {
+    "src_hash": "e0fbf3568e415c67cd6fff5b7ad2a01e",
+    "text": "Schimbați MOTD al breslei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:25.620377Z"
+  },
+  "web.tpl.guilds.manager.b_12": {
+    "src_hash": "db634a36c41002236a8756934412eb55",
+    "text": "Lider (3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:37.939456Z"
+  },
+  "web.tpl.guilds.manager.b_13": {
+    "src_hash": "635e0eb865facfba4ff6d76c869a0844",
+    "text": "Menghina (2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:37.939662Z"
+  },
+  "web.tpl.guilds.manager.b_14": {
+    "src_hash": "8fe0454e50d6ac2534a9908a7b882462",
+    "text": "Membru (1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:37.939845Z"
+  },
+  "web.tpl.guilds.manager.h3_17": {
+    "src_hash": "022a5251150ada289e28fbb48f951fcf",
+    "text": "Informații despre clasamente:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:37.940078Z"
+  },
+  "web.tpl.guilds.manager.b_18": {
+    "src_hash": "aee28dd42a460d82392533d2a701ff77",
+    "text": "0. Proprietar de breaslă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:37.940348Z"
+  },
+  "web.tpl.guilds.manager.b_19": {
+    "src_hash": "a3206197d60fb40e8a985b99084fade0",
+    "text": "1. Lider",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:45.293002Z"
+  },
+  "web.tpl.guilds.manager.b_20": {
+    "src_hash": "19676a36fb5f307ea03d9aa340141f51",
+    "text": "2. Vicelider",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:45.293231Z"
+  },
+  "web.tpl.guilds.manager.b_21": {
+    "src_hash": "3f6fe01c63dc66b2340466a5f359444f",
+    "text": "3. Membru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:45.293414Z"
+  },
+  "web.tpl.buttons.change_name.set_1": {
+    "src_hash": "23a0ca84a7fd64eee8248bd1dfc77185",
+    "text": "Schimbați numele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:45.293629Z"
+  },
+  "web.tpl.news.b_1": {
+    "src_hash": "91401f053501b716b4a695b048c9b827",
+    "text": "Autor:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:45.293800Z"
+  },
+  "web.tpl.account.generate_new_recovery_key.set_1": {
+    "src_hash": "ad8bdba88e19fec0ce682b4cf8cce998",
+    "text": "Generați cheia de recuperare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:49.375569Z"
+  },
+  "web.tpl.account.generate_new_recovery_key.span_1": {
+    "src_hash": "b341a59d5636ed3d6a819137495b08a0",
+    "text": "Parolă:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:49.375773Z"
+  },
+  "web.tpl.buttons.view.set_1": {
+    "src_hash": "4351cfebe4b61d8aa5efa1d020710005",
+    "text": "Vedere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:49.375938Z"
+  },
+  "web.tpl.account.change_info.set_1": {
+    "src_hash": "899c4af570794bd2c1b053698b693a48",
+    "text": "Schimbați informațiile publice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:49.376210Z"
+  },
+  "web.tpl.admin.logs.th_1": {
+    "src_hash": "71d09158378f6d5172ac991d5f26a1c1",
+    "text": "Nume jurnal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:49.376395Z"
+  },
+  "web.tpl.account.lost.form.b_1": {
+    "src_hash": "5d4af9bda827fbef97414b60c89ca7cf",
+    "text": "Vă rugăm să introduceți numele personajului dvs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:55.485877Z"
+  },
+  "web.tpl.account.lost.form.b_2": {
+    "src_hash": "d90f4605098a5011625c8c1744fff175",
+    "text": "Ce vrei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:55.486219Z"
+  },
+  "web.tpl.account.lost.form.b_3": {
+    "src_hash": "eae1ac01ff83825d5c6ac799843b78c0",
+    "text": "cheie de recuperare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:55.486505Z"
+  },
+  "web.tpl.serverinfo.h2_1": {
+    "src_hash": "39795f0ea9fc5155a2a2cdeca7cf7435",
+    "text": "Informații server:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:55.486863Z"
+  },
+  "web.tpl.serverinfo.b_2": {
+    "src_hash": "e8fcc7c85e96c10dec12894d25ad38e9",
+    "text": "24/7",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:55.487069Z"
+  },
+  "web.tpl.serverinfo.h2_3": {
+    "src_hash": "62fd280c30b9823d99fa1e3649ef293b",
+    "text": "Tarife",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:58.720444Z"
+  },
+  "web.tpl.serverinfo.h2_4": {
+    "src_hash": "11328411cb27f3afb4a7f1375aa32d26",
+    "text": "Frags și sistem craniu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:35:58.720751Z"
   }
 }

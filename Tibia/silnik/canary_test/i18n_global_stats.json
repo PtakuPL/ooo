@@ -1,8 +1,8 @@
 {
-  "total_cycles": 363,
+  "total_cycles": 364,
   "mode": "AUTO_TRANSLATE",
   "category": "ro",
-  "last_update": "2026-02-17T09:08:22.847254",
+  "last_update": "2026-02-17T09:10:09.760881",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,8 +27,8 @@
   },
   "auto_translate": {
     "language": "ro",
-    "json_file": "html.json",
-    "keys_to_translate": 1247,
+    "json_file": "books.json",
+    "keys_to_translate": 1106,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

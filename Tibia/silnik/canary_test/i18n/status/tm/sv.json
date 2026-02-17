@@ -921,11 +921,11 @@
   },
   "item.3174.name": {
     "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
-    "text": "Light Magic Missile Rune",
+    "text": "Lätt magisk missilruna",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T00:01:04.464610Z"
+    "updated_at": "2026-02-17T08:09:27.669536Z"
   },
   "item.3175.name": {
     "src_hash": "25854a690aad0b2f569b5c34e1691b91",
@@ -27198,5 +27198,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:58:38.401247Z"
+  },
+  "item.32227.name": {
+    "src_hash": "25b1331a71dad1d01977134b8c6b524f",
+    "text": "Förlorad själ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.687523Z"
+  },
+  "item.32418.name": {
+    "src_hash": "983b822c1fe9b3a3bd821020d1998e94",
+    "text": "Hjärnhuvud",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.690341Z"
+  },
+  "item.32572.name": {
+    "src_hash": "2d8bfcfcedb6476af97ced40e762ff3c",
+    "text": "Lilla hjärnan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.696874Z"
+  },
+  "item.33040.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Slagträ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.710576Z"
+  },
+  "item.33041.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Slagträ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.710819Z"
+  },
+  "item.33042.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Slagträ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.711095Z"
+  },
+  "item.33946.name": {
+    "src_hash": "045f5aa6491333134f167e3d75072ea5",
+    "text": "Grottråtta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.730509Z"
+  },
+  "item.3543.name": {
+    "src_hash": "2377602973eb51c43de29c4e28d6dbae",
+    "text": "Svart Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.757221Z"
+  },
+  "item.3578.name": {
+    "src_hash": "83e4a96aed96436c621b9809e258b309",
+    "text": "Fisk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.761600Z"
+  },
+  "item.3606.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Ägg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.769037Z"
+  },
+  "item.3733.name": {
+    "src_hash": "0a840ef45467fb3932dbf2c2896c5cbf",
+    "text": "sten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.805776Z"
+  },
+  "item.407.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.864750Z"
+  },
+  "item.4315.name": {
+    "src_hash": "84df077bcb1bd39ab1a3294de0cf655b",
+    "text": "Skelett",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.895051Z"
+  },
+  "item.4316.name": {
+    "src_hash": "84df077bcb1bd39ab1a3294de0cf655b",
+    "text": "Skelett",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.895367Z"
+  },
+  "item.4837.name": {
+    "src_hash": "390b9d5a0b69278a88df6b20792532b5",
+    "text": "Istapp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.962260Z"
+  },
+  "item.4995.name": {
+    "src_hash": "d5578710397e82bd3e6da8cee91df34d",
+    "text": "Canopic burk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:27.980611Z"
+  },
+  "item.5647.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.000434Z"
+  },
+  "item.5684.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.001459Z"
+  },
+  "item.5686.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.001859Z"
+  },
+  "item.6.name": {
+    "src_hash": "f79f0528037f833a5e9901a26490be94",
+    "text": "Slem",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.016113Z"
+  },
+  "item.618.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.024591Z"
+  },
+  "item.6986.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "Pelare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.046268Z"
+  },
+  "item.7174.name": {
+    "src_hash": "893b56e3cfe153fb770a120b83bac20c",
+    "text": "Björn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.051340Z"
+  },
+  "item.7175.name": {
+    "src_hash": "893b56e3cfe153fb770a120b83bac20c",
+    "text": "Björn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.051698Z"
+  },
+  "item.7176.name": {
+    "src_hash": "f46c1c5a903c4090247e8b290f7a0df3",
+    "text": "Mammut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.051956Z"
+  },
+  "item.7177.name": {
+    "src_hash": "f46c1c5a903c4090247e8b290f7a0df3",
+    "text": "Mammut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:09:28.052337Z"
   }
 }

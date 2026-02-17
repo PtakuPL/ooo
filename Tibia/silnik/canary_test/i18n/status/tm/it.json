@@ -63422,5 +63422,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:17:56.496725Z"
+  },
+  "npc.queen_eloise.stdmod_1": {
+    "src_hash": "8bde248f2855df0ec9b4de274f833a89",
+    "text": "Posso promuoverti per 20000 monete d'oro. Vuoi che ti promuova?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.046735Z"
+  },
+  "npc.queen_eloise.stdmod_13": {
+    "src_hash": "5b3edcf522c874340c892f2fd8f7060b",
+    "text": "Grazie, sto bene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.047959Z"
+  },
+  "npc.queen_eloise.stdmod_2": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Congratulazioni! Ora sei promosso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.049167Z"
+  },
+  "npc.queen_eloise.stdmod_3": {
+    "src_hash": "a58748e248a0a19dfaa510c40513daad",
+    "text": "Va bene allora, torna quando sei pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.050365Z"
+  },
+  "npc.queen_eloise.stdmod_37": {
+    "src_hash": "c3bc7b08eb6218770412d4bdab6ae556",
+    "text": "Chiedi in giro di loro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.051388Z"
+  },
+  "npc.queen_eloise.stdmod_38": {
+    "src_hash": "9bd0ecf00154a7152eb23f39415c780d",
+    "text": "Le quattro corporazioni principali sono i cavalieri, i paladini, i druidi e gli stregoni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.052322Z"
+  },
+  "npc.queen_eloise.walkaway_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Addio, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.054047Z"
+  },
+  "npc.quentin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.055059Z"
+  },
+  "npc.quentin.stdmod_1": {
+    "src_hash": "784b20223544cf9f09eecc3ce9590b05",
+    "text": "Va bene, immagino che prima ti serva un paletto. Forse Gamon può aiutarti, la gamba di una sedia o qualcosa del genere potrebbe semplicemente aiutarti. Prova a chiedergli una puntata e, se ne hai una, riportamela.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.055987Z"
+  },
+  "npc.quentin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Conserva bene la tua pietra dell'avventuriero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.056402Z"
+  },
+  "npc.quentin.stdmod_11": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vuoi sostituire gratuitamente la tua pietra dell'avventuriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.056871Z"
+  },
+  "npc.quentin.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.057343Z"
+  },
+  "npc.quentin.stdmod_14": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vuoi sostituire la tua pietra dell'avventuriero per 30 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.058006Z"
+  },
+  "npc.quentin.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.058573Z"
+  },
+  "npc.quentin.stdmod_16": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Mi dispiace, non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.058997Z"
+  },
+  "npc.quentin.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.060623Z"
+  },
+  "npc.quentin.stdmod_2": {
+    "src_hash": "1dc010dec4da16bd0ae52c9ffcf7033d",
+    "text": "Immagino che non potresti convincere Gamon a darti una quota, eh?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.061101Z"
+  },
+  "npc.quentin.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ogni volta che ricevi una ferita letale, la tua forza vitale viene danneggiata e c'è la possibilità che tu perda parte del tuo equipaggiamento. Con ognuno dei cinque {blessings} che hai, questo danno e la possibilità di perdita saranno ridotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.062134Z"
+  },
+  "npc.quentin.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vedo che hai ricevuto la protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.063004Z"
+  },
+  "npc.quentin.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Sento che i druidi a nord di Carlin ti hanno fornito l'Abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.063538Z"
+  },
+  "npc.quentin.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Vedo che hai ricevuto la benedizione dei due soli nella torre del sole vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.064134Z"
+  },
+  "npc.quentin.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Sento che la scintilla della fenice ti è già stata donata dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.064905Z"
+  },
+  "npc.quentin.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Sento che hai già parlato con l'eremita Eremo sull'isola di Cormaya e hai ricevuto questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.065676Z"
+  },
+  "npc.quentin.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puoi chiedere la benedizione della protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.066281Z"
+  },
+  "npc.quentin.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "I druidi a nord di Carlin ti forniranno l'abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.066842Z"
+  },
+  "npc.quentin.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puoi chiedere la benedizione dei due soli nella torre solare vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.067406Z"
+  },
+  "npc.quentin.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "La scintilla della fenice è data dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.068285Z"
+  },
+  "npc.quentin.stdmod_32": {
+    "src_hash": "6e9cadd21bd82ce21275e16b73acdbc6",
+    "text": "Un paletto benedetto per sconfiggere gli spiriti maligni? Conosco un'antica preghiera che si dice conceda un potere sacro e sia in grado di legare questo potere a qualcuno o qualcosa. ...\\z\n\tTuttavia, questa preghiera necessita dell'energia combinata di dieci sacerdoti. Ognuno di loro deve dire una riga della preghiera. ...\\z\n\tPotrei iniziare con la preghiera, ma poiché il prossimo sacerdote dovrà essere in un luogo diverso, probabilmente dovrai viaggiare molto. ...\\z\n\tQuesta posta in gioco è davvero abbastanza importante per te da essere disposto ad assumerti questo fardello?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.070292Z"
+  },
+  "npc.quentin.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Questa è una benedizione speciale che posso concederti una volta ottenuta almeno una delle altre benedizioni e che funziona in modo leggermente diverso. ...\\z\n\tFunziona solo quando vieni ucciso da altri avventurieri, il che significa che almeno la metà del danno che ha portato alla tua morte è stato causato da altri, non da mostri o dall'ambiente. ...\\z\n\tLo {twist of fate} non ridurrà la pena di morte come le altre benedizioni, ma invece ti impedirà di perdere le tue altre benedizioni e l'amuleto della perdita, se ne indossi uno. Costa lo stesso delle altre benedizioni. ...\\z\n\tTi piacerebbe ricevere quella protezione per un sacrificio di |PVPBLESSCOST| oro, bambino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.072592Z"
+  },
+  "npc.quentin.stdmod_5": {
+    "src_hash": "0f31738909d8dfb4a29c446aefa592e1",
+    "text": "Ti aspetterò.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.073031Z"
+  },
+  "npc.quentin.stdmod_7": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Hai già ricevuto la mia linea di preghiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.073725Z"
+  },
+  "npc.quentin.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.074254Z"
+  },
+  "npc.quentin.stdmod_9": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bene. Sei libero di rifiutare la mia offerta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.074709Z"
+  },
+  "npc.rabaz.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.076711Z"
+  },
+  "npc.rachel.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Quindi mi chiedi un {{}} per iniziare la tua avventura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.077845Z"
+  },
+  "npc.rachel.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Che cosa? Te ne ho già regalato uno {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.078376Z"
+  },
+  "npc.rachel.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.078883Z"
+  },
+  "npc.raffael.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.080218Z"
+  },
+  "npc.raffael.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Non dimenticare di depositare i tuoi soldi qui nella Banca Globale prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.080813Z"
+  },
+  "npc.rahkem.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.082749Z"
+  },
+  "npc.rahkem.stdmod_10": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Mi dispiace, non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:21.083334Z"
   }
 }

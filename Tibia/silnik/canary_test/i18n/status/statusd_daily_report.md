@@ -1,61 +1,61 @@
 # I18N Daily Executive Report (24h)
 
-- Generated: `2026-02-17T08:23:06.745183Z`
-- Window: `2026-02-16T08:23:06.745183Z` -> `2026-02-17T08:23:06.745183Z`
+- Generated: `2026-02-17T09:23:08.091853Z`
+- Window: `2026-02-16T09:23:08.091853Z` -> `2026-02-17T09:23:08.091853Z`
 
 ## KPI 24h
 
 | KPI | Value |
 |---|---:|
-| translated | 46418 |
-| guard_fail | 32230 |
-| guard_fail_rate | 40.98% |
-| no_progress_entries | 25 |
-| no_progress_rate | 2.05% |
+| translated | 49071 |
+| guard_fail | 35536 |
+| guard_fail_rate | 42.00% |
+| no_progress_entries | 27 |
+| no_progress_rate | 2.06% |
 | pending_skip_count | 0 |
 | pending_skip_share | 0.00% |
 | pending_skip_source | pending_skip_24h_latest.json |
-| throughput_keys_per_h_window | 1934.1 |
-| throughput_keys_per_h_active | 3825.6 |
+| throughput_keys_per_h_window | 2044.6 |
+| throughput_keys_per_h_active | 3734.7 |
 
 ## Quality 24h
 
 | Metric | Value |
 |---|---:|
-| suspicious_count | 98931 |
-| suspicious_high_count | 98612 |
-| suspicious_high_rate | 187.65% |
-| suspicious_high_top_lang | ro:33063 |
-| identical_to_en_count | 5440 |
-| gt_guard_fails_count | 9588 |
-| latest_audit_issues_found | 19 |
+| suspicious_count | 103856 |
+| suspicious_high_count | 103496 |
+| suspicious_high_rate | 186.13% |
+| suspicious_high_top_lang | ro:33922 |
+| identical_to_en_count | 5799 |
+| gt_guard_fails_count | 10993 |
+| latest_audit_issues_found | 44 |
 
 ## Repair Queue 24h
 
 | Metric | Value |
 |---|---:|
-| samples_24h | 229 |
+| samples_24h | 246 |
 | latest_entries_total | 699 |
 | top_target_latest | es:npc.json |
 | top_backlog_latest | 51 |
 | top_target_start_24h | es:npc.json |
 | top_target_drop_24h | -27 |
 | stagnation_detected | no |
-| stagnation_span_h | 5.969 |
+| stagnation_span_h | 5.989 |
 | stagnation_reason | window_too_short |
 
 ## Repair Tuning 24h
 
 | Metric | Value |
 |---|---:|
-| samples_24h | 228 |
-| avg_limit | 108.32 |
-| avg_suspicious_high_pct | 289.94% |
-| translated_total | 5530 |
-| guard_fail_total | 946 |
-| guard_fail_rate_pct | 14.61% |
-| gt_mode_true_samples | 228 |
-| latest_timestamp | 2026-02-17T08:22:41.763921Z |
+| samples_24h | 244 |
+| avg_limit | 108.3 |
+| avg_suspicious_high_pct | 286.63% |
+| translated_total | 5930 |
+| guard_fail_total | 1362 |
+| guard_fail_rate_pct | 18.68% |
+| gt_mode_true_samples | 244 |
+| latest_timestamp | 2026-02-17T09:23:01.282309Z |
 
 | Risky Target | Suspicious High % | Suspicious High Count | Tier | Limit |
 |---|---:|---:|---|---:|
@@ -97,49 +97,49 @@
 | severity | info |
 | reason | tracking |
 | pending_langs | es,it,pl,ro,ru,sr,sv |
-| active_minutes | 607.233 |
-| cycle_delta | 1076 |
-| best_quality_drop_pct | 63.24% |
+| active_minutes | 667.252 |
+| cycle_delta | 1172 |
+| best_quality_drop_pct | 66.17% |
 
 ## Coverage Snapshot
 
 | Lang | Completion | Missing Keys | EN Copy Keys | Serwer | Instalka |
 |---|---:|---:|---:|---:|---:|
-| PL | 87.21% | 0 | 1786 | 87.9% | 78.8% |
-| ES | 84.23% | 0 | 2122 | 84.6% | 79.5% |
+| PL | 87.26% | 0 | 1794 | 87.9% | 78.8% |
+| ES | 84.26% | 0 | 2127 | 84.6% | 79.5% |
 | DE | 7.84% | 0 | 2738 | 8.2% | 3.0% |
 | PT | 7.58% | 0 | 2652 | 8.0% | 2.9% |
 | FR | 33.09% | 0 | 3798 | 30.5% | 66.1% |
-| RU | 49.80% | 0 | 1461 | 48.0% | 72.5% |
+| RU | 50.04% | 0 | 1460 | 48.3% | 72.5% |
 
 ## Top Languages (by translated)
 
 | Lang | Translated | Guard Fail | GF Rate | No Progress |
 |---|---:|---:|---:|---:|
-| it | 9168 | 1360 | 12.92% | 1.39% |
-| ru | 8728 | 1715 | 16.42% | 1.40% |
-| ro | 8043 | 2699 | 25.13% | 0.00% |
-| pl | 6370 | 22719 | 78.10% | 5.35% |
-| es | 5016 | 2659 | 34.64% | 4.95% |
-| sv | 4598 | 601 | 11.56% | 0.00% |
-| sr | 4495 | 477 | 9.59% | 0.00% |
+| it | 9791 | 1531 | 13.52% | 1.28% |
+| ru | 9339 | 1834 | 16.41% | 1.73% |
+| ro | 8514 | 2945 | 25.70% | 0.00% |
+| pl | 6714 | 25092 | 78.89% | 5.00% |
+| es | 5224 | 3052 | 36.88% | 5.10% |
+| sv | 4794 | 605 | 11.21% | 0.00% |
+| sr | 4695 | 477 | 9.22% | 0.00% |
 
 ## Top Categories (by translated)
 
 | Category | Translated | Guard Fail | GF Rate | No Progress |
 |---|---:|---:|---:|---:|
-| npc.json | 7698 | 5929 | 43.51% | 0.00% |
-| monsters.json | 6021 | 1934 | 24.31% | 0.00% |
-| items.json | 6015 | 14037 | 70.00% | 0.00% |
-| server.json | 5864 | 1522 | 20.61% | 2.11% |
-| scripts.json | 3156 | 1938 | 38.04% | 0.00% |
-| spells.json | 2601 | 1556 | 37.43% | 0.00% |
-| html.json | 2501 | 311 | 11.06% | 0.00% |
-| quests.json | 2206 | 666 | 23.19% | 1.56% |
-| raids.json | 1928 | 218 | 10.16% | 6.00% |
-| otclient_modules.json | 1785 | 523 | 22.66% | 0.00% |
-| cpp.json | 1674 | 371 | 18.14% | 0.00% |
-| questlog.json | 1512 | 1276 | 45.77% | 0.00% |
+| npc.json | 8148 | 6590 | 44.71% | 0.00% |
+| monsters.json | 6331 | 1990 | 23.92% | 0.00% |
+| items.json | 6297 | 15690 | 71.36% | 0.00% |
+| server.json | 6118 | 1656 | 21.30% | 2.01% |
+| scripts.json | 3308 | 1987 | 37.53% | 0.00% |
+| html.json | 2710 | 358 | 11.67% | 0.00% |
+| spells.json | 2668 | 1739 | 39.46% | 0.00% |
+| quests.json | 2215 | 700 | 24.01% | 2.94% |
+| raids.json | 2046 | 219 | 9.67% | 5.66% |
+| otclient_modules.json | 1952 | 578 | 22.85% | 0.00% |
+| cpp.json | 1806 | 419 | 18.83% | 0.00% |
+| questlog.json | 1611 | 1407 | 46.62% | 0.00% |
 
 ## Notes
 
@@ -177,17 +177,17 @@
 
 | Metric | Value |
 |---|---:|
-| current_total | 38169 |
+| current_total | 38167 |
 | backlog_es | 262 |
 | backlog_pl | 139 |
 | backlog_cs | 641 |
 | backlog_de | 659 |
 | backlog_fr | 578 |
 | backlog_hu | 663 |
-| backlog_it | 462 |
+| backlog_it | 472 |
 | backlog_nl | 691 |
 | backlog_pt | 620 |
-| backlog_ro | 435 |
+| backlog_ro | 434 |
 | backlog_ru | 60 |
 | backlog_sk | 663 |
 | backlog_tr | 542 |
@@ -218,8 +218,8 @@
 | backlog_no | 663 |
 | backlog_sl | 663 |
 | backlog_sq | 663 |
-| backlog_sr | 282 |
-| backlog_sv | 570 |
+| backlog_sr | 275 |
+| backlog_sv | 566 |
 | backlog_sw | 905 |
 | backlog_ta | 905 |
 | backlog_te | 905 |
@@ -230,6 +230,6 @@
 | backlog_vi | 905 |
 | backlog_zh | 905 |
 | backlog_zh_TW | 2456 |
-| delta_24h | -1882 (-4.7%) |
+| delta_24h | -1884 (-4.7%) |
 | stagnation_status | 🟢 warming_up |
 | stagnation_decrease | 1.1% over 6.0h |

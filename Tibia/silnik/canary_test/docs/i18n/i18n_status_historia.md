@@ -1,23 +1,23 @@
 # i18n — Historia postępu
 
-> Ostatnia aktualizacja: 2026-02-17T08:23:06Z  
-> Globalny coverage: **13.62%**  
-> Repair backlog: **38169** kluczy
+> Ostatnia aktualizacja: 2026-02-17T09:23:08Z  
+> Globalny coverage: **13.66%**  
+> Repair backlog: **38167** kluczy
 
 ---
 
-## 📅 Dzisiaj: 2026-02-17 — progresywne (9h / 5h)
+## 📅 Dzisiaj: 2026-02-17 — progresywne (10h / 10h)
 
 | Metryka | Wartość |
 |---------|---------|
-| Kluczy przetłumaczonych | **30,525** |
-| Throughput | 3,391.7 kluczy/h |
-| Guard fail rate | 43.78% (23,774 / 54,299) |
-| Cykli workera | 344 |
-| Coverage | 10.26% → 13.62% |
-| Repair queue | 38,661 → 38,169 (-492) |
+| Kluczy przetłumaczonych | **33,178** |
+| Throughput | 3,317.8 kluczy/h |
+| Guard fail rate | 44.94% (27,080 / 60,258) |
+| Cykli workera | 377 |
+| Coverage | 10.26% → 13.66% |
+| Repair queue | 38,661 → 38,167 (-494) |
 
-**Tryby workera:** AUTO_TRANSLATE: 1344
+**Tryby workera:** AUTO_TRANSLATE: 1474
 
 **Migracja:** 15/15 plików (100.0%)
 
@@ -26,13 +26,13 @@
 
 | Język | Przetłum. | Guard fail | Coverage |
 |-------|-----------|------------|----------|
-| it | 6,404 | 1312 | 47.75% |
-| ru | 6,202 | 1322 | 49.8% |
-| ro | 5,609 | 2280 | 39.19% |
-| pl | 4,420 | 15605 | 87.21% |
-| es | 3,084 | 2290 | 84.23% |
-| sv | 2,436 | 563 | 26.82% |
-| sr | 2,370 | 402 | 44.42% |
+| it | 7,027 | 1483 | 48.55% |
+| ru | 6,813 | 1441 | 50.04% |
+| ro | 6,080 | 2526 | 39.89% |
+| pl | 4,764 | 17978 | 87.26% |
+| es | 3,292 | 2683 | 84.26% |
+| sv | 2,632 | 567 | 27.01% |
+| sr | 2,570 | 402 | 44.58% |
 
 </details>
 
@@ -41,11 +41,11 @@
 
 | Kategoria | Przetłum. | Guard fail |
 |-----------|-----------|------------|
-| npc.json | 3,880 | 4244 |
-| monsters.json | 2,962 | 1089 |
-| items.json | 2,908 | 9399 |
-| server.json | 2,495 | 766 |
-| scripts.json | 2,263 | 1763 |
+| npc.json | 4,330 | 4905 |
+| monsters.json | 3,272 | 1145 |
+| items.json | 3,190 | 11052 |
+| server.json | 2,749 | 900 |
+| scripts.json | 2,415 | 1812 |
 
 </details>
 
@@ -65,19 +65,20 @@
 | 05:22-06:22 | 3,569 | 3272 | 47.83% | 6231 | -58 | 41 |
 | 06:22-07:22 | 2,039 | 1040 | 33.78% | 4084 | -521 | 26 |
 | 07:23-08:23 | 2,378 | 2187 | 47.91% | 4105 | +285 | 29 |
+| 08:23-09:23 | 2,653 | 3306 | 55.48% | 4925 | -2 | 33 |
 
 
 <details><summary>Szczegóły per język (ostatnia godzina)</summary>
 
 | Język | Przetłum. | Guard fail | Coverage |
 |-------|-----------|------------|----------|
-| it | 561 | 342 | 47.75% |
-| ru | 521 | 114 | 49.8% |
-| ro | 468 | 297 | 39.19% |
-| pl | 236 | 947 | 87.21% |
-| sr | 200 | 1 | 44.42% |
-| sv | 200 | 112 | 26.82% |
-| es | 192 | 374 | 84.23% |
+| it | 623 | 171 | 48.55% |
+| ru | 611 | 119 | 50.04% |
+| ro | 471 | 246 | 39.89% |
+| pl | 344 | 2373 | 87.26% |
+| es | 208 | 393 | 84.26% |
+| sr | 200 | 0 | 44.58% |
+| sv | 196 | 4 | 27.01% |
 
 </details>
 

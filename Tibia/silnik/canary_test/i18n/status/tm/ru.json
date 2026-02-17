@@ -36542,5 +36542,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:16:08.704727Z"
+  },
+  "npc.ahmet.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.004119Z"
+  },
+  "npc.andrew_lyze.say_7": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.049410Z"
+  },
+  "npc.appaloosa.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.068012Z"
+  },
+  "npc.bashira.sendtrade_msg_1": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Конечно, просто просмотрите мои предложения.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.108715Z"
+  },
+  "npc.battlemart.farewell_msg_1": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Прощай, |PLAYERNAME|, я буду здесь, если я тебе снова понадоблюсь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.109483Z"
+  },
+  "npc.battlemart.greet_msg_1": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "Рад тебя видеть. Я всегда рядом с твоим {shop options}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.110274Z"
+  },
+  "npc.battlemart.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Возвращайся скорее!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.110741Z"
+  },
+  "npc.baxter.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "Да здравствует КОРОЛЬ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.111094Z"
+  },
+  "npc.baxter.greet_msg_1": {
+    "src_hash": "5a79b0f1ba416a18a992917d1837d174",
+    "text": "Да здравствует король Тибиан!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.111456Z"
+  },
+  "npc.baxter.sendtrade_msg_1": {
+    "src_hash": "cf5734463548fd7f4caefa09650648e3",
+    "text": "Вы приносите свежеубитых крыс за награду в 1 золотой за каждую? Кстати, я еще покупаю зубы орков и прочую ерунду, которую ты выдрал из их чертовой корпорации... То есть... ну, ты понимаешь, о чем я.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.112464Z"
+  },
+  "npc.baxter.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "Да здравствует КОРОЛЬ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.112880Z"
+  },
+  "npc.beatrice.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.113476Z"
+  },
+  "npc.beatrice.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Конечно, просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:22:26.113900Z"
   }
 }

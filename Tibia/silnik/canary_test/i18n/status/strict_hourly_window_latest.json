@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-17T01:45:56.042443Z",
-  "window_end_utc": "2026-02-17T02:45:56.042443Z",
+  "window_start_utc": "2026-02-17T01:47:58.724882Z",
+  "window_end_utc": "2026-02-17T02:47:58.724882Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 165,
+  "total_cycles": 163,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 165
+    "AUTO_TRANSLATE": 163
   },
-  "auto_translate_cycles": 165,
+  "auto_translate_cycles": 163,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 4109,
-  "guard_fail": 3288,
+  "translated": 4036,
+  "guard_fail": 3232,
   "guard_fail_rate_pct": 44.5,
   "no_progress_entries": 2,
-  "no_progress_rate_pct": 1.8,
-  "throughput_keys_per_h": 2274.7,
-  "suspicious_total": 14398,
+  "no_progress_rate_pct": 1.9,
+  "throughput_keys_per_h": 2270.1,
+  "suspicious_total": 14366,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -43,18 +43,6 @@
       "guard_command": 0
     },
     {
-      "target": "sr/server.json",
-      "translated": 55,
-      "guard_fail": 95,
-      "guard_command": 0
-    },
-    {
-      "target": "es/questlog.json",
-      "translated": 123,
-      "guard_fail": 93,
-      "guard_command": 0
-    },
-    {
       "target": "ro/monsters.json",
       "translated": 17,
       "guard_fail": 83,
@@ -67,9 +55,21 @@
       "guard_command": 0
     },
     {
-      "target": "sv/server.json",
-      "translated": 88,
+      "target": "sr/server.json",
+      "translated": 37,
+      "guard_fail": 63,
+      "guard_command": 0
+    },
+    {
+      "target": "es/questlog.json",
+      "translated": 82,
       "guard_fail": 62,
+      "guard_command": 0
+    },
+    {
+      "target": "es/otclient_modules.json",
+      "translated": 28,
+      "guard_fail": 60,
       "guard_command": 0
     }
   ]

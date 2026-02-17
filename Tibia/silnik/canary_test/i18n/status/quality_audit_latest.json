@@ -1,109 +1,18 @@
 {
-  "timestamp": "2026-02-17T02:45:52.323785Z",
+  "timestamp": "2026-02-17T02:47:54.954549Z",
   "checked_entries": 100,
-  "issues_found": 27,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en": 13,
-    "identical_to_en_exempt": 23,
-    "artifact_token": 14,
-    "suspicious_log_high": 106,
-    "suspicious_log_critical": 89,
-    "suspicious_log_low": 5,
-    "suspicious_rejected_critical": 166,
-    "suspicious_rejected_high": 34
+    "artifact_token": 17,
+    "identical_to_en_exempt": 18,
+    "identical_to_en": 8,
+    "suspicious_log_critical": 65,
+    "suspicious_log_high": 122,
+    "suspicious_log_low": 13,
+    "suspicious_rejected_critical": 162,
+    "suspicious_rejected_high": 38
   },
   "issues": [
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -152,6 +61,83 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "otclient_modules.options_otui.tr_1",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.pickreward_otui.tr_1",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "otclient_modules.preset_otui.tr_2",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "lang": "ru",
+      "type": "artifact_token",
+      "en": "Battletactics for Mages [II]",
+      "translated": "Тактика боя для магов [II]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "lang": "ru",
+      "type": "artifact_token",
+      "en": "Battletactics for Mages [III]",
+      "translated": "Тактика боя для магов [III]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "lang": "ru",
+      "type": "artifact_token",
+      "en": "Battletactics for Mages [IV]",
+      "translated": "Тактика боя для магов [IV]"
+    },
+    {
+      "key": "questlog.quest_11.mission_12.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Mammoths",
+      "translated": "Paw and Fur: Mammoths"
+    },
+    {
+      "key": "questlog.quest_11.mission_13.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gnarlhounds",
+      "translated": "Paw and Fur: Gnarlhounds"
+    },
+    {
+      "key": "questlog.quest_11.mission_14.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Terramites",
+      "translated": "Paw and Fur: Terramites"
+    },
+    {
+      "key": "questlog.quest_11.mission_15.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Apes",
+      "translated": "Paw and Fur: Apes"
+    },
+    {
+      "key": "questlog.quest_11.mission_17.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gargoyles",
+      "translated": "Paw and Fur: Gargoyles"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

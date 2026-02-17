@@ -193,7 +193,7 @@
   "scripts.action_all_hymn_piano_teleport.msg_1": "[EN] You have not learned all the verses of the hymn",
   "scripts.action_arena.msg_1": "[EN] You already finished this battle.",
   "scripts.action_arena.msg_2": "[EN] The arena is already in use.",
-  "scripts.action_bag.msg_1": "[EN] You found a bag.",
+  "scripts.action_bag.msg_1": "Du hast eine Tasche gefunden.",
   "scripts.action_bag.msg_2": "[EN] The bookcase is empty.",
   "scripts.action_beaver.say_1": "[EN] You've marked the tree, but its former inhabitant has stolen your bait! Get it before it runs away!",
   "scripts.action_beaver.say_2": "[EN] You have marked the tree but it seems someone marked it already! He is not happy with your actions and he brought friends!",

@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-17T06:40:54.795489Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T06:41:57.867044Z",
+  "language": "pl",
+  "json_file": "html.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "html.account.characters.change_sex.html.text2",
+      "en": "{{ player.getName() }}",
+      "translated": "{{ player.getName() }}",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "html.admin_bar.html.text1",
+      "en": "{{ config.lua.serverName }}",
+      "translated": "{{ config.lua.serverName }}",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "html.experience_stages.html.text1",
+      "en": "x{{ stage.multiplier}}",
+      "translated": "x{{ stage.multiplier}}",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "html.admin.open_source.html.text3",
+      "en": "https://getbootstrap.com",
+      "translated": "https://getbootstrap.com",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "html.admin.open_source.html.text5",
+      "en": "https://fontawesome.com",
+      "translated": "https://fontawesome.com",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "html.account.login.html.text2",
+      "en": "{{ account_login_by }}:",
+      "translated": "{{ account_login_by }}:",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "html.admin.pages.form.html.text2",
+      "en": "{{ group.getName()|title }}",
+      "translated": "{{ group.getName()|title }}",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "html.serverinfo.html.text1",
+      "en": "{{ config.lua.serverName }}",
+      "translated": "{{ config.lua.serverName }}",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "html.serverinfo.html.text2",
+      "en": "{{ config.lua.loginPort }}",
+      "translated": "{{ config.lua.loginPort }}",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "html.serverinfo.html.text3",
+      "en": "{{ globalSaveHour }}:00",
+      "translated": "{{ globalSaveHour }}:00",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "html.serverinfo.html.text4",
+      "en": "{{ config.lua.worldType|upper }} ",
+      "translated": "{{ config.lua.worldType|upper }} ",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "html.spells.html.text1",
+      "en": "{{ spell.vocations|raw }}",
+      "translated": "{{ spell.vocations|raw }}",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "html.spells.html.text3",
+      "en": "{{ spell.vocations|raw }}",
+      "translated": "{{ spell.vocations|raw }}",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "html.spells.html.text4",
+      "en": "{{ spell.maglevel }}",
+      "translated": "{{ spell.maglevel }}",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "html.spells.html.text5",
+      "en": "{{ spell.vocations|raw }}",
+      "translated": "{{ spell.vocations|raw }}",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "html.account.management.html.text5",
+      "en": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
+      "translated": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "html.account.characters.change_name.html.text2",
+      "en": "{{ player.getName() }}",
+      "translated": "{{ player.getName() }}",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "html.admin.menus.form.html.text2",
+      "en": "{{ template.template }}",
+      "translated": "{{ template.template }}",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "html.activitylog.html.text1",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Niev 28 2022, 14:10:18",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "html.activitylog.html.text3",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Niev 28 2022, 14:10:18",
       "source": "tm"
     }
   ]

@@ -42838,5 +42838,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:58:05.451387Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_1": {
+    "src_hash": "5859831e2b3db23528c710b1451e13fc",
+    "text": "Șeful",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.825904Z"
+  },
+  "otclient_modules.character_otui.tr_68": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pescuit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.838383Z"
+  },
+  "otclient_modules.character_otui.tr_69": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Ecranarea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.838633Z"
+  },
+  "otclient_modules.character_otui.tr_92": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Experienţă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.840324Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_31": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Cizme",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.862856Z"
+  },
+  "otclient_modules.entergame.tr_1": {
+    "src_hash": "744e1400b3fca07b64b7bcacad954c57",
+    "text": "Mesajul zilei",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.867267Z"
+  },
+  "otclient_modules.entergame.tr_20": {
+    "src_hash": "744e1400b3fca07b64b7bcacad954c57",
+    "text": "Mesajul zilei",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.868833Z"
+  },
+  "otclient_modules.game_healthcircle.tr_10": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pescuit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.872606Z"
+  },
+  "otclient_modules.game_healthcircle.tr_11": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Ecranarea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.872970Z"
+  },
+  "otclient_modules.game_healthcircle.tr_12": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Luptă la distanță",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.873279Z"
+  },
+  "otclient_modules.game_healthcircle.tr_13": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Lupta cu toporul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.873545Z"
+  },
+  "otclient_modules.game_healthcircle.tr_14": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Lupta cu sabia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.873807Z"
+  },
+  "otclient_modules.game_healthcircle.tr_15": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Lupta de club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.874107Z"
+  },
+  "otclient_modules.game_healthcircle.tr_16": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Luptă cu pumnii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.874502Z"
+  },
+  "otclient_modules.game_shop_otui.tr_6": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.881346Z"
+  },
+  "otclient_modules.game_store.tr_15": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.883622Z"
+  },
+  "otclient_modules.inventory_otui.tr_2": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Suflet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.913766Z"
+  },
+  "otclient_modules.inventory_otui.tr_5": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Suflet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.914229Z"
+  },
+  "otclient_modules.items.tr_24": {
+    "src_hash": "48423a9049b3065103ef1026a5fa08e5",
+    "text": "Picioarele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.916475Z"
+  },
+  "otclient_modules.items.tr_31": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Cizme",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.917167Z"
+  },
+  "otclient_modules.ruleviolation.tr_13": {
+    "src_hash": "9cef976714535911afb48e36f44ff794",
+    "text": "Exilarea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.939154Z"
+  },
+  "otclient_modules.skills_otui.tr_40": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pescuit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.947654Z"
+  },
+  "otclient_modules.skills_otui.tr_41": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Ecranarea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.947894Z"
+  },
+  "otclient_modules.skills_otui.tr_42": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Luptă la distanță",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.948199Z"
+  },
+  "otclient_modules.skills_otui.tr_43": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Lupta cu toporul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.948580Z"
+  },
+  "otclient_modules.skills_otui.tr_44": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Lupta cu sabia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.948865Z"
+  },
+  "otclient_modules.skills_otui.tr_45": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Lupta de club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.949124Z"
+  },
+  "otclient_modules.skills_otui.tr_46": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Luptă cu pumnii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.949398Z"
+  },
+  "otclient_modules.skills_otui.tr_57": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Experienţă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.950487Z"
+  },
+  "otclient_modules.spelllist_otui.tr_18": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Suflet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:22.951933Z"
+  },
+  "otclient_modules.blessing.tr_8": {
+    "src_hash": "bf444eba9f83785ba7442808a567f063",
+    "text": "- Vei pierde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:30.295545Z"
+  },
+  "otclient_modules.blessing.tr_9": {
+    "src_hash": "2372bb23070375ce2fbaf05acd5bcfa3",
+    "text": "mai puțin XP și puncte de abilitate\nla următoarea ta moarte PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:30.295992Z"
+  },
+  "otclient_modules.boss_slots.tr_1": {
+    "src_hash": "88b9b7cdb71800c85830257bebf71505",
+    "text": "(complet deblocat)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:30.296230Z"
+  },
+  "otclient_modules.boss_slots.tr_2": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Bane\n\nPentru deblocarea unui nivel, vei primi următoarele puncte de șef:\nPerformanță: 5\nExpertiza: 15\nMăiestrie: 30",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:30.296764Z"
+  },
+  "otclient_modules.boss_slots.tr_3": {
+    "src_hash": "713492d3105213383111e1ca4284e133",
+    "text": "Nemesis\n\nPentru deblocarea unui nivel, vei primi următoarele puncte de șef:\nPerformanță: 10\nExpertiza: 30\nMăiestrie: 60",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:36.660132Z"
+  },
+  "otclient_modules.boss_slots.tr_4": {
+    "src_hash": "9a3b9f3362303ea8f57e16ff69927a44",
+    "text": "Arhifoe\n\nPentru deblocarea unui nivel, vei primi următoarele puncte de șef:\nPerformanță: 10\nExpertiza: 30\nMăiestrie: 60",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:36.660759Z"
+  },
+  "otclient_modules.boss_slots.tr_5": {
+    "src_hash": "ec57690da7da9fb0717ad2b395c35647",
+    "text": "Slot %d: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:36.661137Z"
+  },
+  "otclient_modules.boss_slots.tr_6": {
+    "src_hash": "0e2787224e96232b203eedfc541fe91e",
+    "text": "Se deblochează la 1500 de puncte Boss",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:36.661491Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_10": {
+    "src_hash": "46b5f8c58b679b4243cbdb5749642c86",
+    "text": "Progres",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:42.970279Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_4": {
+    "src_hash": "d4d7cd87429250170eaf111d428251c2",
+    "text": "Slot 2: Blocat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:42.971160Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_5": {
+    "src_hash": "e5a7dd75be57e95ce6497f994df8ea56",
+    "text": "Slot 1: Blocat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:59:42.971427Z"
   }
 }

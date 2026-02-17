@@ -1,103 +1,127 @@
 {
-  "timestamp": "2026-02-17T04:59:00.181323Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 16,
+  "timestamp": "2026-02-17T04:59:51.153955Z",
+  "language": "sr",
+  "json_file": "monsters.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "monster.sphere_of_wrath.desc",
+      "en": "a sphere of wrath",
+      "translated": "сфера гнева",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
+      "key": "monster.dread_minion.name",
+      "en": "Dread Minion",
+      "translated": "Дреад Минион",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
+      "key": "monster.dread_minion.desc",
+      "en": "a dread minion",
+      "translated": "ужасан слуга",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "monster.stolen_soul.name",
+      "en": "Stolen Soul",
+      "translated": "Украдена душа",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "monster.stolen_soul.desc",
+      "en": "a stolen soul",
+      "translated": "украдена душа",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.soul_reaper.name",
+      "en": "Soul Reaper",
+      "translated": "Соул Реапер",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.soul_reaper.desc",
+      "en": "a soul reaper",
+      "translated": "жетелац душа",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "monster.voidshard.name",
+      "en": "Voidshard",
+      "translated": "Воидсхард",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "monster.voidshard.desc",
+      "en": "a voidshard",
+      "translated": "а воидсхард",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "monster.freed_soul.name",
+      "en": "Freed Soul",
+      "translated": "Фреед Соул",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "monster.freed_soul.desc",
+      "en": "a Freed Soul",
+      "translated": "ослобођена душа",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "monster.freed_soul.voice_1",
+      "en": "Free at last! Free to take revenge on our captor! ",
+      "translated": "Коначно слободан! Слободни да се осветимо нашем отмичару! ",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "monster.freed_soul.voice_2",
+      "en": " We will make the despoiler of souls suffer!",
+      "translated": "Учинићемо да страда разбојник душа!",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "monster.freed_soul.voice_3",
+      "en": "We will have our revenge on the despoiler!",
+      "translated": "Ми ћемо се осветити разарачу!",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "monster.freed_soul.voice_4",
+      "en": "Now the despoiler will pay!",
+      "translated": "Сада ће разбојник платити!",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "monster.sand_brood.name",
+      "en": "Sand Brood",
+      "translated": "Санд Броод",
+      "source": "tm"
+    },
+    {
+      "key": "monster.sand_brood.desc",
+      "en": "a sand brood",
+      "translated": "пешчано легло",
+      "source": "tm"
+    },
+    {
+      "key": "monster.dark_soul.name",
+      "en": "Dark Soul",
+      "translated": "Дарк Соул",
+      "source": "tm"
+    },
+    {
+      "key": "monster.dark_soul.desc",
+      "en": "a dark soul",
+      "translated": "мрачна душа",
+      "source": "tm"
+    },
+    {
+      "key": "monster.the_sinister_hermit_clean.name",
+      "en": "The Sinister Hermit",
+      "translated": "Злокобни пустињак",
       "source": "tm"
     }
   ]

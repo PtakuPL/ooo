@@ -33550,5 +33550,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:46:49.507699Z"
+  },
+  "book.otbm.choose_one_reward_wisely": {
+    "src_hash": "2e657f7d9826b4b44e103574184ecfc4",
+    "text": "Выбирайте одну награду с умом!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:32.155991Z"
+  },
+  "book.otbm.circle_of_the_creators_and": {
+    "src_hash": "44207dd9ecaa92a34b2409eff06e4b0f",
+    "text": "круг творцов и помочь им в творчестве. Тибиасула согласилась, потому что она тоже была очарована этой идеей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:38.286714Z"
+  },
+  "book.otbm.circular_canon_of_eternal_darkness": {
+    "src_hash": "ff1dff20a412e4027f66e6fd710b08cc",
+    "text": "Круговой канон Вечной Тьмы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:38.287232Z"
+  },
+  "book.otbm.circular_canon_of_eternal_darkness_ff1dff20": {
+    "src_hash": "ff1dff20a412e4027f66e6fd710b08cc",
+    "text": "Круговой канон Вечной Тьмы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:38.287747Z"
+  },
+  "book.otbm.citizen_depot_downstairs": {
+    "src_hash": "275600fa0a453b874f3e809a307a3ba4",
+    "text": "Гражданин Depot внизу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:38.288305Z"
+  },
+  "book.otbm.city_cellar_beware_of_the": {
+    "src_hash": "e35064d51c8621205d379f2d36a54f83",
+    "text": "Городской подвал – Остерегайтесь пауков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:38.288885Z"
+  },
+  "book.otbm.clear_as_seldom_before_our": {
+    "src_hash": "062f1263fe7d76c88380fec3c771364d",
+    "text": "ясно, как редко: наш заказ будет удален",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:43.903789Z"
+  },
+  "book.otbm.clear_up_subjects_remains_and": {
+    "src_hash": "6ac19dc6a092b8687802c68e7e79663a",
+    "text": "Очистите останки и кровь субъектов. Взятое напрокат оборудование должно быть возвращено чистым и работоспособным.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:43.904682Z"
+  },
+  "book.otbm.closed_for_archeological_survey": {
+    "src_hash": "d6ded4d793ced602b6f9921d65d88f48",
+    "text": "(закрыт на археологические исследования)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:43.905244Z"
+  },
+  "book.otbm.codex_of_ultimate_boredom": {
+    "src_hash": "798795294fdbedfeff54f8b9074caa15",
+    "text": "Кодекс предельной скуки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:43.905680Z"
+  },
+  "book.otbm.congratulations_you_have_passed_the": {
+    "src_hash": "b80f13e357887b4cfc6536fc2ca97fc2",
+    "text": "Поздравляем, вы прошли Dream Challenge. Теперь наслаждайтесь плодами своего успеха и расслабьтесь, прежде чем продолжить путь к встрече с мастером.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:43.907143Z"
+  },
+  "book.otbm.contact_berenice_in_the_local": {
+    "src_hash": "395016954b6a3d5f730b9be4f1453798",
+    "text": "Свяжитесь с Беренис в местном аванпосте Общества исследователей!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:46.805447Z"
+  },
+  "book.otbm.contact_henricus_in_the_inquisiton": {
+    "src_hash": "1d87a646d5eb6cd61d4e797c932feeb6",
+    "text": "Свяжитесь с Henricus в помещении Инквизиции под тайской тюрьмой!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:46.806633Z"
   }
 }

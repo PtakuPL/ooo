@@ -55334,5 +55334,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:43:33.872578Z"
+  },
+  "otclient_modules.boss_slots.tr_2": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Rovina\n\nPer sbloccare un livello, riceverai i seguenti punti boss:\nAbilità: 5\nCompetenza: 15\nMaestria: 30",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.777775Z"
+  },
+  "otclient_modules.boss_slots.tr_6": {
+    "src_hash": "0e2787224e96232b203eedfc541fe91e",
+    "text": "Si sblocca a 1500 punti boss",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.778814Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_2": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Uccisioni totali",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.779424Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_1": {
+    "src_hash": "6b2d75cc5eb0ea8c7fdf5686d758947a",
+    "text": "1/1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.781603Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_2": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.782974Z"
+  },
+  "otclient_modules.character.tr_17": {
+    "src_hash": "453b284354c516de31dff38fa5082a17",
+    "text": "Capacità dello scudo magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.790228Z"
+  },
+  "otclient_modules.character.tr_4": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Riflessione del danno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.792838Z"
+  },
+  "otclient_modules.character.tr_46": {
+    "src_hash": "9428316ee33b703d37464160e7b7dfff",
+    "text": "Sanguisuga di mana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.793817Z"
+  },
+  "otclient_modules.character.tr_50": {
+    "src_hash": "a64e30d3c5a027e9821ebe7f8c8f819f",
+    "text": "Sanguisuga della vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.794867Z"
+  },
+  "otclient_modules.character.tr_59": {
+    "src_hash": "8d5e7e72f12067991186cdf3cb7d5d9d",
+    "text": "Premio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.796267Z"
+  },
+  "otclient_modules.character_otui.tr_23": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.801552Z"
+  },
+  "otclient_modules.character_otui.tr_86": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Velocità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.809721Z"
+  },
+  "otclient_modules.character_otui.tr_87": {
+    "src_hash": "3b8f7696879f77dfc8c74aa8df8db24b",
+    "text": "Capacità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.810173Z"
+  },
+  "otclient_modules.characterlist_otui.tr_9": {
+    "src_hash": "76a40e4f974fd895a0a2598c1cee28b4",
+    "text": "Carattere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.815769Z"
+  },
+  "otclient_modules.charms.tr_24": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selezionare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.818143Z"
+  },
+  "otclient_modules.charms.tr_55": {
+    "src_hash": "7107d1a06e5b3ecbc45b989889d6fe9b",
+    "text": "Aumenta la velocità di movimento per 10 secondi dopo essere stato colpito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.822008Z"
+  },
+  "otclient_modules.charms.tr_56": {
+    "src_hash": "af9e27729d520ea66c0959bc6b37ba24",
+    "text": "Scoppio di adrenalina",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.822582Z"
+  },
+  "otclient_modules.charms.tr_57": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "Schiva un attacco con una possibilità, evitando tutti i danni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.823297Z"
+  },
+  "otclient_modules.charms.tr_59": {
+    "src_hash": "b6af098ba1c6eec1f80bc951a947903c",
+    "text": "Riflette il danno in arrivo all'aggressore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.824172Z"
+  },
+  "otclient_modules.charms.tr_61": {
+    "src_hash": "07a184bb02b61bf7a64c9a5731b2dc50",
+    "text": "Paralizza la creatura e la paralizza per 10 secondi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.825134Z"
+  },
+  "otclient_modules.charms1410_otui.tr_10": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.827105Z"
+  },
+  "otclient_modules.charms1410_otui.tr_3": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.827844Z"
+  },
+  "otclient_modules.charms1410_otui.tr_4": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Echi di fascino minore\nOttenuto sbloccando o potenziando il fascino principale e promuovendo il tuo personaggio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.828629Z"
+  },
+  "otclient_modules.charms1410_otui.tr_7": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.829328Z"
+  },
+  "otclient_modules.charms_otui.tr_2": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Ricerca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.830242Z"
+  },
+  "otclient_modules.charms_otui.tr_3": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.830889Z"
+  },
+  "otclient_modules.charms_otui.tr_5": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.831513Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_10": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Uccisioni totali",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.852164Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_11": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.852509Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_17": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.853597Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_19": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.854000Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_22": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.854951Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_24": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Uccisioni totali",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.855411Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_25": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selezionare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.855790Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_26": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.856382Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_32": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.857404Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_5": {
+    "src_hash": "94418f938976212ff929cc1737b1ec9d",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.858356Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_7": {
+    "src_hash": "d13bc5b68b2bd9e18f29777db17cc563",
+    "text": "Comune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.858955Z"
+  },
+  "otclient_modules.editvip_otui.tr_10": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.862863Z"
+  },
+  "otclient_modules.game_cyclopedia.tr_4": {
+    "src_hash": "e850f728cac75fd2a96562687c663ebd",
+    "text": "Apri la finestra di dialogo Bosstiario",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.872190Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_3": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Echi di fascino minore\nOttenuto sbloccando o potenziando il fascino principale e promuovendo il tuo personaggio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.873385Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_4": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.873774Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_5": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.874163Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_9": {
+    "src_hash": "76a40e4f974fd895a0a2598c1cee28b4",
+    "text": "Carattere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.882039Z"
+  },
+  "otclient_modules.game_questlog_otui.tr_4": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.883601Z"
+  },
+  "otclient_modules.game_shop_otui.tr_10": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.887951Z"
+  },
+  "otclient_modules.game_store_otui.tr_5": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.894467Z"
+  },
+  "otclient_modules.gameinterface.tr_2": {
+    "src_hash": "a7e8f0f7c140cc80cc98df15c6268957",
+    "text": "Aggiungi alla lista del bottino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.896751Z"
+  },
+  "otclient_modules.gameinterface.tr_3": {
+    "src_hash": "619c926a17e038937d730675aa457628",
+    "text": "Rimuovi dall'elenco del bottino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.898638Z"
+  },
+  "otclient_modules.house.tr_100": {
+    "src_hash": "0059ab21743c19543af55cf48bcc4b1d",
+    "text": "Case proprie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:56:19.913589Z"
   }
 }

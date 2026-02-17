@@ -1,136 +1,18 @@
 {
-  "timestamp": "2026-02-17T06:51:25.704856Z",
+  "timestamp": "2026-02-17T06:56:51.672076Z",
   "checked_entries": 100,
-  "issues_found": 22,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 22,
-    "identical_to_en_exempt": 6,
-    "suspicious_log_high": 158,
-    "suspicious_log_critical": 39,
-    "suspicious_log_low": 3,
-    "suspicious_rejected_critical": 187,
-    "suspicious_rejected_high": 13
+    "identical_to_en": 5,
+    "identical_to_en_exempt": 11,
+    "artifact_token": 2,
+    "suspicious_log_critical": 28,
+    "suspicious_log_low": 5,
+    "suspicious_log_high": 167,
+    "suspicious_rejected_critical": 183,
+    "suspicious_rejected_high": 17
   },
   "issues": [
-    {
-      "key": "monster.feroxa4.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.undead_cavebear.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "monster.ocyakao.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.ocyakao.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.necropharus.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Necropharus",
-      "translated": "Necropharus"
-    },
-    {
-      "key": "monster.necropharus.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Necropharus",
-      "translated": "Necropharus"
-    },
-    {
-      "key": "monster.the_pale_count.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.the_pale_count.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.ghazbaran.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.ghazbaran.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.hirintror.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
     {
       "key": "otclient_modules.game_cyclopedia.tr_6",
       "lang": "pl",
@@ -165,8 +47,22 @@
       "type": "identical_to_en",
       "en": "Druid",
       "translated": "Druid"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "lang": "ru",
+      "type": "artifact_token",
+      "en": "Battletactics for Mages [III]",
+      "translated": "Тактика боя для магов [III]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "lang": "ru",
+      "type": "artifact_token",
+      "en": "Battletactics for Mages [IV]",
+      "translated": "Тактика боя для магов [IV]"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

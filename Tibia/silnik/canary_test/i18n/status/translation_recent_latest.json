@@ -1,7 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:45:43.787279Z",
-  "language": "it",
-  "json_file": "actions.json",
-  "translated": 0,
-  "entries": []
+  "timestamp": "2026-02-17T00:47:59.883868Z",
+  "language": "pl",
+  "json_file": "items.json",
+  "translated": 36,
+  "entries": [
+    {
+      "key": "item.12672.desc",
+      "en": "Use this knife on a dead war wolf to retrieve some leather. Don't lose it and don't leave the cave",
+      "translated": "Użyj tego noża na martwym wilku bojowym, aby odzyskać trochę skóry. Nie zgub go i nie opuszczaj jaskini",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12674.desc",
+      "en": "Dogs would probably find this treat really yummy",
+      "translated": "Psy prawdopodobnie uznałyby ten przysmak za naprawdę pyszny",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12699.name",
+      "en": "magic gold converter",
+      "translated": "magiczny konwerter złota",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12721.desc",
+      "en": "The water of the bog seems slippery and tries to escape even your clothes.",
+      "translated": "Woda torfowiska wydaje się śliska i próbuje uciec nawet z ubrania.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12722.desc",
+      "en": "It seems the water wants to go back to the bog it came from. Soon it will all be trickled away",
+      "translated": "Wygląda na to, że woda chce wrócić do bagna, z którego wyszła. Niedługo wszystko się rozpłynie",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12730.desc",
+      "en": "Did it just twitch...? No, must have been an optical illusion",
+      "translated": "Czy po prostu drgnęło...? Nie, to musiało być złudzenie optyczne",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12732.desc",
+      "en": "It feels cold and smooth",
+      "translated": "Jest zimny i gładki",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12733.desc",
+      "en": "This bow seems to be alive but keeps perfectly still",
+      "translated": "Ten łuk wydaje się żywy, ale pozostaje idealnie nieruchomy",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12737.desc",
+      "en": "It seems all its former magical power has left this broken carcass of a ring",
+      "translated": "Wygląda na to, że cała jego dawna magiczna moc opuściła ten zniszczony szkielet pierścienia",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12740.desc",
+      "en": "This is a quest item and cannot be used for anything else",
+      "translated": "Jest to przedmiot questowy i nie można go używać do niczego innego",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12741.desc",
+      "en": "It feels cold and smooth",
+      "translated": "Jest zimny i gładki",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12742.desc",
+      "en": "Fine wax for various different uses",
+      "translated": "Drobny wosk do różnych zastosowań",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12784.desc",
+      "en": "It's very toxic. Do not ever drink green liquids",
+      "translated": "To bardzo toksyczne. Nigdy nie pij zielonych płynów",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12785.desc",
+      "en": "Vascalir gave it to you to collect wasp poison",
+      "translated": "Vascalir dał ci to, żebyś zebrał truciznę na osy",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12786.desc",
+      "en": "It seems to be a part of an outfit. If you own the outfit you might refine it by using the item",
+      "translated": "Wygląda na część stroju. Jeśli posiadasz ten strój, możesz go udoskonalić, używając przedmiotu",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12787.desc",
+      "en": "It seems to be a part of an outfit. If you own the outfit you might refine it by using the item",
+      "translated": "Wygląda na część stroju. Jeśli posiadasz ten strój, możesz go udoskonalić, używając przedmiotu",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12788.desc",
+      "en": "A good item to paralyse fast and rowdy orcs",
+      "translated": "Dobry przedmiot do paraliżowania szybkich i hałaśliwych orków",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12789.desc",
+      "en": "A good item to knock out unsuspicious orcs",
+      "translated": "Dobry przedmiot do ogłuszania niczego niepodejrzewających orków",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12790.desc",
+      "en": "He doesn't seem to notice your presence.",
+      "translated": "Wygląda na to, że nie zauważa twojej obecności.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.12792.desc",
+      "en": "No - you can't fool this one with an orc outfit. He needs to be distracted.",
+      "translated": "Nie – tego nie da się oszukać strojem orka. Trzeba odwrócić jego uwagę.",
+      "source": "google_translate"
+    }
+  ]
 }

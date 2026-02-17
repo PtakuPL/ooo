@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:28:22.411548Z"
+    "updated_at": "2026-02-17T00:47:31.482541Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -99774,5 +99774,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:43:22.110846Z"
+  },
+  "item.12511.name": {
+    "src_hash": "992c68cea99543f56194f5fb83b89222",
+    "text": "ozdobny słój kanopski",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:03.450310Z"
+  },
+  "item.4996.name": {
+    "src_hash": "43a28886c43adaea8f8fe35606346a98",
+    "text": "pozostałości dzbana kanopskiego",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:07.452442Z"
+  },
+  "item.12510.desc": {
+    "src_hash": "500567a84c9e2fbbd0496e1244978d17",
+    "text": "Ten młot jest mniejszą wersją legendarnego Młota Bana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:13.819477Z"
+  },
+  "item.12542.name": {
+    "src_hash": "84c5d20ab7460938f93a397ae4b00fd2",
+    "text": "złoty wisiorek ze skorpionem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:13.819807Z"
+  },
+  "item.12543.name": {
+    "src_hash": "a20e0869e820d9a7d8c01f7b91c5a8c4",
+    "text": "złoty wisiorek z hieną",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:20.199186Z"
+  },
+  "item.12551.name": {
+    "src_hash": "9c0f4b705e452dc247cd826a090e3af2",
+    "text": "złowieszczy kawałek materiału",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:20.199477Z"
+  },
+  "item.12553.name": {
+    "src_hash": "e994eddb43682e2c9f25476dda4fff7d",
+    "text": "obszerny kawałek materiału",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:20.199751Z"
+  },
+  "item.12556.name": {
+    "src_hash": "12ac52d02500b7f1fd3dedd490963907",
+    "text": "świetlisty kawałek materiału",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:20.200017Z"
+  },
+  "item.12557.desc": {
+    "src_hash": "95e68430b7fcf60c186f452198fba715",
+    "text": "Tę rybę i rzadki składnik można znaleźć tylko w najbrudniejszych, najmroczniejszych i najbardziej błotnistych wodach",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:20.200563Z"
+  },
+  "item.126.desc": {
+    "src_hash": "dd244aa20b20e7d8fa380018045b1f16",
+    "text": "Zawiera atrament świeżo zabitej kwari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:25.515166Z"
+  },
+  "item.12602.desc": {
+    "src_hash": "fd1a09e6b4812bdd72d0993e466e3455",
+    "text": "Ten mały gwizdek wygląda na używany. Wydaje się, że podczas dmuchania nie wydaje żadnego dźwięku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:31.481607Z"
+  },
+  "item.12603.desc": {
+    "src_hash": "301580ef10720504a1f326a9d31030a7",
+    "text": "Ta różdżka kontroluje rozłam pomiędzy czasem i przestrzenią",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:31.482007Z"
+  },
+  "item.12669.desc": {
+    "src_hash": "94fa3e44fc00fea44aa714131a4fad7c",
+    "text": "Jeśli założysz go na swoim miejscu na pierścień, przyspieszy regenerację zdrowia, gdy nie będziesz głodny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:31.483074Z"
+  },
+  "item.12670.desc": {
+    "src_hash": "94fa3e44fc00fea44aa714131a4fad7c",
+    "text": "Jeśli założysz go na swoim miejscu na pierścień, przyspieszy regenerację zdrowia, gdy nie będziesz głodny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:31.483578Z"
+  },
+  "item.12672.desc": {
+    "src_hash": "1f5dbb781e453bd540fbe20a5c7c45fe",
+    "text": "Użyj tego noża na martwym wilku bojowym, aby odzyskać trochę skóry. Nie zgub go i nie opuszczaj jaskini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:39.199738Z"
+  },
+  "item.12674.desc": {
+    "src_hash": "497646dd78fad99a589a9ac3524b98c4",
+    "text": "Psy prawdopodobnie uznałyby ten przysmak za naprawdę pyszny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:39.200132Z"
+  },
+  "item.12699.name": {
+    "src_hash": "d80b9d9009200a1649accd5296b806d6",
+    "text": "magiczny konwerter złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:39.200400Z"
+  },
+  "item.12721.desc": {
+    "src_hash": "fd51f8afbe25b3d53d41f908c7e1e442",
+    "text": "Woda torfowiska wydaje się śliska i próbuje uciec nawet z ubrania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:39.200825Z"
+  },
+  "item.12722.desc": {
+    "src_hash": "be9e4f98aa415374ce8e02c78d32bc1c",
+    "text": "Wygląda na to, że woda chce wrócić do bagna, z którego wyszła. Niedługo wszystko się rozpłynie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:39.201320Z"
+  },
+  "item.12730.desc": {
+    "src_hash": "eb17e8a08e7e3ca10ecf03d42f6bfc2e",
+    "text": "Czy po prostu drgnęło...? Nie, to musiało być złudzenie optyczne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:46.215499Z"
+  },
+  "item.12732.desc": {
+    "src_hash": "f0a82aa8fa7d868e9e0207f4845a9931",
+    "text": "Jest zimny i gładki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:46.215796Z"
+  },
+  "item.12733.desc": {
+    "src_hash": "8b2e3e5757e854dc27bfd679326b6701",
+    "text": "Ten łuk wydaje się żywy, ale pozostaje idealnie nieruchomy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:46.216171Z"
+  },
+  "item.12737.desc": {
+    "src_hash": "52d071b282edcb429722b5c8548586a6",
+    "text": "Wygląda na to, że cała jego dawna magiczna moc opuściła ten zniszczony szkielet pierścienia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:46.216624Z"
+  },
+  "item.12740.desc": {
+    "src_hash": "fff50d9458a47df2047de708e226bda5",
+    "text": "Jest to przedmiot questowy i nie można go używać do niczego innego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:52.002586Z"
+  },
+  "item.12741.desc": {
+    "src_hash": "f0a82aa8fa7d868e9e0207f4845a9931",
+    "text": "Jest zimny i gładki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:52.002918Z"
+  },
+  "item.12742.desc": {
+    "src_hash": "5209b0ddeb1a1a5b9a4b94af911545b0",
+    "text": "Drobny wosk do różnych zastosowań",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:52.003246Z"
+  },
+  "item.12784.desc": {
+    "src_hash": "a634332a9884ba0cc8816b58e9883f9b",
+    "text": "To bardzo toksyczne. Nigdy nie pij zielonych płynów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:52.004081Z"
+  },
+  "item.12785.desc": {
+    "src_hash": "ea09e3143c78bfc7ae5e54c16b25c08a",
+    "text": "Vascalir dał ci to, żebyś zebrał truciznę na osy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:57.402230Z"
+  },
+  "item.12786.desc": {
+    "src_hash": "3721d15cbdb3bbcae2e14198ccf619c0",
+    "text": "Wygląda na część stroju. Jeśli posiadasz ten strój, możesz go udoskonalić, używając przedmiotu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:57.402742Z"
+  },
+  "item.12787.desc": {
+    "src_hash": "3721d15cbdb3bbcae2e14198ccf619c0",
+    "text": "Wygląda na część stroju. Jeśli posiadasz ten strój, możesz go udoskonalić, używając przedmiotu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:57.403230Z"
+  },
+  "item.12788.desc": {
+    "src_hash": "fa5479da73bfeebca13351a47e2e2346",
+    "text": "Dobry przedmiot do paraliżowania szybkich i hałaśliwych orków",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:57.403603Z"
+  },
+  "item.12789.desc": {
+    "src_hash": "86d0d5f28d4b9bb0d4acae8a5ca3ff3f",
+    "text": "Dobry przedmiot do ogłuszania niczego niepodejrzewających orków",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:57.403966Z"
+  },
+  "item.12790.desc": {
+    "src_hash": "9ec992f8e01806c24109b186422963f8",
+    "text": "Wygląda na to, że nie zauważa twojej obecności.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:59.696499Z"
+  },
+  "item.12792.desc": {
+    "src_hash": "146e3307061a627666ebeaf5376e5f84",
+    "text": "Nie – tego nie da się oszukać strojem orka. Trzeba odwrócić jego uwagę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:47:59.696953Z"
   }
 }

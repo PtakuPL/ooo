@@ -1465,11 +1465,11 @@
   },
   "npc.karith.say_26": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "Slösa inte min tid.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.905336Z"
+    "updated_at": "2026-02-17T10:27:48.660623Z"
   },
   "npc.kevin.say_46": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
@@ -29774,5 +29774,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:21:01.838760Z"
+  },
+  "npc.jack_fate_goroma.say_6": {
+    "src_hash": "bad90511f3d6237a7375049264fd8ed9",
+    "text": "Du har inte tillräckligt...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.612836Z"
+  },
+  "npc.jacob.multi_1": {
+    "src_hash": "f05fd45d1782095b5c0d200b79f0545a",
+    "text": "En offerplats? Fan, låter som någon galen kult eller något. Bara bra. Och den här gamla strukturen du pratade om som inte är en del av avloppen? Du borde se lokalhistorikern om det, man. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.617189Z"
+  },
+  "npc.jacob.multi_2": {
+    "src_hash": "594652af048fe3e07837bac6868362c1",
+    "text": "Han kan förstå vad du hittade där. Han heter Barazbaz. Han borde vara i magistratsbyggnaden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.617773Z"
+  },
+  "npc.jacob.multi_3": {
+    "src_hash": "1abd4b8600e20990dbeb5295cfb58e22",
+    "text": "Wow, du har redan gjort det, det går snabbt. Jag är van vid en mer avslappnad attityd från de flesta. Det är synd att riskera att förlora dig till några kollapsande tunnlar, men en affär är en affär. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.618669Z"
+  },
+  "npc.jacob.multi_4": {
+    "src_hash": "9ebd5066e338d8eb05700d9ff6c9cb18",
+    "text": "Jag ger dig härmed tillstånd att gå in i den övergivna delen av avloppen. Ta hand om dig, man! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.619288Z"
+  },
+  "npc.jacob.multi_5": {
+    "src_hash": "9e0d76c37b4c03fd908725b9e856f95a",
+    "text": "Om du hittar något intressant, kom tillbaka för att prata om {abandoned sewers}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.619854Z"
+  },
+  "npc.jacob.multi_6": {
+    "src_hash": "2d3ebc8b08f755600f77a263ccb797ad",
+    "text": "Vill du komma in i de övergivna avloppen? Det är ganska farligt och ingen bra idé. Den delen av avloppen var inte förseglad för ingenting, vet du? ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.620801Z"
+  },
+  "npc.jacob.multi_7": {
+    "src_hash": "f1c5565d19f4610031f252502dfbe964",
+    "text": "Men hej, det är ditt liv, bror. Så här är affären. Jag släpper in dig i de övergivna avloppen om du hjälper mig med vår {mission}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.621544Z"
+  },
+  "npc.jacob.say_1": {
+    "src_hash": "87aa8deff381e3211ae4d161ed27231b",
+    "text": "Jag är glad att se dig tillbaka levande och frisk. Hittade du något intressant som du vill {report}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.622288Z"
+  },
+  "npc.jacob.say_2": {
+    "src_hash": "738f4662a56db4ac43c7f1efe1c567a2",
+    "text": "Avloppen behöver repareras. Är du med?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.622730Z"
+  },
+  "npc.jacob.say_3": {
+    "src_hash": "6c02d69900afaf72190aed36848f397a",
+    "text": "Elliotts fortsätter att kalla det så. Det är bara ett annat jobb! Har du fixat några trasiga rör och sånt? Låt mig kolla, {ok}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.623399Z"
+  },
+  "npc.jacob.say_5": {
+    "src_hash": "653e54c314040b6db56f6e10179d2e7f",
+    "text": "Bra. Trasiga rör och generatorbitar, det är rök som tränger undan. Det är så man känner igen dem. Se hur du kan fixa dem med händerna. Behöver ungefär, åh, åtminstone tjugo av dem repareras. Rapportera till mig eller Jacob",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.624519Z"
+  },
+  "npc.jacob.say_7": {
+    "src_hash": "1035739074676dd38ff606000111ed0f",
+    "text": "Du har redan rapporterat detta uppdrag, gå till nästa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.624986Z"
+  },
+  "npc.jakahr.sendtrade_msg_1": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Här. Glöm inte att du måste köpa en etikett också om du vill skicka ett paket. Skriv alltid namnet på {receiver} på första raden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.625840Z"
+  },
+  "npc.jefrey.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.635465Z"
+  },
+  "npc.jessica.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.639253Z"
+  },
+  "npc.jezzara.farewell_msg_1": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Må upplysning vara din väg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.639871Z"
+  },
+  "npc.jezzara.walkaway_msg_1": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Må upplysning vara din väg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.640424Z"
+  },
+  "npc.junkar_mines.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Full fart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.644131Z"
+  },
+  "npc.junkar_thais.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Full fart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.645093Z"
+  },
+  "npc.kais.stdmod_10": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.646124Z"
+  },
+  "npc.kais.stdmod_11": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.646770Z"
+  },
+  "npc.kais.stdmod_3": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.647343Z"
+  },
+  "npc.kais.stdmod_4": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.647783Z"
+  },
+  "npc.kais.stdmod_5": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.648613Z"
+  },
+  "npc.kais.stdmod_9": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.649502Z"
+  },
+  "npc.karith.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.652234Z"
+  },
+  "npc.karith.say_27": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Då nej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.661114Z"
+  },
+  "npc.karith.stdmod_2": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.662494Z"
+  },
+  "npc.karith.stdmod_3": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.663064Z"
+  },
+  "npc.kasmir.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.665713Z"
+  },
+  "npc.kasmir.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.666156Z"
+  },
+  "npc.kasmir.stdmod_11": {
+    "src_hash": "01e8edec42ed0707465c58f2a9b4bff6",
+    "text": "Jag tror att du har glömt att ta med din påle, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.666787Z"
+  },
+  "npc.kasmir.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, jag fick besked om vad jag skulle göra. Är du beredd att ta emot min bönelinje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.667327Z"
+  },
+  "npc.kasmir.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Du har redan fått min bönrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.667993Z"
+  },
+  "npc.kasmir.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.668556Z"
+  },
+  "npc.kasmir.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.669381Z"
+  },
+  "npc.kasmir.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.669813Z"
+  },
+  "npc.kasmir.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.670722Z"
+  },
+  "npc.kasmir.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:48.671544Z"
   }
 }

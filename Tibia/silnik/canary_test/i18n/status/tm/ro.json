@@ -60430,5 +60430,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:26:31.121477Z"
+  },
+  "monster.gingerbread_men.voice_2": {
+    "src_hash": "ad64c23fe7cd9d4a746d582eac86a475",
+    "text": "Mi-ai văzut brutarul de trufe?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:39.764765Z"
+  },
+  "monster.gingerbread_men.voice_3": {
+    "src_hash": "3662042d4c8d3eb511c061a383617c2c",
+    "text": "Ar trebui să vizitez Carnavalul Bomboanelor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:39.765169Z"
+  },
+  "monster.green_frog.name": {
+    "src_hash": "ca766ee39578b8afb3bd75d42addd992",
+    "text": "Broasca Verde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:39.765392Z"
+  },
+  "monster.green_frog.desc": {
+    "src_hash": "e44bfd2ab72e35a44cdaed03ee282881",
+    "text": "o broasca verde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:27:39.765607Z"
   }
 }

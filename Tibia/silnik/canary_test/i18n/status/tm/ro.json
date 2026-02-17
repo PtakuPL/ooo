@@ -53974,5 +53974,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:20:03.162972Z"
+  },
+  "startup.startup.msg1": {
+    "src_hash": "9492d900d3624c54c0e10a604ea01c3a",
+    "text": "/startup/tables/load.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:53.421579Z"
+  },
+  "startup.startup.msg2": {
+    "src_hash": "5409426cb802c71fa3d2ca6ac45b1016",
+    "text": "/startup/others/load.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:53.421935Z"
+  },
+  "startup.functions.msg1": {
+    "src_hash": "22790cbf726bd6e40931c59a5382464d",
+    "text": "CreateItemOnMap",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:53.422214Z"
+  },
+  "startup.functions.msg2": {
+    "src_hash": "c87cc4511fc6acd81f8e09c2fa96b35f",
+    "text": "create_item.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:53.422489Z"
+  },
+  "startup.functions.msg4": {
+    "src_hash": "439b14776303de2b7bb3ed5503c08c70",
+    "text": "[loadLuaMapAction] - S-a găsit codul articolului greșit {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:53.422848Z"
+  },
+  "startup.load.msg1": {
+    "src_hash": "3a9b4ec9054a50ab6d18db2480492e51",
+    "text": "/startup/tables/chest.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:00.600055Z"
+  },
+  "startup.chest.msg4": {
+    "src_hash": "01de21b6f8f5a4d88a9ece3443e883e1",
+    "text": "legiondawnport",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:00.601188Z"
+  },
+  "startup.chest.msg5": {
+    "src_hash": "d9b20a6a55d4c30024d5519f0f0d9a84",
+    "text": "deeperfibula1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:00.601506Z"
+  },
+  "startup.load.msg2": {
+    "src_hash": "99d86911286dda1dbf61b89f07e7c901",
+    "text": "/startup/tables/corpse.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:00.601833Z"
+  },
+  "startup.load.msg3": {
+    "src_hash": "2bf5b0dd3149193db13f29e511f0454c",
+    "text": "/startup/tables/create_item.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:06.268038Z"
+  },
+  "startup.load.msg4": {
+    "src_hash": "b148af11a818032c9df35a76bc86c39c",
+    "text": "/startup/tables/door_key.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:06.268398Z"
+  },
+  "startup.load.msg5": {
+    "src_hash": "cb3d0164b1bbcea647c45c2061cf2ec0",
+    "text": "/startup/tables/door_level.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:22:06.268733Z"
   }
 }

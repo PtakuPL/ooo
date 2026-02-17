@@ -1,24 +1,38 @@
 {
-  "timestamp": "2026-02-17T08:20:06.008143Z",
+  "timestamp": "2026-02-17T08:22:43.314925Z",
   "checked_entries": 100,
-  "issues_found": 18,
+  "issues_found": 19,
   "issues_by_type": {
-    "identical_to_en": 2,
-    "identical_to_en_exempt": 5,
+    "identical_to_en": 3,
+    "identical_to_en_exempt": 17,
     "artifact_token": 16,
-    "suspicious_log_high": 173,
-    "suspicious_log_critical": 26,
+    "suspicious_log_critical": 38,
+    "suspicious_log_high": 161,
     "suspicious_log_low": 1,
-    "suspicious_rejected_critical": 168,
-    "suspicious_rejected_high": 32
+    "suspicious_rejected_critical": 167,
+    "suspicious_rejected_high": 33
   },
   "issues": [
     {
-      "key": "client.topmenu.text2",
+      "key": "achievement.170.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Warlock",
+      "translated": "Warlock"
+    },
+    {
+      "key": "startup.functions.msg1",
       "lang": "ro",
       "type": "identical_to_en",
-      "en": "Ctrl+Shift+T",
-      "translated": "Ctrl+Shift+T"
+      "en": "CreateItemOnMap",
+      "translated": "CreateItemOnMap"
+    },
+    {
+      "key": "startup.chest.msg4",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "legiondawnport",
+      "translated": "legiondawnport"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -131,13 +145,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "achievement.170.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Warlock",
-      "translated": "Warlock"
     }
   ],
   "threshold": 10,

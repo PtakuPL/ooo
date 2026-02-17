@@ -1,8 +1,8 @@
 {
-  "total_cycles": 369,
+  "total_cycles": 370,
   "mode": "AUTO_TRANSLATE",
   "category": "it",
-  "last_update": "2026-02-17T09:20:06.163644",
+  "last_update": "2026-02-17T09:22:43.483391",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "it",
-    "json_file": "achievements.json",
-    "keys_to_translate": 57,
-    "guard_fail": 6,
+    "json_file": "php.json",
+    "keys_to_translate": 59,
+    "guard_fail": 1,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

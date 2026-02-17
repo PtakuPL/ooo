@@ -59774,5 +59774,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:18:42.380123Z"
+  },
+  "php.mailer.text3": {
+    "src_hash": "3846ca489dd790dd85e0b5e0b9dad6d5",
+    "text": "E-mail di successo consegnate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:35.171268Z"
+  },
+  "php.mailer.text4": {
+    "src_hash": "67634e1d3d15eaa0ce21d2a9f8b03385",
+    "text": "Le email $failed non sono riuscite.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:35.171588Z"
+  },
+  "php.server_status.text1": {
+    "src_hash": "fc026d2cbd61046fa6d081aa7997284e",
+    "text": "fas fa-cerchio esclamativo testo-pericolo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:35.171890Z"
+  },
+  "php.server_status.text2": {
+    "src_hash": "55ca72648287c8779f1fd60954bfad14",
+    "text": "col-md-6 col-lg-6",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:42.513953Z"
+  },
+  "php.server_status.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "scheda-info-scheda-schema-scheda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:42.514316Z"
+  },
+  "php.server_status.text5": {
+    "src_hash": "6e6159b3c97c1e13c5cd0b6402ae9649",
+    "text": "peso-carattere-grassetto m-0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:42.514648Z"
+  },
+  "php.settings.text1": {
+    "src_hash": "353d8ff78b17c34b31c8ad01d525a804",
+    "text": "Il plugin $plugin non esiste o non ha impostazioni definite.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:42.515035Z"
+  },
+  "php.settings.text2": {
+    "src_hash": "4cf7384b414a9d7d4624d7e776f98aee",
+    "text": "Impossibile caricare il file delle impostazioni per il plugin $plugin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:50.003915Z"
+  },
+  "php.plugins.text1": {
+    "src_hash": "f16a06e7d231a35db793c74cf0ed3b68",
+    "text": "Recupero delle informazioni più recenti da $repoUri..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:50.004384Z"
+  },
+  "php.plugins.text2": {
+    "src_hash": "79001f389eb5f5185f6945430cb57be1",
+    "text": "upload_max_dimensionefile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:50.005005Z"
+  },
+  "php.news.text1": {
+    "src_hash": "64b46d605a153160d660746a9e3f014f",
+    "text": ". PREFISSO_TABELLA .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:50.005321Z"
+  },
+  "php.menus.text1": {
+    "src_hash": "efb36922d5d9612c37ad341d2876f464",
+    "text": "Questo modello non supporta la reinstallazione dei menu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:50.005669Z"
+  },
+  "php.menus.text2": {
+    "src_hash": "1d2317452aca8b6e6eeeada6602e489a",
+    "text": "col-md-12 col-lg-6",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:55.361992Z"
+  },
+  "php.menus.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "scheda-info-scheda-schema-scheda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:55.362348Z"
+  },
+  "php.menus.text4": {
+    "src_hash": "130a635302db9ca6c9df51832d42f783",
+    "text": "ui-state-default",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:55.363105Z"
+  },
+  "php.menus.text5": {
+    "src_hash": "3c295729a9712de89566a726e015e430",
+    "text": "btn btn-pericolo float-destra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:55.363378Z"
+  },
+  "php.players.text1": {
+    "src_hash": "5e5b7cfa148d7664fb340157e6606abe",
+    "text": "La vocazione con questo id non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:55.363748Z"
+  },
+  "php.players.text2": {
+    "src_hash": "b47b9410367725df48e327131e4850ef",
+    "text": "col-12 col-sm-12 col-lg-10",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:01.031050Z"
+  },
+  "php.players.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "scheda-info-scheda-schema-scheda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:01.031686Z"
+  },
+  "php.players.text5": {
+    "src_hash": "1080f71ac0a5aa7505c4274d20a0ffa0",
+    "text": "btn btn-successo btn-sm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:01.032991Z"
+  },
+  "php.upload_image.text1": {
+    "src_hash": "32e960d3879a6fb709a3d6de9507911b",
+    "text": "Non esiste una politica P3P.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:01.033646Z"
+  },
+  "php.template.text1": {
+    "src_hash": "c0fda951c2d5c4c92bb0fc32f64de7f4",
+    "text": "intestazione principale barra di navigazione barra di navigazione-espandi barra di navigazione-bianca barra di navigazione-luce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:08.945692Z"
+  },
+  "php.template.text2": {
+    "src_hash": "e2d5d75ea4935cdabe58e68c1a4529ab",
+    "text": "elemento-nav d-none d-sm-blocco in linea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:08.946021Z"
+  },
+  "php.template.text3": {
+    "src_hash": "f05fe584a9e3b77bf6bf5028670d6e86",
+    "text": "navbar-navml-auto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:08.946567Z"
+  },
+  "php.index.text1": {
+    "src_hash": "2960aaccfd9458679188ff8836c0f996",
+    "text": ". BASE_URL . installare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:08.947031Z"
+  },
+  "php.exception.text1": {
+    "src_hash": "2553d1f72c1bad21b4705bf039844acc",
+    "text": "impossibile aprire error.log in scrittura... quindi non è stato possibile salvare le informazioni dettagliate... sei sicuro che la directory system/logs sia scrivibile dal server web? Correggilo e quindi aggiorna questo sito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:08.947815Z"
+  },
+  "php.exception.text2": {
+    "src_hash": "f9e6bdf920528f103378f0df2dae264e",
+    "text": "$messaggio<br/>PH1__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:15.247291Z"
+  },
+  "php.settingssetcommand.text1": {
+    "src_hash": "0e8627c69232a44011cbc71279c4e7b1",
+    "text": "Impostazione $key aggiornata con successo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:15.247619Z"
+  },
+  "php.migrateruncommand.text1": {
+    "src_hash": "5b3246e070947127c7e2f6ef6a7ff0b7",
+    "text": "Controllalo ed esegui nuovamente il comando",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:15.247931Z"
+  },
+  "php.migrateruncommand.text2": {
+    "src_hash": "045ed1be584efb9e9a37a4b4550c6ea0",
+    "text": "Nessuna migrazione è stata eseguita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:15.248239Z"
+  },
+  "php.plugins.text3": {
+    "src_hash": "31f1a1e2915d46bdb448699846c17d0a",
+    "text": "e stai utilizzando la versione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:15.248513Z"
+  },
+  "php.plugins.text4": {
+    "src_hash": "1f7ded1bec5ad297946d94c0df1d46c7",
+    "text": "da installare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:22.163834Z"
+  },
+  "php.plugins.text5": {
+    "src_hash": "2347f6d3b927235475fbf0808b19bd71",
+    "text": "esistere nel database.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:22.164120Z"
+  },
+  "php.settings.text3": {
+    "src_hash": "8b7067a01d3834aad2c4f3c5987e398f",
+    "text": "gruppo-di-input-aggiungi testo-del-gruppo-di-input",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:22.164433Z"
+  },
+  "php.settings.text4": {
+    "src_hash": "44eaef6924cd938b409c14e667746545",
+    "text": "fas fa-eye-slash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:22.164734Z"
+  },
+  "php.settings.text5": {
+    "src_hash": "7835fce2559be64acaaba40289d34365",
+    "text": "bene l'impostazione predefinita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:22.164976Z"
+  },
+  "php.validator.text1": {
+    "src_hash": "118482af672a8c357bae2c9bd39eb089",
+    "text": "Il nome del personaggio è troppo corto. minimo lunghezza <b>$minLength</b> caratteri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:27.781093Z"
+  },
+  "php.validator.text2": {
+    "src_hash": "82c4b5da7482fe473358790847bb8b9c",
+    "text": "Il nome del personaggio è troppo lungo. Massimo. lunghezza <b>$maxLength</b> caratteri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:27.781594Z"
+  },
+  "php.validator.text3": {
+    "src_hash": "9057059de9ce736e035a5942d00bcc80",
+    "text": "Formato del nome non valido. Utilizza solo A-Z, spazi e .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:27.781965Z"
+  },
+  "php.validator.text4": {
+    "src_hash": "9057059de9ce736e035a5942d00bcc80",
+    "text": "Formato del nome non valido. Utilizza solo A-Z, spazi e .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:27.782378Z"
+  },
+  "php.validator.text5": {
+    "src_hash": "142bf4ca66397c4719c7a985320ca1e1",
+    "text": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:27.782727Z"
+  },
+  "php.createcharacter.text1": {
+    "src_hash": "04f9ddc4f90313c2d3d4536480ed9276",
+    "text": "Errore. Non riesco a creare il personaggio. Probabilmente problema con il database. Riprova più tardi o contatta l'amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:34.708580Z"
+  },
+  "php.forum.text1": {
+    "src_hash": "8c449edd509090cec7150b97604ebd35",
+    "text": ". FORUM_TABLE_PREFIX .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:34.709038Z"
+  },
+  "php.monsters.text1": {
+    "src_hash": "5b11601a7c75a47d708a6edaecc5f77c",
+    "text": "<h2>Tutti i record eliminati dalla tabella ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:34.709367Z"
+  },
+  "php.monsters.text2": {
+    "src_hash": "51067c3354e3ab4f169926e9ccd3d011",
+    "text": "mostri nel database.</h2>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:34.709637Z"
+  },
+  "php.monsters.text3": {
+    "src_hash": "f2c3089cda3860ef1c9246ee08c672d2",
+    "text": "è l'incantesimo di velocità che i mostri usano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:21:34.709947Z"
   }
 }

@@ -1,31 +1,17 @@
 {
   "lang": "it",
-  "coverage_pct": 48.4,
+  "coverage_pct": 48.9,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:03:06.066556Z",
-  "issues_total": 428,
+  "checked_at": "2026-02-17T08:32:02.328456Z",
+  "issues_total": 427,
   "issues_by_type": {
-    "consistency_in_language": 9,
+    "consistency_in_language": 8,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 19
   },
   "consistency_issues": [
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "You read: ",
-      "variants": [
-        "Leggi:",
-        "Leggi: "
-      ],
-      "variants_count": 2,
-      "examples": [
-        "books:ui.readable.you_read_prefix",
-        "cpp:cpp.look.you_read"
-      ]
-    },
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
@@ -297,6 +283,15 @@
       "lang": "missile"
     },
     {
+      "key": "event.player.msg1",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "event.player.msg_move_fast",
+      "pl": "Nie możesz tak szybko przenosić tego przedmiotu.",
+      "lang": "event.player.msg_move_fast"
+    },
+    {
       "key": "item.10.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -459,15 +454,6 @@
       "lang": "Broar!"
     },
     {
-      "key": "monster.swamp_troll.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar!",
-      "pl": "Ryk!",
-      "lang": "Groar!"
-    },
-    {
       "key": "monster.swamp_troll.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -495,15 +481,6 @@
       "lang": "Ugaar!"
     },
     {
-      "key": "monster.orc_rider.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
       "key": "monster.troll_champion.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -511,33 +488,6 @@
       "en": "Grrrr",
       "pl": "Wrrrr",
       "lang": "Grrrr"
-    },
-    {
-      "key": "monster.troll_champion.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.orc.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orc",
-      "pl": "Ork",
-      "lang": "Orc"
-    },
-    {
-      "key": "monster.animated_rhino.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "Warczenie!",
-      "lang": "Snarl!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -558,15 +508,6 @@
       "lang": "Boohaa!"
     },
     {
-      "key": "monster.frostfur.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr",
-      "pl": "Wrr",
-      "lang": "Grrr"
-    },
-    {
       "key": "monster.inky.voice_4",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -583,15 +524,6 @@
       "en": "Rrrah!",
       "pl": "Rrr!",
       "lang": "Rrrah!"
-    },
-    {
-      "key": "monster.malofur_mangrinder.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BOOOM!",
-      "pl": "BUM!",
-      "lang": "BOOOM!"
     },
     {
       "key": "monster.lovely_polar_bear.voice_1",
@@ -711,15 +643,6 @@
       "lang": "Grrrrunt"
     },
     {
-      "key": "monster.stolen_knowledge_of_lifesteal.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Stolen Knowledge of Lifesteal",
-      "pl": "Skradziono Knowledge kradzieży życia",
-      "lang": "Stolen Knowledge of Lifesteal"
-    },
-    {
       "key": "monster.mean_maw.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -727,15 +650,6 @@
       "en": "Clank.",
       "pl": "Brzęk.",
       "lang": "Clank."
-    },
-    {
-      "key": "monster.courage_leech.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hiss.",
-      "pl": "Syk.",
-      "lang": "Hiss."
     },
     {
       "key": "monster.bony_sea_devil.voice_2",
@@ -810,15 +724,6 @@
       "lang": "Chrrr."
     },
     {
-      "key": "monster.frost_servant.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crrrrk.",
-      "pl": "Crrr.",
-      "lang": "Crrrrk."
-    },
-    {
       "key": "monster.hirintror.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -837,15 +742,6 @@
       "lang": "GRRR"
     },
     {
-      "key": "monster.orc_sambackpack.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orc",
-      "pl": "Ork",
-      "lang": "Orc"
-    },
-    {
       "key": "monster.the_welter.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -853,15 +749,6 @@
       "en": "FCHHHHH",
       "pl": "Fchhhh",
       "lang": "FCHHHHH"
-    },
-    {
-      "key": "monster.fernfang.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
     },
     {
       "key": "monster.black_sheep.voice_1",
@@ -2615,7 +2502,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Ahhhhhhhh! ",
-      "pl": "Ahhhhhhhh!",
+      "pl": "Aaaaaaachhhhhh! ",
       "lang": "Ahhhhhhhh! "
     },
     {
@@ -3004,6 +2891,24 @@
       "en": "No",
       "pl": "Nie",
       "lang": "No"
+    },
+    {
+      "key": "php.menus.text4",
+      "category": "php",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ui-state-default",
+      "pl": "domyślny stan interfejsu użytkownika",
+      "lang": "ui-state-default"
+    },
+    {
+      "key": "php.players.text2",
+      "category": "php",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "col-12 col-sm-12 col-lg-10",
+      "pl": "kol-12 kol-sm-12 kol-lg-10",
+      "lang": "col-12 col-sm-12 col-lg-10"
     },
     {
       "key": "quests.actions_boxramp.msg_1",
@@ -3751,6 +3656,87 @@
       "en": "Yummm.",
       "pl": "Mniam.",
       "lang": "Yummm."
+    },
+    {
+      "key": "scripts.horestis_jars.fail_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Waaaaaah",
+      "pl": "Waaaah",
+      "lang": "Waaaaaah"
+    },
+    {
+      "key": "scripts.hydra_tongue_salad.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.info.access",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Access: ",
+      "pl": "Dostęp: ",
+      "lang": "Access: "
+    },
+    {
+      "key": "scripts.info.ip",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "IP: ",
+      "pl": "IP: ",
+      "lang": "IP: "
+    },
+    {
+      "key": "scripts.info.name",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Name: ",
+      "pl": "Nazwa: ",
+      "lang": "Name: "
+    },
+    {
+      "key": "scripts.info.position",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Position: ",
+      "pl": "Pozycja: ",
+      "lang": "Position: "
+    },
+    {
+      "key": "scripts.info.skill_level",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* Level: ",
+      "pl": "* poziom: ",
+      "lang": "* Level: "
+    },
+    {
+      "key": "scripts.info.skills_header",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Skills:",
+      "pl": "Umiejętności:",
+      "lang": "Skills:"
+    },
+    {
+      "key": "scripts.info.speed",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed: ",
+      "pl": "Szybkość: ",
+      "lang": "Speed: "
     }
   ],
   "length_ratio_issues": [
@@ -3928,8 +3914,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 12,
-    "skipped": 68,
+    "applied": 3,
+    "skipped": 77,
     "errors": 0
   }
 }

@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-17T08:02:24.015214Z",
+  "timestamp": "2026-02-17T08:32:26.971236Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
   "status": "warming_up",
   "alert": false,
-  "message": "Stagnation window not ready (window_too_short), span=5.97h samples=111",
+  "message": "Stagnation window not ready (window_too_short), span=5.93h samples=109",
   "reason": "window_too_short",
   "top_key": "es:npc.json",
   "top_count": 51,
-  "old_total": 38603,
-  "new_total": 38194,
-  "decrease_pct": 1.06,
-  "old_ts": "2026-02-17T01:59:18.487011Z",
-  "new_ts": "2026-02-17T08:00:33.541607Z",
-  "hours_elapsed": 5.968,
-  "sample_count": 111,
+  "old_total": 38596,
+  "new_total": 38169,
+  "decrease_pct": 1.11,
+  "old_ts": "2026-02-17T02:30:01.726910Z",
+  "new_ts": "2026-02-17T08:30:28.215453Z",
+  "hours_elapsed": 5.935,
+  "sample_count": 109,
   "per_lang_trend": {
     "ar": {
       "old": 904,
@@ -138,10 +138,10 @@
       "decrease_pct": 0.0
     },
     "it": {
-      "old": 479,
-      "new": 461,
-      "delta": 18,
-      "decrease_pct": 3.76
+      "old": 478,
+      "new": 462,
+      "delta": 16,
+      "decrease_pct": 3.35
     },
     "ja": {
       "old": 904,
@@ -210,10 +210,10 @@
       "decrease_pct": 0.0
     },
     "pl": {
-      "old": 214,
+      "old": 209,
       "new": 139,
-      "delta": 75,
-      "decrease_pct": 35.05
+      "delta": 70,
+      "decrease_pct": 33.49
     },
     "pt": {
       "old": 620,
@@ -222,10 +222,10 @@
       "decrease_pct": 0.0
     },
     "ro": {
-      "old": 503,
-      "new": 422,
-      "delta": 81,
-      "decrease_pct": 16.1
+      "old": 502,
+      "new": 435,
+      "delta": 67,
+      "decrease_pct": 13.35
     },
     "ru": {
       "old": 113,
@@ -253,9 +253,9 @@
     },
     "sr": {
       "old": 492,
-      "new": 321,
-      "delta": 171,
-      "decrease_pct": 34.76
+      "new": 282,
+      "delta": 210,
+      "decrease_pct": 42.68
     },
     "sv": {
       "old": 533,

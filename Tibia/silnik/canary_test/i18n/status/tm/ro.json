@@ -54734,5 +54734,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:28:47.620900Z"
+  },
+  "monster.ice_golem.voice_3": {
+    "src_hash": "bc295d5ae9a0872cbbf39e14a2c16f4b",
+    "text": "Gnarr.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:29:54.022984Z"
+  },
+  "monster.clay_guardian.name": {
+    "src_hash": "2c7a28956d81f86276564af9edc04b0b",
+    "text": "Gardianul Clay",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:29:54.023225Z"
+  },
+  "monster.clay_guardian.desc": {
+    "src_hash": "41ead12fac041627a1d09faab2533ebc",
+    "text": "un gardian de lut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:30:01.583968Z"
+  },
+  "monster.golden_servant.name": {
+    "src_hash": "9e837df4ac3350049a0ce44def84b265",
+    "text": "Servitorul de Aur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:30:01.584216Z"
+  },
+  "monster.golden_servant.desc": {
+    "src_hash": "902b471cc823171d49de4da19d7f5599",
+    "text": "un servitor de aur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:30:01.584460Z"
+  },
+  "monster.stone_golem.name": {
+    "src_hash": "8ee8c4669dc561a8b7c7a5dd2a5764b8",
+    "text": "Golem de piatră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:30:01.584676Z"
+  },
+  "monster.stone_golem.desc": {
+    "src_hash": "f47a341e6c0b356eb5e46a3e2471f4b5",
+    "text": "un golem de piatră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:30:01.584942Z"
+  },
+  "monster.diamond_servant_replica.desc": {
+    "src_hash": "faa51c14e572a4cb2dd3015037845b12",
+    "text": "o replică a servitorului de diamant",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:30:05.577971Z"
   }
 }

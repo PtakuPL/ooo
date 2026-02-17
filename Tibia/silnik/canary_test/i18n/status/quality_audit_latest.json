@@ -1,16 +1,80 @@
 {
-  "timestamp": "2026-02-17T08:29:11.070320Z",
+  "timestamp": "2026-02-17T08:30:54.716316Z",
   "checked_entries": 100,
-  "issues_found": 34,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en_exempt": 2,
+    "identical_to_en": 9,
+    "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "identical_to_en": 18,
-    "suspicious_log_high": 200,
+    "suspicious_log_high": 174,
+    "suspicious_log_critical": 26,
     "suspicious_rejected_critical": 171,
     "suspicious_rejected_high": 29
   },
   "issues": [
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.dharalion.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.dharalion.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.apocalypse.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.apocalypse.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -122,132 +186,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "monster.ghazbaran.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
     }
   ],
   "threshold": 10,

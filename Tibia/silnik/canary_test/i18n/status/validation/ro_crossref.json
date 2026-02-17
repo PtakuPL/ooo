@@ -1,13 +1,13 @@
 {
   "lang": "ro",
-  "coverage_pct": 39.9,
+  "coverage_pct": 40.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:03:36.642071Z",
-  "issues_total": 420,
+  "checked_at": "2026-02-17T08:32:27.596347Z",
+  "issues_total": 419,
   "issues_by_type": {
-    "consistency_in_language": 7,
+    "consistency_in_language": 6,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 13
   },
@@ -24,20 +24,6 @@
       "examples": [
         "achievements:achievement.2.name",
         "client:client.utils.text3"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "You read: ",
-      "variants": [
-        "Ai citit:",
-        "Ai citit: "
-      ],
-      "variants_count": 2,
-      "examples": [
-        "books:ui.readable.you_read_prefix",
-        "cpp:cpp.look.you_read"
       ]
     },
     {
@@ -498,6 +484,24 @@
       "lang": "FAQ"
     },
     {
+      "key": "web.tpl.guilds.view.set_6",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_invitecharacter",
+      "pl": "_sbutton_inviteznak",
+      "lang": "_sbutton_invitecharacter"
+    },
+    {
+      "key": "web.tpl.guilds.view.set_10",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_leaveguild",
+      "pl": "_sbutton_opuśćgildię",
+      "lang": "_sbutton_leaveguild"
+    },
+    {
       "key": "item.10096.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -541,15 +545,6 @@
       "en": "broccoli",
       "pl": "brokuł",
       "lang": "broccoli"
-    },
-    {
-      "key": "item.11699.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The title of this heavy book reads: 'Rabaz' Unabridged Almanach Of Botany'",
-      "pl": "Tytuł tej ciężkiej książki brzmi: 'Rabaz' Pełny Almanach Botaniki”",
-      "lang": "The title of this heavy book reads: 'Rabaz' Unabridged Almanach Of Botany'"
     },
     {
       "key": "item.12575.name",
@@ -622,114 +617,6 @@
       "en": "blister egg plant",
       "pl": "pęcherzykowa roślina jajeczna",
       "lang": "blister egg plant"
-    },
-    {
-      "key": "item.27511.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's black",
-      "pl": "Jest czarny",
-      "lang": "It's black"
-    },
-    {
-      "key": "item.30215.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30218.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30273.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.3274.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
-    },
-    {
-      "key": "item.7107.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.7740.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.800.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.9083.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sweetness",
-      "pl": "Słodycz",
-      "lang": "Sweetness"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
-    },
-    {
-      "key": "monster.hunter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
     },
     {
       "key": "monster.old_bonelord.voice_1",
@@ -829,15 +716,6 @@
       "en": "*slosh*",
       "pl": "*breja*",
       "lang": "*slosh*"
-    },
-    {
-      "key": "monster.glooth_golem.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*clank*",
-      "pl": "*I.*",
-      "lang": "*clank*"
     },
     {
       "key": "monster.orewalker.voice_1",
@@ -3718,6 +3596,114 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
+    },
+    {
+      "key": "monster.draken_abomination.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Aaag!",
+      "pl": "Aaa!",
+      "lang": "Aaag!"
+    },
+    {
+      "key": "monster.dragon.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.dragon_lord_hatchling.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rooawwrr",
+      "pl": "Rooawrr",
+      "lang": "Rooawwrr"
+    },
+    {
+      "key": "monster.green_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.salamander.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chrrch!",
+      "pl": "Chrr!",
+      "lang": "Chrrch!"
+    },
+    {
+      "key": "monster.infernal_frog.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.orchid_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.azure_frog.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.bog_frog.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.crimson_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.toad.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.coral_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     }
   ],
   "length_ratio_issues": [
@@ -3841,8 +3827,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 18,
-    "skipped": 62,
+    "applied": 5,
+    "skipped": 75,
     "errors": 0
   }
 }

@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-17T01:22:38.122918Z",
-  "language": "ru",
-  "json_file": "otclient_modules.json",
-  "translated": 50,
+  "timestamp": "2026-02-17T01:26:07.255268Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "otclient_modules.client.tr_1",
-      "en": "No graphics card detected, everything will be drawn using the CPU,\nthus the performance will be really bad.\nPlease update your graphics driver to have a better performance.",
-      "translated": "Видеокарта не обнаружена — всё будет отрисовываться на CPU,\nпоэтому производительность будет очень низкой.\nОбновите драйвер видеокарты для лучшей производительности.",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.communicationwindow_otui.tr_11",
-      "en": "Global ignore settings",
-      "translated": "Global игнорировать настройки",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.communicationwindow_otui.tr_3",
-      "en": "Allow VIPs to message you",
-      "translated": "Разрешить VIPs до сообщение you",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.console.tr_12",
-      "en": "%s has finished the request",
-      "translated": "%s завершил(а) запрос",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.console.tr_27",
-      "en": "Add to VIP list",
-      "translated": "Добавить в список VIP",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.console.tr_38",
-      "en": "Disable chat mode, allow to walk using WASD",
-      "translated": "Отключить чат режим, разрешить до ходить используя WASD",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_13",
-      "en": "Pvp Type:",
-      "translated": "Pvp Введите:",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_17",
-      "en": "At least one upper case letter (A-Z)",
-      "translated": "Хотя бы одна заглавная буква (A-Z)",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_18",
-      "en": "At least one lower case letter (a-z)",
-      "translated": "Хотя бы одна строчная буква (a-z)",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_22",
-      "en": "This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply.",
-      "translated": "Этот сайт защищён reCAPTCHA; применяются Политика конфиденциальности и Условия использования Google.",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_30",
-      "en": "Character Sex:",
-      "translated": "Персонаж Sex:",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_33",
-      "en": "Create Your Character",
-      "translated": "Создать Your Персонаж",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_34",
-      "en": "I agree to the Tibia Service Agreement,\n Tibia Rules and Tibia Privacy Policy.",
-      "translated": "Я принимаю Соглашение об обслуживании Tibia,\n Правила Tibia и Политику конфиденциальности Tibia.",
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.createaccount_otui.tr_9",
-      "en": "PvP Type:",
-      "translated": "PvP Введите:",
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.cyclopedia_widgets_otui.tr_27",
-      "en": "Unlocks if you reach the\nProwess level for any boss",
-      "translated": "Откроется, если вы достигнете\nуровня Prowess для любого босса",
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.data_options.tr_1",
-      "en": "Opacity: %s",
-      "translated": "Прозрачность: %s",
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.data_options.tr_2",
-      "en": "Distance: %s",
-      "translated": "Дистанция: %s",
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.data_options.tr_3",
-      "en": "Opacity Missile: %s%%",
-      "translated": "Прозрачность снарядов: %s%%",
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.data_options.tr_4",
-      "en": "Opacity Effect: %s%%",
-      "translated": "Прозрачность эффектов: %s%%",
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.data_options.tr_6",
-      "en": "Music volume: %d",
-      "translated": "Музыка громкость: %d",
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     }
   ]

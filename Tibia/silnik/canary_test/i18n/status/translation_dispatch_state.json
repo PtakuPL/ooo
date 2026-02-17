@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T01:22:36.169632Z",
-  "cycle_counter": 1163,
-  "last_target_key": "ru:otclient_modules.json",
-  "last_pending_total": 235,
+  "timestamp": "2026-02-17T01:25:33.785380Z",
+  "cycle_counter": 1166,
+  "last_target_key": "ru:client.json",
+  "last_pending_total": 84,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 195,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 118,
+  "cache_cycle": 119,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -380,8 +380,8 @@
       "pl": 45.02,
       "es": 74.39,
       "ru": 36.68,
-      "ro": 21.51,
-      "it": 12.59,
+      "ro": 21.58,
+      "it": 12.67,
       "sr": 10.79,
       "sv": 8.68
     }

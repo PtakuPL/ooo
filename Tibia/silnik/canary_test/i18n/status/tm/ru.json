@@ -23814,5 +23814,349 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:17:16.218507Z"
+  },
+  "client.viplist.text1": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Показать/скрыть список VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.702797Z"
+  },
+  "client.viplist.text2": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Показать/скрыть список VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.703800Z"
+  },
+  "client.viplist.text3": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Показать/скрыть список VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.704783Z"
+  },
+  "client.player.text1": {
+    "src_hash": "5f772cb1090f3e6d451d52926b1ae6c7",
+    "text": "Без профессии",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.714225Z"
+  },
+  "client.const.text1": {
+    "src_hash": "3d7033662f9854085c5da74321ff2779",
+    "text": "Северо-восток",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.715807Z"
+  },
+  "client.const.text4": {
+    "src_hash": "52f3e90e1282312c8302e476d7c64ed0",
+    "text": "Северо-запад",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.716979Z"
+  },
+  "client.utils.text1": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Каслмания",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.724027Z"
+  },
+  "client.utils.text4": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Лалалала... теперь ты знаешь наизусть гимн культа, который поют в заливе Либерти. Не так уж и сложно, учитывая, что в основном он состоит из двух нот и повторяющихся текстов.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.726010Z"
+  },
+  "client.charms1410.text1": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Эхо малого чарма\nПолучается за разблокировку или улучшение большого чарма и за промоушен персонажа",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.729763Z"
+  },
+  "client.boss_slots.text3": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Bane\n\nЗа открытие уровня вы получите следующие очки босса:\nДоблесть: 5\nЭкспертиза: 15\nМастерство: 30",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.733071Z"
+  },
+  "client.boss_slots.text4": {
+    "src_hash": "9a3b9f3362303ea8f57e16ff69927a44",
+    "text": "Заклятый враг\n\nЗа разблокировку уровня вы получите следующие очки босса:\nДоблесть: 10\nЭкспертиза: 30\nМастерство: 60",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.734438Z"
+  },
+  "client.bosstiary.text2": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Bane\n\nЗа открытие уровня вы получите следующие очки босса:\nДоблесть: 5\nЭкспертиза: 15\nМастерство: 30",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.737968Z"
+  },
+  "client.neededtranslations.text2": {
+    "src_hash": "85430ecf57924d2a1afc8e002853f8ab",
+    "text": "Если вы закроете программу, ваш персонаж может остаться в игре.\nНажмите 'Logout', чтобы убедиться, что ваш персонаж корректно выходит из игры.\nНажмите 'Exit', если вы хотите закрыть программу без ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.750711Z"
+  },
+  "client.imbuing.text4": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Нажмите здесь, чтобы выполнить выбранное усиление. Это потратит нужные астральные источники и золото.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.757694Z"
+  },
+  "client.elementnode.text3": {
+    "src_hash": "0fc40b454fa8d846c246e663e1b9bc24",
+    "text": ".. -- e = необязательный",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.761236Z"
+  },
+  "client.elementnode.text4": {
+    "src_hash": "2c29ac4da559804e11ae6d975aa6ddd5",
+    "text": "-- v = всё, что следует за",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.762333Z"
+  },
+  "client.htmlparser.text3": {
+    "src_hash": "7523ea87fe889e320f2e1f75b488e47d",
+    "text": "Невозможно найти хотя бы два неиспользуемых байт-кода в этом HTML-коде. Они нужны, чтобы экранировать плейсхолдеры в квадратных скобках внутри тегов.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.765286Z"
+  },
+  "client.game_questlog.text2": {
+    "src_hash": "123a2ec887c9928c69428d276450945e",
+    "text": "Ошибка при чтении файла профилей. Чтобы исправить проблему, вы можете удалить storage.json. Подробности:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.767822Z"
+  },
+  "client.game_highscore.text1": {
+    "src_hash": "fb44cb1d97f0e09e17f67f45b26b5ef9",
+    "text": "Опциональный PvP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.771094Z"
+  },
+  "client.game_highscore.text2": {
+    "src_hash": "9483d4477ae6f510a2bdbd247ca5baee",
+    "text": "Хардкорный PvP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.771907Z"
+  },
+  "client.game_highscore.text4": {
+    "src_hash": "2a44f87fa0c74e0b58a5748460f0249d",
+    "text": "Ретро хардкорный PvP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.773617Z"
+  },
+  "client.spelllist.text1": {
+    "src_hash": "ff0a8c33db67991091fe5d634ba05b2b",
+    "text": "Показать/скрыть spell список",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.778106Z"
+  },
+  "client.spelllist.text2": {
+    "src_hash": "ff0a8c33db67991091fe5d634ba05b2b",
+    "text": "Показать/скрыть spell список",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.779020Z"
+  },
+  "client.spelllist.text3": {
+    "src_hash": "ff0a8c33db67991091fe5d634ba05b2b",
+    "text": "Показать/скрыть spell список",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.779938Z"
+  },
+  "client.keybins.text2": {
+    "src_hash": "de8a822a87e1a1337cf0c1444f375e99",
+    "text": "Чат режим ON",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.780959Z"
+  },
+  "client.keybins.text3": {
+    "src_hash": "56ced8d03f52e6bbfeabd4cf8c012d00",
+    "text": "Чат режим OFF",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.781889Z"
+  },
+  "client.keybinds.text1": {
+    "src_hash": "2aaf58cf1cc24ecdd65a8d45166107ee",
+    "text": "Чат Режим On",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.784676Z"
+  },
+  "client.keybinds.text2": {
+    "src_hash": "ef5f632a19ebffc1a66684faa729528b",
+    "text": "Чат Режим Off",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.785478Z"
+  },
+  "client.blessing.text1": {
+    "src_hash": "71e37136fcdaf8d5610c4999e1d3bc30",
+    "text": "История благословений",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.789007Z"
+  },
+  "client.blessing.text3": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Ваш персонаж имеет промоушен, а аккаунт — премиум-статус.\nВ результате потеря XP уменьшена на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.789906Z"
+  },
+  "client.blessing.text4": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Ваш персонаж имеет промоушен, а аккаунт — премиум-статус.\nВ результате потеря XP уменьшена на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:35.790751Z"
+  },
+  "client.createaccount.text2": {
+    "src_hash": "beead5d6ed66883b128a8585e8959c78",
+    "text": "ОШИБКА: JSON не найден в ответе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:38.751492Z"
+  },
+  "client.createaccount.text4": {
+    "src_hash": "28da1f8c092c0ad093b4cd1df2ae3257",
+    "text": "Получить статус создания аккаунта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:38.751893Z"
+  },
+  "client.entergame.text2": {
+    "src_hash": "0eb5bc411ff706fb9c4803b663d8b114",
+    "text": "Запомнить электронную почту:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:43.829131Z"
+  },
+  "client.things.text1": {
+    "src_hash": "7f212a417349153a23f5033a68f1efe7",
+    "text": "Не удалось загрузить ресурсы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:43.830433Z"
+  },
+  "client.things.text2": {
+    "src_hash": "723fc39cccb92fe2a8337f8fae02628e",
+    "text": "Не удалось загрузить статические данные",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:49.229928Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Кнопка выбора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:49.230266Z"
+  },
+  "client.outfit.text3": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Кнопка выбора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:49.230509Z"
+  },
+  "client.items.text1": {
+    "src_hash": "24b56abbb3dc550fa117a31f5129a3f8",
+    "text": "128 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:49.230724Z"
+  },
+  "client.items.text2": {
+    "src_hash": "b1f4d732ba5997c1cbff270d13c63959",
+    "text": "96 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:49.230918Z"
+  },
+  "client.items.text3": {
+    "src_hash": "85392cbd20cd206583207b3255b7acbf",
+    "text": "64 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:52.281406Z"
+  },
+  "client.items.text4": {
+    "src_hash": "905819163e91db527b712c9e02d086c1",
+    "text": "32 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:52.281621Z"
+  },
+  "client.items.text5": {
+    "src_hash": "ecf5483f4675af3c4cac643a95bc3c9b",
+    "text": "0 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:25:52.281811Z"
   }
 }

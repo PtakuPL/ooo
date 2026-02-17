@@ -697,11 +697,11 @@
   },
   "otclient_modules.character.tr_50": {
     "src_hash": "a64e30d3c5a027e9821ebe7f8c8f819f",
-    "text": "I. pijawka",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Życie Lecha",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.705495Z"
+    "updated_at": "2026-02-17T02:19:04.052234Z"
   },
   "otclient_modules.character.tr_94": {
     "src_hash": "07ad815187b53dc2ceaf5ad6e0a12bb1",
@@ -8081,11 +8081,11 @@
   },
   "otclient_modules.charms.tr_64": {
     "src_hash": "738ca3cb200c27b4996ed320eee15705",
-    "text": "Curse",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Przekleństwo",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T02:05:03.199328Z"
+    "updated_at": "2026-02-17T02:19:06.665164Z"
   },
   "otclient_modules.charms1410_otui.tr_13": {
     "src_hash": "57eb9da1ca671dfa94080dc1a626af81",
@@ -17313,11 +17313,11 @@
   },
   "otclient_modules.skills_otui.tr_25": {
     "src_hash": "a64e30d3c5a027e9821ebe7f8c8f819f",
-    "text": "I. pijawka",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Życie Lecha",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T03:01:53.513611Z"
+    "updated_at": "2026-02-17T02:19:21.952922Z"
   },
   "otclient_modules.skills_otui.tr_28": {
     "src_hash": "3d92095304f260f4a17317dfb05209fe",
@@ -17353,11 +17353,11 @@
   },
   "otclient_modules.skills_otui.tr_37": {
     "src_hash": "ae23f98c1eda08585d2076b7faa3ef58",
-    "text": "I. pijawka szansa",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Szansa na Pijawkę Życiową",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T03:01:53.519336Z"
+    "updated_at": "2026-02-17T02:19:21.953360Z"
   },
   "otclient_modules.skills_otui.tr_39": {
     "src_hash": "5f4d58c6f2903e72554ace92f21a6440",
@@ -17369,11 +17369,11 @@
   },
   "otclient_modules.skills_otui.tr_4": {
     "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
-    "text": "I. odbicie",
+    "text": "Odbicie obrażeń",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T03:01:53.521052Z"
+    "updated_at": "2026-02-17T02:18:59.735065Z"
   },
   "otclient_modules.skills_otui.tr_42": {
     "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
@@ -49337,11 +49337,11 @@
   },
   "otclient_modules.house_otui.tr_15": {
     "src_hash": "f19e0134b954151dc3f225f51f612c29",
-    "text": "Make sure to have enough gold in your bank account to\npay the costs for this house transfer and the next rent.\nRemember to edit the door rights as only the guest list\nzostanie zresetowany po przeniesieniu!",
+    "text": "Upewnij się, że masz wystarczającą ilość złota na koncie bankowym\nopłacić koszty przeniesienia tego domu i kolejnego czynszu.\nPamiętaj, aby edytować uprawnienia do drzwi jako samą listę gości\nzostanie zresetowany po przeniesieniu!",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T19:47:08.802964Z"
+    "updated_at": "2026-02-17T02:19:14.948422Z"
   },
   "otclient_modules.house_otui.tr_16": {
     "src_hash": "f2c12ae14393ffc83551d56f32bb03cc",

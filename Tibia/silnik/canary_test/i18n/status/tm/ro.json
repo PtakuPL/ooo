@@ -23606,5 +23606,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:09:49.357366Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "O ținută care a fost creată pentru a vă potrivi. Suntem siguri că vă va plăcea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:23.036106Z"
+  },
+  "module.init.text1": {
+    "src_hash": "925c0e774e4825a33c5cc47cb25535b1",
+    "text": "25-07-2020 11:52",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:30.172504Z"
+  },
+  "module.init.text2": {
+    "src_hash": "0b6adaf3b4bd0c7e125bcb00c901950c",
+    "text": "Dezvoltatori = { ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:30.172744Z"
+  },
+  "module.init.text3": {
+    "src_hash": "50c4e4f271f95e6a87283c28bc38cdec",
+    "text": "cumpărare-răcire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:30.172987Z"
+  },
+  "module.init.text4": {
+    "src_hash": "3529de591833040eced95ee7377b1f42",
+    "text": "Versiune = ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:30.173214Z"
+  },
+  "module.gamestore.text1": {
+    "src_hash": "ba3a051022b3f034c629944cb2261c28",
+    "text": "/modules/scripts/gamestore/init.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:36.494594Z"
+  },
+  "module.daily_reward.text2": {
+    "src_hash": "4d90862c86132756e513210d29128bc7",
+    "text": "10.12.2020 - 20:30",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:43.630280Z"
+  },
+  "module.daily_reward.text3": {
+    "src_hash": "f7d0eb24bd5b533e125f76d919521d0e",
+    "text": "ultima actualizare = ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:43.630535Z"
+  },
+  "module.daily_reward.text5": {
+    "src_hash": "1ed502ce064ff470e053bb8d27805b9d",
+    "text": "De făcut = ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:43.630744Z"
+  },
+  "module.hireling_module.text2": {
+    "src_hash": "3529de591833040eced95ee7377b1f42",
+    "text": "Versiune = ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:43.630938Z"
+  },
+  "module.hireling_module.text4": {
+    "src_hash": "d6198aa11c2acce221dcceffb0bc91f3",
+    "text": "Data =",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:46.370305Z"
+  },
+  "module.daily_reward.msg_lost_tokens": {
+    "src_hash": "700480ffc88eaf5c5b19662837d67313",
+    "text": "Ai pierdut {count} jetoane joker pentru a preveni pierderea seriei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:46.370703Z"
   }
 }

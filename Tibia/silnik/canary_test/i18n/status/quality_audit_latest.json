@@ -1,38 +1,24 @@
 {
-  "timestamp": "2026-02-17T00:13:04.953162Z",
+  "timestamp": "2026-02-17T00:14:43.332089Z",
   "checked_entries": 100,
-  "issues_found": 10,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en_exempt": 14,
-    "artifact_token": 9,
+    "identical_to_en_exempt": 15,
     "identical_to_en": 1,
-    "suspicious_log_high": 116,
+    "artifact_token": 7,
+    "suspicious_log_high": 112,
     "suspicious_log_critical": 83,
-    "suspicious_log_low": 1,
+    "suspicious_log_low": 5,
     "suspicious_rejected_critical": 170,
     "suspicious_rejected_high": 30
   },
   "issues": [
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "spell.ravennouslavalurkertarget.name",
-      "lang": "sv",
+      "key": "_file",
+      "lang": "it",
       "type": "identical_to_en",
-      "en": "ravennousLavaLurkerTarget",
-      "translated": "ravennousLavaLurkerTarget"
+      "en": "data-otservbr-global/npc/example_merchant_i18n.lua",
+      "translated": "data-otservbr-global/npc/example_merchant_i18n.lua"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

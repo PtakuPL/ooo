@@ -16958,5 +16958,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:10:50.721349Z"
+  },
+  "web.tpl.highscores.b_4": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.459043Z"
+  },
+  "web.tpl.experience_stages.b_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.460689Z"
+  },
+  "web.tpl.spells.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.463162Z"
+  },
+  "web.tpl.spells.th_4": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.463411Z"
+  },
+  "web.tpl.spells.th_7": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.463778Z"
+  },
+  "web.tpl.spells.th_9": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.464023Z"
+  },
+  "web.tpl.spells.th_12": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Föremål",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.464391Z"
+  },
+  "web.tpl.spells.th_15": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.464636Z"
+  },
+  "web.tpl.spells.th_16": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.464851Z"
+  },
+  "web.tpl.spells.th_18": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Föremål",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.465186Z"
+  },
+  "web.tpl.monsters.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.465446Z"
+  },
+  "web.tpl.monsters.th_3": {
+    "src_hash": "605669cab962bf944d99ce89cf9e58d9",
+    "text": "Hälsa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.465798Z"
+  },
+  "web.tpl.account.management.th_12": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.467100Z"
+  },
+  "web.tpl.account.management.th_13": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.467304Z"
+  },
+  "web.tpl.admin.news.table.th_3": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Spelare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.468773Z"
+  },
+  "web.tpl.team.b_3": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.469541Z"
+  },
+  "web.tpl.team.b_10": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.469988Z"
+  },
+  "web.tpl.guilds.view.td_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.471703Z"
+  },
+  "web.tpl.guilds.view.b_5": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.472055Z"
+  },
+  "web.tpl.houses.b_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.475070Z"
+  },
+  "web.tpl.admin.plugins.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.475669Z"
+  },
+  "web.tpl.admin.pages.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.476506Z"
+  },
+  "web.tpl.experience_table.b_2": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivå",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.477154Z"
+  },
+  "web.tpl.account.characters.create.span_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Namn",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.477754Z"
+  },
+  "web.tpl.buttons.cancel.set_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Avbryt",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.478231Z"
+  },
+  "web.tpl.balance.th_2": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Spelare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.479131Z"
+  },
+  "web.tpl.lastlogin.th_2": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Spelare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:06.479473Z"
+  },
+  "web.tpl.forum.add_board.td_1": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Namn:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:09.870636Z"
+  },
+  "web.tpl.forum.add_board.td_2": {
+    "src_hash": "d0042a700e9bdf79689d63ee6846dc0e",
+    "text": "Beskrivning:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:09.870851Z"
+  },
+  "web.tpl.forum.add_board.td_3": {
+    "src_hash": "91b87910e0ec30a301a00465837a6bc6",
+    "text": "Tillträde:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:09.871033Z"
+  },
+  "web.tpl.guilds.list.set_1": {
+    "src_hash": "c026541afa61e406ad6b875d46387705",
+    "text": "Hittade Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:09.872404Z"
+  },
+  "web.tpl.guilds.list.set_2": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:13.459018Z"
+  },
+  "web.tpl.guilds.list.set_3": {
+    "src_hash": "c026541afa61e406ad6b875d46387705",
+    "text": "Hittade Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:13.459409Z"
+  },
+  "web.tpl.guilds.list.set_4": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:13.459702Z"
+  },
+  "web.tpl.guilds.list.b_1": {
+    "src_hash": "8c2857a9ad1d8f31659e35e904e20fa6",
+    "text": "Logotyp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:13.459871Z"
+  },
+  "web.tpl.guilds.list.b_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beskrivning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:13.460050Z"
+  },
+  "web.tpl.guilds.list.b_4": {
+    "src_hash": "4743b7dd287301b1d81f813c79e46a44",
+    "text": "Skapa Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:18.904635Z"
+  },
+  "web.tpl.guilds.list.b_5": {
+    "src_hash": "15be5768d3c4652ccbdbf688ff580765",
+    "text": "Innan du kan skapa en guild måste du logga in.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:18.905221Z"
+  },
+  "web.tpl.guilds.create.success.set_1": {
+    "src_hash": "b39eef6ed76f852540f8b106c19c4026",
+    "text": "Skapat guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:18.905436Z"
+  },
+  "web.tpl.guilds.create.success.set_2": {
+    "src_hash": "1f68faadf12faba4c4debef5fff0697f",
+    "text": "och motd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:18.905619Z"
+  },
+  "web.tpl.guilds.create.success.b_1": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Grattis!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:18.905819Z"
+  },
+  "web.tpl.admin.tools.account.label_1": {
+    "src_hash": "dbabdb6263c2c47d45467b4e502d2ebf",
+    "text": "Premiumpoäng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:24.769601Z"
+  },
+  "web.tpl.admin.tools.account.label_2": {
+    "src_hash": "a2aa6b4bebf569d55787e53bb224c072",
+    "text": "Mynt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:24.769781Z"
+  },
+  "web.tpl.admin.tools.account.label_3": {
+    "src_hash": "9f9d69daced9fcbe524c53e8d6eb11b2",
+    "text": "Premium dagar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:24.769978Z"
+  },
+  "web.tpl.highscores.td_1": {
+    "src_hash": "f3f43e30c8c7d78c6ac0173515e57a00",
+    "text": "Filter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:26.897486Z"
+  },
+  "web.tpl.highscores.b_2": {
+    "src_hash": "021da1b20f73dc252361a54d80497ef3",
+    "text": "Rang",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:26.897662Z"
+  },
+  "web.tpl.highscores.b_3": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Utrusta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:26.897823Z"
   }
 }

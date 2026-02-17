@@ -225,11 +225,11 @@
   },
   "npc.example_merchant.name": {
     "src_hash": "16373b8c3c6c497895786de3804c2e0c",
-    "text": "My name is Marcus. I run this shop.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il mio nome è Marco. Gestisco questo negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T00:27:14.102314Z"
+    "updated_at": "2026-02-17T00:14:00.637767Z"
   },
   "npc.a_bearded_woman.greet_msg_1": {
     "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
@@ -30022,5 +30022,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:12:51.501653Z"
+  },
+  "_comment": {
+    "src_hash": "92c37f5d3c00bcd4993ae8b20d4912c6",
+    "text": "Example NPC commerciante - Traduzioni in inglese",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:55.917949Z"
+  },
+  "_file": {
+    "src_hash": "48aacf7f299cacffeaf96e599e1ea47c",
+    "text": "data-otservbr-global/npc/example_merchant_i18n.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:55.918369Z"
+  },
+  "npc.example_merchant.greeting": {
+    "src_hash": "adec20c0aedde482032fd3adb3897cac",
+    "text": "Ciao %s! Benvenuti nel mio negozio. Dì {trade} per vedere le mie offerte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:55.918798Z"
+  },
+  "npc.example_merchant.low_level": {
+    "src_hash": "8ed106b17eb3e541a267eb1ce04cf880",
+    "text": "Mi spiace ma sei troppo inesperto. Torna quando raggiungi il livello 8.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:55.919181Z"
+  },
+  "npc.example_merchant.farewell": {
+    "src_hash": "8d4c68e5bd403916721e0a1bb4157390",
+    "text": "Addio, %s. Visitami ancora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:55.919465Z"
+  },
+  "npc.example_merchant.help": {
+    "src_hash": "44f922ad592a665c09c99f143c12e55b",
+    "text": "Posso venderti pozioni, armi e armature. Dì {trade} per sfogliare i miei prodotti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:00.637009Z"
+  },
+  "npc.example_merchant.job": {
+    "src_hash": "85f48738faa47736979b71b04440e6ac",
+    "text": "Sono un commerciante. Vendo vari beni agli avventurieri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:00.637420Z"
+  },
+  "npc.example_merchant.trade": {
+    "src_hash": "025ffa5f7383d5062f818091cb13b198",
+    "text": "Ovviamente! Ecco le mie offerte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:00.638061Z"
+  },
+  "npc.example_merchant.news_1": {
+    "src_hash": "f91323a89a9995189f7d38f5c7ef5949",
+    "text": "Hai sentito? Dragons sono stati avvistati vicino alle montagne!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:00.638685Z"
+  },
+  "npc.example_merchant.news_2": {
+    "src_hash": "277424095e5370279415b09f4d99e841",
+    "text": "Il re è alla ricerca di avventurieri coraggiosi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:03.030441Z"
+  },
+  "nv.example_merchant.1": {
+    "src_hash": "e988ae8e1d942593474bbe72fb1af93d",
+    "text": "Le migliori pozioni in città!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:03.030740Z"
+  },
+  "nv.example_merchant.2": {
+    "src_hash": "202780b2ed8917c475ff421fc95e7999",
+    "text": "Armi e armature di qualità!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:03.031058Z"
+  },
+  "nv.example_merchant.3": {
+    "src_hash": "cde7215d4d751c5129510a61f998bfcc",
+    "text": "OFFERTE SPECIALI OGGI!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:14:03.031304Z"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T00:11:37.939191Z",
+  "timestamp": "2026-02-17T00:14:34.308028Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 710,
+  "entries_total": 711,
   "entries_by_lang": {
     "es": 298,
     "pl": 217,
@@ -76,7 +76,7 @@
     "it": 496,
     "nl": 691,
     "pt": 620,
-    "ro": 515,
+    "ro": 512,
     "ru": 127,
     "sk": 663,
     "tr": 542,
@@ -108,7 +108,7 @@
     "sl": 663,
     "sq": 663,
     "sr": 494,
-    "sv": 545,
+    "sv": 547,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -880,7 +880,7 @@
     {
       "lang": "ro",
       "json_file": "modules.json",
-      "identical_to_en": 4,
+      "identical_to_en": 1,
       "domain_priority": 5
     },
     {

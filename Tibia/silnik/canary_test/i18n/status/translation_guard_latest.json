@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T09:44:09.852788Z",
-  "cycle": 417,
+  "timestamp": "2026-02-17T09:45:51.863076Z",
+  "cycle": 418,
   "language": "ru",
-  "json_file": "spells.json",
-  "translated": 12,
+  "json_file": "quests.json",
+  "translated": 3,
   "placeholders": 0,
-  "guard_fail": 38,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 1412
+  "strict_skipped_done": 96
 }

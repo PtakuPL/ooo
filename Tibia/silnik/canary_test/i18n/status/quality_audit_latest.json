@@ -1,25 +1,17 @@
 {
-  "timestamp": "2026-02-17T09:44:43.885188Z",
+  "timestamp": "2026-02-17T09:45:52.889492Z",
   "checked_entries": 100,
-  "issues_found": 19,
+  "issues_found": 18,
   "issues_by_type": {
-    "identical_to_en": 3,
-    "identical_to_en_exempt": 2,
+    "identical_to_en": 2,
+    "identical_to_en_exempt": 4,
     "artifact_token": 16,
     "suspicious_log_high": 171,
-    "suspicious_log_low": 3,
-    "suspicious_log_critical": 26,
+    "suspicious_log_critical": 29,
     "suspicious_rejected_critical": 186,
     "suspicious_rejected_high": 14
   },
   "issues": [
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
     {
       "key": "spell.executioners_throw.words",
       "lang": "it",

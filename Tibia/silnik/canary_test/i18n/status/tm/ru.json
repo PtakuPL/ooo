@@ -20934,5 +20934,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:13:03.338923Z"
+  },
+  "npc.example_merchant_i18n.stdmod_2": {
+    "src_hash": "025ffa5f7383d5062f818091cb13b198",
+    "text": "Конечно! Вот мои предложения.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.541705Z"
+  },
+  "npc.example_merchant_i18n.voice_1": {
+    "src_hash": "e988ae8e1d942593474bbe72fb1af93d",
+    "text": "Лучшие зелья в городе!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.542094Z"
+  },
+  "npc.example_merchant_i18n.voice_2": {
+    "src_hash": "202780b2ed8917c475ff421fc95e7999",
+    "text": "Качественное оружие и броня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.542476Z"
+  },
+  "npc.prezil.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.899661Z"
+  },
+  "npc.prezil.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.901413Z"
+  },
+  "npc.quentin.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.912357Z"
+  },
+  "npc.richard.farewell_msg_1": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Веселиться!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:50.931240Z"
   }
 }

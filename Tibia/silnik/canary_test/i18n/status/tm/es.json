@@ -144670,5 +144670,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:26:56.702571Z"
+  },
+  "data.otservbr.global.npc.yoem.L62.189": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Échale un vistazo. La mayoría de los muebles vienen en prácticos kits. Utilízalos en tu casa para montar los muebles. ¿Quieres ver sólo un determinado {type} de muebles?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.483215Z"
+  },
+  "data.otservbr.global.npc.yonan.L137.684": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.484194Z"
+  },
+  "data.otservbr.global.npc.yonan.L140.685": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.485261Z"
+  },
+  "data.otservbr.global.npc.yonan.L143.686": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.486215Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L148.50": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "¡Bienvenido, joven |PLAYERNAME|! Si estás gravemente herido o envenenado, puedo {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.489814Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L149.51": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Recuerda: si estás gravemente herido o envenenado, puedo curarte gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.490947Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L150.52": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "¡Que los dioses te bendigan, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.492131Z"
+  },
+  "data.otservbr.global.npc.ziyad.L101.873": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.497906Z"
+  },
+  "data.otservbr.global.npc.ziyad.L102.874": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.498964Z"
+  },
+  "data.otservbr.global.npc.znozel.L71.200": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "¿Sí? ¿Qué puedo hacer por ti, |PLAYERNAME|? ¿Negocios bancarios, tal vez?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.500927Z"
+  },
+  "data.otservbr.global.npc.zora.L82.1328": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, por favor entra, |PLAYERNAME|. ¿Qué puedo hacer por ti? Si necesitas equipo de aventura, pídeme un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.503871Z"
+  },
+  "data.otservbr.global.npc.zora.L85.1331": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Por supuesto, simplemente navega por mis productos. {Footballs} debe comprarse por separado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.506135Z"
+  },
+  "data.otservbr.global.scripts.actions.other.mechanical.fishing.L19.2358": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "No eres el propietario.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.513647Z"
+  },
+  "data.otservbr.global.scripts.actions.other.music.L57.2364": {
+    "src_hash": "0d71a979be8186c9b39faa7ce9898f11",
+    "text": "Misteriosamente algunas coloridas notas musicales caen de la flauta de Pan. - Date prisa, se desvanecerán rápidamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.514895Z"
+  },
+  "data.otservbr.global.scripts.actions.other.rafzane.elevator.L84.2369": {
+    "src_hash": "87cd4819a72b1330a710ede3cb23c10e",
+    "text": "Entra al ascensor para usarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.516784Z"
+  },
+  "data.otservbr.global.scripts.actions.other.special.firework.rocket.L139.2357": {
+    "src_hash": "01f54fd7be7679b0af8396bd01b3bcc4",
+    "text": "No puedes usar este ítem en un contenedor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:27:27.517856Z"
   }
 }

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-17T00:30:34.555930Z",
-  "cycle_counter": 1056,
-  "last_target_key": "sr:npc.json",
-  "last_pending_total": 12998,
-  "last_tier": 3,
-  "last_cat_priority": 0,
+  "timestamp": "2026-02-17T00:33:04.684669Z",
+  "cycle_counter": 1059,
+  "last_target_key": "pl:quests.json",
+  "last_pending_total": 405,
+  "last_tier": 1,
+  "last_cat_priority": 5,
   "candidates_count": 195,
   "active_candidates_count": 187,
   "skipped_backoff": 8,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 81,
+  "cache_cycle": 82,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -381,8 +381,8 @@
       "ru": 36.08,
       "ro": 20.57,
       "it": 11.69,
-      "sr": 10.49,
-      "sv": 8.35
+      "sr": 10.51,
+      "sv": 8.43
     }
   }
 }

@@ -83593,27 +83593,27 @@
   },
   "spell.terofar_skill_reducer_1.name": {
     "src_hash": "e574c4bc74dcb7aa615c0616eb9e06c7",
-    "text": "terofar skill reducer 1",
+    "text": "Reduktor umiejętności terofaru 1",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:45.488678Z"
+    "updated_at": "2026-02-17T00:31:35.263822Z"
   },
   "spell.crystal_spider_paralyze_2.name": {
     "src_hash": "65e000bbbca9193153934fb7e303b54a",
-    "text": "crystal spider paralyze 2",
+    "text": "kryształowy pająk paraliżuje 2",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:48.132537Z"
+    "updated_at": "2026-02-17T00:31:48.938963Z"
   },
   "spell.white_weretiger_ice_ring.name": {
     "src_hash": "f1617c0fc40020f24df6b11d845af8ec",
-    "text": "white weretiger ice ring",
+    "text": "Lodowy pierścień białego tygrysa",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:48.133020Z"
+    "updated_at": "2026-02-17T00:32:08.011957Z"
   },
   "spell.azerus_skill_reducer_2.name": {
     "src_hash": "aab7ce88a95b460ce06e14c025b13979",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:37:51.566701Z"
+    "updated_at": "2026-02-17T00:31:15.358516Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98726,5 +98726,349 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T00:25:05.172299Z"
+  },
+  "spell.ice_overlord_paralyze.name": {
+    "src_hash": "a867f6397c2c6fb5a651d6d928083f87",
+    "text": "paraliż lodowego władcy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:15.359216Z"
+  },
+  "spell.elder_wyrm_wave.name": {
+    "src_hash": "b862d08a8964e1e44588a5d002bf8c55",
+    "text": "fala starszego jaszczura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:22.848016Z"
+  },
+  "spell.horadron_heal.name": {
+    "src_hash": "4a5495c75a76d981634e523e8bbdd2bd",
+    "text": "horadron leczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:22.848240Z"
+  },
+  "spell.quara_raider_icering.name": {
+    "src_hash": "dbd2a1042a3ac1c9f65301e8cecc1c12",
+    "text": "qualarageicering",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:22.848454Z"
+  },
+  "spell.azerus_summon_4.name": {
+    "src_hash": "ac89901c5c98209cd80fe11c4712fb7f",
+    "text": "Przywołanie Azerusa 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:22.848902Z"
+  },
+  "spell.quara_plunderer_cross.name": {
+    "src_hash": "963e8ea8774a627a357f0f31eca5aab5",
+    "text": "quaracrossśmierć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:22.849164Z"
+  },
+  "spell.single_cloud_chain.name": {
+    "src_hash": "3d17e11dd54e914d7f50de83c2ac71ba",
+    "text": "pojedynczycloudchain",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:29.174959Z"
+  },
+  "spell.monstor_summon.name": {
+    "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
+    "text": "wezwanie potwora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:29.175191Z"
+  },
+  "spell.crystal_wolf_wave.name": {
+    "src_hash": "27c6efcfdd27636c1353c09872061a0b",
+    "text": "fala kryształowego wilka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:29.175461Z"
+  },
+  "spell.plaguesmith_paralyze.name": {
+    "src_hash": "06753eb4a768091b27159764ed117920",
+    "text": "plaga paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:29.175710Z"
+  },
+  "spell.glooth_generator_summon.name": {
+    "src_hash": "a248dfd1c2ec953a5e05daa52edda24c",
+    "text": "Przywołanie Generatora Glooth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:29.175972Z"
+  },
+  "spell.death_blob_curse.name": {
+    "src_hash": "86e22b06c5f3a3cd708d46f305fca8f9",
+    "text": "klątwa śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:35.263288Z"
+  },
+  "spell.plant_attendant_wave.name": {
+    "src_hash": "b3d78c339149125a7b0f4114346eb4b4",
+    "text": "fala towarzysząca roślinie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:35.264115Z"
+  },
+  "spell.shargon_heal.name": {
+    "src_hash": "6ff3778db6c46be9033f103981ffd7ca",
+    "text": "Uzdrowienie Shargona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:35.264330Z"
+  },
+  "spell.lord_of_the_elements_soulfire.name": {
+    "src_hash": "47b43d663522a204104be603595da3a0",
+    "text": "władca żywiołów ognia duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:35.264628Z"
+  },
+  "spell.mindmasher_summon.name": {
+    "src_hash": "fb82b6fdc6ecd01be41a08a91d6ac405",
+    "text": "wezwanie łamigłówki umysłów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:41.735797Z"
+  },
+  "spell.dryad_paralyze.name": {
+    "src_hash": "bcf4bf79e672cbb2bdb95d4a8a3453ee",
+    "text": "paraliż driady",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:41.736047Z"
+  },
+  "spell.lost_soul_paralyze.name": {
+    "src_hash": "22f92d0d9a6a8ea0c6fdb0b0367d1f25",
+    "text": "zagubiona dusza paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:41.736311Z"
+  },
+  "spell.mercurial_menace_ring.name": {
+    "src_hash": "82a154dbb84686009a90982171611c11",
+    "text": "rtęciowy pierścień zagrożenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:41.736580Z"
+  },
+  "spell.lisa_wave.name": {
+    "src_hash": "37b20df79614bc7adb572649d5dbe1b1",
+    "text": "fala Lisy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:41.736777Z"
+  },
+  "spell.timira_fire_ring.name": {
+    "src_hash": "d4dbeec8cd4e3057b2f48deb42453454",
+    "text": "pierścień ognia Timira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:48.938398Z"
+  },
+  "spell.dread_maiden_rcircle.name": {
+    "src_hash": "f044cf41609104031b589ac2cc324fe1",
+    "text": "straszne koło",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:48.939376Z"
+  },
+  "spell.infected_weeper_summon.name": {
+    "src_hash": "5d48b1ac09992272779572ce5228fb76",
+    "text": "zarażone wezwanie płaczącego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:48.940011Z"
+  },
+  "spell.blightwalker_paralyze.name": {
+    "src_hash": "e51124ecb3786182defbcb4d579924fd",
+    "text": "paraliż blightwalkera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:48.940458Z"
+  },
+  "spell.werelion_wave.name": {
+    "src_hash": "fa74fff07e5d25858589c66e8508ae96",
+    "text": "fala lwów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:55.923323Z"
+  },
+  "spell.lavafungus_x_wave.name": {
+    "src_hash": "215ae80515e3fd249143f98a1647580d",
+    "text": "lawagrzyb x fala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:55.923634Z"
+  },
+  "spell.jewelry_chest_summon.name": {
+    "src_hash": "ee8d18c219d7ca76035d4fc382f41a65",
+    "text": "Przywołanie skrzyni z biżuterią",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:55.923945Z"
+  },
+  "spell.energy_overlord_paralyze.name": {
+    "src_hash": "0c29221e2116fdb6c370a09564b96bf7",
+    "text": "paraliż władcy energii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:55.924219Z"
+  },
+  "spell.generator_wave.name": {
+    "src_hash": "ab2a716270aa45c393073a5b0cbc665c",
+    "text": "fala generatora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:31:55.924430Z"
+  },
+  "spell.ghazbaran_summon.name": {
+    "src_hash": "0010d2177ff532e38ed4cad053dd2e57",
+    "text": "wezwanie Ghazbaranu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:01.640587Z"
+  },
+  "spell.dirtbeard_summon.name": {
+    "src_hash": "a868a6e090eb520a4548f1b26b16737f",
+    "text": "wezwanie brudnobrodego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:01.640830Z"
+  },
+  "spell.lava_golem_soulfire2.name": {
+    "src_hash": "156a629b7df27103fe1bf49727d1deca",
+    "text": "lawowy golem soulfire2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:01.641342Z"
+  },
+  "spell.shock_head_paralyze.name": {
+    "src_hash": "261c1b218a892245cd6eea042796e605",
+    "text": "szok, paraliż głowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:01.641624Z"
+  },
+  "spell.death_beam.name": {
+    "src_hash": "1623317a16ff4218f9dbf2d98a61bb1a",
+    "text": "promień śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:01.641834Z"
+  },
+  "spell.charge_vortex.name": {
+    "src_hash": "c32b9de511ad6749434dbf5dd2e03ec9",
+    "text": "wir ładowania",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:08.010675Z"
+  },
+  "spell.mort_ring.name": {
+    "src_hash": "66c8c10d08ee7730819483e29b7386ad",
+    "text": "pierścień śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:08.010931Z"
+  },
+  "spell.hideous_fungus_poison.name": {
+    "src_hash": "950f0bc94925ce99b89b2c69baff430f",
+    "text": "okropna trucizna grzybowa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:08.011189Z"
+  },
+  "spell.hot_dog_soulfire.name": {
+    "src_hash": "911258c5426c381ff7939e479048a748",
+    "text": "ogień duszy hot doga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:08.011456Z"
+  },
+  "spell.haunted_treeling_paralyze.name": {
+    "src_hash": "cd26170d9e512f1e2e613cffe6da3c4c",
+    "text": "paraliż nawiedzonego drzewa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:13.815605Z"
+  },
+  "spell.minotaur_wallbreaker_walkthrough.name": {
+    "src_hash": "b7373e9ac23d8d4199def5eefd066a54",
+    "text": "Przewodnik po niszczycielu ścian minotaurów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:13.816157Z"
+  },
+  "spell.horestis_paralyze.name": {
+    "src_hash": "a4f4b2be974b42e2ae09a4193f3a6e29",
+    "text": "horestis paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:13.816427Z"
+  },
+  "spell.arthei_summon.name": {
+    "src_hash": "76c73c95dcbaf0479622b03b92691a9f",
+    "text": "wezwanie Artheia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:13.816639Z"
+  },
+  "spell.canopic_jar_heal.name": {
+    "src_hash": "08d00250b000ce37493e94540dde0896",
+    "text": "uzdrowienie dzbana kanopskiego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:32:13.816876Z"
   }
 }

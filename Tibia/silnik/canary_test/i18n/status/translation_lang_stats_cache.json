@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T06:01:34.290269Z",
+  "timestamp": "2026-02-17T06:02:47.273665Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -25329,8 +25329,8 @@
         [
           "cpp.json",
           1,
-          1771306049533038470,
-          59758
+          1771308159586527323,
+          59693
         ],
         [
           "creaturescripts.json",
@@ -25530,14 +25530,14 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 25622,
+        "translated_keys": 25652,
         "english_copy_keys": 1891,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 47.81,
+        "completion_pct": 47.87,
         "server_keys": 49731,
-        "server_translated": 22941,
-        "server_pct": 46.13,
+        "server_translated": 22971,
+        "server_pct": 46.19,
         "client_keys": 3855,
         "client_translated": 2681,
         "client_pct": 69.55
@@ -25616,12 +25616,12 @@
         "cpp.json": {
           "sig": [
             1,
-            1771306049533038470,
-            59758
+            1771308159586527323,
+            59693
           ],
           "row": {
             "total_reference_keys": 879,
-            "translated_keys": 809,
+            "translated_keys": 839,
             "english_copy_keys": 25,
             "missing_keys": 0,
             "missing_files": 0

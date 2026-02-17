@@ -113430,5 +113430,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:56:22.971784Z"
+  },
+  "cpp.title.name_23": {
+    "src_hash": "f2f50d375081172619aea79cb013c400",
+    "text": "Jack wszystkich skaz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:02.845665Z"
+  },
+  "cpp.title.name_24": {
+    "src_hash": "df6cae9d0b1def08ebad8af2a085a2b8",
+    "text": "Legenda wędkarstwa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:02.845933Z"
+  },
+  "cpp.title.name_25": {
+    "src_hash": "c1967785edc654f5644460a0c9ab0b71",
+    "text": "Legenda magii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:02.846211Z"
+  },
+  "cpp.title.name_27": {
+    "src_hash": "0c56606cf61a73f3e7d50f4e819d204c",
+    "text": "Legenda o siekierze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:02.846481Z"
+  },
+  "cpp.title.name_28": {
+    "src_hash": "4a1c7c13a36cad27ce972ba2d0cb16fe",
+    "text": "Legenda Klubu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:02.846705Z"
+  },
+  "cpp.title.name_3": {
+    "src_hash": "c24697b761d33b3c8d2db068508dd333",
+    "text": "Zbieracz kryształów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:09.829614Z"
+  },
+  "cpp.title.name_30": {
+    "src_hash": "53022ffb543ac039f42ab2c57a55026d",
+    "text": "Legenda Tarczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:09.829935Z"
+  },
+  "cpp.title.name_33": {
+    "src_hash": "f540e50228d0752d568952c7610d3a6c",
+    "text": "Aktualny mistrz Drome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:09.830402Z"
+  },
+  "cpp.title.name_35_female": {
+    "src_hash": "3e1456a25847c5f059e90689fbd71495",
+    "text": "Łowczyni Krwawego Księżyca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:09.830679Z"
+  },
+  "cpp.title.name_37": {
+    "src_hash": "3a6270ea8ec1341b2cb7d0c8f671e107",
+    "text": "Śmierć z dołu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:09.830913Z"
+  },
+  "cpp.title.name_4": {
+    "src_hash": "ce517784be60f2d331da9fb7f48f256c",
+    "text": "Bestia (klasa 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:14.774028Z"
+  },
+  "cpp.title.name_48": {
+    "src_hash": "3a2e43f232b2379fa01960b452ce0a60",
+    "text": "Mistrz iluzji",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:14.774734Z"
+  },
+  "cpp.title.name_49": {
+    "src_hash": "3a395b4191c32a2fe6858a8b84abe9ed",
+    "text": "Orzeźwiający blues",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:14.774963Z"
+  },
+  "cpp.title.name_5": {
+    "src_hash": "ce69ca8a9db765adef489fbae7302f2a",
+    "text": "Bestia (klasa 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:22.023706Z"
+  },
+  "cpp.title.name_51": {
+    "src_hash": "766fa2e9a4d5ca2587ef6f40f7fb4e59",
+    "text": "Zaklinacz Węży",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:22.023960Z"
+  },
+  "cpp.title.name_6": {
+    "src_hash": "81b4fece48779682e75c85708b962aff",
+    "text": "Bestia (klasa 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:22.024208Z"
+  },
+  "cpp.title.name_65": {
+    "src_hash": "48c3e2a86ce793bc50ec98bfff55674a",
+    "text": "Stworzenie z przyzwyczajenia (stopień 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:22.024524Z"
+  },
+  "cpp.title.name_66": {
+    "src_hash": "ba2c412ca461200d379b45dfd4ee5ca4",
+    "text": "Stworzenie z przyzwyczajenia (klasa 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:22.024810Z"
+  },
+  "cpp.title.name_67": {
+    "src_hash": "f518f378a9ca7d44a5386870cf36bd6c",
+    "text": "Stworzenie z przyzwyczajenia (klasa 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:28.948116Z"
+  },
+  "cpp.title.name_68": {
+    "src_hash": "324fcd32680fa3d01ab1a320bcdf68d8",
+    "text": "Stworzenie z przyzwyczajenia (klasa 4)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:28.948447Z"
+  },
+  "cpp.title.name_69": {
+    "src_hash": "593c5d0bb328866eabe4d5d0094b413e",
+    "text": "Stworzenie z przyzwyczajenia (klasa 5)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:28.948742Z"
+  },
+  "cpp.title.name_7": {
+    "src_hash": "0f69713f088c361c9d20c6a8cbfdd7ea",
+    "text": "Bestia (klasa 4)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:28.949003Z"
+  },
+  "cpp.title.name_72": {
+    "src_hash": "86a5a45777e1f00a7909f4340ee4ff10",
+    "text": "Przestraszony Łowca Nagród",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:28.949277Z"
+  },
+  "cpp.title.name_8": {
+    "src_hash": "e739f3992fa9f44d9e4f9c1170abbc25",
+    "text": "Bestia (klasa 5)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:35.200607Z"
+  },
+  "cpp.title.name_80": {
+    "src_hash": "e6751e4d84529124aa948161d7b1b3ca",
+    "text": "Królewski Doradca Bounaceański",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:35.201090Z"
+  },
+  "cpp.title.name_84": {
+    "src_hash": "a45e36d51f417672b106a253d9e66a41",
+    "text": "Zwiastun deszczu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:35.201798Z"
+  },
+  "cpp.title.name_86": {
+    "src_hash": "cd659b34bd892ff315472fefa0514eb7",
+    "text": "Północ Hunter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:35.202209Z"
+  },
+  "cpp.title.name_9": {
+    "src_hash": "0de179129ce4cdf8f8677046395bd5ce",
+    "text": "Topmodelka Tibia (klasa 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:39.589447Z"
+  },
+  "cpp.trade.not_enough_capacity": {
+    "src_hash": "2ca959ebb4ac2ecd71cc0028f5dabbd7",
+    "text": "Nie masz wystarczającej pojemności, aby unieść",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:39.589826Z"
+  },
+  "cpp.trade.not_enough_room": {
+    "src_hash": "65132739479934afaf83a9621f57e7a3",
+    "text": "Nie masz wystarczająco dużo miejsca do noszenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:02:39.590257Z"
   }
 }

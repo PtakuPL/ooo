@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T04:35:32.931161Z",
-  "window_end_utc": "2026-02-17T05:35:32.931161Z",
+  "window_start_utc": "2026-02-17T04:36:28.937818Z",
+  "window_end_utc": "2026-02-17T05:36:28.937818Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,20 +16,14 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3828,
-  "guard_fail": 3534,
-  "guard_fail_rate_pct": 48.0,
-  "no_progress_entries": 1,
-  "no_progress_rate_pct": 0.9,
-  "throughput_keys_per_h": 2111.0,
+  "translated": 3797,
+  "guard_fail": 2536,
+  "guard_fail_rate_pct": 40.0,
+  "no_progress_entries": 2,
+  "no_progress_rate_pct": 1.9,
+  "throughput_keys_per_h": 2131.3,
   "suspicious_total": 14459,
   "top_guard_fail_targets": [
-    {
-      "target": "pl/items.json",
-      "translated": 31,
-      "guard_fail": 1039,
-      "guard_command": 0
-    },
     {
       "target": "pl/npc.json",
       "translated": 100,
@@ -70,6 +64,12 @@
       "target": "sr/server.json",
       "translated": 22,
       "guard_fail": 78,
+      "guard_command": 0
+    },
+    {
+      "target": "es/questlog.json",
+      "translated": 82,
+      "guard_fail": 62,
       "guard_command": 0
     }
   ]

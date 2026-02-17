@@ -1,9 +1,9 @@
 {
-  "category": "sr",
-  "cycle": 284,
+  "category": "pl",
+  "cycle": 285,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-17T05:35:28Z",
+  "generated_at_utc": "2026-02-17T05:36:25Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,36 @@
     "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 285,
+      "file": "talkactions.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-17T05:36:17Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 285,
+      "file": "talkactions.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T05:35:53Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 285,
+      "file": "talkactions.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-17T05:35:52Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -81,36 +111,6 @@
       "result": "ok",
       "stage": "auto_start",
       "t": "2026-02-17T05:35:12Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 283,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:34:43Z"
-    },
-    {
-      "action": "update",
-      "category": "sv",
-      "cycle": 283,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:34:07Z"
-    },
-    {
-      "action": "update",
-      "category": "sv",
-      "cycle": 283,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T05:34:07Z"
     }
   ],
   "stage": "cycle_end",

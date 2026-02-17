@@ -1,20 +1,7 @@
 {
-  "timestamp": "2026-02-17T05:35:26.957747Z",
-  "language": "es",
-  "json_file": "modules.json",
-  "translated": 2,
-  "entries": [
-    {
-      "key": "module.gamestore.text1",
-      "en": "/modules/scripts/gamestore/init.lua",
-      "translated": "/modules/scripts/gamestore/init.lua",
-      "source": "tm"
-    },
-    {
-      "key": "module.gamestore.text2",
-      "en": "home/banner_armouredarcher.png",
-      "translated": "inicio/banner_armouredarcher.png",
-      "source": "google_translate"
-    }
-  ]
+  "timestamp": "2026-02-17T05:36:16.254872Z",
+  "language": "pl",
+  "json_file": "talkactions.json",
+  "translated": 0,
+  "entries": []
 }

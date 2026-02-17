@@ -54798,5 +54798,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:30:05.577971Z"
+  },
+  "data.otservbr.global.npc.carlos.L241.1099": {
+    "src_hash": "e4f61d081116f4ed5def9cd059b7a2db",
+    "text": "Foarte frumos! Mancare pentru mine! Vinde-mi-o, repede! Odată ce mi-ați vândut mâncarea, spuneți {ready} pentru a-mi spune că ați terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.123797Z"
+  },
+  "data.otservbr.global.npc.carlos.L242.1100": {
+    "src_hash": "fe8bd25553d214db746585b95ed951c0",
+    "text": "La revedere |PLAYERNAME|!.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.124167Z"
+  },
+  "data.otservbr.global.npc.carlos.L243.1101": {
+    "src_hash": "fa803dcd4286a1cfa0ba0dfa80ecf665",
+    "text": "La revedere călător și bucură-te de șederea ta pe Rookgaard.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.124923Z"
+  },
+  "data.otservbr.global.npc.carlos.L86.1089": {
+    "src_hash": "05a5c1002ce95a1bde590459ed3aa2b9",
+    "text": "Fiți salutați, |PLAYERNAME|! Ca croitor și comerciant, trebuie să spun - trebuie să facem ceva cu {outfit} al tău, nu-i așa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.125601Z"
+  },
+  "data.otservbr.global.npc.carlos.L91.1090": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Hei, am crezut că vei fugi, dar din fericire te-ai întors. Îți voi arăta cum să-ți schimbi {outfit}, bine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.126282Z"
+  },
+  "data.otservbr.global.npc.carlos.L94.1091": {
+    "src_hash": "f98802d766209a9cc89953b431e09fa3",
+    "text": "Bine ai revenit! Știi, după ce am oferit micul meu serviciu de ținute, îmi place să-ți cer o favoare mică. Poți să mă {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.127034Z"
+  },
+  "data.otservbr.global.npc.carlos.L97.1092": {
+    "src_hash": "e6084bbea0ff0bc4c2373fba3e197ec2",
+    "text": "Oh, hei |PLAYERNAME|, încă nu mi-ai răspuns la întrebare - mă poți ajuta să iau niște {food}? Îți voi da chiar și niște aur pentru asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.127761Z"
+  },
+  "data.otservbr.global.npc.ceiron.L200.299": {
+    "src_hash": "0c1d8e22db331ddbf10d4c15181beada",
+    "text": "Întotdeauna îmi pare bine să cunosc un coleg druid, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.130185Z"
+  },
+  "data.otservbr.global.npc.ceiron.L201.300": {
+    "src_hash": "77c54fdf4c4fa0f83a2d75af37051ae8",
+    "text": "Fie ca Crunor să vă binecuvânteze și să vă ghideze, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.130679Z"
+  },
+  "data.otservbr.global.npc.ceiron.L202.301": {
+    "src_hash": "77c54fdf4c4fa0f83a2d75af37051ae8",
+    "text": "Fie ca Crunor să vă binecuvânteze și să vă ghideze, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.131144Z"
+  },
+  "data.otservbr.global.npc.cerdras.L85.657": {
+    "src_hash": "ac222e2ce71c774dfd7615b83f6538df",
+    "text": "Salutare prietene!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.131449Z"
+  },
+  "data.otservbr.global.npc.cerdras.L86.658": {
+    "src_hash": "77c54fdf4c4fa0f83a2d75af37051ae8",
+    "text": "Fie ca Crunor să vă binecuvânteze și să vă ghideze, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.132064Z"
+  },
+  "data.otservbr.global.npc.charles.L142.1490": {
+    "src_hash": "490e8db04e2c02a81dc2a9e424404ac0",
+    "text": "Ahoy. Unde te pot naviga astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.132493Z"
+  },
+  "data.otservbr.global.npc.charlotta.L85.901": {
+    "src_hash": "4f2eff2d260c80a26015ec640739d25b",
+    "text": "Ah, bine ai venit! Bun venit |PLAYERNAME|! Dacă aveți nevoie de vrăji de druid, ați ajuns în locul potrivit. Altfel, e bine să ai un vizitator.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.133543Z"
+  },
+  "data.otservbr.global.npc.charlotta.L87.903": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.134175Z"
+  },
+  "data.otservbr.global.npc.chavis.L118.1346": {
+    "src_hash": "74bc51c2c9d2b899820180e938426aa0",
+    "text": "Hei acolo! Nu se întâmplă să ai niște {food} pe tine, ești dispus să distribui? Ei bine, unde sunt manierele mele, o primire călduroasă deocamdată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.134972Z"
+  },
+  "data.otservbr.global.npc.chavis.L119.1347": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ai grijă acolo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.135301Z"
+  },
+  "data.otservbr.global.npc.chemar.L89.744": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.135911Z"
+  },
+  "data.otservbr.global.npc.chemar.L90.745": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.136357Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L304.472": {
+    "src_hash": "0bd7be7fa74c735eed6ca6f3f8f93c97",
+    "text": "Salutări, străine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.136715Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L305.473": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ai grijă acolo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.137037Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L306.474": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ai grijă acolo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.137492Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L159.1408": {
+    "src_hash": "471a4c1349cb41447a84403c431bbbff",
+    "text": "Grarkharok fi {chief}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.137887Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L160.1409": {
+    "src_hash": "471a4c1349cb41447a84403c431bbbff",
+    "text": "Grarkharok fi {chief}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.138241Z"
+  },
+  "data.otservbr.global.npc.chondur.L319.194": {
+    "src_hash": "13f7dcbb07deb6cf9372fc7090611d20",
+    "text": "Fii salutat, copile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.138545Z"
+  },
+  "data.otservbr.global.npc.chrak.L93.1133": {
+    "src_hash": "32a347eb9be8bae0f4fb14b360240687",
+    "text": "Salutare, concurent.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.139172Z"
+  },
+  "data.otservbr.global.npc.chrystal.L77.787": {
+    "src_hash": "3dc2f1ab2a9c914700c5e138304ffa50",
+    "text": "La dispoziția dumneavoastră |PLAYERNAME| și bine ați venit la oficiul poștal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.139694Z"
+  },
+  "data.otservbr.global.npc.chrystal.L78.788": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Cine urmează?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.139989Z"
+  },
+  "data.otservbr.global.npc.chrystal.L79.789": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Cine urmează?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.140298Z"
+  },
+  "data.otservbr.global.npc.chrystal.L80.790": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aici. Nu uitați că trebuie să cumpărați și o etichetă dacă doriți să trimiteți un colet. Scrieți întotdeauna numele lui {receiver} în primul rând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.141187Z"
+  },
+  "data.otservbr.global.npc.cipfried.L177.715": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.142175Z"
+  },
+  "data.otservbr.global.npc.cipfried.L64.712": {
+    "src_hash": "f81c498321c6c52d2dda37539f64854f",
+    "text": "Bună, |PLAYERNAME|! Arăți foarte rău. Lasă-mă să-ți vindec rănile. La urma urmei, e treaba mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.142788Z"
+  },
+  "data.otservbr.global.npc.cledwyn.L212.1118": {
+    "src_hash": "90eb7ed81786f0f6628dc1a2bc906919",
+    "text": "Binecuvântări, jucător! Cum pot fi de folos? Doriți să tranzacționați unele {token} sau vreți unele {information} sau {talk}? Ar trebui să {enchant} anumite articole pentru tine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.143754Z"
+  },
+  "data.otservbr.global.npc.coltrayne.L118.1241": {
+    "src_hash": "2cbdbf0d71d0d87da3948f8c56d80db1",
+    "text": "Hei acolo. Ai nevoie de armură sau armă? Atunci cere-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.144600Z"
+  },
+  "data.otservbr.global.npc.coltrayne.L119.1242": {
+    "src_hash": "c4043b19b49cb3397c54dc5d082cf00e",
+    "text": "Da, pa..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.144885Z"
+  },
+  "data.otservbr.global.npc.commander.stone.L232.80": {
+    "src_hash": "1dc25f4d6e9f4bc175fec0b9148c3b7c",
+    "text": "Salut recrutata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.145345Z"
+  },
+  "data.otservbr.global.npc.cornelia.L93.932": {
+    "src_hash": "c4ec5f0f359d484be0af973237c62f24",
+    "text": "Bine ați venit la cel mai bun magazin {armor} din țară, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.145901Z"
+  },
+  "data.otservbr.global.npc.cornelia.L94.933": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.146556Z"
+  },
+  "data.otservbr.global.npc.cornell.L74.82": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.147191Z"
+  },
+  "data.otservbr.global.npc.corym.butler.L62.1150": {
+    "src_hash": "2009453cd0e9214bb50e9c0ffdc419d4",
+    "text": "Trebuie să dezgropăm resurse valoroase, dar nu ajungem să mâncăm. Situația este teribilă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.148301Z"
+  },
+  "data.otservbr.global.npc.corym.footman.L62.228": {
+    "src_hash": "850a02c09cfd41688bfbb5f21dde9f31",
+    "text": "Ceea ce ajungem să mâncăm este cu adevărat ridicol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.148985Z"
+  },
+  "data.otservbr.global.npc.corym.ratter.L63.1029": {
+    "src_hash": "e0afcf5b05f2bd681be3b452372d8aca",
+    "text": "Dezgropăm tot ceea ce mama pământul ne oferă, resurse naturale valoroase.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.149879Z"
+  },
+  "data.otservbr.global.npc.corym.servant.L76.548": {
+    "src_hash": "3c85ff7e716c533650a5c59a22ea7985",
+    "text": "Fiecare om este arhitectul propriei sale averi. Vremurile represiunii s-au încheiat în sfârșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.150952Z"
+  },
+  "data.otservbr.global.npc.corym.slave.L62.665": {
+    "src_hash": "19ef9d5e9520e892b00ccf7857e9de4e",
+    "text": "Reprimarea a durat prea mult. Cu noile noastre arme, oamenii respectivi vor primi pedeapsa lor justă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.151545Z"
+  },
+  "data.otservbr.global.npc.corym.worker.01.L65.1136": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Eroul meu! Un prieten de-al meu te-a trimis să mă eliberezi? Un prieten adevărat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:37:40.152459Z"
   }
 }

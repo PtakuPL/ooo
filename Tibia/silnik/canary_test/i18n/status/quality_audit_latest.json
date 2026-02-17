@@ -1,18 +1,102 @@
 {
-  "timestamp": "2026-02-17T08:37:11.374771Z",
+  "timestamp": "2026-02-17T08:38:51.041619Z",
   "checked_entries": 100,
-  "issues_found": 44,
+  "issues_found": 28,
   "issues_by_type": {
-    "identical_to_en_exempt": 17,
+    "identical_to_en_exempt": 5,
+    "identical_to_en": 12,
     "artifact_token": 16,
-    "identical_to_en": 28,
-    "suspicious_log_high": 79,
-    "suspicious_log_critical": 53,
-    "suspicious_log_low": 68,
-    "suspicious_rejected_critical": 171,
-    "suspicious_rejected_high": 29
+    "suspicious_log_high": 167,
+    "suspicious_log_low": 7,
+    "suspicious_log_critical": 26,
+    "suspicious_rejected_critical": 177,
+    "suspicious_rejected_high": 23
   },
   "issues": [
+    {
+      "key": "raid.terrorbirds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "spell.terra_wave.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exevo tera hur",
+      "translated": "exevo tera hur"
+    },
+    {
+      "key": "spell.strong_energy_strike.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori gran vis",
+      "translated": "exori gran vis"
+    },
+    {
+      "key": "spell.physical_strike.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori moe ico",
+      "translated": "exori moe ico"
+    },
+    {
+      "key": "spell.strong_flame_strike.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori gran flam",
+      "translated": "exori gran flam"
+    },
+    {
+      "key": "spell.strong_ethereal_spear.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori gran con",
+      "translated": "exori gran con"
+    },
+    {
+      "key": "spell.ice_strike.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori frigo",
+      "translated": "exori frigo"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -124,202 +208,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
-    },
-    {
-      "key": "raid.scarab.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Scarab",
-      "translated": "Scarab"
-    },
-    {
-      "key": "raid.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "raid.morgaroth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "raid.ferumbras.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "raid.example.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Example",
-      "translated": "Example"
-    },
-    {
-      "key": "raid.raids.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Raids",
-      "translated": "Raids"
-    },
-    {
-      "key": "raid.undead_darashia.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Undead Darashia",
-      "translated": "Undead Darashia"
-    },
-    {
-      "key": "raid.priestesses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Priestesses",
-      "translated": "Priestesses"
-    },
-    {
-      "key": "raid.barba_svar.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Svar",
-      "translated": "Barba Svar"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.ghazbaran.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "raid.barbarian.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barbarian",
-      "translated": "Barbarian"
-    },
-    {
-      "key": "raid.hirintror.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "raid.terrorbirds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.gnarlhounds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
     }
   ],
   "threshold": 10,

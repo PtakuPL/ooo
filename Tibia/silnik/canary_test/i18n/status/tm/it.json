@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:47:39.134719Z"
+    "updated_at": "2026-02-17T08:37:55.267287Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -61238,5 +61238,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:37:09.098875Z"
+  },
+  "spell.curse.name": {
+    "src_hash": "738ca3cb200c27b4996ed320eee15705",
+    "text": "Maledizione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:12.286587Z"
+  },
+  "spell.terra_wave.name": {
+    "src_hash": "e3a4241a45c4747ac02615702b1e0163",
+    "text": "Onda Terra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:12.286808Z"
+  },
+  "spell.terra_wave.words": {
+    "src_hash": "2559e690cd3439df960da26b5870ea7f",
+    "text": "exevo tera hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:12.287200Z"
+  },
+  "spell.strong_energy_strike.words": {
+    "src_hash": "ed99353603c3aa24b5818ac2821e3f7a",
+    "text": "exori gran vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:14.980016Z"
+  },
+  "spell.physical_strike.words": {
+    "src_hash": "972facee93e7eb9f825cbaa3f063c6c2",
+    "text": "exori moe ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:14.980411Z"
+  },
+  "spell.strong_flame_strike.words": {
+    "src_hash": "9d398473b7c97f18377d604eb115acaa",
+    "text": "exori gran flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:14.980747Z"
+  },
+  "spell.strong_ethereal_spear.words": {
+    "src_hash": "58a3875cd62d7f7149d577a494338a46",
+    "text": "exori gran con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:14.981047Z"
+  },
+  "spell.ice_strike.words": {
+    "src_hash": "d9d027923474bf7c4bf90eb0c60095c6",
+    "text": "exori frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:38:14.981342Z"
   }
 }

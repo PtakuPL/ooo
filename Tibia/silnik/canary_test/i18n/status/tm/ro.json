@@ -56054,5 +56054,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:03:03.899816Z"
+  },
+  "cpp.inspect.mana_shield": {
+    "src_hash": "f249800c7cf9b009f48674253a64721d",
+    "text": "Scut de mana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:18.312396Z"
+  },
+  "cpp.look.wield_by": {
+    "src_hash": "b905a321d3e1a3742048e2ee98c11bc3",
+    "text": "Poate fi mânuit corespunzător doar de către ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:31.493708Z"
+  },
+  "cpp.npc.bought_bag_currency": {
+    "src_hash": "7882ae19d5f43b641a21e8a140308dfd",
+    "text": "A cumpărat {0}x {1} pentru {2} {3} și 1 pungă de cumpărături pentru {4} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:31.494343Z"
+  },
+  "cpp.npc.bought_bag_gold": {
+    "src_hash": "a19dce232723d9b603f147324cc9d0a4",
+    "text": "Am cumpărat {0}x {1} și 1 pungă de cumpărături pentru {2} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:31.494814Z"
+  },
+  "cpp.npc.bought_bags_currency": {
+    "src_hash": "a34143360f671f2d0ed43f484dd96721",
+    "text": "Am cumpărat {0}x {1} pentru {2} {3} și {4}x pungi de cumpărături pentru {5} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:31.495324Z"
+  },
+  "cpp.npc.bought_bags_gold": {
+    "src_hash": "e5bffaf05063189995a917b83c27f9ca",
+    "text": "Am cumpărat {0}x {1} și {2} pungi de cumpărături pentru {3} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:37.292142Z"
+  },
+  "cpp.npc.bought_currency": {
+    "src_hash": "2c0e2f09d57fecb2ac5fec4fe901982e",
+    "text": "A cumpărat {0}x {1} pentru {2} {3}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:37.292493Z"
+  },
+  "cpp.npc.bought_gold": {
+    "src_hash": "582b26eca135fd2b1ee3d6fb81ffd765",
+    "text": "A cumpărat {0}x {1} pentru {2} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:37.292849Z"
+  },
+  "cpp.npc.loot_pouch_empty": {
+    "src_hash": "19949a7cef86dd39eedf1004ee273fa1",
+    "text": "Nu ai niciun obiect în punga de pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:37.293193Z"
+  },
+  "cpp.npc.loot_pouch_sold": {
+    "src_hash": "4f6c342cb05df9d9dad9266d4f4d0829",
+    "text": "Ați vândut toate articolele din punga de pradă pentru {0} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:37.293607Z"
+  },
+  "cpp.party.invitation_revoked_by_leader": {
+    "src_hash": "0eadaf47d91621e40ac5fb89b3d0206f",
+    "text": "{0} a revocat invitația {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:42.399545Z"
+  },
+  "cpp.party.invitation_revoked_for": {
+    "src_hash": "b8d42a28a091e16edd23075dbbe53c9b",
+    "text": "Invitația pentru {0} a fost revocată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:42.400143Z"
+  },
+  "cpp.party.invited_member": {
+    "src_hash": "7d13e33c4599e50f0e653f4442c3db92",
+    "text": "{0} a fost invitat să se alăture grupului (Interval de partajare: {1}-{2}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:42.400680Z"
+  },
+  "cpp.party.invited_member_with_hint": {
+    "src_hash": "d05980efadff489aa852931b120e9a63",
+    "text": "{0} a fost invitat să se alăture grupului (Interval de partajare: {1}-{2}). Deschide canalul de petrecere pentru a comunica cu membrii tăi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:42.401302Z"
+  },
+  "cpp.party.invited_you": {
+    "src_hash": "3b0e14a8cdddbdb07f30fd7906fd02ae",
+    "text": "{0} v-a invitat la {1} petrecere (Interval de partajare: {2}-{3}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:42.401687Z"
+  },
+  "cpp.party.joined": {
+    "src_hash": "c43de5c4acec8bff684079a1fab7caa0",
+    "text": "Te-ai alăturat grupului {0}. Deschide canalul de petrecere pentru a comunica cu însoțitorii tăi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:49.563325Z"
+  },
+  "cpp.party.member_joined": {
+    "src_hash": "b23da70f87775320ef5cbe8c8a28a0e7",
+    "text": "{0} s-a alăturat partidului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:49.563674Z"
+  },
+  "cpp.party.member_left": {
+    "src_hash": "53d13494eae30f5a624e61f9a71f02d6",
+    "text": "{0} a părăsit petrecerea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:49.564060Z"
+  },
+  "cpp.party.new_leader": {
+    "src_hash": "92e7d7fabd5be64332e4e84804942c63",
+    "text": "{0} este acum liderul partidului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:49.564377Z"
+  },
+  "cpp.party.shared_exp_active": {
+    "src_hash": "89578e7f5a779603c86b0def081dc66b",
+    "text": "Experiența partajată este acum activă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:49.564707Z"
+  },
+  "cpp.party.shared_exp_active_alone": {
+    "src_hash": "299770ccf0c6851aa6d34323e2c256f5",
+    "text": "Experiența partajată a fost activată, dar ești singur în grupul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:55.885231Z"
+  },
+  "cpp.party.shared_exp_active_inactive": {
+    "src_hash": "c5f7db6e344f5dd5a8b917013146bd9d",
+    "text": "Experiența partajată a fost activată, dar unii membri ai grupului dvs. sunt inactivi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:55.885753Z"
+  },
+  "cpp.party.shared_exp_active_level_spread": {
+    "src_hash": "baac1ae78badf2914b275c655cbf08db",
+    "text": "Experiența partajată a fost activată, dar răspândirea nivelului grupului tău este prea mare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:55.886356Z"
+  },
+  "cpp.party.shared_exp_active_too_far": {
+    "src_hash": "3dcb60d1bb1edcb8d393d2fc8406d969",
+    "text": "Experiența partajată a fost activată, dar unii membri ai grupului dvs. sunt prea departe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:55.886839Z"
+  },
+  "cpp.party.shared_exp_error": {
+    "src_hash": "aa72d3421dfc220a2a4d359df9fab2fd",
+    "text": "A apărut o eroare. Nu se poate activa experiența partajată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:07:55.887230Z"
+  },
+  "cpp.player.adventurer_blessings_kept": {
+    "src_hash": "ba39b2a0d1644235affc07a634a5eac1",
+    "text": "Încă mai ai binecuvântarea aventurierului pentru că ai un nivel mai mic decât {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:08:00.982070Z"
+  },
+  "cpp.player.adventurer_blessings_received": {
+    "src_hash": "b62a2e75a482786bc9e80db58a1868a8",
+    "text": "Ai primit binecuvântări de aventurier pentru că ai fost la un nivel mai scăzut decât {0}!\nÎncă ești binecuvântat cu {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:08:00.982733Z"
+  },
+  "cpp.player.blessed_with": {
+    "src_hash": "b131bc73a3a0d4b540e5511c822f25db",
+    "text": "Ai fost binecuvântat cu {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:08:00.983042Z"
   }
 }

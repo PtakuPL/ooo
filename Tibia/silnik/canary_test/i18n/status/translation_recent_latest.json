@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T01:55:12.383116Z",
-  "language": "es",
+  "timestamp": "2026-02-17T01:56:05.763375Z",
+  "language": "ru",
   "json_file": "npc.json",
-  "translated": 24,
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "npc.brasith.walkaway_msg_1",
+      "en": "Asha Thrazi.",
+      "translated": "Аша Трази.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.brewster.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "npc.cedrik.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "npc.eroth.walkaway_msg_1",
+      "en": "Asha Thrazi.",
+      "translated": "Аша Трази.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.example_merchant.help",
+      "en": "I can sell you potions, weapons and armor. Say {trade} to browse my goods.",
+      "translated": "Я могу продать тебе зелья, оружие и броню. Скажите {trade}, чтобы просмотреть мои товары.",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "npc.example_merchant.news_1",
+      "en": "Have you heard? Dragons were spotted near the mountains!",
+      "translated": "Вы слышали? Dragons были замечены возле гор!",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "npc.ferus.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "npc.isimov.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "npc.kasmir.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "npc.kjesse.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "npc.lorietta.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "npc.maealil.greet_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "npc.maealil.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "npc.plunderpurse.say_18",
+      "en": "The customer is king! Come back anytime you want to if you wish to {withdraw} your money.",
+      "translated": "Клиент всегда прав! Возвращайтесь в любое время, если захотите {withdraw} свои деньги.",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "npc.prezil.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "npc.tyrias.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.wentworth.say_19",
+      "en": "The customer is king! Come back anytime you want to if you wish to {withdraw} your money.",
+      "translated": "Клиент всегда прав! Возвращайтесь в любое время, если захотите {withdraw} свои деньги.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.yaman.sendtrade_msg_1",
+      "en": "At your service, just browse through my wares.",
+      "translated": "К вашим услугам, просто просмотрите мои товары.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "npc.yberius.greet_msg_1",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "npc.yberius.walkaway_msg_1",
+      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
+      "translated": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+      "source": "simple"
     }
   ]
 }

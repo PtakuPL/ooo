@@ -145998,5 +145998,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:48:39.613946Z"
+  },
+  "data.otservbr.global.scripts.creaturescripts.customs.reward.exercise.L7.2346": {
+    "src_hash": "a04ed04c4dec75f3bd9a0f3215db62e9",
+    "text": "Puedes recibir un arma de ejercicio usando el comando !reward",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.308391Z"
+  },
+  "data.otservbr.global.scripts.globalevents.others.check.mount.L28.2345": {
+    "src_hash": "53fb4630c527cc842c731640ece0d1ca",
+    "text": "Tu contrato con tu caballo expiró y regresó a la estación de caballos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.309608Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L1054.1640": {
+    "src_hash": "457859cd03d9e4c29df2a967ad8acb12",
+    "text": "Esta mesa está hecha de varias puertas viejas. Una de ellas tiene una cerradura ornamentada notable. Quizás podrías sacarla con una herramienta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.310935Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L1057.1641": {
+    "src_hash": "b40a3788093c2b5203775fef1998e752",
+    "text": "Ya retiraste la cerradura vieja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.311901Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L430.1631": {
+    "src_hash": "22cbfb574aa718a3ac1cf440f48a8c3f",
+    "text": "¡Cavaste un agujero! Camina sobre él mientras esté abierto para saltar hacia abajo a la cueva del bosque.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.316292Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L438.1632": {
+    "src_hash": "06b0ecd4036562184610fd377e9e8872",
+    "text": "Encontraste un trozo del pergamino. Lo guardas rápidamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.317363Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L443.1633": {
+    "src_hash": "68b3b2037548d7d2f96c36135aa2439e",
+    "text": "Aparece un trozo de pergamino roto. Probablemente roído por ratas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.318651Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L539.1635": {
+    "src_hash": "457859cd03d9e4c29df2a967ad8acb12",
+    "text": "Esta mesa está hecha de varias puertas viejas. Una de ellas tiene una cerradura ornamentada notable. Quizás podrías sacarla con una herramienta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.320339Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L542.1636": {
+    "src_hash": "b40a3788093c2b5203775fef1998e752",
+    "text": "Ya retiraste la cerradura vieja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.321326Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L769.1637": {
+    "src_hash": "45fd5580c8052e8bc8dd98c472e92f84",
+    "text": "No puedes retirar esta pila ya que actualmente sostiene el túnel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.322546Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L827.1638": {
+    "src_hash": "41a6b0f2a72e1647d6600ba6d86c2ffa",
+    "text": "Triturar la piedra produce algo de grava fina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.323705Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L831.1639": {
+    "src_hash": "37ffedca57e56db8236e2e250860e1bc",
+    "text": "Triturar la piedra no produce más que caucho ligeramente más fino, pero aún inutilizable.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.324867Z"
+  },
+  "data.otservbr.global.scripts.movements.oramond.seacrest.L12.2329": {
+    "src_hash": "5147c955481cbf7abcc4b32850c6898d",
+    "text": "Entras al terreno de seacrest.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.325907Z"
+  },
+  "data.otservbr.global.scripts.movements.oramond.seacrest.L15.2330": {
+    "src_hash": "92f79f3b5a073c61aa47a25cf2b49246",
+    "text": "Debes llevar un casco de exploración submarina para bucear.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.326995Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L124.2337": {
+    "src_hash": "884a719512ac8282e5e9b37779149c5f",
+    "text": "¡Bienvenido a Dawnport! Pasea y explora por tu cuenta, o habla con Inigo si necesitas indicaciones.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.328300Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L165.2339": {
+    "src_hash": "8f1787138c01a558bd25881f007eb336",
+    "text": "Para subir ESCALERAS, usa las teclas de dirección de tu teclado. También puedes usarlas para caminar en general.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:37.330027Z"
   }
 }

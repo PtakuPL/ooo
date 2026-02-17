@@ -36806,5 +36806,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:51:24.893754Z"
+  },
+  "npc.a_sweaty_cyclops.say_9": {
+    "src_hash": "9ea8aff6ec20c59ff6637f48269b9cdc",
+    "text": "Ho bisogno di un regalo per una donna. Balliamo, quindi voglio regalarle una gonna di rafia. Ma lei è grande. Quindi me ne servono molti per realizzarne uno grande. Portane tre, ok? Io aspetto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:41.593150Z"
+  },
+  "npc.a_weakened_forest_fury.greet_msg_1": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Ti saluto, umano. Questo è un momento di angoscia, più che mai abbiamo bisogno di tutori che proteggano noi e il nostro mondo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:41.596985Z"
+  },
+  "npc.ghostly_wolf.say_3": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:41.940468Z"
+  },
+  "npc.ikassis.say_2": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:42.060271Z"
+  },
+  "npc.irmana.say_31": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:42.079735Z"
+  },
+  "npc.tereban_functions.say_1": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:42.523889Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Ehm, eh, eh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:46.554256Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_10": {
+    "src_hash": "a13fa74c13f58f18eeb7505836dd988f",
+    "text": "Non va bene fare cose. È un pessimo acciaio. Ma mangiare la magia è così utile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:46.554910Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_11": {
+    "src_hash": "cd9d9b8a7936c7b21029afb21e9e4b4a",
+    "text": "Brightsteel lo è. Molta arte realizzata con esso. Gli stregoni sono troppo pigri e timorosi per incantare molto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:46.555549Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_12": {
+    "src_hash": "c7e8c755d404f5c2a023e05fee8f5435",
+    "text": "Heartiron dal cuore di una grande vecchia montagna, trovato molto profondo. I piccoli si difendono ferocemente. Non voglio che venga usato per cose ma cose sante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:46.556091Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_13": {
+    "src_hash": "bdc8a4554678daf7f347c8552ada0041",
+    "text": "I miei genitori vivevano qui prima che nascesse la città. A me non importa dei più piccoli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:46.556529Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_14": {
+    "src_hash": "ad7b558dcc8b2f18771d99920ab04f05",
+    "text": "I piccoli sono così divertenti. Chiacchieriamo spesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:49.206595Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_15": {
+    "src_hash": "a883a73cdfd5134f1d0a701d6f2aeb4d",
+    "text": "Un giorno andrò a vedere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:49.206912Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_16": {
+    "src_hash": "49278b13edc627aea5d017179d23f441",
+    "text": "Appartiene alla famiglia degli elfi o qualcosa del genere. Io non capisco i piccoli e i loro affari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:49.207346Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_17": {
+    "src_hash": "49278b13edc627aea5d017179d23f441",
+    "text": "Appartiene alla famiglia degli elfi o qualcosa del genere. Io non capisco i piccoli e i loro affari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:49.207775Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_18": {
+    "src_hash": "f7ffa2f302db40ad16ecb76b9668a870",
+    "text": "Ho chiamato Bencthyclthrtrprr dalla mia gente. Quelli piccoli che io chiamo Big Ben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:49.208160Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_19": {
+    "src_hash": "57f6d3f3e232aca525f807c7a0d2d15a",
+    "text": "Stai zitto. Non voglio sentire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:52.364628Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_2": {
+    "src_hash": "e394b383f25b2bf9274e3eb3dc9c834f",
+    "text": "Sciocco piccolo umano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:52.364876Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_20": {
+    "src_hash": "17d90660143c3016dd9502f898e0184b",
+    "text": "Il piccolo vuole scambiare una spada di fuoco?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:52.365192Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_21": {
+    "src_hash": "f51d37b6b16447c7f3c96809992cd18e",
+    "text": "Il piccolo vuole scambiare uno scudo di drago?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:52.365507Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_22": {
+    "src_hash": "1dec14094f05ba6d48a081b4c53669e7",
+    "text": "Il piccolo vuole scambiare una spada del valore?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:52.365824Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_23": {
+    "src_hash": "968fab5045f93890267288944c812dab",
+    "text": "Il piccolo vuole scambiare la spada di un signore della guerra?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:54.945960Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_24": {
+    "src_hash": "e49e35fbdea87d0ec446f56fe4ea9b82",
+    "text": "Erano amici dei miei genitori. Molto prima che gli elfi venissero qui, spesso facevano visita. Non vieni più qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:54.946612Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_25": {
+    "src_hash": "c9b23c256931354aa8c13614b41548b4",
+    "text": "Io non li combatto, loro non combattono contro di me.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:54.946936Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_3": {
+    "src_hash": "8e117afcf7ee9c8d5fde01fe82022c1e",
+    "text": "Sono fabbro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:54.947135Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_4": {
+    "src_hash": "0594dc5ead1c454a84b652b144bec8ca",
+    "text": "Lavorare l'acciaio è la mia professione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:54.947474Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_6": {
+    "src_hash": "cb367446bb1f76fd5ef38e0f22390fb8",
+    "text": "La maggior parte degli antichi usa l'argento dei sogni per cose diverse. Ora gli antichi sono quasi scomparsi. La maggior parte non lo sa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:57.810525Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_7": {
+    "src_hash": "4b3efefe57f6d2ef644467d4adfdb396",
+    "text": "Si chiama High Steel. Solo i più piccoli sanno come si fa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:57.810930Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_8": {
+    "src_hash": "c6c80a3dde68893a72bf35c142b4d133",
+    "text": "È malvagio. Il ferro demoniaco lo è. Nessun ciclope buono va dove puoi trovare e ha bisogno che la fiamma malvagia si sciolga.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:57.811447Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_9": {
+    "src_hash": "2833c7e14905733cf1a705926e168506",
+    "text": "Acciaio che canta quando forgiato. Nessuno sa dove trovarlo oggi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:57.811815Z"
+  },
+  "npc.a_sweaty_cyclops.voice_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Ehm, eh, eh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:59.774716Z"
+  },
+  "npc.a_sweaty_cyclops.voice_2": {
+    "src_hash": "e394b383f25b2bf9274e3eb3dc9c834f",
+    "text": "Sciocco piccolo umano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:55:59.774993Z"
   }
 }

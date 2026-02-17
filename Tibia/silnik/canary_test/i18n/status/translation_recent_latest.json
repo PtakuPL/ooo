@@ -1,128 +1,20 @@
 {
-  "timestamp": "2026-02-17T07:03:39.717764Z",
+  "timestamp": "2026-02-17T07:04:27.650194Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 51,
+  "json_file": "modules.json",
+  "translated": 2,
   "entries": [
     {
-      "key": "npc.uzgod.walkaway_msg_1",
-      "en": "Guut bye. Coming back soon.",
-      "translated": "Adiós. Volviendo pronto.",
-      "source": "simple"
+      "key": "module.gamestore.text1",
+      "en": "/modules/scripts/gamestore/init.lua",
+      "translated": "/modules/scripts/gamestore/init.lua",
+      "source": "tm"
     },
     {
-      "key": "npc.uzon.farewell_msg_1",
-      "en": "Daraman's blessings",
-      "translated": "Las bendiciones de Daraman",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon.keyword_1",
-      "en": "Hold on!",
-      "translated": "¡Esperar!",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon.stdmod_3",
-      "en": "Hold on!",
-      "translated": "¡Esperar!",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon.walkaway_msg_1",
-      "en": "Daraman's blessings",
-      "translated": "Las bendiciones de Daraman",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon_back.farewell_msg_1",
-      "en": "Daraman's blessings",
-      "translated": "Las bendiciones de Daraman",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon_back.keyword_1",
-      "en": "Hold on!",
-      "translated": "¡Esperar!",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon_back.stdmod_3",
-      "en": "Hold on!",
-      "translated": "¡Esperar!",
-      "source": "simple"
-    },
-    {
-      "key": "npc.uzon_back.walkaway_msg_1",
-      "en": "Daraman's blessings",
-      "translated": "Las bendiciones de Daraman",
-      "source": "simple"
-    },
-    {
-      "key": "npc.valentina.greet_msg_1",
-      "en": "Welcome to Valentine's Store. Let's {trade} something?",
-      "translated": "Bienvenido a la tienda de San Valentín. ¿Vamos a {trade} algo?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.valindara.greet_msg_1",
-      "en": "Greatings, mortal beigin.",
-      "translated": "Saludos, comienzo mortal.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.valindara.sendtrade_msg_1",
-      "en": "Yes, i have some potions and runes if you are interested. Or do you want to buy only potions or only runes?oh if you want sell or buy gems, your may also ask me.",
-      "translated": "Sí, tengo algunas pociones y runas si estás interesado. ¿O quieres comprar solo pociones o solo runas? Oh, si quieres vender o comprar gemas, también puedes preguntarme.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vanys.greet_msg_1",
-      "en": "Greetings hero. I guess you came to {talk}.",
-      "translated": "Saludos héroe. Supongo que viniste a {talk}.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.farewell_msg_1",
-      "en": "Farewell.",
-      "translated": "Despedida.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.greet_msg_1",
-      "en": "Welcome, adventurer |PLAYERNAME|. These are dire times for Rookgaard... have you come to help in our {mission}?",
-      "translated": "Bienvenido, aventurero |PLAYERNAME|. Son tiempos terribles para Rookgaard... ¿has venido a ayudar en nuestro {mission}?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.greet_msg_10",
-      "en": "Welcome back, |PLAYERNAME|! How about that studded armor - would you like to have it now?",
-      "translated": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Qué tal esa armadura con tachuelas? ¿Te gustaría tenerla ahora?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.greet_msg_11",
-      "en": "|PLAYERNAME|! Thank the gods you are back! While you were gone, something horrible happened. Do you smell the fire?",
-      "translated": "|PLAYERNAME|! ¡Gracias a los dioses que has vuelto! Mientras no estabas, sucedió algo horrible. ¿Hueles el fuego?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.greet_msg_12",
-      "en": "Oh my, what happened to your hair? Your face is all black, too - it must have been a hell of flames down there. That's so brave of you. Did you get the book?",
-      "translated": "Dios mío, ¿qué pasó con tu cabello? Tu cara también está toda negra; debe haber un infierno de llamas allí abajo. Eso es muy valiente de tu parte. ¿Recibiste el libro?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.greet_msg_13",
-      "en": "Are you prepared for your next mission, |PLAYERNAME|?",
-      "translated": "¿Estás preparado para tu próxima misión, |PLAYERNAME|?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.vascalir.greet_msg_14",
-      "en": "Now that you know how to store your money, it's time to go after the trolls. I'm even going to give you some more equipment as reward. Do you feel ready for that mission?",
-      "translated": "Ahora que sabes cómo almacenar tu dinero, es hora de perseguir a los trolls. Incluso te daré más equipo como recompensa. ¿Te sientes preparado para esa misión?",
-      "source": "simple"
+      "key": "module.gamestore.text2",
+      "en": "home/banner_armouredarcher.png",
+      "translated": "inicio/banner_armouredarcher.png",
+      "source": "google_translate"
     }
   ]
 }

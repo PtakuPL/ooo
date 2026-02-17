@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T10:07:15.275955Z",
-  "cycle_counter": 2071,
-  "last_target_key": "pl:startup.json",
-  "last_pending_total": 9,
+  "timestamp": "2026-02-17T10:08:30.593532Z",
+  "cycle_counter": 2074,
+  "last_target_key": "es:php.json",
+  "last_pending_total": 6,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 187,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 431,
+  "cache_cycle": 432,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,

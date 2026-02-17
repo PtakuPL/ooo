@@ -2,19 +2,19 @@
   "lang": "es",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 40542,
-  "identical_to_en": 2627,
-  "placeholder_keys": 13044,
-  "coverage_pct": 75.7,
-  "issues_total": 41,
+  "translated": 45322,
+  "identical_to_en": 2063,
+  "placeholder_keys": 8264,
+  "coverage_pct": 84.6,
+  "issues_total": 45,
   "issues_by_type": {
-    "V4_artifact": 38,
+    "V4_artifact": 42,
     "V2_length_ratio": 2,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 38,
+    "HIGH": 42,
     "MEDIUM": 3,
     "LOW": 0
   },
@@ -63,6 +63,12 @@
       "severity": "HIGH"
     },
     {
+      "key": "monster.shulgrax.voice_3",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "monster.ferumbras_mortal_shell.voice_4",
       "category": "monsters",
       "type": "V4_artifact",
@@ -81,7 +87,19 @@
       "severity": "HIGH"
     },
     {
+      "key": "monster.prince_drazzak.voice_9",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.ghazbaran.voice_3",
       "category": "monsters",
       "type": "V4_artifact",
       "severity": "HIGH"
@@ -121,33 +139,15 @@
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.carina.say_2",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 493,
-    "consistency": 68,
+    "issues_total": 513,
+    "consistency": 70,
     "pl_reference": 400,
-    "length_ratio": 25,
-    "auto_fix_applied": 8
+    "length_ratio": 43,
+    "auto_fix_applied": 1
   },
-  "validated_at": "2026-02-17T06:22:59.044866Z"
+  "validated_at": "2026-02-17T06:51:53.405202Z"
 }

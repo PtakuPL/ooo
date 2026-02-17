@@ -9,10 +9,10 @@
   "channel.help.msg_not_authorized_mute": "[EN] You are not authorized to mute that player.",
   "channel.help.msg_not_authorized_unmute": "[EN] You are not authorized to unmute that player.",
   "channel.help.msg_not_muted": "[EN] That player is not muted.",
-  "channel.help.name": "Help",
+  "channel.help.name": "Ajutor",
   "channel.msg_level1_mute": "[EN] You may not speak into channels as long as you are on level 1.",
   "channel.msg_level20_premium": "[EN] You may not speak in this channel unless you have reached level 20 or your account has premium status.",
   "channel.msg_offer_cooldown": "[EN] You may only place one offer in two minutes.",
-  "channel.tutor.name": "Tutor",
-  "channel.world_chat.name": "World Chat"
+  "channel.tutor.name": "Tutore",
+  "channel.world_chat.name": "Chat mondial"
 }

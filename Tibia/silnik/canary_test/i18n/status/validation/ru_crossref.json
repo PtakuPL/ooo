@@ -1,15 +1,15 @@
 {
   "lang": "ru",
-  "coverage_pct": 39.0,
+  "coverage_pct": 49.7,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:23:31.142037Z",
-  "issues_total": 106,
+  "checked_at": "2026-02-17T06:54:09.532135Z",
+  "issues_total": 128,
   "issues_by_type": {
-    "consistency_in_language": 53,
+    "consistency_in_language": 56,
     "pl_reference_missing_translation": 29,
-    "length_ratio_crosscheck": 24
+    "length_ratio_crosscheck": 43
   },
   "consistency_issues": [
     {
@@ -417,6 +417,22 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "coal basin",
+      "variants": [
+        "угольный бассейн",
+        "чаша с углём"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.171.name",
+        "items:item.22875.name",
+        "items:item.22876.name",
+        "items:item.31315.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "stone pile",
       "variants": [
         "груда камней",
@@ -589,6 +605,20 @@
         "items:item.653.name",
         "items:item.654.name",
         "items:item.655.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Pinata Dragon",
+      "variants": [
+        "Pinata Дракон",
+        "Пиньята Дракон"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.25062.name",
+        "monsters:monster.pinata_dragon.name"
       ]
     },
     {
@@ -781,6 +811,21 @@
         "monsters:monster.orc.name",
         "monsters:monster.orc_sambackpack.name",
         "raids:raid.orc.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Hooooot-Toooooot!",
+      "variants": [
+        "Ууууууууууу!",
+        "Уууууууууууу!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.mammoth.voice_2",
+        "monsters:monster.elephant.voice_1",
+        "monsters:monster.terrified_elephant.voice_1"
       ]
     },
     {
@@ -1195,6 +1240,15 @@
       "pl_ratio": 3.556
     },
     {
+      "key": "cpp.augment.healing",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "crossref_length_ratio_diff",
@@ -1213,6 +1267,15 @@
       "pl_ratio": 3.2
     },
     {
+      "key": "cpp.combat.healing",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
       "key": "cpp.inspect.expires",
       "category": "cpp",
       "type": "crossref_length_ratio_diff",
@@ -1220,6 +1283,60 @@
       "en_len": 7,
       "lang_ratio": 3.143,
       "pl_ratio": 0.857
+    },
+    {
+      "key": "cpp.look.healing",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
+      "key": "item.2422.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.2423.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.2424.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.2425.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.28649.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 1.5,
+      "pl_ratio": 3.5
     },
     {
       "key": "item.32588.name",
@@ -1238,6 +1355,78 @@
       "en_len": 7,
       "lang_ratio": 2.714,
       "pl_ratio": 0.714
+    },
+    {
+      "key": "monster.abyssador.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 0.867,
+      "pl_ratio": 2.867
+    },
+    {
+      "key": "monster.horse.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 13,
+      "lang_ratio": 3.308,
+      "pl_ratio": 1.0
+    },
+    {
+      "key": "monster.mutated_tiger.voice_2",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 2.833,
+      "pl_ratio": 0.833
+    },
+    {
+      "key": "monster.wild_horse.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 13,
+      "lang_ratio": 3.308,
+      "pl_ratio": 1.0
+    },
+    {
+      "key": "monster.grey_horse.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 13,
+      "lang_ratio": 3.308,
+      "pl_ratio": 1.0
+    },
+    {
+      "key": "monster.brown_horse.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 13,
+      "lang_ratio": 3.308,
+      "pl_ratio": 1.0
+    },
+    {
+      "key": "monster.undertaker.name",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 10,
+      "lang_ratio": 0.9,
+      "pl_ratio": 3.1
+    },
+    {
+      "key": "monster.frost_giant.voice_5",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 0.917,
+      "pl_ratio": 3.667
     },
     {
       "key": "npc.billy.walkaway_msg_1",
@@ -1292,6 +1481,33 @@
       "en_len": 5,
       "lang_ratio": 3.2,
       "pl_ratio": 1.2
+    },
+    {
+      "key": "otclient_modules.cooldown_otui.tr_8",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_12",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_6",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
     },
     {
       "key": "spell.sapling_explode.name",

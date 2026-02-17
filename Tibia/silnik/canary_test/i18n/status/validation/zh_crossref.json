@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:23:33.385190Z",
+  "checked_at": "2026-02-17T06:55:13.737738Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -365,6 +365,15 @@
       "lang": "You found "
     },
     {
+      "key": "ui.house.rent_period_daily",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily",
+      "pl": "codziennie",
+      "lang": "daily"
+    },
+    {
       "key": "ui.house.rent_period_monthly",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -372,6 +381,24 @@
       "en": "monthly",
       "pl": "miesięczny",
       "lang": "monthly"
+    },
+    {
+      "key": "ui.house.rent_period_weekly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "weekly",
+      "pl": "tygodnik",
+      "lang": "weekly"
+    },
+    {
+      "key": "ui.house.rent_period_yearly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "annual",
+      "pl": "coroczny",
+      "lang": "annual"
     },
     {
       "key": "ui.readable.wrote",
@@ -734,6 +761,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.augment.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.bestiary.charm_category_major",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -804,6 +840,15 @@
       "en": "fire",
       "pl": "ogień",
       "lang": "fire"
+    },
+    {
+      "key": "cpp.combat.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
     },
     {
       "key": "cpp.combat.holy",
@@ -948,6 +993,24 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.highscore_category_fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fishing",
+      "pl": "Rybacki",
+      "lang": "Fishing"
+    },
+    {
+      "key": "cpp.game.highscore_category_shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shielding",
+      "pl": "Zastawianie",
+      "lang": "Shielding"
     },
     {
       "key": "cpp.game.no_loot",
@@ -1454,6 +1517,15 @@
       "lang": " field"
     },
     {
+      "key": "cpp.look.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1841,6 +1913,15 @@
       "lang": "No error."
     },
     {
+      "key": "cpp.skill.fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fishing",
+      "pl": "Rybacki",
+      "lang": "fishing"
+    },
+    {
       "key": "cpp.skill.level",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1866,6 +1947,15 @@
       "en": "mana leech",
       "pl": "mana pijawka",
       "lang": "mana leech"
+    },
+    {
+      "key": "cpp.skill.shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shielding",
+      "pl": "Zastawianie",
+      "lang": "shielding"
     },
     {
       "key": "cpp.skill.unknown",
@@ -2082,6 +2172,15 @@
       "en": "a paladin",
       "pl": "jeden paladin",
       "lang": "a paladin"
+    },
+    {
+      "key": "cpp.vocation.desc_id_4",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a knight",
+      "pl": "rycerz",
+      "lang": "a knight"
     },
     {
       "key": "cpp.vocation.id_0",
@@ -3513,105 +3612,6 @@
       "en": "Equipment",
       "pl": "Sprzęt",
       "lang": "Equipment"
-    },
-    {
-      "key": "web.tpl.characters.b_19",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Victims",
-      "pl": "Ofiary",
-      "lang": "Victims"
-    },
-    {
-      "key": "web.tpl.characters.b_20",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Signature",
-      "pl": "Podpis",
-      "lang": "Signature"
-    },
-    {
-      "key": "web.tpl.characters.td_21",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Website:",
-      "pl": "Strona internetowa:",
-      "lang": "Website:"
-    },
-    {
-      "key": "web.tpl.characters.td_25",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position:",
-      "pl": "Pozycja:",
-      "lang": "Position:"
-    },
-    {
-      "key": "web.tpl.characters.b_26",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Characters",
-      "pl": "Pismo",
-      "lang": "Characters"
-    },
-    {
-      "key": "web.tpl.houses.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.houses.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Size",
-      "pl": "Rozmiar",
-      "lang": "Size"
-    },
-    {
-      "key": "web.tpl.houses.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rent",
-      "pl": "Wynajem",
-      "lang": "Rent"
-    },
-    {
-      "key": "web.tpl.houses.b_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Town",
-      "pl": "Miasto",
-      "lang": "Town"
-    },
-    {
-      "key": "web.tpl.houses.b_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Order",
-      "pl": "Zamówienie",
-      "lang": "Order"
-    },
-    {
-      "key": "web.tpl.admin.plugins.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enabled",
-      "pl": "Włączony",
-      "lang": "Enabled"
     }
   ],
   "length_ratio_issues": [

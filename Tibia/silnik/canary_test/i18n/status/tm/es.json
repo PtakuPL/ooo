@@ -148926,5 +148926,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:49:42.748580Z"
+  },
+  "npc.the_bone_master.farewell_msg_1": {
+    "src_hash": "e47a4e8acc1f37347e0cc5b9a002e676",
+    "text": "Nos volveremos a encontrar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.740255Z"
+  },
+  "npc.the_bone_master.greet_msg_1": {
+    "src_hash": "31eede02d92d97f1022e128dd335e4a2",
+    "text": "Bienvenidos a mi pequeño reino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.741849Z"
+  },
+  "npc.the_dream_master.farewell_msg_1": {
+    "src_hash": "a3654d996f0a626df6ca7938a310a2f9",
+    "text": "Adiós. Que los dioses cuiden tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.756464Z"
+  },
+  "npc.the_dream_master.greet_msg_1": {
+    "src_hash": "e852edf2847e02238625479249e92290",
+    "text": "Sea saludado, visitante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.758054Z"
+  },
+  "npc.the_empress.greet_msg_1": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Saludos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.770395Z"
+  },
+  "npc.the_first_dragon.greet_msg_1": {
+    "src_hash": "78182ffe9d85aadadece3a9c583d5ad6",
+    "text": "Hola, mi compañero de entrenamiento. A veces deberíamos tener otra pelea. Creo que quizás te hayas ganado una pequeña recompensa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.781204Z"
+  },
+  "npc.the_librarian.greet_msg_1": {
+    "src_hash": "5f7bdfba00dfce930e207541354f496f",
+    "text": "Saludos, querido invitado. Si estás interesado en artículos de papel como libros o pergaminos, pregúntame por un intercambio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.807687Z"
+  },
+  "npc.the_lootmonger.greet_msg_1": {
+    "src_hash": "d56dee00a8f13d7db6b3f161768e209f",
+    "text": "¡Ah, un cliente! ¡Sea saludado, |PLAYERNAME|! Compro todo tipo de botín, ¿te gustaría un {trade}? También puedo mostrarte mi {shop options}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.814570Z"
+  },
+  "npc.the_oracle.farewell_msg_1": {
+    "src_hash": "0666abd55253d8b6cedcc9a16ffaed3b",
+    "text": "¡VUELVE CUANDO ESTÉS PREPARADO PARA ENFRENTAR TU DESTINO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.819085Z"
+  },
+  "npc.the_oracle.walkaway_msg_1": {
+    "src_hash": "0666abd55253d8b6cedcc9a16ffaed3b",
+    "text": "¡VUELVE CUANDO ESTÉS PREPARADO PARA ENFRENTAR TU DESTINO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.828561Z"
+  },
+  "npc.the_orc_king.greet_msg_1": {
+    "src_hash": "3b9d653e54e8957cf0afd54bbdd3c1f5",
+    "text": "¡Hurra! ¿Crees que eres fuerte ahora? ¡Nunca escaparás de mi ira! ¡Soy inmortal!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.830534Z"
+  },
+  "npc.the_queen_of_the_banshees.farewell_msg_1": {
+    "src_hash": "af96fd2a4ea26951f41ba9194d926a2f",
+    "text": "Nos volveremos a encontrar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.852307Z"
+  },
+  "npc.the_queen_of_the_banshees.greet_msg_1": {
+    "src_hash": "ed2ca1ffd2c00899fec90346d90c8b28",
+    "text": "Sea saludado, querido visitante. Ven y {stay}... un rato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.853991Z"
+  },
+  "npc.the_queen_of_the_banshees.walkaway_msg_1": {
+    "src_hash": "63f999d44cee9b2cfbc36452e273d753",
+    "text": "Sí, huye de la muerte. Pero sepan que siempre estará un paso detrás de ustedes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.889537Z"
+  },
+  "npc.thorgrin.greet_msg_1": {
+    "src_hash": "22670ae72edf07298469ee1577fdd17a",
+    "text": "¡Bienvenido, |PLAYERNAME|! Que la tierra os proteja en los terrenos pedregosos. Si necesitas un respaldo {passage}, puedo ayudarte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.894666Z"
+  },
+  "npc.thorgrin.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "¡Avante a toda máquina!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.896336Z"
+  },
+  "npc.thorgrin.stdmod_2": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "¡Avante a toda máquina!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.900438Z"
+  },
+  "npc.thorwulf.farewell_msg_1": {
+    "src_hash": "407cd5ebfb5c347a024fe955e3d180df",
+    "text": "Adiós |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.907355Z"
+  },
+  "npc.thorwulf.greet_msg_1": {
+    "src_hash": "ba49a88aa7ec2e0a4f9b1fbc2d8779cf",
+    "text": "Hola |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.910842Z"
+  },
+  "npc.tibra.farewell_msg_1": {
+    "src_hash": "cb10a8d0b6e2ef597a6903af76d48798",
+    "text": "Adiós, |PLAYERNAME|. ¡Que los dioses estén contigo para protegerte y guiarte, hija mía!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.920376Z"
+  },
+  "npc.tibra.stdmod_18": {
+    "src_hash": "b303be1cbbb9590b627a5c390d8cb0a1",
+    "text": "Ahora es |TIME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.931241Z"
+  },
+  "npc.tim_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "¡VIVA EL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.970686Z"
+  },
+  "npc.tim_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "¡VIVA EL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.973464Z"
+  },
+  "npc.tim_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "¡VIVA EL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.984137Z"
+  },
+  "npc.timothy.greet_msg_1": {
+    "src_hash": "d371d68f624a6d0fee98d24a4657d083",
+    "text": "¡Hola! Es un placer recibir a un visitante del continente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.987643Z"
+  },
+  "npc.timur.greet_msg_1": {
+    "src_hash": "4c65af65b800f2a01626f8d26bd7037e",
+    "text": "¡Bienvenido a mi pequeña tienda, aventurero! Primero lee mis pizarrones.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:51:16.999441Z"
   }
 }

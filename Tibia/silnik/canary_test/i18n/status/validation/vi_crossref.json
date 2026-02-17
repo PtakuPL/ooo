@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:23:33.274781Z",
+  "checked_at": "2026-02-17T06:55:13.320607Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -176,6 +176,15 @@
       "lang": "You found "
     },
     {
+      "key": "ui.house.rent_period_daily",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily",
+      "pl": "codziennie",
+      "lang": "daily"
+    },
+    {
       "key": "ui.house.rent_period_monthly",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -183,6 +192,24 @@
       "en": "monthly",
       "pl": "miesięczny",
       "lang": "monthly"
+    },
+    {
+      "key": "ui.house.rent_period_weekly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "weekly",
+      "pl": "tygodnik",
+      "lang": "weekly"
+    },
+    {
+      "key": "ui.house.rent_period_yearly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "annual",
+      "pl": "coroczny",
+      "lang": "annual"
     },
     {
       "key": "ui.readable.wrote",
@@ -545,6 +572,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.augment.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.bestiary.charm_category_major",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -615,6 +651,15 @@
       "en": "fire",
       "pl": "ogień",
       "lang": "fire"
+    },
+    {
+      "key": "cpp.combat.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
     },
     {
       "key": "cpp.combat.holy",
@@ -759,6 +804,24 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.highscore_category_fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fishing",
+      "pl": "Rybacki",
+      "lang": "Fishing"
+    },
+    {
+      "key": "cpp.game.highscore_category_shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shielding",
+      "pl": "Zastawianie",
+      "lang": "Shielding"
     },
     {
       "key": "cpp.game.no_loot",
@@ -1265,6 +1328,15 @@
       "lang": " field"
     },
     {
+      "key": "cpp.look.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1652,6 +1724,15 @@
       "lang": "No error."
     },
     {
+      "key": "cpp.skill.fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fishing",
+      "pl": "Rybacki",
+      "lang": "fishing"
+    },
+    {
       "key": "cpp.skill.level",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1677,6 +1758,15 @@
       "en": "mana leech",
       "pl": "mana pijawka",
       "lang": "mana leech"
+    },
+    {
+      "key": "cpp.skill.shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shielding",
+      "pl": "Zastawianie",
+      "lang": "shielding"
     },
     {
       "key": "cpp.skill.unknown",
@@ -1893,6 +1983,15 @@
       "en": "a paladin",
       "pl": "jeden paladin",
       "lang": "a paladin"
+    },
+    {
+      "key": "cpp.vocation.desc_id_4",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a knight",
+      "pl": "rycerz",
+      "lang": "a knight"
     },
     {
       "key": "cpp.vocation.id_0",
@@ -3513,105 +3612,6 @@
       "en": "Options",
       "pl": "Opcje",
       "lang": "Options"
-    },
-    {
-      "key": "web.tpl.news.back_button.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Back",
-      "pl": "Z powrotem",
-      "lang": "Back"
-    },
-    {
-      "key": "web.tpl.forum.show_thread.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Author",
-      "pl": "Autor",
-      "lang": "Author"
-    },
-    {
-      "key": "web.tpl.admin.pages.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.admin.pages.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Title",
-      "pl": "Tytuł",
-      "lang": "Title"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit Post",
-      "pl": "Edytuj post",
-      "lang": "Edit Post"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Character:",
-      "pl": "Charakter:",
-      "lang": "Character:"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Topic:",
-      "pl": "Temat:",
-      "lang": "Topic:"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Message:",
-      "pl": "Wiadomość:",
-      "lang": "Message:"
-    },
-    {
-      "key": "web.tpl.forum.edit_post.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Text",
-      "pl": "Tekst",
-      "lang": "Text"
-    },
-    {
-      "key": "web.tpl.experience_table.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "poziom",
-      "lang": "Level"
-    },
-    {
-      "key": "web.tpl.experience_table.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Experience",
-      "pl": "Doświadczenie",
-      "lang": "Experience"
     }
   ],
   "length_ratio_issues": [

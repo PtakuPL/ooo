@@ -2,25 +2,79 @@
   "lang": "sr",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 7029,
-  "identical_to_en": 2457,
-  "placeholder_keys": 46557,
-  "coverage_pct": 13.1,
-  "issues_total": 2,
+  "translated": 23943,
+  "identical_to_en": 1817,
+  "placeholder_keys": 29643,
+  "coverage_pct": 44.7,
+  "issues_total": 11,
   "issues_by_type": {
-    "V4_artifact": 2
+    "V4_artifact": 11
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 2,
+    "HIGH": 11,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "achievement.317.description",
       "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.carina.say_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.markwin.say_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.oswald.stdmod_32",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.riddler.say_12",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.riddler.say_4",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.the_orc_king.say_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.theodore_loveless.multi_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.wyda.say_4",
+      "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
     },
@@ -32,12 +86,12 @@
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 411,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 433,
+    "consistency": 8,
     "pl_reference": 400,
-    "length_ratio": 11,
-    "auto_fix_applied": 0
+    "length_ratio": 25,
+    "auto_fix_applied": 76
   },
-  "validated_at": "2026-02-17T06:23:31.722842Z"
+  "validated_at": "2026-02-17T06:55:10.906809Z"
 }

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:23:01.864545Z",
+  "checked_at": "2026-02-17T06:51:53.792326Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -788,6 +788,15 @@
       "lang": "Museum Goer"
     },
     {
+      "key": "ui.house.rent_period_daily",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily",
+      "pl": "codziennie",
+      "lang": "daily"
+    },
+    {
       "key": "ui.house.rent_period_monthly",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -795,6 +804,24 @@
       "en": "monthly",
       "pl": "miesięczny",
       "lang": "monthly"
+    },
+    {
+      "key": "ui.house.rent_period_weekly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "weekly",
+      "pl": "tygodnik",
+      "lang": "weekly"
+    },
+    {
+      "key": "ui.house.rent_period_yearly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "annual",
+      "pl": "coroczny",
+      "lang": "annual"
     },
     {
       "key": "ui.readable.wrote",
@@ -1157,6 +1184,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.augment.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.bestiary.charm_category_major",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1227,6 +1263,15 @@
       "en": "fire",
       "pl": "ogień",
       "lang": "fire"
+    },
+    {
+      "key": "cpp.combat.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
     },
     {
       "key": "cpp.combat.holy",
@@ -1371,6 +1416,24 @@
       "en": " (Hazard)",
       "pl": "(I.)",
       "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.highscore_category_fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fishing",
+      "pl": "Rybacki",
+      "lang": "Fishing"
+    },
+    {
+      "key": "cpp.game.highscore_category_shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shielding",
+      "pl": "Zastawianie",
+      "lang": "Shielding"
     },
     {
       "key": "cpp.game.no_loot",
@@ -1877,6 +1940,15 @@
       "lang": " field"
     },
     {
+      "key": "cpp.look.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2264,6 +2336,15 @@
       "lang": "No error."
     },
     {
+      "key": "cpp.skill.fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fishing",
+      "pl": "Rybacki",
+      "lang": "fishing"
+    },
+    {
       "key": "cpp.skill.level",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2289,6 +2370,15 @@
       "en": "mana leech",
       "pl": "mana pijawka",
       "lang": "mana leech"
+    },
+    {
+      "key": "cpp.skill.shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shielding",
+      "pl": "Zastawianie",
+      "lang": "shielding"
     },
     {
       "key": "cpp.skill.unknown",
@@ -2505,6 +2595,15 @@
       "en": "a paladin",
       "pl": "jeden paladin",
       "lang": "a paladin"
+    },
+    {
+      "key": "cpp.vocation.desc_id_4",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a knight",
+      "pl": "rycerz",
+      "lang": "a knight"
     },
     {
       "key": "cpp.vocation.id_0",
@@ -3513,105 +3612,6 @@
       "en": "Online",
       "pl": "W Internecie",
       "lang": "Online"
-    },
-    {
-      "key": "web.tpl.team.b_15",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Offline",
-      "pl": "Trening",
-      "lang": "Offline"
-    },
-    {
-      "key": "web.tpl.faq.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FAQ",
-      "pl": "Często zadawane pytania",
-      "lang": "FAQ"
-    },
-    {
-      "key": "web.tpl.admin.changelog.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Date",
-      "pl": "Data",
-      "lang": "Date"
-    },
-    {
-      "key": "web.tpl.admin.changelog.th_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Type",
-      "pl": "Typ",
-      "lang": "Type"
-    },
-    {
-      "key": "web.tpl.admin.changelog.th_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Where",
-      "pl": "Gdzie",
-      "lang": "Where"
-    },
-    {
-      "key": "web.tpl.online.set_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Table3",
-      "pl": "Stół3",
-      "lang": "Table3"
-    },
-    {
-      "key": "web.tpl.online.set_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Table2",
-      "pl": "Stół2",
-      "lang": "Table2"
-    },
-    {
-      "key": "web.tpl.online.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Status:",
-      "pl": "Vip:",
-      "lang": "Status:"
-    },
-    {
-      "key": "web.tpl.online.b_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "PvP Type:",
-      "pl": "Typ Pvp:",
-      "lang": "PvP Type:"
-    },
-    {
-      "key": "web.tpl.online.b_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
-    },
-    {
-      "key": "web.tpl.guilds.view.set_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Edit Ranks",
-      "pl": "Edytuj rankingi",
-      "lang": "Edit Ranks"
     }
   ],
   "length_ratio_issues": [

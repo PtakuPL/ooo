@@ -31,7 +31,7 @@
   "actions.premium_scroll.msg_max_days": "[EN] You can not buy more than {max} days of premium account.",
   "actions.quests.msg_1": "[EN] It is empty.",
   "actions.quests.msg_2": "[EN] It is empty.",
-  "actions.random_items.say_1": "You found ",
+  "actions.random_items.say_1": "Нашли сте",
   "actions.random_items.say_2": "[EN] You found nothing useful.",
   "actions.random_items.say_3": "[EN] You found nothing useful."
 }

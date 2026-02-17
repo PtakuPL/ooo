@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:23:33.518068Z",
+  "checked_at": "2026-02-17T06:55:13.974869Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -617,6 +617,87 @@
       "lang": "High-ranking necromancers only."
     },
     {
+      "key": "book.otbm.mushroom_fields_downstairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mushroom Fields Downstairs",
+      "pl": "Pola grzybowe na dole",
+      "lang": "Mushroom Fields Downstairs"
+    },
+    {
+      "key": "book.otbm.put_the_opposite",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Put the ...........opposite....",
+      "pl": "Umieść...........naprzeciwko....",
+      "lang": "Put the ...........opposite...."
+    },
+    {
+      "key": "book.otbm.repairing_collapsed_tunnels",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Repairing collapsed tunnels:",
+      "pl": "Naprawa zawalonych tuneli:",
+      "lang": "Repairing collapsed tunnels:"
+    },
+    {
+      "key": "book.otbm.serafins_heavenly_fruits",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Serafin's heavenly fruits",
+      "pl": "Niebiańskie owoce Serafina",
+      "lang": "Serafin's heavenly fruits"
+    },
+    {
+      "key": "book.otbm.teleportation_research_lab",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Teleportation Research Lab",
+      "pl": "Laboratorium Badań nad Teleportacją",
+      "lang": "Teleportation Research Lab"
+    },
+    {
+      "key": "book.otbm.tha_he_ever_ret",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ".. tha. HE ... .ever ret...",
+      "pl": "...tak. ON... kiedykolwiek wycofał się...",
+      "lang": ".. tha. HE ... .ever ret..."
+    },
+    {
+      "key": "book.otbm.the_tibian_worldwonders",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The tibian world-wonders!",
+      "pl": "Tibijskie cuda świata!",
+      "lang": "The tibian world-wonders!"
+    },
+    {
+      "key": "book.otbm.vashresamuns_chorus_lane",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Vashresamun's Chorus Lane",
+      "pl": "Chór Vashresamuna",
+      "lang": "Vashresamun's Chorus Lane"
+    },
+    {
+      "key": "ui.house.rent_period_daily",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily",
+      "pl": "codziennie",
+      "lang": "daily"
+    },
+    {
       "key": "ui.house.rent_period_monthly",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -624,6 +705,33 @@
       "en": "monthly",
       "pl": "miesięczny",
       "lang": "monthly"
+    },
+    {
+      "key": "ui.house.rent_period_weekly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "weekly",
+      "pl": "tygodnik",
+      "lang": "weekly"
+    },
+    {
+      "key": "ui.house.rent_period_yearly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "annual",
+      "pl": "coroczny",
+      "lang": "annual"
+    },
+    {
+      "key": "ui.house.rent_warning_prefix",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warning! \\nThe ",
+      "pl": "Ostrzeżenie! \\nThe ",
+      "lang": "Warning! \\nThe "
     },
     {
       "key": "ui.readable.wrote",
@@ -2147,6 +2255,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.augment.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
+    },
+    {
       "key": "cpp.badge.name_1",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2334,6 +2451,15 @@
       "en": "fire",
       "pl": "ogień",
       "lang": "fire"
+    },
+    {
+      "key": "cpp.combat.healing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "healing",
+      "pl": "Gojenie : zdrowienie",
+      "lang": "healing"
     },
     {
       "key": "cpp.combat.holy",
@@ -2579,6 +2705,15 @@
       "lang": "Experience Points"
     },
     {
+      "key": "cpp.game.highscore_category_fishing",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fishing",
+      "pl": "Rybacki",
+      "lang": "Fishing"
+    },
+    {
       "key": "cpp.game.highscore_category_fist",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2595,6 +2730,15 @@
       "en": "Magic Level",
       "pl": "Poziom Magii",
       "lang": "Magic Level"
+    },
+    {
+      "key": "cpp.game.highscore_category_shielding",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shielding",
+      "pl": "Zastawianie",
+      "lang": "Shielding"
     },
     {
       "key": "cpp.game.highscore_category_sword",
@@ -3468,150 +3612,6 @@
       "en": "faster regeneration",
       "pl": "szybsza regeneracja",
       "lang": "faster regeneration"
-    },
-    {
-      "key": "cpp.look.field",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " field",
-      "pl": " ognia",
-      "lang": " field"
-    },
-    {
-      "key": "cpp.look.for_level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " for level {0}",
-      "pl": "dla poziom {0}",
-      "lang": " for level {0}"
-    },
-    {
-      "key": "cpp.look.hard_drinking",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "hard drinking",
-      "pl": "Ostre picie",
-      "lang": "hard drinking"
-    },
-    {
-      "key": "cpp.look.hit_pct",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hit%",
-      "pl": "Uderzyć%",
-      "lang": "Hit%"
-    },
-    {
-      "key": "cpp.look.hour_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} hours",
-      "pl": "{0} godziny",
-      "lang": "{0} hours"
-    },
-    {
-      "key": "cpp.look.hour_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} hour",
-      "pl": "{0} godzina",
-      "lang": "{0} hour"
-    },
-    {
-      "key": "cpp.look.imbuements",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Imbuements: (",
-      "pl": "Nasycenia: (",
-      "lang": "Imbuements: ("
-    },
-    {
-      "key": "cpp.look.invisibility",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "invisibility",
-      "pl": "Invisibility",
-      "lang": "invisibility"
-    },
-    {
-      "key": "cpp.look.it_weighs",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It weighs {0} oz.",
-      "pl": "Waży {0} uncji.",
-      "lang": "It weighs {0} oz."
-    },
-    {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "Klucz:{0}",
-      "lang": "Key:{0}"
-    },
-    {
-      "key": "cpp.look.level_n",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " level {0}",
-      "pl": "poziom {0}",
-      "lang": " level {0}"
-    },
-    {
-      "key": "cpp.look.magic_level_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "magic level",
-      "pl": "Poziom Magii",
-      "lang": "magic level"
-    },
-    {
-      "key": "cpp.look.magic_level_n",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " magic level {0}",
-      "pl": "poziom magiczny {0}",
-      "lang": " magic level {0}"
-    },
-    {
-      "key": "cpp.look.magic_shield_capacity",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "magic shield capacity",
-      "pl": "magia tarcza udźperuka",
-      "lang": "magic shield capacity"
-    },
-    {
-      "key": "cpp.look.magic_shield_capacity_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} and {1}%",
-      "pl": "{0} i {1}%",
-      "lang": "{0} and {1}%"
-    },
-    {
-      "key": "cpp.look.mana_shield",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mana shield",
-      "pl": "mana tarcza",
-      "lang": "mana shield"
     }
   ],
   "length_ratio_issues": [

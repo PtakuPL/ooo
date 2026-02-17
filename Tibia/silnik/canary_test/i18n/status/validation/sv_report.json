@@ -2,36 +2,49 @@
   "lang": "sv",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 5843,
-  "identical_to_en": 2481,
-  "placeholder_keys": 47743,
-  "coverage_pct": 10.9,
-  "issues_total": 1,
+  "translated": 14812,
+  "identical_to_en": 2219,
+  "placeholder_keys": 38774,
+  "coverage_pct": 27.6,
+  "issues_total": 3,
   "issues_by_type": {
+    "V4_artifact": 2,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
-    "HIGH": 0,
+    "HIGH": 2,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 100.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.carina.say_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 408,
+    "issues_total": 410,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 8,
+    "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-17T06:23:31.867751Z"
+  "validated_at": "2026-02-17T06:55:11.272383Z"
 }

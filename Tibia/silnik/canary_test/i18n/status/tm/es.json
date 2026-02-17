@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:37:46.416471Z"
+    "updated_at": "2026-02-17T02:01:03.420490Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -146126,5 +146126,293 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:55:37.330027Z"
+  },
+  "spell.apprentice_sheng_summon.name": {
+    "src_hash": "c3b6b41da9d83e9bdedc815a926295c0",
+    "text": "aprendiz sheng convocar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:06.674024Z"
+  },
+  "spell.fear.name": {
+    "src_hash": "eb88d7636980738cd0522ea69e212905",
+    "text": "miedo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:06.674265Z"
+  },
+  "spell.rotthing_shaper.name": {
+    "src_hash": "34186e2e9e381f221e74a91e73b62f82",
+    "text": "moldeador de pudriciones",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:06.674481Z"
+  },
+  "spell.werewolf_summon.name": {
+    "src_hash": "244197315c1b0a4257f4ba14ac9b5e26",
+    "text": "invocación de hombre lobo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:11.035912Z"
+  },
+  "spell.betrayed_wraith_paralyze.name": {
+    "src_hash": "64f99c356a8dc25fc514e7d761f62d3b",
+    "text": "espectro traicionado paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:11.036183Z"
+  },
+  "spell.morgaroth_paralyze.name": {
+    "src_hash": "e9b3629ccd8c10b74737a685a57a243f",
+    "text": "morgaroth paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:11.036407Z"
+  },
+  "spell.deathstrike_manadrain.name": {
+    "src_hash": "01a2f69ea46ac9c62aa971a84b48a6ce",
+    "text": "drenaje de maná de golpe mortal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:11.036743Z"
+  },
+  "spell.plagueroot_skill_reducer.name": {
+    "src_hash": "45369f9c11a15a1b5131e3d0bd52d9ab",
+    "text": "reductor de habilidades de raíz de peste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:11.037040Z"
+  },
+  "spell.slime_puddle_paralyze.name": {
+    "src_hash": "2ecc0bb85637af2462ceebd3b030896a",
+    "text": "charco de limo paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:16.645181Z"
+  },
+  "spell.morgaroth_skill_reducer_1.name": {
+    "src_hash": "3611981e0ab9f12ef69a7bfdad81a978",
+    "text": "reductor de habilidades morgaroth 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:16.645477Z"
+  },
+  "spell.lord_azaram_wave.name": {
+    "src_hash": "3fb0877e9780427f3d9a00e7f1de9b1c",
+    "text": "onda del señor azaram",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:16.645737Z"
+  },
+  "spell.tanjis_skill_reducer.name": {
+    "src_hash": "50e236264035970b6b31ee6f43f4a2dc",
+    "text": "reductor de habilidades tanjis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:16.645995Z"
+  },
+  "spell.dwarf_henchman_drown.name": {
+    "src_hash": "a48d4381e55d438bc5e5ca8f893f17c4",
+    "text": "secuaz enano se ahoga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:16.646337Z"
+  },
+  "spell.icicle_heal.name": {
+    "src_hash": "b15d568c4f6dcc60c39558970adda29a",
+    "text": "sanar carámbano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:21.626163Z"
+  },
+  "spell.thunderstorm_ring.name": {
+    "src_hash": "868d659ece6a15bb01146cc6875c2d3a",
+    "text": "anillo de tormenta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:21.626423Z"
+  },
+  "spell.large_pink_ring.name": {
+    "src_hash": "5215e7d3fa9f9d7a1cd07bfde93315bb",
+    "text": "anillo rosa grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:21.626630Z"
+  },
+  "spell.azerus_soulfire_1.name": {
+    "src_hash": "8c7e3e4f4cf2879abae2002e3f4f2462",
+    "text": "fuego del alma azerus 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:21.626881Z"
+  },
+  "spell.plagirath_bog.name": {
+    "src_hash": "945ee8043e035ff02156ccc0c96c7817",
+    "text": "pantano de plagirato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:21.627087Z"
+  },
+  "spell.devourer_paralyze.name": {
+    "src_hash": "75997b5c73c2264686d92d09db7279ad",
+    "text": "devorador paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:27.137289Z"
+  },
+  "spell.glooth_fairy_paralyze.name": {
+    "src_hash": "dd0ceb38a3f8db897e9faaa40c6cf12a",
+    "text": "hada de la oscuridad paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:27.137575Z"
+  },
+  "spell.souleater_wave.name": {
+    "src_hash": "533f49165bd5fb4a35fafe2cdd6877d8",
+    "text": "ola devoradora de almas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:27.137802Z"
+  },
+  "spell.djinn_cancel_invisibility.name": {
+    "src_hash": "c6f443c270cd529fcffed0a8c36ab816",
+    "text": "djinn cancela la invisibilidad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:27.138065Z"
+  },
+  "spell.defiler_paralyze_2.name": {
+    "src_hash": "15e0934ef2bf1ceb9fc0bf532bc6d023",
+    "text": "profanador paraliza 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:27.138413Z"
+  },
+  "spell.magma_crawler_skill_reducer.name": {
+    "src_hash": "3dc5ead3c7a81bf99d2e0ca99295a8ae",
+    "text": "reductor de habilidades del rastreador de magma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:32.414300Z"
+  },
+  "spell.deathstrike_freeze.name": {
+    "src_hash": "178bb77fae9e687e2746b05123e5c5d8",
+    "text": "congelación de golpe mortal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:32.414600Z"
+  },
+  "spell.timira_fire_explosion.name": {
+    "src_hash": "2afde35d26cffaca7ee5e9e698245b16",
+    "text": "explosión de timira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:32.414837Z"
+  },
+  "spell.emerald_tortoise_large_ring.name": {
+    "src_hash": "432e01ab819a139df39a60b40933a827",
+    "text": "anillo grande tortuga esmeralda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:32.415109Z"
+  },
+  "spell.feversleep_skill_reducer.name": {
+    "src_hash": "7338bc56d9158f14ae17d56e77dda0b2",
+    "text": "reductor de habilidades para dormir con fiebre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:32.415385Z"
+  },
+  "spell.dreadbeast_summon.name": {
+    "src_hash": "cce70fc0d3b474e3f85b5937e3f973db",
+    "text": "invocación de bestia aterradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:37.196781Z"
+  },
+  "spell.askarak_wave.name": {
+    "src_hash": "97c28802a39c99198c9a8745cf8f9c20",
+    "text": "ola de Askarak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:37.197002Z"
+  },
+  "spell.kraknaknork_paralyze.name": {
+    "src_hash": "da4cd9850f906929b4cec3430784c035",
+    "text": "Kraknaknork paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:37.197226Z"
+  },
+  "spell.prince_drazzak_paladin.name": {
+    "src_hash": "bc401da9608e731041a4ba1904f33b99",
+    "text": "Príncipe Drazzak Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:37.197667Z"
+  },
+  "spell.rootkraken_deathholy.name": {
+    "src_hash": "70c19e1f31c866404128305012e7ddbb",
+    "text": "kraken de raíces",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:37.197890Z"
+  },
+  "spell.ice_witch_paralyze.name": {
+    "src_hash": "7199a8a39446b42186fb4dbaca20840b",
+    "text": "bruja de hielo paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:42.135389Z"
+  },
+  "spell.rustheap_golem_wave.name": {
+    "src_hash": "10ca3524c9b62574c8309667a3ddc1bc",
+    "text": "ola de golem de montón de óxido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:42.135686Z"
+  },
+  "spell.lizard_wave.name": {
+    "src_hash": "5b8ab110cece3c95591b0ab9ca43db55",
+    "text": "ola de lagarto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:01:42.135885Z"
   }
 }

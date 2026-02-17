@@ -83657,19 +83657,19 @@
   },
   "spell.ghazbaran_skill_reducer_1.name": {
     "src_hash": "fbdc5b81beb4fb8e597418d7e1b21ed1",
-    "text": "ghazbaran skill reducer 1",
+    "text": "Reduktor umiejętności ghazbaran 1",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:50.725672Z"
+    "updated_at": "2026-02-17T02:00:39.877988Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
-    "text": "azerus skill reducer 3",
+    "text": "Reduktor umiejętności Azerusa 3",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:50.725949Z"
+    "updated_at": "2026-02-17T02:00:47.129993Z"
   },
   "spell.azerus_skill_reducer_1.name": {
     "src_hash": "031d9477c0d8ff8150202356447acf7f",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:36:17.606703Z"
+    "updated_at": "2026-02-17T01:59:51.131154Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:36:17.607555Z"
+    "updated_at": "2026-02-17T01:59:51.132212Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -103510,5 +103510,293 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T01:54:17.445538Z"
+  },
+  "spell.demon_outcast_skill_reducer.name": {
+    "src_hash": "39b7b26b433685ece72dff67c23e949b",
+    "text": "Reduktor umiejętności wygnania demona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:59:54.954899Z"
+  },
+  "spell.gaz_functions.name": {
+    "src_hash": "5605eef2fe0b52b733a694d3e216630b",
+    "text": "Funkcje Gazu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:02.196525Z"
+  },
+  "spell.rotthing_explo.name": {
+    "src_hash": "cbdd680ae2c93e99c7e7813b5c4933c9",
+    "text": "rothligexplo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:02.196735Z"
+  },
+  "spell.rotthing_explo.words": {
+    "src_hash": "0dd624fdfa2f5551fb845038aff057b8",
+    "text": "###rotth_explo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:02.196933Z"
+  },
+  "spell.burning_gladiator_firex.name": {
+    "src_hash": "589f95fc9b6f715d0682e4c78d854657",
+    "text": "ogień",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:02.197108Z"
+  },
+  "spell.extended_holy_chain.name": {
+    "src_hash": "74a88c76577a04e0125930e38bed9b34",
+    "text": "przedłużony święty łańcuch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:02.197370Z"
+  },
+  "spell.feverish_citizen_drunk.name": {
+    "src_hash": "adad448ef8f3c1f4f320aaa2cb41962a",
+    "text": "gorączkujący obywatel pijany",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:09.166408Z"
+  },
+  "spell.lord_of_the_elements_summon.name": {
+    "src_hash": "8d47763892e8831dc63616aba012f475",
+    "text": "przywołanie władcy żywiołów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:09.167252Z"
+  },
+  "spell.naga_death.name": {
+    "src_hash": "7f4f673b1b957c8ed3a3bf87a87804dc",
+    "text": "nagadeatak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:09.167461Z"
+  },
+  "spell.destroy_magic_walls.name": {
+    "src_hash": "d7c21885afde215137b712be77f50ff3",
+    "text": "zniszczyć magiczne ściany",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:09.167717Z"
+  },
+  "spell.ferumbras_soulfire.name": {
+    "src_hash": "072b0af64874c71dc92d45d4d054a9ba",
+    "text": "ogień duszy ferumbrasa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:16.453788Z"
+  },
+  "spell.ghoulish_hyaena_wave.name": {
+    "src_hash": "df3f54c12d82fa4cebabb3283bca80cf",
+    "text": "upiorna fala hieny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:16.454051Z"
+  },
+  "spell.rift_brood_electrify.name": {
+    "src_hash": "8a30162a5c76d0e9ac8716280a93b62b",
+    "text": "Szczep Rift elektryzuje się",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:16.454579Z"
+  },
+  "spell.large_holy_ring.name": {
+    "src_hash": "c8c06c22bed3ee6297e20f5b6e3e1c1c",
+    "text": "dużyświęty Pierścień",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:16.454825Z"
+  },
+  "spell.humongous_fungus_poison.name": {
+    "src_hash": "0afb8925058ee4caa3726571f89d82e0",
+    "text": "potężna trucizna grzybowa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:16.455091Z"
+  },
+  "spell.svoren_the_mad_paralyze.name": {
+    "src_hash": "b257fab7ad90f26a0832e4669a3f8979",
+    "text": "svoren szalony paraliż",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:24.307512Z"
+  },
+  "spell.mazoran_summon.name": {
+    "src_hash": "f5623c8ad0253babb715e7766eca8184",
+    "text": "wezwanie Mazorana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:24.307765Z"
+  },
+  "spell.ghastly_dragon_curse.name": {
+    "src_hash": "c0cd551b01231ad2c1062e531822065c",
+    "text": "upiorna klątwa smoka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:24.308041Z"
+  },
+  "spell.chakoya_freeze.name": {
+    "src_hash": "6a3672fa2fed124fcab322c87acddafb",
+    "text": "zamrożenie chakoyi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:24.308269Z"
+  },
+  "spell.the_welter_paralyze.name": {
+    "src_hash": "60750769a747d24a9604cc88eecd3ffa",
+    "text": "chaos paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:24.308516Z"
+  },
+  "spell.emberbeasthur.name": {
+    "src_hash": "666dfabe7e2a9a5437bc86b436599089",
+    "text": "ŻarBestiaHur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:32.613732Z"
+  },
+  "spell.lost_thrower_skill_reducer.name": {
+    "src_hash": "b2a23e9e543a45fe2efc386768f3aec9",
+    "text": "Reduktor umiejętności utraconego miotacza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:32.614378Z"
+  },
+  "spell.diabolic_imp_skill_reducer.name": {
+    "src_hash": "012705c8713981bfe32096c65307542f",
+    "text": "diaboliczny reduktor umiejętności chochlików",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:32.614716Z"
+  },
+  "spell.mantosaurus_ring.name": {
+    "src_hash": "bcc22c61835841ab70525f4cc14628d0",
+    "text": "pierścień mantozaura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:32.614956Z"
+  },
+  "spell.burning_gladiator_firering.name": {
+    "src_hash": "c590956e4b0adf489320c7a8f218e086",
+    "text": "strzelanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:32.615133Z"
+  },
+  "spell.shock_head_skill_reducer_1.name": {
+    "src_hash": "0a7f8f8996d58b43aa43c915ac4cacd6",
+    "text": "Reduktor umiejętności głowy uderzeniowej 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:39.877138Z"
+  },
+  "spell.bane_of_light_paralyze.name": {
+    "src_hash": "fb03073ef8235d1ed2617048d376206e",
+    "text": "zmora światła paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:39.877490Z"
+  },
+  "spell.elder_wyrm_electrify.name": {
+    "src_hash": "e7e62046901105389cd4f3b3fdcf11db",
+    "text": "starszy jaszczur elektryzuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:39.878311Z"
+  },
+  "spell.gnorre_chyllson_paralyze.name": {
+    "src_hash": "4ea0806f6752bbfe8e3bc6caec634014",
+    "text": "Gnorre Chyllson paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:39.878725Z"
+  },
+  "spell.shlorg_paralyze.name": {
+    "src_hash": "cd78e060f9533cd27a1289f4656625b9",
+    "text": "shlorg paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:47.130744Z"
+  },
+  "spell.quara_raider_shoot.name": {
+    "src_hash": "79e5fcd67b8270947c506f4085c8c023",
+    "text": "strzelanina kwartarna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:47.131037Z"
+  },
+  "spell.pythius_the_rotten_paralyze.name": {
+    "src_hash": "cbe75c7d24a90e44a72390a8d4374841",
+    "text": "pythius zgniły paraliż",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:47.131363Z"
+  },
+  "spell.furyosa_heal.name": {
+    "src_hash": "bc9ff064a5e87377e9aec15b013e6bc4",
+    "text": "Furyosa leczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:53.293037Z"
+  },
+  "spell.undead_cavebear_curse.name": {
+    "src_hash": "51734a280f848e861846316bf136d8ac",
+    "text": "klątwa nieumarłego niedźwiedzia jaskiniowego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:53.293373Z"
+  },
+  "spell.deepling_spellsinger_skill_reducer.name": {
+    "src_hash": "4a8099f47747862e8792165ce20aac45",
+    "text": "Głęboki reduktor umiejętności czarodzieja",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:53.293833Z"
+  },
+  "spell.zugurosh_soulfire.name": {
+    "src_hash": "5d00482e715b3cbf5ae525f6194311eb",
+    "text": "ogień duszy zugurosha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:00:53.294157Z"
   }
 }

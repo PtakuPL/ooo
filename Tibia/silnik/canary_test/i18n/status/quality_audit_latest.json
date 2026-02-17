@@ -1,136 +1,17 @@
 {
-  "timestamp": "2026-02-17T01:59:27.618988Z",
+  "timestamp": "2026-02-17T02:01:45.059123Z",
   "checked_entries": 100,
-  "issues_found": 24,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 17,
-    "identical_to_en_exempt": 11,
+    "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "suspicious_log_high": 153,
-    "suspicious_log_critical": 47,
+    "suspicious_log_high": 123,
+    "suspicious_log_critical": 67,
+    "suspicious_log_low": 10,
     "suspicious_rejected_critical": 168,
     "suspicious_rejected_high": 32
   },
   "issues": [
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.hunter.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Hunter",
-      "translated": "Hunter"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -182,5 +63,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

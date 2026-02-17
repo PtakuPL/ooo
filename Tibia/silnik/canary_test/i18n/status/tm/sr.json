@@ -172150,5 +172150,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:51:12.958834Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:44.427557Z"
+  },
+  "monster.ocyakao.name": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.226671Z"
+  },
+  "monster.ocyakao.desc": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.227208Z"
+  },
+  "monster.necropharus.name": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.231663Z"
+  },
+  "monster.necropharus.desc": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.231988Z"
+  },
+  "monster.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.233911Z"
+  },
+  "monster.the_pale_count.desc": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.234272Z"
+  },
+  "monster.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.242501Z"
+  },
+  "monster.ghazbaran.desc": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.242810Z"
+  },
+  "monster.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.244538Z"
+  },
+  "monster.hirintror.desc": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.244959Z"
+  },
+  "monster.chayenne.name": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.251441Z"
+  },
+  "monster.chayenne.desc": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.251833Z"
+  },
+  "monster.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.264500Z"
+  },
+  "monster.white_pale.desc": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.264848Z"
+  },
+  "monster.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.265209Z"
+  },
+  "monster.the_welter.desc": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.265556Z"
+  },
+  "monster.furyosa.name": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.271857Z"
+  },
+  "monster.furyosa.desc": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.272178Z"
+  },
+  "monster.badger.name": {
+    "src_hash": "5841d0014fc42f0fcf9a019d349d50fd",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.277071Z"
+  },
+  "monster.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:45.578476Z"
   }
 }

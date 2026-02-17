@@ -1,18 +1,165 @@
 {
-  "timestamp": "2026-02-17T07:58:14.995608Z",
+  "timestamp": "2026-02-17T07:59:48.466513Z",
   "checked_entries": 100,
-  "issues_found": 31,
+  "issues_found": 37,
   "issues_by_type": {
-    "identical_to_en_exempt": 6,
+    "identical_to_en": 21,
+    "identical_to_en_exempt": 3,
     "artifact_token": 16,
-    "identical_to_en": 15,
-    "suspicious_log_high": 127,
-    "suspicious_log_critical": 22,
-    "suspicious_log_low": 51,
+    "suspicious_log_high": 137,
+    "suspicious_log_low": 24,
+    "suspicious_log_critical": 39,
     "suspicious_rejected_critical": 191,
     "suspicious_rejected_high": 9
   },
   "issues": [
+    {
+      "key": "monster.ghazbaran.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
+    },
+    {
+      "key": "monster.ghazbaran.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
+    },
+    {
+      "key": "monster.hirintror.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.hirintror.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.player.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -124,111 +271,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "raid.cyclops.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.sheng.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
-    },
-    {
-      "key": "raid.munster.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "raid.nomad.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
     }
   ],
   "threshold": 10,

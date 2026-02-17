@@ -27182,5 +27182,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:50:47.905100Z"
+  },
+  "monster.a_shielded_astral_glyph.name": {
+    "src_hash": "605d55083843cd977d72465571dbf1d2",
+    "text": "En avskärmad astral glyf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:38.039840Z"
+  },
+  "monster.rotworm_queen.name": {
+    "src_hash": "af39b5fe60ae6a9a4e2ab423c3998aee",
+    "text": "Rotmaskdrottning",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:38.401247Z"
   }
 }

@@ -47054,5 +47054,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:06:37.903592Z"
+  },
+  "cpp.house.bought_success": {
+    "src_hash": "98a9f116c9916d163d2d3af2213581c9",
+    "text": "Ați cumpărat cu succes casa.{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:39.741631Z"
+  },
+  "cpp.house.door_owned": {
+    "src_hash": "98e2375152aa622dad165cee2531ab37",
+    "text": "Aparține casei '{0}'. {1} deține această casă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:39.742025Z"
+  },
+  "cpp.house.door_price": {
+    "src_hash": "5719af6fa7017f4e99737d843abac8f4",
+    "text": "Costă {0} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:45.029142Z"
+  },
+  "cpp.house.door_rent": {
+    "src_hash": "470cb72558b650d06eda7f93e496ec3b",
+    "text": "Costul chiriei este de {0} monede de aur și este facturat {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:45.029566Z"
+  },
+  "cpp.house.door_size": {
+    "src_hash": "ccea0ec0938e05110e60ca4bd37e3ae4",
+    "text": "Are {0} metri pătrați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:45.029865Z"
+  },
+  "cpp.house.door_unowned": {
+    "src_hash": "b5b6a1dbe747394480a72ca2bbea0e1a",
+    "text": "Aparține casei '{0}'. Nimeni nu este proprietarul acestei case.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:45.030328Z"
+  },
+  "cpp.house.ownership_transfer_on_restart": {
+    "src_hash": "cc79fea55af06648fd3245fba49684c8",
+    "text": "Proprietatea va fi transferată la repornirea serverului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:45.030791Z"
+  },
+  "cpp.house.sold_success": {
+    "src_hash": "84af06c5ff98ee71ff815822331261d1",
+    "text": "V-ați vândut cu succes casa.{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:50.880000Z"
+  },
+  "cpp.inspect.at_range": {
+    "src_hash": "75b8f2c5b6a918cd5d8c3e92564f85ab",
+    "text": "la raza de actiune ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:50.880290Z"
+  },
+  "cpp.inspect.attack_plus": {
+    "src_hash": "239982a51b26f0e33b2398e550803028",
+    "text": "atac +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:50.880537Z"
+  },
+  "cpp.inspect.augments": {
+    "src_hash": "71b34ef227e7586d306e0e21cbdf7b96",
+    "text": "Augmente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:50.880711Z"
+  },
+  "cpp.inspect.body_body": {
+    "src_hash": "841a2d689ad86bd1611447453c22c6fc",
+    "text": "corp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:50.880865Z"
+  },
+  "cpp.inspect.body_both_hands": {
+    "src_hash": "b902e7f43ccfd9ff9a965a24ef50ba2a",
+    "text": "ambele mâini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:55.209802Z"
+  },
+  "cpp.inspect.body_container": {
+    "src_hash": "5f0b6ebc4bea10285ba2b8a6ce78b863",
+    "text": "recipient",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:55.210012Z"
+  },
+  "cpp.inspect.body_extra_slot": {
+    "src_hash": "c409cc1adaa447fa51b8328b9c0d445f",
+    "text": "slot suplimentar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:55.210343Z"
+  },
+  "cpp.inspect.body_feet": {
+    "src_hash": "e03f9063484fb1967d1675c86a6094d7",
+    "text": "picioarele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:55.210594Z"
+  },
+  "cpp.inspect.body_finger": {
+    "src_hash": "e7efda40b1c94805070cd9bf9638ae27",
+    "text": "deget",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:55.210768Z"
+  },
+  "cpp.inspect.body_head": {
+    "src_hash": "96e89a298e0a9f469b9ae458d6afae9f",
+    "text": "cap",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:59.058543Z"
+  },
+  "cpp.inspect.body_neck": {
+    "src_hash": "45fe7e5529d283851d93b74536e095a0",
+    "text": "gât",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:59.058722Z"
+  },
+  "cpp.inspect.body_position": {
+    "src_hash": "cd9a417af3ad9e295cdee793faae5996",
+    "text": "Poziția corpului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:59.058944Z"
+  },
+  "cpp.inspect.body_shield_hand": {
+    "src_hash": "fe2e5f258b71f852b14b9d9e2976ba98",
+    "text": "mana de scut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:59.059135Z"
+  },
+  "cpp.inspect.body_weapon_hand": {
+    "src_hash": "024168323ff94a033e2bc6c5f7f788db",
+    "text": "mâna armei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:07:59.059324Z"
+  },
+  "cpp.inspect.brand_new": {
+    "src_hash": "8ea79b53226536841c5c0a1f3c80906d",
+    "text": "nouă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:01.736477Z"
+  },
+  "cpp.inspect.capacity": {
+    "src_hash": "3b8f7696879f77dfc8c74aa8df8db24b",
+    "text": "Capacitate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:01.736711Z"
+  },
+  "cpp.inspect.chance_to_hit": {
+    "src_hash": "44faae0a2a3329d707fc466fed56480a",
+    "text": "șansă de a lovi +{0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:01.737008Z"
+  },
+  "cpp.inspect.charges": {
+    "src_hash": "17e72430608947c0734ef298429647bb",
+    "text": "Taxe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:01.737182Z"
+  },
+  "cpp.inspect.classification": {
+    "src_hash": "5c9335b28e6277ddbe0137f04e5e58a7",
+    "text": "Clasificare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:01.737374Z"
+  },
+  "cpp.inspect.cleave": {
+    "src_hash": "f1565d61fb74b142b7ddb3fc038a2d5a",
+    "text": "Despica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:05.455145Z"
+  },
+  "cpp.inspect.contain": {
+    "src_hash": "0e75eff17752bae4ab31af7ad9b45484",
+    "text": "Conţine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:05.455345Z"
+  },
+  "cpp.inspect.damage_reflection": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Reflecția daunelor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:05.455586Z"
+  },
+  "cpp.inspect.defence": {
+    "src_hash": "128343c7abc14c26dbe868808b5dc658",
+    "text": "Apărare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:05.455763Z"
+  },
+  "cpp.inspect.effect": {
+    "src_hash": "a62d22910732d5343689f5117999abfa",
+    "text": "Efect",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:05.455924Z"
+  },
+  "cpp.inspect.expires": {
+    "src_hash": "cfc36842a01da69c484ffdcc6782f437",
+    "text": "Expiră",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:12.895558Z"
+  },
+  "cpp.inspect.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "regenerare mai rapidă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:12.895847Z"
+  },
+  "cpp.inspect.faster_regeneration_effect": {
+    "src_hash": "2f0ea69af6352f387480984e271315e3",
+    "text": "Regenerare mai rapidă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:12.896127Z"
+  },
+  "cpp.inspect.field_protection": {
+    "src_hash": "e9c2511c581a1eb0271bdfdfd34b458c",
+    "text": "Protecția câmpului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:12.896377Z"
+  },
+  "cpp.inspect.hard_drinking": {
+    "src_hash": "f6306a7a373e97e0f0d04d7386b9f98f",
+    "text": "Băutură tare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:12.896589Z"
+  },
+  "cpp.inspect.imbuement_info": {
+    "src_hash": "b40edc2fc643c664893ea6b8d3252650",
+    "text": "{0} {1} ({2}), durează {3}:{4}h în timp ce luptă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:15.645474Z"
   }
 }

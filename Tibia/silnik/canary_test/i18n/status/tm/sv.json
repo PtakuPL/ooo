@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:34:10.019854Z"
+    "updated_at": "2026-02-17T06:08:21.587846Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -25046,5 +25046,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:53:16.196013Z"
+  },
+  "item.10439.name": {
+    "src_hash": "d0077c229b114793d62729c673aac609",
+    "text": "Zaoan dräkt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:25.567278Z"
+  },
+  "item.10440.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "död sandkrypare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:25.567535Z"
+  },
+  "item.10441.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "död sandkrypare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:25.567757Z"
+  },
+  "item.10442.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "död sandkrypare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:25.567975Z"
+  },
+  "item.10443.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "död sandkrypare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:25.568187Z"
+  },
+  "item.10444.name": {
+    "src_hash": "81198ad0f1cd58f53df6b4dfe6997971",
+    "text": "drakprästs trollspets",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:30.729601Z"
+  },
+  "item.10445.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "dräpt en hemsk drake",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:30.729884Z"
+  },
+  "item.10446.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "dräpt en hemsk drake",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:30.730260Z"
+  },
+  "item.10447.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "dräpt en hemsk drake",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:30.730590Z"
+  },
+  "item.10448.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "dräpt en hemsk drake",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:30.730932Z"
+  },
+  "item.10449.name": {
+    "src_hash": "22144a797e243675e4cc54876b6c57c2",
+    "text": "hemskt drakhuvud",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:37.437596Z"
+  },
+  "item.10450.name": {
+    "src_hash": "7249331cf791c331edf1f26d29b2d8c3",
+    "text": "odöda hjärta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:37.437823Z"
+  },
+  "item.10451.name": {
+    "src_hash": "2ddee7bbac20d21e171770ff12d78c71",
+    "text": "jade hatt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:37.438003Z"
+  },
+  "item.10452.name": {
+    "src_hash": "3489389a8b235b82417495b5502cc1f8",
+    "text": "terramitskal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:37.438278Z"
+  },
+  "item.10453.name": {
+    "src_hash": "bfd2d0e703686e5b847b792f3965af5f",
+    "text": "terramitägg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:37.438489Z"
+  },
+  "item.10454.name": {
+    "src_hash": "c080e1743a7cb74bcb29daa20e48a5e3",
+    "text": "terramitben",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:44.270726Z"
+  },
+  "item.10455.name": {
+    "src_hash": "05ee341836be8d907939591b79d9d7d3",
+    "text": "lancer skalbagge skal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:44.271022Z"
+  },
+  "item.10456.name": {
+    "src_hash": "dbfb2b19f62a7a58162f63d78fb9b1fd",
+    "text": "sandcrawler skal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:44.271244Z"
+  },
+  "item.10457.name": {
+    "src_hash": "426da76118cd7c279f4367519cca1254",
+    "text": "skalbagge halsband",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:44.271451Z"
+  },
+  "item.10458.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "död lancerbagge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:44.271679Z"
+  },
+  "item.10459.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "död lancerbagge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:46.212331Z"
+  },
+  "item.10460.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "död lancerbagge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:08:46.212576Z"
   }
 }

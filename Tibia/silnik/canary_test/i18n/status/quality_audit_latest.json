@@ -1,24 +1,17 @@
 {
-  "timestamp": "2026-02-17T06:07:11.479005Z",
+  "timestamp": "2026-02-17T06:08:52.132203Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 1,
     "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "suspicious_log_high": 153,
-    "suspicious_log_critical": 47,
+    "suspicious_log_high": 131,
+    "suspicious_log_critical": 68,
+    "suspicious_log_low": 1,
     "suspicious_rejected_critical": 184,
     "suspicious_rejected_high": 16
   },
   "issues": [
-    {
-      "key": "web.tpl.guilds.change_logo.b_1",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "jpg, gif, png, bmp",
-      "translated": "jpg, gif, png, bmp"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

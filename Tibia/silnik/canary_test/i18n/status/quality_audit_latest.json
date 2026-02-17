@@ -1,66 +1,18 @@
 {
-  "timestamp": "2026-02-17T10:28:30.899237Z",
+  "timestamp": "2026-02-17T10:30:03.227283Z",
   "checked_entries": 100,
   "issues_found": 28,
   "issues_by_type": {
     "identical_to_en": 12,
-    "identical_to_en_exempt": 6,
+    "identical_to_en_exempt": 8,
     "artifact_token": 16,
-    "suspicious_log_high": 174,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_high": 28,
-    "suspicious_rejected_critical": 172
+    "suspicious_log_high": 163,
+    "suspicious_log_critical": 30,
+    "suspicious_log_low": 7,
+    "suspicious_rejected_critical": 176,
+    "suspicious_rejected_high": 24
   },
   "issues": [
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
     {
       "key": "monster.dharalion.name",
       "lang": "ro",
@@ -207,6 +159,55 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "spell.conjure_bolt.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exevo con mort",
+      "translated": "exevo con mort"
+    },
+    {
+      "key": "spell.stone_shower_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adori mas tera",
+      "translated": "adori mas tera"
+    },
+    {
+      "key": "spell.blank_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adori blank",
+      "translated": "adori blank"
+    },
+    {
+      "key": "spell.avatar_of_light.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "uteta res sac",
+      "translated": "uteta res sac"
+    },
+    {
+      "key": "spell.avatar_of_storm.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "uteta res ven",
+      "translated": "uteta res ven"
+    },
+    {
+      "key": "spell.charge.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utani tempo hur",
+      "translated": "utani tempo hur"
+    },
+    {
+      "key": "spell.strong_haste.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utani gran hur",
+      "translated": "utani gran hur"
     }
   ],
   "threshold": 10,

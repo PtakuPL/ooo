@@ -6105,11 +6105,11 @@
   },
   "spell.conjure_bolt.name": {
     "src_hash": "ae446a099002172be97bd31ad4cb449c",
-    "text": "Conjure Bolt",
+    "text": "Wyczaruj Bolta",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:38:25.146436Z"
+    "updated_at": "2026-02-17T10:29:22.764036Z"
   },
   "spell.apprentice's_strike.name": {
     "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:39:12.557446Z"
+    "updated_at": "2026-02-17T10:29:00.852184Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:39:12.558360Z"
+    "updated_at": "2026-02-17T10:29:00.853095Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -115894,5 +115894,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:21:54.288703Z"
+  },
+  "spell.conjure_bolt.words": {
+    "src_hash": "bff3ddd734331aecd8be21060413d33a",
+    "text": "exevo con mort",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:22.764564Z"
+  },
+  "spell.stone_shower_rune.words": {
+    "src_hash": "05f307b5aeeaa17e4631de3057348ac4",
+    "text": "adori mas tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:22.764990Z"
+  },
+  "spell.blank_rune.words": {
+    "src_hash": "91726ff32bbfa37345922ef9329849bb",
+    "text": "adori blank",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:24.498395Z"
   }
 }

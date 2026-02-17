@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:39:49.639070Z"
+    "updated_at": "2026-02-17T10:29:35.671510Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:39:54.998056Z"
+    "updated_at": "2026-02-17T10:29:42.620025Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -150734,5 +150734,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:40:10.793608Z"
+  },
+  "spell.magic_rope.name": {
+    "src_hash": "c4643107f4429c8f8e0f7df322f8fc22",
+    "text": "Cuerda magica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:57.481842Z"
+  },
+  "spell.avatar_of_light.words": {
+    "src_hash": "37944324cdbdeed28c5f719e725beca0",
+    "text": "uteta res sac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:57.482199Z"
+  },
+  "spell.avatar_of_storm.words": {
+    "src_hash": "97c01abd5fb847342f8b57a902c854d7",
+    "text": "uteta res ven",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:57.482514Z"
+  },
+  "spell.charge.name": {
+    "src_hash": "517349a3cdc1acf50617693e3ba33988",
+    "text": "Cargar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:57.482697Z"
+  },
+  "spell.charge.words": {
+    "src_hash": "1370eb72b89168a1b17856e1b5de0309",
+    "text": "utani tempo hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:59.772167Z"
+  },
+  "spell.levitate.name": {
+    "src_hash": "b51220a382d45959479685fa1a1c9a75",
+    "text": "Erigir por levitación",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:59.772400Z"
+  },
+  "spell.strong_haste.words": {
+    "src_hash": "488f55aaa49577f4f4ac2b45e69770a3",
+    "text": "utani gran hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:29:59.772706Z"
   }
 }

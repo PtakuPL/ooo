@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T02:02:36.950926Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T02:03:28.280071Z",
+  "language": "it",
+  "json_file": "server.json",
+  "translated": 47,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.new.frontier.action.outfit.L11.2166",
+      "en": "You have gained your new outfit and may leave the reward room now!",
+      "translated": "Hai ottenuto il tuo nuovo vestito e ora puoi lasciare la stanza delle ricompense!",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.new.frontier.action.outfit.L13.2167",
+      "en": "You already taken the outfit, ask about mission for Chrak.",
+      "translated": "Hai già preso l'abito, chiedi della missione di Chrak.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.threatened.dreams.action.poacher.book.L9.2266",
+      "en": "You are placing the book on the table, hopefully the poachers will discover it soon.",
+      "translated": "Stai mettendo il libro sul tavolo, speriamo che i bracconieri lo scoprano presto.",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.threatened.dreams.action.poacher.notes.L7.2263",
+      "en": "You have found notes of a poacher.",
+      "translated": "Hai trovato appunti di un bracconiere.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.threatened.dreams.action.whelp.fur.L13.2264",
+      "en": "You place the whelp fur in the stone's mouth and thus lay it to rest.",
+      "translated": "Metti la pelliccia del cucciolo nella bocca della pietra e così la metti a riposare.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421",
+      "en": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "translated": "Cos'è questo? Un'entità con problemi di vista chiamata |PLAYERNAME|. Che fascino!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422",
+      "en": "Wait right there. I will eat you after writing down what I found out.",
+      "translated": "Aspetta proprio lì. Ti mangerò dopo aver scritto quello che ho scoperto.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423",
+      "en": "Wait right there. I will eat you after writing down what I found out.",
+      "translated": "Aspetta proprio lì. Ti mangerò dopo aver scritto quello che ho scoperto.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.ahmet.L182.407",
+      "en": "Be mourned pilgrim in flesh. I'm selling general goods. Just ask me for a {trade}.",
+      "translated": "Sii compianto pellegrino in carne ed ossa. Vendo beni generali. Chiedimi solo un {trade}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.ajax.L58.355",
+      "en": "You back. You know, you right. Brother is right. Fist not always good. Tell him that!",
+      "translated": "Sei tornato. Lo sai, hai ragione. Il fratello ha ragione. Il pugno non è sempre buono. Diglielo!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.ajax.L61.356",
+      "en": "Whatcha do in my place?",
+      "translated": "Cosa fai al mio posto?",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.al.dee.L167.597",
+      "en": "Bye, bye |PLAYERNAME|.",
+      "translated": "Ciao, ciao |PLAYERNAME|.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.al.dee.L168.598",
+      "en": "Take a look in the trade window to your left.",
+      "translated": "Dai un'occhiata alla finestra degli scambi alla tua sinistra.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.albinius.L267.1035",
+      "en": "Greetings, pilgrim. Welcome to the halls of hope. We are the keepers of this {temple} and welcome everyone willing to contribute.",
+      "translated": "Saluti, pellegrino. Benvenuti nelle sale della speranza. Siamo i custodi di questo {temple} e diamo il benvenuto a chiunque voglia contribuire.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.albinius.L268.1036",
+      "en": "Oh... farewell, child.",
+      "translated": "Oh... addio, bambina.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.alesar.L208.1593",
+      "en": "At your service, just browse through my wares.",
+      "translated": "Al tuo servizio, sfoglia i miei prodotti.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.alexander.L172.1568",
+      "en": "See you, |PLAYERNAME|.",
+      "translated": "Ci vediamo, |PLAYERNAME|.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.alexander.L173.1569",
+      "en": "See you, |PLAYERNAME|.",
+      "translated": "Ci vediamo, |PLAYERNAME|.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.alexander.L174.1570",
+      "en": "Of course, just browse through my wares. Or do you want to look only at",
+      "translated": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.alia.L148.1158",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+      "source": "google_translate"
     }
   ]
 }

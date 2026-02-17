@@ -1633,19 +1633,19 @@
   },
   "data.otservbr.global.npc.al.dee.L167.597": {
     "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
-    "text": "Bye, bye |PLAYERNAME|.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ciao, ciao |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.064798Z"
+    "updated_at": "2026-02-17T02:03:18.551480Z"
   },
   "data.otservbr.global.npc.albinius.L268.1036": {
     "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
-    "text": "Oh... farewell, child.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Oh... addio, bambina.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.065522Z"
+    "updated_at": "2026-02-17T02:03:24.291827Z"
   },
   "data.otservbr.global.npc.alesar.L206.1591": {
     "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
@@ -1665,19 +1665,19 @@
   },
   "data.otservbr.global.npc.alexander.L172.1568": {
     "src_hash": "fa07eeb5b43148cd479e57957d82514c",
-    "text": "See you, |PLAYERNAME|.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.066752Z"
+    "updated_at": "2026-02-17T02:03:24.292518Z"
   },
   "data.otservbr.global.npc.alexander.L173.1569": {
     "src_hash": "fa07eeb5b43148cd479e57957d82514c",
-    "text": "See you, |PLAYERNAME|.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.067333Z"
+    "updated_at": "2026-02-17T02:03:28.211601Z"
   },
   "data.otservbr.global.npc.altar.L84.731": {
     "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
@@ -37278,5 +37278,245 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T01:56:45.192454Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L20.1780": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Rimuovi l'urlo di una banshee vicino al cristallo malvagio, con le orecchie protette dalla cera. Così il funesto manufatto viene distrutto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.631622Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L40.1781": {
+    "src_hash": "2fffed7e55b475fea1241561e1dee3bf",
+    "text": "Usi la cera fusa per tapparti le orecchie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.632217Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L50.1782": {
+    "src_hash": "81f34cd4feabd1b573f7f0287b5b7e09",
+    "text": "Hai mescolato i primi ingredienti per creare un unguento speciale. Ma non è ancora completo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.632861Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L55.1783": {
+    "src_hash": "de7e7625f949cdce38c79cc3d2a971de",
+    "text": "Hai mescolato gli ingredienti giusti per creare un unguento speciale. Con questo unguento puoi non pietrificare un oggetto pietrificato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.633591Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L105.1791": {
+    "src_hash": "251bcb9238b80e3c253577b72c0388ca",
+    "text": "Prendi del sangue dal cristallo cavo. Speriamo che sia effettivamente il sangue di una medusa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.634552Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L53.1785": {
+    "src_hash": "ef7bc2864cae3121bb7c48e6572383bf",
+    "text": "Mentre usi la piccola campana, un suono ultraterreno risuona dolcemente. Nello stesso momento le acque del lago cominciano a vorticare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.635148Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L63.1786": {
+    "src_hash": "04b60dd3858c883f70e9bda7222d43e4",
+    "text": "In quest'area esiste già un vortice.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.635567Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L82.1787": {
+    "src_hash": "9f25db585c3bc299d4755213e900b2e5",
+    "text": "Hai trovato un foglio di carta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.635941Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L90.1788": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Il mucchio di ossa è vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.636447Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L94.1789": {
+    "src_hash": "17f363d5b28d6710eee10f1f445e69ef",
+    "text": "Hai trovato una piccola campana di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.636863Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L98.1790": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Il mucchio di ossa è vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.637239Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Ointment.L14.1777": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Rimuovi l'urlo di una banshee vicino al cristallo malvagio, con le orecchie protette dalla cera. Così il funesto manufatto viene distrutto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.637886Z"
+  },
+  "data.otservbr.global.scripts.quests.the.djinn.war.quest.action.water.fountain.L10.1917": {
+    "src_hash": "0e2d063e230967a1983dd33849d7b89c",
+    "text": "Hai trovato una lacrima di Daraman.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.638537Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.acidFishingRod.L23.1839": {
+    "src_hash": "b7edddd4772bae9ec1170cd75ad8532c",
+    "text": "Non osi toccare i resti. Una parola è stata incisa ripetutamente su queste ossa: 'K'muuh'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.639116Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.outfit.L11.2166": {
+    "src_hash": "6f787d1387c90834af3d9b663a8159d1",
+    "text": "Hai ottenuto il tuo nuovo vestito e ora puoi lasciare la stanza delle ricompense!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.649236Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.outfit.L13.2167": {
+    "src_hash": "01df51775e4238428c8c068d2cc0b692",
+    "text": "Hai già preso l'abito, chiedi della missione di Chrak.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.649823Z"
+  },
+  "data.otservbr.global.scripts.quests.threatened.dreams.action.poacher.book.L9.2266": {
+    "src_hash": "6ad778942f77ae1b95d6234ff0605923",
+    "text": "Stai mettendo il libro sul tavolo, speriamo che i bracconieri lo scoprano presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.666776Z"
+  },
+  "data.otservbr.global.scripts.quests.threatened.dreams.action.poacher.notes.L7.2263": {
+    "src_hash": "4bc657452622d096ce45741102787b03",
+    "text": "Hai trovato appunti di un bracconiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.667325Z"
+  },
+  "data.otservbr.global.scripts.quests.threatened.dreams.action.whelp.fur.L13.2264": {
+    "src_hash": "36137d8d9dbe7d2b655496d83858ae68",
+    "text": "Metti la pelliccia del cucciolo nella bocca della pietra e così la metti a riposare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:11.667864Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Cos'è questo? Un'entità con problemi di vista chiamata |PLAYERNAME|. Che fascino!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:14.046768Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Aspetta proprio lì. Ti mangerò dopo aver scritto quello che ho scoperto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:14.047188Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Aspetta proprio lì. Ti mangerò dopo aver scritto quello che ho scoperto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:14.047592Z"
+  },
+  "data.otservbr.global.npc.ahmet.L182.407": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Sii compianto pellegrino in carne ed ossa. Vendo beni generali. Chiedimi solo un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:18.550479Z"
+  },
+  "data.otservbr.global.npc.ajax.L58.355": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Sei tornato. Lo sai, hai ragione. Il fratello ha ragione. Il pugno non è sempre buono. Diglielo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:18.550962Z"
+  },
+  "data.otservbr.global.npc.ajax.L61.356": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Cosa fai al mio posto?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:18.551230Z"
+  },
+  "data.otservbr.global.npc.al.dee.L168.598": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Dai un'occhiata alla finestra degli scambi alla tua sinistra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:18.551816Z"
+  },
+  "data.otservbr.global.npc.albinius.L267.1035": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Saluti, pellegrino. Benvenuti nelle sale della speranza. Siamo i custodi di questo {temple} e diamo il benvenuto a chiunque voglia contribuire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:24.291561Z"
+  },
+  "data.otservbr.global.npc.alesar.L208.1593": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:24.292151Z"
+  },
+  "data.otservbr.global.npc.alexander.L174.1570": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:28.211997Z"
+  },
+  "data.otservbr.global.npc.alia.L148.1158": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:03:28.212427Z"
   }
 }

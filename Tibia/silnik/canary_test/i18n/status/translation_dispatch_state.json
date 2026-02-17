@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T03:01:17.180479Z",
-  "cycle_counter": 1353,
-  "last_target_key": "ro:talkactions.json",
-  "last_pending_total": 198,
+  "timestamp": "2026-02-17T03:04:07.560101Z",
+  "cycle_counter": 1356,
+  "last_target_key": "ro:messages.json",
+  "last_pending_total": 9,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 194,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 183,
+  "cache_cycle": 184,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -327,7 +327,10 @@
     "sr:globalevents.json": 0,
     "ru:cpp.json": 0,
     "ru:client.json": 0,
-    "pl:npclib.json": 0
+    "pl:npclib.json": 0,
+    "ro:talkactions.json": 0,
+    "it:libs.json": 0,
+    "ru:chatchannels.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -381,9 +384,9 @@
     "lang_completion": {
       "pl": 46.2,
       "es": 74.64,
-      "ru": 37.42,
-      "ro": 23.1,
-      "it": 14.14,
+      "ru": 37.47,
+      "ro": 23.18,
+      "it": 14.21,
       "sr": 11.2,
       "sv": 9.12
     }

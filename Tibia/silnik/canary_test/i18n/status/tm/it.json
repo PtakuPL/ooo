@@ -41470,5 +41470,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:00:33.509751Z"
+  },
+  "lib.functions.msg1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Devi aspettare. Qualcuno è impegnativo ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.675621Z"
+  },
+  "lib.functions.msg2": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Devi aspettare. Qualcuno è impegnativo ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.676082Z"
+  },
+  "lib.player.modal_button_close": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Chiudi",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.678294Z"
+  },
+  "lib.player.msg2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.678599Z"
+  },
+  "lib.player.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.679040Z"
+  },
+  "lib.players.msg1": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Hai ricevuto un punto fama.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.680021Z"
+  },
+  "rune.msg_sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:48.681574Z"
+  },
+  "lib.blessing.msg_already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Sei già benedetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:52.692980Z"
+  },
+  "lib.blessing.msg_battle": {
+    "src_hash": "89c97deb77470fe3cbf0e3d553832e5a",
+    "text": "Non puoi comprare la benedizione mentre sei in battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:52.693323Z"
+  },
+  "lib.blessing.msg_none": {
+    "src_hash": "f25caa54b1d4a44e40a1e7b5801fe37b",
+    "text": "Nessuna benedizione ricevuta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:52.693577Z"
+  },
+  "lib.blessing.msg_not_enough": {
+    "src_hash": "b2f159ac492a3ef91d76250c3fa0b688",
+    "text": "Non hai abbastanza soldi. Hai bisogno di {cost} per acquistare tutte le benedizioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:52.694018Z"
+  },
+  "lib.blessing.msg_protects": {
+    "src_hash": "0610c9df0649d00a62e3a13a274006d9",
+    "text": "{name} ti protegge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:52.694340Z"
+  },
+  "lib.blessing.msg_received": {
+    "src_hash": "88dd3b311379b0945a1fce136b1d7024",
+    "text": "Hai ricevuto le {count} benedizioni rimanenti per un totale di {cost} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:59.700204Z"
+  },
+  "lib.blessing.received_header": {
+    "src_hash": "513ce8b4376826f68cc8d468ea773867",
+    "text": "Benedizioni ricevute:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:59.700454Z"
+  },
+  "lib.concoctions.msg1": {
+    "src_hash": "4ea403723d88eef576be5867414c50e8",
+    "text": "La tua miscela ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:59.700668Z"
+  },
+  "lib.concoctions.msg_active": {
+    "src_hash": "efbcafac9607b1597c78433fded4e6dd",
+    "text": "La tua miscela {name} è ancora attiva per un altro {duration}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:59.701062Z"
+  },
+  "lib.exaltation_forge.msg1": {
+    "src_hash": "873b8a7bd86f7de3c3afc60d7f842226",
+    "text": "Hai ricevuto ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:02:59.701270Z"
+  },
+  "lib.exaltation_forge.msg2": {
+    "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+    "text": "Non hai ricevuto ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:05.608978Z"
+  },
+  "lib.exaltation_forge.msg3": {
+    "src_hash": "873b8a7bd86f7de3c3afc60d7f842226",
+    "text": "Hai ricevuto ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:05.609202Z"
+  },
+  "lib.exaltation_forge.msg4": {
+    "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+    "text": "Non hai ricevuto ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:05.609503Z"
+  },
+  "lib.exaltation_forge.msg_limit": {
+    "src_hash": "d23f840b820625790fd6520edf2af123",
+    "text": "Non hai ricevuto {amount} polvere per la Forgia dell'Esaltazione perché hai già raggiunto il limite massimo di {limit} polvere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:05.610058Z"
+  },
+  "lib.exaltation_forge.msg_received": {
+    "src_hash": "0834a3424f51f208a0ba4b512c3621e8",
+    "text": "Hai ricevuto {amount} polvere per la Forgia dell'Esaltazione. Ora hai {current} di un massimo di {limit} polveri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:05.610587Z"
+  },
+  "lib.familiar.msg1": {
+    "src_hash": "d0cc76122f837ebf9c464cb6e6fb838b",
+    "text": "La tua evocazione scomparirà tra meno di ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:13.589943Z"
+  },
+  "lib.familiar.msg_disappear": {
+    "src_hash": "3eba5a54e97c656972957a34bf9a11df",
+    "text": "La tua evocazione scomparirà tra meno di {time}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:13.590365Z"
+  },
+  "lib.functions.msg_1": {
+    "src_hash": "2ddc6be518e9fe9aa861736e9739dd2c",
+    "text": "Sei stato teletrasportato perché gli habitat stanno tornando alla loro forma originale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:13.590871Z"
+  },
+  "lib.functions.msg_boss_wait": {
+    "src_hash": "b81ccc1275dd4312e33ff4ed9f969b91",
+    "text": "Devi aspettare. Qualcuno sta sfidando {bossName} adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:13.591376Z"
+  },
+  "lib.functions.msg_insufficient_params": {
+    "src_hash": "e8edd16e11be79a9caa1fca8a7c0d55b",
+    "text": "Parametri insufficienti. Utilizzo: {usage}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:21.217793Z"
+  },
+  "lib.functions.msg_invalid_influenced": {
+    "src_hash": "f10227eb90a99c933558622b0fe1ba6e",
+    "text": "Livello influenzato non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:21.218179Z"
+  },
+  "lib.functions.msg_no_room": {
+    "src_hash": "cd2849193c59166d2da3f4408d2e401b",
+    "text": "{message}, ma non hai spazio per portarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:21.218652Z"
+  },
+  "lib.functions.msg_only_fiendish": {
+    "src_hash": "cff6d72a0ee040d180f04e75643cb440",
+    "text": "Solo i mostri ammessi possono essere diabolici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:21.218974Z"
+  },
+  "lib.functions.msg_only_influenced": {
+    "src_hash": "f83057029ea4bd6691b0786b59dd7660",
+    "text": "Solo i mostri consentiti possono essere influenzati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:21.219282Z"
+  },
+  "lib.functions.msg_param_required": {
+    "src_hash": "8a70b215e7b42d0a434259e0b3584f62",
+    "text": "Parametro di comando obbligatorio. Utilizzo: {usage}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:29.553769Z"
+  },
+  "lib.functions.msg_too_heavy": {
+    "src_hash": "0e5fcbe866dfde80cc6328334a95d2cf",
+    "text": "{message}. Con un peso di {weight} oz, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:29.554281Z"
+  },
+  "lib.functions.say_1": {
+    "src_hash": "9a9c91d24eeadee067452a3b3c879ee0",
+    "text": "Tempo scaduto! Sei stato teletrasportato da strane forze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:29.554635Z"
+  },
+  "lib.hireling.msg1": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Non hai abbastanza capacità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:29.554933Z"
+  },
+  "lib.hireling.msg2": {
+    "src_hash": "67566b1658e2ca3f129c39e8dfa10c38",
+    "text": "Non hai abbastanza spazio nella tua casella di posta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:29.555251Z"
+  },
+  "lib.hireling.msg3": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Non hai abbastanza capacità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:33.723303Z"
+  },
+  "lib.hireling.msg4": {
+    "src_hash": "67566b1658e2ca3f129c39e8dfa10c38",
+    "text": "Non hai abbastanza spazio nella tua casella di posta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:33.723640Z"
+  },
+  "lib.monster.msg_already_fiendish": {
+    "src_hash": "4b1a20e40b12ea73ac9e4fef23762921",
+    "text": "Questo mostro è già diabolico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:33.723947Z"
+  },
+  "lib.monster.msg_not_forgeable": {
+    "src_hash": "a10e1af7c03f1d55c3badcb24d1e953f",
+    "text": "Questo mostro non è forgiabile, diabolico non è aggiunto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:33.724311Z"
+  },
+  "lib.monster.msg_only_fiendish": {
+    "src_hash": "cff6d72a0ee040d180f04e75643cb440",
+    "text": "Solo i mostri ammessi possono essere diabolici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:33.724656Z"
+  },
+  "lib.player.loyalty_bonus": {
+    "src_hash": "4ddba3d875725d4ef29fbabebc32e11d",
+    "text": "Grazie alla tua fedeltà a lungo termine a {2} attualmente benefici di un bonus del {0}% su tutte le tue abilità. (Hai {1} punti fedeltà)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:41.909464Z"
+  },
+  "lib.player.loyalty_title_1": {
+    "src_hash": "2fbdb38b61c40fd314f824990c8de010",
+    "text": "Esploratore di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:41.909869Z"
+  },
+  "lib.player.loyalty_title_10": {
+    "src_hash": "a39d78615407f3d2bb8133b7fe1f49c6",
+    "text": "Sapiente di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:41.910212Z"
+  },
+  "lib.player.loyalty_title_11": {
+    "src_hash": "c29caf928526e5a215d590b5cf846bdf",
+    "text": "Illuminato di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:41.910524Z"
+  },
+  "lib.player.loyalty_title_2": {
+    "src_hash": "62247bc1856daff126efc00d682dc57f",
+    "text": "Sentinella di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:41.910828Z"
+  },
+  "lib.player.loyalty_title_3": {
+    "src_hash": "87cf738682425ab397006531fc20d4be",
+    "text": "Steward di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:47.197123Z"
+  },
+  "lib.player.loyalty_title_4": {
+    "src_hash": "c0bd3e6be7e9b7dd5e78778ec7754e69",
+    "text": "Guardiano di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:47.197436Z"
+  },
+  "lib.player.loyalty_title_5": {
+    "src_hash": "549ee1c6a01b0dc74497de310823f1ba",
+    "text": "Scudiero di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:47.197752Z"
   }
 }

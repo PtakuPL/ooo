@@ -1,9 +1,9 @@
 {
   "category": "it",
-  "cycle": 183,
+  "cycle": 184,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-17T03:02:28Z",
+  "generated_at_utc": "2026-02-17T03:04:37Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 183,
-      "file": "talkactions.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T03:01:17Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 183,
-      "file": "talkactions.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T03:01:17Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 183,
-      "file": "achievements.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T03:00:37Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 183,
-      "file": "achievements.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T03:00:36Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 183,
-      "file": "books.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-17T03:00:34Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 183,
-      "file": "books.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T02:59:32Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 183,
-      "file": "books.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-17T02:59:31Z"
-    },
-    {
-      "action": "update",
       "category": "es",
-      "cycle": 182,
+      "cycle": 184,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T02:59:06Z"
+      "t": "2026-02-17T03:04:28Z"
     },
     {
       "action": "update",
       "category": "ro",
-      "cycle": 182,
-      "file": "books.json",
+      "cycle": 184,
+      "file": "messages.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T02:58:00Z"
+      "t": "2026-02-17T03:04:07Z"
     },
     {
       "action": "update",
       "category": "ro",
-      "cycle": 182,
-      "file": "books.json",
+      "cycle": 184,
+      "file": "messages.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-17T02:58:00Z"
+      "t": "2026-02-17T03:04:07Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 184,
+      "file": "chatchannels.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T03:03:50Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 184,
+      "file": "chatchannels.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-17T03:03:50Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 184,
+      "file": "libs.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-17T03:03:48Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 184,
+      "file": "libs.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T03:02:47Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 184,
+      "file": "libs.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-17T03:02:47Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 183,
+      "file": "talkactions.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T03:01:17Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 183,
+      "file": "talkactions.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-17T03:01:17Z"
     }
   ],
   "stage": "cycle_end",

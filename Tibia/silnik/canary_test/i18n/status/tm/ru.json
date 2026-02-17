@@ -27518,5 +27518,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:01:14.737476Z"
+  },
+  "channel.english_chat.name": {
+    "src_hash": "515fd5aa44f6e45f69e03b4f44dabab1",
+    "text": "Английский чат",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:56.158555Z"
+  },
+  "channel.advertising_rook.name": {
+    "src_hash": "6e05c72924bf27b2c2c23c64f7e6ca96",
+    "text": "Реклама-Грач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:56.159365Z"
+  },
+  "channel.advertising.name": {
+    "src_hash": "2ce5fc289845ce826261032b9c6749ea",
+    "text": "Реклама",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:56.159579Z"
+  },
+  "channel.msg_level1_mute": {
+    "src_hash": "60cff1bb0af9c44cc2798270598f2231",
+    "text": "Вы не можете говорить по каналам, пока находитесь на уровне 1.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:03:56.160018Z"
+  },
+  "channel.msg_level20_premium": {
+    "src_hash": "8d277f5e9ab42a07de4de61d1f4c5a3f",
+    "text": "Вы не можете выступать на этом канале, пока не достигнете 20-го уровня или если ваша учетная запись не имеет премиум-статуса.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:02.505317Z"
+  },
+  "channel.help.msg_muted": {
+    "src_hash": "99fb9d2c297fb6561e7cee65ff71fd4e",
+    "text": "Вы отключены от канала справки за ненадлежащее его использование.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:02.505769Z"
+  },
+  "channel.help.msg_already_muted": {
+    "src_hash": "756a962fefacb7282d9681a0e8220ab8",
+    "text": "Звук этого проигрывателя уже отключен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:02.506165Z"
+  },
+  "channel.help.msg_not_authorized_mute": {
+    "src_hash": "7773df780960ad9f5aa126dff312d97d",
+    "text": "Вы не имеете права отключить звук этого игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:02.506581Z"
+  },
+  "channel.help.msg_not_muted": {
+    "src_hash": "737678bc7d81e88b098a1a997b648112",
+    "text": "У этого плеера звук не отключен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:02.506903Z"
+  },
+  "channel.help.msg_not_authorized_unmute": {
+    "src_hash": "dfe2ef952f5b988aa6ea18aa6c48a763",
+    "text": "У вас нет прав на включение звука этого игрока.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:04.737589Z"
   }
 }

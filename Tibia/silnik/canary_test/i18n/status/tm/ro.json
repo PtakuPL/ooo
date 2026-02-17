@@ -35574,5 +35574,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:02:26.186832Z"
+  },
+  "system.blessing.received": {
+    "src_hash": "b072630fb80afe0c27894f87f325d9dc",
+    "text": "Ai primit {1} binecuvântări rămase.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:14.061843Z"
+  },
+  "system.blessing.already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Ești deja binecuvântat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:14.062219Z"
+  },
+  "system.store.check_inbox": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:14.063071Z"
+  },
+  "system.experience.gained": {
+    "src_hash": "8670aa2f26b8327fb6286160f7cb2f44",
+    "text": "Ați câștigat {1} puncte de experiență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:14.063436Z"
+  },
+  "system.mission.points": {
+    "src_hash": "8e80694334610665724d4593ddddc675",
+    "text": "Ați câștigat {1} punct(e) în misiunea {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:14.063802Z"
+  },
+  "system.mount.received": {
+    "src_hash": "23964ff2a518809ff155f108db6fdb2b",
+    "text": "Felicitări, ați primit montura {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:20.037513Z"
+  },
+  "system.item.received": {
+    "src_hash": "3b32c150490e96a01dbf112a275827e5",
+    "text": "Ai câștigat un {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:20.037804Z"
+  },
+  "system.stash.count": {
+    "src_hash": "956e4382d83b9d1c7b37c56c7117a623",
+    "text": "Rezerva dumneavoastră conține {1} articole.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:20.038241Z"
+  },
+  "system.venture.decay": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Aventurați calea decăderii!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:04:20.038527Z"
   }
 }

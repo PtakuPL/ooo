@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-02-17T00:01:27.292362Z",
+  "timestamp": "2026-02-17T00:02:59.863783Z",
   "checked_entries": 100,
-  "issues_found": 5,
+  "issues_found": 6,
   "issues_by_type": {
-    "identical_to_en_exempt": 11,
+    "identical_to_en_exempt": 19,
     "artifact_token": 5,
-    "suspicious_log_high": 130,
+    "identical_to_en": 1,
+    "suspicious_log_high": 125,
     "suspicious_log_low": 4,
-    "suspicious_log_critical": 66,
+    "suspicious_log_critical": 71,
     "suspicious_rejected_critical": 157,
     "suspicious_rejected_high": 43
   },
@@ -46,6 +47,13 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "startup.chest.msg4",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "legiondawnport",
+      "translated": "legiondawnport"
     }
   ],
   "threshold": 10,

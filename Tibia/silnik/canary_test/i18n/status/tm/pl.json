@@ -98030,5 +98030,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T23:54:13.558750Z"
+  },
+  "talkaction.common.msg_only_forgeable": {
+    "src_hash": "45c2e8ce5c36005dd16b1c918781c90a",
+    "text": "Tylko dozwolone potwory mogą być diabelskie lub pod wpływem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:00.746125Z"
+  },
+  "talkaction.gm.ban.msg_invalid_format": {
+    "src_hash": "38bc5f13c94f8bf67e70c033ef50d15f",
+    "text": "Nieprawidłowy format polecenia. Użyj: /ban nazwa gracza, dni [, powód].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:00.747142Z"
+  },
+  "talkaction.gm.ban.msg_usage": {
+    "src_hash": "1d6429c4eff7b2ca0e947e45918e7bfd",
+    "text": "Wymagany parametr polecenia. Użyj: /ban nazwa gracza, dni [, powód].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:06.331652Z"
+  },
+  "talkaction.god.achievement.msg_add_usage": {
+    "src_hash": "96b36ea5b2bbbd3798e8c5d11f9f8537",
+    "text": "Użycie: /addachievement nazwa gracza, identyfikator osiągnięcia|nazwa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:06.333000Z"
+  },
+  "talkaction.god.achievement.msg_check_usage": {
+    "src_hash": "1498377915ca8c25a3d1634a54a9f82e",
+    "text": "Użycie: /checkachievements nazwagracza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:11.819713Z"
+  },
+  "talkaction.god.achievement.msg_remove_usage": {
+    "src_hash": "b552492a6ac9c7225935ffe21ffc20aa",
+    "text": "Użycie: /removeachievement nazwa gracza, identyfikator osiągnięcia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:11.820114Z"
+  },
+  "talkaction.god.charms.msg_added_minor": {
+    "src_hash": "d3f2366869db63417b44c2a806d1c4c6",
+    "text": "Dodano {amount} pomniejszych punktów uroku do postaci '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:18.624817Z"
+  },
+  "talkaction.god.charms.msg_expansion_other": {
+    "src_hash": "7765a137e4ba26757f65014f0b256b36",
+    "text": "Dodano rozszerzenie uroku dla gracza '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:18.625291Z"
+  },
+  "talkaction.god.charms.msg_received_minor": {
+    "src_hash": "d6d25bce1fb28a7b9b223b24aa82e5cb",
+    "text": "Otrzymałeś {amount} mniejszych punktów uroku!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:18.625646Z"
+  },
+  "talkaction.god.charms.msg_received_points": {
+    "src_hash": "c57a6a74668376f4021494fc6b2c5918",
+    "text": "Otrzymałeś {amount} punktów uroku!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:24.103155Z"
+  },
+  "talkaction.god.charms.msg_reset_other": {
+    "src_hash": "b84b9a2b6291aadee31038757586048a",
+    "text": "Zresetowano punkty uroku postaci '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:24.103856Z"
+  },
+  "talkaction.god.charms.msg_runes_other": {
+    "src_hash": "edc41e153cdaf84100f311a948076259",
+    "text": "Dodano wszystkie runy uroku do '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:24.104494Z"
+  },
+  "talkaction.god.forge.msg_addlevel_success": {
+    "src_hash": "91b68ad2ca07e83ac9508d0b6f27bfbb",
+    "text": "Pomyślnie dodano poziom kurzu {amount} dla odtwarzacza {name}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:35.709105Z"
+  },
+  "talkaction.god.forge.msg_addlevel_target": {
+    "src_hash": "8c2d9b901abd0c148d0e7861d46c176b",
+    "text": "{admin} dodaje {amount} poziom pyłu do twojej postaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:35.709505Z"
+  },
+  "talkaction.god.kv.msg_cooldown_cleared": {
+    "src_hash": "eb4794382ddb25f71c02f630612a2788",
+    "text": "Czas odnowienia bossa dla {boss} został usunięty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:47.174133Z"
+  },
+  "talkaction.god.manage_badge.msg_insufficient": {
+    "src_hash": "4c13350caf72529ffd40173c02a1cca8",
+    "text": "Niewystarczające parametry. Sposób użycia: /addbadge nazwa gracza, identyfikator identyfikatora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:02:47.174791Z"
   }
 }

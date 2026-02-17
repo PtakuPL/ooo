@@ -3,9 +3,9 @@
   "lang": "pl",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": false,
+      "ok": true,
       "guard_placeholder": 0,
-      "guard_pipe": 1
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
@@ -13,10 +13,10 @@
       "threshold": 5
     },
     "coverage_above_95pct": {
-      "ok": true,
-      "coverage_pct": 100.0,
+      "ok": false,
+      "coverage_pct": 83.9,
       "total_keys": 199,
-      "real_translations": 199
+      "real_translations": 167
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-14T10:45:36.343040Z"
+  "timestamp": "2026-02-17T00:02:54.026398Z"
 }

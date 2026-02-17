@@ -2,7 +2,7 @@
   "startup.chest.msg1": "do korzystania z mapy",
   "startup.chest.msg2": "do korzystania ze skryptu",
   "startup.chest.msg3": "pojemnik = identyfikator torby",
-  "startup.chest.msg4": "[EN] legiondawnport",
+  "startup.chest.msg4": "legiondawnport",
   "startup.chest.msg5": "głębsza strzałka 1",
   "startup.functions.msg1": "Utwórz element na mapie",
   "startup.functions.msg2": "utwórz_item.lua",

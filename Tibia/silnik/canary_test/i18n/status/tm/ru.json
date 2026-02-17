@@ -36854,5 +36854,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:53:04.418562Z"
+  },
+  "ui.readable.nothing_written": {
+    "src_hash": "9e448afdf325b70003bf08c90a437317",
+    "text": "На нем ничего не написано",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:52.836925Z"
+  },
+  "ui.readable.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Ты слишком далеко, чтобы прочитать это",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:52.837512Z"
+  },
+  "book.otbm.cyclopic_cities_were_laid_into": {
+    "src_hash": "8e5fb4e87d8fbc9338d68c38c105ffe2",
+    "text": "циклопические города были превращены в руины, невероятные кузнечные фабрики потеряны навеки, и до сих пор циклопы огорчены",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:00.718528Z"
+  },
+  "book.otbm.dagger_hand_axe_barbarian_axe": {
+    "src_hash": "0ce085dd8029017a861b9233182a1806",
+    "text": "кинжал, ручной топор, варварский топор, копье, рапира, топор, сабля, меч, булава, боевой молот и канцелярская булава",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:00.719225Z"
+  },
+  "book.otbm.damnation_to_all_who_dare": {
+    "src_hash": "0881480744e173991d7aeb65afa6533c",
+    "text": "Проклятие всем, кто осмелится войти!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:00.719612Z"
+  },
+  "book.otbm.dark_are_the_mysteries_surrounded": {
+    "src_hash": "5c823503b352591233cdee451085a028",
+    "text": "Темны тайны, окруженные обреченными криками",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:00.719991Z"
+  },
+  "book.otbm.daughter_of_earth_and_fire": {
+    "src_hash": "e0cf4dcd664fd44e9e17b1657e6aa8a9",
+    "text": "Дочь земли и огня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:02.992899Z"
+  },
+  "book.otbm.daughter_of_earth_and_fire_e0cf4dcd": {
+    "src_hash": "e0cf4dcd664fd44e9e17b1657e6aa8a9",
+    "text": "Дочь земли и огня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:02.993232Z"
   }
 }

@@ -65406,5 +65406,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:52:59.630471Z"
+  },
+  "otclient_modules.console.tr_9": {
+    "src_hash": "5b427eb87df49635a553759eba2359ab",
+    "text": "Registro del server",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.586435Z"
+  },
+  "otclient_modules.game_shop.tr_21": {
+    "src_hash": "193cfc9be3b995831c6af2fea6650e60",
+    "text": "Pagina",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.626608Z"
+  },
+  "otclient_modules.game_shop_otui.tr_1": {
+    "src_hash": "193cfc9be3b995831c6af2fea6650e60",
+    "text": "Pagina",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.627781Z"
+  },
+  "otclient_modules.game_shop_otui.tr_8": {
+    "src_hash": "16d2b386b2034b9488996466aaae0b57",
+    "text": "Storia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.629413Z"
+  },
+  "otclient_modules.game_store_otui.tr_11": {
+    "src_hash": "16d2b386b2034b9488996466aaae0b57",
+    "text": "Storia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.632580Z"
+  },
+  "otclient_modules.graphics_otui.tr_1": {
+    "src_hash": "8ade35fdb6abe34f78026c4de4e3d51a",
+    "text": "Non allungare/ridurre la finestra di gioco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.641820Z"
+  },
+  "otclient_modules.imbuing.tr_9": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Imbevuto chiaro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.667279Z"
+  },
+  "otclient_modules.imbuing_otui.tr_10": {
+    "src_hash": "bb2a2334aa0d8fbb37d661b97fc6c766",
+    "text": "Slot vuoto Imbevuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.667896Z"
+  },
+  "otclient_modules.imbuing_otui.tr_11": {
+    "src_hash": "18adfb026ad4b2df79b6c2ec81a59f14",
+    "text": "Seleziona slot:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.668207Z"
+  },
+  "otclient_modules.imbuing_otui.tr_15": {
+    "src_hash": "60d65769e17d580b4cc077b24ba2b1dd",
+    "text": "Informazioni sull'articolo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.668773Z"
+  },
+  "otclient_modules.imbuing_otui.tr_6": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Imbevuto chiaro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.669414Z"
+  },
+  "otclient_modules.imbuing_otui.tr_7": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Clicca qui per effettuare l'imbevimento selezionato. Ciò consumerà le fonti astrali e l'oro richieste.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.670025Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_3": {
+    "src_hash": "0be8406951cdfda82f00f79328cf4efc",
+    "text": "Commento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.705873Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_6": {
+    "src_hash": "fffcb4d1e12c96b2f571f77ad25878b8",
+    "text": "Motivo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.706495Z"
+  },
+  "otclient_modules.tasks.tr_11": {
+    "src_hash": "0d3a4946f6dad8ce0a07abe8837ba269",
+    "text": "Vuoi davvero interrompere questa attività?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.726124Z"
+  },
+  "otclient_modules.textmessage.tr_2": {
+    "src_hash": "5b427eb87df49635a553759eba2359ab",
+    "text": "Registro del server",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:19.729239Z"
+  },
+  "otclient_modules.boss_slots.tr_3": {
+    "src_hash": "713492d3105213383111e1ca4284e133",
+    "text": "Nemesi\n\nPer sbloccare un livello, riceverai i seguenti punti boss:\nAbilità: 10\nCompetenza: 30\nMaestria: 60",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:23.009235Z"
+  },
+  "otclient_modules.boss_slots.tr_5": {
+    "src_hash": "ec57690da7da9fb0717ad2b395c35647",
+    "text": "Slot %d: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:23.009536Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_10": {
+    "src_hash": "46b5f8c58b679b4243cbdb5749642c86",
+    "text": "Progressi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:23.009724Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_3": {
+    "src_hash": "0586eb3010e2137eb43ae89a1fa18c3f",
+    "text": "Boss potenziato: la fonte del co...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:23.010017Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_4": {
+    "src_hash": "d4d7cd87429250170eaf111d428251c2",
+    "text": "Slot 2: bloccato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:29.085361Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_5": {
+    "src_hash": "e5a7dd75be57e95ce6497f994df8ea56",
+    "text": "Slot 1: bloccato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:29.085590Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_7": {
+    "src_hash": "f9034ff8731aae36e0bd265fed889142",
+    "text": "Ogni volta che sconfiggi una creatura, rilascia una serie di bottino con a\ncerta possibilità. Il bonus del bottino dell'equipaggiamento mostra la tua possibilità di farlo\nottieni un secondo set di bottino, ma limitato all'equipaggiamento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:29.086490Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_8": {
+    "src_hash": "b60183f6899f8b04902a4753633bab06",
+    "text": "0/0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:29.086672Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_9": {
+    "src_hash": "69424ae0c8f68dc68e4f715611c0c56c",
+    "text": "Punti Boss",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:33.407056Z"
+  },
+  "otclient_modules.bosstiary.tr_1": {
+    "src_hash": "f8b93c08823ede73e4889656772bd003",
+    "text": "Una volta raggiunto il livello di maestria, riceverai un\nbonus bottino aggiuntivo del 25% quando il boss viene assegnato a uno slot boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:33.407730Z"
+  },
+  "otclient_modules.bosstiary.tr_11": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:33.407922Z"
+  },
+  "otclient_modules.bosstiary.tr_13": {
+    "src_hash": "0fd36e50eddf90907c0ac2dc3b775ad8",
+    "text": "Archefoe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:33.408092Z"
+  },
+  "otclient_modules.bosstiary.tr_2": {
+    "src_hash": "0e78e5d0095735812e30246de45279e2",
+    "text": "Una volta raggiunto il livello di competenza, è possibile visualizzare il\nboss su un podio del vigore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:33.408565Z"
+  },
+  "otclient_modules.bosstiary.tr_3": {
+    "src_hash": "f4ce845290ee7568b7a764648f7895a7",
+    "text": "Una volta raggiunto il livello Prodezza, puoi assegnare il boss\nallo slot del boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:36.527518Z"
+  },
+  "otclient_modules.bosstiary.tr_4": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Padronanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:36.527715Z"
+  },
+  "otclient_modules.bosstiary.tr_6": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:36.527887Z"
+  },
+  "otclient_modules.bosstiary.tr_8": {
+    "src_hash": "456d479c879155333c0624219803ec40",
+    "text": "Nemesi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:36.528049Z"
+  },
+  "otclient_modules.bosstiary.tr_9": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Padronanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:36.528247Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_10": {
+    "src_hash": "51534a3170d5912c466d45c89e48225e",
+    "text": "Rovina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:39.381804Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_12": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Padronanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:39.381995Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_14": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:39.382235Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_3": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Padronanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:39.382438Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_5": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:39.382607Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_6": {
+    "src_hash": "fcf8064dc7458686ccdcd7cf32f7e199",
+    "text": "Poche uccisioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:43.674517Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_7": {
+    "src_hash": "9943f1008433c572d639480b41f0d942",
+    "text": "Nessuna uccisione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:43.674724Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_8": {
+    "src_hash": "456d479c879155333c0624219803ec40",
+    "text": "Nemesi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:43.674895Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_9": {
+    "src_hash": "0fd36e50eddf90907c0ac2dc3b775ad8",
+    "text": "Archefoe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:43.675061Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_2": {
+    "src_hash": "35a88e03e6699907873597f5549e0b7a",
+    "text": "Creatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:43.675239Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_3": {
+    "src_hash": "74b12716003bafd478dcec0139780dcb",
+    "text": "Potenziato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:48.083997Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_4": {
+    "src_hash": "14ab5b8597ef2c5fc1748c6cf1bdb81d",
+    "text": "Prossimamente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:48.084199Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_5": {
+    "src_hash": "4d3d769b812b6faa6b76e1a8abaece2d",
+    "text": "Attivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:48.084364Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_6": {
+    "src_hash": "e324ba8ec09630f9fcca106d515afe8f",
+    "text": "Programma dell'evento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:00:48.084574Z"
   }
 }

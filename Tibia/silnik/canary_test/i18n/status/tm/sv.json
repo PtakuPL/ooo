@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:23:08.069391Z"
+    "updated_at": "2026-02-17T05:34:10.019854Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -24510,5 +24510,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:19:00.645446Z"
+  },
+  "item.5745.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:08.604270Z"
+  },
+  "item.5746.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:08.605034Z"
+  },
+  "item.5748.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:08.605506Z"
+  },
+  "item.5749.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:08.606140Z"
+  },
+  "item.10419.name": {
+    "src_hash": "74f78586d6fd0d0de41866624ad9ced6",
+    "text": "ödla trofé",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:18.508934Z"
+  },
+  "item.10420.name": {
+    "src_hash": "fa14c1bb1c9e6ad59579cdc98f186817",
+    "text": "förstenat skrik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:18.509194Z"
+  },
+  "item.10421.name": {
+    "src_hash": "892f066dfda2adad8d911f1f7f8e43f3",
+    "text": "äcklig trofé",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:18.509422Z"
+  },
+  "item.10422.desc": {
+    "src_hash": "dbe9ce2f4f7b229108980d68bb5891e2",
+    "text": "Du kan använda den och försöka skapa en staty av den",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:18.509794Z"
+  },
+  "item.10422.name": {
+    "src_hash": "2228e267716237285cc48ac484eb8226",
+    "text": "lerklump",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:18.509980Z"
+  },
+  "item.10423.name": {
+    "src_hash": "77518421f3f47ddf591cc4bb148eb6d6",
+    "text": "grov lerstaty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:26.533634Z"
+  },
+  "item.10424.name": {
+    "src_hash": "cec123d837717bdd25177e3ed889c150",
+    "text": "lerstaty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:26.533837Z"
+  },
+  "item.10425.name": {
+    "src_hash": "1641878a2ac639fad305524bc7cc7ad4",
+    "text": "vacker lerstaty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:26.534056Z"
+  },
+  "item.10426.desc": {
+    "src_hash": "8ac93627e4eff83f99a1e67b72aaaca6",
+    "text": "Det verkar bara perfekt att försöka skapa något av det med en vass obsidiankniv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:26.534527Z"
+  },
+  "item.10426.name": {
+    "src_hash": "2148736474d255251078a24acc20d47a",
+    "text": "bit av marmorsten",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:26.534770Z"
+  },
+  "item.10427.name": {
+    "src_hash": "18f79a0dc92b0fba95f78e3e8c79ab7d",
+    "text": "grov marmorstaty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:32.137010Z"
+  },
+  "item.10428.name": {
+    "src_hash": "6b6254d414daf48feae7bb9a91577fd2",
+    "text": "marmor staty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:32.137229Z"
+  },
+  "item.10429.name": {
+    "src_hash": "164397552df798eb4589e1f2462d9118",
+    "text": "vacker marmorstaty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:32.137463Z"
+  },
+  "item.10430.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "död terramit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:32.137674Z"
+  },
+  "item.10431.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "död terramit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:32.137902Z"
+  },
+  "item.10432.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "död terramit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:35.338775Z"
+  },
+  "item.10433.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "död terramit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:35.339000Z"
+  },
+  "item.10438.name": {
+    "src_hash": "16d1b0990d1ea1f0119381f3a4828356",
+    "text": "trollvävarrock",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:35.339225Z"
   }
 }

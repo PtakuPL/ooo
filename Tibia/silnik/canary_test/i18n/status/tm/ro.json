@@ -44990,5 +44990,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:32:16.143112Z"
+  },
+  "cpp.inspect.body_legs": {
+    "src_hash": "86acdeeaa47a154a6c389199327bb5b9",
+    "text": "Picioarele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.970966Z"
+  },
+  "cpp.protocol.vocation_label": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.990235Z"
+  },
+  "cpp.skill.axe_fighting": {
+    "src_hash": "4d456bf80e0cd0f0d577679305cf9dcd",
+    "text": "Lupta cu toporul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.996926Z"
+  },
+  "cpp.skill.club_fighting": {
+    "src_hash": "4971b192456644c3c00832fdee31fb70",
+    "text": "Lupta de club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.997194Z"
+  },
+  "cpp.skill.distance_fighting": {
+    "src_hash": "72404e1394a3b62cdc765bb8ff5bbbbf",
+    "text": "Luptă la distanță",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.997686Z"
+  },
+  "cpp.skill.fishing": {
+    "src_hash": "819a07afa4abc8660ec9042038a8c597",
+    "text": "Pescuit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.997972Z"
+  },
+  "cpp.skill.fist_fighting": {
+    "src_hash": "b390c8df81c64a60c1ccceeb8b9ab972",
+    "text": "Luptă cu pumnii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.998301Z"
+  },
+  "cpp.skill.shielding": {
+    "src_hash": "cc475241f2693dc7b001c735525438d6",
+    "text": "Ecranarea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.999289Z"
+  },
+  "cpp.skill.sword_fighting": {
+    "src_hash": "3fc8cf3adb95521626e837a7d963644a",
+    "text": "Lupta cu sabia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:17.999672Z"
+  },
+  "cpp.game.market_coin_transaction_purchased": {
+    "src_hash": "d6885ce0455eb52ae562b20e7d442184",
+    "text": "Achizitionat pe Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:25.334047Z"
+  },
+  "cpp.game.market_coin_transaction_sold": {
+    "src_hash": "a414fbe6aa780a4bd79860fd9a13e9a0",
+    "text": "Vândut pe Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:25.334474Z"
+  },
+  "cpp.game.market_item_not_correct": {
+    "src_hash": "0a18be2b77678da8a04d862ec4f32e05",
+    "text": "Articolul pe care ați încercat să îl comercializați nu este corect. Verificați elementul din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:25.334965Z"
+  },
+  "cpp.game.message_sent_to": {
+    "src_hash": "b6edeadabf93ec7e35085659726ead5e",
+    "text": "Mesaj trimis către {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:32.650068Z"
+  },
+  "cpp.game.no_loot": {
+    "src_hash": "ce0c51050a0318afb13b8a8ff9d02d8a",
+    "text": "Fără pradă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:32.650445Z"
+  },
+  "cpp.game.objects_picked_up": {
+    "src_hash": "b30883c9272b9a85df8ccb4815aceecc",
+    "text": "{0} din {1} obiecte au fost ridicate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:32.650764Z"
+  },
+  "cpp.game.offline_training_button_ok": {
+    "src_hash": "26b63f278101527e06a5547719568bb5",
+    "text": "Bine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:32.650935Z"
+  },
+  "cpp.game.offline_training_choice_axe": {
+    "src_hash": "cf090b79eb7b3b834d866d07fa271f74",
+    "text": "Luptă cu topor și scuturi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:32.651226Z"
+  },
+  "cpp.game.offline_training_choice_club": {
+    "src_hash": "3b376040cf5d41f07a8522d21e0360a1",
+    "text": "Luptă în club și scuturi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:39.627440Z"
+  },
+  "cpp.game.offline_training_choice_distance": {
+    "src_hash": "5dcaab134101076ad8ea2dc671245580",
+    "text": "Luptă la distanță și protecție",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:39.627769Z"
+  },
+  "cpp.game.offline_training_choice_magic": {
+    "src_hash": "a50f50c0c6ef192a9e4bac1002fe097a",
+    "text": "Nivel magic și ecranare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:39.628057Z"
+  },
+  "cpp.game.offline_training_choice_sword": {
+    "src_hash": "fa2acc7b985499b826ccf49a21ebdf1c",
+    "text": "Luptă cu sabia și scuturi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:39.628349Z"
+  },
+  "cpp.game.offline_training_message": {
+    "src_hash": "58842dab1057aa8e8bfa7b5ded73ddfd",
+    "text": "Vă rugăm să alegeți o abilitate:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:39.628638Z"
+  },
+  "cpp.game.offline_training_title": {
+    "src_hash": "85c31d17c1e8d2df63394b69e3f692f0",
+    "text": "Alegeți o abilitate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:47.423723Z"
+  },
+  "cpp.game.only_looted_some_gold": {
+    "src_hash": "556449995dfe300811b71db490cacf81",
+    "text": "Ai jefuit doar {0} din aurul aruncat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:47.424062Z"
+  },
+  "cpp.game.quick_loot_fail_gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Nu ai putut jefui {0} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:47.424350Z"
+  },
+  "cpp.game.quick_loot_fail_one_item": {
+    "src_hash": "6ed1556263f607620b76f0ef863323fd",
+    "text": "Nu ai putut jefui 1 articol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:47.424625Z"
+  },
+  "cpp.game.quick_loot_success_gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Ai jefuit {0} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:47.424883Z"
+  },
+  "cpp.game.quick_loot_success_one_item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Ai jefuit 1 articol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:53.383271Z"
+  },
+  "cpp.game.stash_withdraw_limit": {
+    "src_hash": "9a01da13149e0a5035736e78737126ce",
+    "text": "Puteți retrage numai până la {0} articole odată din depozit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:53.383741Z"
+  },
+  "cpp.game.still_muted": {
+    "src_hash": "23960b78537433a98582efc006ce8d8e",
+    "text": "Sunteți încă dezactivat pentru {0} secunde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:53.384089Z"
+  },
+  "cpp.game.store_item_description": {
+    "src_hash": "6817218ba73defea9fdde91c6eef7e37",
+    "text": "Ați cumpărat acest articol în Magazin.\nDesfaceți-l în propria casă pentru a crea un <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:53.384573Z"
+  },
+  "cpp.game.trade_move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} vă spune să vă apropiați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:59.669439Z"
+  },
+  "cpp.game.trade_wants_to_trade": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} vrea să facă tranzacții cu dvs.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:59.669827Z"
+  },
+  "cpp.game.unwrap_house_description": {
+    "src_hash": "d7f7ba441c03c161e8341f1efa003292",
+    "text": "Desfaceți acest articol în propria casă pentru a crea un <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:59.670294Z"
+  },
+  "cpp.game.you_looted": {
+    "src_hash": "26d7549202c4f7e9078c32979b3abc0d",
+    "text": "Ai jefuit ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:59.670590Z"
+  },
+  "cpp.hotkey.using_count": {
+    "src_hash": "777696880e4dd54127cba0fa85de3271",
+    "text": "Folosind unul dintre {0} {1}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:33:59.670971Z"
+  },
+  "cpp.hotkey.using_last": {
+    "src_hash": "4b3adcc3fe64dbce468c0fa4b668c846",
+    "text": "Folosind ultimul {0}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:04.148925Z"
+  },
+  "cpp.hotkey.using_one": {
+    "src_hash": "971227a6314d5326dab060636ff23693",
+    "text": "Folosind unul dintre {0}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:34:04.149574Z"
   }
 }

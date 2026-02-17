@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T02:45:09.425354Z",
+  "timestamp": "2026-02-17T02:45:55.964070Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 50,
   "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -7290,8 +7290,8 @@
         [
           "achievements.json",
           1,
-          1771286101182913899,
-          126209
+          1771296343067809438,
+          126203
         ],
         [
           "actions.json",
@@ -7320,7 +7320,7 @@
         [
           "cpp.json",
           1,
-          1771290761505156954,
+          1771296350007827310,
           58963
         ],
         [
@@ -7521,13 +7521,13 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 39996,
+        "translated_keys": 39997,
         "english_copy_keys": 2633,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 74.64,
         "server_keys": 49731,
-        "server_translated": 37468,
+        "server_translated": 37469,
         "server_pct": 75.34,
         "client_keys": 3855,
         "client_translated": 2528,
@@ -7537,12 +7537,12 @@
         "achievements.json": {
           "sig": [
             1,
-            1771286101182913899,
-            126209
+            1771296343067809438,
+            126203
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 1040,
+            "translated_keys": 1041,
             "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0
@@ -7607,7 +7607,7 @@
         "cpp.json": {
           "sig": [
             1,
-            1771290761505156954,
+            1771296350007827310,
             58963
           ],
           "row": {
@@ -25323,7 +25323,7 @@
         [
           "client.json",
           1,
-          1771290709977191874,
+          1771296331779780895,
           15572
         ],
         [
@@ -25602,7 +25602,7 @@
         "client.json": {
           "sig": [
             1,
-            1771290709977191874,
+            1771296331779780895,
             15572
           ],
           "row": {

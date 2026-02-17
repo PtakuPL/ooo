@@ -1313,11 +1313,11 @@
   },
   "npc.kevin.say_46": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Nu il ai...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.051563Z"
+    "updated_at": "2026-02-17T11:54:19.942543Z"
   },
   "npc.lardoc_bashsmite.say_10": {
     "src_hash": "f5940523060652e3a7d9c269ce48de50",
@@ -62046,5 +62046,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:26:30.922435Z"
+  },
+  "npc.kasmir.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.904275Z"
+  },
+  "npc.kasmir.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.905281Z"
+  },
+  "npc.kasmir.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.906233Z"
+  },
+  "npc.kasmir.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.907044Z"
+  },
+  "npc.kasmir.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.907703Z"
+  },
+  "npc.kasmir.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.908572Z"
+  },
+  "npc.kasmir.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Aceasta este o binecuvântare specială pe care ți-o pot acorda odată ce ai obținut cel puțin una dintre celelalte binecuvântări și care funcționează puțin diferit. ... \\z\n\tFuncționează doar atunci când ești ucis de alți aventurieri, ceea ce înseamnă că cel puțin jumătate din daunele care au dus la moartea ta au fost cauzate de alții, nu de monștri sau de mediu. ... \\z\n\t{twist of fate} nu va reduce pedeapsa cu moartea la fel ca celelalte binecuvântări, ci, în schimb, vă va împiedica să vă pierdeți celelalte binecuvântări, precum și amuleta pierderii, dacă purtați una. Costa la fel ca si celelalte binecuvantari. ... \\z\n\tȚi-ar plăcea să primești acea protecție pentru un sacrificiu de |PVPBLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.912380Z"
+  },
+  "npc.kasmir.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vrei să înlocuiești gratis piatra de aventurier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.913149Z"
+  },
+  "npc.kasmir.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.913690Z"
+  },
+  "npc.kasmir.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vrei să înlocuiești piatra de aventurier cu 30 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.914968Z"
+  },
+  "npc.kasmir.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.915678Z"
+  },
+  "npc.kasmir.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.916288Z"
+  },
+  "npc.kendra.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.923100Z"
+  },
+  "npc.kendra.greet_msg_1": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.924223Z"
+  },
+  "npc.kendra.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.926718Z"
+  },
+  "npc.kendra.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.928219Z"
+  },
+  "npc.kendra.stdmod_5": {
+    "src_hash": "76d38af149c4d96a931e9bb3a7d2050e",
+    "text": "Am dori să vă urăm bun venit la bord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.929323Z"
+  },
+  "npc.kendra_thais.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.931486Z"
+  },
+  "npc.kendra_thais.greet_msg_1": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.932414Z"
+  },
+  "npc.kendra_thais.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.933425Z"
+  },
+  "npc.kendra_thais.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.934064Z"
+  },
+  "npc.kendra_thais.stdmod_5": {
+    "src_hash": "76d38af149c4d96a931e9bb3a7d2050e",
+    "text": "Am dori să vă urăm bun venit la bord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.934756Z"
+  },
+  "npc.khanna.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Deci îmi ceri un {{}} pentru a-ți începe aventura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.945689Z"
+  },
+  "npc.khanna.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Ce? Ți-am dat deja unul {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.947331Z"
+  },
+  "npc.khanna.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.948320Z"
+  },
+  "npc.king_tibianus.multi_1": {
+    "src_hash": "52ab9c4bdd0063e05461de7641aa6b4d",
+    "text": "Excelent! Acum, lasă-mă să explic. Dacă donați 1.000.000.000 de piese de aur, veți avea dreptul să purtați o ținută unică. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.950411Z"
+  },
+  "npc.king_tibianus.multi_3": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Ce va fi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.951129Z"
+  },
+  "npc.king_tibianus.say_10": {
+    "src_hash": "c3b7f6d809dff613b8443e33af06db32",
+    "text": "Luați această cască ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.953447Z"
+  },
+  "npc.king_tibianus.say_11": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nu ai suficienți bani pentru a dona acea sumă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.954875Z"
+  },
+  "npc.king_tibianus.say_12": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Ai deja acea ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.955750Z"
+  },
+  "npc.king_tibianus.say_13": {
+    "src_hash": "799b37c2b34f974ac0d9ff25bbba73f1",
+    "text": "Mai întâi trebuie să donezi {armor} ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.956727Z"
+  },
+  "npc.king_tibianus.say_14": {
+    "src_hash": "88ff45ecafedf4db47e12c033cbabb1b",
+    "text": "Luați aceste cizme ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.958423Z"
+  },
+  "npc.king_tibianus.say_15": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nu ai suficienți bani pentru a dona acea sumă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.959913Z"
+  },
+  "npc.king_tibianus.say_16": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Ai deja acea ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.960868Z"
+  },
+  "npc.king_tibianus.say_17": {
+    "src_hash": "1c2974aa5ece2c40315db395e71a13e5",
+    "text": "Mai întâi trebuie să donezi suplimentul {helmet}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.961541Z"
+  },
+  "npc.king_tibianus.say_19": {
+    "src_hash": "7346bd095953094daa8fe43a55c46780",
+    "text": "Așadar, ați dori să donați 500.000.000 de piese de aur care, în schimb, vă vor da dreptul să porți o armură unică?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.962694Z"
+  },
+  "npc.king_tibianus.say_20": {
+    "src_hash": "198357327b9821aea565dbe508d1d3c2",
+    "text": "Așadar, ați dori să donați 250.000.000 de piese de aur care, în schimb, vă vor da dreptul să purtați o cască unică?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.963924Z"
+  },
+  "npc.king_tibianus.say_21": {
+    "src_hash": "52d6e7e3f5eb1ef4e02292b7ce660565",
+    "text": "Așadar, ai dori să donezi 250.000.000 de piese de aur care, în schimb, îți vor da dreptul să porți cizme unice?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.964873Z"
+  },
+  "npc.king_tibianus.say_22": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Cuvânt greșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.965370Z"
+  },
+  "npc.king_tibianus.say_4": {
+    "src_hash": "21963d0b9e9a7fcd0f72df2f17e7a62c",
+    "text": "În schimbul unei donații cu adevărat generoase, voi oferi o ținută specială. Vrei să faci o donație?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:54:19.966662Z"
   }
 }

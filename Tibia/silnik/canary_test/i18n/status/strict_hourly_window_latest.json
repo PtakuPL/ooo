@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-17T10:53:40.272375Z",
-  "window_end_utc": "2026-02-17T11:53:40.272375Z",
+  "window_start_utc": "2026-02-17T10:54:58.028957Z",
+  "window_end_utc": "2026-02-17T11:54:58.028957Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 55,
+  "total_cycles": 57,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 55
+    "AUTO_TRANSLATE": 57
   },
-  "auto_translate_cycles": 55,
+  "auto_translate_cycles": 57,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 904,
-  "guard_fail": 1308,
-  "guard_fail_rate_pct": 59.1,
+  "translated": 1021,
+  "guard_fail": 1241,
+  "guard_fail_rate_pct": 54.9,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 518.5,
-  "suspicious_total": 2948,
+  "throughput_keys_per_h": 581.4,
+  "suspicious_total": 3754,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -49,18 +49,6 @@
       "guard_command": 0
     },
     {
-      "target": "ro/questlog.json",
-      "translated": 16,
-      "guard_fail": 34,
-      "guard_command": 0
-    },
-    {
-      "target": "it/questlog.json",
-      "translated": 17,
-      "guard_fail": 33,
-      "guard_command": 0
-    },
-    {
       "target": "ro/talkactions.json",
       "translated": 20,
       "guard_fail": 30,
@@ -70,6 +58,18 @@
       "target": "it/books.json",
       "translated": 22,
       "guard_fail": 28,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/achievements.json",
+      "translated": 22,
+      "guard_fail": 28,
+      "guard_command": 0
+    },
+    {
+      "target": "es/npc.json",
+      "translated": 25,
+      "guard_fail": 25,
       "guard_command": 0
     }
   ]

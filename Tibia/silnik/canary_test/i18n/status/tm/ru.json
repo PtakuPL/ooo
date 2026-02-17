@@ -35582,5 +35582,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:15:50.249080Z"
+  },
+  "npc.aurita.greet_msg_1": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Приветствую тебя, путник!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.671217Z"
+  },
+  "npc.avar_tar.greet_msg_1": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Приветствую тебя, путешественник |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.673102Z"
+  },
+  "npc.awarness_of_the_emperor.greet_msg_1": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Я здесь не для того, чтобы драться с тобой, дурак. Нравится вам это или нет, нам придется работать вместе, чтобы остановить катастрофу, которую инициировали вы и этот священник.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.675218Z"
+  },
+  "npc.awarness_of_the_emperor.greet_msg_2": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Приветствую тебя, смертный. Имейте в виду, что вы испытываете мое терпение, пока мы разговариваем.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.675855Z"
+  },
+  "npc.baa_leal.farewell_msg_1": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Отойди, солдат!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.680270Z"
+  },
+  "npc.bambi_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.681969Z"
+  },
+  "npc.bambi_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.682359Z"
+  },
+  "npc.bambi_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.682965Z"
+  },
+  "npc.barazbaz.greet_msg_1": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "О, привет!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.683351Z"
+  },
+  "npc.barbara.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "Да здравствует королева! Вы можете уйти сейчас!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.684530Z"
+  },
+  "npc.barbara.greet_1": {
+    "src_hash": "23f9be5bcded3ba8ae71b1126a8d5f00",
+    "text": "СЛАВА КОРОЛЕВЕ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.684846Z"
+  },
+  "npc.barbara.greet_2": {
+    "src_hash": "23f9be5bcded3ba8ae71b1126a8d5f00",
+    "text": "СЛАВА КОРОЛЕВЕ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.685275Z"
+  },
+  "npc.barbara.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.685888Z"
+  },
+  "npc.barnabas_dee.farewell_msg_1": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Береги себя, дитя",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.686353Z"
+  },
+  "npc.barnabas_dee.greet_msg_1": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Добро пожаловать в мою скромную обитель. Если вы пришли за новым колдуном {spells}, вы попали по адресу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:02.687156Z"
   }
 }

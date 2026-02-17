@@ -60254,5 +60254,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:23:24.865800Z"
+  },
+  "npc.prezil.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bene. Sei libero di rifiutare la mia offerta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.673799Z"
+  },
+  "npc.prezil.stdmod_20": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puoi chiedere la benedizione della protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.674597Z"
+  },
+  "npc.prezil.stdmod_21": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "I druidi a nord di Carlin ti forniranno l'abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.675199Z"
+  },
+  "npc.prezil.stdmod_22": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puoi chiedere la benedizione dei due soli nella torre solare vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.675849Z"
+  },
+  "npc.prezil.stdmod_23": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "La scintilla della fenice è data dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.676618Z"
+  },
+  "npc.prezil.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Questa è una benedizione speciale che posso concederti una volta ottenuta almeno una delle altre benedizioni e che funziona in modo leggermente diverso. ...\\z\n\tFunziona solo quando vieni ucciso da altri avventurieri, il che significa che almeno la metà del danno che ha portato alla tua morte è stato causato da altri, non da mostri o dall'ambiente. ...\\z\n\tLo {twist of fate} non ridurrà la pena di morte come le altre benedizioni, ma invece ti impedirà di perdere le tue altre benedizioni e l'amuleto della perdita, se ne indossi uno. Costa lo stesso delle altre benedizioni. ...\\z\n\tTi piacerebbe ricevere quella protezione per un sacrificio di |PVPBLESSCOST| oro, bambino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.678930Z"
+  },
+  "npc.prezil.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Conserva bene la tua pietra dell'avventuriero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.679377Z"
+  },
+  "npc.prezil.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vuoi sostituire gratuitamente la tua pietra dell'avventuriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.680146Z"
+  },
+  "npc.prezil.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.680538Z"
+  },
+  "npc.prezil.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vuoi sostituire la tua pietra dell'avventuriero per 30 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.681284Z"
+  },
+  "npc.prezil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.681719Z"
+  },
+  "npc.prezil.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Mi dispiace, non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.682624Z"
+  },
+  "npc.prisoner.voice_2": {
+    "src_hash": "0f0d2c4f84e9f85a56dd9a082cd3ce62",
+    "text": "Abbi pietà!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.683677Z"
+  },
+  "npc.pukosch.farewell_msg_1": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Spero di rivederti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.685343Z"
+  },
+  "npc.pukosch.greet_msg_1": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Benvenuto, |PLAYERNAME|! Ti senti avventuroso? Vuoi un {ticket} settimanale per il sistema dei carri minerari qui? Puoi usarlo proprio qui per raggiungere il centro di Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.686214Z"
+  },
+  "npc.pukosch.say_1": {
+    "src_hash": "78c8e8f1e0c24e044738d408a4bdd010",
+    "text": "Vuoi acquistare un abbonamento settimanale per i carri minerari? Con esso puoi viaggiare liberamente e velocemente attraverso Kazordoon per una settimana. Solo 250 oro. Affare?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.687006Z"
+  },
+  "npc.pukosch.say_2": {
+    "src_hash": "f861e7ec394314cc88a104df2e9bb60c",
+    "text": "Il tuo abbonamento settimanale è ancora valido. Acquistarne un secondo sarebbe uno spreco di soldi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.687609Z"
+  },
+  "npc.pukosch.say_3": {
+    "src_hash": "622d7ed7c7070fcb0a5487989b8ba4da",
+    "text": "Ecco il tuo timbro. Non può essere trasferito a un'altra persona e durerà una settimana da adesso. Riceverai una notifica quando utilizzi un carro minerario quando non sarà più valido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.688597Z"
+  },
+  "npc.pydar.stdmod_3": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Forse un'altra volta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.691655Z"
+  },
+  "npc.pydar.stdmod_30": {
+    "src_hash": "b127bf2a196d2758967ffd7116b161e1",
+    "text": "Parla con l'eremita Eremo sull'isola di Cormaya di questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.692161Z"
+  },
+  "npc.queen_eloise.multi_1": {
+    "src_hash": "52ab9c4bdd0063e05461de7641aa6b4d",
+    "text": "Eccellente! Ora, lasciatemi spiegare. Se donerai 1.000.000.000 di monete d'oro avrai diritto ad indossare un abito unico. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.695142Z"
+  },
+  "npc.queen_eloise.multi_2": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Cosa sarà?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.695485Z"
+  },
+  "npc.queen_eloise.multi_3": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Cosa sarà?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.695943Z"
+  },
+  "npc.queen_eloise.promote_success": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Congratulazioni! Ora sei promosso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.696372Z"
+  },
+  "npc.queen_eloise.say_1": {
+    "src_hash": "21963d0b9e9a7fcd0f72df2f17e7a62c",
+    "text": "In cambio di una donazione davvero generosa, offrirò un outfit speciale. Vuoi fare una donazione?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.697056Z"
+  },
+  "npc.queen_eloise.say_10": {
+    "src_hash": "799b37c2b34f974ac0d9ff25bbba73f1",
+    "text": "Devi prima donare il vestito {armor}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.697499Z"
+  },
+  "npc.queen_eloise.say_11": {
+    "src_hash": "88ff45ecafedf4db47e12c033cbabb1b",
+    "text": "Prendi questi stivali come segno di grande gratitudine. Ricordiamo per sempre questo giorno, amico mio. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.698031Z"
+  },
+  "npc.queen_eloise.say_12": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Non hai abbastanza soldi per donare tale importo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.698614Z"
+  },
+  "npc.queen_eloise.say_13": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Hai già quel vestito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.699010Z"
+  },
+  "npc.queen_eloise.say_14": {
+    "src_hash": "1c2974aa5ece2c40315db395e71a13e5",
+    "text": "Devi prima donare il componente aggiuntivo {helmet}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.699465Z"
+  },
+  "npc.queen_eloise.say_15": {
+    "src_hash": "7346bd095953094daa8fe43a55c46780",
+    "text": "Allora vorresti donare 500.000.000 di monete d'oro che in cambio ti daranno diritto ad indossare un'armatura unica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.700025Z"
+  },
+  "npc.queen_eloise.say_16": {
+    "src_hash": "198357327b9821aea565dbe508d1d3c2",
+    "text": "Quindi vorresti donare 250.000.000 di monete d'oro che in cambio ti daranno diritto a indossare un casco unico?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.700603Z"
+  },
+  "npc.queen_eloise.say_17": {
+    "src_hash": "52d6e7e3f5eb1ef4e02292b7ce660565",
+    "text": "Vorresti quindi donare 250.000.000 di monete d'oro che in cambio ti daranno diritto ad indossare uno stivale unico?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.701322Z"
+  },
+  "npc.queen_eloise.say_2": {
+    "src_hash": "c65af90ce2c9ecc9ed1080eb962ba346",
+    "text": "In tal caso, torna da me una volta che avrai deciso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.701798Z"
+  },
+  "npc.queen_eloise.say_3": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Prendi questa armatura come segno di grande gratitudine. Ricordiamo per sempre questo giorno, amico mio!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.702374Z"
+  },
+  "npc.queen_eloise.say_4": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Assicurati di avere spazi liberi nella casella di posta del tuo negozio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.702837Z"
+  },
+  "npc.queen_eloise.say_5": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Non hai abbastanza soldi per donare tale importo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.703309Z"
+  },
+  "npc.queen_eloise.say_6": {
+    "src_hash": "ee2bcc845502cad1564baad182aef32d",
+    "text": "Hai già quel componente aggiuntivo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.703823Z"
+  },
+  "npc.queen_eloise.say_7": {
+    "src_hash": "c3b7f6d809dff613b8443e33af06db32",
+    "text": "Prendi questo casco come segno di grande gratitudine. Ricordiamo per sempre questo giorno, amico mio. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.704389Z"
+  },
+  "npc.queen_eloise.say_8": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Non hai abbastanza soldi per donare tale importo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.704823Z"
+  },
+  "npc.queen_eloise.say_9": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Hai già quel vestito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:26:57.705246Z"
   }
 }

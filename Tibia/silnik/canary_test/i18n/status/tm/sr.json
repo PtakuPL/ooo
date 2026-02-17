@@ -167574,5 +167574,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:23:51.144306Z"
+  },
+  "data.otservbr.global.npc.cobra.L53.1172": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Крените путем пропадања!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:57.908634Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L256.315": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Надам се да се видимо ускоро.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:57.928100Z"
+  },
+  "data.otservbr.global.npc.testserver.assistant.L89.453": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Већ сте благословени.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:57.977641Z"
+  },
+  "data.otservbr.global.npc.walter.jaeger.L294.1181": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Уверите се да имате слободна места у пријемном сандучету продавнице.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:57.986189Z"
+  },
+  "data.otservbr.global.npc.ashari.L52.1581": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Здраво, странче! Мора да ти се ове пећине чине чудним. Питам се шта те доводи овде... можда те занима неки посао? Постоји неколико задатака са којима бих могла да помогнем.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:14.334327Z"
+  },
+  "data.otservbr.global.npc.ashari.L53.1582": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Ћао!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:14.334613Z"
+  },
+  "data.otservbr.global.npc.ashari.L54.1583": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Ћао!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:18.583935Z"
+  },
+  "data.otservbr.global.npc.atur.L77.728": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:18.584256Z"
+  },
+  "data.otservbr.global.npc.atur.L78.729": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:18.584503Z"
+  },
+  "data.otservbr.global.npc.aurita.L114.171": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Поздрав, путниче!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:18.584771Z"
   }
 }

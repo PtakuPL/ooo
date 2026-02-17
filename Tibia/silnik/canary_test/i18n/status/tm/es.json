@@ -145110,5 +145110,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:33:01.956445Z"
+  },
+  "questlog.quest_10.mission_10.state_3": {
+    "src_hash": "9e21da6fcc29ffa6c9847a3cf880135f",
+    "text": "Informe al director que haya elegido para ayudar y recibirá trajes Yalaharian.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:41:33.615691Z"
   }
 }

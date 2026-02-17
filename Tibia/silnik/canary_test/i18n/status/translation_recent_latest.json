@@ -1,104 +1,128 @@
 {
-  "timestamp": "2026-02-17T01:52:18.197584Z",
-  "language": "es",
+  "timestamp": "2026-02-17T01:54:17.856818Z",
+  "language": "pl",
   "json_file": "npc.json",
-  "translated": 16,
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
-      "source": "tm"
+      "key": "npc.lorietta.stdmod_5",
+      "en": "Here you are. Take care.",
+      "translated": "Proszę bardzo. Uważaj na siebie.",
+      "source": "simple"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "tm"
+      "key": "npc.lorietta.stdmod_8",
+      "en": "Here you are. Take care.",
+      "translated": "Proszę bardzo. Uważaj na siebie.",
+      "source": "simple"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "tm"
+      "key": "npc.lothar.greet_msg_1",
+      "en": "Welcome to my humble hut, |PLAYERNAME|. What brings you {here}?",
+      "translated": "Witaj w mojej skromnej chacie, |PLAYERNAME|. Co cię tu {here}?",
+      "source": "simple"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "npc.loui.farewell_msg_1",
+      "en": "May the gods protect you! And stay away from that hole!",
+      "translated": "Niech bogowie cię chronią! I trzymaj się z dala od tej dziury!",
+      "source": "simple"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "npc.loui.greet_msg_1",
+      "en": "BEWARE! Beware of that {hole}!",
+      "translated": "UWAGA! Uważaj na tę {hole}!",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "npc.loui.stdmod_28",
+      "en": "Harmless old woman.",
+      "translated": "Nieszkodliwy stary kobieta.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "npc.lubo.greet_msg_1",
+      "en": "Welcome to my adventurer shop, |PLAYERNAME|! What do you need? Ask me for a {trade} to look at my wares.",
+      "translated": "Witaj w moim sklepie dla poszukiwaczy przygód, |PLAYERNAME|! Czego potrzebujesz? Poproś o {trade}, by obejrzeć mój towar.",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "npc.lubo.say_10",
+      "en": "Great! Alright, I need a while to finish this backpack for you. Come ask me later, okay?",
+      "translated": "Świetnie! Dobrze, potrzebuję chwili, żeby dokończyć ten plecak dla ciebie. Wróć i zapytaj mnie później, okej?",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "npc.lubo.say_2",
+      "en": "Ah, right, almost forgot about the backpack! Have you brought me 100 pieces of minotaur leather as requested?",
+      "translated": "Ach, racja, prawie zapomniałam o plecaku! Przyniosłeś/przyniosłaś mi, tak jak prosiłam, 100 kawałków skóry minotaura?",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "npc.lubo.say_3",
+      "en": "Just in time! Your backpack is finished. Here you go, I hope you like it.",
+      "translated": "W samą porę! Twój plecak jest gotowy. Proszę, oto on, mam nadzieję, że ci się spodoba.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "npc.lubo.say_5",
+      "en": "Sorry, but I can only make one backpack per person, else I'd have to close my shop and open a leather manufactory.",
+      "translated": "Przykro mi, ale mogę zrobić tylko jeden plecak na osobę, inaczej musiałabym zamknąć sklep i otworzyć manufakturę skóry.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "npc.lubo.say_6",
+      "en": "Well, if you really like this backpack, I could make one for you, but minotaur leather is hard to come by these days. Are you willing to put some work into this?",
+      "translated": "Cóż, jeśli naprawdę podoba ci się ten plecak, mogłabym zrobić jeden dla ciebie, ale skórę minotaura ciężko dziś zdobyć. Chcesz włożyć w to trochę pracy?",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "npc.lubo.say_7",
+      "en": "Alright then, if you bring me 100 pieces of fine minotaur leather I will see what I can do for you. You probably have to kill really many minotaurs though... so good luck!",
+      "translated": "No dobrze, jeśli przyniesiesz mi 100 kawałków dobrej skóry minotaura, zobaczę, co da się zrobić. Pewnie będziesz musiał/musiała zabić naprawdę sporo minotaurów... powodzenia!",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "npc.lubo.say_8",
+      "en": "Sorry, but I don't run a welfare office, you know... no pain, no gain.",
+      "translated": "Wybacz, ale nie prowadzę biura pomocy społecznej, wiesz... bez bólu nie ma zysku.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "npc.lubo.say_9",
+      "en": "Sorry, but that's not enough leather yet to make one of these backpacks. Would you rather like to buy a normal backpack for 10 gold?",
+      "translated": "Przykro mi, ale to wciąż za mało skóry, żeby zrobić jeden z tych plecaków. Może wolisz kupić zwykły plecak za 10 sztuk złota?",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "npc.luna.greet_msg_1",
+      "en": "Greetings, traveller. Maybe you'd like to take a look at my {offers}...",
+      "translated": "Pozdrowienia, podróżniku. Może chcesz rzucić okiem na moje {offers}...",
+      "source": "simple"
+    },
+    {
+      "key": "npc.lynda.greet_msg_1",
+      "en": "Welcome in the name of the gods, pilgrim |PLAYERNAME|!",
+      "translated": "Witaj w imieniu bogów, pielgrzymie |PLAYERNAME|!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.maealil.farewell_1",
+      "en": "May the gods bless you, |PLAYERNAME|!",
+      "translated": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.maealil.farewell_msg_1",
+      "en": "May the gods bless you, |PLAYERNAME|!",
+      "translated": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.maealil.keyword_1",
+      "en": "So receive the protection of the twist of fate, pilgrim.",
+      "translated": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+      "source": "simple"
     }
   ]
 }

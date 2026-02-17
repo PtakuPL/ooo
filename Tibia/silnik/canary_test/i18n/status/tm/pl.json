@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:30:15.017726Z"
+    "updated_at": "2026-02-17T01:53:24.460531Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75269,7 +75269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:30:32.068306Z"
+    "updated_at": "2026-02-17T01:53:27.094221Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75277,7 +75277,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:30:32.068743Z"
+    "updated_at": "2026-02-17T01:53:27.094733Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75285,7 +75285,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:30:32.069141Z"
+    "updated_at": "2026-02-17T01:53:27.095183Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -103070,5 +103070,445 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:49:39.259689Z"
+  },
+  "item.14019.desc": {
+    "src_hash": "fc1bfb61e4688add46f9a06cbdb0c743",
+    "text": "Ta kotwica jest eteryczna i należała do kapitana, który dawno temu zatonął ze swoim statkiem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:32.263288Z"
+  },
+  "item.14019.name": {
+    "src_hash": "8c3c5a0e24351eb20de02143862c2553",
+    "text": "mała złota kotwica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:32.263557Z"
+  },
+  "item.14029.desc": {
+    "src_hash": "3500d6ce1988933c2a8673d623b83dd3",
+    "text": "Jest w nim w pełni rozwinięty kwiat zimnicy. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:32.263995Z"
+  },
+  "item.14030.desc": {
+    "src_hash": "629a7f57046555f4d80458c64f333eac",
+    "text": "Roślina w nim wygląda jak kwiat kwitnący zimą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:39.189252Z"
+  },
+  "item.14031.desc": {
+    "src_hash": "510b3f4228c1cf14292c7bd9c2f5d752",
+    "text": "Roślina w nim wygląda jak kwiat kwitnący zimą. Ziemia jest trochę sucha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:39.189702Z"
+  },
+  "item.14033.desc": {
+    "src_hash": "7192d6b8dbcf58360ff86a7ce1e8708f",
+    "text": "Znajduje się w nim w pełni rozwinięta roślina języka jaszczurki. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:39.190243Z"
+  },
+  "item.14034.desc": {
+    "src_hash": "348a51b0600ac64b0695498ee960c4b5",
+    "text": "Znajduje się w nim w pełni rozwinięty kwiat serca driady. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:39.190716Z"
+  },
+  "item.14035.desc": {
+    "src_hash": "81f135f61108b2f889855554e4b9a71f",
+    "text": "Znajduje się w nim w pełni rozwinięty kwiat królowej żaru. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:39.191182Z"
+  },
+  "item.14036.desc": {
+    "src_hash": "cd78f28792de267b8683e8e7778cf680",
+    "text": "Znajduje się w nim w pełni rozwinięty kwiat kwitnący o północy. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:46.878182Z"
+  },
+  "item.14037.desc": {
+    "src_hash": "21de8d2e3df7aebe3d49f73bc68a6470",
+    "text": "Znajduje się w nim w pełni rozwinięty kwiat wróżkowej tancerki. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:46.878710Z"
+  },
+  "item.14038.desc": {
+    "src_hash": "0bc5ac2b4e1b225a78e2bf8c4c7ce54a",
+    "text": "Znajduje się w nim w pełni rozwinięta roślina lucjanu palcowego. Ta roślina nie może już uschnąć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:46.879193Z"
+  },
+  "item.14051.desc": {
+    "src_hash": "962b9f323da46d4dc73fcf8480640ec4",
+    "text": "Substancja po chwili się rozpuści",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:46.879559Z"
+  },
+  "item.14066.desc": {
+    "src_hash": "5097cef6f1c662ea003a88e9e1dc052d",
+    "text": "Filigranowe etui wykonane z muszli. Wygląda na to, że z boku obudowy znajduje się mały zamek.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:46.880053Z"
+  },
+  "item.14152.desc": {
+    "src_hash": "67598f6a0a9a07cc5619c2b4d34d02f7",
+    "text": "W środku znajdują się małe szczeniaki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:55.187479Z"
+  },
+  "item.14156.desc": {
+    "src_hash": "882b90c9255a91937336187045f9561f",
+    "text": "Należy do Noodlesa, psa królewskiego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:55.187828Z"
+  },
+  "item.14157.desc": {
+    "src_hash": "9c82be8409b524a31df4d028b4355219",
+    "text": "Ten ciągły strumień wody wydaje się wystarczająco silny, aby przeciąć nawet najtwardszy materiał.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:55.188311Z"
+  },
+  "item.14162.desc": {
+    "src_hash": "ef6ca63c430d6e3bfdf7144ec4729e75",
+    "text": "Ten krwistoczerwony klejnot jest wciąż szorstki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:55.188647Z"
+  },
+  "item.14165.desc": {
+    "src_hash": "fd3552c39886db2debf3933f425d3433",
+    "text": "Ta skrzynia jest pełna skamieniałych koralowców. Należy go z czasem zablokować, w przeciwnym razie ulegnie korozji",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:53:55.189149Z"
+  },
+  "item.14166.desc": {
+    "src_hash": "d09d43bde11ada7b26331f3beb99fa62",
+    "text": "Ta skrzynia jest pełna skamieniałych koralowców. Należy go z czasem zablokować, w przeciwnym razie ulegnie korozji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:02.946470Z"
+  },
+  "item.14173.desc": {
+    "src_hash": "880b78b4c9740bdc29c3ba6419336e30",
+    "text": "Piszę tę trylogię o ciemności i śmierci, aby ostrzec świat przed złem czającym się w głębinach",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:02.946988Z"
+  },
+  "item.14174.desc": {
+    "src_hash": "3ef67566e087afacf0e4eb12e9a74fa1",
+    "text": "Ciemność chwyta stworzenia morskie, aby położyć kres wszystkim żywym istotom. Uważaj na tę czarną pustkę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:02.947531Z"
+  },
+  "item.14175.desc": {
+    "src_hash": "0f8c4804a7d5966efa67ade9398ca7cf",
+    "text": "Doprowadzili ich do szaleństwa i na skraj wyginięcia. Zagłada otaczającego ich świata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:02.948032Z"
+  },
+  "item.14176.desc": {
+    "src_hash": "d4d5f49565b5640695a3f9bd6f5f1070",
+    "text": "Te bazgroły są prawie nieczytelne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:02.948365Z"
+  },
+  "item.14176.name": {
+    "src_hash": "582f313605bda0e61ff57635515ad203",
+    "text": "notatki i współrzędne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:09.488341Z"
+  },
+  "item.14237.desc": {
+    "src_hash": "e651d792e0f39e1745df3e5f891c26ea",
+    "text": "Krzesło jest przywiązane do tej dziwnej maszyny. Możesz tego użyć, jeśli masz odpowiednie instrukcje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:09.488856Z"
+  },
+  "item.14241.desc": {
+    "src_hash": "05e5b3355feb1aa3b6fecd77190a330a",
+    "text": "Prawdziwe Serce Morza, wycięte przez Deeplingów w głębinach najgłębszej czerni. Czuje się zimno i bez życia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:09.489359Z"
+  },
+  "item.14253.desc": {
+    "src_hash": "0fff13d5e003f3299d662d4582cc1124",
+    "text": "Ten prowizoryczny bęben nie przetrwa długo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:09.489704Z"
+  },
+  "npc.lisander.greet_msg_1": {
+    "src_hash": "7c9a44fbee81a7f2ea36e355b65372b7",
+    "text": "Wolałbym, żeby mi nie przeszkadzać i zostawić mnie w {peace}. Mów krótko.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.321510Z"
+  },
+  "npc.lisander.say_3": {
+    "src_hash": "ca1cb9230c8ebfe2c7f5b120cca6c871",
+    "text": "Errrkss - kaszlu, kaszlu - co do... diabła wrzuciłeś do środka? Znikaj mi z oczu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.323421Z"
+  },
+  "npc.lorbas.greet_msg_1": {
+    "src_hash": "ad7a902e164149be3a4a215f7f0cfea2",
+    "text": "Witaj, drogi podróżniku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.329709Z"
+  },
+  "npc.lorietta.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.332783Z"
+  },
+  "npc.lorietta.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.333840Z"
+  },
+  "npc.lorietta.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.334424Z"
+  },
+  "npc.lorietta.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.345874Z"
+  },
+  "npc.lorietta.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.346584Z"
+  },
+  "npc.lorietta.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.347463Z"
+  },
+  "npc.lorietta.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.348725Z"
+  },
+  "npc.lothar.greet_msg_1": {
+    "src_hash": "959262dbf2c11b1b0a94e84d13606e40",
+    "text": "Witaj w mojej skromnej chacie, |PLAYERNAME|. Co cię tu {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.350816Z"
+  },
+  "npc.loui.farewell_msg_1": {
+    "src_hash": "ae6d100c5b4674e4f49badaaa2c62903",
+    "text": "Niech bogowie cię chronią! I trzymaj się z dala od tej dziury!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.367040Z"
+  },
+  "npc.loui.greet_msg_1": {
+    "src_hash": "0306d89d415cce7922a1d05d0f21cb26",
+    "text": "UWAGA! Uważaj na tę {hole}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.367983Z"
+  },
+  "npc.loui.stdmod_28": {
+    "src_hash": "0fcc3957c74d6ec5b7265a585268b1f8",
+    "text": "Nieszkodliwy stary kobieta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.375620Z"
+  },
+  "npc.lubo.greet_msg_1": {
+    "src_hash": "a50751bb10a3b51d4395f76efe466880",
+    "text": "Witaj w moim sklepie dla poszukiwaczy przygód, |PLAYERNAME|! Czego potrzebujesz? Poproś o {trade}, by obejrzeć mój towar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.383478Z"
+  },
+  "npc.lubo.say_10": {
+    "src_hash": "d5ded97668b3577c5a3a5f487d5e1121",
+    "text": "Świetnie! Dobrze, potrzebuję chwili, żeby dokończyć ten plecak dla ciebie. Wróć i zapytaj mnie później, okej?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.385046Z"
+  },
+  "npc.lubo.say_2": {
+    "src_hash": "b72e7f8fb14c914d28d67e2587789e92",
+    "text": "Ach, racja, prawie zapomniałam o plecaku! Przyniosłeś/przyniosłaś mi, tak jak prosiłam, 100 kawałków skóry minotaura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.388311Z"
+  },
+  "npc.lubo.say_3": {
+    "src_hash": "eb55d899c046f1ae90f82e6cdeffbcb4",
+    "text": "W samą porę! Twój plecak jest gotowy. Proszę, oto on, mam nadzieję, że ci się spodoba.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.389390Z"
+  },
+  "npc.lubo.say_5": {
+    "src_hash": "a422cba09f0199c184a1800b12dc405d",
+    "text": "Przykro mi, ale mogę zrobić tylko jeden plecak na osobę, inaczej musiałabym zamknąć sklep i otworzyć manufakturę skóry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.391150Z"
+  },
+  "npc.lubo.say_6": {
+    "src_hash": "848c7b73e272a8a1b769639e859d49e8",
+    "text": "Cóż, jeśli naprawdę podoba ci się ten plecak, mogłabym zrobić jeden dla ciebie, ale skórę minotaura ciężko dziś zdobyć. Chcesz włożyć w to trochę pracy?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.392687Z"
+  },
+  "npc.lubo.say_7": {
+    "src_hash": "f985eb8b80214d769af000c03e0301e1",
+    "text": "No dobrze, jeśli przyniesiesz mi 100 kawałków dobrej skóry minotaura, zobaczę, co da się zrobić. Pewnie będziesz musiał/musiała zabić naprawdę sporo minotaurów... powodzenia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.394006Z"
+  },
+  "npc.lubo.say_8": {
+    "src_hash": "469e693a0673803c34829dd52fdd320e",
+    "text": "Wybacz, ale nie prowadzę biura pomocy społecznej, wiesz... bez bólu nie ma zysku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.395136Z"
+  },
+  "npc.lubo.say_9": {
+    "src_hash": "9ff43a2d5c70bf1b382016e7f7050bf9",
+    "text": "Przykro mi, ale to wciąż za mało skóry, żeby zrobić jeden z tych plecaków. Może wolisz kupić zwykły plecak za 10 sztuk złota?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.396340Z"
+  },
+  "npc.luna.greet_msg_1": {
+    "src_hash": "17fe9a8867d6771bd75b2ddc7d49f7d7",
+    "text": "Pozdrowienia, podróżniku. Może chcesz rzucić okiem na moje {offers}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.417201Z"
+  },
+  "npc.lynda.greet_msg_1": {
+    "src_hash": "41a97395a5729feeab77ee7495736313",
+    "text": "Witaj w imieniu bogów, pielgrzymie |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.428861Z"
+  },
+  "npc.maealil.farewell_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.443359Z"
+  },
+  "npc.maealil.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.443870Z"
+  },
+  "npc.maealil.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:54:17.445538Z"
   }
 }

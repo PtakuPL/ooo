@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-17T07:19:29.763566Z",
+  "timestamp": "2026-02-17T07:20:31.835952Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 1330775,
     "heartbeat_at": "2026-02-17T07:19:06Z",
-    "heartbeat_age_s": 23.8,
+    "heartbeat_age_s": 85.8,
     "cycle": 339,
     "mode": "continuous",
     "category": "?",
@@ -12,10 +12,10 @@
   },
   "guardian": {
     "state": "degraded",
-    "throughput_per_h": 996.0,
-    "guard_fail_rate_pct": 29.7,
+    "throughput_per_h": 976.0,
+    "guard_fail_rate_pct": 29.3,
     "issues": [
-      "high_guard_fail_rate (29.7% > 15%)"
+      "high_guard_fail_rate (29.3% > 15%)"
     ]
   },
   "translation_kpi": {
@@ -67,9 +67,9 @@
     "reason": "decrease_high_fail_rate=29.7%"
   },
   "dispatch": {
-    "last_target": "ro:libs.json",
-    "cycle_counter": 1804,
-    "pending_total": 87,
+    "last_target": "it:libs.json",
+    "cycle_counter": 1805,
+    "pending_total": 38,
     "candidates": 177,
     "skipped_backoff": 14,
     "skipped_guard_fail": 0,
@@ -97,10 +97,10 @@
       ],
       "lang_completion": {
         "pl": 87.21,
-        "es": 84.19,
-        "ru": 49.6,
-        "ro": 38.5,
-        "it": 47.19,
+        "es": 84.24,
+        "ru": 49.65,
+        "ro": 38.59,
+        "it": 47.28,
         "sr": 44.01,
         "sv": 26.78
       }
@@ -392,7 +392,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-17T07:19:29.844550Z",
+    "statusd_live_snapshot_at_utc": "2026-02-17T07:20:31.902317Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -938,10 +938,10 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 693,
-    "translated_total": 22929,
-    "suspicious_high_total": 41677,
-    "suspicious_high_rate_pct": 181.765,
+    "entries": 689,
+    "translated_total": 22892,
+    "suspicious_high_total": 41584,
+    "suspicious_high_rate_pct": 181.653,
     "status": "spike",
     "severity": "critical",
     "worst_severity": "critical",
@@ -956,11 +956,11 @@
       },
       {
         "lang": "es",
-        "suspicious_high": 10974
+        "suspicious_high": 10886
       },
       {
         "lang": "pl",
-        "suspicious_high": 2701
+        "suspicious_high": 2696
       },
       {
         "lang": "it",
@@ -982,7 +982,7 @@
       },
       {
         "category": "npc.json",
-        "suspicious_high": 12600
+        "suspicious_high": 12518
       },
       {
         "category": "monsters.json",
@@ -1034,16 +1034,16 @@
       },
       {
         "lang": "es",
-        "suspicious_high": 10974,
-        "translated": 4851,
-        "rate_pct": 226.221,
+        "suspicious_high": 10886,
+        "translated": 4825,
+        "rate_pct": 225.617,
         "severity": "critical"
       },
       {
         "lang": "pl",
-        "suspicious_high": 2701,
-        "translated": 2960,
-        "rate_pct": 91.25,
+        "suspicious_high": 2696,
+        "translated": 2949,
+        "rate_pct": 91.421,
         "severity": "critical"
       },
       {
@@ -1078,9 +1078,9 @@
       },
       {
         "domain": "npc.json",
-        "suspicious_high": 12600,
-        "translated": 5664,
-        "rate_pct": 222.458,
+        "suspicious_high": 12518,
+        "translated": 5640,
+        "rate_pct": 221.95,
         "severity": "critical"
       },
       {
@@ -1156,22 +1156,22 @@
       "sv"
     ],
     "pending_key": "es,it,pl,ro,ru,sr,sv",
-    "cycle_counter": 1804,
+    "cycle_counter": 1805,
     "start_cycle": 818,
-    "cycle_delta": 986,
+    "cycle_delta": 987,
     "started_at": "2026-02-16T22:15:50.792950Z",
-    "active_minutes": 543.65,
+    "active_minutes": 544.684,
     "baseline_quality_rate_pct": 228.112,
-    "current_quality_rate_pct": 181.765,
+    "current_quality_rate_pct": 181.653,
     "best_quality_rate_pct": 166.811,
-    "quality_drop_pct": 46.347,
+    "quality_drop_pct": 46.459,
     "best_quality_drop_pct": 61.301,
     "lang_completion": {
       "pl": 87.21,
-      "es": 84.19,
-      "ru": 49.6,
-      "ro": 38.5,
-      "it": 47.19,
+      "es": 84.24,
+      "ru": 49.65,
+      "ro": 38.59,
+      "it": 47.28,
       "sr": 44.01,
       "sv": 26.78
     },

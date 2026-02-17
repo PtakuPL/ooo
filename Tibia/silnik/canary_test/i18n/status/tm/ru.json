@@ -34126,5 +34126,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:17:43.346313Z"
+  },
+  "globalevents.save_interval.complete_plural": {
+    "src_hash": "713aad5758d57fc11f0ed6893211996b",
+    "text": "Сохранение сервера завершено. Следующее сохранение через %s %ss!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:41.569221Z"
+  },
+  "globalevents.save_interval.complete_singular": {
+    "src_hash": "0af56522408580ddef1c9721cf8cad91",
+    "text": "Сохранение сервера завершено. Следующее сохранение через %s %s!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:41.570629Z"
+  },
+  "globalevents.online_record": {
+    "src_hash": "61601b90ebd05b9654009190617e9037",
+    "text": "Новый рекорд: %s игроков вошли в систему.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:42.641662Z"
   }
 }

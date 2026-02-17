@@ -56582,5 +56582,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:17:00.847225Z"
+  },
+  "lib.player.loyalty_title_6": {
+    "src_hash": "3565d675e7e3e8a0c335110aab098b94",
+    "text": "Guerriero di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:57.672868Z"
+  },
+  "lib.player.loyalty_title_7": {
+    "src_hash": "d0d1197accc46c113ddf321715d3dc73",
+    "text": "Custode di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:57.673454Z"
+  },
+  "lib.player.loyalty_title_8": {
+    "src_hash": "51243a5dd0c8f1f3781c5a10b0ca6274",
+    "text": "Guardiano di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:57.673950Z"
+  },
+  "lib.player.loyalty_title_9": {
+    "src_hash": "5cfd7d039312bf87947fc6d23328ba6e",
+    "text": "Saggio di Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:57.674441Z"
+  },
+  "lib.player.msg1": {
+    "src_hash": "70e1805b803ae7b2ba2119ad2d5d4500",
+    "text": "L'importo dell'articolo è errato, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:02.083833Z"
+  },
+  "lib.player.msg3": {
+    "src_hash": "b62304fa1ffa58d5ef2ddcd033a8948c",
+    "text": "L'articolo premio è sbagliato, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:02.084292Z"
+  },
+  "lib.player.msg_1": {
+    "src_hash": "b62304fa1ffa58d5ef2ddcd033a8948c",
+    "text": "L'articolo premio è sbagliato, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:02.084683Z"
+  },
+  "lib.player.msg_3": {
+    "src_hash": "70e1805b803ae7b2ba2119ad2d5d4500",
+    "text": "L'importo dell'articolo è errato, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:02.085089Z"
+  },
+  "lib.player.msg_found_item": {
+    "src_hash": "5bc1c770318bc16688474ebce58036c7",
+    "text": "Hai trovato un {itemName}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:02.085393Z"
+  },
+  "lib.player.msg_found_no_room": {
+    "src_hash": "c9499e120b66fd0fae028c209ce3d8d0",
+    "text": "Hai trovato un {itemName}, ma non hai spazio per prenderlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:07.374296Z"
+  },
+  "lib.player.msg_found_too_heavy": {
+    "src_hash": "e4d00b7f259b906fef99fce9909c1ebe",
+    "text": "Hai trovato un {itemName}. Con un peso di {weight} oz, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:07.374785Z"
+  },
+  "lib.player.msg_monster_not_found": {
+    "src_hash": "dd4b132c13641042c97da481798fb2fc",
+    "text": "Mostro non trovato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:07.375028Z"
+  },
+  "lib.player.msg_no_other_summons": {
+    "src_hash": "f8bfd1361103ea1a8a59f9cc8731aca3",
+    "text": "Non puoi avere altre convocazioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:07.375387Z"
+  },
+  "lib.player.msg_paid_inventory": {
+    "src_hash": "213135402a56d93835c1ed7a79149928",
+    "text": "Pagato {amount} oro dall'inventario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:13.210337Z"
+  },
+  "lib.quests.msg1": {
+    "src_hash": "3a8b46b6187246602db4445aed35296d",
+    "text": "Il tuo registro delle missioni è stato aggiornato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:13.211004Z"
+  },
+  "lib.quests.msg_updated": {
+    "src_hash": "3a8b46b6187246602db4445aed35296d",
+    "text": "Il tuo registro delle missioni è stato aggiornato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:13.211337Z"
+  },
+  "lib.soul_war.msg1": {
+    "src_hash": "05b201a3d4df50623b0843236820b860",
+    "text": "Hai guadagnato il ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:19.686877Z"
+  },
+  "lib.their_masters_voice.say_1": {
+    "src_hash": "58b351493343b9b5dd577ffd4f62a910",
+    "text": "VENIRE! I miei servi! SALITA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:19.687177Z"
+  },
+  "lib.their_masters_voice.say_2": {
+    "src_hash": "0f566a18b8140a810eea067ede21ea0e",
+    "text": "Hai inghiottito abbastanza melma da riuscire ad avere una buona presa sul pavimento scivoloso di questo dungeon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:19.687623Z"
+  },
+  "lib.their_masters_voice.say_3": {
+    "src_hash": "f2cff31321f293cfaeafe3834add58bb",
+    "text": "Il divoratore di melma divora grossi pezzi del fungo melmoso con grande soddisfazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:19.688097Z"
+  },
+  "lib.vip.msg1": {
+    "src_hash": "03278cc9bc5c69ee894aaa8213e03074",
+    "text": "Il tuo stato VIP è scaduto. Tutti i vantaggi VIP sono stati rimossi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:19.688542Z"
+  },
+  "lib.vip.msg2": {
+    "src_hash": "0e4d8cc238d8f1ecb4331c973d5d33bf",
+    "text": "Hai uno status VIP illimitato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:25.056383Z"
+  },
+  "lib.vip.msg3": {
+    "src_hash": "3e8a081024cb53ed57fe2da8cd4c9b16",
+    "text": "Il tuo stato VIP è attualmente inattivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:25.056748Z"
+  },
+  "lib.vip.msg_expired": {
+    "src_hash": "03278cc9bc5c69ee894aaa8213e03074",
+    "text": "Il tuo stato VIP è scaduto. Tutti i vantaggi VIP sono stati rimossi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:25.057188Z"
+  },
+  "lib.vip.msg_granted": {
+    "src_hash": "3f219dcd31cad1e6380a1ff606f3eec5",
+    "text": "Ti sono stati concessi {days} giorni di stato VIP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:25.057549Z"
+  },
+  "lib.vip.msg_inactive": {
+    "src_hash": "3e8a081024cb53ed57fe2da8cd4c9b16",
+    "text": "Il tuo stato VIP è attualmente inattivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:25.057889Z"
+  },
+  "lib.vip.msg_remaining": {
+    "src_hash": "3e29108a44876517f25e6f1c6d78492f",
+    "text": "Hai {time} di tempo VIP rimanente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:31.781143Z"
+  },
+  "lib.vip.msg_unlimited": {
+    "src_hash": "0e4d8cc238d8f1ecb4331c973d5d33bf",
+    "text": "Hai uno status VIP illimitato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:31.781468Z"
+  },
+  "misc.compat.msg_1": {
+    "src_hash": "557c8cc08c97134aa5959bb081ae55a2",
+    "text": "Sei già in una festa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:31.781795Z"
+  },
+  "misc.daily_reward.msg_1": {
+    "src_hash": "c7837b98e38b5a76905046080e0f2ec9",
+    "text": "Un minuto di resistenza è stato ricaricato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:31.782170Z"
+  },
+  "misc.daily_reward.msg_2": {
+    "src_hash": "45b4f7e1effacb1929a28e3d56a24129",
+    "text": "Un punto anima è stato ripristinato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:31.782489Z"
+  },
+  "misc.functions.msg_1": {
+    "src_hash": "992b3e68e66a27e80e942e6247011fd3",
+    "text": "Sei stato preso a calci per aver superato il tempo trascorso nella stanza del boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:36.272479Z"
+  },
+  "misc.hireling.msg_1": {
+    "src_hash": "d3677b4a244db7874e0f34804cd22d9b",
+    "text": "Non sei il padrone di questo mercenario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:36.272807Z"
+  },
+  "rune.msg_cannot_control_more": {
+    "src_hash": "d1aecbe926f46087e00e677738916ee6",
+    "text": "Non puoi controllare più creature.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:36.273313Z"
   }
 }

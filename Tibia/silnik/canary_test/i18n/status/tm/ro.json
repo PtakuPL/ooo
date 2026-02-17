@@ -50838,5 +50838,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:18:42.562959Z"
+  },
+  "creaturescripts.boss_defeated": {
+    "src_hash": "5800ef916c711735130b2de1f701dc04",
+    "text": "{name} a fost învins. Aveți la dispoziție {seconds} secunde pentru a părăsi camera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:50.602694Z"
+  },
+  "creaturescripts.empty_parcels_removed": {
+    "src_hash": "a063b69958e3dab361b556d34f36f2d7",
+    "text": "{count} pachetele goale au fost eliminate din căsuța de e-mail a magazinului dvs.!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:20:50.603175Z"
   }
 }

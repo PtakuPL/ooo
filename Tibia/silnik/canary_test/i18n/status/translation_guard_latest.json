@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T07:18:43.750311Z",
-  "cycle": 339,
+  "timestamp": "2026-02-17T07:20:51.373538Z",
+  "cycle": 340,
   "language": "ro",
-  "json_file": "libs.json",
-  "translated": 48,
+  "json_file": "creaturescripts.json",
+  "translated": 2,
   "placeholders": 0,
-  "guard_fail": 2,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 4
+  "strict_skipped_done": 2
 }

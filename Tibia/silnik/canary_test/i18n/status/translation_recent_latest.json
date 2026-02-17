@@ -1,128 +1,20 @@
 {
-  "timestamp": "2026-02-17T07:19:03.824034Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 51,
+  "timestamp": "2026-02-17T07:20:50.688735Z",
+  "language": "ro",
+  "json_file": "creaturescripts.json",
+  "translated": 2,
   "entries": [
     {
-      "key": "npc.willard.farewell_msg_1",
-      "en": "Farewell, |PLAYERNAME|.",
-      "translated": "Adiós, |PLAYERNAME|.",
-      "source": "simple"
+      "key": "creaturescripts.boss_defeated",
+      "en": "The {name} has been defeated. You have {seconds} seconds to leave the room.",
+      "translated": "{name} a fost învins. Aveți la dispoziție {seconds} secunde pentru a părăsi camera.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.willard.greet_msg_1",
-      "en": "Greetings and Banor be with you, |PLAYERNAME|! May I interest you in a {trade} for weapons, ammunition or armor?",
-      "translated": "¡Saludos y Banor esté contigo, |PLAYERNAME|! ¿Puedo interesarle un {trade} para armas, municiones o armaduras?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.willard.sendtrade_msg_1",
-      "en": "Of course, just browse through my wares. If you're only interested in {distance} equipment, let me know.",
-      "translated": "Por supuesto, simplemente navega por mis productos. Si solo está interesado en el equipo {distance}, hágamelo saber.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.willard.walkaway_msg_1",
-      "en": "Farewell, |PLAYERNAME|.",
-      "translated": "Adiós, |PLAYERNAME|.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.willie.farewell_msg_1",
-      "en": "Yeah, bye |PLAYERNAME|.",
-      "translated": "Sí, adiós |PLAYERNAME|.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.willie.sendtrade_msg_1",
-      "en": "Ya take a good look.",
-      "translated": "Echa un buen vistazo.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.willie.walkaway_msg_1",
-      "en": "Yeah go away!",
-      "translated": "¡Sí, vete!",
-      "source": "simple"
-    },
-    {
-      "key": "npc.woblin.greet_msg_1",
-      "en": "Hi there human!",
-      "translated": "¡Hola humano!",
-      "source": "simple"
-    },
-    {
-      "key": "npc.wyda.greet_msg_1",
-      "en": "What? A mundane talking to me? Amusing.",
-      "translated": "¿Qué? ¿Un mundano hablándome? Divertido.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.wyrdin.farewell_msg_1",
-      "en": "Good luck for your travels, |PLAYERNAME|.",
-      "translated": "Buena suerte en tus viajes, |PLAYERNAME|.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.wyrdin.greet_msg_1",
-      "en": "Hello, what brings you here?",
-      "translated": "Hola, ¿qué te trae por aquí?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.xelvar.greet_msg_1",
-      "en": "Greetings. Are you interested in adventures?",
-      "translated": "Saludos. ¿Estás interesado en las aventuras?",
-      "source": "simple"
-    },
-    {
-      "key": "npc.xorlosh.farewell_msg_1",
-      "en": "See you my friend.",
-      "translated": "Nos vemos amigo.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.xorlosh.greet_msg_1",
-      "en": "Who are you? Are you a genius in mechanics? You don't look like one.",
-      "translated": "¿Quién eres? ¿Eres un genio en mecánica? No lo pareces.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.xorlosh.walkaway_msg_1",
-      "en": "See you my friend.",
-      "translated": "Nos vemos amigo.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.yaman.farewell_msg_1",
-      "en": "Farewell, human.",
-      "translated": "Adiós, humano.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.yaman.walkaway_msg_1",
-      "en": "Farewell, human.",
-      "translated": "Adiós, humano.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.yonan.say_2",
-      "en": "Here is the list with the missing ingredients to complete the ritual.",
-      "translated": "Aquí tienes la lista con los ingredientes que faltan para completar el ritual.",
-      "source": "simple"
-    },
-    {
-      "key": "npc.yonan.say_4",
-      "en": "Did you bring all the materials I informed you about? ",
-      "translated": "¿Trajiste todos los materiales de los que te informé? ",
-      "source": "simple"
-    },
-    {
-      "key": "npc.zalamon.greet_msg_1",
-      "en": "Not many travellerzz zzezze dayzz. I hope you bring good newzz.",
-      "translated": "No hay muchos viajeroszz zzezze dayzz. Espero que traigas buenas noticias.",
-      "source": "simple"
+      "key": "creaturescripts.empty_parcels_removed",
+      "en": "{count} empty parcels were removed from your store inbox!",
+      "translated": "{count} pachetele goale au fost eliminate din căsuța de e-mail a magazinului dvs.!",
+      "source": "google_translate"
     }
   ]
 }

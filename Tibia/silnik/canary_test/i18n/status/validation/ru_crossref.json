@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 37.2,
+  "coverage_pct": 37.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T01:50:33.120480Z",
-  "issues_total": 106,
+  "checked_at": "2026-02-17T02:12:14.044622Z",
+  "issues_total": 105,
   "issues_by_type": {
     "consistency_in_language": 50,
-    "pl_reference_missing_translation": 32,
+    "pl_reference_missing_translation": 31,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -841,15 +841,6 @@
       "lang": "! ..."
     },
     {
-      "key": "scripts.info.speed",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Speed: ",
-      "pl": "Szybkość: ",
-      "lang": "Speed: "
-    },
-    {
       "key": "data.otservbr.global.npc.arkarra.L54.501",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1066,22 +1057,22 @@
       "lang": "The"
     },
     {
-      "key": "spell.root_wave.name",
+      "key": "spell.burning_gladiator_firex.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "root wave",
-      "pl": "fala korzeniowa",
-      "lang": "root wave"
+      "en": "firex",
+      "pl": "ogień",
+      "lang": "firex"
     },
     {
-      "key": "spell.warden_x.name",
+      "key": "spell.burning_gladiator_firering.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "warden x",
-      "pl": "naczelnik x",
-      "lang": "warden x"
+      "en": "firering",
+      "pl": "strzelanie",
+      "lang": "firering"
     }
   ],
   "length_ratio_issues": [
@@ -1303,8 +1294,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 32,
-    "applied": 3,
+    "attempted": 31,
+    "applied": 2,
     "skipped": 29,
     "errors": 0
   }

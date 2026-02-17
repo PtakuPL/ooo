@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T04:23:44.758438Z",
-  "cycle_counter": 1505,
-  "last_target_key": "pl:php.json",
-  "last_pending_total": 6,
+  "timestamp": "2026-02-17T04:24:41.647087Z",
+  "cycle_counter": 1508,
+  "last_target_key": "pl:startup.json",
+  "last_pending_total": 9,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 193,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 236,
+  "cache_cycle": 237,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -154,7 +154,7 @@
     "es:events.json": 0,
     "de:html.json": 0,
     "de:spells.json": 0,
-    "pl:talkactions.json": 1,
+    "pl:talkactions.json": 2,
     "de:otclient_modules.json": 0,
     "de:actions.json": 0,
     "de:raids.json": 0,
@@ -388,8 +388,8 @@
       "ru": 38.0,
       "ro": 24.42,
       "it": 15.48,
-      "sr": 11.56,
-      "sv": 9.36
+      "sr": 11.65,
+      "sv": 9.4
     }
   }
 }

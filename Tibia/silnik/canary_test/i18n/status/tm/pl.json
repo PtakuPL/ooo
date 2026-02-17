@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:53:24.460531Z"
+    "updated_at": "2026-02-17T03:05:12.529794Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75269,7 +75269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:53:27.094221Z"
+    "updated_at": "2026-02-17T03:05:15.096151Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75277,7 +75277,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:53:27.094733Z"
+    "updated_at": "2026-02-17T03:05:15.096609Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75285,7 +75285,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:53:27.095183Z"
+    "updated_at": "2026-02-17T03:05:15.097010Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -106398,5 +106398,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:54:20.484965Z"
+  },
+  "item.14255.desc": {
+    "src_hash": "a9622b483cc406db64b4249bdff91533",
+    "text": "Bęben nadal wibruje i nie jest gotowy do użycia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:20.806148Z"
+  },
+  "item.14671.name": {
+    "src_hash": "ca0aebba1633318c38ac742f90b93ac8",
+    "text": "Trofeum złotego robaka Delany'ego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:20.806469Z"
+  },
+  "item.14672.name": {
+    "src_hash": "cb14b58a34fe229b504dab56fc5b4fdc",
+    "text": "Złote trofeum Bolfrima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:20.806810Z"
+  },
+  "item.14673.name": {
+    "src_hash": "30c127240064b711cf1c7311ec25d406",
+    "text": "Trofeum złotego robaka Siramala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:27.456345Z"
+  },
+  "item.14681.desc": {
+    "src_hash": "c372481b5891e946dab650e9d60c9ac3",
+    "text": "Został stworzony przez najlepszych piekarzy Tibia z okazji 15-lecia Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:27.456927Z"
+  },
+  "item.14682.desc": {
+    "src_hash": "1481c5a049b02850e99ef99d46e4c402",
+    "text": "Nikt tak naprawdę nie wie, dokąd to prowadzi, ale cmentarz smoków może ujawnić tajemnicę – lub nie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:27.457457Z"
+  },
+  "item.14686.desc": {
+    "src_hash": "e57c59719f10fcf7a8713a6c6e3e5d09",
+    "text": "Z końcówki kapie farba",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:27.457758Z"
+  },
+  "item.14691.desc": {
+    "src_hash": "c9cb7bf0b3ee74327c65c8ff9cea1fb3",
+    "text": "Został namalowany w stylu Penciljacka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:27.458150Z"
+  },
+  "item.14693.desc": {
+    "src_hash": "4473fdb957883a33fce958d5875b211a",
+    "text": "Został namalowany w stylu Penciljacka. Niestety, na tym obrazie jest trochę niebieskich pikseli",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:35.125385Z"
+  },
+  "item.14695.desc": {
+    "src_hash": "e47a1e92ea70c289d123064c422f0b96",
+    "text": "Został namalowany w stylu Lyxopha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:35.125724Z"
+  },
+  "item.14697.desc": {
+    "src_hash": "d91347f4625ec77a00bde99f87ac0d82",
+    "text": "Został namalowany w stylu Lyxopha. Niestety w tym kawałku jest trochę niebieskich pikseli",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:35.126263Z"
+  },
+  "item.14741.desc": {
+    "src_hash": "86c17cf65a037e89887a3ac5d0b8ad43",
+    "text": "Użyj go w swoim domu, aby zbudować sztalugi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:35.126636Z"
+  },
+  "item.14750.desc": {
+    "src_hash": "8c661f7846c625d687a687bf6a40c57d",
+    "text": "Skorzystaj z niego i zrób małą niespodziankę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:35.127123Z"
+  },
+  "item.14756.desc": {
+    "src_hash": "502aa3f6387a8aa8f6aef4c3fa1cb124",
+    "text": "Użyj go w swoim domu, aby zbudować szafkę na ciasta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:42.980601Z"
+  },
+  "item.14757.desc": {
+    "src_hash": "0ef3687f7874fac1420fa72b7fbc09e4",
+    "text": "Wkrótce wyklują się młode smoki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:42.980933Z"
+  },
+  "item.14758.desc": {
+    "src_hash": "410e4a888c40573d3f06266adf202ede",
+    "text": "Użycie tego zwoju jednorazowo doda 30 dni czasu premium do Twojego konta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:42.981364Z"
+  },
+  "item.14759.desc": {
+    "src_hash": "c4100320883c728a8fdc054c8226cdfc",
+    "text": "Skorzystaj z niego i zrób małą niespodziankę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:42.981750Z"
+  },
+  "item.14760.desc": {
+    "src_hash": "234ede9831e1902a0c3fde8ec8683ebc",
+    "text": "To jest symbol mądrości. Zostało przyznane przez TibiaStat.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:42.982479Z"
+  },
+  "item.14762.desc": {
+    "src_hash": "55ce058c7a749973063cc5fdd638a4be",
+    "text": "Widzisz czaszkę meduzy. Węże w jej włosach wciąż żyją. Przyznawane wyłącznie na TibiaPic.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:51.228012Z"
+  },
+  "item.14766.desc": {
+    "src_hash": "75210bdf6b2dabcc0573513ac7c67a22",
+    "text": "Ta wspaniała tarcza została zaprojektowana dla GuildStats.eu, aby uhonorować wszystkie gildie w Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:51.228747Z"
+  },
+  "item.14769.name": {
+    "src_hash": "472e83baa067375f186c4b022f1981d5",
+    "text": "księga zaklęć starożytnych Arkanów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:51.229077Z"
+  },
+  "item.15276.desc": {
+    "src_hash": "66fdfbe414a7f182fff9d4d395cd27dc",
+    "text": "Trofeum to zostało przyznane na cześć najwybitniejszych architektów w Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:51.229558Z"
+  },
+  "item.15632.desc": {
+    "src_hash": "a043c7fc42dc56dc97fd39d71945c795",
+    "text": "Ktoś wywrócił sprawę do góry nogami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:57.288409Z"
+  },
+  "item.15696.name": {
+    "src_hash": "929fa9a99d72d90981e2b8e72b9f6553",
+    "text": "gnomski kryształ ekstrakcyjny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:57.288701Z"
+  },
+  "item.15697.name": {
+    "src_hash": "e34899059c8e2eee597cba7f6a447fe2",
+    "text": "gnomi kryształ rezonansowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:57.289009Z"
+  },
+  "item.15698.name": {
+    "src_hash": "e548916dd22fc7b8549694b2bda037c9",
+    "text": "pakiet zaopatrzenia gnomów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:05:57.289268Z"
   }
 }

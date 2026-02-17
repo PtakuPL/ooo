@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T03:04:07.560101Z",
-  "cycle_counter": 1356,
-  "last_target_key": "ro:messages.json",
-  "last_pending_total": 9,
-  "last_tier": 2,
-  "last_cat_priority": 9,
-  "candidates_count": 194,
-  "active_candidates_count": 183,
+  "timestamp": "2026-02-17T03:06:00.393336Z",
+  "cycle_counter": 1358,
+  "last_target_key": "pl:npc.json",
+  "last_pending_total": 7459,
+  "last_tier": 1,
+  "last_cat_priority": 1,
+  "candidates_count": 193,
+  "active_candidates_count": 182,
   "skipped_backoff": 11,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 184,
+  "cache_cycle": 185,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -330,7 +330,8 @@
     "pl:npclib.json": 0,
     "ro:talkactions.json": 0,
     "it:libs.json": 0,
-    "ru:chatchannels.json": 0
+    "ru:chatchannels.json": 0,
+    "ro:messages.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -384,9 +385,9 @@
     "lang_completion": {
       "pl": 46.2,
       "es": 74.64,
-      "ru": 37.47,
-      "ro": 23.18,
-      "it": 14.21,
+      "ru": 37.49,
+      "ro": 23.2,
+      "it": 14.3,
       "sr": 11.2,
       "sv": 9.12
     }

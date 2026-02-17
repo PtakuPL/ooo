@@ -35646,5 +35646,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:04:20.038527Z"
+  },
+  "npc.emael.say_3": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.034140Z"
+  },
+  "npc.emperor_kruzak.say_4": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.040361Z"
+  },
+  "npc.king_tibianus.say_7": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.285180Z"
+  },
+  "npc.lokur.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.313957Z"
+  },
+  "npc.luna.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.330004Z"
+  },
+  "npc.murim.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.377331Z"
+  },
+  "npc.muzir.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.378328Z"
+  },
+  "npc.ninos.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Buna ziua. Cum te pot ajuta |PLAYERNAME|? Cere-mi un {trade} dacă vrei să cumperi ceva. Pot explica și sistemul {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.395833Z"
+  },
+  "npc.norma.farewell_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.400436Z"
+  },
+  "npc.obi.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.404852Z"
+  },
+  "npc.olrik.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Buna ziua. Cum te pot ajuta |PLAYERNAME|? Cere-mi un {trade} dacă vrei să cumperi ceva. Pot explica și sistemul {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.413185Z"
+  },
+  "npc.paulie.greet_msg_2": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.442296Z"
+  },
+  "npc.queen_eloise.say_4": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.468559Z"
+  },
+  "npc.raffael.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.477113Z"
+  },
+  "npc.rashid.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.485495Z"
+  },
+  "npc.rashid_custom.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Întoarce-te curând!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.489661Z"
+  },
+  "npc.rokyn.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.503057Z"
+  },
+  "npc.rowenna.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.508162Z"
+  },
+  "npc.rudolph.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.508802Z"
+  },
+  "npc.sarina.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.518532Z"
+  },
+  "npc.shiantis.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.534515Z"
+  },
+  "npc.shiantis.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.535361Z"
+  },
+  "npc.siestaar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.543495Z"
+  },
+  "npc.sissek.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.552425Z"
+  },
+  "npc.suzy.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.568408Z"
+  },
+  "npc.tesha.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.584615Z"
+  },
+  "npc.turvy.sendtrade_msg_1": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Desigur, doar răsfoiți ofertele mele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.613480Z"
+  },
+  "npc.virgil.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.641241Z"
+  },
+  "npc.walter_jaeger.store_inbox_full": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.644981Z"
+  },
+  "npc.wentworth.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.647151Z"
+  },
+  "npc.znozel.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Da? Ce pot face pentru tine, |PLAYERNAME|? Afaceri bancare, poate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.691114Z"
+  },
+  "npc.zora.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, te rog intră, |PLAYERNAME|. Cu ce ​​vă pot ajuta? Dacă aveți nevoie de echipament de aventură, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:33.692871Z"
+  },
+  "npc.a_dead_bureaucrat4.say_1": {
+    "src_hash": "607d8b9a0101890da602c6e0916a8755",
+    "text": "{}, așa-i?! Ce vrei de la mine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:36.362044Z"
+  },
+  "npc.a_dead_bureaucrat4.say_3": {
+    "src_hash": "3633424b018ff3b8100d839f33e33641",
+    "text": "Ne pare rău, aveți nevoie de Formularul 145 pentru a obține Formularul 356. Reveniți când îl aveți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:36.362650Z"
+  },
+  "npc.a_dead_bureaucrat4.say_4": {
+    "src_hash": "24f586b8d7515e7a84049f7c33e2cf15",
+    "text": "Esti mai bun decat credeam! Felicitări, iată-te: Formularul 356!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:36.363073Z"
+  },
+  "npc.a_dragon_mother.multi_1": {
+    "src_hash": "1ca96232d26ea181d5ac0bab5436446b",
+    "text": "După cum ți-am spus, creaturi diabolice de gheață mi-au târât oul în peșterile de jos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:36.363544Z"
+  },
+  "npc.a_dragon_mother.multi_2": {
+    "src_hash": "4c97970717def7c721c5c834b12248aa",
+    "text": "Fără suficientă căldură, oul va muri în curând. Îndrăznește-te acolo și salvează-mi puiul și cunoștințele pe care le cauți vor fi ale tale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:40.021679Z"
+  },
+  "npc.a_dragon_mother.multi_4": {
+    "src_hash": "7d9fd43a4df4010c414a7c4fb168728d",
+    "text": "Așadar, întoarceți-vă la tunelurile superioare, unde locuiesc culțiștii și golemii de gheață. Undeva în aceste tuneluri vei găsi o mică închisoare bântuită de o fantomă. La sud de această celulă există un tunel care te va conduce spre est. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:40.022632Z"
+  },
+  "npc.a_dragon_mother.multi_5": {
+    "src_hash": "25a8d05bc20acf4eafd92b04b2a6be02",
+    "text": "Urmați tunelul până ajungeți la o mică peșteră. Coborâți și coborâți până când vedeți un câmp de energie albastru. Te va duce la oul meu. Este sigilat astfel încât să nu poată intra toată lumea în cameră. Dar ai permisiunea acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:40.023550Z"
+  },
+  "npc.a_dragon_mother.multi_6": {
+    "src_hash": "0bacb649bf75531ac333b0f8389626f8",
+    "text": "Nenorocitele creaturi de gheață mi-au furat oul care era aproape de eclozare. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:40.024008Z"
+  },
+  "npc.a_dragon_mother.multi_7": {
+    "src_hash": "c195e0b190022cbb45a80e24310b442e",
+    "text": "Deoarece sunt prea mare pentru a intra în acele tuneluri inferioare, trebuie să vă rog să aveți grijă de {egg}-ul meu. Vei face asta?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:08:40.024594Z"
   }
 }

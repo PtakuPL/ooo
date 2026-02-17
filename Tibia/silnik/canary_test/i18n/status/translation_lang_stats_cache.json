@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T00:20:00.349185Z",
+  "timestamp": "2026-02-17T00:22:02.555663Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -30804,8 +30804,8 @@
         [
           "client.json",
           1,
-          1771074895525032889,
-          15483
+          1771287670380143180,
+          16148
         ],
         [
           "cpp.json",
@@ -31011,17 +31011,17 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 5561,
-        "english_copy_keys": 2469,
+        "translated_keys": 5611,
+        "english_copy_keys": 2473,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 10.38,
+        "completion_pct": 10.47,
         "server_keys": 49731,
         "server_translated": 5511,
         "server_pct": 11.08,
         "client_keys": 3855,
-        "client_translated": 50,
-        "client_pct": 1.3
+        "client_translated": 100,
+        "client_pct": 2.59
       },
       "files": {
         "achievements.json": {
@@ -31083,13 +31083,13 @@
         "client.json": {
           "sig": [
             1,
-            1771074895525032889,
-            15483
+            1771287670380143180,
+            16148
           ],
           "row": {
             "total_reference_keys": 242,
-            "translated_keys": 0,
-            "english_copy_keys": 1,
+            "translated_keys": 50,
+            "english_copy_keys": 5,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -31695,8 +31695,8 @@
         [
           "otclient_data.json",
           1,
-          1771074895901033678,
-          4627
+          1771287716032287697,
+          4500
         ],
         [
           "otclient_mods.json",
@@ -31794,17 +31794,17 @@
         "language_name": "Szwedzki",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 4418,
-        "english_copy_keys": 2538,
+        "translated_keys": 4465,
+        "english_copy_keys": 2541,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 8.24,
+        "completion_pct": 8.33,
         "server_keys": 49731,
         "server_translated": 4323,
         "server_pct": 8.69,
         "client_keys": 3855,
-        "client_translated": 95,
-        "client_pct": 2.46
+        "client_translated": 142,
+        "client_pct": 3.68
       },
       "files": {
         "achievements.json": {
@@ -32118,13 +32118,13 @@
         "otclient_data.json": {
           "sig": [
             1,
-            1771074895901033678,
-            4627
+            1771287716032287697,
+            4500
           ],
           "row": {
             "total_reference_keys": 72,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 47,
+            "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0
           }

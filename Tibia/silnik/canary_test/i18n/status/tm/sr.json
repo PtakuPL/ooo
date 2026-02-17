@@ -167110,5 +167110,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:19:39.387846Z"
+  },
+  "client.utils.text2": {
+    "src_hash": "740e9f42975916867c58c567a8a0fbb1",
+    "text": "Имате око за сумњива места и волите да читате туђе дневнике, посебно оне са вампирским причама. Такође сте посвећени сакупљач жетона и истраживач. Респецт!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:17.524506Z"
+  },
+  "client.utils.text3": {
+    "src_hash": "064862da0c7cfc2466089ac2e72074a0",
+    "text": "Хориста",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:17.524773Z"
+  },
+  "client.utils.text4": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Лалалала... сада знаш напамет химну култа која се пева у заливу Либерти. Није тако тешко, с обзиром да се углавном састоји од две ноте и текстова који се понављају.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:17.525807Z"
+  },
+  "client.utils.text5": {
+    "src_hash": "6aeca36524a11b8f633da47c9b4f8c5b",
+    "text": "Млекар",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:17.526098Z"
+  },
+  "client.debug_info.text1": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Тоггле Статс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:21.610353Z"
+  },
+  "client.debug_info.text2": {
+    "src_hash": "65b74928a95e1d4ed2de01cf44bf5dd2",
+    "text": "Цтрл+Алт+Д",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:21.610592Z"
+  },
+  "client.debug_info.text3": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Тоггле Статс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:21.610821Z"
+  },
+  "client.debug_info.text4": {
+    "src_hash": "8486eab0a82270fa0ae916a17d6e21e4",
+    "text": "Тоггле Статс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:21.611046Z"
+  },
+  "client.game_screenshot.text1": {
+    "src_hash": "e29be78e8cf65f9f1a934917f9e0903e",
+    "text": "Достигнуће",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:21.611252Z"
+  },
+  "client.game_screenshot.text2": {
+    "src_hash": "9cc1fcaf3259aafaaed78f65790fc29d",
+    "text": "__ПХ0__ Улаз је откључан",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:26.674785Z"
+  },
+  "client.game_screenshot.text3": {
+    "src_hash": "4a15fc6255ce7860487bbc7553282d15",
+    "text": "__ПХ0__ Унос је завршен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:26.675201Z"
+  },
+  "client.viplist.text1": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Прикажи/сакриј ВИП листу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:26.675507Z"
+  },
+  "client.viplist.text2": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Прикажи/сакриј ВИП листу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:26.675779Z"
+  },
+  "client.viplist.text3": {
+    "src_hash": "a22ab1d17374980cbd54f5257d2b4237",
+    "text": "Прикажи/сакриј ВИП листу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:26.676044Z"
+  },
+  "client.viplist.text4": {
+    "src_hash": "17f72b9ead53e600ba772b32c8d36a63",
+    "text": "додати групу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:32.402783Z"
+  },
+  "client.entergame.text1": {
+    "src_hash": "ec2e1cfffe1308e5f4e3736feb6e0f60",
+    "text": "цонфиг.отмл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:32.403018Z"
+  },
+  "client.createaccount.text1": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "фк хандлеХттпРеспонсе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:32.403288Z"
+  },
+  "client.createaccount.text2": {
+    "src_hash": "beead5d6ed66883b128a8585e8959c78",
+    "text": "ГРЕШКА: ЈСОН није пронађен у одговору",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:32.403642Z"
+  },
+  "client.createaccount.text3": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "фк хандлеХттпРеспонсе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:32.403911Z"
+  },
+  "client.createaccount.text4": {
+    "src_hash": "28da1f8c092c0ad093b4cd1df2ae3257",
+    "text": "гетаццоунтцреатионстатус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:39.208577Z"
+  },
+  "client.createaccount.text5": {
+    "src_hash": "1c88aa952477a3b48b8d5879a4cb89fd",
+    "text": "фк хандлеХттпРеспонсе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:39.208873Z"
+  },
+  "client.entergame.text2": {
+    "src_hash": "0eb5bc411ff706fb9c4803b663d8b114",
+    "text": "Запамти е-пошту:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:39.209127Z"
+  },
+  "client.entergame.text3": {
+    "src_hash": "e8ac4263140e9f899ed2bbd5b0e9c8c5",
+    "text": "Уђите у игру",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:39.209358Z"
+  },
+  "client.entergame.text4": {
+    "src_hash": "1724a870b9ccec07a224452f1fe70688",
+    "text": "Назив рачуна:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:39.209581Z"
+  },
+  "client.entergame.text5": {
+    "src_hash": "5062c7c0f4d606f6cedbc6f96f97571e",
+    "text": "Запамти лозинку:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:44.145664Z"
+  },
+  "client.game_healthcircle.text1": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Интерфејс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:44.145893Z"
+  },
+  "client.game_healthcircle.text2": {
+    "src_hash": "ed5d2a54107d75ce67a08136ea6d4b43",
+    "text": "ХП/МП круг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:44.146180Z"
+  },
+  "client.game_healthcircle.text3": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Интерфејс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:44.146391Z"
+  },
+  "client.game_healthcircle.text4": {
+    "src_hash": "ed5d2a54107d75ce67a08136ea6d4b43",
+    "text": "ХП/МП круг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:44.146652Z"
+  },
+  "client.things.text1": {
+    "src_hash": "7f212a417349153a23f5033a68f1efe7",
+    "text": "Учитавање средстава није успело",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:49.691611Z"
+  },
+  "client.things.text2": {
+    "src_hash": "723fc39cccb92fe2a8337f8fae02628e",
+    "text": "Није могуће учитати статичке податке",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:49.691944Z"
+  },
+  "client.gameinterface.text1": {
+    "src_hash": "92faccee806a0d3337faece79db403ea",
+    "text": "Заустави све радње",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:49.692199Z"
+  },
+  "client.gameinterface.text2": {
+    "src_hash": "92faccee806a0d3337faece79db403ea",
+    "text": "Заустави све радње",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:49.692448Z"
+  },
+  "client.gameinterface.text3": {
+    "src_hash": "f4397460b6ae87e06d665239fb9ca13a",
+    "text": "Обриши све текстове",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:49.692697Z"
+  },
+  "client.statsbar.text1": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Магиц Левел",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:57.291653Z"
+  },
+  "client.statsbar.text2": {
+    "src_hash": "3535f1e07ee1a37cad48ad6cc23e7db5",
+    "text": "Вештина борбе са секиром",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:57.291963Z"
+  },
+  "client.statsbar.text3": {
+    "src_hash": "6f84b63a6480e8f117fc876ed9bdfcd1",
+    "text": "Вештина клупске борбе",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:57.292232Z"
+  },
+  "client.statsbar.text4": {
+    "src_hash": "c943a8395cc808680641259bfbdc4921",
+    "text": "Вештина борбе на даљину",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:57.292521Z"
+  },
+  "client.statsbar.text5": {
+    "src_hash": "00bddc03f89260bb2a36dbb1adcb807a",
+    "text": "Вештина борбе песницом",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:20:57.292785Z"
+  },
+  "client.outfit.text1": {
+    "src_hash": "562bb1ed6e80264fc03652e88b1f9a54",
+    "text": "Одећа - подразумевано",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:02.774912Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "СелецтионБуттон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:02.775175Z"
+  },
+  "client.outfit.text3": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "СелецтионБуттон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:02.775405Z"
+  },
+  "client.player.text1": {
+    "src_hash": "5f772cb1090f3e6d451d52926b1ae6c7",
+    "text": "Но Воцатион",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:02.775625Z"
+  },
+  "client.player.text2": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:02.776041Z"
+  },
+  "client.player.text3": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:08.030849Z"
+  },
+  "client.player.text4": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:08.031209Z"
+  },
+  "client.items.text1": {
+    "src_hash": "24b56abbb3dc550fa117a31f5129a3f8",
+    "text": "128 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:08.031473Z"
+  },
+  "client.items.text2": {
+    "src_hash": "b1f4d732ba5997c1cbff270d13c63959",
+    "text": "96 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:08.031702Z"
+  },
+  "client.items.text3": {
+    "src_hash": "85392cbd20cd206583207b3255b7acbf",
+    "text": "64 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:08.031907Z"
+  },
+  "client.items.text4": {
+    "src_hash": "905819163e91db527b712c9e02d086c1",
+    "text": "32 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:21:10.382369Z"
   }
 }

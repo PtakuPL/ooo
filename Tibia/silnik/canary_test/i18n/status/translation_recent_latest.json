@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T01:35:44.968083Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T01:37:18.708883Z",
+  "language": "pl",
+  "json_file": "spells.json",
+  "translated": 44,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "spell.extended_fire_chain.name",
+      "en": "extended fire chain",
+      "translated": "przedłużony łańcuch ognia",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.unchained_fire_beam.name",
+      "en": "unchained fire beam",
+      "translated": "nieskrępowany promień ognia",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.root_wave.name",
+      "en": "root wave",
+      "translated": "fala korzeniowa",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "spell.glooth_fairy_healing.name",
+      "en": "glooth fairy healing",
+      "translated": "uzdrawianie wróżek Glooth",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "spell.warden_x.name",
+      "en": "warden x",
+      "translated": "naczelnik x",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "spell.brimstone_bug_paralyze.name",
+      "en": "brimstone bug paralyze",
+      "translated": "paraliż robaka siarkowego",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "spell.pythius_the_rotten_curse.name",
+      "en": "pythius the rotten curse",
+      "translated": "Pythius, zgniła klątwa",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "spell.warden_ring.name",
+      "en": "warden ring",
+      "translated": "pierścień strażnika",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "spell.frazzlemaw_paralyze.name",
+      "en": "frazzlemaw paralyze",
+      "translated": "frazzlemaw paraliżuje",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "spell.jaul_paralyze.name",
+      "en": "jaul paralyze",
+      "translated": "paraliż",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "spell.zulazza_the_corruptor_paralyze.name",
+      "en": "zulazza the corruptor paralyze",
+      "translated": "zulazza, zepsuty paraliż",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "spell.defiler_paralyze_1.name",
+      "en": "defiler paralyze 1",
+      "translated": "kalający paraliż 1",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "spell.ice_crystal_bomb.name",
+      "en": "Ice Crystal Bomb",
+      "translated": "Bomba z lodowych kryształów",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "spell.plagirath_summon.name",
+      "en": "plagirath summon",
+      "translated": "plagiratowe wezwanie",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.morgaroth_summon.name",
+      "en": "morgaroth summon",
+      "translated": "wezwanie Morgarotha",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.medusa_paralyze.name",
+      "en": "medusa paralyze",
+      "translated": "meduza paraliżuje",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.war_golem_skill_reducer.name",
+      "en": "war golem skill reducer",
+      "translated": "Reduktor umiejętności golema wojennego",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "spell.renegade_knight.name",
+      "en": "renegade knight",
+      "translated": "rycerz-renegat",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.evil_sheep_lord_summon.name",
+      "en": "evil sheep lord summon",
+      "translated": "wezwanie złego pana owiec",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.bulltaur_ewave.name",
+      "en": "bulltaurewave",
+      "translated": "fala byków",
+      "source": "google_translate"
     }
   ]
 }

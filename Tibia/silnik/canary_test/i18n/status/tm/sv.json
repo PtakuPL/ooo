@@ -19982,5 +19982,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:28:04.898601Z"
+  },
+  "npc.bloodshade_rotten.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Dödlig! Om du är på en {quest} för att tjäna blodguden, min herre - var hälsad!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.895367Z"
+  },
+  "npc.bloodshade_sacrifice.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Dödlig! Om du är på en {quest} för att tjäna blodguden, min herre - var hälsad!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.896511Z"
+  },
+  "npc.bo_ques.farewell_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Adjö. Jag är säker på att du kommer tillbaka för mer. Det gör de alla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.899058Z"
+  },
+  "npc.bo_ques.walkaway_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Adjö. Jag är säker på att du kommer tillbaka för mer. Det gör de alla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.900496Z"
+  },
+  "npc.bolfona.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.900805Z"
+  },
+  "npc.bolfona.greet_msg_1": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Pratar du med mig? Fortsätt chatta men förvänta dig inget svar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.901398Z"
+  },
+  "npc.bolfona.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.901974Z"
+  },
+  "npc.boveas.greet_msg_1": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Hej! Jag hoppas att du inte kommer att döda mig!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.902871Z"
+  },
+  "npc.bozo.farewell_msg_1": {
+    "src_hash": "e0c720dccd466a9047c7f84dffbf8cfc",
+    "text": "Kom ihåg: Ett skämt om dagen håller ghouls borta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.903645Z"
+  },
+  "npc.bozo.greet_msg_2": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Hej, hej, hej, lilla damen |PLAYERNAME|! Vad ger dig {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.904152Z"
+  },
+  "npc.bozo.walkaway_msg_1": {
+    "src_hash": "901eba179c016bc753815f362425c4cc",
+    "text": "Hej! Dårar har också känslor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.910491Z"
+  },
+  "npc.brodrosch.greet_msg_1": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Välkommen, |PLAYERNAME|! Må jorden skydda dig på de steniga markerna. Om du behöver en {passage} kan jag hjälpa dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.915932Z"
+  },
+  "npc.bron.farewell_msg_1": {
+    "src_hash": "64e4ad7815f4475d64461abc6df46281",
+    "text": "Ta hand om dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.918969Z"
+  },
+  "npc.bron.greet_msg_2": {
+    "src_hash": "bc13951dddf4f12c470dbcddf105f4db",
+    "text": "Välkommen till min ödmjuka hydda, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.919389Z"
+  },
+  "npc.bron.walkaway_msg_1": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Ta hand om dig!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.920982Z"
+  },
+  "npc.captain_bluebear.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.934285Z"
+  },
+  "npc.captain_breezelda.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.934964Z"
+  },
+  "npc.captain_chelop.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.935707Z"
+  },
+  "npc.captain_fearless.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.938775Z"
+  },
+  "npc.captain_greyhound.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.940294Z"
+  },
+  "npc.captain_harava.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.945253Z"
+  },
+  "npc.captain_pelagia.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.948259Z"
+  },
+  "npc.captain_sinbeard.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.952040Z"
+  },
+  "npc.cornell.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:05.982363Z"
+  },
+  "npc.frafnar.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.056773Z"
+  },
+  "npc.frafnar.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.057465Z"
+  },
+  "npc.grombur.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.115159Z"
+  },
+  "npc.grombur.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.115923Z"
+  },
+  "npc.harlow.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.150498Z"
+  },
+  "npc.harlow_vengoth.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.151207Z"
+  },
+  "npc.jack_drone.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.195834Z"
+  },
+  "npc.jack_fate.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.196867Z"
+  },
+  "npc.jack_fate_goroma.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.198573Z"
+  },
+  "npc.kendra.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.237200Z"
+  },
+  "npc.kendra_thais.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.238010Z"
+  },
+  "npc.nokmir.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.340818Z"
+  },
+  "npc.nokmir.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.341538Z"
+  },
+  "npc.rapanaio_boat.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.417231Z"
+  },
+  "npc.rapanaio_isle_of_evil.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.417841Z"
+  },
+  "npc.rehon.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.430553Z"
+  },
+  "npc.rehon.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.431033Z"
+  },
+  "npc.tanyt.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:36:06.501522Z"
   }
 }

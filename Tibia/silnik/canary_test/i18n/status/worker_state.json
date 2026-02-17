@@ -378,32 +378,153 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-17T05:02:58Z",
+  "generated_at_utc": "2026-02-17T05:03:24Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2143,
+    "errors_total": 2144,
     "files_processed_total": 6443,
     "languages_total": 54
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 7,
-        "json_file": "npc.json",
-        "keys_to_translate": 7434,
-        "language": "pl",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "guard_fail": 0,
+        "json_file": "monsters.json",
+        "keys_to_translate": 1393,
+        "language": "es",
+        "recent_examples": [
+          {
+            "en": "The Hairy One",
+            "key": "monster.the_hairy_one.desc",
+            "source": "tm",
+            "translated": "Hairy one"
+          },
+          {
+            "en": "Kreebosh the Exile",
+            "key": "monster.kreebosh_the_exile.name",
+            "source": "tm",
+            "translated": "Kreebosh exile"
+          },
+          {
+            "en": "Kreebosh the Exile",
+            "key": "monster.kreebosh_the_exile.desc",
+            "source": "tm",
+            "translated": "Kreebosh exile"
+          },
+          {
+            "en": "YOU ARE ALL DOOMED!",
+            "key": "monster.dracola.voice_2",
+            "source": "tm",
+            "translated": "¡ESTÁIS TODOS CONDENADOS!"
+          },
+          {
+            "en": "Izcandar the Banished",
+            "key": "monster.izcandar_the_banished.name",
+            "source": "tm",
+            "translated": "Izcandar banished"
+          },
+          {
+            "en": "Izcandar the Banished",
+            "key": "monster.izcandar_the_banished.desc",
+            "source": "tm",
+            "translated": "Izcandar banished"
+          },
+          {
+            "en": "Urmahlullu the Weakened",
+            "key": "monster.urmahlullu_the_weakened.name",
+            "source": "tm",
+            "translated": "Urmahlullu weakened"
+          },
+          {
+            "en": "Urmahlullu the Weakened",
+            "key": "monster.urmahlullu_the_weakened.desc",
+            "source": "tm",
+            "translated": "Urmahlullu weakened"
+          },
+          {
+            "en": "Urmahlullu the Tamed",
+            "key": "monster.urmahlullu_the_tamed.name",
+            "source": "tm",
+            "translated": "Urmahlullu tamed"
+          },
+          {
+            "en": "Urmahlullu the Tamed",
+            "key": "monster.urmahlullu_the_tamed.desc",
+            "source": "tm",
+            "translated": "Urmahlullu tamed"
+          },
+          {
+            "en": "Urmahlullu the Immaculate",
+            "key": "monster.urmahlullu_the_immaculate.name",
+            "source": "tm",
+            "translated": "Urmahlullu immaculate"
+          },
+          {
+            "en": "Urmahlullu the Immaculate",
+            "key": "monster.urmahlullu_the_immaculate.desc",
+            "source": "tm",
+            "translated": "Urmahlullu immaculate"
+          },
+          {
+            "en": "I WILL MAKE ALL OF YOU SUFFER!",
+            "key": "monster.ferumbras_mortal_shell.voice_4",
+            "source": "tm",
+            "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+          },
+          {
+            "en": "CRUSH THEM ALL!",
+            "key": "monster.prince_drazzak.voice_4",
+            "source": "tm",
+            "translated": "¡¡APLASTADLES A TODOS!!"
+          },
+          {
+            "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+            "key": "monster.prince_drazzak.voice_8",
+            "source": "tm",
+            "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
+          },
+          {
+            "en": "Irgix The Flimsy",
+            "key": "monster.irgix_the_flimsy.name",
+            "source": "tm",
+            "translated": "Irgix flimsy"
+          },
+          {
+            "en": "Irgix The Flimsy",
+            "key": "monster.irgix_the_flimsy.desc",
+            "source": "tm",
+            "translated": "Irgix flimsy"
+          },
+          {
+            "en": "The Dread Maiden",
+            "key": "monster.the_dread_maiden.name",
+            "source": "tm",
+            "translated": "Dread maiden"
+          },
+          {
+            "en": "The Dread Maiden",
+            "key": "monster.the_dread_maiden.desc",
+            "source": "tm",
+            "translated": "Dread maiden"
+          },
+          {
+            "en": "Vok the Freakish",
+            "key": "monster.vok_the_freakish.name",
+            "source": "tm",
+            "translated": "Vok freakish"
+          }
+        ],
+        "recent_translated": 50,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "pl",
+      "category": "es",
       "idle": {
         "last_scan": "2025-12-16T05:59:39.875505",
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-17T06:02:57.848428",
+      "last_update": "2026-02-17T06:03:23.678437",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -422,7 +543,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 262,
+      "total_cycles": 263,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -440,7 +561,7 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "pl",
+      "category": "es",
       "detail": "cycle end",
       "eta_seconds": 0,
       "file": "-",
@@ -452,8 +573,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 262,
-    "heartbeat_at_utc": "2026-02-17T05:02:57Z",
+    "cycle": 263,
+    "heartbeat_at_utc": "2026-02-17T05:03:23Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

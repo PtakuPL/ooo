@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-02-17T05:02:57.709351Z",
+  "timestamp": "2026-02-17T05:03:23.535154Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 21,
   "issues_by_type": {
     "identical_to_en_exempt": 20,
-    "artifact_token": 17,
-    "suspicious_log_medium": 31,
-    "suspicious_log_critical": 78,
-    "suspicious_log_low": 1,
-    "suspicious_log_high": 90,
+    "artifact_token": 21,
+    "suspicious_log_critical": 48,
+    "suspicious_log_high": 150,
+    "suspicious_log_low": 2,
     "suspicious_rejected_critical": 166,
     "suspicious_rejected_high": 34
   },
@@ -131,6 +130,34 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I WILL MAKE ALL OF YOU SUFFER!",
+      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_8",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
     }
   ],
   "threshold": 10,

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T05:03:02.931864Z",
+  "timestamp": "2026-02-17T05:03:29.315425Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 295399,
@@ -49,56 +49,56 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 3028,
-    "guard_reports_blocked": 2961,
+    "guard_reports_total": 3029,
+    "guard_reports_blocked": 2962,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2961
+    "cannot_translate_reports_visible": 2962
   },
   "cache": {
-    "lang_stats_hits": 50,
-    "lang_stats_misses": 2,
-    "lang_stats_hit_pct": 96.2,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1974,
-    "lang_file_misses": 2,
+    "lang_file_hits": 1975,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 99.9,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T05:02:57.766859Z",
-    "cycle": 262,
+    "timestamp": "2026-02-17T05:03:23.592173Z",
+    "cycle": 263,
     "mode": "AUTO_TRANSLATE",
-    "category": "pl",
+    "category": "es",
     "events": {
-      "dispatch": 2341,
-      "mode_run": 27184
+      "dispatch": 439,
+      "mode_run": 7131
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T04:03:01.540090Z",
-    "window_end_utc": "2026-02-17T05:03:01.540090Z",
+    "window_start_utc": "2026-02-17T04:03:27.573990Z",
+    "window_end_utc": "2026-02-17T05:03:27.573990Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 157,
+    "total_cycles": 159,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 157
+      "AUTO_TRANSLATE": 159
     },
-    "auto_translate_cycles": 157,
+    "auto_translate_cycles": 159,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 3439,
-    "guard_fail": 3287,
-    "guard_fail_rate_pct": 48.9,
+    "translated": 3478,
+    "guard_fail": 3248,
+    "guard_fail_rate_pct": 48.3,
     "no_progress_entries": 3,
     "no_progress_rate_pct": 2.9,
-    "throughput_keys_per_h": 1855.7,
-    "suspicious_total": 9873,
+    "throughput_keys_per_h": 1892.9,
+    "suspicious_total": 9919,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -116,12 +116,6 @@
         "target": "pl/scripts.json",
         "translated": 50,
         "guard_fail": 152,
-        "guard_command": 0
-      },
-      {
-        "target": "ro/spells.json",
-        "translated": 22,
-        "guard_fail": 78,
         "guard_command": 0
       },
       {
@@ -147,21 +141,26 @@
         "translated": 50,
         "guard_fail": 50,
         "guard_command": 0
+      },
+      {
+        "target": "es/books.json",
+        "translated": 2,
+        "guard_fail": 48,
+        "guard_command": 0
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T05:02:57.709351Z",
+      "timestamp": "2026-02-17T05:03:23.535154Z",
       "checked_entries": 100,
-      "issues_found": 17,
+      "issues_found": 21,
       "issues_by_type": {
         "identical_to_en_exempt": 20,
-        "artifact_token": 17,
-        "suspicious_log_medium": 31,
-        "suspicious_log_critical": 78,
-        "suspicious_log_low": 1,
-        "suspicious_log_high": 90,
+        "artifact_token": 21,
+        "suspicious_log_critical": 48,
+        "suspicious_log_high": 150,
+        "suspicious_log_low": 2,
         "suspicious_rejected_critical": 166,
         "suspicious_rejected_high": 34
       },
@@ -284,6 +283,34 @@
           "type": "artifact_token",
           "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+        },
+        {
+          "key": "monster.dracola.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "YOU ARE ALL DOOMED!",
+          "translated": "¡ESTÁIS TODOS CONDENADOS!"
+        },
+        {
+          "key": "monster.ferumbras_mortal_shell.voice_4",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "I WILL MAKE ALL OF YOU SUFFER!",
+          "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+        },
+        {
+          "key": "monster.prince_drazzak.voice_4",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "CRUSH THEM ALL!",
+          "translated": "¡¡APLASTADLES A TODOS!!"
+        },
+        {
+          "key": "monster.prince_drazzak.voice_8",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+          "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
         }
       ],
       "threshold": 10,
@@ -308,9 +335,9 @@
         "total_rejected": 1088,
         "total_gt_guard_fail": 3052,
         "cycles": 912,
-        "quality_score": 61.2,
-        "last_audit": "2026-02-17T05:02:57.709351Z",
-        "issues_count": 127623
+        "quality_score": 65.5,
+        "last_audit": "2026-02-17T05:03:23.535154Z",
+        "issues_count": 127637
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -324,15 +351,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T05:02:54.616603Z",
-        "last_translated": 43,
-        "total_suspicious": 30538,
+        "last_cycle": "2026-02-17T05:03:20.447239Z",
+        "last_translated": 50,
+        "total_suspicious": 30633,
         "total_rejected": 872,
         "total_gt_guard_fail": 12270,
-        "cycles": 1153,
+        "cycles": 1154,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T05:02:57.709351Z",
-        "issues_count": 201227
+        "last_audit": "2026-02-17T05:03:23.535154Z",
+        "issues_count": 201491
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -364,8 +391,8 @@
         "total_gt_guard_fail": 647,
         "cycles": 185,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T05:02:57.709351Z",
-        "issues_count": 12443
+        "last_audit": "2026-02-17T05:03:23.535154Z",
+        "issues_count": 12468
       },
       "ru": {
         "last_cycle": "2026-02-17T04:58:48.086988Z",
@@ -375,8 +402,8 @@
         "total_gt_guard_fail": 1175,
         "cycles": 181,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T05:02:57.709351Z",
-        "issues_count": 32533
+        "last_audit": "2026-02-17T05:03:23.535154Z",
+        "issues_count": 32567
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -396,9 +423,9 @@
         "total_rejected": 153,
         "total_gt_guard_fail": 340,
         "cycles": 94,
-        "quality_score": 77.2,
-        "last_audit": "2026-02-17T05:02:57.709351Z",
-        "issues_count": 10427
+        "quality_score": 84.7,
+        "last_audit": "2026-02-17T05:03:23.535154Z",
+        "issues_count": 10429
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -848,8 +875,8 @@
         "total_gt_guard_fail": 1750,
         "cycles": 168,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T05:02:57.709351Z",
-        "issues_count": 41944
+        "last_audit": "2026-02-17T05:03:23.535154Z",
+        "issues_count": 42026
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -863,7 +890,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 17 issue(s) / 100 entries | 2026-02-17T05:02:57.709351Z"
+    "summary": "SLOW_MODE | 21 issue(s) / 100 entries | 2026-02-17T05:03:23.535154Z"
   },
   "languages": [
     {

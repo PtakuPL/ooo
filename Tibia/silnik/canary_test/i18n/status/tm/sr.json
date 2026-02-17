@@ -167654,5 +167654,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:41:18.584771Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L77.1494": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.763548Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L78.1495": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.763816Z"
+  },
+  "data.otservbr.global.npc.eighty.L72.780": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.764489Z"
+  },
+  "data.otservbr.global.npc.eighty.L73.781": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.764748Z"
+  },
+  "data.otservbr.global.npc.elgar.L82.568": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.765680Z"
+  },
+  "data.otservbr.global.npc.elgar.L83.569": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.765972Z"
+  },
+  "data.otservbr.global.npc.eva.L77.991": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.767870Z"
+  },
+  "data.otservbr.global.npc.eva.L78.992": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.768125Z"
+  },
+  "data.otservbr.global.npc.ferks.L77.441": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.770248Z"
+  },
+  "data.otservbr.global.npc.ferks.L78.442": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.770527Z"
+  },
+  "data.otservbr.global.npc.finarfin.L72.1174": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.771388Z"
+  },
+  "data.otservbr.global.npc.finarfin.L73.1175": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.771644Z"
+  },
+  "data.otservbr.global.npc.gnomillion.L77.447": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.779393Z"
+  },
+  "data.otservbr.global.npc.gnomillion.L78.448": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.779674Z"
+  },
+  "data.otservbr.global.npc.jefrey.L77.523": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.793834Z"
+  },
+  "data.otservbr.global.npc.jefrey.L78.524": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.794110Z"
+  },
+  "data.otservbr.global.npc.jessica.L77.1595": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.794827Z"
+  },
+  "data.otservbr.global.npc.jessica.L78.1596": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.795196Z"
+  },
+  "data.otservbr.global.npc.kaya.L77.385": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.798383Z"
+  },
+  "data.otservbr.global.npc.kaya.L78.386": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.798656Z"
+  },
+  "data.otservbr.global.npc.kepar.L77.1257": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.799101Z"
+  },
+  "data.otservbr.global.npc.kepar.L78.1258": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.799501Z"
+  },
+  "data.otservbr.global.npc.lokur.L111.617": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.802936Z"
+  },
+  "data.otservbr.global.npc.lokur.L112.618": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.803305Z"
+  },
+  "data.otservbr.global.npc.murim.L81.186": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.809731Z"
+  },
+  "data.otservbr.global.npc.murim.L82.187": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.809986Z"
+  },
+  "data.otservbr.global.npc.muzir.L77.226": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.810310Z"
+  },
+  "data.otservbr.global.npc.muzir.L78.227": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.810567Z"
+  },
+  "data.otservbr.global.npc.paulie.L345.1573": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.817955Z"
+  },
+  "data.otservbr.global.npc.paulie.L346.1574": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.818348Z"
+  },
+  "data.otservbr.global.npc.plunderpurse.L453.1185": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.820007Z"
+  },
+  "data.otservbr.global.npc.plunderpurse.L454.1186": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.820261Z"
+  },
+  "data.otservbr.global.npc.raffael.L77.663": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.823284Z"
+  },
+  "data.otservbr.global.npc.raffael.L78.664": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.823539Z"
+  },
+  "data.otservbr.global.npc.rokyn.L76.974": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.825931Z"
+  },
+  "data.otservbr.global.npc.rokyn.L77.975": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.826329Z"
+  },
+  "data.otservbr.global.npc.siestaar.L77.571": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.832248Z"
+  },
+  "data.otservbr.global.npc.siestaar.L78.572": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.832521Z"
+  },
+  "data.otservbr.global.npc.simon.the.beggar.L316.1139": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.833397Z"
+  },
+  "data.otservbr.global.npc.simon.the.beggar.L317.1140": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.833699Z"
+  },
+  "data.otservbr.global.npc.sissek.L72.1050": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.834131Z"
+  },
+  "data.otservbr.global.npc.sissek.L73.1051": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.834501Z"
+  },
+  "data.otservbr.global.npc.suzy.L77.1113": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:03:02.835646Z"
   }
 }

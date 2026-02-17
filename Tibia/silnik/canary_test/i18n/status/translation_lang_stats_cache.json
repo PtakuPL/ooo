@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T01:02:46.379329Z",
+  "timestamp": "2026-02-17T01:03:24.328543Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7458,8 +7458,8 @@
         [
           "questlog.json",
           1,
-          1771288893615829135,
-          243127
+          1771290193903574215,
+          243133
         ],
         [
           "quests.json",
@@ -7521,13 +7521,13 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 39851,
+        "translated_keys": 39852,
         "english_copy_keys": 2630,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 74.37,
         "server_keys": 49731,
-        "server_translated": 37337,
+        "server_translated": 37338,
         "server_pct": 75.08,
         "client_keys": 3855,
         "client_translated": 2514,
@@ -7929,12 +7929,12 @@
         "questlog.json": {
           "sig": [
             1,
-            1771288893615829135,
-            243127
+            1771290193903574215,
+            243133
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 270,
+            "translated_keys": 271,
             "english_copy_keys": 82,
             "missing_keys": 0,
             "missing_files": 0
@@ -25371,7 +25371,7 @@
         [
           "html.json",
           1,
-          1771288898459842685,
+          1771290198599586713,
           105276
         ],
         [
@@ -25714,7 +25714,7 @@
         "html.json": {
           "sig": [
             1,
-            1771288898459842685,
+            1771290198599586713,
             105276
           ],
           "row": {
@@ -30972,8 +30972,8 @@
         [
           "server.json",
           1,
-          1771288882295795652,
-          311337
+          1771290183035545664,
+          311294
         ],
         [
           "spells.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 5645,
+        "translated_keys": 5688,
         "english_copy_keys": 2471,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 10.53,
+        "completion_pct": 10.61,
         "server_keys": 49731,
-        "server_translated": 5545,
-        "server_pct": 11.15,
+        "server_translated": 5588,
+        "server_pct": 11.24,
         "client_keys": 3855,
         "client_translated": 100,
         "client_pct": 2.59
@@ -31475,12 +31475,12 @@
         "server.json": {
           "sig": [
             1,
-            1771288882295795652,
-            311337
+            1771290183035545664,
+            311294
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 493,
+            "translated_keys": 536,
             "english_copy_keys": 124,
             "missing_keys": 0,
             "missing_files": 0

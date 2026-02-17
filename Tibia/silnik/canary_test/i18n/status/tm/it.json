@@ -40566,5 +40566,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:48:58.556090Z"
+  },
+  "web.tpl.buttons.change_sex.set_1": {
+    "src_hash": "6b040454e34ebee8689571610e64a17d",
+    "text": "Cambia sesso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.113401Z"
+  },
+  "web.tpl.account.management.set_3": {
+    "src_hash": "d035d6b877b448da4853fe122529ec9c",
+    "text": "Cambia e-mail",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.120253Z"
+  },
+  "web.tpl.account.management.set_7": {
+    "src_hash": "6b040454e34ebee8689571610e64a17d",
+    "text": "Cambia sesso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.120653Z"
+  },
+  "web.tpl.account.management.h2_2": {
+    "src_hash": "bf1c03ecd0d85d824c36b782ed8d19d8",
+    "text": "Informazioni generali",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.121169Z"
+  },
+  "web.tpl.account.characters.change_name.span_1": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Carattere:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.123524Z"
+  },
+  "web.tpl.forum.new_thread.b_2": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Carattere:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.124105Z"
+  },
+  "web.tpl.team.b_2": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Vestito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.125469Z"
+  },
+  "web.tpl.team.b_9": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Vestito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.126350Z"
+  },
+  "web.tpl.online.b_7": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Vestito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.128376Z"
+  },
+  "web.tpl.guilds.view.td_1": {
+    "src_hash": "021da1b20f73dc252361a54d80497ef3",
+    "text": "Rango",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.129258Z"
+  },
+  "web.tpl.forum.new_post.b_2": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Carattere:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.130216Z"
+  },
+  "web.tpl.forum.edit_post.b_2": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Carattere:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.137662Z"
+  },
+  "html.admin.statistics.html.text3": {
+    "src_hash": "7a3fc283239c5b027863d8379f41f198",
+    "text": "{{ count.total_guilds }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.158042Z"
+  },
+  "html.admin.statistics.html.text4": {
+    "src_hash": "7a45c698a83ef947e1c804bfde46ff75",
+    "text": "{{ count.total_houses }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:39.158566Z"
+  },
+  "web.tpl.experience_stages.b_4": {
+    "src_hash": "64c6da2436465d11573858d46056b95d",
+    "text": "Palcoscenico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:43.932217Z"
+  },
+  "web.tpl.admin.open_source.b_2": {
+    "src_hash": "9d21e88cf6892f67db42b72de8a00b3e",
+    "text": "PHP:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:49.947788Z"
+  },
+  "web.tpl.buttons.register_account.set_1": {
+    "src_hash": "089a4481d6029b62758f16d31cd34264",
+    "text": "Registra l'account",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:49.948028Z"
+  },
+  "web.tpl.admin.reports.th_1": {
+    "src_hash": "65b55376b43abee95c3c28d9c68a4fbc",
+    "text": "Nome del rapporto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:49.948259Z"
+  },
+  "web.tpl.admin.reports.th_2": {
+    "src_hash": "ffbb3331182cbfda3ccea5bb0c3eea46",
+    "text": "Ultimo aggiornamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:49.948457Z"
+  },
+  "web.tpl.guilds.manager.set_1": {
+    "src_hash": "cafda7f7cefc45741a048f956cd5c957",
+    "text": "Aggiungi un nuovo grado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:49.948675Z"
+  },
+  "web.tpl.guilds.manager.set_2": {
+    "src_hash": "71d36fa7e38882ca6d391b3549094a9d",
+    "text": "Cambia nomi e livelli di rango",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:56.509312Z"
+  },
+  "web.tpl.guilds.manager.h2_1": {
+    "src_hash": "c832c0ef0315430a558b56bb96923880",
+    "text": "Benvenuto nel gestore della gilda!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:56.509607Z"
+  },
+  "web.tpl.guilds.manager.b_2": {
+    "src_hash": "054b4f3ea543c990f6b125f41af6ebf7",
+    "text": "Opzione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:56.509840Z"
+  },
+  "web.tpl.guilds.manager.b_4": {
+    "src_hash": "91ebc9b22070b200da533e4992a22157",
+    "text": "Passa la leadership della gilda ad un altro membro della gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:56.510245Z"
+  },
+  "web.tpl.guilds.manager.b_5": {
+    "src_hash": "b468aac652190c45b44ce61f0329252d",
+    "text": "Elimina la gilda, caccia tutti i membri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:56.510547Z"
+  },
+  "web.tpl.guilds.manager.b_6": {
+    "src_hash": "ffe3673e547e72aca5ed299de4451406",
+    "text": "Cambia la descrizione della gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:03.298596Z"
+  },
+  "web.tpl.guilds.manager.b_7": {
+    "src_hash": "e0fbf3568e415c67cd6fff5b7ad2a01e",
+    "text": "Cambia MOTD della gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:03.298935Z"
+  },
+  "web.tpl.guilds.manager.b_8": {
+    "src_hash": "0f4eab19ce8f5e5cf59ae1c29ad878af",
+    "text": "Carica il nuovo logo della gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:03.299221Z"
+  },
+  "web.tpl.guilds.manager.b_9": {
+    "src_hash": "5a9d68f86d368e444bcb3e1c7c2defdc",
+    "text": "ID/Elimina posizione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:03.299465Z"
+  },
+  "web.tpl.guilds.manager.b_10": {
+    "src_hash": "dc1dd73c9c598d9d66ca7eeeceb8c1a0",
+    "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:03.299946Z"
+  },
+  "web.tpl.guilds.manager.b_11": {
+    "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
+    "text": "Livello di RANK nella gilda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:07.992475Z"
+  },
+  "web.tpl.guilds.manager.b_12": {
+    "src_hash": "db634a36c41002236a8756934412eb55",
+    "text": "Capo (3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:07.992679Z"
+  },
+  "web.tpl.guilds.manager.b_13": {
+    "src_hash": "635e0eb865facfba4ff6d76c869a0844",
+    "text": "Vizio (2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:51:07.992856Z"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 177,
+  "total_cycles": 178,
   "mode": "AUTO_TRANSLATE",
   "category": "it",
-  "last_update": "2026-02-17T03:50:18.440476",
+  "last_update": "2026-02-17T03:52:20.290489",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "it",
-    "json_file": "questlog.json",
-    "keys_to_translate": 1844,
-    "guard_fail": 9,
+    "json_file": "html.json",
+    "keys_to_translate": 1417,
+    "guard_fail": 5,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

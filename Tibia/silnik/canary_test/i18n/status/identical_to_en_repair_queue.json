@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T02:47:46.840054Z",
+  "timestamp": "2026-02-17T02:52:12.008751Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,11 +73,11 @@
     "de": 659,
     "fr": 587,
     "hu": 663,
-    "it": 475,
+    "it": 483,
     "nl": 691,
     "pt": 620,
-    "ro": 500,
-    "ru": 111,
+    "ro": 494,
+    "ru": 112,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -657,8 +657,14 @@
     },
     {
       "lang": "it",
+      "json_file": "questlog.json",
+      "identical_to_en": 10,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
       "json_file": "html.json",
-      "identical_to_en": 8,
+      "identical_to_en": 9,
       "domain_priority": 9
     },
     {
@@ -677,12 +683,6 @@
       "lang": "it",
       "json_file": "client.json",
       "identical_to_en": 4,
-      "domain_priority": 9
-    },
-    {
-      "lang": "it",
-      "json_file": "questlog.json",
-      "identical_to_en": 3,
       "domain_priority": 9
     },
     {
@@ -891,14 +891,14 @@
     },
     {
       "lang": "ro",
-      "json_file": "cpp.json",
-      "identical_to_en": 144,
+      "json_file": "scripts.json",
+      "identical_to_en": 139,
       "domain_priority": 9
     },
     {
       "lang": "ro",
-      "json_file": "scripts.json",
-      "identical_to_en": 139,
+      "json_file": "cpp.json",
+      "identical_to_en": 137,
       "domain_priority": 9
     },
     {
@@ -910,7 +910,7 @@
     {
       "lang": "ro",
       "json_file": "html.json",
-      "identical_to_en": 8,
+      "identical_to_en": 9,
       "domain_priority": 9
     },
     {
@@ -982,7 +982,7 @@
     {
       "lang": "ru",
       "json_file": "cpp.json",
-      "identical_to_en": 5,
+      "identical_to_en": 6,
       "domain_priority": 9
     },
     {

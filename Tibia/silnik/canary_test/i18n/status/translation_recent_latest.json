@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T02:50:16.817847Z",
-  "language": "ro",
-  "json_file": "html.json",
-  "translated": 41,
+  "timestamp": "2026-02-17T02:52:19.236570Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "web.tpl.forum.edit_post.b_2",
-      "en": "Character:",
-      "translated": "Caracter:",
-      "source": "simple"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.commands.b_1",
-      "en": "Words",
-      "translated": "Cuvinte",
-      "source": "simple"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "html.admin.statistics.html.text3",
-      "en": "{{ count.total_guilds }}",
-      "translated": "{{ count.total_guilds }}",
-      "source": "simple"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "html.admin.statistics.html.text4",
-      "en": "{{ count.total_houses }}",
-      "translated": "{{ count.total_houses }}",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.admin.open_source.b_2",
-      "en": "PHP:",
-      "translated": "PHP:",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.buttons.register_account.set_1",
-      "en": "Register Account",
-      "translated": "Înregistrați contul",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.admin.reports.th_1",
-      "en": "Report name",
-      "translated": "Numele raportului",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.admin.reports.th_2",
-      "en": "Last updated",
-      "translated": "Ultima actualizare",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.set_1",
-      "en": "Add new rank",
-      "translated": "Adăugați un nou rang",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.set_2",
-      "en": "Change rank names and levels",
-      "translated": "Schimbați numele și nivelurile rangurilor",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.h2_1",
-      "en": "Welcome to guild manager!",
-      "translated": "Bun venit la managerul breslei!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_2",
-      "en": "Option",
-      "translated": "Opţiune",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_4",
-      "en": "Pass leadership of guild to other guild member.",
-      "translated": "Transmite conducerea breslei unui alt membru al breslei.",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_5",
-      "en": "Delete guild, kick all members.",
-      "translated": "Șterge breasla, da cu piciorul pe toți membrii.",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_6",
-      "en": "Change description of guild.",
-      "translated": "Schimbați descrierea breslei.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_7",
-      "en": "Change MOTD of guild.",
-      "translated": "Schimbați MOTD al breslei.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_8",
-      "en": "Upload new guild logo.",
-      "translated": "Încărcați un nou logo al breslei.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_9",
-      "en": "ID/Delete Rank",
-      "translated": "ID/Ștergere rang",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_10",
-      "en": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name",
-      "translated": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nume",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "web.tpl.guilds.manager.b_11",
-      "en": "Level of RANK in guild",
-      "translated": "Nivelul RANK în breaslă",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

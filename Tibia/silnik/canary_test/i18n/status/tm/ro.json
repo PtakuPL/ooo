@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T10:03:41.851531Z"
+    "updated_at": "2026-02-17T10:56:40.650943Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -61334,5 +61334,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:54:19.779438Z"
+  },
+  "html.admin.notepad.html.text1": {
+    "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+    "text": "Acesta este blocnotesul dvs. personal. Asigurați-vă că îl salvați de fiecare dată când modificați ceva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:35.225436Z"
+  },
+  "html.error_box.html.text1": {
+    "src_hash": "c087b60f6c8f26752431e51e0431d217",
+    "text": "Au apărut următoarele erori:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:35.228175Z"
+  },
+  "html.characters.html.text1": {
+    "src_hash": "ee7aba1d32fa0915b96177dc291ca6c8",
+    "text": "Informații despre caracter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:35.229437Z"
+  },
+  "web.tpl.characters.td_5": {
+    "src_hash": "07ad815187b53dc2ceaf5ad6e0a12bb1",
+    "text": "Nivel:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:54.236164Z"
+  },
+  "web.tpl.characters.td_6": {
+    "src_hash": "e3cef3cf7f3b4d518a92aba74b52d4b6",
+    "text": "Experienţă:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:54.236533Z"
+  },
+  "web.tpl.characters.td_7": {
+    "src_hash": "f4b7053ac7d6eb1f75ad692ac27ddc59",
+    "text": "Nivel magic:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:54.236829Z"
+  },
+  "web.tpl.characters.td_9": {
+    "src_hash": "dfd641e2b0fae244ae4baa5762784e93",
+    "text": "Şedere:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:54.237754Z"
+  },
+  "web.tpl.characters.td_10": {
+    "src_hash": "b5397350cbd6dcc4fe899771c728f5d1",
+    "text": "Echilibru:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:58.765227Z"
+  },
+  "web.tpl.characters.td_11": {
+    "src_hash": "5ce1909b1a6bc4f0679f5e58f4e25e1a",
+    "text": "Casa:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:58.765489Z"
+  },
+  "web.tpl.characters.td_12": {
+    "src_hash": "6d1a32bbd3158a6927a6c8e7f84ca30e",
+    "text": "Guild abonament:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:58.766095Z"
+  },
+  "web.tpl.characters.b_16": {
+    "src_hash": "e34f8da975d37162e184369dc7aca213",
+    "text": "Misiuni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:56:58.766366Z"
   }
 }

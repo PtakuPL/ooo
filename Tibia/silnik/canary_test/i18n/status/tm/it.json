@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T10:04:09.251427Z"
+    "updated_at": "2026-02-17T10:57:09.986614Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -68670,5 +68670,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:54:46.340920Z"
+  },
+  "web.tpl.gallery.form.td_1": {
+    "src_hash": "240f3031f25601fa128bd4e15f0a37de",
+    "text": "Commento:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:05.865675Z"
+  },
+  "html.admin.notepad.html.text1": {
+    "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+    "text": "Questo è il tuo blocco note personale. Assicurati di salvarlo ogni volta che modifichi qualcosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:05.886622Z"
+  },
+  "html.error_box.html.text1": {
+    "src_hash": "c087b60f6c8f26752431e51e0431d217",
+    "text": "Si sono verificati i seguenti errori:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:05.887728Z"
+  },
+  "html.characters.html.text1": {
+    "src_hash": "ee7aba1d32fa0915b96177dc291ca6c8",
+    "text": "Informazioni sui personaggi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:05.888266Z"
+  },
+  "html.eventcalendar.html.text1": {
+    "src_hash": "2188cd2d9c51fd7e317fe846c19db229",
+    "text": "*L'evento inizia/termina al salvataggio del server di questo giorno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:05.912802Z"
+  },
+  "web.tpl.characters.td_7": {
+    "src_hash": "f4b7053ac7d6eb1f75ad692ac27ddc59",
+    "text": "Livello magico:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:19.090236Z"
+  },
+  "web.tpl.characters.td_8": {
+    "src_hash": "1a33cbb78fb3948945373f8ee12e3d25",
+    "text": "Frammenti:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:19.090451Z"
+  },
+  "web.tpl.characters.td_9": {
+    "src_hash": "dfd641e2b0fae244ae4baa5762784e93",
+    "text": "Residenza:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:19.090639Z"
+  },
+  "web.tpl.characters.td_10": {
+    "src_hash": "b5397350cbd6dcc4fe899771c728f5d1",
+    "text": "Bilancia:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:19.090812Z"
+  },
+  "web.tpl.characters.td_11": {
+    "src_hash": "5ce1909b1a6bc4f0679f5e58f4e25e1a",
+    "text": "Casa:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:19.090973Z"
+  },
+  "web.tpl.characters.td_12": {
+    "src_hash": "6d1a32bbd3158a6927a6c8e7f84ca30e",
+    "text": "Guild abbonamento:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:23.581166Z"
+  },
+  "web.tpl.characters.b_16": {
+    "src_hash": "e34f8da975d37162e184369dc7aca213",
+    "text": "Missioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:23.581394Z"
+  },
+  "web.tpl.characters.b_17": {
+    "src_hash": "9ccda2d50a1ee1b73ee1f048eb397aa8",
+    "text": "Attrezzatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:23.581586Z"
+  },
+  "web.tpl.characters.b_18": {
+    "src_hash": "ce7e24f9084598f5aa4e5552c59d55bc",
+    "text": "Morti dei personaggi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:23.581820Z"
+  },
+  "web.tpl.characters.b_19": {
+    "src_hash": "fdaa0676944e48809b2db825d9eebff7",
+    "text": "Vittime",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:23.581991Z"
+  },
+  "web.tpl.characters.b_20": {
+    "src_hash": "8c09001c99ecb6fdd8d6023fcf039054",
+    "text": "Firma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:25.589367Z"
+  },
+  "web.tpl.characters.td_21": {
+    "src_hash": "e5cb8489f57db7c15eed3258e48cd5f3",
+    "text": "Sito web:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:57:25.589588Z"
   }
 }

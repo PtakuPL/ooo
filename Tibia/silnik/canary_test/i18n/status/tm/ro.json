@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:31:45.879128Z"
+    "updated_at": "2026-02-17T06:06:29.405141Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -46830,5 +46830,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:05:01.916692Z"
+  },
+  "web.tpl.buttons.submit.set_1": {
+    "src_hash": "a4d3b161ce1309df1c4e25df28694b7b",
+    "text": "Trimiteți",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.457090Z"
+  },
+  "web.tpl.account.characters.delete.set_1": {
+    "src_hash": "5de83699e1457042cba295b497852fad",
+    "text": "Șterge caracterul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.458870Z"
+  },
+  "web.tpl.team.b_4": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.459958Z"
+  },
+  "web.tpl.team.b_6": {
+    "src_hash": "a235efe8452eee7c9cbdb6dbe3d6b978",
+    "text": "Ultima conectare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.460287Z"
+  },
+  "web.tpl.team.b_11": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.461047Z"
+  },
+  "web.tpl.team.b_13": {
+    "src_hash": "a235efe8452eee7c9cbdb6dbe3d6b978",
+    "text": "Ultima conectare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.461456Z"
+  },
+  "web.tpl.admin.changelog.th_3": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tip",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.462377Z"
+  },
+  "web.tpl.admin.changelog.th_4": {
+    "src_hash": "b3c5b21d2cb47cc950fd4667edaf404c",
+    "text": "Unde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.462601Z"
+  },
+  "web.tpl.guilds.view.td_2": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.464370Z"
+  },
+  "web.tpl.guilds.view.td_4": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.464762Z"
+  },
+  "web.tpl.bans.b_2": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tip",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.466443Z"
+  },
+  "web.tpl.buttons.edit.set_1": {
+    "src_hash": "7dce122004969d56ae2e0245cb754d35",
+    "text": "Edita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.466979Z"
+  },
+  "web.tpl.admin.tools.teleport.label_1": {
+    "src_hash": "c16dac173aa8377a1c07aed8e0472f7c",
+    "text": "Oraş",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.467465Z"
+  },
+  "web.tpl.characters.td_13": {
+    "src_hash": "c876f03d2c118328e739a674c18b2639",
+    "text": "Ultima conectare:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.468768Z"
+  },
+  "web.tpl.characters.td_14": {
+    "src_hash": "5cf56e792ddebc9108d9ce6011ee1b33",
+    "text": "Creat:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.469150Z"
+  },
+  "web.tpl.characters.td_15": {
+    "src_hash": "5e910288ae0feea0e0a357e03c5a1905",
+    "text": "Starea contului:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.469445Z"
+  },
+  "web.tpl.characters.b_27": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.470288Z"
+  },
+  "web.tpl.houses.b_4": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.471135Z"
+  },
+  "web.tpl.houses.b_7": {
+    "src_hash": "c16dac173aa8377a1c07aed8e0472f7c",
+    "text": "Oraş",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.471404Z"
+  },
+  "web.tpl.houses.b_8": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.471626Z"
+  },
+  "web.tpl.buttons.create_character.set_1": {
+    "src_hash": "d052014aed0475c04648cace9b31cf7d",
+    "text": "Creați Personaj",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.473075Z"
+  },
+  "web.tpl.buttons.delete_character.set_1": {
+    "src_hash": "5de83699e1457042cba295b497852fad",
+    "text": "Șterge caracterul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.475048Z"
+  },
+  "html.forum.move_thread.html.text1": {
+    "src_hash": "f89e73354656130dbb4f50fe616737d9",
+    "text": "Mutați firul pe o altă placă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.487116Z"
+  },
+  "html.eventcalendar.html.text1": {
+    "src_hash": "2188cd2d9c51fd7e317fe846c19db229",
+    "text": "* Evenimentul începe/se termină la salvarea serverului din această zi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:25.511821Z"
+  },
+  "web.tpl.account.characters.change_name.span_2": {
+    "src_hash": "4882d267883763e78273b9d4799bf296",
+    "text": "Nume nou:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:35.595342Z"
+  },
+  "web.tpl.guilds.change_logo.set_1": {
+    "src_hash": "79bcf7e0021263c49087eeb0640fd2c0",
+    "text": "Schimbați sigla breslei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:35.595607Z"
+  },
+  "web.tpl.guilds.change_logo.b_1": {
+    "src_hash": "6991ddb3a4a686598a33ce1b303df808",
+    "text": "jpg, gif, png, bmp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:35.595897Z"
+  },
+  "web.tpl.forum.new_thread.b_1": {
+    "src_hash": "36e1a8d34180d54508cdf954e42e15c8",
+    "text": "Postează un răspuns nou",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:37.903592Z"
   }
 }

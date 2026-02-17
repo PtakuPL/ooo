@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:32:24.088750Z"
+    "updated_at": "2026-02-17T06:06:46.008672Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -52630,5 +52630,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:05:27.518237Z"
+  },
+  "web.tpl.changelog.b_3": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.040155Z"
+  },
+  "web.tpl.buttons.submit.set_1": {
+    "src_hash": "a4d3b161ce1309df1c4e25df28694b7b",
+    "text": "Invia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.041213Z"
+  },
+  "web.tpl.admin.news.table.th_2": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.042213Z"
+  },
+  "web.tpl.account.characters.delete.set_1": {
+    "src_hash": "5de83699e1457042cba295b497852fad",
+    "text": "Elimina carattere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.043044Z"
+  },
+  "web.tpl.team.b_4": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.044005Z"
+  },
+  "web.tpl.team.b_6": {
+    "src_hash": "a235efe8452eee7c9cbdb6dbe3d6b978",
+    "text": "Ultimo accesso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.044354Z"
+  },
+  "web.tpl.team.b_11": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.045129Z"
+  },
+  "web.tpl.team.b_13": {
+    "src_hash": "a235efe8452eee7c9cbdb6dbe3d6b978",
+    "text": "Ultimo accesso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.045564Z"
+  },
+  "web.tpl.admin.changelog.th_1": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.046218Z"
+  },
+  "web.tpl.admin.changelog.th_3": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tipo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.046635Z"
+  },
+  "web.tpl.guilds.view.td_2": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.048573Z"
+  },
+  "web.tpl.guilds.view.td_4": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.048981Z"
+  },
+  "web.tpl.bans.b_2": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tipo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.050759Z"
+  },
+  "web.tpl.admin.tools.teleport.label_1": {
+    "src_hash": "c16dac173aa8377a1c07aed8e0472f7c",
+    "text": "Città",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.051847Z"
+  },
+  "web.tpl.characters.td_13": {
+    "src_hash": "c876f03d2c118328e739a674c18b2639",
+    "text": "Ultimo accesso:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.053261Z"
+  },
+  "web.tpl.characters.td_14": {
+    "src_hash": "5cf56e792ddebc9108d9ce6011ee1b33",
+    "text": "Creato:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.053635Z"
+  },
+  "web.tpl.characters.td_15": {
+    "src_hash": "5e910288ae0feea0e0a357e03c5a1905",
+    "text": "Stato dell'account:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.053948Z"
+  },
+  "web.tpl.characters.b_27": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.054851Z"
+  },
+  "web.tpl.houses.b_4": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.055746Z"
+  },
+  "web.tpl.houses.b_7": {
+    "src_hash": "c16dac173aa8377a1c07aed8e0472f7c",
+    "text": "Città",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.056033Z"
+  },
+  "web.tpl.houses.b_8": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.056272Z"
+  },
+  "web.tpl.buttons.create_character.set_1": {
+    "src_hash": "d052014aed0475c04648cace9b31cf7d",
+    "text": "Crea personaggio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.057712Z"
+  },
+  "web.tpl.buttons.delete_character.set_1": {
+    "src_hash": "5de83699e1457042cba295b497852fad",
+    "text": "Elimina carattere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:42.059702Z"
+  },
+  "web.tpl.changelog.b_2": {
+    "src_hash": "b3c5b21d2cb47cc950fd4667edaf404c",
+    "text": "Dove",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:48.559968Z"
+  },
+  "web.tpl.account.redirect.set_1": {
+    "src_hash": "d520143a7c98ecaaf79a086042992eda",
+    "text": "Accesso riuscito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:52.162355Z"
+  },
+  "web.tpl.forum.move_thread.b_1": {
+    "src_hash": "f89e73354656130dbb4f50fe616737d9",
+    "text": "Sposta il thread su un'altra bacheca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:52.162676Z"
   }
 }

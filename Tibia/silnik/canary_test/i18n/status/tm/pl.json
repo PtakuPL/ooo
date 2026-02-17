@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:05:12.529794Z"
+    "updated_at": "2026-02-17T03:49:43.390488Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75269,7 +75269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:05:15.096151Z"
+    "updated_at": "2026-02-17T03:49:46.012250Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75277,7 +75277,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:05:15.096609Z"
+    "updated_at": "2026-02-17T03:49:46.012673Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75285,7 +75285,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:05:15.097010Z"
+    "updated_at": "2026-02-17T03:49:46.013076Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -107710,5 +107710,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:30:26.039840Z"
+  },
+  "item.15703.name": {
+    "src_hash": "e03f782c285cb1749aec8258eaecb0cd",
+    "text": "gnomski kryształ naprawczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:50.338288Z"
+  },
+  "item.15802.name": {
+    "src_hash": "6b90ae6702b9836ddf729382b3308ed3",
+    "text": "pakiet kryształów gnomów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:50.338740Z"
+  },
+  "item.15817.desc": {
+    "src_hash": "85c7ef7f6a17d9e060bc0182323c8d83",
+    "text": "Jest puste. Zbierz trochę CZERWONYCH zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:57.276357Z"
+  },
+  "item.15817.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "gnomi zbieracz zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:57.276639Z"
+  },
+  "item.15818.desc": {
+    "src_hash": "de6402e7310054867bd91403eaf4018a",
+    "text": "Zawiera czerwone zarodniki. Zbierz trochę ZIELONYCH zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:57.277020Z"
+  },
+  "item.15818.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "gnomi zbieracz zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:57.277285Z"
+  },
+  "item.15819.desc": {
+    "src_hash": "356977365fb1ef63f4a7fed4ca1c3073",
+    "text": "Zawiera czerwone i zielone zarodniki. Zbierz trochę NIEBIESKICH zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:49:57.277696Z"
+  },
+  "item.15819.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "gnomi zbieracz zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:02.290599Z"
+  },
+  "item.15820.desc": {
+    "src_hash": "0157edfa55d4c042852b51df197da7cf",
+    "text": "Zawiera zarodniki czerwone, zielone i niebieskie. Zbierz trochę ŻÓŁTYCH zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:02.291058Z"
+  },
+  "item.15820.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "gnomi zbieracz zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:02.291327Z"
+  },
+  "item.15821.desc": {
+    "src_hash": "3b93915ccaa1d2a3d8dc56b9d380d092",
+    "text": "Zawiera zarodniki czerwone, zielone, niebieskie i żółte. Dostarcz to gnomom",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:02.291755Z"
+  },
+  "item.15821.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "gnomi zbieracz zarodników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:02.292020Z"
+  },
+  "item.15825.desc": {
+    "src_hash": "4379caabf817063dc311602417cbedd0",
+    "text": "Przy odrobinie szczęścia być może uda ci się wyrwać kamień szlifierski z formacji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:09.682043Z"
+  },
+  "item.15826.desc": {
+    "src_hash": "51467f4961cd9a8f78fdeff6dfa5aee6",
+    "text": "Musisz dostarczyć Osełkę, póki jest jeszcze gorąca. Rozpadnie się w ciągu godziny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:09.682613Z"
+  },
+  "item.15828.desc": {
+    "src_hash": "50283fcdee5a10ddc24b58e33308b07f",
+    "text": "Świnkę należy zwrócić właścicielowi w ciągu godziny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:09.683009Z"
+  },
+  "item.15833.desc": {
+    "src_hash": "50283fcdee5a10ddc24b58e33308b07f",
+    "text": "Świnkę należy zwrócić właścicielowi w ciągu godziny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:09.683393Z"
+  },
+  "item.16101.desc": {
+    "src_hash": "ce3f18c87dfbbff371342fa3d1f45a36",
+    "text": "Gnomiczny środek do usuwania śluzu działa cuda na brudne przedmioty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:09.683785Z"
+  },
+  "item.16115.desc": {
+    "src_hash": "d5d85a34bcf827f3dc1428b34d645f60",
+    "text": "Zawiera wieczny ogień",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:17.094802Z"
+  },
+  "item.16117.desc": {
+    "src_hash": "10438bfcedd9e5ef0cda5fe526e942af",
+    "text": "Prawdziwa laska starych, plujących śluzowatymi kulami",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:17.095185Z"
+  },
+  "item.16118.desc": {
+    "src_hash": "b1ef71d71e5133b13f0adef57d958cbb",
+    "text": "Ciska lodową esencją lodowców Svargrond",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:17.095664Z"
+  },
+  "item.16128.name": {
+    "src_hash": "8d07ec1265deca8f6a1aa9f30e433705",
+    "text": "drobny krystaliczny znak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:17.095939Z"
+  },
+  "item.16138.name": {
+    "src_hash": "69a4d218c97c5210ada2c224db49b82d",
+    "text": "krystaliczne kolce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:17.096171Z"
+  },
+  "item.16139.name": {
+    "src_hash": "a6a6008235a309d5bae70cb553d3d572",
+    "text": "ogromny kawał",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:24.386510Z"
+  },
+  "item.16140.name": {
+    "src_hash": "da653799474305b7bb1bd90d1b4d2733",
+    "text": "okropny kawał",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:24.386741Z"
+  },
+  "item.16141.name": {
+    "src_hash": "2e6502551e7cb4126af8db9e3ff64091",
+    "text": "śruba pryzmatyczna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:24.386963Z"
+  },
+  "item.16142.name": {
+    "src_hash": "ec06efaae08c88d1e5368e869d39627e",
+    "text": "śruba wiertnicza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:50:24.387170Z"
   }
 }

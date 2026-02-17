@@ -1,8 +1,8 @@
 {
-  "total_cycles": 213,
+  "total_cycles": 214,
   "mode": "AUTO_TRANSLATE",
-  "category": "sv",
-  "last_update": "2026-02-17T04:49:11.339885",
+  "category": "pl",
+  "last_update": "2026-02-17T04:50:28.203527",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,135 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sv",
-    "json_file": "spells.json",
-    "keys_to_translate": 768,
-    "guard_fail": 0,
+    "language": "pl",
+    "json_file": "items.json",
+    "keys_to_translate": 11273,
+    "guard_fail": 1039,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 31,
+    "recent_examples": [
+      {
+        "key": "item.15819.desc",
+        "en": "It contains red and green spores. Gather some BLUE spores",
+        "translated": "Zawiera czerwone i zielone zarodniki. Zbierz troch\u0119 NIEBIESKICH zarodnik\u00f3w",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15819.name",
+        "en": "gnomish spore gatherer",
+        "translated": "gnomi zbieracz zarodnik\u00f3w",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15820.desc",
+        "en": "It contains red, green and blue spores. Gather some YELLOW spores",
+        "translated": "Zawiera zarodniki czerwone, zielone i niebieskie. Zbierz troch\u0119 \u017b\u00d3\u0141TYCH zarodnik\u00f3w",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15820.name",
+        "en": "gnomish spore gatherer",
+        "translated": "gnomi zbieracz zarodnik\u00f3w",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15821.desc",
+        "en": "It contains red, green, blue and yellow spores. Deliver it to the gnomes",
+        "translated": "Zawiera zarodniki czerwone, zielone, niebieskie i \u017c\u00f3\u0142te. Dostarcz to gnomom",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15821.name",
+        "en": "gnomish spore gatherer",
+        "translated": "gnomi zbieracz zarodnik\u00f3w",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15825.desc",
+        "en": "With some luck you might be able to pluck a grindstone from the formation.",
+        "translated": "Przy odrobinie szcz\u0119\u015bcia by\u0107 mo\u017ce uda ci si\u0119 wyrwa\u0107 kamie\u0144 szlifierski z formacji.",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15826.desc",
+        "en": "You have to deliver the Whetstone while it is still hot. It will crumble within one hour",
+        "translated": "Musisz dostarczy\u0107 Ose\u0142k\u0119, p\u00f3ki jest jeszcze gor\u0105ca. Rozpadnie si\u0119 w ci\u0105gu godziny",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15828.desc",
+        "en": "The little pig needs to be returned to its keeper within an hour",
+        "translated": "\u015awink\u0119 nale\u017cy zwr\u00f3ci\u0107 w\u0142a\u015bcicielowi w ci\u0105gu godziny",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.15833.desc",
+        "en": "The little pig needs to be returned to its keeper within an hour",
+        "translated": "\u015awink\u0119 nale\u017cy zwr\u00f3ci\u0107 w\u0142a\u015bcicielowi w ci\u0105gu godziny",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16101.desc",
+        "en": "The gnomish slime remover works wonders on mucky objects",
+        "translated": "Gnomiczny \u015brodek do usuwania \u015bluzu dzia\u0142a cuda na brudne przedmioty",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16115.desc",
+        "en": "It contains the everblazing fire",
+        "translated": "Zawiera wieczny ogie\u0144",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16117.desc",
+        "en": "A true staff of old, spitting slimy orbs",
+        "translated": "Prawdziwa laska starych, pluj\u0105cych \u015bluzowatymi kulami",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16118.desc",
+        "en": "Hurls the icy essence of the Svargrond glaciers",
+        "translated": "Ciska lodow\u0105 esencj\u0105 lodowc\u00f3w Svargrond",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16128.name",
+        "en": "minor crystalline token",
+        "translated": "drobny krystaliczny znak",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16138.name",
+        "en": "crystalline spikes",
+        "translated": "krystaliczne kolce",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16139.name",
+        "en": "humongous chunk",
+        "translated": "ogromny kawa\u0142",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16140.name",
+        "en": "hideous chunk",
+        "translated": "okropny kawa\u0142",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16141.name",
+        "en": "prismatic bolt",
+        "translated": "\u015bruba pryzmatyczna",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.16142.name",
+        "en": "drill bolt",
+        "translated": "\u015bruba wiertnicza",
+        "source": "google_translate"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

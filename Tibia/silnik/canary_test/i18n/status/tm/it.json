@@ -60142,5 +60142,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:21:34.709947Z"
+  },
+  "event.player.msg1": {
+    "src_hash": "ab000cbf814d78ec4e569ba8b021b622",
+    "text": "event.player.msg_move_fast",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:14.296411Z"
+  },
+  "event.player.msg2": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ricompensa-giornaliera-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:14.296856Z"
+  },
+  "event.player.msg3": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ricompensa-giornaliera-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:14.297255Z"
+  },
+  "event.player.msg4": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ricompensa-giornaliera-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:14.297512Z"
+  },
+  "event.player.msg5": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ricompensa-giornaliera-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:14.297750Z"
+  },
+  "event.player.msg_1": {
+    "src_hash": "68362d48bbe58ffe6e80d83dddad1f45",
+    "text": "Non stai più ricaricando la resistenza, poiché hai lasciato una zona di rigenerazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:19.042516Z"
+  },
+  "event.player.msg_2": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "Si è verificato un errore durante l'elaborazione della segnalazione, contatta un gamemaster.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:19.043069Z"
+  },
+  "event.player.msg_3": {
+    "src_hash": "24dc08a041db9d4297f1d6df6a7573cf",
+    "text": "Grazie per aver segnalato {}. Il tuo rapporto \\z\n\tverrà elaborato dal team {} il prima possibile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:19.043577Z"
+  },
+  "event.player.msg_4": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "Si è verificato un errore durante l'elaborazione della segnalazione, contatta un gamemaster.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:19.044025Z"
+  },
+  "event.player.msg_5": {
+    "src_hash": "ad93762e1a1a1337775cbbf49b508440",
+    "text": "La tua segnalazione è in fase di elaborazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:19.044354Z"
+  },
+  "event.player.say_1": {
+    "src_hash": "a65ae4b9d622f5aa0ad9a90c999f9440",
+    "text": "Dai da mangiare alla tartaruga, ora puoi passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:24.864703Z"
+  },
+  "event.player.msg_move_fast": {
+    "src_hash": "c6688013ffa822ec6f74cbb8fceb229e",
+    "text": "Non puoi spostare quell'oggetto così velocemente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:24.865078Z"
+  },
+  "event.player.msg_report_sent": {
+    "src_hash": "c1d13c15a6ed00ee9e451cc57d9a46a2",
+    "text": "La tua segnalazione è stata inviata a {server}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:24.865431Z"
+  },
+  "event.player.stamina_pz_recharge": {
+    "src_hash": "72e7da63f6db4ec35e7ed0a5d612157c",
+    "text": "Nella zona di protezione. Ricarica la resistenza di {0} ogni {1} minuti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:23:24.865800Z"
   }
 }

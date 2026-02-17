@@ -1,25 +1,18 @@
 {
-  "timestamp": "2026-02-17T08:22:43.314925Z",
+  "timestamp": "2026-02-17T08:24:19.387581Z",
   "checked_entries": 100,
-  "issues_found": 19,
+  "issues_found": 18,
   "issues_by_type": {
-    "identical_to_en": 3,
-    "identical_to_en_exempt": 17,
+    "identical_to_en_exempt": 15,
+    "identical_to_en": 2,
     "artifact_token": 16,
-    "suspicious_log_critical": 38,
-    "suspicious_log_high": 161,
-    "suspicious_log_low": 1,
-    "suspicious_rejected_critical": 167,
-    "suspicious_rejected_high": 33
+    "suspicious_log_high": 131,
+    "suspicious_log_critical": 17,
+    "suspicious_log_medium": 52,
+    "suspicious_rejected_critical": 176,
+    "suspicious_rejected_high": 24
   },
   "issues": [
-    {
-      "key": "achievement.170.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Warlock",
-      "translated": "Warlock"
-    },
     {
       "key": "startup.functions.msg1",
       "lang": "ro",

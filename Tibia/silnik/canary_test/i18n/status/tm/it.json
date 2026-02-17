@@ -40830,5 +40830,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:51:07.992856Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Non puoi entrare in una zona di protezione dopo aver attaccato un altro giocatore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:56:58.912707Z"
+  },
+  "cpp.combat.mana_spectator_self": {
+    "src_hash": "0f66d3c30d3f84cc1d63ffb643ff825b",
+    "text": "{0} perde {1} mana a causa del proprio attacco di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:02.845739Z"
+  },
+  "cpp.combat.mana_target_by": {
+    "src_hash": "fc7fcfc62b9171037311480be0e23d6a",
+    "text": "Perdi {0} mana a causa di un attacco di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:02.846141Z"
+  },
+  "cpp.combat.mana_target_by_crit": {
+    "src_hash": "a03f0ea928d07120fde4c9879d6ea26b",
+    "text": "Perdi {0} mana a causa di un attacco critico di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:08.166289Z"
+  },
+  "cpp.combat.mana_target_none": {
+    "src_hash": "20ef4502ade216cf1cafe56c021ecfce",
+    "text": "Perdi {0} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:08.166551Z"
+  },
+  "cpp.combat.mana_target_self": {
+    "src_hash": "58b26d0a93ef4cb5267cf5bbc7213d82",
+    "text": "Perdi {0} mana a causa del tuo stesso attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:08.166876Z"
+  },
+  "cpp.combat.mana_target_self_crit": {
+    "src_hash": "74dfafacc1bd8149fce3cc7fb59ead69",
+    "text": "Perdi {0} mana a causa del tuo stesso attacco critico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:08.167210Z"
+  },
+  "cpp.combat.neutral": {
+    "src_hash": "5da248ea6840aca1ae2b417b17982a89",
+    "text": "neutro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:08.167416Z"
+  },
+  "cpp.combat.onslaught": {
+    "src_hash": "c4773303d7c4875c1f36d4336aadcc40",
+    "text": "(Assalto)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:14.709921Z"
+  },
+  "cpp.combat.physical": {
+    "src_hash": "842e5a39b01fadaead6970f5ff5de1d5",
+    "text": "fisico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:14.710206Z"
+  },
+  "cpp.combat.restore_attacker": {
+    "src_hash": "83f116588f2a7307316ecad99385c796",
+    "text": "Hai ripristinato {0} per {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:14.710515Z"
+  },
+  "cpp.combat.restore_spectator_none": {
+    "src_hash": "09a0ab81e660b71f4f4cc9b9d7812d0a",
+    "text": "{0} è stato ripristinato per {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:14.710833Z"
+  },
+  "cpp.combat.restore_spectator_other": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} ripristinato {1} per {2} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:14.711119Z"
+  },
+  "cpp.combat.restore_spectator_self": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} ripristinato {1} per {2} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:20.490236Z"
+  },
+  "cpp.combat.restore_target_by": {
+    "src_hash": "bef65601919ccbf594ae459461288ccf",
+    "text": "Sei stato ripristinato da {0} per {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:20.490762Z"
+  },
+  "cpp.combat.restore_target_none": {
+    "src_hash": "ec620aeb2ffd23840995fe5ca7cb5ad5",
+    "text": "Sei stato ripristinato per {0} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:20.491212Z"
+  },
+  "cpp.combat.restore_target_self": {
+    "src_hash": "b4a6f6d2335e0c1c1d98aadc38ef7ee8",
+    "text": "Ti ripristini per {0} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:20.491578Z"
+  },
+  "cpp.combat.soulpit_crit": {
+    "src_hash": "0de92b11baed3c46711377c498d9e0a7",
+    "text": "(Critico Pozza dell'Anima)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:20.491814Z"
+  },
+  "cpp.combat.undefined": {
+    "src_hash": "5e543256c480ac577d30f76f9120eb74",
+    "text": "indefinito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:24.340136Z"
+  },
+  "cpp.combat.unknown": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "sconosciuto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:24.340325Z"
+  },
+  "cpp.creature.loot_of": {
+    "src_hash": "4a30228767b414cb6f86833679a177e0",
+    "text": "Bottino di {0}: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:24.340613Z"
+  },
+  "cpp.forge.consumed": {
+    "src_hash": "48fe8558ce14c4c865198444c538ecc5",
+    "text": "consumato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:24.340791Z"
+  },
+  "cpp.forge.convergence_suffix": {
+    "src_hash": "cbd96a7174e4ef54c7262b39648d2a84",
+    "text": "(convergenza)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:24.340981Z"
+  },
+  "cpp.forge.cores_one": {
+    "src_hash": "9706037c16e3de34d11ab684d385892b",
+    "text": "{0} nucleo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:31.498191Z"
+  },
+  "cpp.forge.cores_other": {
+    "src_hash": "94d093f1eb850dacc66b1cdc06862437",
+    "text": "{0} nuclei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:31.498411Z"
+  },
+  "cpp.forge.dust_one": {
+    "src_hash": "2d959a6724345ac9ff914ed532ebdc82",
+    "text": "{0} polvere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:31.498648Z"
+  },
+  "cpp.forge.dust_other": {
+    "src_hash": "2d959a6724345ac9ff914ed532ebdc82",
+    "text": "{0} polvere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:31.498841Z"
+  },
+  "cpp.forge.dust_to_slivers": {
+    "src_hash": "37b26b376eb1842f2fc33000e117de6a",
+    "text": "Convertita la polvere di {0} in scaglie di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:31.499162Z"
+  },
+  "cpp.forge.increase_dust_limit": {
+    "src_hash": "f8c3afbe06a4bb640af404f139849ccc",
+    "text": "Hai speso {0} polvere per aumentare il limite della polvere a {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:37.710516Z"
+  },
+  "cpp.forge.slivers_to_cores": {
+    "src_hash": "6c0edfce562f088b10405b6b95542d85",
+    "text": "Convertiti i frammenti di {0} in nucleo esaltato {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:37.710930Z"
+  },
+  "cpp.forge.successful": {
+    "src_hash": "30ae8fff8898dc197acd49d9c0797d20",
+    "text": "Riuscito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:37.711118Z"
+  },
+  "cpp.forge.tier_minus_one": {
+    "src_hash": "5bfcb48fdbfaffcafc684bf95e0809a9",
+    "text": "livello - 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:43.756563Z"
+  },
+  "cpp.forge.tier_plus_one": {
+    "src_hash": "849498470093cbd8abc5b4c568788280",
+    "text": "livello + 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:43.756761Z"
+  },
+  "cpp.forge.unchanged": {
+    "src_hash": "8d7b3d6b83c0a517eac07e1aac94b773",
+    "text": "invariato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:43.756935Z"
+  },
+  "cpp.forge.unknown": {
+    "src_hash": "013cf261f9ccf5d4f027bc001d0d1d0c",
+    "text": "(sconosciuto)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:43.757107Z"
+  },
+  "cpp.forge.unsuccessful": {
+    "src_hash": "500ada6743997288e65fb5a71e850928",
+    "text": "Senza successo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:43.757290Z"
+  },
+  "cpp.game.already_in_party": {
+    "src_hash": "9ad56a3ee470f206b412de66dacc0298",
+    "text": "{0} fa già parte di un gruppo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:50.760973Z"
+  },
+  "cpp.game.and_all_dropped_items": {
+    "src_hash": "57314e4f48f35d46903ed5f5422f6178",
+    "text": "e tutti gli oggetti caduti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:50.761250Z"
+  },
+  "cpp.game.and_no_items": {
+    "src_hash": "b714485d863dd342f40e4eeaf2ac6b3d",
+    "text": "e nessuno degli elementi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:50.761540Z"
+  },
+  "cpp.game.and_some_items": {
+    "src_hash": "37ad1655a715e5355860d0b53e9c49a2",
+    "text": "e alcuni degli oggetti caduti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:50.761818Z"
+  },
+  "cpp.game.but_no_gold": {
+    "src_hash": "bd70925b2625c01d55b78ebbc00c66c4",
+    "text": "ma niente dell'oro caduto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:50.762104Z"
+  },
+  "cpp.game.but_no_items": {
+    "src_hash": "cde3edb57eb1c534f0cf05ee7a1730cd",
+    "text": "ma nessuno degli oggetti rilasciati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:57:53.331118Z"
   }
 }

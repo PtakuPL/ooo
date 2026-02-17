@@ -111470,5 +111470,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:10:34.307051Z"
+  },
+  "gamestore.disabled.hireling_outfit_unlocked": {
+    "src_hash": "b801ac2888be1b8234d07665e787127d",
+    "text": "Ten strój najemnika jest już odblokowany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:20.697543Z"
+  },
+  "gamestore.disabled.max_blessing": {
+    "src_hash": "5096a4f628327814a247bb8a7ceaed7d",
+    "text": "Osiągnąłeś maksymalną kwotę tego błogosławieństwa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:20.697931Z"
+  },
+  "gamestore.disabled.max_hirelings": {
+    "src_hash": "07894d5477945cbabac01dbaf4d5c49f",
+    "text": "Kupiłeś już maksymalną liczbę dozwolonych najemników.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:20.698385Z"
+  },
+  "gamestore.disabled.max_prey_wildcards": {
+    "src_hash": "19b4910bc35b9b4357a1dbcd309465c2",
+    "text": "Masz już maksymalną liczbę dzikich kart ofiar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:20.698741Z"
+  },
+  "gamestore.disabled.max_reward_tokens": {
+    "src_hash": "844f047f2d6060c9de0920fcbfb47730",
+    "text": "Masz już maksymalną liczbę żetonów nagród.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:20.699086Z"
+  },
+  "gamestore.disabled.no_xp_boost_today": {
+    "src_hash": "2a92d796e7c8473fc626141413e28c73",
+    "text": "Na dzisiaj nie możesz kupić XP Boost.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:26.918366Z"
+  },
+  "gamestore.disabled.skill_unlocked": {
+    "src_hash": "8ab612c52a54010a72189135c41ac4f5",
+    "text": "Ta umiejętność jest już odblokowana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:26.919001Z"
+  },
+  "gamestore.error.all_prey_slots": {
+    "src_hash": "bf0969596200df8437238e701266dc47",
+    "text": "Odblokowałeś już wszystkie miejsca na ofiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:26.919666Z"
+  },
+  "gamestore.error.all_task_slots": {
+    "src_hash": "fb1c5f4f65f3e2e83df0222a76f58629",
+    "text": "Odblokowałeś już wszystkie miejsca na polowanie na zadania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:26.920400Z"
+  },
+  "gamestore.error.already_own_mount": {
+    "src_hash": "8dc46a1484f54e2257f464fe4f39730f",
+    "text": "Posiadasz już ten uchwyt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:26.921001Z"
+  },
+  "gamestore.error.already_own_outfit": {
+    "src_hash": "9401d88df0143dc879a724750ed58ff6",
+    "text": "Masz już ten strój.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:33.156697Z"
+  },
+  "gamestore.error.client10_hireling": {
+    "src_hash": "594704e70bf187eb9dc45cba1dd58c2b",
+    "text": "Nie możesz kupować najemników na kliencie 10. Zaloguj się ponownie na kliencie 12 i spróbuj ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:33.157208Z"
+  },
+  "gamestore.error.client10_hireling_name": {
+    "src_hash": "3e6a730fb48e4be399f9c645c8bfdcca",
+    "text": "Nie możesz kupić najemnika, zmień nazwę na kliencie 10, zaloguj się ponownie na kliencie 12 i spróbuj ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:33.157713Z"
+  },
+  "gamestore.error.client10_hireling_outfit": {
+    "src_hash": "e0e94adbbd7adad8a458bcfd66fe631d",
+    "text": "Nie możesz kupić stroju najemnika na kliencie 10. Zaloguj się ponownie na kliencie 12 i spróbuj ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:33.158290Z"
+  },
+  "gamestore.error.client10_hireling_sex": {
+    "src_hash": "c12b831cd5d37da1d6c9fa1059691b85",
+    "text": "Nie możesz kupić najemnika, zmienić płeć na kliencie 10, zaloguj się ponownie na kliencie 12 i spróbuj ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:33.158802Z"
+  },
+  "gamestore.error.client10_hireling_skill": {
+    "src_hash": "f3813c3f0e4d537dd76fb64514d68035",
+    "text": "Nie możesz kupić umiejętności najemnika na kliencie 10. Zaloguj się ponownie na kliencie 12 i spróbuj ponownie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:39.983559Z"
+  },
+  "gamestore.error.hireling_lamp_error": {
+    "src_hash": "48cb7da3cb55f6eaece0eb5eb3b3faef",
+    "text": "Błąd podczas dostawy lampy najemnej. Spróbuj ponownie później.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:39.983966Z"
+  },
+  "gamestore.error.hireling_limit": {
+    "src_hash": "65a8c0711d0b885796625ec6297018b2",
+    "text": "Nie możesz mieć więcej niż %s pracowników.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:39.984316Z"
+  },
+  "gamestore.error.item_add_error": {
+    "src_hash": "25d596f61fc1772ffcc44f7f722d220d",
+    "text": "Błąd podczas dodawania przedmiotu do skrzynki odbiorczej sklepu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:39.984673Z"
+  },
+  "gamestore.error.name_already_used": {
+    "src_hash": "8e64ff89eeff993ff2f6e5e707b9de07",
+    "text": "Ta nazwa jest już używana, spróbuj ponownie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:39.985028Z"
+  },
+  "gamestore.error.need_outfit_first": {
+    "src_hash": "4d303637cb76de0e641caa90cf46f3ca",
+    "text": "Musisz posiadać ten strój, zanim będziesz mógł kupić jego dodatek.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:45.839860Z"
+  },
+  "gamestore.error.no_results": {
+    "src_hash": "413b19de687dc07f746f993c7953a2af",
+    "text": "Nie znaleziono wyników dla „%s”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:45.840185Z"
+  },
+  "gamestore.error.not_enough_coins": {
+    "src_hash": "00f152726c3059d5ededb3a6d9181f98",
+    "text": "Nie masz wystarczającej liczby monet. Twój zakup został anulowany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:45.840585Z"
+  },
+  "gamestore.error.outfit_purchase_error": {
+    "src_hash": "e2484dcf2efeaae1f0c24898c712a2b2",
+    "text": "Wystąpił problem z zakupem stroju. Twój zakup został anulowany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:45.841069Z"
+  },
+  "gamestore.error.outfit_wrong_sex": {
+    "src_hash": "88c6b3a049f6cfdee4cbea7e422092c1",
+    "text": "Ten strój wydaje się nie pasować do Twojej płci, przepraszamy za to!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:45.841493Z"
+  },
+  "gamestore.error.prey_wildcard_limit": {
+    "src_hash": "45e3fc24adc260e7f76ff966c1ede47e",
+    "text": "Nie możesz posiadać więcej niż %s dzikich kart zdobyczy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:52.469035Z"
+  },
+  "gamestore.error.purchase_cancelled": {
+    "src_hash": "47e0f6edcb93ba7d0b54b2b95de4e92c",
+    "text": "Coś poszło nie tak. Twój zakup został anulowany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:52.469433Z"
+  },
+  "gamestore.error.reward_token_limit": {
+    "src_hash": "199aeadc072e569beb8f391ac3c56000",
+    "text": "Nie możesz posiadać więcej niż %s tokenów nagród.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:52.469875Z"
+  },
+  "gamestore.error.temple_in_fight": {
+    "src_hash": "09f2fcd51068683a5c8e41b9d849de09",
+    "text": "Nie możesz używać teleportu do świątyni w walce!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:52.470258Z"
+  },
+  "gamestore.error.too_many_purchases": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "W ciągu kilku chwil dokonujesz wielu zakupów jednocześnie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:11:52.470648Z"
+  },
+  "gamestore.error.unavailable_1": {
+    "src_hash": "e559faa50bf4ca3667b7c90b8bcfce9a",
+    "text": "Ta oferta jest niedostępna [1]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:00.746341Z"
+  },
+  "gamestore.error.unavailable_2": {
+    "src_hash": "47e58b411a771c18dadf0e46ba8330a2",
+    "text": "Ta oferta jest niedostępna [2]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:00.746825Z"
+  },
+  "gamestore.hireling.rename_select": {
+    "src_hash": "be43e1e02f42e5d32cba4637a4e73afd",
+    "text": "Zamknij okno sklepu, aby wybrać, którego najemnika należy zmienić na %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:00.747258Z"
+  },
+  "gamestore.hireling.sex_change_select": {
+    "src_hash": "a659354121de1de5cc32c75e516c78d5",
+    "text": "Zamknij okno sklepu, aby wybrać, któremu najemnikowi należy zmienić płeć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:00.747757Z"
+  },
+  "gamestore.modal.hireling_in_lamp": {
+    "src_hash": "9bf751565757beff33b74539473d4353",
+    "text": "Twój najemnik musi znajdować się w swojej lampie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:00.748119Z"
   }
 }

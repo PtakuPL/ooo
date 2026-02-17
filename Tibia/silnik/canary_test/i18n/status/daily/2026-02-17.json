@@ -1,10 +1,10 @@
 {
-  "cycles": 207,
+  "cycles": 208,
   "date": "2026-02-17",
   "errors": {
-    "count": 355
+    "count": 357
   },
-  "generated_at_utc": "2026-02-17T05:10:52Z",
+  "generated_at_utc": "2026-02-17T05:12:28Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -14,7 +14,7 @@
         },
         "ES": {
           "skipped": 0,
-          "translated": 4361
+          "translated": 4378
         },
         "IT": {
           "skipped": 0,
@@ -22,7 +22,7 @@
         },
         "PL": {
           "skipped": 0,
-          "translated": 3010
+          "translated": 3060
         },
         "RO": {
           "skipped": 0,

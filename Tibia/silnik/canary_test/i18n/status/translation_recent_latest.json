@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T03:15:14.289051Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T03:16:32.368324Z",
+  "language": "it",
+  "json_file": "spells.json",
+  "translated": 26,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "spell.glooth_fairy_skill_reducer.name",
+      "en": "glooth fairy skill reducer",
+      "translated": "riduttore di abilità della fata della tristezza",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.the_dreadorian_drown.name",
+      "en": "the dreadorian drown",
+      "translated": "il Dreadoriano annega",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.spitter_paralyze.name",
+      "en": "spitter paralyze",
+      "translated": "lo sputo paralizza",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "spell.big_skill_reducer.name",
+      "en": "big skill reducer",
+      "translated": "grande riduttore di abilità",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "spell.lizard_dragon_priest_summon.name",
+      "en": "lizard dragon priest summon",
+      "translated": "evocazione del sacerdote drago lucertola",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "spell.large_fire_ring.words",
+      "en": "###large_fire_ring",
+      "translated": "###large_fire_ring",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "spell.large_poison_ring.words",
+      "en": "###large_poison_ring",
+      "translated": "###large_veleno_anello",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "spell.quara_raider_watercreature.words",
+      "en": "###quara_sea_monster",
+      "translated": "###quara_sea_monster",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "spell.quara_raider_icering.words",
+      "en": "###quara_large_ice_ring",
+      "translated": "###quara_large_ice_ring",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "spell.quara_plunderer_cross.words",
+      "en": "###quara_cross_death",
+      "translated": "###quara_croce_morte",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "spell.mitmah_vanguard_hugeblackring.words",
+      "en": "###huge_black_ring",
+      "translated": "###anello_nero_enorme",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "spell.large_pink_ring.words",
+      "en": "###large_pink_ring",
+      "translated": "###anello_rosa_grande",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "spell.large_purple_ring_smoke.words",
+      "en": "###large_purple_ring",
+      "translated": "###anello_viola_grande",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "spell.hirintror_summon.name",
+      "en": "hirintror summon",
+      "translated": "convocazione dell'hirintror",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.weeper_paralyze.name",
+      "en": "weeper paralyze",
+      "translated": "paralizza il piangente",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.dark_torturer_skill_reducer.name",
+      "en": "dark torturer skill reducer",
+      "translated": "riduttore di abilità del torturatore oscuro",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.sabretooth_wave.name",
+      "en": "sabretooth wave",
+      "translated": "onda dai denti a sciabola",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "spell.big_energy_purple_wave2.name",
+      "en": "big energy purple wave2",
+      "translated": "onda viola di grande energia2",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.quara_raider_watersplash.words",
+      "en": "###quara_water_splash",
+      "translated": "###quara_water_splash",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.bonebeast_paralyze.name",
+      "en": "bonebeast paralyze",
+      "translated": "paralizzare la bestia ossea",
+      "source": "google_translate"
     }
   ]
 }

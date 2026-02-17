@@ -27790,5 +27790,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:09:49.210891Z"
+  },
+  "game.loot.container_not_held": {
+    "src_hash": "9dc7b7ad844f372874fc3cafe8d3723e",
+    "text": "Вы должны держать контейнер, чтобы использовать его в качестве контейнера для добычи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:37.396785Z"
+  },
+  "data.otservbr.global.npc.angelo.L58.1443": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid Крунора? Он вам рассказал, что здесь появилась новая пещера? Это верно. Я руководитель {project}, который пытается узнать больше об этом новом {area}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:45.498344Z"
+  },
+  "data.otservbr.global.npc.angelo.L60.1444": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Просто уйди с моего пути! Ты убил это прекрасное существо. Мне больше нечего сказать. Проклятый друид Крунора!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:45.498934Z"
+  },
+  "data.otservbr.global.npc.angelo.L64.1446": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Druid Крунора? Он вам рассказал, что здесь появилась новая пещера? Это верно. Я руководитель проекта, который пытается узнать больше об этой новой области.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:45.500131Z"
+  },
+  "data.otservbr.global.npc.angus.L633.1450": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Приветствую, что я могу для вас сделать?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:48.776196Z"
+  },
+  "data.otservbr.global.npc.archery.L64.538": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Добро пожаловать в магазин Archery!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:48.776881Z"
   }
 }

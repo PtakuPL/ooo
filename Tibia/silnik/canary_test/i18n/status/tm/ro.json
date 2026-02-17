@@ -36126,5 +36126,373 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T03:10:27.548964Z"
+  },
+  "data.otservbr.global.npc.cobra.L53.1172": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Aventurați calea decăderii!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.734963Z"
+  },
+  "data.otservbr.global.npc.testserver.assistant.L89.453": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Ești deja binecuvântat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.865681Z"
+  },
+  "data.otservbr.global.npc.walter.jaeger.L294.1181": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.880125Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L27.2215": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.907852Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L37.2216": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.908243Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L47.2217": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.908646Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L23.2224": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.909119Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L47.2225": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.909437Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.lost.exiles.L23.2213": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.909766Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.bone.flute.wall.L6.1939": {
+    "src_hash": "2c3314f94f2660ce75b9258cee700a76",
+    "text": "Ai găsit un flaut de os.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.913510Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L15.1964": {
+    "src_hash": "cc773a38983c2fac2b945284898315f4",
+    "text": "Scântei magice se rotesc în jurul cizmelor și dintr-o dată ești în altă parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.914021Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L17.1965": {
+    "src_hash": "de4509a38663b7aeecbd91bb59d54147",
+    "text": "Daca vrei sa porti aceste cizme trebuie sa stai intr-o zona de protectie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.914529Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L21.1966": {
+    "src_hash": "cb29b428a74e937af084be549a76dfa2",
+    "text": "Te-ai saturat de ultima utilizare a cizmelor, trebuie sa astepti o ora pentru a le folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.915211Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L5.1963": {
+    "src_hash": "4e9ac854b18934fcf5a5d7f5632f120d",
+    "text": "Trebuie să echipați cizma pentru a încerca să o utilizați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.915761Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.bird.cage.L9.2124": {
+    "src_hash": "7f2ce76d0f0ebe25d4d5096035d7d5e5",
+    "text": "Papagalul din peșteră poate fi dur, dar cumva nu a putut rezista acestei cușcă specială. Sau poate ai fost tu...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.920495Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.cobra.mini.bosses.L19.1826": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Treci de foc fără să primești nicio pagubă. Este acum sau niciodată...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.923385Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.quaidDen.L10.1828": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Cu puterea Custodianului întunecat încă ținând departe, ceața te împiedică să intri în bârlogul lui Quaid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.924118Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.ancient.feud.entrances.L15.2030": {
+    "src_hash": "52d221e336eda58b39fab73ac5f9bdc3",
+    "text": "Nu ești demn să călătorești după vuietul leului.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.924563Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L6.1681": {
+    "src_hash": "329ac6c30c0a8615e6c52a1e7d8fa9a7",
+    "text": "Adunați niște lapte de catus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.935036Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L6.1678": {
+    "src_hash": "9118efc5a37e978aea348be87f8b77e4",
+    "text": "Găsești un simbol auriu în fundul bazinului plin de sânge.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.935506Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.bone.L13.1773": {
+    "src_hash": "f63b4574be546a581f1d1191a64be28b",
+    "text": "Printre grămada de diverse oase găsiți o parte mare, goală, asemănătoare unei țevi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.946776Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.bone.L19.1774": {
+    "src_hash": "80a2909ce1f004d65194f1db48dca775",
+    "text": "Răscoliți grămada, dar nu reușiți să găsiți piese utile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.947352Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L40.1781": {
+    "src_hash": "2fffed7e55b475fea1241561e1dee3bf",
+    "text": "Folosești ceara topită pentru a-ți astupa urechile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.953115Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L50.1782": {
+    "src_hash": "81f34cd4feabd1b573f7f0287b5b7e09",
+    "text": "Ai amestecat primele ingrediente pentru a crea un unguent special. Dar încă nu este complet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.953693Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L55.1783": {
+    "src_hash": "de7e7625f949cdce38c79cc3d2a971de",
+    "text": "Ai amestecat ingredientele potrivite pentru a crea un unguent special. Cu acest unguent, puteți nepetrifica un obiect pietrificat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.954373Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L105.1791": {
+    "src_hash": "251bcb9238b80e3c253577b72c0388ca",
+    "text": "Scoți niște sânge din cristalul gol. Să sperăm că este de fapt sângele unei meduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.955273Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L53.1785": {
+    "src_hash": "ef7bc2864cae3121bb7c48e6572383bf",
+    "text": "Pe măsură ce folosești clopoțelul mic, un sunet nepământesc răsună dulce. În același moment, apele lacului încep să se învârtească.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.955968Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L63.1786": {
+    "src_hash": "04b60dd3858c883f70e9bda7222d43e4",
+    "text": "Un vârtej există deja în această zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.956379Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L82.1787": {
+    "src_hash": "9f25db585c3bc299d4755213e900b2e5",
+    "text": "Ai găsit o foaie de hârtie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.956790Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L90.1788": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Teancul de oase este gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.957248Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L94.1789": {
+    "src_hash": "17f363d5b28d6710eee10f1f445e69ef",
+    "text": "Ai găsit un mic clopot de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.957665Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L98.1790": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Teancul de oase este gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.958034Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.acidFishingRod.L23.1839": {
+    "src_hash": "b7edddd4772bae9ec1170cd75ad8532c",
+    "text": "Nu îndrăznești să atingi acolo rămășițe. Un cuvânt a fost sculptat în aceste oase iar și iar: 'K'muuh'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.959723Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L14.1855": {
+    "src_hash": "4ab71ab4da67fa5c8ce728839c451726",
+    "text": "Această carte îți vorbește despre o vrajă care îl atrage pe cel care o poartă spre cea mai energică ființă de lângă el.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.960373Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L15.1856": {
+    "src_hash": "da1ab3b85ba283abdcc703f5b418c6f9",
+    "text": "Este alcătuită din patru părți care au fost scoase din această carte. Ele trebuie citite împreună cu cântecele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.961002Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L18.1857": {
+    "src_hash": "669b2cb2f632101a665b1e379da7c9bb",
+    "text": "Trebuie să așteptați pentru a provoca din nou acest inamic!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.961568Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.ashes.L9.2012": {
+    "src_hash": "21e550e5f4f89244b713ae54210395c9",
+    "text": "Cenușa se învârte cu o viață proprie, amestecându-se cu scânteile altarului.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.966631Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L49.2242": {
+    "src_hash": "a0304a59736a9e5c7d77ebb88d3fd7b3",
+    "text": "Hopa! L-ai pierdut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.968953Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L53.2243": {
+    "src_hash": "73c8c82252387a98c60ce07b12cea6e3",
+    "text": "Vedeți apă cât de departe poate ajunge cu ochii. Niciun șarpe de mare la vedere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.969497Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L66.2244": {
+    "src_hash": "9bf585829f1e4bc7f4375831e888feec",
+    "text": "Se scapă! Ar trebui să-i spui căpitanului să câștige viteză!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.969991Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L72.2245": {
+    "src_hash": "b2b42110da55a7d88e116708a87b0316",
+    "text": "Există mai multe umbre sub suprafață. Aceasta trebuie să fie locația potrivită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.970565Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.moveevent.drume.entrance.L5.1644": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Ai fost în încăierare în ultimele 10 ore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.974704Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L13.2312": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedeți părțile împrăștiate ale unei nave naufragiate. În mod miraculos, telescopul navei a supraviețuit epavei și pare să fie încă intact.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.979407Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L16.2313": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Mai sunt niște scânduri și șuruburi libere. Nu poți folosi pluta așa, sigur se va scufunda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.979981Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L21.2314": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Folosești șurubul pentru a bate scândurile libere. Pluta ar trebui să fie navigabilă acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.980518Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L27.2315": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedeți părțile împrăștiate ale unei nave naufragiate. În mod miraculos, telescopul navei a supraviețuit epavei și pare să fie încă intact.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:15:52.981176Z"
   }
 }

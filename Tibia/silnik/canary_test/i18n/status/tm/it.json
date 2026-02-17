@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:30:47.515657Z"
+    "updated_at": "2026-02-17T03:16:03.460388Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -42622,5 +42622,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T03:14:59.206370Z"
+  },
+  "spell.devourer_wave.name": {
+    "src_hash": "51004d935f7b17d4917760e75bf9aa39",
+    "text": "onda divoratrice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:08.672606Z"
+  },
+  "spell.draken_abomination_curse.name": {
+    "src_hash": "5ad42b9cd41078259bb52459e47e5e5c",
+    "text": "maledizione dell'abominio dei draghi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:12.043208Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_1.name": {
+    "src_hash": "0e0b843358d258c61ebbd207325284e6",
+    "text": "riduttore di abilità del nano schiavo 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:12.043547Z"
+  },
+  "spell.lord_of_the_elements_paralyze.name": {
+    "src_hash": "2ac99af442165874bd9e7acc66c8ca01",
+    "text": "il signore degli elementi paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:12.043834Z"
+  },
+  "spell.large_purple_ring_smoke.name": {
+    "src_hash": "b36e86bd6d9bd21d4eeaef9f8107b54a",
+    "text": "grandeviola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:12.044037Z"
+  },
+  "spell.glooth_fairy_skill_reducer.name": {
+    "src_hash": "3abf98a0c4a18874c42447bba018b422",
+    "text": "riduttore di abilità della fata della tristezza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:12.044342Z"
+  },
+  "spell.the_dreadorian_drown.name": {
+    "src_hash": "cfec1a21dfbdeb6a27be3cb46600e0cd",
+    "text": "il Dreadoriano annega",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:15.846008Z"
+  },
+  "spell.spitter_paralyze.name": {
+    "src_hash": "81b6d0010c15fcc3b1cbb59613c45b4e",
+    "text": "lo sputo paralizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:15.846353Z"
+  },
+  "spell.big_skill_reducer.name": {
+    "src_hash": "54d5d7fb1c8f4e843d1087e9affad704",
+    "text": "grande riduttore di abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:15.846632Z"
+  },
+  "spell.lizard_dragon_priest_summon.name": {
+    "src_hash": "8b01714860ec4402119104f8a042bf86",
+    "text": "evocazione del sacerdote drago lucertola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:15.846914Z"
+  },
+  "spell.large_fire_ring.words": {
+    "src_hash": "409173720fb670fa7d5551d41f8463a8",
+    "text": "###large_fire_ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:15.847128Z"
+  },
+  "spell.large_poison_ring.words": {
+    "src_hash": "bf59fb280b10863844ba37f008761c19",
+    "text": "###large_veleno_anello",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:22.583766Z"
+  },
+  "spell.quara_raider_watercreature.words": {
+    "src_hash": "a96d0a96b13924dae67c594a16a3545f",
+    "text": "###quara_sea_monster",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:22.583999Z"
+  },
+  "spell.quara_raider_icering.words": {
+    "src_hash": "c1f5028fd85c2ff7a116a94b2a3f533c",
+    "text": "###quara_large_ice_ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:22.584217Z"
+  },
+  "spell.quara_plunderer_cross.words": {
+    "src_hash": "38c94988e5aad88194374365fd1748bc",
+    "text": "###quara_croce_morte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:22.584438Z"
+  },
+  "spell.mitmah_vanguard_hugeblackring.words": {
+    "src_hash": "3ef6c03c11adf3a26333ad5180f176d6",
+    "text": "###anello_nero_enorme",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:22.584656Z"
+  },
+  "spell.large_pink_ring.words": {
+    "src_hash": "cbf8148400b132cc3a2c59640538a3bd",
+    "text": "###anello_rosa_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:27.488399Z"
+  },
+  "spell.large_purple_ring_smoke.words": {
+    "src_hash": "bded71426d1b420d44bdde86835e4ea3",
+    "text": "###anello_viola_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:27.488948Z"
+  },
+  "spell.hirintror_summon.name": {
+    "src_hash": "226749efb9749411777adb1c1c80e050",
+    "text": "convocazione dell'hirintror",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:27.489456Z"
+  },
+  "spell.weeper_paralyze.name": {
+    "src_hash": "7ce49794752e61c5d55effd3450643ac",
+    "text": "paralizza il piangente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:27.489916Z"
+  },
+  "spell.dark_torturer_skill_reducer.name": {
+    "src_hash": "f6a8dde9975736c82c236072e2c49e6a",
+    "text": "riduttore di abilità del torturatore oscuro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:27.490643Z"
+  },
+  "spell.sabretooth_wave.name": {
+    "src_hash": "11ba6b246e2c16234efc841c315fb67a",
+    "text": "onda dai denti a sciabola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:32.292798Z"
+  },
+  "spell.big_energy_purple_wave2.name": {
+    "src_hash": "e9ac8c2be5127b9fed7d055e1210969c",
+    "text": "onda viola di grande energia2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:32.293076Z"
+  },
+  "spell.quara_raider_watersplash.words": {
+    "src_hash": "2dc5b1b7f52099443cad5fe2a320d74a",
+    "text": "###quara_water_splash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:32.293785Z"
+  },
+  "spell.bonebeast_paralyze.name": {
+    "src_hash": "6432a2882420f03ee4a993d56669b4d2",
+    "text": "paralizzare la bestia ossea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:16:32.294047Z"
   }
 }

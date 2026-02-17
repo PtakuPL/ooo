@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T02:53:32.540785Z",
+  "timestamp": "2026-02-17T02:54:54.783760Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 291696,
+    "translated_keys": 291698,
     "english_copy_keys": 166284,
     "missing_keys": 2155,
     "missing_files": 0,
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 2812,
-    "guard_reports_blocked": 2746,
+    "guard_reports_total": 2815,
+    "guard_reports_blocked": 2749,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2746
+    "cannot_translate_reports_visible": 2749
   },
   "cache": {
-    "lang_stats_hits": 49,
-    "lang_stats_misses": 3,
-    "lang_stats_hit_pct": 94.2,
+    "lang_stats_hits": 50,
+    "lang_stats_misses": 2,
+    "lang_stats_hit_pct": 96.2,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1973,
-    "lang_file_misses": 3,
+    "lang_file_hits": 1972,
+    "lang_file_misses": 4,
     "lang_file_hit_pct": 99.8,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T02:53:27.668965Z",
-    "cycle": 179,
+    "timestamp": "2026-02-17T02:54:49.333966Z",
+    "cycle": 180,
     "mode": "AUTO_TRANSLATE",
-    "category": "sv",
+    "category": "es",
     "events": {
-      "dispatch": 1877,
-      "mode_run": 46601
+      "dispatch": 429,
+      "mode_run": 61768
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T01:53:31.376842Z",
-    "window_end_utc": "2026-02-17T02:53:31.376842Z",
+    "window_start_utc": "2026-02-17T01:54:53.611913Z",
+    "window_end_utc": "2026-02-17T02:54:53.611913Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -92,24 +92,18 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 4207,
-    "guard_fail": 3173,
-    "guard_fail_rate_pct": 43.0,
+    "translated": 4094,
+    "guard_fail": 1789,
+    "guard_fail_rate_pct": 30.4,
     "no_progress_entries": 1,
     "no_progress_rate_pct": 0.9,
-    "throughput_keys_per_h": 2325.9,
-    "suspicious_total": 14474,
+    "throughput_keys_per_h": 2293.6,
+    "suspicious_total": 14395,
     "top_guard_fail_targets": [
       {
-        "target": "pl/items.json",
-        "translated": 32,
-        "guard_fail": 1038,
-        "guard_command": 0
-      },
-      {
         "target": "pl/npc.json",
-        "translated": 100,
-        "guard_fail": 772,
+        "translated": 50,
+        "guard_fail": 391,
         "guard_command": 0
       },
       {
@@ -147,19 +141,25 @@
         "translated": 48,
         "guard_fail": 52,
         "guard_command": 0
+      },
+      {
+        "target": "sv/server.json",
+        "translated": 50,
+        "guard_fail": 50,
+        "guard_command": 0
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T02:53:27.605544Z",
+      "timestamp": "2026-02-17T02:54:49.871542Z",
       "checked_entries": 100,
-      "issues_found": 7,
+      "issues_found": 14,
       "issues_by_type": {
-        "identical_to_en_exempt": 11,
-        "artifact_token": 7,
-        "suspicious_log_high": 131,
-        "suspicious_log_critical": 68,
+        "identical_to_en_exempt": 29,
+        "artifact_token": 14,
+        "suspicious_log_high": 130,
+        "suspicious_log_critical": 69,
         "suspicious_log_low": 1,
         "suspicious_rejected_critical": 163,
         "suspicious_rejected_high": 37
@@ -213,10 +213,59 @@
           "type": "artifact_token",
           "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
           "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+        },
+        {
+          "key": "npc.captain_haba_open_sea.larboard_1",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.say_3",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+          "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.starboard_1",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.straight_3",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+          "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.straight_5",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+        },
+        {
+          "key": "npc.lardoc_bashsmite.multi_3",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+        },
+        {
+          "key": "npc.lardoc_bashsmite.multi_9",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
         }
       ],
       "threshold": 10,
-      "slow_mode": false
+      "slow_mode": true
     },
     "dashboard": {
       "tr": {
@@ -231,15 +280,15 @@
         "quality_score": 77.5
       },
       "pl": {
-        "last_cycle": "2026-02-17T02:53:25.511910Z",
-        "last_translated": 3,
-        "total_suspicious": 15579,
-        "total_rejected": 979,
-        "total_gt_guard_fail": 2684,
-        "cycles": 872,
-        "quality_score": 67.2,
-        "last_audit": "2026-02-17T02:53:27.605544Z",
-        "issues_count": 122932
+        "last_cycle": "2026-02-17T02:54:30.055089Z",
+        "last_translated": 8,
+        "total_suspicious": 15585,
+        "total_rejected": 982,
+        "total_gt_guard_fail": 2725,
+        "cycles": 874,
+        "quality_score": 62.6,
+        "last_audit": "2026-02-17T02:54:49.871542Z",
+        "issues_count": 122986
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -253,15 +302,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T02:52:19.235394Z",
+        "last_cycle": "2026-02-17T02:54:44.404588Z",
         "last_translated": 24,
-        "total_suspicious": 26443,
-        "total_rejected": 762,
-        "total_gt_guard_fail": 11770,
-        "cycles": 1078,
+        "total_suspicious": 26531,
+        "total_rejected": 763,
+        "total_gt_guard_fail": 11771,
+        "cycles": 1080,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T02:53:27.605544Z",
-        "issues_count": 186123
+        "last_audit": "2026-02-17T02:54:49.871542Z",
+        "issues_count": 186477
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -292,9 +341,9 @@
         "total_rejected": 90,
         "total_gt_guard_fail": 346,
         "cycles": 147,
-        "quality_score": 60.4,
-        "last_audit": "2026-02-17T02:53:27.605544Z",
-        "issues_count": 9574
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T02:54:49.871542Z",
+        "issues_count": 9614
       },
       "ru": {
         "last_cycle": "2026-02-17T02:51:12.822256Z",
@@ -303,9 +352,9 @@
         "total_rejected": 337,
         "total_gt_guard_fail": 857,
         "cycles": 143,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T02:53:27.605544Z",
-        "issues_count": 25538
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T02:54:49.871542Z",
+        "issues_count": 25612
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -325,9 +374,9 @@
         "total_rejected": 106,
         "total_gt_guard_fail": 226,
         "cycles": 81,
-        "quality_score": 72.7,
-        "last_audit": "2026-02-17T02:53:27.605544Z",
-        "issues_count": 7768
+        "quality_score": 64.6,
+        "last_audit": "2026-02-17T02:54:49.871542Z",
+        "issues_count": 7912
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -777,8 +826,8 @@
         "total_gt_guard_fail": 1166,
         "cycles": 127,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T02:53:27.605544Z",
-        "issues_count": 33065
+        "last_audit": "2026-02-17T02:54:49.871542Z",
+        "issues_count": 33227
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -792,7 +841,7 @@
         "issues_count": 80
       }
     },
-    "summary": "OK | 7 issue(s) / 100 entries | 2026-02-17T02:53:27.605544Z"
+    "summary": "SLOW_MODE | 14 issue(s) / 100 entries | 2026-02-17T02:54:49.871542Z"
   },
   "languages": [
     {
@@ -817,13 +866,13 @@
       "language_name": "Polski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 24756,
+      "translated_keys": 24758,
       "english_copy_keys": 1910,
       "missing_keys": 0,
       "missing_files": 0,
       "completion_pct": 46.2,
       "server_keys": 49731,
-      "server_translated": 22075,
+      "server_translated": 22077,
       "server_pct": 44.39,
       "client_keys": 3855,
       "client_translated": 2681,

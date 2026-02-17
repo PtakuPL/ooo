@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T02:53:31.304085Z",
+  "timestamp": "2026-02-17T02:54:53.538697Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 49,
-  "cache_misses": 3,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1972,
+  "file_cache_misses": 4,
   "langs": {
     "ar": {
       "sig": [
@@ -7386,7 +7386,7 @@
         [
           "modules.json",
           1,
-          1771291203874370383,
+          1771296831289076411,
           1127
         ],
         [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771296739228835540,
+          1771296884401570155,
           1848281
         ],
         [
@@ -7761,7 +7761,7 @@
         "modules.json": {
           "sig": [
             1,
-            1771291203874370383,
+            1771296831289076411,
             1127
           ],
           "row": {
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771296739228835540,
+            1771296884401570155,
             1848281
           ],
           "row": {
@@ -25503,14 +25503,14 @@
         [
           "startup.json",
           1,
-          1771291227454436992,
+          1771296870053647348,
           1663
         ],
         [
           "talkactions.json",
           1,
-          1771286573868570142,
-          17566
+          1771296864793587761,
+          17623
         ],
         [
           "ui.json",
@@ -25530,13 +25530,13 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24756,
+        "translated_keys": 24758,
         "english_copy_keys": 1910,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 46.2,
         "server_keys": 49731,
-        "server_translated": 22075,
+        "server_translated": 22077,
         "server_pct": 44.39,
         "client_keys": 3855,
         "client_translated": 2681,
@@ -26022,7 +26022,7 @@
         "startup.json": {
           "sig": [
             1,
-            1771291227454436992,
+            1771296870053647348,
             1663
           ],
           "row": {
@@ -26036,12 +26036,12 @@
         "talkactions.json": {
           "sig": [
             1,
-            1771286573868570142,
-            17566
+            1771296864793587761,
+            17623
           ],
           "row": {
             "total_reference_keys": 199,
-            "translated_keys": 155,
+            "translated_keys": 157,
             "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0

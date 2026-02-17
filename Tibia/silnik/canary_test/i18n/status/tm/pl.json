@@ -106382,5 +106382,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:44:48.850550Z"
+  },
+  "talkaction.god.title.msg_addtitle_usage": {
+    "src_hash": "8c044079fb0ceb3f4b306025b511a7de",
+    "text": "Niewystarczające parametry. Sposób użycia: /addtitle nazwa gracza, identyfikator odznaki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:54:14.103919Z"
+  },
+  "talkaction.god.title.msg_settitle_usage": {
+    "src_hash": "64a8141743ddd20db60ab43e36564ebe",
+    "text": "Niewystarczające parametry. Sposób użycia: /settitle nazwa gracza, identyfikator identyfikatora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:54:20.484965Z"
   }
 }

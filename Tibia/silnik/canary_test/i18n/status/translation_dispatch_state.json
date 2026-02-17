@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T06:14:30.970523Z",
-  "cycle_counter": 1723,
-  "last_target_key": "ro:client.json",
-  "last_pending_total": 200,
+  "timestamp": "2026-02-17T06:17:03.190035Z",
+  "cycle_counter": 1726,
+  "last_target_key": "ro:npclib.json",
+  "last_pending_total": 147,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 192,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 311,
+  "cache_cycle": 312,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -337,7 +337,8 @@
     "sr:quests.json": 0,
     "it:npclib.json": 0,
     "ru:startup.json": 0,
-    "ro:events.json": 0
+    "ro:events.json": 0,
+    "ru:php.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -391,9 +392,9 @@
     "lang_completion": {
       "pl": 47.87,
       "es": 74.97,
-      "ru": 38.61,
-      "ro": 25.91,
-      "it": 16.99,
+      "ru": 38.63,
+      "ro": 25.99,
+      "it": 17.07,
       "sr": 12.13,
       "sv": 9.89
     }

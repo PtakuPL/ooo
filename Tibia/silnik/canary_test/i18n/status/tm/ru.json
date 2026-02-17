@@ -32646,5 +32646,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:14:28.360800Z"
+  },
+  "php.mailer.text4": {
+    "src_hash": "67634e1d3d15eaa0ce21d2a9f8b03385",
+    "text": "Не удалось отправить писем: $failed.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.683619Z"
+  },
+  "php.plugins.text1": {
+    "src_hash": "f16a06e7d231a35db793c74cf0ed3b68",
+    "text": "Получение актуальной информации из $repoUri..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.685766Z"
+  },
+  "php.players.text1": {
+    "src_hash": "5e5b7cfa148d7664fb340157e6606abe",
+    "text": "Профессии с таким ID не существует.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.688326Z"
+  },
+  "php.exception.text1": {
+    "src_hash": "2553d1f72c1bad21b4705bf039844acc",
+    "text": "Не удалось открыть error.log для записи… Подробности не были сохранены… Убедитесь, что system/logs доступен для записи веб‑серверу, затем обновите страницу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.692352Z"
+  },
+  "php.settingssetcommand.text1": {
+    "src_hash": "0e8627c69232a44011cbc71279c4e7b1",
+    "text": "Параметр $key успешно обновлён",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.693453Z"
+  },
+  "php.validator.text3": {
+    "src_hash": "9057059de9ce736e035a5942d00bcc80",
+    "text": "Неверный формат имени. Используйте только A-Z, пробелы и точку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.696673Z"
+  },
+  "php.validator.text4": {
+    "src_hash": "9057059de9ce736e035a5942d00bcc80",
+    "text": "Неверный формат имени. Используйте только A-Z, пробелы и точку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.698833Z"
+  },
+  "php.rfc6238.text4": {
+    "src_hash": "bebe8ba63fb75533b6fa54b42dc84078",
+    "text": "преобразование шестнадцатеричного хэша в символы<br/>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:27.702021Z"
+  },
+  "php.mailer.text3": {
+    "src_hash": "3846ca489dd790dd85e0b5e0b9dad6d5",
+    "text": "$успешных писем доставлено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:31.841233Z"
+  },
+  "php.server_status.text1": {
+    "src_hash": "fc026d2cbd61046fa6d081aa7997284e",
+    "text": "fas fa-восклицательный круг текст-опасность",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:31.841765Z"
+  },
+  "php.server_status.text2": {
+    "src_hash": "55ca72648287c8779f1fd60954bfad14",
+    "text": "кол-мд-6 кол-лг-6",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:31.842048Z"
+  },
+  "php.server_status.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "карта-информация о карте",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:37.161957Z"
+  },
+  "php.server_status.text4": {
+    "src_hash": "7f30b86a3f0468f2d524fea4cb122161",
+    "text": "граница заголовка карты-нижняя-0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:37.162342Z"
+  },
+  "php.server_status.text5": {
+    "src_hash": "6e6159b3c97c1e13c5cd0b6402ae9649",
+    "text": "шрифт-вес-жирный м-0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:37.162646Z"
+  },
+  "php.settings.text1": {
+    "src_hash": "353d8ff78b17c34b31c8ad01d525a804",
+    "text": "Плагин $plugin не существует или не имеет определенных настроек.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:37.163294Z"
+  },
+  "php.settings.text2": {
+    "src_hash": "4cf7384b414a9d7d4624d7e776f98aee",
+    "text": "Невозможно загрузить файл настроек для плагина $plugin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:37.163880Z"
+  },
+  "php.news.text1": {
+    "src_hash": "64b46d605a153160d660746a9e3f014f",
+    "text": ". ТАБЛИЦА_ПРЕФИКС.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:41.062385Z"
+  },
+  "php.menus.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "карта-информация о карте",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:41.062883Z"
+  },
+  "php.menus.text4": {
+    "src_hash": "130a635302db9ca6c9df51832d42f783",
+    "text": "UI-состояние-по умолчанию",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:41.063370Z"
+  },
+  "php.menus.text5": {
+    "src_hash": "3c295729a9712de89566a726e015e430",
+    "text": "кнопка btn-опасность с плавающей запятой вправо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:45.874637Z"
+  },
+  "php.players.text2": {
+    "src_hash": "b47b9410367725df48e327131e4850ef",
+    "text": "кол-12 кол-см-12 кол-лг-10",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:45.875025Z"
+  },
+  "php.players.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "карта-информация о карте",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:45.875325Z"
+  },
+  "php.players.text5": {
+    "src_hash": "1080f71ac0a5aa7505c4274d20a0ffa0",
+    "text": "БТН БТН-Успех БТН-СМ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:45.875739Z"
+  },
+  "php.upload_image.text1": {
+    "src_hash": "32e960d3879a6fb709a3d6de9507911b",
+    "text": "Политики P3P нет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:50.921011Z"
+  },
+  "php.template.text3": {
+    "src_hash": "f05fe584a9e3b77bf6bf5028670d6e86",
+    "text": "навбар-навигация мл-авто",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:50.921653Z"
+  },
+  "php.migrateruncommand.text2": {
+    "src_hash": "045ed1be584efb9e9a37a4b4550c6ea0",
+    "text": "Миграция не была выполнена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:55.793950Z"
+  },
+  "php.settings.text3": {
+    "src_hash": "8b7067a01d3834aad2c4f3c5987e398f",
+    "text": "входная группа-добавление текста входной группы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:55.794389Z"
+  },
+  "php.settings.text4": {
+    "src_hash": "44eaef6924cd938b409c14e667746545",
+    "text": "фас-фа-вырезание глаз",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:55.794652Z"
+  },
+  "php.settings.text5": {
+    "src_hash": "7835fce2559be64acaaba40289d34365",
+    "text": "ну настройка-по умолчанию",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:55.794949Z"
+  },
+  "php.validator.text1": {
+    "src_hash": "118482af672a8c357bae2c9bd39eb089",
+    "text": "Имя персонажа слишком короткое. Мин. длина <b>$minLength</b> символов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:00.538833Z"
+  },
+  "php.validator.text2": {
+    "src_hash": "82c4b5da7482fe473358790847bb8b9c",
+    "text": "Имя персонажа слишком длинное. Макс. длина <b>$maxLength</b> символов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:00.539571Z"
+  },
+  "php.createcharacter.text1": {
+    "src_hash": "04f9ddc4f90313c2d3d4536480ed9276",
+    "text": "Ошибка. Не могу создать персонажа. Вероятно, проблема с базой данных. Пожалуйста, повторите попытку позже или свяжитесь с администратором.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:00.540346Z"
   }
 }

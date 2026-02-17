@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T06:12:38.378940Z",
+  "timestamp": "2026-02-17T06:17:49.139392Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 708,
+  "entries_total": 707,
   "entries_by_lang": {
     "es": 300,
     "pl": 174,
@@ -76,7 +76,7 @@
     "it": 429,
     "nl": 691,
     "pt": 620,
-    "ro": 439,
+    "ro": 437,
     "ru": 107,
     "sk": 663,
     "tr": 542,
@@ -921,12 +921,6 @@
     },
     {
       "lang": "ro",
-      "json_file": "npclib.json",
-      "identical_to_en": 2,
-      "domain_priority": 9
-    },
-    {
-      "lang": "ro",
       "json_file": "libs.json",
       "identical_to_en": 1,
       "domain_priority": 9
@@ -1319,6 +1313,12 @@
       "lang": "bg",
       "json_file": "scripts.json",
       "identical_to_en": 153,
+      "domain_priority": 9
+    },
+    {
+      "lang": "bg",
+      "json_file": "questlog.json",
+      "identical_to_en": 29,
       "domain_priority": 9
     }
   ],

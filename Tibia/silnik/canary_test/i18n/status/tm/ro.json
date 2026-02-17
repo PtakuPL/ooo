@@ -47846,5 +47846,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:15:06.177552Z"
+  },
+  "misc.bank_system.say_26": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.436654Z"
+  },
+  "misc.bank_system.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.437502Z"
+  },
+  "misc.bank_system.say_38": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.438048Z"
+  },
+  "misc.bank_system.say_43": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.438676Z"
+  },
+  "npclib.handler.decline": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Atunci nu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.442387Z"
+  },
+  "npclib.handler.missing_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.443139Z"
+  },
+  "npclib.handler.need_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.443617Z"
+  },
+  "npclib.handler.need_space": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Nu este suficient loc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.444011Z"
+  },
+  "npclib.handler.sendtrade": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Desigur, răsfoiește-mi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.444646Z"
+  },
+  "npclib.handler.walkaway": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "La revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.445228Z"
+  },
+  "npclib.modules.travel_no_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:04.446934Z"
+  },
+  "misc.bank_system.say_1": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Nu ai suficient aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:09.764955Z"
+  },
+  "misc.bank_system.say_10": {
+    "src_hash": "d36798bcf14b9756499e7b5b93ca5883",
+    "text": "Așteaptă, nu ai nicio capacitate liberă de a transporta toate acele monede!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:09.765444Z"
+  },
+  "misc.bank_system.say_11": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Clientul este rege! Reveniți oricând doriți dacă doriți să vă {withdraw} banii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:09.765919Z"
+  },
+  "misc.bank_system.say_12": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:09.766418Z"
+  },
+  "misc.bank_system.say_13": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "Completați acest câmp cu persoana care vă primește aurul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:09.766837Z"
+  },
+  "misc.bank_system.say_14": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Acest jucător nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:13.808986Z"
+  },
+  "misc.bank_system.say_15": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Acest jucător nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:13.809410Z"
+  },
+  "misc.bank_system.say_16": {
+    "src_hash": "d17708e1a910647247971f62d52d4104",
+    "text": "Vă rog să-mi spuneți cantitatea de aur pe care doriți să o transferați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:13.809992Z"
+  },
+  "misc.bank_system.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:13.810468Z"
+  },
+  "misc.bank_system.say_18": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:13.810812Z"
+  },
+  "misc.bank_system.say_19": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "Completați acest câmp cu persoana care vă primește aurul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:18.831441Z"
+  },
+  "misc.bank_system.say_2": {
+    "src_hash": "2dd045921e052d2ae4c1339abccdd747",
+    "text": "Vă rog să-mi spuneți cât aur ați dori să depuneți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:18.831843Z"
+  },
+  "misc.bank_system.say_20": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Acest jucător nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:18.832181Z"
+  },
+  "misc.bank_system.say_21": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Acest jucător nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:18.832550Z"
+  },
+  "misc.bank_system.say_22": {
+    "src_hash": "7d973fa7338b18011256fc6b78c69a22",
+    "text": "Nu puteți transfera bani în acest cont.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:18.832924Z"
+  },
+  "misc.bank_system.say_23": {
+    "src_hash": "a0e570ed761553fb2537a4fc5b6a51e0",
+    "text": "Bine, mai pot face ceva pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:25.133520Z"
+  },
+  "misc.bank_system.say_24": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Câte monede de platină ai vrea să obții?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:25.133894Z"
+  },
+  "misc.bank_system.say_25": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:25.134335Z"
+  },
+  "misc.bank_system.say_27": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:25.134770Z"
+  },
+  "misc.bank_system.say_28": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:25.135094Z"
+  },
+  "misc.bank_system.say_29": {
+    "src_hash": "dcb98e469c547bf91881a6ea42ad8caa",
+    "text": "Doriți să vă schimbați monedele de platină în {gold} sau {crystal}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:31.291209Z"
+  },
+  "misc.bank_system.say_3": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Nu ai suficient aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:31.291576Z"
+  },
+  "misc.bank_system.say_30": {
+    "src_hash": "7eb7fc20e2178c5e1053e86e9ba6ef82",
+    "text": "Câte monede de platină ai dori să schimbi în {gold}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:31.292083Z"
+  },
+  "misc.bank_system.say_31": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Câte monede de cristal ați dori să obțineți?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:31.292474Z"
+  },
+  "misc.bank_system.say_32": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:31.292796Z"
+  },
+  "misc.bank_system.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:35.249849Z"
+  },
+  "misc.bank_system.say_35": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:35.250608Z"
+  },
+  "misc.bank_system.say_36": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:35.250978Z"
+  },
+  "misc.bank_system.say_37": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:35.251347Z"
+  },
+  "misc.bank_system.say_39": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:35.251852Z"
+  },
+  "misc.bank_system.say_4": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Nu ai suficient aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:38.432095Z"
+  },
+  "misc.bank_system.say_40": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:38.432513Z"
+  },
+  "misc.bank_system.say_41": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Câte monede de cristal ai vrea să schimbi în platină?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:38.433042Z"
+  },
+  "misc.bank_system.say_42": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:38.433425Z"
+  },
+  "misc.bank_system.say_44": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:38.433821Z"
+  },
+  "misc.bank_system.say_45": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:41.335646Z"
+  },
+  "misc.bank_system.say_46": {
+    "src_hash": "6946c26fb2120a010f00cc72c56c6308",
+    "text": "Nu ești membru al unei bresle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:41.335991Z"
+  },
+  "misc.bank_system.say_47": {
+    "src_hash": "6946c26fb2120a010f00cc72c56c6308",
+    "text": "Nu ești membru al unei bresle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:41.336304Z"
+  },
+  "misc.bank_system.say_48": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Nu ai suficient aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:17:41.336573Z"
   }
 }

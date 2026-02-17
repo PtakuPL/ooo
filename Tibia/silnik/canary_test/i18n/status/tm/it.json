@@ -53406,5 +53406,373 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:14:04.977759Z"
+  },
+  "client.bestiary.text2": {
+    "src_hash": "2cc4a4c5e260935157569494ed733bf1",
+    "text": "Semi-raro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:29.465067Z"
+  },
+  "client.bestiary.text3": {
+    "src_hash": "8e4ce7e78c9c1b19c4b193170ca1044d",
+    "text": "Molto raro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:29.465477Z"
+  },
+  "client.tasks.text5": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Pulsante di selezione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:29.468286Z"
+  },
+  "client.mainpanel.text1": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfaccia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:29.472737Z"
+  },
+  "client.mainpanel.text3": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfaccia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:29.473063Z"
+  },
+  "client.options.text2": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfaccia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:29.474147Z"
+  },
+  "client.items.text1": {
+    "src_hash": "24b56abbb3dc550fa117a31f5129a3f8",
+    "text": "128 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:35.498358Z"
+  },
+  "client.items.text2": {
+    "src_hash": "b1f4d732ba5997c1cbff270d13c63959",
+    "text": "96 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:35.498587Z"
+  },
+  "client.items.text3": {
+    "src_hash": "85392cbd20cd206583207b3255b7acbf",
+    "text": "64 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:35.498778Z"
+  },
+  "client.items.text4": {
+    "src_hash": "905819163e91db527b712c9e02d086c1",
+    "text": "32 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:35.499014Z"
+  },
+  "client.items.text5": {
+    "src_hash": "ecf5483f4675af3c4cac643a95bc3c9b",
+    "text": "0 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:35.499198Z"
+  },
+  "client.spells.text1": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Lo sciopero dell'apprendista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:40.414942Z"
+  },
+  "client.spells.text2": {
+    "src_hash": "fa7b503fd5e42aa8ed809fd9e22c833f",
+    "text": "exeta amp res",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:40.415518Z"
+  },
+  "client.spells.text3": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "exura max vita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:40.415896Z"
+  },
+  "client.spells.text4": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "L'abbraccio della natura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:40.416242Z"
+  },
+  "client.spells.text5": {
+    "src_hash": "ffc7c4960c88a757638d254341fe24ae",
+    "text": "Pratica la guarigione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:40.416481Z"
+  },
+  "client.styles.text1": {
+    "src_hash": "7e45214f92b501af4495b82455b39e7c",
+    "text": "particelle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:46.436907Z"
+  },
+  "client.styles.text2": {
+    "src_hash": "7e45214f92b501af4495b82455b39e7c",
+    "text": "particelle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:46.437103Z"
+  },
+  "client.npctrade.text1": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Elenco degli articoli che puoi acquistare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:46.437454Z"
+  },
+  "client.npctrade.text2": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Elenco degli articoli che puoi vendere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:46.437760Z"
+  },
+  "client.edit_hotkey.text1": {
+    "src_hash": "54669f046e420654bc9b360157a1a4ac",
+    "text": "per assegnare il tasto di scelta rapida.\nClic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:46.438042Z"
+  },
+  "client.quickloot.text1": {
+    "src_hash": "fdc7ada538676107d889331e26db609f",
+    "text": "Ordinamento automatico\nAcquisti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:54.133000Z"
+  },
+  "client.quickloot.text2": {
+    "src_hash": "b2e1c15b00c36a1d0f6e95b51e9d9b02",
+    "text": "Ordina automaticamente la scorta nei contenitori",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:54.133314Z"
+  },
+  "client.quickloot.text3": {
+    "src_hash": "5bee20b319a031076a88f07a3edad52d",
+    "text": "Saccheggia rapidamente i cadaveri vicini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:54.133588Z"
+  },
+  "client.quickloot.text4": {
+    "src_hash": "c8eadbefee70f8c441cfcc79755337a6",
+    "text": "Errore durante la lettura del file delle impostazioni dei contenitori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:54.133920Z"
+  },
+  "client.walk.text1": {
+    "src_hash": "14c3de1beddabd1388e28a54a8b10191",
+    "text": "Ctrl+Destra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:54.134184Z"
+  },
+  "client.walk.text2": {
+    "src_hash": "26f2c912493c2eac17b81d1c5bae0fc3",
+    "text": "Ctrl+Giù",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:00.708208Z"
+  },
+  "client.walk.text3": {
+    "src_hash": "87600c6242cc410cfa2eeea2a087bbd9",
+    "text": "Ctrl+Sinistra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:00.708413Z"
+  },
+  "client.game_cyclopedia.text1": {
+    "src_hash": "a956161a69928cd130a889b88082fb6e",
+    "text": "carattere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:00.708588Z"
+  },
+  "client.game_cyclopedia.text2": {
+    "src_hash": "5b949a092bf0fd9fa569a1a0edb6ae67",
+    "text": "bossiario",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:00.708755Z"
+  },
+  "client.game_cyclopedia.text3": {
+    "src_hash": "e850f728cac75fd2a96562687c663ebd",
+    "text": "Apri la finestra di dialogo Bosstiario",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:00.709031Z"
+  },
+  "client.utils.text1": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Castlemania",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:08.298260Z"
+  },
+  "client.house.text1": {
+    "src_hash": "b87a17758ec61680b74aafa52c9e2e23",
+    "text": "MapLayerSelector",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:08.298758Z"
+  },
+  "client.house.text2": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:08.299151Z"
+  },
+  "client.house.text3": {
+    "src_hash": "0059ab21743c19543af55cf48bcc4b1d",
+    "text": "Case proprie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:08.299565Z"
+  },
+  "client.house.text4": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:08.299939Z"
+  },
+  "client.house.text5": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:14.797248Z"
+  },
+  "client.charms1410.text1": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Echi di fascino minore\nOttenuto sbloccando o potenziando il fascino principale e promuovendo il tuo personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:14.797718Z"
+  },
+  "client.charms.text1": {
+    "src_hash": "07a184bb02b61bf7a64c9a5731b2dc50",
+    "text": "Paralizza la creatura e la paralizza per 10 secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:14.798067Z"
+  },
+  "client.charms.text2": {
+    "src_hash": "b6af098ba1c6eec1f80bc951a947903c",
+    "text": "Riflette il danno in arrivo all'aggressore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:14.798465Z"
+  },
+  "client.charms.text3": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "Schiva un attacco con una possibilità, evitando tutti i danni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:14.798931Z"
+  },
+  "client.charms.text4": {
+    "src_hash": "af9e27729d520ea66c0959bc6b37ba24",
+    "text": "Scoppio di adrenalina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:21.408397Z"
+  },
+  "client.charms.text5": {
+    "src_hash": "7107d1a06e5b3ecbc45b989889d6fe9b",
+    "text": "Aumenta la velocità di movimento per 10 secondi dopo essere stato colpito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:21.408812Z"
+  },
+  "client.boss_slots.text1": {
+    "src_hash": "0e2787224e96232b203eedfc541fe91e",
+    "text": "Si sblocca a 1500 punti boss",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:21.409089Z"
+  },
+  "client.boss_slots.text2": {
+    "src_hash": "7bdde1c498bb79c6c89f1e43be21f34e",
+    "text": "RightBase",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:21.409273Z"
+  },
+  "client.boss_slots.text3": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Rovina\n\nPer sbloccare un livello, riceverai i seguenti punti boss:\nAbilità: 5\nCompetenza: 15\nMaestria: 30",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:16:21.409759Z"
   }
 }

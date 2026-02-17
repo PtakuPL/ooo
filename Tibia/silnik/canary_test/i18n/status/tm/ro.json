@@ -849,11 +849,11 @@
   },
   "item.3174.name": {
     "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
-    "text": "Light Magic Missile Rune",
+    "text": "Rună rachetă magică ușoară",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T00:31:50.068658Z"
+    "updated_at": "2026-02-17T09:24:12.075209Z"
   },
   "item.3175.name": {
     "src_hash": "25854a690aad0b2f569b5c34e1691b91",
@@ -969,11 +969,11 @@
   },
   "item.3198.name": {
     "src_hash": "914de3c6825f6f3cb25da03b5fb65a8b",
-    "text": "Heavy Magic Missile Rune",
+    "text": "Rună rachetă magică grea",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T00:31:50.073063Z"
+    "updated_at": "2026-02-17T09:24:12.090466Z"
   },
   "item.3200.name": {
     "src_hash": "22494ca9495b54d62a7467fd9018dc7f",
@@ -57502,5 +57502,197 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:23:31.552598Z"
+  },
+  "item.31907.name": {
+    "src_hash": "9243a5e117a93e3600f000abb89463b3",
+    "text": "pulbere scări",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.081787Z"
+  },
+  "item.32021.name": {
+    "src_hash": "431369719ea01e4118be66bfd4c3b4d7",
+    "text": "zid de ardere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.092094Z"
+  },
+  "item.32228.name": {
+    "src_hash": "1224ad7ad0c7f481a75b60b772c4f608",
+    "text": "suflet purificat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.104001Z"
+  },
+  "item.32435.name": {
+    "src_hash": "3188f0cba80a87b2b568c52c1a8a8152",
+    "text": "zid ruinat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.109667Z"
+  },
+  "item.32461.name": {
+    "src_hash": "3188f0cba80a87b2b568c52c1a8a8152",
+    "text": "zid ruinat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.111045Z"
+  },
+  "item.33769.name": {
+    "src_hash": "fdfa02ecf86feac3801254da57c1c9ba",
+    "text": "fum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.183040Z"
+  },
+  "item.33877.name": {
+    "src_hash": "43fb441964d5bbd1155eca9ccd328e42",
+    "text": "foc aprins",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.218848Z"
+  },
+  "item.34110.name": {
+    "src_hash": "de25b07687b4401a11707d78b12574d8",
+    "text": "gresie statuie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.273934Z"
+  },
+  "item.34111.name": {
+    "src_hash": "70ed046e4b1cb02c22f479ce0af7462b",
+    "text": "câmp de forță magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.274776Z"
+  },
+  "item.34210.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.311746Z"
+  },
+  "item.34227.name": {
+    "src_hash": "22921b2baf8b353c73290c0476be5795",
+    "text": "pagoda de sânge",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.313723Z"
+  },
+  "item.34252.name": {
+    "src_hash": "12a7b6eefac4175c0e27614db28baf78",
+    "text": "scânduri de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.316327Z"
+  },
+  "item.3449.name": {
+    "src_hash": "74ff426386354b397a6aa164771d7dcd",
+    "text": "săgeată izbucnită",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.326644Z"
+  },
+  "item.3514.name": {
+    "src_hash": "e289edde97bf42ce4db444494be01916",
+    "text": "bazin de cărbune gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.333821Z"
+  },
+  "item.3595.name": {
+    "src_hash": "005d05de29487ec44cd07bd9d757d4e1",
+    "text": "morcov",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.402420Z"
+  },
+  "item.3655.name": {
+    "src_hash": "6b9811f662c2f6ad0e23e064a65e9560",
+    "text": "floare de lună",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.409231Z"
+  },
+  "item.36586.name": {
+    "src_hash": "98e50388df431cb56eb12949e5ac0074",
+    "text": "pergament vechi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.409920Z"
+  },
+  "item.36877.name": {
+    "src_hash": "2eaa316f6b07b80b4f5f7d2d9fe9ec7c",
+    "text": "pulbere mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.464750Z"
+  },
+  "item.36973.name": {
+    "src_hash": "70ed046e4b1cb02c22f479ce0af7462b",
+    "text": "câmp de forță magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.496481Z"
+  },
+  "item.37000.name": {
+    "src_hash": "70ed046e4b1cb02c22f479ce0af7462b",
+    "text": "câmp de forță magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.499536Z"
+  },
+  "item.37001.name": {
+    "src_hash": "70ed046e4b1cb02c22f479ce0af7462b",
+    "text": "câmp de forță magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.500033Z"
+  },
+  "item.37058.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.503481Z"
+  },
+  "item.37059.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.504082Z"
+  },
+  "item.37060.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:24:12.504960Z"
   }
 }

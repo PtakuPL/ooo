@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T03:18:35.624384Z",
+  "timestamp": "2026-02-17T03:23:16.006947Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,7 +67,7 @@
   ],
   "entries_total": 710,
   "entries_by_lang": {
-    "es": 300,
+    "es": 292,
     "pl": 207,
     "cs": 641,
     "de": 659,
@@ -108,7 +108,7 @@
     "sl": 663,
     "sq": 663,
     "sr": 492,
-    "sv": 533,
+    "sv": 531,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -124,7 +124,7 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 24,
+      "identical_to_en": 16,
       "domain_priority": 0
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 24,
+    "identical_to_en": 16,
     "domain_priority": 0
   }
 }

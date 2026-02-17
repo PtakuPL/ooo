@@ -169046,5 +169046,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T02:53:18.817895Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L131.1047": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Чувај се, дете",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:22:49.495004Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L132.1048": {
+    "src_hash": "f837336cbcf07dd58a95501bc15ea16f",
+    "text": "__ПХ0__, како би рекао мој пријатељ Мордохеј.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:22:49.495436Z"
+  },
+  "data.otservbr.global.npc.bashira.L66.1587": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Наравно, само прегледајте моје понуде.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:22:52.523256Z"
   }
 }

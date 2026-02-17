@@ -73,11 +73,11 @@
   },
   "item.21351.name": {
     "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
-    "text": "Light Stone Shower Rune",
+    "text": "Ljus Sten Dusch Rune",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T00:33:21.664257Z"
+    "updated_at": "2026-02-17T07:03:07.163762Z"
   },
   "item.21352.name": {
     "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
@@ -97,11 +97,11 @@
   },
   "item.21434.name": {
     "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
-    "text": "Light Stone Shower Rune",
+    "text": "Ljus Sten Dusch Rune",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T00:33:21.668096Z"
+    "updated_at": "2026-02-17T07:03:07.170821Z"
   },
   "item.24966.name": {
     "src_hash": "7c7004d4846601f4cc710309ded176ef",
@@ -25726,5 +25726,325 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:48:19.544639Z"
+  },
+  "item.10461.name": {
+    "src_hash": "bec6bf1522bd5ab633c36c1683d18dc4",
+    "text": "död lancerbagge",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:06.963843Z"
+  },
+  "item.10954.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "Pelare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:06.968441Z"
+  },
+  "item.11047.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "Pelare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:06.969915Z"
+  },
+  "item.11053.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "Pelare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:06.970569Z"
+  },
+  "item.11057.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "Pelare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:06.971165Z"
+  },
+  "item.11897.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "Pelare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:06.993480Z"
+  },
+  "item.15700.name": {
+    "src_hash": "4e026537a7d32360c5a22b7cb2e7f61a",
+    "text": "Svamp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.041200Z"
+  },
+  "item.18386.name": {
+    "src_hash": "adafff23fe27d62fa9d5220cc0b3a8ea",
+    "text": "Mördare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.100723Z"
+  },
+  "item.20052.name": {
+    "src_hash": "b688c1b547fb4b1f02d418e85c56cfb3",
+    "text": "Dålig dröm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.128628Z"
+  },
+  "item.21878.name": {
+    "src_hash": "f1a81d782dea6a19bdca383bffe68452",
+    "text": "Spindel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.183138Z"
+  },
+  "item.23442.name": {
+    "src_hash": "216a16323c6f993de2f9dba517110771",
+    "text": "Baby drake",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.217721Z"
+  },
+  "item.23443.name": {
+    "src_hash": "216a16323c6f993de2f9dba517110771",
+    "text": "Baby drake",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.218201Z"
+  },
+  "item.23729.name": {
+    "src_hash": "60424674619e1854ad52c971286b8685",
+    "text": "förlorad tid",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.228616Z"
+  },
+  "item.24227.name": {
+    "src_hash": "83026023448f5cc3daed4e275ef8fc10",
+    "text": "Animerat svärd",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.234869Z"
+  },
+  "item.25062.name": {
+    "src_hash": "c8a10e89eff1b11fc6501c6a4922076e",
+    "text": "Pinata drake",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.248083Z"
+  },
+  "item.25077.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Ägg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.248978Z"
+  },
+  "item.25087.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Ägg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.249610Z"
+  },
+  "item.2521.name": {
+    "src_hash": "b15e545b9624d3f6a46834696c48c2a6",
+    "text": "Vinfat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.251433Z"
+  },
+  "item.25625.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.255948Z"
+  },
+  "item.25627.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.256365Z"
+  },
+  "item.25774.name": {
+    "src_hash": "384aafcf9e35c87411a012b81f207862",
+    "text": "Skuld",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.260645Z"
+  },
+  "item.27233.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.284138Z"
+  },
+  "item.27236.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.284403Z"
+  },
+  "item.27239.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.284854Z"
+  },
+  "item.27242.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.285102Z"
+  },
+  "item.27366.name": {
+    "src_hash": "78178808195902e259854c9efcdcec2b",
+    "text": "Provisoriskt hem",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.286678Z"
+  },
+  "item.27478.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.288464Z"
+  },
+  "item.27614.name": {
+    "src_hash": "9acac37b6e8583002c9abd05bb5b34b2",
+    "text": "Reflektion av Mawhawk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.293058Z"
+  },
+  "item.27616.name": {
+    "src_hash": "294aca5e2dd43ab6514a8e23035ae29a",
+    "text": "Reflektion av Obujos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.293392Z"
+  },
+  "item.27617.name": {
+    "src_hash": "8e777eee360f6626c7ce9fe260d9e397",
+    "text": "Sista Planegazer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.293720Z"
+  },
+  "item.28467.name": {
+    "src_hash": "2d86bdac01a3315b95794ffa7360edc3",
+    "text": "väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.311959Z"
+  },
+  "item.28517.name": {
+    "src_hash": "84df077bcb1bd39ab1a3294de0cf655b",
+    "text": "Skelett",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.315031Z"
+  },
+  "item.293.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.336076Z"
+  },
+  "item.30000.name": {
+    "src_hash": "84df077bcb1bd39ab1a3294de0cf655b",
+    "text": "Skelett",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.344124Z"
+  },
+  "item.30274.name": {
+    "src_hash": "0a840ef45467fb3932dbf2c2896c5cbf",
+    "text": "sten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.358881Z"
+  },
+  "item.30277.name": {
+    "src_hash": "390b9d5a0b69278a88df6b20792532b5",
+    "text": "Istapp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.359276Z"
+  },
+  "item.304.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.363777Z"
+  },
+  "item.31326.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.378917Z"
+  },
+  "item.31485.name": {
+    "src_hash": "3f8da8d150df71f64db5f8e96438c567",
+    "text": "Skorpion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.390233Z"
+  },
+  "item.31487.name": {
+    "src_hash": "5f3f4681121b460e3304a1887f42f1c3",
+    "text": "Slagträ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:07.390502Z"
   }
 }

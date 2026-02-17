@@ -149342,5 +149342,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:59:39.006239Z"
+  },
+  "npc.undal.greet_msg_1": {
+    "src_hash": "165c11d18627f753d6b4b0d48fd456b8",
+    "text": "Saludos héroe. Supongo que viniste a {talk}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.812504Z"
+  },
+  "npc.urks_the_mute.farewell_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Hasta la próxima.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.824951Z"
+  },
+  "npc.urks_the_mute.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Hasta la próxima.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.844849Z"
+  },
+  "npc.ustan.greet_msg_1": {
+    "src_hash": "54530f5f2b3aaff995d464ee80062e90",
+    "text": "La bendición de Crunor, viajero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.852368Z"
+  },
+  "npc.uzgod.farewell_msg_1": {
+    "src_hash": "82aeaa873ad1b3db303bd1689706f580",
+    "text": "Adiós. Volviendo pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.860018Z"
+  },
+  "npc.uzgod.greet_msg_1": {
+    "src_hash": "b4db0a2e6890e6ed0e8cb60e0304a8e6",
+    "text": "¡Hola |PLAYERNAME|! ¿Quieres arma, eh?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.862993Z"
+  },
+  "npc.uzgod.walkaway_msg_1": {
+    "src_hash": "82aeaa873ad1b3db303bd1689706f580",
+    "text": "Adiós. Volviendo pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.885890Z"
+  },
+  "npc.uzon.farewell_msg_1": {
+    "src_hash": "3c316f2ced84091f79edf2143594e15c",
+    "text": "Las bendiciones de Daraman",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.891899Z"
+  },
+  "npc.uzon.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "¡Esperar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.895496Z"
+  },
+  "npc.uzon.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "¡Esperar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.913683Z"
+  },
+  "npc.uzon.walkaway_msg_1": {
+    "src_hash": "3c316f2ced84091f79edf2143594e15c",
+    "text": "Las bendiciones de Daraman",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.923862Z"
+  },
+  "npc.uzon_back.farewell_msg_1": {
+    "src_hash": "3c316f2ced84091f79edf2143594e15c",
+    "text": "Las bendiciones de Daraman",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.925944Z"
+  },
+  "npc.uzon_back.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "¡Esperar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.932116Z"
+  },
+  "npc.uzon_back.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "¡Esperar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.934432Z"
+  },
+  "npc.uzon_back.walkaway_msg_1": {
+    "src_hash": "3c316f2ced84091f79edf2143594e15c",
+    "text": "Las bendiciones de Daraman",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.938477Z"
+  },
+  "npc.valentina.greet_msg_1": {
+    "src_hash": "e4540d5140c3724170fa0d980683bae4",
+    "text": "Bienvenido a la tienda de San Valentín. ¿Vamos a {trade} algo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.940260Z"
+  },
+  "npc.valindara.greet_msg_1": {
+    "src_hash": "082c00cf1e81617e19c4a40c249dea54",
+    "text": "Saludos, comienzo mortal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.945689Z"
+  },
+  "npc.valindara.sendtrade_msg_1": {
+    "src_hash": "9e6fce8d8b528fc5dcd6fce227d2d241",
+    "text": "Sí, tengo algunas pociones y runas si estás interesado. ¿O quieres comprar solo pociones o solo runas? Oh, si quieres vender o comprar gemas, también puedes preguntarme.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.947619Z"
+  },
+  "npc.vanys.greet_msg_1": {
+    "src_hash": "165c11d18627f753d6b4b0d48fd456b8",
+    "text": "Saludos héroe. Supongo que viniste a {talk}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.951813Z"
+  },
+  "npc.vascalir.farewell_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Despedida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.977079Z"
+  },
+  "npc.vascalir.greet_msg_1": {
+    "src_hash": "1dabfffcc7d064409d316393cf4788f9",
+    "text": "Bienvenido, aventurero |PLAYERNAME|. Son tiempos terribles para Rookgaard... ¿has venido a ayudar en nuestro {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.980380Z"
+  },
+  "npc.vascalir.greet_msg_10": {
+    "src_hash": "8d69eef9f68e416d63696b07890829ef",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! ¿Qué tal esa armadura con tachuelas? ¿Te gustaría tenerla ahora?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.981805Z"
+  },
+  "npc.vascalir.greet_msg_11": {
+    "src_hash": "e9de68f0eb99deed135f88fe83491940",
+    "text": "|PLAYERNAME|! ¡Gracias a los dioses que has vuelto! Mientras no estabas, sucedió algo horrible. ¿Hueles el fuego?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.983295Z"
+  },
+  "npc.vascalir.greet_msg_12": {
+    "src_hash": "179cca7318e089dca27cfd6822f3deef",
+    "text": "Dios mío, ¿qué pasó con tu cabello? Tu cara también está toda negra; debe haber un infierno de llamas allí abajo. Eso es muy valiente de tu parte. ¿Recibiste el libro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.986407Z"
+  },
+  "npc.vascalir.greet_msg_13": {
+    "src_hash": "9673fd6b2081aaa0b1569ff9086dae59",
+    "text": "¿Estás preparado para tu próxima misión, |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.987789Z"
+  },
+  "npc.vascalir.greet_msg_14": {
+    "src_hash": "a52e40ea27776a509cfa5f0022436f97",
+    "text": "Ahora que sabes cómo almacenar tu dinero, es hora de perseguir a los trolls. Incluso te daré más equipo como recompensa. ¿Te sientes preparado para esa misión?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:38.989736Z"
   }
 }

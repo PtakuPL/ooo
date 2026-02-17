@@ -171006,5 +171006,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:48:38.205496Z"
+  },
+  "item.14064.name": {
+    "src_hash": "efb0d15a34eee3096ba7db56590e9f49",
+    "text": "Хиве Поре",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:15.991023Z"
+  },
+  "item.14171.name": {
+    "src_hash": "efb0d15a34eee3096ba7db56590e9f49",
+    "text": "Хиве Поре",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:15.992973Z"
+  },
+  "item.15700.name": {
+    "src_hash": "4e026537a7d32360c5a22b7cb2e7f61a",
+    "text": "Мусхроом",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.000925Z"
+  },
+  "item.20052.name": {
+    "src_hash": "b688c1b547fb4b1f02d418e85c56cfb3",
+    "text": "Бад Дреам",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.124485Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Лигхт Стоне Сховер Руне",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.156746Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Најлакша ракетна руна",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.157119Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Најлакша ракетна руна",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.162599Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Лигхт Стоне Сховер Руне",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.163200Z"
+  },
+  "item.23442.name": {
+    "src_hash": "216a16323c6f993de2f9dba517110771",
+    "text": "Баби Драгон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.228387Z"
+  },
+  "item.23443.name": {
+    "src_hash": "216a16323c6f993de2f9dba517110771",
+    "text": "Баби Драгон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.228809Z"
+  },
+  "item.23729.name": {
+    "src_hash": "60424674619e1854ad52c971286b8685",
+    "text": "изгубљено време",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.234637Z"
+  },
+  "item.24227.name": {
+    "src_hash": "83026023448f5cc3daed4e275ef8fc10",
+    "text": "Анимирани мач",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.239558Z"
+  },
+  "item.25062.name": {
+    "src_hash": "c8a10e89eff1b11fc6501c6a4922076e",
+    "text": "Пината Драгон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.262480Z"
+  },
+  "item.25077.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Јаје",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.263520Z"
+  },
+  "item.25087.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Јаје",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.264549Z"
+  },
+  "item.25626.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.273672Z"
+  },
+  "item.25628.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.274418Z"
+  },
+  "item.25688.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.274958Z"
+  },
+  "item.25755.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.278540Z"
+  },
+  "item.25774.name": {
+    "src_hash": "384aafcf9e35c87411a012b81f207862",
+    "text": "Кривица",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.279783Z"
+  },
+  "item.25781.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.280550Z"
+  },
+  "item.27232.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.303161Z"
+  },
+  "item.27259.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.304511Z"
+  },
+  "item.27366.name": {
+    "src_hash": "78178808195902e259854c9efcdcec2b",
+    "text": "Провизорна кућа",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.306776Z"
+  },
+  "item.27546.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.313325Z"
+  },
+  "item.27564.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.315039Z"
+  },
+  "item.27587.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.315748Z"
+  },
+  "item.27609.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.317356Z"
+  },
+  "item.27614.name": {
+    "src_hash": "9acac37b6e8583002c9abd05bb5b34b2",
+    "text": "Одраз Мавхавка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.318149Z"
+  },
+  "item.27616.name": {
+    "src_hash": "294aca5e2dd43ab6514a8e23035ae29a",
+    "text": "Одраз Обујоса",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.318698Z"
+  },
+  "item.27617.name": {
+    "src_hash": "8e777eee360f6626c7ce9fe260d9e397",
+    "text": "Последњи Планегазер",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.319201Z"
+  },
+  "item.27642.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.321074Z"
+  },
+  "item.27672.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.322946Z"
+  },
+  "item.27690.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.324197Z"
+  },
+  "item.27726.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.327114Z"
+  },
+  "item.27875.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.329805Z"
+  },
+  "item.28145.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.333391Z"
+  },
+  "item.28259.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.335055Z"
+  },
+  "item.28364.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.336321Z"
+  },
+  "item.28364.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.336823Z"
+  },
+  "item.28365.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.337480Z"
+  },
+  "item.28366.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.337960Z"
+  },
+  "item.28366.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.338499Z"
+  },
+  "item.28367.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.338995Z"
+  },
+  "item.28480.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.341365Z"
+  },
+  "item.28487.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.342205Z"
+  },
+  "item.28489.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "лобања",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.342822Z"
+  },
+  "item.28499.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.343780Z"
+  },
+  "item.28519.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.345130Z"
+  },
+  "item.28520.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:16.345873Z"
   }
 }

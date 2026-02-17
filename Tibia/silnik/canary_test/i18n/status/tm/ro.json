@@ -49822,5 +49822,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:00:49.740955Z"
+  },
+  "cpp.inspect.invisibility": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invizibilitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.315772Z"
+  },
+  "cpp.inspect.magic_shield_capacity": {
+    "src_hash": "453b284354c516de31dff38fa5082a17",
+    "text": "Capacitatea Scutului Magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.316864Z"
+  },
+  "cpp.look.damage_reflection": {
+    "src_hash": "84795283af9b7d27169669991ccc1b97",
+    "text": "Reflecția daunelor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.325213Z"
+  },
+  "cpp.look.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "regenerare mai rapidă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.326968Z"
+  },
+  "cpp.look.hard_drinking": {
+    "src_hash": "0fd8740eaf86fd5822ee55c965ad55fc",
+    "text": "Băutură tare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.327493Z"
+  },
+  "cpp.look.invisibility": {
+    "src_hash": "b31ffe10fc51b2597fc9a74f4da7ce66",
+    "text": "Invizibilitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.328660Z"
+  },
+  "cpp.look.magic_shield_capacity": {
+    "src_hash": "6d9ec240fe3d70164f1ca05641d8962d",
+    "text": "Capacitatea Scutului Magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.330255Z"
+  },
+  "cpp.returnvalue.no_party_members_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Niciun membru de partid în raza de acțiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.349263Z"
+  },
+  "cpp.vocation.id_5": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Maestru Vrăjitor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.373601Z"
+  },
+  "cpp.vocation.id_7": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Paladinul Regal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.374106Z"
+  },
+  "cpp.vocation.id_8": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Cavaler de elită",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:19.374646Z"
+  },
+  "cpp.inspect.imbuement_slot": {
+    "src_hash": "d8b8cbd7f322236d18b06b2bc867a167",
+    "text": "Slot de îmbinare {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:26.674873Z"
+  },
+  "cpp.inspect.imbuement_slots": {
+    "src_hash": "59ae95b4f824cea331194109ed77bbda",
+    "text": "Sloturi de îmbinare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:26.675104Z"
+  },
+  "cpp.inspect.magic_level_label": {
+    "src_hash": "52611a88685d2f588f58aa123f0f259c",
+    "text": "{0} Nivel magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:34.385815Z"
+  },
+  "cpp.inspect.magic_level_value": {
+    "src_hash": "063ec72e26da337fb0a22f8ab3f241bc",
+    "text": "nivel magic {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:34.386063Z"
+  },
+  "cpp.inspect.n_seconds": {
+    "src_hash": "894a208290274479c9e9408927b7c073",
+    "text": "{0} secunde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:34.386886Z"
+  },
+  "cpp.inspect.perfect_shot": {
+    "src_hash": "206eebbc6bd02c381acfd971a4675e97",
+    "text": "Lovitură perfectă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:34.387117Z"
+  },
+  "cpp.inspect.physical_plus": {
+    "src_hash": "9f0c54c466d97e93b32794c483030c7b",
+    "text": "{0} fizic + {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:40.170627Z"
+  },
+  "cpp.inspect.professions": {
+    "src_hash": "338bfdd3c45f08cea4ba92c01054f45e",
+    "text": "Profesii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:40.171210Z"
+  },
+  "cpp.inspect.required_level": {
+    "src_hash": "5ab64d8b1a2cf5b487c1dbf88fdf64c1",
+    "text": "Nivel obligatoriu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:40.171426Z"
+  },
+  "cpp.inspect.required_magic_level": {
+    "src_hash": "6821616c8a63532178ae7438bea1c633",
+    "text": "Nivel de magie necesar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:40.171678Z"
+  },
+  "cpp.inspect.rune_spell_name": {
+    "src_hash": "8751237628ef1f455997715e35819b4e",
+    "text": "Numele vrăjirii rune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:45.975232Z"
+  },
+  "cpp.inspect.total_expire_time": {
+    "src_hash": "37791e7ec2f07b95aeffcc0dbc14ff54",
+    "text": "Timp total de expirare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:45.976246Z"
+  },
+  "cpp.inspect.total_weight": {
+    "src_hash": "f55b07cb5f8ad185174056610fb761bb",
+    "text": "Greutate totală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:45.976490Z"
+  },
+  "cpp.inspect.tradeable_in_market": {
+    "src_hash": "a01b726d6c2da40abf99b74470ef4d7c",
+    "text": "Negociabil în Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:45.976861Z"
+  },
+  "cpp.inspect.weapon_type": {
+    "src_hash": "c643de41cd81073a0ed42a807c826ab0",
+    "text": "Tip de armă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:50.568143Z"
+  },
+  "cpp.item.imbuement_error_reopen": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "A apărut o eroare, vă rugăm să redeschideți fereastra de imbumentare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:50.568560Z"
+  },
+  "cpp.item.invalid_slot": {
+    "src_hash": "8dc8f358c2df7366a75718585ce8c3dc",
+    "text": "Selecție de slot nevalidă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:50.568852Z"
+  },
+  "cpp.item.unwrap_in_house": {
+    "src_hash": "85dba66d4b7d32af19b865ba5d0f5641",
+    "text": "Desfaceți-l în propria casă pentru a crea un <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:02:50.569233Z"
+  },
+  "cpp.look.augments": {
+    "src_hash": "c9e82b3b553596e21c823c1ef72b49c5",
+    "text": "Augmente: ({0}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:02.205363Z"
+  },
+  "cpp.look.brand_new": {
+    "src_hash": "67e0171e2c7b42ade21876467abc41b1",
+    "text": "care este nou-nouță",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:02.205927Z"
+  },
+  "cpp.look.charges_many": {
+    "src_hash": "c63a567c09992fa0d0d55e550baf33f9",
+    "text": "care mai are {0} taxe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:02.206586Z"
+  },
+  "cpp.look.charges_one": {
+    "src_hash": "3aba0c27b52e313ef6b5f4705492c179",
+    "text": "care mai are {0} încărcare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:02.207132Z"
+  },
+  "cpp.look.classification_tier": {
+    "src_hash": "247ea34e23030407050d4d2435ba4ca2",
+    "text": "Clasificare: {0} Nivel: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:03:02.207592Z"
   }
 }

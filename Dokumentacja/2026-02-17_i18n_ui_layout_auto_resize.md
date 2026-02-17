@@ -932,9 +932,72 @@ Dla paneli z checkboxami i sliderami:
 
 ## 10. Dalsze kroki
 
-1. **Implementacja Fazy 1**: Zmiany OTUI (min-width, auto-resize, text-wrap)
-2. **Implementacja Fazy 2**: Funkcja Lua `adjustLayoutForTranslations()`
-3. **Implementacja Fazy 3**: tr() dla kategorii sidebar
-4. **Implementacja Fazy 4**: SmallReversedQtPanel elastyczność
-5. **Push**: Font rendering fixes + UI layout fixes → GitHub Actions build
-6. **Testy**: Sprawdzenie wyglądu w en, ru, pl, zh
+1. ~~**Implementacja Fazy 1**: Zmiany OTUI (min-width, auto-resize, text-wrap)~~ ✅ ZROBIONE
+2. **Implementacja Fazy 2**: Funkcja Lua `adjustLayoutForTranslations()` — OPCJONALNIE (C++ autoFitParent ZASTĘPUJE)
+3. ~~**Implementacja Fazy 3**: tr() dla kategorii sidebar~~ ✅ ZROBIONE
+4. **Implementacja Fazy 4**: SmallReversedQtPanel elastyczność — do zrobienia w kolejnej sesji
+5. ~~**Push**: Font rendering fixes + UI layout fixes → GitHub Actions build~~ ✅ ZROBIONE (guardian auto-commit + push)
+6. **Testy**: Sprawdzenie wyglądu w en, ru, pl, zh — wait for build
+
+---
+
+## 11. ZAIMPLEMENTOWANE ZMIANY (sesja 2026-02-17)
+
+### 11.1 Nowy mechanizm C++: `auto-fit-parent` (Podejście C — PropAutoFitParent)
+
+Zaimplementowano kaskadowy mechanizm powiększania rodzica przez widgety potomne.
+
+#### Zmodyfikowane pliki C++:
+
+| Plik | Zmiana |
+|---|---|
+| `src/framework/ui/uiwidget.h` | Dodane `PropAutoFitParentWidth = 1 << 27`, `PropAutoFitParentHeight = 1 << 28` do `FlagProp`. Dodane metody: `setAutoFitParent()`, `setAutoFitParentWidth()`, `setAutoFitParentHeight()`, `isAutoFitParent()`, `autoFitParent()` |
+| `src/framework/ui/uiwidget.cpp` | Implementacja `autoFitParent()` — wykrywa overflow dziecka poza parent, powiększa parent via `g_dispatcher.deferEvent()`. Ochrona przed cyklami: pomija osie w których dziecko jest anchored do parent z OBU stron (left+right, top+bottom). Modyfikacja `setRect()` — wywołuje `autoFitParent()` po zmianie rect. |
+| `src/framework/ui/uiwidgetbasestyle.cpp` | Parser OTUI: `auto-fit-parent`, `auto-fit-parent-width`, `auto-fit-parent-height` |
+| `src/framework/luafunctions.cpp` | Lua bindings: `setAutoFitParent(bool)`, `setAutoFitParentWidth(bool)`, `setAutoFitParentHeight(bool)`, `isAutoFitParent()` |
+
+#### Kaskada propagacji:
+```
+Title (text-auto-resize + auto-fit-parent-width) Text rośnie
+  → Title::setRect() → autoFitParent(Button) → Button rośnie
+    → Button::setRect() → autoFitParent(OptionsCategory) → OptionsCategory rośnie
+      → OptionsCategory::setRect() → autoFitParent(optionsTabBar) → optionsTabBar rośnie
+        → optionsTabBar::setRect() → autoFitParent(optionsWindow) → optionsWindow rośnie
+          → STOP (optionsWindow NIE ma auto-fit-parent)
+```
+
+#### Ochrona przed cyklami (brak infinite loop):
+- `autoFitParent()` sprawdza anchory dziecka do parent
+- Jeśli dziecko jest anchored `left + right` do parent → skip width fit
+- Jeśli dziecko jest anchored `top + bottom` do parent → skip height fit
+- Parent resize via `g_dispatcher.deferEvent()` → asynchroniczne, nie w tym samym frame
+- `setRect()` → `if (clampedRect == m_rect) return false` → brak zmian = brak propagacji
+
+### 11.2 Zmodyfikowane pliki OTUI:
+
+| Plik | Zmiana |
+|---|---|
+| `modules/client_options/options.otui` | `OptionsCategory`: `size: 115 22` → `min-width: 115, height: 22, auto-fit-parent-width: true`. `Button`: usunięto `size: 115 20`, dodano `min-width: 115, height: 20, auto-fit-parent-width: true`, usunięto `anchors.right: parent.right`. `Title`: dodano `auto-fit-parent-width: true`. `optionsTabBar`: `size: 128 453` → `min-width: 128, height: 453, auto-fit-parent-width: true`. `optionsWindow`: dodano `min-width: 686, min-height: 534`. `OptionCheckBox`: dodano `text-wrap: true`. |
+| `data/styles/10-buttons.otui` | `Button`: `size: 106 23` → `min-width: 106, height: 23, text-horizontal-auto-resize: true`. `QtButton`: analogicznie. |
+| `modules/client_options/styles/controls/general.otui` | `hotkeysButton`: `size: 120 20` → `min-width: 120, height: 20, text-horizontal-auto-resize: true` |
+
+### 11.3 Zmodyfikowany Lua:
+
+| Plik | Zmiana |
+|---|---|
+| `modules/client_options/options.lua` | Owinięcie nazw kategorii w `tr()`: "Controls" → `tr("Controls")`, "General Hotkeys" → `tr("General Hotkeys")`, itd. (10 kategorii) |
+
+### 11.4 Git status:
+
+- Zmiany auto-committed przez guardian w cyklach #459 (C++ + styles) i #463 (OTUI + Lua)
+- Push: `origin/master` — Everything up-to-date
+- GitHub Actions: Builds queued (Analysis - SonarCloud, Build - Linux, Build - Windows, Build - Android)
+- Oczekiwanie na wynik build Windows (kluczowy — Clang-CL)
+
+### 11.5 Co jeszcze do zrobienia:
+
+1. **Testy po build**: Sprawdzić czy kompilacja przeszła (zwłaszcza Windows Clang-CL)
+2. **SmallReversedQtPanel**: Zmienić `height: 22` na `min-height: 22` dla paneli z checkboxami
+3. **Dodać tłumaczenia**: Klucze "Controls", "Graphics" itd. do plików locale (ru, pl, de, ...)
+4. **OptionScaleScroll**: Opcjonalnie zmniejszyć scrollbar width z 174 na 150
+5. **Testowanie wizualne**: Uruchomić klienta z różnymi locale i sprawdzić czy okna rosną prawidłowo

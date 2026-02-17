@@ -69630,5 +69630,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:24:19.257617Z"
+  },
+  "achievement.379.name": {
+    "src_hash": "31b0276f0e9e08d13becd485a0e39fb6",
+    "text": "Magnetizzato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:20.218221Z"
+  },
+  "achievement.385.name": {
+    "src_hash": "5f48456696e43243435478f3306af96d",
+    "text": "Notte senza stelle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:20.218686Z"
   }
 }

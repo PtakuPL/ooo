@@ -41301,7 +41301,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:30:44.524549Z"
+    "updated_at": "2026-02-17T11:25:41.855454Z"
   },
   "talkaction.god.achievement.msg_remove_invalid": {
     "src_hash": "7879bd592d152bea01623b163613ff3c",
@@ -61894,5 +61894,157 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:22:17.938911Z"
+  },
+  "talkaction.player.buy_house.msg_not_enough_money": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:36.906506Z"
+  },
+  "talkaction.god.create_item.msg_invalid_tier": {
+    "src_hash": "eaa92e21e83151cc88545bdb09170f52",
+    "text": "Număr de niveluri nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:51.871884Z"
+  },
+  "talkaction.god.create_item.msg_no_item": {
+    "src_hash": "d8b10078093317959154f9ab6ed2eccc",
+    "text": "Nu există niciun articol cu ​​acel id sau nume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:51.872272Z"
+  },
+  "talkaction.god.flags.msg_invalid_flag": {
+    "src_hash": "2632262e74df055f9031763727428fda",
+    "text": "Steagul nevalid. Indicatoarele valide sunt: ​​{list}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:51.872868Z"
+  },
+  "talkaction.god.flags.msg_player_not_found": {
+    "src_hash": "0cc258c8d0e8df7a0b2cbded6b7b0f72",
+    "text": "Jucătorul {name} nu a fost găsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:25:58.954866Z"
+  },
+  "talkaction.god.forge.msg_addlevel_success": {
+    "src_hash": "91b68ad2ca07e83ac9508d0b6f27bfbb",
+    "text": "Nivelul de praf adăugat {amount} pentru playerul {name}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:05.918598Z"
+  },
+  "talkaction.god.forge.msg_addlevel_target": {
+    "src_hash": "8c2d9b901abd0c148d0e7861d46c176b",
+    "text": "{admin} adaugă un nivel de praf {amount} personajului tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:05.919051Z"
+  },
+  "talkaction.god.forge.msg_fiendish_none": {
+    "src_hash": "3c7d6c67005be459dd78a5b2e2c801bb",
+    "text": "Nu există monștri diabolici în acest moment.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:05.919408Z"
+  },
+  "talkaction.god.forge.msg_influenced_none": {
+    "src_hash": "f67848560482c3518a45b2e9974a1522",
+    "text": "Nu există monștri influențați în acest moment.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:12.031664Z"
+  },
+  "talkaction.god.forge.msg_invalid_dust_count": {
+    "src_hash": "a2d3370afbcf98405d5a75ef277f6618",
+    "text": "Număr de praf nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:12.031962Z"
+  },
+  "talkaction.god.forge.msg_invalid_dust_level": {
+    "src_hash": "eede1f67ef00e293b68feb9e719dba49",
+    "text": "Nivel nevalid de praf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:12.032271Z"
+  },
+  "talkaction.god.goto_house.msg_target_no_house": {
+    "src_hash": "6dca1f28914c2e8082af3007153bccda",
+    "text": "Jucătorul {name} nu are casă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:18.225961Z"
+  },
+  "talkaction.god.icons.msg_icon_required": {
+    "src_hash": "06345b76326fc5f786d3e8ec5006518e",
+    "text": "Este necesară pictograma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:26.080584Z"
+  },
+  "talkaction.god.icons.msg_invalid_direction": {
+    "src_hash": "98054b68c33348c40db8dda79d035ec6",
+    "text": "Direcție nevalidă. Utilizați 'up' sau 'down'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:26.080997Z"
+  },
+  "talkaction.god.icons.msg_invalid_quantity": {
+    "src_hash": "8d184a42f8145553436c284b5818e75c",
+    "text": "Cantitate nevalidă. Trebuie să fie mai mare decât 0.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:26.081387Z"
+  },
+  "talkaction.god.icons.msg_number_required": {
+    "src_hash": "9e318ec00dbfa4c982c84bf7d5c0273d",
+    "text": "Numărul pictogramei este necesar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:26.081688Z"
+  },
+  "talkaction.god.ip_ban.msg_already_banned": {
+    "src_hash": "821ce525935b5dfee1b54de7f052823c",
+    "text": "{name} este deja interzis IP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:30.908738Z"
+  },
+  "talkaction.god.ip_ban.msg_banned": {
+    "src_hash": "f46541d5efe7935619c8100c97d75d85",
+    "text": "{name} a fost interzis IP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:30.909379Z"
+  },
+  "talkaction.god.kv.msg_cooldown_cleared": {
+    "src_hash": "eb4794382ddb25f71c02f630612a2788",
+    "text": "Perioada de recuperare a șefului pentru {boss} a fost eliminată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:26:30.922435Z"
   }
 }

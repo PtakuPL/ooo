@@ -61302,5 +61302,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:38:14.981342Z"
+  },
+  "scripts.dark_cathedral_teleports.say_1": {
+    "src_hash": "d1970dffce18bb4514127a3a44158f60",
+    "text": "Non si muove.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:44:51.115027Z"
+  },
+  "scripts.actions_mysterious_scroll.msg_1": {
+    "src_hash": "b565aaea5180b6481625cf2a7b07f8e4",
+    "text": "Non importa quanto spesso ci provi, non riesci a decifrare nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:00.575559Z"
+  },
+  "scripts.actions_mysterious_scroll.msg_2": {
+    "src_hash": "f74783ab2e1d7e06aaf358d52243d5d7",
+    "text": "Hai decifrato qualcosa! Ottieni un Rift Runner che ti accompagnerà nel tuo viaggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:00.576011Z"
+  },
+  "scripts.actions_nests.msg_1": {
+    "src_hash": "fef363bec76627c1d876f7e952b30be4",
+    "text": "Hai distrutto un nido di mostri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:00.576339Z"
+  },
+  "scripts.actions_notescoordinates.msg_1": {
+    "src_hash": "0214c298a23af94b667a3fe7d5d06529",
+    "text": "Hai trovato note e coordinate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:08.427010Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_1": {
+    "src_hash": "7bbc4c59760d2bcf1842a53690ee5564",
+    "text": "Devi prima trovare la carota sotto uno dei tre cappelli per ottenere l'accesso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:08.427428Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_2": {
+    "src_hash": "e510f9518fd800448511537270d4eee8",
+    "text": "Hai trovato la carota! La porta è aperta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:08.427777Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_3": {
+    "src_hash": "c58d014e2cdeae20b0f4d252b2a765ef",
+    "text": "Hai indovinato male! Prendi questo! Carota ha cambiato ora il cappello!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:08.428177Z"
+  },
+  "scripts.actions_oil.say_1": {
+    "src_hash": "ddbd3f875878b8e00d05184abed9bd3b",
+    "text": "La leva scricchiola e è arrugginita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:08.428498Z"
+  },
+  "scripts.actions_oldLock.msg_1": {
+    "src_hash": "7a6d23bac82ce5906f6cb32c76cc2d8d",
+    "text": "Inserisci la vecchia serratura nella porta. Si adatta perfettamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:15.871505Z"
+  },
+  "scripts.actions_old_desk.msg_1": {
+    "src_hash": "033f908b6837e564b466f4b91e421871",
+    "text": "Hai già una vecchia chiave d'argento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:15.871910Z"
+  },
+  "scripts.actions_old_desk.msg_2": {
+    "src_hash": "508293e3d7ed6c045d9df2924b04b947",
+    "text": "Trovi una vecchia chiave d'argento all'interno del cassetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:15.872346Z"
+  },
+  "scripts.actions_old_desk.msg_3": {
+    "src_hash": "9357bd2ca0730e7628e83a029ac73173",
+    "text": "Hai già ricevuto una vecchia nota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:15.872657Z"
+  },
+  "scripts.actions_old_desk.msg_4": {
+    "src_hash": "ecb7f4a78e1e64eba1ccd320dd59b2f0",
+    "text": "Non appena apri il cassetto, un'apparizione spettrale appare brevemente in bilico sulla scrivania. Trovi una vecchia nota all'interno del cassetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:15.873177Z"
+  },
+  "scripts.actions_ore_wagon.msg_1": {
+    "src_hash": "36e2511acf93d9ed7d367f024b98abd9",
+    "text": "Non hai ancora il permesso per usarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:23.545690Z"
+  },
+  "scripts.actions_ore_wagon.msg_2": {
+    "src_hash": "952d68749fac40bd7c7a893a69b373be",
+    "text": "Non sai ancora come usarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:23.546059Z"
+  },
+  "scripts.actions_ore_wagon.say_1": {
+    "src_hash": "9375b969b89a43e98c0a759867b10708",
+    "text": "È necessario rimuovere le macerie per superare in sicurezza il tunnel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:23.546592Z"
+  },
+  "scripts.actions_ore_wagon.say_2": {
+    "src_hash": "15532e277b2337fd378e5263ac3c6e36",
+    "text": "Hai superato il tunnel in sicurezza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:23.546910Z"
+  },
+  "scripts.actions_ore_wagon.say_3": {
+    "src_hash": "21feaca3662bfcbad7c0dc9ca4abdb3f",
+    "text": "Hai superato in sicurezza il divario ma il tuo ponte è crollato dietro di te.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:23.547347Z"
+  },
+  "scripts.actions_ore_wagon.say_4": {
+    "src_hash": "44d076329150ad790d1d62e933ad340e",
+    "text": "È necessario costruire un ponte per superare il divario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:30.436062Z"
+  },
+  "scripts.actions_paint.say_1": {
+    "src_hash": "b8c2f9154046a235887d887b29a3d609",
+    "text": "Hai dipinto un cucciolo di foca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:30.436357Z"
+  },
+  "scripts.actions_palanca.msg_1": {
+    "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
+    "text": "<sizzle> <effervescenza>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:30.436575Z"
+  },
+  "scripts.actions_parchment.say_1": {
+    "src_hash": "af4daff6d7a6bceefa21b451d2273060",
+    "text": "LA CONOSCENZA OSCURA PILLOLE IL LIBRO CON POTERE GREZZO. PRONTO PER ESSERE SCATENATO!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:30.436918Z"
+  },
+  "scripts.actions_parchment.say_2": {
+    "src_hash": "02021b0406da5d6be6e18788f2e3ce05",
+    "text": "LA DISCARICA DEL LIBRO ROMPE LA POSIZIONE DI LOKATHMORS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:30.437226Z"
+  },
+  "scripts.actions_peeler.msg_1": {
+    "src_hash": "82e12715e1434699f28fe1b534e1bbab",
+    "text": "Hai trovato un pelacorteccia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:36.997449Z"
+  },
+  "scripts.actions_peelerfun.msg_1": {
+    "src_hash": "cb298a4ae6c77ed8f197b11c52b658db",
+    "text": "Stai staccando un pezzo di catrame dall'albero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:36.997803Z"
+  },
+  "scripts.actions_pickenchanted.msg_1": {
+    "src_hash": "fb9d34da72cc5f6f1c95cf1b19ea2f48",
+    "text": "Stai estraendo del tagralt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:36.998195Z"
+  },
+  "scripts.actions_plant.msg_1": {
+    "src_hash": "2218f4ca9795863a9640c66efff7f96d",
+    "text": "Hai piantato alcuni semi nel terreno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:36.998533Z"
+  },
+  "scripts.actions_plant.msg_2": {
+    "src_hash": "20f382ee2143fd203f98fa3afff9cd91",
+    "text": "La betulla cresce mentre vi versi sopra l'acqua frizzante della fiala.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:36.998940Z"
+  },
+  "scripts.actions_plant.msg_3": {
+    "src_hash": "81f7826bad933ff78c3d2e6d30dfc6aa",
+    "text": "Non puoi usare la fiala finché gli alberi hanno ancora vita e colore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:43.447832Z"
+  },
+  "scripts.actions_plant.msg_4": {
+    "src_hash": "dbae0926d3ed10c91f6f663ba886cd12",
+    "text": "Sembra che tu non faccia crescere abbastanza alberi o non liberi i pappagalli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:43.448229Z"
+  },
+  "scripts.actions_plant.msg_5": {
+    "src_hash": "c5958bcf813dccf58ae2ddb553ab17bb",
+    "text": "All'improvviso l'area si illumina e tutto intorno a te inizia a fiorire e prosperare di vita e colore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:43.448660Z"
+  },
+  "scripts.actions_portal_brain_head.msg_1": {
+    "src_hash": "a48c3c6b749b7683a55c6d8344d55f91",
+    "text": "Devi essere di livello {} o superiore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:43.448958Z"
+  },
+  "scripts.actions_portal_brain_head.msg_2": {
+    "src_hash": "13ef1da0fb817387dfc054b51a126f7c",
+    "text": "{} è attualmente in fase di sfida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:43.449270Z"
+  },
+  "scripts.actions_portal_brain_head.msg_3": {
+    "src_hash": "28aad9cf193e67328406c60ccad09b5b",
+    "text": "Ci sono troppi giocatori in questo incontro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:45.750650Z"
   }
 }

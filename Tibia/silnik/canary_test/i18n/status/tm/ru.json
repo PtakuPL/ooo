@@ -35718,5 +35718,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:29:00.551006Z"
+  },
+  "scripts.actions_lever.msg_2": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "У вас нет волшебного ключа Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.828391Z"
+  },
+  "scripts.actions_magnifier.msg_1": {
+    "src_hash": "babb8f6619bceca2d20d80e35dbedf4e",
+    "text": "Ничего особенного. Эта картина выглядит настоящей.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.833483Z"
+  },
+  "scripts.actions_magnifier.msg_2": {
+    "src_hash": "b5d561af2c0da7158e0a87633ace58c1",
+    "text": "Вот и все. Такое ощущение, будто его нарисовал ребенок!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.833976Z"
+  },
+  "scripts.actions_misguided.msg_1": {
+    "src_hash": "213142cf1bfe9d48b7002860d1b169c7",
+    "text": "Вы парализуете хулигана, и амулет раскрывает истинное лицо существа, стоящего за одержимостью этого заблудшего существа.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.834878Z"
+  },
+  "scripts.actions_mission3_chest.msg_1": {
+    "src_hash": "42dd3838d3aa4aa1f0ad19c9a81066ed",
+    "text": "Вы нашли флакон с ядом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.836633Z"
+  },
+  "scripts.actions_rascacoon_shortcut.msg_1": {
+    "src_hash": "ded2b9f120cca0d28d8c1118c78bbbcf",
+    "text": "Для входа вам нужен минимум 200 уровень.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.846384Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "ПРРРРРРРРООООАААААА!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.846878Z"
+  },
+  "scripts.actions_reward.msg_2": {
+    "src_hash": "af25ee5b09695cf2151c647c8f101d29",
+    "text": "Вы уже получили свою награду.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.847332Z"
+  },
+  "scripts.actions_the_outlaw_camp_quest.msg_1": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Вы нашли сумку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.853911Z"
+  },
+  "scripts.actions_torch.msg_1": {
+    "src_hash": "4854b59cfd2c644e8e313775e6de1a6f",
+    "text": "Недалеко от вас вы слышите громкий скрежет. что-то очень тяжелое, кажется, сдвинулось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.857553Z"
+  },
+  "scripts.actions_yselda_entrances.msg_1": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Для входа вам нужен минимум 250 уровень.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.862998Z"
+  },
+  "scripts.actions_yselda_shortcut.msg_1": {
+    "src_hash": "b098102bc8283f62fb35ba0a9d9b31c1",
+    "text": "Кажется, что этот корень утолщается и скручивается в тот момент, когда вы пытаетесь его схватить.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.863565Z"
+  },
+  "scripts.check_mount.msg_1": {
+    "src_hash": "53fb4630c527cc842c731640ece0d1ca",
+    "text": "Ваш контракт с лошадью истек, и она вернулась обратно на конную станцию.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.870236Z"
+  },
+  "scripts.chest.msg_2": {
+    "src_hash": "ac1f9925628d9e59d3b4385a686c8259",
+    "text": "Вы нашли деревянный меч.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.871027Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_3": {
+    "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+    "text": "МВАААХАХААА!! НИКТО!! НИКТО НЕ МОЖЕТ ПОБЕДИТЬ МЕНЯ!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.877645Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_4": {
+    "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+    "text": "МВАААХАХААА!! НИКТО!! НИКТО НЕ МОЖЕТ ПОБЕДИТЬ МЕНЯ!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.878143Z"
+  },
+  "scripts.creaturescripts_ratmiral_death.msg_1": {
+    "src_hash": "1ed8049e3dc0aeeda50e88c029721d99",
+    "text": "Поздравляем, вы получили костюм Раскухана.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:45:50.878762Z"
   }
 }

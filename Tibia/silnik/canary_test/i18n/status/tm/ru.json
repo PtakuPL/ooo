@@ -32126,5 +32126,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:51:55.472464Z"
+  },
+  "scripts.action_cat_basket.say_2": {
+    "src_hash": "32773a28a80d0bcb17a9edbdeea4076e",
+    "text": "Кот королевы не в восторге!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:02.908160Z"
+  },
+  "scripts.action_contract.say_1": {
+    "src_hash": "c8f125b3cb6febc023f9cd84ad3cef27",
+    "text": "Вы подписываете договор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:02.908467Z"
+  },
+  "scripts.action_crate.say_1": {
+    "src_hash": "fca452ef18abc7cc68df7f167ef8ad06",
+    "text": "Твой невинный свист их всех обманет...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:02.908832Z"
+  },
+  "scripts.action_cushion.say_1": {
+    "src_hash": "0446678e7803beb759d1d55e785199e4",
+    "text": "Ууууу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:02.909034Z"
+  },
+  "scripts.action_cushion.say_2": {
+    "src_hash": "ff65be0caa3604016fe9f73079073310",
+    "text": "*маниакально смеётся*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:02.909299Z"
+  },
+  "scripts.action_disguise.say_1": {
+    "src_hash": "14794b706ca5c231c49db8ec9262f013",
+    "text": "Теперь вы замаскированы под мумию на 10 секунд. Поторопитесь и напугайте халифа!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:05.579884Z"
+  },
+  "scripts.action_hidden_note.msg_1": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Вы нашли лист бумаги.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:05.580236Z"
+  },
+  "scripts.action_horn.say_1": {
+    "src_hash": "074a9f24553df0cf18625275df81a6e0",
+    "text": "Ты не настолько пьян, чтобы толкать мамонта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:05.580621Z"
+  },
+  "scripts.action_horn.say_2": {
+    "src_hash": "b9e4ffbf146a1ddf7710cd45c03d8c21",
+    "text": "Ты толкаешь мамонта. Как весело. *хикс*.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:05.580990Z"
+  },
+  "scripts.action_horn.say_3": {
+    "src_hash": "8acec3a7caf3ea2705b8232f19a7c033",
+    "text": "Медведя это не забавляет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:05.581325Z"
+  },
+  "scripts.action_horn.say_5": {
+    "src_hash": "6b35ad266884e6774eeed5bc937d9189",
+    "text": "Не хочется обнимать бессознательного медведя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:07.290998Z"
   }
 }

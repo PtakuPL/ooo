@@ -51910,5 +51910,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:49:57.704570Z"
+  },
+  "scripts.actions_lever.msg_1": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "È necessario attendere qualche minuto per riutilizzarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:14.579751Z"
+  },
+  "scripts.actions_lever.msg_2": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "Non hai la chiave magica di Chayenne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:14.580299Z"
+  },
+  "scripts.actions_lever.say_1": {
+    "src_hash": "aa9ccbfdb4b79e0d41f656fcba8ab407",
+    "text": "È necessario che un giocatore per ogni vocazione abbia completato la missione Sfere Elementali e porti anche l'oggetto raro elementale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:14.580928Z"
+  },
+  "scripts.actions_lever.say_2": {
+    "src_hash": "aa9ccbfdb4b79e0d41f656fcba8ab407",
+    "text": "È necessario che un giocatore per ogni vocazione abbia completato la missione Sfere Elementali e porti anche l'oggetto raro elementale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:14.581493Z"
+  },
+  "scripts.actions_lever.say_3": {
+    "src_hash": "02b3e2a7f11c2273a1fc55221fd44e02",
+    "text": "Attendi che la squadra attuale esca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:14.581942Z"
+  },
+  "scripts.actions_lever_death_priest_shargon.say_1": {
+    "src_hash": "3efb0eb33ad1f31e783f972b2a78bf23",
+    "text": "Qualcuno sta combattendo contro il capo! Devi aspettare un po'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:20.578239Z"
+  },
+  "scripts.actions_lever_the_ravager.say_1": {
+    "src_hash": "3efb0eb33ad1f31e783f972b2a78bf23",
+    "text": "Qualcuno sta combattendo contro il capo! Devi aspettare un po'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:20.578714Z"
+  },
+  "scripts.actions_lever_third.msg_2": {
+    "src_hash": "bf8eb5cea5fb9a7b45fbb13219aa888a",
+    "text": "Un suono rimbombante quasi ti assorda. Da qualche parte nel profondo senti un sussurro: 'Grass...'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:20.579151Z"
+  },
+  "scripts.actions_lever_third.msg_3": {
+    "src_hash": "78a561116ea546f45d52fd26a3470348",
+    "text": "Un suono rimbombante quasi ti assorda. Da qualche parte nel profondo senti un sussurro: 'Ice...'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:20.579606Z"
+  },
+  "scripts.actions_levers.say_1": {
+    "src_hash": "0aaea8a4888edec21ff8c22c85c134e6",
+    "text": "Mentre giri la leva puoi sentirne il ticchettio. Forse dovresti sbrigarti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:28.396122Z"
+  },
+  "scripts.actions_levers.say_2": {
+    "src_hash": "5235635727067e19d62dee6890c4d35b",
+    "text": "Sei troppo tardi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:28.396377Z"
+  },
+  "scripts.actions_levers.say_3": {
+    "src_hash": "8d2b875010fafbd041fc25c34cbccd00",
+    "text": "indietro, indietro, su, destra, sinistra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:28.396656Z"
+  },
+  "scripts.actions_levers.say_4": {
+    "src_hash": "40ad09e2d7bd0f909ae611c63c4b104a",
+    "text": "Non sai cosa fare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:28.396923Z"
+  },
+  "scripts.actions_levers.say_5": {
+    "src_hash": "fd1e2df001387e5e5932944e67052942",
+    "text": "La leva finale non si muoverà... ancora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:28.397247Z"
+  },
+  "scripts.actions_lions_rock.msg_1": {
+    "src_hash": "7528d5b2e49b4966056db66c9e5bcc15",
+    "text": "Hai trovato il fiore della criniera di un leone.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:37.159780Z"
+  },
+  "scripts.actions_lions_rock.msg_2": {
+    "src_hash": "a85e13a5a5e9d4915e8dcda2f52d7075",
+    "text": "Hai trovato l'acqua santa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:37.160122Z"
+  },
+  "scripts.actions_lions_rock.msg_3": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:37.160390Z"
+  },
+  "scripts.actions_lions_rock.msg_4": {
+    "src_hash": "290a51db9ab2d0473ef75aa9d58a869d",
+    "text": "La fontana è vuota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:37.160659Z"
+  },
+  "scripts.actions_lions_rock.msg_5": {
+    "src_hash": "13d72ea84fe15776cde8a8c18ed8eb30",
+    "text": "Hai sacrificato la lingua di un cobra presso un'antica statua. La luce nella piccola piramide lì vicino comincia a brillare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:37.161234Z"
+  },
+  "scripts.actions_lions_rock.msg_6": {
+    "src_hash": "fb6158583196b5d5044c23674a7b68fb",
+    "text": "Hai bruciato il fiore della criniera di un leone. La luce nella piccola piramide lì vicino comincia a brillare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:44.208283Z"
+  },
+  "scripts.actions_lions_rock.msg_7": {
+    "src_hash": "e358843eb8856d9bdeba6f2517c2f61d",
+    "text": "Hai purificato un piedistallo sacro con l'acqua santa. Ora hai superato l'ultimo test per entrare nel santuario interiore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:44.208771Z"
+  },
+  "scripts.actions_lord_of_elements_lever.say_1": {
+    "src_hash": "e7bba1ba9a8a9d0894219a467d2ca8a9",
+    "text": "Hai 10 minuti da adesso in poi prima di essere teletrasportato fuori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:44.209138Z"
+  },
+  "scripts.actions_lord_of_elements_lever.say_3": {
+    "src_hash": "e08776a5a16745ba8f07b658dca06c47",
+    "text": "Hai 5 minuti da adesso in poi prima di essere teletrasportato fuori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:44.209509Z"
+  },
+  "scripts.actions_lost_time.msg_1": {
+    "src_hash": "e765991be3e63a9ff069546c348d7240",
+    "text": "Il perditempo consuma avidamente il tempo e svanisce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:44.209856Z"
+  },
+  "scripts.actions_lyre.msg_1": {
+    "src_hash": "5f4ad7bede9a628e2470894a6895cab4",
+    "text": "Hai trovato Lira.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:50.110811Z"
+  },
+  "scripts.actions_lyre.msg_2": {
+    "src_hash": "7c5623cfc2f732af0abd9b62f218f05a",
+    "text": "La borsa non può essere aperta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:50.111132Z"
+  },
+  "scripts.actions_machines_deep_terror.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n La macchina funziona!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:50.111415Z"
+  },
+  "scripts.actions_machines_deep_terror.say_2": {
+    "src_hash": "2b05d281348ab8cd50c8a05f2fe3265d",
+    "text": "Tutte le macchine funzionano, ora è possibile utilizzare il teletrasporto a est.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:50.111837Z"
+  },
+  "scripts.actions_machines_deep_terror.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Impossibile accendere questa macchina per ora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:50.112153Z"
+  },
+  "scripts.actions_machines_glooth_horror.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n La macchina funziona!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:53.585286Z"
+  },
+  "scripts.actions_machines_glooth_horror.say_2": {
+    "src_hash": "27c439e5b6bf85b03f9a36726abe5623",
+    "text": "Tutte le macchine funzionano, ora è possibile utilizzare il teletrasporto a ovest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:53.585730Z"
+  },
+  "scripts.actions_machines_glooth_horror.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Impossibile accendere questa macchina per ora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:53.586052Z"
+  },
+  "scripts.actions_machines_lava.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n La macchina funziona!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:53.586368Z"
+  },
+  "scripts.actions_machines_lava.say_2": {
+    "src_hash": "27c439e5b6bf85b03f9a36726abe5623",
+    "text": "Tutte le macchine funzionano, ora è possibile utilizzare il teletrasporto a ovest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:53.586790Z"
+  },
+  "scripts.actions_machines_lava.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Impossibile accendere questa macchina per ora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:55.538959Z"
+  },
+  "scripts.actions_machines_professor_maxxen.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n La macchina funziona!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:57:55.539260Z"
   }
 }

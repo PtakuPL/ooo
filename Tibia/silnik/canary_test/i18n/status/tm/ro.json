@@ -46222,5 +46222,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:53:12.643150Z"
+  },
+  "scripts.quests.found_item": {
+    "src_hash": "d8f7cefe403c291457b6c9f5478b1938",
+    "text": "Ați găsit un %s.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:11.425330Z"
+  },
+  "scripts.soul_war_mechanics.msg_7": {
+    "src_hash": "6655db13bee1450cbda069988ba9ac6f",
+    "text": "Pierzi nivelul de contaminare: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:11.436630Z"
+  },
+  "scripts.soul_war_mechanics.msg_8": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Nivelul de contaminare eliminat: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:11.437265Z"
+  },
+  "scripts.soulpit_fight.msg_1": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Cineva se luptă în groapa sufletească!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:11.438147Z"
+  },
+  "scripts.actions_hallowed.msg_1": {
+    "src_hash": "9efa4d20bdabe3dd7d5c46c2e12b660b",
+    "text": "Flăcările urlă și mănâncă osul cu foame. Domnul Întunecat este mulțumit de darul tău",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:15.484668Z"
+  },
+  "scripts.actions_holy_water.msg_1": {
+    "src_hash": "a8071fd5fd191d609f186ded5ec1fea2",
+    "text": "Stropiți talismanul de coarne cu apă sfințită. Strălucește slab.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:18.096586Z"
+  },
+  "scripts.actions_iksupan_entrance.msg_1": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Ai nevoie de cel puțin nivelul 150 pentru a intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:18.097048Z"
+  },
+  "scripts.actions_inscriptions.msg_1": {
+    "src_hash": "5650a1ba0060a83b12bc68f84825a89f",
+    "text": "Cuvintele par să respire, ciudat. Un cuvânt rămâne în minte: bronz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:18.097490Z"
+  },
+  "scripts.actions_inscriptions.msg_2": {
+    "src_hash": "d0d188433a2cb4792bb0534e52f90092",
+    "text": "Cuvintele par să strălucească ușor. Un nume se fixează în mintea ta: Takesha Antishu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:18.097955Z"
+  },
+  "scripts.actions_inscriptions.msg_3": {
+    "src_hash": "65b1bcbdbbca5ed48d6d3c7ac0a06c9c",
+    "text": "Cuvintele par să fluture. Un cuvânt rămâne în minte: plutire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:18.098433Z"
+  },
+  "scripts.actions_key2.msg_1": {
+    "src_hash": "c01ef6b8ed5e20d7721df122e9083659",
+    "text": "O mână invizibilă te trage înăuntru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:20.744067Z"
+  },
+  "scripts.actions_key2.msg_2": {
+    "src_hash": "5fb38602d50efd74221fdf1e74fbee29",
+    "text": "Ieși din camera mea!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:20.744368Z"
+  },
+  "scripts.actions_keyCheck.msg_1": {
+    "src_hash": "b824070060a96b3767a04442a2bbbd24",
+    "text": "Imediat ce rotiți a doua cheie, un mecanism retrage încuietorile și înghite cheile, deschizând un mic pasaj dincolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:20.744928Z"
+  },
+  "scripts.actions_keyCheck.msg_2": {
+    "src_hash": "599d1059eed101de91e1275fef7304f1",
+    "text": "Trebuie să utilizați mecanismul stâlpului în sine pentru a roti ambele chei simultan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:20.745391Z"
+  },
+  "scripts.actions_keyCheck.msg_3": {
+    "src_hash": "ef8ec3bba66aa3bfc1deb0e6dbd2d49b",
+    "text": "Atingeți onixul și declanșați și descărcarea enormă de energie brută. Acum este posibil să traversăm portalul din acest mormânt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:23.424552Z"
+  },
+  "scripts.actions_ladder.say_1": {
+    "src_hash": "99a982ec7e61488cbe7e94d58956d1c4",
+    "text": "Zzz Nu lucrează.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:23.424839Z"
+  },
+  "scripts.actions_lair_entrance.msg_1": {
+    "src_hash": "74de3ece38288807bd3e747ebe19fc4b",
+    "text": "Încă nu ești demn să intri în Bârlogul lui The First Dragon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:23.425395Z"
+  },
+  "scripts.actions_last_fight.msg_1": {
+    "src_hash": "6ed9feb088ea842e969a2111ff57c309",
+    "text": "Ai nevoie cel puțin ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:23.425702Z"
+  },
+  "scripts.actions_last_object.msg_1": {
+    "src_hash": "ddd6237398c160652e46293ac818e5b9",
+    "text": "Simbolul ciudat din peretele din spate strălucește violent.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:23.426177Z"
+  },
+  "scripts.actions_last_object.msg_2": {
+    "src_hash": "e383abcb644bc07342757f906ebda41b",
+    "text": "Obiectul de cult stă acolo în liniște. Zona periculoasă din jurul ei a fost aproape dizolvată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:29.325115Z"
+  },
+  "scripts.actions_last_object.msg_3": {
+    "src_hash": "67e4e841e7632d46dcfdc852092449f5",
+    "text": "Pe măsură ce întindeți mâna pentru a atinge obiectul de cult, un val de energie a izbucnit din craniu. I-ai alungat puterea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:29.326368Z"
+  },
+  "scripts.actions_legion_helmet.say_1": {
+    "src_hash": "b66eb5cbe62a5582e5e1a8f08fe1070e",
+    "text": "Ați descoperit deja acest teleport.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:29.327027Z"
+  },
+  "scripts.actions_legion_helmet.say_2": {
+    "src_hash": "dea1f1531a62234d04f6d34d95fe3999",
+    "text": "Zeul șopârlă îți acceptă oferta! Poți intra în santuar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:29.327800Z"
+  },
+  "scripts.actions_lever.msg_1": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "Trebuie să așteptați câteva minute pentru a o utiliza din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:29.328548Z"
+  },
+  "scripts.actions_lever.msg_2": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "Nu aveți cheia magică a lui Chayenne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:32.739130Z"
+  },
+  "scripts.actions_lever.say_1": {
+    "src_hash": "aa9ccbfdb4b79e0d41f656fcba8ab407",
+    "text": "Ai nevoie de câte un jucător de fiecare vocație care a finalizat misiunea Sfere elementare și, de asemenea, să poarte elementul elementar rar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:32.739789Z"
+  },
+  "scripts.actions_lever.say_2": {
+    "src_hash": "aa9ccbfdb4b79e0d41f656fcba8ab407",
+    "text": "Ai nevoie de câte un jucător de fiecare vocație care a finalizat misiunea Sfere elementare și, de asemenea, să poarte elementul elementar rar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:32.740401Z"
+  },
+  "scripts.actions_lever.say_3": {
+    "src_hash": "02b3e2a7f11c2273a1fc55221fd44e02",
+    "text": "Așteptați ca echipa actuală să iasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:32.740749Z"
+  },
+  "scripts.actions_lever_death_priest_shargon.say_1": {
+    "src_hash": "3efb0eb33ad1f31e783f972b2a78bf23",
+    "text": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:36.370563Z"
+  },
+  "scripts.actions_lever_the_ravager.say_1": {
+    "src_hash": "3efb0eb33ad1f31e783f972b2a78bf23",
+    "text": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:36.371003Z"
+  },
+  "scripts.actions_lever_third.msg_2": {
+    "src_hash": "bf8eb5cea5fb9a7b45fbb13219aa888a",
+    "text": "Un sunet puternic aproape că te asurdă. Din adâncul tău auzi o șoaptă: 'Grass...'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:36.371497Z"
+  },
+  "scripts.actions_lever_third.msg_3": {
+    "src_hash": "78a561116ea546f45d52fd26a3470348",
+    "text": "Un sunet puternic aproape că te asurdă. Din adâncul tău auzi o șoaptă: 'Ice...'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:36.372000Z"
+  },
+  "scripts.actions_levers.say_1": {
+    "src_hash": "0aaea8a4888edec21ff8c22c85c134e6",
+    "text": "Pe măsură ce rotiți pârghia, o puteți inima să ticăie. Poate ar trebui să te grăbești!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:36.372465Z"
+  },
+  "scripts.actions_levers.say_2": {
+    "src_hash": "5235635727067e19d62dee6890c4d35b",
+    "text": "Ai întârziat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:38.670058Z"
+  },
+  "scripts.actions_levers.say_3": {
+    "src_hash": "8d2b875010fafbd041fc25c34cbccd00",
+    "text": "înapoi, înapoi, sus, dreapta, stânga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:38.670506Z"
+  },
+  "scripts.actions_levers.say_4": {
+    "src_hash": "40ad09e2d7bd0f909ae611c63c4b104a",
+    "text": "Nu știi ce să faci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:58:38.670807Z"
   }
 }

@@ -7849,3 +7849,7 @@
 {"timestamp": "2026-02-17T08:08:45.001848Z", "cycle": 364, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 461, "detail": "count=books.json"}
 {"timestamp": "2026-02-17T08:10:09.670804Z", "cycle": 364, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 84536, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T08:10:15.730878Z", "cycle": 364, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 5830, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T08:10:26.987287Z", "cycle": 364, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "cycle_total", "duration_ms": 102639, "detail": "delay=4"}
+{"timestamp": "2026-02-17T08:10:32.990838Z", "cycle": 365, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 1750, "detail": "count=php.json"}
+{"timestamp": "2026-02-17T08:10:50.013696Z", "cycle": 365, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "mode_run", "duration_ms": 16888, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T08:10:56.807632Z", "cycle": 365, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "status_update", "duration_ms": 5780, "detail": "throttle_every=1"}

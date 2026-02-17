@@ -31182,5 +31182,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:06:45.366882Z"
+  },
+  "quests.shattered_isles.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Ai găsit {0} {1}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:57.044834Z"
+  },
+  "quests.inquisition.teleport_say_1": {
+    "src_hash": "8ef32cb681fd34e8b4c5898bea7c5641",
+    "text": "Intrând în secția lui Ushuriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:00.456179Z"
+  },
+  "quests.inquisition.teleport_say_10": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Intrând în sălile de sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:00.456494Z"
+  },
+  "quests.inquisition.teleport_say_11": {
+    "src_hash": "f714a602d2801dd4b089bcee8d5070aa",
+    "text": "Intrând în Turnătorie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:07.607734Z"
+  },
+  "quests.inquisition.teleport_say_12": {
+    "src_hash": "77f23e15c82945321e29dfb451c9a6d6",
+    "text": "Intrând în secția lui Madareth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:07.608057Z"
+  },
+  "quests.inquisition.teleport_say_13": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Intrarea în Cuve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:07.608308Z"
+  },
+  "quests.inquisition.teleport_say_14": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:07.608610Z"
+  },
+  "quests.inquisition.teleport_say_15": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Intrarea în Cuve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:07.608855Z"
+  },
+  "quests.inquisition.teleport_say_16": {
+    "src_hash": "8a9b8ad11f7f6477078c9057fa71a4f8",
+    "text": "Intrarea pe câmpul de luptă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:12.963994Z"
+  },
+  "quests.inquisition.teleport_say_17": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Intrarea în Cuve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:12.964258Z"
+  },
+  "quests.inquisition.teleport_say_18": {
+    "src_hash": "9d6e489a953c92b65b2e4155ef092be7",
+    "text": "Intrând în Forja Demonilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:12.964541Z"
+  },
+  "quests.inquisition.teleport_say_19": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Intrând în Arcan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:12.964789Z"
+  },
+  "quests.inquisition.teleport_say_2": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Intrând în Peșterile de Cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:12.965091Z"
+  },
+  "quests.inquisition.teleport_say_20": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:18.279706Z"
+  },
+  "quests.inquisition.teleport_say_21": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Intrând în Arcan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:18.279980Z"
+  },
+  "quests.inquisition.teleport_say_22": {
+    "src_hash": "5302c8173c3cb6ad78d4a445444621f2",
+    "text": "Intrând în fântânile sufletului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:18.280267Z"
+  },
+  "quests.inquisition.teleport_say_23": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Intrând în Arcan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:18.280513Z"
+  },
+  "quests.inquisition.teleport_say_24": {
+    "src_hash": "87a584d47d99ef1099a1b7763d63167b",
+    "text": "Intrând în secția lui Annihilon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:18.280824Z"
+  },
+  "quests.inquisition.teleport_say_25": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Intrând în Stup.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:24.349898Z"
+  },
+  "quests.inquisition.teleport_say_26": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:24.350342Z"
+  },
+  "quests.inquisition.teleport_say_27": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Intrând în Stup.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:24.350597Z"
+  },
+  "quests.inquisition.teleport_say_28": {
+    "src_hash": "8c3f7a9b0837c942cb96323e9e7f0ff6",
+    "text": "Intrând în secția lui Hellgorak.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:24.350915Z"
+  },
+  "quests.inquisition.teleport_say_3": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:27.960631Z"
+  },
+  "quests.inquisition.teleport_say_30": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:27.960963Z"
+  },
+  "quests.inquisition.teleport_say_31": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Intrând în sălile de sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:27.961266Z"
+  },
+  "quests.inquisition.teleport_say_4": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Intrând în Peșterile de Cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:27.961569Z"
+  },
+  "quests.inquisition.teleport_say_5": {
+    "src_hash": "b3d040710e4f4bdad657ac023d4b24b5",
+    "text": "Intrând în Peșterile Scufundate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:27.961861Z"
+  },
+  "quests.inquisition.teleport_say_6": {
+    "src_hash": "26c96174a35ff15138aa0a0fa46cd0c5",
+    "text": "Intrând în labirintul de oglinzi al nebuniei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:34.181372Z"
+  },
+  "quests.inquisition.teleport_say_7": {
+    "src_hash": "284178d2bd2cd7be84bf88293e481b84",
+    "text": "Intrând în secția lui Zugurosh.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:34.181726Z"
+  },
+  "quests.inquisition.teleport_say_8": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Intrând în sălile de sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:34.182026Z"
+  },
+  "quests.inquisition.teleport_say_9": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Scăpând înapoi la Retragere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:34.182426Z"
+  },
+  "quests.kilmaresh.cutting_desert_rose": {
+    "src_hash": "2e1c81ae7224b8bdc118376e4385e9a7",
+    "text": "Tai niște flori de trandafir de deșert.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:34.182807Z"
+  },
+  "quests.kilmaresh.cutting_snake_maw": {
+    "src_hash": "0e2be5b2e26406b215516ef7212090cc",
+    "text": "Tai niște gura de șarpe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:42.703802Z"
+  },
+  "quests.kilmaresh.cutting_veldt": {
+    "src_hash": "4cc80603c2753d4c6213f354440388c0",
+    "text": "Tu tăiați niște flori de veld.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:42.704138Z"
+  },
+  "quests.kilmaresh.empty_gryphon_nest": {
+    "src_hash": "70d61105abbfa029a50cc78ce83656ff",
+    "text": "Cuibul de grifon este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:42.704414Z"
+  },
+  "quests.kilmaresh.empty_palm": {
+    "src_hash": "029b211ddc519f2f94d035dc82d0dab4",
+    "text": "Această palmă este goală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:42.704686Z"
+  },
+  "quests.kilmaresh.empty_sarcophagus": {
+    "src_hash": "4b17b5c3996f0321c7c486bece458b6c",
+    "text": "Sarcofagul este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:42.704935Z"
+  },
+  "quests.kilmaresh.found_gryphon_mask": {
+    "src_hash": "435d494d0d817160038bd508df2e1001",
+    "text": "Ai găsit o mască de grifon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:51.040348Z"
+  },
+  "quests.kilmaresh.found_mirror_mask": {
+    "src_hash": "4c9e19f7722a51fca3a7e07d7b332278",
+    "text": "Ai găsit o mască de oglindă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:51.040714Z"
+  },
+  "quests.kilmaresh.found_silver_mask": {
+    "src_hash": "cb7c8d53e21f98f868611b54b478f33d",
+    "text": "Ai găsit o mască de argint.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:51.041103Z"
+  },
+  "quests.kilmaresh.gathering_spiderweb": {
+    "src_hash": "b3007e6d0e8ab1c46f520fbfcef53c6e",
+    "text": "Adunați niște bucăți de nori de pânză de păianjen. Dar te încurci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:51.041525Z"
+  },
+  "quests.kilmaresh.memory_word_1": {
+    "src_hash": "a9f3adb041832dcb22a0255e1c9d02ac",
+    "text": "Ambasadorul îi spune altui demnitar: Rathleton nu trebuie niciodată depășit! Voi asigura ca Imperiul să se clatine!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:51.042363Z"
+  },
+  "quests.kilmaresh.memory_word_2": {
+    "src_hash": "66d6e2423b2a2c1b3261fe7329f31950",
+    "text": "Printr-o poartă dimensională îl poți vedea pe Ambasadorul lui Rathleton purtând o mantie cu un sfinx negru pe ea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:54.258614Z"
+  },
+  "quests.kilmaresh.memory_word_3": {
+    "src_hash": "833be6e9e01708a39902aebfb55591bb",
+    "text": "Printr-o poartă dimensională puteți vedea cum ambasadorul lui Rathleton vorbește cu cultistii Fafnar într-un mod destul de familiar. Dovada este absolut de fond. Ambasadorul este un trădător!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:08:54.259526Z"
   }
 }

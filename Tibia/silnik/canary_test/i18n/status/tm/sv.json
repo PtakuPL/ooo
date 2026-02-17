@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:46:30.555795Z"
+    "updated_at": "2026-02-17T02:08:59.506953Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -20926,5 +20926,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:59:07.006043Z"
+  },
+  "data.otservbr.global.npc.bron.L58.27": {
+    "src_hash": "3c96311a2df7cd5491976b4303ecfa9c",
+    "text": "Nej då! Var det verkligen jag? Det här är så pinsamt, jag har ingen aning om vad som har fått in mig. Var det kämpaglöden du gav mig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:10.461807Z"
+  },
+  "data.otservbr.global.npc.bruno.L62.438": {
+    "src_hash": "130d80e1c83d95931a68442d397fcbbc",
+    "text": "Hej då och kom igen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:10.462302Z"
+  },
+  "data.otservbr.global.npc.bruno.L63.439": {
+    "src_hash": "f5611466111acf02c50fd70a513700e0",
+    "text": "Köp all fisk du vill ha. Det är fräscht och hälsosamt, utlovat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:10.462703Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L111.102": {
+    "src_hash": "8d63ee3cbee0282495d8d7d17e027454",
+    "text": "Adressera mig ordentligt |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:20.901877Z"
+  },
+  "data.otservbr.global.npc.cael.L392.236": {
+    "src_hash": "65cd3155e7fbe93ae575ff3c4a1f8abb",
+    "text": "Hälsningar, |PLAYERNAME|! Du måste ha kommit runt en hel del. Jag är alltid intresserad av att lära mig nya saker om Zao.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:20.902599Z"
+  },
+  "data.otservbr.global.npc.cael.L393.237": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tänk på att du inte hittar bättre erbjudanden här. Bläddra bara igenom mina varor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:20.903159Z"
+  },
+  "data.otservbr.global.npc.canary.L126.459": {
+    "src_hash": "a10a26d9586cb14bfaa580c34d3db0a0",
+    "text": "Har du ingen utbildning?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:20.903436Z"
+  },
+  "data.otservbr.global.npc.canary.L88.457": {
+    "src_hash": "79a03d06c67633920b88970b497a8ac2",
+    "text": "Hej |PLAYERNAME|, behöver du mer information om {canary}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:20.903819Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L119.100": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:26.316655Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L74.337": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:26.317208Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L75.1609": {
+    "src_hash": "202a2eb8a446b071db66173ee9c3d801",
+    "text": "Välkommen ombord, rekrytera |PLAYERNAME|. Var kan jag {sail} dig idag?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:26.317744Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L76.1610": {
+    "src_hash": "e15da006fade26d444cff6cb29e47778",
+    "text": "Å inkvisitionens vägnar säger jag farväl.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:31.313907Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L64.993": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Hälsningar, vågade äventyrare. Om du behöver en {passage}, låt mig veta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:31.314423Z"
+  },
+  "data.otservbr.global.npc.captain.dreadnought.L433.1018": {
+    "src_hash": "bdb2a6103dff3f59683a577d5858503e",
+    "text": "Nåväl, en ny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:31.314665Z"
+  },
+  "data.otservbr.global.npc.captain.dreadnought.L465.1019": {
+    "src_hash": "e3c27cbeadf072acaf19bbad2aaea847",
+    "text": "Är du säker på att du vill spendera tid på det här klippet? Jag kan visa dig världen! Va.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:31.315173Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L112.1156": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:35.382901Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L103.1515": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:35.383435Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L92.845": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Välkommen ombord, Sir |PLAYERNAME|. Var kan jag {sail} dig idag?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:35.383843Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L93.846": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:35.384227Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L68.190": {
+    "src_hash": "b8f8a44ad2efd8539527730f329f0592",
+    "text": "Harrr, landkrabbe vad vill du ha? Begär du en {passage}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:37.859300Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L70.191": {
+    "src_hash": "55c25d3f0e5b57d85680d257424e0bca",
+    "text": "Harrr, landkrabbe vad vill du ha?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:09:37.859608Z"
   }
 }

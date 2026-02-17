@@ -25710,5 +25710,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:06:13.980555Z"
+  },
+  "quests.shattered_isles.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Вы нашли {0} {1}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:44.061187Z"
+  },
+  "quests.gravedigger.blood_msg_2": {
+    "src_hash": "1a63106ebda448891f13f09e95b1749c",
+    "text": "Кровь во флаконе странного цвета, как будто испорченная.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:45.763062Z"
+  },
+  "quests.gravedigger.monks_msg_1": {
+    "src_hash": "ec359d287bea175c97b8d64cd6b01622",
+    "text": "Тени поднимаются и поглощают свечу. Статуя мерцает в неземном свете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:45.763531Z"
+  },
+  "quests.gravedigger.monks_msg_2": {
+    "src_hash": "7513b7643dba66657586111a073e8765",
+    "text": "Тени статуи жадно поглощают свечу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:45.763895Z"
+  },
+  "quests.gravedigger.monks_msg_3": {
+    "src_hash": "c45750588bd577c7f5626b86b6a4108a",
+    "text": "Появляется тень и выхватывает свечу из ваших рук.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:45.764287Z"
+  },
+  "quests.inquisition.teleport_say_1": {
+    "src_hash": "8ef32cb681fd34e8b4c5898bea7c5641",
+    "text": "Вход в палату Ушуриэля.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:48.354930Z"
+  },
+  "quests.inquisition.teleport_say_10": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Вход в Залы Крови.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:48.355239Z"
+  },
+  "quests.inquisition.teleport_say_11": {
+    "src_hash": "f714a602d2801dd4b089bcee8d5070aa",
+    "text": "Вход в литейный цех.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:48.355524Z"
+  },
+  "quests.inquisition.teleport_say_12": {
+    "src_hash": "77f23e15c82945321e29dfb451c9a6d6",
+    "text": "Вход в палату Мадарета.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:48.355821Z"
+  },
+  "quests.inquisition.teleport_say_13": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Вход в чаны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:48.356070Z"
+  },
+  "quests.inquisition.teleport_say_14": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:50.911866Z"
+  },
+  "quests.inquisition.teleport_say_15": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Вход в чаны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:50.912139Z"
+  },
+  "quests.inquisition.teleport_say_16": {
+    "src_hash": "8a9b8ad11f7f6477078c9057fa71a4f8",
+    "text": "Выход на поле боя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:50.912429Z"
+  },
+  "quests.inquisition.teleport_say_17": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Вход в чаны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:50.912678Z"
+  },
+  "quests.inquisition.teleport_say_18": {
+    "src_hash": "9d6e489a953c92b65b2e4155ef092be7",
+    "text": "Вход в Кузницу Демонов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:50.912968Z"
+  },
+  "quests.inquisition.teleport_say_19": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Вход в Арканум.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:52.900536Z"
+  },
+  "quests.inquisition.teleport_say_2": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Вход в Кристальные пещеры.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:52.900862Z"
   }
 }

@@ -168478,5 +168478,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:46:56.139868Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L52.142": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Поздрав смртниче. Имајте на уму да искушавате моје стрпљење док разговарамо.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:31.640012Z"
+  },
+  "data.otservbr.global.npc.baa.leal.L158.273": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Одступи, војниче!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:34.207492Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L76.573": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:34.207766Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L77.574": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:34.208086Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L78.575": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:34.208375Z"
+  },
+  "data.otservbr.global.npc.barazbaz.L93.18": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "Ох, здраво тамо!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:34.208637Z"
+  },
+  "data.otservbr.global.npc.barbara.L84.1299": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:36.165549Z"
+  },
+  "data.otservbr.global.npc.barbara.L85.1300": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "ЖИВЕЛА КРАЉИЦА! Можете отићи сада!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:10:36.165921Z"
   }
 }

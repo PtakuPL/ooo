@@ -21662,5 +21662,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:37:09.442733Z"
+  },
+  "quests.dark_trails.you_need_5_players_to_fight": {
+    "src_hash": "dd66394f98cf7a92f092a64cf4b6f701",
+    "text": "Вам нужно 5 игроков, чтобы сразиться с Жрецом Смерти Шаргоном.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:37.287750Z"
+  },
+  "quests.dark_trails.you_need_exactly_5_players_to": {
+    "src_hash": "3b4c4eca07178defda28435c1bf2bbdd",
+    "text": "Чтобы сразиться с Жрецом Смерти Шаргоном, вам понадобится ровно 5 игроков.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:37.288220Z"
+  },
+  "quests.dawnport.first_time_vocation": {
+    "src_hash": "632c8e6c1a41db98f6da0017c97dfb26",
+    "text": "Поскольку вы впервые в роли %s %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:37.288829Z"
+  },
+  "quests.dawnport.received_weapons": {
+    "src_hash": "00b1359d03d36f78ebc8454d99a4c107",
+    "text": "Вы получили оружие %s. %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:37.289347Z"
+  },
+  "quests.deeplings.boss_defends": {
+    "src_hash": "300ffad49f322c2ef4669acbab761d18",
+    "text": "{0} защищает свои вещи и не позволит вам открыть сундук.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:40.638351Z"
+  },
+  "quests.demon_oak.master_crush": {
+    "src_hash": "f45c9ec1422dccdef3363c54309770b9",
+    "text": "КАК ТАКОЕ МОЖНО?!? МОЙ ХОЗЯИН ТЕБЯ СОКРАШИТ!! АХРРГГГ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:40.638763Z"
+  },
+  "quests.demon_oak.sound_1": {
+    "src_hash": "64858b07745250c936399f2141b9ae80",
+    "text": "МОИ КОРНИ ОСТРЫЕ КАК КОСА! ЧУВСТВУЙТЕ ЭТО?!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:40.639119Z"
+  },
+  "quests.demon_oak.sound_3": {
+    "src_hash": "ad954e578749aec118f170e9cc6cddb1",
+    "text": "ВОССТАНАВЛИВАЙТЕСЬ, МИНЬОНЫ, ВОССТАНАЙТЕ ИЗ МЕРТВЫХ!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:40.639515Z"
+  },
+  "quests.demon_oak.sound_4": {
+    "src_hash": "73a3aa812824cdc1b55c2f3eed86217c",
+    "text": "ААААА! ВАША КРОВЬ ДЕЛАЕТ МЕНЯ СИЛЬНЫМ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:40.639850Z"
+  },
+  "quests.demon_oak.sound_5": {
+    "src_hash": "32c5ccaa47af898221a429cc74e76312",
+    "text": "ВОЗЬМИ КОСТИ, АДСКАЯ ПСА! ПОЛУЧИТЕ ИХ!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:43.872328Z"
+  },
+  "quests.demon_oak.sound_6": {
+    "src_hash": "215518027445ceeb220fa31ef6203b35",
+    "text": "ПОЛУЧИТЕ ТАМ, ГДЕ Я МОГУ С ВАМИ СВЯЗАТЬСЯ!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:43.872749Z"
+  },
+  "quests.demon_oak.sound_7": {
+    "src_hash": "f4bacd0a57b22b2bc63c2ba67bd432ac",
+    "text": "ВЕЧНАЯ БОЛЬ ЖДЕТ ВАС! ПРИЯТНАЯ НАГРАДА, А?!?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:43.873117Z"
+  },
+  "quests.demon_oak.sound_8": {
+    "src_hash": "00f928cfbade0ee4a515a461c14fbd4a",
+    "text": "ЗА КАЖДЫЙ УДАВ ВЫ ПЛАТИТЕ ДЕСЯТИЛЕТИЯМИ ПЫТОК!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:43.873486Z"
+  },
+  "quests.demon_oak.sound_9": {
+    "src_hash": "b056e7487d9090618cf485296fb9aab9",
+    "text": "АРГГ! ПЫТИТЕ ЭТО!! УБИВАЙ ЭТО МЕДЛЕННО, МОЙ МИНЬОН!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:43.873854Z"
+  },
+  "quests.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Освободите меня, и вы будете щедро вознаграждены!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:46.464405Z"
+  },
+  "quests.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Что это? Ноги Демона лежат здесь? Возможно, кто-то их потерял!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:46.464849Z"
+  },
+  "quests.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Я в ловушке, иди сюда и освободи меня быстро!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:46.465238Z"
+  },
+  "quests.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Я могу вернуть твою возлюбленную из мертвых, только освободи меня!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:46.465681Z"
+  },
+  "quests.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Какая красивая блестящая золотая броня. Приходите ко мне и вы получите это!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:46.466205Z"
+  },
+  "quests.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Найдите путь сюда и освободите меня! Пожалуйста, поторопитесь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:49.085383Z"
+  },
+  "quests.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Ты получишь мой набор демонов, если поможешь мне выбраться отсюда!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:49.085832Z"
+  },
+  "quests.desert_dungeon.missing_sacrifice": {
+    "src_hash": "cf6fd7640294feedf4b956372a8c65f3",
+    "text": "{0} отсутствует жертва {1} на алтаре.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:49.086273Z"
+  },
+  "quests.desert_dungeon.need_all_vocations": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Для этого квеста вам понадобится по одному игроку каждой профессии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:49.086731Z"
+  },
+  "quests.desert_dungeon.need_each_vocation": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Для этого квеста вам понадобится по одному игроку каждой профессии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:49.087353Z"
+  },
+  "quests.dream_courts.barrel_word": {
+    "src_hash": "ab1981f1b79d1b8ff80c419c6ce3d434",
+    "text": "На внутренней стороне крышки этой бочки написано слово: 'O'kteth'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:51.228130Z"
+  },
+  "quests.dream_courts.bed_notes": {
+    "src_hash": "d23a6ac34261a80639136e4e3d78e47b",
+    "text": "Под этим краем кровати спрятана стопка заметок. На всех них есть только одно слово: 'T'sough».",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:51.228860Z"
+  },
+  "quests.dream_courts.book_kmuuh": {
+    "src_hash": "18d37c53b39eb7f66f14c307f08d2c0e",
+    "text": "Песни в этой книге часто содержат слово 'K'muuh'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:51.229428Z"
   }
 }

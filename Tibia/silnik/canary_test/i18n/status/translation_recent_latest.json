@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:38:14.907870Z",
-  "language": "it",
-  "json_file": "quests.json",
-  "translated": 44,
+  "timestamp": "2026-02-17T00:40:37.073300Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "quests.movements_elemental_portals.msg_2",
-      "en": "You can not use this portal yet.",
-      "translated": "Non puoi ancora utilizzare questo portale.",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_elemental_portals.msg_3",
-      "en": "You took too long, the battle has ended.",
-      "translated": "Ci hai messo troppo tempo, la battaglia è finita.",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_gnomes_ordnance_end.msg_1",
-      "en": "Your escort has end.",
-      "translated": "La tua scorta è finita.",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_gnomes_ordnance_end.msg_2",
-      "en": "Your escort has end.",
-      "translated": "La tua scorta è finita.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_lost_exiles.msg_1",
-      "en": "Your escort has end.",
-      "translated": "La tua scorta è finita.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_mazzinor.msg_1",
-      "en": "The remains deporalize you temporaly.",
-      "translated": "I resti ti deporalizzano temporaneamente.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_quaidden.msg_1",
-      "en": "With the power of the dark Custodian still holding away, the fog is keeping you from entering Quaid's den.",
-      "translated": "Con il potere del Custode oscuro ancora in agguato, la nebbia ti impedisce di entrare nella tana di Quaid.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_sacrifice_foods.msg_1",
-      "en": "You have completed the food offering ritual!",
-      "translated": "Hai completato il rituale dell'offerta del cibo!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_stepin.msg_1",
-      "en": "You must wait. Someone is challenging ",
-      "translated": "Devi aspettare. Qualcuno è impegnativo ",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_stepin.say_1",
-      "en": "The turtle is hungry... You must feed it.",
-      "translated": "La tartaruga ha fame... Devi darle da mangiare.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_teleportto.say_1",
-      "en": "Access granted!",
-      "translated": "Accesso concesso!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_teleportto.say_2",
-      "en": "You have to master the challenge first!",
-      "translated": "Devi prima padroneggiare la sfida!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "quests.movements_teleportto.say_3",
-      "en": "You have to master this very last challenge within 5 minutes!",
-      "translated": "Devi superare quest'ultima sfida entro 5 minuti!",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "quests.oramond.blue_pollen_say_1",
-      "en": "Achoo! You spill the pollen into your bag.",
-      "translated": "Achoo! Versa il polline nella borsa.",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "quests.oramond.blue_pollen_say_2",
-      "en": "You collected the smelly pollen into a bag.",
-      "translated": "Hai raccolto il polline puzzolente in un sacchetto.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "quests.oramond.sewer_fix_1",
-      "en": "<clong!> <clong!> There This piece fixed.",
-      "translated": "<clong!> <clong!> Ecco questo pezzo riparato.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "quests.others.exterminator_say_1",
-      "en": "This mission stinks ... and now you do as well!",
-      "translated": "Questa missione fa schifo... e ora fai schifo anche tu!",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "quests.others.exterminator_say_2",
-      "en": "You carefully gather the quara ink",
-      "translated": "Raccogli con cura l'inchiostro di quara",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "quests.others.exterminator_say_3",
-      "en": "You carefully gather the stalker blood.",
-      "translated": "Raccogli attentamente il sangue dello stalker.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "quests.others.holy_water_damaged",
-      "en": "%s damaged the shadow nexus! You can't damage it while it's burning.",
-      "translated": "%s ha danneggiato il nesso d'ombra! Non puoi danneggiarlo mentre brucia.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

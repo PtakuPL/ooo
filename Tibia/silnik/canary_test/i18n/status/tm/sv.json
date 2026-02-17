@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:08:35.369884Z"
+    "updated_at": "2026-02-17T00:40:04.740674Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -18854,5 +18854,317 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:30:31.325003Z"
+  },
+  "data.otservbr.global.npc.pemaret.L106.1462": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.290769Z"
+  },
+  "data.otservbr.global.npc.perod.L86.399": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.291619Z"
+  },
+  "data.otservbr.global.npc.perod.L87.400": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.291928Z"
+  },
+  "data.otservbr.global.npc.rachel.L178.740": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.297523Z"
+  },
+  "data.otservbr.global.npc.rachel.L179.741": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.297951Z"
+  },
+  "data.otservbr.global.npc.raffael.L76.662": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.298896Z"
+  },
+  "data.otservbr.global.npc.rashid.L260.632": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.300043Z"
+  },
+  "data.otservbr.global.npc.rashid.custom.L263.774": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.300525Z"
+  },
+  "data.otservbr.global.npc.rokyn.L75.973": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.303199Z"
+  },
+  "data.otservbr.global.npc.sarina.L87.74": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.307068Z"
+  },
+  "data.otservbr.global.npc.sarina.L88.75": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.307388Z"
+  },
+  "data.otservbr.global.npc.shauna.L129.136": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.308905Z"
+  },
+  "data.otservbr.global.npc.shauna.L130.137": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.309204Z"
+  },
+  "data.otservbr.global.npc.shiantis.L87.704": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.309725Z"
+  },
+  "data.otservbr.global.npc.shiantis.L88.705": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.310198Z"
+  },
+  "data.otservbr.global.npc.siestaar.L76.570": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.313114Z"
+  },
+  "data.otservbr.global.npc.sissek.L71.1049": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.315538Z"
+  },
+  "data.otservbr.global.npc.suzy.L76.1112": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.317930Z"
+  },
+  "data.otservbr.global.npc.tesha.L76.913": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.322549Z"
+  },
+  "data.otservbr.global.npc.turvy.L61.375": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Naturligtvis är det bara att bläddra igenom mina erbjudanden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.329399Z"
+  },
+  "data.otservbr.global.npc.virgil.L76.212": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.335756Z"
+  },
+  "data.otservbr.global.npc.wentworth.L387.330": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.337113Z"
+  },
+  "data.otservbr.global.npc.znozel.L71.200": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.344587Z"
+  },
+  "data.otservbr.global.npc.zora.L83.1329": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.345532Z"
+  },
+  "data.otservbr.global.npc.zora.L84.1330": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.345965Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.schrodingers.island.teleport.lvl.999.L16.2328": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Grattis!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:03.351014Z"
+  },
+  "data.otservbr.global.npc.baxter.L60.1236": {
+    "src_hash": "5a79b0f1ba416a18a992917d1837d174",
+    "text": "LÄNGE LEVE KUNGEN TIBIANUS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:07.301253Z"
+  },
+  "data.otservbr.global.npc.baxter.L63.1239": {
+    "src_hash": "cf5734463548fd7f4caefa09650648e3",
+    "text": "Tar du med dig nydödade råttor för en prispeng på 1 guld var? Förresten, jag köper också orktänder och annat du slitit ur deras jävla kår... jag menar... ja, du förstår vad jag menar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:12.237923Z"
+  },
+  "data.otservbr.global.npc.beatrice.L89.771": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:12.238359Z"
+  },
+  "data.otservbr.global.npc.benjamin.L84.240": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hej. Hur kan jag hjälpa dig |PLAYERNAME|? Be mig om en {trade} om du vill köpa något. Jag kan också förklara {mail}-systemet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:12.239029Z"
+  },
+  "data.otservbr.global.npc.benjamin.L85.241": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "Det var ett nöje att hjälpa dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:12.239350Z"
+  },
+  "data.otservbr.global.npc.bertha.L88.1552": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:12.239886Z"
+  },
+  "data.otservbr.global.npc.bertha.L91.1555": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:18.311385Z"
+  },
+  "data.otservbr.global.npc.billy.L144.1384": {
+    "src_hash": "1972a0eaf694e91957684eba0ce0acdc",
+    "text": "HUR OFÖRLIGT!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:18.311606Z"
+  },
+  "data.otservbr.global.npc.billy.L146.1386": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Säker.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:18.311780Z"
+  },
+  "data.otservbr.global.npc.billy.L147.1387": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Hej |PLAYERNAME|. Jag är bonde och kock, jag kanske kan intressera dig för en {trade} med mat? Du kan också be mig om allmän {hints} om spelet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:18.312439Z"
+  },
+  "data.otservbr.global.npc.black.bert.L196.40": {
+    "src_hash": "56cb7c9fe5ae41c0e637708d1c5c41fa",
+    "text": "Hej på er, |PLAYERNAME|! Du ser ut att vara sugen på att {trade}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:18.312850Z"
+  },
+  "data.otservbr.global.npc.black.bert.L197.41": {
+    "src_hash": "962f99ce919b3a8eab1fbe21989935c2",
+    "text": "Hejdå, |PLAYERNAME|",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:21.349653Z"
+  },
+  "data.otservbr.global.npc.blind.orc.L102.1517": {
+    "src_hash": "28271e708d06453b7febf147a1c473ef",
+    "text": "Futchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:40:21.349895Z"
   }
 }

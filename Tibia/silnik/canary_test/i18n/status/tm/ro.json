@@ -24606,5 +24606,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:37:40.642192Z"
+  },
+  "quests.svargrond_arena.completed_arena": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Felicitări! Ai terminat %s arena, ar trebui să iei recompensa acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:54.911922Z"
+  },
+  "quests.common.arena_wait": {
+    "src_hash": "0863986a4431a5f1f317cc9f85225b75",
+    "text": "%s se află în prezent în următoarea groapă. Vă rugăm să așteptați până când %s termină lupta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:58.353225Z"
+  },
+  "quests.common.found_container": {
+    "src_hash": "1fca7612c0f0cdb0eb808ebe7083ea56",
+    "text": "Ați găsit {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:58.353513Z"
+  },
+  "quests.common.found_item": {
+    "src_hash": "1fca7612c0f0cdb0eb808ebe7083ea56",
+    "text": "Ați găsit {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:58.353766Z"
+  },
+  "quests.common.found_item_no_room": {
+    "src_hash": "c0841c81e48cef8d7ab3473164677ccc",
+    "text": "Ai găsit {0}, dar nu ai loc să-l iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:38:58.354239Z"
+  },
+  "quests.common.found_item_too_heavy": {
+    "src_hash": "cc5dc61a0b3315ccff7b98e9c63499a5",
+    "text": "Ați găsit {0} cântărind {1} oz. Nu ai capacitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:03.373367Z"
+  },
+  "quests.common.found_item_too_heavy_v2": {
+    "src_hash": "fe8ca53a473098bcdae6c1adeb0acc4f",
+    "text": "Ați găsit {0}. Cântărind {1} oz, este prea greu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:03.373771Z"
+  },
+  "quests.common.found_items": {
+    "src_hash": "2134ca05a222d4860007f29569f29cfe",
+    "text": "Ai găsit %s %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:03.374034Z"
+  },
+  "quests.common.found_no_capacity": {
+    "src_hash": "24b519e4e867809893d24dfdf82229bd",
+    "text": "Ați găsit %s cântărind %.2f oz. Nu ai capacitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:03.374479Z"
+  },
+  "quests.common.found_no_room": {
+    "src_hash": "e88eed3e01659b864bbf69d3ee802c80",
+    "text": "Ai găsit %s, dar nu ai loc să-l iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:03.374871Z"
+  },
+  "quests.common.found_no_room_to_take": {
+    "src_hash": "4b4c7eece38d5240b1814d622cc65f95",
+    "text": "Ați găsit un {0}. Dar nu ai loc să o iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:10.557636Z"
+  },
+  "quests.common.found_result": {
+    "src_hash": "182396eb89f1096446cd4066f4b1fe25",
+    "text": "Ați găsit %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:10.557901Z"
+  },
+  "quests.common.found_too_heavy": {
+    "src_hash": "33a50637639b5118c56745e302f4741a",
+    "text": "Ați găsit %s cântărind %s oz, este prea greu pentru a fi transportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:10.558411Z"
+  },
+  "quests.common.found_too_heavy_to_carry": {
+    "src_hash": "88ffac1afc20b6cfd9dbe9d03d38aa4a",
+    "text": "Ați găsit un {0}. Cântărind {1} oz, este prea greu pentru a fi transportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:10.558860Z"
+  },
+  "quests.common.item_empty": {
+    "src_hash": "2227c58ef8ae16a698c15b50277e3360",
+    "text": "%s este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:10.559092Z"
+  },
+  "quests.common.item_is_empty": {
+    "src_hash": "9fedea49c5747b4d85c1c89ff2bd3d8e",
+    "text": "{0} este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:17.465793Z"
+  },
+  "quests.common.need_players": {
+    "src_hash": "a83c7d7bada7ca4b8c0d01def82e87cf",
+    "text": "Ai nevoie de cel puțin {0} jucători în camera de misiuni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:17.466275Z"
+  },
+  "quests.common.reward_no_room": {
+    "src_hash": "a187b5bf7af68f51dab839f0b430ea7a",
+    "text": "%s Dar nu ai loc să-l iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:17.466603Z"
+  },
+  "quests.common.reward_too_heavy": {
+    "src_hash": "e1039b8f7f51c7d75ef433a41dec5258",
+    "text": "%s. Cântărind %s oz, este prea greu pentru a fi transportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:17.466991Z"
+  },
+  "quests.common.someone_fighting": {
+    "src_hash": "97a5cce165ebe2850a044efff30ddabd",
+    "text": "Există cineva care se luptă cu {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:17.467319Z"
+  },
+  "quests.common.wait_to_fight": {
+    "src_hash": "fba6cdd69d31f9eb85874cf4da951b41",
+    "text": "Trebuie să așteptați {0} ore pentru a face față din nou {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:24.220561Z"
+  },
+  "quests.common.you_slayed": {
+    "src_hash": "4b51cc3dfdcae6db0a131e3c66775ead",
+    "text": "L-ai ucis pe {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:24.220821Z"
+  },
+  "quests.common.you_slayed_times": {
+    "src_hash": "d6a7a4e2b62cd945bab46197c0eed601",
+    "text": "Ai ucis de {0} de {1} ori!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:24.221111Z"
+  },
+  "quests.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Ai pierdut încăierarea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:24.221375Z"
+  },
+  "quests.creaturescripts_overlord_kill.say_1": {
+    "src_hash": "46a2135b118f06e9400ca190a247f5fc",
+    "text": "Ai ucis ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:24.221570Z"
+  },
+  "quests.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Felicitări ați primit ținuta Poltergeist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:30.502689Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_1": {
+    "src_hash": "affae003bc5ca5f7834349418f4a1188",
+    "text": "Cu o bubuitură puternică, portalul dimensional din Zao sa prăbușit și \\z\n\t\todată cu ea s-a spulberat legătura cu cealaltă dimensiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:30.503415Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_2": {
+    "src_hash": "c148cc49192a344bf6c7c9fa6d2e6108",
+    "text": "Rămășițele Magului Furios sunt împrăștiate pe podeaua Turnului său. \\z\n\tPortalul dimensional se cutremură.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:30.503956Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_1": {
+    "src_hash": "3b89542279a4e97944f1e27205cc280d",
+    "text": "Cu o bubuitură puternică, portalul dimensional din Zao s-a prăbușit și odată cu el s-a spulberat legătura cu cealaltă dimensiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:30.504552Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_2": {
+    "src_hash": "a633c94a1a9bf1be37c45d8e3ee73dd6",
+    "text": "Rămășițele Magului Furios sunt împrăștiate pe podeaua Turnului său. Portalul dimensional se cutremură.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:30.505069Z"
+  },
+  "quests.cults_of_tibia.boss_room_timeout_kick": {
+    "src_hash": "cfcbc7849dbf6f79684e0a6f2e4b5c50",
+    "text": "Ai fost dat cu piciorul pentru depășirea limitei de timp în camera șefului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:38.682752Z"
+  },
+  "quests.cults_of_tibia.cult_energy_1": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Corpul tău reacționează la această substanță verde ciudată când întinzi mâna să o atingi. Simți o dorință pentru mai mult din această energie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:38.683354Z"
+  },
+  "quests.cults_of_tibia.cult_energy_2": {
+    "src_hash": "2b8cd714f9fa1a2821f9aefc76b8fcd8",
+    "text": "Ați adunat o cantitate impresionantă de putere prin simpla atingere a ciudatelor simboluri verzi ale Barkless. Dar cum...?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:38.684066Z"
+  },
+  "quests.cults_of_tibia.ice.msg_1": {
+    "src_hash": "830fbdb1e0e86a27c31c0007c6fd07d7",
+    "text": "Când intri în caverna înghețată, simți o îngheț nefiresc. Aerul rece ca gheața te ustură în față. Supraviețuiește și dovedește-te demn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:38.684668Z"
+  },
+  "quests.cults_of_tibia.ice.msg_2": {
+    "src_hash": "a921d92c836ae9260754bac90ddfa103",
+    "text": "Temperatura corpului tău scade. Îți poți vedea respirația înghețată în frig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:38.685100Z"
+  },
+  "quests.cults_of_tibia.ice.msg_3": {
+    "src_hash": "c81033584f8b0cdea8fe723c500753e0",
+    "text": "Frigul de gheață te prinde. Abia te mai poti misca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:46.861872Z"
+  },
+  "quests.cults_of_tibia.ice.msg_4": {
+    "src_hash": "1901b7c161bc327e87255edc111121ae",
+    "text": "Acum sunteți spălat și gata să vă purificați în camerele de purificare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:46.862345Z"
+  },
+  "quests.cults_of_tibia.ice.msg_5": {
+    "src_hash": "49b58823d77dc676db1e310ea8a2e848",
+    "text": "Acum sunteți gata să vă dovediți valoarea. Ia inima și treci pragul gheții.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:46.862799Z"
+  },
+  "quests.cults_of_tibia.ice.msg_6": {
+    "src_hash": "495f7351822be4b78e786373c75d6d1c",
+    "text": "Ai luat atât de mult. Nu mai ești purificat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:46.863160Z"
+  },
+  "quests.cults_of_tibia.it_looks_like_there_is_someone": {
+    "src_hash": "50f020159d60c2b2c9c68d92cbf36694",
+    "text": "Se pare că e cineva înăuntru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:46.863486Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_1": {
+    "src_hash": "ead78a22f859066ec9d57d10bbc3b56e",
+    "text": "Pe măsură ce intri în gropile de sulf, simți în jurul tău vaporii uscați și arzători ai sulfului. Dovediți-vă demn, supraviețuiți acidului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:54.740609Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_2": {
+    "src_hash": "c9530d94b77a7a4e28c21db1f6d3c743",
+    "text": "Sulful îți arde pielea. Aproape că simți că corpul tău se topește în acid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:54.741070Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_3": {
+    "src_hash": "897eaafe69909eb75d56fe9d0ba70879",
+    "text": "Arderea acidului este acum insuportabilă, pielea ta se simte ca o sită. Aproape că nu mai ai putere în tine - acționează repede!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:54.741735Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_4": {
+    "src_hash": "60932ae2444f0118668b2d4d9046ea50",
+    "text": "Îmbrățișează stigmatizarea vanității. Sulful nu-ți mai arde pielea. Ai trecut procesul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:54.742277Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_5": {
+    "src_hash": "9c251b490b88890ee578904464bb077d",
+    "text": "Acum sunteți gata să vă dovediți valoarea. Ia inima si treci pragul sulfului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:54.742731Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_6": {
+    "src_hash": "8daa12db57a5cd099b253e961edefea1",
+    "text": "Acidul care te acoperă s-a răcit și a căzut în cea mai mare parte. Corpul tau nu se mai incalzeste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:59.594711Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_1": {
+    "src_hash": "03670e2850561062fe9fd557c597f0c3",
+    "text": "Pe măsură ce intri în gropile de gudron, simți că căldura din jurul tău crește dramatic. Supraviețuiește căldurii suficient de mult pentru a te dovedi demn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:39:59.595383Z"
   }
 }

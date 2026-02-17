@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T03:22:03.719430Z",
+  "checked_at": "2026-02-17T03:44:56.932679Z",
   "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1704,6 +1704,15 @@
       "en": "dead killer caiman",
       "pl": "martwy kajman zabójczy",
       "lang": "dead killer caiman"
+    },
+    {
+      "key": "item.10389.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sai",
+      "pl": "Sai",
+      "lang": "sai"
     },
     {
       "key": "item.30215.name",
@@ -3603,15 +3612,6 @@
       "en": "Ribbit!",
       "pl": "Kum!",
       "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.frost_troll.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Broar!",
-      "pl": "Bracie!",
-      "lang": "Broar!"
     }
   ],
   "length_ratio_issues": [

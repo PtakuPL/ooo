@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 15.6,
+  "coverage_pct": 15.9,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T03:21:54.347378Z",
+  "checked_at": "2026-02-17T03:44:47.620603Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -147,33 +147,6 @@
       "en": "ice",
       "pl": "lód",
       "lang": "ice"
-    },
-    {
-      "key": "cpp.game.hazard_tag",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " (Hazard)",
-      "pl": "(I.)",
-      "lang": " (Hazard)"
-    },
-    {
-      "key": "cpp.game.no_loot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No loot",
-      "pl": "Żadnych łupów",
-      "lang": "No loot"
-    },
-    {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "Dobrze",
-      "lang": "Okay"
     },
     {
       "key": "cpp.game.tentugly_name",
@@ -788,15 +761,6 @@
       "lang": "{0}% Ruse"
     },
     {
-      "key": "cpp.look.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
       "key": "cpp.look.vol",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -959,15 +923,6 @@
       "lang": "Tentugly"
     },
     {
-      "key": "cpp.protocol.unknown_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
       "key": "cpp.protocol.vocation_all",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1011,15 +966,6 @@
       "en": "mana leech",
       "pl": "mana pijawka",
       "lang": "mana leech"
-    },
-    {
-      "key": "cpp.skill.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
     },
     {
       "key": "cpp.title.name_17",
@@ -3612,6 +3558,60 @@
       "en": "Oh well.",
       "pl": "O well.",
       "lang": "Oh well."
+    },
+    {
+      "key": "npc.charlotta.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then no.",
+      "pl": "Wtedy Nie.",
+      "lang": "Then no."
+    },
+    {
+      "key": "npc.charlotta.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.chemar.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.chester_kahs.say_22",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Traitor!",
+      "pl": "Zdrajca!",
+      "lang": "Traitor!"
+    },
+    {
+      "key": "npc.denominator.greet_msg_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings.",
+      "pl": "Witaj.",
+      "lang": "Greetings."
+    },
+    {
+      "key": "npc.dermot.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thats me.",
+      "pl": "Thats mnie, mi.",
+      "lang": "Thats me."
     }
   ],
   "length_ratio_issues": [

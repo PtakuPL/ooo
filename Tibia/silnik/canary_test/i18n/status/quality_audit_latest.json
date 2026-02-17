@@ -1,59 +1,16 @@
 {
-  "timestamp": "2026-02-17T03:41:54.801187Z",
+  "timestamp": "2026-02-17T03:44:06.909075Z",
   "checked_entries": 100,
-  "issues_found": 15,
+  "issues_found": 9,
   "issues_by_type": {
-    "identical_to_en": 1,
-    "identical_to_en_exempt": 30,
-    "artifact_token": 14,
-    "suspicious_log_high": 108,
-    "suspicious_log_critical": 92,
+    "identical_to_en_exempt": 23,
+    "artifact_token": 9,
+    "suspicious_log_high": 199,
+    "suspicious_log_low": 1,
     "suspicious_rejected_critical": 162,
     "suspicious_rejected_high": 38
   },
   "issues": [
-    {
-      "key": "item.10389.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "sai",
-      "translated": "sai"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
     {
       "key": "npc.lardoc_bashsmite.multi_3",
       "lang": "es",
@@ -119,5 +76,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

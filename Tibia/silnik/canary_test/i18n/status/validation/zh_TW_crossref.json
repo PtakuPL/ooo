@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T03:22:05.106426Z",
+  "checked_at": "2026-02-17T03:44:58.307609Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -570,6 +570,15 @@
       "en": "Citizen Depot downstairs.",
       "pl": "Obywatel Depot na dole.",
       "lang": "Citizen Depot downstairs."
+    },
+    {
+      "key": "book.otbm.fort_o_th_nare_igh",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fort... o. th. N.....are ..igh..",
+      "pl": "Fort... o. t. N...są...wysokie..",
+      "lang": "Fort... o. th. N.....are ..igh.."
     },
     {
       "key": "book.otbm.galunas_fletcher_workshop",
@@ -3603,15 +3612,6 @@
       "en": "{0} minutes",
       "pl": "{0} minuty",
       "lang": "{0} minutes"
-    },
-    {
-      "key": "cpp.look.minute_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} minute",
-      "pl": "{0} minuta",
-      "lang": "{0} minute"
     }
   ],
   "length_ratio_issues": [

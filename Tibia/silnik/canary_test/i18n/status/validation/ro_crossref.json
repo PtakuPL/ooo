@@ -1,15 +1,15 @@
 {
   "lang": "ro",
-  "coverage_pct": 24.5,
+  "coverage_pct": 24.8,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T03:21:56.317173Z",
-  "issues_total": 409,
+  "checked_at": "2026-02-17T03:44:49.577235Z",
+  "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 9
+    "length_ratio_crosscheck": 10
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -203,15 +203,6 @@
       "lang": "Minor"
     },
     {
-      "key": "cpp.combat.holy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "holy",
-      "pl": "święty",
-      "lang": "holy"
-    },
-    {
       "key": "cpp.combat.ice",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -219,96 +210,6 @@
       "en": "ice",
       "pl": "lód",
       "lang": "ice"
-    },
-    {
-      "key": "cpp.combat.lifedrain",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lifedrain",
-      "pl": "drenaż życia",
-      "lang": "lifedrain"
-    },
-    {
-      "key": "cpp.combat.neutral",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "neutral",
-      "pl": "neutralny",
-      "lang": "neutral"
-    },
-    {
-      "key": "cpp.combat.physical",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "physical",
-      "pl": "Fizyczny",
-      "lang": "physical"
-    },
-    {
-      "key": "cpp.combat.undefined",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "undefined",
-      "pl": "nieokreślony",
-      "lang": "undefined"
-    },
-    {
-      "key": "cpp.forge.consumed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "consumed",
-      "pl": "strawiony",
-      "lang": "consumed"
-    },
-    {
-      "key": "cpp.forge.cores_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} core",
-      "pl": "{0} rdzeń",
-      "lang": "{0} core"
-    },
-    {
-      "key": "cpp.forge.cores_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} cores",
-      "pl": "{0} rdzeni",
-      "lang": "{0} cores"
-    },
-    {
-      "key": "cpp.forge.dust_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} kurz",
-      "lang": "{0} dust"
-    },
-    {
-      "key": "cpp.forge.dust_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} kurz",
-      "lang": "{0} dust"
-    },
-    {
-      "key": "cpp.forge.successful",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Successful",
-      "pl": "sukcesful",
-      "lang": "Successful"
     },
     {
       "key": "cpp.forge.unchanged",
@@ -543,15 +444,6 @@
       "en": "Effect",
       "pl": "Efekt",
       "lang": "Effect"
-    },
-    {
-      "key": "cpp.inspect.empty",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "empty",
-      "pl": "puste",
-      "lang": "empty"
     },
     {
       "key": "cpp.inspect.expires",
@@ -3612,6 +3504,114 @@
       "en": "<munch>",
       "pl": "<przeżuwać>",
       "lang": "<munch>"
+    },
+    {
+      "key": "npc.al_dee.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.aldo.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ok then.",
+      "pl": "Ok wtedy.",
+      "lang": "Ok then."
+    },
+    {
+      "key": "npc.alesar.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.alesar_functions.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.alkestios.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.alwin.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.appaloosa.say_9",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.ariella.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.arkulius.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arkulius.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arnold.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.aurita.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
     }
   ],
   "length_ratio_issues": [
@@ -3686,6 +3686,15 @@
       "en_len": 6,
       "lang_ratio": 0.833,
       "pl_ratio": 3.167
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_11",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 5,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.2
     },
     {
       "key": "spell.sapling_explode.name",

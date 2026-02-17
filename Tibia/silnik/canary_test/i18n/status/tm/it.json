@@ -44158,5 +44158,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:37:07.530397Z"
+  },
+  "cpp.look.unknown": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:15.780392Z"
+  },
+  "cpp.protocol.unknown_label": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:15.792462Z"
+  },
+  "cpp.skill.unknown": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:15.802434Z"
+  },
+  "cpp.game.but_only_some_gold": {
+    "src_hash": "fa1f6ce8d1c506e96c7a133e17ceac50",
+    "text": ", ma hai saccheggiato solo {0} dell'oro caduto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:24.913948Z"
+  },
+  "cpp.game.but_only_some_items": {
+    "src_hash": "bebb93bdfe25baea31948c1facbc00a6",
+    "text": ", ma hai saccheggiato solo alcuni oggetti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:24.914366Z"
+  },
+  "cpp.game.collect_limit_reached": {
+    "src_hash": "9b45ec74031d2ed46a41b839e352ac25",
+    "text": "Puoi raccogliere solo {0} elementi alla volta. Sono stati raccolti {1} di {2} oggetti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:24.914787Z"
+  },
+  "cpp.game.could_not_loot": {
+    "src_hash": "026eed9cd7a61cbf60191322a6ad49e2",
+    "text": "Non potevi saccheggiare ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:24.915051Z"
+  },
+  "cpp.game.guild_motd_title": {
+    "src_hash": "1e7788b643b2d3f8933e6fb67a6b8dc8",
+    "text": "Messaggio del giorno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:24.915292Z"
+  },
+  "cpp.game.hazard_dodged_by": {
+    "src_hash": "762723a7fd28b539e62921a74b7d4952",
+    "text": "{0} ha schivato un attacco di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:31.755728Z"
+  },
+  "cpp.game.hazard_dodged_your": {
+    "src_hash": "d05b3496968f00b075e2ed2ff4515c17",
+    "text": "{0} ha schivato il tuo attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:31.756036Z"
+  },
+  "cpp.game.hazard_tag": {
+    "src_hash": "19159b8a594bb7328c880e2060e3428c",
+    "text": "(Pericolo)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:31.756226Z"
+  },
+  "cpp.game.highscore_category_axe": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Combattimento con l'ascia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:31.756437Z"
+  },
+  "cpp.game.highscore_category_club": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Combattimento di club",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:31.756643Z"
+  },
+  "cpp.game.highscore_category_distance": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Lotta a distanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:35.465056Z"
+  },
+  "cpp.game.highscore_category_experience": {
+    "src_hash": "f2de47c8fa46b27bff9339920d329cb5",
+    "text": "Punti esperienza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:35.465296Z"
+  },
+  "cpp.game.highscore_category_fishing": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pesca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:35.465468Z"
+  },
+  "cpp.game.highscore_category_fist": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Lotta a pugni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:35.465665Z"
+  },
+  "cpp.game.highscore_category_shielding": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Schermatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:35.465840Z"
+  },
+  "cpp.game.highscore_category_sword": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Combattimento con la spada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:43.257994Z"
+  },
+  "cpp.game.imbuement_error_reopen": {
+    "src_hash": "d154af29450bb6ac121cdec71487bcae",
+    "text": "Si è verificato un errore, riapri la finestra di imbuement. Se il problema persiste, contatta l'amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:43.258591Z"
+  },
+  "cpp.game.loot_container_for_full": {
+    "src_hash": "11d8ef7097a900be683d7b433e03a433",
+    "text": "Attenzione! Il contenitore per {0} è pieno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:43.258946Z"
+  },
+  "cpp.game.loot_container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Attenzione! Il contenitore assegnato alla categoria {0} è pieno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:43.259352Z"
+  },
+  "cpp.game.loot_too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Attenzione! Il bottino che stai cercando di raccogliere è troppo pesante per essere trasportato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:43.259806Z"
+  },
+  "cpp.game.looted_all_dropped_items": {
+    "src_hash": "cbf741bd4d2dc5d828909cbbb17b7063",
+    "text": "Hai saccheggiato tutti gli oggetti lasciati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:50.452062Z"
+  },
+  "cpp.game.looted_all_items": {
+    "src_hash": "83b5adef63c2db227f938ade6c9e040f",
+    "text": "Hai saccheggiato tutti gli oggetti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:50.452342Z"
+  },
+  "cpp.game.looted_complete_gold": {
+    "src_hash": "5e244972db6ec46d67af9ab020224dd1",
+    "text": "Hai saccheggiato tutto il {0} oro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:50.452721Z"
+  },
+  "cpp.game.looted_corpses": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Hai saccheggiato {0} cadaveri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:50.453000Z"
+  },
+  "cpp.game.looted_gold": {
+    "src_hash": "e0fe3ba9c88783b94e3c70c8956874e1",
+    "text": "Hai saccheggiato {0} oro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:50.453254Z"
+  },
+  "cpp.game.looted_no_gold": {
+    "src_hash": "a2fd6784aa3f15d7771eb8d6277dbf2f",
+    "text": "Non hai saccheggiato nulla dell'oro caduto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:57.984889Z"
+  },
+  "cpp.game.looted_no_items": {
+    "src_hash": "32bd0616644fc4c41a7ff4a0a5fd555a",
+    "text": "Non hai saccheggiato nessuno degli oggetti lasciati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:57.985249Z"
+  },
+  "cpp.game.looted_one_item": {
+    "src_hash": "bd52c95156499d90dafefefb379fe35f",
+    "text": "Hai saccheggiato 1 oggetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:57.985504Z"
+  },
+  "cpp.game.looted_some_items": {
+    "src_hash": "2989924dc60bced7b41b890a5f38b547",
+    "text": "Hai saccheggiato alcuni degli oggetti lasciati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:57.985805Z"
+  },
+  "cpp.game.market_coin_transaction_purchased": {
+    "src_hash": "d6885ce0455eb52ae562b20e7d442184",
+    "text": "Acquistato il Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:42:57.986267Z"
+  },
+  "cpp.game.market_coin_transaction_sold": {
+    "src_hash": "a414fbe6aa780a4bd79860fd9a13e9a0",
+    "text": "Venduto il Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:05.146203Z"
+  },
+  "cpp.game.market_item_not_correct": {
+    "src_hash": "0a18be2b77678da8a04d862ec4f32e05",
+    "text": "L'articolo che hai tentato di commercializzare non è corretto. Controlla di nuovo l'articolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:05.146733Z"
+  },
+  "cpp.game.message_sent_to": {
+    "src_hash": "b6edeadabf93ec7e35085659726ead5e",
+    "text": "Messaggio inviato a {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:05.147016Z"
+  },
+  "cpp.game.no_loot": {
+    "src_hash": "ce0c51050a0318afb13b8a8ff9d02d8a",
+    "text": "Nessun bottino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:05.147208Z"
+  },
+  "cpp.game.objects_picked_up": {
+    "src_hash": "b30883c9272b9a85df8ccb4815aceecc",
+    "text": "Sono stati raccolti {0} di {1} oggetti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:05.147514Z"
+  },
+  "cpp.game.offline_training_button_ok": {
+    "src_hash": "26b63f278101527e06a5547719568bb5",
+    "text": "Va bene",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:09.942424Z"
+  },
+  "cpp.game.offline_training_choice_axe": {
+    "src_hash": "cf090b79eb7b3b834d866d07fa271f74",
+    "text": "Combattimento con l'ascia e protezione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:09.942737Z"
+  },
+  "cpp.game.offline_training_choice_club": {
+    "src_hash": "3b376040cf5d41f07a8522d21e0360a1",
+    "text": "Combattimento e protezione con i club",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:09.943085Z"
+  },
+  "cpp.game.offline_training_choice_distance": {
+    "src_hash": "5dcaab134101076ad8ea2dc671245580",
+    "text": "Lotta a distanza e protezione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:43:09.943369Z"
   }
 }

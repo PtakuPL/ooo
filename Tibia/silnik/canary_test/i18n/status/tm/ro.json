@@ -60830,5 +60830,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:35:24.483148Z"
+  },
+  "scripts.movements_boss_entrance.msg_1": {
+    "src_hash": "2af49d812dd3d72f7d6194b836191bae",
+    "text": "Trebuie să așteptați {} pentru a face față din nou {}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:00.033016Z"
+  },
+  "scripts.actions_sacrifice.say_2": {
+    "src_hash": "8a0565c7ad2915dd18848dda83907f8e",
+    "text": "Ai pus deja bine dinții de vampir pe sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:07.096691Z"
+  },
+  "scripts.actions_sacrifice.say_3": {
+    "src_hash": "e6ea115550a4ccd4c29a81b24e7e626b",
+    "text": "Ai pus deja bine inelul cu sigiliu pe sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:12.151747Z"
+  },
+  "scripts.actions_sacrifice.say_4": {
+    "src_hash": "5244624d1074e26e9b189e94354c732e",
+    "text": "Ai pus deja bine oasele pe sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:12.152113Z"
+  },
+  "scripts.actions_sacrifice_items.msg_1": {
+    "src_hash": "05d84d3f850e31ca6cbaf40fa904cfd2",
+    "text": "Ați sacrificat deja acest articol pentru a trece.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:12.152514Z"
+  },
+  "scripts.actions_sacrifice_items.msg_2": {
+    "src_hash": "08e0d278c9842eb17b1f2654c3340d98",
+    "text": "Puneți {} în lavă. Acum ești demn să intri în Bârlogul lui The First Dragon. Atinge din nou piscina de lavă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:12.153259Z"
+  },
+  "scripts.actions_sacrifice_items.msg_3": {
+    "src_hash": "2ac19e9e4e332f39b20c61b4fe75274f",
+    "text": "Puneți {} în lavă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:12.153637Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_1": {
+    "src_hash": "03817ddcb904e57b7866a9caae3b7c76",
+    "text": "Blestemul de a tulbura această pace fragilă și străveche este prețul tău de plătit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:17.230642Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_2": {
+    "src_hash": "bd664ffc6b07649d20c47551253bd5dd",
+    "text": "Deschiderea ultimului sarcofag încă te bântuie. Așteptați ceva timp să vă revină spiritele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:17.231177Z"
+  },
+  "scripts.actions_sangra.msg_1": {
+    "src_hash": "3a1f900dc11ca38ff346592c0b186298",
+    "text": "Săgeata încă se lipește în copac. Sângele proaspăt continuă să curgă din locul în care săgeata a lovit trunchiul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:17.231727Z"
+  },
+  "scripts.actions_scissors.msg_1": {
+    "src_hash": "9133be335f8fc7ca66d3654e78d8c9ec",
+    "text": "Ai găsit o foarfecă rituală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:17.232048Z"
+  },
+  "scripts.actions_scroll.msg_1": {
+    "src_hash": "19911c332c7c434ad9d77712c72d551f",
+    "text": "Cineva a lăsat un card. Scrie: Cauți sulul? Vino să mă găsești. Urcă scările lângă studenți. Cămin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:17.232566Z"
+  },
+  "scripts.actions_sea_of_light.say_1": {
+    "src_hash": "23ef89a12a5c41c62a2a89acc2fbfbdb",
+    "text": "Ați pus cu grijă cristalul oglindă în dispozitivul astronomilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:20.093268Z"
+  },
+  "scripts.actions_seashell_key.msg_1": {
+    "src_hash": "7bee11f34f02fa2103f0a2f1a81ea785",
+    "text": "Întorci cheia în broasca mică de pe partea laterală a raftului și... cheia se rupe. În afară de asta, nu se întâmplă absolut nimic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:20.093909Z"
+  },
+  "scripts.actions_seashell_key.msg_2": {
+    "src_hash": "d9bffb35571ed8e7f052998fd9ae03c6",
+    "text": "O păstrare ascunsă apare chiar în momentul în care rotiți cheia. Din păcate, cheia se rupe când încercați să o scoateți din încuietoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:20.094808Z"
+  },
+  "scripts.actions_secret_wall.msg_1": {
+    "src_hash": "5a163e4c2b3e29c5e8647b87deb04ea0",
+    "text": "Nu ai cheia de montaj.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:20.095262Z"
+  },
+  "scripts.actions_soils2.say_1": {
+    "src_hash": "f6786da93512a5110e0c75948aaf4855",
+    "text": "Opriți mai întâi aparatul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:20.095658Z"
+  },
+  "scripts.actions_sparks_lever.say_1": {
+    "src_hash": "663060957e264993308f4e11f22923a8",
+    "text": "Camera începe încet să trosnească. O erupție pare imanentă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:22.797728Z"
+  },
+  "scripts.actions_spirit_shovel.msg_1": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Raportați sarcina lui Gnomilly.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:22.798187Z"
+  },
+  "scripts.actions_star_herb.msg_1": {
+    "src_hash": "4765b47adb008a9887f10901bc3cb19a",
+    "text": "Îl împletești coarnele cu ierburi proaspete.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:22.798624Z"
+  },
+  "scripts.actions_statue.msg_1": {
+    "src_hash": "8010a8ce9522f7e248eca68600a4270a",
+    "text": "<BOOOOOOOONGGGGGGG> O pulsație lentă, ca pulsul sângelui, curge prin podea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:22.799088Z"
+  },
+  "scripts.actions_strangeBucket.msg_1": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Nu a mai rămas suficientă ectoplasmă pentru a o umple în găleată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:22.799546Z"
+  },
+  "scripts.actions_strangeBucket.msg_2": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Nu a mai rămas suficientă ectoplasmă pentru a o umple în găleată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:26.800368Z"
+  },
+  "scripts.actions_strangeBucket.msg_3": {
+    "src_hash": "e7e7af2574d6040a7bf0983cec0655cf",
+    "text": "Ectoplasma peste tot acest ou se scurgea deja în interiorul coconului însuși. Reușiți să umpleți o parte din el în găleată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:26.801014Z"
+  },
+  "scripts.actions_strangeBucket.msg_4": {
+    "src_hash": "10487b458e46ae82d8aa56f296fb4712",
+    "text": "Toarnă toată ectoplasma peste tine. Fără găleată nu o poți stabiliza, trebuie să te grăbești până se dizolvă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:26.801594Z"
+  },
+  "scripts.actions_sunFruit.msg_1": {
+    "src_hash": "4cde13d19faa89c8303672688ab896d3",
+    "text": "Ați găsit câteva {0}s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:26.801901Z"
+  },
+  "scripts.actions_tarbaz_notes.msg_1": {
+    "src_hash": "40379152511299b8861f33068f43b5c3",
+    "text": "Brusc, vezi imaginea de ansamblu. Totul are sens acum. Și atunci disperi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:26.802411Z"
+  },
+  "scripts.actions_tarbaz_notes.msg_2": {
+    "src_hash": "505f3aa556efbce55378be5a627927b5",
+    "text": "Brusc, îl vezi pe ultimul A. Totul are sens acum. Și atunci tu acum secretul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:30.734236Z"
+  },
+  "scripts.actions_tears.msg_1": {
+    "src_hash": "21689dccde68112fb18462636aed408a",
+    "text": "Lacrimile dragonului strălucesc și dispar. Vechile puteri sunt potolite.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:30.734668Z"
+  },
+  "scripts.actions_the_outlaw_camp_quest.msg_1": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Ai găsit o geantă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:30.735101Z"
+  },
+  "scripts.actions_the_rare_herb.msg_1": {
+    "src_hash": "1deab6975af73c713be793a50755bfa0",
+    "text": "Ai recoltat niște muguri florali ai plantei. Adu-i Morris pentru o recompensă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:30.735540Z"
+  },
+  "scripts.actions_thermometer.msg_1": {
+    "src_hash": "03de06efaeede3f79178d8fca5e856bd",
+    "text": "Uf! Era atât de fierbinte, a topit termometrul! Cel puțin ai găsit punctul fierbinte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:44:32.483388Z"
   }
 }

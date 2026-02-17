@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T04:28:18.747661Z",
+  "timestamp": "2026-02-17T04:31:40.447504Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -15915,8 +15915,8 @@
         [
           "books.json",
           1,
-          1771299982437267234,
-          304671
+          1771302573312003261,
+          304767
         ],
         [
           "chatchannels.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8339,
+        "translated_keys": 8371,
         "english_copy_keys": 2436,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 15.56,
+        "completion_pct": 15.62,
         "server_keys": 49731,
-        "server_translated": 7791,
-        "server_pct": 15.67,
+        "server_translated": 7823,
+        "server_pct": 15.73,
         "client_keys": 3855,
         "client_translated": 548,
         "client_pct": 14.22
@@ -16178,12 +16178,12 @@
         "books.json": {
           "sig": [
             1,
-            1771299982437267234,
-            304671
+            1771302573312003261,
+            304767
           ],
           "row": {
             "total_reference_keys": 1403,
-            "translated_keys": 204,
+            "translated_keys": 236,
             "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
@@ -27075,8 +27075,8 @@
         [
           "talkactions.json",
           1,
-          1771297346182412402,
-          17799
+          1771302690360313906,
+          17924
         ],
         [
           "ui.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 13110,
-        "english_copy_keys": 2424,
+        "translated_keys": 13146,
+        "english_copy_keys": 2419,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 24.47,
+        "completion_pct": 24.53,
         "server_keys": 49731,
-        "server_translated": 12523,
-        "server_pct": 25.18,
+        "server_translated": 12559,
+        "server_pct": 25.25,
         "client_keys": 3855,
         "client_translated": 587,
         "client_pct": 15.23
@@ -27602,13 +27602,13 @@
         "talkactions.json": {
           "sig": [
             1,
-            1771297346182412402,
-            17799
+            1771302690360313906,
+            17924
           ],
           "row": {
             "total_reference_keys": 199,
-            "translated_keys": 45,
-            "english_copy_keys": 10,
+            "translated_keys": 81,
+            "english_copy_keys": 5,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27732,8 +27732,8 @@
         [
           "libs.json",
           1,
-          1771076869937181767,
-          7660
+          1771302617516119638,
+          8680
         ],
         [
           "messages.json",
@@ -27879,14 +27879,14 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 20366,
+        "translated_keys": 20403,
         "english_copy_keys": 2579,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 38.01,
+        "completion_pct": 38.08,
         "server_keys": 49731,
-        "server_translated": 17611,
-        "server_pct": 35.41,
+        "server_translated": 17648,
+        "server_pct": 35.49,
         "client_keys": 3855,
         "client_translated": 2755,
         "client_pct": 71.47
@@ -28091,12 +28091,12 @@
         "libs.json": {
           "sig": [
             1,
-            1771076869937181767,
-            7660
+            1771302617516119638,
+            8680
           ],
           "row": {
             "total_reference_keys": 89,
-            "translated_keys": 20,
+            "translated_keys": 57,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

@@ -41206,5 +41206,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:27:58.567813Z"
+  },
+  "talkaction.gm.spy.slot_boots": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Cizme",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:29.913547Z"
+  },
+  "talkaction.gm.spy.slot_left_hand": {
+    "src_hash": "918ea51c669253cd37b34596c035b44c",
+    "text": "Mâna stângă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:29.913802Z"
+  },
+  "talkaction.gm.spy.slot_legs": {
+    "src_hash": "48423a9049b3065103ef1026a5fa08e5",
+    "text": "Picioarele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:29.914055Z"
+  },
+  "talkaction.gm.spy.slot_right_hand": {
+    "src_hash": "c236d3c59a55e01b8a89a671e948ff57",
+    "text": "Mâna dreaptă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:29.914293Z"
+  },
+  "talkaction.gm.spy.slot_ring": {
+    "src_hash": "d4db177c94738b72bf9ce61e988ab1f1",
+    "text": "Inel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:37.486382Z"
+  },
+  "talkaction.gm.teleport.msg_declare_xyz": {
+    "src_hash": "bd8e7388abd38e401ff411e20df342d2",
+    "text": "Trebuie să declarați X, Y din Z de destinație. Vă rugăm să utilizați „/teleport X, Y, Z”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:37.486902Z"
+  },
+  "talkaction.gm.teleport.msg_invalid_destination": {
+    "src_hash": "983d0222bc41e5e073712607fea284ee",
+    "text": "Poziția de destinație nu este validă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:37.487307Z"
+  },
+  "talkaction.gm.teleport.msg_town_not_found": {
+    "src_hash": "5c8a17f7e2260e25d9a924d43a1134e4",
+    "text": "Orașul nu a fost găsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:37.487568Z"
+  },
+  "talkaction.gm.unban.msg_unbanned": {
+    "src_hash": "a40463213e23d9ba449707d406bf8ec1",
+    "text": "{name} a fost anulat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:37.487845Z"
+  },
+  "talkaction.god.achievement.msg_add_invalid": {
+    "src_hash": "e656f3a6672df3bbc9f7359b726afcb9",
+    "text": "Realizare nevalidă. Folosiți un act de identitate sau un nume valid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:44.523695Z"
+  },
+  "talkaction.god.achievement.msg_check_list": {
+    "src_hash": "f816f029b5d2d50423fccce8255d39e1",
+    "text": "Realizări: {list}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:44.524013Z"
+  },
+  "talkaction.god.achievement.msg_check_usage": {
+    "src_hash": "1498377915ca8c25a3d1634a54a9f82e",
+    "text": "Utilizare: /checkachievements playerName",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:44.524549Z"
+  },
+  "talkaction.god.achievement.msg_remove_invalid": {
+    "src_hash": "7879bd592d152bea01623b163613ff3c",
+    "text": "Identificator de realizare nevalid. Folosiți fie ID, fie nume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:44.524968Z"
+  },
+  "talkaction.god.addon.msg_invalid_looktype": {
+    "src_hash": "9882ea3c619b81d9f358342c74343d7a",
+    "text": "Tip de aspect nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:52.017084Z"
+  },
+  "talkaction.god.addon.msg_invalid_value": {
+    "src_hash": "e52511bb3913b543444dace6e36a2191",
+    "text": "Valoare de supliment nevalidă. Ar trebui să fie între 0 și 3.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:52.017496Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_creature": {
+    "src_hash": "07f6503a1be02f9ea242e74d2feb088e",
+    "text": "Nu poți adăuga acest atribut acestei creaturi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:52.017981Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_item": {
+    "src_hash": "075825cff31921f7b8ece3859fe2ef2a",
+    "text": "Nu puteți adăuga acel atribut la acest articol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:59.886054Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_player": {
+    "src_hash": "5b727dde7a3d2537f6e70458eea350ea",
+    "text": "Nu puteți adăuga acel atribut la acest jucător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:59.886500Z"
+  },
+  "talkaction.god.attributes.msg_item_not_found": {
+    "src_hash": "eb54be9c4f538c494adafef0dc984ad4",
+    "text": "Element nu a fost găsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:59.886765Z"
+  },
+  "talkaction.god.attributes.msg_unknown": {
+    "src_hash": "1808250bba66c982e229c5157e063b77",
+    "text": "Atribut necunoscut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:59.886998Z"
+  },
+  "talkaction.god.bosstiary.msg_invalid_kills": {
+    "src_hash": "aedf4661198891c4912ed00c3434bd3d",
+    "text": "Număr de ucideri nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:30:59.887269Z"
+  },
+  "talkaction.god.bosstiary.msg_target_not_found": {
+    "src_hash": "9cf369831e139447ebde4c7fa6d9bb06",
+    "text": "Jucătorul țintă nu a fost găsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:07.181058Z"
+  },
+  "talkaction.god.bosstiary.msg_to_self": {
+    "src_hash": "b24bdcdd07937d7af81e289553ee1fbd",
+    "text": "S-au adăugat ucideri primite: {kills}, pentru șef: {monster} pentru tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:07.181799Z"
+  },
+  "talkaction.god.charms.msg_expansion_other": {
+    "src_hash": "7765a137e4ba26757f65014f0b256b36",
+    "text": "S-a adăugat o extensie de farmec pentru jucătorul '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:14.882206Z"
+  },
+  "talkaction.god.charms.msg_expansion_self": {
+    "src_hash": "ece707ec553512091a6782f3a6e34c05",
+    "text": "Am primit expansiune farmec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:14.882530Z"
+  },
+  "talkaction.god.charms.msg_no_bestiary": {
+    "src_hash": "1709c4a22dc89c96bc22262547c9e012",
+    "text": "Acest monstru nu are bestiar. Introduceți numele exact ca în joc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:14.883071Z"
+  },
+  "talkaction.god.charms.msg_received_minor": {
+    "src_hash": "d6d25bce1fb28a7b9b223b24aa82e5cb",
+    "text": "A primit {amount} puncte de farmec minore!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:14.883404Z"
+  },
+  "talkaction.god.charms.msg_received_points": {
+    "src_hash": "c57a6a74668376f4021494fc6b2c5918",
+    "text": "A primit {amount} puncte de farmec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:22.492366Z"
+  },
+  "talkaction.god.charms.msg_reset_other": {
+    "src_hash": "b84b9a2b6291aadee31038757586048a",
+    "text": "Punctele de farmec resetate de la personajul '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:22.492717Z"
+  },
+  "talkaction.god.charms.msg_reset_self": {
+    "src_hash": "14a44852eb10d2c5b2031a1a21f23830",
+    "text": "Ți-ai resetat punctele de farmec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:22.493024Z"
+  },
+  "talkaction.god.charms.msg_runes_other": {
+    "src_hash": "edc41e153cdaf84100f311a948076259",
+    "text": "S-au adăugat toate runele farmecului la '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:22.493465Z"
+  },
+  "talkaction.god.charms.msg_runes_self": {
+    "src_hash": "54d235d799e1eecbe841b8e55260593a",
+    "text": "A primit toate runele de farmec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:22.493749Z"
+  },
+  "talkaction.god.charms.msg_set_all_other": {
+    "src_hash": "f5324c13554359f3a54cd724bbf3a0b8",
+    "text": "Setați numărul de ucideri din bestiar la '{amount}' pentru toți monștrii pentru jucătorul '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:30.361291Z"
+  },
+  "talkaction.god.charms.msg_set_all_self": {
+    "src_hash": "78a2804d962be30269f27cad2b74251e",
+    "text": "Ucideri actualizate pentru toți monștrii din bestiar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:30.361675Z"
+  },
+  "talkaction.god.charms.msg_set_single_self": {
+    "src_hash": "aed9f52547f1aebd04cc1b2c88ab7400",
+    "text": "Ucideri actualizate de monstru '{monster}'!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:30.362222Z"
+  },
+  "talkaction.god.charms.msg_wrong_kill": {
+    "src_hash": "836749bbecb315983a41592093ad1331",
+    "text": "Sumă greșită de ucidere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:30.362569Z"
   }
 }

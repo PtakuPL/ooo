@@ -47302,5 +47302,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:26:59.055250Z"
+  },
+  "book.otbm.caliph_family_burial_vault": {
+    "src_hash": "877f21ff10863e0b643fe4dc4f11fc54",
+    "text": "Cripta funeraria della famiglia califfata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:44.673332Z"
+  },
+  "book.otbm.caliph_family_memorial_crypt": {
+    "src_hash": "21bfa75e8ddba7ed148ae99084f7bdc4",
+    "text": "Cripta commemorativa della famiglia del califfo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:44.673638Z"
+  },
+  "book.otbm.captain_osgrain_scourge_of_the": {
+    "src_hash": "0b439a5f442ead8b6abedfde3d76f28f",
+    "text": "Capitano Osgrain, flagello degli orchi, liberatore delle coste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:52.009624Z"
+  },
+  "book.otbm.castle_of_the_white_dragon": {
+    "src_hash": "f098246294e0bdcf03dbcfda74b64aa8",
+    "text": "Castello del Drago Bianco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:52.009991Z"
+  },
+  "book.otbm.centuries_ago_our_ancients_build": {
+    "src_hash": "4fc3592c2f423e48b450286cdf830627",
+    "text": "Secoli fa, i nostri antichi costruirono questo labirinto per proteggere la nostra città Demona da banditi e guerrieri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:52.010755Z"
+  },
+  "book.otbm.centuries_from_his_fire_and": {
+    "src_hash": "463ca1cecc7fbd25d2112be9287bf7bb",
+    "text": "secoli dal suo fuoco e dalla sua magia, come la conosciamo oggi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:52.011211Z"
+  },
+  "book.otbm.certain_edges_are_not_edible": {
+    "src_hash": "c786ac6c7ba71690fdcf09555d01ff0f",
+    "text": "*Alcuni bordi non sono commestibili e non contano per il successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:59.725874Z"
+  },
+  "book.otbm.cheese_5_wheels_who_needs": {
+    "src_hash": "94595c7b8fda7aff2d8e66850b0d775e",
+    "text": "Formaggio - 5 ruote *Chi ha bisogno di così tanto formaggio...? -Belethor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:59.726536Z"
+  },
+  "book.otbm.choose_one_reward_wisely": {
+    "src_hash": "2e657f7d9826b4b44e103574184ecfc4",
+    "text": "Scegli una ricompensa, saggiamente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:28:59.726918Z"
+  },
+  "book.otbm.circle_of_the_creators_and": {
+    "src_hash": "44207dd9ecaa92a34b2409eff06e4b0f",
+    "text": "cerchia dei creatori e aiutarli nel compito della creazione. Tibiasula acconsentì, perché anche lei era affascinata dall'idea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:05.908452Z"
+  },
+  "book.otbm.circular_canon_of_eternal_darkness": {
+    "src_hash": "ff1dff20a412e4027f66e6fd710b08cc",
+    "text": "Canone circolare dell'Eterna Tenebra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:05.908778Z"
+  },
+  "book.otbm.circular_canon_of_eternal_darkness_ff1dff20": {
+    "src_hash": "ff1dff20a412e4027f66e6fd710b08cc",
+    "text": "Canone circolare dell'Eterna Tenebra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:05.909067Z"
+  },
+  "book.otbm.citizen_depot_downstairs": {
+    "src_hash": "275600fa0a453b874f3e809a307a3ba4",
+    "text": "Cittadino Depot di sotto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:05.909429Z"
+  },
+  "book.otbm.city_cellar_beware_of_the": {
+    "src_hash": "e35064d51c8621205d379f2d36a54f83",
+    "text": "Cantina cittadina: attenzione ai ragni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:05.909745Z"
+  },
+  "book.otbm.clear_as_seldom_before_our": {
+    "src_hash": "062f1263fe7d76c88380fec3c771364d",
+    "text": "chiaro come raramente prima: il nostro ordine verrà cancellato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:13.622669Z"
+  },
+  "book.otbm.clear_up_subjects_remains_and": {
+    "src_hash": "6ac19dc6a092b8687802c68e7e79663a",
+    "text": "Ripulire i resti e il sangue dei soggetti. L'attrezzatura presa in prestito deve essere restituita pulita e funzionante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:13.623169Z"
+  },
+  "book.otbm.closed_for_archeological_survey": {
+    "src_hash": "d6ded4d793ced602b6f9921d65d88f48",
+    "text": "(chiuso per ricognizione archeologica)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:13.623470Z"
+  },
+  "book.otbm.codex_of_ultimate_boredom": {
+    "src_hash": "798795294fdbedfeff54f8b9074caa15",
+    "text": "Codice della noia definitiva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:13.623742Z"
+  },
+  "book.otbm.congratulations_you_have_passed_the": {
+    "src_hash": "b80f13e357887b4cfc6536fc2ca97fc2",
+    "text": "Congratulazioni, hai superato la Dream Challenge. Ora goditi i frutti del tuo successo e rilassati prima di continuare il cammino per incontrare il maestro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:13.624260Z"
+  },
+  "book.otbm.contact_henricus_in_the_inquisiton": {
+    "src_hash": "1d87a646d5eb6cd61d4e797c932feeb6",
+    "text": "Contatta Henricus negli alloggi dell'Inquisizione sotto la prigione tailandese!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:20.023849Z"
+  },
+  "book.otbm.contact_me_in_the_trade": {
+    "src_hash": "09ee01c761e4747b5ca4d26e77a3b0cd",
+    "text": "Contattami nel Quartiere del Commercio se vuoi smettere di essere impotente e fare qualcosa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:20.024372Z"
+  },
+  "book.otbm.contact_me_in_the_trade_09ee01c7": {
+    "src_hash": "09ee01c761e4747b5ca4d26e77a3b0cd",
+    "text": "Contattami nel Quartiere del Commercio se vuoi smettere di essere impotente e fare qualcosa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:20.024778Z"
+  },
+  "book.otbm.continued_without_cessation_some_of": {
+    "src_hash": "653303fd7f9ae3099f0dd88adf946ccd",
+    "text": "continuato senza sosta. Alcuni degli altri dei non volevano più testimoniare come la loro creazione fosse travagliata e",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:26.756459Z"
+  },
+  "book.otbm.contributed_a_tiny_proportion_of": {
+    "src_hash": "dc654f0d77c9dcace2462eb5d5d21528",
+    "text": "contribuì allo sforzo con una piccola parte delle sue forze. Il saggio afferma che è grazie alla sua opera che tutti i tempi si sforzano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:26.757103Z"
+  },
+  "book.otbm.coordinates_for_the_area_around": {
+    "src_hash": "14e6e3ccf8d15e3d853162119e300ea1",
+    "text": "Coordinate per la zona intorno a Dianscher",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:26.757493Z"
+  },
+  "book.otbm.courage_and_responsibility_after_his": {
+    "src_hash": "eeffb28dcb7e46ec8d775d999f69e093",
+    "text": "coraggio e responsabilità. A sua immagine e con parti del suo corpo gli Dei lo crearono servitori, gli Umani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:26.758026Z"
+  },
+  "book.otbm.crates_from_23_tools_and": {
+    "src_hash": "599bf2ff1cd08065d602b6ce51c48171",
+    "text": "Casse dal n. 23: strumenti e utilità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:26.758452Z"
+  },
+  "book.otbm.crates_from_87_supplies": {
+    "src_hash": "2a327370fcb52ef150fdf1fea27d39e2",
+    "text": "Casse da #87: Forniture",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:33.303996Z"
+  },
+  "book.otbm.creation_and_the_process_known": {
+    "src_hash": "6c2036f13d706045f274adab2050fb9d",
+    "text": "creazione, e il processo noto come risveglio non è affatto opera di benevolenza, ma gli dei hanno perso il controllo delle cose che hanno cercato di nascondere alle anime intruse. La teoria dice che mentre c'è un'ascensione per le anime dall'aldilà per raggiungere una qualche forma di divinità, c'è una costante discesa per i poteri degli dei antichi a causa del potere che si sta disperdendo nel nulla e del potere che i viventi rivendicano per proprio conto. Naturalmente questa eresia è molto popolare tra le fila di certi culti dell’ascensione. Tanto più che si prende cura del timore più comune in quei conclavi, che gli dei gelosi possano reagire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:33.306016Z"
+  },
+  "book.otbm.creation_and_the_process_known_6c2036f1": {
+    "src_hash": "6c2036f13d706045f274adab2050fb9d",
+    "text": "creazione, e il processo noto come risveglio non è affatto opera di benevolenza, ma gli dei hanno perso il controllo delle cose che hanno cercato di nascondere alle anime intruse. La teoria dice che mentre c'è un'ascensione per le anime dall'aldilà per raggiungere una qualche forma di divinità, c'è una costante discesa per i poteri degli dei antichi a causa del potere che si sta disperdendo nel nulla e del potere che i viventi rivendicano per proprio conto. Naturalmente questa eresia è molto popolare tra le fila di certi culti dell’ascensione. Tanto più che si prende cura del timore più comune in quei conclavi, che gli dei gelosi possano reagire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:33.308031Z"
+  },
+  "book.otbm.creation_because_he_was_fully": {
+    "src_hash": "0a09a53cb78bb1bacbcf6c497edafd4c",
+    "text": "creazione, perché era pienamente creativo e impaziente. I suoi poteri divini emersero da lui e furono creati, formati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:33.308559Z"
+  },
+  "book.otbm.creation_yes_some_even_state": {
+    "src_hash": "2cb3baf30c42dc5e33914f4ba9c39b01",
+    "text": "creazione. Sì, alcuni affermano addirittura che i buoni Dei abbiano creato un gemello per Banor, che dovrebbe incarnare i poteri della magia,",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:29:33.309108Z"
   }
 }

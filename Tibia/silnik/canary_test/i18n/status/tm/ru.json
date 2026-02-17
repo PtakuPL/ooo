@@ -29374,5 +29374,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:04:15.398878Z"
+  },
+  "scripts.actions_containerRewards.msg_1": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Вы нашли {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.063549Z"
+  },
+  "scripts.actions_gems.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Когда придет время, '%s' будет принят в этом храме.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.071229Z"
+  },
+  "scripts.actions_mission11_payback_time_lever.msg_1": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Арена уже используется.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.080954Z"
+  },
+  "scripts.actions_steal_from_thieves.msg_2": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Вы нашли сумку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.094713Z"
+  },
+  "scripts.gems.msg_1": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Вы помещаете рубин в маленькое гнездо. Красное пламя начинает гореть.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.139137Z"
+  },
+  "scripts.gems.msg_2": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Вы помещаете сапфир в маленькое гнездо. Голубое пламя начинает гореть.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.139649Z"
+  },
+  "scripts.gems.msg_3": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Вы помещаете аметист в маленькое гнездо. Фиолетовое пламя начинает гореть.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.140164Z"
+  },
+  "scripts.gems.msg_4": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Вы помещаете топаз в маленькое гнездо. Желтое пламя начинает гореть.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.140785Z"
+  },
+  "scripts.register_actions.found_item": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Вы нашли {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:31.199875Z"
+  },
+  "scripts.action_beaver.say_2": {
+    "src_hash": "e9873c92733c3122ad008d43fcab7271",
+    "text": "Вы отметили дерево, но, похоже, кто-то его уже отметил! Он не доволен вашими действиями и привел друзей!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:32.245370Z"
+  },
+  "scripts.action_beaver.say_3": {
+    "src_hash": "79477227f7cf21264b4dd65357782bf8",
+    "text": "Вы пометили дерево, но вы также разозлили семейство беличьих, жившее на нем!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:32.245867Z"
+  },
+  "scripts.action_boss.say_1": {
+    "src_hash": "01219f4a0de819027cf51e5318506d9e",
+    "text": "Наконец... он вернулся, мой драгоценный амулет. Я рад, что ты им не воспользовался! Я позволяю тебе...ааа... войти в дверь...ааа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:32.246618Z"
   }
 }

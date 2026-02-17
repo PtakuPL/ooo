@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T04:11:56.163526Z",
-  "cycle": 227,
-  "language": "it",
-  "json_file": "scripts.json",
-  "translated": 40,
+  "timestamp": "2026-02-17T04:13:03.533423Z",
+  "cycle": 228,
+  "language": "ro",
+  "json_file": "raids.json",
+  "translated": 49,
   "placeholders": 0,
-  "guard_fail": 10,
+  "guard_fail": 1,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 514
+  "strict_skipped_done": 65
 }

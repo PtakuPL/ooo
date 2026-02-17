@@ -39718,5 +39718,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:05:28.570700Z"
+  },
+  "scripts.actions_cracklers_lever.msg_2": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.009471Z"
+  },
+  "scripts.actions_crystal.msg_1": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "Deodată, un gardian sare la tine din spate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.010267Z"
+  },
+  "scripts.actions_final_lever.msg_2": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.014373Z"
+  },
+  "scripts.actions_findings.msg_1": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Ați găsit un {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.014974Z"
+  },
+  "scripts.actions_gooey_mass.msg_1": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Ați găsit un {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.019143Z"
+  },
+  "scripts.actions_sparks_lever.msg_1": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.039243Z"
+  },
+  "scripts.actions_vocation_reward.msg_3": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Ați găsit un {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.047137Z"
+  },
+  "scripts.quests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Ați găsit un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.129518Z"
+  },
+  "scripts.quests.msg_2": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Ați găsit un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.129874Z"
+  },
+  "scripts.quests.msg_4": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Ați găsit un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.130396Z"
+  },
+  "scripts.quests.msg_5": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Ați găsit un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:36.130763Z"
+  },
+  "scripts.actions_crate.msg_1": {
+    "src_hash": "467aa744353e838cc4e516dc77dd702f",
+    "text": "Perfect! Ai luat o lupă minunată din lada asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:40.324182Z"
+  },
+  "scripts.actions_crate.msg_2": {
+    "src_hash": "51cdbfcf0982098343b3f288729deb7a",
+    "text": "Ai luat deja lupa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:40.324483Z"
+  },
+  "scripts.actions_crate.msg_3": {
+    "src_hash": "88f20ad8c4870defabe09cab6938014d",
+    "text": "Această ladă îi aparține lui Angelo. Ar trebui să vorbești cu el înainte de a scoate ceva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:40.324959Z"
+  },
+  "scripts.actions_crude_lava_pump.say_1": {
+    "src_hash": "26f0c6eb6824fc9463fcf2da3d9b3bc7",
+    "text": "Cu pompa distrusă, fluxul de lavă a fost oprit. Zona IV este accesibilă acum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:40.325414Z"
+  },
+  "scripts.actions_crude_lava_pump.say_2": {
+    "src_hash": "8592ea91a04cc14538e0ae132d20f6f1",
+    "text": "Cu pompa distrusă, fluxul de lavă a fost oprit. Zona V este accesibilă acum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:40.325866Z"
+  },
+  "scripts.actions_crude_lava_pump.say_3": {
+    "src_hash": "68c1d0e664ac7d858278500694c4cf4d",
+    "text": "Cu pompa distrusă, fluxul de lavă a fost oprit. Zona VI este accesibilă acum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:43.714564Z"
+  },
+  "scripts.actions_crystal.msg_2": {
+    "src_hash": "3316c338a81d556dfda28459921d5538",
+    "text": "Nu ai adunat nimic mai mult decât niște bucăți mici de bijuterie roșie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:43.715000Z"
+  },
+  "scripts.actions_crystal.msg_3": {
+    "src_hash": "f621231a669f88989005df0122b9bc35",
+    "text": "Cu un efort considerabil reușești să dobori din stânci o bijuterie brută, în mare parte nevătămată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:43.715495Z"
+  },
+  "scripts.actions_cure.say_1": {
+    "src_hash": "b72870c8d387638024b0aae38f8b14b5",
+    "text": "Luați niște apă fierbinte din gheizer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:43.715836Z"
+  },
+  "scripts.actions_custodian_door.msg_1": {
+    "src_hash": "45b73f05201500fc8fe764433f99d201",
+    "text": "Puterea lui Gaffir nu te va lăsa să treci de această ușă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:43.716218Z"
+  },
+  "scripts.actions_dark_remains.say_1": {
+    "src_hash": "cda93175c22d6f24117ce3e9e4870199",
+    "text": "Scutul magic de protecție este slăbit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:47.430552Z"
+  },
+  "scripts.actions_deeper_banuta_shortcut.msg_1": {
+    "src_hash": "4d7b566523c4163688d941d1e47fb138",
+    "text": "Ai descoperit un tunel secret.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:47.430858Z"
+  },
+  "scripts.actions_deeper_banuta_shortcut.msg_2": {
+    "src_hash": "64e242b84b7218e0be6150d252d702ba",
+    "text": "Ai descoperit deja acest secret.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:47.431160Z"
+  },
+  "scripts.actions_demon_oak.msg_1": {
+    "src_hash": "bd2e08e742d9871c8528df93eb3a7ade",
+    "text": "Mai întâi trebuie să omori toți monștrii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:47.431503Z"
+  },
+  "scripts.actions_demon_oak.msg_2": {
+    "src_hash": "e369118cf13afd694431ce0e9505d2dd",
+    "text": "Spune-i lui Oldrak despre marea ta victorie împotriva stejarului demon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:47.431898Z"
+  },
+  "scripts.actions_demon_oak.say_1": {
+    "src_hash": "8cc72daf16882398bc3b602ac306a385",
+    "text": "-krrrrak-",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:51.094881Z"
+  },
+  "scripts.actions_demon_oak_chest.msg_1": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "E gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:51.095092Z"
+  },
+  "scripts.actions_demon_oak_chest.msg_2": {
+    "src_hash": "06f02d4c547b12ce2b8804695b9f0aea",
+    "text": "Ați găsit {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:51.095350Z"
+  },
+  "scripts.actions_dipthrah_signs_doors.msg_1": {
+    "src_hash": "50900607ffbcc26dfb57adb6a9aeacbc",
+    "text": "ID de acțiune nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:53.672085Z"
+  },
+  "scripts.actions_dipthrah_signs_doors.msg_2": {
+    "src_hash": "f74ffed3ec45d27808bf4b9daafbc2c8",
+    "text": "Ați finalizat deja acest pas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:53.672444Z"
+  },
+  "scripts.actions_document.msg_1": {
+    "src_hash": "e3aa86a595bdf4e08545ee7ba7590906",
+    "text": "Stimate curator, acest muzeu recent deschis este un loc foarte frumos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:53.672823Z"
+  },
+  "scripts.actions_document.msg_2": {
+    "src_hash": "15e799af52db094b34330c9e03390635",
+    "text": "Dar stai! Dar spațiul gol din fața ta? Ce păcat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:53.673248Z"
+  },
+  "scripts.actions_document.msg_3": {
+    "src_hash": "649518a7af31b7d8b75793e1143eafd4",
+    "text": "Se pare că cineva a eliminat una dintre pozele frumoase. Dar haide! Ai bani și avem nevoie de ei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:53.673775Z"
+  },
+  "scripts.actions_document.msg_4": {
+    "src_hash": "e3f5b87d707e739631933987fb9885b9",
+    "text": "Deci, pentru o mică alocație pentru cheltuieli, o vei primi înapoi. Doar vorbiți cu Iwar în Kazordoon pentru mai multe informații. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:56.263119Z"
+  },
+  "scripts.actions_document.msg_5": {
+    "src_hash": "9c6cec06690cf28996e1db3502afbeda",
+    "text": "Întreabă-l: ți-a prins pisica limba?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:56.263502Z"
+  },
+  "scripts.actions_documents.msg_1": {
+    "src_hash": "5af14697696edd5f1546a07182861b2d",
+    "text": "Ați primit suplimentul {}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:56.263834Z"
+  },
+  "scripts.actions_documents.msg_2": {
+    "src_hash": "df3c4b2b4bd3cf1975d03f384d86e691",
+    "text": "Ai primit ținuta {}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:56.264147Z"
+  },
+  "scripts.actions_doorInvisible.msg_1": {
+    "src_hash": "b2cb04d517ae393db829039e7816a595",
+    "text": "Ușa se deschide.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:56.264390Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_2": {
+    "src_hash": "5a575bde3954748011659b53b9682d15",
+    "text": "Ia blestemul visului asupra ta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:58.190797Z"
+  },
+  "scripts.actions_entrances.msg_1": {
+    "src_hash": "e76fb564a7fed17077990fbdc6de5b76",
+    "text": "Ai {} impurități.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:12:58.191116Z"
   }
 }

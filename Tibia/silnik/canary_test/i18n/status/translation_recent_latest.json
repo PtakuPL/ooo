@@ -1,103 +1,127 @@
 {
-  "timestamp": "2026-02-17T04:12:07.139668Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 16,
+  "timestamp": "2026-02-17T04:13:02.596648Z",
+  "language": "ro",
+  "json_file": "raids.json",
+  "translated": 49,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "raid.lizards.name",
+      "en": "Lizards",
+      "translated": "Lizards",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
+      "key": "raid.cyclops.name",
+      "en": "Cyclops",
+      "translated": "Cyclops",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
+      "key": "raid.wild_horses.name",
+      "en": "Wild Horses",
+      "translated": "Wild Horses",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "raid.sheng.name",
+      "en": "Sheng",
+      "translated": "Sheng",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "raid.munster.name",
+      "en": "Munster",
+      "translated": "Munster",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "raid.rottie1.name",
+      "en": "Rottie1",
+      "translated": "Rottie1",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "raid.teleskor.name",
+      "en": "Teleskor",
+      "translated": "Teleskor",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "raid.rottie2.name",
+      "en": "Rottie2",
+      "translated": "Rottie2",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "raid.crustacea_gigantica_4.name",
+      "en": "Crustacea Gigantica 4",
+      "translated": "Crustacea Gigantica 4",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "raid.crustacea_gigantica_5.name",
+      "en": "Crustacea Gigantica 5",
+      "translated": "Crustacea Gigantica 5",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "raid.furyosa.name",
+      "en": "Furyosa",
+      "translated": "Furyosa",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "raid.chayenne.name",
+      "en": "Chayenne",
+      "translated": "Chayenne",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "raid.omrafir.name",
+      "en": "Omrafir",
+      "translated": "Omrafir",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "raid.gaz_haragoth.name",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "raid.yeti.name",
+      "en": "Yeti",
+      "translated": "Yeti",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "raid.gargoyle.name",
+      "en": "Gargoyle",
+      "translated": "Gargoyle",
+      "source": "tm"
+    },
+    {
+      "key": "raid.nomad.name",
+      "en": "Nomad",
+      "translated": "Nomad",
+      "source": "tm"
+    },
+    {
+      "key": "raid.cobra.name",
+      "en": "Cobra",
+      "translated": "Cobra",
+      "source": "tm"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "en": "Bone Beast",
+      "translated": "Bone Beast",
+      "source": "tm"
+    },
+    {
+      "key": "raid.terramite.name",
+      "en": "Terramite",
+      "translated": "Terramite",
       "source": "tm"
     }
   ]

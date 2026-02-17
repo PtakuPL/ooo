@@ -31830,5 +31830,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:44:12.950833Z"
+  },
+  "npc.a_starving_dog.say_1": {
+    "src_hash": "04524485fd13e5b04016a186aff66016",
+    "text": "<sgranocchiare>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:27.759908Z"
+  },
+  "npc.a_strange_chalice.greet_msg_1": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "CIAO? Cosa intendi con 'hi' - non vedi che sono un... devo abbassare la voce. Ti è venuto in mente che questo 'chalice' non vuole essere disturbato?! Lasciami in pace!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:30.627600Z"
+  },
+  "npc.a_strange_chalice.multi_1": {
+    "src_hash": "fee45a3e5abbb7706203a5ac4f7919a9",
+    "text": "Sì, beh, per esempio, ho cercato per un po' di capire come entrare nel portale del fuoco in questo complesso. La maggior parte dei Draghi non viene mai quassù. Preferiscono nascondersi da qualche parte laggiù, pianificando e complottando. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:30.628498Z"
+  },
+  "npc.a_strange_chalice.multi_10": {
+    "src_hash": "b7c596f080020effaff8997d70bb235a",
+    "text": "Poi è successo qualcosa, i lucertoloidi hanno iniziato ad apparire, perlustrando il posto. Dovevo ritirarmi dal mio nascondiglio e avanzare in una posizione più sicura. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:30.629173Z"
+  },
+  "npc.a_strange_chalice.multi_11": {
+    "src_hash": "32def53042c32f7b6d482ba76c4389ef",
+    "text": "Avevo bisogno di avvicinarmi e mimetizzarmi. Così ho pensato al travestimento definitivo: un calice. Potrei stabilire un punto d'appoggio proprio in mezzo a loro, non verrei mai identificato come un intruso e potrei persino analizzare i loro drink! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:30.630024Z"
+  },
+  "npc.a_strange_chalice.multi_12": {
+    "src_hash": "5c345ea0809b2e3a6500810748727b8f",
+    "text": "Ho scavato rapidamente un tunnel per entrare in quella che presumo sia una sala del trono e ho aspettato che mi venissero a prendere e mi portassero in giro! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:30.630615Z"
+  },
+  "npc.a_strange_chalice.multi_13": {
+    "src_hash": "b7eeb8bfa7801e2b93d39a17d0f4ebb4",
+    "text": "Mi 'used' anche un po', non vuoi entrare nei dettagli qui. Sono davvero {thirsty}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:35.880719Z"
+  },
+  "npc.a_strange_chalice.multi_14": {
+    "src_hash": "f2ddbcd6c854aaa56fe3ab22e208b527",
+    "text": "Niente acqua allora? Ah cavolo... ehm, non preoccuparti, nessun problema. Quindi, dal giorno in cui ho ricevuto la notizia della scoperta di Zao, ho voluto studiarne gli abitanti, la fauna selvatica, le piante e la geografia. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:35.881631Z"
+  },
+  "npc.a_strange_chalice.multi_15": {
+    "src_hash": "c162c2e4c136122010b050ee35901260",
+    "text": "L'accademia ha istituito il '__PH0__-Zaoan Exploration Division' poco dopo. Sono stato socio fondatore e responsabile del ramo di ricerca 'Draken'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:35.882354Z"
+  },
+  "npc.a_strange_chalice.multi_16": {
+    "src_hash": "d5170eb71b81490b599dfa7637196b8b",
+    "text": "Dal momento che il mio stimato collega e mentore Spectulus non si è unito a noi, c'è solo un membro della divisione di esplorazione dell'accademia che si avventura effettivamente a vedere il posto: io. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:35.883108Z"
+  },
+  "npc.a_strange_chalice.multi_17": {
+    "src_hash": "a79715f48f2b8943949a48f614e2426d",
+    "text": "Devi sapere che la maggior parte delle cose nell'accademia accadono 'inside', a porte chiuse. Ma alcuni di noi semplicemente rifiutano di lasciare che la teoria regni sull’esperienza pratica nella scienza. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:35.883870Z"
+  },
+  "npc.a_strange_chalice.multi_18": {
+    "src_hash": "ba7ebd0c13987f41dfbc94fe95238cef",
+    "text": "Beh, fondamentalmente Spectulus è l'unico che la pensa allo stesso modo finora. In effetti, è stato lui a incitarmi a lavorare sul campo in primo luogo. Quindi eccomi qui! {Disguised} come calice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:43.256402Z"
+  },
+  "npc.a_strange_chalice.multi_19": {
+    "src_hash": "a69a6355388c041447d04eba3b94513d",
+    "text": "Ebbene, oltre ad essere un famoso stregone e studioso dell'accademia di magia di Edron, sono anche l'orgoglioso padre di una bellissima figlia, Ivalisse. Il mio piccolo impegno qui deve aver dato fastidio a quella povera creatura per tutto il tempo da quando me ne sono andato. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:43.257316Z"
+  },
+  "npc.a_strange_chalice.multi_2": {
+    "src_hash": "62323e0a4cae2d65eb46b7f0521ba5cb",
+    "text": "So già come accedervi, devi intervenire e urlare 'zzubaran'. Purtroppo non mi hanno mai portato con loro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:43.257871Z"
+  },
+  "npc.a_strange_chalice.multi_20": {
+    "src_hash": "327276bd533fb0914c7b184008300024",
+    "text": "Dille che la amo e che mi prenderò cura di me. Devo andare avanti! La mia ricerca è molto preziosa per '__PH0__-Zaoan Exploration Division'. Non hai per caso un po' d'acqua, vero? Ah non importa. È lungo {story}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:43.258815Z"
+  },
+  "npc.a_strange_chalice.multi_3": {
+    "src_hash": "30edb040645eba9a6fcb184b37fe5d78",
+    "text": "Li ho sentiti dire una volta, quando una guardia apparentemente ubriaca lo ha urlato davanti a una torcia montata sul muro, sbattendovi poi la testa contro. Ha rovesciato tutto il mio contenuto sul pavimento, hmpf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:43.259446Z"
+  },
+  "npc.a_strange_chalice.multi_4": {
+    "src_hash": "083edfc6168d957911567492033fb283",
+    "text": "Ah, ho detto questo? Non importa, non ho molta sete. Fa parte di questa illusione. In qualche modo, sono rimasto nascosto per così tanto tempo che ho iniziato a... diventare... un tramite. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:46.294056Z"
+  },
+  "npc.a_strange_chalice.multi_5": {
+    "src_hash": "8acd8ebc6d955ff9119ec3e8345ea3ee",
+    "text": "Non lo so, ho quel bisogno costante di bere ma in questa forma non ne avrei bisogno, non c'è bocca, né stomaco, né carne e nessun bisogno effettivo di mangiare, bere o dormire. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:46.294895Z"
+  },
+  "npc.a_strange_chalice.multi_6": {
+    "src_hash": "0822fa47d657a690b2de5c5ee693de10",
+    "text": "Fondamentalmente comunico facendo vibrare il metallo di questo calice e utilizzando la sua forma come corpo sonoro. Come una voce vera, non credi?? Sì, va bene, lo so, è inquietante. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:46.295581Z"
+  },
+  "npc.a_strange_chalice.multi_7": {
+    "src_hash": "83a893e7d9041ec0d1376b74ff3ad5ef",
+    "text": "Sono ancora nel bel mezzo delle mie ricerche e non voglio andare a casa, quindi per favore dì a mia figlia di non preoccuparsi per me: sarà una svolta! Ho già {learned} tanto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:46.296263Z"
+  },
+  "npc.a_strange_chalice.multi_8": {
+    "src_hash": "e9a8362364b304dbdc81f8f342e8996e",
+    "text": "Oh sì, quindi visto che volevo studiare il Draken da vicino, mi è venuta un'idea. Sulla base delle mie ricerche, di alcuni lievi lividi e di una cicatrice, il nascondiglio perfetto è spesso proprio in mezzo ai soggetti. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:46.297042Z"
+  },
+  "npc.a_strange_chalice.multi_9": {
+    "src_hash": "cc34e24d43372156c72c22aea28ee7f1",
+    "text": "Se potessi entrare nella loro tana senza essere visto e allestire un accampamento avanzato, avrei potuto studiare i draghi in pace... o almeno così pensavo. Si scopre che l'intero posto era vuoto. Ho allestito il mio accampamento e ho aspettato. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:50.391129Z"
+  },
+  "npc.a_strange_chalice.say_3": {
+    "src_hash": "94e49526a70e8908e790e26f48964d61",
+    "text": "Finalmente. Questo è quello che... oh aspetta, stai ancora parlando con me - mi farai saltare la copertura! Cosa vuoi? Oh aspetta, il mio {daughter} ti ha inviato? È passato un po' di tempo ormai, in effetti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:50.391875Z"
+  },
+  "npc.a_strange_chalice.stdmod_2": {
+    "src_hash": "05f7f74c0b29f24856178f1bc0702326",
+    "text": "Beh, bevo per la maggior parte del tempo. Ehm, no, voglio dire, sto cercando di trattenere i liquidi... ah, aspetta, è uscito male: sto facendo delle ricerche. Manteniamolo così.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:50.392724Z"
+  },
+  "npc.a_strange_fellow.say_1": {
+    "src_hash": "0c5a7632de60c2e815c74f96325803e3",
+    "text": "Una fattura? Oh ragazzo, quindi stai consegnando un'altra fattura al povero me?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:50.393099Z"
+  },
+  "npc.a_strange_fellow.say_2": {
+    "src_hash": "6016a70cddc5ea1904793906165a6082",
+    "text": "Ok, ok, lo prendo. Immagino di non avere altra scelta comunque. E ora lasciami solo nella mia miseria, per favore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:53.009066Z"
+  },
+  "npc.a_strange_fellow.say_3": {
+    "src_hash": "05d51197436c97c6ec17d90e4a58de75",
+    "text": "Eh? Cosa vuoi?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:53.009333Z"
+  },
+  "npc.a_strange_fellow.say_4": {
+    "src_hash": "7b783b4483041bd31834f44376de5e2d",
+    "text": "Che cosa? Il mio cappello?? Non c'è... niente di speciale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:53.009707Z"
+  },
+  "npc.a_strange_fellow.say_5": {
+    "src_hash": "c21cbe5bca68c88d94010ef8bd1ea39a",
+    "text": "Smettila di infastidirmi per quel cappello, mi ascolti?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:53.010034Z"
+  },
+  "npc.a_strange_fellow.say_6": {
+    "src_hash": "ea6a49853f81dfcc3df96b8e32b3aae7",
+    "text": "EHI! Non toccare quel cappello! Lascia stare!!! Non farlo!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:53.010461Z"
+  },
+  "npc.a_strange_fellow.say_7": {
+    "src_hash": "a8c64759a74dd92047577c62e44e2484",
+    "text": "Nooooo! Argh, ok, ok, credo di non poterlo più negare, sono David Brassacres, il magnifico, quindi cosa vuoi?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:55.163712Z"
+  },
+  "npc.a_swan.greet_msg_1": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Ti saluto, essere mortale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:55.164048Z"
+  },
+  "npc.a_swan.multi_1": {
+    "src_hash": "b3d29473b58a341b18e301e0a6c2721b",
+    "text": "Grazie, essere umano! Immagino che il troll ladro si sia diretto verso le montagne a est di qui. Per quanto ne so è possibile raggiungere queste cime montuose solo tuffandosi in una piccola grotta. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:55.164812Z"
   }
 }

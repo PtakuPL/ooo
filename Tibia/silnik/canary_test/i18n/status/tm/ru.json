@@ -22062,5 +22062,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:45:05.236755Z"
+  },
+  "npc.hireling.say_12": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Как хочешь!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.180210Z"
+  },
+  "npc.hireling.say_17": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Как хочешь!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.180786Z"
+  },
+  "npc.saideh.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.465440Z"
+  },
+  "npc.shimun.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.488008Z"
+  },
+  "npc.shimun.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.488482Z"
+  },
+  "npc.shimun.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.488828Z"
+  },
+  "npc.shimun.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.489754Z"
+  },
+  "npc.shirtalis_of_the_summer_court.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.491660Z"
+  },
+  "npc.tefrit.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.522279Z"
+  },
+  "npc.tefrit.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.522630Z"
+  },
+  "npc.tefrit.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:59.522972Z"
   }
 }

@@ -145118,5 +145118,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:41:33.615691Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L10.2375": {
+    "src_hash": "ac1f9925628d9e59d3b4385a686c8259",
+    "text": "Encontraste una espada de madera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.937921Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "El cofre está vacío.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.938874Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.goblin.temple.quest.L25.2376": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Has encontrado una bolsa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.939807Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.goblin.temple.quest.L59.2377": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Has encontrado una bolsa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.940710Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.rapier.quest.L8.2378": {
+    "src_hash": "5c6e121dd566e0df760e19b065d98e49",
+    "text": "Has encontrado un estoque.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.941699Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L29.2388": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Necesitas 5 jugadores para pelear con este jefe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.942930Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L37.2389": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "¡Alguien está luchando contra el jefe! Necesitas esperar un rato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.944033Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L68.2391": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "¡Has entrado en una antigua celda de prisión de demonios!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.945429Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L69.2392": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Tienes quince minutos para matar y saquear a este jefe, sino perderás esa oportunidad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.946625Z"
+  },
+  "data.otservbr.global.scripts.actions.system.quest.reward.common.L131.2379": {
+    "src_hash": "c4db9b4be8514b06fd87145049b8d545",
+    "text": "Has encontrado un/a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.947678Z"
+  },
+  "data.otservbr.global.scripts.actions.tools.hammer.L87.2349": {
+    "src_hash": "6095b6bc022c4b909407d4aa1b2cb565",
+    "text": "Has reparado este muro roto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.948823Z"
+  },
+  "data.otservbr.global.scripts.actions.tools.hammer.L91.2350": {
+    "src_hash": "2de12b58290eb4870c5a92c462888749",
+    "text": "Ya has reparado muchos muros rotos hoy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.949857Z"
+  },
+  "data.otservbr.global.scripts.actions.tools.lock.pick.L12.2351": {
+    "src_hash": "ff211fe70e3caeb6b04cdf6fc4a2c870",
+    "text": "¡Tu ganzúa abrió este cofre!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.950904Z"
+  },
+  "data.otservbr.global.scripts.actions.tools.lock.pick.L16.2352": {
+    "src_hash": "c56944cf2486fe50ba39a2d5610a5c3d",
+    "text": "Tu ganzúa se rompió.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.951876Z"
+  },
+  "data.otservbr.global.scripts.creaturescripts.customs.freequests.L377.2347": {
+    "src_hash": "9d96dea7e5606180c5f3169aa5a4df1f",
+    "text": "Añadir quests gratuitas completado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.952860Z"
+  },
+  "data.otservbr.global.scripts.creaturescripts.customs.freequests.L404.2348": {
+    "src_hash": "d185826332eb1de2dd13405d0df30ef3",
+    "text": "Añadiendo quests de acceso gratuito a tu personaje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:49:20.954061Z"
   }
 }

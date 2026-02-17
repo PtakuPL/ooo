@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T05:01:16.913752Z",
-  "cycle": 260,
-  "language": "pl",
-  "json_file": "cpp.json",
-  "translated": 41,
+  "timestamp": "2026-02-17T05:01:52.255351Z",
+  "cycle": 261,
+  "language": "es",
+  "json_file": "achievements.json",
+  "translated": 0,
   "placeholders": 0,
-  "guard_fail": 18,
+  "guard_fail": 7,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 760
+  "strict_skipped_done": 1045
 }

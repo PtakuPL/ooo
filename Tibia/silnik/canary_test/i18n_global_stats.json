@@ -1,8 +1,8 @@
 {
-  "total_cycles": 260,
+  "total_cycles": 261,
   "mode": "AUTO_TRANSLATE",
   "category": "pl",
-  "last_update": "2026-02-17T06:01:20.300210",
+  "last_update": "2026-02-17T06:02:10.044862",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,134 +27,13 @@
   },
   "auto_translate": {
     "language": "pl",
-    "json_file": "cpp.json",
-    "keys_to_translate": 139,
-    "guard_fail": 18,
+    "json_file": "client.json",
+    "keys_to_translate": 16,
+    "guard_fail": 7,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 41,
-    "recent_examples": [
-      {
-        "key": "cpp.title.desc_25",
-        "en": "Highest magic level on character's world.",
-        "translated": "Najwy\u017cszy poziom magii w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_26",
-        "en": "Highest distance level on character's world.",
-        "translated": "Najwy\u017cszy poziom dystansu w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_27",
-        "en": "Highest axe level on character's world.",
-        "translated": "Najwy\u017cszy poziom topora w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_28",
-        "en": "Highest club level on character's world.",
-        "translated": "Najwy\u017cszy poziom klubowy w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_29",
-        "en": "Highest fist level on character's world.",
-        "translated": "Najwy\u017cszy poziom pi\u0119\u015bci w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_30",
-        "en": "Highest shielding level on character's world.",
-        "translated": "Najwy\u017cszy poziom ochrony w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_31",
-        "en": "Highest sword level on character's world.",
-        "translated": "Najwy\u017cszy poziom miecza w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_32",
-        "en": "Highest score of accumulated charm points on character's world.",
-        "translated": "Najwy\u017cszy wynik zgromadzonych punkt\u00f3w uroku w \u015bwiecie postaci.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_33",
-        "en": "Finished most recent Tibiadrome rota ranked in the top 5.",
-        "translated": "Uko\u0144czono najnowsz\u0105 rotacj\u0119 Tibiadrome w pierwszej pi\u0105tce.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_36",
-        "en": "Unlocked All Amphibic Bestiary entries.",
-        "translated": "Odblokowano wszystkie wpisy amfibii Bestiary.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_37",
-        "en": "Unlocked all Bird Bestiary entries.",
-        "translated": "Odblokowano wszystkie wpisy Birda Bestiary.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_38",
-        "en": "Unlocked all Demon Bestiary entries.",
-        "translated": "Odblokowano wszystkie wpisy Demona Bestiary.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_4",
-        "en": "Unlocked 10 or more Mounts.",
-        "translated": "Odblokowano 10 lub wi\u0119cej wierzchowc\u00f3w.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_44",
-        "en": "Unlocked all Construct Bestiary entries.",
-        "translated": "Odblokowano wszystkie wpisy dotycz\u0105ce konstrukcji Bestiary.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_47",
-        "en": "Unlocked all Human Bestiary entries.",
-        "translated": "Odblokowano wszystkie wpisy dotycz\u0105ce ludzi Bestiary.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_5",
-        "en": "Unlocked 20 or more Mounts.",
-        "translated": "Odblokowano 20 lub wi\u0119cej wierzchowc\u00f3w.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_55",
-        "en": "Unlocked all Nemesis bosses.",
-        "translated": "Odblokowano wszystkich boss\u00f3w Nemezis.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_56",
-        "en": "Unlocked 10 or more Archfoe bosses.",
-        "translated": "Odblokowano 10 lub wi\u0119cej boss\u00f3w Archfoe.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_57",
-        "en": "Unlocked 10 or more Nemesis bosses.",
-        "translated": "Odblokowano 10 lub wi\u0119cej boss\u00f3w Nemezis.",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.desc_58",
-        "en": "Unlocked all Archfoe bosses.",
-        "translated": "Odblokowano wszystkich boss\u00f3w Archfoe.",
-        "source": "google_translate"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

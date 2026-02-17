@@ -378,143 +378,22 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-17T05:01:20Z",
+  "generated_at_utc": "2026-02-17T05:02:10Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2139,
+    "errors_total": 2141,
     "files_processed_total": 6443,
     "languages_total": 54
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 18,
-        "json_file": "cpp.json",
-        "keys_to_translate": 139,
+        "guard_fail": 7,
+        "json_file": "client.json",
+        "keys_to_translate": 16,
         "language": "pl",
-        "recent_examples": [
-          {
-            "en": "Highest magic level on character's world.",
-            "key": "cpp.title.desc_25",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom magii w świecie postaci."
-          },
-          {
-            "en": "Highest distance level on character's world.",
-            "key": "cpp.title.desc_26",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom dystansu w świecie postaci."
-          },
-          {
-            "en": "Highest axe level on character's world.",
-            "key": "cpp.title.desc_27",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom topora w świecie postaci."
-          },
-          {
-            "en": "Highest club level on character's world.",
-            "key": "cpp.title.desc_28",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom klubowy w świecie postaci."
-          },
-          {
-            "en": "Highest fist level on character's world.",
-            "key": "cpp.title.desc_29",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom pięści w świecie postaci."
-          },
-          {
-            "en": "Highest shielding level on character's world.",
-            "key": "cpp.title.desc_30",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom ochrony w świecie postaci."
-          },
-          {
-            "en": "Highest sword level on character's world.",
-            "key": "cpp.title.desc_31",
-            "source": "google_translate",
-            "translated": "Najwyższy poziom miecza w świecie postaci."
-          },
-          {
-            "en": "Highest score of accumulated charm points on character's world.",
-            "key": "cpp.title.desc_32",
-            "source": "google_translate",
-            "translated": "Najwyższy wynik zgromadzonych punktów uroku w świecie postaci."
-          },
-          {
-            "en": "Finished most recent Tibiadrome rota ranked in the top 5.",
-            "key": "cpp.title.desc_33",
-            "source": "google_translate",
-            "translated": "Ukończono najnowszą rotację Tibiadrome w pierwszej piątce."
-          },
-          {
-            "en": "Unlocked All Amphibic Bestiary entries.",
-            "key": "cpp.title.desc_36",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkie wpisy amfibii Bestiary."
-          },
-          {
-            "en": "Unlocked all Bird Bestiary entries.",
-            "key": "cpp.title.desc_37",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkie wpisy Birda Bestiary."
-          },
-          {
-            "en": "Unlocked all Demon Bestiary entries.",
-            "key": "cpp.title.desc_38",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkie wpisy Demona Bestiary."
-          },
-          {
-            "en": "Unlocked 10 or more Mounts.",
-            "key": "cpp.title.desc_4",
-            "source": "google_translate",
-            "translated": "Odblokowano 10 lub więcej wierzchowców."
-          },
-          {
-            "en": "Unlocked all Construct Bestiary entries.",
-            "key": "cpp.title.desc_44",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkie wpisy dotyczące konstrukcji Bestiary."
-          },
-          {
-            "en": "Unlocked all Human Bestiary entries.",
-            "key": "cpp.title.desc_47",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkie wpisy dotyczące ludzi Bestiary."
-          },
-          {
-            "en": "Unlocked 20 or more Mounts.",
-            "key": "cpp.title.desc_5",
-            "source": "google_translate",
-            "translated": "Odblokowano 20 lub więcej wierzchowców."
-          },
-          {
-            "en": "Unlocked all Nemesis bosses.",
-            "key": "cpp.title.desc_55",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkich bossów Nemezis."
-          },
-          {
-            "en": "Unlocked 10 or more Archfoe bosses.",
-            "key": "cpp.title.desc_56",
-            "source": "google_translate",
-            "translated": "Odblokowano 10 lub więcej bossów Archfoe."
-          },
-          {
-            "en": "Unlocked 10 or more Nemesis bosses.",
-            "key": "cpp.title.desc_57",
-            "source": "google_translate",
-            "translated": "Odblokowano 10 lub więcej bossów Nemezis."
-          },
-          {
-            "en": "Unlocked all Archfoe bosses.",
-            "key": "cpp.title.desc_58",
-            "source": "google_translate",
-            "translated": "Odblokowano wszystkich bossów Archfoe."
-          }
-        ],
-        "recent_translated": 41,
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
@@ -524,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-17T06:01:20.300210",
+      "last_update": "2026-02-17T06:02:10.044862",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -543,7 +422,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 260,
+      "total_cycles": 261,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -573,8 +452,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 260,
-    "heartbeat_at_utc": "2026-02-17T05:01:20Z",
+    "cycle": 261,
+    "heartbeat_at_utc": "2026-02-17T05:02:10Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

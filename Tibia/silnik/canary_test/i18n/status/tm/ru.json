@@ -31654,5 +31654,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:31:37.528309Z"
+  },
+  "monster.orc_shield.name": {
+    "src_hash": "06766326e4ab2e338aace496564c9444",
+    "text": "Орк-вождь",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.327103Z"
+  },
+  "monster.orc_shield.desc": {
+    "src_hash": "28c984985a1e478b4a3e924fef0bce83",
+    "text": "военачальник орков",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.327514Z"
+  },
+  "monster.orc_shield.voice_1": {
+    "src_hash": "5ac12467876e5ecc30203b32680d7f0c",
+    "text": "Ранат Ульдерек!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.327816Z"
+  },
+  "monster.orc_shield.voice_2": {
+    "src_hash": "d60f5b6efab22f75944530ff0925981c",
+    "text": "Орк бута бана!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.328195Z"
+  },
+  "monster.orc_shield.voice_3": {
+    "src_hash": "cc6e59d1667ebe33b1b819480c546b9b",
+    "text": "Икем Рэмбо Замбо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.328549Z"
+  },
+  "monster.orc_armor.name": {
+    "src_hash": "06766326e4ab2e338aace496564c9444",
+    "text": "Орк-вождь",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.331408Z"
+  },
+  "monster.orc_armor.desc": {
+    "src_hash": "28c984985a1e478b4a3e924fef0bce83",
+    "text": "военачальник орков",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.331733Z"
+  },
+  "monster.orc_armor.voice_1": {
+    "src_hash": "5ac12467876e5ecc30203b32680d7f0c",
+    "text": "Ранат Ульдерек!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.332047Z"
+  },
+  "monster.orc_armor.voice_2": {
+    "src_hash": "d60f5b6efab22f75944530ff0925981c",
+    "text": "Орк бута бана!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.332424Z"
+  },
+  "monster.orc_armor.voice_3": {
+    "src_hash": "cc6e59d1667ebe33b1b819480c546b9b",
+    "text": "Икем Рэмбо Замбо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.332752Z"
+  },
+  "monster.orc_helmet.name": {
+    "src_hash": "06766326e4ab2e338aace496564c9444",
+    "text": "Орк-вождь",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.339409Z"
+  },
+  "monster.orc_helmet.desc": {
+    "src_hash": "28c984985a1e478b4a3e924fef0bce83",
+    "text": "военачальник орков",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.339744Z"
+  },
+  "monster.orc_helmet.voice_1": {
+    "src_hash": "5ac12467876e5ecc30203b32680d7f0c",
+    "text": "Ранат Ульдерек!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.340101Z"
+  },
+  "monster.orc_helmet.voice_2": {
+    "src_hash": "d60f5b6efab22f75944530ff0925981c",
+    "text": "Орк бута бана!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.340482Z"
+  },
+  "monster.orc_helmet.voice_3": {
+    "src_hash": "cc6e59d1667ebe33b1b819480c546b9b",
+    "text": "Икем Рэмбо Замбо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.340880Z"
+  },
+  "monster.warlord_ruzad.voice_4": {
+    "src_hash": "cc6e59d1667ebe33b1b819480c546b9b",
+    "text": "Икем Рэмбо Замбо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:52.530664Z"
+  },
+  "monster.bulltaur_forgepriest.name": {
+    "src_hash": "6102b2d766ca77a1fcb455979beadcc0",
+    "text": "Буллтаур Кузнечник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:06.982224Z"
+  },
+  "monster.bulltaur_forgepriest.desc": {
+    "src_hash": "dfa32e19e58a07acf7d0736b968aae65",
+    "text": "Буллтаур-жрец кузни",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:06.982524Z"
   }
 }

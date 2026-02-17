@@ -45590,5 +45590,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:41:05.763241Z"
+  },
+  "monster.hide.name": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Ascunde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:10.983678Z"
+  },
+  "monster.hide.desc": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Ascunde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:10.983966Z"
   }
 }

@@ -36734,5 +36734,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:34:58.834304Z"
+  },
+  "scripts.dawnport_tiles.msg_10": {
+    "src_hash": "e3db747503aadf30c014d63efad6bc8b",
+    "text": "Вы вылечены.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.380217Z"
+  },
+  "scripts.dawnport_tiles.msg_2": {
+    "src_hash": "a52647c5d7e3e578a522fdeb09a09e1b",
+    "text": "Вам следует отправиться на материк прямо сейчас. Идите налево, чтобы добраться до корабля.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.380870Z"
+  },
+  "scripts.dawnport_tiles.msg_3": {
+    "src_hash": "26b2af747349f8d79f9fb0eea63d9466",
+    "text": "У вас нет права входить в эту комнату.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.381439Z"
+  },
+  "scripts.dawnport_tiles.msg_4": {
+    "src_hash": "3c4ead55dc3ddb0a3069ed6fe9cf85d8",
+    "text": "Вы выбрали свое призвание. Вы не можете вернуться назад.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.381937Z"
+  },
+  "scripts.dawnport_tiles.msg_5": {
+    "src_hash": "01affde03a4800f56af58c61b6eb8272",
+    "text": "Вы не можете подняться наверх. Вы выбрали призвание и теперь должны отправиться на Материк.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.382613Z"
+  },
+  "scripts.dawnport_tiles.msg_6": {
+    "src_hash": "ba34cb0ec36158a091e2096ece725810",
+    "text": "Используйте эту лестницу, чтобы войти в Заставу Искателей приключений на Dawnport.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.383315Z"
+  },
+  "scripts.dawnport_tiles.msg_7": {
+    "src_hash": "884a719512ac8282e5e9b37779149c5f",
+    "text": "Добро пожаловать в Dawnport! Прогуляйтесь и исследуйте местность самостоятельно или поговорите с Иниго, если вам нужны указания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.384147Z"
+  },
+  "scripts.dawnport_tiles.msg_8": {
+    "src_hash": "f8a71eb64084ebdf98c830a9f2bac5e5",
+    "text": "<кррк> <кррррк> Ты поспешно уходишь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.384681Z"
+  },
+  "scripts.dawnport_tiles.msg_9": {
+    "src_hash": "8f1787138c01a558bd25881f007eb336",
+    "text": "Чтобы идти по ЛЕСТНИЦЕ, используйте клавиши со стрелками на клавиатуре. Вы также можете использовать их для прогулок в целом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.385357Z"
+  },
+  "scripts.fishing.msg_2": {
+    "src_hash": "cb1efac7fe07a24a748f5db348c4315f",
+    "text": "С гигантским всплеском вы вытаскиваете из воды огромную рыбу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.405081Z"
+  },
+  "scripts.freequests.msg_1": {
+    "src_hash": "9d96dea7e5606180c5f3169aa5a4df1f",
+    "text": "Добавление бесплатных квестов завершено.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.409982Z"
+  },
+  "scripts.freequests.msg_2": {
+    "src_hash": "d185826332eb1de2dd13405d0df30ef3",
+    "text": "Добавление квестов бесплатного доступа вашему персонажу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.410495Z"
+  },
+  "scripts.furyosa_deathball.say_1": {
+    "src_hash": "f38030a6453c6462e147c7da5c9995d8",
+    "text": "Вернитесь в черное!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.410847Z"
+  },
+  "scripts.gnomprona.msg_1": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "У вас пока нет доступа к этому телепорту.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.417714Z"
+  },
+  "scripts.goblin_temple_quest.msg_1": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Вы нашли сумку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:53:04.418562Z"
   }
 }

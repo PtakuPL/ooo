@@ -9313,27 +9313,27 @@
   },
   "scripts.actions_reward.msg_4": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.885088Z"
+    "updated_at": "2026-02-17T09:52:45.683646Z"
   },
   "scripts.actions_reward.msg_6": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.886492Z"
+    "updated_at": "2026-02-17T09:52:45.684304Z"
   },
   "scripts.actions_rewards.msg_3": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.887221Z"
+    "updated_at": "2026-02-17T09:52:45.684559Z"
   },
   "scripts.actions_scarlett.msg_1": {
     "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
@@ -65166,5 +65166,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:43:44.191511Z"
+  },
+  "scripts.actions_pyramids1.msg_1": {
+    "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
+    "text": "<sizzle> <effervescenza>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:16.024399Z"
+  },
+  "scripts.moviments_elevator.msg_1": {
+    "src_hash": "952d68749fac40bd7c7a893a69b373be",
+    "text": "Non sai ancora come usarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:16.135869Z"
+  },
+  "scripts.actions_portal_brain_head.msg_4": {
+    "src_hash": "2af49d812dd3d72f7d6194b836191bae",
+    "text": "Devi aspettare {} per affrontare di nuovo {}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:24.236092Z"
+  },
+  "scripts.actions_portal_pale_worm.msg_1": {
+    "src_hash": "9217ef3a39cde40b3e823c4939b1ec4c",
+    "text": "Devi ancora sconfiggere:{}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:24.236494Z"
+  },
+  "scripts.actions_present.say_1": {
+    "src_hash": "c77dff2394ea6d558f56a3251d0a8350",
+    "text": "Apri il presente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:29.041814Z"
+  },
+  "scripts.actions_purified_soul.say_1": {
+    "src_hash": "31235854dc9201a26d747f52a22ec226",
+    "text": "Il Divoratore di peccati è stato scacciato!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:29.042231Z"
+  },
+  "scripts.actions_pyramids2.msg_1": {
+    "src_hash": "76052c7bfb195c26264ca6133a637a47",
+    "text": "<screeeech> <squeak> <squeaaaaal>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:29.042524Z"
+  },
+  "scripts.actions_pyramids2.msg_2": {
+    "src_hash": "e2542a1f02f6de505054977a75841add",
+    "text": "Missione già completata qui!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:29.042855Z"
+  },
+  "scripts.actions_questDoors.msg_2": {
+    "src_hash": "d4968acad5491a047d752050ab450ef9",
+    "text": "Quando l'Unguento di Medusa ha effetto, la porta non è pietrificata. Puoi usarlo adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:29.043301Z"
+  },
+  "scripts.actions_questDoors.msg_3": {
+    "src_hash": "7b63561c09cf1dac7914f0e9ecab30b9",
+    "text": "Manca la serratura di questa porta. Forse puoi trovare un lucchetto corrispondente da qualche parte?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:35.817713Z"
+  },
+  "scripts.actions_questfirst.msg_1": {
+    "src_hash": "9f9e02fa22f76e390f72963c1c599e10",
+    "text": "Hai trovato una ricompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:35.818307Z"
+  },
+  "scripts.actions_random_items.found_in_bag": {
+    "src_hash": "2eb671bead742f6498e457f29fb57359",
+    "text": "Hai trovato %s %s nella borsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:35.818876Z"
+  },
+  "scripts.actions_rascacoon_shortcut.msg_1": {
+    "src_hash": "ded2b9f120cca0d28d8c1118c78bbbcf",
+    "text": "Per entrare è necessario almeno il livello 200.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:35.819665Z"
+  },
+  "scripts.actions_resonance.say_1": {
+    "src_hash": "a4b8ab725cbd731b71d7da9a0e358a80",
+    "text": "Hai registrato la musica del ghiaccio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:35.820232Z"
+  },
+  "scripts.actions_resonance_chamber.say_2": {
+    "src_hash": "9a1b9b7732614e98f627750cd84f698d",
+    "text": "PRRRR...*crepitio*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:41.788612Z"
+  },
+  "scripts.actions_reward.msg_1": {
+    "src_hash": "903a55a0f21ba56d45fd211e296bedce",
+    "text": "Hai trovato {} che pesa {} once. Non hai capacità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:41.789036Z"
+  },
+  "scripts.actions_reward.msg_2": {
+    "src_hash": "af25ee5b09695cf2151c647c8f101d29",
+    "text": "Hai già ricevuto la tua ricompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:41.789347Z"
+  },
+  "scripts.actions_reward.msg_3": {
+    "src_hash": "9c14fa84bb1c37eee8acbefb8a8ed01b",
+    "text": "Hai trovato una maschera Yalahari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:41.789640Z"
+  },
+  "scripts.actions_reward.msg_5": {
+    "src_hash": "192cb6d64e0684a75306f923e5fa0600",
+    "text": "Hai trovato un pezzo di gamba Yalahari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:45.684035Z"
+  },
+  "scripts.actions_ring.say_1": {
+    "src_hash": "443959e233fe4d1ca521d908143e2f99",
+    "text": "Hai messo le prove false!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:45.684869Z"
+  },
+  "scripts.actions_rosebushUse.msg_1": {
+    "src_hash": "5a0430ef61db2d1898cff09183d2f681",
+    "text": "Pianti il ​​cespuglio di rose nel terreno fresco. Il portale verde brilla più luminoso. Forse potresti passarlo adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:51.090178Z"
+  },
+  "scripts.actions_ruins_instruments.msg_1": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Hai giocato male, ora devi ricominciare dal primo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:51.090559Z"
+  },
+  "scripts.actions_ruins_instruments.msg_2": {
+    "src_hash": "bfc5a2b8e73ee0b52d9a03d612b45930",
+    "text": "Li hai giocati nell'ordine corretto e hai ottenuto l'accesso attraverso la porta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:51.090972Z"
+  },
+  "scripts.actions_ruins_instruments.msg_3": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Hai giocato male, ora devi ricominciare dal primo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:51.091323Z"
+  },
+  "scripts.actions_rust_bugs.say_1": {
+    "src_hash": "acf89a3576edce872affe29754e6f481",
+    "text": "Gli insetti sono al lavoro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:51.091583Z"
+  },
+  "scripts.actions_sacrifice.msg_1": {
+    "src_hash": "7c5be31cfb38ccfc36fd11080734961b",
+    "text": "Metti il ​​{} nel pozzo asciutto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:59.628531Z"
+  },
+  "scripts.actions_sacrifice.msg_2": {
+    "src_hash": "8bf5443d627c50bb0f553b965975e833",
+    "text": "Trova il custode delle lacrime sanguigne e offri i suoi fluidi vitali al sanguigno padrone di questo regno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:59.629008Z"
+  },
+  "scripts.actions_sacrifice.msg_3": {
+    "src_hash": "99e8b14525a94f991e0fc49346b3efae",
+    "text": "Rafforza il tuo sacrificio in cambio di una lacrima di sangue al sanguigno padrone di questo regno per suggellare questo scambio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:59.629463Z"
+  },
+  "scripts.actions_sacrifice.msg_4": {
+    "src_hash": "1411681fb4a9149426cbda58a4895f5b",
+    "text": "Il tuo sacrificio è stato accettato dal sanguigno padrone di questo regno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:59.629915Z"
+  },
+  "scripts.actions_sacrifice.msg_5": {
+    "src_hash": "9437e8d85edc3490d14156aad4fc9cfe",
+    "text": "I tuoi sacrifici sono stati accettati dal sanguigno padrone di questo regno. Vai avanti e irrora la tua radice con le acque della vita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:52:59.630471Z"
   }
 }

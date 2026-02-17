@@ -107390,5 +107390,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:25:28.411559Z"
+  },
+  "cpp.protocol.enter_username": {
+    "src_hash": "0f717a14bd5e8363222d7d62777d101f",
+    "text": "Musisz podać swoją nazwę użytkownika.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:28.060092Z"
+  },
+  "cpp.protocol.game_going_down": {
+    "src_hash": "ecb808f0c921e7edae64c994e73fff28",
+    "text": "Gra po prostu spada.\nSpróbuj ponownie później.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:35.594352Z"
+  },
+  "cpp.protocol.gameworld_maintenance": {
+    "src_hash": "1a9fd9e35bd952f6709e3e0c4b5f94b6",
+    "text": "Świat gry jest w trakcie prac konserwacyjnych. Proszę połączyć się ponownie za jakiś czas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:35.594851Z"
+  },
+  "cpp.protocol.gameworld_starting": {
+    "src_hash": "04d8c8ada4ba9400e6c469b732bc25b5",
+    "text": "Świat gry się uruchamia. Proszę czekać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:35.595198Z"
+  },
+  "cpp.protocol.ip_banned_until": {
+    "src_hash": "98cfd90e59bf9891ac20e2330d6c70a1",
+    "text": "Twoje IP zostało zablokowane do {0} przez {1}.\n\nPowód określony:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:35.595628Z"
+  },
+  "cpp.protocol.max_chars_online": {
+    "src_hash": "8c72b40b88913bc4ce5c9e0d3cfa2017",
+    "text": "Możesz zalogować się wyłącznie za pomocą znaków {0}\njednocześnie z Twojego konta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:35.596081Z"
+  },
+  "cpp.protocol.max_chars_outside_pz": {
+    "src_hash": "c17b15e63bd374988c6a1bd29fa4afd0",
+    "text": "Możesz mieć tylko {0} znaków ze swojego konta poza strefą ochronną.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:42.738155Z"
+  },
+  "cpp.protocol.only_clients": {
+    "src_hash": "3339dcbaabcaa8fd96a09bc6b43059ea",
+    "text": "Dozwoleni są tylko klienci z protokołem {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:42.738610Z"
+  },
+  "cpp.protocol.only_clients_or_old": {
+    "src_hash": "8e8842d7a1b207078b807ecebc479d79",
+    "text": "Dozwoleni są tylko klienci z protokołem {0} lub 11.00!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:42.738999Z"
+  },
+  "cpp.protocol.premium_expired": {
+    "src_hash": "1268cee2a00d8a6c82c2c2526c3d2b30",
+    "text": "Twój czas premium dla tego konta dobiegł końca.\n\nAby zagrać należy wykupić dodatkowy czas premium na naszej stronie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:42.739534Z"
+  },
+  "cpp.protocol.prey_bonus_improved_damage": {
+    "src_hash": "99129da58e9e25108670093a261e8611",
+    "text": "Ulepszone obrażenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:42.739770Z"
+  },
+  "cpp.protocol.prey_bonus_improved_experience": {
+    "src_hash": "b8c7677ea9475abf4c42c9d720ebca13",
+    "text": "Lepsze wrażenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:50.927937Z"
+  },
+  "cpp.protocol.prey_bonus_improved_loot": {
+    "src_hash": "519909d173e6998ea82d9f67382fc8e7",
+    "text": "Ulepszone łupy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:50.928168Z"
+  },
+  "cpp.protocol.resting_hp_regen_double": {
+    "src_hash": "4a7e354670e24c02df35e9936e500c67",
+    "text": "Podwójna regeneracja punktów wytrzymałości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:50.928490Z"
+  },
+  "cpp.protocol.resting_mana_regen_double": {
+    "src_hash": "f4e23225a1be33a6438c511b4e2872ce",
+    "text": "Podwójna regeneracja punktów many",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:50.928795Z"
+  },
+  "cpp.protocol.resting_stamina_regen": {
+    "src_hash": "16698fbf38ddda80e963ad266f089378",
+    "text": "Regeneracja punktów wytrzymałości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:50.929081Z"
+  },
+  "cpp.protocol.server_closed": {
+    "src_hash": "8a740b89ac7c768e69b4ef52e36bea28",
+    "text": "Serwer jest obecnie zamknięty.\nSpróbuj ponownie później.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:57.896804Z"
+  },
+  "cpp.protocol.support_outfit_community_manager": {
+    "src_hash": "34903a37debb5bba48d5769720230949",
+    "text": "Menedżer społeczności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:57.897072Z"
+  },
+  "cpp.protocol.support_outfit_customer_support": {
+    "src_hash": "45db51f999b9e9fc7263a7e0ebc2d7f0",
+    "text": "Obsługa klienta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:57.897308Z"
+  },
+  "cpp.protocol.temple_position_wrong": {
+    "src_hash": "737f34e09dd097314633dbd006385552",
+    "text": "Pozycja świątyni jest niewłaściwa. Proszę o kontakt z administratorem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:57.897712Z"
+  },
+  "cpp.protocol.waiting_list": {
+    "src_hash": "561d3d4a258f3c5faa85d1a11b8cb556",
+    "text": "Za dużo graczy online.\nJesteś na miejscu {0} na liście oczekujących.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:29:57.898207Z"
+  },
+  "cpp.protocol.wrong_email_password": {
+    "src_hash": "32db5614cff075a776beb950f696d97f",
+    "text": "Twój adres e-mail lub hasło jest nieprawidłowe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:04.946438Z"
+  },
+  "cpp.protocol.wrong_username_password": {
+    "src_hash": "397e8e13f17fa4fac7a20acfe3b595a6",
+    "text": "Twoja nazwa użytkownika lub hasło jest nieprawidłowe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:04.946816Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_a_no_pvp_zone": {
+    "src_hash": "5a71883100183c6d485d26beb222ecba",
+    "text": "Ta akcja nie jest dozwolona w strefie innej niż PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:04.947225Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_protection_zone": {
+    "src_hash": "aa06e3388d8cbfb7218c0a56dfc38b3d",
+    "text": "Czynność ta nie jest dozwolona w strefie ochronnej.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:04.947600Z"
+  },
+  "cpp.returnvalue.another_raid_is_already_executing": {
+    "src_hash": "439069b07c778746dcf76c7e070ee7ee",
+    "text": "Trwa już kolejny nalot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:04.947937Z"
+  },
+  "cpp.returnvalue.both_hands_need_to_be_free": {
+    "src_hash": "bdb2e2734554fdd85370982c0794e423",
+    "text": "Obie ręce muszą być wolne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:12.503880Z"
+  },
+  "cpp.returnvalue.can_only_use_one_shield": {
+    "src_hash": "87c98f3462012a20dab4519dd8854dae",
+    "text": "Możesz użyć tylko jednej tarczy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:12.504203Z"
+  },
+  "cpp.returnvalue.can_only_use_one_weapon": {
+    "src_hash": "40e0f34e4e1336a83ecc24542278894a",
+    "text": "Możesz używać tylko jednej broni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:12.504508Z"
+  },
+  "cpp.returnvalue.can_only_use_this_rune_on_creatures": {
+    "src_hash": "8d50aac7531c4cb3295533915ad012d8",
+    "text": "Możesz używać tej runy tylko na stworzeniach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:12.504854Z"
+  },
+  "cpp.returnvalue.cannot_be_dressed": {
+    "src_hash": "6d3eb61e6970d726fc121e18d5eec0e8",
+    "text": "Nie możesz tam ubrać tego obiektu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:12.505177Z"
+  },
+  "cpp.returnvalue.cannot_conjure_item_here": {
+    "src_hash": "93a66f9ae4b32e5a670df705d12e0096",
+    "text": "Nie możesz tutaj wyczarowywać przedmiotów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:19.725599Z"
+  },
+  "cpp.returnvalue.cannot_pickup": {
+    "src_hash": "a71a3a9366ef0ff0a220265670dc7c98",
+    "text": "Nie możesz zabrać tego przedmiotu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:19.725944Z"
+  },
+  "cpp.returnvalue.cannot_throw": {
+    "src_hash": "5acb3fd705c4091c865feab024b26e7e",
+    "text": "Nie możesz tam rzucać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:19.726310Z"
+  },
+  "cpp.returnvalue.cannot_use_this_object": {
+    "src_hash": "2e8f7dd61de19d4af6d516ccbd7bda39",
+    "text": "Nie możesz używać tego obiektu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:19.726623Z"
+  },
+  "cpp.returnvalue.contact_administrator": {
+    "src_hash": "11c5b6a2dc274ae6748fe45cd1ff85bf",
+    "text": "Wystąpił błąd. Skontaktuj się z administratorem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:19.726995Z"
+  },
+  "cpp.returnvalue.container_is_full": {
+    "src_hash": "2f1de3e5c21535a6de9ac2243b1813ed",
+    "text": "Nie możesz umieścić więcej przedmiotów w tym pojemniku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:26.038441Z"
+  },
+  "cpp.returnvalue.container_not_enough_room": {
+    "src_hash": "73085eb1f727b6fd9a164b9789308fd5",
+    "text": "Nie możesz umieścić więcej obiektów w tym pojemniku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:26.039099Z"
+  },
+  "cpp.returnvalue.depot_is_full": {
+    "src_hash": "347c9055a2cfcf399563a25843fefc2c",
+    "text": "Nie możesz umieścić więcej przedmiotów w tym magazynie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:26.039480Z"
+  },
+  "cpp.returnvalue.direct_player_shoot": {
+    "src_hash": "f759286d5c701ed1172aa91292e7ca4a",
+    "text": "Nie wolno strzelać bezpośrednio do graczy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:30:26.039840Z"
   }
 }

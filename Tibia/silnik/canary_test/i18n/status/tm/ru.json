@@ -37094,5 +37094,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:24:40.995235Z"
+  },
+  "scripts.goblin_temple_quest.msg_2": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Вы нашли сумку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.690221Z"
+  },
+  "scripts.golden_outfit_display.msg_1": {
+    "src_hash": "9eee8841b49002f43c9274d20d8c97da",
+    "text": "Чтобы использовать его, вам понадобится полный золотой наряд.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.691811Z"
+  },
+  "scripts.gray_beach_vortex.msg_1": {
+    "src_hash": "e1b6f8a90a19a3de9e34de2a28201c76",
+    "text": "Вы ныряете в водоворот, чтобы переплыть под камнями на другую сторону пещеры.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.692584Z"
+  },
+  "scripts.hammer.msg_1": {
+    "src_hash": "6095b6bc022c4b909407d4aa1b2cb565",
+    "text": "Вы починили эту сломанную стену.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.693314Z"
+  },
+  "scripts.hammer.msg_2": {
+    "src_hash": "2de12b58290eb4870c5a92c462888749",
+    "text": "Сегодня вы уже починили много сломанных стен.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.693762Z"
+  },
+  "scripts.key_door.msg_1": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Он заблокирован.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.701959Z"
+  },
+  "scripts.level_bridge.msg_1": {
+    "src_hash": "39c490578b1837d3a7fe25a6160818c0",
+    "text": "Чтобы пройти, вам необходимо иметь как минимум 2-й уровень.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.706607Z"
+  },
+  "scripts.lock_pick.msg_1": {
+    "src_hash": "ff211fe70e3caeb6b04cdf6fc4a2c870",
+    "text": "Ваша отмычка откроет этот сундук!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.708102Z"
+  },
+  "scripts.lock_pick.msg_2": {
+    "src_hash": "c56944cf2486fe50ba39a2d5610a5c3d",
+    "text": "У тебя отмычка сломалась.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.708501Z"
+  },
+  "scripts.mawhawk_summon.say_1": {
+    "src_hash": "01c1dce1ac2a8ef267b612b2442c3c77",
+    "text": "Следи за моими утробами!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.711750Z"
+  },
+  "scripts.movements_begin_task.msg_1": {
+    "src_hash": "b2f0041b0c2b5d70023ba73adf2416d5",
+    "text": "Амулет обжигает кожу. Сейчас он жаждет энергии, соберите как можно быстрее большое количество энергии, чтобы зарядить его.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.723703Z"
+  },
+  "scripts.movements_blood_entrance.msg_1": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Для входа вам нужен минимум 250 уровень.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.724267Z"
+  },
+  "scripts.movements_calassa.msg_2": {
+    "src_hash": "92f79f3b5a073c61aa47a25cf2b49246",
+    "text": "Чтобы нырять, вам необходимо надеть шлем для подводных исследований.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:38.728709Z"
   }
 }

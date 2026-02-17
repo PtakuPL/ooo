@@ -68022,5 +68022,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:33:30.789466Z"
+  },
+  "scripts.movements_boss_entrance.msg_1": {
+    "src_hash": "2af49d812dd3d72f7d6194b836191bae",
+    "text": "Devi aspettare {} per affrontare di nuovo {}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:39:49.595510Z"
+  },
+  "scripts.reload.msg_2": {
+    "src_hash": "c271d2fad3f3e6b7c52384ead3321add",
+    "text": "Parametro di comando obbligatorio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:39:49.633035Z"
+  },
+  "scripts.actions_sacrifice.say_1": {
+    "src_hash": "d735f93633f1764487543baf75e40c90",
+    "text": "Hai già messo il fiore funebre sul pozzo del sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:39:57.386263Z"
+  },
+  "scripts.actions_sacrifice.say_2": {
+    "src_hash": "8a0565c7ad2915dd18848dda83907f8e",
+    "text": "Hai già messo i denti da vampiro sul pozzo del sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:03.133958Z"
+  },
+  "scripts.actions_sacrifice.say_3": {
+    "src_hash": "e6ea115550a4ccd4c29a81b24e7e626b",
+    "text": "Hai già messo l'anello con sigillo sul pozzo del sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:03.134458Z"
+  },
+  "scripts.actions_sacrifice.say_4": {
+    "src_hash": "5244624d1074e26e9b189e94354c732e",
+    "text": "Hai già messo bene le ossa sul sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:03.134814Z"
+  },
+  "scripts.actions_sacrifice_items.msg_1": {
+    "src_hash": "05d84d3f850e31ca6cbaf40fa904cfd2",
+    "text": "Hai già sacrificato questo oggetto per passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:03.135173Z"
+  },
+  "scripts.actions_sacrifice_items.msg_2": {
+    "src_hash": "08e0d278c9842eb17b1f2654c3340d98",
+    "text": "Stai precipitando {} nella lava. Ora sei degno di entrare nella tana di The First Dragon. Tocca di nuovo la pozza di lava.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:03.135904Z"
+  },
+  "scripts.actions_sacrifice_items.msg_3": {
+    "src_hash": "2ac19e9e4e332f39b20c61b4fe75274f",
+    "text": "Stai precipitando {} nella lava.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:10.150970Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_1": {
+    "src_hash": "03817ddcb904e57b7866a9caae3b7c76",
+    "text": "La maledizione di disturbare questa fragile e antica pace è il prezzo da pagare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:10.151459Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_2": {
+    "src_hash": "bd664ffc6b07649d20c47551253bd5dd",
+    "text": "L'apertura dell'ultimo sarcofago ti perseguita ancora. Aspetta un po' che il tuo spirito ritorni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:10.151891Z"
+  },
+  "scripts.actions_sangra.msg_1": {
+    "src_hash": "3a1f900dc11ca38ff346592c0b186298",
+    "text": "La freccia è ancora conficcata nell'albero. Sangue fresco continua a colare dal punto in cui la freccia ha colpito il tronco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:10.152457Z"
+  },
+  "scripts.actions_scissors.msg_1": {
+    "src_hash": "9133be335f8fc7ca66d3654e78d8c9ec",
+    "text": "Hai trovato una forbice rituale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:10.152763Z"
+  },
+  "scripts.actions_scroll.msg_1": {
+    "src_hash": "19911c332c7c434ad9d77712c72d551f",
+    "text": "Qualcuno ha lasciato un biglietto. Dice: Cerchi la pergamena? Vieni a trovarmi. Prendi le scale accanto agli studenti. Dormitorio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:15.435094Z"
+  },
+  "scripts.actions_sea_of_light.say_1": {
+    "src_hash": "23ef89a12a5c41c62a2a89acc2fbfbdb",
+    "text": "Metti con cura il cristallo dello specchio nel dispositivo degli astronomi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:15.435509Z"
+  },
+  "scripts.actions_seashell_key.msg_1": {
+    "src_hash": "7bee11f34f02fa2103f0a2f1a81ea785",
+    "text": "Giri la chiave nella piccola serratura a lato dello scaffale e... la chiave si rompe. A parte questo non succede assolutamente nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:15.436039Z"
+  },
+  "scripts.actions_seashell_key.msg_2": {
+    "src_hash": "d9bffb35571ed8e7f052998fd9ae03c6",
+    "text": "Una scorta nascosta appare nel momento stesso in cui giri la chiave. Sfortunatamente la chiave si rompe mentre tenti di rimuoverla dalla serratura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:15.436545Z"
+  },
+  "scripts.actions_secret_wall.msg_1": {
+    "src_hash": "5a163e4c2b3e29c5e8647b87deb04ea0",
+    "text": "Non hai la chiave adatta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:15.436832Z"
+  },
+  "scripts.actions_soils2.say_1": {
+    "src_hash": "f6786da93512a5110e0c75948aaf4855",
+    "text": "Spegnere prima la macchina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:21.322821Z"
+  },
+  "scripts.actions_sparks_lever.say_1": {
+    "src_hash": "663060957e264993308f4e11f22923a8",
+    "text": "La stanza comincia lentamente a crepitare. Sembra imminente un'eruzione!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:21.323239Z"
+  },
+  "scripts.actions_spirit_shovel.msg_1": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Segnala l'incarico a Gnomilly.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:21.323535Z"
+  },
+  "scripts.actions_star_herb.msg_1": {
+    "src_hash": "4765b47adb008a9887f10901bc3cb19a",
+    "text": "Intrecci il corno con erba stellata fresca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:21.323859Z"
+  },
+  "scripts.actions_statue.msg_1": {
+    "src_hash": "8010a8ce9522f7e248eca68600a4270a",
+    "text": "<BOOOOOOOONGGGGGG> Un lento battito, come se il sangue pulsasse, percorre il pavimento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:21.324249Z"
+  },
+  "scripts.actions_strangeBucket.msg_1": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Non è rimasto abbastanza ectoplasma per riempirlo nel secchio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:26.773779Z"
+  },
+  "scripts.actions_strangeBucket.msg_2": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Non è rimasto abbastanza ectoplasma per riempirlo nel secchio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:26.774359Z"
+  },
+  "scripts.actions_strangeBucket.msg_3": {
+    "src_hash": "e7e7af2574d6040a7bf0983cec0655cf",
+    "text": "L'ectoplasma su tutto l'uovo stava già filtrando all'interno del bozzolo stesso. Riesci a riempirne qualcuno nel secchio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:26.774942Z"
+  },
+  "scripts.actions_strangeBucket.msg_4": {
+    "src_hash": "10487b458e46ae82d8aa56f296fb4712",
+    "text": "Versi tutto l'ectoplasma su te stesso. Senza il secchio non puoi stabilizzarlo, devi sbrigarti finché non si dissolve!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:26.775499Z"
+  },
+  "scripts.actions_sunFruit.msg_1": {
+    "src_hash": "4cde13d19faa89c8303672688ab896d3",
+    "text": "Hai trovato alcuni {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:26.775802Z"
+  },
+  "scripts.actions_tarbaz_notes.msg_1": {
+    "src_hash": "40379152511299b8861f33068f43b5c3",
+    "text": "All'improvviso vedi il quadro generale. Tutto ha senso adesso. E poi ti disperi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:33.150732Z"
+  },
+  "scripts.actions_tarbaz_notes.msg_2": {
+    "src_hash": "505f3aa556efbce55378be5a627927b5",
+    "text": "All'improvviso vedi quest'ultima A. Ora tutto ha senso. E poi ora conosci il segreto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:33.151192Z"
+  },
+  "scripts.actions_tears.msg_1": {
+    "src_hash": "21689dccde68112fb18462636aed408a",
+    "text": "Le lacrime del drago si illuminano e scompaiono. I vecchi poteri sono placati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:33.151570Z"
+  },
+  "scripts.actions_the_outlaw_camp_quest.msg_1": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Hai trovato una borsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:40:33.151979Z"
   }
 }

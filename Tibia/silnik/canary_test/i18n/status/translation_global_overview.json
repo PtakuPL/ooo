@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T10:39:04.174740Z",
+  "timestamp": "2026-02-17T10:43:38.280900Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 382293,
-    "english_copy_keys": 162507,
+    "translated_keys": 382387,
+    "english_copy_keys": 162449,
     "missing_keys": 2155,
     "missing_files": 0,
     "completion_pct": 13.72
@@ -49,10 +49,10 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 3515,
-    "guard_reports_blocked": 3440,
+    "guard_reports_total": 3518,
+    "guard_reports_blocked": 3443,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3440
+    "cannot_translate_reports_visible": 3443
   },
   "cache": {
     "lang_stats_hits": 50,
@@ -65,40 +65,40 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T10:38:57.083514Z",
-    "cycle": 450,
+    "timestamp": "2026-02-17T10:43:31.915055Z",
+    "cycle": 451,
     "mode": "AUTO_TRANSLATE",
-    "category": "pl",
+    "category": "es",
     "events": {
-      "dispatch": 1853,
-      "mode_run": 18925
+      "dispatch": 621,
+      "mode_run": 251963
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T09:39:02.153843Z",
-    "window_end_utc": "2026-02-17T10:39:02.153843Z",
+    "window_start_utc": "2026-02-17T09:43:36.054543Z",
+    "window_end_utc": "2026-02-17T10:43:36.054543Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 146,
+    "total_cycles": 137,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 146
+      "AUTO_TRANSLATE": 137
     },
-    "auto_translate_cycles": 146,
+    "auto_translate_cycles": 137,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 2763,
-    "guard_fail": 2800,
-    "guard_fail_rate_pct": 50.3,
+    "translated": 2618,
+    "guard_fail": 2674,
+    "guard_fail_rate_pct": 50.5,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 1548.1,
-    "suspicious_total": 9849,
+    "throughput_keys_per_h": 1496.5,
+    "suspicious_total": 9679,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -110,12 +110,6 @@
         "target": "pl/npc.json",
         "translated": 50,
         "guard_fail": 646,
-        "guard_command": 0
-      },
-      {
-        "target": "es/scripts.json",
-        "translated": 34,
-        "guard_fail": 123,
         "guard_command": 0
       },
       {
@@ -131,12 +125,6 @@
         "guard_command": 0
       },
       {
-        "target": "es/spells.json",
-        "translated": 22,
-        "guard_fail": 78,
-        "guard_command": 0
-      },
-      {
         "target": "es/questlog.json",
         "translated": 82,
         "guard_fail": 78,
@@ -147,276 +135,56 @@
         "translated": 24,
         "guard_fail": 76,
         "guard_command": 0
+      },
+      {
+        "target": "es/server.json",
+        "translated": 2,
+        "guard_fail": 62,
+        "guard_command": 0
+      },
+      {
+        "target": "es/otclient_modules.json",
+        "translated": 22,
+        "guard_fail": 58,
+        "guard_command": 0
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T10:38:57.929998Z",
+      "timestamp": "2026-02-17T10:41:16.517264Z",
       "checked_entries": 100,
-      "issues_found": 52,
+      "issues_found": 19,
       "issues_by_type": {
-        "identical_to_en_exempt": 38,
-        "artifact_token": 32,
-        "identical_to_en": 20,
-        "suspicious_log_low": 10,
-        "suspicious_log_critical": 54,
-        "suspicious_log_high": 136,
+        "identical_to_en_exempt": 26,
+        "identical_to_en": 3,
+        "artifact_token": 16,
+        "suspicious_log_high": 174,
+        "suspicious_log_critical": 26,
         "suspicious_rejected_critical": 186,
         "suspicious_rejected_high": 14
       },
       "issues": [
         {
-          "key": "npc.captain_haba_open_sea.larboard_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.say_3",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-          "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.starboard_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.straight_3",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-          "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.straight_5",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-        },
-        {
-          "key": "npc.lardoc_bashsmite.multi_3",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-        },
-        {
-          "key": "npc.lardoc_bashsmite.multi_9",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-        },
-        {
-          "key": "npc.mother_of_jack.voice_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-          "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
-        },
-        {
-          "key": "npc.navigator.multi_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-          "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
-        },
-        {
-          "key": "npc.navigator.multi_2",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-          "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
-        },
-        {
-          "key": "npc.omrabas.multi_35",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-          "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
-        },
-        {
-          "key": "npc.omrabas.multi_82",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-          "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
-        },
-        {
-          "key": "npc.omrabas.voice_2",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "He will PAY for this... They will ALL pay!",
-          "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-        },
-        {
-          "key": "npc.pythius_the_rotten.stdmod_12",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-          "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-        },
-        {
-          "key": "npc.raymond_striker.multi_21",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-          "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-        },
-        {
-          "key": "npc.sane_mage.multi_5",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-          "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-        },
-        {
-          "key": "questlog.quest_11.mission_42.name",
+          "key": "otclient_modules.character_otui.tr_27",
           "lang": "es",
           "type": "identical_to_en",
-          "en": "Paw and Fur: Sea Serpents",
-          "translated": "Paw and Fur: Sea Serpents"
+          "en": "Depot",
+          "translated": "Depot"
         },
         {
-          "key": "questlog.quest_11.mission_43.name",
+          "key": "otclient_modules.game_cyclopedia.tr_6",
           "lang": "es",
           "type": "identical_to_en",
-          "en": "Paw and Fur: Hellhounds",
-          "translated": "Paw and Fur: Hellhounds"
+          "en": "Cyclopedia",
+          "translated": "Cyclopedia"
         },
         {
-          "key": "questlog.quest_11.mission_45.name",
+          "key": "otclient_modules.game_cyclopedia_otui.tr_8",
           "lang": "es",
           "type": "identical_to_en",
-          "en": "Paw and Fur: Drakens",
-          "translated": "Paw and Fur: Drakens"
-        },
-        {
-          "key": "questlog.quest_11.mission_46.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Destroyers",
-          "translated": "Paw and Fur: Destroyers"
-        },
-        {
-          "key": "questlog.quest_11.mission_48.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Demons",
-          "translated": "Paw and Fur: Demons"
-        },
-        {
-          "key": "questlog.quest_11.mission_50.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Hide",
-          "translated": "Paw and Fur: Hide"
-        },
-        {
-          "key": "questlog.quest_11.mission_51.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Deathbine",
-          "translated": "Paw and Fur: Deathbine"
-        },
-        {
-          "key": "questlog.quest_11.mission_52.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: The Bloodtusk",
-          "translated": "Paw and Fur: The Bloodtusk"
-        },
-        {
-          "key": "questlog.quest_11.mission_53.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Shardhead",
-          "translated": "Paw and Fur: Shardhead"
-        },
-        {
-          "key": "questlog.quest_11.mission_54.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Esmerelda",
-          "translated": "Paw and Fur: Esmerelda"
-        },
-        {
-          "key": "questlog.quest_11.mission_55.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Fleshcrawler",
-          "translated": "Paw and Fur: Fleshcrawler"
-        },
-        {
-          "key": "questlog.quest_11.mission_56.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Ribstride",
-          "translated": "Paw and Fur: Ribstride"
-        },
-        {
-          "key": "questlog.quest_11.mission_57.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Bloodweb",
-          "translated": "Paw and Fur: Bloodweb"
-        },
-        {
-          "key": "questlog.quest_11.mission_58.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Thul",
-          "translated": "Paw and Fur: Thul"
-        },
-        {
-          "key": "questlog.quest_11.mission_59.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: The Old Widow",
-          "translated": "Paw and Fur: The Old Widow"
-        },
-        {
-          "key": "questlog.quest_11.mission_60.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Hemming",
-          "translated": "Paw and Fur: Hemming"
-        },
-        {
-          "key": "questlog.quest_11.mission_61.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Tormentor",
-          "translated": "Paw and Fur: Tormentor"
-        },
-        {
-          "key": "questlog.quest_11.mission_62.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Flameborn",
-          "translated": "Paw and Fur: Flameborn"
-        },
-        {
-          "key": "questlog.quest_11.mission_63.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Fazzrah",
-          "translated": "Paw and Fur: Fazzrah"
-        },
-        {
-          "key": "questlog.quest_11.mission_64.name",
-          "lang": "es",
-          "type": "identical_to_en",
-          "en": "Paw and Fur: Tromphonyte",
-          "translated": "Paw and Fur: Tromphonyte"
+          "en": "Cyclopedia",
+          "translated": "Cyclopedia"
         },
         {
           "key": "npc.captain_haba_open_sea.larboard_1",
@@ -554,8 +322,8 @@
         "total_gt_guard_fail": 3841,
         "cycles": 980,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T10:38:57.929998Z",
-        "issues_count": 138370
+        "last_audit": "2026-02-17T10:41:16.517264Z",
+        "issues_count": 138391
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -569,15 +337,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T10:38:49.653912Z",
-        "last_translated": 50,
-        "total_suspicious": 39086,
-        "total_rejected": 1347,
-        "total_gt_guard_fail": 15129,
-        "cycles": 1325,
+        "last_cycle": "2026-02-17T10:41:14.876921Z",
+        "last_translated": 25,
+        "total_suspicious": 39195,
+        "total_rejected": 1370,
+        "total_gt_guard_fail": 15184,
+        "cycles": 1327,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T10:38:57.929998Z",
-        "issues_count": 241549
+        "last_audit": "2026-02-17T10:41:16.517264Z",
+        "issues_count": 241760
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -602,26 +370,26 @@
         "issues_count": 2470
       },
       "it": {
-        "last_cycle": "2026-02-17T10:35:38.500182Z",
-        "last_translated": 2,
-        "total_suspicious": 4450,
-        "total_rejected": 467,
-        "total_gt_guard_fail": 1544,
-        "cycles": 282,
-        "quality_score": 60.3,
-        "last_audit": "2026-02-17T10:38:57.929998Z",
-        "issues_count": 20282
+        "last_cycle": "2026-02-17T10:40:33.267882Z",
+        "last_translated": 35,
+        "total_suspicious": 4464,
+        "total_rejected": 471,
+        "total_gt_guard_fail": 1559,
+        "cycles": 283,
+        "quality_score": 60.2,
+        "last_audit": "2026-02-17T10:41:16.517264Z",
+        "issues_count": 20321
       },
       "ru": {
-        "last_cycle": "2026-02-17T10:35:43.317292Z",
-        "last_translated": 3,
-        "total_suspicious": 30368,
+        "last_cycle": "2026-02-17T10:40:39.046786Z",
+        "last_translated": 50,
+        "total_suspicious": 30406,
         "total_rejected": 739,
         "total_gt_guard_fail": 1918,
-        "cycles": 276,
-        "quality_score": 70.4,
-        "last_audit": "2026-02-17T10:38:57.929998Z",
-        "issues_count": 47358
+        "cycles": 277,
+        "quality_score": 66.3,
+        "last_audit": "2026-02-17T10:41:16.517264Z",
+        "issues_count": 47446
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -1093,8 +861,8 @@
         "total_gt_guard_fail": 3240,
         "cycles": 264,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T10:38:57.929998Z",
-        "issues_count": 59419
+        "last_audit": "2026-02-17T10:41:16.517264Z",
+        "issues_count": 59479
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1108,7 +876,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 52 issue(s) / 100 entries | 2026-02-17T10:38:57.929998Z"
+    "summary": "SLOW_MODE | 19 issue(s) / 100 entries | 2026-02-17T10:41:16.517264Z"
   },
   "languages": [
     {
@@ -1150,14 +918,14 @@
       "language_name": "Rosyjski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 26871,
+      "translated_keys": 26884,
       "english_copy_keys": 1460,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 50.15,
+      "completion_pct": 50.17,
       "server_keys": 49731,
-      "server_translated": 24075,
-      "server_pct": 48.41,
+      "server_translated": 24088,
+      "server_pct": 48.44,
       "client_keys": 3855,
       "client_translated": 2796,
       "client_pct": 72.53
@@ -1167,14 +935,14 @@
       "language_name": "Włoski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 26538,
+      "translated_keys": 26570,
       "english_copy_keys": 2133,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 49.52,
+      "completion_pct": 49.58,
       "server_keys": 49731,
-      "server_translated": 25366,
-      "server_pct": 51.01,
+      "server_translated": 25398,
+      "server_pct": 51.07,
       "client_keys": 3855,
       "client_translated": 1172,
       "client_pct": 30.4
@@ -1184,14 +952,14 @@
       "language_name": "SR",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 24109,
-      "english_copy_keys": 1283,
+      "translated_keys": 24158,
+      "english_copy_keys": 1229,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 44.99,
+      "completion_pct": 45.08,
       "server_keys": 49731,
-      "server_translated": 24008,
-      "server_pct": 48.28,
+      "server_translated": 24057,
+      "server_pct": 48.37,
       "client_keys": 3855,
       "client_translated": 101,
       "client_pct": 2.62
@@ -1202,7 +970,7 @@
       "scope": "global",
       "total_reference_keys": 53586,
       "translated_keys": 21826,
-      "english_copy_keys": 2308,
+      "english_copy_keys": 2304,
       "missing_keys": 0,
       "missing_files": 0,
       "completion_pct": 40.73,

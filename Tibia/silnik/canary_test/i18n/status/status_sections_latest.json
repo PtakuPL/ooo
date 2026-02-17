@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-17T10:39:04.254629Z",
+  "generated_at_utc": "2026-02-17T10:43:38.360871Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,7 +9,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-17 10:39:01"
+      "last_update": "2026-02-17 10:43:35"
     },
     "LIVE": {
       "state": "active",
@@ -17,31 +17,31 @@
       "reason": "",
       "freshness": "6s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-17T10:38:58Z"
+      "last_update": "2026-02-17T10:43:32Z"
     },
     "MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "23s temu",
+      "freshness": "49s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-17 10:39:01"
+      "last_update": "2026-02-17 10:43:35"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "13s temu",
+      "freshness": "2min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-17T10:38:50.297113Z"
+      "last_update": "2026-02-17T10:40:39.924549Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "6s temu",
+      "freshness": "2min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-02-17T10:38:57.929998Z"
+      "last_update": "2026-02-17T10:41:16.517264Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-17 10:39:01"
+      "last_update": "2026-02-17 10:43:35"
     }
   }
 }

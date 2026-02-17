@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-17T09:39:02.153843Z",
-  "window_end_utc": "2026-02-17T10:39:02.153843Z",
+  "window_start_utc": "2026-02-17T09:43:36.054543Z",
+  "window_end_utc": "2026-02-17T10:43:36.054543Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 146,
+  "total_cycles": 137,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 146
+    "AUTO_TRANSLATE": 137
   },
-  "auto_translate_cycles": 146,
+  "auto_translate_cycles": 137,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2763,
-  "guard_fail": 2800,
-  "guard_fail_rate_pct": 50.3,
+  "translated": 2618,
+  "guard_fail": 2674,
+  "guard_fail_rate_pct": 50.5,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 1548.1,
-  "suspicious_total": 9849,
+  "throughput_keys_per_h": 1496.5,
+  "suspicious_total": 9679,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -34,12 +34,6 @@
       "target": "pl/npc.json",
       "translated": 50,
       "guard_fail": 646,
-      "guard_command": 0
-    },
-    {
-      "target": "es/scripts.json",
-      "translated": 34,
-      "guard_fail": 123,
       "guard_command": 0
     },
     {
@@ -55,12 +49,6 @@
       "guard_command": 0
     },
     {
-      "target": "es/spells.json",
-      "translated": 22,
-      "guard_fail": 78,
-      "guard_command": 0
-    },
-    {
       "target": "es/questlog.json",
       "translated": 82,
       "guard_fail": 78,
@@ -70,6 +58,18 @@
       "target": "ru/spells.json",
       "translated": 24,
       "guard_fail": 76,
+      "guard_command": 0
+    },
+    {
+      "target": "es/server.json",
+      "translated": 2,
+      "guard_fail": 62,
+      "guard_command": 0
+    },
+    {
+      "target": "es/otclient_modules.json",
+      "translated": 22,
+      "guard_fail": 58,
       "guard_command": 0
     }
   ]

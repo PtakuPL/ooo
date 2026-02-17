@@ -2,9 +2,9 @@
   "lang": "sr",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 24268,
-  "identical_to_en": 1341,
-  "placeholder_keys": 29318,
+  "translated": 24273,
+  "identical_to_en": 1283,
+  "placeholder_keys": 29313,
   "coverage_pct": 45.3,
   "issues_total": 11,
   "issues_by_type": {
@@ -87,11 +87,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 300,
+    "issues_total": 242,
     "consistency": 9,
-    "pl_reference": 265,
+    "pl_reference": 207,
     "length_ratio": 26,
-    "auto_fix_applied": 58
+    "auto_fix_applied": 54
   },
-  "validated_at": "2026-02-17T10:20:04.645289Z"
+  "validated_at": "2026-02-17T10:43:30.003169Z"
 }

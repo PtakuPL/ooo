@@ -173358,5 +173358,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:03:35.680695Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L73.336": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добродошли на брод, |PLAYERNAME|. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.611137Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L74.337": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.611682Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L75.338": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.611949Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L75.1609": {
+    "src_hash": "202a2eb8a446b071db66173ee9c3d801",
+    "text": "Добродошли на брод, регрутујте |PLAYERNAME|. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.612668Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L76.1610": {
+    "src_hash": "e15da006fade26d444cff6cb29e47778",
+    "text": "У име инквизиције, опраштам се од вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.613321Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L77.1611": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.613619Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L64.993": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Поздрав, смели авантуристе. Ако вам треба {passage}, јавите ми.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.614643Z"
+  },
+  "data.otservbr.global.npc.captain.dreadnought.L465.1019": {
+    "src_hash": "e3c27cbeadf072acaf19bbad2aaea847",
+    "text": "Јесте ли сигурни да желите да проведете време на овом комаду стене? Могу ти показати свет! Хух.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.615654Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L111.1155": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добродошли на брод, |PLAYERNAME|. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:32.616415Z"
   }
 }

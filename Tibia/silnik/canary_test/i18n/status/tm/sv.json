@@ -28942,5 +28942,381 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:38:02.656792Z"
+  },
+  "data.otservbr.global.npc.frederik.L153.759": {
+    "src_hash": "de9745115201ef028dffb3bf12fdd602",
+    "text": "Hej och välkommen till min lilla magiska butik.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.619989Z"
+  },
+  "data.otservbr.global.npc.frederik.L154.760": {
+    "src_hash": "4ce8b0a4753aab87c199d94c7581cf9d",
+    "text": "Ja, hejdå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.620334Z"
+  },
+  "data.otservbr.global.npc.frederik.L155.761": {
+    "src_hash": "4ce8b0a4753aab87c199d94c7581cf9d",
+    "text": "Ja, hejdå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.620647Z"
+  },
+  "data.otservbr.global.npc.freezhild.L80.1296": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Jag hoppas du får en kall dag vännen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.621467Z"
+  },
+  "data.otservbr.global.npc.freezhild.L81.1297": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Jag hoppas du får en kall dag vännen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.621970Z"
+  },
+  "data.otservbr.global.npc.freezhild.L82.1298": {
+    "src_hash": "f0c3959750f0568d0e1a58f680a3726a",
+    "text": "Välkommen till mitt coola hem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.622399Z"
+  },
+  "data.otservbr.global.npc.frodo.L107.970": {
+    "src_hash": "9de521411dc9efd33e894a0f848a5e01",
+    "text": "Välkommen till Frodos Hut. Har du hört talas om {news}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.622846Z"
+  },
+  "data.otservbr.global.npc.frosty.L148.1121": {
+    "src_hash": "4ecf3c813ae77e18f6bc627b684b07ce",
+    "text": "Nej, du kan inte ha min näsa! Om du är i behov av en {carrot}, gå till marknaden eller bara gräv upp en! Eller kom du för att ge mig en {percht skull}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.624330Z"
+  },
+  "data.otservbr.global.npc.gabel.L182.1216": {
+    "src_hash": "1ea1cceeb0403110ed0c10a168ef3913",
+    "text": "Farväl, främling. Må Uman öppna era sinnen och era hjärtan för Daramans visdom!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.624840Z"
+  },
+  "data.otservbr.global.npc.gabel.L183.1217": {
+    "src_hash": "1ea1cceeb0403110ed0c10a168ef3913",
+    "text": "Farväl, främling. Må Uman öppna era sinnen och era hjärtan för Daramans visdom!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.625376Z"
+  },
+  "data.otservbr.global.npc.galuna.L59.1204": {
+    "src_hash": "17e44e52564b6c011e931eddf5c008cd",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad behöver du? Distansvapen? Jag säljer massor av dem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.627066Z"
+  },
+  "data.otservbr.global.npc.gamel.L103.431": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Hejdå. Berätta för andra om... min lilla butik här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.627970Z"
+  },
+  "data.otservbr.global.npc.gamel.L104.432": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Hejdå. Berätta för andra om... min lilla butik här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.628415Z"
+  },
+  "data.otservbr.global.npc.gamel.L71.430": {
+    "src_hash": "85a7df9a3b20746ffa8c96a1c8edebd4",
+    "text": "Pssst! Var tyst. Vill du {buy} något?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.628834Z"
+  },
+  "data.otservbr.global.npc.gamon.L75.376": {
+    "src_hash": "3380dac1fb5dd4320d19d854113a9f5a",
+    "text": "Trevligt att träffa dig, herr |PLAYERNAME|! Letar du efter möbler? Du har kommit till rätt ställe!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.629415Z"
+  },
+  "data.otservbr.global.npc.gamon.L76.377": {
+    "src_hash": "4e73f4b084d53ec679e0a62d8efaaa16",
+    "text": "Du kommer tillbaka. Det gör de alla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.629782Z"
+  },
+  "data.otservbr.global.npc.gamon.L78.379": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Ta en titt. De flesta möbler kommer i praktiska kit. Använd dem bara i ditt hus för att montera möblerna. Vill du bara se en viss typ av möbel?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.630862Z"
+  },
+  "data.otservbr.global.npc.gareth.L59.1399": {
+    "src_hash": "d4a74b09413ac14b6808e25e31c96fa4",
+    "text": "Välkommen till det underbara och nyligen öppnade Museum of Tibian Arts! Fri entré för alla, men konstens beskyddare är eftertraktade och gynnade.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.631861Z"
+  },
+  "data.otservbr.global.npc.gareth.L61.1400": {
+    "src_hash": "2f266aed5a3292e96ab3f29915dfa20d",
+    "text": "Druid från Crunor har skickat dig? Han verkar veta att detta nya museum lyser som en diamant. Njut av din vistelse! Om du vill {support} denna plats, prata med mig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.632729Z"
+  },
+  "data.otservbr.global.npc.gareth.L65.1402": {
+    "src_hash": "41d1ae4731e2260597d822dd0f0d05f5",
+    "text": "Du igen? Hur kunde du fly från sista våningen. Kultisterna borde ha 'dealt' med dig! Det slår mig. Du måste lämna den här platsen nu. Det finns inget mer att säga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.634103Z"
+  },
+  "data.otservbr.global.npc.gelagos.L62.303": {
+    "src_hash": "be2f7f5e179e50adc279f491ac58a681",
+    "text": "Hoppas du dör och förlorar den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.634619Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L83.286": {
+    "src_hash": "4ff16a7f17b7c7f22cf480bcd0060d48",
+    "text": "Har du kommit för att svara på Gelidrazahs frågor?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.635214Z"
+  },
+  "data.otservbr.global.npc.gerimor.L452.371": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.636285Z"
+  },
+  "data.otservbr.global.npc.gerimor.L58.366": {
+    "src_hash": "3c780c4126efe612c9dab5df4895ab7e",
+    "text": "Hälsningar, |PLAYERNAME|! Jag välkomnar dig till denna heliga {place}. Om du är intresserad av {missions} är det bara att fråga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.636974Z"
+  },
+  "data.otservbr.global.npc.gewen.L120.1496": {
+    "src_hash": "14b3e81ec8e2ff2c2783c71d1f831c03",
+    "text": "Hälsningar, resenär |PLAYERNAME|. Var vill du att jag ska {fly} dig? Eller behöver du en veckobiljett för Kazordoon kollektivtrafiken?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.637783Z"
+  },
+  "data.otservbr.global.npc.gewen.L121.1497": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.638199Z"
+  },
+  "data.otservbr.global.npc.gewen.L122.1498": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.638499Z"
+  },
+  "data.otservbr.global.npc.ghorza.L137.1510": {
+    "src_hash": "0aa148b4c69185fdc45f079e06ff358c",
+    "text": "Hej, fula människa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.638802Z"
+  },
+  "data.otservbr.global.npc.ghorza.L138.1511": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Ta hand om onda andar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.639155Z"
+  },
+  "data.otservbr.global.npc.ghorza.L139.1512": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Ta hand om onda andar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.639470Z"
+  },
+  "data.otservbr.global.npc.ghost.of.a.priest.L196.1000": {
+    "src_hash": "2a976d6738b63899089f925186228939",
+    "text": "Hälsningar {mortal}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.640478Z"
+  },
+  "data.otservbr.global.npc.ghostly.wolf.L101.460": {
+    "src_hash": "ae4f7a73512ed0ce588afc8b02b07cbd",
+    "text": "Pratar du djurens språk? Jag är förvånad. Men jag är inte på rätt humör för en pratstund.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.641049Z"
+  },
+  "data.otservbr.global.npc.gnomad.L86.976": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Hej där! Jag är redo att informera dig med {tactical} råd.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.641511Z"
+  },
+  "data.otservbr.global.npc.gnomad.L87.977": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "Hejdå och ta hand om er!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.641992Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L105.257": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hej och välkommen till Gnomprona Trädgårdarna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.642460Z"
+  },
+  "data.otservbr.global.npc.gnomally.L201.1371": {
+    "src_hash": "9ff401ef405038ea1958e078e11cee8a",
+    "text": "Åh, hej! Jag är assistenten för gnome-mänskliga relationer. Jag är här för att du ska byta ut dina tokens mot {equipment}, förse dig med uppdrag {items} och prata med dig om dina {relations} till oss tomtar! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.643391Z"
+  },
+  "data.otservbr.global.npc.gnomaticus.L86.449": {
+    "src_hash": "f313a27e873e04c1c2537e0c6df2ee03",
+    "text": "Hej där! Är du här för {shooting}-testet eller för att {report} din framgång?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.644081Z"
+  },
+  "data.otservbr.global.npc.gnome.trooper.L79.595": {
+    "src_hash": "315cec7b15984b34b0413b34e095bd15",
+    "text": "Har du något att leverera?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.644469Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L150.920": {
+    "src_hash": "915ae94f54558ea1ceb317b85b9f19b0",
+    "text": "Hälsningar! Du kom till rätt tomte för att köpa {potions}, {runes} eller {wands}. Så låt oss prata om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.645097Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L151.921": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.645432Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L152.922": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.645942Z"
+  },
+  "data.otservbr.global.npc.gnomelvis.L99.1340": {
+    "src_hash": "83d31689ea16e8c391e21d5bf865f983",
+    "text": "Hej. Är det mig du är {looking} för?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.646792Z"
+  },
+  "data.otservbr.global.npc.gnomeral.L251.1059": {
+    "src_hash": "41cc0b97a4666275845c1a1d3430ba16",
+    "text": "Hej där rekrytera!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.647121Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L77.968": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Hej där! Jag är redo att informera dig med {tactical} råd.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.647553Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L78.969": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "Hejdå och ta hand om er!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.648045Z"
+  },
+  "data.otservbr.global.npc.gnomerik.L309.871": {
+    "src_hash": "d37821eaad4cf997b81c210ffc65d5c7",
+    "text": "Hej och välkommen till det gnälliga {recruitment}-kontoret.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.648473Z"
+  },
+  "data.otservbr.global.npc.gnomespector.L81.678": {
+    "src_hash": "1198b5aaa05117427ad78a461413d466",
+    "text": "Hej orädd {recruit}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:46:26.648785Z"
   }
 }

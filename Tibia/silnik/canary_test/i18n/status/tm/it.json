@@ -58694,5 +58694,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:01:39.727911Z"
+  },
+  "questlog.quest_6.mission_4.state_2": {
+    "src_hash": "a636973c11a833c204194e7d7d92a1f9",
+    "text": "Il riso è stato avvelenato. Ciò indebolirà notevolmente l'esercito dell'Imperatore. Ritorna e racconta a Zalamon del tuo successo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:35.359830Z"
+  },
+  "questlog.quest_6.mission_5.state_4": {
+    "src_hash": "6cc64a1768db7e87acc0887eac7fe4ac",
+    "text": "Dato che sono molto unte, le foglie ora possono essere spostate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:35.360678Z"
+  },
+  "questlog.quest_11.mission_31.state_2": {
+    "src_hash": "8cba6acc91df4d6532578573a52a2046",
+    "text": "Hai cacciato con successo 300 lupi mannari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:53.320317Z"
   }
 }

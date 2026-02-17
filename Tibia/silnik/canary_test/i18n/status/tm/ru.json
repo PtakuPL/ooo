@@ -35366,5 +35366,197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:01:57.328836Z"
+  },
+  "cpp.look.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "более быстрая регенерация",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:58.089264Z"
+  },
+  "cpp.look.mana_shield": {
+    "src_hash": "475e549fe594c71ffa9ca2e3b939c548",
+    "text": "Щит маны",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:58.092924Z"
+  },
+  "cpp.look.second_many": {
+    "src_hash": "894a208290274479c9e9408927b7c073",
+    "text": "{0} секунд",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:58.096311Z"
+  },
+  "cpp.look.specialized_magic_level": {
+    "src_hash": "6bf7f45c56d8249fdab942beac2e6baa",
+    "text": "{0} Магический уровень",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:58.096889Z"
+  },
+  "cpp.inspect.total_weight": {
+    "src_hash": "f55b07cb5f8ad185174056610fb761bb",
+    "text": "Общий вес",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:05:59.526456Z"
+  },
+  "cpp.inspect.weapon_type": {
+    "src_hash": "c643de41cd81073a0ed42a807c826ab0",
+    "text": "Тип оружия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:03.769440Z"
+  },
+  "cpp.item.invalid_slot": {
+    "src_hash": "8dc8f358c2df7366a75718585ce8c3dc",
+    "text": "Неверный выбор слота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:03.769747Z"
+  },
+  "cpp.item.unwrap_in_house": {
+    "src_hash": "85dba66d4b7d32af19b865ba5d0f5641",
+    "text": "Разверните его у себя дома, чтобы создать <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:03.770264Z"
+  },
+  "cpp.look.augments": {
+    "src_hash": "c9e82b3b553596e21c823c1ef72b49c5",
+    "text": "Дополнения: ({0}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:03.770536Z"
+  },
+  "cpp.look.brand_new": {
+    "src_hash": "67e0171e2c7b42ade21876467abc41b1",
+    "text": "это совершенно новое",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:03.770805Z"
+  },
+  "cpp.look.charges_many": {
+    "src_hash": "c63a567c09992fa0d0d55e550baf33f9",
+    "text": "у которого осталось {0} зарядов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:08.237027Z"
+  },
+  "cpp.look.charges_one": {
+    "src_hash": "3aba0c27b52e313ef6b5f4705492c179",
+    "text": "у которого осталось заряда {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:08.237369Z"
+  },
+  "cpp.look.classification_tier": {
+    "src_hash": "247ea34e23030407050d4d2435ba4ca2",
+    "text": "Классификация: {0} Уровень: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:08.237704Z"
+  },
+  "cpp.look.expire_in": {
+    "src_hash": "4dcb6c6e017da0db500b976f9f258f2b",
+    "text": "срок действия которого истечет через ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:08.238033Z"
+  },
+  "cpp.look.for_level": {
+    "src_hash": "465a04d6fd09323bc5cb3dcaef7fc784",
+    "text": "для уровня {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:08.238325Z"
+  },
+  "cpp.look.imbuements": {
+    "src_hash": "74abe4dbe8ab5c5fb72cbc5119eeb1fe",
+    "text": "Наполнения:(",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:12.810866Z"
+  },
+  "cpp.look.it_is_empty": {
+    "src_hash": "27e4beb67a5856dec214d43144518ac7",
+    "text": ". Это пусто",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:12.811122Z"
+  },
+  "cpp.look.it_weighs": {
+    "src_hash": "ef65945163fedeeb7284484a6ddcefd9",
+    "text": "Он весит {0} унций.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:12.811447Z"
+  },
+  "cpp.look.magic_level_n": {
+    "src_hash": "ed8770a4e07871477d3ea12e7bf8416f",
+    "text": "магический уровень {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:12.811723Z"
+  },
+  "cpp.look.magic_level_or_higher": {
+    "src_hash": "dfd18250329dc889f0779b8060acf801",
+    "text": "уровень магии {0} или выше",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:12.812041Z"
+  },
+  "cpp.look.magic_shield_capacity_fmt": {
+    "src_hash": "46e3e154ed9355b74e1d5fb9e5d60cc4",
+    "text": "{0} и {1}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:16.397881Z"
+  },
+  "cpp.look.minute_many": {
+    "src_hash": "ee1bd7cfae2f05af809b419cad697dd2",
+    "text": "{0} минут",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:16.398191Z"
+  },
+  "cpp.look.not_enough_capacity_these": {
+    "src_hash": "bb1ea8ee44d678240165c6407c1772ef",
+    "text": "У вас недостаточно возможностей для переноски этих предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:16.398642Z"
+  },
+  "cpp.look.not_enough_capacity_this": {
+    "src_hash": "7caeac07bf2119e94f56ed693519201b",
+    "text": "У вас недостаточно возможностей для переноски этого объекта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:06:16.399058Z"
   }
 }

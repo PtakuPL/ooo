@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T08:00:33.541607Z",
+  "timestamp": "2026-02-17T08:06:25.194562Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 698,
+  "entries_total": 696,
   "entries_by_lang": {
     "es": 262,
     "pl": 139,
@@ -107,7 +107,7 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 321,
+    "sr": 282,
     "sv": 570,
     "sw": 905,
     "ta": 905,

@@ -46510,5 +46510,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:58:38.670807Z"
+  },
+  "otclient_modules.calendar_otui.tr_11": {
+    "src_hash": "e324ba8ec09630f9fcca106d515afe8f",
+    "text": "Programul evenimentului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.311236Z"
+  },
+  "otclient_modules.character_otui.tr_36": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Toate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.320146Z"
+  },
+  "otclient_modules.character_otui.tr_45": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.320892Z"
+  },
+  "otclient_modules.characterlist_otui.tr_6": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.326828Z"
+  },
+  "otclient_modules.characterlist_otui.tr_8": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.327211Z"
+  },
+  "otclient_modules.createaccount.tr_1": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Toate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.344385Z"
+  },
+  "otclient_modules.createaccount.tr_2": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Toate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.344610Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_2": {
+    "src_hash": "b60183f6899f8b04902a4753633bab06",
+    "text": "0 / 0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.360000Z"
+  },
+  "otclient_modules.game_healthcircle.tr_7": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Ascunde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.362852Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_11": {
+    "src_hash": "a4d3b161ce1309df1c4e25df28694b7b",
+    "text": "Trimiteți",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.363689Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_8": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.365152Z"
+  },
+  "otclient_modules.game_stash_otui.tr_5": {
+    "src_hash": "4cfa6c981549e990fe2344e4c805405e",
+    "text": "Găsi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.370978Z"
+  },
+  "otclient_modules.items.tr_4": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Toate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.406380Z"
+  },
+  "otclient_modules.keybinds_otui.tr_5": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Acţiune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.409867Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_1": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Acţiune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.417834Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_7": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Acţiune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.418784Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_5": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Acţiune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.431788Z"
+  },
+  "otclient_modules.spelllist_otui.tr_15": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.441088Z"
+  },
+  "otclient_modules.spelllist_otui.tr_22": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tip",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.442302Z"
+  },
+  "otclient_modules.spelllist_otui.tr_24": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.442580Z"
+  },
+  "otclient_modules.spelllist_otui.tr_27": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.443017Z"
+  },
+  "otclient_modules.statsbar.tr_2": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Ascunde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:00.445540Z"
+  },
+  "otclient_modules.bugreport.tr_1": {
+    "src_hash": "f7b277584de820d26a7ee032b4761d64",
+    "text": "Raport de eroare trimis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:08.266485Z"
+  },
+  "otclient_modules.bugreport_otui.tr_2": {
+    "src_hash": "94966d90747b97d1f0f206c98a8b1ac3",
+    "text": "Trimite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:08.266665Z"
+  },
+  "otclient_modules.bugreport_otui.tr_3": {
+    "src_hash": "0af24622bfe23c88d1afc5e47fc4a7b0",
+    "text": "Vă rugăm să utilizați acest dialog doar pentru a raporta erori. Nu raportați încălcările regulilor aici!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:08.267153Z"
+  },
+  "otclient_modules.bugreport_otui.tr_4": {
+    "src_hash": "82a8a3d0849e69c69211756ff05a0518",
+    "text": "Raportați eroare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:13.980519Z"
+  },
+  "otclient_modules.calendar.otui_text_1": {
+    "src_hash": "8a3845661fdf782e067eb3b38199bb36",
+    "text": "23.11.2023, 11:23 CET",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:13.980778Z"
+  },
+  "otclient_modules.calendar_otui.tr_10": {
+    "src_hash": "6f8522e0610541f1ef215a22ffa66ff6",
+    "text": "Luni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:13.980951Z"
+  },
+  "otclient_modules.calendar_otui.tr_2": {
+    "src_hash": "2188cd2d9c51fd7e317fe846c19db229",
+    "text": "* Evenimentul începe/se termină la salvarea serverului din această zi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:13.981440Z"
+  },
+  "otclient_modules.calendar_otui.tr_3": {
+    "src_hash": "4ae43ffefdaf3c2343be08c2c231978f",
+    "text": "Septembrie 2023",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:13.981733Z"
+  },
+  "otclient_modules.calendar_otui.tr_4": {
+    "src_hash": "9d1a0949c39e66a0cd65240bc0ac9177",
+    "text": "Duminică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:16.635929Z"
+  },
+  "otclient_modules.calendar_otui.tr_5": {
+    "src_hash": "8b7051187b9191cdcdae6ed5a10e5adc",
+    "text": "Sâmbătă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:16.636128Z"
+  },
+  "otclient_modules.calendar_otui.tr_6": {
+    "src_hash": "c33b138a163847cdb6caeeb7c9a126b4",
+    "text": "Vineri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:16.636299Z"
+  },
+  "otclient_modules.calendar_otui.tr_8": {
+    "src_hash": "796c163589f295373e171842f37265d5",
+    "text": "Miercuri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:16.636516Z"
+  },
+  "otclient_modules.calendar_otui.tr_9": {
+    "src_hash": "5792315f09a5d54fb7e3d066672b507f",
+    "text": "Marţi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:21.110378Z"
+  },
+  "otclient_modules.changename_otui.tr_3": {
+    "src_hash": "55c7e6abf7d449577090584484cefe0b",
+    "text": "Introduceți noul nume pentru personajul dvs.:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:21.110763Z"
+  },
+  "otclient_modules.changename_otui.tr_4": {
+    "src_hash": "b315e1866d0715060e38cf1922640769",
+    "text": "Introduceți un nou nume de caracter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:01:21.111067Z"
   }
 }

@@ -2857,11 +2857,11 @@
   },
   "npc.a_weakened_forest_fury.say_4": {
     "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
-    "text": "Take care, guardian.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Abbi cura di te, guardiano.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T23:56:13.870081Z"
+    "updated_at": "2026-02-17T03:07:39.664212Z"
   },
   "npc.albinius.say_10": {
     "src_hash": "8ebe07d7adacdd880130a981ebf53704",
@@ -41862,5 +41862,253 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:03:47.197752Z"
+  },
+  "npc.a_weakened_forest_fury.multi_1": {
+    "src_hash": "97e5551c1e0da0dc6851d50d0acbd330",
+    "text": "Creato generazioni fa per derubare una creatura della sua libertà affinché possa riconquistarla sinceramente. Ne avrai bisogno se intendi riportare gli uccelli alla loro legittima casa nella radura. ... ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:31.778398Z"
+  },
+  "npc.a_weakened_forest_fury.multi_10": {
+    "src_hash": "00d7a64ed041c6ca62c3fbf2ef74b9ab",
+    "text": "Sarai il nostro tutore?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:31.778766Z"
+  },
+  "npc.a_weakened_forest_fury.multi_2": {
+    "src_hash": "a2f924235d946c137dba406b657d1125",
+    "text": "Ne hai bisogno di un altro? ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:31.779067Z"
+  },
+  "npc.a_weakened_forest_fury.multi_3": {
+    "src_hash": "63eec6b94d6354613e87439834cde2fa",
+    "text": "In effetti, lo farai. Prendi una di queste gabbie, che sono state realizzate generazioni fa per privare una creatura della sua libertà affinché possa riconquistarla sinceramente. Riporta gli uccelli a casa nella radura. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:31.779833Z"
+  },
+  "npc.a_weakened_forest_fury.multi_4": {
+    "src_hash": "30e9fbab3401acfe9c02cd768676823a",
+    "text": "Troverai {phials} per l'acqua vicino a questo pozzo sacro che ti porterà sano e salvo nella radura. Non sono rimasti semi, ora sono nelle mani degli intrusi. Abbi fiducia in te stesso, guardiano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:36.687911Z"
+  },
+  "npc.a_weakened_forest_fury.multi_5": {
+    "src_hash": "b605b2d5b408e0e9c0741cc6a53ccb69",
+    "text": "Il mio orgoglio è grande ma non superiore alla ragione. Non sono troppo orgoglioso per chiedere aiuto perché questa è un'ora buia. ... ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:36.688530Z"
+  },
+  "npc.a_weakened_forest_fury.multi_6": {
+    "src_hash": "1e30ec7d70fd1b16ada49f6ab3be510a",
+    "text": "Questa radura è stata profanata. Lo abbiamo tenuto segreto per secoli, eppure il male ha trovato il modo di insudiciare e distruggere ciò che era più sacro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:36.689231Z"
+  },
+  "npc.a_weakened_forest_fury.multi_7": {
+    "src_hash": "dbd67b36dc6a377fc95b88d7c5ec8a11",
+    "text": "C'è solo un modo per rinvigorire il suo spirito: un guardiano deve avventurarsi laggiù e riportare la vita nella foresta. ... ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:36.689857Z"
+  },
+  "npc.a_weakened_forest_fury.multi_8": {
+    "src_hash": "ec255bee3e133245c94c19e83f1fba9d",
+    "text": "Il {water} più puro dal pozzo più puro deve essere portato lì e versato e il {birds} che dà la vita deve essere riportato nel santuario interiore della radura. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:36.690613Z"
+  },
+  "npc.a_weakened_forest_fury.multi_9": {
+    "src_hash": "00d7a64ed041c6ca62c3fbf2ef74b9ab",
+    "text": "Sarai il nostro tutore?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:39.662170Z"
+  },
+  "npc.a_weakened_forest_fury.say_1": {
+    "src_hash": "7448e9db1cb3dab1e3f767edc5096dd7",
+    "text": "Semi per dare vita ad alberi forti, fioriti e fieri. Il {intruders} ci ha derubato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:39.662613Z"
+  },
+  "npc.a_weakened_forest_fury.say_2": {
+    "src_hash": "a8565c2ba7e9d4d3534c7a703b6a6276",
+    "text": "Gli intrusi sono comparsi in un batter d'occhio. Dal nulla, come se venissero dal nulla. Hanno invaso la radura all'interno della nostra e hanno portato via ciò che rimaneva di noi durante il giorno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:39.663365Z"
+  },
+  "npc.a_weakened_forest_fury.say_3": {
+    "src_hash": "a411d42a289aafbf203c5caeb379e3f6",
+    "text": "L'acqua più pura scorre attraverso questo pozzo. Per secoli l'abbiamo nascosto, affinché altri esseri non vi posassero gli occhi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:39.663914Z"
+  },
+  "npc.a_weakened_forest_fury.say_5": {
+    "src_hash": "b083ea578f8aa1fadf1c933494096fb8",
+    "text": "Fiale per l'acqua purissima del nostro pozzo sacro. Sono finemente lavorati e molto fragili. Ne conserviamo una piccola scorta qui intorno al pozzo. Probabilmente l'unica cosa che agli intrusi non interessava.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:42.231437Z"
+  },
+  "npc.a_weakened_forest_fury.say_6": {
+    "src_hash": "6059c79ce3a8c0b9791f41c39cbe060f",
+    "text": "Ti ho già dato una gabbia. Se ne hai bisogno di un altro, dovrai tornare da me più tardi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:42.231942Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_1": {
+    "src_hash": "19483b510c4083e683cf85777f6a0bd8",
+    "text": "Il mio nome ora è noto solo al vento e rimarrà tale finché non tornerò tra i miei parenti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:42.232431Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_2": {
+    "src_hash": "24e71111f5cd6c344a51fc84bc7d7ac8",
+    "text": "Ero il guardiano di questa radura. Io sono l'ultimo... tutti sono dovuti andare via.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:42.232840Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_3": {
+    "src_hash": "4b4c28cf9514e263cd64e2cf8515fef0",
+    "text": "Il tempo a disposizione di questa radura sta per scadere se non si farà nulla al più presto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:42.233284Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Abbi cura di te, guardiano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:44.832982Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_5": {
+    "src_hash": "6eae3ba94f153241f7139753a33e34e7",
+    "text": "Esseri crudeli. Grandi e mostruosi, con un solo occhio, che fissano la preda. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:44.833396Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:44.833618Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_10": {
+    "src_hash": "0d87c1622e87ee2e5337a11eeb52ac9e",
+    "text": "Questi sciocchi e il loro culto superstizioso della vita non capiscono nulla di importante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:44.834019Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_11": {
+    "src_hash": "54c30b0c73d996b60052eb31ab154850",
+    "text": "Solo le specie inferiori hanno bisogno di armi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:44.834408Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_12": {
+    "src_hash": "1dab24bde8e2aeae70dca275e7c751a7",
+    "text": "Ho sentito che gli elfi si sono trasferiti di sopra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:47.399911Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_13": {
+    "src_hash": "4e155dba3d938b25d6866fe778d12ccd",
+    "text": "I numeri sono essenziali. Sono il segreto dietro le quinte. Se sei un maestro della matematica sei un maestro della vita e della morte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:47.400438Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_14": {
+    "src_hash": "c004dfa5adae261ac341f4b270b8ce76",
+    "text": "I nostri libri sono scritti nel 469, ovviamente non puoi capirli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:47.400812Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_15": {
+    "src_hash": "5d263b8b730e9ad07ec466c44bbeb705",
+    "text": "Vai a lavarti gli occhi per aver usato questo numero osceno!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:47.401158Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_16": {
+    "src_hash": "044c55af3bd9294eb2627adbd549af31",
+    "text": "Il linguaggio della mia specie. Superiore a qualsiasi altra lingua e può essere parlato solo da entità con abbastanza occhi da poter battere le palpebre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:47.401728Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_17": {
+    "src_hash": "9ecf8f39e7a82c142db001497c1fcaf6",
+    "text": "Parassiti rumorosi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:49.571520Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_18": {
+    "src_hash": "058b80d38ebd854ca10a0e142e371f80",
+    "text": "I loro maghi sono così vicini alla verità. Più vicini di quanto sappiano e più vicini di quanto sia un bene per loro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:49.572059Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_19": {
+    "src_hash": "2235776232edbe8cf7a37a7fba1a0bf1",
+    "text": "Ottimi strumenti con cui lavorare... Dopo la loro morte, ovviamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:49.572417Z"
   }
 }

@@ -27598,5 +27598,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:04:04.737589Z"
+  },
+  "npc.aneus.farewell_msg_1": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "До свидания и берегите себя!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:54.015801Z"
+  },
+  "npc.aneus.greet_msg_1": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Приветствую искателя приключений |PLAYERNAME|. Что привело тебя ко мне?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:54.016519Z"
+  },
+  "npc.angelina.farewell_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Да благословят вас боги.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:54.018561Z"
+  },
+  "npc.angelina.greet_msg_1": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Надо хвалить богов за то, что я наконец спасся. У меня не так много мирских благ, но, пожалуйста, примите небольшую награду, а вы?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:54.019272Z"
+  },
+  "npc.angelina.greet_msg_2": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Спасибо, что спасли мне жизнь! Мне телепортировать тебя из Темного Собора?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:54.019799Z"
+  },
+  "npc.angelina.walkaway_msg_1": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Да благословят вас боги.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:54.020345Z"
   }
 }

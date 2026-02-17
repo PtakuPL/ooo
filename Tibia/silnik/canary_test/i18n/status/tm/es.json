@@ -146790,5 +146790,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:45:43.067860Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L239.2340": {
+    "src_hash": "e3db747503aadf30c014d63efad6bc8b",
+    "text": "Estás curado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.919800Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L36.2332": {
+    "src_hash": "a52647c5d7e3e578a522fdeb09a09e1b",
+    "text": "Deberías partir al Continente ahora. Ve a la izquierda para llegar al barco.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.921318Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L41.2333": {
+    "src_hash": "26b2af747349f8d79f9fb0eea63d9466",
+    "text": "No tienes la vocación adecuada para entrar a esta habitación.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.922624Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L76.2335": {
+    "src_hash": "01affde03a4800f56af58c61b6eb8272",
+    "text": "No puedes subir. Has elegido una vocación y ahora debes partir al Continente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.924170Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L99.2336": {
+    "src_hash": "ba34cb0ec36158a091e2096ece725810",
+    "text": "Usa estas escaleras para entrar al Puesto de Aventureros en Dawnport.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.925383Z"
+  },
+  "data.otservbr.global.scripts.movements.rookgaard.level.bridge.L17.2343": {
+    "src_hash": "39c490578b1837d3a7fe25a6160818c0",
+    "text": "Necesitas ser al menos Nivel 2 para poder pasar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.926990Z"
+  },
+  "data.otservbr.global.scripts.movements.rookgaard.rook.village.L10.2342": {
+    "src_hash": "797b88d42c9e98832686f5ac1ae57cba",
+    "text": "Ya no tienes nada que hacer allí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.928025Z"
+  },
+  "data.otservbr.global.scripts.movements.roshamuul.strange.vortex.tp.L12.2344": {
+    "src_hash": "ba145c68a25006dc95aaeead1a2afb62",
+    "text": "Has sido atrapado en una pesadilla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.929025Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.gray.beach.vortex.L21.2324": {
+    "src_hash": "e1b6f8a90a19a3de9e34de2a28201c76",
+    "text": "Te sumerges en el vórtice para nadar bajo las rocas al otro lado de la cueva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.931537Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.roshamuul.carpet.L16.2323": {
+    "src_hash": "6a5687ef714f8fac0aad1f89c50499db",
+    "text": "La alfombra voladora te ha traído de vuelta a Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.932785Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.schrodingers.island.teleport.lvl.999.L10.2327": {
+    "src_hash": "414a776dd8b476b776201820fe383717",
+    "text": "Necesitas nivel 999 para entrar aquí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.933808Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.schrodingers.island.teleport.lvl.999.L16.2328": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "¡Felicidades!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.934725Z"
+  },
+  "data.otservbr.global.scripts.quests.a.pirates.tail.actions.rascacoon.shortcut.L13.1980": {
+    "src_hash": "ded2b9f120cca0d28d8c1118c78bbbcf",
+    "text": "Necesitas al menos nivel 200 para entrar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.936651Z"
+  },
+  "data.otservbr.global.scripts.quests.a.pirates.tail.creaturescripts.ratmiral.death.L13.1979": {
+    "src_hash": "1ed8049e3dc0aeeda50e88c029721d99",
+    "text": "Felicidades, has recibido el Atuendo Rascoohan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.937676Z"
+  },
+  "data.otservbr.global.scripts.quests.adventures.of.galthen.actions.iksupan.entrance.L12.1755": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Necesitas al menos nivel 150 para entrar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.939168Z"
+  },
+  "data.otservbr.global.scripts.quests.adventures.of.galthen.actions.yselda.entrances.L13.1753": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Necesitas al menos nivel 250 para entrar.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:07:21.940163Z"
   }
 }

@@ -36886,5 +36886,709 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:20:30.920458Z"
+  },
+  "scripts.find_fiend.level_unknown": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:12.372084Z"
+  },
+  "scripts.reload.msg_2": {
+    "src_hash": "c271d2fad3f3e6b7c52384ead3321add",
+    "text": "Este necesar un parametru de comandă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:12.434308Z"
+  },
+  "scripts.spy.empty": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:12.440053Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_1": {
+    "src_hash": "be4b537813fa831f143f67d54d08c454",
+    "text": "Timira cea Multicapete a fost învinsă. Ai {} secunde pentru a părăsi camera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:17.363850Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_2": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Ați găsit un {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:17.364150Z"
+  },
+  "scripts.actions_bosses_levers.say_1": {
+    "src_hash": "520e3d33c1a3b609737a4a9e47aa0a06",
+    "text": "SPLASH!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:17.364389Z"
+  },
+  "scripts.actions_botanist.say_1": {
+    "src_hash": "364c0a86d8993021b6104239d53934c9",
+    "text": "Ați luat cu succes o mostră din rară floare gheară de grifon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:17.364794Z"
+  },
+  "scripts.actions_brain.msg_1": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<brzzl> <frzzp> <fsssh>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:17.365100Z"
+  },
+  "scripts.actions_brain.msg_2": {
+    "src_hash": "0d79627a56d6ed42123deb0ff2c05e62",
+    "text": "Ai deja creierul tău",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:19.930616Z"
+  },
+  "scripts.actions_broken_wall.say_1": {
+    "src_hash": "ae1744b1c6c5a1fb93014eb6a44da7dd",
+    "text": "Ai făcut deja această misiune, du-te și vorbește cu Rottin Wood cu alte misiuni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:19.931103Z"
+  },
+  "scripts.actions_broken_wall.say_2": {
+    "src_hash": "777e6639f5bad53b605685cf75d155a3",
+    "text": "Iată-ne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:19.931323Z"
+  },
+  "scripts.actions_cagekey.msg_1": {
+    "src_hash": "e208d7eff95df4c1c09e8de5583feda8",
+    "text": "Ați găsit o cheie de cușcă de lemn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:19.931657Z"
+  },
+  "scripts.actions_caixa.msg_1": {
+    "src_hash": "b36f445efbda76f17aa66e520682ff27",
+    "text": "Ați găsit un fragment de incantație.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:19.932002Z"
+  },
+  "scripts.actions_candles.msg_1": {
+    "src_hash": "e1406a759fdb378e87e4f58045e47bf0",
+    "text": "Citind pergamentul, identifici trei lumânări umane de seu și le pui în buzunar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:22.508818Z"
+  },
+  "scripts.actions_cape.msg_1": {
+    "src_hash": "77783e5d8f029ca4d843654bd990d5ea",
+    "text": "Acum arăți ca un Nigromant.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:22.509148Z"
+  },
+  "scripts.actions_ceirons_waterskin.say_1": {
+    "src_hash": "bf7cf0cb34d72d1029f8063ace09675f",
+    "text": "Ați colectat cu succes o probă specială de apă din peștera hidrei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:22.509574Z"
+  },
+  "scripts.actions_chalk.msg_1": {
+    "src_hash": "4833eccd338f830c492a702e61858110",
+    "text": "Umpleți o parte din creta fină într-o găleată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:22.509940Z"
+  },
+  "scripts.actions_chargedcompass.say_1": {
+    "src_hash": "ed7e52e074aa254699d3480a0da8bc80",
+    "text": "Energia este transferată la piatra runică. Strălucește acum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:22.510424Z"
+  },
+  "scripts.actions_charges_lever.msg_1": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:25.096779Z"
+  },
+  "scripts.actions_charges_lever.say_1": {
+    "src_hash": "d63f5d303302207a1a85ebb8642dd307",
+    "text": "O schimbare a polarității schimbă creaturile cu polaritatea corespunzătoare într-o altă fază a existenței!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:25.097939Z"
+  },
+  "scripts.actions_charm.say_1": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Marchezi un obelisc cu farmecul de ger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:25.098676Z"
+  },
+  "scripts.actions_charm.say_2": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Marchezi un obelisc cu farmecul de ger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:25.099348Z"
+  },
+  "scripts.actions_charm.say_3": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Marchezi un obelisc cu farmecul de ger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:25.100003Z"
+  },
+  "scripts.actions_charm.say_4": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Marchezi un obelisc cu farmecul de ger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:27.792328Z"
+  },
+  "scripts.actions_cheesy_key.msg_1": {
+    "src_hash": "94649257c1140e8190685dc8b01dbe01",
+    "text": "Aveți deja familiarul {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:27.792726Z"
+  },
+  "scripts.actions_cheesy_key.msg_2": {
+    "src_hash": "08a9702ff66c06d4f2672dd3f7416115",
+    "text": "Ați obținut familiarul {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:27.793048Z"
+  },
+  "scripts.actions_chests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Ați găsit un ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:27.793301Z"
+  },
+  "scripts.actions_climbing_vine.msg_1": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Nu poți intra într-o zonă de protecție după ce ai atacat un alt jucător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:27.793726Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_1": {
+    "src_hash": "2f31106b5eb658000748f2c30b5dbfef",
+    "text": "Folosește-l pe pământ pentru a întinde capcana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:31.694030Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_2": {
+    "src_hash": "5a03b5cd75188820f73bb98f72d4ad8d",
+    "text": "Îl poți folosi în camera lui Feroxa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:31.694725Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_3": {
+    "src_hash": "aac52a110badf04741cf3afd1d3bf999",
+    "text": "Capcana argintie a fost pusă și nu poate fi scoasă din poziția sa actuală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:31.695202Z"
+  },
+  "scripts.actions_color_levers.msg_1": {
+    "src_hash": "ab2d9b844dd176ba8e117e14246f7334",
+    "text": "Tu alegi culoarea decăderii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:31.695517Z"
+  },
+  "scripts.actions_color_levers.msg_2": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:31.695805Z"
+  },
+  "scripts.actions_color_levers.msg_3": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:34.259805Z"
+  },
+  "scripts.actions_color_levers.msg_4": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:34.260107Z"
+  },
+  "scripts.actions_color_levers.msg_5": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:34.260389Z"
+  },
+  "scripts.actions_coral.msg_1": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "Deodată, un gardian sare la tine din spate!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:34.260745Z"
+  },
+  "scripts.actions_corpse.msg_1": {
+    "src_hash": "c5a164cb607ac32cea2ea759c496812e",
+    "text": "Quandon a fost ucis! Ar trebui să-i raportezi lui Sholley despre asta!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:34.261167Z"
+  },
+  "scripts.actions_corpse.msg_2": {
+    "src_hash": "77b8010b0414880bdbf6e4e8ee53ce5e",
+    "text": "Acesta este gol!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:37.112954Z"
+  },
+  "scripts.actions_corpse.say_1": {
+    "src_hash": "7217a37aabbda4819b9adb0512b1a4cf",
+    "text": "Nu iei mai mult aur decât ai nevoie și eliberezi comerciantul care eliberează chiar în secunda în care scoți frânghiile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:37.113569Z"
+  },
+  "scripts.actions_coruja.msg_1": {
+    "src_hash": "df87386b73db3b71047038b982c44d00",
+    "text": "Descoperi o bufniță care se odihnește într-un copac. Este special, pentru că nu ai văzut niciodată o bufniță în tot Kilmaresh.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:37.114379Z"
+  },
+  "scripts.actions_counter_agent.msg_1": {
+    "src_hash": "c8c549f68a94f2d0de0eaeb94e664d99",
+    "text": "O furtună de nisip a distrus aproape toți stâlpii. Efectul contraagentului a funcționat diferit de cel așteptat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:37.114920Z"
+  },
+  "scripts.actions_counter_agent.msg_2": {
+    "src_hash": "380f8c945d50e19564aae60338ef5e9d",
+    "text": "Furtuna de nisip nu numai că a distrus oaza, dar a scos la iveală și niște plăci de pavaj și o pârghie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:37.115433Z"
+  },
+  "scripts.actions_cracklers_lever.msg_1": {
+    "src_hash": "0f83410583de59a313f22441acd5febc",
+    "text": "Ai nevoie de cel puțin 4 jucători pentru această misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:40.122005Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_11": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.698661Z"
+  },
+  "otclient_modules.character_otui.tr_29": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.708831Z"
+  },
+  "otclient_modules.console.tr_27": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Adaugă la lista VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.723924Z"
+  },
+  "otclient_modules.currentoffers_otui.tr_2": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.731613Z"
+  },
+  "otclient_modules.currentoffers_otui.tr_9": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.732420Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_7": {
+    "src_hash": "d13bc5b68b2bd9e18f29777db17cc563",
+    "text": "Comun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.734749Z"
+  },
+  "otclient_modules.data_options.tr_6": {
+    "src_hash": "f07007e4d0d8b8db5e7ccca897fe9626",
+    "text": "Volumul muzicii: %d",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.735417Z"
+  },
+  "otclient_modules.edit_hotkey_otui.tr_3": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Aplicați",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.736562Z"
+  },
+  "otclient_modules.editvip_otui.tr_10": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.737320Z"
+  },
+  "otclient_modules.game_actionbar.tr_5": {
+    "src_hash": "fda3c89154cc3ad1f7d1cc82a3181c33",
+    "text": "Atribuiți text",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.741902Z"
+  },
+  "otclient_modules.game_actionbar.tr_6": {
+    "src_hash": "d32ac3705894c0cf199c6f5abdffd55c",
+    "text": "Atribuiți obiect",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.742218Z"
+  },
+  "otclient_modules.game_actionbar.tr_7": {
+    "src_hash": "191bab0c005fc9abb11f6d1a2ee2cfc9",
+    "text": "Atribuiți vraja",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.742522Z"
+  },
+  "otclient_modules.gameinterface.tr_16": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Adaugă la lista VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.753957Z"
+  },
+  "otclient_modules.gameinterface.tr_2": {
+    "src_hash": "a7e8f0f7c140cc80cc98df15c6268957",
+    "text": "Adăugați la Lista de pradă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.754531Z"
+  },
+  "otclient_modules.gameinterface.tr_3": {
+    "src_hash": "619c926a17e038937d730675aa457628",
+    "text": "Eliminați din lista de pradă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.755549Z"
+  },
+  "otclient_modules.gameinterface.tr_37": {
+    "src_hash": "ad8783089f828b927473fb61d51940ec",
+    "text": "Utilizare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.756124Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_10": {
+    "src_hash": "b139c4284c5c3111b857052dac419d42",
+    "text": "Folosește-te pe tine",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.762433Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_12": {
+    "src_hash": "15479c5427a844a0695a36c7be1d394e",
+    "text": "Selectați Obiect",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.762777Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_13": {
+    "src_hash": "05da0bdce5c7b0f0edc2afe63de23eea",
+    "text": "Trimite automat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.763062Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_9": {
+    "src_hash": "d2bf683c031ce553916e0a4462bf6558",
+    "text": "Utilizați la țintă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.764665Z"
+  },
+  "otclient_modules.itemoffers_otui.tr_11": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.783273Z"
+  },
+  "otclient_modules.itemoffers_otui.tr_4": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.783817Z"
+  },
+  "otclient_modules.marketoffers_otui.tr_3": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.793568Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_2": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.796761Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_8": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Cantitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.797361Z"
+  },
+  "otclient_modules.skills_otui.tr_11": {
+    "src_hash": "3c08a3a09d818558106a57fdc87133f0",
+    "text": "Îneca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.812691Z"
+  },
+  "otclient_modules.skills_otui.tr_16": {
+    "src_hash": "5cc28f31113ec7cd7e546b836ccae2b9",
+    "text": "Energie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.813411Z"
+  },
+  "otclient_modules.skills_otui.tr_18": {
+    "src_hash": "bd2b7e5f85a6ea65065c4ebc6d7c95bb",
+    "text": "Foc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.813799Z"
+  },
+  "otclient_modules.tasks_otui.tr_6": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:38.823706Z"
+  },
+  "otclient_modules.bestiary.tr_9": {
+    "src_hash": "8e4ce7e78c9c1b19c4b193170ca1044d",
+    "text": "Foarte Rar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:40.204901Z"
+  },
+  "otclient_modules.bestiary_otui.tr_1": {
+    "src_hash": "70332d2adf1ffa9d75b86ac43feb1e43",
+    "text": "Locații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:45.938770Z"
+  },
+  "otclient_modules.bestiary_otui.tr_11": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:45.939588Z"
+  },
+  "otclient_modules.bestiary_otui.tr_13": {
+    "src_hash": "5e2dc2efe9702dd86d89378e76f5201b",
+    "text": "Numele creaturii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:45.940321Z"
+  },
+  "otclient_modules.bestiary_otui.tr_14": {
+    "src_hash": "6b2d75cc5eb0ea8c7fdf5686d758947a",
+    "text": "1/1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:50.279504Z"
+  },
+  "otclient_modules.bestiary_otui.tr_15": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:50.279787Z"
+  },
+  "otclient_modules.bestiary_otui.tr_16": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Căutare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:50.279967Z"
+  },
+  "otclient_modules.bestiary_otui.tr_7": {
+    "src_hash": "922a418434bbdee9754297220d31d461",
+    "text": "Selectie farmec:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:50.280189Z"
+  },
+  "otclient_modules.bestiary_otui.tr_8": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selecta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:50.280355Z"
+  },
+  "otclient_modules.blessing.tr_1": {
+    "src_hash": "a4ecfc70574394990cf17bd83df499f7",
+    "text": "Eveniment",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:55.165677Z"
+  },
+  "otclient_modules.blessing.tr_11": {
+    "src_hash": "64a05985e4368c666848f7f0922886a5",
+    "text": "- În funcție de regulile de luptă corectă, vei pierde între ele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:55.166178Z"
+  },
+  "otclient_modules.blessing.tr_12": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Personajul tău este promovat și contul tău are Premium\nstarea. Ca rezultat, pierderea XP este redusă cu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:55.166737Z"
+  },
+  "otclient_modules.blessing.tr_13": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Personajul tău este promovat și contul tău are Premium\nstarea. Ca rezultat, pierderea XP este redusă cu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:55.167250Z"
+  },
+  "otclient_modules.blessing.tr_14": {
+    "src_hash": "16d2b386b2034b9488996466aaae0b57",
+    "text": "Istorie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:55.167463Z"
+  },
+  "otclient_modules.blessing.tr_15": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Spate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:56.879854Z"
   }
 }

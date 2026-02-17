@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-17T03:26:04.219439Z",
-  "built_cycle": 199,
+  "timestamp": "2026-02-17T03:28:37.557655Z",
+  "built_cycle": 201,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -626,9 +626,9 @@
     {
       "lang": "it",
       "json_file": "scripts.json",
-      "pending_total": 1702,
-      "todo": 1702,
-      "simple_todo": 703,
+      "pending_total": 1662,
+      "todo": 1662,
+      "simple_todo": 681,
       "missing_in_lang": 0
     },
     {
@@ -826,9 +826,9 @@
     {
       "lang": "ru",
       "json_file": "questlog.json",
-      "pending_total": 1828,
-      "todo": 1828,
-      "simple_todo": 630,
+      "pending_total": 1827,
+      "todo": 1827,
+      "simple_todo": 629,
       "missing_in_lang": 0
     },
     {
@@ -850,9 +850,9 @@
     {
       "lang": "ru",
       "json_file": "scripts.json",
-      "pending_total": 1726,
-      "todo": 1726,
-      "simple_todo": 648,
+      "pending_total": 1714,
+      "todo": 1714,
+      "simple_todo": 640,
       "missing_in_lang": 0
     },
     {
@@ -1074,9 +1074,9 @@
     {
       "lang": "ro",
       "json_file": "scripts.json",
-      "pending_total": 1728,
-      "todo": 1728,
-      "simple_todo": 707,
+      "pending_total": 1685,
+      "todo": 1685,
+      "simple_todo": 692,
       "missing_in_lang": 0
     },
     {

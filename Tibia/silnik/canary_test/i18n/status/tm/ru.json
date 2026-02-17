@@ -28150,5 +28150,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:19:17.552569Z"
+  },
+  "scripts.action-corym_works_doors.msg_1": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Кованый ключ открывает дверь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:03.970134Z"
+  },
+  "scripts.action-corym_works_doors.msg_2": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Кованый ключ открывает дверь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:03.970507Z"
+  },
+  "scripts.action-corym_works_doors.msg_3": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Кованый ключ открывает дверь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:03.970836Z"
+  },
+  "scripts.action-reward_soul_war.msg_1": {
+    "src_hash": "8dd6bdad28a27009f617c8b6206a0ba6",
+    "text": "Вы уже получили свою награду.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:03.971172Z"
+  },
+  "scripts.action-reward_soul_war.msg_2": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Чтобы получить награду, вам нужно победить «Манию величия» Гошнара.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:03.971608Z"
+  },
+  "scripts.action-reward_soul_war.msg_3": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Вы нашли {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:06.543082Z"
+  },
+  "scripts.action_all_hymn_piano_teleport.msg_1": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "Вы не выучили все стихи гимна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:06.543452Z"
+  },
+  "scripts.action_arena.msg_1": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Вы уже закончили эту битву.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:06.543778Z"
+  },
+  "scripts.action_arena.msg_2": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Арена уже используется.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:06.544073Z"
+  },
+  "scripts.action_bag.msg_1": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Вы нашли сумку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:06.544325Z"
+  },
+  "scripts.action_bag.msg_2": {
+    "src_hash": "2c586d4717b2579a30746ae8e8b0e491",
+    "text": "Книжный шкаф пуст.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:08.472426Z"
+  },
+  "scripts.action_beaver.say_1": {
+    "src_hash": "76ebbf3693cb1fd0c1b2dba34a26b65d",
+    "text": "Вы отметили дерево, но его бывший обитатель украл вашу наживку! Получите его, прежде чем он убежит!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:27:08.472977Z"
+  },
+  "questlog.quest_11.mission_12.state_2": {
+    "src_hash": "bc232ac9f92b898a89cb97edd7f409a9",
+    "text": "Вы успешно охотились на 300 мамонтов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:28:34.629425Z"
   }
 }

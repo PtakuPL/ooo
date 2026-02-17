@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-17T03:26:41.198991Z",
-  "language": "it",
-  "json_file": "scripts.json",
-  "translated": 43,
+  "timestamp": "2026-02-17T03:28:56.945597Z",
+  "language": "ro",
+  "json_file": "otclient_modules.json",
+  "translated": 44,
   "entries": [
     {
-      "key": "scripts.actions_counter_agent.msg_1",
-      "en": "A sandstorm has destroyed almost all pillars. The effect of the counteragent worked different than expected.",
-      "translated": "Una tempesta di sabbia ha distrutto quasi tutti i pilastri. L'effetto del controagente ha funzionato diversamente dal previsto.",
+      "key": "otclient_modules.offerhistory_otui.tr_8",
+      "en": "Amount",
+      "translated": "Cantitate",
+      "source": "simple"
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_11",
+      "en": "Drown",
+      "translated": "Îneca",
+      "source": "simple"
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_16",
+      "en": "Energy",
+      "translated": "Energie",
+      "source": "simple"
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_18",
+      "en": "Fire",
+      "translated": "Foc",
+      "source": "simple"
+    },
+    {
+      "key": "otclient_modules.tasks_otui.tr_6",
+      "en": "Filter",
+      "translated": "Filtra",
+      "source": "simple"
+    },
+    {
+      "key": "otclient_modules.bestiary.tr_9",
+      "en": "Very Rare",
+      "translated": "Foarte Rar",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_counter_agent.msg_2",
-      "en": "The sandstorm has not only destroyed the oasis, but also revealed some paving tiles and a lever.",
-      "translated": "La tempesta di sabbia non ha solo distrutto l'oasi, ma ha anche rivelato alcune piastrelle della pavimentazione e una leva.",
+      "key": "otclient_modules.bestiary_otui.tr_1",
+      "en": "Location(s)",
+      "translated": "Locații",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_cracklers_lever.msg_1",
-      "en": "You need at least 4 players to this mission.",
-      "translated": "Sono necessari almeno 4 giocatori per questa missione.",
+      "key": "otclient_modules.bestiary_otui.tr_11",
+      "en": "0",
+      "translated": "0",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crate.msg_1",
-      "en": "Perfect! You took a wonderful loupe from this crate.",
-      "translated": "Perfetto! Hai preso una lente meravigliosa da questa cassa.",
+      "key": "otclient_modules.bestiary_otui.tr_13",
+      "en": "Creature Name",
+      "translated": "Numele creaturii",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crate.msg_2",
-      "en": "You already took the magnifier.",
-      "translated": "Hai già preso la lente d'ingrandimento.",
+      "key": "otclient_modules.bestiary_otui.tr_14",
+      "en": "1 / 1",
+      "translated": "1/1",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crate.msg_3",
-      "en": "This crate belongs to Angelo. You should talk to him before taking something out.",
-      "translated": "Questa cassa appartiene ad Angelo. Dovresti parlargli prima di tirare fuori qualcosa.",
+      "key": "otclient_modules.bestiary_otui.tr_15",
+      "en": "Type to search",
+      "translated": "Tastați pentru a căuta",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crude_lava_pump.say_1",
-      "en": "With the pump destroyed, the lava stream has been stopped. Zone IV is acessible now!",
-      "translated": "Con la pompa distrutta, il flusso di lava è stato fermato. La Zona IV è ora accessibile!",
+      "key": "otclient_modules.bestiary_otui.tr_16",
+      "en": "Search",
+      "translated": "Căutare",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crude_lava_pump.say_2",
-      "en": "With the pump destroyed, the lava stream has been stopped. Zone V is acessible now!",
-      "translated": "Con la pompa distrutta, il flusso di lava è stato fermato. La Zona V è ora accessibile!",
+      "key": "otclient_modules.bestiary_otui.tr_7",
+      "en": "Charm Selection:",
+      "translated": "Selectie farmec:",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crude_lava_pump.say_3",
-      "en": "With the pump destroyed, the lava stream has been stopped. Zone VI is acessible now!",
-      "translated": "Con la pompa distrutta, il flusso di lava è stato fermato. La Zona VI è ora accessibile!",
+      "key": "otclient_modules.bestiary_otui.tr_8",
+      "en": "Select",
+      "translated": "Selecta",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crystal.msg_2",
-      "en": "You gathered nothing more than some small chips of red gem.",
-      "translated": "Non hai raccolto altro che piccoli frammenti di gemma rossa.",
+      "key": "otclient_modules.blessing.tr_1",
+      "en": "Event",
+      "translated": "Eveniment",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_crystal.msg_3",
-      "en": "With considerable effort you manage to knock a largely unscathed rough gem out of the rocks.",
-      "translated": "Con uno sforzo considerevole si riesce a far cadere dalle rocce una gemma grezza, quasi intatta.",
+      "key": "otclient_modules.blessing.tr_11",
+      "en": "- Depending on the fair fight rules, you will lose between",
+      "translated": "- În funcție de regulile de luptă corectă, vei pierde între ele",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_cure.say_1",
-      "en": "You take some hot water from the geyser.",
-      "translated": "Prendi dell'acqua calda dal geyser.",
+      "key": "otclient_modules.blessing.tr_12",
+      "en": "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by",
+      "translated": "Personajul tău este promovat și contul tău are Premium\nstarea. Ca rezultat, pierderea XP este redusă cu",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_custodian_door.msg_1",
-      "en": "The power of Gaffir won't let you pass this door!",
-      "translated": "Il potere di Gaffir non ti permetterà di oltrepassare questa porta!",
+      "key": "otclient_modules.blessing.tr_13",
+      "en": "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by",
+      "translated": "Personajul tău este promovat și contul tău are Premium\nstarea. Ca rezultat, pierderea XP este redusă cu",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_dark_remains.say_1",
-      "en": "The magic shield of protection is weakened!",
-      "translated": "Lo scudo magico di protezione è indebolito!",
+      "key": "otclient_modules.blessing.tr_14",
+      "en": "History",
+      "translated": "Istorie",
       "source": "google_translate"
     },
     {
-      "key": "scripts.actions_deeper_banuta_shortcut.msg_1",
-      "en": "You discovered a secret tunnel.",
-      "translated": "Hai scoperto un tunnel segreto.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_deeper_banuta_shortcut.msg_2",
-      "en": "You have already discovered this secret.",
-      "translated": "Hai già scoperto questo segreto.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_demon_oak.msg_1",
-      "en": "You need to kill all monsters first.",
-      "translated": "Devi prima uccidere tutti i mostri.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_demon_oak.msg_2",
-      "en": "Tell Oldrak about your great victory against the demon oak.",
-      "translated": "Racconta a Oldrak della tua grande vittoria contro la quercia demoniaca.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_demon_oak.say_1",
-      "en": "-krrrrak-",
-      "translated": "-krrrrak-",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_demon_oak_chest.msg_1",
-      "en": "It's empty.",
-      "translated": "È vuoto.",
+      "key": "otclient_modules.blessing.tr_15",
+      "en": "Back",
+      "translated": "Spate",
       "source": "google_translate"
     }
   ]

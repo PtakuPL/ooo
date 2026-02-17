@@ -166438,5 +166438,277 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:01:05.589315Z"
+  },
+  "questlog.quest_10.mission_5.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Питајте Палимута за мисију.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.490347Z"
+  },
+  "questlog.quest_10.mission_6.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Питајте Палимута за мисију.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.490964Z"
+  },
+  "questlog.quest_10.mission_7.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Питајте Палимута за мисију.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.491504Z"
+  },
+  "questlog.quest_10.mission_8.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Питајте Палимута за мисију.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.492022Z"
+  },
+  "questlog.quest_31.mission_1.state_4": {
+    "src_hash": "0ef4d7f94a08900604a4beeee409741f",
+    "text": "Завршили сте потрагу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.513784Z"
+  },
+  "questlog.quest_31.mission_12.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Завршили сте потрагу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.514636Z"
+  },
+  "questlog.quest_31.mission_4.state_6": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Завршили сте потрагу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.515766Z"
+  },
+  "questlog.quest_31.mission_5.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Завршили сте потрагу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:02.516315Z"
+  },
+  "questlog.quest_10.mission_4.state_3": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Одлучио си да помогнеш Палимуту, пријавиш му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:13.411562Z"
+  },
+  "questlog.quest_10.mission_4.state_4": {
+    "src_hash": "9fe5da3c0f71c8a09af85510534c8ba9",
+    "text": "Одлучили сте да помогнете __ПХ0__, пријавите му своју мисију. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:13.412183Z"
+  },
+  "questlog.quest_10.mission_4.state_5": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Врати се __ПХ0__ и пријави му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:13.412710Z"
+  },
+  "questlog.quest_10.mission_4.state_6": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Затражите од __ПХ0__ мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:13.413153Z"
+  },
+  "questlog.quest_10.mission_5.state_2": {
+    "src_hash": "2b3b293eb63c29ebf8c014c7b6971b72",
+    "text": "У овој мисији од вас се тражи да пронађете друида по имену Тамерин, у четврти Арене. Сада имате дозволу да користите механизам капија.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:19.561702Z"
+  },
+  "questlog.quest_10.mission_5.state_3": {
+    "src_hash": "62b9d2d37746c892dd4df931a0a33898",
+    "text": "Први је да донесете Тамерину бочицу Анимал Цуре-а, ово можете купити од Сифлинда на Нибелору (североисточно од __ПХ0__).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:19.562585Z"
+  },
+  "questlog.quest_10.mission_5.state_4": {
+    "src_hash": "739c0509ff0989bf4f80c0f630a78c52",
+    "text": "сада морате да убијете Морика Гладијатора и донесете његов шлем Тамерину као доказ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:19.563110Z"
+  },
+  "questlog.quest_10.mission_5.state_5": {
+    "src_hash": "393997f8fae41e4e5ae2b8e9a55ebb73",
+    "text": "Пријавите се Тамерину јер ће саслушати ваш захтев и сада можете да изаберете: стока за Палимут (добра страна), ратне звери за Иалахари (__ПХ0__) (лоша страна). Онда пријавите онај за који сте одлучили да је ваша мисија.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:19.564026Z"
+  },
+  "questlog.quest_10.mission_5.state_6": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Одлучио си да помогнеш Палимуту, пријавиш му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:23.709647Z"
+  },
+  "questlog.quest_10.mission_5.state_7": {
+    "src_hash": "4958a0cafba75b54582d823362abf797",
+    "text": "Одлучили сте да помогнете __ПХ0__, пријавите му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:23.710301Z"
+  },
+  "questlog.quest_10.mission_5.state_8": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Затражите од __ПХ0__ мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:23.710731Z"
+  },
+  "questlog.quest_10.mission_6.state_2": {
+    "src_hash": "091357b2dd39db47864e2b36201e4ed6",
+    "text": "Иалахари (__ПХ0__) вам наређује да отпутујете до гробљанске четврти и пронађете Чудну резбарију. Он вам даје амајлију духова и каже вам да га напуните измученим душама тамошњих духова да бисте га користили као извор енергије. Палимут жели Цхарм Цхаргед Гхост како би ослободио те душе. Сада можете поново да користите механизам Цеметери Куартер. Идите до велике зграде у четврти Гробља и употребите чаролију духова на чудној резбарији у задњем делу собе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:23.712311Z"
+  },
+  "questlog.quest_10.mission_6.state_3": {
+    "src_hash": "23cf4798636fbc19425b77e1f719de58",
+    "text": "Добра страна: Иди до Палимута, питај га о својој мисији и предај му шарм. Лоша страна: Питајте за своју мисију у Иалахари (__ПХ0__) и вратите је.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:28.870836Z"
+  },
+  "questlog.quest_10.mission_6.state_4": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Врати се __ПХ0__ и пријави му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:28.871317Z"
+  },
+  "questlog.quest_10.mission_6.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Затражите од __ПХ0__ мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:28.871728Z"
+  },
+  "questlog.quest_10.mission_7.state_2": {
+    "src_hash": "fe0e78cb6a40e222fca587bcc5dbc1b1",
+    "text": "Лоша страна: Иалахари (__ПХ1__) ће вас послати на нову мисију да одете у Потопљену четврт и убијете вође Куара, Инки, Спласхер и Схарптоотх. Добра страна: Уместо да се борите са било којим вођама Куара, Палимут ће вас послати да пронађете узрок __ПХ0__ агресивног понашања. Пронађите Маритиму и разговарајте са њом о Кварама и она ће вам објаснити у чему је њихов проблем.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:28.873084Z"
+  },
+  "questlog.quest_10.mission_7.state_3": {
+    "src_hash": "1e4fdc659915eb097d93e598dad3f11f",
+    "text": "Врати се Палимуту и ​​пријави му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:34.597869Z"
+  },
+  "questlog.quest_10.mission_7.state_4": {
+    "src_hash": "5bcb134294e0fb2885b2a082a25ce966",
+    "text": "Убио си Кварабосе. Затражите од __ПХ0__ мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:34.598518Z"
+  },
+  "questlog.quest_10.mission_7.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Затражите од __ПХ0__ мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:34.599166Z"
+  },
+  "questlog.quest_10.mission_8.state_2": {
+    "src_hash": "c70c7412146125f78bd718a987376cdd",
+    "text": "Лоша страна: За ову мисију Иалахари тражи да одете у Фабрички кварт и пронађете шаблонски кристал, који ће се користити за снабдевање оружјем за преузимање контроле над градом. Добра страна: Палимут ће вас послати тамо да користите кристал за снабдевање храном за град.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:34.600322Z"
+  },
+  "questlog.quest_10.mission_8.state_3": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Врати се __ПХ0__ и пријави му своју мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:39.311989Z"
+  },
+  "questlog.quest_10.mission_8.state_4": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Затражите од __ПХ0__ мисију.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:39.312467Z"
+  },
+  "questlog.quest_10.mission_9.name": {
+    "src_hash": "5828fc788959b84a5136deded2e8243f",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:39.312816Z"
+  },
+  "questlog.quest_10.mission_9.state_1": {
+    "src_hash": "ff8f647e53532248178a1f7691ff985d",
+    "text": "Сада морате да одлучите између навијања за Палимут или гола Јалахарија. Да бисте изабрали Палимутову добру страну, идите код њега и једноставно га замолите за мисију. Исто тако, да бисте се придружили Иалахари (__ПХ0__) (лоша страна) идите до њега и реците исто.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:39.313821Z"
+  },
+  "questlog.quest_10.mission_9.state_2": {
+    "src_hash": "3a25445c9f2ee6c336a39167818715dc",
+    "text": "већ сте одлучили!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:39.314132Z"
+  },
+  "questlog.quest_11.mission_1.description_dynamic": {
+    "src_hash": "e20ecd7ba813f4e84413de44a0bba2bd",
+    "text": "Придружили сте се __ПХ1__. Питајте Гризлија Адамса за неке ловачке задатке. Већ сте освојили __ПХ2__ поена. Тренутно имате __ПХ3__ босс поена.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:15:42.517799Z"
   }
 }

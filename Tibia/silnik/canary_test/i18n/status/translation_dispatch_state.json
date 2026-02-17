@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T00:14:05.721005Z",
-  "cycle_counter": 1026,
-  "last_target_key": "sv:html.json",
-  "last_pending_total": 1495,
+  "timestamp": "2026-02-17T00:16:50.354424Z",
+  "cycle_counter": 1029,
+  "last_target_key": "sr:cpp.json",
+  "last_pending_total": 861,
   "last_tier": 3,
   "last_cat_priority": 9,
   "candidates_count": 196,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 71,
+  "cache_cycle": 72,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -315,7 +315,9 @@
     "it:otclient_data.json": 0,
     "ru:example_merchant.json": 0,
     "ro:modules.json": 0,
-    "it:example_merchant.json": 0
+    "it:example_merchant.json": 0,
+    "sv:html.json": 0,
+    "sv:cpp.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -370,10 +372,10 @@
       "pl": 44.29,
       "es": 74.16,
       "ru": 36.04,
-      "ro": 20.47,
-      "it": 11.56,
+      "ro": 20.49,
+      "it": 11.58,
       "sr": 10.22,
-      "sv": 8.01
+      "sv": 8.09
     }
   }
 }

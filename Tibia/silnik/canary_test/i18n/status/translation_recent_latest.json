@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-17T02:16:07.289175Z",
-  "language": "ro",
-  "json_file": "raids.json",
-  "translated": 49,
+  "timestamp": "2026-02-17T02:17:12.153273Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "raid.lizards.name",
-      "en": "Lizards",
-      "translated": "Lizards",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "raid.cyclops.name",
-      "en": "Cyclops",
-      "translated": "Cyclops",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "raid.wild_horses.name",
-      "en": "Wild Horses",
-      "translated": "Wild Horses",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "raid.sheng.name",
-      "en": "Sheng",
-      "translated": "Sheng",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "raid.munster.name",
-      "en": "Munster",
-      "translated": "Munster",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "raid.rottie1.name",
-      "en": "Rottie1",
-      "translated": "Rottie1",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "raid.teleskor.name",
-      "en": "Teleskor",
-      "translated": "Teleskor",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "raid.rottie2.name",
-      "en": "Rottie2",
-      "translated": "Rottie2",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "raid.crustacea_gigantica_4.name",
-      "en": "Crustacea Gigantica 4",
-      "translated": "Crustacea Gigantica 4",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "raid.crustacea_gigantica_5.name",
-      "en": "Crustacea Gigantica 5",
-      "translated": "Crustacea Gigantica 5",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "raid.furyosa.name",
-      "en": "Furyosa",
-      "translated": "Furyosa",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "raid.chayenne.name",
-      "en": "Chayenne",
-      "translated": "Chayenne",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "raid.omrafir.name",
-      "en": "Omrafir",
-      "translated": "Omrafir",
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
       "source": "tm"
     },
     {
-      "key": "raid.gaz_haragoth.name",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth",
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
       "source": "tm"
     },
     {
-      "key": "raid.yeti.name",
-      "en": "Yeti",
-      "translated": "Yeti",
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "raid.gargoyle.name",
-      "en": "Gargoyle",
-      "translated": "Gargoyle",
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "raid.nomad.name",
-      "en": "Nomad",
-      "translated": "Nomad",
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "raid.cobra.name",
-      "en": "Cobra",
-      "translated": "Cobra",
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
       "source": "tm"
     },
     {
-      "key": "raid.bone_beast.name",
-      "en": "Bone Beast",
-      "translated": "Bone Beast",
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "raid.terramite.name",
-      "en": "Terramite",
-      "translated": "Terramite",
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     }
   ]

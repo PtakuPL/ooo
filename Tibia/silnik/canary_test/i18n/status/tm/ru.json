@@ -25990,5 +25990,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:15:28.096294Z"
+  },
+  "questlog.quest_11.mission_11.state_2": {
+    "src_hash": "81f34ca15bdf0533eba68b8fcb292fd7",
+    "text": "Вы успешно охотились на 200 каменных големов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:46.806527Z"
   }
 }

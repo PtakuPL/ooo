@@ -31886,5 +31886,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:16:03.285140Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_10": {
+    "src_hash": "021da1b20f73dc252361a54d80497ef3",
+    "text": "Rang",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.087249Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_5": {
+    "src_hash": "75dd5f1160a3f02b6fae89c54361a1b3",
+    "text": "Puncte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.088398Z"
+  },
+  "otclient_modules.gameinterface.tr_45": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Deconectare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.098478Z"
+  },
+  "otclient_modules.gameinterface.tr_47": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Deconectare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.098865Z"
+  },
+  "otclient_modules.gameinterface.tr_53": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Deconectare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.099566Z"
+  },
+  "otclient_modules.quickloot_otui.tr_10": {
+    "src_hash": "6794e7b16f55b952b04e118ec3a7cc78",
+    "text": "Pradă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.148052Z"
+  },
+  "otclient_modules.skills_otui.tr_13": {
+    "src_hash": "6097f89e3092d4ccd249c9d479785c1f",
+    "text": "Moarte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.155649Z"
+  },
+  "otclient_modules.skills_otui.tr_47": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.157960Z"
+  },
+  "otclient_modules.skills_otui.tr_58": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.158855Z"
+  },
+  "otclient_modules.skills_otui.tr_9": {
+    "src_hash": "f5ee8bcf58da4f2184844a4b0c5b727c",
+    "text": "manadrain",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.159397Z"
+  },
+  "otclient_modules.spelllist_otui.tr_1": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.159610Z"
+  },
+  "otclient_modules.spelllist_otui.tr_16": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.160273Z"
+  },
+  "otclient_modules.spelllist_otui.tr_2": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.160559Z"
+  },
+  "otclient_modules.spelllist_otui.tr_20": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.160880Z"
+  },
+  "otclient_modules.spelllist_otui.tr_29": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.161489Z"
+  },
+  "otclient_modules.spelllist_otui.tr_30": {
+    "src_hash": "f3f43e30c8c7d78c6ac0173515e57a00",
+    "text": "Filtre",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.161877Z"
+  },
+  "otclient_modules.spelllist_otui.tr_31": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.162155Z"
+  },
+  "otclient_modules.spelllist_otui.tr_32": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.162372Z"
+  },
+  "otclient_modules.spelllist_otui.tr_6": {
+    "src_hash": "80dd330a5c08653498c49a219a124543",
+    "text": "Vindecare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.162827Z"
+  },
+  "otclient_modules.spelllist_otui.tr_7": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Atac",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.163072Z"
+  },
+  "otclient_modules.statsbar.tr_10": {
+    "src_hash": "3535f1e07ee1a37cad48ad6cc23e7db5",
+    "text": "Abilități de luptă cu topor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.163772Z"
+  },
+  "otclient_modules.statsbar.tr_11": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.164067Z"
+  },
+  "otclient_modules.statsbar.tr_12": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.164396Z"
+  },
+  "otclient_modules.statsbar.tr_7": {
+    "src_hash": "00bddc03f89260bb2a36dbb1adcb807a",
+    "text": "Abilitatea de luptă cu pumnul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.165174Z"
+  },
+  "otclient_modules.statsbar.tr_8": {
+    "src_hash": "c943a8395cc808680641259bfbdc4921",
+    "text": "Abilitatea de luptă la distanță",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.165604Z"
+  },
+  "otclient_modules.statsbar.tr_9": {
+    "src_hash": "6f84b63a6480e8f117fc876ed9bdfcd1",
+    "text": "Abilitatea de luptă în club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.165950Z"
+  },
+  "otclient_modules.style_otui.tr_4": {
+    "src_hash": "673722e49f6904cea7636bb8e1a03eae",
+    "text": "Monede de aur",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.166491Z"
+  },
+  "otclient_modules.tasks.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.166721Z"
+  },
+  "otclient_modules.tasks.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.167640Z"
+  },
+  "otclient_modules.tasks_otui.tr_4": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.168100Z"
+  },
+  "otclient_modules.textwindow.tr_6": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.169079Z"
+  },
+  "otclient_modules.textwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.169388Z"
+  },
+  "otclient_modules.textwindow_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.169678Z"
+  },
+  "otclient_modules.things.tr_1": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.169937Z"
+  },
+  "otclient_modules.tradewindow_otui.tr_3": {
+    "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+    "text": "Comerț",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.170766Z"
+  },
+  "otclient_modules.transferpoints_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.171140Z"
+  },
+  "otclient_modules.ui_otui.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.171660Z"
+  },
+  "otclient_modules.uiinputbox.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.171853Z"
+  },
+  "otclient_modules.uiinputbox.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.172195Z"
+  },
+  "otclient_modules.updater_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.173697Z"
+  },
+  "otclient_modules.violationwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.174422Z"
+  },
+  "otclient_modules.violationwindow_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.174618Z"
+  },
+  "otclient_modules.waitinglist_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:50.176741Z"
+  },
+  "otclient_modules.addgroup_otui.tr_3": {
+    "src_hash": "16053feba495862dfb4e07b3decda8d8",
+    "text": "Vă rugăm să introduceți un nume de grup:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:53.563702Z"
+  },
+  "otclient_modules.addgroup_otui.tr_4": {
+    "src_hash": "8e077ba9cc65969999798b34dfff99d5",
+    "text": "Adăugați grup VIP (Grupurile create de utilizator au rămas: %s)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:53.564112Z"
+  },
+  "otclient_modules.addserver_otui.tr_2": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Adăuga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:53.564292Z"
+  },
+  "otclient_modules.addserver_otui.tr_5": {
+    "src_hash": "c2ca16d048ec66e04bca283eab048ec2",
+    "text": "Gazdă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:57.505193Z"
+  },
+  "otclient_modules.addserver_otui.tr_6": {
+    "src_hash": "d9d5734a2379a059a3163eed52ecb95b",
+    "text": "Server nou",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:16:57.505403Z"
   }
 }

@@ -20838,5 +20838,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:08:42.186430Z"
+  },
+  "npc.example_merchant.greeting": {
+    "src_hash": "adec20c0aedde482032fd3adb3897cac",
+    "text": "Привет, %s! Добро пожаловать в мой магазин. Скажи {trade}, чтобы увидеть мои предложения.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:55.783407Z"
+  },
+  "_comment": {
+    "src_hash": "92c37f5d3c00bcd4993ae8b20d4912c6",
+    "text": "Example NPC-торговец - перевод на английский",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:58.595998Z"
+  },
+  "npc.example_merchant.low_level": {
+    "src_hash": "8ed106b17eb3e541a267eb1ce04cf880",
+    "text": "Извините, но вы слишком неопытны. Возвращайтесь, когда достигнете уровня 8.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:58.596870Z"
+  },
+  "npc.example_merchant.farewell": {
+    "src_hash": "8d4c68e5bd403916721e0a1bb4157390",
+    "text": "Прощай, %s. Посетите меня снова!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:58.597411Z"
+  },
+  "npc.example_merchant.help": {
+    "src_hash": "44f922ad592a665c09c99f143c12e55b",
+    "text": "Я могу продать тебе зелья, оружие и броню. Скажите {trade}, чтобы просмотреть мои товары.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:58.598147Z"
+  },
+  "npc.example_merchant.job": {
+    "src_hash": "85f48738faa47736979b71b04440e6ac",
+    "text": "Я торговец. Продаю различные товары искателям приключений.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:01.405036Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "Меня зовут Маркус. Я управляю этим магазином.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:01.405438Z"
+  },
+  "npc.example_merchant.trade": {
+    "src_hash": "025ffa5f7383d5062f818091cb13b198",
+    "text": "Конечно! Вот мои предложения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:01.405772Z"
+  },
+  "npc.example_merchant.news_1": {
+    "src_hash": "f91323a89a9995189f7d38f5c7ef5949",
+    "text": "Вы слышали? Dragons были замечены возле гор!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:01.406342Z"
+  },
+  "npc.example_merchant.news_2": {
+    "src_hash": "277424095e5370279415b09f4d99e841",
+    "text": "Король ищет отважных искателей приключений.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:01.406744Z"
+  },
+  "nv.example_merchant.1": {
+    "src_hash": "e988ae8e1d942593474bbe72fb1af93d",
+    "text": "Лучшие зелья в городе!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:03.338584Z"
+  },
+  "nv.example_merchant.2": {
+    "src_hash": "202780b2ed8917c475ff421fc95e7999",
+    "text": "Качественное оружие и броня!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:13:03.338923Z"
   }
 }

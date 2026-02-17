@@ -29638,5 +29638,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:08:01.695350Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.949956Z"
+  },
+  "otclient_data.30_minimap_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.950446Z"
+  },
+  "otclient_data.30_minimap_otui.tr_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.950992Z"
+  },
+  "otclient_data.40_entergame_otui.tr_1": {
+    "src_hash": "e8ac4263140e9f899ed2bbd5b0e9c8c5",
+    "text": "Entra nel gioco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.952737Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.953971Z"
+  },
+  "otclient_data.40_minimap_otui.tr_3": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.954359Z"
+  },
+  "otclient_data.40_minimap_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.954812Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.955553Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:11.957001Z"
+  },
+  "otclient_data.30_minimap_otui.tr_4": {
+    "src_hash": "52f5e0bc3859bc5f5e25130b6c7e8881",
+    "text": "Posizione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:15.162504Z"
+  },
+  "otclient_data.30_minimap_otui.tr_5": {
+    "src_hash": "432cef6a4477acdc805f743081b1e531",
+    "text": "Crea contrassegno sulla mappa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:15.162892Z"
+  },
+  "otclient_data.30_minimap_otui.tr_6": {
+    "src_hash": "4f1f6016fc9f3f2353c0cc7c67b292bd",
+    "text": "Centro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:15.163070Z"
+  },
+  "otclient_data.40_console_otui.tr_1": {
+    "src_hash": "3438fb8ff7138658a8a9d1ba74a7f15b",
+    "text": "Regola il volume",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:15.163276Z"
+  },
+  "otclient_data.40_console_otui.tr_2": {
+    "src_hash": "9dfab5baaa91e22c69ad63136b286eae",
+    "text": "Ignora i giocatori",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:15.163512Z"
+  },
+  "otclient_data.40_console_otui.tr_3": {
+    "src_hash": "481ddf27422767090d74e0aba96896bc",
+    "text": "Apri nuovo canale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:23.050254Z"
+  },
+  "otclient_data.40_console_otui.tr_4": {
+    "src_hash": "1b0e52b2ac73b0fbf9d55a92f4227018",
+    "text": "Cancella la finestra del messaggio corrente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:23.050572Z"
+  },
+  "otclient_data.40_console_otui.tr_5": {
+    "src_hash": "633af479e304ecf8b57b1aa718dedd05",
+    "text": "Chiudi questo canale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:23.050811Z"
+  },
+  "otclient_data.40_console_otui.tr_6": {
+    "src_hash": "6223a29e77c4bd67f76a3ccf6b8dccf3",
+    "text": "Disabilita la modalità chat, consenti di camminare utilizzando ASDW",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:23.051180Z"
+  },
+  "otclient_data.40_healthinfo_otui.tr_1": {
+    "src_hash": "ccc9d277fa835157db8a6b0d0889fc6b",
+    "text": "Informazioni sulla salute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:23.051389Z"
+  },
+  "otclient_data.40_inventory_otui.tr_1": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Esci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:27.443287Z"
+  },
+  "otclient_data.40_inventory_otui.tr_2": {
+    "src_hash": "a0199cf7be7b241ffef10af0aef3efab",
+    "text": "Tasti di scelta rapida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:27.443518Z"
+  },
+  "otclient_data.40_inventory_otui.tr_3": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opzioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:27.443690Z"
+  },
+  "otclient_data.40_inventory_otui.tr_4": {
+    "src_hash": "11a755d598c0c417f9a36758c3da7481",
+    "text": "Fermare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:27.443862Z"
+  },
+  "otclient_data.40_inventory_otui.tr_5": {
+    "src_hash": "9b8f749bd07d0e634255997990626153",
+    "text": "Borsa aperta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:27.444055Z"
+  },
+  "otclient_data.40_minimap_otui.tr_1": {
+    "src_hash": "82037f1c11a9ab28405f8da146935a82",
+    "text": "Tieni premuto il pulsante sinistro del mouse per navigare\nScorri il pulsante centrale del mouse per ingrandire\nTasto destro del mouse per creare indicatori sulla mappa\nPremi Ctrl+Shift+M per visualizzare l'intera mappa di gioco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:31.116242Z"
+  },
+  "otclient_data.40_minimap_otui.tr_5": {
+    "src_hash": "52f5e0bc3859bc5f5e25130b6c7e8881",
+    "text": "Posizione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:31.116489Z"
+  },
+  "otclient_data.40_minimap_otui.tr_6": {
+    "src_hash": "432cef6a4477acdc805f743081b1e531",
+    "text": "Crea contrassegno sulla mappa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:31.116745Z"
+  },
+  "otclient_data.40_minimap_otui.tr_7": {
+    "src_hash": "4f1f6016fc9f3f2353c0cc7c67b292bd",
+    "text": "Centro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:31.116912Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_10": {
+    "src_hash": "797844d837705320f2b7e13615afdbbb",
+    "text": "Gestisci preimpostazioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:31.117117Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_11": {
+    "src_hash": "a254c25adc7d10d7e9c4889484f875a5",
+    "text": "Dettaglio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:33.959215Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_12": {
+    "src_hash": "0c7d6cf19426e01dcfa32434828ed266",
+    "text": "Secondario",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:33.959411Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_13": {
+    "src_hash": "074de7e7c226d5c60f8af14c20725352",
+    "text": "Primario",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:33.959582Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_14": {
+    "src_hash": "98921133d10fbdb0fb6dbb7b2648befe",
+    "text": "Testa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:33.959740Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_15": {
+    "src_hash": "51ec9bf4aaeab1b25bb57f9f8d4de557",
+    "text": "Titolo:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:33.959905Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_16": {
+    "src_hash": "42e0f47616ed684a0f8648d6100d1efc",
+    "text": "Effetti:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:40.008788Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_17": {
+    "src_hash": "4118ca5963e26bb2e02396441cb08d14",
+    "text": "Barra della salute:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:40.009008Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_20": {
+    "src_hash": "f124188d77322d6ffd051da38b61869b",
+    "text": "Ali:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:40.010683Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_21": {
+    "src_hash": "f754b00a6a4a9bb88e73e4cf197d6fe9",
+    "text": "Familiare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:44.692329Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_22": {
+    "src_hash": "810ee74d357168d4353ca7eed319ff8d",
+    "text": "Montare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:44.692519Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_23": {
+    "src_hash": "daf0a6cb0287754a012997dde306d328",
+    "text": "Vestito:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:44.692700Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_24": {
+    "src_hash": "d0a22fb077e5284e385ed5611bc6ac7e",
+    "text": "Preimpostazione:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:44.692886Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_25": {
+    "src_hash": "bfb44d6eadd3b2b4052861b85ac72fbf",
+    "text": "Cambia aspetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:44.693111Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_26": {
+    "src_hash": "eace16d66cdd93ad876c620db7456077",
+    "text": "Montare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:49.026439Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_27": {
+    "src_hash": "7d83903ab71897740b5e7d9646bc262e",
+    "text": "Componente aggiuntivo 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:49.026738Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_28": {
+    "src_hash": "a7c19032df9d43b8c62a563d6c72e6c3",
+    "text": "Componente aggiuntivo 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:49.026930Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_29": {
+    "src_hash": "f1206f9fadc5ce41694f69129aecac26",
+    "text": "Configura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:49.027104Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_3": {
+    "src_hash": "a15e9d627362cb8837d0b910bc53a55e",
+    "text": "Cerca per nome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:49.027309Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_30": {
+    "src_hash": "8bbc4324837980c8e15453496256eede",
+    "text": "Abilita/Disabilita l'animazione del movimento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:12:51.501653Z"
   }
 }

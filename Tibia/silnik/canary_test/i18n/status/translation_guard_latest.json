@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T00:11:29.482534Z",
-  "cycle": 69,
-  "language": "es",
-  "json_file": "libs.json",
-  "translated": 1,
+  "timestamp": "2026-02-17T00:13:03.913755Z",
+  "cycle": 70,
+  "language": "ru",
+  "json_file": "example_merchant.json",
+  "translated": 12,
   "placeholders": 0,
-  "guard_fail": 2,
+  "guard_fail": 1,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 88
+  "strict_skipped_done": 1
 }

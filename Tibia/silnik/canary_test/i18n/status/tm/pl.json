@@ -108718,5 +108718,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:10:25.379291Z"
+  },
+  "cpp.returnvalue.drop_two_handed_item": {
+    "src_hash": "38bfa48088290a448b810585bc40748e",
+    "text": "Najpierw upuść przedmiot dwuręczny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:44.562953Z"
+  },
+  "cpp.returnvalue.first_go_downstairs": {
+    "src_hash": "a5c55bc7d4edb8b8295d4468f5453275",
+    "text": "Najpierw zejdź na dół.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:50.715902Z"
+  },
+  "cpp.returnvalue.first_go_upstairs": {
+    "src_hash": "efb430e66770677c14bee3ca0a51533c",
+    "text": "Najpierw idź na górę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:50.716194Z"
+  },
+  "cpp.returnvalue.item_cannot_be_moved_pouch": {
+    "src_hash": "c2c06ce028e51dfcbbfe65f2005ccf08",
+    "text": "Tego przedmiotu nie można tam przenieść. W swoim złotym woreczku możesz umieszczać wyłącznie złote, platynowe i kryształowe monety.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:50.716741Z"
+  },
+  "cpp.returnvalue.item_cannot_be_moved_there": {
+    "src_hash": "f6f0276650457e2abc30425965344eee",
+    "text": "Tego przedmiotu nie można tam przenieść.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:50.717079Z"
+  },
+  "cpp.returnvalue.item_is_not_yours": {
+    "src_hash": "e65559dd99064d96e0f465c95783e5a7",
+    "text": "Ten przedmiot nie jest Twój.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:50.717375Z"
+  },
+  "cpp.returnvalue.item_untradeable": {
+    "src_hash": "2ab2b142ae5096a020233300a242da21",
+    "text": "Ten przedmiot jest niezbywalny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:58.343602Z"
+  },
+  "cpp.returnvalue.no_party_members_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Brak członków drużyny w zasięgu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:58.343937Z"
+  },
+  "cpp.returnvalue.no_such_raid_exists": {
+    "src_hash": "415bdb66fc5012838fe98ecdec16a61b",
+    "text": "Nie ma takiego nalotu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:58.344280Z"
+  },
+  "cpp.returnvalue.not_bought_in_store": {
+    "src_hash": "de28d1f97804c5f676efda3546c957bc",
+    "text": "Nie możesz przenieść tego przedmiotu do skrzynki odbiorczej sklepu, ponieważ nie został on kupiony w sklepie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:58.344785Z"
+  },
+  "cpp.returnvalue.not_enough_axe_level": {
+    "src_hash": "d6bdf8a2b9f951ed7a0f2023d62fc25c",
+    "text": "Nie masz wystarczającego poziomu topora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:14:58.345115Z"
+  },
+  "cpp.returnvalue.not_enough_capacity": {
+    "src_hash": "e7f701b25aca142551cbe4481f004aa4",
+    "text": "Ten przedmiot jest zbyt ciężki, abyś mógł go unieść.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:06.089905Z"
+  },
+  "cpp.returnvalue.not_enough_club_level": {
+    "src_hash": "8a28d05e7ef173938933e33ca3640458",
+    "text": "Nie masz wystarczającego poziomu klubowego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:06.090343Z"
+  },
+  "cpp.returnvalue.not_enough_distance_level": {
+    "src_hash": "8fb13d89e62b5e6330ed448216dfcd94",
+    "text": "Nie masz wystarczającego poziomu odległości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:06.090692Z"
+  },
+  "cpp.returnvalue.not_enough_fish_level": {
+    "src_hash": "dd456b95d925ae316710fc5938bc3383",
+    "text": "Nie masz wystarczającego poziomu połowów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:06.091094Z"
+  },
+  "cpp.returnvalue.not_enough_magic_level": {
+    "src_hash": "8481850b693d78d80a4801151144ecf9",
+    "text": "Nie masz wystarczającego poziomu magii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:06.091431Z"
+  },
+  "cpp.returnvalue.not_enough_shield_level": {
+    "src_hash": "ee99810800d1357b5810ea12ef150e89",
+    "text": "Nie masz wystarczającego poziomu ekranowania",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:13.921062Z"
+  },
+  "cpp.returnvalue.not_movable": {
+    "src_hash": "09afebac33251135eec4028f1a859c9f",
+    "text": "Nie możesz przenieść tego obiektu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:13.921409Z"
+  },
+  "cpp.returnvalue.not_required_level_to_use_rune": {
+    "src_hash": "ac09c84228ade24b49ad0e03addf4b5f",
+    "text": "Nie masz wymaganego poziomu magii, aby użyć tej runy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:13.921805Z"
+  },
+  "cpp.returnvalue.only_ammo_in_quiver": {
+    "src_hash": "6d0a7931f1e8e7027daaf97d19761550",
+    "text": "W tym kołczanie mieszczą się wyłącznie strzały i bełty.\nNie można w nim umieszczać żadnych innych przedmiotów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:13.922375Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone": {
+    "src_hash": "d2aecf8ad0d3683be703f96024d3d815",
+    "text": "Nie możesz wejść do strefy pvp po zaatakowaniu innego gracza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:13.922787Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked_leave_pvp_zone": {
+    "src_hash": "ee88f2afb9f430721fcada014aa90adb",
+    "text": "Nie możesz opuścić strefy pvp po zaatakowaniu innego gracza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:21.215829Z"
+  },
+  "cpp.returnvalue.put_this_object_in_both_hands": {
+    "src_hash": "a476db9317a6200833b07a9780f0c67e",
+    "text": "Umieść ten przedmiot w obu rękach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:21.216167Z"
+  },
+  "cpp.returnvalue.put_this_object_in_your_hand": {
+    "src_hash": "109633d7f2614872d8467288e58d91ca",
+    "text": "Weź ten przedmiot do ręki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:21.216468Z"
+  },
+  "cpp.returnvalue.reward_chest_is_empty": {
+    "src_hash": "4b0b3ba3a168ad5c7a08d42f0a53a2a2",
+    "text": "Skrzynia jest obecnie pusta. Nie brałeś udziału w żadnych bitwach w ciągu ostatnich siedmiu dni lub już odebrałeś nagrodę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:21.217071Z"
+  },
+  "cpp.returnvalue.reward_container_is_empty": {
+    "src_hash": "343697aa3f0ed439dc742064f9d3dd64",
+    "text": "Odebrałeś już swoją nagrodę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:21.217385Z"
+  },
+  "cpp.returnvalue.this_is_impossible": {
+    "src_hash": "8fd8c767e5ed064d6b38148848a15744",
+    "text": "To niemożliwe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:26.597700Z"
+  },
+  "cpp.returnvalue.this_player_is_already_trading": {
+    "src_hash": "f8a6f765bbc88fc126951183f633a237",
+    "text": "Ten gracz już handluje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:26.598023Z"
+  },
+  "cpp.returnvalue.too_far_away": {
+    "src_hash": "4b154909632f141f1090390d3c008182",
+    "text": "Za daleko.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:26.598348Z"
+  },
+  "cpp.returnvalue.trade_player_already_owns_a_house": {
+    "src_hash": "273625f451f375d0f903789b60b63813",
+    "text": "Gracz handlowy posiada już dom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:26.598679Z"
+  },
+  "cpp.returnvalue.trade_player_far_away": {
+    "src_hash": "3821aef5745a394fc9c64076a8da5b2f",
+    "text": "Gracz handlowy jest za daleko.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:26.598965Z"
+  },
+  "cpp.returnvalue.trade_player_highest_bidder": {
+    "src_hash": "3670dca333a170731ca398e25bcfd626",
+    "text": "Gracz zajmujący się handlem jest obecnie osobą, która zaoferuje najwyższą cenę w domu aukcyjnym.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:34.223981Z"
+  },
+  "cpp.returnvalue.turn_secure_mode_to_attack_unmarked_players": {
+    "src_hash": "09649390856a50c18106a1f047a1fa78",
+    "text": "Wyłącz tryb bezpieczny, jeśli naprawdę chcesz atakować nieoznaczonych graczy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:34.224429Z"
+  },
+  "cpp.returnvalue.you_are_already_trading": {
+    "src_hash": "6591e347b61fa035352d4d99fbcdd8cb",
+    "text": "Już handlujesz. Najpierw zakończ tę transakcję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:34.224801Z"
+  },
+  "cpp.returnvalue.you_can_only_use_it_on_creatures": {
+    "src_hash": "a25c634eeb881f3436b358b8ca8cabd6",
+    "text": "Można go używać tylko na stworzeniach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:34.225189Z"
+  },
+  "cpp.returnvalue.you_cannot_trade_this_house": {
+    "src_hash": "71f6761cd7ed30eefd46752e552bd06c",
+    "text": "Nie możesz handlować tym domem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:34.225506Z"
+  },
+  "cpp.returnvalue.you_cant_open_corpse_admin": {
+    "src_hash": "5a5e198ff05dcd5c63e0305161c59ef8",
+    "text": "Nie możesz otworzyć tych zwłok, ponieważ jesteś administratorem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:38.933453Z"
+  },
+  "cpp.returnvalue.you_dont_own_this_house": {
+    "src_hash": "95b1521f3700dfad46a1c1a566dd6783",
+    "text": "Nie jesteś właścicielem tego domu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:38.933781Z"
+  },
+  "cpp.returnvalue.you_may_not_attack_a_person_in_protection_zone": {
+    "src_hash": "a885b818844f84e62814c4273da6a026",
+    "text": "Nie możesz atakować osoby znajdującej się w strefie ochronnej.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:38.934230Z"
+  },
+  "cpp.returnvalue.you_may_not_attack_a_person_while_in_protection_zone": {
+    "src_hash": "8d1aef95fa7487ced8b445c613c6f5c3",
+    "text": "Nie możesz atakować nikogo, gdy jesteś w strefie ochronnej.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:15:38.934651Z"
   }
 }

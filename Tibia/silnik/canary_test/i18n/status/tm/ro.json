@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:29:05.260626Z"
+    "updated_at": "2026-02-17T00:51:17.512275Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -25702,5 +25702,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:50:23.050007Z"
+  },
+  "item.11621.desc": {
+    "src_hash": "0c7e73079deb9dec34b004dcb71a2caa",
+    "text": "Este o rună de țurțuri împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:22.825371Z"
+  },
+  "item.11622.desc": {
+    "src_hash": "0c7e73079deb9dec34b004dcb71a2caa",
+    "text": "Este o rună de țurțuri împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:22.825686Z"
+  },
+  "item.11623.desc": {
+    "src_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
+    "text": "Este o rună de avalanșă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:22.825999Z"
+  },
+  "item.11624.desc": {
+    "src_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
+    "text": "Este o rună de avalanșă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:25.538388Z"
+  },
+  "item.11625.desc": {
+    "src_hash": "45d7589488c894201699bba8e0401bb9",
+    "text": "Este o rună de rachetă sfântă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:25.538805Z"
+  },
+  "item.11626.desc": {
+    "src_hash": "45d7589488c894201699bba8e0401bb9",
+    "text": "Este o rună de rachetă sfântă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:25.539173Z"
+  },
+  "item.11627.desc": {
+    "src_hash": "a2db5ac857c213b3e478a99490efc5c2",
+    "text": "Este o rună împodobită cu bombe energetice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:25.539528Z"
+  },
+  "item.11628.desc": {
+    "src_hash": "a2db5ac857c213b3e478a99490efc5c2",
+    "text": "Este o rună împodobită cu bombe energetice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:25.539875Z"
+  },
+  "item.11629.desc": {
+    "src_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
+    "text": "Este o rună paralizantă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:27.467639Z"
+  },
+  "item.11630.desc": {
+    "src_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
+    "text": "Este o rună paralizantă împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:27.467964Z"
   }
 }

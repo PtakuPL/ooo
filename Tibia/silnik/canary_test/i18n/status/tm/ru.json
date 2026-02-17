@@ -22150,5 +22150,157 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:49:59.522972Z"
+  },
+  "monster.thanatursus.voice_2": {
+    "src_hash": "4663eccca7f3da2ef4995c3583f67c50",
+    "text": "Никто никогда не сбежит из этого места, мувахаха!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:37.127006Z"
+  },
+  "monster.insane_siren.desc": {
+    "src_hash": "a93a1f1d1821efdda9f9378c89e1603f",
+    "text": "безумная сирена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:48.905569Z"
+  },
+  "monster.insane_siren.voice_1": {
+    "src_hash": "302a99347bf20c5d7c746f033250cb29",
+    "text": "Мечта или кошмар?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:51.491770Z"
+  },
+  "monster.swamp_troll.name": {
+    "src_hash": "f0dc453bf53b4ae14463c8b73a534dc0",
+    "text": "Болотный тролль",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:51.492023Z"
+  },
+  "monster.swamp_troll.desc": {
+    "src_hash": "28b09c77af1680f763569d5db5434b33",
+    "text": "болотный тролль",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:51.492261Z"
+  },
+  "monster.swamp_troll.voice_1": {
+    "src_hash": "080d45c7a0948b096db198734cee487e",
+    "text": "Я сильный! Я съел шпинат!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:51.492577Z"
+  },
+  "monster.chakoya_windcaller.name": {
+    "src_hash": "d74edec197a9512bf19dcc23865d4560",
+    "text": "Чакойя Призывательница Ветра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:51.492856Z"
+  },
+  "monster.chakoya_windcaller.desc": {
+    "src_hash": "e07e534d89de78b75b203b1421d25a37",
+    "text": "призывательница ветра чакойя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:54.424656Z"
+  },
+  "monster.chakoya_windcaller.voice_1": {
+    "src_hash": "eb4f50fa7eb3d28952ae6e335b40f8b8",
+    "text": "Сиксик джи джусипа!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:54.424943Z"
+  },
+  "monster.chakoya_windcaller.voice_2": {
+    "src_hash": "1f68b8d2fc71803448ad202280aeb080",
+    "text": "Джагура талука така!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:54.425213Z"
+  },
+  "monster.chakoya_windcaller.voice_4": {
+    "src_hash": "0b662bb3b42f7a567cb02cba27ee8ba5",
+    "text": "Куату нгурака!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:54.425546Z"
+  },
+  "monster.minotaur_occultist.name": {
+    "src_hash": "f87ee93ec2e6f1382c3f45d5b78b2898",
+    "text": "Минотавр Оккультист",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:56.986186Z"
+  },
+  "monster.minotaur_occultist.desc": {
+    "src_hash": "f4f4fbfa60682535e6d90f8205b4ded0",
+    "text": "минотавр оккультист",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:56.986637Z"
+  },
+  "monster.goblin_assassin.name": {
+    "src_hash": "27e0d7719cb2c208329614a2f9772586",
+    "text": "Гоблин-убийца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:56.986981Z"
+  },
+  "monster.goblin_assassin.desc": {
+    "src_hash": "2f86a76a372545c53d0cd1e9196c2593",
+    "text": "гоблин-убийца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:56.987230Z"
+  },
+  "monster.goblin_assassin.voice_1": {
+    "src_hash": "86b653c0204e0cb9d8417fb98ef9ebfc",
+    "text": "Гоблин Пауааа!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:56.987470Z"
+  },
+  "monster.goblin_assassin.voice_2": {
+    "src_hash": "20f5086bdd2fff8e27649824fbdde15d",
+    "text": "Я убью тебя!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:59.208985Z"
+  },
+  "monster.goblin_assassin.voice_3": {
+    "src_hash": "a16876acb54a7fe9419b3fe708e713ff",
+    "text": "Моя зеленая угроза!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:59.209265Z"
+  },
+  "monster.goblin_assassin.voice_4": {
+    "src_hash": "821800abc26831e12a00c04e0a59e24d",
+    "text": "Гобабунга!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:51:59.209479Z"
   }
 }

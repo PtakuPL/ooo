@@ -39054,5 +39054,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:53:31.404739Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.counter.agent.L37.2085": {
+    "src_hash": "c8c549f68a94f2d0de0eaeb94e664d99",
+    "text": "O furtună de nisip a distrus aproape toți stâlpii. Efectul contraagentului a funcționat diferit de cel așteptat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.765631Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.counter.agent.L38.2086": {
+    "src_hash": "380f8c945d50e19564aae60338ef5e9d",
+    "text": "Furtuna de nisip nu numai că a distrus oaza, dar a scos la iveală și niște plăci de pavaj și o pârghie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.766497Z"
+  },
+  "data.otservbr.global.scripts.quests.dark.trails.actions.corpse.L5.1814": {
+    "src_hash": "c5a164cb607ac32cea2ea759c496812e",
+    "text": "Quandon a fost ucis! Ar trebui să-i raportezi lui Sholley despre asta!.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.774914Z"
+  },
+  "data.otservbr.global.scripts.quests.dark.trails.actions.corpse.L8.1815": {
+    "src_hash": "77b8010b0414880bdbf6e4e8ee53ce5e",
+    "text": "Acesta este gol!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.775208Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L5.2254": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "Deodată, un gardian sare la tine din spate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.776616Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L5.2250": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "Deodată, un gardian sare la tine din spate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.777543Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L12.1973": {
+    "src_hash": "ab2d9b844dd176ba8e117e14246f7334",
+    "text": "Tu alegi culoarea decăderii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.781672Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L17.1974": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.782037Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L23.1975": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.782421Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L29.1976": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.782792Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L35.1977": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Alegeți culoarea corectă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.783285Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.closed.silvered.trap.L14.2037": {
+    "src_hash": "aac52a110badf04741cf3afd1d3bf999",
+    "text": "Capcana argintie a fost pusă și nu poate fi scoasă din poziția sa actuală.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.792480Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.closed.silvered.trap.L4.2035": {
+    "src_hash": "2f31106b5eb658000748f2c30b5dbfef",
+    "text": "Folosește-l pe pământ pentru a întinde capcana.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.792912Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.closed.silvered.trap.L8.2036": {
+    "src_hash": "5a03b5cd75188820f73bb98f72d4ad8d",
+    "text": "Îl poți folosi în camera lui Feroxa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.793485Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.charges.lever.L259.1879": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.794260Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.cracklers.lever.L161.1877": {
+    "src_hash": "0f83410583de59a313f22441acd5febc",
+    "text": "Ai nevoie de cel puțin 4 jucători pentru această misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.794721Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.cracklers.lever.L194.1878": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.795094Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.final.lever.L478.1881": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.795732Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.sparks.lever.L188.1874": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "Cineva este în zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.796361Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L5.1672": {
+    "src_hash": "e208d7eff95df4c1c09e8de5583feda8",
+    "text": "Ați găsit o cheie de cușcă de lemn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.807104Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L5.1660": {
+    "src_hash": "df87386b73db3b71047038b982c44d00",
+    "text": "Descoperi o bufniță care se odihnește într-un copac. Este special, pentru că nu ai văzut niciodată o bufniță în tot Kilmaresh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.808093Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.chalk.L28.1775": {
+    "src_hash": "4833eccd338f830c492a702e61858110",
+    "text": "Umpleți o parte din creta fină într-o găleată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.819533Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L16.2006": {
+    "src_hash": "0d79627a56d6ed42123deb0ff2c05e62",
+    "text": "Ai deja creierul tău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.838008Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L8.2004": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<brzzl> <frzzp> <fsssh>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.838548Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.caixa.L5.2020": {
+    "src_hash": "b36f445efbda76f17aa66e520682ff27",
+    "text": "Ați găsit un fragment de incantație.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.839032Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.candles.L9.2009": {
+    "src_hash": "e1406a759fdb378e87e4f58045e47bf0",
+    "text": "Citind pergamentul, identifici trei lumânări umane de seu și le pui în buzunar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.839548Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.cape.L5.2019": {
+    "src_hash": "77783e5d8f029ca4d843654bd990d5ea",
+    "text": "Acum arăți ca un Nigromant.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.840066Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L30.2316": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Fără niciun punct de orientare nu vei găsi niciodată drumul înapoi. Încercați să găsiți o modalitate de a vă îmbunătăți navigarea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.853854Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.library.area.movements.mazzinor.L13.2290": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Rămășițele te deporalizează temporar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.854437Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L111.2308": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.858259Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L142.2309": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Ați descoperit un birou vechi care conține o hartă veche.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.858764Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L92.2307": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ai luat prea mult timp, bătălia s-a încheiat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.859187Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.sacrifice.foods.L224.2295": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Ai finalizat ritualul de ofertă de mâncare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.862018Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.teleportTo.L127.2292": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Trebuie să aștepți. Cineva îl provoacă pe Scorpionul Furios acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.862522Z"
+  },
+  "data.otservbr.global.scripts.quests.the.thieves.guild.quest.actions.climbing.vine.L14.1750": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Nu poți intra într-o zonă de protecție după ce ai atacat un alt jucător.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:01.863368Z"
+  },
+  "data.otservbr.global.npc.bertha.L91.1555": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:01:08.626406Z"
   }
 }

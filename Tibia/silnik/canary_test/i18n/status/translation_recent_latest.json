@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T04:00:28.909076Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T04:01:08.701248Z",
+  "language": "ro",
+  "json_file": "server.json",
+  "translated": 40,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.heart.of.destruction.actions.cracklers.lever.L194.1878",
+      "en": "Someone is in the area.",
+      "translated": "Cineva este în zonă.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.heart.of.destruction.actions.final.lever.L478.1881",
+      "en": "Someone is in the area.",
+      "translated": "Cineva este în zonă.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.heart.of.destruction.actions.sparks.lever.L188.1874",
+      "en": "Someone is in the area.",
+      "translated": "Cineva este în zonă.",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L5.1672",
+      "en": "You have found a wooden cage key.",
+      "translated": "Ați găsit o cheie de cușcă de lemn.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L5.1660",
+      "en": "You discover an owl resting in a tree. Thats special, because you have never seen an owl in all of Kilmaresh.",
+      "translated": "Descoperi o bufniță care se odihnește într-un copac. Este special, pentru că nu ai văzut niciodată o bufniță în tot Kilmaresh.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.roshamuul.quest.actions.chalk.L28.1775",
+      "en": "You fill some of the fine chalk into a bucket.",
+      "translated": "Umpleți o parte din creta fină într-o găleată.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L16.2006",
+      "en": "You have already got your brain",
+      "translated": "Ai deja creierul tău",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L8.2004",
+      "en": "<brzzl> <frzzp> <fsssh>",
+      "translated": "<brzzl> <frzzp> <fsssh>",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.caixa.L5.2020",
+      "en": "You have found an incantation fragment.",
+      "translated": "Ați găsit un fragment de incantație.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.candles.L9.2009",
+      "en": "Reading the parchment, you identify three human tallow candles and pocket them.",
+      "translated": "Citind pergamentul, identifici trei lumânări umane de seu și le pui în buzunar.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.cape.L5.2019",
+      "en": "You now look like a Necromancer.",
+      "translated": "Acum arăți ca un Nigromant.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L30.2316",
+      "en": "Witout any points of orientation you will never find your way back. Try to find a way to improve your navigation.",
+      "translated": "Fără niciun punct de orientare nu vei găsi niciodată drumul înapoi. Încercați să găsiți o modalitate de a vă îmbunătăți navigarea.",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.library.area.movements.mazzinor.L13.2290",
+      "en": "The remains deporalize you temporaly.",
+      "translated": "Rămășițele te deporalizează temporar.",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L111.2308",
+      "en": "You can not use this portal yet.",
+      "translated": "Nu puteți utiliza încă acest portal.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L142.2309",
+      "en": "You have discovered an old writing desk that contains an ancient map.",
+      "translated": "Ați descoperit un birou vechi care conține o hartă veche.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L92.2307",
+      "en": "You took too long, the battle has ended.",
+      "translated": "Ai luat prea mult timp, bătălia s-a încheiat.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.sacrifice.foods.L224.2295",
+      "en": "You have completed the food offering ritual!",
+      "translated": "Ai finalizat ritualul de ofertă de mâncare!",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.teleportTo.L127.2292",
+      "en": "You must wait. Someone is challenging Furious Scorpion now.",
+      "translated": "Trebuie să aștepți. Cineva îl provoacă pe Scorpionul Furios acum.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.thieves.guild.quest.actions.climbing.vine.L14.1750",
+      "en": "You can not enter a protection zone after attacking another player.",
+      "translated": "Nu poți intra într-o zonă de protecție după ce ai atacat un alt jucător.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.bertha.L91.1555",
+      "en": "Of course, just browse through my wares. {Footballs} have to be purchased separately.",
+      "translated": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+      "source": "google_translate"
     }
   ]
 }

@@ -28974,5 +28974,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:54:30.163801Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L12.1803": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Кованый ключ открывает дверь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.837235Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L16.1804": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Кованый ключ открывает дверь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.837641Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L8.1802": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Кованый ключ открывает дверь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.838051Z"
+  },
+  "data.otservbr.global.scripts.quests.hunter.outfits.quest.action.all.hymn.piano.teleport.L10.2246": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "Вы не выучили все стихи гимна",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.838537Z"
+  },
+  "data.otservbr.global.scripts.quests.koshei.the.deathless.quest.action.bag.L24.2260": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Вы нашли сумку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.851035Z"
+  },
+  "data.otservbr.global.scripts.quests.koshei.the.deathless.quest.action.bag.L26.2261": {
+    "src_hash": "2c586d4717b2579a30746ae8e8b0e491",
+    "text": "Книжный шкаф пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.851391Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.steal.from.thieves.L16.1925": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Вы нашли сумку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.857939Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.action.reward.soul.war.L12.2079": {
+    "src_hash": "8dd6bdad28a27009f617c8b6206a0ba6",
+    "text": "Вы уже получили свою награду.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.859137Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.action.reward.soul.war.L17.2080": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Чтобы получить награду, вам нужно победить «Манию величия» Гошнара.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.859789Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.arena.L62.2164": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Вы уже закончили эту битву.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.872776Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.arena.L67.2165": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Арена уже используется.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.873136Z"
+  },
+  "data.otservbr.global.scripts.quests.wrath.of.the.emperor.actions.mission11.payback.time.lever.L19.1648": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Арена уже используется.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.886811Z"
+  },
+  "server.game.msg_14": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Игрока с таким именем не существует.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.890667Z"
+  },
+  "src.game.game.L5991.2394": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Игрока с таким именем не существует.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:56.902608Z"
   }
 }

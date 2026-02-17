@@ -45262,5 +45262,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T03:52:45.637423Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.counter.agent.L37.2085": {
+    "src_hash": "c8c549f68a94f2d0de0eaeb94e664d99",
+    "text": "Una tempesta di sabbia ha distrutto quasi tutti i pilastri. L'effetto del controagente ha funzionato diversamente dal previsto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.903342Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.counter.agent.L38.2086": {
+    "src_hash": "380f8c945d50e19564aae60338ef5e9d",
+    "text": "La tempesta di sabbia non ha solo distrutto l'oasi, ma ha anche rivelato alcune piastrelle della pavimentazione e una leva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.904025Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.crate.L11.2083": {
+    "src_hash": "51cdbfcf0982098343b3f288729deb7a",
+    "text": "Hai già preso la lente d'ingrandimento.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.904454Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.crate.L13.2084": {
+    "src_hash": "88f20ad8c4870defabe09cab6938014d",
+    "text": "Questa cassa appartiene ad Angelo. Dovresti parlargli prima di tirare fuori qualcosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.904929Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.crate.L7.2082": {
+    "src_hash": "467aa744353e838cc4e516dc77dd702f",
+    "text": "Perfetto! Hai preso una lente meravigliosa da questa cassa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.905390Z"
+  },
+  "data.otservbr.global.scripts.quests.dark.trails.actions.corpse.L8.1815": {
+    "src_hash": "77b8010b0414880bdbf6e4e8ee53ce5e",
+    "text": "Questo è vuoto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.914286Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L12.2252": {
+    "src_hash": "f621231a669f88989005df0122b9bc35",
+    "text": "Con uno sforzo considerevole si riesce a far cadere dalle rocce una gemma grezza, quasi intatta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.916562Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L9.2251": {
+    "src_hash": "3316c338a81d556dfda28459921d5538",
+    "text": "Non hai raccolto altro che piccoli frammenti di gemma rossa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.917600Z"
+  },
+  "data.otservbr.global.scripts.quests.demon.oak.actions.demon.oak.L82.1988": {
+    "src_hash": "bd2e08e742d9871c8528df93eb3a7ade",
+    "text": "Devi prima uccidere tutti i mostri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.918065Z"
+  },
+  "data.otservbr.global.scripts.quests.demon.oak.actions.demon.oak.L88.1989": {
+    "src_hash": "e369118cf13afd694431ce0e9505d2dd",
+    "text": "Racconta a Oldrak della tua grande vittoria contro la quercia demoniaca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.918666Z"
+  },
+  "data.otservbr.global.scripts.quests.demon.oak.actions.demon.oak.chest.L12.1986": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "È vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.918946Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.actions.custodian.door.L5.1827": {
+    "src_hash": "45b73f05201500fc8fe764433f99d201",
+    "text": "Il potere di Gaffir non ti permetterà di oltrepassare questa porta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.930415Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.cracklers.lever.L161.1877": {
+    "src_hash": "0f83410583de59a313f22441acd5febc",
+    "text": "Sono necessari almeno 4 giocatori per questa missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.934556Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.coruja.L5.1660": {
+    "src_hash": "df87386b73db3b71047038b982c44d00",
+    "text": "Scopri un gufo che riposa su un albero. È speciale, perché non hai mai visto un gufo in tutto Kilmaresh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.946683Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.deeper.banuta.shortcut.L10.1922": {
+    "src_hash": "4d7b566523c4163688d941d1e47fb138",
+    "text": "Hai scoperto un tunnel segreto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.956455Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.deeper.banuta.shortcut.L13.1923": {
+    "src_hash": "64e242b84b7218e0be6150d252d702ba",
+    "text": "Hai già scoperto questo segreto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.956855Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.steal.from.thieves.L9.1924": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "È vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.957781Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L217.2072": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Al momento non hai alcuna contaminazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.961824Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L232.2073": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.962312Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L283.2076": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.962763Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soulpit.fight.L30.1996": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Qualcuno sta combattendo nella fossa dell'anima!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.964878Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L14.1855": {
+    "src_hash": "4ab71ab4da67fa5c8ce728839c451726",
+    "text": "Questo libro racconta di un incantesimo che attira chi lo impugna verso l'essere più energico accanto a lui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.975447Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L15.1856": {
+    "src_hash": "da1ab3b85ba283abdcc703f5b418c6f9",
+    "text": "Si compone di quattro parti che sono state cancellate da questo libro. Devono essere letti insieme ai canti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.976024Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L18.1857": {
+    "src_hash": "669b2cb2f632101a665b1e379da7c9bb",
+    "text": "Devi aspettare per sfidare nuovamente questo nemico!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.976609Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.ashes.L9.2012": {
+    "src_hash": "21e550e5f4f89244b713ae54210395c9",
+    "text": "Le ceneri vorticano con vita propria, mescolandosi con le scintille dell'altare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.981937Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L16.2006": {
+    "src_hash": "0d79627a56d6ed42123deb0ff2c05e62",
+    "text": "Hai già il cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.982668Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L8.2004": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<brzzl> <frzzp> <fsssh>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.983141Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.caixa.L5.2020": {
+    "src_hash": "b36f445efbda76f17aa66e520682ff27",
+    "text": "Hai trovato un frammento di incantesimo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.983535Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.candles.L9.2009": {
+    "src_hash": "e1406a759fdb378e87e4f58045e47bf0",
+    "text": "Leggendo la pergamena, identifichi tre candele di sego umane e le metti in tasca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.984007Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.cape.L5.2019": {
+    "src_hash": "77783e5d8f029ca4d843654bd990d5ea",
+    "text": "Adesso sembri un Negromante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.984528Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L49.2242": {
+    "src_hash": "a0304a59736a9e5c7d77ebb88d3fd7b3",
+    "text": "Ops! L'hai perso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.986690Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L53.2243": {
+    "src_hash": "73c8c82252387a98c60ce07b12cea6e3",
+    "text": "Vedi l'acqua a perdita d'occhio. Nessun serpente marino in vista.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.987189Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L66.2244": {
+    "src_hash": "9bf585829f1e4bc7f4375831e888feec",
+    "text": "Si sta allontanando! Dovresti dire al capitano di prendere velocità!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.987690Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hunt.for.the.sea.serpent.actions.bait.L72.2245": {
+    "src_hash": "b2b42110da55a7d88e116708a87b0316",
+    "text": "Ci sono più ombre sotto la superficie. Questa deve essere la posizione giusta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:51.988245Z"
+  },
+  "data.otservbr.global.scripts.quests.the.thieves.guild.quest.actions.climbing.vine.L14.1750": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Non puoi entrare in una zona di protezione dopo aver attaccato un altro giocatore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:52.007754Z"
+  },
+  "game.loot.container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Attenzione! Il contenitore assegnato alla categoria {0} è pieno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:52.011195Z"
+  },
+  "game.loot.corpses_many": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Hai saccheggiato {0} cadaveri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:52.012030Z"
   }
 }

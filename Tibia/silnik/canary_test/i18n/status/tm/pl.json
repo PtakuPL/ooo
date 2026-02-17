@@ -3905,11 +3905,11 @@
   },
   "spell.lavafungus_ring.name": {
     "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
-    "text": "lavafungus ring",
+    "text": "pierścień lawowy",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:56:15.343458Z"
+    "updated_at": "2026-02-17T02:25:11.494973Z"
   },
   "spell.sparks_chain.name": {
     "src_hash": "d888dfdccd2a5a20049590041605770f",
@@ -83673,11 +83673,11 @@
   },
   "spell.azerus_skill_reducer_1.name": {
     "src_hash": "031d9477c0d8ff8150202356447acf7f",
-    "text": "azerus skill reducer 1",
+    "text": "Reduktor umiejętności Azerusa 1",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:50.726246Z"
+    "updated_at": "2026-02-17T02:25:27.056237Z"
   },
   "spell.abyssador_skill_reducer_2.name": {
     "src_hash": "eb7e0f68fbda730b28aebfca823d07ee",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:59:51.131154Z"
+    "updated_at": "2026-02-17T02:24:48.635954Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:59:51.132212Z"
+    "updated_at": "2026-02-17T02:24:48.636810Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -104902,5 +104902,253 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T02:20:15.042153Z"
+  },
+  "spell.undead_dragon_curse.name": {
+    "src_hash": "b92337fee45029436118eff3ab797275",
+    "text": "klątwa nieumarłego smoka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:24:57.409601Z"
+  },
+  "spell.the_imperor_summon.name": {
+    "src_hash": "e95f65c7bfa433438fb65d93d67fed04",
+    "text": "impertynenckie wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:24:57.409914Z"
+  },
+  "spell.mana_drain_chain.name": {
+    "src_hash": "946d777bac68823d29f74ca5f9f8f710",
+    "text": "łańcuch wysysania many",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:24:57.410235Z"
+  },
+  "spell.wave_t.name": {
+    "src_hash": "4a1995acf97445b6a71f56f2aeddaa2d",
+    "text": "fala t",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:03.816833Z"
+  },
+  "spell.madareth_pillar_skill_reducer.name": {
+    "src_hash": "a84f3c764fa23fad54dc8381dab7a1d9",
+    "text": "Reduktor umiejętności filaru Madareth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:03.817374Z"
+  },
+  "spell.azerus_summon_2.name": {
+    "src_hash": "f833c24c73b1331c694bdbb1cd06d1a3",
+    "text": "Przywołanie Azerusa 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:03.818403Z"
+  },
+  "spell.demon_summon.name": {
+    "src_hash": "b44c360107cc4752e61580e7db80d06b",
+    "text": "przywołanie demona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:11.494722Z"
+  },
+  "spell.wyrm_wave.name": {
+    "src_hash": "2fdf9abf34ef3f7f5e933a640d185124",
+    "text": "fala jaszczura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:11.495168Z"
+  },
+  "spell.the_dreadorian_soulfire.name": {
+    "src_hash": "a7800092edee9e3c1df094a493c909ab",
+    "text": "dreadoriański ogień duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:11.495503Z"
+  },
+  "spell.single_death_chain.name": {
+    "src_hash": "a02961d385f37635ed4701f197ebb7f8",
+    "text": "pojedynczy łańcuch śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:11.495755Z"
+  },
+  "spell.zugurosh_pillar_skill_reducer.name": {
+    "src_hash": "7a27843768e9f0e76d42051750d82a72",
+    "text": "Reduktor umiejętności filaru zugurosh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:19.198894Z"
+  },
+  "spell.grand_mother_foulscale_summon.name": {
+    "src_hash": "7b708ee438ad0e9f09a5637635fc3fc8",
+    "text": "wezwanie babci na łuskę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:19.199219Z"
+  },
+  "spell.zavarash_heal.name": {
+    "src_hash": "135e011beddf23c8f0af9c905bc267a8",
+    "text": "zavarash leczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:19.199430Z"
+  },
+  "spell.massive_fire_elemental_soulfire.name": {
+    "src_hash": "7c5c70852014a445d8dc7608611428a0",
+    "text": "ogromny ogień żywiołu ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:19.200164Z"
+  },
+  "spell.furyosa_summon.name": {
+    "src_hash": "81eb198d71dfa0dc14dd3386e7acf025",
+    "text": "wezwanie wściekłości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:27.054682Z"
+  },
+  "spell.hellspawn_soulfire.name": {
+    "src_hash": "d0fe4e79c3bc48d8d61c1e17d1080875",
+    "text": "piekielny ogień duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:27.054957Z"
+  },
+  "spell.energized_raging_mage_skill_reducer.name": {
+    "src_hash": "b4dfef074ef9875ac89095b68ad2b4e1",
+    "text": "naładowany energią, wściekły mag, reduktor umiejętności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:27.055417Z"
+  },
+  "spell.devourer_death_wave.name": {
+    "src_hash": "10e3e19bb69445be737c88eaccc8e0ca",
+    "text": "pożerająca fala śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:27.055688Z"
+  },
+  "spell.ocyakao_freeze.name": {
+    "src_hash": "11d90e2b972e1b3b7972f298543011fd",
+    "text": "zamrożenie ocyakao",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:35.174841Z"
+  },
+  "spell.grandfather_tridian_paralyze.name": {
+    "src_hash": "7dd00114bfc72f42bd90f9a1a1b2d7c0",
+    "text": "paraliż dziadka Tridiana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:35.175143Z"
+  },
+  "spell.furyosa_soulfire.name": {
+    "src_hash": "c80c0887a1304f177e47e46778324964",
+    "text": "ogień duszy furyosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:35.175389Z"
+  },
+  "spell.war_golem_electrify.name": {
+    "src_hash": "a4bae54f86b9911c7f21ee75b720f737",
+    "text": "Golem wojenny elektryzuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:35.175878Z"
+  },
+  "spell.mutated_bat_curse.name": {
+    "src_hash": "aa9746de5b3643b6abfb4a34d4100f3a",
+    "text": "zmutowana klątwa nietoperza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:35.176199Z"
+  },
+  "spell.energy_pulse_explosion.name": {
+    "src_hash": "8830edf36a11d56157d7f9b7838e7ba4",
+    "text": "eksplozja impulsu energetycznego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:42.143892Z"
+  },
+  "spell.the_ravager_heal.name": {
+    "src_hash": "4e00f2bc972185bad86797bf84766b1c",
+    "text": "niszczyciel leczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:42.144186Z"
+  },
+  "spell.big_lifedrain_wave.name": {
+    "src_hash": "ee7026a8942cab13c77f33fa56ad8423",
+    "text": "wielka fala wysysająca życie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:42.144484Z"
+  },
+  "spell.boogey_summon.name": {
+    "src_hash": "77a352c0e0eca2098afe5e249c1d9d17",
+    "text": "boogejskie wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:42.144737Z"
+  },
+  "spell.diblis_the_fair_summon.name": {
+    "src_hash": "394187005194086cf1ef3e2cc4c2c68d",
+    "text": "unieważnia sprawiedliwe wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:47.723142Z"
+  },
+  "spell.the_dreadorian_curse.name": {
+    "src_hash": "5dac6619e575ba048dac40b8637a5500",
+    "text": "drreadoriańska klątwa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:47.723418Z"
+  },
+  "spell.omrafir_summon.name": {
+    "src_hash": "7afac0493e7435ec27b00187d58e881b",
+    "text": "wezwanie omrafiru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:47.723633Z"
+  },
+  "spell.ice_golem_skill_reducer.name": {
+    "src_hash": "04b9f0b1ffb1da8729314d8ad4e4018b",
+    "text": "Reduktor umiejętności lodowego golema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:25:47.724168Z"
   }
 }

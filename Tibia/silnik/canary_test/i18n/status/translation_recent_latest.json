@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T02:24:13.596944Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T02:25:47.886323Z",
+  "language": "pl",
+  "json_file": "spells.json",
+  "translated": 36,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "spell.zavarash_heal.name",
+      "en": "zavarash heal",
+      "translated": "zavarash leczy",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.massive_fire_elemental_soulfire.name",
+      "en": "massive fire elemental soulfire",
+      "translated": "ogromny ogień żywiołu ognia",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "spell.furyosa_summon.name",
+      "en": "furyosa summon",
+      "translated": "wezwanie wściekłości",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "spell.hellspawn_soulfire.name",
+      "en": "hellspawn soulfire",
+      "translated": "piekielny ogień duszy",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "spell.energized_raging_mage_skill_reducer.name",
+      "en": "energized raging mage skill reducer",
+      "translated": "naładowany energią, wściekły mag, reduktor umiejętności",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "spell.devourer_death_wave.name",
+      "en": "devourer death wave",
+      "translated": "pożerająca fala śmierci",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "spell.azerus_skill_reducer_1.name",
+      "en": "azerus skill reducer 1",
+      "translated": "Reduktor umiejętności Azerusa 1",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "spell.ocyakao_freeze.name",
+      "en": "ocyakao freeze",
+      "translated": "zamrożenie ocyakao",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "spell.grandfather_tridian_paralyze.name",
+      "en": "grandfather tridian paralyze",
+      "translated": "paraliż dziadka Tridiana",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "spell.furyosa_soulfire.name",
+      "en": "furyosa soulfire",
+      "translated": "ogień duszy furyosa",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "spell.war_golem_electrify.name",
+      "en": "war golem electrify",
+      "translated": "Golem wojenny elektryzuje",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "spell.mutated_bat_curse.name",
+      "en": "mutated bat curse",
+      "translated": "zmutowana klątwa nietoperza",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "spell.energy_pulse_explosion.name",
+      "en": "energy pulse explosion",
+      "translated": "eksplozja impulsu energetycznego",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "spell.the_ravager_heal.name",
+      "en": "the ravager heal",
+      "translated": "niszczyciel leczy",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.big_lifedrain_wave.name",
+      "en": "big lifedrain wave",
+      "translated": "wielka fala wysysająca życie",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.boogey_summon.name",
+      "en": "boogey summon",
+      "translated": "boogejskie wezwanie",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "spell.diblis_the_fair_summon.name",
+      "en": "diblis the fair summon",
+      "translated": "unieważnia sprawiedliwe wezwanie",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "spell.the_dreadorian_curse.name",
+      "en": "the dreadorian curse",
+      "translated": "drreadoriańska klątwa",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.omrafir_summon.name",
+      "en": "omrafir summon",
+      "translated": "wezwanie omrafiru",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "spell.ice_golem_skill_reducer.name",
+      "en": "ice golem skill reducer",
+      "translated": "Reduktor umiejętności lodowego golema",
+      "source": "google_translate"
     }
   ]
 }

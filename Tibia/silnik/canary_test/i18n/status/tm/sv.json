@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:38:32.038270Z"
+    "updated_at": "2026-02-17T04:23:08.069391Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -22934,5 +22934,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:06:18.609596Z"
+  },
+  "item.10397.name": {
+    "src_hash": "fc303c85cdb1ddc7c475eca3a9cca889",
+    "text": "vävarens trollspets",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:08.070471Z"
+  },
+  "item.10398.name": {
+    "src_hash": "2f4f05f4348d41e7ac2442e1e427d908",
+    "text": "draken trofé",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:13.258163Z"
+  },
+  "item.10399.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "död draken spellweaver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:13.258540Z"
+  },
+  "item.10400.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "död draken spellweaver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:13.259228Z"
+  },
+  "item.10401.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "död draken spellweaver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:13.259517Z"
+  },
+  "item.10402.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "död draken spellweaver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:19.197502Z"
+  },
+  "item.10403.name": {
+    "src_hash": "069de0f56ab51747f5b348ac57227b3a",
+    "text": "död insektssvärm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:19.197756Z"
+  },
+  "item.10404.name": {
+    "src_hash": "c5f29af5afa5636ffdff53d9ce3b3025",
+    "text": "ben axelplatta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:19.198008Z"
+  },
+  "item.10405.name": {
+    "src_hash": "f05755063c0050b297a00ecab83f0853",
+    "text": "krigsmästarens handledsskydd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:19.198340Z"
+  },
+  "item.10406.name": {
+    "src_hash": "0739dcaab1d75cf7d17d46c0bb618068",
+    "text": "Zaoan hellebard",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:19.198743Z"
+  },
+  "item.10407.name": {
+    "src_hash": "80ec2c03679c49d83f14b2a5ab6774d1",
+    "text": "lurvig svans",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:26.608068Z"
+  },
+  "item.10408.name": {
+    "src_hash": "3c57a801a9878a44911c510daf3c657b",
+    "text": "spetsad järnkula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:26.608319Z"
+  },
+  "item.10409.name": {
+    "src_hash": "9b2f51f51291db08077f0e4e3138daf6",
+    "text": "korrupt flagga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:26.608558Z"
+  },
+  "item.10410.name": {
+    "src_hash": "8b6105d39641aec65eb210146c2a9dff",
+    "text": "förbannade axelspikar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:26.608805Z"
+  },
+  "item.10411.name": {
+    "src_hash": "f70fb225acc1a2f1b3f13fd8b23e5224",
+    "text": "änkans underkäkar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:26.609035Z"
+  },
+  "item.10412.name": {
+    "src_hash": "65fcef45c06f46acf04beb44be6183d1",
+    "text": "gråtande änkans halsband",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:34.408622Z"
+  },
+  "item.10413.name": {
+    "src_hash": "68421639c2314148b312f297c3d32219",
+    "text": "zaogun flagga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:34.408870Z"
+  },
+  "item.10414.name": {
+    "src_hash": "02fdab6560da7f08fbaeecf568e75999",
+    "text": "zaogun axelplattor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:34.409128Z"
+  },
+  "item.10415.name": {
+    "src_hash": "66996fdb9c7d5427e9341d69c8f9bc8f",
+    "text": "hög vaktflagga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:34.409360Z"
+  },
+  "item.10416.name": {
+    "src_hash": "96fd8e4cf88cda574e9cfd192388083e",
+    "text": "höga skyddsaxelplattor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:34.409625Z"
+  },
+  "item.10417.name": {
+    "src_hash": "89b865660121329f1ee0db2a5d1976ec",
+    "text": "legionärsflaggor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:37.472096Z"
+  },
+  "item.10418.name": {
+    "src_hash": "d593d0a19615dc4c24fbc119a550baf8",
+    "text": "trasig hellebard",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:23:37.472336Z"
   }
 }

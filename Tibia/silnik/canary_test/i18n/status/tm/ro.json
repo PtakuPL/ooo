@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:53:20.918698Z"
+    "updated_at": "2026-02-17T04:39:22.252865Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -41830,5 +41830,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:38:42.206733Z"
+  },
+  "item.37338.name": {
+    "src_hash": "f1fbc7f6651e183682c00387a93ef30d",
+    "text": "Craniu roșu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:39:17.408457Z"
+  },
+  "item.12041.desc": {
+    "src_hash": "cba862a45fd9e5d774d10f9cb7f80e19",
+    "text": "Dragostea eternă este premiată de TibiaTR.net",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:39:30.301883Z"
+  },
+  "item.12043.desc": {
+    "src_hash": "d89cd86e464669faac14a3c0336017f3",
+    "text": "Această păpușă pare să fie păpușa preferată a împăratului. A fost premiat de TibiaJourney.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:39:30.302545Z"
+  },
+  "item.12045.desc": {
+    "src_hash": "bdfe4509e065c9b97824a72b4a5bb064",
+    "text": "Cântecul din interior este făcut din dragoste. A fost recompensat de TibiaSpace.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:39:30.303087Z"
+  },
+  "item.12077.desc": {
+    "src_hash": "7d5bb6c9594a3294e8f051d84105b712",
+    "text": "Această creatură mică iubește ciuperca de slime",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:39:32.019523Z"
   }
 }

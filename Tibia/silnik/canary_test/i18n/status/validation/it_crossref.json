@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 48.9,
+  "coverage_pct": 49.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:32:02.328456Z",
+  "checked_at": "2026-02-17T08:58:19.685060Z",
   "issues_total": 427,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -778,15 +778,6 @@
       "lang": "Maeh!"
     },
     {
-      "key": "monster.wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
       "key": "monster.starving_wolf.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -832,15 +823,6 @@
       "lang": "Chchch"
     },
     {
-      "key": "monster.war_wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
       "key": "monster.mushroom_sniffer.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -848,15 +830,6 @@
       "en": "Oink",
       "pl": "Chrum",
       "lang": "Oink"
-    },
-    {
-      "key": "monster.mushroom_sniffer.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
     },
     {
       "key": "monster.water_buffalo.voice_2",
@@ -3737,6 +3710,33 @@
       "en": "Speed: ",
       "pl": "Szybkość: ",
       "lang": "Speed: "
+    },
+    {
+      "key": "scripts.lemon_cupcake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.malofur_explosion.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOOM!",
+      "pl": "BUM!",
+      "lang": "BOOOM!"
+    },
+    {
+      "key": "scripts.malofur_explosion.say_5",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOM!",
+      "pl": "WYSIĘGNIK!",
+      "lang": "BOOM!"
     }
   ],
   "length_ratio_issues": [
@@ -3914,8 +3914,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 3,
-    "skipped": 77,
+    "applied": 1,
+    "skipped": 79,
     "errors": 0
   }
 }

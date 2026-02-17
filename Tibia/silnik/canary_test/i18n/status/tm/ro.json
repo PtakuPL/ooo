@@ -55830,5 +55830,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:47:28.639148Z"
+  },
+  "questlog.quest_11.mission_31.state_1": {
+    "src_hash": "258a2566d164375635e7613ffbb99ca3",
+    "text": "Ai vânat cu succes 300 de vârcolaci. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:52:31.224191Z"
+  },
+  "questlog.quest_11.mission_31.state_2": {
+    "src_hash": "8cba6acc91df4d6532578573a52a2046",
+    "text": "Ai vânat cu succes 300 de vârcolaci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:52:33.238492Z"
   }
 }

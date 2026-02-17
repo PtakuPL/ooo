@@ -35918,5 +35918,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:51:01.673975Z"
+  },
+  "cpp.look.not_enough_room_these": {
+    "src_hash": "0c810ee97543748ad005e79660622d5e",
+    "text": "У вас недостаточно места для переноски этих предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:19.421529Z"
+  },
+  "cpp.look.not_enough_room_this": {
+    "src_hash": "52e2d95118d537b01ed2ce5723152d1b",
+    "text": "У вас недостаточно места для переноски этого предмета.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:26.615441Z"
+  },
+  "cpp.look.nothing_written": {
+    "src_hash": "9e448afdf325b70003bf08c90a437317",
+    "text": "На нем ничего не написано",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:26.615790Z"
+  },
+  "cpp.look.of_level_or_higher": {
+    "src_hash": "98267cb1b96db70c97dab0b65b0f459f",
+    "text": "уровня {0} или выше",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:26.616133Z"
+  },
+  "cpp.look.protection_all_fields_fmt": {
+    "src_hash": "489d46c3df42de53fccdc397f0aa0a45",
+    "text": "защита всех полей {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:26.616452Z"
+  },
+  "cpp.look.protection_all_fmt": {
+    "src_hash": "0e15c2a577e92eb256003d5481fce76d",
+    "text": "защита все {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:26.616720Z"
+  },
+  "cpp.look.they_weigh": {
+    "src_hash": "4dc64177f883e3c77010856949e1ad84",
+    "text": "Они весят {0} унций.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:31.357867Z"
+  },
+  "cpp.look.tier_amplification": {
+    "src_hash": "60805d7362b278ba4010b8d323ab0523",
+    "text": "{0}% Усиление",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:31.364174Z"
+  },
+  "cpp.look.tier_momentum": {
+    "src_hash": "f1a4773dace524aae8978dc751b619dd",
+    "text": "{0}% Импульс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:31.364599Z"
+  },
+  "cpp.look.tier_onslaught": {
+    "src_hash": "951f5608468693af3efa28fca3e9e035",
+    "text": "{0}% Натиск",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:31.365870Z"
+  },
+  "cpp.look.tier_transcendence": {
+    "src_hash": "2618f5f0bd67f7aa8eee0e6524b81cee",
+    "text": "{0}% трансцендентность",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:31.366222Z"
+  },
+  "cpp.look.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Ты слишком далеко, чтобы прочитать это",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:36.067217Z"
+  },
+  "cpp.look.wield_by": {
+    "src_hash": "b905a321d3e1a3742048e2ee98c11bc3",
+    "text": "Правильно владеть им можно только ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:36.067963Z"
+  },
+  "cpp.npc.bought_bag_currency": {
+    "src_hash": "7882ae19d5f43b641a21e8a140308dfd",
+    "text": "Купили {0}x {1} за {2} {3} и 1 сумку для покупок за {4} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:36.068740Z"
+  },
+  "cpp.npc.bought_bag_gold": {
+    "src_hash": "a19dce232723d9b603f147324cc9d0a4",
+    "text": "Купили {0}x {1} и 1 сумку для покупок за {2} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:54:36.069305Z"
+  },
+  "cpp.npc.bought_bags_currency": {
+    "src_hash": "a34143360f671f2d0ed43f484dd96721",
+    "text": "Купили {0}x {1} за сумки {2} {3} и {4}x за {5} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:09.766952Z"
+  },
+  "cpp.npc.bought_bags_gold": {
+    "src_hash": "e5bffaf05063189995a917b83c27f9ca",
+    "text": "Купили сумки для покупок {0}x {1} и {2} за {3} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:09.768519Z"
+  },
+  "cpp.npc.bought_currency": {
+    "src_hash": "2c0e2f09d57fecb2ac5fec4fe901982e",
+    "text": "Купил {0}x {1} за {2} {3}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:09.774223Z"
+  },
+  "cpp.npc.bought_gold": {
+    "src_hash": "582b26eca135fd2b1ee3d6fb81ffd765",
+    "text": "Купили {0}x {1} за {2} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:09.775488Z"
+  },
+  "cpp.npc.loot_pouch_sold": {
+    "src_hash": "4f6c342cb05df9d9dad9266d4f4d0829",
+    "text": "Вы продали все предметы из своей сумки за {0} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:13.159657Z"
+  },
+  "cpp.party.invitation_revoked_by_leader": {
+    "src_hash": "0eadaf47d91621e40ac5fb89b3d0206f",
+    "text": "{0} отозвал приглашение {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:13.160013Z"
+  },
+  "cpp.party.invitation_revoked_for": {
+    "src_hash": "b8d42a28a091e16edd23075dbbe53c9b",
+    "text": "Приглашение для {0} было отозвано.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:55:13.160406Z"
   }
 }

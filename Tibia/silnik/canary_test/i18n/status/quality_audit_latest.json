@@ -1,67 +1,18 @@
 {
-  "timestamp": "2026-02-17T08:51:40.991767Z",
+  "timestamp": "2026-02-17T08:56:30.247916Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 46,
   "issues_by_type": {
-    "identical_to_en": 7,
-    "identical_to_en_exempt": 9,
     "artifact_token": 19,
-    "suspicious_log_high": 164,
-    "suspicious_log_low": 10,
+    "identical_to_en_exempt": 4,
+    "identical_to_en": 27,
+    "suspicious_log_high": 145,
     "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 187,
-    "suspicious_rejected_high": 13
+    "suspicious_log_low": 29,
+    "suspicious_rejected_critical": 185,
+    "suspicious_rejected_high": 15
   },
   "issues": [
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.player.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_12",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "cpp.vocation.id_2",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
     {
       "key": "book.otbm.battletactics_for_mages_ii",
       "lang": "ru",
@@ -194,6 +145,195 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "questlog.quest_1.mission_1.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "The Hidden Seal",
+      "translated": "The Hidden Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_2.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "The Plague Seal",
+      "translated": "The Plague Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_8.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "The Final Battle",
+      "translated": "The Final Battle"
+    },
+    {
+      "key": "questlog.quest_11.mission_10.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Carniphilas",
+      "translated": "Paw and Fur: Carniphilas"
+    },
+    {
+      "key": "questlog.quest_11.mission_12.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Mammoths",
+      "translated": "Paw and Fur: Mammoths"
+    },
+    {
+      "key": "questlog.quest_11.mission_13.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gnarlhounds",
+      "translated": "Paw and Fur: Gnarlhounds"
+    },
+    {
+      "key": "questlog.quest_11.mission_14.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Terramites",
+      "translated": "Paw and Fur: Terramites"
+    },
+    {
+      "key": "questlog.quest_11.mission_15.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Apes",
+      "translated": "Paw and Fur: Apes"
+    },
+    {
+      "key": "questlog.quest_11.mission_17.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gargoyles",
+      "translated": "Paw and Fur: Gargoyles"
+    },
+    {
+      "key": "questlog.quest_11.mission_18.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Ice Golems",
+      "translated": "Paw and Fur: Ice Golems"
+    },
+    {
+      "key": "questlog.quest_11.mission_22.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Wyverns",
+      "translated": "Paw and Fur: Wyverns"
+    },
+    {
+      "key": "questlog.quest_11.mission_26.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Bonebeasts",
+      "translated": "Paw and Fur: Bonebeasts"
+    },
+    {
+      "key": "questlog.quest_11.mission_31.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Werewolves",
+      "translated": "Paw and Fur: Werewolves"
+    },
+    {
+      "key": "questlog.quest_1.mission_1.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Hidden Seal",
+      "translated": "The Hidden Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_2.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Plague Seal",
+      "translated": "The Plague Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_8.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Final Battle",
+      "translated": "The Final Battle"
+    },
+    {
+      "key": "questlog.quest_11.mission_10.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Carniphilas",
+      "translated": "Paw and Fur: Carniphilas"
+    },
+    {
+      "key": "questlog.quest_11.mission_12.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Mammoths",
+      "translated": "Paw and Fur: Mammoths"
+    },
+    {
+      "key": "questlog.quest_11.mission_13.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gnarlhounds",
+      "translated": "Paw and Fur: Gnarlhounds"
+    },
+    {
+      "key": "questlog.quest_11.mission_14.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Terramites",
+      "translated": "Paw and Fur: Terramites"
+    },
+    {
+      "key": "questlog.quest_11.mission_15.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Apes",
+      "translated": "Paw and Fur: Apes"
+    },
+    {
+      "key": "questlog.quest_11.mission_17.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gargoyles",
+      "translated": "Paw and Fur: Gargoyles"
+    },
+    {
+      "key": "questlog.quest_11.mission_18.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Ice Golems",
+      "translated": "Paw and Fur: Ice Golems"
+    },
+    {
+      "key": "questlog.quest_11.mission_22.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Wyverns",
+      "translated": "Paw and Fur: Wyverns"
+    },
+    {
+      "key": "questlog.quest_11.mission_26.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Bonebeasts",
+      "translated": "Paw and Fur: Bonebeasts"
+    },
+    {
+      "key": "questlog.quest_11.mission_31.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Werewolves",
+      "translated": "Paw and Fur: Werewolves"
+    },
+    {
+      "key": "questlog.quest_11.mission_32.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Nightmares",
+      "translated": "Paw and Fur: Nightmares"
     }
   ],
   "threshold": 10,

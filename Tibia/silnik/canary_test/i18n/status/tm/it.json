@@ -61982,5 +61982,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:50:42.922712Z"
+  },
+  "questlog.quest_11.mission_32.name": {
+    "src_hash": "5b3ac7305973999a7565ea45576764e7",
+    "text": "Paw and Fur: Nightmares",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:53:15.321641Z"
+  },
+  "questlog.quest_11.mission_32.state_1": {
+    "src_hash": "5eae8d5a720910b09cbe9ce1e94ef1c3",
+    "text": "Hai cacciato con successo 400 incubi. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:53:15.322392Z"
+  },
+  "questlog.quest_11.mission_32.state_2": {
+    "src_hash": "630372e21dfcd9af10c3a25a0f2ed6d1",
+    "text": "Hai cacciato con successo 400 incubi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:53:18.009742Z"
   }
 }

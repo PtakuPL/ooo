@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:31:21.257634Z",
+  "checked_at": "2026-02-17T08:57:36.208697Z",
   "issues_total": 515,
   "issues_by_type": {
     "consistency_in_language": 70,
@@ -1774,15 +1774,6 @@
       "en": "Chchch",
       "pl": "Chch",
       "lang": "Chchch"
-    },
-    {
-      "key": "monster.sheep.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Maeh",
-      "pl": "Mae",
-      "lang": "Maeh"
     },
     {
       "key": "monster.husky.name",
@@ -4663,6 +4654,15 @@
       "en": "ZOOOOOOOOM",
       "pl": "ZOOOOOOOM",
       "lang": "ZOOOOOOOOM"
+    },
+    {
+      "key": "scripts.actions_machine2.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ON",
+      "pl": "NA",
+      "lang": "ON"
     }
   ],
   "length_ratio_issues": [

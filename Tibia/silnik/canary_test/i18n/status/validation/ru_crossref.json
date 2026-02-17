@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 50.0,
+  "coverage_pct": 50.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T08:32:35.598701Z",
-  "issues_total": 129,
+  "checked_at": "2026-02-17T08:58:50.142155Z",
+  "issues_total": 130,
   "issues_by_type": {
     "consistency_in_language": 57,
-    "pl_reference_missing_translation": 29,
+    "pl_reference_missing_translation": 30,
     "length_ratio_crosscheck": 43
   },
   "consistency_issues": [
@@ -1160,6 +1160,15 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "spell.challenge.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Challenge",
+      "pl": "Wyzwanie",
+      "lang": "Challenge"
     }
   ],
   "length_ratio_issues": [
@@ -1552,8 +1561,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 29,
-    "applied": 0,
+    "attempted": 30,
+    "applied": 1,
     "skipped": 29,
     "errors": 0
   }

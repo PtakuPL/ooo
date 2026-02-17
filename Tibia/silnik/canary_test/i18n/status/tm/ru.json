@@ -29862,5 +29862,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:20:08.036186Z"
+  },
+  "otclient_modules.charms.tr_57": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "С некоторой вероятностью уклоняется от атаки, избегая любого урона.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:27:03.636325Z"
+  },
+  "otclient_modules.charms.tr_59": {
+    "src_hash": "b6af098ba1c6eec1f80bc951a947903c",
+    "text": "Отражает входящий урон обратно агрессору.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:27:03.637073Z"
   }
 }

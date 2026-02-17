@@ -46966,5 +46966,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:21:19.182400Z"
+  },
+  "cpp.skill.axe_fighting": {
+    "src_hash": "4d456bf80e0cd0f0d577679305cf9dcd",
+    "text": "Combattimento con l'ascia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.447551Z"
+  },
+  "cpp.skill.club_fighting": {
+    "src_hash": "4971b192456644c3c00832fdee31fb70",
+    "text": "Combattimento di club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.447866Z"
+  },
+  "cpp.skill.distance_fighting": {
+    "src_hash": "72404e1394a3b62cdc765bb8ff5bbbbf",
+    "text": "Lotta a distanza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.448381Z"
+  },
+  "cpp.skill.fishing": {
+    "src_hash": "819a07afa4abc8660ec9042038a8c597",
+    "text": "Pesca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.448679Z"
+  },
+  "cpp.skill.fist_fighting": {
+    "src_hash": "b390c8df81c64a60c1ccceeb8b9ab972",
+    "text": "Lotta a pugni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.448984Z"
+  },
+  "cpp.skill.shielding": {
+    "src_hash": "cc475241f2693dc7b001c735525438d6",
+    "text": "Schermatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.450033Z"
+  },
+  "cpp.skill.sword_fighting": {
+    "src_hash": "3fc8cf3adb95521626e837a7d963644a",
+    "text": "Combattimento con la spada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:14.450518Z"
+  },
+  "cpp.game.offline_training_choice_magic": {
+    "src_hash": "a50f50c0c6ef192a9e4bac1002fe097a",
+    "text": "Livello magico e schermatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:23.611296Z"
+  },
+  "cpp.game.offline_training_choice_sword": {
+    "src_hash": "fa2acc7b985499b826ccf49a21ebdf1c",
+    "text": "Combattimento con la spada e protezione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:23.611598Z"
+  },
+  "cpp.game.offline_training_message": {
+    "src_hash": "58842dab1057aa8e8bfa7b5ded73ddfd",
+    "text": "Scegli un'abilità:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:23.611848Z"
+  },
+  "cpp.game.offline_training_title": {
+    "src_hash": "85c31d17c1e8d2df63394b69e3f692f0",
+    "text": "Scegli un'abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:23.612066Z"
+  },
+  "cpp.game.only_looted_some_gold": {
+    "src_hash": "556449995dfe300811b71db490cacf81",
+    "text": "Hai saccheggiato solo {0} dell'oro caduto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:23.612410Z"
+  },
+  "cpp.game.quick_loot_fail_gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Non potevi saccheggiare {0} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:31.176778Z"
+  },
+  "cpp.game.quick_loot_fail_one_item": {
+    "src_hash": "6ed1556263f607620b76f0ef863323fd",
+    "text": "Non puoi saccheggiare 1 oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:31.177079Z"
+  },
+  "cpp.game.quick_loot_success_gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Hai saccheggiato {0} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:31.177343Z"
+  },
+  "cpp.game.quick_loot_success_one_item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Hai saccheggiato 1 oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:31.177615Z"
+  },
+  "cpp.game.stash_withdraw_limit": {
+    "src_hash": "9a01da13149e0a5035736e78737126ce",
+    "text": "Puoi prelevare solo fino a {0} articoli alla volta dalla scorta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:31.178008Z"
+  },
+  "cpp.game.still_muted": {
+    "src_hash": "23960b78537433a98582efc006ce8d8e",
+    "text": "L'audio sarà ancora disattivato per {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:37.625612Z"
+  },
+  "cpp.game.store_item_description": {
+    "src_hash": "6817218ba73defea9fdde91c6eef7e37",
+    "text": "Hai acquistato questo articolo nello Store.\nScartalo a casa tua per creare un <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:37.626039Z"
+  },
+  "cpp.game.tentugly_name": {
+    "src_hash": "9e80e90165a56046671b52645531b855",
+    "text": "Tentualmente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:37.626331Z"
+  },
+  "cpp.game.trade_move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} ti dice di avvicinarti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:37.626619Z"
+  },
+  "cpp.game.trade_wants_to_trade": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} vuole fare scambio con te.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:37.626901Z"
+  },
+  "cpp.game.unwrap_house_description": {
+    "src_hash": "d7f7ba441c03c161e8341f1efa003292",
+    "text": "Scarta questo oggetto a casa tua per creare un <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:43.773324Z"
+  },
+  "cpp.game.you_looted": {
+    "src_hash": "26d7549202c4f7e9078c32979b3abc0d",
+    "text": "Hai saccheggiato ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:43.773550Z"
+  },
+  "cpp.hotkey.using_count": {
+    "src_hash": "777696880e4dd54127cba0fa85de3271",
+    "text": "Utilizzando uno dei {0} {1}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:43.773824Z"
+  },
+  "cpp.hotkey.using_last": {
+    "src_hash": "4b3adcc3fe64dbce468c0fa4b668c846",
+    "text": "Utilizzando l'ultimo {0}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:43.774071Z"
+  },
+  "cpp.hotkey.using_one": {
+    "src_hash": "971227a6314d5326dab060636ff23693",
+    "text": "Utilizzando uno dei {0}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:43.774398Z"
+  },
+  "cpp.house.bought_success": {
+    "src_hash": "98a9f116c9916d163d2d3af2213581c9",
+    "text": "Hai acquistato con successo la casa.{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:50.526283Z"
+  },
+  "cpp.house.door_owned": {
+    "src_hash": "98e2375152aa622dad165cee2531ab37",
+    "text": "Appartiene alla casa '{0}'. {1} possiede questa casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:50.526662Z"
+  },
+  "cpp.house.door_price": {
+    "src_hash": "5719af6fa7017f4e99737d843abac8f4",
+    "text": "Costa {0} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:50.526947Z"
+  },
+  "cpp.house.door_rent": {
+    "src_hash": "470cb72558b650d06eda7f93e496ec3b",
+    "text": "Il costo dell'affitto è di {0} monete d'oro e viene fatturato {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:50.527356Z"
+  },
+  "cpp.house.door_size": {
+    "src_hash": "ccea0ec0938e05110e60ca4bd37e3ae4",
+    "text": "Sono {0} metri quadrati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:50.527641Z"
+  },
+  "cpp.house.door_unowned": {
+    "src_hash": "b5b6a1dbe747394480a72ca2bbea0e1a",
+    "text": "Appartiene alla casa '{0}'. Nessuno possiede questa casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:56.283525Z"
+  },
+  "cpp.house.ownership_transfer_on_restart": {
+    "src_hash": "cc79fea55af06648fd3245fba49684c8",
+    "text": "La proprietà verrà trasferita al riavvio del server.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:56.283912Z"
+  },
+  "cpp.house.sold_success": {
+    "src_hash": "84af06c5ff98ee71ff815822331261d1",
+    "text": "Hai venduto con successo la tua casa.{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:56.284229Z"
+  },
+  "cpp.inspect.armor": {
+    "src_hash": "c77a8030f463c2c14aebd6452fc9f0a8",
+    "text": "Armatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:56.284398Z"
+  },
+  "cpp.inspect.at_range": {
+    "src_hash": "75b8f2c5b6a918cd5d8c3e92564f85ab",
+    "text": "a distanza ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:56.284588Z"
+  },
+  "cpp.inspect.attack_plus": {
+    "src_hash": "239982a51b26f0e33b2398e550803028",
+    "text": "attacco +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:59.054445Z"
+  },
+  "cpp.inspect.augments": {
+    "src_hash": "71b34ef227e7586d306e0e21cbdf7b96",
+    "text": "Aumenta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:59.054638Z"
+  },
+  "cpp.inspect.body_body": {
+    "src_hash": "841a2d689ad86bd1611447453c22c6fc",
+    "text": "corpo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:59.054794Z"
+  },
+  "cpp.inspect.body_both_hands": {
+    "src_hash": "b902e7f43ccfd9ff9a965a24ef50ba2a",
+    "text": "entrambe le mani",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:59.055073Z"
+  },
+  "cpp.inspect.body_container": {
+    "src_hash": "5f0b6ebc4bea10285ba2b8a6ce78b863",
+    "text": "contenitore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:26:59.055250Z"
   }
 }

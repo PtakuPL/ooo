@@ -37054,5 +37054,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:02:34.412180Z"
+  },
+  "npc.bo_ques.farewell_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "До свидания. Я уверен, что вы вернетесь еще. Все они так делают.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:24:40.991982Z"
+  },
+  "npc.bo_ques.walkaway_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "До свидания. Я уверен, что вы вернетесь еще. Все они так делают.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:24:40.993558Z"
+  },
+  "npc.bolfona.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Увидимся, мой друг.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:24:40.993900Z"
+  },
+  "npc.bolfona.greet_msg_1": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Ты говоришь со мной? Что ж, продолжайте болтать, но не ждите ответа.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:24:40.994598Z"
+  },
+  "npc.bolfona.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Увидимся, мой друг.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:24:40.995235Z"
   }
 }

@@ -24918,5 +24918,157 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:44:48.901141Z"
+  },
+  "scripts.actions_MedusaOil.msg_5": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:29.556025Z"
+  },
+  "scripts.actions_augerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:29.557628Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:29.573773Z"
+  },
+  "scripts.actions_peelerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:29.586484Z"
+  },
+  "scripts.actions_pickenchanted.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:29.586878Z"
+  },
+  "scripts.actions_scissorsfun.msg_1": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:29.595155Z"
+  },
+  "player.prey.cards_missing_auto": {
+    "src_hash": "52f2fe5f175d5c3f1fbe13048f5e133a",
+    "text": "У вас недостаточно карт добычи, чтобы включить автоматический переброс по истечении срока действия вашего слота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:31.004870Z"
+  },
+  "player.prey.cards_missing_lock": {
+    "src_hash": "56f31f72e8df45fdfa34bd0a82e4b0ad",
+    "text": "У вас недостаточно карт добычи, чтобы заблокировать монстра и бонус до истечения срока действия слота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:31.005411Z"
+  },
+  "player.prey.dialog.action_error": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "При обработке вашего действия произошла ошибка. Пожалуйста, попробуйте снова открыть окно добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:31.005918Z"
+  },
+  "player.prey.dialog.already_active": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "У вас уже есть активный монстр в этом слоте добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:31.006390Z"
+  },
+  "player.prey.dialog.cards_bonus_reroll": {
+    "src_hash": "ab27ddfd47408686344af959cfce82e3",
+    "text": "У вас недостаточно карт добычи, чтобы перебросить тип бонуса этого слота добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:31.006858Z"
+  },
+  "player.prey.dialog.cards_list": {
+    "src_hash": "74c459ac155c0dd25f49c4e5c8c0d798",
+    "text": "У вас недостаточно карт добычи, чтобы выбрать монстра из списка.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:34.570233Z"
+  },
+  "player.prey.dialog.creature_invalid": {
+    "src_hash": "6b41c622ace4cb2e453cc5ee4d40114d",
+    "text": "Это существо нельзя выбрать в качестве добычи. Пожалуйста, выберите другой.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:34.570845Z"
+  },
+  "player.prey.dialog.creature_selected": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Это существо уже выбрано в другом слоте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:34.571235Z"
+  },
+  "player.prey.dialog.money_reroll": {
+    "src_hash": "4a0c6a127b06f522ac139325de73de25",
+    "text": "У вас недостаточно денег, чтобы перебросить слот добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:34.571644Z"
+  },
+  "player.prey.dialog.no_active_monster": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "У вас нет активных монстров в этом слоте добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:34.572037Z"
+  },
+  "player.prey.dialog.unlock_store": {
+    "src_hash": "0e0663dfef25a898928e3b386cfda7cd",
+    "text": "Чтобы разблокировать этот слот для добычи, вы должны сначала купить его в магазине.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:36.735597Z"
+  },
+  "player.rookgaard.ready": {
+    "src_hash": "6d20bc2142a906d6f307b16d89c864a5",
+    "text": "Поздравляем! Вы готовы покинуть этот остров и выбрать призвание. Посетите Оракула над академией в Rookgaard, прежде чем достигнете 10-го уровня.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:36.736388Z"
+  },
+  "player.stash.dialog.capacity_none": {
+    "src_hash": "8a2af9d9b8713d47f34f5d153c8fbd5a",
+    "text": "Недостаточно мощности. Вы не смогли получить ни одного предмета.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:36.736836Z"
   }
 }

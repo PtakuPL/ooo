@@ -1,128 +1,104 @@
 {
-  "timestamp": "2026-02-17T01:49:39.423809Z",
-  "language": "pl",
-  "json_file": "books.json",
-  "translated": 35,
+  "timestamp": "2026-02-17T01:52:18.197584Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 16,
   "entries": [
     {
-      "key": "book.otbm.do_nott_wentt_down_or",
-      "en": "Do nott wentt down or restt in peace",
-      "translated": "Nie schodź na dół i spoczywaj w pokoju",
-      "source": "google_translate"
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dont_feed_the_male_scum",
-      "en": "Don't feed the male scum!",
-      "translated": "Nie karm męskich szumowin!",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.greet_1",
+      "en": "<sniff>",
+      "translated": "<sniff>",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dont_leave_the_protection_of",
-      "en": "Don't leave the protection of the village too soon. First try to get better equipment. Buy equipment",
-      "translated": "Nie opuszczaj zbyt wcześnie osłony wioski. Najpierw postaraj się o lepszy sprzęt. Kup sprzęt",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dont_shoot_or_throw_at",
-      "en": "Don't shoot or throw at the performers",
-      "translated": "Nie strzelaj ani nie rzucaj w wykonawców",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dont_steal_from_the_game",
-      "en": "Don't steal from the game rooms!",
-      "translated": "Nie kradnij z pokojów gier!",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dont_steal_from_the_game_40dbdc0e",
-      "en": "Don't steal from the game rooms!",
-      "translated": "Nie kradnij z pokojów gier!",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dont_touch_the_machines_and",
-      "en": "Don't touch the machines and beware of uncontrolled worker golems!",
-      "translated": "Nie dotykaj maszyn i uważaj na niekontrolowane golemy robotnicze!",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dragons_orcs_and_their_unholy",
-      "en": "dragons, orcs and their unholy attendants, too, and Banor was a glorious leader for mankind.",
-      "translated": "smoki, orki i ich bezbożni towarzysze, a Banor był chwalebnym przywódcą ludzkości.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dren_lo_explorer_hero_and",
-      "en": "Dren Lo, explorer, hero and general",
-      "translated": "Dren Lo, odkrywca, bohater i generał",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dress_for_success_tailor_shop",
-      "en": "Dress for Success - Tailor Shop",
-      "translated": "Sukienka na sukces - krawiec",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dress_for_success_tailor_shop_7cbb538e",
-      "en": "Dress for Success - Tailor Shop",
-      "translated": "Sukienka na sukces - krawiec",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.eastern_city_entrance_use_door",
-      "en": "Eastern city entrance - use door. Central production site - use ladder.",
-      "translated": "Wschodnie wejście do miasta - użyj drzwi. Centralny zakład produkcyjny - użyj drabiny.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.eggs_cheese_cookies_rolls_meat",
-      "en": "eggs, cheese, cookies, rolls, meat, salmon, oranges, grapes, melons, bananas",
-      "translated": "jajka, sery, ciasteczka, bułki, mięso, łosoś, pomarańcze, winogrona, melony, banany",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.elements_of_tibia_and_their",
-      "en": "Elements of Tibia and their alchemical order",
-      "translated": "Elementy Tibia i ich porządek alchemiczny",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.elite_came_back_alive_if",
-      "en": "elite came back alive, if you are not a highly trained specialist and try to go there on your own, you will probably just cease to be.",
-      "translated": "elita wróciła żywa, jeśli nie jesteś wysoko wykwalifikowanym specjalistą i spróbujesz tam pojechać na własną rękę, prawdopodobnie po prostu przestaniesz nim być.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.embalming_fluid_chants_and_holy",
-      "en": "Embalming fluid, chants and holy preparations required to guide the spirit to the next world and preserve his body in the intermediate world, by Rames-Seni  Osi-Atun-Ra-Heton, enlightened embalmer and humble servant of the Lord of the Seven Sandy Seas, may his spirit rule in the afterlife forever.",
-      "translated": "Płyn do balsamowania, pieśni i święte preparaty wymagane do prowadzenia ducha do następnego świata i zachowania jego ciała w świecie pośrednim, autorstwa Ramesa-Seni Osi-Atun-Ra-Hetona, oświeconego balsamisty i pokornego sługi Pana Siedmiu Piaszczystego Morza, niech jego duch rządzi w zaświatach na zawsze.",
-      "source": "google_translate"
-    },
-    {
-      "key": "book.otbm.employed_already_the_armies_of",
-      "en": "employed. Already the armies of the older races were readying themselves to recapture from the humans what the old ones",
-      "translated": "zatrudniony. Już armie starszych ras przygotowywały się do odebrania ludziom tego, co stare",
-      "source": "google_translate"
-    },
-    {
-      "key": "book.otbm.enter_at_your_own_risk",
-      "en": "Enter at your own risk and not unprepared!",
-      "translated": "Wchodzisz na własne ryzyko i nie jesteś przygotowany!",
-      "source": "google_translate"
-    },
-    {
-      "key": "book.otbm.enter_contaminated_areas_at_own",
-      "en": "Enter contaminated areas at own risk and with proper protective clothing.",
-      "translated": "Wchodzić do skażonych obszarów na własne ryzyko i w odpowiedniej odzieży ochronnej.",
-      "source": "google_translate"
-    },
-    {
-      "key": "book.otbm.enter_the_ancient_blue_flame",
-      "en": "Enter the ancient blue flame of citizenship",
-      "translated": "Wejdź do starożytnego niebieskiego płomienia obywatelstwa",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     }
   ]
 }

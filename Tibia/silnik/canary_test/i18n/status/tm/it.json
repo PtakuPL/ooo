@@ -9041,11 +9041,11 @@
   },
   "scripts.action_tortoise_egg_nargor.msg_1": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Hai trovato ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.834507Z"
+    "updated_at": "2026-02-17T01:51:11.795050Z"
   },
   "scripts.actions_bonefiddle.msg_1": {
     "src_hash": "1d91d803c170748ff4f101712cf1c262",
@@ -36486,5 +36486,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:44:33.198348Z"
+  },
+  "scripts.actions_containerRewards.msg_1": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Hai trovato un {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:55.262870Z"
+  },
+  "scripts.actions_mission11_payback_time_lever.msg_1": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "L'arena è già in uso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:55.280666Z"
+  },
+  "scripts.actions_steal_from_thieves.msg_2": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Hai trovato una borsa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:55.296744Z"
+  },
+  "scripts.register_actions.found_item": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Hai trovato un {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:55.395959Z"
+  },
+  "scripts.action_horn.say_6": {
+    "src_hash": "408ed320f4d8d0caf3d0d42c0eaaebc3",
+    "text": "Abbracci l'orso privo di sensi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:59.935940Z"
+  },
+  "scripts.action_horn.say_7": {
+    "src_hash": "6d7c280431ffc554b5e85569033e9d3b",
+    "text": "L'orso è ora privo di sensi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:59.936250Z"
+  },
+  "scripts.action_horn.say_8": {
+    "src_hash": "52973fa52e7f48800ed19f4764f3e847",
+    "text": "Riempi il tuo corno di birra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:50:59.936532Z"
+  },
+  "scripts.action_mead.say_1": {
+    "src_hash": "c269aed62a3c203806eb6d12da251395",
+    "text": "Hai già superato il test, non c'è più bisogno di torturarti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:03.525500Z"
+  },
+  "scripts.action_mead.say_2": {
+    "src_hash": "0fabdf73ecb41e1e9f399e748bd6d3b9",
+    "text": "Chiedi a Sven un altro giro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:03.525827Z"
+  },
+  "scripts.action_mead.say_3": {
+    "src_hash": "32b6b79cf91b2371bc9f0773523a45a9",
+    "text": "L'idromele era troppo forte. Sei svenuto per un attimo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:03.526212Z"
+  },
+  "scripts.action_mead.say_4": {
+    "src_hash": "ba2e7b30b026dc83a0208265c9e85819",
+    "text": "10 sorsi di fila. Sì!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:03.526515Z"
+  },
+  "scripts.action_mead.say_5": {
+    "src_hash": "8644232ae18e3da3d609d8e0a3b5a1be",
+    "text": "Il mondo sembra girare ma tu riesci a restare in piedi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:03.526880Z"
+  },
+  "scripts.action_music_sheet.msg_1": {
+    "src_hash": "9314b43e115b538920b31ec3050da83a",
+    "text": "Hai imparato la parte {} di un inno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:08.119422Z"
+  },
+  "scripts.action_music_sheet.msg_2": {
+    "src_hash": "df6c8a09dde2ce6c1bf0e1985521828b",
+    "text": "Conosci già la strofa {} dell'inno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:08.119815Z"
+  },
+  "scripts.action_outfit.msg_1": {
+    "src_hash": "6f787d1387c90834af3d9b663a8159d1",
+    "text": "Hai ottenuto il tuo nuovo vestito e ora puoi lasciare la stanza delle ricompense!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:08.120200Z"
+  },
+  "scripts.action_outfit.msg_2": {
+    "src_hash": "01df51775e4238428c8c068d2cc0b692",
+    "text": "Hai già preso l'abito, chiedi della missione di Chrak.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:08.120615Z"
+  },
+  "scripts.action_poacher_book.msg_1": {
+    "src_hash": "6ad778942f77ae1b95d6234ff0605923",
+    "text": "Stai mettendo il libro sul tavolo, speriamo che i bracconieri lo scoprano presto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:08.121185Z"
+  },
+  "scripts.action_poacher_notes.msg_1": {
+    "src_hash": "4bc657452622d096ce45741102787b03",
+    "text": "Hai trovato appunti di un bracconiere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:11.794623Z"
+  },
+  "scripts.action_switch.say_2": {
+    "src_hash": "0ed98a7921b030e0c2aa288063c25299",
+    "text": "Non succede nulla",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:11.794857Z"
+  },
+  "scripts.action_watch.say_1": {
+    "src_hash": "0c1babd47800a616057dbc862795e6e5",
+    "text": "Stai viaggiando nel tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:11.795325Z"
+  },
+  "scripts.action_water_fountain.msg_1": {
+    "src_hash": "0e2d063e230967a1983dd33849d7b89c",
+    "text": "Hai trovato una lacrima di Daraman.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:11.795629Z"
+  },
+  "scripts.action_whelp_fur.msg_1": {
+    "src_hash": "36137d8d9dbe7d2b655496d83858ae68",
+    "text": "Metti la pelliccia del cucciolo nella bocca della pietra e così la metti a riposare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:17.377868Z"
+  },
+  "scripts.action_worn_cloth.say_1": {
+    "src_hash": "69dab92962fe2f57da00d9deacd2ba46",
+    "text": "Sorprendente! È stato abbastanza veloce!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:17.378330Z"
+  },
+  "scripts.actions_MedusaOil.msg_1": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Rimuovi l'urlo di una banshee vicino al cristallo malvagio, con le orecchie protette dalla cera. Così il funesto manufatto viene distrutto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:17.378958Z"
+  },
+  "scripts.actions_MedusaOil.msg_2": {
+    "src_hash": "2fffed7e55b475fea1241561e1dee3bf",
+    "text": "Usi la cera fusa per tapparti le orecchie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:17.379281Z"
+  },
+  "scripts.actions_MedusaOil.msg_3": {
+    "src_hash": "81f34cd4feabd1b573f7f0287b5b7e09",
+    "text": "Hai mescolato i primi ingredienti per creare un unguento speciale. Ma non è ancora completo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:17.379737Z"
+  },
+  "scripts.actions_MedusaOil.msg_4": {
+    "src_hash": "de7e7625f949cdce38c79cc3d2a971de",
+    "text": "Hai mescolato gli ingredienti giusti per creare un unguento speciale. Con questo unguento puoi non pietrificare un oggetto pietrificato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:19.963619Z"
+  },
+  "scripts.actions_Misc.msg_1": {
+    "src_hash": "ef7bc2864cae3121bb7c48e6572383bf",
+    "text": "Mentre usi la piccola campana, un suono ultraterreno risuona dolcemente. Nello stesso momento le acque del lago cominciano a vorticare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:19.964114Z"
+  },
+  "scripts.actions_Misc.msg_2": {
+    "src_hash": "04b60dd3858c883f70e9bda7222d43e4",
+    "text": "In quest'area esiste già un vortice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:19.964449Z"
+  },
+  "scripts.actions_Misc.msg_3": {
+    "src_hash": "9f25db585c3bc299d4755213e900b2e5",
+    "text": "Hai trovato un foglio di carta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:19.964742Z"
+  },
+  "scripts.actions_Misc.msg_4": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Il mucchio di ossa è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:19.965034Z"
+  },
+  "scripts.actions_Misc.msg_5": {
+    "src_hash": "17f363d5b28d6710eee10f1f445e69ef",
+    "text": "Hai trovato una piccola campana di cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:22.505419Z"
+  },
+  "scripts.actions_Misc.msg_6": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Il mucchio di ossa è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:22.505731Z"
+  },
+  "scripts.actions_Misc.msg_7": {
+    "src_hash": "251bcb9238b80e3c253577b72c0388ca",
+    "text": "Prendi del sangue dal cristallo cavo. Speriamo che sia effettivamente il sangue di una medusa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:22.506204Z"
+  },
+  "scripts.actions_Ointment.msg_1": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Rimuovi l'urlo di una banshee vicino al cristallo malvagio, con le orecchie protette dalla cera. Così il funesto manufatto viene distrutto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:22.506858Z"
+  },
+  "scripts.actions_acidFishingRod.msg_1": {
+    "src_hash": "b7edddd4772bae9ec1170cd75ad8532c",
+    "text": "Non osi toccare i resti. Una parola è stata incisa ripetutamente su queste ossa: 'K'muuh'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:22.507351Z"
+  },
+  "scripts.actions_amazon_disguise_kit.say_1": {
+    "src_hash": "9bd23f50ea88b5a877980d0d79b198b6",
+    "text": "Ti travesti da bella amazzone!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:24.892953Z"
+  },
+  "scripts.actions_amforas.say_1": {
+    "src_hash": "88ea24a13ebba465ba24e1ba958a3bb6",
+    "text": "Hai già il tuo cuore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:24.893261Z"
+  },
+  "scripts.actions_amforas.say_2": {
+    "src_hash": "16fe9312206fbed5d7cf5919d2bf1b21",
+    "text": "Continua a provarci!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:24.893484Z"
+  },
+  "scripts.actions_amforas.say_3": {
+    "src_hash": "40a07bfe88b5502f6d2edfb4bf7b5e82",
+    "text": "Hai un cuore fantastico!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:24.893754Z"
   }
 }

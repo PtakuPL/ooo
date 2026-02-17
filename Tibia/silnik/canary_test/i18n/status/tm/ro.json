@@ -30030,5 +30030,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:46:24.387771Z"
+  },
+  "scripts.actions_MedusaOil.msg_5": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.330169Z"
+  },
+  "scripts.actions_augerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.331573Z"
+  },
+  "scripts.actions_containerRewards.msg_1": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Ați găsit un {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.339371Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.346181Z"
+  },
+  "scripts.actions_mission11_payback_time_lever.msg_1": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Arena este deja folosită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.354799Z"
+  },
+  "scripts.actions_peelerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.358968Z"
+  },
+  "scripts.actions_pickenchanted.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.359326Z"
+  },
+  "scripts.actions_scissorsfun.msg_1": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.367755Z"
+  },
+  "scripts.actions_steal_from_thieves.msg_2": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.368681Z"
+  },
+  "scripts.register_actions.found_item": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Ați găsit un {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:40.449678Z"
+  },
+  "scripts.action_beaver.say_1": {
+    "src_hash": "76ebbf3693cb1fd0c1b2dba34a26b65d",
+    "text": "Ai marcat copacul, dar fostul său locuitor ți-a furat momeala! Ia-l înainte să fugă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:41.745803Z"
+  },
+  "scripts.action_beaver.say_2": {
+    "src_hash": "e9873c92733c3122ad008d43fcab7271",
+    "text": "Ai marcat copacul, dar se pare că cineva l-a marcat deja! Nu este mulțumit de acțiunile tale și și-a adus prieteni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:41.746444Z"
+  },
+  "scripts.action_beaver.say_3": {
+    "src_hash": "79477227f7cf21264b4dd65357782bf8",
+    "text": "Ai marcat copacul, dar ai înfuriat și familia de veverițe care locuia pe el!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:46.697635Z"
+  },
+  "scripts.action_boss.say_1": {
+    "src_hash": "01219f4a0de819027cf51e5318506d9e",
+    "text": "În sfârşit.. O am înapoi, scumpa mea amuletă. Ma bucur ca nu l-ai folosit! Îți permit să ... ahh... să intri pe ușă ... ahh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:46.698299Z"
+  },
+  "scripts.action_cat_basket.say_2": {
+    "src_hash": "32773a28a80d0bcb17a9edbdeea4076e",
+    "text": "Pisica reginei nu se amuza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:46.699761Z"
+  },
+  "scripts.action_contract.say_1": {
+    "src_hash": "c8f125b3cb6febc023f9cd84ad3cef27",
+    "text": "Tu semnezi contractul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:46.700013Z"
+  },
+  "scripts.action_crate.say_1": {
+    "src_hash": "fca452ef18abc7cc68df7f167ef8ad06",
+    "text": "Fluierul tău nevinovat îi va păcăli pe toți...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:50.390916Z"
+  },
+  "scripts.action_cushion.say_2": {
+    "src_hash": "ff65be0caa3604016fe9f73079073310",
+    "text": "*chicotește maniac*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:50.391627Z"
+  },
+  "scripts.action_disguise.say_1": {
+    "src_hash": "14794b706ca5c231c49db8ec9262f013",
+    "text": "Acum ești deghizat în mumie timp de 10 secunde. Grăbește-te și sperie califul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:50.392167Z"
+  },
+  "scripts.action_hidden_note.msg_1": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Ai găsit o bucată de hârtie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:50.392494Z"
+  },
+  "scripts.action_horn.say_1": {
+    "src_hash": "074a9f24553df0cf18625275df81a6e0",
+    "text": "Nu ești îndeajuns de beat ca să umbli un mamut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:53.956140Z"
+  },
+  "scripts.action_horn.say_2": {
+    "src_hash": "b9e4ffbf146a1ddf7710cd45c03d8c21",
+    "text": "Găsești mamutul. Ce distracție. *hicks*.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:53.956510Z"
+  },
+  "scripts.action_horn.say_3": {
+    "src_hash": "8acec3a7caf3ea2705b8232f19a7c033",
+    "text": "Ursul nu este amuzat de tulburare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:53.956825Z"
+  },
+  "scripts.action_horn.say_4": {
+    "src_hash": "75938bd55048b04afc042cba4954d4ba",
+    "text": "Grr.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:53.957036Z"
+  },
+  "scripts.action_horn.say_5": {
+    "src_hash": "6b35ad266884e6774eeed5bc937d9189",
+    "text": "Nu ai chef să îmbrățișezi un urs inconștient.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:53.957432Z"
+  },
+  "scripts.action_horn.say_6": {
+    "src_hash": "408ed320f4d8d0caf3d0d42c0eaaebc3",
+    "text": "Îți îmbrățișezi ursul inconștient.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:56.529811Z"
+  },
+  "scripts.action_horn.say_7": {
+    "src_hash": "6d7c280431ffc554b5e85569033e9d3b",
+    "text": "Ursul este acum inconștient.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:56.530212Z"
+  },
+  "scripts.action_horn.say_8": {
+    "src_hash": "52973fa52e7f48800ed19f4764f3e847",
+    "text": "Îți umpli cornul cu bere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:56.530609Z"
+  },
+  "scripts.action_mead.say_1": {
+    "src_hash": "c269aed62a3c203806eb6d12da251395",
+    "text": "Ai trecut deja testul, nu e nevoie să te mai torturezi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:56.531021Z"
+  },
+  "scripts.action_mead.say_2": {
+    "src_hash": "0fabdf73ecb41e1e9f399e748bd6d3b9",
+    "text": "Cere-i lui Sven încă o rundă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:56.531336Z"
+  },
+  "scripts.action_mead.say_3": {
+    "src_hash": "32b6b79cf91b2371bc9f0773523a45a9",
+    "text": "Hidroleul era prea puternic. Ai leșinat pentru o clipă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:59.150254Z"
+  },
+  "scripts.action_mead.say_4": {
+    "src_hash": "ba2e7b30b026dc83a0208265c9e85819",
+    "text": "10 înghițituri la rând. Da!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:59.150568Z"
+  },
+  "scripts.action_mead.say_5": {
+    "src_hash": "8644232ae18e3da3d609d8e0a3b5a1be",
+    "text": "Lumea pare să se învârtească, dar reușești să stai pe picioare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:59.151009Z"
+  },
+  "scripts.action_music_sheet.msg_1": {
+    "src_hash": "9314b43e115b538920b31ec3050da83a",
+    "text": "Ați învățat partea {} a unui imn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:59.151356Z"
+  },
+  "scripts.action_music_sheet.msg_2": {
+    "src_hash": "df6c8a09dde2ce6c1bf0e1985521828b",
+    "text": "Știți deja versul {} al imnului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:51:59.151726Z"
+  },
+  "scripts.action_outfit.msg_1": {
+    "src_hash": "6f787d1387c90834af3d9b663a8159d1",
+    "text": "Ți-ai câștigat noua ținută și poți părăsi camera de recompense acum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:03.832615Z"
+  },
+  "scripts.action_outfit.msg_2": {
+    "src_hash": "01df51775e4238428c8c068d2cc0b692",
+    "text": "Ai luat deja ținuta, întreabă despre misiune pentru Chrak.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:03.833023Z"
+  },
+  "scripts.action_poacher_book.msg_1": {
+    "src_hash": "6ad778942f77ae1b95d6234ff0605923",
+    "text": "Puneți cartea pe masă, sperăm că braconierii o vor descoperi curând.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:03.833455Z"
+  },
+  "scripts.action_poacher_notes.msg_1": {
+    "src_hash": "4bc657452622d096ce45741102787b03",
+    "text": "Ați găsit însemnări ale unui braconnier.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:03.833784Z"
+  },
+  "scripts.action_switch.say_2": {
+    "src_hash": "0ed98a7921b030e0c2aa288063c25299",
+    "text": "Nu se întâmplă nimic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:03.834028Z"
+  },
+  "scripts.action_watch.say_1": {
+    "src_hash": "0c1babd47800a616057dbc862795e6e5",
+    "text": "Călătorești în timp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:06.416421Z"
+  },
+  "scripts.action_water_fountain.msg_1": {
+    "src_hash": "0e2d063e230967a1983dd33849d7b89c",
+    "text": "Ai gasit o lacrima de daraman.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:06.416754Z"
+  },
+  "scripts.action_whelp_fur.msg_1": {
+    "src_hash": "36137d8d9dbe7d2b655496d83858ae68",
+    "text": "Puneți blana de pui în gura pietrei și astfel o puneți să se odihnească.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:06.417198Z"
+  },
+  "scripts.action_worn_cloth.say_1": {
+    "src_hash": "69dab92962fe2f57da00d9deacd2ba46",
+    "text": "Uimitor! A fost destul de rapid!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:06.417492Z"
+  },
+  "scripts.actions_MedusaOil.msg_1": {
+    "src_hash": "c4fba333a8a4afd21ee2dfd710cb2909",
+    "text": "Nepetrificați țipătul unui banshee lângă cristalul rău, cu urechile protejate de ceară. Astfel, artefactul nenorocit este distrus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:52:06.418053Z"
   }
 }

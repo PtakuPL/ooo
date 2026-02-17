@@ -59190,5 +59190,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:56:36.213006Z"
+  },
+  "questlog.quest_11.mission_32.name": {
+    "src_hash": "5b3ac7305973999a7565ea45576764e7",
+    "text": "Paw and Fur: Nightmares",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:47.791481Z"
+  },
+  "questlog.quest_11.mission_32.state_1": {
+    "src_hash": "5eae8d5a720910b09cbe9ce1e94ef1c3",
+    "text": "Ai vânat cu succes 400 de coșmaruri. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:01:49.836491Z"
   }
 }

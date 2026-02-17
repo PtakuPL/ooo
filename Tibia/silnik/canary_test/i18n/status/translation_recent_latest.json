@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T10:01:03.065100Z",
-  "language": "ru",
-  "json_file": "books.json",
-  "translated": 39,
+  "timestamp": "2026-02-17T10:03:07.317636Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 25,
   "entries": [
     {
-      "key": "book.otbm.battletactics_for_mages_i",
-      "en": "Battletactics for Mages [I]",
-      "translated": "Тактика боя для магов [I]",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "en": "Battletactics for Mages [II]",
-      "translated": "Тактика боя для магов [II]",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "en": "Battletactics for Mages [III]",
-      "translated": "Тактика боя для магов [III]",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "en": "Battletactics for Mages [IV]",
-      "translated": "Тактика боя для магов [IV]",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "book.otbm.brog_however_laughed_over_the",
-      "en": "Brog however laughed over the dragon, which he had created, because he roamed over Tibia and was a terror to the few",
-      "translated": "Однако Брог смеялся над драконом, которого он создал, потому что он бродил по Tibia и был ужасом для немногих.",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "book.otbm.buildings_disappeared_gradually_from_the",
-      "en": "buildings disappeared gradually from the face of Tibia.",
-      "translated": "здания постепенно исчезли с лица Tibia.",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "book.otbm.but_when_the_orks_threatened",
-      "en": "But when the Orks threatened to cover Tibia almost completely, the dragon came! They had decided that only they",
-      "translated": "Но когда орки пригрозили почти полностью захватить Tibia, пришел дракон! Они решили, что только они",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "book.otbm.by_the_way_the_summoning",
-      "en": "By the way: The summoning of lesser creatures, the so-called 'reds', progressed comparatively well. Of course, these creatures are mere borderdwellers and may consequently not be considered true demons. However, it may prove that the development of summoning spells for 'reds' will prove a rewarding spin-off of demon summoning research.",
-      "translated": "Кстати: призыв меньших существ, так называемых 'reds', продвигался сравнительно хорошо. Конечно, эти существа всего лишь обитатели границ и, следовательно, не могут считаться настоящими демонами. Однако может оказаться, что разработка заклинаний призыва для 'reds' станет полезным побочным продуктом исследований по призыву демонов.",
+      "key": "npc.elyen_ravenlock.voice_2",
+      "en": "<chants> Re Ha, Omrah, Tan Ra...",
+      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
       "source": "tm"
     },
     {
-      "key": "book.otbm.centuries_ago_our_ancients_build",
-      "en": "Centuries ago, our ancients build this maze to protect our city Demona from bandits and warriors.",
-      "translated": "Много веков назад наши предки построили этот лабиринт, чтобы защитить наш город Demona от бандитов и воинов.",
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
       "source": "tm"
     },
     {
-      "key": "book.otbm.citizen_depot_downstairs",
-      "en": "Citizen Depot downstairs.",
-      "translated": "Гражданин Depot внизу.",
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "book.otbm.congratulations_you_have_passed_the",
-      "en": "Congratulations, you have passed the Dream Challenge. Now enjoy the fruits of your success and relax before continue the way to meet the master.",
-      "translated": "Поздравляем, вы прошли Dream Challenge. Теперь наслаждайтесь плодами своего успеха и расслабьтесь, прежде чем продолжить путь к встрече с мастером.",
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "book.otbm.contact_henricus_in_the_inquisiton",
-      "en": "Contact Henricus in the Inquisiton quarters beneath the Thaian jail!",
-      "translated": "Свяжитесь с Henricus в помещении Инквизиции под тайской тюрьмой!",
+      "key": "npc.mother_of_jack.voice_1",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
       "source": "tm"
     },
     {
-      "key": "ui.readable.nothing_written",
-      "en": "Nothing is written on it",
-      "translated": "На нем ничего не написано",
-      "source": "simple"
+      "key": "npc.navigator.multi_1",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
+      "source": "tm"
     },
     {
-      "key": "ui.readable.too_far_to_read",
-      "en": "You are too far away to read it",
-      "translated": "Ты слишком далеко, чтобы прочитать это",
-      "source": "simple"
+      "key": "npc.navigator.multi_2",
+      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
+      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.cyclopic_cities_were_laid_into",
-      "en": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset",
-      "translated": "циклопические города были превращены в руины, невероятные кузнечные фабрики потеряны навеки, и до сих пор циклопы огорчены",
-      "source": "google_translate"
+      "key": "npc.omrabas.multi_35",
+      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
+      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dagger_hand_axe_barbarian_axe",
-      "en": "dagger, hand axe, barbarian axe, spear, rapier, axe, sabre, sword, mace, battle hammer and clerical mace",
-      "translated": "кинжал, ручной топор, варварский топор, копье, рапира, топор, сабля, меч, булава, боевой молот и канцелярская булава",
-      "source": "google_translate"
+      "key": "npc.omrabas.multi_82",
+      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
+      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.damnation_to_all_who_dare",
-      "en": "Damnation to all who dare to enter!",
-      "translated": "Проклятие всем, кто осмелится войти!",
-      "source": "google_translate"
+      "key": "npc.omrabas.voice_2",
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.dark_are_the_mysteries_surrounded",
-      "en": "Dark are the mysteries surrounded by doomed cries",
-      "translated": "Темны тайны, окруженные обреченными криками",
-      "source": "google_translate"
+      "key": "npc.pythius_the_rotten.stdmod_12",
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.daughter_of_earth_and_fire",
-      "en": "Daughter of earth and fire",
-      "translated": "Дочь земли и огня",
-      "source": "google_translate"
+      "key": "npc.raymond_striker.multi_21",
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
+      "source": "tm"
     },
     {
-      "key": "book.otbm.daughter_of_earth_and_fire_e0cf4dcd",
-      "en": "Daughter of earth and fire",
-      "translated": "Дочь земли и огня",
-      "source": "google_translate"
+      "key": "npc.sane_mage.multi_5",
+      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
+      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
+      "source": "tm"
     }
   ]
 }

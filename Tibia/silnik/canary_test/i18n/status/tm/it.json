@@ -65790,5 +65790,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:00:48.084574Z"
+  },
+  "questlog.quest_11.mission_33.name": {
+    "src_hash": "1c695b2b5b623b603596619db21808fa",
+    "text": "Paw and Fur: Hellspawns",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:12.758978Z"
+  },
+  "questlog.quest_11.mission_33.state_1": {
+    "src_hash": "f2cbd29c14edd7ac385ee3dc6bb7f3da",
+    "text": "Hai cacciato con successo 600 creature infernali. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:12.759490Z"
   }
 }

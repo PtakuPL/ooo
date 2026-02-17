@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T09:59:17.224846Z",
+  "timestamp": "2026-02-17T10:02:42.784359Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,10 +73,10 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 469,
+    "it": 470,
     "nl": 691,
     "pt": 620,
-    "ro": 432,
+    "ro": 433,
     "ru": 60,
     "sk": 663,
     "tr": 542,
@@ -640,7 +640,7 @@
     {
       "lang": "it",
       "json_file": "questlog.json",
-      "identical_to_en": 15,
+      "identical_to_en": 16,
       "domain_priority": 9
     },
     {
@@ -874,7 +874,7 @@
     {
       "lang": "ro",
       "json_file": "questlog.json",
-      "identical_to_en": 43,
+      "identical_to_en": 44,
       "domain_priority": 9
     },
     {

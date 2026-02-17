@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-17T09:32:27.672300Z",
+  "timestamp": "2026-02-17T10:02:29.561218Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
   "status": "warming_up",
   "alert": false,
-  "message": "Stagnation window not ready (window_too_short), span=5.99h samples=106",
+  "message": "Stagnation window not ready (window_too_short), span=5.98h samples=107",
   "reason": "window_too_short",
   "top_key": "es:npc.json",
   "top_count": 51,
-  "old_total": 38563,
-  "new_total": 38136,
-  "decrease_pct": 1.11,
-  "old_ts": "2026-02-17T03:27:51.391848Z",
-  "new_ts": "2026-02-17T09:30:08.281201Z",
-  "hours_elapsed": 5.993,
-  "sample_count": 106,
+  "old_total": 38539,
+  "new_total": 38090,
+  "decrease_pct": 1.17,
+  "old_ts": "2026-02-17T03:57:31.168901Z",
+  "new_ts": "2026-02-17T09:59:17.224846Z",
+  "hours_elapsed": 5.982,
+  "sample_count": 107,
   "per_lang_trend": {
     "ar": {
       "old": 904,
@@ -73,9 +73,9 @@
     },
     "es": {
       "old": 300,
-      "new": 262,
-      "delta": 38,
-      "decrease_pct": 12.67
+      "new": 277,
+      "delta": 23,
+      "decrease_pct": 7.67
     },
     "et": {
       "old": 663,
@@ -138,10 +138,10 @@
       "decrease_pct": 0.0
     },
     "it": {
-      "old": 468,
-      "new": 472,
-      "delta": -4,
-      "decrease_pct": -0.85
+      "old": 462,
+      "new": 469,
+      "delta": -7,
+      "decrease_pct": -1.52
     },
     "ja": {
       "old": 904,
@@ -210,10 +210,10 @@
       "decrease_pct": 0.0
     },
     "pl": {
-      "old": 207,
+      "old": 199,
       "new": 139,
-      "delta": 68,
-      "decrease_pct": 32.85
+      "delta": 60,
+      "decrease_pct": 30.15
     },
     "pt": {
       "old": 620,
@@ -222,10 +222,10 @@
       "decrease_pct": 0.0
     },
     "ro": {
-      "old": 486,
-      "new": 434,
-      "delta": 52,
-      "decrease_pct": 10.7
+      "old": 476,
+      "new": 432,
+      "delta": 44,
+      "decrease_pct": 9.24
     },
     "ru": {
       "old": 112,
@@ -253,15 +253,15 @@
     },
     "sr": {
       "old": 492,
-      "new": 244,
-      "delta": 248,
-      "decrease_pct": 50.41
+      "new": 192,
+      "delta": 300,
+      "decrease_pct": 60.98
     },
     "sv": {
       "old": 531,
-      "new": 566,
-      "delta": -35,
-      "decrease_pct": -6.59
+      "new": 562,
+      "delta": -31,
+      "decrease_pct": -5.84
     },
     "sw": {
       "old": 905,

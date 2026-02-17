@@ -36918,5 +36918,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:01:02.993232Z"
+  },
+  "cpp.returnvalue.you_need_premium_account": {
+    "src_hash": "d10e0f3404950e7ed3fccf7a8dbd72a3",
+    "text": "Вам нужен премиум-аккаунт.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:17.055487Z"
+  },
+  "cpp.npc.loot_pouch_empty": {
+    "src_hash": "19949a7cef86dd39eedf1004ee273fa1",
+    "text": "В вашей сумке с добычей нет предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:22.325364Z"
+  },
+  "cpp.party.invited_member": {
+    "src_hash": "7d13e33c4599e50f0e653f4442c3db92",
+    "text": "{0} приглашен присоединиться к вечеринке (диапазон общего доступа: {1}-{2}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:22.325851Z"
+  },
+  "cpp.party.invited_member_with_hint": {
+    "src_hash": "d05980efadff489aa852931b120e9a63",
+    "text": "{0} приглашен присоединиться к вечеринке (диапазон общего доступа: {1}-{2}). Откройте канал группы, чтобы общаться с вашими участниками.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:22.326557Z"
+  },
+  "cpp.party.invited_you": {
+    "src_hash": "3b0e14a8cdddbdb07f30fd7906fd02ae",
+    "text": "{0} пригласил вас на вечеринку {1} (диапазон общего доступа: {2}-{3}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:22.327042Z"
+  },
+  "cpp.party.joined": {
+    "src_hash": "c43de5c4acec8bff684079a1fab7caa0",
+    "text": "Вы присоединились к группе {0}. Откройте канал группы, чтобы общаться со своими товарищами.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:22.327557Z"
+  },
+  "cpp.party.member_left": {
+    "src_hash": "53d13494eae30f5a624e61f9a71f02d6",
+    "text": "{0} покинул вечеринку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:27.266205Z"
+  },
+  "cpp.party.new_leader": {
+    "src_hash": "92e7d7fabd5be64332e4e84804942c63",
+    "text": "{0} теперь является лидером группы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:27.266583Z"
+  },
+  "cpp.party.shared_exp_active": {
+    "src_hash": "89578e7f5a779603c86b0def081dc66b",
+    "text": "Общий опыт теперь активен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:27.266936Z"
+  },
+  "cpp.party.shared_exp_active_alone": {
+    "src_hash": "299770ccf0c6851aa6d34323e2c256f5",
+    "text": "Общий опыт активирован, но вы один в группе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:27.267565Z"
+  },
+  "cpp.party.shared_exp_active_inactive": {
+    "src_hash": "c5f7db6e344f5dd5a8b917013146bd9d",
+    "text": "Общий опыт активирован, но некоторые члены вашей группы неактивны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:27.268047Z"
+  },
+  "cpp.party.shared_exp_active_level_spread": {
+    "src_hash": "baac1ae78badf2914b275c655cbf08db",
+    "text": "Общий опыт активирован, но разброс уровней вашей группы слишком велик.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:32.397935Z"
+  },
+  "cpp.party.shared_exp_active_too_far": {
+    "src_hash": "3dcb60d1bb1edcb8d393d2fc8406d969",
+    "text": "Общий опыт активирован, но некоторые члены вашей группы находятся слишком далеко.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:32.398606Z"
+  },
+  "cpp.party.shared_exp_error": {
+    "src_hash": "aa72d3421dfc220a2a4d359df9fab2fd",
+    "text": "Произошла ошибка. Не удалось активировать общий опыт.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:32.399041Z"
+  },
+  "cpp.player.adventurer_blessings_kept": {
+    "src_hash": "ba39b2a0d1644235affc07a634a5eac1",
+    "text": "У вас все еще есть благословение искателя приключений за то, что вы находитесь на уровне ниже {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:32.399582Z"
+  },
+  "cpp.player.adventurer_blessings_received": {
+    "src_hash": "b62a2e75a482786bc9e80db58a1868a8",
+    "text": "Вы получили благословение искателя приключений, поскольку ваш уровень ниже {0}!\nВам все еще повезло с {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:32.400169Z"
+  },
+  "cpp.player.blessed_with": {
+    "src_hash": "b131bc73a3a0d4b540e5511c822f25db",
+    "text": "Вам повезло с {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:02:34.412180Z"
   }
 }

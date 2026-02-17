@@ -1,27 +1,9 @@
 {
-  "timestamp": "2026-02-17T01:03:18.606769Z",
-  "language": "pl",
+  "timestamp": "2026-02-17T01:03:43.554950Z",
+  "language": "es",
   "json_file": "html.json",
   "translated": 50,
   "entries": [
-    {
-      "key": "html.account.characters.change_sex.html.text2",
-      "en": "{{ player.getName() }}",
-      "translated": "{{ player.getName() }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.admin_bar.html.text1",
-      "en": "{{ config.lua.serverName }}",
-      "translated": "{{ config.lua.serverName }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.experience_stages.html.text1",
-      "en": "x{{ stage.multiplier}}",
-      "translated": "x{{ stage.multiplier}}",
-      "source": "tm"
-    },
     {
       "key": "html.admin.open_source.html.text3",
       "en": "https://getbootstrap.com",
@@ -113,15 +95,33 @@
       "source": "tm"
     },
     {
-      "key": "html.activitylog.html.text1",
-      "en": "Nov 28 2022, 14:10:18",
-      "translated": "Niev 28 2022, 14:10:18",
+      "key": "html.forum.new_thread.html.text2",
+      "en": "[url]http://address.com/[/url]",
+      "translated": "[url]http://address.com/[/url]",
       "source": "tm"
     },
     {
-      "key": "html.activitylog.html.text3",
-      "en": "Nov 28 2022, 14:10:18",
-      "translated": "Niev 28 2022, 14:10:18",
+      "key": "html.forum.new_thread.html.text4",
+      "en": ";) , :) , :D , :( , :rolleyes:",
+      "translated": ";) , :) , :D , :( , :rolleSí:",
+      "source": "tm"
+    },
+    {
+      "key": "html.houses.view.html.text4",
+      "en": "{{ config.lua.serverName }}",
+      "translated": "{{ config.lua.serverName }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.admin.news.table.html.text1",
+      "en": "{{ news.date|date(setting('core.news_date_format')) }}",
+      "translated": "{{ news.date|date(setting('core.news_date_format')) }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.admin.news.table.html.text2",
+      "en": "{{ news.player_name }}",
+      "translated": "{{ news.player_name }}",
       "source": "tm"
     }
   ]

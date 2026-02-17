@@ -99070,5 +99070,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:32:13.816876Z"
+  },
+  "scripts.actions_old_desk.msg_3": {
+    "src_hash": "9357bd2ca0730e7628e83a029ac73173",
+    "text": "Masz już starą notatkę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.624965Z"
+  },
+  "scripts.actions_old_desk.msg_4": {
+    "src_hash": "ecb7f4a78e1e64eba1ccd320dd59b2f0",
+    "text": "Gdy otwierasz szufladę, na chwilę pojawia się duchowa zjawa unosząca się nad biurkiem. W środku znajdujesz starą notatkę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.626306Z"
+  },
+  "scripts.actions_ore_wagon.msg_1": {
+    "src_hash": "36e2511acf93d9ed7d367f024b98abd9",
+    "text": "Nie masz jeszcze uprawnień, aby tego użyć.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.627292Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.629510Z"
+  },
+  "scripts.actions_pickenchanted.msg_1": {
+    "src_hash": "fb9d34da72cc5f6f1c95cf1b19ea2f48",
+    "text": "Wydobywasz trochę tagraltu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.633206Z"
+  },
+  "scripts.actions_plant.msg_1": {
+    "src_hash": "2218f4ca9795863a9640c66efff7f96d",
+    "text": "Zasadziłeś nasiona w ziemi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.634435Z"
+  },
+  "scripts.actions_plant.msg_2": {
+    "src_hash": "20f382ee2143fd203f98fa3afff9cd91",
+    "text": "Brzoza rośnie, gdy polewasz ją iskrzącą wodą z fiolki.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.635636Z"
+  },
+  "scripts.actions_plant.msg_3": {
+    "src_hash": "81f7826bad933ff78c3d2e6d30dfc6aa",
+    "text": "Nie możesz użyć fiolki, dopóki drzewa wciąż mają życie i kolor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.636671Z"
+  },
+  "scripts.actions_plant.msg_4": {
+    "src_hash": "dbae0926d3ed10c91f6f663ba886cd12",
+    "text": "Wygląda na to, że nie wyhodowałeś dość drzew albo nie uwolniłeś papug.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.637791Z"
+  },
+  "scripts.actions_plant.msg_5": {
+    "src_hash": "c5958bcf813dccf58ae2ddb553ab17bb",
+    "text": "Nagle obszar się rozjaśnia, a wszystko wokół ciebie zaczyna rozkwitać i tętnić życiem oraz kolorem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.638980Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Wszyscy gracze muszą być na poziomie ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.641849Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Musisz poczekać ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.642859Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Wszyscy gracze muszą być na poziomie ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.643829Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Musisz poczekać ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.644716Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Musisz poczekać ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.645559Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Wszyscy gracze muszą być na poziomie ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.646595Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Musisz poczekać ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.647573Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.650990Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.652525Z"
+  },
+  "scripts.actions_rascacoon_shortcut.msg_1": {
+    "src_hash": "ded2b9f120cca0d28d8c1118c78bbbcf",
+    "text": "Potrzebujesz co najmniej 200 poziomu, aby wejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.654107Z"
+  },
+  "scripts.actions_ruins_instruments.msg_2": {
+    "src_hash": "bfc5a2b8e73ee0b52d9a03d612b45930",
+    "text": "Zagrałeś je w poprawnej kolejności i uzyskałeś dostęp przez drzwi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.660169Z"
+  },
+  "scripts.actions_sacrifice.msg_2": {
+    "src_hash": "8bf5443d627c50bb0f553b965975e833",
+    "text": "Znajdź strażnika sanguine tears i ofiaruj jego życiowe płyny sanguine masterowi tej krainy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.662507Z"
+  },
+  "scripts.actions_sacrifice.msg_3": {
+    "src_hash": "99e8b14525a94f991e0fc49346b3efae",
+    "text": "Wzmocnij swoją ofiarę blooded tear dla sanguine mastera tej krainy, aby przypieczętować ten układ.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.663670Z"
+  },
+  "scripts.actions_sacrifice.msg_4": {
+    "src_hash": "1411681fb4a9149426cbda58a4895f5b",
+    "text": "Twoja ofiara została przyjęta przez sanguine mastera tej krainy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.664851Z"
+  },
+  "scripts.actions_sacrifice.msg_5": {
+    "src_hash": "9437e8d85edc3490d14156aad4fc9cfe",
+    "text": "Twoje ofiary zostały przyjęte przez sanguine mastera tej krainy. Idź i zros swój korzeń wodami życia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.666065Z"
+  },
+  "scripts.actions_sacrifice_items.msg_1": {
+    "src_hash": "05d84d3f850e31ca6cbaf40fa904cfd2",
+    "text": "Już poświęciłeś ten przedmiot, aby przejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.668471Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_1": {
+    "src_hash": "03817ddcb904e57b7866a9caae3b7c76",
+    "text": "Klątwa zakłócenia tego kruchego, pradawnego spokoju to cena, którą musisz zapłacić!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.670315Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_2": {
+    "src_hash": "bd664ffc6b07649d20c47551253bd5dd",
+    "text": "Otwarcie ostatniego sarkofagu wciąż cię prześladuje. Odczekaj trochę, aż siły duchowe wrócą.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.671573Z"
+  },
+  "scripts.actions_sangra.msg_1": {
+    "src_hash": "3a1f900dc11ca38ff346592c0b186298",
+    "text": "Strzała wciąż tkwi w drzewie. Ze świeżego miejsca po trafieniu nadal sączy się krew.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.672775Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Nie możesz jeszcze tego użyć.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.673724Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Trzymasz przed sobą starą napierśnicę Galtheina. Nie pasuje i jest zbyt stara, by wytrzymać jakikolwiek atak.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.674939Z"
+  },
+  "scripts.actions_scroll.msg_1": {
+    "src_hash": "19911c332c7c434ad9d77712c72d551f",
+    "text": "Ktoś zostawił kartkę. Widnieje na niej: Szukasz zwoju? Znajdź mnie. Weź schody obok studentów. Dorm.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.677291Z"
+  },
+  "scripts.actions_seashell_key.msg_2": {
+    "src_hash": "d9bffb35571ed8e7f052998fd9ae03c6",
+    "text": "Ukryta skrytka pojawia się dokładnie w chwili przekręcenia klucza. Niestety klucz łamie się, gdy próbujesz wyjąć go z zamka.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.679430Z"
+  },
+  "scripts.actions_secret_wall.msg_1": {
+    "src_hash": "5a163e4c2b3e29c5e8647b87deb04ea0",
+    "text": "Nie masz pasującego klucza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.680480Z"
+  },
+  "scripts.actions_spirit_shovel.msg_1": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Zgłoś zadanie Gnomilly.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.682201Z"
+  },
+  "scripts.actions_statue.msg_1": {
+    "src_hash": "8010a8ce9522f7e248eca68600a4270a",
+    "text": "<BOOOOOOOONGGGGGG> Przez podłogę przechodzi powolne pulsowanie, jak bicie krwi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.683654Z"
+  },
+  "scripts.actions_strangeBucket.msg_1": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Nie ma dość ektoplazmy, by napełnić nią wiadro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.685056Z"
+  },
+  "scripts.actions_strangeBucket.msg_2": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Nie ma dość ektoplazmy, by napełnić nią wiadro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.686194Z"
+  },
+  "scripts.actions_strangeBucket.msg_3": {
+    "src_hash": "e7e7af2574d6040a7bf0983cec0655cf",
+    "text": "Ektoplazma pokrywająca to jajo już przesączała się do kokonu. Udaje ci się nabrać jej trochę do wiadra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.687372Z"
+  },
+  "scripts.actions_strangeBucket.msg_4": {
+    "src_hash": "10487b458e46ae82d8aa56f296fb4712",
+    "text": "Wylewasz na siebie całą ektoplazmę. Bez wiadra nie możesz jej ustabilizować, musisz się spieszyć, zanim się rozpuści!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.688564Z"
+  },
+  "scripts.actions_tears.msg_1": {
+    "src_hash": "21689dccde68112fb18462636aed408a",
+    "text": "Smocze łzy świecą i znikają. Stare moce zostały ułagodzone.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.690932Z"
+  },
+  "scripts.actions_teleportation_rod.msg_1": {
+    "src_hash": "cf5f5daa675c722dc62e11468b44a4fa",
+    "text": "Już teleportowałeś tę część Godbreakera do Mazariusa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.691950Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Teleskop zapewnia doskonały widok na bezkresny ocean - nie widać lądu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.693003Z"
+  },
+  "scripts.actions_the_rare_herb.msg_1": {
+    "src_hash": "1deab6975af73c713be793a50755bfa0",
+    "text": "Zebrałeś część pąków tego ziela. Zanieś je Morrisowi po nagrodę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.694441Z"
+  },
+  "scripts.actions_thermometer.msg_1": {
+    "src_hash": "03de06efaeede3f79178d8fca5e856bd",
+    "text": "Uff! Było tak gorąco, że termometr się stopił! Przynajmniej znalazłeś gorący punkt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.695875Z"
+  },
+  "scripts.actions_thermometer.msg_2": {
+    "src_hash": "5b0988e5f853d415fc34053cc10feb86",
+    "text": "To nie jest gorący punkt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.696773Z"
+  },
+  "scripts.actions_time_machine.msg_3": {
+    "src_hash": "af13692f0a7bdbfa9260b979d6b3e487",
+    "text": "Musisz chwilę poczekać, zanim znów będziesz podróżować w czasie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.698511Z"
+  },
+  "scripts.actions_tincture.msg_1": {
+    "src_hash": "1c515751e73b487c2c45cf91c696cde0",
+    "text": "Rozbijasz fiolkę i rozlewasz krwawą nalewkę. Ołtarz został namaszczony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.700115Z"
+  },
+  "scripts.actions_torch.msg_1": {
+    "src_hash": "4854b59cfd2c644e8e313775e6de1a6f",
+    "text": "Słyszysz głośny zgrzyt niedaleko siebie. Coś bardzo ciężkiego najwyraźniej się poruszyło.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:33:40.703422Z"
   }
 }

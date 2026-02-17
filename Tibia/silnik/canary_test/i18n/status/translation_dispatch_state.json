@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-17T00:33:04.684669Z",
-  "cycle_counter": 1059,
-  "last_target_key": "pl:quests.json",
-  "last_pending_total": 405,
+  "timestamp": "2026-02-17T00:33:43.696162Z",
+  "cycle_counter": 1062,
+  "last_target_key": "es:scripts.json",
+  "last_pending_total": 109,
   "last_tier": 1,
-  "last_cat_priority": 5,
+  "last_cat_priority": 6,
   "candidates_count": 195,
   "active_candidates_count": 187,
   "skipped_backoff": 8,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 82,
+  "cache_cycle": 83,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -376,8 +376,8 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 44.41,
-      "es": 74.2,
+      "pl": 44.49,
+      "es": 74.27,
       "ru": 36.08,
       "ro": 20.57,
       "it": 11.69,

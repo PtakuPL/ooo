@@ -35118,5 +35118,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:47:25.377916Z"
+  },
+  "spell.cults_of_tibia_armor_buff.name": {
+    "src_hash": "b670299f4fea508033e349381261574b",
+    "text": "Культы Tibia Усиление брони",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:35.213074Z"
+  },
+  "spell.tentuglys_head_energyt.name": {
+    "src_hash": "eaa025ac5a586de80c8b1a7f2ab1bcf2",
+    "text": "энергетическая волнаT",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:35.371394Z"
+  },
+  "spell.heal_monsters_9x9.name": {
+    "src_hash": "d1469ce8b15c75e139d407e40af9a00f",
+    "text": "Исцелить монстра 9x9",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:35.408256Z"
+  },
+  "spell.mooh'tah_master_skill_reducer.name": {
+    "src_hash": "60b7ab2a2e03d7a1b9b2eadc2fe332cc",
+    "text": "Редуктор навыков мастера mooh'tah",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:35.447618Z"
   }
 }

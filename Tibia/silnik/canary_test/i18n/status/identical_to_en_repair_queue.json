@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T07:46:34.032496Z",
+  "timestamp": "2026-02-17T07:49:42.431643Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,10 +73,10 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 459,
+    "it": 461,
     "nl": 691,
     "pt": 620,
-    "ro": 424,
+    "ro": 422,
     "ru": 60,
     "sk": 663,
     "tr": 542,
@@ -622,7 +622,7 @@
     {
       "lang": "it",
       "json_file": "quests.json",
-      "identical_to_en": 2,
+      "identical_to_en": 4,
       "domain_priority": 3
     },
     {
@@ -826,7 +826,7 @@
     {
       "lang": "ro",
       "json_file": "server.json",
-      "identical_to_en": 54,
+      "identical_to_en": 52,
       "domain_priority": 1
     },
     {

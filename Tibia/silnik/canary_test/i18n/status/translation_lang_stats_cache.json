@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T07:48:15.497019Z",
+  "timestamp": "2026-02-17T07:50:13.392267Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771314418225237138,
+          1771314606778079582,
           1847374
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771314418225237138,
+            1771314606778079582,
             1847374
           ],
           "row": {
@@ -16077,8 +16077,8 @@
         [
           "quests.json",
           1,
-          1771310537694131823,
-          66711
+          1771314574477944764,
+          66707
         ],
         [
           "raids.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 25350,
-        "english_copy_keys": 2146,
+        "translated_keys": 25348,
+        "english_copy_keys": 2148,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 47.31,
+        "completion_pct": 47.3,
         "server_keys": 49731,
-        "server_translated": 24486,
-        "server_pct": 49.24,
+        "server_translated": 24484,
+        "server_pct": 49.23,
         "client_keys": 3855,
         "client_translated": 864,
         "client_pct": 22.41
@@ -16556,13 +16556,13 @@
         "quests.json": {
           "sig": [
             1,
-            1771310537694131823,
-            66711
+            1771314574477944764,
+            66707
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 601,
-            "english_copy_keys": 5,
+            "translated_keys": 599,
+            "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27063,8 +27063,8 @@
         [
           "spells.json",
           1,
-          1771310549594257695,
-          84218
+          1771314566593911051,
+          84216
         ],
         [
           "startup.json",
@@ -27574,8 +27574,8 @@
         "spells.json": {
           "sig": [
             1,
-            1771310549594257695,
-            84218
+            1771314566593911051,
+            84216
           ],
           "row": {
             "total_reference_keys": 1534,
@@ -27846,8 +27846,8 @@
         [
           "spells.json",
           1,
-          1771310557326333443,
-          97051
+          1771314536361785299,
+          97050
         ],
         [
           "startup.json",
@@ -28357,8 +28357,8 @@
         "spells.json": {
           "sig": [
             1,
-            1771310557326333443,
-            97051
+            1771314536361785299,
+            97050
           ],
           "row": {
             "total_reference_keys": 1534,

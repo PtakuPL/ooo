@@ -1,8 +1,8 @@
 {
-  "total_cycles": 231,
+  "total_cycles": 232,
   "mode": "AUTO_TRANSLATE",
-  "category": "pl",
-  "last_update": "2026-02-17T05:16:23.363904",
+  "category": "es",
+  "last_update": "2026-02-17T05:16:52.260000",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,57 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "pl",
-    "json_file": "otclient_modules.json",
-    "keys_to_translate": 63,
-    "guard_fail": 39,
+    "language": "es",
+    "json_file": "achievements.json",
+    "keys_to_translate": 7,
+    "guard_fail": 7,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 7,
-    "recent_examples": [
-      {
-        "key": "otclient_modules.character_otui.tr_42",
-        "en": "Page 1 / 1",
-        "translated": "Strona 1 / 1",
-        "source": "tm"
-      },
-      {
-        "key": "otclient_modules.character_otui.tr_48",
-        "en": "Page 1 / 1",
-        "translated": "Strona 1 / 1",
-        "source": "tm"
-      },
-      {
-        "key": "otclient_modules.game_cyclopedia.tr_6",
-        "en": "Cyclopedia",
-        "translated": "Cyclopedia",
-        "source": "tm"
-      },
-      {
-        "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-        "en": "Cyclopedia",
-        "translated": "Cyclopedia",
-        "source": "tm"
-      },
-      {
-        "key": "otclient_modules.game_store_otui.tr_3",
-        "en": "Page 1 / 4",
-        "translated": "Strona 1 / 4",
-        "source": "tm"
-      },
-      {
-        "key": "otclient_modules.player.tr_6",
-        "en": "Druid",
-        "translated": "Druid",
-        "source": "tm"
-      },
-      {
-        "key": "otclient_modules.spelllist_otui.tr_12",
-        "en": "Druid",
-        "translated": "Druid",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

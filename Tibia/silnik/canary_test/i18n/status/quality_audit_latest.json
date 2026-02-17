@@ -1,66 +1,45 @@
 {
-  "timestamp": "2026-02-17T05:46:18.857558Z",
+  "timestamp": "2026-02-17T05:48:06.399539Z",
   "checked_entries": 100,
-  "issues_found": 14,
+  "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en": 7,
-    "identical_to_en_exempt": 10,
-    "artifact_token": 7,
-    "suspicious_log_high": 129,
-    "suspicious_log_critical": 62,
-    "suspicious_log_low": 9,
-    "suspicious_rejected_high": 24,
-    "suspicious_rejected_critical": 176
+    "artifact_token": 11,
+    "identical_to_en_exempt": 20,
+    "suspicious_log_critical": 79,
+    "suspicious_log_high": 116,
+    "suspicious_log_low": 3,
+    "suspicious_log_medium": 2,
+    "suspicious_rejected_critical": 177,
+    "suspicious_rejected_high": 23
   },
   "issues": [
     {
-      "key": "spell.fire_wave.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exevo flam hur",
-      "translated": "exevo flam hur"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     },
     {
-      "key": "spell.energy_wave.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exevo vis hur",
-      "translated": "exevo vis hur"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     },
     {
-      "key": "spell.ultimate_ice_strike.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exori max frigo",
-      "translated": "exori max frigo"
+      "key": "scripts.auto_loot.msg_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Autoloot mode set to ALL.",
+      "translated": "Modo de autoloot establecido a TODO."
     },
     {
-      "key": "spell.buzz.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exori infir vis",
-      "translated": "exori infir vis"
-    },
-    {
-      "key": "spell.strong_ice_strike.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exori gran frigo",
-      "translated": "exori gran frigo"
-    },
-    {
-      "key": "spell.lightning.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exori amp vis",
-      "translated": "exori amp vis"
-    },
-    {
-      "key": "spell.ultimate_energy_strike.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exori max vis",
-      "translated": "exori max vis"
+      "key": "scripts.prince_drazzak_summon.say_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

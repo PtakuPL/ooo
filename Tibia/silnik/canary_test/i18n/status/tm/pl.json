@@ -112942,5 +112942,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:46:15.576391Z"
+  },
+  "scripts.init.msg_1": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "W ciągu kilku chwil dokonujesz wielu zakupów jednocześnie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:42.172450Z"
+  },
+  "gamestore.modal.purchase_error": {
+    "src_hash": "e8a15c7f0527799c520627c3d8fe2eb3",
+    "text": "Błąd transakcji zakupu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:48.892271Z"
+  },
+  "gamestore.transfer.history_received": {
+    "src_hash": "44933d7a7aea6783deb111358e16b322",
+    "text": "%s przekazał Ci tę kwotę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:48.892601Z"
+  },
+  "gamestore.transfer.history_sent": {
+    "src_hash": "fec9b9367f37680387cdf7abcdf20ed1",
+    "text": "Przesłałeś tę kwotę do %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:48.892911Z"
+  },
+  "gamestore.transfer.no_coins": {
+    "src_hash": "5a251f3f749d4119540315418aa7a167",
+    "text": "Nie masz takiej ilości monet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:48.893244Z"
+  },
+  "gamestore.transfer.player_not_found": {
+    "src_hash": "467e32b5382d7802fbb5cb6af1f42b6a",
+    "text": "Nie mogliśmy znaleźć tego gracza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:48.893555Z"
+  },
+  "gamestore.transfer.same_account": {
+    "src_hash": "266a5e2c7ee9f7c6a74fce6092d9d414",
+    "text": "Nie możesz przenieść monety na postać znajdującą się na tym samym koncie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:55.106252Z"
+  },
+  "gamestore.validation.hireling_forbidden_word": {
+    "src_hash": "56484d171f7d2176ce27913a195a628d",
+    "text": "W nazwisku najemnika nie możesz używać słowa „%s”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:55.106645Z"
+  },
+  "gamestore.validation.hireling_forbidden_word_space": {
+    "src_hash": "319be05a24b43597b38c515c7d4df4dc",
+    "text": "W nazwisku najemnika nie możesz używać słowa „%s” ze spacjami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:55.107047Z"
+  },
+  "gamestore.validation.hireling_name_multiple_spaces": {
+    "src_hash": "4be111e495c05aa519417eea58c69573",
+    "text": "Imię najemnika zawiera więcej niż 1 spację.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:55.107403Z"
+  },
+  "gamestore.validation.hireling_name_whitespace_begin": {
+    "src_hash": "0de3a3bdd27a8a3fd71737ef3de88682",
+    "text": "Nazwa najemnika nie może mieć na początku spacji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:55.107764Z"
+  },
+  "gamestore.validation.new_name_consecutive_spaces": {
+    "src_hash": "459b4aefa9503eaaf8066793b1d287b9",
+    "text": "Twoje nowe imię nie może zawierać następujących po sobie spacji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:00.959755Z"
+  },
+  "gamestore.validation.new_name_too_many_spaces": {
+    "src_hash": "ace374b52debaa4259473c32006af06e",
+    "text": "Twoja nowa nazwa nie może mieć więcej niż 2 spacje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:00.960141Z"
+  },
+  "lib.hireling.lamp_description": {
+    "src_hash": "03f97b09c6a32323149a292b0cc50e2c",
+    "text": "Ta tajemnicza lampa przywołuje Twojego osobistego najemnika.\nTym przedmiotem nie można handlować.\nTa magiczna lampa jest domem %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:00.960713Z"
+  },
+  "misc.blessing.msg_1": {
+    "src_hash": "94009aa41ca8d9dfaef25bb30302d920",
+    "text": "Otrzymałeś Błogosławieństwo Poszukiwacza Przygód, które obowiązuje aż do poziomu {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:00.961162Z"
+  },
+  "misc.boss_lever.already_fighting": {
+    "src_hash": "1824f405577c3caf944fe01ff4be000b",
+    "text": "Ktoś już walczy z {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:00.961491Z"
+  },
+  "misc.boss_lever.cooldown_wait": {
+    "src_hash": "5b8ed181be4531bcd0ad6920e83fb175",
+    "text": "Musisz poczekać {0}, aby ponownie zmierzyć się z {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:07.709184Z"
+  },
+  "misc.boss_lever.disabled": {
+    "src_hash": "97432f94fe8441e85387c8b7e5ba0b70",
+    "text": "Szef jest tymczasowo wyłączony.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:07.709521Z"
+  },
+  "misc.boss_lever.level_requirement": {
+    "src_hash": "7c75033f5acf3f46f7e84c7cfad768c8",
+    "text": "Wszyscy gracze muszą mieć poziom {0} lub wyższy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:07.709966Z"
+  },
+  "misc.boss_lever.min_players": {
+    "src_hash": "e7c5e1fb5e2ccf2907795decf72cd99c",
+    "text": "Do tego wyzwania potrzebujesz {0} wykwalifikowanych graczy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:07.710383Z"
+  },
+  "misc.boss_lever.team_cooldown": {
+    "src_hash": "3a459cab4115f21ac50536cbfdb9f2e1",
+    "text": "Członek Twojej drużyny musi poczekać {0}, aby ponownie zmierzyć się z {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:07.710844Z"
+  },
+  "misc.concoctions.msg_2": {
+    "src_hash": "caeffb2f8aa2a5e77f7a456d189452f6",
+    "text": "Musisz poczekać {0} przed ponownym użyciem {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:14.861586Z"
+  },
+  "misc.concoctions.msg_3": {
+    "src_hash": "47b1a1f76ecd19dc472b3097d740c4c2",
+    "text": "Aktywowałeś {0}. Będzie trwać {1}{2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:14.861962Z"
+  },
+  "misc.lever.msg_1": {
+    "src_hash": "6d34b16866c8dd1cc9090f48a08440ae",
+    "text": "Ty lub członek Twojego zespołu musicie poczekać {0} godzin, aby ponownie zmierzyć się z {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:14.862515Z"
+  },
+  "player.condition.drunk": {
+    "src_hash": "c79d76550811fb4ac7dd7385401419ef",
+    "text": "Jesteś pijany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:14.862745Z"
+  },
+  "player.condition.freezing": {
+    "src_hash": "f0cb181dfbe7a3bd4a9f54b0497f3e3c",
+    "text": "Zamarzasz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:14.862961Z"
+  },
+  "player.condition.poisoned": {
+    "src_hash": "32455c487fa1f9969461d0c69e8e6614",
+    "text": "Jesteś otruty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:20.563954Z"
+  },
+  "player.dawnport.level20": {
+    "src_hash": "817a542e022de0570a8f52918c4e2676",
+    "text": "Osiągnąłeś limit poziomu. Wybierz swoje powołanie i opuść Dawnport.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:20.564644Z"
+  },
+  "player.dawnport.level8": {
+    "src_hash": "c411c142c4ca4827759546995efb25bd",
+    "text": "Gratulacje! Możesz teraz wybrać swoje powołanie i opuścić Dawnport. Porozmawiaj z Oressą w świątyni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:20.565309Z"
+  },
+  "player.dawnport.magic_limit": {
+    "src_hash": "5d7946b7d6585ad7c4f878e591451c3a",
+    "text": "Nie możesz dalej trenować swojego poziomu magii. Udaj się na kontynent, aby go ulepszyć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:20.565795Z"
+  },
+  "player.dawnport.skill_limit": {
+    "src_hash": "e2bfef6afa2016e438005ae18a578139",
+    "text": "Nie możesz dalej trenować tej umiejętności. Udaj się na kontynent, aby go ulepszyć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:20.566310Z"
+  },
+  "player.login.house_lost": {
+    "src_hash": "fb66346673f1373dc5cd2c07d1cc869f",
+    "text": "Straciłeś dom, ponieważ nie jesteś już kontem premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:25.233079Z"
+  },
+  "player.login.premium_expired": {
+    "src_hash": "307ffe921ee4200a1bfced1578cf55c4",
+    "text": "Twój czas premium dobiegł końca!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:25.233416Z"
+  },
+  "player.prey.bonus_time_reset": {
+    "src_hash": "bfb7b011e96d143970c5f3112b77d3af",
+    "text": "Twój dodatkowy czas zdobyczy został pomyślnie zresetowany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:25.233788Z"
+  },
+  "player.prey.bonus_type_reset": {
+    "src_hash": "4c1ef1799674b1eea2d8d339b05c0cef",
+    "text": "Rodzaj i czas premii za zdobycz zostały pomyślnie zresetowane.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:47:25.234237Z"
   }
 }

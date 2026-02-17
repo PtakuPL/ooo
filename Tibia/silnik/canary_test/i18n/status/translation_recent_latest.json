@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T05:40:14.899669Z",
-  "language": "ro",
+  "timestamp": "2026-02-17T05:41:22.133073Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 44,
+  "translated": 24,
   "entries": [
     {
-      "key": "npc.a_sleeping_dragon.say_29",
-      "en": "As the sapphire slips into the notch, the deep blue of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.",
-      "translated": "Pe măsură ce safirul alunecă în crestătură, albastrul profund al pietrei se intensifică de o mie de ori. Ți-e teamă să-ți rănești ochii și să te îndepărtezi imediat. Raza pare să fie îndreptată spre centrul platoului cu o precizie uluitoare.",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_3",
-      "en": "You carefully lift the onyx attachment from its socket. It is lighter than you expected.",
-      "translated": "Ridicați cu grijă atașamentul de onix din soclu. Este mai usoara decat te asteptai.",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_30",
-      "en": "As the emerald slips into the notch, the vibrant green of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.",
-      "translated": "Pe măsură ce smaraldul alunecă în crestătură, verdele vibrant al pietrei se intensifică de o mie de ori. Ți-e teamă să-ți rănești ochii și să te îndepărtezi imediat. Raza pare să fie îndreptată spre centrul platoului cu o precizie uluitoare.",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_31",
-      "en": "I call you the wayfarer. You travelled through my dreams. You ultimately freed my mind. My mind accepted you and so will I.",
-      "translated": "Eu te numesc călător. Ai călătorit prin visele mele. În cele din urmă mi-ai eliberat mintea. Mintea mea te-a acceptat și eu la fel.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_4",
-      "en": "You return to the plateau in the east.",
-      "translated": "Te intorci pe platoul din est.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_5",
-      "en": "You wander to the south, passing large obelisks of emerald to your left and sprawling trees of topaz to your right. ",
-      "translated": "Te plimbi spre sud, trecând pe lângă obeliscuri mari de smarald în stânga ta și copaci întinși de topaz în dreapta ta. ",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_6",
-      "en": "As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. ",
-      "translated": "Pe măsură ce smulgi suportul solid din priză și îl iei cu tine, poarta mare se deschide cu un zgomot asurzitor. ",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_7",
-      "en": "You gasp at the size of the large open gate as you walk through to head further to the east.",
-      "translated": "Gâfâi la dimensiunea porții mari deschise în timp ce treci pentru a te îndrepta mai spre est.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_8",
-      "en": "You reach for a small solitary arrangement of combined small houses and put it in your pocket.",
-      "translated": "Atingeți un mic aranjament solitar de case mici combinate și îl puneți în buzunar.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_9",
-      "en": "You take an emerald from the pile. ",
-      "translated": "Luați un smarald din grămadă. ",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_1",
-      "en": "Yes, well for instance I tried for some time to figure out how to enter the fiery portal in this complex. Most of the draken never come up here. They rather hide somewhere down there, planning and plotting. ...",
-      "translated": "Da, de exemplu, am încercat de ceva timp să-mi dau seama cum să intru în portalul de foc din acest complex. Majoritatea drakenilor nu vin niciodată aici. Mai degrabă se ascund undeva acolo jos, planificând și complotând. ...",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_10",
-      "en": "Then something happened, lizardfolk started to appear, searching the place. I had to retreat from my hiding place and advance through a safer position. ...",
-      "translated": "Apoi s-a întâmplat ceva, oameni șopârle au început să apară, cercetând locul. A trebuit să mă retrag din ascunzătoarea mea și să avansez printr-o poziție mai sigură. ...",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_11",
-      "en": "I needed to get close and blend in. So I came up with the ultimate disguise: a chalice. I could establish foothold right in their midst, would never be identified as an intruder and could even analyse their drinks! ...",
-      "translated": "Trebuia să mă apropii și să mă integrez. Așa că am venit cu deghizarea supremă: un potir. Aș putea stabili un punct de sprijin chiar în mijlocul lor, nu aș fi identificat niciodată ca un intrus și aș putea chiar să le analizez băuturile! ...",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_12",
-      "en": "I quickly dug a tunnel to get into what I assume is a throne room and waited for them to pick me up an carry me around! ...",
-      "translated": "Am săpat rapid un tunel pentru a intra în ceea ce presupun că este o sală a tronului și am așteptat ca ei să mă ia și să mă transporte! ...",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_13",
-      "en": "They also 'used' me a bit, you don't want to go into any details here. I am really {thirsty}.",
-      "translated": "De asemenea, mă 'used' un pic, nu vrei să intri în detalii aici. Sunt cu adevărat {thirsty}.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_14",
-      "en": "No water then? Ah drat - er, don't worry, no problem. So, from the day I received news of the discovery of Zao, I wanted to study its inhabitants, wildlife, plants and geography. ...",
-      "translated": "Fără apă atunci? Ah, drăguț, nu-ți face griji, nicio problemă. Așa că, din ziua în care am primit vestea despre descoperirea Zao-ului, am vrut să-i studiez locuitorii, fauna sălbatică, plantele și geografia. ...",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_15",
-      "en": "The academy instated the 'Edron-Zaoan Exploration Division' shortly after. I was a founding member and head of the 'Draken' research branch. ...",
-      "translated": "Academia a instalat '__PH0__-Zaoan Exploration Division' la scurt timp după. Am fost membru fondator și șef al filialei de cercetare 'Draken'. ...",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.a_strange_chalice.multi_16",
-      "en": "Since my valued and practical oriented colleague and mentor Spectulus did not join us, there is only one member of the academy exploration division to actually venture out to see the place - me. ...",
-      "translated": "Deoarece colegul meu apreciat și orientat spre practică și mentorul Spectulus nu ni s-a alăturat, există un singur membru al diviziei de explorare a academiei care să se aventureze să vadă locul - eu. ...",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

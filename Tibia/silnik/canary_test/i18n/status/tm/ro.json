@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:04:59.145688Z"
+    "updated_at": "2026-02-17T05:40:55.445071Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -45550,5 +45550,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:40:14.779823Z"
+  },
+  "item.12178.desc": {
+    "src_hash": "c80943353ada3b6b9a2eee6b969c8334",
+    "text": "Micul demon este treaz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:03.816933Z"
+  },
+  "item.12179.desc": {
+    "src_hash": "5e54dea4925bb18aca13191cfebb244e",
+    "text": "Micul demon pare lacom",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:03.817216Z"
+  },
+  "item.12180.desc": {
+    "src_hash": "7df3f22d5951df2c00ec8733bb0bc9aa",
+    "text": "Micul demon doarme",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:03.817477Z"
+  },
+  "item.12181.desc": {
+    "src_hash": "7798c9db985c9a8b58cc43c5ec490000",
+    "text": "Micul demon este mulțumit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:05.762918Z"
+  },
+  "item.12182.desc": {
+    "src_hash": "c36f16bff6c91f7f473e7340449bb173",
+    "text": "Micul demon vrea să sărute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:41:05.763241Z"
   }
 }

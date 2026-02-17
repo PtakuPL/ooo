@@ -1,24 +1,17 @@
 {
-  "timestamp": "2026-02-17T06:09:40.862059Z",
+  "timestamp": "2026-02-17T06:10:36.291556Z",
   "checked_entries": 100,
-  "issues_found": 14,
+  "issues_found": 13,
   "issues_by_type": {
-    "identical_to_en_exempt": 19,
-    "artifact_token": 14,
-    "suspicious_log_critical": 68,
-    "suspicious_log_high": 131,
+    "artifact_token": 13,
+    "identical_to_en_exempt": 18,
+    "suspicious_log_high": 133,
+    "suspicious_log_critical": 66,
     "suspicious_log_low": 1,
     "suspicious_rejected_critical": 184,
     "suspicious_rejected_high": 16
   },
   "issues": [
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
     {
       "key": "npc.captain_haba_open_sea.say_3",
       "lang": "es",

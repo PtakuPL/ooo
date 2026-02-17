@@ -1,121 +1,17 @@
 {
-  "timestamp": "2026-02-17T05:38:49.068552Z",
+  "timestamp": "2026-02-17T05:40:16.050564Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en_exempt": 29,
-    "artifact_token": 26,
-    "suspicious_log_high": 163,
-    "suspicious_log_critical": 37,
-    "suspicious_rejected_critical": 181,
-    "suspicious_rejected_high": 19
+    "identical_to_en_exempt": 11,
+    "artifact_token": 11,
+    "suspicious_log_critical": 96,
+    "suspicious_log_low": 4,
+    "suspicious_log_high": 100,
+    "suspicious_rejected_critical": 179,
+    "suspicious_rejected_high": 21
   },
   "issues": [
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.mother_of_jack.voice_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
-    },
-    {
-      "key": "npc.navigator.multi_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
-    },
-    {
-      "key": "npc.navigator.multi_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
-    },
-    {
-      "key": "npc.omrabas.multi_35",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
-    },
-    {
-      "key": "npc.omrabas.multi_82",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
-    },
-    {
-      "key": "npc.omrabas.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-    },
-    {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-    },
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
     {
       "key": "npc.lardoc_bashsmite.multi_3",
       "lang": "es",

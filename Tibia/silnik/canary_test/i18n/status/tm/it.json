@@ -51062,5 +51062,253 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:32:51.103165Z"
+  },
+  "npc.ajax.say_12": {
+    "src_hash": "5ad8884cb99d2668f8bc961e858bf17d",
+    "text": "Porti 50 pelli di lucertola?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:16.290494Z"
+  },
+  "npc.ajax.say_13": {
+    "src_hash": "f3b456061c90a94300a68ae3cbb1695b",
+    "text": "L'ascia è finita! Per te. Prendere. Indossa come me.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:16.290869Z"
+  },
+  "npc.ajax.say_14": {
+    "src_hash": "4180cbf0f36e9ea96b061185a09df327",
+    "text": "L'ascia non ha ancora finito!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:16.291138Z"
+  },
+  "npc.ajax.say_15": {
+    "src_hash": "5313539317e21a20537def6471792ee8",
+    "text": "OH. Facile. Va bene. Per favore, va bene. Adesso non dire niente. Mal di testa. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:16.291527Z"
+  },
+  "npc.ajax.say_16": {
+    "src_hash": "fad6520209c86cf4d3da6a9303122877",
+    "text": "Bene. Prima ottieni 100 minerali di ferro. Ritorno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:18.949624Z"
+  },
+  "npc.ajax.say_17": {
+    "src_hash": "b2f6e03a7c4192148b8b6be3aa459fe6",
+    "text": "Bene! Adesso portate il ferro grezzo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:18.949932Z"
+  },
+  "npc.ajax.say_18": {
+    "src_hash": "1595ee7e66d715d3404843c86c8ab43c",
+    "text": "Bene! Ora porta con te 50 zanne di colosso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:18.950308Z"
+  },
+  "npc.ajax.say_19": {
+    "src_hash": "8cd827af485e452e64070d76ec41d3c0",
+    "text": "Bene! Ora porta 50 pelli di lucertola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:18.950620Z"
+  },
+  "npc.ajax.say_2": {
+    "src_hash": "890098ec3848b065edac21167ca51264",
+    "text": "STUPIDO! TESTARDO! IO TI UCCIDO! PARTIREMO ORA?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:18.950932Z"
+  },
+  "npc.ajax.say_20": {
+    "src_hash": "c62a2bd9d487e55c57451417eaacc63d",
+    "text": "Ah! Tutta roba lì. Inizierò a creare assi adesso. Vieni più tardi e chiedimi un'ascia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:22.287914Z"
+  },
+  "npc.ajax.say_3": {
+    "src_hash": "f07ab3f60677dc856786b5f68b2b4ae0",
+    "text": "ARRRRRRRRR! TU MI IMPAZZISCO! COME TI FACCIO ANDARE??",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:22.288286Z"
+  },
+  "npc.ajax.say_4": {
+    "src_hash": "b7040b10d1c5ce15b695647b9c20f457",
+    "text": "TI DONO NO!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:22.288501Z"
+  },
+  "npc.ajax.say_5": {
+    "src_hash": "3c85f7f4a6fd161fa6454ce397749e8c",
+    "text": "Per favore? Cosa intendi, per favore? Come ho detto, per favore, dici ciao? Per favore?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:22.288881Z"
+  },
+  "npc.ajax.say_6": {
+    "src_hash": "28ee1a0171fc67d97933d62f3aff326a",
+    "text": "Ragazzo fastidioso. Il fratello lo odia, ma parlare non aiuta. Il fratello ha bisogno di {fighting spirit}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:22.289295Z"
+  },
+  "npc.ajax.say_7": {
+    "src_hash": "ad0a4395f7a247d0d304a83a06aba5ed",
+    "text": "Se vuoi aiutare il fratello, portagli spirito combattivo. Spirito combattivo magico. Chiedi a Djinn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:27.280362Z"
+  },
+  "npc.ajax.say_8": {
+    "src_hash": "3a85809fa6d07edc3b53e7432db5bd0d",
+    "text": "Bron mi ha fatto un regalo. Brutto, ma carino da parte sua. Anch'io voglio fare un regalo. Mi aiuti?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:27.281606Z"
+  },
+  "npc.ajax.say_9": {
+    "src_hash": "8b4ab579d1bc0c286fa1aa7706d9801b",
+    "text": "Porti 100 minerali di ferro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:27.282175Z"
+  },
+  "npc.al_dee.greet_msg_1": {
+    "src_hash": "833b3df0f1377cdf11594fce0f2a7759",
+    "text": "Ciao, ciao, |PLAYERNAME|! Per favore entra, guarda e compra! Sono uno specialista per tutti i tipi di {tools}. Chiedimi solo un {trade} per vedere le mie offerte! Puoi anche chiedermi informazioni generali {hints} sul gioco. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:27.283566Z"
+  },
+  "npc.al_dee.greet_msg_2": {
+    "src_hash": "17ac5b7cacc5afa15fb01ae8db7ce464",
+    "text": "Puoi anche chiedermi informazioni su ciascun {citizen} dell'isola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:27.284269Z"
+  },
+  "npc.al_dee.stdmod_1": {
+    "src_hash": "7c7c7e1c5ff6641d4e968f817324a68a",
+    "text": "Stai cercando i migliori scambi? Vieni nel mio negozio!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:33.125081Z"
+  },
+  "npc.al_dee.stdmod_10": {
+    "src_hash": "746dc13a01e60f937ccb663928b1f79c",
+    "text": "Sono un commerciante. Chiedimi semplicemente un {trade} per vedere le mie offerte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:33.125472Z"
+  },
+  "npc.al_dee.stdmod_11": {
+    "src_hash": "44f143c4c94a16130e8f33a52ba47e90",
+    "text": "Il mio nome è Al Dee, ma puoi chiamarmi Al. Posso interessarti per un {trade}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:33.125914Z"
+  },
+  "npc.al_dee.stdmod_12": {
+    "src_hash": "aa515054e45aa140497236333a457754",
+    "text": "Si tratta di |TIME|. Mi dispiace tanto, non ho orologi da vendere. Vuoi comprare qualcos'altro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:33.126422Z"
+  },
+  "npc.al_dee.stdmod_14": {
+    "src_hash": "af9be20f5dd1f235ad33691ff98b61ad",
+    "text": "Se vuoi esplorare i sotterranei come {sewers}, devi {equip} te stesso con le cose vitali che sto vendendo. È {vital} nel senso più profondo della parola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:38.204539Z"
+  },
+  "npc.al_dee.stdmod_15": {
+    "src_hash": "0f5811a915a247d882f4ebd5fe63561c",
+    "text": "Oh, il nostro sistema fognario è molto primitivo: è così primitivo che è invaso da {rats}. Ma la roba che vendo è al sicuro da loro. Chiedimi solo un {trade} per vederlo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:38.205376Z"
+  },
+  "npc.al_dee.stdmod_16": {
+    "src_hash": "72f97516fb4d02e4719a7ea8bb221c60",
+    "text": "Il re incoraggiava i venditori a viaggiare fin qui, ma solo io osavo correre il rischio, e un rischio era!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:38.205868Z"
+  },
+  "npc.al_dee.stdmod_17": {
+    "src_hash": "b71c08618b092332f16a3ba4b70a4711",
+    "text": "Gli insetti affliggono quest'isola, ma la mia merce è priva di insetti, totalmente priva di insetti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:38.206385Z"
+  },
+  "npc.al_dee.stdmod_18": {
+    "src_hash": "635bdf5ae03366e8933ba34230c76a14",
+    "text": "Un giorno tornerò nel continente da ricco, ricchissimo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:38.206812Z"
+  },
+  "npc.al_dee.stdmod_19": {
+    "src_hash": "48a7dce38423d069b394598f7a96160c",
+    "text": "Thais è una città affollata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:42.189322Z"
+  },
+  "npc.al_dee.stdmod_2": {
+    "src_hash": "8a61d0bc206f0b9aaf1c6b728868f7d7",
+    "text": "Ti senti perso? Puoi sempre chiedermi suggerimenti generali!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:42.189716Z"
+  },
+  "npc.al_dee.stdmod_20": {
+    "src_hash": "1cbea449820b3dc675ab3186f17a0c07",
+    "text": "Ti sei mai chiesto di cosa parla la gente? Bene, una volta raggiunto il livello 8, dovresti parlare con {oracle}. Puoi scegliere un {profession} in seguito ed esplorare molto di più su Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:42.190629Z"
   }
 }

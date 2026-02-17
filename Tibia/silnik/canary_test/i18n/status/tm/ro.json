@@ -45294,5 +45294,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:34:04.149574Z"
+  },
+  "npc.a_sleeping_dragon.say_18": {
+    "src_hash": "f35087ef016a6d78d3d7bb34b7fac6fa",
+    "text": "Te întorci în marea purpurie a rubinelor din sud. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:57.768185Z"
+  },
+  "npc.a_sleeping_dragon.say_19": {
+    "src_hash": "a665ef483bf0191e81c101b1b5474c6f",
+    "text": "Călătorești înapoi pe platoul din vest. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:57.768560Z"
+  },
+  "npc.a_sleeping_dragon.say_2": {
+    "src_hash": "1da87c3f233509a7475150303e2e53da",
+    "text": "Înaintând spre vest, recunoști o creștere de onix pe pământ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:57.768975Z"
+  },
+  "npc.a_sleeping_dragon.say_20": {
+    "src_hash": "d53b6007f7cf8df6f86e50c019390f67",
+    "text": "Înaintând spre vest, recunoști o creștere de onix pe pământ. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:39:57.769389Z"
+  },
+  "npc.a_sleeping_dragon.say_21": {
+    "src_hash": "c6c234a6b18e0208dfc1002f8ca483b6",
+    "text": "Continuați să călătoriți prin marea sterilă de pietre prețioase spre nord. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:00.366808Z"
+  },
+  "npc.a_sleeping_dragon.say_22": {
+    "src_hash": "4c685f91e7e0761fd8a8980ebbf57f96",
+    "text": "Lăsați uriașa poartă deschisă în urmă și mergeți spre vest. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:00.367237Z"
+  },
+  "npc.a_sleeping_dragon.say_23": {
+    "src_hash": "75db113b36f8cc8147eb851595c8e95f",
+    "text": "Scoateți cu grijă safirul din strânsoarea lui Bastesh.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:00.367619Z"
+  },
+  "npc.a_sleeping_dragon.say_24": {
+    "src_hash": "5ad308bb5eb73e010d4ee498d1d179e8",
+    "text": "Te întorci spre est și spre platou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:00.367964Z"
+  },
+  "npc.a_sleeping_dragon.say_25": {
+    "src_hash": "572a06275397e11bdebb4bf5d13c222a",
+    "text": "Te întorci înspre sud, la locul cu observatorul onix.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:00.368335Z"
+  },
+  "npc.a_sleeping_dragon.say_26": {
+    "src_hash": "0384ea996d8e47bcc35ca3b359621c3e",
+    "text": "Te intorci pe platoul din est.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:02.986011Z"
+  },
+  "npc.a_sleeping_dragon.say_27": {
+    "src_hash": "951c522827a681efb5611d61bc7f578e",
+    "text": "Puneți suportul într-o mică adâncitură pe care o găsiți lângă mijlocul platoului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:02.986626Z"
+  },
+  "npc.a_sleeping_dragon.say_28": {
+    "src_hash": "ccbe62346bcfed87710c2dfcab76cb0a",
+    "text": "Pe măsură ce rubinul alunecă în crestătură, roșul puternic al pietrei se intensifică de o mie de ori. Ți-e teamă să-ți rănești ochii și să te îndepărtezi imediat. Raza pare să fie îndreptată spre centrul platoului cu o precizie uluitoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:02.987476Z"
+  },
+  "npc.a_sleeping_dragon.say_29": {
+    "src_hash": "9abed949e8932a64cb497c660e9400a0",
+    "text": "Pe măsură ce safirul alunecă în crestătură, albastrul profund al pietrei se intensifică de o mie de ori. Ți-e teamă să-ți rănești ochii și să te îndepărtezi imediat. Raza pare să fie îndreptată spre centrul platoului cu o precizie uluitoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:02.988318Z"
+  },
+  "npc.a_sleeping_dragon.say_3": {
+    "src_hash": "b8be29c945f10470f8c478a07e49dfb3",
+    "text": "Ridicați cu grijă atașamentul de onix din soclu. Este mai usoara decat te asteptai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:02.988777Z"
+  },
+  "npc.a_sleeping_dragon.say_30": {
+    "src_hash": "ec8a960121a5d8f074e1d1ac99cd9adc",
+    "text": "Pe măsură ce smaraldul alunecă în crestătură, verdele vibrant al pietrei se intensifică de o mie de ori. Ți-e teamă să-ți rănești ochii și să te îndepărtezi imediat. Raza pare să fie îndreptată spre centrul platoului cu o precizie uluitoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:05.592819Z"
+  },
+  "npc.a_sleeping_dragon.say_31": {
+    "src_hash": "15cc74af4b4c7d62137f2b78d9019391",
+    "text": "Eu te numesc călător. Ai călătorit prin visele mele. În cele din urmă mi-ai eliberat mintea. Mintea mea te-a acceptat și eu la fel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:05.593412Z"
+  },
+  "npc.a_sleeping_dragon.say_4": {
+    "src_hash": "0384ea996d8e47bcc35ca3b359621c3e",
+    "text": "Te intorci pe platoul din est.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:05.593723Z"
+  },
+  "npc.a_sleeping_dragon.say_5": {
+    "src_hash": "e43aa1775c1102e50b1b8c5101537f26",
+    "text": "Te plimbi spre sud, trecând pe lângă obeliscuri mari de smarald în stânga ta și copaci întinși de topaz în dreapta ta. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:05.594345Z"
+  },
+  "npc.a_sleeping_dragon.say_6": {
+    "src_hash": "d92a9ab65fe9fd6b3c538a49cc00db57",
+    "text": "Pe măsură ce smulgi suportul solid din priză și îl iei cu tine, poarta mare se deschide cu un zgomot asurzitor. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:05.594900Z"
+  },
+  "npc.a_sleeping_dragon.say_7": {
+    "src_hash": "0afdd07c5e9244d4f001e1fce65f6dda",
+    "text": "Gâfâi la dimensiunea porții mari deschise în timp ce treci pentru a te îndrepta mai spre est.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:08.226149Z"
+  },
+  "npc.a_sleeping_dragon.say_8": {
+    "src_hash": "be8886a1703f51b6f68f2da1303309d1",
+    "text": "Atingeți un mic aranjament solitar de case mici combinate și îl puneți în buzunar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:08.226663Z"
+  },
+  "npc.a_sleeping_dragon.say_9": {
+    "src_hash": "77ce86c7effd3a8c28faec892de5dc49",
+    "text": "Luați un smarald din grămadă. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:08.226998Z"
+  },
+  "npc.a_starving_dog.greet_1": {
+    "src_hash": "5d8d3eaf7e385505560c681a45bc63f2",
+    "text": "<sniff>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:08.227221Z"
+  },
+  "npc.a_starving_dog.say_1": {
+    "src_hash": "04524485fd13e5b04016a186aff66016",
+    "text": "<munch>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:08.227416Z"
+  },
+  "npc.a_strange_chalice.multi_1": {
+    "src_hash": "fee45a3e5abbb7706203a5ac4f7919a9",
+    "text": "Da, de exemplu, am încercat de ceva timp să-mi dau seama cum să intru în portalul de foc din acest complex. Majoritatea drakenilor nu vin niciodată aici. Mai degrabă se ascund undeva acolo jos, planificând și complotând. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:12.134600Z"
+  },
+  "npc.a_strange_chalice.multi_10": {
+    "src_hash": "b7c596f080020effaff8997d70bb235a",
+    "text": "Apoi s-a întâmplat ceva, oameni șopârle au început să apară, cercetând locul. A trebuit să mă retrag din ascunzătoarea mea și să avansez printr-o poziție mai sigură. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:12.135290Z"
+  },
+  "npc.a_strange_chalice.multi_11": {
+    "src_hash": "32def53042c32f7b6d482ba76c4389ef",
+    "text": "Trebuia să mă apropii și să mă integrez. Așa că am venit cu deghizarea supremă: un potir. Aș putea stabili un punct de sprijin chiar în mijlocul lor, nu aș fi identificat niciodată ca un intrus și aș putea chiar să le analizez băuturile! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:12.136139Z"
+  },
+  "npc.a_strange_chalice.multi_12": {
+    "src_hash": "5c345ea0809b2e3a6500810748727b8f",
+    "text": "Am săpat rapid un tunel pentru a intra în ceea ce presupun că este o sală a tronului și am așteptat ca ei să mă ia și să mă transporte! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:12.136745Z"
+  },
+  "npc.a_strange_chalice.multi_13": {
+    "src_hash": "b7eeb8bfa7801e2b93d39a17d0f4ebb4",
+    "text": "De asemenea, mă 'used' un pic, nu vrei să intri în detalii aici. Sunt cu adevărat {thirsty}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:12.137257Z"
+  },
+  "npc.a_strange_chalice.multi_14": {
+    "src_hash": "f2ddbcd6c854aaa56fe3ab22e208b527",
+    "text": "Fără apă atunci? Ah, drăguț, nu-ți face griji, nicio problemă. Așa că, din ziua în care am primit vestea despre descoperirea Zao-ului, am vrut să-i studiez locuitorii, fauna sălbatică, plantele și geografia. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:14.778292Z"
+  },
+  "npc.a_strange_chalice.multi_15": {
+    "src_hash": "c162c2e4c136122010b050ee35901260",
+    "text": "Academia a instalat '__PH0__-Zaoan Exploration Division' la scurt timp după. Am fost membru fondator și șef al filialei de cercetare 'Draken'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:14.779018Z"
+  },
+  "npc.a_strange_chalice.multi_16": {
+    "src_hash": "d5170eb71b81490b599dfa7637196b8b",
+    "text": "Deoarece colegul meu apreciat și orientat spre practică și mentorul Spectulus nu ni s-a alăturat, există un singur membru al diviziei de explorare a academiei care să se aventureze să vadă locul - eu. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:40:14.779823Z"
   }
 }

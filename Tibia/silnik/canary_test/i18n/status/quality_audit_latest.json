@@ -1,193 +1,220 @@
 {
-  "timestamp": "2026-02-17T07:45:47.364008Z",
+  "timestamp": "2026-02-17T07:47:00.341276Z",
   "checked_entries": 100,
-  "issues_found": 42,
+  "issues_found": 45,
   "issues_by_type": {
-    "identical_to_en": 26,
-    "identical_to_en_exempt": 7,
+    "identical_to_en_exempt": 17,
+    "identical_to_en": 29,
     "artifact_token": 16,
-    "suspicious_log_high": 123,
-    "suspicious_log_low": 13,
-    "suspicious_log_critical": 38,
-    "suspicious_log_medium": 26,
+    "suspicious_log_low": 54,
+    "suspicious_log_high": 104,
+    "suspicious_log_critical": 42,
     "suspicious_rejected_critical": 176,
     "suspicious_rejected_high": 24
   },
   "issues": [
     {
-      "key": "spell.fair_wound_cleansing.words",
+      "key": "scripts.actions_brain.msg_1",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "exura med ico",
-      "translated": "exura med ico"
+      "en": "<brzzl> <frzzp> <fsssh>",
+      "translated": "<brzzl> <frzzp> <fsssh>"
     },
     {
-      "key": "spell.bruise_bane.words",
+      "key": "raid.teleskor.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "exura infir ico",
-      "translated": "exura infir ico"
+      "en": "Teleskor",
+      "translated": "Teleskor"
     },
     {
-      "key": "spell.enchant_party.words",
+      "key": "raid.furyosa.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utori mas sio",
-      "translated": "utori mas sio"
+      "en": "Furyosa",
+      "translated": "Furyosa"
     },
     {
-      "key": "spell.heal_party.words",
+      "key": "raid.chayenne.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utura mas sio",
-      "translated": "utura mas sio"
+      "en": "Chayenne",
+      "translated": "Chayenne"
     },
     {
-      "key": "spell.train_party.words",
+      "key": "raid.omrafir.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utito mas sio",
-      "translated": "utito mas sio"
+      "en": "Omrafir",
+      "translated": "Omrafir"
     },
     {
-      "key": "spell.protect_party.words",
+      "key": "raid.gaz_haragoth.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utamo mas sio",
-      "translated": "utamo mas sio"
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
     },
     {
-      "key": "spell.protector.words",
+      "key": "raid.yeti.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utamo tempo",
-      "translated": "utamo tempo"
+      "en": "Yeti",
+      "translated": "Yeti"
     },
     {
-      "key": "spell.avatar_of_steel.words",
+      "key": "raid.gargoyle.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "uteta res eq",
-      "translated": "uteta res eq"
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
     },
     {
-      "key": "spell.avatar_of_light.words",
+      "key": "raid.cobra.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "uteta res sac",
-      "translated": "uteta res sac"
+      "en": "Cobra",
+      "translated": "Cobra"
     },
     {
-      "key": "spell.avatar_of_storm.words",
+      "key": "raid.terramite.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "uteta res ven",
-      "translated": "uteta res ven"
+      "en": "Terramite",
+      "translated": "Terramite"
     },
     {
-      "key": "spell.charge.words",
+      "key": "raid.scarab.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "utani tempo hur",
-      "translated": "utani tempo hur"
+      "en": "Scarab",
+      "translated": "Scarab"
     },
     {
-      "key": "spell.quara_plunderer_smoke.words",
-      "lang": "es",
+      "key": "raid.undead_cavebear.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "###quara_smoke_death",
-      "translated": "###quara_smoke_death"
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
     },
     {
-      "key": "spell.great_death_beam.words",
-      "lang": "es",
+      "key": "raid.morgaroth.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "exevo max mort",
-      "translated": "exevo max mort"
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
     },
     {
-      "key": "spell.ultimate_flame_strike.words",
-      "lang": "es",
+      "key": "raid.ferumbras.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "exori max flam",
-      "translated": "exori max flam"
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
     },
     {
-      "key": "spell.divine_caldera.words",
+      "key": "raid.example.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo mas san",
-      "translated": "exevo mas san"
+      "en": "Example",
+      "translated": "Example"
     },
     {
-      "key": "spell.terra_wave.words",
+      "key": "raid.raids.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo tera hur",
-      "translated": "exevo tera hur"
+      "en": "Raids",
+      "translated": "Raids"
     },
     {
-      "key": "spell.strong_energy_strike.words",
+      "key": "raid.undead_darashia.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori gran vis",
-      "translated": "exori gran vis"
+      "en": "Undead Darashia",
+      "translated": "Undead Darashia"
     },
     {
-      "key": "spell.physical_strike.words",
+      "key": "raid.priestesses.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori moe ico",
-      "translated": "exori moe ico"
+      "en": "Priestesses",
+      "translated": "Priestesses"
     },
     {
-      "key": "spell.strong_flame_strike.words",
+      "key": "raid.barba_svar.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori gran flam",
-      "translated": "exori gran flam"
+      "en": "Barba Svar",
+      "translated": "Barba Svar"
     },
     {
-      "key": "spell.strong_ethereal_spear.words",
+      "key": "raid.barba_bittermor.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori gran con",
-      "translated": "exori gran con"
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor"
     },
     {
-      "key": "spell.ice_strike.words",
+      "key": "raid.ghazbaran.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori frigo",
-      "translated": "exori frigo"
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
     },
     {
-      "key": "spell.executioners_throw.words",
+      "key": "raid.barbarian.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori amp kor",
-      "translated": "exori amp kor"
+      "en": "Barbarian",
+      "translated": "Barbarian"
     },
     {
-      "key": "spell.ultimate_terra_strike.words",
+      "key": "raid.hirintror.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori max tera",
-      "translated": "exori max tera"
+      "en": "Hirintror",
+      "translated": "Hirintror"
     },
     {
-      "key": "spell.mud_attack.words",
+      "key": "raid.terrorbirds.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exori infir tera",
-      "translated": "exori infir tera"
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
     },
     {
-      "key": "spell.ice_burst.words",
+      "key": "raid.wild_horses.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo ulus frigo",
-      "translated": "exevo ulus frigo"
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -300,13 +327,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "scripts.actions_brain.msg_1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "<brzzl> <frzzp> <fsssh>",
-      "translated": "<brzzl> <frzzp> <fsssh>"
     }
   ],
   "threshold": 10,

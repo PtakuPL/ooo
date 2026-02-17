@@ -1793,11 +1793,11 @@
   },
   "data.otservbr.global.npc.archery.L64.538": {
     "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
-    "text": "Welcome to Archery's shop!",
+    "text": "Benvenuti nel negozio di Tiro con l'arco!",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.074840Z"
+    "updated_at": "2026-02-17T07:46:25.362671Z"
   },
   "data.otservbr.global.npc.ariella.L161.242": {
     "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
@@ -1809,19 +1809,19 @@
   },
   "data.otservbr.global.npc.arito.L117.1343": {
     "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
-    "text": "Do visit us again.",
+    "text": "Tornate a trovarci.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.075728Z"
+    "updated_at": "2026-02-17T07:46:25.365392Z"
   },
   "data.otservbr.global.npc.arito.L118.1344": {
     "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
-    "text": "Do visit us again.",
+    "text": "Tornate a trovarci.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.076154Z"
+    "updated_at": "2026-02-17T07:46:25.365818Z"
   },
   "data.otservbr.global.npc.ashari.L53.1582": {
     "src_hash": "4c843bd5e890558b89583052fe61a44c",
@@ -1873,19 +1873,19 @@
   },
   "data.otservbr.global.npc.avar.tar.L138.860": {
     "src_hash": "887efd8fd27234772fbb778a5f22828a",
-    "text": "See you later, |PLAYERNAME|.",
+    "text": "A più tardi, |PLAYERNAME|.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.079867Z"
+    "updated_at": "2026-02-17T07:46:25.376110Z"
   },
   "data.otservbr.global.npc.avar.tar.L139.861": {
     "src_hash": "887efd8fd27234772fbb778a5f22828a",
-    "text": "See you later, |PLAYERNAME|.",
+    "text": "A più tardi, |PLAYERNAME|.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.080456Z"
+    "updated_at": "2026-02-17T07:46:25.376590Z"
   },
   "data.otservbr.global.npc.baa.leal.L158.273": {
     "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
@@ -1969,11 +1969,11 @@
   },
   "data.otservbr.global.npc.baxter.L60.1236": {
     "src_hash": "5a79b0f1ba416a18a992917d1837d174",
-    "text": "LONG LIVE KING TIBIANUS!",
+    "text": "VIVA IL RE TIBIANO!",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.085745Z"
+    "updated_at": "2026-02-17T07:46:25.389889Z"
   },
   "data.otservbr.global.npc.baxter.L61.1237": {
     "src_hash": "e6e977cc624d86e8503b145161230dc9",
@@ -1993,19 +1993,19 @@
   },
   "data.otservbr.global.npc.beatrice.L87.769": {
     "src_hash": "887efd8fd27234772fbb778a5f22828a",
-    "text": "See you later, |PLAYERNAME|.",
+    "text": "A più tardi, |PLAYERNAME|.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.087242Z"
+    "updated_at": "2026-02-17T07:46:25.392238Z"
   },
   "data.otservbr.global.npc.beatrice.L88.770": {
     "src_hash": "887efd8fd27234772fbb778a5f22828a",
-    "text": "See you later, |PLAYERNAME|.",
+    "text": "A più tardi, |PLAYERNAME|.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.087768Z"
+    "updated_at": "2026-02-17T07:46:25.392695Z"
   },
   "data.otservbr.global.npc.bertha.L89.1553": {
     "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
@@ -57662,5 +57662,277 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:37:04.092291Z"
+  },
+  "data.otservbr.global.npc.angelo.L58.1443": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Lo Druid di Crunor? Ti ha detto che qui è apparsa una nuova grotta? Giusto. Sono il capo di un {project} che cerca di scoprire di più su questo nuovo {area}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.359178Z"
+  },
+  "data.otservbr.global.npc.angelo.L60.1444": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Togliti di mezzo! Hai ucciso questa bellissima creatura. Non ho altro da dire. Maledetto druido di Crunor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.359784Z"
+  },
+  "data.otservbr.global.npc.angelo.L62.1445": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Come va il tuo {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.360316Z"
+  },
+  "data.otservbr.global.npc.angelo.L64.1446": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Lo Druid di Crunor? Ti ha detto che qui è apparsa una nuova grotta? Giusto. Sono a capo di un progetto che cerca di scoprire di più su questa nuova area.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.361228Z"
+  },
+  "data.otservbr.global.npc.angus.L633.1450": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Saluti, cosa posso fare per te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.361655Z"
+  },
+  "data.otservbr.global.npc.appaloosa.L109.1145": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Saluti, |PLAYERNAME| Immagino che tu sia qui per il {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.362181Z"
+  },
+  "data.otservbr.global.npc.archery.L65.539": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.363190Z"
+  },
+  "data.otservbr.global.npc.archery.L66.540": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.363603Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L64.71": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.364032Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L65.72": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.364429Z"
+  },
+  "data.otservbr.global.npc.arito.L119.1345": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Certo, sfoglia le mie offerte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.366242Z"
+  },
+  "data.otservbr.global.npc.arito.L55.1341": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Grazie a Dio sei tornato!! Hai trovato... ehm... di cosa stavamo parlando??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.366748Z"
+  },
+  "data.otservbr.global.npc.arkulius.L183.893": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "Arrivederci e per favore stai lontano, ok?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.367330Z"
+  },
+  "data.otservbr.global.npc.arkulius.L184.894": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "Infine! Le cose buone arrivano a chi sa aspettare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.367881Z"
+  },
+  "data.otservbr.global.npc.armenius.L74.643": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Oh, che faccia tosta. Vai dai topi che ti hanno cresciuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.368324Z"
+  },
+  "data.otservbr.global.npc.armenius.L86.644": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ah, un avventuriero. Fatti salutare e siediti. Come posso {serve} te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.368824Z"
+  },
+  "data.otservbr.global.npc.aruda.L256.1338": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Spero di vedervi presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.369202Z"
+  },
+  "data.otservbr.global.npc.aruda.L257.1339": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Arrivederci, |PLAYERNAME|. Spero davvero che ci riparleremo presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.369676Z"
+  },
+  "data.otservbr.global.npc.aruda.L64.1336": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "Oh, ciao |PLAYERNAME|, i tuoi capelli stanno benissimo! Chi l'ha fatto per te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.370300Z"
+  },
+  "data.otservbr.global.npc.aruda.L67.1337": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "Oh, ciao, bello! È un piacere conoscerti, |PLAYERNAME|. Volentieri ho il tempo di {chat} un po'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.370925Z"
+  },
+  "data.otservbr.global.npc.ashari.L52.1581": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Ciao, straniero! Queste grotte ti devono sembrare strane. Mi chiedo cosa ti porta qui... forse ti interessa qualche lavoro? Ci sono diversi compiti per i quali potrei aver bisogno di una mano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.371655Z"
+  },
+  "data.otservbr.global.npc.atur.L76.727": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.373517Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L50.141": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Non sono qui per combatterti, stupido. Che ci piaccia o no, dovremo lavorare insieme per fermare la catastrofe che tu e quel prete avete provocato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.377338Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L52.142": {
+    "src_hash": "f64d1ab0b820e787fcaf66f2af979cfa",
+    "text": "Saluti, mortale. Tieni presente che stai mettendo a dura prova la mia pazienza mentre parliamo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.377911Z"
+  },
+  "data.otservbr.global.npc.barbara.L85.1300": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "VIVA LA REGINA! Puoi andartene adesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.381887Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L130.1046": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Benvenuti nella mia umile dimora. Se vieni per il nuovo stregone {spells}, sei nel posto giusto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.382478Z"
+  },
+  "data.otservbr.global.npc.bashira.L65.1586": {
+    "src_hash": "91f025a68ba7730090f9f4a3461e5e62",
+    "text": "Possa Dio mostrarti il ​​percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.384721Z"
+  },
+  "data.otservbr.global.npc.bashira.L66.1587": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Naturalmente basta sfogliare le mie offerte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.385323Z"
+  },
+  "data.otservbr.global.npc.battlemart.L65.1361": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Addio, |PLAYERNAME|, sarò qui se avrai ancora bisogno di me.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.386623Z"
+  },
+  "data.otservbr.global.npc.baxter.L63.1239": {
+    "src_hash": "cf5734463548fd7f4caefa09650648e3",
+    "text": "Porti ratti appena uccisi per una taglia di 1 oro ciascuno? A proposito, compro anche denti di orco e altra roba che hai strappato al loro maledetto corpo... voglio dire... beh, sai cosa intendo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.391745Z"
+  },
+  "data.otservbr.global.npc.beatrice.L89.771": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.393136Z"
+  },
+  "data.otservbr.global.npc.benjamin.L84.240": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Ciao. Come posso aiutarti |PLAYERNAME|? Chiedimi un {trade} se vuoi comprare qualcosa. Posso anche spiegare il sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.394155Z"
+  },
+  "data.otservbr.global.npc.benjamin.L85.241": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "È stato un piacere aiutarti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.394705Z"
+  },
+  "data.otservbr.global.npc.bertha.L88.1552": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, per favore entra, |PLAYERNAME|. Cosa posso fare per lei? Se hai bisogno di attrezzatura per l'avventura, chiedimi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:46:25.395313Z"
   }
 }

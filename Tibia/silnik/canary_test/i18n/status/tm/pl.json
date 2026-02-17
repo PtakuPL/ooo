@@ -86305,11 +86305,11 @@
   },
   "raid.arachir_the_ancient_one.name": {
     "src_hash": "0a30cc23ffefbf66b30e5409951d05dc",
-    "text": "Arachir The Ancient One",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Arachir Przedwieczny",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T12:20:50.133131Z"
+    "updated_at": "2026-02-17T07:46:12.781033Z"
   },
   "raid.raids.name": {
     "src_hash": "650d0052540bb7fa10d8ec5e7c7d8542",

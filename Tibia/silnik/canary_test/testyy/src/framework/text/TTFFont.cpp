@@ -458,7 +458,7 @@ void TTFFont::drawText(const std::u32string& text32,
   flushPendingUploads();
 
   std::vector<GlyphQuad> quads;
-  const Rect bounds = buildQuads(text32, params, quads);
+  buildQuads(text32, params, quads);
   if (quads.empty())
     return;
 

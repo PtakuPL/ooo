@@ -5307,6 +5307,8 @@ void ProtocolGame::parseCyclopediaCharacterInfo(const InputMessagePtr& msg)
             g_game.processCyclopediaCharacterMiscStats(data);
             break;
         }
+        case Otc::CYCLOPEDIA_CHARACTERINFO_WHEEL:
+            break;
     }
 }
 

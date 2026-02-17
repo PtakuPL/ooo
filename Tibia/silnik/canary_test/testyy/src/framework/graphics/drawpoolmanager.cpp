@@ -58,6 +58,10 @@ void DrawPoolManager::init(const uint16_t spriteSize)
             case DrawPoolType::CREATURE_INFORMATION:
                 pool->m_atlas = atlasForeground;
                 break;
+            case DrawPoolType::LIGHT:
+            case DrawPoolType::FOREGROUND:
+            case DrawPoolType::LAST:
+                break;
         }
     }
 }

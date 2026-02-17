@@ -35,6 +35,7 @@ public:
     ~UIMap() override;
 
     void drawSelf(DrawPoolType drawPane) override;
+    using UIWidget::draw;
     void draw(DrawPoolType drawPane);
 
     void movePixels(const int x, const int y) { m_mapView->move(x, y); }

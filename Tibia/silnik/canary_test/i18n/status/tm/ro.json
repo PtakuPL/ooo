@@ -41574,5 +41574,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:35:15.557686Z"
+  },
+  "npc.bertha.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:22.294465Z"
+  },
+  "npc.gorn.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:22.531722Z"
+  },
+  "npc.sarina.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:22.918908Z"
+  },
+  "npc.zora.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:23.089425Z"
+  },
+  "npc.a_sleeping_dragon.multi_10": {
+    "src_hash": "453ecafa7dcd6d7d87059b98f4e05841",
+    "text": "Cu ochii acoperiți și evitând vederea directă a razelor, pui oglinda în suport. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:27.132336Z"
+  },
+  "npc.a_sleeping_dragon.multi_11": {
+    "src_hash": "5a956e6ac76f84dcdc80c4d58d117682",
+    "text": "Instinctiv alergi la un bluf de smarald mai mare, lângă creștere, pentru a găsi acoperire. La doar câteva secunde după ce ai revendicat adăpostul robust, un zumzet adânc întunecat începe să se învârte prin aer. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:27.133119Z"
+  },
+  "npc.a_sleeping_dragon.multi_12": {
+    "src_hash": "f3784cdd21646d6b4c0ddd0b9a891a06",
+    "text": "Secundele trec pe măsură ce zumzetul devine mai puternic. Zgomotul este înnebunitor, înecând toate celelalte sunete din jurul tău. Pe măsură ce îți acoperi urechile de durere, zumzetul explodează într-un mârâit asurzitor. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:27.133883Z"
+  },
+  "npc.a_sleeping_dragon.multi_13": {
+    "src_hash": "a253f114923de282cccfb718ce2651da",
+    "text": "Îți ridici capul deasupra marginii smaraldului pentru a vedea ce se întâmplă. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:27.134434Z"
+  },
+  "npc.a_sleeping_dragon.multi_14": {
+    "src_hash": "70f67a45c979e8dc3e56fc964a026220",
+    "text": "Mâna pare să fi crescut într-un pumn. În depărtare poți vedea acum o schemă neclară a unei creaturi prea mare pentru ca ochii tăi să aibă o vedere mai clară a capului ei. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:27.135219Z"
+  },
+  "npc.a_sleeping_dragon.multi_15": {
+    "src_hash": "6a5a491a85f56f55adbd26786c63a7ce",
+    "text": "Îmbinând razele, oglinda direcționează lumina albă pură direct către partea în care îți asumi fața creaturii. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:29.764832Z"
+  },
+  "npc.a_sleeping_dragon.multi_16": {
+    "src_hash": "cc21d713d013605296b8dcd0b284011a",
+    "text": "Mârâitul se transformă într-un țipăt, totul în jurul tău pare să se comprimă. Pe măsură ce te apezi strâns de bluff, totul tace și într-o fracțiune de secundă, ființa întunecată se dizolvă în explozii de întuneric. te trezesti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:29.765691Z"
+  },
+  "npc.a_sleeping_dragon.multi_17": {
+    "src_hash": "7573058a6400d2fbf46d662914656cf4",
+    "text": "Te arunci afară și arunci modelul departe în apă. Cum nu se întâmplă nimic, te întorci cu spatele la ocean. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:29.766370Z"
+  },
+  "npc.a_sleeping_dragon.multi_18": {
+    "src_hash": "0d804d95a3a157aec49c516db3b9aff8",
+    "text": "Chiar în momentul în care cobori dună pentru a te întoarce spre sud, razele de lumină îți izbucnesc peste cap într-o undă de șoc care te face să prăbușești pe restul dealului. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:29.767079Z"
+  },
+  "npc.a_sleeping_dragon.multi_19": {
+    "src_hash": "791b4b36f3b71d7c38493b3e30b76237",
+    "text": "Pe măsură ce ochii tăi se adaptează la reducerea bruscă a luminozității, vezi aripile uriașe ale porții înainte de a te deplasa în lateral. De asemenea, puteți distinge ceva strălucitor pe pământ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:29.767815Z"
+  },
+  "npc.a_sleeping_dragon.multi_20": {
+    "src_hash": "2f2109a72068de305a9443412ff32999",
+    "text": "Culegi oglinda din pământ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:33.283293Z"
+  },
+  "npc.a_sleeping_dragon.multi_21": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Visele dragonului sunt de aur. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:33.283596Z"
+  },
+  "npc.a_sleeping_dragon.multi_22": {
+    "src_hash": "34250643c73b08b49a6fab210c7bc0c4",
+    "text": "Un întuneric larg te înconjoară ca și cum o perdea grea s-ar închide în fața ochilor tăi. După ceea ce par minute de plutire prin gol, ai senzația că o gaură se deschide în întuneric înaintea ta. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:33.284529Z"
+  },
+  "npc.a_sleeping_dragon.multi_23": {
+    "src_hash": "92a1fcad690cb48948dcf8d8defc5129",
+    "text": "Gaura devine mai mare, nu poți închide ochii. Un negru de neimaginat. Mai adânc și mai întunecat decât orice nimic pe care ți-ai putea imagina că te trage în ea. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:33.285230Z"
+  },
+  "npc.a_sleeping_dragon.multi_24": {
+    "src_hash": "f2cf7d86540c1405ea910ab146d852e6",
+    "text": "Simți că nu mai poți respira. Chiar în clipa în care îți eliberezi conștiința, simți că toată greutatea din jurul tău este ridicată. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:33.285848Z"
+  },
+  "npc.a_sleeping_dragon.multi_25": {
+    "src_hash": "fb3eb01906a6037673dafee918fc8213",
+    "text": "Te scufunzi într-un ocean de lumină de smarald. Să te simți ca și cum te-ai născut din nou culoarea din jurul tău este aproape copleșitor. Nenumărate obiecte de toate formele și dimensiunile trec peste tine. Concurând unul împotriva celuilalt, milioane se ciocnesc în depărtare. ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:35.967669Z"
+  },
+  "npc.a_sleeping_dragon.multi_26": {
+    "src_hash": "78364ddf49f6d5722ee53c7a25348d26",
+    "text": "Sunetul spectacolului uriaș din jurul tău îți sparge auzul, dar absorbi toate sunetele din jurul tău. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:35.968225Z"
+  },
+  "npc.a_sleeping_dragon.multi_27": {
+    "src_hash": "c42d69935dea4179e66969ccdb3aed5e",
+    "text": "Pe măsură ce mai multe obstacole mari se îndepărtează direct în fața ta, un centru intens luminos iese în vizorul tău. Deși nu poți percepe cât de repede ești, ritmul tău pare prea lent. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:35.968987Z"
+  },
+  "npc.a_sleeping_dragon.multi_28": {
+    "src_hash": "a70857cffa61d3635e2308ed40fdc91d",
+    "text": "Decelerând mereu, în cele din urmă te apropii de mijlocul acestui haos de tonuri de verde. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:35.969483Z"
+  },
+  "npc.a_sleeping_dragon.multi_29": {
+    "src_hash": "405803fd9a90b647e0df17a586553f6b",
+    "text": "Pe măsură ce te apropii de ea, nuanțe gălbui de portocaliu te îmbrățișează, ies forme mai moi și aproape că uiți de haos înainte. Într-un confort cald, vezi ce se află în inima tuturor. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:35.970282Z"
+  },
+  "npc.a_sleeping_dragon.multi_30": {
+    "src_hash": "561aa27c3ac58b8b86feed5ae68f3dfb",
+    "text": "Un dragon maiestuos în somn este înconjurat de ceea ce pare căldura și energia a o mie de sori. Liniștea vederii sale te face să zâmbești blând. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:39.817299Z"
+  },
+  "npc.a_sleeping_dragon.multi_31": {
+    "src_hash": "71d47ef87b2021f0289ea4b660a86a9b",
+    "text": "Simți un amestec perfect de bucurie, compasiune și liniște bruscă. Impresii strălucitoare de topaz, portocaliu și alb vă întâmpină la capătul final al călătoriei. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:39.817995Z"
+  },
+  "npc.a_sleeping_dragon.multi_32": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Visele dragonului sunt de aur. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:39.818360Z"
+  },
+  "npc.a_sleeping_dragon.multi_33": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Te regăsești în visul dragonului. Puteți {look} în jurul sau {go} într-o anumită direcție. De asemenea, puteți {take} sau {use} un obiect. Introduceți {help} pentru a afișa aceste informații în orice moment.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:39.819153Z"
+  },
+  "npc.a_sleeping_dragon.multi_5": {
+    "src_hash": "5413fbb342cce5e40e131c197c65f83a",
+    "text": "Transferul a avut succes. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:39.819451Z"
+  },
+  "npc.a_sleeping_dragon.multi_6": {
+    "src_hash": "9dca37c81c8fb23fca9d424d916549b3",
+    "text": "Acum ești pregătit să intri în tărâmul răufăcătorului. Sunt recunoscător pentru ajutorul tău, călător. Dacă vrei să-mi cauți sfatul, folosește acest farmec pe care ți-l cedez. Căci spiritul meu te va călăuzi oriunde te-ai afla. Fie ca tu să te bucuri de un viitor adăpostit, vei învinge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:42.205330Z"
+  },
+  "npc.a_sleeping_dragon.multi_8": {
+    "src_hash": "ae1846f5fcb59591a3521d7f4d7960ef",
+    "text": "Presupun că trebuie să treci prin poartă pentru a ajunge la răufăcător. Te pot ajuta dacă ai încredere în mine, călător. Îți voi împărtăși o parte din mintea mea, care ar trebui să-ți permită să treci prin poartă. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:42.206303Z"
+  },
+  "npc.a_sleeping_dragon.multi_9": {
+    "src_hash": "80f688fec5f39b9ff2f0df02e7b214e9",
+    "text": "Această procedură poate fi epuizantă. Ești pregătit să-mi primești cheia?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:42.206733Z"
   }
 }

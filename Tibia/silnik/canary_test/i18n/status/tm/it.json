@@ -47958,5 +47958,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:33:14.953533Z"
+  },
+  "npc.paulie.say_18": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Quante monete di platino vorresti ottenere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.702946Z"
+  },
+  "npc.paulie.say_19": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.703432Z"
+  },
+  "npc.paulie.say_21": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.704233Z"
+  },
+  "npc.paulie.say_22": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.704640Z"
+  },
+  "npc.paulie.say_25": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Quante monete di cristallo vorresti ottenere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.705275Z"
+  },
+  "npc.paulie.say_26": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.705683Z"
+  },
+  "npc.paulie.say_27": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.706146Z"
+  },
+  "npc.paulie.say_29": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.706790Z"
+  },
+  "npc.paulie.say_30": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.707362Z"
+  },
+  "npc.paulie.say_31": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.707780Z"
+  },
+  "npc.paulie.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.708436Z"
+  },
+  "npc.paulie.say_34": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.708960Z"
+  },
+  "npc.paulie.say_35": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Quante monete di cristallo vorresti cambiare in platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.709404Z"
+  },
+  "npc.paulie.say_36": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.709837Z"
+  },
+  "npc.paulie.say_38": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.710471Z"
+  },
+  "npc.paulie.say_39": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.710993Z"
+  },
+  "npc.plunderpurse.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.724003Z"
+  },
+  "npc.plunderpurse.say_18": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Il cliente è re! Torna quando vuoi se vuoi {withdraw} i tuoi soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.724546Z"
+  },
+  "npc.plunderpurse.say_19": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Quante monete di platino vorresti ottenere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.725088Z"
+  },
+  "npc.plunderpurse.say_20": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.725549Z"
+  },
+  "npc.plunderpurse.say_22": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.726193Z"
+  },
+  "npc.plunderpurse.say_23": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.726725Z"
+  },
+  "npc.plunderpurse.say_26": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Quante monete di cristallo vorresti ottenere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.727247Z"
+  },
+  "npc.plunderpurse.say_27": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.727646Z"
+  },
+  "npc.plunderpurse.say_28": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.728208Z"
+  },
+  "npc.plunderpurse.say_30": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.728888Z"
+  },
+  "npc.plunderpurse.say_31": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.729285Z"
+  },
+  "npc.plunderpurse.say_32": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.729820Z"
+  },
+  "npc.plunderpurse.say_34": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.730508Z"
+  },
+  "npc.plunderpurse.say_35": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.730977Z"
+  },
+  "npc.plunderpurse.say_36": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Quante monete di cristallo vorresti cambiare in platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.731421Z"
+  },
+  "npc.plunderpurse.say_37": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.731970Z"
+  },
+  "npc.plunderpurse.say_39": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.732578Z"
+  },
+  "npc.plunderpurse.say_40": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.733072Z"
+  },
+  "npc.wentworth.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.965568Z"
+  },
+  "npc.wentworth.say_18": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.965993Z"
+  },
+  "npc.wentworth.say_19": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Il cliente è re! Torna quando vuoi se vuoi {withdraw} i tuoi soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.966688Z"
+  },
+  "npc.wentworth.say_20": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Quante monete di platino vorresti ottenere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:38:11.967177Z"
   }
 }

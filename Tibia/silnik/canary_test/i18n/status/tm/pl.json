@@ -100350,5 +100350,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:54:30.868633Z"
+  },
+  "scripts.actions_tortoise.msg_1": {
+    "src_hash": "70c07abb473fda5ebb8cef18df22fc77",
+    "text": "Gniazdo żółwia jest puste.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.443316Z"
+  },
+  "scripts.actions_treasure.msg_2": {
+    "src_hash": "79160e6b066237c7c12eb0cc702123d8",
+    "text": "Próbujesz zabrać skarb, ale słyszysz, że nadciągają kolejne smoki. Powinieneś zabić jeszcze kilka, zanim coś wybierzesz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.445240Z"
+  },
+  "scripts.actions_tuning_fork.msg_1": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Zgłoś zadanie Gnomilly.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.447201Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.448040Z"
+  },
+  "scripts.actions_ursagrodon.msg_1": {
+    "src_hash": "d0d3617b1cd884278a414fdbabd6b439",
+    "text": "Masz już posłuszeństwo ursagrodona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.449020Z"
+  },
+  "scripts.actions_ursagrodon.msg_2": {
+    "src_hash": "4db1a87ec2c30e5b5d9e61fb6c1d97d3",
+    "text": "Lód pękł, a wraz z nim zamarznięte stworzenie - następnym razem bądź ostrożniejszy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.450120Z"
+  },
+  "scripts.actions_ursagrodon.msg_4": {
+    "src_hash": "5fcfa4caa955ed25132384275eb6caec",
+    "text": "Udało ci się roztopić prawie całą bryłę, tylko stopy stworzenia nadal tkwią w lodzie. Dokończ robotę!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.451915Z"
+  },
+  "scripts.actions_ursagrodon.msg_5": {
+    "src_hash": "e28b127eca3173abd0c728adc49379a2",
+    "text": "Uwolniony ursagrodon patrzy na ciebie świecącymi, posłusznymi oczami.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.452931Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_1": {
+    "src_hash": "358e1871d6927f9c6a51a8f8e300b4f6",
+    "text": "Znalazłeś róg pocztowy Waldo.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.455800Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_2": {
+    "src_hash": "952f56962331136fbc510393bd0ab94e",
+    "text": "Martwy człowiek jest pusty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.456815Z"
+  },
+  "scripts.actions_warrior_skeleton.msg_1": {
+    "src_hash": "80d457dae23708dcc3b6cd172fd0a4e0",
+    "text": "Odkryłeś szkielet zmarłego wojownika. Wygląda na to, że próbował polować na tutejsze smoki - i poległ.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.458000Z"
+  },
+  "scripts.actions_wooden_trash.msg_1": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Rozpocząłeś eskortę, doprowadź więźnia do krasnoludzkiej placówki!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.459358Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.msg_1": {
+    "src_hash": "a25f971cea94edfe9bc6fdba575342b6",
+    "text": "Nie masz wystarczającej liczby kół zębatych, aby aktywować maszynę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.461825Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.msg_2": {
+    "src_hash": "5161e3c160b510f6be4cbee835b70524",
+    "text": "Umieszczasz wszystkie 4 koła zębate, dostrajając teleporter, aby przeniósł cię na niższy poziom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.462948Z"
+  },
+  "scripts.actions_yselda_entrances.msg_1": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Potrzebujesz co najmniej 250 poziomu, aby wejść.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.464048Z"
+  },
+  "scripts.actions_yselda_shortcut.msg_1": {
+    "src_hash": "b098102bc8283f62fb35ba0a9d9b31c1",
+    "text": "Ten korzeń zdaje się grubieć i oplatać, gdy tylko próbujesz go chwycić.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.465068Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.465570Z"
+  },
+  "scripts.banana_chocolate_shake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.475546Z"
+  },
+  "scripts.blessed_steak.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.481045Z"
+  },
+  "scripts.blueberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.482783Z"
+  },
+  "scripts.carrot_cake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.485842Z"
+  },
+  "scripts.check_mount.msg_1": {
+    "src_hash": "53fb4630c527cc842c731640ece0d1ca",
+    "text": "Twoja umowa na konia wygasła i wrócił on do stacji koni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.488997Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.492439Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.494050Z"
+  },
+  "scripts.construction_kits.msg_1": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Najpierw połóż zestaw konstrukcyjny na podłodze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.500131Z"
+  },
+  "scripts.construction_kits.msg_2": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Możesz to zbudować tylko wewnątrz domu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.500577Z"
+  },
+  "scripts.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Przegrałeś potyczkę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.504584Z"
+  },
+  "scripts.dawnport_tiles.msg_3": {
+    "src_hash": "26b2af747349f8d79f9fb0eea63d9466",
+    "text": "Nie masz odpowiedniej profesji, aby wejść do tego pomieszczenia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.533857Z"
+  },
+  "scripts.dawnport_tiles.msg_4": {
+    "src_hash": "3c4ead55dc3ddb0a3069ed6fe9cf85d8",
+    "text": "Wybrałeś swoją profesję. Nie możesz wrócić.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.534876Z"
+  },
+  "scripts.dawnport_tiles.msg_6": {
+    "src_hash": "ba34cb0ec36158a091e2096ece725810",
+    "text": "Użyj tych schodów, aby wejść do Posterunku Poszukiwaczy Przygód w Dawnport.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.536543Z"
+  },
+  "scripts.dawnport_tiles.msg_7": {
+    "src_hash": "884a719512ac8282e5e9b37779149c5f",
+    "text": "Witamy w Dawnport! Rozejrzyj się i odkrywaj na własną rękę albo porozmawiaj z Inigo, jeśli potrzebujesz wskazówek.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.537840Z"
+  },
+  "scripts.demonic_candy_ball.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.542602Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Baw się dobrze!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.547696Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.569542Z"
+  },
+  "scripts.exalted_core.msg_2": {
+    "src_hash": "2e149a13c42fb213cb46a20cc147b969",
+    "text": "Nieprawidłowy typ potwora. Skontaktuj się z administratorem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.573006Z"
+  },
+  "scripts.filled_jalapeno_peppers.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.582714Z"
+  },
+  "scripts.find_fiend.level_easy": {
+    "src_hash": "7f943921724d63dc0ac9c6febf99fa88",
+    "text": "Łatwo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.584270Z"
+  },
+  "scripts.find_person.dir_east": {
+    "src_hash": "320381dbf7cd2f31c04baa6b36e1c682",
+    "text": "Wschód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.588308Z"
+  },
+  "scripts.find_person.dir_northeast": {
+    "src_hash": "148c89d38f2721774d605658b86698c6",
+    "text": "północ-wschód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.589295Z"
+  },
+  "scripts.find_person.dir_northwest": {
+    "src_hash": "62c454d99c54803bd76d93c7412c2d25",
+    "text": "północ-zachód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.590261Z"
+  },
+  "scripts.find_person.dir_south": {
+    "src_hash": "50fd76e33fe5b9617c5ca99008af8904",
+    "text": "Południe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.591037Z"
+  },
+  "scripts.find_person.dir_southeast": {
+    "src_hash": "d857ea16326ac6746fb8bf70e0fb380b",
+    "text": "południe-wschód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.591812Z"
+  },
+  "scripts.find_person.dir_southwest": {
+    "src_hash": "1fcea8ec9cf46675ca64801b06c160ef",
+    "text": "południe-zachód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.592584Z"
+  },
+  "scripts.find_person.dir_west": {
+    "src_hash": "da4f0053a5c13882268852ae2da2e466",
+    "text": "Zachód",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.593361Z"
+  },
+  "scripts.fishing.msg_2": {
+    "src_hash": "cb1efac7fe07a24a748f5db348c4315f",
+    "text": "Z potężnym pluskiem wyciągasz z wody ogromną rybę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.596056Z"
+  },
+  "scripts.free_quest.msg_1": {
+    "src_hash": "9f78cd07a4952ce2aec875b30e947e8d",
+    "text": "FreeQuest gracza został ukończony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.603955Z"
+  },
+  "scripts.freequests.msg_1": {
+    "src_hash": "9d96dea7e5606180c5f3169aa5a4df1f",
+    "text": "Dodano ukończone darmowe questy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:55:58.605599Z"
   }
 }

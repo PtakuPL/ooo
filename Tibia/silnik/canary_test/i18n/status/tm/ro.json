@@ -33126,5 +33126,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:33:31.011991Z"
+  },
+  "quests.tinder_box_quest_chyllfroest.the_pile_of_bones_is_empty": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Teancul de oase este gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:52.719664Z"
+  },
+  "quests.lions_rock.amethyst_flame": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Așezi ametistul pe priza mică. O flacără violetă începe să ardă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:53.991686Z"
+  },
+  "quests.lions_rock.ruby_flame": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Puneți rubinul pe priza mică. O flacără roșie începe să ardă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:58.819893Z"
+  },
+  "quests.lions_rock.sapphire_flame": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Puneți safirul pe priza mică. O flacără albastră începe să ardă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:58.820447Z"
+  },
+  "quests.lions_rock.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Când va veni momentul, '%s' va fi acceptat la acest altar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:58.820850Z"
+  },
+  "quests.lions_rock.sign_hyaena_1": {
+    "src_hash": "43506f692e5eaa2d03b471d5db205e9f",
+    "text": "Cu ajutorul vechiului sul traduceți inscripțiile de pe statuia de aur: Și leul puternic a învins hiena lacomă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:58.821404Z"
+  },
+  "quests.lions_rock.sign_hyaena_2": {
+    "src_hash": "8390080f6d5fbd320a95afbd47f1c011",
+    "text": "În semn de victorie, el ia sângele, roșu ca voracitatea și pofta, și a creat o comoară prețioasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:58.821906Z"
+  },
+  "quests.lions_rock.sign_lizard_1": {
+    "src_hash": "607e1aa56577c65566e8d1a407b24f60",
+    "text": "Cu ajutorul vechiului sul traduceți inscripțiile de pe jos: Și leul puternic a învins șopârla leneșă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:06.015759Z"
+  },
+  "quests.lions_rock.sign_lizard_2": {
+    "src_hash": "026f745497af303958bed63db3a88230",
+    "text": "În semn de victorie, el i-a luat oul, albastru ca leneșul și îngâmfarea, și dintr-o creatură murdară a creat o comoară prețioasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:06.016350Z"
+  },
+  "quests.lions_rock.sign_scorpion_1": {
+    "src_hash": "5525122a591ad5ece97e50232e932137",
+    "text": "Cu ajutorul vechiului sul traduceți inscripțiile de pe altarul de aur: Și leul puternic a învins scorpionul trădător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:06.016915Z"
+  },
+  "quests.lions_rock.sign_scorpion_2": {
+    "src_hash": "43c5ad801d0867efcacf0874cd5f755c",
+    "text": "În semn de victorie, el ia otrava, violeta ca înșelăciune și trădare, și a creat o comoară prețioasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:06.017428Z"
+  },
+  "quests.lions_rock.sign_snake_1": {
+    "src_hash": "a38676d3c1f2b95ea81fd6a0c07d9842",
+    "text": "Cu ajutorul vechiului sul traduceți inscripțiile de pe jos: Și leul puternic a învins șarpele gelos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:06.017955Z"
+  },
+  "quests.lions_rock.sign_snake_2": {
+    "src_hash": "0ddb19907d494051a2036cc940045ca1",
+    "text": "În semn de victorie, el i-a luat ochiul, galben ca invidia și răutatea, și dintr-o creatură urâtă a creat o comoară prețioasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:12.553522Z"
+  },
+  "quests.lions_rock.topaz_flame": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Așezi topazul pe priza mică. O flacără galbenă începe să ardă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:12.553960Z"
+  },
+  "quests.mission07_attack.say_1": {
+    "src_hash": "a145d394a5681b91228bf5174c437ca3",
+    "text": "<tuse>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:12.554211Z"
+  },
+  "quests.mission09_rock_troll.say_1": {
+    "src_hash": "5bf39cb0fedb3760737d4a684763bde6",
+    "text": "<crack>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:12.554435Z"
+  },
+  "quests.mission12_into_fortress.say_1": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:12.554600Z"
+  },
+  "quests.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Ai fost în încăierare în ultimele 10 ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:17.690683Z"
+  },
+  "quests.movements.you_need_a_premium_account_to": {
+    "src_hash": "db2cfa02e7868b5579081b243f9697a0",
+    "text": "Aveți nevoie de un cont premium pentru a accesa această zonă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:17.691090Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "LUPTĂ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:17.691276Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Luptă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:17.691451Z"
+  },
+  "quests.movements_arena_pit.say_2": {
+    "src_hash": "9224728568a2f95e3e8af3a1e4dcf35c",
+    "text": "Respect și onoare pentru tine, campion!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:17.691778Z"
+  },
+  "quests.movements_arena_pit.say_3": {
+    "src_hash": "82a08c8672f5afbd168b2c3b7859d310",
+    "text": "Felicitări, curajos războinic!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:23.929109Z"
+  },
+  "quests.movements_arena_pit.say_4": {
+    "src_hash": "8f0c30ed83be4ee852a61ebd6ba6f196",
+    "text": "Bine ai revenit, mic erou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:23.929406Z"
+  },
+  "quests.movements_arena_pit.say_5": {
+    "src_hash": "4526ef4a7942d54702a69a547f22b6a0",
+    "text": "Laş!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:23.929588Z"
+  },
+  "quests.movements_boat_puzzle.msg_1": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Fără niciun punct de orientare nu vei găsi niciodată drumul înapoi. Încercați să găsiți o modalitate de a vă îmbunătăți navigarea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:23.930240Z"
+  },
+  "quests.movements_boat_puzzle.msg_2": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedeți părțile împrăștiate ale unei nave naufragiate. În mod miraculos, telescopul navei a supraviețuit epavei și pare să fie încă intact.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:23.930838Z"
+  },
+  "quests.movements_boat_puzzle.msg_3": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Folosești șurubul pentru a bate scândurile libere. Pluta ar trebui să fie navigabilă acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:31.602127Z"
+  },
+  "quests.movements_boat_puzzle.msg_4": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Mai sunt niște scânduri și șuruburi libere. Nu poți folosi pluta așa, sigur se va scufunda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:31.602657Z"
+  },
+  "quests.movements_boat_puzzle.msg_5": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedeți părțile împrăștiate ale unei nave naufragiate. În mod miraculos, telescopul navei a supraviețuit epavei și pare să fie încă intact.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:31.603258Z"
+  },
+  "quests.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Treci de foc fără să primești nicio pagubă. Este acum sau niciodată...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:31.603689Z"
+  },
+  "quests.movements_elemental_portals.msg_1": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Ați descoperit un birou vechi care conține o hartă veche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:31.604099Z"
+  },
+  "quests.movements_elemental_portals.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:37.844114Z"
+  },
+  "quests.movements_elemental_portals.msg_3": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ai luat prea mult timp, bătălia s-a încheiat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:37.844483Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:37.844744Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:37.844998Z"
+  },
+  "quests.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:37.845249Z"
+  },
+  "quests.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Rămășițele te deporalizează temporar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:45.440900Z"
+  },
+  "quests.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Cu puterea Custodianului întunecat încă ținând departe, ceața te împiedică să intri în bârlogul lui Quaid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:45.441472Z"
+  },
+  "quests.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Ai finalizat ritualul de ofertă de mâncare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:45.441834Z"
+  },
+  "quests.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Trebuie să aștepți. Cineva este provocator ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:45.442273Z"
+  },
+  "quests.movements_stepin.say_1": {
+    "src_hash": "0bb267d5a1e1d99f98082a5d44c35061",
+    "text": "Țestoasa îi este foame... Trebuie să o hrănești.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:45.442634Z"
+  },
+  "quests.movements_teleportto.msg_1": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Trebuie să aștepți. Cineva îl provoacă pe Scorpionul Furios acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:48.757667Z"
+  },
+  "quests.movements_teleportto.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesul acordat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:48.757906Z"
   }
 }

@@ -168542,5 +168542,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:10:36.165921Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L76.842": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.408076Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L77.843": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.408478Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L78.844": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.408788Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L112.103": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.411397Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L113.104": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.411671Z"
+  },
+  "data.otservbr.global.npc.busty.bonecrusher.L82.1290": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.411957Z"
+  },
+  "data.otservbr.global.npc.busty.bonecrusher.L83.1291": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.412221Z"
+  },
+  "data.otservbr.global.npc.busty.bonecrusher.L84.1292": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.412606Z"
+  },
+  "data.otservbr.global.npc.emma.L294.239": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "ЖИВЕЛА КРАЉИЦА! Можете отићи сада!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.428784Z"
+  },
+  "data.otservbr.global.npc.fenbala.L84.520": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.432108Z"
+  },
+  "data.otservbr.global.npc.fenbala.L85.521": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "ЖИВЕЛА КРАЉИЦА! Можете отићи сада!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.432473Z"
+  },
+  "data.otservbr.global.npc.shauna.L129.136": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.493486Z"
+  },
+  "data.otservbr.global.npc.shauna.L130.137": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "ЖИВЕЛА КРАЉИЦА!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:10.493763Z"
   }
 }

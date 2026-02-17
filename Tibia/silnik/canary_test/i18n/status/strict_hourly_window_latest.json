@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-17T01:34:34.047730Z",
-  "window_end_utc": "2026-02-17T02:34:34.047730Z",
+  "window_start_utc": "2026-02-17T01:36:30.892552Z",
+  "window_end_utc": "2026-02-17T02:36:30.892552Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 162,
+  "total_cycles": 161,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 162
+    "AUTO_TRANSLATE": 161
   },
-  "auto_translate_cycles": 162,
+  "auto_translate_cycles": 161,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 4139,
-  "guard_fail": 3417,
-  "guard_fail_rate_pct": 45.2,
+  "translated": 4047,
+  "guard_fail": 3409,
+  "guard_fail_rate_pct": 45.7,
   "no_progress_entries": 2,
   "no_progress_rate_pct": 1.9,
-  "throughput_keys_per_h": 2327.8,
-  "suspicious_total": 14740,
+  "throughput_keys_per_h": 2261.7,
+  "suspicious_total": 14116,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -43,15 +43,15 @@
       "guard_command": 0
     },
     {
-      "target": "ro/monsters.json",
-      "translated": 27,
-      "guard_fail": 123,
-      "guard_command": 0
-    },
-    {
       "target": "ro/spells.json",
       "translated": 50,
       "guard_fail": 100,
+      "guard_command": 0
+    },
+    {
+      "target": "sr/server.json",
+      "translated": 55,
+      "guard_fail": 95,
       "guard_command": 0
     },
     {
@@ -61,15 +61,15 @@
       "guard_command": 0
     },
     {
-      "target": "pl/quests.json",
-      "translated": 95,
-      "guard_fail": 79,
+      "target": "ro/monsters.json",
+      "translated": 17,
+      "guard_fail": 83,
       "guard_command": 0
     },
     {
-      "target": "ru/monsters.json",
-      "translated": 72,
-      "guard_fail": 78,
+      "target": "pl/quests.json",
+      "translated": 95,
+      "guard_fail": 79,
       "guard_command": 0
     }
   ]

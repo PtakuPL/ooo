@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:08:59.506953Z"
+    "updated_at": "2026-02-17T02:35:53.462003Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -21430,5 +21430,173 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T02:24:38.189408Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L88.950": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.933823Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L103.863": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.935578Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L106.1470": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.936365Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L87.1620": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.937014Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L98.749": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Välkommen ombord, Sir |PLAYERNAME|. Var kan jag {sail} dig idag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.937962Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L99.750": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.938483Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L97.707": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Hälsningar, vågade äventyrare. Om du behöver en {passage}, låt mig veta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.938989Z"
+  },
+  "data.otservbr.global.npc.cornell.L74.82": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.945667Z"
+  },
+  "data.otservbr.global.npc.harog.L71.1501": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tänk på att du inte hittar bättre erbjudanden här. Bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.988000Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L62.505": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.996321Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L110.734": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:51.997085Z"
+  },
+  "data.otservbr.global.npc.kendra.L83.1057": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.006654Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L84.1068": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.007454Z"
+  },
+  "data.otservbr.global.npc.pompan.L126.272": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tänk på att du inte hittar bättre erbjudanden här. Bläddra bara igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.043008Z"
+  },
+  "data.otservbr.global.npc.rapanaio.boat.L71.128": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.048757Z"
+  },
+  "data.otservbr.global.npc.rapanaio.isle.of.evil.L71.1191": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.049424Z"
+  },
+  "data.otservbr.global.npc.sebastian.L116.1348": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Hälsningar, vågade äventyrare. Om du behöver en {passage}, låt mig veta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.059486Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L68.1109": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Hälsningar, vågade äventyrare. Om du behöver en {passage}, låt mig veta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.060216Z"
+  },
+  "data.otservbr.global.npc.tanyt.L101.1188": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.072259Z"
+  },
+  "data.otservbr.global.npc.ziyad.L101.873": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Hej då. Rekommendera oss om du är nöjd med vår tjänst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:35:52.097569Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L162.1353": {
+    "src_hash": "4389112dadbf0109f2cda25d30028e4a",
+    "text": "Vi ses, landkrabbe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:36:06.377163Z"
   }
 }

@@ -29494,5 +29494,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:05:46.863992Z"
+  },
+  "actions.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:31.968070Z"
+  },
+  "actions.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:31.968427Z"
+  },
+  "actions.quests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:31.969036Z"
+  },
+  "actions.quests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:31.969487Z"
+  },
+  "actions.random_items.say_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Du hittade ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:31.969889Z"
+  },
+  "actions.arena_10x10.say_1": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Vänta på att kämparna kommer ut från arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:34.679153Z"
+  },
+  "actions.arena_10x10.say_2": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Du behöver 10 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:34.679608Z"
+  },
+  "actions.arena_10x10.say_3": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Du behöver 10 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:34.679992Z"
+  },
+  "actions.arena_10x10.say_4": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Du behöver 10 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:34.680411Z"
+  },
+  "actions.arena_10x10.say_5": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Du behöver 10 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:34.680800Z"
+  },
+  "actions.arena_10x10.say_6": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Vänta på att kämparna kommer ut från arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:38.540894Z"
+  },
+  "actions.arena_2x2.say_1": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Vänta på att kämparna kommer ut från arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:38.541275Z"
+  },
+  "actions.arena_2x2.say_2": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Du behöver 2 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:38.541631Z"
+  },
+  "actions.arena_2x2.say_3": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Du behöver 2 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:38.542069Z"
+  },
+  "actions.arena_2x2.say_4": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Du behöver 2 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:38.542488Z"
+  },
+  "actions.arena_2x2.say_5": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Du behöver 2 spelare för att komma in i arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:43.652718Z"
+  },
+  "actions.arena_2x2.say_6": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Vänta på att kämparna kommer ut från arenan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:43.653108Z"
+  },
+  "actions.construction_kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Du får endast bygga detta i ett hus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:43.653452Z"
+  },
+  "actions.construction_kits.msg_2": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Lägg byggsatsen på golvet först.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:43.653784Z"
+  },
+  "actions.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Du är inte ägaren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:43.654053Z"
+  },
+  "actions.golden.msg_1": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Någon slåss mot chefen! Du måste vänta ett tag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:49.246237Z"
+  },
+  "actions.golden.msg_2": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Du behöver 5 spelare för att slåss med den här chefen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:49.246623Z"
+  },
+  "actions.imbuement_shrine.msg_1": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Du kan bara använda helgedomen på ett giltigt föremål.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:49.247015Z"
+  },
+  "actions.imbuement_shrine.msg_2": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Du samlade inte tillräckligt med kunskap från de gamla Shapers. Besök Shaper-templet i Montag för hjälp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:49.247622Z"
+  },
+  "actions.keys.msg_1": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Du har femton minuter på dig att döda och plundra den här chefen, annars kommer du att förlora den chansen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:49.248144Z"
+  },
+  "actions.keys.msg_2": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Du har gått in i en gammal demonfängelsecell!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:54.962271Z"
+  },
+  "actions.random_items.say_2": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Du hittade inget användbart.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:54.962580Z"
+  },
+  "actions.random_items.say_3": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Du hittade inget användbart.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:54.962864Z"
+  },
+  "actions.premium_scroll.msg_max_days": {
+    "src_hash": "1010e4707b50a67b7c38e725a698d597",
+    "text": "Du kan inte köpa mer än {max} dagars premiumkonto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:54.963237Z"
+  },
+  "actions.hireling_foods.msg_too_full": {
+    "src_hash": "883d6385bdd0fda404b168b90f087063",
+    "text": "Du är fortfarande för mätt för att äta några gourmeträtter på ett tag.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:20:54.963637Z"
+  },
+  "actions.outfit_items.msg_need_outfit": {
+    "src_hash": "6f55a0eedffa63b4bc43323bbb07b0e8",
+    "text": "Du behöver klädseln för den här delen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:21:01.837415Z"
+  },
+  "actions.outfit_items.msg_already_own": {
+    "src_hash": "ff03bf90647055eb6169fe3518a86e11",
+    "text": "Du äger redan den här outfitdelen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:21:01.837790Z"
+  },
+  "actions.key_door.msg_wrong_key": {
+    "src_hash": "0f9c62489a770c7c23c3b706d5fccb35",
+    "text": "Nyckeln matchar inte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:21:01.838056Z"
+  },
+  "actions.gamestore.msg_no_rookgaard": {
+    "src_hash": "b4299c21f178fe5003979baf89fc88c5",
+    "text": "Butiken har inga erbjudanden för rookgaard medborgare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:21:01.838484Z"
+  },
+  "actions.gamestore.msg_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Du är utmattad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:21:01.838760Z"
   }
 }

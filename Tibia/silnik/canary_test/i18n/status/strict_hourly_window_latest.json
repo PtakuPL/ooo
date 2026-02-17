@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-17T01:25:53.197822Z",
-  "window_end_utc": "2026-02-17T02:25:53.197822Z",
+  "window_start_utc": "2026-02-17T01:28:27.023864Z",
+  "window_end_utc": "2026-02-17T02:28:27.023864Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 173,
+  "total_cycles": 171,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 173
+    "AUTO_TRANSLATE": 171
   },
-  "auto_translate_cycles": 173,
+  "auto_translate_cycles": 171,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 4269,
-  "guard_fail": 4597,
-  "guard_fail_rate_pct": 51.8,
+  "translated": 4207,
+  "guard_fail": 4593,
+  "guard_fail_rate_pct": 52.2,
   "no_progress_entries": 4,
   "no_progress_rate_pct": 3.6,
-  "throughput_keys_per_h": 2295.7,
-  "suspicious_total": 19222,
+  "throughput_keys_per_h": 2354.8,
+  "suspicious_total": 19216,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -49,6 +49,12 @@
       "guard_command": 0
     },
     {
+      "target": "pl/quests.json",
+      "translated": 95,
+      "guard_fail": 79,
+      "guard_command": 0
+    },
+    {
       "target": "ru/monsters.json",
       "translated": 72,
       "guard_fail": 78,
@@ -64,12 +70,6 @@
       "target": "ro/spells.json",
       "translated": 36,
       "guard_fail": 64,
-      "guard_command": 0
-    },
-    {
-      "target": "es/questlog.json",
-      "translated": 82,
-      "guard_fail": 62,
       "guard_command": 0
     }
   ]

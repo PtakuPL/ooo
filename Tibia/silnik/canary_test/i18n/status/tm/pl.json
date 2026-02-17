@@ -105150,5 +105150,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:25:47.724168Z"
+  },
+  "quests.demon_oak.sound_1": {
+    "src_hash": "64858b07745250c936399f2141b9ae80",
+    "text": "MOJE KORZENIE SĄ Ostre JAK KOSA! CZUJESZ TO?!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:04.586586Z"
+  },
+  "quests.demon_oak.sound_4": {
+    "src_hash": "73a3aa812824cdc1b55c2f3eed86217c",
+    "text": "AHAHAHA! TWOJA KREW DAJE MNIE SIŁĘ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:04.586920Z"
+  },
+  "quests.demon_oak.sound_5": {
+    "src_hash": "32c5ccaa47af898221a429cc74e76312",
+    "text": "ZABIERZ KOŚCI, HELLHOUND! Zdobądź je!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:04.587377Z"
+  },
+  "quests.demon_oak.sound_7": {
+    "src_hash": "f4bacd0a57b22b2bc63c2ba67bd432ac",
+    "text": "WIECZNY BÓL CZEKA NA CIEBIE! NIEZŁA NAGRODA, CO?!?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:12.258714Z"
+  },
+  "quests.demon_oak.sound_8": {
+    "src_hash": "00f928cfbade0ee4a515a461c14fbd4a",
+    "text": "Za każde trafienie zapłacisz dekadami tortur!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:12.259086Z"
+  },
+  "quests.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Uwolnij mnie, a zostaniesz sowicie nagrodzony!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:12.260072Z"
+  },
+  "quests.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Co to jest? Leżą tu Demoniczne Nogi? Ktoś mógł je zgubić!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:12.260487Z"
+  },
+  "quests.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Jestem uwięziony, chodź tu i uwolnij mnie szybko!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:19.593025Z"
+  },
+  "quests.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Mogę sprowadzić twojego ukochanego z martwych, po prostu mnie uwolnij!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:19.593490Z"
+  },
+  "quests.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Cóż za ładna, błyszcząca, złota zbroja. Przyjdź do mnie, a możesz to mieć!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:19.593923Z"
+  },
+  "quests.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Znajdź tu wejście i uwolnij mnie! Proszę, pospiesz się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:19.594379Z"
+  },
+  "quests.desert_dungeon.missing_sacrifice": {
+    "src_hash": "cf6fd7640294feedf4b956372a8c65f3",
+    "text": "{0} brakuje {1} ofiary na ołtarzu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:19.594739Z"
+  },
+  "quests.desert_dungeon.need_all_vocations": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Do tego zadania potrzebny jest jeden gracz z każdej profesji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:26.014666Z"
+  },
+  "quests.desert_dungeon.need_each_vocation": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Do tego zadania potrzebny jest jeden gracz z każdej profesji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:26.015102Z"
+  },
+  "quests.dream_courts.barrel_word": {
+    "src_hash": "ab1981f1b79d1b8ff80c419c6ce3d434",
+    "text": "Na wewnętrznej stronie wieczka tej beczki jest napisane słowo: 'O'kteth'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:26.015562Z"
+  },
+  "quests.dream_courts.bed_notes": {
+    "src_hash": "d23a6ac34261a80639136e4e3d78e47b",
+    "text": "Na tej stronie łóżka ukryty jest stos notatek. Na każdym z nich jest tylko jedno słowo: 'T'sough”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:26.016138Z"
+  },
+  "quests.dream_courts.book_kmuuh": {
+    "src_hash": "18d37c53b39eb7f66f14c307f08d2c0e",
+    "text": "Pieśni w tej książce często zawierają słowo 'K'muuh”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:26.016564Z"
+  },
+  "quests.dream_courts.book_nogalu": {
+    "src_hash": "1714f5db5c755452491181ec675d63ac",
+    "text": "Pieśni w tej książce często zawierają słowo 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:33.803346Z"
+  },
+  "quests.dream_courts.book_okteth": {
+    "src_hash": "3a67a1d27c430fa5ba1fd9edaffc15d7",
+    "text": "Pieśni w tej książce często zawierają słowo 'O'kteth.'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:33.803759Z"
+  },
+  "quests.dream_courts.got_blue_crystal": {
+    "src_hash": "be404605aece8334d7dec85049557214",
+    "text": "Masz niebieski kryształ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:33.804037Z"
+  },
+  "quests.dream_courts.got_green_crystal": {
+    "src_hash": "95d63fd876e5455d0288a8fe8bbad93f",
+    "text": "Masz zielony kryształ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:33.804303Z"
+  },
+  "quests.dream_courts.got_purple_crystal": {
+    "src_hash": "15ef9900355aaed476317b32066987c5",
+    "text": "Masz fioletowy kryształ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:33.804573Z"
+  },
+  "quests.dream_courts.nexus_blocked": {
+    "src_hash": "c2d3b0717c0f57ebab89bc4984f3c53c",
+    "text": "Połącz wszystkie trzy bramy, aby przywrócić krąg energii podtrzymującej ten związek.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:41.474785Z"
+  },
+  "quests.dream_courts.rubble_path": {
+    "src_hash": "887ce17f9b9499fbe9a3430282790e46",
+    "text": "Z łatwością pokonujesz gruz, ale jego większa część spada za tobą, ponownie blokując ci drogę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:41.475324Z"
+  },
+  "quests.dream_courts.skull_minotaur": {
+    "src_hash": "0f19967c78d4c4bf877ae903c07b710f",
+    "text": "Wkładasz czaszkę minotaura do trumny w szkielecie minotaura. Jeden z zamków drzwi klika.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:41.475819Z"
+  },
+  "quests.dream_courts.skull_orc": {
+    "src_hash": "bbc9ebaea7038e7842785e65ec127259",
+    "text": "Wkładasz czaszkę orka do trumny w szkielecie orka. Jeden z zamków drzwi klika.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:41.476283Z"
+  },
+  "quests.dream_courts.statue_word": {
+    "src_hash": "e69449650a233f36e687a06c05ff3580",
+    "text": "Ta statua ma na dłoni wypisane słowo: 'N'ogalu”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:41.476671Z"
+  },
+  "quests.dream_courts.summer_ward": {
+    "src_hash": "3c3de5f54674528ed8325cebed7655d8",
+    "text": "Ładujesz letni kamień ochronny, a wygrawerowany kryształ słońca świeci złotym światłem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:47.890927Z"
+  },
+  "quests.dream_courts.winter_ward": {
+    "src_hash": "6d2a5aa45e9e8b2ef75fcee7816d0955",
+    "text": "Ładujesz zimowy kamień ochronny, a wygrawerowany kryształ lodu świeci niebieskim światłem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:47.891404Z"
+  },
+  "quests.dreamers_challenge.clock_word_1": {
+    "src_hash": "c223d5e93e61322ac1aceefd8ef3ff0b",
+    "text": "MARZYSZ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:47.891656Z"
+  },
+  "quests.dreamers_challenge.clock_word_2": {
+    "src_hash": "6d62b16ea1c4e60517f9383de308543d",
+    "text": "BUDZIĆ SIĘ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:47.891860Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_obtained_this_addon": {
+    "src_hash": "de6fa97474d57de84714ed5405bda75d",
+    "text": "Otrzymałeś już ten dodatek!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:47.892175Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_used_this_lever": {
+    "src_hash": "1be82c3c9ff13fda4cdb4bc6e5e5cd4c",
+    "text": "Użyłeś już tej dźwigni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:54.818255Z"
+  },
+  "quests.dreamers_challenge_quest.you_need_to_offer_a_small": {
+    "src_hash": "31fec8dd082b43587b7f8586b6e78b93",
+    "text": "Musisz zaoferować mały diament.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:54.818599Z"
+  },
+  "quests.dreamers_challenge_quest.you_still_dont_have_permission": {
+    "src_hash": "94c3a4f539049247659ee395664bc4e6",
+    "text": "Nadal nie masz pozwolenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:54.818892Z"
+  },
+  "quests.fathers_burden.corpse_say_1": {
+    "src_hash": "2afb5076cad1b4a7685de513c392b177",
+    "text": "Skala Glitterscale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:54.819126Z"
+  },
+  "quests.ferumbras_ascension.you_cannot_use_this_lever_again": {
+    "src_hash": "e9cc8cc8a90ff0e0d86a9099d4d547e1",
+    "text": "Nie możesz ponownie użyć tej dźwigni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:27:54.819447Z"
+  },
+  "quests.ferumbras_ascension.you_have_found_a_bag_but": {
+    "src_hash": "4b9980d4ca695198be91b754c6456724",
+    "text": "Znalazłeś torbę, ale nie masz miejsca, aby ją zabrać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:02.768419Z"
+  },
+  "quests.first_dragon.circle_trees": {
+    "src_hash": "21fde76d216da6a6580a184dc6654f83",
+    "text": "Wchodzisz w krąg drzew i kwiatów. Odwiedzając to święte miejsce, zostajesz nasycony mocą natury i roślin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:02.768990Z"
+  },
+  "quests.first_dragon.oasis": {
+    "src_hash": "fdc609328c42192493089239ebaeef98",
+    "text": "Wchodzisz do pięknej oazy. Odwiedzając to święte miejsce, zostajesz napełniony mocą wody ożywiającej pustynię.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:02.769558Z"
+  },
+  "quests.first_dragon.suntower": {
+    "src_hash": "8ddfbb42d82b5fb668796bec61969f55",
+    "text": "Wszedłeś do słonecznej wieży Ab'dendriela. Odwiedzając to święte miejsce, zostajesz napełniony mocą życiodajnego słońca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:02.770185Z"
+  },
+  "quests.forgotten_knowledge.diamond_entities": {
+    "src_hash": "03a761850a7fd9fcd58c8fa2724f8dc0",
+    "text": "5 diamentowych bytów zużywa zbyt dużo surowej energii, aby kosmiczna komora mogła się obudzić. Za 10 minut zostanie ona ponownie uśpiona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:02.770816Z"
+  },
+  "quests.forgotten_knowledge.golden_entities": {
+    "src_hash": "283b3f9291af327714771b625dd51c2b",
+    "text": "5 złotych istot zużywa zbyt dużo surowej energii, aby kosmiczna komnata mogła się obudzić. Za 10 minut zostanie ona ponownie zatrzymana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:05.258541Z"
   }
 }

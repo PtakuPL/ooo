@@ -1091,93 +1091,58 @@ function addTabText(text, speaktype, tab, creatureName)
 
     label.highlightInfo = {}
 
-    -- Overlay for consoleBuffer which shows highlighted words only
+    -- NPC keyword highlighting: use setColoredText for inline coloring (no phantom overlay)
 
     if speaktype.npcChat and
         (g_game.getCharacterName() ~= creatureName or g_game.getCharacterName() == 'Account Manager') then
         local highlightData = getHighlightedText(text)
         if #highlightData > 0 then
-            local labelHighlight = g_ui.createWidget('ConsolePhantomLabel', label)
-            labelHighlight:fill('parent')
+            local npcColor = speaktype.color or '#5FF7F7'
+            local keywordColor = '#1f9ffe'
 
-            labelHighlight:setId('consoleLabelHighlight' .. consoleBuffer:getChildCount())
-            labelHighlight:setColor('#1f9ffe')
+            -- Build colored text and strip braces, track keyword positions for click handling
+            local coloredResult = ''
+            local plainText = ''
+            local lastPos = 1
+            local bracesRemoved = 0
 
-            -- Remove the curly braces
             for i = 1, #highlightData / 3 do
-                local dataBlock = {
-                    _start = highlightData[(i - 1) * 3 + 1],
-                    _end = highlightData[(i - 1) * 3 + 2],
-                    words = highlightData[(i - 1) * 3 + 3]
-                }
-                text = text:gsub('%{(.-)%}', dataBlock.words, 1)
+                local origStart = highlightData[(i - 1) * 3 + 1]
+                local origEnd = highlightData[(i - 1) * 3 + 2]
+                local keyword = highlightData[(i - 1) * 3 + 3]
 
-                -- Recalculate positions as braces are removed
-                highlightData[(i - 1) * 3 + 1] = dataBlock._start - ((i - 1) * 2)
-                highlightData[(i - 1) * 3 + 2] = dataBlock._end - (1 + (i - 1) * 2)
-            end
-            label:setText(text)
-
-            -- Calculate the positions of the highlighted text and fill with string.char(127) [Width: 1]
-            -- UTF-8 aware: skip continuation bytes and use average width for multi-byte chars
-            local drawText = label:getDrawText()
-            local tmpText = ''
-            for i = 1, #highlightData / 3 do
-                local dataBlock = {
-                    _start = highlightData[(i - 1) * 3 + 1],
-                    _end = highlightData[(i - 1) * 3 + 2],
-                    words = highlightData[(i - 1) * 3 + 3]
-                }
-                local lastBlockEnd = (highlightData[(i - 2) * 3 + 2] or 1)
-
-                for i = dataBlock._start, dataBlock._end do
-                    label.highlightInfo[i] = dataBlock.words
+                -- Text before this keyword (excluding the opening brace)
+                local beforeText = text:sub(lastPos, origStart - 1)
+                if #beforeText > 0 then
+                    -- Escape any braces/commas in normal text for setColoredText format
+                    coloredResult = coloredResult .. '{' .. beforeText .. ', ' .. npcColor .. '}'
                 end
+                plainText = plainText .. beforeText
 
-                local letter = lastBlockEnd
-                while letter <= dataBlock._start - 1 do
-                    local tmpChar = string.byte(drawText:sub(letter, letter)) or 0
-                    if tmpChar >= 0x80 and tmpChar < 0xC0 then
-                        -- UTF-8 continuation byte: skip (already accounted for by lead byte)
-                        letter = letter + 1
-                    elseif tmpChar >= 0xC0 then
-                        -- UTF-8 lead byte: use average character width (7px for verdana-11px)
-                        local seqLen = 2
-                        if tmpChar >= 0xF0 then seqLen = 4
-                        elseif tmpChar >= 0xE0 then seqLen = 3 end
-                        tmpText = tmpText .. string.rep(string.char(127), 7)
-                        letter = letter + seqLen
-                    else
-                        -- ASCII byte: use letterWidth table
-                        local fillChar = (tmpChar == 10 or tmpChar == 32) and string.char(tmpChar) or string.char(127)
-                        tmpText = tmpText .. string.rep(fillChar, letterWidth[tmpChar] or 7)
-                        letter = letter + 1
-                    end
+                -- The keyword itself in blue
+                coloredResult = coloredResult .. '{' .. keyword .. ', ' .. keywordColor .. '}'
+
+                -- Track keyword positions in the plain text (without braces) for click detection
+                local kwStart = #plainText + 1
+                local kwEnd = kwStart + #keyword - 1
+                for pos = kwStart, kwEnd do
+                    label.highlightInfo[pos] = keyword
                 end
-                tmpText = tmpText .. dataBlock.words
+                plainText = plainText .. keyword
+
+                -- Move past the closing brace
+                lastPos = origEnd + 1
             end
 
-            -- Fill the highlight label to the same size as default label
-            local finalBlockEnd = (highlightData[(#highlightData / 3 - 1) * 3 + 2] or 1)
-            local letter = finalBlockEnd
-            while letter <= drawText:len() do
-                local tmpChar = string.byte(drawText:sub(letter, letter)) or 0
-                if tmpChar >= 0x80 and tmpChar < 0xC0 then
-                    letter = letter + 1
-                elseif tmpChar >= 0xC0 then
-                    local seqLen = 2
-                    if tmpChar >= 0xF0 then seqLen = 4
-                    elseif tmpChar >= 0xE0 then seqLen = 3 end
-                    tmpText = tmpText .. string.rep(string.char(127), 7)
-                    letter = letter + seqLen
-                else
-                    local fillChar = (tmpChar == 10 or tmpChar == 32) and string.char(tmpChar) or string.char(127)
-                    tmpText = tmpText .. string.rep(fillChar, letterWidth[tmpChar] or 7)
-                    letter = letter + 1
-                end
+            -- Remaining text after last keyword
+            local afterText = text:sub(lastPos)
+            if #afterText > 0 then
+                coloredResult = coloredResult .. '{' .. afterText .. ', ' .. npcColor .. '}'
             end
 
-            labelHighlight:setText(tmpText)
+            label:setColoredText(coloredResult)
+            -- Update text variable (strip braces) for right-click menu / copy
+            text = text:gsub('%{(.-)%}', '%1')
         end
     end
 

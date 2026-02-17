@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T07:53:10.940070Z",
-  "cycle": 355,
-  "language": "es",
-  "json_file": "html.json",
+  "timestamp": "2026-02-17T07:55:04.536390Z",
+  "cycle": 356,
+  "language": "ru",
+  "json_file": "scripts.json",
   "translated": 50,
   "placeholders": 0,
   "guard_fail": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 420
+  "strict_skipped_done": 228
 }

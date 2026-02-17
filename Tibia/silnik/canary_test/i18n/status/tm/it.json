@@ -9193,11 +9193,11 @@
   },
   "scripts.actions_mission3_chest.msg_2": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.866814Z"
+    "updated_at": "2026-02-17T07:54:48.010686Z"
   },
   "scripts.actions_mono_detector_strange_probing_device.msg_1": {
     "src_hash": "7302b053c0f22e53182c9674c7530e39",
@@ -58014,5 +58014,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:48:09.233594Z"
+  },
+  "scripts.actions_magicalPaint.msg_1": {
+    "src_hash": "f895fc31c4c101ca64377c59aea81108",
+    "text": "Dipingi attentamente l'immagine. Mentre lo fai, il dipinto piatto si approfondisce. Ora sembra una stanza in cui puoi entrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:15.191228Z"
+  },
+  "scripts.actions_magicalPaint.msg_2": {
+    "src_hash": "43ea929b13e66da7b49c83f9670973a2",
+    "text": "Questo non è più un dipinto normale. Usando la vernice magica lo hai trasformato in un portale e puoi oltrepassarlo facilmente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:15.191926Z"
+  },
+  "scripts.actions_magical_device.say_1": {
+    "src_hash": "984ee72f67b6223829be203a5e6cbae9",
+    "text": "Quando apri il dispositivo, una luce brillante fuoriesce dal suo interno e trascina al suo interno tutta l'energia rimanente del cacciatore notturno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:15.192506Z"
+  },
+  "scripts.actions_magical_device.say_2": {
+    "src_hash": "68b6485e08c181e70a5122698ef79490",
+    "text": "Quando apri il dispositivo, una luce brillante fuoriesce dal suo interno e trascina al suo interno tutta l'energia rimanente del mangiatore di anime.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:15.193124Z"
+  },
+  "scripts.actions_magical_device.say_3": {
+    "src_hash": "fcc3321a23474015d8e5e8cee39f3625",
+    "text": "Quando apri il dispositivo, una luce brillante fuoriesce dal suo interno e trascina al suo interno tutta l'energia rimanente del fantasma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:23.205723Z"
+  },
+  "scripts.actions_magical_device.say_4": {
+    "src_hash": "2e5318b4d48c0c6bf446611812a05ea8",
+    "text": "Hai utilizzato oggetti nella lapide.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:23.206204Z"
+  },
+  "scripts.actions_magical_device.say_5": {
+    "src_hash": "f82653d1aff74d63250a446bac0cea89",
+    "text": "Da ogni fessura della vecchia lapide fuoriesce una sostanza incredibilmente viscida. Sembra che ti attacchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:23.206666Z"
+  },
+  "scripts.actions_magnifier.msg_1": {
+    "src_hash": "babb8f6619bceca2d20d80e35dbedf4e",
+    "text": "Niente di speciale. Questa foto sembra autentica.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:23.207029Z"
+  },
+  "scripts.actions_magnifier.msg_2": {
+    "src_hash": "b5d561af2c0da7158e0a87633ace58c1",
+    "text": "Questo è tutto. Sembra che sia stato dipinto da un bambino!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:23.207412Z"
+  },
+  "scripts.actions_matrix.say_1": {
+    "src_hash": "16ab3fd4a5717284b0a1a436340f28c9",
+    "text": "La macchina è stata attivata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:29.345301Z"
+  },
+  "scripts.actions_mechanism.msg_1": {
+    "src_hash": "50fefff6df347aefc566142681046383",
+    "text": "Il meccanismo del cancello non si muoverà. Probabilmente dovrai trovare un modo per aggirare il problema finché non capirai come far funzionare il cancello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:29.345947Z"
+  },
+  "scripts.actions_misguided.msg_1": {
+    "src_hash": "213142cf1bfe9d48b7002860d1b169c7",
+    "text": "Paralizzi il bullo e l'amuleto rivela il vero volto della creatura dietro il possesso di questa creatura fuorviata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:29.346510Z"
+  },
+  "scripts.actions_mission01_crate.say_1": {
+    "src_hash": "c37664172dab3dbac44205eba2dab1f1",
+    "text": "Rimuovi la parte superiore e ti metti addosso la cassa. All'interno è soffocante e non si vede quasi nulla guardando fuori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:29.347100Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_1": {
+    "src_hash": "98b11f900cd0f3c67bfa48d9f09f6e89",
+    "text": "Quando si immette il carbone nella piscina, il fluido corrotto inizia a dissolversi, lasciando acqua purificata e rinfrescante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:29.347580Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_2": {
+    "src_hash": "281e5f500e2df415cf09403fd34ab2e7",
+    "text": "Riempiendo l'acqua corrotta nella ciotola sacra si purifica completamente il fluido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:37.466568Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_3": {
+    "src_hash": "024db5f29ebf6fe285a87c0a41afeba3",
+    "text": "Rivesti con cura l'interno della ciotola di legno con l'argilla sacra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:37.466983Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_4": {
+    "src_hash": "b3c37ff359f4a55a1baa06bdbda86191",
+    "text": "Mescoli attentamente l'argilla con la terra sacra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:37.467439Z"
+  },
+  "scripts.actions_mission03_the_keeper.say_1": {
+    "src_hash": "8c07639b4e13104061fe7a7a6fd26c20",
+    "text": "La pianta si attorciglia e si dimena ancora più di prima, sembra quasi voglia urlare un grande dolore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:37.467936Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_1": {
+    "src_hash": "d5adfab25c90b1b30dabdb9a1c0dbe3e",
+    "text": "Questo avrebbe dovuto infliggere il colpo mortale alle ambizioni delle cose serpente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:37.468337Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_3": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Lo scettro ti viene quasi strappato di mano mentre scacci la presenza dell'imperatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:41.359101Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_4": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Lo scettro ti viene quasi strappato di mano mentre scacci la presenza dell'imperatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:41.359510Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_5": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Lo scettro ti viene quasi strappato di mano mentre scacci la presenza dell'imperatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:41.359907Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_6": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Lo scettro ti viene quasi strappato di mano mentre scacci la presenza dell'imperatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:41.360338Z"
+  },
+  "scripts.actions_mission12_just_rewards.msg_1": {
+    "src_hash": "b71f332f490d4cf0436dc65fa13cbe22",
+    "text": "Hai trovato dei vestiti nell'armadio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:48.009777Z"
+  },
+  "scripts.actions_mission12_just_rewards.msg_2": {
+    "src_hash": "c2b74d857f2d83d918aa09958fe9dea1",
+    "text": "L'armadio è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:48.010060Z"
+  },
+  "scripts.actions_mission3_chest.msg_1": {
+    "src_hash": "42dd3838d3aa4aa1f0ad19c9a81066ed",
+    "text": "Hai trovato una boccetta di veleno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:48.010382Z"
+  },
+  "scripts.actions_mission3_poison_water.say_1": {
+    "src_hash": "a636973c11a833c204194e7d7d92a1f9",
+    "text": "Il riso è stato avvelenato. Ciò indebolirà notevolmente l'esercito dell'Imperatore. Ritorna e racconta a Zalamon del tuo successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:48.011239Z"
+  },
+  "scripts.actions_mission4_grease_oil.say_1": {
+    "src_hash": "6cc64a1768db7e87acc0887eac7fe4ac",
+    "text": "Dato che sono molto unte, le foglie ora possono essere spostate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:56.519617Z"
+  },
+  "scripts.actions_mission4_levers_puzzle.say_1": {
+    "src_hash": "c7c67b837073c2e99af76983e55f766f",
+    "text": "Dopo uno schiocco, improvvisamente inizia da qualche parte in basso un ronzio profondo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:56.520060Z"
+  },
+  "scripts.actions_mission5_ray_of_light.say_1": {
+    "src_hash": "75ce1d823ffbd7eaef58ed7119346b35",
+    "text": "Un raggio di sole scende dal cielo e colpisce il cristallo. Oh. Ciò probabilmente significa che Fasuon sta supportando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:56.520594Z"
+  },
+  "scripts.actions_mission9_catacombs_lever.say_1": {
+    "src_hash": "d1970dffce18bb4514127a3a44158f60",
+    "text": "Non si muove.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:56.520852Z"
+  },
+  "scripts.actions_mission9_catacombs_lever.say_2": {
+    "src_hash": "c8773405488f3fd287a31345e89a0f0f",
+    "text": "La leva non si muoverà",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:56.521130Z"
+  },
+  "scripts.actions_mission9_catacombs_lever.say_3": {
+    "src_hash": "d1970dffce18bb4514127a3a44158f60",
+    "text": "Non si muove.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:58.928238Z"
+  },
+  "scripts.actions_mysterious_metal_egg.say_1": {
+    "src_hash": "8010185d10dbfd3137ea993e2e372eaa",
+    "text": "Questo uovo di metallo sembra essere bloccato da uno strano meccanismo. Non è ancora giunto il momento di rivelarne il contenuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:54:58.928838Z"
   }
 }

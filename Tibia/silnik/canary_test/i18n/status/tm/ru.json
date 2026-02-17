@@ -35150,5 +35150,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:48:35.447618Z"
+  },
+  "scripts.actions_gnome_chart.msg_5": {
+    "src_hash": "9074c5b87cded213a6b2c0658b28d913",
+    "text": "Вы нанесли на карту расположение и размеры странного сооружения — бастиона.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.130148Z"
+  },
+  "scripts.actions_gnome_chart.msg_6": {
+    "src_hash": "2239381d7c7daedafec02ecae7283a90",
+    "text": "Вы нанесли на карту расположение и размеры странного сооружения — разрушенной башни.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.130727Z"
+  },
+  "scripts.actions_gnome_items.msg_1": {
+    "src_hash": "8f8ae0bbc960b0e7c432304a999b957d",
+    "text": "Вы нашли карты гномов.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.131106Z"
+  },
+  "scripts.actions_gnome_items.msg_2": {
+    "src_hash": "861ab2588f39c57f58d9f463bdc28f4e",
+    "text": "Вы не сможете использовать этот предмет снова.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.131540Z"
+  },
+  "scripts.actions_gnome_items.msg_3": {
+    "src_hash": "c640067d5fadf2d094bbc35f3dd5350f",
+    "text": "Вы нашли тригнометр гнома.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.131926Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_1": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Вы успешно исследовали место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.132650Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_2": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Вы успешно исследовали место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.133060Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_3": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Вы успешно исследовали место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.133476Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_4": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Вы успешно исследовали место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.133870Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_5": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Вы успешно исследовали место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.134690Z"
+  },
+  "scripts.actions_gnomish_chest.msg_1": {
+    "src_hash": "0f05e4f332a3edab0ec548f5a26655fb",
+    "text": "Вы нашли гномьи пестициды.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.135108Z"
+  },
+  "scripts.actions_gnomish_pesticide.msg_1": {
+    "src_hash": "12df7c33b31ae10bbbcffc40c3459b3c",
+    "text": "Этими пестицидами можно нейтрализовать только полуразложившиеся трупы лютобрюхов.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.135922Z"
+  },
+  "scripts.actions_iksupan_entrance.msg_1": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Для входа вам нужен минимум 150 уровень.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.137735Z"
+  },
+  "scripts.actions_last_object.msg_1": {
+    "src_hash": "ddd6237398c160652e46293ac818e5b9",
+    "text": "Странный символ на стене сзади яростно светится.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.138885Z"
+  },
+  "scripts.actions_last_object.msg_2": {
+    "src_hash": "e383abcb644bc07342757f906ebda41b",
+    "text": "Культовый объект просто тихо лежит. Опасная зона вокруг него практически исчезла.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.139452Z"
+  },
+  "scripts.actions_last_object.msg_3": {
+    "src_hash": "67e4e841e7632d46dcfdc852092449f5",
+    "text": "Когда вы протягиваете руку, чтобы прикоснуться к культовому объекту, из черепа вырывается волна энергии. Вы изгнали его силу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.140280Z"
+  },
+  "scripts.actions_lever.msg_1": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "Вам нужно подождать несколько минут, чтобы использовать снова.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:55:03.140836Z"
   }
 }

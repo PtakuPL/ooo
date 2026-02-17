@@ -173958,5 +173958,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:05:53.323989Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L112.1156": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:36:24.042279Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L113.1157": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:36:24.042610Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L102.1514": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добродошли на брод, |PLAYERNAME|. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:36:24.043232Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L103.1515": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:36:24.043768Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L104.1516": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:36:24.044199Z"
   }
 }

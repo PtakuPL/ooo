@@ -23406,5 +23406,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:13:34.674551Z"
+  },
+  "cpp.augment.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "Лечение",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.764539Z"
+  },
+  "cpp.badge.name_10": {
+    "src_hash": "3bcf13a179ce88693b131c2a06cee98f",
+    "text": "Игрок мирового уровня (Grade 2)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.765888Z"
+  },
+  "cpp.badge.name_11": {
+    "src_hash": "f3f20eb4a38b586035729259f702f3b2",
+    "text": "Игрок мирового уровня (Grade 3)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.766928Z"
+  },
+  "cpp.badge.name_9": {
+    "src_hash": "574951c030bb79855ca9d28cbd1f0292",
+    "text": "Игрок мирового уровня (Grade 1)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.768933Z"
+  },
+  "cpp.cancel.cannot_stow_containers": {
+    "src_hash": "23ec243ea08a453aad40ff7b90c9deff",
+    "text": "Нельзя складывать контейнеры в stash.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.771349Z"
+  },
+  "cpp.cancel.cannot_stow_here": {
+    "src_hash": "7dda5876a5bbf91b1226ed3e79e7d2ed",
+    "text": "Этот предмет нельзя здесь поместить в stash.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.772417Z"
+  },
+  "cpp.cancel.construct_inside_house": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Вы можете построить это только внутри дома.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.772869Z"
+  },
+  "cpp.cancel.no_stowable_items": {
+    "src_hash": "74946aee5588f5c90c64011260dfbbbd",
+    "text": "В этом контейнере нет предметов, которые можно поместить в stash.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.774724Z"
+  },
+  "cpp.combat.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "Лечение",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.784199Z"
+  },
+  "cpp.game.highscore_category_distance": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Дальний бой",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.791288Z"
+  },
+  "cpp.game.highscore_category_fishing": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Рыбалка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.791623Z"
+  },
+  "cpp.game.highscore_category_fist": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Кулачный бой",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.792044Z"
+  },
+  "cpp.game.highscore_category_magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Уровень магии",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.792327Z"
+  },
+  "cpp.inspect.damage_reflection": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Отражение урона",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.802604Z"
+  },
+  "cpp.inspect.description": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Описание",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.803038Z"
+  },
+  "cpp.inspect.magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Уровень магии",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.805045Z"
+  },
+  "cpp.inspect.magic_shield_capacity": {
+    "src_hash": "453b284354c516de31dff38fa5082a17",
+    "text": "Вместимость магического щита",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.805569Z"
+  },
+  "cpp.look.damage_reflection": {
+    "src_hash": "84795283af9b7d27169669991ccc1b97",
+    "text": "Отражение урона",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.812459Z"
+  },
+  "cpp.look.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "Лечение",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.814152Z"
+  },
+  "cpp.look.magic_level_label": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Уровень магии",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.816163Z"
+  },
+  "cpp.look.magic_shield_capacity": {
+    "src_hash": "6d9ec240fe3d70164f1ca05641d8962d",
+    "text": "Вместимость магического щита",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.816569Z"
+  },
+  "cpp.player.imbuement_error": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "Произошла ошибка, пожалуйста, откройте окно имбуинга заново.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.826648Z"
+  },
+  "cpp.player.using_from_stash": {
+    "src_hash": "443b383ba87e84e3cd8b3f76aa0e6bbd",
+    "text": "Используется {0}x {1} из вашего тайника. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.832141Z"
+  },
+  "cpp.returnvalue.no_party_members_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "В радиусе действия нет членов партии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.841915Z"
+  },
+  "cpp.returnvalue.not_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Вам не хватает уровня.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.843692Z"
+  },
+  "cpp.returnvalue.not_enough_room": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Недостаточно места.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.844111Z"
+  },
+  "cpp.returnvalue.you_are_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Вы измотаны.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.847313Z"
+  },
+  "cpp.returnvalue.you_are_not_the_owner": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Вы не владелец.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.847636Z"
+  },
+  "cpp.skill.axe_fighting": {
+    "src_hash": "4d456bf80e0cd0f0d577679305cf9dcd",
+    "text": "Топоры",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.850217Z"
+  },
+  "cpp.skill.club_fighting": {
+    "src_hash": "4971b192456644c3c00832fdee31fb70",
+    "text": "Дубины",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.850490Z"
+  },
+  "cpp.skill.distance_fighting": {
+    "src_hash": "72404e1394a3b62cdc765bb8ff5bbbbf",
+    "text": "Дальний бой",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.851194Z"
+  },
+  "cpp.skill.fishing": {
+    "src_hash": "819a07afa4abc8660ec9042038a8c597",
+    "text": "Рыбалка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.851499Z"
+  },
+  "cpp.skill.fist_fighting": {
+    "src_hash": "b390c8df81c64a60c1ccceeb8b9ab972",
+    "text": "Кулачный бой",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.851798Z"
+  },
+  "cpp.skill.life_leech": {
+    "src_hash": "97fc5964d16b23bd6957af679027ecb7",
+    "text": "Похищение жизни",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.852320Z"
+  },
+  "cpp.skill.life_leech_chance": {
+    "src_hash": "69968e2833a3b05acc974aaaf87b080c",
+    "text": "Шанс похищения жизни",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.852750Z"
+  },
+  "cpp.skill.magic_level": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Уровень магии",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.853031Z"
+  },
+  "cpp.title.name_37": {
+    "src_hash": "3a6270ea8ec1341b2cb7d0c8f671e107",
+    "text": "Смерть снизу",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.867263Z"
+  },
+  "cpp.title.name_4": {
+    "src_hash": "ce517784be60f2d331da9fb7f48f256c",
+    "text": "Покоритель зверей (Grade 1)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.868625Z"
+  },
+  "cpp.title.name_41": {
+    "src_hash": "e0623786548dad8a5760dcf4d06c18c1",
+    "text": "Истребитель",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.868942Z"
+  },
+  "cpp.title.name_5": {
+    "src_hash": "ce69ca8a9db765adef489fbae7302f2a",
+    "text": "Покоритель зверей (Grade 2)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.872249Z"
+  },
+  "cpp.title.name_6": {
+    "src_hash": "81b4fece48779682e75c85708b962aff",
+    "text": "Покоритель зверей (Grade 3)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.875079Z"
+  },
+  "cpp.title.name_7": {
+    "src_hash": "0f69713f088c361c9d20c6a8cbfdd7ea",
+    "text": "Покоритель зверей (Grade 4)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.876892Z"
+  },
+  "cpp.title.name_8": {
+    "src_hash": "e739f3992fa9f44d9e4f9c1170abbc25",
+    "text": "Покоритель зверей (Grade 5)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.878941Z"
+  },
+  "cpp.vocation.id_2": {
+    "src_hash": "e7b1c3af3203c42e8a5450beb229c09e",
+    "text": "Друид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.883594Z"
+  },
+  "cpp.vocation.id_5": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Мастер чародей",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.884333Z"
+  },
+  "cpp.vocation.id_6": {
+    "src_hash": "ea509087aaebf40e2073004398e89c16",
+    "text": "Старший друид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.884711Z"
+  },
+  "cpp.vocation.id_8": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Элитный рыцарь",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:14.885435Z"
+  },
+  "cpp.augment.augments_label": {
+    "src_hash": "3bf857eb851edbb5d0122a2f56c2c08e",
+    "text": "\nДополнения: ({0}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:17.149758Z"
+  },
+  "cpp.augment.format_base": {
+    "src_hash": "dc54bea4632ace9fb160b037fea86598",
+    "text": "{0} -> {1:+}% {2} {3}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:17.150741Z"
+  },
+  "cpp.augment.format_cooldown": {
+    "src_hash": "544be79d302efbc5f8613ef088309d6b",
+    "text": "{0} -> {1}{2}s {3}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:17.151046Z"
   }
 }

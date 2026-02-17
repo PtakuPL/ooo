@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T01:11:59.393748Z",
+  "timestamp": "2026-02-17T01:15:24.648001Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,7 +67,7 @@
   ],
   "entries_total": 711,
   "entries_by_lang": {
-    "es": 298,
+    "es": 300,
     "pl": 214,
     "cs": 641,
     "de": 659,
@@ -77,7 +77,7 @@
     "nl": 691,
     "pt": 620,
     "ro": 504,
-    "ru": 121,
+    "ru": 115,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -184,7 +184,7 @@
     {
       "lang": "es",
       "json_file": "cpp.json",
-      "identical_to_en": 2,
+      "identical_to_en": 4,
       "domain_priority": 9
     },
     {
@@ -982,7 +982,7 @@
     {
       "lang": "ru",
       "json_file": "cpp.json",
-      "identical_to_en": 14,
+      "identical_to_en": 8,
       "domain_priority": 9
     },
     {

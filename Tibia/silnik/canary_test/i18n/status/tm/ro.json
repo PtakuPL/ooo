@@ -27374,5 +27374,237 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:09:51.697673Z"
+  },
+  "questlog.quest_10.mission_5.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Cere-i lui Palimuth misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.548819Z"
+  },
+  "questlog.quest_10.mission_6.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Cere-i lui Palimuth misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.549629Z"
+  },
+  "questlog.quest_10.mission_7.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Cere-i lui Palimuth misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.550258Z"
+  },
+  "questlog.quest_10.mission_8.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Cere-i lui Palimuth misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.550884Z"
+  },
+  "questlog.quest_31.mission_1.state_4": {
+    "src_hash": "0ef4d7f94a08900604a4beeee409741f",
+    "text": "Ai finalizat misiunea!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.600846Z"
+  },
+  "questlog.quest_31.mission_12.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ai finalizat misiunea!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.602230Z"
+  },
+  "questlog.quest_31.mission_4.state_6": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ai finalizat misiunea!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.604256Z"
+  },
+  "questlog.quest_31.mission_5.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ai finalizat misiunea!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:13:55.604846Z"
+  },
+  "questlog.quest_10.mission_4.state_2": {
+    "src_hash": "73dca76c968e0da6c4e9b731c7c600d9",
+    "text": "Pentru această misiune vi se cere să mergeți la Cartierul Comerțului și să negociați sau să-l amenințați pe domnul West. Încă o dată vei avea acces la mecanism, deși dacă alegi să-l ajuți pe Palimuth ar trebui să treci prin canalizare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:04.681806Z"
+  },
+  "questlog.quest_10.mission_4.state_3": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Ai decis să-l ajuți pe Palimuth, să-i raportezi misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:04.682474Z"
+  },
+  "questlog.quest_10.mission_4.state_4": {
+    "src_hash": "9fe5da3c0f71c8a09af85510534c8ba9",
+    "text": "Ai decis să-l ajuți pe Azerus, să-i raportezi misiunea ta. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:04.683278Z"
+  },
+  "questlog.quest_10.mission_4.state_5": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Întoarce-te la Azerus și raportează-i misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:11.434806Z"
+  },
+  "questlog.quest_10.mission_4.state_6": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Cere Azerus o misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:11.435251Z"
+  },
+  "questlog.quest_10.mission_5.state_2": {
+    "src_hash": "2b3b293eb63c29ebf8c014c7b6971b72",
+    "text": "În această misiune vi se cere să găsiți un druid pe nume Tamerin, în Cartierul Arena. Acum aveți permisiunea de a utiliza mecanismul porților.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:11.436001Z"
+  },
+  "questlog.quest_10.mission_5.state_4": {
+    "src_hash": "739c0509ff0989bf4f80c0f630a78c52",
+    "text": "acum trebuie să-l ucizi pe Morik Gladiatorul și să-i aduci casca lui Tamerin ca dovadă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:16.364381Z"
+  },
+  "questlog.quest_10.mission_5.state_5": {
+    "src_hash": "393997f8fae41e4e5ae2b8e9a55ebb73",
+    "text": "Raportați-i lui Tamerin, deoarece el vă va asculta cererea și acum puteți face alegerea dvs.: Bovine pentru Palimuth (partea bună), Warbeasts pentru Yalahari (Azerus) (partea rea). Apoi raportează-l pe cel pe care ți-ai decis misiunea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:16.365333Z"
+  },
+  "questlog.quest_10.mission_5.state_6": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Ai decis să-l ajuți pe Palimuth, să-i raportezi misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:16.365744Z"
+  },
+  "questlog.quest_10.mission_5.state_7": {
+    "src_hash": "4958a0cafba75b54582d823362abf797",
+    "text": "Ai decis să-l ajuți pe Azerus, să-i raportezi misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:16.366255Z"
+  },
+  "questlog.quest_10.mission_5.state_8": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Cere Azerus o misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:16.366649Z"
+  },
+  "questlog.quest_10.mission_6.state_2": {
+    "src_hash": "091357b2dd39db47864e2b36201e4ed6",
+    "text": "Yalahari (Azerus) vă ordonă să călătoriți în Cartierul Cimitirului și să găsiți Sculptura Ciudată. El vă oferă un farmec Fantomă și vă spune să îl încărcați cu sufletele chinuite ale fantomelor de acolo pentru a fi folosit ca sursă de energie. Palimuth vrea farmecul fantomă încărcată pentru a elibera acele suflete. Puteți folosi acum mecanismul Cartierul cimitirului. Mergeți la clădirea mare din Cartierul Cimitirului și folosiți farmecul fantomă pe Sculptura ciudată din spatele camerei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:21.231698Z"
+  },
+  "questlog.quest_10.mission_6.state_3": {
+    "src_hash": "23cf4798636fbc19425b77e1f719de58",
+    "text": "Partea bună: Du-te la Palimuth, întreabă-l despre misiunea ta și predă farmecul. Partea proastă: Întreabă despre misiunea ta în Yalahari (Azerus) și dă-o înapoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:21.232423Z"
+  },
+  "questlog.quest_10.mission_6.state_4": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Întoarce-te la Azerus și raportează-i misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:21.232888Z"
+  },
+  "questlog.quest_10.mission_6.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Cere Azerus o misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:21.233259Z"
+  },
+  "questlog.quest_10.mission_7.state_2": {
+    "src_hash": "fe0e78cb6a40e222fca587bcc5dbc1b1",
+    "text": "Partea proastă: Yalahari (Azerus) te va trimite într-o nouă misiune pentru a merge în Sunken Quarter și a-i ucide pe liderii Quara, Inky, Splasher și Sharptooth. Partea bună: în loc să te lupți cu liderii Quara, Palimuth te va trimite în schimb să găsești cauza comportamentului agresiv Quaras. Găsiți-o pe Maritima și vorbiți cu ea despre Quara și ea vă va explica care este problema lor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:26.935272Z"
+  },
+  "questlog.quest_10.mission_7.state_3": {
+    "src_hash": "1e4fdc659915eb097d93e598dad3f11f",
+    "text": "Întoarce-te la Palimuth și raportează-i misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:26.935689Z"
+  },
+  "questlog.quest_10.mission_7.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Cere Azerus o misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:26.936148Z"
+  },
+  "questlog.quest_10.mission_8.state_2": {
+    "src_hash": "c70c7412146125f78bd718a987376cdd",
+    "text": "Partea proastă: pentru această misiune, Yalahari vă cere să mergeți în Cartierul fabricii și să găsiți un cristal model, care va fi folosit pentru a furniza arme pentru a ajuta la preluarea controlului orașului. Partea bună: Palimuth te va trimite acolo să folosești cristalul pentru a furniza hrană pentru oraș.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:30.602222Z"
+  },
+  "questlog.quest_10.mission_8.state_3": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Întoarce-te la Azerus și raportează-i misiunea ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:30.602855Z"
+  },
+  "questlog.quest_10.mission_8.state_4": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Cere Azerus o misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:30.603235Z"
   }
 }

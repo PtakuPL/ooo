@@ -1,6 +1,6 @@
 {
-  "file": "npc.json",
-  "lang": "es",
+  "file": "cpp.json",
+  "lang": "ru",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -14,9 +14,9 @@
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 97.2,
-      "total_keys": 13769,
-      "real_translations": 13387
+      "coverage_pct": 100.0,
+      "total_keys": 879,
+      "real_translations": 879
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-17T01:15:33.109470Z"
+  "timestamp": "2026-02-17T01:15:17.194532Z"
 }

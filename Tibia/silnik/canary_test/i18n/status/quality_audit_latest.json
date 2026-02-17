@@ -1,18 +1,25 @@
 {
-  "timestamp": "2026-02-17T01:13:35.715243Z",
+  "timestamp": "2026-02-17T01:15:34.969186Z",
   "checked_entries": 100,
-  "issues_found": 20,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en_exempt": 15,
+    "identical_to_en_exempt": 11,
+    "identical_to_en": 1,
     "artifact_token": 7,
-    "identical_to_en": 13,
-    "suspicious_log_high": 119,
-    "suspicious_log_low": 26,
-    "suspicious_log_critical": 55,
+    "suspicious_log_high": 110,
+    "suspicious_log_low": 43,
+    "suspicious_log_critical": 47,
     "suspicious_rejected_critical": 172,
     "suspicious_rejected_high": 28
   },
   "issues": [
+    {
+      "key": "cpp.augment.format_cooldown",
+      "lang": "ru",
+      "type": "identical_to_en",
+      "en": "{0} -> {1}{2}s {3}",
+      "translated": "{0} -> {1}{2}s {3}"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -61,99 +68,8 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "cpp.augment.format_cooldown",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "{0} -> {1}{2}s {3}",
-      "translated": "{0} -> {1}{2}s {3}"
-    },
-    {
-      "key": "otclient_modules.house.tr_43",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "No",
-      "translated": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_49",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "No",
-      "translated": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_55",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "No",
-      "translated": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_61",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "No",
-      "translated": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_67",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_70",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_73",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_76",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_79",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_82",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_85",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
-    {
-      "key": "otclient_modules.house.tr_88",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

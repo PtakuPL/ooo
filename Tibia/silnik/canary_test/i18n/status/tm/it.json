@@ -33918,5 +33918,245 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:12:45.217624Z"
+  },
+  "questlog.quest_10.mission_5.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Chiedi a Palimuth per la missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.153049Z"
+  },
+  "questlog.quest_10.mission_6.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Chiedi a Palimuth per la missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.153999Z"
+  },
+  "questlog.quest_10.mission_7.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Chiedi a Palimuth per la missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.154814Z"
+  },
+  "questlog.quest_10.mission_8.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Chiedi a Palimuth per la missione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.155514Z"
+  },
+  "questlog.quest_31.mission_1.state_4": {
+    "src_hash": "0ef4d7f94a08900604a4beeee409741f",
+    "text": "Hai completato la missione!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.217493Z"
+  },
+  "questlog.quest_31.mission_12.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Hai completato la missione!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.219207Z"
+  },
+  "questlog.quest_31.mission_4.state_6": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Hai completato la missione!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.221562Z"
+  },
+  "questlog.quest_31.mission_5.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Hai completato la missione!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:34.222305Z"
+  },
+  "questlog.quest_10.mission_4.state_2": {
+    "src_hash": "73dca76c968e0da6c4e9b731c7c600d9",
+    "text": "Per questa missione ti verrà chiesto di andare al quartiere commerciale e negoziare o minacciare il signor West. Ancora una volta avrai accesso al meccanismo, anche se se scegli di aiutare Palimuth dovresti passare attraverso le fogne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:44.538328Z"
+  },
+  "questlog.quest_10.mission_4.state_3": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Hai deciso di aiutare Palimuth, riferiscigli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:44.538693Z"
+  },
+  "questlog.quest_10.mission_4.state_4": {
+    "src_hash": "9fe5da3c0f71c8a09af85510534c8ba9",
+    "text": "Hai deciso di aiutare Azerus, segnalagli la tua missione. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:44.539281Z"
+  },
+  "questlog.quest_10.mission_4.state_5": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Torna da Azerus e riferiscigli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:51.374475Z"
+  },
+  "questlog.quest_10.mission_4.state_6": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Chiedi a Azerus una missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:51.374893Z"
+  },
+  "questlog.quest_10.mission_5.state_2": {
+    "src_hash": "2b3b293eb63c29ebf8c014c7b6971b72",
+    "text": "In questa missione ti verrà chiesto di trovare un druido di nome Tamerin, nel quartiere dell'Arena. Ora hai il permesso di utilizzare il meccanismo dei cancelli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:51.375605Z"
+  },
+  "questlog.quest_10.mission_5.state_4": {
+    "src_hash": "739c0509ff0989bf4f80c0f630a78c52",
+    "text": "ora devi uccidere Morik il Gladiatore e portare il suo elmo a Tamerin come prova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:56.441548Z"
+  },
+  "questlog.quest_10.mission_5.state_5": {
+    "src_hash": "393997f8fae41e4e5ae2b8e9a55ebb73",
+    "text": "Fai rapporto a Tamerin perché ascolterà la tua richiesta e ora potrai fare la tua scelta: Cattle for Palimuth (lato buono), Warbeasts per Yalahari (Azerus) (lato cattivo). Poi segnala quello con cui hai deciso la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:56.442432Z"
+  },
+  "questlog.quest_10.mission_5.state_6": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Hai deciso di aiutare Palimuth, riferiscigli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:56.442799Z"
+  },
+  "questlog.quest_10.mission_5.state_7": {
+    "src_hash": "4958a0cafba75b54582d823362abf797",
+    "text": "Hai deciso di aiutare Azerus, segnalagli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:56.443239Z"
+  },
+  "questlog.quest_10.mission_5.state_8": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Chiedi a Azerus una missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:14:56.443717Z"
+  },
+  "questlog.quest_10.mission_6.state_2": {
+    "src_hash": "091357b2dd39db47864e2b36201e4ed6",
+    "text": "Yalahari (Azerus) ti ordina di recarti nel quartiere del cimitero e trovare la strana scultura. Ti dà un Ghost Charm e ti dice di caricarlo con le anime tormentate dei fantasmi lì da usare come fonte di energia. Palimuth vuole l'Incanto del Fantasma Caricato per liberare quelle anime. Ora puoi utilizzare nuovamente il meccanismo del quartiere del cimitero. Vai al grande edificio nel quartiere del cimitero e usa il fascino del fantasma sulla strana scultura in fondo alla stanza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:01.316364Z"
+  },
+  "questlog.quest_10.mission_6.state_3": {
+    "src_hash": "23cf4798636fbc19425b77e1f719de58",
+    "text": "Lato positivo: vai da Palimuth, chiedigli della tua missione e consegnagli l'amuleto. Lato negativo: chiedi della tua missione a Yalahari (Azerus) e restituiscilo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:01.316973Z"
+  },
+  "questlog.quest_10.mission_6.state_4": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Torna da Azerus e riferiscigli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:01.317464Z"
+  },
+  "questlog.quest_10.mission_6.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Chiedi a Azerus una missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:01.317885Z"
+  },
+  "questlog.quest_10.mission_7.state_2": {
+    "src_hash": "fe0e78cb6a40e222fca587bcc5dbc1b1",
+    "text": "Lato negativo: Yalahari (Azerus) ti manderà per una nuova missione per andare nel quartiere sommerso e uccidere i leader Quara, Inky, Splasher e Sharptooth. Lato positivo: invece di combattere i leader Quara, Palimuth ti manderà invece a trovare la causa del comportamento aggressivo di Quaras. Trova Maritima e parlale dei Quara e lei ti spiegherà qual è il loro problema.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:07.702269Z"
+  },
+  "questlog.quest_10.mission_7.state_3": {
+    "src_hash": "1e4fdc659915eb097d93e598dad3f11f",
+    "text": "Torna da Palimuth e riferiscigli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:07.702654Z"
+  },
+  "questlog.quest_10.mission_7.state_4": {
+    "src_hash": "5bcb134294e0fb2885b2a082a25ce966",
+    "text": "Hai ucciso i Quaraboss. Chiedi a Azerus una missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:07.703098Z"
+  },
+  "questlog.quest_10.mission_7.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Chiedi a Azerus una missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:07.703493Z"
+  },
+  "questlog.quest_10.mission_8.state_2": {
+    "src_hash": "c70c7412146125f78bd718a987376cdd",
+    "text": "Lato negativo: per questa missione Yalahari ti richiede di andare nel quartiere della fabbrica e trovare un cristallo modellato, che verrà utilizzato per fornire armi per aiutare a prendere il controllo della città. Lato positivo: Palimuth ti manderà lì per usare il cristallo per fornire cibo alla città.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:11.132897Z"
+  },
+  "questlog.quest_10.mission_8.state_3": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Torna da Azerus e riferiscigli la tua missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:11.133359Z"
+  },
+  "questlog.quest_10.mission_8.state_4": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Chiedi a Azerus una missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:11.133827Z"
   }
 }

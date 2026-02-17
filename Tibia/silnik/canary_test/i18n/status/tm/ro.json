@@ -29246,5 +29246,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:35:30.234036Z"
+  },
+  "data.otservbr.global.npc.dane.L63.1215": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.262215Z"
+  },
+  "data.otservbr.global.npc.frodo.L108.971": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.278393Z"
+  },
+  "data.otservbr.global.npc.frodo.L109.972": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.278803Z"
+  },
+  "data.otservbr.global.npc.valentina.L84.545": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.383455Z"
+  },
+  "data.otservbr.global.npc.valentina.L85.546": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.383863Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L12.1803": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Cheia falsificată descuie ușa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.424954Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L16.1804": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Cheia falsificată descuie ușa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.425332Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L8.1802": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Cheia falsificată descuie ușa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.425721Z"
+  },
+  "data.otservbr.global.scripts.quests.hunter.outfits.quest.action.all.hymn.piano.teleport.L10.2246": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "Nu ai învățat toate versurile imnului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.426158Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L10.1682": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.432966Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.glasshoneyfun.L11.1669": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.434065Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peelerfun.L10.1657": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.434849Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.pickenchanted.L10.1665": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.435326Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissorsfun.L280.1680": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.436265Z"
+  },
+  "data.otservbr.global.scripts.quests.koshei.the.deathless.quest.action.bag.L24.2260": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.437446Z"
+  },
+  "data.otservbr.global.scripts.quests.koshei.the.deathless.quest.action.bag.L26.2261": {
+    "src_hash": "2c586d4717b2579a30746ae8e8b0e491",
+    "text": "Biblioteca este goală.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.437794Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.steal.from.thieves.L16.1925": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.444080Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.action.reward.soul.war.L12.2079": {
+    "src_hash": "8dd6bdad28a27009f617c8b6206a0ba6",
+    "text": "Ai primit deja recompensa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.445269Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.action.reward.soul.war.L17.2080": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Trebuie să învingi Megalomania lui Goshnar pentru a-ți primi recompensa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.445874Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L65.1784": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.449789Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L22.1858": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Toate cântările au fost cântate în ordinea corectă, sunteți considerat demn. Ești transportat departe...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.451245Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.arena.L62.2164": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Ai terminat deja această bătălie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.458755Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.arena.L67.2165": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Arena este deja folosită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.459118Z"
+  },
+  "data.otservbr.global.scripts.quests.wrath.of.the.emperor.actions.mission11.payback.time.lever.L19.1648": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Arena este deja folosită.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.472333Z"
+  },
+  "game.loot.container_not_held": {
+    "src_hash": "9dc7b7ad844f372874fc3cafe8d3723e",
+    "text": "Trebuie să ții containerul pentru a-l seta ca container de pradă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.473190Z"
+  },
+  "game.trade.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.475252Z"
+  },
+  "server.game.msg_14": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Un jucător cu acest nume nu există.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.476203Z"
+  },
+  "server.game.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.476907Z"
+  },
+  "server.ioprey.msg_20": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "A apărut o eroare la procesarea acțiunii dvs. Vă rugăm să încercați să redeschideți fereastra de activitate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.480434Z"
+  },
+  "server.ioprey.msg_21": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "Ai deja un monstru activ în acest slot de vânătoare de sarcini.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.480949Z"
+  },
+  "server.ioprey.msg_23": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Nu vă puteți revendica recompensa pentru sarcină cu un slot de vânătoare de sarcini gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.481499Z"
+  },
+  "src.game.game.L5991.2394": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Un jucător cu acest nume nu există.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:58.487222Z"
+  },
+  "data.otservbr.global.npc.arkulius.L183.893": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "La revedere și te rog stai departe, bine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:42:02.352127Z"
+  },
+  "data.otservbr.global.npc.arkulius.L184.894": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "În sfârșit! Lucrurile bune vin la cei care așteaptă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:42:06.969121Z"
+  },
+  "data.otservbr.global.npc.armenius.L74.643": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Oh, nervii. Du-te la șobolanii care te-au crescut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:42:06.969502Z"
+  },
+  "data.otservbr.global.npc.armenius.L86.644": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ah, un aventurier. Fiți salutați și luați loc. Cum te pot {serve}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:42:06.969965Z"
+  },
+  "data.otservbr.global.npc.aruda.L256.1338": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Sper să ne vedem curând.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:42:06.970343Z"
   }
 }

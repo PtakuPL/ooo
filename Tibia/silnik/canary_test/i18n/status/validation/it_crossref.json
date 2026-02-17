@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 49.9,
+  "coverage_pct": 50.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T09:50:03.989737Z",
+  "checked_at": "2026-02-17T10:18:57.187211Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -2677,6 +2677,15 @@
       "lang": "and"
     },
     {
+      "key": "otclient_modules.boss_slots.tr_5",
+      "category": "otclient_modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slot %d: %s",
+      "pl": "Gniazdo %d: %s",
+      "lang": "Slot %d: %s"
+    },
+    {
       "key": "otclient_modules.character.tr_56",
       "category": "otclient_modules",
       "type": "pl_reference_missing_translation",
@@ -3125,6 +3134,15 @@
       "en": "ON",
       "pl": "NA",
       "lang": "ON"
+    },
+    {
+      "key": "scripts.actions_pyramids2.msg_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<screeeech> <squeak> <squeaaaaal>",
+      "pl": "<skrzyp> <pisk> <przeciągły pisk>",
+      "lang": "<screeeech> <squeak> <squeaaaaal>"
     },
     {
       "key": "scripts.actions_the_shatterer_levers.say_1",
@@ -3719,24 +3737,6 @@
       "en": "Speed: ",
       "pl": "Szybkość: ",
       "lang": "Speed: "
-    },
-    {
-      "key": "scripts.lemon_cupcake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
-    },
-    {
-      "key": "scripts.malofur_explosion.say_4",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BOOOM!",
-      "pl": "BUM!",
-      "lang": "BOOOM!"
     }
   ],
   "length_ratio_issues": [

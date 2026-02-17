@@ -66830,5 +66830,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:15:42.398373Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_5": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:46.239098Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_31": {
+    "src_hash": "7c22426f1e10e5c84aa531d96a13a4e7",
+    "text": "Mostra effetti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:50.164537Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_32": {
+    "src_hash": "bb5d7374c100ddde6e6abc08286e0d43",
+    "text": "Mostra titolo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:50.164739Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_33": {
+    "src_hash": "52641cb6a183e2b6d39d0a9400ecf6be",
+    "text": "Mostra barre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:50.164925Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_34": {
+    "src_hash": "1344cc0fc3601cc763c1c43f6bf5827e",
+    "text": "Mostra shader",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:56.948165Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_35": {
+    "src_hash": "6dd4715ed509e1bc69f64719b112919c",
+    "text": "Mostra Aura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:56.948402Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_36": {
+    "src_hash": "839f3521091409a5007c728edb873b07",
+    "text": "Mostra le ali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:56.948603Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_37": {
+    "src_hash": "0e6f162261a418782dd5c783b852b958",
+    "text": "Mostra familiare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:56.948808Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_38": {
+    "src_hash": "e005e1a5b248061908d76cedcae7d51a",
+    "text": "Mostra Monte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:16:56.948994Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_39": {
+    "src_hash": "a809ca5abdc6e2a638d8fff2a1aae61f",
+    "text": "Mostra vestito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:02.019667Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_4": {
+    "src_hash": "89eeff1be3beb0edc9f5c11efcecdeb4",
+    "text": "Solo mio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:02.019888Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_40": {
+    "src_hash": "2fefd38cae42b54fcbc23fec38c9c9fd",
+    "text": "Mostra piano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:02.020088Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_41": {
+    "src_hash": "31fde7b05ac8952dacf4af8a704074ec",
+    "text": "Anteprima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:02.020266Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_42": {
+    "src_hash": "867ec18b4d8c1e358a025c48e87d1ea3",
+    "text": "Personalizza il personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:02.020499Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_43": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Salva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:04.663447Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_44": {
+    "src_hash": "1971563478a10aa6f03dfcc475015371",
+    "text": "Nome preimpostato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:04.663675Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_6": {
+    "src_hash": "f2a6c498fb90ee345d997f888fce3b18",
+    "text": "Eliminare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:04.663846Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_7": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Salva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:04.664006Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_8": {
+    "src_hash": "904a8304056d77e4547744781b7ceb50",
+    "text": "Rinominare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:04.664165Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_9": {
+    "src_hash": "03c2e7e41ffc181a4e84080b4710e81e",
+    "text": "Nuovo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:06.861642Z"
+  },
+  "otclient_data.init.tr_1": {
+    "src_hash": "4994a8ffeba4ac3140beb89e8d41f174",
+    "text": "Lingua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:06.861866Z"
+  },
+  "otclient_data.init.tr_2": {
+    "src_hash": "4994a8ffeba4ac3140beb89e8d41f174",
+    "text": "Lingua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:17:06.862044Z"
   }
 }

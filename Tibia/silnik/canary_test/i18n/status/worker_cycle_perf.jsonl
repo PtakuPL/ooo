@@ -8133,3 +8133,7 @@
 {"timestamp": "2026-02-17T10:14:46.033305Z", "cycle": 435, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 1808, "detail": "count=talkactions.json"}
 {"timestamp": "2026-02-17T10:16:20.025961Z", "cycle": 435, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 93849, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T10:16:27.520648Z", "cycle": 435, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 6396, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T10:16:39.024977Z", "cycle": 435, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "cycle_total", "duration_ms": 114988, "detail": "delay=4"}
+{"timestamp": "2026-02-17T10:16:43.753561Z", "cycle": 436, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 479, "detail": "count=otclient_data.json"}
+{"timestamp": "2026-02-17T10:20:06.572405Z", "cycle": 436, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 202688, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T10:20:12.913601Z", "cycle": 436, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 6117, "detail": "throttle_every=1"}

@@ -1,24 +1,43 @@
 {
-  "timestamp": "2026-02-17T10:16:20.883806Z",
+  "timestamp": "2026-02-17T10:17:55.865447Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 20,
   "issues_by_type": {
-    "identical_to_en": 1,
-    "identical_to_en_exempt": 3,
-    "artifact_token": 16,
-    "suspicious_log_high": 167,
-    "suspicious_log_low": 7,
-    "suspicious_log_critical": 26,
+    "artifact_token": 20,
+    "identical_to_en_exempt": 4,
+    "suspicious_log_high": 162,
+    "suspicious_log_critical": 38,
     "suspicious_rejected_critical": 175,
     "suspicious_rejected_high": 25
   },
   "issues": [
     {
-      "key": "achievement.170.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Warlock",
-      "translated": "Warlock"
+      "key": "npc.omrabas.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
+    },
+    {
+      "key": "npc.pythius_the_rotten.stdmod_12",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
+    },
+    {
+      "key": "npc.raymond_striker.multi_21",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
+    },
+    {
+      "key": "npc.sane_mage.multi_5",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
+      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

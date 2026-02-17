@@ -39382,5 +39382,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:31:10.962055Z"
+  },
+  "quests.soul_war.msg_1": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Il terrore inizia a tormentarti! Non lasciare che il livello di terrore raggiunga il valore critico!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:35.266526Z"
+  },
+  "quests.soul_war.msg_2": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Il tormento del terrore diventa insopportabile!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:35.266948Z"
+  },
+  "quests.soul_war.msg_4": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Il tormento del terrore ti sta uccidendo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:35.267518Z"
+  },
+  "quests.soul_war.msg_5": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Il tormento del terrore è ora letale!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:35.267926Z"
+  },
+  "quests.the_secret_library_quest.you_are_still_exhausted_from_your": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Sei ancora esausto dopo la tua ultima battaglia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:35.272845Z"
+  },
+  "quests.soul_war.energy_collected": {
+    "src_hash": "b8bcf2126f92e38b5f614a6a3e5c4ca5",
+    "text": "Energia raccolta: {0}/{1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:40.306677Z"
+  },
+  "quests.soul_war.energy_complete": {
+    "src_hash": "30f280d5e33132b6d52579429dd479f5",
+    "text": "Hai raccolto abbastanza energia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:40.307010Z"
+  },
+  "quests.soul_war.energy_needed": {
+    "src_hash": "e08db01f22b91ec4f011e924f3838baf",
+    "text": "Hai bisogno di {0} più energia per procedere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:43.639154Z"
+  },
+  "quests.soul_war.floor_access_first": {
+    "src_hash": "6405b891cc05a54afffbd45264ac0231",
+    "text": "Hai ottenuto l'accesso al primo piano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:43.639514Z"
+  },
+  "quests.soul_war.floor_access_second": {
+    "src_hash": "fb8ef309afd510db8bfb32044bc6033e",
+    "text": "Hai ottenuto l'accesso al secondo piano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:43.639859Z"
+  },
+  "quests.soul_war.floor_access_third": {
+    "src_hash": "16a7701add0525d575c423179eac5ccf",
+    "text": "Hai ottenuto l'accesso al terzo piano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:43.640173Z"
+  },
+  "quests.soul_war.floor_first_continue": {
+    "src_hash": "663c4245151399c9d94e481bcab59b6e",
+    "text": "Hai ottenuto l'accesso al primo piano. Continua a raccogliere energie pulsanti per ottenere ulteriore accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:43.640632Z"
+  },
+  "quests.soul_war.floor_second_continue": {
+    "src_hash": "320ea4789c114f2b8b618dffe5f1c4d7",
+    "text": "Hai ottenuto l'accesso al secondo piano. Continua a raccogliere energie pulsanti per ottenere ulteriore accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:47.820497Z"
+  },
+  "quests.soul_war.floor_third_fight": {
+    "src_hash": "fa58abb3de41f9407604d7e4e368ebf0",
+    "text": "Hai ottenuto l'accesso al terzo piano. Ora puoi combattere con la Crudeltà di Goshnar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:47.820974Z"
+  },
+  "quests.soul_war.greedy_maw_cooldown": {
+    "src_hash": "cc8bb4aca05080b59216fa941741e895",
+    "text": "Devi attendere altri {0} secondi prima di usare di nuovo le fauci avide.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:47.821396Z"
+  },
+  "quests.soul_war.hatred_defeat": {
+    "src_hash": "6cd6252de7d5f1a44b498d7bf15b3fc2",
+    "text": "Hai sconfitto l'odio di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:47.821699Z"
+  },
+  "quests.soul_war.lose_taint": {
+    "src_hash": "019b9cf17d705eb17144d44dce22a7ee",
+    "text": "Perdi il livello di contaminazione: {0}, nome: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:47.822019Z"
+  },
+  "quests.soul_war.malice_defeat": {
+    "src_hash": "de75d1edcd3e1b6ca5e343f2f8559fc4",
+    "text": "Hai sconfitto la Malizia di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:52.193547Z"
+  },
+  "quests.soul_war.new_taint": {
+    "src_hash": "5bde8704eadc1a578aa1e54f0819452b",
+    "text": "Il tuo nuovo livello di contaminazione è: {0}, nome: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:52.194755Z"
+  },
+  "quests.soul_war.no_floor_access": {
+    "src_hash": "910ac2aec9931e32538bfbcd38b2166a",
+    "text": "Non hai ancora accesso a questo piano. Hai raccolto {0}/{1} e hai bisogno di {2} altre energie pulsanti per accedervi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:57.321775Z"
+  },
+  "quests.soul_war.ooze_calm": {
+    "src_hash": "ceeb19a643ad14b9ad316c2652f3d7fc",
+    "text": "La melma calma il tuo terrore...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:57.322135Z"
+  },
+  "quests.soul_war.ooze_calm_vulnerable": {
+    "src_hash": "fef7b5c00d069a3bb57d2e967d78170d",
+    "text": "La melma calma la tua paura ma ti rende vulnerabile agli attacchi spettrali!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:57.322560Z"
+  },
+  "quests.soul_war.removed_taint": {
+    "src_hash": "b4ca643c2238b3c9d950a65336414876",
+    "text": "Livello di contaminazione rimosso: {0}, nome: {1} dal giocatore: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:57.323020Z"
+  },
+  "quests.soul_war.shrine_activated": {
+    "src_hash": "80ad0ca6ba900ac6c7a130c10cdcc9c6",
+    "text": "Hai attivato il santuario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:59.910193Z"
+  },
+  "quests.soul_war.shrine_already_activated": {
+    "src_hash": "5ee4b7efe20ca638e4496c2c3171670f",
+    "text": "Hai già attivato questo santuario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:59.910535Z"
+  },
+  "quests.soul_war.soul_fire_failed": {
+    "src_hash": "82c033463325eb1a31e3a014992d7f68",
+    "text": "Non sei riuscito a spegnere il fuoco dell'anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:59.910856Z"
+  },
+  "quests.soul_war.soul_fire_recover": {
+    "src_hash": "7961274a457c46f8d02245fab211a19b",
+    "text": "Il fuoco dell'anima è stato spento in tempo! La tua anima ora dovrà riprendersi prima che tu possa farlo di nuovo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:59.911372Z"
+  },
+  "quests.soul_war.soul_fire_stomped": {
+    "src_hash": "ea119539fd0cd316d470dee6a95a02c8",
+    "text": "Il fuoco dell'anima è stato spento in tempo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:33:59.911715Z"
+  },
+  "quests.soul_war.soul_no_recover": {
+    "src_hash": "dcd0760f59af41f83460972c60d4a247",
+    "text": "La sua anima non avrà più bisogno di riprendersi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:03.828500Z"
+  },
+  "quests.soul_war.soul_recover_wait": {
+    "src_hash": "1ca5738bb18e90b272fe726c696fa966",
+    "text": "La sua anima non avrà più bisogno di riprendersi! Devi attendere {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:03.828937Z"
+  },
+  "quests.soul_war.soul_recovered": {
+    "src_hash": "76d487eb375c4fe04a18ce767e7d1eb9",
+    "text": "La tua anima si è ripresa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:03.829225Z"
+  },
+  "quests.soul_war.spite_defeat": {
+    "src_hash": "832031a3804792a398e5231cf2ddfcc8",
+    "text": "Hai sconfitto il Dispetto di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:03.829555Z"
+  },
+  "quests.soul_war.tears_soaked": {
+    "src_hash": "ca20469362a10d0401ff43e8fd04b383",
+    "text": "Sei inzuppato dalle lacrime dell'anima piangente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:03.829883Z"
+  },
+  "quests.soul_war.use_item_defense": {
+    "src_hash": "1dbe9dd97225cdfdd3e8fc690051c5d3",
+    "text": "Usa di nuovo l'oggetto entro {0} secondi, altrimenti la difesa del mostro aumenterà di 2 ogni {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:07.243561Z"
+  },
+  "quests.soul_war.use_item_defense_increase": {
+    "src_hash": "d57b15fc4d41fe9e823aded0cf82a15a",
+    "text": "Usa di nuovo l'oggetto entro {0} secondi, altrimenti la difesa del mostro aumenterà ogni {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:07.244082Z"
   }
 }

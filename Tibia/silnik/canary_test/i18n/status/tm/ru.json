@@ -26470,5 +26470,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:31:50.301987Z"
+  },
+  "quests.inquisition.teleport_say_20": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.853603Z"
+  },
+  "quests.inquisition.teleport_say_21": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Вход в Арканум.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.853971Z"
+  },
+  "quests.inquisition.teleport_say_23": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Вход в Арканум.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.854363Z"
+  },
+  "quests.inquisition.teleport_say_26": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.854948Z"
+  },
+  "quests.inquisition.teleport_say_3": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.855559Z"
+  },
+  "quests.inquisition.teleport_say_30": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.855939Z"
+  },
+  "quests.inquisition.teleport_say_31": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Вход в Залы Крови.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.856298Z"
+  },
+  "quests.inquisition.teleport_say_4": {
+    "src_hash": "ff602cc7643f7ed45f149f82ab6fe2b7",
+    "text": "Вход в Кристальные пещеры.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.856687Z"
+  },
+  "quests.inquisition.teleport_say_8": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Вход в Залы Крови.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.857287Z"
+  },
+  "quests.inquisition.teleport_say_9": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Бегство обратно в Ретрит.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:11.857708Z"
+  },
+  "quests.inquisition.teleport_say_22": {
+    "src_hash": "5302c8173c3cb6ad78d4a445444621f2",
+    "text": "Вход в Колодцы Душ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:13.496402Z"
+  },
+  "quests.inquisition.teleport_say_24": {
+    "src_hash": "87a584d47d99ef1099a1b7763d63167b",
+    "text": "Вход в палату Аннигилона.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:13.496844Z"
+  },
+  "quests.inquisition.teleport_say_25": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Вход в Улей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:13.497108Z"
+  },
+  "quests.inquisition.teleport_say_27": {
+    "src_hash": "d4d47f5ad50f46d1b29b0cd21012e528",
+    "text": "Вход в Улей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:13.497358Z"
+  },
+  "quests.inquisition.teleport_say_28": {
+    "src_hash": "8c3f7a9b0837c942cb96323e9e7f0ff6",
+    "text": "Вход в палату Хеллгорака.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:16.201619Z"
+  },
+  "quests.inquisition.teleport_say_29": {
+    "src_hash": "4ae399bcc62da3ce8337ed5ae17105c5",
+    "text": "Вход в Теневой Нексус. Оставь всякую надежду.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:16.202135Z"
+  },
+  "quests.inquisition.teleport_say_5": {
+    "src_hash": "b3d040710e4f4bdad657ac023d4b24b5",
+    "text": "Вход в Затонувшие пещеры.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:34:16.202461Z"
   }
 }

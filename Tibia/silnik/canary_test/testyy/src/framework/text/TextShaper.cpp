@@ -135,9 +135,10 @@ static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& lo
   // Copy for reordering
   std::copy(input.begin(), input.end(), visual.begin());
   
-  // Reorder line
-  (void)fribidi_reorder_line(0, bidiTypes.data(), len, 0, parType, 
-                             levels.data(), visual.data(), nullptr);
+  // Reorder line (result intentionally unused — in-place reordering of visual[])
+  [[maybe_unused]] auto reorderResult =
+      fribidi_reorder_line(0, bidiTypes.data(), len, 0, parType,
+                           levels.data(), visual.data(), nullptr);
   
   // Store levels for potential use (e.g., cursor positioning)
   outLevels.resize(len);

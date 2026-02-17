@@ -63,6 +63,7 @@ OptionCheckBox < QtCheckBox
   anchors.right: parent.right
   anchors.top: parent.top
   color: #c0c0c0ff
+  text-wrap: true
   @onCheckChange: modules.client_options.setOption(self:getId(), self:isChecked())
 
 OptionCheckBoxMarked < OptionCheckBox

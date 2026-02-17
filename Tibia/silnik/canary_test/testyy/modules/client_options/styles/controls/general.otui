@@ -167,5 +167,6 @@ UIWidget
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-top: 12
-
-    size: 120 20
+    text-horizontal-auto-resize: true
+    min-width: 120
+    height: 20

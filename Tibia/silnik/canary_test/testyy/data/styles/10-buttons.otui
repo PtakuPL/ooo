@@ -1,7 +1,9 @@
 Button < UIButton
   font: noto-12
   color: #dfdfdfff
-  size: 106 23
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true
   text-offset: 0 0
   image-source: /images/ui/button
   image-color: #dfdfdf
@@ -169,7 +171,9 @@ NextQtButton < UIButton
 
 QtButton < UIButton
   font: noto-12
-  size: 106 23
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true
   text-offset: 0 0
   image-source: /images/ui/button
   image-clip: 0 0 22 23

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T01:08:35.295650Z",
-  "cycle": 107,
-  "language": "ro",
-  "json_file": "scripts.json",
-  "translated": 47,
+  "timestamp": "2026-02-17T01:09:18.048527Z",
+  "cycle": 108,
+  "language": "ru",
+  "json_file": "questlog.json",
+  "translated": 27,
   "placeholders": 0,
-  "guard_fail": 3,
+  "guard_fail": 23,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 267
+  "strict_skipped_done": 84
 }

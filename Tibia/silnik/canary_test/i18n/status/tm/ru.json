@@ -23126,5 +23126,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:08:06.697742Z"
+  },
+  "questlog.quest_11.mission_10.state_2": {
+    "src_hash": "88e6f4080c56ab3a04dcfcebc4f1562f",
+    "text": "Вы успешно охотились на 150 карнифил.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:17.678062Z"
+  },
+  "questlog.quest_11.mission_11.state_1": {
+    "src_hash": "1a702624471b34fa809b6ba8018ec984",
+    "text": "Вы успешно охотились на 200 каменных големов. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:17.678803Z"
   }
 }

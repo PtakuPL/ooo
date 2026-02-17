@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:19:13.848160Z"
+    "updated_at": "2026-02-17T02:52:47.014327Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -21598,5 +21598,205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:36:06.377163Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Något värdefullt kan vara förseglat i det",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:47.014765Z"
+  },
+  "item.10339.name": {
+    "src_hash": "566623d8747d4935f19d3c8362cd3a58",
+    "text": "snögubbe docka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:47.014987Z"
+  },
+  "item.10340.name": {
+    "src_hash": "64917692a7bedf176cceae410ee11da9",
+    "text": "tung boll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:47.015171Z"
+  },
+  "item.10341.desc": {
+    "src_hash": "e408525d9e7f310b0d2eac9e0d8251f0",
+    "text": "Fenixgnistan finns i den",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:54.520866Z"
+  },
+  "item.10341.name": {
+    "src_hash": "fd84dd09008911525e1746d9bec49f1c",
+    "text": "fenix charm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:54.521090Z"
+  },
+  "item.10342.desc": {
+    "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
+    "text": "Omfamningen av Tibia finns i den",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:54.521643Z"
+  },
+  "item.10342.name": {
+    "src_hash": "04a9ca5419cb100469a57513e556202c",
+    "text": "enhet charm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:54.521862Z"
+  },
+  "item.10343.desc": {
+    "src_hash": "2b1e8854868003f233139b0d72613a37",
+    "text": "Den andliga avskärmningen finns i den",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:52:54.522213Z"
+  },
+  "item.10343.name": {
+    "src_hash": "171b741cf342af4a9f9d241e4286ccf6",
+    "text": "andlig charm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:02.037677Z"
+  },
+  "item.10344.desc": {
+    "src_hash": "a3edec8c157a4898748edb27135adb5a",
+    "text": "Solarnas eld finns i den",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:02.038000Z"
+  },
+  "item.10344.name": {
+    "src_hash": "60eb3ca3c3f46a5099b3491c38ef0c1c",
+    "text": "tvilling sol charm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:02.038323Z"
+  },
+  "item.10345.desc": {
+    "src_hash": "796d1564ac7ae48945d726ab90782b3e",
+    "text": "Ensamhetens visdom finns i den",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:02.038633Z"
+  },
+  "item.10345.name": {
+    "src_hash": "742808b0c9bfa77bd5afb7854bd9941a",
+    "text": "ensamhet charm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:02.038843Z"
+  },
+  "item.10346.name": {
+    "src_hash": "eaea1d7900d2ab6609b09851d135b4fc",
+    "text": "tomte ryggsäck",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:08.142464Z"
+  },
+  "item.10347.name": {
+    "src_hash": "924bf7dd060accc008c33cd6cbe3ea15",
+    "text": "dragontapet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:08.142686Z"
+  },
+  "item.10352.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "död ödla högvakt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:08.142939Z"
+  },
+  "item.10353.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "död ödla högvakt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:08.143184Z"
+  },
+  "item.10354.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "död ödla högvakt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:08.143426Z"
+  },
+  "item.10355.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "död ödla högvakt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:11.843129Z"
+  },
+  "item.10356.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "död ödla legionär",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:11.843397Z"
+  },
+  "item.10357.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "död ödla legionär",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:11.843646Z"
+  },
+  "item.10358.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "död ödla legionär",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:11.843889Z"
+  },
+  "item.10359.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "död ödla legionär",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:11.844131Z"
+  },
+  "item.10360.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "död ödla drake präst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:15.281693Z"
+  },
+  "item.10361.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "död ödla drake präst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:53:15.281984Z"
   }
 }

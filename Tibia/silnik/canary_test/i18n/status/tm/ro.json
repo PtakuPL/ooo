@@ -61526,5 +61526,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:58:44.880681Z"
+  },
+  "cpp.player.imbuement_missing_items": {
+    "src_hash": "1dd47e9055588351cc44a8fd859c7832",
+    "text": "Nu aveți toate elementele necesare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:02.832125Z"
+  },
+  "cpp.player.level_advance": {
+    "src_hash": "2610891587cf1d912b5bae19b8596c73",
+    "text": "Ați avansat de la nivelul {0} la nivelul {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:02.832513Z"
+  },
+  "cpp.player.level_downgrade": {
+    "src_hash": "c9837993708507dcaa718fd2b55dddc1",
+    "text": "Ai fost retrogradat de la nivelul {0} la nivelul {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:10.152512Z"
+  },
+  "cpp.player.look.guild_members_many": {
+    "src_hash": "7068df894224ca100b2f5426bcff57fe",
+    "text": ", care are {0} membri, {1} dintre ei online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:10.152996Z"
+  },
+  "cpp.player.look.guild_members_one": {
+    "src_hash": "6fb3b5b5a7ae5eed4e31d3c8c7b72042",
+    "text": ", care are 1 membru, {0} dintre ei online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:10.153352Z"
+  },
+  "cpp.player.look.guild_nick": {
+    "src_hash": "0ea8ca7fd31a162240cf23b399d401c2",
+    "text": "({0})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:10.153621Z"
+  },
+  "cpp.player.look.guild_rank_of": {
+    "src_hash": "4cd519ffdfb64bce745febea34e4a47d",
+    "text": "{0} din {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:10.153852Z"
+  },
+  "cpp.player.look.has_no_vocation": {
+    "src_hash": "56c057cd9344f199bf6f7ed3ca2225c6",
+    "text": "nu are vocatie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:17.417230Z"
+  },
+  "cpp.player.look.party_invite_many": {
+    "src_hash": "de5f90c600433e2cc6d4d6a245bbe462",
+    "text": "{0} invitații în așteptare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:17.417581Z"
+  },
+  "cpp.player.look.party_invite_one": {
+    "src_hash": "f758119e310a8c8c2ef10c3873e4a26b",
+    "text": "1 invitație în așteptare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:17.417874Z"
+  },
+  "cpp.player.look.party_member_many": {
+    "src_hash": "b19e8cb508652c7d3f3fecacd0e0f034",
+    "text": "{0} membri și",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:17.418150Z"
+  },
+  "cpp.player.look.party_member_one": {
+    "src_hash": "d4d11f5c880138c02e18676c44d80d75",
+    "text": "1 membru și",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:17.418371Z"
+  },
+  "cpp.player.look.party_prefix_other": {
+    "src_hash": "9cc57e7ebe7f2e0beee05190259fb408",
+    "text": "{0} într-o petrecere cu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:23.801886Z"
+  },
+  "cpp.player.look.party_prefix_self": {
+    "src_hash": "fd1f3a1d0e2029a353023623aaa5a668",
+    "text": "Partidul tău are",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:23.802233Z"
+  },
+  "cpp.player.look.verb_loyalty": {
+    "src_hash": "e689e4cfe64549cd3a855a49336b5134",
+    "text": "{0} {1} {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:23.802519Z"
+  },
+  "cpp.player.look.verb_vip": {
+    "src_hash": "1e0bb0a0897dd7ff589e7196df434536",
+    "text": "{0} VIP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:23.802762Z"
+  },
+  "cpp.player.look.you_are": {
+    "src_hash": "cec67a6a2ce71f80666717b0b77ebf89",
+    "text": "Sunteți {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:30.334920Z"
+  },
+  "cpp.player.look.you_are_loyalty": {
+    "src_hash": "5819b9583e5906dc7a3683901d873817",
+    "text": "Sunteți {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:30.335221Z"
+  },
+  "cpp.player.look.you_are_vip": {
+    "src_hash": "de2f519a0f0d7c347c300fef472aba45",
+    "text": "Ești VIP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:30.335447Z"
+  },
+  "cpp.player.look.you_have_no_vocation": {
+    "src_hash": "1530eb6565c3951ab12bdf9ecd61013e",
+    "text": "Nu ai vocație.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:30.335698Z"
+  },
+  "cpp.player.lost_all_blessings": {
+    "src_hash": "ebcead0c2897065643978f88e6074999",
+    "text": "Ți-ai pierdut toate binecuvântările.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:30.336103Z"
+  },
+  "cpp.player.magic_level_advance": {
+    "src_hash": "c706671215d82f99b1f79126a4747c19",
+    "text": "Ai avansat la nivelul magic {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:37.232328Z"
+  },
+  "cpp.player.moved_objects": {
+    "src_hash": "4588085acd18b8b0dcd3c037e201303d",
+    "text": "S-a mutat {0} obiect{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:37.232671Z"
+  },
+  "cpp.player.moved_objects_one": {
+    "src_hash": "485db73e01d3219302f8d2d63e9ac38a",
+    "text": "Obiect {0} mutat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:37.232919Z"
+  },
+  "cpp.player.moved_objects_other": {
+    "src_hash": "c4b49913cef2602fef9b2944c3f7c497",
+    "text": "S-au mutat {0} obiecte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:37.233221Z"
+  },
+  "cpp.player.muted_for": {
+    "src_hash": "e4b7534905c88edffa5768a08fa96a4b",
+    "text": "Sunteți dezactivat pentru {0} secunde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:18:37.233570Z"
   }
 }

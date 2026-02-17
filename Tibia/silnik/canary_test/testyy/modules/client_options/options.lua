@@ -14,55 +14,55 @@ panels = {
 -- LuaFormatter off
 local buttons = { {
 
-    text = "Controls",
+    text = tr("Controls"),
     icon = "/images/icons/icon_controls",
     open = "generalPanel",
     subCategories = { {
-        text = "General Hotkeys",
+        text = tr("General Hotkeys"),
         open = "keybindsPanel"
     } }
 }, {
-    text = "Interface",
+    text = tr("Interface"),
     icon = "/images/icons/icon_interface",
     open = "interface",
     subCategories = { {
-        text = "HUD",
+        text = tr("HUD"),
         open = "interfaceHUD"
     }, {
-        text = "Console",
+        text = tr("Console"),
         open = "interfaceConsole"
     } }
 }, {
-    text = "Graphics",
+    text = tr("Graphics"),
     icon = "/images/icons/icon_graphics",
     open = "graphicsPanel",
     subCategories = { {
-        text = "Effects",
+        text = tr("Effects"),
         open = "graphicsEffectsPanel"
     } }
 }, {
-    text = "Sound",
+    text = tr("Sound"),
     icon = "/images/icons/icon_sound",
     open = "soundPanel"
     --[[     subCategories = {{
-        text = "Battle Sounds",
+        text = tr("Battle Sounds"),
         open = "Battle_Sounds"
     }, {
-        text = "UI Sounds",
+        text = tr("UI Sounds"),
         open = "UI_Sounds"
     }} ]]
 }, {
-    text = "Misc.",
+    text = tr("Misc."),
     icon = "/images/icons/icon_misc",
     open = "misc",
     subCategories = { --[[ {
-        text = "GamePlay",
+        text = tr("GamePlay"),
         open = "GamePlay"
     },  {
-        text = "Screenshots",
+        text = tr("Screenshots"),
         open = "Screenshots"
     }, ]] {
-        text = "Help",
+        text = tr("Help"),
         open = "miscHelp"
     } }
 } }

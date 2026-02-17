@@ -147718,5 +147718,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:44:16.167249Z"
+  },
+  "otclient_modules.ruleviolation.tr_21": {
+    "src_hash": "dd79c145f1fd1491c794963c3b2068a0",
+    "text": "3f) Negociar o compartir cuentas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:54:10.001088Z"
+  },
+  "otclient_modules.ruleviolation.tr_22": {
+    "src_hash": "57e9ceadeb8ad4f5d847346d661df80f",
+    "text": "3e) Cliente múltiple",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:54:10.001345Z"
+  },
+  "otclient_modules.ruleviolation.tr_23": {
+    "src_hash": "b3567918f0df037d2ca181070eae8959",
+    "text": "3d) piratería",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:54:10.001548Z"
+  },
+  "otclient_modules.ruleviolation.tr_24": {
+    "src_hash": "28892603da823c45b5d16381bce0e9ec",
+    "text": "3c) Usar software no oficial para jugar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:54:13.424472Z"
+  },
+  "otclient_modules.ruleviolation.tr_25": {
+    "src_hash": "3da697e5c5c999a09011f68abcdfae8c",
+    "text": "3b) Abuso de las debilidades del juego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:54:13.424763Z"
+  },
+  "otclient_modules.ruleviolation.tr_26": {
+    "src_hash": "678e3ceddd62282d9599b53d838aad14",
+    "text": "3a) Abuso de errores",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:54:13.424995Z"
   }
 }

@@ -144622,5 +144622,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:03:23.550216Z"
+  },
+  "lib.monster.msg_not_forgeable": {
+    "src_hash": "a10e1af7c03f1d55c3badcb24d1e953f",
+    "text": "Este monstruo no es falsificable, ni diabólico añadido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:11:28.732113Z"
   }
 }

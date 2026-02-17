@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T00:11:04.222769Z",
+  "timestamp": "2026-02-17T00:11:49.675137Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,8 +233,8 @@
       0
     ]
   ],
-  "cache_hits": 49,
-  "cache_misses": 3,
+  "cache_hits": 50,
+  "cache_misses": 2,
   "file_cache_hits": 1973,
   "file_cache_misses": 3,
   "langs": {
@@ -7374,8 +7374,8 @@
         [
           "libs.json",
           1,
-          1771272699920408872,
-          6898
+          1771287088726281487,
+          6900
         ],
         [
           "messages.json",
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771287004158007949,
+          1771287105046333187,
           1848295
         ],
         [
@@ -7521,13 +7521,13 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 39738,
+        "translated_keys": 39739,
         "english_copy_keys": 2633,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 74.16,
         "server_keys": 49731,
-        "server_translated": 37224,
+        "server_translated": 37225,
         "server_pct": 74.85,
         "client_keys": 3855,
         "client_translated": 2514,
@@ -7733,12 +7733,12 @@
         "libs.json": {
           "sig": [
             1,
-            1771272699920408872,
-            6898
+            1771287088726281487,
+            6900
           ],
           "row": {
             "total_reference_keys": 89,
-            "translated_keys": 86,
+            "translated_keys": 87,
             "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771287004158007949,
+            1771287105046333187,
             1848295
           ],
           "row": {
@@ -25383,7 +25383,7 @@
         [
           "libs.json",
           1,
-          1771097912941364750,
+          1771287079970250457,
           6777
         ],
         [
@@ -25742,7 +25742,7 @@
         "libs.json": {
           "sig": [
             1,
-            1771097912941364750,
+            1771287079970250457,
             6777
           ],
           "row": {

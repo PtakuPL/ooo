@@ -55038,5 +55038,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:34:50.876408Z"
+  },
+  "scripts.actions_machines_professor_maxxen.say_2": {
+    "src_hash": "2b05d281348ab8cd50c8a05f2fe3265d",
+    "text": "Tutte le macchine funzionano, ora è possibile utilizzare il teletrasporto a est.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.505698Z"
+  },
+  "scripts.actions_machines_professor_maxxen.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Impossibile accendere questa macchina per ora!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.507010Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_3": {
+    "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+    "text": "MWAAAHAHAAA!! NESSUNO!! NESSUNO PUÒ SCONFITRMI!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.595748Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_4": {
+    "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+    "text": "MWAAAHAHAAA!! NESSUNO!! NESSUNO PUÒ SCONFITRMI!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.596909Z"
+  },
+  "scripts.die.rolled": {
+    "src_hash": "e758b89579865248b8c281b6e16e0b1e",
+    "text": "{0} ha tirato un {1}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.612319Z"
+  },
+  "scripts.mawhawk_summon.say_1": {
+    "src_hash": "01c1dce1ac2a8ef267b612b2442c3c77",
+    "text": "Attento alle mie fauci!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.685233Z"
+  },
+  "scripts.mission06_run_like_wolf.msg_4": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.690145Z"
+  },
+  "scripts.mission06_run_like_wolf.msg_6": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.691672Z"
+  },
+  "scripts.mission07_attack.msg_4": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.696214Z"
+  },
+  "scripts.mission09_rock_troll.msg_3": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.697882Z"
+  },
+  "scripts.mission10_tomb_raiding.msg_1": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.699398Z"
+  },
+  "scripts.mission10_tomb_raiding.msg_2": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.700671Z"
+  },
+  "scripts.mission10_tomb_raiding.msg_3": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.701679Z"
+  },
+  "scripts.mission12_into_fortress.msg_1": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.702977Z"
+  },
+  "scripts.mission12_into_fortress.msg_16": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.705991Z"
+  },
+  "scripts.mission12_into_fortress.msg_17": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.707680Z"
+  },
+  "scripts.mission12_into_fortress.msg_19": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.709353Z"
+  },
+  "scripts.mission12_into_fortress.msg_20": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Hai trovato {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.710679Z"
+  },
+  "scripts.movements_crate.say_3": {
+    "src_hash": "5c78119d5d5b57e64a7c305a2d69680b",
+    "text": "Le guardie ti hanno notato. Sei stato trascinato con la forza in una piccola cella. Sembra che tu debba costruire un altro travestimento.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.750983Z"
+  },
+  "scripts.movements_exit.say_1": {
+    "src_hash": "e3cad585110341bb3b2380313a9f3874",
+    "text": "Bevi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.773118Z"
+  },
+  "scripts.music_box.sound_enraged_white_deer": {
+    "src_hash": "3c4e7e02d0cd27b75e0a41557802e5ea",
+    "text": "*campana*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.795011Z"
+  },
+  "scripts.music_box.sound_wild_horse": {
+    "src_hash": "722f7d0f70687346d74a852830e1c5f0",
+    "text": "*sbuffa*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.796753Z"
+  },
+  "scripts.omrafir_beam.say_1": {
+    "src_hash": "b1e8352034e99be439aaf13c373ddbcb",
+    "text": "OMRAFIR RESPIRA IL FUOCO INFERNALE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.802692Z"
+  },
+  "scripts.omrafir_beam.say_2": {
+    "src_hash": "35fbee7bd7790d362d667f90a8d536f1",
+    "text": "OMRAFIR INALA PROFONDAMENTE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.803204Z"
+  },
+  "scripts.prince_drazzak_druid.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "MORIRE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.817806Z"
+  },
+  "scripts.prince_drazzak_knight.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "MORIRE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.819193Z"
+  },
+  "scripts.prince_drazzak_paladin.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "MORIRE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.820201Z"
+  },
+  "scripts.prince_drazzak_sorcerer.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "MORIRE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.821225Z"
+  },
+  "scripts.prince_drazzak_summon.say_1": {
+    "src_hash": "dfaa579f53bc94c724932f2a88f3dc3d",
+    "text": "SCHIACCIARLI TUTTI!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.822317Z"
+  },
+  "scripts.prince_drazzak_tp.say_1": {
+    "src_hash": "23f59b92cf05664159a37caf710cb192",
+    "text": "VIENI QUI!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.823077Z"
+  },
+  "scripts.raging_mage.death_say": {
+    "src_hash": "f7b04ff13b1739f0c8d631b523153b20",
+    "text": "TORNERÒ!! La mia morte sarà solo una porta in attesa del mio ritorno a casa, il mio scafo fisico sarà... il mio... argh...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.831622Z"
+  },
+  "scripts.spy.empty": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "Vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.854465Z"
+  },
+  "scripts.terofar_curse.say_1": {
+    "src_hash": "620a6521489570a0cbe03af3a75b6610",
+    "text": "Terofar ti ha lanciato una maledizione mortale ancora più grande!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.858708Z"
+  },
+  "scripts.thais_exhibition.say_37": {
+    "src_hash": "17421658d840ef648e12fcaab513b756",
+    "text": "NESSUNO MI FERMERÀ QUESTA VOLTA!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.863514Z"
+  },
+  "scripts.thais_exhibition.say_39": {
+    "src_hash": "484693086c95244b4a033736167b290b",
+    "text": "IL POTERE È MIO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.864160Z"
+  },
+  "scripts.the_pale_count_bomb.say_1": {
+    "src_hash": "b17531f543291253cb147bc349b58655",
+    "text": "Senti il ​​bacio affamato della morte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.871268Z"
+  },
+  "scripts.the_pale_count_manadrain.say_1": {
+    "src_hash": "b17531f543291253cb147bc349b58655",
+    "text": "Senti il ​​bacio affamato della morte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:33.872578Z"
   }
 }

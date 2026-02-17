@@ -33398,5 +33398,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:37:22.713163Z"
+  },
+  "scripts.actions_Misc.msg_4": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Куча костей пуста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.941443Z"
+  },
+  "scripts.actions_Misc.msg_6": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Куча костей пуста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.943062Z"
+  },
+  "scripts.actions_analyser.msg_1": {
+    "src_hash": "a2da86b455a557094c1df725073335cd",
+    "text": "Отличная работа! Вода анализируется.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.944336Z"
+  },
+  "scripts.actions_counter_agent.msg_1": {
+    "src_hash": "c8c549f68a94f2d0de0eaeb94e664d99",
+    "text": "Песчаная буря разрушила почти все столбы. Эффект от контрагента подействовал иначе, чем ожидалось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.960384Z"
+  },
+  "scripts.actions_counter_agent.msg_2": {
+    "src_hash": "380f8c945d50e19564aae60338ef5e9d",
+    "text": "Песчаная буря не только разрушила оазис, но и обнажила тротуарную плитку и рычаг.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.961310Z"
+  },
+  "scripts.actions_crate.msg_1": {
+    "src_hash": "467aa744353e838cc4e516dc77dd702f",
+    "text": "Идеальный! Ты взял из этого ящика чудесную лупу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.962865Z"
+  },
+  "scripts.actions_crate.msg_2": {
+    "src_hash": "51cdbfcf0982098343b3f288729deb7a",
+    "text": "Вы уже взяли лупу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.963442Z"
+  },
+  "scripts.actions_crate.msg_3": {
+    "src_hash": "88f20ad8c4870defabe09cab6938014d",
+    "text": "Этот ящик принадлежит Анджело. Вам следует поговорить с ним, прежде чем что-то брать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.964290Z"
+  },
+  "scripts.actions_document.msg_1": {
+    "src_hash": "e3aa86a595bdf4e08545ee7ba7590906",
+    "text": "Дорогой куратор, этот недавно открывшийся музей — действительно приятное место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.966862Z"
+  },
+  "scripts.actions_document.msg_2": {
+    "src_hash": "15e799af52db094b34330c9e03390635",
+    "text": "Но подождите! А как насчет пустого пространства перед тобой? Как жаль!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.967612Z"
+  },
+  "scripts.actions_document.msg_3": {
+    "src_hash": "649518a7af31b7d8b75793e1143eafd4",
+    "text": "Кажется, кто-то удалил одну из красивых картинок. Но давай! У вас есть деньги, и они нам нужны.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.968588Z"
+  },
+  "scripts.actions_document.msg_5": {
+    "src_hash": "9c6cec06690cf28996e1db3502afbeda",
+    "text": "Спроси его: Кот забрал твой язык?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.969340Z"
+  },
+  "scripts.actions_entrances.msg_3": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Для входа вам нужен минимум 250 уровень.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.973889Z"
+  },
+  "scripts.actions_gnome_chart.msg_1": {
+    "src_hash": "912f8fc846951c223a1f55bf41b6e216",
+    "text": "Вы нанесли на карту расположение и размеры странного сооружения — древних ворот.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.985403Z"
+  },
+  "scripts.actions_gnome_chart.msg_2": {
+    "src_hash": "768bc326b118e9437537bef4279e71f8",
+    "text": "Вы нанесли на карту расположение и размеры странного сооружения, небольших руин.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.986818Z"
+  },
+  "scripts.actions_gnome_chart.msg_3": {
+    "src_hash": "0710be37e70c376c6738022133b8b6f1",
+    "text": "Вы нанесли на карту расположение и размеры странного сооружения, напоминающего каменное лицо.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.987724Z"
+  },
+  "scripts.actions_gnome_chart.msg_4": {
+    "src_hash": "884c0dcf03a8f5d8d2c34c6186c063f9",
+    "text": "Вы нанесли на карту местоположение и размеры странного сооружения — аванпоста.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:43:47.988674Z"
   }
 }

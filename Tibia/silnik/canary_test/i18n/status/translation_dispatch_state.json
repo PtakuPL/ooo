@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T06:43:17.065201Z",
-  "cycle_counter": 1769,
-  "last_target_key": "it:scripts.json",
-  "last_pending_total": 1514,
+  "timestamp": "2026-02-17T06:43:43.364307Z",
+  "cycle_counter": 1770,
+  "last_target_key": "ru:scripts.json",
+  "last_pending_total": 1642,
   "last_tier": 2,
   "last_cat_priority": 6,
   "candidates_count": 191,

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T09:17:00.486406Z",
-  "cycle": 399,
+  "timestamp": "2026-02-17T09:18:09.459463Z",
+  "cycle": 400,
   "language": "ro",
-  "json_file": "npclib.json",
-  "translated": 50,
+  "json_file": "movements.json",
+  "translated": 2,
   "placeholders": 0,
   "guard_fail": 0,
   "guard": {
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 50
+  "strict_skipped_done": 0
 }

@@ -1,17 +1,25 @@
 {
-  "timestamp": "2026-02-17T09:17:01.518343Z",
+  "timestamp": "2026-02-17T09:18:44.576229Z",
   "checked_entries": 100,
-  "issues_found": 16,
+  "issues_found": 17,
   "issues_by_type": {
-    "identical_to_en_exempt": 3,
+    "identical_to_en_exempt": 8,
+    "identical_to_en": 1,
     "artifact_token": 16,
-    "suspicious_log_high": 170,
-    "suspicious_log_low": 4,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 171,
-    "suspicious_rejected_high": 29
+    "suspicious_log_high": 149,
+    "suspicious_log_critical": 48,
+    "suspicious_log_low": 3,
+    "suspicious_rejected_critical": 170,
+    "suspicious_rejected_high": 30
   },
   "issues": [
+    {
+      "key": "startup.chest.msg4",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "legiondawnport",
+      "translated": "legiondawnport"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

@@ -63238,5 +63238,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:15:21.454730Z"
+  },
+  "startup.startup.msg1": {
+    "src_hash": "9492d900d3624c54c0e10a604ea01c3a",
+    "text": "/startup/tables/load.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:31.845763Z"
+  },
+  "startup.startup.msg2": {
+    "src_hash": "5409426cb802c71fa3d2ca6ac45b1016",
+    "text": "/startup/others/load.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:31.846184Z"
+  },
+  "startup.functions.msg1": {
+    "src_hash": "22790cbf726bd6e40931c59a5382464d",
+    "text": "Crea elemento sulla mappa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:31.846627Z"
+  },
+  "startup.functions.msg2": {
+    "src_hash": "c87cc4511fc6acd81f8e09c2fa96b35f",
+    "text": "create_item.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:31.846908Z"
+  },
+  "startup.functions.msg3": {
+    "src_hash": "36c4290a94df5308451473794383c540",
+    "text": "Creati tutti gli elementi nella mappa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:31.847328Z"
+  },
+  "startup.functions.msg4": {
+    "src_hash": "439b14776303de2b7bb3ed5503c08c70",
+    "text": "[loadLuaMapAction] - Trovato ID articolo errato {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:39.511096Z"
+  },
+  "startup.functions.msg5": {
+    "src_hash": "790a1821dd6662afbfc756e467b79d24",
+    "text": "ID azione: {}, posizione {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:39.511393Z"
+  },
+  "startup.load.msg1": {
+    "src_hash": "3a9b4ec9054a50ab6d18db2480492e51",
+    "text": "/startup/tables/chest.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:39.511735Z"
+  },
+  "startup.writeable.msg1": {
+    "src_hash": "1a419d903676ddfd0fa2c6e4f59f6c2f",
+    "text": "Diario di bordo personale del signor Morris. (Le righe seguenti sono scritte in un codice che non è possibile decifrare. Sembra che il signor Morris sia una persona molto diffidente.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:39.512387Z"
+  },
+  "startup.writeable.msg2": {
+    "src_hash": "76e3eaf02c2fff6b5f0c13acd61a5311",
+    "text": "Ricette di cucina per la fauna selvatica (eccetto gli scoiattoli!), di Richard",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:39.512756Z"
+  },
+  "startup.writeable.msg3": {
+    "src_hash": "65e033502c7653c66392844201e3d5f6",
+    "text": "Sepolto per sempre affinché non ritorni mai più. Non rimuovere questo sigillo o potrebbero accadere cose brutte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:46.188036Z"
+  },
+  "startup.writeable.msg4": {
+    "src_hash": "45206c03cfd02c73921a12631c00877c",
+    "text": "Non avvicinarti! Goblin a casa! Gli umani se ne vanno!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:46.188414Z"
+  },
+  "startup.writeable.msg5": {
+    "src_hash": "a79c02a16d33285a20728271fd39524d",
+    "text": "Paladini di Tibia, armatevi e uccidete senza pietà tutto ciò che è malvagio!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:46.188954Z"
+  },
+  "startup.teleport.msg1": {
+    "src_hash": "be41f88c6f00aab94133be0a843d7725",
+    "text": "portale sinistro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:46.189204Z"
+  },
+  "startup.chest.msg1": {
+    "src_hash": "83a8e601e6b3974e36939d48999ae311",
+    "text": "per l'utilizzo della mappa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:46.189463Z"
+  },
+  "startup.chest.msg2": {
+    "src_hash": "0c847bdf925acf184b33e0f7741b949f",
+    "text": "per l'uso della sceneggiatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:52.141372Z"
+  },
+  "startup.chest.msg3": {
+    "src_hash": "62720b2be297eb9c1276f2a8f2355248",
+    "text": "contenitore = IDbag",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:52.141635Z"
+  },
+  "startup.chest.msg4": {
+    "src_hash": "01de21b6f8f5a4d88a9ece3443e883e1",
+    "text": "legiondawnport",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:52.141862Z"
+  },
+  "startup.chest.msg5": {
+    "src_hash": "d9b20a6a55d4c30024d5519f0f0d9a84",
+    "text": "perone più profondo1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:52.142189Z"
+  },
+  "startup.load.msg2": {
+    "src_hash": "99d86911286dda1dbf61b89f07e7c901",
+    "text": "/startup/tables/corpse.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:52.142550Z"
+  },
+  "startup.load.msg3": {
+    "src_hash": "2bf5b0dd3149193db13f29e511f0454c",
+    "text": "/startup/tables/create_item.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:56.495999Z"
+  },
+  "startup.load.msg4": {
+    "src_hash": "b148af11a818032c9df35a76bc86c39c",
+    "text": "/startup/tables/door_key.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:56.496380Z"
+  },
+  "startup.load.msg5": {
+    "src_hash": "cb3d0164b1bbcea647c45c2061cf2ec0",
+    "text": "/startup/tables/door_level.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:17:56.496725Z"
   }
 }

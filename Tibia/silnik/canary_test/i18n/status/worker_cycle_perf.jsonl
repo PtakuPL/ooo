@@ -7989,3 +7989,7 @@
 {"timestamp": "2026-02-17T09:14:43.654572Z", "cycle": 399, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 1794, "detail": "count=achievements.json"}
 {"timestamp": "2026-02-17T09:17:01.591227Z", "cycle": 399, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 137801, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T09:17:08.149126Z", "cycle": 399, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 6317, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T09:17:19.338909Z", "cycle": 399, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "cycle_total", "duration_ms": 157671, "detail": "delay=4"}
+{"timestamp": "2026-02-17T09:17:24.133167Z", "cycle": 400, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 492, "detail": "count=startup.json"}
+{"timestamp": "2026-02-17T09:18:43.788570Z", "cycle": 400, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 79513, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T09:18:51.037192Z", "cycle": 400, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 6154, "detail": "throttle_every=1"}

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T03:43:16.543239Z",
-  "cycle_counter": 1433,
-  "last_target_key": "ro:books.json",
-  "last_pending_total": 1178,
+  "timestamp": "2026-02-17T03:46:56.976337Z",
+  "cycle_counter": 1436,
+  "last_target_key": "ro:achievements.json",
+  "last_pending_total": 427,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 193,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 211,
+  "cache_cycle": 212,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -384,10 +384,10 @@
     ],
     "lang_completion": {
       "pl": 46.5,
-      "es": 74.73,
+      "es": 74.74,
       "ru": 37.73,
-      "ro": 23.8,
-      "it": 14.83,
+      "ro": 23.85,
+      "it": 14.91,
       "sr": 11.38,
       "sv": 9.26
     }

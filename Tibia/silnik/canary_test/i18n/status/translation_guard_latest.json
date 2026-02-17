@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T03:44:06.204404Z",
-  "cycle": 211,
+  "timestamp": "2026-02-17T03:48:00.705033Z",
+  "cycle": 212,
   "language": "ro",
-  "json_file": "books.json",
-  "translated": 25,
+  "json_file": "achievements.json",
+  "translated": 31,
   "placeholders": 0,
-  "guard_fail": 25,
+  "guard_fail": 19,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 250
+  "strict_skipped_done": 595
 }

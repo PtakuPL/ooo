@@ -28654,5 +28654,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:35:21.931279Z"
+  },
+  "client.tasks.text5": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Кнопка выбора",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:27.234391Z"
+  },
+  "client.npctrade.text1": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Список предметов, которые вы можете купить",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:32.367033Z"
+  },
+  "client.npctrade.text2": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Список предметов, которые вы можете продать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:32.367400Z"
+  },
+  "client.quickloot.text2": {
+    "src_hash": "b2e1c15b00c36a1d0f6e95b51e9d9b02",
+    "text": "Автоматическая сортировка тайника по контейнерам",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:39.139567Z"
+  },
+  "client.quickloot.text4": {
+    "src_hash": "c8eadbefee70f8c441cfcc79755337a6",
+    "text": "Ошибка при чтении файла настроек контейнеров.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:39.139960Z"
+  },
+  "client.game_cyclopedia.text3": {
+    "src_hash": "e850f728cac75fd2a96562687c663ebd",
+    "text": "Открыть диалог Босстиары",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:45.995139Z"
+  },
+  "client.house.text1": {
+    "src_hash": "b87a17758ec61680b74aafa52c9e2e23",
+    "text": "Селектор слоя карты",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:45.995416Z"
+  },
+  "client.house.text2": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Все штаты",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:45.995633Z"
+  },
+  "client.house.text5": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Все штаты",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:45.995843Z"
+  },
+  "client.charms.text2": {
+    "src_hash": "b6af098ba1c6eec1f80bc951a947903c",
+    "text": "Отражает входящий урон обратно агрессору.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:45.996210Z"
+  },
+  "client.charms.text3": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "С некоторой вероятностью уклоняется от атаки, избегая любого урона.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:52.027866Z"
+  },
+  "client.map.text1": {
+    "src_hash": "6ca9e6141ede519f05c9fadeb4fe4262",
+    "text": "Не удалось загрузить миникарту, файл отсутствует?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:52.028257Z"
+  },
+  "client.map.text2": {
+    "src_hash": "b8cc006cff8573003ffd0253bc55e261",
+    "text": "Марклиститем",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:52.028481Z"
+  },
+  "client.character.text3": {
+    "src_hash": "1aa08665a4e52f93858ae18cda4252da",
+    "text": "ИнвентарьПредметЦиклопедия",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:52.028894Z"
+  },
+  "client.character.text4": {
+    "src_hash": "081ce6f4b6055253238c7b07e6447918",
+    "text": "Показать одежду из магазина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:52.029207Z"
+  },
+  "client.bestiary.text1": {
+    "src_hash": "19e4c49fe8dfeba41d77d57a32cbc5f3",
+    "text": "БестиарийПредметГруппа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:46:54.316717Z"
   }
 }

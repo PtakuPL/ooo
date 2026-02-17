@@ -20558,5 +20558,285 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:05:25.329728Z"
+  },
+  "achievement.169.name": {
+    "src_hash": "4d9a8d9067a945eda6cf153c069dce8f",
+    "text": "Выпускники",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:09.156820Z"
+  },
+  "achievement.175.name": {
+    "src_hash": "49283af40fc2b878184481dc93f9cff4",
+    "text": "Экстремальная дегустация",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:09.157160Z"
+  },
+  "achievement.185.name": {
+    "src_hash": "6caec29927843945c535d26410a2501e",
+    "text": "Проклятие Несущих Губитель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:13.088115Z"
+  },
+  "achievement.186.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Огненный дьявол",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:13.088361Z"
+  },
+  "achievement.187.name": {
+    "src_hash": "3b4fd11da1673a39803db90cbaf52dea",
+    "text": "Пироман",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:13.088563Z"
+  },
+  "achievement.190.name": {
+    "src_hash": "496f1b6bd83e9d82980deb2068058f5b",
+    "text": "Петролог",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:13.088763Z"
+  },
+  "achievement.208.name": {
+    "src_hash": "9eced36b97dbab0b65d1e2faee071889",
+    "text": "Убийца магов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:13.088976Z"
+  },
+  "achievement.209.name": {
+    "src_hash": "145896ab3cca2a939bde5239d584aa23",
+    "text": "Биоразлагаемый",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:18.440533Z"
+  },
+  "achievement.212.name": {
+    "src_hash": "b74ad4852301652bdbe405413f9a4b49",
+    "text": "Пожарный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:18.440755Z"
+  },
+  "achievement.214.name": {
+    "src_hash": "784d09d4f798dce0e6249c899edf8128",
+    "text": "Аскарак Немезида",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:18.441001Z"
+  },
+  "achievement.215.name": {
+    "src_hash": "5232d80eceb701772642a3c3ae51dd48",
+    "text": "Шабурак Немезида",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:18.441244Z"
+  },
+  "achievement.253.name": {
+    "src_hash": "897e9d649a9a3ddb0b98908b4ec70f2b",
+    "text": "Защитник природы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:18.441483Z"
+  },
+  "achievement.258.name": {
+    "src_hash": "b0bf9c1c778f0c55dacd4257a4907277",
+    "text": "Ослепительный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:22.695813Z"
+  },
+  "achievement.260.name": {
+    "src_hash": "87d4220e236a815a17c91fb4d9644129",
+    "text": "Икап",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:22.696014Z"
+  },
+  "achievement.265.name": {
+    "src_hash": "55b52ada9b977778f01bfb4ef7142718",
+    "text": "Подавитель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:22.696216Z"
+  },
+  "achievement.268.name": {
+    "src_hash": "fea729d1432744cf8f345643e5dc45a8",
+    "text": "Хитин Бейн",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:22.696433Z"
+  },
+  "achievement.271.name": {
+    "src_hash": "e0623786548dad8a5760dcf4d06c18c1",
+    "text": "Истребитель",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:22.696645Z"
+  },
+  "achievement.277.name": {
+    "src_hash": "1a00e8cb7d17ef5b5ff504038ded033f",
+    "text": "Си, Арики!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:28.597356Z"
+  },
+  "achievement.282.name": {
+    "src_hash": "868f98710485c1e81d494a5336c7dc12",
+    "text": "Сполиум Профундис",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:28.597624Z"
+  },
+  "achievement.289.name": {
+    "src_hash": "1e70479cb2f65fab83eb8e177dcc46cd",
+    "text": "Зззззззстандинг!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:28.597869Z"
+  },
+  "achievement.291.name": {
+    "src_hash": "84a7b3b95dffa45fe65ac44deac8c05a",
+    "text": "Капов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:28.598059Z"
+  },
+  "achievement.298.name": {
+    "src_hash": "e6fa675e6647e24e61ffe792de527487",
+    "text": "Птенец",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:32.374875Z"
+  },
+  "achievement.320.name": {
+    "src_hash": "3ef6ec933ff4e84cea1093528690d91b",
+    "text": "Фунгитастик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:32.375109Z"
+  },
+  "achievement.321.name": {
+    "src_hash": "02fbec0d10327df33d58b642bf135865",
+    "text": "Кристально чистый",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:32.375349Z"
+  },
+  "achievement.326.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Могильщик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:32.375560Z"
+  },
+  "achievement.332.name": {
+    "src_hash": "298a7e53cbf4c379fcd13da347e878f7",
+    "text": "Теневой Владыка Клинков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:32.375811Z"
+  },
+  "achievement.333.name": {
+    "src_hash": "a5c5f97c14d525da03f5d4eb842fb47d",
+    "text": "Теневой палач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:37.053006Z"
+  },
+  "achievement.339.name": {
+    "src_hash": "a51d1ab02fd4978d4fe97ec0dc2107b1",
+    "text": "Мрачный предвестник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:37.053276Z"
+  },
+  "achievement.341.name": {
+    "src_hash": "62feba76365b5f4ca5287b4a36ed22ac",
+    "text": "Бесконечная история",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:37.053532Z"
+  },
+  "achievement.346.name": {
+    "src_hash": "5a81636e97ea986d5bd43b5f31c6ce97",
+    "text": "Лунатизм",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:37.053739Z"
+  },
+  "achievement.358.name": {
+    "src_hash": "9702cd6f3e08f0ab3bd2cb6d5cef3f0d",
+    "text": "Помните о шаге!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:42.185438Z"
+  },
+  "achievement.376.name": {
+    "src_hash": "2d7905460fc8145fafddd93bb0e332a5",
+    "text": "Фата Моргана",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:42.185685Z"
+  },
+  "achievement.379.name": {
+    "src_hash": "31b0276f0e9e08d13becd485a0e39fb6",
+    "text": "Намагниченный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:42.185898Z"
+  },
+  "achievement.385.name": {
+    "src_hash": "5f48456696e43243435478f3306af96d",
+    "text": "Беззвездная ночь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:42.186204Z"
+  },
+  "achievement.392.name": {
+    "src_hash": "b6141c09806e6b4abf759909284ee365",
+    "text": "Черный ноготь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:08:42.186430Z"
   }
 }

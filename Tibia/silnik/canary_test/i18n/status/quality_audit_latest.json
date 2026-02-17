@@ -1,23 +1,24 @@
 {
-  "timestamp": "2026-02-17T00:06:37.821989Z",
+  "timestamp": "2026-02-17T00:10:05.041670Z",
   "checked_entries": 100,
   "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en_exempt": 19,
+    "identical_to_en_exempt": 12,
     "identical_to_en": 1,
     "artifact_token": 7,
-    "suspicious_log_high": 192,
-    "suspicious_log_low": 8,
-    "suspicious_rejected_critical": 157,
-    "suspicious_rejected_high": 43
+    "suspicious_log_high": 137,
+    "suspicious_log_low": 16,
+    "suspicious_log_critical": 47,
+    "suspicious_rejected_high": 36,
+    "suspicious_rejected_critical": 164
   },
   "issues": [
     {
-      "key": "startup.chest.msg4",
-      "lang": "pl",
+      "key": "achievement.70.name",
+      "lang": "ro",
       "type": "identical_to_en",
-      "en": "legiondawnport",
-      "translated": "legiondawnport"
+      "en": "Deep Sea Diver",
+      "translated": "Deep Sea Diver"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

@@ -55438,5 +55438,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:46:43.971754Z"
+  },
+  "otclient_modules.console.tr_9": {
+    "src_hash": "5b427eb87df49635a553759eba2359ab",
+    "text": "Jurnalul serverului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.499955Z"
+  },
+  "otclient_modules.createaccount_otui.tr_13": {
+    "src_hash": "c427d457c29f111c9cdf139b4cab5605",
+    "text": "Tip PvP:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.505018Z"
+  },
+  "otclient_modules.createaccount_otui.tr_9": {
+    "src_hash": "48b526d0b591335f8259bcdd2c34c6c4",
+    "text": "Tip PvP:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.508129Z"
+  },
+  "otclient_modules.graphics_otui.tr_1": {
+    "src_hash": "8ade35fdb6abe34f78026c4de4e3d51a",
+    "text": "Nu întindeți/micșorați Fereastra de joc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.543533Z"
+  },
+  "otclient_modules.house.tr_21": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stare:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.549834Z"
+  },
+  "otclient_modules.house.tr_24": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stare:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.550155Z"
+  },
+  "otclient_modules.house.tr_28": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stare:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.550605Z"
+  },
+  "otclient_modules.house.tr_99": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.559277Z"
+  },
+  "otclient_modules.imbuing.tr_9": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Imbuirea clară",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.568459Z"
+  },
+  "otclient_modules.imbuing_otui.tr_10": {
+    "src_hash": "bb2a2334aa0d8fbb37d661b97fc6c766",
+    "text": "Îmbunătăți slotul gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.569079Z"
+  },
+  "otclient_modules.imbuing_otui.tr_11": {
+    "src_hash": "18adfb026ad4b2df79b6c2ec81a59f14",
+    "text": "Selectați Slot:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.569355Z"
+  },
+  "otclient_modules.imbuing_otui.tr_15": {
+    "src_hash": "60d65769e17d580b4cc077b24ba2b1dd",
+    "text": "Informații despre articol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.569925Z"
+  },
+  "otclient_modules.imbuing_otui.tr_6": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Imbuirea clară",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.570528Z"
+  },
+  "otclient_modules.imbuing_otui.tr_7": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Faceți clic aici pentru a efectua imbuirea selectată. Acest lucru va consuma sursele astrale și aurul necesare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.571181Z"
+  },
+  "otclient_modules.items.tr_3": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.575592Z"
+  },
+  "otclient_modules.npctrade_otui.tr_10": {
+    "src_hash": "8c489d0946f66d17d73f26366a4bf620",
+    "text": "Greutate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.586249Z"
+  },
+  "otclient_modules.outfit.tr_1": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.591920Z"
+  },
+  "otclient_modules.outfit.tr_2": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.592170Z"
+  },
+  "otclient_modules.outfit.tr_3": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.592393Z"
+  },
+  "otclient_modules.outfit.tr_5": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.592833Z"
+  },
+  "otclient_modules.outfit.tr_6": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.593187Z"
+  },
+  "otclient_modules.outfit.tr_8": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.593451Z"
+  },
+  "otclient_modules.outfit.tr_9": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.593676Z"
+  },
+  "otclient_modules.player.tr_3": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Maestru Vrăjitor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.596092Z"
+  },
+  "otclient_modules.player.tr_4": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Paladinul Regal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.597016Z"
+  },
+  "otclient_modules.player.tr_5": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Cavaler de elită",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.597530Z"
+  },
+  "otclient_modules.player.tr_7": {
+    "src_hash": "39babca9e3d0ceda5051773a25fe2a4f",
+    "text": "Vrăjitor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.597973Z"
+  },
+  "otclient_modules.player.tr_9": {
+    "src_hash": "8c23b2b86573edf2a5ea482c2ccc1497",
+    "text": "Cavaler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.598503Z"
+  },
+  "otclient_modules.skills_otui.tr_24": {
+    "src_hash": "9428316ee33b703d37464160e7b7dfff",
+    "text": "Mana lipitoare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.612176Z"
+  },
+  "otclient_modules.skills_otui.tr_25": {
+    "src_hash": "a64e30d3c5a027e9821ebe7f8c8f819f",
+    "text": "Lipitoare de viață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.612708Z"
+  },
+  "otclient_modules.skills_otui.tr_3": {
+    "src_hash": "37323780191d51a33d295ac10fb98f06",
+    "text": "Impuls",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.613201Z"
+  },
+  "otclient_modules.skills_otui.tr_31": {
+    "src_hash": "37323780191d51a33d295ac10fb98f06",
+    "text": "Impuls",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.613492Z"
+  },
+  "otclient_modules.skills_otui.tr_32": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Se eschiva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.613735Z"
+  },
+  "otclient_modules.skills_otui.tr_5": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Se eschiva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.616614Z"
+  },
+  "otclient_modules.skills_otui.tr_51": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Viteză",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.616902Z"
+  },
+  "otclient_modules.spelllist_otui.tr_10": {
+    "src_hash": "8c23b2b86573edf2a5ea482c2ccc1497",
+    "text": "Cavaler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.618665Z"
+  },
+  "otclient_modules.spelllist_otui.tr_13": {
+    "src_hash": "39babca9e3d0ceda5051773a25fe2a4f",
+    "text": "Vrăjitor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.619188Z"
+  },
+  "otclient_modules.spelllist_otui.tr_23": {
+    "src_hash": "03937134cedab9078be39a77ee3a48a0",
+    "text": "Grup",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.620785Z"
+  },
+  "otclient_modules.spelllist_otui.tr_9": {
+    "src_hash": "03937134cedab9078be39a77ee3a48a0",
+    "text": "Grup",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.623440Z"
+  },
+  "otclient_modules.tasks.tr_11": {
+    "src_hash": "0d3a4946f6dad8ce0a07abe8837ba269",
+    "text": "Chiar vrei să renunți la această sarcină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.626634Z"
+  },
+  "otclient_modules.tasks.tr_13": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Vă rugăm să selectați monstru din lista de monștri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.627250Z"
+  },
+  "otclient_modules.tasks.tr_14": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Vă rugăm să selectați monstru din lista de monștri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.627702Z"
+  },
+  "otclient_modules.tasks.tr_15": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Vă rugăm să selectați monstru din lista de monștri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.628178Z"
+  },
+  "otclient_modules.textmessage.tr_2": {
+    "src_hash": "5b427eb87df49635a553759eba2359ab",
+    "text": "Jurnalul serverului",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.629916Z"
+  },
+  "otclient_modules.topmenu.tr_1": {
+    "src_hash": "28f039fec7fd63e2ccf915c52a9284bb",
+    "text": "Jucători online",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.631602Z"
+  },
+  "otclient_modules.topmenu_otui.tr_1": {
+    "src_hash": "28f039fec7fd63e2ccf915c52a9284bb",
+    "text": "Jucători online",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.632335Z"
+  },
+  "otclient_modules.updater.tr_1": {
+    "src_hash": "62a88f6e2ba35dd7ebd826a930527245",
+    "text": "Eroare de actualizare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.634880Z"
+  },
+  "otclient_modules.viplist.tr_25": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.638041Z"
+  },
+  "otclient_modules.viplist.tr_9": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:47:28.639148Z"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-17T01:09:58.240949Z",
-  "built_cycle": 109,
+  "timestamp": "2026-02-17T01:11:17.847629Z",
+  "built_cycle": 110,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -82,9 +82,9 @@
     {
       "lang": "pl",
       "json_file": "cpp.json",
-      "pending_total": 344,
-      "todo": 344,
-      "simple_todo": 173,
+      "pending_total": 302,
+      "todo": 302,
+      "simple_todo": 151,
       "missing_in_lang": 0
     },
     {
@@ -1498,9 +1498,9 @@
     {
       "lang": "sr",
       "json_file": "monsters.json",
-      "pending_total": 4798,
-      "todo": 4798,
-      "simple_todo": 4294,
+      "pending_total": 4755,
+      "todo": 4755,
+      "simple_todo": 4253,
       "missing_in_lang": 0
     },
     {

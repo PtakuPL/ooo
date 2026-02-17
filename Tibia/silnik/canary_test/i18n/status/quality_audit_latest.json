@@ -1,46 +1,18 @@
 {
-  "timestamp": "2026-02-17T01:10:01.661408Z",
+  "timestamp": "2026-02-17T01:11:18.906302Z",
   "checked_entries": 100,
-  "issues_found": 28,
+  "issues_found": 24,
   "issues_by_type": {
-    "identical_to_en": 23,
     "identical_to_en_exempt": 8,
     "artifact_token": 5,
-    "suspicious_log_high": 126,
-    "suspicious_log_critical": 21,
-    "suspicious_log_low": 53,
+    "identical_to_en": 19,
+    "suspicious_log_high": 115,
+    "suspicious_log_critical": 27,
+    "suspicious_log_low": 58,
     "suspicious_rejected_critical": 175,
     "suspicious_rejected_high": 25
   },
   "issues": [
-    {
-      "key": "raid.nomad.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

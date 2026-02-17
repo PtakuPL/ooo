@@ -2337,11 +2337,11 @@
   },
   "cpp.inspect.damage_reflection": {
     "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
-    "text": "I. odbicie",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Odbicie obrażeń",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708980Z"
+    "updated_at": "2026-02-17T01:10:21.307681Z"
   },
   "cpp.inspect.description": {
     "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
@@ -2353,11 +2353,11 @@
   },
   "cpp.inspect.invisibility": {
     "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
-    "text": "Invisibility",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Niewidzialność",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:54:36.708987Z"
+    "updated_at": "2026-02-17T01:10:53.406137Z"
   },
   "cpp.inspect.magic_level": {
     "src_hash": "6e142665254eccd39cf91a20382eca8e",
@@ -101006,5 +101006,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:05:03.543465Z"
+  },
+  "cpp.look.damage_reflection": {
+    "src_hash": "84795283af9b7d27169669991ccc1b97",
+    "text": "Odbicie obrażeń",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:21.326669Z"
+  },
+  "cpp.skill.fist_fighting": {
+    "src_hash": "b390c8df81c64a60c1ccceeb8b9ab972",
+    "text": "Walka na pięści",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:21.429251Z"
+  },
+  "cpp.skill.sword_fighting": {
+    "src_hash": "3fc8cf3adb95521626e837a7d963644a",
+    "text": "Walka na miecze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:21.431972Z"
+  },
+  "cpp.game.only_looted_some_gold": {
+    "src_hash": "556449995dfe300811b71db490cacf81",
+    "text": "Zrabowałeś tylko {0} upuszczonego złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:25.221017Z"
+  },
+  "cpp.game.quick_loot_fail_one_item": {
+    "src_hash": "6ed1556263f607620b76f0ef863323fd",
+    "text": "Nie udało Ci się zdobyć 1 przedmiotu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:25.221743Z"
+  },
+  "cpp.game.still_muted": {
+    "src_hash": "23960b78537433a98582efc006ce8d8e",
+    "text": "Nadal jesteś wyciszony przez {0} sekund.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:25.222576Z"
+  },
+  "cpp.game.you_looted": {
+    "src_hash": "26d7549202c4f7e9078c32979b3abc0d",
+    "text": "Zrabowałeś ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:32.763367Z"
+  },
+  "cpp.hotkey.using_count": {
+    "src_hash": "777696880e4dd54127cba0fa85de3271",
+    "text": "Używając jednego z {0} {1}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:32.763695Z"
+  },
+  "cpp.hotkey.using_one": {
+    "src_hash": "971227a6314d5326dab060636ff23693",
+    "text": "Używając jednego z {0}...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:32.763975Z"
+  },
+  "cpp.house.door_owned": {
+    "src_hash": "98e2375152aa622dad165cee2531ab37",
+    "text": "Należy do domu '{0}'. {1} jest właścicielem tego domu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:32.764367Z"
+  },
+  "cpp.house.door_rent": {
+    "src_hash": "470cb72558b650d06eda7f93e496ec3b",
+    "text": "Koszt wynajmu wynosi {0} złotych monet i jest rozliczany w wysokości {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:32.764783Z"
+  },
+  "cpp.house.door_size": {
+    "src_hash": "ccea0ec0938e05110e60ca4bd37e3ae4",
+    "text": "To jest {0} metrów kwadratowych.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:39.609020Z"
+  },
+  "cpp.house.door_unowned": {
+    "src_hash": "b5b6a1dbe747394480a72ca2bbea0e1a",
+    "text": "Należy do domu '{0}'. Nikt nie jest właścicielem tego domu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:39.609441Z"
+  },
+  "cpp.house.ownership_transfer_on_restart": {
+    "src_hash": "cc79fea55af06648fd3245fba49684c8",
+    "text": "Własność zostanie przeniesiona po ponownym uruchomieniu serwera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:39.609834Z"
+  },
+  "cpp.inspect.at_range": {
+    "src_hash": "75b8f2c5b6a918cd5d8c3e92564f85ab",
+    "text": "w zasięgu ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:39.610049Z"
+  },
+  "cpp.inspect.attack_plus": {
+    "src_hash": "239982a51b26f0e33b2398e550803028",
+    "text": "atak +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:39.610311Z"
+  },
+  "cpp.inspect.body_extra_slot": {
+    "src_hash": "c409cc1adaa447fa51b8328b9c0d445f",
+    "text": "dodatkowe gniazdo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:46.768662Z"
+  },
+  "cpp.inspect.body_shield_hand": {
+    "src_hash": "fe2e5f258b71f852b14b9d9e2976ba98",
+    "text": "dłoń tarczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:46.768891Z"
+  },
+  "cpp.inspect.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "szybsza regeneracja",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:46.769125Z"
+  },
+  "cpp.inspect.faster_regeneration_effect": {
+    "src_hash": "2f0ea69af6352f387480984e271315e3",
+    "text": "Szybsza regeneracja",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:46.769352Z"
+  },
+  "cpp.inspect.field_protection": {
+    "src_hash": "e9c2511c581a1eb0271bdfdfd34b458c",
+    "text": "Ochrona pola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:46.769563Z"
+  },
+  "cpp.inspect.hard_drinking": {
+    "src_hash": "f6306a7a373e97e0f0d04d7386b9f98f",
+    "text": "Ostre picie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:53.404972Z"
+  },
+  "cpp.inspect.imbuement_info": {
+    "src_hash": "b40edc2fc643c664893ea6b8d3252650",
+    "text": "{0} {1} ({2}), trwa {3}:{4}h podczas walki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:53.405373Z"
+  },
+  "cpp.inspect.imbuement_slot": {
+    "src_hash": "d8b8cbd7f322236d18b06b2bc867a167",
+    "text": "Szczelina nasycająca {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:53.405651Z"
+  },
+  "cpp.inspect.imbuement_slots": {
+    "src_hash": "59ae95b4f824cea331194109ed77bbda",
+    "text": "Gniazda nasycające",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:10:53.405880Z"
+  },
+  "cpp.inspect.magic_level_label": {
+    "src_hash": "52611a88685d2f588f58aa123f0f259c",
+    "text": "{0} Poziom magii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:00.115462Z"
+  },
+  "cpp.inspect.magic_level_value": {
+    "src_hash": "063ec72e26da337fb0a22f8ab3f241bc",
+    "text": "poziom magiczny {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:00.115792Z"
+  },
+  "cpp.inspect.n_fields": {
+    "src_hash": "3b47e1a1775bb9a2f77c62d0d1401d46",
+    "text": "Pola {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:00.115984Z"
+  },
+  "cpp.inspect.skill_boost": {
+    "src_hash": "53e0815f3b52e9ef05b9499fe2e73c05",
+    "text": "Zwiększenie umiejętności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:00.116208Z"
+  },
+  "cpp.inspect.speed_value": {
+    "src_hash": "7eea228f5fc887075934906a8f5484da",
+    "text": "prędkość {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:00.116409Z"
+  },
+  "cpp.inspect.total_expire_time": {
+    "src_hash": "37791e7ec2f07b95aeffcc0dbc14ff54",
+    "text": "Całkowity czas wygaśnięcia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:07.085211Z"
+  },
+  "cpp.inspect.tradeable_in_market": {
+    "src_hash": "a01b726d6c2da40abf99b74470ef4d7c",
+    "text": "Możliwość handlu w Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:07.085656Z"
+  },
+  "cpp.inspect.weapon_type": {
+    "src_hash": "c643de41cd81073a0ed42a807c826ab0",
+    "text": "Rodzaj broni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:07.085874Z"
+  },
+  "cpp.item.imbuement_error_reopen": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "Wystąpił błąd. Otwórz ponownie okno nasycania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:07.086263Z"
+  },
+  "cpp.item.invalid_slot": {
+    "src_hash": "8dc8f358c2df7366a75718585ce8c3dc",
+    "text": "Nieprawidłowy wybór gniazda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:07.086543Z"
+  },
+  "cpp.item.unwrap_in_house": {
+    "src_hash": "85dba66d4b7d32af19b865ba5d0f5641",
+    "text": "Rozpakuj go we własnym domu, aby stworzyć <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:11.919615Z"
+  },
+  "cpp.look.at_range": {
+    "src_hash": "769217e2ab8282871362a2ab95b451f0",
+    "text": "w zasięgu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:11.919829Z"
+  },
+  "cpp.look.brand_new": {
+    "src_hash": "67e0171e2c7b42ade21876467abc41b1",
+    "text": "to jest nowość",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:11.920070Z"
+  },
+  "cpp.look.charges_many": {
+    "src_hash": "c63a567c09992fa0d0d55e550baf33f9",
+    "text": "pozostało {0} ładunków",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:11.920351Z"
+  },
+  "cpp.look.charges_one": {
+    "src_hash": "3aba0c27b52e313ef6b5f4705492c179",
+    "text": "pozostało {0} ładunku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:11.920625Z"
+  },
+  "cpp.look.empty_slot": {
+    "src_hash": "f2c178e7e1a9f372a2824974c4cffaac",
+    "text": "Puste miejsce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:11:15.037229Z"
   }
 }

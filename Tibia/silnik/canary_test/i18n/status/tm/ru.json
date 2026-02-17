@@ -32038,5 +32038,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:50:29.287120Z"
+  },
+  "quests.movements_teleportto.say_2": {
+    "src_hash": "7b956ca96a7b5ef2bfcce78c9ebc6720",
+    "text": "Сначала вам нужно справиться с задачей!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:50.471223Z"
+  },
+  "quests.movements_teleportto.say_3": {
+    "src_hash": "0c24db16ceecc9286020828260abcbdf",
+    "text": "Вам нужно справиться с этим последним испытанием за 5 минут!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:50.471777Z"
+  },
+  "quests.oramond.blue_pollen_say_1": {
+    "src_hash": "68e37a8d8264d7fc6abc83fa0842f16c",
+    "text": "Аху! Вы просыпаете пыльцу в сумку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:50.472145Z"
+  },
+  "quests.oramond.blue_pollen_say_2": {
+    "src_hash": "374336a189f0fda11013b303fba14572",
+    "text": "Вы собрали вонючую пыльцу в мешок.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:50.472498Z"
+  },
+  "quests.others.exterminator_say_1": {
+    "src_hash": "659cdc5427e03f38845aceba5250242f",
+    "text": "Эта миссия отвратительна... и теперь ты тоже!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:53.061895Z"
+  },
+  "quests.others.exterminator_say_2": {
+    "src_hash": "a9e3b1f425ade1574acbeffc6504f6ed",
+    "text": "Вы тщательно собираете чернила Квара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:53.062318Z"
+  },
+  "quests.others.exterminator_say_3": {
+    "src_hash": "eecc893560cfc96ca6f1fdfad19a8f3c",
+    "text": "Вы тщательно собираете кровь сталкера.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:53.062800Z"
+  },
+  "quests.others.holy_water_damaged": {
+    "src_hash": "b86e21aff07806515d22d2c792f4feab",
+    "text": "%s повредил теневую связь! Вы не сможете повредить его, пока он горит.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:55.470949Z"
+  },
+  "quests.others.holy_water_destroyed": {
+    "src_hash": "8aa0e3d028a181eecbdd33685f79754d",
+    "text": "%s уничтожил теневую связь! Через 10 секунд он вернется в исходное состояние.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:55.471597Z"
+  },
+  "quests.pits_of_inferno.flipped_lever": {
+    "src_hash": "63c60e89cdd7672905b6c37020f83841",
+    "text": "Вы щелкнули рычагом {0}. Спешите найти следующий!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:55.472028Z"
+  },
+  "quests.pits_of_inferno.throne_say_1": {
+    "src_hash": "6bed9ad765a41aea118ed6b6d41a2e9a",
+    "text": "Вы прикоснулись к трону Инфернатила и поглотили часть его духа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:51:55.472464Z"
   }
 }

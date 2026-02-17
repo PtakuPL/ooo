@@ -29222,5 +29222,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:34:13.705011Z"
+  },
+  "monster.iron_servant.desc": {
+    "src_hash": "2ea3ede351b9c83618d4bdd338795607",
+    "text": "un servitor de fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:30.233444Z"
+  },
+  "monster.golden_servant_replica.name": {
+    "src_hash": "957c4b199ad13617f92ebf557bf8fa10",
+    "text": "Replica Servitorului de Aur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:30.233732Z"
+  },
+  "monster.golden_servant_replica.desc": {
+    "src_hash": "d9541eddc1334370fd725415e38a9940",
+    "text": "o replică de aur a servitorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:30.234036Z"
   }
 }

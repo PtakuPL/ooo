@@ -24238,5 +24238,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:33:05.257501Z"
+  },
+  "monster.izcandar_champion_of_winter.voice_1": {
+    "src_hash": "302a99347bf20c5d7c746f033250cb29",
+    "text": "Мечта или кошмар?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:41.001999Z"
+  },
+  "monster.izcandar_champion_of_summer.voice_1": {
+    "src_hash": "302a99347bf20c5d7c746f033250cb29",
+    "text": "Мечта или кошмар?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:41.008439Z"
+  },
+  "monster.goblin_assassin.voice_5": {
+    "src_hash": "6ba9e373aa63c79ea395e071aa850adc",
+    "text": "Черт побери!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:55.290883Z"
+  },
+  "monster.bulltaur_brute.name": {
+    "src_hash": "1f70f552470ba8356a6fe8bb9d0866c1",
+    "text": "Буллтаур-зверь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:55.291136Z"
+  },
+  "monster.bulltaur_brute.desc": {
+    "src_hash": "b676c86ee915b22e47c3a174fb7d24e2",
+    "text": "Буллтаур-зверь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:55.291373Z"
+  },
+  "monster.bulltaur_brute.voice_1": {
+    "src_hash": "ac19781b36db3efca5e50dbfbc08d7ce",
+    "text": "Пришло время молотка!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:55.291637Z"
+  },
+  "monster.bulltaur_brute.voice_2": {
+    "src_hash": "cdf5fc51db54ca83f04d19396db79503",
+    "text": "Я сделаю небольшое сокращение!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:55.291944Z"
+  },
+  "monster.bulltaur_brute.voice_3": {
+    "src_hash": "c46aa070cdfba577225d562681c9e2dc",
+    "text": "Это будет настоящий хит!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:57.894740Z"
+  },
+  "monster.orc_marauder.name": {
+    "src_hash": "4015a8936e5b214c49b36f3c34da5c47",
+    "text": "Орк-Мародер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:57.895163Z"
+  },
+  "monster.orc_marauder.desc": {
+    "src_hash": "de09731bbe6f5fc50f7826bf416c73fa",
+    "text": "орк-мародер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:57.895420Z"
+  },
+  "monster.dwarf_geomancer.name": {
+    "src_hash": "50eae356059cb314fe5718c324201375",
+    "text": "Карлик-геомант",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:57.895659Z"
+  },
+  "monster.dwarf_geomancer.desc": {
+    "src_hash": "d880afb78c4c5cddff9168984421993d",
+    "text": "карлик-геомант",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:57.895900Z"
+  },
+  "monster.dwarf_geomancer.voice_2": {
+    "src_hash": "b48dbfd401d0ab470ab16244a25570d1",
+    "text": "Земля – самая сильная стихия.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:01.534319Z"
+  },
+  "monster.dwarf_geomancer.voice_3": {
+    "src_hash": "e1d6715a408e192e023ee5a7dde9b69f",
+    "text": "Пыль к пыли.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:01.534658Z"
+  },
+  "monster.chakoya_toolshaper.name": {
+    "src_hash": "9cd319aa5f73a4e82fb7bb8378dfb501",
+    "text": "Чакойя Инструментальный мастер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:01.534997Z"
+  },
+  "monster.chakoya_toolshaper.desc": {
+    "src_hash": "aed9955dc3720da67598ddccfb12bd47",
+    "text": "мастер по изготовлению инструментов чакоя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:01.535313Z"
+  },
+  "monster.chakoya_toolshaper.voice_1": {
+    "src_hash": "7a2ea89be5ce9d682c22f3cdca37d45d",
+    "text": "Чикува!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:03.681724Z"
+  },
+  "monster.chakoya_toolshaper.voice_2": {
+    "src_hash": "6cda28f0bc5a28ce4e7061456c4c2728",
+    "text": "Джинума джем!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:35:03.681976Z"
   }
 }

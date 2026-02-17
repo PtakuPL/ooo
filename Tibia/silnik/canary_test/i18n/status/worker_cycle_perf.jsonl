@@ -6897,3 +6897,7 @@
 {"timestamp": "2026-02-17T01:33:46.466409Z", "cycle": 126, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 1903, "detail": "count=items.json"}
 {"timestamp": "2026-02-17T01:34:15.428323Z", "cycle": 126, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 28845, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T01:34:20.418181Z", "cycle": 126, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 4779, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T01:34:29.594015Z", "cycle": 126, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "cycle_total", "duration_ms": 45202, "detail": "delay=4"}
+{"timestamp": "2026-02-17T01:34:34.456294Z", "cycle": 127, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 619, "detail": "count=monsters.json"}
+{"timestamp": "2026-02-17T01:35:45.935625Z", "cycle": 127, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 71342, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T01:35:51.118224Z", "cycle": 127, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 4980, "detail": "throttle_every=1"}

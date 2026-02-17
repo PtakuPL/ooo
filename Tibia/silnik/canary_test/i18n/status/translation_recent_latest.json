@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T01:34:13.786462Z",
-  "language": "ro",
-  "json_file": "items.json",
-  "translated": 34,
+  "timestamp": "2026-02-17T01:35:44.968083Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "item.3176.name",
-      "en": "poison wall rune",
-      "translated": "Poison Wall Rune",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "item.3177.name",
-      "en": "convince creature rune",
-      "translated": "Convince Creature Rune",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "item.3180.name",
-      "en": "magic wall rune",
-      "translated": "Magic Wall Rune",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "item.3182.name",
-      "en": "holy missile rune",
-      "translated": "Holy Missile Rune",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "item.3188.name",
-      "en": "fire field rune",
-      "translated": "Fire Field Rune",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "item.3190.name",
-      "en": "fire wall rune",
-      "translated": "Fire Wall Rune",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "item.3191.name",
-      "en": "great fireball rune",
-      "translated": "Great Fireball Rune",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "item.3192.name",
-      "en": "fire bomb rune",
-      "translated": "Fire Bomb Rune",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "item.3203.name",
-      "en": "animate dead rune",
-      "translated": "Animate Dead Rune",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "item.10216.name",
-      "en": "dragon statue kit",
-      "translated": "kit statuie dragon",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "item.11631.desc",
-      "en": "It's an adorned disintegrate rune",
-      "translated": "Este o rună dezintegrată împodobită",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "item.11632.desc",
-      "en": "It's an adorned disintegrate rune",
-      "translated": "Este o rună dezintegrată împodobită",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "item.11633.desc",
-      "en": "It's an adorned chameleon rune",
-      "translated": "Este o rună cameleonică împodobită",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "item.11634.desc",
-      "en": "It's an adorned chameleon rune",
-      "translated": "Este o rună cameleonică împodobită",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "item.11635.desc",
-      "en": "It's an adorned energy wall rune",
-      "translated": "Este o rună de perete energetic împodobită",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.11636.desc",
-      "en": "It's an adorned energy wall rune",
-      "translated": "Este o rună de perete energetic împodobită",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.11637.desc",
-      "en": "It's an adorned soulfire rune",
-      "translated": "Este o rună de foc de suflet împodobită",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.11638.desc",
-      "en": "It's an adorned soulfire rune",
-      "translated": "Este o rună de foc de suflet împodobită",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "item.11639.desc",
-      "en": "It's an adorned destroy field rune",
-      "translated": "Este o rună de câmp de distrugere împodobită",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "item.11640.desc",
-      "en": "It's an adorned destroy field rune",
-      "translated": "Este o rună de câmp de distrugere împodobită",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:08:21.587846Z"
+    "updated_at": "2026-02-17T09:03:11.947888Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -28110,5 +28110,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:40:56.907056Z"
+  },
+  "item.7745.name": {
+    "src_hash": "a23e369a288f6a8e7491187b64235ee6",
+    "text": "Lavahål",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.479662Z"
+  },
+  "item.7761.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.481170Z"
+  },
+  "item.7885.name": {
+    "src_hash": "83e4a96aed96436c621b9809e258b309",
+    "text": "Fisk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.484435Z"
+  },
+  "item.8518.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.504850Z"
+  },
+  "item.937.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "gräs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.533353Z"
+  },
+  "item.9518.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.537857Z"
+  },
+  "item.9636.name": {
+    "src_hash": "efacf2f7609bd7cd6bac70c8feed3f22",
+    "text": "Brännande hjärta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.543844Z"
+  },
+  "item.9893.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.549584Z"
+  },
+  "item.9895.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "sten väggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:09.550065Z"
+  },
+  "item.10476.desc": {
+    "src_hash": "93cbc952cf02920106dd8b2154f775e2",
+    "text": "Det ryktas att det ska ge dig lycka till! Lycka sponsrad av TibiaLottery",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:20.208591Z"
+  },
+  "item.10476.name": {
+    "src_hash": "40b25f4a6a4f4fa20e43c63414523461",
+    "text": "lycklig klöver amulett",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:20.208961Z"
+  },
+  "item.10477.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "En bägare smidd av draken Khax som representerar all kunskap och visdom i TibiaVenezuela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:20.209637Z"
+  },
+  "item.10477.name": {
+    "src_hash": "4f318e0a54f6ab67b88c1bb1bc772073",
+    "text": "drakbägare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:20.209934Z"
+  },
+  "item.10480.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "smutsgolv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:20.210190Z"
+  },
+  "item.10494.name": {
+    "src_hash": "de9ed21792aa6abad10d5e451ff7dbe6",
+    "text": "lerigt vatten",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:25.015921Z"
+  },
+  "item.105.name": {
+    "src_hash": "7f7eeecbd1e8f8c87f8cc7d1d94393d9",
+    "text": "giftfält",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:25.016153Z"
+  },
+  "item.10507.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lampa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:25.016323Z"
+  },
+  "item.10592.name": {
+    "src_hash": "1f3c9ba53e23b28a905054f9d45d98dc",
+    "text": "svavel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:25.016491Z"
+  },
+  "item.10605.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "lera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:25.016643Z"
+  },
+  "item.1066.name": {
+    "src_hash": "f6ebf0b92fc41a2a572d58163b3ec3f8",
+    "text": "lerfläck",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:29.422365Z"
+  },
+  "item.1067.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "fälla",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:29.422586Z"
+  },
+  "item.1068.name": {
+    "src_hash": "f80a3a26775f8f87ce279ce2d0d9e29f",
+    "text": "myrstigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:29.422959Z"
   }
 }

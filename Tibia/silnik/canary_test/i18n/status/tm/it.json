@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:07:56.188052Z"
+    "updated_at": "2026-02-17T09:00:27.353854Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -62006,5 +62006,173 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:53:18.009742Z"
+  },
+  "web.tpl.account.change_password.set_1": {
+    "src_hash": "8f1e77e0d2be21da93cd4d9a939148f7",
+    "text": "Cambiare la password",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:23.197913Z"
+  },
+  "web.tpl.account.management.set_9": {
+    "src_hash": "ac29ac870be15bac0b632b58d3c6f76b",
+    "text": "Tabella3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:23.201976Z"
+  },
+  "web.tpl.guilds.view.set_3": {
+    "src_hash": "2d7ca5f4c91352980578888f57169250",
+    "text": "Guild Membri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:38.078931Z"
+  },
+  "web.tpl.guilds.view.set_4": {
+    "src_hash": "645b2a3180561875a648c36414cf1cd7",
+    "text": "Personaggi invitati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:38.079204Z"
+  },
+  "web.tpl.guilds.view.set_5": {
+    "src_hash": "17ef7423990528bf4d4af7debb42f827",
+    "text": "Invita personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:38.079434Z"
+  },
+  "web.tpl.guilds.view.set_6": {
+    "src_hash": "3c362f739cbb5d8f4ea2ba9328f81d39",
+    "text": "_sbutton_invitecharacter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:38.079781Z"
+  },
+  "web.tpl.guilds.view.set_7": {
+    "src_hash": "2d26152d960deeab6b514a522b4d3de8",
+    "text": "Modifica gradi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:38.079989Z"
+  },
+  "web.tpl.guilds.view.set_8": {
+    "src_hash": "f7b06e4a04387a8a6ba9841f03c86a6a",
+    "text": "_sbutton_editranks",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:45.527893Z"
+  },
+  "web.tpl.guilds.view.set_9": {
+    "src_hash": "732bdad0cef4163c359695b67ca3313f",
+    "text": "Lascia Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:13.798046Z"
+  },
+  "web.tpl.guilds.view.set_10": {
+    "src_hash": "5f366df0a0a987c0553aaf095fc32bd8",
+    "text": "_sbutton_leaveguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:13.798863Z"
+  },
+  "web.tpl.guilds.view.td_6": {
+    "src_hash": "b9a890e0f9d799d32dcd879c9c3ef65a",
+    "text": "Nessun personaggio invitato trovato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:13.799526Z"
+  },
+  "web.tpl.guilds.accept_invite.b_1": {
+    "src_hash": "00b177e080ff1c3d340997fb01c3951c",
+    "text": "Accetta l'invito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:13.800050Z"
+  },
+  "web.tpl.admin.visitors.th_2": {
+    "src_hash": "5e5914912e8d2f2765525840acf98bea",
+    "text": "Ultima visita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:16.730128Z"
+  },
+  "web.tpl.admin.visitors.th_3": {
+    "src_hash": "193cfc9be3b995831c6af2fea6650e60",
+    "text": "Pagina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:16.730350Z"
+  },
+  "web.tpl.admin.visitors.th_4": {
+    "src_hash": "ef15fd2f45e6bb5ce57587895ba64f93",
+    "text": "Navigatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:16.730533Z"
+  },
+  "web.tpl.admin.menus.js.label_2": {
+    "src_hash": "ef2f59f06132ddc2e1bc8d00abbe6e02",
+    "text": "Collegamento:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:16.731198Z"
+  },
+  "web.tpl.guilds.delete_invite.set_1": {
+    "src_hash": "43a0de7b42ae4fcbbb7c7d03b0b06c3c",
+    "text": "Elimina l'invito del giocatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:20.266768Z"
+  },
+  "web.tpl.bans.b_4": {
+    "src_hash": "fffcb4d1e12c96b2f571f77ad25878b8",
+    "text": "Motivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:20.268115Z"
+  },
+  "web.tpl.bans.b_5": {
+    "src_hash": "0be8406951cdfda82f00f79328cf4efc",
+    "text": "Commento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:20.268532Z"
+  },
+  "web.tpl.bans.b_6": {
+    "src_hash": "a797f83639a61869111aa5283ab880a2",
+    "text": "Aggiunto da:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:23.946795Z"
+  },
+  "web.tpl.guilds.kick_player.set_1": {
+    "src_hash": "73834873aab320a00574f5329520f3df",
+    "text": "Calcia il giocatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:01:23.947160Z"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-17T08:53:43.903696Z",
-  "built_cycle": 391,
+  "timestamp": "2026-02-17T09:03:32.037334Z",
+  "built_cycle": 393,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -498,9 +498,9 @@
     {
       "lang": "it",
       "json_file": "html.json",
-      "pending_total": 1230,
-      "todo": 1230,
-      "simple_todo": 420,
+      "pending_total": 1212,
+      "todo": 1212,
+      "simple_todo": 402,
       "missing_in_lang": 0
     },
     {
@@ -538,8 +538,8 @@
     {
       "lang": "it",
       "json_file": "monsters.json",
-      "pending_total": 642,
-      "todo": 642,
+      "pending_total": 641,
+      "todo": 641,
       "simple_todo": 611,
       "missing_in_lang": 0
     },
@@ -682,9 +682,9 @@
     {
       "lang": "ru",
       "json_file": "cpp.json",
-      "pending_total": 354,
-      "todo": 354,
-      "simple_todo": 190,
+      "pending_total": 332,
+      "todo": 332,
+      "simple_todo": 189,
       "missing_in_lang": 0
     },
     {
@@ -874,9 +874,9 @@
     {
       "lang": "ro",
       "json_file": "books.json",
-      "pending_total": 1092,
-      "todo": 1092,
-      "simple_todo": 300,
+      "pending_total": 1079,
+      "todo": 1079,
+      "simple_todo": 297,
       "missing_in_lang": 0
     },
     {
@@ -922,9 +922,9 @@
     {
       "lang": "ro",
       "json_file": "html.json",
-      "pending_total": 1227,
-      "todo": 1227,
-      "simple_todo": 419,
+      "pending_total": 1214,
+      "todo": 1214,
+      "simple_todo": 406,
       "missing_in_lang": 0
     },
     {
@@ -1170,9 +1170,9 @@
     {
       "lang": "sv",
       "json_file": "items.json",
-      "pending_total": 16261,
-      "todo": 16261,
-      "simple_todo": 13781,
+      "pending_total": 16239,
+      "todo": 16239,
+      "simple_todo": 13761,
       "missing_in_lang": 0
     },
     {
@@ -1458,17 +1458,17 @@
     {
       "lang": "sr",
       "json_file": "npc.json",
-      "pending_total": 776,
-      "todo": 776,
+      "pending_total": 774,
+      "todo": 774,
       "simple_todo": 16,
       "missing_in_lang": 0
     },
     {
       "lang": "sr",
       "json_file": "npclib.json",
-      "pending_total": 147,
-      "todo": 147,
-      "simple_todo": 31,
+      "pending_total": 145,
+      "todo": 145,
+      "simple_todo": 29,
       "missing_in_lang": 0
     },
     {

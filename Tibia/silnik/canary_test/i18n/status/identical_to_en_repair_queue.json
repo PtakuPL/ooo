@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T08:51:09.396581Z",
+  "timestamp": "2026-02-17T09:01:45.935522Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 699,
+  "entries_total": 698,
   "entries_by_lang": {
     "es": 262,
     "pl": 139,
@@ -73,7 +73,7 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 462,
+    "it": 465,
     "nl": 691,
     "pt": 620,
     "ro": 434,
@@ -107,7 +107,7 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 279,
+    "sr": 275,
     "sv": 566,
     "sw": 905,
     "ta": 905,
@@ -628,7 +628,7 @@
     {
       "lang": "it",
       "json_file": "monsters.json",
-      "identical_to_en": 27,
+      "identical_to_en": 26,
       "domain_priority": 8
     },
     {
@@ -640,7 +640,7 @@
     {
       "lang": "it",
       "json_file": "questlog.json",
-      "identical_to_en": 14,
+      "identical_to_en": 15,
       "domain_priority": 9
     },
     {
@@ -652,7 +652,7 @@
     {
       "lang": "it",
       "json_file": "html.json",
-      "identical_to_en": 9,
+      "identical_to_en": 12,
       "domain_priority": 9
     },
     {

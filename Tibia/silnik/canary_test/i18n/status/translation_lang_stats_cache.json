@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T08:59:28.306222Z",
+  "timestamp": "2026-02-17T09:03:42.739371Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 49,
   "cache_misses": 3,
-  "file_cache_hits": 1970,
-  "file_cache_misses": 6,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771318294512124864,
+          1771318930290176808,
           1847374
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771318294512124864,
+            1771318930290176808,
             1847374
           ],
           "row": {
@@ -15975,8 +15975,8 @@
         [
           "html.json",
           1,
-          1771315695914651446,
-          106031
+          1771318883950026851,
+          105981
         ],
         [
           "items.json",
@@ -16134,17 +16134,17 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 25819,
-        "english_copy_keys": 2128,
+        "translated_keys": 25837,
+        "english_copy_keys": 2131,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 48.18,
+        "completion_pct": 48.22,
         "server_keys": 49731,
         "server_translated": 24790,
         "server_pct": 49.85,
         "client_keys": 3855,
-        "client_translated": 1029,
-        "client_pct": 26.69
+        "client_translated": 1047,
+        "client_pct": 27.16
       },
       "files": {
         "achievements.json": {
@@ -16318,13 +16318,13 @@
         "html.json": {
           "sig": [
             1,
-            1771315695914651446,
-            106031
+            1771318883950026851,
+            105981
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 260,
-            "english_copy_keys": 14,
+            "translated_keys": 278,
+            "english_copy_keys": 17,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -26877,8 +26877,8 @@
         [
           "books.json",
           1,
-          1771315763170928766,
-          306694
+          1771318983902339591,
+          306845
         ],
         [
           "chatchannels.json",
@@ -26937,8 +26937,8 @@
         [
           "html.json",
           1,
-          1771315667374531087,
-          106011
+          1771318817957822456,
+          105995
         ],
         [
           "items.json",
@@ -27096,17 +27096,17 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 21212,
+        "translated_keys": 21238,
         "english_copy_keys": 2310,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 39.58,
+        "completion_pct": 39.63,
         "server_keys": 49731,
-        "server_translated": 20127,
-        "server_pct": 40.47,
+        "server_translated": 20140,
+        "server_pct": 40.5,
         "client_keys": 3855,
-        "client_translated": 1085,
-        "client_pct": 28.15
+        "client_translated": 1098,
+        "client_pct": 28.48
       },
       "files": {
         "achievements.json": {
@@ -27140,12 +27140,12 @@
         "books.json": {
           "sig": [
             1,
-            1771315763170928766,
-            306694
+            1771318983902339591,
+            306845
           ],
           "row": {
             "total_reference_keys": 1403,
-            "translated_keys": 311,
+            "translated_keys": 324,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -27280,12 +27280,12 @@
         "html.json": {
           "sig": [
             1,
-            1771315667374531087,
-            106011
+            1771318817957822456,
+            105995
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 263,
+            "translated_keys": 276,
             "english_copy_keys": 20,
             "missing_keys": 0,
             "missing_files": 0
@@ -27720,7 +27720,7 @@
         [
           "html.json",
           1,
-          1771315700882671613,
+          1771318898010069409,
           115319
         ],
         [
@@ -28063,7 +28063,7 @@
         "html.json": {
           "sig": [
             1,
-            1771315700882671613,
+            1771318898010069409,
             115319
           ],
           "row": {
@@ -30858,8 +30858,8 @@
         [
           "items.json",
           1,
-          1771315774806972940,
-          920528
+          1771319015942435412,
+          921076
         ],
         [
           "libs.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 23837,
+        "translated_keys": 23887,
         "english_copy_keys": 1460,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 44.48,
+        "completion_pct": 44.58,
         "server_keys": 49731,
-        "server_translated": 23736,
-        "server_pct": 47.73,
+        "server_translated": 23786,
+        "server_pct": 47.83,
         "client_keys": 3855,
         "client_translated": 101,
         "client_pct": 2.62
@@ -31209,12 +31209,12 @@
         "items.json": {
           "sig": [
             1,
-            1771315774806972940,
-            920528
+            1771319015942435412,
+            921076
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 1070,
+            "translated_keys": 1120,
             "english_copy_keys": 2,
             "missing_keys": 0,
             "missing_files": 0
@@ -31641,8 +31641,8 @@
         [
           "items.json",
           1,
-          1771315768326948836,
-          906510
+          1771319009450415086,
+          906410
         ],
         [
           "libs.json",
@@ -31794,14 +31794,14 @@
         "language_name": "Szwedzki",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 14454,
+        "translated_keys": 14476,
         "english_copy_keys": 2331,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 26.97,
+        "completion_pct": 27.01,
         "server_keys": 49731,
-        "server_translated": 14312,
-        "server_pct": 28.78,
+        "server_translated": 14334,
+        "server_pct": 28.82,
         "client_keys": 3855,
         "client_translated": 142,
         "client_pct": 3.68
@@ -31992,12 +31992,12 @@
         "items.json": {
           "sig": [
             1,
-            1771315768326948836,
-            906510
+            1771319009450415086,
+            906410
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 796,
+            "translated_keys": 818,
             "english_copy_keys": 22,
             "missing_keys": 0,
             "missing_files": 0

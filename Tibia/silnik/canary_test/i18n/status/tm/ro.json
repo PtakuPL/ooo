@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:07:20.575051Z"
+    "updated_at": "2026-02-17T08:59:54.862157Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -55846,5 +55846,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:52:33.238492Z"
+  },
+  "web.tpl.guilds.leave_guild.b_1": {
+    "src_hash": "dbcddf59715ed61bd15228b410c5b3eb",
+    "text": "Pleacă de la Guild",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:59:50.729650Z"
+  },
+  "web.tpl.guilds.view.td_6": {
+    "src_hash": "b9a890e0f9d799d32dcd879c9c3ef65a",
+    "text": "Nu s-au găsit caractere invitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:02.131857Z"
+  },
+  "web.tpl.guilds.accept_invite.b_1": {
+    "src_hash": "00b177e080ff1c3d340997fb01c3951c",
+    "text": "Acceptă invitația",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:02.132658Z"
+  },
+  "web.tpl.admin.visitors.th_2": {
+    "src_hash": "5e5914912e8d2f2765525840acf98bea",
+    "text": "Ultima vizită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:05.821590Z"
+  },
+  "web.tpl.admin.visitors.th_3": {
+    "src_hash": "193cfc9be3b995831c6af2fea6650e60",
+    "text": "Pagină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:05.821811Z"
+  },
+  "web.tpl.buttons.login.set_1": {
+    "src_hash": "99dea78007133396a7b8ed70578ac6ae",
+    "text": "Log in",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:05.822514Z"
+  },
+  "web.tpl.admin.menus.js.label_2": {
+    "src_hash": "ef2f59f06132ddc2e1bc8d00abbe6e02",
+    "text": "Legătură:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:05.822763Z"
+  },
+  "web.tpl.guilds.delete_invite.set_1": {
+    "src_hash": "43a0de7b42ae4fcbbb7c7d03b0b06c3c",
+    "text": "Șterge invitația jucătorului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:09.746745Z"
+  },
+  "web.tpl.bans.b_4": {
+    "src_hash": "fffcb4d1e12c96b2f571f77ad25878b8",
+    "text": "Motiv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:09.747442Z"
+  },
+  "web.tpl.bans.b_5": {
+    "src_hash": "0be8406951cdfda82f00f79328cf4efc",
+    "text": "Comentariu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:09.747618Z"
+  },
+  "web.tpl.bans.b_6": {
+    "src_hash": "a797f83639a61869111aa5283ab880a2",
+    "text": "Adăugat de:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:16.171101Z"
+  },
+  "web.tpl.account.welcome_mail.h3_1": {
+    "src_hash": "2e459a51ca4e81bcb29400a766ddd2f5",
+    "text": "Dragă jucător,",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:16.172018Z"
+  },
+  "web.tpl.account.characters.change_comment.span_1": {
+    "src_hash": "240f3031f25601fa128bd4e15f0a37de",
+    "text": "Comentariu:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:00:17.957580Z"
+  },
+  "ui.readable.nothing_written": {
+    "src_hash": "9e448afdf325b70003bf08c90a437317",
+    "text": "Nu este scris nimic pe el",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:31.644883Z"
+  },
+  "ui.readable.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Ești prea departe ca să-l citești",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:31.645422Z"
+  },
+  "book.otbm.example_how_to_talk_with": {
+    "src_hash": "91eeff94bc841f2eaa9cfbf625997ebd",
+    "text": "Example cum să vorbești cu NPC-ul:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:54.750695Z"
+  },
+  "book.otbm.exchange_for_certain_services_that": {
+    "src_hash": "1bc7c82d2072bd060f059145e62f8a80",
+    "text": "schimb pentru anumite servicii care nu au fost mai detaliat în actele instanţei. Străinul a fost găsit vinovat fără judecată și condamnat la trei ani de muncă în saline. Soldatul Kamahl a susținut că tatăl său Indril a fost vinovat de vrăjitorie. Sub patul acuzatului au fost găsite mai multe texte obscure. Indril a fost alungat din oraș, iar proprietatea sa a fost împărțită în mod egal între faraon și moștenitorii săi. Străinul Todd Ballory a fost declarat vinovat de uciderea supraveghetorului Barnak, un tată a șaisprezece copii și un membru respectabil al asociației locale de bici. Condamnatul amintit a fost condamnat la o apariție finală destul de spectaculoasă în arena locală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:54.752981Z"
+  },
+  "book.otbm.exchange_rate_100_gold_coins": {
+    "src_hash": "391a1868ffece2f1125c5fd3231562cf",
+    "text": "curs de schimb: 100 de monede de aur egal cu 1 monedă de platină - 100 de monede de platină egal cu 1 monedă de cristal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:54.753569Z"
+  },
+  "book.otbm.exercise_dummies_now_available_for": {
+    "src_hash": "c7eeeb6b7fef6b0073af82c7e8845a93",
+    "text": "Manechinele de exerciții sunt acum disponibile pentru antrenament cu arme desemnate! (Folosirea oricăror arme reale pentru exerciții pe un manechin este interzisă.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:54.754212Z"
+  },
+  "book.otbm.exercise_dummies_now_available_for_c7eeeb6b": {
+    "src_hash": "c7eeeb6b7fef6b0073af82c7e8845a93",
+    "text": "Manechinele de exerciții sunt acum disponibile pentru antrenament cu arme desemnate! (Folosirea oricăror arme reale pentru exerciții pe un manechin este interzisă.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:02:54.754819Z"
+  },
+  "book.otbm.fact_is_that_each_talon": {
+    "src_hash": "9c45a21ee2f469bfe20c4f05e8727a51",
+    "text": "Adevărul este că fiecare Talon conține o putere magică uriașă în interior. Trebuie doar să găsim o modalitate de a elibera această putere și mai important să controlăm această putere, astfel încât să o putem folosi în scopurile noastre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:00.251817Z"
+  },
+  "book.otbm.famous_necromants_by_muriel": {
+    "src_hash": "4929034829f10429ff6e40bcbb46547e",
+    "text": "Necromanți celebri de Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:00.252201Z"
+  },
+  "book.otbm.fardos_fulfilled_by_the_need": {
+    "src_hash": "f146807b0bd8fd753cc64024ed919563",
+    "text": "Fardos împlinit de nevoia de a crea și de a da naștere. El a intrat în existență și a început imediat cu actul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:00.252751Z"
+  },
+  "book.otbm.fasul_abrek_founder_of_the": {
+    "src_hash": "bf41f65c522e7769ed09971cc89cae15",
+    "text": "Fasul Abrek, fondatorul breslei aventurierii, erou căzut, ucigaș de regi, și-a găsit sfârșitul în mâinile lui Elane.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:00.253367Z"
+  },
+  "book.otbm.feel_free_to_explore_our": {
+    "src_hash": "2fa655912341557464a215106db8b6f6",
+    "text": "Simțiți-vă liber să explorați cercetările noastre! Vă rugăm să nu atingeți exponate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:03.899470Z"
+  },
+  "book.otbm.feeling_alone_in_the_dark": {
+    "src_hash": "185ae90de118c5204992c70dbc633ed1",
+    "text": "Te simți singur în întuneric?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:03:03.899816Z"
   }
 }

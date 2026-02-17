@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T08:55:15.191663Z",
-  "language": "ru",
-  "json_file": "cpp.json",
-  "translated": 44,
+  "timestamp": "2026-02-17T09:03:36.755101Z",
+  "language": "sr",
+  "json_file": "items.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "cpp.look.nothing_written",
-      "en": "Nothing is written on it",
-      "translated": "На нем ничего не написано",
-      "source": "google_translate"
+      "key": "item.3192.name",
+      "en": "fire bomb rune",
+      "translated": "Руна ватрене бомбе",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.of_level_or_higher",
-      "en": " of level {0} or higher",
-      "translated": "уровня {0} или выше",
-      "source": "google_translate"
+      "key": "item.31926.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.protection_all_fields_fmt",
-      "en": "protection all fields {0}%",
-      "translated": "защита всех полей {0}%",
-      "source": "google_translate"
+      "key": "item.31928.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.protection_all_fmt",
-      "en": "protection all {0}%",
-      "translated": "защита все {0}%",
-      "source": "google_translate"
+      "key": "item.31929.name",
+      "en": "unknown",
+      "translated": "непознато",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.they_weigh",
-      "en": "They weigh {0} oz.",
-      "translated": "Они весят {0} унций.",
-      "source": "google_translate"
+      "key": "item.31930.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.tier_amplification",
-      "en": "{0}% Amplification",
-      "translated": "{0}% Усиление",
-      "source": "google_translate"
+      "key": "item.3195.name",
+      "en": "soulfire rune",
+      "translated": "Соулфире Руне",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.tier_momentum",
-      "en": "{0}% Momentum",
-      "translated": "{0}% Импульс",
-      "source": "google_translate"
+      "key": "item.31957.name",
+      "en": "unknown",
+      "translated": "непознато",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.tier_onslaught",
-      "en": "{0}% Onslaught",
-      "translated": "{0}% Натиск",
-      "source": "google_translate"
+      "key": "item.31960.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.tier_transcendence",
-      "en": "{0}% Transcendence",
-      "translated": "{0}% трансцендентность",
-      "source": "google_translate"
+      "key": "item.31962.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.too_far_to_read",
-      "en": "You are too far away to read it",
-      "translated": "Ты слишком далеко, чтобы прочитать это",
-      "source": "google_translate"
+      "key": "item.3197.name",
+      "en": "disintegrate rune",
+      "translated": "Дезинтегрисати Руне",
+      "source": "simple"
     },
     {
-      "key": "cpp.look.wield_by",
-      "en": "It can only be wielded properly by ",
-      "translated": "Правильно владеть им можно только ",
-      "source": "google_translate"
+      "key": "item.3198.name",
+      "en": "heavy magic missile rune",
+      "translated": "Руна тешке магичне ракете",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.bought_bag_currency",
-      "en": "Bought {0}x {1} for {2} {3} and 1 shopping bag for {4} gold coins.",
-      "translated": "Купили {0}x {1} за {2} {3} и 1 сумку для покупок за {4} золотых монет.",
-      "source": "google_translate"
+      "key": "item.3200.name",
+      "en": "explosion rune",
+      "translated": "Екплосион Руне",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.bought_bag_gold",
-      "en": "Bought {0}x {1} and 1 shopping bag for {2} gold coins.",
-      "translated": "Купили {0}x {1} и 1 сумку для покупок за {2} золотых монет.",
-      "source": "google_translate"
+      "key": "item.3202.name",
+      "en": "thunderstorm rune",
+      "translated": "Тхундерсторм Руне",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.bought_bags_currency",
-      "en": "Bought {0}x {1} for {2} {3} and {4}x shopping bags for {5} gold coins.",
-      "translated": "Купили {0}x {1} за сумки {2} {3} и {4}x за {5} золотых монет.",
-      "source": "google_translate"
+      "key": "item.3203.name",
+      "en": "animate dead rune",
+      "translated": "Анимирајте мртву руну",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.bought_bags_gold",
-      "en": "Bought {0}x {1} and {2} shopping bags for {3} gold coins.",
-      "translated": "Купили сумки для покупок {0}x {1} и {2} за {3} золотых монет.",
-      "source": "google_translate"
+      "key": "item.3204.name",
+      "en": "dead human",
+      "translated": "мртви човек",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.bought_currency",
-      "en": "Bought {0}x {1} for {2} {3}.",
-      "translated": "Купил {0}x {1} за {2} {3}.",
-      "source": "google_translate"
+      "key": "item.32065.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.bought_gold",
-      "en": "Bought {0}x {1} for {2} gold coins.",
-      "translated": "Купили {0}x {1} за {2} золотых монет.",
-      "source": "google_translate"
+      "key": "item.32092.name",
+      "en": "reserved sprite",
+      "translated": "РЕСЕРВЕД СПРИТЕ",
+      "source": "simple"
     },
     {
-      "key": "cpp.npc.loot_pouch_sold",
-      "en": "You sold all of the items from your loot pouch for {0} gold.",
-      "translated": "Вы продали все предметы из своей сумки за {0} золота.",
-      "source": "google_translate"
+      "key": "item.32227.name",
+      "en": "lost soul",
+      "translated": "Лост Соул",
+      "source": "simple"
     },
     {
-      "key": "cpp.party.invitation_revoked_by_leader",
-      "en": "{0} has revoked {1} invitation.",
-      "translated": "{0} отозвал приглашение {1}.",
-      "source": "google_translate"
+      "key": "item.32411.name",
+      "en": "unknown",
+      "translated": "непознато",
+      "source": "simple"
     },
     {
-      "key": "cpp.party.invitation_revoked_for",
-      "en": "Invitation for {0} has been revoked.",
-      "translated": "Приглашение для {0} было отозвано.",
-      "source": "google_translate"
+      "key": "item.32418.name",
+      "en": "brain head",
+      "translated": "Браин Хеад",
+      "source": "simple"
     }
   ]
 }

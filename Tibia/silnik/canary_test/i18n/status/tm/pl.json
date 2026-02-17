@@ -109246,5 +109246,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:36:06.693382Z"
+  },
+  "npc.mirabell.sendtrade_msg_1": {
+    "src_hash": "c9ad0693ff3d091e447e8b61e14edfdd",
+    "text": "Oczywiście, rzuć okiem na moje smaczne oferty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.088049Z"
+  },
+  "npc.mirabell.walkaway_msg_1": {
+    "src_hash": "979467585be4753e1002fa2b30483c85",
+    "text": "Wróć wkrótce, podróżniku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.090280Z"
+  },
+  "npc.miraia.farewell_msg_1": {
+    "src_hash": "a36a156c93c52f19433932691de5899e",
+    "text": "Błogosławieństwo Daramana. Wróć wkrótce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.094501Z"
+  },
+  "npc.miraia.greet_msg_1": {
+    "src_hash": "02bef2979d64fc9ed012830eb611f03d",
+    "text": "Błogosławieństwo Daramana, |PLAYERNAME|. Witaj w Oświeconej Oazie. Usiądź, napij się {drink} albo zjedz coś {food}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.096720Z"
+  },
+  "npc.mordecai.greet_msg_1": {
+    "src_hash": "41bcc6bd6ff8f880bff86df964724f87",
+    "text": "Witamy w magicznym sklepie, dziecko. Zapytaj mnie o wymianę, jeśli potrzebujesz {runes}, {wands} lub ksiąg zaklęć.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.109485Z"
+  },
+  "npc.mordecai.walkaway_msg_1": {
+    "src_hash": "231b98b1b896385cb640a9064d1a6282",
+    "text": "Ach, porywczość młodości.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.112955Z"
+  },
+  "npc.mother_of_jack.greet_msg_1": {
+    "src_hash": "193e46468b279a667e5e68a2b96bbdc4",
+    "text": "Żądam wyjaśnienia, dlaczego wszedłeś do naszego domu bez zaproszenia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.184192Z"
+  },
+  "npc.mr_morris.stdmod_7": {
+    "src_hash": "fdb45c0345df6c18711d71ead65abd78",
+    "text": "Skupuję wszelkie produkty ze stworzeń!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.205847Z"
+  },
+  "npc.mr_morris.voice_7": {
+    "src_hash": "fdb45c0345df6c18711d71ead65abd78",
+    "text": "Skupuję wszelkie produkty ze stworzeń!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.209774Z"
+  },
+  "npc.muhad.greet_msg_1": {
+    "src_hash": "dbaf5256055463832bf47c118d265593",
+    "text": "Witaj, przybyszu pod słońcem Daramy. Co cię tu {here} sprowadza?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.211547Z"
+  },
+  "npc.muriel.greet_msg_1": {
+    "src_hash": "8fab312632ded5d25d11afcd8c22dbd5",
+    "text": "Pozdrowienia, |PLAYERNAME|! Szukasz mądrości i mocy, co?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.219412Z"
+  },
+  "npc.myra.greet_msg_1": {
+    "src_hash": "4c435efd925ac7ae7769db4166aac9d3",
+    "text": "Pozdrawiam, |PLAYERNAME|. Jeśli szukasz czarownika {spells}, nie wahaj się zapytać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.231770Z"
+  },
+  "npc.myzzi.greet_msg_1": {
+    "src_hash": "f9128628542131a1c457295f5d0434df",
+    "text": "Witaj, poszukiwaczu przygód. Miło cię widzieć, to {good}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.257641Z"
+  },
+  "npc.myzzi.say_6": {
+    "src_hash": "f3867bc3f02461f8ba2a443af657d287",
+    "text": "Co?!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.260807Z"
+  },
+  "npc.nah_bob.farewell_msg_1": {
+    "src_hash": "6208e49a68b520f5b6eb6ddeefd9e28a",
+    "text": "Do widzenia, Neutrala |PLAYERNAME|. Któregoś dnia ponownie odwiedź starego Boba!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.262479Z"
+  },
+  "npc.nah_bob.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Do usług, przejrzyj moje towary.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.266116Z"
+  },
+  "npc.naji.greet_msg_1": {
+    "src_hash": "9a8b5f31874c06521653b46ff9062147",
+    "text": "Witaj w banku Tibii, |PLAYERNAME|. Co mogę dla ciebie zrobić?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.267761Z"
+  },
+  "npc.nelly.walkaway_msg_1": {
+    "src_hash": "231b98b1b896385cb640a9064d1a6282",
+    "text": "Ach, porywczość młodości.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.284185Z"
+  },
+  "npc.nielson.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Do widzenia. Zapraszamy ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.284791Z"
+  },
+  "npc.nina.greet_msg_1": {
+    "src_hash": "76986f7777164e08c3af4cde9bbc3784",
+    "text": "Uważaj, jeśli pójdziesz dalej, będziesz musiał walczyć z dużą grupą Wybrańców. To miejsce nazywa się Fire Dragon Dojo. Stąpaj ostrożnie, bo to tereny treningowe jaszczuroludzi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.301716Z"
+  },
+  "npc.ninev.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.303815Z"
+  },
+  "npc.ninev.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.304750Z"
+  },
+  "npc.ninev.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.305869Z"
+  },
+  "npc.ninev.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.306798Z"
+  },
+  "npc.ninev.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.308035Z"
+  },
+  "npc.ninev.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:33.320975Z"
   }
 }

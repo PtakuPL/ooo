@@ -26238,5 +26238,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:59:43.870621Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_5": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Corpul tău reacționează la această substanță verde ciudată când întinzi mâna să o atingi. Simți o dorință pentru mai mult din această energie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:54.683796Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_2": {
+    "src_hash": "afe9c062fcad0dfaed371f41f325a3f1",
+    "text": "Corpul tău se încălzește, aerul din jurul tău pâlpâie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:00.020921Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_3": {
+    "src_hash": "f575456ac57a1329c31dae3a89abe1a5",
+    "text": "Căldura este acum insuportabilă, sângele din corpul tău se simte ca lavă. Aproape că nu mai ai putere în tine - acționează repede!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:00.021512Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_4": {
+    "src_hash": "c5f3b89f92a7442b2e42b32aa0f24087",
+    "text": "Îmbrățișează stigmatul ghinionului. Gudronul nu se mai simte atât de fierbinte. Ai trecut procesul de gudron.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:00.022019Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_6": {
+    "src_hash": "69828c9b2866aff3163734b5536f688b",
+    "text": "Gudronul care te acoperă s-a răcit și a căzut în cea mai mare parte. Corpul tau nu se mai incalzeste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:00.022644Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_1": {
+    "src_hash": "fc959524c181fe732cea25456db9be19",
+    "text": "Absorbi rămășițele energetice ale acestui suflet în descompunere. Puterea sa este foarte fragilă și trecătoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:07.984541Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_2": {
+    "src_hash": "2277263cd6474fa0e105ef2c24fad53d",
+    "text": "Absorbiți rămășițele energetice ale acestui suflet albitor. Puterea sa este foarte fragilă și trecătoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:07.985056Z"
+  },
+  "quests.cults_of_tibia.the_room_is_full": {
+    "src_hash": "c392e2d4b7bc00e3f6d77bb62792a3c6",
+    "text": "Camera este plină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:07.985386Z"
+  },
+  "quests.cults_of_tibia.you_cant_go_there_yet": {
+    "src_hash": "06f23b40933b62937c5e4dc5c1daf878",
+    "text": "Încă nu poți merge acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:07.985674Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_10_players_to": {
+    "src_hash": "da4ca441dd1e0e846918a451309695ec",
+    "text": "Ai nevoie de exact 10 jucători pentru a începe această provocare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:07.986262Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_5_players_to": {
+    "src_hash": "9e4c98b791d52e8b1ac8575cea48760f",
+    "text": "Ai nevoie de exact 5 jucători pentru a începe această provocare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:15.255567Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_10": {
+    "src_hash": "8ed2dcd3c613b3e563ef0235304ed160",
+    "text": "Trebuie să aștepți 10 ore pentru a te confrunta din nou cu acest șef.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:15.255995Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_20": {
+    "src_hash": "ad5616742f0d60619c1619a192a9831c",
+    "text": "Trebuie să aștepți 20 de ore pentru a te confrunta din nou cu acest șef.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:15.256409Z"
+  },
+  "quests.custom.couldnt_find_any_position_for_you": {
+    "src_hash": "eac8994d451c78b32788efd039fe9e3d",
+    "text": "Nu am putut găsi nicio poziție pentru tine acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:15.256767Z"
+  },
+  "quests.dark_trails.you_need_4_players_to_fight": {
+    "src_hash": "f8616bd446505a250fe2dd4e0f2bb8e8",
+    "text": "Ai nevoie de 4 jucători pentru a lupta cu The Ravager.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:15.257141Z"
+  },
+  "quests.dawnport.first_time_vocation": {
+    "src_hash": "632c8e6c1a41db98f6da0017c97dfb26",
+    "text": "Deoarece aceasta este prima dată ca %s %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:23.374751Z"
+  },
+  "quests.dawnport.received_weapons": {
+    "src_hash": "00b1359d03d36f78ebc8454d99a4c107",
+    "text": "Ai primit armele unui %s. %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:23.375078Z"
+  },
+  "quests.deeplings.boss_defends": {
+    "src_hash": "300ffad49f322c2ef4669acbab761d18",
+    "text": "{0} își apără bunurile și nu te va lăsa să-i deschizi pieptul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:23.375490Z"
+  },
+  "quests.demon_oak.master_crush": {
+    "src_hash": "f45c9ec1422dccdef3363c54309770b9",
+    "text": "CUM ESTE POSIBIL?!? Stăpânul MEU VA STRĂVI!! AHRRGGG!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:30.686034Z"
+  },
+  "quests.demon_oak.sound_1": {
+    "src_hash": "64858b07745250c936399f2141b9ae80",
+    "text": "RĂDĂCINIILE MELE SUNT ASCUȚITE CA O COASĂ! SIMȚI?!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:30.686443Z"
+  },
+  "quests.demon_oak.sound_2": {
+    "src_hash": "21b22bf438167c41b9754424d93ebe2e",
+    "text": "SĂ blestem!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:30.686655Z"
+  },
+  "quests.demon_oak.sound_3": {
+    "src_hash": "ad954e578749aec118f170e9cc6cddb1",
+    "text": "ÎNVIATE, MINIONI, ÎNVIATE DIN MORȚI!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:30.686982Z"
+  },
+  "quests.demon_oak.sound_4": {
+    "src_hash": "73a3aa812824cdc1b55c2f3eed86217c",
+    "text": "AHHHH! SANGELE TAU MA FACE POTRONIC!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:30.687319Z"
+  },
+  "quests.demon_oak.sound_5": {
+    "src_hash": "32c5ccaa47af898221a429cc74e76312",
+    "text": "PRIMI OASELE, HALLHOUND! PRIMIȚI-LE!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:38.421762Z"
+  },
+  "quests.demon_oak.sound_6": {
+    "src_hash": "215518027445ceeb220fa31ef6203b35",
+    "text": "Ajunge acolo unde pot ajunge la tine!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:38.422167Z"
+  },
+  "quests.demon_oak.sound_7": {
+    "src_hash": "f4bacd0a57b22b2bc63c2ba67bd432ac",
+    "text": "DUREREA ETERNĂ VA ASTEPTĂ! RECOMPENSA FRUMOSĂ, HH?!?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:38.422533Z"
+  },
+  "quests.demon_oak.sound_8": {
+    "src_hash": "00f928cfbade0ee4a515a461c14fbd4a",
+    "text": "VOI PLĂTI PENTRU FIECARE LOVIRI CU DECENII DE TORTURĂ!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:38.422899Z"
+  },
+  "quests.demon_oak.sound_9": {
+    "src_hash": "b056e7487d9090618cf485296fb9aab9",
+    "text": "ARGG! TORTURAȚI-O!! OMĂR-O ÎNTRE MINIONUL MEU!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:38.423281Z"
+  },
+  "quests.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Eliberează-mă și vei fi răsplătit extraordinar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:41.376929Z"
+  },
+  "quests.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Ce este asta? Demon Legs zac aici? Poate că cineva le-a pierdut!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:41.377429Z"
+  },
+  "quests.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Sunt prins în capcană, vino aici și eliberează-mă repede!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:41.377879Z"
+  },
+  "quests.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Pot să-ți aduc iubita înapoi din morți, doar eliberează-mă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:41.378414Z"
+  },
+  "quests.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Ce armură frumoasă aurie strălucitoare. Vino la mine și o poți avea!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:41.378833Z"
+  },
+  "quests.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Găsește o cale de a intra aici și eliberează-mă! Te rog grabeste-te!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:46.340497Z"
+  },
+  "quests.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Poți să-mi aduci set de demoni, dacă mă ajuți să ies de aici!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:46.340993Z"
+  },
+  "quests.desert_dungeon.missing_sacrifice": {
+    "src_hash": "cf6fd7640294feedf4b956372a8c65f3",
+    "text": "{0} lipsește {1} sacrificiu pe altar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:46.341353Z"
+  },
+  "quests.desert_dungeon.need_all_vocations": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Ai nevoie de un jucător de fiecare vocație pentru această misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:46.341748Z"
+  },
+  "quests.desert_dungeon.need_each_vocation": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Ai nevoie de un jucător de fiecare vocație pentru această misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:46.342196Z"
+  },
+  "quests.dream_courts.barrel_word": {
+    "src_hash": "ab1981f1b79d1b8ff80c419c6ce3d434",
+    "text": "În interiorul capacului acestui butoi este scris un cuvânt: 'O'kteth'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:53.969764Z"
+  },
+  "quests.dream_courts.bed_notes": {
+    "src_hash": "d23a6ac34261a80639136e4e3d78e47b",
+    "text": "Acest capăt al patului are un teanc de note ascunse sub el. Există un singur cuvânt pe toate: 'T'sough'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:53.970388Z"
+  },
+  "quests.dream_courts.book_kmuuh": {
+    "src_hash": "18d37c53b39eb7f66f14c307f08d2c0e",
+    "text": "Cântările din această carte conțin adesea cuvântul 'K'muuh'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:53.970794Z"
+  },
+  "quests.dream_courts.book_nogalu": {
+    "src_hash": "1714f5db5c755452491181ec675d63ac",
+    "text": "Cântările din această carte conţin adesea cuvântul 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:53.971187Z"
+  },
+  "quests.dream_courts.book_okteth": {
+    "src_hash": "3a67a1d27c430fa5ba1fd9edaffc15d7",
+    "text": "Cântările din această carte conțin adesea cuvântul 'O'kteth.'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:53.971618Z"
+  },
+  "quests.dream_courts.book_worthy": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Toate cântările au fost cântate în ordinea corectă, sunteți considerat demn. Ești transportat departe...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:57.018947Z"
+  },
+  "quests.dream_courts.got_blue_crystal": {
+    "src_hash": "be404605aece8334d7dec85049557214",
+    "text": "Ai un cristal albastru!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:01:57.019317Z"
   }
 }

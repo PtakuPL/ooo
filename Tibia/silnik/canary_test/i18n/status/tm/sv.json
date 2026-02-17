@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:40:04.740674Z"
+    "updated_at": "2026-02-17T01:02:02.309314Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -19502,5 +19502,261 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T00:52:47.337999Z"
+  },
+  "data.otservbr.global.npc.florentine.L60.580": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.838421Z"
+  },
+  "data.otservbr.global.npc.gorn.L112.61": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.850388Z"
+  },
+  "data.otservbr.global.npc.king.tibianus.L453.339": {
+    "src_hash": "6fc6fd5473a14ef5faf70b62c9e91b34",
+    "text": "HUR OFÖRLIGT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.877182Z"
+  },
+  "data.otservbr.global.npc.luna.L64.1335": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.886209Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L62.622": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Säker.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.890620Z"
+  },
+  "data.otservbr.global.npc.ninos.L84.1480": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hej. Hur kan jag hjälpa dig |PLAYERNAME|? Be mig om en {trade} om du vill köpa något. Jag kan också förklara {mail}-systemet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.901118Z"
+  },
+  "data.otservbr.global.npc.obi.L131.249": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.903506Z"
+  },
+  "data.otservbr.global.npc.olrik.L87.581": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hej. Hur kan jag hjälpa dig |PLAYERNAME|? Be mig om en {trade} om du vill köpa något. Jag kan också förklara {mail}-systemet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.904779Z"
+  },
+  "data.otservbr.global.npc.rowenna.L62.478": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.921550Z"
+  },
+  "data.otservbr.global.npc.rudolph.L56.209": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.922159Z"
+  },
+  "data.otservbr.global.npc.sarina.L86.73": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.924134Z"
+  },
+  "data.otservbr.global.npc.sarina.L89.76": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.925100Z"
+  },
+  "data.otservbr.global.npc.shiantis.L86.703": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.927722Z"
+  },
+  "data.otservbr.global.npc.shiantis.L89.706": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.928905Z"
+  },
+  "data.otservbr.global.npc.zora.L82.1328": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.964488Z"
+  },
+  "data.otservbr.global.npc.zora.L85.1331": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:00.965594Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L72.427": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Dödlig! Om du är på en {quest} för att tjäna blodguden, min herre - var hälsad!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:05.049506Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Dödlig! Om du är på en {quest} för att tjäna blodguden, min herre - var hälsad!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:07.676256Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L168.1459": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Adjö. Jag är säker på att du kommer tillbaka för mer. Det gör de alla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:07.676681Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L169.1460": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Adjö. Jag är säker på att du kommer tillbaka för mer. Det gör de alla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:07.677264Z"
+  },
+  "data.otservbr.global.npc.bolfona.L91.688": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:07.677526Z"
+  },
+  "data.otservbr.global.npc.bolfona.L92.689": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:07.677768Z"
+  },
+  "data.otservbr.global.npc.bolfona.L94.690": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Pratar du med mig? Fortsätt chatta men förvänta dig inget svar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:13.105138Z"
+  },
+  "data.otservbr.global.npc.boveas.L44.24": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Hej! Jag hoppas att du inte kommer att döda mig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:13.105636Z"
+  },
+  "data.otservbr.global.npc.bozo.L610.917": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Hej, hej, hej, lilla damen |PLAYERNAME|! Vad ger dig {here}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:13.106246Z"
+  },
+  "data.otservbr.global.npc.bozo.L922.918": {
+    "src_hash": "e0c720dccd466a9047c7f84dffbf8cfc",
+    "text": "Kom ihåg: Ett skämt om dagen håller ghouls borta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:17.013760Z"
+  },
+  "data.otservbr.global.npc.bozo.L923.919": {
+    "src_hash": "901eba179c016bc753815f362425c4cc",
+    "text": "Hej! Dårar har också känslor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:17.014158Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L134.319": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Välkommen, |PLAYERNAME|! Må jorden skydda dig på de steniga markerna. Om du behöver en {passage} kan jag hjälpa dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:23.336032Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L136.321": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:23.336262Z"
+  },
+  "data.otservbr.global.npc.bron.L188.28": {
+    "src_hash": "bc13951dddf4f12c470dbcddf105f4db",
+    "text": "Välkommen till min ödmjuka hydda, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:23.336739Z"
+  },
+  "data.otservbr.global.npc.bron.L192.29": {
+    "src_hash": "64e4ad7815f4475d64461abc6df46281",
+    "text": "Ta hand om dig, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:23.337014Z"
+  },
+  "data.otservbr.global.npc.bron.L193.30": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Ta hand om dig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:02:25.179400Z"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T01:00:18.100982Z",
+  "timestamp": "2026-02-17T01:02:42.343792Z",
   "checked_entries": 100,
   "issues_found": 7,
   "issues_by_type": {
@@ -8,8 +8,8 @@
     "suspicious_log_high": 151,
     "suspicious_log_critical": 48,
     "suspicious_log_low": 1,
-    "suspicious_rejected_high": 30,
-    "suspicious_rejected_critical": 170
+    "suspicious_rejected_critical": 175,
+    "suspicious_rejected_high": 25
   },
   "issues": [
     {

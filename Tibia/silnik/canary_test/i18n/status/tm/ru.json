@@ -22782,5 +22782,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:59:14.619615Z"
+  },
+  "quests.dream_courts.book_nogalu": {
+    "src_hash": "1714f5db5c755452491181ec675d63ac",
+    "text": "Песни в этой книге часто содержат слово 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:40.020466Z"
+  },
+  "quests.dream_courts.book_okteth": {
+    "src_hash": "3a67a1d27c430fa5ba1fd9edaffc15d7",
+    "text": "Песни в этой книге часто содержат слово 'O'kteth.'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:40.021056Z"
+  },
+  "quests.dream_courts.book_worthy": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Все песнопения пропеты в правильном порядке, вы признаны достойными. Вас переносят...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:40.021607Z"
+  },
+  "quests.dream_courts.got_blue_crystal": {
+    "src_hash": "be404605aece8334d7dec85049557214",
+    "text": "У вас есть синий кристалл!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:40.021922Z"
+  },
+  "quests.dream_courts.got_green_crystal": {
+    "src_hash": "95d63fd876e5455d0288a8fe8bbad93f",
+    "text": "У вас есть зеленый кристалл!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:42.975123Z"
+  },
+  "quests.dream_courts.got_purple_crystal": {
+    "src_hash": "15ef9900355aaed476317b32066987c5",
+    "text": "У вас есть фиолетовый кристалл!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:42.975454Z"
+  },
+  "quests.dream_courts.nexus_blocked": {
+    "src_hash": "c2d3b0717c0f57ebab89bc4984f3c53c",
+    "text": "Соедините все три врата, чтобы восстановить круг энергии, поддерживающий эту связь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:42.975931Z"
+  },
+  "quests.dream_courts.rubble_path": {
+    "src_hash": "887ce17f9b9499fbe9a3430282790e46",
+    "text": "Вы легко преодолеваете завалы, но большая их часть падает позади вас, по сути снова блокируя ваш путь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:42.976481Z"
+  },
+  "quests.dream_courts.sarcophagus_say_1": {
+    "src_hash": "861b66b6dbd2ef3cb4d76cc8b1455006",
+    "text": "У тебя есть ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:42.976721Z"
+  },
+  "quests.dream_courts.skull_minotaur": {
+    "src_hash": "0f19967c78d4c4bf877ae903c07b710f",
+    "text": "Вы кладете череп минотавра в гроб внутри скелета минотавра. Щелкает один из замков двери.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:46.510708Z"
+  },
+  "quests.dream_courts.skull_orc": {
+    "src_hash": "bbc9ebaea7038e7842785e65ec127259",
+    "text": "Вы кладете череп орка в гроб внутри скелета орка. Щелкает один из замков двери.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:46.511211Z"
+  },
+  "quests.dream_courts.statue_word": {
+    "src_hash": "e69449650a233f36e687a06c05ff3580",
+    "text": "На руке этой статуи написано слово: 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:46.511823Z"
+  },
+  "quests.dream_courts.summer_ward": {
+    "src_hash": "3c3de5f54674528ed8325cebed7655d8",
+    "text": "Вы заряжаете летний обереговый камень, и выгравированный солнечный кристалл засияет золотым светом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:46.512355Z"
+  },
+  "quests.dream_courts.winter_ward": {
+    "src_hash": "6d2a5aa45e9e8b2ef75fcee7816d0955",
+    "text": "Вы заряжаете камень зимней защиты, и выгравированный ледяной кристалл светится синим светом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:46.512852Z"
+  },
+  "quests.dreamers_challenge.clock_word_1": {
+    "src_hash": "c223d5e93e61322ac1aceefd8ef3ff0b",
+    "text": "ВЫ МЕЧТАЕТЕ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:49.101902Z"
+  },
+  "quests.dreamers_challenge.clock_word_2": {
+    "src_hash": "6d62b16ea1c4e60517f9383de308543d",
+    "text": "ПРОСНУТЬСЯ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:49.102207Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_obtained_this_addon": {
+    "src_hash": "de6fa97474d57de84714ed5405bda75d",
+    "text": "Вы уже получили этот аддон!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:49.102555Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_used_this_lever": {
+    "src_hash": "1be82c3c9ff13fda4cdb4bc6e5e5cd4c",
+    "text": "Вы уже использовали этот рычаг!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:49.102942Z"
+  },
+  "quests.dreamers_challenge_quest.you_need_to_offer_a_small": {
+    "src_hash": "31fec8dd082b43587b7f8586b6e78b93",
+    "text": "Вам нужно предложить небольшой бриллиант.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:49.103299Z"
+  },
+  "quests.dreamers_challenge_quest.you_still_dont_have_permission": {
+    "src_hash": "94c3a4f539049247659ee395664bc4e6",
+    "text": "У вас все еще нет разрешения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:51.267392Z"
+  },
+  "quests.fathers_burden.acquired": {
+    "src_hash": "fd3b0b305643be834fe2cba68666263c",
+    "text": "Вы приобрели {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:51.267680Z"
+  },
+  "quests.fathers_burden.corpse_say_1": {
+    "src_hash": "2afb5076cad1b4a7685de513c392b177",
+    "text": "Масштаб Блестящей Чешуи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:51.267957Z"
   }
 }

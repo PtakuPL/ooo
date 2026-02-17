@@ -26598,5 +26598,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:01:57.019317Z"
+  },
+  "scripts.actions_bookOnTable.msg_4": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Toate cântările au fost cântate în ordinea corectă, sunteți considerat demn. Ești transportat departe...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.792728Z"
+  },
+  "scripts.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Eliberează-mă și vei fi răsplătit extraordinar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.845442Z"
+  },
+  "scripts.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Ce este asta? Demon Legs zac aici? Poate că cineva le-a pierdut!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.846066Z"
+  },
+  "scripts.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Sunt prins în capcană, vino aici și eliberează-mă repede!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.846537Z"
+  },
+  "scripts.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Pot să-ți aduc iubita înapoi din morți, doar eliberează-mă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.847006Z"
+  },
+  "scripts.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Ce armură frumoasă aurie strălucitoare. Vino la mine și o poți avea!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.847491Z"
+  },
+  "scripts.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Găsește o cale de a intra aici și eliberează-mă! Te rog grabeste-te!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.847980Z"
+  },
+  "scripts.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Poți să-mi aduci set de demoni, dacă mă ajuți să ies de aici!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:10.848586Z"
+  },
+  "player.task.dialog.action_error": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "A apărut o eroare la procesarea acțiunii dvs. Vă rugăm să încercați să redeschideți fereastra de activitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:12.237368Z"
+  },
+  "player.task.dialog.already_active": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "Ai deja un monstru activ în acest slot de vânătoare de sarcini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:12.237797Z"
+  },
+  "player.task.dialog.cards_reward_reroll": {
+    "src_hash": "eb2d9eadbbdac5fec6d5325028387846",
+    "text": "Nu aveți suficiente cărți de pradă pentru a rerola raritatea recompensei pentru sarcină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:12.238311Z"
+  },
+  "player.task.dialog.cards_selection": {
+    "src_hash": "001d3eac2d44cadded9ef664c14fd73a",
+    "text": "Nu aveți suficiente cărți de pradă pentru a alege o creatură din listă pentru acest slot de vânătoare de sarcini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:15.749084Z"
+  },
+  "player.task.dialog.empty_slot": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Nu vă puteți revendica recompensa pentru sarcină cu un slot de vânătoare de sarcini gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:15.749572Z"
+  },
+  "player.task.dialog.money_cancel": {
+    "src_hash": "a15fe3c87827bbc30365724e8902e44c",
+    "text": "Nu aveți suficienți bani pentru a vă anula vânătoarea curentă de sarcini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:15.749999Z"
+  },
+  "player.task.dialog.money_reroll": {
+    "src_hash": "5b517b5ad2c8df4d56c10c931129df80",
+    "text": "Nu aveți suficienți bani pentru a rerula slotul de vânătoare de sarcini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:15.750537Z"
+  },
+  "player.task.dialog.reward_bonus_100": {
+    "src_hash": "7af418ebe3a79c75affce73d20b599c0",
+    "text": "Felicitări! Ați câștigat {0} puncte de sarcină de vânătoare, inclusiv un bonus de 100%.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:15.751043Z"
+  },
+  "player.task.dialog.reward_bonus_50": {
+    "src_hash": "8950d01dc0d85d8256d7311b2da6fcd8",
+    "text": "Felicitări! Ați câștigat {0} puncte de sarcină de vânătoare, inclusiv un bonus de 50%.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:18.401972Z"
+  },
+  "player.task.dialog.reward_bonus_none": {
+    "src_hash": "ffed1d4d3510028fc725b3ac5475317e",
+    "text": "Felicitări! Ați câștigat {0} puncte de sarcină de vânătoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:18.402586Z"
+  },
+  "player.task.dialog.reward_error": {
+    "src_hash": "069c6929f41f06c26f787cc96c1d4219",
+    "text": "A apărut o eroare la procesarea recompensei dvs. de vânătoare de sarcini. Vă rugăm să încercați să redeschideți fereastra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:18.403129Z"
+  },
+  "player.task.dialog.unlock_store": {
+    "src_hash": "3d020c89b8873a1ae84afb0024281f73",
+    "text": "Pentru a debloca acest slot de vânătoare de sarcini, trebuie să îl cumpărați mai întâi din magazin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:18.403606Z"
+  },
+  "player.task.dialog.wait_minutes": {
+    "src_hash": "cda0df54893788709391661268b98047",
+    "text": "Trebuie să așteptați {0} minute pentru a selecta o creatură nouă pentru această sarcină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:18.404065Z"
+  },
+  "quest.dangerous_depths.earned_points_dwarves": {
+    "src_hash": "30afecc4939872faa0cdd1029e9e9129",
+    "text": "Ai câștigat {0} punct(e) în misiunea piticilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:22.035182Z"
+  },
+  "quest.dangerous_depths.earned_points_gnomes": {
+    "src_hash": "fe787fafead50b73c085785b9be0e04a",
+    "text": "Ai câștigat {0} punct(e) în misiunea gnomilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:22.035584Z"
+  },
+  "quest.dangerous_depths.earned_points_scouts": {
+    "src_hash": "71451e3893f222fdf4d91f6bd53275fc",
+    "text": "Ați câștigat {0} punct(e) în misiunea de cercetași.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:22.035967Z"
+  },
+  "quest.soul_war.boss_progress_access": {
+    "src_hash": "1337a1c6d304b55bbdda0ec5e86719b6",
+    "text": "%s: Acces realizat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:22.036216Z"
+  },
+  "quest.soul_war.boss_progress_kills": {
+    "src_hash": "c777297c890d2fddceabfceed9b0f495",
+    "text": "%s: %d/%d ucide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:24.639076Z"
+  },
+  "quest.soul_war.taint_gained": {
+    "src_hash": "138a4a527628e1ac82b2463b602bcbd2",
+    "text": "Ați câștigat {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:24.639379Z"
+  },
+  "quest.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Părintele lui Goshnar au fost resetate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:24.639724Z"
+  },
+  "quest.soul_war.taints_reset_timeout": {
+    "src_hash": "bb82c84747742951025a074765dee261",
+    "text": "Părintele lui Goshnar au fost resetate. Nu ai terminat misiunea în 14 zile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:24.640206Z"
+  },
+  "quests.world_board.fury_gate": {
+    "src_hash": "c0052987e5b85167c330b47e6ddcbb72",
+    "text": "O poartă înflăcărată a furiei s-a deschis lângă unul dintre orașele mari, undeva în Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:24.640974Z"
+  },
+  "quests.world_board.oriental_ships": {
+    "src_hash": "d9e00e8a0dc5d33ed99809e152c7e5b1",
+    "text": "Corăbii orientale văzute! Un comerciant de produse pentru creaturi exotice poate să viziteze în prezent Carlin, Ankrahmun sau Liberty Bay.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:27.238441Z"
+  },
+  "quests.world_board.sandstorm_coast": {
+    "src_hash": "25fd8563f2e744fd44ea4733d3575518",
+    "text": "O furtună de nisip călătorește prin Darama, ducând la insule pline de creaturi mortale în interiorul unui coșmar. Evitați coasta cea mai nordică!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:27.239096Z"
+  },
+  "quests.world_board.sandstorm_drefia": {
+    "src_hash": "86f89a4ac6b0a450015d411eba40ef0e",
+    "text": "O furtună de nisip călătorește prin Darama, ducând la insule pline de creaturi mortale în interiorul unui coșmar. Evitați râul lângă Drefia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:27.239716Z"
+  },
+  "quests.world_board.sandstorm_tar": {
+    "src_hash": "4646872dabc13c2274cb07b8475665be",
+    "text": "O furtună de nisip călătorește prin Darama, ducând la insule pline de creaturi mortale în interiorul unui coșmar. Evitați gropile de gudron Ankhramun!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:27.240344Z"
+  },
+  "scripts.achievement_functions.msg_1": {
+    "src_hash": "6e57553421d49c13fb1cd1d6eecf97ac",
+    "text": "Realizarea {} a fost adăugată cu succes la {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:27.240715Z"
+  },
+  "scripts.achievement_functions.msg_2": {
+    "src_hash": "a4a0ae1d9883dcb6873c780607636bf2",
+    "text": "Realizarea {} a fost eliminată cu succes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:29.812884Z"
+  },
+  "scripts.action-corym_works_doors.msg_1": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Cheia falsificată descuie ușa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:29.813211Z"
+  },
+  "scripts.action-corym_works_doors.msg_2": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Cheia falsificată descuie ușa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:29.813518Z"
+  },
+  "scripts.action-corym_works_doors.msg_3": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "Cheia falsificată descuie ușa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:29.813823Z"
+  },
+  "scripts.action-reward_soul_war.msg_1": {
+    "src_hash": "8dd6bdad28a27009f617c8b6206a0ba6",
+    "text": "Ai primit deja recompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:29.814180Z"
+  },
+  "scripts.action-reward_soul_war.msg_2": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Trebuie să învingi Megalomania lui Goshnar pentru a-ți primi recompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:32.395204Z"
+  },
+  "scripts.action-reward_soul_war.msg_3": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Ați găsit un {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:32.395502Z"
+  },
+  "scripts.action_all_hymn_piano_teleport.msg_1": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "Nu ai învățat toate versurile imnului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:32.395846Z"
+  },
+  "scripts.action_arena.msg_1": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Ai terminat deja această bătălie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:32.396161Z"
+  },
+  "scripts.action_arena.msg_2": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "Arena este deja folosită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:32.396454Z"
+  },
+  "scripts.action_bag.msg_1": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Ai găsit o geantă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:34.326960Z"
+  },
+  "scripts.action_bag.msg_2": {
+    "src_hash": "2c586d4717b2579a30746ae8e8b0e491",
+    "text": "Biblioteca este goală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:34.327278Z"
   }
 }

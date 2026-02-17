@@ -22958,5 +22958,173 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:00:51.267957Z"
+  },
+  "scripts.actions_bookOnTable.msg_4": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Все песнопения пропеты в правильном порядке, вы признаны достойными. Вас переносят...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:07:53.056540Z"
+  },
+  "player.condition.cursed": {
+    "src_hash": "5b749b38fc20c0684e7f64ec53381f89",
+    "text": "Вы прокляты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:07:55.708517Z"
+  },
+  "player.condition.dazzled": {
+    "src_hash": "298d37430ad80a99f57a239f17012b90",
+    "text": "Вы ослеплены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:07:55.708783Z"
+  },
+  "player.condition.drowning": {
+    "src_hash": "747cb7d8e212ebf4ad62a4cee5a287f2",
+    "text": "Вы тонете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:07:55.709027Z"
+  },
+  "player.condition.drunk": {
+    "src_hash": "c79d76550811fb4ac7dd7385401419ef",
+    "text": "Вы пьяны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:07:55.709256Z"
+  },
+  "player.condition.feared": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:07:55.709492Z"
+  },
+  "player.condition.freezing": {
+    "src_hash": "f0cb181dfbe7a3bd4a9f54b0497f3e3c",
+    "text": "Вы замерзаете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:00.423135Z"
+  },
+  "player.condition.hexed": {
+    "src_hash": "3480c99488b1bf33f0408214bf2c1e8a",
+    "text": "Вы прокляты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:00.423394Z"
+  },
+  "player.condition.paralyzed": {
+    "src_hash": "e1f558a4167215429a429ef85dff0d7f",
+    "text": "Вы парализованы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:00.423649Z"
+  },
+  "player.condition.poisoned": {
+    "src_hash": "32455c487fa1f9969461d0c69e8e6614",
+    "text": "Вы отравлены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:00.423895Z"
+  },
+  "player.condition.rooted": {
+    "src_hash": "10d29de242ffa03823bac1d1810f84ba",
+    "text": "Вы укоренены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:00.424129Z"
+  },
+  "player.dawnport.level20": {
+    "src_hash": "817a542e022de0570a8f52918c4e2676",
+    "text": "Вы достигли предела уровня. Выберите свое призвание и оставьте Dawnport.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:03.480601Z"
+  },
+  "player.dawnport.level8": {
+    "src_hash": "c411c142c4ca4827759546995efb25bd",
+    "text": "Поздравляем! Теперь вы можете выбрать свою профессию и покинуть Dawnport. Поговорите с Орессой в храме.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:03.481236Z"
+  },
+  "player.dawnport.magic_limit": {
+    "src_hash": "5d7946b7d6585ad7c4f878e591451c3a",
+    "text": "Вы не можете дальше повышать свой уровень магии. Отправляйтесь на материк, чтобы улучшить его.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:03.481778Z"
+  },
+  "player.dawnport.skill_limit": {
+    "src_hash": "e2bfef6afa2016e438005ae18a578139",
+    "text": "Вы не сможете тренировать этот навык дальше. Отправляйтесь на материк, чтобы улучшить его.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:03.482332Z"
+  },
+  "player.login.house_items_inbox": {
+    "src_hash": "911941894e1440201d2682c8bf0aa038",
+    "text": "Ваши вещи из дома отправлены на ваш почтовый ящик.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:03.482742Z"
+  },
+  "player.login.house_lost": {
+    "src_hash": "fb66346673f1373dc5cd2c07d1cc869f",
+    "text": "Вы потеряли свой дом, потому что у вас больше нет премиум-аккаунта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:06.696236Z"
+  },
+  "player.login.premium_expired": {
+    "src_hash": "307ffe921ee4200a1bfced1578cf55c4",
+    "text": "Ваше премиум-время истекло!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:06.696587Z"
+  },
+  "player.prey.bonus_expired": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Срок действия вашего бонуса за добычу истек.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:06.696943Z"
+  },
+  "player.prey.bonus_time_reset": {
+    "src_hash": "bfb7b011e96d143970c5f3112b77d3af",
+    "text": "Ваше бонусное время добычи было успешно сброшено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:06.697332Z"
+  },
+  "player.prey.bonus_type_reset": {
+    "src_hash": "4c1ef1799674b1eea2d8d339b05c0cef",
+    "text": "Тип и время бонуса за добычу были успешно сброшены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:08:06.697742Z"
   }
 }

@@ -30766,5 +30766,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T04:57:32.868547Z"
+  },
+  "monster.furious_orc_berserker.voice_1": {
+    "src_hash": "95a1c7b93362faaeece6ced311b84777",
+    "text": "КРАК ОРРРРРРК!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:40.603176Z"
+  },
+  "monster.troll_guard.name": {
+    "src_hash": "936d0f6de193eda95c608bbb14e3bced",
+    "text": "Тролль-охранник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:56.071005Z"
+  },
+  "monster.troll_guard.desc": {
+    "src_hash": "f4ab44329721425d60fcf89b93197a89",
+    "text": "тролль-охранник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:56.071251Z"
+  },
+  "monster.elf.voice_1": {
+    "src_hash": "b3283f7ab3ba13f8da4536134a40811a",
+    "text": "Смерть осквернителям!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:56.071539Z"
+  },
+  "monster.elf.voice_2": {
+    "src_hash": "85fa1c19cb10e431672acd431d7e3547",
+    "text": "Вам здесь не рады.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:56.071855Z"
+  },
+  "monster.elf.voice_3": {
+    "src_hash": "8a04039913a549463700d22d0cc73335",
+    "text": "Бегите, пока можете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:59.820062Z"
+  },
+  "monster.elf.voice_4": {
+    "src_hash": "c9f86a2dd25b023b9afc4238a663cad8",
+    "text": "Бахаха ака!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:59.820306Z"
+  },
+  "monster.elf.voice_5": {
+    "src_hash": "3c1822743b11d1c214d919d66757e5fe",
+    "text": "Улатил бейа Трата!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:59.820577Z"
+  },
+  "monster.orc_warlord.name": {
+    "src_hash": "06766326e4ab2e338aace496564c9444",
+    "text": "Орк-вождь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:59.820976Z"
+  },
+  "monster.orc_warlord.desc": {
+    "src_hash": "28c984985a1e478b4a3e924fef0bce83",
+    "text": "военачальник орков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:59.821252Z"
+  },
+  "monster.orc_warlord.voice_1": {
+    "src_hash": "cc6e59d1667ebe33b1b819480c546b9b",
+    "text": "Икем Рэмбо Замбо!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:03.088427Z"
+  },
+  "monster.orc_warlord.voice_2": {
+    "src_hash": "d60f5b6efab22f75944530ff0925981c",
+    "text": "Орк бута бана!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:03.088871Z"
+  },
+  "monster.orc_warlord.voice_3": {
+    "src_hash": "5ac12467876e5ecc30203b32680d7f0c",
+    "text": "Ранат Ульдерек!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:03.089139Z"
+  },
+  "monster.orc_warlord.voice_4": {
+    "src_hash": "01cfd95dddedebee628502180fd2becc",
+    "text": "Футчи марук бута!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:03.089405Z"
+  },
+  "monster.troll_champion.name": {
+    "src_hash": "060cef8f858f750a3fdf764f3e167c7f",
+    "text": "Тролль Чемпион",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:03.089672Z"
+  },
+  "monster.troll_champion.desc": {
+    "src_hash": "fa9f1d3d33b79fb381b704f7922c823b",
+    "text": "чемпион по троллям",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:05.233309Z"
+  },
+  "monster.troll_champion.voice_1": {
+    "src_hash": "36da4b0b2f807e420bf766771a6fa4c5",
+    "text": "Мэй мэйти!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:05.233552Z"
+  },
+  "monster.troll_champion.voice_3": {
+    "src_hash": "350029911b020918ce3f43f48b11822f",
+    "text": "Чтооооо!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:06:05.233771Z"
   }
 }

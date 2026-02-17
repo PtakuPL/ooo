@@ -52198,5 +52198,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:57:55.539260Z"
+  },
+  "otclient_modules.battle_otui.tr_6": {
+    "src_hash": "747d99f92ee9c080ba26108ac5d26488",
+    "text": "Battaglia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.375933Z"
+  },
+  "otclient_modules.blessing.tr_2": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.378406Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_11": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.380895Z"
+  },
+  "otclient_modules.character_otui.tr_45": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.394281Z"
+  },
+  "otclient_modules.characterlist_otui.tr_6": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.400669Z"
+  },
+  "otclient_modules.characterlist_otui.tr_8": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.401060Z"
+  },
+  "otclient_modules.data_options.tr_6": {
+    "src_hash": "f07007e4d0d8b8db5e7ccca897fe9626",
+    "text": "Volume della musica: %d",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.422863Z"
+  },
+  "otclient_modules.game_actionbar.tr_5": {
+    "src_hash": "fda3c89154cc3ad1f7d1cc82a3181c33",
+    "text": "Assegna testo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.429872Z"
+  },
+  "otclient_modules.game_actionbar.tr_6": {
+    "src_hash": "d32ac3705894c0cf199c6f5abdffd55c",
+    "text": "Assegna oggetto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.430223Z"
+  },
+  "otclient_modules.game_actionbar.tr_7": {
+    "src_hash": "191bab0c005fc9abb11f6d1a2ee2cfc9",
+    "text": "Assegna incantesimo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.430510Z"
+  },
+  "otclient_modules.game_healthcircle.tr_7": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Nascondere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.433802Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_11": {
+    "src_hash": "a4d3b161ce1309df1c4e25df28694b7b",
+    "text": "Invia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.434629Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_8": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.436207Z"
+  },
+  "otclient_modules.game_shop_otui.tr_6": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.440434Z"
+  },
+  "otclient_modules.game_store.tr_15": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.442350Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_13": {
+    "src_hash": "05da0bdce5c7b0f0edc2afe63de23eea",
+    "text": "Invia automaticamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.453705Z"
+  },
+  "otclient_modules.keybinds_otui.tr_5": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Azione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.480406Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_1": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Azione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.490559Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_7": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Azione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.491533Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_5": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Azione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.506150Z"
+  },
+  "otclient_modules.spelllist_otui.tr_15": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.516341Z"
+  },
+  "otclient_modules.spelllist_otui.tr_22": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tipo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.517552Z"
+  },
+  "otclient_modules.spelllist_otui.tr_24": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.517835Z"
+  },
+  "otclient_modules.spelllist_otui.tr_27": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.518354Z"
+  },
+  "otclient_modules.statsbar.tr_2": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Nascondere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.520965Z"
+  },
+  "otclient_modules.tasks_otui.tr_6": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:12.524422Z"
+  },
+  "otclient_modules.bestiary.tr_1": {
+    "src_hash": "7b2a7964e4f1d45c01e338885b83e942",
+    "text": "Rimuovi dall'elenco del bottino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:17.147861Z"
+  },
+  "otclient_modules.bestiary.tr_10": {
+    "src_hash": "a2cc588f2ab07ad61b05400f593eeb0a",
+    "text": "Raro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:17.148079Z"
+  },
+  "otclient_modules.bestiary.tr_11": {
+    "src_hash": "2cc4a4c5e260935157569494ed733bf1",
+    "text": "Semi-raro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:17.148270Z"
+  },
+  "otclient_modules.bestiary.tr_12": {
+    "src_hash": "a4fd1ff3ab1075fe7f3fb30ec3829a00",
+    "text": "Non comune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:17.148444Z"
+  },
+  "otclient_modules.bestiary.tr_13": {
+    "src_hash": "d13bc5b68b2bd9e18f29777db17cc563",
+    "text": "Comune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:17.148643Z"
+  },
+  "otclient_modules.bestiary.tr_2": {
+    "src_hash": "d59c6a86691ab35ccacadc368589342b",
+    "text": "Aggiungi alla lista del bottino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:22.411468Z"
+  },
+  "otclient_modules.bestiary.tr_3": {
+    "src_hash": "9c73770b7f4e462b6fc5b27903543845",
+    "text": "Interrompi il monitoraggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:22.411702Z"
+  },
+  "otclient_modules.bestiary.tr_5": {
+    "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
+    "text": "La maestria dell'Animus per questa creatura è sbloccata.\nGuadagna %sPH1__ punti esperienza bonus, più altri 0,1%% per ogni 10 Animus Masteries sbloccati, fino a un massimo di 4%%.\nAttualmente benefici di %s%% punti esperienza bonus grazie allo sblocco delle %s Animus Masteries.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:22.412636Z"
+  },
+  "otclient_modules.bestiary.tr_6": {
+    "src_hash": "7f95bb99ffb26d41800ecf390143ef8b",
+    "text": "Conosciuto:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:22.412824Z"
+  },
+  "otclient_modules.bestiary.tr_7": {
+    "src_hash": "66c4c5112f455a19afde47829df363fa",
+    "text": "Totale:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:22.413025Z"
+  },
+  "otclient_modules.bestiary.tr_8": {
+    "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
+    "text": "La maestria dell'Animus per questa creatura è sbloccata.\nGuadagna %sPH1__ punti esperienza bonus, più altri 0,1%% per ogni 10 Animus Masteries sbloccati, fino a un massimo di 4%%.\nAttualmente benefici di %s%% punti esperienza bonus grazie allo sblocco delle %s Animus Masteries.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:28.638787Z"
+  },
+  "otclient_modules.bestiary.tr_9": {
+    "src_hash": "8e4ce7e78c9c1b19c4b193170ca1044d",
+    "text": "Molto raro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:28.639005Z"
+  },
+  "otclient_modules.bestiary_otui.tr_1": {
+    "src_hash": "70332d2adf1ffa9d75b86ac43feb1e43",
+    "text": "Posizione/i",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:28.639224Z"
+  },
+  "otclient_modules.bestiary_otui.tr_10": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Uccisioni totali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:28.639428Z"
+  },
+  "otclient_modules.bestiary_otui.tr_11": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:28.639582Z"
+  },
+  "otclient_modules.bestiary_otui.tr_12": {
+    "src_hash": "1e3976837dac293dca6cdeae81e9abd6",
+    "text": "Tieni traccia delle uccisioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:33.776281Z"
+  },
+  "otclient_modules.bestiary_otui.tr_13": {
+    "src_hash": "5e2dc2efe9702dd86d89378e76f5201b",
+    "text": "Nome della creatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:33.776532Z"
+  },
+  "otclient_modules.bestiary_otui.tr_14": {
+    "src_hash": "6b2d75cc5eb0ea8c7fdf5686d758947a",
+    "text": "1/1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:33.776703Z"
+  },
+  "otclient_modules.bestiary_otui.tr_15": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:33.776918Z"
+  },
+  "otclient_modules.bestiary_otui.tr_16": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Ricerca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:33.777085Z"
+  },
+  "otclient_modules.bestiary_otui.tr_7": {
+    "src_hash": "922a418434bbdee9754297220d31d461",
+    "text": "Selezione del fascino:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:38.024420Z"
+  },
+  "otclient_modules.bestiary_otui.tr_8": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selezionare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:38.024646Z"
+  },
+  "otclient_modules.blessing.tr_1": {
+    "src_hash": "a4ecfc70574394990cf17bd83df499f7",
+    "text": "Evento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:38.024816Z"
+  },
+  "otclient_modules.blessing.tr_11": {
+    "src_hash": "64a05985e4368c666848f7f0922886a5",
+    "text": "- A seconda delle regole del combattimento leale, perderai tra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:38.025171Z"
   }
 }

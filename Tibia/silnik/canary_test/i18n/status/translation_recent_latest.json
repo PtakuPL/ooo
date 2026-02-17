@@ -1,128 +1,104 @@
 {
-  "timestamp": "2026-02-17T06:02:39.772444Z",
-  "language": "pl",
-  "json_file": "cpp.json",
-  "translated": 36,
+  "timestamp": "2026-02-17T06:04:15.559759Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 16,
   "entries": [
     {
-      "key": "cpp.title.name_4",
-      "en": "Beaststrider (Grade 1)",
-      "translated": "Bestia (klasa 1)",
-      "source": "google_translate"
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_48",
-      "en": "Master of Illusion",
-      "translated": "Mistrz iluzji",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.greet_1",
+      "en": "<sniff>",
+      "translated": "<sniff>",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_49",
-      "en": "Ooze Blues",
-      "translated": "Orzeźwiający blues",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_5",
-      "en": "Beaststrider (Grade 2)",
-      "translated": "Bestia (klasa 2)",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_51",
-      "en": "Snake Charmer",
-      "translated": "Zaklinacz Węży",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_6",
-      "en": "Beaststrider (Grade 3)",
-      "translated": "Bestia (klasa 3)",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_65",
-      "en": "Creature of Habit (Grade 1)",
-      "translated": "Stworzenie z przyzwyczajenia (stopień 1)",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_66",
-      "en": "Creature of Habit (Grade 2)",
-      "translated": "Stworzenie z przyzwyczajenia (klasa 2)",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_67",
-      "en": "Creature of Habit (Grade 3)",
-      "translated": "Stworzenie z przyzwyczajenia (klasa 3)",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_68",
-      "en": "Creature of Habit (Grade 4)",
-      "translated": "Stworzenie z przyzwyczajenia (klasa 4)",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_69",
-      "en": "Creature of Habit (Grade 5)",
-      "translated": "Stworzenie z przyzwyczajenia (klasa 5)",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_7",
-      "en": "Beaststrider (Grade 4)",
-      "translated": "Bestia (klasa 4)",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_72",
-      "en": "Feared Bountyhunter",
-      "translated": "Przestraszony Łowca Nagród",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_8",
-      "en": "Beaststrider (Grade 5)",
-      "translated": "Bestia (klasa 5)",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_80",
-      "en": "Royal Bounacean Advisor",
-      "translated": "Królewski Doradca Bounaceański",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.title.name_84",
-      "en": "Bringer of Rain",
-      "translated": "Zwiastun deszczu",
-      "source": "google_translate"
-    },
-    {
-      "key": "cpp.title.name_86",
-      "en": "Midnight Hunter",
-      "translated": "Północ Hunter",
-      "source": "google_translate"
-    },
-    {
-      "key": "cpp.title.name_9",
-      "en": "Tibia's Topmodel (Grade 1)",
-      "translated": "Topmodelka Tibia (klasa 1)",
-      "source": "google_translate"
-    },
-    {
-      "key": "cpp.trade.not_enough_capacity",
-      "en": "You do not have enough capacity to carry",
-      "translated": "Nie masz wystarczającej pojemności, aby unieść",
-      "source": "google_translate"
-    },
-    {
-      "key": "cpp.trade.not_enough_room",
-      "en": "You do not have enough room to carry",
-      "translated": "Nie masz wystarczająco dużo miejsca do noszenia",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     }
   ]
 }

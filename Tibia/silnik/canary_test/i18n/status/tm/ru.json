@@ -32214,5 +32214,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:58:07.290998Z"
+  },
+  "book.otbm.buy_ropes_at_al_dees": {
+    "src_hash": "e0156e78c8130e9eedd7a1d5de171b26",
+    "text": "Купите веревки в магазине Эла Ди.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:48.543660Z"
+  },
+  "book.otbm.by_a_victim_of_a": {
+    "src_hash": "797ebfed729701e976319aaf044f06b6",
+    "text": "жертвой ошибочного заклинания хамелеон.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:48.544059Z"
+  },
+  "book.otbm.by_an_unknown_necromancer": {
+    "src_hash": "64741692f3e5f942465650b884147eef",
+    "text": "неизвестным некромантом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:52.601866Z"
+  },
+  "book.otbm.by_jonea_ancient_council_of": {
+    "src_hash": "6e87c82cf92fcd36a518e1443ec417bf",
+    "text": "Автор: Джонеа, древний совет колдунов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:52.602355Z"
+  },
+  "book.otbm.by_the_way_the_summoning": {
+    "src_hash": "dd2755acca6080d1b4eb42cdb2ebb839",
+    "text": "Кстати: призыв меньших существ, так называемых 'reds', продвигался сравнительно хорошо. Конечно, эти существа всего лишь обитатели границ и, следовательно, не могут считаться настоящими демонами. Однако может оказаться, что разработка заклинаний призыва для 'reds' станет полезным побочным продуктом исследований по призыву демонов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:52.603738Z"
+  },
+  "book.otbm.caliph_family_burial_vault": {
+    "src_hash": "877f21ff10863e0b643fe4dc4f11fc54",
+    "text": "Семейная усыпальница халифа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:52.604061Z"
+  },
+  "book.otbm.caliph_family_memorial_crypt": {
+    "src_hash": "21bfa75e8ddba7ed148ae99084f7bdc4",
+    "text": "Мемориальный склеп семьи халифа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:52.604380Z"
+  },
+  "book.otbm.captain_osgrain_scourge_of_the": {
+    "src_hash": "0b439a5f442ead8b6abedfde3d76f28f",
+    "text": "Капитан Осгрейн, бич орков, освободитель берегов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:57.861707Z"
+  },
+  "book.otbm.cast_by_rootos_sprout": {
+    "src_hash": "ebcd26177234c984db2e691fd2993a0b",
+    "text": "- в ролях Рутос Спраут -",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:57.862030Z"
+  },
+  "book.otbm.castle_of_the_white_dragon": {
+    "src_hash": "f098246294e0bdcf03dbcfda74b64aa8",
+    "text": "Замок Белого Дракона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:57.862401Z"
+  },
+  "book.otbm.centuries_ago_our_ancients_build": {
+    "src_hash": "4fc3592c2f423e48b450286cdf830627",
+    "text": "Много веков назад наши предки построили этот лабиринт, чтобы защитить наш город Demona от бандитов и воинов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:57.863205Z"
+  },
+  "book.otbm.centuries_from_his_fire_and": {
+    "src_hash": "463ca1cecc7fbd25d2112be9287bf7bb",
+    "text": "столетия от его огня и его магии, подобных тем, которые мы знаем сегодня.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:03:57.863713Z"
+  },
+  "book.otbm.certain_edges_are_not_edible": {
+    "src_hash": "c786ac6c7ba71690fdcf09555d01ff0f",
+    "text": "* Некоторые края несъедобны и не влияют на успех.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:04:03.382650Z"
+  },
+  "book.otbm.chain_armor_brass_armor_leather": {
+    "src_hash": "89dc7999b6e3976ab83479214ea6e6a5",
+    "text": "кольчуга, латунная броня, кожаная броня, кольчужный шлем, кожаный шлем, стальной щит, щит викинга, деревянный щит, кольчужные ноги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:04:03.383288Z"
+  },
+  "book.otbm.cheese_5_wheels_who_needs": {
+    "src_hash": "94595c7b8fda7aff2d8e66850b0d775e",
+    "text": "Сыр - 5 колесиков *Кому нужно столько сыра...? -Белетор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:04:03.383742Z"
   }
 }

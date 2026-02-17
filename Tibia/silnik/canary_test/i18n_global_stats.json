@@ -1,8 +1,8 @@
 {
-  "total_cycles": 303,
+  "total_cycles": 304,
   "mode": "AUTO_TRANSLATE",
-  "category": "pl",
-  "last_update": "2026-02-17T07:02:43.699318",
+  "category": "es",
+  "last_update": "2026-02-17T07:04:17.461339",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,135 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "pl",
+    "language": "es",
     "json_file": "cpp.json",
-    "keys_to_translate": 70,
-    "guard_fail": 23,
+    "keys_to_translate": 12,
+    "guard_fail": 9,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 36,
-    "recent_examples": [
-      {
-        "key": "cpp.title.name_4",
-        "en": "Beaststrider (Grade 1)",
-        "translated": "Bestia (klasa 1)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_48",
-        "en": "Master of Illusion",
-        "translated": "Mistrz iluzji",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_49",
-        "en": "Ooze Blues",
-        "translated": "Orze\u017awiaj\u0105cy blues",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_5",
-        "en": "Beaststrider (Grade 2)",
-        "translated": "Bestia (klasa 2)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_51",
-        "en": "Snake Charmer",
-        "translated": "Zaklinacz W\u0119\u017cy",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_6",
-        "en": "Beaststrider (Grade 3)",
-        "translated": "Bestia (klasa 3)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_65",
-        "en": "Creature of Habit (Grade 1)",
-        "translated": "Stworzenie z przyzwyczajenia (stopie\u0144 1)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_66",
-        "en": "Creature of Habit (Grade 2)",
-        "translated": "Stworzenie z przyzwyczajenia (klasa 2)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_67",
-        "en": "Creature of Habit (Grade 3)",
-        "translated": "Stworzenie z przyzwyczajenia (klasa 3)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_68",
-        "en": "Creature of Habit (Grade 4)",
-        "translated": "Stworzenie z przyzwyczajenia (klasa 4)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_69",
-        "en": "Creature of Habit (Grade 5)",
-        "translated": "Stworzenie z przyzwyczajenia (klasa 5)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_7",
-        "en": "Beaststrider (Grade 4)",
-        "translated": "Bestia (klasa 4)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_72",
-        "en": "Feared Bountyhunter",
-        "translated": "Przestraszony \u0141owca Nagr\u00f3d",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_8",
-        "en": "Beaststrider (Grade 5)",
-        "translated": "Bestia (klasa 5)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_80",
-        "en": "Royal Bounacean Advisor",
-        "translated": "Kr\u00f3lewski Doradca Bounacea\u0144ski",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_84",
-        "en": "Bringer of Rain",
-        "translated": "Zwiastun deszczu",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_86",
-        "en": "Midnight Hunter",
-        "translated": "P\u00f3\u0142noc Hunter",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.title.name_9",
-        "en": "Tibia's Topmodel (Grade 1)",
-        "translated": "Topmodelka Tibia (klasa 1)",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.trade.not_enough_capacity",
-        "en": "You do not have enough capacity to carry",
-        "translated": "Nie masz wystarczaj\u0105cej pojemno\u015bci, aby unie\u015b\u0107",
-        "source": "google_translate"
-      },
-      {
-        "key": "cpp.trade.not_enough_room",
-        "en": "You do not have enough room to carry",
-        "translated": "Nie masz wystarczaj\u0105co du\u017co miejsca do noszenia",
-        "source": "google_translate"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

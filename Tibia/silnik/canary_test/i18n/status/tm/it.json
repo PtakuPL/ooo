@@ -56198,5 +56198,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:14:20.376955Z"
+  },
+  "client.character.text1": {
+    "src_hash": "a956161a69928cd130a889b88082fb6e",
+    "text": "carattere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:10.405009Z"
+  },
+  "client.bosstiary.text1": {
+    "src_hash": "5b949a092bf0fd9fa569a1a0edb6ae67",
+    "text": "bossiario",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:10.406183Z"
+  },
+  "client.bosstiary.text2": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Rovina\n\nPer sbloccare un livello, riceverai i seguenti punti boss:\nAbilità: 5\nCompetenza: 15\nMaestria: 30",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:10.406814Z"
+  },
+  "client.neededtranslations.text3": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Elenco degli articoli che puoi acquistare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:10.411504Z"
+  },
+  "client.neededtranslations.text4": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Elenco degli articoli che puoi vendere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:10.412068Z"
+  },
+  "client.boss_slots.text4": {
+    "src_hash": "9a3b9f3362303ea8f57e16ff69927a44",
+    "text": "Archefoe\n\nPer sbloccare un livello, riceverai i seguenti punti boss:\nAbilità: 10\nCompetenza: 30\nMaestria: 60",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:15.489325Z"
+  },
+  "client.map.text1": {
+    "src_hash": "6ca9e6141ede519f05c9fadeb4fe4262",
+    "text": "Impossibile caricare la minimappa, file mancante?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:15.489676Z"
+  },
+  "client.map.text2": {
+    "src_hash": "b8cc006cff8573003ffd0253bc55e261",
+    "text": "MarkListItem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:15.489888Z"
+  },
+  "client.character.text2": {
+    "src_hash": "5913efb942586b6d6e80fcdc82566497",
+    "text": "Stai ispezionando",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:15.490203Z"
+  },
+  "client.character.text3": {
+    "src_hash": "1aa08665a4e52f93858ae18cda4252da",
+    "text": "ArticoloInventarioCiclopedia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:15.490601Z"
+  },
+  "client.character.text4": {
+    "src_hash": "081ce6f4b6055253238c7b07e6447918",
+    "text": "Mostra gli abiti del negozio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:19.763161Z"
+  },
+  "client.bestiary.text1": {
+    "src_hash": "19e4c49fe8dfeba41d77d57a32cbc5f3",
+    "text": "BestiarioItemGroup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:19.763759Z"
+  },
+  "client.bosstiary.text3": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Per sbloccare un livello, riceverai i seguenti punti boss:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:19.764216Z"
+  },
+  "client.bosstiary.text4": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Competenza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:19.764405Z"
+  },
+  "client.bosstiary.text5": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Per sbloccare un livello, riceverai i seguenti punti boss:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:19.764757Z"
+  },
+  "client.terminal.text1": {
+    "src_hash": "737539b89a0e6696ce9b9066be76bf46",
+    "text": "Attiva/disattiva terminale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:24.815474Z"
+  },
+  "client.terminal.text2": {
+    "src_hash": "737539b89a0e6696ce9b9066be76bf46",
+    "text": "Attiva/disattiva terminale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:24.815789Z"
+  },
+  "client.terminal.text3": {
+    "src_hash": "737539b89a0e6696ce9b9066be76bf46",
+    "text": "Attiva/disattiva terminale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:24.816188Z"
+  },
+  "client.attachedeffects.text1": {
+    "src_hash": "292395b28a9118bc861d399ebfde63c7",
+    "text": "effetto-creatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:24.816414Z"
+  },
+  "client.imbuementtracker.text1": {
+    "src_hash": "0527872062bbbee05c352b8eb9ea2933",
+    "text": "ImbuementTracker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:24.816868Z"
+  },
+  "client.mounts.text1": {
+    "src_hash": "c95bd589378a239cbf6f80a7e9cfb55a",
+    "text": "dati/XML/mounts.xml",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:31.941480Z"
+  },
+  "client.mounts.text2": {
+    "src_hash": "1f4f947d6824f23e7d267f986aef7543",
+    "text": "Errore durante l'apertura del file:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:31.941817Z"
+  },
+  "client.json.text1": {
+    "src_hash": "0cbbe71339938f822c980a2beec9d016",
+    "text": "riferimento circolare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:31.943042Z"
+  },
+  "client.json.text2": {
+    "src_hash": "2fd6ad77a81360641e1b59f93b9c2dc0",
+    "text": "tabella non valida: tipi di chiavi misti o non validi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:31.943417Z"
+  },
+  "client.json.text3": {
+    "src_hash": "610743b8ad891aba2d86dcdb74935d2b",
+    "text": "tabella non valida: array sparso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:37.908427Z"
+  },
+  "client.json.text4": {
+    "src_hash": "2fd6ad77a81360641e1b59f93b9c2dc0",
+    "text": "tabella non valida: tipi di chiavi misti o non validi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:37.908834Z"
+  },
+  "client.game_shop.text1": {
+    "src_hash": "8d7fc8bc0bf68b77630d5a48da3e2547",
+    "text": "Accedi al GameShop",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:37.909110Z"
+  },
+  "client.game_shop.text2": {
+    "src_hash": "840b76b173332030cf4c82994fba10c9",
+    "text": "GameShopExtended",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:37.909353Z"
+  },
+  "client.game_shop.text3": {
+    "src_hash": "70e9fac741af644fd3e5360831053f82",
+    "text": "Ripristina i punti ferita del tuo personaggio.\n\n- utilizzabile solo acquistando il personaggio\n- verrà inviato al tuo zaino\n- non può essere acquistato da personaggi con blocco zona di protezione o segno di battaglia\n- non può",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:37.910239Z"
+  },
+  "client.game_shop.text4": {
+    "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+    "text": "Ricarica il mana del tuo personaggio.\n\n- utilizzabile solo acquistando il personaggio\n- verrà inviato al tuo zaino\n- non può essere acquistato da personaggi con blocco zona di protezione o segno di battaglia\n- non può essere puro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:44.651831Z"
+  },
+  "client.game_shop.text5": {
+    "src_hash": "781a5b5a0909474026612d3e59be1b7c",
+    "text": "Tempo Premium",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:44.652087Z"
+  },
+  "client.market.text1": {
+    "src_hash": "a093ba71fca8d183ec3f80712722223f",
+    "text": "opzione e aggiunge il file",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:44.652354Z"
+  },
+  "client.market.text2": {
+    "src_hash": "5954d0da4aad8145900a38481505f95c",
+    "text": "Saldo: <valore> oro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:44.652595Z"
+  },
+  "client.market.text3": {
+    "src_hash": "73bb06ddb4b14370331dafb66b6d2dfa",
+    "text": "Riservato per ulteriori funzionalità successive",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:44.652919Z"
+  },
+  "client.bottommenu.text1": {
+    "src_hash": "0038f646ebb40256e69aae1e314fe06e",
+    "text": "immagini/suggerimento casuale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:50.891512Z"
+  },
+  "client.bottommenu.text2": {
+    "src_hash": "e8d9ae9e5f1306bcd3c551706b68f574",
+    "text": "Abilitazione del pannello delle creature potenziate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:50.891859Z"
+  },
+  "client.bottommenu.text3": {
+    "src_hash": "016822ab6c3d1b333948fa31e50ed58a",
+    "text": "immagine dell'etichetta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:50.892092Z"
+  },
+  "client.bottommenu.text4": {
+    "src_hash": "36d2572a331bfb5f5a5f20a870128780",
+    "text": ", descrizione =",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:50.892305Z"
+  },
+  "client.bottommenu.text5": {
+    "src_hash": "57cac65371fa5e2db2a82019609b5c08",
+    "text": "immagini/icona-punto interrogativo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:50.892551Z"
+  },
+  "client.updater.text1": {
+    "src_hash": "8b13a090de6c7d6b7363b7c75fef2bb0",
+    "text": "dati/cose",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:55.387535Z"
+  },
+  "client.updater.text2": {
+    "src_hash": "8b13a090de6c7d6b7363b7c75fef2bb0",
+    "text": "dati/cose",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:55.387809Z"
+  },
+  "client.updater.text3": {
+    "src_hash": "62a88f6e2ba35dd7ebd826a930527245",
+    "text": "Errore dell'aggiornamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:55.388073Z"
+  },
+  "client.game_stash.text1": {
+    "src_hash": "8524de963f07201e5c086830d370797f",
+    "text": "Caricamento...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:55.388288Z"
+  },
+  "client.game_stash.text2": {
+    "src_hash": "8524de963f07201e5c086830d370797f",
+    "text": "Caricamento...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:16:55.388493Z"
+  },
+  "client.tasksystem.text1": {
+    "src_hash": "e04fb54dcda29d1265390400abfe7f98",
+    "text": "Non puoi assumere più compiti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:00.846235Z"
+  },
+  "client.tasksystem.text2": {
+    "src_hash": "910261c804abceefc60b456060165a21",
+    "text": "Non hai questa attività attiva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:00.846597Z"
+  },
+  "client.tasks.text1": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Seleziona il mostro dall'elenco dei mostri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:00.846918Z"
+  },
+  "client.tasks.text2": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Seleziona il mostro dall'elenco dei mostri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:00.847225Z"
   }
 }

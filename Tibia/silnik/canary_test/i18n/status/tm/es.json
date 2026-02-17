@@ -149758,5 +149758,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:10:09.643052Z"
+  },
+  "npc.walter_jaeger.walkaway_msg_1": {
+    "src_hash": "7c1e119f07c5fab37a87deb7524675c0",
+    "text": "¡Sigue cazando!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.089767Z"
+  },
+  "npc.walter_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "¡VIVA EL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.091214Z"
+  },
+  "npc.wentworth.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.094968Z"
+  },
+  "npc.wentworth.stdmod_1": {
+    "src_hash": "5c48989c28bec12a18c494fa8b3b920d",
+    "text": "¡No desperdicies, no quieras!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.113674Z"
+  },
+  "npc.wentworth.voice_1": {
+    "src_hash": "5c48989c28bec12a18c494fa8b3b920d",
+    "text": "¡No desperdicies, no quieras!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.118921Z"
+  },
+  "npc.wentworth.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.121099Z"
+  },
+  "npc.willard.farewell_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.122153Z"
+  },
+  "npc.willard.greet_msg_1": {
+    "src_hash": "5d8a874dc88322d599182c01a8348e75",
+    "text": "¡Saludos y Banor esté contigo, |PLAYERNAME|! ¿Puedo interesarle un {trade} para armas, municiones o armaduras?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.123614Z"
+  },
+  "npc.willard.sendtrade_msg_1": {
+    "src_hash": "7481890be3310f1997f763669bea5fc2",
+    "text": "Por supuesto, simplemente navega por mis productos. Si solo está interesado en el equipo {distance}, hágamelo saber.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.126734Z"
+  },
+  "npc.willard.walkaway_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.128075Z"
+  },
+  "npc.willie.farewell_msg_1": {
+    "src_hash": "ac49252af774e82566b348f66f018d60",
+    "text": "Sí, adiós |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.129047Z"
+  },
+  "npc.willie.sendtrade_msg_1": {
+    "src_hash": "7195fc5267adfddbf2e68f2b65bdb821",
+    "text": "Echa un buen vistazo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.130625Z"
+  },
+  "npc.willie.walkaway_msg_1": {
+    "src_hash": "6a683e53f6577246a04063e5b35e773a",
+    "text": "¡Sí, vete!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.156711Z"
+  },
+  "npc.woblin.greet_msg_1": {
+    "src_hash": "79d3a1d7e57eb46580d890976dabca74",
+    "text": "¡Hola humano!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.157855Z"
+  },
+  "npc.wyda.greet_msg_1": {
+    "src_hash": "32ea8a210f58e3b3b9d2ca241008cde6",
+    "text": "¿Qué? ¿Un mundano hablándome? Divertido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.163247Z"
+  },
+  "npc.wyrdin.farewell_msg_1": {
+    "src_hash": "15377725f5421c09ff09d1ae0b4ea5c8",
+    "text": "Buena suerte en tus viajes, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.169405Z"
+  },
+  "npc.wyrdin.greet_msg_1": {
+    "src_hash": "bb80bd3c45b16d448ceda463ee3b51a2",
+    "text": "Hola, ¿qué te trae por aquí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.170481Z"
+  },
+  "npc.xelvar.greet_msg_1": {
+    "src_hash": "c5bd5009e88d50420bca9830e81bba5c",
+    "text": "Saludos. ¿Estás interesado en las aventuras?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.180944Z"
+  },
+  "npc.xorlosh.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Nos vemos amigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.192315Z"
+  },
+  "npc.xorlosh.greet_msg_1": {
+    "src_hash": "57d4271d21d7a75a635e3f30ca4a1a75",
+    "text": "¿Quién eres? ¿Eres un genio en mecánica? No lo pareces.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.193804Z"
+  },
+  "npc.xorlosh.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Nos vemos amigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.197326Z"
+  },
+  "npc.yaman.farewell_msg_1": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Adiós, humano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.224343Z"
+  },
+  "npc.yaman.walkaway_msg_1": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Adiós, humano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.232722Z"
+  },
+  "npc.yonan.say_2": {
+    "src_hash": "9c6c1ff5a385fc7e51e4c1b7458c1fc7",
+    "text": "Aquí tienes la lista con los ingredientes que faltan para completar el ritual.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.267426Z"
+  },
+  "npc.yonan.say_4": {
+    "src_hash": "f6343a74f328ad7c53794e341989dc39",
+    "text": "¿Trajiste todos los materiales de los que te informé? ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.268704Z"
+  },
+  "npc.zalamon.greet_msg_1": {
+    "src_hash": "1129eefc987b11ae0e91081661fe1434",
+    "text": "No hay muchos viajeroszz zzezze dayzz. Espero que traigas buenas noticias.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:19:03.271973Z"
   }
 }

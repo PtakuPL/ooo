@@ -33902,5 +33902,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:14:38.387871Z"
+  },
+  "achievement.522.description": {
+    "src_hash": "e2611f3ec16e41d70912ec0e954bb8db",
+    "text": "Вы победили Мегасильвана Изельду, следуя за спящей карнисильванской угрозой глубоко под Bounac.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:12.549691Z"
+  },
+  "achievement.523.name": {
+    "src_hash": "e08f3e15058eee8d694c8b670adca823",
+    "text": "Бунасианское рыцарство",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:12.550150Z"
+  },
+  "achievement.523.description": {
+    "src_hash": "76167ea144742502432867c2b4577fd1",
+    "text": "Изельда всегда стоит на страже против карнисильванской угрозы. Всегда бодрствующая, ожидающая в темноте, ее сердце жаждет снова воссоединиться со своим королем. Глубокое сопереживание позволило герою принести ей тюльпан Кесаря ​​в знак своей любви. Этим героем был ты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:12.551178Z"
+  },
+  "achievement.524.description": {
+    "src_hash": "0f5c6c46a53debde3fc1197ed9ae70cf",
+    "text": "Ваша жажда знаний ненасытна. В задаче по оказанию помощи вашим друзьям-гномам безупречное исполнение — это лишь вишенка на торте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:19.108601Z"
+  },
+  "achievement.525.description": {
+    "src_hash": "b982948fb2c85da882a01a34b459c1b6",
+    "text": "Это уже не первый раз, когда вы помогаете Сапфировому Клину или Полуночному Пламени с трудным заданием. Теперь вы можете носить килмарешские одежды, а также тагралтский клинок и расшитую глазами вуаль провидцев в знак благодарности Issavi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:19.109920Z"
+  },
+  "achievement.526.name": {
+    "src_hash": "43f329e7940e8fdc2fc6bc0bea1d644d",
+    "text": "Королевский совет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:19.110226Z"
+  },
+  "achievement.526.description": {
+    "src_hash": "ce8b25f4cdd9559153862a153e60955e",
+    "text": "Ваши постоянные усилия по обеспечению безопасности Bounac и народа Кесара Младшего принесли вам постоянное место при королевском дворе в качестве советника короля.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:24.419117Z"
+  },
+  "achievement.527.name": {
+    "src_hash": "3b08f077038d9edbe13cca749c1595c8",
+    "text": "По горячим следам",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:24.419410Z"
+  },
+  "achievement.527.description": {
+    "src_hash": "ac09d36ce6fde81433f7bea66bc96f34",
+    "text": "Поскольку оно пожаробезопасно, это пылающее существо чувствует себя как дома в бушующем аду. Но помните: если оно не горит, оно все равно горит!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:24.420099Z"
+  },
+  "achievement.528.name": {
+    "src_hash": "24dc5184af337fa8c6ceb4733bf8bba0",
+    "text": "Шелл, мы прокатимся",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:24.420378Z"
+  },
+  "achievement.528.description": {
+    "src_hash": "8de5b4a3f279b97929bf45f30dbf3454",
+    "text": "Это насекомое, похожее на компаньона, оснащенное панцирем черепахи и когтями омара, поможет вам преодолеть любые трудности.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:24.421079Z"
+  },
+  "achievement.529.name": {
+    "src_hash": "4fac276a92cfa01a3f34b82d686a4e95",
+    "text": "Фантастика!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:28.621260Z"
+  },
+  "achievement.529.description": {
+    "src_hash": "214289eaccc18457cae4646bdfdd91ec",
+    "text": "Это могучее толстокожее животное пойдет в бой, словно просто на воскресную прогулку. Цена дружбы составила всего несколько очков дрома!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:28.621909Z"
+  },
+  "achievement.530.name": {
+    "src_hash": "2255ebfa44b9a2be214744321ae2786e",
+    "text": "Некоторым нравится погорячее",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:28.622271Z"
+  },
+  "achievement.530.description": {
+    "src_hash": "aeca801c2d78ab247c07244943ed6189",
+    "text": "Вы выдержали палящую жару в туннелях глубоко под Kazordoon и победили Похитителя мозгов. Голоса в твоей голове наконец замолкают.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:31.298303Z"
+  },
+  "achievement.531.name": {
+    "src_hash": "a3e826abbe04f85bb08a8c1f4bb7d07a",
+    "text": "Первое достижение",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:31.298722Z"
+  },
+  "achievement.531.description": {
+    "src_hash": "6535c57f25521299169b7c4d5cc10561",
+    "text": "Поздравляем с первым достижением! ... Ну, не совсем. Но представьте себе, это так. Потому что на этом этапе вашего путешествия в прошлое Tibia были введены достижения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:36.020259Z"
+  },
+  "achievement.532.name": {
+    "src_hash": "ce97108d842aa27824256ff71868b63e",
+    "text": "Острый одетый",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:36.020569Z"
+  },
+  "achievement.532.description": {
+    "src_hash": "a43f807bacdd14fb6a4f5dd1f5a139d4",
+    "text": "Просто все будут от вас без ума, если вы наденете это торжественное платье. Они прибегут, обещаю!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:36.021254Z"
+  },
+  "achievement.533.name": {
+    "src_hash": "6e95a589ebbe870cd07b0ebc11e3b249",
+    "text": "Водитель двигателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:36.021505Z"
+  },
+  "achievement.533.description": {
+    "src_hash": "fa843228736c58be3124e503e8a1eb89",
+    "text": "Этот локомотив, управляемый мрачностью, в мгновение ока доставит вас на любую вечеринку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:36.021989Z"
+  },
+  "achievement.534.name": {
+    "src_hash": "53c4601663c262dec915395569fb28ef",
+    "text": "Дружественный огонь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:40.259127Z"
+  },
+  "achievement.534.description": {
+    "src_hash": "6703f935ba5468b754add040ca3358f6",
+    "text": "Вы овладели огнем и приручили супервулкан!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:40.259594Z"
+  },
+  "achievement.535.name": {
+    "src_hash": "6de4b67a34c8f17fa07520b781662747",
+    "text": "Свадебный организатор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:40.259873Z"
+  },
+  "achievement.535.description": {
+    "src_hash": "5446aecf76e62d7cfef8e960d32b00cf",
+    "text": "Увы! Что может быть прекраснее и радостнее, чем объединить два любящих сердца? Так романтично!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:40.260440Z"
+  },
+  "achievement.536.name": {
+    "src_hash": "9636901aab1c7fd754be415412d03ca4",
+    "text": "Трудиться не покладая рук",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:40.260736Z"
+  },
+  "achievement.536.description": {
+    "src_hash": "2ea8c930f54f6b0d7a8ba69d4ea6524a",
+    "text": "Ты действительно был занят, как бобр, чтобы помочь нагам. Наслаждайтесь энергичной компанией!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:43.345609Z"
+  },
+  "achievement.537.description": {
+    "src_hash": "b07d927b75e9d372722970c68113c429",
+    "text": "Таинственные наги, яркие джунгли и тонущий остров — теперь вы действительно знаете каждый уголок Marapur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:43.346313Z"
   }
 }

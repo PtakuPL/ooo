@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T07:15:42.567176Z",
-  "language": "ro",
-  "json_file": "client.json",
-  "translated": 46,
+  "timestamp": "2026-02-17T07:19:03.824034Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 51,
   "entries": [
     {
-      "key": "client.mounts.text2",
-      "en": "Error opening the file:",
-      "translated": "Eroare la deschiderea fișierului:",
-      "source": "google_translate"
+      "key": "npc.willard.farewell_msg_1",
+      "en": "Farewell, |PLAYERNAME|.",
+      "translated": "Adiós, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "client.json.text1",
-      "en": "circular reference",
-      "translated": "referință circulară",
-      "source": "google_translate"
+      "key": "npc.willard.greet_msg_1",
+      "en": "Greetings and Banor be with you, |PLAYERNAME|! May I interest you in a {trade} for weapons, ammunition or armor?",
+      "translated": "¡Saludos y Banor esté contigo, |PLAYERNAME|! ¿Puedo interesarle un {trade} para armas, municiones o armaduras?",
+      "source": "simple"
     },
     {
-      "key": "client.json.text2",
-      "en": "invalid table: mixed or invalid key types",
-      "translated": "tabel nevalid: tipuri de chei mixte sau nevalide",
-      "source": "google_translate"
+      "key": "npc.willard.sendtrade_msg_1",
+      "en": "Of course, just browse through my wares. If you're only interested in {distance} equipment, let me know.",
+      "translated": "Por supuesto, simplemente navega por mis productos. Si solo está interesado en el equipo {distance}, hágamelo saber.",
+      "source": "simple"
     },
     {
-      "key": "client.json.text3",
-      "en": "invalid table: sparse array",
-      "translated": "tabel nevalid: matrice rară",
-      "source": "google_translate"
+      "key": "npc.willard.walkaway_msg_1",
+      "en": "Farewell, |PLAYERNAME|.",
+      "translated": "Adiós, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "client.json.text4",
-      "en": "invalid table: mixed or invalid key types",
-      "translated": "tabel nevalid: tipuri de chei mixte sau nevalide",
-      "source": "google_translate"
+      "key": "npc.willie.farewell_msg_1",
+      "en": "Yeah, bye |PLAYERNAME|.",
+      "translated": "Sí, adiós |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "client.game_shop.text1",
-      "en": "GameShopLogin",
-      "translated": "GameShopLogin",
-      "source": "google_translate"
+      "key": "npc.willie.sendtrade_msg_1",
+      "en": "Ya take a good look.",
+      "translated": "Echa un buen vistazo.",
+      "source": "simple"
     },
     {
-      "key": "client.game_shop.text2",
-      "en": "GameShopExtended",
-      "translated": "GameShopExtended",
-      "source": "google_translate"
+      "key": "npc.willie.walkaway_msg_1",
+      "en": "Yeah go away!",
+      "translated": "¡Sí, vete!",
+      "source": "simple"
     },
     {
-      "key": "client.game_shop.text3",
-      "en": "Restores your character's hit points.\n\n- only usable by purchasing character\n- will be sent to your backpack\n- cannot be purchased by characters with protection zone block or battle sign\n- cannot",
-      "translated": "Restaurează punctele de hit ale personajului tău.\n\n- utilizabil numai prin cumpărarea caracterului\n- va fi trimis la rucsac\n- nu poate fi achiziționat de personaje cu bloc de zonă de protecție sau semn de luptă\n- nu pot",
-      "source": "google_translate"
+      "key": "npc.woblin.greet_msg_1",
+      "en": "Hi there human!",
+      "translated": "¡Hola humano!",
+      "source": "simple"
     },
     {
-      "key": "client.game_shop.text4",
-      "en": "Refills your character's mana.\n\n- only usable by purchasing character\n- will be sent to your backpack\n- cannot be purchased by characters with protection zone block or battle sign\n- cannot be pur",
-      "translated": "Reumple mana personajului tău.\n\n- utilizabil numai prin cumpărarea caracterului\n- va fi trimis la rucsac\n- nu poate fi achiziționat de personaje cu bloc de zonă de protecție sau semn de luptă\n- nu poate fi pur",
-      "source": "google_translate"
+      "key": "npc.wyda.greet_msg_1",
+      "en": "What? A mundane talking to me? Amusing.",
+      "translated": "¿Qué? ¿Un mundano hablándome? Divertido.",
+      "source": "simple"
     },
     {
-      "key": "client.market.text1",
-      "en": "option and adds the",
-      "translated": "opțiunea și adaugă",
-      "source": "google_translate"
+      "key": "npc.wyrdin.farewell_msg_1",
+      "en": "Good luck for your travels, |PLAYERNAME|.",
+      "translated": "Buena suerte en tus viajes, |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "client.market.text2",
-      "en": "Balance: <value> gold",
-      "translated": "Sold: <valoare> aur",
-      "source": "google_translate"
+      "key": "npc.wyrdin.greet_msg_1",
+      "en": "Hello, what brings you here?",
+      "translated": "Hola, ¿qué te trae por aquí?",
+      "source": "simple"
     },
     {
-      "key": "client.market.text3",
-      "en": "Reserved for more functionality later",
-      "translated": "Rezervat pentru mai multe funcționalități ulterior",
-      "source": "google_translate"
+      "key": "npc.xelvar.greet_msg_1",
+      "en": "Greetings. Are you interested in adventures?",
+      "translated": "Saludos. ¿Estás interesado en las aventuras?",
+      "source": "simple"
     },
     {
-      "key": "client.bottommenu.text1",
-      "en": "images/randomhint",
-      "translated": "imagini/hint aleatoriu",
-      "source": "google_translate"
+      "key": "npc.xorlosh.farewell_msg_1",
+      "en": "See you my friend.",
+      "translated": "Nos vemos amigo.",
+      "source": "simple"
     },
     {
-      "key": "client.bottommenu.text3",
-      "en": "image of label",
-      "translated": "imaginea etichetei",
-      "source": "google_translate"
+      "key": "npc.xorlosh.greet_msg_1",
+      "en": "Who are you? Are you a genius in mechanics? You don't look like one.",
+      "translated": "¿Quién eres? ¿Eres un genio en mecánica? No lo pareces.",
+      "source": "simple"
     },
     {
-      "key": "client.bottommenu.text4",
-      "en": ", description =",
-      "translated": ", descriere =",
-      "source": "google_translate"
+      "key": "npc.xorlosh.walkaway_msg_1",
+      "en": "See you my friend.",
+      "translated": "Nos vemos amigo.",
+      "source": "simple"
     },
     {
-      "key": "client.bottommenu.text5",
-      "en": "images/icon-questionmark",
-      "translated": "imagini/pictogramă-semn de întrebare",
-      "source": "google_translate"
+      "key": "npc.yaman.farewell_msg_1",
+      "en": "Farewell, human.",
+      "translated": "Adiós, humano.",
+      "source": "simple"
     },
     {
-      "key": "client.updater.text1",
-      "en": "data/things",
-      "translated": "date/lucruri",
-      "source": "google_translate"
+      "key": "npc.yaman.walkaway_msg_1",
+      "en": "Farewell, human.",
+      "translated": "Adiós, humano.",
+      "source": "simple"
     },
     {
-      "key": "client.updater.text2",
-      "en": "data/things",
-      "translated": "date/lucruri",
-      "source": "google_translate"
+      "key": "npc.yonan.say_2",
+      "en": "Here is the list with the missing ingredients to complete the ritual.",
+      "translated": "Aquí tienes la lista con los ingredientes que faltan para completar el ritual.",
+      "source": "simple"
     },
     {
-      "key": "client.updater.text3",
-      "en": "Updater Error",
-      "translated": "Eroare de actualizare",
-      "source": "google_translate"
+      "key": "npc.yonan.say_4",
+      "en": "Did you bring all the materials I informed you about? ",
+      "translated": "¿Trajiste todos los materiales de los que te informé? ",
+      "source": "simple"
     },
     {
-      "key": "client.game_stash.text1",
-      "en": "Loading...",
-      "translated": "Încărcare...",
-      "source": "google_translate"
+      "key": "npc.zalamon.greet_msg_1",
+      "en": "Not many travellerzz zzezze dayzz. I hope you bring good newzz.",
+      "translated": "No hay muchos viajeroszz zzezze dayzz. Espero que traigas buenas noticias.",
+      "source": "simple"
     }
   ]
 }

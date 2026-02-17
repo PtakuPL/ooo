@@ -50454,5 +50454,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:15:42.473162Z"
+  },
+  "lib.blessing.msg_already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Ești deja binecuvântat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.821984Z"
+  },
+  "lib.functions.msg1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Trebuie să aștepți. Cineva este provocator ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.824797Z"
+  },
+  "lib.functions.msg2": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Trebuie să aștepți. Cineva este provocator ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.825421Z"
+  },
+  "lib.functions.msg_insufficient_params": {
+    "src_hash": "e8edd16e11be79a9caa1fca8a7c0d55b",
+    "text": "Parametri insuficienti. Utilizare: {usage}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.826470Z"
+  },
+  "lib.functions.msg_param_required": {
+    "src_hash": "8a70b215e7b42d0a434259e0b3584f62",
+    "text": "Este necesar un parametru de comandă. Utilizare: {usage}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.827476Z"
+  },
+  "lib.player.modal_button_close": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.828950Z"
+  },
+  "lib.player.msg2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.829247Z"
+  },
+  "lib.player.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Este gol.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.829670Z"
+  },
+  "lib.players.msg1": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Ai primit un punct de faimă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.830627Z"
+  },
+  "rune.msg_sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:53.831974Z"
+  },
+  "lib.blessing.msg_battle": {
+    "src_hash": "89c97deb77470fe3cbf0e3d553832e5a",
+    "text": "Nu poți cumpăra binecuvântare în timpul luptei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:58.769440Z"
+  },
+  "lib.blessing.msg_none": {
+    "src_hash": "f25caa54b1d4a44e40a1e7b5801fe37b",
+    "text": "Nu a primit nicio binecuvântare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:58.769752Z"
+  },
+  "lib.blessing.msg_not_enough": {
+    "src_hash": "b2f159ac492a3ef91d76250c3fa0b688",
+    "text": "Nu ai destui bani. Ai nevoie de {cost} pentru a cumpăra toate binecuvântările.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:58.770255Z"
+  },
+  "lib.blessing.msg_protects": {
+    "src_hash": "0610c9df0649d00a62e3a13a274006d9",
+    "text": "{name} te protejează.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:17:58.770535Z"
+  },
+  "lib.blessing.received_header": {
+    "src_hash": "513ce8b4376826f68cc8d468ea773867",
+    "text": "Binecuvântări primite:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:07.083579Z"
+  },
+  "lib.concoctions.msg1": {
+    "src_hash": "4ea403723d88eef576be5867414c50e8",
+    "text": "Amestecul tău ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:07.083838Z"
+  },
+  "lib.concoctions.msg_active": {
+    "src_hash": "efbcafac9607b1597c78433fded4e6dd",
+    "text": "Preparatul dvs. {name} este încă activ pentru un alt {duration}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:07.084265Z"
+  },
+  "lib.exaltation_forge.msg1": {
+    "src_hash": "873b8a7bd86f7de3c3afc60d7f842226",
+    "text": "Ai primit ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:07.084480Z"
+  },
+  "lib.exaltation_forge.msg2": {
+    "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+    "text": "Nu ai primit ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:07.084713Z"
+  },
+  "lib.exaltation_forge.msg3": {
+    "src_hash": "873b8a7bd86f7de3c3afc60d7f842226",
+    "text": "Ai primit ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:11.307290Z"
+  },
+  "lib.exaltation_forge.msg4": {
+    "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+    "text": "Nu ai primit ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:11.307564Z"
+  },
+  "lib.exaltation_forge.msg_limit": {
+    "src_hash": "d23f840b820625790fd6520edf2af123",
+    "text": "Nu ai primit praf {amount} pentru Forja Exaltation deoarece ai atins deja praful maxim {limit}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:11.308589Z"
+  },
+  "lib.familiar.msg1": {
+    "src_hash": "d0cc76122f837ebf9c464cb6e6fb838b",
+    "text": "Somația ta va dispărea în mai puțin de ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:11.309204Z"
+  },
+  "lib.familiar.msg_disappear": {
+    "src_hash": "3eba5a54e97c656972957a34bf9a11df",
+    "text": "Somația ta va dispărea în mai puțin de {time}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:17.975943Z"
+  },
+  "lib.functions.msg_1": {
+    "src_hash": "2ddc6be518e9fe9aa861736e9739dd2c",
+    "text": "Ai fost teleportat deoarece habitatele revin la forma lor originală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:17.976835Z"
+  },
+  "lib.functions.msg_bank_paid": {
+    "src_hash": "b023ccb66beef53b712b132e6982e8cc",
+    "text": "A plătit {amount} aur din contul bancar. Soldul contului dvs. este acum {balance} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:17.977442Z"
+  },
+  "lib.functions.msg_boss_wait": {
+    "src_hash": "b81ccc1275dd4312e33ff4ed9f969b91",
+    "text": "Trebuie să aștepți. Cineva provoacă {bossName} acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:17.978529Z"
+  },
+  "lib.functions.msg_invalid_influenced": {
+    "src_hash": "f10227eb90a99c933558622b0fe1ba6e",
+    "text": "Nivel influențat nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:17.979136Z"
+  },
+  "lib.functions.msg_no_room": {
+    "src_hash": "cd2849193c59166d2da3f4408d2e401b",
+    "text": "{message}, dar nu ai loc să-l iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:25.088343Z"
+  },
+  "lib.functions.msg_only_fiendish": {
+    "src_hash": "cff6d72a0ee040d180f04e75643cb440",
+    "text": "Numai monștrii permisi pot fi diabolici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:25.088863Z"
+  },
+  "lib.functions.msg_only_influenced": {
+    "src_hash": "f83057029ea4bd6691b0786b59dd7660",
+    "text": "Numai monștrii permisi pot fi influențați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:25.089263Z"
+  },
+  "lib.functions.msg_too_heavy": {
+    "src_hash": "0e5fcbe866dfde80cc6328334a95d2cf",
+    "text": "{message}. Cântărind {weight} oz, este prea greu pentru a fi transportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:25.089748Z"
+  },
+  "lib.functions.say_1": {
+    "src_hash": "9a9c91d24eeadee067452a3b3c879ee0",
+    "text": "Pauză! Ai fost teleportat de forțe ciudate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:25.090207Z"
+  },
+  "lib.hireling.msg1": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Nu ai suficientă capacitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:29.480337Z"
+  },
+  "lib.hireling.msg2": {
+    "src_hash": "67566b1658e2ca3f129c39e8dfa10c38",
+    "text": "Nu aveți suficient spațiu în căsuța de e-mail.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:29.480751Z"
+  },
+  "lib.hireling.msg3": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Nu ai suficientă capacitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:29.481075Z"
+  },
+  "lib.hireling.msg4": {
+    "src_hash": "67566b1658e2ca3f129c39e8dfa10c38",
+    "text": "Nu aveți suficient spațiu în căsuța de e-mail.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:29.481439Z"
+  },
+  "lib.monster.msg_already_fiendish": {
+    "src_hash": "4b1a20e40b12ea73ac9e4fef23762921",
+    "text": "Acest monstru este deja diabolic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:29.481742Z"
+  },
+  "lib.monster.msg_not_forgeable": {
+    "src_hash": "a10e1af7c03f1d55c3badcb24d1e953f",
+    "text": "Acest monstru nu este falsificat, diabolic nu este adăugat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:35.106190Z"
+  },
+  "lib.monster.msg_only_fiendish": {
+    "src_hash": "cff6d72a0ee040d180f04e75643cb440",
+    "text": "Numai monștrii permisi pot fi diabolici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:35.106586Z"
+  },
+  "lib.player.loyalty_bonus": {
+    "src_hash": "4ddba3d875725d4ef29fbabebc32e11d",
+    "text": "Datorită loialității dvs. pe termen lung față de {2}, beneficiați în prezent de un bonus de {0}% pentru toate abilitățile dumneavoastră. (Aveți {1} puncte de fidelitate)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:35.107236Z"
+  },
+  "lib.player.loyalty_title_1": {
+    "src_hash": "2fbdb38b61c40fd314f824990c8de010",
+    "text": "Cercetași din Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:35.107668Z"
+  },
+  "lib.player.loyalty_title_10": {
+    "src_hash": "a39d78615407f3d2bb8133b7fe1f49c6",
+    "text": "Savant din Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:35.107945Z"
+  },
+  "lib.player.loyalty_title_11": {
+    "src_hash": "c29caf928526e5a215d590b5cf846bdf",
+    "text": "Iluminat de Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:42.561649Z"
+  },
+  "lib.player.loyalty_title_2": {
+    "src_hash": "62247bc1856daff126efc00d682dc57f",
+    "text": "Santinela din Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:42.562012Z"
+  },
+  "lib.player.loyalty_title_3": {
+    "src_hash": "87cf738682425ab397006531fc20d4be",
+    "text": "Administrator al Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:42.562355Z"
+  },
+  "lib.player.loyalty_title_4": {
+    "src_hash": "c0bd3e6be7e9b7dd5e78778ec7754e69",
+    "text": "Director al Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:42.562645Z"
+  },
+  "lib.player.loyalty_title_5": {
+    "src_hash": "549ee1c6a01b0dc74497de310823f1ba",
+    "text": "Scutierul lui Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:18:42.562959Z"
   }
 }

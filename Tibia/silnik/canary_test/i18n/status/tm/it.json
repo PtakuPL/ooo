@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:43:23.621074Z"
+    "updated_at": "2026-02-17T10:33:10.520101Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -67990,5 +67990,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:32:23.828954Z"
+  },
+  "spell.mud_attack.words": {
+    "src_hash": "8936fecc0445afbadbb896256c31dc5c",
+    "text": "exori infir tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:33:30.788740Z"
+  },
+  "spell.ice_burst.name": {
+    "src_hash": "ad4cb9a2cc034253a7c49c705afbf82c",
+    "text": "Scoppio di ghiaccio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:33:30.788997Z"
+  },
+  "spell.ice_burst.words": {
+    "src_hash": "e4a7f867be477d51cdff816968a50abe",
+    "text": "exevo ulus frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:33:30.789275Z"
+  },
+  "spell.scorch.name": {
+    "src_hash": "e109f8a5e390eb4ce7d468ef55600374",
+    "text": "Bruciore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:33:30.789466Z"
   }
 }

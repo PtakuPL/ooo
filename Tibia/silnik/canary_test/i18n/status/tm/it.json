@@ -35174,5 +35174,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:25:31.603782Z"
+  },
+  "npc.a_swan.multi_2": {
+    "src_hash": "8f1540434c5dcb8a90871ce29e840a33",
+    "text": "I tunnel di collegamento ti condurranno su una montagna dove potresti trovarlo. Ho sentito un uomo di nome Jerom parlare di questo quando è passato vicino a questo fiume. Forse ne sa di più.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:43.514464Z"
+  },
+  "npc.a_swan.multi_3": {
+    "src_hash": "3c8f4ae666efa9a4ce9ab19d4799e49a",
+    "text": "Questo è tutto ciò che è rimasto del mio mantello? È terribile! Tuttavia, immagino di poter rimettere insieme le piume. Sì, dovrebbero essere abbastanza piume. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:43.515119Z"
+  },
+  "npc.a_swan.multi_4": {
+    "src_hash": "88afe011f670126896134f2f2da5c7f0",
+    "text": "Per favore, dammeli così posso restaurare il mio mantello. Ma non guardarmi! Alle fanciulle dei cigni non piace essere osservate. Le benedizioni della natura, essere umano. Dirò a Ikassis che sei stato di grande aiuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:43.515995Z"
+  },
+  "npc.a_swan.multi_5": {
+    "src_hash": "8746b340940a802333607274ac6b2042",
+    "text": "Ti ha mandato mia sorella Ikassis? Sia benedetta la sua anima! Sì, è vero: ho bisogno di aiuto. Ascolta, ti svelerò un segreto ma per favore non romperlo. Come potresti già sospettare, non sono veramente un cigno ma una fata. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:43.516796Z"
+  },
+  "npc.a_swan.multi_6": {
+    "src_hash": "265fee32623def574ff415b0effc5ef8",
+    "text": "Ma a parte molti dei miei fratelli, non ho preso il corpo di un cigno. Sono una fanciulla cigno e questo è uno dei miei due aspetti. Posso assumere la forma di un cigno così come quella di una giovane fanciulla. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:43.517561Z"
+  },
+  "npc.a_swan.multi_7": {
+    "src_hash": "cf44dab7346809bae8547820e8170683",
+    "text": "Ma per farlo ho bisogno di un artefatto magico: un mantello fatto di piume di cigno. Se perdo questo mantello - o qualcuno me lo ruba - rimango bloccato nella forma di cigno e non posso più cambiare forma. E questo è esattamente quello che è successo: ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:46.119906Z"
+  },
+  "npc.a_swan.multi_8": {
+    "src_hash": "2188a2b2d639326fb547199a9ece6745",
+    "text": "Un troll mi ha perseguitato mentre facevo il bagno nel fiume e mi ha rubato il mantello. Ora sono intrappolato sotto forma di cigno. Per favore, puoi trovare il ladro e riportare indietro il mantello?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:46.120553Z"
+  },
+  "npc.a_swan.say_1": {
+    "src_hash": "7ee6814666cac426ac5be7b04694ca62",
+    "text": "Devi consegnarmi tipo 5 piume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:46.120868Z"
+  },
+  "npc.a_swan.say_2": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Non sei in quella missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:46.121145Z"
+  },
+  "npc.a_sweaty_cyclops.farewell_msg_1": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Addio, piccolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:46.121407Z"
+  },
+  "npc.a_sweaty_cyclops.greet_msg_1": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Uhm uhm! Benvenuto, piccolo |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:49.835763Z"
+  },
+  "npc.a_sweaty_cyclops.say_1": {
+    "src_hash": "6beccb9bfedbe4518601bc6abf1daaa0",
+    "text": "È acciaio ardente. Ho bisogno che il respiro dei verdi si sciolga. O rosso ancora meglio. Posso ricavarne uno scudo. Il piccolo vuole fare uno scambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:49.836395Z"
+  },
+  "npc.a_sweaty_cyclops.say_10": {
+    "src_hash": "df94f6492d4dbcb156f56bd7716a9ce6",
+    "text": "Bene bene! La donna sarà felice. Ora anch'io sono felice e ti aiuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:49.836809Z"
+  },
+  "npc.a_sweaty_cyclops.say_11": {
+    "src_hash": "c1797de5abaae0bcca3d986020ae77c7",
+    "text": "Il piccolo porta tre gonne di rafia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:49.837110Z"
+  },
+  "npc.a_sweaty_cyclops.say_12": {
+    "src_hash": "757b1055368c3b14285c19fc46a1cfe2",
+    "text": "Il piccolo porta tre gonne di rafia?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:49.837403Z"
+  },
+  "npc.a_sweaty_cyclops.say_13": {
+    "src_hash": "c5f0d99b72aaa10a0066ebf47608f11d",
+    "text": "Molto nobile. Brillante. Mi piace. Ma si rompe così in fretta. Posso creare armature lucenti. Il piccolo vuole fare uno scambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:52.457939Z"
+  },
+  "npc.a_sweaty_cyclops.say_14": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Aggrappati clang!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:52.458228Z"
+  },
+  "npc.a_sweaty_cyclops.say_15": {
+    "src_hash": "6beccb9bfedbe4518601bc6abf1daaa0",
+    "text": "È acciaio ardente. Ho bisogno che il respiro dei verdi si sciolga. O rosso ancora meglio. Posso ricavarne uno scudo. Il piccolo vuole fare uno scambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:52.458822Z"
+  },
+  "npc.a_sweaty_cyclops.say_16": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Aggrappati clang!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:52.459035Z"
+  },
+  "npc.a_sweaty_cyclops.say_17": {
+    "src_hash": "435d8bb0c99a0fe1546075366243c38e",
+    "text": "Hellsteel lo è. Maledetto e malvagio. Pericoloso con cui lavorare. Posso creare un elmo malvagio. Il piccolo vuole fare uno scambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:52.459569Z"
+  },
+  "npc.a_sweaty_cyclops.say_18": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Aggrappati clang!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:55.023713Z"
+  },
+  "npc.a_sweaty_cyclops.say_19": {
+    "src_hash": "288925310189db3c1cf79d4a6b027a7c",
+    "text": "Un buon ferro lo è. I miei amici lo usano molto per combattere. Posso creare un'arma. Il piccolo vuole fare uno scambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:55.024257Z"
+  },
+  "npc.a_sweaty_cyclops.say_2": {
+    "src_hash": "a5032219e3602413d207c77b27cc1c1d",
+    "text": "Aspettare. Il mio lavoro non è economico. Fammi un favore per primo, sì?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:55.024660Z"
+  },
+  "npc.a_sweaty_cyclops.say_20": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Aggrappati clang!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:55.024873Z"
+  },
+  "npc.a_sweaty_cyclops.say_21": {
+    "src_hash": "28f589eb678777cc11c66a2e59633d7e",
+    "text": "Eh. Posso creare qualche brutto piccolo dardo dalle sfere dell'anima. Lil' uno vuole scambiare tutto?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:55.025312Z"
+  },
+  "npc.a_sweaty_cyclops.say_22": {
+    "src_hash": "f5b4810e0002ea4372411b68dfbf6344",
+    "text": "Aggrappati clang! Ho fatto un buon lavoro oggi! Quello avrà doppie frecce!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:57.632715Z"
+  },
+  "npc.a_sweaty_cyclops.say_23": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Aggrappati clang!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:57.632943Z"
+  },
+  "npc.a_sweaty_cyclops.say_3": {
+    "src_hash": "9ea8aff6ec20c59ff6637f48269b9cdc",
+    "text": "Ho bisogno di un regalo per una donna. Balliamo, quindi voglio regalarle una gonna di rafia. Ma lei è grande. Quindi me ne servono molti per realizzarne uno grande. Portane tre, ok? Io aspetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:57.633661Z"
+  },
+  "npc.a_sweaty_cyclops.say_4": {
+    "src_hash": "df94f6492d4dbcb156f56bd7716a9ce6",
+    "text": "Bene bene! La donna sarà felice. Ora anch'io sono felice e ti aiuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:57.634066Z"
+  },
+  "npc.a_sweaty_cyclops.say_5": {
+    "src_hash": "c1797de5abaae0bcca3d986020ae77c7",
+    "text": "Il piccolo porta tre gonne di rafia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:57.634460Z"
+  },
+  "npc.a_sweaty_cyclops.say_6": {
+    "src_hash": "757b1055368c3b14285c19fc46a1cfe2",
+    "text": "Il piccolo porta tre gonne di rafia?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:59.792794Z"
+  },
+  "npc.a_sweaty_cyclops.say_7": {
+    "src_hash": "6beccb9bfedbe4518601bc6abf1daaa0",
+    "text": "È acciaio ardente. Ho bisogno che il respiro dei verdi si sciolga. O rosso ancora meglio. Posso ricavarne uno scudo. Il piccolo vuole fare uno scambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:59.793532Z"
+  },
+  "npc.a_sweaty_cyclops.say_8": {
+    "src_hash": "a5032219e3602413d207c77b27cc1c1d",
+    "text": "Aspettare. Il mio lavoro non è economico. Fammi un favore per primo, sì?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:32:59.793943Z"
   }
 }

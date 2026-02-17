@@ -28806,5 +28806,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:27:35.455003Z"
+  },
+  "npc.angus.greet_msg_1": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Salutare, ce pot sa fac pentru tine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.257065Z"
+  },
+  "npc.archery.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.264190Z"
+  },
+  "npc.archery.greet_msg_1": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Bun venit la magazinul Tir cu arcul!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.264675Z"
+  },
+  "npc.archery.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.265187Z"
+  },
+  "npc.archery_rook.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.265611Z"
+  },
+  "npc.archery_rook.greet_msg_1": {
+    "src_hash": "30bc6203a67610eed6580d3e9fb8c0e0",
+    "text": "Bun venit la magazinul Tir cu arcul Rook.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.266114Z"
+  },
+  "npc.archery_rook.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.266607Z"
+  },
+  "npc.ariella.greet_msg_1": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Bună.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.266918Z"
+  },
+  "npc.arito.farewell_msg_1": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Vizitați-ne din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.268601Z"
+  },
+  "npc.arito.greet_msg_1": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Slavă Domnului că te-ai întors!! Ai gasit....hh...despre ce vorbeam??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.269221Z"
+  },
+  "npc.arito.sendtrade_msg_1": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Sigur, răsfoiți ofertele mele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.270131Z"
+  },
+  "npc.arito.walkaway_msg_1": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Vizitați-ne din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.270495Z"
+  },
+  "npc.dane.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.415222Z"
+  },
+  "npc.frodo.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.483639Z"
+  },
+  "npc.frodo.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.486332Z"
+  },
+  "npc.tyrias.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.999010Z"
+  },
+  "npc.tyrias.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:09.999446Z"
+  },
+  "npc.tyrias.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.000996Z"
+  },
+  "npc.tyrias.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.001749Z"
+  },
+  "npc.ukea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.003525Z"
+  },
+  "npc.ukea.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.003838Z"
+  },
+  "npc.undal.farewell_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.008881Z"
+  },
+  "npc.undal.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.010453Z"
+  },
+  "npc.valentina.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.015251Z"
+  },
+  "npc.valentina.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.015761Z"
+  },
+  "npc.vanys.farewell_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.016431Z"
+  },
+  "npc.vanys.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.018006Z"
+  },
+  "npc.vascalir.farewell_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Adio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.018295Z"
+  },
+  "npc.vascalir.walkaway_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Adio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.023424Z"
+  },
+  "npc.virgil.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.025655Z"
+  },
+  "npc.virgil.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.025991Z"
+  },
+  "npc.walter_jaeger.say_14": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Ai deja această ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.026922Z"
+  },
+  "npc.walter_jaeger.say_17": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Aveți deja acest supliment.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.027482Z"
+  },
+  "npc.walter_jaeger.say_21": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Aveți deja acest supliment.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.028098Z"
+  },
+  "npc.walter_jaeger.say_24": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Ai deja această montură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.028533Z"
+  },
+  "npc.walter_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.029496Z"
+  },
+  "npc.wentworth.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.030474Z"
+  },
+  "npc.wentworth.say_22": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.031500Z"
+  },
+  "npc.wentworth.say_30": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.032199Z"
+  },
+  "npc.wentworth.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.032648Z"
+  },
+  "npc.wentworth.say_39": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.033126Z"
+  },
+  "npc.wentworth.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:10.034485Z"
   }
 }

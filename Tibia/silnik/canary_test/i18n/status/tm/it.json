@@ -30566,5 +30566,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T00:28:17.019949Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.schrodingers.island.teleport.lvl.999.L16.2328": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Congratulazioni!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.587615Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumulo.L8.1663": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.621807Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumuloerro.L8.1653": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.622332Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L11.1801": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.623287Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.chairteleport.L8.1800": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Teletrasporto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.623614Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.notescoordinates.L9.1797": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.623968Z"
+  },
+  "data.otservbr.global.scripts.quests.marapur.actions.boss.timira.fight.L376.2174": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.624512Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L54.2286": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "La sonda è stata regolata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.625102Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L64.2287": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Sul dispositivo si legge: \"Rilevata struttura oscurante anomala, possibile posizione del sondaggio\"",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.625623Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L66.2288": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... il dispositivo legge: 0,0,zero,0,zero che può tradursi approssimativamente in: NIENTE DI INTERESSE QUI",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.626294Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L98.2289": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Hai raccolto i dati con successo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.626698Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L13.2281": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Hai raccolto con successo alcune radici succose.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.627149Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L26.2282": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Il tuo tentativo di raccolta ha distrutto più radici succose di quelle che potresti recuperare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.627830Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L33.2283": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Hai raccolto con successo alcune radici succose.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.628272Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L46.2284": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Il tuo tentativo di raccolta ha distrutto più radici succose di quelle che potresti recuperare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.628826Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L52.2285": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Questa radice è già stata raccolta, non c'è niente da guadagnare qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.629338Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.calassa.comb.door.L8.1926": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.629774Z"
+  },
+  "data.otservbr.global.scripts.quests.the.annihilator.door.L5.2235": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.634870Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.MedusaOil.L65.1784": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.635937Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L22.1858": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Tutti i canti sono stati cantati nel giusto ordine, sei ritenuto degno. Sei trasportato via...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.637462Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.containerRewards.L140.1843": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.637766Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L54.1849": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Hai una sensazione di terrore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.638557Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L108.1859": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.639616Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L141.1862": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.640147Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L71.1760": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.641902Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L13.2005": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Niente cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.642944Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.rewards.L27.1771": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Il baule è vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.645783Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.ungreez.door.L20.1772": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.646245Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.action.drume.L32.1646": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Il tuo tempo è finito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.647231Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.creatureevent.commander.kills.L19.1645": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Hai perso la scaramuccia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.647707Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.bursting.at.the.seams.museum.actions.doors.L18.2291": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.651784Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.actions.telescope.L6.2318": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Il telescopio offre una vista perfetta sull'oceano infinito, senza terra in vista",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.652266Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L16.2302": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Attacchi i capelli alla tastiera in ebano. I fili dovrebbero essere adeguati per fungere da corde.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.653326Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L27.2303": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*C'era una volta una fanciulla bella, con gli occhi scuri e i capelli di seta. Lontano da casa morì. Nessuna tomba, nessuna veglia funebre, nessun lutto.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.654042Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L31.2304": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Stai suonando la Ballata del Pavone e il portale si apre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.654527Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L37.2305": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Stai suonando il violino d'osso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.655037Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L9.2301": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Attacchi il legno di ebano al teschio. Questo dovrebbe soddisfare i requisiti di una tastiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:28.655575Z"
   }
 }

@@ -40046,5 +40046,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:12:58.191116Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_1": {
+    "src_hash": "6b2d75cc5eb0ea8c7fdf5686d758947a",
+    "text": "1/1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.409243Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_2": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.410125Z"
+  },
+  "otclient_modules.character_otui.tr_23": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.419707Z"
+  },
+  "otclient_modules.charms.tr_24": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selecta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.428592Z"
+  },
+  "otclient_modules.charms1410_otui.tr_10": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.432110Z"
+  },
+  "otclient_modules.charms1410_otui.tr_3": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.432592Z"
+  },
+  "otclient_modules.charms1410_otui.tr_7": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.433016Z"
+  },
+  "otclient_modules.charms_otui.tr_2": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Căutare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.433362Z"
+  },
+  "otclient_modules.charms_otui.tr_3": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.433794Z"
+  },
+  "otclient_modules.charms_otui.tr_5": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.434067Z"
+  },
+  "otclient_modules.createaccount_otui.tr_3": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Spate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.443213Z"
+  },
+  "otclient_modules.createaccount_otui.tr_36": {
+    "src_hash": "b341a59d5636ed3d6a819137495b08a0",
+    "text": "Parolă:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.443752Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_11": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.445782Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_17": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.446533Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_19": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.446793Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_22": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.447336Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_25": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selecta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.447636Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_26": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.448072Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_29": {
+    "src_hash": "ce898d62ed9ca7653a01fe0c781e97e9",
+    "text": "Fizic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.448367Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_32": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.448801Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_4": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.457338Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_5": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.457546Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_6": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Spate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.457880Z"
+  },
+  "otclient_modules.game_questlog_otui.tr_4": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.461840Z"
+  },
+  "otclient_modules.game_shop_otui.tr_10": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.464801Z"
+  },
+  "otclient_modules.game_shop_otui.tr_8": {
+    "src_hash": "16d2b386b2034b9488996466aaae0b57",
+    "text": "Istorie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.465650Z"
+  },
+  "otclient_modules.game_store_otui.tr_11": {
+    "src_hash": "16d2b386b2034b9488996466aaae0b57",
+    "text": "Istorie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.468624Z"
+  },
+  "otclient_modules.game_store_otui.tr_5": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.469391Z"
+  },
+  "otclient_modules.items_otui.tr_17": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Tastați pentru a căuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.502005Z"
+  },
+  "otclient_modules.items_otui.tr_18": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Căutare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.502322Z"
+  },
+  "otclient_modules.items_otui.tr_4": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.503026Z"
+  },
+  "otclient_modules.items_otui.tr_8": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.503449Z"
+  },
+  "otclient_modules.npctrade_otui.tr_8": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Căutare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.512679Z"
+  },
+  "otclient_modules.serverlist_otui.tr_2": {
+    "src_hash": "e0626222614bdee31951d84c64e5e9ff",
+    "text": "Selecta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.527019Z"
+  },
+  "otclient_modules.skills_otui.tr_10": {
+    "src_hash": "cd966549048ce8f5c9218fe084d59a69",
+    "text": "Scurgere de viață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.529198Z"
+  },
+  "otclient_modules.skills_otui.tr_14": {
+    "src_hash": "4a52699cfc95fa722ba4d48bd5c9598c",
+    "text": "Sfânt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.529979Z"
+  },
+  "otclient_modules.skills_otui.tr_19": {
+    "src_hash": "ce898d62ed9ca7653a01fe0c781e97e9",
+    "text": "Fizic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:46.531048Z"
+  },
+  "otclient_modules.blessing.tr_16": {
+    "src_hash": "71e37136fcdaf8d5610c4999e1d3bc30",
+    "text": "Înregistrarea binecuvântărilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:52.757661Z"
+  },
+  "otclient_modules.blessing.tr_2": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:52.757844Z"
+  },
+  "otclient_modules.blessing.tr_3": {
+    "src_hash": "fe6b36ad4f4e9a6ef3e93cda2e905c53",
+    "text": "șansa de a pierde obiecte la următoarea moarte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:52.758280Z"
+  },
+  "otclient_modules.blessing.tr_4": {
+    "src_hash": "e28d139f3bb8eadce624afb7e58baa07",
+    "text": "- Există o",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:52.758503Z"
+  },
+  "otclient_modules.blessing.tr_5": {
+    "src_hash": "f5fbdad416aa013e753e2645a2bb5fd3",
+    "text": "șansa de a vă pierde containerul echipat la următoarea moarte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:57.271232Z"
+  },
+  "otclient_modules.blessing.tr_6": {
+    "src_hash": "e28d139f3bb8eadce624afb7e58baa07",
+    "text": "- Există o",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:57.271470Z"
+  },
+  "otclient_modules.blessing.tr_7": {
+    "src_hash": "e8704a3a83bb64c5d87d0d743521e0b1",
+    "text": "mai puțin XP și puncte de îndemânare la următoarea moarte PvE.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:13:57.271859Z"
   }
 }

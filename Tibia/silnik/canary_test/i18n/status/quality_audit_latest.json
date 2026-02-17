@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-17T04:39:48.197434Z",
+  "timestamp": "2026-02-17T04:41:07.243678Z",
   "checked_entries": 100,
-  "issues_found": 7,
+  "issues_found": 31,
   "issues_by_type": {
-    "identical_to_en_exempt": 10,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_high": 150,
-    "suspicious_log_low": 3,
-    "suspicious_log_critical": 47,
-    "suspicious_rejected_critical": 174,
-    "suspicious_rejected_high": 26
+    "identical_to_en": 24,
+    "suspicious_log_high": 192,
+    "suspicious_log_low": 8,
+    "suspicious_rejected_critical": 166,
+    "suspicious_rejected_high": 34
   },
   "issues": [
     {
@@ -60,8 +60,176 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "monster.hirintror.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.hirintror.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.furyosa.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.hunter.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Hunter",
+      "translated": "Hunter"
+    },
+    {
+      "key": "monster.dharalion.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.dharalion.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.apocalypse.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.apocalypse.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

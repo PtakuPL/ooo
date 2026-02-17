@@ -30246,5 +30246,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:35:00.835012Z"
+  },
+  "monster.minotaur_archer.desc": {
+    "src_hash": "670825f085ad5d8a599f2ff3a805d139",
+    "text": "Минотавр-лучник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:31.105974Z"
+  },
+  "monster.minotaur_archer.voice_1": {
+    "src_hash": "bc6c773e209afbf6ab01600a3b655938",
+    "text": "Руан Уимпи!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:31.106244Z"
+  },
+  "monster.orc_leader.desc": {
+    "src_hash": "13e8cb8c0b24546bb48c213d9d5909aa",
+    "text": "лидер орков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:31.106481Z"
+  },
+  "monster.orc_leader.voice_1": {
+    "src_hash": "c430fa10bb6c033497f855b7a3718747",
+    "text": "Ульдерек футгыр человек!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:31.106836Z"
+  },
+  "monster.minotaur_cult_prophet.name": {
+    "src_hash": "da244c536134aaf40fbd866b14e4ad9d",
+    "text": "Пророк культа Минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:33.710620Z"
+  },
+  "monster.minotaur_cult_prophet.desc": {
+    "src_hash": "1ce144ff60bdc01898e80194ec46ccb6",
+    "text": "пророк культа минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:33.710921Z"
+  },
+  "monster.minotaur_cult_prophet.voice_1": {
+    "src_hash": "9ff6f2c08fd61b87b382d44381ae8666",
+    "text": "Поклонитесь силе железного быка!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:33.711258Z"
+  },
+  "monster.orc_berserker.name": {
+    "src_hash": "61c52a6389ffc6dff600fcbe3eb83ac3",
+    "text": "Орк Берсерк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:33.711650Z"
+  },
+  "monster.orc_berserker.desc": {
+    "src_hash": "a017f8bdbfb1f6e9ffd1ad2f0d75ecff",
+    "text": "орк-берсерк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:33.711930Z"
+  },
+  "monster.orc_berserker.voice_1": {
+    "src_hash": "95a1c7b93362faaeece6ced311b84777",
+    "text": "КРАК ОРРРРРРК!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:36.494687Z"
+  },
+  "monster.corym_charlatan.name": {
+    "src_hash": "cfed38d3cc3bda5cc77b1c73637c43a6",
+    "text": "Корым Шарлатан",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:36.494969Z"
+  },
+  "monster.corym_charlatan.desc": {
+    "src_hash": "a1c12c65a22cbc0794f833a1a984ac50",
+    "text": "корым шарлатан",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:36.495230Z"
+  },
+  "monster.corym_charlatan.voice_1": {
+    "src_hash": "1e9ae91dcda3214502edfb5c9efbd298",
+    "text": "Мехехе!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:36.495433Z"
+  },
+  "monster.corym_charlatan.voice_2": {
+    "src_hash": "ab8a7afb28220de8b2e03bff0220e053",
+    "text": "Остерегаться! Я проклинаю тебя!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:36.495742Z"
+  },
+  "monster.dworc_venomsniper.name": {
+    "src_hash": "6e0ab5d88982800cdfcedab8a857b8e2",
+    "text": "Дворк Ядовитый снайпер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:39.745305Z"
+  },
+  "monster.dworc_venomsniper.desc": {
+    "src_hash": "63ed456cd5df5e5cfcf5de4fb54f98bf",
+    "text": "ядовитый снайпер дворка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:39.745814Z"
+  },
+  "monster.furious_orc_berserker.name": {
+    "src_hash": "772b66c763a11e082dc1489706711fc3",
+    "text": "Яростный орк-берсерк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:39.746280Z"
+  },
+  "monster.furious_orc_berserker.desc": {
+    "src_hash": "3b1e8b1a89be8c7622f1a04fe98cfe5a",
+    "text": "разъяренный орк-берсерк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:40:39.746588Z"
   }
 }

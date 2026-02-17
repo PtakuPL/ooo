@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T04:39:11.224717Z",
+  "timestamp": "2026-02-17T04:40:13.043892Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
   "warnings_count": 12,
   "ok_count": 11,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=42744 rate=170.092% window=6.0h top_lang=ro:12899 per_lang=[ro:12899(316.462%/critical),es:11250(216.554%/critical),ru:10990(252.76%/critical),pl:4110(115.417%/critical),sv:1182(69.123%/warning)] per_domain=[items.json:19337(929.663%/critical),npc.json:13018(226.597%/critical),monsters.json:3965(197.362%/critical),otclient_modules.json:1322(131.151%/critical),server.json:1141(53.568%/warning)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=44786 rate=177.434% window=6.0h top_lang=ro:14174 per_lang=[ro:14174(345.286%/critical),ru:11656(265.03%/critical),es:11332(217.13%/critical),pl:4110(115.417%/critical),sv:1176(70.504%/warning)] per_domain=[items.json:21278(985.549%/critical),npc.json:13100(227.076%/critical),monsters.json:3990(193.783%/critical),otclient_modules.json:1322(131.151%/critical),server.json:1135(54.358%/warning)]"
   ],
   "warnings": [
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=1330775 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
@@ -23,17 +23,17 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 68h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (26s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (21s)",
-    "guard_report_fresh (4s)",
-    "dispatch_fresh (2s)",
+    "heartbeat_fresh (25s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (20s)",
+    "guard_report_fresh (0s)",
+    "dispatch_fresh (3s)",
     "worker_pid_alive (1330775)",
-    "worker_subprocess_observed (main=1330775 matching=4 extras=3 desc=3 foreign=0 oldest_desc=2s oldest_foreign=0s status=extra_descendants_detected)",
-    "queue_freshness_ok (89s, WARN>900s CRIT>1800s)",
+    "worker_process_topology_ok (main=1330775 matching=2 extras=1 desc=1 foreign=0 oldest_desc=0s oldest_foreign=0s status=single_descendant_observed)",
+    "queue_freshness_ok (33s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=383.3 cycle_delta=715 best_quality_drop=60.157%)",
+    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=384.4 cycle_delta=717 best_quality_drop=60.157%)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=39)"
+    "repair_tuning_active (samples_2h=40)"
   ],
   "metrics_drift": {
     "available": true,
@@ -68,8 +68,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 383.337,
-    "cycle_delta": 715,
+    "active_minutes": 384.368,
+    "cycle_delta": 717,
     "best_quality_drop_pct": 60.157,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -103,32 +103,26 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "info",
-    "status": "extra_descendants_detected",
-    "reason": "multiple_descendant_worker_processes",
+    "severity": "ok",
+    "status": "single_descendant_observed",
+    "reason": "single_descendant_worker_subprocess",
     "main_pid": 1330775,
     "matched_pids": [
       1330775,
-      1577623,
-      1577636,
-      1577638
+      1578534
     ],
     "extra_pids": [
-      1577623,
-      1577636,
-      1577638
+      1578534
     ],
     "descendant_extra_pids": [
-      1577623,
-      1577636,
-      1577638
+      1578534
     ],
     "foreign_extra_pids": [],
-    "total_matching": 4,
-    "extra_count": 3,
-    "descendant_extra_count": 3,
+    "total_matching": 2,
+    "extra_count": 1,
+    "descendant_extra_count": 1,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 2,
+    "oldest_descendant_age_s": 0,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

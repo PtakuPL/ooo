@@ -2,19 +2,20 @@
   "lang": "ro",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 13458,
-  "identical_to_en": 2414,
-  "placeholder_keys": 40128,
-  "coverage_pct": 25.1,
-  "issues_total": 2,
+  "translated": 13669,
+  "identical_to_en": 2419,
+  "placeholder_keys": 39917,
+  "coverage_pct": 25.5,
+  "issues_total": 3,
   "issues_by_type": {
+    "V6_newline_mismatch": 1,
     "V4_artifact": 1,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
     "HIGH": 1,
-    "MEDIUM": 0,
+    "MEDIUM": 1,
     "LOW": 0
   },
   "score": 100.0,
@@ -30,6 +31,12 @@
       "category": "quests",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.diary_of_hengis_wulfsonnni_can",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -40,5 +47,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-17T04:09:00.676913Z"
+  "validated_at": "2026-02-17T04:34:14.513550Z"
 }

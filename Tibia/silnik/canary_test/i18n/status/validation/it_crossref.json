@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 16.2,
+  "coverage_pct": 16.6,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T04:08:58.729119Z",
+  "checked_at": "2026-02-17T04:34:12.210594Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -149,24 +149,6 @@
       "lang": "ice"
     },
     {
-      "key": "cpp.game.tentugly_name",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.game.you_looted",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You looted ",
-      "pl": "Zrabowałeś ",
-      "lang": "You looted "
-    },
-    {
       "key": "cpp.inspect.and_connector",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -174,60 +156,6 @@
       "en": " and ",
       "pl": "i ",
       "lang": " and "
-    },
-    {
-      "key": "cpp.inspect.armor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Armor",
-      "pl": "Zbroja",
-      "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " at range ",
-      "pl": "w zasięgu ",
-      "lang": " at range "
-    },
-    {
-      "key": "cpp.inspect.augments",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Augments",
-      "pl": "Zwiększać",
-      "lang": "Augments"
-    },
-    {
-      "key": "cpp.inspect.body_body",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "body",
-      "pl": "ciało",
-      "lang": "body"
-    },
-    {
-      "key": "cpp.inspect.body_both_hands",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "both hands",
-      "pl": "obaj hands",
-      "lang": "both hands"
-    },
-    {
-      "key": "cpp.inspect.body_container",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "container",
-      "pl": "pojemnik",
-      "lang": "container"
     },
     {
       "key": "cpp.inspect.body_extra_slot",
@@ -3612,6 +3540,78 @@
       "en": "Thats me.",
       "pl": "Thats mnie, mi.",
       "lang": "Thats me."
+    },
+    {
+      "key": "npc.dukosch.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.duncan.say_20",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then no.",
+      "pl": "Wtedy Nie.",
+      "lang": "Then no."
+    },
+    {
+      "key": "npc.duria.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goodbye.",
+      "pl": "Do widzenia.",
+      "lang": "Goodbye."
+    },
+    {
+      "key": "npc.elane.say_16",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then no.",
+      "pl": "Wtedy Nie.",
+      "lang": "Then no."
+    },
+    {
+      "key": "npc.eleonore.say_10",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then no.",
+      "pl": "Wtedy Nie.",
+      "lang": "Then no."
+    },
+    {
+      "key": "npc.eleonore.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.elliott.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<nods>",
+      "pl": "<kiwa głową>",
+      "lang": "<nods>"
+    },
+    {
+      "key": "npc.flora.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Okay...",
+      "pl": "Dobrze...",
+      "lang": "Okay..."
     }
   ],
   "length_ratio_issues": [

@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-17T04:31:30.965271Z",
-  "cycle": 240,
-  "language": "ro",
-  "json_file": "talkactions.json",
-  "translated": 36,
+  "timestamp": "2026-02-17T04:33:15.528507Z",
+  "cycle": 241,
+  "language": "it",
+  "json_file": "npclib.json",
+  "translated": 50,
   "placeholders": 0,
-  "guard_fail": 14,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
-    "command": 1,
+    "command": 0,
     "pipe": 0
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 60
+  "strict_skipped_done": 0
 }

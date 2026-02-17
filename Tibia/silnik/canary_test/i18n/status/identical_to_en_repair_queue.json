@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T04:28:06.745566Z",
+  "timestamp": "2026-02-17T04:33:22.103471Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 710,
+  "entries_total": 709,
   "entries_by_lang": {
     "es": 300,
     "pl": 197,
@@ -73,10 +73,10 @@
     "de": 659,
     "fr": 586,
     "hu": 663,
-    "it": 451,
+    "it": 449,
     "nl": 691,
     "pt": 620,
-    "ro": 473,
+    "ro": 468,
     "ru": 112,
     "sk": 663,
     "tr": 542,
@@ -108,7 +108,7 @@
     "sl": 663,
     "sq": 663,
     "sr": 492,
-    "sv": 524,
+    "sv": 512,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -686,12 +686,6 @@
       "domain_priority": 9
     },
     {
-      "lang": "it",
-      "json_file": "npclib.json",
-      "identical_to_en": 2,
-      "domain_priority": 9
-    },
-    {
       "lang": "nl",
       "json_file": "npc.json",
       "identical_to_en": 14,
@@ -862,7 +856,7 @@
     {
       "lang": "ro",
       "json_file": "talkactions.json",
-      "identical_to_en": 8,
+      "identical_to_en": 3,
       "domain_priority": 2
     },
     {
@@ -1320,6 +1314,12 @@
       "json_file": "monsters.json",
       "identical_to_en": 67,
       "domain_priority": 8
+    },
+    {
+      "lang": "bg",
+      "json_file": "cpp.json",
+      "identical_to_en": 158,
+      "domain_priority": 9
     }
   ],
   "selected": {

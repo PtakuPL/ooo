@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T04:09:10.956052Z",
+  "checked_at": "2026-02-17T04:34:23.426607Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -606,6 +606,15 @@
       "en": "Hellgate! Restricted Area!",
       "pl": "Hellgate! Ograniczony Obszar, region!",
       "lang": "Hellgate! Restricted Area!"
+    },
+    {
+      "key": "book.otbm.highranking_necromancers_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High-ranking necromancers only.",
+      "pl": "Tylko wysokiej rangi nekromanci.",
+      "lang": "High-ranking necromancers only."
     },
     {
       "key": "ui.house.rent_period_monthly",
@@ -3603,15 +3612,6 @@
       "en": "mana shield",
       "pl": "mana tarcza",
       "lang": "mana shield"
-    },
-    {
-      "key": "cpp.look.minute_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} minutes",
-      "pl": "{0} minuty",
-      "lang": "{0} minutes"
     }
   ],
   "length_ratio_issues": [

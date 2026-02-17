@@ -1,9 +1,9 @@
 {
-  "category": "it",
-  "cycle": 240,
+  "category": "sv",
+  "cycle": 241,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-17T04:31:36Z",
+  "generated_at_utc": "2026-02-17T04:34:23Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 240,
-      "file": "talkactions.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:30:20Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 240,
-      "file": "talkactions.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T04:30:20Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 240,
-      "file": "libs.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:29:36Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 240,
-      "file": "libs.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T04:29:36Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 240,
-      "file": "books.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-17T04:29:34Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 240,
-      "file": "books.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:28:34Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 240,
-      "file": "books.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-17T04:28:34Z"
-    },
-    {
-      "action": "update",
       "category": "es",
-      "cycle": 239,
+      "cycle": 241,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:28:07Z"
+      "t": "2026-02-17T04:33:22Z"
     },
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 239,
-      "file": "books.json",
+      "category": "it",
+      "cycle": 241,
+      "file": "npclib.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:27:06Z"
+      "t": "2026-02-17T04:32:33Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 241,
+      "file": "npclib.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-17T04:32:32Z"
+    },
+    {
+      "action": "update",
+      "category": "sr",
+      "cycle": 241,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T04:32:29Z"
+    },
+    {
+      "action": "update",
+      "category": "sr",
+      "cycle": 241,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-17T04:32:28Z"
+    },
+    {
+      "action": "update",
+      "category": "sv",
+      "cycle": 241,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-17T04:32:26Z"
+    },
+    {
+      "action": "update",
+      "category": "sv",
+      "cycle": 241,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T04:31:55Z"
+    },
+    {
+      "action": "update",
+      "category": "sv",
+      "cycle": 241,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-17T04:31:55Z"
     },
     {
       "action": "update",
       "category": "ro",
-      "cycle": 239,
-      "file": "books.json",
+      "cycle": 240,
+      "file": "talkactions.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T04:30:20Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 240,
+      "file": "talkactions.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-17T04:27:06Z"
+      "t": "2026-02-17T04:30:20Z"
     }
   ],
   "stage": "cycle_end",

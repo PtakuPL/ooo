@@ -47558,5 +47558,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:29:33.309108Z"
+  },
+  "misc.bank_system.say_26": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.873237Z"
+  },
+  "misc.bank_system.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.874165Z"
+  },
+  "misc.bank_system.say_38": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.874676Z"
+  },
+  "misc.bank_system.say_43": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Ecco a te.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.875247Z"
+  },
+  "npclib.handler.decline": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Allora no.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.879233Z"
+  },
+  "npclib.handler.missing_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.880006Z"
+  },
+  "npclib.handler.need_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.880506Z"
+  },
+  "npclib.handler.walkaway": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Arrivederci.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.881346Z"
+  },
+  "npclib.modules.travel_no_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Non hai abbastanza soldi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:33.883158Z"
+  },
+  "misc.bank_system.say_1": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Non hai abbastanza oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:41.791106Z"
+  },
+  "misc.bank_system.say_10": {
+    "src_hash": "d36798bcf14b9756499e7b5b93ca5883",
+    "text": "Whoah, aspetta, non hai spazio libero per trasportare tutte quelle monete!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:41.791573Z"
+  },
+  "misc.bank_system.say_11": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Il cliente è re! Torna quando vuoi se vuoi {withdraw} i tuoi soldi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:41.792023Z"
+  },
+  "misc.bank_system.say_12": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:41.792355Z"
+  },
+  "misc.bank_system.say_13": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "Compila questo campo con la persona che riceverà il tuo oro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:41.792732Z"
+  },
+  "misc.bank_system.say_14": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Questo giocatore non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:46.272888Z"
+  },
+  "misc.bank_system.say_15": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Questo giocatore non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:46.273183Z"
+  },
+  "misc.bank_system.say_16": {
+    "src_hash": "d17708e1a910647247971f62d52d4104",
+    "text": "Per favore dimmi la quantità di oro che desideri trasferire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:46.273570Z"
+  },
+  "misc.bank_system.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:46.273905Z"
+  },
+  "misc.bank_system.say_18": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:46.274332Z"
+  },
+  "misc.bank_system.say_19": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "Compila questo campo con la persona che riceverà il tuo oro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:49.635198Z"
+  },
+  "misc.bank_system.say_2": {
+    "src_hash": "2dd045921e052d2ae4c1339abccdd747",
+    "text": "Per favore dimmi quanto oro vorresti depositare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:49.635562Z"
+  },
+  "misc.bank_system.say_20": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Questo giocatore non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:49.635842Z"
+  },
+  "misc.bank_system.say_21": {
+    "src_hash": "f41d3db1f132b96d6fe49c0f9f9280b2",
+    "text": "Questo giocatore non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:49.636110Z"
+  },
+  "misc.bank_system.say_22": {
+    "src_hash": "7d973fa7338b18011256fc6b78c69a22",
+    "text": "Non puoi trasferire denaro su questo conto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:49.636422Z"
+  },
+  "misc.bank_system.say_23": {
+    "src_hash": "a0e570ed761553fb2537a4fc5b6a51e0",
+    "text": "Va bene, c'è qualcos'altro che posso fare per te?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:55.879255Z"
+  },
+  "misc.bank_system.say_24": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Quante monete di platino vorresti ottenere?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:55.879598Z"
+  },
+  "misc.bank_system.say_25": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:55.879918Z"
+  },
+  "misc.bank_system.say_27": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:55.880234Z"
+  },
+  "misc.bank_system.say_28": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:55.880543Z"
+  },
+  "misc.bank_system.say_29": {
+    "src_hash": "dcb98e469c547bf91881a6ea42ad8caa",
+    "text": "Vorresti cambiare le tue monete di platino in {gold} o {crystal}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:01.389428Z"
+  },
+  "misc.bank_system.say_3": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Non hai abbastanza oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:01.389744Z"
+  },
+  "misc.bank_system.say_30": {
+    "src_hash": "7eb7fc20e2178c5e1053e86e9ba6ef82",
+    "text": "Quante monete di platino vorresti cambiare in {gold}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:01.390171Z"
+  },
+  "misc.bank_system.say_31": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Quante monete di cristallo vorresti ottenere?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:01.390595Z"
+  },
+  "misc.bank_system.say_32": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:01.390932Z"
+  },
+  "misc.bank_system.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:04.177481Z"
+  },
+  "misc.bank_system.say_35": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:04.177825Z"
+  },
+  "misc.bank_system.say_36": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:04.178218Z"
+  },
+  "misc.bank_system.say_37": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:04.178568Z"
+  },
+  "misc.bank_system.say_39": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:04.178900Z"
+  },
+  "misc.bank_system.say_4": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Non hai abbastanza oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:09.158993Z"
+  },
+  "misc.bank_system.say_40": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:09.159345Z"
+  },
+  "misc.bank_system.say_41": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Quante monete di cristallo vorresti cambiare in platino?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:09.159694Z"
+  },
+  "misc.bank_system.say_42": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:09.160046Z"
+  },
+  "misc.bank_system.say_44": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:09.160399Z"
+  },
+  "misc.bank_system.say_45": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:12.457269Z"
+  },
+  "misc.bank_system.say_46": {
+    "src_hash": "6946c26fb2120a010f00cc72c56c6308",
+    "text": "Non sei membro di una gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:12.457629Z"
+  },
+  "misc.bank_system.say_47": {
+    "src_hash": "6946c26fb2120a010f00cc72c56c6308",
+    "text": "Non sei membro di una gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:12.457925Z"
+  },
+  "misc.bank_system.say_48": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Non hai abbastanza oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:12.458274Z"
+  },
+  "misc.bank_system.say_49": {
+    "src_hash": "2914e8a06398bf80c6ad2ac12d8cf48a",
+    "text": "Per favore dimmi quanto oro vorresti depositare sul tuo conto di gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:12.458676Z"
+  },
+  "misc.bank_system.say_5": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Come si desidera. C'è qualcos'altro che posso fare per te?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:33:14.953533Z"
   }
 }

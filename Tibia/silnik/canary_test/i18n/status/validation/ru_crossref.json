@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 38.2,
+  "coverage_pct": 38.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T04:09:08.928340Z",
-  "issues_total": 107,
+  "checked_at": "2026-02-17T04:34:21.376633Z",
+  "issues_total": 105,
   "issues_by_type": {
     "consistency_in_language": 52,
-    "pl_reference_missing_translation": 31,
+    "pl_reference_missing_translation": 29,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -1086,24 +1086,6 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
-    },
-    {
-      "key": "spell.naga_death_wave.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "nagadeath",
-      "pl": "nagadata",
-      "lang": "nagadeath"
-    },
-    {
-      "key": "spell.tyrn_heal.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "tyrn heal",
-      "pl": "tyrn leczy",
-      "lang": "tyrn heal"
     }
   ],
   "length_ratio_issues": [
@@ -1325,8 +1307,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 31,
-    "applied": 2,
+    "attempted": 29,
+    "applied": 0,
     "skipped": 29,
     "errors": 0
   }

@@ -23110,5 +23110,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:23:37.472336Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.716992Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Förlåt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.717323Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Förlåt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.717972Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Du hittade ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.719640Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Du hittade ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.719936Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Kistan är tom.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.722057Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.723618Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Det är tomt.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:55.746629Z"
+  },
+  "quests.2_ambassadors_treason.msg_1": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Du hittar ingenting i ambassadörens hus. Om han i själva verket är en förrädare har han blivit av med alla bevis som kan anklaga honom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:58.326850Z"
+  },
+  "quests.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:58.327213Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Du granskar rullarna noggrant. Det är beställningar från Rathleton till ambassadören. Inga tecken på förräderi här.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:58.327815Z"
+  },
+  "quests.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:58.328147Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Pappersrester ligger utspridda på golvet. Det tar lite tid att sätta ihop dem igen. Men det är bara en dåligt skriven dikt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:31:58.328707Z"
+  },
+  "quests.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:00.949270Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Dokument brändes här nyligen. Bara delen av en bokrulle ligger fortfarande framför skorstenen men den är för sotad för att kunna läsas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:00.949920Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Du flyttades till vänster hjärna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:00.950333Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Du flyttades till höger hjärnsida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:00.950676Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Du känner dig skakig och yr, världen blir mörk omkring dig. Då klarnar sikten igen – och du är någon annanstans.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:00.951250Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Du välsignade redan den här statyn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:04.905927Z"
+  },
+  "quests.8_blessing_the_statues.msg_2": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Du välsignar statyn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:04.906239Z"
+  },
+  "quests.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Din tid är förbi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:04.906510Z"
+  },
+  "quests.actions.there_is_someone_in_the_room": {
+    "src_hash": "52dddc0701dbfce052c07b68d596db35",
+    "text": "Det är någon i rummet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:04.906805Z"
+  },
+  "quests.actions.you_already_used_your_knife_on": {
+    "src_hash": "663cc82c187e025c63062760739dc4e5",
+    "text": "Du har redan använt din kniv på liket.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:04.907143Z"
+  },
+  "quests.actions.you_cant_use_this_when_youre": {
+    "src_hash": "dd3c1a5f60f082f6ac8b1a60d942ba2a",
+    "text": "Du kan inte använda detta när du är i ett slagsmål.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:09.000798Z"
+  },
+  "quests.actions_bait.say_1": {
+    "src_hash": "9cdc566e522df381db3d0dcad05af784",
+    "text": "Betet är redan satt. Gå upp till utkiken och kolla teleskopet!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:09.001243Z"
+  },
+  "quests.actions_basin.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Ledsen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:09.001457Z"
+  },
+  "quests.actions_bonefiddle.msg_1": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Du spelar benfiol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:09.001736Z"
+  },
+  "quests.actions_bonefiddle.msg_2": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Du spelar påfågelballaden och portalen öppnas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:09.002184Z"
+  },
+  "quests.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Det var en gång en jungfrumässa, med mörka ögon och sidenhår. Långt borta från hemmet dog hon. Ingen grav, ingen vaken, ingen sorg.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:12.218917Z"
+  },
+  "quests.actions_bonefiddle.msg_4": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Du fäster håret på greppbrädan i ebenholts. Strängarna ska vara lämpliga för att fungera som strängar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:12.219461Z"
+  },
+  "quests.actions_bonefiddle.msg_5": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Du fäster ebenholtset på skallen. Detta bör uppfylla kraven för en greppbräda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:12.219921Z"
+  },
+  "quests.actions_boss_timira_fight.say_1": {
+    "src_hash": "2d0952a71b064faaa2eb619011b63524",
+    "text": "Bitarna lyser!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:12.220169Z"
+  },
+  "quests.actions_boss_timira_fight.say_2": {
+    "src_hash": "c4a01b00c90bdabd21cc5e30c2bc1f3e",
+    "text": "Vattnet har bildats till en form!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:12.220472Z"
+  },
+  "quests.actions_boxramp.msg_1": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Clonk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:16.504067Z"
+  },
+  "quests.actions_brain.msg_1": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Inga hjärnor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:16.504299Z"
+  },
+  "quests.actions_cagekey.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:16.504476Z"
+  },
+  "quests.actions_chairteleport.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:16.504646Z"
+  },
+  "quests.actions_chairteleport.msg_2": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Teleportera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:16.504858Z"
+  },
+  "quests.actions_coral.msg_3": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Misslyckas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:20.088846Z"
+  },
+  "quests.actions_corpse.say_1": {
+    "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
+    "text": "Du förvärvade ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:20.089082Z"
+  },
+  "quests.actions_coruja.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Ledsen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:20.089249Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:20.089619Z"
+  },
+  "quests.actions_doors.msg_2": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Du kan inte använda den här båten ännu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:23.641715Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:23.642200Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:23.642577Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:23.642940Z"
+  },
+  "quests.actions_doors.msg_6": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Du har inte tillräckligt med nivå.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:23.643248Z"
+  },
+  "quests.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Du har en känsla av rädsla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:25.603520Z"
+  },
+  "quests.actions_entrance.msg_1": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Du kan endast använda denna entré under natten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:32:25.603900Z"
   }
 }

@@ -146726,5 +146726,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:29:10.267746Z"
+  },
+  "otclient_modules.quickloot_otui.tr_8": {
+    "src_hash": "1370ba6a869746a03d4c69d35b42c5cf",
+    "text": "Filtro de botín rápido:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:02.287018Z"
+  },
+  "otclient_modules.quickloot_otui.tr_9": {
+    "src_hash": "ce5e7ecaa34619ce3cd0f11abbe32bde",
+    "text": "Obtener",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:02.287208Z"
+  },
+  "otclient_modules.ruleviolation.tr_1": {
+    "src_hash": "a8ba2884ff3c0d268a03fc91dceef55f",
+    "text": "Debes ingresar un comentario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:02.287491Z"
+  },
+  "otclient_modules.ruleviolation.tr_10": {
+    "src_hash": "a0f6a4e29f4d03201ac6ab976afaf659",
+    "text": "Nombre Informe + Destierro + Advertencia Final",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:02.287814Z"
+  },
+  "otclient_modules.ruleviolation.tr_11": {
+    "src_hash": "e90e026a05c0481f403b524265b269dd",
+    "text": "Destierro + Aviso Final",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:06.238226Z"
+  },
+  "otclient_modules.ruleviolation.tr_12": {
+    "src_hash": "d23ed311953b00e53f087a1dea37a58a",
+    "text": "Nombre Informe + Destierro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:06.238515Z"
+  },
+  "otclient_modules.ruleviolation.tr_14": {
+    "src_hash": "91bf5ccd78998693a26b971fdffd6323",
+    "text": "Informe de nombre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:38:06.238718Z"
   }
 }

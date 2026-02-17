@@ -25222,5 +25222,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:08:46.212576Z"
+  },
+  "npc.a_sleeping_dragon.say_7": {
+    "src_hash": "0afdd07c5e9244d4f001e1fce65f6dda",
+    "text": "Du flämtar av storleken på den stora öppna porten när du går igenom för att gå vidare österut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:25.850510Z"
+  },
+  "npc.a_sleeping_dragon.say_8": {
+    "src_hash": "be8886a1703f51b6f68f2da1303309d1",
+    "text": "Du sträcker dig efter ett litet ensamt arrangemang av kombinerade småhus och stoppar det i fickan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:25.851032Z"
+  },
+  "npc.a_sleeping_dragon.say_9": {
+    "src_hash": "77ce86c7effd3a8c28faec892de5dc49",
+    "text": "Du tar en smaragd från högen. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:25.851368Z"
+  },
+  "npc.a_starving_dog.greet_1": {
+    "src_hash": "5d8d3eaf7e385505560c681a45bc63f2",
+    "text": "<sniff>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:25.851597Z"
+  },
+  "npc.a_starving_dog.say_1": {
+    "src_hash": "04524485fd13e5b04016a186aff66016",
+    "text": "<munch>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:28.579456Z"
+  },
+  "npc.a_strange_chalice.multi_1": {
+    "src_hash": "fee45a3e5abbb7706203a5ac4f7919a9",
+    "text": "Ja, till exempel försökte jag under en tid ta reda på hur man kommer in i den eldiga portalen i detta komplex. De flesta av draken kommer aldrig upp hit. De gömmer sig hellre någonstans där nere och planerar och planerar. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:28.580316Z"
+  },
+  "npc.a_strange_chalice.multi_10": {
+    "src_hash": "b7c596f080020effaff8997d70bb235a",
+    "text": "Sedan hände något, ödlfolk började dyka upp och letade igenom platsen. Jag var tvungen att dra mig tillbaka från mitt gömställe och avancera genom en säkrare position. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:28.580986Z"
+  },
+  "npc.a_strange_chalice.multi_11": {
+    "src_hash": "32def53042c32f7b6d482ba76c4389ef",
+    "text": "Jag behövde komma nära och smälta in. Så jag kom på den ultimata förklädnaden: en kalk. Jag kunde etablera fotfäste mitt ibland dem, skulle aldrig bli identifierad som en inkräktare och kunde till och med analysera deras drinkar! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:28.581808Z"
+  },
+  "npc.a_strange_chalice.multi_12": {
+    "src_hash": "5c345ea0809b2e3a6500810748727b8f",
+    "text": "Jag grävde snabbt en tunnel för att komma in i vad jag antar är ett tronrum och väntade på att de skulle plocka upp mig och bära runt mig! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:28.582458Z"
+  },
+  "npc.a_strange_chalice.multi_13": {
+    "src_hash": "b7eeb8bfa7801e2b93d39a17d0f4ebb4",
+    "text": "De 'used' mig också lite, du vill inte gå in på några detaljer här. Jag är verkligen {thirsty}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:34.189463Z"
+  },
+  "npc.a_strange_chalice.multi_14": {
+    "src_hash": "f2ddbcd6c854aaa56fe3ab22e208b527",
+    "text": "Inget vatten då? Ah drat - eh, oroa dig inte, inga problem. Så från den dag jag fick nyheter om upptäckten av Zao ville jag studera dess invånare, vilda djur, växter och geografi. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:34.190436Z"
+  },
+  "npc.a_strange_chalice.multi_15": {
+    "src_hash": "c162c2e4c136122010b050ee35901260",
+    "text": "Akademin insatte '__PH0__-Zaoan Exploration Division' kort efter. Jag var en av grundarna och chefen för forskningsgrenen 'Draken'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:34.191168Z"
+  },
+  "npc.a_strange_chalice.multi_16": {
+    "src_hash": "d5170eb71b81490b599dfa7637196b8b",
+    "text": "Eftersom min värdefulla och praktiskt inriktade kollega och mentor Spectulus inte kom med oss, finns det bara en medlem i akademins prospekteringsavdelning som faktiskt vågar mig ut för att se platsen - jag. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:34.191973Z"
+  },
+  "npc.a_strange_chalice.multi_17": {
+    "src_hash": "a79715f48f2b8943949a48f614e2426d",
+    "text": "Du måste veta, det mesta i akademin händer 'inside', bakom stängda dörrar. Men några av oss vägrar helt enkelt att låta teorin råda över praktisk erfarenhet inom vetenskap. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:34.192676Z"
+  },
+  "npc.a_strange_chalice.multi_18": {
+    "src_hash": "ba7ebd0c13987f41dfbc94fe95238cef",
+    "text": "Tja, Spectulus är i princip den enda likasinnade hittills. I själva verket hetsade han mig att arbeta på fältet i första hand. Så här är jag! {Disguised} som en kalk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:41.723588Z"
+  },
+  "npc.a_strange_chalice.multi_19": {
+    "src_hash": "a69a6355388c041447d04eba3b94513d",
+    "text": "Tja, förutom att vara en känd trollkarl och lärd vid magiska akademin i Edron, är jag också stolt far till en vacker dotter, Ivalisse. Min lilla strävan här måste ha besvärat stackaren hela tiden sedan jag gick. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:41.725331Z"
+  },
+  "npc.a_strange_chalice.multi_2": {
+    "src_hash": "62323e0a4cae2d65eb46b7f0521ba5cb",
+    "text": "Jag vet redan hur man skriver in den, du måste kliva in och skrika 'zzubaran'. Tyvärr tog de mig aldrig med sig. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:41.736053Z"
+  },
+  "npc.a_strange_chalice.multi_20": {
+    "src_hash": "327276bd533fb0914c7b184008300024",
+    "text": "Säg att jag älskar henne och att jag ska ta hand om henne. Jag måste trycka på! Min forskning är mest värdefull för '__PH0__-Zaoan Exploration Division'. Du råkar inte ha lite vatten, eller hur? Ah strunt i. Det är en lång {story}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:41.738427Z"
+  },
+  "npc.a_strange_chalice.multi_3": {
+    "src_hash": "30edb040645eba9a6fcb184b37fe5d78",
+    "text": "Jag hörde dem säga det en gång, när en till synes berusad vakt skrek det framför en väggmonterad ficklampa och slog huvudet mot den efteråt. Han spillde allt mitt innehåll på golvet, hmpf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:41.739946Z"
+  },
+  "npc.a_strange_chalice.multi_4": {
+    "src_hash": "083edfc6168d957911567492033fb283",
+    "text": "Ah sa jag det? Strunt i, jag är inte riktigt törstig. Det är en del av denna illusion. På något sätt har jag gömt mig så länge att jag började... bli... ett kärl. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:45.272958Z"
+  },
+  "npc.a_strange_chalice.multi_5": {
+    "src_hash": "8acd8ebc6d955ff9119ec3e8345ea3ee",
+    "text": "Jag vet inte, jag har den ständiga sugen att dricka men i den här formen skulle jag inte behöva det, det finns ingen mun, ingen mage, inget kött och inget egentligt behov av att äta, dricka eller sova. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:45.273745Z"
+  },
+  "npc.a_strange_chalice.multi_6": {
+    "src_hash": "0822fa47d657a690b2de5c5ee693de10",
+    "text": "Jag kommunicerar i princip genom att få metallen i denna bägare att vibrera och använda dess form som en ljudkropp. Som en riktig röst, tycker du inte?? Ja, jag vet att det är läskigt. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:45.274538Z"
+  },
+  "npc.a_strange_chalice.multi_7": {
+    "src_hash": "83a893e7d9041ec0d1376b74ff3ad5ef",
+    "text": "Jag är fortfarande mitt uppe i min forskning och vill inte åka hem, så snälla säg till min dotter att inte oroa mig för min - det här kommer att bli ett genombrott! Jag har redan {learned} mycket!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:45.275314Z"
+  },
+  "npc.a_strange_chalice.multi_8": {
+    "src_hash": "e9a8362364b304dbdc81f8f342e8996e",
+    "text": "Åh ja, så eftersom jag ville studera Draken på nära håll så kom jag på en idé. Baserat på min forskning, och några små blåmärken och ett ärr, är det perfekta gömstället ofta mitt i ämnet. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:45.276079Z"
+  },
+  "npc.a_strange_chalice.multi_9": {
+    "src_hash": "cc34e24d43372156c72c22aea28ee7f1",
+    "text": "Om jag kunde gå in i deras lya osedd och etablera ett framåtläger, skulle jag i lugn och ro kunna studera draken - eller det trodde jag. Det visade sig att hela stället var tomt. Jag slog upp mitt läger och väntade. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:50.081664Z"
+  },
+  "npc.a_strange_chalice.say_3": {
+    "src_hash": "94e49526a70e8908e790e26f48964d61",
+    "text": "Slutligen. Det är vad jag... o vänta, du pratar fortfarande med mig - du kommer att spränga mitt skydd! Vad vill du? Åh vänta, skickade min {daughter} dig? Det har verkligen gått ett tag nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:50.082471Z"
+  },
+  "npc.a_strange_chalice.stdmod_1": {
+    "src_hash": "4b3fdae9e13257b3778029ab9b1fbae0",
+    "text": "'Alice the chalice'... Hmpf, självklart kommer jag inte att berätta vad jag heter, jag är UNDERCOVER! Var tyst nu, annars hör de dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:50.083043Z"
+  },
+  "npc.a_strange_chalice.stdmod_2": {
+    "src_hash": "05f7f74c0b29f24856178f1bc0702326",
+    "text": "Tja, jag dricker för det mesta. Eh, nej, jag menar - försöker hålla kvar mina vätskor... ah, vänta det blev fel: jag forskar. Låt oss bara hålla det vid det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:50.083693Z"
+  },
+  "npc.a_strange_fellow.say_1": {
+    "src_hash": "0c5a7632de60c2e815c74f96325803e3",
+    "text": "En räkning? Oh boy så du levererar en annan räkning till stackars mig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:50.084097Z"
+  },
+  "npc.a_strange_fellow.say_2": {
+    "src_hash": "6016a70cddc5ea1904793906165a6082",
+    "text": "Ok, okej, jag tar det. Jag antar att jag inte har något annat val ändå. Och lämna mig nu ensam i mitt elände tack.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:52.774048Z"
+  },
+  "npc.a_strange_fellow.say_3": {
+    "src_hash": "05d51197436c97c6ec17d90e4a58de75",
+    "text": "Öh? Vad vill du?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:52.774430Z"
+  },
+  "npc.a_strange_fellow.say_4": {
+    "src_hash": "7b783b4483041bd31834f44376de5e2d",
+    "text": "Vad? Min hatt?? Det är... inget speciellt med det!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:52.774803Z"
+  },
+  "npc.a_strange_fellow.say_5": {
+    "src_hash": "c21cbe5bca68c88d94010ef8bd1ea39a",
+    "text": "Sluta tjata om den där hatten, lyssnar du?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:52.775254Z"
+  },
+  "npc.a_strange_fellow.say_6": {
+    "src_hash": "ea6a49853f81dfcc3df96b8e32b3aae7",
+    "text": "Hej! Rör inte den hatten! Låt det vara!!! Gör inte detta!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:26:52.775650Z"
   }
 }

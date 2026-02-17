@@ -147422,5 +147422,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:57:22.766661Z"
+  },
+  "scripts.manage_kv.msg_4": {
+    "src_hash": "a03095d7756d3fbffc8e31e7338f1a1d",
+    "text": "Uso: /setkv clave,valor[,nombredeljugador]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:00:07.404900Z"
   }
 }

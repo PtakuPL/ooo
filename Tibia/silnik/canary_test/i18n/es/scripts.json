@@ -1281,7 +1281,7 @@
   "scripts.manage_kv.msg_1": "El almacenamiento de cooldown de jefes no está disponible para este jugador.",
   "scripts.manage_kv.msg_2": "No se encontraron claves KV para este jugador.",
   "scripts.manage_kv.msg_3": "No se encontraron entradas KV no negativas para {}.",
-  "scripts.manage_kv.msg_4": "Uso: /setkv key,value[,playerName]",
+  "scripts.manage_kv.msg_4": "Uso: /setkv clave,valor[,nombredeljugador]",
   "scripts.manage_kv.msg_5": "Expresión de valor inválida.",
   "scripts.manage_kv.msg_6": "El almacenamiento KV no está disponible para este jugador.",
   "scripts.manage_kv.msg_7": "Cooldown de jefe para {} eliminado.",

@@ -28830,5 +28830,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T03:52:07.776894Z"
+  },
+  "monster.elf_arcanist.voice_1": {
+    "src_hash": "3edaae98abac22349454786e15e9bbea",
+    "text": "Я принесу тебе баланс!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.671712Z"
+  },
+  "monster.elf_arcanist.voice_2": {
+    "src_hash": "1f640a19ae2f286df265a2003b519b7a",
+    "text": "Вихиль Эалуэль!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.672023Z"
+  },
+  "monster.elf_arcanist.voice_3": {
+    "src_hash": "80ca50969c0aa9a23e8ce1e258576343",
+    "text": "Для дочери звезд!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.672409Z"
+  },
+  "monster.elf_arcanist.voice_4": {
+    "src_hash": "6ed28c4a01b2c0a91a9d0f731b898699",
+    "text": "Та'ши Синат!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.672842Z"
+  },
+  "monster.elf_arcanist.voice_5": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "Почувствуй мой гнев!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.673212Z"
+  },
+  "monster.madareth.voice_2": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "Почувствуй мой гнев!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.825512Z"
+  },
+  "monster.renegade_knight.name": {
+    "src_hash": "9857523dc0efbd187fff110e64e8affb",
+    "text": "Рыцарь-отступник",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:14.967745Z"
+  },
+  "monster.dharalion.voice_1": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "Почувствуй мой гнев!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.068301Z"
+  },
+  "monster.goblin.voice_6": {
+    "src_hash": "28761009402dffed840536d0295558bf",
+    "text": "У меня он!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.106707Z"
+  },
+  "monster.goblin.voice_7": {
+    "src_hash": "4d0973b303c4f6fc92dd72ff92f3ca96",
+    "text": "Зигзаг! Гобо атакует!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.107068Z"
+  },
+  "monster.goblin.voice_8": {
+    "src_hash": "67a01fb31a7cc02e20fba75955223ea6",
+    "text": "Помощь! Убийца гоблинов!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.107393Z"
+  },
+  "monster.goblin.voice_9": {
+    "src_hash": "4228bdec0cbdd2b7db97385b68f9fef7",
+    "text": "Багга! Багга!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.107674Z"
+  },
+  "monster.goblin.voice_10": {
+    "src_hash": "7da44fb6ccd55593aa9eb7746e717b60",
+    "text": "Я зеленый, я значит!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.108006Z"
+  },
+  "monster.dharalion.voice_6": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "Почувствуй мой гнев!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:15.115081Z"
+  },
+  "monster.twisted_shaper.name": {
+    "src_hash": "d7ac5ad3d0266e427ae870c6956ff6e9",
+    "text": "Витой формирователь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:30.162969Z"
+  },
+  "monster.twisted_shaper.desc": {
+    "src_hash": "3e0b7fc27e173a3be3d24e811614c7cb",
+    "text": "искривленный формирователь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:30.163284Z"
+  },
+  "monster.twisted_shaper.voice_1": {
+    "src_hash": "da5c441ad55ae59c8d57a7e0860e888d",
+    "text": "Ти Джезз Кур Тар!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:30.163560Z"
+  },
+  "monster.minotaur_archer.name": {
+    "src_hash": "cc02985d6e73d1afa9a4d1efe2ee32f5",
+    "text": "Минотавр-лучник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:30.163801Z"
   }
 }

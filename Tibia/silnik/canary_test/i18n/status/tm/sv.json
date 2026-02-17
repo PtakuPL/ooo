@@ -22534,5 +22534,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:49:00.560062Z"
+  },
+  "npc.captain_haba_open_sea.greet_msg_2": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Du hittade platsen |PLAYERNAME|!! Ta dig själv en hjälm från djupet och utforska {caves} där nere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.790504Z"
+  },
+  "npc.captain_haba_open_sea.sendtrade_msg_1": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Varsågod! Använd den på kranen när du ser monstret. Fyll sedan på det varje gång du använder teleskopet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.791864Z"
+  },
+  "npc.captain_harava.greet_msg_1": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Välkommen ombord, resenär. Var kan jag {sail} dig idag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.793569Z"
+  },
+  "npc.captain_jack_rat.greet_msg_1": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Hej, pirat! Kom ombord för att åka hem! Välkommen ombord på fartyget Flying Bat. Ska jag ställa in {sail}s?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.795088Z"
+  },
+  "npc.captain_max.greet_msg_1": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Hej, |PLAYERNAME|. På ett uppdrag för utforskarsamhället, va?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.795939Z"
+  },
+  "npc.captain_max_calassa.greet_msg_1": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Hej, |PLAYERNAME|. På ett uppdrag för utforskarsamhället, va?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.797296Z"
+  },
+  "npc.captain_waverider.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.806201Z"
+  },
+  "npc.captain_waverider_island.greet_msg_1": {
+    "src_hash": "b881a2f946b2000c7b5d245b2e9f3ec7",
+    "text": "Hälsningar, vågade äventyrare. Om du behöver en retur {passage}, låt mig veta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.806878Z"
+  },
+  "npc.captain_waverider_island.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.807502Z"
+  },
+  "npc.carina.greet_msg_1": {
+    "src_hash": "adf3a8471f9e459d5b11b1054ae73655",
+    "text": "Välkommen, |PLAYERNAME|. Jag ser fram emot att handla med dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.808854Z"
+  },
+  "npc.carlos.greet_msg_10": {
+    "src_hash": "2d9ef34d2d04adf11e5e8b1858efd460",
+    "text": "Hej igen, |PLAYERNAME|! Vad gör du fortfarande här? Du borde gå över bron till byn Rookgaard nu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.809947Z"
+  },
+  "npc.carlos.greet_msg_5": {
+    "src_hash": "155c73893b154c9642e5b5791cd5e45b",
+    "text": "Välkommen tillbaka |PLAYERNAME|, jag hoppas att du ändrade dig och kommer att ge mig lite {meat}? Jag ska till och med ge dig lite guld för det.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.810818Z"
+  },
+  "npc.carlos.greet_msg_6": {
+    "src_hash": "1397a9dce740292a32730701d2929b92",
+    "text": "Välkommen tillbaka, |PLAYERNAME|! Hade du en lyckad jakt och bar en bit {meat} eller skinka med dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.811418Z"
+  },
+  "npc.carlos.greet_msg_7": {
+    "src_hash": "00143dd08108a83dcbb73f1a2f6bba1b",
+    "text": "Välkommen tillbaka, Isleth Eagonst! Har du kvar den där köttbiten eller skinka? Om så är fallet, be mig om en {trade} så ger jag dig lite guld för det.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.812134Z"
+  },
+  "npc.carlos.greet_msg_8": {
+    "src_hash": "1161f926d6499a60267c416c448c3ac0",
+    "text": "Välkommen tillbaka, |PLAYERNAME|! Var lade du den där läckra biten mat? Har du ätit det själv? Tja, om du hittar en annan, snälla kom tillbaka.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.812810Z"
+  },
+  "npc.carlos.greet_msg_9": {
+    "src_hash": "5b4d8446cfabd691a0740be04b971f3a",
+    "text": "Hej där, |PLAYERNAME|! Tja, det är så handel med NPC:er som jag fungerar. Jag tror att du är redo att gå över bron till Rookgaard! Ta hand om dig!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.813507Z"
+  },
+  "npc.charlotta.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.822686Z"
+  },
+  "npc.eleonore.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:54:59.883859Z"
+  },
+  "npc.harlow.stdmod_2": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.003424Z"
+  },
+  "npc.harlow.stdmod_5": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.003872Z"
+  },
+  "npc.harlow.stdmod_8": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.004205Z"
+  },
+  "npc.harlow_vengoth.stdmod_2": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.005035Z"
+  },
+  "npc.mazarius.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.159077Z"
+  },
+  "npc.raymond_striker.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.285560Z"
+  },
+  "npc.sebastian.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.311302Z"
+  },
+  "npc.sebastian_nargor.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:00.312510Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "Äntligen märker någon att jag är en GRODA. Grattis, du är VÄLDIGT observant... *suck*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:01.798778Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "Ett uppdrag? Ja, jag har ett uppdrag! Gå och berätta för kung Tibianus att hans son försökte kyssa mig igen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:04.408915Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Den idioten förvandlade mig till en människa en gång. Men min fru kom och kysste mig, så jag är en groda igen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:04.409548Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Den idioten förvandlade mig till en människa en gång. Men min fru kom och kysste mig, så jag är en groda igen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:04.410144Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Du kommer nu att resas härifrån. Är du säker på att du vill möta den där teleporteringen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:04.410637Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Stanna då här i dessa spöklika salar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:04.410974Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "Jag kan erbjuda dig en {teleport}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:07.838635Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Bry dig inte om mig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:07.838966Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "En gång var jag medlem i mardrömsriddarnas orden. Nu är jag bara en skugga som går i dessa kalla salar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:07.839615Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Norr har ett pussel att slutföra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:07.839945Z"
   }
 }

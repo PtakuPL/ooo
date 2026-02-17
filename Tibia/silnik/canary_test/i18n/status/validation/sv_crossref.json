@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 27.7,
+  "coverage_pct": 27.9,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T07:41:22.916897Z",
+  "checked_at": "2026-02-17T08:04:45.920769Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2516,15 +2516,6 @@
       "lang": "Ancient Spawn Of Morgathla"
     },
     {
-      "key": "monster.a_shielded_astral_glyph.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A Shielded Astral Glyph",
-      "pl": "Osłonięty Glif Astralny",
-      "lang": "A Shielded Astral Glyph"
-    },
-    {
       "key": "monster.lovely_polar_bear.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2865,6 +2856,15 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
+    },
+    {
+      "key": "monster.zulazza_the_corruptor.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Behind zze Great Gate liezz your doom!",
+      "pl": "Za Wielką Bramą kryje się twoja zagłada!",
+      "lang": "Behind zze Great Gate liezz your doom!"
     },
     {
       "key": "monster.orc_sambackpack.name",

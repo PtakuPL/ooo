@@ -58294,5 +58294,405 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:57:50.187088Z"
+  },
+  "otclient_modules.blessing.tr_15": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Indietro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.588989Z"
+  },
+  "otclient_modules.boss_slots.tr_4": {
+    "src_hash": "9a3b9f3362303ea8f57e16ff69927a44",
+    "text": "Archefoe\n\nPer sbloccare un livello, riceverai i seguenti punti boss:\nAbilità: 10\nCompetenza: 30\nMaestria: 60",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.590922Z"
+  },
+  "otclient_modules.bosstiary.tr_10": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Competenza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.592562Z"
+  },
+  "otclient_modules.bosstiary.tr_12": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Per sbloccare un livello, riceverai i seguenti punti boss:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.593051Z"
+  },
+  "otclient_modules.bosstiary.tr_5": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Competenza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.593600Z"
+  },
+  "otclient_modules.bosstiary.tr_7": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Per sbloccare un livello, riceverai i seguenti punti boss:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.594232Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_13": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Competenza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.595119Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_4": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Competenza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.595804Z"
+  },
+  "otclient_modules.character.tr_58": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.604132Z"
+  },
+  "otclient_modules.character.tr_61": {
+    "src_hash": "54f664c70c22054ea0d8d26fc3997ce7",
+    "text": "In linea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.604646Z"
+  },
+  "otclient_modules.character.tr_62": {
+    "src_hash": "8d9da4bc0e49a50e09ac9f7e56789d39",
+    "text": "Non in linea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.605052Z"
+  },
+  "otclient_modules.character.tr_93": {
+    "src_hash": "5913efb942586b6d6e80fcdc82566497",
+    "text": "Stai ispezionando",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.607353Z"
+  },
+  "otclient_modules.character_otui.tr_64": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.612108Z"
+  },
+  "otclient_modules.character_otui.tr_70": {
+    "src_hash": "0aa6f4210bf373c95eda00232e93cd98",
+    "text": "Distanza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.612959Z"
+  },
+  "otclient_modules.character_otui.tr_72": {
+    "src_hash": "6c198603789a4928477eccd5d550b6b2",
+    "text": "Spada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.613351Z"
+  },
+  "otclient_modules.character_otui.tr_94": {
+    "src_hash": "5913efb942586b6d6e80fcdc82566497",
+    "text": "Stai ispezionando",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.615700Z"
+  },
+  "otclient_modules.characterlist_otui.tr_5": {
+    "src_hash": "f5a7924e621e84c9280a9a27e1bcb7f6",
+    "text": "Mondo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.618374Z"
+  },
+  "otclient_modules.createaccount_otui.tr_3": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Indietro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.639233Z"
+  },
+  "otclient_modules.createaccount_otui.tr_32": {
+    "src_hash": "7f3c8411af284dfb54de94ff2560ff02",
+    "text": "Nome del personaggio:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.639624Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_18": {
+    "src_hash": "b78a3223503896721cca1303f776159b",
+    "text": "Titolo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.642984Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_6": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Indietro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.656783Z"
+  },
+  "otclient_modules.game_healthcircle.tr_2": {
+    "src_hash": "0aa6f4210bf373c95eda00232e93cd98",
+    "text": "Distanza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.659340Z"
+  },
+  "otclient_modules.game_highscore.tr_1": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.660482Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_6": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.680110Z"
+  },
+  "otclient_modules.house.tr_101": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.683707Z"
+  },
+  "otclient_modules.house.tr_47": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.686921Z"
+  },
+  "otclient_modules.house.tr_48": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.687243Z"
+  },
+  "otclient_modules.house.tr_53": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.688213Z"
+  },
+  "otclient_modules.house.tr_54": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.688554Z"
+  },
+  "otclient_modules.house.tr_59": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.689302Z"
+  },
+  "otclient_modules.house.tr_60": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.689667Z"
+  },
+  "otclient_modules.house.tr_65": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.690460Z"
+  },
+  "otclient_modules.house.tr_66": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.690734Z"
+  },
+  "otclient_modules.house.tr_95": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.692645Z"
+  },
+  "otclient_modules.house.tr_98": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Tutti gli Stati",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.693011Z"
+  },
+  "otclient_modules.house.tr_99": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Ordina per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.693408Z"
+  },
+  "otclient_modules.items.tr_24": {
+    "src_hash": "48423a9049b3065103ef1026a5fa08e5",
+    "text": "Gambe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.708090Z"
+  },
+  "otclient_modules.items.tr_3": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.708821Z"
+  },
+  "otclient_modules.items_otui.tr_17": {
+    "src_hash": "52ca369c37bb7a2660579e88b565cb0b",
+    "text": "Digita per cercare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.710354Z"
+  },
+  "otclient_modules.items_otui.tr_18": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Ricerca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.710612Z"
+  },
+  "otclient_modules.items_otui.tr_4": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.711400Z"
+  },
+  "otclient_modules.items_otui.tr_8": {
+    "src_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "text": "0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.711864Z"
+  },
+  "otclient_modules.market_otui.tr_6": {
+    "src_hash": "31840a66a8d6d223e5b0540138768838",
+    "text": "Mercato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.718946Z"
+  },
+  "otclient_modules.npctrade_otui.tr_10": {
+    "src_hash": "8c489d0946f66d17d73f26366a4bf620",
+    "text": "Peso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.720908Z"
+  },
+  "otclient_modules.npctrade_otui.tr_15": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Elenco degli articoli che puoi vendere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.721972Z"
+  },
+  "otclient_modules.npctrade_otui.tr_17": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Elenco degli articoli che puoi acquistare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.722727Z"
+  },
+  "otclient_modules.npctrade_otui.tr_8": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Ricerca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.723723Z"
+  },
+  "otclient_modules.outfit.tr_1": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.727334Z"
+  },
+  "otclient_modules.outfit.tr_2": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.727636Z"
+  },
+  "otclient_modules.outfit.tr_3": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nessuno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:39.727911Z"
   }
 }

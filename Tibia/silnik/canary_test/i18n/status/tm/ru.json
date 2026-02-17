@@ -35286,5 +35286,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:55:03.140836Z"
+  },
+  "book.otbm.contact_lady_eleonore_in_the": {
+    "src_hash": "cb8655c7900ba1d928619b45c4dcb6fb",
+    "text": "Свяжитесь с леди Элеонорой в поместье Сильверхенд!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:49.127910Z"
+  },
+  "book.otbm.contact_me_in_the_trade": {
+    "src_hash": "09ee01c761e4747b5ca4d26e77a3b0cd",
+    "text": "Свяжитесь со мной в Торговом квартале, если хотите перестать быть беспомощными – и сделайте что-нибудь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:53.311961Z"
+  },
+  "book.otbm.contact_me_in_the_trade_09ee01c7": {
+    "src_hash": "09ee01c761e4747b5ca4d26e77a3b0cd",
+    "text": "Свяжитесь со мной в Торговом квартале, если хотите перестать быть беспомощными – и сделайте что-нибудь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:53.312525Z"
+  },
+  "book.otbm.continued_without_cessation_some_of": {
+    "src_hash": "653303fd7f9ae3099f0dd88adf946ccd",
+    "text": "продолжалось без перерыва. Некоторые другие боги больше не хотели быть свидетелями того, как их творение было обеспокоено и",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:53.313125Z"
+  },
+  "book.otbm.contributed_a_tiny_proportion_of": {
+    "src_hash": "dc654f0d77c9dcace2462eb5d5d21528",
+    "text": "вложил в это дело лишь малую часть своих сил. Мудрые утверждают, что именно благодаря его работе все время стремится к",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:53.313792Z"
+  },
+  "book.otbm.coordinates_for_the_area_around": {
+    "src_hash": "14e6e3ccf8d15e3d853162119e300ea1",
+    "text": "Координаты окрестностей Дианшера",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:53.314153Z"
+  },
+  "book.otbm.courage_and_responsibility_after_his": {
+    "src_hash": "eeffb28dcb7e46ec8d775d999f69e093",
+    "text": "смелость и ответственность. По его образу и частям его тела Боги создали ему слуг, Людей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:57.325814Z"
+  },
+  "book.otbm.crates_from_23_tools_and": {
+    "src_hash": "599bf2ff1cd08065d602b6ce51c48171",
+    "text": "Ящики из №23: инструменты и утилиты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:57.326312Z"
+  },
+  "book.otbm.crates_from_87_supplies": {
+    "src_hash": "2a327370fcb52ef150fdf1fea27d39e2",
+    "text": "Ящики из #87: Припасы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:57.326624Z"
+  },
+  "book.otbm.creation_and_the_process_known": {
+    "src_hash": "6c2036f13d706045f274adab2050fb9d",
+    "text": "творение, и процесс, известный как пробуждение, ни в коем случае не является действием доброжелательности, а тем, что боги теряют контроль над вещами, которые они пытались спрятать от вторгающихся душ. Теория гласит, что, поскольку души из потустороннего мира возносятся для достижения некоторой формы божественности, происходит постоянное нисхождение сил древних богов из-за силы, которая утекает в небытие, и силы, которую живые претендуют на свою собственную. Конечно, эта ересь очень популярна в рядах некоторых культов вознесения. Тем более, что он устраняет наиболее распространенный среди этих конклавов страх, что ревнивые боги могут нанести ответный удар.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:01:57.328836Z"
   }
 }

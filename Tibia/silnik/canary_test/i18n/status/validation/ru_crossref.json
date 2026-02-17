@@ -4,11 +4,11 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T07:40:36.282566Z",
-  "issues_total": 129,
+  "checked_at": "2026-02-17T08:03:46.533281Z",
+  "issues_total": 133,
   "issues_by_type": {
     "consistency_in_language": 57,
-    "pl_reference_missing_translation": 29,
+    "pl_reference_missing_translation": 33,
     "length_ratio_crosscheck": 43
   },
   "consistency_issues": [
@@ -1160,6 +1160,42 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "spell.cure_curse.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cure Curse",
+      "pl": "Ulecz klątwę",
+      "lang": "Cure Curse"
+    },
+    {
+      "key": "spell.protector.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Protector",
+      "pl": "Ochraniacz",
+      "lang": "Protector"
+    },
+    {
+      "key": "spell.charge.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Charge",
+      "pl": "Opłata",
+      "lang": "Charge"
+    },
+    {
+      "key": "spell.levitate.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Levitate",
+      "pl": "Unieść się w powietrzu",
+      "lang": "Levitate"
     }
   ],
   "length_ratio_issues": [
@@ -1552,8 +1588,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 29,
-    "applied": 0,
+    "attempted": 33,
+    "applied": 4,
     "skipped": 29,
     "errors": 0
   }

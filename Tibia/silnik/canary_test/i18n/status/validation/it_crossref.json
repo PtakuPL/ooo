@@ -1,15 +1,15 @@
 {
   "lang": "it",
-  "coverage_pct": 48.2,
+  "coverage_pct": 48.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T07:39:40.485920Z",
-  "issues_total": 426,
+  "checked_at": "2026-02-17T08:03:06.066556Z",
+  "issues_total": 428,
   "issues_by_type": {
-    "consistency_in_language": 8,
+    "consistency_in_language": 9,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 18
+    "length_ratio_crosscheck": 19
   },
   "consistency_issues": [
     {
@@ -24,6 +24,23 @@
       "examples": [
         "books:ui.readable.you_read_prefix",
         "cpp:cpp.look.you_read"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Yes",
+      "variants": [
+        "SÌ",
+        "Sì"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "libs:lib.player.modal_button_yes",
+        "otclient_modules:otclient_modules.character.tr_57",
+        "otclient_modules:otclient_modules.charms.tr_10",
+        "otclient_modules:otclient_modules.charms.tr_14",
+        "otclient_modules:otclient_modules.charms.tr_18"
       ]
     },
     {
@@ -253,33 +270,6 @@
       "lang": "Drakenbane"
     },
     {
-      "key": "cpp.title.name_53",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Weedkiller",
-      "pl": "Środek chwastobójczy",
-      "lang": "Weedkiller"
-    },
-    {
-      "key": "cpp.title.name_81",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Aeternal",
-      "pl": "Wieczny",
-      "lang": "Aeternal"
-    },
-    {
-      "key": "cpp.title.name_85",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beastly",
-      "pl": "Paskudny",
-      "lang": "Beastly"
-    },
-    {
       "key": "cpp.title.name_91",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -287,114 +277,6 @@
       "en": "Planegazer",
       "pl": "Planetolog",
       "lang": "Planegazer"
-    },
-    {
-      "key": "cpp.title.name_93",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Truly Boss",
-      "pl": "Naprawdę Boss",
-      "lang": "Truly Boss"
-    },
-    {
-      "key": "cpp.vocation.desc_id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "none",
-      "pl": "Niene",
-      "lang": "none"
-    },
-    {
-      "key": "cpp.vocation.desc_id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a sorcerer",
-      "pl": "jeden sorcerer",
-      "lang": "a sorcerer"
-    },
-    {
-      "key": "cpp.vocation.desc_id_2",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a druid",
-      "pl": "jeden druid",
-      "lang": "a druid"
-    },
-    {
-      "key": "cpp.vocation.desc_id_3",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a paladin",
-      "pl": "jeden paladin",
-      "lang": "a paladin"
-    },
-    {
-      "key": "cpp.vocation.desc_id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a knight",
-      "pl": "rycerz",
-      "lang": "a knight"
-    },
-    {
-      "key": "cpp.vocation.id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "None",
-      "pl": "Niene",
-      "lang": "None"
-    },
-    {
-      "key": "cpp.vocation.id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sorcerer",
-      "pl": "Czarnoksiężnik",
-      "lang": "Sorcerer"
-    },
-    {
-      "key": "cpp.vocation.id_3",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Paladin",
-      "pl": "Paladyn",
-      "lang": "Paladin"
-    },
-    {
-      "key": "cpp.vocation.id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knight",
-      "pl": "Rycerz",
-      "lang": "Knight"
-    },
-    {
-      "key": "cpp.weapon.ammunition",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ammunition",
-      "pl": "amunicja",
-      "lang": "ammunition"
-    },
-    {
-      "key": "cpp.weapon.axe",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
     },
     {
       "key": "cpp.weapon.club",
@@ -406,15 +288,6 @@
       "lang": "club"
     },
     {
-      "key": "cpp.weapon.distance",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "distance",
-      "pl": "Dystans",
-      "lang": "distance"
-    },
-    {
       "key": "cpp.weapon.missile",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -422,24 +295,6 @@
       "en": "missile",
       "pl": "pocisk",
       "lang": "missile"
-    },
-    {
-      "key": "cpp.weapon.sword",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sword",
-      "pl": "Miecz",
-      "lang": "sword"
-    },
-    {
-      "key": "cpp.weapon.wand",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "wand",
-      "pl": "różdżka",
-      "lang": "wand"
     },
     {
       "key": "item.10.name",
@@ -460,141 +315,6 @@
       "lang": "stacke"
     },
     {
-      "key": "item.27511.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's black",
-      "pl": "Jest czarny",
-      "lang": "It's black"
-    },
-    {
-      "key": "item.30215.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30218.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30273.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.3274.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
-    },
-    {
-      "key": "item.7107.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.7740.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.800.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.9083.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sweetness",
-      "pl": "Słodycz",
-      "lang": "Sweetness"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
-    },
-    {
-      "key": "module.init.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja = ",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tToDo = ",
-      "pl": "Do zrobienia = ",
-      "lang": "\tToDo = "
-    },
-    {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja = ",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
-    },
-    {
       "key": "monster.troll.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -611,15 +331,6 @@
       "en": "Ghoul",
       "pl": "Wampir",
       "lang": "Ghoul"
-    },
-    {
-      "key": "monster.hunter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
     },
     {
       "key": "monster.behemoth.name",
@@ -640,15 +351,6 @@
       "lang": "Bssssss"
     },
     {
-      "key": "monster.old_pig.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
-    },
-    {
       "key": "monster.old_pig.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -658,15 +360,6 @@
       "lang": "Oink"
     },
     {
-      "key": "monster.old_wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
       "key": "monster.old_bear.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -674,24 +367,6 @@
       "en": "Grrrr",
       "pl": "Wrrrr",
       "lang": "Grrrr"
-    },
-    {
-      "key": "monster.old_bear.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.weeper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
     },
     {
       "key": "monster.eternal_guardian.voice_1",
@@ -748,15 +423,6 @@
       "lang": "*frzzp*"
     },
     {
-      "key": "monster.magma_crawler.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crrroak!",
-      "pl": "Crrrroak!",
-      "lang": "Crrroak!"
-    },
-    {
       "key": "monster.ice_golem.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -764,24 +430,6 @@
       "en": "Chrrr.",
       "pl": "Chrr.",
       "lang": "Chrrr."
-    },
-    {
-      "key": "monster.ice_golem.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crrrrk.",
-      "pl": "Crrr.",
-      "lang": "Crrrrk."
-    },
-    {
-      "key": "monster.infected_weeper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
     },
     {
       "key": "monster.lava_golem.voice_1",
@@ -809,51 +457,6 @@
       "en": "Broar!",
       "pl": "Bracie!",
       "lang": "Broar!"
-    },
-    {
-      "key": "monster.lost_basher.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yhouuuu!",
-      "pl": "Uuuuu!",
-      "lang": "Yhouuuu!"
-    },
-    {
-      "key": "monster.mooh'tah_warrior.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ommm!",
-      "pl": "Omm!",
-      "lang": "Ommm!"
-    },
-    {
-      "key": "monster.troll.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr",
-      "pl": "Wrr",
-      "lang": "Grrr"
-    },
-    {
-      "key": "monster.troll.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.island_troll.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -3430,6 +3033,15 @@
       "lang": "TIC"
     },
     {
+      "key": "quests.soul_war.megalomania_report",
+      "category": "quests",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have defeated Goshnar's Megalomania. Report the 'task' to Flickering Soul and earn your outfit.",
+      "pl": "Pokonałeś megalomanię Goshnara. Zgłoś 'task' do Flickering Soul i zdobądź swój strój.",
+      "lang": "You have defeated Goshnar's Megalomania. Report the 'task' to Flickering Soul and earn your outfit."
+    },
+    {
       "key": "raid.lions.name",
       "category": "raids",
       "type": "pl_reference_missing_translation",
@@ -3556,15 +3168,6 @@
       "lang": "Undead"
     },
     {
-      "key": "raid.hunter.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
-    },
-    {
       "key": "raid.goblins.name",
       "category": "raids",
       "type": "pl_reference_missing_translation",
@@ -3608,15 +3211,6 @@
       "en": "CLICK",
       "pl": "TRZASK",
       "lang": "CLICK"
-    },
-    {
-      "key": "scripts.actions_brain.msg_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<brzzl> <frzzp> <fsssh>",
-      "pl": "<bzzzt> <frzzp> <fsssh>",
-      "lang": "<brzzl> <frzzp> <fsssh>"
     },
     {
       "key": "scripts.actions_lever_barrel.say_2",
@@ -3734,6 +3328,429 @@
       "en": "*zap!*",
       "pl": "*zastrzelić!*",
       "lang": "*zap!*"
+    },
+    {
+      "key": "scripts.decay_to.voice_23443",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grooaarr!",
+      "pl": "Grooarr!",
+      "lang": "Grooaarr!"
+    },
+    {
+      "key": "scripts.demonic_candy_ball.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.dolls.12043_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.12043_3",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail %s!",
+      "pl": "Witaj %s!",
+      "lang": "Hail %s!"
+    },
+    {
+      "key": "scripts.dolls.12904_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Have fun!",
+      "pl": "Baw się dobrze!",
+      "lang": "Have fun!"
+    },
+    {
+      "key": "scripts.dolls.14764_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.18343_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.21947_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.21947_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purrrrrrr!",
+      "pl": "Mrrrrrrr!",
+      "lang": "Purrrrrrr!"
+    },
+    {
+      "key": "scripts.dolls.5080_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hug me!",
+      "pl": "Przytul mnie!",
+      "lang": "Hug me!"
+    },
+    {
+      "key": "scripts.dolls.6566_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zchhhhhh!",
+      "pl": "Chhhhhh!",
+      "lang": "Zchhhhhh!"
+    },
+    {
+      "key": "scripts.dolls.8154_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.8154_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So cold.",
+      "pl": "Tak zimno.",
+      "lang": "So cold."
+    },
+    {
+      "key": "scripts.dolls.9144_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hauopa!",
+      "pl": "Haupa!",
+      "lang": "Hauopa!"
+    },
+    {
+      "key": "scripts.dolls.9144_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yala Boom",
+      "pl": "Yala Bum",
+      "lang": "Yala Boom"
+    },
+    {
+      "key": "scripts.fibula.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.filled_jalapeno_peppers.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Munch.",
+      "pl": "Przeżuwać.",
+      "lang": "Munch."
+    },
+    {
+      "key": "scripts.find_fiend.level_easy",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Easy",
+      "pl": "Łatwo",
+      "lang": "Easy"
+    },
+    {
+      "key": "scripts.find_fiend.level_hard",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hard",
+      "pl": "Twardy",
+      "lang": "Hard"
+    },
+    {
+      "key": "scripts.find_fiend.level_harmless",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Harmless",
+      "pl": "Nieszkodliwy",
+      "lang": "Harmless"
+    },
+    {
+      "key": "scripts.find_fiend.level_medium",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Medium",
+      "pl": "Średni",
+      "lang": "Medium"
+    },
+    {
+      "key": "scripts.find_fiend.level_trivial",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Trivial",
+      "pl": "Nie znaczący, banalny",
+      "lang": "Trivial"
+    },
+    {
+      "key": "scripts.find_person.dir_northeast",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north-east",
+      "pl": "północ-wschód",
+      "lang": "north-east"
+    },
+    {
+      "key": "scripts.find_person.dir_northwest",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north-west",
+      "pl": "północ-zachód",
+      "lang": "north-west"
+    },
+    {
+      "key": "scripts.find_person.dir_southeast",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south-east",
+      "pl": "południe-wschód",
+      "lang": "south-east"
+    },
+    {
+      "key": "scripts.find_person.dir_southwest",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south-west",
+      "pl": "południe-zachód",
+      "lang": "south-west"
+    },
+    {
+      "key": "scripts.fluids.gulp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gulp.",
+      "pl": "Łyk.",
+      "lang": "Gulp."
+    },
+    {
+      "key": "scripts.fluids.msg_3",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Urgh!",
+      "pl": "Ugh!",
+      "lang": "Urgh!"
+    },
+    {
+      "key": "scripts.fluids.msg_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Aaaah...",
+      "pl": "Aaaa...",
+      "lang": "Aaaah..."
+    },
+    {
+      "key": "scripts.fluids.msg_5",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmh.",
+      "pl": "Mmm.",
+      "lang": "Mmmh."
+    },
+    {
+      "key": "scripts.foods.sound_burp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Burp.",
+      "pl": "Beknięcie.",
+      "lang": "Burp."
+    },
+    {
+      "key": "scripts.foods.sound_chomp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.foods.sound_crunch",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunch.",
+      "pl": "Schrupać.",
+      "lang": "Crunch."
+    },
+    {
+      "key": "scripts.foods.sound_gulp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gulp.",
+      "pl": "Łyk.",
+      "lang": "Gulp."
+    },
+    {
+      "key": "scripts.foods.sound_hum",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hum.",
+      "pl": "Szum.",
+      "lang": "Hum."
+    },
+    {
+      "key": "scripts.foods.sound_mmmm",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.foods.sound_munch",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Munch.",
+      "pl": "Przeżuwać.",
+      "lang": "Munch."
+    },
+    {
+      "key": "scripts.foods.sound_phew",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Phew!",
+      "pl": "Uff!",
+      "lang": "Phew!"
+    },
+    {
+      "key": "scripts.foods.sound_slurp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp.",
+      "pl": "Siorbać.",
+      "lang": "Slurp."
+    },
+    {
+      "key": "scripts.foods.sound_smack",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.foods.sound_urgh",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Urgh.",
+      "pl": "Ugh.",
+      "lang": "Urgh."
+    },
+    {
+      "key": "scripts.foods.sound_yum",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yum.",
+      "pl": "Mniam.",
+      "lang": "Yum."
+    },
+    {
+      "key": "scripts.gaz'haragoth_iceball.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chill out!",
+      "pl": "Wyluzuj!",
+      "lang": "Chill out!"
+    },
+    {
+      "key": "scripts.hireling_foods.sound_blurg",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blurg.",
+      "pl": "Rozmycie.",
+      "lang": "Blurg."
+    },
+    {
+      "key": "scripts.hireling_foods.sound_chomp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.hireling_foods.sound_munch",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Munch.",
+      "pl": "Przeżuwać.",
+      "lang": "Munch."
+    },
+    {
+      "key": "scripts.hireling_foods.sound_yummm",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yummm.",
+      "pl": "Mniam.",
+      "lang": "Yummm."
     }
   ],
   "length_ratio_issues": [
@@ -3781,6 +3798,15 @@
       "en_len": 9,
       "lang_ratio": 1.111,
       "pl_ratio": 3.556
+    },
+    {
+      "key": "cpp.weapon.wand",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 4.0,
+      "pl_ratio": 1.75
     },
     {
       "key": "item.11209.name",
@@ -3902,8 +3928,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 46,
-    "skipped": 34,
+    "applied": 12,
+    "skipped": 68,
     "errors": 0
   }
 }

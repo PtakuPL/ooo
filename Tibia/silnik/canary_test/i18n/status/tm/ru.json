@@ -33862,5 +33862,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:58:48.699880Z"
+  },
+  "client.updater.text1": {
+    "src_hash": "8b13a090de6c7d6b7363b7c75fef2bb0",
+    "text": "данные/вещи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:33.416291Z"
+  },
+  "client.updater.text2": {
+    "src_hash": "8b13a090de6c7d6b7363b7c75fef2bb0",
+    "text": "данные/вещи",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:38.386921Z"
+  },
+  "client.updater.text3": {
+    "src_hash": "62a88f6e2ba35dd7ebd826a930527245",
+    "text": "Ошибка программы обновления",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:38.387206Z"
+  },
+  "client.tasks.text4": {
+    "src_hash": "0d3a4946f6dad8ce0a07abe8837ba269",
+    "text": "Вы действительно хотите прервать выполнение этой задачи?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:38.387627Z"
+  },
+  "client.http.text1": {
+    "src_hash": "0e3c1d553071f45ae73c51aa46fc11d8",
+    "text": "Мозилла/5.0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:38.387871Z"
   }
 }

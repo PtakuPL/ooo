@@ -1,16 +1,32 @@
 {
-  "timestamp": "2026-02-17T07:10:21.218356Z",
+  "timestamp": "2026-02-17T07:15:44.471491Z",
   "checked_entries": 100,
-  "issues_found": 0,
+  "issues_found": 2,
   "issues_by_type": {
     "identical_to_en_exempt": 3,
-    "suspicious_log_high": 152,
-    "suspicious_log_critical": 44,
-    "suspicious_log_low": 4,
-    "suspicious_rejected_critical": 181,
-    "suspicious_rejected_high": 19
+    "identical_to_en": 2,
+    "suspicious_log_high": 176,
+    "suspicious_log_critical": 17,
+    "suspicious_log_low": 7,
+    "suspicious_rejected_critical": 169,
+    "suspicious_rejected_high": 31
   },
-  "issues": [],
+  "issues": [
+    {
+      "key": "client.game_shop.text1",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "GameShopLogin",
+      "translated": "GameShopLogin"
+    },
+    {
+      "key": "client.game_shop.text2",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "GameShopExtended",
+      "translated": "GameShopExtended"
+    }
+  ],
   "threshold": 10,
   "slow_mode": false
 }

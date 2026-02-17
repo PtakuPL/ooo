@@ -55966,5 +55966,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:01:28.029486Z"
+  },
+  "book.otbm.do_not_drink_green_or": {
+    "src_hash": "5a227673307ee555195f2f7a967b11f0",
+    "text": "Non bere liquidi verdi o gialli!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:48.514396Z"
+  },
+  "book.otbm.do_not_enter_without_permission": {
+    "src_hash": "c9a82e883290bbe0ee4cd298af5ca563",
+    "text": "non entrare senza permesso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:48.514835Z"
+  },
+  "book.otbm.do_nott_wentt_down_or": {
+    "src_hash": "2a76e8ca6868ab73c889a0e295a18a40",
+    "text": "Non scendere e non riposare in pace",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:48.515281Z"
+  },
+  "book.otbm.dont_feed_the_male_scum": {
+    "src_hash": "a9e0470991d9e1bfd40fc797b8db9564",
+    "text": "Non dare da mangiare alla feccia maschile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:48.515705Z"
+  },
+  "book.otbm.dont_forget_to_learn_our": {
+    "src_hash": "eb78100158cb24b5ce30329c08b2c145",
+    "text": "Non dimenticare di imparare i nostri incantesimi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:54.402448Z"
+  },
+  "book.otbm.dont_leave_the_protection_of": {
+    "src_hash": "a68e477663e14ed0cf18fe03dc0b5a3e",
+    "text": "Non abbandonare la protezione del villaggio troppo presto. Per prima cosa prova a procurarti un'attrezzatura migliore. Acquista l'attrezzatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:54.403144Z"
+  },
+  "book.otbm.dont_shoot_or_throw_at": {
+    "src_hash": "a987dc1d78c05c29c53b659ee162a813",
+    "text": "Non sparare o lanciare contro gli artisti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:54.403640Z"
+  },
+  "book.otbm.dont_steal_from_the_game": {
+    "src_hash": "40dbdc0e97566e571cff5bec01a2f739",
+    "text": "Non rubare dalle sale giochi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:54.404062Z"
+  },
+  "book.otbm.dont_steal_from_the_game_40dbdc0e": {
+    "src_hash": "40dbdc0e97566e571cff5bec01a2f739",
+    "text": "Non rubare dalle sale giochi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:13:54.404519Z"
+  },
+  "book.otbm.dont_touch_the_machines_and": {
+    "src_hash": "3d39d8fbf0e0b307bf1cc776cad8a0d1",
+    "text": "Non toccare le macchine e fai attenzione ai golem lavoratori incontrollati!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:00.838459Z"
+  },
+  "book.otbm.dragon_the_immortal_species": {
+    "src_hash": "6210cff85588aa0d96f3ef2ed4f64868",
+    "text": "Drago - La specie immortale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:00.838949Z"
+  },
+  "book.otbm.dragons_and_other_monsters_yet": {
+    "src_hash": "eb9c2c7593d007d08d0e395526eada46",
+    "text": "draghi e altri mostri ancora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:00.839374Z"
+  },
+  "book.otbm.dragons_orcs_and_their_unholy": {
+    "src_hash": "ad8e69f3973f15ee7cb92ae82c2e38ee",
+    "text": "draghi, orchi e anche i loro empi servitori, e Banor era un leader glorioso per l'umanità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:00.840103Z"
+  },
+  "book.otbm.dren_lo_explorer_hero_and": {
+    "src_hash": "6211f7e8cbeaa7270f35e7b00f0579d7",
+    "text": "Dren Lo, esploratore, eroe e generale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:00.840552Z"
+  },
+  "book.otbm.dress_for_success_tailor_shop": {
+    "src_hash": "7cbb538ebe307434928e7fedcbd571b7",
+    "text": "Vestirsi per il successo - Sartoria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:07.251176Z"
+  },
+  "book.otbm.dress_for_success_tailor_shop_7cbb538e": {
+    "src_hash": "7cbb538ebe307434928e7fedcbd571b7",
+    "text": "Vestirsi per il successo - Sartoria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:07.251516Z"
+  },
+  "book.otbm.dwelling_of_the_forgotten": {
+    "src_hash": "40042aa215a5289976cafe8271764a43",
+    "text": "Dimora dei dimenticati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:07.251882Z"
+  },
+  "book.otbm.eastern_city_entrance_use_door": {
+    "src_hash": "6e73e8dfbb452509738638f140710419",
+    "text": "Ingresso della città orientale: usa la porta. Sito di produzione centrale: utilizzare la scala.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:07.252416Z"
+  },
+  "book.otbm.eggs_cheese_cookies_rolls_meat": {
+    "src_hash": "c4432b15c13c825c60a3f621fb653445",
+    "text": "uova, formaggio, biscotti, panini, carne, salmone, arance, uva, meloni, banane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:07.252884Z"
+  },
+  "book.otbm.elemental_shrines_and_training_grounds": {
+    "src_hash": "4ce61515b1a6e52ca35ea4cd57e79e20",
+    "text": "Santuari elementali e campi di addestramento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:15.451462Z"
+  },
+  "book.otbm.elements_of_tibia_and_their": {
+    "src_hash": "01e3d3f3997d6df74b4b87eea648f0d5",
+    "text": "Elementi di Tibia e loro ordine alchemico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:15.451972Z"
+  },
+  "book.otbm.elite_came_back_alive_if": {
+    "src_hash": "7d1b34b22fa4fd7be4f2c4916f88e81b",
+    "text": "l'élite è tornata viva, se non sei uno specialista altamente qualificato e provi ad andarci da solo, probabilmente cesserai di esserlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:15.452571Z"
+  },
+  "book.otbm.embalming_fluid_chants_and_holy": {
+    "src_hash": "624b2b35fff1a2bed2091c32dfffa347",
+    "text": "Fluido per l'imbalsamazione, canti e preparazioni sacre necessarie per guidare lo spirito nell'aldilà e preservare il suo corpo nel mondo intermedio, di Rames-Seni Osi-Atun-Ra-Heton, imbalsamatore illuminato e umile servitore del Signore dei Sette Mari Sabbiosi, possa il suo spirito governare nell'aldilà per sempre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:15.453589Z"
+  },
+  "book.otbm.employed_already_the_armies_of": {
+    "src_hash": "9ca139c429009e3d72e2d25f674a7129",
+    "text": "impiegato. Già gli eserciti delle razze più antiche si preparavano a riconquistare agli umani ciò che gli antichi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:15.454214Z"
+  },
+  "book.otbm.enter_at_your_own_risk": {
+    "src_hash": "8546b8167bbc43b7119bc4987cd96e04",
+    "text": "Entra a tuo rischio e pericolo e non impreparato!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:20.375168Z"
+  },
+  "book.otbm.enter_contaminated_areas_at_own": {
+    "src_hash": "a3a29303475cd29455952a9594ebd4cf",
+    "text": "Entrare nelle aree contaminate a proprio rischio e con indumenti protettivi adeguati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:20.375622Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Entra nell'antica fiamma blu della cittadinanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:20.375975Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame_7ef32bcd": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Entra nell'antica fiamma blu della cittadinanza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:20.376316Z"
+  },
+  "book.otbm.enter_the_teleporter_flame_to": {
+    "src_hash": "a196942253408fca1b7e59255eef2d10",
+    "text": "Entra nella fiamma del teletrasporto per diventare un cittadino di Roshamuul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:20.376955Z"
   }
 }

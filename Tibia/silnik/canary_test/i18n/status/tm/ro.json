@@ -50094,5 +50094,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:03:02.207592Z"
+  },
+  "client.house.text5": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:47.612749Z"
+  },
+  "client.character.text1": {
+    "src_hash": "a956161a69928cd130a889b88082fb6e",
+    "text": "caracter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:47.615600Z"
+  },
+  "client.bosstiary.text1": {
+    "src_hash": "5b949a092bf0fd9fa569a1a0edb6ae67",
+    "text": "bostiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:47.617079Z"
+  },
+  "client.neededtranslations.text3": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista articolelor pe care le puteți cumpăra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:47.622367Z"
+  },
+  "client.neededtranslations.text4": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista articolelor pe care le puteți vinde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:47.622913Z"
+  },
+  "client.house.text4": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:51.563372Z"
+  },
+  "client.charms1410.text1": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Ecouri de farmec minor\nCâștigat prin deblocarea sau îmbunătățirea farmecului major și promovarea personajului tău",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:51.563920Z"
+  },
+  "client.charms.text1": {
+    "src_hash": "07a184bb02b61bf7a64c9a5731b2dc50",
+    "text": "Infirmă creatura și o paralizează timp de 10 secunde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:51.564309Z"
+  },
+  "client.charms.text2": {
+    "src_hash": "b6af098ba1c6eec1f80bc951a947903c",
+    "text": "Reflectă daunele primite înapoi asupra agresorului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:51.564699Z"
+  },
+  "client.charms.text3": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "Evită un atac cu șansă, evitând toate daunele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:58.056299Z"
+  },
+  "client.charms.text4": {
+    "src_hash": "af9e27729d520ea66c0959bc6b37ba24",
+    "text": "Explozie de adrenalină",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:58.056612Z"
+  },
+  "client.charms.text5": {
+    "src_hash": "7107d1a06e5b3ecbc45b989889d6fe9b",
+    "text": "Mărește viteza de mișcare timp de 10 secunde după ce ați fost lovit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:58.057028Z"
+  },
+  "client.boss_slots.text2": {
+    "src_hash": "7bdde1c498bb79c6c89f1e43be21f34e",
+    "text": "RightBase",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:58.057227Z"
+  },
+  "client.map.text1": {
+    "src_hash": "6ca9e6141ede519f05c9fadeb4fe4262",
+    "text": "Miniharta nu a putut fi încărcată, lipsește fișierul?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:14:58.057621Z"
+  },
+  "client.map.text2": {
+    "src_hash": "b8cc006cff8573003ffd0253bc55e261",
+    "text": "MarkListItem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:05.905526Z"
+  },
+  "client.character.text2": {
+    "src_hash": "5913efb942586b6d6e80fcdc82566497",
+    "text": "Tu inspectezi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:05.905820Z"
+  },
+  "client.character.text3": {
+    "src_hash": "1aa08665a4e52f93858ae18cda4252da",
+    "text": "InventoryItemCyclopedia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:05.906323Z"
+  },
+  "client.character.text4": {
+    "src_hash": "081ce6f4b6055253238c7b07e6447918",
+    "text": "Arată ținute din magazin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:05.906649Z"
+  },
+  "client.bestiary.text1": {
+    "src_hash": "19e4c49fe8dfeba41d77d57a32cbc5f3",
+    "text": "BestiaryItemGroup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:05.907024Z"
+  },
+  "client.terminal.text1": {
+    "src_hash": "737539b89a0e6696ce9b9066be76bf46",
+    "text": "Comutați terminalul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:11.040911Z"
+  },
+  "client.terminal.text2": {
+    "src_hash": "737539b89a0e6696ce9b9066be76bf46",
+    "text": "Comutați terminalul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:11.041162Z"
+  },
+  "client.terminal.text3": {
+    "src_hash": "737539b89a0e6696ce9b9066be76bf46",
+    "text": "Comutați terminalul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:11.041417Z"
+  },
+  "client.attachedeffects.text1": {
+    "src_hash": "292395b28a9118bc861d399ebfde63c7",
+    "text": "efect de creatură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:11.041640Z"
+  },
+  "client.imbuementtracker.text1": {
+    "src_hash": "0527872062bbbee05c352b8eb9ea2933",
+    "text": "ImbuementTracker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:11.041880Z"
+  },
+  "client.mounts.text1": {
+    "src_hash": "c95bd589378a239cbf6f80a7e9cfb55a",
+    "text": "data/XML/mounts.xml",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:18.268414Z"
+  },
+  "client.mounts.text2": {
+    "src_hash": "1f4f947d6824f23e7d267f986aef7543",
+    "text": "Eroare la deschiderea fișierului:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:18.268738Z"
+  },
+  "client.json.text1": {
+    "src_hash": "0cbbe71339938f822c980a2beec9d016",
+    "text": "referință circulară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:18.269456Z"
+  },
+  "client.json.text2": {
+    "src_hash": "2fd6ad77a81360641e1b59f93b9c2dc0",
+    "text": "tabel nevalid: tipuri de chei mixte sau nevalide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:18.269781Z"
+  },
+  "client.json.text3": {
+    "src_hash": "610743b8ad891aba2d86dcdb74935d2b",
+    "text": "tabel nevalid: matrice rară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:24.796266Z"
+  },
+  "client.json.text4": {
+    "src_hash": "2fd6ad77a81360641e1b59f93b9c2dc0",
+    "text": "tabel nevalid: tipuri de chei mixte sau nevalide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:24.796624Z"
+  },
+  "client.game_shop.text1": {
+    "src_hash": "8d7fc8bc0bf68b77630d5a48da3e2547",
+    "text": "GameShopLogin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:24.796848Z"
+  },
+  "client.game_shop.text2": {
+    "src_hash": "840b76b173332030cf4c82994fba10c9",
+    "text": "GameShopExtended",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:24.797094Z"
+  },
+  "client.game_shop.text3": {
+    "src_hash": "70e9fac741af644fd3e5360831053f82",
+    "text": "Restaurează punctele de hit ale personajului tău.\n\n- utilizabil numai prin cumpărarea caracterului\n- va fi trimis la rucsac\n- nu poate fi achiziționat de personaje cu bloc de zonă de protecție sau semn de luptă\n- nu pot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:24.797930Z"
+  },
+  "client.game_shop.text4": {
+    "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+    "text": "Reumple mana personajului tău.\n\n- utilizabil numai prin cumpărarea caracterului\n- va fi trimis la rucsac\n- nu poate fi achiziționat de personaje cu bloc de zonă de protecție sau semn de luptă\n- nu poate fi pur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:31.544208Z"
+  },
+  "client.market.text1": {
+    "src_hash": "a093ba71fca8d183ec3f80712722223f",
+    "text": "opțiunea și adaugă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:31.545276Z"
+  },
+  "client.market.text2": {
+    "src_hash": "5954d0da4aad8145900a38481505f95c",
+    "text": "Sold: <valoare> aur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:31.545540Z"
+  },
+  "client.market.text3": {
+    "src_hash": "73bb06ddb4b14370331dafb66b6d2dfa",
+    "text": "Rezervat pentru mai multe funcționalități ulterior",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:31.545893Z"
+  },
+  "client.bottommenu.text1": {
+    "src_hash": "0038f646ebb40256e69aae1e314fe06e",
+    "text": "imagini/hint aleatoriu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:38.484036Z"
+  },
+  "client.bottommenu.text3": {
+    "src_hash": "016822ab6c3d1b333948fa31e50ed58a",
+    "text": "imaginea etichetei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:38.484385Z"
+  },
+  "client.bottommenu.text4": {
+    "src_hash": "36d2572a331bfb5f5a5f20a870128780",
+    "text": ", descriere =",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:38.484633Z"
+  },
+  "client.bottommenu.text5": {
+    "src_hash": "57cac65371fa5e2db2a82019609b5c08",
+    "text": "imagini/pictogramă-semn de întrebare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:38.484933Z"
+  },
+  "client.updater.text1": {
+    "src_hash": "8b13a090de6c7d6b7363b7c75fef2bb0",
+    "text": "date/lucruri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:42.472545Z"
+  },
+  "client.updater.text2": {
+    "src_hash": "8b13a090de6c7d6b7363b7c75fef2bb0",
+    "text": "date/lucruri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:42.472753Z"
+  },
+  "client.updater.text3": {
+    "src_hash": "62a88f6e2ba35dd7ebd826a930527245",
+    "text": "Eroare de actualizare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:42.472963Z"
+  },
+  "client.game_stash.text1": {
+    "src_hash": "8524de963f07201e5c086830d370797f",
+    "text": "Încărcare...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:15:42.473162Z"
   }
 }

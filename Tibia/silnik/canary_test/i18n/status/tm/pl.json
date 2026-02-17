@@ -106054,5 +106054,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:39:06.175573Z"
+  },
+  "cpp.skill.life_leech": {
+    "src_hash": "97fc5964d16b23bd6957af679027ecb7",
+    "text": "Życie Lecha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:51.854948Z"
+  },
+  "cpp.skill.life_leech_chance": {
+    "src_hash": "69968e2833a3b05acc974aaaf87b080c",
+    "text": "Szansa na Pijawkę Życiową",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:51.856063Z"
+  },
+  "cpp.player.blessing_name_2": {
+    "src_hash": "687b5a49f73970153a885a1088a400ac",
+    "text": "Mądrość samotności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:55.299128Z"
+  },
+  "cpp.player.blessing_name_3": {
+    "src_hash": "0ef92f9d3153748682152d49961b0915",
+    "text": "Iskra Feniksa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:43:55.299389Z"
+  },
+  "cpp.player.blessing_name_4": {
+    "src_hash": "f2b09c5da6f73788ea6412bd2eb45b61",
+    "text": "Ogień Słońc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:02.070608Z"
+  },
+  "cpp.player.blessing_name_5": {
+    "src_hash": "e88c97a290c383c53bfe7ed34ad6e92b",
+    "text": "Duchowa osłona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:02.070878Z"
+  },
+  "cpp.player.blessing_name_6": {
+    "src_hash": "22013741b2d5206839f1a6d45345f138",
+    "text": "Uścisk Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:02.071298Z"
+  },
+  "cpp.player.corpse_killed_by": {
+    "src_hash": "bf770744ba1f0a60f4b1a92463e810d2",
+    "text": "{0} {1} zabity przez {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:02.071659Z"
+  },
+  "cpp.player.corpse_no_attackers": {
+    "src_hash": "8f2a859c12a509eff15986695d574638",
+    "text": "Nie zidentyfikowano żadnych napastników.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:08.682043Z"
+  },
+  "cpp.player.death_exp_lost": {
+    "src_hash": "f140855333c8b1f1553d64c1c4f4b871",
+    "text": "Straciłeś {0} doświadczenie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:08.682449Z"
+  },
+  "cpp.player.exp_gained": {
+    "src_hash": "859112e38cc40dc10f1f8710a5af67b1",
+    "text": "Zyskałeś {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:08.682684Z"
+  },
+  "cpp.player.exp_gained_other": {
+    "src_hash": "4910068bf48458d6fdb89df50d9aed92",
+    "text": "{0} zyskał {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:08.682918Z"
+  },
+  "cpp.player.exp_lost": {
+    "src_hash": "0ed4ff2d54c26acc0a0ad36a989fbf86",
+    "text": "Straciłeś {0} punkt doświadczenia{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:08.683288Z"
+  },
+  "cpp.player.exp_lost_other": {
+    "src_hash": "938543d6b235bfd802c79b200450fa8e",
+    "text": "{0} utracone {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:15.744643Z"
+  },
+  "cpp.player.exp_lost_points_one": {
+    "src_hash": "ee39a7872dfb5c6040d8c5d3cb431fce",
+    "text": "Straciłeś {0} punktów doświadczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:15.744994Z"
+  },
+  "cpp.player.exp_lost_points_other": {
+    "src_hash": "0a06b67a9f360b7bfc1e050578e0c9d5",
+    "text": "Straciłeś {0} punktów doświadczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:15.745315Z"
+  },
+  "cpp.player.exp_points_one": {
+    "src_hash": "c6baa07615cd066bebcf9cfbbabde5e9",
+    "text": "{0} punkt doświadczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:15.745590Z"
+  },
+  "cpp.player.exp_points_other": {
+    "src_hash": "7b08c741db507bf3e9eca22a1d778625",
+    "text": "{0} punktów doświadczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:15.745932Z"
+  },
+  "cpp.player.hunting_task_complete": {
+    "src_hash": "cda199ef19659c6d6764c589ae9503b8",
+    "text": "Pomyślnie ukończyłeś zadanie polowania. Twoja nagroda jest gotowa do odbioru!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:22.194035Z"
+  },
+  "cpp.player.idle_kick_warning": {
+    "src_hash": "3751cc9595187066c36d9feeafcbeb09",
+    "text": "Nie było żadnych zmian w Twoim zachowaniu przez {0} minut. Jeśli do tego czasu nie zmienisz swoich działań, zostaniesz rozłączony za minutę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:22.194736Z"
+  },
+  "cpp.player.imbuement_already_applied": {
+    "src_hash": "eef0c800c9541f3b88995b9c4527befd",
+    "text": "To nasycenie zostało już zastosowane do tego przedmiotu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:22.195120Z"
+  },
+  "cpp.player.imbuement_duplicate_slot": {
+    "src_hash": "21c1e8c36804a20238455f56a0a3d80d",
+    "text": "Nie można zastosować tego samego nasycenia w wielu gniazdach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:22.195541Z"
+  },
+  "cpp.player.imbuement_failed": {
+    "src_hash": "8833ed8a8ef86b9758311d2914c0fe0c",
+    "text": "O nie!\n\nNasycenie nie powiodło się. Straciłeś źródła astralne i złoto potrzebne do nasycenia.\n\nNastępnym razem użyj zaklęcia ochronnego, aby zwiększyć swoje szanse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:22.196234Z"
+  },
+  "cpp.player.look.guild_members_many": {
+    "src_hash": "7068df894224ca100b2f5426bcff57fe",
+    "text": ", który ma {0} członków, z czego {1} online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:28.699371Z"
+  },
+  "cpp.player.look.guild_members_one": {
+    "src_hash": "6fb3b5b5a7ae5eed4e31d3c8c7b72042",
+    "text": ", która ma 1 członka, z czego {0} jest online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:28.699755Z"
+  },
+  "cpp.player.look.guild_rank_of": {
+    "src_hash": "4cd519ffdfb64bce745febea34e4a47d",
+    "text": "{0} z {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:28.700036Z"
+  },
+  "cpp.player.look.party_invite_many": {
+    "src_hash": "de5f90c600433e2cc6d4d6a245bbe462",
+    "text": "{0} oczekujące zaproszenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:28.700324Z"
+  },
+  "cpp.player.look.party_invite_one": {
+    "src_hash": "f758119e310a8c8c2ef10c3873e4a26b",
+    "text": "1 oczekujące zaproszenie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:28.700585Z"
+  },
+  "cpp.player.look.party_member_many": {
+    "src_hash": "b19e8cb508652c7d3f3fecacd0e0f034",
+    "text": "{0} członków i",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:35.804649Z"
+  },
+  "cpp.player.look.party_member_one": {
+    "src_hash": "d4d11f5c880138c02e18676c44d80d75",
+    "text": "1 członek i",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:35.804885Z"
+  },
+  "cpp.player.lost_all_blessings": {
+    "src_hash": "ebcead0c2897065643978f88e6074999",
+    "text": "Straciłeś wszystkie swoje błogosławieństwa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:35.805212Z"
+  },
+  "cpp.player.magic_level_advance": {
+    "src_hash": "c706671215d82f99b1f79126a4747c19",
+    "text": "Awansowałeś na poziom magiczny {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:35.805534Z"
+  },
+  "cpp.player.still_blessed_with": {
+    "src_hash": "483246b1a51387b19fe399daa761f5fc",
+    "text": "Nadal jesteś błogosławiony {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:35.805845Z"
+  },
+  "cpp.player.using_from_stash": {
+    "src_hash": "443b383ba87e84e3cd8b3f76aa0e6bbd",
+    "text": "Używając {0}x {1} ze swojej skrytki. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:43.145050Z"
+  },
+  "cpp.protocol.account_banned_permanent": {
+    "src_hash": "c50beb39bda2de713cf48b37a3b845a3",
+    "text": "Twoje konto zostało trwale zablokowane przez {0}.\n\nPowód określony:\n{1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:43.145498Z"
+  },
+  "cpp.protocol.account_banned_until": {
+    "src_hash": "40239c5f032255e85f737b9645ae5d66",
+    "text": "Twoje konto zostało zablokowane do {0} przez {1}.\n\nPowód określony:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:43.145935Z"
+  },
+  "cpp.protocol.active_prey_desc": {
+    "src_hash": "8d45051899aa9b191a41ac17d746c91e",
+    "text": "{0} ({1} +{2}%, pozostałe {3})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:43.146538Z"
+  },
+  "cpp.protocol.active_prey_label": {
+    "src_hash": "528d0fa86274cad4e17052f55afdd80a",
+    "text": "Aktywna ofiara {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:43.146906Z"
+  },
+  "cpp.protocol.already_connected_other_client": {
+    "src_hash": "9a4d250c6bf1404f1721849d29672a0f",
+    "text": "Jesteś już połączony przez innego klienta. Proszę używać tylko jednego klienta na raz!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:48.849714Z"
+  },
+  "cpp.protocol.char_load_failed_contact_admin": {
+    "src_hash": "df6391a3559d9fdcd1e0424e1d9145e7",
+    "text": "Nie można załadować Twojej postaci. Skontaktuj się z administratorem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:48.850231Z"
+  },
+  "cpp.protocol.enter_email": {
+    "src_hash": "2a9bd612fa1ef9cffa1033f9640fb3f8",
+    "text": "Musisz podać swój adres e-mail.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:44:48.850550Z"
   }
 }

@@ -22302,5 +22302,165 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:51:59.209479Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L16.1867": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.434231Z"
+  },
+  "data.otservbr.global.scripts.quests.hero.of.rathleton.actions.reward.L13.2162": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.435305Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L10.2180": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.436097Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L19.2182": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.436571Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L28.2184": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.436913Z"
+  },
+  "data.otservbr.global.scripts.quests.marapur.actions.boss.timira.fight.L376.2174": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.448243Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L64.2287": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Устройство читает: «Обнаружена аномальная структура мути, возможное место зондирования».",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.449253Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.calassa.comb.door.L8.1926": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.452744Z"
+  },
+  "data.otservbr.global.scripts.quests.the.annihilator.door.L5.2235": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.456805Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L108.1859": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.459896Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L141.1862": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.460474Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L71.1760": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.462252Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.rewards.L27.1771": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.465545Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.ungreez.door.L20.1772": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.466015Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.creatureevent.commander.kills.L19.1645": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Вы проиграли схватку.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.467379Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.bursting.at.the.seams.museum.actions.doors.L18.2291": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.470720Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L19.2311": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.474572Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L47.2299": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.475873Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.doors.L22.2296": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.477926Z"
+  },
+  "data.otservbr.global.scripts.quests.the.travelling.trader.actions.outlaw.camp.door.L9.2064": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:09.479071Z"
   }
 }

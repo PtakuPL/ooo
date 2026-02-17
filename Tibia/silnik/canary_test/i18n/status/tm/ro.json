@@ -25806,5 +25806,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:52:42.536501Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L138.860": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.632031Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L139.861": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.632484Z"
+  },
+  "data.otservbr.global.npc.beatrice.L87.769": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.637769Z"
+  },
+  "data.otservbr.global.npc.beatrice.L88.770": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.638182Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L185.166": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "La revedere. Cu plăcere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.665850Z"
+  },
+  "data.otservbr.global.npc.denominator.L59.153": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.668257Z"
+  },
+  "data.otservbr.global.npc.gareth.L63.1401": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Cum merge {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.686724Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L67.649": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Cum merge {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.712976Z"
+  },
+  "data.otservbr.global.npc.nielson.L101.561": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "La revedere. Cu plăcere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.744973Z"
+  },
+  "data.otservbr.global.npc.palimuth.L320.33": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.750276Z"
+  },
+  "data.otservbr.global.npc.the.empress.L78.443": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.787944Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.creaturescripts.pale.worm.death.L14.2046": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Felicitări ați primit ținuta Poltergeist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.831890Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.creatureevent.commander.kills.L19.1645": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Ai pierdut încăierarea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.870680Z"
+  },
+  "server.game.msg_1": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.885278Z"
+  },
+  "server.ioprey.msg_10": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "A apărut o eroare la procesarea acțiunii dvs. Vă rugăm să încercați să redeschideți fereastra de pradă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.887715Z"
+  },
+  "server.ioprey.msg_11": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Această creatură este deja selectată pe un alt slot.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.888184Z"
+  },
+  "server.ioprey.msg_13": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "Nu aveți niciun monstru activ pe acest slot pentru pradă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.888714Z"
+  },
+  "server.ioprey.msg_5": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Bonusul de pradă a expirat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.890229Z"
+  },
+  "server.ioprey.msg_9": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "Ai deja un monstru activ pe acest slot de pradă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.890935Z"
+  },
+  "server.spells.msg_1": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.892980Z"
+  },
+  "server.spells.msg_2": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.893322Z"
+  },
+  "src.creatures.combat.spells.L440.2421": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.893828Z"
+  },
+  "src.creatures.combat.spells.L51.2420": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.894195Z"
+  },
+  "src.game.game.L3458.2393": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:13.895811Z"
+  },
+  "data.otservbr.global.npc.angus.L633.1450": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Salutare, ce pot sa fac pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:19.029234Z"
+  },
+  "data.otservbr.global.npc.archery.L64.538": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Bun venit la magazinul Tir cu arcul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:21.608220Z"
+  },
+  "data.otservbr.global.npc.archery.L65.539": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:21.608608Z"
+  },
+  "data.otservbr.global.npc.archery.L66.540": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:21.609074Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L63.70": {
+    "src_hash": "30bc6203a67610eed6580d3e9fb8c0e0",
+    "text": "Bun venit la magazinul Tir cu arcul Rook.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:21.609711Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L64.71": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:21.610296Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L65.72": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vă rugăm să reveniți din când în când.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:24.213250Z"
+  },
+  "data.otservbr.global.npc.ariella.L161.242": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Bună.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:24.213470Z"
+  },
+  "data.otservbr.global.npc.arito.L117.1343": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Vizitați-ne din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:24.213736Z"
+  },
+  "data.otservbr.global.npc.arito.L118.1344": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Vizitați-ne din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:24.213997Z"
+  },
+  "data.otservbr.global.npc.arito.L119.1345": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Sigur, răsfoiți ofertele mele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:24.214417Z"
+  },
+  "data.otservbr.global.npc.arito.L55.1341": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Slavă Domnului că te-ai întors!! Ai gasit....hh...despre ce vorbeam??",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:27.460222Z"
+  },
+  "data.otservbr.global.npc.arito.L57.1342": {
+    "src_hash": "8b955aca575ac184956bbe28dfa7c01c",
+    "text": "Fii plâns, pelerin în trup. Fii jelit în taverna mea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:57:27.460630Z"
   }
 }

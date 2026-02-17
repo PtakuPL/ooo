@@ -58326,5 +58326,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:37:55.861596Z"
+  },
+  "data.otservbr.global.npc.corym.worker.02.L62.1558": {
+    "src_hash": "4786eaea8d52650dd4ca1e34433b9831",
+    "text": "Avem nevoie de arme pentru a ne depăși situația.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.562833Z"
+  },
+  "data.otservbr.global.npc.corym.worker.03.L65.1": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Eroul meu! Un prieten de-al meu te-a trimis să mă eliberezi? Un prieten adevărat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.563748Z"
+  },
+  "data.otservbr.global.npc.corym.worker.04.L64.507": {
+    "src_hash": "f5e3120d0b7f2781e61a2e28e0e5cd9a",
+    "text": "Fiecare om este arhitectul propriei sale averi. Vreau să văd din nou lumina zilei! Miroși doar aer proaspăt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.564643Z"
+  },
+  "data.otservbr.global.npc.corym.worker.05.L65.1451": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Eroul meu! Un prieten de-al meu te-a trimis să mă eliberezi? Un prieten adevărat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.565414Z"
+  },
+  "data.otservbr.global.npc.costello.L113.1315": {
+    "src_hash": "315117a09e2e5f339c9bb41cbdb72c84",
+    "text": "Bun venit, |PLAYERNAME|! Simțiți-vă liber să-mi spuneți ce v-a adus aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.566369Z"
+  },
+  "data.otservbr.global.npc.costello.L114.1316": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.566743Z"
+  },
+  "data.otservbr.global.npc.curos.L118.838": {
+    "src_hash": "54771d09c948feb1769bd51c9a05d4ac",
+    "text": "Fii salutat pielea goală.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.567095Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L184.165": {
+    "src_hash": "b2393ea7df0080fc59d56c719e0bbb62",
+    "text": "Fii salutat, călător |PLAYERNAME|. Bun venit pe {hut} al meu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.567583Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L88.115": {
+    "src_hash": "85ba7d2d193835a18d572bbd15c04936",
+    "text": "Binecuvântarea naturii!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.568496Z"
+  },
+  "data.otservbr.global.npc.dane.L62.1214": {
+    "src_hash": "042f38056b2f1831092b50637a9db186",
+    "text": "Bun venit în pivnița cu val, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.570377Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L251.866": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "LAUDĂ PENTRU BANOR!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.572004Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L252.867": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "LAUDĂ PENTRU BANOR!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.572846Z"
+  },
+  "data.otservbr.global.npc.dario.L64.1243": {
+    "src_hash": "21b517b3ab7a281b76460d3e51fefb7e",
+    "text": "Ashari, |PLAYERNAME|. Dacă ești un luptător la distanță, s-ar putea să vrei să arunci o privire la marfa și vrăjile mele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.574266Z"
+  },
+  "data.otservbr.global.npc.dedoras.L309.220": {
+    "src_hash": "fd3ed5a081549232786a3ce7741beddd",
+    "text": "Salutări căutătorii de cunoaștere. Se pare că ești doar persoana pentru care sunt {looking}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.575570Z"
+  },
+  "data.otservbr.global.npc.denominator.L57.152": {
+    "src_hash": "328200f8a9c7c2a9c9d051689bd862d8",
+    "text": "Introduceți răspunsuri pentru următoarele {questions}:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.577466Z"
+  },
+  "data.otservbr.global.npc.dermot.L100.1152": {
+    "src_hash": "5f84d27aa53c0c7bbd3c36c0a9842ddc",
+    "text": "Bună, călător |PLAYERNAME|. Cu ce ​​​​vă pot ajuta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.578791Z"
+  },
+  "data.otservbr.global.npc.dermot.L101.1153": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Ne vedem din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.579554Z"
+  },
+  "data.otservbr.global.npc.dermot.L102.1154": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Ne vedem din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.580135Z"
+  },
+  "data.otservbr.global.npc.dixi.L146.1518": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Da, o zi bună.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.580789Z"
+  },
+  "data.otservbr.global.npc.dixi.L147.1519": {
+    "src_hash": "885c73613d44a471d6cdeb87b1bf48c5",
+    "text": "Iată, aruncă o privire și alege ceva frumos pentru tine!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.581757Z"
+  },
+  "data.otservbr.global.npc.doctor.gnomedix.L42.1229": {
+    "src_hash": "62e334145868f2a562254cca26636c92",
+    "text": "Stai nemișcat pe platforma de examinare |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.582700Z"
+  },
+  "data.otservbr.global.npc.dorian.L232.267": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.583506Z"
+  },
+  "data.otservbr.global.npc.dorian.L233.268": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.584165Z"
+  },
+  "data.otservbr.global.npc.dorian.L234.269": {
+    "src_hash": "7153dd44b82bf473079274cf8fb08b5f",
+    "text": "Salutări, |PLAYERNAME|! De ce mă deranjezi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.585053Z"
+  },
+  "data.otservbr.global.npc.doubleday.L157.1240": {
+    "src_hash": "ad0d8c54f5ad8eace6e30a7a02db62da",
+    "text": "Bună, hmm doar... așteaptă chiar acolo, voi fi cu tine într-o secundă. Tocmai termin asta {experiment}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.586425Z"
+  },
+  "data.otservbr.global.npc.dukosch.L87.1221": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Bun venit, |PLAYERNAME|! Te simți aventuros? Vrei un {ticket} săptămânal pentru sistemul de vagoane de minereu de aici? Îl poți folosi chiar aici pentru a ajunge în centrul Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.588388Z"
+  },
+  "data.otservbr.global.npc.dukosch.L88.1222": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Sper să te revăd.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.589230Z"
+  },
+  "data.otservbr.global.npc.duncan.L184.162": {
+    "src_hash": "dd0c5a6ebb54ab7a4eb1e1fd85a5799f",
+    "text": "Bună, vino mai aproape. Aruncă o privire la marfa mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.590243Z"
+  },
+  "data.otservbr.global.npc.duria.L58.1130": {
+    "src_hash": "86ccce933c59e083001a3775642a2635",
+    "text": "Salut, tovarăș cavaler |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.591424Z"
+  },
+  "data.otservbr.global.npc.duria.L59.1131": {
+    "src_hash": "0101977b4093f837ff6276a762fba7be",
+    "text": "La revedere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.592058Z"
+  },
+  "data.otservbr.global.npc.duria.L60.1132": {
+    "src_hash": "11d751d2df754e2029e4f6214d040890",
+    "text": "Fii atent acolo, jawoll.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.593030Z"
+  },
+  "data.otservbr.global.npc.eclesius.L64.1506": {
+    "src_hash": "c098e886ff29c2d14acb4d167fdb587f",
+    "text": "Cine eşti tu? ce vrei? Pari prea experimentat pentru a deveni asistentul meu. Vă rog să plecați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.595917Z"
+  },
+  "data.otservbr.global.npc.eddy.L61.826": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Salut |PLAYERNAME|! Ai nevoie de ceva echipament pentru casa ta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.597411Z"
+  },
+  "data.otservbr.global.npc.eddy.L62.827": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Aruncă o privire. Majoritatea mobilierului vine în truse la îndemână. Folosește-le în casa ta pentru a asambla mobila. Vrei să vezi doar un anumit {type} de mobilier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.599198Z"
+  },
+  "data.otservbr.global.npc.edgar.ellen.L84.292": {
+    "src_hash": "46a3cb17a692efa2d52cc38c68e38648",
+    "text": "Lumea asta nu este nimic fără poezie, nu crezi? Ne dă speranță, ne invocă iubire. Totuși, este incitant și revigorant.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.600879Z"
+  },
+  "data.otservbr.global.npc.edgar.ellen.L85.293": {
+    "src_hash": "128c1b29a7690881dd1a8ecbfaedd038",
+    "text": "La revedere și la revedere, prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.601659Z"
+  },
+  "data.otservbr.global.npc.edowir.L61.1248": {
+    "src_hash": "0740f98b9fc488bf49d92f1690772f42",
+    "text": "Oh, salut |PLAYERNAME|! Ce drăguț din partea ta să vizitezi un bătrân ca mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.602755Z"
+  },
+  "data.otservbr.global.npc.edowir.L62.1249": {
+    "src_hash": "65fc24ac414996a095430cbce165952a",
+    "text": "Întoarce-te ori de câte ori ai nevoie de înțelepciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.603671Z"
+  },
+  "data.otservbr.global.npc.edowir.L63.1250": {
+    "src_hash": "65fc24ac414996a095430cbce165952a",
+    "text": "Întoarce-te ori de câte ori ai nevoie de înțelepciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.604546Z"
+  },
+  "data.otservbr.global.npc.edvard.L62.1320": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Aruncă o privire. Majoritatea mobilierului vine în truse la îndemână. Folosește-le în casa ta pentru a asambla mobila. Vrei să vezi doar un anumit {type} de mobilier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.606390Z"
+  },
+  "data.otservbr.global.npc.elane.L242.585": {
+    "src_hash": "8d3141687ce8d1c9fd3be03230cac91d",
+    "text": "Bun venit la breasla paladinilor, |PLAYERNAME|! Cu ce ​​​​vă pot ajuta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.609153Z"
+  },
+  "data.otservbr.global.npc.elathriel.L237.785": {
+    "src_hash": "cc6cdbefd365a6db6760f9a5eec04879",
+    "text": "Asha Thrazi, străină!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.610748Z"
+  },
+  "data.otservbr.global.npc.elathriel.L238.786": {
+    "src_hash": "cc6cdbefd365a6db6760f9a5eec04879",
+    "text": "Asha Thrazi, străină!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.611579Z"
+  },
+  "data.otservbr.global.npc.eleonore.L145.243": {
+    "src_hash": "65f937d87cd51fc2a63e02196208a9e5",
+    "text": "Fii salutat. Ce îți aduce {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.612007Z"
+  },
+  "data.otservbr.global.npc.eleonore.L147.245": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:10.612549Z"
   }
 }

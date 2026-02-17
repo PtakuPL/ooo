@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:37:55.267287Z"
+    "updated_at": "2026-02-17T09:43:23.621074Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -65126,5 +65126,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:42:38.514665Z"
+  },
+  "spell.executioners_throw.words": {
+    "src_hash": "757855743f8868ef8a59da255425e7ce",
+    "text": "exori amp kor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:44.190591Z"
+  },
+  "spell.envenom.name": {
+    "src_hash": "fc914880ff62e23794af817e54983e7d",
+    "text": "Avvelenamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:44.190843Z"
+  },
+  "spell.ignite.name": {
+    "src_hash": "b570e354b7ebc40e20029fcc7a15e5a7",
+    "text": "Accendi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:44.191022Z"
+  },
+  "spell.ultimate_terra_strike.words": {
+    "src_hash": "f753c45c9d6963be5d83007c4a841fc3",
+    "text": "exori max tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:44.191299Z"
+  },
+  "spell.mud_attack.name": {
+    "src_hash": "f6f1198ace1aebb65327bf8c03fed32b",
+    "text": "Attacco di fango",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:43:44.191511Z"
   }
 }

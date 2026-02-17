@@ -1,18 +1,39 @@
 {
-  "timestamp": "2026-02-17T01:28:40.708323Z",
+  "timestamp": "2026-02-17T01:31:07.502706Z",
   "checked_entries": 100,
   "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en_exempt": 17,
     "artifact_token": 7,
+    "identical_to_en_exempt": 10,
     "identical_to_en": 1,
-    "suspicious_log_high": 149,
-    "suspicious_log_critical": 47,
-    "suspicious_log_low": 4,
+    "suspicious_log_high": 181,
+    "suspicious_log_critical": 16,
+    "suspicious_log_low": 3,
     "suspicious_rejected_critical": 173,
     "suspicious_rejected_high": 27
   },
   "issues": [
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "spell.emberbeastarea.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "emberBeastArea",
+      "translated": "emberBeastArea"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -47,27 +68,6 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "spell.emberbeastarea.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "emberBeastArea",
-      "translated": "emberBeastArea"
     }
   ],
   "threshold": 10,

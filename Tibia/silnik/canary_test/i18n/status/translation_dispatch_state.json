@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T01:28:40.157653Z",
-  "cycle_counter": 1171,
-  "last_target_key": "pl:libs.json",
-  "last_pending_total": 1,
+  "timestamp": "2026-02-17T01:30:01.350351Z",
+  "cycle_counter": 1174,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 11348,
   "last_tier": 1,
-  "last_cat_priority": 9,
-  "candidates_count": 195,
-  "active_candidates_count": 186,
+  "last_cat_priority": 0,
+  "candidates_count": 194,
+  "active_candidates_count": 185,
   "skipped_backoff": 9,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 121,
+  "cache_cycle": 122,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -311,7 +311,7 @@
     "it:html.json": 0,
     "ru:html.json": 0,
     "ro:cpp.json": 0,
-    "es:libs.json": 0,
+    "es:libs.json": 1,
     "it:otclient_data.json": 0,
     "ru:example_merchant.json": 0,
     "ro:modules.json": 0,
@@ -326,7 +326,8 @@
     "sr:messages.json": 0,
     "sr:globalevents.json": 0,
     "ru:cpp.json": 0,
-    "ru:client.json": 0
+    "ru:client.json": 0,
+    "pl:npclib.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -379,7 +380,7 @@
     ],
     "lang_completion": {
       "pl": 45.02,
-      "es": 74.39,
+      "es": 74.4,
       "ru": 36.71,
       "ro": 21.64,
       "it": 12.75,

@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:47:31.482541Z"
+    "updated_at": "2026-02-17T01:30:15.017726Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75266,26 +75266,26 @@
   "item.12828.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
     "text": "martwy demon askarak",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T23:37:17.890208Z"
+    "updated_at": "2026-02-17T01:30:32.068306Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
     "text": "martwy demon askarak",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T23:37:17.891485Z"
+    "updated_at": "2026-02-17T01:30:32.068743Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
     "text": "martwy demon askarak",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T23:37:17.892617Z"
+    "updated_at": "2026-02-17T01:30:32.069141Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -101334,5 +101334,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:11:15.037229Z"
+  },
+  "misc.bank_system.say_29": {
+    "src_hash": "dcb98e469c547bf91881a6ea42ad8caa",
+    "text": "Czy chcesz wymienić swoje platynowe monety na {gold} lub {crystal}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:29:58.696047Z"
+  },
+  "item.9149.desc": {
+    "src_hash": "dd244aa20b20e7d8fa380018045b1f16",
+    "text": "Zawiera atrament świeżo zabitej kwari.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:08.253875Z"
+  },
+  "item.12794.desc": {
+    "src_hash": "f5c6560b9a644e0ee602799caca7c8e2",
+    "text": "Nie możesz używać tego przedmiotu przez krótki czas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:21.533284Z"
+  },
+  "item.12801.name": {
+    "src_hash": "50e5e3f6c349c8a22912af6e02e1c6ee",
+    "text": "złota puszka oleju",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:21.533564Z"
+  },
+  "item.12804.desc": {
+    "src_hash": "b8dae8999e71dfb36b6eaabbce7a2e0d",
+    "text": "Uważaj, to naczynie może pomieścić stopione złoto tylko przez krótki czas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:21.533994Z"
+  },
+  "item.12804.name": {
+    "src_hash": "1517b2400d61d244b34fbaca04c5a644",
+    "text": "kubek roztopionego złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:21.534334Z"
+  },
+  "item.12805.desc": {
+    "src_hash": "ea9cd51edcc4c1cc68ae6dc16b9704a7",
+    "text": "Kawałek skóry yielothaxu. Na jego powierzchni widoczne są maleńkie włoski - i wydają się być żywe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:21.534842Z"
+  },
+  "item.12809.desc": {
+    "src_hash": "1c5365d2350b3c54f3b453d06a55391c",
+    "text": "Ten kapelusz został wykonany ręcznie przez Umana Mądrego i przeklęty przez Zathrotha Niszczyciela. Jest przyznawany przez TibiaWiki.com.br",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:27.910453Z"
+  },
+  "item.12811.desc": {
+    "src_hash": "6ca8ec4ba5935e75f6de2557c574ebdc",
+    "text": "Zna wszystkie sekrety wszystkich liczb. Została nagrodzona przez portal Exhiti.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:27.910928Z"
+  },
+  "item.12819.desc": {
+    "src_hash": "cb4a051f4b3005c172f505951719fe56",
+    "text": "To wiadro jest specjalnie przygotowane na magiczną wodę, która wypływa z niemal każdego naczynia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:27.911542Z"
+  },
+  "item.129.desc": {
+    "src_hash": "31010c3bb49db66e2b28bdc4aef33fc6",
+    "text": "Nie jest jeszcze podpisany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:32.069430Z"
+  },
+  "item.12904.desc": {
+    "src_hash": "2f72b9851935416f450b642959f13155",
+    "text": "Emanuje pozytywną energią i została nagrodzona przez FunTibia.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:32.069846Z"
+  },
+  "item.12905.desc": {
+    "src_hash": "2f72b9851935416f450b642959f13155",
+    "text": "Emanuje pozytywną energią i została nagrodzona przez FunTibia.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:37.326269Z"
+  },
+  "item.131.desc": {
+    "src_hash": "34727b291f7fe31f4bf308bfbbc6fba9",
+    "text": "Jest wypełniona zbezczeszczoną kością.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:37.326682Z"
+  },
+  "item.133.desc": {
+    "src_hash": "776c1b7fdab84b050993d5bfd5dffbad",
+    "text": "Zawiera wodę święconą z klasztoru Białego Kruka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:37.327061Z"
+  },
+  "item.13429.desc": {
+    "src_hash": "0f8b1ac8a4f5b229d44f291f942011df",
+    "text": "Zawiera tyle gotówki, że nie masz pojęcia, jak ją wykorzystać. Zwróć go do pobliskiego banku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:37.327564Z"
+  },
+  "item.13429.name": {
+    "src_hash": "324f3809fd6c9a05f4d6055cfebf72ba",
+    "text": "worek ze skradzionym złotem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:37.327847Z"
+  },
+  "item.135.desc": {
+    "src_hash": "c8b35b0ae64f4d97406b1f56df215d4a",
+    "text": "Zawiera wysoce intensywną truciznę przeciw szkodnikom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:41.636899Z"
+  },
+  "item.136.desc": {
+    "src_hash": "56783cd4c1e639e93f760df5530b55df",
+    "text": "Wypełnione jest legendarnym krasnoludzkim brązowym piwem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:41.637324Z"
+  },
+  "item.13656.desc": {
+    "src_hash": "3578c5b32f47da7a6e917932befd7db6",
+    "text": "Ta lampa świeci bardzo słabo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:41.637640Z"
+  },
+  "item.13658.desc": {
+    "src_hash": "3578c5b32f47da7a6e917932befd7db6",
+    "text": "Ta lampa świeci bardzo słabo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:41.637943Z"
+  },
+  "item.138.desc": {
+    "src_hash": "389aaeeed0088e546fffaa5e87801226",
+    "text": "To butelka, którą Boozer dał ci po brązowym piwie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:48.938999Z"
+  },
+  "item.13844.desc": {
+    "src_hash": "e6e62717bd57e0a20c779bd981b1b809",
+    "text": "Wydaje się, że mają dziwny wpływ na inne rośliny i można je również wyhodować jako własną roślinę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:48.939528Z"
+  },
+  "item.139.desc": {
+    "src_hash": "2ad4d54729d4a18de4f9fb5fef449c3c",
+    "text": "To stary hełm górniczy Budriks.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:48.939863Z"
+  },
+  "item.14008.desc": {
+    "src_hash": "7bf8db3d65d88cea788b1160c811bd35",
+    "text": "Pieczęć używana przez czarowników głębin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:48.940331Z"
+  },
+  "item.14009.desc": {
+    "src_hash": "aa2ab6ed1566c584b962506b18482c20",
+    "text": "Dziwny kształt tego klucza miękko błyszczy w świetle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:53.544959Z"
+  },
+  "item.14010.desc": {
+    "src_hash": "e8f275431dd2a4c0cf9cef90e2684128",
+    "text": "Klamra paska wyrwana strażnikowi głębinowemu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:53.545321Z"
+  },
+  "item.14018.desc": {
+    "src_hash": "37206ee03b4771b718b45d77d73b4167",
+    "text": "Ten wspaniały klejnot został ręcznie wycięty przez |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:30:53.545708Z"
   }
 }

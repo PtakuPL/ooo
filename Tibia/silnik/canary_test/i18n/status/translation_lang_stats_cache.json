@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T01:29:38.020028Z",
+  "timestamp": "2026-02-17T01:31:11.250061Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1972,
+  "file_cache_misses": 4,
   "langs": {
     "ar": {
       "sig": [
@@ -7374,7 +7374,7 @@
         [
           "libs.json",
           1,
-          1771287088726281487,
+          1771291792423968062,
           6900
         ],
         [
@@ -7410,8 +7410,8 @@
         [
           "npc.json",
           1,
-          1771291741131825289,
-          1848249
+          1771291865896158211,
+          1848281
         ],
         [
           "npclib.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 39868,
-        "english_copy_keys": 2627,
+        "translated_keys": 39860,
+        "english_copy_keys": 2635,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 74.4,
+        "completion_pct": 74.39,
         "server_keys": 49731,
-        "server_translated": 37354,
-        "server_pct": 75.11,
+        "server_translated": 37346,
+        "server_pct": 75.1,
         "client_keys": 3855,
         "client_translated": 2514,
         "client_pct": 65.21
@@ -7733,7 +7733,7 @@
         "libs.json": {
           "sig": [
             1,
-            1771287088726281487,
+            1771291792423968062,
             6900
           ],
           "row": {
@@ -7817,13 +7817,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771291741131825289,
-            1848249
+            1771291865896158211,
+            1848281
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 10321,
-            "english_copy_keys": 207,
+            "translated_keys": 10313,
+            "english_copy_keys": 215,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25377,8 +25377,8 @@
         [
           "items.json",
           1,
-          1771289279728955985,
-          898715
+          1771291853576125995,
+          898737
         ],
         [
           "libs.json",
@@ -25425,8 +25425,8 @@
         [
           "npclib.json",
           1,
-          1771272700208408534,
-          13039
+          1771291798691985419,
+          13032
         ],
         [
           "otclient_data.json",
@@ -25530,14 +25530,14 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24125,
+        "translated_keys": 24153,
         "english_copy_keys": 1917,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 45.02,
+        "completion_pct": 45.07,
         "server_keys": 49731,
-        "server_translated": 21450,
-        "server_pct": 43.13,
+        "server_translated": 21478,
+        "server_pct": 43.19,
         "client_keys": 3855,
         "client_translated": 2675,
         "client_pct": 69.39
@@ -25728,12 +25728,12 @@
         "items.json": {
           "sig": [
             1,
-            1771289279728955985,
-            898715
+            1771291853576125995,
+            898737
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 5709,
+            "translated_keys": 5736,
             "english_copy_keys": 16,
             "missing_keys": 0,
             "missing_files": 0
@@ -25840,12 +25840,12 @@
         "npclib.json": {
           "sig": [
             1,
-            1771272700208408534,
-            13039
+            1771291798691985419,
+            13032
           ],
           "row": {
             "total_reference_keys": 147,
-            "translated_keys": 146,
+            "translated_keys": 147,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

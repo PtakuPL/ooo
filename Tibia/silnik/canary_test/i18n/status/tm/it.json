@@ -49454,5 +49454,221 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:03:44.109684Z"
+  },
+  "item.5514.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.630231Z"
+  },
+  "item.5515.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.630499Z"
+  },
+  "item.5516.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.630748Z"
+  },
+  "item.5517.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.631004Z"
+  },
+  "item.5544.name": {
+    "src_hash": "40a2c5fd3b18c5aa1b45d5c619277ac0",
+    "text": "botola",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.632700Z"
+  },
+  "item.5691.name": {
+    "src_hash": "40a2c5fd3b18c5aa1b45d5c619277ac0",
+    "text": "botola",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.635375Z"
+  },
+  "item.5731.name": {
+    "src_hash": "de97e75e5b4604526a2afaed5f5439d7",
+    "text": "buco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.635998Z"
+  },
+  "item.5732.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.636315Z"
+  },
+  "item.5732.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.636684Z"
+  },
+  "item.5733.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.636935Z"
+  },
+  "item.5734.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.637173Z"
+  },
+  "item.5735.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.637483Z"
+  },
+  "item.5735.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.637734Z"
+  },
+  "item.5736.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.638143Z"
+  },
+  "item.5737.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.638396Z"
+  },
+  "item.5745.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.638928Z"
+  },
+  "item.5745.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.639304Z"
+  },
+  "item.5746.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.639761Z"
+  },
+  "item.5746.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.640010Z"
+  },
+  "item.5748.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.640480Z"
+  },
+  "item.5748.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.640852Z"
+  },
+  "item.5749.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.641287Z"
+  },
+  "item.5749.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.641537Z"
+  },
+  "item.5763.name": {
+    "src_hash": "40a2c5fd3b18c5aa1b45d5c619277ac0",
+    "text": "botola",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.642022Z"
+  },
+  "item.594.name": {
+    "src_hash": "de97e75e5b4604526a2afaed5f5439d7",
+    "text": "buco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.649469Z"
+  },
+  "item.595.name": {
+    "src_hash": "de97e75e5b4604526a2afaed5f5439d7",
+    "text": "buco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.650881Z"
+  },
+  "item.5961.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:42.651900Z"
   }
 }

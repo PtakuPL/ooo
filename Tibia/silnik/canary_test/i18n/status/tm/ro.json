@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:39:22.252865Z"
+    "updated_at": "2026-02-17T05:04:59.145688Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -43422,5 +43422,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:04:02.973627Z"
+  },
+  "item.121.desc": {
+    "src_hash": "4a0ce57ea05917377e96ae81eff053b3",
+    "text": "Ți-a dat-o Bozo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:06.924908Z"
+  },
+  "item.12143.desc": {
+    "src_hash": "3c237609bb3c24d592f0e5ab56445cfe",
+    "text": "Este incredibil de lipicios și prea dulce pentru a o mânca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:06.925382Z"
+  },
+  "item.12171.desc": {
+    "src_hash": "b226018568231b0cd49095173725e28b",
+    "text": "Această panglică a fost realizată manual de Rottin Wood și bărbații căsătoriți din pădure",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:06.925853Z"
+  },
+  "item.12174.desc": {
+    "src_hash": "5bfeb6d835123881a1ceddc41f36095c",
+    "text": "Lâna care a fost umplută sub panglică face ca lingura să arate și să se simtă ca un adevărat picior de iepure",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:08.865589Z"
+  },
+  "item.12175.desc": {
+    "src_hash": "c85ba08bbc37495e6b3045f411f0f2d4",
+    "text": "Adăugarea de puțină lână ici și colo ar face acest lucru să arate și să se simtă ca un adevărat picior de iepure",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:05:08.866193Z"
   }
 }

@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:37:17.076103Z"
+    "updated_at": "2026-02-17T00:59:22.596549Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:37:19.674349Z"
+    "updated_at": "2026-02-17T00:59:25.303053Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:37:22.275451Z"
+    "updated_at": "2026-02-17T00:59:27.884715Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24461,7 +24461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:37:27.585857Z"
+    "updated_at": "2026-02-17T00:59:30.467258Z"
   },
   "spell.deathstrike_paralyze.name": {
     "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
@@ -26102,5 +26102,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:57:27.460630Z"
+  },
+  "spell.choking_fear_drown.name": {
+    "src_hash": "39160ee8d7bca7b101f3aeca4829f6a2",
+    "text": "frica sufocată se îneacă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:33.051867Z"
+  },
+  "spell.woodling_paralyze.name": {
+    "src_hash": "97553a2f2fa52064daf5182d66aaddac",
+    "text": "woodling paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:33.052114Z"
+  },
+  "spell.kraknaknork_poison_wave.name": {
+    "src_hash": "1fd267a3aead63a2997612b7b5401a35",
+    "text": "val de otravă kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:33.052390Z"
+  },
+  "spell.kraknaknork_ice_wave.name": {
+    "src_hash": "32d29ecc9efa37a24ae26adb5bae9368",
+    "text": "val de gheață kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:35.782524Z"
+  },
+  "spell.nightstalker_paralyze.name": {
+    "src_hash": "2c84fb8e3597186cf01caef6d50eaf14",
+    "text": "nightstalker paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:35.783375Z"
+  },
+  "spell.large_poison_ring.name": {
+    "src_hash": "133974dafcdccb55f7f557779cc2a53e",
+    "text": "intoxicare mare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:35.784093Z"
+  },
+  "spell.annihilon_skill_reducer.name": {
+    "src_hash": "1e1e826d84adab2cbc69606f0b7b4edf",
+    "text": "anihilon skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:38.407845Z"
+  },
+  "spell.orewalker_wave.name": {
+    "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
+    "text": "val de orewalker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:38.408078Z"
+  },
+  "spell.shulgrax_summon.name": {
+    "src_hash": "f5a03d22464772d6102203f0fe68bb2c",
+    "text": "shulgrax sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:38.408285Z"
+  },
+  "spell.prince_drazzak_wave.name": {
+    "src_hash": "d57ae73626ec23c37e78b9c69ab23a58",
+    "text": "prințul drazzak val",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:38.408539Z"
+  },
+  "spell.destruction_summon.name": {
+    "src_hash": "01065f8da944639a1a4fb3cb16d22117",
+    "text": "chemarea la distrugere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:40.969760Z"
+  },
+  "spell.ushuriel_curse.name": {
+    "src_hash": "074cb677180b3b31a654751644a331cd",
+    "text": "blestemul ushuriel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:40.971059Z"
+  },
+  "spell.gorerilla_large_ring.name": {
+    "src_hash": "e99623b0a89c854eac306e6f6d8bd787",
+    "text": "inel mare de gorilă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:40.971342Z"
+  },
+  "spell.dire_penguin_paralyze.name": {
+    "src_hash": "258aae9d7958e760ba23809d82618ff4",
+    "text": "pinguinul paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:43.869824Z"
+  },
+  "spell.fire_overlord_soulfire.name": {
+    "src_hash": "14c49b0d83520ccc5818f8b871d249fe",
+    "text": "foc supremul sufletului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:43.870148Z"
+  },
+  "spell.metal_gargoyle_curse.name": {
+    "src_hash": "0787f61ae7e0ee13dbba63aa7a817594",
+    "text": "blestemul garguilor de metal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:43.870431Z"
+  },
+  "spell.lloyd_wave.name": {
+    "src_hash": "ad4c98b912a97a74be4871d555f23792",
+    "text": "val lloyd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:43.870621Z"
   }
 }

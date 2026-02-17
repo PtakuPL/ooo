@@ -32862,5 +32862,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:57:57.841794Z"
+  },
+  "quests.others.holy_water_destroyed": {
+    "src_hash": "8aa0e3d028a181eecbdd33685f79754d",
+    "text": "%s ha distrutto il nesso ombra! In 10 secondi tornerà al suo stato originale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:54.266002Z"
+  },
+  "quests.pits_of_inferno.flipped_lever": {
+    "src_hash": "63c60e89cdd7672905b6c37020f83841",
+    "text": "Hai girato la leva {0}. Sbrigati e trova il prossimo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:54.266482Z"
+  },
+  "quests.pits_of_inferno.throne_say_1": {
+    "src_hash": "6bed9ad765a41aea118ed6b6d41a2e9a",
+    "text": "Hai toccato il trono di Infernatil e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:54.266949Z"
+  },
+  "quests.pits_of_inferno.throne_say_2": {
+    "src_hash": "4626bc832fa6a49df4ef7bd01ae0933b",
+    "text": "Hai toccato il trono di Tafariel e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:54.267319Z"
+  },
+  "quests.pits_of_inferno.throne_say_3": {
+    "src_hash": "e4fc7313dc3a16917ce00d9d3d81037a",
+    "text": "Hai toccato il trono di Verminor e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:58.813088Z"
+  },
+  "quests.pits_of_inferno.throne_say_4": {
+    "src_hash": "df9c98fd901a5a7ce92caf391e334ec3",
+    "text": "Hai toccato il trono di Apocalypse e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:58.813665Z"
+  },
+  "quests.pits_of_inferno.throne_say_5": {
+    "src_hash": "a6c231f5c8d0d440f9a25dd728b1276f",
+    "text": "Hai toccato il trono di Bazir e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:58.814049Z"
+  },
+  "quests.pits_of_inferno.throne_say_6": {
+    "src_hash": "f7524dcee093d05f1543b4a037a86627",
+    "text": "Hai toccato il trono di Ashfalor e hai assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:58.814524Z"
+  },
+  "quests.pits_of_inferno.throne_say_7": {
+    "src_hash": "2cddd74c3cb03b1c671c1907b470af88",
+    "text": "Hai toccato il trono di Pumin e assorbito parte del suo spirito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:59:58.814889Z"
+  },
+  "quests.quest_system2.say_1": {
+    "src_hash": "45736d9194d6da01cb301f6b7eaecca0",
+    "text": "Sullo scaffale è stata nascosta una serie di documenti. Potrebbero interessare Zalamon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:01.385713Z"
+  },
+  "quests.quest_system2.say_2": {
+    "src_hash": "53e7fc6825a02b3708b232a180d94e0a",
+    "text": "Tira fuori un teschio dal mucchio di ossa. Dev'essere quello il teschio di cui ha parlato Lazaran.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:01.386219Z"
+  },
+  "quests.quest_system2.say_3": {
+    "src_hash": "032cb9ca7fa8271b3e143fcbac1c8386",
+    "text": "Per guadagnare tempo sostituisci il pesce con un pezzo di carota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:01.386656Z"
+  },
+  "quests.rookie_guard.m02.academy_roof": {
+    "src_hash": "e6225831626357195789837b09eb0691",
+    "text": "Queste scale conducono al tetto dell'Accademia. Lassù dovresti trovare DUE catapulte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:01.387120Z"
+  },
+  "quests.rookie_guard.m02.house_vascalir": {
+    "src_hash": "9b47262b38451fe2badc4c4152967c3b",
+    "text": "Questa è la casa menzionata da Vascalir. Dovresti trovare un mucchio di pietre in cantina. Usalo per ottenere una pietra!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:01.387645Z"
+  },
+  "quests.rookie_guard.m02.norma_bar": {
+    "src_hash": "4eeb33a027267a41e6527d48c5c9890f",
+    "text": "Questo è il bar di Norma. Se vai sul tetto, dovresti trovare una delle catapulte che deve essere riempita di pietre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:03.962739Z"
+  },
+  "quests.rookie_guard.m02.obi_shop": {
+    "src_hash": "07b1f1d0fd6479294bd8233d8b7f88d0",
+    "text": "Questo è il negozio di Obi. Sul tetto dovresti trovare una delle catapulte menzionate da Vascalir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:03.963231Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_east": {
+    "src_hash": "da439753da5cece35ac0001cff88d754",
+    "text": "Questa non è la strada per Hyacinth. Segui il sentiero verso est per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:03.963708Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_north": {
+    "src_hash": "860c4533bc9747a178e2aaa8d1030cf3",
+    "text": "Questa non è la strada per Hyacinth. Seguire il sentiero fino all'uscita nord del villaggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:03.964221Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_stay": {
+    "src_hash": "78f62d4d069dd9e52c49c0976e3243bb",
+    "text": "Questa non è la strada per Hyacinth. Rimani sul sentiero un po' più a nord per trovare la casetta di Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:03.964741Z"
+  },
+  "quests.rookie_guard.m04.not_lily": {
+    "src_hash": "b75de9056a3f78512d4451edf4b933bc",
+    "text": "Non è questo il modo di parlare di Lily. Segui la strada che porta a sud-ovest per trovare il suo negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:06.551013Z"
+  },
+  "quests.rookie_guard.m05.follow_north": {
+    "src_hash": "a5bf51f908af9ade3bfffc340ca8e014",
+    "text": "Seguite il piccolo sentiero verso nord per raggiungere la tana del ragno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:06.551436Z"
+  },
+  "quests.rookie_guard.m05.not_tarantula_sw": {
+    "src_hash": "b1fdf58d0b8057244bab5a710d42a616",
+    "text": "Questa non è la strada per la tana della tarantola. Salite la piccola rampa a sud-ovest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:06.551905Z"
+  },
+  "quests.rookie_guard.m05.remember_web": {
+    "src_hash": "39a2d466181dc92312224cea243c06c7",
+    "text": "Ricorda che devi acquistare un campione web per Vascalir. Non dovresti lasciare questa grotta senza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:06.552368Z"
+  },
+  "quests.rookie_guard.m05.walk_west": {
+    "src_hash": "cd2910c5de542301bf729e89347f87e5",
+    "text": "Da qui cammina verso ovest per raggiungere il buco che conduce alla tana della tarantola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:06.552768Z"
+  },
+  "quests.rookie_guard.m06.dead_wolf": {
+    "src_hash": "cd8a0378d33f62cc3ee5742430d9196a",
+    "text": "C'è un lupo di guerra morto! Usa il coltello e poi usalo sul suo corpo per prendere della pelle, ma velocemente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:09.211781Z"
+  },
+  "quests.rookie_guard.m06.follow_ne": {
+    "src_hash": "d660a6b81f70a077aa8cc985ceb95661",
+    "text": "Seguite il sentiero nord-orientale nella foresta. Attenzione ai lupi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:09.212825Z"
+  },
+  "quests.rookie_guard.m06.not_wolf_stay": {
+    "src_hash": "989a7ab9eb5e0a97e828d346f52de900",
+    "text": "Questa non è la strada per la foresta dei lupi. Rimani sul sentiero meridionale che porta a nord-est!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:09.213354Z"
+  },
+  "quests.rookie_guard.m06.plans_changed": {
+    "src_hash": "a6dabc80da026b6c74b055d2631f0bd2",
+    "text": "Sembra che i piani siano cambiati. Adesso tocca a te trovare un lupo di guerra morto e usare il coltello per scuoiare su di esso per ottenere un po' di pelle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:09.213881Z"
+  },
+  "quests.rookie_guard.m06.poacher_dead": {
+    "src_hash": "ad864d48132584f629f65e54cc4dc9dc",
+    "text": "Beh... quello sembra essere il bracconiere. Morto. Controlla il suo corpo: forse ha ancora qualcosa che puoi usare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:11.827211Z"
+  },
+  "quests.rookie_guard.m06.wolf_den_hole": {
+    "src_hash": "8ff82dfeee21b161eacc6351bd96bb4f",
+    "text": "Questo buco conduce nella tana dei lupi. Entra solo se hai salute e cibo completi: questo potrebbe essere pericoloso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:11.827696Z"
+  },
+  "quests.rookie_guard.m07.chest_flames": {
+    "src_hash": "b7c6b9d06f88f8be6cd061c750b49f8d",
+    "text": "Questo deve essere lo scrigno con il libro, ma è coperto di fiamme!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:11.828109Z"
+  },
+  "quests.rookie_guard.m07.rune_table": {
+    "src_hash": "6002e2799edcb38d0d9a8a27e3adb6bc",
+    "text": "Fai clic con il pulsante destro del mouse sulla runa grigia sul tavolo, quindi fai clic con il pulsante sinistro del mouse sul fuoco! Non puoi prendere la runa, ma funziona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:11.828617Z"
+  },
+  "quests.rookie_guard.m07.stairs_vault": {
+    "src_hash": "1c62d45cabc3f18ede97039fa7995f24",
+    "text": "Scendete le scale per raggiungere il caveau. C'è odore di fuoco laggiù. Assicurati di essere sano!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:11.829095Z"
+  },
+  "quests.rookie_guard.m07.vault_fire": {
+    "src_hash": "ca5a077ce0747edac556d29d78a7241a",
+    "text": "Il caveau è in fiamme! Non c'è quasi aria qui dentro. Non hai molto tempo per trovare il libro. Fretta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:14.408460Z"
+  },
+  "quests.rookie_guard.m09.not_troll_caves": {
+    "src_hash": "53ae08babd37bc33bccc6047edabfdbb",
+    "text": "Questa non è la strada per le caverne dei troll. Scendete le scale e camminate verso nord per trovarli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:14.409012Z"
+  },
+  "quests.rookie_guard.m09.troll_tunnel": {
+    "src_hash": "6aa6afffb59b2e2f20b38e3d07846679",
+    "text": "Hai raggiunto il tunnel dei troll appena scavato. Prendi ciò che trovi in ​​questo baule e usalo per abbattere tutte le travi di supporto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:14.409617Z"
+  },
+  "quests.rookie_guard.m09.tunnel_collapsed": {
+    "src_hash": "c93f44b7a93c422a03c1a7b607c9f512",
+    "text": "Senti un crollo sotto di te. Il tunnel è crollato. Vascalir sarà lieta di saperlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:14.410144Z"
+  },
+  "quests.rookie_guard.m10.crypt_explore": {
+    "src_hash": "428682d8033f91ba852ac8e9c68c9bd6",
+    "text": "Questa è la cripta di cui parlava Vascalir. Esploralo e perquisisci le bare: una di queste deve contenere un bell'osso carnoso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:14.410705Z"
+  },
+  "quests.rookie_guard.m10.deeper_crypt": {
+    "src_hash": "86e1952c650fefd39f45d3647768aa98",
+    "text": "Questa porta sembra condurre più in profondità nella cripta. Scendi le scale e cerca una bara speciale. Attenzione ai morti che camminano!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:16.330749Z"
+  },
+  "quests.rookie_guard.m10.fleshy_bone": {
+    "src_hash": "0f7d3784d552ac18699272146e625d18",
+    "text": "Ora che hai un osso carnoso, è il momento di scoprire cosa voleva da esso Vascalir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:00:16.331300Z"
   }
 }

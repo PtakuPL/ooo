@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T08:41:35.812578Z",
+  "timestamp": "2026-02-17T08:42:54.908640Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -7302,7 +7302,7 @@
         [
           "books.json",
           1,
-          1771314717746545882,
+          1771317768158331565,
           320562
         ],
         [
@@ -7458,7 +7458,7 @@
         [
           "questlog.json",
           1,
-          1771314685794412405,
+          1771317734142224775,
           246931
         ],
         [
@@ -7565,7 +7565,7 @@
         "books.json": {
           "sig": [
             1,
-            1771314717746545882,
+            1771317768158331565,
             320562
           ],
           "row": {
@@ -7929,7 +7929,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771314685794412405,
+            1771317734142224775,
             246931
           ],
           "row": {
@@ -30972,8 +30972,8 @@
         [
           "server.json",
           1,
-          1771314673194360179,
-          313731
+          1771317723018188502,
+          314155
         ],
         [
           "spells.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 23806,
-        "english_copy_keys": 1522,
+        "translated_keys": 23820,
+        "english_copy_keys": 1521,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 44.43,
+        "completion_pct": 44.45,
         "server_keys": 49731,
-        "server_translated": 23705,
-        "server_pct": 47.67,
+        "server_translated": 23719,
+        "server_pct": 47.69,
         "client_keys": 3855,
         "client_translated": 101,
         "client_pct": 2.62
@@ -31475,13 +31475,13 @@
         "server.json": {
           "sig": [
             1,
-            1771314673194360179,
-            313731
+            1771317723018188502,
+            314155
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 638,
-            "english_copy_keys": 121,
+            "translated_keys": 652,
+            "english_copy_keys": 120,
             "missing_keys": 0,
             "missing_files": 0
           }

@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T07:41:35.891668Z",
-  "window_end_utc": "2026-02-17T08:41:35.891668Z",
+  "window_start_utc": "2026-02-17T07:42:54.986494Z",
+  "window_end_utc": "2026-02-17T08:42:54.986494Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2914,
-  "guard_fail": 2721,
-  "guard_fail_rate_pct": 48.3,
+  "translated": 2890,
+  "guard_fail": 2663,
+  "guard_fail_rate_pct": 48.0,
   "no_progress_entries": 2,
   "no_progress_rate_pct": 2.1,
-  "throughput_keys_per_h": 1566.2,
-  "suspicious_total": 8664,
+  "throughput_keys_per_h": 1606.1,
+  "suspicious_total": 8675,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -37,9 +37,9 @@
       "guard_command": 0
     },
     {
-      "target": "sv/npc.json",
-      "translated": 100,
-      "guard_fail": 111,
+      "target": "es/books.json",
+      "translated": 4,
+      "guard_fail": 96,
       "guard_command": 0
     },
     {
@@ -55,15 +55,15 @@
       "guard_command": 0
     },
     {
-      "target": "ru/spells.json",
-      "translated": 24,
-      "guard_fail": 76,
+      "target": "es/questlog.json",
+      "translated": 82,
+      "guard_fail": 78,
       "guard_command": 0
     },
     {
-      "target": "ro/monsters.json",
-      "translated": 33,
-      "guard_fail": 67,
+      "target": "ru/spells.json",
+      "translated": 24,
+      "guard_fail": 76,
       "guard_command": 0
     },
     {

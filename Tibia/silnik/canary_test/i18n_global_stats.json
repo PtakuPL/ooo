@@ -1,8 +1,8 @@
 {
-  "total_cycles": 382,
+  "total_cycles": 383,
   "mode": "AUTO_TRANSLATE",
-  "category": "ru",
-  "last_update": "2026-02-17T09:41:31.696795",
+  "category": "sr",
+  "last_update": "2026-02-17T09:42:50.781335",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ru",
-    "json_file": "quests.json",
-    "keys_to_translate": 3,
-    "guard_fail": 0,
+    "language": "sr",
+    "json_file": "server.json",
+    "keys_to_translate": 1927,
+    "guard_fail": 48,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

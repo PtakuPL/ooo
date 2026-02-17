@@ -172718,5 +172718,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:09:34.502139Z"
+  },
+  "data.otservbr.global.npc.broken.servant.sentry.L125.702": {
+    "src_hash": "7f282da5e4d3782819b34cc989e6b9ac",
+    "text": "Господар је-је-је-је де-ад. Плеа*цхррррцхк*се. Буди. Ин. Моурнинг.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.732669Z"
+  },
+  "data.otservbr.global.npc.bron.L188.28": {
+    "src_hash": "bc13951dddf4f12c470dbcddf105f4db",
+    "text": "Добродошли у моју скромну колибу, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.733771Z"
+  },
+  "data.otservbr.global.npc.bron.L193.30": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Чувајте се!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.734483Z"
+  },
+  "data.otservbr.global.npc.bron.L58.27": {
+    "src_hash": "3c96311a2df7cd5491976b4303ecfa9c",
+    "text": "Ох не! Јесам ли то стварно био ја? Ово је тако срамотно, немам појма шта ме је спопало. Да ли је то био борбени дух који си ми дао?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.735766Z"
+  },
+  "data.otservbr.global.npc.bruno.L61.437": {
+    "src_hash": "059e1779562262cde06156c3a7f61f6d",
+    "text": "Ахои, |PLAYERNAME|. Хоћеш да купиш свежу рибу?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.736775Z"
+  },
+  "data.otservbr.global.npc.bruno.L62.438": {
+    "src_hash": "130d80e1c83d95931a68442d397fcbbc",
+    "text": "Збогом и дођи поново!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.737499Z"
+  },
+  "data.otservbr.global.npc.bruno.L63.439": {
+    "src_hash": "f5611466111acf02c50fd70a513700e0",
+    "text": "Купите сву рибу коју желите. Свеже је и здраво, обећано.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.738377Z"
+  },
+  "data.otservbr.global.npc.buddel.L134.211": {
+    "src_hash": "d154b3846fac97a5b216341a5a01fe8c",
+    "text": "Хеј велики момци. ти? {Here}? *ХИЦКС*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.739263Z"
+  },
+  "data.otservbr.global.npc.cael.L392.236": {
+    "src_hash": "65cd3155e7fbe93ae575ff3c4a1f8abb",
+    "text": "Поздрав, |PLAYERNAME|! Мора да си доста долазио. Увек сам заинтересован да научим нове ствари о Заоу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.743501Z"
+  },
+  "data.otservbr.global.npc.cael.L393.237": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Имајте на уму да овде нећете наћи боље понуде. Само прегледај моју робу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.744502Z"
+  },
+  "data.otservbr.global.npc.canary.L126.459": {
+    "src_hash": "a10a26d9586cb14bfaa580c34d3db0a0",
+    "text": "Немате образовање?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.745659Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L118.99": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добродошли на брод, |PLAYERNAME|. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.747136Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L119.100": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.747989Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L120.101": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:42:02.748465Z"
   }
 }

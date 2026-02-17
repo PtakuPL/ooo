@@ -242,9 +242,9 @@ void Module::discover(const OTMLNodePtr& moduleNode)
         for (const auto& tmp : node->children()) {
             auto path = std::filesystem::path(stdext::resolve_path(tmp->value(), node->source())).replace_extension().string();
 
-            if (path.ends_with('*')) {
+            if (!path.empty() && path.back() == '*') {
                 path.pop_back();
-                if (path.ends_with('/'))
+                if (!path.empty() && path.back() == '/')
                     path.pop_back();
 
                 for (auto filePath : g_resources.listDirectoryFiles(path, true, false, true)) {

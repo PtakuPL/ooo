@@ -30,6 +30,7 @@
 #include <framework/luaengine/luaobject.h>
 #include <framework/otml/declarations.h>
 #include <numeric>
+#include <algorithm>
 #include <variant>
 
 using namespace otclient::protobuf;
@@ -360,7 +361,7 @@ public:
 
         const uint32_t itemId = getId();
 
-        const auto it = std::ranges::find_if(forcedPrices, [itemId](const auto& pair) { return pair.first == itemId; });
+        const auto it = std::find_if(forcedPrices.begin(), forcedPrices.end(), [itemId](const auto& pair) { return pair.first == itemId; });
 
         if (it != forcedPrices.end()) {
             return it->second;

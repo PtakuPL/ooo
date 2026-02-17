@@ -141,9 +141,15 @@ namespace stdext
         template<class T, class R>
         void update_what()
         {
+#ifdef _MSC_VER
+            // MSVC ICE workaround: demangle_type<T>() in template header
+            // can crash P2 codegen when heavily instantiated.
+            m_what = "failed to cast value";
+#else
             std::stringstream ss;
             ss << "failed to cast value of type '" << demangle_type<T>() << "' to type '" << demangle_type<R>() << "'";
             m_what = ss.str();
+#endif
         }
         const char* what() const noexcept override { return m_what.c_str(); }
     private:

@@ -21,7 +21,7 @@
  */
 
 #include <algorithm>
-#include <ranges>
+#include <cctype>
 #include <vector>
 #include <charconv>
 
@@ -252,9 +252,16 @@ namespace stdext
         str = otc::text::u32ToUtf8(text32);
     }
 
-    void ltrim(std::string& s) { s.erase(s.begin(), std::ranges::find_if(s, [](unsigned char ch) { return !std::isspace(ch); })); }
+    void ltrim(std::string& s)
+    {
+        s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](const unsigned char ch) { return std::isspace(ch) == 0; }));
+    }
 
-    void rtrim(std::string& s) { s.erase(std::ranges::find_if(s | std::views::reverse, [](unsigned char ch) { return !std::isspace(ch); }).base(), s.end()); }
+    void rtrim(std::string& s)
+    {
+        const auto it = std::find_if(s.rbegin(), s.rend(), [](const unsigned char ch) { return std::isspace(ch) == 0; });
+        s.erase(it.base(), s.end());
+    }
 
     void trim(std::string& s) { ltrim(s);       rtrim(s); }
 
@@ -280,7 +287,10 @@ namespace stdext
         }
     }
 
-    void eraseWhiteSpace(std::string& str) { std::erase_if(str, isspace); }
+    void eraseWhiteSpace(std::string& str)
+    {
+        str.erase(std::remove_if(str.begin(), str.end(), [](const unsigned char ch) { return std::isspace(ch) != 0; }), str.end());
+    }
 
     [[nodiscard]] std::vector<std::string> split(std::string_view str, std::string_view separators) {
         std::vector<std::string> result;

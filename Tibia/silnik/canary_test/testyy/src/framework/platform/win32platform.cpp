@@ -59,7 +59,7 @@ bool Platform::spawnProcess(std::string process, const std::vector<std::string>&
         commandLine += fmt::format(" \"{}\"", arg);
 
     stdext::replace_all(process, "/", "\\");
-    if (!process.ends_with(".exe"))
+    if (process.size() < 4 || process.compare(process.size() - 4, 4, ".exe") != 0)
         process += ".exe";
 
     const auto& wfile = stdext::utf8_to_utf16(process);

@@ -110766,5 +110766,205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:01:15.756091Z"
+  },
+  "npc.ninev.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.332086Z"
+  },
+  "npc.ninos.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.333678Z"
+  },
+  "npc.nokmir.greet_msg_1": {
+    "src_hash": "7511a3053985d1285f219889716a7b01",
+    "text": "Ty jesteś... całkiem wysoki! Witaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.337734Z"
+  },
+  "npc.nomad.farewell_msg_1": {
+    "src_hash": "8c89051be17409506fca67d38fa19a60",
+    "text": "Trzymaj fason!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.341301Z"
+  },
+  "npc.nomad.greet_msg_1": {
+    "src_hash": "02a071b07a24df1ab5d650896f1ef654",
+    "text": "Ach, kolejny wyznawca skrajności... przetrwanie na lodowatym odludziu? Pozwól, że ci {help}! Jeśli potrzebujesz pierwszej pomocy, mogę cię {healing} albo dać ci {enhanced} błogosławieństwo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.342682Z"
+  },
+  "npc.nomad.stdmod_11": {
+    "src_hash": "b127bf2a196d2758967ffd7116b161e1",
+    "text": "Porozmawiaj z pustelnikiem Eremo na wyspie Cormaya o tym blogoslawienstwie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.344893Z"
+  },
+  "npc.nomad.walkaway_msg_1": {
+    "src_hash": "8c89051be17409506fca67d38fa19a60",
+    "text": "Trzymaj fason!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.349750Z"
+  },
+  "npc.noozer.greet_msg_1": {
+    "src_hash": "e18fc17f3852a8ff97b6e408e669e5eb",
+    "text": "Hm? Och! Och, tak, g... gość! Intruz? Dobroczyńca...? Czym... czym ty jesteś? Jeśli chcesz przejść przez tę jaskinię, mogę cię rozczarować. A może nie. To... zależy. Więc, tylko przechodzisz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.355570Z"
+  },
+  "npc.norma.sendtrade_msg_1": {
+    "src_hash": "f5de40889c1308575b28481de36b712b",
+    "text": "Masz tyle czasu, ile potrzebujesz, żeby zdecydować, czego chcesz!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.371541Z"
+  },
+  "npc.norma.stdmod_9": {
+    "src_hash": "7defe47d2884475b8bd17dca63d0bcd8",
+    "text": "Aby zobaczyć oferty kupca, po prostu porozmawiaj z nim lub z nią i poproś o {trade}. Chętnie pokażą ci swoje oferty, a także rzeczy, które od ciebie kupują.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.385473Z"
+  },
+  "npc.norma.walkaway_msg_1": {
+    "src_hash": "0c62b96014efa382625199bf8b298ad8",
+    "text": "Hej, dokąd idziesz? Przecież dopiero zaczęliśmy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.388197Z"
+  },
+  "npc.nurik.greet_msg_1": {
+    "src_hash": "9bd986cd014ae0ad0aa389009c173731",
+    "text": "To... to TY! Wreszcie!! Więc jaka to wyjątkowa propozycja, którą chcesz mi złożyć, mój przyjacielu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.389321Z"
+  },
+  "npc.obi.farewell_msg_1": {
+    "src_hash": "523cd6ce4a52d1af40b6b044272aa4f7",
+    "text": "Żegnaj, mam nadzieję, że byłeś zadowolony z naszych usług.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.394793Z"
+  },
+  "npc.obi.greet_msg_1": {
+    "src_hash": "2a98817a7b2a2bcf82dae5dee7e8832d",
+    "text": "Witaj, witaj, |PLAYERNAME|! Wejdź, obejrzyj i kup! Jeśli chcesz zobaczyć moje oferty, poproś o {trade}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.395963Z"
+  },
+  "npc.obi.stdmod_9": {
+    "src_hash": "72f97516fb4d02e4719a7ea8bb221c60",
+    "text": "Król zachęcał handlarzy, żeby tu przyjeżdżali, ale tylko ja odważyłem się podjąć to ryzyko - i było to ryzyko!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.412631Z"
+  },
+  "npc.obi.walkaway_msg_1": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Eee, tak, dobrego dnia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.414827Z"
+  },
+  "npc.oblivion.greet_msg_1": {
+    "src_hash": "17013780dcf437535c625c0047b89e1a",
+    "text": "Cień cię poprzedził. Czego pragniesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.415756Z"
+  },
+  "npc.ocelus.greet_msg_1": {
+    "src_hash": "b5d7cd9304adaac7674468391b92f8b9",
+    "text": "Pozdrowienia, drogi gościu |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.421999Z"
+  },
+  "npc.oldrak.greet_msg_1": {
+    "src_hash": "2be92241cfbf74f6d79f192f239034d5",
+    "text": "Witaj |PLAYERNAME|! Rzadko mam teraz okazję gościć {visitors}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.427526Z"
+  },
+  "npc.olrik.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.444505Z"
+  },
+  "npc.oressa.voice_3": {
+    "src_hash": "a8e6cffd811556ef76d37795d6ad5445",
+    "text": "Przyjdź do mnie, jeśli potrzebujesz leczenia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.606749Z"
+  },
+  "npc.ortheus.greet_msg_1": {
+    "src_hash": "04170562cc89cde1fc309db374e5b832",
+    "text": "Jaki masz interes tutaj z {magicians}, |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.612044Z"
+  },
+  "npc.oswald.greet_msg_1": {
+    "src_hash": "7f70f54799d564494fb5f4badc65ed4b",
+    "text": "Och, witaj |PLAYERNAME|. O co chodzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.620905Z"
+  },
+  "npc.oswald.walkaway_msg_1": {
+    "src_hash": "1c93c857f61db28d9ea06910e5341fed",
+    "text": "Do widzenia i nie wracaj zbyt szybko.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.634819Z"
+  },
+  "npc.padreia.greet_msg_1": {
+    "src_hash": "a11c897f22aded6c60d6186f43cd1616",
+    "text": "Witaj w naszej skromnej gildii, wędrowcze. Czy mogę ci jakoś pomóc?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:02:36.637303Z"
   }
 }

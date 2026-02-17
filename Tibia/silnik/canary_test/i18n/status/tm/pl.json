@@ -115518,5 +115518,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:34:14.456879Z"
+  },
+  "scripts.lib.register_actions_1": {
+    "src_hash": "9ce03ce78c05bacbf53138f3cfa973e4",
+    "text": "Wykopałeś martwego węża.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:35:53.233287Z"
   }
 }

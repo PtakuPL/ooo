@@ -1251,7 +1251,7 @@
   "scripts.lever.msg_4": "JEDEN zespół jest już inside the zadanie miejsce.",
   "scripts.lever.say_1": "<crrk>",
   "scripts.lever.say_2": "<squeaak>",
-  "scripts.lib.register_actions_1": "Ty dug up jeden dead wąż.",
+  "scripts.lib.register_actions_1": "Wykopałeś martwego węża.",
   "scripts.lib.register_actions_2": "Wykopałeś mały diament.",
   "scripts.lib.register_actions_3": "Ty dug up jeden pijawka.",
   "scripts.lisa_heal.say_1": "Lisa wyzdrowiała!",

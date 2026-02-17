@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:43:38.225627Z"
+    "updated_at": "2026-02-17T08:34:26.260366Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:43:43.537669Z"
+    "updated_at": "2026-02-17T08:34:31.589199Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -150462,5 +150462,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:53:09.059795Z"
+  },
+  "spell.ice_wave.words": {
+    "src_hash": "01866fc85cfc2a3fa0a21c030a8b2ae2",
+    "text": "exevo frigo hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:36.914869Z"
+  },
+  "spell.fire_wave.words": {
+    "src_hash": "d58420dad4d6031d7d8f1caf292be669",
+    "text": "exevo flam hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:36.915226Z"
+  },
+  "spell.energy_wave.words": {
+    "src_hash": "14bc3f6553c127a76ab72757a60108f0",
+    "text": "exevo vis hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:39.545851Z"
+  },
+  "spell.ultimate_ice_strike.words": {
+    "src_hash": "f8d1aa9ce25522aebd5adbb04d2b4b5f",
+    "text": "exori max frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:39.546218Z"
+  },
+  "spell.buzz.name": {
+    "src_hash": "f285bec73b34c6b77026c180aae0e5ba",
+    "text": "Zumbido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:39.546410Z"
+  },
+  "spell.buzz.words": {
+    "src_hash": "9649bc31b35fcdfa4dc4381fe9415be9",
+    "text": "exori infir vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:39.546661Z"
+  },
+  "spell.holy_flash.name": {
+    "src_hash": "b6ea61e581046ccc47d1e52af1bab082",
+    "text": "Santo destello",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:43.476717Z"
+  },
+  "spell.strong_ice_strike.words": {
+    "src_hash": "8d426dfe2e19a7b0b4bafe5754f13994",
+    "text": "exori gran frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:43.477158Z"
+  },
+  "spell.strong_terra_strike.words": {
+    "src_hash": "3d0c9984bfb89686f78843061255ba18",
+    "text": "exori gran tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:43.477484Z"
+  },
+  "spell.lightning.name": {
+    "src_hash": "457ba641340a812b28f949a26fca3e7b",
+    "text": "Iluminación",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:43.477692Z"
+  },
+  "spell.lightning.words": {
+    "src_hash": "438f50dd16d80457c23cb4688227ccbe",
+    "text": "exori amp vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:46.092651Z"
+  },
+  "spell.ultimate_energy_strike.words": {
+    "src_hash": "6a98e3c2667e5e67987b8becab6f7c9f",
+    "text": "exori max vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:46.092967Z"
+  },
+  "spell.annihilation.words": {
+    "src_hash": "c7b4b515ce2f8412092931dad7ea2955",
+    "text": "exori gran ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:46.093268Z"
+  },
+  "spell.terra_burst.words": {
+    "src_hash": "9277c181b43a7d0b5a4f2a0f1d7128ff",
+    "text": "exevo ulus tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:46.093647Z"
+  },
+  "spell.chill_out.name": {
+    "src_hash": "c6d7b07c56240ef951d7e9d20f220c7b",
+    "text": "Relajarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:48.280891Z"
   }
 }

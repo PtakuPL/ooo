@@ -5865,11 +5865,11 @@
   },
   "spell.divine_dazzle.name": {
     "src_hash": "87edc94827728bb3d565f923ab4e4f1b",
-    "text": "Divine Dazzle",
+    "text": "Boski blask",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:23:56.723434Z"
+    "updated_at": "2026-02-17T08:34:12.231757Z"
   },
   "item.11543.name": {
     "src_hash": "7ea70296e738e1defb9b7ba1719cf2ca",
@@ -83841,11 +83841,11 @@
   },
   "spell.challenge.name": {
     "src_hash": "b5f5623b6137a89a1dadf079a5e92266",
-    "text": "Challenge",
+    "text": "Wyzwanie",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:31:03.041008Z"
+    "updated_at": "2026-02-17T08:34:09.127060Z"
   },
   "quests.actions_coral.msg_1": {
     "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
@@ -85569,11 +85569,11 @@
   },
   "spell.invisible.name": {
     "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
-    "text": "Invisibility",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Niewidzialność",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T12:17:59.970620Z"
+    "updated_at": "2026-02-17T08:34:06.486986Z"
   },
   "spell.light.name": {
     "src_hash": "9914a0ce04a7b7b6a8e39bec55064b82",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:43:05.284126Z"
+    "updated_at": "2026-02-17T08:33:50.502937Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:43:05.284947Z"
+    "updated_at": "2026-02-17T08:33:50.503759Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -115430,5 +115430,93 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T08:24:16.725886Z"
+  },
+  "spell.divine_empowerment.words": {
+    "src_hash": "fecb35dc3ae0be75735259c1a706d017",
+    "text": "utevo grav san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:06.487415Z"
+  },
+  "spell.avatar_of_nature.words": {
+    "src_hash": "b496f0447b1e9762d7d0bfbaf14c931a",
+    "text": "uteta res dru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:09.126494Z"
+  },
+  "spell.blood_rage.words": {
+    "src_hash": "ac7d6aacc7d8bf76df0da878c26909b1",
+    "text": "utito tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:09.126835Z"
+  },
+  "spell.sharpshooter.words": {
+    "src_hash": "e26849bac30a0495a8c22f443b809444",
+    "text": "utito tempo san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:09.127345Z"
+  },
+  "spell.creature_illusion.words": {
+    "src_hash": "7f7161483061732b84fd592d3bdc7516",
+    "text": "utevo res ina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:09.127629Z"
+  },
+  "spell.ultimate_light.words": {
+    "src_hash": "8fedb1a3fb846e73f3ba3a5cf4d8acc3",
+    "text": "utevo vis lux",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:12.231485Z"
+  },
+  "spell.divine_dazzle.words": {
+    "src_hash": "c43346a515abc6ef758e2706da82a909",
+    "text": "exana amp res",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:12.232161Z"
+  },
+  "spell.swift_foot.words": {
+    "src_hash": "b50209f50e0d3589d320bdc0d839f00b",
+    "text": "utamo tempo san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:12.232483Z"
+  },
+  "spell.conjure_poisoned_arrow.words": {
+    "src_hash": "ae0b85856f49bca68bd5b36795eb605b",
+    "text": "exevo con pox",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:14.456068Z"
+  },
+  "spell.conjure_arrow.words": {
+    "src_hash": "2547a9ef7874116be494ac6cd2ce7577",
+    "text": "exevo con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:14.456453Z"
+  },
+  "spell.lightest_magic_missile_rune.words": {
+    "src_hash": "4ea079a0e8a5348c34bc0c1a1e8afdfd",
+    "text": "adori dis min vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:34:14.456879Z"
   }
 }

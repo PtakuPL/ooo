@@ -1,80 +1,18 @@
 {
-  "timestamp": "2026-02-17T08:30:54.716316Z",
+  "timestamp": "2026-02-17T08:34:51.985876Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 38,
   "issues_by_type": {
-    "identical_to_en": 9,
-    "identical_to_en_exempt": 6,
+    "identical_to_en_exempt": 4,
     "artifact_token": 16,
-    "suspicious_log_high": 174,
-    "suspicious_log_critical": 26,
+    "identical_to_en": 22,
+    "suspicious_log_high": 141,
+    "suspicious_log_critical": 37,
+    "suspicious_log_low": 22,
     "suspicious_rejected_critical": 171,
     "suspicious_rejected_high": 29
   },
   "issues": [
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -186,6 +124,160 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "spell.divine_empowerment.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utevo grav san",
+      "translated": "utevo grav san"
+    },
+    {
+      "key": "spell.avatar_of_nature.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "uteta res dru",
+      "translated": "uteta res dru"
+    },
+    {
+      "key": "spell.blood_rage.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utito tempo",
+      "translated": "utito tempo"
+    },
+    {
+      "key": "spell.sharpshooter.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utito tempo san",
+      "translated": "utito tempo san"
+    },
+    {
+      "key": "spell.creature_illusion.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utevo res ina",
+      "translated": "utevo res ina"
+    },
+    {
+      "key": "spell.ultimate_light.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utevo vis lux",
+      "translated": "utevo vis lux"
+    },
+    {
+      "key": "spell.divine_dazzle.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exana amp res",
+      "translated": "exana amp res"
+    },
+    {
+      "key": "spell.swift_foot.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utamo tempo san",
+      "translated": "utamo tempo san"
+    },
+    {
+      "key": "spell.conjure_poisoned_arrow.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exevo con pox",
+      "translated": "exevo con pox"
+    },
+    {
+      "key": "spell.conjure_arrow.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exevo con",
+      "translated": "exevo con"
+    },
+    {
+      "key": "spell.lightest_magic_missile_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adori dis min vis",
+      "translated": "adori dis min vis"
+    },
+    {
+      "key": "spell.ice_wave.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo frigo hur",
+      "translated": "exevo frigo hur"
+    },
+    {
+      "key": "spell.fire_wave.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo flam hur",
+      "translated": "exevo flam hur"
+    },
+    {
+      "key": "spell.energy_wave.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo vis hur",
+      "translated": "exevo vis hur"
+    },
+    {
+      "key": "spell.ultimate_ice_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori max frigo",
+      "translated": "exori max frigo"
+    },
+    {
+      "key": "spell.buzz.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori infir vis",
+      "translated": "exori infir vis"
+    },
+    {
+      "key": "spell.strong_ice_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori gran frigo",
+      "translated": "exori gran frigo"
+    },
+    {
+      "key": "spell.strong_terra_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori gran tera",
+      "translated": "exori gran tera"
+    },
+    {
+      "key": "spell.lightning.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori amp vis",
+      "translated": "exori amp vis"
+    },
+    {
+      "key": "spell.ultimate_energy_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori max vis",
+      "translated": "exori max vis"
+    },
+    {
+      "key": "spell.annihilation.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori gran ico",
+      "translated": "exori gran ico"
+    },
+    {
+      "key": "spell.terra_burst.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo ulus tera",
+      "translated": "exevo ulus tera"
     }
   ],
   "threshold": 10,

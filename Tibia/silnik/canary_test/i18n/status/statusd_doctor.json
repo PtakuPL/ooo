@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T08:32:25.333711Z",
+  "timestamp": "2026-02-17T08:34:29.566790Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
   "warnings_count": 12,
   "ok_count": 11,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=36286 rate=170.613% window=6.0h top_lang=ro:10284 per_lang=[ro:10284(284.245%/critical),ru:10103(253.399%/critical),es:10038(228.396%/critical),pl:2873(119.958%/critical),sv:1028(72.14%/warning)] per_domain=[items.json:15128(781.002%/critical),npc.json:11231(214.619%/critical),monsters.json:3085(161.097%/critical),html.json:1424(99.72%/critical),otclient_modules.json:1308(124.335%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=36200 rate=171.005% window=6.0h top_lang=ro:10249 per_lang=[ro:10249(284.378%/critical),ru:10071(255.739%/critical),es:9992(228.18%/critical),pl:2904(120.348%/critical),sv:1028(72.14%/warning)] per_domain=[items.json:15128(781.002%/critical),npc.json:11185(214.395%/critical),monsters.json:3085(161.097%/critical),html.json:1424(99.72%/critical),otclient_modules.json:1308(124.335%/critical)]"
   ],
   "warnings": [
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=1330775 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
@@ -23,15 +23,15 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 72h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (117s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (73s)",
-    "guard_report_fresh (125s)",
-    "dispatch_fresh (130s)",
+    "heartbeat_fresh (70s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (63s)",
+    "guard_report_fresh (14s)",
+    "dispatch_fresh (12s)",
     "worker_pid_alive (1330775)",
-    "worker_process_topology_ok (main=1330775 matching=2 extras=1 desc=1 foreign=0 oldest_desc=90s oldest_foreign=0s status=single_descendant_observed)",
-    "queue_freshness_ok (117s, WARN>900s CRIT>1800s)",
+    "worker_subprocess_observed (main=1330775 matching=4 extras=3 desc=3 foreign=0 oldest_desc=11s oldest_foreign=0s status=extra_descendants_detected)",
+    "queue_freshness_ok (241s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=616.6 cycle_delta=1094 best_quality_drop=63.413%)",
+    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=618.6 cycle_delta=1096 best_quality_drop=63.413%)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
     "repair_tuning_active (samples_2h=30)"
   ],
@@ -68,8 +68,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 616.572,
-    "cycle_delta": 1094,
+    "active_minutes": 618.642,
+    "cycle_delta": 1096,
     "best_quality_drop_pct": 63.413,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -103,26 +103,32 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "ok",
-    "status": "single_descendant_observed",
-    "reason": "single_descendant_worker_subprocess",
+    "severity": "info",
+    "status": "extra_descendants_detected",
+    "reason": "multiple_descendant_worker_processes",
     "main_pid": 1330775,
     "matched_pids": [
       1330775,
-      1761263
+      1763385,
+      1763398,
+      1763400
     ],
     "extra_pids": [
-      1761263
+      1763385,
+      1763398,
+      1763400
     ],
     "descendant_extra_pids": [
-      1761263
+      1763385,
+      1763398,
+      1763400
     ],
     "foreign_extra_pids": [],
-    "total_matching": 2,
-    "extra_count": 1,
-    "descendant_extra_count": 1,
+    "total_matching": 4,
+    "extra_count": 3,
+    "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 90,
+    "oldest_descendant_age_s": 11,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

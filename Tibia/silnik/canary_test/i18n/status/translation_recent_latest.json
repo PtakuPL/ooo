@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-17T01:15:33.100947Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T01:17:16.576493Z",
+  "language": "ru",
+  "json_file": "html.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "html.paymentconfirm.html.text2",
+      "en": "I have read and I agree to the Extended Tibia Service Agreement and the Tibia Privacy Policy.",
+      "translated": "Я прочитал(а) и согласен(на) с Расширенным соглашением об услугах Tibia и Политикой конфиденциальности Tibia.",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "html.boostablebosses.html.text3",
+      "en": "Defeating a boosted boss is extra lucrative. Boosted bosses contain more loot and count more kills for your Bosstiary.",
+      "translated": "Победа над усиленным боссом особенно выгодна. Усиленные боссы содержат больше добычи и засчитывают больше убийств для вашего Bosstiary.",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "html.achievements.html.text1",
+      "en": "Achievements are extra goals that you can accomplish while playing Tibia. This list offers you an overview of all common achievements that can be reached in Tibia. However, there are also a number of ",
+      "translated": "Достижения — это дополнительные цели, которые вы можете выполнять во время игры в Tibia. Этот список даёт обзор всех общих достижений, которые можно получить в Tibia. Однако существует также ряд ",
+      "source": "simple"
+    },
+    {
+      "key": "html.achievements.html.text2",
+      "en": "Compare yourself with other characters of your game world in the \"Highscores\". Achievements yield a certain number of points depending on their grade of difficulty:",
+      "translated": "Сравните себя с другими персонажами вашего мира в «Highscores». Достижения дают определённое количество очков в зависимости от уровня сложности:",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "html.downloads.html.text2",
+      "en": "Processor: 1.5 GHz Pentium 4 or equivalent with SSE2 instruction set support",
+      "translated": "Процессор: Pentium 4 1,5 ГГц или эквивалент с поддержкой набора инструкций SSE2",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "html.editdescription.html.text1",
+      "en": "Edit Guild Description",
+      "translated": "Редактировать Guild Описание",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "html.activitylog.html.text1",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Нетv 28 2022, 14:10:18",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "html.activitylog.html.text3",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Нетv 28 2022, 14:10:18",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "html.activitylog.html.text5",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Нетv 28 2022, 14:10:18",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "html.require.text4",
+      "en": "You need PHP 7.2.5 or newer, with ",
+      "translated": "Вам нужен PHP 7.2.5 или новее, с ",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "html.credits.text1",
+      "en": "Credits &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Благодарности &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "html.user.text1",
+      "en": "User Guide &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Руководство пользователя &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "html.user.text5",
+      "en": "Authentication Application (2FA)",
+      "translated": "Приложение-аутентификатор (2FA)",
       "source": "tm"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
+      "key": "html.privileges.text1",
+      "en": "User management &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Управление пользователями &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
+      "key": "html.privileges.text3",
+      "en": "Within phpMyAdmin, user management is controlled via the ",
+      "translated": "В phpMyAdmin управление пользователями осуществляется через ",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "html.import_export.text1",
+      "en": "Import and export &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Импорт и экспорт &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "html.config.text1",
+      "en": "Configuration &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Конфигурация &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "html.two_factor.text1",
+      "en": "Two-factor authentication &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Двухфакторная аутентификация &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "html.transformations.text1",
+      "en": "Transformations &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Преобразования &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "html.copyright.text1",
+      "en": "Copyright &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Авторские права &#8212; документация phpMyAdmin 5.2.2",
       "source": "tm"
     }
   ]

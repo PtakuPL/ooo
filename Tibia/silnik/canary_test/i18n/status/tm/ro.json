@@ -27606,5 +27606,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:14:30.603235Z"
+  },
+  "web.tpl.commands.form.td_2": {
+    "src_hash": "d0042a700e9bdf79689d63ee6846dc0e",
+    "text": "Descriere:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:55.267592Z"
+  },
+  "web.tpl.spells.th_17": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:55.269765Z"
+  },
+  "web.tpl.admin.menus.js.label_1": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Nume:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:55.278619Z"
+  },
+  "web.tpl.points.th_3": {
+    "src_hash": "fd85589dda3936cae9f57edaa19cbdef",
+    "text": "Puncte Premium",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:55.286392Z"
+  },
+  "html.guilds.list.html.text3": {
+    "src_hash": "15be5768d3c4652ccbdbf688ff580765",
+    "text": "Înainte de a putea crea o breaslă, trebuie să vă autentificați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:55.289425Z"
+  },
+  "web.tpl.admin.tools.account.label_2": {
+    "src_hash": "a2aa6b4bebf569d55787e53bb224c072",
+    "text": "Monede",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:15:56.691327Z"
+  },
+  "web.tpl.admin.tools.account.label_3": {
+    "src_hash": "9f9d69daced9fcbe524c53e8d6eb11b2",
+    "text": "Zile Premium",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:00.313385Z"
+  },
+  "web.tpl.highscores.td_1": {
+    "src_hash": "f3f43e30c8c7d78c6ac0173515e57a00",
+    "text": "Filtre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:00.313579Z"
+  },
+  "web.tpl.highscores.b_2": {
+    "src_hash": "021da1b20f73dc252361a54d80497ef3",
+    "text": "Rang",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:00.313776Z"
+  },
+  "web.tpl.highscores.b_3": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Tinuta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:00.313942Z"
+  },
+  "web.tpl.highscores.b_5": {
+    "src_hash": "75dd5f1160a3f02b6fae89c54361a1b3",
+    "text": "Puncte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:00.314163Z"
+  },
+  "web.tpl.highscores.b_6": {
+    "src_hash": "2507af229dd449f68c0c596e40b3c446",
+    "text": "Alege o profesie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:04.437860Z"
+  },
+  "web.tpl.monster.b_1": {
+    "src_hash": "997c785cce775d7c1014ffbd6e446d50",
+    "text": "Informații generale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:04.438166Z"
+  },
+  "web.tpl.monster.b_2": {
+    "src_hash": "5dda54771df2b5a6e1b8c2a9024ad0f4",
+    "text": "Invocabil:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:04.438383Z"
+  },
+  "web.tpl.monster.b_3": {
+    "src_hash": "5d51e34beb893e462f4bb12ffcc00a32",
+    "text": "Convingător:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:04.438589Z"
+  },
+  "web.tpl.monster.b_4": {
+    "src_hash": "461601fa77437beae7c3c16b07267c1d",
+    "text": "Somatia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:04.438758Z"
+  },
+  "web.tpl.monster.b_5": {
+    "src_hash": "d342f8597c3ea420117bfb09888723bd",
+    "text": "Voci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:10.997398Z"
+  },
+  "web.tpl.monster.b_6": {
+    "src_hash": "9822ec73dad708648ce068d2219a7884",
+    "text": "Imunități:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:10.997612Z"
+  },
+  "web.tpl.monster.th_7": {
+    "src_hash": "6794e7b16f55b952b04e118ec3a7cc78",
+    "text": "Pradă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:10.997781Z"
+  },
+  "web.tpl.news.archive.b_1": {
+    "src_hash": "634e1eea8c67a8034705c5510c21c3d0",
+    "text": "Arhiva de stiri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:10.997981Z"
+  },
+  "web.tpl.buttons.change_email.set_1": {
+    "src_hash": "d035d6b877b448da4853fe122529ec9c",
+    "text": "Schimbați e-mailul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:10.998293Z"
+  },
+  "web.tpl.buttons.logout.set_1": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Deconectare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:16.786784Z"
+  },
+  "web.tpl.account.characters.change_sex.set_1": {
+    "src_hash": "57be2870054258446e4e56e010454465",
+    "text": "Schimbați sexul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:16.787027Z"
+  },
+  "web.tpl.account.characters.change_sex.span_1": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Caracter:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:16.787215Z"
+  },
+  "web.tpl.account.characters.change_sex.span_2": {
+    "src_hash": "390c81cbf7011c04d897941327eb20eb",
+    "text": "Sex nou:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:16.787390Z"
+  },
+  "html.web_status.text2": {
+    "src_hash": "f117f221f18ee1d5aa2bcd5cdbe7db51",
+    "text": "{{ closed_message }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:22.693680Z"
+  },
+  "html.web_status.text3": {
+    "src_hash": "dc0d05f23e55b824d37a05a811db4491",
+    "text": "(vizibil doar dacă este închis)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:22.694369Z"
+  },
+  "html.points.html.text1": {
+    "src_hash": "573af0142a3204495daca1602eacf45b",
+    "text": "Top 10 - Cele mai multe puncte premium",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:22.694978Z"
+  },
+  "html.points.html.text2": {
+    "src_hash": "269f863bd5f80adb172df5b7b81113bb",
+    "text": "{{ result.premium_points }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:22.695642Z"
+  },
+  "html.balance.html.text1": {
+    "src_hash": "d7173cb56af09288ff638384c158dff3",
+    "text": "{{ result.balance }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:25.408500Z"
+  },
+  "html.statistics.html.text1": {
+    "src_hash": "d9f69127759bec99ace3fc4820d502fd",
+    "text": "{{ count.total_accounts }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:25.409545Z"
+  },
+  "html.statistics.html.text2": {
+    "src_hash": "02ddc0097b6f586d69b0c078107a1c9d",
+    "text": "{{ count.total_players }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:25.410191Z"
+  },
+  "html.statistics.html.text3": {
+    "src_hash": "1399b66db0860c109e60f3866bf3d0df",
+    "text": "{{ count.total_monsters }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:29.088425Z"
+  },
+  "html.statistics.html.text4": {
+    "src_hash": "7a3fc283239c5b027863d8379f41f198",
+    "text": "{{ count.total_guilds }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:29.088754Z"
+  },
+  "html.statistics.html.text5": {
+    "src_hash": "7a45c698a83ef947e1c804bfde46ff75",
+    "text": "{{ count.total_houses }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:29.089052Z"
+  },
+  "web.tpl.account.create.set_1": {
+    "src_hash": "641342bfe375ce1daa5ccf2eb31489ef",
+    "text": "Tabelul 5",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:29.089232Z"
+  },
+  "web.tpl.account.create.b_2": {
+    "src_hash": "d1a113b31b7376697715bb824d53ceef",
+    "text": "Vă rugăm să bifați următoarea casetă de validare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:29.089587Z"
+  },
+  "web.tpl.experience_stages.h3_1": {
+    "src_hash": "3c939c4f484803c7bf47128d8f24e101",
+    "text": "Etapele experienței",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:33.176588Z"
+  },
+  "web.tpl.experience_stages.b_2": {
+    "src_hash": "419ecf68d1fc94462ae2804d60fd5734",
+    "text": "Tabelul etapelor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:33.176821Z"
+  },
+  "web.tpl.experience_stages.b_4": {
+    "src_hash": "64c6da2436465d11573858d46056b95d",
+    "text": "Etapă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:16:33.176996Z"
   }
 }

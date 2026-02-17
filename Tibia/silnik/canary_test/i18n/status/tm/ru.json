@@ -33534,5 +33534,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:43:47.988674Z"
+  },
+  "questlog.quest_21.mission_3.name": {
+    "src_hash": "6120e120be5c90e1ba9483f89b67cf4b",
+    "text": "Пифий Гнилой",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:49.457473Z"
+  },
+  "questlog.quest_37.name": {
+    "src_hash": "3e9ff2fb268bac02d2f150cae0aab8c5",
+    "text": "Первый дракон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:49.507699Z"
   }
 }

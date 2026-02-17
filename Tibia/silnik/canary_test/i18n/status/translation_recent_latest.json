@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:46:01.277579Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 51,
+  "timestamp": "2026-02-17T06:47:38.520760Z",
+  "language": "ro",
+  "json_file": "otclient_modules.json",
+  "translated": 37,
   "entries": [
     {
-      "key": "npc.sister_of_jack.greet_msg_1",
-      "en": "Mh hello there. What can I do for you?",
-      "translated": "Hola, hola. ¿Qué puedo hacer por ti?",
+      "key": "otclient_modules.skills_otui.tr_52",
+      "en": "Capacity",
+      "translated": "Capacitate",
       "source": "simple"
     },
     {
-      "key": "npc.skjaar.farewell_msg_1",
-      "en": "Farewell, |PLAYERNAME|!",
-      "translated": "¡Adiós, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "otclient_modules.channelswindow_otui.tr_2",
+      "en": "Open",
+      "translated": "Deschide",
+      "source": "google_translate"
     },
     {
-      "key": "npc.skjaar.greet_msg_1",
-      "en": "Another creature who believes thinks physical strength is more important than wisdom! Why are you disturbing me?",
-      "translated": "¡Otra criatura que cree piensa que la fuerza física es más importante que la sabiduría! ¿Por qué me molestas?",
-      "source": "simple"
+      "key": "otclient_modules.channelswindow_otui.tr_3",
+      "en": "Open a private message channel",
+      "translated": "Deschide un canal de mesaje private",
+      "source": "google_translate"
     },
     {
-      "key": "npc.skjaar.walkaway_msg_1",
-      "en": "Run away, unworthy |PLAYERNAME|!",
-      "translated": "¡Huye, indigno |PLAYERNAME|!",
-      "source": "simple"
+      "key": "otclient_modules.channelswindow_otui.tr_4",
+      "en": "Channels",
+      "translated": "Canale",
+      "source": "google_translate"
     },
     {
-      "key": "npc.spectulus.farewell_msg_1",
-      "en": "Yes yes. Goodbye |PLAYERNAME|.",
-      "translated": "Si si. Adiós |PLAYERNAME|.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_1",
+      "en": "Blessings",
+      "translated": "Binecuvântări",
+      "source": "google_translate"
     },
     {
-      "key": "npc.spectulus.greet_msg_1",
-      "en": "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.",
-      "translated": "¡Hola |PLAYERNAME|! Llegas tarde, ¿no tienes noción del tiempo? Mi misión es de suma importancia. Si no estás interesado en ayudarme, es mejor que te vayas.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_10",
+      "en": "From Amplification",
+      "translated": "De la Amplificare",
+      "source": "google_translate"
     },
     {
-      "key": "npc.spectulus.greet_msg_2",
-      "en": "Ah hello again |PLAYERNAME|! I still have one or two other {missions} for you. There are also some {tasks} someone needs to attend to.",
-      "translated": "Ah hola de nuevo |PLAYERNAME|! Todavía tengo uno o dos {missions} más para ti. También hay algunos {tasks} que alguien debe atender.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_11",
+      "en": "From Equipment",
+      "translated": "De la Echipamente",
+      "source": "google_translate"
     },
     {
-      "key": "npc.spectulus.greet_msg_3",
-      "en": "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.",
-      "translated": "¡Hola |PLAYERNAME|! Llegas tarde, ¿no tienes noción del tiempo? Mi misión es de suma importancia. Si no estás interesado en ayudarme, es mejor que te vayas.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_12",
+      "en": "Momentum",
+      "translated": "Impuls",
+      "source": "google_translate"
     },
     {
-      "key": "npc.spectulus.walkaway_msg_1",
-      "en": "Yes yes. Goodbye |PLAYERNAME|.",
-      "translated": "Si si. Adiós |PLAYERNAME|.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_13",
+      "en": "Resistances",
+      "translated": "Rezistențe",
+      "source": "google_translate"
     },
     {
-      "key": "npc.stricken_soul.greet_msg_1",
-      "en": "This place is... haunted... heed my warning... there are... ghooooooosts here...! Why are you giving me that... look? I am certain, there aaaaaaare ghosts here - I've seen them! Do you believe me?",
-      "translated": "Este lugar está... embrujado... presta atención a mi advertencia... ¡hay... fantasmas aquí...! ¿Por qué me das esa... mirada? Estoy seguro de que aquí hay fantasmas, ¡los he visto! ¿Me crees?",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_14",
+      "en": "Reflect Physical",
+      "translated": "Reflectă fizică",
+      "source": "google_translate"
     },
     {
-      "key": "npc.stricken_soul.greet_msg_2",
-      "en": "Gree... tings.",
-      "translated": "Saludos.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_15",
+      "en": "Percent",
+      "translated": "La sută",
+      "source": "google_translate"
     },
     {
-      "key": "npc.stutch.greet_1",
-      "en": "HAIL TO THE KING!",
-      "translated": "¡VELA AL REY!",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_16",
+      "en": "Flat",
+      "translated": "Plat",
+      "source": "google_translate"
     },
     {
-      "key": "npc.stutch.greet_2",
-      "en": "HAIL TO THE KING!",
-      "translated": "¡VELA AL REY!",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_17",
+      "en": "Magic Shield Capacity",
+      "translated": "Capacitatea Scutului Magic",
+      "source": "google_translate"
     },
     {
-      "key": "npc.stutch.walkaway_msg_1",
-      "en": "LONG LIVE THE KING!",
-      "translated": "¡VIVA EL REY!",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_18",
+      "en": "From Wheel",
+      "translated": "De la roată",
+      "source": "google_translate"
     },
     {
-      "key": "npc.suzy.farewell_msg_1",
-      "en": "Have a nice day.",
-      "translated": "Que tenga un lindo día.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_19",
+      "en": "From Amplification",
+      "translated": "De la Amplificare",
+      "source": "google_translate"
     },
     {
-      "key": "npc.suzy.walkaway_msg_1",
-      "en": "Have a nice day.",
-      "translated": "Que tenga un lindo día.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_2",
+      "en": "From Bonus",
+      "translated": "De la Bonus",
+      "source": "google_translate"
     },
     {
-      "key": "npc.swolt.sendtrade_msg_1",
-      "en": "Take a look, but not a sip before you've paid. And I hope it stays like this and you don't get any strange ideas about {rice}.",
-      "translated": "Echa un vistazo, pero ni un sorbo antes de pagar. Y espero que siga así y no se te ocurra ninguna idea extraña sobre {rice}.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_20",
+      "en": "From Base",
+      "translated": "De la bază",
+      "source": "google_translate"
     },
     {
-      "key": "npc.taegen.greet_msg_1",
-      "en": "Be greeted, mortal being!",
-      "translated": "¡Sea saludado, ser mortal!",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_21",
+      "en": "Dodge",
+      "translated": "Se eschiva",
+      "source": "google_translate"
     },
     {
-      "key": "npc.taegen.sendtrade_msg_1",
-      "en": "Im carving bolts and arrows and i also craft bows anda spears.If you'd like to buy some ammunition, take a look.",
-      "translated": "Estoy tallando pernos y flechas y también fabrico arcos y lanzas. Si quieres comprar municiones, echa un vistazo.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_22",
+      "en": "From Wheel",
+      "translated": "De la roată",
+      "source": "google_translate"
     },
     {
-      "key": "npc.talila.greet_msg_1",
-      "en": "Greatings, mortal beigin.",
-      "translated": "Saludos, comienzo mortal.",
-      "source": "simple"
+      "key": "otclient_modules.character.tr_23",
+      "en": "From Equipment",
+      "translated": "De la Echipamente",
+      "source": "google_translate"
     }
   ]
 }

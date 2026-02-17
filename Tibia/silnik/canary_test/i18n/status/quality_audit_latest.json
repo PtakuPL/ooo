@@ -1,60 +1,130 @@
 {
-  "timestamp": "2026-02-17T06:46:03.646213Z",
+  "timestamp": "2026-02-17T06:47:41.349905Z",
   "checked_entries": 100,
-  "issues_found": 6,
+  "issues_found": 16,
   "issues_by_type": {
-    "identical_to_en": 2,
+    "identical_to_en": 16,
     "identical_to_en_exempt": 4,
-    "artifact_token": 4,
-    "suspicious_log_high": 179,
-    "suspicious_log_critical": 21,
-    "suspicious_rejected_high": 29,
-    "suspicious_rejected_critical": 171
+    "suspicious_log_high": 136,
+    "suspicious_log_critical": 13,
+    "suspicious_log_low": 51,
+    "suspicious_rejected_high": 20,
+    "suspicious_rejected_critical": 180
   },
   "issues": [
     {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "es",
+      "key": "raid.lizards.name",
+      "lang": "it",
       "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
+      "en": "Lizards",
+      "translated": "Lizards"
     },
     {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "es",
+      "key": "raid.cyclops.name",
+      "lang": "it",
       "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
+      "en": "Cyclops",
+      "translated": "Cyclops"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+      "key": "raid.wild_horses.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+      "key": "raid.sheng.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sheng",
+      "translated": "Sheng"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+      "key": "raid.munster.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+      "key": "raid.teleskor.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "raid.furyosa.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "raid.chayenne.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "raid.omrafir.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.yeti.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "raid.gargoyle.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "raid.nomad.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "raid.cobra.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.terramite.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

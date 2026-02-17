@@ -49318,5 +49318,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:45:23.746694Z"
+  },
+  "otclient_modules.changename_otui.tr_5": {
+    "src_hash": "55c7e6abf7d449577090584484cefe0b",
+    "text": "Introduceți noul nume pentru personajul dvs.:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.401528Z"
+  },
+  "otclient_modules.changename_otui.tr_8": {
+    "src_hash": "b315e1866d0715060e38cf1922640769",
+    "text": "Introduceți un nou nume de caracter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.402872Z"
+  },
+  "otclient_modules.character.tr_4": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Reflecția daunelor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.406492Z"
+  },
+  "otclient_modules.character_otui.tr_87": {
+    "src_hash": "3b8f7696879f77dfc8c74aa8df8db24b",
+    "text": "Capacitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.421981Z"
+  },
+  "otclient_modules.characterlist_otui.tr_9": {
+    "src_hash": "76a40e4f974fd895a0a2598c1cee28b4",
+    "text": "Caracter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.428299Z"
+  },
+  "otclient_modules.game_cyclopedia.tr_4": {
+    "src_hash": "e850f728cac75fd2a96562687c663ebd",
+    "text": "Deschide dialogul Bostiary",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.473512Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_9": {
+    "src_hash": "76a40e4f974fd895a0a2598c1cee28b4",
+    "text": "Caracter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.482450Z"
+  },
+  "otclient_modules.house.tr_100": {
+    "src_hash": "0059ab21743c19543af55cf48bcc4b1d",
+    "text": "Case proprii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.515713Z"
+  },
+  "otclient_modules.house.tr_101": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.516249Z"
+  },
+  "otclient_modules.house.tr_48": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.522432Z"
+  },
+  "otclient_modules.house.tr_54": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.523796Z"
+  },
+  "otclient_modules.house.tr_60": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.524928Z"
+  },
+  "otclient_modules.house.tr_66": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.526128Z"
+  },
+  "otclient_modules.house.tr_98": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.531177Z"
+  },
+  "otclient_modules.npctrade_otui.tr_15": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista articolelor pe care le puteți vinde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.579835Z"
+  },
+  "otclient_modules.npctrade_otui.tr_17": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista articolelor pe care le puteți cumpăra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.581200Z"
+  },
+  "otclient_modules.skills_otui.tr_4": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Reflecția daunelor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.614977Z"
+  },
+  "otclient_modules.skills_otui.tr_52": {
+    "src_hash": "3b8f7696879f77dfc8c74aa8df8db24b",
+    "text": "Capacitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:10.619985Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_2": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Deschide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:19.039360Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_3": {
+    "src_hash": "9bc87291763452b34e94052a2237531f",
+    "text": "Deschide un canal de mesaje private",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:19.040275Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_4": {
+    "src_hash": "14cb425d8170ed04f3d8016d5a0ccf20",
+    "text": "Canale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:24.115181Z"
+  },
+  "otclient_modules.character.tr_1": {
+    "src_hash": "c1e1720c794250f5f1eeec1221d407e4",
+    "text": "Binecuvântări",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:24.115627Z"
+  },
+  "otclient_modules.character.tr_10": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "De la Amplificare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:24.115994Z"
+  },
+  "otclient_modules.character.tr_11": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:24.116313Z"
+  },
+  "otclient_modules.character.tr_12": {
+    "src_hash": "37323780191d51a33d295ac10fb98f06",
+    "text": "Impuls",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:24.116566Z"
+  },
+  "otclient_modules.character.tr_13": {
+    "src_hash": "fc83082bceda55a1c217dde140d278a3",
+    "text": "Rezistențe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:30.712129Z"
+  },
+  "otclient_modules.character.tr_14": {
+    "src_hash": "90045eaaf60ed77205fdc0d8066e2bab",
+    "text": "Reflectă fizică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:30.713091Z"
+  },
+  "otclient_modules.character.tr_15": {
+    "src_hash": "adaaee4b22041c27198d410c68d952c9",
+    "text": "La sută",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:30.713630Z"
+  },
+  "otclient_modules.character.tr_16": {
+    "src_hash": "745e3db6a7ffd50e1a72b39482f0882d",
+    "text": "Plat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:30.714299Z"
+  },
+  "otclient_modules.character.tr_17": {
+    "src_hash": "453b284354c516de31dff38fa5082a17",
+    "text": "Capacitatea Scutului Magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:30.715109Z"
+  },
+  "otclient_modules.character.tr_18": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:36.248576Z"
+  },
+  "otclient_modules.character.tr_19": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "De la Amplificare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:36.249010Z"
+  },
+  "otclient_modules.character.tr_2": {
+    "src_hash": "e77090418ce18db48ce38a0bc92460e3",
+    "text": "De la Bonus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:36.249324Z"
+  },
+  "otclient_modules.character.tr_20": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:36.249622Z"
+  },
+  "otclient_modules.character.tr_21": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Se eschiva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:36.250054Z"
+  },
+  "otclient_modules.character.tr_22": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:38.292043Z"
+  },
+  "otclient_modules.character.tr_23": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:47:38.292925Z"
   }
 }

@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:00:23.282852Z"
+    "updated_at": "2026-02-17T08:07:20.575051Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -52758,5 +52758,189 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:05:12.387645Z"
+  },
+  "web.tpl.forum.new_post.b_3": {
+    "src_hash": "bf4c5a49294f9bf50148f3766e143d35",
+    "text": "Subiect:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.242407Z"
+  },
+  "web.tpl.forum.new_post.b_4": {
+    "src_hash": "940663fd4428d2c86f9a4780b6574028",
+    "text": "Mesaj:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.242809Z"
+  },
+  "web.tpl.admin.pages.th_2": {
+    "src_hash": "b78a3223503896721cca1303f776159b",
+    "text": "Titlu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.250841Z"
+  },
+  "web.tpl.forum.edit_post.b_3": {
+    "src_hash": "bf4c5a49294f9bf50148f3766e143d35",
+    "text": "Subiect:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.251518Z"
+  },
+  "web.tpl.forum.edit_post.b_4": {
+    "src_hash": "940663fd4428d2c86f9a4780b6574028",
+    "text": "Mesaj:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.251774Z"
+  },
+  "web.tpl.account.change_password.set_1": {
+    "src_hash": "8f1e77e0d2be21da93cd4d9a939148f7",
+    "text": "Schimbaţi parola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.254156Z"
+  },
+  "web.tpl.account.management.set_9": {
+    "src_hash": "ac29ac870be15bac0b632b58d3c6f76b",
+    "text": "Tabelul 3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:16.257497Z"
+  },
+  "web.tpl.online.b_1": {
+    "src_hash": "a104d45665d0ca11de75217ab8618e11",
+    "text": "Statistica vocației",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:27.408716Z"
+  },
+  "web.tpl.online.b_2": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:27.408908Z"
+  },
+  "web.tpl.online.b_3": {
+    "src_hash": "e3d9d6da977f5c0361974b6814d4026e",
+    "text": "Jucători online:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:27.409172Z"
+  },
+  "web.tpl.online.b_4": {
+    "src_hash": "36a502f040ae140e799917a76d3b0851",
+    "text": "Înregistrare online:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:33.907965Z"
+  },
+  "web.tpl.online.b_5": {
+    "src_hash": "653c7035c115308bb54cfdf99e5e1e69",
+    "text": "Centru de date despre locație:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:33.908307Z"
+  },
+  "web.tpl.online.b_6": {
+    "src_hash": "48b526d0b591335f8259bcdd2c34c6c4",
+    "text": "Tip PvP:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:33.908502Z"
+  },
+  "web.tpl.guilds.view.set_1": {
+    "src_hash": "6788b5c154c05e43162e79993f67a657",
+    "text": "Guild Informații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:33.908911Z"
+  },
+  "web.tpl.guilds.view.set_2": {
+    "src_hash": "89892aee7ffb1dc0733777b8ad6fd437",
+    "text": "Gestionați Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:33.909284Z"
+  },
+  "web.tpl.guilds.view.set_3": {
+    "src_hash": "2d7ca5f4c91352980578888f57169250",
+    "text": "Guild Membri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:42.000400Z"
+  },
+  "web.tpl.guilds.view.set_4": {
+    "src_hash": "645b2a3180561875a648c36414cf1cd7",
+    "text": "Personaje invitate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:42.000660Z"
+  },
+  "web.tpl.guilds.view.set_5": {
+    "src_hash": "17ef7423990528bf4d4af7debb42f827",
+    "text": "Invitați un personaj",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:42.000907Z"
+  },
+  "web.tpl.guilds.view.set_6": {
+    "src_hash": "3c362f739cbb5d8f4ea2ba9328f81d39",
+    "text": "_sbutton_invitecharacter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:42.001215Z"
+  },
+  "web.tpl.guilds.view.set_7": {
+    "src_hash": "2d26152d960deeab6b514a522b4d3de8",
+    "text": "Editați rangurile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:42.001457Z"
+  },
+  "web.tpl.guilds.view.set_8": {
+    "src_hash": "f7b06e4a04387a8a6ba9841f03c86a6a",
+    "text": "_sbutton_editranks",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:47.375980Z"
+  },
+  "web.tpl.guilds.view.set_9": {
+    "src_hash": "732bdad0cef4163c359695b67ca3313f",
+    "text": "Pleacă de la Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:47.376437Z"
+  },
+  "web.tpl.guilds.view.set_10": {
+    "src_hash": "5f366df0a0a987c0553aaf095fc32bd8",
+    "text": "_sbutton_leaveguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:47.376772Z"
   }
 }

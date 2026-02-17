@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T07:01:03.459863Z"
+    "updated_at": "2026-02-17T08:07:56.188052Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -58718,5 +58718,205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:05:53.320317Z"
+  },
+  "web.tpl.team.b_15": {
+    "src_hash": "8d9da4bc0e49a50e09ac9f7e56789d39",
+    "text": "Non in linea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.061846Z"
+  },
+  "web.tpl.forum.new_post.b_1": {
+    "src_hash": "36e1a8d34180d54508cdf954e42e15c8",
+    "text": "Pubblica nuova risposta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.065553Z"
+  },
+  "web.tpl.forum.new_post.b_3": {
+    "src_hash": "bf4c5a49294f9bf50148f3766e143d35",
+    "text": "Argomento:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.065998Z"
+  },
+  "web.tpl.forum.new_post.b_4": {
+    "src_hash": "940663fd4428d2c86f9a4780b6574028",
+    "text": "Messaggio:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.066424Z"
+  },
+  "web.tpl.forum.new_post.b_5": {
+    "src_hash": "9dffbf69ffba8bc38bc4e01abf4b1675",
+    "text": "Testo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.066670Z"
+  },
+  "web.tpl.news.back_button.set_1": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Indietro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.073985Z"
+  },
+  "web.tpl.admin.pages.th_2": {
+    "src_hash": "b78a3223503896721cca1303f776159b",
+    "text": "Titolo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.074903Z"
+  },
+  "web.tpl.forum.edit_post.b_3": {
+    "src_hash": "bf4c5a49294f9bf50148f3766e143d35",
+    "text": "Argomento:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.075610Z"
+  },
+  "web.tpl.forum.edit_post.b_4": {
+    "src_hash": "940663fd4428d2c86f9a4780b6574028",
+    "text": "Messaggio:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.075878Z"
+  },
+  "web.tpl.forum.edit_post.b_5": {
+    "src_hash": "9dffbf69ffba8bc38bc4e01abf4b1675",
+    "text": "Testo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:07:52.076271Z"
+  },
+  "web.tpl.buttons.change_password.set_1": {
+    "src_hash": "8f1e77e0d2be21da93cd4d9a939148f7",
+    "text": "Cambiare la password",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:03.606691Z"
+  },
+  "web.tpl.faq.b_1": {
+    "src_hash": "1fe917b01f9a3f87fa2d7d3b7643fac1",
+    "text": "Domande frequenti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:03.606893Z"
+  },
+  "web.tpl.guilds.change_motd.set_1": {
+    "src_hash": "708dc3fe07b0720315585ebbcf63b396",
+    "text": "Cambia MOTD di gilda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:03.607143Z"
+  },
+  "web.tpl.online.set_1": {
+    "src_hash": "0c9874466a7db3851fac902d0b5933c5",
+    "text": "Informazioni dal mondo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:03.607405Z"
+  },
+  "web.tpl.online.set_2": {
+    "src_hash": "ac29ac870be15bac0b632b58d3c6f76b",
+    "text": "Tabella3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:03.607579Z"
+  },
+  "web.tpl.online.set_3": {
+    "src_hash": "e2a763fb8a11c036ee99546540923c45",
+    "text": "Giocatori in linea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:09.185195Z"
+  },
+  "web.tpl.online.set_4": {
+    "src_hash": "d3fe59f7e96f0e90dd51bb0be02d74a5",
+    "text": "Tabella2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:09.185394Z"
+  },
+  "web.tpl.online.b_1": {
+    "src_hash": "a104d45665d0ca11de75217ab8618e11",
+    "text": "Statistiche vocazionali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:09.185625Z"
+  },
+  "web.tpl.online.b_2": {
+    "src_hash": "24a23d787190f2c4812ff9ab11847a72",
+    "text": "Stato:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:09.185793Z"
+  },
+  "web.tpl.online.b_3": {
+    "src_hash": "e3d9d6da977f5c0361974b6814d4026e",
+    "text": "Giocatori in linea:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:09.186001Z"
+  },
+  "web.tpl.online.b_4": {
+    "src_hash": "36a502f040ae140e799917a76d3b0851",
+    "text": "Registrazione in linea:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:15.915487Z"
+  },
+  "web.tpl.online.b_5": {
+    "src_hash": "653c7035c115308bb54cfdf99e5e1e69",
+    "text": "Ubicazione del centro dati:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:15.915769Z"
+  },
+  "web.tpl.online.b_6": {
+    "src_hash": "48b526d0b591335f8259bcdd2c34c6c4",
+    "text": "Tipo PvP:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:15.915955Z"
+  },
+  "web.tpl.guilds.view.set_1": {
+    "src_hash": "6788b5c154c05e43162e79993f67a657",
+    "text": "Guild Informazioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:15.916341Z"
+  },
+  "web.tpl.guilds.view.set_2": {
+    "src_hash": "89892aee7ffb1dc0733777b8ad6fd437",
+    "text": "Gestisci Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:08:15.916686Z"
   }
 }

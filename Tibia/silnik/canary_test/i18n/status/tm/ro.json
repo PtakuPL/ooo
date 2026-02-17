@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:35:29.639622Z"
+    "updated_at": "2026-02-17T04:20:15.160654Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -40470,5 +40470,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:18:29.322710Z"
+  },
+  "web.tpl.account.management.set_6": {
+    "src_hash": "23a0ca84a7fd64eee8248bd1dfc77185",
+    "text": "Schimbați numele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.204948Z"
+  },
+  "web.tpl.account.management.th_10": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.206381Z"
+  },
+  "web.tpl.changelog.b_3": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.207661Z"
+  },
+  "web.tpl.account.characters.change_name.set_1": {
+    "src_hash": "23a0ca84a7fd64eee8248bd1dfc77185",
+    "text": "Schimbați numele",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.208260Z"
+  },
+  "web.tpl.admin.news.table.th_2": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.209696Z"
+  },
+  "web.tpl.account.characters.delete.span_2": {
+    "src_hash": "b341a59d5636ed3d6a819137495b08a0",
+    "text": "Parolă:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.210616Z"
+  },
+  "web.tpl.admin.changelog.th_1": {
+    "src_hash": "44749712dbec183e983dcd78a7736c41",
+    "text": "Data",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.212460Z"
+  },
+  "web.tpl.gallery.form.td_3": {
+    "src_hash": "91401f053501b716b4a695b048c9b827",
+    "text": "Autor:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.221612Z"
+  },
+  "web.tpl.account.generate_recovery_key.set_1": {
+    "src_hash": "ad8bdba88e19fec0ce682b4cf8cce998",
+    "text": "Generați cheia de recuperare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.222962Z"
+  },
+  "web.tpl.account.generate_recovery_key.span_1": {
+    "src_hash": "b341a59d5636ed3d6a819137495b08a0",
+    "text": "Parolă:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.223216Z"
+  },
+  "html.account.lost.form.html.text1": {
+    "src_hash": "5d4af9bda827fbef97414b60c89ca7cf",
+    "text": "Vă rugăm să introduceți numele personajului dvs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:11.231336Z"
+  },
+  "web.tpl.serverinfo.h3_5": {
+    "src_hash": "12695b726548e2fe8b98d7a3b3ccac86",
+    "text": "Craniu roșu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:21.355560Z"
+  },
+  "web.tpl.serverinfo.h3_7": {
+    "src_hash": "9cef976714535911afb48e36f44ff794",
+    "text": "Exilarea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:21.355761Z"
+  },
+  "web.tpl.serverinfo.h2_8": {
+    "src_hash": "6311ae17c1ee52b36e68aaf4ad066387",
+    "text": "Alte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:21.355926Z"
+  },
+  "web.tpl.serverinfo.b_9": {
+    "src_hash": "3740cf5e0eee0244f1f61396843bde23",
+    "text": "CTRL + R",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:21.356183Z"
+  },
+  "web.tpl.commands.form.td_1": {
+    "src_hash": "feb3933d07878a72ca0aa2c1945519c8",
+    "text": "Cuvinte:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:21.356363Z"
+  },
+  "web.tpl.spells.b_1": {
+    "src_hash": "5bfd24665af25248c404de5e663b08cd",
+    "text": "Căutare ortografică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:26.523849Z"
+  },
+  "web.tpl.spells.th_6": {
+    "src_hash": "a037473c13c12a40d11a9339d0f9d4f7",
+    "text": "Vocații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:26.524510Z"
+  },
+  "web.tpl.spells.th_11": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Suflet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:26.525031Z"
+  },
+  "web.tpl.spells.th_13": {
+    "src_hash": "4aea602c9c5add7899f8f7b49f2060de",
+    "text": "Reactiv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:29.972128Z"
+  },
+  "web.tpl.spells.th_14": {
+    "src_hash": "a037473c13c12a40d11a9339d0f9d4f7",
+    "text": "Vocații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:29.972334Z"
+  },
+  "web.tpl.spells.th_19": {
+    "src_hash": "a037473c13c12a40d11a9339d0f9d4f7",
+    "text": "Vocații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:29.972514Z"
+  },
+  "web.tpl.admin.plugins.form.label_1": {
+    "src_hash": "8a3186a909a505bef82e356ee779e3d8",
+    "text": "Fișier de intrare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:29.972720Z"
+  },
+  "web.tpl.monsters.th_2": {
+    "src_hash": "5859831e2b3db23528c710b1451e13fc",
+    "text": "Șeful",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:29.972888Z"
+  },
+  "web.tpl.monsters.th_4": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Experienţă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:34.694995Z"
+  },
+  "web.tpl.monsters.th_5": {
+    "src_hash": "2763b3e3135d4bd93cd65867741782a7",
+    "text": "Mana invocabil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:34.695226Z"
+  },
+  "web.tpl.monsters.th_6": {
+    "src_hash": "45ed4d0b0b6bb5b1f80042af6dc365ff",
+    "text": "Mana convinsabilă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:34.695466Z"
+  },
+  "web.tpl.monsters.th_7": {
+    "src_hash": "4e221fc084bb69a82315a154d6dd7879",
+    "text": "Rasă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:34.695638Z"
+  },
+  "web.tpl.monsters.th_8": {
+    "src_hash": "f460cdc8aef294faf9dbaa2ed67200e0",
+    "text": "Monștri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:34.695817Z"
   }
 }

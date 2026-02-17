@@ -46686,5 +46686,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:17:27.313305Z"
+  },
+  "questlog.quest_11.mission_23.state_2": {
+    "src_hash": "099feaebbb87c9e8ca03d65f1ee02b4d",
+    "text": "Hai cacciato con successo 300 scarabei lancieri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:23.719446Z"
+  },
+  "questlog.quest_11.mission_24.state_1": {
+    "src_hash": "135e2b56df1f277263629bacef663bf8",
+    "text": "Hai dato la caccia con successo a 400 vedove piangenti. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:23.720031Z"
+  },
+  "questlog.quest_11.mission_24.state_2": {
+    "src_hash": "9b32eeb509a05bd6b417c930fe000509",
+    "text": "Hai dato la caccia a 400 vedove piangenti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:23.720350Z"
+  },
+  "questlog.quest_11.mission_25.state_1": {
+    "src_hash": "e1c0659c22bc78ad06eadef9ec35d673",
+    "text": "Hai cacciato con successo 250 caimani assassini. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:29.763863Z"
+  },
+  "questlog.quest_11.mission_25.state_2": {
+    "src_hash": "9ef16f2fe7504852c80c7f6feb98dd16",
+    "text": "Hai cacciato con successo 250 caimani assassini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:29.764196Z"
+  },
+  "questlog.quest_11.mission_26.name": {
+    "src_hash": "7633e616c762dce9b33609f3a224809b",
+    "text": "Paw and Fur: Bonebeasts",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:29.764754Z"
+  },
+  "questlog.quest_11.mission_26.state_1": {
+    "src_hash": "0a6621f8b734ca91c7db3d280b61c2a8",
+    "text": "Hai cacciato con successo 300 bestie d'ossa. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:29.765245Z"
+  },
+  "questlog.quest_11.mission_26.state_2": {
+    "src_hash": "c32160f57da2900acc301ebfbd2ec022",
+    "text": "Hai cacciato con successo 300 bestie d'ossa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:33.834409Z"
+  },
+  "questlog.quest_11.mission_27.state_1": {
+    "src_hash": "1a0328aba9e22c7d203fc6f8d0011786",
+    "text": "Hai cacciato con successo 300 ragni di cristallo. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:33.835002Z"
   }
 }

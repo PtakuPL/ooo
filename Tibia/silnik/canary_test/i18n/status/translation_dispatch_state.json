@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T04:18:00.552849Z",
-  "cycle_counter": 1496,
-  "last_target_key": "ro:questlog.json",
-  "last_pending_total": 1809,
+  "timestamp": "2026-02-17T04:20:10.036295Z",
+  "cycle_counter": 1499,
+  "last_target_key": "ro:html.json",
+  "last_pending_total": 1354,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 193,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 233,
+  "cache_cycle": 234,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -385,9 +385,9 @@
     "lang_completion": {
       "pl": 46.79,
       "es": 74.79,
-      "ru": 37.91,
-      "ro": 24.28,
-      "it": 15.33,
+      "ru": 37.95,
+      "ro": 24.3,
+      "it": 15.42,
       "sr": 11.56,
       "sv": 9.36
     }

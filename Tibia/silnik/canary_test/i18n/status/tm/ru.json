@@ -29622,5 +29622,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:17:58.208316Z"
+  },
+  "cpp.combat.heal_spectator_self_other": {
+    "src_hash": "601afa5d1f405ad24a983e4a438197e2",
+    "text": "{0} исцелил {1} на {2} очков жизни.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:38.705681Z"
+  },
+  "cpp.combat.heal_target_none_one": {
+    "src_hash": "0bf121421a3a381451a59e1c85aeda73",
+    "text": "Вы были исцелены на {0} хитпойнт.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:38.706361Z"
+  },
+  "cpp.combat.heal_target_none_other": {
+    "src_hash": "9e6bedd1c5b4f37f6b98fa8d89b531b6",
+    "text": "Вы были исцелены на {0} очков здоровья.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:38.706793Z"
+  },
+  "cpp.combat.heal_target_by_one": {
+    "src_hash": "fd77c477bc340115f589c4f104abd576",
+    "text": "Вы были исцелены {0} на {1} хитпоинта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:42.287648Z"
+  },
+  "cpp.combat.heal_target_by_other": {
+    "src_hash": "8beba0a3da18cd9afaa90199d011b96b",
+    "text": "Вы были исцелены {0} на {1} хитов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:42.288036Z"
+  },
+  "cpp.combat.heal_target_self_one": {
+    "src_hash": "60cc9d118ce54c7626b0303604940a79",
+    "text": "Вы исцеляете себя на {0} хитпоинта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:42.288396Z"
+  },
+  "cpp.combat.heal_target_self_other": {
+    "src_hash": "596fa864cbd1f12e043b154e79032965",
+    "text": "Вы исцеляете себя на {0} очков жизни.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:42.288754Z"
+  },
+  "cpp.combat.mana_attacker": {
+    "src_hash": "a8e810912070d5ddd8bcccd621134658",
+    "text": "{0} теряет {1} маны из-за вашей атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:42.289120Z"
+  },
+  "cpp.combat.mana_attacker_crit": {
+    "src_hash": "7adc2cc4191a8d8a771cdd458f04d9d2",
+    "text": "{0} теряет {1} маны из-за вашей критической атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:48.442387Z"
+  },
+  "cpp.combat.mana_spectator_by": {
+    "src_hash": "a0573fb276af6ce2d1a728e625cc8b1f",
+    "text": "{0} теряет {1} маны из-за атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:48.442785Z"
+  },
+  "cpp.combat.mana_spectator_by_crit": {
+    "src_hash": "d8896bf956ead12f307e55abc89afa6b",
+    "text": "{0} теряет {1} маны из-за критической атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:48.443190Z"
+  },
+  "cpp.combat.mana_spectator_none": {
+    "src_hash": "87028a3a292e51ddb2a03b9301dddbc5",
+    "text": "{0} теряет {1} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:48.443487Z"
+  },
+  "cpp.combat.mana_spectator_self": {
+    "src_hash": "0f66d3c30d3f84cc1d63ffb643ff825b",
+    "text": "{0} теряет {1} маны из-за собственной атаки {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:48.443871Z"
+  },
+  "cpp.combat.mana_target_by": {
+    "src_hash": "fc7fcfc62b9171037311480be0e23d6a",
+    "text": "Вы теряете {0} маны из-за атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:53.664149Z"
+  },
+  "cpp.combat.mana_target_by_crit": {
+    "src_hash": "a03f0ea928d07120fde4c9879d6ea26b",
+    "text": "Вы теряете {0} маны из-за критической атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:53.664598Z"
+  },
+  "cpp.combat.mana_target_none": {
+    "src_hash": "20ef4502ade216cf1cafe56c021ecfce",
+    "text": "Вы теряете {0} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:53.664894Z"
+  },
+  "cpp.combat.mana_target_self": {
+    "src_hash": "58b26d0a93ef4cb5267cf5bbc7213d82",
+    "text": "Вы теряете {0} маны из-за собственной атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:53.665312Z"
+  },
+  "cpp.combat.mana_target_self_crit": {
+    "src_hash": "74dfafacc1bd8149fce3cc7fb59ead69",
+    "text": "Вы теряете {0} маны из-за собственной критической атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:53.665752Z"
+  },
+  "cpp.combat.onslaught": {
+    "src_hash": "c4773303d7c4875c1f36d4336aadcc40",
+    "text": "(Натиск)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:58.279050Z"
+  },
+  "cpp.combat.restore_attacker": {
+    "src_hash": "83f116588f2a7307316ecad99385c796",
+    "text": "Вы восстановили {0} за {1} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:58.279424Z"
+  },
+  "cpp.combat.restore_spectator_none": {
+    "src_hash": "09a0ab81e660b71f4f4cc9b9d7812d0a",
+    "text": "{0} был восстановлен за {1} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:58.279775Z"
+  },
+  "cpp.combat.restore_spectator_other": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} восстановил {1} за {2} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:58.280118Z"
+  },
+  "cpp.combat.restore_spectator_self": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} восстановил {1} за {2} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:19:58.280469Z"
+  },
+  "cpp.combat.restore_target_by": {
+    "src_hash": "bef65601919ccbf594ae459461288ccf",
+    "text": "Вы были восстановлены {0} за {1} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:04.944581Z"
+  },
+  "cpp.combat.restore_target_none": {
+    "src_hash": "ec620aeb2ffd23840995fe5ca7cb5ad5",
+    "text": "Вы были восстановлены за {0} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:04.944950Z"
+  },
+  "cpp.combat.restore_target_self": {
+    "src_hash": "b4a6f6d2335e0c1c1d98aadc38ef7ee8",
+    "text": "Вы восстанавливаете себя за {0} маны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:04.945305Z"
+  },
+  "cpp.combat.soulpit_crit": {
+    "src_hash": "0de92b11baed3c46711377c498d9e0a7",
+    "text": "(Критический урон ямы души)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:04.945584Z"
+  },
+  "cpp.creature.loot_of": {
+    "src_hash": "4a30228767b414cb6f86833679a177e0",
+    "text": "Добыча с {0}: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:04.945862Z"
+  },
+  "cpp.forge.convergence_suffix": {
+    "src_hash": "cbd96a7174e4ef54c7262b39648d2a84",
+    "text": "(конвергенция)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:08.035801Z"
+  },
+  "cpp.forge.dust_to_slivers": {
+    "src_hash": "37b26b376eb1842f2fc33000e117de6a",
+    "text": "Пыль {0} преобразована в осколки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:08.036186Z"
   }
 }

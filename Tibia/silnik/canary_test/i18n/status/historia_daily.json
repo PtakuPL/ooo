@@ -92,5 +92,108 @@
     },
     "migration_completed": 2297,
     "migration_total": 2299
+  },
+  {
+    "date": "2026-02-17",
+    "hours_covered": 5,
+    "threshold": 5,
+    "is_final": false,
+    "ts_first": "2026-02-17T00:17:21Z",
+    "ts_last": "2026-02-17T04:20:40Z",
+    "translated": 19119,
+    "guard_fail": 13783,
+    "suspicious_high": 36691,
+    "identical_to_en": 2375,
+    "repair_start": 38661,
+    "repair_end": 38529,
+    "cycles": 207,
+    "coverage_start": 10.26,
+    "coverage_end": 10.55,
+    "guard_fail_pct": 41.89,
+    "throughput_per_h": 3823.8,
+    "per_lang": {
+      "it": {
+        "t": 3947,
+        "gf": 516,
+        "cov": 15.42
+      },
+      "ru": {
+        "t": 3781,
+        "gf": 723,
+        "cov": 37.95
+      },
+      "ro": {
+        "t": 3435,
+        "gf": 1142,
+        "cov": 24.3
+      },
+      "pl": {
+        "t": 3019,
+        "gf": 9643,
+        "cov": 46.79
+      },
+      "es": {
+        "t": 1997,
+        "gf": 1214,
+        "cov": 74.79
+      },
+      "sv": {
+        "t": 1480,
+        "gf": 289,
+        "cov": 9.36
+      },
+      "sr": {
+        "t": 1460,
+        "gf": 256,
+        "cov": 11.56
+      }
+    },
+    "per_cat": {
+      "npc.json": {
+        "t": 2538,
+        "gf": 1926
+      },
+      "monsters.json": {
+        "t": 1770,
+        "gf": 746
+      },
+      "items.json": {
+        "t": 1668,
+        "gf": 6376
+      },
+      "server.json": {
+        "t": 1583,
+        "gf": 318
+      },
+      "spells.json": {
+        "t": 1431,
+        "gf": 619
+      },
+      "scripts.json": {
+        "t": 1323,
+        "gf": 829
+      },
+      "html.json": {
+        "t": 1276,
+        "gf": 130
+      },
+      "raids.json": {
+        "t": 1098,
+        "gf": 113
+      },
+      "quests.json": {
+        "t": 880,
+        "gf": 212
+      },
+      "books.json": {
+        "t": 825,
+        "gf": 475
+      }
+    },
+    "mode_distribution": {
+      "AUTO_TRANSLATE": 808
+    },
+    "migration_completed": 15,
+    "migration_total": 15
   }
 ]

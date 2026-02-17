@@ -21150,5 +21150,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:29:41.784614Z"
+  },
+  "data.otservbr.global.npc.tyrias.L174.1273": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.885508Z"
+  },
+  "data.otservbr.global.npc.undal.L168.1467": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.886552Z"
+  },
+  "data.otservbr.global.npc.undal.L169.1468": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.886866Z"
+  },
+  "data.otservbr.global.npc.vanys.L168.532": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.888257Z"
+  },
+  "data.otservbr.global.npc.vanys.L169.533": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.888575Z"
+  },
+  "data.otservbr.global.npc.xodet.L175.345": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Конечно, просто просмотрите мои товары. Или вы хотите смотреть только на",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.892532Z"
+  },
+  "data.otservbr.global.npc.yaman.L169.636": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "К вашим услугам, просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.893394Z"
+  },
+  "data.otservbr.global.npc.yberius.L169.1364": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.894208Z"
+  },
+  "data.otservbr.global.npc.yberius.L170.1365": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.894842Z"
+  },
+  "data.otservbr.global.npc.yonan.L137.684": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.895305Z"
+  },
+  "data.otservbr.global.npc.yonan.L140.685": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.895784Z"
+  },
+  "data.otservbr.global.npc.yonan.L143.686": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как я могу вам помочь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.896142Z"
+  },
+  "data.otservbr.global.npc.yonan.L216.687": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Ну, тогда пока.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.896454Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L148.50": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.897562Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L149.51": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Помните: если вы тяжело ранены или отравлены, я могу вылечить вас бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.898139Z"
+  },
+  "data.otservbr.global.scripts.actions.dawnport.vocation.door.L36.2373": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.900625Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.904562Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Сундук пуст.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.910402Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.zalamon.door.L12.2154": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Дверь словно запечатана от нежелательных злоумышленников.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.910894Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.creaturescripts.pale.worm.death.L14.2046": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Поздравляем, вы получили костюм «Полтергейст».",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.921081Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.first.L14.1928": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.922598Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.second.L14.1971": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.923132Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L14.1930": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Что-то щелкнуло, и в то же время гулкий звук почти оглушил вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:48.923790Z"
   }
 }

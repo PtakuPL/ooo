@@ -24110,5 +24110,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:30:26.751118Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L13.2005": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Fără creier",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.941942Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.ungreez.door.L20.1772": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.944749Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.action.drume.L32.1646": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Timpul tău s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.945666Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.bursting.at.the.seams.museum.actions.doors.L18.2291": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.949331Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.actions.telescope.L6.2318": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Telescopul oferă o vedere perfectă asupra oceanului nesfârșit - fără pământ la vedere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.949865Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L16.2302": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Lipiți părul de tastatura de abanos. Șuvițele ar trebui să fie adecvate pentru a servi drept șiruri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.950967Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L27.2303": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*A fost odată un târg de fecioare, cu ochii negri și părul mătăsos. Departe de casa a murit. Fără mormânt, fără veghe, fără doliu.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.951711Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L31.2304": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Cântați Balada Păunului și se deschide portalul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.952166Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L37.2305": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Tu cânți la lăutări de os.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.952674Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.bonefiddle.L9.2301": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Atașați lemnul de abanos de craniu. Acest lucru ar trebui să îndeplinească cerințele unei plăci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.953236Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nu ai suficient nivel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.953598Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L19.2311": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.954047Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.fragrance.L4.2306": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, ce parfum infatuant!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.954473Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L47.2299": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.955233Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L65.2300": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Nu puteți folosi încă această barcă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.955631Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L17.2297": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Încă o dată amesteci creta cu o picătură de sânge și puțină apă și reînnoiești simbolul de pe podea...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.956371Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L21.2298": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Poți folosi această intrare doar pe timp de noapte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.956817Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.doors.L22.2296": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.957539Z"
+  },
+  "data.otservbr.global.scripts.quests.the.travelling.trader.actions.outlaw.camp.door.L9.2064": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Ușa pare să fie sigilată împotriva intrușilor nedoriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:52.958535Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Salutări, prietene.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:54.292025Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Da, ne vedem mai târziu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:59.553709Z"
+  },
+  "data.otservbr.global.npc.amber.L427.529": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Ne vedem mai târziu, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:59.554036Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Bună, mă bucur să te văd |PLAYERNAME|. Ești aici pentru a auzi câteva povești despre {adventures} al meu sau ai nevoie de {help}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:59.554727Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "La revedere. Cu plăcere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:34:59.555220Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Bună, sunt directorul acestui {monument}. {sarcophagus} din fața ta a fost creat pentru a împiedica oamenii să meargă acolo {down}. Dar mă îndoiesc că acest pas este suficient.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:16.308160Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Ei bine, să vedem dacă misiunea ta a avut succes. Doar adu-mi tot ce ai nevoie {materials}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:16.308667Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Dacă ați dezgropat toate cele trei cristale în cantitate suficientă și ați obținut glanda otrăvitoare, încărcarea busolei dvs. poate începe! Pentru prima dată va fi încărcat de cristalul violet. Ești gata să {unleash} puterea cristalelor?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:16.309523Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Salutări.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:16.309728Z"
+  },
+  "data.otservbr.global.npc.aneus.L130.1323": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Salutări aventurier |PLAYERNAME|. Ce te duce la mine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:19.958489Z"
+  },
+  "data.otservbr.global.npc.aneus.L131.1324": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "La revedere si ai grija de tine!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:19.958802Z"
+  },
+  "data.otservbr.global.npc.angelina.L58.143": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Zeii trebuie lăudați că sunt în sfârșit mântuit. Nu am multe posesiuni lumești, dar vă rog să acceptați o mică recompensă, nu-i așa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:19.959399Z"
+  },
+  "data.otservbr.global.npc.angelina.L60.144": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Mulțumesc că mi-ai salvat viața! Ar trebui să te teleportez din Catedrala Întunecată?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:23.815681Z"
+  },
+  "data.otservbr.global.npc.angelina.L84.145": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Fie ca zeii să te binecuvânteze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:23.816000Z"
+  },
+  "data.otservbr.global.npc.angelina.L85.146": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Fie ca zeii să te binecuvânteze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:23.816294Z"
+  },
+  "data.otservbr.global.npc.angelo.L58.1443": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid din Crunor? Ți-a spus că aici a apărut o peșteră nouă? Asta e corect. Sunt șeful unui {project} care încearcă să afle mai multe despre acest nou {area}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:23.817037Z"
+  },
+  "data.otservbr.global.npc.angelo.L60.1444": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Doar dă-te din calea mea! Ai ucis această creatură frumoasă. Nu mai am nimic de spus. Al naibii de druid al lui Crunor!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:23.817603Z"
+  },
+  "data.otservbr.global.npc.angelo.L62.1445": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Cum merge {mission}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:26.815776Z"
+  },
+  "data.otservbr.global.npc.angelo.L64.1446": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Druid din Crunor? Ți-a spus că aici a apărut o peșteră nouă? Asta e corect. Sunt șeful unui proiect care încearcă să afle mai multe despre această nouă zonă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:35:26.816577Z"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T03:01:14.352044Z",
-  "window_end_utc": "2026-02-17T04:01:14.352044Z",
+  "window_start_utc": "2026-02-17T03:03:21.163112Z",
+  "window_end_utc": "2026-02-17T04:03:21.163112Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3647,
-  "guard_fail": 3395,
-  "guard_fail_rate_pct": 48.2,
+  "translated": 3619,
+  "guard_fail": 3473,
+  "guard_fail_rate_pct": 49.0,
   "no_progress_entries": 3,
   "no_progress_rate_pct": 2.9,
-  "throughput_keys_per_h": 1954.1,
-  "suspicious_total": 15183,
+  "throughput_keys_per_h": 2006.2,
+  "suspicious_total": 15328,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -43,6 +43,12 @@
       "guard_command": 0
     },
     {
+      "target": "ro/spells.json",
+      "translated": 23,
+      "guard_fail": 77,
+      "guard_command": 0
+    },
+    {
       "target": "pl/monsters.json",
       "translated": 100,
       "guard_fail": 72,
@@ -55,22 +61,16 @@
       "guard_command": 0
     },
     {
-      "target": "es/books.json",
-      "translated": 2,
-      "guard_fail": 48,
+      "target": "ru/spells.json",
+      "translated": 49,
+      "guard_fail": 51,
       "guard_command": 0
     },
     {
-      "target": "es/scripts.json",
-      "translated": 18,
-      "guard_fail": 47,
+      "target": "it/spells.json",
+      "translated": 50,
+      "guard_fail": 50,
       "guard_command": 0
-    },
-    {
-      "target": "es/talkactions.json",
-      "translated": 1,
-      "guard_fail": 42,
-      "guard_command": 1
     }
   ]
 }

@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:26:16.195350Z"
+    "updated_at": "2026-02-17T03:12:44.905263Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -146918,5 +146918,269 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T03:07:21.940163Z"
+  },
+  "spell.large_blackportal_ring.name": {
+    "src_hash": "7ef2e8aa9f91fd75b36ce006b7d6c92b",
+    "text": "gran anillo de muerte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:48.973279Z"
+  },
+  "spell.large_blackportal_ring.words": {
+    "src_hash": "ecd759d0c0b1ec1105193ea413ac9732",
+    "text": "###anillo_de_muerte_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:48.973519Z"
+  },
+  "spell.nighthunter_wave.name": {
+    "src_hash": "0b1ee9bdbc2a07f9ad1765e30b90fbd3",
+    "text": "ola cazadora nocturna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:48.973742Z"
+  },
+  "spell.the_pale_count_wave.name": {
+    "src_hash": "1d572cc7873a72ef0bf9f5a17202b7d7",
+    "text": "la ola pálida del conteo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:55.404282Z"
+  },
+  "spell.undead_jester_summon.name": {
+    "src_hash": "58ea2d14fbf48d44803f3afab51f7e15",
+    "text": "invocación de bufón no-muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:55.405073Z"
+  },
+  "spell.hirintror_heal.name": {
+    "src_hash": "5f638b6a95145c0e9b3da170c7870d73",
+    "text": "curar hirintror",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:55.405285Z"
+  },
+  "spell.extended_fire_chain.name": {
+    "src_hash": "8caf355463f69ce4a12cd45f05b57d9c",
+    "text": "cadena de fuego extendida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:55.405530Z"
+  },
+  "spell.unchained_fire_beam.name": {
+    "src_hash": "e932e0cf2517e157cbe4f6240a6fb750",
+    "text": "rayo de fuego desencadenado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:01.565672Z"
+  },
+  "spell.tarbaz_tp.name": {
+    "src_hash": "fe0a93794bfaca6e36cd08bf5329a3ee",
+    "text": "tp tarbaz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:01.565875Z"
+  },
+  "spell.root_wave.name": {
+    "src_hash": "62a421d6a68d8a2a4a8f00f256947f10",
+    "text": "onda raíz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:01.566176Z"
+  },
+  "spell.weeper_skill_reducer.name": {
+    "src_hash": "15d60c7a8d19c308f92d607bece7d508",
+    "text": "reductor de habilidades lloronas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:01.566447Z"
+  },
+  "spell.madareth_skill_reducer.name": {
+    "src_hash": "031038bd3627de0bcb7d71c152be64c9",
+    "text": "reductor de habilidades madareth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:01.566709Z"
+  },
+  "spell.glooth_fairy_healing.name": {
+    "src_hash": "2c246feca5cd4064568fb859e13d6f50",
+    "text": "curación del hada gloriosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:07.821787Z"
+  },
+  "spell.warden_x.name": {
+    "src_hash": "ff9442b422e5e82b1009ea194d958662",
+    "text": "guardián x",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:07.822013Z"
+  },
+  "spell.fury_paralyze.name": {
+    "src_hash": "cf3ad4e0c1a0ec0fcda7ea4a1c8d3fc8",
+    "text": "la furia paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:07.822305Z"
+  },
+  "spell.brimstone_bug_paralyze.name": {
+    "src_hash": "f16b965d9366206844c0b2265a667aaa",
+    "text": "insecto de azufre paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:07.822571Z"
+  },
+  "spell.walker_skill_reducer.name": {
+    "src_hash": "31df4ee9ae9562ab50137641b8b89fd3",
+    "text": "reductor de habilidad del caminante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:07.822825Z"
+  },
+  "spell.energy_elemental_electrify.name": {
+    "src_hash": "2a1ea6c450e7749c46e84b7be86048df",
+    "text": "energía elemental electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:13.738059Z"
+  },
+  "spell.pythius_the_rotten_curse.name": {
+    "src_hash": "9124a1aaad7c7bb40f19678489b66f63",
+    "text": "Pythius la maldición podrida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:13.738416Z"
+  },
+  "spell.warden_ring.name": {
+    "src_hash": "c8b8febbffb5cf824912a3e7e986be86",
+    "text": "anillo de guardián",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:13.738659Z"
+  },
+  "spell.frazzlemaw_paralyze.name": {
+    "src_hash": "726e167b4b4c7c83bc91c0780a87362e",
+    "text": "Frazzlemaw paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:13.738944Z"
+  },
+  "spell.jaul_paralyze.name": {
+    "src_hash": "7e7897bffaa28447e89f4fa8b4163866",
+    "text": "Jaul paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:13.739147Z"
+  },
+  "spell.defiler_paralyze_1.name": {
+    "src_hash": "8d0891ca8afcbf0de5cf31c777aad85e",
+    "text": "profanador paraliza 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:19.625657Z"
+  },
+  "spell.ice_crystal_bomb.name": {
+    "src_hash": "47cb0913ea63b98a2f9a0014654dddca",
+    "text": "Bomba de cristal de hielo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:19.625921Z"
+  },
+  "spell.plagirath_summon.name": {
+    "src_hash": "127e27a724e3e408103d86bb257fb7a3",
+    "text": "invocar plagirath",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:19.626213Z"
+  },
+  "spell.morgaroth_summon.name": {
+    "src_hash": "dd4f9b69b8843e395f18607b798360e0",
+    "text": "convocar a morgaroth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:19.626440Z"
+  },
+  "spell.medusa_paralyze.name": {
+    "src_hash": "8dbddaef45f20aa2c1b6996cd170dac0",
+    "text": "medusa paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:25.974884Z"
+  },
+  "spell.dharalion_skill_reducer.name": {
+    "src_hash": "5571b33619459ef69ee0dd69aeac5fcf",
+    "text": "reductor de habilidades dharalion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:25.975176Z"
+  },
+  "spell.war_golem_skill_reducer.name": {
+    "src_hash": "72d9c4fa4f27d181d4b8abc66285317d",
+    "text": "reductor de habilidades de golem de guerra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:25.975450Z"
+  },
+  "spell.evil_sheep_lord_summon.name": {
+    "src_hash": "4724c20d690dfa69101e3d9aafe21838",
+    "text": "Señor de las ovejas malvadas convocar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:25.975734Z"
+  },
+  "spell.death_chain.name": {
+    "src_hash": "89909507732e0ff901e6dcd695682642",
+    "text": "cadena de muerte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:25.975933Z"
+  },
+  "spell.demon_outcast_skill_reducer.name": {
+    "src_hash": "39b7b26b433685ece72dff67c23e949b",
+    "text": "reductor de habilidades de demonio marginado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:29.810468Z"
+  },
+  "spell.quara_looter_small_icering.name": {
+    "src_hash": "c08f75aa4d53551e90e929c80eb29ced",
+    "text": "quarasmallicing",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:13:29.810755Z"
   }
 }

@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-17T03:11:17.066199Z",
-  "language": "sr",
+  "timestamp": "2026-02-17T03:13:47.028709Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 50,
+  "translated": 24,
   "entries": [
     {
-      "key": "npc.ajax.say_6",
-      "en": "Annoying kid. Bro hates him, but talking no help. Bro needs {fighting spirit}!",
-      "translated": "Досадно дете. Брат га мрзи, али разговор не помаже. Брату треба {fighting spirit}!",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.greet_msg_1",
-      "en": "Hello, hello, |PLAYERNAME|! Please come in, look, and buy! I'm a specialist for all sorts of {tools}. Just ask me for a {trade} to see my offers! You can also ask me for general {hints} about the game. ...",
-      "translated": "Здраво, здраво, |PLAYERNAME|! Уђите, погледајте и купите! Ја сам специјалиста за све врсте {tools}. Само ме замолите за {trade} да видите моје понуде! Такође можете да ме питате за опште {hints} о игри. ...",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.greet_msg_2",
-      "en": "You can also ask me about each {citizen} of the isle.",
-      "translated": "Можете ме питати и за сваки {citizen} на острву.",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_10",
-      "en": "I'm a merchant. Just ask me for a {trade} to see my offers.",
-      "translated": "Ја сам трговац. Само ме замолите за {trade} да видите моје понуде.",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_11",
-      "en": "My name is Al Dee, but you can call me Al. Can I interest you in a {trade}?",
-      "translated": "Моје име је Ал Дее, али можете ме звати Ал. Могу ли да вас заинтересујем за {trade}?",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_12",
-      "en": "It's about |TIME|. I'm so sorry, I have no watches to sell. Do you want to buy something else?",
-      "translated": "То је око |TIME|. Жао ми је, немам сатове за продају. Да ли желите да купите нешто друго?",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_14",
-      "en": "If you want to explore the dungeons such as the {sewers}, you have to {equip} yourself with the vital stuff I am selling. It's {vital} in the deepest sense of the word.",
-      "translated": "Ако желите да истражите тамнице као што је {sewers}, морате сами {equip} са виталним стварима које продајем. То је {vital} у најдубљем смислу те речи.",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_15",
-      "en": "Oh, our sewer system is very primitive - it's so primitive that it's overrun by {rats}. But the stuff I sell is safe from them. Just ask me for a {trade} to see it!",
-      "translated": "Ох, наш канализациони систем је веома примитиван - толико је примитиван да је прегажен за {rats}. Али ствари које продајем су безбедне од њих. Само ме замолите за {trade} да га видим!",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_19",
-      "en": "Thais is a crowded town.",
-      "translated": "Thais је препун град.",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_20",
-      "en": "Have you ever wondered what that 'main' is people are talking about? Well, once you've reached level 8, you should talk to the {oracle}. You can choose a {profession} afterwards and explore much more of Tibia.",
-      "translated": "Да ли сте се икада запитали о чему људи причају то 'main'? Па, када достигнете ниво 8, требало би да разговарате са {oracle}. Након тога можете изабрати {profession} и истражити много више од Tibia.",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_21",
-      "en": "Oh, I'm sorry, but I don't deal with weapons. That's {Obi's} or {Lee'Delle's} business. I could offer you a {pick} in exchange for a {small axe} if you should happen to own one.",
-      "translated": "Ох, извини, али ја се не бавим оружјем. То је {Obi's} или {Lee'Delle's} посао. Могао бих да вам понудим {pick} у замену за {small axe} ако га случајно поседујете.",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_22",
-      "en": "Armor and shields can be bought at {Dixi's} or at {Lee'Delle's}. Dixi runs that shop near {Obi's}.",
-      "translated": "Оклоп и штитови се могу купити по цени {Dixi's} или {Lee'Delle's}. Дики води ту продавницу близу {Obi's}.",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_23",
-      "en": "Armor and shields can be bought at {Dixi's} or at {Lee'Delle's}. Dixi runs that shop near {Obi's}.",
-      "translated": "Оклоп и штитови се могу купити по цени {Dixi's} или {Lee'Delle's}. Дики води ту продавницу близу {Obi's}.",
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_25",
-      "en": "Blueberries grow on bushes. They're quite common in Tibia. Just pick them from a bush if you need a snack!",
-      "translated": "Боровнице расту на жбуњу. Они су прилично чести у Tibia. Само их уберите са грма ако вам треба ужина!",
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_26",
-      "en": "Sorry, I don't sell potions. You should visit {Lily} for that.",
-      "translated": "Извини, не продајем напитке. За то би требало да посетите {Lily}.",
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_27",
-      "en": "Hmm, the best address to look for food might be {Willie} or {Billy}. {Norma} also has some snacks for sale.",
-      "translated": "Хмм, најбоља адреса за тражење хране би могла бити {Willie} или {Billy}. {Norma} такође има неке грицкалице на продају.",
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_28",
-      "en": "A bank is quite useful. You can deposit your money safely there. This way you don't have to carry it around with you all the time. You could also invest your money in my {wares}!",
-      "translated": "Банка је веома корисна. Тамо можете безбедно да положите свој новац. На овај начин не морате да га носите са собом све време. Такође можете уложити свој новац у мој {wares}!",
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_33",
-      "en": "To view the offers of a merchant, simply talk to him or her and ask for a {trade}. They will gladly show you their offers and also the things they buy from you.",
-      "translated": "Да бисте видели понуде трговца, једноставно разговарајте са њим или њом и затражите {trade}. Они ће вам радо показати своје понуде и ствари које купују од вас.",
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_34",
-      "en": "You will learn everything you need to know about professions once you've reached the {Island of Destiny}.",
-      "translated": "Научићете све што треба да знате о професијама када достигнете {Island of Destiny}.",
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     },
     {
-      "key": "npc.al_dee.stdmod_35",
-      "en": "The Island of Destiny can be reached via the {oracle} once you are level 8. This trip will help you choose your {profession}!",
-      "translated": "До Острва судбине можете доћи преко {oracle} када достигнете ниво 8. Ово путовање ће вам помоћи да одаберете свој {profession}!",
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
       "source": "tm"
     }
   ]

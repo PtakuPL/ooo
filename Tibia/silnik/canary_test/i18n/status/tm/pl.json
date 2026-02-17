@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:24:48.635954Z"
+    "updated_at": "2026-02-17T03:11:41.134042Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:24:48.636810Z"
+    "updated_at": "2026-02-17T03:11:41.135012Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -106606,5 +106606,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:05:57.289268Z"
+  },
+  "spell.shadow_hound_curse.name": {
+    "src_hash": "31b4197793defcd6f20b46076448c8b9",
+    "text": "klątwa ogara cienia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:50.502996Z"
+  },
+  "spell.blightwalker_curse.name": {
+    "src_hash": "16230cc259bcc0350fd05c7a1fe78817",
+    "text": "klątwa zarazy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:50.503241Z"
+  },
+  "spell.minotaur_cult_prophet_mass_healing.name": {
+    "src_hash": "babeff5e6a0d360926b2563bf57e2e7a",
+    "text": "Masowe uzdrawianie, prorok kultu Minotaura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:50.503548Z"
+  },
+  "spell.megasylvan_yselda_ebeam.name": {
+    "src_hash": "a3edb8d881092e35f4e8f5bf7bafb840",
+    "text": "belka ziemnaMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:50.503749Z"
+  },
+  "spell.wyvern_drunk.name": {
+    "src_hash": "b353082a38791ff7b9ce13ff943de2ea",
+    "text": "wiwerna pijana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:59.078223Z"
+  },
+  "spell.spirit_of_earth_paralyze.name": {
+    "src_hash": "f636dd266db143e432b9320b86854c57",
+    "text": "duch ziemi paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:59.078520Z"
+  },
+  "spell.ghastly_dragon_paralyze.name": {
+    "src_hash": "64bf15b7ae67eb23b65ee86d010daebd",
+    "text": "upiorny paraliż smoka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:59.078783Z"
+  },
+  "spell.ice_overlord_freeze.name": {
+    "src_hash": "cb322d17c58cbdf4d8275e6419e897d0",
+    "text": "zamrożenie lodowego władcy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:59.079041Z"
+  },
+  "spell.killer_rabbit_summon.name": {
+    "src_hash": "5716b89aece60552d665c95e2404d223",
+    "text": "zabójcze wezwanie królika",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:11:59.079297Z"
+  },
+  "spell.the_abomination_paralyze.name": {
+    "src_hash": "6168fc08b0bafd1b883477b085056ee7",
+    "text": "obrzydliwość paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:07.238747Z"
+  },
+  "spell.white_pale_summon.name": {
+    "src_hash": "b3865c6553aceae64138f87b00498f88",
+    "text": "białe, blade wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:07.239031Z"
+  },
+  "spell.bullwark_paralyze.name": {
+    "src_hash": "886fddb7eb389db9e837effdd1ea0907",
+    "text": "paraliż byka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:07.239263Z"
+  },
+  "spell.djinn_paralyze.name": {
+    "src_hash": "e43d13b61e88415667e35cc95a8a5974",
+    "text": "paraliż dżina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:07.239479Z"
+  },
+  "spell.salamander_trainer_summon.name": {
+    "src_hash": "e217cb722c45f9eed71556f21b8c74b9",
+    "text": "wezwanie trenera salamandry",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:07.239736Z"
+  },
+  "spell.big_explosion_wave.name": {
+    "src_hash": "7a8af6b1d80fb7404b3def0ad6108d3b",
+    "text": "wielka fala eksplozji",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:14.235254Z"
+  },
+  "spell.bog_raider_paralyze.name": {
+    "src_hash": "7d8094668dba191df145b8b34c8b446d",
+    "text": "paraliż łupieżcy bagien",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:14.235550Z"
+  },
+  "spell.shock_head_skill_reducer_2.name": {
+    "src_hash": "993def282a953eb7d820a6d08f0f0b93",
+    "text": "Reduktor umiejętności głowy uderzeniowej 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:14.236080Z"
+  },
+  "spell.lava_golem_soulfire.name": {
+    "src_hash": "dbbca3f968c0709ab179937b5c7195d3",
+    "text": "lawowy golem, ogień duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:14.236391Z"
+  },
+  "spell.arkhothep_paralyze.name": {
+    "src_hash": "8bf8511573beac56560e8b23efd11d6b",
+    "text": "paraliż Arkhothepa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:14.236634Z"
+  },
+  "spell.kraknaknork_explosion_wave.name": {
+    "src_hash": "2f4e174fe23f8e2af3f05a9793bb667d",
+    "text": "fala eksplozji kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:21.269325Z"
+  },
+  "spell.half_circle_wave_earth.name": {
+    "src_hash": "6119cff36d2cfc920810f09cc74ec0e0",
+    "text": "półkolista fala ziemska",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:21.269658Z"
+  },
+  "spell.arkhothep_curse.name": {
+    "src_hash": "7263817558e5c6e6a3d5d54ecbb4ef6f",
+    "text": "klątwa Arkhothepa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:21.269899Z"
+  },
+  "spell.the_welter_summon.name": {
+    "src_hash": "19d2e4a666b2d921345052f669328f73",
+    "text": "chaotyczne wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:21.270202Z"
+  },
+  "spell.serpent_spawn_paralyze.name": {
+    "src_hash": "05c93437a320273eb2c3b266471a5129",
+    "text": "paraliż ikra węża",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:21.270469Z"
+  },
+  "spell.azerus_soulfire_2.name": {
+    "src_hash": "2f7705f0369e3f06ad379309ec77a11c",
+    "text": "Azerus Soulfire 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:28.937653Z"
+  },
+  "spell.shaburak_wave.name": {
+    "src_hash": "55bad0eada5de59aaf0609bcf17da540",
+    "text": "fala Shaburaka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:28.937880Z"
+  },
+  "spell.haunter_curse.name": {
+    "src_hash": "e2cbc836d1e873ecad634cc2fba8d61a",
+    "text": "klątwa nawiedzająca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:28.938169Z"
+  },
+  "spell.thalas_summon.name": {
+    "src_hash": "8c0ce8b066fb35f3d9cada1ac5252ae6",
+    "text": "to wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:28.938377Z"
+  },
+  "spell.frozen_minion_beam.name": {
+    "src_hash": "983b3c478be73cc210268020b80b071f",
+    "text": "zamarznięty promień sługusów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:28.938636Z"
+  },
+  "spell.ghazbaran_paralyze.name": {
+    "src_hash": "ffc95bbd6e4109503f0b2fd5543bcca9",
+    "text": "Ghazbaran paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:34.438589Z"
+  },
+  "spell.swampling_paralyze.name": {
+    "src_hash": "187f9e763c826cd398c2aee156e0639b",
+    "text": "zalewny paraliż",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:34.438867Z"
+  },
+  "spell.young_sea_serpent_drown.name": {
+    "src_hash": "764ca22bacaeb6b9edc98558d47ab657",
+    "text": "utonął młody wąż morski",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:34.439172Z"
+  },
+  "spell.frozen_minion_heal.name": {
+    "src_hash": "1b84bc8d7cf8b49ea5b9806d9b45de96",
+    "text": "zamrożone stwory leczą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:12:34.439437Z"
   }
 }

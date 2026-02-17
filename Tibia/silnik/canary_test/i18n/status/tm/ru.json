@@ -27838,5 +27838,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:15:48.776881Z"
+  },
+  "spell.energy_elemental_electrify.name": {
+    "src_hash": "2a1ea6c450e7749c46e84b7be86048df",
+    "text": "Энергетический элемент электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:05.470345Z"
+  },
+  "spell.pythius_the_rotten_curse.name": {
+    "src_hash": "9124a1aaad7c7bb40f19678489b66f63",
+    "text": "Пифий, гнилое проклятие",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:05.470654Z"
+  },
+  "spell.warden_ring.name": {
+    "src_hash": "c8b8febbffb5cf824912a3e7e986be86",
+    "text": "кольцо надзирателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:05.470894Z"
+  },
+  "spell.jaul_paralyze.name": {
+    "src_hash": "7e7897bffaa28447e89f4fa8b4163866",
+    "text": "паралич желудка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:09.508591Z"
+  },
+  "spell.zulazza_the_corruptor_paralyze.name": {
+    "src_hash": "308dafdd1960d7ba76c959c9cb7460f3",
+    "text": "Зулацца-развратитель парализует",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:09.508956Z"
+  },
+  "spell.defiler_paralyze_1.name": {
+    "src_hash": "8d0891ca8afcbf0de5cf31c777aad85e",
+    "text": "осквернитель паралич 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:09.509229Z"
+  },
+  "spell.ice_crystal_bomb.name": {
+    "src_hash": "47cb0913ea63b98a2f9a0014654dddca",
+    "text": "Ледяная кристаллическая бомба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:09.509502Z"
+  },
+  "spell.plagirath_summon.name": {
+    "src_hash": "127e27a724e3e408103d86bb257fb7a3",
+    "text": "плагиат вызов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:09.509738Z"
+  },
+  "spell.morgaroth_summon.name": {
+    "src_hash": "dd4f9b69b8843e395f18607b798360e0",
+    "text": "вызов Моргарота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:13.123246Z"
+  },
+  "spell.medusa_paralyze.name": {
+    "src_hash": "8dbddaef45f20aa2c1b6996cd170dac0",
+    "text": "Медуза паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:13.123501Z"
+  },
+  "spell.dharalion_skill_reducer.name": {
+    "src_hash": "5571b33619459ef69ee0dd69aeac5fcf",
+    "text": "Редуктор навыков Дхаралиона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:13.123786Z"
+  },
+  "spell.war_golem_skill_reducer.name": {
+    "src_hash": "72d9c4fa4f27d181d4b8abc66285317d",
+    "text": "Редуктор навыков боевых големов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:13.124092Z"
+  },
+  "spell.renegade_knight.name": {
+    "src_hash": "4577eafb75a4b865924c31cb99985aae",
+    "text": "рыцарь-отступник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:13.124332Z"
+  },
+  "spell.evil_sheep_lord_summon.name": {
+    "src_hash": "4724c20d690dfa69101e3d9aafe21838",
+    "text": "Призыв злого повелителя овец",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:16.262244Z"
+  },
+  "spell.death_chain.name": {
+    "src_hash": "89909507732e0ff901e6dcd695682642",
+    "text": "цепь смерти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:16.262493Z"
+  },
+  "spell.demon_outcast_skill_reducer.name": {
+    "src_hash": "39b7b26b433685ece72dff67c23e949b",
+    "text": "Редуктор навыков демонов-изгоев",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:16.262855Z"
+  },
+  "spell.quara_looter_small_icering.name": {
+    "src_hash": "c08f75aa4d53551e90e929c80eb29ced",
+    "text": "кваразмаллицирование",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:16.263126Z"
+  },
+  "spell.pixie_skill_reducer.name": {
+    "src_hash": "71e60467b185cf3e8e617997876dd7bc",
+    "text": "редуктор навыков пикси",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:19.628173Z"
+  },
+  "spell.emerald_tortoise_small_explosion.name": {
+    "src_hash": "4eacc1d6a9cbd60afe311b07d4f6f586",
+    "text": "изумрудная черепаха небольшой взрыв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:19.628565Z"
+  },
+  "spell.gaz_functions.name": {
+    "src_hash": "5605eef2fe0b52b733a694d3e216630b",
+    "text": "Газовые функции",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:19.628823Z"
+  },
+  "spell.rotthing_explo.name": {
+    "src_hash": "cbdd680ae2c93e99c7e7813b5c4933c9",
+    "text": "Роттлигекспло",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:19.629052Z"
+  },
+  "spell.extended_holy_chain.name": {
+    "src_hash": "74a88c76577a04e0125930e38bed9b34",
+    "text": "расширенная священная цепь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:22.071414Z"
   }
 }

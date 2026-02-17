@@ -1,18 +1,46 @@
 {
-  "timestamp": "2026-02-17T03:16:34.038879Z",
+  "timestamp": "2026-02-17T03:18:49.519374Z",
   "checked_entries": 100,
   "issues_found": 11,
   "issues_by_type": {
+    "identical_to_en": 4,
     "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "identical_to_en": 4,
-    "suspicious_log_critical": 58,
-    "suspicious_log_low": 2,
-    "suspicious_log_high": 140,
-    "suspicious_rejected_critical": 163,
-    "suspicious_rejected_high": 37
+    "suspicious_log_high": 151,
+    "suspicious_log_low": 1,
+    "suspicious_log_critical": 48,
+    "suspicious_rejected_critical": 156,
+    "suspicious_rejected_high": 44
   },
   "issues": [
+    {
+      "key": "spell.large_fire_ring.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###large_fire_ring",
+      "translated": "###large_fire_ring"
+    },
+    {
+      "key": "spell.quara_raider_watercreature.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###quara_sea_monster",
+      "translated": "###quara_sea_monster"
+    },
+    {
+      "key": "spell.quara_raider_icering.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###quara_large_ice_ring",
+      "translated": "###quara_large_ice_ring"
+    },
+    {
+      "key": "spell.quara_raider_watersplash.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###quara_water_splash",
+      "translated": "###quara_water_splash"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -61,34 +89,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "spell.large_fire_ring.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###large_fire_ring",
-      "translated": "###large_fire_ring"
-    },
-    {
-      "key": "spell.quara_raider_watercreature.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_sea_monster",
-      "translated": "###quara_sea_monster"
-    },
-    {
-      "key": "spell.quara_raider_icering.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_large_ice_ring",
-      "translated": "###quara_large_ice_ring"
-    },
-    {
-      "key": "spell.quara_raider_watersplash.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_water_splash",
-      "translated": "###quara_water_splash"
     }
   ],
   "threshold": 10,

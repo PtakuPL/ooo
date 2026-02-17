@@ -42822,5 +42822,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:16:32.294047Z"
+  },
+  "quests.soul_war_mechanics.msg_1": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:06.243389Z"
+  },
+  "quests.soul_war_mechanics.msg_2": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:06.243659Z"
+  },
+  "quests.soul_war_mechanics.msg_3": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Al momento non hai alcuna contaminazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:06.243950Z"
+  },
+  "quests.soul_war_mechanics.msg_4": {
+    "src_hash": "6655db13bee1450cbda069988ba9ac6f",
+    "text": "Perdi il livello di contaminazione: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:08.881530Z"
+  },
+  "quests.soul_war_mechanics.msg_5": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Livello di contaminazione rimosso: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:08.881812Z"
+  },
+  "quests.soul_war_mechanics.say_1": {
+    "src_hash": "5380d0158610754e1763c3e68d1e2070",
+    "text": "Il rimorso calma il tuo terrore!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:08.882176Z"
+  },
+  "quests.soul_war_mechanics.say_2": {
+    "src_hash": "e1b472d7a2758aa1c3111f799a2f062b",
+    "text": "Il fuoco dell'odio alimenta e potenzia l'odio di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:08.882537Z"
+  },
+  "quests.soul_war_mechanics.say_3": {
+    "src_hash": "bb4184db52e52ff43ebb239d5964bc4e",
+    "text": "La fiamma dell'odio è spenta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:08.882841Z"
+  },
+  "quests.soul_war_mechanics.say_4": {
+    "src_hash": "c3c250d8d11cdad39d0e1b311332f9b0",
+    "text": "Salute ripristinata dai poteri mistici di Zarganash!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:12.795675Z"
+  },
+  "quests.soulpit.level_required": {
+    "src_hash": "9d8e0f4dfc616d37e512adc7f55ac405",
+    "text": "Tutti i giocatori devono essere di livello %s o superiore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:12.796025Z"
+  },
+  "quests.soulpit_fight.msg_1": {
+    "src_hash": "86f4a03cfb29387b28e675634e8e174a",
+    "text": "Hai sconfitto il nucleo dell'anima {} e sbloccato la sua maestria nell'Animus!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:12.796413Z"
+  },
+  "quests.soulpit_fight.msg_2": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Qualcuno sta combattendo nella fossa dell'anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:12.796810Z"
+  },
+  "quests.spike_tasks.ancient_ghost": {
+    "src_hash": "3df6500c57263547e96c82f202dc4f58",
+    "text": "Il tuo rozzo scavo ha fatto arrabbiare qualche antico fantasma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:12.797156Z"
+  },
+  "quests.spike_tasks.nothing_special": {
+    "src_hash": "41b371a27a243f199466d566439c66a4",
+    "text": "Non hai trovato niente di speciale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:16.534155Z"
+  },
+  "quests.spike_tasks.spirit_anger": {
+    "src_hash": "3894f5c51c56e5a112890c1028270538",
+    "text": "Hai portato alla luce la rabbia di uno spirito!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:16.534546Z"
+  },
+  "quests.spike_tasks.undead_creature": {
+    "src_hash": "32d84ab629e31e9022bc382c0ebc06b4",
+    "text": "Hai portato alla luce una creatura non così mortale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:16.534907Z"
+  },
+  "quests.spike_tasks.you_have_already_fertilised_this_mushroom": {
+    "src_hash": "febf554e1d48c0fd20b669486924b4fc",
+    "text": "Hai già fecondato questo fungo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:16.535229Z"
+  },
+  "quests.svargrond_arena.congratulations": {
+    "src_hash": "325f023e57fc0eb8ef8fa1403bd00743",
+    "text": "Congratulazioni! Hai completato l'arena {0}, dovresti ritirare la tua ricompensa adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:16.535625Z"
+  },
+  "quests.svargrond_arena.msg_1": {
+    "src_hash": "b63606673cc9b59a3033ef70c3d03e14",
+    "text": "Il tuo tempo è scaduto! La lotta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:19.709761Z"
+  },
+  "quests.svargrond_arena.occupant_fighting": {
+    "src_hash": "6bda4a888dabaac85a446d9d094ea93c",
+    "text": "{0} è attualmente nella prossima arena. Per favore aspetta finché {1}ha finito di combattere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:19.710306Z"
+  },
+  "quests.svargrond_arena.time_out": {
+    "src_hash": "b63606673cc9b59a3033ef70c3d03e14",
+    "text": "Il tuo tempo è scaduto! La lotta è finita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:19.710721Z"
+  },
+  "quests.the_cursed_crystal.you_are_not_in_the_correct": {
+    "src_hash": "4f7ac98c193784159584fb71c029764c",
+    "text": "Non sei nella zona corretta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:19.711024Z"
+  },
+  "quests.the_dream_courts_quest.you_must_wait_a_while_to": {
+    "src_hash": "9057311894859673cdc77e54601722af",
+    "text": "È necessario attendere un po' per utilizzare nuovamente questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:19.711400Z"
+  },
+  "quests.the_order_of_lion.drume_time": {
+    "src_hash": "5a27ffaa20c67f7f5690e0a2d9f300c6",
+    "text": "Hai {0} minuti per sconfiggere Drume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:22.812032Z"
+  },
+  "quests.the_order_of_lion.someone_of_your_team_has_already": {
+    "src_hash": "0d783adafb3fa9fd48ed37e17311588b",
+    "text": "Qualcuno della tua squadra ha già combattuto nella scaramuccia nelle ultime 10 ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:22.812482Z"
+  },
+  "quests.the_order_of_lion.there_was_an_error_contact_an": {
+    "src_hash": "9304db86594128c379f8d0f32e33564e",
+    "text": "Si è verificato un errore, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:22.812830Z"
+  },
+  "quests.the_order_of_lion.theres_someone_already_in_the_skirmish": {
+    "src_hash": "859265a56444cce63c4967f001a87f46",
+    "text": "C'è già qualcuno nella scaramuccia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:22.813151Z"
+  },
+  "quests.the_order_of_lion.you_need_at_least_level_250": {
+    "src_hash": "da091b80a62e22562ef00087c34e4515",
+    "text": "È necessario almeno il livello 250.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:22.813453Z"
+  },
+  "quests.the_secret_library_quest.must_wait_boss": {
+    "src_hash": "3c626082e765cd2b43e027d21dd9856d",
+    "text": "Devi aspettare. Qualcuno sta sfidando {0} adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:25.638218Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_permission": {
+    "src_hash": "76ba088f968a4cac979a6a6db5a80736",
+    "text": "Non hai il permesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:25.638543Z"
+  },
+  "quests.threatened_dreams.fairy_free": {
+    "src_hash": "3f3cc4da9dc5c6866014839a3f0878b2",
+    "text": "I miei fratelli corrotti mi hanno rinchiuso nell'oscurità per troppo tempo. Ora sono finalmente libero! Grazie, essere mortale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:25.639080Z"
+  },
+  "quests.threatened_dreams.feathers_1": {
+    "src_hash": "3e18a910895fcd7fbdcc1b3e5a72df67",
+    "text": "Hai trovato altre piume sull'erba vicino al grano. Ora dovresti averne abbastanza per un intero mantello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:25.639569Z"
+  },
+  "quests.threatened_dreams.feathers_2": {
+    "src_hash": "2f2afa189d0a8f3fa44d91a791bc0f17",
+    "text": "Hai trovato delle bellissime piume di cigno nella pattumiera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:25.639916Z"
+  },
+  "quests.threatened_dreams.feathers_3": {
+    "src_hash": "75d732f3a656b37248c37a1640dc4ba7",
+    "text": "Hai trovato delle bellissime piume di cigno impigliate nelle punture del cactus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:27.780384Z"
+  },
+  "quests.threatened_dreams.feathers_4": {
+    "src_hash": "27805e5e4e45e1145dd59df87ccd1b4a",
+    "text": "Hai trovato delle bellissime piume di cigno sotto il teschio del drago.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:18:27.780758Z"
   }
 }

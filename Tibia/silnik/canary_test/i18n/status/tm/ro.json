@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:33:09.536513Z"
+    "updated_at": "2026-02-17T03:17:32.451546Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:33:12.128258Z"
+    "updated_at": "2026-02-17T03:17:35.019809Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:33:14.787322Z"
+    "updated_at": "2026-02-17T03:17:37.708156Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24461,7 +24461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:33:17.401020Z"
+    "updated_at": "2026-02-17T03:17:40.257445Z"
   },
   "spell.deathstrike_paralyze.name": {
     "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
@@ -26157,7 +26157,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:33:22.553519Z"
+    "updated_at": "2026-02-17T03:17:45.435639Z"
   },
   "spell.orewalker_wave.name": {
     "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
@@ -31149,7 +31149,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:33:27.805119Z"
+    "updated_at": "2026-02-17T03:17:51.045553Z"
   },
   "spell.monstor_summon.name": {
     "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
@@ -36494,5 +36494,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T03:15:52.981176Z"
+  },
+  "spell.timira_fire_ring.name": {
+    "src_hash": "d4dbeec8cd4e3057b2f48deb42453454",
+    "text": "inel de foc timira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:51.047065Z"
+  },
+  "spell.crystal_spider_paralyze_2.name": {
+    "src_hash": "65e000bbbca9193153934fb7e303b54a",
+    "text": "paianjenul de cristal paralizează 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:51.047377Z"
+  },
+  "spell.sapling_explode.name": {
+    "src_hash": "779c488a650f1720cb0f049fd4f207e8",
+    "text": "puietul explodează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:56.059101Z"
+  },
+  "spell.infected_weeper_summon.name": {
+    "src_hash": "5d48b1ac09992272779572ce5228fb76",
+    "text": "invocarea plângătoarelor infectate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:56.059388Z"
+  },
+  "spell.blightwalker_paralyze.name": {
+    "src_hash": "e51124ecb3786182defbcb4d579924fd",
+    "text": "blightwalker paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:56.059641Z"
+  },
+  "spell.werelion_wave.name": {
+    "src_hash": "fa74fff07e5d25858589c66e8508ae96",
+    "text": "val de vârcolac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:17:56.059853Z"
   }
 }

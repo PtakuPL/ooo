@@ -1,104 +1,128 @@
 {
-  "timestamp": "2026-02-17T02:59:10.291779Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 16,
+  "timestamp": "2026-02-17T03:02:26.251449Z",
+  "language": "ro",
+  "json_file": "talkactions.json",
+  "translated": 44,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
-      "source": "tm"
+      "key": "talkaction.gm.ban.msg_max_days",
+      "en": "Ban duration cannot exceed 350000 days.",
+      "translated": "Durata interdicției nu poate depăși 350000 de zile.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "tm"
+      "key": "talkaction.gm.ban.msg_usage",
+      "en": "Command param required. Use: /ban playername, days [, reason].",
+      "translated": "Este necesar un parametru de comandă. Utilizați: /ban nume jucător, zile [, motiv].",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "tm"
+      "key": "talkaction.gm.clean.msg_cleaned",
+      "en": "Cleaned {count} item(s) from the map.",
+      "translated": "S-au curățat {count} articol(e) de pe hartă.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "talkaction.gm.getlook.msg_result",
+      "en": "<look type=\"{}\" head=\"{}\" body=\"{}\" legs=\"{}\" feet=\"{}\" addons=\"{}\" mount=\"{}\" />",
+      "translated": "<look type=\"{}\" cap=\"{}\" corp=\"{}\" picioare=\"{}\" picioare=\"{}\" suplimente=\"{}\" montură=\"{}\" />",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "talkaction.gm.gold_highscore.msg_header",
+      "en": "Current gold highscore for this server:",
+      "translated": "Scorul maxim de aur actual pentru acest server:",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "talkaction.gm.gold_highscore.msg_no_highscore",
+      "en": "No highscore to show.",
+      "translated": "Niciun punctaj maxim de afișat.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "talkaction.gm.kick.msg_cannot_kick",
+      "en": "You cannot kick this player.",
+      "translated": "Nu poți lovi acest jucător.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "talkaction.gm.looktype.msg_must_be_number",
+      "en": "Looktype must be a numerical value.",
+      "translated": "Looktype trebuie să fie o valoare numerică.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "talkaction.gm.namelock.msg_namelocked",
+      "en": "{name} has been namelocked",
+      "translated": "{name} a fost blocat",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "talkaction.gm.namelock.msg_not_found",
+      "en": "{name} was not found.",
+      "translated": "{name} nu a fost găsit.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "talkaction.gm.namelock.msg_reason_required",
+      "en": "You must specify a reason.",
+      "translated": "Trebuie să specificați un motiv.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "talkaction.gm.push_creature.msg_cannot_teleport",
+      "en": "You can not teleport {name}.",
+      "translated": "Nu vă puteți teleporta {name}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "talkaction.gm.set_light.msg_specify_color",
+      "en": "You need to specify the light color.",
+      "translated": "Trebuie să specificați culoarea luminii.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "talkaction.gm.set_light.msg_usage",
+      "en": "Use like this: /setlight color (0-{max}), (1-32). The first param is color and the second is intensity.",
+      "translated": "Utilizați astfel: /setlight color (0-{max}), (1-32). Primul parametru este culoarea, iar al doilea este intensitatea.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "talkaction.gm.skip_tiles.msg_cannot_teleport",
+      "en": "You cannot teleport there.",
+      "translated": "Nu te poți teleporta acolo.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "talkaction.gm.spy.msg_empty",
+      "en": "Empty",
+      "translated": "Gol",
+      "source": "google_translate"
+    },
+    {
+      "key": "talkaction.gm.spy.msg_equipment_of",
+      "en": "Equipment of {0}",
+      "translated": "Echipamentul {0}",
+      "source": "google_translate"
+    },
+    {
+      "key": "talkaction.gm.spy.msg_specify_name",
+      "en": "Write the name of the character to spy on.",
+      "translated": "Scrie numele personajului de spionat.",
+      "source": "google_translate"
+    },
+    {
+      "key": "talkaction.gm.spy.slot_amulet",
+      "en": "Amulet",
+      "translated": "Amuletă",
+      "source": "google_translate"
+    },
+    {
+      "key": "talkaction.gm.spy.slot_arrow",
+      "en": "Arrow",
+      "translated": "Săgeată",
+      "source": "google_translate"
     }
   ]
 }

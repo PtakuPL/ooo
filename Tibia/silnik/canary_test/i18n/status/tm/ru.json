@@ -27254,5 +27254,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:49:42.449511Z"
+  },
+  "achievement.393.name": {
+    "src_hash": "9e40c1276fdfe7fc2991b60c62407bcb",
+    "text": "Пробки вокруг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:43.200767Z"
+  },
+  "achievement.397.name": {
+    "src_hash": "e4d854683d1bf8a657758a59d1474302",
+    "text": "Каскадер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:43.201028Z"
+  },
+  "achievement.399.name": {
+    "src_hash": "d7a5737b941591945ddcd159ab1d3d5d",
+    "text": "Травля медведя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:43.201256Z"
+  },
+  "achievement.404.name": {
+    "src_hash": "c5c9ac135d2c7f1dedb3e5801d08c465",
+    "text": "Картография 101",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:43.201491Z"
+  },
+  "achievement.406.name": {
+    "src_hash": "5f381e2e60a03a2fdc1b919404176685",
+    "text": "Чем больше, тем лучше",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:43.201781Z"
+  },
+  "achievement.440.name": {
+    "src_hash": "1f30f3995df644644cce944c63d281ac",
+    "text": "Похоронен барон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:49.853129Z"
+  },
+  "achievement.466.name": {
+    "src_hash": "51d2ad6a8a8cc9caf829bbed7e5f3962",
+    "text": "Спекуляции",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:49.853364Z"
+  },
+  "achievement.468.name": {
+    "src_hash": "259679871d31330413db3f4adcbefbbf",
+    "text": "Библиоманьяк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:49.853582Z"
+  },
+  "achievement.492.name": {
+    "src_hash": "ca71ee1eca6f1800db240e20ad6df0b3",
+    "text": "Гиппофодермус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:49.853802Z"
+  },
+  "achievement.496.name": {
+    "src_hash": "078ae6f91ea13a98b320218e08caaed7",
+    "text": "Традиционалист",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:53.765422Z"
+  },
+  "achievement.500.name": {
+    "src_hash": "ce5aa32e9df134cc00d68765230c18bc",
+    "text": "Проспект",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:53.765738Z"
+  },
+  "achievement.502.name": {
+    "src_hash": "eea77606fd8a438de01d6244c61301f0",
+    "text": "Верминбейн",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:53.765989Z"
+  },
+  "achievement.504.name": {
+    "src_hash": "39cb2d7b1cf513ca707a73bcc06c26b0",
+    "text": "Надсмотрщик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:53.766272Z"
+  },
+  "achievement.508.name": {
+    "src_hash": "f98200b2c743a44931c5a8ee2dbb8559",
+    "text": "Потусторонний",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:58.547336Z"
+  },
+  "achievement.510.description": {
+    "src_hash": "e26a207d76b0a341269fc8777d4d97f9",
+    "text": "Если прайд львов и стая гиен враждуют, это называется не кошачьей дракой, а... чем угодно. Конечно, это вызвало много драмы в пустыне Дарама.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:58.548031Z"
+  },
+  "achievement.511.name": {
+    "src_hash": "2b971b8f184a5cedf4492bf1f2789507",
+    "text": "Малефиц",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:58.548263Z"
+  },
+  "achievement.511.description": {
+    "src_hash": "0f852ec4dbdd9bd7ed71adbb6d45b6b2",
+    "text": "Познакомился с тремя братьями Фитцами.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:58.548631Z"
+  },
+  "achievement.512.name": {
+    "src_hash": "41ed7adb8d78696bb2258daa6004c2ac",
+    "text": "Львиное Сердце",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:00:58.548851Z"
+  },
+  "achievement.512.description": {
+    "src_hash": "fd0f4a336c557ab2dd32e3d9bd8d2aec",
+    "text": "Вы победили зловредный дуэт Друм и Фуга и восстановили порядок в осажденном городе Bounac. Вы завоевали экзотическую крепость Ордена Cobra и победили рыцарей-нежить Ордена Сокола. Настоящий рыцарь сердцем и разумом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:04.587755Z"
+  },
+  "achievement.513.name": {
+    "src_hash": "ce7fa1e726117aa9801c2641dd3d6e10",
+    "text": "Исцелитель душ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:04.588022Z"
+  },
+  "achievement.513.description": {
+    "src_hash": "4279bdd728308e3572ce570f72210682",
+    "text": "Вернувшись в мир живых, это великолепное существо проведет вас через смерть и все, что лежит за ее пределами.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:04.588592Z"
+  },
+  "achievement.514.name": {
+    "src_hash": "ffb2a24ba1df7049a2529cf17c37e287",
+    "text": "У тебя есть лошадь Power",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:04.589010Z"
+  },
+  "achievement.514.description": {
+    "src_hash": "4279bdd728308e3572ce570f72210682",
+    "text": "Вернувшись в мир живых, это великолепное существо проведет вас через смерть и все, что лежит за ее пределами.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:04.589594Z"
+  },
+  "achievement.515.name": {
+    "src_hash": "4c181aa76e94c96657de5304f3802498",
+    "text": "Высвободите зверя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:08.126775Z"
+  },
+  "achievement.515.description": {
+    "src_hash": "e91084741f9defa368b6461ca1f3c5a6",
+    "text": "Вы победили проявление злых качеств Гошнара, пробившись сквозь чудовищ, которых даже не хотели себе представить. Это преобразило вас, и теперь вы тоже можете выглядеть соответствующе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:08.127581Z"
+  },
+  "achievement.516.name": {
+    "src_hash": "209a47165f9b4d9bd095209be4e63d4c",
+    "text": "Ну зарычал, Лев!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:08.127853Z"
+  },
+  "achievement.516.description": {
+    "src_hash": "67dab30d292a28166d2f888573ee88b6",
+    "text": "Вы помогли Домициану и тем самым доказали, что достойны войти в святилище оборотней под Lion's Rock. Там вы столкнулись с могучими верльвами, и один из редких белых львов даже решил сопровождать вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:08.128917Z"
+  },
+  "achievement.518.name": {
+    "src_hash": "74a3f49d990cf1adf0e68730033b2913",
+    "text": "Почетный Раскухан",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:08.129273Z"
+  },
+  "achievement.518.description": {
+    "src_hash": "2492bc8165c662e114fb63697b9decdc",
+    "text": "Находясь в Раскуконе, поступайте так, как поступают Раскуганы!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:14.735732Z"
+  },
+  "achievement.519.name": {
+    "src_hash": "c999ea5208b1712281cb938b5750e41f",
+    "text": "Освободите Кракена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:14.736014Z"
+  },
+  "achievement.519.description": {
+    "src_hash": "b2b33699515cfc9837022daa39211bb1",
+    "text": "Поездка на этом мягком компаньоне дает ощущение полета по воздуху... хм... плавания по семи морям!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:14.736572Z"
+  },
+  "achievement.521.description": {
+    "src_hash": "5f299cea4dcf1e6f010ccc2e944ec068",
+    "text": "Вы не совсем Гамелинский крысолов, но, по крайней мере, вам удалось отбиться от приличного количества пиратов и помочь им не допустить их в города.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:14.737241Z"
+  },
+  "achievement.522.name": {
+    "src_hash": "f315308c2b8c472da3318e9d5123ee8a",
+    "text": "Резчик по дереву",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:01:14.737476Z"
   }
 }

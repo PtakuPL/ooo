@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T03:50:24.590015Z",
-  "language": "pl",
-  "json_file": "items.json",
-  "translated": 31,
+  "timestamp": "2026-02-17T03:51:44.620579Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "item.15819.desc",
-      "en": "It contains red and green spores. Gather some BLUE spores",
-      "translated": "Zawiera czerwone i zielone zarodniki. Zbierz trochę NIEBIESKICH zarodników",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "item.15819.name",
-      "en": "gnomish spore gatherer",
-      "translated": "gnomi zbieracz zarodników",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "item.15820.desc",
-      "en": "It contains red, green and blue spores. Gather some YELLOW spores",
-      "translated": "Zawiera zarodniki czerwone, zielone i niebieskie. Zbierz trochę ŻÓŁTYCH zarodników",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "item.15820.name",
-      "en": "gnomish spore gatherer",
-      "translated": "gnomi zbieracz zarodników",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "item.15821.desc",
-      "en": "It contains red, green, blue and yellow spores. Deliver it to the gnomes",
-      "translated": "Zawiera zarodniki czerwone, zielone, niebieskie i żółte. Dostarcz to gnomom",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "item.15821.name",
-      "en": "gnomish spore gatherer",
-      "translated": "gnomi zbieracz zarodników",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "item.15825.desc",
-      "en": "With some luck you might be able to pluck a grindstone from the formation.",
-      "translated": "Przy odrobinie szczęścia być może uda ci się wyrwać kamień szlifierski z formacji.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "item.15826.desc",
-      "en": "You have to deliver the Whetstone while it is still hot. It will crumble within one hour",
-      "translated": "Musisz dostarczyć Osełkę, póki jest jeszcze gorąca. Rozpadnie się w ciągu godziny",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "item.15828.desc",
-      "en": "The little pig needs to be returned to its keeper within an hour",
-      "translated": "Świnkę należy zwrócić właścicielowi w ciągu godziny",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "item.15833.desc",
-      "en": "The little pig needs to be returned to its keeper within an hour",
-      "translated": "Świnkę należy zwrócić właścicielowi w ciągu godziny",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "item.16101.desc",
-      "en": "The gnomish slime remover works wonders on mucky objects",
-      "translated": "Gnomiczny środek do usuwania śluzu działa cuda na brudne przedmioty",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "item.16115.desc",
-      "en": "It contains the everblazing fire",
-      "translated": "Zawiera wieczny ogień",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "item.16117.desc",
-      "en": "A true staff of old, spitting slimy orbs",
-      "translated": "Prawdziwa laska starych, plujących śluzowatymi kulami",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "item.16118.desc",
-      "en": "Hurls the icy essence of the Svargrond glaciers",
-      "translated": "Ciska lodową esencją lodowców Svargrond",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "item.16128.name",
-      "en": "minor crystalline token",
-      "translated": "drobny krystaliczny znak",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.16138.name",
-      "en": "crystalline spikes",
-      "translated": "krystaliczne kolce",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.16139.name",
-      "en": "humongous chunk",
-      "translated": "ogromny kawał",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "item.16140.name",
-      "en": "hideous chunk",
-      "translated": "okropny kawał",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "item.16141.name",
-      "en": "prismatic bolt",
-      "translated": "śruba pryzmatyczna",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "item.16142.name",
-      "en": "drill bolt",
-      "translated": "śruba wiertnicza",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

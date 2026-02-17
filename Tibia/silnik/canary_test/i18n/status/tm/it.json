@@ -44790,5 +44790,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:46:22.435598Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:08.188659Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:13.179255Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_3": {
+    "src_hash": "e4544088897d6811ed922f9fc2138f36",
+    "text": "Sì, sì, ti ucciderò presto, ora lasciami continuare le mie indagini su di te.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:13.179749Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_4": {
+    "src_hash": "9d6e9f2fbe7de3b1b0007ccb46c2b47b",
+    "text": "Piangeranno il giorno in cui ci hanno abbandonato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:13.180081Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_5": {
+    "src_hash": "41d134b2a8410adc9bce48ffe2331502",
+    "text": "Sono il grande bibliotecario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:13.180354Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_6": {
+    "src_hash": "0daab9156f7fb23d59b6ff1906b6c17c",
+    "text": "È una bella biblioteca, vero?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:17.149259Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_7": {
+    "src_hash": "4e0592887430cfbffc525b3f49d3bcc1",
+    "text": "Sono 486486 e NON 'Blinky' come mi chiamavano alcune persone... prima di morire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:17.149683Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_8": {
+    "src_hash": "4ab242d317d6d91f01ba24feb40c1d75",
+    "text": "È 1, non '__PH0__', stupido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:17.150412Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_9": {
+    "src_hash": "64cfea2b486417441fa96a7e7b6d4717",
+    "text": "La bruttezza incarnata. Un occhio! Immaginatelo! Orribile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:17.150819Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:17.151087Z"
+  },
+  "npc.ahmet.multi_1": {
+    "src_hash": "2d0b3d1f241c773cbcefbb392128acb7",
+    "text": "Bene allora. Ecco, prendi il libro, ho aggiunto la storia. Oh, solo un consiglio: non infiammare i pregiudizi, ma i bracconieri hanno un carattere piuttosto semplice. Dubito che siano lettori accaniti. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:19.723384Z"
+  },
+  "npc.ahmet.multi_2": {
+    "src_hash": "182c8585598302535ced93e8c70f753e",
+    "text": "Quindi, se vuoi assicurarti che lo leggano presto, forse non nascondere il libro in uno scaffale o in una cassapanca. Assicurati di posizionarlo da qualche parte dove possano trovarlo facilmente, come ovviamente su un tavolo o qualcosa del genere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:19.724091Z"
+  },
+  "npc.ahmet.multi_3": {
+    "src_hash": "843318a528e8becb2b7b086b3ffc58d9",
+    "text": "Certo che lo fai! Vai a dare la caccia ai ladri e riporta indietro la roba che mi hanno rubato. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:19.724540Z"
+  },
+  "npc.ahmet.multi_4": {
+    "src_hash": "afc62477c975f202a63bd0b53789a593",
+    "text": "Li ho visti correre fuori città e poi verso nord. Forse si nascondono nell'oasi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:19.724993Z"
+  },
+  "npc.ahmet.multi_5": {
+    "src_hash": "b9530212489095917620911591703f8c",
+    "text": "Di cosa stai parlando?? Sono stato derubato!!!! Qualcuno catturi quegli schifosi ladri!!!!! GUARDIE! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:19.725427Z"
+  },
+  "npc.ahmet.multi_6": {
+    "src_hash": "ab0b75f114c227e77d33d8d27fbc5049",
+    "text": "<non succede nulla>....<SIGH> Come al solito, si nascondono al minimo segno di guai! VOI! Vuoi guadagnare qualche soldo velocemente?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:22.319302Z"
+  },
+  "npc.ahmet.multi_7": {
+    "src_hash": "d741cb41b98b79e54149e4a468dbae50",
+    "text": "Hai bisogno di documenti falsificati? Ma creerò qualcosa solo per un amico. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:22.319760Z"
+  },
+  "npc.ahmet.multi_8": {
+    "src_hash": "78924063791e7fb1a53aa0441b010278",
+    "text": "I nomadi dell'oasi settentrionale hanno ucciso una persona a me cara. Vai e uccidine almeno uno, poi parliamo del tuo documento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:22.320256Z"
+  },
+  "npc.ahmet.say_1": {
+    "src_hash": "f4093c5a43c897971ab2593530197453",
+    "text": "L'uccisore dei miei nemici è mio amico! Per soli 1000 oro creerò i documenti di cui hai bisogno. Sei interessato?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:22.320788Z"
+  },
+  "npc.ahmet.say_2": {
+    "src_hash": "e619bd06d61550cb3d6e160575a63b3d",
+    "text": "Hai trovato la mia roba?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:22.321055Z"
+  },
+  "npc.ahmet.say_3": {
+    "src_hash": "4cffa0753cf6e3df553096c37e134da0",
+    "text": "Capisco: vuoi che aggiunga un'ulteriore storia a questo libro. Una leggenda racconta che uccidere un cervo bianco porta sfortuna. Potrei farlo, sì. Tuttavia, costa 5000 monete d'oro. Sei ancora interessato?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:24.996010Z"
+  },
+  "npc.ahmet.say_4": {
+    "src_hash": "03ed7c260027126bcdd6318ab31cb036",
+    "text": "Ed eccoli qui! Ora dimentica da dove li hai presi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:24.996375Z"
+  },
+  "npc.ahmet.say_6": {
+    "src_hash": "f5e1fe9e47e6dd03c51c08d50c42e547",
+    "text": "GRANDE! Se mai avessi bisogno di un lavoro come mia guardia di sicurezza personale, fammelo sapere. Ecco la ricompensa che ti ho promesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:24.996852Z"
+  },
+  "npc.ahmet.say_7": {
+    "src_hash": "51a959a1f5a65a04ba5da31a38ac57da",
+    "text": "Torna quando trovi la mia roba.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:24.997145Z"
+  },
+  "npc.ahmet.say_8": {
+    "src_hash": "b8e16f628db6fca387e34e3c3070d7dd",
+    "text": "Hai bisogno di 5000 gps e prenota con antiche leggende.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:24.997471Z"
+  },
+  "npc.ahmet.say_9": {
+    "src_hash": "65fdae85d9e79865bdc8f48a46234168",
+    "text": "Non sei in questa missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:27.593680Z"
+  },
+  "npc.ajax.multi_1": {
+    "src_hash": "0514860bcceb371bd1f1651ed7b4123e",
+    "text": "Bene! Faccio un'arma scintillante. Se mi aiuti ne faccio uno anche per te. Come l'ascia che indosso. Ho bisogno di cose. Ascoltare. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:27.594272Z"
+  },
+  "npc.ajax.multi_2": {
+    "src_hash": "b55613c549b8629d30af316cadd89a71",
+    "text": "Mi servono 100 minerali di ferro. Allora serve ferro grezzo. Poi 50 zanne di colosso. E 50 pelle di lucertola. Capisci?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:27.594755Z"
+  },
+  "npc.ajax.multi_3": {
+    "src_hash": "5a2b96b2fec5ec0dc0809fc430caeff7",
+    "text": "Aiutami sì o no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:27.595017Z"
+  },
+  "npc.ajax.say_1": {
+    "src_hash": "9cbe268f9091550035676742440f653c",
+    "text": "IL TUO? QUAL È IL TUO! NIENTE È TUO! È MIO! ANDARE VIA, SI?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:27.595384Z"
+  },
+  "npc.ajax.say_10": {
+    "src_hash": "5a32ba1545609091a15cd37ee3523792",
+    "text": "Porti ferro grezzo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:29.536702Z"
+  },
+  "npc.ajax.say_11": {
+    "src_hash": "cae49d0d29c8fdc68dd06d4fbbc3b5db",
+    "text": "Hai portato 50 zanne di colosso?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:51:29.537003Z"
   }
 }

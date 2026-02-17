@@ -101558,5 +101558,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:30:53.545708Z"
+  },
+  "npc.kjesse.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.893107Z"
+  },
+  "npc.kjesse.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.905126Z"
+  },
+  "npc.kjesse.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.905791Z"
+  },
+  "npc.kjesse.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.906949Z"
+  },
+  "npc.kjesse.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.908154Z"
+  },
+  "npc.kulag_the_guard.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.927642Z"
+  },
+  "npc.kulag_the_guard.greet_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.928189Z"
+  },
+  "npc.kulag_the_guard.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "NIECH ŻYJE KRÓL!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.929816Z"
+  },
+  "npc.lailene.farewell_msg_1": {
+    "src_hash": "5cc6d07cc263deba83a86192ba6e33b2",
+    "text": "Na razie, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.930708Z"
+  },
+  "npc.lailene.greet_msg_1": {
+    "src_hash": "a21aa717d510ec030be90be63a987599",
+    "text": "Czego chcesz w moim sklepie z magicznymi szatami? Wątpię, bym miała coś, co cię zainteresuje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.931835Z"
+  },
+  "npc.lailene.walkaway_msg_1": {
+    "src_hash": "5cc6d07cc263deba83a86192ba6e33b2",
+    "text": "Na razie, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.933433Z"
+  },
+  "npc.lector.farewell_msg_1": {
+    "src_hash": "e7e8376c8ebc0e34eb5dce943e3eb35e",
+    "text": "Proszę, wpadnij i kup ponownie, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.964561Z"
+  },
+  "npc.lector.sendtrade_msg_1": {
+    "src_hash": "9d91a8c725ee133251c60e4a29425753",
+    "text": "Oczywiście, dobrze przyjrzyj się mojemu mięsu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.965886Z"
+  },
+  "npc.lee_delle.greet_msg_1": {
+    "src_hash": "3fce01a91a23475db857bb6058700e97",
+    "text": "Miło cię widzieć, |PLAYERNAME|! Poproś o {trade}, jeśli chcesz zobaczyć moje wyjątkowe oferty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.967772Z"
+  },
+  "npc.lee_delle.sendtrade_msg_1": {
+    "src_hash": "2b98a21dd3ecc8b73f39abd3b404c6ba",
+    "text": "Jasne, spójrz sobie, kochanie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.968713Z"
+  },
+  "npc.lee_delle.stdmod_26": {
+    "src_hash": "ce6b61c8f2e16d8a4b54ad73138ee5ca",
+    "text": "Po prostu poproś mnie o {trade}, żeby zobaczyć, co od ciebie kupuję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.975900Z"
+  },
+  "npc.lee_delle.stdmod_37": {
+    "src_hash": "c7b698bf128650165ce7b3f169e297ff",
+    "text": "Poświęcił swoje życie, by witać nowoprzybyłych na tej wyspie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.980888Z"
+  },
+  "npc.lee_delle.stdmod_38": {
+    "src_hash": "9e48c63b7708028e36d3561878e4eb33",
+    "text": "Biedna staruszka, jej syn {Tom} nigdy jej nie odwiedza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.981862Z"
+  },
+  "npc.lee_delle.stdmod_45": {
+    "src_hash": "1eb45a909a22c6117d2ec6f884f996fa",
+    "text": "Przeważnie trzyma się na uboczu. To pustelnik poza miastem - powodzenia w znalezieniu go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.985421Z"
+  },
+  "npc.lee_delle.stdmod_50": {
+    "src_hash": "e8899364d696c697b01a31b7ce5a01ca",
+    "text": "To miejscowy garbarz. Możesz spróbować sprzedać mu świeże zwłoki albo skórę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.988220Z"
+  },
+  "npc.liane.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.996137Z"
+  },
+  "npc.liane.greet_msg_1": {
+    "src_hash": "32df9254b9776388eb1c634b940522f1",
+    "text": "Cześć. Jak mogę Ci pomóc |PLAYERNAME|? Jeśli chcesz coś kupić, zapytaj mnie o wymianę. Mogę również wyjaśnić system {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:32.997378Z"
+  },
+  "npc.liane.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.000575Z"
+  },
+  "npc.lily.greet_msg_1": {
+    "src_hash": "c85bd82113d310a30767258fcba1ef2a",
+    "text": "Hej, |PLAYERNAME|! Vascalir musiał cię przysłać, żebyś pomógł mi w małej {mission}, prawda?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.001958Z"
+  },
+  "npc.lily.greet_msg_2": {
+    "src_hash": "9f97d334b171026b4ef7757112fb8bdb",
+    "text": "Witaj, |PLAYERNAME|! Tak szybko wróciłeś? Dostarczyłeś zioła do Hyacinth?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.003030Z"
+  },
+  "npc.lily.greet_msg_3": {
+    "src_hash": "c81ecf943aa00abd9e5f2a3b2639f5cc",
+    "text": "Witaj, |PLAYERNAME|! Wyglądasz dziś na trochę zestresowanego. Jeśli chcesz zobaczyć moje oferty mikstur, poproś o {trade}. Jeśli szukasz marketu i lochów, idź ścieżką na wschód!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.004554Z"
+  },
+  "npc.lily.sendtrade_msg_1": {
+    "src_hash": "797120acf39e816b4666bc8649e89356",
+    "text": "Oczywiście, przejrzyj moje oferty. Jeśli kupujesz miksturę, pamiętaj, że za pustą fiolkę jest {deposit} 5 sztuk złota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.006665Z"
+  },
+  "npc.lily.stdmod_23": {
+    "src_hash": "e1358dab3ba6953efb2d59f54724b812",
+    "text": "Jeśli podasz mi imię obywatela, powiem ci, co o nim lub o niej wiem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.012904Z"
+  },
+  "npc.lily.stdmod_39": {
+    "src_hash": "7defe47d2884475b8bd17dca63d0bcd8",
+    "text": "Aby zobaczyć oferty kupca, po prostu porozmawiaj z nim lub z nią i poproś o {trade}. Chętnie pokażą ci swoje oferty, a także rzeczy, które od ciebie kupują.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:31:33.019535Z"
   }
 }

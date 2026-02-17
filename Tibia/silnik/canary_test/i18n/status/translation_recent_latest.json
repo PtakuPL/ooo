@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T04:03:16.379554Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T04:05:28.640033Z",
+  "language": "ro",
+  "json_file": "quests.json",
+  "translated": 46,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "quests.rookie_guard.m12.no_poison_yet",
+      "en": "You haven't used the poison on Kraknaknork's soup yet. Don't try to fight him before that - or he will definitely kill you.",
+      "translated": "Încă nu ai folosit otrava din supa lui Kraknaknork. Nu încerca să te lupți cu el înainte de asta - sau el te va ucide cu siguranță.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.rookie_guard.m12.orc_break",
+      "en": "This orc has turned his back to you and is obviously taking a break. Use the rolling pin on him to knock him out!",
+      "translated": "Acest orc ți-a întors spatele și, evident, ia o pauză. Folosește sucitorul pe el pentru a-l doborî!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.rookie_guard.m12.sneaked_in",
+      "en": "You sneaked into the orc fortress. Careful now, don't go outside again.",
+      "translated": "Te-ai strecurat în fortăreața orcilor. Atenție acum, nu mai ieși afară.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "quests.rookie_guard.m12.trap_ready",
+      "en": "Got your tarantula trap ready? You might need to use it soon...",
+      "translated": "Ți-ai pregătit capcana pentru tarantule? S-ar putea să fie nevoie să-l folosești în curând...",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.bank_academy",
+      "en": "The bank is below the academy. Go north and head down the stairs and to the right.",
+      "translated": "Banca este sub academie. Mergeți spre nord și coborâți scările și la dreapta.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.bank_paulie",
+      "en": "Go to the right to find the bank and talk to Paulie.",
+      "translated": "Du-te la dreapta pentru a găsi banca și vorbește cu Paulie.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.entering_orcland",
+      "en": "You're entering orcland.",
+      "translated": "Intri în orcland.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.graveyard_east",
+      "en": "Follow the way to the east and go south to reach the graveyard.",
+      "translated": "Urmați drumul spre est și mergeți spre sud pentru a ajunge la cimitir.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.hallway_library",
+      "en": "Head through the northern door and follow the hallways to find the library vault.",
+      "translated": "Treceți prin ușa de nord și urmați holurile pentru a găsi seiful bibliotecii.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.hyacinth_east",
+      "en": "Follow the path to the east to find Hyacinth's little house.",
+      "translated": "Urmați poteca spre est pentru a găsi căsuța lui Hyacinth.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.library_vault",
+      "en": "The library vault is below the academy. Go north and head down several stairs until you find a quest door.",
+      "translated": "Seiful bibliotecii este sub academie. Mergeți spre nord și coborâți câteva scări până când găsiți o ușă de căutare.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.no_bag_yet",
+      "en": "You don't have the bag with the items yet. Open the door in the basement of the academy to the left of Paulie to get them!",
+      "translated": "Nu ai încă geanta cu articolele. Deschide ușa din subsolul academiei din stânga lui Paulie pentru a-i lua!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.not_crypt_south",
+      "en": "This is not the way to the crypt. Go south to reach the graveyard.",
+      "translated": "Acesta nu este drumul către criptă. Mergi spre sud pentru a ajunge la cimitir.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.not_hyacinth_south",
+      "en": "This is not the way to Hyacinth. Stay on the path a little more to the south to find Hyacinth's little house.",
+      "translated": "Acesta nu este drumul către Hyacinth. Rămâneți pe potecă puțin mai spre sud pentru a găsi căsuța lui Hyacinth.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.not_tarantula_nw",
+      "en": "This is not the way to the tarantula's lair. Head northwest and go up the little ramp.",
+      "translated": "Acesta nu este drumul către bârlogul tarantulei. Îndreptați-vă spre nord-vest și urcați pe mica rampă.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.not_troll_north",
+      "en": "This is not the way to the troll caves. Follow the path to the north past the hill to reach them.",
+      "translated": "Acesta nu este drumul către peșterile trolilor. Urmați poteca spre nord, trecând de deal pentru a ajunge la ele.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.not_wasps_north",
+      "en": "This is not the way to the wasps' lair. Choose the northern path to reach it.",
+      "translated": "Acesta nu este drumul către bârlogul viespilor. Alegeți calea nordică pentru a ajunge la ea.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.orc_fortress_path",
+      "en": "Follow the path to the north, cross the bridge to the south and walk west to reach the orc fortress.",
+      "translated": "Urmați poteca spre nord, traversați podul spre sud și mergeți spre vest pentru a ajunge la fortăreața orcilor.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.orc_west",
+      "en": "Follow the path to the west to reach the orc fortress.",
+      "translated": "Urmați poteca spre vest pentru a ajunge la cetatea orcilor.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.rookie_guard.missions.road_main",
+      "en": "This road is the main access of the village. You might want to finish your business here first.",
+      "translated": "Acest drum este principalul acces al satului. Poate doriți să vă terminați afacerea aici mai întâi.",
+      "source": "google_translate"
     }
   ]
 }

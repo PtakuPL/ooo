@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T04:03:21.086645Z",
+  "timestamp": "2026-02-17T04:05:33.810246Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -16077,8 +16077,8 @@
         [
           "quests.json",
           1,
-          1771298307780916557,
-          66752
+          1771301043244009819,
+          66718
         ],
         [
           "raids.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8144,
-        "english_copy_keys": 2444,
+        "translated_keys": 8176,
+        "english_copy_keys": 2443,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 15.2,
+        "completion_pct": 15.26,
         "server_keys": 49731,
-        "server_translated": 7672,
-        "server_pct": 15.43,
+        "server_translated": 7704,
+        "server_pct": 15.49,
         "client_keys": 3855,
         "client_translated": 472,
         "client_pct": 12.24
@@ -16556,13 +16556,13 @@
         "quests.json": {
           "sig": [
             1,
-            1771298307780916557,
-            66752
+            1771301043244009819,
+            66718
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 563,
-            "english_copy_keys": 7,
+            "translated_keys": 595,
+            "english_copy_keys": 6,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27039,8 +27039,8 @@
         [
           "quests.json",
           1,
-          1771298430921236698,
-          66479
+          1771301128568235874,
+          66776
         ],
         [
           "raids.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 12885,
+        "translated_keys": 12927,
         "english_copy_keys": 2414,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 24.05,
+        "completion_pct": 24.12,
         "server_keys": 49731,
-        "server_translated": 12370,
-        "server_pct": 24.87,
+        "server_translated": 12412,
+        "server_pct": 24.96,
         "client_keys": 3855,
         "client_translated": 515,
         "client_pct": 13.36
@@ -27518,12 +27518,12 @@
         "quests.json": {
           "sig": [
             1,
-            1771298430921236698,
-            66479
+            1771301128568235874,
+            66776
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 414,
+            "translated_keys": 456,
             "english_copy_keys": 6,
             "missing_keys": 0,
             "missing_files": 0
@@ -27822,8 +27822,8 @@
         [
           "quests.json",
           1,
-          1771298357553045468,
-          77591
+          1771301055396036726,
+          78466
         ],
         [
           "raids.json",
@@ -27879,14 +27879,14 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 20288,
+        "translated_keys": 20303,
         "english_copy_keys": 2581,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 37.86,
+        "completion_pct": 37.89,
         "server_keys": 49731,
-        "server_translated": 17535,
-        "server_pct": 35.26,
+        "server_translated": 17550,
+        "server_pct": 35.29,
         "client_keys": 3855,
         "client_translated": 2753,
         "client_pct": 71.41
@@ -28301,12 +28301,12 @@
         "quests.json": {
           "sig": [
             1,
-            1771298357553045468,
-            77591
+            1771301055396036726,
+            78466
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 336,
+            "translated_keys": 351,
             "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0

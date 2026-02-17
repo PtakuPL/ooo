@@ -29254,5 +29254,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:02:33.413108Z"
+  },
+  "quests.secret_library.found_item_lower": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Вы нашли {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:08.007823Z"
+  },
+  "quests.kilmaresh.memory_word_3": {
+    "src_hash": "833be6e9e01708a39902aebfb55591bb",
+    "text": "Через межпространственные врата можно увидеть, как Посол Rathleton вполне знакомым языком разговаривает с культистами Фафнара. Доказательство абсолютно существенное. Посол — предатель!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:09.358139Z"
+  },
+  "quests.lions_rock.amethyst_flame": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Вы помещаете аметист в маленькое гнездо. Фиолетовое пламя начинает гореть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:09.358650Z"
+  },
+  "quests.lions_rock.ruby_flame": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Вы помещаете рубин в маленькое гнездо. Красное пламя начинает гореть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:09.359099Z"
+  },
+  "quests.lions_rock.sapphire_flame": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Вы помещаете сапфир в маленькое гнездо. Голубое пламя начинает гореть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:09.359547Z"
+  },
+  "quests.lions_rock.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Когда придет время, '%s' будет принят в этом храме.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:11.955737Z"
+  },
+  "quests.lions_rock.sign_hyaena_1": {
+    "src_hash": "43506f692e5eaa2d03b471d5db205e9f",
+    "text": "С помощью старого свитка вы переводите надписи на золотой статуе: И могучий лев победил жадную гиену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:11.956336Z"
+  },
+  "quests.lions_rock.sign_hyaena_2": {
+    "src_hash": "8390080f6d5fbd320a95afbd47f1c011",
+    "text": "В знак победы он взял его кровь, красную, как жадность и похоть, и создал драгоценное сокровище.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:11.956871Z"
+  },
+  "quests.lions_rock.sign_lizard_1": {
+    "src_hash": "607e1aa56577c65566e8d1a407b24f60",
+    "text": "С помощью старого свитка переводите надписи на полу: И могучий лев победил ленивую ящерицу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:11.957406Z"
+  },
+  "quests.lions_rock.sign_lizard_2": {
+    "src_hash": "026f745497af303958bed63db3a88230",
+    "text": "В знак победы он взял ее яйцо, голубое, как лень и тщеславие, и создал из мерзкого существа драгоценное сокровище.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:11.957991Z"
+  },
+  "quests.lions_rock.sign_scorpion_1": {
+    "src_hash": "5525122a591ad5ece97e50232e932137",
+    "text": "С помощью старого свитка вы переводите надписи на золотом алтаре: И могучий лев победил коварного скорпиона.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:15.396548Z"
+  },
+  "quests.lions_rock.sign_scorpion_2": {
+    "src_hash": "43c5ad801d0867efcacf0874cd5f755c",
+    "text": "В знак победы он принимает ее яд, фиолетовый, как обман и предательство, и создает драгоценное сокровище.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:15.397114Z"
+  },
+  "quests.lions_rock.sign_snake_1": {
+    "src_hash": "a38676d3c1f2b95ea81fd6a0c07d9842",
+    "text": "С помощью старого свитка вы переводите надписи на полу: И могучий лев победил ревнивого змея.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:15.397657Z"
+  },
+  "quests.lions_rock.sign_snake_2": {
+    "src_hash": "0ddb19907d494051a2036cc940045ca1",
+    "text": "В знак победы он отобрал у него глаз, желтый, как зависть и злоба, и создал из мерзкого существа драгоценное сокровище.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:15.398351Z"
+  },
+  "quests.lions_rock.topaz_flame": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Вы помещаете топаз в маленькое гнездо. Желтое пламя начинает гореть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:15.398878Z"
   }
 }

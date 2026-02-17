@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-17T04:02:35.829614Z",
-  "cycle_counter": 1468,
-  "last_target_key": "ro:spells.json",
-  "last_pending_total": 659,
+  "timestamp": "2026-02-17T04:04:17.402462Z",
+  "cycle_counter": 1471,
+  "last_target_key": "ro:quests.json",
+  "last_pending_total": 196,
   "last_tier": 2,
-  "last_cat_priority": 4,
+  "last_cat_priority": 5,
   "candidates_count": 193,
   "active_candidates_count": 181,
   "skipped_backoff": 12,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 223,
+  "cache_cycle": 224,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -385,9 +385,9 @@
     "lang_completion": {
       "pl": 46.67,
       "es": 74.78,
-      "ru": 37.82,
-      "ro": 24.04,
-      "it": 15.16,
+      "ru": 37.86,
+      "ro": 24.05,
+      "it": 15.2,
       "sr": 11.47,
       "sv": 9.33
     }

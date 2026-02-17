@@ -5585,11 +5585,11 @@
   },
   "quests.threatened_dreams.it_is_empty": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:04:59.227888Z"
+    "updated_at": "2026-02-17T04:03:49.929227Z"
   },
   "quests.2_ambassadors_treason.msg_1": {
     "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
@@ -45742,5 +45742,253 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:02:00.998242Z"
+  },
+  "quests.threatened_dreams.feathers_5": {
+    "src_hash": "fe983d9b291ff50d581c3f1625ad74da",
+    "text": "Hai trovato altre piume sotto l'albero morto. Ora dovresti averne abbastanza per un intero mantello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:47.374343Z"
+  },
+  "quests.threatened_dreams.found_herb": {
+    "src_hash": "d8f7cefe403c291457b6c9f5478b1938",
+    "text": "Hai trovato un %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:47.374618Z"
+  },
+  "quests.threatened_dreams.herb_no_room": {
+    "src_hash": "a62350f598ace1a41f466060eea6c3b9",
+    "text": "{0} Ma non hai spazio per portarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:47.374932Z"
+  },
+  "quests.threatened_dreams.herb_too_heavy": {
+    "src_hash": "42e49baf8bf1d9439178d056634b5269",
+    "text": "{0}. Con un peso di {1} oz, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:49.929004Z"
+  },
+  "quests.threatened_dreams.moon_mirror.fail_1": {
+    "src_hash": "a6e09f6ba5c8d78223d25c0856907627",
+    "text": "La luna non splende. Aspetta la notte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:49.929547Z"
+  },
+  "quests.threatened_dreams.moon_mirror.fail_2": {
+    "src_hash": "5b9d774c835d7185d5d0966a30c0d850",
+    "text": "La luna deve splendere. Aspetta la notte. Aspetta la notte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:49.929906Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_1": {
+    "src_hash": "0298db9f9a2da83a03a7cd3bb42c9429",
+    "text": "Lo specchio adesso risplende della luce della luna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:49.930293Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_2a": {
+    "src_hash": "e727da551288af7db5559f0467cecb98",
+    "text": "Non appena tocchi la scultura della luna con lo specchio, la scultura viene infusa dalla luce della luna. La barriera si rafforza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:52.504561Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_2b": {
+    "src_hash": "049443277e87ec214b0d2c3d3b1d2053",
+    "text": "Non appena tocchi la scultura della luna con lo specchio, la scultura viene infusa dalla luce della luna. Questa è stata l'ultima scultura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:52.505146Z"
+  },
+  "quests.threatened_dreams.starlight_vial.fail_1": {
+    "src_hash": "4fd5cf40df6275d5dc8f4c8d90c51dd9",
+    "text": "Stai strofinando il vetro opaco della fiala ma non succede nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:52.505505Z"
+  },
+  "quests.threatened_dreams.starlight_vial.fail_2": {
+    "src_hash": "1ee1fdd792bc836abea5fe0883268d33",
+    "text": "Le stelle devono brillare per rafforzare la barriera. Aspetta la notte. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:52.505902Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_1": {
+    "src_hash": "63b3e325040bff2c29a959306abcd187",
+    "text": "La fiala ora brilla di luce stellare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:52.506317Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_2a": {
+    "src_hash": "6752cc651b9a7da119b297527e28d9f2",
+    "text": "Non appena verserai la fiala sull'albero dell'uccello dei sogni, la pianta sarà infusa dalla luce delle stelle. La barriera si rafforza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:55.081389Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_2b": {
+    "src_hash": "20f28482cd56c65b75ba9fd8656fb2c3",
+    "text": "Non appena verserai la fiala sull'albero dell'uccello dei sogni, la pianta sarà infusa dalla luce delle stelle. Questo era l'ultimo albero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:55.081970Z"
+  },
+  "quests.threatened_dreams.sun_catcher.fail_1": {
+    "src_hash": "d0704ba6b967861b5699518a35e2d763",
+    "text": "Stai strofinando la gemma al centro dell'acchiappasole ma non succede nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:55.082373Z"
+  },
+  "quests.threatened_dreams.sun_catcher.fail_2": {
+    "src_hash": "e7126cb18a31fbcefa201e5ed29783fe",
+    "text": "Il sole deve splendere per rafforzare la barriera. Aspetta il giorno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:55.082759Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_1": {
+    "src_hash": "1149a7aac3fe4499fc7eebdb923d21a0",
+    "text": "L'acchiappasole ora risplende di luce solare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:55.083074Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_2a": {
+    "src_hash": "9b3f746d62ce9115a05a1fbb7e9bff16",
+    "text": "Non appena si posiziona l'acchiappasole sulla pietra, il motivo del mosaico viene infuso di luce solare. La barriera si rafforza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:58.247785Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_2b": {
+    "src_hash": "e1f165104af223261e0ec666fb19c82c",
+    "text": "Non appena si posiziona l'acchiappasole sulla pietra, il motivo del mosaico viene infuso di luce solare. Questo è stato l'ultimo mosaico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:58.248364Z"
+  },
+  "quests.tinder_box_quest_chyllfroest.this_can_only_be_used_between": {
+    "src_hash": "ffec7f337bbd825827d501c1300a0c6f",
+    "text": "Può essere utilizzato solo dal 1° aprile al 1° maggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:58.248743Z"
+  },
+  "quests.unnatural_selection.mission2_say_1": {
+    "src_hash": "e9b8bea9f03c5b1e76977ca48b92795f",
+    "text": "Tieni il teschio in alto. Puoi però resistere alla tentazione di guardarlo attraverso un telescopio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:58.249213Z"
+  },
+  "quests.unnatural_selection.mission2_say_10": {
+    "src_hash": "89aca892eb1ca9d1f47b76e4e263b07e",
+    "text": "Questo è sicuramente uno dei posti più alti dell'intero Tibia. Se non è semplicemente perfetto non sai cosa sia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:03:58.249865Z"
+  },
+  "quests.unnatural_selection.mission2_say_11": {
+    "src_hash": "d0ce366100dbb3961cbb587b3326b919",
+    "text": "Che bella vista. Degno di una regina davvero! È ora di tornare da Lazaran e mostrargli quello che sai fare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:00.868789Z"
+  },
+  "quests.unnatural_selection.mission2_say_2": {
+    "src_hash": "57ca22ee86d1dc6c74f3243b57dba67e",
+    "text": "Sollevi il teschio e gli lasci dare una sbirciatina sulla bellissima città degli elfi attraverso le fitte foglie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:00.869358Z"
+  },
+  "quests.unnatural_selection.mission2_say_3": {
+    "src_hash": "9d63dfb5c97a8549bb7c51f0c2f97da3",
+    "text": "Thanita ti lancia uno sguardo davvero strano mentre sollevi il teschio, ma vabbè.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:00.869863Z"
+  },
+  "quests.unnatural_selection.mission2_say_4": {
+    "src_hash": "303c2d9fcc01f12b4baf660308b542f6",
+    "text": "È stato davvero facile. E adesso sei abituato a ricevere sguardi strani, quindi qualunque cosa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:00.870396Z"
+  },
+  "quests.unnatural_selection.mission2_say_5": {
+    "src_hash": "98b40519daece9c8af99a3f2ba6afdbd",
+    "text": "Wow, fa caldo qui. Per fortuna il teschio non può più scottarsi, ma tu sì, quindi è meglio scendere di nuovo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:00.870919Z"
+  },
+  "quests.unnatural_selection.mission2_say_6": {
+    "src_hash": "384529ff7c001357bb1fc9ab4d5d77d6",
+    "text": "Considerando che i posti più alti da queste parti non sono così facili da raggiungere, pensi che la vista da qui sia abbastanza buona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:03.245848Z"
+  },
+  "quests.unnatural_selection.mission2_say_7": {
+    "src_hash": "0990d5f7f686454fe5d58ec81dc77db8",
+    "text": "Sì, è un punto piuttosto alto. Se Lazaran vedesse mai ciò che vede il teschio, sarebbe piuttosto soddisfatto di quella bella visione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:03.246506Z"
+  },
+  "quests.unnatural_selection.mission2_say_8": {
+    "src_hash": "0d2d5f5fdf8f1b781163f7c3097d2551",
+    "text": "Beh, ci sono punti più alti da queste parti, ma nessuno di questi è facilmente raggiungibile come questo. Deve solo bastare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:03.247057Z"
+  },
+  "quests.unnatural_selection.mission2_say_9": {
+    "src_hash": "67cf8ccb8c769f6eb9c63051209457a0",
+    "text": "Carino! Bianco nel bianco a perdita d'occhio. È ora di andarsene prima che le tue dita si trasformino in ghiaccioli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:03.247566Z"
   }
 }

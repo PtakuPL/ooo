@@ -39382,5 +39382,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:03:01.918611Z"
+  },
+  "quests.rookie_guard.m07.rune_table": {
+    "src_hash": "6002e2799edcb38d0d9a8a27e3adb6bc",
+    "text": "Faceți clic dreapta pe runa gri de pe masă și apoi faceți clic stânga pe foc! Nu poți lua runa, dar funcționează.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:21.106488Z"
+  },
+  "quests.rookie_guard.m07.stairs_vault": {
+    "src_hash": "1c62d45cabc3f18ede97039fa7995f24",
+    "text": "Coborâți scările pentru a ajunge la boltă. Miroase a foc acolo jos. Asigură-te că ești sănătos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:29.826214Z"
+  },
+  "quests.rookie_guard.m07.vault_fire": {
+    "src_hash": "ca5a077ce0747edac556d29d78a7241a",
+    "text": "Bolta este în flăcări! Aproape că nu este aer aici. Nu ai prea mult timp să găsești cartea. Grabă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:29.826756Z"
+  },
+  "quests.rookie_guard.m09.not_troll_caves": {
+    "src_hash": "53ae08babd37bc33bccc6047edabfdbb",
+    "text": "Acesta nu este drumul către peșterile trolilor. Coborâți înapoi scările și mergeți spre nord pentru a le găsi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:29.827304Z"
+  },
+  "quests.rookie_guard.m09.troll_tunnel": {
+    "src_hash": "6aa6afffb59b2e2f20b38e3d07846679",
+    "text": "Ați ajuns la tunelul proaspăt săpat pentru troli. Luați ceea ce găsiți în acest cufăr și folosiți-l pentru a doborî toate grinzile de sprijin!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:29.827922Z"
+  },
+  "quests.rookie_guard.m09.tunnel_collapsed": {
+    "src_hash": "c93f44b7a93c422a03c1a7b607c9f512",
+    "text": "Auzi o prăbușire sub tine. Tunelul s-a prăbușit. Vascalir va fi încântat să audă despre asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:29.828421Z"
+  },
+  "quests.rookie_guard.m10.crypt_explore": {
+    "src_hash": "428682d8033f91ba852ac8e9c68c9bd6",
+    "text": "Aceasta este cripta despre care vorbea Vascalir. Explorează-l și caută sicrie - unul dintre ele trebuie să țină un os frumos cărnos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:39.030796Z"
+  },
+  "quests.rookie_guard.m10.deeper_crypt": {
+    "src_hash": "86e1952c650fefd39f45d3647768aa98",
+    "text": "Această ușă pare să ducă mai adânc în criptă. Du-te jos și caută un sicriu special. Atenție la morții care umblă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:39.031371Z"
+  },
+  "quests.rookie_guard.m10.fleshy_bone": {
+    "src_hash": "0f7d3784d552ac18699272146e625d18",
+    "text": "Acum că ai un os cărnos, este timpul să afli ce a vrut Vascalir cu el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:39.031823Z"
+  },
+  "quests.rookie_guard.m10.not_crypt": {
+    "src_hash": "35806744f6d142cb8f7a6a66427f65d9",
+    "text": "Acesta nu este drumul către criptă. Mergeți spre sud-vest pentru a ajunge la cimitir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:39.032272Z"
+  },
+  "quests.rookie_guard.m10.sarcophagus": {
+    "src_hash": "2b6990f31c3b6910b0745f3d72b72720",
+    "text": "Acest sarcofag pare deosebit. Se spune că sarcofagele conservă carnea mai mult decât sicriele normale - poate ai noroc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:39.032818Z"
+  },
+  "quests.rookie_guard.m11.wasp_tower": {
+    "src_hash": "e55b94869184f9b0d4ea4fcd017c20ba",
+    "text": "Ai găsit turnul viespilor. Omoară o viespe și folosește balonul pe care l-ai primit de la Vascalir pe cadavrul ei pentru a recupera o parte din otravă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:46.911531Z"
+  },
+  "quests.rookie_guard.m11.wasps_nest": {
+    "src_hash": "d39e080a30dc5e5fa81ee9ec692e0118",
+    "text": "Treceți podul spre vest și mergeți spre sud pentru a ajunge la cuibul de viespi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:46.911980Z"
+  },
+  "quests.rookie_guard.m12.approaching": {
+    "src_hash": "ceb1407d6af7b56efe088971f0bab81b",
+    "text": "Atenție... te apropii de camera lui Kraknaknork. Odată ce intri, ai la dispoziție doar 5 minute să-l omori înainte ca el să te dea afară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:46.912560Z"
+  },
+  "quests.rookie_guard.m12.chest_items": {
+    "src_hash": "ad45b9bd37d7566a86cf5513f140bd29",
+    "text": "Acest cufăr ar trebui să conțină tot ce ai nevoie pentru a te infiltra în cetate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:46.913001Z"
+  },
+  "quests.rookie_guard.m12.distraction_bone_1": {
+    "src_hash": "982a4987dd4f5f2f1dab1b667a90610a",
+    "text": "Nu poți spera să te strecori pe lângă acest gardian. Poate o distragere ar ajuta? Ai putea încerca să folosești osul cărnos pe el...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:46.913563Z"
+  },
+  "quests.rookie_guard.m12.energy_barrier": {
+    "src_hash": "59b91fb81cfc924a472db48066e96b1a",
+    "text": "Kraknaknork menține bariere energetice puternice. Există o singură modalitate de a le dezactiva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:54.503399Z"
+  },
+  "quests.rookie_guard.m12.guard_pass": {
+    "src_hash": "ba93d5ee5a7d338995fd8d4402f8278c",
+    "text": "Acest gardian cu siguranță nu te va lăsa să treci. Furișează-te în jurul cetății pentru a găsi o modalitate de a te deghiza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:54.503960Z"
+  },
+  "quests.rookie_guard.m12.interior": {
+    "src_hash": "0c8af191ec0630b1c630530a474e5e0b",
+    "text": "Ai reușit să ajungi în interiorul cetății orci. Fiți pregătiți pentru o luptă - și căutați ceaunul de supă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:54.504498Z"
+  },
+  "quests.rookie_guard.m12.items_infiltrate": {
+    "src_hash": "7d1f6fbf68d2a7a08c4093307f1ad8fb",
+    "text": "Aceste articole ar trebui să fie ceea ce aveți nevoie pentru a vă infiltra în fortăreață. Întoarce-te lângă cuibul de viespi și mergi spre sud de acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:54.505103Z"
+  },
+  "quests.rookie_guard.m12.kitchen": {
+    "src_hash": "6b1b898af80c38869a62267a419b1466",
+    "text": "Aparent ești în bucătărie. Dacă găsești un cazan mare, folosește balonul cu otravă de viespi pe el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:04:54.505601Z"
+  },
+  "quests.rookie_guard.m12.lever_barrier": {
+    "src_hash": "517a365908f493329e1f686aa921d23b",
+    "text": "Bariera energetică dinspre sud a dispărut temporar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:02.698157Z"
+  },
+  "quests.rookie_guard.m12.no_poison_yet": {
+    "src_hash": "4e1417b973e1a5704aa0563eb141e17f",
+    "text": "Încă nu ai folosit otrava din supa lui Kraknaknork. Nu încerca să te lupți cu el înainte de asta - sau el te va ucide cu siguranță.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:02.698804Z"
+  },
+  "quests.rookie_guard.m12.orc_break": {
+    "src_hash": "4dc27b230216ab6553d9993600fefdbf",
+    "text": "Acest orc ți-a întors spatele și, evident, ia o pauză. Folosește sucitorul pe el pentru a-l doborî!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:02.699329Z"
+  },
+  "quests.rookie_guard.m12.sneaked_in": {
+    "src_hash": "9c7ac86a98efc8c0c4fce6b33e774143",
+    "text": "Te-ai strecurat în fortăreața orcilor. Atenție acum, nu mai ieși afară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:02.699793Z"
+  },
+  "quests.rookie_guard.m12.trap_ready": {
+    "src_hash": "3a644ca296978982bc5bf37f75bb03b0",
+    "text": "Ți-ai pregătit capcana pentru tarantule? S-ar putea să fie nevoie să-l folosești în curând...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:02.700240Z"
+  },
+  "quests.rookie_guard.missions.bank_academy": {
+    "src_hash": "970c5993868a32eadf2faf5c2e83756d",
+    "text": "Banca este sub academie. Mergeți spre nord și coborâți scările și la dreapta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:11.083665Z"
+  },
+  "quests.rookie_guard.missions.bank_paulie": {
+    "src_hash": "6b624ca2502c466e5008873f90c2ae19",
+    "text": "Du-te la dreapta pentru a găsi banca și vorbește cu Paulie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:11.084103Z"
+  },
+  "quests.rookie_guard.missions.entering_orcland": {
+    "src_hash": "888b5c565f98525bfd7f484fd4d224ea",
+    "text": "Intri în orcland.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:11.084376Z"
+  },
+  "quests.rookie_guard.missions.graveyard_east": {
+    "src_hash": "d924be505bf333ab308b1b53d717888f",
+    "text": "Urmați drumul spre est și mergeți spre sud pentru a ajunge la cimitir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:11.084794Z"
+  },
+  "quests.rookie_guard.missions.hallway_library": {
+    "src_hash": "3fbc2a3f449877544b3501c3dc089ba6",
+    "text": "Treceți prin ușa de nord și urmați holurile pentru a găsi seiful bibliotecii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:11.085232Z"
+  },
+  "quests.rookie_guard.missions.hyacinth_east": {
+    "src_hash": "fe8257d7dace20157b7b7b0e21d01a59",
+    "text": "Urmați poteca spre est pentru a găsi căsuța lui Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:17.856631Z"
+  },
+  "quests.rookie_guard.missions.library_vault": {
+    "src_hash": "8844ad0528ff2e760b413c4065011ee2",
+    "text": "Seiful bibliotecii este sub academie. Mergeți spre nord și coborâți câteva scări până când găsiți o ușă de căutare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:17.857178Z"
+  },
+  "quests.rookie_guard.missions.no_bag_yet": {
+    "src_hash": "127895e14ee90d1419f6d99e5d597887",
+    "text": "Nu ai încă geanta cu articolele. Deschide ușa din subsolul academiei din stânga lui Paulie pentru a-i lua!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:17.857717Z"
+  },
+  "quests.rookie_guard.missions.not_crypt_south": {
+    "src_hash": "a9007bd061d7c2e1ec6784d4454d5061",
+    "text": "Acesta nu este drumul către criptă. Mergi spre sud pentru a ajunge la cimitir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:17.858208Z"
+  },
+  "quests.rookie_guard.missions.not_hyacinth_south": {
+    "src_hash": "62f6c9aca08d7d63d85194cd0d78fc51",
+    "text": "Acesta nu este drumul către Hyacinth. Rămâneți pe potecă puțin mai spre sud pentru a găsi căsuța lui Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:17.858766Z"
+  },
+  "quests.rookie_guard.missions.not_tarantula_nw": {
+    "src_hash": "66aa34dbdc1a9e2425eb33eba5550813",
+    "text": "Acesta nu este drumul către bârlogul tarantulei. Îndreptați-vă spre nord-vest și urcați pe mica rampă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:25.697913Z"
+  },
+  "quests.rookie_guard.missions.not_troll_north": {
+    "src_hash": "9719068dca76f1d7df2164471b7c3c53",
+    "text": "Acesta nu este drumul către peșterile trolilor. Urmați poteca spre nord, trecând de deal pentru a ajunge la ele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:25.699167Z"
+  },
+  "quests.rookie_guard.missions.not_wasps_north": {
+    "src_hash": "59294ed775b60dfcddea634a22e66d26",
+    "text": "Acesta nu este drumul către bârlogul viespilor. Alegeți calea nordică pentru a ajunge la ea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:25.700175Z"
+  },
+  "quests.rookie_guard.missions.orc_fortress_path": {
+    "src_hash": "cd0bb23122055e63b4c1e79ad8fa8d9b",
+    "text": "Urmați poteca spre nord, traversați podul spre sud și mergeți spre vest pentru a ajunge la fortăreața orcilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:25.710013Z"
+  },
+  "quests.rookie_guard.missions.orc_west": {
+    "src_hash": "e9b535dc25a0771d44f5aa712d554844",
+    "text": "Urmați poteca spre vest pentru a ajunge la cetatea orcilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:25.710867Z"
+  },
+  "quests.rookie_guard.missions.road_main": {
+    "src_hash": "80538ccded69460ca147a0f2eb530c73",
+    "text": "Acest drum este principalul acces al satului. Poate doriți să vă terminați afacerea aici mai întâi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:28.570700Z"
   }
 }

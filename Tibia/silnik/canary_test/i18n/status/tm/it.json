@@ -62382,5 +62382,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:07:08.205189Z"
+  },
+  "cpp.player.imbuement_error": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "Si è verificato un errore, riapri la finestra di imbuement.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:08.446237Z"
+  },
+  "cpp.look.not_enough_room_these": {
+    "src_hash": "0c810ee97543748ad005e79660622d5e",
+    "text": "Non hai abbastanza spazio per trasportare questi oggetti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:17.440627Z"
+  },
+  "cpp.look.not_enough_room_this": {
+    "src_hash": "52e2d95118d537b01ed2ce5723152d1b",
+    "text": "Non hai abbastanza spazio per trasportare questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:17.440988Z"
+  },
+  "cpp.look.nothing_written": {
+    "src_hash": "9e448afdf325b70003bf08c90a437317",
+    "text": "Non c'è scritto niente sopra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:17.441279Z"
+  },
+  "cpp.look.of_level_or_higher": {
+    "src_hash": "98267cb1b96db70c97dab0b65b0f459f",
+    "text": "di livello {0} o superiore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:17.441582Z"
+  },
+  "cpp.look.protection_all_fields_fmt": {
+    "src_hash": "489d46c3df42de53fccdc397f0aa0a45",
+    "text": "protezione tutti i campi {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:24.147161Z"
+  },
+  "cpp.look.protection_all_fmt": {
+    "src_hash": "0e15c2a577e92eb256003d5481fce76d",
+    "text": "protezione tutto {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:24.147437Z"
+  },
+  "cpp.look.they_can_only_be_used_by": {
+    "src_hash": "ef1f4a104e43e5787018622afb3395ad",
+    "text": "Possono essere utilizzati solo da ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:24.147730Z"
+  },
+  "cpp.look.they_weigh": {
+    "src_hash": "4dc64177f883e3c77010856949e1ad84",
+    "text": "Pesano {0} once.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:24.147975Z"
+  },
+  "cpp.look.tier_amplification": {
+    "src_hash": "60805d7362b278ba4010b8d323ab0523",
+    "text": "{0}% di amplificazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:24.148209Z"
+  },
+  "cpp.look.tier_momentum": {
+    "src_hash": "f1a4773dace524aae8978dc751b619dd",
+    "text": "{0}% di slancio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:31.222191Z"
+  },
+  "cpp.look.tier_onslaught": {
+    "src_hash": "951f5608468693af3efa28fca3e9e035",
+    "text": "{0}% Assalto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:31.222454Z"
+  },
+  "cpp.look.tier_transcendence": {
+    "src_hash": "2618f5f0bd67f7aa8eee0e6524b81cee",
+    "text": "{0}% Trascendenza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:31.222692Z"
+  },
+  "cpp.look.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Sei troppo lontano per leggerlo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:31.222985Z"
+  },
+  "cpp.look.wield_by": {
+    "src_hash": "b905a321d3e1a3742048e2ee98c11bc3",
+    "text": "Può essere maneggiato correttamente solo da ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:31.223314Z"
+  },
+  "cpp.npc.bought_bag_currency": {
+    "src_hash": "7882ae19d5f43b641a21e8a140308dfd",
+    "text": "Acquistato {0}x {1} per {2} {3} e 1 borsa della spesa per {4} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:38.309071Z"
+  },
+  "cpp.npc.bought_bag_gold": {
+    "src_hash": "a19dce232723d9b603f147324cc9d0a4",
+    "text": "Ho acquistato {0}x {1} e 1 borsa della spesa per {2} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:38.309585Z"
+  },
+  "cpp.npc.bought_bags_currency": {
+    "src_hash": "a34143360f671f2d0ed43f484dd96721",
+    "text": "Ho comprato {0}x {1} per {2} {3} e {4}x borse della spesa per {5} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:38.310054Z"
+  },
+  "cpp.npc.bought_bags_gold": {
+    "src_hash": "e5bffaf05063189995a917b83c27f9ca",
+    "text": "Ho comprato {0}x {1} e {2} borse della spesa per {3} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:38.310469Z"
+  },
+  "cpp.npc.bought_currency": {
+    "src_hash": "2c0e2f09d57fecb2ac5fec4fe901982e",
+    "text": "Acquistato {0}x {1} per {2} {3}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:38.310799Z"
+  },
+  "cpp.npc.bought_gold": {
+    "src_hash": "582b26eca135fd2b1ee3d6fb81ffd765",
+    "text": "Comprato {0}x {1} per {2} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:45.646467Z"
+  },
+  "cpp.npc.loot_pouch_empty": {
+    "src_hash": "19949a7cef86dd39eedf1004ee273fa1",
+    "text": "Non hai oggetti nel sacchetto del bottino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:45.646795Z"
+  },
+  "cpp.npc.loot_pouch_sold": {
+    "src_hash": "4f6c342cb05df9d9dad9266d4f4d0829",
+    "text": "Hai venduto tutti gli oggetti del tuo sacchetto del bottino per {0} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:45.647163Z"
+  },
+  "cpp.party.invitation_revoked_by_leader": {
+    "src_hash": "0eadaf47d91621e40ac5fb89b3d0206f",
+    "text": "{0} ha revocato l'invito {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:45.647458Z"
+  },
+  "cpp.party.invitation_revoked_for": {
+    "src_hash": "b8d42a28a091e16edd23075dbbe53c9b",
+    "text": "L'invito per {0} è stato revocato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:45.647783Z"
+  },
+  "cpp.party.invited_member": {
+    "src_hash": "7d13e33c4599e50f0e653f4442c3db92",
+    "text": "{0} è stato invitato a partecipare al party (intervallo di condivisione: {1}-{2}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:52.041663Z"
+  },
+  "cpp.party.invited_member_with_hint": {
+    "src_hash": "d05980efadff489aa852931b120e9a63",
+    "text": "{0} è stato invitato a partecipare al party (intervallo di condivisione: {1}-{2}). Apri il canale del party per comunicare con i tuoi membri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:52.042350Z"
+  },
+  "cpp.party.invited_you": {
+    "src_hash": "3b0e14a8cdddbdb07f30fd7906fd02ae",
+    "text": "{0} ti ha invitato alla festa {1} (intervallo di condivisione: {2}-{3}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:52.042733Z"
+  },
+  "cpp.party.joined": {
+    "src_hash": "c43de5c4acec8bff684079a1fab7caa0",
+    "text": "Ti sei iscritto al gruppo {0}. Apri il canale del party per comunicare con i tuoi compagni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:52.043148Z"
+  },
+  "cpp.party.member_joined": {
+    "src_hash": "b23da70f87775320ef5cbe8c8a28a0e7",
+    "text": "{0} si è unito al gruppo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:09:52.043441Z"
+  },
+  "cpp.party.member_left": {
+    "src_hash": "53d13494eae30f5a624e61f9a71f02d6",
+    "text": "{0} ha lasciato la festa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:01.374247Z"
+  },
+  "cpp.party.new_leader": {
+    "src_hash": "92e7d7fabd5be64332e4e84804942c63",
+    "text": "{0} ora è il leader del partito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:01.374635Z"
+  },
+  "cpp.party.shared_exp_active": {
+    "src_hash": "89578e7f5a779603c86b0def081dc66b",
+    "text": "L'esperienza condivisa è ora attiva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:01.374970Z"
+  },
+  "cpp.party.shared_exp_active_alone": {
+    "src_hash": "299770ccf0c6851aa6d34323e2c256f5",
+    "text": "L'Esperienza condivisa è stata attivata, ma sei solo nel tuo gruppo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:01.375379Z"
+  },
+  "cpp.party.shared_exp_active_inactive": {
+    "src_hash": "c5f7db6e344f5dd5a8b917013146bd9d",
+    "text": "L'esperienza condivisa è stata attivata, ma alcuni membri del tuo gruppo sono inattivi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:01.375852Z"
+  },
+  "cpp.party.shared_exp_active_level_spread": {
+    "src_hash": "baac1ae78badf2914b275c655cbf08db",
+    "text": "L'esperienza condivisa è stata attivata, ma la distribuzione dei livelli del tuo gruppo è troppo ampia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:08.006471Z"
+  },
+  "cpp.party.shared_exp_active_too_far": {
+    "src_hash": "3dcb60d1bb1edcb8d393d2fc8406d969",
+    "text": "L'Esperienza condivisa è stata attivata, ma alcuni membri del tuo gruppo sono troppo lontani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:08.006950Z"
+  },
+  "cpp.party.shared_exp_error": {
+    "src_hash": "aa72d3421dfc220a2a4d359df9fab2fd",
+    "text": "Si è verificato un errore. Impossibile attivare l'esperienza condivisa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:08.007341Z"
+  },
+  "cpp.player.adventurer_blessings_kept": {
+    "src_hash": "ba39b2a0d1644235affc07a634a5eac1",
+    "text": "Hai ancora le benedizioni dell'avventuriero per essere di livello inferiore a {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:08.007757Z"
+  },
+  "cpp.player.adventurer_blessings_received": {
+    "src_hash": "b62a2e75a482786bc9e80db58a1868a8",
+    "text": "Hai ricevuto le benedizioni dell'avventuriero per essere di livello inferiore a {0}!\nHai ancora la fortuna di {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:10:08.008209Z"
   }
 }

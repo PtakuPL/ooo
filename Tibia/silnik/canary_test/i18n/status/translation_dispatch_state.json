@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T09:07:15.973819Z",
-  "cycle_counter": 1970,
-  "last_target_key": "ro:cpp.json",
-  "last_pending_total": 445,
+  "timestamp": "2026-02-17T09:10:23.612715Z",
+  "cycle_counter": 1973,
+  "last_target_key": "ro:achievements.json",
+  "last_pending_total": 399,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 188,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 396,
+  "cache_cycle": 397,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -406,8 +406,8 @@
       "pl": 87.26,
       "es": 84.26,
       "ru": 49.92,
-      "ro": 39.63,
-      "it": 48.22,
+      "ro": 39.69,
+      "it": 48.26,
       "sr": 44.58,
       "sv": 27.01
     }

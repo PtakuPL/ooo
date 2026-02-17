@@ -1,8 +1,8 @@
 {
-  "total_cycles": 309,
+  "total_cycles": 310,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-17T07:10:36.431386",
+  "category": "it",
+  "last_update": "2026-02-17T07:12:49.728090",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "talkactions.json",
-    "keys_to_translate": 43,
-    "guard_fail": 1,
+    "language": "it",
+    "json_file": "cpp.json",
+    "keys_to_translate": 602,
+    "guard_fail": 33,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

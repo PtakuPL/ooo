@@ -52838,5 +52838,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:06:52.162676Z"
+  },
+  "cpp.protocol.tentugly_name": {
+    "src_hash": "9e80e90165a56046671b52645531b855",
+    "text": "Tentualmente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:10:57.586969Z"
+  },
+  "cpp.protocol.vocation_label": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:10:57.587585Z"
+  },
+  "cpp.inspect.body_extra_slot": {
+    "src_hash": "c409cc1adaa447fa51b8328b9c0d445f",
+    "text": "slot aggiuntivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:01.505914Z"
+  },
+  "cpp.inspect.body_feet": {
+    "src_hash": "e03f9063484fb1967d1675c86a6094d7",
+    "text": "piedi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:01.506221Z"
+  },
+  "cpp.inspect.body_finger": {
+    "src_hash": "e7efda40b1c94805070cd9bf9638ae27",
+    "text": "dito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:01.506411Z"
+  },
+  "cpp.inspect.body_legs": {
+    "src_hash": "86acdeeaa47a154a6c389199327bb5b9",
+    "text": "gambe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:01.506571Z"
+  },
+  "cpp.inspect.body_neck": {
+    "src_hash": "45fe7e5529d283851d93b74536e095a0",
+    "text": "collo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:01.506721Z"
+  },
+  "cpp.inspect.body_position": {
+    "src_hash": "cd9a417af3ad9e295cdee793faae5996",
+    "text": "Posizione del corpo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:06.417916Z"
+  },
+  "cpp.inspect.body_shield_hand": {
+    "src_hash": "fe2e5f258b71f852b14b9d9e2976ba98",
+    "text": "mano dello scudo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:06.418200Z"
+  },
+  "cpp.inspect.body_weapon_hand": {
+    "src_hash": "024168323ff94a033e2bc6c5f7f788db",
+    "text": "mano dell'arma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:06.418407Z"
+  },
+  "cpp.inspect.brand_new": {
+    "src_hash": "8ea79b53226536841c5c0a1f3c80906d",
+    "text": "nuovo di zecca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:06.418592Z"
+  },
+  "cpp.inspect.capacity": {
+    "src_hash": "3b8f7696879f77dfc8c74aa8df8db24b",
+    "text": "Capacità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:06.418766Z"
+  },
+  "cpp.inspect.chance_to_hit": {
+    "src_hash": "44faae0a2a3329d707fc466fed56480a",
+    "text": "possibilità di raggiungere +{0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:11.057920Z"
+  },
+  "cpp.inspect.charges": {
+    "src_hash": "17e72430608947c0734ef298429647bb",
+    "text": "Spese",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:11.058175Z"
+  },
+  "cpp.inspect.classification": {
+    "src_hash": "5c9335b28e6277ddbe0137f04e5e58a7",
+    "text": "Classificazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:11.058476Z"
+  },
+  "cpp.inspect.cleave": {
+    "src_hash": "f1565d61fb74b142b7ddb3fc038a2d5a",
+    "text": "Fendere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:11.058734Z"
+  },
+  "cpp.inspect.contain": {
+    "src_hash": "0e75eff17752bae4ab31af7ad9b45484",
+    "text": "Contenere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:11.058905Z"
+  },
+  "cpp.inspect.damage_reflection": {
+    "src_hash": "5f49c87442aa2a84795555f0ba19a4ec",
+    "text": "Riflessione del danno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:13.619398Z"
+  },
+  "cpp.inspect.defence": {
+    "src_hash": "128343c7abc14c26dbe868808b5dc658",
+    "text": "Difesa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:13.619590Z"
+  },
+  "cpp.inspect.effect": {
+    "src_hash": "a62d22910732d5343689f5117999abfa",
+    "text": "Effetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:13.619753Z"
+  },
+  "cpp.inspect.empty": {
+    "src_hash": "a2e4822a98337283e39f7b60acf85ec9",
+    "text": "vuoto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:13.619908Z"
+  },
+  "cpp.inspect.expires": {
+    "src_hash": "cfc36842a01da69c484ffdcc6782f437",
+    "text": "Scade",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:13.620064Z"
+  },
+  "cpp.inspect.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "rigenerazione più rapida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:21.070775Z"
+  },
+  "cpp.inspect.faster_regeneration_effect": {
+    "src_hash": "2f0ea69af6352f387480984e271315e3",
+    "text": "Rigenerazione più rapida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:21.071066Z"
+  },
+  "cpp.inspect.field_protection": {
+    "src_hash": "e9c2511c581a1eb0271bdfdfd34b458c",
+    "text": "Protezione sul campo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:21.071298Z"
+  },
+  "cpp.inspect.hard_drinking": {
+    "src_hash": "f6306a7a373e97e0f0d04d7386b9f98f",
+    "text": "Bere pesante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:21.071497Z"
+  },
+  "cpp.inspect.imbuement_info": {
+    "src_hash": "b40edc2fc643c664893ea6b8d3252650",
+    "text": "{0} {1} ({2}), dura {3}:{4}h mentre combatti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:21.071882Z"
+  },
+  "cpp.inspect.imbuement_slot": {
+    "src_hash": "d8b8cbd7f322236d18b06b2bc867a167",
+    "text": "Slot per l'imbuto {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:27.356277Z"
+  },
+  "cpp.inspect.imbuement_slots": {
+    "src_hash": "59ae95b4f824cea331194109ed77bbda",
+    "text": "Slot di Imbuto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:27.356506Z"
+  },
+  "cpp.inspect.invisibility": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invisibilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:27.356707Z"
+  },
+  "cpp.inspect.magic_level_label": {
+    "src_hash": "52611a88685d2f588f58aa123f0f259c",
+    "text": "{0} Livello magico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:27.356930Z"
+  },
+  "cpp.inspect.magic_level_value": {
+    "src_hash": "063ec72e26da337fb0a22f8ab3f241bc",
+    "text": "livello magico {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:27.357147Z"
+  },
+  "cpp.inspect.magic_shield_capacity": {
+    "src_hash": "453b284354c516de31dff38fa5082a17",
+    "text": "Capacità dello scudo magico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:34.445680Z"
+  },
+  "cpp.inspect.mana_shield": {
+    "src_hash": "f249800c7cf9b009f48674253a64721d",
+    "text": "Scudo di mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:34.445899Z"
+  },
+  "cpp.inspect.n_fields": {
+    "src_hash": "3b47e1a1775bb9a2f77c62d0d1401d46",
+    "text": "campi {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:34.446157Z"
+  },
+  "cpp.inspect.n_seconds": {
+    "src_hash": "894a208290274479c9e9408927b7c073",
+    "text": "{0} secondi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:34.446363Z"
+  },
+  "cpp.inspect.nothing": {
+    "src_hash": "f80a4ad87fee7c9fdc19b7769495fdb5",
+    "text": "Niente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:34.446528Z"
+  },
+  "cpp.inspect.perfect_shot": {
+    "src_hash": "206eebbc6bd02c381acfd971a4675e97",
+    "text": "Scatto perfetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:38.486258Z"
+  },
+  "cpp.inspect.physical_plus": {
+    "src_hash": "9f0c54c466d97e93b32794c483030c7b",
+    "text": "{0} fisico + {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:38.495300Z"
+  },
+  "cpp.inspect.premium": {
+    "src_hash": "8d5e7e72f12067991186cdf3cb7d5d9d",
+    "text": "Premio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:38.495791Z"
+  },
+  "cpp.inspect.professions": {
+    "src_hash": "338bfdd3c45f08cea4ba92c01054f45e",
+    "text": "Professioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:38.496153Z"
+  },
+  "cpp.inspect.protection": {
+    "src_hash": "83f1d9ca1a0c4c2fc51a371c0d773f76",
+    "text": "Protezione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:11:38.496497Z"
   }
 }

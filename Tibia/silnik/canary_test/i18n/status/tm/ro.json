@@ -47358,5 +47358,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:08:15.645474Z"
+  },
+  "book.otbm.dwelling_of_the_forgotten": {
+    "src_hash": "40042aa215a5289976cafe8271764a43",
+    "text": "Locuința celor Uitați",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:06.049536Z"
+  },
+  "book.otbm.eastern_city_entrance_use_door": {
+    "src_hash": "6e73e8dfbb452509738638f140710419",
+    "text": "Intrarea în orașul de Est - folosiți ușa. Locul central de producție - folosiți scara.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:12.676561Z"
+  },
+  "book.otbm.eggs_cheese_cookies_rolls_meat": {
+    "src_hash": "c4432b15c13c825c60a3f621fb653445",
+    "text": "ouă, brânză, prăjituri, rulouri, carne, somon, portocale, struguri, pepeni, banane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:12.677074Z"
+  },
+  "book.otbm.elemental_shrines_and_training_grounds": {
+    "src_hash": "4ce61515b1a6e52ca35ea4cd57e79e20",
+    "text": "Altare elementare și terenuri de antrenament",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:12.677449Z"
+  },
+  "book.otbm.elements_of_tibia_and_their": {
+    "src_hash": "01e3d3f3997d6df74b4b87eea648f0d5",
+    "text": "Elementele lui Tibia și ordinea lor alchimică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:12.678156Z"
+  },
+  "book.otbm.elite_came_back_alive_if": {
+    "src_hash": "7d1b34b22fa4fd7be4f2c4916f88e81b",
+    "text": "elita a revenit în viață, dacă nu ești un specialist foarte bine pregătit și încerci să mergi singur acolo, probabil că vei înceta să mai fii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:12.678873Z"
+  },
+  "book.otbm.embalming_fluid_chants_and_holy": {
+    "src_hash": "624b2b35fff1a2bed2091c32dfffa347",
+    "text": "Fluid de îmbălsămare, cântări și pregătiri sfinte necesare pentru a călăuzi spiritul în lumea următoare și pentru a-și păstra trupul în lumea intermediară, de Rames-Seni Osi-Atun-Ra-Heton, îmbălsămator luminat și umil slujitor al Domnului celor Șapte Mări Nisipoase, fie ca spiritul său să domnească în viața de apoi pentru totdeauna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:20.637729Z"
+  },
+  "book.otbm.employed_already_the_armies_of": {
+    "src_hash": "9ca139c429009e3d72e2d25f674a7129",
+    "text": "angajat. Deja armatele raselor mai vechi se pregăteau să recupereze de la oameni ceea ce vechii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:20.638588Z"
+  },
+  "book.otbm.enter_at_your_own_risk": {
+    "src_hash": "8546b8167bbc43b7119bc4987cd96e04",
+    "text": "Intră pe propriul risc și nu nepregătit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:20.639060Z"
+  },
+  "book.otbm.enter_contaminated_areas_at_own": {
+    "src_hash": "a3a29303475cd29455952a9594ebd4cf",
+    "text": "Intrați în zonele contaminate pe propria răspundere și cu îmbrăcăminte de protecție adecvată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:20.639528Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Intră în vechea flacără albastră a cetățeniei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:20.639914Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame_7ef32bcd": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Intră în vechea flacără albastră a cetățeniei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:26.324028Z"
+  },
+  "book.otbm.enter_the_teleporter_flame_to": {
+    "src_hash": "a196942253408fca1b7e59255eef2d10",
+    "text": "Intră în flacăra teleporterului pentru a deveni cetățean al Roshamuul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:26.324625Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become": {
+    "src_hash": "672e470968e9cd56724b8b6e4a26a64c",
+    "text": "Intră în teleporter pentru a deveni un locuitor al Svargrond",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:26.325143Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_9a40a4e1": {
+    "src_hash": "9a40a4e17df4e7f6702b63ba96d18faf",
+    "text": "Intră în teleporter pentru a deveni cetățean",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:26.325656Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_cd55bbb9": {
+    "src_hash": "cd55bbb91a56a69600f613549e98dbf8",
+    "text": "Intră în teleporter pentru a deveni cetățean al Liberty Bay!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:12:28.992278Z"
   }
 }

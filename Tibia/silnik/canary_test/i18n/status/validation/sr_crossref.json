@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 12.9,
+  "coverage_pct": 13.1,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:00:35.853069Z",
+  "checked_at": "2026-02-17T06:23:31.716321Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1425,6 +1425,15 @@
       "en": "Manhunter",
       "pl": "Pościg, obława",
       "lang": "Manhunter"
+    },
+    {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
     },
     {
       "key": "cpp.title.name_50",
@@ -3603,15 +3612,6 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
-    },
-    {
-      "key": "npc.bambi_bonecrusher.say_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Take this!",
-      "pl": "Weź to!",
-      "lang": "Take this!"
     }
   ],
   "length_ratio_issues": [

@@ -54174,5 +54174,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:19:06.863601Z"
+  },
+  "npc.al_dee.voice_1": {
+    "src_hash": "7c7c7e1c5ff6641d4e968f817324a68a",
+    "text": "Stai cercando i migliori scambi? Vieni nel mio negozio!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.727872Z"
+  },
+  "npc.al_dee.voice_2": {
+    "src_hash": "8a61d0bc206f0b9aaf1c6b728868f7d7",
+    "text": "Ti senti perso? Puoi sempre chiedermi suggerimenti generali!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.728334Z"
+  },
+  "npc.alkestios.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.743872Z"
+  },
+  "npc.alkestios.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.747914Z"
+  },
+  "npc.altar.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.748274Z"
+  },
+  "npc.altar.greet_msg_1": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Inginocchiatevi davanti al potere divorante della decomposizione sanguinaria.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.748722Z"
+  },
+  "npc.ambassador_of_rathleton.greet_msg_1": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Saluti, amico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.758627Z"
+  },
+  "npc.amber.walkaway_msg_1": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Sì, ci vediamo dopo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.765491Z"
+  },
+  "npc.aurita.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.798125Z"
+  },
+  "npc.aurita.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.799456Z"
+  },
+  "npc.bloodshade_rotten.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.823691Z"
+  },
+  "npc.bloodshade_sacrifice.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.824543Z"
+  },
+  "npc.dallheim.farewell_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.948291Z"
+  },
+  "npc.dallheim.stdmod_8": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.952780Z"
+  },
+  "npc.dancing_fairy.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.953716Z"
+  },
+  "npc.dancing_fairy.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.954788Z"
+  },
+  "npc.elane.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.986921Z"
+  },
+  "npc.elane.walkaway_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:22.991432Z"
+  },
+  "npc.maelyrra.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.362949Z"
+  },
+  "npc.maelyrra.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Possa il tuo percorso essere sempre pianeggiante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.365717Z"
+  },
+  "npc.obi.stdmod_9": {
+    "src_hash": "72f97516fb4d02e4719a7ea8bb221c60",
+    "text": "Il re incoraggiava i venditori a viaggiare fin qui, ma solo io osavo correre il rischio, e un rischio era!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.450958Z"
+  },
+  "npc.paulie.say_11": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.496237Z"
+  },
+  "npc.paulie.say_12": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.496695Z"
+  },
+  "npc.paulie.say_5": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Il saldo del tuo account è {} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.505132Z"
+  },
+  "npc.paulie.say_6": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.505576Z"
+  },
+  "npc.paulie.say_7": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.505977Z"
+  },
+  "npc.paulie.say_8": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.506570Z"
+  },
+  "npc.plunderpurse.say_10": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.518906Z"
+  },
+  "npc.plunderpurse.say_11": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.519390Z"
+  },
+  "npc.plunderpurse.say_5": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Il saldo del tuo account è {} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.527707Z"
+  },
+  "npc.plunderpurse.say_6": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.528107Z"
+  },
+  "npc.plunderpurse.say_7": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.528498Z"
+  },
+  "npc.plunderpurse.say_8": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.528907Z"
+  },
+  "npc.torkada.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.725342Z"
+  },
+  "npc.wentworth.say_10": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.771502Z"
+  },
+  "npc.wentworth.say_11": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.771971Z"
+  },
+  "npc.wentworth.say_5": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Il saldo del tuo account è {} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.781244Z"
+  },
+  "npc.wentworth.say_6": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:23.781684Z"
   }
 }

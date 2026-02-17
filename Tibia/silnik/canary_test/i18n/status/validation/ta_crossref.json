@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:00:36.254134Z",
+  "checked_at": "2026-02-17T06:23:32.137333Z",
   "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1677,6 +1677,15 @@
       "en": "Manhunter",
       "pl": "Pościg, obława",
       "lang": "Manhunter"
+    },
+    {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
     },
     {
       "key": "cpp.title.name_50",
@@ -3597,15 +3606,6 @@
     },
     {
       "key": "web.tpl.created.th_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Account",
-      "pl": "Twojego",
-      "lang": "Account"
-    },
-    {
-      "key": "web.tpl.points.th_2",
       "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",

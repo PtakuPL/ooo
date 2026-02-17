@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 17.6,
+  "coverage_pct": 18.1,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:00:24.087755Z",
+  "checked_at": "2026-02-17T06:23:22.049232Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -131,6 +131,24 @@
       "lang": "Master Sorcerer"
     },
     {
+      "key": "client.house.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MapLayerSelector",
+      "pl": "MaGraczSelector",
+      "lang": "MapLayerSelector"
+    },
+    {
+      "key": "client.boss_slots.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RightBase",
+      "pl": "Prawa baza",
+      "lang": "RightBase"
+    },
+    {
       "key": "client.game_store.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -158,132 +176,6 @@
       "lang": " and "
     },
     {
-      "key": "cpp.inspect.body_extra_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "extra slot",
-      "pl": "dodatkowe gniazdo",
-      "lang": "extra slot"
-    },
-    {
-      "key": "cpp.inspect.body_feet",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "feet",
-      "pl": "stopy",
-      "lang": "feet"
-    },
-    {
-      "key": "cpp.inspect.body_finger",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "finger",
-      "pl": "palec",
-      "lang": "finger"
-    },
-    {
-      "key": "cpp.inspect.body_legs",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "legs",
-      "pl": "noga",
-      "lang": "legs"
-    },
-    {
-      "key": "cpp.inspect.body_neck",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "neck",
-      "pl": "szyja",
-      "lang": "neck"
-    },
-    {
-      "key": "cpp.inspect.brand_new",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "brand-new",
-      "pl": "I.-new",
-      "lang": "brand-new"
-    },
-    {
-      "key": "cpp.inspect.capacity",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Capacity",
-      "pl": "Udźperuka",
-      "lang": "Capacity"
-    },
-    {
-      "key": "cpp.inspect.charges",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Charges",
-      "pl": "Ładunki",
-      "lang": "Charges"
-    },
-    {
-      "key": "cpp.inspect.cleave",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
-    },
-    {
-      "key": "cpp.inspect.contain",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Contain",
-      "pl": "Zawierać",
-      "lang": "Contain"
-    },
-    {
-      "key": "cpp.inspect.defence",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Defence",
-      "pl": "Obrona",
-      "lang": "Defence"
-    },
-    {
-      "key": "cpp.inspect.effect",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Effect",
-      "pl": "Efekt",
-      "lang": "Effect"
-    },
-    {
-      "key": "cpp.inspect.empty",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "empty",
-      "pl": "puste",
-      "lang": "empty"
-    },
-    {
-      "key": "cpp.inspect.expires",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Expires",
-      "pl": "Wygasa",
-      "lang": "Expires"
-    },
-    {
       "key": "cpp.inspect.hitchance",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -302,24 +194,6 @@
       "lang": "Key"
     },
     {
-      "key": "cpp.inspect.n_fields",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} fields",
-      "pl": "Pola {0}",
-      "lang": "{0} fields"
-    },
-    {
-      "key": "cpp.inspect.nothing",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nothing",
-      "pl": "Niething",
-      "lang": "Nothing"
-    },
-    {
       "key": "cpp.inspect.oz",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -327,24 +201,6 @@
       "en": " oz",
       "pl": "oz",
       "lang": " oz"
-    },
-    {
-      "key": "cpp.inspect.premium",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Premium",
-      "pl": "Premia",
-      "lang": "Premium"
-    },
-    {
-      "key": "cpp.inspect.protection",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Protection",
-      "pl": "Ochrona, osłona",
-      "lang": "Protection"
     },
     {
       "key": "cpp.inspect.required",
@@ -842,15 +698,6 @@
       "lang": "Gamemaster"
     },
     {
-      "key": "cpp.protocol.tentugly_name",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
-    },
-    {
       "key": "cpp.protocol.vocation_all",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -858,15 +705,6 @@
       "en": "(all)",
       "pl": "(wszystkie)",
       "lang": "(all)"
-    },
-    {
-      "key": "cpp.protocol.vocation_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vocation",
-      "pl": "Profesja",
-      "lang": "Vocation"
     },
     {
       "key": "cpp.returnvalue.no_error",
@@ -993,6 +831,15 @@
       "en": "Manhunter",
       "pl": "Pościg, obława",
       "lang": "Manhunter"
+    },
+    {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
     },
     {
       "key": "cpp.title.name_50",
@@ -3612,6 +3459,159 @@
       "en": "Okay...",
       "pl": "Dobrze...",
       "lang": "Okay..."
+    },
+    {
+      "key": "npc.frederik.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yeah, bye.",
+      "pl": "Aha, no, pa, cześć.",
+      "lang": "Yeah, bye."
+    },
+    {
+      "key": "npc.frederik.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yeah, bye.",
+      "pl": "Aha, no, pa, cześć.",
+      "lang": "Yeah, bye."
+    },
+    {
+      "key": "npc.gelagos.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hehehe.",
+      "pl": "Hehe.",
+      "lang": "Hehehe."
+    },
+    {
+      "key": "npc.gelagos.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "That's me.",
+      "pl": "That's mnie, mi.",
+      "lang": "That's me."
+    },
+    {
+      "key": "npc.gewen.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.gewen.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.gewen.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.gnomargery.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.gnombold.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.gnomilly.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.gurbasch.stdmod_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.hairycles.say_66",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.harlow.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harlow.stdmod_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harlow.stdmod_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harlow_vengoth.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harog.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hello.",
+      "pl": "Cześć, dzień dobry.",
+      "lang": "Hello."
     }
   ],
   "length_ratio_issues": [

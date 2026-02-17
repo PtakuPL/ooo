@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:00:24.485805Z",
+  "checked_at": "2026-02-17T06:23:22.433150Z",
   "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1407,6 +1407,15 @@
       "en": "Manhunter",
       "pl": "Pościg, obława",
       "lang": "Manhunter"
+    },
+    {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
     },
     {
       "key": "cpp.title.name_50",
@@ -3603,15 +3612,6 @@
       "en": "Bssssss",
       "pl": "Bsssss",
       "lang": "Bssssss"
-    },
-    {
-      "key": "monster.black_knight.voice_8",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "NO MERCY!",
-      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
-      "lang": "NO MERCY!"
     }
   ],
   "length_ratio_issues": [

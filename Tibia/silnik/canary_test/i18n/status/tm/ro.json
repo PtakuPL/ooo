@@ -48246,5 +48246,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:17:41.336573Z"
+  },
+  "npc.bolfona.greet_msg_1": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Vorbesti cu mine? Ei bine, continuă să vorbești, dar nu te aștepta la un răspuns.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:35.659991Z"
+  },
+  "npc.boveas.greet_msg_1": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Hi! Sper că nu o să mă omori!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:35.661480Z"
+  },
+  "npc.bozo.greet_msg_1": {
+    "src_hash": "d4fea72808864f72f60dd0127ba12ae7",
+    "text": "Bună ziua, cum e agățat, |PLAYERNAME|! Ce vă aduce {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:35.662463Z"
+  },
+  "npc.paulie.say_18": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Câte monede de platină ai vrea să obții?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.200729Z"
+  },
+  "npc.paulie.say_19": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.201160Z"
+  },
+  "npc.paulie.say_21": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.201976Z"
+  },
+  "npc.paulie.say_22": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.202393Z"
+  },
+  "npc.paulie.say_25": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Câte monede de cristal ați dori să obțineți?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.203015Z"
+  },
+  "npc.paulie.say_26": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.203396Z"
+  },
+  "npc.paulie.say_27": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.203860Z"
+  },
+  "npc.paulie.say_29": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.204495Z"
+  },
+  "npc.paulie.say_30": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.205028Z"
+  },
+  "npc.paulie.say_31": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.205466Z"
+  },
+  "npc.paulie.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.206166Z"
+  },
+  "npc.paulie.say_34": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.206661Z"
+  },
+  "npc.paulie.say_35": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Câte monede de cristal ai vrea să schimbi în platină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.207126Z"
+  },
+  "npc.paulie.say_36": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.207576Z"
+  },
+  "npc.paulie.say_38": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.208187Z"
+  },
+  "npc.paulie.say_39": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.208684Z"
+  },
+  "npc.plunderpurse.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.221789Z"
+  },
+  "npc.plunderpurse.say_18": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Clientul este rege! Reveniți oricând doriți dacă doriți să vă {withdraw} banii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.222823Z"
+  },
+  "npc.plunderpurse.say_19": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Câte monede de platină ai vrea să obții?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.223918Z"
+  },
+  "npc.plunderpurse.say_20": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.224713Z"
+  },
+  "npc.plunderpurse.say_22": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.225531Z"
+  },
+  "npc.plunderpurse.say_23": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.226149Z"
+  },
+  "npc.plunderpurse.say_26": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Câte monede de cristal ați dori să obțineți?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.226685Z"
+  },
+  "npc.plunderpurse.say_27": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.227071Z"
+  },
+  "npc.plunderpurse.say_28": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.227647Z"
+  },
+  "npc.plunderpurse.say_30": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.228440Z"
+  },
+  "npc.plunderpurse.say_31": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.228856Z"
+  },
+  "npc.plunderpurse.say_32": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.229571Z"
+  },
+  "npc.plunderpurse.say_34": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.230367Z"
+  },
+  "npc.plunderpurse.say_35": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.230923Z"
+  },
+  "npc.plunderpurse.say_36": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Câte monede de cristal ai vrea să schimbi în platină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.231554Z"
+  },
+  "npc.plunderpurse.say_37": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.232482Z"
+  },
+  "npc.plunderpurse.say_39": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.233253Z"
+  },
+  "npc.plunderpurse.say_40": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:22:36.233808Z"
   }
 }

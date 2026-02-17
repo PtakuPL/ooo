@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T05:59:45.086488Z",
+  "checked_at": "2026-02-17T06:22:39.602981Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1434,6 +1434,15 @@
       "en": "Manhunter",
       "pl": "Pościg, obława",
       "lang": "Manhunter"
+    },
+    {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
     },
     {
       "key": "cpp.title.name_50",
@@ -3603,15 +3612,6 @@
       "en": "Destroy!",
       "pl": "Niszczyć!",
       "lang": "Destroy!"
-    },
-    {
-      "key": "monster.rhindeer.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snort!",
-      "pl": "SNiert!",
-      "lang": "Snort!"
     }
   ],
   "length_ratio_issues": [

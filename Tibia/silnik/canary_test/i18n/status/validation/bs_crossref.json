@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T05:59:44.972196Z",
+  "checked_at": "2026-02-17T06:22:39.487529Z",
   "issues_total": 400,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1650,6 +1650,15 @@
       "en": "Manhunter",
       "pl": "Pościg, obława",
       "lang": "Manhunter"
+    },
+    {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
     },
     {
       "key": "cpp.title.name_50",
@@ -3603,15 +3612,6 @@
       "en": "Knorrrr",
       "pl": "KNierrrr",
       "lang": "Knorrrr"
-    },
-    {
-      "key": "monster.honey_elemental.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "**Slurp**",
-      "pl": "**Siorbać**",
-      "lang": "**Slurp**"
     }
   ],
   "length_ratio_issues": [],

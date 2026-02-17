@@ -58278,5 +58278,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:36:47.935617Z"
+  },
+  "monster.goggle_cake.voice_2": {
+    "src_hash": "7daff52e16b5f344ead8e71ec06fe241",
+    "text": "Hm? Unde... unde esti acum?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:37:53.842011Z"
+  },
+  "monster.lava_golem.name": {
+    "src_hash": "1ff542b74e726ad579aedf0f4730d6e9",
+    "text": "Golem de lavă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:37:53.842331Z"
+  },
+  "monster.lava_golem.desc": {
+    "src_hash": "7563e9e101d180c3b2fe281aa8d89cf5",
+    "text": "un golem de lavă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:37:53.842602Z"
+  },
+  "monster.gingerbread_men.name": {
+    "src_hash": "f47e34cfe12f1035f88c57fe85dea453",
+    "text": "Omul de turtă dulce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:37:53.842846Z"
+  },
+  "monster.gingerbread_men.desc": {
+    "src_hash": "8c276d6201d50714e518b560f8b43737",
+    "text": "un om de turtă dulce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:37:53.843134Z"
+  },
+  "monster.gingerbread_men.voice_1": {
+    "src_hash": "281775c084fff1d46a720ea152c70a7e",
+    "text": "Am fost copt acum câteva zile. Atât de multe de descoperit aici!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:37:55.861596Z"
   }
 }

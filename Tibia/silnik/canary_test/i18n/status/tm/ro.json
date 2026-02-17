@@ -37950,5 +37950,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:35:58.720751Z"
+  },
+  "cpp.inspect.empty": {
+    "src_hash": "a2e4822a98337283e39f7b60acf85ec9",
+    "text": "Gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:15.918265Z"
+  },
+  "cpp.returnvalue.not_enough_room": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Nu este suficient loc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:15.938380Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Nu poți intra într-o zonă de protecție după ce ai atacat un alt jucător.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:15.939628Z"
+  },
+  "cpp.combat.holy": {
+    "src_hash": "ff0eca571f7670efa4ac4a2c37214c6b",
+    "text": "sfânt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:23.758004Z"
+  },
+  "cpp.combat.lifedrain": {
+    "src_hash": "9554cab6f5e4d7f08dab97ebd2749ff0",
+    "text": "scurgere de viață",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:23.758339Z"
+  },
+  "cpp.combat.mana_attacker": {
+    "src_hash": "a8e810912070d5ddd8bcccd621134658",
+    "text": "{0} pierde {1} mana din cauza atacului tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:23.758715Z"
+  },
+  "cpp.combat.mana_attacker_crit": {
+    "src_hash": "7adc2cc4191a8d8a771cdd458f04d9d2",
+    "text": "{0} pierde {1} mana din cauza atacului tău critic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:23.759125Z"
+  },
+  "cpp.combat.mana_spectator_by": {
+    "src_hash": "a0573fb276af6ce2d1a728e625cc8b1f",
+    "text": "{0} pierde {1} mana din cauza unui atac al lui {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:23.759476Z"
+  },
+  "cpp.combat.mana_spectator_by_crit": {
+    "src_hash": "d8896bf956ead12f307e55abc89afa6b",
+    "text": "{0} pierde {1} mana din cauza unui atac critic al lui {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:32.691860Z"
+  },
+  "cpp.combat.mana_spectator_none": {
+    "src_hash": "87028a3a292e51ddb2a03b9301dddbc5",
+    "text": "{0} pierde {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:32.692388Z"
+  },
+  "cpp.combat.mana_spectator_self": {
+    "src_hash": "0f66d3c30d3f84cc1d63ffb643ff825b",
+    "text": "{0} pierde {1} mana din cauza atacului propriu {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:32.692749Z"
+  },
+  "cpp.combat.mana_target_by": {
+    "src_hash": "fc7fcfc62b9171037311480be0e23d6a",
+    "text": "Pierzi {0} mana din cauza unui atac al lui {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:32.693089Z"
+  },
+  "cpp.combat.mana_target_by_crit": {
+    "src_hash": "a03f0ea928d07120fde4c9879d6ea26b",
+    "text": "Pierzi {0} mana din cauza unui atac critic al lui {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:32.693437Z"
+  },
+  "cpp.combat.mana_target_none": {
+    "src_hash": "20ef4502ade216cf1cafe56c021ecfce",
+    "text": "Pierzi {0} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:38.953862Z"
+  },
+  "cpp.combat.mana_target_self": {
+    "src_hash": "58b26d0a93ef4cb5267cf5bbc7213d82",
+    "text": "Pierzi {0} mana din cauza propriului atac.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:38.954312Z"
+  },
+  "cpp.combat.mana_target_self_crit": {
+    "src_hash": "74dfafacc1bd8149fce3cc7fb59ead69",
+    "text": "Pierzi {0} mana din cauza propriului atac critic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:38.954746Z"
+  },
+  "cpp.combat.neutral": {
+    "src_hash": "5da248ea6840aca1ae2b417b17982a89",
+    "text": "neutru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:38.954930Z"
+  },
+  "cpp.combat.onslaught": {
+    "src_hash": "c4773303d7c4875c1f36d4336aadcc40",
+    "text": "(Atac violent)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:38.955126Z"
+  },
+  "cpp.combat.physical": {
+    "src_hash": "842e5a39b01fadaead6970f5ff5de1d5",
+    "text": "fizic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:44.978906Z"
+  },
+  "cpp.combat.restore_attacker": {
+    "src_hash": "83f116588f2a7307316ecad99385c796",
+    "text": "Ai restabilit {0} pentru {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:44.979235Z"
+  },
+  "cpp.combat.restore_spectator_none": {
+    "src_hash": "09a0ab81e660b71f4f4cc9b9d7812d0a",
+    "text": "{0} a fost restaurat pentru {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:44.979536Z"
+  },
+  "cpp.combat.restore_spectator_other": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} restaurat {1} pentru {2} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:44.979872Z"
+  },
+  "cpp.combat.restore_spectator_self": {
+    "src_hash": "3c3b5fefeddc87de2147b657e2332e3d",
+    "text": "{0} restaurat {1} pentru {2} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:44.980172Z"
+  },
+  "cpp.combat.restore_target_by": {
+    "src_hash": "bef65601919ccbf594ae459461288ccf",
+    "text": "Ai fost restabilit de {0} pentru {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:52.188577Z"
+  },
+  "cpp.combat.restore_target_none": {
+    "src_hash": "ec620aeb2ffd23840995fe5ca7cb5ad5",
+    "text": "Ai fost restabilit pentru {0} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:52.188900Z"
+  },
+  "cpp.combat.restore_target_self": {
+    "src_hash": "b4a6f6d2335e0c1c1d98aadc38ef7ee8",
+    "text": "Vă restabiliți pentru {0} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:52.189272Z"
+  },
+  "cpp.combat.soulpit_crit": {
+    "src_hash": "0de92b11baed3c46711377c498d9e0a7",
+    "text": "(Soulpit Crit)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:52.189493Z"
+  },
+  "cpp.combat.undefined": {
+    "src_hash": "5e543256c480ac577d30f76f9120eb74",
+    "text": "nedefinit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:52.189671Z"
+  },
+  "cpp.creature.loot_of": {
+    "src_hash": "4a30228767b414cb6f86833679a177e0",
+    "text": "Pradă de {0}: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:56.973485Z"
+  },
+  "cpp.forge.consumed": {
+    "src_hash": "48fe8558ce14c4c865198444c538ecc5",
+    "text": "consumat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:56.973634Z"
+  },
+  "cpp.forge.convergence_suffix": {
+    "src_hash": "cbd96a7174e4ef54c7262b39648d2a84",
+    "text": "(convergenţă)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:56.973795Z"
+  },
+  "cpp.forge.cores_one": {
+    "src_hash": "9706037c16e3de34d11ab684d385892b",
+    "text": "{0} miez",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:56.973938Z"
+  },
+  "cpp.forge.cores_other": {
+    "src_hash": "94d093f1eb850dacc66b1cdc06862437",
+    "text": "{0} nuclee",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:56.974148Z"
+  },
+  "cpp.forge.dust_one": {
+    "src_hash": "2d959a6724345ac9ff914ed532ebdc82",
+    "text": "{0} praf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:02.879760Z"
+  },
+  "cpp.forge.dust_other": {
+    "src_hash": "2d959a6724345ac9ff914ed532ebdc82",
+    "text": "{0} praf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:02.879909Z"
+  },
+  "cpp.forge.dust_to_slivers": {
+    "src_hash": "37b26b376eb1842f2fc33000e117de6a",
+    "text": "{0} praf transformat în {1} așchii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:02.880171Z"
+  },
+  "cpp.forge.increase_dust_limit": {
+    "src_hash": "f8c3afbe06a4bb640af404f139849ccc",
+    "text": "Am consumat {0} praf pentru a crește limita de praf la {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:08.334396Z"
+  },
+  "cpp.forge.slivers_to_cores": {
+    "src_hash": "6c0edfce562f088b10405b6b95542d85",
+    "text": "{0} așchii convertite în {1} miez exaltat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:08.334777Z"
+  },
+  "cpp.forge.successful": {
+    "src_hash": "30ae8fff8898dc197acd49d9c0797d20",
+    "text": "De succes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:08.334969Z"
+  },
+  "cpp.forge.tier_minus_one": {
+    "src_hash": "5bfcb48fdbfaffcafc684bf95e0809a9",
+    "text": "nivelul - 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:08.335152Z"
   }
 }

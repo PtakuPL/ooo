@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:51:03.299946Z"
+    "updated_at": "2026-02-17T03:36:39.416797Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -43942,5 +43942,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:34:46.964468Z"
+  },
+  "web.tpl.admin.logs.th_2": {
+    "src_hash": "ffbb3331182cbfda3ccea5bb0c3eea46",
+    "text": "Ultimo aggiornamento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.117671Z"
+  },
+  "web.tpl.account.management.set_1": {
+    "src_hash": "089a4481d6029b62758f16d31cd34264",
+    "text": "Registra l'account",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.122510Z"
+  },
+  "html.guilds.manager.html.text1": {
+    "src_hash": "c832c0ef0315430a558b56bb96923880",
+    "text": "Benvenuto nel gestore della gilda!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.150769Z"
+  },
+  "html.guilds.manager.html.text2": {
+    "src_hash": "91ebc9b22070b200da533e4992a22157",
+    "text": "Passa la leadership della gilda ad un altro membro della gilda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.151278Z"
+  },
+  "html.guilds.manager.html.text3": {
+    "src_hash": "b468aac652190c45b44ce61f0329252d",
+    "text": "Elimina la gilda, caccia tutti i membri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.151734Z"
+  },
+  "html.guilds.manager.html.text4": {
+    "src_hash": "ffe3673e547e72aca5ed299de4451406",
+    "text": "Cambia la descrizione della gilda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.152207Z"
+  },
+  "html.guilds.manager.html.text5": {
+    "src_hash": "e0fbf3568e415c67cd6fff5b7ad2a01e",
+    "text": "Cambia MOTD della gilda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:35.152625Z"
+  },
+  "web.tpl.guilds.manager.b_14": {
+    "src_hash": "8fe0454e50d6ac2534a9908a7b882462",
+    "text": "Membro (1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:47.335024Z"
+  },
+  "web.tpl.guilds.manager.h3_17": {
+    "src_hash": "022a5251150ada289e28fbb48f951fcf",
+    "text": "Informazioni sui gradi:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:47.335252Z"
+  },
+  "web.tpl.guilds.manager.b_18": {
+    "src_hash": "aee28dd42a460d82392533d2a701ff77",
+    "text": "0. Proprietario della gilda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:47.335512Z"
+  },
+  "web.tpl.guilds.manager.b_19": {
+    "src_hash": "a3206197d60fb40e8a985b99084fade0",
+    "text": "1. Capo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:47.335697Z"
+  },
+  "web.tpl.guilds.manager.b_20": {
+    "src_hash": "19676a36fb5f307ea03d9aa340141f51",
+    "text": "2. Vice leader",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:47.336131Z"
+  },
+  "web.tpl.guilds.manager.b_21": {
+    "src_hash": "3f6fe01c63dc66b2340466a5f359444f",
+    "text": "3. Membro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:53.149442Z"
+  },
+  "web.tpl.buttons.change_name.set_1": {
+    "src_hash": "23a0ca84a7fd64eee8248bd1dfc77185",
+    "text": "Cambia nome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:53.149691Z"
+  },
+  "web.tpl.news.b_1": {
+    "src_hash": "91401f053501b716b4a695b048c9b827",
+    "text": "Autore:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:53.149869Z"
+  },
+  "web.tpl.account.generate_new_recovery_key.set_1": {
+    "src_hash": "ad8bdba88e19fec0ce682b4cf8cce998",
+    "text": "Genera chiave di ripristino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:53.150207Z"
+  },
+  "web.tpl.account.change_info.set_1": {
+    "src_hash": "899c4af570794bd2c1b053698b693a48",
+    "text": "Modificare le informazioni pubbliche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:58.460897Z"
+  },
+  "web.tpl.admin.logs.th_1": {
+    "src_hash": "71d09158378f6d5172ac991d5f26a1c1",
+    "text": "Nome del registro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:58.461113Z"
+  },
+  "web.tpl.account.lost.form.b_1": {
+    "src_hash": "5d4af9bda827fbef97414b60c89ca7cf",
+    "text": "Per favore inserisci il nome del tuo personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:58.461416Z"
+  },
+  "web.tpl.account.lost.form.b_2": {
+    "src_hash": "d90f4605098a5011625c8c1744fff175",
+    "text": "Cosa vuoi?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:36:58.461634Z"
+  },
+  "web.tpl.account.lost.form.b_3": {
+    "src_hash": "eae1ac01ff83825d5c6ac799843b78c0",
+    "text": "chiave di ripristino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:03.385129Z"
+  },
+  "web.tpl.serverinfo.h2_1": {
+    "src_hash": "39795f0ea9fc5155a2a2cdeca7cf7435",
+    "text": "Informazioni sul server:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:03.385361Z"
+  },
+  "web.tpl.serverinfo.h2_3": {
+    "src_hash": "62fd280c30b9823d99fa1e3649ef293b",
+    "text": "Tariffe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:03.385589Z"
+  },
+  "web.tpl.serverinfo.h3_5": {
+    "src_hash": "12695b726548e2fe8b98d7a3b3ccac86",
+    "text": "Teschio rosso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:07.529766Z"
+  },
+  "web.tpl.serverinfo.h3_6": {
+    "src_hash": "764307143abb7141964bd8d06009dfc0",
+    "text": "Teschio nero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:07.529975Z"
+  },
+  "web.tpl.serverinfo.h3_7": {
+    "src_hash": "9cef976714535911afb48e36f44ff794",
+    "text": "Esilio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:07.530222Z"
+  },
+  "web.tpl.serverinfo.h2_8": {
+    "src_hash": "6311ae17c1ee52b36e68aaf4ad066387",
+    "text": "Altro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:37:07.530397Z"
   }
 }

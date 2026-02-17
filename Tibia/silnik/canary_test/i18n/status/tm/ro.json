@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:57:34.617715Z"
+    "updated_at": "2026-02-17T02:22:27.715882Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -32646,5 +32646,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T02:21:32.999443Z"
+  },
+  "item.11657.name": {
+    "src_hash": "04f5e2810a3ed9d74affdd101e6307f2",
+    "text": "tăietor de două ori",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:22:32.906184Z"
+  },
+  "item.11690.desc": {
+    "src_hash": "f07c339c9d5d4a351098c43bf41c5b66",
+    "text": "Acestea vor expira în scurt timp, le vor vinde înapoi lui Esrik înainte de a o face",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:22:36.105041Z"
+  },
+  "item.11691.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Vă arată vrăjile și vă poate proteja împotriva atacurilor atunci când este purtat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:22:36.105960Z"
+  },
+  "item.117.desc": {
+    "src_hash": "025563dcb06d6731717fc7d1b715c468",
+    "text": "Conține o mulțime de baloane de vin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:22:38.040896Z"
+  },
+  "item.11700.desc": {
+    "src_hash": "3b60d828384342d6e5380be8c35d73b9",
+    "text": "Această pălărie simplă ar putea valora mai mult decât arată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:22:38.041351Z"
   }
 }

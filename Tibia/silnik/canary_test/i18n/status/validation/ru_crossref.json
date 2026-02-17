@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 36.8,
+  "coverage_pct": 37.0,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T01:07:28.306752Z",
-  "issues_total": 115,
+  "checked_at": "2026-02-17T01:29:31.688897Z",
+  "issues_total": 105,
   "issues_by_type": {
-    "consistency_in_language": 55,
-    "pl_reference_missing_translation": 36,
+    "consistency_in_language": 51,
+    "pl_reference_missing_translation": 30,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -65,57 +65,15 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "You read: ",
+      "en": "Remember Email:",
       "variants": [
-        "Вы читаете:",
-        "Вы читаете: "
+        "Запомнить Email:",
+        "Запомнить электронную почту:"
       ],
       "variants_count": 2,
       "examples": [
-        "books:ui.readable.you_read_prefix",
-        "cpp:cpp.look.you_read"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "No Vocation",
-      "variants": [
-        "Без профессии",
-        "Нет Vocation"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "client:client.player.text1",
-        "otclient_modules:otclient_modules.player.tr_10"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "North East",
-      "variants": [
-        "Нетrth East",
-        "Северо-восток"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "client:client.const.text1",
-        "otclient_modules:otclient_modules.const.tr_4"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "North West",
-      "variants": [
-        "Нетrth West",
-        "Северо-запад"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "client:client.const.text4",
-        "otclient_modules:otclient_modules.const.tr_1"
+        "client:client.entergame.text2",
+        "otclient_modules:otclient_modules.entergame.tr_15"
       ]
     },
     {
@@ -131,20 +89,6 @@
         "client:client.boss_slots.text3",
         "client:client.bosstiary.text2",
         "otclient_modules:otclient_modules.boss_slots.tr_2"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60",
-      "variants": [
-        "Archfoe\n\nЗа открытие уровня вы получите следующие очки босса:\nДоблесть: 10\nЭкспертиза: 30\nМастерство: 60",
-        "Заклятый враг\n\nЗа разблокировку уровня вы получите следующие очки босса:\nДоблесть: 10\nЭкспертиза: 30\nМастерство: 60"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "client:client.boss_slots.text4",
-        "otclient_modules:otclient_modules.boss_slots.tr_4"
       ]
     },
     {
@@ -875,6 +819,15 @@
       "lang": "clientid="
     },
     {
+      "key": "cpp.look.empty_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Empty Slot",
+      "pl": "Puste miejsce",
+      "lang": "Empty Slot"
+    },
+    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -909,51 +862,6 @@
       "en": "! ...",
       "pl": "!...",
       "lang": "! ..."
-    },
-    {
-      "key": "scripts.find_fiend.level_easy",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Easy",
-      "pl": "Łatwo",
-      "lang": "Easy"
-    },
-    {
-      "key": "scripts.find_person.dir_northeast",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "north-east",
-      "pl": "północ-wschód",
-      "lang": "north-east"
-    },
-    {
-      "key": "scripts.find_person.dir_northwest",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "north-west",
-      "pl": "północ-zachód",
-      "lang": "north-west"
-    },
-    {
-      "key": "scripts.find_person.dir_southeast",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "south-east",
-      "pl": "południe-wschód",
-      "lang": "south-east"
-    },
-    {
-      "key": "scripts.find_person.dir_southwest",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "south-west",
-      "pl": "południe-zachód",
-      "lang": "south-west"
     },
     {
       "key": "data.otservbr.global.npc.arkarra.L54.501",
@@ -1170,24 +1078,6 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
-    },
-    {
-      "key": "spell.fear.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fear",
-      "pl": "strach",
-      "lang": "fear"
-    },
-    {
-      "key": "spell.rootkraken_deathholy.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "rootkraken",
-      "pl": "korzeńkrakena",
-      "lang": "rootkraken"
     }
   ],
   "length_ratio_issues": [
@@ -1409,8 +1299,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 36,
-    "applied": 7,
+    "attempted": 30,
+    "applied": 1,
     "skipped": 29,
     "errors": 0
   }

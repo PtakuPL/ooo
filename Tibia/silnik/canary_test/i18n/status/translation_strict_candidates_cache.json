@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-17T01:28:07.007499Z",
-  "built_cycle": 120,
+  "timestamp": "2026-02-17T01:28:40.148831Z",
+  "built_cycle": 121,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -1594,9 +1594,9 @@
     {
       "lang": "sr",
       "json_file": "spells.json",
-      "pending_total": 740,
-      "todo": 740,
-      "simple_todo": 737,
+      "pending_total": 691,
+      "todo": 691,
+      "simple_todo": 688,
       "missing_in_lang": 0
     },
     {

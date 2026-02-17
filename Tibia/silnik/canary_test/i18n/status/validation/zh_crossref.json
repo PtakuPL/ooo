@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T01:07:30.250575Z",
+  "checked_at": "2026-02-17T01:29:33.661457Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -986,6 +986,15 @@
       "lang": "Tentugly"
     },
     {
+      "key": "cpp.game.you_looted",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted ",
+      "pl": "Zrabowałeś ",
+      "lang": "You looted "
+    },
+    {
       "key": "cpp.inspect.and_connector",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1002,6 +1011,15 @@
       "en": "Armor",
       "pl": "Zbroja",
       "lang": "Armor"
+    },
+    {
+      "key": "cpp.inspect.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " at range ",
+      "pl": "w zasięgu ",
+      "lang": " at range "
     },
     {
       "key": "cpp.inspect.attack",
@@ -1047,6 +1065,15 @@
       "en": "container",
       "pl": "pojemnik",
       "lang": "container"
+    },
+    {
+      "key": "cpp.inspect.body_extra_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "extra slot",
+      "pl": "dodatkowe gniazdo",
+      "lang": "extra slot"
     },
     {
       "key": "cpp.inspect.body_feet",
@@ -1193,6 +1220,15 @@
       "lang": "Key"
     },
     {
+      "key": "cpp.inspect.n_fields",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} fields",
+      "pl": "Pola {0}",
+      "lang": "{0} fields"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1245,6 +1281,15 @@
       "en": "Speed",
       "pl": "Szybkość",
       "lang": "Speed"
+    },
+    {
+      "key": "cpp.inspect.speed_value",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed {0}",
+      "pl": "prędkość {0}",
+      "lang": "speed {0}"
     },
     {
       "key": "cpp.inspect.tier",
@@ -1319,6 +1364,15 @@
       "lang": "Arm:"
     },
     {
+      "key": "cpp.look.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at range",
+      "pl": "w zasięgu",
+      "lang": "at range"
+    },
+    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1380,6 +1434,15 @@
       "en": "Def:",
       "pl": "def:",
       "lang": "Def:"
+    },
+    {
+      "key": "cpp.look.empty_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Empty Slot",
+      "pl": "Puste miejsce",
+      "lang": "Empty Slot"
     },
     {
       "key": "cpp.look.field",
@@ -3549,69 +3612,6 @@
       "en": "Board",
       "pl": "Tablica",
       "lang": "Board"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Posts",
-      "pl": "Posty",
-      "lang": "Posts"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Threads",
-      "pl": "Wątki",
-      "lang": "Threads"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last Post",
-      "pl": "Ostatni post",
-      "lang": "Last Post"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Options",
-      "pl": "Opcje",
-      "lang": "Options"
-    },
-    {
-      "key": "web.tpl.news.back_button.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Back",
-      "pl": "Z powrotem",
-      "lang": "Back"
-    },
-    {
-      "key": "web.tpl.forum.show_thread.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Author",
-      "pl": "Autor",
-      "lang": "Author"
-    },
-    {
-      "key": "web.tpl.admin.pages.th_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
     }
   ],
   "length_ratio_issues": [

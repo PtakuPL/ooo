@@ -327,7 +327,7 @@
   "cpp.look.day_many": "{0} дней",
   "cpp.look.day_one": "{0} день",
   "cpp.look.def": "Защита:",
-  "cpp.look.empty_slot": "Empty Slot",
+  "cpp.look.empty_slot": "Пустой слот",
   "cpp.look.expire_in": "[EN]  that will expire in ",
   "cpp.look.faster_regeneration": "[EN] faster regeneration",
   "cpp.look.field": "поле",

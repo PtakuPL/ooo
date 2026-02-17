@@ -1,15 +1,15 @@
 {
   "lang": "it",
-  "coverage_pct": 13.4,
+  "coverage_pct": 13.7,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T01:07:16.522518Z",
-  "issues_total": 408,
+  "checked_at": "2026-02-17T01:29:22.350053Z",
+  "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 8
+    "length_ratio_crosscheck": 9
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -140,42 +140,6 @@
       "lang": "HomePanel"
     },
     {
-      "key": "cpp.combat.drown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "drown",
-      "pl": "topić się, tonąć",
-      "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.energy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "energy",
-      "pl": "energia",
-      "lang": "energy"
-    },
-    {
-      "key": "cpp.combat.fire",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fire",
-      "pl": "ogień",
-      "lang": "fire"
-    },
-    {
-      "key": "cpp.combat.holy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "holy",
-      "pl": "święty",
-      "lang": "holy"
-    },
-    {
       "key": "cpp.combat.ice",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -183,15 +147,6 @@
       "en": "ice",
       "pl": "lód",
       "lang": "ice"
-    },
-    {
-      "key": "cpp.combat.lifedrain",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lifedrain",
-      "pl": "drenaż życia",
-      "lang": "lifedrain"
     },
     {
       "key": "cpp.combat.neutral",
@@ -338,6 +293,15 @@
       "lang": "Tentugly"
     },
     {
+      "key": "cpp.game.you_looted",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted ",
+      "pl": "Zrabowałeś ",
+      "lang": "You looted "
+    },
+    {
       "key": "cpp.inspect.and_connector",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -354,6 +318,15 @@
       "en": "Armor",
       "pl": "Zbroja",
       "lang": "Armor"
+    },
+    {
+      "key": "cpp.inspect.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " at range ",
+      "pl": "w zasięgu ",
+      "lang": " at range "
     },
     {
       "key": "cpp.inspect.augments",
@@ -392,6 +365,15 @@
       "lang": "container"
     },
     {
+      "key": "cpp.inspect.body_extra_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "extra slot",
+      "pl": "dodatkowe gniazdo",
+      "lang": "extra slot"
+    },
+    {
       "key": "cpp.inspect.body_feet",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -408,15 +390,6 @@
       "en": "finger",
       "pl": "palec",
       "lang": "finger"
-    },
-    {
-      "key": "cpp.inspect.body_head",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "head",
-      "pl": "Głowa",
-      "lang": "head"
     },
     {
       "key": "cpp.inspect.body_legs",
@@ -536,6 +509,15 @@
       "lang": "Key"
     },
     {
+      "key": "cpp.inspect.n_fields",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} fields",
+      "pl": "Pola {0}",
+      "lang": "{0} fields"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -588,6 +570,15 @@
       "en": "Speed",
       "pl": "Szybkość",
       "lang": "Speed"
+    },
+    {
+      "key": "cpp.inspect.speed_value",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed {0}",
+      "pl": "prędkość {0}",
+      "lang": "speed {0}"
     },
     {
       "key": "cpp.inspect.tier",
@@ -662,6 +653,15 @@
       "lang": "Arm:"
     },
     {
+      "key": "cpp.look.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at range",
+      "pl": "w zasięgu",
+      "lang": "at range"
+    },
+    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -714,6 +714,15 @@
       "en": "Def:",
       "pl": "def:",
       "lang": "Def:"
+    },
+    {
+      "key": "cpp.look.empty_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Empty Slot",
+      "pl": "Puste miejsce",
+      "lang": "Empty Slot"
     },
     {
       "key": "cpp.look.field",
@@ -1002,15 +1011,6 @@
       "en": "Married to",
       "pl": "Żonaty, zamężna do",
       "lang": "Married to"
-    },
-    {
-      "key": "cpp.protocol.outfit_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
     },
     {
       "key": "cpp.protocol.support_outfit_gamemaster",
@@ -3681,6 +3681,15 @@
     {
       "key": "otclient_data.40_outfitwindow_otui.tr_28",
       "category": "otclient_data",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 3.286,
+      "pl_ratio": 1.286
+    },
+    {
+      "key": "otclient_modules.charms1410_otui.tr_9",
+      "category": "otclient_modules",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 7,

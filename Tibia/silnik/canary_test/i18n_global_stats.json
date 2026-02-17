@@ -1,8 +1,8 @@
 {
-  "total_cycles": 120,
+  "total_cycles": 121,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-17T02:28:14.747190",
+  "category": "pl",
+  "last_update": "2026-02-17T02:29:34.212373",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,9 +26,9 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
-    "json_file": "achievements.json",
-    "keys_to_translate": 460,
+    "language": "pl",
+    "json_file": "example_merchant.json",
+    "keys_to_translate": 1,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

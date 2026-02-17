@@ -1,128 +1,104 @@
 {
-  "timestamp": "2026-02-17T04:58:05.526515Z",
-  "language": "ro",
-  "json_file": "scripts.json",
-  "translated": 42,
+  "timestamp": "2026-02-17T04:59:00.181323Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 16,
   "entries": [
     {
-      "key": "scripts.actions_flower_puzzle_lever.msg_3",
-      "en": "A portal forms as two beams of a strange construction dividing this room move towards each other.",
-      "translated": "Un portal se formează în timp ce două grinzi dintr-o construcție ciudată care despart această cameră se deplasează una spre alta.",
-      "source": "google_translate"
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_formula.say_1",
-      "en": "You burned the alchemist formula.",
-      "translated": "Ai ars formula alchimistului.",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.greet_1",
+      "en": "<sniff>",
+      "translated": "<sniff>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_fount.msg_1",
-      "en": "A phial of fresh pond water. It looks crystal clear and sparkles a little.",
-      "translated": "O fiolă cu apă proaspătă de iaz. Arată limpede și strălucește puțin.",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_fountain.say_1",
-      "en": "You feel very refreshed and relaxed.",
-      "translated": "Te simți foarte împrospătat și relaxat.",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_frozen_horror.msg_1",
-      "en": "You need to wait a while, recently someone challenge Frozen Horror.",
-      "translated": "Trebuie să așteptați puțin, recent cineva provoacă Frozen Horror.",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_ghost.say_1",
-      "en": "The ghost charm is charging.",
-      "translated": "Farmecul fantomă se încarcă.",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_ghost_detector.msg_1",
-      "en": "You have completed the ghost detector task.",
-      "translated": "Ați finalizat sarcina detector de fantome.",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_ghost_detector.msg_2",
-      "en": "The detector falls silent.",
-      "translated": "Detectorul tace.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_ghost_detector.msg_3",
-      "en": "The detector reacts. Keep searching.",
-      "translated": "Detectorul reacţionează. Continuați să căutați.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_ghost_detector.msg_4",
-      "en": "The detector points {}.",
-      "translated": "Detectorul indică {}.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_girl_picture.msg_1",
-      "en": "Seems that an old silver key appears in the drower.",
-      "translated": "Se pare că o cheie de argint veche apare în dâră.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_glasshoneyfun.msg_1",
-      "en": "You are gently squishing some of the honey palm blossoms and golden honey is depping into the jug.",
-      "translated": "Strângeți ușor câteva dintre florile de palmier cu miere și mierea aurie se varsă în ulcior.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_glooth_fairy_lever.msg_1",
-      "en": "You need to wait 15 minutes to use again.",
-      "translated": "Trebuie să așteptați 15 minute pentru a utiliza din nou.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_glooth_fairy_lever.say_1",
-      "en": "Everyone in this place will be teleported into Glooth Fairy's hideout in one minute. No way back!!!",
-      "translated": "Toți cei din acest loc vor fi teleportați în ascunzătoarea lui Glooth Fairy într-un minut. Nicio cale de întoarcere!!!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_gnome_chart.msg_1",
-      "en": "You charted the location and dimensions of a strange structure, an ancient gate.",
-      "translated": "Ai trasat locația și dimensiunile unei structuri ciudate, o poartă străveche.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_gnome_chart.msg_2",
-      "en": "You charted the location and dimensions of a strange structure, a small ruin.",
-      "translated": "Ai trasat locația și dimensiunile unei structuri ciudate, a unei mici ruine.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_gnome_chart.msg_3",
-      "en": "You charted the location and dimensions of a strange structure, resembling a stone face.",
-      "translated": "Ai trasat locația și dimensiunile unei structuri ciudate, care seamănă cu o față de piatră.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_gnome_chart.msg_4",
-      "en": "You charted the location and dimensions of a strange structure, an outpost.",
-      "translated": "Ai trasat locația și dimensiunile unei structuri ciudate, un avanpost.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_gnome_chart.msg_5",
-      "en": "You charted the location and dimensions of a strange structure, a bastion.",
-      "translated": "Ai trasat locația și dimensiunile unei structuri ciudate, un bastion.",
-      "source": "google_translate"
-    },
-    {
-      "key": "scripts.actions_gnome_chart.msg_6",
-      "en": "You charted the location and dimensions of a strange structure, a broken tower.",
-      "translated": "Ai trasat locația și dimensiunile unei structuri ciudate, un turn spart.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     }
   ]
 }

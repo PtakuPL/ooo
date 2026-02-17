@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T04:58:10.610859Z",
+  "timestamp": "2026-02-17T04:59:05.564268Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 48,
+  "cache_misses": 4,
+  "file_cache_hits": 1972,
+  "file_cache_misses": 4,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,8 +7410,8 @@
         [
           "npc.json",
           1,
-          1771304146320091958,
-          1848249
+          1771304340176597036,
+          1848281
         ],
         [
           "npclib.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 40120,
-        "english_copy_keys": 2622,
+        "translated_keys": 40112,
+        "english_copy_keys": 2630,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 74.87,
+        "completion_pct": 74.86,
         "server_keys": 49731,
-        "server_translated": 37580,
-        "server_pct": 75.57,
+        "server_translated": 37572,
+        "server_pct": 75.55,
         "client_keys": 3855,
         "client_translated": 2540,
         "client_pct": 65.89
@@ -7817,13 +7817,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771304146320091958,
-            1848249
+            1771304340176597036,
+            1848281
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 10321,
-            "english_copy_keys": 207,
+            "translated_keys": 10313,
+            "english_copy_keys": 215,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -16083,7 +16083,7 @@
         [
           "raids.json",
           1,
-          1771301605733483556,
+          1771304312056530383,
           18536
         ],
         [
@@ -16570,7 +16570,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771301605733483556,
+            1771304312056530383,
             18536
           ],
           "row": {
@@ -27045,7 +27045,7 @@
         [
           "raids.json",
           1,
-          1771301582589421769,
+          1771304307892519043,
           18540
         ],
         [
@@ -27532,7 +27532,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771301582589421769,
+            1771304307892519043,
             18540
           ],
           "row": {
@@ -27816,7 +27816,7 @@
         [
           "questlog.json",
           1,
-          1771301622509529366,
+          1771304328080565444,
           248908
         ],
         [
@@ -28287,7 +28287,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771301622509529366,
+            1771304328080565444,
             248908
           ],
           "row": {

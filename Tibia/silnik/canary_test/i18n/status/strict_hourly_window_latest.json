@@ -1,28 +1,28 @@
 {
-  "window_start_utc": "2026-02-17T06:50:53.956432Z",
-  "window_end_utc": "2026-02-17T07:50:53.956432Z",
+  "window_start_utc": "2026-02-17T06:52:38.980494Z",
+  "window_end_utc": "2026-02-17T07:52:38.980494Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 89,
+  "total_cycles": 93,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 89
+    "AUTO_TRANSLATE": 93
   },
-  "auto_translate_cycles": 89,
+  "auto_translate_cycles": 93,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1830,
-  "guard_fail": 1903,
-  "guard_fail_rate_pct": 51.0,
+  "translated": 1923,
+  "guard_fail": 1990,
+  "guard_fail_rate_pct": 50.9,
   "no_progress_entries": 1,
-  "no_progress_rate_pct": 1.7,
-  "throughput_keys_per_h": 1042.2,
-  "suspicious_total": 6004,
+  "no_progress_rate_pct": 1.6,
+  "throughput_keys_per_h": 1073.8,
+  "suspicious_total": 6116,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -61,16 +61,16 @@
       "guard_command": 0
     },
     {
+      "target": "es/books.json",
+      "translated": 2,
+      "guard_fail": 48,
+      "guard_command": 0
+    },
+    {
       "target": "es/talkactions.json",
       "translated": 1,
       "guard_fail": 42,
       "guard_command": 1
-    },
-    {
-      "target": "it/spells.json",
-      "translated": 11,
-      "guard_fail": 41,
-      "guard_command": 0
     }
   ]
 }

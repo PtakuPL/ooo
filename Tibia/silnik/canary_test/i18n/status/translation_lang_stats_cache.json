@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T07:50:53.874551Z",
+  "timestamp": "2026-02-17T07:52:38.900565Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 49,
-  "cache_misses": 3,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7302,8 +7302,8 @@
         [
           "books.json",
           1,
-          1771310526574014168,
-          320563
+          1771314717746545882,
+          320562
         ],
         [
           "chatchannels.json",
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771314606778079582,
+          1771314752594696560,
           1847374
         ],
         [
@@ -7458,8 +7458,8 @@
         [
           "questlog.json",
           1,
-          1771310527338022059,
-          246900
+          1771314685794412405,
+          246931
         ],
         [
           "quests.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45142,
-        "english_copy_keys": 2119,
+        "translated_keys": 45138,
+        "english_copy_keys": 2123,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.24,
+        "completion_pct": 84.23,
         "server_keys": 49731,
-        "server_translated": 42076,
-        "server_pct": 84.61,
+        "server_translated": 42072,
+        "server_pct": 84.6,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7565,8 +7565,8 @@
         "books.json": {
           "sig": [
             1,
-            1771310526574014168,
-            320563
+            1771314717746545882,
+            320562
           ],
           "row": {
             "total_reference_keys": 1403,
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771314606778079582,
+            1771314752594696560,
             1847374
           ],
           "row": {
@@ -7929,13 +7929,13 @@
         "questlog.json": {
           "sig": [
             1,
-            1771310527338022059,
-            246900
+            1771314685794412405,
+            246931
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 1300,
-            "english_copy_keys": 68,
+            "translated_keys": 1296,
+            "english_copy_keys": 72,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -30972,8 +30972,8 @@
         [
           "server.json",
           1,
-          1771310430653045335,
-          311777
+          1771314673194360179,
+          313731
         ],
         [
           "spells.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 23650,
-        "english_copy_keys": 1647,
+        "translated_keys": 23693,
+        "english_copy_keys": 1644,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 44.13,
+        "completion_pct": 44.21,
         "server_keys": 49731,
-        "server_translated": 23549,
-        "server_pct": 47.35,
+        "server_translated": 23592,
+        "server_pct": 47.44,
         "client_keys": 3855,
         "client_translated": 101,
         "client_pct": 2.62
@@ -31475,13 +31475,13 @@
         "server.json": {
           "sig": [
             1,
-            1771310430653045335,
-            311777
+            1771314673194360179,
+            313731
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 595,
-            "english_copy_keys": 124,
+            "translated_keys": 638,
+            "english_copy_keys": 121,
             "missing_keys": 0,
             "missing_files": 0
           }

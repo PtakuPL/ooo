@@ -171806,5 +171806,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:22:12.858049Z"
+  },
+  "data.otservbr.global.npc.albinius.L267.1035": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Поздрав, ходочасниче. Добродошли у дворане наде. Ми смо чувари овог {temple} и поздрављамо све који су спремни да допринесу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.885070Z"
+  },
+  "data.otservbr.global.npc.alia.L148.1158": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добродошли, млади |PLAYERNAME|! Ако сте тешко рањени или отровани, могу вам {heal} бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.887655Z"
+  },
+  "data.otservbr.global.npc.amanda.L200.1226": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добродошли, млади |PLAYERNAME|! Ако сте тешко рањени или отровани, могу вам {heal} бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.892542Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Ох, здраво, драго ми је да те видим |PLAYERNAME|. Да ли сте овде да чујете неке приче о мом {adventures} или вам треба {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.894963Z"
+  },
+  "data.otservbr.global.npc.anderson.L100.133": {
+    "src_hash": "ce0f0f54b2e608f88df50d19913d0955",
+    "text": "Ахои, младићу |PLAYERNAME| и добродошли у нордијске Tibia трајекте. Ако вам треба {passage}, јавите ми.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.895702Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Здраво, ја сам управник овог {monument}. {sarcophagus} испред вас је успостављено да спречи људе да иду тамо {down}. Али сумњам да је овај корак довољан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.896962Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Па, да видимо да ли је твоја мисија била успешна. Само ми донеси све што је потребно {materials}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.897676Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Ако сте ископали сва три кристала довољне количине и набавили отровну жлезду, пуњење вашег компаса може да почне! По први пут ће се напунити љубичастим кристалом. Спремни за {unleash} моћ кристала?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.898846Z"
+  },
+  "data.otservbr.global.npc.aneus.L130.1323": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Поздрав авантуристу |PLAYERNAME|. Шта те води до мене?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.900698Z"
+  },
+  "data.otservbr.global.npc.angelo.L58.1443": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid Крунора? Рекао ти је да се овде појавила нова пећина? Тако је. Ја сам шеф {project} који покушава да сазна више о овом новом {area}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.904050Z"
+  },
+  "data.otservbr.global.npc.armenius.L86.644": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ах, авантуриста. Будите поздрављени и седите. Како вам могу {serve}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.912046Z"
+  },
+  "data.otservbr.global.npc.aruda.L257.1339": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Збогом, |PLAYERNAME|. Заиста се надам да ћемо ускоро поново разговарати.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.912994Z"
+  },
+  "data.otservbr.global.npc.aruda.L64.1336": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "О, здраво |PLAYERNAME|, коса ти изгледа одлично! Ко је то урадио за тебе?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.913739Z"
+  },
+  "data.otservbr.global.npc.aruda.L67.1337": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "О, здраво, лепотице! Задовољство ми је упознати вас, |PLAYERNAME|. Драго ми је да имам времена да мало {chat}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.914557Z"
+  },
+  "data.otservbr.global.npc.atur.L76.727": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Да? Шта могу учинити за тебе, |PLAYERNAME|? Банкарски послови, можда?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.916869Z"
+  },
+  "data.otservbr.global.npc.azalea.L148.851": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добродошли, млади |PLAYERNAME|! Ако сте тешко рањени или отровани, могу вам {heal} бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.920507Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L130.1046": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Добродошли у моје скромно пребивалиште. Ако дођете по новог чаробњака {spells}, дошли сте на право место.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.923957Z"
+  },
+  "data.otservbr.global.npc.battlemart.L64.1360": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "Драго ми је да те видим. Увек сам код тебе {shop options}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.926659Z"
+  },
+  "data.otservbr.global.npc.battlemart.L65.1361": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Збогом, |PLAYERNAME|, бићу овде ако ти поново затребам.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.927620Z"
+  },
+  "data.otservbr.global.npc.beatrice.L89.771": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Наравно, само прегледајте моју робу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.930717Z"
+  },
+  "data.otservbr.global.npc.benjamin.L84.240": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Здраво. Како вам могу помоћи |PLAYERNAME|? Питајте ме за {trade} ако желите нешто да купите. Могу да објасним и систем {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.932306Z"
+  },
+  "data.otservbr.global.npc.benjamin.L85.241": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "Било ми је задовољство помоћи вам.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.932787Z"
+  },
+  "data.otservbr.global.npc.bertha.L88.1552": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Ох, молим вас уђите, |PLAYERNAME|. Шта могу учинити за вас? Ако вам треба авантуристичка опрема, тражите од мене {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.933920Z"
+  },
+  "data.otservbr.global.npc.bertha.L91.1555": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Наравно, само прегледајте моју робу. {Footballs} се морају купити засебно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.935518Z"
+  },
+  "data.otservbr.global.npc.billy.L144.1384": {
+    "src_hash": "1972a0eaf694e91957684eba0ce0acdc",
+    "text": "КАКО ГРОБНО!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.936163Z"
+  },
+  "data.otservbr.global.npc.billy.L146.1386": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Наравно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.936998Z"
+  },
+  "data.otservbr.global.npc.billy.L147.1387": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Здраво |PLAYERNAME|. Ја сам фармер и кувар, можда бих могао да те заинтересујем за {trade} са храном? Такође можете да ме питате за опште {hints} о игри.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.938680Z"
+  },
+  "data.otservbr.global.npc.blind.orc.L102.1517": {
+    "src_hash": "28271e708d06453b7febf147a1c473ef",
+    "text": "Футцхи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.939409Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L72.427": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Мортал! Ако сте на {quest} да служите богу крви, мој господару - буди поздрављен!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.940581Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Мортал! Ако сте на {quest} да служите богу крви, мој господару - буди поздрављен!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.942334Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L168.1459": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Довиђења. Сигуран сам да ћете се вратити по још. Сви раде.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.945262Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L169.1460": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "Довиђења. Сигуран сам да ћете се вратити по још. Сви раде.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.946231Z"
+  },
+  "data.otservbr.global.npc.bolfona.L91.688": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Видимо се пријатељу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.946811Z"
+  },
+  "data.otservbr.global.npc.bolfona.L92.689": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Видимо се пријатељу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.947526Z"
+  },
+  "data.otservbr.global.npc.bolfona.L94.690": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Ти мени причаш? Па, наставите да ћаскате, али не очекујте одговор.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.948461Z"
+  },
+  "data.otservbr.global.npc.boozer.L84.615": {
+    "src_hash": "7b5663cc0d818a1304e60b553fa3fe82",
+    "text": "Добродошли на тркачку стазу Хард Роцк, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.949544Z"
+  },
+  "data.otservbr.global.npc.boveas.L44.24": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Здраво! Надам се да ме нећеш убити!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.950317Z"
+  },
+  "data.otservbr.global.npc.bozo.L610.917": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Здраво, здраво, здраво, мала дамо |PLAYERNAME|! Шта вам доноси {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.951665Z"
+  },
+  "data.otservbr.global.npc.bozo.L922.918": {
+    "src_hash": "e0c720dccd466a9047c7f84dffbf8cfc",
+    "text": "Запамтите: шала на дан одвраћа духове!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.952385Z"
+  },
+  "data.otservbr.global.npc.bozo.L923.919": {
+    "src_hash": "901eba179c016bc753815f362425c4cc",
+    "text": "Хеј! И будале имају осећања.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.953059Z"
+  },
+  "data.otservbr.global.npc.brewster.L185.1484": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Добродошли, млади |PLAYERNAME|! Ако сте тешко рањени или отровани, могу вам {heal} бесплатно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.955402Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L134.319": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Добродошли, |PLAYERNAME|! Нека вас земља заштити на стеновитим теренима. Ако вам треба {passage}, могу вам помоћи.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.957867Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L136.321": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:51:12.958834Z"
   }
 }

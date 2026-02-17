@@ -69646,5 +69646,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:25:20.218686Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Un outfit creato su misura per te. Siamo sicuri che ti piacerà.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:03.471775Z"
+  },
+  "module.gamestore.text4": {
+    "src_hash": "781a5b5a0909474026612d3e59be1b7c",
+    "text": "Tempo Premium",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:03.472346Z"
+  },
+  "module.gamestore.text5": {
+    "src_hash": "781a5b5a0909474026612d3e59be1b7c",
+    "text": "Tempo Premium",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:03.472627Z"
+  },
+  "module.init.text1": {
+    "src_hash": "925c0e774e4825a33c5cc47cb25535b1",
+    "text": "25-07-2020 11:52",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:09.127636Z"
+  },
+  "module.init.text2": {
+    "src_hash": "0b6adaf3b4bd0c7e125bcb00c901950c",
+    "text": "Sviluppatori = { ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:09.127935Z"
+  },
+  "module.init.text3": {
+    "src_hash": "50c4e4f271f95e6a87283c28bc38cdec",
+    "text": "cooldown per l'acquisto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:09.128307Z"
+  },
+  "module.gamestore.text1": {
+    "src_hash": "ba3a051022b3f034c629944cb2261c28",
+    "text": "/modules/scripts/gamestore/init.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:09.128833Z"
+  },
+  "module.daily_reward.text2": {
+    "src_hash": "4d90862c86132756e513210d29128bc7",
+    "text": "10/12/2020 - 20:30",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:14.788913Z"
+  },
+  "module.daily_reward.text3": {
+    "src_hash": "f7d0eb24bd5b533e125f76d919521d0e",
+    "text": "ultimo aggiornamento = ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:14.789157Z"
+  },
+  "module.daily_reward.text4": {
+    "src_hash": "3d027d436804557783b7642eab598fda",
+    "text": "Nessun bonus per il primo giorno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:18.644169Z"
+  },
+  "module.daily_reward.msg_lost_tokens": {
+    "src_hash": "700480ffc88eaf5c5b19662837d67313",
+    "text": "Hai perso {count} gettoni jolly per evitare di perdere la tua serie di vittorie consecutive.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:34:18.645021Z"
   }
 }

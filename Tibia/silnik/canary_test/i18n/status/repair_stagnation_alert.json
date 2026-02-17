@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-17T11:02:53.433493Z",
+  "timestamp": "2026-02-17T11:33:05.033048Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
   "status": "warming_up",
   "alert": false,
-  "message": "Stagnation window not ready (window_too_short), span=5.96h samples=106",
+  "message": "Stagnation window not ready (window_too_short), span=5.99h samples=101",
   "reason": "window_too_short",
   "top_key": "es:npc.json",
   "top_count": 51,
-  "old_total": 38469,
-  "new_total": 37978,
-  "decrease_pct": 1.28,
-  "old_ts": "2026-02-17T04:58:55.689305Z",
-  "new_ts": "2026-02-17T10:59:41.066613Z",
-  "hours_elapsed": 5.961,
-  "sample_count": 106,
+  "old_total": 38462,
+  "new_total": 37977,
+  "decrease_pct": 1.26,
+  "old_ts": "2026-02-17T05:26:01.702728Z",
+  "new_ts": "2026-02-17T11:26:54.187784Z",
+  "hours_elapsed": 5.987,
+  "sample_count": 101,
   "per_lang_trend": {
     "ar": {
       "old": 904,
@@ -72,10 +72,10 @@
       "decrease_pct": 0.0
     },
     "es": {
-      "old": 292,
+      "old": 300,
       "new": 277,
-      "delta": 15,
-      "decrease_pct": 5.14
+      "delta": 23,
+      "decrease_pct": 7.67
     },
     "et": {
       "old": 663,
@@ -139,9 +139,9 @@
     },
     "it": {
       "old": 448,
-      "new": 463,
-      "delta": -15,
-      "decrease_pct": -3.35
+      "new": 462,
+      "delta": -14,
+      "decrease_pct": -3.12
     },
     "ja": {
       "old": 904,
@@ -210,10 +210,10 @@
       "decrease_pct": 0.0
     },
     "pl": {
-      "old": 197,
+      "old": 184,
       "new": 139,
-      "delta": 58,
-      "decrease_pct": 29.44
+      "delta": 45,
+      "decrease_pct": 24.46
     },
     "pt": {
       "old": 620,
@@ -222,10 +222,10 @@
       "decrease_pct": 0.0
     },
     "ro": {
-      "old": 466,
+      "old": 464,
       "new": 430,
-      "delta": 36,
-      "decrease_pct": 7.73
+      "delta": 34,
+      "decrease_pct": 7.33
     },
     "ru": {
       "old": 108,

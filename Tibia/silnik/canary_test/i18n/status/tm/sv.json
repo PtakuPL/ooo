@@ -30638,5 +30638,397 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:59:19.722658Z"
+  },
+  "quests.actions_notescoordinates.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.050702Z"
+  },
+  "quests.actions_peeler.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.051032Z"
+  },
+  "quests.actions_sangra.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Ledsen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.051531Z"
+  },
+  "quests.actions_scissors.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.052000Z"
+  },
+  "quests.actions_tumulo.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.052922Z"
+  },
+  "quests.actions_tumuloerro.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.053280Z"
+  },
+  "quests.adventures_of_galthen.empty": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Tömma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.053964Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "Bekämpa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.065280Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Bekämpa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.065735Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Du har inte tillräckligt med nivå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.076606Z"
+  },
+  "quests.threatened_dreams.you_are_not_on_that_mission": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Du är inte på det uppdraget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:44.078284Z"
+  },
+  "quests.actions_entrance.msg_2": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Än en gång blandar du krita med en droppe av ditt blod och lite vatten och förnyar symbolen på golvet...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:47.132362Z"
+  },
+  "quests.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmm, vilken förtjusande doft!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:47.132834Z"
+  },
+  "quests.actions_last_fight.say_1": {
+    "src_hash": "d3f224c083f6f61bc1d5608b1d2738fb",
+    "text": "Du måste vänta ett tag innan denna jordklot laddas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:47.133215Z"
+  },
+  "quests.actions_last_fight.say_2": {
+    "src_hash": "216c0b5cc7d485662716a63d434347b5",
+    "text": "Inga! Jag tappar min energi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:47.133572Z"
+  },
+  "quests.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:47.134062Z"
+  },
+  "quests.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:50.243432Z"
+  },
+  "quests.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:50.243857Z"
+  },
+  "quests.actions_levers.say_1": {
+    "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
+    "text": "Du vände på ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:50.244103Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Du har framgångsrikt samlat in data.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:50.244490Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_2": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... enheten läser: 0,0,zero,0,zero vilket ungefär kan översättas till: INGENTING AV INTRESSE HÄR",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:50.245006Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Enheten läser: \"onormal glooth-struktur upptäckt, möjlig sonderingsplats\"",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:55.313789Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonden har justerats.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:55.314140Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Alla spelare måste vara jämna ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:55.314539Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Du måste vänta ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:55.314791Z"
+  },
+  "quests.actions_scarlett.msg_1": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Du håller Galtheins gamla bröstskylt framför dig. Den passar inte och alldeles för gammal för att stå emot någon attack.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:32:55.315358Z"
+  },
+  "quests.actions_scarlett.msg_2": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Du får inte använda detta ännu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:01.232703Z"
+  },
+  "quests.actions_servants_mechanism.say_1": {
+    "src_hash": "f5cd2b34be49cf1b2c392d8c1715ee13",
+    "text": "*klick*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:01.233360Z"
+  },
+  "quests.actions_servants_mechanism.say_2": {
+    "src_hash": "715460f6fbd13bd6d1757d939fb9b258",
+    "text": "verkar som om mekanismen fortfarande är aktiv.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:01.238363Z"
+  },
+  "quests.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Teleskopet ger en perfekt utsikt över det ändlösa havet - inget land i sikte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:01.239393Z"
+  },
+  "quests.actions_to_take_roots.msg_1": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Denna rot är redan skördad, inget att vinna här.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:01.240067Z"
+  },
+  "quests.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ditt skördeförsök förstörde mer av de saftiga rötterna än du kunde rädda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:05.831945Z"
+  },
+  "quests.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Du skördar framgångsrikt några saftiga rötter.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:05.832370Z"
+  },
+  "quests.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ditt skördeförsök förstörde mer av de saftiga rötterna än du kunde rädda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:05.832879Z"
+  },
+  "quests.actions_to_take_roots.msg_5": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Du skördar framgångsrikt några saftiga rötter.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:05.833252Z"
+  },
+  "quests.actions_tortoise.msg_1": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Sköldpadda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:05.833458Z"
+  },
+  "quests.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Denna kristallgeod skakar av en strid i närheten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:11.321960Z"
+  },
+  "quests.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Denna kristallgeod skakar av en strid i närheten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:11.322415Z"
+  },
+  "quests.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Denna kristallgeod skakar av en strid i närheten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:11.322785Z"
+  },
+  "quests.actions_using_crystals.say_1": {
+    "src_hash": "f508d9962727da8d65a970bd812689e3",
+    "text": "Greven absorberar vilddjurets kraft och blir starkare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:11.323152Z"
+  },
+  "quests.actions_using_crystals.say_2": {
+    "src_hash": "1ee05904751682de1be927c32b1849ac",
+    "text": "BOOOM!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:11.323344Z"
+  },
+  "quests.actions_wooden_trash.msg_1": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Du hittar inget av intresse under spillrorna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:19.058795Z"
+  },
+  "quests.actions_wooden_trash.msg_2": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Du startade en eskort, få din fånge till dvärgposten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:19.059290Z"
+  },
+  "quests.adventures_of_galthen.found_satchel": {
+    "src_hash": "056ad4a699bbd35e150c2bfdb74c0716",
+    "text": "Du har hittat en galthens väska.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:19.059632Z"
+  },
+  "quests.adventures_of_galthen.you_have_already_obtained_this_outfit": {
+    "src_hash": "2a375adc8dad69731ea3478119cb6da5",
+    "text": "Du har redan skaffat den här outfiten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:19.060007Z"
+  },
+  "quests.bigfoot_burden.body_not_ready": {
+    "src_hash": "650762968728d439e3ac2a042c3eabea",
+    "text": "Den här kroppen är inte klar än.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:19.060323Z"
+  },
+  "quests.bigfoot_burden.boss_challenge": {
+    "src_hash": "7e6ede303d5139cd8026a3b23a8469a1",
+    "text": "Du har en halvtimme på dig på ett heroiskt sätt att besegra {0}. Annars kommer du att teleporteras ut och måste börja om från början.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:24.051509Z"
+  },
+  "quests.bigfoot_burden.chest_guarded": {
+    "src_hash": "660c525e8617590d046aaef15a99886a",
+    "text": "{0} försvarar sina tillhörigheter och låter dig inte öppna denna kista.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:24.052407Z"
+  },
+  "quests.bigfoot_burden.chest_requirements": {
+    "src_hash": "072bb87e3c4717189d1d3a4f4fe1d283",
+    "text": "Se till att du har minst 5 lediga lagerplatser och kan bära ytterligare 100 oz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:33:24.053305Z"
   }
 }

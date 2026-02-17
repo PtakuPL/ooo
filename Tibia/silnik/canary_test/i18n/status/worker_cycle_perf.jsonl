@@ -8253,3 +8253,7 @@
 {"timestamp": "2026-02-17T11:25:03.837588Z", "cycle": 465, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 542, "detail": "count=achievements.json"}
 {"timestamp": "2026-02-17T11:28:42.148038Z", "cycle": 465, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 218160, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T11:29:02.278896Z", "cycle": 465, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 6783, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T11:32:35.769000Z", "cycle": 465, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "cycle_total", "duration_ms": 452667, "detail": "delay=4"}
+{"timestamp": "2026-02-17T11:32:42.222603Z", "cycle": 466, "mode": "AUTO_TRANSLATE", "category": "sv", "phase": "dispatch", "duration_ms": 2165, "detail": "count=quests.json"}
+{"timestamp": "2026-02-17T11:37:43.120234Z", "cycle": 466, "mode": "AUTO_TRANSLATE", "category": "sv", "phase": "mode_run", "duration_ms": 300750, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-17T11:38:36.587304Z", "cycle": 466, "mode": "AUTO_TRANSLATE", "category": "sv", "phase": "status_update", "duration_ms": 47988, "detail": "throttle_every=1"}

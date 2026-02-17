@@ -1,8 +1,8 @@
 {
-  "total_cycles": 465,
+  "total_cycles": 466,
   "mode": "AUTO_TRANSLATE",
-  "category": "it",
-  "last_update": "2026-02-17T12:28:55.363059",
+  "category": "sv",
+  "last_update": "2026-02-17T12:37:47.085684",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "it",
-    "json_file": "achievements.json",
-    "keys_to_translate": 19,
-    "guard_fail": 30,
+    "language": "sv",
+    "json_file": "quests.json",
+    "keys_to_translate": 558,
+    "guard_fail": 4,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

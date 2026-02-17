@@ -1,15 +1,15 @@
 {
   "lang": "it",
-  "coverage_pct": 50.6,
+  "coverage_pct": 50.9,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T10:42:24.181861Z",
-  "issues_total": 428,
+  "checked_at": "2026-02-17T11:35:42.097921Z",
+  "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 20
+    "length_ratio_crosscheck": 21
   },
   "consistency_issues": [
     {
@@ -245,15 +245,6 @@
       "en": ", ",
       "pl": ", ",
       "lang": ", "
-    },
-    {
-      "key": "cpp.player.look.verb_vip",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} VIP.",
-      "pl": "{0} BARDZO WAŻNA OSOBA.",
-      "lang": "{0} VIP."
     },
     {
       "key": "cpp.title.name_18",
@@ -3737,6 +3728,15 @@
       "en": "Mmmm.",
       "pl": "Mmm.",
       "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.malofur_explosion.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOOM!",
+      "pl": "BUM!",
+      "lang": "BOOOM!"
     }
   ],
   "length_ratio_issues": [
@@ -3784,6 +3784,15 @@
       "en_len": 9,
       "lang_ratio": 1.111,
       "pl_ratio": 3.556
+    },
+    {
+      "key": "cpp.player.look.verb_vip",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 0.875,
+      "pl_ratio": 2.875
     },
     {
       "key": "cpp.weapon.wand",

@@ -113222,5 +113222,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:47:25.234237Z"
+  },
+  "book.otbm.it_belonged_to_the_first": {
+    "src_hash": "3b8ee4d45010180db4fe88f7559f09d5",
+    "text": "Należał do pierwszego smoka, który przemierzał świat i był ozdobiony najczystszym złotem Tibia-Market.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:51.284335Z"
+  },
+  "book.otbm.it_contains_all_the_knowledge": {
+    "src_hash": "0b6642b2ea52065752061d2fb73eb2df",
+    "text": "Zawiera całą wiedzę o ziemiach Tibii, zebraną mozolnie przez Tibia-Stats.com.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:58.071366Z"
+  },
+  "book.otbm.it_contains_spices_that_were": {
+    "src_hash": "a0e3e9a252bced54c4ff71afdd5a2295",
+    "text": "Zawiera przyprawy zebrane w całym Tibijskim świecie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:58.071982Z"
+  },
+  "book.otbm.it_deals_with_the_proper": {
+    "src_hash": "ecb6538f6adbee68a1c851d715f8fbd1",
+    "text": "*Dotyczy prawidłowego użycia ofensywnych run, takich jak magiczne pociski, wszelkiego rodzaju kule ognia, eksplozje czy potężna runa nagłej śmierci. Pokazuje jak celować i strzelać z dużą szybkością. Jak zwykle zawiera dodatek, w którym wymienione są wszystkie wymienione runy wraz ze szczegółowym opisem.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:58.072996Z"
+  },
+  "book.otbm.it_describes_the_advantages_and": {
+    "src_hash": "f89aedf7b9d2920b978a5c7cec35754b",
+    "text": "*Opisuje zalety i wady użycia różnych run polowych przeciwko różnym wrogom. Zauważasz szczegółowy dodatek, w którym wymienione są prawie wszystkie runy polowe*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:58.073679Z"
+  },
+  "book.otbm.it_does_not_wish_to": {
+    "src_hash": "7bd273842e19cbbb8f6cca0b3e6bea40",
+    "text": "Nie chce, żeby mu przeszkadzano. Nagroda przyznana przez TibiaLibrary.org.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:58.074299Z"
+  },
+  "book.otbm.it_is_advised_to_wait": {
+    "src_hash": "1a7ed6b74ae905dc091bf58d40b97460",
+    "text": "* Zaleca się poczekać, aż zbierze się wystarczająca liczba głodnych osób, a następnie poczekać, aż ciasto ponownie się zresetuje. Następnie zacznij jeść ciasto tak szybko, jak to możliwe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:03.552941Z"
+  },
+  "book.otbm.it_is_assumed_they_lie": {
+    "src_hash": "bf29d882c82facbb69db9cef8222fe6d",
+    "text": "Zakłada się, że leżą na dnie oceanu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:03.553306Z"
+  },
+  "book.otbm.it_is_certain_that_the": {
+    "src_hash": "3fb3cf067e324a4eabe63dac36ba4f2d",
+    "text": "Pewne jest, że brama z naszego świata do krainy demonów, która znajduje się gdzieś w otchłaniach, jest obecnie nieaktywna. Działa podobnie jak wulkan. Czasami jest tam jakaś aktywność, przez większość czasu nie dzieje się nic, ale czasami następuje potężna erupcja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:03.554324Z"
+  },
+  "book.otbm.it_is_given_to_the": {
+    "src_hash": "79e6dab303ccae6a75710a5d9e23328e",
+    "text": "Jest on przyznawany zwycięzcom konkursów TibiaNordic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:03.554907Z"
+  },
+  "book.otbm.it_is_hard_enough_to": {
+    "src_hash": "5707a7a0ffa1cd622d057bba039d216b",
+    "text": "Wystarczająco trudno jest pozwolić, aby coś rosło bez wszystkich",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:03.555327Z"
+  },
+  "book.otbm.it_is_important_though_that": {
+    "src_hash": "5b7d4236d7362f049b70e56876eacef1",
+    "text": "* WAŻNE jest jednak, aby pewna ilość ciastkowych golemów została zdemontowana w maszynach do ekstrakcji ciasta. Aby to zrobić, należy je zwabić do ekstraktorów ciasta, gdzie znikną. Ponieważ o wiele łatwiej jest je zabić, warto zacząć od wabienia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:08.978952Z"
+  },
+  "book.otbm.it_is_important_though_that_5b7d4236": {
+    "src_hash": "5b7d4236d7362f049b70e56876eacef1",
+    "text": "* WAŻNE jest jednak, aby pewna ilość ciastkowych golemów została zdemontowana w maszynach do ekstrakcji ciasta. Aby to zrobić, należy je zwabić do ekstraktorów ciasta, gdzie znikną. Ponieważ o wiele łatwiej jest je zabić, warto zacząć od wabienia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:08.979892Z"
+  },
+  "book.otbm.it_is_nearly_extinct_due": {
+    "src_hash": "f7b1e77ddf940d1d49415a9a5ff17c32",
+    "text": "Jest prawie wymarły z powodu braku siły - zioło może przetrwać tylko w cieniu, a często tylko poprzez odprowadzanie azotanów z drzew, które przy tym umierają. Dlatego rośliny te można spotkać w pobliżu, a czasami nawet wewnątrz martwych drzew.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:08.980784Z"
+  },
+  "book.otbm.it_is_obvious_that_such": {
+    "src_hash": "590e5ca4b6d03c69dd8a955da2feb6ed",
+    "text": "Jest oczywiste, że taka wielkość nie wiąże się z wyrzeczeniami, ale zadbamy o to, aby były one minimalne. Oczywiście wszystkie nasze decyzje służą wyższemu dobru. Nawet jeśli nie zawsze jest to oczywiste, ostatecznie wszystko się ułoży i zapewni nam wszystkim lepsze życie i świetlaną przyszłość.\\nNa podstawie ruin naszej dawnej świetności trudno sobie wyobrazić, jak wspaniała będzie ta przyszłość, ale my, Yalahari, wciąż nosimy w sercach wizję tego, co chcemy osiągnąć. Wcielenie tej wizji w życie jest naszym największym celem, do którego wszyscy dążymy.\\nIstnieją elementy, których siła i wpływ słabną w tych dniach zmian. Boją się tego, co nadejdzie i w swojej niewiedzy trzymają się gnijącej rzeczywistości, którą znają aż za dobrze. Stworzyli własne nisze władzy i wpływów i czują się winni za zaniedbanie swoich obowiązków, a co za tym idzie, za upadek miasta. Z pewnością już zwracają się do niczego niepodejrzewających osób z zewnątrz, aby zatruć ich umysły samolubnymi kłamstwami. Od pokoleń Augur, niegdyś duma naszego ludu, postępował w ten sam sposób, jaki znał od pokoleń i każdy może zobaczyć, dokąd to doprowadziło Yalahar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:08.983839Z"
+  },
+  "book.otbm.it_is_rumoured_to_bring": {
+    "src_hash": "038c62a24c60ef4739c5967fd1ac4898",
+    "text": "Krążą pogłoski, że przynosi szczęście! Szczęście sponsorowane przez TibiaLottery.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:08.984604Z"
+  },
+  "book.otbm.it_is_said_that_near": {
+    "src_hash": "c2ee0d386117160bed0ec0d6a6fb3ff7",
+    "text": "Mówi się, że w pobliżu bagien potępionych w górach na północ od niego znajduje się legowisko smoków. Legendy mówią o smokach o czerwonych łuskach i ognistym oddechu, które przechowują w swoim legowisku ogromne ilości skarbów. Ale ponieważ nikt nie będzie miał odwagi tam pojechać, nigdy nie będzie wiadomo, czy legendy są prawdziwe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:14.723688Z"
+  },
+  "book.otbm.it_is_said_that_the": {
+    "src_hash": "60bf73347afce665f0182e9fc1d5ef3c",
+    "text": "Mówi się, że pierwszy wampir był potężnym królem-wojownikiem, który skutecznie walczył z nieumarłymi w Wojnie Zwłok. Obiecawszy zakazaną władzę i zjednoczenie z ukochanymi, niegdyś lojalny naśladowca króla, stał się pionkiem mrocznych mocy. Otruwał swego pana, prawdopodobnie przez kilka miesięcy, jakąś paskudną miksturą, którą mu podano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:14.724818Z"
+  },
+  "book.otbm.it_is_shining_with_positive": {
+    "src_hash": "f0039a362377f032bc0f2469a80adf67",
+    "text": "Emanuje pozytywną energią i została nagrodzona przez FunTibia.com.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:14.725436Z"
+  },
+  "book.otbm.it_is_to_be_assumed": {
+    "src_hash": "ad6abaf614fcdf873a5a2a02bd3d7783",
+    "text": "Należy założyć, że ludzka krew miałaby dodatkowe skutki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:14.725866Z"
+  },
+  "book.otbm.it_knows_all_secrets_of": {
+    "src_hash": "9db087a58cd260ec77f70f71bd221af4",
+    "text": "Zna wszystkie sekrety wszystkich liczb. Zostało nagrodzone przez portal Exhiti.com.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:14.726394Z"
+  },
+  "book.otbm.it_rolled_over_to_the": {
+    "src_hash": "deb387f053d8c268cfe9949d8c8314b4",
+    "text": "Potoczył się do lawy i wpadł do niej....",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:22.963422Z"
+  },
+  "book.otbm.it_seemed_like_the_beholderkin": {
+    "src_hash": "4f3d7ee7098bf68995edee9705de34d1",
+    "text": "Wydawało się, że beholderkin, stworzony przez bogów jako przeciwwaga dla innej rasy, która poprzedzała ich w wojnach bogów, był nie do powstrzymania. Ale, niestety! W końcu podzielił ich ten sam los, jaki spotkała większość innych ras podczas wojen bogów: na scenie pojawiła się kolejna rasa, która okazała się jeszcze potężniejsza. Byli dobrze chronieni przed magicznym arsenałem patrzących, więc upadek imperium obserwatorów był tylko kwestią czasu. Widzowie zostali zastąpieni przez szereg innych ras wybranych przez mrocznych bogów, aby bronili ich sprawy. Jedna rasa następowała po drugiej, czasem nawet zanim poprzednia rasa wymarła. Przez cały ten czas obserwatorom powodziło się lepiej niż większości ich następców: dzięki temu, że kiedyś podbili cały świat, małe obszary ich cywilizacji pozostały nawet wtedy, gdy ich niegdyś potężne miasta zniknęły, a tajemnicze piramidy rozsypały się w pył. Wielu obserwatorów zdecydowało się ukryć pod powierzchnią świata, tocząc zaciekłe podziemne wojny, aby zdobyć dominację nad innymi rasami, które uciekły z powierzchni, gdzie toczyły się boskie wojny. Ich sukcesy były ograniczone, ale przynajmniej obserwatorom udało się założyć kilka nowych podziemnych baz, które były bezpieczne, mimo że brakowało im wielkości dawnych miast obserwatorów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:22.967277Z"
+  },
+  "book.otbm.it_shines_as_beautifully_as": {
+    "src_hash": "68dc1a2f08ed4c5be5bed3a48b4daa4b",
+    "text": "Błyszczy tak pięknie, jak dobra przyjaźń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:22.967642Z"
+  },
+  "book.otbm.it_stands_to_reason_that": {
+    "src_hash": "a04d4324ae48aab7f2e10bf378bc6f68",
+    "text": "Jest rzeczą oczywistą, że gwiazdy i słońca wpływają na przepływ magii. Wzory astralne przybywają i zanikają jak przypływy i nie jest możliwe przeprowadzanie pewnych wezwań w nieodpowiednie dni, żeby dać tylko jeden przykład. Badania astrologiczne wskazują jednak na dalsze wpływy, które wykraczają daleko poza przywoływanie stworzeń. Na przykład wpływ gwiazd i słońc wydaje się wzrastać wraz z poziomem mocy wykonywanego zaklęcia lub rytuału. Im więcej many zużyje się na zaklęcie, tym bardziej jest ono podatne na wpływy pozatibiańskie. Z tego powodu wydaje się całkiem bezpieczne założenie, że pewne potężne rytuały są możliwe tylko wtedy, gdy gwiazdy są prawidłowo ustawione. Mamy zatem nadzieję, że poprzez uważną obserwację i uważne obliczenia uda nam się osiągnąć miarę dokładności w zakresie prawidłowego harmonogramu rytuałów, o której dotychczas nie śmialiśmy marzyć. Kilka magicznych zaklęć, których nigdy dotąd nie udało nam się odtworzyć, może faktycznie zostać zrealizowanych, gdy poznamy idealne konstelacje gwiezdne. To wyjaśniałoby, dlaczego wszystkie nasze dotychczasowe próby osiągnięcia tych efektów były skazane na niepowodzenie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:22.971001Z"
+  },
+  "book.otbm.it_was_awarded_by_tibiaevents": {
+    "src_hash": "774e6df801ecf9a6c37a0510f8fb2123",
+    "text": "Zostało nagrodzone przez TibiaEvents. Mówi się, że to tajemnicze pudełko zatrzymuje czas, aby uchwycić najpiękniejsze wspomnienia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:56:22.971784Z"
   }
 }

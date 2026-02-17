@@ -148238,5 +148238,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:45:13.342818Z"
+  },
+  "otclient_modules.ruleviolation.tr_32": {
+    "src_hash": "b2e212d44879dde8d5bd0a16a1944b22",
+    "text": "2a) Declaración ofensiva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:29.899803Z"
+  },
+  "otclient_modules.ruleviolation.tr_33": {
+    "src_hash": "c5968ebe87996f10e6f874bfced3ebda",
+    "text": "1d) Nombre que incita a la infracción de las reglas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:29.900508Z"
+  },
+  "otclient_modules.ruleviolation.tr_34": {
+    "src_hash": "f0e58df3b189bf7b3bec0531cdb4911e",
+    "text": "1c) Nombre inadecuado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:29.909208Z"
+  },
+  "otclient_modules.ruleviolation.tr_35": {
+    "src_hash": "a4b228bf53f6296c32ee57bc1c9e182a",
+    "text": "1b) Formato de nombre no válido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:32.825067Z"
+  },
+  "otclient_modules.ruleviolation.tr_36": {
+    "src_hash": "7dcecc52eb6801e8d4eeb46d98534a0b",
+    "text": "1a) Nombre ofensivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:55:32.825322Z"
   }
 }

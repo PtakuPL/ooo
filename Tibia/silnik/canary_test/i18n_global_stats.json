@@ -1,8 +1,8 @@
 {
-  "total_cycles": 298,
+  "total_cycles": 299,
   "mode": "AUTO_TRANSLATE",
   "category": "es",
-  "last_update": "2026-02-17T06:54:48.128019",
+  "last_update": "2026-02-17T06:56:41.937023",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "es",
-    "json_file": "questlog.json",
-    "keys_to_translate": 1638,
-    "guard_fail": 7,
+    "json_file": "otclient_modules.json",
+    "keys_to_translate": 191,
+    "guard_fail": 24,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

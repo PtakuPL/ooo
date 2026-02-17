@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:06:29.405141Z"
+    "updated_at": "2026-02-17T07:00:23.282852Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -49638,5 +49638,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:57:45.632797Z"
+  },
+  "web.tpl.forum.new_post.b_1": {
+    "src_hash": "36e1a8d34180d54508cdf954e42e15c8",
+    "text": "Postează un răspuns nou",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:18.721764Z"
+  },
+  "web.tpl.bans.b_3": {
+    "src_hash": "cfc36842a01da69c484ffdcc6782f437",
+    "text": "Expiră",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:18.724236Z"
+  },
+  "web.tpl.coins.th_3": {
+    "src_hash": "672387e093236121299d68bd037001a8",
+    "text": "Tibia monede",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:18.744699Z"
+  },
+  "web.tpl.forum.new_thread.b_3": {
+    "src_hash": "bf4c5a49294f9bf50148f3766e143d35",
+    "text": "Subiect:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:25.945367Z"
+  },
+  "web.tpl.forum.new_thread.b_4": {
+    "src_hash": "940663fd4428d2c86f9a4780b6574028",
+    "text": "Mesaj:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:25.945557Z"
+  },
+  "web.tpl.admin.news.table.th_1": {
+    "src_hash": "b78a3223503896721cca1303f776159b",
+    "text": "Titlu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:32.974185Z"
+  },
+  "web.tpl.exception.b_1": {
+    "src_hash": "2b2c9171d6b0dd3e5151861715fc23d2",
+    "text": "Urmărire înapoi:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:32.974450Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_1": {
+    "src_hash": "ea53661974db2e8f508ebaa82ccd2186",
+    "text": "Nume plugin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:32.974651Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_2": {
+    "src_hash": "3741148d2bce69a75b1d394d460de3ec",
+    "text": "Versiunea ta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:32.974848Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_3": {
+    "src_hash": "55f61bb6166a96d9ace945f0c39b48b9",
+    "text": "Ultima versiune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:32.975047Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_4": {
+    "src_hash": "59a657f0b087b1d2503e6fd6ce0dadc1",
+    "text": "Link de descărcare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:38.619942Z"
+  },
+  "web.tpl.account.characters.delete.span_1": {
+    "src_hash": "7f3c8411af284dfb54de94ff2560ff02",
+    "text": "Numele personajului:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:38.620203Z"
+  },
+  "web.tpl.team.set_1": {
+    "src_hash": "ec8b52f8dcf30fbe9e5fa63c60f73990",
+    "text": "Suport în joc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:38.620442Z"
+  },
+  "web.tpl.team.b_1": {
+    "src_hash": "03937134cedab9078be39a77ee3a48a0",
+    "text": "Grup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:38.620661Z"
+  },
+  "web.tpl.team.b_5": {
+    "src_hash": "f5a7924e621e84c9280a9a27e1bcb7f6",
+    "text": "Lume",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:38.620832Z"
+  },
+  "web.tpl.team.b_12": {
+    "src_hash": "f5a7924e621e84c9280a9a27e1bcb7f6",
+    "text": "Lume",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:41.244167Z"
+  },
+  "web.tpl.buttons.change_password.set_1": {
+    "src_hash": "8f1e77e0d2be21da93cd4d9a939148f7",
+    "text": "Schimbaţi parola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:46.138576Z"
+  },
+  "web.tpl.faq.b_1": {
+    "src_hash": "1fe917b01f9a3f87fa2d7d3b7643fac1",
+    "text": "FAQ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:46.138769Z"
+  },
+  "web.tpl.guilds.change_motd.set_1": {
+    "src_hash": "708dc3fe07b0720315585ebbcf63b396",
+    "text": "Schimbați MOTD breasla",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:46.139033Z"
+  },
+  "web.tpl.online.set_1": {
+    "src_hash": "0c9874466a7db3851fac902d0b5933c5",
+    "text": "Informații mondiale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:46.139270Z"
+  },
+  "web.tpl.online.set_2": {
+    "src_hash": "ac29ac870be15bac0b632b58d3c6f76b",
+    "text": "Tabelul 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:46.139448Z"
+  },
+  "web.tpl.online.set_3": {
+    "src_hash": "e2a763fb8a11c036ee99546540923c45",
+    "text": "Jucători online",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:49.740697Z"
+  },
+  "web.tpl.online.set_4": {
+    "src_hash": "d3fe59f7e96f0e90dd51bb0be02d74a5",
+    "text": "Tabelul 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:49.740955Z"
   }
 }

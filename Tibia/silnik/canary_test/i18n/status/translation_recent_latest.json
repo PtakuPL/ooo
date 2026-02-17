@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:59:39.557087Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 51,
+  "timestamp": "2026-02-17T07:01:33.644611Z",
+  "language": "ru",
+  "json_file": "html.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.tom.sendtrade_msg_1",
-      "en": "Sure, check what I buy.",
-      "translated": "Claro, revisa lo que compro.",
-      "source": "simple"
+      "key": "html.paymentconfirm.html.text2",
+      "en": "I have read and I agree to the Extended Tibia Service Agreement and the Tibia Privacy Policy.",
+      "translated": "Я прочитал(а) и согласен(на) с Расширенным соглашением об услугах Tibia и Политикой конфиденциальности Tibia.",
+      "source": "tm"
     },
     {
-      "key": "npc.tom.walkaway_msg_1",
-      "en": "D'oh?",
-      "translated": "¿Oh?",
-      "source": "simple"
+      "key": "html.boostablebosses.html.text3",
+      "en": "Defeating a boosted boss is extra lucrative. Boosted bosses contain more loot and count more kills for your Bosstiary.",
+      "translated": "Победа над усиленным боссом особенно выгодна. Усиленные боссы содержат больше добычи и засчитывают больше убийств для вашего Bosstiary.",
+      "source": "tm"
     },
     {
-      "key": "npc.tomruk_the_ruddy.greet_msg_1",
-      "en": "Hello hello! Always good to see fresh blood! What brings you here?",
-      "translated": "Hola hola! ¡Siempre es bueno ver sangre fresca! ¿Qué te trae por aquí?",
-      "source": "simple"
+      "key": "html.achievements.html.text1",
+      "en": "Achievements are extra goals that you can accomplish while playing Tibia. This list offers you an overview of all common achievements that can be reached in Tibia. However, there are also a number of ",
+      "translated": "Достижения — это дополнительные цели, которые вы можете выполнять во время игры в Tibia. Этот список даёт обзор всех общих достижений, которые можно получить в Tibia. Однако существует также ряд ",
+      "source": "tm"
     },
     {
-      "key": "npc.tonar.greet_msg_1",
-      "en": "Welcome, Sir.",
-      "translated": "Bienvenido, Señor.",
-      "source": "simple"
+      "key": "html.achievements.html.text2",
+      "en": "Compare yourself with other characters of your game world in the \"Highscores\". Achievements yield a certain number of points depending on their grade of difficulty:",
+      "translated": "Сравните себя с другими персонажами вашего мира в «Highscores». Достижения дают определённое количество очков в зависимости от уровня сложности:",
+      "source": "tm"
     },
     {
-      "key": "npc.tonar_oskayaat.greet_msg_1",
-      "en": "Welcome back, Sir.",
-      "translated": "Bienvenido atrás, Señor.",
-      "source": "simple"
+      "key": "html.downloads.html.text2",
+      "en": "Processor: 1.5 GHz Pentium 4 or equivalent with SSE2 instruction set support",
+      "translated": "Процессор: Pentium 4 1,5 ГГц или эквивалент с поддержкой набора инструкций SSE2",
+      "source": "tm"
     },
     {
-      "key": "npc.topsy.farewell_msg_1",
-      "en": "Good bye, |PLAYERNAME|. Do come again!",
-      "translated": "Adiós, |PLAYERNAME|. ¡Ven de nuevo!",
-      "source": "simple"
+      "key": "html.editdescription.html.text1",
+      "en": "Edit Guild Description",
+      "translated": "Редактировать Guild Описание",
+      "source": "tm"
     },
     {
-      "key": "npc.topsy.walkaway_msg_1",
-      "en": "Good bye, |PLAYERNAME|. Do come again!",
-      "translated": "Adiós, |PLAYERNAME|. ¡Ven de nuevo!",
-      "source": "simple"
+      "key": "html.activitylog.html.text1",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Нетv 28 2022, 14:10:18",
+      "source": "tm"
     },
     {
-      "key": "npc.torkada.farewell_msg_1",
-      "en": "Bye, |PLAYERNAME|.",
-      "translated": "Adiós, |PLAYERNAME|.",
-      "source": "simple"
+      "key": "html.activitylog.html.text3",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Нетv 28 2022, 14:10:18",
+      "source": "tm"
     },
     {
-      "key": "npc.torkada.greet_msg_1",
-      "en": "Greetings! This isn't the {time} to chitchat though.",
-      "translated": "¡Saludos! Sin embargo, este no es el {time} para charlar.",
-      "source": "simple"
+      "key": "html.activitylog.html.text5",
+      "en": "Nov 28 2022, 14:10:18",
+      "translated": "Нетv 28 2022, 14:10:18",
+      "source": "tm"
     },
     {
-      "key": "npc.trisha.farewell_msg_1",
-      "en": "Don't hurt yourself with that weapon, little one.",
-      "translated": "No te hagas daño con esa arma, pequeña.",
-      "source": "simple"
+      "key": "html.require.text4",
+      "en": "You need PHP 7.2.5 or newer, with ",
+      "translated": "Вам нужен PHP 7.2.5 или новее, с ",
+      "source": "tm"
     },
     {
-      "key": "npc.trisha.greet_msg_1",
-      "en": "Welcome back, knight |PLAYERNAME|!",
-      "translated": "¡Bienvenido de nuevo, caballero |PLAYERNAME|!",
-      "source": "simple"
+      "key": "html.credits.text1",
+      "en": "Credits &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Благодарности &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.turvy.farewell_msg_1",
-      "en": "Good bye, |PLAYERNAME|. Do come again!.",
-      "translated": "Adiós, |PLAYERNAME|. ¡Vuelve otra vez!.",
-      "source": "simple"
+      "key": "html.user.text1",
+      "en": "User Guide &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Руководство пользователя &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.turvy.greet_msg_1",
-      "en": "Hello, dear |PLAYERNAME|. Can I be of any assistance? Just tell me if you'd like to {trade} weapons or armor.",
-      "translated": "Hola querido |PLAYERNAME|. ¿Puedo ser de alguna ayuda? Sólo dime si te gustaría {trade} armas o armaduras.",
-      "source": "simple"
+      "key": "html.user.text5",
+      "en": "Authentication Application (2FA)",
+      "translated": "Приложение-аутентификатор (2FA)",
+      "source": "tm"
     },
     {
-      "key": "npc.turvy.walkaway_msg_1",
-      "en": "Good bye, |PLAYERNAME|. Do come again!.",
-      "translated": "Adiós, |PLAYERNAME|. ¡Vuelve otra vez!.",
-      "source": "simple"
+      "key": "html.privileges.text1",
+      "en": "User management &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Управление пользователями &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.ubaid.farewell_msg_1",
-      "en": "Farewell human!",
-      "translated": "¡Adiós humano!",
-      "source": "simple"
+      "key": "html.privileges.text3",
+      "en": "Within phpMyAdmin, user management is controlled via the ",
+      "translated": "В phpMyAdmin управление пользователями осуществляется через ",
+      "source": "tm"
     },
     {
-      "key": "npc.ubaid.walkaway_msg_1",
-      "en": "Farewell human!",
-      "translated": "¡Adiós humano!",
-      "source": "simple"
+      "key": "html.import_export.text1",
+      "en": "Import and export &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Импорт и экспорт &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.ukea.farewell_1",
-      "en": "Goodbye, |PLAYERNAME|.",
-      "translated": "Adiós, |PLAYERNAME|.",
-      "source": "simple"
+      "key": "html.config.text1",
+      "en": "Configuration &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Конфигурация &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.ulala.greet_msg_1",
-      "en": "Spirits welcome you.",
-      "translated": "Los espíritus te dan la bienvenida.",
-      "source": "simple"
+      "key": "html.two_factor.text1",
+      "en": "Two-factor authentication &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Двухфакторная аутентификация &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.umar.farewell_msg_1",
-      "en": "<salutes>Aaaa -tention!",
-      "translated": "<salutes>Aaaa -¡atención!",
-      "source": "simple"
+      "key": "html.transformations.text1",
+      "en": "Transformations &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Преобразования &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     },
     {
-      "key": "npc.umar.walkaway_msg_1",
-      "en": "<salutes>Aaaa -tention!",
-      "translated": "<salutes>Aaaa -¡atención!",
-      "source": "simple"
+      "key": "html.copyright.text1",
+      "en": "Copyright &#8212; phpMyAdmin 5.2.2 documentation",
+      "translated": "Авторские права &#8212; документация phpMyAdmin 5.2.2",
+      "source": "tm"
     }
   ]
 }

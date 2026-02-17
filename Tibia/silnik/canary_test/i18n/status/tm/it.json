@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:06:46.008672Z"
+    "updated_at": "2026-02-17T07:01:03.459863Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -55766,5 +55766,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:57:58.165392Z"
+  },
+  "web.tpl.admin.changelog.th_4": {
+    "src_hash": "b3c5b21d2cb47cc950fd4667edaf404c",
+    "text": "Dove",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:59.265759Z"
+  },
+  "web.tpl.bans.b_3": {
+    "src_hash": "cfc36842a01da69c484ffdcc6782f437",
+    "text": "Scade",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:59.270413Z"
+  },
+  "html.forum.move_thread.html.text1": {
+    "src_hash": "f89e73354656130dbb4f50fe616737d9",
+    "text": "Sposta il thread su un'altra bacheca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:00:59.292991Z"
+  },
+  "web.tpl.account.characters.change_name.span_2": {
+    "src_hash": "4882d267883763e78273b9d4799bf296",
+    "text": "Nuovo nome:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:06.087200Z"
+  },
+  "web.tpl.guilds.change_logo.set_1": {
+    "src_hash": "79bcf7e0021263c49087eeb0640fd2c0",
+    "text": "Cambia il logo della gilda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:11.919925Z"
+  },
+  "web.tpl.guilds.change_logo.b_1": {
+    "src_hash": "6991ddb3a4a686598a33ce1b303df808",
+    "text": "jpg, gif, png, bmp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:11.920269Z"
+  },
+  "web.tpl.forum.new_thread.b_1": {
+    "src_hash": "36e1a8d34180d54508cdf954e42e15c8",
+    "text": "Pubblica nuova risposta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:11.920505Z"
+  },
+  "web.tpl.forum.new_thread.b_3": {
+    "src_hash": "bf4c5a49294f9bf50148f3766e143d35",
+    "text": "Argomento:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:11.920685Z"
+  },
+  "web.tpl.forum.new_thread.b_4": {
+    "src_hash": "940663fd4428d2c86f9a4780b6574028",
+    "text": "Messaggio:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:11.920860Z"
+  },
+  "web.tpl.forum.new_thread.b_5": {
+    "src_hash": "9dffbf69ffba8bc38bc4e01abf4b1675",
+    "text": "Testo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:17.210705Z"
+  },
+  "web.tpl.buttons.back.set_1": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Indietro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:17.210956Z"
+  },
+  "web.tpl.admin.news.table.th_1": {
+    "src_hash": "b78a3223503896721cca1303f776159b",
+    "text": "Titolo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:17.211156Z"
+  },
+  "web.tpl.exception.b_1": {
+    "src_hash": "2b2c9171d6b0dd3e5151861715fc23d2",
+    "text": "Indietro:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:17.211360Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_1": {
+    "src_hash": "ea53661974db2e8f508ebaa82ccd2186",
+    "text": "Nome del plug-in",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:17.211587Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_2": {
+    "src_hash": "3741148d2bce69a75b1d394d460de3ec",
+    "text": "La tua versione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:23.061380Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_3": {
+    "src_hash": "55f61bb6166a96d9ace945f0c39b48b9",
+    "text": "Ultima versione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:23.062052Z"
+  },
+  "web.tpl.admin.plugins.outdated.th_4": {
+    "src_hash": "59a657f0b087b1d2503e6fd6ce0dadc1",
+    "text": "Scarica collegamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:23.062670Z"
+  },
+  "web.tpl.account.characters.delete.span_1": {
+    "src_hash": "7f3c8411af284dfb54de94ff2560ff02",
+    "text": "Nome del personaggio:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:23.063187Z"
+  },
+  "web.tpl.team.set_1": {
+    "src_hash": "ec8b52f8dcf30fbe9e5fa63c60f73990",
+    "text": "Supporto nel gioco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:26.090632Z"
+  },
+  "web.tpl.team.b_1": {
+    "src_hash": "03937134cedab9078be39a77ee3a48a0",
+    "text": "Gruppo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:26.090848Z"
+  },
+  "web.tpl.team.b_5": {
+    "src_hash": "f5a7924e621e84c9280a9a27e1bcb7f6",
+    "text": "Mondo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:26.091020Z"
+  },
+  "web.tpl.team.b_7": {
+    "src_hash": "54f664c70c22054ea0d8d26fc3997ce7",
+    "text": "In linea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:26.091196Z"
+  },
+  "web.tpl.team.b_8": {
+    "src_hash": "8d9da4bc0e49a50e09ac9f7e56789d39",
+    "text": "Non in linea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:26.091376Z"
+  },
+  "web.tpl.team.b_12": {
+    "src_hash": "f5a7924e621e84c9280a9a27e1bcb7f6",
+    "text": "Mondo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:28.029270Z"
+  },
+  "web.tpl.team.b_14": {
+    "src_hash": "54f664c70c22054ea0d8d26fc3997ce7",
+    "text": "In linea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:01:28.029486Z"
   }
 }

@@ -58950,5 +58950,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:54:33.713916Z"
+  },
+  "otclient_modules.entergame_otui.tr_2": {
+    "src_hash": "99dea78007133396a7b8ed70578ac6ae",
+    "text": "Log in",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.762221Z"
+  },
+  "otclient_modules.game_shop.tr_21": {
+    "src_hash": "193cfc9be3b995831c6af2fea6650e60",
+    "text": "Pagină",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.773809Z"
+  },
+  "otclient_modules.game_shop_otui.tr_1": {
+    "src_hash": "193cfc9be3b995831c6af2fea6650e60",
+    "text": "Pagină",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.774894Z"
+  },
+  "otclient_modules.keybinds_otui.tr_8": {
+    "src_hash": "ef5f632a19ebffc1a66684faa729528b",
+    "text": "Modul chat dezactivat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.823524Z"
+  },
+  "otclient_modules.keybinds_otui.tr_9": {
+    "src_hash": "2aaf58cf1cc24ecdd65a8d45166107ee",
+    "text": "Modul chat activat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.823804Z"
+  },
+  "otclient_modules.mainpanel.tr_1": {
+    "src_hash": "a3a08e8fe1d8358180652735a1c0f31f",
+    "text": "Butoane de control",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.825049Z"
+  },
+  "otclient_modules.mainpanel.tr_4": {
+    "src_hash": "a3a08e8fe1d8358180652735a1c0f31f",
+    "text": "Butoane de control",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.825652Z"
+  },
+  "otclient_modules.mainpanel.tr_6": {
+    "src_hash": "a3a08e8fe1d8358180652735a1c0f31f",
+    "text": "Butoane de control",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.826368Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_3": {
+    "src_hash": "0be8406951cdfda82f00f79328cf4efc",
+    "text": "Comentariu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.850904Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_6": {
+    "src_hash": "fffcb4d1e12c96b2f571f77ad25878b8",
+    "text": "Motiv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:00.851959Z"
+  },
+  "otclient_modules.character.tr_26": {
+    "src_hash": "13bc1cebc074005a56d4340643202b24",
+    "text": "De la Protejare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:09.150743Z"
+  },
+  "otclient_modules.character.tr_27": {
+    "src_hash": "05b12fcc019db2164e02024fe9578620",
+    "text": "Atenuare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:16.486568Z"
+  },
+  "otclient_modules.character.tr_28": {
+    "src_hash": "ffad71d6db9adb50cc21052c8226cb69",
+    "text": "Valoarea armurii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:16.486815Z"
+  },
+  "otclient_modules.character.tr_31": {
+    "src_hash": "976de6de5004ed522085a5e4be455707",
+    "text": "Valoarea de apărare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:16.487096Z"
+  },
+  "otclient_modules.character.tr_32": {
+    "src_hash": "582535411f1e1043831c8fc370880869",
+    "text": "din gama ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:16.487309Z"
+  },
+  "otclient_modules.character.tr_37": {
+    "src_hash": "fc25cde969a2a9c8d9fec8eeb0b5e50f",
+    "text": "Daune suplimentare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:21.991298Z"
+  },
+  "otclient_modules.character.tr_38": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Şansă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:21.991557Z"
+  },
+  "otclient_modules.character.tr_39": {
+    "src_hash": "bebeb822697b052c32c4e819a77bb912",
+    "text": "Lovitură critică",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:21.991794Z"
+  },
+  "otclient_modules.character.tr_42": {
+    "src_hash": "c58de8415b504a6ffa5d0b14967f91bb",
+    "text": "Atac violent",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:21.991988Z"
+  },
+  "otclient_modules.character.tr_5": {
+    "src_hash": "d4aafb8980abab7d38e257eb32909378",
+    "text": "Din bonusul evenimentului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:21.992221Z"
+  },
+  "otclient_modules.character.tr_54": {
+    "src_hash": "3d92095304f260f4a17317dfb05209fe",
+    "text": "Valoarea atacului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:26.920859Z"
+  },
+  "otclient_modules.character.tr_55": {
+    "src_hash": "e40de13b2a25f9ef4cfe8fc1305a8af8",
+    "text": "Daune plate și vindecare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:26.921168Z"
+  },
+  "otclient_modules.character.tr_60": {
+    "src_hash": "b24ce0cd392a5b0b8dedc66c25213594",
+    "text": "Gratuit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:30.764132Z"
+  },
+  "otclient_modules.character.tr_63": {
+    "src_hash": "f0019d7368c6b92536f523dbec203ecf",
+    "text": "Titlurile personajelor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:30.765340Z"
+  },
+  "otclient_modules.character.tr_64": {
+    "src_hash": "578b503d5e360a0c2b95f8bc41be077b",
+    "text": "Rezumatul magazinului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:30.765557Z"
+  },
+  "otclient_modules.character.tr_65": {
+    "src_hash": "0ebf14f1c5ff56e87a0c8ad782038ec7",
+    "text": "Apariții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:36.212161Z"
+  },
+  "otclient_modules.character.tr_66": {
+    "src_hash": "ed2a3e0cc149cc15d0a6e52375f2e1c1",
+    "text": "Rezumatul articolului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:36.212388Z"
+  },
+  "otclient_modules.character.tr_67": {
+    "src_hash": "f5c7922da355fd289ec1d6469e0583a7",
+    "text": "Realizări",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:36.212586Z"
+  },
+  "otclient_modules.character.tr_68": {
+    "src_hash": "187d3772e0efd4d5d39f2ea749c6a5a7",
+    "text": "Ucideri PvP recente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:36.212813Z"
+  },
+  "otclient_modules.character.tr_69": {
+    "src_hash": "c9edae9d10ed1b1dbf0e4e7e94dbfaea",
+    "text": "Decese recente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:56:36.213006Z"
   }
 }

@@ -45606,5 +45606,277 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:42:10.983966Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L10.2204": {
+    "src_hash": "861ab2588f39c57f58d9f463bdc28f4e",
+    "text": "Nu puteți utiliza acest articol din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.292307Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L15.2205": {
+    "src_hash": "c640067d5fadf2d094bbc35f3dd5350f",
+    "text": "Ați găsit un trignometru gnom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.292728Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L7.2203": {
+    "src_hash": "8f8ae0bbc960b0e7c432304a999b957d",
+    "text": "Ați găsit diagrame de gnome.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.293323Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.trignometre.L19.2208": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Ați verificat locația cu succes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.293827Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.trignometre.L27.2209": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Ați verificat locația cu succes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.294262Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.trignometre.L35.2210": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Ați verificat locația cu succes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.294657Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.trignometre.L43.2211": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Ați verificat locația cu succes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.295069Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.trignometre.L51.2212": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Ați verificat locația cu succes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.295455Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.chest.L6.2228": {
+    "src_hash": "0f05e4f332a3edab0ec548f5a26655fb",
+    "text": "Ați găsit pesticide gnome.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.295940Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnomish.pesticide.L34.2214": {
+    "src_hash": "12df7c33b31ae10bbbcffc40c3459b3c",
+    "text": "Doar cadavrele diremaw pe jumătate degradate pot fi neutralizate cu aceste pesticide.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.296668Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.corrupted.L408.1953": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.312562Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.desert.L387.1943": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.313132Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.dimension.L423.1934": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.313590Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.grass.L455.1940": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.314057Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.ice.L470.1952": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.314543Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.mushroom.L423.1955": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.314986Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.roshamuul.L496.1958": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.315537Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.habitat.venom.L479.1959": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "Camera se transformă într-un peisaj complet diferit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.316036Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.gravel.L20.1776": {
+    "src_hash": "4773513d10da04eea4d6263d73273d1d",
+    "text": "Adunați niște pietriș fin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.352295Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L217.2072": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Momentan nu ai nicio pată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.355509Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L232.2073": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Jucătorul este offline",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.355936Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.soul.war.mechanics.L283.2076": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Jucătorul este offline",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.356341Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.goldenIdol.L51.1846": {
+    "src_hash": "d8f1a1cdd7c4b9b8fec918889daa347c",
+    "text": "Ai așezat toți idolii pe altare și ai descuiat templul!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.372085Z"
+  },
+  "game.loot.pickup.gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Ai jefuit {0} aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.416152Z"
+  },
+  "game.loot.pickup.item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Ai jefuit 1 articol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.416714Z"
+  },
+  "game.loot.pickup_failed.gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Nu ai putut jefui {0} aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.417473Z"
+  },
+  "game.loot.summary.gold_only": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Ai jefuit {0} aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.418679Z"
+  },
+  "game.loot.summary.single_item_only": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Ai jefuit 1 articol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.419942Z"
+  },
+  "game.stash.withdraw_limit": {
+    "src_hash": "9a01da13149e0a5035736e78737126ce",
+    "text": "Puteți retrage numai până la {0} articole odată din depozit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.421947Z"
+  },
+  "game.trade.move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} vă spune să vă apropiați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.423146Z"
+  },
+  "game.trade.request": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} vrea să facă tranzacții cu dvs.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:11.424343Z"
+  },
+  "data.otservbr.global.npc.bolfona.L94.690": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Vorbesti cu mine? Ei bine, continuă să vorbești, dar nu te aștepta la un răspuns.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:20.741584Z"
+  },
+  "data.otservbr.global.npc.boveas.L44.24": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Hi! Sper că nu o să mă omori!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:20.746584Z"
+  },
+  "data.otservbr.global.npc.bozo.L608.916": {
+    "src_hash": "d4fea72808864f72f60dd0127ba12ae7",
+    "text": "Bună ziua, cum e agățat, |PLAYERNAME|! Ce vă aduce {here}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:49:20.747384Z"
   }
 }

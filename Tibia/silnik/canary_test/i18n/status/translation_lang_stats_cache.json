@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T00:16:54.527685Z",
+  "timestamp": "2026-02-17T00:20:00.349185Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 1976,
-  "file_cache_misses": 0,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771287281706898057,
+          1771287595671903671,
           1848295
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771287281706898057,
+            1771287595671903671,
             1848295
           ],
           "row": {
@@ -30792,8 +30792,8 @@
         [
           "books.json",
           1,
-          1771074895525032889,
-          302212
+          1771287579387854757,
+          305199
         ],
         [
           "chatchannels.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 5511,
+        "translated_keys": 5561,
         "english_copy_keys": 2469,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 10.28,
+        "completion_pct": 10.38,
         "server_keys": 49731,
-        "server_translated": 5461,
-        "server_pct": 10.98,
+        "server_translated": 5511,
+        "server_pct": 11.08,
         "client_keys": 3855,
         "client_translated": 50,
         "client_pct": 1.3
@@ -31055,12 +31055,12 @@
         "books.json": {
           "sig": [
             1,
-            1771074895525032889,
-            302212
+            1771287579387854757,
+            305199
           ],
           "row": {
             "total_reference_keys": 1403,
-            "translated_keys": 0,
+            "translated_keys": 50,
             "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
@@ -31575,8 +31575,8 @@
         [
           "books.json",
           1,
-          1771074895861033594,
-          302212
+          1771287499959595912,
+          302041
         ],
         [
           "chatchannels.json",
@@ -31794,14 +31794,14 @@
         "language_name": "Szwedzki",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 4375,
+        "translated_keys": 4418,
         "english_copy_keys": 2538,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 8.16,
+        "completion_pct": 8.24,
         "server_keys": 49731,
-        "server_translated": 4280,
-        "server_pct": 8.61,
+        "server_translated": 4323,
+        "server_pct": 8.69,
         "client_keys": 3855,
         "client_translated": 95,
         "client_pct": 2.46
@@ -31838,12 +31838,12 @@
         "books.json": {
           "sig": [
             1,
-            1771074895861033594,
-            302212
+            1771287499959595912,
+            302041
           ],
           "row": {
             "total_reference_keys": 1403,
-            "translated_keys": 0,
+            "translated_keys": 43,
             "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0

@@ -1,25 +1,17 @@
 {
-  "timestamp": "2026-02-17T00:16:50.865971Z",
+  "timestamp": "2026-02-17T00:19:56.553627Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 1,
-    "identical_to_en_exempt": 13,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
     "suspicious_log_critical": 82,
-    "suspicious_log_high": 90,
-    "suspicious_log_low": 28,
+    "suspicious_log_high": 83,
+    "suspicious_log_low": 35,
     "suspicious_rejected_critical": 170,
     "suspicious_rejected_high": 30
   },
   "issues": [
-    {
-      "key": "_file",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "data-otservbr-global/npc/example_merchant_i18n.lua",
-      "translated": "data-otservbr-global/npc/example_merchant_i18n.lua"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 72,
+  "total_cycles": 73,
   "mode": "AUTO_TRANSLATE",
-  "category": "sr",
-  "last_update": "2026-02-17T01:16:50.997857",
+  "category": "sv",
+  "last_update": "2026-02-17T01:19:56.696975",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sr",
-    "json_file": "questlog.json",
-    "keys_to_translate": 1870,
-    "guard_fail": 6,
+    "language": "sv",
+    "json_file": "books.json",
+    "keys_to_translate": 1403,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

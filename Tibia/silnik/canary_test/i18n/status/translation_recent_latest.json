@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:16:48.113480Z",
-  "language": "sv",
-  "json_file": "cpp.json",
-  "translated": 44,
+  "timestamp": "2026-02-17T00:19:55.679847Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "cpp.badge.name_6",
-      "en": "Tibia Loyalist (Grade 1)",
-      "translated": "Tibia Lojalist (Betyg 1)",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "cpp.badge.name_7",
-      "en": "Tibia Loyalist (Grade 2)",
-      "translated": "Tibia Lojalist (Betyg 2)",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "cpp.badge.name_8",
-      "en": "Tibia Loyalist (Grade 3)",
-      "translated": "Tibia Lojalist (Betyg 3)",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "cpp.badge.name_9",
-      "en": "Global Player (Grade 1)",
-      "translated": "Global spelare (Grad 1)",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "cpp.bed.nobody_sleeping",
-      "en": "Nobody is sleeping there.",
-      "translated": "Ingen sover där.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "cpp.bed.sleeping",
-      "en": "{0} is sleeping there.",
-      "translated": "{0} sover där.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.already_set_charm",
-      "en": "You already have this monster set on another {0} Charm!",
-      "translated": "Du har redan det här monstersetet på en annan {0} Charm!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.charm_category_major",
-      "en": "Major",
-      "translated": "Större",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.charm_category_minor",
-      "en": "Minor",
-      "translated": "Mindre",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.charm_max_level",
-      "en": "Charm at max level.",
-      "translated": "Charm på maxnivå.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.creature_set_free",
-      "en": "Creature has been set! You are a Free player, so you benefit from up to 2 runes! Premium players benefit from 6 and Charm Expansion allow you to set creatures to all runes at once!.",
-      "translated": "Varelse har satts! Du är en gratisspelare, så du drar nytta av upp till 2 runor! Premiumspelare drar nytta av 6 och Charm Expansion låter dig ställa in varelser till alla runor på en gång!.",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.creature_set_premium",
-      "en": "Creature has been set! You are a Premium player, so you benefit from up to 6 runes! Charm Expansion allow you to set creatures to all runes at once!",
-      "translated": "Varelse har satts! Du är en Premium-spelare, så du drar nytta av upp till 6 runor! Charm Expansion låter dig ställa in varelser till alla runor på en gång!",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.no_charm_slots",
-      "en": "You don't have any charm slots available.",
-      "translated": "Du har inga charmslots tillgängliga.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.not_enough_charm_echoes",
-      "en": "You don't have enough minor charm echoes to unlock this rune.",
-      "translated": "Du har inte tillräckligt med mindre charmekon för att låsa upp denna runa.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.not_enough_charm_points",
-      "en": "You don't have enough charm points to unlock this rune.",
-      "translated": "Du har inte tillräckligt med charmpoäng för att låsa upp denna runa.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.not_enough_gold",
-      "en": "You don't have enough gold.",
-      "translated": "Du har inte tillräckligt med guld.",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "cpp.bestiary.unlocked_details",
-      "en": "You unlocked details for the creature '{0}'",
-      "translated": "Du låste upp detaljer för varelsen '{0}'",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "cpp.bosstiary.podium_reward",
-      "en": "Congratulations! You have reached the Expertise level for your first boss. As a reward, a free Podium of Vigour has been sent to your Store inbox. You can place this podium in any house you own with this character. Use it to display bosses for which you have reached at least the Expertise level.",
-      "translated": "Grattis! Du har nått expertisnivån för din första chef. Som belöning har ett gratis Podium of Vigor skickats till din butiksinkorg. Du kan placera denna pallplats i vilket hus du äger med denna karaktär. Använd den för att visa chefer för vilka du har nått åtminstone expertisnivån.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "cpp.cancel.cannot_move_house",
-      "en": "You cannot move this item out of this house.",
-      "translated": "Du kan inte flytta detta föremål från det här huset.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "cpp.cancel.cannot_stow_containers",
-      "en": "You cannot stow containers.",
-      "translated": "Du kan inte stuva containrar.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

@@ -166710,5 +166710,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:15:42.517799Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "Успео сам! Стигао сам до кристалних вртова! Какву лепоту и сјај сам видео тамо доле. Чак и више: открио сам мало подземно језеро - али Хари је био тамо пре мене. И урадио је нешто чудно: зазвонио је на мало, провидно звонце и одмах се у води појавио велики вртлог. Претпостављам да је ово мистериозан пут дубље у пећине које смо толико дуго тражили. Али Хари, кукавица, није смео да зарони у воду. Уместо тога, напустио је пећине и вратио се на површину. Морам да имам ово звоно!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:31.602345Z"
+  },
+  "book.dawnport.adventurers_guild_letter": {
+    "src_hash": "2b955455df5e1d1d0539717d3f21490c",
+    "text": "Храбри авантуриста,\n\n__ПХ0__ понуде авантуриста које поздрављате као новог хероја земље.\n\nУзмите камен овог авантуриста и употребите га у било ком градском храму да бисте одмах отпутовали у салу нашег савеза. Ако икада изгубите камен авантуриста, можете га заменити разговором са свештеником у храму.\nНадам се да ћете нас ускоро посетити.\n\nсрдачан поздрав,\nРотем, шеф авантуриста __ПХ1__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:31.603918Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "СТРАНА 2\nЛорд Кошеј Радознали\n-_-_-_-_-_-_-_-_-_-_-_-\nДатум рођења: непознат\nСтарост: непозната\nРодно место: непознато\nДатум смрти: непознат\nО овом човеку се не зна много ствари. Појавио се ниоткуда и овде је живео скоро десет година. Иако је био комуникативан, никада ништа није причао о својој професији или о томе чиме се бавио. Прво је живео у __ПХ0__ 2, стан 11 око две године. За то време лутао је около, путујући по земљама Дарама и често посећујући Купатило снова и пирамиду минотаура на северу.\nТада се открило да је саградио кулу јужно од планина. Необјашњено је како му је то пошло за руком јер нико није виђен да му помогне. У сваком случају, остаци његове куле су још увек тамо. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:31.606298Z"
+  },
+  "book.new_frontier.hidden_note": {
+    "src_hash": "9ceb31d90dfc2bd835acf14d81f53a52",
+    "text": "Иди до тајних врата на северу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:31.606675Z"
+  },
+  "book.otbm.1000_alchemical_uses_of_urine": {
+    "src_hash": "9c23d812ac32f7e41a0537b19e4c8678",
+    "text": "1000 алхемијских употреба урина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:31.607003Z"
+  },
+  "book.otbm.1000_gold_10_fire_bugs": {
+    "src_hash": "ea67da6d7646ef0efd5615dd8e19730a",
+    "text": "1000 злата 10 ватрених буба за Дреам Цхалленге",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:38.487109Z"
+  },
+  "book.otbm.1001_recipes_against_sweaty_hands": {
+    "src_hash": "8275b9995fc68e7998155dae59d10bb0",
+    "text": "1001 рецепт против знојавих руку",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:38.487462Z"
+  },
+  "book.otbm.1001_ways_to_use_energy": {
+    "src_hash": "5bd2f82c9a64857c3866a03b4062b621",
+    "text": "1001 начин коришћења енергетских зрака.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:38.487805Z"
+  },
+  "book.otbm.100_gold_coins_equal_1": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 златника једнако је 1 платинастом новчићу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:38.488167Z"
+  },
+  "book.otbm.100_gold_coins_equal_1_39c18279": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 златника једнако је 1 платинастом новчићу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:38.488524Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 платинастих новчића једнако је 1 кристалном новчићу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:44.851834Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1_648a8349": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 платинастих новчића једнако је 1 кристалном новчићу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:44.852230Z"
+  },
+  "book.otbm.1_be_respectful_and_considerate": {
+    "src_hash": "a57d4f9c381d85d1d59ee58709244771",
+    "text": "1. Будите поштовани и пажљиви према својим друговима.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:44.852629Z"
+  },
+  "book.otbm.1_discover_secret_of_necromants": {
+    "src_hash": "b262931a57ba6ca52d750f20308ade82",
+    "text": "1. Откријте тајну нектара некроманата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:44.852977Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Ставите гомилу шећерне трске у машину",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:44.853341Z"
+  },
+  "book.otbm.1st_floor_bel_etage_grand": {
+    "src_hash": "f29cc66b29afa145b3a9858568976985",
+    "text": "1. спрат (бел етаге): Гранд Опера Цаф",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:52.422651Z"
+  },
+  "book.otbm.1st_floor_interior_design_take": {
+    "src_hash": "9fb4f14b9389b9a4981c5b9bd7cbb8a0",
+    "text": "1. спрат: Дизајн ентеријера (узмите лифт)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:52.422943Z"
+  },
+  "book.otbm.1st_floor_magic_emporium": {
+    "src_hash": "3bc17306f6a2a84ed45125c1b8697891",
+    "text": "1. спрат: Магиц Емпориум",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:52.423176Z"
+  },
+  "book.otbm.1st_floor_the_archers_grounds": {
+    "src_hash": "766fedafb986dcfc1155671e1bb154fb",
+    "text": "1. спрат: Арцхер'с Гроундс - оружје на даљину и __ПХ0__ чаролије",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:52.423602Z"
+  },
+  "book.otbm.20_tricks_to_get_peoples": {
+    "src_hash": "30aa0d5bee0e41253afba1e1fedcd836",
+    "text": "20 трикова за добијање народног новца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:52.423912Z"
+  },
+  "book.otbm.2_dont_be_late_for": {
+    "src_hash": "ad76df038f1054198aa4a295d40dc2b4",
+    "text": "2. Не касните на часове и тренинге.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:00.891700Z"
+  },
+  "book.otbm.2_floor_the_room_of": {
+    "src_hash": "2b9486c0596c58b4f7addc9ea8b7a6d1",
+    "text": "2. Спрат - Соба Пророчишта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:00.891959Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. Меласа ће се аутоматски екстраховати и дестиловати у рум",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:00.892271Z"
+  },
+  "book.otbm.2nd_floor_barnabas_dee_astronomer": {
+    "src_hash": "d71fa402f290bf9994eda7fc73808be3",
+    "text": "2. спрат: Барнабас Ди, астроном и __ПХ0__ учитељ чаролија.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:00.892748Z"
+  },
+  "book.otbm.2nd_floor_exquisite_jewellery": {
+    "src_hash": "46a7e585dbab0fe25bc731f569a5a7b3",
+    "text": "2. спрат: Изузетан накит",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:00.893009Z"
+  },
+  "book.otbm.2nd_floor_madame_faylas_music": {
+    "src_hash": "6fb6296d9b6d9246f8e9f5d9e5a10ff7",
+    "text": "2. спрат: Музичка комора Мадаме Фаила",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:08.323289Z"
+  },
+  "book.otbm.3789_gold_weapons_and_repairs": {
+    "src_hash": "09d42ec9bd3a03229363e3dd475e0f61",
+    "text": "3789 злата оружја и поправке",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:08.323633Z"
+  },
+  "book.otbm.3_discover_secret_entrance_to": {
+    "src_hash": "4e11b68dea1a42f22925d7964699f36e",
+    "text": "3. Откријте тајни улаз у ноћне море",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:08.323990Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Одржавајте своју опрему за тренинг у доброј форми.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:08.324378Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. Када се процес дестилације заврши, рум ће почети да сипа из машине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:08.324835Z"
+  },
+  "book.otbm.4000_gold_books_and_paper": {
+    "src_hash": "12aa92830e0d674b22e3b80f5e520546",
+    "text": "4000 златних књига и папира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:15.801133Z"
+  },
+  "book.otbm.4_exterminiate_the_ghouls_in": {
+    "src_hash": "b2ab977dc2790947663a26a210f9efbb",
+    "text": "4. Истребите духове у башти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:15.801488Z"
+  },
+  "book.otbm.4_no_running_in_the": {
+    "src_hash": "19a98caa510a0b8ad6eb41e9f99f9695",
+    "text": "4. Нема трчања у ходнику",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:15.801824Z"
+  },
+  "book.otbm.4_quickly_use_any_bottle": {
+    "src_hash": "5c1d55c8995e791da43817d448226c29",
+    "text": "4. Брзо употребите било коју флашу или шољу да сакупите рум",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:15.802305Z"
+  },
+  "book.otbm.5000_gold_runes_and_fluids": {
+    "src_hash": "0672360e8e6dcc8e6dc116b3ab6e3b58",
+    "text": "5000 златних руна и флуида",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:15.802625Z"
+  },
+  "book.otbm.5_no_eating_and_drinking": {
+    "src_hash": "84d1f2d9ae1c7c4891ff643961d03882",
+    "text": "5. Без јела и пића.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:23.538717Z"
+  },
+  "book.otbm.5_no_sigildrawing_on_the": {
+    "src_hash": "e829268d40ae27166494352f4d8d9e70",
+    "text": "5. Нема цртежа сигила на поду",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:23.539327Z"
+  },
+  "book.otbm.6_no_food_in_the": {
+    "src_hash": "00c6d0c7da6345e134203eaa56d8e033",
+    "text": "6. Нема хране у библиотеци",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:23.539870Z"
+  },
+  "book.otbm.6_return_borrowed_equipment_to": {
+    "src_hash": "e5c921bc1ac72b5edfbc9914930b8b48",
+    "text": "6. Вратите позајмљену опрему у оставу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:23.540513Z"
+  },
+  "book.otbm.7_no_scribbling_in_libraryowned": {
+    "src_hash": "f52764d2c16bdaa528ceeabad7968199",
+    "text": "7. Без шкрабања у документима у власништву библиотеке",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:23.541205Z"
+  },
+  "book.otbm.800_razoredge_matt_vs_bambam": {
+    "src_hash": "58492dfbcaefa6f71ae115846db25ab4",
+    "text": "8.00 Разоредге Матт против Бамбама Брутуса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:30.740026Z"
+  },
+  "book.otbm.8_books_and_scrolls_must": {
+    "src_hash": "8d0d902de3d94969d44bfb69da9b4b2d",
+    "text": "8. Књиге и свици морају бити враћени на тачно место одакле су узети",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:30.740505Z"
+  },
+  "book.otbm.900_mad_doc_vs_harpoon": {
+    "src_hash": "0850d195726d0ee609c08f3109170d8d",
+    "text": "9.00 Мад Доц. против Харпун Ангуса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:30.740850Z"
+  },
+  "book.otbm.9_no_library_document_to": {
+    "src_hash": "1c6c8d65024c711ee5524305c145989b",
+    "text": "9. Ниједан библиотечки документ не треба износити ван библиотечког подручја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:30.741296Z"
+  },
+  "book.otbm.a_city_only_for_serving": {
+    "src_hash": "ac1636229dbf36e9d335628c0577b42a",
+    "text": "Град само за један циљ: Истраживање магије у нашем свету __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:30.741831Z"
+  },
+  "book.otbm.a_crudely_scribbled_note": {
+    "src_hash": "e4e599255fc76eab5baab6aa9e8c4aa0",
+    "text": "(Грубо искрачкана белешка)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:39.383029Z"
+  },
+  "book.otbm.a_goblet_forged_by_the": {
+    "src_hash": "8b6673d0d466516b9a27d6990a52bff6",
+    "text": "Пехар који је исковао змај Кхак који представља сво знање и мудрост ТибијеВенецуеле.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:39.383595Z"
+  },
+  "book.otbm.a_low_nearly_always_fourleaved": {
+    "src_hash": "1e9a3bb8579f1329314bfa4cdf473e1f",
+    "text": "Ниска, скоро увек четворолисна биљка са жутим цветовима која расте у топлој клими. Некада је био главни извор хране за козе на континенту. Међутим, касније је откривено да има до сада потпуно непознато отровно дуготрајно дејство на животиње, па су све козе угинуле у року од два месеца.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:39.384719Z"
+  },
+  "book.otbm.a_map_of_several_known": {
+    "src_hash": "39f7c4fba141d7e1fb3b442da6b0da9e",
+    "text": "Мапа неколико познатих али и потпуно егзотичних локација.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:39.385138Z"
+  },
+  "book.otbm.a_number_of_marid_was": {
+    "src_hash": "b83daa8d7274930553d5baee01b558d1",
+    "text": "Један број Марида је ухваћен и заклан на лицу места, али на велико разочарање Малора, већина Габелових трупа успела је да побегне на југ у нечему што је изгледало као добро планирано стратешко повлачење. И колико је веће било његово изненађење када је открио да су Мариди побегли у град __ПХ0__ где су се очекивали! Тада је схватио да је Габел све време сумњао у превару и да је припремио контрастратегију. Малор је одмах наредио својим трупама да напусте потеру, али је било прекасно. Немртви су марширали против __ПХ1__ са свом одлучношћу безумне машине за убијање, а Ефрити, заслепљени бесом, нису заостајали, само да би их дочекали непрекидни удари стрела и катапултног камења. Уследила је катаклизмична битка.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:19:39.387846Z"
   }
 }

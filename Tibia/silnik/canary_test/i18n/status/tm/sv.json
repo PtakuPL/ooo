@@ -17686,5 +17686,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:16:48.075611Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "Jag gjorde det! Jag nådde kristallträdgårdarna! Vilken skönhet och prakt jag har sett där nere. Ännu mer: Jag upptäckte en liten underjordisk sjö – men Harry var där före mig. Och han gjorde något konstigt: Han ringde en liten, genomskinlig klocka och genast dök en stor virvel upp i vattnet. Jag antar att detta är den mystiska vägen djupare in i grottorna vi sökt efter så länge. Men Harry, fegisen, vågade inte dyka ner i vattnet. Istället lämnade han grottorna och gick tillbaka till ytan. Jag måste ha den här klockan!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:15.371776Z"
+  },
+  "book.dawnport.adventurers_guild_letter": {
+    "src_hash": "2b955455df5e1d1d0539717d3f21490c",
+    "text": "Modig äventyrare,\n\nÄventyrarnas Guild välkomnar dig som en ny hjälte i landet.\n\nTa den här äventyrarstenen och använd den i vilket stadstempel som helst för att omedelbart resa till vår guildhall. Om du någon gång skulle tappa din äventyrarsten kan du ersätta den genom att prata med en präst i templet.\nJag hoppas att du kommer att besöka oss snart.\n\nMed vänlig hälsning,\nRotem, chef för äventyrarnas Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:15.373179Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "SIDAN 2\nLord Koshei den Nyfikne\n-_-_-_-_-_-_-_-_-_-_-_-\nFödelsedatum: okänt\nÅlder: okänd\nHemstad: okänd\nDödsdatum: okänt\nDet är inte mycket känt om den här mannen. Han dök upp från ingenstans och bodde här i nästan tio år. Trots att han var kommunikativ berättade han aldrig något om sitt yrke eller vad han sysslade med. Först bodde han i Darashia 2, lägenhet 11 i ungefär två år. Under den tiden strövade han runt, reste i Daramas länder och besökte ofta Drömmarnas bad och minotaurpyramiden i norr.\nDå upptäcktes att han byggt ett torn söder om bergen. Det är oförklarat hur han lyckades göra det eftersom ingen har setts för att hjälpa honom. Hur som helst, resterna av hans torn finns kvar. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:15.375515Z"
+  },
+  "book.new_frontier.hidden_note": {
+    "src_hash": "9ceb31d90dfc2bd835acf14d81f53a52",
+    "text": "Gå till den hemliga dörren i norr",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:15.375872Z"
+  },
+  "book.otbm.1000_alchemical_uses_of_urine": {
+    "src_hash": "9c23d812ac32f7e41a0537b19e4c8678",
+    "text": "1000 alkemiska användningar av urin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:15.376178Z"
+  },
+  "book.otbm.1001_recipes_against_sweaty_hands": {
+    "src_hash": "8275b9995fc68e7998155dae59d10bb0",
+    "text": "1001 recept mot svettiga händer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:22.435566Z"
+  },
+  "book.otbm.1001_ways_to_use_energy": {
+    "src_hash": "5bd2f82c9a64857c3866a03b4062b621",
+    "text": "1001 sätt att använda energistrålar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:22.435888Z"
+  },
+  "book.otbm.100_gold_coins_equal_1": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 guldmynt motsvarar 1 platinamynt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:22.436204Z"
+  },
+  "book.otbm.100_gold_coins_equal_1_39c18279": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 guldmynt motsvarar 1 platinamynt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:22.436529Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 platinamynt motsvarar 1 kristallmynt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:28.633818Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1_648a8349": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 platinamynt motsvarar 1 kristallmynt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:28.634191Z"
+  },
+  "book.otbm.1_be_respectful_and_considerate": {
+    "src_hash": "a57d4f9c381d85d1d59ee58709244771",
+    "text": "1. Var respektfull och hänsynsfull mot dina kamrater.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:28.634570Z"
+  },
+  "book.otbm.1_discover_secret_of_necromants": {
+    "src_hash": "b262931a57ba6ca52d750f20308ade82",
+    "text": "1. Upptäck hemligheten bakom necromants nektar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:28.634903Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Lägg en massa sockerrör i maskinen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:28.635267Z"
+  },
+  "book.otbm.1st_floor_interior_design_take": {
+    "src_hash": "9fb4f14b9389b9a4981c5b9bd7cbb8a0",
+    "text": "1: a våningen: Inredning (ta hiss)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:34.477549Z"
+  },
+  "book.otbm.20_tricks_to_get_peoples": {
+    "src_hash": "30aa0d5bee0e41253afba1e1fedcd836",
+    "text": "20 knep för att få folks pengar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:34.478149Z"
+  },
+  "book.otbm.2_dont_be_late_for": {
+    "src_hash": "ad76df038f1054198aa4a295d40dc2b4",
+    "text": "2. Kom inte för sent till lektioner och träningspass.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:42.059574Z"
+  },
+  "book.otbm.2_floor_the_room_of": {
+    "src_hash": "2b9486c0596c58b4f7addc9ea8b7a6d1",
+    "text": "2. Golv - Oraklets rum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:42.059922Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. Melass extraheras automatiskt och destilleras till rom",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:42.060281Z"
+  },
+  "book.otbm.2nd_floor_exquisite_jewellery": {
+    "src_hash": "46a7e585dbab0fe25bc731f569a5a7b3",
+    "text": "2: a våningen: Utsökta smycken",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:42.060710Z"
+  },
+  "book.otbm.2nd_floor_madame_faylas_music": {
+    "src_hash": "6fb6296d9b6d9246f8e9f5d9e5a10ff7",
+    "text": "2:a våningen: Madame Faylas Musikkammare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:50.059352Z"
+  },
+  "book.otbm.3789_gold_weapons_and_repairs": {
+    "src_hash": "09d42ec9bd3a03229363e3dd475e0f61",
+    "text": "3789 guld vapen och reparationer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:50.059655Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Håll din träningsutrustning i god form.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:50.060103Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. När destilleringsprocessen är klar börjar rom rinna ut ur maskinen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:50.060523Z"
+  },
+  "book.otbm.4000_gold_books_and_paper": {
+    "src_hash": "12aa92830e0d674b22e3b80f5e520546",
+    "text": "4000 guldböcker och papper",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:56.427169Z"
+  },
+  "book.otbm.4_exterminiate_the_ghouls_in": {
+    "src_hash": "b2ab977dc2790947663a26a210f9efbb",
+    "text": "4. Utrota ghouls i trädgården",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:56.427505Z"
+  },
+  "book.otbm.4_no_running_in_the": {
+    "src_hash": "19a98caa510a0b8ad6eb41e9f99f9695",
+    "text": "4. Ingen spring i korridoren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:56.427787Z"
+  },
+  "book.otbm.4_quickly_use_any_bottle": {
+    "src_hash": "5c1d55c8995e791da43817d448226c29",
+    "text": "4. Använd snabbt valfri flaska eller kopp för att samla rommen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:56.428154Z"
+  },
+  "book.otbm.5000_gold_runes_and_fluids": {
+    "src_hash": "0672360e8e6dcc8e6dc116b3ab6e3b58",
+    "text": "5000 guldrunor och vätskor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:17:56.428436Z"
+  },
+  "book.otbm.5_no_eating_and_drinking": {
+    "src_hash": "84d1f2d9ae1c7c4891ff643961d03882",
+    "text": "5. Inget att äta och dricka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:04.603914Z"
+  },
+  "book.otbm.5_no_sigildrawing_on_the": {
+    "src_hash": "e829268d40ae27166494352f4d8d9e70",
+    "text": "5. Ingen sigil-ritning på golvet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:04.604278Z"
+  },
+  "book.otbm.6_no_food_in_the": {
+    "src_hash": "00c6d0c7da6345e134203eaa56d8e033",
+    "text": "6. Ingen mat på biblioteket",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:04.604571Z"
+  },
+  "book.otbm.6_return_borrowed_equipment_to": {
+    "src_hash": "e5c921bc1ac72b5edfbc9914930b8b48",
+    "text": "6. Lämna tillbaka lånad utrustning till förrådet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:04.604925Z"
+  },
+  "book.otbm.7_no_scribbling_in_libraryowned": {
+    "src_hash": "f52764d2c16bdaa528ceeabad7968199",
+    "text": "7. Ingen klottring i biblioteksägda dokument",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:04.605289Z"
+  },
+  "book.otbm.8_books_and_scrolls_must": {
+    "src_hash": "8d0d902de3d94969d44bfb69da9b4b2d",
+    "text": "8. Böcker och rullar måste återlämnas till exakt den plats de togs ifrån",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:12.432912Z"
+  },
+  "book.otbm.900_mad_doc_vs_harpoon": {
+    "src_hash": "0850d195726d0ee609c08f3109170d8d",
+    "text": "9.00 Mad Doc. vs. Harpun Angus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:12.433454Z"
+  },
+  "book.otbm.9_no_library_document_to": {
+    "src_hash": "1c6c8d65024c711ee5524305c145989b",
+    "text": "9. Inga bibliotekshandlingar får tas utanför bibliotekets område",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:12.433865Z"
+  },
+  "book.otbm.a_city_only_for_serving": {
+    "src_hash": "ac1636229dbf36e9d335628c0577b42a",
+    "text": "En stad endast för att tjäna ett mål: Utredningen av magin i vår värld Tibia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:12.434487Z"
+  },
+  "book.otbm.a_crudely_scribbled_note": {
+    "src_hash": "e4e599255fc76eab5baab6aa9e8c4aa0",
+    "text": "(En grovt klottrad lapp)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:19.955760Z"
+  },
+  "book.otbm.a_goblet_forged_by_the": {
+    "src_hash": "8b6673d0d466516b9a27d6990a52bff6",
+    "text": "En bägare smidd av draken Khax som representerar all kunskap och visdom från TibiaVenezuela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:19.956415Z"
+  },
+  "book.otbm.a_low_nearly_always_fourleaved": {
+    "src_hash": "1e9a3bb8579f1329314bfa4cdf473e1f",
+    "text": "En låg, nästan alltid fyrbladig växt med gula blommor som växer i varmt klimat. Det brukade vara den viktigaste källan till mat för getterna på kontinenten. Senare upptäcktes det dock att det hade en tidigare totalt okänd giftig långtidseffekt på djuren och alla getter dog inom två månader.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:19.957412Z"
+  },
+  "book.otbm.a_map_of_several_known": {
+    "src_hash": "39f7c4fba141d7e1fb3b442da6b0da9e",
+    "text": "En karta över flera kända såväl som helt exotiska platser.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:19.957799Z"
+  },
+  "book.otbm.a_number_of_marid_was": {
+    "src_hash": "b83daa8d7274930553d5baee01b558d1",
+    "text": "Ett antal Marid fångades och slaktades på plats, men till Malors stor besvikelse lyckades majoriteten av Gabels trupper fly söderut i vad som verkade vara ett välplanerat strategiskt tillbakadragande. Och hur mycket större var hans förvåning när han upptäckte att mariden flydde till staden Ankrahmun där de dök upp var väntade! Det var då han insåg att Gabel hade misstänkt ett knep hela tiden och att han hade förberett en motstrategi. Malor beordrade omedelbart sina trupper att överge förföljelsen, men det var för sent. De odöda marscherade mot Ankrahmun med all beslutsamhet av en sinneslös mördarmaskin, och Efreet, förblindad av raseri, släpade inte efter, bara för att mötas av ständiga störtfloder av pilar och katapultstenar. En katastrofal strid följde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:18:19.960165Z"
   }
 }

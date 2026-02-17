@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:12:44.905263Z"
+    "updated_at": "2026-02-17T03:56:41.950240Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147182,5 +147182,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:13:29.810755Z"
+  },
+  "spell.quara_looter_small_icering.words": {
+    "src_hash": "005fee865ace267139355aaa7c081005",
+    "text": "###quara_small_ice_ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:50.380108Z"
+  },
+  "spell.pixie_skill_reducer.name": {
+    "src_hash": "71e60467b185cf3e8e617997876dd7bc",
+    "text": "reductor de habilidades de duendecillo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:50.380393Z"
+  },
+  "spell.emerald_tortoise_small_explosion.name": {
+    "src_hash": "4eacc1d6a9cbd60afe311b07d4f6f586",
+    "text": "pequeña explosión de tortuga esmeralda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:50.380704Z"
+  },
+  "spell.gaz_functions.name": {
+    "src_hash": "5605eef2fe0b52b733a694d3e216630b",
+    "text": "Funciones de gas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:50.380914Z"
+  },
+  "spell.rotthing_explo.words": {
+    "src_hash": "0dd624fdfa2f5551fb845038aff057b8",
+    "text": "###rotth_explo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:56.052827Z"
+  },
+  "spell.extended_holy_chain.name": {
+    "src_hash": "74a88c76577a04e0125930e38bed9b34",
+    "text": "cadena sagrada extendida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:56.053521Z"
+  },
+  "spell.feverish_citizen_drunk.name": {
+    "src_hash": "adad448ef8f3c1f4f320aaa2cb41962a",
+    "text": "ciudadano febril borracho",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:56.053774Z"
+  },
+  "spell.rootkraken_rootearth.name": {
+    "src_hash": "bc82eb51e01eb57bb7061a1b20e2919f",
+    "text": "raízkrakendos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:56.054001Z"
+  },
+  "spell.lord_of_the_elements_summon.name": {
+    "src_hash": "8d47763892e8831dc63616aba012f475",
+    "text": "señor de los elementos convocar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:02.118163Z"
+  },
+  "spell.essence_of_darkness_curse.name": {
+    "src_hash": "d2b03f8260b3dbd6d4d27b63dbae9435",
+    "text": "esencia de la maldición de la oscuridad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:02.118985Z"
+  },
+  "spell.destroy_magic_walls.name": {
+    "src_hash": "d7c21885afde215137b712be77f50ff3",
+    "text": "destruir paredes mágicas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:02.119240Z"
+  },
+  "spell.ferumbras_soulfire.name": {
+    "src_hash": "072b0af64874c71dc92d45d4d054a9ba",
+    "text": "fuego del alma feumbras",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:02.119481Z"
+  },
+  "spell.ghoulish_hyaena_wave.name": {
+    "src_hash": "df3f54c12d82fa4cebabb3283bca80cf",
+    "text": "ola de hiena macabra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:07.701908Z"
+  },
+  "spell.rift_brood_electrify.name": {
+    "src_hash": "8a30162a5c76d0e9ac8716280a93b62b",
+    "text": "electrificar la cría del rift",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:07.702286Z"
+  },
+  "spell.large_holy_ring.name": {
+    "src_hash": "c8c06c22bed3ee6297e20f5b6e3e1c1c",
+    "text": "gran anillo sagrado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:07.702501Z"
+  },
+  "spell.large_holy_ring.words": {
+    "src_hash": "e6208d5775f272d425b4dcc0b071d929",
+    "text": "###anillo_sagrado_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:07.702726Z"
+  },
+  "spell.humongous_fungus_poison.name": {
+    "src_hash": "0afb8925058ee4caa3726571f89d82e0",
+    "text": "veneno de hongos gigantescos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:07.702980Z"
+  },
+  "spell.svoren_the_mad_paralyze.name": {
+    "src_hash": "b257fab7ad90f26a0832e4669a3f8979",
+    "text": "svoren el loco paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:14.016246Z"
+  },
+  "spell.mazoran_summon.name": {
+    "src_hash": "f5623c8ad0253babb715e7766eca8184",
+    "text": "invocación mazorana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:14.016483Z"
+  },
+  "spell.lloyd_wave2.name": {
+    "src_hash": "9319cdf302ce92d26abf3e5f15200fa6",
+    "text": "onda lloyd2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:14.016673Z"
+  },
+  "spell.death_barrage.name": {
+    "src_hash": "5c966071278517536372bf0aac55fb5d",
+    "text": "bombardeo de muerte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:14.016875Z"
+  },
+  "spell.ghastly_dragon_curse.name": {
+    "src_hash": "c0cd551b01231ad2c1062e531822065c",
+    "text": "maldición del dragón espantoso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:14.017143Z"
+  },
+  "spell.chakoya_freeze.name": {
+    "src_hash": "6a3672fa2fed124fcab322c87acddafb",
+    "text": "congelación de chakoya",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:19.146989Z"
+  },
+  "spell.charged_energy_elemental_electrify.name": {
+    "src_hash": "52e617f12e586b2391acd4b35d7971cd",
+    "text": "energía cargada elemental electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:19.147328Z"
+  },
+  "spell.bulltaur_forge_priest_explosion.name": {
+    "src_hash": "229abd63d940641bc7cd221f22b38f8f",
+    "text": "explosión de bulltauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:19.147574Z"
+  },
+  "spell.the_welter_paralyze.name": {
+    "src_hash": "60750769a747d24a9604cc88eecd3ffa",
+    "text": "el welter paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:19.147833Z"
+  },
+  "spell.emberbeasthur.name": {
+    "src_hash": "666dfabe7e2a9a5437bc86b436599089",
+    "text": "ascuaBestiaHur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:19.148034Z"
+  },
+  "spell.lost_thrower_skill_reducer.name": {
+    "src_hash": "b2a23e9e543a45fe2efc386768f3aec9",
+    "text": "reductor de habilidad del lanzador perdido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:22.765976Z"
+  },
+  "spell.diabolic_imp_skill_reducer.name": {
+    "src_hash": "012705c8713981bfe32096c65307542f",
+    "text": "reductor de habilidades diabólico diablillo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:22.766386Z"
+  },
+  "spell.hellgorak_skill_reducer.name": {
+    "src_hash": "6e3b641e2c90757a1e0246295e67ec27",
+    "text": "reductor de habilidades hellgorak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:57:22.766661Z"
   }
 }

@@ -83681,11 +83681,11 @@
   },
   "spell.abyssador_skill_reducer_2.name": {
     "src_hash": "eb7e0f68fbda730b28aebfca823d07ee",
-    "text": "abyssador skill reducer 2",
+    "text": "Reduktor umiejętności Otchłani 2",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:53.352995Z"
+    "updated_at": "2026-02-17T03:56:17.696225Z"
   },
   "spell.crystal_spider_paralyze_1.name": {
     "src_hash": "ce4f8708f2c6d7661a5bd76a3ba19c36",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:11:41.134042Z"
+    "updated_at": "2026-02-17T03:55:35.309648Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:11:41.135012Z"
+    "updated_at": "2026-02-17T03:55:35.310516Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -107918,5 +107918,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:50:24.387170Z"
+  },
+  "spell.hot_dog_wave.name": {
+    "src_hash": "20fdb2964c3594ee00fd31ad0027290f",
+    "text": "fala hot dogów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:46.799508Z"
+  },
+  "spell.koshei_the_deathless_paralyze.name": {
+    "src_hash": "41bf6b2cb644b110d5a823df13565ad9",
+    "text": "koshei, nieśmiertelny paraliż",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:46.799816Z"
+  },
+  "spell.sulphur_spouter_wave.name": {
+    "src_hash": "de2942d350583fcc4dcfebd4fbeac000",
+    "text": "fala tryskaczowa siarki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:46.800061Z"
+  },
+  "spell.ice_golem_paralyze.name": {
+    "src_hash": "ba213b5fb7f8abbca7991c23a5138906",
+    "text": "paraliż lodowego golema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:46.800312Z"
+  },
+  "spell.big_energy_purple_wave.name": {
+    "src_hash": "2d1ce561e76e38b0cc27b28a4f79ba86",
+    "text": "wielka energetyczna fioletowa fala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:54.126485Z"
+  },
+  "spell.unchained_fire_explosion.name": {
+    "src_hash": "0a894173ed0a68c4c533a9cd8a14a5f3",
+    "text": "niepohamowana eksplozja ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:54.126759Z"
+  },
+  "spell.essence_of_darkness_paralyze.name": {
+    "src_hash": "dcd22e299746b15b18bc703c84906f26",
+    "text": "paraliż spawnu o północy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:54.127048Z"
+  },
+  "spell.katex_blood_deatht.name": {
+    "src_hash": "373dec445d7bfbd98fbe7b1a696cfe65",
+    "text": "katex śmierć T",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:54.127294Z"
+  },
+  "spell.naga_death_wave.name": {
+    "src_hash": "3a83ee3d8bb7dc7e77c44436fec9296a",
+    "text": "nagadata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:55:54.127477Z"
+  },
+  "spell.rotthing_ulus.words": {
+    "src_hash": "02d84512ac358fe2002d7dd61e3103ee",
+    "text": "###rotth_ulus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:01.536134Z"
+  },
+  "spell.white_pale_heal.name": {
+    "src_hash": "273b5dbc34c4176d20de6c1db6b54086",
+    "text": "biały blady leczyć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:01.536415Z"
+  },
+  "spell.tyrn_heal.name": {
+    "src_hash": "826d7f0afa46a87e56c125b8831491ae",
+    "text": "tyrn leczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:01.536612Z"
+  },
+  "spell.large_red_ring.name": {
+    "src_hash": "21bf749d9f263cfac6ca2d184e6ccb93",
+    "text": "większy pierścień",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:01.536822Z"
+  },
+  "spell.reality_reaver_wave.name": {
+    "src_hash": "5b4559a20cf7ae89836f7bd7ea7a6351",
+    "text": "fala rozbójników rzeczywistości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:09.636488Z"
+  },
+  "spell.draken_abomination_summon.name": {
+    "src_hash": "c6f60989e73891bc4a1b8f9956daa536",
+    "text": "przywołanie drakowej obrzydliwości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:09.636798Z"
+  },
+  "spell.emperor_summon.name": {
+    "src_hash": "118a4676abb7a2a82fbc0feebe9c68fd",
+    "text": "wezwanie cesarza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:09.637037Z"
+  },
+  "spell.thul_summon.name": {
+    "src_hash": "11886482d8b8cfb928aedb947a4080b1",
+    "text": "to wezwanie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:09.637251Z"
+  },
+  "spell.big_death_wave.name": {
+    "src_hash": "508871291f7e2e40381033b05c3a4683",
+    "text": "wielka fala śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:09.637534Z"
+  },
+  "spell.twisted_shaper_ice.name": {
+    "src_hash": "979ad146458f7d69f8527cfac045ba42",
+    "text": "skręcony lód kształtujący",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:17.695694Z"
+  },
+  "spell.quara_plunderer_smoke.name": {
+    "src_hash": "3c7b85a1a752e6ef5b82d29f012d8ba8",
+    "text": "quarasmokeśmierć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:17.696470Z"
+  },
+  "spell.leaf_golem_paralyze.name": {
+    "src_hash": "dd18391e357ff09c8eb32f6a03069bc2",
+    "text": "Paraliż golema liściastego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:17.696890Z"
+  },
+  "spell.vampire_viscount_paralyze.name": {
+    "src_hash": "402d746d993b4fb595a1b313df19a2b3",
+    "text": "Paraliż wicehrabiego wampira",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:17.697322Z"
+  },
+  "spell.rot_elemental_paralyze.name": {
+    "src_hash": "c8194530e8035d77d5993fc4b4499474",
+    "text": "paraliż żywiołu gnicia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:25.667440Z"
+  },
+  "spell.rage_summon.name": {
+    "src_hash": "971a9a5b26c1de7a1cce786643528745",
+    "text": "wezwanie wściekłości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:25.667873Z"
+  },
+  "spell.carniphila_paralyze.name": {
+    "src_hash": "14f8270d56504cba3d2a5d5a02b52230",
+    "text": "carniphila paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:25.668369Z"
+  },
+  "spell.diabolic_imp_fireball.name": {
+    "src_hash": "98b557a21c6ba2d686a9f73f7a058bb7",
+    "text": "diaboliczna kula ognia impa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:25.668869Z"
+  },
+  "spell.fire_overlord_paralyze.name": {
+    "src_hash": "cdf3c5814189c40b4466ade6528b203f",
+    "text": "paraliż władcy ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:25.669354Z"
+  },
+  "spell.lancer_beetle_curse.name": {
+    "src_hash": "808d13080671b659a5bd68f8c2d84cca",
+    "text": "klątwa lancera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:31.358906Z"
+  },
+  "spell.horadron_paralyze.name": {
+    "src_hash": "710eb4f36bdf39ed6243c9e1ca7edff2",
+    "text": "paraliż horadronowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:31.359170Z"
+  },
+  "spell.azerus_summon_1.name": {
+    "src_hash": "b4c428e70799a6a103180bb570b50c3b",
+    "text": "Przywołanie Azerusa 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:56:31.359566Z"
   }
 }

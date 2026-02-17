@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-02-17T08:49:20.832089Z",
+  "timestamp": "2026-02-17T08:49:55.619086Z",
   "checked_entries": 100,
-  "issues_found": 38,
+  "issues_found": 39,
   "issues_by_type": {
-    "identical_to_en_exempt": 3,
+    "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "identical_to_en": 22,
-    "suspicious_log_high": 114,
-    "suspicious_log_critical": 28,
-    "suspicious_log_low": 58,
-    "suspicious_rejected_high": 12,
-    "suspicious_rejected_critical": 188
+    "identical_to_en": 23,
+    "suspicious_log_critical": 33,
+    "suspicious_log_high": 108,
+    "suspicious_log_low": 59,
+    "suspicious_rejected_critical": 191,
+    "suspicious_rejected_high": 9
   },
   "issues": [
     {
@@ -274,6 +274,13 @@
     },
     {
       "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "cpp.vocation.id_2",
       "lang": "pl",
       "type": "identical_to_en",
       "en": "Druid",

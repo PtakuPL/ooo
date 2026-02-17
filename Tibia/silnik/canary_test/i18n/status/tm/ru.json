@@ -24382,5 +24382,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:35:03.681976Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L22.1858": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Все песнопения пропеты в правильном порядке, вы признаны достойными. Вас переносят...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.513981Z"
+  },
+  "server.game.msg_1": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.537193Z"
+  },
+  "server.ioprey.msg_5": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Срок действия вашего бонуса за добычу истек.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.540700Z"
+  },
+  "server.spells.msg_1": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.543182Z"
+  },
+  "server.spells.msg_2": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.543501Z"
+  },
+  "src.creatures.combat.spells.L440.2421": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.544001Z"
+  },
+  "src.creatures.combat.spells.L51.2420": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.544307Z"
+  },
+  "src.game.game.L3458.2393": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Вас боятся.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:14.546162Z"
+  },
+  "data.otservbr.global.npc.anerui.L72.1488": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Аша Трази.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:20.508784Z"
   }
 }

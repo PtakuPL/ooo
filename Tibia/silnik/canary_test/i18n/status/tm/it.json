@@ -1609,19 +1609,19 @@
   },
   "data.otservbr.global.npc.a.ghostly.sage.L61.1104": {
     "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
-    "text": "Good bye.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Arrivederci.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.061966Z"
+    "updated_at": "2026-02-17T01:41:08.597157Z"
   },
   "data.otservbr.global.npc.a.ghostly.sage.L62.1105": {
     "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
-    "text": "Farewell then.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Addio allora.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T22:50:54.062308Z"
+    "updated_at": "2026-02-17T01:41:08.597371Z"
   },
   "data.otservbr.global.npc.a.restless.soul.L53.44": {
     "src_hash": "d2e1c2596114fc28d32071615889eea3",
@@ -35654,5 +35654,269 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T01:33:48.371974Z"
+  },
+  "data.otservbr.global.lib.functions.players.L64.1624": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Hai ricevuto un punto fama.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.461695Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L227.68": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Uhm uhm! Benvenuto, piccolo |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.485795Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L228.69": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Addio, piccolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.486148Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L12.1803": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "La chiave forgiata apre la porta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.702414Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L16.1804": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "La chiave forgiata apre la porta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.702800Z"
+  },
+  "data.otservbr.global.scripts.quests.hidden.threats.action.corym.works.doors.L8.1802": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "La chiave forgiata apre la porta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.703223Z"
+  },
+  "data.otservbr.global.scripts.quests.hunter.outfits.quest.action.all.hymn.piano.teleport.L10.2246": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "Non hai imparato tutti i versi dell'inno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.703634Z"
+  },
+  "data.otservbr.global.scripts.quests.koshei.the.deathless.quest.action.bag.L24.2260": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Hai trovato una borsa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.714643Z"
+  },
+  "data.otservbr.global.scripts.quests.koshei.the.deathless.quest.action.bag.L26.2261": {
+    "src_hash": "2c586d4717b2579a30746ae8e8b0e491",
+    "text": "La libreria è vuota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.715010Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.steal.from.thieves.L16.1925": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Hai trovato una borsa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.721277Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.action.reward.soul.war.L12.2079": {
+    "src_hash": "8dd6bdad28a27009f617c8b6206a0ba6",
+    "text": "Hai già ricevuto la tua ricompensa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.722641Z"
+  },
+  "data.otservbr.global.scripts.quests.soul.war.action.reward.soul.war.L17.2080": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Devi sconfiggere la megalomania di Goshnar per ricevere la tua ricompensa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.723210Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.arena.L62.2164": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Hai già finito questa battaglia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.737113Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.arena.L67.2165": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "L'arena è già in uso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.737490Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.hidden.note.L9.2170": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Hai trovato un pezzo di carta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.737859Z"
+  },
+  "data.otservbr.global.scripts.quests.wrath.of.the.emperor.actions.mission11.payback.time.lever.L19.1648": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "L'arena è già in uso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.755449Z"
+  },
+  "server.ioprey.msg_11": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Questa creatura è già selezionata in un altro slot.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.763704Z"
+  },
+  "server.ioprey.msg_13": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "Non hai nessun mostro attivo in questo slot preda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.764329Z"
+  },
+  "server.ioprey.msg_20": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "Si è verificato un errore durante l'elaborazione della tua azione. Prova a riaprire la finestra delle attività.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.765793Z"
+  },
+  "server.ioprey.msg_21": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "Hai già un mostro attivo in questo slot di caccia all'attività.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.766376Z"
+  },
+  "server.ioprey.msg_23": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Non puoi richiedere la ricompensa del tuo compito con uno slot di ricerca compito vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.766914Z"
+  },
+  "server.ioprey.msg_5": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Il tuo bonus preda è scaduto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.767759Z"
+  },
+  "server.ioprey.msg_9": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "Hai già un mostro attivo in questo slot preda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.768479Z"
+  },
+  "server.player.msg_4": {
+    "src_hash": "c146a7a0111bb1882a378b49d0126587",
+    "text": "Sei morto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.769466Z"
+  },
+  "server.spells.msg_1": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.771063Z"
+  },
+  "server.spells.msg_2": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.771413Z"
+  },
+  "src.creatures.combat.spells.L440.2421": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.771889Z"
+  },
+  "src.creatures.combat.spells.L51.2420": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.772184Z"
+  },
+  "src.creatures.players.player.L3908.2425": {
+    "src_hash": "c146a7a0111bb1882a378b49d0126587",
+    "text": "Sei morto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.773532Z"
+  },
+  "src.game.game.L3458.2393": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.773988Z"
+  },
+  "src.game.game.L5991.2394": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Non esiste un giocatore con questo nome.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:05.774521Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L53.151": {
+    "src_hash": "2fc7a525e31eda3303400c01ce672cf3",
+    "text": "Saluti, {wayfarer}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:08.597749Z"
+  },
+  "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Ti saluto, umano. Questo è un momento di angoscia, più che mai abbiamo bisogno di tutori che proteggano noi e il nostro mondo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:41:10.313903Z"
   }
 }

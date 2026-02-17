@@ -169470,5 +169470,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T03:38:56.614361Z"
+  },
+  "data.otservbr.global.npc.turvy.L61.375": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Наравно, само прегледајте моје понуде.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:22.723776Z"
+  },
+  "data.otservbr.global.npc.battlemart.L66.1362": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Врати се ускоро!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:45.305864Z"
   }
 }

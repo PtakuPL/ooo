@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:20:35.596136Z"
+    "updated_at": "2026-02-17T04:05:51.458318Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -22822,5 +22822,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:55:07.839945Z"
+  },
+  "data.otservbr.global.npc.charlotta.L87.903": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:49.916624Z"
+  },
+  "data.otservbr.global.npc.eleonore.L147.245": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:49.930399Z"
+  },
+  "data.otservbr.global.npc.mazarius.L191.564": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:49.995911Z"
+  },
+  "data.otservbr.global.npc.ocelus.L109.834": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:50.009981Z"
+  },
+  "data.otservbr.global.npc.raymond.striker.L219.359": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:50.025114Z"
+  },
+  "data.otservbr.global.npc.sebastian.L118.1350": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:50.034038Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L70.1111": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:05:50.035024Z"
+  },
+  "data.otservbr.global.npc.carlos.L241.1099": {
+    "src_hash": "e4f61d081116f4ed5def9cd059b7a2db",
+    "text": "Mycket trevligt! Mat till mig! Sälj den till mig, snabbt! När du sålt din mat till mig, säg bara {ready} för att meddela mig att du är klar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:10.792343Z"
+  },
+  "data.otservbr.global.npc.carlos.L242.1100": {
+    "src_hash": "fe8bd25553d214db746585b95ed951c0",
+    "text": "Hejdå |PLAYERNAME|!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:10.792658Z"
+  },
+  "data.otservbr.global.npc.carlos.L243.1101": {
+    "src_hash": "fa803dcd4286a1cfa0ba0dfa80ecf665",
+    "text": "Hej då resenären och njut av din vistelse på Rookgaard.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:10.793214Z"
+  },
+  "data.otservbr.global.npc.carlos.L86.1089": {
+    "src_hash": "05a5c1002ce95a1bde590459ed3aa2b9",
+    "text": "Var hälsad, |PLAYERNAME|! Som skräddare och handlare måste jag säga - vi måste göra något åt ​​din {outfit}, eller hur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:10.793872Z"
+  },
+  "data.otservbr.global.npc.carlos.L91.1090": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Hej, jag trodde att du skulle fly, men som tur var kom du tillbaka. Jag ska visa dig hur du ändrar din {outfit}, okej?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:18.608410Z"
+  },
+  "data.otservbr.global.npc.carlos.L94.1091": {
+    "src_hash": "f98802d766209a9cc89953b431e09fa3",
+    "text": "Välkommen tillbaka! Du vet, efter att ha tillhandahållit min lilla outfitservice, vill jag be dig om en liten tjänst. Kan du {help} mig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:18.608991Z"
+  },
+  "data.otservbr.global.npc.carlos.L97.1092": {
+    "src_hash": "e6084bbea0ff0bc4c2373fba3e197ec2",
+    "text": "Åh hej |PLAYERNAME|, du har inte svarat på min fråga ännu - kan du hjälpa mig att få lite {food}? Jag ska till och med ge dig lite guld för det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:06:18.609596Z"
   }
 }

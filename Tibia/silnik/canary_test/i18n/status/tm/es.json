@@ -36921,11 +36921,11 @@
   },
   "npc.suzy.farewell_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
+    "text": "Que tenga un lindo día.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:12:13.984287Z"
+    "updated_at": "2026-02-17T06:46:00.426955Z"
   },
   "npc.suzy.greet_msg_1": {
     "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
@@ -36937,11 +36937,11 @@
   },
   "npc.suzy.walkaway_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
+    "text": "Que tenga un lindo día.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:12:13.986527Z"
+    "updated_at": "2026-02-17T06:46:00.430406Z"
   },
   "npc.svenson.say_3": {
     "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
@@ -148518,5 +148518,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:42:52.215804Z"
+  },
+  "npc.elyen_ravenlock.voice_2": {
+    "src_hash": "9553d10f17158ece7c9c4b2e8cb4a40b",
+    "text": "<cánticos> Re Ha, Omrah, Tan Ra...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:53.944636Z"
+  },
+  "npc.simon_the_beggar.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.183819Z"
+  },
+  "npc.sinclair.farewell_msg_1": {
+    "src_hash": "f3043351b3aadbaa3257740cac636ec2",
+    "text": "Adiós y buena suerte |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.188060Z"
+  },
+  "npc.sinclair.greet_msg_1": {
+    "src_hash": "6cd64f0b0ec939fcd99a1931bafd6c92",
+    "text": "Saludos |PLAYERNAME|. Tengo muy poco tiempo, por favor que sea lo más breve posible. Es posible que pueda ayudarte si estás aquí para ayudarnos con cualquiera de nuestras tareas o misiones.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.190766Z"
+  },
+  "npc.sinclair.walkaway_msg_1": {
+    "src_hash": "f3043351b3aadbaa3257740cac636ec2",
+    "text": "Adiós y buena suerte |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.210954Z"
+  },
+  "npc.sissek.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.212645Z"
+  },
+  "npc.sissek.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.215593Z"
+  },
+  "npc.sister_of_jack.greet_msg_1": {
+    "src_hash": "1daf3b249f5443eaba3c123abefc09ff",
+    "text": "Hola, hola. ¿Qué puedo hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.217277Z"
+  },
+  "npc.skjaar.farewell_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "¡Adiós, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.225996Z"
+  },
+  "npc.skjaar.greet_msg_1": {
+    "src_hash": "e1205cba238fdb754eccb92db41e9abd",
+    "text": "¡Otra criatura que cree piensa que la fuerza física es más importante que la sabiduría! ¿Por qué me molestas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.228069Z"
+  },
+  "npc.skjaar.walkaway_msg_1": {
+    "src_hash": "5a674ac76d33c00d52f3fdb695a99fec",
+    "text": "¡Huye, indigno |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.235302Z"
+  },
+  "npc.spectulus.farewell_msg_1": {
+    "src_hash": "91d8e82d0d5a128b69d93a5982e05d21",
+    "text": "Si si. Adiós |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.238377Z"
+  },
+  "npc.spectulus.greet_msg_1": {
+    "src_hash": "db8eead45e10adda769690cf1b7655be",
+    "text": "¡Hola |PLAYERNAME|! Llegas tarde, ¿no tienes noción del tiempo? Mi misión es de suma importancia. Si no estás interesado en ayudarme, es mejor que te vayas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.240679Z"
+  },
+  "npc.spectulus.greet_msg_2": {
+    "src_hash": "e9554e37128bd8214914e8e66e4f8348",
+    "text": "Ah hola de nuevo |PLAYERNAME|! Todavía tengo uno o dos {missions} más para ti. También hay algunos {tasks} que alguien debe atender.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.242753Z"
+  },
+  "npc.spectulus.greet_msg_3": {
+    "src_hash": "db8eead45e10adda769690cf1b7655be",
+    "text": "¡Hola |PLAYERNAME|! Llegas tarde, ¿no tienes noción del tiempo? Mi misión es de suma importancia. Si no estás interesado en ayudarme, es mejor que te vayas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.244931Z"
+  },
+  "npc.spectulus.walkaway_msg_1": {
+    "src_hash": "91d8e82d0d5a128b69d93a5982e05d21",
+    "text": "Si si. Adiós |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.340067Z"
+  },
+  "npc.stricken_soul.greet_msg_1": {
+    "src_hash": "1c68abdd495f6ce7e482e327421db37d",
+    "text": "Este lugar está... embrujado... presta atención a mi advertencia... ¡hay... fantasmas aquí...! ¿Por qué me das esa... mirada? Estoy seguro de que aquí hay fantasmas, ¡los he visto! ¿Me crees?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.406041Z"
+  },
+  "npc.stricken_soul.greet_msg_2": {
+    "src_hash": "816188ec9a22f2c53c3f22218ec136d6",
+    "text": "Saludos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.407417Z"
+  },
+  "npc.stutch.greet_1": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "¡VELA AL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.417260Z"
+  },
+  "npc.stutch.greet_2": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "¡VELA AL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.418741Z"
+  },
+  "npc.stutch.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "¡VIVA EL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.423192Z"
+  },
+  "npc.swolt.sendtrade_msg_1": {
+    "src_hash": "bd189312e61b7667eea2caaa7c670f46",
+    "text": "Echa un vistazo, pero ni un sorbo antes de pagar. Y espero que siga así y no se te ocurra ninguna idea extraña sobre {rice}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.455136Z"
+  },
+  "npc.taegen.greet_msg_1": {
+    "src_hash": "1f4f5eb826b5ddde0b30ba27aef07a0e",
+    "text": "¡Sea saludado, ser mortal!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.458654Z"
+  },
+  "npc.taegen.sendtrade_msg_1": {
+    "src_hash": "36626fc012d4ac55c402211f05ece718",
+    "text": "Estoy tallando pernos y flechas y también fabrico arcos y lanzas. Si quieres comprar municiones, echa un vistazo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.471714Z"
+  },
+  "npc.talila.greet_msg_1": {
+    "src_hash": "082c00cf1e81617e19c4a40c249dea54",
+    "text": "Saludos, comienzo mortal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:46:00.476546Z"
   }
 }

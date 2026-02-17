@@ -1,74 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:44:13.440217Z",
+  "timestamp": "2026-02-17T06:46:01.277579Z",
   "language": "es",
   "json_file": "npc.json",
-  "translated": 11,
+  "translated": 51,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
-      "source": "tm"
+      "key": "npc.sister_of_jack.greet_msg_1",
+      "en": "Mh hello there. What can I do for you?",
+      "translated": "Hola, hola. ¿Qué puedo hacer por ti?",
+      "source": "simple"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "npc.skjaar.farewell_msg_1",
+      "en": "Farewell, |PLAYERNAME|!",
+      "translated": "¡Adiós, |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "npc.skjaar.greet_msg_1",
+      "en": "Another creature who believes thinks physical strength is more important than wisdom! Why are you disturbing me?",
+      "translated": "¡Otra criatura que cree piensa que la fuerza física es más importante que la sabiduría! ¿Por qué me molestas?",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "npc.skjaar.walkaway_msg_1",
+      "en": "Run away, unworthy |PLAYERNAME|!",
+      "translated": "¡Huye, indigno |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "npc.spectulus.farewell_msg_1",
+      "en": "Yes yes. Goodbye |PLAYERNAME|.",
+      "translated": "Si si. Adiós |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "npc.spectulus.greet_msg_1",
+      "en": "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.",
+      "translated": "¡Hola |PLAYERNAME|! Llegas tarde, ¿no tienes noción del tiempo? Mi misión es de suma importancia. Si no estás interesado en ayudarme, es mejor que te vayas.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "npc.spectulus.greet_msg_2",
+      "en": "Ah hello again |PLAYERNAME|! I still have one or two other {missions} for you. There are also some {tasks} someone needs to attend to.",
+      "translated": "Ah hola de nuevo |PLAYERNAME|! Todavía tengo uno o dos {missions} más para ti. También hay algunos {tasks} que alguien debe atender.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "npc.spectulus.greet_msg_3",
+      "en": "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.",
+      "translated": "¡Hola |PLAYERNAME|! Llegas tarde, ¿no tienes noción del tiempo? Mi misión es de suma importancia. Si no estás interesado en ayudarme, es mejor que te vayas.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "npc.spectulus.walkaway_msg_1",
+      "en": "Yes yes. Goodbye |PLAYERNAME|.",
+      "translated": "Si si. Adiós |PLAYERNAME|.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "npc.stricken_soul.greet_msg_1",
+      "en": "This place is... haunted... heed my warning... there are... ghooooooosts here...! Why are you giving me that... look? I am certain, there aaaaaaare ghosts here - I've seen them! Do you believe me?",
+      "translated": "Este lugar está... embrujado... presta atención a mi advertencia... ¡hay... fantasmas aquí...! ¿Por qué me das esa... mirada? Estoy seguro de que aquí hay fantasmas, ¡los he visto! ¿Me crees?",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "npc.stricken_soul.greet_msg_2",
+      "en": "Gree... tings.",
+      "translated": "Saludos.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.stutch.greet_1",
+      "en": "HAIL TO THE KING!",
+      "translated": "¡VELA AL REY!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.stutch.greet_2",
+      "en": "HAIL TO THE KING!",
+      "translated": "¡VELA AL REY!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.stutch.walkaway_msg_1",
+      "en": "LONG LIVE THE KING!",
+      "translated": "¡VIVA EL REY!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.suzy.farewell_msg_1",
+      "en": "Have a nice day.",
+      "translated": "Que tenga un lindo día.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.suzy.walkaway_msg_1",
+      "en": "Have a nice day.",
+      "translated": "Que tenga un lindo día.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.swolt.sendtrade_msg_1",
+      "en": "Take a look, but not a sip before you've paid. And I hope it stays like this and you don't get any strange ideas about {rice}.",
+      "translated": "Echa un vistazo, pero ni un sorbo antes de pagar. Y espero que siga así y no se te ocurra ninguna idea extraña sobre {rice}.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.taegen.greet_msg_1",
+      "en": "Be greeted, mortal being!",
+      "translated": "¡Sea saludado, ser mortal!",
+      "source": "simple"
+    },
+    {
+      "key": "npc.taegen.sendtrade_msg_1",
+      "en": "Im carving bolts and arrows and i also craft bows anda spears.If you'd like to buy some ammunition, take a look.",
+      "translated": "Estoy tallando pernos y flechas y también fabrico arcos y lanzas. Si quieres comprar municiones, echa un vistazo.",
+      "source": "simple"
+    },
+    {
+      "key": "npc.talila.greet_msg_1",
+      "en": "Greatings, mortal beigin.",
+      "translated": "Saludos, comienzo mortal.",
+      "source": "simple"
     }
   ]
 }

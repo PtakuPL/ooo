@@ -49030,5 +49030,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:38:49.478898Z"
+  },
+  "scripts.die.rolled": {
+    "src_hash": "e758b89579865248b8c281b6e16e0b1e",
+    "text": "{0} a rulat un {1}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:44:55.774251Z"
+  },
+  "scripts.actions_levers.say_5": {
+    "src_hash": "fd1e2df001387e5e5932944e67052942",
+    "text": "Pârghia finală nu se va mișca... încă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:03.437959Z"
+  },
+  "scripts.actions_lions_rock.msg_1": {
+    "src_hash": "7528d5b2e49b4966056db66c9e5bcc15",
+    "text": "Ai găsit o floare de coamă de leu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:03.438535Z"
+  },
+  "scripts.actions_lions_rock.msg_2": {
+    "src_hash": "a85e13a5a5e9d4915e8dcda2f52d7075",
+    "text": "Ai găsit apă sfințită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:03.439014Z"
+  },
+  "scripts.actions_lions_rock.msg_3": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:03.439523Z"
+  },
+  "scripts.actions_lions_rock.msg_4": {
+    "src_hash": "290a51db9ab2d0473ef75aa9d58a869d",
+    "text": "Fântâna este goală.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:06.367273Z"
+  },
+  "scripts.actions_lions_rock.msg_5": {
+    "src_hash": "13d72ea84fe15776cde8a8c18ed8eb30",
+    "text": "Ai sacrificat o limbă de cobra la o statuie antică. Lumina din mica piramidă din apropiere începe să strălucească.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:06.368977Z"
+  },
+  "scripts.actions_lions_rock.msg_6": {
+    "src_hash": "fb6158583196b5d5044c23674a7b68fb",
+    "text": "Ai ars o floare de coamă de leu. Lumina din mica piramidă din apropiere începe să strălucească.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:06.370622Z"
+  },
+  "scripts.actions_lions_rock.msg_7": {
+    "src_hash": "e358843eb8856d9bdeba6f2517c2f61d",
+    "text": "Ai purificat un piedestal sacru cu apă sfințită. Acum ați trecut ultimul test pentru a intra în sanctul interior.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:06.372408Z"
+  },
+  "scripts.actions_lord_of_elements_lever.say_1": {
+    "src_hash": "e7bba1ba9a8a9d0894219a467d2ca8a9",
+    "text": "Aveți la dispoziție 10 minute de acum înainte până când veți fi teleportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:06.373683Z"
+  },
+  "scripts.actions_lord_of_elements_lever.say_3": {
+    "src_hash": "e08776a5a16745ba8f07b658dca06c47",
+    "text": "Ai la dispoziție 5 minute de acum înainte până când vei fi teleportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:10.464910Z"
+  },
+  "scripts.actions_lost_time.msg_1": {
+    "src_hash": "e765991be3e63a9ff069546c348d7240",
+    "text": "Pierdetorul de timp consumă cu foame timpul și dispare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:10.466162Z"
+  },
+  "scripts.actions_lyre.msg_1": {
+    "src_hash": "5f4ad7bede9a628e2470894a6895cab4",
+    "text": "Ai găsit Lyre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:10.466943Z"
+  },
+  "scripts.actions_lyre.msg_2": {
+    "src_hash": "7c5623cfc2f732af0abd9b62f218f05a",
+    "text": "Geanta nu poate fi deschisă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:10.468385Z"
+  },
+  "scripts.actions_machines_deep_terror.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n Masina functioneaza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:10.470906Z"
+  },
+  "scripts.actions_machines_deep_terror.say_2": {
+    "src_hash": "2b05d281348ab8cd50c8a05f2fe3265d",
+    "text": "Toate mașinile funcționează, acum este posibil să utilizați teleportarea la est.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:13.428535Z"
+  },
+  "scripts.actions_machines_deep_terror.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Este imposibil să pornești această mașină deocamdată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:13.429154Z"
+  },
+  "scripts.actions_machines_glooth_horror.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n Masina functioneaza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:13.429686Z"
+  },
+  "scripts.actions_machines_glooth_horror.say_2": {
+    "src_hash": "27c439e5b6bf85b03f9a36726abe5623",
+    "text": "Toate mașinile funcționează, acum este posibil să utilizați teleportul la vest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:13.430448Z"
+  },
+  "scripts.actions_machines_glooth_horror.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Este imposibil să pornești această mașină deocamdată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:13.431014Z"
+  },
+  "scripts.actions_machines_lava.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n Masina functioneaza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:16.259281Z"
+  },
+  "scripts.actions_machines_lava.say_2": {
+    "src_hash": "27c439e5b6bf85b03f9a36726abe5623",
+    "text": "Toate mașinile funcționează, acum este posibil să utilizați teleportul la vest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:16.259970Z"
+  },
+  "scripts.actions_machines_lava.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Este imposibil să pornești această mașină deocamdată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:16.260514Z"
+  },
+  "scripts.actions_machines_professor_maxxen.say_1": {
+    "src_hash": "772de46981aae022c9b662d71e069372",
+    "text": "~Zzzz~\n Masina functioneaza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:16.260922Z"
+  },
+  "scripts.actions_machines_professor_maxxen.say_2": {
+    "src_hash": "2b05d281348ab8cd50c8a05f2fe3265d",
+    "text": "Toate mașinile funcționează, acum este posibil să utilizați teleportarea la est.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:16.261549Z"
+  },
+  "scripts.actions_machines_professor_maxxen.say_3": {
+    "src_hash": "2b3117ea2cb30ae6a6fc73a7911f87b0",
+    "text": "Este imposibil să pornești această mașină deocamdată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:19.195028Z"
+  },
+  "scripts.actions_magicalPaint.msg_1": {
+    "src_hash": "f895fc31c4c101ca64377c59aea81108",
+    "text": "Pictezi cu grijă peste imagine. Pe măsură ce faci asta, pictura plată se adâncește. Acum arată ca o cameră în care poți intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:19.196633Z"
+  },
+  "scripts.actions_magicalPaint.msg_2": {
+    "src_hash": "43ea929b13e66da7b49c83f9670973a2",
+    "text": "Acesta nu mai este o lucrare normală. Folosind vopsea magică, l-ați transformat într-un portal și îl puteți trece cu ușurință.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:19.198245Z"
+  },
+  "scripts.actions_magical_device.say_1": {
+    "src_hash": "984ee72f67b6223829be203a5e6cbae9",
+    "text": "Pe măsură ce deschideți dispozitivul, o lumină strălucitoare se revarsă din interiorul său și trage toată energia rămasă a urmăritorului de noapte în el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:19.200055Z"
+  },
+  "scripts.actions_magical_device.say_2": {
+    "src_hash": "68b6485e08c181e70a5122698ef79490",
+    "text": "Pe măsură ce deschideți dispozitivul, o lumină strălucitoare se revarsă din interiorul său și trage toată energia rămasă a sufletului în el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:19.201834Z"
+  },
+  "scripts.actions_magical_device.say_3": {
+    "src_hash": "fcc3321a23474015d8e5e8cee39f3625",
+    "text": "Pe măsură ce deschideți dispozitivul, o lumină strălucitoare se revarsă din interiorul său și trage toată energia rămasă a fantomei în el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:21.982540Z"
+  },
+  "scripts.actions_magical_device.say_4": {
+    "src_hash": "2e5318b4d48c0c6bf446611812a05ea8",
+    "text": "Ați folosit articole în piatra funerară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:21.983116Z"
+  },
+  "scripts.actions_magical_device.say_5": {
+    "src_hash": "f82653d1aff74d63250a446bac0cea89",
+    "text": "Din fiecare crăpătură din vechea piatră funerară se scurge o substanță incredibil de lipicioasă. Se pare că te atacă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:21.983886Z"
+  },
+  "scripts.actions_magnifier.msg_1": {
+    "src_hash": "babb8f6619bceca2d20d80e35dbedf4e",
+    "text": "Nimic special. Această imagine pare autentică.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:21.984523Z"
+  },
+  "scripts.actions_magnifier.msg_2": {
+    "src_hash": "b5d561af2c0da7158e0a87633ace58c1",
+    "text": "Asta este. Se pare că a fost pictat de un copil!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:21.985111Z"
+  },
+  "scripts.actions_matrix.say_1": {
+    "src_hash": "16ab3fd4a5717284b0a1a436340f28c9",
+    "text": "Aparatul a fost activat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:45:23.746694Z"
   }
 }

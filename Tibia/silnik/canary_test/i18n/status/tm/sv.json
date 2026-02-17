@@ -16774,5 +16774,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:01:01.956015Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "odöda gycklare förlama",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:34.423192Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "målskjutning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:34.423408Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "efterskalvvåg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:37.053684Z"
+  },
+  "spell.dreadwing_curse.name": {
+    "src_hash": "6f04ff2059a60aa01e208e0cebc1bd2d",
+    "text": "dreadwing förbannelse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:37.054001Z"
+  },
+  "spell.betrayed_wraith_skill_reducer.name": {
+    "src_hash": "333a2e1af1ddefe52520f8f2978a203f",
+    "text": "förrådd wraith skicklighet reducerare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:37.054328Z"
+  },
+  "spell.minotaur_amazon_paralyze.name": {
+    "src_hash": "c88f3b8928239a36ce90d56a34ff900d",
+    "text": "minotaur amazon förlama",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:39.717172Z"
+  },
+  "spell.twins_skill_reducer.name": {
+    "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
+    "text": "tvillingar skicklighet reducerare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:39.717448Z"
+  },
+  "spell.zushuka_freeze.name": {
+    "src_hash": "0b3f7c6071b0c23cbf33729be65920ca",
+    "text": "frysa zushuka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:39.717653Z"
+  },
+  "spell.blood_hand_paralyze.name": {
+    "src_hash": "d43d4107cf3c8ca13e2be5930ceb3c29",
+    "text": "blod hand förlama",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:39.717894Z"
+  },
+  "spell.ravennouslavalurkertarget.name": {
+    "src_hash": "497e978a910324bd53a6e584b83ff9a1",
+    "text": "ravennousLavaLurkerTarget",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:43.392370Z"
+  },
+  "spell.thorn_summon.name": {
+    "src_hash": "ec458d283e18e30ee3b8efe406f99559",
+    "text": "tagg kallelse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:43.392590Z"
+  },
+  "spell.big_energy_wave.name": {
+    "src_hash": "7d20925ed4e9434e30ad5f22892439a2",
+    "text": "stor energivåg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:43.392809Z"
+  },
+  "spell.furyosa_deathball.name": {
+    "src_hash": "daf7bc73713b5f8d891c98d697d4bdf1",
+    "text": "Furyosa Dödsboll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:43.393201Z"
+  },
+  "spell.summonchallenge.name": {
+    "src_hash": "7f863ba4a43ed7de3e35f58e2d2fb773",
+    "text": "kalla på utmaning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:43.393543Z"
+  },
+  "spell.large_fire_ring.name": {
+    "src_hash": "5394e9c93b2017a67c7621e8a265436e",
+    "text": "storeldning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:45.963784Z"
+  },
+  "spell.dipthrah_skill_reducer.name": {
+    "src_hash": "2f1fcdbc32e97fcd940c1ea28020aa45",
+    "text": "diphthrah färdighetsreducerare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:45.964071Z"
+  },
+  "spell.lizard_magistratus_curse.name": {
+    "src_hash": "84b35dc62577dc99d6c038c476121a34",
+    "text": "ödla magistratus förbannelse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:45.965376Z"
+  },
+  "spell.heal_brain_head.name": {
+    "src_hash": "16798f54286e3470100eb9fa2eed3fe7",
+    "text": "läka hjärnhuvudet",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:48.567585Z"
+  },
+  "spell.earth_barrage.name": {
+    "src_hash": "5d6ae1b9885ff1aeebc09563b3e1712e",
+    "text": "jordspärr",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:48.567808Z"
+  },
+  "spell.glooth_battery_heal.name": {
+    "src_hash": "b616ae108a81f934e3a49de7ff7f8870",
+    "text": "glooth batteri läka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:48.568052Z"
+  },
+  "spell.ghastly_dragon_wave.name": {
+    "src_hash": "736938e9e7c9c4ab8e28acfd7fa73cdc",
+    "text": "hemska drakvåg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:48.568281Z"
+  },
+  "spell.devourer_summon.name": {
+    "src_hash": "9755d669726bf618c72329d71dcc7a47",
+    "text": "slukar kallelse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:50.720549Z"
+  },
+  "spell.pythius_the_rotten_summon.name": {
+    "src_hash": "81accc32310a4b6f61930206e170c39b",
+    "text": "pythius den ruttna kallelsen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:10:50.721349Z"
   }
 }

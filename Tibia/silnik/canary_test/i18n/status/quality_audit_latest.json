@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-02-17T00:10:05.041670Z",
+  "timestamp": "2026-02-17T00:11:00.189802Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 9,
   "issues_by_type": {
     "identical_to_en_exempt": 12,
-    "identical_to_en": 1,
+    "identical_to_en": 2,
     "artifact_token": 7,
-    "suspicious_log_high": 137,
-    "suspicious_log_low": 16,
+    "suspicious_log_high": 136,
+    "suspicious_log_low": 17,
     "suspicious_log_critical": 47,
-    "suspicious_rejected_high": 36,
-    "suspicious_rejected_critical": 164
+    "suspicious_rejected_critical": 170,
+    "suspicious_rejected_high": 30
   },
   "issues": [
     {
@@ -68,6 +68,13 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "spell.ravennouslavalurkertarget.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "ravennousLavaLurkerTarget",
+      "translated": "ravennousLavaLurkerTarget"
     }
   ],
   "threshold": 10,

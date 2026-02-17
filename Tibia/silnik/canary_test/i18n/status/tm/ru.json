@@ -31430,5 +31430,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:29:28.116168Z"
+  },
+  "cpp.forge.increase_dust_limit": {
+    "src_hash": "f8c3afbe06a4bb640af404f139849ccc",
+    "text": "Потратили {0} пыли, чтобы увеличить лимит пыли до {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:11.063138Z"
+  },
+  "cpp.forge.slivers_to_cores": {
+    "src_hash": "6c0edfce562f088b10405b6b95542d85",
+    "text": "Осколки {0} преобразованы в возвышенное ядро ​​{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:11.063554Z"
+  },
+  "cpp.forge.unsuccessful": {
+    "src_hash": "500ada6743997288e65fb5a71e850928",
+    "text": "Неудачный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:11.063777Z"
+  },
+  "cpp.game.already_in_party": {
+    "src_hash": "9ad56a3ee470f206b412de66dacc0298",
+    "text": "{0} уже на вечеринке.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:17.611744Z"
+  },
+  "cpp.game.and_all_dropped_items": {
+    "src_hash": "57314e4f48f35d46903ed5f5422f6178",
+    "text": "и все выпавшие предметы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:17.612068Z"
+  },
+  "cpp.game.and_no_items": {
+    "src_hash": "b714485d863dd342f40e4eeaf2ac6b3d",
+    "text": "и ни один из предметов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:17.612364Z"
+  },
+  "cpp.game.and_some_items": {
+    "src_hash": "37ad1655a715e5355860d0b53e9c49a2",
+    "text": "и некоторые из выпавших предметов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:17.612690Z"
+  },
+  "cpp.game.but_no_gold": {
+    "src_hash": "bd70925b2625c01d55b78ebbc00c66c4",
+    "text": "но ни одного выпавшего золота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:17.613045Z"
+  },
+  "cpp.game.but_no_items": {
+    "src_hash": "cde3edb57eb1c534f0cf05ee7a1730cd",
+    "text": "но ни один из выпавших предметов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:21.774361Z"
+  },
+  "cpp.game.but_only_some_gold": {
+    "src_hash": "fa1f6ce8d1c506e96c7a133e17ceac50",
+    "text": ", но вы собрали только {0} из выпавшего золота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:21.774768Z"
+  },
+  "cpp.game.but_only_some_items": {
+    "src_hash": "bebb93bdfe25baea31948c1facbc00a6",
+    "text": ", но вы украли только некоторые предметы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:21.775127Z"
+  },
+  "cpp.game.collect_limit_reached": {
+    "src_hash": "9b45ec74031d2ed46a41b839e352ac25",
+    "text": "Одновременно вы можете собрать только {0} предметов. Было обнаружено {1} из {2} объектов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:21.775625Z"
+  },
+  "cpp.game.could_not_loot": {
+    "src_hash": "026eed9cd7a61cbf60191322a6ad49e2",
+    "text": "Вы не могли грабить ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:21.775916Z"
+  },
+  "cpp.game.guild_motd_title": {
+    "src_hash": "1e7788b643b2d3f8933e6fb67a6b8dc8",
+    "text": "Сообщение дня",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:26.342960Z"
+  },
+  "cpp.game.hazard_dodged_by": {
+    "src_hash": "762723a7fd28b539e62921a74b7d4952",
+    "text": "{0} уклонился от атаки {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:26.343320Z"
+  },
+  "cpp.game.hazard_dodged_your": {
+    "src_hash": "d05b3496968f00b075e2ed2ff4515c17",
+    "text": "{0} уклонился от вашей атаки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:26.343653Z"
+  },
+  "cpp.game.highscore_category_experience": {
+    "src_hash": "f2de47c8fa46b27bff9339920d329cb5",
+    "text": "Очки опыта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:26.343922Z"
+  },
+  "cpp.game.highscore_category_sword": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Мечевой бой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:26.344160Z"
+  },
+  "cpp.game.imbuement_error_reopen": {
+    "src_hash": "d154af29450bb6ac121cdec71487bcae",
+    "text": "Произошла ошибка, заново откройте окно наполнения. Если проблема не устранена, обратитесь к администратору.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:31.482179Z"
+  },
+  "cpp.game.loot_container_for_full": {
+    "src_hash": "11d8ef7097a900be683d7b433e03a433",
+    "text": "Внимание! Контейнер для {0} заполнен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:31.482750Z"
+  },
+  "cpp.game.loot_container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Внимание! Контейнер, присвоенный категории {0}, заполнен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:31.483230Z"
+  },
+  "cpp.game.loot_too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Внимание! Добыча, которую вы пытаетесь подобрать, слишком тяжела для вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:31.483707Z"
+  },
+  "cpp.game.looted_all_dropped_items": {
+    "src_hash": "cbf741bd4d2dc5d828909cbbb17b7063",
+    "text": "Вы собрали все выпавшие предметы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:31.484046Z"
+  },
+  "cpp.game.looted_all_items": {
+    "src_hash": "83b5adef63c2db227f938ade6c9e040f",
+    "text": "Вы разграбили все предметы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:37.526895Z"
+  },
+  "cpp.game.looted_complete_gold": {
+    "src_hash": "5e244972db6ec46d67af9ab020224dd1",
+    "text": "Вы украли все золото {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:37.527277Z"
+  },
+  "cpp.game.looted_corpses": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Вы разграбили трупы {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:37.527660Z"
+  },
+  "cpp.game.looted_gold": {
+    "src_hash": "e0fe3ba9c88783b94e3c70c8956874e1",
+    "text": "Вы украли {0} золота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:37.527956Z"
+  },
+  "cpp.game.looted_no_gold": {
+    "src_hash": "a2fd6784aa3f15d7771eb8d6277dbf2f",
+    "text": "Вы не разграбили ни одного выпавшего золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:37.528309Z"
   }
 }

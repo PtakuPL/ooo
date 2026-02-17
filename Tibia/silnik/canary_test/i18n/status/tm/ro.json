@@ -34653,7 +34653,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:20:15.160654Z"
+    "updated_at": "2026-02-17T05:31:45.879128Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -44766,5 +44766,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:29:57.000738Z"
+  },
+  "web.tpl.experience_table.b_3": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Experienţă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:41.867500Z"
+  },
+  "web.tpl.monsters.td_9": {
+    "src_hash": "3f7037784223e6bdcf2f2a3534cea3b9",
+    "text": "Fără monștri pe server.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:51.158423Z"
+  },
+  "web.tpl.account.management.set_2": {
+    "src_hash": "7dce122004969d56ae2e0245cb754d35",
+    "text": "Edita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:51.158612Z"
+  },
+  "web.tpl.account.management.set_4": {
+    "src_hash": "ab859281dbce751126a77e3272fa8b47",
+    "text": "Schimbați informații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:51.158837Z"
+  },
+  "web.tpl.account.management.set_5": {
+    "src_hash": "d052014aed0475c04648cace9b31cf7d",
+    "text": "Creați Personaj",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:57.443711Z"
+  },
+  "web.tpl.account.management.set_8": {
+    "src_hash": "5de83699e1457042cba295b497852fad",
+    "text": "Șterge caracterul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:57.443964Z"
+  },
+  "web.tpl.account.management.h1_1": {
+    "src_hash": "d95cf4ab2cbf1dfb63f066b50558b07d",
+    "text": "Contul meu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:57.444156Z"
+  },
+  "web.tpl.account.management.td_3": {
+    "src_hash": "5cf56e792ddebc9108d9ce6011ee1b33",
+    "text": "Creat:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:57.444328Z"
+  },
+  "web.tpl.account.management.td_4": {
+    "src_hash": "b264e80b149f0529e707d43f663a6ec3",
+    "text": "Ultima conectare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:31:57.444608Z"
+  },
+  "web.tpl.account.management.td_5": {
+    "src_hash": "5e910288ae0feea0e0a357e03c5a1905",
+    "text": "Starea contului:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:02.028637Z"
+  },
+  "web.tpl.account.management.td_6": {
+    "src_hash": "33bff62cd4dab2b3e4b6e04597b8461c",
+    "text": "Inregistrat:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:02.028841Z"
+  },
+  "web.tpl.account.management.h2_7": {
+    "src_hash": "120244c143e746ad6692958b0d1ef1e1",
+    "text": "Informații publice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:02.029086Z"
+  },
+  "web.tpl.account.management.h2_8": {
+    "src_hash": "5c649d25a25c5d69fa4b08c3480106cc",
+    "text": "Jurnalele de cont",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:02.029290Z"
+  },
+  "web.tpl.account.management.th_9": {
+    "src_hash": "004bf6c9a40003140292e97330236c53",
+    "text": "Acţiune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:02.029464Z"
+  },
+  "web.tpl.account.management.th_14": {
+    "src_hash": "0a86677f7b882392c8e630b5d3640d3f",
+    "text": "Vocaţie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:05.624855Z"
+  },
+  "web.tpl.account.management.th_15": {
+    "src_hash": "c16dac173aa8377a1c07aed8e0472f7c",
+    "text": "Oraş",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:05.625046Z"
+  },
+  "web.tpl.account.management.th_16": {
+    "src_hash": "a235efe8452eee7c9cbdb6dbe3d6b978",
+    "text": "Ultima conectare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:05.625254Z"
+  },
+  "web.tpl.account.management.th_17": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Stare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:05.625423Z"
+  },
+  "web.tpl.account.management.th_18": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Ascunde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:05.625589Z"
+  },
+  "web.tpl.account.management.th_19": {
+    "src_hash": "7dce122004969d56ae2e0245cb754d35",
+    "text": "Edita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:11.731436Z"
+  },
+  "web.tpl.buttons.account_lost.set_1": {
+    "src_hash": "5a8ea2823794d45e7e6b2fd5a8e05d9e",
+    "text": "Cont pierdut?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:11.731660Z"
+  },
+  "web.tpl.characters.form.set_1": {
+    "src_hash": "7a7191b168668fb1205d0f8b67d821e2",
+    "text": "Căutare Personaj",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:11.731900Z"
+  },
+  "web.tpl.characters.form.set_2": {
+    "src_hash": "3baba45b003bb1c5497303a1b29ae1bb",
+    "text": "Tabelul 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:11.732077Z"
+  },
+  "web.tpl.characters.form.set_3": {
+    "src_hash": "a4d3b161ce1309df1c4e25df28694b7b",
+    "text": "Trimiteți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:11.732254Z"
+  },
+  "web.tpl.changelog.b_1": {
+    "src_hash": "a1fa27779242b4902f7ae3bdd5c6d508",
+    "text": "Tip",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:16.141950Z"
+  },
+  "web.tpl.changelog.b_2": {
+    "src_hash": "b3c5b21d2cb47cc950fd4667edaf404c",
+    "text": "Unde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:16.142299Z"
+  },
+  "web.tpl.account.redirect.set_1": {
+    "src_hash": "d520143a7c98ecaaf79a086042992eda",
+    "text": "Conectare reușită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:16.142615Z"
+  },
+  "web.tpl.forum.move_thread.b_1": {
+    "src_hash": "f89e73354656130dbb4f50fe616737d9",
+    "text": "Mutați firul pe o altă placă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:32:16.143112Z"
   }
 }

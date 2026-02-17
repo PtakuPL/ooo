@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T01:29:01.138870Z",
-  "issues_total": 492,
+  "checked_at": "2026-02-17T01:50:02.026406Z",
+  "issues_total": 493,
   "issues_by_type": {
-    "consistency_in_language": 67,
+    "consistency_in_language": 68,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 25
   },
@@ -695,6 +695,20 @@
         "scripts:scripts.prince_drazzak_knight.say_2",
         "scripts:scripts.prince_drazzak_paladin.say_2",
         "scripts:scripts.prince_drazzak_sorcerer.say_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The Dread Maiden",
+      "variants": [
+        "Dread maiden",
+        "dread maiden"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_dread_maiden.name",
+        "monsters:monster.the_dread_maiden.desc"
       ]
     },
     {
@@ -3660,7 +3674,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "IP: ",
-      "pl": "IP:",
+      "pl": "IP: ",
       "lang": "IP: "
     },
     {

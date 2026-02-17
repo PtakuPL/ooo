@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 37.0,
+  "coverage_pct": 37.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T01:29:31.688897Z",
-  "issues_total": 105,
+  "checked_at": "2026-02-17T01:50:33.120480Z",
+  "issues_total": 106,
   "issues_by_type": {
-    "consistency_in_language": 51,
-    "pl_reference_missing_translation": 30,
+    "consistency_in_language": 50,
+    "pl_reference_missing_translation": 32,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -740,20 +740,6 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "Ahhhhhhhh! ",
-      "variants": [
-        "Ахаааа!",
-        "Ахаааа! "
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.barnabas_dee.say_8",
-        "npc:npc.terrence.say_2"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
       "en": "How rude!",
       "variants": [
         "КАК ГРУБО!",
@@ -819,15 +805,6 @@
       "lang": "clientid="
     },
     {
-      "key": "cpp.look.empty_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Empty Slot",
-      "pl": "Puste miejsce",
-      "lang": "Empty Slot"
-    },
-    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -862,6 +839,15 @@
       "en": "! ...",
       "pl": "!...",
       "lang": "! ..."
+    },
+    {
+      "key": "scripts.info.speed",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed: ",
+      "pl": "Szybkość: ",
+      "lang": "Speed: "
     },
     {
       "key": "data.otservbr.global.npc.arkarra.L54.501",
@@ -1078,6 +1064,24 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "spell.root_wave.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "root wave",
+      "pl": "fala korzeniowa",
+      "lang": "root wave"
+    },
+    {
+      "key": "spell.warden_x.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "warden x",
+      "pl": "naczelnik x",
+      "lang": "warden x"
     }
   ],
   "length_ratio_issues": [
@@ -1299,8 +1303,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 30,
-    "applied": 1,
+    "attempted": 32,
+    "applied": 3,
     "skipped": 29,
     "errors": 0
   }

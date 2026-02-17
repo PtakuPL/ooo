@@ -24905,11 +24905,11 @@
   },
   "otclient_modules.npctrade_otui.tr_17": {
     "src_hash": "090951e6353119d15cea658bfd978777",
-    "text": "List of items that you're able to Comprar",
+    "text": "Lista de artículos que puedes comprar",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T06:17:32.097160Z"
+    "updated_at": "2026-02-17T01:48:14.669051Z"
   },
   "otclient_modules.offerhistory_otui.tr_1": {
     "src_hash": "004bf6c9a40003140292e97330236c53",
@@ -145950,5 +145950,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:40:18.710835Z"
+  },
+  "otclient_modules.quickloot_otui.tr_14": {
+    "src_hash": "fd0c43523c7d7d2abc9bec1a8ab7f201",
+    "text": "Botín no asignado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:48:36.537108Z"
+  },
+  "otclient_modules.quickloot_otui.tr_3": {
+    "src_hash": "c68f84a97aec0773d2fd691b20363071",
+    "text": "¡Selecciona contenedores para tu botín!\n\n¡Refina tu saqueo rápido colocando objetos en tu lista de botín omitido o de botín aceptado!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:48:36.537675Z"
+  },
+  "otclient_modules.quickloot_otui.tr_4": {
+    "src_hash": "0f826b51414f8133f387a2bf3abffb22",
+    "text": "Agregar a la lista de botín omitido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:48:36.537970Z"
+  },
+  "otclient_modules.quickloot_otui.tr_5": {
+    "src_hash": "f1e6ff88d640536d82a367c6e921c286",
+    "text": "Borrar lista de botín omitido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:48:36.538325Z"
+  },
+  "otclient_modules.quickloot_otui.tr_6": {
+    "src_hash": "fa4d9b8bf096d02ac46dc62b545f4f63",
+    "text": "Botín aceptado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:48:39.613722Z"
+  },
+  "otclient_modules.quickloot_otui.tr_7": {
+    "src_hash": "ee5897ea6d1cef583986eaa80955ad71",
+    "text": "Botín omitido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:48:39.613946Z"
   }
 }

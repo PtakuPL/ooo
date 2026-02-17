@@ -1224,7 +1224,7 @@
   "scripts.info.skill_shield": "[EN] * Skill Shield: ",
   "scripts.info.skill_sword": "[EN] * Skill Sword: ",
   "scripts.info.skills_header": "Навыки:",
-  "scripts.info.speed": "Speed: ",
+  "scripts.info.speed": "Скорость:",
   "scripts.init.msg_1": "Вы совершаете множество покупок одновременно за несколько минут.",
   "scripts.init.msg_2": "[EN] You have been teleported to your hometown.",
   "scripts.init.msg_3": "[EN] A new hireling skill has been added to all your hirelings",

@@ -40702,5 +40702,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:20:34.695817Z"
+  },
+  "cpp.forge.tier_plus_one": {
+    "src_hash": "849498470093cbd8abc5b4c568788280",
+    "text": "nivelul + 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:32.574499Z"
+  },
+  "cpp.forge.unchanged": {
+    "src_hash": "8d7b3d6b83c0a517eac07e1aac94b773",
+    "text": "neschimbat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:32.574695Z"
+  },
+  "cpp.forge.unknown": {
+    "src_hash": "013cf261f9ccf5d4f027bc001d0d1d0c",
+    "text": "(necunoscut)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:32.574872Z"
+  },
+  "cpp.forge.unsuccessful": {
+    "src_hash": "500ada6743997288e65fb5a71e850928",
+    "text": "Nereușită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:40.139419Z"
+  },
+  "cpp.game.already_in_party": {
+    "src_hash": "9ad56a3ee470f206b412de66dacc0298",
+    "text": "{0} este deja într-o petrecere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:40.139778Z"
+  },
+  "cpp.game.and_all_dropped_items": {
+    "src_hash": "57314e4f48f35d46903ed5f5422f6178",
+    "text": "și toate obiectele scăpate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:40.140072Z"
+  },
+  "cpp.game.and_no_items": {
+    "src_hash": "b714485d863dd342f40e4eeaf2ac6b3d",
+    "text": "și niciunul dintre articole",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:40.140352Z"
+  },
+  "cpp.game.and_some_items": {
+    "src_hash": "37ad1655a715e5355860d0b53e9c49a2",
+    "text": "și unele dintre obiectele scăpate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:40.140657Z"
+  },
+  "cpp.game.but_no_gold": {
+    "src_hash": "bd70925b2625c01d55b78ebbc00c66c4",
+    "text": "dar niciunul din aurul scăpat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:46.608566Z"
+  },
+  "cpp.game.but_no_items": {
+    "src_hash": "cde3edb57eb1c534f0cf05ee7a1730cd",
+    "text": "dar niciunul dintre articolele scăpate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:46.608900Z"
+  },
+  "cpp.game.but_only_some_gold": {
+    "src_hash": "fa1f6ce8d1c506e96c7a133e17ceac50",
+    "text": ", dar ai jefuit doar {0} din aurul aruncat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:46.609231Z"
+  },
+  "cpp.game.but_only_some_items": {
+    "src_hash": "bebb93bdfe25baea31948c1facbc00a6",
+    "text": ", dar ai jefuit doar câteva dintre articole",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:46.609569Z"
+  },
+  "cpp.game.collect_limit_reached": {
+    "src_hash": "9b45ec74031d2ed46a41b839e352ac25",
+    "text": "Puteți colecta doar {0} articole odată. {1} din {2} obiecte au fost ridicate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:46.610029Z"
+  },
+  "cpp.game.could_not_loot": {
+    "src_hash": "026eed9cd7a61cbf60191322a6ad49e2",
+    "text": "Nu puteai jefui ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:55.367076Z"
+  },
+  "cpp.game.guild_motd_title": {
+    "src_hash": "1e7788b643b2d3f8933e6fb67a6b8dc8",
+    "text": "Mesajul zilei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:55.367314Z"
+  },
+  "cpp.game.hazard_dodged_by": {
+    "src_hash": "762723a7fd28b539e62921a74b7d4952",
+    "text": "{0} a evitat un atac al lui {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:55.367618Z"
+  },
+  "cpp.game.hazard_dodged_your": {
+    "src_hash": "d05b3496968f00b075e2ed2ff4515c17",
+    "text": "{0} a ocolit atacul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:55.367921Z"
+  },
+  "cpp.game.hazard_tag": {
+    "src_hash": "19159b8a594bb7328c880e2060e3428c",
+    "text": "(Pericol)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:55.368108Z"
+  },
+  "cpp.game.highscore_category_axe": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Lupta cu toporul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:01.903717Z"
+  },
+  "cpp.game.highscore_category_club": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Lupta de club",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:01.903938Z"
+  },
+  "cpp.game.highscore_category_distance": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Luptă la distanță",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:01.904182Z"
+  },
+  "cpp.game.highscore_category_experience": {
+    "src_hash": "f2de47c8fa46b27bff9339920d329cb5",
+    "text": "Puncte de experiență",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:01.904418Z"
+  },
+  "cpp.game.highscore_category_fishing": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pescuit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:01.904585Z"
+  },
+  "cpp.game.highscore_category_fist": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Luptă cu pumnii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:08.184004Z"
+  },
+  "cpp.game.highscore_category_shielding": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Ecranarea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:08.184203Z"
+  },
+  "cpp.game.highscore_category_sword": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Lupta cu sabia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:08.184406Z"
+  },
+  "cpp.game.imbuement_error_reopen": {
+    "src_hash": "d154af29450bb6ac121cdec71487bcae",
+    "text": "A apărut o eroare, redeschideți fereastra de imbumentare. Dacă problema persistă, contactați administratorul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:08.184941Z"
+  },
+  "cpp.game.loot_container_for_full": {
+    "src_hash": "11d8ef7097a900be683d7b433e03a433",
+    "text": "Atenţie! Containerul pentru {0} este plin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:08.185301Z"
+  },
+  "cpp.game.loot_container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Atenţie! Containerul atribuit categoriei {0} este plin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:16.180011Z"
+  },
+  "cpp.game.loot_too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Atenţie! Prada pe care încercați să o ridicați este prea grea pentru a fi purtată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:16.180475Z"
+  },
+  "cpp.game.looted_all_dropped_items": {
+    "src_hash": "cbf741bd4d2dc5d828909cbbb17b7063",
+    "text": "Ai jefuit toate obiectele aruncate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:16.180807Z"
+  },
+  "cpp.game.looted_all_items": {
+    "src_hash": "83b5adef63c2db227f938ade6c9e040f",
+    "text": "Ai jefuit toate obiectele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:16.181062Z"
+  },
+  "cpp.game.looted_complete_gold": {
+    "src_hash": "5e244972db6ec46d67af9ab020224dd1",
+    "text": "Ai jefuit întregul {0} aurul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:16.181361Z"
+  },
+  "cpp.game.looted_corpses": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Ai jefuit {0} cadavre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:24.112429Z"
+  },
+  "cpp.game.looted_gold": {
+    "src_hash": "e0fe3ba9c88783b94e3c70c8956874e1",
+    "text": "Ai jefuit {0} aur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:24.112692Z"
+  },
+  "cpp.game.looted_no_gold": {
+    "src_hash": "a2fd6784aa3f15d7771eb8d6277dbf2f",
+    "text": "Nu ai jefuit nimic din aurul scăpat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:24.113018Z"
+  },
+  "cpp.game.looted_no_items": {
+    "src_hash": "32bd0616644fc4c41a7ff4a0a5fd555a",
+    "text": "Nu ai jefuit niciunul dintre obiectele aruncate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:24.113352Z"
+  },
+  "cpp.game.looted_one_item": {
+    "src_hash": "bd52c95156499d90dafefefb379fe35f",
+    "text": "Ai jefuit 1 articol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:24.113597Z"
+  },
+  "cpp.game.looted_some_items": {
+    "src_hash": "2989924dc60bced7b41b890a5f38b547",
+    "text": "Ai jefuit unele dintre obiectele aruncate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:22:26.943822Z"
   }
 }

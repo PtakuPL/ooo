@@ -40805,7 +40805,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:36:39.416797Z"
+    "updated_at": "2026-02-17T04:21:00.086121Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -46758,5 +46758,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:19:33.835002Z"
+  },
+  "web.tpl.account.management.set_6": {
+    "src_hash": "23a0ca84a7fd64eee8248bd1dfc77185",
+    "text": "Cambia nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:56.108935Z"
+  },
+  "web.tpl.account.characters.change_name.set_1": {
+    "src_hash": "23a0ca84a7fd64eee8248bd1dfc77185",
+    "text": "Cambia nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:56.111870Z"
+  },
+  "web.tpl.gallery.form.td_3": {
+    "src_hash": "91401f053501b716b4a695b048c9b827",
+    "text": "Autore:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:56.125647Z"
+  },
+  "web.tpl.account.generate_recovery_key.set_1": {
+    "src_hash": "ad8bdba88e19fec0ce682b4cf8cce998",
+    "text": "Genera chiave di ripristino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:56.127282Z"
+  },
+  "html.account.lost.form.html.text1": {
+    "src_hash": "5d4af9bda827fbef97414b60c89ca7cf",
+    "text": "Per favore inserisci il nome del tuo personaggio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:20:56.138608Z"
+  },
+  "web.tpl.serverinfo.b_9": {
+    "src_hash": "3740cf5e0eee0244f1f61396843bde23",
+    "text": "CTRL+R",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:03.690705Z"
+  },
+  "web.tpl.commands.form.td_1": {
+    "src_hash": "feb3933d07878a72ca0aa2c1945519c8",
+    "text": "Parole:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:08.573905Z"
+  },
+  "web.tpl.spells.b_1": {
+    "src_hash": "5bfd24665af25248c404de5e663b08cd",
+    "text": "Ricerca ortografica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:08.574206Z"
+  },
+  "web.tpl.spells.th_3": {
+    "src_hash": "6f15b8d4b7287d60a8ea3d1c5cbadc84",
+    "text": "Parole",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:08.574386Z"
+  },
+  "web.tpl.spells.th_5": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Manà",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:08.574553Z"
+  },
+  "web.tpl.spells.th_6": {
+    "src_hash": "a037473c13c12a40d11a9339d0f9d4f7",
+    "text": "Vocazioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:08.574725Z"
+  },
+  "web.tpl.spells.th_8": {
+    "src_hash": "6f15b8d4b7287d60a8ea3d1c5cbadc84",
+    "text": "Parole",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:11.118716Z"
+  },
+  "web.tpl.spells.th_10": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Manà",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:11.118917Z"
+  },
+  "web.tpl.spells.th_11": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Anima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:11.119120Z"
+  },
+  "web.tpl.spells.th_13": {
+    "src_hash": "4aea602c9c5add7899f8f7b49f2060de",
+    "text": "Reagente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:11.119294Z"
+  },
+  "web.tpl.spells.th_14": {
+    "src_hash": "a037473c13c12a40d11a9339d0f9d4f7",
+    "text": "Vocazioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:11.119543Z"
+  },
+  "web.tpl.spells.th_19": {
+    "src_hash": "a037473c13c12a40d11a9339d0f9d4f7",
+    "text": "Vocazioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:14.999665Z"
+  },
+  "web.tpl.admin.plugins.form.label_1": {
+    "src_hash": "8a3186a909a505bef82e356ee779e3d8",
+    "text": "Inserimento file",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:14.999883Z"
+  },
+  "web.tpl.monsters.th_2": {
+    "src_hash": "5859831e2b3db23528c710b1451e13fc",
+    "text": "Capo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:15.000047Z"
+  },
+  "web.tpl.monsters.th_4": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Esperienza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:15.000223Z"
+  },
+  "web.tpl.monsters.th_5": {
+    "src_hash": "2763b3e3135d4bd93cd65867741782a7",
+    "text": "Mana evocabile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:15.000427Z"
+  },
+  "web.tpl.monsters.th_6": {
+    "src_hash": "45ed4d0b0b6bb5b1f80042af6dc365ff",
+    "text": "Mana convincente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:19.181444Z"
+  },
+  "web.tpl.monsters.th_7": {
+    "src_hash": "4e221fc084bb69a82315a154d6dd7879",
+    "text": "Gara",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:19.181635Z"
+  },
+  "web.tpl.monsters.th_8": {
+    "src_hash": "f460cdc8aef294faf9dbaa2ed67200e0",
+    "text": "Mostri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:19.181834Z"
+  },
+  "web.tpl.monsters.td_9": {
+    "src_hash": "3f7037784223e6bdcf2f2a3534cea3b9",
+    "text": "Nessun mostro sul server.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:19.182218Z"
+  },
+  "web.tpl.account.management.set_2": {
+    "src_hash": "7dce122004969d56ae2e0245cb754d35",
+    "text": "Modificare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:21:19.182400Z"
   }
 }

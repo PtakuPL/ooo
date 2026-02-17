@@ -1,95 +1,16 @@
 {
-  "timestamp": "2026-02-17T04:20:36.360439Z",
+  "timestamp": "2026-02-17T04:22:44.554786Z",
   "checked_entries": 100,
-  "issues_found": 29,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 22,
-    "identical_to_en_exempt": 13,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "suspicious_log_high": 127,
-    "suspicious_log_low": 26,
+    "suspicious_log_high": 153,
     "suspicious_log_critical": 47,
-    "suspicious_rejected_high": 18,
-    "suspicious_rejected_critical": 182
+    "suspicious_rejected_critical": 187,
+    "suspicious_rejected_high": 13
   },
   "issues": [
-    {
-      "key": "questlog.quest_1.mission_2.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "The Plague Seal",
-      "translated": "The Plague Seal"
-    },
-    {
-      "key": "questlog.quest_1.mission_8.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "The Final Battle",
-      "translated": "The Final Battle"
-    },
-    {
-      "key": "questlog.quest_11.mission_10.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Carniphilas",
-      "translated": "Paw and Fur: Carniphilas"
-    },
-    {
-      "key": "questlog.quest_11.mission_12.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Mammoths",
-      "translated": "Paw and Fur: Mammoths"
-    },
-    {
-      "key": "questlog.quest_11.mission_13.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gnarlhounds",
-      "translated": "Paw and Fur: Gnarlhounds"
-    },
-    {
-      "key": "questlog.quest_11.mission_14.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Terramites",
-      "translated": "Paw and Fur: Terramites"
-    },
-    {
-      "key": "questlog.quest_11.mission_15.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Apes",
-      "translated": "Paw and Fur: Apes"
-    },
-    {
-      "key": "questlog.quest_11.mission_17.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gargoyles",
-      "translated": "Paw and Fur: Gargoyles"
-    },
-    {
-      "key": "questlog.quest_11.mission_18.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Ice Golems",
-      "translated": "Paw and Fur: Ice Golems"
-    },
-    {
-      "key": "questlog.quest_11.mission_22.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Wyverns",
-      "translated": "Paw and Fur: Wyverns"
-    },
-    {
-      "key": "questlog.quest_11.mission_26.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Bonebeasts",
-      "translated": "Paw and Fur: Bonebeasts"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -138,85 +59,8 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "questlog.quest_1.mission_2.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Plague Seal",
-      "translated": "The Plague Seal"
-    },
-    {
-      "key": "questlog.quest_1.mission_8.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Final Battle",
-      "translated": "The Final Battle"
-    },
-    {
-      "key": "questlog.quest_11.mission_10.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Carniphilas",
-      "translated": "Paw and Fur: Carniphilas"
-    },
-    {
-      "key": "questlog.quest_11.mission_12.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Mammoths",
-      "translated": "Paw and Fur: Mammoths"
-    },
-    {
-      "key": "questlog.quest_11.mission_13.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gnarlhounds",
-      "translated": "Paw and Fur: Gnarlhounds"
-    },
-    {
-      "key": "questlog.quest_11.mission_14.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Terramites",
-      "translated": "Paw and Fur: Terramites"
-    },
-    {
-      "key": "questlog.quest_11.mission_15.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Apes",
-      "translated": "Paw and Fur: Apes"
-    },
-    {
-      "key": "questlog.quest_11.mission_17.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gargoyles",
-      "translated": "Paw and Fur: Gargoyles"
-    },
-    {
-      "key": "questlog.quest_11.mission_18.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Ice Golems",
-      "translated": "Paw and Fur: Ice Golems"
-    },
-    {
-      "key": "questlog.quest_11.mission_22.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Wyverns",
-      "translated": "Paw and Fur: Wyverns"
-    },
-    {
-      "key": "questlog.quest_11.mission_26.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Bonebeasts",
-      "translated": "Paw and Fur: Bonebeasts"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

@@ -73,7 +73,9 @@ enum FlagProp : uint32_t
     PropImageIndividualAnimation = 1 << 23,
     PropUpdateChildrenIndexStates = 1 << 24,
     PropDisableUpdateTemporarily = 1 << 25,
-    PropOnHTML = 1 << 26
+    PropOnHTML = 1 << 26,
+    PropAutoFitParentWidth = 1 << 27,
+    PropAutoFitParentHeight = 1 << 28
 };
 
 // @bindclass
@@ -170,6 +172,10 @@ public:
     void setPhantom(bool phantom);
     void setDraggable(bool draggable);
     void setFixedSize(bool fixed);
+    void setAutoFitParent(bool enabled);
+    void setAutoFitParentWidth(bool enabled) { setProp(PropAutoFitParentWidth, enabled); }
+    void setAutoFitParentHeight(bool enabled) { setProp(PropAutoFitParentHeight, enabled); }
+    bool isAutoFitParent() { return hasProp(PropAutoFitParentWidth) || hasProp(PropAutoFitParentHeight); }
     void setClipping(const bool clipping) { setProp(PropClipping, clipping); }
     void setLastFocusReason(Fw::FocusReason reason);
     void setAutoFocusPolicy(Fw::AutoFocusPolicy policy);
@@ -237,6 +243,8 @@ public:
 private:
     uint32_t m_flagsProp{ 0 };
     PainterShaderProgramPtr m_shader;
+
+    void autoFitParent();
 
     DrawOrder m_backgroundDrawOrder{ DrawOrder::FIRST };
     DrawOrder m_imageDrawOrder{ DrawOrder::FIRST };

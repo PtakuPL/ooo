@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T10:05:43.924809Z"
+    "updated_at": "2026-02-17T10:58:54.460907Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -30470,5 +30470,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:36:17.885837Z"
+  },
+  "item.107.name": {
+    "src_hash": "3df14ae40dd63cd17895eeb293ed167f",
+    "text": "speciell kolv",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:00.212986Z"
+  },
+  "item.10748.name": {
+    "src_hash": "43127a3400ad3ecca77c9e3847b0af50",
+    "text": "insektoid por",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:00.214888Z"
+  },
+  "item.1079.name": {
+    "src_hash": "47f8eff42b2ef6369ebddecc8eece3fa",
+    "text": "myrstack",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:00.215316Z"
+  },
+  "item.10797.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "okänt föremål",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:00.215759Z"
+  },
+  "item.10798.desc": {
+    "src_hash": "545f69311c2761ed2f9012a9a019e024",
+    "text": "Den tilldelades av Tibiopedia.pl",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:06.275352Z"
+  },
+  "item.10798.name": {
+    "src_hash": "399dc4d6bd722ec8b0fe3fe2838a81fe",
+    "text": "ferumbras docka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:06.275605Z"
+  },
+  "item.10799.desc": {
+    "src_hash": "545f69311c2761ed2f9012a9a019e024",
+    "text": "Den tilldelades av Tibiopedia.pl",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:06.275904Z"
+  },
+  "item.10799.name": {
+    "src_hash": "399dc4d6bd722ec8b0fe3fe2838a81fe",
+    "text": "ferumbras docka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:06.276168Z"
+  },
+  "item.10800.desc": {
+    "src_hash": "4452ba3b4d3fe3e8d4e9d2664bae1dfb",
+    "text": "Det finns inget bättre sätt att bli av med topphemlig data. Tilldelas av TibiaSpy.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:06.277006Z"
+  },
+  "item.10800.name": {
+    "src_hash": "571e329fd654ab0d6ac87c0f307a14b3",
+    "text": "orcs käkförstörare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:11.427987Z"
+  },
+  "item.10801.desc": {
+    "src_hash": "4452ba3b4d3fe3e8d4e9d2664bae1dfb",
+    "text": "Det finns inget bättre sätt att bli av med topphemlig data. Tilldelas av TibiaSpy.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:11.428893Z"
+  },
+  "item.10801.name": {
+    "src_hash": "571e329fd654ab0d6ac87c0f307a14b3",
+    "text": "orcs käkförstörare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:11.429256Z"
+  },
+  "item.10802.name": {
+    "src_hash": "7cdd1533a4023f2b1b1208d48202a9fd",
+    "text": "kolsvart gap",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:11.429478Z"
+  },
+  "item.10817.desc": {
+    "src_hash": "2f2d4b01c968aa63d42089b564b3d14d",
+    "text": "Dessa kryddor samlades över hela den tibiska världen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:11.430128Z"
+  },
+  "item.10817.name": {
+    "src_hash": "3fd9f5840a282e6b75f3db51534b68c5",
+    "text": "påse med orientaliska kryddor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:17.376673Z"
+  },
+  "item.10818.desc": {
+    "src_hash": "2f2d4b01c968aa63d42089b564b3d14d",
+    "text": "Dessa kryddor samlades över hela den tibiska världen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:17.377303Z"
+  },
+  "item.10818.name": {
+    "src_hash": "3fd9f5840a282e6b75f3db51534b68c5",
+    "text": "påse med orientaliska kryddor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:17.377602Z"
+  },
+  "item.10840.name": {
+    "src_hash": "82384884385fb0f5c725b7a4d31fe152",
+    "text": "dimensionell portal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:17.377862Z"
+  },
+  "item.10841.name": {
+    "src_hash": "264dd3cf39f82396d0c013c52d1df86d",
+    "text": "skallpelare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:17.378055Z"
+  },
+  "item.10842.name": {
+    "src_hash": "82384884385fb0f5c725b7a4d31fe152",
+    "text": "dimensionell portal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:19.722430Z"
+  },
+  "item.10847.name": {
+    "src_hash": "2f1c8942d5c82772e2160c9e6bb4820c",
+    "text": "svarta kristaller",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:59:19.722658Z"
   }
 }

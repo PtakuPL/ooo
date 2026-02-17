@@ -35438,5 +35438,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:32:59.793943Z"
+  },
+  "item.42632.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.362110Z"
+  },
+  "item.4264.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.362398Z"
+  },
+  "item.4265.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.362793Z"
+  },
+  "item.4268.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.363128Z"
+  },
+  "item.4269.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.363391Z"
+  },
+  "item.4270.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.363759Z"
+  },
+  "item.42744.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.364461Z"
+  },
+  "item.42745.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.364706Z"
+  },
+  "item.428.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.365507Z"
+  },
+  "item.4286.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.366394Z"
+  },
+  "item.4287.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.366654Z"
+  },
+  "item.4288.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.366925Z"
+  },
+  "item.4289.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.367302Z"
+  },
+  "item.4291.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.367655Z"
+  },
+  "item.4292.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.367904Z"
+  },
+  "item.4293.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.368270Z"
+  },
+  "item.4294.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.368523Z"
+  },
+  "item.42964.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.368838Z"
+  },
+  "item.42965.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.369177Z"
+  },
+  "item.42966.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.369416Z"
+  },
+  "item.42967.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.369637Z"
+  },
+  "item.42968.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.369881Z"
+  },
+  "item.42969.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.370138Z"
+  },
+  "item.42970.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.370529Z"
+  },
+  "item.42971.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.370750Z"
+  },
+  "item.4311.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.371705Z"
+  },
+  "item.4312.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:33:48.371974Z"
   }
 }

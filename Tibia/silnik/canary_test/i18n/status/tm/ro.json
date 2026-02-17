@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:51:17.512275Z"
+    "updated_at": "2026-02-17T01:34:03.916027Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -29142,5 +29142,85 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T01:33:10.034485Z"
+  },
+  "item.11631.desc": {
+    "src_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
+    "text": "Este o rună dezintegrată împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:09.184973Z"
+  },
+  "item.11632.desc": {
+    "src_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
+    "text": "Este o rună dezintegrată împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:09.185331Z"
+  },
+  "item.11633.desc": {
+    "src_hash": "2dce5700ee83e199b11c075b5eac05c9",
+    "text": "Este o rună cameleonică împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:09.185646Z"
+  },
+  "item.11634.desc": {
+    "src_hash": "2dce5700ee83e199b11c075b5eac05c9",
+    "text": "Este o rună cameleonică împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:11.772629Z"
+  },
+  "item.11635.desc": {
+    "src_hash": "96d91350b79f099110fa17a2e283ea10",
+    "text": "Este o rună de perete energetic împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:11.773048Z"
+  },
+  "item.11636.desc": {
+    "src_hash": "96d91350b79f099110fa17a2e283ea10",
+    "text": "Este o rună de perete energetic împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:11.773389Z"
+  },
+  "item.11637.desc": {
+    "src_hash": "fa018864c44f3a4090a714a0aa44919c",
+    "text": "Este o rună de foc de suflet împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:11.773710Z"
+  },
+  "item.11638.desc": {
+    "src_hash": "fa018864c44f3a4090a714a0aa44919c",
+    "text": "Este o rună de foc de suflet împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:11.774028Z"
+  },
+  "item.11639.desc": {
+    "src_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
+    "text": "Este o rună de câmp de distrugere împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:13.704654Z"
+  },
+  "item.11640.desc": {
+    "src_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
+    "text": "Este o rună de câmp de distrugere împodobită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:34:13.705011Z"
   }
 }

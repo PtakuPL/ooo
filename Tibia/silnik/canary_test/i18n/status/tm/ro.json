@@ -59406,5 +59406,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:05:37.135181Z"
+  },
+  "cpp.player.blessing_name_2": {
+    "src_hash": "687b5a49f73970153a885a1088a400ac",
+    "text": "Înțelepciunea singurătății",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:43.229512Z"
+  },
+  "cpp.player.blessing_name_3": {
+    "src_hash": "0ef92f9d3153748682152d49961b0915",
+    "text": "Scânteia Phoenix",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:43.229814Z"
+  },
+  "cpp.player.blessing_name_4": {
+    "src_hash": "f2b09c5da6f73788ea6412bd2eb45b61",
+    "text": "Focul Sorilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:43.230302Z"
+  },
+  "cpp.player.blessing_name_5": {
+    "src_hash": "e88c97a290c383c53bfe7ed34ad6e92b",
+    "text": "Apărarea spirituală",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:50.440968Z"
+  },
+  "cpp.player.blessing_name_6": {
+    "src_hash": "22013741b2d5206839f1a6d45345f138",
+    "text": "Îmbrățișarea lui Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:50.441505Z"
+  },
+  "cpp.player.blessing_name_7": {
+    "src_hash": "32030f154a28323a3ad79b8a2c55bad5",
+    "text": "Vatra Muntelui",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:50.441767Z"
+  },
+  "cpp.player.blessing_name_8": {
+    "src_hash": "bf484f6aeb0b8da9bb35360f6d1383a4",
+    "text": "Sângele Muntelui",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:50.442015Z"
+  },
+  "cpp.player.corpse_killed_by": {
+    "src_hash": "bf770744ba1f0a60f4b1a92463e810d2",
+    "text": "{0} {1} ucis de {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:50.442384Z"
+  },
+  "cpp.player.corpse_no_attackers": {
+    "src_hash": "8f2a859c12a509eff15986695d574638",
+    "text": "Nu au fost identificați atacatori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:56.937027Z"
+  },
+  "cpp.player.corpse_recognize": {
+    "src_hash": "85f70d80482f0f0f2594ea40c60c24b1",
+    "text": "Recunoașteți {0}. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:56.937341Z"
+  },
+  "cpp.player.death_exp_lost": {
+    "src_hash": "f140855333c8b1f1553d64c1c4f4b871",
+    "text": "Ai pierdut {0} experiență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:56.937650Z"
+  },
+  "cpp.player.death_pve": {
+    "src_hash": "66b1f6059d10ac8d40fdfec2c3a27ad6",
+    "text": "Ai murit în timpul PvE.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:56.937927Z"
+  },
+  "cpp.player.death_pvp": {
+    "src_hash": "f8e470893e61b3ad6d20963e0b5d90b7",
+    "text": "Ai murit în timpul PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:56.938332Z"
+  },
+  "cpp.player.exp_gained": {
+    "src_hash": "859112e38cc40dc10f1f8710a5af67b1",
+    "text": "Ai câștigat {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:04.661007Z"
+  },
+  "cpp.player.exp_gained_other": {
+    "src_hash": "4910068bf48458d6fdb89df50d9aed92",
+    "text": "{0} a câștigat {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:04.661286Z"
+  },
+  "cpp.player.exp_lost": {
+    "src_hash": "0ed4ff2d54c26acc0a0ad36a989fbf86",
+    "text": "Ai pierdut {0} punct de experiență{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:04.661625Z"
+  },
+  "cpp.player.exp_lost_other": {
+    "src_hash": "938543d6b235bfd802c79b200450fa8e",
+    "text": "{0} pierdut {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:04.661845Z"
+  },
+  "cpp.player.exp_lost_points_one": {
+    "src_hash": "ee39a7872dfb5c6040d8c5d3cb431fce",
+    "text": "Ai pierdut {0} punct de experiență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:12.419871Z"
+  },
+  "cpp.player.exp_lost_points_other": {
+    "src_hash": "0a06b67a9f360b7bfc1e050578e0c9d5",
+    "text": "Ai pierdut {0} puncte de experiență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:12.420266Z"
+  },
+  "cpp.player.exp_points_one": {
+    "src_hash": "c6baa07615cd066bebcf9cfbbabde5e9",
+    "text": "{0} punct de experiență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:12.420560Z"
+  },
+  "cpp.player.exp_points_other": {
+    "src_hash": "7b08c741db507bf3e9eca22a1d778625",
+    "text": "{0} puncte de experiență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:12.420874Z"
+  },
+  "cpp.player.exp_vip_bonus": {
+    "src_hash": "d5662f6b56235db9d4eb11c94a7c6181",
+    "text": "(bonus VIP {0}%)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:12.421125Z"
+  },
+  "cpp.player.hunting_task_complete": {
+    "src_hash": "cda199ef19659c6d6764c589ae9503b8",
+    "text": "Ți-ai terminat cu succes sarcina de vânătoare. Recompensa dvs. este gata pentru a fi revendicată!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:19.827837Z"
+  },
+  "cpp.player.idle_kick_warning": {
+    "src_hash": "3751cc9595187066c36d9feeafcbeb09",
+    "text": "Nu a existat nicio variație în comportamentul dvs. timp de {0} minute. Vei fi deconectat într-un minut dacă nu există nicio schimbare în acțiunile tale până atunci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:19.828570Z"
+  },
+  "cpp.player.imbuement_already_applied": {
+    "src_hash": "eef0c800c9541f3b88995b9c4527befd",
+    "text": "Această influență este deja aplicată acestui articol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:19.829011Z"
+  },
+  "cpp.player.imbuement_duplicate_slot": {
+    "src_hash": "21c1e8c36804a20238455f56a0a3d80d",
+    "text": "Nu puteți aplica același imbument în mai multe sloturi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:19.829414Z"
+  },
+  "cpp.player.imbuement_failed": {
+    "src_hash": "8833ed8a8ef86b9758311d2914c0fe0c",
+    "text": "O, nu!\n\nImbuirea a eșuat. Ai pierdut sursele astrale și aurul de care aveai nevoie pentru imbunatațire.\n\nData viitoare, folosește un farmec de protecție pentru a-ți spori șansele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:11:19.830237Z"
   }
 }

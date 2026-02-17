@@ -65942,5 +65942,205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:04:28.740587Z"
+  },
+  "book.parchment_room.demon_seal": {
+    "src_hash": "65e033502c7653c66392844201e3d5f6",
+    "text": "Sepolto per sempre affinché non ritorni mai più. Non rimuovere questo sigillo o potrebbero accadere cose brutte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:32.650162Z"
+  },
+  "ui.readable.nothing_written": {
+    "src_hash": "9e448afdf325b70003bf08c90a437317",
+    "text": "Non c'è scritto niente sopra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:32.652812Z"
+  },
+  "ui.readable.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Sei troppo lontano per leggerlo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:32.653489Z"
+  },
+  "book.otbm.for_centuries_we_have_been": {
+    "src_hash": "334f6bbfaaa7ae1507771c4869dc4592",
+    "text": "Per secoli abbiamo svolto ricerche su questa rete magica nel nostro mondo di Tibia. E più cerchiamo di capire come funziona più penso che non riusciremo mai a risolverne i misteri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:46.426135Z"
+  },
+  "book.otbm.for_each_missing_part_on": {
+    "src_hash": "5dc6a8e32487c62a54e50be80e972444",
+    "text": "Per ogni parte mancante (sulla base di una guida standard) consiglio di utilizzare tre pezzi di legno. Bloccarli in posizione con almeno 6 chiodi. Per il binario stesso, usa una sega su un pezzo di legno per costruire le tue traverse di legno. Quindi posiziona su di essi due raccordi metallici e potrai fare il tuo primo giro sul tuo nuovo binario. Congratulazioni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:54.114835Z"
+  },
+  "book.otbm.for_example_only_with_its": {
+    "src_hash": "ef8d55e5a1b20f5ec1cd0a1b2c2a9069",
+    "text": "Ad esempio, solo con il suo aiuto potremmo trovare le porte del teletrasporto della rete magica.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:54.115278Z"
+  },
+  "book.otbm.for_now_the_merchants_seem": {
+    "src_hash": "bcaeb2d7558f30cf654f4448344c2685",
+    "text": "Per ora i mercanti sembrano contenti della loro posizione e del posto che Venore occupa nel continente e nel regno. Ci sono voci che un giorno Venore potrebbero separarsi o usare la propria influenza per strappare ancora più diritti e privilegi al regno che diventa sempre più dipendente dal suo potere economico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:54.116499Z"
+  },
+  "book.otbm.for_our_deeds_for_king": {
+    "src_hash": "9ba2931a0fb9f8dbed4c1eed89dee861",
+    "text": "Per le nostre azioni a favore del re e del paese, il re ha concesso al nostro ordine le terre orientali. La città sotto il nostro protettorato sta crescendo e presto sarà grande e bella come la nostra capitale. Ma c'è molto lavoro da fare e innumerevoli mostri da uccidere per riportare la pace sui piani verdi. Alcuni giorni fa Falnus è scomparso e dobbiamo ritenere che sia morto, probabilmente assassinato dalla confraternita. Naturalmente anche un mago del suo potere avrebbe potuto essere ucciso da un numero maggiore di creature pericolose come i ragni giganti che ancora vagano per queste pianure. È un duro colpo per le nostre ricerche nelle arti curative e ricreative e la perdita di un grande uomo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:54.118570Z"
+  },
+  "book.otbm.for_sorcerers_and_other_magicians": {
+    "src_hash": "d79e8afd206e2bbb423c1e6535285fae",
+    "text": "per stregoni e altri maghi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:09:54.118876Z"
+  },
+  "book.otbm.forbidden_secrets_of_magic": {
+    "src_hash": "cecd94c5295955c9533c42678a548e8e",
+    "text": "Segreti proibiti della magia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:02.198778Z"
+  },
+  "book.otbm.forests_and_in_wild_herds": {
+    "src_hash": "11f1c9e4d58ec82751edc6cb5731dbfa",
+    "text": "nelle foreste e nelle mandrie selvagge i lupi impararono a sconfiggere i loro avversari bipedi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:02.199196Z"
+  },
+  "book.otbm.former_master_before_he_hid": {
+    "src_hash": "8d1703fa3a0c7c8c3b60288f94d94e69",
+    "text": "ex maestro, prima che me li nascondesse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:02.199553Z"
+  },
+  "book.otbm.fort_o_th_nare_igh": {
+    "src_hash": "b04d3d97c5b8c0b8735aa62071983f65",
+    "text": "Forte... o. th. N.....sono...alti...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:02.199859Z"
+  },
+  "book.otbm.from_or_whether_they_always": {
+    "src_hash": "645964669e4a6474a86185f933e60ee6",
+    "text": "da o se siano sempre esistiti e si siano appena risvegliati dal sonno profondo dell'infinito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:02.200304Z"
+  },
+  "book.otbm.from_the_nebulas_further_natures": {
+    "src_hash": "3c541ce6080c3fb3aeaace3a2aab7661",
+    "text": "dalle nebulose, ulteriori nature e miracoli. Ma il mondo è ancora lontano dal suo antico splendore e dalle sue dimensioni, e viviamo nei tempi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:09.820896Z"
+  },
+  "book.otbm.from_this_day_on_the": {
+    "src_hash": "e790613f7b25eca9a9b74f778b19f568",
+    "text": "Da questo giorno in poi i nuovi eroi si risvegliarono sull'isola sacra e protetta di Rookgaard e solo le anime più forti e meglio preparate poterono viaggiare verso il continente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:09.821681Z"
+  },
+  "book.otbm.furiously_to_the_battle_and": {
+    "src_hash": "a0da626f4bebf6095618a5ce97b70fe7",
+    "text": "furiosamente alla battaglia, e le truppe ausiliarie dei troll ridotti in schiavitù non potevano competere con la rabbia ardente dei draghi. Enorme",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:09.822409Z"
+  },
+  "book.otbm.further_to_the_north_at": {
+    "src_hash": "04ca03712d2c2107c660c4052014fd10",
+    "text": "Più a nord, sulle coste settentrionali trovi la città elfica di Ab'Dendriel. Lì vivono gli elfi, padroni della natura e maestri cacciatori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:09.823297Z"
+  },
+  "book.otbm.furthermore_we_found_out_that": {
+    "src_hash": "69c2abe38b64ea9ae022d100e0cb7307",
+    "text": "Inoltre, abbiamo scoperto che molti Signori dei Draghi portano con sé questo strano libro (con la grande T sopra). Non sappiamo ancora perché, ma ci stiamo lavorando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:09.824001Z"
+  },
+  "book.otbm.gabel_had_decided_to_hide": {
+    "src_hash": "908efe20b79eff18a34e89d175742315",
+    "text": "Gabel aveva deciso di nascondere la lampada di Fa'hradin e il suo potente prigioniero in un luogo desolato molto a nord perché pensava che sarebbe stato più sicuro lì che ad Ashta'daramai, la sua fortezza. Non sapeva che queste erano proprio le terre dove molti secoli dopo una razza di barbari goblinoidi chiamati orchi scelse di erigere una possente fortezza. Un giorno fatidico la lampada fu trovata e portata al re degli orchi. Gli sciamani del re non impiegarono molto tempo a capire che nella lampada era intrappolato uno spirito potente, e ben presto il re spericolato liberò il potente jinn che era rimasto dormiente per così tanti secoli. Si sa poco di quello che accadde dopo, ma anche se fino ad oggi gli orchi affermano che il loro re è ancora vivo, non ci sono testimoni credibili che confermino di aver visto il re degli orchi da allora. Malor, tuttavia, vaga di nuovo liberamente per il mondo, e molti studiosi concordano sul fatto che proverà ogni trucco disponibile per riaccendere il fuoco della guerra dei djinn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:17.168527Z"
+  },
+  "book.otbm.gabel_told_daraman_of_the": {
+    "src_hash": "a8fc2710b966265d422a8f63ae8eeda6",
+    "text": "Gabel raccontò a Daraman delle visioni e dei sogni che lo perseguitavano e chiese consiglio a Daraman. Quindi Daraman gli chiese di aprire la sua anima affinché potesse vederla. E Gabel gli aprì il suo cuore e la sua anima. Quando Daraman ebbe visto nel profondo dell'anima di Gabel, capì il dolore e la confusione che giacevano nascosti nel profondo di essa, e pianse lacrime amare di pietà per Gabel e per tutta la sua razza, poiché vide che i jinn erano una razza desolata che era stata scacciata dal suo creatore. Le sue lacrime erano così piene di compassione divina che si congelarono in gemme immacolate di puro cristallo blu non appena lasciarono i suoi occhi. Si dice che sorgenti di acqua dolce e limpida sgorgassero dalla terra ogni volta che una di esse toccasse terra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:17.170959Z"
+  },
+  "book.otbm.gabel_was_curious_about_the": {
+    "src_hash": "964af4816bab841948533a616012df74",
+    "text": "Gabel era incuriosito da quello strano essere umano che sembrava non conoscere il dolore o la paura. Gli si avvicinò e gli chiese se non sentiva alcun dolore. Daraman rispose che il dolore del corpo non era nulla in confronto al dolore dell'anima.  Quindi Gabel chiese a Daraman se non avesse paura. E il profeta pronunciò le famose parole: \"La paura della morte è poca cosa rispetto alla paura della vita\". Allora Gabel, sempre più incuriosito dall'umano, gli chiese se non gli importava affatto della sua vita? Daraman guardò semplicemente negli occhi il potente re dei jinn e un breve sorriso brillò sulle sue labbra. E dopo una lunga pausa parlò così: \"Sono un vecchio e non ho molto da perdere, mio ​​signore. Ma la vostra razza ha molto da guadagnare, perché vive nell'oscurità\". Quando pronunciò quelle parole molti jinn rimasero indignati dall'apparente mancanza di rispetto da parte dell'umano. E se Gabel non li avesse fermati, il profeta sarebbe stato ucciso sul posto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:17.173951Z"
+  },
+  "book.otbm.generation_will_lead_our_order": {
+    "src_hash": "009d1ea9ad2e0d9e9a39fa21b0fe5447",
+    "text": "generazione porterà il nostro ordine a una gloria maggiore di",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:17.174523Z"
+  },
+  "book.otbm.getting_up_was_never_his": {
+    "src_hash": "bc626bfe2776cdcfe49f9095c5d310d6",
+    "text": "Alzarsi non è mai stata la sua forza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:20.860181Z"
+  },
+  "book.otbm.ghazuul_grew_up_a_simple": {
+    "src_hash": "5a3999c9dc45996e64bd6036689ee9bc",
+    "text": "Gha'Zuul è cresciuto come un ragazzo semplice in una delle tribù nomadi del nord. Bambino fragile e magro, era spesso il bersaglio degli scherni degli altri bambini e del disprezzo del dispotico padre. Ferito e arrabbiato per le continue umiliazioni, Gha'Zuul sviluppò una personalità amara e spietata. Prendeva nota di tutte le umiliazioni subite ed era determinato a vendicarsi per ognuna di esse. Un giorno, quando il suo accampamento fu attaccato da un gruppo di non morti, decise che era giunto il momento di vendicarsi. Approfittando del trambusto generale, Gha'Zuul si avvicinò di soppiatto al suo peggior aguzzino e gli tagliò rapidamente la gola. Tuttavia, aveva commesso un errore pensando che il suo crimine sarebbe passato inosservato. Uno dei negromanti che faceva parte del gruppo d'assalto intuì la malvagità di questo atto e, poiché rimase colpito dall'evidente spietatezza del ragazzo, ordinò alle sue truppe non morte di rapirlo. E così Gha'Zuul è stato portato a Drefia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:10:20.864404Z"
   }
 }

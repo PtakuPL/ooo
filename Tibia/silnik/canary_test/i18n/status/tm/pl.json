@@ -83833,11 +83833,11 @@
   },
   "spell.charge.name": {
     "src_hash": "517349a3cdc1acf50617693e3ba33988",
-    "text": "Charge",
+    "text": "Opłata",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:31:01.305257Z"
+    "updated_at": "2026-02-17T07:43:29.322704Z"
   },
   "spell.challenge.name": {
     "src_hash": "b5f5623b6137a89a1dadf079a5e92266",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:27:04.261819Z"
+    "updated_at": "2026-02-17T07:43:05.284126Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:27:04.262754Z"
+    "updated_at": "2026-02-17T07:43:05.284947Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -114974,5 +114974,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:28:27.934548Z"
+  },
+  "spell.fair_wound_cleansing.words": {
+    "src_hash": "5dc9cabb6ab33a2c94a0bbe8911717aa",
+    "text": "exura med ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:18.653001Z"
+  },
+  "spell.cure_curse.name": {
+    "src_hash": "c9bf31438c5c2b31b51b9f528ad59c64",
+    "text": "Ulecz klątwę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:18.653308Z"
+  },
+  "spell.bruise_bane.words": {
+    "src_hash": "de0693aa207e04d7be548543b6d95d10",
+    "text": "exura infir ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:21.294818Z"
+  },
+  "spell.enchant_party.words": {
+    "src_hash": "d9cb563a4d4e641dae18e48de2889302",
+    "text": "utori mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:21.295244Z"
+  },
+  "spell.heal_party.words": {
+    "src_hash": "24dae5842d56d27e49c982a172cf5261",
+    "text": "utura mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:21.295548Z"
+  },
+  "spell.train_party.words": {
+    "src_hash": "94632b67e680c87846d35c41110a5c3e",
+    "text": "utito mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:21.295882Z"
+  },
+  "spell.protect_party.words": {
+    "src_hash": "4d74f2148f8099d6c3e87dd03efd824c",
+    "text": "utamo mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:23.911843Z"
+  },
+  "spell.protector.name": {
+    "src_hash": "abf2efbb461f7e1c84452cd1ffa4f491",
+    "text": "Ochraniacz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:26.551472Z"
+  },
+  "spell.protector.words": {
+    "src_hash": "0ebaec3ac9284a31b4fff712947a610f",
+    "text": "utamo tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:26.551866Z"
+  },
+  "spell.avatar_of_steel.words": {
+    "src_hash": "eb1cff6cbeb56c1db93a8c6868b77ac3",
+    "text": "uteta res eq",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:26.552155Z"
+  },
+  "spell.avatar_of_light.words": {
+    "src_hash": "37944324cdbdeed28c5f719e725beca0",
+    "text": "uteta res sac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:26.552538Z"
+  },
+  "spell.avatar_of_storm.words": {
+    "src_hash": "97c01abd5fb847342f8b57a902c854d7",
+    "text": "uteta res ven",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:26.552867Z"
+  },
+  "spell.charge.words": {
+    "src_hash": "1370eb72b89168a1b17856e1b5de0309",
+    "text": "utani tempo hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:29.323137Z"
+  },
+  "spell.levitate.name": {
+    "src_hash": "b51220a382d45959479685fa1a1c9a75",
+    "text": "Unieść się w powietrzu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:29.323435Z"
   }
 }

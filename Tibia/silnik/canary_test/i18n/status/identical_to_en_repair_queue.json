@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T07:37:27.977372Z",
+  "timestamp": "2026-02-17T07:44:16.269125Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 699,
+  "entries_total": 698,
   "entries_by_lang": {
     "es": 258,
     "pl": 130,
@@ -73,10 +73,10 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 480,
+    "it": 459,
     "nl": 691,
     "pt": 620,
-    "ro": 456,
+    "ro": 424,
     "ru": 60,
     "sk": 663,
     "tr": 542,
@@ -107,8 +107,8 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 374,
-    "sv": 463,
+    "sr": 324,
+    "sv": 570,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -627,12 +627,6 @@
     },
     {
       "lang": "it",
-      "json_file": "modules.json",
-      "identical_to_en": 4,
-      "domain_priority": 5
-    },
-    {
-      "lang": "it",
       "json_file": "monsters.json",
       "identical_to_en": 27,
       "domain_priority": 8
@@ -645,14 +639,14 @@
     },
     {
       "lang": "it",
-      "json_file": "cpp.json",
-      "identical_to_en": 29,
+      "json_file": "questlog.json",
+      "identical_to_en": 14,
       "domain_priority": 9
     },
     {
       "lang": "it",
-      "json_file": "questlog.json",
-      "identical_to_en": 14,
+      "json_file": "cpp.json",
+      "identical_to_en": 12,
       "domain_priority": 9
     },
     {
@@ -867,14 +861,14 @@
     },
     {
       "lang": "ro",
-      "json_file": "cpp.json",
-      "identical_to_en": 58,
+      "json_file": "questlog.json",
+      "identical_to_en": 43,
       "domain_priority": 9
     },
     {
       "lang": "ro",
-      "json_file": "questlog.json",
-      "identical_to_en": 43,
+      "json_file": "cpp.json",
+      "identical_to_en": 26,
       "domain_priority": 9
     },
     {
@@ -1320,6 +1314,12 @@
       "json_file": "npc.json",
       "identical_to_en": 14,
       "domain_priority": 0
+    },
+    {
+      "lang": "bn",
+      "json_file": "server.json",
+      "identical_to_en": 204,
+      "domain_priority": 1
     }
   ],
   "selected": {

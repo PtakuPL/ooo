@@ -1,38 +1,192 @@
 {
-  "timestamp": "2026-02-17T07:42:37.125571Z",
+  "timestamp": "2026-02-17T07:44:42.875269Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 41,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 5,
+    "identical_to_en_exempt": 3,
+    "identical_to_en": 25,
     "artifact_token": 16,
-    "suspicious_log_high": 165,
-    "suspicious_log_critical": 28,
-    "suspicious_log_low": 7,
-    "suspicious_rejected_critical": 175,
-    "suspicious_rejected_high": 25
+    "suspicious_log_high": 138,
+    "suspicious_log_critical": 38,
+    "suspicious_log_low": 24,
+    "suspicious_rejected_critical": 176,
+    "suspicious_rejected_high": 24
   },
   "issues": [
     {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
+      "key": "spell.fair_wound_cleansing.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
+      "en": "exura med ico",
+      "translated": "exura med ico"
     },
     {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
+      "key": "spell.bruise_bane.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
+      "en": "exura infir ico",
+      "translated": "exura infir ico"
     },
     {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
+      "key": "spell.enchant_party.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
+      "en": "utori mas sio",
+      "translated": "utori mas sio"
+    },
+    {
+      "key": "spell.heal_party.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utura mas sio",
+      "translated": "utura mas sio"
+    },
+    {
+      "key": "spell.train_party.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utito mas sio",
+      "translated": "utito mas sio"
+    },
+    {
+      "key": "spell.protect_party.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utamo mas sio",
+      "translated": "utamo mas sio"
+    },
+    {
+      "key": "spell.protector.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utamo tempo",
+      "translated": "utamo tempo"
+    },
+    {
+      "key": "spell.avatar_of_steel.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "uteta res eq",
+      "translated": "uteta res eq"
+    },
+    {
+      "key": "spell.avatar_of_light.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "uteta res sac",
+      "translated": "uteta res sac"
+    },
+    {
+      "key": "spell.avatar_of_storm.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "uteta res ven",
+      "translated": "uteta res ven"
+    },
+    {
+      "key": "spell.charge.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "utani tempo hur",
+      "translated": "utani tempo hur"
+    },
+    {
+      "key": "spell.quara_plunderer_smoke.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "###quara_smoke_death",
+      "translated": "###quara_smoke_death"
+    },
+    {
+      "key": "spell.great_death_beam.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo max mort",
+      "translated": "exevo max mort"
+    },
+    {
+      "key": "spell.ultimate_flame_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori max flam",
+      "translated": "exori max flam"
+    },
+    {
+      "key": "spell.divine_caldera.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo mas san",
+      "translated": "exevo mas san"
+    },
+    {
+      "key": "spell.terra_wave.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo tera hur",
+      "translated": "exevo tera hur"
+    },
+    {
+      "key": "spell.strong_energy_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori gran vis",
+      "translated": "exori gran vis"
+    },
+    {
+      "key": "spell.physical_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori moe ico",
+      "translated": "exori moe ico"
+    },
+    {
+      "key": "spell.strong_flame_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori gran flam",
+      "translated": "exori gran flam"
+    },
+    {
+      "key": "spell.strong_ethereal_spear.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori gran con",
+      "translated": "exori gran con"
+    },
+    {
+      "key": "spell.ice_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori frigo",
+      "translated": "exori frigo"
+    },
+    {
+      "key": "spell.executioners_throw.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori amp kor",
+      "translated": "exori amp kor"
+    },
+    {
+      "key": "spell.ultimate_terra_strike.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori max tera",
+      "translated": "exori max tera"
+    },
+    {
+      "key": "spell.mud_attack.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exori infir tera",
+      "translated": "exori infir tera"
+    },
+    {
+      "key": "spell.ice_burst.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo ulus frigo",
+      "translated": "exevo ulus frigo"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -145,55 +299,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "monster.hunter.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Hunter",
-      "translated": "Hunter"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
-    {
-      "key": "monster.sandstone_scorpion.voice_3",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "*tak tak tak*",
-      "translated": "*tak tak tak*"
     }
   ],
   "threshold": 10,

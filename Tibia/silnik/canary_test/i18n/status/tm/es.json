@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:28:21.496152Z"
+    "updated_at": "2026-02-17T07:43:38.225627Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:28:26.777739Z"
+    "updated_at": "2026-02-17T07:43:43.537669Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -150246,5 +150246,197 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:29:17.177049Z"
+  },
+  "spell.naga_death_wave.name": {
+    "src_hash": "3a83ee3d8bb7dc7e77c44436fec9296a",
+    "text": "muerte naga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:46.709810Z"
+  },
+  "spell.rotthing_ulus.words": {
+    "src_hash": "02d84512ac358fe2002d7dd61e3103ee",
+    "text": "###rotth_ulus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:46.710023Z"
+  },
+  "spell.tyrn_heal.name": {
+    "src_hash": "826d7f0afa46a87e56c125b8831491ae",
+    "text": "sanar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:52.039763Z"
+  },
+  "spell.large_red_ring.words": {
+    "src_hash": "96d37389d06599da3b3e9858a7ce6e63",
+    "text": "###anillo_rojo_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:52.040010Z"
+  },
+  "spell.quara_plunderer_smoke.words": {
+    "src_hash": "f9b3033ce3b3278925e16fd642d7c573",
+    "text": "###quara_smoke_death",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:52.040309Z"
+  },
+  "spell.large_energy_ring.words": {
+    "src_hash": "da9ad40bc3aabbabeb308b3ec4c80b78",
+    "text": "###anillo_de_energía_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:52.040553Z"
+  },
+  "spell.great_death_beam.words": {
+    "src_hash": "feb6b1e27d32865ee0f12c58ec858b02",
+    "text": "exevo max mort",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:55.298232Z"
+  },
+  "spell.ultimate_flame_strike.words": {
+    "src_hash": "a1eee5d6d0f1c3225e9ba6021dfe704b",
+    "text": "exori max flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:55.298531Z"
+  },
+  "spell.divine_caldera.words": {
+    "src_hash": "3b5c064a5e654d4a3be6cc97aaf96144",
+    "text": "exevo mas san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:55.298874Z"
+  },
+  "spell.terra_wave.name": {
+    "src_hash": "e3a4241a45c4747ac02615702b1e0163",
+    "text": "Ola Terra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:55.299106Z"
+  },
+  "spell.terra_wave.words": {
+    "src_hash": "2559e690cd3439df960da26b5870ea7f",
+    "text": "exevo tera hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:57.950394Z"
+  },
+  "spell.strong_energy_strike.words": {
+    "src_hash": "ed99353603c3aa24b5818ac2821e3f7a",
+    "text": "exori gran vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:57.950768Z"
+  },
+  "spell.physical_strike.words": {
+    "src_hash": "972facee93e7eb9f825cbaa3f063c6c2",
+    "text": "exori moe ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:57.951045Z"
+  },
+  "spell.strong_flame_strike.words": {
+    "src_hash": "9d398473b7c97f18377d604eb115acaa",
+    "text": "exori gran flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:57.951321Z"
+  },
+  "spell.strong_ethereal_spear.words": {
+    "src_hash": "58a3875cd62d7f7149d577a494338a46",
+    "text": "exori gran con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:43:57.951646Z"
+  },
+  "spell.ice_strike.words": {
+    "src_hash": "d9d027923474bf7c4bf90eb0c60095c6",
+    "text": "exori frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:00.557885Z"
+  },
+  "spell.executioners_throw.words": {
+    "src_hash": "757855743f8868ef8a59da255425e7ce",
+    "text": "exori amp kor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:00.558475Z"
+  },
+  "spell.envenom.name": {
+    "src_hash": "fc914880ff62e23794af817e54983e7d",
+    "text": "Envenenar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:03.657185Z"
+  },
+  "spell.ignite.name": {
+    "src_hash": "b570e354b7ebc40e20029fcc7a15e5a7",
+    "text": "Encender",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:03.657447Z"
+  },
+  "spell.ultimate_terra_strike.words": {
+    "src_hash": "f753c45c9d6963be5d83007c4a841fc3",
+    "text": "exori max tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:03.657813Z"
+  },
+  "spell.mud_attack.words": {
+    "src_hash": "8936fecc0445afbadbb896256c31dc5c",
+    "text": "exori infir tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:03.658192Z"
+  },
+  "spell.ice_burst.name": {
+    "src_hash": "ad4cb9a2cc034253a7c49c705afbf82c",
+    "text": "Explosión de hielo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:03.658544Z"
+  },
+  "spell.ice_burst.words": {
+    "src_hash": "e4a7f867be477d51cdff816968a50abe",
+    "text": "exevo ulus frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:05.835828Z"
+  },
+  "spell.scorch.name": {
+    "src_hash": "e109f8a5e390eb4ce7d468ef55600374",
+    "text": "Quemar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:44:05.836094Z"
   }
 }

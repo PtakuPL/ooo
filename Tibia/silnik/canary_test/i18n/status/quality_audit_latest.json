@@ -1,14 +1,15 @@
 {
-  "timestamp": "2026-02-17T02:28:22.246892Z",
+  "timestamp": "2026-02-17T02:29:13.662947Z",
   "checked_entries": 100,
-  "issues_found": 11,
+  "issues_found": 13,
   "issues_by_type": {
     "identical_to_en": 4,
-    "identical_to_en_exempt": 10,
-    "artifact_token": 7,
-    "suspicious_log_high": 127,
-    "suspicious_log_critical": 67,
-    "suspicious_log_low": 6,
+    "identical_to_en_exempt": 20,
+    "artifact_token": 9,
+    "suspicious_log_high": 108,
+    "suspicious_log_critical": 82,
+    "suspicious_log_low": 8,
+    "suspicious_log_medium": 2,
     "suspicious_rejected_critical": 172,
     "suspicious_rejected_high": 28
   },
@@ -89,6 +90,20 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "scripts.auto_loot.msg_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Autoloot mode set to ALL.",
+      "translated": "Modo de autoloot establecido a TODO."
+    },
+    {
+      "key": "scripts.prince_drazzak_summon.say_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
     }
   ],
   "threshold": 10,

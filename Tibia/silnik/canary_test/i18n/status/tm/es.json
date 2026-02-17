@@ -146718,5 +146718,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:26:54.336356Z"
+  },
+  "scripts.manage_kv.msg_3": {
+    "src_hash": "aac985f9b05cd8b0e17abb0db1e672fa",
+    "text": "No se encontraron entradas KV no negativas para {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:10.267746Z"
   }
 }

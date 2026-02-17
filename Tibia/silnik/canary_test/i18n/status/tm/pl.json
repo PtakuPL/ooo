@@ -105494,5 +105494,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:28:05.258541Z"
+  },
+  "scripts.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Uwolnij mnie, a zostaniesz sowicie nagrodzony!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.693036Z"
+  },
+  "scripts.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Co to jest? Leżą tu Demoniczne Nogi? Ktoś mógł je zgubić!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.694226Z"
+  },
+  "scripts.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Jestem uwięziony, chodź tu i uwolnij mnie szybko!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.695865Z"
+  },
+  "scripts.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Mogę sprowadzić twojego ukochanego z martwych, po prostu mnie uwolnij!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.697033Z"
+  },
+  "scripts.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Cóż za ładna, błyszcząca, złota zbroja. Przyjdź do mnie, a możesz to mieć!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.698211Z"
+  },
+  "scripts.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Znajdź tu wejście i uwolnij mnie! Proszę, pospiesz się!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.699286Z"
+  },
+  "scripts.movements_enter_realm.msg_2": {
+    "src_hash": "0e5950001ece13da6f3dac61bd04e7ee",
+    "text": "Nie masz poziomu 40+ albo brakuje ci magicznego klucza Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.910953Z"
+  },
+  "scripts.movements_enter_realm.msg_3": {
+    "src_hash": "5a07e7668949fbce9f8027e938202e95",
+    "text": "Żegnaj, podróżniku snów...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.911883Z"
+  },
+  "scripts.movements_entrance.msg_1": {
+    "src_hash": "193b9c59b9269fe98bf1209737485d4d",
+    "text": "Idź porozmawiać z Odralkiem i zdobądź Hallowed Axe, aby zabić Demon Oak.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.912978Z"
+  },
+  "scripts.movements_entrance.msg_2": {
+    "src_hash": "56a7108c6af80f8a4e53f9eef2a4f4fc",
+    "text": "Ten portal nie jest jeszcze wystarczająco silny, aby przebić się do docelowego wymiaru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.914047Z"
+  },
+  "scripts.movements_entrance_teleport.msg_1": {
+    "src_hash": "46bf5a5b22a91fbb4e58b19b672e251e",
+    "text": "Nie masz uprawnień, aby użyć tego portalu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.916125Z"
+  },
+  "scripts.movements_entrance_teleport.msg_2": {
+    "src_hash": "46bf5a5b22a91fbb4e58b19b672e251e",
+    "text": "Nie masz uprawnień, aby użyć tego portalu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.917130Z"
+  },
+  "scripts.movements_geomantic_charges.msg_1": {
+    "src_hash": "81166abc05a84f1d71728f2e9f27b3dc",
+    "text": "Naładowałeś ciało energią geomantyczną i możesz to zgłosić.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.921673Z"
+  },
+  "scripts.movements_gnome_ordnance.msg_1": {
+    "src_hash": "e08280b1abb63ecae52b001fe7ef41c2",
+    "text": "Rozpocząłeś eskortę, odprowadź wszystkich w bezpieczne miejsce!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.924013Z"
+  },
+  "scripts.movements_hoist.msg_1": {
+    "src_hash": "152c8f35c84e01ac38c767b62d37ca9a",
+    "text": "Najpierw musisz znaleźć instrukcję wyciągu, zanim go użyjesz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.928067Z"
+  },
+  "scripts.movements_ice.msg_1": {
+    "src_hash": "5576bad117adbe85b18fac4085eed026",
+    "text": "Gdy opuszczasz lodową jaskinię, do twojego ciała wraca odrobina ciepła.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.929079Z"
+  },
+  "scripts.movements_ice_death.msg_1": {
+    "src_hash": "8c3b0542a4e39034f0fc70ffaf915bc1",
+    "text": "Zostałeś zabity przez coś złego i innych.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.930170Z"
+  },
+  "scripts.movements_ice_death.msg_3": {
+    "src_hash": "02fa17a605269f87fa10c47485e9c71d",
+    "text": "Straciłeś 0 doświadczenia i 0.00% wszystkich umiejętności.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.931514Z"
+  },
+  "scripts.movements_ice_death.msg_5": {
+    "src_hash": "198d0ed74fb8276a08ae3495d9728972",
+    "text": "Zimno niemal całkowicie ustąpiło z twojego ciała i robi ci się cieplej. Musisz odnowić wszystkie przygotowania do oczyszczenia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.932984Z"
+  },
+  "scripts.movements_last_teleport.msg_1": {
+    "src_hash": "155052244f296096c3939786679a4a51",
+    "text": "Ten teleport jest dostępny tylko między 14 stycznia a 12 lutego.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.935450Z"
+  },
+  "scripts.movements_legion_helmet.msg_1": {
+    "src_hash": "eda434efdb30f7f9b7264550b612e7b5",
+    "text": "Złóż życia jeszcze nienarodzonych w ofierze jaszczurzemu bogu, jeśli chcesz wejść do sanktuarium.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.938501Z"
+  },
+  "scripts.movements_lions_rock.msg_2": {
+    "src_hash": "2ee7e39ed46365d0776652722b119517",
+    "text": "Musisz przejść Lwie Próby, aby wejść do wewnętrznego sanktuarium!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.940001Z"
+  },
+  "scripts.movements_lions_rock.msg_3": {
+    "src_hash": "ff68f0d725ac4c2d480ae17be21a7031",
+    "text": "Gdy przechodzisz nieostrożnie, starożytna amfora rozpada się na odłamki i pył. Wśród szczątków odkrywasz stary zwój.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.941155Z"
+  },
+  "scripts.movements_lions_rock.msg_4": {
+    "src_hash": "48336454adfbdaccd7e9942024b12f8b",
+    "text": "Wchodzisz do obszaru świątynnego, który jest wspaniale ozdobiony i tajemniczo nietknięty przez upływ czasu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.942324Z"
+  },
+  "scripts.movements_looktype.msg_1": {
+    "src_hash": "f63172a1154915358fe43472244f3753",
+    "text": "Dzięki sile orka możesz przejść przez tę szczelinę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.943467Z"
+  },
+  "scripts.movements_looktype.msg_2": {
+    "src_hash": "5780f4e260596790a62174cb2eb3eb82",
+    "text": "Potrzebujesz siły orka, aby przejść przez tę szczelinę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.944477Z"
+  },
+  "scripts.movements_looktype.msg_3": {
+    "src_hash": "7a638c3796a56a658ecd6766d5bae285",
+    "text": "Dzięki mocy orczego warlorda możesz przejść przez tę szczelinę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.945510Z"
+  },
+  "scripts.movements_looktype.msg_4": {
+    "src_hash": "5d7faab34e87edf199151a77019e54e2",
+    "text": "Potrzebujesz mocy orczego warlorda, aby przejść przez tę szczelinę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.946525Z"
+  },
+  "scripts.movements_looktype.msg_5": {
+    "src_hash": "f8f3f68362432c916119c16693a3d7fe",
+    "text": "Dzięki mądrości orczego szamana możesz przejść przez tę szczelinę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.947535Z"
+  },
+  "scripts.movements_looktype.msg_6": {
+    "src_hash": "b4cf57e69592de8eeeb6dc676ae8af9b",
+    "text": "Potrzebujesz mądrości orczego szamana, aby przejść przez tę szczelinę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.948662Z"
+  },
+  "scripts.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Szczątki tymczasowo cię depolaryzują.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.950250Z"
+  },
+  "scripts.movements_mission9_the_deepest_catacomb_teleport.msg_1": {
+    "src_hash": "138739d8bb637b32b2cc0683155ad82d",
+    "text": "Musisz rozbić wszystkie 4 duże amfory, aby użyć tego teleportera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.952858Z"
+  },
+  "scripts.movements_necrometer_tile_access.msg_1": {
+    "src_hash": "776e4568d9f22b146f49a300fc5b2fdd",
+    "text": "Miał tu miejsce dziwny rytuał. Zgłoś to Braciom Gloot.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.954765Z"
+  },
+  "scripts.movements_necrometer_tile_access.msg_2": {
+    "src_hash": "af1f2bb8c822dfcfcf7d8f65d5b20022",
+    "text": "Necrometer ujawnia ukryte przejście!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.955725Z"
+  },
+  "scripts.movements_prohibit_entry.msg_1": {
+    "src_hash": "28fe7196c9d71acef634e7b68dd9ed3a",
+    "text": "Nie możesz tędy przejść poza okresem od 1 kwietnia do 1 maja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.958444Z"
+  },
+  "scripts.movements_pumin_teleport.msg_1": {
+    "src_hash": "36f55c22b6a42ae20bee1c232c7b4357",
+    "text": "Aby wejść do domeny Pumina, musisz uzyskać zgodę biurokratów.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.959450Z"
+  },
+  "scripts.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Dopóki działa moc mrocznego Custodiana, mgła nie pozwala ci wejść do legowiska Quaida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.960705Z"
+  },
+  "scripts.movements_rope.msg_1": {
+    "src_hash": "2c27330e15f3d62734d2d06f40fe9281",
+    "text": "W tej jaskini jest lina. Należała kiedyś do wędrowca, który utknął. Weź ją tylko wtedy, gdy sam utkniesz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:28:46.963784Z"
   }
 }

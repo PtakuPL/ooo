@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:02:02.309314Z"
+    "updated_at": "2026-02-17T01:46:30.555795Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -20318,5 +20318,277 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:36:06.501522Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L120.101": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.026904Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L75.338": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.027410Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L77.1611": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.027734Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L113.1157": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.028797Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L104.1516": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.029264Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L89.951": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.030490Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L104.864": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.031890Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L88.1621": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.032747Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L100.751": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.033001Z"
+  },
+  "data.otservbr.global.npc.cornell.L75.83": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.041289Z"
+  },
+  "data.otservbr.global.npc.frafnar.L90.105": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.064913Z"
+  },
+  "data.otservbr.global.npc.frafnar.L91.106": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.065384Z"
+  },
+  "data.otservbr.global.npc.grombur.L91.1127": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.081555Z"
+  },
+  "data.otservbr.global.npc.grombur.L92.1128": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.081896Z"
+  },
+  "data.otservbr.global.npc.harlow.L80.1286": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.089207Z"
+  },
+  "data.otservbr.global.npc.harlow.vengoth.L59.856": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.089684Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L63.506": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.099402Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L111.735": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.099735Z"
+  },
+  "data.otservbr.global.npc.jack.fate.goroma.L118.308": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.100341Z"
+  },
+  "data.otservbr.global.npc.kendra.L84.1058": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.109833Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L85.1069": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.110329Z"
+  },
+  "data.otservbr.global.npc.nokmir.L98.95": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.140879Z"
+  },
+  "data.otservbr.global.npc.nokmir.L99.96": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.141183Z"
+  },
+  "data.otservbr.global.npc.rapanaio.boat.L72.129": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.156041Z"
+  },
+  "data.otservbr.global.npc.rapanaio.isle.of.evil.L72.1192": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.156481Z"
+  },
+  "data.otservbr.global.npc.rehon.L67.62": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.158469Z"
+  },
+  "data.otservbr.global.npc.rehon.L68.63": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.158788Z"
+  },
+  "data.otservbr.global.npc.tanyt.L102.1189": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.178593Z"
+  },
+  "data.otservbr.global.npc.tehlim.L76.419": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.180626Z"
+  },
+  "data.otservbr.global.npc.tehlim.L77.420": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.180915Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L69.260": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.184627Z"
+  },
+  "data.otservbr.global.npc.xorlosh.L91.605": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.198327Z"
+  },
+  "data.otservbr.global.npc.xorlosh.L92.606": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Vi ses min vän.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.198628Z"
+  },
+  "data.otservbr.global.npc.ziyad.L102.874": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Hej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:29.204132Z"
   }
 }

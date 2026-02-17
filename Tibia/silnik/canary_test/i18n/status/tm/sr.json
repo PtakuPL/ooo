@@ -168398,5 +168398,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:19:17.732701Z"
+  },
+  "data.otservbr.global.npc.suzy.L78.1114": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.617179Z"
+  },
+  "data.otservbr.global.npc.tesha.L77.914": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.620533Z"
+  },
+  "data.otservbr.global.npc.tesha.L78.915": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.620818Z"
+  },
+  "data.otservbr.global.npc.virgil.L77.213": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.629851Z"
+  },
+  "data.otservbr.global.npc.virgil.L78.214": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.630177Z"
+  },
+  "data.otservbr.global.npc.wentworth.L388.331": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.631078Z"
+  },
+  "data.otservbr.global.npc.wentworth.L389.332": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.631461Z"
+  },
+  "data.otservbr.global.npc.znozel.L72.201": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.636365Z"
+  },
+  "data.otservbr.global.npc.znozel.L73.202": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Угодан дан.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:39.636782Z"
+  },
+  "data.otservbr.global.npc.awarness.of.the.emperor.L50.141": {
+    "src_hash": "51f42b5ad3a2272a6b76efcafba05708",
+    "text": "Нисам овде да се борим са тобом, будало. Хтели ми то или не, мораћемо да радимо заједно да зауставимо катастрофу коју сте ви и тај свештеник покренули.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:56.139868Z"
   }
 }

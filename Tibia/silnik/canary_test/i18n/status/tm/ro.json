@@ -29670,5 +29670,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:44:05.497303Z"
+  },
+  "quests.ferumbras_ascension.sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scuze, nu este posibil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:24.308646Z"
+  },
+  "quests.secret_library.found_item_lower": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Ați găsit un {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:24.321736Z"
+  },
+  "quests.soul_war.taint_gained": {
+    "src_hash": "138a4a527628e1ac82b2463b602bcbd2",
+    "text": "Ați câștigat {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:24.325693Z"
+  },
+  "quests.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Părintele lui Goshnar au fost resetate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:24.326189Z"
+  },
+  "quests.soul_war.taints_reset_timeout": {
+    "src_hash": "bb82c84747742951025a074765dee261",
+    "text": "Părintele lui Goshnar au fost resetate. Nu ai terminat misiunea în 14 zile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:24.326849Z"
+  },
+  "quests.dream_courts.got_green_crystal": {
+    "src_hash": "95d63fd876e5455d0288a8fe8bbad93f",
+    "text": "Ai un cristal verde!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:27.299033Z"
+  },
+  "quests.dream_courts.got_purple_crystal": {
+    "src_hash": "15ef9900355aaed476317b32066987c5",
+    "text": "Ai un cristal violet!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:27.299311Z"
+  },
+  "quests.dream_courts.nexus_blocked": {
+    "src_hash": "c2d3b0717c0f57ebab89bc4984f3c53c",
+    "text": "Conectați toate cele trei porți pentru a restabili cercul de energie care susține acest nexus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:34.663490Z"
+  },
+  "quests.dream_courts.rubble_path": {
+    "src_hash": "887ce17f9b9499fbe9a3430282790e46",
+    "text": "Traversezi molozul cu ușurință, dar mai multe din ele cade în spatele tău, blocându-ți calea din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:34.664064Z"
+  },
+  "quests.dream_courts.sarcophagus_say_1": {
+    "src_hash": "861b66b6dbd2ef3cb4d76cc8b1455006",
+    "text": "Ai primit un ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:34.664283Z"
+  },
+  "quests.dream_courts.skull_minotaur": {
+    "src_hash": "0f19967c78d4c4bf877ae903c07b710f",
+    "text": "Puneți craniul minotaurului în sicriul din scheletul minotaurului. Unul dintre încuietorile ușii face clic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:34.664798Z"
+  },
+  "quests.dream_courts.skull_orc": {
+    "src_hash": "bbc9ebaea7038e7842785e65ec127259",
+    "text": "Puneți craniul de orc în sicriu din scheletul orcului. Unul dintre încuietorile ușii face clic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:34.665317Z"
+  },
+  "quests.dream_courts.statue_word": {
+    "src_hash": "e69449650a233f36e687a06c05ff3580",
+    "text": "Această statuie are un cuvânt scris pe mână: 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:40.346201Z"
+  },
+  "quests.dream_courts.summer_ward": {
+    "src_hash": "3c3de5f54674528ed8325cebed7655d8",
+    "text": "Încarci piatra secției de vară și cristalul de soare gravat strălucește într-o lumină aurie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:40.346705Z"
+  },
+  "quests.dream_courts.winter_ward": {
+    "src_hash": "6d2a5aa45e9e8b2ef75fcee7816d0955",
+    "text": "Încarci piatra de iarnă, iar cristalul de gheață gravat strălucește într-o lumină albastră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:40.347212Z"
+  },
+  "quests.dreamers_challenge.clock_word_1": {
+    "src_hash": "c223d5e93e61322ac1aceefd8ef3ff0b",
+    "text": "VISEAȚI!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:40.347444Z"
+  },
+  "quests.dreamers_challenge.clock_word_2": {
+    "src_hash": "6d62b16ea1c4e60517f9383de308543d",
+    "text": "TREZEŞTE-TE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:40.347636Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_obtained_this_addon": {
+    "src_hash": "de6fa97474d57de84714ed5405bda75d",
+    "text": "Ați obținut deja acest supliment!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:48.851724Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_used_this_lever": {
+    "src_hash": "1be82c3c9ff13fda4cdb4bc6e5e5cd4c",
+    "text": "Ai folosit deja această pârghie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:48.852060Z"
+  },
+  "quests.dreamers_challenge_quest.you_need_to_offer_a_small": {
+    "src_hash": "31fec8dd082b43587b7f8586b6e78b93",
+    "text": "Trebuie să oferi un mic diamant.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:48.852380Z"
+  },
+  "quests.dreamers_challenge_quest.you_still_dont_have_permission": {
+    "src_hash": "94c3a4f539049247659ee395664bc4e6",
+    "text": "Încă nu ai permisiunea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:48.852752Z"
+  },
+  "quests.fathers_burden.acquired": {
+    "src_hash": "fd3b0b305643be834fe2cba68666263c",
+    "text": "Ați achiziționat {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:48.853010Z"
+  },
+  "quests.fathers_burden.corpse_say_1": {
+    "src_hash": "2afb5076cad1b4a7685de513c392b177",
+    "text": "Scara lui Glitterscale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:56.257725Z"
+  },
+  "quests.fathers_burden.corpse_say_2": {
+    "src_hash": "60836c2f7f62f4b73a8624d6d91f6176",
+    "text": "Tendonul lui Heoni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:56.257957Z"
+  },
+  "quests.ferumbras_ascension.you_cannot_use_this_lever_again": {
+    "src_hash": "e9cc8cc8a90ff0e0d86a9099d4d547e1",
+    "text": "Nu puteți utiliza din nou această pârghie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:56.258381Z"
+  },
+  "quests.ferumbras_ascension.you_have_found_a_bag_but": {
+    "src_hash": "4b9980d4ca695198be91b754c6456724",
+    "text": "Ai găsit o geantă, dar nu ai loc să o iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:56.258762Z"
+  },
+  "quests.first_dragon.circle_trees": {
+    "src_hash": "21fde76d216da6a6580a184dc6654f83",
+    "text": "Intri in cercul copacilor si florilor. Vizitând acest loc sacru, sunteți infuzat cu puterea naturii și a plantelor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:45:56.259317Z"
+  },
+  "quests.first_dragon.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Ai găsit {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:03.371088Z"
+  },
+  "quests.first_dragon.oasis": {
+    "src_hash": "fdc609328c42192493089239ebaeef98",
+    "text": "Intri in frumoasa oaza. Vizitând acest loc sacru, ești infuzat cu puterea apei care aduce viață în deșert.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:03.371663Z"
+  },
+  "quests.first_dragon.suntower": {
+    "src_hash": "8ddfbb42d82b5fb668796bec61969f55",
+    "text": "Ai intrat în tunsoarea lui Ab'dendriel. Vizitând acest loc sacru, ești infuzat cu puterea soarelui dătătoare de viață.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:03.372215Z"
+  },
+  "quests.forgotten_knowledge.diamond_entities": {
+    "src_hash": "03a761850a7fd9fcd58c8fa2724f8dc0",
+    "text": "5 entități de diamant consumă prea multă energie brută pentru ca camera cosmică să se trezească, aceasta va fi pusă din nou la odihnă în 10 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:03.372823Z"
+  },
+  "quests.forgotten_knowledge.golden_entities": {
+    "src_hash": "283b3f9291af327714771b625dd51c2b",
+    "text": "5 entități de aur consumă prea multă energie brută pentru ca camera cosmică să se trezească, aceasta va fi pusă din nou la odihnă în 10 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:03.373425Z"
+  },
+  "quests.forgotten_knowledge.lantern_glow": {
+    "src_hash": "139f7a4e3b342775d96589e84d10d51b",
+    "text": "Pe măsură ce începeți să lustruiți felinarul, acesta începe să strălucească într-o lumină de altă lume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:11.440248Z"
+  },
+  "quests.forgotten_knowledge.lantern_has_key": {
+    "src_hash": "6feb464965de17dfa29795637465ef84",
+    "text": "În lumina felinarului de argint fantomă descoperi o ușă altfel invizibilă. Deoarece ai cheia de montaj poți trece.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:11.440822Z"
+  },
+  "quests.forgotten_knowledge.lantern_no_key": {
+    "src_hash": "3ff192e8c3b476ec20fcd8afd0a221b5",
+    "text": "În lumina felinarului de argint fantomă descoperi o ușă altfel invizibilă. Dar îți lipsește cheia pentru a o deschide.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:11.441367Z"
+  },
+  "quests.forgotten_knowledge.tree_destruction": {
+    "src_hash": "205b8fa5e3fee791d97de1989d846b4b",
+    "text": "Distrugerea copacului dezlănțuie {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:11.441795Z"
+  },
+  "quests.globalevents_grimvale_feroxa.broadcast_1": {
+    "src_hash": "bdc7c1a2cc03b08531c0d717935d084e",
+    "text": "Grimvale se îneacă în vârcolaci când luna plină atinge vârful său și răul străvechi se întoarce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:11.442459Z"
+  },
+  "quests.grave_danger.defiled": {
+    "src_hash": "20009c822cba900133cfc82c5ba6d30a",
+    "text": "Acest mormânt este deja pângărit și cavalerul lich a plecat! Nu poți face nimic aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:18.297977Z"
+  },
+  "quests.grave_danger.sanctified": {
+    "src_hash": "6ecef847b37c47541664c96ed4ca5806",
+    "text": "Acest mormânt a fost acum sfințit și este în siguranță!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:18.298519Z"
+  },
+  "quests.grave_danger.wait_challenge": {
+    "src_hash": "8f220e1370f7c9572644115a7ec58676",
+    "text": "Trebuie să așteptați %s înainte de a încerca din nou să contestați %s!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:18.299028Z"
+  },
+  "quests.gravedigger.blood_msg_1": {
+    "src_hash": "1dbdb527d858d195b09b6758127751a0",
+    "text": "Sângele din flacon este de un roșu rubiniu intens.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:18.299409Z"
+  },
+  "quests.gravedigger.blood_msg_2": {
+    "src_hash": "1a63106ebda448891f13f09e95b1749c",
+    "text": "Sângele din flacon este de o culoare ciudată, ca și cum ar fi pătat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:18.299826Z"
+  },
+  "quests.gravedigger.monks_msg_1": {
+    "src_hash": "ec359d287bea175c97b8d64cd6b01622",
+    "text": "Umbrele se ridică și învăluie lumânarea. Statuia pâlpâie într-o lumină nepământeană.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:24.387020Z"
+  },
+  "quests.gravedigger.monks_msg_2": {
+    "src_hash": "7513b7643dba66657586111a073e8765",
+    "text": "Umbrele statuii înghit lumânarea cu foame.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:24.387391Z"
+  },
+  "quests.gravedigger.monks_msg_3": {
+    "src_hash": "c45750588bd577c7f5626b86b6a4108a",
+    "text": "O umbră apare și îți smulge lumânarea din mâini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:46:24.387771Z"
   }
 }

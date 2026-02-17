@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:29:41.833082Z",
-  "language": "ru",
-  "json_file": "monsters.json",
-  "translated": 26,
+  "timestamp": "2026-02-17T00:30:50.646345Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "monster.the_unwelcome.name",
-      "en": "The Unwelcome",
-      "translated": "The UnДобро пожаловать",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.the_unwelcome.desc",
-      "en": "The Unwelcome",
-      "translated": "The UnДобро пожаловать",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "monster.gravedigger.name",
-      "en": "Gravedigger",
-      "translated": "Могильщик",
-      "source": "simple"
-    },
-    {
-      "key": "monster.training_machine.voice_6",
-      "en": "klonk klonk klonk",
-      "translated": "клонк клонк клонк",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "monster.fire_devil.name",
-      "en": "Fire Devil",
-      "translated": "Огненный дьявол",
-      "source": "simple"
-    },
-    {
-      "key": "monster.troll.voice_8",
-      "en": "Gruntz!",
-      "translated": "Гранц!",
-      "source": "simple"
-    },
-    {
-      "key": "monster.troll.voice_10",
-      "en": "Hmmm, dogs",
-      "translated": "Хм, собаки",
-      "source": "simple"
-    },
-    {
-      "key": "monster.island_troll.voice_6",
-      "en": "Hmmm, turtles",
-      "translated": "Хм, черепахи",
-      "source": "simple"
-    },
-    {
-      "key": "monster.island_troll.voice_7",
-      "en": "Hmmm, dogs",
-      "translated": "Хм, собаки",
-      "source": "simple"
-    },
-    {
-      "key": "monster.island_troll.voice_8",
-      "en": "Hmmm, worms",
-      "translated": "Хм, черви",
-      "source": "simple"
-    },
-    {
-      "key": "monster.island_troll.voice_10",
-      "en": "Gruntz!",
-      "translated": "Гранц!",
-      "source": "simple"
-    },
-    {
-      "key": "monster.training_machine.voice_15",
-      "en": "klonk klonk klonk",
-      "translated": "клонк клонк клонк",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "monster.firestarter.voice_6",
-      "en": "Hey, what's that burnt stench... isn't that... YOU?",
-      "translated": "Эй, что это за запах горелого... не так ли... ТЫ?",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "monster.firestarter.voice_7",
-      "en": "Set everything on fire!!",
-      "translated": "Подожгите все!!",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "monster.crazed_winter_vanguard.name",
-      "en": "Crazed Winter Vanguard",
-      "translated": "Безумный зимний авангард",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "monster.crazed_winter_vanguard.desc",
-      "en": "a crazed winter vanguard",
-      "translated": "сумасшедший зимний авангард",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "monster.crazed_winter_vanguard.voice_1",
-      "en": "Nobody will ever escape from this place, muwahaha!!!",
-      "translated": "Никто никогда не сбежит из этого места, мувахаха!!!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "monster.crazed_winter_vanguard.voice_2",
-      "en": "These voices… they never stop!",
-      "translated": "Эти голоса… они никогда не умолкают!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "monster.crazed_winter_vanguard.voice_3",
-      "en": " I am getting crazy here...Wa wa wahhh!!!",
-      "translated": "Я тут схожу с ума... Ва ва вааа!!!",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "monster.insane_siren.name",
-      "en": "Insane Siren",
-      "translated": "Безумная сирена",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

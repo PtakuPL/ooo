@@ -18518,5 +18518,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:22:41.780233Z"
+  },
+  "npc.corym_slave.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.874726Z"
+  },
+  "npc.corym_worker_01.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.875243Z"
+  },
+  "npc.corym_worker_02.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.875609Z"
+  },
+  "npc.corym_worker_03.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.876133Z"
+  },
+  "npc.corym_worker_04.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.876609Z"
+  },
+  "npc.corym_worker_05.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.876966Z"
+  },
+  "npc.ebenizer.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.903565Z"
+  },
+  "npc.eighty.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.907690Z"
+  },
+  "npc.elgar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.915609Z"
+  },
+  "npc.emma.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "LÄNGE LEVE Drottningen! Du kan gå nu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.920127Z"
+  },
+  "npc.eva.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.931270Z"
+  },
+  "npc.fenbala.farewell_msg_1": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "LÄNGE LEVE Drottningen! Du kan gå nu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.936966Z"
+  },
+  "npc.fenbala.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.937953Z"
+  },
+  "npc.ferks.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.939093Z"
+  },
+  "npc.finarfin.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.943047Z"
+  },
+  "npc.gnomillion.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:30.980210Z"
+  },
+  "npc.guard_saros.farewell_msg_1": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Hejdå, |PLAYERNAME|. Jag hoppas verkligen att vi pratas snart igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.003867Z"
+  },
+  "npc.guard_saros.walkaway_msg_1": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Jag hoppas att vi ses snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.006128Z"
+  },
+  "npc.hireling.farewell_msg_1": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Farväl, |PLAYERNAME|, jag finns här om du behöver mig igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.044156Z"
+  },
+  "npc.hireling.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.046252Z"
+  },
+  "npc.jefrey.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.093912Z"
+  },
+  "npc.jessica.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.097087Z"
+  },
+  "npc.kaya.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.121386Z"
+  },
+  "npc.kepar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.123822Z"
+  },
+  "npc.lokur.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.150280Z"
+  },
+  "npc.lubo.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.159347Z"
+  },
+  "npc.murim.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.203554Z"
+  },
+  "npc.muzir.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.204563Z"
+  },
+  "npc.nelly.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.213998Z"
+  },
+  "npc.norma.farewell_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.223758Z"
+  },
+  "npc.palimuth.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.253092Z"
+  },
+  "npc.paulie.greet_msg_2": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.259205Z"
+  },
+  "npc.pemaret.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.262346Z"
+  },
+  "npc.perod.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.265714Z"
+  },
+  "npc.perod.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.266571Z"
+  },
+  "npc.rachel.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.289431Z"
+  },
+  "npc.rachel.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.290001Z"
+  },
+  "npc.raffael.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.290845Z"
+  },
+  "npc.rashid.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.297614Z"
+  },
+  "npc.rashid_custom.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Kom tillbaka snart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.301428Z"
+  },
+  "npc.rokyn.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.313104Z"
+  },
+  "npc.sarina.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:31.325003Z"
   }
 }

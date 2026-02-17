@@ -24086,5 +24086,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:29:15.156718Z"
+  },
+  "monster.damaged_worker_golem.voice_3": {
+    "src_hash": "e99a687f0563d2bcabc65d6460a20cce",
+    "text": "Bună dimineața cetățean. Cum te pot servi?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:23.323460Z"
+  },
+  "monster.damaged_worker_golem.voice_4": {
+    "src_hash": "061ba258dc9781d1cabb115b93176768",
+    "text": "Ținta identificată: Șobolan! Rezilierea a început!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:26.750242Z"
+  },
+  "monster.damaged_worker_golem.voice_6": {
+    "src_hash": "f91d867058d679822ad45966b3c625bd",
+    "text": "Pericolul va... chrrr! Pericol!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:30:26.751118Z"
   }
 }

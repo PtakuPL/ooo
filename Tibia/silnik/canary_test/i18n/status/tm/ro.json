@@ -1545,19 +1545,19 @@
   },
   "npc.suzy.farewell_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.182751Z"
+    "updated_at": "2026-02-17T00:28:12.784919Z"
   },
   "npc.suzy.walkaway_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.183137Z"
+    "updated_at": "2026-02-17T00:28:12.785465Z"
   },
   "npc.taegen.say_1": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -23702,5 +23702,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:13:46.370703Z"
+  },
+  "npc.hireling.say_12": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Cum doriți!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.416525Z"
+  },
+  "npc.hireling.say_17": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Cum doriți!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.417083Z"
+  },
+  "npc.shimun.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.752272Z"
+  },
+  "npc.shimun.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.752686Z"
+  },
+  "npc.shimun.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.752974Z"
+  },
+  "npc.shimun.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.753341Z"
+  },
+  "npc.shimun.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.753794Z"
+  },
+  "npc.shimun.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.754046Z"
+  },
+  "npc.shiriel.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.754600Z"
+  },
+  "npc.shiriel.greet_msg_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.754895Z"
+  },
+  "npc.shirith.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.755472Z"
+  },
+  "npc.shirith.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Salutări, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.755773Z"
+  },
+  "npc.shirith.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.756351Z"
+  },
+  "npc.shirith.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.756646Z"
+  },
+  "npc.shirtalis_of_the_summer_court.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.757678Z"
+  },
+  "npc.siestaar.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.760388Z"
+  },
+  "npc.siestaar.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.760723Z"
+  },
+  "npc.siflind.say_16": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.761651Z"
+  },
+  "npc.simon_the_beggar.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.763906Z"
+  },
+  "npc.simon_the_beggar.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.767100Z"
+  },
+  "npc.sissek.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.769237Z"
+  },
+  "npc.sissek.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.769589Z"
+  },
+  "npc.stutch.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "TRĂIASCĂ REGELE!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.784346Z"
+  },
+  "npc.svenson.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.787136Z"
+  },
+  "npc.tanyt.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.792670Z"
+  },
+  "npc.tarun.farewell_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Adio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.793210Z"
+  },
+  "npc.tarun.walkaway_msg_1": {
+    "src_hash": "1181e3c3a047cd48d90e529a8f6c203d",
+    "text": "Adio.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.794518Z"
+  },
+  "npc.tefrit.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.794970Z"
+  },
+  "npc.tefrit.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.795258Z"
+  },
+  "npc.tefrit.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.795545Z"
+  },
+  "npc.tefrit.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.796010Z"
+  },
+  "npc.tefrit.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.796336Z"
+  },
+  "npc.tefrit.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.796581Z"
+  },
+  "npc.telas.greet_msg_1": {
+    "src_hash": "952d2c56d0485958336747bcdd98590d",
+    "text": "Bună!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.797191Z"
+  },
+  "npc.tesha.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.801478Z"
+  },
+  "npc.tesha.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.801807Z"
+  },
+  "npc.the_beggar_king.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "La revedere!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.802954Z"
+  },
+  "npc.the_empress.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:12.807296Z"
   }
 }

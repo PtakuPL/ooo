@@ -30350,5 +30350,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:27:46.200437Z"
+  },
+  "item.33932.name": {
+    "src_hash": "96e89a298e0a9f469b9ae458d6afae9f",
+    "text": "Testa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.826194Z"
+  },
+  "item.33937.name": {
+    "src_hash": "96e89a298e0a9f469b9ae458d6afae9f",
+    "text": "Testa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.826736Z"
+  },
+  "item.4064.name": {
+    "src_hash": "cf6a3fddfcfa4acf836561961e41def3",
+    "text": "drago morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.994209Z"
+  },
+  "item.4066.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.994690Z"
+  },
+  "item.4074.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.995376Z"
+  },
+  "item.4075.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.995740Z"
+  },
+  "item.4076.name": {
+    "src_hash": "8f900310c85c4869755fb42fd4c692be",
+    "text": "orso morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.996007Z"
+  },
+  "item.4105.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.997992Z"
+  },
+  "item.4106.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.998279Z"
+  },
+  "item.4107.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.998522Z"
+  },
+  "item.4108.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:16.998879Z"
+  },
+  "item.4125.name": {
+    "src_hash": "47f0c6da470bacc455afc7408ed7b435",
+    "text": "ragno morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.000142Z"
+  },
+  "item.4150.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.001910Z"
+  },
+  "item.4151.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.002258Z"
+  },
+  "item.4152.name": {
+    "src_hash": "4967a4a2b3e4301bdf70f5a736a93790",
+    "text": "lupo morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.002512Z"
+  },
+  "item.42280.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.011208Z"
+  },
+  "item.42282.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.011648Z"
+  },
+  "item.42284.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.012199Z"
+  },
+  "item.42286.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.012738Z"
+  },
+  "item.42352.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.016262Z"
+  },
+  "item.42354.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.016798Z"
+  },
+  "item.42356.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.017232Z"
+  },
+  "item.42358.desc": {
+    "src_hash": "0d6400501873bc00d676d862688bfaf8",
+    "text": "Qualcuno sta dormendo lì",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.017842Z"
+  },
+  "item.42390.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.019115Z"
+  },
+  "item.42391.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.019345Z"
+  },
+  "item.42392.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.019557Z"
+  },
+  "item.42393.name": {
+    "src_hash": "3db0e01f42f51905a6772529919099fa",
+    "text": "scale",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:28:17.019949Z"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T00:27:57.623566Z",
+  "timestamp": "2026-02-17T00:28:43.639242Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 286313,
-    "english_copy_keys": 166386,
+    "translated_keys": 286372,
+    "english_copy_keys": 166376,
     "missing_keys": 2155,
     "missing_files": 0,
     "completion_pct": 10.28
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 2550,
-    "guard_reports_blocked": 2484,
+    "guard_reports_total": 2553,
+    "guard_reports_blocked": 2487,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2484
+    "cannot_translate_reports_visible": 2487
   },
   "cache": {
-    "lang_stats_hits": 49,
-    "lang_stats_misses": 3,
-    "lang_stats_hit_pct": 94.2,
+    "lang_stats_hits": 48,
+    "lang_stats_misses": 4,
+    "lang_stats_hit_pct": 92.3,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1973,
-    "lang_file_misses": 3,
+    "lang_file_hits": 1972,
+    "lang_file_misses": 4,
     "lang_file_hit_pct": 99.8,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T00:27:52.916089Z",
-    "cycle": 78,
+    "timestamp": "2026-02-17T00:28:38.976554Z",
+    "cycle": 79,
     "mode": "AUTO_TRANSLATE",
-    "category": "es",
+    "category": "ro",
     "events": {
-      "dispatch": 2325,
-      "mode_run": 29904
+      "dispatch": 434,
+      "mode_run": 28023
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-16T23:27:56.792939Z",
-    "window_end_utc": "2026-02-17T00:27:56.792939Z",
+    "window_start_utc": "2026-02-16T23:28:42.789453Z",
+    "window_end_utc": "2026-02-17T00:28:42.789453Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -92,13 +92,13 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 3743,
-    "guard_fail": 2431,
-    "guard_fail_rate_pct": 39.4,
+    "translated": 3848,
+    "guard_fail": 2429,
+    "guard_fail_rate_pct": 38.7,
     "no_progress_entries": 6,
-    "no_progress_rate_pct": 5.8,
-    "throughput_keys_per_h": 1995.6,
-    "suspicious_total": 9817,
+    "no_progress_rate_pct": 5.7,
+    "throughput_keys_per_h": 2113.5,
+    "suspicious_total": 11393,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -152,90 +152,18 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T00:27:52.860502Z",
+      "timestamp": "2026-02-17T00:28:38.920245Z",
       "checked_entries": 100,
-      "issues_found": 16,
+      "issues_found": 7,
       "issues_by_type": {
-        "identical_to_en": 10,
-        "identical_to_en_exempt": 17,
-        "artifact_token": 6,
-        "suspicious_log_critical": 113,
-        "suspicious_log_high": 85,
-        "suspicious_log_low": 2,
+        "identical_to_en_exempt": 10,
+        "artifact_token": 7,
+        "suspicious_log_high": 153,
+        "suspicious_log_critical": 47,
         "suspicious_rejected_high": 29,
         "suspicious_rejected_critical": 171
       },
       "issues": [
-        {
-          "key": "monster.feroxa2.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa4.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa4.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa3.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa3.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa5.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.feroxa5.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Feroxa",
-          "translated": "Feroxa"
-        },
-        {
-          "key": "monster.undead_cavebear.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Undead Cavebear",
-          "translated": "Undead Cavebear"
-        },
-        {
-          "key": "monster.ocyakao.name",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Ocyakao",
-          "translated": "Ocyakao"
-        },
-        {
-          "key": "monster.ocyakao.desc",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Ocyakao",
-          "translated": "Ocyakao"
-        },
         {
           "key": "npc.captain_haba_open_sea.larboard_1",
           "lang": "es",
@@ -277,10 +205,17 @@
           "type": "artifact_token",
           "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
           "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+        },
+        {
+          "key": "npc.lardoc_bashsmite.multi_9",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
         }
       ],
       "threshold": 10,
-      "slow_mode": true
+      "slow_mode": false
     },
     "dashboard": {
       "tr": {
@@ -301,9 +236,9 @@
         "total_rejected": 905,
         "total_gt_guard_fail": 2477,
         "cycles": 828,
-        "quality_score": 65.2,
-        "last_audit": "2026-02-17T00:27:52.860502Z",
-        "issues_count": 117957
+        "quality_score": 69.5,
+        "last_audit": "2026-02-17T00:28:38.920245Z",
+        "issues_count": 117969
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -317,15 +252,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T00:27:27.989460Z",
-        "last_translated": 50,
-        "total_suspicious": 21797,
+        "last_cycle": "2026-02-17T00:28:37.496905Z",
+        "last_translated": 24,
+        "total_suspicious": 21879,
         "total_rejected": 672,
         "total_gt_guard_fail": 11266,
-        "cycles": 986,
+        "cycles": 987,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T00:27:52.860502Z",
-        "issues_count": 169010
+        "last_audit": "2026-02-17T00:28:38.920245Z",
+        "issues_count": 169147
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -350,26 +285,26 @@
         "issues_count": 2470
       },
       "it": {
-        "last_cycle": "2026-02-17T00:27:46.295659Z",
-        "last_translated": 46,
-        "total_suspicious": 1788,
+        "last_cycle": "2026-02-17T00:28:17.301466Z",
+        "last_translated": 50,
+        "total_suspicious": 1817,
         "total_rejected": 16,
         "total_gt_guard_fail": 88,
-        "cycles": 101,
-        "quality_score": 73.1,
-        "last_audit": "2026-02-17T00:27:52.860502Z",
-        "issues_count": 6484
+        "cycles": 102,
+        "quality_score": 76.0,
+        "last_audit": "2026-02-17T00:28:38.920245Z",
+        "issues_count": 6494
       },
       "ru": {
-        "last_cycle": "2026-02-17T00:27:51.221891Z",
+        "last_cycle": "2026-02-17T00:28:21.929180Z",
         "last_translated": 50,
-        "total_suspicious": 12026,
+        "total_suspicious": 12692,
         "total_rejected": 193,
         "total_gt_guard_fail": 503,
-        "cycles": 97,
-        "quality_score": 60.3,
-        "last_audit": "2026-02-17T00:27:52.860502Z",
-        "issues_count": 17521
+        "cycles": 98,
+        "quality_score": 60.4,
+        "last_audit": "2026-02-17T00:28:38.920245Z",
+        "issues_count": 17633
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -390,8 +325,8 @@
         "total_gt_guard_fail": 110,
         "cycles": 65,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T00:27:52.860502Z",
-        "issues_count": 4618
+        "last_audit": "2026-02-17T00:28:38.920245Z",
+        "issues_count": 4662
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -834,15 +769,15 @@
         "issues_count": 958
       },
       "ro": {
-        "last_cycle": "2026-02-17T00:13:46.409259Z",
-        "last_translated": 12,
-        "total_suspicious": 16432,
+        "last_cycle": "2026-02-17T00:28:13.087906Z",
+        "last_translated": 50,
+        "total_suspicious": 16512,
         "total_rejected": 432,
         "total_gt_guard_fail": 546,
-        "cycles": 78,
-        "quality_score": 59.9,
-        "last_audit": "2026-02-17T00:27:52.860502Z",
-        "issues_count": 19834
+        "cycles": 79,
+        "quality_score": 60.2,
+        "last_audit": "2026-02-17T00:28:38.920245Z",
+        "issues_count": 19926
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -856,7 +791,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 16 issue(s) / 100 entries | 2026-02-17T00:27:52.860502Z"
+    "summary": "OK | 7 issue(s) / 100 entries | 2026-02-17T00:28:38.920245Z"
   },
   "languages": [
     {
@@ -932,14 +867,14 @@
       "language_name": "Rumuński",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 10980,
-      "english_copy_keys": 2468,
+      "translated_keys": 11012,
+      "english_copy_keys": 2458,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 20.49,
+      "completion_pct": 20.55,
       "server_keys": 49731,
-      "server_translated": 10745,
-      "server_pct": 21.61,
+      "server_translated": 10777,
+      "server_pct": 21.67,
       "client_keys": 3855,
       "client_translated": 235,
       "client_pct": 6.1
@@ -966,14 +901,14 @@
       "language_name": "Włoski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 6239,
+      "translated_keys": 6266,
       "english_copy_keys": 2441,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 11.64,
+      "completion_pct": 11.69,
       "server_keys": 49731,
-      "server_translated": 6005,
-      "server_pct": 12.07,
+      "server_translated": 6032,
+      "server_pct": 12.13,
       "client_keys": 3855,
       "client_translated": 234,
       "client_pct": 6.07

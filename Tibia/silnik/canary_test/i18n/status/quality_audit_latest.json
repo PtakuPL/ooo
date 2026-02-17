@@ -1,88 +1,16 @@
 {
-  "timestamp": "2026-02-17T00:27:52.860502Z",
+  "timestamp": "2026-02-17T00:28:38.920245Z",
   "checked_entries": 100,
-  "issues_found": 16,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 17,
-    "artifact_token": 6,
-    "suspicious_log_critical": 113,
-    "suspicious_log_high": 85,
-    "suspicious_log_low": 2,
+    "identical_to_en_exempt": 10,
+    "artifact_token": 7,
+    "suspicious_log_high": 153,
+    "suspicious_log_critical": 47,
     "suspicious_rejected_high": 29,
     "suspicious_rejected_critical": 171
   },
   "issues": [
-    {
-      "key": "monster.feroxa2.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa4.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa3.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.feroxa5.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feroxa",
-      "translated": "Feroxa"
-    },
-    {
-      "key": "monster.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "monster.ocyakao.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
-    {
-      "key": "monster.ocyakao.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ocyakao",
-      "translated": "Ocyakao"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -124,8 +52,15 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

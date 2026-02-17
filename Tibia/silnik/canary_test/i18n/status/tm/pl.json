@@ -83761,11 +83761,11 @@
   },
   "spell.lightning.name": {
     "src_hash": "457ba641340a812b28f949a26fca3e7b",
-    "text": "Lightning",
+    "text": "Błyskawica",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:58.624584Z"
+    "updated_at": "2026-02-17T05:43:50.911544Z"
   },
   "spell.wrath_of_nature.words": {
     "src_hash": "5b94f8238c60a27d0c3dc9f9fe16d57a",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:07:44.752204Z"
+    "updated_at": "2026-02-17T05:43:18.683841Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:07:44.753024Z"
+    "updated_at": "2026-02-17T05:43:18.684857Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -112438,5 +112438,181 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T05:36:50.057216Z"
+  },
+  "spell.ice_wave.name": {
+    "src_hash": "8d33572ff37b9fbaa9060e6c736e859a",
+    "text": "Fala Lodu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:31.314581Z"
+  },
+  "spell.ice_wave.words": {
+    "src_hash": "01866fc85cfc2a3fa0a21c030a8b2ae2",
+    "text": "exevo frigo hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:31.314988Z"
+  },
+  "spell.fire_wave.name": {
+    "src_hash": "853c3fef1f117a759611461b0c25e92e",
+    "text": "Fala Ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:31.315195Z"
+  },
+  "spell.fire_wave.words": {
+    "src_hash": "d58420dad4d6031d7d8f1caf292be669",
+    "text": "exevo flam hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:36.249260Z"
+  },
+  "spell.divine_grenade.name": {
+    "src_hash": "aa00d3ce9e7ad795109f3c4f145619c7",
+    "text": "Boski Granat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:36.249511Z"
+  },
+  "spell.energy_wave.name": {
+    "src_hash": "1e752ea8c3d90824faeede46c8a4a88d",
+    "text": "Fala Energii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:36.249784Z"
+  },
+  "spell.energy_wave.words": {
+    "src_hash": "14bc3f6553c127a76ab72757a60108f0",
+    "text": "exevo vis hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:36.250047Z"
+  },
+  "spell.ultimate_ice_strike.name": {
+    "src_hash": "af7e2b735691f4903ef831068c421140",
+    "text": "Ostateczne Uderzenie Lodu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:40.685247Z"
+  },
+  "spell.ultimate_ice_strike.words": {
+    "src_hash": "f8d1aa9ce25522aebd5adbb04d2b4b5f",
+    "text": "exori max frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:40.685592Z"
+  },
+  "spell.buzz.name": {
+    "src_hash": "f285bec73b34c6b77026c180aae0e5ba",
+    "text": "Brzęczeć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:40.685816Z"
+  },
+  "spell.buzz.words": {
+    "src_hash": "9649bc31b35fcdfa4dc4381fe9415be9",
+    "text": "exori infir vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:40.686126Z"
+  },
+  "spell.rage_of_the_skies.name": {
+    "src_hash": "bf11d4cf66baf6f505cfd4e3184ae53d",
+    "text": "Wściekłość Niebios",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:40.686388Z"
+  },
+  "spell.divine_missile.name": {
+    "src_hash": "7a3bd9401c74cd2521dcd6eb2ef7c2ea",
+    "text": "Boski pocisk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:46.395221Z"
+  },
+  "spell.strong_ice_strike.name": {
+    "src_hash": "90641b8a57353a6df6958f4d522f8ffb",
+    "text": "Silne Uderzenie Lodu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:46.395468Z"
+  },
+  "spell.strong_ice_strike.words": {
+    "src_hash": "8d426dfe2e19a7b0b4bafe5754f13994",
+    "text": "exori gran frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:46.395808Z"
+  },
+  "spell.strong_terra_strike.name": {
+    "src_hash": "fe0a02b91cce1b7c53edd5f8cf976fd5",
+    "text": "Silne Uderzenie Terry",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:46.396065Z"
+  },
+  "spell.fierce_berserk.name": {
+    "src_hash": "16363a948ea19f715f71c121c67074c3",
+    "text": "Zaciekły Berserk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:50.911137Z"
+  },
+  "spell.terra_strike.name": {
+    "src_hash": "2d60e528432e11a76543fa793dd47d62",
+    "text": "Uderzenie Terry",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:50.911355Z"
+  },
+  "spell.lightning.words": {
+    "src_hash": "438f50dd16d80457c23cb4688227ccbe",
+    "text": "exori amp vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:50.911868Z"
+  },
+  "spell.ultimate_energy_strike.words": {
+    "src_hash": "6a98e3c2667e5e67987b8becab6f7c9f",
+    "text": "exori max vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:50.912156Z"
+  },
+  "spell.practice_fire_wave.name": {
+    "src_hash": "872aade22d8673e1722eb9c8efd17087",
+    "text": "Ćwicz Falę Ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:54.944565Z"
+  },
+  "spell.terra_burst.name": {
+    "src_hash": "49fb01f80e220452cfb1148bd4fb985f",
+    "text": "Wybuch Terry",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:54.944858Z"
   }
 }

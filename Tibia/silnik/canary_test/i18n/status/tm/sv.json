@@ -24686,5 +24686,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:34:35.339225Z"
+  },
+  "npc.cerdras.greet_msg_1": {
+    "src_hash": "ac222e2ce71c774dfd7615b83f6538df",
+    "text": "Hälsningar min vän!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.217832Z"
+  },
+  "npc.charles.greet_msg_1": {
+    "src_hash": "490e8db04e2c02a81dc2a9e424404ac0",
+    "text": "Ohoj. Vart kan jag segla dig idag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.219250Z"
+  },
+  "npc.charlotta.greet_msg_1": {
+    "src_hash": "4f2eff2d260c80a26015ec640739d25b",
+    "text": "Ah, välkommen! Välkommen |PLAYERNAME|! Om du behöver druidbesvärjelser har du kommit till rätt ställe. Annars är det bara trevligt med besök.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.221342Z"
+  },
+  "npc.chavis.farewell_msg_1": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ta hand om dig där ute!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.223207Z"
+  },
+  "npc.chavis.greet_msg_1": {
+    "src_hash": "74bc51c2c9d2b899820180e938426aa0",
+    "text": "Hej där! Du råkar inte ha några {food} på dig, är du villig att dela? Nåväl, var är mina uppföranden, varmt välkommen nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.223891Z"
+  },
+  "npc.chemar.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.224611Z"
+  },
+  "npc.chemar.greet_msg_1": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Daramans välsignelser, resenär |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.225121Z"
+  },
+  "npc.chemar.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.225882Z"
+  },
+  "npc.chester_kahs.farewell_msg_1": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ta hand om dig där ute!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.226287Z"
+  },
+  "npc.chester_kahs.greet_msg_1": {
+    "src_hash": "0bd7be7fa74c735eed6ca6f3f8f93c97",
+    "text": "Hälsningar, främling.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.226621Z"
+  },
+  "npc.chester_kahs.walkaway_msg_1": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ta hand om dig där ute!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.230545Z"
+  },
+  "npc.eremo.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.298248Z"
+  },
+  "npc.eremo.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.299549Z"
+  },
+  "npc.harog.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.407964Z"
+  },
+  "npc.liane.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.516761Z"
+  },
+  "npc.liane.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.517606Z"
+  },
+  "npc.ninos.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.592695Z"
+  },
+  "npc.olrik.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.608767Z"
+  },
+  "npc.pompan.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.650375Z"
+  },
+  "npc.uzon.greet_msg_1": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Daramans välsignelser, resenär |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.806706Z"
+  },
+  "npc.uzon_back.greet_msg_1": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Daramans välsignelser, resenär |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:42:57.808326Z"
+  },
+  "npc.a_sleeping_dragon.say_23": {
+    "src_hash": "75db113b36f8cc8147eb851595c8e95f",
+    "text": "Du tar försiktigt bort safiren från Basteshs grepp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:01.794782Z"
+  },
+  "npc.a_sleeping_dragon.say_24": {
+    "src_hash": "5ad308bb5eb73e010d4ee498d1d179e8",
+    "text": "Du går tillbaka österut och till platån.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:01.795151Z"
+  },
+  "npc.a_sleeping_dragon.say_25": {
+    "src_hash": "572a06275397e11bdebb4bf5d13c222a",
+    "text": "Du går tillbaka söderut till platsen med onyxutkiken.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:01.795558Z"
+  },
+  "npc.a_sleeping_dragon.say_26": {
+    "src_hash": "0384ea996d8e47bcc35ca3b359621c3e",
+    "text": "Du återvänder till platån i öster.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:01.795898Z"
+  },
+  "npc.a_sleeping_dragon.say_27": {
+    "src_hash": "951c522827a681efb5611d61bc7f578e",
+    "text": "Du sätter stativet i en liten urtagning du hittar nära mitten av platån.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:04.463412Z"
+  },
+  "npc.a_sleeping_dragon.say_28": {
+    "src_hash": "ccbe62346bcfed87710c2dfcab76cb0a",
+    "text": "När rubinen glider in i skåran intensifieras det starka röda på stenen tusen gånger. Du är rädd för att skada dina ögon och vänder dig bort omedelbart. Strålen verkar riktas mot mitten av platån med häpnadsväckande precision.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:04.464230Z"
+  },
+  "npc.a_sleeping_dragon.say_29": {
+    "src_hash": "9abed949e8932a64cb497c660e9400a0",
+    "text": "När safiren glider in i skåran intensifieras stenens djupblå färg tusenfaldigt. Du är rädd för att skada dina ögon och vänder dig bort omedelbart. Strålen verkar riktas mot mitten av platån med häpnadsväckande precision.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:04.465055Z"
+  },
+  "npc.a_sleeping_dragon.say_3": {
+    "src_hash": "b8be29c945f10470f8c478a07e49dfb3",
+    "text": "Du lyfter försiktigt upp onyxfästet från dess uttag. Det är lättare än du förväntade dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:04.465514Z"
+  },
+  "npc.a_sleeping_dragon.say_30": {
+    "src_hash": "ec8a960121a5d8f074e1d1ac99cd9adc",
+    "text": "När smaragden glider in i skåran intensifieras stenens livfulla gröna tusen gånger. Du är rädd för att skada dina ögon och vänder dig bort omedelbart. Strålen verkar riktas mot mitten av platån med häpnadsväckande precision.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:04.466372Z"
+  },
+  "npc.a_sleeping_dragon.say_31": {
+    "src_hash": "15cc74af4b4c7d62137f2b78d9019391",
+    "text": "Jag kallar dig vägfararen. Du reste genom mina drömmar. Du befriade till slut mitt sinne. Mitt sinne accepterade dig och det kommer jag också att göra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:06.862725Z"
+  },
+  "npc.a_sleeping_dragon.say_4": {
+    "src_hash": "0384ea996d8e47bcc35ca3b359621c3e",
+    "text": "Du återvänder till platån i öster.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:06.863074Z"
+  },
+  "npc.a_sleeping_dragon.say_5": {
+    "src_hash": "e43aa1775c1102e50b1b8c5101537f26",
+    "text": "Du vandrar söderut och passerar stora obelisker av smaragd till vänster och vidsträckta träd av topas till höger. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:06.863606Z"
+  },
+  "npc.a_sleeping_dragon.say_6": {
+    "src_hash": "d92a9ab65fe9fd6b3c538a49cc00db57",
+    "text": "När du sliter ur det solida stativet ur dess uttag och tar det med dig, öppnas den stora porten med ett öronbedövande mullret. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:43:06.864160Z"
   }
 }

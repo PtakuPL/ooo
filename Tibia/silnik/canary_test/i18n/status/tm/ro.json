@@ -62574,5 +62574,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T11:55:33.248411Z"
+  },
+  "monster.fire_devil.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Diavolul de foc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:57:32.544770Z"
   }
 }

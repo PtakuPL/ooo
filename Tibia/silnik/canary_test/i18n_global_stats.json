@@ -1,8 +1,8 @@
 {
-  "total_cycles": 472,
+  "total_cycles": 473,
   "mode": "AUTO_TRANSLATE",
   "category": "ro",
-  "last_update": "2026-02-17T12:56:51.750465",
+  "last_update": "2026-02-17T12:58:31.460385",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "ro",
-    "json_file": "items.json",
-    "keys_to_translate": 8817,
-    "guard_fail": 6,
+    "json_file": "monsters.json",
+    "keys_to_translate": 5006,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

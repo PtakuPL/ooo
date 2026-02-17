@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T10:57:00.119449Z",
-  "window_end_utc": "2026-02-17T11:57:00.119449Z",
+  "window_start_utc": "2026-02-17T10:58:40.593209Z",
+  "window_end_utc": "2026-02-17T11:58:40.593209Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1096,
-  "guard_fail": 1222,
-  "guard_fail_rate_pct": 52.7,
+  "translated": 1125,
+  "guard_fail": 1244,
+  "guard_fail_rate_pct": 52.5,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 635.7,
-  "suspicious_total": 6501,
+  "throughput_keys_per_h": 648.0,
+  "suspicious_total": 6318,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -41,6 +41,12 @@
       "translated": 1,
       "guard_fail": 42,
       "guard_command": 1
+    },
+    {
+      "target": "ro/monsters.json",
+      "translated": 10,
+      "guard_fail": 40,
+      "guard_command": 0
     },
     {
       "target": "ro/books.json",
@@ -64,12 +70,6 @@
       "target": "ro/achievements.json",
       "translated": 22,
       "guard_fail": 28,
-      "guard_command": 0
-    },
-    {
-      "target": "es/npc.json",
-      "translated": 25,
-      "guard_fail": 25,
       "guard_command": 0
     }
   ]

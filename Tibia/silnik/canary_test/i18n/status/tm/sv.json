@@ -1473,11 +1473,11 @@
   },
   "npc.kevin.say_46": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Du har det inte...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.910486Z"
+    "updated_at": "2026-02-17T11:58:12.240913Z"
   },
   "npc.lardoc_bashsmite.say_10": {
     "src_hash": "f5940523060652e3a7d9c269ce48de50",
@@ -31030,5 +31030,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:33:24.053305Z"
+  },
+  "npc.kasmir.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.204558Z"
+  },
+  "npc.kasmir.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.205906Z"
+  },
+  "npc.kasmir.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.207129Z"
+  },
+  "npc.kasmir.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.208129Z"
+  },
+  "npc.kasmir.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.209709Z"
+  },
+  "npc.kasmir.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.211213Z"
+  },
+  "npc.kasmir.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.213034Z"
+  },
+  "npc.kasmir.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.214129Z"
+  },
+  "npc.kasmir.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.215118Z"
+  },
+  "npc.kasmir.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.218457Z"
+  },
+  "npc.kasmir.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.219310Z"
+  },
+  "npc.kasmir.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.219834Z"
+  },
+  "npc.kasmir.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.220775Z"
+  },
+  "npc.kasmir.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.221516Z"
+  },
+  "npc.kasmir.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.222080Z"
+  },
+  "npc.kendra.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.230549Z"
+  },
+  "npc.kendra.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.231156Z"
+  },
+  "npc.kendra.stdmod_5": {
+    "src_hash": "76d38af149c4d96a931e9bb3a7d2050e",
+    "text": "Vi vill välkomna dig ombord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.231698Z"
+  },
+  "npc.kendra_thais.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.233929Z"
+  },
+  "npc.kendra_thais.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.234692Z"
+  },
+  "npc.kendra_thais.stdmod_5": {
+    "src_hash": "76d38af149c4d96a931e9bb3a7d2050e",
+    "text": "Vi vill välkomna dig ombord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.235255Z"
+  },
+  "npc.khanna.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Så du ber mig om en {{}} för att börja ditt äventyr?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.242828Z"
+  },
+  "npc.khanna.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Vad? Jag har redan gett dig en {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.243538Z"
+  },
+  "npc.khanna.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.244229Z"
+  },
+  "npc.king_tibianus.multi_1": {
+    "src_hash": "52ab9c4bdd0063e05461de7641aa6b4d",
+    "text": "Excellent! Låt mig nu förklara. Om du donerar 1 000 000 000 guldpjäser har du rätt att bära en unik outfit. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.245802Z"
+  },
+  "npc.king_tibianus.multi_3": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Vad blir det?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.246472Z"
+  },
+  "npc.king_tibianus.say_10": {
+    "src_hash": "c3b7f6d809dff613b8443e33af06db32",
+    "text": "Ta den här hjälmen som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.247671Z"
+  },
+  "npc.king_tibianus.say_11": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Du har inte tillräckligt med pengar för att donera det beloppet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.248562Z"
+  },
+  "npc.king_tibianus.say_12": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Du har redan den outfiten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.249068Z"
+  },
+  "npc.king_tibianus.say_14": {
+    "src_hash": "88ff45ecafedf4db47e12c033cbabb1b",
+    "text": "Ta dessa stövlar som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.249943Z"
+  },
+  "npc.king_tibianus.say_15": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Du har inte tillräckligt med pengar för att donera det beloppet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.250851Z"
+  },
+  "npc.king_tibianus.say_16": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Du har redan den outfiten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.251332Z"
+  },
+  "npc.king_tibianus.say_17": {
+    "src_hash": "1c2974aa5ece2c40315db395e71a13e5",
+    "text": "Du måste donera {helmet}-tillägget först.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.252015Z"
+  },
+  "npc.king_tibianus.say_19": {
+    "src_hash": "7346bd095953094daa8fe43a55c46780",
+    "text": "Så du skulle vilja donera 500.000.000 guldpjäser som i gengäld ger dig rätt att bära en unik rustning?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.252961Z"
+  },
+  "npc.king_tibianus.say_20": {
+    "src_hash": "198357327b9821aea565dbe508d1d3c2",
+    "text": "Så du skulle vilja donera 250.000.000 guldpjäser som i gengäld ger dig rätt att bära unik hjälm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.254313Z"
+  },
+  "npc.king_tibianus.say_21": {
+    "src_hash": "52d6e7e3f5eb1ef4e02292b7ce660565",
+    "text": "Så du skulle vilja skänka 250.000.000 guldpjäser som i gengäld ger dig rätt att bära en unik känga?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.255200Z"
+  },
+  "npc.king_tibianus.say_22": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Fel ord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.255721Z"
+  },
+  "npc.king_tibianus.say_5": {
+    "src_hash": "c65af90ce2c9ecc9ed1080eb962ba346",
+    "text": "I så fall, återvänd till mig när du bestämt dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.256967Z"
+  },
+  "npc.king_tibianus.say_6": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Ta denna rustning som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.257807Z"
+  },
+  "npc.king_tibianus.say_7": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Se till att du har lediga platser i din butiks inkorg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:58:12.258459Z"
   }
 }

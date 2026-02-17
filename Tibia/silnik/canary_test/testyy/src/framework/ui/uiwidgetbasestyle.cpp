@@ -100,6 +100,12 @@ void UIWidget::parseBaseStyle(const OTMLNodePtr& styleNode)
             setMinHeight(node->value<int>());
         else if (node->tag() == "max-height")
             setMaxHeight(node->value<int>());
+        else if (node->tag() == "auto-fit-parent")
+            setAutoFitParent(node->value<bool>());
+        else if (node->tag() == "auto-fit-parent-width")
+            setAutoFitParentWidth(node->value<bool>());
+        else if (node->tag() == "auto-fit-parent-height")
+            setAutoFitParentHeight(node->value<bool>());
         else if (node->tag() == "rect")
             setRect(node->value<Rect>());
         else if (node->tag() == "background")

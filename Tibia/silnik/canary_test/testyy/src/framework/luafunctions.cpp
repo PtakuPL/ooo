@@ -517,6 +517,10 @@ void Application::registerLuaFunctions()
     g_lua.bindClassMemberFunction<UIWidget>("setPhantom", &UIWidget::setPhantom);
     g_lua.bindClassMemberFunction<UIWidget>("setDraggable", &UIWidget::setDraggable);
     g_lua.bindClassMemberFunction<UIWidget>("setFixedSize", &UIWidget::setFixedSize);
+    g_lua.bindClassMemberFunction<UIWidget>("setAutoFitParent", &UIWidget::setAutoFitParent);
+    g_lua.bindClassMemberFunction<UIWidget>("setAutoFitParentWidth", &UIWidget::setAutoFitParentWidth);
+    g_lua.bindClassMemberFunction<UIWidget>("setAutoFitParentHeight", &UIWidget::setAutoFitParentHeight);
+    g_lua.bindClassMemberFunction<UIWidget>("isAutoFitParent", &UIWidget::isAutoFitParent);
     g_lua.bindClassMemberFunction<UIWidget>("setClipping", &UIWidget::setClipping);
     g_lua.bindClassMemberFunction<UIWidget>("setLastFocusReason", &UIWidget::setLastFocusReason);
     g_lua.bindClassMemberFunction<UIWidget>("setAutoFocusPolicy", &UIWidget::setAutoFocusPolicy);

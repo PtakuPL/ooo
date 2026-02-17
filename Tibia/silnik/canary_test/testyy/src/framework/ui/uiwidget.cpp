@@ -1067,6 +1067,10 @@ bool UIWidget::setRect(const Rect& rect)
     // updates own layout
     updateLayout();
 
+    // auto-fit-parent: if this widget overflows its parent, ask parent to grow
+    if (hasProp(PropAutoFitParentWidth) || hasProp(PropAutoFitParentHeight))
+        autoFitParent();
+
     // avoid massive update events
     if (!hasProp(PropUpdateEventScheduled)) {
         auto self = static_self_cast<UIWidget>();
@@ -1194,6 +1198,96 @@ void UIWidget::setFixedSize(const bool fixed)
 {
     setProp(PropFixedSize, fixed);
     updateParentLayout();
+}
+
+void UIWidget::setAutoFitParent(bool enabled)
+{
+    setProp(PropAutoFitParentWidth, enabled);
+    setProp(PropAutoFitParentHeight, enabled);
+}
+
+void UIWidget::autoFitParent()
+{
+    const auto& parent = getParent();
+    if (!parent || parent->isDestroyed())
+        return;
+
+    // Check if this child is anchored to parent on BOTH sides in an axis.
+    // If so, do NOT propagate in that axis — the child is "stretched" by anchors
+    // and would cause an infinite resize loop.
+    bool skipWidth = false;
+    bool skipHeight = false;
+
+    if (const auto& anchorLayout = parent->getAnchoredLayout()) {
+        // Note: getAnchoredLayout() checks parent->parent's layout, not parent's.
+        // We need parent's layout to check OUR anchors.
+    }
+
+    // Use our own getAnchorsGroup() which looks at parent's layout
+    if (isAnchored()) {
+        const auto& anchors = getAnchorsGroup();
+        bool anchoredLeft = false, anchoredRight = false;
+        bool anchoredTop = false, anchoredBottom = false;
+
+        for (const auto& anchor : anchors) {
+            // Check if this anchor hooks to the parent widget
+            auto hookedWidget = anchor->getHookedWidget(static_self_cast<UIWidget>(), parent);
+            if (hookedWidget == parent) {
+                Fw::AnchorEdge anchoredEdge = anchor->getAnchoredEdge();
+                if (anchoredEdge == Fw::AnchorLeft) anchoredLeft = true;
+                else if (anchoredEdge == Fw::AnchorRight) anchoredRight = true;
+                else if (anchoredEdge == Fw::AnchorTop) anchoredTop = true;
+                else if (anchoredEdge == Fw::AnchorBottom) anchoredBottom = true;
+            }
+        }
+
+        // If anchored on both sides to parent, skip that axis
+        if (anchoredLeft && anchoredRight) skipWidth = true;
+        if (anchoredTop && anchoredBottom) skipHeight = true;
+    }
+
+    bool fitWidth = hasProp(PropAutoFitParentWidth) && !skipWidth;
+    bool fitHeight = hasProp(PropAutoFitParentHeight) && !skipHeight;
+
+    if (!fitWidth && !fitHeight)
+        return;
+
+    const auto& parentPaddingRect = parent->getPaddingRect();
+    const auto& childRect = getRect();
+    bool needsResize = false;
+    int newParentWidth = parent->getWidth();
+    int newParentHeight = parent->getHeight();
+
+    if (fitWidth) {
+        int childRight = childRect.right() + getMarginRight();
+        int parentContentRight = parentPaddingRect.right();
+
+        if (childRight > parentContentRight) {
+            int overflow = childRight - parentContentRight;
+            newParentWidth += overflow;
+            needsResize = true;
+        }
+    }
+
+    if (fitHeight) {
+        int childBottom = childRect.bottom() + getMarginBottom();
+        int parentContentBottom = parentPaddingRect.bottom();
+
+        if (childBottom > parentContentBottom) {
+            int overflow = childBottom - parentContentBottom;
+            newParentHeight += overflow;
+            needsResize = true;
+        }
+    }
+
+    if (needsResize) {
+        // Deferred resize to avoid recursion in setRect() -> updateLayout() -> setRect()
+        auto parentPtr = parent;
+        g_dispatcher.deferEvent([parentPtr, newParentWidth, newParentHeight] {
+            if (!parentPtr->isDestroyed())
+                parentPtr->resize(newParentWidth, newParentHeight);
+        });
+    }
 }
 
 void UIWidget::setLastFocusReason(const Fw::FocusReason reason)

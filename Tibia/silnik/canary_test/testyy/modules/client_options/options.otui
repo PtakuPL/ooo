@@ -1,12 +1,16 @@
 OptionsCategory < UIWidget
-  size: 115 22
+  min-width: 115
+  height: 22
+  auto-fit-parent-width: true
   image-source: /images/game/actionbar/1pixel-down-frame
   image-border: 5
   UIWidget
     id: Button
-    size: 115 20
     anchors.top: parent.top
     anchors.left: parent.left
+    anchors.right: parent.right
+    height: 20
+    auto-fit-parent-width: true
     margin-left: 1
     margin-top: 1
     image-source: /images/ui/button-grey-up
@@ -36,6 +40,7 @@ OptionsCategory < UIWidget
       margin-left: 10
       text-align: center
       text-auto-resize: true
+      auto-fit-parent-width: true
       !text: tr("otclient_modules.options_otui.tr_3")
       color: #ffffff
       font: noto-12
@@ -115,6 +120,8 @@ OptionScaleScrollMarked < Label
 
 MainWindow
   id: optionsWindow
+  min-width: 686
+  min-height: 534
   size: 686 534
   anchors.centerIn: parent
   visible: false
@@ -164,7 +171,9 @@ MainWindow
     margin-top: -10
     image-border: 3
     image-source: /images/ui/2pixel_up_frame_borderimage_dark
-    size: 128 453
+    min-width: 128
+    height: 453
+    auto-fit-parent-width: true
 
   QtPanel
     id: optionsTabContent

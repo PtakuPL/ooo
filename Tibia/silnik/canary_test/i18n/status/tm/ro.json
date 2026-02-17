@@ -57174,5 +57174,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:18:08.062678Z"
+  },
+  "npc.imbul.stdmod_2": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Poate alta data.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.512219Z"
+  },
+  "npc.inkaef.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Deci îmi ceri un {{}} pentru a-ți începe aventura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.521118Z"
+  },
+  "npc.inkaef.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Ce? Ți-am dat deja unul {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.521606Z"
+  },
+  "npc.inkaef.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Bine atunci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.521935Z"
+  },
+  "npc.iptar-sin.stdmod_2": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Aceasta este o binecuvântare specială pe care ți-o pot acorda odată ce ai obținut cel puțin una dintre celelalte binecuvântări și care funcționează puțin diferit. ... \\z\n\tFuncționează doar atunci când ești ucis de alți aventurieri, ceea ce înseamnă că cel puțin jumătate din daunele care au dus la moartea ta au fost cauzate de alții, nu de monștri sau de mediu. ... \\z\n\t{twist of fate} nu va reduce pedeapsa cu moartea la fel ca celelalte binecuvântări, ci, în schimb, vă va împiedica să vă pierdeți celelalte binecuvântări, precum și amuleta pierderii, dacă purtați una. Costa la fel ca si celelalte binecuvantari. ... \\z\n\tȚi-ar plăcea să primești acea protecție pentru un sacrificiu de |PVPBLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.524530Z"
+  },
+  "npc.iptar_sin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.525493Z"
+  },
+  "npc.iptar_sin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.526125Z"
+  },
+  "npc.iptar_sin.stdmod_11": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vrei să înlocuiești gratis piatra de aventurier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.526640Z"
+  },
+  "npc.iptar_sin.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.526984Z"
+  },
+  "npc.iptar_sin.stdmod_14": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vrei să înlocuiești piatra de aventurier cu 30 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.527721Z"
+  },
+  "npc.iptar_sin.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.528184Z"
+  },
+  "npc.iptar_sin.stdmod_16": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.528588Z"
+  },
+  "npc.iptar_sin.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.529252Z"
+  },
+  "npc.iptar_sin.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.530175Z"
+  },
+  "npc.iptar_sin.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.531329Z"
+  },
+  "npc.iptar_sin.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.532098Z"
+  },
+  "npc.iptar_sin.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.532740Z"
+  },
+  "npc.iptar_sin.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.533388Z"
+  },
+  "npc.iptar_sin.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.534112Z"
+  },
+  "npc.iptar_sin.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.534860Z"
+  },
+  "npc.iptar_sin.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.535593Z"
+  },
+  "npc.iptar_sin.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.536158Z"
+  },
+  "npc.iptar_sin.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.536847Z"
+  },
+  "npc.iptar_sin.stdmod_3": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Da, am fost informat ce să fac. Ești pregătit să primești rândul meu de rugăciune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.537445Z"
+  },
+  "npc.iptar_sin.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.538155Z"
+  },
+  "npc.iptar_sin.stdmod_7": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Ai primit deja rândul meu de rugăciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.539138Z"
+  },
+  "npc.iptar_sin.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.539637Z"
+  },
+  "npc.iptar_sin.stdmod_9": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.540103Z"
+  },
+  "npc.irea.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.541013Z"
+  },
+  "npc.irmana.say_16": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.543110Z"
+  },
+  "npc.irmana.say_23": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.543946Z"
+  },
+  "npc.irmana.say_30": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.545049Z"
+  },
+  "npc.irmana.say_31": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Nu ești în acea misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.545585Z"
+  },
+  "npc.irmana.say_8": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.547775Z"
+  },
+  "npc.ishebad.farewell_msg_1": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.548678Z"
+  },
+  "npc.ishebad.walkaway_msg_1": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.549285Z"
+  },
+  "npc.ishina.farewell_msg_1": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Binecuvântările lui Daraman și la revedere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.549743Z"
+  },
+  "npc.ishina.stdmod_1": {
+    "src_hash": "01c65da6145b2845afbd50f7f6889ba8",
+    "text": "Sunt bijutier. Poate vrei să arunci o privire la minunatul meu {offers}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.550844Z"
+  },
+  "npc.ishina.stdmod_2": {
+    "src_hash": "b379a76d52dfe00ad52b65fa0df314a1",
+    "text": "Ei bine, vând pietre prețioase și {goblets}. Dacă doriți să vedeți ofertele mele, cereți-mi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.551453Z"
+  },
+  "npc.ishina.stdmod_3": {
+    "src_hash": "6b6bd2ca4db86d0ce37183489f84158d",
+    "text": "Ah, cel mai nou import al nostru! Avem cupe de aur, cupe de argint și cupe de bronz. Toate au spațiu pentru o dedicație scrisă de mână.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.552178Z"
+  },
+  "npc.ishina.walkaway_msg_1": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Binecuvântările lui Daraman și la revedere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:23:31.552598Z"
   }
 }

@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:29:36.768777Z"
+    "updated_at": "2026-02-17T09:39:49.639070Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:29:41.996681Z"
+    "updated_at": "2026-02-17T09:39:54.998056Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -150678,5 +150678,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:29:58.578616Z"
+  },
+  "spell.heal_party.name": {
+    "src_hash": "a03861214b516b1b1d429e85e91a02d4",
+    "text": "Sanar Party",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:05.717256Z"
+  },
+  "spell.heal_party.words": {
+    "src_hash": "24dae5842d56d27e49c982a172cf5261",
+    "text": "utura mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:05.717581Z"
+  },
+  "spell.train_party.words": {
+    "src_hash": "94632b67e680c87846d35c41110a5c3e",
+    "text": "utito mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:05.717885Z"
+  },
+  "spell.protect_party.words": {
+    "src_hash": "4d74f2148f8099d6c3e87dd03efd824c",
+    "text": "utamo mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:05.718265Z"
+  },
+  "spell.kick.name": {
+    "src_hash": "f4adc489c87a7e7dcc9f96647a7950c8",
+    "text": "Patada a la casa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:08.589711Z"
+  },
+  "spell.protector.words": {
+    "src_hash": "0ebaec3ac9284a31b4fff712947a610f",
+    "text": "utamo tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:10.793277Z"
+  },
+  "spell.avatar_of_steel.words": {
+    "src_hash": "eb1cff6cbeb56c1db93a8c6868b77ac3",
+    "text": "uteta res eq",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:40:10.793608Z"
   }
 }

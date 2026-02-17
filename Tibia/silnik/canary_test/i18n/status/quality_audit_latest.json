@@ -1,59 +1,18 @@
 {
-  "timestamp": "2026-02-17T09:38:43.491162Z",
+  "timestamp": "2026-02-17T09:40:14.672872Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 34,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 6,
+    "identical_to_en": 18,
+    "identical_to_en_exempt": 8,
     "artifact_token": 16,
-    "suspicious_log_high": 174,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 189,
-    "suspicious_rejected_high": 11
+    "suspicious_log_high": 153,
+    "suspicious_log_critical": 32,
+    "suspicious_log_low": 15,
+    "suspicious_rejected_critical": 190,
+    "suspicious_rejected_high": 10
   },
   "issues": [
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
     {
       "key": "monster.dharalion.desc",
       "lang": "ro",
@@ -193,6 +152,104 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "spell.fire_bomb_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo mas flam",
+      "translated": "adevo mas flam"
+    },
+    {
+      "key": "spell.explosion_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo mas hur",
+      "translated": "adevo mas hur"
+    },
+    {
+      "key": "spell.fire_field_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo grav flam",
+      "translated": "adevo grav flam"
+    },
+    {
+      "key": "spell.magic_wall_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo grav tera",
+      "translated": "adevo grav tera"
+    },
+    {
+      "key": "spell.soulfire_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo res flam",
+      "translated": "adevo res flam"
+    },
+    {
+      "key": "spell.light_magic_missile_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adori min vis",
+      "translated": "adori min vis"
+    },
+    {
+      "key": "spell.conjure_explosive_arrow.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exevo con flam",
+      "translated": "exevo con flam"
+    },
+    {
+      "key": "spell.conjure_sniper_arrow.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exevo con hur",
+      "translated": "exevo con hur"
+    },
+    {
+      "key": "spell.thunderstorm_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adori mas vis",
+      "translated": "adori mas vis"
+    },
+    {
+      "key": "spell.heal_party.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utura mas sio",
+      "translated": "utura mas sio"
+    },
+    {
+      "key": "spell.train_party.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utito mas sio",
+      "translated": "utito mas sio"
+    },
+    {
+      "key": "spell.protect_party.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utamo mas sio",
+      "translated": "utamo mas sio"
+    },
+    {
+      "key": "spell.protector.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utamo tempo",
+      "translated": "utamo tempo"
+    },
+    {
+      "key": "spell.avatar_of_steel.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "uteta res eq",
+      "translated": "uteta res eq"
     }
   ],
   "threshold": 10,

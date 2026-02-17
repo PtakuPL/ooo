@@ -85633,19 +85633,19 @@
   },
   "spell.disintegrate_rune.name": {
     "src_hash": "0d4e46f32dddecba7427f32c940bfbab",
-    "text": "Disintegrate Rune",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Runa Dezintegracji",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T12:17:59.998864Z"
+    "updated_at": "2026-02-17T09:39:36.303401Z"
   },
   "spell.soulfire_rune.name": {
     "src_hash": "257c83cad3d15e83a4e80b2b426468ea",
-    "text": "Soulfire Rune",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Runa Ognia Duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T12:18:00.000200Z"
+    "updated_at": "2026-02-17T09:39:36.303643Z"
   },
   "spell.destroy_field_rune.name": {
     "src_hash": "b6fe1c4fe04d9b34729bbbf491c41a40",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:28:59.913759Z"
+    "updated_at": "2026-02-17T09:39:12.557446Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:28:59.914733Z"
+    "updated_at": "2026-02-17T09:39:12.558360Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -115718,5 +115718,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:32:11.057423Z"
+  },
+  "spell.fire_bomb_rune.words": {
+    "src_hash": "a7612568623118009c3032d2810a0c67",
+    "text": "adevo mas flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:32.725745Z"
+  },
+  "spell.explosion_rune.words": {
+    "src_hash": "73f08a3adbe2607348897be0d1ce7c25",
+    "text": "adevo mas hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:32.726106Z"
+  },
+  "spell.fire_field_rune.words": {
+    "src_hash": "8129ae1c042c31abe52b6c3340f3a756",
+    "text": "adevo grav flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:32.726531Z"
+  },
+  "spell.magic_wall_rune.words": {
+    "src_hash": "025c756afa4ec05a3b11309e04b13523",
+    "text": "adevo grav tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:36.303067Z"
+  },
+  "spell.soulfire_rune.words": {
+    "src_hash": "a43f5a5fbf47df8503bc58a019f3897f",
+    "text": "adevo res flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:36.304018Z"
+  },
+  "spell.light_magic_missile_rune.words": {
+    "src_hash": "576979ad3a49131eea0355f9b72b0d9e",
+    "text": "adori min vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:36.304369Z"
+  },
+  "spell.conjure_explosive_arrow.words": {
+    "src_hash": "6e6a797430eabca5c9dc66168f4f9c1e",
+    "text": "exevo con flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:38.518953Z"
+  },
+  "spell.conjure_sniper_arrow.words": {
+    "src_hash": "188415e3c2d0005a05bf6761a023065e",
+    "text": "exevo con hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:38.519283Z"
+  },
+  "spell.thunderstorm_rune.words": {
+    "src_hash": "e27eae12c82627461770094121486692",
+    "text": "adori mas vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:39:38.519567Z"
   }
 }

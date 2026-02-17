@@ -1,46 +1,16 @@
 {
-  "timestamp": "2026-02-17T06:17:58.456281Z",
+  "timestamp": "2026-02-17T06:20:10.870278Z",
   "checked_entries": 100,
-  "issues_found": 11,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 4,
     "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "suspicious_log_high": 143,
-    "suspicious_log_low": 10,
-    "suspicious_log_critical": 47,
+    "suspicious_log_high": 198,
+    "suspicious_log_critical": 2,
     "suspicious_rejected_critical": 174,
     "suspicious_rejected_high": 26
   },
   "issues": [
-    {
-      "key": "client.house.text1",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "MapLayerSelector",
-      "translated": "MapLayerSelector"
-    },
-    {
-      "key": "client.utils.text1",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Castlemania",
-      "translated": "Castlemania"
-    },
-    {
-      "key": "client.house.text1",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "MapLayerSelector",
-      "translated": "MapLayerSelector"
-    },
-    {
-      "key": "client.boss_slots.text2",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "RightBase",
-      "translated": "RightBase"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -92,5 +62,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

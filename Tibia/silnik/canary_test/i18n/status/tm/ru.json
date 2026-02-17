@@ -32902,5 +32902,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:17:00.540346Z"
+  },
+  "system.blessing.already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Вы уже благословлены.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:10.784409Z"
+  },
+  "system.trade.sold": {
+    "src_hash": "a2ec0e69a43437b9b2ff11e230e55e41",
+    "text": "Продано {1}x {2} за {3} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:14.034550Z"
+  },
+  "system.trade.bought": {
+    "src_hash": "354756b02d75b63038a4fe1cdf5d1bbd",
+    "text": "Купили {1}x {2} за {3} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:14.035111Z"
+  },
+  "system.blessing.received": {
+    "src_hash": "b072630fb80afe0c27894f87f325d9dc",
+    "text": "Вы получили оставшиеся благословения {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:14.035511Z"
+  },
+  "system.experience.gained": {
+    "src_hash": "8670aa2f26b8327fb6286160f7cb2f44",
+    "text": "Вы получили {1} очков опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:14.035890Z"
+  },
+  "system.mission.points": {
+    "src_hash": "8e80694334610665724d4593ddddc675",
+    "text": "Вы заработали {1} баллов за выполнение миссии {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:14.036298Z"
+  },
+  "system.mount.received": {
+    "src_hash": "23964ff2a518809ff155f108db6fdb2b",
+    "text": "Поздравляем, вы получили крепление {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:17.780604Z"
+  },
+  "system.item.received": {
+    "src_hash": "3b32c150490e96a01dbf112a275827e5",
+    "text": "Вы получили {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:17.780904Z"
+  },
+  "system.stash.count": {
+    "src_hash": "956e4382d83b9d1c7b37c56c7117a623",
+    "text": "В вашем запасе содержится {1} предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:17.781307Z"
+  },
+  "system.venture.decay": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Встаньте на путь распада!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:17.781633Z"
   }
 }

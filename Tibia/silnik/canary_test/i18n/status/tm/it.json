@@ -53774,5 +53774,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:16:21.409759Z"
+  },
+  "misc.bank_system.say_50": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Non hai abbastanza oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.870769Z"
+  },
+  "misc.bank_system.say_51": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Come si desidera. C'è qualcos'altro che posso fare per te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.871298Z"
+  },
+  "misc.bank_system.say_58": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Come si desidera. C'è qualcos'altro che posso fare per te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.872162Z"
+  },
+  "misc.bank_system.say_6": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.872777Z"
+  },
+  "misc.bank_system.say_64": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.873522Z"
+  },
+  "misc.bank_system.say_65": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "Compila questo campo con la persona che riceverà il tuo oro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.873988Z"
+  },
+  "misc.bank_system.say_67": {
+    "src_hash": "a0e570ed761553fb2537a4fc5b6a51e0",
+    "text": "Va bene, c'è qualcos'altro che posso fare per te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.874700Z"
+  },
+  "misc.bank_system.say_8": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.875469Z"
+  },
+  "misc.bank_system.say_9": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Non c'è abbastanza oro sul tuo conto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:21.876032Z"
+  },
+  "misc.bank_system.say_52": {
+    "src_hash": "c57b1e870215b4f06aa82b33171dc20c",
+    "text": "Mi dispiace ma sembra che tu non faccia attualmente parte di nessuna gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:26.489874Z"
+  },
+  "misc.bank_system.say_53": {
+    "src_hash": "0358cd302579864273dd1b1b81f6f12e",
+    "text": "Solo i leader o i vice leader della gilda possono prelevare denaro dal conto della gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:26.490347Z"
+  },
+  "misc.bank_system.say_54": {
+    "src_hash": "ce3853ad8ba9e162452ef0403288a0e0",
+    "text": "Sei sicuro di voler prelevare {0} oro dal tuo account di gilda?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:26.490732Z"
+  },
+  "misc.bank_system.say_55": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Non c'è abbastanza oro sul tuo account di gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:26.491094Z"
+  },
+  "misc.bank_system.say_56": {
+    "src_hash": "ce2882f5828aed19f9a5bebe158ab7a9",
+    "text": "Per favore dimmi quanto oro vorresti prelevare dal tuo account di gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:26.491477Z"
+  },
+  "misc.bank_system.say_57": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Non c'è abbastanza oro sul tuo account di gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:30.670793Z"
+  },
+  "misc.bank_system.say_59": {
+    "src_hash": "c57b1e870215b4f06aa82b33171dc20c",
+    "text": "Mi dispiace ma sembra che tu non faccia attualmente parte di nessuna gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:30.671185Z"
+  },
+  "misc.bank_system.say_60": {
+    "src_hash": "51be1d2886906a2efbb6077aa1cd824d",
+    "text": "Solo i leader o i vice leader della gilda possono trasferire denaro dal conto della gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:30.671588Z"
+  },
+  "misc.bank_system.say_61": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Non c'è abbastanza oro sul tuo account di gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:30.671948Z"
+  },
+  "misc.bank_system.say_62": {
+    "src_hash": "80a348875c4550674a7da85ac7f56a22",
+    "text": "Per favore dimmi la quantità di oro che vorresti trasferire a una gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:30.672370Z"
+  },
+  "misc.bank_system.say_63": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Non c'è abbastanza oro sul tuo account di gilda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:36.939871Z"
+  },
+  "misc.bank_system.say_66": {
+    "src_hash": "0c15e581d4392f78000906f8cc0f71b0",
+    "text": "Questa gilda non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:36.940169Z"
+  },
+  "misc.bank_system.say_7": {
+    "src_hash": "f355a66a40adb778f8e218cf45e255d3",
+    "text": "Per favore dimmi quanto oro vorresti prelevare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:36.940501Z"
+  },
+  "npclib.bank_system.say_1": {
+    "src_hash": "6eed737e97c173046cb705428c897583",
+    "text": "Abbiamo effettuato un ordine per trasferire {} oro dal tuo account di gilda alla gilda {}.  Controlla la tua casella di posta per la conferma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:36.941002Z"
+  },
+  "npclib.bank_system.say_10": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Vorresti davvero depositare {} oro sul tuo {guild account}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:36.941367Z"
+  },
+  "npclib.bank_system.say_11": {
+    "src_hash": "6887d1bc7d3f3c653c2c09fbf93b0423",
+    "text": "Il saldo del tuo account di gilda è {} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:43.869537Z"
+  },
+  "npclib.bank_system.say_12": {
+    "src_hash": "73ebda8add241ec9774bcc92e9aac019",
+    "text": "Quindi vorresti che cambiassi {} delle tue monete di cristallo in {} monete di platino per te?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:43.869977Z"
+  },
+  "npclib.bank_system.say_13": {
+    "src_hash": "f8e1a62393dac9f71b8e8a19df724d6e",
+    "text": "Quindi vorresti che cambiassi {} delle tue monete di platino in {} monete di cristallo per te?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:43.870494Z"
+  },
+  "npclib.bank_system.say_14": {
+    "src_hash": "a9fe7c3d39f783b5b22236afb80fa2b0",
+    "text": "Quindi vorresti che cambiassi {} delle tue monete di platino in {} monete d'oro per te?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:43.870908Z"
+  },
+  "npclib.bank_system.say_15": {
+    "src_hash": "35bfe2c57d0b9594f3d66ed1c6260b23",
+    "text": "Quindi vorresti che cambiassi {} delle tue monete d'oro in {} monete di platino?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:43.871297Z"
+  },
+  "npclib.bank_system.say_16": {
+    "src_hash": "cc6d13ca2a9f3fbf27a2e89c63b54782",
+    "text": "Ottimo. Hai trasferito {} oro a {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:48.537375Z"
+  },
+  "npclib.bank_system.say_17": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Quindi vorresti trasferire {} oro su {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:48.537717Z"
+  },
+  "npclib.bank_system.say_18": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "A chi vorresti trasferire {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:48.538157Z"
+  },
+  "npclib.bank_system.say_19": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "A chi vorresti trasferire {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:48.538512Z"
+  },
+  "npclib.bank_system.say_2": {
+    "src_hash": "b8045be4d69a1763526040613fcac092",
+    "text": "Quindi vorresti trasferire {} oro dal tuo account di gilda alla gilda {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:48.538936Z"
+  },
+  "npclib.bank_system.say_20": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Quindi vorresti trasferire {} oro su {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:53.087718Z"
+  },
+  "npclib.bank_system.say_21": {
+    "src_hash": "e4bd960221e7abd220baab13bb60552b",
+    "text": "Aspetta, non hai abbastanza spazio nello zaino per portare tutte queste monete.\nNon voglio che li lasciate a terra, magari tornate quando avrete più spazio nello zaino!\nRiceverai {} stack di cristallo ({} monete), {} stack di platino ({} monete) e {} stack d'oro ({} monete). Assicurati di avere almeno {} posti liberi nel tuo zaino.\n",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:53.088901Z"
+  },
+  "npclib.bank_system.say_22": {
+    "src_hash": "0ad7da1f6fa56d62c2ade5462ea9a2ff",
+    "text": "Ecco qua, {} oro. Per favore, fammi sapere se c'è qualcos'altro che posso fare per te.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:53.089375Z"
+  },
+  "npclib.bank_system.say_23": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:53.089742Z"
+  },
+  "npclib.bank_system.say_24": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo conto bancario?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:53.090124Z"
+  },
+  "npclib.bank_system.say_25": {
+    "src_hash": "7b408623e63487c5e182309cc9cdb9f6",
+    "text": "Perfetto, abbiamo aggiunto la quantità di {} oro al tuo {balance}. \\z\n                               Puoi {withdraw} i tuoi soldi ogni volta che vuoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:58.001298Z"
+  },
+  "npclib.bank_system.say_26": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:58.001630Z"
+  },
+  "npclib.bank_system.say_27": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:58.001937Z"
+  },
+  "npclib.bank_system.say_28": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:58.002304Z"
+  },
+  "npclib.bank_system.say_29": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:18:58.002612Z"
+  },
+  "npclib.bank_system.say_3": {
+    "src_hash": "932405ed00983a70764473feb855e5aa",
+    "text": "A quale gilda vorresti trasferire {} oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:04.874587Z"
+  },
+  "npclib.bank_system.say_30": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Il saldo del tuo account è {} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:04.874925Z"
+  },
+  "npclib.bank_system.say_31": {
+    "src_hash": "954fc55b069353479168c1610b4fe945",
+    "text": "Sicuramente hai guadagnato un bel soldo. \\z\n                           Il saldo del tuo account è {} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:04.875416Z"
+  },
+  "npclib.bank_system.say_32": {
+    "src_hash": "8115996744249c24b181f8afb16dc1d1",
+    "text": "Wow, hai raggiunto la cifra magica del milione di mo!!! \\z\n                           Il saldo del tuo account è {} oro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:04.875956Z"
+  },
+  "npclib.bank_system.say_33": {
+    "src_hash": "0aaf4f9932c0e5bdbf4bf17953b54254",
+    "text": "Hai guadagnato dieci milioni e cresce ancora! \\z\n                           Il saldo del tuo account è {} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:04.876462Z"
+  },
+  "npclib.bank_system.say_34": {
+    "src_hash": "e44e53dbc4e7148edbeb5ed74a540067",
+    "text": "Penso che tu debba essere uno degli abitanti più ricchi del mondo! \\z\n                           Il saldo del tuo account è {} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:06.863601Z"
   }
 }

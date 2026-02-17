@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:35:32.336974Z"
+    "updated_at": "2026-02-17T06:19:34.116683Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75269,7 +75269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:35:34.876480Z"
+    "updated_at": "2026-02-17T06:19:36.706408Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75277,7 +75277,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:35:34.876933Z"
+    "updated_at": "2026-02-17T06:19:36.706931Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75285,7 +75285,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:35:34.877335Z"
+    "updated_at": "2026-02-17T06:19:36.707349Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -113670,5 +113670,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:02:39.590257Z"
+  },
+  "item.16190.name": {
+    "src_hash": "4900c13d1b567046d3fb0d0b23f792bc",
+    "text": "martwy wahacz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:39.906518Z"
+  },
+  "item.16191.name": {
+    "src_hash": "4900c13d1b567046d3fb0d0b23f792bc",
+    "text": "martwy wahacz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:39.906726Z"
+  },
+  "item.16192.name": {
+    "src_hash": "4900c13d1b567046d3fb0d0b23f792bc",
+    "text": "martwy wahacz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:43.239972Z"
+  },
+  "item.16193.name": {
+    "src_hash": "4900c13d1b567046d3fb0d0b23f792bc",
+    "text": "martwy wahacz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:43.240184Z"
+  },
+  "item.16194.name": {
+    "src_hash": "1f50b38a5702d7218a2680f518b9a886",
+    "text": "martwy kruszyciel kryształów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:43.240449Z"
+  },
+  "item.16195.name": {
+    "src_hash": "1f50b38a5702d7218a2680f518b9a886",
+    "text": "martwy kruszyciel kryształów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:43.240738Z"
+  },
+  "item.16196.name": {
+    "src_hash": "1f50b38a5702d7218a2680f518b9a886",
+    "text": "martwy kruszyciel kryształów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:43.240991Z"
+  },
+  "item.16197.name": {
+    "src_hash": "1f50b38a5702d7218a2680f518b9a886",
+    "text": "martwy kruszyciel kryształów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:50.854807Z"
+  },
+  "item.16198.desc": {
+    "src_hash": "f6e71fec012f832d968be2d5fa255e19",
+    "text": "Użyj tego posągu, aby trenować umiejętność walki mieczem i tarczy w trybie offline.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:50.855488Z"
+  },
+  "item.16199.desc": {
+    "src_hash": "7f68d76873af2bb1edfe010bca3a688f",
+    "text": "Użyj tego posągu, aby trenować umiejętność walki toporem i tarczy w trybie offline.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:50.855941Z"
+  },
+  "item.16200.desc": {
+    "src_hash": "7ef9bd1cc5a2a0699766c2b34237a24f",
+    "text": "Użyj tej statuetki, aby trenować umiejętności walki klubowej i tarczy w trybie offline.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:50.856473Z"
+  },
+  "item.16201.desc": {
+    "src_hash": "be40a959dbe8d377b56cc1be681b16e9",
+    "text": "Użyj tego posągu, aby trenować umiejętność walki na odległość i tarczy w trybie offline.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:50.856930Z"
+  },
+  "item.16202.desc": {
+    "src_hash": "75f02b8082acf7b2a15b245eb237dbbf",
+    "text": "Użyj tego posągu, aby wyszkolić swój poziom magii i umiejętności tarczy w trybie offline.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:57.248778Z"
+  },
+  "item.16203.name": {
+    "src_hash": "a2be34a687f6932731ef67aa778253ee",
+    "text": "drewniana podłoga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:57.249016Z"
+  },
+  "item.16206.name": {
+    "src_hash": "9a10cf5ca78fd0d0d711824e63c92031",
+    "text": "Bicz Abyssadora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:57.249237Z"
+  },
+  "item.16229.name": {
+    "src_hash": "78cb5eb58fe19318c8fbe6168df6630c",
+    "text": "ogon Abyssadora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:57.249451Z"
+  },
+  "item.16230.name": {
+    "src_hash": "36f4dee39b682b4a3e358d8866c98595",
+    "text": "tors Abyssadora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:19:57.249662Z"
+  },
+  "item.16231.name": {
+    "src_hash": "60dd35df8701a6180de913660c962348",
+    "text": "głowa Abyssadora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:03.360921Z"
+  },
+  "item.16232.name": {
+    "src_hash": "2a5cdafb9b85f72fa58aae9c5fc3fd0f",
+    "text": "posąg Abyssadora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:03.361178Z"
+  },
+  "item.16233.name": {
+    "src_hash": "6757c7d97a333030e660ab9409e9d481",
+    "text": "nogi Deathstrike'a",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:03.361412Z"
+  },
+  "item.16234.name": {
+    "src_hash": "c694b57540ae11c6b43f7ba8a562fb9a",
+    "text": "tors Deathstrike'a",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:03.361634Z"
+  },
+  "item.16235.name": {
+    "src_hash": "27e2c5018c0d31f898425d49bc825765",
+    "text": "szef Deathstrike’a",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:03.361868Z"
+  },
+  "item.16236.name": {
+    "src_hash": "fadc080a1c3ccd2aeb1bcaa909b64996",
+    "text": "posąg Deathstrike'a",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:09.008725Z"
+  },
+  "item.16242.desc": {
+    "src_hash": "7cfcbac0b13d47511891df7c54c4ea9f",
+    "text": "Takie kryształy służą do ładowania teleporterów do stref wojennych",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:09.009163Z"
+  },
+  "item.16242.name": {
+    "src_hash": "e1b6371e1a8896f8502914c9ceff6abd",
+    "text": "czerwony kryształ teleportacyjny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:09.009442Z"
+  },
+  "item.16244.desc": {
+    "src_hash": "cb0509e22e5d66b93d457fc81fb377b1",
+    "text": "Może mieć pewne urocze efekty, gdy zostanie zagrane niektórym stworzeniom, ale znika w trakcie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:09.009930Z"
   }
 }

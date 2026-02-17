@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:17:56.616152Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T06:20:09.221240Z",
+  "language": "pl",
+  "json_file": "items.json",
+  "translated": 31,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "item.16196.name",
+      "en": "dead crystalcrusher",
+      "translated": "martwy kruszyciel kryształów",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "item.16197.name",
+      "en": "dead crystalcrusher",
+      "translated": "martwy kruszyciel kryształów",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "item.16198.desc",
+      "en": "Use this statue to train your sword fighting and shielding skill offline.",
+      "translated": "Użyj tego posągu, aby trenować umiejętność walki mieczem i tarczy w trybie offline.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "item.16199.desc",
+      "en": "Use this statue to train your axe fighting and shielding skill offline.",
+      "translated": "Użyj tego posągu, aby trenować umiejętność walki toporem i tarczy w trybie offline.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "item.16200.desc",
+      "en": "Use this statue to train your club fighting and shielding skill offline.",
+      "translated": "Użyj tej statuetki, aby trenować umiejętności walki klubowej i tarczy w trybie offline.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "item.16201.desc",
+      "en": "Use this statue to train your distance fighting and shielding skill offline.",
+      "translated": "Użyj tego posągu, aby trenować umiejętność walki na odległość i tarczy w trybie offline.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "item.16202.desc",
+      "en": "Use this statue to train your magic level and shielding skill offline.",
+      "translated": "Użyj tego posągu, aby wyszkolić swój poziom magii i umiejętności tarczy w trybie offline.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "item.16203.name",
+      "en": "timber floor",
+      "translated": "drewniana podłoga",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "item.16206.name",
+      "en": "Abyssador's lash",
+      "translated": "Bicz Abyssadora",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "item.16229.name",
+      "en": "tail of Abyssador",
+      "translated": "ogon Abyssadora",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "item.16230.name",
+      "en": "torso of Abyssador",
+      "translated": "tors Abyssadora",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "item.16231.name",
+      "en": "head of Abyssador",
+      "translated": "głowa Abyssadora",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "item.16232.name",
+      "en": "statue of Abyssador",
+      "translated": "posąg Abyssadora",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "item.16233.name",
+      "en": "legs of Deathstrike",
+      "translated": "nogi Deathstrike'a",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "item.16234.name",
+      "en": "torso of Deathstrike",
+      "translated": "tors Deathstrike'a",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "item.16235.name",
+      "en": "head of Deathstrike",
+      "translated": "szef Deathstrike’a",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "item.16236.name",
+      "en": "statue of Deathstrike",
+      "translated": "posąg Deathstrike'a",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "item.16242.desc",
+      "en": "Such crystals are used to charge the teleporters to the warzones",
+      "translated": "Takie kryształy służą do ładowania teleporterów do stref wojennych",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "item.16242.name",
+      "en": "red teleport crystal",
+      "translated": "czerwony kryształ teleportacyjny",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "item.16244.desc",
+      "en": "It may have some charming effects when played to certain creatures, but disappears in the process",
+      "translated": "Może mieć pewne urocze efekty, gdy zostanie zagrane niektórym stworzeniom, ale znika w trakcie",
+      "source": "google_translate"
     }
   ]
 }

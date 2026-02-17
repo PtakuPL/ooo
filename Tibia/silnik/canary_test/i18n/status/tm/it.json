@@ -33182,5 +33182,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:00:16.331300Z"
+  },
+  "player.task.dialog.wait_minutes": {
+    "src_hash": "cda0df54893788709391661268b98047",
+    "text": "Devi attendere {0} minuti per selezionare una nuova creatura per questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:42.228219Z"
+  },
+  "quest.dangerous_depths.earned_points_dwarves": {
+    "src_hash": "30afecc4939872faa0cdd1029e9e9129",
+    "text": "Hai guadagnato {0} punto/i nella missione dei nani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:46.405510Z"
+  },
+  "quest.dangerous_depths.earned_points_gnomes": {
+    "src_hash": "fe787fafead50b73c085785b9be0e04a",
+    "text": "Hai guadagnato {0} punto/i nella missione degli gnomi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:46.405877Z"
+  },
+  "quest.dangerous_depths.earned_points_scouts": {
+    "src_hash": "71451e3893f222fdf4d91f6bd53275fc",
+    "text": "Hai guadagnato {0} punto/i nella missione scout.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:46.406329Z"
+  },
+  "quest.soul_war.boss_progress_access": {
+    "src_hash": "1337a1c6d304b55bbdda0ec5e86719b6",
+    "text": "%s: Accesso raggiunto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:46.406590Z"
+  },
+  "quest.soul_war.boss_progress_kills": {
+    "src_hash": "c777297c890d2fddceabfceed9b0f495",
+    "text": "%s: %d/%d uccide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:50.095527Z"
+  },
+  "quest.soul_war.taint_gained": {
+    "src_hash": "138a4a527628e1ac82b2463b602bcbd2",
+    "text": "Hai ottenuto {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:50.095800Z"
+  },
+  "quest.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Le contaminazioni del tuo Goshnar sono state ripristinate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:50.096124Z"
+  },
+  "quest.soul_war.taints_reset_timeout": {
+    "src_hash": "bb82c84747742951025a074765dee261",
+    "text": "Le contaminazioni del tuo Goshnar sono state ripristinate. Non hai completato la missione in 14 giorni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:50.096529Z"
+  },
+  "quest.spike_task.fame_point_received": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Hai ricevuto un punto fama.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:50.096816Z"
+  },
+  "quests.world_board.fury_gate": {
+    "src_hash": "c0052987e5b85167c330b47e6ddcbb72",
+    "text": "Un cancello della Furia Ardente si è aperto vicino a una delle principali città da qualche parte in Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:53.491540Z"
+  },
+  "quests.world_board.sandstorm_coast": {
+    "src_hash": "25fd8563f2e744fd44ea4733d3575518",
+    "text": "Una tempesta di sabbia attraversa Darama, portando su isole piene di creature mortali all'interno di un incubo. Evita la costa più settentrionale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:53.492288Z"
+  },
+  "quests.world_board.sandstorm_drefia": {
+    "src_hash": "86f89a4ac6b0a450015d411eba40ef0e",
+    "text": "Una tempesta di sabbia attraversa Darama, portando su isole piene di creature mortali all'interno di un incubo. Evita il fiume vicino a Drefia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:53.492907Z"
+  },
+  "quests.world_board.sandstorm_tar": {
+    "src_hash": "4646872dabc13c2274cb07b8475665be",
+    "text": "Una tempesta di sabbia attraversa Darama, portando su isole piene di creature mortali all'interno di un incubo. Evita le fosse di catrame di Ankhramun!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:53.493428Z"
+  },
+  "scripts.achievement_functions.msg_1": {
+    "src_hash": "6e57553421d49c13fb1cd1d6eecf97ac",
+    "text": "Obiettivo {} aggiunto correttamente a {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:56.076198Z"
+  },
+  "scripts.achievement_functions.msg_2": {
+    "src_hash": "a4a0ae1d9883dcb6873c780607636bf2",
+    "text": "Obiettivo {} rimosso con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:56.076546Z"
+  },
+  "scripts.action-corym_works_doors.msg_1": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "La chiave forgiata apre la porta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:56.076846Z"
+  },
+  "scripts.action-corym_works_doors.msg_2": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "La chiave forgiata apre la porta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:56.077133Z"
+  },
+  "scripts.action-corym_works_doors.msg_3": {
+    "src_hash": "650e48efbf02c344c7811a4bbb0e4e90",
+    "text": "La chiave forgiata apre la porta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:56.077420Z"
+  },
+  "scripts.action-reward_soul_war.msg_1": {
+    "src_hash": "8dd6bdad28a27009f617c8b6206a0ba6",
+    "text": "Hai già ricevuto la tua ricompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:00.956407Z"
+  },
+  "scripts.action-reward_soul_war.msg_2": {
+    "src_hash": "b65bfafaf5faebcad1a444af4e9cb6f7",
+    "text": "Devi sconfiggere la megalomania di Goshnar per ricevere la tua ricompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:00.956816Z"
+  },
+  "scripts.action-reward_soul_war.msg_3": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "Hai trovato un {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:00.957084Z"
+  },
+  "scripts.action_all_hymn_piano_teleport.msg_1": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "Non hai imparato tutti i versi dell'inno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:00.957410Z"
+  },
+  "scripts.action_arena.msg_1": {
+    "src_hash": "10c3cc069e6379d1093db2dd28206d83",
+    "text": "Hai già finito questa battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:00.957721Z"
+  },
+  "scripts.action_arena.msg_2": {
+    "src_hash": "5a26f00c6bbf875549997309125895e2",
+    "text": "L'arena è già in uso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:06.944840Z"
+  },
+  "scripts.action_bag.msg_1": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Hai trovato una borsa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:06.945107Z"
+  },
+  "scripts.action_bag.msg_2": {
+    "src_hash": "2c586d4717b2579a30746ae8e8b0e491",
+    "text": "La libreria è vuota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:06.945376Z"
+  },
+  "scripts.action_beaver.say_1": {
+    "src_hash": "76ebbf3693cb1fd0c1b2dba34a26b65d",
+    "text": "Hai segnato l'albero, ma il suo ex abitante ti ha rubato l'esca! Prendilo prima che scappi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:06.945809Z"
+  },
+  "scripts.action_beaver.say_2": {
+    "src_hash": "e9873c92733c3122ad008d43fcab7271",
+    "text": "Hai contrassegnato l'albero ma sembra che qualcuno lo abbia già contrassegnato! Non è contento delle tue azioni e ha portato degli amici!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:06.946484Z"
+  },
+  "scripts.action_beaver.say_3": {
+    "src_hash": "79477227f7cf21264b4dd65357782bf8",
+    "text": "Hai segnato l'albero, ma hai anche fatto arrabbiare la famiglia di scoiattoli che viveva su di esso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:12.787481Z"
+  },
+  "scripts.action_boss.say_1": {
+    "src_hash": "01219f4a0de819027cf51e5318506d9e",
+    "text": "Finalmente.. ce l'ho di nuovo, il mio prezioso amuleto. Sono felice che tu non l'abbia usato! Ti permetto di...ahh... entrare nella porta...ahh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:12.788014Z"
+  },
+  "scripts.action_cat_basket.say_2": {
+    "src_hash": "32773a28a80d0bcb17a9edbdeea4076e",
+    "text": "Il gatto della regina non si diverte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:12.788316Z"
+  },
+  "scripts.action_contract.say_1": {
+    "src_hash": "c8f125b3cb6febc023f9cd84ad3cef27",
+    "text": "Tu firmi il contratto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:12.788569Z"
+  },
+  "scripts.action_crate.say_1": {
+    "src_hash": "fca452ef18abc7cc68df7f167ef8ad06",
+    "text": "Il tuo fischio innocente li ingannerà tutti...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:12.788903Z"
+  },
+  "scripts.action_cushion.say_2": {
+    "src_hash": "ff65be0caa3604016fe9f73079073310",
+    "text": "*ridacchia maniacalmente*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:16.660913Z"
+  },
+  "scripts.action_disguise.say_1": {
+    "src_hash": "14794b706ca5c231c49db8ec9262f013",
+    "text": "Ora sei travestito da mummia per 10 secondi. Sbrigati e spaventa il califfo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:16.661318Z"
+  },
+  "scripts.action_hidden_note.msg_1": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Hai trovato un pezzo di carta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:16.661610Z"
+  },
+  "scripts.action_horn.say_1": {
+    "src_hash": "074a9f24553df0cf18625275df81a6e0",
+    "text": "Non sei abbastanza ubriaco per spacciare un mammut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:16.661957Z"
+  },
+  "scripts.action_horn.say_2": {
+    "src_hash": "b9e4ffbf146a1ddf7710cd45c03d8c21",
+    "text": "Spingi il mammut. Che divertimento. *hick*.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:19.043981Z"
+  },
+  "scripts.action_horn.say_3": {
+    "src_hash": "8acec3a7caf3ea2705b8232f19a7c033",
+    "text": "L'orso non è divertito dal disturbo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:19.044355Z"
+  },
+  "scripts.action_horn.say_4": {
+    "src_hash": "75938bd55048b04afc042cba4954d4ba",
+    "text": "Grr.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:19.044581Z"
+  },
+  "scripts.action_horn.say_5": {
+    "src_hash": "6b35ad266884e6774eeed5bc937d9189",
+    "text": "Non hai voglia di abbracciare un orso privo di sensi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:06:19.044915Z"
   }
 }

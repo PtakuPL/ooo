@@ -5465,11 +5465,11 @@
   },
   "book.otbm.crudely_written_in_blood": {
     "src_hash": "b13f1b1494d3f2d9325469e1ae26c0b9",
-    "text": "<crudely written in blood>",
+    "text": "<prosto napisany krwią>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:06:34.453838Z"
+    "updated_at": "2026-02-17T01:04:44.215675Z"
   },
   "achievement.1.description": {
     "src_hash": "740e9f42975916867c58c567a8a0fbb1",
@@ -100726,5 +100726,285 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T00:55:58.605599Z"
+  },
+  "book.otbm.choose_one_reward_wisely": {
+    "src_hash": "2e657f7d9826b4b44e103574184ecfc4",
+    "text": "Wybierz jedną nagrodę, mądrze!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:17.836233Z"
+  },
+  "book.otbm.circle_of_the_creators_and": {
+    "src_hash": "44207dd9ecaa92a34b2409eff06e4b0f",
+    "text": "kręgu twórców i pomóż im w zadaniu stworzenia. Tibiasula zgodziła się, ponieważ ona również była zafascynowana tym pomysłem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:17.837245Z"
+  },
+  "book.otbm.circular_canon_of_eternal_darkness": {
+    "src_hash": "ff1dff20a412e4027f66e6fd710b08cc",
+    "text": "Okrągły kanon Wiecznej Ciemności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:17.837597Z"
+  },
+  "book.otbm.circular_canon_of_eternal_darkness_ff1dff20": {
+    "src_hash": "ff1dff20a412e4027f66e6fd710b08cc",
+    "text": "Okrągły kanon Wiecznej Ciemności",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:17.837909Z"
+  },
+  "book.otbm.citizen_depot_downstairs": {
+    "src_hash": "275600fa0a453b874f3e809a307a3ba4",
+    "text": "Obywatel Depot na dole.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:24.953128Z"
+  },
+  "book.otbm.clear_as_seldom_before_our": {
+    "src_hash": "062f1263fe7d76c88380fec3c771364d",
+    "text": "jasne jak rzadko: nasze zamówienie zostanie usunięte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:24.953888Z"
+  },
+  "book.otbm.clear_up_subjects_remains_and": {
+    "src_hash": "6ac19dc6a092b8687802c68e7e79663a",
+    "text": "Oczyść szczątki i krew obiektów. Wypożyczony sprzęt musi zostać zwrócony czysty i sprawny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:24.954897Z"
+  },
+  "book.otbm.closed_for_archeological_survey": {
+    "src_hash": "d6ded4d793ced602b6f9921d65d88f48",
+    "text": "(zamknięte z powodu badań archeologicznych)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:24.955546Z"
+  },
+  "book.otbm.congratulations_you_have_passed_the": {
+    "src_hash": "b80f13e357887b4cfc6536fc2ca97fc2",
+    "text": "Gratulacje, zdałeś Wyzwanie Marzeń. Teraz ciesz się owocami swojego sukcesu i zrelaksuj się, zanim wyruszysz w dalszą drogę, aby spotkać mistrza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:24.956869Z"
+  },
+  "book.otbm.contact_berenice_in_the_local": {
+    "src_hash": "395016954b6a3d5f730b9be4f1453798",
+    "text": "Skontaktuj się z Berenice w lokalnej placówce Towarzystwa Odkrywców!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:31.965457Z"
+  },
+  "book.otbm.contact_henricus_in_the_inquisiton": {
+    "src_hash": "1d87a646d5eb6cd61d4e797c932feeb6",
+    "text": "Skontaktuj się z Henricus w siedzibie Inkwizycji pod tajskim więzieniem!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:31.966108Z"
+  },
+  "book.otbm.contact_me_in_the_trade": {
+    "src_hash": "09ee01c761e4747b5ca4d26e77a3b0cd",
+    "text": "Jeśli chcesz przestać być bezradny, skontaktuj się ze mną w Dzielnicy Handlowej i zrób coś!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:31.966849Z"
+  },
+  "book.otbm.contact_me_in_the_trade_09ee01c7": {
+    "src_hash": "09ee01c761e4747b5ca4d26e77a3b0cd",
+    "text": "Jeśli chcesz przestać być bezradny, skontaktuj się ze mną w Dzielnicy Handlowej i zrób coś!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:31.967325Z"
+  },
+  "book.otbm.continued_without_cessation_some_of": {
+    "src_hash": "653303fd7f9ae3099f0dd88adf946ccd",
+    "text": "kontynuowane bez przerwy. Niektórzy z pozostałych bogów nie chcieli już dłużej być świadkami tego, jak niespokojne było ich stworzenie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:38.902265Z"
+  },
+  "book.otbm.contributed_a_tiny_proportion_of": {
+    "src_hash": "dc654f0d77c9dcace2462eb5d5d21528",
+    "text": "włożył w ten wysiłek niewielką część swoich sił. Mądrzy twierdzą, że to dzięki jego pracy cały czas dąży",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:38.902920Z"
+  },
+  "book.otbm.coordinates_for_the_area_around": {
+    "src_hash": "14e6e3ccf8d15e3d853162119e300ea1",
+    "text": "Współrzędne obszaru wokół Dianscher",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:38.903262Z"
+  },
+  "book.otbm.courage_and_responsibility_after_his": {
+    "src_hash": "eeffb28dcb7e46ec8d775d999f69e093",
+    "text": "odwaga i odpowiedzialność. Na jego obraz i części jego ciała bogowie stworzyli mu pomocników, ludzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:38.903839Z"
+  },
+  "book.otbm.crates_from_87_supplies": {
+    "src_hash": "2a327370fcb52ef150fdf1fea27d39e2",
+    "text": "Skrzynie z #87: Zapasy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:38.904124Z"
+  },
+  "book.otbm.creation_and_the_process_known": {
+    "src_hash": "6c2036f13d706045f274adab2050fb9d",
+    "text": "stworzenia, a proces znany jako przebudzenie nie jest w żadnym wypadku działaniem życzliwości, ale bogowie tracący kontrolę nad rzeczami, które próbowali ukryć przed intruzami. Teoria głosi, że w miarę jak dusze z zewnątrz wznoszą się w celu osiągnięcia jakiejś formy boskości, następuje ciągłe zniżanie się mocy dawnych bogów z powodu mocy wyciekającej w nicość i mocy, której żywi domagają się dla siebie. Oczywiście ta herezja jest bardzo popularna w szeregach niektórych kultów wzniesienia. Tym bardziej, że zajmuje się bardziej powszechnym strachem na tych konklawe, że zazdrosni bogowie mogą kontratakować",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:44.212274Z"
+  },
+  "book.otbm.creation_and_the_process_known_6c2036f1": {
+    "src_hash": "6c2036f13d706045f274adab2050fb9d",
+    "text": "stworzenia, a proces znany jako przebudzenie nie jest w żadnym wypadku działaniem życzliwości, ale bogowie tracący kontrolę nad rzeczami, które próbowali ukryć przed intruzami. Teoria głosi, że w miarę jak dusze z zewnątrz wznoszą się w celu osiągnięcia jakiejś formy boskości, następuje ciągłe zniżanie się mocy dawnych bogów z powodu mocy wyciekającej w nicość i mocy, której żywi domagają się dla siebie. Oczywiście ta herezja jest bardzo popularna w szeregach niektórych kultów wzniesienia. Tym bardziej, że zajmuje się bardziej powszechnym strachem na tych konklawe, że zazdrosni bogowie mogą kontratakować",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:44.214205Z"
+  },
+  "book.otbm.creation_because_he_was_fully": {
+    "src_hash": "0a09a53cb78bb1bacbcf6c497edafd4c",
+    "text": "stworzenia, gdyż był w pełni sił twórczych i niecierpliwy. Jego boskie moce wyszły z niego i stworzyły, uformowały się.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:44.214774Z"
+  },
+  "book.otbm.creation_yes_some_even_state": {
+    "src_hash": "2cb3baf30c42dc5e33914f4ba9c39b01",
+    "text": "tworzenie. Tak, niektórzy nawet twierdzą, że dobrzy Bogowie stworzyli dla Banora bliźniaka, który powinien ucieleśniać moce magii,",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:44.215383Z"
+  },
+  "book.otbm.crunor_created_the_wolves_in": {
+    "src_hash": "3cda23d2d41a6619fdb513223d8477b3",
+    "text": "Crunor stworzył wilki, aby chronić swoje lasy przed orkami, ale było ich zbyt wielu! Tylko w najgłębszym",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:50.871304Z"
+  },
+  "book.otbm.crypts_and_monsters_found_one": {
+    "src_hash": "9f58d23b74f3c7a0a2bc52484c8c60df",
+    "text": "... krypty i potwory ... znalazłem jednego z zamkniętych w klatkach demonów, który wydaje się być wypłukiwany jako pewnego rodzaju źródło zasilania ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:50.872089Z"
+  },
+  "book.otbm.crystallize_itself_in_the_void": {
+    "src_hash": "f316dda51d2b4de92d8534e04d245306",
+    "text": "krystalizuje się w pustce, tworząc ogromną spiralę. Wspinało się coraz wyżej, stawało się jędrnością, punktem obrotu, kierunkiem i",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:50.872660Z"
+  },
+  "book.otbm.currently_no_wanted_criminals": {
+    "src_hash": "519bcf81b3faf39ca4d825e5dfc7f308",
+    "text": "Obecnie brak poszukiwanych przestępców",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:57.830837Z"
+  },
+  "book.otbm.cyclopic_cities_were_laid_into": {
+    "src_hash": "8e5fb4e87d8fbc9338d68c38c105ffe2",
+    "text": "cyklopowe miasta popadły w ruinę, niewiarygodne fabryki kuźni zostały utracone na zawsze i do dziś cyklopi są zdenerwowani",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:57.831422Z"
+  },
+  "book.otbm.dagger_hand_axe_barbarian_axe": {
+    "src_hash": "0ce085dd8029017a861b9233182a1806",
+    "text": "sztylet, topór ręczny, topór barbarzyńcy, włócznia, rapier, topór, szabla, miecz, buzdygan, młot bojowy i buzdygan duchowny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:57.831957Z"
+  },
+  "book.otbm.damnation_to_all_who_dare": {
+    "src_hash": "0881480744e173991d7aeb65afa6533c",
+    "text": "Potępienie dla wszystkich, którzy odważą się wejść!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:57.832314Z"
+  },
+  "book.otbm.dark_are_the_mysteries_surrounded": {
+    "src_hash": "5c823503b352591233cdee451085a028",
+    "text": "Ciemne są tajemnice otoczone skazanymi na zagładę krzykami",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:04:57.832688Z"
+  },
+  "book.otbm.daughter_of_earth_and_fire": {
+    "src_hash": "e0cf4dcd664fd44e9e17b1657e6aa8a9",
+    "text": "Córka ziemi i ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:03.541519Z"
+  },
+  "book.otbm.daughter_of_earth_and_fire_e0cf4dcd": {
+    "src_hash": "e0cf4dcd664fd44e9e17b1657e6aa8a9",
+    "text": "Córka ziemi i ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:03.541811Z"
+  },
+  "book.otbm.dead_but_zathroth_used_a": {
+    "src_hash": "18846a7a03eed9489dd84d8dcc173af4",
+    "text": "martwy. Ale Zathroth użył podstępu i ukazał się ziemi jako jej druga strona, Uman, i począł na swoim miejscu istotę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:03.542459Z"
+  },
+  "book.otbm.dead_ones_and_sent_his": {
+    "src_hash": "948d9f1e689b479191785e4bba9633a4",
+    "text": "martwych i wysłał swoje wielkie robaki, które zaczęły pożerać nieumarłych. Walka trwała długo i znowu nie miała końca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:03.543022Z"
+  },
+  "book.otbm.death_an_improved_form_of": {
+    "src_hash": "500d63e26fb71ffbe0c2f2dea1eec51b",
+    "text": "Śmierć – ulepszona forma życia?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:05:03.543465Z"
   }
 }

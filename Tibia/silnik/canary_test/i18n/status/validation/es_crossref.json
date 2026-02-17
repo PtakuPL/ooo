@@ -1,15 +1,15 @@
 {
   "lang": "es",
-  "coverage_pct": 74.9,
+  "coverage_pct": 75.0,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T00:46:05.285133Z",
-  "issues_total": 491,
+  "checked_at": "2026-02-17T01:06:56.550654Z",
+  "issues_total": 492,
   "issues_by_type": {
     "consistency_in_language": 67,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 24
+    "length_ratio_crosscheck": 25
   },
   "consistency_issues": [
     {
@@ -4834,6 +4834,15 @@
       "en_len": 5,
       "lang_ratio": 3.2,
       "pl_ratio": 1.2
+    },
+    {
+      "key": "spell.sapling_explode.name",
+      "category": "spells",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 1.067,
+      "pl_ratio": 3.067
     }
   ],
   "auto_fix": {

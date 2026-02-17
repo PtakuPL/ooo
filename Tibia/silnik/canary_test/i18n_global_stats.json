@@ -1,8 +1,8 @@
 {
-  "total_cycles": 105,
+  "total_cycles": 106,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-17T02:03:51.416509",
+  "category": "pl",
+  "last_update": "2026-02-17T02:07:30.571667",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,135 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "html.json",
-    "keys_to_translate": 1074,
-    "guard_fail": 0,
+    "language": "pl",
+    "json_file": "books.json",
+    "keys_to_translate": 1097,
+    "guard_fail": 7,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 50,
-    "recent_examples": [
-      {
-        "key": "html.admin.open_source.html.text3",
-        "en": "https://getbootstrap.com",
-        "translated": "https://getbootstrap.com",
-        "source": "tm"
-      },
-      {
-        "key": "html.admin.open_source.html.text5",
-        "en": "https://fontawesome.com",
-        "translated": "https://fontawesome.com",
-        "source": "tm"
-      },
-      {
-        "key": "html.account.login.html.text2",
-        "en": "{{ account_login_by }}:",
-        "translated": "{{ account_login_by }}:",
-        "source": "tm"
-      },
-      {
-        "key": "html.admin.pages.form.html.text2",
-        "en": "{{ group.getName()|title }}",
-        "translated": "{{ group.getName()|title }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.serverinfo.html.text1",
-        "en": "{{ config.lua.serverName }}",
-        "translated": "{{ config.lua.serverName }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.serverinfo.html.text2",
-        "en": "{{ config.lua.loginPort }}",
-        "translated": "{{ config.lua.loginPort }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.serverinfo.html.text3",
-        "en": "{{ globalSaveHour }}:00",
-        "translated": "{{ globalSaveHour }}:00",
-        "source": "tm"
-      },
-      {
-        "key": "html.serverinfo.html.text4",
-        "en": "{{ config.lua.worldType|upper }} ",
-        "translated": "{{ config.lua.worldType|upper }} ",
-        "source": "tm"
-      },
-      {
-        "key": "html.spells.html.text1",
-        "en": "{{ spell.vocations|raw }}",
-        "translated": "{{ spell.vocations|raw }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.spells.html.text3",
-        "en": "{{ spell.vocations|raw }}",
-        "translated": "{{ spell.vocations|raw }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.spells.html.text4",
-        "en": "{{ spell.maglevel }}",
-        "translated": "{{ spell.maglevel }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.spells.html.text5",
-        "en": "{{ spell.vocations|raw }}",
-        "translated": "{{ spell.vocations|raw }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.account.management.html.text5",
-        "en": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
-        "translated": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.account.characters.change_name.html.text2",
-        "en": "{{ player.getName() }}",
-        "translated": "{{ player.getName() }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.admin.menus.form.html.text2",
-        "en": "{{ template.template }}",
-        "translated": "{{ template.template }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.forum.new_thread.html.text2",
-        "en": "[url]http://address.com/[/url]",
-        "translated": "[url]http://address.com/[/url]",
-        "source": "tm"
-      },
-      {
-        "key": "html.forum.new_thread.html.text4",
-        "en": ";) , :) , :D , :( , :rolleyes:",
-        "translated": ";) , :) , :D , :( , :rolleS\u00ed:",
-        "source": "tm"
-      },
-      {
-        "key": "html.houses.view.html.text4",
-        "en": "{{ config.lua.serverName }}",
-        "translated": "{{ config.lua.serverName }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.admin.news.table.html.text1",
-        "en": "{{ news.date|date(setting('core.news_date_format')) }}",
-        "translated": "{{ news.date|date(setting('core.news_date_format')) }}",
-        "source": "tm"
-      },
-      {
-        "key": "html.admin.news.table.html.text2",
-        "en": "{{ news.player_name }}",
-        "translated": "{{ news.player_name }}",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

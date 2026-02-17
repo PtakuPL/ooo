@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T00:46:39.837643Z",
+  "checked_at": "2026-02-17T01:07:30.371979Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -561,6 +561,15 @@
       "en": "Authorised Personnel only!",
       "pl": "Authorised Personel, obsługa tylko!",
       "lang": "Authorised Personnel only!"
+    },
+    {
+      "key": "book.otbm.citizen_depot_downstairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Citizen Depot downstairs.",
+      "pl": "Obywatel Depot na dole.",
+      "lang": "Citizen Depot downstairs."
     },
     {
       "key": "book.otbm.galunas_fletcher_workshop",
@@ -3603,15 +3612,6 @@
       "en": "has no vocation.",
       "pl": "ma Nie profesja.",
       "lang": "has no vocation."
-    },
-    {
-      "key": "cpp.player.look.level_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level {0}",
-      "pl": "poziom {0}",
-      "lang": "Level {0}"
     }
   ],
   "length_ratio_issues": [

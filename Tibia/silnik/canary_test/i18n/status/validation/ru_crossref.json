@@ -1,15 +1,15 @@
 {
   "lang": "ru",
-  "coverage_pct": 36.6,
+  "coverage_pct": 36.8,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T00:46:37.791722Z",
-  "issues_total": 110,
+  "checked_at": "2026-02-17T01:07:28.306752Z",
+  "issues_total": 115,
   "issues_by_type": {
     "consistency_in_language": 55,
-    "pl_reference_missing_translation": 32,
-    "length_ratio_crosscheck": 23
+    "pl_reference_missing_translation": 36,
+    "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
     {
@@ -911,6 +911,51 @@
       "lang": "! ..."
     },
     {
+      "key": "scripts.find_fiend.level_easy",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Easy",
+      "pl": "Łatwo",
+      "lang": "Easy"
+    },
+    {
+      "key": "scripts.find_person.dir_northeast",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north-east",
+      "pl": "północ-wschód",
+      "lang": "north-east"
+    },
+    {
+      "key": "scripts.find_person.dir_northwest",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north-west",
+      "pl": "północ-zachód",
+      "lang": "north-west"
+    },
+    {
+      "key": "scripts.find_person.dir_southeast",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south-east",
+      "pl": "południe-wschód",
+      "lang": "south-east"
+    },
+    {
+      "key": "scripts.find_person.dir_southwest",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south-west",
+      "pl": "południe-zachód",
+      "lang": "south-west"
+    },
+    {
       "key": "data.otservbr.global.npc.arkarra.L54.501",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1127,31 +1172,22 @@
       "lang": "The"
     },
     {
-      "key": "spell.lisa_wave.name",
+      "key": "spell.fear.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "lisa wave",
-      "pl": "fala Lisy",
-      "lang": "lisa wave"
+      "en": "fear",
+      "pl": "strach",
+      "lang": "fear"
     },
     {
-      "key": "spell.death_beam.name",
+      "key": "spell.rootkraken_deathholy.name",
       "category": "spells",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "death beam",
-      "pl": "promień śmierci",
-      "lang": "death beam"
-    },
-    {
-      "key": "spell.mort_ring.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mort ring",
-      "pl": "pierścień śmierci",
-      "lang": "mort ring"
+      "en": "rootkraken",
+      "pl": "korzeńkrakena",
+      "lang": "rootkraken"
     }
   ],
   "length_ratio_issues": [
@@ -1345,6 +1381,15 @@
       "pl_ratio": 1.2
     },
     {
+      "key": "spell.sapling_explode.name",
+      "category": "spells",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 1.133,
+      "pl_ratio": 3.067
+    },
+    {
       "key": "spell.ignite.name",
       "category": "spells",
       "type": "crossref_length_ratio_diff",
@@ -1364,8 +1409,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 32,
-    "applied": 3,
+    "attempted": 36,
+    "applied": 7,
     "skipped": 29,
     "errors": 0
   }

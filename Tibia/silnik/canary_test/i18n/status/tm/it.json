@@ -63054,5 +63054,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:12:30.216875Z"
+  },
+  "achievement.209.name": {
+    "src_hash": "145896ab3cca2a939bde5239d584aa23",
+    "text": "Biodegradabile",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:14:55.657093Z"
+  },
+  "achievement.212.name": {
+    "src_hash": "b74ad4852301652bdbe405413f9a4b49",
+    "text": "Pompiere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:14:55.657295Z"
+  },
+  "achievement.214.name": {
+    "src_hash": "784d09d4f798dce0e6249c899edf8128",
+    "text": "La nemesi di Askarak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:14:55.657529Z"
+  },
+  "achievement.215.name": {
+    "src_hash": "5232d80eceb701772642a3c3ae51dd48",
+    "text": "La nemesi di Shaburak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:14:55.657767Z"
+  },
+  "achievement.246.name": {
+    "src_hash": "570fcab6b02b42c12e8c404f859be84d",
+    "text": "Whistle-Blower",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:14:55.658041Z"
+  },
+  "achievement.253.name": {
+    "src_hash": "897e9d649a9a3ddb0b98908b4ec70f2b",
+    "text": "Conservazionista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:01.615906Z"
+  },
+  "achievement.258.name": {
+    "src_hash": "b0bf9c1c778f0c55dacd4257a4907277",
+    "text": "Abbagliante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:01.616123Z"
+  },
+  "achievement.260.name": {
+    "src_hash": "87d4220e236a815a17c91fb4d9644129",
+    "text": "Singhiozzo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:01.616300Z"
+  },
+  "achievement.265.name": {
+    "src_hash": "55b52ada9b977778f01bfb4ef7142718",
+    "text": "Soppressore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:01.616479Z"
+  },
+  "achievement.268.name": {
+    "src_hash": "fea729d1432744cf8f345643e5dc45a8",
+    "text": "Bane di chitina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:01.616706Z"
+  },
+  "achievement.271.name": {
+    "src_hash": "e0623786548dad8a5760dcf4d06c18c1",
+    "text": "Sterminatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:08.279558Z"
+  },
+  "achievement.277.name": {
+    "src_hash": "1a00e8cb7d17ef5b5ff504038ded033f",
+    "text": "Sì, Ariki!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:08.279792Z"
+  },
+  "achievement.298.name": {
+    "src_hash": "e6fa675e6647e24e61ffe792de527487",
+    "text": "Adagiato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:14.184312Z"
+  },
+  "achievement.320.name": {
+    "src_hash": "3ef6ec933ff4e84cea1093528690d91b",
+    "text": "Funghitastico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:14.184531Z"
+  },
+  "achievement.321.name": {
+    "src_hash": "02fbec0d10327df33d58b642bf135865",
+    "text": "Cristallino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:14.184768Z"
+  },
+  "achievement.326.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Becchino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:14.184981Z"
+  },
+  "achievement.332.name": {
+    "src_hash": "298a7e53cbf4c379fcd13da347e878f7",
+    "text": "Signore delle Spade Ombrale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:14.185232Z"
+  },
+  "achievement.333.name": {
+    "src_hash": "a5c5f97c14d525da03f5d4eb842fb47d",
+    "text": "Boia ombroso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:19.385314Z"
+  },
+  "achievement.339.name": {
+    "src_hash": "a51d1ab02fd4978d4fe97ec0dc2107b1",
+    "text": "Presagio ombroso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:19.385579Z"
+  },
+  "achievement.341.name": {
+    "src_hash": "62feba76365b5f4ca5287b4a36ed22ac",
+    "text": "Storia infinita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:19.385807Z"
+  },
+  "achievement.346.name": {
+    "src_hash": "5a81636e97ea986d5bd43b5f31c6ce97",
+    "text": "Sonnambulismo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:19.385999Z"
+  },
+  "achievement.351.name": {
+    "src_hash": "2d92721a74e2d463ab6b0f84cbe0c847",
+    "text": "Rathleton Comune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:19.386576Z"
+  },
+  "achievement.358.name": {
+    "src_hash": "9702cd6f3e08f0ab3bd2cb6d5cef3f0d",
+    "text": "Attenzione al passo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:21.454730Z"
   }
 }

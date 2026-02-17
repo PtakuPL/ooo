@@ -36142,5 +36142,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:12:45.925450Z"
+  },
+  "misc.bank_system.say_11": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Клиент всегда прав! Возвращайтесь в любое время, если захотите {withdraw} свои деньги.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:26.618266Z"
+  },
+  "misc.bank_system.say_29": {
+    "src_hash": "dcb98e469c547bf91881a6ea42ad8caa",
+    "text": "Вы хотите обменять ваши платиновые монеты на {gold} или {crystal}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:26.626857Z"
+  },
+  "misc.bank_system.say_30": {
+    "src_hash": "7eb7fc20e2178c5e1053e86e9ba6ef82",
+    "text": "Сколько платиновых монет вы хотите обменять на {gold}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:26.628444Z"
+  },
+  "npclib.handler.need_space": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Недостаточно места.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:26.650601Z"
+  },
+  "npclib.handler.sendtrade": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Конечно, просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:26.651214Z"
+  },
+  "misc.bank_system.say_2": {
+    "src_hash": "2dd045921e052d2ae4c1339abccdd747",
+    "text": "Пожалуйста, скажите мне, сколько золота вы хотели бы внести.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:30.745828Z"
+  },
+  "npclib.bank_system.say_1": {
+    "src_hash": "6eed737e97c173046cb705428c897583",
+    "text": "Мы разместили заказ на перевод золота {} со счета вашей гильдии в гильдию {}.  Пожалуйста, проверьте свой почтовый ящик для подтверждения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:30.746585Z"
+  },
+  "npclib.bank_system.say_10": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Вы действительно хотите положить золото {} на свой {guild account}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:30.747414Z"
+  },
+  "npclib.bank_system.say_11": {
+    "src_hash": "6887d1bc7d3f3c653c2c09fbf93b0423",
+    "text": "Баланс вашего счета гильдии составляет {} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:30.747866Z"
+  },
+  "npclib.bank_system.say_12": {
+    "src_hash": "73ebda8add241ec9774bcc92e9aac019",
+    "text": "Итак, вы хотите, чтобы я обменял для вас {} ваших хрустальных монет на {} платиновых монет?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:30.748421Z"
+  },
+  "npclib.bank_system.say_13": {
+    "src_hash": "f8e1a62393dac9f71b8e8a19df724d6e",
+    "text": "Итак, вы хотите, чтобы я обменял {} ваших платиновых монет на {} хрустальные монеты для вас?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:35.961303Z"
+  },
+  "npclib.bank_system.say_14": {
+    "src_hash": "a9fe7c3d39f783b5b22236afb80fa2b0",
+    "text": "Итак, вы хотите, чтобы я обменял для вас {} ваших платиновых монет на {} золотых монет?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:35.961846Z"
+  },
+  "npclib.bank_system.say_15": {
+    "src_hash": "35bfe2c57d0b9594f3d66ed1c6260b23",
+    "text": "Итак, вы хотите, чтобы я обменял {} ваших золотых монет на {} платиновых монет?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:35.962371Z"
+  },
+  "npclib.bank_system.say_16": {
+    "src_hash": "cc6d13ca2a9f3fbf27a2e89c63b54782",
+    "text": "Очень хорошо. Вы перевели золото {} на {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:35.962763Z"
+  },
+  "npclib.bank_system.say_17": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Итак, вы хотите перевести золото {} на {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:35.963144Z"
+  },
+  "npclib.bank_system.say_18": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "Кому вы бы хотели передать золото {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:42.666939Z"
+  },
+  "npclib.bank_system.say_19": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "Кому вы бы хотели передать золото {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:42.667323Z"
+  },
+  "npclib.bank_system.say_2": {
+    "src_hash": "b8045be4d69a1763526040613fcac092",
+    "text": "Итак, вы хотите перевести {} золота со своего аккаунта гильдии в гильдию {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:42.667851Z"
+  },
+  "npclib.bank_system.say_20": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Итак, вы хотите перевести золото {} на {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:42.668244Z"
+  },
+  "npclib.bank_system.say_21": {
+    "src_hash": "e4bd960221e7abd220baab13bb60552b",
+    "text": "Подожди, у тебя в рюкзаке не хватит места, чтобы унести все эти монеты.\nЯ не хочу, чтобы ты уронил их на пол, возможно, вернешься, когда в твоем рюкзаке будет больше места!\nВы получите стопки кристаллов {} (монеты {}), стопки платины {} (монеты {}) и стопки золота {} (монеты {}). Убедитесь, что в вашем рюкзаке есть как минимум {} свободных мест.\n",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:42.669569Z"
+  },
+  "npclib.bank_system.say_22": {
+    "src_hash": "0ad7da1f6fa56d62c2ade5462ea9a2ff",
+    "text": "Вот оно, {} золото. Пожалуйста, дайте мне знать, если я могу что-то еще сделать для вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:47.567807Z"
+  },
+  "npclib.bank_system.say_23": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Вы уверены, что хотите снять {} золота со своего банковского счета?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:47.568296Z"
+  },
+  "npclib.bank_system.say_24": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Вы уверены, что хотите снять {} золота со своего банковского счета?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:47.568745Z"
+  },
+  "npclib.bank_system.say_25": {
+    "src_hash": "7b408623e63487c5e182309cc9cdb9f6",
+    "text": "Хорошо, мы добавили количество золота {} к вашему {balance}. \\ г\n                               Вы можете {withdraw} свои деньги в любое время.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:47.569688Z"
+  },
+  "npclib.bank_system.say_26": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Вы действительно хотите внести {} золота?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:47.570102Z"
+  },
+  "npclib.bank_system.say_27": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Вы действительно хотите внести {} золота?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:52.627197Z"
+  },
+  "npclib.bank_system.say_28": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Вы действительно хотите внести {} золота?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:52.627673Z"
+  },
+  "npclib.bank_system.say_29": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Вы действительно хотите внести {} золота?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:52.628096Z"
+  },
+  "npclib.bank_system.say_3": {
+    "src_hash": "932405ed00983a70764473feb855e5aa",
+    "text": "В какую гильдию вы бы хотели передать золото {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:52.628512Z"
+  },
+  "npclib.bank_system.say_30": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Баланс вашего счета составляет {} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:52.628912Z"
+  },
+  "npclib.bank_system.say_31": {
+    "src_hash": "954fc55b069353479168c1610b4fe945",
+    "text": "Вы наверняка заработали кругленькую сумму. \\ г\n                           Баланс вашего счета составляет {} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:56.541348Z"
+  },
+  "npclib.bank_system.say_32": {
+    "src_hash": "8115996744249c24b181f8afb16dc1d1",
+    "text": "Ого, вы достигли волшебной цифры в миллион золотых!!! \\ г\n                           Баланс вашего счета составляет {} золота!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:56.542030Z"
+  },
+  "npclib.bank_system.say_33": {
+    "src_hash": "0aaf4f9932c0e5bdbf4bf17953b54254",
+    "text": "Вы заработали десять миллионов, и они продолжают расти! \\ г\n                           Баланс вашего счета составляет {} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:56.542699Z"
+  },
+  "npclib.bank_system.say_34": {
+    "src_hash": "e44e53dbc4e7148edbeb5ed74a540067",
+    "text": "Я думаю, вы, должно быть, один из самых богатых жителей мира! \\ г\n                           Баланс вашего счета составляет {} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:56.543364Z"
+  },
+  "npclib.bank_system.say_4": {
+    "src_hash": "932405ed00983a70764473feb855e5aa",
+    "text": "В какую гильдию вы бы хотели передать золото {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:15:56.543863Z"
+  },
+  "npclib.bank_system.say_5": {
+    "src_hash": "b8045be4d69a1763526040613fcac092",
+    "text": "Итак, вы хотите перевести {} золота со своего аккаунта гильдии в гильдию {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:00.282269Z"
+  },
+  "npclib.bank_system.say_6": {
+    "src_hash": "66f8222f1435cf4f513e060209201771",
+    "text": "Мы разместили заказ на вывод {} золота с вашего счета гильдии. \\ г\n                            Пожалуйста, проверьте свой почтовый ящик для подтверждения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:00.282966Z"
+  },
+  "npclib.bank_system.say_7": {
+    "src_hash": "021381bc06fb00fb0bc4c60afaf41915",
+    "text": "Вы уверены, что хотите вывести {} золота со своего счета гильдии?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:00.283480Z"
+  },
+  "npclib.bank_system.say_8": {
+    "src_hash": "253e7db9204c9768ac5c5ea75d439649",
+    "text": "Хорошо, мы разместили заказ на внесение количества золота {} в \\z.\n                           ваш аккаунт гильдии. Пожалуйста, проверьте свой почтовый ящик для подтверждения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:00.284468Z"
+  },
+  "npclib.bank_system.say_9": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Вы действительно хотите положить золото {} на свой {guild account}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:00.285341Z"
+  },
+  "npclib.handler.already_focused": {
+    "src_hash": "75cb906e2ea6af69d3e2b0d9db5c7f35",
+    "text": "{0}, я уже с тобой разговариваю.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:04.112226Z"
+  },
+  "npclib.handler.buy": {
+    "src_hash": "114f3934c2fb667bfed44da9f8b80e9d",
+    "text": "Хотите купить {0} {1} за {2} золотых монет?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:04.112719Z"
+  },
+  "npclib.handler.greet": {
+    "src_hash": "badac7549fdf42d99c78303ae9f5d698",
+    "text": "Приветствую, {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:04.113016Z"
+  },
+  "npclib.handler.missing_item": {
+    "src_hash": "16bcf74b510050f662c91a89c301a2fd",
+    "text": "У тебя не так много.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:04.113324Z"
+  },
+  "npclib.handler.missing_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:04.113722Z"
+  },
+  "npclib.handler.need_item": {
+    "src_hash": "e99300d8a6151a7d4df212c544198c73",
+    "text": "У вас нет этого объекта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:08.703123Z"
+  },
+  "npclib.handler.need_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:08.703541Z"
+  },
+  "npclib.handler.need_more_space": {
+    "src_hash": "38f3d735fbd1c97e97aaf1fa1989be6b",
+    "text": "У вас недостаточно места для всех предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:08.703931Z"
+  },
+  "npclib.handler.noshop": {
+    "src_hash": "fb493b842c28f1d432b28e163702c545",
+    "text": "Извините, я ничего не предлагаю.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:08.704301Z"
+  },
+  "npclib.handler.oncloseshop": {
+    "src_hash": "4550cf1e6e98345740da49701cd30afd",
+    "text": "Спасибо, возвращайтесь, когда вам понадобится что-то еще.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:08.704727Z"
   }
 }

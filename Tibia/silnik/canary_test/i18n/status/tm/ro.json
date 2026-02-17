@@ -56758,5 +56758,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:13:42.505635Z"
+  },
+  "misc.bank_system.say_50": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "Nu ai suficient aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.691763Z"
+  },
+  "misc.bank_system.say_6": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.692774Z"
+  },
+  "misc.bank_system.say_64": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.693492Z"
+  },
+  "misc.bank_system.say_65": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "Completați acest câmp cu persoana care vă primește aurul!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.693961Z"
+  },
+  "misc.bank_system.say_67": {
+    "src_hash": "a0e570ed761553fb2537a4fc5b6a51e0",
+    "text": "Bine, mai pot face ceva pentru tine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.694492Z"
+  },
+  "misc.bank_system.say_8": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.695064Z"
+  },
+  "misc.bank_system.say_9": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.695496Z"
+  },
+  "npclib.modules.promote_success": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Felicitări! Acum ești promovat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:12.700827Z"
+  },
+  "misc.bank_system.say_49": {
+    "src_hash": "2914e8a06398bf80c6ad2ac12d8cf48a",
+    "text": "Vă rog să-mi spuneți cât aur ați dori să depuneți în contul breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:17.739746Z"
+  },
+  "misc.bank_system.say_5": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Cum doriți. Mai pot face ceva pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:17.740169Z"
+  },
+  "misc.bank_system.say_51": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Cum doriți. Mai pot face ceva pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:17.740544Z"
+  },
+  "misc.bank_system.say_52": {
+    "src_hash": "c57b1e870215b4f06aa82b33171dc20c",
+    "text": "Îmi pare rău, dar se pare că în prezent nu ești în nicio breaslă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:17.740957Z"
+  },
+  "misc.bank_system.say_53": {
+    "src_hash": "0358cd302579864273dd1b1b81f6f12e",
+    "text": "Doar liderii breslei sau viceliderii pot retrage bani din contul breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:17.741397Z"
+  },
+  "misc.bank_system.say_54": {
+    "src_hash": "ce3853ad8ba9e162452ef0403288a0e0",
+    "text": "Sigur doriți să retrageți {0} aur din contul breslei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:22.572104Z"
+  },
+  "misc.bank_system.say_55": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Nu există suficient aur în contul breslei tale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:22.572486Z"
+  },
+  "misc.bank_system.say_56": {
+    "src_hash": "ce2882f5828aed19f9a5bebe158ab7a9",
+    "text": "Vă rog să-mi spuneți cât aur doriți să retrageți din contul breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:22.572949Z"
+  },
+  "misc.bank_system.say_57": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Nu există suficient aur în contul breslei tale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:22.573316Z"
+  },
+  "misc.bank_system.say_58": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Cum doriți. Mai pot face ceva pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:22.573746Z"
+  },
+  "misc.bank_system.say_59": {
+    "src_hash": "c57b1e870215b4f06aa82b33171dc20c",
+    "text": "Îmi pare rău, dar se pare că în prezent nu ești în nicio breaslă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:26.805095Z"
+  },
+  "misc.bank_system.say_60": {
+    "src_hash": "51be1d2886906a2efbb6077aa1cd824d",
+    "text": "Numai liderii breslei sau viceliderii pot transfera bani din contul breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:26.805620Z"
+  },
+  "misc.bank_system.say_61": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Nu există suficient aur în contul breslei tale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:26.806299Z"
+  },
+  "misc.bank_system.say_62": {
+    "src_hash": "80a348875c4550674a7da85ac7f56a22",
+    "text": "Vă rog să-mi spuneți cantitatea de aur pe care doriți să o transferați unei bresle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:26.807084Z"
+  },
+  "misc.bank_system.say_63": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "Nu există suficient aur în contul breslei tale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:26.807464Z"
+  },
+  "misc.bank_system.say_66": {
+    "src_hash": "0c15e581d4392f78000906f8cc0f71b0",
+    "text": "Această breaslă nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:33.083309Z"
+  },
+  "misc.bank_system.say_7": {
+    "src_hash": "f355a66a40adb778f8e218cf45e255d3",
+    "text": "Vă rog să-mi spuneți cât aur doriți să retrageți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:33.083783Z"
+  },
+  "npclib.bank_system.say_1": {
+    "src_hash": "6eed737e97c173046cb705428c897583",
+    "text": "Am plasat o comandă de a transfera {} aur din contul breslei dvs. în breasla {}.  Vă rugăm să verificați căsuța de e-mail pentru confirmare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:33.084395Z"
+  },
+  "npclib.bank_system.say_10": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Chiar ți-ar plăcea să depui {} aur pe {guild account}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:33.084846Z"
+  },
+  "npclib.bank_system.say_11": {
+    "src_hash": "6887d1bc7d3f3c653c2c09fbf93b0423",
+    "text": "Soldul contului tău de breaslă este {} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:33.085200Z"
+  },
+  "npclib.bank_system.say_12": {
+    "src_hash": "73ebda8add241ec9774bcc92e9aac019",
+    "text": "Deci ai vrea să schimb {} din monedele tale de cristal în {} monede de platină pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:38.921366Z"
+  },
+  "npclib.bank_system.say_13": {
+    "src_hash": "f8e1a62393dac9f71b8e8a19df724d6e",
+    "text": "Deci ai vrea să schimb {} din monedele tale de platină în {} monede de cristal pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:38.921875Z"
+  },
+  "npclib.bank_system.say_14": {
+    "src_hash": "a9fe7c3d39f783b5b22236afb80fa2b0",
+    "text": "Deci ai vrea să schimb {} din monedele tale de platină în {} monede de aur pentru tine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:38.922440Z"
+  },
+  "npclib.bank_system.say_15": {
+    "src_hash": "35bfe2c57d0b9594f3d66ed1c6260b23",
+    "text": "Deci ai vrea să schimb {} din monedele tale de aur în {} monede de platină?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:38.922896Z"
+  },
+  "npclib.bank_system.say_16": {
+    "src_hash": "cc6d13ca2a9f3fbf27a2e89c63b54782",
+    "text": "Foarte bine. Ați transferat {} aur în {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:38.923298Z"
+  },
+  "npclib.bank_system.say_17": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Deci, doriți să transferați {} aur în {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:44.075626Z"
+  },
+  "npclib.bank_system.say_18": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "Cui ai vrea să transferi {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:44.075991Z"
+  },
+  "npclib.bank_system.say_19": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "Cui ai vrea să transferi {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:44.076332Z"
+  },
+  "npclib.bank_system.say_2": {
+    "src_hash": "b8045be4d69a1763526040613fcac092",
+    "text": "Deci, doriți să transferați {} aur din contul breslei dvs. în breasla {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:44.076816Z"
+  },
+  "npclib.bank_system.say_20": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Deci, doriți să transferați {} aur în {}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:44.077192Z"
+  },
+  "npclib.bank_system.say_21": {
+    "src_hash": "e4bd960221e7abd220baab13bb60552b",
+    "text": "Stai, nu ai suficient loc în rucsac pentru a purta toate aceste monede.\nNu vreau să le arunci pe jos, poate să te întorci când ai mai mult spațiu în rucsac!\nVeți primi {} stive de cristale ({} monede), {} stive de platină ({} monede) și {} stive de aur ({} monede). Asigurați-vă că aveți cel puțin {} locuri libere în rucsac.\n",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:50.119560Z"
+  },
+  "npclib.bank_system.say_22": {
+    "src_hash": "0ad7da1f6fa56d62c2ade5462ea9a2ff",
+    "text": "Iată-te, {} aur. Te rog să-mi spui dacă mai pot face ceva pentru tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:50.120048Z"
+  },
+  "npclib.bank_system.say_23": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:50.120491Z"
+  },
+  "npclib.bank_system.say_24": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:50.120891Z"
+  },
+  "npclib.bank_system.say_25": {
+    "src_hash": "7b408623e63487c5e182309cc9cdb9f6",
+    "text": "Bine, am adăugat cantitatea de {} aur la {balance}. \\z\n                               Puteți să vă {withdraw} banii oricând doriți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:50.121527Z"
+  },
+  "npclib.bank_system.say_26": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:55.057866Z"
+  },
+  "npclib.bank_system.say_27": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:55.058293Z"
+  },
+  "npclib.bank_system.say_28": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:55.058672Z"
+  },
+  "npclib.bank_system.say_29": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:55.059026Z"
+  },
+  "npclib.bank_system.say_3": {
+    "src_hash": "932405ed00983a70764473feb855e5aa",
+    "text": "Cărei breasle ai vrea să transferi {} aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:55.059394Z"
+  },
+  "npclib.bank_system.say_30": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Soldul contului dvs. este {} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:58.683158Z"
+  },
+  "npclib.bank_system.say_31": {
+    "src_hash": "954fc55b069353479168c1610b4fe945",
+    "text": "Cu siguranță ai câștigat un ban frumos. \\z\n                           Soldul contului dvs. este {} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:16:58.683694Z"
   }
 }

@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-17T09:19:59.847034Z",
+  "timestamp": "2026-02-17T09:21:01.969638Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 1330775,
-    "heartbeat_at": "2026-02-17T09:18:44Z",
-    "heartbeat_age_s": 75.8,
-    "cycle": 400,
+    "heartbeat_at": "2026-02-17T09:20:21Z",
+    "heartbeat_age_s": 41.0,
+    "cycle": 401,
     "mode": "continuous",
     "category": "?",
     "pid_alive": true
   },
   "guardian": {
     "state": "degraded",
-    "throughput_per_h": 1900.0,
-    "guard_fail_rate_pct": 67.8,
+    "throughput_per_h": 1888.0,
+    "guard_fail_rate_pct": 67.0,
     "issues": [
-      "high_guard_fail_rate (67.8% > 15%)"
+      "high_guard_fail_rate (67.0% > 15%)"
     ]
   },
   "translation_kpi": {
@@ -63,13 +63,13 @@
   },
   "adaptive_batch": {
     "batch_size": 5,
-    "guard_fail_rate": 19.42,
-    "reason": "stable_fail_rate=19.4%"
+    "guard_fail_rate": 76.12,
+    "reason": "decrease_high_fail_rate=76.1%"
   },
   "dispatch": {
-    "last_target": "pl:npc.json",
-    "cycle_counter": 1984,
-    "pending_total": 1476,
+    "last_target": "es:npc.json",
+    "cycle_counter": 1985,
+    "pending_total": 2355,
     "candidates": 173,
     "skipped_backoff": 14,
     "skipped_guard_fail": 0,
@@ -392,7 +392,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-17T09:19:59.930929Z",
+    "statusd_live_snapshot_at_utc": "2026-02-17T09:21:02.050432Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -939,16 +939,16 @@
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
     "entries": 637,
-    "translated_total": 20262,
-    "suspicious_high_total": 33157,
-    "suspicious_high_rate_pct": 163.641,
+    "translated_total": 20241,
+    "suspicious_high_total": 33225,
+    "suspicious_high_rate_pct": 164.147,
     "status": "spike",
     "severity": "critical",
     "worst_severity": "critical",
     "top_langs": [
       {
         "lang": "es",
-        "suspicious_high": 9433
+        "suspicious_high": 9502
       },
       {
         "lang": "ru",
@@ -956,7 +956,7 @@
       },
       {
         "lang": "ro",
-        "suspicious_high": 8938
+        "suspicious_high": 8937
       },
       {
         "lang": "pl",
@@ -982,7 +982,7 @@
       },
       {
         "category": "npc.json",
-        "suspicious_high": 10311
+        "suspicious_high": 10380
       },
       {
         "category": "monsters.json",
@@ -1020,9 +1020,9 @@
     "per_lang": [
       {
         "lang": "es",
-        "suspicious_high": 9433,
-        "translated": 4238,
-        "rate_pct": 222.581,
+        "suspicious_high": 9502,
+        "translated": 4263,
+        "rate_pct": 222.895,
         "severity": "critical"
       },
       {
@@ -1034,9 +1034,9 @@
       },
       {
         "lang": "ro",
-        "suspicious_high": 8938,
-        "translated": 3418,
-        "rate_pct": 261.498,
+        "suspicious_high": 8937,
+        "translated": 3372,
+        "rate_pct": 265.036,
         "severity": "critical"
       },
       {
@@ -1078,9 +1078,9 @@
       },
       {
         "domain": "npc.json",
-        "suspicious_high": 10311,
-        "translated": 4859,
-        "rate_pct": 212.204,
+        "suspicious_high": 10380,
+        "translated": 4884,
+        "rate_pct": 212.531,
         "severity": "critical"
       },
       {
@@ -1140,7 +1140,7 @@
         "severity": "warning"
       }
     ],
-    "latest_timestamp": "2026-02-17T09:19:44.337898Z"
+    "latest_timestamp": "2026-02-17T09:20:19.226962Z"
   },
   "priority_gate_watch": {
     "available": true,
@@ -1156,15 +1156,15 @@
       "sv"
     ],
     "pending_key": "es,it,pl,ro,ru,sr,sv",
-    "cycle_counter": 1984,
+    "cycle_counter": 1985,
     "start_cycle": 818,
-    "cycle_delta": 1166,
+    "cycle_delta": 1167,
     "started_at": "2026-02-16T22:15:50.792950Z",
-    "active_minutes": 664.151,
+    "active_minutes": 665.186,
     "baseline_quality_rate_pct": 228.112,
-    "current_quality_rate_pct": 163.641,
+    "current_quality_rate_pct": 164.147,
     "best_quality_rate_pct": 161.941,
-    "quality_drop_pct": 64.471,
+    "quality_drop_pct": 63.965,
     "best_quality_drop_pct": 66.171,
     "lang_completion": {
       "pl": 87.26,

@@ -30798,5 +30798,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:57:44.365687Z"
+  },
+  "monster.iron_servant_replica.name": {
+    "src_hash": "abb663d1cff8e42f3ed0d01572c1893f",
+    "text": "Replica Servitorului de Fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:59:03.087196Z"
+  },
+  "monster.iron_servant_replica.desc": {
+    "src_hash": "f6923a48c55589c34c39e441e5edb8b5",
+    "text": "o replică a servitorului de fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:59:03.087514Z"
   }
 }

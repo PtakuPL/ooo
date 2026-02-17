@@ -2561,19 +2561,19 @@
   },
   "item.10208.name": {
     "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
-    "text": "snowman",
+    "text": "snögubbe",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.191319Z"
+    "updated_at": "2026-02-17T01:18:47.505435Z"
   },
   "item.10209.name": {
     "src_hash": "11af29272a9b9fc23ef2b7f853795776",
-    "text": "lizard weapon rack kit",
+    "text": "vapenställ för ödla",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.191602Z"
+    "updated_at": "2026-02-17T01:18:47.506182Z"
   },
   "item.10210.name": {
     "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
@@ -2593,35 +2593,35 @@
   },
   "item.10212.name": {
     "src_hash": "7131d1c878f058973254abc586e95e18",
-    "text": "dragon statue",
+    "text": "drake staty",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.192397Z"
+    "updated_at": "2026-02-17T01:18:51.465242Z"
   },
   "item.10213.name": {
     "src_hash": "7131d1c878f058973254abc586e95e18",
-    "text": "dragon statue",
+    "text": "drake staty",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.192625Z"
+    "updated_at": "2026-02-17T01:18:51.465456Z"
   },
   "item.10214.name": {
     "src_hash": "7131d1c878f058973254abc586e95e18",
-    "text": "dragon statue",
+    "text": "drake staty",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.192851Z"
+    "updated_at": "2026-02-17T01:18:51.465651Z"
   },
   "item.10215.name": {
     "src_hash": "7131d1c878f058973254abc586e95e18",
-    "text": "dragon statue",
+    "text": "drake staty",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.193113Z"
+    "updated_at": "2026-02-17T01:18:51.465842Z"
   },
   "item.10216.name": {
     "src_hash": "a5c37b0b99535230dcd569b7130cc54b",
@@ -2633,27 +2633,27 @@
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
-    "text": "Tome of Knowledge",
+    "text": "Tome av Knowledge",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.193757Z"
+    "updated_at": "2026-02-17T01:18:58.594972Z"
   },
   "item.10218.name": {
     "src_hash": "f9300686f5bdfa92fe3c8a12b3365fdb",
-    "text": "corned fish",
+    "text": "corned fisk",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.194028Z"
+    "updated_at": "2026-02-17T01:18:58.595612Z"
   },
   "item.10219.name": {
     "src_hash": "e002ba7b4a12cf1f32203f0401207ff5",
-    "text": "crocodile steak",
+    "text": "krokodilstek",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.194307Z"
+    "updated_at": "2026-02-17T01:18:58.595814Z"
   },
   "item.10221.name": {
     "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
@@ -2689,43 +2689,43 @@
   },
   "item.10227.name": {
     "src_hash": "092e30b8a679b0c3eab38f6cd63f79ce",
-    "text": "nightmare doll",
+    "text": "mardröm docka",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.195723Z"
+    "updated_at": "2026-02-17T01:19:07.128692Z"
   },
   "item.10244.name": {
     "src_hash": "cdc52e0f25dbe88246f4a9f0db43e517",
-    "text": "bonebeast trophy",
+    "text": "bonebeast trofé",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.196023Z"
+    "updated_at": "2026-02-17T01:19:07.128937Z"
   },
   "item.10247.name": {
     "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
-    "text": "weapons crate",
+    "text": "vapenlåda",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.196268Z"
+    "updated_at": "2026-02-17T01:19:07.129515Z"
   },
   "item.10272.name": {
     "src_hash": "a10eed158a96a24198c61013fc3a40cb",
-    "text": "crab pincers",
+    "text": "krabba tång",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.196493Z"
+    "updated_at": "2026-02-17T01:19:07.129717Z"
   },
   "item.10273.name": {
     "src_hash": "d4456df84711920832024bfea9a04500",
-    "text": "terrorbird beak",
+    "text": "terrorbird näbb",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.196769Z"
+    "updated_at": "2026-02-17T01:19:13.846921Z"
   },
   "item.11210.name": {
     "src_hash": "7131d1c878f058973254abc586e95e18",
@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:44:42.851340Z"
+    "updated_at": "2026-02-17T01:19:13.848160Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -19758,5 +19758,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:02:25.179400Z"
+  },
+  "item.33932.name": {
+    "src_hash": "96e89a298e0a9f469b9ae458d6afae9f",
+    "text": "Huvud",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:42.512050Z"
+  },
+  "item.33937.name": {
+    "src_hash": "96e89a298e0a9f469b9ae458d6afae9f",
+    "text": "Huvud",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:42.512519Z"
+  },
+  "item.9041.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Detta vapen verkar viktigt. Du borde inte förlora det",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:42.839553Z"
+  },
+  "item.10208.desc": {
+    "src_hash": "4f5cd6643195047c2a1a94b1306baa22",
+    "text": "Någon verkar ha haft väldigt roligt att dekorera den.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:47.505155Z"
+  },
+  "item.10209.desc": {
+    "src_hash": "efcad34d251c0a3866a9744ef41df9b0",
+    "text": "Använd den i ditt hus för att konstruera vapenställ för ödlor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:47.505859Z"
+  },
+  "item.10216.desc": {
+    "src_hash": "f5983fdd8fd2e2fc1c22faaa80439f68",
+    "text": "Använd den i ditt hus för att bygga en drakestaty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:51.466320Z"
+  },
+  "item.10217.desc": {
+    "src_hash": "95fc558d85dc30bac93a98ad1a8bd42f",
+    "text": "Ta med den här krypterade boken till en visman i Farmine för att få visdom eller låsa upp mer av Zaos kultur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:58.594574Z"
+  },
+  "item.10218.desc": {
+    "src_hash": "4277fbe6c944de4097a47b4cc39005bc",
+    "text": "Denna fisk har saltats och redan förberedd som försörjning för soldater",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:18:58.595409Z"
+  },
+  "item.10247.desc": {
+    "src_hash": "79a4b5069fcbc4556ba7782cd0240de7",
+    "text": "Denna låda innehåller en uppsättning vapen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:19:07.129304Z"
+  },
+  "item.10281.desc": {
+    "src_hash": "9c4b74be7487196c0154c7fa2fd4c87e",
+    "text": "Ser ganska giftig ut, så inget bra val för en måltid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:19:13.847319Z"
+  },
+  "item.10288.desc": {
+    "src_hash": "353e14b2a3f813f1fb537fbaeec1166f",
+    "text": "Använd den i ditt hus för att bygga en draktron",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:19:13.847680Z"
   }
 }

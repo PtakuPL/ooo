@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T02:20:40.294596Z",
+  "timestamp": "2026-02-17T02:21:06.678917Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 290489,
@@ -49,56 +49,56 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 2754,
-    "guard_reports_blocked": 2688,
+    "guard_reports_total": 2755,
+    "guard_reports_blocked": 2689,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2688
+    "cannot_translate_reports_visible": 2689
   },
   "cache": {
-    "lang_stats_hits": 50,
-    "lang_stats_misses": 2,
-    "lang_stats_hit_pct": 96.2,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1974,
-    "lang_file_misses": 2,
+    "lang_file_hits": 1975,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 99.9,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T02:20:34.878541Z",
-    "cycle": 157,
+    "timestamp": "2026-02-17T02:21:01.910430Z",
+    "cycle": 158,
     "mode": "AUTO_TRANSLATE",
-    "category": "pl",
+    "category": "es",
     "events": {
-      "dispatch": 2074,
-      "mode_run": 25674
+      "dispatch": 433,
+      "mode_run": 7399
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T01:20:39.021190Z",
-    "window_end_utc": "2026-02-17T02:20:39.021190Z",
+    "window_start_utc": "2026-02-17T01:21:05.575842Z",
+    "window_end_utc": "2026-02-17T02:21:05.575842Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 161,
+    "total_cycles": 165,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 161
+      "AUTO_TRANSLATE": 165
     },
-    "auto_translate_cycles": 161,
+    "auto_translate_cycles": 165,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 3902,
-    "guard_fail": 4560,
-    "guard_fail_rate_pct": 53.9,
+    "translated": 3951,
+    "guard_fail": 4518,
+    "guard_fail_rate_pct": 53.3,
     "no_progress_entries": 4,
     "no_progress_rate_pct": 3.8,
-    "throughput_keys_per_h": 2169.2,
-    "suspicious_total": 14812,
+    "throughput_keys_per_h": 2177.6,
+    "suspicious_total": 14975,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -152,16 +152,16 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T02:20:34.733752Z",
+      "timestamp": "2026-02-17T02:21:01.851594Z",
       "checked_entries": 100,
-      "issues_found": 21,
+      "issues_found": 25,
       "issues_by_type": {
         "identical_to_en": 4,
         "identical_to_en_exempt": 20,
-        "artifact_token": 17,
-        "suspicious_log_high": 90,
-        "suspicious_log_medium": 32,
-        "suspicious_log_critical": 78,
+        "artifact_token": 21,
+        "suspicious_log_critical": 48,
+        "suspicious_log_high": 150,
+        "suspicious_log_low": 2,
         "suspicious_rejected_critical": 173,
         "suspicious_rejected_high": 27
       },
@@ -312,6 +312,34 @@
           "type": "artifact_token",
           "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+        },
+        {
+          "key": "monster.dracola.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "YOU ARE ALL DOOMED!",
+          "translated": "¡ESTÁIS TODOS CONDENADOS!"
+        },
+        {
+          "key": "monster.ferumbras_mortal_shell.voice_4",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "I WILL MAKE ALL OF YOU SUFFER!",
+          "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+        },
+        {
+          "key": "monster.prince_drazzak.voice_4",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "CRUSH THEM ALL!",
+          "translated": "¡¡APLASTADLES A TODOS!!"
+        },
+        {
+          "key": "monster.prince_drazzak.voice_8",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+          "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
         }
       ],
       "threshold": 10,
@@ -336,9 +364,9 @@
         "total_rejected": 967,
         "total_gt_guard_fail": 2639,
         "cycles": 864,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T02:20:34.733752Z",
-        "issues_count": 122023
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T02:21:01.851594Z",
+        "issues_count": 122057
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -352,15 +380,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T02:20:31.751322Z",
-        "last_translated": 43,
-        "total_suspicious": 25404,
+        "last_cycle": "2026-02-17T02:20:58.707929Z",
+        "last_translated": 50,
+        "total_suspicious": 25499,
         "total_rejected": 724,
         "total_gt_guard_fail": 11680,
-        "cycles": 1059,
+        "cycles": 1060,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T02:20:34.733752Z",
-        "issues_count": 182087
+        "last_audit": "2026-02-17T02:21:01.851594Z",
+        "issues_count": 182333
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -392,8 +420,8 @@
         "total_gt_guard_fail": 270,
         "cycles": 136,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T02:20:34.733752Z",
-        "issues_count": 8887
+        "last_audit": "2026-02-17T02:21:01.851594Z",
+        "issues_count": 8907
       },
       "ru": {
         "last_cycle": "2026-02-17T02:16:46.857384Z",
@@ -403,8 +431,8 @@
         "total_gt_guard_fail": 765,
         "cycles": 132,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T02:20:34.733752Z",
-        "issues_count": 23917
+        "last_audit": "2026-02-17T02:21:01.851594Z",
+        "issues_count": 23944
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -424,9 +452,9 @@
         "total_rejected": 98,
         "total_gt_guard_fail": 200,
         "cycles": 77,
-        "quality_score": 67.5,
-        "last_audit": "2026-02-17T02:20:34.733752Z",
-        "issues_count": 7317
+        "quality_score": 70.1,
+        "last_audit": "2026-02-17T02:21:01.851594Z",
+        "issues_count": 7330
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -876,8 +904,8 @@
         "total_gt_guard_fail": 1017,
         "cycles": 115,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T02:20:34.733752Z",
-        "issues_count": 30054
+        "last_audit": "2026-02-17T02:21:01.851594Z",
+        "issues_count": 30139
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -891,7 +919,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 21 issue(s) / 100 entries | 2026-02-17T02:20:34.733752Z"
+    "summary": "SLOW_MODE | 25 issue(s) / 100 entries | 2026-02-17T02:21:01.851594Z"
   },
   "languages": [
     {

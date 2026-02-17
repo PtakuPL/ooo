@@ -146414,5 +146414,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:01:42.135885Z"
+  },
+  "monster.the_dread_maiden.desc": {
+    "src_hash": "98a8b8bad75273e143475b0abc1b56ff",
+    "text": "Dread maiden",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:58.254914Z"
+  },
+  "monster.vok_the_freakish.name": {
+    "src_hash": "02ec83b1969636560afa169dad4a54e8",
+    "text": "Vok freakish",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:20:58.256652Z"
   }
 }

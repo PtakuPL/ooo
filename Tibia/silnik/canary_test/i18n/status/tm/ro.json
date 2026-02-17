@@ -54070,5 +54070,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:22:06.268733Z"
+  },
+  "npc.guard_saros.say_6": {
+    "src_hash": "8ceb2b85454a0774df85c6e63d83aa66",
+    "text": "Îmi amintesc că strugurii erau preferați. Era aproape dependent de ei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.530946Z"
+  },
+  "npc.guard_saros.say_7": {
+    "src_hash": "20591c18f17e79dc94d001dd8637bef4",
+    "text": "Mulțumesc foarte mult. Ce amabil din partea ta să-ți pasă de mine. Sunt bine multumesc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.531550Z"
+  },
+  "npc.gurbasch.stdmod_11": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Din plin abur înainte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.551104Z"
+  },
+  "npc.gurbasch.stdmod_5": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.551826Z"
+  },
+  "npc.gurbasch.stdmod_6": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Nu trebuie să ratezi experiența.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.552228Z"
+  },
+  "npc.habdel.farewell_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.553560Z"
+  },
+  "npc.habdel.walkaway_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.554546Z"
+  },
+  "npc.hairycles.say_64": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.560276Z"
+  },
+  "npc.halvar.say_17": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.562334Z"
+  },
+  "npc.harlow.stdmod_2": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.567361Z"
+  },
+  "npc.harlow.stdmod_5": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.567865Z"
+  },
+  "npc.harlow.stdmod_8": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.568239Z"
+  },
+  "npc.harlow_vengoth.stdmod_2": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.569140Z"
+  },
+  "npc.harog.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.570023Z"
+  },
+  "npc.harog.sendtrade_msg_1": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Rețineți că nu veți găsi oferte mai bune aici. Doar răsfoiește-mi mărfurile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.570804Z"
+  },
+  "npc.haroun.multi_2": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.571619Z"
+  },
+  "npc.haroun.say_1": {
+    "src_hash": "53f59a9ef75a585e8d262642a3166d45",
+    "text": "Vai! Un om! Acesta nu este un loc pentru tine, |PLAYERNAME|. Du-te și joacă-te în altă parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.572201Z"
+  },
+  "npc.haroun.say_10": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Bine atunci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.572546Z"
+  },
+  "npc.harsky.greet_1": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTĂ REGE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.574348Z"
+  },
+  "npc.harsky.greet_2": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTĂ REGE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.574706Z"
+  },
+  "npc.henricus.say_23": {
+    "src_hash": "4b452bff4087a52f9bdca4d82a2a7b7e",
+    "text": "Întoarce-te când ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.580647Z"
+  },
+  "npc.henricus.say_25": {
+    "src_hash": "4b452bff4087a52f9bdca4d82a2a7b7e",
+    "text": "Întoarce-te când ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.581189Z"
+  },
+  "npc.henricus.say_28": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Atunci nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.581626Z"
+  },
+  "npc.herbert.say_3": {
+    "src_hash": "98af82c52bec7b5731b2d21296466283",
+    "text": "Poftim, domnule.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.583753Z"
+  },
+  "npc.hireling.say_2": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.586570Z"
+  },
+  "npc.hireling.say_food_no_money": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.587440Z"
+  },
+  "npc.hjaern.say_13": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.589993Z"
+  },
+  "npc.humgolf.say_6": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Cuvânt greșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.595022Z"
+  },
+  "npc.humphrey.stdmod_1": {
+    "src_hash": "04daa42831a79875fb68ab920bdec004",
+    "text": "Ți-ar plăcea să primești acea protecție pentru un sacrificiu de |BLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.595824Z"
+  },
+  "npc.humphrey.stdmod_10": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.596743Z"
+  },
+  "npc.humphrey.stdmod_11": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.597495Z"
+  },
+  "npc.humphrey.stdmod_12": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.598473Z"
+  },
+  "npc.humphrey.stdmod_13": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.599270Z"
+  },
+  "npc.humphrey.stdmod_14": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.599994Z"
+  },
+  "npc.humphrey.stdmod_3": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.600531Z"
+  },
+  "npc.humphrey.stdmod_4": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.601271Z"
+  },
+  "npc.humphrey.stdmod_5": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.602163Z"
+  },
+  "npc.humphrey.stdmod_6": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.603131Z"
+  },
+  "npc.humphrey.stdmod_8": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.603800Z"
+  },
+  "npc.humphrey.stdmod_9": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.604546Z"
+  },
+  "npc.ikassis.say_2": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Nu ești în acea misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:31.608693Z"
   }
 }

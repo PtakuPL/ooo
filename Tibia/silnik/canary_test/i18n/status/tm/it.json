@@ -25,11 +25,11 @@
   },
   "item.21351.name": {
     "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
-    "text": "Light Stone Shower Rune",
+    "text": "Runa della doccia di pietra chiara",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T23:13:54.148914Z"
+    "updated_at": "2026-02-17T08:27:37.613133Z"
   },
   "monster.paladin_familiar.name": {
     "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
@@ -161,11 +161,11 @@
   },
   "item.21434.name": {
     "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
-    "text": "Light Stone Shower Rune",
+    "text": "Runa della doccia di pietra chiara",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T00:23:26.399747Z"
+    "updated_at": "2026-02-17T08:27:37.623502Z"
   },
   "item.24966.name": {
     "src_hash": "7c7004d4846601f4cc710309ded176ef",
@@ -60582,5 +60582,365 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:26:57.705246Z"
+  },
+  "item.20449.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.580383Z"
+  },
+  "item.20457.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.582576Z"
+  },
+  "item.20458.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.582922Z"
+  },
+  "item.2059.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statua",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.585677Z"
+  },
+  "item.2060.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statua",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.585923Z"
+  },
+  "item.2061.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statua",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.586232Z"
+  },
+  "item.20712.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.586830Z"
+  },
+  "item.20888.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "pavimento in marmo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.588722Z"
+  },
+  "item.21046.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.591597Z"
+  },
+  "item.211.name": {
+    "src_hash": "fd449163a9f3ceff7d32f574db5806e3",
+    "text": "resti di un uovo di ragno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.593407Z"
+  },
+  "item.21133.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.595337Z"
+  },
+  "item.21138.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.595866Z"
+  },
+  "item.21157.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.597981Z"
+  },
+  "item.21160.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.598774Z"
+  },
+  "item.21162.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.599220Z"
+  },
+  "item.21181.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.601158Z"
+  },
+  "item.21186.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un eremita vicino a Carlin potrebbe dirti di più a riguardo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.602174Z"
+  },
+  "item.2121.name": {
+    "src_hash": "7f7eeecbd1e8f8c87f8cc7d1d94393d9",
+    "text": "campo di veleno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.604457Z"
+  },
+  "item.21220.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.605620Z"
+  },
+  "item.21299.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.607886Z"
+  },
+  "item.21335.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.609659Z"
+  },
+  "item.21341.name": {
+    "src_hash": "e6fb119dfe58251e3548a454f21084bc",
+    "text": "mucchio di pietre sciolte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.610030Z"
+  },
+  "item.21343.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.610651Z"
+  },
+  "item.21345.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.611078Z"
+  },
+  "item.21346.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.611354Z"
+  },
+  "item.21347.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.611803Z"
+  },
+  "item.21349.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.612393Z"
+  },
+  "item.2136.name": {
+    "src_hash": "fdfa02ecf86feac3801254da57c1c9ba",
+    "text": "fumo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.614331Z"
+  },
+  "item.21376.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.615400Z"
+  },
+  "item.2139.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.616850Z"
+  },
+  "item.21400.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.618579Z"
+  },
+  "item.2141.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.619183Z"
+  },
+  "item.21413.name": {
+    "src_hash": "98e50388df431cb56eb12949e5ac0074",
+    "text": "vecchia pergamena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.619875Z"
+  },
+  "item.2142.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.620859Z"
+  },
+  "item.2143.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.621660Z"
+  },
+  "item.21444.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.624897Z"
+  },
+  "item.2149.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.627860Z"
+  },
+  "item.2150.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.628164Z"
+  },
+  "item.21501.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "C'è un buco nel soffitto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.628762Z"
+  },
+  "item.21501.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "pavimento sporco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.629045Z"
+  },
+  "item.2151.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.630121Z"
+  },
+  "item.2152.name": {
+    "src_hash": "cc8ced3fbc2f0c19ecf32aaef0027090",
+    "text": "pilastro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.630454Z"
+  },
+  "item.21565.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.631093Z"
+  },
+  "item.21567.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.631508Z"
+  },
+  "item.21569.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:27:37.632025Z"
   }
 }

@@ -59454,5 +59454,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:15:35.449421Z"
+  },
+  "achievement.1.name": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Castlemania",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:17:50.039218Z"
+  },
+  "achievement.20.name": {
+    "src_hash": "f4f7985b69acaebc7c2973b30f734182",
+    "text": "Cacciatore",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:17:50.056282Z"
+  },
+  "achievement.125.name": {
+    "src_hash": "efe3d2b02b49c973f309da5a27f75f30",
+    "text": "Tiratore scelto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:17:50.150063Z"
+  },
+  "achievement.9.name": {
+    "src_hash": "189d4baff9dd822bda8f3c39e883c348",
+    "text": "Signore Protettore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:17:56.487270Z"
+  },
+  "achievement.32.name": {
+    "src_hash": "61ac595863ca09842f09930e5c3828ad",
+    "text": "Efreet Alleato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:17:56.489680Z"
+  },
+  "achievement.38.name": {
+    "src_hash": "89b6492afd0a1d3c3ad2500e66397daf",
+    "text": "Sussurratore di fantasmi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:17:56.490663Z"
+  },
+  "achievement.45.name": {
+    "src_hash": "b03003fb8539b2d1b82e434bacc170fb",
+    "text": "Perfetto sciocco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:01.979220Z"
+  },
+  "achievement.46.name": {
+    "src_hash": "fe483c23e2ddd96a5090627085a83778",
+    "text": "Matemago",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:01.979425Z"
+  },
+  "achievement.47.name": {
+    "src_hash": "93d576f08824f587e6e677006d8c1fe1",
+    "text": "Arcipostino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:01.979609Z"
+  },
+  "achievement.50.name": {
+    "src_hash": "707e66ee97ec84531029a7a52a96326a",
+    "text": "Radendo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:01.980233Z"
+  },
+  "achievement.53.name": {
+    "src_hash": "42a07db3b617cae8c9df0f38d2553f43",
+    "text": "Raschiatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:05.124379Z"
+  },
+  "achievement.54.name": {
+    "src_hash": "10db3c8d5f48d25e0769372cb464a14d",
+    "text": "Pivello",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:05.124573Z"
+  },
+  "achievement.56.name": {
+    "src_hash": "1029736e995a0add53f08dbcd9c77e3d",
+    "text": "Erbicida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:05.124747Z"
+  },
+  "achievement.57.name": {
+    "src_hash": "1f7f1b477642e497c88d0d00f1fb98a5",
+    "text": "Annientatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:05.124930Z"
+  },
+  "achievement.63.name": {
+    "src_hash": "60f06d1f2b26cc7421a8292951756c9d",
+    "text": "Viandante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:05.125097Z"
+  },
+  "achievement.69.name": {
+    "src_hash": "903d1100b8d77db8a0e87c9a5f8a9e98",
+    "text": "Mascherato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:11.310212Z"
+  },
+  "achievement.71.name": {
+    "src_hash": "2dd719d0587fcbf36410e4d984dc107f",
+    "text": "Camminatore del fuoco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:11.310556Z"
+  },
+  "achievement.79.name": {
+    "src_hash": "f9e0ff35d3b6f44f1883db497bb8ffa4",
+    "text": "Marmoroso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:16.866883Z"
+  },
+  "achievement.85.name": {
+    "src_hash": "07eda7b7fdc1b08c5b810584725d6803",
+    "text": "Steampunk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:16.867083Z"
+  },
+  "achievement.88.name": {
+    "src_hash": "2259f5b5f355a0b335edec255d1305f6",
+    "text": "Voltagabbana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:16.867288Z"
+  },
+  "achievement.93.name": {
+    "src_hash": "1b39f2208c291c598f84649b2827a5c7",
+    "text": "Marmellata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:16.867475Z"
+  },
+  "achievement.104.name": {
+    "src_hash": "656813c2d018d584fe3c0ec2deef6964",
+    "text": "La nemesi di Devovorga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:16.867788Z"
+  },
+  "achievement.110.name": {
+    "src_hash": "cbfa8981b409c5046e3ab4b571d01318",
+    "text": "Bluebariano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:21.538054Z"
+  },
+  "achievement.119.name": {
+    "src_hash": "494eb599eba47573e7da6f67cdc62e3e",
+    "text": "Maledetto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:21.538328Z"
+  },
+  "achievement.121.name": {
+    "src_hash": "2177d1cc91140b5e6536eb79c15cb11c",
+    "text": "Montagne russe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:21.538531Z"
+  },
+  "achievement.122.name": {
+    "src_hash": "bbd51443a3bd4a035c717892892bd439",
+    "text": "Trasmutatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:21.538713Z"
+  },
+  "achievement.132.name": {
+    "src_hash": "ce485436f64ea41db9bb33119dbc761b",
+    "text": "Fatto in casa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:28.476469Z"
+  },
+  "achievement.139.name": {
+    "src_hash": "71b7f7e890d186e88892825e84adbee0",
+    "text": "Presenti mutati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:28.476704Z"
+  },
+  "achievement.142.name": {
+    "src_hash": "34994f41097fed93e309c74cb42cc2f3",
+    "text": "Ammazzadio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:28.476883Z"
+  },
+  "achievement.160.name": {
+    "src_hash": "e4e28e54eecbb0efe7d77914e2949b5e",
+    "text": "Spadaccino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:34.120503Z"
+  },
+  "achievement.162.name": {
+    "src_hash": "961ee3e3448e7b9cd0e24c4213c24092",
+    "text": "Ritualista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:34.120732Z"
+  },
+  "achievement.164.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Guerriero selvaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:34.120949Z"
+  },
+  "achievement.169.name": {
+    "src_hash": "4d9a8d9067a945eda6cf153c069dce8f",
+    "text": "Ex-alunni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:34.121633Z"
+  },
+  "achievement.170.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Warlock",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:39.089011Z"
+  },
+  "achievement.175.name": {
+    "src_hash": "49283af40fc2b878184481dc93f9cff4",
+    "text": "Degustazione estrema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:39.089271Z"
+  },
+  "achievement.185.name": {
+    "src_hash": "6caec29927843945c535d26410a2501e",
+    "text": "Sventura dei Portatori di Bane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:39.089527Z"
+  },
+  "achievement.186.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Diavolo del fuoco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:39.089722Z"
+  },
+  "achievement.187.name": {
+    "src_hash": "3b4fd11da1673a39803db90cbaf52dea",
+    "text": "Piromane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:39.089893Z"
+  },
+  "achievement.190.name": {
+    "src_hash": "496f1b6bd83e9d82980deb2068058f5b",
+    "text": "Petrologo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:42.379923Z"
+  },
+  "achievement.208.name": {
+    "src_hash": "9eced36b97dbab0b65d1e2faee071889",
+    "text": "Ammazzamaghi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:18:42.380123Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T08:17:29.150462Z",
+  "timestamp": "2026-02-17T08:20:10.066397Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -15903,8 +15903,8 @@
         [
           "achievements.json",
           1,
-          1771074894505030746,
-          128997
+          1771316322381280898,
+          128974
         ],
         [
           "actions.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 25527,
-        "english_copy_keys": 2137,
+        "translated_keys": 25547,
+        "english_copy_keys": 2119,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 47.64,
+        "completion_pct": 47.67,
         "server_keys": 49731,
-        "server_translated": 24588,
-        "server_pct": 49.44,
+        "server_translated": 24608,
+        "server_pct": 49.48,
         "client_keys": 3855,
         "client_translated": 939,
         "client_pct": 24.36
@@ -16150,13 +16150,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1771074894505030746,
-            128997
+            1771316322381280898,
+            128974
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 991,
-            "english_copy_keys": 44,
+            "translated_keys": 1011,
+            "english_copy_keys": 26,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27027,8 +27027,8 @@
         [
           "php.json",
           1,
-          1771074895309032435,
-          4252
+          1771316403161625130,
+          4278
         ],
         [
           "questlog.json",
@@ -27096,17 +27096,17 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 20965,
-        "english_copy_keys": 2295,
+        "translated_keys": 20998,
+        "english_copy_keys": 2308,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 39.12,
+        "completion_pct": 39.19,
         "server_keys": 49731,
         "server_translated": 19962,
         "server_pct": 40.14,
         "client_keys": 3855,
-        "client_translated": 1003,
-        "client_pct": 26.02
+        "client_translated": 1036,
+        "client_pct": 26.87
       },
       "files": {
         "achievements.json": {
@@ -27490,13 +27490,13 @@
         "php.json": {
           "sig": [
             1,
-            1771074895309032435,
-            4252
+            1771316403161625130,
+            4278
           ],
           "row": {
             "total_reference_keys": 59,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 33,
+            "english_copy_keys": 13,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27648,7 +27648,7 @@
         [
           "achievements.json",
           1,
-          1771312663342706884,
+          1771316331577318899,
           192131
         ],
         [
@@ -27895,7 +27895,7 @@
         "achievements.json": {
           "sig": [
             1,
-            1771312663342706884,
+            1771316331577318899,
             192131
           ],
           "row": {

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T08:17:23.581390Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 25,
+  "timestamp": "2026-02-17T08:20:03.253303Z",
+  "language": "ro",
+  "json_file": "php.json",
+  "translated": 44,
   "entries": [
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "php.exception.text1",
+      "en": "error.log couldnt be opened for writing.. so the detailed information couldnt be saved.. are you sure directory system/logs is writable by web server? Correct this, and then refresh this site.",
+      "translated": "error.log nu a putut fi deschis pentru scriere.. deci informațiile detaliate nu au putut fi salvate.. ești sigur că sistemul de directoare/jurnalele pot fi scrise de serverul web? Corectați acest lucru și apoi reîmprospătați acest site.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "php.settingssetcommand.text1",
+      "en": "Setting $key successfully updated",
+      "translated": "Setarea $key a fost actualizată cu succes",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "php.migrateruncommand.text1",
+      "en": "Please check it and re-run the command",
+      "translated": "Verificați-l și executați din nou comanda",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "php.migrateruncommand.text2",
+      "en": "No migration has been executed",
+      "translated": "Nu a fost executată nicio migrare",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "php.plugins.text3",
+      "en": ", and youre using version",
+      "translated": "și utilizați versiunea",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "php.plugins.text4",
+      "en": "to be installed.",
+      "translated": "pentru a fi instalat.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "php.plugins.text5",
+      "en": "to exist in the database.",
+      "translated": "să existe în baza de date.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elyen_ravenlock.voice_2",
-      "en": "<chants> Re Ha, Omrah, Tan Ra...",
-      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
-      "source": "tm"
+      "key": "php.settings.text3",
+      "en": "input-group-append input-group-text",
+      "translated": "grup de intrare-adăugați text-grup de intrare",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "php.settings.text4",
+      "en": "fas fa-eye-slash",
+      "translated": "fas fa-eye-slash",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "php.settings.text5",
+      "en": "well setting-default",
+      "translated": "bine setare-implicit",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "php.validator.text1",
+      "en": "Character name is too short. Min. length <b>$minLength</b> characters.",
+      "translated": "Numele personajului este prea scurt. Min. lungime <b>$minLength</b> caractere.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.mother_of_jack.voice_1",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
-      "source": "tm"
+      "key": "php.validator.text2",
+      "en": "Character name is too long. Max. length <b>$maxLength</b> characters.",
+      "translated": "Numele personajului este prea lung. Max. lungime <b>$maxLength</b> caractere.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.navigator.multi_1",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
-      "source": "tm"
+      "key": "php.validator.text3",
+      "en": "Invalid name format. Use only A-Z, spaces and .",
+      "translated": "Format de nume nevalid. Folosiți numai A-Z, spații și .",
+      "source": "google_translate"
     },
     {
-      "key": "npc.navigator.multi_2",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
-      "source": "tm"
+      "key": "php.validator.text4",
+      "en": "Invalid name format. Use only A-Z, spaces and .",
+      "translated": "Format de nume nevalid. Folosiți numai A-Z, spații și .",
+      "source": "google_translate"
     },
     {
-      "key": "npc.omrabas.multi_35",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
-      "source": "tm"
+      "key": "php.validator.text5",
+      "en": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-",
+      "translated": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-",
+      "source": "google_translate"
     },
     {
-      "key": "npc.omrabas.multi_82",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
-      "source": "tm"
+      "key": "php.createcharacter.text1",
+      "en": "Error. Cant create character. Probably problem with database. Please try again later or contact with admin.",
+      "translated": "Eroare. Nu pot crea caracter. Probabil problema cu baza de date. Vă rugăm să încercați din nou mai târziu sau să contactați administratorul.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.omrabas.voice_2",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
-      "source": "tm"
+      "key": "php.forum.text1",
+      "en": ". FORUM_TABLE_PREFIX .",
+      "translated": ". FORUM_TABLE_PREFIX .",
+      "source": "google_translate"
     },
     {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
-      "source": "tm"
+      "key": "php.monsters.text1",
+      "en": "<h2>All records deleted from table ",
+      "translated": "<h2>Toate înregistrările au fost șterse din tabel ",
+      "source": "google_translate"
     },
     {
-      "key": "npc.raymond_striker.multi_21",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
-      "source": "tm"
+      "key": "php.monsters.text2",
+      "en": "monsters in database.</h2>",
+      "translated": "monștri în baza de date.</h2>",
+      "source": "google_translate"
     },
     {
-      "key": "npc.sane_mage.multi_5",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
-      "source": "tm"
+      "key": "php.monsters.text3",
+      "en": "is monster use haste spell",
+      "translated": "monstru folosește vraja grabă",
+      "source": "google_translate"
     }
   ]
 }

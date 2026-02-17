@@ -53622,5 +53622,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:16:49.587261Z"
+  },
+  "php.mailer.text3": {
+    "src_hash": "3846ca489dd790dd85e0b5e0b9dad6d5",
+    "text": "e-mailuri $succes livrate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:01.479190Z"
+  },
+  "php.mailer.text4": {
+    "src_hash": "67634e1d3d15eaa0ce21d2a9f8b03385",
+    "text": "e-mailurile $failed au eșuat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:01.479564Z"
+  },
+  "php.server_status.text1": {
+    "src_hash": "fc026d2cbd61046fa6d081aa7997284e",
+    "text": "fas fa-exclamatie-cerc text-pericol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:01.479864Z"
+  },
+  "php.server_status.text2": {
+    "src_hash": "55ca72648287c8779f1fd60954bfad14",
+    "text": "col-md-6 col-lg-6",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:08.138712Z"
+  },
+  "php.server_status.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "card card-info card-contur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:08.139280Z"
+  },
+  "php.server_status.text4": {
+    "src_hash": "7f30b86a3f0468f2d524fea4cb122161",
+    "text": "card-header border-bottom-0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:08.139635Z"
+  },
+  "php.server_status.text5": {
+    "src_hash": "6e6159b3c97c1e13c5cd0b6402ae9649",
+    "text": "font-weight-bold m-0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:08.139933Z"
+  },
+  "php.settings.text2": {
+    "src_hash": "4cf7384b414a9d7d4624d7e776f98aee",
+    "text": "Nu se poate încărca fișierul de setări pentru pluginul $plugin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:16.391651Z"
+  },
+  "php.plugins.text1": {
+    "src_hash": "f16a06e7d231a35db793c74cf0ed3b68",
+    "text": "Se preiau cele mai recente informații de la $repoUri..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:16.392059Z"
+  },
+  "php.plugins.text2": {
+    "src_hash": "79001f389eb5f5185f6945430cb57be1",
+    "text": "upload_max_filesize",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:16.392880Z"
+  },
+  "php.news.text1": {
+    "src_hash": "64b46d605a153160d660746a9e3f014f",
+    "text": ". TABLE_PREFIX .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:16.393167Z"
+  },
+  "php.menus.text1": {
+    "src_hash": "efb36922d5d9612c37ad341d2876f464",
+    "text": "Acest șablon nu acceptă reinstalarea meniurilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:16.393544Z"
+  },
+  "php.menus.text2": {
+    "src_hash": "1d2317452aca8b6e6eeeada6602e489a",
+    "text": "col-md-12 col-lg-6",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:21.681430Z"
+  },
+  "php.menus.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "card card-info card-contur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:21.681987Z"
+  },
+  "php.menus.text4": {
+    "src_hash": "130a635302db9ca6c9df51832d42f783",
+    "text": "ui-state-default",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:21.682403Z"
+  },
+  "php.menus.text5": {
+    "src_hash": "3c295729a9712de89566a726e015e430",
+    "text": "btn btn-danger float-dreapta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:21.682877Z"
+  },
+  "php.players.text1": {
+    "src_hash": "5e5b7cfa148d7664fb340157e6606abe",
+    "text": "Vocația cu acest id nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:21.683242Z"
+  },
+  "php.players.text2": {
+    "src_hash": "b47b9410367725df48e327131e4850ef",
+    "text": "col-12 col-sm-12 col-lg-10",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:26.550640Z"
+  },
+  "php.players.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "card card-info card-contur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:26.551184Z"
+  },
+  "php.players.text5": {
+    "src_hash": "1080f71ac0a5aa7505c4274d20a0ffa0",
+    "text": "btn btn-succes btn-sm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:26.551808Z"
+  },
+  "php.upload_image.text1": {
+    "src_hash": "32e960d3879a6fb709a3d6de9507911b",
+    "text": "Nu există o politică P3P.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:26.552147Z"
+  },
+  "php.template.text2": {
+    "src_hash": "e2d5d75ea4935cdabe58e68c1a4529ab",
+    "text": "nav-item d-none d-sm-inline-block",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:34.042832Z"
+  },
+  "php.template.text3": {
+    "src_hash": "f05fe584a9e3b77bf6bf5028670d6e86",
+    "text": "navbar-nav ml-auto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:34.043124Z"
+  },
+  "php.index.text1": {
+    "src_hash": "2960aaccfd9458679188ff8836c0f996",
+    "text": ". BASE_URL . instala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:34.043595Z"
+  },
+  "php.exception.text1": {
+    "src_hash": "2553d1f72c1bad21b4705bf039844acc",
+    "text": "error.log nu a putut fi deschis pentru scriere.. deci informațiile detaliate nu au putut fi salvate.. ești sigur că sistemul de directoare/jurnalele pot fi scrise de serverul web? Corectați acest lucru și apoi reîmprospătați acest site.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:34.044660Z"
+  },
+  "php.settingssetcommand.text1": {
+    "src_hash": "0e8627c69232a44011cbc71279c4e7b1",
+    "text": "Setarea $key a fost actualizată cu succes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:42.432631Z"
+  },
+  "php.migrateruncommand.text1": {
+    "src_hash": "5b3246e070947127c7e2f6ef6a7ff0b7",
+    "text": "Verificați-l și executați din nou comanda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:42.432980Z"
+  },
+  "php.migrateruncommand.text2": {
+    "src_hash": "045ed1be584efb9e9a37a4b4550c6ea0",
+    "text": "Nu a fost executată nicio migrare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:42.433294Z"
+  },
+  "php.plugins.text3": {
+    "src_hash": "31f1a1e2915d46bdb448699846c17d0a",
+    "text": "și utilizați versiunea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:42.433565Z"
+  },
+  "php.plugins.text4": {
+    "src_hash": "1f7ded1bec5ad297946d94c0df1d46c7",
+    "text": "pentru a fi instalat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:49.563495Z"
+  },
+  "php.plugins.text5": {
+    "src_hash": "2347f6d3b927235475fbf0808b19bd71",
+    "text": "să existe în baza de date.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:49.563816Z"
+  },
+  "php.settings.text3": {
+    "src_hash": "8b7067a01d3834aad2c4f3c5987e398f",
+    "text": "grup de intrare-adăugați text-grup de intrare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:49.564146Z"
+  },
+  "php.settings.text4": {
+    "src_hash": "44eaef6924cd938b409c14e667746545",
+    "text": "fas fa-eye-slash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:49.564435Z"
+  },
+  "php.settings.text5": {
+    "src_hash": "7835fce2559be64acaaba40289d34365",
+    "text": "bine setare-implicit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:49.564670Z"
+  },
+  "php.validator.text1": {
+    "src_hash": "118482af672a8c357bae2c9bd39eb089",
+    "text": "Numele personajului este prea scurt. Min. lungime <b>$minLength</b> caractere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:55.889157Z"
+  },
+  "php.validator.text2": {
+    "src_hash": "82c4b5da7482fe473358790847bb8b9c",
+    "text": "Numele personajului este prea lung. Max. lungime <b>$maxLength</b> caractere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:55.889585Z"
+  },
+  "php.validator.text3": {
+    "src_hash": "9057059de9ce736e035a5942d00bcc80",
+    "text": "Format de nume nevalid. Folosiți numai A-Z, spații și .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:55.889981Z"
+  },
+  "php.validator.text4": {
+    "src_hash": "9057059de9ce736e035a5942d00bcc80",
+    "text": "Format de nume nevalid. Folosiți numai A-Z, spații și .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:55.890391Z"
+  },
+  "php.validator.text5": {
+    "src_hash": "142bf4ca66397c4719c7a985320ca1e1",
+    "text": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:19:55.890716Z"
+  },
+  "php.createcharacter.text1": {
+    "src_hash": "04f9ddc4f90313c2d3d4536480ed9276",
+    "text": "Eroare. Nu pot crea caracter. Probabil problema cu baza de date. Vă rugăm să încercați din nou mai târziu sau să contactați administratorul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:03.161467Z"
+  },
+  "php.forum.text1": {
+    "src_hash": "8c449edd509090cec7150b97604ebd35",
+    "text": ". FORUM_TABLE_PREFIX .",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:03.161791Z"
+  },
+  "php.monsters.text1": {
+    "src_hash": "5b11601a7c75a47d708a6edaecc5f77c",
+    "text": "<h2>Toate înregistrările au fost șterse din tabel ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:03.162337Z"
+  },
+  "php.monsters.text2": {
+    "src_hash": "51067c3354e3ab4f169926e9ccd3d011",
+    "text": "monștri în baza de date.</h2>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:03.162673Z"
+  },
+  "php.monsters.text3": {
+    "src_hash": "f2c3089cda3860ef1c9246ee08c672d2",
+    "text": "monstru folosește vraja grabă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:20:03.162972Z"
   }
 }

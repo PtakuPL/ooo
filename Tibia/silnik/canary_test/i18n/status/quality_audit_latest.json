@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-02-17T08:17:24.859715Z",
+  "timestamp": "2026-02-17T08:20:06.008143Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 18,
   "issues_by_type": {
-    "identical_to_en": 1,
-    "identical_to_en_exempt": 2,
+    "identical_to_en": 2,
+    "identical_to_en_exempt": 5,
     "artifact_token": 16,
-    "suspicious_log_high": 174,
+    "suspicious_log_high": 173,
     "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 173,
-    "suspicious_rejected_high": 27
+    "suspicious_log_low": 1,
+    "suspicious_rejected_critical": 168,
+    "suspicious_rejected_high": 32
   },
   "issues": [
     {
@@ -130,6 +131,13 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "achievement.170.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Warlock",
+      "translated": "Warlock"
     }
   ],
   "threshold": 10,

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T08:15:53.116145Z",
-  "cycle_counter": 1888,
-  "last_target_key": "ro:client.json",
-  "last_pending_total": 116,
+  "timestamp": "2026-02-17T08:18:53.433419Z",
+  "cycle_counter": 1891,
+  "last_target_key": "ro:php.json",
+  "last_pending_total": 59,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 189,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 368,
+  "cache_cycle": 369,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -346,7 +346,8 @@
     "ro:creaturescripts.json": 0,
     "sv:raids.json": 0,
     "sr:raids.json": 0,
-    "it:movements.json": 0
+    "it:movements.json": 0,
+    "it:achievements.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -401,8 +402,8 @@
       "pl": 87.21,
       "es": 84.23,
       "ru": 49.8,
-      "ro": 39.06,
-      "it": 47.56,
+      "ro": 39.12,
+      "it": 47.64,
       "sr": 44.42,
       "sv": 26.82
     }

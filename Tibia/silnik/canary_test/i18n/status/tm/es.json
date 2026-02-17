@@ -147982,5 +147982,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:09:21.778317Z"
+  },
+  "otclient_modules.ruleviolation.tr_27": {
+    "src_hash": "354543dcfd5992e2ec4592120579abfb",
+    "text": "2f) Incitar a la infracción de las reglas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:21:03.784779Z"
+  },
+  "otclient_modules.ruleviolation.tr_28": {
+    "src_hash": "382f82c02985507553149d61f986547c",
+    "text": "2e) Declaración pública en idioma no inglés",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:21:03.785107Z"
+  },
+  "otclient_modules.ruleviolation.tr_29": {
+    "src_hash": "bcabc0eda3f7968aa5757b344c020a11",
+    "text": "2d) Declaración pública fuera de tema",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:21:03.785409Z"
+  },
+  "otclient_modules.ruleviolation.tr_3": {
+    "src_hash": "137a893a57fb3501a4a62dbebc3703e1",
+    "text": "No se ha seleccionado ninguna declaración.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:21:07.292552Z"
+  },
+  "otclient_modules.ruleviolation.tr_30": {
+    "src_hash": "f57a312ad6845dc842f499e606ef8b85",
+    "text": "2c) Publicidad ilegal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:21:07.292822Z"
+  },
+  "otclient_modules.ruleviolation.tr_31": {
+    "src_hash": "315587308e8fe9ba7d14cac1203b256a",
+    "text": "2b) Envío de spam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:21:07.293123Z"
   }
 }

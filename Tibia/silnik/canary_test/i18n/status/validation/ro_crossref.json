@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 26.0,
+  "coverage_pct": 26.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T05:15:35.995120Z",
+  "checked_at": "2026-02-17T05:38:05.207851Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -212,24 +212,6 @@
       "lang": "ice"
     },
     {
-      "key": "cpp.game.no_loot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No loot",
-      "pl": "Żadnych łupów",
-      "lang": "No loot"
-    },
-    {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "Dobrze",
-      "lang": "Okay"
-    },
-    {
       "key": "cpp.game.tentugly_name",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -237,15 +219,6 @@
       "en": "Tentugly",
       "pl": "Delikatnie",
       "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.game.you_looted",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You looted ",
-      "pl": "Zrabowałeś ",
-      "lang": "You looted "
     },
     {
       "key": "cpp.inspect.and_connector",
@@ -336,15 +309,6 @@
       "en": "head",
       "pl": "Głowa",
       "lang": "head"
-    },
-    {
-      "key": "cpp.inspect.body_legs",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "legs",
-      "pl": "noga",
-      "lang": "legs"
     },
     {
       "key": "cpp.inspect.body_neck",
@@ -1002,15 +966,6 @@
       "en": "(all)",
       "pl": "(wszystkie)",
       "lang": "(all)"
-    },
-    {
-      "key": "cpp.protocol.vocation_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vocation",
-      "pl": "Profesja",
-      "lang": "Vocation"
     },
     {
       "key": "cpp.returnvalue.no_error",
@@ -3612,6 +3567,51 @@
       "en": "Take this!",
       "pl": "Masz to!",
       "lang": "Take this!"
+    },
+    {
+      "key": "npc.barnabas_dee.say_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahhhhhhhh! ",
+      "pl": "Aaaaaaachhhhhh! ",
+      "lang": "Ahhhhhhhh! "
+    },
+    {
+      "key": "npc.blind_orc.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Futchi.",
+      "pl": "Futchi!",
+      "lang": "Futchi."
+    },
+    {
+      "key": "npc.blossom_bonecrusher.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.brodrosch.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.brodrosch.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
     }
   ],
   "length_ratio_issues": [

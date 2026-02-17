@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 38.5,
+  "coverage_pct": 38.7,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T05:15:45.849237Z",
-  "issues_total": 108,
+  "checked_at": "2026-02-17T05:38:13.037237Z",
+  "issues_total": 106,
   "issues_by_type": {
-    "consistency_in_language": 52,
-    "pl_reference_missing_translation": 32,
+    "consistency_in_language": 53,
+    "pl_reference_missing_translation": 29,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -180,6 +180,21 @@
         "otclient_modules:otclient_modules.character_otui.tr_69",
         "otclient_modules:otclient_modules.game_healthcircle.tr_11",
         "otclient_modules:otclient_modules.skills_otui.tr_41"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sword Fighting",
+      "variants": [
+        "Мечевой бой",
+        "Мечи"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.game.highscore_category_sword",
+        "otclient_modules:otclient_modules.game_healthcircle.tr_14",
+        "otclient_modules:otclient_modules.skills_otui.tr_44"
       ]
     },
     {
@@ -1086,33 +1101,6 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
-    },
-    {
-      "key": "spell.terra_wave.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Terra Wave",
-      "pl": "Fala Terra",
-      "lang": "Terra Wave"
-    },
-    {
-      "key": "spell.ice_strike.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ice Strike",
-      "pl": "Lodowe uderzenie",
-      "lang": "Ice Strike"
-    },
-    {
-      "key": "spell.ice_burst.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ice Burst",
-      "pl": "Wybuch lodu",
-      "lang": "Ice Burst"
     }
   ],
   "length_ratio_issues": [
@@ -1334,8 +1322,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 32,
-    "applied": 3,
+    "attempted": 29,
+    "applied": 0,
     "skipped": 29,
     "errors": 0
   }

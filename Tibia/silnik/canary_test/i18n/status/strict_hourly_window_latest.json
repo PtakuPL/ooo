@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T09:51:13.750683Z",
-  "window_end_utc": "2026-02-17T10:51:13.750683Z",
+  "window_start_utc": "2026-02-17T09:53:27.225143Z",
+  "window_end_utc": "2026-02-17T10:53:27.225143Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2592,
-  "guard_fail": 2588,
-  "guard_fail_rate_pct": 50.0,
+  "translated": 2587,
+  "guard_fail": 2562,
+  "guard_fail_rate_pct": 49.8,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 1393.7,
-  "suspicious_total": 9667,
+  "throughput_keys_per_h": 1417.3,
+  "suspicious_total": 9489,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -40,12 +40,6 @@
       "target": "es/server.json",
       "translated": 2,
       "guard_fail": 62,
-      "guard_command": 0
-    },
-    {
-      "target": "es/otclient_modules.json",
-      "translated": 22,
-      "guard_fail": 58,
       "guard_command": 0
     },
     {
@@ -71,6 +65,12 @@
       "translated": 5,
       "guard_fail": 45,
       "guard_command": 0
+    },
+    {
+      "target": "es/talkactions.json",
+      "translated": 1,
+      "guard_fail": 42,
+      "guard_command": 1
     }
   ]
 }

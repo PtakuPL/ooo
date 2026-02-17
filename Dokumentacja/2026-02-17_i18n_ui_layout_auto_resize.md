@@ -389,21 +389,442 @@ end
 - Manualna propagacja (ale to jednorazowe obliczenie, nie per-frame)
 - Trzeba obsłużyć też panele treści (SmallReversedQtPanel)
 
-#### Podejście B: fit-children w anchor layout (C++)
-**Idea**: Dodać `fit-children` do `UIAnchorLayout::internalUpdate()`.
+#### Podejście B: fit-children w UIAnchorLayout (C++) — SZCZEGÓŁOWA ANALIZA
 
-**Problem**: Anchor layout nie ma pojęcia "preferowanego rozmiaru" — widgety mogą być anchored
-do siebie nawzajem w dowolnych konfiguracjach (nie tylko liniowo jak w box layout).
-Obliczenie bounding box jest trywialne, ale **kaskadowe** powiększanie może prowadzić do
-nieskończonej pętli (dziecko rośnie → rodzic rośnie → dziecko anchored do rodzica rośnie → ...).
+##### B.1 Istniejący wzorzec: fit-children w UIVerticalLayout
 
-**Ocena**: Ryzykowne, trudne do debugowania, wymaga guard-ów na recursion.
+W `uiverticallayout.cpp` (linia 96) i `uihorizontallayout.cpp` (linia 94) mechanizm jest prosty:
+```cpp
+// UIVerticalLayout::internalUpdate()
+if (m_fitChildren && preferredHeight != parentWidget->getHeight()) {
+    g_dispatcher.deferEvent([=] {
+        parentWidget->setHeight(preferredHeight);
+    });
+}
+```
+- `preferredHeight` = suma (margin + height + spacing) wszystkich widocznych dzieci + padding
+- Resize rodzica jest **deferred** przez `g_dispatcher.deferEvent()` — unika recursion
+- Box layout zna dokładną kolejność dzieci (liniowa) więc obliczenie jest trywialne
 
-#### Podejście C: Hybrydowe — C++ `PropAutoFitParent` + Lua
-**Idea**: Nowa properta C++ `auto-fit-parent: true` — gdy dziecko zmienia rozmiar,
-informuje rodzica że powinien urosnąć. Rodzic oblicza bounding box dzieci.
+##### B.2 Problem z anchor layout
 
-**Ocena**: Eleganckie ale wymaga dużo pracy w C++ i testów regresji.
+`UIAnchorLayout::internalUpdate()` (plik `uianchorlayout.cpp:268-286`) NIE OBLICZA preferowanego
+rozmiaru — iteruje po `m_anchorsGroups` i wywołuje `updateWidget()` który pozycjonuje dziecko
+na podstawie anchors. Nie sumuje niczego.
+
+Anchory definiują **relacje** nie **kolejność**:
+- `anchors.top: prev.bottom` — top tego = bottom poprzedniego
+- `anchors.left: parent.left` + `anchors.right: parent.right` — wypełnij poziomo
+
+Dzieci w anchor layout mogą:
+1. Być anchored do `parent` → ich rozmiar zależy od rodzica
+2. Być anchored do `prev` → tworzą łańcuch (jak w opcjach — SmallReversedQtPanel)
+3. Być anchored do siebie nawzajem → potencjalny cykl
+4. Mieć stały `size:` → niezależne od rodzica/rodzeństwa
+
+##### B.3 Implementacja fit-children dla anchor layout
+
+**Podejście**: Po aktualizacji wszystkich anchors w `internalUpdate()`, obliczyć **bounding box**
+wszystkich widocznych dzieci i porównać z rozmiarem rodzica.
+
+```cpp
+// W UIAnchorLayout — nowe pola:
+class UIAnchorLayout : public UILayout {
+    // ...
+    void applyStyle(const OTMLNodePtr& styleNode) override; // NOWY
+    void setFitChildren(bool fitWidth, bool fitHeight);
+    
+    bool m_fitChildrenWidth{ false };
+    bool m_fitChildrenHeight{ false };
+};
+```
+
+```cpp
+// UIAnchorLayout::internalUpdate() — modyfikacja:
+bool UIAnchorLayout::internalUpdate()
+{
+    // ... istniejący kod: reset + updateWidget dla każdego dziecka ...
+
+    // NOWY KOD: fit-children — oblicz bounding box dzieci
+    if ((m_fitChildrenWidth || m_fitChildrenHeight) && changed) {
+        const auto& parentWidget = getParentWidget();
+        if (!parentWidget)
+            return changed;
+
+        int maxRight = 0;
+        int maxBottom = 0;
+        const auto& parentRect = parentWidget->getRect();
+        const auto& paddingRect = parentWidget->getPaddingRect();
+
+        for (const auto& [widget, anchorGroup] : m_anchorsGroups) {
+            if (!widget->isExplicitlyVisible())
+                continue;
+            
+            // Ignoruj dzieci anchored do parent z OBYDWU stron
+            // (left+right lub top+bottom) — te są rozciągnięte, nie definiują rozmiaru
+            bool anchoredBothHorizontal = false;
+            bool anchoredBothVertical = false;
+            bool anchoredToParentRight = false;
+            bool anchoredToParentBottom = false;
+            
+            for (const auto& anchor : anchorGroup->getAnchors()) {
+                // (uproszczona analiza anchors)
+            }
+            
+            const auto& childRect = widget->getRect();
+            
+            if (m_fitChildrenWidth && !anchoredBothHorizontal) {
+                int childRight = childRect.right() + widget->getMarginRight() 
+                               - parentRect.left() + parentWidget->getPaddingRight();
+                maxRight = std::max(maxRight, childRight);
+            }
+            
+            if (m_fitChildrenHeight && !anchoredBothVertical) {
+                int childBottom = childRect.bottom() + widget->getMarginBottom()
+                                - parentRect.top() + parentWidget->getPaddingBottom();
+                maxBottom = std::max(maxBottom, childBottom);
+            }
+        }
+
+        // Deferred resize — unika recursion
+        int newWidth = m_fitChildrenWidth ? std::max(maxRight, parentWidget->getWidth()) : parentWidget->getWidth();
+        int newHeight = m_fitChildrenHeight ? std::max(maxBottom, parentWidget->getHeight()) : parentWidget->getHeight();
+        
+        if (newWidth != parentWidget->getWidth() || newHeight != parentWidget->getHeight()) {
+            g_dispatcher.deferEvent([parentWidget, newWidth, newHeight] {
+                parentWidget->resize(newWidth, newHeight);
+            });
+        }
+    }
+
+    return changed;
+}
+```
+
+##### B.4 Parser OTUI dla anchor layout fit-children
+
+W `UIAnchorLayout::applyStyle()` (nowa metoda):
+```cpp
+void UIAnchorLayout::applyStyle(const OTMLNodePtr& styleNode)
+{
+    UILayout::applyStyle(styleNode);
+    for (const auto& node : styleNode->children()) {
+        if (node->tag() == "fit-children")
+            setFitChildren(node->value<bool>(), node->value<bool>());
+        else if (node->tag() == "fit-children-width")
+            setFitChildren(node->value<bool>(), m_fitChildrenHeight);
+        else if (node->tag() == "fit-children-height")
+            setFitChildren(m_fitChildrenWidth, node->value<bool>());
+    }
+}
+```
+
+OTUI użycie:
+```yaml
+# W options.otui — sidebar
+UIWidget
+  id: optionsTabBar
+  layout:
+    type: anchor
+    fit-children-width: true
+```
+
+##### B.5 Kaskadowa propagacja fit-children
+
+Mechanizm propagacji jest **wbudowany** w istniejący kod:
+1. `parentWidget->resize(newWidth, newHeight)` w deferred event
+2. `resize()` → `setRect()` → `updateLayout()` 
+3. `updateLayout()` → `m_layout->update()` (aktualizuje swoich dzieci)
+4. PLUS: `parent->getLayout()->updateLater()` (informuje dziadka)
+
+Jeżeli dziadek (okno główne) też ma `fit-children`, to kaskada działa automatycznie:
+```
+Title rośnie (text-auto-resize)
+  → Button (rodzic Title) fit-children → rośnie
+    → OptionsCategory (rodzic Button) fit-children → rośnie  
+      → optionsTabBar (rodzic OptionsCategory) fit-children → rośnie
+        → optionsWindow — fit-children → rośnie
+```
+
+##### B.6 Problem z cyklami i rozwiązanie
+
+**Scenariusz niebezpieczny**: Dziecko A anchored do `parent.left` + `parent.right`
+→ dziecko rozciąga się na pełną szer. rodzica → mierząc bounding box wychodzi == rodzic
+→ brak powiększenia → OK, brak cyklu.
+
+ALE: jeśli dziecko ma `text-auto-resize` + anchors do parent:
+- Text rośnie → widget rośnie → parent fit-children → parent rośnie
+- Parent rośnie → anchors przeliczane → dziecko rozciąga się (bo left+right) → bounding box = parent
+- Brak dalszego powiększenia → STOP
+
+**Rozwiązanie**: W bounding box **ignorować** dzieci anchored do `parent` z OBYDWU stron
+(left+right lub top+bottom) — te są "rozciągnięte" i nie definiują wymaganego minimum.
+Liczyć tylko dzieci z jednym anchorem lub z `text-auto-resize`.
+
+**Guard na recursion**: Dodać flagę `m_fitChildrenUpdating`:
+```cpp
+if (m_fitChildrenUpdating)
+    return changed;
+m_fitChildrenUpdating = true;
+// ... obliczenia ...
+m_fitChildrenUpdating = false;
+```
+
+##### B.7 Pliki do modyfikacji (opcja B)
+
+| Plik | Zmiana |
+|---|---|
+| `uianchorlayout.h` | Dodać: `m_fitChildrenWidth`, `m_fitChildrenHeight`, `m_fitChildrenUpdating`, `setFitChildren()`, `applyStyle()` override |
+| `uianchorlayout.cpp` | Dodać: `applyStyle()`, bounding box obliczenie w `internalUpdate()` |
+| `uiwidget.h` | Brak zmian |
+| `uiwidget.cpp` | Brak zmian |
+| `luafunctions.cpp` | Opcjonalnie: expose `setFitChildren` na Lua |
+
+**Ryzyko**: ŚREDNIE — deferred resize + guard na recursion powinny zapobiec cyklom.
+Ale wymaga dokładnych testów na wielu konfiguracjach anchors.
+
+**Zaleta**: Działanie automatyczne — wystarczy dodać `fit-children: true` w OTUI, nie
+trzeba pisać żadnego kodu Lua, nie trzeba ręcznie przeliczać. Każdy widget z tym flagiem
+automatycznie dopasowuje się do dzieci.
+
+---
+
+#### Podejście C: PropAutoFitParent — dziecko informuje rodzica (C++) — SZCZEGÓŁOWA ANALIZA
+
+##### C.1 Idea
+
+Odwrotny kierunek niż `fit-children`: zamiast rodzic mierzy dzieci, to **dziecko** mówi
+rodzicowi "jestem za duże, powiększ się". Nowa properta `auto-fit-parent: true` na dziecku.
+
+##### C.2 Nowe flagi w FlagProp
+
+```cpp
+enum FlagProp : uint32_t
+{
+    // ... istniejące (0-26) ...
+    PropAutoFitParentWidth = 1 << 27,   // NOWE
+    PropAutoFitParentHeight = 1 << 28,  // NOWE
+};
+```
+
+##### C.3 Mechanizm działania
+
+Gdy widget z `PropAutoFitParentWidth/Height` zmienia rozmiar (w `setRect()`), sprawdza
+czy jego nowy rozmiar przekracza przestrzeń rodzica i jeśli tak — powiększa rodzica.
+
+```cpp
+// W UIWidget::setRect() — NOWY KOD po linii 1067 (po m_rect = clampedRect):
+bool UIWidget::setRect(const Rect& rect)
+{
+    // ... istniejący clamp + early return ...
+
+    Rect oldRect = m_rect;
+    m_rect = clampedRect;
+
+    // NOWY: auto-fit-parent propagation
+    if (hasProp(PropAutoFitParentWidth) || hasProp(PropAutoFitParentHeight)) {
+        if (const auto& parent = getParent()) {
+            autoFitParent(parent);
+        }
+    }
+
+    // updates own layout
+    updateLayout();
+    // ... reszta istniejącego kodu ...
+}
+```
+
+##### C.4 Metoda autoFitParent()
+
+```cpp
+void UIWidget::autoFitParent(const UIWidgetPtr& parent)
+{
+    if (!parent || parent->isDestroyed())
+        return;
+
+    const auto& parentPaddingRect = parent->getPaddingRect();
+    bool needsResize = false;
+    int newParentWidth = parent->getWidth();
+    int newParentHeight = parent->getHeight();
+
+    if (hasProp(PropAutoFitParentWidth)) {
+        // Oblicz ile przestrzeni dziecko potrzebuje
+        int childRight = getRect().right() + getMarginRight();
+        int parentContentRight = parentPaddingRect.right();
+        
+        if (childRight > parentContentRight) {
+            int overflow = childRight - parentContentRight;
+            newParentWidth += overflow;
+            needsResize = true;
+        }
+    }
+
+    if (hasProp(PropAutoFitParentHeight)) {
+        int childBottom = getRect().bottom() + getMarginBottom();
+        int parentContentBottom = parentPaddingRect.bottom();
+        
+        if (childBottom > parentContentBottom) {
+            int overflow = childBottom - parentContentBottom;
+            newParentHeight += overflow;
+            needsResize = true;
+        }
+    }
+
+    if (needsResize) {
+        // DEFERRED — unika recursion w setRect() → updateLayout() → setRect()
+        g_dispatcher.deferEvent([parent, newParentWidth, newParentHeight] {
+            if (!parent->isDestroyed())
+                parent->resize(newParentWidth, newParentHeight);
+        });
+    }
+}
+```
+
+##### C.5 Kaskadowa propagacja
+
+Jeśli rodzic (np. Button) też ma `auto-fit-parent`, to gdy on się powiększy:
+1. `parent->resize()` → `setRect()`
+2. W `setRect()` sprawdza `PropAutoFitParentWidth` → tak → wywołuje `autoFitParent(grandparent)`
+3. Itd. aż do korzenia (MainWindow)
+
+```
+Title (text-auto-resize + auto-fit-parent: true)
+  → Title rośnie → autoFitParent(Button)
+    → Button rośnie → autoFitParent(OptionsCategory)
+      → OptionsCategory rośnie → autoFitParent(optionsTabBar)
+        → optionsTabBar rośnie → autoFitParent(optionsWindow)
+          → optionsWindow rośnie → STOP (brak PropAutoFitParent)
+```
+
+##### C.6 Parser OTUI
+
+W `uiwidgetbasestyle.cpp` (po linii 101 — po `max-height`):
+```cpp
+else if (node->tag() == "auto-fit-parent")
+    setAutoFitParent(node->value<bool>());
+else if (node->tag() == "auto-fit-parent-width")
+    setProp(PropAutoFitParentWidth, node->value<bool>());
+else if (node->tag() == "auto-fit-parent-height")
+    setProp(PropAutoFitParentHeight, node->value<bool>());
+```
+
+Użycie w OTUI:
+```yaml
+Label
+  id: Title
+  text-auto-resize: true
+  auto-fit-parent: true     # ← NOWE: gdy tekst urośnie, powiększ rodzica
+
+UIWidget
+  id: Button
+  auto-fit-parent: true     # ← kaskada: Button → OptionsCategory
+
+OptionsCategory < UIWidget
+  auto-fit-parent: true     # ← kaskada: OptionsCategory → sidebar
+
+UIWidget
+  id: optionsTabBar
+  auto-fit-parent-width: true  # ← sidebar → okno (tylko szerokość)
+```
+
+##### C.7 Nowe metody w UIWidget
+
+```cpp
+// uiwidget.h
+void setAutoFitParent(bool enabled);
+void setAutoFitParentWidth(bool enabled) { setProp(PropAutoFitParentWidth, enabled); }
+void setAutoFitParentHeight(bool enabled) { setProp(PropAutoFitParentHeight, enabled); }
+bool isAutoFitParent() { return hasProp(PropAutoFitParentWidth) || hasProp(PropAutoFitParentHeight); }
+
+// uiwidget.cpp
+void UIWidget::setAutoFitParent(bool enabled) {
+    setProp(PropAutoFitParentWidth, enabled);
+    setProp(PropAutoFitParentHeight, enabled);
+}
+```
+
+##### C.8 Lua bindings
+
+```cpp
+// luafunctions.cpp
+g_lua.bindClassMemberFunction<UIWidget>("setAutoFitParent", &UIWidget::setAutoFitParent);
+g_lua.bindClassMemberFunction<UIWidget>("setAutoFitParentWidth", &UIWidget::setAutoFitParentWidth);
+g_lua.bindClassMemberFunction<UIWidget>("setAutoFitParentHeight", &UIWidget::setAutoFitParentHeight);
+g_lua.bindClassMemberFunction<UIWidget>("isAutoFitParent", &UIWidget::isAutoFitParent);
+```
+
+##### C.9 Problem z cyklami i rozwiązanie
+
+**Scenariusz niebezpieczny**: 
+- Dziecko anchored `left+right` do parent → zmiana rozmiaru parent → przeliczenie anchors → dziecko się rozciąga → dziecko ma auto-fit-parent → chce powiększyć parent → ...
+
+**Rozwiązanie**: W `autoFitParent()` sprawdzać czy dziecko jest **anchored do parent z obydwu stron**:
+```cpp
+void UIWidget::autoFitParent(const UIWidgetPtr& parent)
+{
+    // Nie powiększaj rodzica jeśli jestem rozciągnięty na jego pełną szerokość/wysokość
+    if (isAnchored()) {
+        if (const auto& anchorLayout = parent->getAnchoredLayout()) {
+            auto it = anchorLayout->getAnchorsGroup().find(static_self_cast<UIWidget>());
+            if (it != anchorLayout->getAnchorsGroup().end()) {
+                bool anchoredLeftToParent = false, anchoredRightToParent = false;
+                bool anchoredTopToParent = false, anchoredBottomToParent = false;
+                
+                for (const auto& anchor : it->second->getAnchors()) {
+                    auto hookedWidget = anchor->getHookedWidget(static_self_cast<UIWidget>(), parent);
+                    if (hookedWidget == parent) {
+                        if (anchor->getAnchoredEdge() == Fw::AnchorLeft) anchoredLeftToParent = true;
+                        if (anchor->getAnchoredEdge() == Fw::AnchorRight) anchoredRightToParent = true;
+                        if (anchor->getAnchoredEdge() == Fw::AnchorTop) anchoredTopToParent = true;
+                        if (anchor->getAnchoredEdge() == Fw::AnchorBottom) anchoredBottomToParent = true;
+                    }
+                }
+                
+                // Jeśli rozciągnięty na obie strony — NIE powiększaj w tej osi
+                if (anchoredLeftToParent && anchoredRightToParent && hasProp(PropAutoFitParentWidth))
+                    return; // skip width fit
+                if (anchoredTopToParent && anchoredBottomToParent && hasProp(PropAutoFitParentHeight))
+                    return; // skip height fit
+            }
+        }
+    }
+    // ... reszta logiki powiększania ...
+}
+```
+
+##### C.10 Pliki do modyfikacji (opcja C)
+
+| Plik | Zmiana |
+|---|---|
+| `uiwidget.h` | Dodać: `PropAutoFitParentWidth` (1<<27), `PropAutoFitParentHeight` (1<<28), metody `setAutoFitParent()`, `autoFitParent()`, `isAutoFitParent()` |
+| `uiwidget.cpp` | Dodać: `autoFitParent()` impl, modyfikacja `setRect()` — wywołanie autoFitParent po zmianie rect |
+| `uiwidgetbasestyle.cpp` | Dodać: parser `auto-fit-parent`, `auto-fit-parent-width`, `auto-fit-parent-height` |
+| `luafunctions.cpp` | Dodać: 4 nowe Lua bindings |
+| .otui pliki | Dodać: `auto-fit-parent: true` na elementach hierarchii |
+
+---
+
+### Porównanie B vs C
+
+| Cecha | B (fit-children na layout) | C (auto-fit-parent na widget) |
+|---|---|---|
+| **Zmiany C++** | 2 pliki (anchor layout .h/.cpp) | 4 pliki (widget .h/.cpp, basestyle, luafunctions) |
+| **Kierunek propagacji** | Rodzic mierzy dzieci (top-down) | Dziecko informuje rodzica (bottom-up) |
+| **Granularność** | Per-layout (jeden flag na cały kontener) | Per-widget (każde dziecko osobno) |
+| **Kaskada** | Automatyczna przez istniejący updateLayout→parent | Jawna: dziecko→rodzic→dziadek, każdy musi mieć flag |
+| **Ochrona przed cyklami** | Guard flag `m_fitChildrenUpdating` | Sprawdzanie dual-anchored do parent |
+| **OTUI użycie** | `layout: { fit-children: true }` na kontenerze | `auto-fit-parent: true` na każdym elemencie łańcucha |
+| **Kompatybilność** | Wzorzec identyczny jak w UIBoxLayout | Nowy wzorzec, ale spójny z PropFlags |
+| **Ryzyko** | ŚREDNIE — bounding box w anchor może być nieprecyzyjny | NISKIE — deferred + dual-anchor guard |
+| **Uniwersalność** | Działa automatycznie na WSZYSTKIE dzieci kontenera | Precyzyjne: tylko oznaczone elementy propagują |
+
+**REKOMENDACJA**: Podejście **C (PropAutoFitParent)** jest lepsze ponieważ:
+1. Bardziej precyzyjne — tylko elementy z tłumaczeniami potrzebują propagacji
+2. Nie wymaga zmiany layoutu — anchor layout zostaje jak jest
+3. Łatwiejsze do debugowania — wiadomo który widget propaguje
+4. Niższe ryzyko regresji — nie zmienia logiki layoutu
+5. Spójne z istniejącym systemem PropFlags (TextAutoResize, FixedSize itd.)
+6. Kaskada jest jawna i kontrolowana
 
 ### 9.4 Rekomendacja: Podejście A (czyste Lua)
 

@@ -37198,5 +37198,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:40:38.728709Z"
+  },
+  "book.otbm.dead_but_zathroth_used_a": {
+    "src_hash": "18846a7a03eed9489dd84d8dcc173af4",
+    "text": "мертвый. Но Затрот воспользовался обманом и явился земле другой ее стороной, Уманом, и зачал на его месте существо.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:09.592485Z"
+  },
+  "book.otbm.dead_ones_and_sent_his": {
+    "src_hash": "948d9f1e689b479191785e4bba9633a4",
+    "text": "мертвецов и послал своих больших червей, которые начали пожирать нежить. Долго длилась борьба и снова нет конца",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:09.593391Z"
+  },
+  "book.otbm.death_an_improved_form_of": {
+    "src_hash": "500d63e26fb71ffbe0c2f2dea1eec51b",
+    "text": "Смерть – улучшенная форма жизни?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:09.594223Z"
+  },
+  "book.otbm.dedicated_to_all_women_who": {
+    "src_hash": "ecad8c09737381bef98043c51a51a5fe",
+    "text": "Посвящается всем женщинам, храбро и ловко победившим",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:09.594968Z"
+  },
+  "book.otbm.deep_in_the_heart_of": {
+    "src_hash": "6ec14a1db5969fa56ceb121138b236b7",
+    "text": "Глубоко в сердце Кха'лабала находится логово ужасного короля гиен. Этот легендарный зверь намного крупнее любого другого представителя своей расы, превосходя по размерам львов и даже слонов, и своими огромными, острыми как бритва зубами он может разорвать человека на части за считанные секунды. Более того, говорят, что король гиен поистине бессмертен, поскольку его снова и снова видели многочисленные путешественники и торговцы. Говорят, что многие караваны стали жертвой этого свирепого зверя, и широко распространено мнение, что на протяжении веков он накопил несметные сокровища.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:14.086655Z"
+  },
+  "book.otbm.describe_the_demonic_rulers": {
+    "src_hash": "7eb47e16efb77db5dea63a06685e034f",
+    "text": "описать демонических правителей",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:14.087382Z"
+  },
+  "book.otbm.desecration_this_entity_which_was": {
+    "src_hash": "f0dcde84f77bb3a358306d40428c73db",
+    "text": "осквернение! Это существо, которому, тем не менее, было два и один, теперь наблюдало за работами своего спутника в бесконечности.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:14.088359Z"
+  },
+  "book.otbm.destination_islands_senja_folda_vega": {
+    "src_hash": "89358617602c9fd44d5484d8cd775ba2",
+    "text": "Острова назначения: Сенья, Фолда, Вега.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:53:14.088889Z"
   }
 }

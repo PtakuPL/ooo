@@ -68278,5 +68278,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:40:33.151979Z"
+  },
+  "otclient_modules.calendar_otui.tr_11": {
+    "src_hash": "e324ba8ec09630f9fcca106d515afe8f",
+    "text": "Programma dell'evento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:06.337396Z"
+  },
+  "otclient_modules.character.tr_94": {
+    "src_hash": "07ad815187b53dc2ceaf5ad6e0a12bb1",
+    "text": "Livello:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:06.359091Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_2": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Salva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:06.391625Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_2": {
+    "src_hash": "b60183f6899f8b04902a4753633bab06",
+    "text": "0/0",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:06.428465Z"
+  },
+  "otclient_modules.keybinds_otui.tr_14": {
+    "src_hash": "904a8304056d77e4547744781b7ceb50",
+    "text": "Rinominare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:06.525730Z"
+  },
+  "otclient_modules.topmenu.tr_6": {
+    "src_hash": "4994a8ffeba4ac3140beb89e8d41f174",
+    "text": "Lingua",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:06.602732Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_7": {
+    "src_hash": "0aaa4a515a3bbc1dfc1003c2e7e8f165",
+    "text": "Suggerimento casuale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:09.910658Z"
+  },
+  "otclient_modules.browse_otui.tr_1": {
+    "src_hash": "be46a979203e1b1b31dbcbdaf1b8f8dc",
+    "text": "Cerca tutti gli elementi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:09.911230Z"
+  },
+  "otclient_modules.browse_otui.tr_2": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Tutto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:09.911550Z"
+  },
+  "otclient_modules.browse_otui.tr_3": {
+    "src_hash": "4cfa6c981549e990fe2344e4c805405e",
+    "text": "Trovare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:15.755010Z"
+  },
+  "otclient_modules.browse_otui.tr_4": {
+    "src_hash": "23e176b893ad93275651dbc38d2af6eb",
+    "text": "Mostra solo gli articoli del tuo deposito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:15.755487Z"
+  },
+  "otclient_modules.browse_otui.tr_5": {
+    "src_hash": "7b84c49b8fab415c7ae4cde3bf0ba89a",
+    "text": "Mostra solo Depot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:15.756032Z"
+  },
+  "otclient_modules.browse_otui.tr_6": {
+    "src_hash": "f15735bd4db9aebd4e82ebf4139179fc",
+    "text": "Filtra l'elenco in base alla tua vocazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:15.756510Z"
+  },
+  "otclient_modules.browse_otui.tr_7": {
+    "src_hash": "1c4a2636b5bee3b1691291067a6d4a36",
+    "text": "Filtra l'elenco in base al tuo livello",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:15.756938Z"
+  },
+  "otclient_modules.bugreport.tr_1": {
+    "src_hash": "f7b277584de820d26a7ee032b4761d64",
+    "text": "Segnalazione di bug inviata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:21.676892Z"
+  },
+  "otclient_modules.bugreport_otui.tr_2": {
+    "src_hash": "94966d90747b97d1f0f206c98a8b1ac3",
+    "text": "Inviare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:21.677174Z"
+  },
+  "otclient_modules.bugreport_otui.tr_3": {
+    "src_hash": "0af24622bfe23c88d1afc5e47fc4a7b0",
+    "text": "Utilizza questa finestra di dialogo solo per segnalare bug. Non segnalare qui le violazioni delle regole!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:21.677774Z"
+  },
+  "otclient_modules.bugreport_otui.tr_4": {
+    "src_hash": "82a8a3d0849e69c69211756ff05a0518",
+    "text": "Segnala bug",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:21.678057Z"
+  },
+  "otclient_modules.calendar.otui_text_1": {
+    "src_hash": "8a3845661fdf782e067eb3b38199bb36",
+    "text": "23-11-2023, 11:23 CET",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:21.678500Z"
+  },
+  "otclient_modules.calendar_otui.tr_10": {
+    "src_hash": "6f8522e0610541f1ef215a22ffa66ff6",
+    "text": "Lunedi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:24.703786Z"
+  },
+  "otclient_modules.calendar_otui.tr_2": {
+    "src_hash": "2188cd2d9c51fd7e317fe846c19db229",
+    "text": "*L'evento inizia/termina al salvataggio del server di questo giorno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:24.704333Z"
+  },
+  "otclient_modules.calendar_otui.tr_3": {
+    "src_hash": "4ae43ffefdaf3c2343be08c2c231978f",
+    "text": "Settembre 2023",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:24.704641Z"
+  },
+  "otclient_modules.calendar_otui.tr_4": {
+    "src_hash": "9d1a0949c39e66a0cd65240bc0ac9177",
+    "text": "Domenica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:24.704888Z"
+  },
+  "otclient_modules.calendar_otui.tr_5": {
+    "src_hash": "8b7051187b9191cdcdae6ed5a10e5adc",
+    "text": "Sabato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:24.705121Z"
+  },
+  "otclient_modules.calendar_otui.tr_6": {
+    "src_hash": "c33b138a163847cdb6caeeb7c9a126b4",
+    "text": "Venerdì",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:28.810855Z"
+  },
+  "otclient_modules.calendar_otui.tr_7": {
+    "src_hash": "78ae6f0cd191d25147e252dc54768238",
+    "text": "Giovedì",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:28.811152Z"
+  },
+  "otclient_modules.calendar_otui.tr_8": {
+    "src_hash": "796c163589f295373e171842f37265d5",
+    "text": "Mercoledì",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:28.811477Z"
+  },
+  "otclient_modules.calendar_otui.tr_9": {
+    "src_hash": "5792315f09a5d54fb7e3d066672b507f",
+    "text": "Martedì",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:28.811744Z"
+  },
+  "otclient_modules.changename_otui.tr_3": {
+    "src_hash": "55c7e6abf7d449577090584484cefe0b",
+    "text": "Inserisci il nuovo nome per il tuo personaggio:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:28.812218Z"
+  },
+  "otclient_modules.changename_otui.tr_4": {
+    "src_hash": "b315e1866d0715060e38cf1922640769",
+    "text": "Inserisci il nuovo nome del personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:33.347128Z"
+  },
+  "otclient_modules.changename_otui.tr_5": {
+    "src_hash": "55c7e6abf7d449577090584484cefe0b",
+    "text": "Inserisci il nuovo nome per il tuo personaggio:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:33.347618Z"
+  },
+  "otclient_modules.changename_otui.tr_8": {
+    "src_hash": "b315e1866d0715060e38cf1922640769",
+    "text": "Inserisci il nuovo nome del personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:33.348013Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_2": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Aprire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:33.348257Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_3": {
+    "src_hash": "9bc87291763452b34e94052a2237531f",
+    "text": "Apri un canale di messaggistica privato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:33.348662Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_4": {
+    "src_hash": "14cb425d8170ed04f3d8016d5a0ccf20",
+    "text": "Canali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:40.129649Z"
+  },
+  "otclient_modules.character.tr_1": {
+    "src_hash": "c1e1720c794250f5f1eeec1221d407e4",
+    "text": "Benedizioni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:40.129930Z"
+  },
+  "otclient_modules.character.tr_10": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Dall'amplificazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:40.130391Z"
+  },
+  "otclient_modules.character.tr_11": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:40.130691Z"
+  },
+  "otclient_modules.character.tr_12": {
+    "src_hash": "37323780191d51a33d295ac10fb98f06",
+    "text": "Slancio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:40.130931Z"
+  },
+  "otclient_modules.character.tr_13": {
+    "src_hash": "fc83082bceda55a1c217dde140d278a3",
+    "text": "Resistenze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:45.954373Z"
+  },
+  "otclient_modules.character.tr_14": {
+    "src_hash": "90045eaaf60ed77205fdc0d8066e2bab",
+    "text": "Rifletti fisico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:45.955032Z"
+  },
+  "otclient_modules.character.tr_15": {
+    "src_hash": "adaaee4b22041c27198d410c68d952c9",
+    "text": "Percentuale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:45.955689Z"
+  },
+  "otclient_modules.character.tr_16": {
+    "src_hash": "745e3db6a7ffd50e1a72b39482f0882d",
+    "text": "Piatto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:45.956239Z"
+  },
+  "otclient_modules.character.tr_18": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:45.956953Z"
+  },
+  "otclient_modules.character.tr_19": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Dall'amplificazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:50.631940Z"
+  },
+  "otclient_modules.character.tr_2": {
+    "src_hash": "e77090418ce18db48ce38a0bc92460e3",
+    "text": "Da Bonus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:50.632235Z"
+  },
+  "otclient_modules.character.tr_20": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:50.632495Z"
+  },
+  "otclient_modules.character.tr_21": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Schivare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:52:50.632741Z"
   }
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T01:57:04.698545Z",
-  "language": "es",
-  "json_file": "npc.json",
+  "timestamp": "2026-02-17T01:58:15.936998Z",
+  "language": "ru",
+  "json_file": "monsters.json",
   "translated": 24,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "monster.ocyakao.voice_1",
+      "en": "Chikuva!",
+      "translated": "Чикува!",
+      "source": "simple"
+    },
+    {
+      "key": "monster.ocyakao.voice_2",
+      "en": "Jinuma jamjam!",
+      "translated": "Джинума джем!",
+      "source": "simple"
+    },
+    {
+      "key": "monster.training_machine.voice_6",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
+      "key": "monster.training_machine.voice_15",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "monster.chakoya_toolshaper.voice_3",
+      "en": "Suvituka siq chuqua!",
+      "translated": "Сувитука сик чуква!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "monster.chakoya_toolshaper.voice_4",
+      "en": "Kiyosa sipaju!",
+      "translated": "Кийоса сипаджу!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "monster.orc_spearman.name",
+      "en": "Orc Spearman",
+      "translated": "Орк-копейщик",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "monster.orc_spearman.desc",
+      "en": "an orc spearman",
+      "translated": "орк-копейщик",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "monster.minotaur_cult_zealot.name",
+      "en": "Minotaur Cult Zealot",
+      "translated": "Фанатик культа Минотавра",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "monster.minotaur_cult_zealot.desc",
+      "en": "a minotaur cult zealot",
+      "translated": "фанатик культа минотавра",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "monster.dworc_voodoomaster.name",
+      "en": "Dworc Voodoomaster",
+      "translated": "Дворц Вудумастер",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "monster.dworc_voodoomaster.desc",
+      "en": "a dworc voodoomaster",
+      "translated": "дворк-вудумастер",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "monster.orc_rider.desc",
+      "en": "an orc rider",
+      "translated": "орк-наездник",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "monster.orc_rider.voice_1",
+      "en": "Orc arga Huummmak!",
+      "translated": "Орк арга Хууммак!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "monster.troll_legionnaire.name",
+      "en": "Troll Legionnaire",
+      "translated": "Тролль-легионер",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "monster.troll_legionnaire.desc",
+      "en": "a troll legionnaire",
+      "translated": "тролль-легионер",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.troll_legionnaire.voice_2",
+      "en": "Graaaaar!",
+      "translated": "Грааааар!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.minotaur.name",
+      "en": "Minotaur",
+      "translated": "Минотавр",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "monster.minotaur.desc",
+      "en": "a minotaur",
+      "translated": "минотавр",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "monster.crazed_summer_vanguard.name",
+      "en": "Crazed Summer Vanguard",
+      "translated": "Безумный летний авангард",
+      "source": "google_translate"
     }
   ]
 }

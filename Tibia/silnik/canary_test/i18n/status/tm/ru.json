@@ -25142,5 +25142,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:56:05.471086Z"
+  },
+  "monster.ocyakao.voice_1": {
+    "src_hash": "7a2ea89be5ce9d682c22f3cdca37d45d",
+    "text": "Чикува!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:57:53.271588Z"
+  },
+  "monster.ocyakao.voice_2": {
+    "src_hash": "6cda28f0bc5a28ce4e7061456c4c2728",
+    "text": "Джинума джем!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:57:53.271897Z"
+  },
+  "monster.chakoya_toolshaper.voice_3": {
+    "src_hash": "e53b60ccbd49b146734b9098de879bee",
+    "text": "Сувитука сик чуква!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:07.912784Z"
+  },
+  "monster.chakoya_toolshaper.voice_4": {
+    "src_hash": "935aa6b22850012ad46710d17512279f",
+    "text": "Кийоса сипаджу!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:07.913151Z"
+  },
+  "monster.orc_spearman.name": {
+    "src_hash": "3e5d4aa348bc58a962f0e0bc89a64aed",
+    "text": "Орк-копейщик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:07.914336Z"
+  },
+  "monster.orc_spearman.desc": {
+    "src_hash": "423b8f5bf065ddda71854d246d6d7143",
+    "text": "орк-копейщик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:07.914663Z"
+  },
+  "monster.minotaur_cult_zealot.name": {
+    "src_hash": "c6d0cc07c1a6c394cb8e76803a18ba57",
+    "text": "Фанатик культа Минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:10.555657Z"
+  },
+  "monster.minotaur_cult_zealot.desc": {
+    "src_hash": "362726fc10e55f43348b2ec4fe84afc4",
+    "text": "фанатик культа минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:10.555965Z"
+  },
+  "monster.dworc_voodoomaster.name": {
+    "src_hash": "88634eb04851ab6c4af4e68f446631a7",
+    "text": "Дворц Вудумастер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:10.556223Z"
+  },
+  "monster.dworc_voodoomaster.desc": {
+    "src_hash": "24626191463f05abf1a076bb287820c4",
+    "text": "дворк-вудумастер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:10.556480Z"
+  },
+  "monster.orc_rider.desc": {
+    "src_hash": "4bb9b28b6ac4e603f34f5ea8f6376b9f",
+    "text": "орк-наездник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:10.556705Z"
+  },
+  "monster.orc_rider.voice_1": {
+    "src_hash": "870ee547ba365096f210475f381891f5",
+    "text": "Орк арга Хууммак!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:13.926546Z"
+  },
+  "monster.troll_legionnaire.name": {
+    "src_hash": "f51912c49cd25a59f54d5141518a2c38",
+    "text": "Тролль-легионер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:13.926883Z"
+  },
+  "monster.troll_legionnaire.desc": {
+    "src_hash": "bbe6add3a8140e29b234971e18fff99c",
+    "text": "тролль-легионер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:13.927155Z"
+  },
+  "monster.troll_legionnaire.voice_2": {
+    "src_hash": "7f8548c6866d449a88e5d81d6e0f6d50",
+    "text": "Грааааар!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:13.927364Z"
+  },
+  "monster.minotaur.name": {
+    "src_hash": "db4e0c60689b5789486e695c6ae30fb9",
+    "text": "Минотавр",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:13.927562Z"
+  },
+  "monster.minotaur.desc": {
+    "src_hash": "598bf14e1d8ba33870869d117d9126a1",
+    "text": "минотавр",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:15.879929Z"
+  },
+  "monster.crazed_summer_vanguard.name": {
+    "src_hash": "d8f82a6bae03d30183f63add15dc58c7",
+    "text": "Безумный летний авангард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:58:15.880244Z"
   }
 }

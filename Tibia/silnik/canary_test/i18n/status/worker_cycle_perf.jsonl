@@ -7697,3 +7697,5 @@
 {"timestamp": "2026-02-17T06:41:36.966794Z", "cycle": 326, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 3397, "detail": "count=questlog.json"}
 {"timestamp": "2026-02-17T06:42:02.988883Z", "cycle": 326, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 25804, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T06:42:13.916884Z", "cycle": 326, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 10567, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-17T06:42:33.695143Z", "cycle": 326, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "cycle_total", "duration_ms": 60388, "detail": "delay=4"}
+{"timestamp": "2026-02-17T06:42:44.555307Z", "cycle": 327, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1158, "detail": "count=otclient_modules.json"}

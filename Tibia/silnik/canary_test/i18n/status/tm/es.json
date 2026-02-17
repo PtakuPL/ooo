@@ -148486,5 +148486,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:29:00.293492Z"
+  },
+  "otclient_modules.utils.tr_1": {
+    "src_hash": "3585de53283c94e1a212ff376d8216db",
+    "text": "%s gp, %s\nResidencia: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:42:52.207789Z"
+  },
+  "otclient_modules.utils.tr_3": {
+    "src_hash": "3585de53283c94e1a212ff376d8216db",
+    "text": "%s gp, %s\nResidencia: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:42:52.210546Z"
+  },
+  "otclient_modules.utils.tr_4": {
+    "src_hash": "3585de53283c94e1a212ff376d8216db",
+    "text": "%s gp, %s\nResidencia: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:42:52.212922Z"
+  },
+  "otclient_modules.utils.tr_6": {
+    "src_hash": "3585de53283c94e1a212ff376d8216db",
+    "text": "%s gp, %s\nResidencia: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:42:52.215804Z"
   }
 }

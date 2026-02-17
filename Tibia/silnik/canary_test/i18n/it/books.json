@@ -1391,15 +1391,15 @@
   "book.quest_system2.the_paper_is_old_and_tattered": "[EN] <the paper is old and tattered, you can only make out a signature:> Tylaf, apprentice of Hjaern",
   "book.quest_system2.this_page_seems_to_be_part": "[EN] This page seems to be part of a book about ancient rituals, mystic incantations and far away places. Besides a very prominent symbol, embedded in the text, a spell can be deciphered from the strange script:\n\n~ As daylight fades, mix chalk or bone meal with your own blood and water ~\n~ Draw with it a circle in the middle of the room ~\n~ Stand in this sphere when drawing the symbol \"Of Night And Day Intersecting Ostensum Est\"\n~ Utter all of the following words loudly with clear voice: CERTAGIA SALABANTHR DANNHE GENT'HO\" ~\n~ Looking upward, repeat the incatation and you shall teleport the periphery of your body ~",
   "book.quest_system2.tunnelling_guide": "[EN] Tunnelling guide\n----------------\nby Gromward Hammerfist\n\n'The art of building a tunnel lies in the nature of dwarfes.' That's what my grand grand grandfather used to say. First of all I'd like to give you a small historical review of tunnelling. .....<you skip the first 1000 pages containing dwarfen tunnelling history>.\n\nRepairing collapsed tunnels:\nEquipment: Pick, tree or bricklayers kit\nBefore picking away the rubble you need to place a buttress otherwise the tunnel will collapse over and over again. If you don't have a matching tree at hand you could still build a brickwall to stabilize the tunnel. Good luck!\n\nRepairing gaps:\nEquipment: Wood, wooden ties, hammer, nails, metal fitting\nFor each missing part (on the basis of a standard rail) I recommend to use three pieces of wood. Lock them in position by at least 6 nails. For the rail itself use a saw on a piece of wood to build your wooden ties. Then place two metal fittings on them and you can make your first ride on your new rail. Congratulations!\n\nBuilding a rail on lava:\nI advice not to try that until you have at least 20 years experience in rail construction......<Well, seems like you don't match the premises.>\n\nAdventuring old tunnels:\nBe aware that our kind mastered the art of tunnelling. It may take you a whole life to understand the techniques that are used and it takes generations to know all the tunnels of a mine and all their exits. You even may find an exit that you never expected to.\n\nTo sum up\nIf you are no dwarf don't even try to think that you have a chance of mastering the art of tunnelling. If you are a dwarf I wish you good luck and don't abandon faith. There is a light at the end of the tunnel.\n\nYours\n\nGromward Hammerfist",
-  "ui.house.rent_period_daily": "daily",
-  "ui.house.rent_period_monthly": "monthly",
-  "ui.house.rent_period_weekly": "weekly",
-  "ui.house.rent_period_yearly": "annual",
+  "ui.house.rent_period_daily": "quotidiano",
+  "ui.house.rent_period_monthly": "mensile",
+  "ui.house.rent_period_weekly": "settimanale",
+  "ui.house.rent_period_yearly": "annuale",
   "ui.house.rent_warning_prefix": "[EN] Warning! \\nThe ",
   "ui.house.rent_warning_suffix": "[EN]  rent of {amount} gold for your house \"{house}\" is payable. Have it within {days} days or you will lose this house.",
   "ui.readable.nothing_written": "[EN] Nothing is written on it",
   "ui.readable.too_far_to_read": "[EN] You are too far away to read it",
-  "ui.readable.wrote": " wrote",
-  "ui.readable.wrote_on_date": " wrote on ",
-  "ui.readable.you_read_prefix": "You read: "
+  "ui.readable.wrote": "ha scritto",
+  "ui.readable.wrote_on_date": "ha scritto",
+  "ui.readable.you_read_prefix": "Leggi:"
 }

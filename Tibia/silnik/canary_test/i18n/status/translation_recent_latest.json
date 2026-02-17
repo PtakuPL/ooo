@@ -1,128 +1,74 @@
 {
-  "timestamp": "2026-02-17T06:41:57.867044Z",
-  "language": "pl",
-  "json_file": "html.json",
-  "translated": 50,
+  "timestamp": "2026-02-17T06:43:12.780138Z",
+  "language": "es",
+  "json_file": "otclient_modules.json",
+  "translated": 11,
   "entries": [
     {
-      "key": "html.account.characters.change_sex.html.text2",
-      "en": "{{ player.getName() }}",
-      "translated": "{{ player.getName() }}",
+      "key": "otclient_modules.character_otui.tr_27",
+      "en": "Depot",
+      "translated": "Depot",
       "source": "tm"
     },
     {
-      "key": "html.admin_bar.html.text1",
-      "en": "{{ config.lua.serverName }}",
-      "translated": "{{ config.lua.serverName }}",
+      "key": "otclient_modules.character_otui.tr_42",
+      "en": "Page 1 / 1",
+      "translated": "Página 1 / 1",
       "source": "tm"
     },
     {
-      "key": "html.experience_stages.html.text1",
-      "en": "x{{ stage.multiplier}}",
-      "translated": "x{{ stage.multiplier}}",
+      "key": "otclient_modules.character_otui.tr_48",
+      "en": "Page 1 / 1",
+      "translated": "Página 1 / 1",
       "source": "tm"
     },
     {
-      "key": "html.admin.open_source.html.text3",
-      "en": "https://getbootstrap.com",
-      "translated": "https://getbootstrap.com",
+      "key": "otclient_modules.createaccount_otui.tr_20",
+      "en": "10 - 29 Characters",
+      "translated": "10 - 29 caracteres",
       "source": "tm"
     },
     {
-      "key": "html.admin.open_source.html.text5",
-      "en": "https://fontawesome.com",
-      "translated": "https://fontawesome.com",
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia",
       "source": "tm"
     },
     {
-      "key": "html.account.login.html.text2",
-      "en": "{{ account_login_by }}:",
-      "translated": "{{ account_login_by }}:",
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia",
       "source": "tm"
     },
     {
-      "key": "html.admin.pages.form.html.text2",
-      "en": "{{ group.getName()|title }}",
-      "translated": "{{ group.getName()|title }}",
+      "key": "otclient_modules.game_store_otui.tr_3",
+      "en": "Page 1 / 4",
+      "translated": "Página 1 / 4",
       "source": "tm"
     },
     {
-      "key": "html.serverinfo.html.text1",
-      "en": "{{ config.lua.serverName }}",
-      "translated": "{{ config.lua.serverName }}",
-      "source": "tm"
+      "key": "otclient_modules.utils.tr_1",
+      "en": "%s gp, %s\nResidence: %s",
+      "translated": "%s gp, %s\nResidencia: %s",
+      "source": "simple"
     },
     {
-      "key": "html.serverinfo.html.text2",
-      "en": "{{ config.lua.loginPort }}",
-      "translated": "{{ config.lua.loginPort }}",
-      "source": "tm"
+      "key": "otclient_modules.utils.tr_3",
+      "en": "%s gp, %s\nResidence: %s",
+      "translated": "%s gp, %s\nResidencia: %s",
+      "source": "simple"
     },
     {
-      "key": "html.serverinfo.html.text3",
-      "en": "{{ globalSaveHour }}:00",
-      "translated": "{{ globalSaveHour }}:00",
-      "source": "tm"
+      "key": "otclient_modules.utils.tr_4",
+      "en": "%s gp, %s\nResidence: %s",
+      "translated": "%s gp, %s\nResidencia: %s",
+      "source": "simple"
     },
     {
-      "key": "html.serverinfo.html.text4",
-      "en": "{{ config.lua.worldType|upper }} ",
-      "translated": "{{ config.lua.worldType|upper }} ",
-      "source": "tm"
-    },
-    {
-      "key": "html.spells.html.text1",
-      "en": "{{ spell.vocations|raw }}",
-      "translated": "{{ spell.vocations|raw }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.spells.html.text3",
-      "en": "{{ spell.vocations|raw }}",
-      "translated": "{{ spell.vocations|raw }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.spells.html.text4",
-      "en": "{{ spell.maglevel }}",
-      "translated": "{{ spell.maglevel }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.spells.html.text5",
-      "en": "{{ spell.vocations|raw }}",
-      "translated": "{{ spell.vocations|raw }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.account.management.html.text5",
-      "en": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
-      "translated": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.account.characters.change_name.html.text2",
-      "en": "{{ player.getName() }}",
-      "translated": "{{ player.getName() }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.admin.menus.form.html.text2",
-      "en": "{{ template.template }}",
-      "translated": "{{ template.template }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.activitylog.html.text1",
-      "en": "Nov 28 2022, 14:10:18",
-      "translated": "Niev 28 2022, 14:10:18",
-      "source": "tm"
-    },
-    {
-      "key": "html.activitylog.html.text3",
-      "en": "Nov 28 2022, 14:10:18",
-      "translated": "Niev 28 2022, 14:10:18",
-      "source": "tm"
+      "key": "otclient_modules.utils.tr_6",
+      "en": "%s gp, %s\nResidence: %s",
+      "translated": "%s gp, %s\nResidencia: %s",
+      "source": "simple"
     }
   ]
 }

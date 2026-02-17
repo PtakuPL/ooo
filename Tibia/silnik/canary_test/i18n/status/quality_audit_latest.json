@@ -1,60 +1,17 @@
 {
-  "timestamp": "2026-02-17T08:38:51.041619Z",
+  "timestamp": "2026-02-17T08:40:19.812153Z",
   "checked_entries": 100,
-  "issues_found": 28,
+  "issues_found": 22,
   "issues_by_type": {
-    "identical_to_en_exempt": 5,
-    "identical_to_en": 12,
+    "identical_to_en": 6,
+    "identical_to_en_exempt": 4,
     "artifact_token": 16,
-    "suspicious_log_high": 167,
-    "suspicious_log_low": 7,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 177,
-    "suspicious_rejected_high": 23
+    "suspicious_log_high": 175,
+    "suspicious_log_critical": 25,
+    "suspicious_rejected_critical": 180,
+    "suspicious_rejected_high": 20
   },
   "issues": [
-    {
-      "key": "raid.terrorbirds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.gnarlhounds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
     {
       "key": "spell.terra_wave.words",
       "lang": "it",

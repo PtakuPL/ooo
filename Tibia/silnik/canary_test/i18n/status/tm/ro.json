@@ -38710,5 +38710,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:47:59.876939Z"
+  },
+  "npc.a_dragon_mother.say_1": {
+    "src_hash": "013b42b6166cd483b196ac9ea64cacd5",
+    "text": "Știu ce cauți. De obicei, aș prefera să te devorez, dar din cauza unor circumstanțe nefericite, am nevoie de {assistance}-ul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:16.125494Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Oh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:16.125744Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:16.125947Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:18.716889Z"
+  },
+  "npc.a_frog.stdmod_1": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Dacă vine un alt prinț să mă sărute, îi voi lovi atât de tare în fund încât va avea nevoie de un sedan ca să scape.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:18.717459Z"
+  },
+  "npc.a_frog.stdmod_2": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Dacă vine un alt prinț să mă sărute, îi voi lovi atât de tare în fund încât va avea nevoie de un sedan ca să scape.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:18.718013Z"
+  },
+  "npc.a_frog.stdmod_3": {
+    "src_hash": "dc201119d7983ae5369b8ae0430bd6c0",
+    "text": "Nici măcar să nu încerci să mă săruți sau te dau cu piciorul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:21.374065Z"
+  },
+  "npc.a_frog.stdmod_4": {
+    "src_hash": "9591358ce6836f77a35e4131f2c80af4",
+    "text": "Broaștele vorbitoare nu există, idiotule. Imaginația ta te păcălește. Și acum imaginația îți poruncește să pleci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:21.374733Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "În cele din urmă cineva observă că sunt o BROSCĂ. Felicitări, ești FOARTE atent... *oftat*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:21.375211Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "O căutare? Da, am o căutare! Du-te și spune-i regelui Tibianus fiul său a încercat să mă sărute din nou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:21.375832Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Idiotul ăla m-a transformat odată într-un om. Dar soția mea a venit și m-a sărutat, așa că sunt din nou o broască.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:21.376417Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Idiotul ăla m-a transformat odată într-un om. Dar soția mea a venit și m-a sărutat, așa că sunt din nou o broască.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:25.009841Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Acum vei fi plecat de aici. Ești sigur că vrei să te confrunți cu teleportul?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:25.010399Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Atunci stai aici, în aceste săli fantomatice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:25.010755Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "Vă pot oferi un {teleport}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:25.011069Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Nu mă deranjează.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:25.011298Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Odată am fost membru al ordinului cavalerilor de coșmar. Acum nu sunt decât o umbră care umblă pe aceste săli reci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:29.101812Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Nordul are un puzzle de completat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:29.102213Z"
+  },
+  "npc.a_majestic_warwolf.say_1": {
+    "src_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
+    "text": "GRRRRRRRRRRRRR",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:29.102492Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "Văd în ochii tăi că ești o persoană sinceră și prietenoasă, |PLAYERNAME|. Ai avut suficientă răbdare să înveți limba noastră și îți voi acorda un cadou special. O vei accepta?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:29.103253Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "De acum înainte, vei fi cunoscută ca |PLAYERNAME|, fata lupului. Vei fi rapid și deștept ca Morgrar, marele lup alb. El vă va călăuzi calea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:29.103983Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "De acum înainte, vei fi cunoscut ca |PLAYERNAME|, războinicul urs. Vei fi puternic și mândru ca Angros, marele urs întunecat. El vă va călăuzi calea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:32.730387Z"
+  },
+  "npc.a_prisoner.say_1": {
+    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "text": "Mare ghicitoare, nu-i așa? Dacă îmi poți spune răspunsul corect, \\z îți voi da ceva. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:32.730946Z"
+  },
+  "npc.a_prisoner.say_10": {
+    "src_hash": "47bc194e64dd30781fd50c51644e8b18",
+    "text": "Mare ghicitoare, nu-i așa? Daca imi poti spune raspunsul corect, iti dau ceva. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:32.731441Z"
+  },
+  "npc.a_prisoner.say_11": {
+    "src_hash": "86b05ee12a2b0288b0178cd30e0137d1",
+    "text": "Numerele mele suprareale se bazează pe fapte uimitoare. Ești interesat să înveți secretul matematicii?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:32.731987Z"
+  },
+  "npc.a_prisoner.say_12": {
+    "src_hash": "e9c7840af52dabe70fe6cdd2a222b32b",
+    "text": "Cred că nu ești în contact cu tine însuți, revino dacă te-ai conectat la propriile sentimente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:32.732492Z"
+  },
+  "npc.a_prisoner.say_2": {
+    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "text": "Numerele mele suprareale se bazează pe fapte uimitoare. \\z Ești interesat să înveți secretul matematicii?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:35.352305Z"
+  },
+  "npc.a_prisoner.say_3": {
+    "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
+    "text": "Mai întâi mai luați niște mere!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:35.352655Z"
+  },
+  "npc.a_prisoner.say_4": {
+    "src_hash": "4e2887c83421bff167ddfa1aa50e300f",
+    "text": "Serios, chiar?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:35.352878Z"
+  },
+  "npc.a_prisoner.say_5": {
+    "src_hash": "b0af262d4f710adfe2bb566735b3a655",
+    "text": "Într-adevăr, într-adevăr, într-adevăr, într-adevăr?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:35.353204Z"
+  },
+  "npc.a_prisoner.say_6": {
+    "src_hash": "52b2c5109081a476251c1a3b2f5bd850",
+    "text": "Atunci ia-l și fii fericit - sau mori, hehe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:35.353559Z"
+  },
+  "npc.a_prisoner.say_7": {
+    "src_hash": "3ea1288522b9438035597ffc35114271",
+    "text": "Atunci pleacă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:39.128958Z"
+  },
+  "npc.a_prisoner.say_8": {
+    "src_hash": "71d8c06c321e1233443f60f93a0ecad7",
+    "text": "Știi deja secretele matematicii! Acum du-te și folosește-le pentru a învăța.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:39.129420Z"
+  },
+  "npc.a_prisoner.say_9": {
+    "src_hash": "6a4d34e26971ff7d28374419885b5b34",
+    "text": "Dar mai întâi spune-mi culoarea ta preferată, te rog!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:39.129797Z"
+  },
+  "npc.a_restless_soul.greet_msg_1": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Uhhhh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:39.130033Z"
+  },
+  "npc.a_restless_soul.multi_1": {
+    "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
+    "text": "Am fost capturat și torturat până la moarte de către cultiştii de aici. Ei se închină unei ființe pe care o numesc Ghazbaran...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:39.130892Z"
+  },
+  "npc.a_restless_soul.multi_2": {
+    "src_hash": "7dc0f9270cd35b18938f8271d065463e",
+    "text": "În numele lui, au revendicat minele și au început să topească gheața pentru a elibera o armată de demoni ticăloși care au fost înghețați aici de secole...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:41.066805Z"
+  },
+  "npc.a_restless_soul.multi_3": {
+    "src_hash": "315b9533341ab66433fdb84a63ece0c6",
+    "text": "Planul lor este să creeze o nouă armată de demoni pentru ca stăpânul lor să cucerească lumea. Hjaern și ceilalți șamani trebuie să învețe despre asta! Grăbește-te înainte să fie prea târziu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:52:41.067535Z"
   }
 }

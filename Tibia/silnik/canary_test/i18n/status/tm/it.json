@@ -50406,5 +50406,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:23:15.369612Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Fare domanda a",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.570960Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_5": {
+    "src_hash": "89759e1284e2479b991d2669de104942",
+    "text": "Parole",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.571438Z"
+  },
+  "otclient_modules.assign_text_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Fare domanda a",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.572179Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_1": {
+    "src_hash": "5859831e2b3db23528c710b1451e13fc",
+    "text": "Capo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.578317Z"
+  },
+  "otclient_modules.character_otui.tr_29": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.588655Z"
+  },
+  "otclient_modules.character_otui.tr_89": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Manà",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.593268Z"
+  },
+  "otclient_modules.character_otui.tr_92": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Esperienza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.593896Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_13": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Aggiungere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.603483Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_6": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Aggiungere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.604117Z"
+  },
+  "otclient_modules.console.tr_27": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Aggiungi alla lista VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.605793Z"
+  },
+  "otclient_modules.currentoffers_otui.tr_2": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.614513Z"
+  },
+  "otclient_modules.currentoffers_otui.tr_9": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.615349Z"
+  },
+  "otclient_modules.edit_hotkey_otui.tr_3": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Fare domanda a",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.619245Z"
+  },
+  "otclient_modules.entergame_otui.tr_10": {
+    "src_hash": "60aaf44d4b562252c04db7f98497e9aa",
+    "text": "Porta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.623633Z"
+  },
+  "otclient_modules.gameinterface.tr_16": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Aggiungi alla lista VIP",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.638325Z"
+  },
+  "otclient_modules.gameinterface.tr_37": {
+    "src_hash": "ad8783089f828b927473fb61d51940ec",
+    "text": "Utilizzo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.640098Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_10": {
+    "src_hash": "b139c4284c5c3111b857052dac419d42",
+    "text": "Usalo su te stesso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.647854Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_12": {
+    "src_hash": "15479c5427a844a0695a36c7be1d394e",
+    "text": "Seleziona oggetto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.648222Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_17": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Aggiungere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.648801Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_2": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Aggiungere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.649270Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_9": {
+    "src_hash": "d2bf683c031ce553916e0a4462bf6558",
+    "text": "Utilizzare sul bersaglio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.650342Z"
+  },
+  "otclient_modules.inventory_otui.tr_2": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Anima",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.670805Z"
+  },
+  "otclient_modules.inventory_otui.tr_5": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Anima",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.671282Z"
+  },
+  "otclient_modules.itemoffers_otui.tr_11": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.672092Z"
+  },
+  "otclient_modules.itemoffers_otui.tr_4": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.672721Z"
+  },
+  "otclient_modules.keybinds_otui.tr_16": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Aggiungere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.677966Z"
+  },
+  "otclient_modules.marketoffers_otui.tr_3": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.683884Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_2": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.687512Z"
+  },
+  "otclient_modules.offerhistory_otui.tr_8": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.688185Z"
+  },
+  "otclient_modules.skills_otui.tr_54": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Manà",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.721932Z"
+  },
+  "otclient_modules.skills_otui.tr_57": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Esperienza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.722819Z"
+  },
+  "otclient_modules.spelllist_otui.tr_18": {
+    "src_hash": "5a9fdd13768310e383dbc290aade93dd",
+    "text": "Anima",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.724974Z"
+  },
+  "otclient_modules.spelllist_otui.tr_19": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Manà",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.725234Z"
+  },
+  "otclient_modules.viplist.tr_1": {
+    "src_hash": "16053feba495862dfb4e07b3decda8d8",
+    "text": "Inserisci il nome del gruppo:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:23.737803Z"
+  },
+  "otclient_modules.assign_object_otui.tr_9": {
+    "src_hash": "d32ac3705894c0cf199c6f5abdffd55c",
+    "text": "Assegna oggetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:27.221213Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_3": {
+    "src_hash": "83f499a540b1323009c200d6f8cc9396",
+    "text": "Parametro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:27.221586Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_4": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:27.221916Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_7": {
+    "src_hash": "191bab0c005fc9abb11f6d1a2ee2cfc9",
+    "text": "Assegna incantesimo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:27.222413Z"
+  },
+  "otclient_modules.assign_text_otui.tr_3": {
+    "src_hash": "05da0bdce5c7b0f0edc2afe63de23eea",
+    "text": "Invia automaticamente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:27.222886Z"
+  },
+  "otclient_modules.assign_text_otui.tr_4": {
+    "src_hash": "ed2fc2838f7edb7607dd1cd19f3a82e0",
+    "text": "Testo:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:34.657656Z"
+  },
+  "otclient_modules.assign_text_otui.tr_5": {
+    "src_hash": "fda3c89154cc3ad1f7d1cc82a3181c33",
+    "text": "Assegna testo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:34.657915Z"
+  },
+  "otclient_modules.audio_otui.tr_1": {
+    "src_hash": "f07007e4d0d8b8db5e7ccca897fe9626",
+    "text": "Volume della musica: %d",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:34.658250Z"
+  },
+  "otclient_modules.audio_otui.tr_2": {
+    "src_hash": "befac032edbcaa813ce7f23e54d7e3d6",
+    "text": "Abilita l'audio della musica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:34.658522Z"
+  },
+  "otclient_modules.audio_otui.tr_3": {
+    "src_hash": "2588d7c18bc9b846efa166b19f9e665c",
+    "text": "Abilita l'audio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:34.658737Z"
+  },
+  "otclient_modules.battle.tr_1": {
+    "src_hash": "747d99f92ee9c080ba26108ac5d26488",
+    "text": "Battaglia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:41.888926Z"
+  },
+  "otclient_modules.battle_otui.tr_1": {
+    "src_hash": "ec241c52f140345db6b52424fac51374",
+    "text": "Nascondi i membri del gruppo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:41.889210Z"
+  },
+  "otclient_modules.battle_otui.tr_2": {
+    "src_hash": "ef75f3fa8fd99486eb25a73bc144deab",
+    "text": "Nascondi i giocatori non-teschio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:41.889473Z"
+  },
+  "otclient_modules.battle_otui.tr_3": {
+    "src_hash": "a6f38ccc7dcd51d63a7e2211551791c3",
+    "text": "Nascondi i mostri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:41.889681Z"
+  },
+  "otclient_modules.battle_otui.tr_4": {
+    "src_hash": "ee8405395b7ab2150baf8e20c5254add",
+    "text": "Nascondi Npz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:41.889863Z"
+  },
+  "otclient_modules.battle_otui.tr_5": {
+    "src_hash": "aac7c4927609515861e87ee10ce36327",
+    "text": "Nascondi i giocatori",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:28:44.719625Z"
   }
 }

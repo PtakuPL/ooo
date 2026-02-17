@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T05:27:36.977143Z",
+  "timestamp": "2026-02-17T05:28:39.532684Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
   "warnings_count": 12,
   "ok_count": 11,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=44953 rate=178.321% window=6.0h top_lang=ro:14391 per_lang=[ro:14391(350.146%/critical),ru:11814(268.013%/critical),es:11326(222.865%/critical),pl:3658(101.442%/critical),it:1878(41.393%/warning)] per_domain=[items.json:20992(1022.504%/critical),npc.json:13309(226.691%/critical),monsters.json:3903(183.068%/critical),otclient_modules.json:1199(120.382%/critical),server.json:1195(56.288%/warning)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=45020 rate=178.693% window=6.0h top_lang=ro:14391 per_lang=[ro:14391(350.146%/critical),ru:11794(270.319%/critical),es:11412(223.283%/critical),pl:3659(101.442%/critical),it:1878(41.393%/warning)] per_domain=[items.json:20992(1022.504%/critical),npc.json:13391(227.159%/critical),monsters.json:3903(183.068%/critical),otclient_modules.json:1199(120.382%/critical),server.json:1195(56.288%/warning)]"
   ],
   "warnings": [
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=1330775 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
@@ -23,15 +23,15 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 69h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (7s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (81s)",
-    "guard_report_fresh (6s)",
-    "dispatch_fresh (5s)",
+    "heartbeat_fresh (51s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (45s)",
+    "guard_report_fresh (19s)",
+    "dispatch_fresh (17s)",
     "worker_pid_alive (1330775)",
-    "worker_process_topology_ok (main=1330775 matching=2 extras=1 desc=1 foreign=0 oldest_desc=4s oldest_foreign=0s status=single_descendant_observed)",
-    "queue_freshness_ok (95s, WARN>900s CRIT>1800s)",
+    "worker_subprocess_observed (main=1330775 matching=4 extras=3 desc=3 foreign=0 oldest_desc=16s oldest_foreign=0s status=extra_descendants_detected)",
+    "queue_freshness_ok (60s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=431.8 cycle_delta=812 best_quality_drop=61.301%)",
+    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=432.8 cycle_delta=815 best_quality_drop=61.301%)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
     "repair_tuning_active (samples_2h=39)"
   ],
@@ -68,8 +68,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 431.766,
-    "cycle_delta": 812,
+    "active_minutes": 432.809,
+    "cycle_delta": 815,
     "best_quality_drop_pct": 61.301,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -103,26 +103,32 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "ok",
-    "status": "single_descendant_observed",
-    "reason": "single_descendant_worker_subprocess",
+    "severity": "info",
+    "status": "extra_descendants_detected",
+    "reason": "multiple_descendant_worker_processes",
     "main_pid": 1330775,
     "matched_pids": [
       1330775,
-      1608311
+      1609208,
+      1609221,
+      1609223
     ],
     "extra_pids": [
-      1608311
+      1609208,
+      1609221,
+      1609223
     ],
     "descendant_extra_pids": [
-      1608311
+      1609208,
+      1609221,
+      1609223
     ],
     "foreign_extra_pids": [],
-    "total_matching": 2,
-    "extra_count": 1,
-    "descendant_extra_count": 1,
+    "total_matching": 4,
+    "extra_count": 3,
+    "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 4,
+    "oldest_descendant_age_s": 16,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

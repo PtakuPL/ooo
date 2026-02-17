@@ -2477,7 +2477,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:09:17.473178Z"
+    "updated_at": "2026-02-17T03:53:20.918698Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -39014,5 +39014,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:52:41.067535Z"
+  },
+  "item.11701.desc": {
+    "src_hash": "82b57beb92b064f669e85d93c9319388",
+    "text": "Această pelerină veche ar putea valora mai mult decât arată",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:53:29.480915Z"
+  },
+  "item.118.desc": {
+    "src_hash": "7353cd27d0e075e4188fe27bf8194a41",
+    "text": "L-ai schimbat cu lada lui Bozo cu pahare de vin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:53:29.481277Z"
+  },
+  "item.119.desc": {
+    "src_hash": "5d2ece816c32ee5b0966eee52b576d3b",
+    "text": "Este umplută cu plăcinte cu cremă delicioase",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:53:29.481626Z"
+  },
+  "item.11982.desc": {
+    "src_hash": "bca85fcb402c8a8fc22f5be9091edff7",
+    "text": "Folosiți-l pe toboganul cazanului pentru a menține focul aprins",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:53:31.404434Z"
+  },
+  "item.120.desc": {
+    "src_hash": "a221e1a65748b178204cac3d83a09962",
+    "text": "Au un miros aromat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:53:31.404739Z"
   }
 }

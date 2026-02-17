@@ -1,8 +1,8 @@
 {
-  "total_cycles": 216,
+  "total_cycles": 217,
   "mode": "AUTO_TRANSLATE",
   "category": "ru",
-  "last_update": "2026-02-17T04:52:48.073414",
+  "last_update": "2026-02-17T04:53:52.815469",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,8 +27,8 @@
   },
   "auto_translate": {
     "language": "ru",
-    "json_file": "npc.json",
-    "keys_to_translate": 13006,
+    "json_file": "items.json",
+    "keys_to_translate": 6773,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16T23:55:07.935722Z",
+  "timestamp": "2026-02-17T00:23:23.256813Z",
   "en_total_keys": 53586,
   "global_quality_mode": true,
   "quality_score_target": 100.0,
@@ -26,7 +26,7 @@
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 23.5,
+          "guard_fail_rate": 29.3,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,
@@ -39,7 +39,7 @@
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 72.5,
+          "guard_fail_rate": 71.8,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,
@@ -63,7 +63,7 @@
         "sk",
         "tr"
       ],
-      "avg_coverage": 9.2,
+      "avg_coverage": 9.3,
       "target": 100,
       "gate_pass": false,
       "langs_passing": 0,
@@ -127,11 +127,11 @@
           "quality_gate_pass": false
         },
         "it": {
-          "coverage": 7.6,
+          "coverage": 8.0,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 3.1,
+          "guard_fail_rate": 4.2,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,
@@ -166,11 +166,11 @@
           "quality_gate_pass": false
         },
         "ro": {
-          "coverage": 16.6,
+          "coverage": 16.9,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 17.8,
+          "guard_fail_rate": 16.3,
           "quality_available": true,
           "quality_score": 100.0,
           "quality_score_target": 100.0,
@@ -179,13 +179,13 @@
           "quality_gate_pass": false
         },
         "ru": {
-          "coverage": 31.2,
+          "coverage": 31.4,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 19.4,
+          "guard_fail_rate": 18.2,
           "quality_available": true,
-          "quality_score": 47.4,
+          "quality_score": 47.9,
           "quality_score_target": 100.0,
           "critical_issues": 148,
           "critical_target_max": 0,
@@ -624,11 +624,11 @@
           "quality_gate_pass": false
         },
         "sr": {
-          "coverage": 6.4,
+          "coverage": 6.9,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 7.5,
+          "guard_fail_rate": 11.0,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,
@@ -637,11 +637,11 @@
           "quality_gate_pass": false
         },
         "sv": {
-          "coverage": 4.3,
+          "coverage": 4.7,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 4.2,
+          "guard_fail_rate": 10.3,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:21:56.067892Z",
-  "language": "sv",
-  "json_file": "otclient_data.json",
-  "translated": 47,
+  "timestamp": "2026-02-17T00:23:17.573777Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "otclient_data.40_minimap_otui.tr_7",
-      "en": "Center",
-      "translated": "Centrum",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_10",
-      "en": "Manage Presets",
-      "translated": "Hantera förinställningar",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_11",
-      "en": "Detail",
-      "translated": "Detalj",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_12",
-      "en": "Secondary",
-      "translated": "Sekundär",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_13",
-      "en": "Primary",
-      "translated": "Primär",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_14",
-      "en": "Head",
-      "translated": "Huvud",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_15",
-      "en": "Title:",
-      "translated": "Titel:",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_16",
-      "en": "Effects:",
-      "translated": "Effekter:",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_20",
-      "en": "Wings:",
-      "translated": "Vingar:",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_21",
-      "en": "Familiar:",
-      "translated": "Bekant:",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_22",
-      "en": "Mount:",
-      "translated": "Montera:",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_23",
-      "en": "Outfit:",
-      "translated": "Utrusta:",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_24",
-      "en": "Preset:",
-      "translated": "Förinställa:",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_25",
-      "en": "Change Appearance",
-      "translated": "Ändra utseende",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_26",
-      "en": "Mount",
-      "translated": "Montera",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_27",
-      "en": "Addon 2",
-      "translated": "Tillägg 2",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_28",
-      "en": "Addon 1",
-      "translated": "Tillägg 1",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_29",
-      "en": "Configure",
-      "translated": "Konfigurera",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_3",
-      "en": "Search by name",
-      "translated": "Sök på namn",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.say_10",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "otclient_data.40_outfitwindow_otui.tr_30",
-      "en": "Enable/Disable movement animation",
-      "translated": "Aktivera/inaktivera rörelseanimering",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.say_12",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     }
   ]
 }

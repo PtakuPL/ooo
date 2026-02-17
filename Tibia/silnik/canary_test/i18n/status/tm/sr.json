@@ -167510,5 +167510,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:21:10.382369Z"
+  },
+  "system.blessing.already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Већ сте благословени.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:22:49.882314Z"
+  },
+  "system.store.check_inbox": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Уверите се да имате слободна места у пријемном сандучету продавнице.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:22:49.882914Z"
+  },
+  "system.venture.decay": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Крените путем пропадања!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:23:00.933528Z"
   }
 }

@@ -1091,38 +1091,32 @@ function addTabText(text, speaktype, tab, creatureName)
 
     label.highlightInfo = {}
 
-    -- NPC keyword highlighting: use setColoredText for inline coloring (no phantom overlay)
+    -- NPC keyword highlighting: use ConsolePhantomLabel (UILabel) with setColoredText
+    -- Note: ConsoleLabel is UITextEdit which doesn't support per-char colors for TTF fonts.
+    -- ConsolePhantomLabel is UILabel which does support setColoredText for TTF.
 
     if speaktype.npcChat and
         (g_game.getCharacterName() ~= creatureName or g_game.getCharacterName() == 'Account Manager') then
         local highlightData = getHighlightedText(text)
         if #highlightData > 0 then
-            local npcColor = speaktype.color or '#5FF7F7'
             local keywordColor = '#1f9ffe'
+            local invisibleColor = '#00000000'  -- fully transparent
 
-            -- Build colored text and strip braces, track keyword positions for click handling
-            local coloredResult = ''
+            -- Strip braces from text and track keyword positions
             local plainText = ''
+            local coloredResult = ''
             local lastPos = 1
-            local bracesRemoved = 0
 
             for i = 1, #highlightData / 3 do
                 local origStart = highlightData[(i - 1) * 3 + 1]
                 local origEnd = highlightData[(i - 1) * 3 + 2]
                 local keyword = highlightData[(i - 1) * 3 + 3]
 
-                -- Text before this keyword (excluding the opening brace)
+                -- Text before this keyword (before the opening brace)
                 local beforeText = text:sub(lastPos, origStart - 1)
-                if #beforeText > 0 then
-                    -- Escape any braces/commas in normal text for setColoredText format
-                    coloredResult = coloredResult .. '{' .. beforeText .. ', ' .. npcColor .. '}'
-                end
                 plainText = plainText .. beforeText
 
-                -- The keyword itself in blue
-                coloredResult = coloredResult .. '{' .. keyword .. ', ' .. keywordColor .. '}'
-
-                -- Track keyword positions in the plain text (without braces) for click detection
+                -- Track keyword positions in plain text for click detection
                 local kwStart = #plainText + 1
                 local kwEnd = kwStart + #keyword - 1
                 for pos = kwStart, kwEnd do
@@ -1130,19 +1124,33 @@ function addTabText(text, speaktype, tab, creatureName)
                 end
                 plainText = plainText .. keyword
 
-                -- Move past the closing brace
+                -- Build colored overlay: non-keywords transparent, keywords blue
+                if #beforeText > 0 then
+                    coloredResult = coloredResult .. '{' .. beforeText .. ', ' .. invisibleColor .. '}'
+                end
+                coloredResult = coloredResult .. '{' .. keyword .. ', ' .. keywordColor .. '}'
+
                 lastPos = origEnd + 1
             end
 
             -- Remaining text after last keyword
             local afterText = text:sub(lastPos)
             if #afterText > 0 then
-                coloredResult = coloredResult .. '{' .. afterText .. ', ' .. npcColor .. '}'
+                plainText = plainText .. afterText
+                coloredResult = coloredResult .. '{' .. afterText .. ', ' .. invisibleColor .. '}'
             end
 
-            label:setColoredText(coloredResult)
-            -- Update text variable (strip braces) for right-click menu / copy
-            text = text:gsub('%{(.-)%}', '%1')
+            -- Set main label to plain text (braces stripped)
+            label:setText(plainText)
+
+            -- Create phantom overlay (UILabel) for colored keywords
+            local labelHighlight = g_ui.createWidget('ConsolePhantomLabel', label)
+            labelHighlight:fill('parent')
+            labelHighlight:setId('consoleLabelHighlight' .. consoleBuffer:getChildCount())
+            labelHighlight:setColoredText(coloredResult)
+
+            -- Update text variable (stripped) for right-click menu / copy
+            text = plainText
         end
     end
 

@@ -724,6 +724,12 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
                 end
             end
 
+            if creatureThing:isNpc() then
+                menu:addOption(tr("Rozmawiaj"), function()
+                    g_game.talk("hi")
+                end)
+            end
+
             if creatureThing:isPlayer() then
                 menu:addSeparator()
                 local creatureName = creatureThing:getName()

@@ -67318,5 +67318,381 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:24:35.822342Z"
+  },
+  "item.23720.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "pavimento in marmo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.895721Z"
+  },
+  "item.23729.name": {
+    "src_hash": "60424674619e1854ad52c971286b8685",
+    "text": "tempo perso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.896363Z"
+  },
+  "item.23857.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.899485Z"
+  },
+  "item.23858.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.899868Z"
+  },
+  "item.23859.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.900127Z"
+  },
+  "item.23860.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.900410Z"
+  },
+  "item.23861.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.900685Z"
+  },
+  "item.23862.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.901054Z"
+  },
+  "item.23863.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.901293Z"
+  },
+  "item.23864.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.901554Z"
+  },
+  "item.24187.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.905604Z"
+  },
+  "item.24227.name": {
+    "src_hash": "83026023448f5cc3daed4e275ef8fc10",
+    "text": "Spada animata",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.907503Z"
+  },
+  "item.24244.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.908086Z"
+  },
+  "item.24249.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.908629Z"
+  },
+  "item.24437.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "sabbia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.913758Z"
+  },
+  "item.2469.name": {
+    "src_hash": "34be958a921e43d813a2075297d8e862",
+    "text": "scatola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.917929Z"
+  },
+  "item.2471.name": {
+    "src_hash": "dd4827af87b26de9ed92e6fb08efc5ab",
+    "text": "cassa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.918240Z"
+  },
+  "item.2473.name": {
+    "src_hash": "34be958a921e43d813a2075297d8e862",
+    "text": "scatola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.918833Z"
+  },
+  "item.2474.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "bara di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.919124Z"
+  },
+  "item.2475.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "bara di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.919401Z"
+  },
+  "item.2476.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "bara di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.919697Z"
+  },
+  "item.2477.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "bara di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.919963Z"
+  },
+  "item.2479.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.920427Z"
+  },
+  "item.24839.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.921757Z"
+  },
+  "item.24865.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.922650Z"
+  },
+  "item.24874.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.923242Z"
+  },
+  "item.24876.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.923565Z"
+  },
+  "item.24878.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.924014Z"
+  },
+  "item.24887.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.924437Z"
+  },
+  "item.24912.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.925742Z"
+  },
+  "item.24926.name": {
+    "src_hash": "6482ee85a64f2cf0d596545b5f36711d",
+    "text": "monumento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.926188Z"
+  },
+  "item.24931.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.927193Z"
+  },
+  "item.24953.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.929396Z"
+  },
+  "item.25015.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.931807Z"
+  },
+  "item.25016.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.932081Z"
+  },
+  "item.25017.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.932433Z"
+  },
+  "item.25018.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.932684Z"
+  },
+  "item.25019.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.932912Z"
+  },
+  "item.25020.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.933228Z"
+  },
+  "item.25021.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.933587Z"
+  },
+  "item.25022.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.933850Z"
+  },
+  "item.25047.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.934580Z"
+  },
+  "item.25049.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.934979Z"
+  },
+  "item.25051.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.935476Z"
+  },
+  "item.25053.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.935992Z"
+  },
+  "item.25055.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.936425Z"
+  },
+  "item.25057.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puoi vedere l'altro lato attraverso di esso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:17.936832Z"
   }
 }

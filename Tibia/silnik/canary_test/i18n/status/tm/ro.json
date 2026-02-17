@@ -1305,11 +1305,11 @@
   },
   "npc.karith.say_26": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "Nu-mi pierde timpul.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.046340Z"
+    "updated_at": "2026-02-17T10:25:10.659306Z"
   },
   "npc.kevin.say_46": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
@@ -59902,5 +59902,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:16:14.068926Z"
+  },
+  "npc.jacob.multi_3": {
+    "src_hash": "1abd4b8600e20990dbeb5295cfb58e22",
+    "text": "Uau, ai făcut-o deja, e rapid. Sunt obișnuit cu o atitudine mai relaxată din partea majorității oamenilor. Este păcat să riști să te pierd din cauza unor tuneluri care se prăbușesc, dar o înțelegere este o înțelegere. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.613064Z"
+  },
+  "npc.jacob.multi_4": {
+    "src_hash": "9ebd5066e338d8eb05700d9ff6c9cb18",
+    "text": "Prin prezenta vă acord permisiunea de a intra în partea abandonată a canalizării. Ai grijă, omule! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.613733Z"
+  },
+  "npc.jacob.multi_5": {
+    "src_hash": "9e0d76c37b4c03fd908725b9e856f95a",
+    "text": "Dacă găsești ceva interesant, revino pentru a vorbi despre {abandoned sewers}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.614378Z"
+  },
+  "npc.jacob.multi_6": {
+    "src_hash": "2d3ebc8b08f755600f77a263ccb797ad",
+    "text": "Vrei să intri în canalizările abandonate? E destul de periculos și nu este o idee bună, omule. Acea parte a canalizării nu a fost sigilată degeaba, știi? ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.615367Z"
+  },
+  "npc.jacob.multi_7": {
+    "src_hash": "f1c5565d19f4610031f252502dfbe964",
+    "text": "Dar hei, e viața ta, frate. Deci, iată afacerea. Te las să intri în canalele abandonate dacă mă ajuți cu {mission}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.616039Z"
+  },
+  "npc.jacob.say_1": {
+    "src_hash": "87aa8deff381e3211ae4d161ed27231b",
+    "text": "Mă bucur să te revăd viu și sănătos. Ați găsit ceva interesant pe care doriți să {report}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.616658Z"
+  },
+  "npc.jacob.say_2": {
+    "src_hash": "738f4662a56db4ac43c7f1efe1c567a2",
+    "text": "Canalizările au nevoie de reparații. Ești înăuntru?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.617076Z"
+  },
+  "npc.jacob.say_3": {
+    "src_hash": "6c02d69900afaf72190aed36848f397a",
+    "text": "Elliott tot spune așa. Este doar o altă treabă! Ai reparat niște țevi sparte și alte chestii? Lasă-mă să verific, {ok}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.617739Z"
+  },
+  "npc.jacob.say_5": {
+    "src_hash": "653e54c314040b6db56f6e10179d2e7f",
+    "text": "Bun. Bucăți sparte de țeavă și generator, se evacuează fum. Așa îi recunoști. Vedeți cum le puteți repara folosind mâinile. Am nevoie de, o, douăzeci dintre ele cel puțin reparate. Raportați-mi sau lui Jacob",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.619134Z"
+  },
+  "npc.jacob.say_7": {
+    "src_hash": "1035739074676dd38ff606000111ed0f",
+    "text": "Ai raportat deja această misiune, treci la următoarea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.619688Z"
+  },
+  "npc.jakahr.sendtrade_msg_1": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aici. Nu uitați că trebuie să cumpărați și o etichetă dacă doriți să trimiteți un colet. Scrieți întotdeauna numele lui {receiver} în primul rând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.620869Z"
+  },
+  "npc.jefrey.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.632002Z"
+  },
+  "npc.jessica.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.636152Z"
+  },
+  "npc.jezzara.farewell_msg_1": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Iluminarea să fie calea ta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.636810Z"
+  },
+  "npc.jezzara.walkaway_msg_1": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Iluminarea să fie calea ta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.637469Z"
+  },
+  "npc.junkar_mines.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Din plin abur înainte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.641774Z"
+  },
+  "npc.junkar_thais.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Din plin abur înainte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.643012Z"
+  },
+  "npc.kais.stdmod_10": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.644128Z"
+  },
+  "npc.kais.stdmod_11": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.644805Z"
+  },
+  "npc.kais.stdmod_3": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.645460Z"
+  },
+  "npc.kais.stdmod_4": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.645927Z"
+  },
+  "npc.kais.stdmod_5": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.646838Z"
+  },
+  "npc.kais.stdmod_9": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.647724Z"
+  },
+  "npc.karith.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.650447Z"
+  },
+  "npc.karith.say_27": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Atunci nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.659834Z"
+  },
+  "npc.karith.stdmod_2": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Eu sunt căpitanul acestei nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.660850Z"
+  },
+  "npc.karith.stdmod_3": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Eu sunt căpitanul acestei nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.661446Z"
+  },
+  "npc.kasmir.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.664327Z"
+  },
+  "npc.kasmir.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.664782Z"
+  },
+  "npc.kasmir.stdmod_11": {
+    "src_hash": "01e8edec42ed0707465c58f2a9b4bff6",
+    "text": "Cred că ai uitat să-ți aduci țărușul, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.665419Z"
+  },
+  "npc.kasmir.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Da, am fost informat ce să fac. Ești pregătit să primești rândul meu de rugăciune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.665982Z"
+  },
+  "npc.kasmir.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Ai primit deja rândul meu de rugăciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.666647Z"
+  },
+  "npc.kasmir.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.667267Z"
+  },
+  "npc.kasmir.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.668103Z"
+  },
+  "npc.kasmir.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.668545Z"
+  },
+  "npc.kasmir.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.669514Z"
+  },
+  "npc.kasmir.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.670349Z"
+  },
+  "npc.kasmir.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.670915Z"
+  },
+  "npc.kasmir.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.671467Z"
+  },
+  "npc.kasmir.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:25:10.672162Z"
   }
 }

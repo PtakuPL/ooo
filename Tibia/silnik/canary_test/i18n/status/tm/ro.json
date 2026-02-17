@@ -52054,5 +52054,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:49:26.593887Z"
+  },
+  "scripts.exalted_core.msg_5": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Nu ai suficientă capacitate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.908822Z"
+  },
+  "scripts.mission06_run_like_wolf.msg_4": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.935673Z"
+  },
+  "scripts.mission06_run_like_wolf.msg_6": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.936112Z"
+  },
+  "scripts.mission07_attack.msg_4": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.936746Z"
+  },
+  "scripts.mission09_rock_troll.msg_3": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.937288Z"
+  },
+  "scripts.mission10_tomb_raiding.msg_1": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.937741Z"
+  },
+  "scripts.mission10_tomb_raiding.msg_2": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.938219Z"
+  },
+  "scripts.mission10_tomb_raiding.msg_3": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.938577Z"
+  },
+  "scripts.mission12_into_fortress.msg_1": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.938946Z"
+  },
+  "scripts.mission12_into_fortress.msg_16": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.939706Z"
+  },
+  "scripts.mission12_into_fortress.msg_17": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.940077Z"
+  },
+  "scripts.mission12_into_fortress.msg_19": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.940471Z"
+  },
+  "scripts.mission12_into_fortress.msg_20": {
+    "src_hash": "4bd1cc8a72c5ab41f9a8855fba5db8a2",
+    "text": "Ați găsit {} {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.940968Z"
+  },
+  "scripts.soul_prism.msg_5": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Nu ai suficientă capacitate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:03.988616Z"
+  },
+  "scripts.actions_mechanism.msg_1": {
+    "src_hash": "50fefff6df347aefc566142681046383",
+    "text": "Mecanismul porții nu se mișcă. Probabil că trebuie să găsești o cale până când îți dai seama cum să acționezi poarta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:10.816130Z"
+  },
+  "scripts.actions_misguided.msg_1": {
+    "src_hash": "213142cf1bfe9d48b7002860d1b169c7",
+    "text": "Paralizezi bătăușul și amuleta dezvăluie adevărata față a creaturii din spatele posesiei acestei creaturi greșite.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:10.816680Z"
+  },
+  "scripts.actions_mission01_crate.say_1": {
+    "src_hash": "c37664172dab3dbac44205eba2dab1f1",
+    "text": "Îi scoți partea de sus și trage lada peste tine. Înăuntru este înăbușitor și abia se vede ceva când privești în afară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:10.817289Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_1": {
+    "src_hash": "98b11f900cd0f3c67bfa48d9f09f6e89",
+    "text": "Pe măsură ce dați cărbunele în bazin, fluidul corupt începe să se dizolve, lăsând apă purificată și răcoritoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:10.817816Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_2": {
+    "src_hash": "281e5f500e2df415cf09403fd34ab2e7",
+    "text": "Umplerea cu apă coruptă în vasul sacru purifică complet lichidul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:14.055981Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_3": {
+    "src_hash": "024db5f29ebf6fe285a87c0a41afeba3",
+    "text": "Acoperiți cu atenție interiorul vasului de lemn cu argila sacră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:14.056427Z"
+  },
+  "scripts.actions_mission02_firstcontact_repair_teleport.say_4": {
+    "src_hash": "b3c37ff359f4a55a1baa06bdbda86191",
+    "text": "Amesteci cu grijă lutul cu pământul sacru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:14.056791Z"
+  },
+  "scripts.actions_mission03_the_keeper.say_1": {
+    "src_hash": "8c07639b4e13104061fe7a7a6fd26c20",
+    "text": "Planta se frământă și se frământă chiar mai mult decât înainte, aproape că arată că ar țipa o durere mare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:14.057312Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_1": {
+    "src_hash": "d5adfab25c90b1b30dabdb9a1c0dbe3e",
+    "text": "Acest lucru ar fi trebuit să dea lovitura de moarte ambițiilor lucrurilor șarpe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:14.057744Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_2": {
+    "src_hash": "0eb8d098e767ef2071c539ae1401e2b3",
+    "text": "NOOOooooooo...!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:16.651303Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_3": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Sceptrul este aproape smuls din mâna ta în timp ce alungi prezența împăratului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:16.651872Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_4": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Sceptrul este aproape smuls din mâna ta în timp ce alungi prezența împăratului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:16.652357Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_5": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Sceptrul este aproape smuls din mâna ta în timp ce alungi prezența împăratului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:16.652850Z"
+  },
+  "scripts.actions_mission10_a_message_of_freedom_sceptre.say_6": {
+    "src_hash": "7c1f62f231a3ae73b4e40c8985045ac2",
+    "text": "Sceptrul este aproape smuls din mâna ta în timp ce alungi prezența împăratului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:16.653317Z"
+  },
+  "scripts.actions_mission12_just_rewards.msg_1": {
+    "src_hash": "b71f332f490d4cf0436dc65fa13cbe22",
+    "text": "Ai găsit niște haine în garderobă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:19.768786Z"
+  },
+  "scripts.actions_mission12_just_rewards.msg_2": {
+    "src_hash": "c2b74d857f2d83d918aa09958fe9dea1",
+    "text": "Dulapul este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:19.769147Z"
+  },
+  "scripts.actions_mission3_chest.msg_1": {
+    "src_hash": "42dd3838d3aa4aa1f0ad19c9a81066ed",
+    "text": "Ai găsit un balon cu otravă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:19.769510Z"
+  },
+  "scripts.actions_mission3_poison_water.say_1": {
+    "src_hash": "a636973c11a833c204194e7d7d92a1f9",
+    "text": "Orezul a fost otrăvit. Acest lucru va slăbi semnificativ armata împăratului. Întoarce-te și spune-i lui Zalamon despre succesul tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:19.770149Z"
+  },
+  "scripts.actions_mission4_grease_oil.say_1": {
+    "src_hash": "6cc64a1768db7e87acc0887eac7fe4ac",
+    "text": "Datorită faptului că sunt foarte grase, frunzele pot fi acum mutate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:19.770684Z"
+  },
+  "scripts.actions_mission4_levers_puzzle.say_1": {
+    "src_hash": "c7c67b837073c2e99af76983e55f766f",
+    "text": "După un zgomot de trosnire, de undeva dedesubt începe brusc un zumzet profund.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:21.980874Z"
+  },
+  "scripts.actions_mission5_ray_of_light.say_1": {
+    "src_hash": "75ce1d823ffbd7eaef58ed7119346b35",
+    "text": "O rază de soare coboară din cer și lovește cristalul. Wow. Asta înseamnă probabil că Fasuon susține.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:21.981743Z"
+  },
+  "scripts.actions_mission9_catacombs_lever.say_1": {
+    "src_hash": "d1970dffce18bb4514127a3a44158f60",
+    "text": "Nu se mișcă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:56:21.982026Z"
   }
 }

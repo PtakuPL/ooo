@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T01:31:56.803910Z",
+  "timestamp": "2026-02-17T01:32:22.717194Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 1976,
-  "file_cache_misses": 0,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7392,8 +7392,8 @@
         [
           "monsters.json",
           1,
-          1771282274468605079,
-          340357
+          1771291935052347832,
+          340361
         ],
         [
           "mounts.json",
@@ -7522,7 +7522,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 39860,
-        "english_copy_keys": 2635,
+        "english_copy_keys": 2633,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 74.39,
@@ -7775,13 +7775,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771282274468605079,
-            340357
+            1771291935052347832,
+            340361
           ],
           "row": {
             "total_reference_keys": 5915,
             "translated_keys": 4520,
-            "english_copy_keys": 846,
+            "english_copy_keys": 844,
             "missing_keys": 0,
             "missing_files": 0
           }

@@ -1,60 +1,17 @@
 {
-  "timestamp": "2026-02-17T01:37:20.319932Z",
+  "timestamp": "2026-02-17T01:39:49.213960Z",
   "checked_entries": 100,
-  "issues_found": 13,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 6,
-    "identical_to_en_exempt": 16,
+    "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "suspicious_log_critical": 64,
-    "suspicious_log_high": 129,
-    "suspicious_log_low": 7,
+    "suspicious_log_high": 123,
+    "suspicious_log_critical": 67,
+    "suspicious_log_low": 10,
     "suspicious_rejected_critical": 172,
     "suspicious_rejected_high": 28
   },
   "issues": [
-    {
-      "key": "monster.hunter.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Hunter",
-      "translated": "Hunter"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -106,5 +63,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

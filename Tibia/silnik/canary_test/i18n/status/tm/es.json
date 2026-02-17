@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T00:54:41.962358Z"
+    "updated_at": "2026-02-17T01:37:46.416471Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -145654,5 +145654,293 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T01:32:14.830126Z"
+  },
+  "spell.energy_overlord_paralyze.name": {
+    "src_hash": "0c29221e2116fdb6c370a09564b96bf7",
+    "text": "El señor supremo de la energía paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:51.142400Z"
+  },
+  "spell.ancient_scarab_paralyze.name": {
+    "src_hash": "a7ec3187b906ce76a472b670d87f59b9",
+    "text": "antiguo escarabajo paralizado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:51.142733Z"
+  },
+  "spell.generator_wave.name": {
+    "src_hash": "ab2a716270aa45c393073a5b0cbc665c",
+    "text": "onda generadora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:51.142947Z"
+  },
+  "spell.arachnophobica_wavedice.name": {
+    "src_hash": "ceaf2de7274aa3e8be1650ebcd31c3a2",
+    "text": "aracnofóbicaondadice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:51.143201Z"
+  },
+  "spell.ghazbaran_summon.name": {
+    "src_hash": "0010d2177ff532e38ed4cad053dd2e57",
+    "text": "convocar a ghazbaran",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:55.808786Z"
+  },
+  "spell.dirtbeard_summon.name": {
+    "src_hash": "a868a6e090eb520a4548f1b26b16737f",
+    "text": "invocación de barba sucia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:55.809066Z"
+  },
+  "spell.shock_head_paralyze.name": {
+    "src_hash": "261c1b218a892245cd6eea042796e605",
+    "text": "shock cabeza paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:55.809391Z"
+  },
+  "spell.death_beam.name": {
+    "src_hash": "1623317a16ff4218f9dbf2d98a61bb1a",
+    "text": "rayo de la muerte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:37:55.809604Z"
+  },
+  "spell.charge_vortex.name": {
+    "src_hash": "c32b9de511ad6749434dbf5dd2e03ec9",
+    "text": "vórtice de carga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:00.076557Z"
+  },
+  "spell.mort_ring.name": {
+    "src_hash": "66c8c10d08ee7730819483e29b7386ad",
+    "text": "anillo de muerte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:00.076774Z"
+  },
+  "spell.hideous_fungus_poison.name": {
+    "src_hash": "950f0bc94925ce99b89b2c69baff430f",
+    "text": "horrible veneno de hongos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:00.077034Z"
+  },
+  "spell.hot_dog_soulfire.name": {
+    "src_hash": "911258c5426c381ff7939e479048a748",
+    "text": "perro caliente alma fuego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:00.077279Z"
+  },
+  "spell.white_weretiger_ice_ring.name": {
+    "src_hash": "f1617c0fc40020f24df6b11d845af8ec",
+    "text": "anillo de hielo de hombre tigre blanco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:00.077548Z"
+  },
+  "spell.mindmasher_drown.name": {
+    "src_hash": "9cd844fd56fb65aec5e4c7ac2ee59e67",
+    "text": "ahogarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:05.516746Z"
+  },
+  "spell.haunted_treeling_paralyze.name": {
+    "src_hash": "cd26170d9e512f1e2e613cffe6da3c4c",
+    "text": "árbol embrujado paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:05.517030Z"
+  },
+  "spell.minotaur_wallbreaker_walkthrough.name": {
+    "src_hash": "b7373e9ac23d8d4199def5eefd066a54",
+    "text": "Tutorial del rompemuros del Minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:05.517365Z"
+  },
+  "spell.horestis_paralyze.name": {
+    "src_hash": "a4f4b2be974b42e2ae09a4193f3a6e29",
+    "text": "horestis paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:05.517667Z"
+  },
+  "spell.arthei_summon.name": {
+    "src_hash": "76c73c95dcbaf0479622b03b92691a9f",
+    "text": "convocar a arthei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:05.517922Z"
+  },
+  "spell.canopic_jar_heal.name": {
+    "src_hash": "08d00250b000ce37493e94540dde0896",
+    "text": "curación del frasco canópico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:11.611345Z"
+  },
+  "spell.azerus_summon_3.name": {
+    "src_hash": "f132e13c75d28cbadb820998fa56f5be",
+    "text": "azerus invocar 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:11.611580Z"
+  },
+  "spell.seacrest_serpent_wave.name": {
+    "src_hash": "c26da9a762ecb2e0cdc44db2d25ea406",
+    "text": "ola de serpiente de cresta marina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:11.611838Z"
+  },
+  "spell.hideous_fungus_paralyze.name": {
+    "src_hash": "6c4ee6bae8b697a5cd943383d2d2a851",
+    "text": "horrible hongo paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:11.612080Z"
+  },
+  "spell.lizard_gate_guardian_summon.name": {
+    "src_hash": "7a96249ec08befa9e27107b8c56de262",
+    "text": "invocación del guardián de la puerta del lagarto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:11.612390Z"
+  },
+  "spell.podzillaphys_chain.name": {
+    "src_hash": "d0066ec20e49c206946f5b44bedf0f0b",
+    "text": "podzillafiscadena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:16.237015Z"
+  },
+  "spell.azerus_skill_reducer_2.name": {
+    "src_hash": "aab7ce88a95b460ce06e14c025b13979",
+    "text": "reductor de habilidades azerus 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:16.237308Z"
+  },
+  "spell.frost_dragon_paralyze_1.name": {
+    "src_hash": "93d1f160fcc199b75d281782ae91df7a",
+    "text": "dragón helado paralizar 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:16.237585Z"
+  },
+  "spell.ghazbaran_skill_reducer_2.name": {
+    "src_hash": "edb6c3cd04556245eb946083c0d81691",
+    "text": "reductor de habilidades ghazbaran 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:16.237860Z"
+  },
+  "spell.werewolf_skill_reducer.name": {
+    "src_hash": "03190248daffc0cb119d91617b8b0ce0",
+    "text": "reductor de habilidades de hombre lobo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:16.238190Z"
+  },
+  "spell.verminor_summon.name": {
+    "src_hash": "e5609bfa4280db95f461c539f5c7b395",
+    "text": "invocación de alimañas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:21.491679Z"
+  },
+  "spell.hell_hole_summon.name": {
+    "src_hash": "0d423b336d18a0eec44f0d28d15dcee7",
+    "text": "invocación del agujero del infierno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:21.492332Z"
+  },
+  "spell.fury_skill_reducer_1.name": {
+    "src_hash": "2ff08668178e60437b2a9914d85524cf",
+    "text": "reductor de habilidad de furia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:21.492872Z"
+  },
+  "spell.mitmah_vanguard_hugeblackring.name": {
+    "src_hash": "56880b3fbd8eb63890fb11cf037e43ce",
+    "text": "enormeanillonegro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:21.493276Z"
+  },
+  "spell.choking_fear_paralyze.name": {
+    "src_hash": "1ed18b5dd8a0a95f82c3c83e446ecf40",
+    "text": "asfixia el miedo paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:21.493802Z"
+  },
+  "spell.gnomevil_drunk.name": {
+    "src_hash": "1cbe27586721c72d43d8289c2440b878",
+    "text": "gnomo borracho",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:25.039155Z"
+  },
+  "spell.mahrdis_soulfire.name": {
+    "src_hash": "57a8f6368f7b20867c4fb5d6da7219f0",
+    "text": "fuego del alma mahrdis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:25.039421Z"
+  },
+  "spell.anomaly_break.name": {
+    "src_hash": "aa47d0a08e52fc6415bf7e86324537fb",
+    "text": "ruptura de anomalía",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:38:25.039640Z"
   }
 }

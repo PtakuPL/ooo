@@ -19166,5 +19166,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:40:21.349895Z"
+  },
+  "npc.baxter.greet_msg_1": {
+    "src_hash": "5a79b0f1ba416a18a992917d1837d174",
+    "text": "LÄNGE LEVE KUNGEN TIBIANUS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.704508Z"
+  },
+  "npc.baxter.sendtrade_msg_1": {
+    "src_hash": "cf5734463548fd7f4caefa09650648e3",
+    "text": "Tar du med dig nydödade råttor för en prispeng på 1 guld var? Förresten, jag köper också orktänder och annat du slitit ur deras jävla kår... jag menar... ja, du förstår vad jag menar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.705433Z"
+  },
+  "npc.beatrice.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.706936Z"
+  },
+  "npc.benjamin.farewell_msg_1": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "Det var ett nöje att hjälpa dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.707818Z"
+  },
+  "npc.benjamin.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hej. Hur kan jag hjälpa dig |PLAYERNAME|? Be mig om en {trade} om du vill köpa något. Jag kan också förklara {mail}-systemet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.708577Z"
+  },
+  "npc.bertha.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.710327Z"
+  },
+  "npc.bertha.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.711350Z"
+  },
+  "npc.billy.greet_msg_1": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Hej |PLAYERNAME|. Jag är bonde och kock, jag kanske kan intressera dig för en {trade} med mat? Du kan också be mig om allmän {hints} om spelet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.712688Z"
+  },
+  "npc.billy.sendtrade_msg_1": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Säker.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.712970Z"
+  },
+  "npc.billy.walkaway_msg_1": {
+    "src_hash": "1972a0eaf694e91957684eba0ce0acdc",
+    "text": "HUR OFÖRLIGT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.718269Z"
+  },
+  "npc.black_bert.farewell_msg_1": {
+    "src_hash": "962f99ce919b3a8eab1fbe21989935c2",
+    "text": "Hejdå, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.718794Z"
+  },
+  "npc.black_bert.greet_msg_1": {
+    "src_hash": "56cb7c9fe5ae41c0e637708d1c5c41fa",
+    "text": "Hej på er, |PLAYERNAME|! Du ser ut att vara sugen på att {trade}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.719642Z"
+  },
+  "npc.florentine.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.872963Z"
+  },
+  "npc.gorn.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:46.917534Z"
+  },
+  "npc.king_tibianus.walkaway_msg_1": {
+    "src_hash": "6fc6fd5473a14ef5faf70b62c9e91b34",
+    "text": "HUR OFÖRLIGT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.050675Z"
+  },
+  "npc.luna.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.083845Z"
+  },
+  "npc.mehkesh.sendtrade_msg_1": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Säker.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.103785Z"
+  },
+  "npc.ninos.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hej. Hur kan jag hjälpa dig |PLAYERNAME|? Be mig om en {trade} om du vill köpa något. Jag kan också förklara {mail}-systemet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.142728Z"
+  },
+  "npc.obi.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.150883Z"
+  },
+  "npc.olrik.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hej. Hur kan jag hjälpa dig |PLAYERNAME|? Be mig om en {trade} om du vill köpa något. Jag kan också förklara {mail}-systemet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.158441Z"
+  },
+  "npc.rowenna.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.244653Z"
+  },
+  "npc.rudolph.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.245268Z"
+  },
+  "npc.sarina.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.253331Z"
+  },
+  "npc.sarina.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. {Footballs} måste köpas separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.254250Z"
+  },
+  "npc.sarina.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.254700Z"
+  },
+  "npc.shauna.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.264251Z"
+  },
+  "npc.shauna.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LÄNGE LEVE Drottningen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.266445Z"
+  },
+  "npc.shiantis.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.266967Z"
+  },
+  "npc.shiantis.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Åh, snälla kom in, |PLAYERNAME|. Vad kan jag göra för dig? Om du behöver äventyrsutrustning, be mig om en {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.267602Z"
+  },
+  "npc.shiantis.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturligtvis, bara bläddra igenom mina varor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.268472Z"
+  },
+  "npc.shiantis.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.268819Z"
+  },
+  "npc.siestaar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.275150Z"
+  },
+  "npc.sissek.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.282891Z"
+  },
+  "npc.suzy.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.296581Z"
+  },
+  "npc.tesha.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Ja? Vad kan jag göra för dig, |PLAYERNAME|? Bankaffärer kanske?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.310805Z"
+  },
+  "npc.torkada.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Hejdå, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.332439Z"
+  },
+  "npc.torkada.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Hejdå.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.333081Z"
+  },
+  "npc.turvy.sendtrade_msg_1": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Naturligtvis är det bara att bläddra igenom mina erbjudanden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.335284Z"
+  },
+  "npc.tyrias.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Må gudarna välsigna dig, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.335712Z"
+  },
+  "npc.tyrias.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Välkommen, unga |PLAYERNAME|! Om du är svårt sårad eller förgiftad kan jag {heal} dig gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.336300Z"
+  },
+  "npc.tyrias.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.336698Z"
+  },
+  "npc.tyrias.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Inga problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:47.337999Z"
   }
 }

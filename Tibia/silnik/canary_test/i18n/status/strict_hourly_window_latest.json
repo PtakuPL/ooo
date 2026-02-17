@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-16T23:52:04.257496Z",
-  "window_end_utc": "2026-02-17T00:52:04.257496Z",
+  "window_start_utc": "2026-02-16T23:53:11.970808Z",
+  "window_end_utc": "2026-02-17T00:53:11.970808Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3675,
-  "guard_fail": 3239,
-  "guard_fail_rate_pct": 46.8,
+  "translated": 3607,
+  "guard_fail": 3257,
+  "guard_fail_rate_pct": 47.5,
   "no_progress_entries": 4,
-  "no_progress_rate_pct": 3.9,
-  "throughput_keys_per_h": 2028.3,
-  "suspicious_total": 14219,
+  "no_progress_rate_pct": 4.0,
+  "throughput_keys_per_h": 1977.5,
+  "suspicious_total": 14433,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
@@ -34,6 +34,12 @@
       "target": "pl/npc.json",
       "translated": 50,
       "guard_fail": 349,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/monsters.json",
+      "translated": 20,
+      "guard_fail": 80,
       "guard_command": 0
     },
     {
@@ -65,12 +71,6 @@
       "translated": 5,
       "guard_fail": 42,
       "guard_command": 1
-    },
-    {
-      "target": "ro/monsters.json",
-      "translated": 10,
-      "guard_fail": 40,
-      "guard_command": 0
     }
   ]
 }

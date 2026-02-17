@@ -25782,5 +25782,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:51:27.467964Z"
+  },
+  "monster.damaged_worker_golem.voice_7": {
+    "src_hash": "ffc43f896244d5d80e275df78e7e23f4",
+    "text": "Autodiagnostica nu a reușit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:42.536032Z"
+  },
+  "monster.damaged_worker_golem.voice_8": {
+    "src_hash": "44a48567e44bfdba20220ef20ff69aa0",
+    "text": "Aw... chhhrrr ordine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:42.536296Z"
+  },
+  "monster.iron_servant.name": {
+    "src_hash": "36eaf8d163677172923ac04777ee6d6f",
+    "text": "Servitor de Fier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:52:42.536501Z"
   }
 }

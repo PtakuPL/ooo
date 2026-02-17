@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T03:48:13.263366Z",
+  "timestamp": "2026-02-17T03:49:11.197471Z",
   "checked_entries": 100,
   "issues_found": 5,
   "issues_by_type": {
-    "identical_to_en_exempt": 8,
+    "identical_to_en_exempt": 12,
     "artifact_token": 5,
     "suspicious_log_high": 178,
     "suspicious_log_low": 8,

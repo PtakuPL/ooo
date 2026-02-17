@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T03:48:00.705033Z",
-  "cycle": 212,
-  "language": "ro",
-  "json_file": "achievements.json",
-  "translated": 31,
+  "timestamp": "2026-02-17T03:49:10.479228Z",
+  "cycle": 213,
+  "language": "pl",
+  "json_file": "example_merchant.json",
+  "translated": 0,
   "placeholders": 0,
-  "guard_fail": 19,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 595
+  "strict_skipped_done": 14
 }

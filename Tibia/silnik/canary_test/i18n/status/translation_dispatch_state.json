@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T03:46:56.976337Z",
-  "cycle_counter": 1436,
-  "last_target_key": "ro:achievements.json",
-  "last_pending_total": 427,
-  "last_tier": 2,
+  "timestamp": "2026-02-17T03:49:07.913103Z",
+  "cycle_counter": 1439,
+  "last_target_key": "pl:example_merchant.json",
+  "last_pending_total": 1,
+  "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 193,
   "active_candidates_count": 182,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 212,
+  "cache_cycle": 213,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -384,10 +384,10 @@
     ],
     "lang_completion": {
       "pl": 46.5,
-      "es": 74.74,
-      "ru": 37.73,
-      "ro": 23.85,
-      "it": 14.91,
+      "es": 74.73,
+      "ru": 37.75,
+      "ro": 23.9,
+      "it": 14.98,
       "sr": 11.38,
       "sv": 9.26
     }

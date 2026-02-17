@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T11:48:49.253430Z",
+  "timestamp": "2026-02-17T11:50:38.349466Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 382927,
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 3560,
-    "guard_reports_blocked": 3484,
+    "guard_reports_total": 3561,
+    "guard_reports_blocked": 3485,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3484
+    "cannot_translate_reports_visible": 3485
   },
   "cache": {
-    "lang_stats_hits": 50,
-    "lang_stats_misses": 2,
-    "lang_stats_hit_pct": 96.2,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1974,
-    "lang_file_misses": 2,
+    "lang_file_hits": 1975,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 99.9,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T11:48:40.133506Z",
-    "cycle": 467,
+    "timestamp": "2026-02-17T11:50:30.540495Z",
+    "cycle": 468,
     "mode": "AUTO_TRANSLATE",
-    "category": "ru",
+    "category": "pl",
     "events": {
-      "dispatch": 141871,
-      "mode_run": 93704
+      "dispatch": 2423,
+      "mode_run": 81981
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T10:48:46.556393Z",
-    "window_end_utc": "2026-02-17T11:48:46.556393Z",
+    "window_start_utc": "2026-02-17T10:50:35.980495Z",
+    "window_end_utc": "2026-02-17T11:50:35.980495Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -92,14 +92,20 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 807,
-    "guard_fail": 420,
-    "guard_fail_rate_pct": 34.2,
+    "translated": 819,
+    "guard_fail": 1227,
+    "guard_fail_rate_pct": 60.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 470.2,
-    "suspicious_total": 2109,
+    "throughput_keys_per_h": 470.4,
+    "suspicious_total": 2365,
     "top_guard_fail_targets": [
+      {
+        "target": "pl/items.json",
+        "translated": 18,
+        "guard_fail": 822,
+        "guard_command": 0
+      },
       {
         "target": "es/talkactions.json",
         "translated": 1,
@@ -141,29 +147,58 @@
         "translated": 22,
         "guard_fail": 28,
         "guard_command": 0
-      },
-      {
-        "target": "ro/html.json",
-        "translated": 25,
-        "guard_fail": 24,
-        "guard_command": 0
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T11:48:40.029440Z",
+      "timestamp": "2026-02-17T11:50:30.421312Z",
       "checked_entries": 100,
-      "issues_found": 27,
+      "issues_found": 32,
       "issues_by_type": {
-        "artifact_token": 27,
-        "identical_to_en_exempt": 11,
-        "suspicious_log_critical": 47,
-        "suspicious_log_high": 153,
+        "identical_to_en_exempt": 13,
+        "artifact_token": 32,
+        "suspicious_log_high": 173,
+        "suspicious_log_critical": 27,
         "suspicious_rejected_critical": 169,
         "suspicious_rejected_high": 31
       },
       "issues": [
+        {
+          "key": "npc.captain_haba_open_sea.larboard_1",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.say_3",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+          "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.starboard_1",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.straight_3",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+          "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+        },
+        {
+          "key": "npc.captain_haba_open_sea.straight_5",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+        },
         {
           "key": "npc.lardoc_bashsmite.multi_3",
           "lang": "es",
@@ -370,15 +405,15 @@
         "quality_score": 77.5
       },
       "pl": {
-        "last_cycle": "2026-02-17T11:14:46.201318Z",
-        "last_translated": 2,
-        "total_suspicious": 20409,
-        "total_rejected": 1475,
-        "total_gt_guard_fail": 3878,
-        "cycles": 984,
-        "quality_score": 61.9,
-        "last_audit": "2026-02-17T11:48:40.029440Z",
-        "issues_count": 138943
+        "last_cycle": "2026-02-17T11:49:46.114029Z",
+        "last_translated": 18,
+        "total_suspicious": 20574,
+        "total_rejected": 1494,
+        "total_gt_guard_fail": 3910,
+        "cycles": 985,
+        "quality_score": 61.1,
+        "last_audit": "2026-02-17T11:50:30.421312Z",
+        "issues_count": 139055
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -392,15 +427,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T11:48:36.313216Z",
+        "last_cycle": "2026-02-17T11:50:27.861096Z",
         "last_translated": 25,
-        "total_suspicious": 39832,
-        "total_rejected": 1392,
-        "total_gt_guard_fail": 15465,
-        "cycles": 1339,
+        "total_suspicious": 39901,
+        "total_rejected": 1394,
+        "total_gt_guard_fail": 15491,
+        "cycles": 1340,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T11:48:40.029440Z",
-        "issues_count": 245676
+        "last_audit": "2026-02-17T11:50:30.421312Z",
+        "issues_count": 245856
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -431,9 +466,9 @@
         "total_rejected": 498,
         "total_gt_guard_fail": 1672,
         "cycles": 293,
-        "quality_score": 60.7,
-        "last_audit": "2026-02-17T11:48:40.029440Z",
-        "issues_count": 21069
+        "quality_score": 60.4,
+        "last_audit": "2026-02-17T11:50:30.421312Z",
+        "issues_count": 21096
       },
       "ru": {
         "last_cycle": "2026-02-17T11:47:37.904766Z",
@@ -442,9 +477,9 @@
         "total_rejected": 770,
         "total_gt_guard_fail": 1993,
         "cycles": 286,
-        "quality_score": 60.3,
-        "last_audit": "2026-02-17T11:48:40.029440Z",
-        "issues_count": 48708
+        "quality_score": 60.2,
+        "last_audit": "2026-02-17T11:50:30.421312Z",
+        "issues_count": 48739
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -464,9 +499,9 @@
         "total_rejected": 201,
         "total_gt_guard_fail": 488,
         "cycles": 126,
-        "quality_score": 89.6,
-        "last_audit": "2026-02-17T11:48:40.029440Z",
-        "issues_count": 13727
+        "quality_score": 89.8,
+        "last_audit": "2026-02-17T11:50:30.421312Z",
+        "issues_count": 13732
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -916,8 +951,8 @@
         "total_gt_guard_fail": 3459,
         "cycles": 274,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T11:48:40.029440Z",
-        "issues_count": 60764
+        "last_audit": "2026-02-17T11:50:30.421312Z",
+        "issues_count": 60841
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -931,7 +966,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 27 issue(s) / 100 entries | 2026-02-17T11:48:40.029440Z"
+    "summary": "SLOW_MODE | 32 issue(s) / 100 entries | 2026-02-17T11:50:30.421312Z"
   },
   "languages": [
     {

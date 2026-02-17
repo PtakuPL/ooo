@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T10:48:46.556393Z",
-  "window_end_utc": "2026-02-17T11:48:46.556393Z",
+  "window_start_utc": "2026-02-17T10:50:35.980495Z",
+  "window_end_utc": "2026-02-17T11:50:35.980495Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,14 +16,20 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 807,
-  "guard_fail": 420,
-  "guard_fail_rate_pct": 34.2,
+  "translated": 819,
+  "guard_fail": 1227,
+  "guard_fail_rate_pct": 60.0,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 470.2,
-  "suspicious_total": 2109,
+  "throughput_keys_per_h": 470.4,
+  "suspicious_total": 2365,
   "top_guard_fail_targets": [
+    {
+      "target": "pl/items.json",
+      "translated": 18,
+      "guard_fail": 822,
+      "guard_command": 0
+    },
     {
       "target": "es/talkactions.json",
       "translated": 1,
@@ -64,12 +70,6 @@
       "target": "ro/achievements.json",
       "translated": 22,
       "guard_fail": 28,
-      "guard_command": 0
-    },
-    {
-      "target": "ro/html.json",
-      "translated": 25,
-      "guard_fail": 24,
       "guard_command": 0
     }
   ]

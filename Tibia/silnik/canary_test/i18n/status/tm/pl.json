@@ -104350,5 +104350,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:13:29.104943Z"
+  },
+  "cpp.look.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "szybsza regeneracja",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:43.029261Z"
+  },
+  "cpp.look.hard_drinking": {
+    "src_hash": "0fd8740eaf86fd5822ee55c965ad55fc",
+    "text": "Ostre picie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:43.030711Z"
+  },
+  "cpp.look.specialized_magic_level": {
+    "src_hash": "6bf7f45c56d8249fdab942beac2e6baa",
+    "text": "{0} Poziom magii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:43.041830Z"
+  },
+  "cpp.player.imbuement_error": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "Wystąpił błąd. Otwórz ponownie okno nasycania.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:43.065656Z"
+  },
+  "cpp.look.expire_in": {
+    "src_hash": "4dcb6c6e017da0db500b976f9f258f2b",
+    "text": "które wygasną w ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:47.388324Z"
+  },
+  "cpp.look.it_can_only_be_used_by": {
+    "src_hash": "faccfada0e1f5d0a061297d475bcbfb1",
+    "text": "Można z niego korzystać wyłącznie ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:47.388680Z"
+  },
+  "cpp.look.it_weighs": {
+    "src_hash": "ef65945163fedeeb7284484a6ddcefd9",
+    "text": "Waży {0} uncji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:47.388942Z"
+  },
+  "cpp.look.key_fmt": {
+    "src_hash": "dee11bc0f082cf397b629c0d3569c73c",
+    "text": "Klucz:{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:53.467016Z"
+  },
+  "cpp.look.magic_level_n": {
+    "src_hash": "ed8770a4e07871477d3ea12e7bf8416f",
+    "text": "poziom magiczny {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:53.467303Z"
+  },
+  "cpp.look.magic_level_or_higher": {
+    "src_hash": "dfd18250329dc889f0779b8060acf801",
+    "text": "poziom magiczny {0} lub wyższy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:53.467625Z"
+  },
+  "cpp.look.not_enough_capacity_these": {
+    "src_hash": "bb1ea8ee44d678240165c6407c1772ef",
+    "text": "Nie masz wystarczającej pojemności, aby unieść te obiekty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:53.468012Z"
+  },
+  "cpp.look.not_enough_capacity_this": {
+    "src_hash": "7caeac07bf2119e94f56ed693519201b",
+    "text": "Nie masz wystarczającej pojemności, aby unieść ten obiekt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:53.468434Z"
+  },
+  "cpp.look.not_enough_room_these": {
+    "src_hash": "0c810ee97543748ad005e79660622d5e",
+    "text": "Nie masz wystarczająco dużo miejsca, aby przenosić te przedmioty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:58.602608Z"
+  },
+  "cpp.look.not_enough_room_this": {
+    "src_hash": "52e2d95118d537b01ed2ce5723152d1b",
+    "text": "Nie masz wystarczająco dużo miejsca, aby przenieść ten przedmiot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:58.603014Z"
+  },
+  "cpp.look.of_level_or_higher": {
+    "src_hash": "98267cb1b96db70c97dab0b65b0f459f",
+    "text": "poziomu {0} lub wyższego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:58.603311Z"
+  },
+  "cpp.look.or_higher": {
+    "src_hash": "6fc18bd02a0958902f450684a621ca2b",
+    "text": "lub wyższy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:58.603514Z"
+  },
+  "cpp.look.premium": {
+    "src_hash": "1484fdbbf221189593d8e7795142a8ca",
+    "text": "premia ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:17:58.603695Z"
+  },
+  "cpp.look.protection_all_fields_fmt": {
+    "src_hash": "489d46c3df42de53fccdc397f0aa0a45",
+    "text": "ochrona wszystkich pól {0}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:04.707062Z"
+  },
+  "cpp.look.range": {
+    "src_hash": "75954a3c6f2ea54cb9dff249b6b5e8e6",
+    "text": "Zakres:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:04.707255Z"
+  },
+  "cpp.look.they_weigh": {
+    "src_hash": "4dc64177f883e3c77010856949e1ad84",
+    "text": "Ważą {0} uncji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:04.707515Z"
+  },
+  "cpp.look.too_far_to_read": {
+    "src_hash": "1e361609f2368990685a56f9b4829aa9",
+    "text": "Jesteś za daleko, żeby to przeczytać",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:04.707840Z"
+  },
+  "cpp.look.wield_by": {
+    "src_hash": "b905a321d3e1a3742048e2ee98c11bc3",
+    "text": "Można nim właściwie posługiwać się tylko przez ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:04.708190Z"
+  },
+  "cpp.look.you_see": {
+    "src_hash": "e8a46d697d98376c20e58c7fc6c566b3",
+    "text": "Widzisz ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:10.171521Z"
+  },
+  "cpp.npc.bought_currency": {
+    "src_hash": "2c0e2f09d57fecb2ac5fec4fe901982e",
+    "text": "Kupiłem {0}x {1} za {2} {3}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:10.171903Z"
+  },
+  "cpp.npc.loot_pouch_empty": {
+    "src_hash": "19949a7cef86dd39eedf1004ee273fa1",
+    "text": "Nie masz żadnych przedmiotów w swoim woreczku z łupami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:10.172511Z"
+  },
+  "cpp.npc.loot_pouch_sold": {
+    "src_hash": "4f6c342cb05df9d9dad9266d4f4d0829",
+    "text": "Sprzedałeś wszystkie przedmioty ze swojej sakiewki za {0} złota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:10.173029Z"
+  },
+  "cpp.party.invited_member": {
+    "src_hash": "7d13e33c4599e50f0e653f4442c3db92",
+    "text": "{0} został zaproszony do imprezy (zakres udostępnień: {1}-{2}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:18.983594Z"
+  },
+  "cpp.party.invited_member_with_hint": {
+    "src_hash": "d05980efadff489aa852931b120e9a63",
+    "text": "{0} został zaproszony do imprezy (zakres udostępnień: {1}-{2}). Otwórz kanał imprezy, aby komunikować się ze swoimi członkami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:18.984182Z"
+  },
+  "cpp.party.invited_you": {
+    "src_hash": "3b0e14a8cdddbdb07f30fd7906fd02ae",
+    "text": "{0} zaprosił Cię na imprezę {1} (zakres udostępniania: {2}-{3}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:18.984593Z"
+  },
+  "cpp.party.joined": {
+    "src_hash": "c43de5c4acec8bff684079a1fab7caa0",
+    "text": "Dołączyłeś do imprezy {0}. Otwórz kanał drużyny, aby komunikować się ze swoimi towarzyszami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:18.985065Z"
+  },
+  "cpp.party.member_joined": {
+    "src_hash": "b23da70f87775320ef5cbe8c8a28a0e7",
+    "text": "{0} dołączył do imprezy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:18.985363Z"
+  },
+  "cpp.party.member_left": {
+    "src_hash": "53d13494eae30f5a624e61f9a71f02d6",
+    "text": "{0} opuścił imprezę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:26.605267Z"
+  },
+  "cpp.party.new_leader": {
+    "src_hash": "92e7d7fabd5be64332e4e84804942c63",
+    "text": "{0} jest teraz liderem partii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:26.605594Z"
+  },
+  "cpp.party.shared_exp_active": {
+    "src_hash": "89578e7f5a779603c86b0def081dc66b",
+    "text": "Wspólne doświadczenie jest teraz aktywne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:26.605922Z"
+  },
+  "cpp.party.shared_exp_active_alone": {
+    "src_hash": "299770ccf0c6851aa6d34323e2c256f5",
+    "text": "Wspólne doświadczenie zostało aktywowane, ale jesteś sam w swojej drużynie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:26.606455Z"
+  },
+  "cpp.party.shared_exp_active_inactive": {
+    "src_hash": "c5f7db6e344f5dd5a8b917013146bd9d",
+    "text": "Wspólne doświadczenie zostało aktywowane, ale niektórzy członkowie Twojej drużyny są nieaktywni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:26.606921Z"
+  },
+  "cpp.party.shared_exp_active_level_spread": {
+    "src_hash": "baac1ae78badf2914b275c655cbf08db",
+    "text": "Wspólne doświadczenie zostało aktywowane, ale rozpiętość poziomów w twojej drużynie jest zbyt duża.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:34.488303Z"
+  },
+  "cpp.party.shared_exp_active_too_far": {
+    "src_hash": "3dcb60d1bb1edcb8d393d2fc8406d969",
+    "text": "Udostępnione doświadczenie zostało aktywowane, ale niektórzy członkowie twojej drużyny są za daleko.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:34.488800Z"
+  },
+  "cpp.party.shared_exp_error": {
+    "src_hash": "aa72d3421dfc220a2a4d359df9fab2fd",
+    "text": "Wystąpił błąd. Nie można aktywować wspólnego doświadczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:34.489184Z"
+  },
+  "cpp.player.adventurer_blessings_kept": {
+    "src_hash": "ba39b2a0d1644235affc07a634a5eac1",
+    "text": "Nadal masz błogosławieństwa poszukiwacza przygód za poziom niższy niż {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:34.489623Z"
+  },
+  "cpp.player.adventurer_blessings_received": {
+    "src_hash": "b62a2e75a482786bc9e80db58a1868a8",
+    "text": "Otrzymałeś błogosławieństwa poszukiwacza przygód za poziom niższy niż {0}!\nNadal jesteś błogosławiony {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:34.490216Z"
+  },
+  "cpp.player.blessing_name_1": {
+    "src_hash": "c377afb2e46bf0b6968e71cb449ac3ea",
+    "text": "Zwrot losu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:18:36.205794Z"
   }
 }

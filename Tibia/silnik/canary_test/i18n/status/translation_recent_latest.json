@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T02:17:12.153273Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T02:18:36.367136Z",
+  "language": "pl",
+  "json_file": "cpp.json",
+  "translated": 47,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "cpp.look.you_see",
+      "en": "You see ",
+      "translated": "Widzisz ",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "cpp.npc.bought_currency",
+      "en": "Bought {0}x {1} for {2} {3}.",
+      "translated": "Kupiłem {0}x {1} za {2} {3}.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "cpp.npc.loot_pouch_empty",
+      "en": "You have no items in your loot pouch.",
+      "translated": "Nie masz żadnych przedmiotów w swoim woreczku z łupami.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "cpp.npc.loot_pouch_sold",
+      "en": "You sold all of the items from your loot pouch for {0} gold.",
+      "translated": "Sprzedałeś wszystkie przedmioty ze swojej sakiewki za {0} złota.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "cpp.party.invited_member",
+      "en": "{0} has been invited to join the party (Share range: {1}-{2}).",
+      "translated": "{0} został zaproszony do imprezy (zakres udostępnień: {1}-{2}).",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "cpp.party.invited_member_with_hint",
+      "en": "{0} has been invited to join the party (Share range: {1}-{2}). Open the party channel to communicate with your members.",
+      "translated": "{0} został zaproszony do imprezy (zakres udostępnień: {1}-{2}). Otwórz kanał imprezy, aby komunikować się ze swoimi członkami.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "cpp.party.invited_you",
+      "en": "{0} has invited you to {1} party (Share range: {2}-{3}).",
+      "translated": "{0} zaprosił Cię na imprezę {1} (zakres udostępniania: {2}-{3}).",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "cpp.party.joined",
+      "en": "You have joined {0} party. Open the party channel to communicate with your companions.",
+      "translated": "Dołączyłeś do imprezy {0}. Otwórz kanał drużyny, aby komunikować się ze swoimi towarzyszami.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "cpp.party.member_joined",
+      "en": "{0} has joined the party.",
+      "translated": "{0} dołączył do imprezy.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "cpp.party.member_left",
+      "en": "{0} has left the party.",
+      "translated": "{0} opuścił imprezę.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "cpp.party.new_leader",
+      "en": "{0} is now the leader of the party.",
+      "translated": "{0} jest teraz liderem partii.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "cpp.party.shared_exp_active",
+      "en": "Shared Experience is now active.",
+      "translated": "Wspólne doświadczenie jest teraz aktywne.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "cpp.party.shared_exp_active_alone",
+      "en": "Shared Experience has been activated, but you are alone in your party.",
+      "translated": "Wspólne doświadczenie zostało aktywowane, ale jesteś sam w swojej drużynie.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "cpp.party.shared_exp_active_inactive",
+      "en": "Shared Experience has been activated, but some members of your party are inactive.",
+      "translated": "Wspólne doświadczenie zostało aktywowane, ale niektórzy członkowie Twojej drużyny są nieaktywni.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.party.shared_exp_active_level_spread",
+      "en": "Shared Experience has been activated, but the level spread of your party is too wide.",
+      "translated": "Wspólne doświadczenie zostało aktywowane, ale rozpiętość poziomów w twojej drużynie jest zbyt duża.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.party.shared_exp_active_too_far",
+      "en": "Shared Experience has been activated, but some members of your party are too far away.",
+      "translated": "Udostępnione doświadczenie zostało aktywowane, ale niektórzy członkowie twojej drużyny są za daleko.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.party.shared_exp_error",
+      "en": "An error occured. Unable to activate shared experience.",
+      "translated": "Wystąpił błąd. Nie można aktywować wspólnego doświadczenia.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "cpp.player.adventurer_blessings_kept",
+      "en": "You still have adventurer's blessings for being level lower than {0}!",
+      "translated": "Nadal masz błogosławieństwa poszukiwacza przygód za poziom niższy niż {0}!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "cpp.player.adventurer_blessings_received",
+      "en": "You have received adventurer's blessings for being level lower than {0}!\nYou are still blessed with {1}",
+      "translated": "Otrzymałeś błogosławieństwa poszukiwacza przygód za poziom niższy niż {0}!\nNadal jesteś błogosławiony {1}",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "cpp.player.blessing_name_1",
+      "en": "Twist of Fate",
+      "translated": "Zwrot losu",
+      "source": "google_translate"
     }
   ]
 }

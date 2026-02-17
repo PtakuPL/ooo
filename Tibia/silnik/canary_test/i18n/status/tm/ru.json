@@ -26742,5 +26742,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:40:21.988447Z"
+  },
+  "questlog.quest_11.mission_12.state_1": {
+    "src_hash": "a6155e5b6de8511ac31d50d522f68744",
+    "text": "Вы успешно охотились на 300 мамонтов. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:41:56.549572Z"
   }
 }

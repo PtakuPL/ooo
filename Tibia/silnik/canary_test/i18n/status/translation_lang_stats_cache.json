@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T02:40:56.226184Z",
+  "timestamp": "2026-02-17T02:42:01.855298Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -16083,7 +16083,7 @@
         [
           "raids.json",
           1,
-          1771294589671247585,
+          1771296097903170576,
           18536
         ],
         [
@@ -16570,7 +16570,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771294589671247585,
+            1771296097903170576,
             18536
           ],
           "row": {
@@ -27045,7 +27045,7 @@
         [
           "raids.json",
           1,
-          1771294567279189820,
+          1771296080135119948,
           18540
         ],
         [
@@ -27532,7 +27532,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771294567279189820,
+            1771296080135119948,
             18540
           ],
           "row": {
@@ -27816,8 +27816,8 @@
         [
           "questlog.json",
           1,
-          1771294606807294758,
-          248808
+          1771296116551216768,
+          248884
         ],
         [
           "quests.json",
@@ -27879,13 +27879,13 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 19990,
+        "translated_keys": 19991,
         "english_copy_keys": 2587,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 37.3,
+        "completion_pct": 37.31,
         "server_keys": 49731,
-        "server_translated": 17248,
+        "server_translated": 17249,
         "server_pct": 34.68,
         "client_keys": 3855,
         "client_translated": 2742,
@@ -28287,12 +28287,12 @@
         "questlog.json": {
           "sig": [
             1,
-            1771294606807294758,
-            248808
+            1771296116551216768,
+            248884
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 80,
+            "translated_keys": 81,
             "english_copy_keys": 44,
             "missing_keys": 0,
             "missing_files": 0

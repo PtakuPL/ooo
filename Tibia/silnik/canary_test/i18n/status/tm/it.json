@@ -45990,5 +45990,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:04:03.247566Z"
+  },
+  "scripts.actions_steal_from_thieves.msg_1": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "È vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:00.679573Z"
+  },
+  "scripts.quests.found_item": {
+    "src_hash": "d8f7cefe403c291457b6c9f5478b1938",
+    "text": "Hai trovato un %s.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:00.781659Z"
+  },
+  "scripts.actions_demon_oak_chest.msg_2": {
+    "src_hash": "06f02d4c547b12ce2b8804695b9f0aea",
+    "text": "Hai trovato {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:07.376665Z"
+  },
+  "scripts.actions_dipthrah_signs_doors.msg_1": {
+    "src_hash": "50900607ffbcc26dfb57adb6a9aeacbc",
+    "text": "ID azione non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:13.838391Z"
+  },
+  "scripts.actions_dipthrah_signs_doors.msg_2": {
+    "src_hash": "f74ffed3ec45d27808bf4b9daafbc2c8",
+    "text": "Hai già completato questo passaggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:13.838750Z"
+  },
+  "scripts.actions_document.msg_1": {
+    "src_hash": "e3aa86a595bdf4e08545ee7ba7590906",
+    "text": "Caro curatore, questo museo aperto di recente è davvero un bel posto dove stare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:13.839189Z"
+  },
+  "scripts.actions_document.msg_2": {
+    "src_hash": "15e799af52db094b34330c9e03390635",
+    "text": "Ma aspetta! E lo spazio vuoto davanti a te? Che peccato!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:13.839560Z"
+  },
+  "scripts.actions_document.msg_3": {
+    "src_hash": "649518a7af31b7d8b75793e1143eafd4",
+    "text": "Sembra che qualcuno abbia rimosso una delle bellissime foto. Ma andiamo! Tu hai i soldi e ne abbiamo bisogno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:13.840063Z"
+  },
+  "scripts.actions_document.msg_4": {
+    "src_hash": "e3f5b87d707e739631933987fb9885b9",
+    "text": "Quindi con un piccolo rimborso spese lo riavrai indietro. Parla con Iwar in Kazordoon per ulteriori informazioni. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:19.713609Z"
+  },
+  "scripts.actions_document.msg_5": {
+    "src_hash": "9c6cec06690cf28996e1db3502afbeda",
+    "text": "Chiedigli: il gatto ti ha mangiato la lingua?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:19.714004Z"
+  },
+  "scripts.actions_documents.msg_1": {
+    "src_hash": "5af14697696edd5f1546a07182861b2d",
+    "text": "Hai ricevuto il componente aggiuntivo {}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:19.714401Z"
+  },
+  "scripts.actions_documents.msg_2": {
+    "src_hash": "df3c4b2b4bd3cf1975d03f384d86e691",
+    "text": "Hai ricevuto il vestito {}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:19.714707Z"
+  },
+  "scripts.actions_doorInvisible.msg_1": {
+    "src_hash": "b2cb04d517ae393db829039e7816a595",
+    "text": "La porta si apre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:19.715037Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_2": {
+    "src_hash": "5a575bde3954748011659b53b9682d15",
+    "text": "Prendi su di te la maledizione del sogno!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:27.970271Z"
+  },
+  "scripts.actions_entrances.msg_1": {
+    "src_hash": "e76fb564a7fed17077990fbdc6de5b76",
+    "text": "Hai {} contaminazioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:27.970545Z"
+  },
+  "scripts.actions_entrances.msg_2": {
+    "src_hash": "10fd367d0a0791a7d1920b1af8d2d755",
+    "text": "Dovresti rispettare il Bloodshade a guardia di questo regno prima di entrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:27.970928Z"
+  },
+  "scripts.actions_entrances.msg_3": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:27.971272Z"
+  },
+  "scripts.actions_entrances.msg_4": {
+    "src_hash": "70d060181fda1275fca32e6cec32644c",
+    "text": "Devi ancora sconfiggere: {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:27.971557Z"
+  },
+  "scripts.actions_fertilizer.msg_1": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Segnala l'incarico a Gnombold.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:34.671628Z"
+  },
+  "scripts.actions_final_lever.msg_1": {
+    "src_hash": "2121ec6cdb04e75616068d53a2d940d6",
+    "text": "Hai bisogno di almeno 3 giocatori, ciascuno in una colonna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:34.671992Z"
+  },
+  "scripts.actions_final_lever.say_1": {
+    "src_hash": "6c8d5dd28c2d2f88d2773cc09236380b",
+    "text": "Con la scomparsa della rabbia, della fame e della distruzione, sei risucchiato nel cuore della distruzione!! IL DIVORATORE DEL MONDO TI ASPETTA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:34.672476Z"
+  },
+  "scripts.actions_final_lever.say_2": {
+    "src_hash": "45092d6a5e03a282b9df8127198e24b9",
+    "text": "Uno spostamento di polarità ti sposta in un'altra parte del cuore della distruzione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:34.672942Z"
+  },
+  "scripts.actions_final_lever.say_3": {
+    "src_hash": "45092d6a5e03a282b9df8127198e24b9",
+    "text": "Uno spostamento di polarità ti sposta in un'altra parte del cuore della distruzione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:34.673373Z"
+  },
+  "scripts.actions_final_lever.say_4": {
+    "src_hash": "45092d6a5e03a282b9df8127198e24b9",
+    "text": "Uno spostamento di polarità ti sposta in un'altra parte del cuore della distruzione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:40.815393Z"
+  },
+  "scripts.actions_fire_bug.say_1": {
+    "src_hash": "e45ec5ddcf330bfeff658e1fcf19b871",
+    "text": "Ahi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:40.815586Z"
+  },
+  "scripts.actions_fire_bug.say_2": {
+    "src_hash": "48ba07e7bb343f2777d316ce0ada8c2f",
+    "text": "Hai risalito l'ultimo bacino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:40.815867Z"
+  },
+  "scripts.actions_fish_napping_door.say_1": {
+    "src_hash": "7f20881f99b79d1a1e23ab3ed70d1381",
+    "text": "Scivoli attraverso la porta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:40.816134Z"
+  },
+  "scripts.actions_fish_napping_key.say_1": {
+    "src_hash": "e99c6ecff758cfdc1f39f31a28f3634f",
+    "text": "Nella fretta rompi la chiave mentre entri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:40.816455Z"
+  },
+  "scripts.actions_flask.msg_1": {
+    "src_hash": "5f122d3da4629bffbde1b1c3d44754e9",
+    "text": "Fatto! Fai rapporto a Omrabas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:47.706766Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_1": {
+    "src_hash": "88cda7654762a022fbb195ee138048fe",
+    "text": "L'ordine dei fiori nel giardino è sbagliato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:47.707139Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_2": {
+    "src_hash": "d985281164095a47a746695286cccc17",
+    "text": "Il portale è ancora attivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:47.707437Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_3": {
+    "src_hash": "1acce27ff56e61e64182ecc91614cf06",
+    "text": "Un portale si forma mentre due travi di una strana costruzione che divide questa stanza si muovono l'una verso l'altra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:47.707937Z"
+  },
+  "scripts.actions_formula.say_1": {
+    "src_hash": "507ac195b47931f43e901bfbf790522d",
+    "text": "Hai bruciato la formula dell'alchimista.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:47.708241Z"
+  },
+  "scripts.actions_fount.msg_1": {
+    "src_hash": "a078052af6499123bf065d74d77c7209",
+    "text": "Una fiala di acqua fresca di stagno. Sembra cristallino e brilla un po'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:55.389800Z"
+  },
+  "scripts.actions_fountain.say_1": {
+    "src_hash": "d3756fe3bdf655cc4a665292bae36915",
+    "text": "Ti senti molto riposato e rilassato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:55.390184Z"
+  },
+  "scripts.actions_frozen_horror.msg_1": {
+    "src_hash": "09cd280cb68b9a10ec8828dd50e89162",
+    "text": "Bisogna aspettare un po', recentemente qualcuno ha sfidato Frozen Horror.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:55.390566Z"
+  },
+  "scripts.actions_ghost.say_1": {
+    "src_hash": "b24131380a7645919d0ba96744614081",
+    "text": "L'amuleto del fantasma si sta caricando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:11:55.390943Z"
   }
 }

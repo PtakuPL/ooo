@@ -108502,5 +108502,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:59:10.441577Z"
+  },
+  "book.otbm.has_stoped_i_know_they": {
+    "src_hash": "35595cec5063ee6256e7f4903c51edac",
+    "text": "zatrzymał się. WIEM, że teraz mnie ścigają. Widzę migotanie cieni, gdy się zbliżają. PRZYJDĄ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:51.288634Z"
+  },
+  "book.otbm.have_faith_wanderer_for_you": {
+    "src_hash": "9124976a59d0de8096c4a6e5f2730cc4",
+    "text": "Miej wiarę wędrowcze, bo nie walczysz sam.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:51.289016Z"
+  },
+  "book.otbm.have_to_spend_to_much": {
+    "src_hash": "bff4a2aaa82a96ee6ba67917b9820f17",
+    "text": "muszą spędzać zbyt dużo czasu na walce z",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:51.289366Z"
+  },
+  "book.otbm.head_of_the_palace_guards": {
+    "src_hash": "e938b6541f7e6ba56767f8841170d0b9",
+    "text": "Szef straży pałacowej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:51.289639Z"
+  },
+  "book.otbm.her_hairs_snakes_are_still": {
+    "src_hash": "0b1ed5425fa69ea8cb484782602d89fc",
+    "text": "Węże w jej włosach wciąż żyją. Przyznawane wyłącznie na TibiaPic.com.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:51.290338Z"
+  },
+  "book.otbm.herbs_and_plants_of_the": {
+    "src_hash": "9203a8de89ccc8f6dd3f2949a0e90065",
+    "text": "Zioła i rośliny bagienne, tom I",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:58.733595Z"
+  },
+  "book.otbm.herbs_and_plants_of_the_e1ae45aa": {
+    "src_hash": "e1ae45aaec45dfe98827c6b83e580af5",
+    "text": "Zioła i rośliny bagienne, tom II",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:58.733948Z"
+  },
+  "book.otbm.here_lies_the_body_of": {
+    "src_hash": "db6834e379ae855cc6efc41bb27b86f1",
+    "text": "Tutaj leży ciało Arkanora, pierwszego naukowca zajmującego się teleportacją Rookgaard.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:58.734741Z"
+  },
+  "book.otbm.here_on_the_haunted_plains": {
+    "src_hash": "c6cd2950dce38fb5e11ad3fbdacbe1f3",
+    "text": "Tutaj, na nawiedzonych Równinach Spustoszenia, zakon Rycerzy Koszmaru pokonał armie Goshnara, króla nekromancji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:58.735392Z"
+  },
+  "book.otbm.here_you_dont_lost_anything": {
+    "src_hash": "e4e01f9fa140f7a274df6dadf6f7a119",
+    "text": "Tutaj nic nie straciłeś, nie straciłeś poziomu i nie straciłeś przedmiotów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:09:58.735848Z"
+  },
+  "book.otbm.here_you_will_find_the": {
+    "src_hash": "81c60226feb949271b23676bf0c95fba",
+    "text": "Tutaj znajdziesz wejście do rozszerzenia MOTA. Wciąż w budowie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:06.015241Z"
+  },
+  "book.otbm.high_end_spells_for_your": {
+    "src_hash": "fce4b430f2d6f0afea91652f82bdf8f5",
+    "text": "Wysokiej klasy zaklęcia dla Twoich ostatecznych wrogów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:06.015625Z"
+  },
+  "book.otbm.highlighted_keyword_they_react_to": {
+    "src_hash": "097ea3d5657dc51f5d945fac3b07ef8e",
+    "text": "podświetlone słowo kluczowe, na które reagują, jeśli chcesz rozpocząć rozmowę, ale czasami mają ukryte słowa kluczowe, które to zrobią",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:06.016191Z"
+  },
+  "book.otbm.highranking_necromancers_only": {
+    "src_hash": "01c5f1e01f6927b18f44201ca8263df0",
+    "text": "Tylko wysokiej rangi nekromanci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:06.016483Z"
+  },
+  "book.otbm.home_of_eclesius_the_very": {
+    "src_hash": "4ab76b3a13ac403f69c0ea45bd6394d1",
+    "text": "Dom Eklezjusza, Bardzo Mądrego i Szlachetnego Sorcerer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:06.017072Z"
+  },
+  "book.otbm.houses_ascendants_phases_of_the": {
+    "src_hash": "1837cf115983b3cfd387252514117e98",
+    "text": "Domy, Ascendenci, Fazy Księżyca w różnych Mrocznych Zakonach. Porównawcza analiza wykresów przeprowadzona przez Antaly z Drefia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:11.036157Z"
+  },
+  "book.otbm.how_to_create_spellbooks_by": {
+    "src_hash": "003d48b32ce7871aca854768377b4dd0",
+    "text": "Jak tworzyć księgi zaklęć autorstwa Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:11.036523Z"
+  },
+  "book.otbm.how_to_create_spellbooks_by_003d48b3": {
+    "src_hash": "003d48b32ce7871aca854768377b4dd0",
+    "text": "Jak tworzyć księgi zaklęć autorstwa Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:11.036934Z"
+  },
+  "book.otbm.how_to_learn_magic_easy": {
+    "src_hash": "8067094b7f66068f95f52931ab410fa8",
+    "text": "Jak łatwo nauczyć się magii. Poziom 1: Dla Rycerzy i osób nie powołanych (Część pierwsza)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:18.176212Z"
+  },
+  "book.otbm.how_to_manipulate_runes_by": {
+    "src_hash": "6bcf61bdef240097e16c3d325a9e9cbb",
+    "text": "Jak manipulować Runami autorstwa Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:18.176665Z"
+  },
+  "book.otbm.however_immediately_the_first_dragon": {
+    "src_hash": "6e14927b10653fbf6abde369971b7553",
+    "text": "jednakże natychmiast powstał pierwszy smok, zwany Garsharak, i w trakcie tego życia urodził wiele kolejnych niższych smoków",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:18.177259Z"
+  },
+  "book.otbm.however_we_are_very_happy": {
+    "src_hash": "ff27dc0212720602c0a0c5bcb3b30567",
+    "text": "Jednakże jesteśmy bardzo szczęśliwi, że go posiadamy, ponieważ pomógł nam i pomoże nam zrozumieć magiczną sieć wokół Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:18.178005Z"
+  },
+  "book.otbm.i_advice_not_to_try": {
+    "src_hash": "44981a362cc714853f0c0da71bae7f0f",
+    "text": "Radzę nie próbować tego, dopóki nie będziesz mieć co najmniej 20-letniego doświadczenia w budowie kolei...<Cóż, wygląda na to, że nie pasujesz do założeń.>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:25.377634Z"
+  },
+  "book.otbm.i_am_also_sure_that": {
+    "src_hash": "b19dabe6df8b8b5e5460041d7bb0d70d",
+    "text": "Jestem również pewien, że zadzwonił 'thing'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:25.378013Z"
+  },
+  "book.otbm.i_am_glad_to_be": {
+    "src_hash": "ac9125ae0b6471e06f3ff3994aabe853",
+    "text": "Cieszę się, że już jestem członkiem, wątpię, czy sam zdałbym ten test.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:25.378614Z"
+  },
+  "book.otbm.i_am_sure_the_secret": {
+    "src_hash": "a3cf54bdc96d927cc1dc286c04f4a7a3",
+    "text": "Jestem pewien, że tajemnica została ukryta przez",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:25.378968Z"
+  },
+  "book.otbm.i_cant_figure_out_how": {
+    "src_hash": "7f2185c3c105e1286358bb84da779a29",
+    "text": "Nie mam pojęcia, jak reanimować",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:10:25.379291Z"
   }
 }

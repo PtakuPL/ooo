@@ -41870,5 +41870,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:39:32.019523Z"
+  },
+  "data.otservbr.global.npc.gorn.L112.61": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.401323Z"
+  },
+  "data.otservbr.global.npc.sarina.L89.76": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.482890Z"
+  },
+  "data.otservbr.global.npc.zora.L85.1331": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Desigur, răsfoiește-mi produsele. {Footballs} trebuie achiziționate separat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.525337Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.crate.L11.2083": {
+    "src_hash": "51cdbfcf0982098343b3f288729deb7a",
+    "text": "Ai luat deja lupa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.537731Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.crate.L13.2084": {
+    "src_hash": "88f20ad8c4870defabe09cab6938014d",
+    "text": "Această ladă îi aparține lui Angelo. Ar trebui să vorbești cu el înainte de a scoate ceva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.538345Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.crate.L7.2082": {
+    "src_hash": "467aa744353e838cc4e516dc77dd702f",
+    "text": "Perfect! Ai luat o lupă minunată din lada asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.538797Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L11.2104": {
+    "src_hash": "9c6cec06690cf28996e1db3502afbeda",
+    "text": "Întreabă-l: ți-a prins pisica limba?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.539367Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L7.2100": {
+    "src_hash": "e3aa86a595bdf4e08545ee7ba7590906",
+    "text": "Stimate curator, acest muzeu recent deschis este un loc foarte frumos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.539817Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L8.2101": {
+    "src_hash": "15e799af52db094b34330c9e03390635",
+    "text": "Dar stai! Dar spațiul gol din fața ta? Ce păcat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.540282Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L9.2102": {
+    "src_hash": "649518a7af31b7d8b75793e1143eafd4",
+    "text": "Se pare că cineva a eliminat una dintre pozele frumoase. Dar haide! Ai bani și avem nevoie de ei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.540883Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L12.2252": {
+    "src_hash": "f621231a669f88989005df0122b9bc35",
+    "text": "Cu un efort considerabil reușești să dobori din stânci o bijuterie brută, în mare parte nevătămată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.551073Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L9.2251": {
+    "src_hash": "3316c338a81d556dfda28459921d5538",
+    "text": "Nu ai adunat nimic mai mult decât niște bucăți mici de bijuterie roșie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.552187Z"
+  },
+  "data.otservbr.global.scripts.quests.demon.oak.actions.demon.oak.L82.1988": {
+    "src_hash": "bd2e08e742d9871c8528df93eb3a7ade",
+    "text": "Mai întâi trebuie să omori toți monștrii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.552682Z"
+  },
+  "data.otservbr.global.scripts.quests.demon.oak.actions.demon.oak.L88.1989": {
+    "src_hash": "e369118cf13afd694431ce0e9505d2dd",
+    "text": "Spune-i lui Oldrak despre marea ta victorie împotriva stejarului demon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.553275Z"
+  },
+  "data.otservbr.global.scripts.quests.demon.oak.actions.demon.oak.chest.L12.1986": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "E gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.553535Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.actions.custodian.door.L5.1827": {
+    "src_hash": "45b73f05201500fc8fe764433f99d201",
+    "text": "Puterea lui Gaffir nu te va lăsa să treci de această ușă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.564266Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.deeper.banuta.shortcut.L10.1922": {
+    "src_hash": "4d7b566523c4163688d941d1e47fb138",
+    "text": "Ai descoperit un tunel secret.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.590431Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.deeper.banuta.shortcut.L13.1923": {
+    "src_hash": "64e242b84b7218e0be6150d252d702ba",
+    "text": "Ai descoperit deja acest secret.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.590801Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.steal.from.thieves.L9.1924": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "E gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.591576Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.dipthrah.signs.doors.L28.1887": {
+    "src_hash": "50900607ffbcc26dfb57adb6a9aeacbc",
+    "text": "ID de acțiune nevalid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.596892Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.dipthrah.signs.doors.L37.1888": {
+    "src_hash": "f74ffed3ec45d27808bf4b9daafbc2c8",
+    "text": "Ați finalizat deja acest pas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.597302Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.doorInvisible.L14.1844": {
+    "src_hash": "b2cb04d517ae393db829039e7816a595",
+    "text": "Ușa se deschide.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.607432Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L57.1850": {
+    "src_hash": "5a575bde3954748011659b53b9682d15",
+    "text": "Ia blestemul visului asupra ta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.608253Z"
+  },
+  "game.loot.container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Atenţie! Containerul atribuit categoriei {0} este plin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.639769Z"
+  },
+  "game.loot.corpses_many": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Ai jefuit {0} cadavre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.640985Z"
+  },
+  "game.loot.too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Atenţie! Prada pe care încercați să o ridicați este prea grea pentru a fi purtată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:52.643251Z"
+  },
+  "data.otservbr.global.npc.billy.L144.1384": {
+    "src_hash": "1972a0eaf694e91957684eba0ce0acdc",
+    "text": "CAT DE GROBOS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:02.982829Z"
+  },
+  "data.otservbr.global.npc.billy.L147.1387": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Bună |PLAYERNAME|. Sunt fermier și bucătar, poate te pot interesa într-un {trade} cu mâncare? De asemenea, puteți să-mi cereți {hints} general despre joc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:02.983627Z"
+  },
+  "data.otservbr.global.npc.black.bert.L196.40": {
+    "src_hash": "56cb7c9fe5ae41c0e637708d1c5c41fa",
+    "text": "Bună ziua, |PLAYERNAME|! Arăți de parcă ești dornic să {trade}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:02.984059Z"
+  },
+  "data.otservbr.global.npc.black.bert.L197.41": {
+    "src_hash": "962f99ce919b3a8eab1fbe21989935c2",
+    "text": "Pa, |PLAYERNAME|",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:02.984292Z"
+  },
+  "data.otservbr.global.npc.blind.orc.L102.1517": {
+    "src_hash": "28271e708d06453b7febf147a1c473ef",
+    "text": "Futchi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:02.984509Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L72.427": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Muritor! Dacă ești pe un {quest} pentru a-i sluji pe zeul sângelui, stăpânul meu - fii salutat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:06.855326Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Muritor! Dacă ești pe un {quest} pentru a-i sluji pe zeul sângelui, stăpânul meu - fii salutat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:06.855823Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L168.1459": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "La revedere. Sunt sigur că vei reveni pentru mai multe. Toate o fac.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:06.856267Z"
+  },
+  "data.otservbr.global.npc.bo.ques.L169.1460": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "La revedere. Sunt sigur că vei reveni pentru mai multe. Toate o fac.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:06.856674Z"
+  },
+  "data.otservbr.global.npc.bolfona.L91.688": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:48:06.856909Z"
   }
 }

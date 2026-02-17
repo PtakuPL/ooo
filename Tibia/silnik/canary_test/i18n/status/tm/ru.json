@@ -30414,5 +30414,165 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T04:47:24.878877Z"
+  },
+  "spell.lost_thrower_skill_reducer.name": {
+    "src_hash": "b2a23e9e543a45fe2efc386768f3aec9",
+    "text": "потерянный редуктор навыка метателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:00.603107Z"
+  },
+  "spell.diabolic_imp_skill_reducer.name": {
+    "src_hash": "012705c8713981bfe32096c65307542f",
+    "text": "Редуктор навыков дьявольского беса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:00.603442Z"
+  },
+  "spell.mantosaurus_ring.name": {
+    "src_hash": "bcc22c61835841ab70525f4cc14628d0",
+    "text": "кольцо мантозавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:00.603694Z"
+  },
+  "spell.hellgorak_skill_reducer.name": {
+    "src_hash": "6e3b641e2c90757a1e0246295e67ec27",
+    "text": "редуктор навыков хеллгорака",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:00.603975Z"
+  },
+  "spell.shock_head_skill_reducer_1.name": {
+    "src_hash": "0a7f8f8996d58b43aa43c915ac4cacd6",
+    "text": "Редуктор навыков ударной головы 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:03.853225Z"
+  },
+  "spell.bane_of_light_paralyze.name": {
+    "src_hash": "fb03073ef8235d1ed2617048d376206e",
+    "text": "проклятие светового паралича",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:03.853527Z"
+  },
+  "spell.ghazbaran_skill_reducer_1.name": {
+    "src_hash": "fbdc5b81beb4fb8e597418d7e1b21ed1",
+    "text": "Редуктор навыка Газбарана 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:03.853828Z"
+  },
+  "spell.elder_wyrm_electrify.name": {
+    "src_hash": "e7e62046901105389cd4f3b3fdcf11db",
+    "text": "старший змей электрифицировать",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:03.854165Z"
+  },
+  "spell.gnorre_chyllson_paralyze.name": {
+    "src_hash": "4ea0806f6752bbfe8e3bc6caec634014",
+    "text": "Гнорре Чилсон паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:03.854449Z"
+  },
+  "spell.azerus_skill_reducer_3.name": {
+    "src_hash": "b38b1973057027ce0ac17b6655bf5684",
+    "text": "Редуктор навыков Azerus 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:06.994867Z"
+  },
+  "spell.megasylvan_yselda_mleech.name": {
+    "src_hash": "3c0cdc82c29c8d1242c70620559ca797",
+    "text": "пиявка маныMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:06.995270Z"
+  },
+  "spell.shlorg_paralyze.name": {
+    "src_hash": "cd78e060f9533cd27a1289f4656625b9",
+    "text": "Шлорг паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:06.995534Z"
+  },
+  "spell.quara_raider_shoot.name": {
+    "src_hash": "79e5fcd67b8270947c506f4085c8c023",
+    "text": "карарейдерстрельба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:06.995891Z"
+  },
+  "spell.pythius_the_rotten_paralyze.name": {
+    "src_hash": "cbe75c7d24a90e44a72390a8d4374841",
+    "text": "Пифий гнилой паралич",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:09.617619Z"
+  },
+  "spell.furyosa_heal.name": {
+    "src_hash": "bc9ff064a5e87377e9aec15b013e6bc4",
+    "text": "Фурьоса исцеляется",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:09.617956Z"
+  },
+  "spell.undead_cavebear_curse.name": {
+    "src_hash": "51734a280f848e861846316bf136d8ac",
+    "text": "проклятие пещерного медведя нежити",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:09.618442Z"
+  },
+  "spell.deepling_spellsinger_skill_reducer.name": {
+    "src_hash": "4a8099f47747862e8792165ce20aac45",
+    "text": "Редуктор навыков Deepling заклинателя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:09.618981Z"
+  },
+  "spell.zugurosh_soulfire.name": {
+    "src_hash": "5d00482e715b3cbf5ae525f6194311eb",
+    "text": "Зугурош огонь души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:09.619259Z"
+  },
+  "spell.undead_dragon_curse.name": {
+    "src_hash": "b92337fee45029436118eff3ab797275",
+    "text": "проклятие дракона нежити",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:11.982777Z"
+  },
+  "spell.the_imperor_summon.name": {
+    "src_hash": "e95f65c7bfa433438fb65d93d67fed04",
+    "text": "вызов императора",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:49:11.983047Z"
   }
 }

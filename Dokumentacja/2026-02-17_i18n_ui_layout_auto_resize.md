@@ -266,9 +266,245 @@ W tej samej sesji naprawiono renderowanie fontów TTF:
 
 ---
 
-## 9. Dalsze kroki
+## 9. Wynik badania — Kaskadowe auto-resize (szczegółowy)
 
-1. **Badanie**: Jak zaimplementować kaskadowe auto-resize (podejście A, B lub C)
-2. **Implementacja**: Wybrany podejście + testy wizualne
-3. **Push**: Font rendering fixes + UI layout fixes → GitHub Actions build
-4. **Testy**: Sprawdzenie wyglądu w en, ru, pl, zh
+### 9.1 Architektura zmian rozmiaru w OTClient
+
+Łańcuch zdarzeń gdy widget zmienia rozmiar:
+```
+setSize()/setWidth()/setHeight()
+  → resize(w, h)
+    → setRect(Rect)
+      → if(m_minSize/m_maxSize) clamp()          [1] Respektuje min/max
+      → if(clampedRect == m_rect) return false    [2] Brak zmian = brak propagacji
+      → updateLayout()                           [3] Aktualizuje dzieci
+        → m_layout->update()                     [3a] Layout przelicza pozycje/rozmiary dzieci
+        → parent->getLayout()->updateLater()     [3b] Rodzic przelicza pozycje
+      → deferred: onGeometryChange()             [4] Callback — jeśli text-wrap, updateText()
+      → deferred: callLuaField("onResize")       [5] Lua callback
+      → deferred: callLuaField("onWidthChange")  [6] Lua callback specyficzny
+      → deferred: callLuaField("onHeightChange") [7] Lua callback specyficzny
+```
+
+### 9.2 Kluczowe obserwacje z badania
+
+1. **`fit-children` ISTNIEJE** ale TYLKO w `UIVerticalLayout` i `UIHorizontalLayout` (box layout):
+   - `uiverticallayout.cpp:96`: `if(m_fitChildren) parentWidget->setHeight(preferredHeight)`
+   - `uihorizontallayout.cpp:94`: `if(m_fitChildren) parentWidget->setWidth(preferredWidth)`
+   - Resize rodzica jest **deferred** przez `g_dispatcher.deferEvent()` — bezpiecznie
+
+2. **Anchor layout NIE MA `fit-children`** — `uianchorlayout.cpp` tylko przelicza pozycje/rozmiary
+   dzieci na podstawie anchors, ale NIGDY nie zmienia rodzica
+
+3. **Panel ustawień używa wyłącznie anchor layout** — `anchors.top: prev.bottom` zamiast box layout
+
+4. **`text-auto-resize: true` działa prawidłowo** — testowane w `Title` label w `OptionsCategory`
+   - Label `Title` rośnie do rozmiaru tekstu
+   - ALE: jego rodzic `Button` (size: 115 20) NIE rośnie za nim
+   - ANI: dziadek `OptionsCategory` (size: 115 22)
+
+5. **9-patch image (image-border) automatycznie się rozciąga** do rozmiaru widgetu:
+   - `Button` ma `image-source: /images/ui/button-grey-up` + `image-border: 5`
+   - Jeśli Button urośnie → tło automatycznie się rozciągnie
+   - Jeśli OptionsCategory urośnie → ramka `1pixel-down-frame` się rozciągnie
+   - Jeśli MainWindow urośnie → tło `window_new` się rozciągnie
+
+6. **`min-width` / `max-width` respektowane w `setRect()`** — clamping działa poprawnie
+
+7. **Lua API kompletne** — `getTextSize()`, `setWidth()`, `setHeight()`, `setMinWidth()`,
+   `setMinHeight()`, `getWidth()`, `getHeight()`, `resizeToText()` — wszystko wyeksportowane
+
+### 9.3 Analiza podejść
+
+#### Podejście A: Czyste Lua (BEZ zmian C++) ✅ REKOMENDOWANE
+**Idea**: Po utworzeniu kategorii w `configureCharacterCategories()`, zmierz max szerokość
+tekstu i kaskadowo ustaw rozmiary od dołu do góry.
+
+**Implementacja**:
+```lua
+-- W configureCharacterCategories() po pętli tworzenia widgetów:
+local function adjustSidebarWidth()
+    local maxTextWidth = 0
+    local sidebar = controller.ui.optionsTabBar
+    
+    -- Zmierz max szerokość tekstu w kategoriach i podkategoriach
+    for i = 1, sidebar:getChildCount() do
+        local widget = sidebar:getChildByIndex(i)
+        if widget and widget.Button and widget.Button.Title then
+            local textSize = widget.Button.Title:getTextSize()
+            -- Icon (13px) + marginLeft (10) + tekst + Arrow (7) + marginRight (5) + padding
+            local neededWidth = 10 + 13 + 10 + textSize.width + 5 + 7 + 5
+            maxTextWidth = math.max(maxTextWidth, neededWidth)
+        end
+        -- sprawdź podkategorie
+        if widget and widget.subCategories then
+            for subId, _ in ipairs(widget.subCategories) do
+                local subWidget = widget:getChildById(subId)
+                if subWidget and subWidget.Button and subWidget.Button.Title then
+                    local textSize = subWidget.Button.Title:getTextSize()
+                    local neededWidth = 10 + 13 + 10 + textSize.width + 5 + 7 + 5
+                    maxTextWidth = math.max(maxTextWidth, neededWidth)
+                end
+            end
+        end
+    end
+    
+    -- Minimum 115 (obecny rozmiar)
+    local sidebarWidth = math.max(115, maxTextWidth + 5) -- +5 dla marginesu
+    local sidebarWidthWithBorder = sidebarWidth + 13     -- 128 - 115 = 13 (obecna różnica)
+    
+    -- Ustaw sidebar
+    sidebar:setWidth(sidebarWidthWithBorder)
+    
+    -- Ustaw wszystkie kategorie
+    for i = 1, sidebar:getChildCount() do
+        local widget = sidebar:getChildByIndex(i)
+        if widget then
+            widget:setWidth(sidebarWidth)
+            if widget.Button then
+                widget.Button:setWidth(sidebarWidth)
+            end
+            -- podkategorie
+            -- ... analogicznie
+        end
+    end
+    
+    -- KASKADA: Powiększ okno główne
+    local window = controller.ui
+    local widthDiff = sidebarWidthWithBorder - 128 -- różnica od domyślnego
+    if widthDiff > 0 then
+        local currentWindowWidth = window:getWidth()
+        window:setWidth(currentWindowWidth + widthDiff)
+    end
+end
+```
+
+**Zalety**:
+- Zero zmian C++ — bez ryzyka regresji
+- Łatwe do testowania i iterowania
+- Pełna kontrola nad logiką (co rośnie, co nie)
+- Można dodać `min-width` w OTUI jako fallback
+
+**Wady**:
+- Manualna propagacja (ale to jednorazowe obliczenie, nie per-frame)
+- Trzeba obsłużyć też panele treści (SmallReversedQtPanel)
+
+#### Podejście B: fit-children w anchor layout (C++)
+**Idea**: Dodać `fit-children` do `UIAnchorLayout::internalUpdate()`.
+
+**Problem**: Anchor layout nie ma pojęcia "preferowanego rozmiaru" — widgety mogą być anchored
+do siebie nawzajem w dowolnych konfiguracjach (nie tylko liniowo jak w box layout).
+Obliczenie bounding box jest trywialne, ale **kaskadowe** powiększanie może prowadzić do
+nieskończonej pętli (dziecko rośnie → rodzic rośnie → dziecko anchored do rodzica rośnie → ...).
+
+**Ocena**: Ryzykowne, trudne do debugowania, wymaga guard-ów na recursion.
+
+#### Podejście C: Hybrydowe — C++ `PropAutoFitParent` + Lua
+**Idea**: Nowa properta C++ `auto-fit-parent: true` — gdy dziecko zmienia rozmiar,
+informuje rodzica że powinien urosnąć. Rodzic oblicza bounding box dzieci.
+
+**Ocena**: Eleganckie ale wymaga dużo pracy w C++ i testów regresji.
+
+### 9.4 Rekomendacja: Podejście A (czyste Lua)
+
+**Dlaczego**:
+1. Panel ustawień otwiera się RAZ — nie jest to real-time UI
+2. Obliczenie rozmiarów to jednorazowa operacja w `configureCharacterCategories()`
+3. Lua API jest kompletne — mamy `getTextSize()`, `setWidth()`, `setHeight()`
+4. 9-patch tła automatycznie się rozciągają — graficznie wszystko będzie spójne
+5. Brak zmian C++ = brak ryzyka regresji build/rendering
+6. Łatwe do rozszerzenia na inne panele
+
+### 9.5 Szczegółowy plan implementacji
+
+#### Faza 1: OTUI — zamiana `size:` na `min-width`/`height` + auto-resize
+
+**`options.otui` — OptionsCategory**:
+```diff
+ OptionsCategory < UIWidget
+-  size: 115 22
++  min-width: 115
++  height: 22
+   image-source: /images/game/actionbar/1pixel-down-frame
+   image-border: 5
+   UIWidget
+     id: Button
+-    size: 115 20
++    anchors.left: parent.left
++    anchors.right: parent.right
++    height: 20
+```
+
+**`10-buttons.otui` — Button/QtButton**:
+```diff
+ Button < UIButton
+   font: noto-12
+-  size: 106 23
++  min-width: 106
++  height: 23
++  text-horizontal-auto-resize: true
+```
+
+**`general.otui` — hotkeysButton**:
+```diff
+   QtButton
+     id: hotkeysButton
+-    size: 120 20
++    min-width: 120
++    height: 20
++    text-horizontal-auto-resize: true
+```
+
+**`options.otui` — OptionCheckBox**:
+```diff
+ OptionCheckBox < QtCheckBox
+   anchors.left: parent.left
+   anchors.right: parent.right
+   anchors.top: parent.top
+   color: #c0c0c0ff
++  text-wrap: true
+```
+
+#### Faza 2: Lua — kaskadowe przeliczanie rozmiarów
+
+W `options.lua` — nowa funkcja `adjustLayoutForTranslations()` wywoływana na końcu
+`configureCharacterCategories()`:
+
+1. Iteruj po wszystkich kategoriach sidebar
+2. Zmierz `getTextSize()` każdego Title
+3. Oblicz `maxNeededWidth` = max(icon + text + arrow + margins)
+4. Jeśli `maxNeededWidth > 115`:
+   - Ustaw `OptionsCategory:setWidth(maxNeededWidth)`
+   - Ustaw `Button:setWidth(maxNeededWidth)`
+   - Ustaw `optionsTabBar:setWidth(maxNeededWidth + 13)`
+   - Ustaw `optionsWindow:setWidth(686 + (maxNeededWidth - 115))`
+
+#### Faza 3: kategorie sidebar — owinięcie w tr()
+
+W `options.lua` zamienić:
+```lua
+-- PRZED:
+text = "Controls"
+-- PO:
+text = tr("category_controls")
+```
+
+I dodać klucze do plików i18n.
+
+#### Faza 4: Panele treści — SmallReversedQtPanel
+
+Dla paneli z checkboxami i sliderami:
+- Checkboxy mają `anchors.left/right` = pełna szer. → wystarczy `text-wrap: true`
+- SmallReversedQtPanel `height: 22` → zmienić na `min-height: 22` + Lua callback
+- OptionScaleScroll: zmniejszyć scrollbar width z 174 na 150
+
+---
+
+## 10. Dalsze kroki
+
+1. **Implementacja Fazy 1**: Zmiany OTUI (min-width, auto-resize, text-wrap)
+2. **Implementacja Fazy 2**: Funkcja Lua `adjustLayoutForTranslations()`
+3. **Implementacja Fazy 3**: tr() dla kategorii sidebar
+4. **Implementacja Fazy 4**: SmallReversedQtPanel elastyczność
+5. **Push**: Font rendering fixes + UI layout fixes → GitHub Actions build
+6. **Testy**: Sprawdzenie wyglądu w en, ru, pl, zh

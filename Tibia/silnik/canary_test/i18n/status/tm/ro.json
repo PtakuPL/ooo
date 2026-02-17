@@ -50854,5 +50854,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:20:50.603175Z"
+  },
+  "npc.armenius.say_4": {
+    "src_hash": "bdccc0de202202756f4ca75feca73d22",
+    "text": "Oh, nervii. Sod off.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:04.029046Z"
+  },
+  "npc.captain_dreadnought.stdmod_21": {
+    "src_hash": "a4df7f114b82076efc150192db490d15",
+    "text": ".. orașe[defaultTown].nume .. \\z\n\t .. orașe[defaultTown].nume .. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:05.536205Z"
+  },
+  "npc.elyen_ravenlock.voice_2": {
+    "src_hash": "9553d10f17158ece7c9c4b2e8cb4a40b",
+    "text": "<cantari> Re Ha, Omrah, Tan Ra...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:07.867560Z"
+  },
+  "npc.gregor.say_14": {
+    "src_hash": "39e5681b4e41e7e1e3f7d0112e4d06e6",
+    "text": "Ai reușit să iei un balon cu transpirație pură de războinic?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.545245Z"
+  },
+  "npc.gregor.say_5": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Ați înțeles tot ce v-am spus și sunteți dispus să vă ocupați de această sarcină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.549442Z"
+  },
+  "npc.gregor.stdmod_4": {
+    "src_hash": "2a717547889752d87b24c8a11762f691",
+    "text": "Vă pot învăța {healing spells} și {support spells}. Ce fel de vrajă vrei să înveți? De asemenea, poți să-mi spui pentru ce nivel ai dori să înveți o vrajă, dacă preferi asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.555918Z"
+  },
+  "npc.guard_saros.say_1": {
+    "src_hash": "3f7b43fe0bbcd31c7fb205da8ca06ae5",
+    "text": "N-aș fi ghicit niciodată asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.577500Z"
+  },
+  "npc.guard_saros.say_10": {
+    "src_hash": "adfc42e78ec6c468936637374b7e7462",
+    "text": "Eu sunt Aruda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.577909Z"
+  },
+  "npc.guard_saros.say_11": {
+    "src_hash": "cd6d075b3304e4854a56e1b70bfa754d",
+    "text": "Sunt puțin trist, că parcă m-ai uitat, frumosule. Eu sunt Aruda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.579505Z"
+  },
+  "npc.guard_saros.say_12": {
+    "src_hash": "f944da15fd74a305595b58436a3aa452",
+    "text": "Da, asta sunt eu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.580043Z"
+  },
+  "npc.guard_saros.say_13": {
+    "src_hash": "72d58e2444b346e31b612c0ff3b2e843",
+    "text": "Oh, îmi place cum îmi spui numele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.580741Z"
+  },
+  "npc.guard_saros.say_14": {
+    "src_hash": "7e26548a0157f21bbfd51bced93d7b0a",
+    "text": "Te rog, nu fi atât de nepoliticos să cauți timpul dacă vorbești cu mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.581547Z"
+  },
+  "npc.guard_saros.say_15": {
+    "src_hash": "ce2a8e0f042e15c5224e7e5bb8635a5e",
+    "text": "Îmi pare profund rău, nu te pot ajuta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.582310Z"
+  },
+  "npc.guard_saros.say_16": {
+    "src_hash": "baf6c40c356c8e199ef3842e6bda876d",
+    "text": "UH! Ce subiect terifiant. Vă rog să vorbim despre ceva mai plăcut, sunt o femeie slabă și mică până la urmă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.583743Z"
+  },
+  "npc.guard_saros.say_17": {
+    "src_hash": "6357c5b21bcf84e0126ea326b1bbc0e5",
+    "text": "Ce iti da impresia, sunt genul de femei pe care le gasesti in canalizare?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.584420Z"
+  },
+  "npc.guard_saros.say_18": {
+    "src_hash": "f2b6fcf1a923d172848d15e25788785e",
+    "text": "Ar trebui să întrebi despre asta într-unul dintre temple.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.585164Z"
+  },
+  "npc.guard_saros.say_19": {
+    "src_hash": "6dfbd61897f76d3d2f8119a2d8fbaf0d",
+    "text": "Regele, care locuiește în acest castel fascinant? Cred că arată cam drăguț în hainele lui luxoase, nu-i așa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.586198Z"
+  },
+  "npc.guard_saros.say_2": {
+    "src_hash": "e8855bf651d54224d8ca90cf4d839a8d",
+    "text": "Oh, scuze, am fost distras, ce ai spus?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.586855Z"
+  },
+  "npc.guard_saros.say_20": {
+    "src_hash": "3ec203035c71529ed15fad89b76c7338",
+    "text": "El este atat de puternic! Ce mușchi! Ce trup! I-ai cerut o întâlnire?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.587984Z"
+  },
+  "npc.guard_saros.say_21": {
+    "src_hash": "13bb3eda933a72b838d0cec3e3c0e4bd",
+    "text": "El este atat de puternic! Ce mușchi! Ce trup! Pe de altă parte, în comparație cu tine, arată destul de slab.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.588920Z"
+  },
+  "npc.guard_saros.say_22": {
+    "src_hash": "e4fd09de95b21f0902d6ab37de4202c7",
+    "text": "Este puțin simplu la minte, dar întotdeauna drăguț și bine îmbrăcat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.589660Z"
+  },
+  "npc.guard_saros.say_23": {
+    "src_hash": "2eae52b450c7ce2aec2db363823a61b1",
+    "text": "Ar trebui să vândă cu adevărat niște rochii elegante sau ceva de genul ăsta. Noi, tibienii, nu primim niciodată îmbrăcăminte de ultimă modă. E o rușine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.590965Z"
+  },
+  "npc.guard_saros.say_24": {
+    "src_hash": "b8ceff3fa76a6666808155186e7d2c33",
+    "text": "Nu înțeleg acesti călugări singuratici. Îmi place prea mult compania ca să devin una. Hehehe!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.591940Z"
+  },
+  "npc.guard_saros.say_25": {
+    "src_hash": "79d7ab6f80a56151a807c17f36544c6e",
+    "text": "Oh, nu e amuzant? L-am putut asculta toată ziua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.592970Z"
+  },
+  "npc.guard_saros.say_26": {
+    "src_hash": "b14fc6aca791f3658ef93ca0ff5bb0ae",
+    "text": "Din câte știu eu, el lucrează la castel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.593598Z"
+  },
+  "npc.guard_saros.say_27": {
+    "src_hash": "690f00056b640c00e2818360384b810b",
+    "text": "Sunt puțin timid și nu aud multe zvonuri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.594383Z"
+  },
+  "npc.guard_saros.say_28": {
+    "src_hash": "32ac49ccd295b9fb1a0396ddaf2d667c",
+    "text": "O, dracule, nu mai vorbi așa! <blush>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.595106Z"
+  },
+  "npc.guard_saros.say_29": {
+    "src_hash": "5d842dccbc89f1351e2132f062ad0c5c",
+    "text": "Știu puțin despre arme. Poți să-mi spui ceva despre ei, te rog?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.595877Z"
+  },
+  "npc.guard_saros.say_3": {
+    "src_hash": "5ce35c8cf4d3c2ca0b4a37eec1ff8ece",
+    "text": "Oh, îmi amintesc că am ceva de lucru, îmi pare rău. Pa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.596945Z"
+  },
+  "npc.guard_saros.say_30": {
+    "src_hash": "3f4db55f5ee0b4b7103eb4f8da8ec9a8",
+    "text": "Eu cred că dragostea este mai puternică decât magia, nu ești de acord?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.597738Z"
+  },
+  "npc.guard_saros.say_31": {
+    "src_hash": "d4ec7416311cd9d388f063fc28775285",
+    "text": "Oh, scuze, trebuie să mă grăbesc, pa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.598399Z"
+  },
+  "npc.guard_saros.say_32": {
+    "src_hash": "f7a73bc7c8ab56bc5a5e0561d31db47e",
+    "text": "Mi-ar plăcea să vizitez plaja mai des, dar cred că este prea periculos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.599193Z"
+  },
+  "npc.guard_saros.say_33": {
+    "src_hash": "3ff43f1c61d1454ba47279e08f9a6660",
+    "text": "Iubesc acest castel! E atât de frumos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.600440Z"
+  },
+  "npc.guard_saros.say_34": {
+    "src_hash": "90d740dbc4575e8efea50a4fbaa93475",
+    "text": "Vrăjitorii puternici mă sperie puțin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.601940Z"
+  },
+  "npc.guard_saros.say_35": {
+    "src_hash": "90c18cf2bf2d70b52d9fb6a696d96357",
+    "text": "Eu personal cred că este nepotrivit ca o femeie să devină războinică, ce părere ai despre asta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.603664Z"
+  },
+  "npc.guard_saros.say_36": {
+    "src_hash": "e9353a24726ceaf82d85af522a58ec2c",
+    "text": "Druizii vizitează rar un oraș, ce știi despre druizi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.605246Z"
+  },
+  "npc.guard_saros.say_37": {
+    "src_hash": "03fd1f83543ea4d262c0a195342f7cdf",
+    "text": "Îmi plac luptătorii curajoși ca el.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.606398Z"
+  },
+  "npc.guard_saros.say_38": {
+    "src_hash": "3e74bcc1d4c04e1c7fc8c7d48e608993",
+    "text": "Oh, el este atât de drăguț!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.607448Z"
+  },
+  "npc.guard_saros.say_39": {
+    "src_hash": "db3e42dfdb03d826b057628554aa81ab",
+    "text": "Îmi plac câinii, cel puțin cei mici. Îți plac și ție câinii?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.609023Z"
+  },
+  "npc.guard_saros.say_4": {
+    "src_hash": "a460db9bfdc187f55d9e080c794a0aae",
+    "text": "Fă-ți puțin timp să vorbești cu mine!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.610215Z"
+  },
+  "npc.guard_saros.say_40": {
+    "src_hash": "97cb80c657eac5f32ecd495b547a5952",
+    "text": "Oh, sunt doar o fată și nu știu nimic despre săbiile magice și astfel de lucruri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.611719Z"
+  },
+  "npc.guard_saros.say_41": {
+    "src_hash": "fdad28196dd0ec460be845f64c7ea38a",
+    "text": "Eu... nu cunosc pe cineva numit așa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.612916Z"
+  },
+  "npc.guard_saros.say_42": {
+    "src_hash": "226652bcd32f29296420b0750be12a64",
+    "text": "Yenny? Nu o cunosc pe Yenny și nici nu am folosit vreodată acest nume! M-ai confundat cu altcineva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.614640Z"
+  },
+  "npc.guard_saros.say_5": {
+    "src_hash": "7bd09329cdd980a5a94aee69e5cf6850",
+    "text": "Ei bine... l-am cunoscut de putin timp.. dar asta nu a fost nimic grav.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:34:09.616137Z"
   }
 }

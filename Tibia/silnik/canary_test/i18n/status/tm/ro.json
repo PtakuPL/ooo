@@ -57742,5 +57742,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T09:26:00.631830Z"
+  },
+  "npc.isimov.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.493786Z"
+  },
+  "npc.isimov.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.494318Z"
+  },
+  "npc.isimov.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Da, am fost informat ce să fac. Ești pregătit să primești rândul meu de rugăciune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.495295Z"
+  },
+  "npc.isimov.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Ai primit deja rândul meu de rugăciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.495946Z"
+  },
+  "npc.isimov.stdmod_17": {
+    "src_hash": "75fb83802fd262cbfaeba21f5424f199",
+    "text": "Un ţăruş binecuvântat? E o cerere ciudată. Poate că Quentin știe mai multe, până la urmă este unul dintre cei mai bătrâni călugări.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.496643Z"
+  },
+  "npc.isimov.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.497089Z"
+  },
+  "npc.isimov.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.497950Z"
+  },
+  "npc.isimov.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.498459Z"
+  },
+  "npc.isimov.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.499575Z"
+  },
+  "npc.isimov.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.500378Z"
+  },
+  "npc.isimov.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.500959Z"
+  },
+  "npc.isimov.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.501658Z"
+  },
+  "npc.isimov.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.502525Z"
+  },
+  "npc.isimov.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.503267Z"
+  },
+  "npc.isimov.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.504036Z"
+  },
+  "npc.isimov.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.504682Z"
+  },
+  "npc.isimov.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.505449Z"
+  },
+  "npc.isimov.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.505959Z"
+  },
+  "npc.isimov.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.506668Z"
+  },
+  "npc.isimov.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Aceasta este o binecuvântare specială pe care ți-o pot acorda odată ce ai obținut cel puțin una dintre celelalte binecuvântări și care funcționează puțin diferit. ... \\z\n\tFuncționează doar atunci când ești ucis de alți aventurieri, ceea ce înseamnă că cel puțin jumătate din daunele care au dus la moartea ta au fost cauzate de alții, nu de monștri sau de mediu. ... \\z\n\t{twist of fate} nu va reduce pedeapsa cu moartea la fel ca celelalte binecuvântări, ci, în schimb, vă va împiedica să vă pierdeți celelalte binecuvântări, precum și amuleta pierderii, dacă purtați una. Costa la fel ca si celelalte binecuvantari. ... \\z\n\tȚi-ar plăcea să primești acea protecție pentru un sacrificiu de |PVPBLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.509040Z"
+  },
+  "npc.isimov.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vrei să înlocuiești gratis piatra de aventurier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.509615Z"
+  },
+  "npc.isimov.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.510063Z"
+  },
+  "npc.isimov.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vrei să înlocuiești piatra de aventurier cu 30 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.511387Z"
+  },
+  "npc.isimov.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.511762Z"
+  },
+  "npc.isimov.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.512157Z"
+  },
+  "npc.iyad.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.518185Z"
+  },
+  "npc.iyad.stdmod_3": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "N-am auzit niciodată de un loc ca acesta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.519323Z"
+  },
+  "npc.iyad.stdmod_4": {
+    "src_hash": "7e7182a67795f240a79194b4d6fb5c54",
+    "text": "Cauți o călătorie până la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.519743Z"
+  },
+  "npc.iyad.stdmod_5": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.520042Z"
+  },
+  "npc.iyad.stdmod_6": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Nu trebuie să ratezi experiența.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.520450Z"
+  },
+  "npc.jack_drone.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.523355Z"
+  },
+  "npc.jack_drone.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.524486Z"
+  },
+  "npc.jack_fate.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.525738Z"
+  },
+  "npc.jack_fate.stdmod_2": {
+    "src_hash": "5ea0ed4d1fcd3844c445b6cfd58d85d9",
+    "text": "Îmi pare rău, dar nu navighez acolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.527004Z"
+  },
+  "npc.jack_fate.stdmod_3": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "N-am auzit niciodată de un loc ca acesta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.527447Z"
+  },
+  "npc.jack_fate.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.527887Z"
+  },
+  "npc.jack_fate.stdmod_7": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.528679Z"
+  },
+  "npc.jack_fate.stdmod_8": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.529155Z"
+  },
+  "npc.jack_fate_goroma.say_6": {
+    "src_hash": "bad90511f3d6237a7375049264fd8ed9",
+    "text": "Nu ai destul...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.531082Z"
+  },
+  "npc.jacob.multi_1": {
+    "src_hash": "f05fd45d1782095b5c0d200b79f0545a",
+    "text": "Un loc de sacrificiu? La naiba, sună ca un cult ciudat sau așa ceva. Doar grozav. Și această structură veche despre care ai vorbit, care nu face parte din canalizare? Ar fi bine să-l vezi pe istoricul local despre asta, omule. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.536303Z"
+  },
+  "npc.jacob.multi_2": {
+    "src_hash": "594652af048fe3e07837bac6868362c1",
+    "text": "El poate înțelege mai mult ceea ce ai găsit acolo. Numele lui este Barazbaz. Ar trebui să fie în clădirea magistratului.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:35:30.536986Z"
   }
 }

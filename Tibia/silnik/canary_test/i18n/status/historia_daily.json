@@ -95,103 +95,103 @@
   },
   {
     "date": "2026-02-17",
-    "hours_covered": 10,
+    "hours_covered": 11,
     "threshold": 10,
     "is_final": false,
     "ts_first": "2026-02-17T00:17:21Z",
-    "ts_last": "2026-02-17T09:23:08Z",
-    "translated": 33178,
-    "guard_fail": 27080,
-    "suspicious_high": 64342,
-    "identical_to_en": 4183,
+    "ts_last": "2026-02-17T10:23:10Z",
+    "translated": 36016,
+    "guard_fail": 31166,
+    "suspicious_high": 71586,
+    "identical_to_en": 4556,
     "repair_start": 38661,
-    "repair_end": 38167,
-    "cycles": 377,
+    "repair_end": 38031,
+    "cycles": 413,
     "coverage_start": 10.26,
-    "coverage_end": 13.66,
-    "guard_fail_pct": 44.94,
-    "throughput_per_h": 3317.8,
+    "coverage_end": 13.71,
+    "guard_fail_pct": 46.39,
+    "throughput_per_h": 3274.2,
     "per_lang": {
       "it": {
-        "t": 7027,
-        "gf": 1483,
-        "cov": 48.55
+        "t": 7653,
+        "gf": 1647,
+        "cov": 49.29
       },
       "ru": {
-        "t": 6813,
-        "gf": 1441,
-        "cov": 50.04
+        "t": 7419,
+        "gf": 1560,
+        "cov": 50.14
       },
       "ro": {
-        "t": 6080,
-        "gf": 2526,
-        "cov": 39.89
+        "t": 6566,
+        "gf": 2843,
+        "cov": 40.52
       },
       "pl": {
-        "t": 4764,
-        "gf": 17978,
-        "cov": 87.26
+        "t": 5124,
+        "gf": 21070,
+        "cov": 87.34
       },
       "es": {
-        "t": 3292,
-        "gf": 2683,
-        "cov": 84.26
+        "t": 3521,
+        "gf": 3073,
+        "cov": 84.25
       },
       "sv": {
-        "t": 2632,
-        "gf": 567,
-        "cov": 27.01
+        "t": 2913,
+        "gf": 571,
+        "cov": 27.35
       },
       "sr": {
-        "t": 2570,
+        "t": 2820,
         "gf": 402,
-        "cov": 44.58
+        "cov": 44.98
       }
     },
     "per_cat": {
       "npc.json": {
-        "t": 4330,
-        "gf": 4905
+        "t": 4880,
+        "gf": 6244
       },
       "monsters.json": {
-        "t": 3272,
-        "gf": 1145
+        "t": 3690,
+        "gf": 1243
       },
       "items.json": {
-        "t": 3190,
-        "gf": 11052
+        "t": 3622,
+        "gf": 12710
       },
       "server.json": {
-        "t": 2749,
-        "gf": 900
+        "t": 3001,
+        "gf": 967
       },
       "scripts.json": {
-        "t": 2415,
-        "gf": 1812
+        "t": 2579,
+        "gf": 1936
       },
       "html.json": {
-        "t": 2177,
-        "gf": 306
+        "t": 2384,
+        "gf": 354
       },
       "raids.json": {
         "t": 1870,
         "gf": 122
       },
       "spells.json": {
-        "t": 1770,
-        "gf": 1030
+        "t": 1855,
+        "gf": 1295
       },
       "cpp.json": {
-        "t": 1460,
-        "gf": 349
+        "t": 1591,
+        "gf": 398
       },
       "otclient_modules.json": {
-        "t": 1350,
-        "gf": 448
+        "t": 1496,
+        "gf": 524
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1474
+      "AUTO_TRANSLATE": 1612
     },
     "migration_completed": 15,
     "migration_total": 15

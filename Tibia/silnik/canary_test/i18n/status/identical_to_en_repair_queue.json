@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T01:44:55.743599Z",
+  "timestamp": "2026-02-17T01:47:40.242202Z",
   "priority_langs": [
     "es",
     "pl",
@@ -76,7 +76,7 @@
     "it": 480,
     "nl": 691,
     "pt": 620,
-    "ro": 504,
+    "ro": 503,
     "ru": 114,
     "sk": 663,
     "tr": 542,
@@ -874,7 +874,7 @@
     {
       "lang": "ro",
       "json_file": "quests.json",
-      "identical_to_en": 9,
+      "identical_to_en": 8,
       "domain_priority": 3
     },
     {

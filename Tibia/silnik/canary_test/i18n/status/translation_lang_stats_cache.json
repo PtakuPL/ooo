@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T07:52:38.900565Z",
+  "timestamp": "2026-02-17T07:53:18.189038Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7362,8 +7362,8 @@
         [
           "html.json",
           1,
-          1771310526718015656,
-          106394
+          1771314789370848161,
+          106393
         ],
         [
           "items.json",
@@ -7705,8 +7705,8 @@
         "html.json": {
           "sig": [
             1,
-            1771310526718015656,
-            106394
+            1771314789370848161,
+            106393
           ],
           "row": {
             "total_reference_keys": 1495,
@@ -25371,8 +25371,8 @@
         [
           "html.json",
           1,
-          1771310547298234678,
-          105261
+          1771314782010818281,
+          105260
         ],
         [
           "items.json",
@@ -25714,8 +25714,8 @@
         "html.json": {
           "sig": [
             1,
-            1771310547298234678,
-            105261
+            1771314782010818281,
+            105260
           ],
           "row": {
             "total_reference_keys": 1495,

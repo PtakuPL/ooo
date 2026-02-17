@@ -115198,5 +115198,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:45:35.061726Z"
+  },
+  "html.admin_bar.html.text2": {
+    "src_hash": "095fba6da329550a6653d84a56fc0af0",
+    "text": "Witam, {{ username }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:01.673389Z"
+  },
+  "html.houses.view.html.text2": {
+    "src_hash": "d2026f9e861fbdef826a14bb68b15414",
+    "text": "{{ houseRent }} złoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:01.707118Z"
+  },
+  "html.admin.menus.header.html.text1": {
+    "src_hash": "70bf4a1fe7cd73f1981306daf21f2f7e",
+    "text": "Edytujesz: {{ template }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:01.742528Z"
+  },
+  "html.api.text5": {
+    "src_hash": "5ce5c3ddc0ee887b48f010f182502519",
+    "text": "CKEditor API JavaScript",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:01.789933Z"
   }
 }

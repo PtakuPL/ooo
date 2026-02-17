@@ -150438,5 +150438,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:44:05.836094Z"
+  },
+  "html.monster.html.text1": {
+    "src_hash": "eabb742a801164e56741d824e5e7b0a6",
+    "text": "{{ monster.health }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:09.050360Z"
+  },
+  "html.monster.html.text3": {
+    "src_hash": "00a8e0605e67a39e998495cd532a1152",
+    "text": "{{ monster.armor }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:09.052672Z"
+  },
+  "html.admin_bar.html.text2": {
+    "src_hash": "095fba6da329550a6653d84a56fc0af0",
+    "text": "Hola, {{ username }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:53:09.059795Z"
   }
 }

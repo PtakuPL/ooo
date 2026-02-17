@@ -37574,5 +37574,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:47:37.837076Z"
+  },
+  "npc.boveas.greet_msg_1": {
+    "src_hash": "793223a0b580fc0081c53016a5d1def3",
+    "text": "Привет! Надеюсь, ты не собираешься меня убивать!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:52.499152Z"
+  },
+  "npc.bozo.farewell_msg_1": {
+    "src_hash": "e0c720dccd466a9047c7f84dffbf8cfc",
+    "text": "Помните: шутка в день отпугивает гулей!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:52.499963Z"
+  },
+  "npc.bozo.greet_msg_2": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Привет, привет, привет, маленькая леди |PLAYERNAME|! Что приносит вам {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:52.501109Z"
+  },
+  "npc.bozo.walkaway_msg_1": {
+    "src_hash": "901eba179c016bc753815f362425c4cc",
+    "text": "Привет! У дураков тоже есть чувства.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:52.508831Z"
   }
 }

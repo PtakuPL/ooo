@@ -5049,11 +5049,11 @@
   },
   "npc.sam.say_10": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Non ce l'hai...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:27.190338Z"
+    "updated_at": "2026-02-17T11:52:45.591094Z"
   },
   "npc.sebastian.say_2": {
     "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
@@ -69766,5 +69766,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:47:56.969597Z"
+  },
+  "npc.romir.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.582692Z"
+  },
+  "npc.rowenna.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.587236Z"
+  },
+  "npc.rudolph.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.588214Z"
+  },
+  "npc.sam.say_15": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Allora no.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.591792Z"
+  },
+  "npc.sam.walkaway_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Arrivederci e torna di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.592938Z"
+  },
+  "npc.sarina.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, per favore entra, |PLAYERNAME|. Cosa posso fare per lei? Se hai bisogno di attrezzatura per l'avventura, chiedimi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.602699Z"
+  },
+  "npc.sarina.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vuoi comprare un pallone da calcio per 111 oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.603390Z"
+  },
+  "npc.sarina.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturalmente, basta sfogliare la mia merce. {Footballs} devono essere acquistati separatamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.604904Z"
+  },
+  "npc.scrutinon.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.606836Z"
+  },
+  "npc.sebastian.greet_msg_1": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Saluti, audace avventuriero. Se hai bisogno di un {passage}, fammi sapere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.607442Z"
+  },
+  "npc.sebastian.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.608608Z"
+  },
+  "npc.sebastian.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.609195Z"
+  },
+  "npc.sebastian.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.609576Z"
+  },
+  "npc.sebastian.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Vabbè.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.609920Z"
+  },
+  "npc.sebastian_nargor.greet_msg_1": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Saluti, audace avventuriero. Se hai bisogno di un {passage}, fammi sapere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.610439Z"
+  },
+  "npc.sebastian_nargor.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.611018Z"
+  },
+  "npc.sebastian_nargor.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.611447Z"
+  },
+  "npc.sebastian_nargor.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.611822Z"
+  },
+  "npc.sebastian_nargor.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Vabbè.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.612273Z"
+  },
+  "npc.ser_tybald.greet_msg_1": {
+    "src_hash": "665387f24d7145588216c95700974267",
+    "text": "Benvenuto, bambino. Sei venuto a conoscere {magic}? Allora sei nel posto giusto. Posso insegnarti tante cose utili {spells}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.612874Z"
+  },
+  "npc.ser_tybald.say_1": {
+    "src_hash": "c1e746c2a21e46ca4783b2a87dbcf1b0",
+    "text": "Gli incantesimi sono molto utili in combattimento, non solo per i maghi, anche se ovviamente facciamo affidamento su di essi in particolare per gran parte dei nostri danni. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.613552Z"
+  },
+  "npc.ser_tybald.say_10": {
+    "src_hash": "99f18f8cce9818b6a096eb22c8fcaf02",
+    "text": "Ah, la bellezza del nostro mondo! È vasto e straordinariamente diversificato. Isole strane, città bellissime e mostri feroci che vagano per le terre selvagge. Misteri, avventure, pericoli dietro ogni angolo. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.614451Z"
+  },
+  "npc.ser_tybald.say_11": {
+    "src_hash": "095a07d56a7da82ab7ef9b35a18e4912",
+    "text": "Una volta raggiunto il livello 8, sei pronto per scegliere una vocazione e andare nella terraferma di Tibian.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.615085Z"
+  },
+  "npc.ser_tybald.say_12": {
+    "src_hash": "fabf70ea563b1a2875349fcdabe40dcb",
+    "text": "La scelta della tua vocazione determinerà la tua vita in Tibia e le abilità e le tecniche di combattimento che potresti utilizzare. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.615885Z"
+  },
+  "npc.ser_tybald.say_13": {
+    "src_hash": "e032c3362b6ae215006cc108cf75914f",
+    "text": "Ci sono quattro vocazioni: cavaliere, druido, paladino e stregone. Se vuoi saperne di più su di loro, parla con Oressa nel tempio. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.616595Z"
+  },
+  "npc.ser_tybald.say_14": {
+    "src_hash": "62f69f4dd50b6ca75bdab050de0e2405",
+    "text": "Io stesso insegno incantesimi di prova per entrambe le classi magiche, mentre Tybald nella stanza accanto è specializzato in incantesimi da cavaliere e da paladino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.617423Z"
+  },
+  "npc.ser_tybald.say_15": {
+    "src_hash": "98fcd25fdb4a86e21a73b7fe0b3250c1",
+    "text": "Una ragazza molto intelligente. Preferisce ascoltare i rumori degli animali selvatici anziché quelli degli esseri umani, il che è abbastanza comprensibile se ci si pensa. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.618292Z"
+  },
+  "npc.ser_tybald.say_16": {
+    "src_hash": "32d0433ff54aca30d76d1cb77609ee59",
+    "text": "Tuttavia, è anche una guaritrice molto abile e può darti consigli sulla scelta della tua vocazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.618885Z"
+  },
+  "npc.ser_tybald.say_2": {
+    "src_hash": "e4331875ad781395a4930cffc4d48264",
+    "text": "Esiste un'ampia varietà di ciò che gli incantesimi possono fare, come vedrai man mano che avanzi. I prossimi incantesimi che puoi acquistare dal livello 8 in poi. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.619810Z"
+  },
+  "npc.ser_tybald.say_3": {
+    "src_hash": "0343271d676ac5ae00c2b752c4412720",
+    "text": "Alcuni incantesimi di attacco possono essere diretti contro un singolo bersaglio mentre altri influenzano un'area, avendo un effetto nel tempo o istantaneo. Anche altri incantesimi ti proteggono o possono essere usati per creare rune. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.620620Z"
+  },
+  "npc.ser_tybald.say_4": {
+    "src_hash": "2a3125de5d8b985b0e3b12907f8f99cd",
+    "text": "Ogni vocazione ha i propri incantesimi individuali che nessuna delle altre vocazioni può utilizzare. Puoi imparare gli incantesimi solo presso un addestratore di incantesimi della tua vocazione. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.621462Z"
+  },
+  "npc.ser_tybald.say_5": {
+    "src_hash": "c80c4e13cade065728865e84cd237221",
+    "text": "Gli incantesimi qui su Dawnport sono solo da provare e li dimenticherai una volta scelta la tua vocazione definitiva e partirai per la terraferma. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.622134Z"
+  },
+  "npc.ser_tybald.say_6": {
+    "src_hash": "14e20651657f1919942e2421a64e0d95",
+    "text": "Lì puoi andare da un insegnante di incantesimi in una città per imparare permanentemente un incantesimo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.622754Z"
+  },
+  "npc.ser_tybald.say_7": {
+    "src_hash": "3b6e505e9b1ce080890ebff9d1dd5f5d",
+    "text": "La terraferma offre molte più avventure, pericoli e missioni di questa piccola isola e ha anche insegnanti di incantesimi dove puoi imparare in modo permanente un incantesimo per la tua vocazione. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.623731Z"
+  },
+  "npc.ser_tybald.say_8": {
+    "src_hash": "d0363e20e43e94fc6a8574e399e96715",
+    "text": "Una volta raggiunto il livello 8 potrai scegliere la tua vocazione definitiva e partire per Main. Vai in una città e cerca l'allenatore di incantesimi della tua vocazione per imparare un incantesimo. E assicurati di avere abbastanza oro! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.624720Z"
+  },
+  "npc.ser_tybald.say_9": {
+    "src_hash": "e1742dda1f03a66f44a17d308bd84e4d",
+    "text": "L'arte dell'insegnamento degli incantesimi è complessa e pericolosa e trasmetteremo la nostra preziosa conoscenza degli incantesimi a un principiante solo se sarà in grado di pagarne il prezzo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.625525Z"
+  },
+  "npc.ser_tybald.stdmod_10": {
+    "src_hash": "ad1e3c3e2ede3ff9027511de84a2a3df",
+    "text": "Irruvidito e indurito dalle tragedie della vita. Un brav'uomo, ma cupo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.626054Z"
+  },
+  "npc.ser_tybald.stdmod_11": {
+    "src_hash": "3be359a33153ef3483e8980a3e3a13aa",
+    "text": "Sì, bambino. Se desideri imparare un incantesimo, dimmelo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:52:45.626718Z"
   }
 }

@@ -378,19 +378,19 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-17T08:40:20Z",
+  "generated_at_utc": "2026-02-17T08:41:32Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2354,
+    "errors_total": 2355,
     "files_processed_total": 6443,
     "languages_total": 54
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 12,
-        "json_file": "spells.json",
-        "keys_to_translate": 146,
+        "guard_fail": 0,
+        "json_file": "quests.json",
+        "keys_to_translate": 3,
         "language": "ru",
         "recent_examples": [],
         "recent_translated": 0,
@@ -403,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-17T09:40:19.992638",
+      "last_update": "2026-02-17T09:41:31.696795",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -422,7 +422,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 381,
+      "total_cycles": 382,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -452,8 +452,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 381,
-    "heartbeat_at_utc": "2026-02-17T08:40:20Z",
+    "cycle": 382,
+    "heartbeat_at_utc": "2026-02-17T08:41:31Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

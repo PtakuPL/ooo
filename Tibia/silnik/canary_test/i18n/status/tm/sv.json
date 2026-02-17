@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:05:51.458318Z"
+    "updated_at": "2026-02-17T05:18:32.063765Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -24430,5 +24430,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:07:34.583676Z"
+  },
+  "data.otservbr.global.npc.cerdras.L85.657": {
+    "src_hash": "ac222e2ce71c774dfd7615b83f6538df",
+    "text": "Hälsningar min vän!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:52.403222Z"
+  },
+  "data.otservbr.global.npc.charles.L142.1490": {
+    "src_hash": "490e8db04e2c02a81dc2a9e424404ac0",
+    "text": "Ohoj. Vart kan jag segla dig idag?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:52.403661Z"
+  },
+  "data.otservbr.global.npc.charlotta.L85.901": {
+    "src_hash": "4f2eff2d260c80a26015ec640739d25b",
+    "text": "Ah, välkommen! Välkommen |PLAYERNAME|! Om du behöver druidbesvärjelser har du kommit till rätt ställe. Annars är det bara trevligt med besök.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:52.404249Z"
+  },
+  "data.otservbr.global.npc.chavis.L118.1346": {
+    "src_hash": "74bc51c2c9d2b899820180e938426aa0",
+    "text": "Hej där! Du råkar inte ha några {food} på dig, är du villig att dela? Nåväl, var är mina uppföranden, varmt välkommen nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:58.694047Z"
+  },
+  "data.otservbr.global.npc.chavis.L119.1347": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ta hand om dig där ute!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:58.694405Z"
+  },
+  "data.otservbr.global.npc.chemar.L87.743": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Daramans välsignelser, resenär |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:58.694777Z"
+  },
+  "data.otservbr.global.npc.chemar.L89.744": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:58.695128Z"
+  },
+  "data.otservbr.global.npc.chemar.L90.745": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:58.695472Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L304.472": {
+    "src_hash": "0bd7be7fa74c735eed6ca6f3f8f93c97",
+    "text": "Hälsningar, främling.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:19:00.645151Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L305.473": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ta hand om dig där ute!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:19:00.645446Z"
   }
 }

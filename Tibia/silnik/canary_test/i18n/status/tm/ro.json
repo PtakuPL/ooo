@@ -43806,5 +43806,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:16:36.413741Z"
+  },
+  "quests.soul_war.msg_1": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Spaima începe să te chinuie! Nu lăsați nivelul de frică să atingă o valoare critică!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:35.761291Z"
+  },
+  "quests.soul_war.msg_2": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Chinul fricii devine insuportabil!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:35.761691Z"
+  },
+  "quests.soul_war.msg_3": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Chinul Terei începe să te sfâșie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:35.762258Z"
+  },
+  "quests.soul_war.msg_4": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Chinul fricii te omoara!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:35.762648Z"
+  },
+  "quests.soul_war.msg_5": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Chinul fricii este acum letal!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:35.763013Z"
+  },
+  "quests.the_secret_library_quest.you_are_still_exhausted_from_your": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Încă ești epuizat de ultima ta bătălie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:35.767819Z"
+  },
+  "quests.soul_war.energy_complete": {
+    "src_hash": "30f280d5e33132b6d52579429dd479f5",
+    "text": "Ai adunat suficientă energie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:44.854607Z"
+  },
+  "quests.soul_war.energy_needed": {
+    "src_hash": "e08db01f22b91ec4f011e924f3838baf",
+    "text": "Ai nevoie de {0} mai multă energie pentru a continua.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:44.854990Z"
+  },
+  "quests.soul_war.floor_access_first": {
+    "src_hash": "6405b891cc05a54afffbd45264ac0231",
+    "text": "Ai acces la primul etaj.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:44.855332Z"
+  },
+  "quests.soul_war.floor_access_second": {
+    "src_hash": "fb8ef309afd510db8bfb32044bc6033e",
+    "text": "Ai acces la etajul doi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:44.855669Z"
+  },
+  "quests.soul_war.floor_access_third": {
+    "src_hash": "16a7701add0525d575c423179eac5ccf",
+    "text": "Ai acces la etajul trei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:44.855968Z"
+  },
+  "quests.soul_war.floor_first_continue": {
+    "src_hash": "663c4245151399c9d94e481bcab59b6e",
+    "text": "Ai acces la primul etaj. Continuați să colectați Energii Pulsante pentru a obține acces suplimentar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:50.483863Z"
+  },
+  "quests.soul_war.floor_second_continue": {
+    "src_hash": "320ea4789c114f2b8b618dffe5f1c4d7",
+    "text": "Ai acces la etajul doi. Continuați să colectați Energii Pulsante pentru a obține acces suplimentar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:50.484378Z"
+  },
+  "quests.soul_war.floor_third_fight": {
+    "src_hash": "fa58abb3de41f9407604d7e4e368ebf0",
+    "text": "Ai acces la etajul trei. Acum poți lupta cu cruzimea lui Goshnar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:50.484854Z"
+  },
+  "quests.soul_war.greedy_maw_cooldown": {
+    "src_hash": "cc8bb4aca05080b59216fa941741e895",
+    "text": "Trebuie să aștepți încă {0} secunde înainte de a folosi din nou lacomul maw.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:50.485301Z"
+  },
+  "quests.soul_war.hatred_defeat": {
+    "src_hash": "6cd6252de7d5f1a44b498d7bf15b3fc2",
+    "text": "Ai învins Ura lui Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:50.485613Z"
+  },
+  "quests.soul_war.lose_taint": {
+    "src_hash": "019b9cf17d705eb17144d44dce22a7ee",
+    "text": "Pierzi nivelul de contaminare: {0}, nume: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:58.702683Z"
+  },
+  "quests.soul_war.malice_defeat": {
+    "src_hash": "de75d1edcd3e1b6ca5e343f2f8559fc4",
+    "text": "Ai învins răutatea lui Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:58.703064Z"
+  },
+  "quests.soul_war.new_taint": {
+    "src_hash": "5bde8704eadc1a578aa1e54f0819452b",
+    "text": "Noul nivel de pată este: {0}, nume: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:17:58.703685Z"
+  },
+  "quests.soul_war.no_floor_access": {
+    "src_hash": "910ac2aec9931e32538bfbcd38b2166a",
+    "text": "Încă nu aveți acces la acest etaj. Ați adunat {0}/{1} și aveți nevoie de {2} mai multe energii pulsatorii pentru a obține acces.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:07.612426Z"
+  },
+  "quests.soul_war.ooze_calm": {
+    "src_hash": "ceeb19a643ad14b9ad316c2652f3d7fc",
+    "text": "Suflul îți calmează teama...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:07.612749Z"
+  },
+  "quests.soul_war.ooze_calm_vulnerable": {
+    "src_hash": "fef7b5c00d069a3bb57d2e967d78170d",
+    "text": "Suflul îți calmează teama, dar te lasă vulnerabil la atacuri fantasmatice!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:07.613175Z"
+  },
+  "quests.soul_war.phantom_killed": {
+    "src_hash": "cd8b4e1653d419970f40f66f8f69b938",
+    "text": "Ai ucis {0} din {1} Fantoma Periculoasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:07.613523Z"
+  },
+  "quests.soul_war.removed_taint": {
+    "src_hash": "b4ca643c2238b3c9d950a65336414876",
+    "text": "Nivel de contaminare eliminat: {0}, nume: {1} de la jucător: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:07.613913Z"
+  },
+  "quests.soul_war.shrine_activated": {
+    "src_hash": "80ad0ca6ba900ac6c7a130c10cdcc9c6",
+    "text": "Ai activat altarul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:13.468761Z"
+  },
+  "quests.soul_war.shrine_already_activated": {
+    "src_hash": "5ee4b7efe20ca638e4496c2c3171670f",
+    "text": "Ai activat deja acest altar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:13.469107Z"
+  },
+  "quests.soul_war.soul_fire_failed": {
+    "src_hash": "82c033463325eb1a31e3a014992d7f68",
+    "text": "Nu ai reușit să stingi focul sufletului!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:13.469457Z"
+  },
+  "quests.soul_war.soul_fire_recover": {
+    "src_hash": "7961274a457c46f8d02245fab211a19b",
+    "text": "Focul sufletului a fost stins la timp! Sufletul tău va trebui acum să-și revină înainte de a putea face asta din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:13.470003Z"
+  },
+  "quests.soul_war.soul_fire_stomped": {
+    "src_hash": "ea119539fd0cd316d470dee6a95a02c8",
+    "text": "Focul sufletului a fost stins la timp!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:13.470346Z"
+  },
+  "quests.soul_war.soul_no_recover": {
+    "src_hash": "dcd0760f59af41f83460972c60d4a247",
+    "text": "Sufletul lui nu va trebui să-și revină!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:19.069132Z"
+  },
+  "quests.soul_war.soul_recover_wait": {
+    "src_hash": "1ca5738bb18e90b272fe726c696fa966",
+    "text": "Sufletul lui nu va trebui să-și revină! Trebuie să așteptați {0} secunde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:19.069589Z"
+  },
+  "quests.soul_war.soul_recovered": {
+    "src_hash": "76d487eb375c4fe04a18ce767e7d1eb9",
+    "text": "Sufletul ți-a revenit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:19.069864Z"
+  },
+  "quests.soul_war.spite_defeat": {
+    "src_hash": "832031a3804792a398e5231cf2ddfcc8",
+    "text": "Ai învins ciuful lui Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:19.070269Z"
+  },
+  "quests.soul_war.tears_soaked": {
+    "src_hash": "ca20469362a10d0401ff43e8fd04b383",
+    "text": "Ești îmbibat de lacrimile sufletului plângător!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:19.070635Z"
+  },
+  "quests.soul_war.use_item_defense": {
+    "src_hash": "1dbe9dd97225cdfdd3e8fc690051c5d3",
+    "text": "Folosește din nou obiectul în {0} secunde, sau apărarea monstrului va crește cu 2 la fiecare {0} secunde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:26.013523Z"
+  },
+  "quests.soul_war.use_item_defense_increase": {
+    "src_hash": "d57b15fc4d41fe9e823aded0cf82a15a",
+    "text": "Folosește din nou obiectul în {0} secunde, sau apărarea monstrului va crește la fiecare {0} secunde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:26.014046Z"
+  },
+  "quests.soul_war_mechanics.msg_1": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Jucătorul este offline",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:26.014376Z"
+  },
+  "quests.soul_war_mechanics.msg_2": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Jucătorul este offline",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:26.014629Z"
+  },
+  "quests.soul_war_mechanics.msg_3": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Momentan nu ai nicio pată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:18:26.014928Z"
   }
 }

@@ -32542,5 +32542,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:06:01.750739Z"
+  },
+  "client.neededtranslations.text3": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Список предметов, которые вы можете купить",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:10.289256Z"
+  },
+  "client.neededtranslations.text4": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Список предметов, которые вы можете продать",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:10.289897Z"
+  },
+  "client.bosstiary.text3": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "За разблокировку уровня вы получите следующие очки босса:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:18.287197Z"
+  },
+  "client.bosstiary.text5": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "За разблокировку уровня вы получите следующие очки босса:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:18.287631Z"
+  },
+  "client.attachedeffects.text1": {
+    "src_hash": "292395b28a9118bc861d399ebfde63c7",
+    "text": "эффект существа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:18.287877Z"
+  },
+  "client.imbuementtracker.text1": {
+    "src_hash": "0527872062bbbee05c352b8eb9ea2933",
+    "text": "НаполнениеТрекер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:18.288115Z"
+  },
+  "client.mounts.text2": {
+    "src_hash": "1f4f947d6824f23e7d267f986aef7543",
+    "text": "Ошибка открытия файла:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:22.261762Z"
+  },
+  "client.game_shop.text1": {
+    "src_hash": "8d7fc8bc0bf68b77630d5a48da3e2547",
+    "text": "Магазин игрВойти",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:22.262281Z"
+  },
+  "client.game_shop.text3": {
+    "src_hash": "70e9fac741af644fd3e5360831053f82",
+    "text": "Восстанавливает очки жизни вашего персонажа.\n\n- можно использовать только при покупке персонажа\n- будет отправлено в ваш рюкзак\n- не могут быть приобретены персонажами с блокировкой защитной зоны или боевым знаком.\n- не могу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:28.359075Z"
+  },
+  "client.game_shop.text4": {
+    "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+    "text": "Восполняет ману вашего персонажа.\n\n- можно использовать только при покупке персонажа\n- будет отправлено в ваш рюкзак\n- не могут быть приобретены персонажами с блокировкой защитной зоны или боевым знаком.\n- не может быть чистым",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:28.359939Z"
+  },
+  "client.market.text2": {
+    "src_hash": "5954d0da4aad8145900a38481505f95c",
+    "text": "Баланс: <значение> золота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:28.360235Z"
+  },
+  "client.bottommenu.text1": {
+    "src_hash": "0038f646ebb40256e69aae1e314fe06e",
+    "text": "изображения/случайная подсказка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:28.360506Z"
+  },
+  "client.bottommenu.text5": {
+    "src_hash": "57cac65371fa5e2db2a82019609b5c08",
+    "text": "изображения/значок-вопросительный знак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:28.360800Z"
   }
 }

@@ -47486,5 +47486,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:12:28.992278Z"
+  },
+  "client.utils.text1": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Castlemania",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.228131Z"
+  },
+  "client.utils.text2": {
+    "src_hash": "740e9f42975916867c58c567a8a0fbb1",
+    "text": "Ai un ochi pentru locurile suspecte și îți place să citești jurnalele altor oameni, în special cele cu povești cu vampiri în ele. De asemenea, ești un colecționar și un explorator dedicat de jetoane. Respect!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.229257Z"
+  },
+  "client.boss_slots.text1": {
+    "src_hash": "0e2787224e96232b203eedfc541fe91e",
+    "text": "Se deblochează la 1500 de puncte Boss",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.231459Z"
+  },
+  "client.boss_slots.text3": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Bane\n\nPentru deblocarea unui nivel, vei primi următoarele puncte de șef:\nPerformanță: 5\nExpertiza: 15\nMăiestrie: 30",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.232232Z"
+  },
+  "client.boss_slots.text4": {
+    "src_hash": "9a3b9f3362303ea8f57e16ff69927a44",
+    "text": "Arhifoe\n\nPentru deblocarea unui nivel, vei primi următoarele puncte de șef:\nPerformanță: 10\nExpertiza: 30\nMăiestrie: 60",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.232879Z"
+  },
+  "client.bestiary.text2": {
+    "src_hash": "2cc4a4c5e260935157569494ed733bf1",
+    "text": "Semi-Rar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.233482Z"
+  },
+  "client.bestiary.text3": {
+    "src_hash": "8e4ce7e78c9c1b19c4b193170ca1044d",
+    "text": "Foarte Rar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.233856Z"
+  },
+  "client.bosstiary.text2": {
+    "src_hash": "f5e276677de9fdebd3c962344a9a3bb4",
+    "text": "Bane\n\nPentru deblocarea unui nivel, vei primi următoarele puncte de șef:\nPerformanță: 5\nExpertiza: 15\nMăiestrie: 30",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.234529Z"
+  },
+  "client.bosstiary.text3": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Pentru deblocarea unui nivel, vei primi următoarele puncte de șef:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.235016Z"
+  },
+  "client.bosstiary.text4": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Expertiza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.235280Z"
+  },
+  "client.bosstiary.text5": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Pentru deblocarea unui nivel, vei primi următoarele puncte de șef:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.235883Z"
+  },
+  "client.tasks.text5": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "Butonul de selecție",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.237969Z"
+  },
+  "client.mainpanel.text1": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.241568Z"
+  },
+  "client.mainpanel.text3": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.241865Z"
+  },
+  "client.options.text2": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.242815Z"
+  },
+  "client.blessing.text1": {
+    "src_hash": "71e37136fcdaf8d5610c4999e1d3bc30",
+    "text": "Înregistrarea binecuvântărilor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.243738Z"
+  },
+  "client.blessing.text3": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Personajul tău este promovat și contul tău are Premium\nstarea. Ca rezultat, pierderea XP este redusă cu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.244489Z"
+  },
+  "client.blessing.text4": {
+    "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
+    "text": "Personajul tău este promovat și contul tău are Premium\nstarea. Ca rezultat, pierderea XP este redusă cu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:32.245079Z"
+  },
+  "client.items.text2": {
+    "src_hash": "b1f4d732ba5997c1cbff270d13c63959",
+    "text": "96 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:37.471591Z"
+  },
+  "client.items.text3": {
+    "src_hash": "85392cbd20cd206583207b3255b7acbf",
+    "text": "64 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:37.471889Z"
+  },
+  "client.items.text4": {
+    "src_hash": "905819163e91db527b712c9e02d086c1",
+    "text": "32 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:37.472084Z"
+  },
+  "client.items.text5": {
+    "src_hash": "ecf5483f4675af3c4cac643a95bc3c9b",
+    "text": "0 0 32 32",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:37.472264Z"
+  },
+  "client.spells.text1": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Greva ucenicului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:40.707684Z"
+  },
+  "client.spells.text2": {
+    "src_hash": "fa7b503fd5e42aa8ed809fd9e22c833f",
+    "text": "exeta amp res",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:40.708210Z"
+  },
+  "client.spells.text3": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "exura max vita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:40.708602Z"
+  },
+  "client.spells.text4": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "Îmbrățișarea Naturii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:40.708874Z"
+  },
+  "client.spells.text5": {
+    "src_hash": "ffc7c4960c88a757638d254341fe24ae",
+    "text": "Practicați Vindecarea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:40.709113Z"
+  },
+  "client.styles.text1": {
+    "src_hash": "7e45214f92b501af4495b82455b39e7c",
+    "text": "particule",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:46.296377Z"
+  },
+  "client.styles.text2": {
+    "src_hash": "7e45214f92b501af4495b82455b39e7c",
+    "text": "particule",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:46.296594Z"
+  },
+  "client.npctrade.text1": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista articolelor pe care le puteți cumpăra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:46.296956Z"
+  },
+  "client.npctrade.text2": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista articolelor pe care le puteți vinde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:46.297292Z"
+  },
+  "client.edit_hotkey.text1": {
+    "src_hash": "54669f046e420654bc9b360157a1a4ac",
+    "text": "pentru a atribui tasta rapidă.\nClic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:46.297626Z"
+  },
+  "client.quickloot.text1": {
+    "src_hash": "fdc7ada538676107d889331e26db609f",
+    "text": "Sortare automată\nAchizitii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:53.909109Z"
+  },
+  "client.quickloot.text2": {
+    "src_hash": "b2e1c15b00c36a1d0f6e95b51e9d9b02",
+    "text": "Sortare automată a depozitelor în containere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:53.909760Z"
+  },
+  "client.quickloot.text3": {
+    "src_hash": "5bee20b319a031076a88f07a3edad52d",
+    "text": "Pradă rapidă cadavrele din apropiere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:53.910489Z"
+  },
+  "client.quickloot.text4": {
+    "src_hash": "c8eadbefee70f8c441cfcc79755337a6",
+    "text": "Eroare la citirea fișierului de setări ale containerelor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:53.911232Z"
+  },
+  "client.walk.text1": {
+    "src_hash": "14c3de1beddabd1388e28a54a8b10191",
+    "text": "Ctrl+Dreapta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:53.911654Z"
+  },
+  "client.walk.text2": {
+    "src_hash": "26f2c912493c2eac17b81d1c5bae0fc3",
+    "text": "Ctrl+Jos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:01.763178Z"
+  },
+  "client.walk.text3": {
+    "src_hash": "87600c6242cc410cfa2eeea2a087bbd9",
+    "text": "Ctrl+Stânga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:01.763421Z"
+  },
+  "client.game_cyclopedia.text1": {
+    "src_hash": "a956161a69928cd130a889b88082fb6e",
+    "text": "caracter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:01.763602Z"
+  },
+  "client.game_cyclopedia.text2": {
+    "src_hash": "5b949a092bf0fd9fa569a1a0edb6ae67",
+    "text": "bostiar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:01.763771Z"
+  },
+  "client.game_cyclopedia.text3": {
+    "src_hash": "e850f728cac75fd2a96562687c663ebd",
+    "text": "Deschide dialogul Bostiary",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:01.764017Z"
+  },
+  "client.house.text1": {
+    "src_hash": "b87a17758ec61680b74aafa52c9e2e23",
+    "text": "MapLayerSelector",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:06.176613Z"
+  },
+  "client.house.text2": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Toate statele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:06.177103Z"
+  },
+  "client.house.text3": {
+    "src_hash": "0059ab21743c19543af55cf48bcc4b1d",
+    "text": "Case proprii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:15:06.177552Z"
   }
 }

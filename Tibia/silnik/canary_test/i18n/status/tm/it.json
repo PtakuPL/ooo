@@ -53174,5 +53174,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:11:38.496497Z"
+  },
+  "book.otbm.crudely_written_in_blood": {
+    "src_hash": "b13f1b1494d3f2d9325469e1ae26c0b9",
+    "text": "<scritto grossolanamente con il sangue>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:23.367221Z"
+  },
+  "book.otbm.crunor_created_the_wolves_in": {
+    "src_hash": "3cda23d2d41a6619fdb513223d8477b3",
+    "text": "Crunor creò i lupi per proteggere le sue foreste dagli orchi, ma questi erano troppo numerosi! Solo nel più profondo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:23.367776Z"
+  },
+  "book.otbm.crypts_and_monsters_found_one": {
+    "src_hash": "9f58d23b74f3c7a0a2bc52484c8c60df",
+    "text": "... cripte e mostri... trovato uno dei demoni in gabbia che sembra essere stato utilizzato come alimentatore di qualche tipo...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:30.130830Z"
+  },
+  "book.otbm.crystallize_itself_in_the_void": {
+    "src_hash": "f316dda51d2b4de92d8534e04d245306",
+    "text": "cristallizzarsi nel vuoto in un'enorme spirale. Sempre più in alto si elevò, divenne fermezza, punto cardine, direzione e",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:30.132041Z"
+  },
+  "book.otbm.currently_no_wanted_criminals": {
+    "src_hash": "519bcf81b3faf39ca4d825e5dfc7f308",
+    "text": "Al momento non ci sono criminali ricercati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:30.132679Z"
+  },
+  "book.otbm.cyclopic_cities_were_laid_into": {
+    "src_hash": "8e5fb4e87d8fbc9338d68c38c105ffe2",
+    "text": "le città ciclopiche furono ridotte in rovina, incredibili fabbriche di forgiatura andarono perdute per l'eternità e fino ad oggi i ciclopi sono sconvolti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:36.924789Z"
+  },
+  "book.otbm.dagger_hand_axe_barbarian_axe": {
+    "src_hash": "0ce085dd8029017a861b9233182a1806",
+    "text": "pugnale, ascia, ascia barbara, lancia, stocco, ascia, sciabola, spada, mazza, martello da battaglia e mazza clericale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:36.925247Z"
+  },
+  "book.otbm.damnation_to_all_who_dare": {
+    "src_hash": "0881480744e173991d7aeb65afa6533c",
+    "text": "Dannazione a tutti coloro che osano entrare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:36.925557Z"
+  },
+  "book.otbm.dark_are_the_mysteries_surrounded": {
+    "src_hash": "5c823503b352591233cdee451085a028",
+    "text": "Oscuri sono i misteri circondati da grida di condanna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:36.925917Z"
+  },
+  "book.otbm.daughter_of_earth_and_fire": {
+    "src_hash": "e0cf4dcd664fd44e9e17b1657e6aa8a9",
+    "text": "Figlia della terra e del fuoco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:36.926226Z"
+  },
+  "book.otbm.daughter_of_earth_and_fire_e0cf4dcd": {
+    "src_hash": "e0cf4dcd664fd44e9e17b1657e6aa8a9",
+    "text": "Figlia della terra e del fuoco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:43.728287Z"
+  },
+  "book.otbm.dead_but_zathroth_used_a": {
+    "src_hash": "18846a7a03eed9489dd84d8dcc173af4",
+    "text": "morto. Ma Zathroth usò un inganno e apparve alla terra come l'altra sua faccia, Uman, e concepì al suo posto un essere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:43.728884Z"
+  },
+  "book.otbm.dead_ones_and_sent_his": {
+    "src_hash": "948d9f1e689b479191785e4bba9633a4",
+    "text": "quelli morti e inviò i suoi grandi vermi che cominciarono a divorare i non morti. Per molto tempo la lotta durò e ancora una volta senza fine",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:43.729471Z"
+  },
+  "book.otbm.death_an_improved_form_of": {
+    "src_hash": "500d63e26fb71ffbe0c2f2dea1eec51b",
+    "text": "La morte: una forma di vita migliorata?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:43.729957Z"
+  },
+  "book.otbm.dedicated_to_all_women_who": {
+    "src_hash": "ecad8c09737381bef98043c51a51a5fe",
+    "text": "Dedicato a tutte le donne che con coraggio e astuzia hanno sconfitto il",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:43.730423Z"
+  },
+  "book.otbm.deep_in_the_heart_of": {
+    "src_hash": "6ec14a1db5969fa56ceb121138b236b7",
+    "text": "Nel profondo del cuore del Kha'labal ha la sua tana il temuto re iena. Questa bestia leggendaria è molto più grande di qualsiasi altro esemplare della sua razza, superando in dimensioni i leoni e persino gli elefanti, e può fare a pezzi un uomo in pochi secondi con i suoi enormi denti affilati come rasoi. Inoltre si dice che il re iena sia davvero immortale, poiché è stato avvistato più e più volte da numerosi viaggiatori e mercanti. Si dice che molte carovane siano cadute preda di questa bestia feroce, ed è opinione diffusa che abbia accumulato tesori indicibili nel corso dei secoli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:51.059068Z"
+  },
+  "book.otbm.describe_the_demonic_rulers": {
+    "src_hash": "7eb47e16efb77db5dea63a06685e034f",
+    "text": "descrivono i governanti demoniaci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:51.059375Z"
+  },
+  "book.otbm.desecration_this_entity_which_was": {
+    "src_hash": "f0dcde84f77bb3a358306d40428c73db",
+    "text": "profanazione! Quest'entità, che tuttavia era due e una, osservava ora le opere del suo compagno nell'infinito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:51.059884Z"
+  },
+  "book.otbm.devised_dissolved_in_the_void": {
+    "src_hash": "8acd936251c05103d5aef5abd2174b0e",
+    "text": "ideato dissolto nel vuoto ancor prima di essere completato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:51.060375Z"
+  },
+  "book.otbm.diary_of_hengis_wulfsonnni_can": {
+    "src_hash": "da656bbddd8d90f11098f9c9d2a6317e",
+    "text": "Diario di Hengis Wulfson\\n...\\nPosso solo sperare di riuscire a sfuggire al\\nciclope un giorno. Per ora ho\\noccupato il loro capo nel tentativo\\ndi imparare a leggere e scrivere, ma per\\nper quanto tempo?\\nSono così disperato.\\nChe idea sciocca venire qui per\\ncercare i famosi tesori di questo\\nantico ordine cavalleresco.\\nVorrei non averne mai sentito parlare it.\\nVorrei non aver mai cantato quella canzone.\\nNon ho idea di quante anime sfortunate ho\\nho attirato a morte con essa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:58.679852Z"
+  },
+  "book.otbm.died_but_i_could_make": {
+    "src_hash": "0ab68f3c79946809546fa1b7d22889d3",
+    "text": "... sono morto ma sono riuscito ad arrivare al trono. Per ora le mie difese tengono a bada i fantasmi e gli spettri ululanti e mi preparo a scatenare i poteri del trono...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:58.680533Z"
+  },
+  "book.otbm.different_to_the_clear_working": {
+    "src_hash": "5ac5502c13452eaae725f46845a76b82",
+    "text": "diverso dal chiaro funzionamento dei Fardos, perché misteri e segreti erano gli aspetti del suo essere. Uman e Zathroth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:58.681074Z"
+  },
+  "book.otbm.digging_not_a_single_trace": {
+    "src_hash": "c950d6b4960fd844d2c668f9cb60335c",
+    "text": "Scavo. Non una sola traccia di porta e nemmeno di finestra. Forse sede di qualche oscuro culto dell'oscurità? Forse creature della notte? Un nascondiglio per i demoni? Forse non sto lavorando abbastanza. Hm, sembra che ci sia uno strano punto lì sul muro, lo vedo chiaramente da qui. Proverò a spingerlo o tirarlo subito! Fama e ricchezza, sto arrivando!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:58.682221Z"
+  },
+  "book.otbm.diptrah_the_high_priest_master": {
+    "src_hash": "18e57afb8b79d567ea90ffdc5e40c07c",
+    "text": "Diptrah il sommo sacerdote, maestro della mente, detentore di poteri segreti, custode del più antico dei rituali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:13:58.682731Z"
+  },
+  "book.otbm.divinity_was_weakened_by_the": {
+    "src_hash": "ec7b040050da6c58ac5a4de7453c9189",
+    "text": "La divinità fu indebolita dalla creazione e, senza sospetti e resistenze, l'attacco mortale penetrò nel profondo di lei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:04.976081Z"
+  },
+  "book.otbm.dixis_armors_and_shields": {
+    "src_hash": "cf49f561e8909a5efab8a99b1e35a514",
+    "text": "Armature e scudi di Dixi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:04.976409Z"
+  },
+  "book.otbm.dixis_armors_and_shields_cf49f561": {
+    "src_hash": "cf49f561e8909a5efab8a99b1e35a514",
+    "text": "Armature e scudi di Dixi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:04.976891Z"
+  },
+  "book.otbm.do_not_consume_unknown_liquids": {
+    "src_hash": "9ef2f06201bc21c9f5dc85116972dd19",
+    "text": "Non consumare liquidi sconosciuti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:04.977426Z"
+  },
+  "book.otbm.do_not_disturb_bearded_people": {
+    "src_hash": "776d03f3b4f1a547aec2e85c9247859c",
+    "text": "(NON disturbare le persone barbute)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:14:04.977759Z"
   }
 }

@@ -62366,5 +62366,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T11:54:19.966662Z"
+  },
+  "item.6606.name": {
+    "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+    "text": "zăpadă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.094828Z"
+  },
+  "item.6607.name": {
+    "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+    "text": "zăpadă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.095261Z"
+  },
+  "item.6608.name": {
+    "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+    "text": "zăpadă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.095868Z"
+  },
+  "item.6838.name": {
+    "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+    "text": "zăpadă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.109373Z"
+  },
+  "item.7140.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "Este gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.140926Z"
+  },
+  "item.7286.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "Este gol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.151766Z"
+  },
+  "item.7349.name": {
+    "src_hash": "3a90eeb9b16640a98c41091237a517e3",
+    "text": "necurată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.170333Z"
+  },
+  "item.7356.name": {
+    "src_hash": "6266cb99f1f98c30d000e4e736c8d5fd",
+    "text": "sol stâncos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.173542Z"
+  },
+  "item.7359.name": {
+    "src_hash": "d76ffd80bb767de0a9726a09b0d939a4",
+    "text": "flacara vietii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.174305Z"
+  },
+  "item.7360.name": {
+    "src_hash": "d76ffd80bb767de0a9726a09b0d939a4",
+    "text": "flacara vietii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.175109Z"
+  },
+  "item.7464.desc": {
+    "src_hash": "75d4d3b95095eded5775b2cdf01d84f4",
+    "text": "Oferă puțină protecție, dar măcar vor oferi confort și căldură",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.200850Z"
+  },
+  "item.749.name": {
+    "src_hash": "b3a34c67f9e5022e41b4f55cf807c3e6",
+    "text": "pulbere statuie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.201766Z"
+  },
+  "item.7519.name": {
+    "src_hash": "e3c7552b6b3fd33df13fc349512f2b45",
+    "text": "ceva târându-se",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.202647Z"
+  },
+  "item.7534.desc": {
+    "src_hash": "c61181fa7ce3216c0a478cb4e3cec5db",
+    "text": "Pare ciudat de deplasat în această zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.204359Z"
+  },
+  "item.7629.name": {
+    "src_hash": "b3a34c67f9e5022e41b4f55cf807c3e6",
+    "text": "pulbere statuie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.211106Z"
+  },
+  "item.775.desc": {
+    "src_hash": "f23d7252c3b40fb39bfbe450b1a909c8",
+    "text": "Te simți atras de lumina fascinantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.226822Z"
+  },
+  "item.775.name": {
+    "src_hash": "0f3d898b85bafe642b1cd56de135b0b4",
+    "text": "flacără mistică",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.227237Z"
+  },
+  "item.7750.name": {
+    "src_hash": "e7b96de6530e54034150595eaf583020",
+    "text": "grătar de canalizare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.227696Z"
+  },
+  "item.7803.name": {
+    "src_hash": "431369719ea01e4118be66bfd4c3b4d7",
+    "text": "zid de ardere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.236698Z"
+  },
+  "item.7860.name": {
+    "src_hash": "ed109e09da387124fa349fb3de89ece3",
+    "text": "coș de fum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.242494Z"
+  },
+  "item.7861.name": {
+    "src_hash": "ed109e09da387124fa349fb3de89ece3",
+    "text": "coș de fum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.243033Z"
+  },
+  "item.7862.name": {
+    "src_hash": "ed109e09da387124fa349fb3de89ece3",
+    "text": "coș de fum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.243550Z"
+  },
+  "item.7863.name": {
+    "src_hash": "ed109e09da387124fa349fb3de89ece3",
+    "text": "coș de fum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.243910Z"
+  },
+  "item.7872.name": {
+    "src_hash": "24ee6463dfdcf4d91fe009d4c83f9876",
+    "text": "notă fixată pe perete",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.246684Z"
+  },
+  "item.7880.name": {
+    "src_hash": "6266cb99f1f98c30d000e4e736c8d5fd",
+    "text": "sol stâncos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.248024Z"
+  },
+  "item.7881.name": {
+    "src_hash": "3dfae4af4c8a2f8704f7946c2dece10a",
+    "text": "scari de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:55:33.248411Z"
   }
 }

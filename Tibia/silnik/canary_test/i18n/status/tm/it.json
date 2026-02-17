@@ -28934,5 +28934,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:59:12.321681Z"
+  },
+  "cpp.combat.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "guarigione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.070923Z"
+  },
+  "cpp.game.highscore_category_magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.076031Z"
+  },
+  "cpp.inspect.magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.083516Z"
+  },
+  "cpp.look.damage": {
+    "src_hash": "da14a7168b547f35ea0c6fa9f50de63e",
+    "text": "danno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.087073Z"
+  },
+  "cpp.look.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "guarigione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.088227Z"
+  },
+  "cpp.look.magic_level_label": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.089457Z"
+  },
+  "cpp.skill.magic_level": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:29.112597Z"
+  },
+  "cpp.bestiary.creature_set_premium": {
+    "src_hash": "173486a4f560ffdc367d58a170fb2e53",
+    "text": "La creatura è stata impostata! Sei un giocatore Premium, quindi puoi beneficiare di un massimo di 6 rune! L'espansione del fascino ti consente di impostare le creature su tutte le rune contemporaneamente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:32.085405Z"
+  },
+  "cpp.bestiary.no_charm_slots": {
+    "src_hash": "5c76d66c8b5fb599ec149edb99a3f723",
+    "text": "Non hai slot fascino disponibili.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:32.085746Z"
+  },
+  "cpp.bestiary.not_enough_charm_echoes": {
+    "src_hash": "78facaef7b222fb285ab287741ea4281",
+    "text": "Non hai abbastanza echi di fascino minori per sbloccare questa runa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:38.006512Z"
+  },
+  "cpp.bestiary.not_enough_charm_points": {
+    "src_hash": "6f005a14f6e03de08a54dc633fda2ac4",
+    "text": "Non hai abbastanza punti fascino per sbloccare questa runa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:38.006889Z"
+  },
+  "cpp.bestiary.not_enough_gold": {
+    "src_hash": "b9f64fa006e7a19a9fffc2623fdefde6",
+    "text": "Non hai abbastanza oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:38.007176Z"
+  },
+  "cpp.bestiary.unlocked_details": {
+    "src_hash": "d6bce59d49bccbecbd69fb68018c68ad",
+    "text": "Hai sbloccato i dettagli della creatura '{0}'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:38.007518Z"
+  },
+  "cpp.bosstiary.podium_reward": {
+    "src_hash": "6afd22e748b46b86cb19f4a617b02fea",
+    "text": "Congratulazioni! Hai raggiunto il livello di competenza per il tuo primo boss. Come ricompensa, un Podio del Vigore gratuito è stato inviato alla tua casella di posta del Negozio. Puoi posizionare questo podio in qualsiasi casa che possiedi con questo personaggio. Usalo per visualizzare i boss per i quali hai raggiunto almeno il livello di competenza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:38.008628Z"
+  },
+  "cpp.cancel.cannot_move_house": {
+    "src_hash": "4bbefef324ff5501d56413ed2e1d7788",
+    "text": "Non puoi spostare questo oggetto fuori da questa casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:44.545128Z"
+  },
+  "cpp.cancel.cannot_stow_containers": {
+    "src_hash": "23ec243ea08a453aad40ff7b90c9deff",
+    "text": "Non è possibile riporre contenitori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:44.545450Z"
+  },
+  "cpp.cancel.cannot_stow_here": {
+    "src_hash": "7dda5876a5bbf91b1226ed3e79e7d2ed",
+    "text": "Questo oggetto non può essere riposto qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:44.545774Z"
+  },
+  "cpp.cancel.group_name_exists": {
+    "src_hash": "66f16f5c3444e6abfb5b0da3d73c6d62",
+    "text": "Esiste già un gruppo con questo nome. Scegli un altro nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:44.546231Z"
+  },
+  "cpp.cancel.hold_container_loot": {
+    "src_hash": "9dc7b7ad844f372874fc3cafe8d3723e",
+    "text": "Devi tenere in mano il contenitore per impostarlo come contenitore di bottino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:44.546612Z"
+  },
+  "cpp.cancel.max_beds": {
+    "src_hash": "a5bb3ffc8f9a977aa8c81e701e098227",
+    "text": "Hai raggiunto il numero massimo di posti letto in questa casa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:50.769857Z"
+  },
+  "cpp.cancel.must_be_premium": {
+    "src_hash": "bfdedf431ba5a9ca1bb49dc0719a7c5a",
+    "text": "Devi essere premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:50.770183Z"
+  },
+  "cpp.cancel.no_pm_self": {
+    "src_hash": "238517cb7c01341c1748dea6a4ce66ec",
+    "text": "Non puoi impostare un canale di messaggi privati ​​con te stesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:50.770598Z"
+  },
+  "cpp.cancel.no_stowable_items": {
+    "src_hash": "74946aee5588f5c90c64011260dfbbbd",
+    "text": "Non ci sono oggetti riponibili in questo contenitore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:50.770935Z"
+  },
+  "cpp.cancel.not_allowed_construct": {
+    "src_hash": "321d6b9b0ef4d981cc03781bfe997882",
+    "text": "Non ti è consentito costruirlo qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:50.771267Z"
+  },
+  "cpp.cancel.player_not_exist": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Non esiste un giocatore con questo nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:58.221141Z"
+  },
+  "cpp.cancel.stash_wait": {
+    "src_hash": "8e97cd473570086184609edf89e64947",
+    "text": "Non puoi usare la scorta in questo momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:58.221461Z"
+  },
+  "cpp.cancel.wait_again": {
+    "src_hash": "7743ede2fb52bb2f7a2f239b890194a0",
+    "text": "Devi aspettare per farlo di nuovo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:58.221764Z"
+  },
+  "cpp.cancel.wrap_on_floor": {
+    "src_hash": "b396d0f41be608bf66a3ab0523276f65",
+    "text": "Puoi avvolgere/svolgere solo sul pavimento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:58.222091Z"
+  },
+  "cpp.chat.private_excluded_confirm": {
+    "src_hash": "5c0f0434c8f65e345f3716dc9024e282",
+    "text": "{0} è stato escluso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:04:58.222383Z"
+  },
+  "cpp.chat.private_invite_received": {
+    "src_hash": "1283d1f0bed25a89fdba76bc3a0eaccb",
+    "text": "{0} ti invita al canale di chat privato {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:04.823156Z"
+  },
+  "cpp.chat.private_invited_confirm": {
+    "src_hash": "fb5e9f487445de188a6c5071bd097fed",
+    "text": "{0} è stato invitato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:04.823453Z"
+  },
+  "cpp.combat.agony": {
+    "src_hash": "a60bed6cd0b5a4e80523db2d91682dc9",
+    "text": "agonia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:04.823627Z"
+  },
+  "cpp.combat.amplified_onslaught": {
+    "src_hash": "7e22a0325a0db3ab0af94fefc1575bcf",
+    "text": "(Assalto amplificato)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:04.823864Z"
+  },
+  "cpp.combat.charm_low_blow": {
+    "src_hash": "7e5a294e4b26a8d4a69693001003e393",
+    "text": "(incantesimo colpo basso)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:04.824096Z"
+  },
+  "cpp.combat.charm_savage_blow": {
+    "src_hash": "20827ecb1eb699c4e44204dc4e91221f",
+    "text": "(incantesimo del colpo selvaggio)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:11.131899Z"
+  },
+  "cpp.combat.condition_healed_one": {
+    "src_hash": "0bf121421a3a381451a59e1c85aeda73",
+    "text": "Sei stato guarito per {0} hitpoint.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:11.132244Z"
+  },
+  "cpp.combat.condition_healed_other": {
+    "src_hash": "9e6bedd1c5b4f37f6b98fa8d89b531b6",
+    "text": "Sei stato guarito di {0} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:11.132593Z"
+  },
+  "cpp.combat.condition_healed_spectator_one": {
+    "src_hash": "563946f2da69fc4d5e67fe5fbbabd7a3",
+    "text": "{0} è stato guarito per {1} punto ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:11.132935Z"
+  },
+  "cpp.combat.condition_healed_spectator_other": {
+    "src_hash": "a038c6c62c0d42fcd3a8fe3616466458",
+    "text": "{0} è stato guarito di {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:11.133266Z"
+  },
+  "cpp.combat.death": {
+    "src_hash": "2e8d6dbf9112a879d4ceb15403d10a78",
+    "text": "morte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:17.193399Z"
+  },
+  "cpp.combat.dmg_attacker_crit_one": {
+    "src_hash": "65cc48920b09ac5e937e44b2ccb79160",
+    "text": "{0} perde {1} punti ferita a causa del tuo attacco critico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:17.193781Z"
+  },
+  "cpp.combat.dmg_attacker_crit_other": {
+    "src_hash": "0137109a00690450cd2fe61d7317fa4d",
+    "text": "{0} perde {1} punti ferita a causa del tuo attacco critico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:17.194199Z"
+  },
+  "cpp.combat.dmg_attacker_one": {
+    "src_hash": "125fcde49b9106480a491e5ab9c77ca3",
+    "text": "{0} perde {1} punti ferita a causa del tuo attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:17.194556Z"
+  },
+  "cpp.combat.dmg_attacker_other": {
+    "src_hash": "257ee854903d532839ed440219e295b2",
+    "text": "{0} perde {1} punti ferita a causa del tuo attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:17.194927Z"
+  },
+  "cpp.combat.dmg_spectator_by_crit_one": {
+    "src_hash": "b3218f77cfab4ef44076b07341384c7e",
+    "text": "{0} perde {1} punti ferita a causa di un attacco critico di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:05:19.854495Z"
   }
 }

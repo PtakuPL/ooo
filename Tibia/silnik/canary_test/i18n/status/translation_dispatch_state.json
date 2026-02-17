@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T00:03:54.577891Z",
-  "cycle_counter": 1008,
-  "last_target_key": "es:php.json",
-  "last_pending_total": 6,
-  "last_tier": 1,
+  "timestamp": "2026-02-17T00:05:28.529891Z",
+  "cycle_counter": 1011,
+  "last_target_key": "ro:books.json",
+  "last_pending_total": 1274,
+  "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 196,
   "active_candidates_count": 188,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 65,
+  "cache_cycle": 66,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -363,7 +363,7 @@
     ],
     "lang_completion": {
       "pl": 44.29,
-      "es": 74.15,
+      "es": 74.16,
       "ru": 35.97,
       "ro": 20.34,
       "it": 11.3,

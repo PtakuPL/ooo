@@ -1,32 +1,18 @@
 {
-  "timestamp": "2026-02-17T09:33:48.573154Z",
+  "timestamp": "2026-02-17T09:35:02.034029Z",
   "checked_entries": 100,
-  "issues_found": 46,
+  "issues_found": 44,
   "issues_by_type": {
-    "artifact_token": 34,
-    "identical_to_en_exempt": 4,
+    "artifact_token": 32,
     "identical_to_en": 12,
+    "identical_to_en_exempt": 4,
+    "suspicious_log_high": 162,
+    "suspicious_log_critical": 30,
     "suspicious_log_low": 8,
-    "suspicious_log_critical": 70,
-    "suspicious_log_high": 122,
-    "suspicious_rejected_high": 22,
-    "suspicious_rejected_critical": 178
+    "suspicious_rejected_critical": 183,
+    "suspicious_rejected_high": 17
   },
   "issues": [
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

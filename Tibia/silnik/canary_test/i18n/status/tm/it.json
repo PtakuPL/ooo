@@ -64126,5 +64126,333 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:23:38.494210Z"
+  },
+  "npc.rahkem.stdmod_13": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.469513Z"
+  },
+  "npc.rahkem.stdmod_14": {
+    "src_hash": "01e8edec42ed0707465c58f2a9b4bff6",
+    "text": "Penso che tu abbia dimenticato di portare il tuo paletto, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.470028Z"
+  },
+  "npc.rahkem.stdmod_15": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Sì, sono stato informato su cosa fare. Siete pronti a ricevere la mia linea di preghiera?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.470733Z"
+  },
+  "npc.rahkem.stdmod_17": {
+    "src_hash": "0f31738909d8dfb4a29c446aefa592e1",
+    "text": "Ti aspetterò.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.471155Z"
+  },
+  "npc.rahkem.stdmod_19": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Hai già ricevuto la mia linea di preghiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.471662Z"
+  },
+  "npc.rahkem.stdmod_2": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.472279Z"
+  },
+  "npc.rahkem.stdmod_20": {
+    "src_hash": "5e61f13b59ea8fb125a6b53b8c7158a2",
+    "text": "Un palo benedetto? È una richiesta strana. Forse Quentin ne sa di più, dopo tutto è uno dei monaci più anziani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.472929Z"
+  },
+  "npc.rahkem.stdmod_21": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ogni volta che ricevi una ferita letale, la tua forza vitale viene danneggiata e c'è la possibilità che tu perda parte del tuo equipaggiamento. Con ognuno dei cinque {blessings} che hai, questo danno e la possibilità di perdita saranno ridotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.473938Z"
+  },
+  "npc.rahkem.stdmod_23": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vedo che hai ricevuto la protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.474718Z"
+  },
+  "npc.rahkem.stdmod_24": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Sento che i druidi a nord di Carlin ti hanno fornito l'Abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.475348Z"
+  },
+  "npc.rahkem.stdmod_25": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Vedo che hai ricevuto la benedizione dei due soli nella torre del sole vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.475916Z"
+  },
+  "npc.rahkem.stdmod_26": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Sento che la scintilla della fenice ti è già stata donata dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.476673Z"
+  },
+  "npc.rahkem.stdmod_27": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Sento che hai già parlato con l'eremita Eremo sull'isola di Cormaya e hai ricevuto questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.477411Z"
+  },
+  "npc.rahkem.stdmod_28": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puoi chiedere la benedizione della protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.478069Z"
+  },
+  "npc.rahkem.stdmod_29": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "I druidi a nord di Carlin ti forniranno l'abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.478673Z"
+  },
+  "npc.rahkem.stdmod_3": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bene. Sei libero di rifiutare la mia offerta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.479128Z"
+  },
+  "npc.rahkem.stdmod_30": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puoi chiedere la benedizione dei due soli nella torre solare vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.479658Z"
+  },
+  "npc.rahkem.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Questa è una benedizione speciale che posso concederti una volta ottenuta almeno una delle altre benedizioni e che funziona in modo leggermente diverso. ...\\z\n\tFunziona solo quando vieni ucciso da altri avventurieri, il che significa che almeno la metà del danno che ha portato alla tua morte è stato causato da altri, non da mostri o dall'ambiente. ...\\z\n\tLo {twist of fate} non ridurrà la pena di morte come le altre benedizioni, ma invece ti impedirà di perdere le tue altre benedizioni e l'amuleto della perdita, se ne indossi uno. Costa lo stesso delle altre benedizioni. ...\\z\n\tTi piacerebbe ricevere quella protezione per un sacrificio di |PVPBLESSCOST| oro, bambino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.482130Z"
+  },
+  "npc.rahkem.stdmod_4": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Conserva bene la tua pietra dell'avventuriero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.482581Z"
+  },
+  "npc.rahkem.stdmod_5": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vuoi sostituire gratuitamente la tua pietra dell'avventuriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.483195Z"
+  },
+  "npc.rahkem.stdmod_6": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.483534Z"
+  },
+  "npc.rahkem.stdmod_8": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vuoi sostituire la tua pietra dell'avventuriero per 30 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.484240Z"
+  },
+  "npc.rahkem.stdmod_9": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.484583Z"
+  },
+  "npc.rapanaio_boat.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.485362Z"
+  },
+  "npc.rapanaio_boat.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cerchi un passaggio a {0} per {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.485972Z"
+  },
+  "npc.rapanaio_boat.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.486414Z"
+  },
+  "npc.rapanaio_isle_of_evil.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.487139Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cerchi un passaggio a {0} per {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.487595Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.488021Z"
+  },
+  "npc.rashid.sendtrade_msg_1": {
+    "src_hash": "f5de40889c1308575b28481de36b712b",
+    "text": "Prenditi tutto il tempo che ti serve per decidere cosa vuoi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.492547Z"
+  },
+  "npc.rashid.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Torna presto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.494430Z"
+  },
+  "npc.rashid_custom.sendtrade_msg_1": {
+    "src_hash": "f5de40889c1308575b28481de36b712b",
+    "text": "Prenditi tutto il tempo che ti serve per decidere cosa vuoi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.498864Z"
+  },
+  "npc.rashid_custom.walkaway_msg_1": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Torna presto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.500914Z"
+  },
+  "npc.raymond_striker.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Vabbè.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.505953Z"
+  },
+  "npc.razan.ape_fur_ask": {
+    "src_hash": "9ecba313887644c7bca34ebd43a85095",
+    "text": "Sei davvero riuscito a portare a termine il compito e a portarmi 100 pezzi di pelliccia di scimmia?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.506638Z"
+  },
+  "npc.razan.ape_fur_done": {
+    "src_hash": "93d3e07bf01e4f96aef6d6c6634847f0",
+    "text": "Ahhh, che morbidezza! Sono impressionato, |PLAYERNAME|. Sei sulla strada migliore per guadagnarti quel turbante. Ora, per favore, recupera 100 pinne di pesce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.507301Z"
+  },
+  "npc.razan.ape_fur_info": {
+    "src_hash": "28503e4a113b1754689357ba80dd1e2d",
+    "text": "Solo la pelliccia di scimmia è abbastanza buona da toccare i piedi del nostro Califfo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.507834Z"
+  },
+  "npc.razan.blue_cloth_ask": {
+    "src_hash": "6da5b110ba351da06349d1edd9a849f0",
+    "text": "Ah, hai portato i 100 pezzi di stoffa blu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.508314Z"
+  },
+  "npc.razan.blue_cloth_info": {
+    "src_hash": "0a190fe005697b472b65c3e2fe60aa5b",
+    "text": "È un ottimo materiale per i turbanti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.508953Z"
+  },
+  "npc.razan.chicken_wings_ask": {
+    "src_hash": "63a6e6bdf426d94fa3300b0191c20f1d",
+    "text": "Sei riuscito a procurarti due ali di pollo incantate?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.509455Z"
+  },
+  "npc.razan.chicken_wings_done": {
+    "src_hash": "e07c9a3a2c56a3cb2b0566de1ba9a58a",
+    "text": "Ottimo, grazie mille. Portami solo 100 pezzi di stoffa blu adesso e ti mostrerò con piacere come realizzare un turbante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:53.510230Z"
   }
 }

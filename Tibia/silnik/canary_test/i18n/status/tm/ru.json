@@ -36646,5 +36646,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:22:26.113900Z"
+  },
+  "npc.benjamin.farewell_msg_1": {
+    "src_hash": "991cd61398f1d5d8d7cdc6077e7ad93e",
+    "text": "Было приятно помочь вам.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.819484Z"
+  },
+  "npc.benjamin.greet_msg_1": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Привет. Чем я могу вам помочь |PLAYERNAME|? Попросите меня поставить {trade}, если хотите что-то купить. Я также могу объяснить систему {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.820588Z"
+  },
+  "npc.bertha.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "О, пожалуйста, заходите, |PLAYERNAME|. Что я могу сделать для вас? Если вам нужно снаряжение для приключений, попросите у меня {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.822586Z"
+  },
+  "npc.bertha.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.823156Z"
+  },
+  "npc.bertha.sendtrade_msg_1": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Конечно, просто просмотрите мои товары. {Footballs} необходимо приобретать отдельно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.824004Z"
+  },
+  "npc.billy.greet_msg_1": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Привет |PLAYERNAME|. Я фермер и повар, может быть, я смогу вас заинтересовать {trade} с едой? Вы также можете задать мне общие вопросы {hints} об игре.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.825407Z"
+  },
+  "npc.bloodshade_rotten.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.830870Z"
+  },
+  "npc.bloodshade_sacrifice.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.832155Z"
+  },
+  "npc.blossom_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.833326Z"
+  },
+  "npc.blossom_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.833683Z"
+  },
+  "npc.blossom_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:34:58.834304Z"
   }
 }

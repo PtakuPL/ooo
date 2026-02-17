@@ -378,143 +378,22 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-17T09:33:49Z",
+  "generated_at_utc": "2026-02-17T09:35:02Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2404,
+    "errors_total": 2406,
     "files_processed_total": 6443,
     "languages_total": 54
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 8,
-        "json_file": "npc.json",
-        "keys_to_translate": 2355,
+        "guard_fail": 0,
+        "json_file": "server.json",
+        "keys_to_translate": 151,
         "language": "es",
-        "recent_examples": [
-          {
-            "en": "npc.bozo.mission_12_t1",
-            "key": "npc.bozo.stdmod_92",
-            "source": "tm",
-            "translated": "npc.bozo.mission_12_t1"
-          },
-          {
-            "en": "Zzz...",
-            "key": "npc.budrik.say_9",
-            "source": "tm",
-            "translated": "Zzz..."
-          },
-          {
-            "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-            "key": "npc.captain_haba_open_sea.larboard_1",
-            "source": "tm",
-            "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-          },
-          {
-            "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-            "key": "npc.captain_haba_open_sea.say_3",
-            "source": "tm",
-            "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-          },
-          {
-            "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-            "key": "npc.captain_haba_open_sea.starboard_1",
-            "source": "tm",
-            "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-          },
-          {
-            "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-            "key": "npc.captain_haba_open_sea.straight_3",
-            "source": "tm",
-            "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-          },
-          {
-            "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-            "key": "npc.captain_haba_open_sea.straight_5",
-            "source": "tm",
-            "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-          },
-          {
-            "en": "<chants> Re Ha, Omrah, Tan Ra...",
-            "key": "npc.elyen_ravenlock.voice_2",
-            "source": "tm",
-            "translated": "<cánticos> Re Ha, Omrah, Tan Ra..."
-          },
-          {
-            "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-            "key": "npc.jeronimo.say_3",
-            "source": "tm",
-            "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!"
-          },
-          {
-            "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-            "key": "npc.lardoc_bashsmite.multi_3",
-            "source": "tm",
-            "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-          },
-          {
-            "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-            "key": "npc.lardoc_bashsmite.multi_9",
-            "source": "tm",
-            "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-          },
-          {
-            "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-            "key": "npc.mother_of_jack.voice_1",
-            "source": "tm",
-            "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
-          },
-          {
-            "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-            "key": "npc.navigator.multi_1",
-            "source": "tm",
-            "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
-          },
-          {
-            "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-            "key": "npc.navigator.multi_2",
-            "source": "tm",
-            "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
-          },
-          {
-            "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-            "key": "npc.omrabas.multi_35",
-            "source": "tm",
-            "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
-          },
-          {
-            "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-            "key": "npc.omrabas.multi_82",
-            "source": "tm",
-            "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
-          },
-          {
-            "en": "He will PAY for this... They will ALL pay!",
-            "key": "npc.omrabas.voice_2",
-            "source": "tm",
-            "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-          },
-          {
-            "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-            "key": "npc.pythius_the_rotten.stdmod_12",
-            "source": "tm",
-            "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-          },
-          {
-            "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-            "key": "npc.raymond_striker.multi_21",
-            "source": "tm",
-            "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-          },
-          {
-            "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-            "key": "npc.sane_mage.multi_5",
-            "source": "tm",
-            "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-          }
-        ],
-        "recent_translated": 25,
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
@@ -524,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-17T10:33:48.730316",
+      "last_update": "2026-02-17T10:35:02.239715",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -543,7 +422,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 409,
+      "total_cycles": 410,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -573,8 +452,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 409,
-    "heartbeat_at_utc": "2026-02-17T09:33:48Z",
+    "cycle": 410,
+    "heartbeat_at_utc": "2026-02-17T09:35:02Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

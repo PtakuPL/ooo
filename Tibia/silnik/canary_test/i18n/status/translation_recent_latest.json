@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T05:58:38.756165Z",
-  "language": "ro",
-  "json_file": "scripts.json",
-  "translated": 39,
+  "timestamp": "2026-02-17T05:59:42.572173Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "scripts.actions_lair_entrance.msg_1",
-      "en": "You are not worthy to enter in The First Dragon's Lair yet.",
-      "translated": "Încă nu ești demn să intri în Bârlogul lui The First Dragon.",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_last_fight.msg_1",
-      "en": "You need atleast ",
-      "translated": "Ai nevoie cel puțin ",
-      "source": "google_translate"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_last_object.msg_1",
-      "en": "The strange symbol in the wall in the back glows violently.",
-      "translated": "Simbolul ciudat din peretele din spate strălucește violent.",
-      "source": "google_translate"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_last_object.msg_2",
-      "en": "The cult object just lies there quietly. The dangerous area around it has been all but dissolved.",
-      "translated": "Obiectul de cult stă acolo în liniște. Zona periculoasă din jurul ei a fost aproape dizolvată.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_last_object.msg_3",
-      "en": "As you reach out to touch the cult object, a surge of energy burst from the skull. You banished its power.",
-      "translated": "Pe măsură ce întindeți mâna pentru a atinge obiectul de cult, un val de energie a izbucnit din craniu. I-ai alungat puterea.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_legion_helmet.say_1",
-      "en": "You have already discovered this teleport.",
-      "translated": "Ați descoperit deja acest teleport.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_legion_helmet.say_2",
-      "en": "The lizard god accepts your offer! You may enter the santuary!",
-      "translated": "Zeul șopârlă îți acceptă oferta! Poți intra în santuar!",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever.msg_1",
-      "en": "You need to wait few minutes to use again.",
-      "translated": "Trebuie să așteptați câteva minute pentru a o utiliza din nou.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever.msg_2",
-      "en": "You do not have the Chayenne's magical key.",
-      "translated": "Nu aveți cheia magică a lui Chayenne.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever.say_1",
-      "en": "You need one player of each vocation having completed the Elemental Spheres quest and also carrying the elemental rare item.",
-      "translated": "Ai nevoie de câte un jucător de fiecare vocație care a finalizat misiunea Sfere elementare și, de asemenea, să poarte elementul elementar rar.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever.say_2",
-      "en": "You need one player of each vocation having completed the Elemental Spheres quest and also carrying the elemental rare item.",
-      "translated": "Ai nevoie de câte un jucător de fiecare vocație care a finalizat misiunea Sfere elementare și, de asemenea, să poarte elementul elementar rar.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever.say_3",
-      "en": "Wait for the current team to exit.",
-      "translated": "Așteptați ca echipa actuală să iasă.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever_death_priest_shargon.say_1",
-      "en": "Someone is fighting against the boss! You need to wait awhile.",
-      "translated": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever_the_ravager.say_1",
-      "en": "Someone is fighting against the boss! You need to wait awhile.",
-      "translated": "Cineva luptă împotriva șefului! Trebuie să aștepți puțin.",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever_third.msg_2",
-      "en": "A booming sound almost deafens you. From somewhere deep within you hear a whisper: 'Grass...'",
-      "translated": "Un sunet puternic aproape că te asurdă. Din adâncul tău auzi o șoaptă: 'Grass...'",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_lever_third.msg_3",
-      "en": "A booming sound almost deafens you. From somewhere deep within you hear a whisper: 'Ice...'",
-      "translated": "Un sunet puternic aproape că te asurdă. Din adâncul tău auzi o șoaptă: 'Ice...'",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_levers.say_1",
-      "en": "As you turn the lever you can heart it ticking. Maybe you should hurry up!",
-      "translated": "Pe măsură ce rotiți pârghia, o puteți inima să ticăie. Poate ar trebui să te grăbești!",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_levers.say_2",
-      "en": "You're too late.",
-      "translated": "Ai întârziat.",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_levers.say_3",
-      "en": "back, back, up, right, left",
-      "translated": "înapoi, înapoi, sus, dreapta, stânga",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "scripts.actions_levers.say_4",
-      "en": "You don't know what to do.",
-      "translated": "Nu știi ce să faci.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

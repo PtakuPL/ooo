@@ -51670,5 +51670,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:42:19.336945Z"
+  },
+  "data.otservbr.global.npc.bruno.L63.439": {
+    "src_hash": "f5611466111acf02c50fd70a513700e0",
+    "text": "Cumpărați tot peștele dorit. Este proaspăt și sănătos, promis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.335743Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L111.102": {
+    "src_hash": "8d63ee3cbee0282495d8d7d17e027454",
+    "text": "Adresează-mi cum trebuie |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.336732Z"
+  },
+  "data.otservbr.global.npc.cael.L392.236": {
+    "src_hash": "65cd3155e7fbe93ae575ff3c4a1f8abb",
+    "text": "Salutări, |PLAYERNAME|! Trebuie să fi venit destul de mult. Sunt mereu interesat să aflu lucruri noi despre Zao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.338912Z"
+  },
+  "data.otservbr.global.npc.cael.L393.237": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Rețineți că nu veți găsi oferte mai bune aici. Doar răsfoiește-mi mărfurile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.339530Z"
+  },
+  "data.otservbr.global.npc.canary.L126.459": {
+    "src_hash": "a10a26d9586cb14bfaa580c34d3db0a0",
+    "text": "Nu ai studii?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.340205Z"
+  },
+  "data.otservbr.global.npc.canary.L88.457": {
+    "src_hash": "79a03d06c67633920b88970b497a8ac2",
+    "text": "Bună ziua |PLAYERNAME|, aveți nevoie de mai multe informații despre {canary}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.340873Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L118.99": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.341411Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L119.100": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.341939Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L73.336": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.342683Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L74.337": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.343307Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L75.1609": {
+    "src_hash": "202a2eb8a446b071db66173ee9c3d801",
+    "text": "Bine ați venit la bord, recrutați |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.344061Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L76.1610": {
+    "src_hash": "e15da006fade26d444cff6cb29e47778",
+    "text": "În numele inchiziției, vă iau rămas bun.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.344516Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L64.993": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Salutări, aventurier îndrăzneț. Dacă aveți nevoie de un {passage}, anunțați-mă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.345407Z"
+  },
+  "data.otservbr.global.npc.captain.dreadnought.L465.1019": {
+    "src_hash": "e3c27cbeadf072acaf19bbad2aaea847",
+    "text": "Sigur vrei să petreci timp pe această bucată de piatră? Vă pot arăta lumea! Huh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.346468Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L111.1155": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.347093Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L112.1156": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.347603Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L102.1514": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.348315Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L103.1515": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.348834Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L92.845": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Bun venit la bord, domnule |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.349706Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L93.846": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.350242Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L162.1353": {
+    "src_hash": "4389112dadbf0109f2cda25d30028e4a",
+    "text": "Ne vedem, landlubber!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.351052Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L176.1354": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Poftim! Folosește-l pe macara când vezi monstrul. Apoi reumpleți-l de fiecare dată când utilizați telescopul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.351689Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L60.1352": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Ai găsit locul |PLAYERNAME|!! Ia-ți o cască de adânc și du-te să explorezi {caves} acolo jos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.352462Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L87.949": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Bun venit la bord, călător. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.352972Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L88.950": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.353459Z"
+  },
+  "data.otservbr.global.npc.captain.jack.rat.L57.982": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Salut, pirat! Vino la bord pentru a merge acasă! Bun venit la bordul navei Flying Bat. Ar trebui să setez {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.354362Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L102.862": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.355922Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L103.863": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.356413Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L105.1469": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.357258Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L106.1470": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.357779Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L86.1619": {
+    "src_hash": "09e6e8af5ec0e866ef5f4291313f9765",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.358462Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L87.1620": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.359050Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L98.749": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Bun venit la bord, domnule |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.360164Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L99.750": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.360709Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L97.707": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Salutări, aventurier îndrăzneț. Dacă aveți nevoie de un {passage}, anunțați-mă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.361246Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L99.709": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.361932Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L61.1025": {
+    "src_hash": "b881a2f946b2000c7b5d245b2e9f3ec7",
+    "text": "Salutări, aventurier îndrăzneț. Dacă aveți nevoie de retur {passage}, anunțați-mă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.362563Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L63.1027": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.363043Z"
+  },
+  "data.otservbr.global.npc.carina.L97.831": {
+    "src_hash": "adf3a8471f9e459d5b11b1054ae73655",
+    "text": "Bun venit, |PLAYERNAME|. Aștept cu nerăbdare să schimb cu tine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.363761Z"
+  },
+  "data.otservbr.global.npc.carlos.L100.1093": {
+    "src_hash": "155c73893b154c9642e5b5791cd5e45b",
+    "text": "Bine ai revenit |PLAYERNAME|, sper că te-ai răzgândit și îmi vei aduce niște {meat}? Îți voi da chiar și niște aur pentru asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.364463Z"
+  },
+  "data.otservbr.global.npc.carlos.L103.1094": {
+    "src_hash": "1397a9dce740292a32730701d2929b92",
+    "text": "Bine ai revenit, |PLAYERNAME|! Ai avut o vânătoare reușită și ai purtat cu tine o bucată de {meat} sau șuncă?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.365083Z"
+  },
+  "data.otservbr.global.npc.carlos.L107.1095": {
+    "src_hash": "00143dd08108a83dcbb73f1a2f6bba1b",
+    "text": "Bine ai revenit, Isleth Eagonst! Mai ai bucata aceea de carne sau sunca? Dacă da, vă rog să-mi cereți un {trade} și vă voi da niște aur pentru el.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.365840Z"
+  },
+  "data.otservbr.global.npc.carlos.L110.1096": {
+    "src_hash": "1161f926d6499a60267c416c448c3ac0",
+    "text": "Bine ai revenit, |PLAYERNAME|! Unde ai pus bucata aceea delicioasa de mancare? L-ai mâncat singur? Ei bine, dacă găsești altul, te rog să revii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.366739Z"
+  },
+  "data.otservbr.global.npc.carlos.L115.1097": {
+    "src_hash": "5b4d8446cfabd691a0740be04b971f3a",
+    "text": "Bună, |PLAYERNAME|! Ei bine, așa funcționează tranzacționarea cu NPC-uri ca mine. Cred că ești gata acum să treci podul spre Rookgaard! Ai grijă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.367561Z"
+  },
+  "data.otservbr.global.npc.carlos.L121.1098": {
+    "src_hash": "2d9ef34d2d04adf11e5e8b1858efd460",
+    "text": "Bună din nou, |PLAYERNAME|! Ce mai faci aici? Ar trebui să treceți peste pod în satul Rookgaard acum!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:30.368278Z"
   }
 }

@@ -1,179 +1,18 @@
 {
-  "timestamp": "2026-02-17T07:47:00.341276Z",
+  "timestamp": "2026-02-17T07:48:11.199742Z",
   "checked_entries": 100,
-  "issues_found": 45,
+  "issues_found": 28,
   "issues_by_type": {
-    "identical_to_en_exempt": 17,
-    "identical_to_en": 29,
+    "identical_to_en": 12,
+    "identical_to_en_exempt": 3,
     "artifact_token": 16,
-    "suspicious_log_low": 54,
-    "suspicious_log_high": 104,
-    "suspicious_log_critical": 42,
+    "suspicious_log_high": 172,
+    "suspicious_log_critical": 22,
+    "suspicious_log_low": 6,
     "suspicious_rejected_critical": 176,
     "suspicious_rejected_high": 24
   },
   "issues": [
-    {
-      "key": "scripts.actions_brain.msg_1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "<brzzl> <frzzp> <fsssh>",
-      "translated": "<brzzl> <frzzp> <fsssh>"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
-    },
-    {
-      "key": "raid.scarab.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Scarab",
-      "translated": "Scarab"
-    },
-    {
-      "key": "raid.undead_cavebear.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "raid.morgaroth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "raid.ferumbras.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "raid.example.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Example",
-      "translated": "Example"
-    },
-    {
-      "key": "raid.raids.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Raids",
-      "translated": "Raids"
-    },
-    {
-      "key": "raid.undead_darashia.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Undead Darashia",
-      "translated": "Undead Darashia"
-    },
-    {
-      "key": "raid.priestesses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Priestesses",
-      "translated": "Priestesses"
-    },
-    {
-      "key": "raid.barba_svar.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Svar",
-      "translated": "Barba Svar"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.ghazbaran.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "raid.barbarian.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barbarian",
-      "translated": "Barbarian"
-    },
-    {
-      "key": "raid.hirintror.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
     {
       "key": "raid.terrorbirds.name",
       "lang": "es",
@@ -327,6 +166,48 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "spell.rotthing_ulus.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###rotth_ulus",
+      "translated": "###rotth_ulus"
+    },
+    {
+      "key": "spell.quara_plunderer_smoke.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###quara_smoke_death",
+      "translated": "###quara_smoke_death"
+    },
+    {
+      "key": "spell.large_energy_ring.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "###large_energy_ring",
+      "translated": "###large_energy_ring"
+    },
+    {
+      "key": "spell.great_death_beam.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exevo max mort",
+      "translated": "exevo max mort"
+    },
+    {
+      "key": "spell.ultimate_flame_strike.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori max flam",
+      "translated": "exori max flam"
+    },
+    {
+      "key": "spell.divine_caldera.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exevo mas san",
+      "translated": "exevo mas san"
     }
   ],
   "threshold": 10,

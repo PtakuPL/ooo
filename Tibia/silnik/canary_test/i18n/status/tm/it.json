@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:34:34.355550Z"
+    "updated_at": "2026-02-17T07:47:39.134719Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -57934,5 +57934,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:46:25.395313Z"
+  },
+  "spell.wyrm_wave.name": {
+    "src_hash": "2fdf9abf34ef3f7f5e933a640d185124",
+    "text": "onda del dragone",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:54.202368Z"
+  },
+  "spell.rotthing_ulus.words": {
+    "src_hash": "02d84512ac358fe2002d7dd61e3103ee",
+    "text": "###rotth_ulus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:58.931942Z"
+  },
+  "spell.tyrn_heal.name": {
+    "src_hash": "826d7f0afa46a87e56c125b8831491ae",
+    "text": "guarisci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:58.932156Z"
+  },
+  "spell.large_red_ring.words": {
+    "src_hash": "96d37389d06599da3b3e9858a7ce6e63",
+    "text": "###anello_rosso_grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:05.236719Z"
+  },
+  "spell.quara_plunderer_smoke.words": {
+    "src_hash": "f9b3033ce3b3278925e16fd642d7c573",
+    "text": "###quara_smoke_death",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:05.237527Z"
+  },
+  "spell.vile_grandmaster.name": {
+    "src_hash": "bac73ba15ba676e19e2332d4cee43bf3",
+    "text": "vile gran maestro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:09.232407Z"
+  },
+  "spell.large_energy_ring.words": {
+    "src_hash": "da9ad40bc3aabbabeb308b3ec4c80b78",
+    "text": "###large_energy_ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:09.232652Z"
+  },
+  "spell.great_death_beam.words": {
+    "src_hash": "feb6b1e27d32865ee0f12c58ec858b02",
+    "text": "exevo max mort",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:09.233022Z"
+  },
+  "spell.ultimate_flame_strike.words": {
+    "src_hash": "a1eee5d6d0f1c3225e9ba6021dfe704b",
+    "text": "exori max flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:09.233311Z"
+  },
+  "spell.divine_caldera.words": {
+    "src_hash": "3b5c064a5e654d4a3be6cc97aaf96144",
+    "text": "exevo mas san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:48:09.233594Z"
   }
 }

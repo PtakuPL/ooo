@@ -34894,5 +34894,229 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:37:13.832015Z"
+  },
+  "data.otservbr.global.npc.armenius.L86.644": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ах, авантюрист. Поприветствуйте и присядьте. Как я могу {serve} тебя?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.304958Z"
+  },
+  "data.otservbr.global.npc.aruda.L257.1339": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "До свидания, |PLAYERNAME|. Я очень надеюсь, что мы скоро снова поговорим.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.306906Z"
+  },
+  "data.otservbr.global.npc.aruda.L64.1336": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "О, привет |PLAYERNAME|, твои волосы выглядят великолепно! Кто сделал это для тебя?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.308613Z"
+  },
+  "data.otservbr.global.npc.aruda.L67.1337": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "О, привет, красавчик! Приятно познакомиться, |PLAYERNAME|. С радостью, у меня есть время {chat} немного.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.310289Z"
+  },
+  "data.otservbr.global.npc.atur.L76.727": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "Да? Что я могу для тебя сделать, |PLAYERNAME|? Банковский бизнес, возможно?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.313466Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L137.859": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Приветствую тебя, путешественник |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.316280Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L130.1046": {
+    "src_hash": "12f0cb4f274a7bfbf696db7f366aeb7a",
+    "text": "Добро пожаловать в мою скромную обитель. Если вы пришли за новым колдуном {spells}, вы попали по адресу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.323700Z"
+  },
+  "data.otservbr.global.npc.battlemart.L64.1360": {
+    "src_hash": "9ec78949f7eddc1944c7aada3ca6a073",
+    "text": "Рад тебя видеть. Я всегда рядом с твоим {shop options}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.326150Z"
+  },
+  "data.otservbr.global.npc.battlemart.L65.1361": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Прощай, |PLAYERNAME|, я буду здесь, если я тебе снова понадоблюсь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.327475Z"
+  },
+  "data.otservbr.global.npc.benjamin.L84.240": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Привет. Чем я могу вам помочь |PLAYERNAME|? Попросите меня поставить {trade}, если хотите что-то купить. Я также могу объяснить систему {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.332856Z"
+  },
+  "data.otservbr.global.npc.bertha.L88.1552": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "О, пожалуйста, заходите, |PLAYERNAME|. Что я могу сделать для вас? Если вам нужно снаряжение для приключений, попросите у меня {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.334844Z"
+  },
+  "data.otservbr.global.npc.bertha.L91.1555": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Конечно, просто просмотрите мои товары. {Footballs} необходимо приобретать отдельно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.336350Z"
+  },
+  "data.otservbr.global.npc.billy.L147.1387": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Привет |PLAYERNAME|. Я фермер и повар, может быть, я смогу вас заинтересовать {trade} с едой? Вы также можете задать мне общие вопросы {hints} об игре.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.338793Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L72.427": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.340932Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.342785Z"
+  },
+  "data.otservbr.global.npc.bozo.L610.917": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Привет, привет, привет, маленькая леди |PLAYERNAME|! Что приносит вам {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.347980Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L134.319": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Добро пожаловать, |PLAYERNAME|! Пусть земля защитит тебя на каменистых землях. Если вам нужен {passage}, я могу вам помочь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.352951Z"
+  },
+  "data.otservbr.global.npc.bron.L188.28": {
+    "src_hash": "bc13951dddf4f12c470dbcddf105f4db",
+    "text": "Добро пожаловать в мою скромную хижину, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.355185Z"
+  },
+  "data.otservbr.global.npc.bruno.L61.437": {
+    "src_hash": "059e1779562262cde06156c3a7f61f6d",
+    "text": "Ахой, |PLAYERNAME|. Хотите купить свежей рыбы?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.357260Z"
+  },
+  "data.otservbr.global.npc.buddel.L134.211": {
+    "src_hash": "d154b3846fac97a5b216341a5a01fe8c",
+    "text": "Эй, большие ребята. Ты? {Here}? *ХИКС*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.359443Z"
+  },
+  "data.otservbr.global.npc.bunny.bonecrusher.L111.102": {
+    "src_hash": "8d63ee3cbee0282495d8d7d17e027454",
+    "text": "Обращайтесь ко мне правильно |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.361439Z"
+  },
+  "data.otservbr.global.npc.cael.L392.236": {
+    "src_hash": "65cd3155e7fbe93ae575ff3c4a1f8abb",
+    "text": "Привет, |PLAYERNAME|! Вы, должно быть, довольно сильно пришли в себя. Мне всегда интересно узнавать что-то новое о Зао.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.364379Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L118.99": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добро пожаловать на борт, |PLAYERNAME|. Где я могу {sail} тебе сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.367075Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L73.336": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добро пожаловать на борт, |PLAYERNAME|. Где я могу {sail} тебе сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.369044Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L75.1609": {
+    "src_hash": "202a2eb8a446b071db66173ee9c3d801",
+    "text": "Добро пожаловать на борт, набираем |PLAYERNAME|. Где я могу {sail} тебе сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.371171Z"
+  },
+  "data.otservbr.global.npc.captain.cookie.L64.993": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Приветствую тебя, отважный искатель приключений. Если вам нужен {passage}, дайте мне знать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.373289Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L111.1155": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добро пожаловать на борт, |PLAYERNAME|. Где я могу {sail} тебе сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.375936Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L102.1514": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Добро пожаловать на борт, |PLAYERNAME|. Где я могу {sail} тебе сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:47:25.377916Z"
   }
 }

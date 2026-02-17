@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17T04:24:44.200261Z",
-  "cycle": 237,
+  "timestamp": "2026-02-17T04:25:51.786232Z",
+  "cycle": 238,
   "language": "pl",
-  "json_file": "startup.json",
-  "translated": 8,
+  "json_file": "modules.json",
+  "translated": 2,
   "placeholders": 0,
-  "guard_fail": 0,
+  "guard_fail": 1,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 15
+  "strict_skipped_done": 16
 }

@@ -35574,5 +35574,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:13:43.105455Z"
+  },
+  "client.string.text1": {
+    "src_hash": "c52e8733f45fb0e1a011ab5842cfc43b",
+    "text": ".. слово ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:50.249080Z"
   }
 }

@@ -59134,5 +59134,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:13:38.046444Z"
+  },
+  "cpp.look.damage_reflection": {
+    "src_hash": "84795283af9b7d27169669991ccc1b97",
+    "text": "Riflessione del danno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.858218Z"
+  },
+  "cpp.look.faster_regeneration": {
+    "src_hash": "bae38372cca5538ac2e2b53ab73587b9",
+    "text": "rigenerazione più rapida",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.859577Z"
+  },
+  "cpp.look.hard_drinking": {
+    "src_hash": "0fd8740eaf86fd5822ee55c965ad55fc",
+    "text": "Bere pesante",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.860111Z"
+  },
+  "cpp.look.invisibility": {
+    "src_hash": "b31ffe10fc51b2597fc9a74f4da7ce66",
+    "text": "Invisibilità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.861224Z"
+  },
+  "cpp.look.magic_shield_capacity": {
+    "src_hash": "6d9ec240fe3d70164f1ca05641d8962d",
+    "text": "Capacità dello scudo magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.862796Z"
+  },
+  "cpp.look.mana_shield": {
+    "src_hash": "475e549fe594c71ffa9ca2e3b939c548",
+    "text": "Scudo di mana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.863292Z"
+  },
+  "cpp.look.perfect_shot": {
+    "src_hash": "47dd9ff799a8f115f3bebaa106d03d69",
+    "text": "Scatto perfetto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.865024Z"
+  },
+  "cpp.look.second_many": {
+    "src_hash": "894a208290274479c9e9408927b7c073",
+    "text": "{0} secondi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.866529Z"
+  },
+  "cpp.look.specialized_magic_level": {
+    "src_hash": "6bf7f45c56d8249fdab942beac2e6baa",
+    "text": "{0} Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.867054Z"
+  },
+  "cpp.vocation.id_5": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Maestro Stregone",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.909565Z"
+  },
+  "cpp.vocation.id_7": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Paladino reale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.910016Z"
+  },
+  "cpp.vocation.id_8": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Cavaliere d'élite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:14:58.910487Z"
+  },
+  "cpp.inspect.required_level": {
+    "src_hash": "5ab64d8b1a2cf5b487c1dbf88fdf64c1",
+    "text": "Livello richiesto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:07.245022Z"
+  },
+  "cpp.inspect.required_magic_level": {
+    "src_hash": "6821616c8a63532178ae7438bea1c633",
+    "text": "Livello magico richiesto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:07.245304Z"
+  },
+  "cpp.inspect.rune_spell_name": {
+    "src_hash": "8751237628ef1f455997715e35819b4e",
+    "text": "Nome dell'incantesimo runico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:07.245543Z"
+  },
+  "cpp.inspect.skill_boost": {
+    "src_hash": "53e0815f3b52e9ef05b9499fe2e73c05",
+    "text": "Potenziamento abilità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:07.245851Z"
+  },
+  "cpp.inspect.total_expire_time": {
+    "src_hash": "37791e7ec2f07b95aeffcc0dbc14ff54",
+    "text": "Tempo di scadenza totale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:07.246181Z"
+  },
+  "cpp.inspect.total_weight": {
+    "src_hash": "f55b07cb5f8ad185174056610fb761bb",
+    "text": "Peso totale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:13.564613Z"
+  },
+  "cpp.inspect.tradeable_in_market": {
+    "src_hash": "a01b726d6c2da40abf99b74470ef4d7c",
+    "text": "Commerciabile in Market",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:13.565066Z"
+  },
+  "cpp.inspect.weapon_type": {
+    "src_hash": "c643de41cd81073a0ed42a807c826ab0",
+    "text": "Tipo di arma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:13.565304Z"
+  },
+  "cpp.item.imbuement_error_reopen": {
+    "src_hash": "1ab009f508a26303355ec71d67b19040",
+    "text": "Si è verificato un errore, riapri la finestra di imbuement.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:13.565725Z"
+  },
+  "cpp.item.invalid_slot": {
+    "src_hash": "8dc8f358c2df7366a75718585ce8c3dc",
+    "text": "Selezione dello slot non valida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:13.566008Z"
+  },
+  "cpp.item.unwrap_in_house": {
+    "src_hash": "85dba66d4b7d32af19b865ba5d0f5641",
+    "text": "Scartalo a casa tua per creare un <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:18.675805Z"
+  },
+  "cpp.look.augments": {
+    "src_hash": "c9e82b3b553596e21c823c1ef72b49c5",
+    "text": "Potenziamenti: ({0}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:18.676100Z"
+  },
+  "cpp.look.brand_new": {
+    "src_hash": "67e0171e2c7b42ade21876467abc41b1",
+    "text": "quello è nuovo di zecca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:18.676380Z"
+  },
+  "cpp.look.charges_many": {
+    "src_hash": "c63a567c09992fa0d0d55e550baf33f9",
+    "text": "che ha {0} addebiti rimasti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:18.676693Z"
+  },
+  "cpp.look.charges_one": {
+    "src_hash": "3aba0c27b52e313ef6b5f4705492c179",
+    "text": "che ha {0} carica rimasta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:18.676974Z"
+  },
+  "cpp.look.classification_tier": {
+    "src_hash": "247ea34e23030407050d4d2435ba4ca2",
+    "text": "Classificazione: {0} Livello: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:24.306506Z"
+  },
+  "cpp.look.expire_in": {
+    "src_hash": "4dcb6c6e017da0db500b976f9f258f2b",
+    "text": "che scadrà tra ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:24.307491Z"
+  },
+  "cpp.look.for_level": {
+    "src_hash": "465a04d6fd09323bc5cb3dcaef7fc784",
+    "text": "per il livello {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:24.307751Z"
+  },
+  "cpp.look.imbuements": {
+    "src_hash": "74abe4dbe8ab5c5fb72cbc5119eeb1fe",
+    "text": "Imbottiture: (",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:24.307954Z"
+  },
+  "cpp.look.it_can_only_be_used_by": {
+    "src_hash": "faccfada0e1f5d0a061297d475bcbfb1",
+    "text": "Può essere utilizzato solo da ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:30.810819Z"
+  },
+  "cpp.look.it_is_empty": {
+    "src_hash": "27e4beb67a5856dec214d43144518ac7",
+    "text": ". È vuoto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:30.811048Z"
+  },
+  "cpp.look.it_weighs": {
+    "src_hash": "ef65945163fedeeb7284484a6ddcefd9",
+    "text": "Pesa {0} once.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:30.811283Z"
+  },
+  "cpp.look.magic_level_n": {
+    "src_hash": "ed8770a4e07871477d3ea12e7bf8416f",
+    "text": "livello magico {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:30.811543Z"
+  },
+  "cpp.look.magic_level_or_higher": {
+    "src_hash": "dfd18250329dc889f0779b8060acf801",
+    "text": "livello magico {0} o superiore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:30.811826Z"
+  },
+  "cpp.look.magic_shield_capacity_fmt": {
+    "src_hash": "46e3e154ed9355b74e1d5fb9e5d60cc4",
+    "text": "{0} e {1}%",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:35.448426Z"
+  },
+  "cpp.look.minute_many": {
+    "src_hash": "ee1bd7cfae2f05af809b419cad697dd2",
+    "text": "{0} minuti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:35.448676Z"
+  },
+  "cpp.look.not_enough_capacity_these": {
+    "src_hash": "bb1ea8ee44d678240165c6407c1772ef",
+    "text": "Non hai abbastanza capacità per trasportare questi oggetti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:35.449058Z"
+  },
+  "cpp.look.not_enough_capacity_this": {
+    "src_hash": "7caeac07bf2119e94f56ed693519201b",
+    "text": "Non hai abbastanza capacità per trasportare questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:35.449421Z"
   }
 }

@@ -53286,5 +53286,341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:14:32.678880Z"
+  },
+  "client.game_stash.text2": {
+    "src_hash": "8524de963f07201e5c086830d370797f",
+    "text": "Încărcare...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:55.097711Z"
+  },
+  "client.tasksystem.text1": {
+    "src_hash": "e04fb54dcda29d1265390400abfe7f98",
+    "text": "Nu poți lua mai multe sarcini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:15:57.440837Z"
+  },
+  "client.tasksystem.text2": {
+    "src_hash": "910261c804abceefc60b456060165a21",
+    "text": "Nu aveți această sarcină activă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:01.950756Z"
+  },
+  "client.tasks.text1": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Vă rugăm să selectați monstru din lista de monștri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:01.951130Z"
+  },
+  "client.tasks.text2": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Vă rugăm să selectați monstru din lista de monștri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:01.951486Z"
+  },
+  "client.tasks.text3": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Vă rugăm să selectați monstru din lista de monștri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:01.951865Z"
+  },
+  "client.tasks.text4": {
+    "src_hash": "0d3a4946f6dad8ce0a07abe8837ba269",
+    "text": "Chiar vrei să renunți la această sarcină?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:01.952210Z"
+  },
+  "client.http.text1": {
+    "src_hash": "0e3c1d553071f45ae73c51aa46fc11d8",
+    "text": "Mozilla/5.0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:09.994223Z"
+  },
+  "client.http.text2": {
+    "src_hash": "01fa7f139e0a66fd80ea634c1aab2b56",
+    "text": "HTTP.get nu este acceptat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:09.994528Z"
+  },
+  "client.string.text1": {
+    "src_hash": "c52e8733f45fb0e1a011ab5842cfc43b",
+    "text": ".. cuvânt ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:17.101229Z"
+  },
+  "client.uimessagebox.text1": {
+    "src_hash": "bf4552dbc37b3b310d3ec89c6f613154",
+    "text": "0 0 108 20",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:17.101470Z"
+  },
+  "client.uipopupmenu.text1": {
+    "src_hash": "b25b16f6372b758f017c5ec5346c4dec",
+    "text": "PopupScrollMenuShortcutLabel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:17.101718Z"
+  },
+  "client.uiwidget.text1": {
+    "src_hash": "6727197a142f594e050449a9c03a11bb",
+    "text": ".. continut ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:17.101917Z"
+  },
+  "client.uiwidget.text2": {
+    "src_hash": "5b638c2b9c736a2ef975b857f04592e5",
+    "text": ".. culoare ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:17.102173Z"
+  },
+  "client.tooltip.text1": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:21.141838Z"
+  },
+  "client.tooltip.text2": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:21.142059Z"
+  },
+  "client.tooltip.text3": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:21.142349Z"
+  },
+  "client.tooltip.text4": {
+    "src_hash": "2bf45f8591786fc32003be23c1bfe3f5",
+    "text": "#4c4c4cff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:21.142631Z"
+  },
+  "client.keybind.text1": {
+    "src_hash": "13108f971825f65d3e53ac5d566fc7dd",
+    "text": "comenzi-presetări",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:21.142874Z"
+  },
+  "client.keybind.text2": {
+    "src_hash": "822ed8c2e829a6224711cb41d0351417",
+    "text": "comenzi-prestat-curent",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:27.807861Z"
+  },
+  "client.keybind.text3": {
+    "src_hash": "836876bd974b725daf1f41a0a676f945",
+    "text": ".. taste.parametru.date..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:27.808135Z"
+  },
+  "client.keybind.text4": {
+    "src_hash": "13108f971825f65d3e53ac5d566fc7dd",
+    "text": "comenzi-presetări",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:27.808369Z"
+  },
+  "client.locales.text4": {
+    "src_hash": "3aedd71da51f4a9db6b7b671c4fba5be",
+    "text": "' lipsește",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:27.808575Z"
+  },
+  "client.neededtranslations.text1": {
+    "src_hash": "8ade35fdb6abe34f78026c4de4e3d51a",
+    "text": "Nu întindeți/micșorați Fereastra de joc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:27.808931Z"
+  },
+  "client.neededtranslations.text2": {
+    "src_hash": "85430ecf57924d2a1afc8e002853f8ab",
+    "text": "Dacă închideți programul, personajul dvs. ar putea rămâne în joc.\nFaceți clic pe 'Logout' pentru a vă asigura că personajul părăsește jocul corect.\nFaceți clic pe 'Exit' dacă doriți să părăsiți programul fără ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:32.290066Z"
+  },
+  "client.neededtranslations.text5": {
+    "src_hash": "1a77494fd9c7f350499ffc88406025bf",
+    "text": "Asigurați-vă că clientul dvs. folosește\nversiunea corectă a clientului de joc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:32.290570Z"
+  },
+  "client.skills.text1": {
+    "src_hash": "41490037dee04a1c564d525637aeea5a",
+    "text": "Afișați/ascundeți ferestrele de competențe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:32.290875Z"
+  },
+  "client.skills.text2": {
+    "src_hash": "41490037dee04a1c564d525637aeea5a",
+    "text": "Afișați/ascundeți ferestrele de competențe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:32.291169Z"
+  },
+  "client.skills.text3": {
+    "src_hash": "41490037dee04a1c564d525637aeea5a",
+    "text": "Afișați/ascundeți ferestrele de competențe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:32.291458Z"
+  },
+  "client.topmenu.text1": {
+    "src_hash": "725e8a97e679d9c98277eb047d355111",
+    "text": "Comutați meniul de sus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:37.358335Z"
+  },
+  "client.topmenu.text2": {
+    "src_hash": "66b5520051049d3712fb6477725bec14",
+    "text": "Ctrl+Shift+T",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:37.358573Z"
+  },
+  "client.topmenu.text3": {
+    "src_hash": "725e8a97e679d9c98277eb047d355111",
+    "text": "Comutați meniul de sus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:37.358849Z"
+  },
+  "client.topmenu.text4": {
+    "src_hash": "725e8a97e679d9c98277eb047d355111",
+    "text": "Comutați meniul de sus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:37.359102Z"
+  },
+  "client.imbuing.text1": {
+    "src_hash": "60d65769e17d580b4cc077b24ba2b1dd",
+    "text": "Informații despre articol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:37.359347Z"
+  },
+  "client.imbuing.text2": {
+    "src_hash": "18adfb026ad4b2df79b6c2ec81a59f14",
+    "text": "Selectați Slot:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:45.450833Z"
+  },
+  "client.imbuing.text3": {
+    "src_hash": "bb2a2334aa0d8fbb37d661b97fc6c766",
+    "text": "Îmbunătăți slotul gol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:45.451100Z"
+  },
+  "client.imbuing.text4": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Faceți clic aici pentru a efectua imbuirea selectată. Acest lucru va consuma sursele astrale și aurul necesare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:45.451622Z"
+  },
+  "client.imbuing.text5": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Imbuirea clară",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:45.451851Z"
+  },
+  "client.textmessage.text1": {
+    "src_hash": "5b427eb87df49635a553759eba2359ab",
+    "text": "Jurnalul serverului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:45.452045Z"
+  },
+  "client.elementnode.text1": {
+    "src_hash": "03f21ad7227062061a33a7766faae58d",
+    "text": "jetoane separate prin spații",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:49.586423Z"
+  },
+  "client.elementnode.text2": {
+    "src_hash": "7421bf1678cb478f6cb1f3e27a79beb0",
+    "text": ", precedând opționalul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:49.586720Z"
+  },
+  "client.elementnode.text3": {
+    "src_hash": "0fc40b454fa8d846c246e663e1b9bc24",
+    "text": ".. -- e = opționalul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:16:49.587261Z"
   }
 }

@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:03:11.947888Z"
+    "updated_at": "2026-02-17T10:05:43.924809Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -29318,5 +29318,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:46:26.648785Z"
+  },
+  "item.1080.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "fälla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.663900Z"
+  },
+  "item.12572.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "En bägare smidd av draken Khax som representerar all kunskap och visdom i TibiaVenezuela",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.703474Z"
+  },
+  "item.12572.name": {
+    "src_hash": "4f318e0a54f6ab67b88c1bb1bc772073",
+    "text": "drakbägare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.703774Z"
+  },
+  "item.14238.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "lera",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.728714Z"
+  },
+  "item.20126.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.823850Z"
+  },
+  "item.20130.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.824338Z"
+  },
+  "item.2121.name": {
+    "src_hash": "7f7eeecbd1e8f8c87f8cc7d1d94393d9",
+    "text": "giftfält",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.846944Z"
+  },
+  "item.21501.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "smutsgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.862730Z"
+  },
+  "item.21971.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "fälla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.875586Z"
+  },
+  "item.21972.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "fälla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:41.875829Z"
+  },
+  "item.2914.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.012450Z"
+  },
+  "item.294.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "fälla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.017290Z"
+  },
+  "item.31265.name": {
+    "src_hash": "4f318e0a54f6ab67b88c1bb1bc772073",
+    "text": "drakbägare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.056107Z"
+  },
+  "item.33709.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "fälla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.142582Z"
+  },
+  "item.37059.name": {
+    "src_hash": "40b25f4a6a4f4fa20e43c63414523461",
+    "text": "lycklig klöver amulett",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.212746Z"
+  },
+  "item.386.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "smutsgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.237026Z"
+  },
+  "item.4.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "lera",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.262394Z"
+  },
+  "item.7756.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "smutsgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.469347Z"
+  },
+  "item.7762.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "smutsgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.469947Z"
+  },
+  "item.876.name": {
+    "src_hash": "f80a3a26775f8f87ce279ce2d0d9e29f",
+    "text": "myrstigen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:42.495251Z"
+  },
+  "item.1069.name": {
+    "src_hash": "5410d1752d6d66d5aef6dcd437b8056a",
+    "text": "bugg tral",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:46.863528Z"
+  },
+  "item.107.desc": {
+    "src_hash": "f3181b5d350c388079a2884540cb8a12",
+    "text": "Den innehåller doften av ett nydödat slem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:05:46.863992Z"
   }
 }

@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-17T00:23:01.557000Z",
-  "cycle": 75,
-  "language": "sr",
-  "json_file": "messages.json",
-  "translated": 3,
+  "timestamp": "2026-02-17T00:25:06.661611Z",
+  "cycle": 76,
+  "language": "pl",
+  "json_file": "npc.json",
+  "translated": 50,
   "placeholders": 0,
-  "guard_fail": 8,
+  "guard_fail": 349,
   "guard": {
-    "placeholder": 8,
+    "placeholder": 0,
     "command": 0,
     "pipe": 0
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 8
+  "strict_skipped_done": 4420
 }

@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 9.0,
+  "coverage_pct": 9.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:58:35.081990Z",
+  "checked_at": "2026-02-17T00:25:57.845871Z",
   "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -248,33 +248,6 @@
       "lang": "HomePanel"
     },
     {
-      "key": "cpp.augment.damage",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "Główny",
-      "lang": "Major"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_minor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minor",
-      "pl": "Mini",
-      "lang": "Minor"
-    },
-    {
       "key": "cpp.combat.agony",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -300,15 +273,6 @@
       "en": "drown",
       "pl": "topić się, tonąć",
       "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.earth",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "earth",
-      "pl": "ziemia",
-      "lang": "earth"
     },
     {
       "key": "cpp.combat.energy",
@@ -480,15 +444,6 @@
       "en": "No loot",
       "pl": "Żadnych łupów",
       "lang": "No loot"
-    },
-    {
-      "key": "cpp.game.offline_training_button_cancel",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cancel",
-      "pl": "Anuluj",
-      "lang": "Cancel"
     },
     {
       "key": "cpp.game.offline_training_button_ok",
@@ -1184,15 +1139,6 @@
       "lang": "{0} VIP."
     },
     {
-      "key": "cpp.protocol.level_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "Poziom",
-      "lang": "Level"
-    },
-    {
       "key": "cpp.protocol.married_to_label",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1200,15 +1146,6 @@
       "en": "Married to",
       "pl": "Żonaty, zamężna do",
       "lang": "Married to"
-    },
-    {
-      "key": "cpp.protocol.outfit_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
     },
     {
       "key": "cpp.protocol.support_outfit_gamemaster",
@@ -1263,15 +1200,6 @@
       "en": "No error.",
       "pl": "Nie błąd.",
       "lang": "No error."
-    },
-    {
-      "key": "cpp.skill.level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "level",
-      "pl": "poziom",
-      "lang": "level"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -1607,15 +1535,6 @@
       "lang": "dragon scale boots"
     },
     {
-      "key": "item.10203.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "skull pile",
-      "pl": "stos czaszek",
-      "lang": "skull pile"
-    },
-    {
       "key": "item.10208.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1787,40 +1706,13 @@
       "lang": "Yes"
     },
     {
-      "key": "module.init.text4",
+      "key": "module.daily_reward.text2",
       "category": "modules",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja =",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tToDo = ",
-      "pl": "Do zrobienia =",
-      "lang": "\tToDo = "
-    },
-    {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja =",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
+      "en": "12/10/2020 - 20:30",
+      "pl": "12.10.2020 - 20:30",
+      "lang": "12/10/2020 - 20:30"
     },
     {
       "key": "monster.hunter.name",
@@ -3612,6 +3504,114 @@
       "en": "Ribbit!",
       "pl": "Kum!",
       "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.frost_troll.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Broar!",
+      "pl": "Bracie!",
+      "lang": "Broar!"
+    },
+    {
+      "key": "monster.troll.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.troll.voice_7",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.troll.voice_9",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmmm, bugs",
+      "pl": "Hmmm, błędy",
+      "lang": "Hmmm, bugs"
+    },
+    {
+      "key": "monster.island_troll.voice_9",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.wolf.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.cave_rat.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.assassin.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.wasp.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    },
+    {
+      "key": "monster.black_knight.voice_8",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "NO MERCY!",
+      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
+      "lang": "NO MERCY!"
+    },
+    {
+      "key": "monster.hydra.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.wyrm.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     }
   ],
   "length_ratio_issues": [

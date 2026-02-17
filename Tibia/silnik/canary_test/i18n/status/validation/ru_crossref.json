@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:58:34.422295Z",
-  "issues_total": 141,
+  "checked_at": "2026-02-17T00:25:57.169381Z",
+  "issues_total": 107,
   "issues_by_type": {
     "consistency_in_language": 55,
-    "pl_reference_missing_translation": 65,
-    "length_ratio_crosscheck": 21
+    "pl_reference_missing_translation": 29,
+    "length_ratio_crosscheck": 23
   },
   "consistency_issues": [
     {
@@ -1028,42 +1028,6 @@
       "lang": "The"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L51.1757",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found",
-      "pl": "Znalazłeś",
-      "lang": "You found"
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L69.1759",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found",
-      "pl": "Znalazłeś",
-      "lang": "You found"
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.the.first.dragon.actions.treasure.chest.L112.1763",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found",
-      "pl": "Znalazłeś",
-      "lang": "You found"
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.the.first.dragon.actions.treasure.chest.L116.1764",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found",
-      "pl": "Znalazłeś",
-      "lang": "You found"
-    },
-    {
       "key": "data.otservbr.global.scripts.quests.the.first.dragon.actions.treasure.chest.L96.1762",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1071,15 +1035,6 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
-    },
-    {
-      "key": "data.otservbr.global.scripts.quests.the.order.of.lion.action.drume.L106.1647",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have",
-      "pl": "Masz",
-      "lang": "You have"
     },
     {
       "key": "data.otservbr.global.scripts.quests.the.rookie.guard.mission06.run.like.wolf.L189.1694",
@@ -1163,15 +1118,6 @@
       "lang": "The"
     },
     {
-      "key": "data.otservbr.global.scripts.quests.the.shattered.isles.quest.action.tortoise.egg.nargor.L20.1915",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found",
-      "pl": "Znalazłeś",
-      "lang": "You found"
-    },
-    {
       "key": "data.otservbr.global.scripts.quests.the.shattered.isles.quest.action.tortoise.egg.nargor.L22.1916",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1179,276 +1125,6 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
-    },
-    {
-      "key": "game.loot.none",
-      "category": "server",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No loot.",
-      "pl": "Brak łupu.",
-      "lang": "No loot."
-    },
-    {
-      "key": "spell.lloyd_wave.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lloyd wave",
-      "pl": "fala Lloyda",
-      "lang": "lloyd wave"
-    },
-    {
-      "key": "spell.foam_splash.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "foamsplash",
-      "pl": "piana",
-      "lang": "foamsplash"
-    },
-    {
-      "key": "spell.ice_chain.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice chain",
-      "pl": "lód łańcuch",
-      "lang": "ice chain"
-    },
-    {
-      "key": "spell.envenom.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Envenom",
-      "pl": "EnveNiem",
-      "lang": "Envenom"
-    },
-    {
-      "key": "spell.ignite.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ignite",
-      "pl": "Zapalać się, zapalać",
-      "lang": "Ignite"
-    },
-    {
-      "key": "spell.mud_attack.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mud Attack",
-      "pl": "Błoto Atak",
-      "lang": "Mud Attack"
-    },
-    {
-      "key": "spell.scorch.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scorch",
-      "pl": "Przypalić, spalić",
-      "lang": "Scorch"
-    },
-    {
-      "key": "spell.holy_flash.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Holy Flash",
-      "pl": "Święty Flash",
-      "lang": "Holy Flash"
-    },
-    {
-      "key": "spell.fierce_berserk.words",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "exori gran",
-      "pl": "exori babcia",
-      "lang": "exori gran"
-    },
-    {
-      "key": "spell.electrify.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Electrify",
-      "pl": "Elektryzować",
-      "lang": "Electrify"
-    },
-    {
-      "key": "spell.berserk.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Berserk",
-      "pl": "To go berserk",
-      "lang": "Berserk"
-    },
-    {
-      "key": "spell.salvation.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Salvation",
-      "pl": "Zbawienie, odkupienie",
-      "lang": "Salvation"
-    },
-    {
-      "key": "spell.intense_recovery.words",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "utura gran",
-      "pl": "utura babcia",
-      "lang": "utura gran"
-    },
-    {
-      "key": "spell.recovery.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Recovery",
-      "pl": "Wyzdrowienie",
-      "lang": "Recovery"
-    },
-    {
-      "key": "spell.intense_healing.words",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "exura gran",
-      "pl": "exura babcia",
-      "lang": "exura gran"
-    },
-    {
-      "key": "spell.heal_party.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Heal Party",
-      "pl": "Lecz Drużyna",
-      "lang": "Heal Party"
-    },
-    {
-      "key": "spell.kick.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "House Kick",
-      "pl": "dom Kick",
-      "lang": "House Kick"
-    },
-    {
-      "key": "spell.magic_rope.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Magic Rope",
-      "pl": "Magia Lina",
-      "lang": "Magic Rope"
-    },
-    {
-      "key": "spell.haste.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Haste",
-      "pl": "Pośpiech",
-      "lang": "Haste"
-    },
-    {
-      "key": "spell.food.words",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "exevo pan",
-      "pl": "exevo patelnia",
-      "lang": "exevo pan"
-    },
-    {
-      "key": "spell.light.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Light",
-      "pl": "Jasny",
-      "lang": "Light"
-    },
-    {
-      "key": "spell.arrow_call.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Arrow Call",
-      "pl": "Strzała, strzałka Call",
-      "lang": "Arrow Call"
-    },
-    {
-      "key": "spell.intense_healing_rune.words",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "adura gran",
-      "pl": "adura babcia",
-      "lang": "adura gran"
-    },
-    {
-      "key": "spell.generator.name",
-      "category": "spells",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "generator",
-      "pl": "prądnica, generator",
-      "lang": "generator"
-    },
-    {
-      "key": "talkaction.gm.spy.slot_helmet",
-      "category": "talkactions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Helmet",
-      "pl": "Hełm",
-      "lang": "Helmet"
-    },
-    {
-      "key": "talkaction.gm.spy.slot_left_hand",
-      "category": "talkactions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Left Hand",
-      "pl": "Lewa ręka",
-      "lang": "Left Hand"
-    },
-    {
-      "key": "talkaction.gm.spy.slot_right_hand",
-      "category": "talkactions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Right Hand",
-      "pl": "Prawa ręka",
-      "lang": "Right Hand"
-    },
-    {
-      "key": "talkaction.gm.spy.slot_ring",
-      "category": "talkactions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ring",
-      "pl": "Pierścień",
-      "lang": "Ring"
-    },
-    {
-      "key": "talkaction.online.msg_category_active",
-      "category": "talkactions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Active: {}",
-      "pl": "Aktywni: {}",
-      "lang": "Active: {}"
     }
   ],
   "length_ratio_issues": [
@@ -1640,11 +1316,29 @@
       "en_len": 5,
       "lang_ratio": 3.2,
       "pl_ratio": 1.2
+    },
+    {
+      "key": "spell.ignite.name",
+      "category": "spells",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.333
+    },
+    {
+      "key": "spell.scorch.name",
+      "category": "spells",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 0.833,
+      "pl_ratio": 2.833
     }
   ],
   "auto_fix": {
-    "attempted": 65,
-    "applied": 36,
+    "attempted": 29,
+    "applied": 0,
     "skipped": 29,
     "errors": 0
   }

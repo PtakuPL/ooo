@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 21.3,
+  "coverage_pct": 21.5,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:58:10.882298Z",
+  "checked_at": "2026-02-17T00:25:50.511407Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -185,15 +185,6 @@
       "lang": "HomePanel"
     },
     {
-      "key": "cpp.augment.damage",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
-    },
-    {
       "key": "cpp.bestiary.charm_category_major",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -237,15 +228,6 @@
       "en": "drown",
       "pl": "topić się, tonąć",
       "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.earth",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "earth",
-      "pl": "ziemia",
-      "lang": "earth"
     },
     {
       "key": "cpp.combat.energy",
@@ -419,15 +401,6 @@
       "lang": "No loot"
     },
     {
-      "key": "cpp.game.offline_training_button_cancel",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cancel",
-      "pl": "Anuluj",
-      "lang": "Cancel"
-    },
-    {
       "key": "cpp.game.offline_training_button_ok",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -453,24 +426,6 @@
       "en": " and ",
       "pl": "i ",
       "lang": " and "
-    },
-    {
-      "key": "cpp.inspect.armor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Armor",
-      "pl": "Zbroja",
-      "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.attack",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Attack",
-      "pl": "Atak",
-      "lang": "Attack"
     },
     {
       "key": "cpp.inspect.augments",
@@ -1121,15 +1076,6 @@
       "lang": "{0} VIP."
     },
     {
-      "key": "cpp.protocol.level_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "Poziom",
-      "lang": "Level"
-    },
-    {
       "key": "cpp.protocol.married_to_label",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1200,15 +1146,6 @@
       "en": "No error.",
       "pl": "Nie błąd.",
       "lang": "No error."
-    },
-    {
-      "key": "cpp.skill.level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "level",
-      "pl": "poziom",
-      "lang": "level"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -1299,15 +1236,6 @@
       "en": "Handywoman",
       "pl": "Złota rączka",
       "lang": "Handywoman"
-    },
-    {
-      "key": "cpp.title.name_45",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huntsman",
-      "pl": "Myśliwy",
-      "lang": "Huntsman"
     },
     {
       "key": "cpp.title.name_45_female",
@@ -1508,15 +1436,6 @@
       "lang": "missile"
     },
     {
-      "key": "cpp.weapon.sword",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sword",
-      "pl": "Miecz",
-      "lang": "sword"
-    },
-    {
       "key": "cpp.weapon.wand",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1704,42 +1623,6 @@
       "en": "Yes",
       "pl": "Tak",
       "lang": "Yes"
-    },
-    {
-      "key": "module.init.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja =",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tToDo = ",
-      "pl": "Do zrobienia =",
-      "lang": "\tToDo = "
-    },
-    {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja =",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
     },
     {
       "key": "monster.hunter.name",
@@ -3612,6 +3495,123 @@
       "en": "Grrr.",
       "pl": "Grrr...",
       "lang": "Grrr."
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr.",
+      "pl": "Grrr...",
+      "lang": "Grrr."
+    },
+    {
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh...",
+      "pl": "O...",
+      "lang": "Oh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chh...",
+      "pl": "Cii...",
+      "lang": "Chh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chhchh?",
+      "pl": "Chhchh...",
+      "lang": "Chhchh?"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chh...",
+      "pl": "Cii...",
+      "lang": "Chh..."
+    },
+    {
+      "key": "npc.a_restless_soul.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Uhhhh...",
+      "pl": "Uuuuhhh...",
+      "lang": "Uhhhh..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ZzzzZzzZz...chrrr...",
+      "pl": "Zzzz... chrrr...",
+      "lang": "ZzzzZzzZz...chrrr..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SLEEP. ...",
+      "pl": "SEN....",
+      "lang": "SLEEP. ..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GAIN. ...",
+      "pl": "NABIERZ SIŁ....",
+      "lang": "GAIN. ..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RISE. ...",
+      "pl": "POWSTAŃ....",
+      "lang": "RISE. ..."
+    },
+    {
+      "key": "npc.a_starving_dog.greet_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<sniff>",
+      "pl": "<węszy>",
+      "lang": "<sniff>"
+    },
+    {
+      "key": "npc.a_starving_dog.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<munch>",
+      "pl": "<przeżuwać>",
+      "lang": "<munch>"
+    },
+    {
+      "key": "npc.al_dee.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
     }
   ],
   "length_ratio_issues": [

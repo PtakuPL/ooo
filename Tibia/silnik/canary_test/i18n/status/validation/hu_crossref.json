@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:58:08.563964Z",
+  "checked_at": "2026-02-17T00:25:48.159532Z",
   "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1657,7 +1657,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
-      "pl": "Wersja =",
+      "pl": "Wersja = ",
       "lang": "\tVersion = "
     },
     {
@@ -1666,7 +1666,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tToDo = ",
-      "pl": "Do zrobienia =",
+      "pl": "Do zrobienia = ",
       "lang": "\tToDo = "
     },
     {
@@ -1675,7 +1675,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
-      "pl": "Wersja =",
+      "pl": "Wersja = ",
       "lang": "\tVersion = "
     },
     {

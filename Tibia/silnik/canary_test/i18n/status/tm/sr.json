@@ -167534,5 +167534,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:23:00.933528Z"
+  },
+  "globalevents.online_record": {
+    "src_hash": "61601b90ebd05b9654009190617e9037",
+    "text": "Нови рекорд: __ПХ0__ играча је пријављено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:23:51.142275Z"
+  },
+  "globalevents.save_interval.complete_plural": {
+    "src_hash": "713aad5758d57fc11f0ed6893211996b",
+    "text": "Чување сервера је завршено. Следеће чување за __ПХ0__ __ПХ1__с!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:23:51.142768Z"
+  },
+  "globalevents.save_interval.complete_singular": {
+    "src_hash": "0af56522408580ddef1c9721cf8cad91",
+    "text": "Чување сервера је завршено. Следеће чување за __ПХ0__ __ПХ1__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:23:51.143185Z"
+  },
+  "globalevents.save_interval.warning": {
+    "src_hash": "21c66b9893b15898ff500b68821832c7",
+    "text": "Сервер ће сачувати све налоге у року од __ПХ0__ секунди. Можда заостајете или се замрзнете на 5 секунди, пронађите безбедно место.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:23:51.143885Z"
+  },
+  "globalevents.server_save.warning": {
+    "src_hash": "7f9ea16a22ee0dc335a63fb281403e42",
+    "text": "Сервер чува игру за __ПХ0__ минута. Молимо одјавите се.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:23:51.144306Z"
   }
 }

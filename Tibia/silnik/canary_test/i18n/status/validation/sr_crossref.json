@@ -1,10 +1,10 @@
 {
   "lang": "sr",
-  "coverage_pct": 11.0,
+  "coverage_pct": 11.5,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-16T23:58:34.963284Z",
+  "checked_at": "2026-02-17T00:25:57.722669Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1612,7 +1612,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
-      "pl": "Wersja =",
+      "pl": "Wersja = ",
       "lang": "\tVersion = "
     },
     {
@@ -1621,7 +1621,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tToDo = ",
-      "pl": "Do zrobienia =",
+      "pl": "Do zrobienia = ",
       "lang": "\tToDo = "
     },
     {
@@ -1630,7 +1630,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
-      "pl": "Wersja =",
+      "pl": "Wersja = ",
       "lang": "\tVersion = "
     },
     {

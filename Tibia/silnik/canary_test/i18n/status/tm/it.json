@@ -32310,5 +32310,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T00:50:28.654484Z"
+  },
+  "data.otservbr.global.npc.a.strange.chalice.L117.1623": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "CIAO? Cosa intendi con 'hi' - non vedi che sono un... devo abbassare la voce. Ti è venuto in mente che questo 'chalice' non vuole essere disturbato?! Lasciami in pace!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.018740Z"
+  },
+  "data.otservbr.global.npc.a.swan.L95.88": {
+    "src_hash": "01a290e08ef2f247f225726e0ca602bf",
+    "text": "Ti saluto, essere mortale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.019115Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L27.2215": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.218606Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L37.2216": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.218991Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.energy.entrance.L47.2217": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.219388Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L23.2224": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.219899Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L47.2225": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.220249Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.lost.exiles.L23.2213": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "La tua scorta è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.220611Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.cobra.mini.bosses.L19.1826": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Superi il fuoco senza subire alcun danno. È ora o mai più...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.231763Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.quaidDen.L10.1828": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Con il potere del Custode oscuro ancora in agguato, la nebbia ti impedisce di entrare nella tana di Quaid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.232424Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.moveevent.drume.entrance.L5.1644": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Hai preso parte alla scaramuccia nelle ultime 10 ore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.267265Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L13.2312": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.272358Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L16.2313": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Ci sono ancora alcune assi e gomene sciolte. Non puoi usare la zattera in questo modo, affonderà sicuramente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.272971Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L21.2314": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Usi la gomena per legare le assi sciolte. La zattera dovrebbe essere idonea alla navigazione adesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.273483Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L27.2315": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedi le parti sparse di una nave naufragata. Miracolosamente il telescopio della nave è sopravvissuto al naufragio e sembra essere ancora intatto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.274187Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L30.2316": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Senza punti di orientamento non troverai mai la strada del ritorno. Prova a trovare un modo per migliorare la tua navigazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.274778Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.library.area.movements.mazzinor.L13.2290": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "I resti ti deporalizzano temporaneamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.275323Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Non hai abbastanza livello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.277831Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L19.2311": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.278278Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.fragrance.L4.2306": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, che profumo infatuante!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.278656Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L111.2308": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Non puoi ancora utilizzare questo portale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.279154Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L142.2309": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Hai scoperto una vecchia scrivania che contiene un'antica mappa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.279620Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L92.2307": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ci hai messo troppo tempo, la battaglia è finita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.280051Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L47.2299": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.280475Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L65.2300": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Non puoi ancora usare questa barca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.280840Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L17.2297": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Mescola ancora una volta il gesso con una goccia del tuo sangue e un po' d'acqua e rinnova il simbolo sul pavimento...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.281525Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L21.2298": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Puoi utilizzare questo ingresso solo durante la notte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.281984Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.chests.L22.2294": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.282286Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.doors.L22.2296": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.282732Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.sacrifice.foods.L224.2295": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Hai completato il rituale dell'offerta del cibo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.283249Z"
+  },
+  "data.otservbr.global.scripts.quests.the.travelling.trader.actions.outlaw.camp.door.L9.2064": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.284104Z"
+  },
+  "game.loot.container_not_held": {
+    "src_hash": "9dc7b7ad844f372874fc3cafe8d3723e",
+    "text": "Devi tenere in mano il contenitore per impostarlo come contenitore di bottino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.285723Z"
+  },
+  "game.trade.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.288107Z"
+  },
+  "server.game.msg_1": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Sei temuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.288457Z"
+  },
+  "server.game.msg_14": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Non esiste un giocatore con questo nome.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.289125Z"
+  },
+  "server.game.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Scusa, non è possibile.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.289860Z"
+  },
+  "server.ioprey.msg_10": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "Si è verificato un errore durante l'elaborazione della tua azione. Per favore prova a riaprire la finestra della preda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:56:48.291889Z"
   }
 }

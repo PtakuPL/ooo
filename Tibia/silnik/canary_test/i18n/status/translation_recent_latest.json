@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:56:15.300697Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T00:56:48.548930Z",
+  "language": "it",
+  "json_file": "server.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310",
+      "en": "You do not have enough level.",
+      "translated": "Non hai abbastanza livello.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L19.2311",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+      "source": "simple"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.fragrance.L4.2306",
+      "en": "Hmmmm, what an infatuating fragrance!",
+      "translated": "Hmmmm, che profumo infatuante!",
+      "source": "simple"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L111.2308",
+      "en": "You can not use this portal yet.",
+      "translated": "Non puoi ancora utilizzare questo portale.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L142.2309",
+      "en": "You have discovered an old writing desk that contains an ancient map.",
+      "translated": "Hai scoperto una vecchia scrivania che contiene un'antica mappa.",
+      "source": "simple"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L92.2307",
+      "en": "You took too long, the battle has ended.",
+      "translated": "Ci hai messo troppo tempo, la battaglia è finita.",
+      "source": "simple"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L47.2299",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.doors.L65.2300",
+      "en": "You can not use this boat yet.",
+      "translated": "Non puoi ancora usare questa barca.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L17.2297",
+      "en": "Once more you mix the chalk with a drop of your blood and a bit of water and renew the symbol on the floor...",
+      "translated": "Mescola ancora una volta il gesso con una goccia del tuo sangue e un po' d'acqua e rinnova il simbolo sul pavimento...",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L21.2298",
+      "en": "You can only use this entrance during the night.",
+      "translated": "Puoi utilizzare questo ingresso solo durante la notte.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.chests.L22.2294",
+      "en": "It is empty.",
+      "translated": "È vuoto.",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.actions.doors.L22.2296",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+      "source": "simple"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.sacrifice.foods.L224.2295",
+      "en": "You have completed the food offering ritual!",
+      "translated": "Hai completato il rituale dell'offerta del cibo!",
+      "source": "simple"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.quests.the.travelling.trader.actions.outlaw.camp.door.L9.2064",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "translated": "La porta sembra essere sigillata contro gli intrusi indesiderati.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "game.loot.container_not_held",
+      "en": "You must be holding the container to set it as a loot container.",
+      "translated": "Devi tenere in mano il contenitore per impostarlo come contenitore di bottino.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "game.trade.not_possible",
+      "en": "Sorry, not possible.",
+      "translated": "Scusa, non è possibile.",
+      "source": "simple"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "server.game.msg_1",
+      "en": "You are feared.",
+      "translated": "Sei temuto.",
+      "source": "simple"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "server.game.msg_14",
+      "en": "A player with this name does not exist.",
+      "translated": "Non esiste un giocatore con questo nome.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "server.game.msg_2",
+      "en": "Sorry, not possible.",
+      "translated": "Scusa, non è possibile.",
+      "source": "simple"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "server.ioprey.msg_10",
+      "en": "There was an error while processing your action. Please try reopening the prey window.",
+      "translated": "Si è verificato un errore durante l'elaborazione della tua azione. Per favore prova a riaprire la finestra della preda.",
+      "source": "simple"
     }
   ]
 }

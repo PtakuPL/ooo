@@ -30198,5 +30198,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:30:06.418347Z"
+  },
+  "startup.functions.msg5": {
+    "src_hash": "790a1821dd6662afbfc756e467b79d24",
+    "text": "ID действия: {}, позиция {}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:34:46.008210Z"
+  },
+  "startup.writeable.msg1": {
+    "src_hash": "1a419d903676ddfd0fa2c6e4f59f6c2f",
+    "text": "Личный бортовой журнал г-на Морриса. (Следующие строки написаны кодом, который вы не можете разобрать. Кажется, мистер Моррис очень недоверчивый человек.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:34:56.047453Z"
+  },
+  "startup.writeable.msg4": {
+    "src_hash": "45206c03cfd02c73921a12631c00877c",
+    "text": "Нет, подходи! Гоблин дома! Люди уходят!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:34:56.047865Z"
+  },
+  "startup.chest.msg3": {
+    "src_hash": "62720b2be297eb9c1276f2a8f2355248",
+    "text": "контейнер = идентификатор сумки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:34:56.048172Z"
+  },
+  "startup.chest.msg4": {
+    "src_hash": "01de21b6f8f5a4d88a9ece3443e883e1",
+    "text": "Легионданпорт",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:34:56.048400Z"
+  },
+  "startup.chest.msg5": {
+    "src_hash": "d9b20a6a55d4c30024d5519f0f0d9a84",
+    "text": "глубже малоберцовой кости1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:00.835012Z"
   }
 }

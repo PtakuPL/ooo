@@ -41494,5 +41494,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:31:30.362569Z"
+  },
+  "event.player.msg2": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "zilnic-recompensa-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:08.827589Z"
+  },
+  "event.player.msg3": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "zilnic-recompensa-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:08.827852Z"
+  },
+  "event.player.msg4": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "zilnic-recompensa-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:08.828089Z"
+  },
+  "event.player.msg5": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "zilnic-recompensa-xp-boost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:08.828318Z"
+  },
+  "event.player.msg_1": {
+    "src_hash": "68362d48bbe58ffe6e80d83dddad1f45",
+    "text": "Nu mai umpleți rezistența, deoarece ați părăsit o zonă de regenerare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:08.828749Z"
+  },
+  "event.player.msg_2": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "A apărut o eroare la procesarea raportului dvs., vă rugăm să contactați un manager de joc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:15.555977Z"
+  },
+  "event.player.msg_3": {
+    "src_hash": "24dc08a041db9d4297f1d6df6a7573cf",
+    "text": "Vă mulțumim că ați raportat {}. Raportul dvs. \\z\n\tva fi procesat de echipa {} cât mai curând posibil.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:15.556518Z"
+  },
+  "event.player.msg_4": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "A apărut o eroare la procesarea raportului dvs., vă rugăm să contactați un manager de joc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:15.556979Z"
+  },
+  "event.player.say_1": {
+    "src_hash": "a65ae4b9d622f5aa0ad9a90c999f9440",
+    "text": "Hrăniți țestoasa, acum puteți trece.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:15.557312Z"
+  },
+  "event.player.msg_report_sent": {
+    "src_hash": "c1d13c15a6ed00ee9e451cc57d9a46a2",
+    "text": "Raportul dvs. a fost trimis la {server}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:15.557686Z"
   }
 }

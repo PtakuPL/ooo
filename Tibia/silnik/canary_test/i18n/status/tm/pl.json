@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:49:43.390488Z"
+    "updated_at": "2026-02-17T04:35:32.336974Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75269,7 +75269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:49:46.012250Z"
+    "updated_at": "2026-02-17T04:35:34.876480Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75277,7 +75277,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:49:46.012673Z"
+    "updated_at": "2026-02-17T04:35:34.876933Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75285,7 +75285,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:49:46.013076Z"
+    "updated_at": "2026-02-17T04:35:34.877335Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -109038,5 +109038,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:15:38.934651Z"
+  },
+  "item.16144.name": {
+    "src_hash": "3dcadb4a2b5086c6ce1056662f891cfc",
+    "text": "martwy smok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:38.522183Z"
+  },
+  "item.16145.name": {
+    "src_hash": "3dcadb4a2b5086c6ce1056662f891cfc",
+    "text": "martwy smok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:38.522414Z"
+  },
+  "item.16146.name": {
+    "src_hash": "3dcadb4a2b5086c6ce1056662f891cfc",
+    "text": "martwy smok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:43.703224Z"
+  },
+  "item.16147.name": {
+    "src_hash": "3dcadb4a2b5086c6ce1056662f891cfc",
+    "text": "martwy smok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:43.703448Z"
+  },
+  "item.16153.name": {
+    "src_hash": "bb2a954097fc01da04ac9135c6387c97",
+    "text": "żelazny kamień ładujący",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:43.703686Z"
+  },
+  "item.16154.name": {
+    "src_hash": "9fc88c9fec90e3272249dcbf6113c183",
+    "text": "świecące wino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:43.703883Z"
+  },
+  "item.16155.name": {
+    "src_hash": "da2bfabdd5c564b93e4d3810af9bf3a6",
+    "text": "ozdobna wstążka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:43.704110Z"
+  },
+  "item.16160.name": {
+    "src_hash": "a5ef27b7dcee3ae0cf16ebfb50bca512",
+    "text": "krystaliczny miecz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:51.955398Z"
+  },
+  "item.16161.desc": {
+    "src_hash": "0f8b98d30e2ded148860fce1e059e14a",
+    "text": "Nawet w świetle dnia gwiazdy wydają się odbijać w każdym aspekcie tego krystalicznego topora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:51.955934Z"
+  },
+  "item.16161.name": {
+    "src_hash": "bc44600d7802931e4a4b1bcbc2f0ca4a",
+    "text": "krystaliczny topór",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:51.956171Z"
+  },
+  "item.16162.name": {
+    "src_hash": "67b11bbc5f1caecf004594481fc1bcf5",
+    "text": "buława mykologiczna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:51.956410Z"
+  },
+  "item.16164.name": {
+    "src_hash": "59301cd10a81a022bef31043fb8f6ddd",
+    "text": "łuk mykologiczny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:51.956632Z"
+  },
+  "item.16165.name": {
+    "src_hash": "f9e1124562b968dd081b2ec8bf738685",
+    "text": "świnia domowa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:58.420244Z"
+  },
+  "item.16166.name": {
+    "src_hash": "f9e1124562b968dd081b2ec8bf738685",
+    "text": "świnia domowa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:58.420456Z"
+  },
+  "item.16167.desc": {
+    "src_hash": "65208b230be21802465cb5da345633e7",
+    "text": "Kryształy takie służą do ładowania teleportów dalekiego zasięgu do miast",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:58.420894Z"
+  },
+  "item.16167.name": {
+    "src_hash": "64ac509d3a6eb474370e48003c3c15e1",
+    "text": "kryształ teleportacyjny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:58.421138Z"
+  },
+  "item.16174.name": {
+    "src_hash": "4480b57c9d207a066b592b430d347dec",
+    "text": "podłoga ze szkła kryształowego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:35:58.421414Z"
+  },
+  "item.16175.name": {
+    "src_hash": "a239cd422f6d39b805f1f7b74aaa9020",
+    "text": "błyszczące ostrze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:03.593339Z"
+  },
+  "item.16176.name": {
+    "src_hash": "b98916c8b5e38dcc32c7543379a6a568",
+    "text": "martwy kryształowy golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:03.593615Z"
+  },
+  "item.16177.name": {
+    "src_hash": "b98916c8b5e38dcc32c7543379a6a568",
+    "text": "martwy kryształowy golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:03.593869Z"
+  },
+  "item.16178.name": {
+    "src_hash": "b98916c8b5e38dcc32c7543379a6a568",
+    "text": "martwy kryształowy golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:03.594183Z"
+  },
+  "item.16179.name": {
+    "src_hash": "b98916c8b5e38dcc32c7543379a6a568",
+    "text": "martwy kryształowy golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:03.594441Z"
+  },
+  "item.16185.name": {
+    "src_hash": "f56b66e5c559d982b71a0287a926c521",
+    "text": "martwa vulcongra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:06.692664Z"
+  },
+  "item.16186.name": {
+    "src_hash": "f56b66e5c559d982b71a0287a926c521",
+    "text": "martwa vulcongra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:06.692914Z"
+  },
+  "item.16187.name": {
+    "src_hash": "f56b66e5c559d982b71a0287a926c521",
+    "text": "martwa vulcongra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:06.693170Z"
+  },
+  "item.16188.name": {
+    "src_hash": "f56b66e5c559d982b71a0287a926c521",
+    "text": "martwa vulcongra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:36:06.693382Z"
   }
 }

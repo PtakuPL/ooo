@@ -1,9 +1,9 @@
 {
   "startup.chest.msg1": "для использования карты",
   "startup.chest.msg2": "для использования скрипта",
-  "startup.chest.msg3": "[EN] container = bagId",
-  "startup.chest.msg4": "[EN] legiondawnport",
-  "startup.chest.msg5": "[EN] deeperfibula1",
+  "startup.chest.msg3": "контейнер = идентификатор сумки",
+  "startup.chest.msg4": "Легионданпорт",
+  "startup.chest.msg5": "глубже малоберцовой кости1",
   "startup.functions.msg1": "[EN] CreateItemOnMap",
   "startup.functions.msg2": "[EN] create_item.lua",
   "startup.functions.msg3": "Все предметы созданы на карте.",
@@ -17,9 +17,9 @@
   "startup.startup.msg1": "[EN] /startup/tables/load.lua",
   "startup.startup.msg2": "[EN] /startup/others/load.lua",
   "startup.teleport.msg1": "левый портал",
-  "startup.writeable.msg1": "[EN] Personal log book of Mr Morris. (The following lines are written in a code that you cannot make out. It seems Mr Morris is a very distrustful person.)",
+  "startup.writeable.msg1": "Личный бортовой журнал г-на Морриса. (Следующие строки написаны кодом, который вы не можете разобрать. Кажется, мистер Моррис очень недоверчивый человек.)",
   "startup.writeable.msg2": "Кулинарные рецепты для дикой природы (кроме белок!), автор Ричард",
   "startup.writeable.msg3": "Похоронен навеки, он больше никогда не вернётся. Не снимайте эту печать, иначе могут случиться плохие вещи.",
-  "startup.writeable.msg4": "[RU] No come near! Goblin home! Humans leave!",
+  "startup.writeable.msg4": "Нет, подходи! Гоблин дома! Люди уходят!",
   "startup.writeable.msg5": "Паладины Тибии, вооружайтесь и несите беспощадную смерть всему злу!"
 }

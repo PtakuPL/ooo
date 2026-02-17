@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T04:32:32.887598Z",
-  "cycle_counter": 1520,
-  "last_target_key": "it:npclib.json",
-  "last_pending_total": 147,
-  "last_tier": 2,
-  "last_cat_priority": 9,
-  "candidates_count": 193,
-  "active_candidates_count": 181,
+  "timestamp": "2026-02-17T04:35:18.304869Z",
+  "cycle_counter": 1523,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 11255,
+  "last_tier": 1,
+  "last_cat_priority": 0,
+  "candidates_count": 192,
+  "active_candidates_count": 180,
   "skipped_backoff": 12,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 241,
+  "cache_cycle": 242,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -334,7 +334,10 @@
     "ro:messages.json": 0,
     "ru:libs.json": 0,
     "sv:quests.json": 0,
-    "sr:quests.json": 0
+    "sr:quests.json": 0,
+    "it:npclib.json": 0,
+    "ru:startup.json": 0,
+    "ro:events.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -387,12 +390,12 @@
     ],
     "lang_completion": {
       "pl": 46.79,
-      "es": 74.79,
+      "es": 74.81,
       "ru": 38.08,
       "ro": 24.53,
-      "it": 15.62,
+      "it": 15.71,
       "sr": 11.65,
-      "sv": 9.4
+      "sv": 9.49
     }
   }
 }

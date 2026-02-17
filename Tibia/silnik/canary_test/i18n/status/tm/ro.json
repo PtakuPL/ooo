@@ -43166,5 +43166,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:59:42.971427Z"
+  },
+  "npc.a_sleeping_dragon.say_1": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Te regăsești în visul dragonului. Puteți {look} în jurul sau {go} într-o anumită direcție. De asemenea, puteți {take} sau {use} un obiect. Introduceți {help} pentru a afișa aceste informații în orice moment.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.683278Z"
+  },
+  "npc.billy.greet_msg_1": {
+    "src_hash": "1affac46b658547d3f90b68084842ccb",
+    "text": "Bună |PLAYERNAME|. Sunt fermier și bucătar, poate te pot interesa într-un {trade} cu mâncare? De asemenea, puteți să-mi cereți {hints} general despre joc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.805215Z"
+  },
+  "npc.billy.walkaway_msg_1": {
+    "src_hash": "1972a0eaf694e91957684eba0ce0acdc",
+    "text": "CAT DE GROBOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.808790Z"
+  },
+  "npc.black_bert.farewell_msg_1": {
+    "src_hash": "962f99ce919b3a8eab1fbe21989935c2",
+    "text": "Pa, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.809081Z"
+  },
+  "npc.black_bert.greet_msg_1": {
+    "src_hash": "56cb7c9fe5ae41c0e637708d1c5c41fa",
+    "text": "Bună ziua, |PLAYERNAME|! Arăți de parcă ești dornic să {trade}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.809571Z"
+  },
+  "npc.bloodshade_rotten.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Muritor! Dacă ești pe un {quest} pentru a-i sluji pe zeul sângelui, stăpânul meu - fii salutat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.811249Z"
+  },
+  "npc.bloodshade_sacrifice.greet_msg_1": {
+    "src_hash": "76571d70e156bb7f2ec4d64c1cf5da28",
+    "text": "Muritor! Dacă ești pe un {quest} pentru a-i sluji pe zeul sângelui, stăpânul meu - fii salutat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.812449Z"
+  },
+  "npc.bo_ques.farewell_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "La revedere. Sunt sigur că vei reveni pentru mai multe. Toate o fac.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.815032Z"
+  },
+  "npc.bo_ques.walkaway_msg_1": {
+    "src_hash": "d9bcd56e30068be6365b9a0bea857a1a",
+    "text": "La revedere. Sunt sigur că vei reveni pentru mai multe. Toate o fac.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.816613Z"
+  },
+  "npc.bolfona.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.816922Z"
+  },
+  "npc.bolfona.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.817670Z"
+  },
+  "npc.frafnar.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.996879Z"
+  },
+  "npc.frafnar.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:55.997654Z"
+  },
+  "npc.grombur.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.063572Z"
+  },
+  "npc.grombur.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.064294Z"
+  },
+  "npc.king_tibianus.walkaway_msg_1": {
+    "src_hash": "6fc6fd5473a14ef5faf70b62c9e91b34",
+    "text": "CAT DE GROBOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.212806Z"
+  },
+  "npc.nokmir.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.317378Z"
+  },
+  "npc.nokmir.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.318196Z"
+  },
+  "npc.rehon.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.417152Z"
+  },
+  "npc.rehon.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.417647Z"
+  },
+  "npc.tehlim.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.500391Z"
+  },
+  "npc.tehlim.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.500801Z"
+  },
+  "npc.xorlosh.farewell_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.578366Z"
+  },
+  "npc.xorlosh.walkaway_msg_1": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "Ne vedem prietene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:56.579116Z"
+  },
+  "npc.a_sleeping_dragon.say_10": {
+    "src_hash": "3dfc299ef9bb06feb416cd56e55b57f8",
+    "text": "Te întorci prin poarta semitranslucidă spre vest. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:00.547977Z"
+  },
+  "npc.a_sleeping_dragon.say_11": {
+    "src_hash": "3cf73e85054a92f8968d144c3db334e5",
+    "text": "Te întorci spre nord spre platou. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:00.548326Z"
+  },
+  "npc.a_sleeping_dragon.say_12": {
+    "src_hash": "ba787ce232620c16a0c665d7de2c954f",
+    "text": "Călătorești spre est prin mai multe blufuri și margini mari de smarald. Tot felul de pietre prețioase sunt împrăștiate pe calea ta. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:00.548935Z"
+  },
+  "npc.a_sleeping_dragon.say_13": {
+    "src_hash": "3988a48325cf8b6da4fc1f68b204db4f",
+    "text": "Scoți un rubin destul de mare dintr-o grămadă înaintea ta. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:00.549342Z"
+  },
+  "npc.a_sleeping_dragon.say_14": {
+    "src_hash": "01035bcddef5e83e2f82ef180af0066a",
+    "text": "Te îndrepți spre nord trecând pe lângă nenumărate pietre în marea purpurie de pietre de sub picioarele tale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:02.971871Z"
+  },
+  "npc.a_sleeping_dragon.say_15": {
+    "src_hash": "389827eea938b1ec81fa8c1253752583",
+    "text": "Evitând lumina puternică, puneți cu grijă atașamentul deasupra prizei ciudate. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:02.972353Z"
+  },
+  "npc.a_sleeping_dragon.say_16": {
+    "src_hash": "71c018dceebc102602a24f5dc7a3b779",
+    "text": "Calea ta spre nord este deschisă. Treci de aripile gigantice ale porții în stânga și în dreapta ta pe măsură ce înaintați. După aproximativ o oră de călătorie se aude un ușor foșnet în depărtare. Te îndrepți mai departe în acea direcție. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:02.973200Z"
+  },
+  "npc.a_sleeping_dragon.say_17": {
+    "src_hash": "c3aac5f8ce3c6a1bfe094eb637ef4b7e",
+    "text": "Călătorești până în jos pe dună și prin poarta spre sud. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:04:02.973627Z"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 263,
+  "total_cycles": 264,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-17T06:03:23.678437",
+  "category": "it",
+  "last_update": "2026-02-17T06:04:19.359582",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,135 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "monsters.json",
-    "keys_to_translate": 1393,
-    "guard_fail": 0,
+    "language": "it",
+    "json_file": "npc.json",
+    "keys_to_translate": 12536,
+    "guard_fail": 6,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 50,
-    "recent_examples": [
-      {
-        "key": "monster.the_hairy_one.desc",
-        "en": "The Hairy One",
-        "translated": "Hairy one",
-        "source": "tm"
-      },
-      {
-        "key": "monster.kreebosh_the_exile.name",
-        "en": "Kreebosh the Exile",
-        "translated": "Kreebosh exile",
-        "source": "tm"
-      },
-      {
-        "key": "monster.kreebosh_the_exile.desc",
-        "en": "Kreebosh the Exile",
-        "translated": "Kreebosh exile",
-        "source": "tm"
-      },
-      {
-        "key": "monster.dracola.voice_2",
-        "en": "YOU ARE ALL DOOMED!",
-        "translated": "\u00a1EST\u00c1IS TODOS CONDENADOS!",
-        "source": "tm"
-      },
-      {
-        "key": "monster.izcandar_the_banished.name",
-        "en": "Izcandar the Banished",
-        "translated": "Izcandar banished",
-        "source": "tm"
-      },
-      {
-        "key": "monster.izcandar_the_banished.desc",
-        "en": "Izcandar the Banished",
-        "translated": "Izcandar banished",
-        "source": "tm"
-      },
-      {
-        "key": "monster.urmahlullu_the_weakened.name",
-        "en": "Urmahlullu the Weakened",
-        "translated": "Urmahlullu weakened",
-        "source": "tm"
-      },
-      {
-        "key": "monster.urmahlullu_the_weakened.desc",
-        "en": "Urmahlullu the Weakened",
-        "translated": "Urmahlullu weakened",
-        "source": "tm"
-      },
-      {
-        "key": "monster.urmahlullu_the_tamed.name",
-        "en": "Urmahlullu the Tamed",
-        "translated": "Urmahlullu tamed",
-        "source": "tm"
-      },
-      {
-        "key": "monster.urmahlullu_the_tamed.desc",
-        "en": "Urmahlullu the Tamed",
-        "translated": "Urmahlullu tamed",
-        "source": "tm"
-      },
-      {
-        "key": "monster.urmahlullu_the_immaculate.name",
-        "en": "Urmahlullu the Immaculate",
-        "translated": "Urmahlullu immaculate",
-        "source": "tm"
-      },
-      {
-        "key": "monster.urmahlullu_the_immaculate.desc",
-        "en": "Urmahlullu the Immaculate",
-        "translated": "Urmahlullu immaculate",
-        "source": "tm"
-      },
-      {
-        "key": "monster.ferumbras_mortal_shell.voice_4",
-        "en": "I WILL MAKE ALL OF YOU SUFFER!",
-        "translated": "\u00a1LOS HAR\u00c9 SUFRIR A TODOS!",
-        "source": "tm"
-      },
-      {
-        "key": "monster.prince_drazzak.voice_4",
-        "en": "CRUSH THEM ALL!",
-        "translated": "\u00a1\u00a1APLASTADLES A TODOS!!",
-        "source": "tm"
-      },
-      {
-        "key": "monster.prince_drazzak.voice_8",
-        "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
-        "translated": "AUN CON TODO ESE TIEMPO EN LA PRISI\u00d3N QUE ME DEBILIT\u00d3, \u00a1NO ERES COMPATIBLE PARA M\u00cd!",
-        "source": "tm"
-      },
-      {
-        "key": "monster.irgix_the_flimsy.name",
-        "en": "Irgix The Flimsy",
-        "translated": "Irgix flimsy",
-        "source": "tm"
-      },
-      {
-        "key": "monster.irgix_the_flimsy.desc",
-        "en": "Irgix The Flimsy",
-        "translated": "Irgix flimsy",
-        "source": "tm"
-      },
-      {
-        "key": "monster.the_dread_maiden.name",
-        "en": "The Dread Maiden",
-        "translated": "Dread maiden",
-        "source": "tm"
-      },
-      {
-        "key": "monster.the_dread_maiden.desc",
-        "en": "The Dread Maiden",
-        "translated": "Dread maiden",
-        "source": "tm"
-      },
-      {
-        "key": "monster.vok_the_freakish.name",
-        "en": "Vok the Freakish",
-        "translated": "Vok freakish",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

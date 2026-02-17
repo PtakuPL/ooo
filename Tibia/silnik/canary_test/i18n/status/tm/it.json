@@ -49182,5 +49182,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:57:27.851544Z"
+  },
+  "npc.alia.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.054670Z"
+  },
+  "npc.alkestios.greet_msg_1": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Una benedizione della natura, viaggiatore! Possa tu non essere influenzato da nessuna forza sinistra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.055252Z"
+  },
+  "npc.amanda.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.065852Z"
+  },
+  "npc.azalea.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.111353Z"
+  },
+  "npc.brewster.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.149625Z"
+  },
+  "npc.cedrik.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.209225Z"
+  },
+  "npc.ferus.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.339796Z"
+  },
+  "npc.iptar_sin.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.515629Z"
+  },
+  "npc.isimov.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.525544Z"
+  },
+  "npc.kasmir.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.587075Z"
+  },
+  "npc.kjesse.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.606569Z"
+  },
+  "npc.lorietta.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.637100Z"
+  },
+  "npc.maealil.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.662154Z"
+  },
+  "npc.ninev.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.733532Z"
+  },
+  "npc.prezil.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.828943Z"
+  },
+  "npc.quentin.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:43.843961Z"
+  },
+  "npc.tyrias.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.022092Z"
+  },
+  "npc.wentworth.say_21": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.060880Z"
+  },
+  "npc.wentworth.say_23": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Spiacenti, non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.061649Z"
+  },
+  "npc.wentworth.say_24": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.062056Z"
+  },
+  "npc.wentworth.say_27": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Quante monete di cristallo vorresti ottenere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.062634Z"
+  },
+  "npc.wentworth.say_28": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.063150Z"
+  },
+  "npc.wentworth.say_29": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.063616Z"
+  },
+  "npc.wentworth.say_31": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.064299Z"
+  },
+  "npc.wentworth.say_32": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.064819Z"
+  },
+  "npc.wentworth.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.065234Z"
+  },
+  "npc.wentworth.say_35": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Spiacenti, non hai abbastanza monete di platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.065886Z"
+  },
+  "npc.wentworth.say_36": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.066347Z"
+  },
+  "npc.wentworth.say_37": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Quante monete di cristallo vorresti cambiare in platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.066906Z"
+  },
+  "npc.wentworth.say_38": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.067340Z"
+  },
+  "npc.wentworth.say_40": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Spiacenti, non hai abbastanza monete di cristallo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.067989Z"
+  },
+  "npc.wentworth.say_41": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Beh, posso aiutarti con qualcos'altro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.068515Z"
+  },
+  "npc.yberius.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.093510Z"
+  },
+  "npc.zedrulon_the_fallen.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:03:44.109684Z"
   }
 }

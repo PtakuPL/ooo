@@ -2481,35 +2481,35 @@
   },
   "item.10198.name": {
     "src_hash": "0a6dcecfe4aa9c8c2ec49ab453984657",
-    "text": "tribal crest",
+    "text": "stamvapen",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.188786Z"
+    "updated_at": "2026-02-17T00:00:47.795766Z"
   },
   "item.10199.name": {
     "src_hash": "9ca33c2744c767a83e7045f51bd5935c",
-    "text": "serpent crest",
+    "text": "ormvapen",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.189080Z"
+    "updated_at": "2026-02-17T00:00:56.019249Z"
   },
   "item.102.name": {
     "src_hash": "2357c882fbe6b5613c047cdba496334b",
-    "text": "white flower",
+    "text": "vit blomma",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.189318Z"
+    "updated_at": "2026-02-17T00:00:56.019468Z"
   },
   "item.10200.name": {
     "src_hash": "82e304e7ef04a2a6b31bbabdc33ed9b3",
-    "text": "crystal boots",
+    "text": "kristall stövlar",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.189549Z"
+    "updated_at": "2026-02-17T00:00:56.019685Z"
   },
   "item.10201.name": {
     "src_hash": "06d4a8c785c1ed681288854d9af74c05",
@@ -2521,43 +2521,43 @@
   },
   "item.10202.name": {
     "src_hash": "2c9020abf2bfa613ade54e932cc5761d",
-    "text": "heart backpack",
+    "text": "hjärta ryggsäck",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.190088Z"
+    "updated_at": "2026-02-17T00:00:56.019895Z"
   },
   "item.10203.name": {
     "src_hash": "28f61ed3699ca1c9a528636cf5d04021",
-    "text": "skull pile",
+    "text": "skallhög",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.190368Z"
+    "updated_at": "2026-02-17T00:00:56.020078Z"
   },
   "item.10205.name": {
     "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
-    "text": "pile of bones",
+    "text": "hög med ben",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.190611Z"
+    "updated_at": "2026-02-17T00:01:01.955404Z"
   },
   "item.10206.name": {
     "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
-    "text": "stone stairs",
+    "text": "stentrappa",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.190838Z"
+    "updated_at": "2026-02-17T00:01:01.955615Z"
   },
   "item.10207.name": {
     "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
-    "text": "snowman package",
+    "text": "snögubbe paket",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:47:54.191117Z"
+    "updated_at": "2026-02-17T00:01:01.956239Z"
   },
   "item.10208.name": {
     "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
@@ -16638,5 +16638,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-16T23:45:38.400035Z"
+  },
+  "item.9867.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:28.393600Z"
+  },
+  "item.9868.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:28.393850Z"
+  },
+  "item.9874.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "stängd dörr",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:28.394366Z"
+  },
+  "item.10009.desc": {
+    "src_hash": "d6e8d0836a63a26392d689c7e7f1cd35",
+    "text": "Idealisk för att polera kronor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:35.397133Z"
+  },
+  "item.10011.desc": {
+    "src_hash": "0c89d4a7562be561508dcd41a4be52fb",
+    "text": "Värdad av både äventyrare och upptäcktsresande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:35.397601Z"
+  },
+  "item.10025.desc": {
+    "src_hash": "3c12c5e5ba3c1bb82f1566b16ee17538",
+    "text": "Ovärderligt för all magisk forskning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:35.397935Z"
+  },
+  "item.10026.desc": {
+    "src_hash": "c903c382d7d46dd93bae60aad16479a9",
+    "text": "Den ser hungrig ut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:35.398240Z"
+  },
+  "item.10027.desc": {
+    "src_hash": "2c09165c1d4ae2e6a5e1f2135c83b723",
+    "text": "Det bästa verktyget för alla prylar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:41.179989Z"
+  },
+  "item.10028.desc": {
+    "src_hash": "0020afc44d9d284397e941e6386940db",
+    "text": "Ett kontrakt där någon desperat person har sålt sin själ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:41.180392Z"
+  },
+  "item.10159.desc": {
+    "src_hash": "b7366edafc0bd113da5467c420cc0e40",
+    "text": "Den tillhörde en gång en förfader till Lazaran. Uppenbarligen hade han riktigt dåliga tänder",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:41.180940Z"
+  },
+  "item.10183.desc": {
+    "src_hash": "ce781ba138e3fa2c9204d1340ba90409",
+    "text": "Detta gift är tänkt att försvaga fienden och bör användas på risfälten nära Chaochai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:41.181414Z"
+  },
+  "item.10184.desc": {
+    "src_hash": "2828b3fef703beeeedd8f585b3d35387",
+    "text": "En karta som visar de senaste trupprörelserna och taktiska instruktioner för delar av kejsarens armé",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:41.181889Z"
+  },
+  "item.10187.desc": {
+    "src_hash": "c2596ec962af99a689fcd635d8a32325",
+    "text": "En extremt sällsynt kristall du återhämtade dig från de förlorade gruvorna.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:47.794819Z"
+  },
+  "item.10189.desc": {
+    "src_hash": "c46a6c5117ed081cf2455efc7bee019a",
+    "text": "Extra fet olja från Zalamons förråd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:47.795197Z"
+  },
+  "item.10198.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Detta vapen verkar viktigt. Du borde inte förlora det",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:47.795567Z"
+  },
+  "item.10199.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Detta vapen verkar viktigt. Du borde inte förlora det",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:47.796124Z"
+  },
+  "item.10207.desc": {
+    "src_hash": "7f2103a12e6c4c48b7f9b7c02d92934f",
+    "text": "Använd den i ditt hus för att avslöja en snögubbe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:01:01.956015Z"
   }
 }

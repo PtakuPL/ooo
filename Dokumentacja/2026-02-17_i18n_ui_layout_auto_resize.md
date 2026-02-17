@@ -826,15 +826,24 @@ void UIWidget::autoFitParent(const UIWidgetPtr& parent)
 5. Spójne z istniejącym systemem PropFlags (TextAutoResize, FixedSize itd.)
 6. Kaskada jest jawna i kontrolowana
 
-### 9.4 Rekomendacja: Podejście A (czyste Lua)
+### 9.4 Rekomendacja: Podejście C (PropAutoFitParent w C++)
 
-**Dlaczego**:
-1. Panel ustawień otwiera się RAZ — nie jest to real-time UI
-2. Obliczenie rozmiarów to jednorazowa operacja w `configureCharacterCategories()`
-3. Lua API jest kompletne — mamy `getTextSize()`, `setWidth()`, `setHeight()`
-4. 9-patch tła automatycznie się rozciągają — graficznie wszystko będzie spójne
-5. Brak zmian C++ = brak ryzyka regresji build/rendering
-6. Łatwe do rozszerzenia na inne panele
+**Dlaczego C a nie B**:
+1. **B modyfikuje anchor layout** — jeden z najbardziej krytycznych komponentów UI.
+   Zmiana w `internalUpdate()` może spowodować regresję w KAŻDYM oknie gry.
+2. **B wymaga bounding box** — w anchor layout dzieci mogą nakładać się, być ukryte,
+   mieć złożone zależności. Obliczenie "prawdziwego" minimum jest trudne.
+3. **C jest precyzyjne** — dodaje flagę PropAutoFitParent TYLKO na elementach potrzebujących
+   propagacji. Nie zmienia logiki layoutu.
+4. **C jest bezpieczne** — kaskada jest jawna (trzeba oznaczyć każdy element), więc
+   nie może "zarażać" elementów które nie powinny się powiększać.
+5. **C jest spójne z istniejącym kodem** — system PropFlags jest już ugruntowany
+   (PropTextAutoResize, PropFixedSize, PropDraggable...). Dodanie 2 nowych flagów
+   jest naturalnym rozszerzeniem.
+6. **C jest łatwe do debugowania** — jeśli element nie rośnie, sprawdzasz czy ma
+   `auto-fit-parent: true`. W B musisz debugować cały bounding box obliczenie.
+7. **Skoro już modyfikowaliśmy C++** (TTFFont, CachedText, drawText) — kolejne zmiany
+   w tym samym frameworku są naturalnym kierunkiem pracy.
 
 ### 9.5 Szczegółowy plan implementacji
 

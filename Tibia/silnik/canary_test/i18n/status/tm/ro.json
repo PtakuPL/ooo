@@ -61326,5 +61326,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:46:31.826366Z"
+  },
+  "questlog.quest_11.mission_32.state_2": {
+    "src_hash": "630372e21dfcd9af10c3a25a0f2ed6d1",
+    "text": "Ai vânat cu succes 400 de coșmaruri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:19.779438Z"
   }
 }

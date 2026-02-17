@@ -68662,5 +68662,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:52:50.632741Z"
+  },
+  "questlog.quest_11.mission_33.state_2": {
+    "src_hash": "952b38d2a5a602d11a083b71e06a1f62",
+    "text": "Hai cacciato con successo 600 creature infernali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:46.340920Z"
   }
 }

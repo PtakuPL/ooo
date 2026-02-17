@@ -37262,5 +37262,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:53:14.088889Z"
+  },
+  "cpp.player.blessing_name_1": {
+    "src_hash": "c377afb2e46bf0b6968e71cb449ac3ea",
+    "text": "Поворот судьбы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:59.835674Z"
+  },
+  "cpp.player.blessing_name_2": {
+    "src_hash": "687b5a49f73970153a885a1088a400ac",
+    "text": "Мудрость одиночества",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:59.836100Z"
+  },
+  "cpp.player.blessing_name_3": {
+    "src_hash": "0ef92f9d3153748682152d49961b0915",
+    "text": "Искра Феникса",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:59.836488Z"
+  },
+  "cpp.player.blessing_name_4": {
+    "src_hash": "f2b09c5da6f73788ea6412bd2eb45b61",
+    "text": "Огонь Солнц",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:59.836851Z"
+  },
+  "cpp.player.blessing_name_5": {
+    "src_hash": "e88c97a290c383c53bfe7ed34ad6e92b",
+    "text": "Духовная защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:54:59.837227Z"
+  },
+  "cpp.player.blessing_name_7": {
+    "src_hash": "32030f154a28323a3ad79b8a2c55bad5",
+    "text": "Очаг горы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:05.259680Z"
+  },
+  "cpp.player.blessing_name_8": {
+    "src_hash": "bf484f6aeb0b8da9bb35360f6d1383a4",
+    "text": "Кровь горы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:05.260051Z"
+  },
+  "cpp.player.corpse_killed_by": {
+    "src_hash": "bf770744ba1f0a60f4b1a92463e810d2",
+    "text": "{0} {1} убит {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:05.260704Z"
+  },
+  "cpp.player.corpse_no_attackers": {
+    "src_hash": "8f2a859c12a509eff15986695d574638",
+    "text": "Нападавшие не установлены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:05.261179Z"
+  },
+  "cpp.player.corpse_recognize": {
+    "src_hash": "85f70d80482f0f0f2594ea40c60c24b1",
+    "text": "Вы узнаете {0}. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:09.678690Z"
+  },
+  "cpp.player.death_exp_lost": {
+    "src_hash": "f140855333c8b1f1553d64c1c4f4b871",
+    "text": "Вы потеряли {0} опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:09.679326Z"
+  },
+  "cpp.player.death_pve": {
+    "src_hash": "66b1f6059d10ac8d40fdfec2c3a27ad6",
+    "text": "Вы умерли во время PvE.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:09.680281Z"
+  },
+  "cpp.player.death_pvp": {
+    "src_hash": "f8e470893e61b3ad6d20963e0b5d90b7",
+    "text": "Вы умерли во время PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:09.681325Z"
+  },
+  "cpp.player.exp_animus_bonus": {
+    "src_hash": "33509188c709f7fb3af22f0e6f094fb5",
+    "text": "(бонус мастерства анимуса {0}%)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:09.682197Z"
+  },
+  "cpp.player.exp_gained": {
+    "src_hash": "859112e38cc40dc10f1f8710a5af67b1",
+    "text": "Вы получили {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:12.387392Z"
+  },
+  "cpp.player.exp_gained_other": {
+    "src_hash": "4910068bf48458d6fdb89df50d9aed92",
+    "text": "{0} получил {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:55:12.387780Z"
   }
 }

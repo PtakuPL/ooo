@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:49:36.400705Z"
+    "updated_at": "2026-02-17T06:34:34.355550Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -54910,5 +54910,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:33:23.602659Z"
+  },
+  "spell.restoration.words": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "exura max vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:27.482750Z"
+  },
+  "spell.invisible.name": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invisibilità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:27.486949Z"
+  },
+  "spell.chivalrous_challenge.words": {
+    "src_hash": "fa7b503fd5e42aa8ed809fd9e22c833f",
+    "text": "exeta amp res",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:27.489671Z"
+  },
+  "spell.apprentice's_strike.name": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Lo sciopero dell'apprendista",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:27.501230Z"
+  },
+  "spell.nature's_embrace.name": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "L'abbraccio della natura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:27.501744Z"
+  },
+  "spell.undead_cavebear_curse.name": {
+    "src_hash": "51734a280f848e861846316bf136d8ac",
+    "text": "maledizione dell'orso delle caverne non morto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:45.299284Z"
+  },
+  "spell.deepling_spellsinger_skill_reducer.name": {
+    "src_hash": "4a8099f47747862e8792165ce20aac45",
+    "text": "riduttore di abilità del cantante incantatore profondo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:45.299876Z"
+  },
+  "spell.zugurosh_soulfire.name": {
+    "src_hash": "5d00482e715b3cbf5ae525f6194311eb",
+    "text": "fuoco dell'anima zugurosh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:47.945950Z"
+  },
+  "spell.undead_dragon_curse.name": {
+    "src_hash": "b92337fee45029436118eff3ab797275",
+    "text": "maledizione del drago non morto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:47.947702Z"
+  },
+  "spell.the_imperor_summon.name": {
+    "src_hash": "e95f65c7bfa433438fb65d93d67fed04",
+    "text": "la convocazione dell'imperatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:47.948177Z"
+  },
+  "spell.mana_drain_chain.name": {
+    "src_hash": "946d777bac68823d29f74ca5f9f8f710",
+    "text": "catena di drenaggio del mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:47.948987Z"
+  },
+  "spell.death_priest_shargon_dazzle.name": {
+    "src_hash": "650af20a824dd7ad6cbcde85a3c660d1",
+    "text": "il prete della morte shargon abbaglia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:47.949533Z"
+  },
+  "spell.wave_t.name": {
+    "src_hash": "4a1995acf97445b6a71f56f2aeddaa2d",
+    "text": "onda t",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:50.875008Z"
+  },
+  "spell.madareth_pillar_skill_reducer.name": {
+    "src_hash": "a84f3c764fa23fad54dc8381dab7a1d9",
+    "text": "Riduttore di abilità del pilastro Madareth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:50.875351Z"
+  },
+  "spell.azerus_summon_2.name": {
+    "src_hash": "f833c24c73b1331c694bdbb1cd06d1a3",
+    "text": "evocazione di azerus 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:50.876136Z"
+  },
+  "spell.rustheap_golem_electrify.name": {
+    "src_hash": "ca0392516b101ec892f2c6e60b0348d8",
+    "text": "Il golem di Ruggine elettrizza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:50.876408Z"
   }
 }

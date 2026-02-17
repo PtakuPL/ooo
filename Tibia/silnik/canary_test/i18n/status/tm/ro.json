@@ -48574,5 +48574,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:24:21.939375Z"
+  },
+  "data.otservbr.global.scripts.quests.adventures.of.galthen.actions.iksupan.entrance.L12.1755": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Ai nevoie de cel puțin nivelul 150 pentru a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.511729Z"
+  },
+  "data.otservbr.global.scripts.quests.chayenne.realm.actions.lever.L11.1689": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "Nu aveți cheia magică a lui Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.512834Z"
+  },
+  "data.otservbr.global.scripts.quests.chayenne.realm.actions.lever.L6.1688": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "Trebuie să așteptați câteva minute pentru a o utiliza din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.513532Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.last.object.L23.2096": {
+    "src_hash": "ddd6237398c160652e46293ac818e5b9",
+    "text": "Simbolul ciudat din peretele din spate strălucește violent.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.527602Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.last.object.L24.2097": {
+    "src_hash": "e383abcb644bc07342757f906ebda41b",
+    "text": "Obiectul de cult stă acolo în liniște. Zona periculoasă din jurul ei a fost aproape dizolvată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.528643Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.last.object.L25.2098": {
+    "src_hash": "67e4e841e7632d46dcfdc852092449f5",
+    "text": "Pe măsură ce întindeți mâna pentru a atinge obiectul de cult, un val de energie a izbucnit din craniu. I-ai alungat puterea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.529543Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L24.1932": {
+    "src_hash": "bf8eb5cea5fb9a7b45fbb13219aa888a",
+    "text": "Un sunet puternic aproape că te asurdă. Din adâncul tău auzi o șoaptă: 'Grass...'",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.569769Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L27.1933": {
+    "src_hash": "78a561116ea546f45d52fd26a3470348",
+    "text": "Un sunet puternic aproape că te asurdă. Din adâncul tău auzi o șoaptă: 'Ice...'",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.570815Z"
+  },
+  "data.otservbr.global.scripts.quests.others.actions.holy.water.L53.1927": {
+    "src_hash": "a8071fd5fd191d609f186ded5ec1fea2",
+    "text": "Stropiți talismanul de coarne cu apă sfințită. Strălucește slab.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.613035Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soulpit.fight.L30.1996": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Cineva se luptă în groapa sufletească!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.622296Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.keyCheck.L18.1830": {
+    "src_hash": "b824070060a96b3767a04442a2bbbd24",
+    "text": "Imediat ce rotiți a doua cheie, un mecanism retrage încuietorile și înghite cheile, deschizând un mic pasaj dincolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.638818Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.keyCheck.L22.1831": {
+    "src_hash": "599d1059eed101de91e1275fef7304f1",
+    "text": "Trebuie să utilizați mecanismul stâlpului în sine pentru a roti ambele chei simultan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.639446Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.keyCheck.L26.1832": {
+    "src_hash": "ef8ec3bba66aa3bfc1deb0e6dbd2d49b",
+    "text": "Atingeți onixul și declanșați și descărcarea enormă de energie brută. Acum este posibil să traversăm portalul din acest mormânt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.640267Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.lair.entrance.L5.1761": {
+    "src_hash": "74de3ece38288807bd3e747ebe19fc4b",
+    "text": "Încă nu ești demn să intri în Bârlogul lui The First Dragon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.645015Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.hallowed.L9.2003": {
+    "src_hash": "9efa4d20bdabe3dd7d5c46c2e12b660b",
+    "text": "Flăcările urlă și mănâncă osul cu foame. Domnul Întunecat este mulțumit de darul tău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.649548Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.inscriptions.L13.2024": {
+    "src_hash": "65b1bcbdbbca5ed48d6d3c7ac0a06c9c",
+    "text": "Cuvintele par să fluture. Un cuvânt rămâne în minte: plutire",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.650044Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.inscriptions.L5.2022": {
+    "src_hash": "5650a1ba0060a83b12bc68f84825a89f",
+    "text": "Cuvintele par să respire, ciudat. Un cuvânt rămâne în minte: bronz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.650684Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.inscriptions.L9.2023": {
+    "src_hash": "d0d188433a2cb4792bb0534e52f90092",
+    "text": "Cuvintele par să strălucească ușor. Un nume se fixează în mintea ta: Takesha Antishu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.651245Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.key2.L14.2016": {
+    "src_hash": "5fb38602d50efd74221fdf1e74fbee29",
+    "text": "Ieși din camera mea!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.651634Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.key2.L9.2015": {
+    "src_hash": "c01ef6b8ed5e20d7721df122e9083659",
+    "text": "O mână invizibilă te trage înăuntru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:03.652028Z"
+  },
+  "data.otservbr.global.npc.bozo.L610.917": {
+    "src_hash": "26d4a88f9aec297a968faf6fd4c7f84c",
+    "text": "Bună, bună, bună, domnișoară |PLAYERNAME|! Ce vă aduce {here}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:11.637464Z"
+  },
+  "data.otservbr.global.npc.bozo.L922.918": {
+    "src_hash": "e0c720dccd466a9047c7f84dffbf8cfc",
+    "text": "Ține minte: o glumă pe zi ține ghouls departe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:11.637886Z"
+  },
+  "data.otservbr.global.npc.bozo.L923.919": {
+    "src_hash": "901eba179c016bc753815f362425c4cc",
+    "text": "Hei! Proștii au și sentimente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:11.638345Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L134.319": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Bun venit, |PLAYERNAME|! Fie ca pământul să vă protejeze pe terenurile stâncoase. Dacă aveți nevoie de un {passage}, vă pot ajuta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:16.528118Z"
+  },
+  "data.otservbr.global.npc.bron.L188.28": {
+    "src_hash": "bc13951dddf4f12c470dbcddf105f4db",
+    "text": "Bun venit în coliba mea umilă, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:16.528675Z"
+  },
+  "data.otservbr.global.npc.bron.L192.29": {
+    "src_hash": "64e4ad7815f4475d64461abc6df46281",
+    "text": "Ai grijă, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:21.687214Z"
+  },
+  "data.otservbr.global.npc.bron.L193.30": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Ai grijă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:21.687436Z"
+  },
+  "data.otservbr.global.npc.bron.L58.27": {
+    "src_hash": "3c96311a2df7cd5491976b4303ecfa9c",
+    "text": "O, nu! Chiar ăsta am fost eu? Este atât de penibil, nu am idee ce mi-a pătruns. Acesta a fost spiritul de luptă pe care mi l-ai dat?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:21.688084Z"
+  },
+  "data.otservbr.global.npc.bruno.L62.438": {
+    "src_hash": "130d80e1c83d95931a68442d397fcbbc",
+    "text": "La revedere și vino din nou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:34:21.688521Z"
   }
 }

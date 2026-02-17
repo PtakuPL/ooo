@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T06:20:13.868211Z",
+  "timestamp": "2026-02-17T06:21:15.798161Z",
   "enabled": true,
   "active": true,
   "pending_key": "es,it,pl,ro,ru,sr,sv",
@@ -14,20 +14,20 @@
   ],
   "started_at": "2026-02-16T22:15:50.792950Z",
   "start_cycle": 818,
-  "cycle_counter": 1729,
+  "cycle_counter": 1732,
   "baseline_quality_rate_pct": 228.112,
   "best_quality_rate_pct": 166.811,
-  "current_quality_rate_pct": 182.526,
-  "active_minutes": 484.385,
+  "current_quality_rate_pct": 182.865,
+  "active_minutes": 485.417,
   "detected": false,
   "severity": "info",
   "reason": "tracking",
   "lang_completion": {
-    "pl": 47.87,
+    "pl": 47.96,
     "es": 74.97,
-    "ru": 38.67,
+    "ru": 38.69,
     "ro": 26.08,
-    "it": 17.07,
+    "it": 17.16,
     "sr": 12.13,
     "sv": 9.89
   }

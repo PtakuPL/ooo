@@ -113878,5 +113878,205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:20:09.009930Z"
+  },
+  "npc.prezil.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.172254Z"
+  },
+  "npc.prezil.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.172818Z"
+  },
+  "npc.prezil.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.173848Z"
+  },
+  "npc.prezil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.174986Z"
+  },
+  "npc.puffels.greet_msg_1": {
+    "src_hash": "a13ff91d8ddfb0680922cd814ebba1ef",
+    "text": "Ta, kolejny głupiec {disturbing} mnie, co za radość.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.180198Z"
+  },
+  "npc.pydar.greet_msg_1": {
+    "src_hash": "3778695abd72ca6d50cb10eea6c816f8",
+    "text": "Witaj |PLAYERNAME|! Czuję na tobie zapach feniksa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.186458Z"
+  },
+  "npc.pydar.walkaway_msg_1": {
+    "src_hash": "56043323b6d3ccbbcb1b917776895412",
+    "text": "Niech ogień w twoim sercu nigdy nie zgaśnie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.199623Z"
+  },
+  "npc.pythius_the_rotten.farewell_msg_1": {
+    "src_hash": "fe235aa909c845a22838cb710081f990",
+    "text": "WRACAJ KIEDYKOLWIEK I PRZYNIEŚ MI SKARBY.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.200726Z"
+  },
+  "npc.pythius_the_rotten.walkaway_msg_1": {
+    "src_hash": "fe235aa909c845a22838cb710081f990",
+    "text": "WRACAJ KIEDYKOLWIEK I PRZYNIEŚ MI SKARBY.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.206704Z"
+  },
+  "npc.queen_eloise.say_12": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.211458Z"
+  },
+  "npc.queen_eloise.say_5": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.215142Z"
+  },
+  "npc.queen_eloise.say_8": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.216634Z"
+  },
+  "npc.quentin.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.238617Z"
+  },
+  "npc.quentin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.239694Z"
+  },
+  "npc.quentin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.240651Z"
+  },
+  "npc.quentin.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.241722Z"
+  },
+  "npc.quentin.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.242957Z"
+  },
+  "npc.quentin.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.258614Z"
+  },
+  "npc.quentin.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.260704Z"
+  },
+  "npc.rabaz.greet_msg_1": {
+    "src_hash": "8337e6f4e5bb940c6eb437da998a3403",
+    "text": "Ach, klient! Śmiało przeglądaj moje towary, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.263100Z"
+  },
+  "npc.rachel.greet_msg_1": {
+    "src_hash": "bacf2cb62beee7c4863d2324c958a97b",
+    "text": "Witaj |PLAYERNAME|! Czego potrzebujesz?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.269828Z"
+  },
+  "npc.rahkem.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.279068Z"
+  },
+  "npc.rahkem.stdmod_2": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.284107Z"
+  },
+  "npc.rahkem.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.294780Z"
+  },
+  "npc.rahkem.stdmod_4": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:20:38.295350Z"
   }
 }

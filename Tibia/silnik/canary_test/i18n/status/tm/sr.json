@@ -172830,5 +172830,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:42:02.748465Z"
+  },
+  "monster.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:38.510637Z"
+  },
+  "monster.munster.desc": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:38.511088Z"
+  },
+  "monster.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:38.551684Z"
+  },
+  "monster.teleskor.desc": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "__ПХ0__",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:38.552032Z"
+  },
+  "monster.wasp.voice_2": {
+    "src_hash": "a4a90cf143e6eb7fa208ab8f7c5f7439",
+    "text": "Бсссссс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:38.650533Z"
+  },
+  "monster.apprentice_sheng.name": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Шегрт __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:44.372744Z"
+  },
+  "monster.apprentice_sheng.desc": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Шегрт __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:44.373170Z"
+  },
+  "monster.cyclops_drone.name": {
+    "src_hash": "41883a13e98966ed4ea31f835189a419",
+    "text": "__ПХ0__ Дрон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:44.373868Z"
+  },
+  "monster.cyclops_smith.name": {
+    "src_hash": "e461fc845371237a03c88aa64d6c2769",
+    "text": "__ПХ0__ Смитх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:44.374346Z"
+  },
+  "monster.war_golem.voice_1": {
+    "src_hash": "7331ae8f00a9bc86cc0df66880c4ab8c",
+    "text": "__ПХ0__ барада никто!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:44.374787Z"
+  },
+  "monster.metal_gargoyle.name": {
+    "src_hash": "66c2e4dd46456a945e554ed2d3fee6cd",
+    "text": "Метал __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:50.087637Z"
+  },
+  "monster.diamond_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Грешка. ЛОАД __ПХ0__,8,1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:50.087982Z"
+  },
+  "monster.iron_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Грешка. ЛОАД __ПХ0__,8,1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:50.088300Z"
+  },
+  "monster.golden_servant.voice_1": {
+    "src_hash": "5413c473313887eee9ff21cd93d9f3d2",
+    "text": "Грешка. ЛОАД __ПХ0__,8,1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:50.088616Z"
+  },
+  "monster.acid_blob.voice_1": {
+    "src_hash": "bbc4f52672d41d591d71a69836b351ba",
+    "text": "Кззцхххх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:50.088833Z"
+  },
+  "monster.frost_troll.voice_1": {
+    "src_hash": "081b99983f3751c20ea157a31fde8ae9",
+    "text": "Бррр",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:48:52.760065Z"
   }
 }

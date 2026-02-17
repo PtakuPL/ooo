@@ -1,46 +1,135 @@
 {
-  "timestamp": "2026-02-17T02:29:13.662947Z",
+  "timestamp": "2026-02-17T02:30:14.304741Z",
   "checked_entries": 100,
-  "issues_found": 13,
+  "issues_found": 24,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 20,
+    "identical_to_en_exempt": 23,
     "artifact_token": 9,
-    "suspicious_log_high": 108,
-    "suspicious_log_critical": 82,
-    "suspicious_log_low": 8,
-    "suspicious_log_medium": 2,
-    "suspicious_rejected_critical": 172,
-    "suspicious_rejected_high": 28
+    "identical_to_en": 15,
+    "suspicious_log_critical": 67,
+    "suspicious_log_high": 133,
+    "suspicious_rejected_critical": 163,
+    "suspicious_rejected_high": 37
   },
   "issues": [
     {
-      "key": "spell.quara_raider_watercreature.words",
+      "key": "scripts.auto_loot.msg_2",
       "lang": "es",
-      "type": "identical_to_en",
-      "en": "###quara_sea_monster",
-      "translated": "###quara_sea_monster"
+      "type": "artifact_token",
+      "en": "Autoloot mode set to ALL.",
+      "translated": "Modo de autoloot establecido a TODO."
     },
     {
-      "key": "spell.quara_raider_icering.words",
+      "key": "scripts.prince_drazzak_summon.say_1",
       "lang": "es",
-      "type": "identical_to_en",
-      "en": "###quara_large_ice_ring",
-      "translated": "###quara_large_ice_ring"
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
     },
     {
-      "key": "spell.quara_plunderer_cross.words",
+      "key": "raid.example.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "###quara_cross_death",
-      "translated": "###quara_cross_death"
+      "en": "Example",
+      "translated": "Example"
     },
     {
-      "key": "spell.quara_raider_watersplash.words",
+      "key": "raid.raids.name",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "###quara_water_splash",
-      "translated": "###quara_water_splash"
+      "en": "Raids",
+      "translated": "Raids"
+    },
+    {
+      "key": "raid.undead_darashia.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Undead Darashia",
+      "translated": "Undead Darashia"
+    },
+    {
+      "key": "raid.priestesses.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Priestesses",
+      "translated": "Priestesses"
+    },
+    {
+      "key": "raid.barba_svar.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Barba Svar",
+      "translated": "Barba Svar"
+    },
+    {
+      "key": "raid.barba_bittermor.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor"
+    },
+    {
+      "key": "raid.ghazbaran.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
+    },
+    {
+      "key": "raid.barbarian.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Barbarian",
+      "translated": "Barbarian"
+    },
+    {
+      "key": "raid.hirintror.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "raid.terrorbirds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -90,20 +179,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "scripts.auto_loot.msg_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Autoloot mode set to ALL.",
-      "translated": "Modo de autoloot establecido a TODO."
-    },
-    {
-      "key": "scripts.prince_drazzak_summon.say_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
     }
   ],
   "threshold": 10,

@@ -26190,5 +26190,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:23:32.137557Z"
+  },
+  "server.ioprey.msg_20": {
+    "src_hash": "c706c53fc27cdd137e911cfc8e723ff2",
+    "text": "При обработке вашего действия произошла ошибка. Попробуйте снова открыть окно задач.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:45.508887Z"
+  },
+  "server.ioprey.msg_21": {
+    "src_hash": "937e9d0dbd43bdd08d74dd1aefbb3f5d",
+    "text": "У вас уже есть активный монстр в этом слоте для охоты.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:45.509473Z"
+  },
+  "server.ioprey.msg_23": {
+    "src_hash": "b85fc029e35b90487d5a06bed1df6c97",
+    "text": "Вы не можете получить награду за задание, имея пустой слот для поиска заданий.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:45.510038Z"
+  },
+  "data.otservbr.global.npc.aneus.L130.1323": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Приветствую искателя приключений |PLAYERNAME|. Что привело тебя ко мне?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:52.545233Z"
+  },
+  "data.otservbr.global.npc.aneus.L131.1324": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "До свидания и берегите себя!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:52.545586Z"
+  },
+  "data.otservbr.global.npc.angelina.L58.143": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Надо хвалить богов за то, что я наконец спасся. У меня не так много мирских благ, но, пожалуйста, примите небольшую награду, а вы?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:52.546276Z"
+  },
+  "data.otservbr.global.npc.angelina.L60.144": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Спасибо, что спасли мне жизнь! Мне телепортировать тебя из Темного Собора?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:52.546813Z"
+  },
+  "data.otservbr.global.npc.angelina.L84.145": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Да благословят вас боги.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:54.468192Z"
+  },
+  "data.otservbr.global.npc.angelina.L85.146": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Да благословят вас боги.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:54.468509Z"
   }
 }

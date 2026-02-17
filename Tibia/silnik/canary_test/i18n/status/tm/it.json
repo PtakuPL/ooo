@@ -38878,5 +38878,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T02:22:11.306971Z"
+  },
+  "data.otservbr.global.npc.amanda.L200.1226": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.257132Z"
+  },
+  "data.otservbr.global.npc.asima.L179.1417": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.266682Z"
+  },
+  "data.otservbr.global.npc.azalea.L148.851": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.269354Z"
+  },
+  "data.otservbr.global.npc.battlemart.L67.1363": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.274775Z"
+  },
+  "data.otservbr.global.npc.brewster.L185.1484": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.285553Z"
+  },
+  "data.otservbr.global.npc.cedrik.L148.1392": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.299747Z"
+  },
+  "data.otservbr.global.npc.chuckles.L148.1321": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.303069Z"
+  },
+  "data.otservbr.global.npc.fenech.L172.1391": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.319857Z"
+  },
+  "data.otservbr.global.npc.ferus.L148.699": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.320869Z"
+  },
+  "data.otservbr.global.npc.frans.L133.255": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.323793Z"
+  },
+  "data.otservbr.global.npc.frederik.L156.762": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.324590Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L84.287": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.328488Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L85.288": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.328818Z"
+  },
+  "data.otservbr.global.npc.ghorza.L140.1513": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.330451Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L153.923": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.331864Z"
+  },
+  "data.otservbr.global.npc.hamish.L203.765": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.342168Z"
+  },
+  "data.otservbr.global.npc.haroun.L144.807": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.344814Z"
+  },
+  "data.otservbr.global.npc.isimov.L169.1003": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.349883Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L125.1120": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... addio, bambina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.350901Z"
+  },
+  "data.otservbr.global.npc.kasmir.L170.333": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.359397Z"
+  },
+  "data.otservbr.global.npc.khanna.L208.3": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.362333Z"
+  },
+  "data.otservbr.global.npc.kjesse.L148.352": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.362958Z"
+  },
+  "data.otservbr.global.npc.lorietta.L148.1077": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.368893Z"
+  },
+  "data.otservbr.global.npc.maealil.L170.1601": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.371671Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L139.841": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.380820Z"
+  },
+  "data.otservbr.global.npc.nelly.L169.418": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.383099Z"
+  },
+  "data.otservbr.global.npc.nipuna.L170.1588": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.384631Z"
+  },
+  "data.otservbr.global.npc.prezil.L143.719": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.393617Z"
+  },
+  "data.otservbr.global.npc.rachel.L180.742": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.396984Z"
+  },
+  "data.otservbr.global.npc.richard.L201.341": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.400745Z"
+  },
+  "data.otservbr.global.npc.romir.L157.1044": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.403284Z"
+  },
+  "data.otservbr.global.npc.shiriel.L145.1149": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.411433Z"
+  },
+  "data.otservbr.global.npc.sigurd.L147.1171": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.414134Z"
+  },
+  "data.otservbr.global.npc.sundara.L170.1087": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.416809Z"
+  },
+  "data.otservbr.global.npc.tandros.L160.196": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.418752Z"
+  },
+  "data.otservbr.global.npc.topsy.L181.925": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.428278Z"
+  },
+  "data.otservbr.global.npc.tyrias.L173.1272": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:29:40.429729Z"
   }
 }

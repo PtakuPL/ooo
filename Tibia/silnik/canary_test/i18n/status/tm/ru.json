@@ -31798,5 +31798,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:42:06.982524Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L23.2224": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.151687Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.gnomes.ordnance.end.L47.2225": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.152052Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.lost.exiles.L23.2213": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.152417Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.cobra.mini.bosses.L19.1826": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Вы минуете огонь, не получив никакого урона. Сейчас или никогда...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.163329Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.movements.quaidDen.L10.1828": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Поскольку сила темного Хранителя все еще сдерживается, туман не дает вам войти в логово Куэйда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.164198Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.library.area.movements.mazzinor.L13.2290": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Останки временно депорализуют вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.214019Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L142.2309": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Вы обнаружили старый письменный стол, на котором лежит древняя карта.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.218259Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.movements.elemental.portals.L92.2307": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Вы потратили слишком много времени, битва окончена.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.218702Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.sacrifice.foods.L224.2295": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Вы завершили ритуал подношения еды!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.221592Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.parth.of.defiances.desert.movements.teleportTo.L127.2292": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Вы должны подождать. Кто-то сейчас бросает вызов Яростному Скорпиону.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.222129Z"
+  },
+  "game.loot.container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Внимание! Контейнер, присвоенный категории {0}, заполнен.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.224681Z"
+  },
+  "game.loot.corpses_many": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Вы разграбили трупы {0}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.225647Z"
+  },
+  "game.loot.too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Внимание! Добыча, которую вы пытаетесь подобрать, слишком тяжела для вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:48:46.227542Z"
   }
 }

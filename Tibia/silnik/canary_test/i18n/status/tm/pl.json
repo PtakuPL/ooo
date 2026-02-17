@@ -112614,5 +112614,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:43:54.944858Z"
+  },
+  "quests.rookie_guard.missions.bank_paulie": {
+    "src_hash": "6b624ca2502c466e5008873f90c2ae19",
+    "text": "Idź w prawo, aby znaleźć bank i porozmawiaj z Pauliem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:25.536259Z"
+  },
+  "quests.rookie_guard.missions.entering_orcland": {
+    "src_hash": "888b5c565f98525bfd7f484fd4d224ea",
+    "text": "Wkraczasz do Orclandu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:25.536538Z"
+  },
+  "quests.rookie_guard.missions.graveyard_east": {
+    "src_hash": "d924be505bf333ab308b1b53d717888f",
+    "text": "Podążaj drogą na wschód i na południe, aby dotrzeć do cmentarza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:25.536956Z"
+  },
+  "quests.rookie_guard.missions.hallway_library": {
+    "src_hash": "3fbc2a3f449877544b3501c3dc089ba6",
+    "text": "Przejdź przez północne drzwi i podążaj korytarzami, aby znaleźć skarbiec biblioteki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:25.537410Z"
+  },
+  "quests.rookie_guard.missions.hyacinth_east": {
+    "src_hash": "fe8257d7dace20157b7b7b0e21d01a59",
+    "text": "Podążaj ścieżką na wschód, aby znaleźć mały domek Hiacynta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:25.537848Z"
+  },
+  "quests.rookie_guard.missions.library_vault": {
+    "src_hash": "8844ad0528ff2e760b413c4065011ee2",
+    "text": "Skarbiec biblioteki znajduje się pod akademią. Idź na północ i skieruj się w dół kilkoma schodami, aż znajdziesz drzwi do zadań.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:32.971655Z"
+  },
+  "quests.rookie_guard.missions.no_bag_yet": {
+    "src_hash": "127895e14ee90d1419f6d99e5d597887",
+    "text": "Nie masz jeszcze torby z przedmiotami. Otwórz drzwi w piwnicy akademii na lewo od Pauliego, aby je zdobyć!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:32.972219Z"
+  },
+  "quests.rookie_guard.missions.not_crypt_south": {
+    "src_hash": "a9007bd061d7c2e1ec6784d4454d5061",
+    "text": "To nie jest droga do krypty. Idź na południe, aby dotrzeć do cmentarza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:32.972647Z"
+  },
+  "quests.rookie_guard.missions.not_hyacinth_south": {
+    "src_hash": "62f6c9aca08d7d63d85194cd0d78fc51",
+    "text": "To nie jest droga do Hiacynta. Pozostań na ścieżce nieco bardziej na południe, aby znaleźć domek Hiacynta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:32.973168Z"
+  },
+  "quests.rookie_guard.missions.not_tarantula_nw": {
+    "src_hash": "66aa34dbdc1a9e2425eb33eba5550813",
+    "text": "To nie jest droga do legowiska tarantuli. Kieruj się na północny zachód i wejdź na małą rampę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:32.973675Z"
+  },
+  "quests.rookie_guard.missions.not_troll_north": {
+    "src_hash": "9719068dca76f1d7df2164471b7c3c53",
+    "text": "To nie jest droga do jaskiń trolli. Aby do nich dotrzeć, podążaj ścieżką na północ za wzgórzem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:40.472387Z"
+  },
+  "quests.rookie_guard.missions.not_wasps_north": {
+    "src_hash": "59294ed775b60dfcddea634a22e66d26",
+    "text": "To nie jest droga do legowiska os. Aby do niego dotrzeć, wybierz północną ścieżkę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:40.472895Z"
+  },
+  "quests.rookie_guard.missions.orc_fortress_path": {
+    "src_hash": "cd0bb23122055e63b4c1e79ad8fa8d9b",
+    "text": "Podążaj ścieżką na północ, przejdź przez most na południe i idź na zachód, aby dotrzeć do fortecy orków.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:40.473423Z"
+  },
+  "quests.rookie_guard.missions.orc_west": {
+    "src_hash": "e9b535dc25a0771d44f5aa712d554844",
+    "text": "Podążaj ścieżką na zachód, aby dotrzeć do fortecy orków.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:40.473841Z"
+  },
+  "quests.rookie_guard.missions.road_main": {
+    "src_hash": "80538ccded69460ca147a0f2eb530c73",
+    "text": "Droga ta stanowi główny dojazd do wsi. Może najpierw zechcesz zakończyć swój biznes tutaj.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:40.474393Z"
+  },
+  "quests.rookie_guard.missions.tarantula_stairs": {
+    "src_hash": "4599c6cf7b47e4cbfd70383bc69a16e6",
+    "text": "Idź na północ i zejdź po schodach, aby dotrzeć do legowiska tarantuli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:48.412901Z"
+  },
+  "quests.rookie_guard.missions.troll_caves": {
+    "src_hash": "29e46fcdd186a137a97b31af10a887bb",
+    "text": "Podążaj ścieżką na północ, obok wzgórza, aby dotrzeć do jaskiń trolli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:48.413397Z"
+  },
+  "quests.rookie_guard.missions.wasps_bridge": {
+    "src_hash": "c0897396d3529224b0c0d55db4afeb59",
+    "text": "Aby dotrzeć do gniazd os, podążaj ścieżką na północ i przejdź przez most na zachód, jakbyś chciał dotrzeć do pająków.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:48.413962Z"
+  },
+  "quests.rookie_guard.missions.wasps_bridge_south": {
+    "src_hash": "2899810eaf301f106514be78d054dc06",
+    "text": "Zejdź południowymi schodami w dół mostu i udaj się do legowiska os.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:48.414536Z"
+  },
+  "quests.rookie_guard.missions.wasps_west": {
+    "src_hash": "6b25fc340d9852d753befbf5aade6526",
+    "text": "Podążaj ścieżką na zachód, aby znaleźć legowisko os.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:48.414916Z"
+  },
+  "quests.rookie_guard.missions.wolf_forest": {
+    "src_hash": "3763dba33d86e92921673c71d37b2a02",
+    "text": "Podążaj ścieżką na wschód, a kiedy się rozdzieli, kieruj się na północny wschód, aby znaleźć wilczy las.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:55.526863Z"
+  },
+  "quests.roshamuul.faced_boss_hours": {
+    "src_hash": "a09179e5adef5d910ce70d31a9760cc1",
+    "text": "Walczyłeś z tym bossem w ciągu ostatnich {0} godzin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:55.527261Z"
+  },
+  "quests.roshamuul_quest.use_on_silencer_plateau_is_located": {
+    "src_hash": "91ae36b3e633dc84bb2f68f0b3d77f95",
+    "text": "Zastosowanie na Płaskowyżu Tłumików znajduje się w południowo-wschodniej części Roshamuul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:55.527853Z"
+  },
+  "quests.roshamuul_quest.you_need_kill_all_monsters": {
+    "src_hash": "1a2624203802bd89977616b5327e7b9b",
+    "text": "Musisz zabić wszystkie potwory",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:55.528212Z"
+  },
+  "quests.roshamuul_quest.you_need_to_wait": {
+    "src_hash": "8d82fecf82c3358c0ac68fda476f6f0f",
+    "text": "Musisz poczekać",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:55.528451Z"
+  },
+  "quests.secret_library.ancient_passage": {
+    "src_hash": "87433a234f95e5361adff04f2b8a02f4",
+    "text": "Przeciskasz się przez starożytne małe przejście. Głęboko w koralu wyryte są małe symbole, których nie można odczytać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:02.217836Z"
+  },
+  "quests.secret_library.book_plans": {
+    "src_hash": "84338c3c7a7350e62a5dd2f513966484",
+    "text": "Opisy zawarte w tej książce wyglądają jak plany szczegółowo opisujące rozpoczęcie ataku na dużą skalę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:02.218413Z"
+  },
+  "quests.secret_library.elemental_portals_default": {
+    "src_hash": "78502af725a66768ad94e8a571fda13f",
+    "text": "Masz dziesięć minut na zabicie i ograbienie tego potwora, w przeciwnym razie stracisz tę szansę i zostaniesz wyrzucony.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:02.219025Z"
+  },
+  "quests.secret_library.exhausted_battle": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Nadal jesteś wyczerpany ostatnią bitwą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:02.219382Z"
+  },
+  "quests.secret_library.falcon_boat_1": {
+    "src_hash": "caef9c0335f1ad3ec1f3c1bc4b3d6245",
+    "text": "Kiedy wiosłujesz w kierunku maleńkiego światła w ciemnej, złowrogiej kaplicy, z mgły wyłania się mała wyspa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:02.219915Z"
+  },
+  "quests.secret_library.falcon_boat_2": {
+    "src_hash": "e867293f1f020fd282b32ebfd7a490cf",
+    "text": "Twoje serce się rozjaśnia, gdy wracasz z ponurej wyspy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:07.343094Z"
+  },
+  "quests.secret_library.high_and_dry_default": {
+    "src_hash": "78502af725a66768ad94e8a571fda13f",
+    "text": "Masz dziesięć minut na zabicie i ograbienie tego potwora, w przeciwnym razie stracisz tę szansę i zostaniesz wyrzucony.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:07.343638Z"
+  },
+  "quests.secret_library.njey_appreciate": {
+    "src_hash": "776f0b64ea3b6ba0dc9b6f08c5c08ebd",
+    "text": "Njey będzie wdzięczny za twoją pomoc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:07.343972Z"
+  },
+  "quests.secret_library.njey_help_needed": {
+    "src_hash": "d226f31215d8d0bafb0d257517a8eb51",
+    "text": "Bez pomocy innych Njeyów prawdopodobnie nie zrobisz wystarczającej różnicy w tej bitwie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:07.344440Z"
+  },
+  "quests.secret_library.not_ready": {
+    "src_hash": "4f5815a090b141b7b6df60246fb354c3",
+    "text": "Nie jesteś jeszcze gotowy, aby przejść.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:07.344762Z"
+  },
+  "quests.secret_library.not_ready_v2": {
+    "src_hash": "4f5815a090b141b7b6df60246fb354c3",
+    "text": "Nie jesteś jeszcze gotowy, aby przejść.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:13.691088Z"
+  },
+  "quests.secret_library.recently_fixed": {
+    "src_hash": "1d61511f4ff8d55855044dae45ef38a9",
+    "text": "Niedawno naprawiłeś tego idola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:13.691425Z"
+  },
+  "quests.secret_library.wait_20h": {
+    "src_hash": "c1c85732657dc37f7d215690dfb70629",
+    "text": "Aby ponownie zmierzyć się z tym bossem, musisz poczekać 20 godzin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:13.691997Z"
+  },
+  "quests.shattered_isles.nargor_map_1": {
+    "src_hash": "5ca34f7dcd424ad974e941673b05c8b6",
+    "text": "Pomyślnie przeczytałeś plan A.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:13.692387Z"
+  },
+  "quests.shattered_isles.nargor_map_2": {
+    "src_hash": "a41caa68a6a96260bc953cfaed7b94df",
+    "text": "Pomyślnie przeczytałeś plan B.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:13.692702Z"
+  },
+  "quests.shattered_isles.nargor_map_3": {
+    "src_hash": "81adbab03f0fa3b1db8343172f6614ef",
+    "text": "Pomyślnie przeczytałeś plan C.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:46:15.576391Z"
   }
 }

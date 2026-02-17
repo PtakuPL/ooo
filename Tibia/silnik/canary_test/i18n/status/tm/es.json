@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:08:45.249221Z"
+    "updated_at": "2026-02-17T05:44:40.565954Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:08:51.508711Z"
+    "updated_at": "2026-02-17T05:44:45.782981Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -148030,5 +148030,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:21:07.293123Z"
+  },
+  "spell.omrafir_summon.name": {
+    "src_hash": "7afac0493e7435ec27b00187d58e881b",
+    "text": "convocar a omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:50.237352Z"
+  },
+  "spell.ice_golem_skill_reducer.name": {
+    "src_hash": "04b9f0b1ffb1da8729314d8ad4e4018b",
+    "text": "reductor de habilidades de golem de hielo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:50.237641Z"
+  },
+  "spell.shadow_hound_curse.name": {
+    "src_hash": "31b4197793defcd6f20b46076448c8b9",
+    "text": "maldición del sabueso de las sombras",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:50.237950Z"
+  },
+  "spell.blightwalker_curse.name": {
+    "src_hash": "16230cc259bcc0350fd05c7a1fe78817",
+    "text": "maldición del caminante del añublo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:50.238363Z"
+  },
+  "spell.minotaur_cult_prophet_mass_healing.name": {
+    "src_hash": "babeff5e6a0d360926b2563bf57e2e7a",
+    "text": "Curación masiva del profeta del culto al minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:55.638466Z"
+  },
+  "spell.megasylvan_yselda_ebeam.name": {
+    "src_hash": "a3edb8d881092e35f4e8f5bf7bafb840",
+    "text": "haz de tierraMY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:55.638690Z"
+  },
+  "spell.wyvern_drunk.name": {
+    "src_hash": "b353082a38791ff7b9ce13ff943de2ea",
+    "text": "wyvern borracho",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:55.638887Z"
+  },
+  "spell.fire_barrage.name": {
+    "src_hash": "69db1a11b76cc6c5a4ac884931134266",
+    "text": "bombardeo de fuego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:55.639090Z"
+  },
+  "spell.spirit_of_earth_paralyze.name": {
+    "src_hash": "f636dd266db143e432b9320b86854c57",
+    "text": "espíritu de la tierra paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:44:55.639380Z"
+  },
+  "spell.ghastly_dragon_paralyze.name": {
+    "src_hash": "64bf15b7ae67eb23b65ee86d010daebd",
+    "text": "Dragón espantoso paralizado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:01.137092Z"
+  },
+  "spell.mephiles_skill_reducer.name": {
+    "src_hash": "731c37b2d3f6d868b71ba5c0a17d63bb",
+    "text": "reductor de habilidades de mephiles",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:01.137384Z"
+  },
+  "spell.ice_overlord_freeze.name": {
+    "src_hash": "cb322d17c58cbdf4d8275e6419e897d0",
+    "text": "congelación del señor del hielo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:01.137689Z"
+  },
+  "spell.killer_rabbit_summon.name": {
+    "src_hash": "5716b89aece60552d665c95e2404d223",
+    "text": "invocación del conejo asesino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:01.137965Z"
+  },
+  "spell.the_abomination_paralyze.name": {
+    "src_hash": "6168fc08b0bafd1b883477b085056ee7",
+    "text": "la abominación paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:01.138307Z"
+  },
+  "spell.white_pale_summon.name": {
+    "src_hash": "b3865c6553aceae64138f87b00498f88",
+    "text": "convocar blanco pálido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:05.707813Z"
+  },
+  "spell.bullwark_paralyze.name": {
+    "src_hash": "886fddb7eb389db9e837effdd1ea0907",
+    "text": "paralizar el toro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:05.708056Z"
+  },
+  "spell.djinn_paralyze.name": {
+    "src_hash": "e43d13b61e88415667e35cc95a8a5974",
+    "text": "genios paralizan",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:05.708326Z"
+  },
+  "spell.warlock_skill_reducer.name": {
+    "src_hash": "b5e93de064f2f0a49585f68ced707403",
+    "text": "reductor de habilidades de brujo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:05.708630Z"
+  },
+  "spell.lloyd_wave3.name": {
+    "src_hash": "76a0853acaf82a0429a4daf18f7bca8e",
+    "text": "onda lloyd3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:05.708831Z"
+  },
+  "spell.salamander_trainer_summon.name": {
+    "src_hash": "e217cb722c45f9eed71556f21b8c74b9",
+    "text": "Invocar entrenador salamandra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:09.921047Z"
+  },
+  "spell.big_explosion_wave.name": {
+    "src_hash": "7a8af6b1d80fb7404b3def0ad6108d3b",
+    "text": "gran ola de explosión",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:09.921327Z"
+  },
+  "spell.bog_raider_paralyze.name": {
+    "src_hash": "7d8094668dba191df145b8b34c8b446d",
+    "text": "El asaltante del pantano paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:09.921580Z"
+  },
+  "spell.shock_head_skill_reducer_2.name": {
+    "src_hash": "993def282a953eb7d820a6d08f0f0b93",
+    "text": "reductor de habilidad de cabeza de choque 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:09.921856Z"
+  },
+  "spell.arkhothep_paralyze.name": {
+    "src_hash": "8bf8511573beac56560e8b23efd11d6b",
+    "text": "Arkhothep paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:13.342240Z"
+  },
+  "spell.stampor_skill_reducer.name": {
+    "src_hash": "a7681d2c09a8656834c548f6d9c3388b",
+    "text": "reductor de habilidades de estampador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:13.342531Z"
+  },
+  "spell.kraknaknork_explosion_wave.name": {
+    "src_hash": "2f4e174fe23f8e2af3f05a9793bb667d",
+    "text": "ola de explosión de kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:45:13.342818Z"
   }
 }

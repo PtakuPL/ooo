@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T05:44:10.054253Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T05:46:15.781337Z",
+  "language": "pl",
+  "json_file": "quests.json",
+  "translated": 45,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "quests.roshamuul.faced_boss_hours",
+      "en": "You have faced this boss in the last {0} hours.",
+      "translated": "Walczyłeś z tym bossem w ciągu ostatnich {0} godzin.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.roshamuul_quest.use_on_silencer_plateau_is_located",
+      "en": "Use on Silencer Plateau is located in the south-eastern part of Roshamuul",
+      "translated": "Zastosowanie na Płaskowyżu Tłumików znajduje się w południowo-wschodniej części Roshamuul",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.roshamuul_quest.you_need_kill_all_monsters",
+      "en": "You need kill all monsters",
+      "translated": "Musisz zabić wszystkie potwory",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "quests.roshamuul_quest.you_need_to_wait",
+      "en": "You need to wait",
+      "translated": "Musisz poczekać",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "quests.secret_library.ancient_passage",
+      "en": "You squeeze through an ancient small passage. There are small symbols carved deep into the coral you cannot read.",
+      "translated": "Przeciskasz się przez starożytne małe przejście. Głęboko w koralu wyryte są małe symbole, których nie można odczytać.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "quests.secret_library.book_plans",
+      "en": "The descriptions in this book look like plans detailing the launch of a large-scale assault.",
+      "translated": "Opisy zawarte w tej książce wyglądają jak plany szczegółowo opisujące rozpoczęcie ataku na dużą skalę.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "quests.secret_library.elemental_portals_default",
+      "en": "You have ten minutes to kill and loot this monster, else you will lose that chance and will be kicked out.",
+      "translated": "Masz dziesięć minut na zabicie i ograbienie tego potwora, w przeciwnym razie stracisz tę szansę i zostaniesz wyrzucony.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "quests.secret_library.exhausted_battle",
+      "en": "You are still exhausted from your last battle.",
+      "translated": "Nadal jesteś wyczerpany ostatnią bitwą.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "quests.secret_library.falcon_boat_1",
+      "en": "A small island emerges out of the mist as you row towards a tiny light inside a dark, forehoding chapel.",
+      "translated": "Kiedy wiosłujesz w kierunku maleńkiego światła w ciemnej, złowrogiej kaplicy, z mgły wyłania się mała wyspa.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "quests.secret_library.falcon_boat_2",
+      "en": "Your heart lightens as you return from the gloomy isle.",
+      "translated": "Twoje serce się rozjaśnia, gdy wracasz z ponurej wyspy.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "quests.secret_library.high_and_dry_default",
+      "en": "You have ten minutes to kill and loot this monster, else you will lose that chance and will be kicked out.",
+      "translated": "Masz dziesięć minut na zabicie i ograbienie tego potwora, w przeciwnym razie stracisz tę szansę i zostaniesz wyrzucony.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "quests.secret_library.njey_appreciate",
+      "en": "The Njey will appreciate your help.",
+      "translated": "Njey będzie wdzięczny za twoją pomoc.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "quests.secret_library.njey_help_needed",
+      "en": "Without the help of other Njey you will probably not make enough of a difference in this battle.",
+      "translated": "Bez pomocy innych Njeyów prawdopodobnie nie zrobisz wystarczającej różnicy w tej bitwie.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "quests.secret_library.not_ready",
+      "en": "You are not ready to pass yet.",
+      "translated": "Nie jesteś jeszcze gotowy, aby przejść.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.secret_library.not_ready_v2",
+      "en": "You are not ready to pass yet.",
+      "translated": "Nie jesteś jeszcze gotowy, aby przejść.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.secret_library.recently_fixed",
+      "en": "You recently fixed that idol.",
+      "translated": "Niedawno naprawiłeś tego idola.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.secret_library.wait_20h",
+      "en": "You need to wait 20 hours to face this boss again.",
+      "translated": "Aby ponownie zmierzyć się z tym bossem, musisz poczekać 20 godzin.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "quests.shattered_isles.nargor_map_1",
+      "en": "You have sucessfully read plan A.",
+      "translated": "Pomyślnie przeczytałeś plan A.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.shattered_isles.nargor_map_2",
+      "en": "You have sucessfully read plan B.",
+      "translated": "Pomyślnie przeczytałeś plan B.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.shattered_isles.nargor_map_3",
+      "en": "You have sucessfully read plan C.",
+      "translated": "Pomyślnie przeczytałeś plan C.",
+      "source": "google_translate"
     }
   ]
 }

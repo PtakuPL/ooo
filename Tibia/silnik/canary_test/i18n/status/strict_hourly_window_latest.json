@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-17T04:44:15.930427Z",
-  "window_end_utc": "2026-02-17T05:44:15.930427Z",
+  "window_start_utc": "2026-02-17T04:46:22.726306Z",
+  "window_end_utc": "2026-02-17T05:46:22.726306Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -16,13 +16,13 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3784,
-  "guard_fail": 2592,
-  "guard_fail_rate_pct": 40.7,
+  "translated": 3730,
+  "guard_fail": 2444,
+  "guard_fail_rate_pct": 39.6,
   "no_progress_entries": 2,
   "no_progress_rate_pct": 1.9,
-  "throughput_keys_per_h": 2108.2,
-  "suspicious_total": 14402,
+  "throughput_keys_per_h": 2095.2,
+  "suspicious_total": 14351,
   "top_guard_fail_targets": [
     {
       "target": "pl/npc.json",
@@ -32,8 +32,8 @@
     },
     {
       "target": "pl/scripts.json",
-      "translated": 100,
-      "guard_fail": 304,
+      "translated": 50,
+      "guard_fail": 152,
       "guard_command": 0
     },
     {
@@ -50,8 +50,8 @@
     },
     {
       "target": "pl/quests.json",
-      "translated": 91,
-      "guard_fail": 83,
+      "translated": 90,
+      "guard_fail": 84,
       "guard_command": 0
     },
     {

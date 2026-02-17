@@ -44422,5 +44422,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:23:44.240208Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_7": {
+    "src_hash": "f9034ff8731aae36e0bd265fed889142",
+    "text": "Ori de câte ori învingi o creatură, aceasta scapă un set de pradă cu a\no anumită șansă. Bonusul la prada de echipamente arată șansa ta de a face acest lucru\nobține un al doilea set de pradă, dar limitat la echipament.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:16.173854Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_8": {
+    "src_hash": "b60183f6899f8b04902a4753633bab06",
+    "text": "0 / 0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:16.174169Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_9": {
+    "src_hash": "69424ae0c8f68dc68e4f715611c0c56c",
+    "text": "Puncte Boss",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:16.174376Z"
+  },
+  "otclient_modules.bosstiary.tr_1": {
+    "src_hash": "f8b93c08823ede73e4889656772bd003",
+    "text": "Odată ce ați atins nivelul de măiestrie, veți primi un\nbonus de pradă suplimentar de 25% atunci când șeful este alocat unui slot pentru șef.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:16.175008Z"
+  },
+  "otclient_modules.bosstiary.tr_10": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Expertiza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:16.175205Z"
+  },
+  "otclient_modules.bosstiary.tr_11": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Pricepere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:22.122568Z"
+  },
+  "otclient_modules.bosstiary.tr_12": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Pentru deblocarea unui nivel, vei primi următoarele puncte de șef:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:22.123074Z"
+  },
+  "otclient_modules.bosstiary.tr_13": {
+    "src_hash": "0fd36e50eddf90907c0ac2dc3b775ad8",
+    "text": "Arhifoe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:22.123262Z"
+  },
+  "otclient_modules.bosstiary.tr_2": {
+    "src_hash": "0e78e5d0095735812e30246de45279e2",
+    "text": "După ce ați atins nivelul de expertiză, puteți afișa\nșef pe un Podium of Vigour.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:22.123731Z"
+  },
+  "otclient_modules.bosstiary.tr_3": {
+    "src_hash": "f4ce845290ee7568b7a764648f7895a7",
+    "text": "Odată ce ați atins nivelul de pricepere, puteți atribui șeful\nla un slot de șef.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:22.124188Z"
+  },
+  "otclient_modules.bosstiary.tr_4": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Măiestrie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:24.734702Z"
+  },
+  "otclient_modules.bosstiary.tr_5": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Expertiza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:24.734906Z"
+  },
+  "otclient_modules.bosstiary.tr_6": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Pricepere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:24.735079Z"
+  },
+  "otclient_modules.bosstiary.tr_7": {
+    "src_hash": "528ef774eb8048f50cc7d58d4032b0e1",
+    "text": "Pentru deblocarea unui nivel, vei primi următoarele puncte de șef:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:24.735493Z"
+  },
+  "otclient_modules.bosstiary.tr_9": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Măiestrie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:27.440163Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_10": {
+    "src_hash": "51534a3170d5912c466d45c89e48225e",
+    "text": "Nenorocire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:27.440399Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_12": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Măiestrie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:27.440607Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_13": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Expertiza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:27.440807Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_14": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Pricepere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:27.440993Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_3": {
+    "src_hash": "87088c3e031080dd82a03fc5ed68b9d6",
+    "text": "Măiestrie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:31.767428Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_4": {
+    "src_hash": "57b0eaafb250dd5b862d252a05baac36",
+    "text": "Expertiza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:31.767622Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_5": {
+    "src_hash": "386c408aa3dcfd1ed1b1b23e9d5abd56",
+    "text": "Pricepere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:31.767788Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_6": {
+    "src_hash": "fcf8064dc7458686ccdcd7cf32f7e199",
+    "text": "Puține ucideri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:31.767984Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_7": {
+    "src_hash": "9943f1008433c572d639480b41f0d942",
+    "text": "Fără ucideri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:31.768169Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_9": {
+    "src_hash": "0fd36e50eddf90907c0ac2dc3b775ad8",
+    "text": "Arhifoe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:35.546380Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_2": {
+    "src_hash": "35a88e03e6699907873597f5549e0b7a",
+    "text": "Creatură",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:35.546571Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_3": {
+    "src_hash": "74b12716003bafd478dcec0139780dcb",
+    "text": "Amplificat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:35.546745Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_4": {
+    "src_hash": "14ab5b8597ef2c5fc1748c6cf1bdb81d",
+    "text": "În viitor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:35.546925Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_5": {
+    "src_hash": "4d3d769b812b6faa6b76e1a8abaece2d",
+    "text": "Activ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:40.415434Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_6": {
+    "src_hash": "e324ba8ec09630f9fcca106d515afe8f",
+    "text": "Programul evenimentului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:40.415672Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_7": {
+    "src_hash": "0aaa4a515a3bbc1dfc1003c2e7e8f165",
+    "text": "Sugestie aleatorie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:40.415871Z"
+  },
+  "otclient_modules.browse_otui.tr_1": {
+    "src_hash": "be46a979203e1b1b31dbcbdaf1b8f8dc",
+    "text": "Căutați toate articolele",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:40.416126Z"
+  },
+  "otclient_modules.browse_otui.tr_2": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Toate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:40.416289Z"
+  },
+  "otclient_modules.browse_otui.tr_3": {
+    "src_hash": "4cfa6c981549e990fe2344e4c805405e",
+    "text": "Găsi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:46.170538Z"
+  },
+  "otclient_modules.browse_otui.tr_4": {
+    "src_hash": "23e176b893ad93275651dbc38d2af6eb",
+    "text": "Afișați numai articolele din depozit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:46.170902Z"
+  },
+  "otclient_modules.browse_otui.tr_5": {
+    "src_hash": "7b84c49b8fab415c7ae4cde3bf0ba89a",
+    "text": "Afișați numai Depot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:46.171352Z"
+  },
+  "otclient_modules.browse_otui.tr_6": {
+    "src_hash": "f15735bd4db9aebd4e82ebf4139179fc",
+    "text": "Filtrați lista pentru a se potrivi cu vocația dvs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:46.171718Z"
+  },
+  "otclient_modules.browse_otui.tr_7": {
+    "src_hash": "1c4a2636b5bee3b1691291067a6d4a36",
+    "text": "Filtrați lista pentru a se potrivi cu nivelul dvs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:25:46.172091Z"
   }
 }

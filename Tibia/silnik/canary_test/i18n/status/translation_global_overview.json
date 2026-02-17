@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17T05:24:50.772892Z",
+  "timestamp": "2026-02-17T05:26:15.372669Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 295975,
-    "english_copy_keys": 166163,
+    "translated_keys": 296059,
+    "english_copy_keys": 166164,
     "missing_keys": 2155,
     "missing_files": 0,
     "completion_pct": 10.62
@@ -49,56 +49,56 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 3067,
-    "guard_reports_blocked": 3000,
+    "guard_reports_total": 3070,
+    "guard_reports_blocked": 3003,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3000
+    "cannot_translate_reports_visible": 3003
   },
   "cache": {
-    "lang_stats_hits": 49,
-    "lang_stats_misses": 3,
-    "lang_stats_hit_pct": 94.2,
+    "lang_stats_hits": 48,
+    "lang_stats_misses": 4,
+    "lang_stats_hit_pct": 92.3,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1973,
-    "lang_file_misses": 3,
+    "lang_file_hits": 1972,
+    "lang_file_misses": 4,
     "lang_file_hit_pct": 99.8,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-17T05:24:45.649138Z",
-    "cycle": 277,
+    "timestamp": "2026-02-17T05:26:10.051888Z",
+    "cycle": 278,
     "mode": "AUTO_TRANSLATE",
     "category": "ro",
     "events": {
-      "dispatch": 1938,
-      "mode_run": 24617
+      "dispatch": 438,
+      "mode_run": 65321
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-17T04:24:49.301822Z",
-    "window_end_utc": "2026-02-17T05:24:49.301822Z",
+    "window_start_utc": "2026-02-17T04:26:13.898496Z",
+    "window_end_utc": "2026-02-17T05:26:13.898496Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 161,
+    "total_cycles": 157,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 161
+      "AUTO_TRANSLATE": 157
     },
-    "auto_translate_cycles": 161,
+    "auto_translate_cycles": 157,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 3548,
-    "guard_fail": 3506,
-    "guard_fail_rate_pct": 49.7,
+    "translated": 3683,
+    "guard_fail": 3475,
+    "guard_fail_rate_pct": 48.5,
     "no_progress_entries": 1,
     "no_progress_rate_pct": 1.0,
-    "throughput_keys_per_h": 1953.4,
-    "suspicious_total": 14348,
+    "throughput_keys_per_h": 2059.5,
+    "suspicious_total": 14408,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -152,20 +152,146 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-17T05:24:45.591510Z",
+      "timestamp": "2026-02-17T05:26:09.993764Z",
       "checked_entries": 100,
-      "issues_found": 39,
+      "issues_found": 25,
       "issues_by_type": {
-        "identical_to_en_exempt": 18,
+        "identical_to_en": 18,
+        "identical_to_en_exempt": 10,
         "artifact_token": 7,
-        "identical_to_en": 32,
-        "suspicious_log_critical": 36,
-        "suspicious_log_high": 66,
-        "suspicious_log_low": 98,
+        "suspicious_log_high": 95,
+        "suspicious_log_low": 51,
+        "suspicious_log_critical": 54,
         "suspicious_rejected_critical": 168,
         "suspicious_rejected_high": 32
       },
       "issues": [
+        {
+          "key": "monster.sir_valorcrest.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Sir Valorcrest",
+          "translated": "Sir Valorcrest"
+        },
+        {
+          "key": "monster.draptor.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Draptor",
+          "translated": "Draptor"
+        },
+        {
+          "key": "monster.chayenne.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Chayenne",
+          "translated": "Chayenne"
+        },
+        {
+          "key": "monster.chayenne.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Chayenne",
+          "translated": "Chayenne"
+        },
+        {
+          "key": "monster.orshabaal.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Orshabaal",
+          "translated": "Orshabaal"
+        },
+        {
+          "key": "monster.orshabaal.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Orshabaal",
+          "translated": "Orshabaal"
+        },
+        {
+          "key": "monster.white_pale.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "White Pale",
+          "translated": "White Pale"
+        },
+        {
+          "key": "monster.white_pale.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "White Pale",
+          "translated": "White Pale"
+        },
+        {
+          "key": "monster.the_welter.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "The Welter",
+          "translated": "The Welter"
+        },
+        {
+          "key": "monster.the_welter.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "The Welter",
+          "translated": "The Welter"
+        },
+        {
+          "key": "monster.morgaroth.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Morgaroth",
+          "translated": "Morgaroth"
+        },
+        {
+          "key": "monster.morgaroth.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Morgaroth",
+          "translated": "Morgaroth"
+        },
+        {
+          "key": "monster.ferumbras.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Ferumbras",
+          "translated": "Ferumbras"
+        },
+        {
+          "key": "monster.ferumbras.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Ferumbras",
+          "translated": "Ferumbras"
+        },
+        {
+          "key": "monster.furyosa.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Furyosa",
+          "translated": "Furyosa"
+        },
+        {
+          "key": "monster.furyosa.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Furyosa",
+          "translated": "Furyosa"
+        },
+        {
+          "key": "monster.fernfang.name",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Fernfang",
+          "translated": "Fernfang"
+        },
+        {
+          "key": "monster.fernfang.desc",
+          "lang": "sv",
+          "type": "identical_to_en",
+          "en": "Fernfang",
+          "translated": "Fernfang"
+        },
         {
           "key": "npc.captain_haba_open_sea.larboard_1",
           "lang": "es",
@@ -214,230 +340,6 @@
           "type": "artifact_token",
           "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
           "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-        },
-        {
-          "key": "raid.lizards.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Lizards",
-          "translated": "Lizards"
-        },
-        {
-          "key": "raid.cyclops.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Cyclops",
-          "translated": "Cyclops"
-        },
-        {
-          "key": "raid.wild_horses.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Wild Horses",
-          "translated": "Wild Horses"
-        },
-        {
-          "key": "raid.sheng.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Sheng",
-          "translated": "Sheng"
-        },
-        {
-          "key": "raid.munster.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Munster",
-          "translated": "Munster"
-        },
-        {
-          "key": "raid.teleskor.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Teleskor",
-          "translated": "Teleskor"
-        },
-        {
-          "key": "raid.furyosa.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Furyosa",
-          "translated": "Furyosa"
-        },
-        {
-          "key": "raid.chayenne.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Chayenne",
-          "translated": "Chayenne"
-        },
-        {
-          "key": "raid.omrafir.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Omrafir",
-          "translated": "Omrafir"
-        },
-        {
-          "key": "raid.gaz_haragoth.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Gaz Haragoth",
-          "translated": "Gaz Haragoth"
-        },
-        {
-          "key": "raid.yeti.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Yeti",
-          "translated": "Yeti"
-        },
-        {
-          "key": "raid.gargoyle.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Gargoyle",
-          "translated": "Gargoyle"
-        },
-        {
-          "key": "raid.nomad.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Nomad",
-          "translated": "Nomad"
-        },
-        {
-          "key": "raid.cobra.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Cobra",
-          "translated": "Cobra"
-        },
-        {
-          "key": "raid.bone_beast.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Bone Beast",
-          "translated": "Bone Beast"
-        },
-        {
-          "key": "raid.terramite.name",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "Terramite",
-          "translated": "Terramite"
-        },
-        {
-          "key": "raid.lizards.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Lizards",
-          "translated": "Lizards"
-        },
-        {
-          "key": "raid.cyclops.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Cyclops",
-          "translated": "Cyclops"
-        },
-        {
-          "key": "raid.wild_horses.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Wild Horses",
-          "translated": "Wild Horses"
-        },
-        {
-          "key": "raid.sheng.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Sheng",
-          "translated": "Sheng"
-        },
-        {
-          "key": "raid.munster.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Munster",
-          "translated": "Munster"
-        },
-        {
-          "key": "raid.teleskor.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Teleskor",
-          "translated": "Teleskor"
-        },
-        {
-          "key": "raid.furyosa.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Furyosa",
-          "translated": "Furyosa"
-        },
-        {
-          "key": "raid.chayenne.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Chayenne",
-          "translated": "Chayenne"
-        },
-        {
-          "key": "raid.omrafir.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Omrafir",
-          "translated": "Omrafir"
-        },
-        {
-          "key": "raid.gaz_haragoth.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Gaz Haragoth",
-          "translated": "Gaz Haragoth"
-        },
-        {
-          "key": "raid.yeti.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Yeti",
-          "translated": "Yeti"
-        },
-        {
-          "key": "raid.gargoyle.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Gargoyle",
-          "translated": "Gargoyle"
-        },
-        {
-          "key": "raid.nomad.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Nomad",
-          "translated": "Nomad"
-        },
-        {
-          "key": "raid.cobra.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Cobra",
-          "translated": "Cobra"
-        },
-        {
-          "key": "raid.bone_beast.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Bone Beast",
-          "translated": "Bone Beast"
-        },
-        {
-          "key": "raid.terramite.name",
-          "lang": "it",
-          "type": "identical_to_en",
-          "en": "Terramite",
-          "translated": "Terramite"
         }
       ],
       "threshold": 10,
@@ -462,9 +364,9 @@
         "total_rejected": 1102,
         "total_gt_guard_fail": 3101,
         "cycles": 917,
-        "quality_score": 68.6,
-        "last_audit": "2026-02-17T05:24:45.591510Z",
-        "issues_count": 128104
+        "quality_score": 70.0,
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 128118
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -478,15 +380,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-17T05:23:58.972673Z",
+        "last_cycle": "2026-02-17T05:26:08.927624Z",
         "last_translated": 24,
-        "total_suspicious": 31248,
+        "total_suspicious": 31330,
         "total_rejected": 911,
         "total_gt_guard_fail": 12359,
-        "cycles": 1166,
+        "cycles": 1167,
         "quality_score": 60.1,
-        "last_audit": "2026-02-17T05:24:45.591510Z",
-        "issues_count": 204050
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 204213
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -517,9 +419,9 @@
         "total_rejected": 192,
         "total_gt_guard_fail": 705,
         "cycles": 193,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T05:24:45.591510Z",
-        "issues_count": 12990
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 13015
       },
       "ru": {
         "last_cycle": "2026-02-17T05:24:43.876463Z",
@@ -528,9 +430,9 @@
         "total_rejected": 498,
         "total_gt_guard_fail": 1267,
         "cycles": 189,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T05:24:45.591510Z",
-        "issues_count": 33684
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 33729
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -544,15 +446,15 @@
         "issues_count": 649
       },
       "sv": {
-        "last_cycle": "2026-02-17T05:19:00.694044Z",
-        "last_translated": 14,
-        "total_suspicious": 2569,
+        "last_cycle": "2026-02-17T05:25:50.430861Z",
+        "last_translated": 50,
+        "total_suspicious": 2578,
         "total_rejected": 162,
         "total_gt_guard_fail": 382,
-        "cycles": 96,
-        "quality_score": 82.2,
-        "last_audit": "2026-02-17T05:24:45.591510Z",
-        "issues_count": 10563
+        "cycles": 97,
+        "quality_score": 73.4,
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 10649
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -863,15 +765,15 @@
         "issues_count": 111
       },
       "sr": {
-        "last_cycle": "2026-02-17T05:19:26.084408Z",
-        "last_translated": 10,
-        "total_suspicious": 1117,
+        "last_cycle": "2026-02-17T05:25:54.051079Z",
+        "last_translated": 50,
+        "total_suspicious": 1121,
         "total_rejected": 1,
         "total_gt_guard_fail": 422,
-        "cycles": 93,
-        "quality_score": 68.1,
-        "last_audit": "2026-02-17T05:20:18.836089Z",
-        "issues_count": 3432
+        "cycles": 94,
+        "quality_score": 73.0,
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 3442
       },
       "sw": {
         "last_cycle": "2026-02-14T07:01:40.295561Z",
@@ -995,15 +897,15 @@
         "issues_count": 958
       },
       "ro": {
-        "last_cycle": "2026-02-17T05:24:22.700202Z",
-        "last_translated": 49,
-        "total_suspicious": 29396,
-        "total_rejected": 1239,
-        "total_gt_guard_fail": 1883,
-        "cycles": 176,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-17T05:24:45.591510Z",
-        "issues_count": 44167
+        "last_cycle": "2026-02-17T05:25:46.248881Z",
+        "last_translated": 38,
+        "total_suspicious": 29405,
+        "total_rejected": 1248,
+        "total_gt_guard_fail": 1895,
+        "cycles": 177,
+        "quality_score": 60.1,
+        "last_audit": "2026-02-17T05:26:09.993764Z",
+        "issues_count": 44249
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1017,7 +919,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 39 issue(s) / 100 entries | 2026-02-17T05:24:45.591510Z"
+    "summary": "SLOW_MODE | 25 issue(s) / 100 entries | 2026-02-17T05:26:09.993764Z"
   },
   "languages": [
     {
@@ -1093,17 +995,17 @@
       "language_name": "Rumuński",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 13505,
-      "english_copy_keys": 2412,
+      "translated_keys": 13543,
+      "english_copy_keys": 2413,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 25.2,
+      "completion_pct": 25.27,
       "server_keys": 49731,
       "server_translated": 12878,
       "server_pct": 25.9,
       "client_keys": 3855,
-      "client_translated": 627,
-      "client_pct": 16.26
+      "client_translated": 665,
+      "client_pct": 17.25
     },
     {
       "lang": "it",
@@ -1144,14 +1046,14 @@
       "language_name": "SR",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 6294,
+      "translated_keys": 6340,
       "english_copy_keys": 2459,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 11.75,
+      "completion_pct": 11.83,
       "server_keys": 49731,
-      "server_translated": 6194,
-      "server_pct": 12.46,
+      "server_translated": 6240,
+      "server_pct": 12.55,
       "client_keys": 3855,
       "client_translated": 100,
       "client_pct": 2.59

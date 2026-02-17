@@ -3309,7 +3309,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:21:04.227574Z"
+    "updated_at": "2026-02-17T01:21:35.976815Z"
   },
   "quests.actions_wooden_trash.msg_1": {
     "src_hash": "464917965b3891096e423e2362e7f69c",
@@ -9445,7 +9445,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-16T23:21:07.723977Z"
+    "updated_at": "2026-02-17T01:21:35.977383Z"
   },
   "php.template.text1": {
     "src_hash": "c0fda951c2d5c4c92bb0fc32f64de7f4",

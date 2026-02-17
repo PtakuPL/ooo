@@ -34478,5 +34478,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:17:11.863101Z"
+  },
+  "cpp.combat.heal_spectator_none_one": {
+    "src_hash": "563946f2da69fc4d5e67fe5fbbabd7a3",
+    "text": "{0} è stato guarito per {1} punto ferita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:42.467940Z"
+  },
+  "cpp.combat.heal_spectator_none_other": {
+    "src_hash": "a038c6c62c0d42fcd3a8fe3616466458",
+    "text": "{0} è stato guarito di {1} punti ferita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:42.468370Z"
+  },
+  "cpp.combat.heal_target_none_one": {
+    "src_hash": "0bf121421a3a381451a59e1c85aeda73",
+    "text": "Sei stato guarito per {0} hitpoint.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:42.469226Z"
+  },
+  "cpp.combat.heal_target_none_other": {
+    "src_hash": "9e6bedd1c5b4f37f6b98fa8d89b531b6",
+    "text": "Sei stato guarito di {0} punti ferita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:42.469615Z"
+  },
+  "cpp.inspect.body_head": {
+    "src_hash": "96e89a298e0a9f469b9ae458d6afae9f",
+    "text": "Testa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:42.479805Z"
+  },
+  "cpp.protocol.outfit_label": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Vestito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:42.498846Z"
+  },
+  "cpp.combat.dmg_spectator_by_crit_other": {
+    "src_hash": "8b8f2e78055b89231331ac78c245b33e",
+    "text": "{0} perde {1} punti ferita a causa di un attacco critico di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:45.636296Z"
+  },
+  "cpp.combat.dmg_spectator_by_one": {
+    "src_hash": "cc4a261a1824688e28c4a0e63e920521",
+    "text": "{0} perde {1} punti ferita a causa di un attacco di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:45.636776Z"
+  },
+  "cpp.combat.dmg_spectator_by_other": {
+    "src_hash": "4cd2495a40159387c95e3c5cb6b001d8",
+    "text": "{0} perde {1} punti ferita a causa di un attacco di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:52.311813Z"
+  },
+  "cpp.combat.dmg_spectator_none_one": {
+    "src_hash": "5b91d931facb880a8a2e664a53bc61c6",
+    "text": "{0} perde {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:52.312104Z"
+  },
+  "cpp.combat.dmg_spectator_none_other": {
+    "src_hash": "cc1e7e26f1fd541fe1b62643fedaa5be",
+    "text": "{0} perde {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:52.312376Z"
+  },
+  "cpp.combat.dmg_spectator_self_crit_one": {
+    "src_hash": "4f9b9e609be43a58635419ba9ad5c88f",
+    "text": "{0} perde {1} punti ferita a causa del proprio attacco critico di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:52.312732Z"
+  },
+  "cpp.combat.dmg_spectator_self_crit_other": {
+    "src_hash": "a6ac19da92fc294b050248113e7000a2",
+    "text": "{0} perde {1} punti ferita a causa del proprio attacco critico di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:52.313088Z"
+  },
+  "cpp.combat.dmg_spectator_self_one": {
+    "src_hash": "696a49099f4bb999dde2a306fc874efa",
+    "text": "{0} perde {1} punti ferita a causa del proprio attacco di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:59.157156Z"
+  },
+  "cpp.combat.dmg_spectator_self_other": {
+    "src_hash": "5bf79b245308ae46198af5f16ea20c63",
+    "text": "{0} perde {1} punti ferita a causa del proprio attacco di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:59.157547Z"
+  },
+  "cpp.combat.dmg_target_by_crit_one": {
+    "src_hash": "aee2bb7862a5b081f4411f522da26230",
+    "text": "Perdi {0} punti ferita a causa di un attacco critico di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:59.157899Z"
+  },
+  "cpp.combat.dmg_target_by_crit_other": {
+    "src_hash": "df3e12671114472c884ac78a76c1fe73",
+    "text": "Perdi {0} punti ferita a causa di un attacco critico di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:59.158365Z"
+  },
+  "cpp.combat.dmg_target_by_one": {
+    "src_hash": "8a8ea05c51255d66aa4282b55a052404",
+    "text": "Perdi {0} punti ferita a causa di un attacco di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:21:59.158708Z"
+  },
+  "cpp.combat.dmg_target_by_other": {
+    "src_hash": "96092220c06fa4f7abbbd5125b33e7c8",
+    "text": "Perdi {0} punti ferita a causa di un attacco di {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:06.612738Z"
+  },
+  "cpp.combat.dmg_target_none_one": {
+    "src_hash": "5b3ca116ae84011c87de3dc5df222cd1",
+    "text": "Perdi {0} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:06.613031Z"
+  },
+  "cpp.combat.dmg_target_none_other": {
+    "src_hash": "792e9b4a740105224c446ccbee509abe",
+    "text": "Perdi {0} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:06.613302Z"
+  },
+  "cpp.combat.dmg_target_self_crit_one": {
+    "src_hash": "ac1bff043e8c26e0ac133ad601966b68",
+    "text": "Perdi {0} punti ferita a causa del tuo stesso attacco critico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:06.613655Z"
+  },
+  "cpp.combat.dmg_target_self_crit_other": {
+    "src_hash": "156225ceb575277435d89317f7eecdac",
+    "text": "Perdi {0} punti ferita a causa del tuo stesso attacco critico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:06.614007Z"
+  },
+  "cpp.combat.dmg_target_self_one": {
+    "src_hash": "5b3ada6a01d629373cc9c5448dcdf456",
+    "text": "Perdi {0} punti ferita a causa del tuo stesso attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:10.584574Z"
+  },
+  "cpp.combat.dmg_target_self_other": {
+    "src_hash": "991acc62419dbec00201325e84ea6944",
+    "text": "Perdi {0} punti ferita a causa del tuo stesso attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:10.584926Z"
+  },
+  "cpp.combat.drown": {
+    "src_hash": "5656fe35f84ade080443e1c773a38fdd",
+    "text": "annegare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:10.585099Z"
+  },
+  "cpp.combat.energy": {
+    "src_hash": "05e7d19a6d002118deef70d21ff4226e",
+    "text": "energia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:10.585309Z"
+  },
+  "cpp.combat.fire": {
+    "src_hash": "015f28b9df1bdd36427dd976fb73b29d",
+    "text": "fuoco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:10.585467Z"
+  },
+  "cpp.combat.heal_attacker_one": {
+    "src_hash": "ce72c445a9274f86800018e990daa4d2",
+    "text": "Guarisci {0} per {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:16.777230Z"
+  },
+  "cpp.combat.heal_attacker_other": {
+    "src_hash": "d999bdbf5fd93480e45bd06e96c47da0",
+    "text": "Guarisci {0} per {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:16.777539Z"
+  },
+  "cpp.combat.heal_spectator_other_one": {
+    "src_hash": "5909e8213f2d3f355077c8c2b4040ed1",
+    "text": "{0} guarito {1} per {2} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:16.777840Z"
+  },
+  "cpp.combat.heal_spectator_other_other": {
+    "src_hash": "601afa5d1f405ad24a983e4a438197e2",
+    "text": "{0} guarito {1} per {2} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:16.778204Z"
+  },
+  "cpp.combat.heal_spectator_self_one": {
+    "src_hash": "5909e8213f2d3f355077c8c2b4040ed1",
+    "text": "{0} guarito {1} per {2} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:16.778507Z"
+  },
+  "cpp.combat.heal_spectator_self_other": {
+    "src_hash": "601afa5d1f405ad24a983e4a438197e2",
+    "text": "{0} guarito {1} per {2} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:23.548764Z"
+  },
+  "cpp.combat.heal_target_by_one": {
+    "src_hash": "fd77c477bc340115f589c4f104abd576",
+    "text": "Sei stato guarito da {0} per {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:23.549098Z"
+  },
+  "cpp.combat.heal_target_by_other": {
+    "src_hash": "8beba0a3da18cd9afaa90199d011b96b",
+    "text": "Sei stato guarito da {0} per {1} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:23.549411Z"
+  },
+  "cpp.combat.heal_target_self_one": {
+    "src_hash": "60cc9d118ce54c7626b0303604940a79",
+    "text": "Ti curi di {0} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:23.550014Z"
+  },
+  "cpp.combat.heal_target_self_other": {
+    "src_hash": "596fa864cbd1f12e043b154e79032965",
+    "text": "Ti curi per {0} punti ferita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:23.550768Z"
+  },
+  "cpp.combat.holy": {
+    "src_hash": "ff0eca571f7670efa4ac4a2c37214c6b",
+    "text": "santo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:29.145750Z"
+  },
+  "cpp.combat.lifedrain": {
+    "src_hash": "9554cab6f5e4d7f08dab97ebd2749ff0",
+    "text": "drenaggio della vita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:29.145964Z"
+  },
+  "cpp.combat.mana_attacker": {
+    "src_hash": "a8e810912070d5ddd8bcccd621134658",
+    "text": "{0} perde {1} mana a causa del tuo attacco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:29.146390Z"
+  },
+  "cpp.combat.mana_attacker_crit": {
+    "src_hash": "7adc2cc4191a8d8a771cdd458f04d9d2",
+    "text": "{0} perde {1} mana a causa del tuo attacco critico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:29.146731Z"
+  },
+  "cpp.combat.mana_spectator_by": {
+    "src_hash": "a0573fb276af6ce2d1a728e625cc8b1f",
+    "text": "{0} perde {1} mana a causa di un attacco di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:29.147063Z"
+  },
+  "cpp.combat.mana_spectator_by_crit": {
+    "src_hash": "d8896bf956ead12f307e55abc89afa6b",
+    "text": "{0} perde {1} mana a causa di un attacco critico di {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:33.584826Z"
+  },
+  "cpp.combat.mana_spectator_none": {
+    "src_hash": "87028a3a292e51ddb2a03b9301dddbc5",
+    "text": "{0} perde {1} mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:22:33.585352Z"
   }
 }

@@ -38054,5 +38054,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:07:21.440231Z"
+  },
+  "scripts.actions_analyser.msg_1": {
+    "src_hash": "a2da86b455a557094c1df725073335cd",
+    "text": "Ben fatto! L'acqua viene analizzata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:09.436799Z"
+  },
+  "scripts.actions_ancient_feud_entrances.msg_1": {
+    "src_hash": "52d221e336eda58b39fab73ac5f9bdc3",
+    "text": "Non sei degno di viaggiare seguendo il ruggito del leone.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:09.437158Z"
+  },
+  "scripts.actions_anthill.say_1": {
+    "src_hash": "ff3a265e2ed78f4cc1477953f31b9f8c",
+    "text": "Hai liberato le formiche sulla collina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:09.437455Z"
+  },
+  "scripts.actions_anthill.say_2": {
+    "src_hash": "da0e44599e9499c33f6c336db4e60bce",
+    "text": "Riempi la brocca di formiche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:13.713162Z"
+  },
+  "scripts.actions_ashes.msg_1": {
+    "src_hash": "21e550e5f4f89244b713ae54210395c9",
+    "text": "Le ceneri vorticano con vita propria, mescolandosi con le scintille dell'altare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:13.713574Z"
+  },
+  "scripts.actions_augerfun.msg_1": {
+    "src_hash": "329ac6c30c0a8615e6c52a1e7d8fa9a7",
+    "text": "Stai raccogliendo del latte di gatto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:13.713876Z"
+  },
+  "scripts.actions_baeloc_nictros.say_1": {
+    "src_hash": "77115bdf1aacec24fea8321121ecef8a",
+    "text": "Ora combattiamo insieme, fratello!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:13.714226Z"
+  },
+  "scripts.actions_baeloc_nictros.say_2": {
+    "src_hash": "2ca54bf985301e93ef3c1c13b3642af8",
+    "text": "Fratello! Ho bisogno del tuo aiuto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:13.714533Z"
+  },
+  "scripts.actions_baeloc_nictros.say_3": {
+    "src_hash": "18c465b0d912872ad6966279410ab081",
+    "text": "Il mio turno! Lascia che ti mostri le mie abilità!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:19.215716Z"
+  },
+  "scripts.actions_baeloc_nictros.say_4": {
+    "src_hash": "08b0bacc66c2fa0c9392ebf9059cb977",
+    "text": "Adesso farò un passo indietro. Vediamo come ti comporti con mio fratello!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:19.216139Z"
+  },
+  "scripts.actions_baeloc_nictros.say_5": {
+    "src_hash": "1b3797c5643c65df92c2377944c8cbfa",
+    "text": "Oh, amico! Ti diverti sempre!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:19.216439Z"
+  },
+  "scripts.actions_baeloc_nictros.say_6": {
+    "src_hash": "7cc5e83ba24355f5a08d8daf4e52cd48",
+    "text": "Infatti! È passato un po' di tempo! Come maggiore chiedo il diritto alla prima battaglia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:19.216900Z"
+  },
+  "scripts.actions_baeloc_nictros.say_7": {
+    "src_hash": "dac44f98b441ac23a954aeea2751d1fd",
+    "text": "Ah guarda, fratello mio! Sfidanti! Dopo tutto questo tempo finalmente la possibilità di dimostrare le nostre capacità!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:19.217393Z"
+  },
+  "scripts.actions_bait.msg_1": {
+    "src_hash": "c109ee72a6a6e0a1273e4e0449858339",
+    "text": "Vedi {} sotto la superficie{}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:23.278647Z"
+  },
+  "scripts.actions_bait.msg_2": {
+    "src_hash": "a0304a59736a9e5c7d77ebb88d3fd7b3",
+    "text": "Ops! L'hai perso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:23.278906Z"
+  },
+  "scripts.actions_bait.msg_3": {
+    "src_hash": "73c8c82252387a98c60ce07b12cea6e3",
+    "text": "Vedi l'acqua a perdita d'occhio. Nessun serpente marino in vista.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:23.279285Z"
+  },
+  "scripts.actions_bait.msg_4": {
+    "src_hash": "9bf585829f1e4bc7f4375831e888feec",
+    "text": "Si sta allontanando! Dovresti dire al capitano di prendere velocità!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:23.279685Z"
+  },
+  "scripts.actions_bait.msg_5": {
+    "src_hash": "b2b42110da55a7d88e116708a87b0316",
+    "text": "Ci sono più ombre sotto la superficie. Questa deve essere la posizione giusta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:23.280122Z"
+  },
+  "scripts.actions_basin.msg_1": {
+    "src_hash": "9118efc5a37e978aea348be87f8b77e4",
+    "text": "Trovi un simbolo dorato sul fondo della bacinella piena di sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:28.106780Z"
+  },
+  "scripts.actions_bazir_mirror.say_1": {
+    "src_hash": "44fb60910bc7ec32a99ba7541c946377",
+    "text": "La bellezza va premiata! Muahahahah!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:28.107104Z"
+  },
+  "scripts.actions_beer.say_1": {
+    "src_hash": "1fdd58cb88c7a872d667ea9d6dfaecb7",
+    "text": "Sorso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:28.107305Z"
+  },
+  "scripts.actions_bird_cage.msg_1": {
+    "src_hash": "7f2ce76d0f0ebe25d4d5096035d7d5e5",
+    "text": "Il pappagallo delle caverne può essere duro ma in qualche modo non ha saputo resistere a questa particolare gabbia per uccelli. O forse eri tu...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:28.107873Z"
+  },
+  "scripts.actions_bird_cage.msg_2": {
+    "src_hash": "9ed535ea500b3fe754627bc9aad2a44c",
+    "text": "Apri la gabbia e lascia che il pappagallo delle caverne vaghi libero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:28.108261Z"
+  },
+  "scripts.actions_bone.msg_1": {
+    "src_hash": "f63b4574be546a581f1d1191a64be28b",
+    "text": "In mezzo al mucchio di varie ossa trovi una parte grande e cava, simile a una pipa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:30.856451Z"
+  },
+  "scripts.actions_bone.msg_2": {
+    "src_hash": "80a2909ce1f004d65194f1db48dca775",
+    "text": "Frughi nella pila ma non riesci a trovare parti utili.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:30.856882Z"
+  },
+  "scripts.actions_bone_flute.say_1": {
+    "src_hash": "3707e9f3c644698baff56a79ea20bedc",
+    "text": "Questo non è ancora disposto a rivelare se si tratta del tuo animale spirituale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:30.857306Z"
+  },
+  "scripts.actions_bone_flute.say_2": {
+    "src_hash": "0a763b1c9acc129852d0e761f3db135a",
+    "text": "Questo ha scosso la testa. Questo probabilmente significa che non è il tuo animale spirituale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:30.857756Z"
+  },
+  "scripts.actions_bone_flute.say_3": {
+    "src_hash": "f5d55048589bd41686d1250e7d33cca0",
+    "text": "Finalmente questo rivela il tuo animale spirituale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:30.858134Z"
+  },
+  "scripts.actions_bone_flute_wall.msg_1": {
+    "src_hash": "2c3314f94f2660ce75b9258cee700a76",
+    "text": "Hai trovato un flauto d'osso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:35.436939Z"
+  },
+  "scripts.actions_bony_rod.say_1": {
+    "src_hash": "cfa07c0159ce43fffdec206dcbc42af6",
+    "text": "Ricarica...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:35.437182Z"
+  },
+  "scripts.actions_bookOnTable.msg_1": {
+    "src_hash": "4ab71ab4da67fa5c8ce728839c451726",
+    "text": "Questo libro racconta di un incantesimo che attira chi lo impugna verso l'essere più energico accanto a lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:35.437692Z"
+  },
+  "scripts.actions_bookOnTable.msg_2": {
+    "src_hash": "da1ab3b85ba283abdcc703f5b418c6f9",
+    "text": "Si compone di quattro parti che sono state cancellate da questo libro. Devono essere letti insieme ai canti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:35.438211Z"
+  },
+  "scripts.actions_bookOnTable.msg_3": {
+    "src_hash": "669b2cb2f632101a665b1e379da7c9bb",
+    "text": "Devi aspettare per sfidare nuovamente questo nemico!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:35.438620Z"
+  },
+  "scripts.actions_bookcase.say_1": {
+    "src_hash": "4aee2c7b53934fe015faa3daa46d0413",
+    "text": "Hai ripreso qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:37.982206Z"
+  },
+  "scripts.actions_bookcase.say_2": {
+    "src_hash": "9a2e062060278cef20ffc96b18916669",
+    "text": "Hai trovato un foglio di carta stropicciato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:37.982669Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_1": {
+    "src_hash": "4e9ac854b18934fcf5a5d7f5632f120d",
+    "text": "Devi equipaggiare il bagagliaio per provare a usarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:37.983011Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_2": {
+    "src_hash": "cc773a38983c2fac2b945284898315f4",
+    "text": "Scintille magiche vorticano intorno agli stivali e all'improvviso sei altrove.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:37.983392Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_3": {
+    "src_hash": "de4509a38663b7aeecbd91bb59d54147",
+    "text": "Se vuoi indossare questi stivali devi rimanere in una zona di protezione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:37.983772Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_4": {
+    "src_hash": "cb29b428a74e937af084be549a76dfa2",
+    "text": "Sei stanco dell'ultimo utilizzo degli stivali, devi attendere un'ora per riutilizzarli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:41.164131Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_1": {
+    "src_hash": "be4b537813fa831f143f67d54d08c454",
+    "text": "Timira la dalle molte teste è stata sconfitta. Hai {} secondi per lasciare la stanza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:41.164634Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_2": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Hai trovato un {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:14:41.164905Z"
   }
 }

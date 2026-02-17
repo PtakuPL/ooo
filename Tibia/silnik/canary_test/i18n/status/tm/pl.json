@@ -104094,5 +104094,261 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T02:02:18.487425Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame_7ef32bcd": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Wejdź do starożytnego niebieskiego płomienia obywatelstwa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:51.173180Z"
+  },
+  "book.otbm.enter_the_teleporter_flame_to": {
+    "src_hash": "a196942253408fca1b7e59255eef2d10",
+    "text": "Wejdź w płomień teleportu, aby zostać obywatelem Roshamuul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:51.173797Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become": {
+    "src_hash": "672e470968e9cd56724b8b6e4a26a64c",
+    "text": "Wejdź do teleportu i zostań mieszkańcem Svargrond",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:51.175147Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_4d25945b": {
+    "src_hash": "4d25945b330c1b1d8dd02f87d0bac445",
+    "text": "Wejdź do teleportu i zostań obywatelem Thais!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:51.175778Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_9a40a4e1": {
+    "src_hash": "9a40a4e17df4e7f6702b63ba96d18faf",
+    "text": "Wejdź do teleportu i zostań obywatelem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:51.176144Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_cd55bbb9": {
+    "src_hash": "cd55bbb91a56a69600f613549e98dbf8",
+    "text": "Wejdź do teleportu i zostań obywatelem Liberty Bay!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:53.787161Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_d9c3cee5": {
+    "src_hash": "d9c3cee544fbb8c23ad17deb5d97d607",
+    "text": "Wejdź do teleportu i zostań obywatelem Carlin!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:53.787577Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_f3bad5cd": {
+    "src_hash": "f3bad5cdcfe1261ec83b7c39b205b22d",
+    "text": "Wejdź do teleportu i zostań obywatelem Darashia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:53.788196Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_f98dbe2c": {
+    "src_hash": "f98dbe2cc10d696f29945725e6c75d36",
+    "text": "Wejdź do teleportu i zostań obywatelem Edron!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:53.788633Z"
+  },
+  "book.otbm.enter_this_teleporter_to_leave": {
+    "src_hash": "c0090b307e31895bdf5ea5849f9a9150",
+    "text": "Wejdź do teleportu, aby opuścić to przeklęte miejsce i wrócić do Goromy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:59.717005Z"
+  },
+  "book.otbm.entry_only_with_permission_from": {
+    "src_hash": "83cd0fcb22c70b7a8b45ff2f253d4ca6",
+    "text": "Wstęp wyłącznie za zgodą przełożonego nekromanty i z własnym materiałem do badań.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:59.717476Z"
+  },
+  "book.otbm.equipment_pick_tree_or_bricklayers": {
+    "src_hash": "ed37e228f369597b290490ca74920a20",
+    "text": "Wyposażenie: Zestaw kilofa, drzewa lub murarza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:59.717824Z"
+  },
+  "book.otbm.equipment_wood_wooden_ties_hammer": {
+    "src_hash": "3a9e26509736d35a13c17004ca0816ba",
+    "text": "Wyposażenie: Drewno, krawaty drewniane, młotek, gwoździe, okucia metalowe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:59.718303Z"
+  },
+  "book.otbm.eternal_love_will_conquer_death": {
+    "src_hash": "b7c28eb237e7064db12b2e3557212a96",
+    "text": "Wieczna miłość zwycięży śmierć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:12:59.718620Z"
+  },
+  "book.otbm.even_before_the_creation_of": {
+    "src_hash": "7137963d14bbf9131392b1aa2399db1d",
+    "text": "Jeszcze przed stworzeniem ludzi miało miejsce kilka zdarzeń, które można zinterpretować jedynie jako ataki demonicznych armii próbujących zatrzymać proces tworzenia. Nieludzkie źródła podają o kilku armiach, które najechały nasz świat na przestrzeni wielu stuleci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:07.999247Z"
+  },
+  "book.otbm.even_if_the_seven_are": {
+    "src_hash": "35dd1318be38872f4e9a53861b6badf7",
+    "text": "Nawet jeśli siedmiu będzie po jego stronie, w końcu zwyciężymy i może to kosztować życie nas wszystkich!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:07.999774Z"
+  },
+  "book.otbm.even_though_many_djinns_had": {
+    "src_hash": "14aa31e0409c251e7c91c8bcef6625f4",
+    "text": "Mimo że wielu dżinów straciło życie podczas pamiętnej bitwy pod Ankrahmun, wojna wciąż nie została rozstrzygnięta. Malor stracił wielu ze swoich najodważniejszych wojowników, ale Gabel także i obaj wiedzieli, że kolejna taka epicka bitwa doprowadzi całą rasę dżinów na skraj zagłady. W swojej desperacji Gabel zwrócił się o radę do swojego zaufanego przyjaciela Fa'Hradina. Stary dżinn zasugerował zastosowanie podstępu w celu wyeliminowania Malora. Rozumował, że bez przywódcy Efreetowie położą kres buntowi. Gabel, który chciał uniknąć dalszego rozlewu krwi, zgodził się. I tak doszło do stworzenia magicznej lampy, która w nieznany do dziś sposób została potajemnie umieszczona w prywatnej komnacie Malora. Potężny Efreet nigdy nie miał szans. Kiedy kładł się spać w czymś, co uważał za swoją prywatną lampę, został uwięziony w lampie, która wkrótce została przemycona z Mal'Ouquah, fortecy Efreetów, i przywieziona z powrotem do Maridu. Sztuczka Fa'hradina zadziałała – Malor był więźniem Gabela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:08.003081Z"
+  },
+  "book.otbm.eventually_gabel_stepped_forward_to": {
+    "src_hash": "f2e705645bfc29a31a670fc0779f18ad",
+    "text": "W końcu Gabel wystąpił naprzód, by spotkać się ze swoim przeciwnikiem. To był moment, na który czekał Malor, który nigdy nie miał zamiaru walczyć honorowo. Nagle ziemia otworzyła się w tysiącu miejsc, a hordy okrutnych nieumarłych zaatakowały Gabela i jego armię. Ponieważ Malor potajemnie zawarł sojusz z przerażającymi nekromantami z Drefia i to oni kontrolowali hordy nieumarłych, które walczyły dla niego. W obliczu przeważającego wroga Gabel i jego armia rzucili się do ucieczki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:08.004611Z"
+  },
+  "book.otbm.eventually_they_started_exposing_undead": {
+    "src_hash": "1891f59f4f6ab6ea4f2b7f929d73359a",
+    "text": "W końcu zaczęli wystawiać nieumarłe ciała na działanie złych energii i łączyć je z żywymi istotami, tworząc ogromne nieumarłe potwory, które jednak więdły i umierały niemal natychmiast po ich stworzeniu. Po kilku eksperymentach, które zakończyły się szczególnie spektakularnym niepowodzeniem, kościani władcy zostali zmuszeni do porzucenia swoich eksperymentów. Wkrótce ich makabryczne eksperymenty zatarły się w pamięci. Zostały prawie zapomniane, gdy w odległym mieście-beakerach pojawiło się wiele śmierci mózgowych, twierdzących, że osiągnęli decydujący przełom w dziedzinie nekromancji. Wysoka rada starszych obserwatorów niechętnie wysłała grupę naukowców do laboratoriów, aby zbadali wyniki. Znalezione przez nich nieumarłe stworzenia były tak ohydne i zdegenerowane, że naukowcy stanowczo oświadczyli, że eksperymenty, które doprowadziły do ​​ich stworzenia, są sprzeczne z samymi zasadami beholderkina. Wszyscy nieumarli mieli zostać zniszczeni, a eksperymenty miały zostać zniesione raz na zawsze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:08.007424Z"
+  },
+  "book.otbm.ever_may_those_who_will": {
+    "src_hash": "2adf83e133fe9e7494dbfd7b8d67a1b3",
+    "text": "kiedykolwiek. Niech ci, którzy przyjdą, nie padli ofiarą tego samego zła, co my.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:14.989014Z"
+  },
+  "book.otbm.every_child_knows_the_sad": {
+    "src_hash": "b1f2f519f903a67fdff5a9919bcc0488",
+    "text": "Każde dziecko zna smutny los Kha'labala. Niegdyś tętnił życiem, zielony raj pełen bujnych lasów i niezliczonych źródeł słodkowodnych. Bogowie stworzyli ten raj i podarowali go nowo powstałej rasie, ludziom, w prezencie. Chroniony ze wszystkich stron przez morze lub niezrównane góry, Kha'labal był idealnym środowiskiem dla rozwoju młodej, bezbronnej rasy. I kwitł i prosperował, tak się stało. Prowadzeni przez swojego przywódcę Banora i wyposażeni w niesamowite umiejętności techniczne i wiedzę swoich twórców, ludziom udało się zasiedlić cały Kha'labal w ciągu kilku pokoleń, a w niebo wzniosły się piękne budynki, z których najpotężniejszy znajdował się w majestatycznym mieście Ankrahmun. Ci pierwsi ludzie, dziś nazywani Założycielami, byli przyjazną rasą, która żyła ze sobą w pokoju i harmonii, nieświadomi okropności czających się w świecie zewnętrznym. A bogowie, którzy obserwowali ich ze swoich tronów w Kha'zeel, uśmiechali się do nich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:14.992062Z"
+  },
+  "book.otbm.everyone_of_the_old_races": {
+    "src_hash": "9912b67e9e8cc5fa97705ead498a817b",
+    "text": "wszystkie stare rasy, które znamy tylko jako Starożytnych, zostały pokonane i pogrzebane przez piaski czasu, ponieważ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:14.992675Z"
+  },
+  "book.otbm.everything_was_drained_away_as": {
+    "src_hash": "71fcdcc48e60428a61aceb72eb3d1660",
+    "text": "wszystko zostało usunięte, gdy tylko to stworzyli, a Zathroth roześmiał się pełen pogardy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:14.993263Z"
+  },
+  "book.otbm.example_how_to_talk_with": {
+    "src_hash": "91eeff94bc841f2eaa9cfbf625997ebd",
+    "text": "Example jak rozmawiać z NPC:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:21.592469Z"
+  },
+  "book.otbm.exchange_for_certain_services_that": {
+    "src_hash": "1bc7c82d2072bd060f059145e62f8a80",
+    "text": "zamian za określone usługi, które nie zostały szerzej omówione w dokumentach sądu. Cudzoziemiec został uznany za winnego bez procesu i skazany na trzy lata pracy w kopalni soli. Piechur Kamahl twierdził, że jego ojciec Indril był winny czarów. Pod łóżkiem oskarżonego znaleziono kilka niejasnych tekstów. Indril został wygnany z miasta, a jego majątek został równo podzielony pomiędzy faraona i jego spadkobierców. Cudzoziemiec Todd Ballory został uznany za winnego zabicia nadzorcy Barnaka, ojca szesnaściorga dzieci i szanowanego członka lokalnego stowarzyszenia biczowników. Wspomniany skazaniec został skazany na dość spektakularny finałowy występ na lokalnej arenie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:21.594573Z"
+  },
+  "book.otbm.exchange_rate_100_gold_coins": {
+    "src_hash": "391a1868ffece2f1125c5fd3231562cf",
+    "text": "kurs wymiany: 100 złotych monet to 1 platynowa moneta - 100 platynowych monet to 1 kryształowa moneta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:21.595162Z"
+  },
+  "book.otbm.exercise_dummies_now_available_for": {
+    "src_hash": "c7eeeb6b7fef6b0073af82c7e8845a93",
+    "text": "Manekiny do ćwiczeń są teraz dostępne do treningu z wyznaczoną bronią! (Używanie prawdziwej broni do ćwiczeń na manekinach jest zabronione.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:21.595759Z"
+  },
+  "book.otbm.exercise_dummies_now_available_for_c7eeeb6b": {
+    "src_hash": "c7eeeb6b7fef6b0073af82c7e8845a93",
+    "text": "Manekiny do ćwiczeń są teraz dostępne do treningu z wyznaczoną bronią! (Używanie prawdziwej broni do ćwiczeń na manekinach jest zabronione.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:21.596345Z"
+  },
+  "book.otbm.fact_is_that_each_talon": {
+    "src_hash": "9c45a21ee2f469bfe20c4f05e8727a51",
+    "text": "Fakt jest taki, że każdy Talon kryje w sobie potężną magiczną moc. Musimy jedynie znaleźć sposób na uwolnienie tej mocy, a co ważniejsze, kontrolować ją, abyśmy mogli ją wykorzystać do naszych celów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:29.103507Z"
+  },
+  "book.otbm.famous_necromants_by_muriel": {
+    "src_hash": "4929034829f10429ff6e40bcbb46547e",
+    "text": "Słynni Nekromanci autorstwa Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:29.103832Z"
+  },
+  "book.otbm.fardos_fulfilled_by_the_need": {
+    "src_hash": "f146807b0bd8fd753cc64024ed919563",
+    "text": "Fardos zaspokojony potrzebą tworzenia i rodzenia. Pojawił się i rozpoczął natychmiast aktem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:29.104331Z"
+  },
+  "book.otbm.fasul_abrek_founder_of_the": {
+    "src_hash": "bf41f65c522e7769ed09971cc89cae15",
+    "text": "Fasul Abrek, założyciel gildii poszukiwaczy przygód, upadły bohater, pogromca królów, zginął z rąk Elane’a",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:13:29.104943Z"
   }
 }

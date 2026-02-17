@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T10:46:39.292517Z",
+  "timestamp": "2026-02-17T10:49:22.186839Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771325107412867816,
+          1771325351801594485,
           1847374
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771325107412867816,
+            1771325351801594485,
             1847374
           ],
           "row": {
@@ -25443,7 +25443,7 @@
         [
           "otclient_modules.json",
           1,
-          1771322272616367317,
+          1771325297537438465,
           138244
         ],
         [
@@ -25882,7 +25882,7 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771322272616367317,
+            1771325297537438465,
             138244
           ],
           "row": {
@@ -30882,8 +30882,8 @@
         [
           "monsters.json",
           1,
-          1771322246276288432,
-          399429
+          1771325249817302433,
+          399481
         ],
         [
           "mounts.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24158,
-        "english_copy_keys": 1229,
+        "translated_keys": 24168,
+        "english_copy_keys": 1224,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 45.08,
+        "completion_pct": 45.1,
         "server_keys": 49731,
-        "server_translated": 24057,
-        "server_pct": 48.37,
+        "server_translated": 24067,
+        "server_pct": 48.39,
         "client_keys": 3855,
         "client_translated": 101,
         "client_pct": 2.62
@@ -31265,13 +31265,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771322246276288432,
-            399429
+            1771325249817302433,
+            399481
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 5777,
-            "english_copy_keys": 237,
+            "translated_keys": 5787,
+            "english_copy_keys": 232,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -31665,7 +31665,7 @@
         [
           "monsters.json",
           1,
-          1771322223036213169,
+          1771325222165220537,
           334020
         ],
         [
@@ -32048,7 +32048,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771322223036213169,
+            1771325222165220537,
             334020
           ],
           "row": {

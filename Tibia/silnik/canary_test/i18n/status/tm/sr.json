@@ -173998,5 +173998,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:36:24.044199Z"
+  },
+  "monster.misguided_shadow.name": {
+    "src_hash": "75b5dce8ff6ef5b7deceeeeef71b7f41",
+    "text": "__ПХ0__ Сенка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:16.479003Z"
+  },
+  "monster.the_armored_voidborn.voice_1": {
+    "src_hash": "7f0dd8c83466c86d9ed877ede4b7979c",
+    "text": "ЦХХРРР!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:16.479551Z"
+  },
+  "monster.the_false_god.voice_1": {
+    "src_hash": "44543cc3deddcc0292b78649795b8f9a",
+    "text": "ЦРЕЕЕАК!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:16.479815Z"
+  },
+  "monster.the_sandking.voice_1": {
+    "src_hash": "68b6f23583cecf4b2b053132fffb050e",
+    "text": "ЦРРРК!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:16.480034Z"
+  },
+  "monster.the_sandking_fake.voice_1": {
+    "src_hash": "44543cc3deddcc0292b78649795b8f9a",
+    "text": "ЦРЕЕЕАК!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:16.480299Z"
+  },
+  "monster.zarcorix_of_yalahar.name": {
+    "src_hash": "bffcdabb7e8ef2f841c4ee997416a368",
+    "text": "Зарцорик од __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:22.842028Z"
+  },
+  "monster.zarcorix_of_yalahar.desc": {
+    "src_hash": "bffcdabb7e8ef2f841c4ee997416a368",
+    "text": "Зарцорик од __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:22.842801Z"
+  },
+  "monster.barkless_fanatic.name": {
+    "src_hash": "936d1e873932349ab5a2d346df33f81c",
+    "text": "__ПХ0__ Фанатиц",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:22.843265Z"
+  },
+  "monster.misguided_thief.name": {
+    "src_hash": "194125c8935b29eb3dce5276cba7b833",
+    "text": "__ПХ0__ Лопов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:22.843748Z"
+  },
+  "monster.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:28.057885Z"
+  },
+  "monster.the_old_widow.desc": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:28.058614Z"
+  },
+  "monster.thul.voice_1": {
+    "src_hash": "5a633e68eefac8100e3a4b591ea0fcdd",
+    "text": "Гаааххх!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:28.059083Z"
+  },
+  "monster.the_masked_marauder.voice_3": {
+    "src_hash": "746f0e41a6ef7fb4208253c14b3ebd78",
+    "text": "Погледај! Иза вас је __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:28.059895Z"
+  },
+  "monster.colerian_the_barbarian.name": {
+    "src_hash": "c80e973f0edce6768ab62ce2e43cd55c",
+    "text": "Цолериан тхе __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:28.060599Z"
+  },
+  "monster.colerian_the_barbarian.desc": {
+    "src_hash": "c80e973f0edce6768ab62ce2e43cd55c",
+    "text": "Цолериан тхе __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:47:29.797962Z"
   }
 }

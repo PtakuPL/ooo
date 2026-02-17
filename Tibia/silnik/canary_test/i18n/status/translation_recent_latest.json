@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T04:43:08.380915Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T04:45:23.565854Z",
+  "language": "pl",
+  "json_file": "quests.json",
+  "translated": 46,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "quests.others.exterminator_say_1",
+      "en": "This mission stinks ... and now you do as well!",
+      "translated": "Ta misja śmierdzi... a teraz ty też!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.others.exterminator_say_3",
+      "en": "You carefully gather the stalker blood.",
+      "translated": "Ostrożnie zbierasz krew prześladowcy.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.others.holy_water_damaged",
+      "en": "%s damaged the shadow nexus! You can't damage it while it's burning.",
+      "translated": "%s uszkodził nexus cienia! Nie możesz go uszkodzić, gdy się pali.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "quests.others.holy_water_destroyed",
+      "en": "%s destroyed the shadow nexus! In 10 seconds it will return to its original state.",
+      "translated": "%s zniszczył nexus cienia! Za 10 sekund powróci do pierwotnego stanu.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.flipped_lever",
+      "en": "You flipped the {0} lever. Hurry up and find the next one!",
+      "translated": "Przestawiłeś dźwignię {0}. Pospiesz się i znajdź następny!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_1",
+      "en": "You have touched Infernatil's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Infernatila i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_2",
+      "en": "You have touched Tafariel's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Tafariela i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_3",
+      "en": "You have touched Verminor's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Verminora i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_4",
+      "en": "You have touched Apocalypse's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Apocalypse i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_5",
+      "en": "You have touched Bazir's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Bazira i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_6",
+      "en": "You have touched Ashfalor's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Ashfalora i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "quests.pits_of_inferno.throne_say_7",
+      "en": "You have touched Pumin's throne and absorbed some of his spirit.",
+      "translated": "Dotknąłeś tronu Pumina i wchłonąłeś część jego ducha.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "quests.quest_system2.say_1",
+      "en": "A batch of documents has been stashed in the shelf. These might be of interest to Zalamon.",
+      "translated": "Na półce ukryto partię dokumentów. To może zainteresować Zalamona.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "quests.quest_system2.say_2",
+      "en": "You dig out a skull from the pile of bones. That must be the skull Lazaran talked about.",
+      "translated": "Ze stosu kości wykopujesz czaszkę. To musi być ta czaszka, o której mówił Lazaran.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.quest_system2.say_3",
+      "en": "To buy some time you replace the fish with a piece of carrot.",
+      "translated": "Aby zyskać na czasie, zastępujemy rybę kawałkiem marchewki.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.rookie_guard.m02.academy_roof",
+      "en": "These stairs lead up to the roof of the academy. Up there you should find TWO of the catapults.",
+      "translated": "Te schody prowadzą na dach akademii. Tam na górze powinieneś znaleźć DWIE katapulty.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.rookie_guard.m02.house_vascalir",
+      "en": "This is the house Vascalir mentioned. You should find a stone pile in the cellar. Use it to get a stone!",
+      "translated": "To jest dom, o którym wspomniał Vascalir. W piwnicy powinieneś znaleźć stos kamieni. Użyj go, aby zdobyć kamień!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "quests.rookie_guard.m02.norma_bar",
+      "en": "This is Norma's bar. If you go to the roof, you should find one of the catapults that need to be filled with stones.",
+      "translated": "To jest bar Normy. Jeśli wejdziesz na dach, powinieneś znaleźć jedną z katapult, które należy wypełnić kamieniami.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.rookie_guard.m02.obi_shop",
+      "en": "This is Obi's shop. Up on his roof you should find one of the catapults Vascalir mentioned.",
+      "translated": "To jest sklep Obi. Na jego dachu powinieneś znaleźć jedną z katapult, o których wspomniał Vascalir.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.rookie_guard.m04.not_hyacinth_east",
+      "en": "This is not the way to Hyacinth. Follow the path to the east to find Hyacinth's little house.",
+      "translated": "To nie jest droga do Hiacynta. Podążaj ścieżką na wschód, aby znaleźć mały domek Hiacynta.",
+      "source": "google_translate"
     }
   ]
 }

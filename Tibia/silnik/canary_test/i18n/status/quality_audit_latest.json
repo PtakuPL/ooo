@@ -1,60 +1,18 @@
 {
-  "timestamp": "2026-02-17T04:43:09.465528Z",
+  "timestamp": "2026-02-17T04:45:27.099549Z",
   "checked_entries": 100,
-  "issues_found": 13,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en": 6,
-    "identical_to_en_exempt": 11,
+    "identical_to_en_exempt": 10,
     "artifact_token": 7,
-    "suspicious_log_high": 127,
-    "suspicious_log_critical": 65,
-    "suspicious_log_low": 8,
+    "identical_to_en": 1,
+    "suspicious_log_high": 125,
+    "suspicious_log_critical": 66,
+    "suspicious_log_low": 9,
     "suspicious_rejected_critical": 166,
     "suspicious_rejected_high": 34
   },
   "issues": [
-    {
-      "key": "monster.hunter.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Hunter",
-      "translated": "Hunter"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -103,8 +61,15 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "spell.quara_raider_shoot.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "###raider_shoot",
+      "translated": "###raider_shoot"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

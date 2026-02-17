@@ -43313,11 +43313,11 @@
   },
   "npc.a_restless_soul.multi_1": {
     "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
-    "text": "I was captured and tortured to death by the cultists here. Adoran a un ser al que llaman Ghazbaran...",
+    "text": "Los cultistas de aquí me capturaron y torturaron hasta la muerte. Adoran a un ser al que llaman Ghazbaran...",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:33:46.421740Z"
+    "updated_at": "2026-02-17T00:26:34.715481Z"
   },
   "npc.a_restless_soul.multi_2": {
     "src_hash": "7dc0f9270cd35b18938f8271d065463e",
@@ -144630,5 +144630,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:11:28.732113Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Hum hum, hum hum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:26:38.489905Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_2": {
+    "src_hash": "e394b383f25b2bf9274e3eb3dc9c834f",
+    "text": "Pequeño humano tonto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:26:38.490289Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_3": {
+    "src_hash": "8e117afcf7ee9c8d5fde01fe82022c1e",
+    "text": "Soy herrero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:26:38.490532Z"
+  },
+  "npc.a_sweaty_cyclops.voice_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Hum hum, hum hum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:26:56.701517Z"
+  },
+  "npc.a_sweaty_cyclops.voice_2": {
+    "src_hash": "e394b383f25b2bf9274e3eb3dc9c834f",
+    "text": "Pequeño humano tonto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:26:56.702571Z"
   }
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T00:25:05.565001Z",
-  "language": "pl",
+  "timestamp": "2026-02-17T00:27:00.824051Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 50,
+  "translated": 24,
   "entries": [
     {
-      "key": "npc.kais.stdmod_12",
-      "en": "Talk to the hermit Eremo on the isle of Cormaya about this blessing.",
-      "translated": "Porozmawiaj z pustelnikiem Eremo na wyspie Cormaya o tym blogoslawienstwie.",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "simple"
     },
     {
-      "key": "npc.kais.walkaway_msg_1",
-      "en": "Fare you well... |PLAYERNAME|",
-      "translated": "Żegnaj... |PLAYERNAME|",
+      "key": "npc.a_sweaty_cyclops.voice_2",
+      "en": "Silly lil' human",
+      "translated": "Pequeño humano tonto",
       "source": "simple"
     },
     {
-      "key": "npc.karl.farewell_msg_1",
-      "en": "Please come back, but don't tell others.",
-      "translated": "Wróć proszę, ale nie mów innym.",
-      "source": "simple"
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "npc.karl.greet_msg_1",
-      "en": "Pshhhht! Not that loud ... but welcome.",
-      "translated": "Pshhhht! Nie tak głośno... ale witaj.",
-      "source": "simple"
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
+      "source": "tm"
     },
     {
-      "key": "npc.karl.walkaway_msg_1",
-      "en": "Please come back, but don't tell others.",
-      "translated": "Wróć proszę, ale nie mów innym.",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.farewell_msg_1",
-      "en": "May the gods bless you, |PLAYERNAME|!",
-      "translated": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.keyword_1",
-      "en": "So receive the protection of the twist of fate, pilgrim.",
-      "translated": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.stdmod_1",
-      "en": "So receive the protection of the twist of fate, pilgrim.",
-      "translated": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.stdmod_3",
-      "en": "Keep your adventurer's stone well.",
-      "translated": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.stdmod_32",
-      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
-      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.stdmod_5",
-      "en": "Here you are. Take care.",
-      "translated": "Proszę bardzo. Uważaj na siebie.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "npc.kasmir.stdmod_8",
-      "en": "Here you are. Take care.",
-      "translated": "Proszę bardzo. Uważaj na siebie.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "npc.kawill.farewell_msg_1",
-      "en": "Earth under your feet, |PLAYERNAME|!",
-      "translated": "Ziemia pod twoimi stopami, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "npc.kawill.greet_msg_1",
-      "en": "Welcome |PLAYERNAME|! May earth protect you!",
-      "translated": "Witaj |PLAYERNAME|! Niech ziemia cię chroni!",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "npc.kawill.walkaway_msg_1",
-      "en": "Earth under your feet, pilgrim. What brings you here?",
-      "translated": "Ziemia pod twoimi stopami, pielgrzymie. Co cię tu sprowadza?",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "npc.king_tibianus.say_11",
-      "en": "You do not have enough money to donate that amount.",
-      "translated": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.king_tibianus.say_15",
-      "en": "You do not have enough money to donate that amount.",
-      "translated": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
-      "source": "simple"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.king_tibianus.say_8",
-      "en": "You do not have enough money to donate that amount.",
-      "translated": "Nie masz wystarczajądowódca pieniędzy do przekazywać, ofiarowywać that ilość.",
-      "source": "simple"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "npc.kjesse.farewell_msg_1",
-      "en": "May the gods bless you, |PLAYERNAME|!",
-      "translated": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "npc.kjesse.keyword_1",
-      "en": "So receive the protection of the twist of fate, pilgrim.",
-      "translated": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

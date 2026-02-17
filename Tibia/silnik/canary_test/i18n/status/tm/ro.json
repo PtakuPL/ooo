@@ -52342,5 +52342,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:56:21.982026Z"
+  },
+  "otclient_modules.character.tr_24": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.305113Z"
+  },
+  "otclient_modules.character.tr_29": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.305677Z"
+  },
+  "otclient_modules.character.tr_3": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.305988Z"
+  },
+  "otclient_modules.character.tr_30": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.306441Z"
+  },
+  "otclient_modules.character.tr_34": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.306846Z"
+  },
+  "otclient_modules.character.tr_35": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.307281Z"
+  },
+  "otclient_modules.character.tr_36": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.307553Z"
+  },
+  "otclient_modules.character.tr_40": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "De la Amplificare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.308362Z"
+  },
+  "otclient_modules.character.tr_41": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.308631Z"
+  },
+  "otclient_modules.character.tr_43": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.308927Z"
+  },
+  "otclient_modules.character.tr_44": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.309356Z"
+  },
+  "otclient_modules.character.tr_45": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.309624Z"
+  },
+  "otclient_modules.character.tr_46": {
+    "src_hash": "9428316ee33b703d37464160e7b7dfff",
+    "text": "Mana lipitoare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.309881Z"
+  },
+  "otclient_modules.character.tr_47": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.310197Z"
+  },
+  "otclient_modules.character.tr_48": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.310498Z"
+  },
+  "otclient_modules.character.tr_49": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.310925Z"
+  },
+  "otclient_modules.character.tr_50": {
+    "src_hash": "a64e30d3c5a027e9821ebe7f8c8f819f",
+    "text": "Lipitoare de viață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.311441Z"
+  },
+  "otclient_modules.character.tr_52": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "De la Echipamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.311786Z"
+  },
+  "otclient_modules.character.tr_58": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.312689Z"
+  },
+  "otclient_modules.character.tr_6": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "De la Amplificare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.313035Z"
+  },
+  "otclient_modules.character.tr_7": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "De la bază",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.313905Z"
+  },
+  "otclient_modules.character.tr_9": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "De la roată",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.315426Z"
+  },
+  "otclient_modules.character.tr_93": {
+    "src_hash": "5913efb942586b6d6e80fcdc82566497",
+    "text": "Tu inspectezi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.315833Z"
+  },
+  "otclient_modules.character_otui.tr_14": {
+    "src_hash": "c1e1720c794250f5f1eeec1221d407e4",
+    "text": "Binecuvântări",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.316561Z"
+  },
+  "otclient_modules.character_otui.tr_64": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.320726Z"
+  },
+  "otclient_modules.character_otui.tr_70": {
+    "src_hash": "0aa6f4210bf373c95eda00232e93cd98",
+    "text": "Distanţă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.321582Z"
+  },
+  "otclient_modules.character_otui.tr_86": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Viteză",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.322914Z"
+  },
+  "otclient_modules.character_otui.tr_94": {
+    "src_hash": "5913efb942586b6d6e80fcdc82566497",
+    "text": "Tu inspectezi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.324318Z"
+  },
+  "otclient_modules.characterlist_otui.tr_5": {
+    "src_hash": "f5a7924e621e84c9280a9a27e1bcb7f6",
+    "text": "Lume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.326822Z"
+  },
+  "otclient_modules.charms.tr_55": {
+    "src_hash": "7107d1a06e5b3ecbc45b989889d6fe9b",
+    "text": "Mărește viteza de mișcare timp de 10 secunde după ce ați fost lovit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.332494Z"
+  },
+  "otclient_modules.charms.tr_56": {
+    "src_hash": "af9e27729d520ea66c0959bc6b37ba24",
+    "text": "Explozie de adrenalină",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.332843Z"
+  },
+  "otclient_modules.charms.tr_57": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "Evită un atac cu șansă, evitând toate daunele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.333287Z"
+  },
+  "otclient_modules.charms.tr_58": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Se eschiva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.333534Z"
+  },
+  "otclient_modules.charms.tr_59": {
+    "src_hash": "b6af098ba1c6eec1f80bc951a947903c",
+    "text": "Reflectă daunele primite înapoi asupra agresorului.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.334139Z"
+  },
+  "otclient_modules.charms.tr_61": {
+    "src_hash": "07a184bb02b61bf7a64c9a5731b2dc50",
+    "text": "Infirmă creatura și o paralizează timp de 10 secunde.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.334827Z"
+  },
+  "otclient_modules.charms1410_otui.tr_4": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Ecouri de farmec minor\nCâștigat prin deblocarea sau îmbunătățirea farmecului major și promovarea personajului tău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.337403Z"
+  },
+  "otclient_modules.createaccount_otui.tr_32": {
+    "src_hash": "7f3c8411af284dfb54de94ff2560ff02",
+    "text": "Numele personajului:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.351197Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_18": {
+    "src_hash": "b78a3223503896721cca1303f776159b",
+    "text": "Titlu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.354317Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_5": {
+    "src_hash": "94418f938976212ff929cc1737b1ec9d",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.356498Z"
+  },
+  "otclient_modules.game_cyclopedia_otui.tr_3": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Ecouri de farmec minor\nCâștigat prin deblocarea sau îmbunătățirea farmecului major și promovarea personajului tău",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.366770Z"
+  },
+  "otclient_modules.game_healthcircle.tr_2": {
+    "src_hash": "0aa6f4210bf373c95eda00232e93cd98",
+    "text": "Distanţă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.369339Z"
+  },
+  "otclient_modules.game_highscore.tr_1": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.370225Z"
+  },
+  "otclient_modules.gameinterface.tr_39": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Deschide",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.385219Z"
+  },
+  "otclient_modules.gameinterface.tr_41": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Deschide",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.385527Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_6": {
+    "src_hash": "6adf97f83acf6453d4a6a4b1070f3754",
+    "text": "Nici unul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.391162Z"
+  },
+  "otclient_modules.house.tr_47": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.397592Z"
+  },
+  "otclient_modules.house.tr_53": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.398781Z"
+  },
+  "otclient_modules.house.tr_59": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.399759Z"
+  },
+  "otclient_modules.house.tr_65": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.400794Z"
+  },
+  "otclient_modules.house.tr_95": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Sortați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:58:12.404177Z"
   }
 }

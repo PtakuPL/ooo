@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:14.958399Z"
+    "updated_at": "2026-02-17T10:35:04.870648Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:17.711345Z"
+    "updated_at": "2026-02-17T10:35:07.560282Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:20.433311Z"
+    "updated_at": "2026-02-17T10:35:10.223331Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24461,7 +24461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:23.148445Z"
+    "updated_at": "2026-02-17T10:35:12.949182Z"
   },
   "spell.deathstrike_paralyze.name": {
     "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
@@ -26157,7 +26157,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:25.796299Z"
+    "updated_at": "2026-02-17T10:35:16.045261Z"
   },
   "spell.orewalker_wave.name": {
     "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
@@ -31149,7 +31149,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:31.150886Z"
+    "updated_at": "2026-02-17T10:35:21.498510Z"
   },
   "spell.monstor_summon.name": {
     "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
@@ -43773,7 +43773,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:33.822714Z"
+    "updated_at": "2026-02-17T10:35:24.484392Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -52037,7 +52037,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:36.491561Z"
+    "updated_at": "2026-02-17T10:35:28.281880Z"
   },
   "spell.apprentice_sheng_summon.name": {
     "src_hash": "c3b6b41da9d83e9bdedc815a926295c0",
@@ -52045,7 +52045,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T09:45:36.492676Z"
+    "updated_at": "2026-02-17T10:35:28.283060Z"
   },
   "spell.fear.name": {
     "src_hash": "eb88d7636980738cd0522ea69e212905",
@@ -60822,5 +60822,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:32:57.438702Z"
+  },
+  "spell.lisa_wave.name": {
+    "src_hash": "37b20df79614bc7adb572649d5dbe1b1",
+    "text": "lisa val",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T10:35:24.483148Z"
   }
 }

@@ -1,32 +1,17 @@
 {
-  "timestamp": "2026-02-17T10:34:33.393412Z",
+  "timestamp": "2026-02-17T10:35:45.554288Z",
   "checked_entries": 100,
-  "issues_found": 20,
+  "issues_found": 18,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 2,
+    "identical_to_en": 2,
+    "identical_to_en_exempt": 4,
     "artifact_token": 16,
-    "suspicious_log_high": 172,
-    "suspicious_log_low": 2,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 179,
-    "suspicious_rejected_high": 21
+    "suspicious_log_high": 171,
+    "suspicious_log_critical": 29,
+    "suspicious_rejected_critical": 186,
+    "suspicious_rejected_high": 14
   },
   "issues": [
-    {
-      "key": "raid.gnarlhounds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
     {
       "key": "spell.mud_attack.words",
       "lang": "it",

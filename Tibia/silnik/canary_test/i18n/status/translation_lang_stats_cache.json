@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T10:34:37.849559Z",
+  "timestamp": "2026-02-17T10:35:49.636207Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -16077,7 +16077,7 @@
         [
           "quests.json",
           1,
-          1771321545494178391,
+          1771324538495159018,
           66707
         ],
         [
@@ -16556,7 +16556,7 @@
         "quests.json": {
           "sig": [
             1,
-            1771321545494178391,
+            1771324538495159018,
             66707
           ],
           "row": {
@@ -27063,8 +27063,8 @@
         [
           "spells.json",
           1,
-          1771321536490150638,
-          84216
+          1771324528283130531,
+          84215
         ],
         [
           "startup.json",
@@ -27097,7 +27097,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 21826,
-        "english_copy_keys": 2309,
+        "english_copy_keys": 2308,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 40.73,
@@ -27574,13 +27574,13 @@
         "spells.json": {
           "sig": [
             1,
-            1771321536490150638,
-            84216
+            1771324528283130531,
+            84215
           ],
           "row": {
             "total_reference_keys": 1534,
             "translated_keys": 1306,
-            "english_copy_keys": 688,
+            "english_copy_keys": 687,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27822,7 +27822,7 @@
         [
           "quests.json",
           1,
-          1771321550558195465,
+          1771324543311175367,
           91113
         ],
         [
@@ -28301,7 +28301,7 @@
         "quests.json": {
           "sig": [
             1,
-            1771321550558195465,
+            1771324543311175367,
             91113
           ],
           "row": {

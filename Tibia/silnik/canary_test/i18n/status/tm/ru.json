@@ -21878,5 +21878,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:38:51.229428Z"
+  },
+  "scripts.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Освободите меня, и вы будете щедро вознаграждены!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.448842Z"
+  },
+  "scripts.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Что это? Ноги Демона лежат здесь? Возможно, кто-то их потерял!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.449488Z"
+  },
+  "scripts.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Я в ловушке, иди сюда и освободи меня быстро!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.449937Z"
+  },
+  "scripts.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Я могу вернуть твою возлюбленную из мертвых, только освободи меня!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.450457Z"
+  },
+  "scripts.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Какая красивая блестящая золотая броня. Приходите ко мне и вы получите это!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.451009Z"
+  },
+  "scripts.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Найдите путь сюда и освободите меня! Пожалуйста, поторопитесь!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.451508Z"
+  },
+  "scripts.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Ты получишь мой набор демонов, если поможешь мне выбраться отсюда!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:55.452122Z"
+  },
+  "gamestore.validation.new_name_whitespace_begin": {
+    "src_hash": "a9ae395a7efd77b13324221a89412d66",
+    "text": "В начале вашего нового имени не должно быть пробелов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:56.879238Z"
+  },
+  "gamestore.validation.npc_name": {
+    "src_hash": "1fff118eda21e5d2637b84c89a365b22",
+    "text": "Ваше новое имя '%s' не может быть именем NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:56.879868Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Как хочешь!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:56.880130Z"
+  },
+  "lib.hireling.lamp_description": {
+    "src_hash": "03f97b09c6a32323149a292b0cc50e2c",
+    "text": "Эта таинственная лампа призывает вашего личного наемника.\nЭтот предмет нельзя продать.\nЭта волшебная лампа — дом %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:56.880903Z"
+  },
+  "misc.blessing.msg_1": {
+    "src_hash": "94009aa41ca8d9dfaef25bb30302d920",
+    "text": "Вы получили Благословение искателя приключений, которое действует до уровня {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:56.881394Z"
+  },
+  "misc.boss_lever.already_fighting": {
+    "src_hash": "1824f405577c3caf944fe01ff4be000b",
+    "text": "Кто-то уже борется с {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:59.521720Z"
+  },
+  "misc.boss_lever.cooldown_wait": {
+    "src_hash": "5b8ed181be4531bcd0ad6920e83fb175",
+    "text": "Вам придется подождать {0}, чтобы снова встретиться с {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:59.522209Z"
+  },
+  "misc.boss_lever.disabled": {
+    "src_hash": "97432f94fe8441e85387c8b7e5ba0b70",
+    "text": "Босс временно отключен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:59.522527Z"
+  },
+  "misc.boss_lever.level_requirement": {
+    "src_hash": "7c75033f5acf3f46f7e84c7cfad768c8",
+    "text": "Все игроки должны быть уровня {0} или выше.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:59.522911Z"
+  },
+  "misc.boss_lever.min_players": {
+    "src_hash": "e7c5e1fb5e2ccf2907795decf72cd99c",
+    "text": "Для этого испытания вам нужны квалифицированные игроки {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:44:59.523321Z"
+  },
+  "misc.boss_lever.team_cooldown": {
+    "src_hash": "3a459cab4115f21ac50536cbfdb9f2e1",
+    "text": "Член вашей команды должен дождаться {0}, чтобы снова встретиться с {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:02.722152Z"
+  },
+  "misc.concoctions.msg_1": {
+    "src_hash": "f6c02b17f997ee1c6a3da39cdd55365f",
+    "text": "Ваша смесь {0} устарела.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:02.722703Z"
+  },
+  "misc.concoctions.msg_2": {
+    "src_hash": "caeffb2f8aa2a5e77f7a456d189452f6",
+    "text": "Вы должны подождать {0}, прежде чем снова использовать {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:02.723179Z"
+  },
+  "misc.concoctions.msg_3": {
+    "src_hash": "47b1a1f76ecd19dc472b3097d740c4c2",
+    "text": "Вы активировали {0}. Это продлится {1}{2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:02.723565Z"
+  },
+  "misc.lever.msg_1": {
+    "src_hash": "6d34b16866c8dd1cc9090f48a08440ae",
+    "text": "Вам или члену вашей команды придется подождать {0} часов, чтобы снова встретиться с {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:02.724053Z"
+  },
+  "player.condition.bleeding": {
+    "src_hash": "4c896a1f3ca86d297325c9b83f74e39f",
+    "text": "У тебя идет кровь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:05.236755Z"
   }
 }

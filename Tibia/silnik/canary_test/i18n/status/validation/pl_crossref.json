@@ -1,10 +1,10 @@
 {
   "lang": "pl",
-  "coverage_pct": 45.0,
+  "coverage_pct": 45.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T00:25:50.216042Z",
+  "checked_at": "2026-02-17T00:46:27.453659Z",
   "issues_total": 0,
   "issues_by_type": {
     "consistency_in_language": 0,

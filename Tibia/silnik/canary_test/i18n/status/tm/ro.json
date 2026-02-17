@@ -24982,5 +24982,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T00:39:59.595383Z"
+  },
+  "scripts.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Ai pierdut încăierarea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:09.384018Z"
+  },
+  "scripts.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Felicitări ați primit ținuta Poltergeist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:09.385908Z"
+  },
+  "scripts.init.msg_1": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Faceți multe achiziții simultan în câteva momente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:09.411103Z"
+  },
+  "misc.boss_lever.min_players": {
+    "src_hash": "e7c5e1fb5e2ccf2907795decf72cd99c",
+    "text": "Ai nevoie de {0} jucători calificați pentru această provocare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:10.784763Z"
+  },
+  "misc.boss_lever.team_cooldown": {
+    "src_hash": "3a459cab4115f21ac50536cbfdb9f2e1",
+    "text": "Un membru din echipa ta trebuie să aștepte {0} pentru a se confrunta din nou cu {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:10.785296Z"
+  },
+  "misc.concoctions.msg_1": {
+    "src_hash": "f6c02b17f997ee1c6a3da39cdd55365f",
+    "text": "Preparatul tău {0} a dispărut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:10.785629Z"
+  },
+  "misc.concoctions.msg_2": {
+    "src_hash": "caeffb2f8aa2a5e77f7a456d189452f6",
+    "text": "Trebuie să așteptați {0} înainte de a utiliza din nou {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:13.397758Z"
+  },
+  "misc.concoctions.msg_3": {
+    "src_hash": "47b1a1f76ecd19dc472b3097d740c4c2",
+    "text": "Ați activat {0}. Va dura {1}{2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:13.398192Z"
+  },
+  "misc.lever.msg_1": {
+    "src_hash": "6d34b16866c8dd1cc9090f48a08440ae",
+    "text": "Tu sau un membru al echipei tale trebuie să aștepți {0} ore pentru a te confrunta din nou cu {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:13.398690Z"
+  },
+  "player.condition.bleeding": {
+    "src_hash": "4c896a1f3ca86d297325c9b83f74e39f",
+    "text": "Sângerezi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:13.398923Z"
+  },
+  "player.condition.cursed": {
+    "src_hash": "5b749b38fc20c0684e7f64ec53381f89",
+    "text": "Esti blestemat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:13.399137Z"
+  },
+  "player.condition.dazzled": {
+    "src_hash": "298d37430ad80a99f57a239f17012b90",
+    "text": "Ești orbită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:17.293123Z"
+  },
+  "player.condition.drowning": {
+    "src_hash": "747cb7d8e212ebf4ad62a4cee5a287f2",
+    "text": "Te îneci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:17.293365Z"
+  },
+  "player.condition.drunk": {
+    "src_hash": "c79d76550811fb4ac7dd7385401419ef",
+    "text": "Esti beat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:17.293573Z"
+  },
+  "player.condition.feared": {
+    "src_hash": "b715fed9ee98b0438a463d627425642c",
+    "text": "Ești temut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:17.293794Z"
+  },
+  "player.condition.freezing": {
+    "src_hash": "f0cb181dfbe7a3bd4a9f54b0497f3e3c",
+    "text": "Ești înghețat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:17.294024Z"
+  },
+  "player.condition.hexed": {
+    "src_hash": "3480c99488b1bf33f0408214bf2c1e8a",
+    "text": "Ești hexagonal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:21.190767Z"
+  },
+  "player.condition.paralyzed": {
+    "src_hash": "e1f558a4167215429a429ef85dff0d7f",
+    "text": "Esti paralizat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:21.191013Z"
+  },
+  "player.condition.poisoned": {
+    "src_hash": "32455c487fa1f9969461d0c69e8e6614",
+    "text": "Ești otrăvit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:21.191249Z"
+  },
+  "player.condition.rooted": {
+    "src_hash": "10d29de242ffa03823bac1d1810f84ba",
+    "text": "Ești înrădăcinat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:21.191474Z"
+  },
+  "player.dawnport.level20": {
+    "src_hash": "817a542e022de0570a8f52918c4e2676",
+    "text": "Ați atins limita de nivel. Alege-ți vocația și părăsește Dawnport.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:21.192084Z"
+  },
+  "player.dawnport.level8": {
+    "src_hash": "c411c142c4ca4827759546995efb25bd",
+    "text": "Felicitări! Acum poți să-ți alegi vocația și să părăsești Dawnport. Vorbește cu Oressa în templu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:25.095419Z"
+  },
+  "player.dawnport.magic_limit": {
+    "src_hash": "5d7946b7d6585ad7c4f878e591451c3a",
+    "text": "Nu vă puteți antrena mai departe nivelul de magie. Călătoriți pe continent pentru a o îmbunătăți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:25.096065Z"
+  },
+  "player.dawnport.skill_limit": {
+    "src_hash": "e2bfef6afa2016e438005ae18a578139",
+    "text": "Nu mai poți antrena această abilitate. Călătoriți pe continent pentru a o îmbunătăți.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:25.096593Z"
+  },
+  "player.login.house_items_inbox": {
+    "src_hash": "911941894e1440201d2682c8bf0aa038",
+    "text": "Articolele dvs. din casă au fost trimise în căsuța dvs. de e-mail.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:25.097012Z"
+  },
+  "player.login.house_lost": {
+    "src_hash": "fb66346673f1373dc5cd2c07d1cc869f",
+    "text": "Ți-ai pierdut casa pentru că nu mai ești un cont premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:25.097422Z"
+  },
+  "player.login.premium_expired": {
+    "src_hash": "307ffe921ee4200a1bfced1578cf55c4",
+    "text": "Timpul dvs. premium a expirat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:28.866398Z"
+  },
+  "player.prey.bonus_expired": {
+    "src_hash": "ef751ef54cc64d338678a7a3eec3f363",
+    "text": "Bonusul de pradă a expirat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:28.866724Z"
+  },
+  "player.prey.bonus_time_reset": {
+    "src_hash": "bfb7b011e96d143970c5f3112b77d3af",
+    "text": "Timpul bonus de pradă a fost resetat cu succes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:28.867088Z"
+  },
+  "player.prey.bonus_type_reset": {
+    "src_hash": "4c1ef1799674b1eea2d8d339b05c0cef",
+    "text": "Tipul și ora bonusului dvs. de pradă au fost resetate cu succes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:28.867486Z"
+  },
+  "player.prey.cards_missing_auto": {
+    "src_hash": "52f2fe5f175d5c3f1fbe13048f5e133a",
+    "text": "Nu aveți suficiente cărți de pradă pentru a activa rerularea automată atunci când slotul expiră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:28.867955Z"
+  },
+  "player.prey.cards_missing_lock": {
+    "src_hash": "56f31f72e8df45fdfa34bd0a82e4b0ad",
+    "text": "Nu aveți suficiente cărți de pradă pentru a bloca monstrul și bonusul înainte ca slotul să expire.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:32.742007Z"
+  },
+  "player.prey.dialog.action_error": {
+    "src_hash": "7af961ca7ce15e6babbfb1db8e7cb61e",
+    "text": "A apărut o eroare la procesarea acțiunii dvs. Vă rugăm să încercați să redeschideți fereastra de pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:32.742757Z"
+  },
+  "player.prey.dialog.already_active": {
+    "src_hash": "b7ff133360338bb60fc714728aefe6c5",
+    "text": "Ai deja un monstru activ pe acest slot de pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:32.743142Z"
+  },
+  "player.prey.dialog.cards_bonus_reroll": {
+    "src_hash": "ab27ddfd47408686344af959cfce82e3",
+    "text": "Nu aveți suficiente cărți de pradă pentru a rerola tipul de bonus al acestui slot de pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:32.743599Z"
+  },
+  "player.prey.dialog.cards_list": {
+    "src_hash": "74c459ac155c0dd25f49c4e5c8c0d798",
+    "text": "Nu aveți suficiente cărți de pradă pentru a alege un monstru din listă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:32.744021Z"
+  },
+  "player.prey.dialog.creature_invalid": {
+    "src_hash": "6b41c622ace4cb2e453cc5ee4d40114d",
+    "text": "Această creatură nu poate fi selectată pentru pradă. Vă rugăm să alegeți altul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:35.447755Z"
+  },
+  "player.prey.dialog.creature_selected": {
+    "src_hash": "78ad8b7f85965120d0635a4b98744683",
+    "text": "Această creatură este deja selectată pe un alt slot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:35.448142Z"
+  },
+  "player.prey.dialog.money_reroll": {
+    "src_hash": "4a0c6a127b06f522ac139325de73de25",
+    "text": "Nu ai suficienți bani pentru a rerola slotul pentru pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:35.448524Z"
+  },
+  "player.prey.dialog.no_active_monster": {
+    "src_hash": "948ce7f63505cdb6431bb9a88134a5cb",
+    "text": "Nu aveți niciun monstru activ pe acest slot pentru pradă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:35.448924Z"
+  },
+  "player.prey.dialog.unlock_store": {
+    "src_hash": "0e0663dfef25a898928e3b386cfda7cd",
+    "text": "Pentru a debloca acest slot pentru pradă, trebuie să îl cumpărați mai întâi din magazin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:35.449373Z"
+  },
+  "player.rookgaard.ready": {
+    "src_hash": "6d20bc2142a906d6f307b16d89c864a5",
+    "text": "Felicitări! Ești gata să părăsești această insulă și să alegi o vocație. Vizitați Oracolul de deasupra academiei în Rookgaard înainte de a ajunge la nivelul 10.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:38.040035Z"
+  },
+  "player.stash.dialog.capacity_none": {
+    "src_hash": "8a2af9d9b8713d47f34f5d153c8fbd5a",
+    "text": "Capacitate insuficientă. Nu ați putut prelua niciun element.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:38.040524Z"
+  },
+  "player.stash.dialog.capacity_partial": {
+    "src_hash": "63e2e58c3115b94aa157bc6e68373c29",
+    "text": "Capacitate insuficientă. Nu ați putut prelua toate articolele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:38.040917Z"
+  },
+  "player.stash.dialog.space_none": {
+    "src_hash": "916831e0f3526818bd2a785e5cd7847c",
+    "text": "Nu este suficient spațiu. Nu ați putut prelua niciun element.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:38.041301Z"
+  },
+  "player.stash.dialog.space_partial": {
+    "src_hash": "7f3316bc649e57e6cecd37bbecd57a60",
+    "text": "Nu este suficient spațiu. Nu ați putut prelua toate articolele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:38.041682Z"
+  },
+  "player.stash.retrieved": {
+    "src_hash": "b509c8ee23315762bc6dc269eaec4a56",
+    "text": "Preluat {0}x {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:39.995678Z"
+  },
+  "player.status.cleanse": {
+    "src_hash": "a739f076aeffed46adfa40c6071870ac",
+    "text": "Nu mai ești {0}. (curăță farmecul)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:45:39.996039Z"
   }
 }

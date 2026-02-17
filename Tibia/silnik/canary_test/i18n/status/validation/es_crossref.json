@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 75.3,
+  "coverage_pct": 75.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:56:05.230968Z",
+  "checked_at": "2026-02-17T03:21:34.330849Z",
   "issues_total": 493,
   "issues_by_type": {
     "consistency_in_language": 68,

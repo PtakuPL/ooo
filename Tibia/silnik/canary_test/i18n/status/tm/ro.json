@@ -36542,5 +36542,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:17:56.059853Z"
+  },
+  "quests.oramond.premium_required": {
+    "src_hash": "db2cfa02e7868b5579081b243f9697a0",
+    "text": "Aveți nevoie de un cont premium pentru a accesa această zonă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:21.085312Z"
+  },
+  "quests.movements_teleportto.say_2": {
+    "src_hash": "7b956ca96a7b5ef2bfcce78c9ebc6720",
+    "text": "Mai întâi trebuie să stăpânești provocarea!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:23.517190Z"
+  },
+  "quests.movements_teleportto.say_3": {
+    "src_hash": "0c24db16ceecc9286020828260abcbdf",
+    "text": "Trebuie să stăpânești această ultimă provocare în 5 minute!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:31.630204Z"
+  },
+  "quests.oramond.blue_pollen_say_1": {
+    "src_hash": "68e37a8d8264d7fc6abc83fa0842f16c",
+    "text": "Achoo! Vărsați polenul în geantă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:31.630661Z"
+  },
+  "quests.oramond.blue_pollen_say_2": {
+    "src_hash": "374336a189f0fda11013b303fba14572",
+    "text": "Ai adunat polenul mirositor într-o pungă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:31.631120Z"
+  },
+  "quests.oramond.sewer_fix_1": {
+    "src_hash": "9b7103417729ac866612fcd3f341116d",
+    "text": "<clong!> <clong!> Acolo Această piesă a fost reparată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:31.631611Z"
+  },
+  "quests.oramond.sewer_fix_2": {
+    "src_hash": "359a30a2dee1bd5097c038110c36944e",
+    "text": "<clong!> <clong!> <scrit scrit scrit>Acest lucru ar trebui să facă acest lucru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:31.632405Z"
+  },
+  "quests.others.exterminator_say_1": {
+    "src_hash": "659cdc5427e03f38845aceba5250242f",
+    "text": "Misiunea asta pute... și acum o faci și tu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:39.415913Z"
+  },
+  "quests.others.exterminator_say_2": {
+    "src_hash": "a9e3b1f425ade1574acbeffc6504f6ed",
+    "text": "Adunați cu grijă cerneala de Quara",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:39.416281Z"
+  },
+  "quests.others.exterminator_say_3": {
+    "src_hash": "eecc893560cfc96ca6f1fdfad19a8f3c",
+    "text": "Adunați cu grijă sângele urmăritorului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:39.416625Z"
+  },
+  "quests.others.holy_water_damaged": {
+    "src_hash": "b86e21aff07806515d22d2c792f4feab",
+    "text": "%s a deteriorat legătura umbră! Nu îl puteți deteriora în timp ce arde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:39.417099Z"
+  },
+  "quests.others.holy_water_destroyed": {
+    "src_hash": "8aa0e3d028a181eecbdd33685f79754d",
+    "text": "%s a distrus legătura dintre umbre! În 10 secunde va reveni la starea inițială.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:39.417575Z"
+  },
+  "quests.pits_of_inferno.flipped_lever": {
+    "src_hash": "63c60e89cdd7672905b6c37020f83841",
+    "text": "Ați răsturnat maneta {0}. Grăbește-te și găsește-l pe următorul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:47.089350Z"
+  },
+  "quests.pits_of_inferno.throne_say_1": {
+    "src_hash": "6bed9ad765a41aea118ed6b6d41a2e9a",
+    "text": "Ai atins tronul lui Infernatil și ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:47.089789Z"
+  },
+  "quests.pits_of_inferno.throne_say_2": {
+    "src_hash": "4626bc832fa6a49df4ef7bd01ae0933b",
+    "text": "Ai atins tronul lui Tafariel și ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:47.090273Z"
+  },
+  "quests.pits_of_inferno.throne_say_3": {
+    "src_hash": "e4fc7313dc3a16917ce00d9d3d81037a",
+    "text": "Ai atins tronul lui Verminor și ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:47.090713Z"
+  },
+  "quests.pits_of_inferno.throne_say_4": {
+    "src_hash": "df9c98fd901a5a7ce92caf391e334ec3",
+    "text": "Ai atins tronul lui Apocalypse și ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:47.091240Z"
+  },
+  "quests.pits_of_inferno.throne_say_5": {
+    "src_hash": "a6c231f5c8d0d440f9a25dd728b1276f",
+    "text": "Ai atins tronul lui Bazir și ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:55.563079Z"
+  },
+  "quests.pits_of_inferno.throne_say_6": {
+    "src_hash": "f7524dcee093d05f1543b4a037a86627",
+    "text": "Ai atins tronul lui Ashfalor și ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:55.563517Z"
+  },
+  "quests.pits_of_inferno.throne_say_7": {
+    "src_hash": "2cddd74c3cb03b1c671c1907b470af88",
+    "text": "Ai atins tronul lui Pumin și i-ai absorbit o parte din spiritul lui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:55.563931Z"
+  },
+  "quests.quest_system2.say_1": {
+    "src_hash": "45736d9194d6da01cb301f6b7eaecca0",
+    "text": "Un lot de documente a fost ascuns în raft. Acestea ar putea fi de interes pentru Zalamon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:55.564406Z"
+  },
+  "quests.quest_system2.say_2": {
+    "src_hash": "53e7fc6825a02b3708b232a180d94e0a",
+    "text": "Scoți un craniu din mormanul de oase. Acesta trebuie să fie craniul despre care a vorbit Lazaran.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:19:55.564895Z"
+  },
+  "quests.quest_system2.say_3": {
+    "src_hash": "032cb9ca7fa8271b3e143fcbac1c8386",
+    "text": "Pentru a câștiga ceva timp înlocuiți peștele cu o bucată de morcov.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:03.981632Z"
+  },
+  "quests.rookie_guard.m02.academy_roof": {
+    "src_hash": "e6225831626357195789837b09eb0691",
+    "text": "Aceste scări duc pe acoperișul academiei. Acolo sus ar trebui să găsești DOUA dintre catapulte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:03.982240Z"
+  },
+  "quests.rookie_guard.m02.house_vascalir": {
+    "src_hash": "9b47262b38451fe2badc4c4152967c3b",
+    "text": "Aceasta este casa despre care a pomenit Vascalir. Ar trebui să găsești o grămadă de piatră în pivniță. Folosește-l pentru a obține o piatră!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:03.982840Z"
+  },
+  "quests.rookie_guard.m02.norma_bar": {
+    "src_hash": "4eeb33a027267a41e6527d48c5c9890f",
+    "text": "Acesta este barul lui Norma. Dacă mergi pe acoperiș, ar trebui să găsești una dintre catapultele care trebuie umplute cu pietre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:03.983432Z"
+  },
+  "quests.rookie_guard.m02.obi_shop": {
+    "src_hash": "07b1f1d0fd6479294bd8233d8b7f88d0",
+    "text": "Acesta este magazinul lui Obi. Pe acoperișul lui ar trebui să găsești una dintre catapultele menționate de Vascalir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:03.983961Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_east": {
+    "src_hash": "da439753da5cece35ac0001cff88d754",
+    "text": "Acesta nu este drumul către Hyacinth. Urmați poteca spre est pentru a găsi căsuța lui Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:11.433498Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_north": {
+    "src_hash": "860c4533bc9747a178e2aaa8d1030cf3",
+    "text": "Acesta nu este drumul către Hyacinth. Urmați poteca până la ieșirea de nord a satului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:11.433993Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_stay": {
+    "src_hash": "78f62d4d069dd9e52c49c0976e3243bb",
+    "text": "Acesta nu este drumul către Hyacinth. Rămâneți pe potecă puțin mai spre nord pentru a găsi căsuța lui Hyacinth.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:11.434614Z"
+  },
+  "quests.rookie_guard.m04.not_lily": {
+    "src_hash": "b75de9056a3f78512d4451edf4b933bc",
+    "text": "Acesta nu este drumul către Lily. Urmați drumul care duce spre sud-vest pentru a găsi magazinul ei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:11.435115Z"
+  },
+  "quests.rookie_guard.m05.follow_north": {
+    "src_hash": "a5bf51f908af9ade3bfffc340ca8e014",
+    "text": "Urmați poteca mică spre nord pentru a ajunge la bârlogul păianjenilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:11.435529Z"
+  },
+  "quests.rookie_guard.m05.not_tarantula_sw": {
+    "src_hash": "b1fdf58d0b8057244bab5a710d42a616",
+    "text": "Acesta nu este drumul către bârlogul tarantulei. Urcă-te pe mica rampă spre sud-vest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:19.953357Z"
+  },
+  "quests.rookie_guard.m05.remember_web": {
+    "src_hash": "39a2d466181dc92312224cea243c06c7",
+    "text": "Amintiți-vă că trebuie să achiziționați un eșantion web pentru Vascalir. Nu ar trebui să părăsești această peșteră fără ea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:19.953923Z"
+  },
+  "quests.rookie_guard.m05.walk_west": {
+    "src_hash": "cd2910c5de542301bf729e89347f87e5",
+    "text": "Mergeți spre vest de aici pentru a ajunge la gaura care duce la bârlogul tarantulelor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:19.954461Z"
+  },
+  "quests.rookie_guard.m06.dead_wolf": {
+    "src_hash": "cd8a0378d33f62cc3ee5742430d9196a",
+    "text": "Există un lup de război mort! Folosește cuțitul și apoi folosește-l pe corp pentru a obține niște piele - dar repede!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:19.955010Z"
+  },
+  "quests.rookie_guard.m06.exit_time": {
+    "src_hash": "17007160bd3124ad631c587fa066a70e",
+    "text": "Ai ajuns la ieșire la timp! Puff... înapoi la Tom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:19.955420Z"
+  },
+  "quests.rookie_guard.m06.follow_ne": {
+    "src_hash": "d660a6b81f70a077aa8cc985ceb95661",
+    "text": "Urmați poteca de nord-est în pădure. Atenție la lupi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:28.648392Z"
+  },
+  "quests.rookie_guard.m06.not_wolf_stay": {
+    "src_hash": "989a7ab9eb5e0a97e828d346f52de900",
+    "text": "Acesta nu este drumul spre pădurea lupilor. Rămâi pe poteca de sud care duce spre nord-est!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:28.648899Z"
+  },
+  "quests.rookie_guard.m06.plans_changed": {
+    "src_hash": "a6dabc80da026b6c74b055d2631f0bd2",
+    "text": "Se pare că planurile s-au schimbat. Acum depinde de tine să găsești un lup de război mort și să folosești cuțitul de jupuit de pe el pentru a obține niște piele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:28.649594Z"
+  },
+  "quests.rookie_guard.m06.poacher_dead": {
+    "src_hash": "ad864d48132584f629f65e54cc4dc9dc",
+    "text": "Ei bine... acesta pare a fi braconierul. Mort. Verifică-i corpul - poate mai are ceva ce poți folosi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:28.650151Z"
+  },
+  "quests.rookie_guard.m06.wolf_den_hole": {
+    "src_hash": "8ff82dfeee21b161eacc6351bd96bb4f",
+    "text": "Această gaură duce în bârlogul lupilor. Intrați numai dacă aveți sănătate și mâncare deplină - acest lucru ar putea fi periculos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:28.650744Z"
+  },
+  "quests.rookie_guard.m07.chest_flames": {
+    "src_hash": "b7c6b9d06f88f8be6cd061c750b49f8d",
+    "text": "Acesta trebuie să fie cufărul cu cartea - dar este acoperit de flăcări!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:30.920458Z"
   }
 }

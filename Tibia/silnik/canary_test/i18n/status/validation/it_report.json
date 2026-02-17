@@ -2,18 +2,18 @@
   "lang": "it",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 8069,
-  "identical_to_en": 2450,
-  "placeholder_keys": 45517,
-  "coverage_pct": 15.1,
-  "issues_total": 3,
+  "translated": 8341,
+  "identical_to_en": 2442,
+  "placeholder_keys": 45245,
+  "coverage_pct": 15.6,
+  "issues_total": 6,
   "issues_by_type": {
-    "V4_artifact": 2,
+    "V4_artifact": 5,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
-    "HIGH": 2,
+    "HIGH": 5,
     "MEDIUM": 0,
     "LOW": 0
   },
@@ -32,6 +32,24 @@
       "severity": "HIGH"
     },
     {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "quests.bigfoot_burden.gnomedix_msg4",
       "category": "quests",
       "type": "V4_artifact",
@@ -46,5 +64,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-17T02:56:26.307351Z"
+  "validated_at": "2026-02-17T03:21:54.353140Z"
 }

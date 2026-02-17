@@ -1,46 +1,17 @@
 {
-  "timestamp": "2026-02-17T03:18:49.519374Z",
+  "timestamp": "2026-02-17T03:21:14.534660Z",
   "checked_entries": 100,
-  "issues_found": 11,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 10,
+    "identical_to_en_exempt": 13,
     "artifact_token": 7,
-    "suspicious_log_high": 151,
-    "suspicious_log_low": 1,
+    "suspicious_log_high": 149,
     "suspicious_log_critical": 48,
+    "suspicious_log_low": 3,
     "suspicious_rejected_critical": 156,
     "suspicious_rejected_high": 44
   },
   "issues": [
-    {
-      "key": "spell.large_fire_ring.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###large_fire_ring",
-      "translated": "###large_fire_ring"
-    },
-    {
-      "key": "spell.quara_raider_watercreature.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_sea_monster",
-      "translated": "###quara_sea_monster"
-    },
-    {
-      "key": "spell.quara_raider_icering.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_large_ice_ring",
-      "translated": "###quara_large_ice_ring"
-    },
-    {
-      "key": "spell.quara_raider_watersplash.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###quara_water_splash",
-      "translated": "###quara_water_splash"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -92,5 +63,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

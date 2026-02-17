@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:35:53.462003Z"
+    "updated_at": "2026-02-17T03:20:35.596136Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -22102,5 +22102,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:11:13.180968Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L176.1354": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Varsågod! Använd den på kranen när du ser monstret. Fyll sedan på det varje gång du använder teleskopet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:51.593904Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L60.1352": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Du hittade platsen |PLAYERNAME|!! Ta dig själv en hjälm från djupet och utforska {caves} där nere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:51.594595Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L87.949": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Välkommen ombord, resenär. Var kan jag {sail} dig idag?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:51.595006Z"
+  },
+  "data.otservbr.global.npc.captain.jack.rat.L57.982": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Hej, pirat! Kom ombord för att åka hem! Välkommen ombord på fartyget Flying Bat. Ska jag ställa in {sail}s?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:56.484823Z"
+  },
+  "data.otservbr.global.npc.captain.max.L85.659": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Hej, |PLAYERNAME|. På ett uppdrag för utforskarsamhället, va?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:56.485232Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L68.1312": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Hej, |PLAYERNAME|. På ett uppdrag för utforskarsamhället, va?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:20:56.485616Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L99.709": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:02.734206Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L61.1025": {
+    "src_hash": "b881a2f946b2000c7b5d245b2e9f3ec7",
+    "text": "Hälsningar, vågade äventyrare. Om du behöver en retur {passage}, låt mig veta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:02.734660Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L63.1027": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Nåja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:02.734845Z"
+  },
+  "data.otservbr.global.npc.carina.L97.831": {
+    "src_hash": "adf3a8471f9e459d5b11b1054ae73655",
+    "text": "Välkommen, |PLAYERNAME|. Jag ser fram emot att handla med dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:08.978538Z"
+  },
+  "data.otservbr.global.npc.carlos.L100.1093": {
+    "src_hash": "155c73893b154c9642e5b5791cd5e45b",
+    "text": "Välkommen tillbaka |PLAYERNAME|, jag hoppas att du ändrade dig och kommer att ge mig lite {meat}? Jag ska till och med ge dig lite guld för det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:08.979182Z"
+  },
+  "data.otservbr.global.npc.carlos.L103.1094": {
+    "src_hash": "1397a9dce740292a32730701d2929b92",
+    "text": "Välkommen tillbaka, |PLAYERNAME|! Hade du en lyckad jakt och bar en bit {meat} eller skinka med dig?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:08.979689Z"
+  },
+  "data.otservbr.global.npc.carlos.L107.1095": {
+    "src_hash": "00143dd08108a83dcbb73f1a2f6bba1b",
+    "text": "Välkommen tillbaka, Isleth Eagonst! Har du kvar den där köttbiten eller skinka? Om så är fallet, be mig om en {trade} så ger jag dig lite guld för det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:08.980316Z"
+  },
+  "data.otservbr.global.npc.carlos.L110.1096": {
+    "src_hash": "1161f926d6499a60267c416c448c3ac0",
+    "text": "Välkommen tillbaka, |PLAYERNAME|! Var lade du den där läckra biten mat? Har du ätit det själv? Tja, om du hittar en annan, snälla kom tillbaka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:08.980920Z"
+  },
+  "data.otservbr.global.npc.carlos.L115.1097": {
+    "src_hash": "5b4d8446cfabd691a0740be04b971f3a",
+    "text": "Hej där, |PLAYERNAME|! Tja, det är så handel med NPC:er som jag fungerar. Jag tror att du är redo att gå över bron till Rookgaard! Ta hand om dig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:13.217521Z"
+  },
+  "data.otservbr.global.npc.carlos.L121.1098": {
+    "src_hash": "2d9ef34d2d04adf11e5e8b1858efd460",
+    "text": "Hej igen, |PLAYERNAME|! Vad gör du fortfarande här? Du borde gå över bron till byn Rookgaard nu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:21:13.218260Z"
   }
 }

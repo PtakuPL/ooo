@@ -42326,5 +42326,301 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T03:08:45.024547Z"
+  },
+  "data.otservbr.global.npc.testserver.assistant.L89.453": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Sei già benedetto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.112504Z"
+  },
+  "data.otservbr.global.npc.xodet.L175.345": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi solo guardare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.127814Z"
+  },
+  "data.otservbr.global.npc.yaman.L169.636": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Al tuo servizio, sfoglia i miei prodotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.129159Z"
+  },
+  "data.otservbr.global.npc.yberius.L169.1364": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.129717Z"
+  },
+  "data.otservbr.global.npc.zedrulon.the.fallen.L148.50": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Benvenuto, giovane |PLAYERNAME|! Se sei gravemente ferito o avvelenato, posso {heal} gratis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.132163Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.analyser.L20.2105": {
+    "src_hash": "a2da86b455a557094c1df725073335cd",
+    "text": "Ben fatto! L'acqua viene analizzata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.147593Z"
+  },
+  "data.otservbr.global.scripts.quests.dark.trails.actions.corpse.L5.1814": {
+    "src_hash": "c5a164cb607ac32cea2ea759c496812e",
+    "text": "Quandon è stato assassinato! Dovresti riferirlo a Sholley!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.158129Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.coral.L5.2254": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "All'improvviso una guardia ti salta addosso da dietro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.159922Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.crystal.L5.2250": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "All'improvviso una guardia ti salta addosso da dietro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.160845Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.bone.flute.wall.L6.1939": {
+    "src_hash": "2c3314f94f2660ce75b9258cee700a76",
+    "text": "Hai trovato un flauto d'osso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.163015Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L15.1964": {
+    "src_hash": "cc773a38983c2fac2b945284898315f4",
+    "text": "Scintille magiche vorticano intorno agli stivali e all'improvviso sei altrove.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.163512Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L17.1965": {
+    "src_hash": "de4509a38663b7aeecbd91bb59d54147",
+    "text": "Se vuoi indossare questi stivali devi rimanere in una zona di protezione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.163979Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L21.1966": {
+    "src_hash": "cb29b428a74e937af084be549a76dfa2",
+    "text": "Sei stanco dell'ultimo utilizzo degli stivali, devi attendere un'ora per riutilizzarli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.164501Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.boots.of.homecoming.L5.1963": {
+    "src_hash": "4e9ac854b18934fcf5a5d7f5632f120d",
+    "text": "Devi equipaggiare il bagagliaio per provare a usarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.165042Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L12.1973": {
+    "src_hash": "ab2d9b844dd176ba8e117e14246f7334",
+    "text": "Scegli il colore della decomposizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.165447Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L17.1974": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.165807Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L23.1975": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.166188Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L29.1976": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.166631Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.color.levers.L35.1977": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.167098Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.bird.cage.L16.2125": {
+    "src_hash": "9ed535ea500b3fe754627bc9aad2a44c",
+    "text": "Apri la gabbia e lascia che il pappagallo delle caverne vaghi libero!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.171183Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.bird.cage.L9.2124": {
+    "src_hash": "7f2ce76d0f0ebe25d4d5096035d7d5e5",
+    "text": "Il pappagallo delle caverne può essere duro ma in qualche modo non ha saputo resistere a questa particolare gabbia per uccelli. O forse eri tu...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.171910Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.ancient.feud.entrances.L15.2030": {
+    "src_hash": "52d221e336eda58b39fab73ac5f9bdc3",
+    "text": "Non sei degno di viaggiare seguendo il ruggito del leone.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.175918Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.closed.silvered.trap.L14.2037": {
+    "src_hash": "aac52a110badf04741cf3afd1d3bf999",
+    "text": "La trappola argentata è stata posizionata e non può essere rimossa dalla sua posizione attuale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.176497Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.closed.silvered.trap.L4.2035": {
+    "src_hash": "2f31106b5eb658000748f2c30b5dbfef",
+    "text": "Usatelo a terra per posizionare la trappola.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.176924Z"
+  },
+  "data.otservbr.global.scripts.quests.grimvale.actions.closed.silvered.trap.L8.2036": {
+    "src_hash": "5a03b5cd75188820f73bb98f72d4ad8d",
+    "text": "Puoi usarlo nella stanza di Feroxa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.177536Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.charges.lever.L259.1879": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.178378Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.cracklers.lever.L194.1878": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.178804Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.final.lever.L478.1881": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.179445Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.sparks.lever.L188.1874": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.180090Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.augerfun.L6.1681": {
+    "src_hash": "329ac6c30c0a8615e6c52a1e7d8fa9a7",
+    "text": "Stai raccogliendo del latte di gatto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.189534Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.basin.L6.1678": {
+    "src_hash": "9118efc5a37e978aea348be87f8b77e4",
+    "text": "Trovi un simbolo dorato sul fondo della bacinella piena di sangue.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.189986Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L5.1672": {
+    "src_hash": "e208d7eff95df4c1c09e8de5583feda8",
+    "text": "Hai trovato la chiave di una gabbia di legno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.190607Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.bone.L13.1773": {
+    "src_hash": "f63b4574be546a581f1d1191a64be28b",
+    "text": "In mezzo al mucchio di varie ossa trovi una parte grande e cava, simile a una pipa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.201694Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.bone.L19.1774": {
+    "src_hash": "80a2909ce1f004d65194f1db48dca775",
+    "text": "Frughi nella pila ma non riesci a trovare parti utili.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.202259Z"
+  },
+  "data.otservbr.global.scripts.quests.roshamuul.quest.actions.chalk.L28.1775": {
+    "src_hash": "4833eccd338f830c492a702e61858110",
+    "text": "Metti un po' di gesso fine in un secchio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.202670Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.exalted.core.L78.2001": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Non hai abbastanza capacità.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.205651Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soul.prism.L87.1994": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Non hai abbastanza capacità.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:59.206370Z"
   }
 }

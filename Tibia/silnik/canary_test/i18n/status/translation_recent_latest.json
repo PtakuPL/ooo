@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T03:14:23.643889Z",
-  "language": "pl",
-  "json_file": "scripts.json",
-  "translated": 50,
+  "timestamp": "2026-02-17T03:15:14.289051Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "scripts.northern_fishburger.msg_1",
-      "en": "You need to wait before using it again.",
-      "translated": "Musisz poczekać zanim użyjesz tego ponownie.",
-      "source": "simple"
-    },
-    {
-      "key": "scripts.on_look.admin_player_health",
-      "en": "%s\n%s\nHealth: %s / %s",
-      "translated": "%s\n%s\nZdrowie: %s / %s",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "scripts.on_look.position_coords",
-      "en": "Position: (%s, %s, %s)",
-      "translated": "Stanowisko: (%s, %s, %s)",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "scripts.oriental_trader.arrived_today",
-      "en": "[World Change] Yasir has arrived in %s today!",
-      "translated": "[Zmiana Świata] Yasir przybył dziś do %s!",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "scripts.pot_of_blackjack.msg_1",
-      "en": "You need to wait before using it again.",
-      "translated": "Musisz poczekać zanim użyjesz tego ponownie.",
-      "source": "simple"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "scripts.quest_door.msg_1",
-      "en": "The door seems to be sealed against unwanted intruders.",
-      "translated": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "scripts.rafzane_elevator.msg_1",
-      "en": "Step inside the elevator to use it.",
-      "translated": "Aby skorzystać z windy, wejdź do środka.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_10",
-      "en": "You found {} while digging.",
-      "translated": "Podczas kopania znalazłeś {}.",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_11",
-      "en": "This table is made of several old doors. One of them has a noticeable ornate lock. Perhaps you could lever it out with a tool.",
-      "translated": "Ten stół jest zrobiony z kilku starych drzwi. Jedne z nich mają wyraźny, ozdobny zamek. Może dałoby się go podważyć narzędziem.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_12",
-      "en": "You already removed the old lock.",
-      "translated": "Już usunąłeś stary zamek.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_16",
-      "en": "This table is made of several old doors. One of them has a noticeable ornate lock. Perhaps you could lever it out with a tool.",
-      "translated": "Ten stół jest zrobiony z kilku starych drzwi. Jedne z nich mają wyraźny, ozdobny zamek. Może dałoby się go podważyć narzędziem.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_17",
-      "en": "You already removed the old lock.",
-      "translated": "Już usunąłeś stary zamek.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_7",
-      "en": "You dug a hole! Walk onto it as long as it is open to jump down into the forest cave.",
-      "translated": "Wykopałeś dół! Wejdź na niego, póki jest otwarty, aby wskoczyć do leśnej jaskini.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "scripts.register_actions.msg_9",
-      "en": "A torn scroll piece emerges. Probably gnawed off by rats.",
-      "translated": "Pojawia się rozdarty fragment zwoju. Prawdopodobnie ogryziony przez szczury.",
-      "source": "simple"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "scripts.roasted_dragon_wings.msg_1",
-      "en": "You need to wait before using it again.",
-      "translated": "Musisz poczekać zanim użyjesz tego ponownie.",
-      "source": "simple"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "scripts.rook_village.msg_1",
-      "en": "You don't have any business there anymore.",
-      "translated": "Nie masz już tam nic do roboty.",
-      "source": "simple"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "scripts.roshamuul_carpet.msg_1",
-      "en": "The flying carpet brought you back to Thais.",
-      "translated": "Latający dywan przeniósł cię z powrotem do Thais.",
-      "source": "simple"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "scripts.rotworm_stew.msg_1",
-      "en": "You need to wait before using it again.",
-      "translated": "Musisz poczekać zanim użyjesz tego ponownie.",
-      "source": "simple"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "scripts.schrodingers_island_teleport_lvl_999.msg_1",
-      "en": "You need level 999 to enter here.",
-      "translated": "Potrzebujesz poziomu 999, aby wejść tutaj.",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "scripts.seacrest.msg_1",
-      "en": "You enter the seacrest ground.",
-      "translated": "Wchodzisz na teren Seacrest.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

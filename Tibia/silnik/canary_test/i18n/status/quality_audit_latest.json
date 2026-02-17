@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-02-17T06:29:56.427540Z",
+  "timestamp": "2026-02-17T06:32:04.794260Z",
   "checked_entries": 100,
   "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 10,
-    "artifact_token": 7,
-    "suspicious_log_high": 135,
-    "suspicious_log_critical": 61,
+    "artifact_token": 11,
+    "identical_to_en_exempt": 20,
+    "suspicious_log_critical": 78,
+    "suspicious_log_high": 116,
+    "suspicious_log_medium": 2,
     "suspicious_log_low": 4,
     "suspicious_rejected_critical": 164,
     "suspicious_rejected_high": 36
   },
   "issues": [
     {
-      "key": "spell.terra_burst.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exevo ulus tera",
-      "translated": "exevo ulus tera"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     },
     {
-      "key": "spell.energy_beam.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exevo vis lux",
-      "translated": "exevo vis lux"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
     },
     {
-      "key": "spell.ethereal_spear.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exori con",
-      "translated": "exori con"
+      "key": "scripts.auto_loot.msg_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Autoloot mode set to ALL.",
+      "translated": "Modo de autoloot establecido a TODO."
     },
     {
-      "key": "spell.magic_patch.words",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "exura infir",
-      "translated": "exura infir"
+      "key": "scripts.prince_drazzak_summon.say_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

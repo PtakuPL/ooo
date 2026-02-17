@@ -6233,11 +6233,11 @@
   },
   "quest.soul_war.taints_reset_timeout": {
     "src_hash": "bb82c84747742951025a074765dee261",
-    "text": "Twój Goshnar's I. masz był reset. Ty didn't I. the zadanie w 14 dni.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Skażenia Twojego Goshnara zostały zresetowane. Nie ukończyłeś zadania w ciągu 14 dni.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:41:59.420489Z"
+    "updated_at": "2026-02-17T06:31:02.858310Z"
   },
   "scripts.2_ambassadors_treason.msg_7": {
     "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
@@ -114542,5 +114542,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:29:52.747343Z"
+  },
+  "player.prey.cards_missing_auto": {
+    "src_hash": "52f2fe5f175d5c3f1fbe13048f5e133a",
+    "text": "Nie masz wystarczającej liczby kart ofiar, aby włączyć automatyczne ponowne losowanie po wygaśnięciu miejsca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:28.585334Z"
+  },
+  "player.prey.cards_missing_lock": {
+    "src_hash": "56f31f72e8df45fdfa34bd0a82e4b0ad",
+    "text": "Nie masz wystarczającej liczby kart ofiar, aby zablokować potwora i bonus przed wygaśnięciem miejsca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:28.585897Z"
+  },
+  "player.prey.dialog.cards_list": {
+    "src_hash": "74c459ac155c0dd25f49c4e5c8c0d798",
+    "text": "Nie masz wystarczającej liczby kart ofiar, aby wybrać potwora z listy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:28.586399Z"
+  },
+  "player.prey.dialog.creature_invalid": {
+    "src_hash": "6b41c622ace4cb2e453cc5ee4d40114d",
+    "text": "Tego stworzenia nie można wybrać na ofiarę. Proszę wybrać inny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:28.586826Z"
+  },
+  "player.prey.dialog.money_reroll": {
+    "src_hash": "4a0c6a127b06f522ac139325de73de25",
+    "text": "Nie masz wystarczającej ilości pieniędzy, aby przerzucić miejsce na ofiarę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:28.587231Z"
+  },
+  "player.prey.dialog.unlock_store": {
+    "src_hash": "0e0663dfef25a898928e3b386cfda7cd",
+    "text": "Aby odblokować to miejsce na zdobycz, musisz najpierw kupić je w sklepie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:36.075204Z"
+  },
+  "player.rookgaard.ready": {
+    "src_hash": "6d20bc2142a906d6f307b16d89c864a5",
+    "text": "Gratulacje! Jesteś gotowy opuścić tę wyspę i wybrać powołanie. Odwiedź Wyrocznię nad akademią w Rookgaard, zanim osiągniesz poziom 10.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:36.088146Z"
+  },
+  "player.stash.dialog.space_none": {
+    "src_hash": "916831e0f3526818bd2a785e5cd7847c",
+    "text": "Za mało miejsca. Nie udało się odzyskać żadnych elementów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:36.088797Z"
+  },
+  "player.stash.dialog.space_partial": {
+    "src_hash": "7f3316bc649e57e6cecd37bbecd57a60",
+    "text": "Za mało miejsca. Nie udało się pobrać wszystkich elementów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:36.089422Z"
+  },
+  "player.task.dialog.cards_reward_reroll": {
+    "src_hash": "eb2d9eadbbdac5fec6d5325028387846",
+    "text": "Nie masz wystarczającej liczby kart ofiar, aby przerzucić rzadkość nagrody za zadanie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:36.090703Z"
+  },
+  "player.task.dialog.cards_selection": {
+    "src_hash": "001d3eac2d44cadded9ef664c14fd73a",
+    "text": "Nie masz wystarczającej liczby kart ofiar, aby wybrać stworzenie z listy dla tego pola polowania na zadanie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:42.894124Z"
+  },
+  "player.task.dialog.money_cancel": {
+    "src_hash": "a15fe3c87827bbc30365724e8902e44c",
+    "text": "Nie masz wystarczającej ilości pieniędzy, aby anulować bieżące polowanie na zadania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:42.894682Z"
+  },
+  "player.task.dialog.money_reroll": {
+    "src_hash": "5b517b5ad2c8df4d56c10c931129df80",
+    "text": "Nie masz wystarczającej ilości pieniędzy, aby przerzucić miejsce na poszukiwanie zadań.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:42.895363Z"
+  },
+  "player.task.dialog.reward_bonus_100": {
+    "src_hash": "7af418ebe3a79c75affce73d20b599c0",
+    "text": "Gratulacje! Zdobyłeś {0} punktów Zadania Polowania, w tym 100% premii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:42.896202Z"
+  },
+  "player.task.dialog.reward_bonus_50": {
+    "src_hash": "8950d01dc0d85d8256d7311b2da6fcd8",
+    "text": "Gratulacje! Zdobyłeś {0} punktów Zadania Polowania, w tym 50% premii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:42.896899Z"
+  },
+  "player.task.dialog.reward_bonus_none": {
+    "src_hash": "ffed1d4d3510028fc725b3ac5475317e",
+    "text": "Gratulacje! Zdobyłeś {0} punktów Zadania Polowania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:49.453958Z"
+  },
+  "player.task.dialog.reward_error": {
+    "src_hash": "069c6929f41f06c26f787cc96c1d4219",
+    "text": "Wystąpił błąd podczas przetwarzania nagrody za zadanie. Spróbuj ponownie otworzyć okno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:49.459327Z"
+  },
+  "player.task.dialog.unlock_store": {
+    "src_hash": "3d020c89b8873a1ae84afb0024281f73",
+    "text": "Aby odblokować ten slot do polowania na zadania, musisz najpierw kupić go w sklepie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:49.461292Z"
+  },
+  "player.task.dialog.wait_minutes": {
+    "src_hash": "cda0df54893788709391661268b98047",
+    "text": "Musisz poczekać {0} minut, aby wybrać nowe stworzenie do tego zadania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:49.461925Z"
+  },
+  "quest.dangerous_depths.earned_points_scouts": {
+    "src_hash": "71451e3893f222fdf4d91f6bd53275fc",
+    "text": "Zdobyłeś {0} punktów w misji harcerskiej.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:49.462406Z"
+  },
+  "quest.soul_war.boss_progress_access": {
+    "src_hash": "1337a1c6d304b55bbdda0ec5e86719b6",
+    "text": "%s: Dostęp osiągnięty!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:56.547968Z"
+  },
+  "quest.soul_war.boss_progress_kills": {
+    "src_hash": "c777297c890d2fddceabfceed9b0f495",
+    "text": "%s: %d/%d zabija",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:56.548929Z"
+  },
+  "quest.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Skażenia Twojego Goshnara zostały zresetowane.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:30:56.549858Z"
+  },
+  "quests.world_board.fury_gate": {
+    "src_hash": "c0052987e5b85167c330b47e6ddcbb72",
+    "text": "Brama ognistej furii otworzyła się w pobliżu jednego z głównych miast gdzieś w Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:02.859143Z"
+  },
+  "quests.world_board.oriental_ships": {
+    "src_hash": "d9e00e8a0dc5d33ed99809e152c7e5b1",
+    "text": "Zaobserwowano orientalne statki! Sprzedawca produktów egzotycznych stworzeń może obecnie odwiedzać Carlin, Ankrahmun lub Liberty Bay.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:02.860118Z"
+  },
+  "quests.world_board.sandstorm_coast": {
+    "src_hash": "25fd8563f2e744fd44ea4733d3575518",
+    "text": "Burza piaskowa przechodzi przez Daramę, prowadząc do wysp pełnych śmiercionośnych stworzeń znajdujących się w koszmarze. Unikaj najbardziej wysuniętego na północ wybrzeża!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:02.862009Z"
+  },
+  "quests.world_board.sandstorm_drefia": {
+    "src_hash": "86f89a4ac6b0a450015d411eba40ef0e",
+    "text": "Burza piaskowa przechodzi przez Daramę, prowadząc do wysp pełnych śmiercionośnych stworzeń znajdujących się w koszmarze. Unikaj rzeki w pobliżu Drefia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:02.863399Z"
+  },
+  "quests.world_board.sandstorm_tar": {
+    "src_hash": "4646872dabc13c2274cb07b8475665be",
+    "text": "Burza piaskowa przechodzi przez Daramę, prowadząc do wysp pełnych śmiercionośnych stworzeń znajdujących się w koszmarze. Unikaj dołów smołowych Ankhramun!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:09.593347Z"
+  },
+  "scripts.action_beaver.say_1": {
+    "src_hash": "76ebbf3693cb1fd0c1b2dba34a26b65d",
+    "text": "Oznaczyłeś drzewo, ale jego dawny mieszkaniec ukradł Twoją przynętę! Zdobądź go, zanim ucieknie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:09.599231Z"
+  },
+  "scripts.action_beaver.say_2": {
+    "src_hash": "e9873c92733c3122ad008d43fcab7271",
+    "text": "Oznaczyłeś drzewo, ale wygląda na to, że ktoś już je zaznaczył! Nie jest zadowolony z twoich działań i przyprowadził przyjaciół!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:09.601159Z"
+  },
+  "scripts.action_beaver.say_3": {
+    "src_hash": "79477227f7cf21264b4dd65357782bf8",
+    "text": "Oznaczyłeś drzewo, ale rozgniewałeś także rodzinę wiewiórek, która na nim mieszkała!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:09.601936Z"
+  },
+  "scripts.action_boss.say_1": {
+    "src_hash": "01219f4a0de819027cf51e5318506d9e",
+    "text": "Nareszcie.. Mam go z powrotem, mój cenny amulet. Cieszę się, że z tego nie skorzystałeś! Pozwalam ci...ahh... wejść do drzwi...ahh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:31:09.607918Z"
   }
 }

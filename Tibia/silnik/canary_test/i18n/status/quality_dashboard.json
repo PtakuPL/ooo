@@ -18,8 +18,8 @@
     "total_gt_guard_fail": 3712,
     "cycles": 969,
     "quality_score": 60.1,
-    "last_audit": "2026-02-17T09:47:07.053400Z",
-    "issues_count": 136487
+    "last_audit": "2026-02-17T09:48:22.892955Z",
+    "issues_count": 136559
   },
   "az": {
     "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -33,15 +33,15 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-17T09:47:05.594322Z",
+    "last_cycle": "2026-02-17T09:48:15.377335Z",
     "last_translated": 25,
-    "total_suspicious": 37690,
-    "total_rejected": 1240,
-    "total_gt_guard_fail": 14448,
-    "cycles": 1295,
+    "total_suspicious": 37770,
+    "total_rejected": 1253,
+    "total_gt_guard_fail": 14483,
+    "cycles": 1297,
     "quality_score": 60.1,
-    "last_audit": "2026-02-17T09:47:07.053400Z",
-    "issues_count": 233878
+    "last_audit": "2026-02-17T09:48:22.892955Z",
+    "issues_count": 234494
   },
   "pt": {
     "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -72,9 +72,9 @@
     "total_rejected": 418,
     "total_gt_guard_fail": 1385,
     "cycles": 267,
-    "quality_score": 62.9,
-    "last_audit": "2026-02-17T09:47:07.053400Z",
-    "issues_count": 19030
+    "quality_score": 61.0,
+    "last_audit": "2026-02-17T09:48:22.892955Z",
+    "issues_count": 19100
   },
   "ru": {
     "last_cycle": "2026-02-17T09:45:50.563952Z",
@@ -83,9 +83,9 @@
     "total_rejected": 700,
     "total_gt_guard_fail": 1808,
     "cycles": 261,
-    "quality_score": 67.1,
-    "last_audit": "2026-02-17T09:47:07.053400Z",
-    "issues_count": 45073
+    "quality_score": 70.3,
+    "last_audit": "2026-02-17T09:48:22.892955Z",
+    "issues_count": 45101
   },
   "nl": {
     "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -557,8 +557,8 @@
     "total_gt_guard_fail": 2967,
     "cycles": 249,
     "quality_score": 60.1,
-    "last_audit": "2026-02-17T09:47:07.053400Z",
-    "issues_count": 56710
+    "last_audit": "2026-02-17T09:48:22.892955Z",
+    "issues_count": 56828
   },
   "sl": {
     "last_cycle": "2026-02-14T05:30:27.321573Z",

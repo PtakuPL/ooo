@@ -68982,5 +68982,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T11:17:40.585103Z"
+  },
+  "cpp.returnvalue.not_enough_room": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Non c'è abbastanza spazio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:10.819410Z"
+  },
+  "cpp.player.look.party_invite_one": {
+    "src_hash": "f758119e310a8c8c2ef10c3873e4a26b",
+    "text": "1 invito in sospeso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:17.955228Z"
+  },
+  "cpp.player.look.party_member_many": {
+    "src_hash": "b19e8cb508652c7d3f3fecacd0e0f034",
+    "text": "{0} membri e",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:17.955682Z"
+  },
+  "cpp.player.look.party_member_one": {
+    "src_hash": "d4d11f5c880138c02e18676c44d80d75",
+    "text": "1 membro e",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:17.956135Z"
+  },
+  "cpp.player.look.party_prefix_other": {
+    "src_hash": "9cc57e7ebe7f2e0beee05190259fb408",
+    "text": "{0} a una festa con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:25.134364Z"
+  },
+  "cpp.player.look.party_prefix_self": {
+    "src_hash": "fd1f3a1d0e2029a353023623aaa5a668",
+    "text": "Il tuo partito lo ha fatto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:25.134660Z"
+  },
+  "cpp.player.look.verb_loyalty": {
+    "src_hash": "e689e4cfe64549cd3a855a49336b5134",
+    "text": "{0} {1} {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:25.134893Z"
+  },
+  "cpp.player.look.verb_vip": {
+    "src_hash": "1e0bb0a0897dd7ff589e7196df434536",
+    "text": "{0}VIP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:25.135111Z"
+  },
+  "cpp.player.look.you_are": {
+    "src_hash": "cec67a6a2ce71f80666717b0b77ebf89",
+    "text": "Tu sei {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:25.135364Z"
+  },
+  "cpp.player.look.you_are_loyalty": {
+    "src_hash": "5819b9583e5906dc7a3683901d873817",
+    "text": "Tu sei {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:34.012758Z"
+  },
+  "cpp.player.look.you_are_vip": {
+    "src_hash": "de2f519a0f0d7c347c300fef472aba45",
+    "text": "Sei un VIP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:34.013003Z"
+  },
+  "cpp.player.look.you_have_no_vocation": {
+    "src_hash": "1530eb6565c3951ab12bdf9ecd61013e",
+    "text": "Non hai vocazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:34.013262Z"
+  },
+  "cpp.player.lost_all_blessings": {
+    "src_hash": "ebcead0c2897065643978f88e6074999",
+    "text": "Hai perso tutte le tue benedizioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:34.013556Z"
+  },
+  "cpp.player.magic_level_advance": {
+    "src_hash": "c706671215d82f99b1f79126a4747c19",
+    "text": "Sei avanzato al livello magico {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:34.013857Z"
+  },
+  "cpp.player.moved_objects": {
+    "src_hash": "4588085acd18b8b0dcd3c037e201303d",
+    "text": "Spostato {0} oggetto{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:41.311568Z"
+  },
+  "cpp.player.moved_objects_one": {
+    "src_hash": "485db73e01d3219302f8d2d63e9ac38a",
+    "text": "Oggetto {0} spostato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:41.311885Z"
+  },
+  "cpp.player.moved_objects_other": {
+    "src_hash": "c4b49913cef2602fef9b2944c3f7c497",
+    "text": "Oggetti {0} spostati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:41.312137Z"
+  },
+  "cpp.player.muted_for": {
+    "src_hash": "e4b7534905c88edffa5768a08fa96a4b",
+    "text": "L'audio è disattivato per {0} secondi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:41.312462Z"
+  },
+  "cpp.player.no_blessings": {
+    "src_hash": "1df5fdbf5d50e614517e0999175b4e60",
+    "text": "Non eri protetto da alcuna benedizione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:41.312812Z"
+  },
+  "cpp.player.not_enough_gold": {
+    "src_hash": "e972fc0652cc4daaa91d5931f9c44b8e",
+    "text": "Non hai {0} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:48.116087Z"
+  },
+  "cpp.player.skill_advance": {
+    "src_hash": "907de2907365bfe1e58651fc95b8aee1",
+    "text": "Sei avanzato al livello {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:48.116754Z"
+  },
+  "cpp.player.skill_changed_offline": {
+    "src_hash": "48d9df5fa9b3f25161b222758eb4064a",
+    "text": "La tua abilità {0} è cambiata dal livello {1} (con il {2}% di progresso verso il livello {3}) al livello {4} (con il {5}% di progresso verso il livello {6})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:48.117423Z"
+  },
+  "cpp.player.still_blessed_with": {
+    "src_hash": "483246b1a51387b19fe399daa761f5fc",
+    "text": "Hai ancora la fortuna di {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:48.117738Z"
+  },
+  "cpp.player.stowed_objects": {
+    "src_hash": "ef31349292992fd70fcb7d2e0d278003",
+    "text": "Riposto {0} oggetto{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:48.118001Z"
+  },
+  "cpp.player.stowed_objects_one": {
+    "src_hash": "83845eb1fb5504d839f0d461214810f8",
+    "text": "Oggetto {0} riposto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:54.787584Z"
+  },
+  "cpp.player.stowed_objects_other": {
+    "src_hash": "83672fbed2c110e901d4f2efaed3c0ad",
+    "text": "Oggetti {0} riposti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:54.787909Z"
+  },
+  "cpp.player.using_from_stash": {
+    "src_hash": "443b383ba87e84e3cd8b3f76aa0e6bbd",
+    "text": "Usando {0}x {1} dalla tua scorta. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:54.788252Z"
+  },
+  "cpp.protocol.account_banned_permanent": {
+    "src_hash": "c50beb39bda2de713cf48b37a3b845a3",
+    "text": "Il tuo account è stato escluso definitivamente da {0}.\n\nMotivo specificato:\n{1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:54.788696Z"
+  },
+  "cpp.protocol.account_banned_until": {
+    "src_hash": "40239c5f032255e85f737b9645ae5d66",
+    "text": "Il tuo account è stato bannato fino al {0} da {1}.\n\nMotivo specificato:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:19:54.789316Z"
+  },
+  "cpp.protocol.active_prey_desc": {
+    "src_hash": "8d45051899aa9b191a41ac17d746c91e",
+    "text": "{0} ({1} +{2}%, rimanente {3})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:01.802295Z"
+  },
+  "cpp.protocol.active_prey_label": {
+    "src_hash": "528d0fa86274cad4e17052f55afdd80a",
+    "text": "Preda attiva {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:01.802632Z"
+  },
+  "cpp.protocol.already_connected_other_client": {
+    "src_hash": "9a4d250c6bf1404f1721849d29672a0f",
+    "text": "Sei già connesso tramite un altro client. Si prega di utilizzare un solo client alla volta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:01.803123Z"
+  },
+  "cpp.protocol.already_logged_in": {
+    "src_hash": "442c6f0b512ae9e89a35ff8ca836d470",
+    "text": "Hai già effettuato l'accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:01.803423Z"
+  },
+  "cpp.protocol.already_logged_protocol": {
+    "src_hash": "a170233fccfe7945e00322ef67b58ad8",
+    "text": "Hai già effettuato l'accesso utilizzando il protocollo '{0}'. Esci dall'altra sessione per connetterti qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:01.803934Z"
+  },
+  "cpp.protocol.browse_field": {
+    "src_hash": "d1d839ea1702ef006d8b44a77b3e869c",
+    "text": "Sfoglia campo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:07.121966Z"
+  },
+  "cpp.protocol.char_could_not_be_loaded": {
+    "src_hash": "bc27af7208b2117b513b44b360af97d2",
+    "text": "Impossibile caricare il tuo personaggio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:07.122397Z"
+  },
+  "cpp.protocol.char_load_failed_contact_admin": {
+    "src_hash": "df6391a3559d9fdcd1e0424e1d9145e7",
+    "text": "Impossibile caricare il tuo personaggio, contatta un amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:07.122792Z"
+  },
+  "cpp.protocol.char_namelocked": {
+    "src_hash": "1637b142f21e9fd35ae5a24ce0229a7d",
+    "text": "Al tuo personaggio è stato assegnato un nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T11:20:07.123171Z"
   }
 }

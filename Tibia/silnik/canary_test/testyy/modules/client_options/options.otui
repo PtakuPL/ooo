@@ -8,7 +8,7 @@ OptionsCategory < UIWidget
     id: Button
     anchors.top: parent.top
     anchors.left: parent.left
-    anchors.right: parent.right
+    min-width: 115
     height: 20
     auto-fit-parent-width: true
     margin-left: 1

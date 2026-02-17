@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-17T04:15:41.002206Z",
+  "timestamp": "2026-02-17T04:16:23.228263Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 29,
   "issues_by_type": {
-    "identical_to_en_exempt": 12,
+    "identical_to_en_exempt": 11,
     "artifact_token": 7,
-    "identical_to_en": 18,
-    "suspicious_log_high": 91,
-    "suspicious_log_low": 50,
-    "suspicious_log_critical": 59,
+    "identical_to_en": 22,
+    "suspicious_log_high": 86,
+    "suspicious_log_critical": 61,
+    "suspicious_log_low": 53,
     "suspicious_rejected_critical": 174,
     "suspicious_rejected_high": 26
   },
@@ -187,6 +187,34 @@
       "type": "identical_to_en",
       "en": "Fernfang",
       "translated": "Fernfang"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.player.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
     }
   ],
   "threshold": 10,

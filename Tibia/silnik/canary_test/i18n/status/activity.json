@@ -1,9 +1,9 @@
 {
-  "category": "sv",
-  "cycle": 230,
+  "category": "pl",
+  "cycle": 231,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-17T04:15:41Z",
+  "generated_at_utc": "2026-02-17T04:16:23Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,36 @@
     "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 231,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-17T04:16:20Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 231,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T04:15:59Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 231,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-17T04:15:59Z"
+    },
     {
       "action": "update",
       "category": "pl",
@@ -81,36 +111,6 @@
       "result": "ok",
       "stage": "auto_start",
       "t": "2026-02-17T04:14:32Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 229,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:14:04Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 229,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T04:13:45Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 229,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T04:13:45Z"
     }
   ],
   "stage": "cycle_end",

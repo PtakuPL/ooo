@@ -37742,5 +37742,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:05:02.013253Z"
+  },
+  "quests.tinder_box_quest_chyllfroest.the_pile_of_bones_is_empty": {
+    "src_hash": "cfed4332a8d3d234e867a30f3f9672f9",
+    "text": "Il mucchio di ossa è vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:48.964445Z"
+  },
+  "quests.rookie_guard.missions.wasps_bridge": {
+    "src_hash": "c0897396d3529224b0c0d55db4afeb59",
+    "text": "Per raggiungere i nidi delle vespe seguite il sentiero a nord e attraversate il ponte a ovest come se voleste raggiungere i ragni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:53.990579Z"
+  },
+  "quests.rookie_guard.missions.wasps_bridge_south": {
+    "src_hash": "2899810eaf301f106514be78d054dc06",
+    "text": "Prendi le scale a sud lungo il ponte per andare alla tana delle vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:53.990970Z"
+  },
+  "quests.rookie_guard.missions.wasps_west": {
+    "src_hash": "6b25fc340d9852d753befbf5aade6526",
+    "text": "Seguite il sentiero verso ovest per trovare la tana delle vespe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:53.991315Z"
+  },
+  "quests.rookie_guard.missions.wolf_forest": {
+    "src_hash": "3763dba33d86e92921673c71d37b2a02",
+    "text": "Seguite il sentiero verso est e, quando si divide, dirigetevi a nord-est per trovare la foresta dei lupi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:57.799933Z"
+  },
+  "quests.roshamuul.faced_boss_hours": {
+    "src_hash": "a09179e5adef5d910ce70d31a9760cc1",
+    "text": "Hai affrontato questo boss nelle ultime {0} ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:57.800290Z"
+  },
+  "quests.roshamuul_quest.use_on_silencer_plateau_is_located": {
+    "src_hash": "91ae36b3e633dc84bb2f68f0b3d77f95",
+    "text": "L'uso sull'altopiano del silenziatore si trova nella parte sud-orientale di Roshamuul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:57.800873Z"
+  },
+  "quests.roshamuul_quest.you_need_kill_all_monsters": {
+    "src_hash": "1a2624203802bd89977616b5327e7b9b",
+    "text": "Devi uccidere tutti i mostri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:57.801176Z"
+  },
+  "quests.roshamuul_quest.you_need_to_wait": {
+    "src_hash": "8d82fecf82c3358c0ac68fda476f6f0f",
+    "text": "Devi aspettare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:57.801400Z"
+  },
+  "quests.secret_library.ancient_passage": {
+    "src_hash": "87433a234f95e5361adff04f2b8a02f4",
+    "text": "Ti infili attraverso un antico piccolo passaggio. Ci sono piccoli simboli scolpiti in profondità nel corallo che non puoi leggere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:00.366531Z"
+  },
+  "quests.secret_library.book_plans": {
+    "src_hash": "84338c3c7a7350e62a5dd2f513966484",
+    "text": "Le descrizioni contenute in questo libro sembrano piani che descrivono in dettaglio il lancio di un assalto su larga scala.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:00.367011Z"
+  },
+  "quests.secret_library.elemental_portals_default": {
+    "src_hash": "78502af725a66768ad94e8a571fda13f",
+    "text": "Hai dieci minuti per uccidere e saccheggiare questo mostro, altrimenti perderai questa possibilità e verrai espulso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:00.367525Z"
+  },
+  "quests.secret_library.exhausted_battle": {
+    "src_hash": "8a976581547ed9fc30b972ab5e192a95",
+    "text": "Sei ancora esausto dopo la tua ultima battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:00.367856Z"
+  },
+  "quests.secret_library.falcon_boat_1": {
+    "src_hash": "caef9c0335f1ad3ec1f3c1bc4b3d6245",
+    "text": "Una piccola isola emerge dalla nebbia mentre remi verso una minuscola luce all'interno di un'oscura e imponente cappella.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:00.368306Z"
+  },
+  "quests.secret_library.falcon_boat_2": {
+    "src_hash": "e867293f1f020fd282b32ebfd7a490cf",
+    "text": "Il tuo cuore si illumina mentre ritorni dall'isola cupa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:03.940960Z"
+  },
+  "quests.secret_library.high_and_dry_default": {
+    "src_hash": "78502af725a66768ad94e8a571fda13f",
+    "text": "Hai dieci minuti per uccidere e saccheggiare questo mostro, altrimenti perderai questa possibilità e verrai espulso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:03.941488Z"
+  },
+  "quests.secret_library.njey_appreciate": {
+    "src_hash": "776f0b64ea3b6ba0dc9b6f08c5c08ebd",
+    "text": "Il Njey apprezzerà il tuo aiuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:03.941806Z"
+  },
+  "quests.secret_library.njey_help_needed": {
+    "src_hash": "d226f31215d8d0bafb0d257517a8eb51",
+    "text": "Senza l'aiuto di altri Njey probabilmente non farai la differenza in questa battaglia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:03.942286Z"
+  },
+  "quests.secret_library.not_ready": {
+    "src_hash": "4f5815a090b141b7b6df60246fb354c3",
+    "text": "Non sei ancora pronto per passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:03.942582Z"
+  },
+  "quests.secret_library.not_ready_v2": {
+    "src_hash": "4f5815a090b141b7b6df60246fb354c3",
+    "text": "Non sei ancora pronto per passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:07.566308Z"
+  },
+  "quests.secret_library.recently_fixed": {
+    "src_hash": "1d61511f4ff8d55855044dae45ef38a9",
+    "text": "Recentemente hai riparato quell'idolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:07.566622Z"
+  },
+  "quests.secret_library.wait_20h": {
+    "src_hash": "c1c85732657dc37f7d215690dfb70629",
+    "text": "Devi aspettare 20 ore per affrontare di nuovo questo boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:07.566971Z"
+  },
+  "quests.shattered_isles.nargor_map_1": {
+    "src_hash": "5ca34f7dcd424ad974e941673b05c8b6",
+    "text": "Hai letto con successo il piano A.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:07.567269Z"
+  },
+  "quests.shattered_isles.nargor_map_2": {
+    "src_hash": "a41caa68a6a96260bc953cfaed7b94df",
+    "text": "Hai letto con successo il piano B.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:07.567560Z"
+  },
+  "quests.shattered_isles.nargor_map_3": {
+    "src_hash": "81adbab03f0fa3b1db8343172f6614ef",
+    "text": "Hai letto con successo il piano C.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:11.138927Z"
+  },
+  "quests.soul_war.activate_all_shrines": {
+    "src_hash": "5a24207bc65fee6e4020effcdbe4730d",
+    "text": "Devi ancora attivare tutti i santuari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:11.139262Z"
+  },
+  "quests.soul_war.added_taint": {
+    "src_hash": "0ab268634aab5f8cd2772c06888f9cb8",
+    "text": "Aggiunto livello di contaminazione: {0}, nome: {1} al giocatore: {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:11.139616Z"
+  },
+  "quests.soul_war.all_shrines_activated": {
+    "src_hash": "1d78850cec36c293c1c5ca4270017565",
+    "text": "Hai attivato tutti i santuari.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:11.139944Z"
+  },
+  "quests.soul_war.already_has_access": {
+    "src_hash": "ce37d4686ba291522fb92da66d52c69f",
+    "text": "Hai già ottenuto l'accesso per combattere con la Crudeltà di Goshnar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:11.140350Z"
+  },
+  "quests.soul_war.bag_obtained": {
+    "src_hash": "17cd9115f8f0176226404b8f330c88e5",
+    "text": "Hai ottenuto la borsa dell'anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:16.082617Z"
+  },
+  "quests.soul_war.boss_room_access": {
+    "src_hash": "18142adc7962225aad0958a9ef16b78e",
+    "text": "Ora puoi accedere alla stanza del boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:16.082943Z"
+  },
+  "quests.soul_war.cleansed_cooldown": {
+    "src_hash": "03c886bb82d39577a96a9f7935d65faa",
+    "text": "Devi attendere altri {0} secondi prima di utilizzare nuovamente il pulitore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:16.083331Z"
+  },
+  "quests.soul_war.cooldown_wait": {
+    "src_hash": "64ff2090c5bc2503480642f6bafe96a6",
+    "text": "Devi attendere {0} secondo/i per utilizzare nuovamente questo elemento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:16.083701Z"
+  },
+  "quests.soul_war.cruelty_defeat": {
+    "src_hash": "7b608f7f8a817501edd6cdbcf55cfc24",
+    "text": "Hai sconfitto la crudeltà di Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:16.084029Z"
+  },
+  "quests.soul_war.current_taint": {
+    "src_hash": "2a48966088a62a2423b05e8f569e36cc",
+    "text": "Il tuo livello di contaminazione attuale è: {0} nome: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:19.713073Z"
+  },
+  "quests.soul_war.dread_killing": {
+    "src_hash": "0cd27ec1323d9c8fc00c7fc5131f6ed9",
+    "text": "Il tormento del terrore ti sta uccidendo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:19.713395Z"
+  },
+  "quests.soul_war.dread_lethal": {
+    "src_hash": "1f1d50b2a7806ef7c679f3e50be0f595",
+    "text": "Il tormento del terrore è ora letale!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:19.713715Z"
+  },
+  "quests.soul_war.dread_start": {
+    "src_hash": "7ca7bb3ce3a91eb0f98ad2ac922bcd81",
+    "text": "Il terrore inizia a tormentarti! Non lasciare che il livello di terrore raggiunga il valore critico!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:19.714176Z"
+  },
+  "quests.soul_war.dread_unbearable": {
+    "src_hash": "9f616e39836080e9d8480f0677aba71b",
+    "text": "Il tormento del terrore diventa insopportabile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:07:21.440231Z"
   }
 }

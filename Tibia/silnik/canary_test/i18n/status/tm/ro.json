@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:43:43.575842Z"
+    "updated_at": "2026-02-17T02:06:21.596380Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:43:46.171145Z"
+    "updated_at": "2026-02-17T02:06:24.396481Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:43:48.836781Z"
+    "updated_at": "2026-02-17T02:06:27.198745Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24461,7 +24461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:43:51.413979Z"
+    "updated_at": "2026-02-17T02:06:29.778790Z"
   },
   "spell.deathstrike_paralyze.name": {
     "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
@@ -26157,7 +26157,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T01:43:56.835639Z"
+    "updated_at": "2026-02-17T02:06:35.012689Z"
   },
   "spell.orewalker_wave.name": {
     "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
@@ -31102,5 +31102,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:04:29.686059Z"
+  },
+  "spell.gorerilla_small_ring.name": {
+    "src_hash": "cca50583b131400c336440d6eab26c70",
+    "text": "inel mic de gorilă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:38.801330Z"
+  },
+  "spell.ice_overlord_paralyze.name": {
+    "src_hash": "a867f6397c2c6fb5a651d6d928083f87",
+    "text": "stăpânul gheții paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:38.802697Z"
+  },
+  "spell.elder_wyrm_wave.name": {
+    "src_hash": "b862d08a8964e1e44588a5d002bf8c55",
+    "text": "undă de vârle bătrâne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:38.802953Z"
+  },
+  "spell.azerus_summon_4.name": {
+    "src_hash": "ac89901c5c98209cd80fe11c4712fb7f",
+    "text": "invocarea azerului 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:42.747941Z"
+  },
+  "spell.quara_plunderer_cross.name": {
+    "src_hash": "963e8ea8774a627a357f0f31eca5aab5",
+    "text": "caracrossmoarte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:42.748166Z"
+  },
+  "spell.hirintror_skill_reducer.name": {
+    "src_hash": "2f173ffebe0983276155a26b1a2c16e4",
+    "text": "hintror skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:45.365836Z"
+  },
+  "spell.monstor_summon.name": {
+    "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
+    "text": "monstor sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:45.366066Z"
+  },
+  "spell.crystal_wolf_wave.name": {
+    "src_hash": "27c6efcfdd27636c1353c09872061a0b",
+    "text": "val de lup de cristal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:45.366376Z"
+  },
+  "spell.plaguesmith_paralyze.name": {
+    "src_hash": "06753eb4a768091b27159764ed117920",
+    "text": "plaguesmith paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:45.366635Z"
+  },
+  "spell.glooth_generator_summon.name": {
+    "src_hash": "a248dfd1c2ec953a5e05daa52edda24c",
+    "text": "Invocarea Glooth-Generator",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:06:45.366882Z"
   }
 }

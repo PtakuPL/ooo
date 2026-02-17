@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T02:05:16.349241Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T02:07:21.504254Z",
+  "language": "it",
+  "json_file": "quests.json",
+  "translated": 42,
   "entries": [
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "quests.secret_library.not_ready_v2",
+      "en": "You are not ready to pass yet.",
+      "translated": "Non sei ancora pronto per passare.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.secret_library.recently_fixed",
+      "en": "You recently fixed that idol.",
+      "translated": "Recentemente hai riparato quell'idolo.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "quests.secret_library.wait_20h",
+      "en": "You need to wait 20 hours to face this boss again.",
+      "translated": "Devi aspettare 20 ore per affrontare di nuovo questo boss.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "quests.shattered_isles.nargor_map_1",
+      "en": "You have sucessfully read plan A.",
+      "translated": "Hai letto con successo il piano A.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "quests.shattered_isles.nargor_map_2",
+      "en": "You have sucessfully read plan B.",
+      "translated": "Hai letto con successo il piano B.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "quests.shattered_isles.nargor_map_3",
+      "en": "You have sucessfully read plan C.",
+      "translated": "Hai letto con successo il piano C.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "quests.soul_war.activate_all_shrines",
+      "en": "You still need to activate all the shrines.",
+      "translated": "Devi ancora attivare tutti i santuari.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "quests.soul_war.added_taint",
+      "en": "Added taint level: {0}, name: {1} to player: {2}",
+      "translated": "Aggiunto livello di contaminazione: {0}, nome: {1} al giocatore: {2}",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "quests.soul_war.all_shrines_activated",
+      "en": "You have activated all the shrines.",
+      "translated": "Hai attivato tutti i santuari.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "quests.soul_war.already_has_access",
+      "en": "You've already gained access to fight with the Goshnar's Cruelty.",
+      "translated": "Hai già ottenuto l'accesso per combattere con la Crudeltà di Goshnar.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "quests.soul_war.bag_obtained",
+      "en": "You have obtained the soul bag!",
+      "translated": "Hai ottenuto la borsa dell'anima!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "quests.soul_war.boss_room_access",
+      "en": "You can now access the boss room.",
+      "translated": "Ora puoi accedere alla stanza del boss.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "quests.soul_war.cleansed_cooldown",
+      "en": "You need to wait {0} more seconds before using the cleansed again.",
+      "translated": "Devi attendere altri {0} secondi prima di utilizzare nuovamente il pulitore.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "quests.soul_war.cooldown_wait",
+      "en": "You need to wait {0} second(s) to use this item again.",
+      "translated": "Devi attendere {0} secondo/i per utilizzare nuovamente questo elemento.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.soul_war.cruelty_defeat",
+      "en": "You have defeated Goshnar's Cruelty!",
+      "translated": "Hai sconfitto la crudeltà di Goshnar!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.soul_war.current_taint",
+      "en": "Your current taint level is: {0} name: {1}",
+      "translated": "Il tuo livello di contaminazione attuale è: {0} nome: {1}",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "quests.soul_war.dread_killing",
+      "en": "The dread's torment is killing you!",
+      "translated": "Il tormento del terrore ti sta uccidendo!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "quests.soul_war.dread_lethal",
+      "en": "The dread's torment is now lethal!",
+      "translated": "Il tormento del terrore è ora letale!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.soul_war.dread_start",
+      "en": "The dread starts to torment you! Don't let dread level reach critical value!",
+      "translated": "Il terrore inizia a tormentarti! Non lasciare che il livello di terrore raggiunga il valore critico!",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "quests.soul_war.dread_unbearable",
+      "en": "The dread's torment becomes unbearable!",
+      "translated": "Il tormento del terrore diventa insopportabile!",
+      "source": "google_translate"
     }
   ]
 }

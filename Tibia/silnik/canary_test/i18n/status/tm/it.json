@@ -43102,5 +43102,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:18:27.780758Z"
+  },
+  "scripts.actions_cracklers_lever.msg_2": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.333298Z"
+  },
+  "scripts.actions_crystal.msg_1": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "All'improvviso una guardia ti salta addosso da dietro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.334155Z"
+  },
+  "scripts.actions_final_lever.msg_2": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.338668Z"
+  },
+  "scripts.actions_sparks_lever.msg_1": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.370541Z"
+  },
+  "scripts.creaturescripts_splash.say_1": {
+    "src_hash": "520e3d33c1a3b609737a4a9e47aa0a06",
+    "text": "SPRUZZARE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.393144Z"
+  },
+  "scripts.exalted_core.msg_5": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Non hai abbastanza capacità.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.405924Z"
+  },
+  "scripts.find_fiend.level_unknown": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.408417Z"
+  },
+  "scripts.quests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Hai trovato un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.475349Z"
+  },
+  "scripts.quests.msg_2": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Hai trovato un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.475672Z"
+  },
+  "scripts.quests.msg_4": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Hai trovato un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.476167Z"
+  },
+  "scripts.quests.msg_5": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "Hai trovato un ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.476492Z"
+  },
+  "scripts.soul_prism.msg_5": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Non hai abbastanza capacità.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.485739Z"
+  },
+  "scripts.soul_war_mechanics.msg_2": {
+    "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+    "text": "Al momento non hai alcuna contaminazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.486634Z"
+  },
+  "scripts.soul_war_mechanics.msg_3": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.486984Z"
+  },
+  "scripts.soul_war_mechanics.msg_6": {
+    "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+    "text": "Il giocatore è offline",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.487540Z"
+  },
+  "scripts.soul_war_mechanics.msg_7": {
+    "src_hash": "6655db13bee1450cbda069988ba9ac6f",
+    "text": "Perdi il livello di contaminazione: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.487899Z"
+  },
+  "scripts.soul_war_mechanics.msg_8": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Livello di contaminazione rimosso: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.488247Z"
+  },
+  "scripts.soulpit_fight.msg_1": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Qualcuno sta combattendo nella fossa dell'anima!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:05.488656Z"
+  },
+  "scripts.actions_corpse.msg_2": {
+    "src_hash": "77b8010b0414880bdbf6e4e8ee53ce5e",
+    "text": "Questo è vuoto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:12.752504Z"
+  },
+  "scripts.actions_corpse.say_1": {
+    "src_hash": "7217a37aabbda4819b9adb0512b1a4cf",
+    "text": "Non prendi più oro di quello di cui hai effettivamente bisogno e liberi il mercante che se ne va non appena rimuovi le corde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:12.753083Z"
+  },
+  "scripts.actions_coruja.msg_1": {
+    "src_hash": "df87386b73db3b71047038b982c44d00",
+    "text": "Scopri un gufo che riposa su un albero. È speciale, perché non hai mai visto un gufo in tutto Kilmaresh.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:12.753652Z"
+  },
+  "scripts.actions_counter_agent.msg_1": {
+    "src_hash": "c8c549f68a94f2d0de0eaeb94e664d99",
+    "text": "Una tempesta di sabbia ha distrutto quasi tutti i pilastri. L'effetto del controagente ha funzionato diversamente dal previsto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:19.888057Z"
+  },
+  "scripts.actions_counter_agent.msg_2": {
+    "src_hash": "380f8c945d50e19564aae60338ef5e9d",
+    "text": "La tempesta di sabbia non ha solo distrutto l'oasi, ma ha anche rivelato alcune piastrelle della pavimentazione e una leva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:19.888537Z"
+  },
+  "scripts.actions_cracklers_lever.msg_1": {
+    "src_hash": "0f83410583de59a313f22441acd5febc",
+    "text": "Sono necessari almeno 4 giocatori per questa missione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:19.888880Z"
+  },
+  "scripts.actions_crate.msg_1": {
+    "src_hash": "467aa744353e838cc4e516dc77dd702f",
+    "text": "Perfetto! Hai preso una lente meravigliosa da questa cassa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:19.889226Z"
+  },
+  "scripts.actions_crate.msg_2": {
+    "src_hash": "51cdbfcf0982098343b3f288729deb7a",
+    "text": "Hai già preso la lente d'ingrandimento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:19.889546Z"
+  },
+  "scripts.actions_crate.msg_3": {
+    "src_hash": "88f20ad8c4870defabe09cab6938014d",
+    "text": "Questa cassa appartiene ad Angelo. Dovresti parlargli prima di tirare fuori qualcosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:26.419178Z"
+  },
+  "scripts.actions_crude_lava_pump.say_1": {
+    "src_hash": "26f0c6eb6824fc9463fcf2da3d9b3bc7",
+    "text": "Con la pompa distrutta, il flusso di lava è stato fermato. La Zona IV è ora accessibile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:26.419663Z"
+  },
+  "scripts.actions_crude_lava_pump.say_2": {
+    "src_hash": "8592ea91a04cc14538e0ae132d20f6f1",
+    "text": "Con la pompa distrutta, il flusso di lava è stato fermato. La Zona V è ora accessibile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:26.420126Z"
+  },
+  "scripts.actions_crude_lava_pump.say_3": {
+    "src_hash": "68c1d0e664ac7d858278500694c4cf4d",
+    "text": "Con la pompa distrutta, il flusso di lava è stato fermato. La Zona VI è ora accessibile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:26.420585Z"
+  },
+  "scripts.actions_crystal.msg_2": {
+    "src_hash": "3316c338a81d556dfda28459921d5538",
+    "text": "Non hai raccolto altro che piccoli frammenti di gemma rossa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:26.420941Z"
+  },
+  "scripts.actions_crystal.msg_3": {
+    "src_hash": "f621231a669f88989005df0122b9bc35",
+    "text": "Con uno sforzo considerevole si riesce a far cadere dalle rocce una gemma grezza, quasi intatta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:34.017212Z"
+  },
+  "scripts.actions_cure.say_1": {
+    "src_hash": "b72870c8d387638024b0aae38f8b14b5",
+    "text": "Prendi dell'acqua calda dal geyser.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:34.017546Z"
+  },
+  "scripts.actions_custodian_door.msg_1": {
+    "src_hash": "45b73f05201500fc8fe764433f99d201",
+    "text": "Il potere di Gaffir non ti permetterà di oltrepassare questa porta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:34.017932Z"
+  },
+  "scripts.actions_dark_remains.say_1": {
+    "src_hash": "cda93175c22d6f24117ce3e9e4870199",
+    "text": "Lo scudo magico di protezione è indebolito!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:34.018383Z"
+  },
+  "scripts.actions_deeper_banuta_shortcut.msg_1": {
+    "src_hash": "4d7b566523c4163688d941d1e47fb138",
+    "text": "Hai scoperto un tunnel segreto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:34.018678Z"
+  },
+  "scripts.actions_deeper_banuta_shortcut.msg_2": {
+    "src_hash": "64e242b84b7218e0be6150d252d702ba",
+    "text": "Hai già scoperto questo segreto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:41.120128Z"
+  },
+  "scripts.actions_demon_oak.msg_1": {
+    "src_hash": "bd2e08e742d9871c8528df93eb3a7ade",
+    "text": "Devi prima uccidere tutti i mostri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:41.120457Z"
+  },
+  "scripts.actions_demon_oak.msg_2": {
+    "src_hash": "e369118cf13afd694431ce0e9505d2dd",
+    "text": "Racconta a Oldrak della tua grande vittoria contro la quercia demoniaca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:41.120821Z"
+  },
+  "scripts.actions_demon_oak.say_1": {
+    "src_hash": "8cc72daf16882398bc3b602ac306a385",
+    "text": "-krrrrak-",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:41.121055Z"
+  },
+  "scripts.actions_demon_oak_chest.msg_1": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:26:41.121250Z"
   }
 }

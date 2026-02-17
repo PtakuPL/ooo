@@ -2957,7 +2957,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T02:52:47.014327Z"
+    "updated_at": "2026-02-17T03:38:32.038270Z"
   },
   "item.10289.name": {
     "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
@@ -22230,5 +22230,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:21:13.218260Z"
+  },
+  "item.10362.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "död ödla drake präst",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:28.658391Z"
+  },
+  "item.10363.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "död ödla drake präst",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:28.658729Z"
+  },
+  "item.10364.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "död ödla zaogun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:32.038550Z"
+  },
+  "item.10365.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "död ödla zaogun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:32.038791Z"
+  },
+  "item.10366.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "död ödla zaogun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:32.039021Z"
+  },
+  "item.10367.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "död ödla zaogun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:35.899609Z"
+  },
+  "item.10368.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "död ödla vald",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:35.899860Z"
+  },
+  "item.10369.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "död ödla vald",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:35.900091Z"
+  },
+  "item.10370.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "död ödla vald",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:35.900316Z"
+  },
+  "item.10371.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "död ödla vald",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:35.900540Z"
+  },
+  "item.10382.name": {
+    "src_hash": "1c580e01169b6923893d0655edc491ed",
+    "text": "död evig väktare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:41.787304Z"
+  },
+  "item.10383.name": {
+    "src_hash": "1c580e01169b6923893d0655edc491ed",
+    "text": "död evig väktare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:41.787566Z"
+  },
+  "item.10384.name": {
+    "src_hash": "816a83cc3d5fc8ccdedf8425b1ea8bff",
+    "text": "Zaoan rustning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:41.787971Z"
+  },
+  "item.10385.name": {
+    "src_hash": "8d6eab3e3370e0ac3a313988aec4e8dc",
+    "text": "Zaoan hjälm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:41.788313Z"
+  },
+  "item.10386.name": {
+    "src_hash": "97316cd24185e3cc363bf98c334b4988",
+    "text": "Zaoan skor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:41.788654Z"
+  },
+  "item.10387.name": {
+    "src_hash": "411591a55c3dee7a454ad2f2113d03dd",
+    "text": "Zaoana ben",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:48.507677Z"
+  },
+  "item.10389.name": {
+    "src_hash": "a29bac723ca2d59ed78a2d715e17e92f",
+    "text": "sai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:48.508255Z"
+  },
+  "item.10390.name": {
+    "src_hash": "4b0ec4077ef1975b9fbb4a9e27217e26",
+    "text": "Zaoan svärd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:48.508579Z"
+  },
+  "item.10392.name": {
+    "src_hash": "72736292655d59d37b2a8280704ebe84",
+    "text": "dubbla krokar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:52.776623Z"
+  },
+  "item.10393.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "död klagande änka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:52.776888Z"
+  },
+  "item.10394.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "död klagande änka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:52.777125Z"
+  },
+  "item.10395.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "död klagande änka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:52.777356Z"
+  },
+  "item.10396.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "död klagande änka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T03:38:52.777588Z"
   }
 }

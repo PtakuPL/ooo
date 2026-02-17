@@ -31198,5 +31198,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:16:56.629950Z"
+  },
+  "scripts.actions_totems.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Доступ предоставлен!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.439736Z"
+  },
+  "scripts.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Вы минуете огонь, не получив никакого урона. Сейчас или никогда...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.513846Z"
+  },
+  "scripts.movements_color_puzzle.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Доступ предоставлен!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.514324Z"
+  },
+  "scripts.movements_elemental_portals.msg_1": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Вы потратили слишком много времени, битва окончена.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.515953Z"
+  },
+  "scripts.movements_elemental_portals.msg_3": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Вы обнаружили старый письменный стол, на котором лежит древняя карта.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.516928Z"
+  },
+  "scripts.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.521189Z"
+  },
+  "scripts.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.521546Z"
+  },
+  "scripts.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.524451Z"
+  },
+  "scripts.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Останки временно депорализуют вас.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.524883Z"
+  },
+  "scripts.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Поскольку сила темного Хранителя все еще сдерживается, туман не дает вам войти в логово Куэйда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.527288Z"
+  },
+  "scripts.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Вы завершили ритуал подношения еды!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.528295Z"
+  },
+  "scripts.movements_teleportto.msg_1": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Вы должны подождать. Кто-то сейчас бросает вызов Яростному Скорпиону.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:19.532837Z"
   }
 }

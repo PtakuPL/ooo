@@ -50110,5 +50110,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:14:20.438811Z"
+  },
+  "scripts.actions_gravel.msg_1": {
+    "src_hash": "4773513d10da04eea4d6263d73273d1d",
+    "text": "Raccogli della ghiaia fine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:38.558384Z"
+  },
+  "scripts.actions_habitat_corrupted.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:38.558751Z"
+  },
+  "scripts.actions_habitat_corrupted.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:38.559184Z"
+  },
+  "scripts.actions_habitat_desert.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:38.559531Z"
+  },
+  "scripts.actions_habitat_desert.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:38.559986Z"
+  },
+  "scripts.actions_habitat_dimension.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:41.168907Z"
+  },
+  "scripts.actions_habitat_dimension.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:41.169438Z"
+  },
+  "scripts.actions_habitat_grass.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:41.169865Z"
+  },
+  "scripts.actions_habitat_grass.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:41.170401Z"
+  },
+  "scripts.actions_habitat_ice.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:41.170756Z"
+  },
+  "scripts.actions_habitat_ice.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:43.736062Z"
+  },
+  "scripts.actions_habitat_mushroom.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:43.736426Z"
+  },
+  "scripts.actions_habitat_mushroom.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:43.736941Z"
+  },
+  "scripts.actions_habitat_roshamuul.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:43.737298Z"
+  },
+  "scripts.actions_habitat_roshamuul.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:43.737727Z"
+  },
+  "scripts.actions_habitat_venom.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "La stanza si trasforma in un paesaggio completamente diverso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:49.828673Z"
+  },
+  "scripts.actions_habitat_venom.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "La leva è bloccata, è necessario un po' di tempo perché possa essere nuovamente spostata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:49.829121Z"
+  },
+  "scripts.actions_hallowed.msg_1": {
+    "src_hash": "9efa4d20bdabe3dd7d5c46c2e12b660b",
+    "text": "Le fiamme ruggiscono e mangiano avidamente l'osso. Il Signore Oscuro è soddisfatto del tuo dono",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:49.829580Z"
+  },
+  "scripts.actions_holy_water.msg_1": {
+    "src_hash": "a8071fd5fd191d609f186ded5ec1fea2",
+    "text": "Cospargi il talismano del corno con acqua santa. Brilla debolmente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:49.829949Z"
+  },
+  "scripts.actions_iksupan_entrance.msg_1": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Per entrare è necessario almeno il livello 150.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:49.830436Z"
+  },
+  "scripts.actions_inscriptions.msg_1": {
+    "src_hash": "5650a1ba0060a83b12bc68f84825a89f",
+    "text": "Le parole sembrano respirare, stranamente. Una parola ti rimane in mente: bronzo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:57.463040Z"
+  },
+  "scripts.actions_inscriptions.msg_2": {
+    "src_hash": "d0d188433a2cb4792bb0534e52f90092",
+    "text": "Le parole sembrano brillare leggermente. Un nome ti fissa nella mente: Takesha Antishu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:57.463444Z"
+  },
+  "scripts.actions_inscriptions.msg_3": {
+    "src_hash": "65b1bcbdbbca5ed48d6d3c7ac0a06c9c",
+    "text": "Le parole sembrano fluttuare. Una parola ti rimane in mente: fluttuare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:57.463806Z"
+  },
+  "scripts.actions_key1.msg_1": {
+    "src_hash": "237abb647a44fad3fc1a637c34fc9d0a",
+    "text": "<swoosh> <grinta> <tosse, tosse>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:57.464079Z"
+  },
+  "scripts.actions_key2.msg_1": {
+    "src_hash": "c01ef6b8ed5e20d7721df122e9083659",
+    "text": "Una mano invisibile ti trascina dentro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:22:57.464373Z"
+  },
+  "scripts.actions_key2.msg_2": {
+    "src_hash": "5fb38602d50efd74221fdf1e74fbee29",
+    "text": "Esci dalla mia stanza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:05.293849Z"
+  },
+  "scripts.actions_keyCheck.msg_1": {
+    "src_hash": "b824070060a96b3767a04442a2bbbd24",
+    "text": "Non appena si gira la seconda chiave un meccanismo ritrae le serrature e ingoia le chiavi, aprendo un piccolo passaggio al di là.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:05.294514Z"
+  },
+  "scripts.actions_keyCheck.msg_2": {
+    "src_hash": "599d1059eed101de91e1275fef7304f1",
+    "text": "È necessario utilizzare il meccanismo del pilastro stesso per girare entrambe le chiavi contemporaneamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:05.294978Z"
+  },
+  "scripts.actions_keyCheck.msg_3": {
+    "src_hash": "ef8ec3bba66aa3bfc1deb0e6dbd2d49b",
+    "text": "Raggiungi l'onice, il grilletto e un'enorme scarica di energia grezza. Ora è possibile attraversare il portale in questa tomba.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:05.295527Z"
+  },
+  "scripts.actions_ladder.say_1": {
+    "src_hash": "99a982ec7e61488cbe7e94d58956d1c4",
+    "text": "Zzz Non funziona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:05.295760Z"
+  },
+  "scripts.actions_lair_entrance.msg_1": {
+    "src_hash": "74de3ece38288807bd3e747ebe19fc4b",
+    "text": "Non sei ancora degno di entrare nella tana di The First Dragon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:12.148300Z"
+  },
+  "scripts.actions_last_fight.msg_1": {
+    "src_hash": "6ed9feb088ea842e969a2111ff57c309",
+    "text": "Ti serve almeno ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:12.148588Z"
+  },
+  "scripts.actions_last_object.msg_1": {
+    "src_hash": "ddd6237398c160652e46293ac818e5b9",
+    "text": "Lo strano simbolo nel muro in fondo si illumina violentemente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:12.148971Z"
+  },
+  "scripts.actions_last_object.msg_2": {
+    "src_hash": "e383abcb644bc07342757f906ebda41b",
+    "text": "L'oggetto di culto giace lì in silenzio. L'area pericolosa attorno ad esso è stata quasi dissolta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:12.149462Z"
+  },
+  "scripts.actions_last_object.msg_3": {
+    "src_hash": "67e4e841e7632d46dcfdc852092449f5",
+    "text": "Non appena ti allunghi per toccare l'oggetto di culto, un'ondata di energia esplose dal cranio. Ne hai bandito il potere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:12.149954Z"
+  },
+  "scripts.actions_legion_helmet.say_1": {
+    "src_hash": "b66eb5cbe62a5582e5e1a8f08fe1070e",
+    "text": "Hai già scoperto questo teletrasporto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:15.369235Z"
+  },
+  "scripts.actions_legion_helmet.say_2": {
+    "src_hash": "dea1f1531a62234d04f6d34d95fe3999",
+    "text": "Il dio lucertola accetta la tua offerta! Puoi entrare nel santuario!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:23:15.369612Z"
   }
 }

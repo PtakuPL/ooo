@@ -1948,7 +1948,7 @@
   "scripts.skinning.say_7": "Cortas una hoja de una rama y la pones en el almanaque. Huele extrañamente dulce y terriblemente amargo al mismo tiempo.",
   "scripts.skinning.say_8": "La planta se siente fría pero seca y muy suave. Acaricias la planta suavemente con tu cuchillo y pones un fragmento en el almanaque.",
   "scripts.skinning.say_9": "Tallas un cuenco sólido del trozo de madera.",
-  "scripts.soul_prism.msg_1": "[ES] You have received a {} soul core.",
+  "scripts.soul_prism.msg_1": "Has recibido un núcleo de alma {}.",
   "scripts.soul_prism.msg_2": "Tipo de monstruo inválido. Por favor contacta a un administrador.",
   "scripts.soul_prism.msg_3": "No hay monstruos disponibles para el siguiente nivel de dificultad.",
   "scripts.soul_prism.msg_4": "[ES] Failed to generate a Soul Core.",

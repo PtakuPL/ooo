@@ -102470,5 +102470,325 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:39:31.448746Z"
+  },
+  "scripts.freequests.msg_2": {
+    "src_hash": "d185826332eb1de2dd13405d0df30ef3",
+    "text": "Dodano darmowe questy dostępu do twojej postaci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.632060Z"
+  },
+  "scripts.golden.msg_1": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Potrzebujesz 5 graczy, aby walczyć z tym bossem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.641188Z"
+  },
+  "scripts.golden.msg_2": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Ktoś już walczy z tym bossem! Musisz chwilę poczekać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.642265Z"
+  },
+  "scripts.gray_beach_vortex.msg_1": {
+    "src_hash": "e1b6f8a90a19a3de9e34de2a28201c76",
+    "text": "Nurzysz się w wir, by przepłynąć pod skałami na drugą stronę jaskini.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.644421Z"
+  },
+  "scripts.hammer.msg_1": {
+    "src_hash": "6095b6bc022c4b909407d4aa1b2cb565",
+    "text": "Naprawiłeś tę zniszczoną ścianę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.647113Z"
+  },
+  "scripts.hydra_tongue_salad.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.662515Z"
+  },
+  "scripts.imbuement_shrine.msg_1": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Nie zebrałeś wystarczającej wiedzy od starożytnych Shaperów. Odwiedź świątynię Shaperów w Montag, aby uzyskać pomoc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.666608Z"
+  },
+  "scripts.info.skill_axe": {
+    "src_hash": "1f5763b83682ac45790b98f73b99513d",
+    "text": "* Umiejętność Topór: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.669805Z"
+  },
+  "scripts.info.skill_club": {
+    "src_hash": "2024512ad3b3df4339f238ad4be458c8",
+    "text": "* Umiejętność Obuch: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.670707Z"
+  },
+  "scripts.info.skill_distance": {
+    "src_hash": "30671b21cc72722953cc2ca1ff2dc45e",
+    "text": "* Umiejętność Dystans: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.671591Z"
+  },
+  "scripts.info.skill_magic": {
+    "src_hash": "319574c3122606fe8671124686a5fd30",
+    "text": "* Umiejętność Magia: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.673041Z"
+  },
+  "scripts.info.skill_shield": {
+    "src_hash": "f411840b70f36564e646e126c8428ec6",
+    "text": "* Umiejętność Tarcza: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.673918Z"
+  },
+  "scripts.info.speed": {
+    "src_hash": "7fddbc6dd512724f7f63b71fd1491ee4",
+    "text": "Szybkość: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.675282Z"
+  },
+  "scripts.key_door.msg_1": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Jest zamknięte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.677427Z"
+  },
+  "scripts.keys.msg_1": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Wszedłeś do starożytnej demonicznej celi więziennej!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.678465Z"
+  },
+  "scripts.keys.msg_2": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Masz piętnaście minut, aby zabić i splądrować tego bossa, w przeciwnym razie stracisz tę szansę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.679564Z"
+  },
+  "scripts.kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Możesz to zbudować tylko wewnątrz domu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.680051Z"
+  },
+  "scripts.leave_house.msg_1": {
+    "src_hash": "428e437eff337ea42a158f1dc4ec2658",
+    "text": "Nie możesz opuścić tego domu. Przeniesienie własności jest już zaplanowane przy następnym restarcie serwera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.682486Z"
+  },
+  "scripts.lemon_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.683633Z"
+  },
+  "scripts.level_bridge.msg_1": {
+    "src_hash": "39c490578b1837d3a7fe25a6160818c0",
+    "text": "Aby przejść, potrzebujesz co najmniej poziomu 2.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.685212Z"
+  },
+  "scripts.lever.msg_1": {
+    "src_hash": "b3872cf92d6d6963a1d70d01d66325f8",
+    "text": "Do rozpoczęcia questa wymaganych jest czterech graczy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.686505Z"
+  },
+  "scripts.lock_pick.msg_1": {
+    "src_hash": "ff211fe70e3caeb6b04cdf6fc4a2c870",
+    "text": "Twój wytrych otworzył tę skrzynię!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.691634Z"
+  },
+  "scripts.lock_pick.msg_2": {
+    "src_hash": "c56944cf2486fe50ba39a2d5610a5c3d",
+    "text": "Twój wytrych się złamał.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.692500Z"
+  },
+  "scripts.maxxenius_energy_elemental.msg_1": {
+    "src_hash": "42f9a55c6786effb89e726f9f9453c6a",
+    "text": "Czujesz narastający potężny ładunek elektryczny!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.708442Z"
+  },
+  "scripts.mission02_defence.msg_4": {
+    "src_hash": "f2991fda432874ac626d7fa5b1c69655",
+    "text": "Załadowałeś ostatni kamień na katapulty. Czas wracać do Vascalira.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.712038Z"
+  },
+  "scripts.mission02_defence.msg_5": {
+    "src_hash": "41e8076fbe49bc85532fecd50156ca2c",
+    "text": "Załadowałeś już kamień na tę katapultę. Rozejrzyj się po innych dachach, aby znaleźć pozostałe katapulty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.713201Z"
+  },
+  "scripts.mission05_web_terror.msg_2": {
+    "src_hash": "ca684371793be4737a48aa726183ce26",
+    "text": "Wcierasz dziwny smar w ciało. Królowa pająków nie wyczuje cię przez około 2 minuty. Pośpiesz się!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.714816Z"
+  },
+  "scripts.mission05_web_terror.msg_3": {
+    "src_hash": "39f41eeb9c1a590b256f1907f3323567",
+    "text": "Masz już część pajęczyny królowej pająków. Nie ma potrzeby tam wracać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.715899Z"
+  },
+  "scripts.mission05_web_terror.msg_4": {
+    "src_hash": "8b3ab750451b80851aff92007e7fa6e9",
+    "text": "Nie wchodź do legowiska bez ochronnego smaru. Użyj jednego z kamieni na północy, aby stać się dla niej niewidzialnym.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.717241Z"
+  },
+  "scripts.mission05_web_terror.msg_5": {
+    "src_hash": "270691425d078baac63c41a8f408898b",
+    "text": "Masz już pajęczynę królowej pająków. Powinieneś wrócić do Vascalira i nie podejmować dalszego ryzyka.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.718452Z"
+  },
+  "scripts.mission05_web_terror.msg_6": {
+    "src_hash": "a0ea3f97e9918df8861ee05b77ea81d7",
+    "text": "Zdobyłeś część pajęczyny królowej pająków. Wracaj szybko, zanim znów cię wyczuje!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.719571Z"
+  },
+  "scripts.mission06_run_like_wolf.msg_2": {
+    "src_hash": "46961c94ea578a9daf22a02081724bf2",
+    "text": "O nie... byłeś za wolny i wilki cię dogoniły. Możesz spróbować ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.720973Z"
+  },
+  "scripts.mission06_run_like_wolf.msg_5": {
+    "src_hash": "3b048e67f85c2c788384d2aed9aa6fa7",
+    "text": "Masz skórę wojennego wilka - ale słyszysz za sobą przerażające wycie. Czas stąd znikać - SZYBKO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.722752Z"
+  },
+  "scripts.mission07_attack.msg_1": {
+    "src_hash": "f5b7133d8dd223f9e27d3b52069b04fa",
+    "text": "Kaszel tak cię dusi, że musiałeś wrócić na górę. Weź kilka głębokich oddechów i spróbuj ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.724158Z"
+  },
+  "scripts.mission07_attack.msg_2": {
+    "src_hash": "593d684a61f694cbd760685c7139fa6f",
+    "text": "Ten ogień jest zbyt gorący, by przez niego przejść. Użyj runy destroy field na ogniu, aby osłabić płomienie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.725477Z"
+  },
+  "scripts.mission07_attack.msg_3": {
+    "src_hash": "9a7283708c03a7b8b1b92441d390beea",
+    "text": "Przez ogień na tej arenie można przejść bez obrażeń. Otwórz skrzynię i uciekaj stąd!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.726623Z"
+  },
+  "scripts.mission09_rock_troll.msg_2": {
+    "src_hash": "4a115f3b4f0ace0a4e028885d7e43b0a",
+    "text": "Jaskinia się zawaliła. Schodzenie tam na dół nie jest już bezpieczne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.728253Z"
+  },
+  "scripts.mission09_rock_troll.msg_4": {
+    "src_hash": "4fff28198cee40b8e5536f7c47a77906",
+    "text": "To powinno osłabić belkę na tyle, że wkrótce się zawali.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.729659Z"
+  },
+  "scripts.mission12_into_fortress.msg_11": {
+    "src_hash": "0278b40376ca0a5ef37b10c67c9ff2f3",
+    "text": "Resztką sił Kraknaknork wypycha cię ze swojej sali tronowej. Wracaj szybko i pokonaj go, zanim odzyska moc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.733792Z"
+  },
+  "scripts.mission12_into_fortress.msg_12": {
+    "src_hash": "e5d88071b0d53b642dc1530d75c3a4fc",
+    "text": "Gracz jest już w pokoju bossa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:40:11.734903Z"
   }
 }

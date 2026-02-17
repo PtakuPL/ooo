@@ -46286,5 +46286,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:11:55.390943Z"
+  },
+  "otclient_modules.character_otui.tr_68": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pesca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.609608Z"
+  },
+  "otclient_modules.character_otui.tr_69": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Schermatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.609887Z"
+  },
+  "otclient_modules.entergame.tr_1": {
+    "src_hash": "744e1400b3fca07b64b7bcacad954c57",
+    "text": "Messaggio del giorno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.637790Z"
+  },
+  "otclient_modules.entergame.tr_20": {
+    "src_hash": "744e1400b3fca07b64b7bcacad954c57",
+    "text": "Messaggio del giorno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.639585Z"
+  },
+  "otclient_modules.game_healthcircle.tr_10": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pesca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.643318Z"
+  },
+  "otclient_modules.game_healthcircle.tr_11": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Schermatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.643771Z"
+  },
+  "otclient_modules.game_healthcircle.tr_12": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Lotta a distanza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.644115Z"
+  },
+  "otclient_modules.game_healthcircle.tr_13": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Combattimento con l'ascia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.644409Z"
+  },
+  "otclient_modules.game_healthcircle.tr_14": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Combattimento con la spada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.645246Z"
+  },
+  "otclient_modules.game_healthcircle.tr_15": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Combattimento di club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.645619Z"
+  },
+  "otclient_modules.game_healthcircle.tr_16": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Lotta a pugni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.646164Z"
+  },
+  "otclient_modules.ruleviolation.tr_13": {
+    "src_hash": "9cef976714535911afb48e36f44ff794",
+    "text": "Esilio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.717615Z"
+  },
+  "otclient_modules.skills_otui.tr_40": {
+    "src_hash": "fb34369d75850f95670125cb259dbd38",
+    "text": "Pesca",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.727027Z"
+  },
+  "otclient_modules.skills_otui.tr_41": {
+    "src_hash": "ab3991ec36ac9afb97d0378e7629d35c",
+    "text": "Schermatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.727290Z"
+  },
+  "otclient_modules.skills_otui.tr_42": {
+    "src_hash": "96e0efe8fd7ad989139c0fc6ecb02d3a",
+    "text": "Lotta a distanza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.727635Z"
+  },
+  "otclient_modules.skills_otui.tr_43": {
+    "src_hash": "de08eb3a2042e7f21e4351bd2674fc9c",
+    "text": "Combattimento con l'ascia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.728044Z"
+  },
+  "otclient_modules.skills_otui.tr_44": {
+    "src_hash": "22afbdb58a4fee06b0feed8335d4bd15",
+    "text": "Combattimento con la spada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.728371Z"
+  },
+  "otclient_modules.skills_otui.tr_45": {
+    "src_hash": "ff6af8a92a82598dbb3bfba7c3b3130b",
+    "text": "Combattimento di club",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.728741Z"
+  },
+  "otclient_modules.skills_otui.tr_46": {
+    "src_hash": "e524eaf6892bb930079671668177894d",
+    "text": "Lotta a pugni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.729031Z"
+  },
+  "otclient_modules.tasks_otui.tr_5": {
+    "src_hash": "a15e9d627362cb8837d0b910bc53a55e",
+    "text": "Cerca per nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.738261Z"
+  },
+  "otclient_modules.textwindow.tr_6": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "È vuoto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.739346Z"
+  },
+  "otclient_modules.textwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.739726Z"
+  },
+  "otclient_modules.textwindow_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.740021Z"
+  },
+  "otclient_modules.things.tr_1": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Errore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.740243Z"
+  },
+  "otclient_modules.tradewindow_otui.tr_3": {
+    "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+    "text": "Commercio",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.741154Z"
+  },
+  "otclient_modules.transferpoints_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.741546Z"
+  },
+  "otclient_modules.ui_otui.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.742140Z"
+  },
+  "otclient_modules.uiinputbox.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.742337Z"
+  },
+  "otclient_modules.uiinputbox.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.742652Z"
+  },
+  "otclient_modules.updater_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.744408Z"
+  },
+  "otclient_modules.violationwindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.745195Z"
+  },
+  "otclient_modules.violationwindow_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Ok",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.745386Z"
+  },
+  "otclient_modules.waitinglist_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:07.747874Z"
+  },
+  "otclient_modules.addgroup_otui.tr_3": {
+    "src_hash": "16053feba495862dfb4e07b3decda8d8",
+    "text": "Inserisci il nome del gruppo:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:10.989852Z"
+  },
+  "otclient_modules.addgroup_otui.tr_4": {
+    "src_hash": "8e077ba9cc65969999798b34dfff99d5",
+    "text": "Aggiungi gruppo VIP (gruppi creati dall'utente rimasti: %s)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:10.990280Z"
+  },
+  "otclient_modules.addserver_otui.tr_2": {
+    "src_hash": "ec211f7c20af43e742bf2570c3cb84f9",
+    "text": "Aggiungere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:10.990461Z"
+  },
+  "otclient_modules.addserver_otui.tr_3": {
+    "src_hash": "888a77f5ac0748b6c8001822417df8b6",
+    "text": "Protocollo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:10.990631Z"
+  },
+  "otclient_modules.addserver_otui.tr_4": {
+    "src_hash": "60aaf44d4b562252c04db7f98497e9aa",
+    "text": "Porta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:10.990788Z"
+  },
+  "otclient_modules.addserver_otui.tr_5": {
+    "src_hash": "c2ca16d048ec66e04bca283eab048ec2",
+    "text": "Ospite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:17.087467Z"
+  },
+  "otclient_modules.addserver_otui.tr_6": {
+    "src_hash": "d9d5734a2379a059a3163eed52ecb95b",
+    "text": "Nuovo server",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:17.087684Z"
+  },
+  "otclient_modules.addvip_otui.tr_3": {
+    "src_hash": "793a51c32e599ae346383fda49c85b07",
+    "text": "Inserisci il nome di un personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:17.087982Z"
+  },
+  "otclient_modules.addvip_otui.tr_4": {
+    "src_hash": "06e2557780e5392fa585bfa898f0d935",
+    "text": "Aggiungi alla lista VIP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:17.088221Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_3": {
+    "src_hash": "b2f40690858b404ed10e62bdf422c704",
+    "text": "Quantità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:17.088402Z"
+  },
+  "otclient_modules.assign_object_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Fare domanda a",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:22.950297Z"
+  },
+  "otclient_modules.assign_object_otui.tr_3": {
+    "src_hash": "6a344362d7ec25b9667aeaefe33b5a7a",
+    "text": "Seleziona oggetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:22.950548Z"
+  },
+  "otclient_modules.assign_object_otui.tr_4": {
+    "src_hash": "ad8783089f828b927473fb61d51940ec",
+    "text": "Utilizzo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:22.950720Z"
+  },
+  "otclient_modules.assign_object_otui.tr_5": {
+    "src_hash": "e3b8137cf68c3daafe6e043cc1282056",
+    "text": "Equipaggiare/disequipaggiare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:22.950925Z"
+  },
+  "otclient_modules.assign_object_otui.tr_6": {
+    "src_hash": "4430dea85031cedf7b37db5f51fc7ce4",
+    "text": "Utilizzare con mirino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:22.951163Z"
+  },
+  "otclient_modules.assign_object_otui.tr_7": {
+    "src_hash": "d2bf683c031ce553916e0a4462bf6558",
+    "text": "Utilizzare sul bersaglio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:27.313045Z"
+  },
+  "otclient_modules.assign_object_otui.tr_8": {
+    "src_hash": "b139c4284c5c3111b857052dac419d42",
+    "text": "Usalo su te stesso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:17:27.313305Z"
   }
 }

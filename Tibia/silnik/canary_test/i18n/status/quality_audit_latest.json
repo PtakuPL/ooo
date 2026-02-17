@@ -1,18 +1,137 @@
 {
-  "timestamp": "2026-02-17T04:16:52.117275Z",
+  "timestamp": "2026-02-17T04:18:46.268033Z",
   "checked_entries": 100,
-  "issues_found": 29,
+  "issues_found": 24,
   "issues_by_type": {
+    "identical_to_en": 16,
+    "artifact_token": 8,
     "identical_to_en_exempt": 11,
-    "artifact_token": 7,
-    "identical_to_en": 22,
-    "suspicious_log_high": 86,
-    "suspicious_log_critical": 61,
-    "suspicious_log_low": 53,
+    "suspicious_log_high": 124,
+    "suspicious_log_critical": 59,
+    "suspicious_log_low": 17,
     "suspicious_rejected_high": 23,
     "suspicious_rejected_critical": 177
   },
   "issues": [
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.player.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "otclient_modules.violationwindow_otui.tr_2",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ok",
+      "translated": "Ok"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "lang": "ru",
+      "type": "artifact_token",
+      "en": "Battletactics for Mages [IV]",
+      "translated": "Тактика боя для магов [IV]"
+    },
+    {
+      "key": "questlog.quest_1.mission_2.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "The Plague Seal",
+      "translated": "The Plague Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_8.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "The Final Battle",
+      "translated": "The Final Battle"
+    },
+    {
+      "key": "questlog.quest_11.mission_10.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Carniphilas",
+      "translated": "Paw and Fur: Carniphilas"
+    },
+    {
+      "key": "questlog.quest_11.mission_12.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Mammoths",
+      "translated": "Paw and Fur: Mammoths"
+    },
+    {
+      "key": "questlog.quest_11.mission_13.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gnarlhounds",
+      "translated": "Paw and Fur: Gnarlhounds"
+    },
+    {
+      "key": "questlog.quest_11.mission_14.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Terramites",
+      "translated": "Paw and Fur: Terramites"
+    },
+    {
+      "key": "questlog.quest_11.mission_15.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Apes",
+      "translated": "Paw and Fur: Apes"
+    },
+    {
+      "key": "questlog.quest_11.mission_17.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gargoyles",
+      "translated": "Paw and Fur: Gargoyles"
+    },
+    {
+      "key": "questlog.quest_11.mission_18.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Ice Golems",
+      "translated": "Paw and Fur: Ice Golems"
+    },
+    {
+      "key": "questlog.quest_11.mission_22.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Wyverns",
+      "translated": "Paw and Fur: Wyverns"
+    },
+    {
+      "key": "questlog.quest_11.mission_26.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Bonebeasts",
+      "translated": "Paw and Fur: Bonebeasts"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -61,160 +180,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.morgaroth.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.morgaroth.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
-    },
-    {
-      "key": "monster.ferumbras.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.ferumbras.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
-    },
-    {
-      "key": "monster.furyosa.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.furyosa.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "sv",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.player.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_12",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
     }
   ],
   "threshold": 10,

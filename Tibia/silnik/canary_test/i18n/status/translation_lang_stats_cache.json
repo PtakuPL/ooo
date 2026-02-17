@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T04:16:55.836547Z",
+  "timestamp": "2026-02-17T04:18:50.001931Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 48,
+  "cache_misses": 4,
+  "file_cache_hits": 1972,
+  "file_cache_misses": 4,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771301651345601312,
+          1771301924438314279,
           1848281
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771301651345601312,
+            1771301924438314279,
             1848281
           ],
           "row": {
@@ -16047,8 +16047,8 @@
         [
           "otclient_modules.json",
           1,
-          1771299168559145654,
-          138182
+          1771301847314113107,
+          138108
         ],
         [
           "otclient_src.json",
@@ -16134,17 +16134,17 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8213,
-        "english_copy_keys": 2442,
+        "translated_keys": 8263,
+        "english_copy_keys": 2445,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 15.33,
+        "completion_pct": 15.42,
         "server_keys": 49731,
         "server_translated": 7741,
         "server_pct": 15.57,
         "client_keys": 3855,
-        "client_translated": 472,
-        "client_pct": 12.24
+        "client_translated": 522,
+        "client_pct": 13.54
       },
       "files": {
         "achievements.json": {
@@ -16486,13 +16486,13 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771299168559145654,
-            138182
+            1771301847314113107,
+            138108
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 249,
-            "english_copy_keys": 60,
+            "translated_keys": 299,
+            "english_copy_keys": 63,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27033,8 +27033,8 @@
         [
           "questlog.json",
           1,
-          1771299232799312254,
-          244428
+          1771301909322278097,
+          244425
         ],
         [
           "quests.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 13011,
-        "english_copy_keys": 2427,
+        "translated_keys": 13019,
+        "english_copy_keys": 2428,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 24.28,
+        "completion_pct": 24.3,
         "server_keys": 49731,
-        "server_translated": 12452,
-        "server_pct": 25.04,
+        "server_translated": 12460,
+        "server_pct": 25.05,
         "client_keys": 3855,
         "client_translated": 559,
         "client_pct": 14.5
@@ -27504,13 +27504,13 @@
         "questlog.json": {
           "sig": [
             1,
-            1771299232799312254,
-            244428
+            1771301909322278097,
+            244425
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 100,
-            "english_copy_keys": 56,
+            "translated_keys": 108,
+            "english_copy_keys": 57,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27660,8 +27660,8 @@
         [
           "books.json",
           1,
-          1771299198595213720,
-          324707
+          1771301878210193571,
+          326092
         ],
         [
           "chatchannels.json",
@@ -27879,14 +27879,14 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 20315,
+        "translated_keys": 20334,
         "english_copy_keys": 2579,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 37.91,
+        "completion_pct": 37.95,
         "server_keys": 49731,
-        "server_translated": 17562,
-        "server_pct": 35.31,
+        "server_translated": 17581,
+        "server_pct": 35.35,
         "client_keys": 3855,
         "client_translated": 2753,
         "client_pct": 71.41
@@ -27923,12 +27923,12 @@
         "books.json": {
           "sig": [
             1,
-            1771299198595213720,
-            324707
+            1771301878210193571,
+            326092
           ],
           "row": {
             "total_reference_keys": 1403,
-            "translated_keys": 176,
+            "translated_keys": 195,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

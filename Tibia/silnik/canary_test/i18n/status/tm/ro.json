@@ -40398,5 +40398,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:13:57.271859Z"
+  },
+  "questlog.quest_11.mission_23.state_1": {
+    "src_hash": "b5a2d7d43d98cdf34ac73dd142d107c5",
+    "text": "Ai vânat cu succes 300 de gândaci lancer. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:18.090987Z"
+  },
+  "questlog.quest_11.mission_23.state_2": {
+    "src_hash": "099feaebbb87c9e8ca03d65f1ee02b4d",
+    "text": "Ați vânat cu succes 300 de gândaci lancer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:18.091354Z"
+  },
+  "questlog.quest_11.mission_24.state_1": {
+    "src_hash": "135e2b56df1f277263629bacef663bf8",
+    "text": "Ai vânat cu succes 400 de văduve plânse. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:25.341244Z"
+  },
+  "questlog.quest_11.mission_24.state_2": {
+    "src_hash": "9b32eeb509a05bd6b417c930fe000509",
+    "text": "Ai vânat cu succes 400 de văduve plânse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:25.341620Z"
+  },
+  "questlog.quest_11.mission_25.state_1": {
+    "src_hash": "e1c0659c22bc78ad06eadef9ec35d673",
+    "text": "Ai vânat cu succes 250 de caimani ucigași. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:25.342368Z"
+  },
+  "questlog.quest_11.mission_25.state_2": {
+    "src_hash": "9ef16f2fe7504852c80c7f6feb98dd16",
+    "text": "Ați vânat cu succes 250 de caimani ucigași.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:25.342740Z"
+  },
+  "questlog.quest_11.mission_26.name": {
+    "src_hash": "7633e616c762dce9b33609f3a224809b",
+    "text": "Paw and Fur: Bonebeasts",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:29.321835Z"
+  },
+  "questlog.quest_11.mission_26.state_1": {
+    "src_hash": "0a6621f8b734ca91c7db3d280b61c2a8",
+    "text": "Ai vânat cu succes 300 de animale. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:29.322378Z"
+  },
+  "questlog.quest_11.mission_26.state_2": {
+    "src_hash": "c32160f57da2900acc301ebfbd2ec022",
+    "text": "Ai vânat cu succes 300 de animale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:18:29.322710Z"
   }
 }

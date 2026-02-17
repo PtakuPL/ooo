@@ -1,15 +1,15 @@
 {
   "lang": "ro",
-  "coverage_pct": 23.6,
+  "coverage_pct": 24.1,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:32:33.900889Z",
-  "issues_total": 407,
+  "checked_at": "2026-02-17T02:56:28.645502Z",
+  "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 7
+    "length_ratio_crosscheck": 8
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -203,33 +203,6 @@
       "lang": "Minor"
     },
     {
-      "key": "cpp.combat.drown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "drown",
-      "pl": "topić się, tonąć",
-      "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.energy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "energy",
-      "pl": "energia",
-      "lang": "energy"
-    },
-    {
-      "key": "cpp.combat.fire",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fire",
-      "pl": "ogień",
-      "lang": "fire"
-    },
-    {
       "key": "cpp.combat.holy",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -282,15 +255,6 @@
       "en": "undefined",
       "pl": "nieokreślony",
       "lang": "undefined"
-    },
-    {
-      "key": "cpp.combat.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
     },
     {
       "key": "cpp.forge.consumed",
@@ -1004,15 +968,6 @@
       "lang": "{0}% Ruse"
     },
     {
-      "key": "cpp.look.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
       "key": "cpp.look.vol",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1175,15 +1130,6 @@
       "lang": "Tentugly"
     },
     {
-      "key": "cpp.protocol.unknown_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
       "key": "cpp.protocol.vocation_all",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1211,6 +1157,15 @@
       "lang": "No error."
     },
     {
+      "key": "cpp.skill.life_leech",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "life leech",
+      "pl": "Życie Lecha",
+      "lang": "life leech"
+    },
+    {
       "key": "cpp.skill.mana_leech",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1218,15 +1173,6 @@
       "en": "mana leech",
       "pl": "mana pijawka",
       "lang": "mana leech"
-    },
-    {
-      "key": "cpp.skill.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
     },
     {
       "key": "cpp.title.name_17",
@@ -3612,6 +3558,60 @@
       "en": "Uhhhh...",
       "pl": "Uuuuhhh...",
       "lang": "Uhhhh..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ZzzzZzzZz...chrrr...",
+      "pl": "Zzzz... chrrr...",
+      "lang": "ZzzzZzzZz...chrrr..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SLEEP. ...",
+      "pl": "SEN....",
+      "lang": "SLEEP. ..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GAIN. ...",
+      "pl": "NABIERZ SIŁ....",
+      "lang": "GAIN. ..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RISE. ...",
+      "pl": "POWSTAŃ....",
+      "lang": "RISE. ..."
+    },
+    {
+      "key": "npc.a_starving_dog.greet_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<sniff>",
+      "pl": "<węszy>",
+      "lang": "<sniff>"
+    },
+    {
+      "key": "npc.a_starving_dog.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<munch>",
+      "pl": "<przeżuwać>",
+      "lang": "<munch>"
     }
   ],
   "length_ratio_issues": [
@@ -3668,6 +3668,15 @@
       "en_len": 15,
       "lang_ratio": 1.2,
       "pl_ratio": 3.267
+    },
+    {
+      "key": "cpp.combat.drown",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 5,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.2
     },
     {
       "key": "npc.telas.greet_msg_1",

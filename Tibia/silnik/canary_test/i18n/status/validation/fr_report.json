@@ -3,7 +3,7 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 18344,
-  "identical_to_en": 4027,
+  "identical_to_en": 4026,
   "placeholder_keys": 35242,
   "coverage_pct": 34.2,
   "issues_total": 111,
@@ -149,5 +149,5 @@
     "length_ratio": 14,
     "auto_fix_applied": 1
   },
-  "validated_at": "2026-02-17T02:32:31.081233Z"
+  "validated_at": "2026-02-17T02:56:25.294783Z"
 }

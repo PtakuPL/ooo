@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:32:33.368729Z",
+  "checked_at": "2026-02-17T02:56:28.058505Z",
   "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1398,6 +1398,15 @@
       "en": "level",
       "pl": "poziom",
       "lang": "level"
+    },
+    {
+      "key": "cpp.skill.life_leech",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "life leech",
+      "pl": "Życie Lecha",
+      "lang": "life leech"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -3597,15 +3606,6 @@
     },
     {
       "key": "monster.orchid_frog.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.azure_frog.voice_4",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",

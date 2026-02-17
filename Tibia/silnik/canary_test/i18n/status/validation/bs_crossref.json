@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T02:31:52.392804Z",
+  "checked_at": "2026-02-17T02:55:45.526106Z",
   "issues_total": 400,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -1524,6 +1524,15 @@
       "en": "level",
       "pl": "poziom",
       "lang": "level"
+    },
+    {
+      "key": "cpp.skill.life_leech",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "life leech",
+      "pl": "Życie Lecha",
+      "lang": "life leech"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -3603,15 +3612,6 @@
       "en": "**Slurp**",
       "pl": "**Siorbać**",
       "lang": "**Slurp**"
-    },
-    {
-      "key": "monster.ironblight.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clonk!",
-      "pl": "KLONK!",
-      "lang": "Clonk!"
     }
   ],
   "length_ratio_issues": [],

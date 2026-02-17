@@ -1,8 +1,8 @@
 {
-  "total_cycles": 324,
+  "total_cycles": 325,
   "mode": "AUTO_TRANSLATE",
   "category": "ro",
-  "last_update": "2026-02-17T07:37:26.187421",
+  "last_update": "2026-02-17T07:40:58.368636",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "ro",
-    "json_file": "spells.json",
-    "keys_to_translate": 642,
-    "guard_fail": 3,
+    "json_file": "quests.json",
+    "keys_to_translate": 35,
+    "guard_fail": 41,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

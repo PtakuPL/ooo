@@ -1,28 +1,42 @@
 {
-  "timestamp": "2026-02-17T06:37:25.900973Z",
+  "timestamp": "2026-02-17T06:40:58.243386Z",
   "checked_entries": 100,
   "issues_found": 11,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 13,
-    "artifact_token": 7,
-    "suspicious_log_high": 162,
-    "suspicious_log_critical": 36,
-    "suspicious_log_low": 2,
-    "suspicious_rejected_high": 34,
-    "suspicious_rejected_critical": 166
+    "identical_to_en_exempt": 17,
+    "artifact_token": 9,
+    "identical_to_en": 2,
+    "suspicious_log_high": 152,
+    "suspicious_log_low": 1,
+    "suspicious_log_critical": 47,
+    "suspicious_rejected_critical": 167,
+    "suspicious_rejected_high": 33
   },
   "issues": [
     {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
       "key": "spell.restoration.words",
-      "lang": "it",
+      "lang": "ro",
       "type": "identical_to_en",
       "en": "exura max vita",
       "translated": "exura max vita"
     },
     {
       "key": "spell.chivalrous_challenge.words",
-      "lang": "it",
+      "lang": "ro",
       "type": "identical_to_en",
       "en": "exeta amp res",
       "translated": "exeta amp res"
@@ -75,20 +89,6 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "spell.restoration.words",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "exura max vita",
-      "translated": "exura max vita"
-    },
-    {
-      "key": "spell.chivalrous_challenge.words",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "exeta amp res",
-      "translated": "exeta amp res"
     }
   ],
   "threshold": 10,

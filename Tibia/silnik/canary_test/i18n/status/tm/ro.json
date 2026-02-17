@@ -48838,5 +48838,197 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:36:20.242321Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_2a": {
+    "src_hash": "e727da551288af7db5559f0467cecb98",
+    "text": "De îndată ce atingeți sculptura lunii cu oglinda, sculptura este infuzată cu lumina lunii. Bariera se întărește.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:16.982698Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_2b": {
+    "src_hash": "049443277e87ec214b0d2c3d3b1d2053",
+    "text": "De îndată ce atingeți sculptura lunii cu oglinda, sculptura este infuzată cu lumina lunii. Aceasta a fost ultima sculptură.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:16.983616Z"
+  },
+  "quests.threatened_dreams.starlight_vial.fail_1": {
+    "src_hash": "4fd5cf40df6275d5dc8f4c8d90c51dd9",
+    "text": "Freci sticla opaca a flaconului, dar nu se intampla nimic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:16.984167Z"
+  },
+  "quests.threatened_dreams.starlight_vial.fail_2": {
+    "src_hash": "1ee1fdd792bc836abea5fe0883268d33",
+    "text": "Stelele trebuie să strălucească pentru a întări bariera. Așteaptă noaptea. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:25.038347Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_1": {
+    "src_hash": "63b3e325040bff2c29a959306abcd187",
+    "text": "Flaconul strălucește de lumina stelelor acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:25.039003Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_2a": {
+    "src_hash": "6752cc651b9a7da119b297527e28d9f2",
+    "text": "De îndată ce turnați flaconul peste copacul de pasăre de vis, planta este infuzată cu lumina stelelor. Bariera se întărește.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:25.040094Z"
+  },
+  "quests.threatened_dreams.starlight_vial.success_2b": {
+    "src_hash": "20f28482cd56c65b75ba9fd8656fb2c3",
+    "text": "De îndată ce turnați flaconul peste copacul de pasăre de vis, planta este infuzată cu lumina stelelor. Acesta a fost ultimul copac.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:25.040986Z"
+  },
+  "quests.threatened_dreams.sun_catcher.fail_1": {
+    "src_hash": "d0704ba6b967861b5699518a35e2d763",
+    "text": "Freci bijuteria în centrul captatorului de soare, dar nu se întâmplă nimic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:25.041640Z"
+  },
+  "quests.threatened_dreams.sun_catcher.fail_2": {
+    "src_hash": "e7126cb18a31fbcefa201e5ed29783fe",
+    "text": "Soarele trebuie să strălucească pentru a întări bariera. Așteaptă ziua.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:32.378482Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_1": {
+    "src_hash": "1149a7aac3fe4499fc7eebdb923d21a0",
+    "text": "Captorul de soare strălucește acum de lumina soarelui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:32.379141Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_2a": {
+    "src_hash": "9b3f746d62ce9115a05a1fbb7e9bff16",
+    "text": "De îndată ce așezați captorul de soare pe piatră, modelul mozaicul este infuzat cu lumina soarelui. Bariera se întărește.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:32.380055Z"
+  },
+  "quests.threatened_dreams.sun_catcher.success_2b": {
+    "src_hash": "e1f165104af223261e0ec666fb19c82c",
+    "text": "De îndată ce așezați captorul de soare pe piatră, modelul mozaicul este infuzat cu lumina soarelui. Acesta a fost ultimul mozaic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:32.380974Z"
+  },
+  "quests.threatened_dreams.you_are_not_on_that_mission": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Nu ești în acea misiune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:32.381444Z"
+  },
+  "quests.tinder_box_quest_chyllfroest.this_can_only_be_used_between": {
+    "src_hash": "ffec7f337bbd825827d501c1300a0c6f",
+    "text": "Acesta poate fi folosit doar între 1 aprilie și 1 mai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:39.676828Z"
+  },
+  "quests.unnatural_selection.mission2_say_1": {
+    "src_hash": "e9b8bea9f03c5b1e76977ca48b92795f",
+    "text": "Țineți craniul sus. Totuși, poți rezista nevoii de a o privi printr-un telescop.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:39.677664Z"
+  },
+  "quests.unnatural_selection.mission2_say_10": {
+    "src_hash": "89aca892eb1ca9d1f47b76e4e263b07e",
+    "text": "Acesta este cu siguranță unul dintre cele mai înalte locuri din întregul Tibia. Dacă asta nu este pur și simplu perfect, nu știi ce este.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:39.678823Z"
+  },
+  "quests.unnatural_selection.mission2_say_11": {
+    "src_hash": "d0ce366100dbb3961cbb587b3326b919",
+    "text": "Ce priveliste frumoasa. Demn de o regină într-adevăr! E timpul să te întorci la Lazaran și să-i arăți ce ai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:39.679682Z"
+  },
+  "quests.unnatural_selection.mission2_say_2": {
+    "src_hash": "57ca22ee86d1dc6c74f3243b57dba67e",
+    "text": "Îți ridici craniul și îl lași să arunce o privire peste frumosul oraș elf prin frunzele dese.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:39.680470Z"
+  },
+  "quests.unnatural_selection.mission2_say_3": {
+    "src_hash": "9d63dfb5c97a8549bb7c51f0c2f97da3",
+    "text": "Thanita îți arată cu adevărat ciudat în timp ce ții craniul în sus, dar ei bine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:46.946501Z"
+  },
+  "quests.unnatural_selection.mission2_say_4": {
+    "src_hash": "303c2d9fcc01f12b4baf660308b542f6",
+    "text": "A fost unul cu adevărat ușor. Și acum ești obișnuit să ai un aspect ciudat, așa că orice!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:46.947229Z"
+  },
+  "quests.unnatural_selection.mission2_say_5": {
+    "src_hash": "98b40519daece9c8af99a3f2ba6afdbd",
+    "text": "Uau, e cald aici sus. Din fericire, craniul nu mai poate face arsuri de soare, dar tu poți, așa că mai bine cobori din nou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:46.948111Z"
+  },
+  "quests.unnatural_selection.mission2_say_6": {
+    "src_hash": "384529ff7c001357bb1fc9ab4d5d77d6",
+    "text": "Având în vedere că locurile mai înalte de aici nu sunt atât de ușor de ajuns, crezi că priveliștea de aici este destul de bună.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:46.948974Z"
+  },
+  "quests.unnatural_selection.mission2_say_7": {
+    "src_hash": "0990d5f7f686454fe5d58ec81dc77db8",
+    "text": "Da, e un punct destul de înalt. Dacă Lazaran vede vreodată ceea ce vede craniul, ar fi destul de mulțumit de acea vedere frumoasă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:46.949920Z"
+  },
+  "quests.unnatural_selection.mission2_say_8": {
+    "src_hash": "0d2d5f5fdf8f1b781163f7c3097d2551",
+    "text": "Ei bine, există locuri mai înalte pe aici, dar niciunul dintre ele nu este la fel de ușor accesibil ca acesta. Trebuie doar să fie suficient.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:38:49.478898Z"
   }
 }

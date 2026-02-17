@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:37:22.858509Z",
-  "language": "ru",
-  "json_file": "quests.json",
-  "translated": 47,
+  "timestamp": "2026-02-17T06:40:54.795489Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "quests.dream_courts.book_okteth",
-      "en": "The chants in this book often contain the word 'O'kteth.'.",
-      "translated": "Песни в этой книге часто содержат слово 'O'kteth.'.",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "quests.dream_courts.statue_word",
-      "en": "This statue has a word written on her hand: 'N'ogalu'.",
-      "translated": "На руке этой статуи написано слово: 'N'ogalu'.",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "quests.globalevents_grimvale_feroxa.broadcast_1",
-      "en": "Grimvale drowns in werecreatures as the full moon reaches its apex and ancient evil returns.",
-      "translated": "Grimvale тонет в существах-оборотнях, когда полная луна достигает апогея и возвращается древнее зло.",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "quests.grave_danger.wait_challenge",
-      "en": "You need to wait %s before trying to challenge %s again!",
-      "translated": "Вам нужно подождать %s, прежде чем снова пытаться бросить вызов %s!",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "quests.kilmaresh.memory_word_1",
-      "en": "The Ambassador tells another dignitary: Rathleton must never be surpassed! I will procure that the Empire falters!",
-      "translated": "Посол говорит другому высокопоставленному лицу: Rathleton никогда нельзя превзойти! Я добьюсь того, чтобы Империя пошатнулась!",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "quests.kilmaresh.memory_word_2",
-      "en": "Through a dimensional gate you can see the Ambassador of Rathleton wearing a cloak with a black sphinx on it.",
-      "translated": "Через межпространственные врата вы можете увидеть Посла Rathleton в плаще с черным сфинксом.",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "quests.kilmaresh.memory_word_3",
-      "en": "Through a dimensional gate you can see how the Ambassador of Rathleton is talking to Fafnar cultists in a quite familiar way. The proof is absolutely substantive. The Ambassador is a betrayer!",
-      "translated": "Через межпространственные врата можно увидеть, как Посол Rathleton вполне знакомым языком разговаривает с культистами Фафнара. Доказательство абсолютно существенное. Посол — предатель!",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "quests.lions_rock.shrine_time",
-      "en": "When the time comes, '%s' will be accepted at this shrine.",
-      "translated": "Когда придет время, '%s' будет принят в этом храме.",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "quests.others.holy_water_damaged",
-      "en": "%s damaged the shadow nexus! You can't damage it while it's burning.",
-      "translated": "%s повредил теневую связь! Вы не сможете повредить его, пока он горит.",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "quests.others.holy_water_destroyed",
-      "en": "%s destroyed the shadow nexus! In 10 seconds it will return to its original state.",
-      "translated": "%s уничтожил теневую связь! Через 10 секунд он вернется в исходное состояние.",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "quests.svargrond_arena.completed_arena",
-      "en": "Congratulations! You completed %s arena, you should take your reward now.",
-      "translated": "Поздравляем! Вы завершили арену %s, теперь вы должны получить свою награду.",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "quests.pits_of_inferno.throne_say_2",
-      "en": "You have touched Tafariel's throne and absorbed some of his spirit.",
-      "translated": "Вы прикоснулись к трону Тафариэля и впитали в себя часть его духа.",
-      "source": "google_translate"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "quests.pits_of_inferno.throne_say_3",
-      "en": "You have touched Verminor's throne and absorbed some of his spirit.",
-      "translated": "Вы прикоснулись к трону Верминора и поглотили часть его духа.",
-      "source": "google_translate"
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
     },
     {
-      "key": "quests.pits_of_inferno.throne_say_4",
-      "en": "You have touched Apocalypse's throne and absorbed some of his spirit.",
-      "translated": "Вы прикоснулись к трону Apocalypse и впитали в себя часть его духа.",
-      "source": "google_translate"
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
     },
     {
-      "key": "quests.pits_of_inferno.throne_say_5",
-      "en": "You have touched Bazir's throne and absorbed some of his spirit.",
-      "translated": "Вы прикоснулись к трону Базира и впитали в себя часть его духа.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "quests.pits_of_inferno.throne_say_6",
-      "en": "You have touched Ashfalor's throne and absorbed some of his spirit.",
-      "translated": "Вы прикоснулись к трону Ашфалора и впитали в себя часть его духа.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "quests.pits_of_inferno.throne_say_7",
-      "en": "You have touched Pumin's throne and absorbed some of his spirit.",
-      "translated": "Вы прикоснулись к трону Пумина и впитали в себя часть его духа.",
-      "source": "google_translate"
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
     },
     {
-      "key": "quests.quest_system2.say_1",
-      "en": "A batch of documents has been stashed in the shelf. These might be of interest to Zalamon.",
-      "translated": "На полке спрятана пачка документов. Это может представлять интерес для Заламона.",
-      "source": "google_translate"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "quests.quest_system2.say_2",
-      "en": "You dig out a skull from the pile of bones. That must be the skull Lazaran talked about.",
-      "translated": "Вы выкапываете череп из груды костей. Должно быть, это тот самый череп, о котором говорил Лазаран.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "quests.quest_system2.say_3",
-      "en": "To buy some time you replace the fish with a piece of carrot.",
-      "translated": "Чтобы выиграть время, замените рыбу кусочком моркови.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     }
   ]
 }

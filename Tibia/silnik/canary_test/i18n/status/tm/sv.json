@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:53:17.604787Z"
+    "updated_at": "2026-02-17T06:38:58.767555Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -25494,5 +25494,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:26:52.775650Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L159.1408": {
+    "src_hash": "471a4c1349cb41447a84403c431bbbff",
+    "text": "Grarkharok vara {chief}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:21.735977Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L160.1409": {
+    "src_hash": "471a4c1349cb41447a84403c431bbbff",
+    "text": "Grarkharok vara {chief}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:21.736387Z"
+  },
+  "data.otservbr.global.npc.chondur.L319.194": {
+    "src_hash": "13f7dcbb07deb6cf9372fc7090611d20",
+    "text": "Var hälsad, barn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:25.692409Z"
+  },
+  "data.otservbr.global.npc.chrak.L93.1133": {
+    "src_hash": "32a347eb9be8bae0f4fb14b360240687",
+    "text": "Greetingz, konkurrent.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:25.692859Z"
+  },
+  "data.otservbr.global.npc.chrystal.L77.787": {
+    "src_hash": "3dc2f1ab2a9c914700c5e138304ffa50",
+    "text": "Till din tjänst |PLAYERNAME| och välkommen till postkontoret.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:25.693502Z"
+  },
+  "data.otservbr.global.npc.chrystal.L78.788": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Vem är nästa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:25.693854Z"
+  },
+  "data.otservbr.global.npc.chrystal.L79.789": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Vem är nästa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:25.694264Z"
+  },
+  "data.otservbr.global.npc.chrystal.L80.790": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Här. Glöm inte att du måste köpa en etikett också om du vill skicka ett paket. Skriv alltid namnet på {receiver} på första raden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:29.445970Z"
+  },
+  "data.otservbr.global.npc.cipfried.L177.715": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Farväl, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:39:29.446684Z"
   }
 }

@@ -48478,5 +48478,277 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T04:39:05.632802Z"
+  },
+  "data.otservbr.global.scripts.quests.adventures.of.galthen.actions.yselda.entrances.L13.1753": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.124093Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L11.2104": {
+    "src_hash": "9c6cec06690cf28996e1db3502afbeda",
+    "text": "Chiedigli: il gatto ti ha mangiato la lingua?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.128423Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L7.2100": {
+    "src_hash": "e3aa86a595bdf4e08545ee7ba7590906",
+    "text": "Caro curatore, questo museo aperto di recente è davvero un bel posto dove stare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.128975Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L8.2101": {
+    "src_hash": "15e799af52db094b34330c9e03390635",
+    "text": "Ma aspetta! E lo spazio vuoto davanti a te? Che peccato!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.129427Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L9.2102": {
+    "src_hash": "649518a7af31b7d8b75793e1143eafd4",
+    "text": "Sembra che qualcuno abbia rimosso una delle bellissime foto. Ma andiamo! Tu hai i soldi e ne abbiamo bisogno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.129978Z"
+  },
+  "data.otservbr.global.scripts.quests.feaster.of.souls.actions.entrances.L23.2042": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.143425Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.flower.puzzle.lever.L34.1944": {
+    "src_hash": "88cda7654762a022fbb195ee138048fe",
+    "text": "L'ordine dei fiori nel giardino è sbagliato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.148470Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.flower.puzzle.lever.L39.1945": {
+    "src_hash": "d985281164095a47a746695286cccc17",
+    "text": "Il portale è ancora attivo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.148931Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.flower.puzzle.lever.L45.1946": {
+    "src_hash": "1acce27ff56e61e64182ecc91614cf06",
+    "text": "Un portale si forma mentre due travi di una strana costruzione che divide questa stanza si muovono l'una verso l'altra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.149492Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.fount.L7.2126": {
+    "src_hash": "a078052af6499123bf065d74d77c7209",
+    "text": "Una fiala di acqua fresca di stagno. Sembra cristallino e brilla un po'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.154728Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.frozen.horror.L25.2131": {
+    "src_hash": "09cd280cb68b9a10ec8828dd50e89162",
+    "text": "Bisogna aspettare un po', recentemente qualcuno ha sfidato Frozen Horror.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.155542Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.final.lever.L406.1880": {
+    "src_hash": "2121ec6cdb04e75616068d53a2d940d6",
+    "text": "Hai bisogno di almeno 3 giocatori, ciascuno in una colonna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.163091Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.entrances.L30.2053": {
+    "src_hash": "10fd367d0a0791a7d1920b1af8d2d755",
+    "text": "Dovresti rispettare il Bloodshade a guardia di questo regno prima di entrare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.187270Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.entrances.L65.2054": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.187698Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.movements.blood.entrance.L21.2062": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.188634Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.fertilizer.L30.1904": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Segnala l'incarico a Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.193065Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.nests.L18.1906": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Segnala l'incarico a Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.193757Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.creaturescripts.middle.spike.kill.L18.1908": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Segnala l'incarico a Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.194624Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.dipthrah.signs.doors.L28.1887": {
+    "src_hash": "50900607ffbcc26dfb57adb6a9aeacbc",
+    "text": "ID azione non valido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.195224Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.dipthrah.signs.doors.L37.1888": {
+    "src_hash": "f74ffed3ec45d27808bf4b9daafbc2c8",
+    "text": "Hai già completato questo passaggio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.195675Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.doorInvisible.L14.1844": {
+    "src_hash": "b2cb04d517ae393db829039e7816a595",
+    "text": "La porta si apre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.205670Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.dreamcatcher.curse.L57.1850": {
+    "src_hash": "5a575bde3954748011659b53b9682d15",
+    "text": "Prendi su di te la maledizione del sogno!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.206593Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.flask.L10.2002": {
+    "src_hash": "5f122d3da4629bffbde1b1c3d44754e9",
+    "text": "Fatto! Fai rapporto a Omrabas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.212730Z"
+  },
+  "game.loot.pickup.gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Hai saccheggiato {0} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.239252Z"
+  },
+  "game.loot.pickup.item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Hai saccheggiato 1 oggetto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.239587Z"
+  },
+  "game.loot.pickup_failed.gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Non potevi saccheggiare {0} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.240284Z"
+  },
+  "game.loot.summary.gold_only": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Hai saccheggiato {0} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.241062Z"
+  },
+  "game.loot.summary.single_item_only": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Hai saccheggiato 1 oggetto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.241917Z"
+  },
+  "game.loot.too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Attenzione! Il bottino che stai cercando di raccogliere è troppo pesante per essere trasportato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.242724Z"
+  },
+  "game.stash.withdraw_limit": {
+    "src_hash": "9a01da13149e0a5035736e78737126ce",
+    "text": "Puoi prelevare solo fino a {0} articoli alla volta dalla scorta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.243246Z"
+  },
+  "game.trade.move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} ti dice di avvicinarti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.243946Z"
+  },
+  "game.trade.request": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} vuole fare scambio con te.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:19.244658Z"
+  },
+  "data.otservbr.global.npc.alia.L149.1159": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ricorda: se sei gravemente ferito o avvelenato, posso curarti gratuitamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:20.605265Z"
+  },
+  "data.otservbr.global.npc.alkestios.L130.1473": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Una benedizione della natura, viaggiatore! Possa tu non essere influenzato da nessuna forza sinistra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:20.605700Z"
   }
 }

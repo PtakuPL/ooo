@@ -30390,5 +30390,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:40:39.746588Z"
+  },
+  "data.otservbr.global.npc.testserver.assistant.L89.453": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Вы уже благословлены.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:24.802950Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.exalted.core.L78.2001": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Вам не хватает мощности.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:24.878261Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soul.prism.L87.1994": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Вам не хватает мощности.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:47:24.878877Z"
   }
 }

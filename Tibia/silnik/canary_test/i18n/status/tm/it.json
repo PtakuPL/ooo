@@ -54478,5 +54478,221 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T06:22:23.781684Z"
+  },
+  "item.31381.name": {
+    "src_hash": "3e47b75000b0924b6c9ba5759a7cf15d",
+    "text": "Niente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:55.934623Z"
+  },
+  "item.6197.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.418858Z"
+  },
+  "item.6198.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.419104Z"
+  },
+  "item.6199.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.419344Z"
+  },
+  "item.6200.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.419595Z"
+  },
+  "item.6201.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.419958Z"
+  },
+  "item.6202.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.420193Z"
+  },
+  "item.6203.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.420430Z"
+  },
+  "item.6204.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.420679Z"
+  },
+  "item.6248.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.421438Z"
+  },
+  "item.6248.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.421806Z"
+  },
+  "item.6249.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.422066Z"
+  },
+  "item.6250.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.422337Z"
+  },
+  "item.6251.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.422626Z"
+  },
+  "item.6251.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.422872Z"
+  },
+  "item.6252.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.423243Z"
+  },
+  "item.6253.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.423481Z"
+  },
+  "item.6254.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.423720Z"
+  },
+  "item.6255.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.423952Z"
+  },
+  "item.6256.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.424205Z"
+  },
+  "item.6257.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.424554Z"
+  },
+  "item.6258.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.424795Z"
+  },
+  "item.6259.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.425025Z"
+  },
+  "item.6260.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.425283Z"
+  },
+  "item.6261.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.425516Z"
+  },
+  "item.6560.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "umano morto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.436793Z"
+  },
+  "item.6792.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T06:23:56.441221Z"
   }
 }

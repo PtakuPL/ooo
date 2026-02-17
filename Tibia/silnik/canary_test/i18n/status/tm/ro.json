@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:49:53.814573Z"
+    "updated_at": "2026-02-17T05:16:12.900419Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:49:56.388362Z"
+    "updated_at": "2026-02-17T05:16:15.508324Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:49:59.015207Z"
+    "updated_at": "2026-02-17T05:16:18.100248Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24461,7 +24461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:50:01.601589Z"
+    "updated_at": "2026-02-17T05:16:20.700995Z"
   },
   "spell.deathstrike_paralyze.name": {
     "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
@@ -26157,7 +26157,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:50:06.806729Z"
+    "updated_at": "2026-02-17T05:16:25.905089Z"
   },
   "spell.orewalker_wave.name": {
     "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
@@ -31149,7 +31149,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:50:12.001519Z"
+    "updated_at": "2026-02-17T05:16:31.172461Z"
   },
   "spell.monstor_summon.name": {
     "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
@@ -43766,5 +43766,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:13:47.332571Z"
+  },
+  "spell.lava_golem_soulfire2.name": {
+    "src_hash": "156a629b7df27103fe1bf49727d1deca",
+    "text": "lava golem soulfre2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:36.412715Z"
+  },
+  "spell.shock_head_paralyze.name": {
+    "src_hash": "261c1b218a892245cd6eea042796e605",
+    "text": "șoc cap paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:36.413038Z"
+  },
+  "spell.death_beam.name": {
+    "src_hash": "1623317a16ff4218f9dbf2d98a61bb1a",
+    "text": "fascicul morții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:36.413254Z"
+  },
+  "spell.charge_vortex.name": {
+    "src_hash": "c32b9de511ad6749434dbf5dd2e03ec9",
+    "text": "vârtej de încărcare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:36.413478Z"
+  },
+  "spell.mort_ring.name": {
+    "src_hash": "66c8c10d08ee7730819483e29b7386ad",
+    "text": "inel mort",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:36.413741Z"
   }
 }

@@ -31094,5 +31094,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:14:52.236456Z"
+  },
+  "quests.oramond.premium_required": {
+    "src_hash": "db2cfa02e7868b5579081b243f9697a0",
+    "text": "Для доступа к этой области вам понадобится премиум-аккаунт.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:50.590781Z"
+  },
+  "quests.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Вы минуете огонь, не получив никакого урона. Сейчас или никогда...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:51.876763Z"
+  },
+  "quests.movements_elemental_portals.msg_1": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Вы обнаружили старый письменный стол, на котором лежит древняя карта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:51.877226Z"
+  },
+  "quests.movements_elemental_portals.msg_3": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Вы потратили слишком много времени, битва окончена.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:51.877605Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:51.877899Z"
+  },
+  "quests.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:54.471942Z"
+  },
+  "quests.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Ваше сопровождение закончилось.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:54.472254Z"
+  },
+  "quests.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Останки временно депорализуют вас.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:54.472597Z"
+  },
+  "quests.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Поскольку сила темного Хранителя все еще сдерживается, туман не дает вам войти в логово Куэйда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:54.473127Z"
+  },
+  "quests.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Вы завершили ритуал подношения еды!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:54.473479Z"
+  },
+  "quests.movements_stepin.say_1": {
+    "src_hash": "0bb267d5a1e1d99f98082a5d44c35061",
+    "text": "Черепаха голодна... Ты должен ее накормить.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:56.629243Z"
+  },
+  "quests.movements_teleportto.msg_1": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Вы должны подождать. Кто-то сейчас бросает вызов Яростному Скорпиону.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:56.629691Z"
+  },
+  "quests.movements_teleportto.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Доступ предоставлен!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:16:56.629950Z"
   }
 }

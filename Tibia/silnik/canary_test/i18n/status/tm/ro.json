@@ -33478,5 +33478,357 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:35:48.757906Z"
+  },
+  "scripts.actions_gems.shrine_time": {
+    "src_hash": "9bbfef3431fa75cbc870539f4910d0fe",
+    "text": "Când va veni momentul, '%s' va fi acceptat la acest altar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.598763Z"
+  },
+  "scripts.actions_totems.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesul acordat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.625618Z"
+  },
+  "scripts.creaturescripts_the_baron_from_below.say_1": {
+    "src_hash": "1fdd58cb88c7a872d667ea9d6dfaecb7",
+    "text": "Înghiţitură!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.641932Z"
+  },
+  "scripts.creaturescripts_the_baron_from_below.say_2": {
+    "src_hash": "1fdd58cb88c7a872d667ea9d6dfaecb7",
+    "text": "Înghiţitură!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.642578Z"
+  },
+  "scripts.gems.msg_1": {
+    "src_hash": "d9b6cc311fa1a090ca6f033009856206",
+    "text": "Puneți rubinul pe priza mică. O flacără roșie începe să ardă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.678801Z"
+  },
+  "scripts.gems.msg_2": {
+    "src_hash": "e62594c71695c66cb7f9cbf8e3122f0d",
+    "text": "Puneți safirul pe priza mică. O flacără albastră începe să ardă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.679792Z"
+  },
+  "scripts.gems.msg_3": {
+    "src_hash": "eb5a847dc8d4250b19a0df490b49cf67",
+    "text": "Așezi ametistul pe priza mică. O flacără violetă începe să ardă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.680734Z"
+  },
+  "scripts.gems.msg_4": {
+    "src_hash": "ceec84328c31ab346049a77164a16fa0",
+    "text": "Așezi topazul pe priza mică. O flacără galbenă începe să ardă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.681353Z"
+  },
+  "scripts.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Ai fost în încăierare în ultimele 10 ore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.703117Z"
+  },
+  "scripts.movement_third_floor_ghoul.say_1": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.704499Z"
+  },
+  "scripts.movement_third_floor_ghoul.say_2": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<clic>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.704773Z"
+  },
+  "scripts.movements_boat_puzzle.msg_1": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Vedeți părțile împrăștiate ale unei nave naufragiate. În mod miraculos, telescopul navei a supraviețuit epavei și pare să fie încă intact.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.706006Z"
+  },
+  "scripts.movements_boat_puzzle.msg_2": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Mai sunt niște scânduri și șuruburi libere. Nu poți folosi pluta așa, sigur se va scufunda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.706649Z"
+  },
+  "scripts.movements_boat_puzzle.msg_3": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Folosești șurubul pentru a bate scândurile libere. Pluta ar trebui să fie navigabilă acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.707323Z"
+  },
+  "scripts.movements_boat_puzzle.msg_4": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Vedeți părțile împrăștiate ale unei nave naufragiate. În mod miraculos, telescopul navei a supraviețuit epavei și pare să fie încă intact.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.707997Z"
+  },
+  "scripts.movements_boat_puzzle.msg_5": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Fără niciun punct de orientare nu vei găsi niciodată drumul înapoi. Încercați să găsiți o modalitate de a vă îmbunătăți navigarea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.708678Z"
+  },
+  "scripts.movements_cobra_mini_bosses.msg_1": {
+    "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+    "text": "Treci de foc fără să primești nicio pagubă. Este acum sau niciodată...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.709758Z"
+  },
+  "scripts.movements_color_puzzle.say_1": {
+    "src_hash": "fc12c213a3fce4a75d644699d8ed7b1d",
+    "text": "Accesul acordat!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.710182Z"
+  },
+  "scripts.movements_elemental_portals.msg_1": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Ai luat prea mult timp, bătălia s-a încheiat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.711293Z"
+  },
+  "scripts.movements_elemental_portals.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.711689Z"
+  },
+  "scripts.movements_elemental_portals.msg_3": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Ați descoperit un birou vechi care conține o hartă veche.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.712290Z"
+  },
+  "scripts.movements_energy_entrance.msg_1": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.712687Z"
+  },
+  "scripts.movements_energy_entrance.msg_2": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.713091Z"
+  },
+  "scripts.movements_energy_entrance.msg_3": {
+    "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+    "text": "Nu puteți utiliza încă acest portal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.713474Z"
+  },
+  "scripts.movements_gnomes_ordnance_end.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.715565Z"
+  },
+  "scripts.movements_gnomes_ordnance_end.msg_2": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.715883Z"
+  },
+  "scripts.movements_lost_exiles.msg_1": {
+    "src_hash": "6996362c30abb953c4abea682a47f332",
+    "text": "Escorta ta s-a terminat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.717904Z"
+  },
+  "scripts.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Rămășițele te deporalizează temporar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.718428Z"
+  },
+  "scripts.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Cu puterea Custodianului întunecat încă ținând departe, ceața te împiedică să intri în bârlogul lui Quaid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.720148Z"
+  },
+  "scripts.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Ai finalizat ritualul de ofertă de mâncare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.720883Z"
+  },
+  "scripts.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Trebuie să aștepți. Cineva este provocator ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.722034Z"
+  },
+  "scripts.movements_teleportto.msg_1": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Trebuie să aștepți. Cineva îl provoacă pe Scorpionul Furios acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:25.724094Z"
+  },
+  "scripts.actions_bone_flute.say_3": {
+    "src_hash": "f5d55048589bd41686d1250e7d33cca0",
+    "text": "În cele din urmă, acesta dezvăluie animalul tău spiritual.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:30.046577Z"
+  },
+  "scripts.actions_bone_flute_wall.msg_1": {
+    "src_hash": "2c3314f94f2660ce75b9258cee700a76",
+    "text": "Ai găsit un flaut de os.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:30.046903Z"
+  },
+  "scripts.actions_bony_rod.say_1": {
+    "src_hash": "cfa07c0159ce43fffdec206dcbc42af6",
+    "text": "Se reincarca...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:30.047214Z"
+  },
+  "scripts.actions_bookOnTable.msg_1": {
+    "src_hash": "4ab71ab4da67fa5c8ce728839c451726",
+    "text": "Această carte îți vorbește despre o vrajă care îl atrage pe cel care o poartă spre cea mai energică ființă de lângă el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:30.047830Z"
+  },
+  "scripts.actions_bookOnTable.msg_2": {
+    "src_hash": "da1ab3b85ba283abdcc703f5b418c6f9",
+    "text": "Este alcătuită din patru părți care au fost scoase din această carte. Ele trebuie citite împreună cu cântecele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:30.048531Z"
+  },
+  "scripts.actions_bookOnTable.msg_3": {
+    "src_hash": "669b2cb2f632101a665b1e379da7c9bb",
+    "text": "Trebuie să așteptați pentru a provoca din nou acest inamic!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:32.640308Z"
+  },
+  "scripts.actions_bookcase.say_1": {
+    "src_hash": "4aee2c7b53934fe015faa3daa46d0413",
+    "text": "Ai luat de aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:32.640699Z"
+  },
+  "scripts.actions_bookcase.say_2": {
+    "src_hash": "9a2e062060278cef20ffc96b18916669",
+    "text": "Ai găsit o hârtie mototolită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:32.641069Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_1": {
+    "src_hash": "4e9ac854b18934fcf5a5d7f5632f120d",
+    "text": "Trebuie să echipați cizma pentru a încerca să o utilizați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:32.641497Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_2": {
+    "src_hash": "cc773a38983c2fac2b945284898315f4",
+    "text": "Scântei magice se rotesc în jurul cizmelor și dintr-o dată ești în altă parte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:32.642293Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_3": {
+    "src_hash": "de4509a38663b7aeecbd91bb59d54147",
+    "text": "Daca vrei sa porti aceste cizme trebuie sa stai intr-o zona de protectie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:34.578843Z"
+  },
+  "scripts.actions_boots_of_homecoming.msg_4": {
+    "src_hash": "cb29b428a74e937af084be549a76dfa2",
+    "text": "Te-ai saturat de ultima utilizare a cizmelor, trebuie sa astepti o ora pentru a le folosi din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:34.579510Z"
   }
 }

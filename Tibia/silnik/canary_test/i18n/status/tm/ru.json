@@ -26606,5 +26606,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:34:16.202461Z"
+  },
+  "player.task.dialog.wait_minutes": {
+    "src_hash": "cda0df54893788709391661268b98047",
+    "text": "Вам нужно подождать {0} минут, чтобы выбрать новое существо для этого задания.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:14.859782Z"
+  },
+  "quest.dangerous_depths.earned_points_dwarves": {
+    "src_hash": "30afecc4939872faa0cdd1029e9e9129",
+    "text": "Вы заработали {0} баллов за выполнение миссии гномов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:14.860207Z"
+  },
+  "quest.dangerous_depths.earned_points_gnomes": {
+    "src_hash": "fe787fafead50b73c085785b9be0e04a",
+    "text": "Вы заработали {0} баллов за задание гномов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:14.860594Z"
+  },
+  "quest.dangerous_depths.earned_points_scouts": {
+    "src_hash": "71451e3893f222fdf4d91f6bd53275fc",
+    "text": "Вы заработали {0} баллов за выполнение миссии разведки.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:14.860990Z"
+  },
+  "quest.soul_war.boss_progress_access": {
+    "src_hash": "1337a1c6d304b55bbdda0ec5e86719b6",
+    "text": "%s: Доступ получен!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:14.861475Z"
+  },
+  "quest.soul_war.boss_progress_header": {
+    "src_hash": "44523c531274569607880af96df538ce",
+    "text": "Прогресс на пути к доступу к боссу «Зеркальный кошмар»:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:17.485184Z"
+  },
+  "quest.soul_war.boss_progress_kills": {
+    "src_hash": "c777297c890d2fddceabfceed9b0f495",
+    "text": "%s: %d/%d убийств",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:17.485667Z"
+  },
+  "quest.soul_war.taint_gained": {
+    "src_hash": "138a4a527628e1ac82b2463b602bcbd2",
+    "text": "Вы получили {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:17.485974Z"
+  },
+  "quest.soul_war.taints_reset": {
+    "src_hash": "ece897a2a26a14ed3305d8cd1b89ed6d",
+    "text": "Порчи вашего Гошнара были сброшены.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:17.486439Z"
+  },
+  "quest.soul_war.taints_reset_timeout": {
+    "src_hash": "bb82c84747742951025a074765dee261",
+    "text": "Порчи вашего Гошнара были сброшены. Вы не выполнили квест за 14 дней.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:17.486906Z"
+  },
+  "quests.world_board.fury_gate": {
+    "src_hash": "c0052987e5b85167c330b47e6ddcbb72",
+    "text": "Рядом с одним из крупных городов где-то в Tibia открылись огненные врата ярости.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:20.058098Z"
+  },
+  "quests.world_board.oriental_ships": {
+    "src_hash": "d9e00e8a0dc5d33ed99809e152c7e5b1",
+    "text": "Обнаружены восточные корабли! Торговец продуктами экзотических существ в настоящее время может посещать Carlin, Ankrahmun или Liberty Bay.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:20.058795Z"
+  },
+  "quests.world_board.sandstorm_coast": {
+    "src_hash": "25fd8563f2e744fd44ea4733d3575518",
+    "text": "Песчаная буря путешествует по Дараме, приводя к островам, полным смертоносных существ внутри кошмара. Избегайте самого северного побережья!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:20.059466Z"
+  },
+  "quests.world_board.sandstorm_drefia": {
+    "src_hash": "86f89a4ac6b0a450015d411eba40ef0e",
+    "text": "Песчаная буря путешествует по Дараме, приводя к островам, полным смертоносных существ внутри кошмара. Избегайте реки возле Drefia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:20.060150Z"
+  },
+  "quests.world_board.sandstorm_tar": {
+    "src_hash": "4646872dabc13c2274cb07b8475665be",
+    "text": "Песчаная буря путешествует по Дараме, приводя к островам, полным смертоносных существ внутри кошмара. Избегайте смоляных ям Анхрамуна!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:20.060781Z"
+  },
+  "scripts.achievement_functions.msg_1": {
+    "src_hash": "6e57553421d49c13fb1cd1d6eecf97ac",
+    "text": "Достижение {} успешно добавлено в {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:21.988046Z"
+  },
+  "scripts.achievement_functions.msg_2": {
+    "src_hash": "a4a0ae1d9883dcb6873c780607636bf2",
+    "text": "Достижение {} успешно удалено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:21.988447Z"
   }
 }

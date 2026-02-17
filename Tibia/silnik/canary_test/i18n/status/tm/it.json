@@ -9089,11 +9089,11 @@
   },
   "scripts.actions_boss_timira_fight.msg_3": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.844343Z"
+    "updated_at": "2026-02-17T02:39:37.609222Z"
   },
   "scripts.actions_calassa_comb_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
@@ -9105,27 +9105,27 @@
   },
   "scripts.actions_chests.msg_1": {
     "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
-    "text": "You have found a",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Hai trovato un ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.847297Z"
+    "updated_at": "2026-02-17T02:39:54.076846Z"
   },
   "scripts.actions_chests.msg_2": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.847816Z"
+    "updated_at": "2026-02-17T02:40:00.288115Z"
   },
   "scripts.actions_containerRewards.msg_2": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.848820Z"
+    "updated_at": "2026-02-17T02:40:09.444979Z"
   },
   "scripts.actions_doors.msg_1": {
     "src_hash": "97292b2d9c656199befd6d213f4e5194",
@@ -39662,5 +39662,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:34:07.244082Z"
+  },
+  "scripts.actions_findings.msg_1": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Hai trovato un {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:31.318880Z"
+  },
+  "scripts.actions_gooey_mass.msg_1": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Hai trovato un {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:31.323940Z"
+  },
+  "scripts.actions_vocation_reward.msg_3": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Hai trovato un {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:31.355675Z"
+  },
+  "scripts.creaturescripts_the_baron_from_below.say_1": {
+    "src_hash": "1fdd58cb88c7a872d667ea9d6dfaecb7",
+    "text": "Sorso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:31.369588Z"
+  },
+  "scripts.creaturescripts_the_baron_from_below.say_2": {
+    "src_hash": "1fdd58cb88c7a872d667ea9d6dfaecb7",
+    "text": "Sorso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:31.369897Z"
+  },
+  "scripts.actions_bosses_levers.say_1": {
+    "src_hash": "520e3d33c1a3b609737a4a9e47aa0a06",
+    "text": "SPRUZZARE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:37.609410Z"
+  },
+  "scripts.actions_botanist.say_1": {
+    "src_hash": "364c0a86d8993021b6104239d53934c9",
+    "text": "Hai prelevato con successo un campione del raro fiore dell'artiglio di grifone.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:37.609774Z"
+  },
+  "scripts.actions_brain.msg_1": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<brzzl> <frzzp> <fsssh>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:41.352611Z"
+  },
+  "scripts.actions_brain.msg_2": {
+    "src_hash": "0d79627a56d6ed42123deb0ff2c05e62",
+    "text": "Hai già il cervello",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:41.352921Z"
+  },
+  "scripts.actions_broken_wall.say_1": {
+    "src_hash": "ae1744b1c6c5a1fb93014eb6a44da7dd",
+    "text": "Hai già completato questa missione, vai a parlare con Rottin Wood per altre missioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:41.353361Z"
+  },
+  "scripts.actions_broken_wall.say_2": {
+    "src_hash": "777e6639f5bad53b605685cf75d155a3",
+    "text": "Eccoci qua.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:41.353652Z"
+  },
+  "scripts.actions_cagekey.msg_1": {
+    "src_hash": "e208d7eff95df4c1c09e8de5583feda8",
+    "text": "Hai trovato la chiave di una gabbia di legno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:41.353964Z"
+  },
+  "scripts.actions_caixa.msg_1": {
+    "src_hash": "b36f445efbda76f17aa66e520682ff27",
+    "text": "Hai trovato un frammento di incantesimo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:43.912621Z"
+  },
+  "scripts.actions_candles.msg_1": {
+    "src_hash": "e1406a759fdb378e87e4f58045e47bf0",
+    "text": "Leggendo la pergamena, identifichi tre candele di sego umane e le metti in tasca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:43.913029Z"
+  },
+  "scripts.actions_cape.msg_1": {
+    "src_hash": "77783e5d8f029ca4d843654bd990d5ea",
+    "text": "Adesso sembri un Negromante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:43.913314Z"
+  },
+  "scripts.actions_ceirons_waterskin.say_1": {
+    "src_hash": "bf7cf0cb34d72d1029f8063ace09675f",
+    "text": "Hai raccolto con successo uno speciale campione d'acqua dalla grotta dell'Idra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:43.913686Z"
+  },
+  "scripts.actions_chalk.msg_1": {
+    "src_hash": "4833eccd338f830c492a702e61858110",
+    "text": "Metti un po' di gesso fine in un secchio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:43.914003Z"
+  },
+  "scripts.actions_chargedcompass.say_1": {
+    "src_hash": "ed7e52e074aa254699d3480a0da8bc80",
+    "text": "L'energia viene trasferita alla pietra runica. Adesso brilla!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:49.362169Z"
+  },
+  "scripts.actions_charges_lever.msg_1": {
+    "src_hash": "6365d6a5a98f5bb6921c44544b7e5031",
+    "text": "C'è qualcuno in zona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:49.362488Z"
+  },
+  "scripts.actions_charges_lever.say_1": {
+    "src_hash": "d63f5d303302207a1a85ebb8642dd307",
+    "text": "Uno spostamento nella polarità sposta le creature con polarità corrispondente in un'altra fase dell'esistenza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:49.362971Z"
+  },
+  "scripts.actions_charm.say_1": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Contrassegni un obelisco con l'incantesimo del gelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:49.363292Z"
+  },
+  "scripts.actions_charm.say_2": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Contrassegni un obelisco con l'incantesimo del gelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:49.363602Z"
+  },
+  "scripts.actions_charm.say_3": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Contrassegni un obelisco con l'incantesimo del gelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:54.075706Z"
+  },
+  "scripts.actions_charm.say_4": {
+    "src_hash": "fecbd4c02a523d1402a791dc2ec89d20",
+    "text": "Contrassegni un obelisco con l'incantesimo del gelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:54.076038Z"
+  },
+  "scripts.actions_cheesy_key.msg_1": {
+    "src_hash": "94649257c1140e8190685dc8b01dbe01",
+    "text": "Hai già il famiglio {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:54.076339Z"
+  },
+  "scripts.actions_cheesy_key.msg_2": {
+    "src_hash": "08a9702ff66c06d4f2672dd3f7416115",
+    "text": "Hai ottenuto il famiglio {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:39:54.076620Z"
+  },
+  "scripts.actions_climbing_vine.msg_1": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Non puoi entrare in una zona di protezione dopo aver attaccato un altro giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:00.288599Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_1": {
+    "src_hash": "2f31106b5eb658000748f2c30b5dbfef",
+    "text": "Usatelo a terra per posizionare la trappola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:00.288955Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_2": {
+    "src_hash": "5a03b5cd75188820f73bb98f72d4ad8d",
+    "text": "Puoi usarlo nella stanza di Feroxa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:00.289483Z"
+  },
+  "scripts.actions_closed_silvered_trap.msg_3": {
+    "src_hash": "aac52a110badf04741cf3afd1d3bf999",
+    "text": "La trappola argentata è stata posizionata e non può essere rimossa dalla sua posizione attuale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:00.290029Z"
+  },
+  "scripts.actions_color_levers.msg_1": {
+    "src_hash": "ab2d9b844dd176ba8e117e14246f7334",
+    "text": "Scegli il colore della decomposizione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:05.009304Z"
+  },
+  "scripts.actions_color_levers.msg_2": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:05.009594Z"
+  },
+  "scripts.actions_color_levers.msg_3": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:05.009867Z"
+  },
+  "scripts.actions_color_levers.msg_4": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:05.010203Z"
+  },
+  "scripts.actions_color_levers.msg_5": {
+    "src_hash": "5ef1135691023b2b478b79e79834c70a",
+    "text": "Seleziona il colore corretto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:05.010481Z"
+  },
+  "scripts.actions_coral.msg_1": {
+    "src_hash": "2de579dd6639dda863ec92013dd291d1",
+    "text": "All'improvviso una guardia ti salta addosso da dietro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:09.445329Z"
+  },
+  "scripts.actions_corpse.msg_1": {
+    "src_hash": "c5a164cb607ac32cea2ea759c496812e",
+    "text": "Quandon è stato assassinato! Dovresti riferirlo a Sholley!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:40:09.445716Z"
   }
 }

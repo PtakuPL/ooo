@@ -26974,5 +26974,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:08:34.327278Z"
+  },
+  "otclient_modules.cooldown_otui.tr_8": {
+    "src_hash": "80dd330a5c08653498c49a219a124543",
+    "text": "Vindecare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.613461Z"
+  },
+  "otclient_modules.imbuing.tr_3": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.661919Z"
+  },
+  "otclient_modules.imbuing.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.662391Z"
+  },
+  "otclient_modules.imbuing.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.662578Z"
+  },
+  "otclient_modules.imbuing_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.663098Z"
+  },
+  "otclient_modules.items.tr_26": {
+    "src_hash": "9768feb3fdb1f267b06093bc572952dd",
+    "text": "Aur",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.667327Z"
+  },
+  "otclient_modules.items_otui.tr_22": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.669018Z"
+  },
+  "otclient_modules.key_edit_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.669746Z"
+  },
+  "otclient_modules.key_edit_otui.tr_3": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.669957Z"
+  },
+  "otclient_modules.mainpanel.tr_2": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.672289Z"
+  },
+  "otclient_modules.mainpanel.tr_5": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.672719Z"
+  },
+  "otclient_modules.mainpanel.tr_7": {
+    "src_hash": "3c1aac82863ed9e5a9aca8ce687f711d",
+    "text": "Interfață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.673041Z"
+  },
+  "otclient_modules.market.tr_16": {
+    "src_hash": "e07e81c20cf5935f5225765f0af81755",
+    "text": "Aur",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.674170Z"
+  },
+  "otclient_modules.market.tr_20": {
+    "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+    "text": "Vinde",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.674608Z"
+  },
+  "otclient_modules.market.tr_21": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.674799Z"
+  },
+  "otclient_modules.market_otui.tr_4": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.675583Z"
+  },
+  "otclient_modules.market_otui.tr_6": {
+    "src_hash": "31840a66a8d6d223e5b0540138768838",
+    "text": "Piață",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.676185Z"
+  },
+  "otclient_modules.npctrade.tr_1": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.677263Z"
+  },
+  "otclient_modules.npctrade_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.677664Z"
+  },
+  "otclient_modules.npctrade_otui.tr_13": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.678111Z"
+  },
+  "otclient_modules.npctrade_otui.tr_14": {
+    "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+    "text": "Vinde",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.678307Z"
+  },
+  "otclient_modules.npctrade_otui.tr_16": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.678585Z"
+  },
+  "otclient_modules.npctrade_otui.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Cumpără",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.678968Z"
+  },
+  "otclient_modules.options_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.681213Z"
+  },
+  "otclient_modules.outfit.tr_4": {
+    "src_hash": "562bb1ed6e80264fc03652e88b1f9a54",
+    "text": "Tinuta - Implicit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.681826Z"
+  },
+  "otclient_modules.pickreward_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.682497Z"
+  },
+  "otclient_modules.pickreward_otui.tr_2": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.682723Z"
+  },
+  "otclient_modules.player.tr_10": {
+    "src_hash": "5f772cb1090f3e6d451d52926b1ae6c7",
+    "text": "Fără vocație",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.683288Z"
+  },
+  "otclient_modules.preset_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.685485Z"
+  },
+  "otclient_modules.preset_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.685673Z"
+  },
+  "otclient_modules.prey.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.686679Z"
+  },
+  "otclient_modules.prey.tr_7": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.687427Z"
+  },
+  "otclient_modules.prey_otui.tr_5": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.688082Z"
+  },
+  "otclient_modules.prey_otui.tr_7": {
+    "src_hash": "673722e49f6904cea7636bb8e1a03eae",
+    "text": "Monede de aur",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.688388Z"
+  },
+  "otclient_modules.quickloot.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.688877Z"
+  },
+  "otclient_modules.quickloot.tr_4": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.689255Z"
+  },
+  "otclient_modules.quickloot_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Închide",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.689562Z"
+  },
+  "otclient_modules.ruleviolation.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.691204Z"
+  },
+  "otclient_modules.ruleviolation.tr_4": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.692298Z"
+  },
+  "otclient_modules.ruleviolation.tr_6": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.692663Z"
+  },
+  "otclient_modules.ruleviolation.tr_8": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Eroare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.692916Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.693243Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.693480Z"
+  },
+  "otclient_modules.ruleviolation_otui.tr_8": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nume",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.693982Z"
+  },
+  "otclient_modules.serverlist.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Nu",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.694211Z"
+  },
+  "otclient_modules.serverlist.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Da",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.694529Z"
+  },
+  "otclient_modules.serverlist_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.694756Z"
+  },
+  "otclient_modules.skills_otui.tr_12": {
+    "src_hash": "80dd330a5c08653498c49a219a124543",
+    "text": "Vindecare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.696982Z"
+  },
+  "otclient_modules.skills_otui.tr_15": {
+    "src_hash": "583d6a9fe10d672474e2cdca476113b7",
+    "text": "Ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.697283Z"
+  },
+  "otclient_modules.skills_otui.tr_17": {
+    "src_hash": "5cdd21c97f86686cc505e02fd32a7523",
+    "text": "Pământ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:09:51.697673Z"
   }
 }

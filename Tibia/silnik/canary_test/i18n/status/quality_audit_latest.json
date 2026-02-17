@@ -1,214 +1,18 @@
 {
-  "timestamp": "2026-02-17T01:09:31.088949Z",
+  "timestamp": "2026-02-17T01:10:01.661408Z",
   "checked_entries": 100,
-  "issues_found": 37,
+  "issues_found": 28,
   "issues_by_type": {
-    "identical_to_en": 32,
-    "identical_to_en_exempt": 16,
+    "identical_to_en": 23,
+    "identical_to_en_exempt": 8,
     "artifact_token": 5,
-    "suspicious_log_low": 72,
-    "suspicious_log_high": 114,
-    "suspicious_log_critical": 14,
+    "suspicious_log_high": 126,
+    "suspicious_log_critical": 21,
+    "suspicious_log_low": 53,
     "suspicious_rejected_critical": 175,
     "suspicious_rejected_high": 25
   },
   "issues": [
-    {
-      "key": "raid.lizards.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Lizards",
-      "translated": "Lizards"
-    },
-    {
-      "key": "raid.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.sheng.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
-    },
-    {
-      "key": "raid.munster.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "raid.nomad.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "raid.cobra.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
-    },
-    {
-      "key": "raid.terramite.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
-    },
-    {
-      "key": "raid.lizards.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Lizards",
-      "translated": "Lizards"
-    },
-    {
-      "key": "raid.cyclops.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.sheng.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
-    },
-    {
-      "key": "raid.munster.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "raid.teleskor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Teleskor",
-      "translated": "Teleskor"
-    },
-    {
-      "key": "raid.furyosa.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
-    },
-    {
-      "key": "raid.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "raid.omrafir.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Omrafir",
-      "translated": "Omrafir"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.yeti.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
     {
       "key": "raid.nomad.name",
       "lang": "it",
@@ -271,6 +75,139 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_15",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Ice",
+      "translated": "Ice"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.furyosa.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.furyosa.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.fernfang.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.fernfang.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
     }
   ],
   "threshold": 10,

@@ -46806,5 +46806,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:01:21.111067Z"
+  },
+  "questlog.quest_11.mission_29.state_2": {
+    "src_hash": "e437fa2803dad3215d5fa3322986077c",
+    "text": "Ați vânat cu succes 600 de cară subacvatică.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:04:58.932999Z"
+  },
+  "questlog.quest_11.mission_3.description": {
+    "src_hash": "b74577e5cf39753b737f0db99f85e5cb",
+    "text": "Ai fost promovat la rangul de 'Ranger' în '__PH0__'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:04:58.933669Z"
+  },
+  "questlog.quest_11.mission_30.state_1": {
+    "src_hash": "5cd4f2d09151f4b2c136415dde27ea98",
+    "text": "Ai vânat cu succes 500 de păianjeni giganți. Dacă doriți, puteți finaliza această sarcină din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:01.916692Z"
   }
 }

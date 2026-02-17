@@ -1,104 +1,128 @@
 {
-  "timestamp": "2026-02-17T06:04:15.559759Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 16,
+  "timestamp": "2026-02-17T06:06:01.807503Z",
+  "language": "ru",
+  "json_file": "cpp.json",
+  "translated": 46,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
-      "source": "tm"
+      "key": "cpp.game.offline_training_choice_club",
+      "en": "Club Fighting and Shielding",
+      "translated": "Клубные бои и защита",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "tm"
+      "key": "cpp.game.offline_training_choice_distance",
+      "en": "Distance Fighting and Shielding",
+      "translated": "Дистанционный бой и защита",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "tm"
+      "key": "cpp.game.offline_training_choice_magic",
+      "en": "Magic Level and Shielding",
+      "translated": "Магический уровень и защита",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "cpp.game.offline_training_choice_sword",
+      "en": "Sword Fighting and Shielding",
+      "translated": "Бой на мечах и защита",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "cpp.game.offline_training_title",
+      "en": "Choose a Skill",
+      "translated": "Выберите навык",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.stdmod_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "cpp.game.only_looted_some_gold",
+      "en": "You only looted {0} of the dropped gold",
+      "translated": "Вы собрали только {0} из выпавшего золота.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "cpp.game.quick_loot_fail_gold",
+      "en": "You could not loot {0} gold.",
+      "translated": "Вы не могли добыть {0} золота.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "cpp.game.quick_loot_fail_one_item",
+      "en": "You could not loot 1 item.",
+      "translated": "Вы не смогли разграбить 1 предмет.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "cpp.game.quick_loot_success_gold",
+      "en": "You looted {0} gold.",
+      "translated": "Вы украли {0} золота.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "cpp.game.quick_loot_success_one_item",
+      "en": "You looted 1 item.",
+      "translated": "Вы украли 1 предмет.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "cpp.game.stash_withdraw_limit",
+      "en": "You can only withdraw up to {0} items at a time from the stash.",
+      "translated": "Вы можете за раз извлечь из тайника не более {0} предметов.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "cpp.game.still_muted",
+      "en": "You are still muted for {0} seconds.",
+      "translated": "Ваш звук по-прежнему отключен в течение {0} секунд.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "cpp.game.store_item_description",
+      "en": "You bought this item in the Store.\nUnwrap it in your own house to create a <{0}>.",
+      "translated": "Вы купили этот товар в Магазине.\nРазверните его у себя дома, чтобы создать <{0}>.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "cpp.game.trade_move_closer",
+      "en": "{0} tells you to move closer.",
+      "translated": "{0} говорит вам подойти ближе.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "cpp.game.trade_wants_to_trade",
+      "en": "{0} wants to trade with you.",
+      "translated": "{0} хочет торговать с вами.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "cpp.game.unwrap_house_description",
+      "en": "Unwrap this item in your own house to create a <{0}>.",
+      "translated": "Разверните этот предмет у себя дома, чтобы создать <{0}>.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.house.bought_success",
+      "en": "You have successfully bought the house.{0}",
+      "translated": "Вы успешно купили дом.{0}",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.house.door_owned",
+      "en": "It belongs to house '{0}'. {1} owns this house.",
+      "translated": "Он принадлежит дому '{0}'. {1} владеет этим домом.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.house.door_price",
+      "en": "It costs {0} gold coins.",
+      "translated": "Это стоит {0} золотых монет.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.house.door_rent",
+      "en": "The rent cost is {0} gold coins and it is billed {1}.",
+      "translated": "Стоимость аренды составляет {0} золотых монет, а счет выставляется в размере {1}.",
+      "source": "google_translate"
     }
   ]
 }

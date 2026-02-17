@@ -52598,5 +52598,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:03:38.025171Z"
+  },
+  "questlog.quest_11.mission_30.state_1": {
+    "src_hash": "5cd4f2d09151f4b2c136415dde27ea98",
+    "text": "Hai cacciato con successo 500 ragni giganti. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:25.213790Z"
+  },
+  "questlog.quest_11.mission_30.state_2": {
+    "src_hash": "c9f6a46c65fc1c150092aacac3d3f8fb",
+    "text": "Hai cacciato con successo 500 ragni giganti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:25.214232Z"
+  },
+  "questlog.quest_11.mission_31.name": {
+    "src_hash": "1326e41f6163742ebdb7800f75cf2aa9",
+    "text": "Paw and Fur: Werewolves",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:27.517685Z"
+  },
+  "questlog.quest_11.mission_31.state_1": {
+    "src_hash": "258a2566d164375635e7613ffbb99ca3",
+    "text": "Hai cacciato con successo 300 lupi mannari. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:27.518237Z"
   }
 }

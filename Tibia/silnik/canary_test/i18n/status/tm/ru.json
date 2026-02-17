@@ -32334,5 +32334,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:04:03.383742Z"
+  },
+  "cpp.skill.sword_fighting": {
+    "src_hash": "3fc8cf3adb95521626e837a7d963644a",
+    "text": "Мечевой бой",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:31.992621Z"
+  },
+  "cpp.game.looted_no_items": {
+    "src_hash": "32bd0616644fc4c41a7ff4a0a5fd555a",
+    "text": "Вы не разграбили ни один из выпавших предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:34.540424Z"
+  },
+  "cpp.game.looted_one_item": {
+    "src_hash": "bd52c95156499d90dafefefb379fe35f",
+    "text": "Вы украли 1 предмет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:34.540727Z"
+  },
+  "cpp.game.looted_some_items": {
+    "src_hash": "2989924dc60bced7b41b890a5f38b547",
+    "text": "Вы разграбили некоторые из выпавших предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:34.541149Z"
+  },
+  "cpp.game.objects_picked_up": {
+    "src_hash": "b30883c9272b9a85df8ccb4815aceecc",
+    "text": "Было обнаружено {0} из {1} объектов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:40.432057Z"
+  },
+  "cpp.game.offline_training_choice_axe": {
+    "src_hash": "cf090b79eb7b3b834d866d07fa271f74",
+    "text": "Топорный бой и защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:40.432369Z"
+  },
+  "cpp.game.offline_training_choice_club": {
+    "src_hash": "3b376040cf5d41f07a8522d21e0360a1",
+    "text": "Клубные бои и защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:40.432666Z"
+  },
+  "cpp.game.offline_training_choice_distance": {
+    "src_hash": "5dcaab134101076ad8ea2dc671245580",
+    "text": "Дистанционный бой и защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:45.942746Z"
+  },
+  "cpp.game.offline_training_choice_magic": {
+    "src_hash": "a50f50c0c6ef192a9e4bac1002fe097a",
+    "text": "Магический уровень и защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:45.943095Z"
+  },
+  "cpp.game.offline_training_choice_sword": {
+    "src_hash": "fa2acc7b985499b826ccf49a21ebdf1c",
+    "text": "Бой на мечах и защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:45.943406Z"
+  },
+  "cpp.game.offline_training_title": {
+    "src_hash": "85c31d17c1e8d2df63394b69e3f692f0",
+    "text": "Выберите навык",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:45.943650Z"
+  },
+  "cpp.game.only_looted_some_gold": {
+    "src_hash": "556449995dfe300811b71db490cacf81",
+    "text": "Вы собрали только {0} из выпавшего золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:45.944019Z"
+  },
+  "cpp.game.quick_loot_fail_gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Вы не могли добыть {0} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:52.175633Z"
+  },
+  "cpp.game.quick_loot_fail_one_item": {
+    "src_hash": "6ed1556263f607620b76f0ef863323fd",
+    "text": "Вы не смогли разграбить 1 предмет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:52.176012Z"
+  },
+  "cpp.game.quick_loot_success_gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Вы украли {0} золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:52.176312Z"
+  },
+  "cpp.game.quick_loot_success_one_item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Вы украли 1 предмет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:52.176592Z"
+  },
+  "cpp.game.stash_withdraw_limit": {
+    "src_hash": "9a01da13149e0a5035736e78737126ce",
+    "text": "Вы можете за раз извлечь из тайника не более {0} предметов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:52.177080Z"
+  },
+  "cpp.game.still_muted": {
+    "src_hash": "23960b78537433a98582efc006ce8d8e",
+    "text": "Ваш звук по-прежнему отключен в течение {0} секунд.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:56.890223Z"
+  },
+  "cpp.game.store_item_description": {
+    "src_hash": "6817218ba73defea9fdde91c6eef7e37",
+    "text": "Вы купили этот товар в Магазине.\nРазверните его у себя дома, чтобы создать <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:56.890743Z"
+  },
+  "cpp.game.trade_move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} говорит вам подойти ближе.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:56.891078Z"
+  },
+  "cpp.game.trade_wants_to_trade": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} хочет торговать с вами.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:56.891404Z"
+  },
+  "cpp.game.unwrap_house_description": {
+    "src_hash": "d7f7ba441c03c161e8341f1efa003292",
+    "text": "Разверните этот предмет у себя дома, чтобы создать <{0}>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:05:56.891818Z"
+  },
+  "cpp.house.bought_success": {
+    "src_hash": "98a9f116c9916d163d2d3af2213581c9",
+    "text": "Вы успешно купили дом.{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:01.749430Z"
+  },
+  "cpp.house.door_owned": {
+    "src_hash": "98e2375152aa622dad165cee2531ab37",
+    "text": "Он принадлежит дому '{0}'. {1} владеет этим домом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:01.749878Z"
+  },
+  "cpp.house.door_price": {
+    "src_hash": "5719af6fa7017f4e99737d843abac8f4",
+    "text": "Это стоит {0} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:01.750271Z"
+  },
+  "cpp.house.door_rent": {
+    "src_hash": "470cb72558b650d06eda7f93e496ec3b",
+    "text": "Стоимость аренды составляет {0} золотых монет, а счет выставляется в размере {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T06:06:01.750739Z"
   }
 }

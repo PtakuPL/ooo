@@ -3913,11 +3913,11 @@
   },
   "spell.sparks_chain.name": {
     "src_hash": "d888dfdccd2a5a20049590041605770f",
-    "text": "sparks chain",
+    "text": "łańcuch iskier",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:56:15.343900Z"
+    "updated_at": "2026-02-17T04:42:44.067538Z"
   },
   "spell.curse.name": {
     "src_hash": "738ca3cb200c27b4996ed320eee15705",
@@ -83689,27 +83689,27 @@
   },
   "spell.crystal_spider_paralyze_1.name": {
     "src_hash": "ce4f8708f2c6d7661a5bd76a3ba19c36",
-    "text": "crystal spider paralyze 1",
+    "text": "kryształowy pająk paraliżuje 1",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:53.353367Z"
+    "updated_at": "2026-02-17T04:42:22.260480Z"
   },
   "spell.morik_the_gladiator_summon.name": {
     "src_hash": "63796c1345f551d1841d3be97bea92e3",
-    "text": "morik the gladiator summon",
+    "text": "Morik, przywołanie gladiatora",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:53.353826Z"
+    "updated_at": "2026-02-17T04:42:44.067056Z"
   },
   "spell.orewalker_skill_reducer_1.name": {
     "src_hash": "12df6f43766d1adaa3bee5abdabd35cf",
-    "text": "orewalker skill reducer 1",
+    "text": "Reduktor umiejętności wędrowca rudy 1",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:53.354178Z"
+    "updated_at": "2026-02-17T04:42:44.068004Z"
   },
   "spell.abyssador_skill_reducer_1.name": {
     "src_hash": "9e9a4234c4bde5d881f3576f61b5c7c9",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:55:35.309648Z"
+    "updated_at": "2026-02-17T04:42:01.779537Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T03:55:35.310516Z"
+    "updated_at": "2026-02-17T04:42:01.780578Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -109454,5 +109454,213 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T04:36:33.320975Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Brak członków drużyny w zasięgu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:00.480115Z"
+  },
+  "spell.bullwark_summon.name": {
+    "src_hash": "6a60ba11f26f7766b36387430556f72e",
+    "text": "wezwanie do walki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:11.858683Z"
+  },
+  "spell.heat_of_summer.name": {
+    "src_hash": "6e9c68548adeb3df74d4777f798559ef",
+    "text": "upał lata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:11.858915Z"
+  },
+  "spell.banshee_paralyze.name": {
+    "src_hash": "0256b43b998d9c4c6c4e8174308c879b",
+    "text": "banshee paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:11.859201Z"
+  },
+  "spell.mamma_longlegs_paralyze.name": {
+    "src_hash": "42b5f71c4d719645c7227ae0a4015711",
+    "text": "długonogie mamusie paraliżują",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:22.259481Z"
+  },
+  "spell.lisa_summon.name": {
+    "src_hash": "17856ccfdfba8302f69bceafc6dda900",
+    "text": "wezwanie Lisy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:22.259699Z"
+  },
+  "spell.lethal_lissy_skill_reducer.name": {
+    "src_hash": "c1580f65fce8a6e852e3e0c489229397",
+    "text": "zabójczy reduktor umiejętności Lissy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:22.260789Z"
+  },
+  "spell.lisa_paralyze.name": {
+    "src_hash": "f72a8908dc945b21c39d1cffd09e62a5",
+    "text": "Lisa paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:30.049950Z"
+  },
+  "spell.corym_vanguard_wave.name": {
+    "src_hash": "615c13e9a497de1077122127f16fb60b",
+    "text": "fala awangardy Corym",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:30.050282Z"
+  },
+  "spell.thul_paralyze.name": {
+    "src_hash": "7853ed097b5f1c03bcd9a3d60683b4e4",
+    "text": "Thul paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:30.050667Z"
+  },
+  "spell.munster_summon.name": {
+    "src_hash": "1ca2af8dcec72539b29a9d6cbccaf7a2",
+    "text": "wezwanie Munstera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:30.050964Z"
+  },
+  "spell.doctor_perhaps_summon.name": {
+    "src_hash": "75dce245685b300f2901e40ac00dcf27",
+    "text": "lekarz może wezwać",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:30.051290Z"
+  },
+  "spell.magic_pillar_summon.name": {
+    "src_hash": "86762bf4fac2f39cbeb749437ead15a5",
+    "text": "przywołanie magicznego filaru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:37.140420Z"
+  },
+  "spell.wiggler_paralyze.name": {
+    "src_hash": "7488e5db84d3fa3313c127d54a8540bb",
+    "text": "paraliż wigglera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:37.140883Z"
+  },
+  "spell.large_energy_ring.name": {
+    "src_hash": "a8d7476f4f18c589b53f54661754eace",
+    "text": "duży pierścień energetyczny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:37.141327Z"
+  },
+  "spell.large_energy_ring.words": {
+    "src_hash": "da9ad40bc3aabbabeb308b3ec4c80b78",
+    "text": "###duży_pierścień_energii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:37.141797Z"
+  },
+  "spell.terofar_heal.name": {
+    "src_hash": "c6d17ec8e08d0ad9aefeb7e434ef04e0",
+    "text": "Terofar leczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:37.142594Z"
+  },
+  "spell.white_pale_paralyze.name": {
+    "src_hash": "2a378be7857521b74d988a2b55d53340",
+    "text": "biały blady paraliż",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:44.066533Z"
+  },
+  "spell.dragonling_paralyze.name": {
+    "src_hash": "da334620b4a2119ddffaf7a70d2ba40c",
+    "text": "paraliż smoka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:44.067323Z"
+  },
+  "spell.razzagorn_summon.name": {
+    "src_hash": "43ea8fd78b585025111c74291c341145",
+    "text": "wezwanie razzagorna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:51.153671Z"
+  },
+  "spell.webster_paralyze.name": {
+    "src_hash": "2395c4f2333987f08a730f04759698cc",
+    "text": "paraliż Webstera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:51.153943Z"
+  },
+  "spell.stone_devourer_paralyze.name": {
+    "src_hash": "13375b5a1032ce83aeabe827567eb191",
+    "text": "pożeracz kamieni paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:51.154255Z"
+  },
+  "spell.remorseless_wave.name": {
+    "src_hash": "c76d7aa2e279c6515cff3d141d5205bc",
+    "text": "Bezlitosna fala",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:51.154477Z"
+  },
+  "spell.flamecaller_zazrak_summon.name": {
+    "src_hash": "191f6b283771a2abe74efba21ebec773",
+    "text": "Przywołanie zazraka wzywającego płomienie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:51.155047Z"
+  },
+  "spell.arachir_the_ancient_one_summon.name": {
+    "src_hash": "443fd1d88528c7a3d016e3e7db10308e",
+    "text": "Przywołanie Arachira Starożytnego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:54.259048Z"
+  },
+  "spell.bibby_bloodbath_paralyze.name": {
+    "src_hash": "b350f2ca312a7c485f85018371abab6e",
+    "text": "Bibby krwawa łaźnia paraliżuje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:42:54.259511Z"
   }
 }

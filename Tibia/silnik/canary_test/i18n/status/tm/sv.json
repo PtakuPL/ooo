@@ -23502,5 +23502,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:32:25.603900Z"
+  },
+  "npc.carlos.farewell_msg_1": {
+    "src_hash": "fe8bd25553d214db746585b95ed951c0",
+    "text": "Hejdå |PLAYERNAME|!.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.980300Z"
+  },
+  "npc.carlos.greet_msg_1": {
+    "src_hash": "05a5c1002ce95a1bde590459ed3aa2b9",
+    "text": "Var hälsad, |PLAYERNAME|! Som skräddare och handlare måste jag säga - vi måste göra något åt ​​din {outfit}, eller hur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.981093Z"
+  },
+  "npc.carlos.greet_msg_2": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Hej, jag trodde att du skulle fly, men som tur var kom du tillbaka. Jag ska visa dig hur du ändrar din {outfit}, okej?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.982110Z"
+  },
+  "npc.carlos.greet_msg_3": {
+    "src_hash": "f98802d766209a9cc89953b431e09fa3",
+    "text": "Välkommen tillbaka! Du vet, efter att ha tillhandahållit min lilla outfitservice, vill jag be dig om en liten tjänst. Kan du {help} mig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.982794Z"
+  },
+  "npc.carlos.greet_msg_4": {
+    "src_hash": "e6084bbea0ff0bc4c2373fba3e197ec2",
+    "text": "Åh hej |PLAYERNAME|, du har inte svarat på min fråga ännu - kan du hjälpa mig att få lite {food}? Jag ska till och med ge dig lite guld för det.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.983513Z"
+  },
+  "npc.carlos.sendtrade_msg_1": {
+    "src_hash": "e4f61d081116f4ed5def9cd059b7a2db",
+    "text": "Mycket trevligt! Mat till mig! Sälj den till mig, snabbt! När du sålt din mat till mig, säg bara {ready} för att meddela mig att du är klar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.987868Z"
+  },
+  "npc.carlos.walkaway_msg_1": {
+    "src_hash": "fa803dcd4286a1cfa0ba0dfa80ecf665",
+    "text": "Hej då resenären och njut av din vistelse på Rookgaard.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:26.988616Z"
+  },
+  "npc.a_majestic_warwolf.say_1": {
+    "src_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
+    "text": "GRRRRRRRRRRRRR",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:29.132687Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "Jag kan se i dina ögon att du är en ärlig och vänlig person, |PLAYERNAME|. Du var tålmodig nog att lära dig vårt språk och jag kommer att ge dig en speciell gåva. Kommer du att acceptera det?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:36.313233Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "Från och med nu kommer du att bli känd som |PLAYERNAME|, vargflickan. Du ska vara snabb och smart som Morgrar, den stora vita vargen. Han ska vägleda din väg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:36.313971Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "Från och med nu kommer du att bli känd som |PLAYERNAME|, björnkrigaren. Du ska vara stark och stolt som Angros, den stora mörka björnen. Han ska vägleda din väg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:36.314779Z"
+  },
+  "npc.a_prisoner.say_1": {
+    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "text": "Stor gåta, eller hur? Om du kan ge mig rätt svar, \\z ska jag ge dig något. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:36.315306Z"
+  },
+  "npc.a_prisoner.say_10": {
+    "src_hash": "47bc194e64dd30781fd50c51644e8b18",
+    "text": "Stor gåta, eller hur? Om du kan ge mig rätt svar, ska jag ge dig något. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:36.315808Z"
+  },
+  "npc.a_prisoner.say_11": {
+    "src_hash": "86b05ee12a2b0288b0178cd30e0137d1",
+    "text": "Mina surrealistiska siffror är baserade på häpnadsväckande fakta. Är du intresserad av att lära dig matematikens hemlighet?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:39.081333Z"
+  },
+  "npc.a_prisoner.say_12": {
+    "src_hash": "e9c7840af52dabe70fe6cdd2a222b32b",
+    "text": "Jag tror att du inte är i kontakt med dig själv, kom tillbaka om du har ställt in dina egna känslor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:39.081848Z"
+  },
+  "npc.a_prisoner.say_2": {
+    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "text": "Mina surrealistiska siffror är baserade på häpnadsväckande fakta. \\z Är du intresserad av att lära dig matematikens hemlighet?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:39.082448Z"
+  },
+  "npc.a_prisoner.say_3": {
+    "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
+    "text": "Skaffa lite mer äpplen först!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:39.082750Z"
+  },
+  "npc.a_prisoner.say_4": {
+    "src_hash": "4e2887c83421bff167ddfa1aa50e300f",
+    "text": "Verkligen, verkligen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:39.082968Z"
+  },
+  "npc.a_prisoner.say_5": {
+    "src_hash": "b0af262d4f710adfe2bb566735b3a655",
+    "text": "Verkligen, verkligen, verkligen, verkligen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:42.721131Z"
+  },
+  "npc.a_prisoner.say_6": {
+    "src_hash": "52b2c5109081a476251c1a3b2f5bd850",
+    "text": "Ta det då och bli glad – eller dö, hehe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:42.721511Z"
+  },
+  "npc.a_prisoner.say_7": {
+    "src_hash": "3ea1288522b9438035597ffc35114271",
+    "text": "Gå sedan iväg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:42.721812Z"
+  },
+  "npc.a_prisoner.say_8": {
+    "src_hash": "71d8c06c321e1233443f60f93a0ecad7",
+    "text": "Du känner redan till matematikens hemligheter! Gå nu och använd dem för att lära dig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:42.722292Z"
+  },
+  "npc.a_prisoner.say_9": {
+    "src_hash": "6a4d34e26971ff7d28374419885b5b34",
+    "text": "Men berätta först för mig din favoritfärg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:42.722921Z"
+  },
+  "npc.a_restless_soul.multi_1": {
+    "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
+    "text": "Jag blev tillfångatagen och torterad till döds av sekterna här. De dyrkar en varelse som de kallar Ghazbaran ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:46.411387Z"
+  },
+  "npc.a_restless_soul.multi_2": {
+    "src_hash": "7dc0f9270cd35b18938f8271d065463e",
+    "text": "I hans namn har de gjort anspråk på minorna och börjat smälta isen för att befria en armé av avskyvärda demoner som har varit frusna här i evigheter ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:46.412126Z"
+  },
+  "npc.a_restless_soul.multi_3": {
+    "src_hash": "315b9533341ab66433fdb84a63ece0c6",
+    "text": "Deras plan är att skapa en ny demonarmé för deras herre att erövra världen. Hjaern och de andra shamanerna måste lära sig om det! Skynda dig innan det är för sent.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:46.412794Z"
+  },
+  "npc.a_sleeping_dragon.multi_10": {
+    "src_hash": "453ecafa7dcd6d7d87059b98f4e05841",
+    "text": "Med ögonen täckta och undvikande av direkt syn på strålarna sätter du spegeln i stativet. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:46.413363Z"
+  },
+  "npc.a_sleeping_dragon.multi_11": {
+    "src_hash": "5a956e6ac76f84dcdc80c4d58d117682",
+    "text": "Instinktivt springer du till en större smaragdbluff nära höjningen för att hitta skydd. Bara sekunder efter att du gjort anspråk på det robusta skyddet börjar ett djupt mörkt brummande virvla genom luften. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:49.025695Z"
+  },
+  "npc.a_sleeping_dragon.multi_12": {
+    "src_hash": "f3784cdd21646d6b4c0ddd0b9a891a06",
+    "text": "Sekunder går när surret blir högre. Ljudet är irriterande och dränker alla andra ljud runt omkring dig. När du täcker för öronen av smärta exploderar brummandet i ett öronbedövande morrande. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:49.026477Z"
+  },
+  "npc.a_sleeping_dragon.multi_13": {
+    "src_hash": "a253f114923de282cccfb718ce2651da",
+    "text": "Du höjer huvudet ovanför kanten av smaragden för att få en glimt av vad som händer. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:49.027022Z"
+  },
+  "npc.a_sleeping_dragon.multi_14": {
+    "src_hash": "70f67a45c979e8dc3e56fc964a026220",
+    "text": "Handen verkar ha växt till en knytnäve. På avstånd kan du nu se ett suddigt schema av en varelse som är för stor för dina ögon för att få en skarpare bild av huvudet. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:49.027698Z"
+  },
+  "npc.a_sleeping_dragon.multi_15": {
+    "src_hash": "6a5a491a85f56f55adbd26786c63a7ce",
+    "text": "Genom att blanda strålarna riktar spegeln rent vitt ljus direkt mot den del där du antar varelsens ansikte. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:49.028229Z"
+  },
+  "npc.a_sleeping_dragon.multi_16": {
+    "src_hash": "cc21d713d013605296b8dcd0b284011a",
+    "text": "Morret förvandlas till ett skrik, allt runt omkring dig verkar komprimeras. När du trycker dig hårt mot bluffen tystnar allt och på en bråkdel av en sekund löses mörkret upp i skurar av svärta. Du vaknar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:51.161408Z"
+  },
+  "npc.a_sleeping_dragon.multi_17": {
+    "src_hash": "7573058a6400d2fbf46d662914656cf4",
+    "text": "Du gör ett utfall och kastar modellen långt ner i vattnet. Eftersom ingenting händer, vänder du ryggen till havet. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:51.161989Z"
+  },
+  "npc.a_sleeping_dragon.multi_18": {
+    "src_hash": "0d804d95a3a157aec49c516db3b9aff8",
+    "text": "I samma ögonblick som du går nerför dynen för att gå tillbaka söderut, sprider ljusstrålar över ditt huvud i en chockvåg som får dig att ramla nerför resten av backen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:41:51.162750Z"
   }
 }

@@ -1,6 +1,6 @@
 # Dopasowanie UI do wielojęzycznych tekstów — Analiza i Plan
 **Data**: 2026-02-17  
-**Status**: Analiza + Planowanie  
+**Status**: Implementacja (Faza 1 + Faza 3 — C++ + OTUI + Lua)  
 **Dotyczy**: OTClient Redemption — panel ustawień (Options) i system layoutu UI  
 
 ---

@@ -144,10 +144,14 @@ if (MSVC)
     # /d2SSAOptimizer- = disable SSA optimizer (main ICE trigger)
     # /Y-  = force-disable precompiled headers (SKIP_PRECOMPILE_HEADERS alone
     #         doesn't remove /Yu from the Ninja build rule on some CMake versions)
+    # -DOTML_NO_FMT = exclude fmt headers from PCH for OTML TUs (ICE trigger)
     set_source_files_properties(
-      framework/luaengine/luavaluecasts.cpp
       framework/otml/otmlparser.cpp
       framework/otml/otmlnode.cpp
+      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer- /Y- -DOTML_NO_FMT" SKIP_PRECOMPILE_HEADERS ON
+    )
+    set_source_files_properties(
+      framework/luaengine/luavaluecasts.cpp
       framework/luafunctions.cpp
       framework/ui/uiwidgetbasestyle.cpp
       PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer- /Y-" SKIP_PRECOMPILE_HEADERS ON

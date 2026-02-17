@@ -51,5 +51,14 @@ namespace stdext
     }
 
     /// Returns the name of a type
-    template<typename T> std::string demangle_type() { return demangle_name(typeid(T).name()); }
+    template<typename T> std::string demangle_type()
+    {
+#ifdef _MSC_VER
+        // MSVC ICE workaround: demangle_type<T>() in template header
+        // can crash P2 codegen when heavily instantiated. Use plain fallback.
+        return "(type info unavailable on MSVC)";
+#else
+        return demangle_name(typeid(T).name());
+#endif
+    }
 }

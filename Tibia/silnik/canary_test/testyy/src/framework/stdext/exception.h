@@ -25,7 +25,9 @@
 #include <exception>
 #include <string>
 
+#ifndef OTML_NO_FMT
 #include <fmt/format.h>
+#endif
 
 namespace stdext
 {
@@ -36,8 +38,10 @@ namespace stdext
 
         exception(const std::string_view what) : m_what(std::string(what)) {}
 
+#ifndef OTML_NO_FMT
         template<typename... Args>
         exception(fmt::format_string<Args...> fmtStr, Args&&... args) : m_what(fmt::format(fmtStr, std::forward<Args>(args)...)) {}
+#endif
 
         ~exception() noexcept override = default;
         const char* what() const noexcept override { return m_what.data(); }

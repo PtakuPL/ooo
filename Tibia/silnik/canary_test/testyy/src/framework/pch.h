@@ -54,6 +54,10 @@
 #include <pugixml.hpp>
 
 // FMT
+// OTML_NO_FMT: MSVC ICE C1001 workaround — fmt template processing in
+// otmlnode.cpp / otmlparser.cpp crashes P2 codegen even with /Od.
+// These two TUs are compiled with -DOTML_NO_FMT to exclude fmt entirely.
+#ifndef OTML_NO_FMT
 #include <fmt/chrono.h>
 #include <fmt/core.h>
 #include <fmt/format.h>
@@ -66,5 +70,6 @@ std::enable_if_t<std::is_enum_v<E>, std::underlying_type_t<E>>
 format_as(E e) {
     return static_cast<std::underlying_type_t<E>>(e);
 }
+#endif // OTML_NO_FMT
 
 using namespace std::literals;

@@ -20,9 +20,14 @@
  * THE SOFTWARE.
  */
 
-#include "otmlparser.h"
 #include "otmldocument.h"
-#include "otmlexception.h"
+#include "otmlparser.h"
+
+// Workaround: MSVC cl.exe ICE (C1001) when optimizing this TU.
+// Disable optimization entirely for this file under MSVC.
+#ifdef _MSC_VER
+#pragma optimize("", off)
+#endif
 
 OTMLParser::OTMLParser(const OTMLDocumentPtr& doc, std::istream& in) :
     currentDepth(0), currentLine(0),
@@ -189,7 +194,7 @@ void OTMLParser::parseNode(const std::string_view data)
 
     node->setUnique(dotsPos != std::string::npos);
     node->setTag(tag);
-    node->setSource(doc->source() + ":" + stdext::unsafe_cast<std::string>(nodeLine));
+    node->setSource(doc->source() + ":" + std::to_string(nodeLine));
 
     // ~ is considered the null value
     if (value == "~")
@@ -210,3 +215,7 @@ void OTMLParser::parseNode(const std::string_view data)
     parentMap[node] = currentParent;
     previousNode = node;
 }
+
+#ifdef _MSC_VER
+#pragma optimize("", on)
+#endif

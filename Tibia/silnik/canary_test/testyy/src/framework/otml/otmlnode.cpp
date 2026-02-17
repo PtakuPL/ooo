@@ -23,6 +23,21 @@
 #include "otmlnode.h"
 
 #include "otmlemitter.h"
+#include <algorithm>
+
+// Workaround: MSVC cl.exe ICE (C1001) when optimizing this TU.
+// Disable optimization entirely for this file under MSVC.
+#ifdef _MSC_VER
+#pragma optimize("", off)
+#endif
+
+// Workaround: MSVC ICE C1001 — throwing OTMLException inside a template
+// header crashes P2 codegen when fmt is loaded via PCH.  This non-template
+// [[noreturn]] function is called from OTMLNode::value<T>() instead.
+void throwOTMLNodeCastError(const OTMLNodePtr& node, const std::string& value)
+{
+    throw OTMLException(node, std::string("failed to cast node value '") + value + "'");
+}
 
 OTMLNodePtr OTMLNode::create(const std::string_view tag, const bool unique)
 {
@@ -73,13 +88,13 @@ OTMLNodePtr OTMLNode::at(const std::string_view childTag)
         }
     }
 
-    throw OTMLException(asOTMLNode(), fmt::format("child node with tag '{}' not found", childTag));
+    throw OTMLException(asOTMLNode(), std::string("child node with tag '") + std::string(childTag) + "' not found");
 }
 
 OTMLNodePtr OTMLNode::atIndex(const int childIndex)
 {
     if (childIndex >= size() || childIndex < 0)
-        throw OTMLException(asOTMLNode(), fmt::format("child node with index '{}' not found", childIndex));
+        throw OTMLException(asOTMLNode(), std::string("child node with index '") + std::to_string(childIndex) + "' not found");
     return m_children[childIndex];
 }
 
@@ -118,7 +133,7 @@ void OTMLNode::addChild(const OTMLNodePtr& newChild)
 
 bool OTMLNode::removeChild(const OTMLNodePtr& oldChild)
 {
-    const auto it = std::ranges::find(m_children, oldChild);
+    const auto it = std::find(m_children.begin(), m_children.end(), oldChild);
     if (it == m_children.end())
         return false;
 
@@ -128,7 +143,7 @@ bool OTMLNode::removeChild(const OTMLNodePtr& oldChild)
 
 bool OTMLNode::replaceChild(const OTMLNodePtr& oldChild, const OTMLNodePtr& newChild)
 {
-    auto it = std::ranges::find(m_children, oldChild);
+    auto it = std::find(m_children.begin(), m_children.end(), oldChild);
     if (it != m_children.end()) {
         it = m_children.erase(it);
         m_children.insert(it, newChild);
@@ -188,3 +203,7 @@ std::string OTMLNode::emit()
 {
     return OTMLEmitter::emitNode(asOTMLNode(), 0);
 }
+
+#ifdef _MSC_VER
+#pragma optimize("", on)
+#endif

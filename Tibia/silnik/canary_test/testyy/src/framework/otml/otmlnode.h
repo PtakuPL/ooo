@@ -33,7 +33,7 @@ public:
     static OTMLNodePtr create(std::string_view tag, std::string_view value);
 
     std::string tag() { return m_tag; }
-    int size() const { return m_children.size(); }
+    size_t size() const { return m_children.size(); }
     std::string source() { return m_source; }
     std::string rawValue() { return m_value; }
 
@@ -101,6 +101,12 @@ protected:
 
 #include "otmlexception.h"
 
+// Workaround: MSVC ICE C1001 — throw inside a template header
+// crashes P2 codegen when fmt headers are loaded via PCH in 22+ TUs.
+// Extract the throw into a non-template [[noreturn]] function defined
+// in otmlnode.cpp (which has #pragma optimize off).
+[[noreturn]] void throwOTMLNodeCastError(const OTMLNodePtr& node, const std::string& value);
+
 template<>
 inline std::string OTMLNode::value<std::string>()
 {
@@ -120,12 +126,12 @@ template<typename T>
 T OTMLNode::value()
 {
     T ret;
-    if (!stdext::cast(m_value, ret))
-#ifdef _MSC_VER
-        throw OTMLException(asOTMLNode(), fmt::format("failed to cast node value '{}'", m_value));
-#else
-        throw OTMLException(asOTMLNode(), fmt::format("failed to cast node value '{}' to type '{}'", m_value, stdext::demangle_type<T>()));
-#endif
+    if (!stdext::cast(m_value, ret)) {
+        // Call non-template [[noreturn]] function instead of throwing inline.
+        // Inline throw of OTMLException in a template header crashes MSVC P2
+        // codegen (ICE C1001) when fmt headers are loaded via PCH.
+        throwOTMLNodeCastError(asOTMLNode(), m_value);
+    }
     return ret;
 }
 

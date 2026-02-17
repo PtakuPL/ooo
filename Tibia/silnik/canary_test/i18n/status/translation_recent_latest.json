@@ -1,20 +1,128 @@
 {
-  "timestamp": "2026-02-17T07:20:50.688735Z",
-  "language": "ro",
-  "json_file": "creaturescripts.json",
-  "translated": 2,
+  "timestamp": "2026-02-17T07:28:29.712116Z",
+  "language": "pl",
+  "json_file": "monsters.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "creaturescripts.boss_defeated",
-      "en": "The {name} has been defeated. You have {seconds} seconds to leave the room.",
-      "translated": "{name} a fost învins. Aveți la dispoziție {seconds} secunde pentru a părăsi camera.",
-      "source": "google_translate"
+      "key": "monster.feroxa2.desc",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
     },
     {
-      "key": "creaturescripts.empty_parcels_removed",
-      "en": "{count} empty parcels were removed from your store inbox!",
-      "translated": "{count} pachetele goale au fost eliminate din căsuța de e-mail a magazinului dvs.!",
-      "source": "google_translate"
+      "key": "monster.feroxa4.name",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "monster.feroxa4.desc",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "monster.feroxa3.name",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "monster.feroxa3.desc",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "monster.feroxa5.name",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "monster.feroxa5.desc",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "monster.jaul.voice_2",
+      "en": "QJELL AFAR GOU JEY!!",
+      "translated": "QJELL DALEKO GOU JEY!!",
+      "source": "tm"
+    },
+    {
+      "key": "monster.minishabaal.voice_5",
+      "en": "He He He",
+      "translated": "On On On",
+      "source": "tm"
+    },
+    {
+      "key": "monster.iks_yapunac.desc",
+      "en": "an iks yapunac",
+      "translated": "iks yapunac",
+      "source": "tm"
+    },
+    {
+      "key": "monster.iks_pututu.desc",
+      "en": "an iks pututu",
+      "translated": "iks pututu",
+      "source": "tm"
+    },
+    {
+      "key": "monster.iks_ahpututu.desc",
+      "en": "an iks ahpututu",
+      "translated": "iks ahpututu",
+      "source": "tm"
+    },
+    {
+      "key": "monster.undead_cavebear.name",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear",
+      "source": "tm"
+    },
+    {
+      "key": "monster.iks_chuka.desc",
+      "en": "an iks chuka",
+      "translated": "iks chuka",
+      "source": "tm"
+    },
+    {
+      "key": "monster.iks_churrascan.desc",
+      "en": "an iks churrascan",
+      "translated": "iks churrascan",
+      "source": "tm"
+    },
+    {
+      "key": "monster.iks_aucar.desc",
+      "en": "an iks aucar",
+      "translated": "iks aucar",
+      "source": "tm"
+    },
+    {
+      "key": "monster.ocyakao.name",
+      "en": "Ocyakao",
+      "translated": "Ocyakao",
+      "source": "tm"
+    },
+    {
+      "key": "monster.ocyakao.desc",
+      "en": "Ocyakao",
+      "translated": "Ocyakao",
+      "source": "tm"
+    },
+    {
+      "key": "monster.necropharus.name",
+      "en": "Necropharus",
+      "translated": "Necropharus",
+      "source": "tm"
+    },
+    {
+      "key": "monster.necropharus.desc",
+      "en": "Necropharus",
+      "translated": "Necropharus",
+      "source": "tm"
     }
   ]
 }

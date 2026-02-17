@@ -149966,5 +149966,269 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:19:03.271973Z"
+  },
+  "npc.zarifan.greet_msg_1": {
+    "src_hash": "29202e33b375df84ccfd8396a31d455f",
+    "text": "... ... hola... ¿palabras... mágicas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.588634Z"
+  },
+  "npc.zebron.farewell_msg_1": {
+    "src_hash": "dced6b4b1b8ca7f076740b3bc93fe03b",
+    "text": "Oye, no puedes irte, |PLAYERNAME|. La suerte te sonríe. ¡Puedo sentirlo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.595649Z"
+  },
+  "npc.zebron.greet_msg_1": {
+    "src_hash": "6de3312159afbdc5b5c3e006e717450a",
+    "text": "Saludos, gran apostador. ¿Entonces te interesa un juego, |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.597117Z"
+  },
+  "npc.zebron.walkaway_msg_1": {
+    "src_hash": "e938dc0175d365253197d0821387fe51",
+    "text": "Oye, no puedes irte. La suerte te sonríe. ¡Puedo sentirlo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.603414Z"
+  },
+  "npc.zerbrus.farewell_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.621277Z"
+  },
+  "npc.zerbrus.stdmod_14": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Bien.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.626385Z"
+  },
+  "npc.zerbrus.stdmod_30": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "¡VELA AL REY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.638765Z"
+  },
+  "npc.zerbrus.stdmod_8": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.660979Z"
+  },
+  "npc.zirella.greet_msg_1": {
+    "src_hash": "44e36dd68bf2c76ae37bcf375d5dd848",
+    "text": "¡Oh, el cielo debe haberte enviado! ¿Podrías ayudarme con un {quest}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.668022Z"
+  },
+  "npc.zirella.greet_msg_2": {
+    "src_hash": "3ccfde39c89042fe7d05b312b920b9a3",
+    "text": "Bienvenido de nuevo, cariño... en cuanto a esa leña, ¿podrías por favor {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.669275Z"
+  },
+  "npc.zirella.greet_msg_3": {
+    "src_hash": "6aeaf18467c274a21b06458ca04acf80",
+    "text": "Bienvenido de nuevo, cariño... entonces, sobre el {dead trees}, déjame explicarte un poco más, ¿{yes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.670596Z"
+  },
+  "npc.zirella.greet_msg_4": {
+    "src_hash": "05e494f4e3cc6cb2da8dfb08891a7610",
+    "text": "Bienvenido de nuevo, cariño... entonces, sobre el {branches}, déjame explicarte un poco más, ¿{yes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.671935Z"
+  },
+  "npc.zirella.greet_msg_5": {
+    "src_hash": "3bdfafcc363f0c8c48f34beb88578559",
+    "text": "Bienvenido de nuevo, cariño... entonces, sobre el {pushing}, déjame explicarte un poco más, ¿{yes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.673567Z"
+  },
+  "npc.zirella.greet_msg_6": {
+    "src_hash": "7d6a4c0ba3c251604bd9f0613d5954e7",
+    "text": "Bienvenido de nuevo, cariño... entonces, sobre el {cart}, déjame explicarte un poco más, ¿{yes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.675141Z"
+  },
+  "npc.zirella.greet_msg_7": {
+    "src_hash": "469c65c9fe47d49850f841d142b7485d",
+    "text": "Oh, cariño, ¿hay algún problema con la misión? ¿Debería {explain} volver a hacerlo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.678355Z"
+  },
+  "npc.zirella.greet_msg_8": {
+    "src_hash": "3eb9996b29bc16c26903d4ef8e2906e8",
+    "text": "¡Bien, gracias cariño! Esto será suficiente para calentar mi horno. Ah, y probablemente estés esperando tu recompensa, ¿{yes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.679960Z"
+  },
+  "npc.zirella.greet_msg_9": {
+    "src_hash": "851e7c81240b849bc5e550b1fa68ea46",
+    "text": "¡Bienvenida de nuevo, querida Isleth Eagonst! ¿Estás aquí para charlar un poco? Simplemente use el {keywords} resaltado nuevamente para elegir un {topic}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.681504Z"
+  },
+  "npc.zirella.walkaway_msg_1": {
+    "src_hash": "4375d28b335c873732dd7ca1986ee4c7",
+    "text": "Adiós viajero, cuídate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.690948Z"
+  },
+  "npc.ziyad.greet_msg_1": {
+    "src_hash": "5b7bae4e2b720bbffb3dd63b5f3b1f4e",
+    "text": "Ah, el viento trae otro visitante. Bienvenido, querido invitado. ¿Estás buscando un {passage} con mi alfombra?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.692745Z"
+  },
+  "npc.zlak.farewell_msg_1": {
+    "src_hash": "ea117cbc62dbedb33f7909388af03d19",
+    "text": "Déjame en paz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.710653Z"
+  },
+  "npc.znozel.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.718699Z"
+  },
+  "npc.znozel.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Que tenga un lindo día.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.722136Z"
+  },
+  "npc.zoltan.farewell_msg_1": {
+    "src_hash": "e7e6afa7d04ce3da1ab594c07f0e60be",
+    "text": "Utilice sus conocimientos sabiamente, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.723486Z"
+  },
+  "npc.zoltan.greet_msg_1": {
+    "src_hash": "789e50ae24df69fde783c72a3a56b7d9",
+    "text": "Bienvenido |PLAYERNAME|, estudiante de las artes arcanas. Enseño el {spells} más feroz disponible.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.725027Z"
+  },
+  "npc.zora.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.730466Z"
+  },
+  "npc.zora.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Adiós, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:43.733937Z"
+  },
+  "npc.ztiss.greet_msg_1": {
+    "src_hash": "d5b1c08b94688b70545570d98c813bab",
+    "text": "Sea saludado mi.. {guezt}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:24:26.226574Z"
+  },
+  "npc.zumtah.farewell_msg_1": {
+    "src_hash": "a6ad3b20c519067c4ca0ae3c886ba5f0",
+    "text": "Mujajaja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:24:26.237034Z"
+  },
+  "npc.zumtah.greet_msg_1": {
+    "src_hash": "53efa58db7c9c085e0351468235f67a9",
+    "text": "Otro visitante de este reino restringido, acogedor y tranquilo, perfecto excepto por un {exit}. Mujaja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:24:26.242725Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:25:02.431511Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:25:02.432171Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:25:02.432793Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:25:02.433492Z"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T07:20:45.743957Z",
-  "cycle_counter": 1807,
-  "last_target_key": "ro:creaturescripts.json",
-  "last_pending_total": 2,
-  "last_tier": 2,
-  "last_cat_priority": 9,
-  "candidates_count": 191,
-  "active_candidates_count": 177,
+  "timestamp": "2026-02-17T07:28:34.939982Z",
+  "cycle_counter": 1815,
+  "last_target_key": "es:monsters.json",
+  "last_pending_total": 801,
+  "last_tier": 1,
+  "last_cat_priority": 2,
+  "candidates_count": 189,
+  "active_candidates_count": 175,
   "skipped_backoff": 14,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 340,
+  "cache_cycle": 343,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -342,7 +342,11 @@
     "ro:npclib.json": 0,
     "ru:messages.json": 0,
     "ro:libs.json": 0,
-    "ru:globalevents.json": 0
+    "ru:globalevents.json": 0,
+    "ro:creaturescripts.json": 0,
+    "sv:raids.json": 0,
+    "sr:raids.json": 0,
+    "it:movements.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -395,12 +399,12 @@
     ],
     "lang_completion": {
       "pl": 87.21,
-      "es": 84.24,
+      "es": 84.3,
       "ru": 49.65,
-      "ro": 38.59,
-      "it": 47.28,
-      "sr": 44.01,
-      "sv": 26.78
+      "ro": 38.6,
+      "it": 47.34,
+      "sr": 44.04,
+      "sv": 26.81
     }
   }
 }

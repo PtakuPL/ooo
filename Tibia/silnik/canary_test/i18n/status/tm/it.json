@@ -56854,5 +56854,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T07:20:36.273313Z"
+  },
+  "movement.claw_noxious.msg_tighten": {
+    "src_hash": "b70659de5293e940c257853066188e6c",
+    "text": "Si stringe attorno al tuo polso mentre lo indossi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:20.498897Z"
+  },
+  "movement.claw_noxious.msg_stab": {
+    "src_hash": "14fab215c855b69507b9a0142a705f00",
+    "text": "Ahi! L'artiglio del serpente ti ha pugnalato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:22:20.499251Z"
   }
 }

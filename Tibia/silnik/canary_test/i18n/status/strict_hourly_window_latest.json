@@ -1,29 +1,35 @@
 {
-  "window_start_utc": "2026-02-17T06:20:57.358767Z",
-  "window_end_utc": "2026-02-17T07:20:57.358767Z",
+  "window_start_utc": "2026-02-17T06:28:44.973663Z",
+  "window_end_utc": "2026-02-17T07:28:44.973663Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 105,
+  "total_cycles": 93,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 105
+    "AUTO_TRANSLATE": 93
   },
-  "auto_translate_cycles": 105,
+  "auto_translate_cycles": 93,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2135,
-  "guard_fail": 1042,
-  "guard_fail_rate_pct": 32.8,
+  "translated": 1814,
+  "guard_fail": 1812,
+  "guard_fail_rate_pct": 50.0,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 1220.7,
-  "suspicious_total": 7949,
+  "throughput_keys_per_h": 1039.3,
+  "suspicious_total": 3823,
   "top_guard_fail_targets": [
+    {
+      "target": "pl/items.json",
+      "translated": 25,
+      "guard_fail": 822,
+      "guard_command": 0
+    },
     {
       "target": "pl/scripts.json",
       "translated": 48,
@@ -31,15 +37,15 @@
       "guard_command": 0
     },
     {
-      "target": "es/scripts.json",
-      "translated": 17,
-      "guard_fail": 48,
+      "target": "es/npc.json",
+      "translated": 25,
+      "guard_fail": 64,
       "guard_command": 0
     },
     {
-      "target": "ro/monsters.json",
-      "translated": 7,
-      "guard_fail": 43,
+      "target": "es/scripts.json",
+      "translated": 17,
+      "guard_fail": 48,
       "guard_command": 0
     },
     {
@@ -64,12 +70,6 @@
       "target": "ro/spells.json",
       "translated": 11,
       "guard_fail": 39,
-      "guard_command": 0
-    },
-    {
-      "target": "sv/server.json",
-      "translated": 13,
-      "guard_fail": 37,
       "guard_command": 0
     }
   ]

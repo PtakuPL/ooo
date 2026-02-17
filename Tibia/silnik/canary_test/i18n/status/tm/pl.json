@@ -74085,7 +74085,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:19:34.116683Z"
+    "updated_at": "2026-02-17T07:23:20.731470Z"
   },
   "item.12660.name": {
     "src_hash": "7ad9124591b483498a792faadb075c3d",
@@ -75269,7 +75269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:19:36.706408Z"
+    "updated_at": "2026-02-17T07:23:23.900110Z"
   },
   "item.12829.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75277,7 +75277,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:19:36.706931Z"
+    "updated_at": "2026-02-17T07:23:23.900640Z"
   },
   "item.12830.name": {
     "src_hash": "7faf265f12e75cd4c9d6edbdcf363452",
@@ -75285,7 +75285,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T06:19:36.707349Z"
+    "updated_at": "2026-02-17T07:23:23.901146Z"
   },
   "item.18814.name": {
     "src_hash": "92ec19ffde05e15769b1bb3ee05ad745",
@@ -114798,5 +114798,181 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T06:31:09.607918Z"
+  },
+  "item.31576.name": {
+    "src_hash": "73b80d08aabdba4f2cfb5aaf7cb42523",
+    "text": "Regalia Suon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:10.821347Z"
+  },
+  "item.17152.name": {
+    "src_hash": "6a8e6a39831a82deaef67bcc13cce682",
+    "text": "rosnąca przyprawa venorejska",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:23.901937Z"
+  },
+  "item.17974.name": {
+    "src_hash": "f3e67f1df4a614c7b2346eb2316a6447",
+    "text": "Zestaw szafek Venorean",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:33.529007Z"
+  },
+  "item.17975.name": {
+    "src_hash": "50628f3d64b35e7826b570d61a2d0781",
+    "text": "zestaw garderoby Venorean",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:33.529323Z"
+  },
+  "item.17977.name": {
+    "src_hash": "c2020667fac05baa41352f6414e7a1f4",
+    "text": "zestaw szuflad Venorean",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:33.529852Z"
+  },
+  "item.19082.name": {
+    "src_hash": "daeeb3d5756bd8efbf22cd96cc04e1ce",
+    "text": "złoty żeton najazdu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:41.417846Z"
+  },
+  "item.19210.name": {
+    "src_hash": "66e5966b63b2f08125a6935649ea46b2",
+    "text": "zniszczone gniazdo potworów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:41.418554Z"
+  },
+  "item.19212.name": {
+    "src_hash": "e06da0476acfd415738f88691a737396",
+    "text": "Otworzył się złowieszczy kopiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:44.921981Z"
+  },
+  "item.20228.name": {
+    "src_hash": "8f7cb60edee804faec6302236a40c631",
+    "text": "martwy gaz'haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:44.924442Z"
+  },
+  "item.20229.name": {
+    "src_hash": "8f7cb60edee804faec6302236a40c631",
+    "text": "martwy gaz'haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:44.924866Z"
+  },
+  "item.20230.name": {
+    "src_hash": "8f7cb60edee804faec6302236a40c631",
+    "text": "martwy gaz'haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:44.925255Z"
+  },
+  "item.20231.name": {
+    "src_hash": "8f7cb60edee804faec6302236a40c631",
+    "text": "martwy gaz'haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:44.926374Z"
+  },
+  "item.20273.name": {
+    "src_hash": "7a1a59b319750317c4895709fb6a4551",
+    "text": "złoty klucz do więzienia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:51.716999Z"
+  },
+  "item.20315.name": {
+    "src_hash": "de73c40b0576ec99ff4f0fdd04dcd716",
+    "text": "gobelin w kształcie płatków śniegu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:51.717402Z"
+  },
+  "item.20972.name": {
+    "src_hash": "997d1a7f46202eff15262162824d5763",
+    "text": "martwy glooth golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:51.718116Z"
+  },
+  "item.20973.name": {
+    "src_hash": "997d1a7f46202eff15262162824d5763",
+    "text": "martwy glooth golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:51.718651Z"
+  },
+  "item.20974.name": {
+    "src_hash": "997d1a7f46202eff15262162824d5763",
+    "text": "martwy glooth golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:51.719344Z"
+  },
+  "item.20975.name": {
+    "src_hash": "997d1a7f46202eff15262162824d5763",
+    "text": "martwy glooth golem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:54.542508Z"
+  },
+  "item.21000.name": {
+    "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+    "text": "martwy minotaur amazon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:54.542943Z"
+  },
+  "item.21001.name": {
+    "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+    "text": "martwy minotaur amazon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T07:23:54.543389Z"
+  },
+  "monster.chakoya_tribewarden.voice_2": {
+    "src_hash": "1a410c5ddd96b46435899c9ce9566b94",
+    "text": "Siyoqua jamjam!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:28:27.536070Z"
+  },
+  "monster.schiach.voice_2": {
+    "src_hash": "5acfb309564e08d22fe9578d5e2302b7",
+    "text": "Psz psz psz!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:28:27.934548Z"
   }
 }

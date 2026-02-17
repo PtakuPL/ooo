@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-17T07:20:45.732387Z",
-  "built_cycle": 340,
+  "timestamp": "2026-02-17T07:28:34.910744Z",
+  "built_cycle": 343,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -130,9 +130,9 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "pending_total": 318,
-      "todo": 318,
-      "simple_todo": 288,
+      "pending_total": 317,
+      "todo": 317,
+      "simple_todo": 287,
       "missing_in_lang": 0
     },
     {
@@ -314,9 +314,9 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 2386,
-      "todo": 2386,
-      "simple_todo": 206,
+      "pending_total": 2355,
+      "todo": 2355,
+      "simple_todo": 200,
       "missing_in_lang": 0
     },
     {
@@ -549,14 +549,6 @@
       "pending_total": 642,
       "todo": 642,
       "simple_todo": 611,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "it",
-      "json_file": "movements.json",
-      "pending_total": 2,
-      "todo": 2,
-      "simple_todo": 1,
       "missing_in_lang": 0
     },
     {
@@ -917,14 +909,6 @@
       "pending_total": 506,
       "todo": 506,
       "simple_todo": 309,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "ro",
-      "json_file": "creaturescripts.json",
-      "pending_total": 2,
-      "todo": 2,
-      "simple_todo": 0,
       "missing_in_lang": 0
     },
     {
@@ -1298,9 +1282,9 @@
     {
       "lang": "sv",
       "json_file": "raids.json",
-      "pending_total": 155,
-      "todo": 155,
-      "simple_todo": 59,
+      "pending_total": 140,
+      "todo": 140,
+      "simple_todo": 44,
       "missing_in_lang": 0
     },
     {
@@ -1538,9 +1522,9 @@
     {
       "lang": "sr",
       "json_file": "raids.json",
-      "pending_total": 155,
-      "todo": 155,
-      "simple_todo": 59,
+      "pending_total": 139,
+      "todo": 139,
+      "simple_todo": 43,
       "missing_in_lang": 0
     },
     {

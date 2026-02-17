@@ -11389,7 +11389,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T05:18:32.063765Z"
+    "updated_at": "2026-02-17T05:53:17.604787Z"
   },
   "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
     "src_hash": "72de401885f0bfc9802b1df2e36c8844",
@@ -24958,5 +24958,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:43:06.864160Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L306.474": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Ta hand om dig där ute!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.048788Z"
+  },
+  "data.otservbr.global.npc.eremo.L219.526": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.064458Z"
+  },
+  "data.otservbr.global.npc.eremo.L220.527": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.064906Z"
+  },
+  "data.otservbr.global.npc.harog.L69.1500": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.094139Z"
+  },
+  "data.otservbr.global.npc.liane.L96.485": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.119957Z"
+  },
+  "data.otservbr.global.npc.liane.L97.486": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.120359Z"
+  },
+  "data.otservbr.global.npc.ninos.L85.1481": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.140021Z"
+  },
+  "data.otservbr.global.npc.olrik.L88.582": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.144351Z"
+  },
+  "data.otservbr.global.npc.pompan.L125.271": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Det var ett nöje att hjälpa dig, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.150566Z"
+  },
+  "data.otservbr.global.npc.uzon.L115.987": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Daramans välsignelser, resenär |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.195355Z"
+  },
+  "data.otservbr.global.npc.uzon.back.L80.47": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Daramans välsignelser, resenär |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:16.196013Z"
   }
 }

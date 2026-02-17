@@ -1,31 +1,16 @@
 {
-  "timestamp": "2026-02-17T05:51:57.414738Z",
+  "timestamp": "2026-02-17T05:54:09.561448Z",
   "checked_entries": 100,
-  "issues_found": 9,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 2,
-    "identical_to_en_exempt": 13,
+    "identical_to_en_exempt": 16,
     "artifact_token": 7,
-    "suspicious_log_critical": 39,
-    "suspicious_log_high": 161,
-    "suspicious_rejected_high": 30,
-    "suspicious_rejected_critical": 170
+    "suspicious_log_high": 153,
+    "suspicious_log_critical": 47,
+    "suspicious_rejected_critical": 171,
+    "suspicious_rejected_high": 29
   },
   "issues": [
-    {
-      "key": "spell.emberbeasthur.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "emberBeastHur",
-      "translated": "emberBeastHur"
-    },
-    {
-      "key": "spell.quara_raider_shoot.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "###raider_shoot",
-      "translated": "###raider_shoot"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

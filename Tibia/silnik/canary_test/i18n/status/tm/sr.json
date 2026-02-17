@@ -170334,5 +170334,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:35:13.855720Z"
+  },
+  "data.otservbr.global.npc.baxter.L62.1238": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.727271Z"
+  },
+  "data.otservbr.global.npc.grof.the.guard.L80.847": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.765004Z"
+  },
+  "data.otservbr.global.npc.grof.the.guard.L81.848": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.765272Z"
+  },
+  "data.otservbr.global.npc.grof.the.guard.L82.849": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.765525Z"
+  },
+  "data.otservbr.global.npc.harsky.L84.887": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.772104Z"
+  },
+  "data.otservbr.global.npc.kulag.the.guard.L80.1208": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.785882Z"
+  },
+  "data.otservbr.global.npc.kulag.the.guard.L81.1209": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.786200Z"
+  },
+  "data.otservbr.global.npc.kulag.the.guard.L82.1210": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.786585Z"
+  },
+  "data.otservbr.global.npc.miles.the.guard.L84.197": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.793761Z"
+  },
+  "data.otservbr.global.npc.miles.the.guard.L85.198": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.794193Z"
+  },
+  "data.otservbr.global.npc.miles.the.guard.L86.199": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.794455Z"
+  },
+  "data.otservbr.global.npc.stutch.L84.1270": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.822174Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L93.608": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.829641Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L94.609": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.829899Z"
+  },
+  "data.otservbr.global.npc.tim.the.guard.L95.610": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.830190Z"
+  },
+  "data.otservbr.global.npc.walter.the.guard.L88.164": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "ЖИВЕО КРАЉ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:38.837329Z"
   }
 }

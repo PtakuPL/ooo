@@ -45910,5 +45910,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:51:34.380575Z"
+  },
+  "quests.soul_war_mechanics.msg_4": {
+    "src_hash": "6655db13bee1450cbda069988ba9ac6f",
+    "text": "Pierzi nivelul de contaminare: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:24.465033Z"
+  },
+  "quests.soul_war_mechanics.msg_5": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Nivelul de contaminare eliminat: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:24.465320Z"
+  },
+  "quests.soul_war_mechanics.say_1": {
+    "src_hash": "5380d0158610754e1763c3e68d1e2070",
+    "text": "Remuscarea iti potoleste teama!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:24.465662Z"
+  },
+  "quests.soul_war_mechanics.say_2": {
+    "src_hash": "e1b472d7a2758aa1c3111f799a2f062b",
+    "text": "Focul urii alimentează și dă putere ura lui Goshnar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:30.479148Z"
+  },
+  "quests.soul_war_mechanics.say_3": {
+    "src_hash": "bb4184db52e52ff43ebb239d5964bc4e",
+    "text": "Flacăra urii este stinsă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:30.479509Z"
+  },
+  "quests.soul_war_mechanics.say_4": {
+    "src_hash": "c3c250d8d11cdad39d0e1b311332f9b0",
+    "text": "Sănătate restabilită de puterile mistice ale lui Zarganash!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:30.479910Z"
+  },
+  "quests.soulpit.level_required": {
+    "src_hash": "9d8e0f4dfc616d37e512adc7f55ac405",
+    "text": "Toți jucătorii trebuie să fie de nivelul %s sau mai mare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:30.480313Z"
+  },
+  "quests.soulpit_fight.msg_1": {
+    "src_hash": "86f4a03cfb29387b28e675634e8e174a",
+    "text": "Ai învins miezul sufletului {} și i-ai deblocat stăpânirea animusului!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:30.480775Z"
+  },
+  "quests.soulpit_fight.msg_2": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Cineva se luptă în groapa sufletească!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:37.998937Z"
+  },
+  "quests.spike_tasks.ancient_ghost": {
+    "src_hash": "3df6500c57263547e96c82f202dc4f58",
+    "text": "Săpăturile tale crude a înfuriat o fantomă străveche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:37.999327Z"
+  },
+  "quests.spike_tasks.nothing_special": {
+    "src_hash": "41b371a27a243f199466d566439c66a4",
+    "text": "Nu ai găsit nimic special.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:37.999629Z"
+  },
+  "quests.spike_tasks.spirit_anger": {
+    "src_hash": "3894f5c51c56e5a112890c1028270538",
+    "text": "Ai dezgropat furia unui spirit!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:37.999927Z"
+  },
+  "quests.spike_tasks.undead_creature": {
+    "src_hash": "32d84ab629e31e9022bc382c0ebc06b4",
+    "text": "Ai dezgropat o creatură deloc moartă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:38.000262Z"
+  },
+  "quests.spike_tasks.you_have_already_fertilised_this_mushroom": {
+    "src_hash": "febf554e1d48c0fd20b669486924b4fc",
+    "text": "Ai fertilizat deja această ciupercă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:43.160758Z"
+  },
+  "quests.svargrond_arena.congratulations": {
+    "src_hash": "325f023e57fc0eb8ef8fa1403bd00743",
+    "text": "Felicitări! Ai terminat {0} arena, ar trebui să iei recompensa acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:43.161277Z"
+  },
+  "quests.svargrond_arena.msg_1": {
+    "src_hash": "b63606673cc9b59a3033ef70c3d03e14",
+    "text": "Ți-a expirat timpul! Lupta s-a terminat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:43.161663Z"
+  },
+  "quests.svargrond_arena.occupant_fighting": {
+    "src_hash": "6bda4a888dabaac85a446d9d094ea93c",
+    "text": "{0} se află în prezent în următoarea groapă. Vă rugăm să așteptați până când {1}termină lupta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:43.162314Z"
+  },
+  "quests.svargrond_arena.time_out": {
+    "src_hash": "b63606673cc9b59a3033ef70c3d03e14",
+    "text": "Ți-a expirat timpul! Lupta s-a terminat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:43.162687Z"
+  },
+  "quests.the_cursed_crystal.you_are_not_in_the_correct": {
+    "src_hash": "4f7ac98c193784159584fb71c029764c",
+    "text": "Nu esti in zona corecta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:50.181167Z"
+  },
+  "quests.the_dream_courts_quest.you_must_wait_a_while_to": {
+    "src_hash": "9057311894859673cdc77e54601722af",
+    "text": "Trebuie să așteptați ceva timp pentru a utiliza acest articol din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:50.181585Z"
+  },
+  "quests.the_order_of_lion.drume_time": {
+    "src_hash": "5a27ffaa20c67f7f5690e0a2d9f300c6",
+    "text": "Ai {0} minute pentru a învinge Drume.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:50.181928Z"
+  },
+  "quests.the_order_of_lion.someone_of_your_team_has_already": {
+    "src_hash": "0d783adafb3fa9fd48ed37e17311588b",
+    "text": "Cineva din echipa ta a luptat deja în încăierare în ultimele 10 ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:50.182418Z"
+  },
+  "quests.the_order_of_lion.there_was_an_error_contact_an": {
+    "src_hash": "9304db86594128c379f8d0f32e33564e",
+    "text": "A apărut o eroare, contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:50.182809Z"
+  },
+  "quests.the_order_of_lion.theres_someone_already_in_the_skirmish": {
+    "src_hash": "859265a56444cce63c4967f001a87f46",
+    "text": "E cineva deja în încăierare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:58.331889Z"
+  },
+  "quests.the_order_of_lion.you_need_at_least_level_250": {
+    "src_hash": "da091b80a62e22562ef00087c34e4515",
+    "text": "Ai nevoie de cel puțin nivelul 250.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:58.332219Z"
+  },
+  "quests.the_secret_library_quest.must_wait_boss": {
+    "src_hash": "3c626082e765cd2b43e027d21dd9856d",
+    "text": "Trebuie să aștepți. Cineva provoacă {0} acum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:58.332616Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_permission": {
+    "src_hash": "76ba088f968a4cac979a6a6db5a80736",
+    "text": "Nu ai permisiunea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:58.332883Z"
+  },
+  "quests.threatened_dreams.fairy_free": {
+    "src_hash": "3f3cc4da9dc5c6866014839a3f0878b2",
+    "text": "Frații mei contaminați m-au închis în întuneric mult prea mult timp. Acum sunt în sfârșit liber! Mulțumesc, ființă muritoare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:52:58.333426Z"
+  },
+  "quests.threatened_dreams.feathers_1": {
+    "src_hash": "3e18a910895fcd7fbdcc1b3e5a72df67",
+    "text": "Ai mai găsit niște pene pe iarba de lângă grâu. Acum ar trebui să ai suficient pentru o mantie întreagă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:05.836847Z"
+  },
+  "quests.threatened_dreams.feathers_2": {
+    "src_hash": "2f2afa189d0a8f3fa44d91a791bc0f17",
+    "text": "Ai găsit niște pene frumoase de lebădă în coșul de gunoi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:05.837280Z"
+  },
+  "quests.threatened_dreams.feathers_3": {
+    "src_hash": "75d732f3a656b37248c37a1640dc4ba7",
+    "text": "Ai găsit niște pene frumoase de lebădă încurcate în înțepăturile de cactus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:05.837709Z"
+  },
+  "quests.threatened_dreams.feathers_4": {
+    "src_hash": "27805e5e4e45e1145dd59df87ccd1b4a",
+    "text": "Ai găsit niște pene frumoase de lebădă sub craniul dragonului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:05.838171Z"
+  },
+  "quests.threatened_dreams.feathers_5": {
+    "src_hash": "fe983d9b291ff50d581c3f1625ad74da",
+    "text": "Ai mai găsit niște pene sub copacul mort. Acum ar trebui să ai suficient pentru o mantie întreagă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:05.838697Z"
+  },
+  "quests.threatened_dreams.found_herb": {
+    "src_hash": "d8f7cefe403c291457b6c9f5478b1938",
+    "text": "Ați găsit un %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:09.883891Z"
+  },
+  "quests.threatened_dreams.herb_no_room": {
+    "src_hash": "a62350f598ace1a41f466060eea6c3b9",
+    "text": "{0} Dar nu ai loc să-l iei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:09.884287Z"
+  },
+  "quests.threatened_dreams.herb_too_heavy": {
+    "src_hash": "42e49baf8bf1d9439178d056634b5269",
+    "text": "{0}. Cântărind {1} oz, este prea greu pentru a fi transportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:09.884700Z"
+  },
+  "quests.threatened_dreams.moon_mirror.fail_1": {
+    "src_hash": "a6e09f6ba5c8d78223d25c0856907627",
+    "text": "Luna nu strălucește. Așteaptă noaptea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:09.885047Z"
+  },
+  "quests.threatened_dreams.moon_mirror.fail_2": {
+    "src_hash": "5b9d774c835d7185d5d0966a30c0d850",
+    "text": "Luna trebuie să strălucească. Așteaptă noaptea. Așteaptă noaptea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:09.885493Z"
+  },
+  "quests.threatened_dreams.moon_mirror.success_1": {
+    "src_hash": "0298db9f9a2da83a03a7cd3bb42c9429",
+    "text": "Oglinda strălucește acum cu lumina lunii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:53:12.643150Z"
   }
 }

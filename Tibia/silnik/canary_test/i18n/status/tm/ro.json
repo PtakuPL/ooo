@@ -34398,5 +34398,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:47:39.475957Z"
+  },
+  "web.tpl.buttons.change_sex.set_1": {
+    "src_hash": "6b040454e34ebee8689571610e64a17d",
+    "text": "Schimbați sexul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.095159Z"
+  },
+  "web.tpl.spells.th_3": {
+    "src_hash": "6f15b8d4b7287d60a8ea3d1c5cbadc84",
+    "text": "Cuvinte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.098666Z"
+  },
+  "web.tpl.spells.th_8": {
+    "src_hash": "6f15b8d4b7287d60a8ea3d1c5cbadc84",
+    "text": "Cuvinte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.099422Z"
+  },
+  "web.tpl.account.management.set_3": {
+    "src_hash": "d035d6b877b448da4853fe122529ec9c",
+    "text": "Schimbați e-mailul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.102010Z"
+  },
+  "web.tpl.account.management.set_7": {
+    "src_hash": "6b040454e34ebee8689571610e64a17d",
+    "text": "Schimbați sexul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.102405Z"
+  },
+  "web.tpl.account.management.h2_2": {
+    "src_hash": "bf1c03ecd0d85d824c36b782ed8d19d8",
+    "text": "Informații generale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.102923Z"
+  },
+  "web.tpl.account.characters.change_name.span_1": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Caracter:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.105041Z"
+  },
+  "web.tpl.forum.new_thread.b_2": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Caracter:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.105565Z"
+  },
+  "web.tpl.team.b_2": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Tinuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.106829Z"
+  },
+  "web.tpl.team.b_9": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Tinuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.107615Z"
+  },
+  "web.tpl.online.b_7": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Tinuta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.109383Z"
+  },
+  "web.tpl.guilds.view.td_1": {
+    "src_hash": "021da1b20f73dc252361a54d80497ef3",
+    "text": "Rang",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.110177Z"
+  },
+  "web.tpl.forum.new_post.b_2": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Caracter:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.110984Z"
+  },
+  "web.tpl.forum.edit_post.b_2": {
+    "src_hash": "6464ed05879da0f51d7e15ade1d8fd17",
+    "text": "Caracter:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.116532Z"
+  },
+  "web.tpl.commands.b_1": {
+    "src_hash": "6f15b8d4b7287d60a8ea3d1c5cbadc84",
+    "text": "Cuvinte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.118721Z"
+  },
+  "html.admin.statistics.html.text3": {
+    "src_hash": "7a3fc283239c5b027863d8379f41f198",
+    "text": "{{ count.total_guilds }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.134050Z"
+  },
+  "html.admin.statistics.html.text4": {
+    "src_hash": "7a45c698a83ef947e1c804bfde46ff75",
+    "text": "{{ count.total_houses }}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:46.134594Z"
+  },
+  "web.tpl.admin.open_source.b_2": {
+    "src_hash": "9d21e88cf6892f67db42b72de8a00b3e",
+    "text": "PHP:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:52.379097Z"
+  },
+  "web.tpl.buttons.register_account.set_1": {
+    "src_hash": "089a4481d6029b62758f16d31cd34264",
+    "text": "Înregistrați contul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:00.388612Z"
+  },
+  "web.tpl.admin.reports.th_1": {
+    "src_hash": "65b55376b43abee95c3c28d9c68a4fbc",
+    "text": "Numele raportului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:00.388837Z"
+  },
+  "web.tpl.admin.reports.th_2": {
+    "src_hash": "ffbb3331182cbfda3ccea5bb0c3eea46",
+    "text": "Ultima actualizare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:00.389038Z"
+  },
+  "web.tpl.guilds.manager.set_1": {
+    "src_hash": "cafda7f7cefc45741a048f956cd5c957",
+    "text": "Adăugați un nou rang",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:00.389279Z"
+  },
+  "web.tpl.guilds.manager.set_2": {
+    "src_hash": "71d36fa7e38882ca6d391b3549094a9d",
+    "text": "Schimbați numele și nivelurile rangurilor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:00.389593Z"
+  },
+  "web.tpl.guilds.manager.h2_1": {
+    "src_hash": "c832c0ef0315430a558b56bb96923880",
+    "text": "Bun venit la managerul breslei!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:08.653055Z"
+  },
+  "web.tpl.guilds.manager.b_2": {
+    "src_hash": "054b4f3ea543c990f6b125f41af6ebf7",
+    "text": "Opţiune",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:08.653259Z"
+  },
+  "web.tpl.guilds.manager.b_4": {
+    "src_hash": "91ebc9b22070b200da533e4992a22157",
+    "text": "Transmite conducerea breslei unui alt membru al breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:08.653618Z"
+  },
+  "web.tpl.guilds.manager.b_5": {
+    "src_hash": "b468aac652190c45b44ce61f0329252d",
+    "text": "Șterge breasla, da cu piciorul pe toți membrii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:08.653961Z"
+  },
+  "web.tpl.guilds.manager.b_6": {
+    "src_hash": "ffe3673e547e72aca5ed299de4451406",
+    "text": "Schimbați descrierea breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:08.654313Z"
+  },
+  "web.tpl.guilds.manager.b_7": {
+    "src_hash": "e0fbf3568e415c67cd6fff5b7ad2a01e",
+    "text": "Schimbați MOTD al breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:16.756454Z"
+  },
+  "web.tpl.guilds.manager.b_8": {
+    "src_hash": "0f4eab19ce8f5e5cf59ae1c29ad878af",
+    "text": "Încărcați un nou logo al breslei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:16.756765Z"
+  },
+  "web.tpl.guilds.manager.b_9": {
+    "src_hash": "5a9d68f86d368e444bcb3e1c7c2defdc",
+    "text": "ID/Ștergere rang",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:16.756993Z"
+  },
+  "web.tpl.guilds.manager.b_10": {
+    "src_hash": "dc1dd73c9c598d9d66ca7eeeceb8c1a0",
+    "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nume",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:16.757518Z"
+  },
+  "web.tpl.guilds.manager.b_11": {
+    "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
+    "text": "Nivelul RANK în breaslă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:50:16.757825Z"
   }
 }

@@ -26958,5 +26958,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:46:54.666528Z"
+  },
+  "cpp.cancel.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:03.251636Z"
+  },
+  "cpp.returnvalue.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извините, это невозможно.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:03.320579Z"
+  },
+  "cpp.augment.format_no_value": {
+    "src_hash": "0a80f1fc5203b9a4cfb998c9545b319c",
+    "text": "{0} -> {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:07.507580Z"
+  },
+  "cpp.augment.format_with_value": {
+    "src_hash": "3ea290c4a5fc79c644ebdacc9841f3a3",
+    "text": "{0} -> {1:+}% {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:07.507920Z"
+  },
+  "cpp.badge.name_1": {
+    "src_hash": "866513cf9da1225b68f7ddba852357b4",
+    "text": "Юный герой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:07.508175Z"
+  },
+  "cpp.badge.name_12": {
+    "src_hash": "1b0513efec3233c9461fbdd02a9b968f",
+    "text": "Мастер-класс (1 класс)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:07.508461Z"
+  },
+  "cpp.badge.name_13": {
+    "src_hash": "09f5b58aae7e9076d5d870715b2c878a",
+    "text": "Мастер-класс (2 класс)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:07.508738Z"
+  },
+  "cpp.badge.name_14": {
+    "src_hash": "64447327a9736d0a4dbcd779f65b412b",
+    "text": "Мастер-класс (3 класс)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:14.348672Z"
+  },
+  "cpp.badge.name_15": {
+    "src_hash": "aa2045442a847a3fdb351b934395101e",
+    "text": "Первокурсник турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:14.348970Z"
+  },
+  "cpp.badge.name_16": {
+    "src_hash": "9474f91d37ea76ea708fd516780c6c0d",
+    "text": "Регуляр турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:14.349238Z"
+  },
+  "cpp.badge.name_17": {
+    "src_hash": "41a32725f7431746def01d442c02a10b",
+    "text": "Герой турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:14.349494Z"
+  },
+  "cpp.badge.name_18": {
+    "src_hash": "fd942790a41b15497eba2518ac3af2fc",
+    "text": "Участник турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:14.349777Z"
+  },
+  "cpp.badge.name_19": {
+    "src_hash": "dcb854249c04978e315145798e79815f",
+    "text": "Претендент турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:18.864806Z"
+  },
+  "cpp.badge.name_2": {
+    "src_hash": "c8c23d1ecc1bc4ba44108dbbfc8f4727",
+    "text": "Герой-ветеран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:18.865051Z"
+  },
+  "cpp.badge.name_20": {
+    "src_hash": "d4675c48c7763eb2ec58da3658f0c697",
+    "text": "Мастер турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:18.865296Z"
+  },
+  "cpp.badge.name_21": {
+    "src_hash": "5d7a24925d90015a268de468703d7d2e",
+    "text": "Чемпион турнира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:18.865544Z"
+  },
+  "cpp.badge.name_3": {
+    "src_hash": "6776c826266920e800560c621811745c",
+    "text": "Старший герой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:18.865762Z"
+  },
+  "cpp.badge.name_4": {
+    "src_hash": "962f30ca16e6d44ae77192b43da0297a",
+    "text": "Древний герой",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:24.881840Z"
+  },
+  "cpp.badge.name_6": {
+    "src_hash": "36dd65f81f731b09330b25557dead495",
+    "text": "Tibia Лоялист (1-й уровень)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:24.882473Z"
+  },
+  "cpp.badge.name_7": {
+    "src_hash": "bb5f7090a7a1fa38a66dd425d225b79e",
+    "text": "Tibia Лоялист (2-й уровень)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:24.882933Z"
+  },
+  "cpp.badge.name_8": {
+    "src_hash": "a128a1dbc2cafd8e1c443c674aaacb8d",
+    "text": "Tibia Лоялист (3-й уровень)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:24.883366Z"
+  },
+  "cpp.bed.nobody_sleeping": {
+    "src_hash": "c5bc51c4e1c3a4526609fc4bdd5589d6",
+    "text": "Там никто не спит.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:24.883702Z"
+  },
+  "cpp.bed.sleeping": {
+    "src_hash": "e25169810744a47f596a64a5e415fdcc",
+    "text": "{0} там спит.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:31.155580Z"
+  },
+  "cpp.bestiary.already_set_charm": {
+    "src_hash": "91bb37a3a8ee779633c104fdfbc8f9db",
+    "text": "У вас уже есть этот монстр на другом {0} Charm!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:31.156231Z"
+  },
+  "cpp.bestiary.creature_set_free": {
+    "src_hash": "1b9e7783d24bd32fa31f59b6ca3bfd0e",
+    "text": "Существо установлено! Вы бесплатный игрок, поэтому получаете до 2 рун! Премиум-игроки получают выгоду от 6, а расширение Charm Expansion позволяет вам назначать существам все руны одновременно!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:31.157189Z"
+  },
+  "cpp.bestiary.creature_set_premium": {
+    "src_hash": "173486a4f560ffdc367d58a170fb2e53",
+    "text": "Существо установлено! Вы являетесь Премиум-игроком и получаете до 6 рун! Расширение Charm позволяет вам назначать существам все руны одновременно!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:31.158034Z"
+  },
+  "cpp.bestiary.no_charm_slots": {
+    "src_hash": "5c76d66c8b5fb599ec149edb99a3f723",
+    "text": "У вас нет доступных ячеек для очарования.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:31.158443Z"
+  },
+  "cpp.bestiary.not_enough_charm_echoes": {
+    "src_hash": "78facaef7b222fb285ab287741ea4281",
+    "text": "У вас недостаточно малых отголосков очарования, чтобы разблокировать эту руну.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:36.454501Z"
+  },
+  "cpp.bestiary.not_enough_charm_points": {
+    "src_hash": "6f005a14f6e03de08a54dc633fda2ac4",
+    "text": "У вас недостаточно очков очарования, чтобы разблокировать эту руну.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:36.455167Z"
+  },
+  "cpp.bestiary.not_enough_gold": {
+    "src_hash": "b9f64fa006e7a19a9fffc2623fdefde6",
+    "text": "У тебя недостаточно золота.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:36.455501Z"
+  },
+  "cpp.bestiary.unlocked_details": {
+    "src_hash": "d6bce59d49bccbecbd69fb68018c68ad",
+    "text": "Вы разблокировали данные существа '{0}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:36.455886Z"
+  },
+  "cpp.bosstiary.podium_reward": {
+    "src_hash": "6afd22e748b46b86cb19f4a617b02fea",
+    "text": "Поздравляем! Вы достигли уровня экспертности вашего первого босса. В качестве награды на ваш почтовый ящик в магазине был отправлен бесплатный Подиум Энергии. Вы можете разместить этот подиум в любом доме, принадлежащем этому персонажу. Используйте его для отображения боссов, для которых вы достигли как минимум уровня Экспертности.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:36.457081Z"
+  },
+  "cpp.cancel.cannot_move_house": {
+    "src_hash": "4bbefef324ff5501d56413ed2e1d7788",
+    "text": "Вы не можете вынести этот предмет из этого дома.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:42.447867Z"
+  },
+  "cpp.cancel.group_name_exists": {
+    "src_hash": "66f16f5c3444e6abfb5b0da3d73c6d62",
+    "text": "Группа с таким названием уже существует. Пожалуйста, выберите другое имя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:42.448332Z"
+  },
+  "cpp.cancel.hold_container_loot": {
+    "src_hash": "9dc7b7ad844f372874fc3cafe8d3723e",
+    "text": "Вы должны держать контейнер, чтобы использовать его в качестве контейнера для добычи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:42.448801Z"
+  },
+  "cpp.cancel.must_be_premium": {
+    "src_hash": "bfdedf431ba5a9ca1bb49dc0719a7c5a",
+    "text": "У тебя должно быть премиум.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:42.449101Z"
+  },
+  "cpp.cancel.no_pm_self": {
+    "src_hash": "238517cb7c01341c1748dea6a4ce66ec",
+    "text": "Вы не можете настроить канал личных сообщений с самим собой.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:49:42.449511Z"
   }
 }

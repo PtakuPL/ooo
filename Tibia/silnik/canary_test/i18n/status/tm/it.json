@@ -40358,5 +40358,213 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-17T02:46:12.239887Z"
+  },
+  "questlog.quest_10.mission_9.name": {
+    "src_hash": "5828fc788959b84a5136deded2e8243f",
+    "text": "Mission 09: Decision",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:28.027364Z"
+  },
+  "questlog.quest_10.mission_9.state_1": {
+    "src_hash": "ff8f647e53532248178a1f7691ff985d",
+    "text": "Ora devi decidere se sostenere Palimuth o l'obiettivo di Yalahari. Per scegliere il lato buono di Palimuth, vai da lui e chiedigli semplicemente una missione. Allo stesso modo, per unirti allo Yalahari (Azerus) (lato cattivo) vai da lui e digli la stessa cosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:28.028071Z"
+  },
+  "questlog.quest_10.mission_9.state_2": {
+    "src_hash": "3a25445c9f2ee6c336a39167818715dc",
+    "text": "hai già deciso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:28.028346Z"
+  },
+  "questlog.quest_11.mission_1.description_dynamic": {
+    "src_hash": "e20ecd7ba813f4e84413de44a0bba2bd",
+    "text": "Ti sei iscritto a '__PH0__'. Chiedi a Grizzly Adams alcuni compiti di caccia. Hai già guadagnato %d punti. Al momento hai %d punti boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:32.249669Z"
+  },
+  "questlog.quest_11.mission_10.name": {
+    "src_hash": "68a18cf378e1ea5f42a1a86c88a16ea0",
+    "text": "Paw and Fur: Carniphilas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:32.250241Z"
+  },
+  "questlog.quest_11.mission_10.state_1": {
+    "src_hash": "3f2648a884235f0ba439126f3ebaef9e",
+    "text": "Hai cacciato con successo 150 carniphile. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:32.250726Z"
+  },
+  "questlog.quest_11.mission_10.state_2": {
+    "src_hash": "88e6f4080c56ab3a04dcfcebc4f1562f",
+    "text": "Hai cacciato con successo 150 carniphile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:37.778800Z"
+  },
+  "questlog.quest_11.mission_11.state_1": {
+    "src_hash": "1a702624471b34fa809b6ba8018ec984",
+    "text": "Hai cacciato con successo 200 golem di pietra. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:37.779384Z"
+  },
+  "questlog.quest_11.mission_11.state_2": {
+    "src_hash": "81f34ca15bdf0533eba68b8fcb292fd7",
+    "text": "Hai cacciato con successo 200 golem di pietra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:37.779705Z"
+  },
+  "questlog.quest_11.mission_12.name": {
+    "src_hash": "398e4e50b54d2c7a8467d500ba29c302",
+    "text": "Paw and Fur: Mammoths",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:37.780290Z"
+  },
+  "questlog.quest_11.mission_12.state_1": {
+    "src_hash": "a6155e5b6de8511ac31d50d522f68744",
+    "text": "Hai cacciato con successo 300 mammut. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:43.798054Z"
+  },
+  "questlog.quest_11.mission_12.state_2": {
+    "src_hash": "bc232ac9f92b898a89cb97edd7f409a9",
+    "text": "Hai cacciato con successo 300 mammut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:43.798440Z"
+  },
+  "questlog.quest_11.mission_13.name": {
+    "src_hash": "955c92cbf2e8d4cc898245997d71b344",
+    "text": "Paw and Fur: Gnarlhounds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:43.798932Z"
+  },
+  "questlog.quest_11.mission_13.state_1": {
+    "src_hash": "66ee4f06c868532e10d31e8f66bed6cd",
+    "text": "Hai cacciato con successo 300 segugi nodosi. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:43.799424Z"
+  },
+  "questlog.quest_11.mission_13.state_2": {
+    "src_hash": "d8cb6c62aca647f0ebd040786a6d177e",
+    "text": "Hai cacciato con successo 300 segugi nodosi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:43.799737Z"
+  },
+  "questlog.quest_11.mission_14.name": {
+    "src_hash": "76fbd5c00d2b80ae8372f8a5c75f5eff",
+    "text": "Paw and Fur: Terramites",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:49.479854Z"
+  },
+  "questlog.quest_11.mission_14.state_1": {
+    "src_hash": "4b3fa88ea1201116e3e0480e1e953a52",
+    "text": "Hai cacciato con successo 300 terramiti. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:49.480353Z"
+  },
+  "questlog.quest_11.mission_14.state_2": {
+    "src_hash": "2390881906b8dd350356af833bfb3532",
+    "text": "Hai cacciato con successo 300 terramiti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:49.480663Z"
+  },
+  "questlog.quest_11.mission_15.name": {
+    "src_hash": "4b40ae99828d7de59e3871cebd97e965",
+    "text": "Paw and Fur: Apes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:49.481056Z"
+  },
+  "questlog.quest_11.mission_15.state_1": {
+    "src_hash": "9d20c98a32df994d621d32163241914e",
+    "text": "Hai cacciato con successo 300 scimmie. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:49.481531Z"
+  },
+  "questlog.quest_11.mission_15.state_2": {
+    "src_hash": "cdc46b96e331101625bf375c004ce6b4",
+    "text": "Hai cacciato con successo 300 scimmie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:55.166888Z"
+  },
+  "questlog.quest_11.mission_16.state_1": {
+    "src_hash": "c48571c2e09d16843f462ca628b8e61c",
+    "text": "Hai cacciato con successo 300 tartarughe spinose. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:55.167514Z"
+  },
+  "questlog.quest_11.mission_16.state_2": {
+    "src_hash": "88061e86fe608b23cf9d35c263592858",
+    "text": "Hai cacciato con successo 300 tartarughe spinose.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:55.167839Z"
+  },
+  "questlog.quest_11.mission_17.name": {
+    "src_hash": "44d638356f2b42994960b40b3c89ac45",
+    "text": "Paw and Fur: Gargoyles",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:55.168380Z"
+  },
+  "questlog.quest_11.mission_17.state_1": {
+    "src_hash": "5dd6aee1a88cd79fe758283051bebb9c",
+    "text": "Hai cacciato con successo 300 gargoyle. Se lo desideri, puoi completare nuovamente questa attività.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:58.555770Z"
+  },
+  "questlog.quest_11.mission_17.state_2": {
+    "src_hash": "8b000cb250f57cdac0b7218a86a6d277",
+    "text": "Hai cacciato con successo 300 gargoyle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:48:58.556090Z"
   }
 }
